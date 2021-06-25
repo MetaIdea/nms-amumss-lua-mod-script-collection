@@ -1,0 +1,142 @@
+GcRewardMission
+GcRewardJourneyThroughCentre
+GcRewardNexus
+GcRewardUploadBase
+GcRewardNetworkPlayer 
+GcRewardDeactivateFiends
+
+"TREE_BASICS",
+"TREE_TECHBASICS",
+"TREE_BASE",
+"TREE_SPEC_BASE",
+"TREE_SUIT",
+"TREE_SHIP",
+"TREE_WEAP",
+"TREE_EXO",
+"TREE_CRAFT",
+"TREE_FRIGATE",
+"START_PURCHASE",
+"BEGIN_SALVAGE",
+"FLEET_LOOT_SCAN",
+"FLEET_HOLO_CAP",
+"FLEET_HOLO_DMG",
+"FLEET_NEXTDMG",
+"FLEET_CONTINUE",
+"FLEET_COMEHOME",
+"FLEET_DAMAGED",
+"FLEET_STATUS",
+"FLEET_DEBRIEF",
+"SHOW_ROUTES"
+"PIRATE_APPEASE",
+"PIRATE_REJECT",
+"PIRATE_POLICE",
+"PIRATE_BATTLE",
+"PIRATE_FIGHT",
+"BUY_FRIGATE",
+"FRIGATE_STATUS",
+"ADVANCE_PORTAL",
+"SOLVE_MYSTERY",
+"ADV_MYSTERY",
+"PROC_GUN",
+"PROC_SUIT",
+
+
+FREE_EXPLORE
+REV_ATLAS_STA
+
+
+STORM
+
+
+
+
+"TELEPORT_BASE",
+"TELEPORT_0",
+"TELEPORT_1",
+"TELEPORT_2",
+"TELEPORT_3",
+
+"CENTREJOURNEY1",
+"CENTREJOURNEY2",
+"CENTREJOURNEY3",
+"CENTREJOURNEY4",
+"PORTALRUNE1",
+"PORTALRUNE2",
+"PORTALRUNE3",
+"PORTALRUNE4",
+"PORTALRUNE5",
+"PORTALRUNE6",
+"PORTALRUNE7",
+"PORTALRUNE8",
+"PORTALRUNE9",
+"PORTALRUNE10",
+"PORTALRUNE11",
+"PORTALRUNE12",
+"PORTALRUNE13",
+"PORTALRUNE14",
+"PORTALRUNE15",
+"PORTALRUNE16",
+"C_ATLASSTONE1",
+"C_ATLASSTONE2",
+"C_ATLASSTONE3",
+"C_ATLASSTONE4",
+"C_ATLASSTONE5",
+"C_ATLASSTONE6",
+"C_ATLASSTONE7",
+"C_ATLASSTONE8",
+"C_ATLASSTONE9",
+"C_ATLASSTONE10",
+
+
+
+
+
+Show Lush Planet
+Stop Storm
+portal finder
+
+
+
+
+Hotkey Savegame
+Backpack Toggle
+Invisibility
+Teleport To Base
+
+"ClaimBase"
+"Portal"
+GcRewardNexus
+GcRewardScanEvent
+Show Lush Planet
+GcRewardTriggerStorm
+GcRewardTriggerStorm stop storm duration 0.01
+
+
+
+
+Attract Creatures
+Scare Creatures
+Shield Generator
+   Full Health and Shield
+
+Random Seed Gen ship types
+Random Seed Gen Weapon
+Random Seed Gen Freighters
+Creatures
+
+All Emotes unlocked
+
+
+
+
+
+
+
+
+
+
+CustomiseCharacter" "CustomiseShip" "CustomiseVehicle" "CustomiseWeapon"
+"ClaimBaseAnywhere"
+Teleporter_Station
+
+++SPAWNER
