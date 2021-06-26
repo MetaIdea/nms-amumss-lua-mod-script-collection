@@ -1,0 +1,13 @@
+NMS_MOD_DEFINITION_CONTAINER = {
+["MOD_FILENAME"]	= "GBase 231a Computer Rotation.pak",
+["MOD_DESCRIPTION"]	= "Rotate base computer 45 degrees when placed",
+["MOD_AUTHOR"]		= "Gumsk",
+["NMS_VERSION"]		= "2.3.1",
+["MODIFICATIONS"]	= {{
+	["MBIN_CHANGE_TABLE"] = {{
+	["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASECOMPUTER\BASECOMPUTER.SCENE.MBIN",
+	["EXML_CHANGE_TABLE"] = {{
+		["REPLACE_TYPE"] = "ALL",
+		["VALUE_CHANGE_TABLE"] = {
+			{"RotZ", "45"}
+}}}},}}}}

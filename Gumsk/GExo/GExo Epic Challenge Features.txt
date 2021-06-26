@@ -1,0 +1,51 @@
+GExo's Epic Challenge Pack is a combination of two different sets of mods. GExo's Challenge Pack is mostly Exosolar's work and is intended to close up the challenge gaps, the places where the game should be challenging, but isn't. It also has some elements designed to encourage exploration. GExo's Epic Pack is mostly by Gumsk and is intended to emulate an epic fantasy/fiction feel. You shouldn't need to think about or spend time on boring things and you should feel like a badass. I (Gumsk) envision the two packs as working together to create a game where you feel more like a badass, waste less time on tedious chores, spend more time exploring, and are surrounded by very real risks and challenges. You might want to play one pack or the other, or just pieces of each, to create something that fits your play style.
+
+Challenge Pack
+Your ship is a long way away. Get ready for a hike.
+Exosuit slot purchase prices are now exorbitant. Go find a drop pod.
+Sentinel drones now have burst fire.
+All sentinels are now harder all around.
+No more market crashing for easy credits.
+Building restrictions removed, per GBase mod.
+Solar panel generation doubled.
+Solar panels have a built-in battery.
+Limit of 1 extractor per hotspot.
+Each extractor has approximately 7 silos' worth of storage.
+Extractor rate doubled.
+Silos hold 1 and are now intended as remote storage retrieval, so you can collect all your hotspots from your base.
+No more activated metals as resources.
+Cadmium, Emeril, and Indium are only available on extreme weather worlds.
+Extreme weather worlds now have infinite storms.
+No free freighter. Get a job, you bum.
+Predator, plant, fiend, and creature damage doubled.
+Pirates and police (space sentinels) are more difficult. Adapted from parts of Xaliber's Space Combat Reworked https://www.nexusmods.com/nomanssky/mods/1537
+No Danger Marks from L02k is recommended https://www.nexusmods.com/nomanssky/mods/759
+
+Epic Pack
+Infinite stamina.
+Infinite jetpack.
+Improved exocraft and mech movement.
+All exocraft have access to the Minotaur environmental protection.
+Walk speed decreased to an actual walk.
+Sprint speed doubled.
+No falling damage.
+Terminal velocity increased (no falling damage, remember).
+No space damage (for those that like to spacewalk).
+Tech grouping increased to 9 (adjacency bonuses decreased to compensate).
+Scanning time decreased to 1 second.
+Scanner recharge reduced to 1 second.
+Scanner range increased.
+Refining/Processing speed is 10x faster.
+Freighter battles more frequent.
+Torch improvements.
+Dead planet gravity further reduced.
+Ship launcher cost reduced.
+Ship efficient launcher more efficient.
+Ship transfer range increased.
+Living ships can install normal ship tech.
+Mining speed and returns increased.
+Guild rank levels greatly increased (maybe too much).
+Melee improved.
+Auto-aim enabled.
+Cameras greatly extended.
+Adaptation of Dazaster's Ship Flight mod https://www.nexusmods.com/nomanssky/mods/1160
