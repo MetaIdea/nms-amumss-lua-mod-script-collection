@@ -1,0 +1,27 @@
+For the reskins, I do not yet have a batch creation setup for this mod, so I have to create them all one at a time.  This takes a lot of time, so I need to be selective in what I make. Details are below. There are, effectively, 5 layers of jet patterns, sparks flying out of the engine, trails coming off the elbows and knees, a soft glow over the back, the two exhaust ports on the shoulders, 5 chest lights, 1 solid rib light on each side, 1 network of blinking lights in the rib cage on each side. The last two you probably never knew about and won't ever see in the game. Below, I've listed their default texture files so you can look them up and get an idea of what you should use for your suggestion. Almost anything will work, but if you match the pattern of the original texture, it will look more natural. Layer 4 of the jets is currently set to match the core, as it's a tricky edit.
+
+Jet Core: TEXTURES/EFFECTS/PLAYER/MECHJETPACKRIM.DDS
+Jet Layer 1: TEXTURES/EFFECTS/PLAYER/MECHJETPACKRIM.DDS
+Jet Layer 2: TEXTURES/EFFECTS/PLAYER/MECHJETPACKLINES.DDS
+Jet Layer 3: TEXTURES/EFFECTS/PLAYER/MECHJETPACKRIM.DDS
+Jet Layer 4: Red outline glow
+Jet Sparks: TEXTURES/EFFECTS/PLAYER/SPARKS.DDS
+Jet Trails: TEXTURES/EFFECTS/TRAILS/MECHCONTRAIL/CONTRAIL.DDS
+Jet Glow: (RGB value. Can edit brightness, color, angle, and falloff)
+Jet Exhaust: TEXTURES/EFFECTS/PLAYER/JETPACKJETBCORE.DDS
+Chest Lights: TEXTURES/COMMON/VEHICLES/ROVER/ROVERFRONTLIGHT.1.DDS
+Rib Lights: TEXTURES/SPACE/NEXUS/ORANGEGLOWFADE.DDS
+Rib Circuits: TEXTURES/SPACE/NEXUS/PANNINGCIRCUIT.DDS
+
+
+TEXTURES/COMMON/VEHICLES/ROVER/ROVERFRONTLIGHT.1.DDS
+
+TEXTURES/EFFECTS/PLAYER/JETPACKJETBCORE.DDS
+TEXTURES/EFFECTS/PLAYER/MECHJETPACKLINES.DDS
+TEXTURES/EFFECTS/PLAYER/MECHJETPACKRIM.DDS
+TEXTURES/EFFECTS/PLAYER/SPARKS.DDS
+
+TEXTURES/EFFECTS/TRAILS/MECHCONTRAIL/CONTRAIL.DDS
+
+TEXTURES/SPACE/NEXUS/ORANGEGLOWFADE.DDS
+TEXTURES/SPACE/NEXUS/PANNINGCIRCUIT.DDS

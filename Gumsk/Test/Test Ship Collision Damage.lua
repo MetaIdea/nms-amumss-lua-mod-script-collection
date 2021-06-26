@@ -1,0 +1,28 @@
+NMS_MOD_DEFINITION_CONTAINER = 
+{
+["MOD_FILENAME"]	= "Ship Collision Damage Test.pak",
+["MOD_DESCRIPTION"]	= "",
+["MOD_AUTHOR"]		= "Gumsk",
+["NMS_VERSION"]		= "310",
+["MODIFICATIONS"]	= {{
+["MBIN_CHANGE_TABLE"] = {{
+["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN",
+["EXML_CHANGE_TABLE"] = {
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Damage","300"}}},
+	{["SPECIAL_KEY_WORDS"] = {"Id","MEDIUMASTEROID"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Damage","500"}}},
+	{["SPECIAL_KEY_WORDS"] = {"Id","LARGEASTEROID"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Damage","800"}}},
+	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Damage","800"}}},
+	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTINSTANCE"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Damage","500"}}},
+
+}}}}}}
