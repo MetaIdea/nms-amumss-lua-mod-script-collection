@@ -7,3 +7,4 @@ Mod script authors:
 - [Gumsk](https://www.nexusmods.com/users/38106355?tab=user+files)
 - [WinderTP](https://www.nexusmods.com/users/2666883?tab=user+files)
 - [IMonk](https://www.nexusmods.com/users/166479?tab=user+files)
+- [NooBzPoWaH](https://www.nexusmods.com/nomanssky/users/5044289?tab=user+files)
