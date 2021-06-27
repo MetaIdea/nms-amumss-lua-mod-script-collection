@@ -11,4 +11,5 @@ Mod script authors:
 - [Lo2k](https://www.nexusmods.com/nomanssky/users/87374?tab=user+files) (coming soon ?)
 
 Additional mod script repos:
-- [Ignacio](https://www.nexusmods.com/nomanssky/users/5842786?tab=user+files): [Mod scripts](https://github.com/ignamiranda/NMS-ModScripts) / [Open Biome Extender scripts](https://github.com/ignamiranda/OpenBiomeExtender)
+- [Ignacio](https://www.nexusmods.com/nomanssky/users/5842786?tab=user+files) -> [Mod scripts](https://github.com/ignamiranda/NMS-ModScripts) / [Open Biome Extender scripts](https://github.com/ignamiranda/OpenBiomeExtender)
+- [spencerbug](https://github.com/spencerbug/Hypershop_spencerbug) -> [Hypershop](https://github.com/spencerbug/Hypershop_spencerbug)
