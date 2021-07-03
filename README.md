@@ -9,6 +9,7 @@ Mod script authors:
 - [IMonk](https://www.nexusmods.com/users/166479?tab=user+files)
 - [NooBzPoWaH](https://www.nexusmods.com/nomanssky/users/5044289?tab=user+files)
 - [Lo2k](https://www.nexusmods.com/nomanssky/users/87374?tab=user+files)
+- [Babscoole](https://www.nexusmods.com/users/62067056?tab=user+files)
 
 Additional mod script repos:
 - [Ignacio](https://www.nexusmods.com/nomanssky/users/5842786?tab=user+files) -> [Mod scripts](https://github.com/ignamiranda/NMS-ModScripts) / [Open Biome Extender scripts](https://github.com/ignamiranda/OpenBiomeExtender)
