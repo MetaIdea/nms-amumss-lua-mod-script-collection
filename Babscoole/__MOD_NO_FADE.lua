@@ -17,11 +17,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 	
 							{
-								{"TerrainFadeTime","0"},  --Original 2
-								{"TerrainFadeTimeInShip","0"},  --Original 2
-								{"CreatureFadeTime","0"},  --Original 1.5
-								{"FloraFadeTimeMin","0"},  --Original 0.6
-								{"FloraFadeTimeMax","0"},  --Original 2.25
+								{"TerrainFadeTime","0"},  --Original "2"
+								{"TerrainFadeTimeInShip","0"},  --Original "2"
+								{"CreatureFadeTime","0"},  --Original "1.5"
+								{"FloraFadeTimeMin","0"},  --Original "0.6"
+								{"FloraFadeTimeMax","0"},  --Original "2.25"
 							}
 						},
 					}
