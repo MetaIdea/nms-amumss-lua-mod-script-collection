@@ -17,15 +17,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 	
 							{
-								{"CanLeaveDialogs","True"},  --Original False
-								{"RevealAllTitles","True"},  --Original False	
-								{"UnlockAllTitles","True"},  --Original False
-								{"MultiplePlayerFreightersInASystem","True"},  --Original False	
-								{"DisableLimits","True"},  --Original False									
-								{"DisableBaseBuildingLimits","True"},  --Original False
-								{"AllowGlobalPartSnapping","True"},  --Original False
-								{"BaseDownloadTimeout","1"},  --Original 40
-								{"DisableBasePowerRequirements","True"},  --Original False
+								{"CanLeaveDialogs","True"},  --Original "False"
+								{"RevealAllTitles","True"},  --Original "False"	
+								{"UnlockAllTitles","True"},  --Original "False"
+								{"MultiplePlayerFreightersInASystem","True"},  --Original "False"	
+								{"DisableLimits","True"},  --Original "False"									
+								{"DisableBaseBuildingLimits","True"},  --Original "False"
+								{"AllowGlobalPartSnapping","True"},  --Original "False"
+								{"BaseDownloadTimeout","1"},  --Original "40"
+								{"DisableBasePowerRequirements","True"},  --Original "False"
 							}
 						},
 					}
