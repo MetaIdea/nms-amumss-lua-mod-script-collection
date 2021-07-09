@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Mjstral",
 ["Maintainer"]				= "Babscoole",
 ["Pet_Ride_Code"]			= "Corvus",
-["NMS_VERSION"]				= "3.53a",
+["NMS_VERSION"]				= "3.53b",
 ["DESCRIPTION"]				= "Enables more creatures to become companion pets",
 ["MODIFICATIONS"] 			= 
 	{
@@ -629,7 +629,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]         = {"Id","FISH"},
 							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = GlobalJNT_ADD,
+							["ADD"]                         = joint1_ADD,
 						},
 						{
 							["SPECIAL_KEY_WORDS"]         = {"Id","FISHFLOCK"},
@@ -644,7 +644,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]         = {"Id","SWIMRODENT"},
 							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["ADD"]                         = GlobalJNT_ADD,
 						},
 						{
 							["SPECIAL_KEY_WORDS"]         = {"Id","JELLYFISH"},
@@ -781,6 +781,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]         = {"Data"},
 							["ADD"]                         = RootJNT_ADD,
 						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/ECOSYSTEM/ROBOTDATATABLE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]   	= {"Id","WALKER"},
+							["PRECEDING_KEY_WORDS"]     = {"Data"},
+							["ADD"]                     = Root_ADD,
+						},
+						{
+							["SPECIAL_KEY_WORDS"]   = {"Id","QUAD"},
+							["REPLACEMENT_TYPE"]    = {"ADDAFTERSECTION"},
+							["INTEGER_TO_FLOAT"] 	= "FORCE",								
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LegSpread",	"True"},
+								{"ScaleForNeutralLegSpread",	"1.25"},
+								{"ScaleForMinLegSpread",	"0.5"},
+								{"ScaleForMaxLegSpread",	"4.75"},
+								{"IdleRidingAnim",	"RIDE_ANT_IDLE"},
+								{"DefaultRidingAnim",	"RIDE_ANT_WALK"},
+							}
+						}
                     }
 				}				
 			}
