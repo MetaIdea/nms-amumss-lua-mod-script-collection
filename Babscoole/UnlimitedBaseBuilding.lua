@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "UnlimitedBaseBuilding.pak", 
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["Maintainer"]				= "Babscoole",
-["NMS_VERSION"]				= "3.53",
+["NMS_VERSION"]				= "3.53b",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -68,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxBuildHeight", "512"} --ORIGINAL 64					
+								{"MaxBuildHeight", "1024"} --ORIGINAL 64					
 							}
 						}
 					}
