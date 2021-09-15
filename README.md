@@ -15,3 +15,11 @@ Mod script authors:
 Additional mod script repos:
 - [Ignacio](https://www.nexusmods.com/nomanssky/users/5842786?tab=user+files) -> [Mod scripts](https://github.com/ignamiranda/NMS-ModScripts) / [Open Biome Extender scripts](https://github.com/ignamiranda/OpenBiomeExtender)
 - [spencerbug](https://github.com/spencerbug/Hypershop_spencerbug) -> [Hypershop](https://github.com/spencerbug/Hypershop_spencerbug)
+
+More:
+- [boxedlunch](https://github.com/boxedlunch-us/nms-lua)
+- [FelipeMendesGD](https://github.com/FelipeMendesGD/NMS-Modding)
+- [Wyzoom](https://github.com/Wyzoom/OmmmNoms)
+- [csakypeter](https://github.com/csakypeter/NMS-BetterRewards)
+
+
