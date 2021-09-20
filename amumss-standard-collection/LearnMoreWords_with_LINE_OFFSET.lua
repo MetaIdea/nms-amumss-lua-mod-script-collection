@@ -41,7 +41,7 @@ TEXT_TO_ADD =
               </Property>
               <Property name="UseCategory" value="False" />
               <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="WordCategory" value="MISC" />
+                <Property name="gcwordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
