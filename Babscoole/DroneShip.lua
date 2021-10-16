@@ -5,8 +5,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "DroneShip.pak",
 ["MOD_AUTHOR"]				= "Mjstral",
-["Maintainer"]				= "Babscoole",
-["NMS_VERSION"]				= "3.53",
+["MOD_MAINTENANCE"]			= "Babscoole",
+["NMS_VERSION"]				= "3.68",
 ["DESCRIPTION"]				= "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
 ["MODIFICATIONS"] 			= 
 	{
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","EMOTE_CALL_PET"}, 
+							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
 							["LINE_OFFSET"] 		= "+0",
 							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
 							["ADD"] 				= 
@@ -123,7 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>		  
@@ -141,7 +141,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="StateID" value="ACTION" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="1" />
                 <Property name="RandomSeconds" value="0" />
               </Property>
@@ -162,7 +162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="StateID" value="WAIT_FOR_ACTION" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="TRIGGERANIM" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />

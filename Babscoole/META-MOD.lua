@@ -1,9 +1,3 @@
-MOD_FILENAME	= "zzz-MetaMod.pak"
-MOD_AUTHOR		= "Mjjstral"
-Maintainer		= "Babscoole",
-MOD_DESCRIPTION	= "Meta Mod - Collection of new QOL quick menu actions"
-NMS_VERSION		= "3.53"
-
 QUICK_ACTION_LIST = 
 {
 	"SAVE",
@@ -111,7 +105,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="SAVE" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -200,7 +194,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="GALACTICMAP" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -230,7 +224,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="WARP_TO_BASE" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -251,7 +245,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>	
@@ -262,7 +256,7 @@ QUICK_ACTION_MENU =
               </Property>
             </Property>
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="TOGGLE_BACKPACK" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -357,7 +351,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="TOGGLE_INVISIBLE" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -404,7 +398,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>
@@ -424,7 +418,7 @@ QUICK_ACTION_MENU =
               </Property>
             </Property>
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="TOGGLE_SHIELD" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -456,23 +450,7 @@ QUICK_ACTION_MENU =
                   <Property name="Shake" value="SLOWRUMBLE" />
                   <Property name="FalloffMin" value="5" />
                   <Property name="FalloffMax" value="15" />
-                </Property>
-                <Property value="GcParticleAction.xml">
-                  <Property name="Effect" value="ANOMALYEFFECT" />
-                  <Property name="Joint" value="NPCHeadLOC" />
-                  <Property name="Exact" value="True" />
-                  <Property name="FindRange" value="GcBroadcastLevel.xml">
-                    <Property name="GalaxyMarkerType" value="Scene" />
-                  </Property>
-                </Property>
-                <Property value="GcParticleAction.xml">
-                  <Property name="Effect" value="FLASH" />
-                  <Property name="Joint" value="NPCHeadLOC" />
-                  <Property name="Exact" value="True" />
-                  <Property name="FindRange" value="GcBroadcastLevel.xml">
-                    <Property name="GalaxyMarkerType" value="Scene" />
-                  </Property>
-                </Property>			
+                </Property>		
               </Property>
             </Property>
 ]],
@@ -492,7 +470,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="SCARE_CREATURES" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -520,7 +498,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="BLACK_HOLE_WARP" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -541,7 +519,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POWER_STATE" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -847,7 +825,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="UPLOAD_BASE" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -892,7 +870,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="DEACT_FIENDS" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -920,7 +898,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="HEALTH_SUIT" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -950,7 +928,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="FREE_EXPLORE" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -985,7 +963,7 @@ QUICK_ACTION_MENU =
 		["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="ENABLE_NEXUS" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -1358,7 +1336,7 @@ end
 function GetRewardAction(ANIM, REWARDID)
 return [[
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="]] .. ANIM .. [[" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -1501,9 +1479,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]				= "Mjjstral",
-["Maintainer"]				= "Babscoole",
+["MOD_MAINTENANCE"]			= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]				= "3.21+",
+["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -1514,7 +1492,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","EMOTE_CALL_PET"}, 
+							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
 							["LINE_OFFSET"] 		= "+0",
 							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
 							["ADD"] 				= ANIMS
@@ -1780,7 +1758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="StateID" value="GALACTICMAP" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>	  
