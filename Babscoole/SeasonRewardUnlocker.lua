@@ -109,7 +109,19 @@ REWARDS_3 = {
 	"RS_S3_PARTY",
 	"RS_S3_S1M1",
 	"RS_S3_S1M3",
-	"RS_S3_S5M6",	
+	"RS_S3_S5M6",
+	"BLD_PLANET_HOLO",
+	"BLD_FLYJAR",
+	"BASE_CAVE5",
+	"BASE_CAVE4",
+	"BASE_CAVE3",
+	"BASE_CAVE2",
+	"BASE_CAVE1",
+	"EXPD_BANNER03",
+	"EXPD_DECAL03",
+	"EXPD_TITLE03",
+	"EXPD_EGG_03",
+	"JETS_BUBBLE",
 }
 
 REWARDS_GVECTOR = {
@@ -210,7 +222,7 @@ return [[
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="]] .. ANIM .. [[" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
@@ -276,10 +288,10 @@ end
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "zzz-SeasonRewardUnlocker.pak",
-["MOD_AUTHOR"]				= "Mjstral",
-["Maintainer"]				= "Babscoole",
+["MOD_AUTHOR"]				= "Mjjstral",
+["MOD_MAINTENANCE"]			= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]				= "3.53a",
+["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -290,7 +302,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","EMOTE_CALL_PET"}, 
+							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
 							["LINE_OFFSET"] 		= "+0",
 							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
 							["ADD"] 				= ANIMS

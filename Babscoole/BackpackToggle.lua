@@ -2,9 +2,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "BackpackToggle.pak",
 ["MOD_AUTHOR"]				= "Mjjstral",
-["Maintainer"]				= "Babscoole",
+["MOD_MAINTENANCE"]			= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]				= "3.53",
+["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 
 	{	
 		{
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","EMOTE_CALL_PET"}, 
+							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
 							["LINE_OFFSET"] 		= "+0",
 							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
 							["ADD"] 				= 
@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="BACKPACK_TOGGLE" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
