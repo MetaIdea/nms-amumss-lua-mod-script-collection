@@ -35,10 +35,10 @@ Replacement = [[
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"]             = "DerelictTechDrop.pak",     --the name of the pak created (if not combined) - REQUIRED
+  ["MOD_FILENAME"]             = "Derelict_Freighter_Specific_Upgrades.pak",     --the name of the pak created (if not combined) - REQUIRED
   ["MOD_DESCRIPTION"]        = "Limits derelict freighter loot to hyperdrive and fuel modules",         --optional, for reference
   ["MOD_AUTHOR"]                = "Lenni",         --optional, for reference
-  ["NMS_VERSION"]                = "3.53",     --optional, for reference
+  ["NMS_VERSION"]                = "3.62",     --optional, for reference
   ["MODIFICATIONS"]         =             --REQUIRED SECTION
     {
         {
