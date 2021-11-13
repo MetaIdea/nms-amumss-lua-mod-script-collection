@@ -3,14 +3,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "UnlimitedBaseBuilding.pak", 
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["Maintainer"]				= "Babscoole",
-["NMS_VERSION"]				= "3.53b",
+["NMS_VERSION"]				= "3.72",
 ["MODIFICATIONS"] 			= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
