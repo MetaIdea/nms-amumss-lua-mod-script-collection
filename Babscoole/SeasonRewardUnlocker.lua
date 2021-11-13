@@ -124,6 +124,52 @@ REWARDS_3 = {
 	"JETS_BUBBLE",
 }
 
+REWARDS_4 = {
+----SEASON 4 REWARDS-------
+	"EXPD_EGG_04",
+	"EXPD_TITLE04",
+	"EXPD_DECAL04",
+	"EXPD_BANNER04",
+	"EXPD_WORMHAT",
+	"BLD_SKULL",
+	"JETS_WORM",
+	"EXPD_FIREPACK04",
+	"RS_S4_FIREWORKS",
+	"RS_S4_COMPLETE",
+	"RS_S4_EGG",
+	"RS_S4_PHASE1",
+	"RS_S4_PHASE2",
+	"RS_S4_PHASE3",
+	"RS_S4_PHASE4",
+	"RS_S4_PHASE5",
+	"RS_S4_PARTY",
+	"RS_S4_S1M1",
+	"RS_S4_S1M2",
+	"RS_S4_S1M3",
+	"RS_S4_S1M4",
+	"RS_S4_S1M5",
+	"RS_S4_S2M1",
+	"RS_S4_S2M2",
+	"RS_S4_S2M3",
+	"RS_S4_S2M4",
+	"RS_S4_S2M5",
+	"RS_S4_S3M1",
+	"RS_S4_S3M2",
+	"RS_S4_S3M3",
+	"RS_S4_S3M4",
+	"RS_S4_S3M5",
+	"RS_S4_S4M1",
+	"RS_S4_S4M2",
+	"RS_S4_S4M3",
+	"RS_S4_S4M4",
+	"RS_S4_S4M5",
+	"RS_S4_S5M1",
+	"RS_S4_S5M2",
+	"RS_S4_S5M3",
+	"RS_S4_S5M4",
+	"RS_S4_S5M5",	
+}
+
 REWARDS_GVECTOR = {
 	"RS_S1_SHIP",
 }
@@ -136,7 +182,8 @@ QUICK_ACTION_LIST =
 {
 	"S1_REWARDS",
 	"S2_REWARDS",
-	"S3_REWARDS", 
+	"S3_REWARDS",
+	"S4_REWARDS", 	
 	"S1_GV",
 	"S3_NORMANDY",	
 }
@@ -164,6 +211,13 @@ QUICK_ACTION_MENU =
 		["ANIM"] 			= "UnlockSeason3Reward",
 		["REWARD"]			= REWARDS_3		
 	},
+	["S4_REWARDS"] = 
+	{
+		["TITLE"] 			= "Unlock Season 4 Reward",
+		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.4.DDS",
+		["ANIM"] 			= "UnlockSeason4Reward",
+		["REWARD"]			= REWARDS_4		
+	},	
 	["S1_GV"] = 
 	{
 		["TITLE"] 			= "Unlock Golden Vector Reward",
@@ -288,10 +342,9 @@ end
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "zzz-SeasonRewardUnlocker.pak",
-["MOD_AUTHOR"]				= "Mjjstral",
-["MOD_MAINTENANCE"]			= "Babscoole",
+["MOD_AUTHOR"]				= "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"]			= "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]				= "3.68",
+["NMS_VERSION"]				= "3.70",
 ["MODIFICATIONS"] 			= 
 	{
 		{
