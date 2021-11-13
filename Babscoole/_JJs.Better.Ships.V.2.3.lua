@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"]			= "",
 ["MOD_AUTHOR"]				= "JJHookah",
 ["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "2.3",
+["NMS_VERSION"]				= "3.72",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -298,9 +298,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN"},	
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",},	
 							["LINE_OFFSET"] 	= "+11",
-							["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"}},
 							["ADD"] 				= TEXT_TO_ADD
 						},						
 					}
