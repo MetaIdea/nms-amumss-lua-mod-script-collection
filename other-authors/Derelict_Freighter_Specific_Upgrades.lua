@@ -49,116 +49,76 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] = 
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_FREI_TECH","Reward","IGNORE"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CRATE","List","GcRewardTableItemList.xml",},
+							["PRECEDING_KEY_WORDS"] = {"List",},
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_FREI_TECH","OverrideZeroSeed","False"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CRATE","OverrideZeroSeed","False",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
                             ["ADD"] = Replacement,
                         },
-                    },
-                },
-			
-			
-				{
-                    ["MBIN_FILE_SOURCE"]     = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN",},
-                    ["EXML_CHANGE_TABLE"] = 
-                    {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CASE","Reward","IGNORE"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CASE","List","GcRewardTableItemList.xml",},
+							["PRECEDING_KEY_WORDS"] = {"List",},							
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CASE","OverrideZeroSeed","False"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CASE","OverrideZeroSeed","False",},
+							["ADD_OPTION"] 	= "ADDafterLINE",							
                             ["ADD"] = Replacement,
                         },
-                    },
-                },
-				
-				
-				{
-                    ["MBIN_FILE_SOURCE"]     = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN",},
-                    ["EXML_CHANGE_TABLE"] = 
-                    {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CAPS","Reward","IGNORE"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CAPS","List","GcRewardTableItemList.xml",},
+							["PRECEDING_KEY_WORDS"] = {"List",},							
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CAPS","OverrideZeroSeed","False"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CAPS","OverrideZeroSeed","False",},
+							["ADD_OPTION"] 	= "ADDafterLINE",								
                             ["ADD"] = Replacement,
                         },
-                    },
-                },
-			
-				
-				{
-                    ["MBIN_FILE_SOURCE"]     = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN",},
-                    ["EXML_CHANGE_TABLE"] = 
-                    {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_GIFT","Reward","IGNORE"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_LOCK","List","GcRewardTableItemList.xml",},
+							["PRECEDING_KEY_WORDS"] = {"List",},							
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_GIFT","OverrideZeroSeed","False"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_LOCK","OverrideZeroSeed","False",},
+							["ADD_OPTION"] 	= "ADDafterLINE",								
                             ["ADD"] = Replacement,
                         },
-                    },
-                },
-			
-			
-				{
-                    ["MBIN_FILE_SOURCE"]     = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN",},
-                    ["EXML_CHANGE_TABLE"] = 
-                    {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_LOCK","Reward","IGNORE"},
-                            ["SECTION_UP"] = 1,
-                            ["REMOVE"] = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_LOCK","OverrideZeroSeed","False"},
-                            ["ADD"] = Replacement,
-                        },
-                    },
-                },
-		
-		
-				{
-                    ["MBIN_FILE_SOURCE"]     = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN",},
-                    ["EXML_CHANGE_TABLE"] = 
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_AMMO","Reward","IGNORE"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_AMMO","List","GcRewardTableItemList.xml",},
+							["PRECEDING_KEY_WORDS"] = {"List",},							
                             ["REMOVE"] = "SECTION",
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_AMMO","OverrideZeroSeed","False"},
+							["ADD_OPTION"] 	= "ADDafterLINE",								
                             ["ADD"] = Replacement,
                         },
-                    },
-                },
-		
-		
-                {
-                    ["MBIN_FILE_SOURCE"]     = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN",},
-                    ["EXML_CHANGE_TABLE"] = 
-                    {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CRATE","Reward","IGNORE"},
-                            ["SECTION_UP"] = 1,
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_GIFT","List","GcRewardTableItemList.xml",},
+							["PRECEDING_KEY_WORDS"] = {"List",},							
                             ["REMOVE"] = "SECTION",
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_CRATE","OverrideZeroSeed","False"},
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_ABAND_GIFT","OverrideZeroSeed","False"},
+							["ADD_OPTION"] 	= "ADDafterLINE",							
                             ["ADD"] = Replacement,
+                        },						
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_FREI_TECH","List","GcRewardTableItemList.xml",},
+							["PRECEDING_KEY_WORDS"] = {"List",},							
+                            ["REMOVE"] = "SECTION",
                         },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","R_FREI_TECH","OverrideZeroSeed","False"},
+							["ADD_OPTION"] 	= "ADDafterLINE",							
+                            ["ADD"] = Replacement,
+                        },					
+
                     },
                 },
             }
