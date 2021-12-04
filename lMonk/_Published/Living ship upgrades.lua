@@ -1,18 +1,18 @@
---[[┎────────────────────────────────────────────────────────────────────────────
-	┃ Enable scanner tech and materials teleport for bioship
-	┃ Increase bioship pulse upgrades stats for higher speed and manauverability
-────┸────────────────────────────────────────────────────────────────────────--]]
+-----------------------------------------------------------------------------
+local desc = [[
+  Enable scanner tech and materials teleport for bioship
+  Increase bioship pulse upgrades stats for higher speed and maneuverability
+]]---------------------------------------------------------------------------
+	
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.living ship upgrades.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
-	MOD_DESCRIPTION		= [[
-							Enable scanner tech and materials teleport for the bioship
-							Increase bioship pulse upgrades stats for higher speed and manauverability ]],
+	NMS_VERSION			= '3.73',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= 'METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				MATH_OPERATION 		= '*',
@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= 'METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN',
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				REPLACE_TYPE 		= 'ALL',
@@ -80,7 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	-- {
-	-- 	MBIN_FILE_SOURCE	= 'METADATA\SIMULATION\MISSIONS\SPACEPOIMISSIONTABLE.MBIN',
+	-- 	MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/MISSIONS/SPACEPOIMISSIONTABLE.MBIN',
 	-- 	EXML_CHANGE_TABLE	= {
 	-- 		{
 	-- 			MATH_OPERATION 		= '*',

@@ -1,11 +1,11 @@
 --[[┎──────────────────────────────────────────────────────────
-	┃ Remove the jetpack trail line and smoke
+	┃ Remove player jetpack trail line; Remove jetpack smoke
 ────┸──────────────────────────────────────────────────────--]]
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.remove jetpack trail and smoke.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
-	MOD_DESCRIPTION		= 'Remove the jetpack trail line and smoke',
+	NMS_VERSION			= '3.21',
+	MOD_DESCRIPTION		= 'Remove player jetpack trail line; Remove jetpack smoke',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
