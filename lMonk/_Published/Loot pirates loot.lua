@@ -1,107 +1,120 @@
---[[┎────────────────────────────────────────────────────────────
-	┃ Replace space pirates battle loot with a more varid list
-────┸────────────────────────────────────────────────────────--]]
-mod_version = 1.0
+--------------------------------------------------------------------------
+local desc = [[
+  Replace space pirates battle loot with a more varied list
+]]------------------------------------------------------------------------
 
-F_ = {
-	Product = function(item)
-		local exml = [[
-			<Property name="Default" value="GcDefaultMissionProductEnum.xml">
-				<Property name="DefaultProductType" value="None" />
+mod_version = 1.05
+
+local F_ = {}
+F_.TableItemSingle = function(item, data, reward)
+	return [[
+		<Property value="GcRewardTableItem.xml">
+			<Property name="PercentageChance" value="]]..item.c..[[" />
+			<Property name="Reward" value="]]..reward..[[">
+				]]..data..[[
+				<Property name="AmountMin" value="]]..item.n..[[" />
+				<Property name="AmountMax" value="]]..item.x..[[" />
 			</Property>
-			<Property name="ID" value="]]..item.id..[[" />
-			<Property name="ForceSpecialMessage" value="False" />
-			<Property name="HideInSeasonRewards" value="False" />
-			<Property name="Silent" value="False"/>
-		]]
-		return F_.TableItemSingle(item, exml, 'GcRewardSpecificProduct.xml')
-	end,
-	Substance = function(item)
-		local exml = [[
-			<Property name="Default" value="GcDefaultMissionProduct.xml">
-				<Property name="Product" value="GcProductTableEnum.xml">
-					<Property name="gcproducttableEnum" value="None" />
-				</Property>
+			<Property name="LabelID" value="" />
+		</Property>
+	]]
+end
+F_.Product = function(item)
+	local exml = [[
+		<Property name="Default" value="GcDefaultMissionProductEnum.xml">
+			<Property name="DefaultProductType" value="None" />
+		</Property>
+		<Property name="ID" value="]]..item.id..[[" />
+		<Property name="ForceSpecialMessage" value="False" />
+		<Property name="HideInSeasonRewards" value="False" />
+		<Property name="Silent" value="False"/>
+	]]
+	return F_.TableItemSingle(item, exml, 'GcRewardSpecificProduct.xml')
+end
+F_.Substance = function(item)
+	local exml = [[
+		<Property name="Default" value="GcDefaultMissionProduct.xml">
+			<Property name="Product" value="GcProductTableEnum.xml">
+				<Property name="gcproducttableEnum" value="None" />
 			</Property>
-			<Property name="ID" value="]]..item.id..[[" />
-			<Property name="HardModeMultiplier" value="1" />
-			<Property name="DisableMultiplier" value="False" />
-			<Property name="RewardAsBlobs" value="False" />
-			<Property name="UseFuelMultiplier" value="False" />
-			<Property name="Silent" value="False"/>
-		]]
-		return F_.TableItemSingle(item, exml, 'GcRewardSpecificSubstance.xml')
-	end,
-	Units = function(item)
-		local exml = [[
-			<Property name="Currency" value="GcCurrency.xml">
-				<Property name="Currency" value="Units" />
-			</Property>
-		]]
-		return F_.TableItemSingle(item, exml, 'GcRewardMoney.xml')
-	end,
-	Nanites = function(item)
-		local exml = [[
-			<Property name="Currency" value="GcCurrency.xml">
-				<Property name="Currency" value="Nanites" />
-			</Property>
-		]]
-		return F_.TableItemSingle(item, exml, 'GcRewardMoney.xml')
-	end,
-	Shield = function(item)
-		return F_.TableItemSingle(item, '', 'GcRewardShield.xml')
-	end,
-	TableItemSingle = function(item, reward, type)
+		</Property>
+		<Property name="ID" value="]]..item.id..[[" />
+		<Property name="HardModeMultiplier" value="1" />
+		<Property name="DisableMultiplier" value="False" />
+		<Property name="RewardAsBlobs" value="False" />
+		<Property name="UseFuelMultiplier" value="False" />
+		<Property name="Silent" value="False"/>
+	]]
+	return F_.TableItemSingle(item, exml, 'GcRewardSpecificSubstance.xml')
+end
+F_.Word = function(item)
+	local exml = [[
+		<Property name="Race" value="GcAlienRace.xml">
+			<Property name="AlienRace" value="]]..item.id..[[" />
+		</Property>
+		<Property name="UseCategory" value="False" />
+		<Property name="Category" value="GcWordCategoryTableEnum.xml">
+			<Property name="gcwordcategorytableEnum" value="MISC" />
+		</Property>
+	]]
+	return F_.TableItemSingle(item, exml, 'GcRewardTeachWord.xml')
+end
+F_.Units = function(item)
+	local exml = [[
+		<Property name="Currency" value="GcCurrency.xml">
+			<Property name="Currency" value="Units" />
+		</Property>
+	]]
+	return F_.TableItemSingle(item, exml, 'GcRewardMoney.xml')
+end
+F_.Nanites = function(item)
+	local exml = [[
+		<Property name="Currency" value="GcCurrency.xml">
+			<Property name="Currency" value="Nanites" />
+		</Property>
+	]]
+	return F_.TableItemSingle(item, exml, 'GcRewardMoney.xml')
+end
+F_.Shield = function(item)
+	return F_.TableItemSingle(item, '', 'GcRewardShield.xml')
+end
+F_.ItemList = function(item)
+	local function tableItemMulti(itc, data, reward)
 		return [[
 			<Property value="GcRewardTableItem.xml">
-				<Property name="PercentageChance" value="]]..item.c..[[" />
-				<Property name="Reward" value="]]..type..[[">
-					]]..reward..[[
-					<Property name="AmountMin" value="]]..item.n..[[" />
-					<Property name="AmountMax" value="]]..item.x..[[" />
-				</Property>
-				<Property name="LabelID" value="" />
-			</Property>
-		]]
-	end,
-	ItemList = function(item)
-		local exml = '<Property name="Items">'
-		for i=1, #item do
-			exml = exml..[[
-				<Property value="GcMultiSpecificItemEntry.xml">
-					<Property name="MultiItemRewardType" value="]]..item[i].t..[[" />
-					<Property name="Id" value="]]..item[i].id..[[" />
-					<Property name="Amount" value="]]..item[i].n..[[" />
-					<Property name="ProcTechGroup" value="" />
-					<Property name="ProcTechQuality" value="0" />
-					<Property name="ProcProdType" value="GcProceduralProductCategory.xml">
-						<Property name="ProceduralProductCategory" value="Loot" />
-					</Property>
-					<Property name="ProcProdRarity" value="GcRarity.xml">
-						<Property name="Rarity" value="Common" />
-					</Property>
-					<Property name="HideInSeasonRewards" value="False" />
-				</Property>]]
-		end
-		exml = exml..'</Property>'
-		return F_.TableItemMulti(item, exml, 'GcRewardMultiSpecificItems.xml')
-	end,
-	TableItemMulti = function(item, reward, type)
-		return [[
-			<Property value="GcRewardTableItem.xml">
-				<Property name="PercentageChance" value="]]..item.c..[[" />
-				<Property name="Reward" value="]]..type..[[">
-					]]..reward..[[
+				<Property name="PercentageChance" value="]]..itc.c..[[" />
+				<Property name="Reward" value="]]..reward..[[">
+					]]..data..[[
 				</Property>
 				<Property name="LabelID" value="" />
 			</Property>
 		]]
 	end
-}
+	local exml = '<Property name="Items">'
+	for i=1, #item do
+		exml = exml..[[
+			<Property value="GcMultiSpecificItemEntry.xml">
+				<Property name="MultiItemRewardType" value="]]..item[i].t..[[" />
+				<Property name="Id" value="]]..item[i].id..[[" />
+				<Property name="Amount" value="]]..item[i].n..[[" />
+				<Property name="ProcTechGroup" value="" />
+				<Property name="ProcTechQuality" value="0" />
+				<Property name="ProcProdType" value="GcProceduralProductCategory.xml">
+					<Property name="ProceduralProductCategory" value="Loot" />
+				</Property>
+				<Property name="ProcProdRarity" value="GcRarity.xml">
+					<Property name="Rarity" value="Common" />
+				</Property>
+				<Property name="HideInSeasonRewards" value="False" />
+			</Property>]]
+	end
+	exml = exml..'</Property>'
+	return tableItemMulti(item, exml, 'GcRewardMultiSpecificItems.xml')
+end
 
-T_ = { PRD='Product', SBT='Substance', PCT='ProcTech', PCP='ProcProduct'}
+local T_ = { PRD='Product', SBT='Substance', PCT='ProcTech', PCP='ProcProduct'}
 
-Rewards = {
+local Rewards = {
 	Pirate_Loot_Esay = {
 		id = 'PIRAT_LOOT_EASY',
 		choice = 'SelectAlways',
@@ -183,29 +196,28 @@ Rewards = {
 		}
 	},
 	BuildRewardTableEntry = function(rte)
+		local function getRewardsList(lst)
+			local exml = '<Property name="List">'
+			for _,v in pairs(lst) do exml = exml..v.f(v) end
+			return exml..'</Property>'
+		end
 		return [[
 		<Property value="GcGenericRewardTableEntry.xml">
 			<Property name="Id" value="]]..rte.id..[[" />
 			<Property name="List" value="GcRewardTableItemList.xml">
 				<Property name="RewardChoice" value="]]..rte.choice..[[" />
 				<Property name="OverrideZeroSeed" value="False" />
-				]]..Rewards.GetRewardsList(rte.rewardlist)..[[
+				]]..getRewardsList(rte.rewardlist)..[[
 			</Property>
 		</Property>]]
-	end,
-	GetRewardsList = function(lst)
-		local exml = '<Property name="List">'
-		for i = 1, #lst do
-			exml = exml..lst[i].f(lst[i])
-		end
-		return exml..'</Property>'
 	end
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Loot pirates loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= '3.73',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

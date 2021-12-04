@@ -7,7 +7,7 @@ Text_Alpha = 0.65
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.FADED Notifications.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= '3.62',
 	MOD_DESCRIPTION		= [[
 							Removes the notification panel's background and icon and add transparency
 							to the text - making it fade into the background (and a little hard to read) ]],
