@@ -1,32 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "z-SavegameByHotkey.pak",
-["MOD_AUTHOR"]				= "Mjjstral",
-["MOD_Maintenance"]			= "Babscoole",
+["MOD_VERSION"]				= "3.73",
+["MOD_AUTHOR"]				= "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"]			= "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 
-	{
-		-- {
-			-- ["MBIN_CHANGE_TABLE"] 	= 
-			-- { 
-				-- {
-					-- ["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
-					-- ["EXML_CHANGE_TABLE"] 	= 
-					-- {
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"DisableSaving",					"True"}, 	-- Original "False"
-								-- --{"AlwaysSaveGameAsClient",		"True"},	-- Original "False"
-								-- --{"SaveTestingCommand",			"save"} 	-- Original ""
-							-- }
-						-- }
-					-- }
-				-- }
-			-- }
-		-- },
+	{	
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{  
@@ -35,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE",},						
+							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE",}, 
 							["LINE_OFFSET"] 		= "+0",
 							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
 							["ADD"] 				= 
@@ -68,13 +47,178 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
 ]]
-							
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
 							["LINE_OFFSET"] 		= "-2",
 							["ADD"] 				= 
 [[
+    <Property value="TkReferenceComponentData.xml">
+      <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/SAVE.SCENE.MBIN" />
+      <Property name="LSystem" value="" />
+    </Property>
+    <Property value="GcTriggerActionComponentData.xml">
+      <Property name="HideModel" value="False" />
+      <Property name="StartInactive" value="False" />
+      <Property name="States">
+        <Property value="GcActionTriggerState.xml">
+          <Property name="StateID" value="BOOT" />
+          <Property name="Triggers">
+            <Property value="GcActionTrigger.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
+                <Property name="Anim" value="SAVEGAME" />
+                <Property name="FrameStart" value="0" />
+                <Property name="StartFromEnd" value="False" />
+              </Property>
+              <Property name="Action">
+                <Property value="GcGoToStateAction.xml">
+                  <Property name="State" value="SAVE" />
+                  <Property name="Broadcast" value="True" />
+                  <Property name="BroadcastLevel" value="Scene" />
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Persistent" value="False" />
+      <Property name="PersistentState" value="" />
+      <Property name="ResetShotTimeOnStateChange" value="False" />
+      <Property name="LinkStateToBaseGrid" value="False" />
+    </Property>	
+]]
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
+							["LINE_OFFSET"] 		= "+0",
+							["ADD"] 				= 
+[[
+    <Property value="GcPlayerEmote.xml">
+      <Property name="Title" value="Save" />
+      <Property name="ChatText" value="" />
+      <Property name="ChatUsesPrefix" value="False" />
+      <Property name="AnimationName" value="SAVEGAME" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
+      </Property>
+      <Property name="LinkedSpecialID" value="" />
+      <Property name="NeverShowInMenu" value="False" />
+      <Property name="LoopAnimUntilMove" value="" />
+      <Property name="CloseMenuOnSelect" value="False" />
+      <Property name="MoveToCancel" value="False" />
+      <Property name="GekAnimationName" value="" />
+      <Property name="GekLoopAnimUntilMove" value="" />
+      <Property name="AvailableUnderwater" value="False" />
+      <Property name="RidingAnimationName" value="SAVEGAME" />
+      <Property name="IsPetCommand" value="False" />
+      <Property name="PetCommandTitle" value="" />
+      <Property name="PetCommandIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+      </Property>
+    </Property>
+    <Property value="GcPlayerEmote.xml">
+      <Property name="Title" value="Save" />
+      <Property name="ChatText" value="" />
+      <Property name="ChatUsesPrefix" value="False" />
+      <Property name="AnimationName" value="SAVEGAME" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
+      </Property>
+      <Property name="LinkedSpecialID" value="" />
+      <Property name="NeverShowInMenu" value="False" />
+      <Property name="LoopAnimUntilMove" value="" />
+      <Property name="CloseMenuOnSelect" value="False" />
+      <Property name="MoveToCancel" value="False" />
+      <Property name="GekAnimationName" value="" />
+      <Property name="GekLoopAnimUntilMove" value="" />
+      <Property name="AvailableUnderwater" value="True" />
+      <Property name="RidingAnimationName" value="SAVEGAME" />
+      <Property name="IsPetCommand" value="False" />
+      <Property name="PetCommandTitle" value="" />
+      <Property name="PetCommandIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+      </Property>
+    </Property>
+]]
+						}
+					}
+				}
+			}
+		}
+	},
+["ADD_FILES"] = 
+	{
+		{
+			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
+			["FILE_CONTENT"] 	 = 
+[[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkAnimMetadata">
+  <Property name="FrameCount" value="10" />
+  <Property name="NodeCount" value="0" />
+  <Property name="NodeData" /> 
+  <Property name="AnimFrameData">
+    <Property value="TkAnimNodeFrameData.xml">
+    <Property name="Rotations" />  
+	<Property name="Translations" /> 
+	<Property name="Scales" />
+    </Property>  
+  </Property>	
+  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
+    <Property name="Rotations" />  
+	<Property name="Translations" /> 
+	<Property name="Scales" />	  
+ </Property>
+</Data>	
+]]			
+		},
+		{
+			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.SCENE.EXML]],
+			["FILE_CONTENT"] 	 = 
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkSceneNodeData">
+  <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE" />
+  <Property name="NameHash" value="0" />
+  <Property name="Type" value="LOCATOR" />
+  <Property name="Transform" value="TkTransformData.xml">
+	<Property name="TransX" value="0" />
+	<Property name="TransY" value="0" />
+	<Property name="TransZ" value="0" />
+	<Property name="RotX" value="0" />
+	<Property name="RotY" value="0" />
+	<Property name="RotZ" value="0" />
+	<Property name="ScaleX" value="1" />
+	<Property name="ScaleY" value="1" />
+	<Property name="ScaleZ" value="1" />
+  </Property>
+  <Property name="Attributes">
+	<Property value="TkSceneNodeAttributeData.xml">
+	  <Property name="Name" value="ATTACHMENT" />
+	  <Property name="AltID" value="" />
+	  <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.ENTITY.MBIN" />
+	</Property>
+  </Property>
+  <Property name="Children">
+  </Property>
+</Data>
+]]			
+		},
+		{
+			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.ENTITY.EXML]],
+			["FILE_CONTENT"] 	 = 
+[[
+<?xml version="1.0" encoding="utf-8"?>
+
+<Data template="TkAttachmentData">
+  <Property name="Components">
     <Property value="GcSimpleInteractionComponentData.xml">
       <Property name="SimpleInteractionType" value="Save" />
       <Property name="InteractDistance" value="0" />
@@ -98,6 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="InteractFiendCrimeChance" value="1" />	  
       <Property name="InteractCrimeLevel" value="0" />
+      <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
         <Property name="AltIds" />
@@ -121,13 +266,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="ActivateLocatorsFromRarity" value="False" />
       <Property name="RarityLocators">
-        <Property value="NMSString0x10.xml">
+        <Property name="Common" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
+        <Property name="Uncommon" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
+        <Property name="Rare" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
       </Property>
@@ -209,98 +354,16 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
     </Property>	
-]]							
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
-[[
-    <Property value="GcPlayerEmote.xml">
-      <Property name="Title" value="Save" />
-      <Property name="ChatText" value="" />
-      <Property name="ChatUsesPrefix" value="False" />
-      <Property name="AnimationName" value="SAVEGAME" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
-      </Property>
-      <Property name="LinkedSpecialID" value="" />
-      <Property name="NeverShowInMenu" value="False" />
-      <Property name="LoopAnimUntilMove" value="" />
-      <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="False" />
-      <Property name="GekAnimationName" value="" />
-      <Property name="GekLoopAnimUntilMove" value="" />
-      <Property name="AvailableUnderwater" value="False" />
-      <Property name="RidingAnimationName" value="SAVEGAME" />
-      <Property name="IsPetCommand" value="False" />
-      <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-      </Property>
-    </Property>
-    <Property value="GcPlayerEmote.xml">
-      <Property name="Title" value="Save" />
-      <Property name="ChatText" value="" />
-      <Property name="ChatUsesPrefix" value="False" />
-      <Property name="AnimationName" value="SAVEGAME" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
-      </Property>
-      <Property name="LinkedSpecialID" value="" />
-      <Property name="NeverShowInMenu" value="False" />
-      <Property name="LoopAnimUntilMove" value="" />
-      <Property name="CloseMenuOnSelect" value="False" />
-      <Property name="MoveToCancel" value="False" />
-      <Property name="GekAnimationName" value="" />
-      <Property name="GekLoopAnimUntilMove" value="" />
-      <Property name="AvailableUnderwater" value="True" />
-      <Property name="RidingAnimationName" value="SAVEGAME" />
-      <Property name="IsPetCommand" value="False" />
-      <Property name="PetCommandTitle" value="" />
-      <Property name="PetCommandIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-      </Property>
-    </Property>
-]]							
-						}
-					}
-				}
-			}
-		}		
-	},
-["ADD_FILES"] = 
-	{
-		{
-			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
-[[
-<?xml version="1.0" encoding="utf-8"?>
-<Data template="TkAnimMetadata">
-  <Property name="FrameCount" value="10" />
-  <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
-  <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />
-    </Property>  
-  </Property>	
-  <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
- </Property>
-</Data>	
+  </Property>
+  <Property name="LodDistances">
+    <Property value="0" />
+    <Property value="50" />
+    <Property value="80" />
+    <Property value="150" />
+    <Property value="500" />
+  </Property>
+</Data>
 ]]			
 		}
 	}
 }
-
