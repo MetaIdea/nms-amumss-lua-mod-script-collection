@@ -15,7 +15,8 @@ PROC_SCENE_PATH = {
 function HexToDec(number)
 	if type(number) == "number" then return number
 	elseif string.find(tostring(number),"0x") then return tonumber(number)
-	else return tonumber(number,16) end
+	else return tonumber(number,16) 
+	end
 end
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -23,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "PoliceShipOnStart.pak", 
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
-["NMS_VERSION"]				= "3.68",
+["NMS_VERSION"]				= "3.73",
 ["MODIFICATIONS"] 			= 
 	{
 		{
