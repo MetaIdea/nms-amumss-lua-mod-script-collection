@@ -1,12 +1,15 @@
---[[┎────────────────────────────────────────────────────────────────
-	┃ Faster clicks and keys presses; Redueces cursor size
-	┃ Minor tweaks to menu vehicle/tool/freighter model angles
-────┸────────────────────────────────────────────────────────────--]]
+------------------------------------------------------------
+local desc = [[
+  Faster clicks and keys presses; Reduces cursor size
+  Minor tweaks to menu vehicle/tool/freighter model angles
+]]----------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC UI.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -16,11 +19,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '+',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				VALUE_CHANGE_TABLE 	= {
-					{'RefinerPadStartTime',						-0.75},	-- 1
-					{'FreighterLeaderIconDistance',				-3000},	-- 10000
+					{'StackSizeRateChangeRate',					0.75},-- 1.25
+					{'StackSizeChangeMinRate',					-1},	-- 2
+					{'StackSizeChangeMaxRate',					140},	-- 60
 					{'WantedDetectMinTimeout',					-2},	-- 5
 					{'TakeoffFuelMessageTime',					-3},	-- 5
+					{'RefinerPadStartTime',						-0.75},	-- 1
 					{'HUDMarkerDistanceOrTimeDistance',			29000},	-- 1250
+					{'FreighterLeaderIconDistance',				-3000},	-- 10000
 					{'ShipOverheatSwitchMessageWait',			-0.9},	-- 0.9
 					{'ShipOverheatSwitchMessageTime',			-1.6},	-- 1.6
 					{'NotificationsResourceExtractHintCount',	-1000},	-- 1500
@@ -54,9 +60,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'FrontendConfirmSalvageTime',				-1},	-- 1.6
 					{'FrontendCursorSize',						-14},	-- 24
 					{'FrontendCursorWidth',						-5}, 	-- 9
-					{'DiscoverPlanetTotalTime',					-5}, 	-- 10
+					{'DiscoverPlanetTotalTime',					-6}, 	-- 10
 					{'DiscoverPlanetMessageWait',				-1}, 	-- 1
-					{'DiscoverPlanetMessageTime',				-4}, 	-- 7
+					{'DiscoverPlanetMessageTime',				-4.5}, 	-- 7
 					{'TextChatMaxDisplayTime',					-45},	-- 60
 					{'TextChatStayBigAfterTextInput',			-10}, 	-- 15
 					{'TargetParallaxMouseMultiplier',			-0.36} 	-- 0.36

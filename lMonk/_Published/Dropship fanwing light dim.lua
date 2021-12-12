@@ -1,11 +1,13 @@
---[[┎─────────────────────────────────────────────────────────────────
-	┃ Dim lights on dropship subwing_F (and fix the inverted decal)
-────┸─────────────────────────────────────────────────────────────--]]
+--------------------------------------------------------------------------
+local desc = [[
+  Dim lights on dropship subwing_F (and fix the inverted decal)
+]]------------------------------------------------------------------------
+	
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Dropship fanwing light dim.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.68',
-	MOD_DESCRIPTION		= 'Dim lights on dropship wing_F',
+	NMS_VERSION			= 3.75,
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

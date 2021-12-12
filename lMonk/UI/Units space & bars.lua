@@ -1,12 +1,15 @@
---[[┎──────────────────────────────────────────────────────────────────
-	┃ Add space in the menu's Units display for larger numbers
-	┃ Remove cinematic black bars
-────┸──────────────────────────────────────────────────────────────--]]
+------------------------------------------------------------
+local desc = [[
+  Add space in the menu's Units display for larger numbers
+  Remove cinematic black bars
+]]----------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__UI more units & less bars.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_UI ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

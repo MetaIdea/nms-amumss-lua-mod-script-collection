@@ -1,12 +1,15 @@
---[[┎────────────────────────────────────────────────────────────────────
-	┃ Restore the scanned fauna icon to the white circle
-	┃ 
-	┃ ** CREATURE.SCANNED2.DDS is NOT an original game resource
-────┸────────────────────────────────────────────────────────────────--]]
+--------------------------------------------------------------------------
+local desc = [[
+  Restore the scanned fauna icon to the white circle
+  
+  ** CREATURE.SCANNED2.DDS is NOT an original game resource
+]]------------------------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.scanned fauna icon replace.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.68',
+	NMS_VERSION			= 3.75,
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

@@ -1,15 +1,17 @@
---[[┎──────────────────────────────────────────────────────────
-	┃ Remove player jetpack trail line; Remove jetpack smoke
-────┸──────────────────────────────────────────────────────--]]
+--------------------------------------------------------------------------
+local desc = [[
+  Remove the jetpack trail line and smoke
+]]------------------------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.remove jetpack trail and smoke.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.21',
-	MOD_DESCRIPTION		= 'Remove player jetpack trail line; Remove jetpack smoke',
+	NMS_VERSION			= 3.75,
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= 'MODELS\EFFECTS\TRAILS\PLAYER\JETPACKTRAIL.TRAIL.MBIN',
+		MBIN_FILE_SOURCE	= 'MODELS/EFFECTS/TRAILS/PLAYER/JETPACKTRAIL.TRAIL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				VALUE_CHANGE_TABLE 	= {
@@ -25,11 +27,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{
 		-- Remove jetpack smoke
 		MBIN_FILE_SOURCE	= {
-			'MODELS\EFFECTS\PLAYER\JETPACKEFFECTS\BLUEJETPACKFX.SCENE.MBIN',
-			'MODELS\EFFECTS\PLAYER\JETPACKEFFECTS\GREENJETPACKFX.SCENE.MBIN',
-			'MODELS\EFFECTS\PLAYER\JETPACKEFFECTS\REDJETPACKFX.SCENE.MBIN',
-			'MODELS\EFFECTS\PLAYER\JETPACKEFFECTS\STANDARDJETPACKFX.SCENE.MBIN',
-			'MODELS\EFFECTS\TRAILS\PLAYER\JETPACKTRAIL.SCENE.MBIN'
+			'MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/BLUEJETPACKFX.SCENE.MBIN',
+			'MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/GREENJETPACKFX.SCENE.MBIN',
+			'MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/REDJETPACKFX.SCENE.MBIN',
+			'MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/JETPACKDARK.SCENE.MBIN',
+			'MODELS/EFFECTS/TRAILS/PLAYER/JETPACKTRAIL.SCENE.MBIN'
 		},
 		EXML_CHANGE_TABLE	= {
 			{

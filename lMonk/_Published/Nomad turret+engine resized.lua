@@ -1,17 +1,18 @@
---[[┎──────────────────────────────────────────────────────────────
-	┃ Reduce turret scale for the Nomad exocraft (BIKE)
-	┃ Rescale engine nozzle, re-position the engine bloom glow
-────┸──────────────────────────────────────────────────────────--]]
+--------------------------------------------------------------------------
+local desc = [[
+  Reduce turret scale for the Nomad exocraft (BIKE)
+  Rescale engine nozzle, re-position the engine bloom glow
+]]------------------------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.nomad turret and engine scaled.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
-	MOD_DESCRIPTION		= [[Reduce turret scale for the Nomad exocraft (BIKE)
-							Rescale engine nozzle, re-position the engine bloom glow ]],
+	NMS_VERSION			= 3.75,
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= 'MODELS\COMMON\VEHICLES\BIKE\BIKEPRES.SCENE.MBIN',
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/BIKE/BIKEPRES.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				INTEGER_TO_FLOAT	= 'FORCE',
@@ -44,6 +45,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'ScaleZ',		0.44}
 				}
 			}
-		}		
+		}
 	}
 }}}}

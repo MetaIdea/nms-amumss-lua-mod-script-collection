@@ -1,13 +1,16 @@
---[[┎────────────────────────────────────────────────────────────────
-	┃ Fewer and more dispersed asteroids
-────┸────────────────────────────────────────────────────────────--]]
-Asteroid_Spread_Mult = { X=0.52, Y=0.42 }
+---------------------------------------
+local desc = [[
+  Fewer and more dispersed asteroids
+]]-------------------------------------
+
+Asteroid_Disp_Mult	= { X=0.52, Y=0.42 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC SOLAR.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -16,6 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				MATH_OPERATION 		= '+',
 				VALUE_CHANGE_TABLE 	= {
+
 					{'PlanetInvalidAsteroidZone',		12000},	-- 10000
 					{'AsteroidNoiseScale',				-9000},	-- 30000
 					{'AsteroidFadeRangeMin',			-200},	-- 1000
@@ -39,40 +43,40 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '*',
 				PRECEDING_KEY_WORDS	= 'AsteroidNoiseRange',
 				VALUE_CHANGE_TABLE	= {
-					{'x', Asteroid_Spread_Mult.X},
-					{'y', Asteroid_Spread_Mult.Y}
+					{'x', Asteroid_Disp_Mult.X},
+					{'y', Asteroid_Disp_Mult.Y}
 				}
 			},
 			{
 				MATH_OPERATION 		= '*',
 				PRECEDING_KEY_WORDS	= 'LargeAsteroidNoiseRange',
 				VALUE_CHANGE_TABLE	= {
-					{'x', Asteroid_Spread_Mult.X},
-					{'y', Asteroid_Spread_Mult.Y}
+					{'x', Asteroid_Disp_Mult.X},
+					{'y', Asteroid_Disp_Mult.Y}
 				}
 			},
 			{
 				MATH_OPERATION 		= '*',
 				PRECEDING_KEY_WORDS	= 'RareAsteroidNoiseRangeFewRares',
 				VALUE_CHANGE_TABLE	= {
-					{'x', Asteroid_Spread_Mult.X},
-					{'y', Asteroid_Spread_Mult.Y}
+					{'x', Asteroid_Disp_Mult.X},
+					{'y', Asteroid_Disp_Mult.Y}
 				}
 			},
 			{
 				MATH_OPERATION 		= '*',
 				PRECEDING_KEY_WORDS	= 'RareAsteroidNoiseRangeSomeRares',
 				VALUE_CHANGE_TABLE	= {
-					{'x', Asteroid_Spread_Mult.X},
-					{'y', Asteroid_Spread_Mult.Y}
+					{'x', Asteroid_Disp_Mult.X},
+					{'y', Asteroid_Disp_Mult.Y}
 				}
 			},
 			{
 				MATH_OPERATION 		= '*',
 				PRECEDING_KEY_WORDS	= 'RareAsteroidNoiseRangeLotsOfRares',
 				VALUE_CHANGE_TABLE	= {
-					{'x', Asteroid_Spread_Mult.X},
-					{'y', Asteroid_Spread_Mult.Y}
+					{'x', Asteroid_Disp_Mult.X},
+					{'y', Asteroid_Disp_Mult.Y}
 				}
 			}
 		}

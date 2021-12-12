@@ -1,12 +1,15 @@
---[[┎────────────────────────────────────────────────────────────────
-	┃ Decrease storms length and increase time between storms
-	┃ Decrease planet fog levels
-────┸────────────────────────────────────────────────────────────--]]
+-----------------------------------------------------------
+local desc = [[
+  Decrease storms length and increase time between storms
+  Decrease planet fog levels
+]]---------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC SKY.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -24,25 +27,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'MaxStormLengthLow',					0.75},	-- 180
 					{'MinStormLengthHigh',					0.75},	-- 150
 					{'MaxStormLengthHigh',					0.55},	-- 320
-					{'StormWarningTime',					0.8}	-- 25
+					{'StormWarningTime',					0.8},	-- 25
+					{'WeatherBloomGain',					0.66},	-- 7.1
+					{'NoAtmosphereFogStrength',				0},	-- 0.3
+					{'NoAtmosphereFogMax',					0},	-- 0.97
 				}
 			},
 			{
-				REPLACE_TYPE 		= 'ALL',
-				MATH_OPERATION 		= '*',
-				INTEGER_TO_FLOAT	= 'FORCE',
-				PRECEDING_KEY_WORDS = 'PlanetFog',
+				PRECEDING_KEY_WORDS	= 'PhotoModeVignette',
 				VALUE_CHANGE_TABLE 	= {
-					{'FogMax',				0.98},	-- 1
-					{'Alpha1',				0.98},	-- 1
-					{'Alpha2',				0.98}	-- 1
+					{'x',			1},
+					{'y',			1}
 				}
 			},
 			{
 				REPLACE_TYPE 		= 'ALL',
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
-				PRECEDING_KEY_WORDS = 'PlanetExtremeFog',
+				SPECIAL_KEY_WORDS	= {'PlanetFog', 'GcFogProperties.xml'},
+				VALUE_CHANGE_TABLE 	= {
+					{'FogMax',				0.94},	-- 1
+					{'Alpha1',				0.94},	-- 1
+					{'Alpha2',				0.94}	-- 1
+				}
+			},
+			{
+				REPLACE_TYPE 		= 'ALL',
+				MATH_OPERATION 		= '*',
+				INTEGER_TO_FLOAT	= 'FORCE',
+				SPECIAL_KEY_WORDS	= {'PlanetExtremeFog', 'GcFogProperties.xml'},
 				VALUE_CHANGE_TABLE 	= {
 					{'FogStrength',			0.78},	-- 0.5
 					{'FogMax',				0.95},	-- 0.9
@@ -55,7 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				REPLACE_TYPE 		= 'ALL',
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
-				PRECEDING_KEY_WORDS = 'PlanetStormFog',
+				SPECIAL_KEY_WORDS	= {'PlanetStormFog', 'GcFogProperties.xml'},
 				VALUE_CHANGE_TABLE 	= {
 					{'FogStrength',			0.88},	-- 1.5
 					{'FogMax',				0.95},	-- 0.95
@@ -65,9 +78,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				REPLACE_TYPE 		= 'ALL',
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
-				PRECEDING_KEY_WORDS = 'PlanetFlightFog',
+				SPECIAL_KEY_WORDS	= {'PlanetFlightFog', 'GcFogProperties.xml'},
 				VALUE_CHANGE_TABLE 	= {
 					{'FogStrength',			0.8},	-- 0.04
 					{'FogMax',				0.95},	-- 1
@@ -79,18 +93,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				PRECEDING_KEY_WORDS = 'SpaceSkyMin',
 				VALUE_CHANGE_TABLE 	= {
 					{'SpaceFogMax',			0.44},	-- 0.7
-					{'SpaceFogPlanetMax',	0.5}	-- 0
+					{'SpaceFogPlanetMax',	0.5},	-- 0
+
 				}
 			},
 			{
-				MATH_OPERATION 		= '+',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = 'SpaceSkyMax',
 				VALUE_CHANGE_TABLE 	= {
 					{'SpaceFogMax',			0.52},	-- 0.7
-					{'SpaceFogPlanetMax',	0.54}	-- 0
+					{'SpaceFogPlanetMax',	0.54},	-- 0
 				}
-			}
+			},
 		}
 	}
 }}}}
