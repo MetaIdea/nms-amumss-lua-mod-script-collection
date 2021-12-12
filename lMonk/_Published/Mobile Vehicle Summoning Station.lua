@@ -1,10 +1,11 @@
---[[┎──────────────────────────────────────────────────────────────────────────
-	┃ Mobile summoning station - make it pickable.
-	┃ Replace the default model with the signal booster
-	┃ Set the station as the default choice in the exocrafts build menu
-	┃ Set the icon to signal booster with a different background
-	┃ Add hazard protection to the new summoing station (signal booster) model
-────┸──────────────────────────────────────────────────────────────────────--]]
+--------------------------------------------------------------------------
+local desc = [[
+  Mobile summoning station - make it pick-able.
+  Replace the default model with the signal booster
+  Set the station as the default choice in the exocrafts build menu
+  Set the icon to signal booster with a different background
+  Add hazard protection to the new summoning station (signal booster) model
+]]------------------------------------------------------------------------
 Protection_Radius = 8
 
 Heater_Attachment = [[
@@ -27,7 +28,7 @@ Heater_Attachment = [[
 			<Property value="TkSceneNodeAttributeData.xml">
 				<Property name="Name" value="ATTACHMENT"/>
 				<Property name="AltID" value=""/>
-				<Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL\ENTITIES\HEATER.ENTITY.MBIN"/>
+				<Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/SPACEBASE/PROPS/STANDINGLIGHT_SMALL/ENTITIES/HEATER.ENTITY.MBIN"/>
 			</Property>
 		</Property>
 		<Property name="Children">
@@ -67,11 +68,12 @@ Heater_Attachment = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Mobile Summoning Station.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= 'METADATA\REALITY\TABLES\BASEBUILDINGTABLE.MBIN',
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/BASEBUILDINGTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'SUMMON_GARAGE'},
@@ -104,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= 'METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN',
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Id', 'SUMMON_GARAGE'},
@@ -124,7 +126,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= 'MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SIGNALSCANNER.SCENE.MBIN',
+		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SIGNALSCANNER.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS	= 'Children',

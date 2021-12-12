@@ -1,20 +1,19 @@
---[[┎──────────────────────────────────────────────────────────────────────────────
-	┃ removes the notification panel's background and icon and add transparency
-	┃ to the text - making it fade into the background (and a little hard to read)
-────┸──────────────────────────────────────────────────────────────────────────--]]
-Text_Alpha = 0.65
+--------------------------------------------------------------------------
+local desc = [[
+  removes the notification panel's background and icon and add transparency
+  to the text - making it fade into the background (and a little hard to read)
+]]------------------------------------------------------------------------
+Text_Alpha = 0.66
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.FADED Notifications.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.62',
-	MOD_DESCRIPTION		= [[
-							Removes the notification panel's background and icon and add transparency
-							to the text - making it fade into the background (and a little hard to read) ]],
+	NMS_VERSION			= 3.75,
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE 	= {
 	{
-		MBIN_FILE_SOURCE	= 'UI\HUD\HUDNOTIFICATIONPANEL.MBIN',
+		MBIN_FILE_SOURCE	= 'UI/HUD/HUDNOTIFICATIONPANEL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'TITLEBACKGROUND'},
@@ -42,7 +41,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'ID', 'TITLE'},
 				SECTION_UP			= 1,
-				PRECEDING_KEY_WORDS	= {'Style'},
 				VALUE_CHANGE_TABLE 	= {
 					{'A',	Text_Alpha}
 				}
@@ -53,7 +51,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'ID', 'BODY'},
 				SECTION_UP			= 1,
-				PRECEDING_KEY_WORDS	= {'Style'},
 				VALUE_CHANGE_TABLE 	= {
 					{'A',	Text_Alpha}
 				}
@@ -64,7 +61,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'ID', 'HEADERLINE'},
 				SECTION_UP			= 1,
-				PRECEDING_KEY_WORDS	= {'Style'},
 				VALUE_CHANGE_TABLE 	= {
 					{'A',	Text_Alpha - 0.1}
 				}
@@ -75,7 +71,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'ID', 'BASELINE'},
 				SECTION_UP			= 1,
-				PRECEDING_KEY_WORDS	= {'Style'},
 				VALUE_CHANGE_TABLE 	= {
 					{'A',	Text_Alpha - 0.1}
 				}

@@ -1,12 +1,15 @@
---[[┎─────────────────────────────────────────────────────────────────────────────────────
-	┃ collect stuff while in the mech
-	┃ resource crates, pearl, fiend egg, eye, hadal, larval, crystal sulphite, glitches
-────┸─────────────────────────────────────────────────────────────────────────────────--]]
+------------------------------------------------------------------------------------
+local desc = [[
+  collect stuff while in the mech
+  resource crates, pearl, fiend egg, eye, hadal, larval, crystal sulphite, glitches
+]]----------------------------------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL collect in mech.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_MODELS ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

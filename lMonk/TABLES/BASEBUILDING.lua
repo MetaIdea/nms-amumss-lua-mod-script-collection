@@ -1,91 +1,96 @@
---[[┎────────────────────────────────────────────────────────────
-	┃ General changes to building parts
-	┃ Set beacon and summon garage as the default of their group
-	┃ Increase power generation and storage
-	┃ Build menu tweaks - change defaults & remove unneeded
-────┸──────────────────────────────────────────────────────────]]
-Build_On_Freighter = {
-	dat = {
-		'NPCVEHICLETERM',
-		'PYRAMIDSHAPE',
-		'WEDGESHAPE',
-		'WEDGESMALLSHAPE',
-		'CURVEPIPESHAPE',
-		'SPHERESHAPE',
-		'CUBESHAPE',
-		'CYLINDERSHAPE'
-	},
-	Get = function(x)
-		return {
-			SPECIAL_KEY_WORDS	= {'ID', x},
-			VALUE_CHANGE_TABLE 	= { {'BuildableOnFreighter', true} }
-		}
-	end
-}
+--------------------------------------------------------------
+local desc = [[
+  General changes to building parts
+  Set beacon and summon garage as the default of their group
+  Increase power generation and storage
+  Build menu tweaks - change defaults & remove unneeded
+]]------------------------------------------------------------
 
-Build_Above_Water = {
-	dat = {
-		'MAINROOM_WATER',
-		'MAINROOMCUBE_W',
-		'MOONPOOL',
-		'BUILDDOOR_WATER',
-		'CORRIDOR_WATER',
-		'CORRIDORL_WATER',
-		'CORRIDORT_WATER',
-		'CORRIDORX_WATER',
-		'CORRIDORV_WATER',
-		'BASE_BARNACLE',
-		'GARAGE_SUB'
-	},
-	Get = function(x)
-		return {
-			SPECIAL_KEY_WORDS	= {'ID', x},
-			VALUE_CHANGE_TABLE 	= { {'BuildableAboveWater', true} }
-		}
-	end
+local Build_On_Freighter = {
+	'NPCVEHICLETERM',
+	'BUILDANTIMATTER',
+	'CYLINDERSHAPE',
+	'CUBESHAPE',
+	'CURVEPIPESHAPE',
+	'PIPESHAPE',
+	'PYRAMIDSHAPE',
+	'SPHERESHAPE',
+	'WEDGESHAPE',
+	'WEDGESMALLSHAPE',
+	'BASE_NEXUS1',
+	'BASE_NEXUS2',
+	'BASE_NEXUS3',
 }
+function Build_On_Freighter:Get(x)
+	return {
+		SPECIAL_KEY_WORDS	= {'ID', x},
+		VALUE_CHANGE_TABLE 	= { {'BuildableOnFreighter', true} }
+	}
+end
 
-Decoration_Type = {
-	dat = {
-		'BUILDBEACON',
-		'BUILDLIGHT',
-		'BUILDLIGHT2',
-		'BUILDLIGHT3',
-		'SUMMON_GARAGE',
-		'BASE_WPLANT1',
-		'BASE_WPLANT2',
-		'BASE_WPLANT3',
-		'BASE_TOYCUBE',
-		'BASE_TOYSPHERE',
-		'BASE_TOYJELLY',
-		'BASE_TOYCORE',
-		'HEATER',
-	},
-	Get = function(x)
-		return {
-			SPECIAL_KEY_WORDS	= {'ID', x},
-			VALUE_CHANGE_TABLE 	= { {'BaseBuildingDecorationType', 'SurfaceNormal'} }
-		}
-	end
+local Build_Above_Water = {
+	'MAINROOM_WATER',
+	'MAINROOMCUBE_W',
+	'MOONPOOL',
+	'BUILDDOOR_WATER',
+	'CORRIDOR_WATER',
+	'CORRIDORL_WATER',
+	'CORRIDORT_WATER',
+	'CORRIDORX_WATER',
+	'CORRIDORV_WATER',
+	'BASE_BARNACLE',
+	'GARAGE_SUB'
 }
+function Build_Above_Water:Get(x)
+	return {
+		SPECIAL_KEY_WORDS	= {'ID', x},
+		VALUE_CHANGE_TABLE 	= { {'BuildableAboveWater', true} }
+	}
+end
+
+local Decoration_Type = {
+	{'BUILDLIGHT'},
+	{'BUILDLIGHT2'},
+	{'BUILDLIGHT3'},
+	{'SUMMON_GARAGE'},
+	{'HEATER'},
+	{'BASE_TOYCUBE'},
+	{'BASE_TOYSPHERE'},
+	{'BASE_TOYJELLY'},
+	{'BASE_TOYCORE'},
+	{'PLANETPORTABLE',	'SubGroupName', 2},
+	{'DECOFOLIAGE',		'SubGroupName', 2},
+	{'DECOGLITCHES',	'SubGroupName', 2},
+}
+function Decoration_Type:Get(x)
+	local tp = nil
+	if #x > 1 then tp = 'ALL' end
+	return {
+		REPLACE_TYPE 		= tp,
+		SPECIAL_KEY_WORDS	= {(x[2] or 'ID'), x[1]},
+		SECTION_UP			= (x[3] or 0),
+		VALUE_CHANGE_TABLE 	= { {'BaseBuildingDecorationType', 'SurfaceNormal'} }
+	}
+end
 
 local function BuildExmlChangeTable(tbl)
 	local T = {}
-	for i = 1, #tbl.dat do table.insert(T, tbl.Get(tbl.dat[i])) end
+	for _,v in ipairs(tbl) do table.insert(T, tbl:Get(v)) end
 	return T
 end
 
-Source_Table_Basebuild = 'METADATA/REALITY/TABLES/BASEBUILDINGTABLE.MBIN'
+local Source_Table_BaseObj = 'METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN'
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '__TABLE BASEBUILDING.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_TABLES ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= Source_Table_Basebuild,
+		MBIN_FILE_SOURCE	= Source_Table_BaseObj,
 		EXML_CHANGE_TABLE	= {
 			{
 				REPLACE_TYPE 		= 'ALL',
@@ -123,24 +128,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'WATERBUBBLE'},
-				VALUE_CHANGE_TABLE 	= {
-					{'BuildableAboveWater',	true},
-					{'EditsTerrain',		false},
-					{'CloseMenuAfterBuild',	true},
-					{'Value',				'PLANET_TECH'}
-				}
-			},
-			{
-				REPLACE_TYPE 		= 'ALL',
-				SPECIAL_KEY_WORDS	= {'Value', 'GLITCH'},
-				SECTION_UP			= 2,
-				VALUE_CHANGE_TABLE 	= {
-					{'BaseBuildingDecorationType', 'SurfaceNormal'},
-					{'BuildableOnPlanet',	false}
-				}
-			},
-			{
 				SPECIAL_KEY_WORDS	= {'ID', 'SUMMON_GARAGE'},
 				VALUE_CHANGE_TABLE 	= {
 					{'CanPickUp',			true},
@@ -150,16 +137,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'SUMMON_GARAGE'},
-				PRECEDING_KEY_WORDS = 'Model',
+				PRECEDING_KEY_WORDS = 'PlacementScene',
 				VALUE_CHANGE_TABLE 	= {
-					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SIGNALSCANNER.SCENE.MBIN'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'SUMMON_GARAGE'},
-				PRECEDING_KEY_WORDS = 'InactiveModel',
-				VALUE_CHANGE_TABLE 	= {
-					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SIGNALSCANNER/SIGNALSCANNER_LOD.SCENE.MBIN'}
+					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SIGNALSCANNER_PLACEMENT.SCENE.MBIN'}
 				}
 			},
 			{
@@ -180,45 +160,38 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'Storage',				80000},	-- 45000
 				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'U_PORTALLINE', 'Value', 'UTILITY_TECH'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Value', 'UTILITY_POWER'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'BUILDHARVESTER', 'Value', 'BASE_TECH'},
-				REMOVE				= 'SECTION'
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'BUILDGASHARVEST', 'Value', 'BASE_TECH'},
-				REMOVE				= 'SECTION'
-			},
-			{
-				SPECIAL_KEY_WORDS = {'Name', 'UI_BUILD_PATH_PLANET_TECH'},
-				VALUE_CHANGE_TABLE 	= {
-					{'DefaultItem', 'BUILDBEACON'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS = {'Name', 'UI_BUILD_PATH_VEHICLES'},
-				VALUE_CHANGE_TABLE 	= {
-					{'DefaultItem', 'SUMMON_GARAGE'}
-				}
 			}
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= Source_Table_Basebuild,
+		MBIN_FILE_SOURCE	= Source_Table_BaseObj,
 		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Build_On_Freighter)
 	},
 	{
-		MBIN_FILE_SOURCE	= Source_Table_Basebuild,
+		MBIN_FILE_SOURCE	= Source_Table_BaseObj,
 		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Build_Above_Water)
 	},
 	{
-		MBIN_FILE_SOURCE	= Source_Table_Basebuild,
+		MBIN_FILE_SOURCE	= Source_Table_BaseObj,
 		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Decoration_Type)
+	},
+	{
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/BASEBUILDINGPARTSTABLE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'ID', '_SUMMON_GARAGE'},
+				PRECEDING_KEY_WORDS = 'Model',
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SIGNALSCANNER.SCENE.MBIN'}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', '_SUMMON_GARAGE'},
+				PRECEDING_KEY_WORDS = 'Inactive',
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/SIGNALSCANNER/SIGNALSCANNER_LOD.SCENE.MBIN'}
+				}
+			}
+		}
 	}
 }}}}
