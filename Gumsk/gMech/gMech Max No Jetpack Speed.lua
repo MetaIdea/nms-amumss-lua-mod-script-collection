@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech"
 ModNameSub = "Max No Jetpack Speed"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "370"
+GameVersion = "375"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
@@ -44,10 +44,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{["MBIN_FILE_SOURCE"]	= FileSource1,
 	["EXML_CHANGE_TABLE"]	= {
 		{["SPECIAL_KEY_WORDS"] = {"Anim", "FASTWALK"},
+			["SECTION_ACTIVE"] = {1,},
+			["INTEGER_TO_FLOAT"] = "FORCE",
 			["VALUE_CHANGE_TABLE"] = {
 				{"Speed", FastWalkSpeed}
 		}},
 		{["SPECIAL_KEY_WORDS"] = {"Anim", "WALK"},
+			["SECTION_ACTIVE"] = {1,},
+			["INTEGER_TO_FLOAT"] = "FORCE",
 			["VALUE_CHANGE_TABLE"] = {
 				{"Speed", WalkSpeed}
 		}},
@@ -55,7 +59,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["MBIN_FILE_SOURCE"]	= FileSource2,
 	["EXML_CHANGE_TABLE"]	= {
-		{["VALUE_CHANGE_TABLE"] = {
+		{["INTEGER_TO_FLOAT"] = "FORCE",
+		["VALUE_CHANGE_TABLE"] = {
 			{"MechContrailAlpha",MechContrailAlpha},
 			{"MechTurnSpeed",MechTurnSpeed},
 			{"MechJetpackTurnSpeed",MechJetpackTurnSpeed},

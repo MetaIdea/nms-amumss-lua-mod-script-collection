@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech"
 ModNameSub = "Turn"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "370"
+GameVersion = "375"
 ModVersion = "a"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
@@ -20,7 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["MBIN_FILE_SOURCE"]	= FileSource2,
 	["EXML_CHANGE_TABLE"]	= {
-		{["VALUE_CHANGE_TABLE"] = {
+		{["INTEGER_TO_FLOAT"] = "FORCE",
+		["VALUE_CHANGE_TABLE"] = {
 			{"MechTurnSpeed",MechTurnSpeed},
 			{"MechJetpackTurnSpeed",MechJetpackTurnSpeed},
 		}},
