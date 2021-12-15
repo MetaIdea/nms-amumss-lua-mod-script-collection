@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GPredators Frequency"
+ModName = "gPredators Frequency"
 ModNameSub = "High"
 BaseDescription = "More dense predators"
-GameVersion = "352"
+GameVersion = "370"
 ModVersion = "a"
 
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORMED.MBIN"
@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 	{
 		["VALUE_CHANGE_TABLE"] = {
-			{"LifeSetting", "Low"},
+			{"LifeSetting", "Full"},
 	}},
 }},
 
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 	{
 		["VALUE_CHANGE_TABLE"] = {
-			{"LifeSetting", "Mid"},
+			{"LifeSetting", "Full"},
 	}},
 }},
 

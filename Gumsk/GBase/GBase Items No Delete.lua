@@ -1,10 +1,10 @@
 Author = "Gumsk"
-ModName = "GBase"
+ModName = "gBase"
 ModNameSub = "Items No Delete"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "352"
+GameVersion = "371"
 ModVersion = "a"
-FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGTABLE.MBIN"
+FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {

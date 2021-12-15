@@ -1,8 +1,8 @@
 Author = "Gumsk,Devilin Pixy,Jasondude"
-ModName = "GMech"
+ModName = "gMech"
 ModNameSub = "Slow"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "352"
+GameVersion = "370"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
@@ -12,7 +12,7 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 	WalkSpeed									= 1.1		--0.8
 
 --GCVEHICLEGLOBALS Mech
-	MechContrailAlpha							= 0.1		--0.6
+	MechContrailAlpha							= 0.6		--0.6
 	MechTurnSpeed								= 0.6		--1.5
 	MechJetpackTurnSpeed						= 0.8		--3
 	MechWalkToRunTimeIdle						= 1			--2

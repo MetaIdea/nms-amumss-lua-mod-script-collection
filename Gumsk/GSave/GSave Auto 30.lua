@@ -1,8 +1,8 @@
 Author = "Mjjstral+Gumsk"
-ModName = "GSave Auto"
+ModName = "gSave Auto"
 ModNameSub = "30"
 BaseDescription = "Autosaves game on a timer"
-GameVersion = "352"
+GameVersion = "370"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN"
 
@@ -77,7 +77,7 @@ AddText = [[
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>		  
@@ -95,7 +95,7 @@ AddText = [[
           <Property name="StateID" value="RESET_SAVE_STATE" />
           <Property name="Triggers">
 			<Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>
@@ -113,7 +113,7 @@ AddText = [[
           <Property name="StateID" value="SAVE_STATE" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="1800" />
                 <Property name="RandomSeconds" value="0" />
               </Property>

@@ -27,6 +27,7 @@
       <Property name="BlockTeleporter" value="False" />
       <Property name="DisableGravity" value="False" />
       <Property name="SpinOnCreate" value="0" />
+	  <Property name="UseBasePartOptimisation" value="False" />
     </Property>
   </Property>
   <Property name="LodDistances">

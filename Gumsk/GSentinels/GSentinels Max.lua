@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GSentinels"
+ModName = "gSentinels"
 ModNameSub = "Max"
-BaseDescription = "Fewer Sentinels"
-GameVersion = "352"
+BaseDescription = "Max Sentinels"
+GameVersion = "370"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

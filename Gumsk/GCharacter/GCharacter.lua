@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GCharacter"
+ModName = "gCharacter"
 ModNameSub = ""
 BaseDescription = "Character movement changes"
-GameVersion = "321"
+GameVersion = "371"
 ModVersion = "a"
 FileSource1 = "GCCHARACTERGLOBALS.GLOBAL.MBIN"
 
@@ -16,13 +16,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
 ["MODIFICATIONS"]	= {
-{["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource1,
-["EXML_CHANGE_TABLE"] = {
-	{["PRECEDING_KEY_WORDS"] = "",
-		["VALUE_CHANGE_TABLE"] = {
-		{"LadderDistanceToAutoMount", LadderDistanceToAutoMount},
-		{"TimeFallingUntilPanic", TimeFallingUntilPanic},
-	}},
-
-}}}}}}
+{
+	["MBIN_CHANGE_TABLE"] = {
+		{
+			["MBIN_FILE_SOURCE"] = FileSource1,
+			["EXML_CHANGE_TABLE"] = {
+				{
+					["PRECEDING_KEY_WORDS"] = "",
+					["VALUE_CHANGE_TABLE"] = {
+						{"LadderDistanceToAutoMount", LadderDistanceToAutoMount},
+						{"TimeFallingUntilPanic", TimeFallingUntilPanic},
+					}
+				},
+			}
+		}
+	}
+}
+}}

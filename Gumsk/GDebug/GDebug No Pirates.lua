@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GDebug"
+ModName = "gDebug"
 ModNameSub = "No Pirates"
 BaseDescription = "Removes pirates"
-GameVersion = "352"
+GameVersion = "370"
 ModVersion = "a"
 FileSource = "GCDEBUGOPTIONS.GLOBAL.MBIN"
 
