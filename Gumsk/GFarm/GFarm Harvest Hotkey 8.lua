@@ -1,8 +1,8 @@
 Author = "Mjjstral+Gumsk"
-ModName = "GFarm Harvest Hotkey"
+ModName = "gFarm Harvest Hotkey"
 ModNameSub = "8"
 BaseDescription = "Harvests all farm plants within specified u."
-GameVersion = "352"
+GameVersion = "370"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN"
 
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["EXML_CHANGE_TABLE"] 	= 
 			{
 				{
-				["SPECIAL_KEY_WORDS"]	= {"Anim","JETPACK_CLOSE"}, 
+				["SPECIAL_KEY_WORDS"]	= {"Anim","0H_GREET_MOB_04"}, 
 					["LINE_OFFSET"] 		= "+0",
 					["REPLACE_TYPE"] = "ADDAFTERSECTION",
 					["ADD"] 				= 
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="HARVEST" />
           <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
-          <Property name="AnimType" value="OneShot" />
+          <Property name="AnimType" value="OneShotBlendable" />
           <Property name="FrameStart" value="0" />
           <Property name="FrameEnd" value="0" />
           <Property name="StartNode" value="" />
@@ -127,7 +127,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>		  
@@ -145,7 +145,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="StateID" value="HARVEST" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>
@@ -166,7 +166,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="StateID" value="WAIT_FOR_HARVEST" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcAnimFrameEvent.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="HARVEST" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />

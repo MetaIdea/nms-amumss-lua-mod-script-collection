@@ -1,8 +1,8 @@
 Author = "Gumsk+Azzinoth"
-ModName = "GCam"
+ModName = "gCam"
 ModNameSub = "Centered Turbo"
 BaseDescription = "Camera modifications"
-GameVersion = "352"
+GameVersion = "371"
 ModVersion = "a"
 FileSource = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 

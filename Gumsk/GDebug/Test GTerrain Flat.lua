@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GTerrain"
 ModNameSub = "Flat"
 BaseDescription = ""
-GameVersion = "335"
+GameVersion = "366"
 ModVersion = "a"
 FileSource = "GCTERRAINGLOBALS.GLOBAL.MBIN"
 

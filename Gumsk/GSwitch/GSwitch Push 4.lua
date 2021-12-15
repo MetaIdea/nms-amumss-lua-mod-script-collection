@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GSwitch"
+ModName = "gSwitch"
 ModNameSub = "Push 4"
 BaseDescription = "Extended switch button time"
-GameVersion = "321"
+GameVersion = "371"
 ModVersion = "a"
 FileSource = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\SWITCH_BUTTON\ENTITIES\INTERACTION.ENTITY.MBIN"
 
@@ -11,17 +11,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource,
-["EXML_CHANGE_TABLE"] = {
-
-	{["SPECIAL_KEY_WORDS"] = {"StateID","ON"},
-	["PRECEDING_KEY_WORDS"] = {"GcActionTrigger.xml","GcActionTrigger.xml"},
-		["WHERE_IN_SECTION"] = {
-			{"Seconds",1}},
-		["VALUE_CHANGE_TABLE"] = {
-			{"Seconds",4}
-		}
-	},
-}},}},}}
+["MODIFICATIONS"]	= {
+{
+	["MBIN_CHANGE_TABLE"] = {
+		{
+			["MBIN_FILE_SOURCE"] = FileSource,
+			["EXML_CHANGE_TABLE"] = {
+				{
+					["SPECIAL_KEY_WORDS"] = {"StateID","ON"},
+					["PRECEDING_KEY_WORDS"] = {"GcActionTrigger.xml","GcActionTrigger.xml"},
+					["WHERE_IN_SECTION"] = {
+						{"Seconds",1}
+					},
+					["VALUE_CHANGE_TABLE"] = {
+						{"Seconds",4}
+					}
+				},
+			}
+		},
+	}
+},
+}}
