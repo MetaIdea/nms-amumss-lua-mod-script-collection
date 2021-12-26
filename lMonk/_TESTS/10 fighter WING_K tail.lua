@@ -1,6 +1,7 @@
---[[┎──────────────────────────────────────────────────────────────
-	┃ add overhead tail fin to wing_K
-────┸──────────────────────────────────────────────────────────--]]
+--[[-----------------------------------------
+ add overhead tail fin to wing_K
+-------------------------------------------]]
+
 Wing_K_Tail = [[
 	<Property name="Children">
 		<Property value="TkSceneNodeData.xml">
@@ -65,7 +66,7 @@ Wing_K_Tail_Desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 10 WING_K tail fin.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

@@ -1,0 +1,40 @@
+---Lite---
+GBase Boundary 2k
+GBase Items Basic
+GBobble Chibi
+GCam Centered No Shake
+GCreatures Giants 2
+GDebug Main
+GDoor
+GDoor Garage
+GFloor Heated
+GGame Scan
+GGUI Parallax plus Lo2k
+GLight Always On
+GShip Add Missing Trails
+GShip Center Explorer Trails
+GTech Installs
+
+---Normal---
+GBlack Market Better
+GCreatures Pet Egg Timers
+GEnviro
+GGame Full
+GMech
+GPlayer Normal
+GProc
+GShip Flight PC
+GStack 2x
+GTech Installs plus Jetpack
+GVehicle Normal
+
+---Max---
+GBase Items EM Anywhere 10x
+GBlack Market Best
+GCreatures Sandworms More
+GMech Max
+GPlayer Max
+GSettlement Free+Instant
+GStack 10x
+GTech Full
+GVehicle Max

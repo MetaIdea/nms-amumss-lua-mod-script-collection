@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GHot"
+ModName = "gHot"
 ModNameSub = ""
 BaseDescription = "Hotspot balancing"
-GameVersion = "335"
+GameVersion = "371"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"
 
@@ -63,20 +63,23 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
 for i = 1,6 do
 	for j = 5,12 do	
 		local temp_table =
-			{["PRECEDING_KEY_WORDS"] = {tostring(Original_Hotspot_Array[1][i]), Preceding_Array[j-1]},
-			["VALUE_CHANGE_TABLE"] = {
-				{tostring(Original_Hotspot_Array[j][i]), tostring(New_Hotspot_Array[j][i])}
-			}}
-			Change_Table_Array[#Change_Table_Array + 1] = temp_table
+			{
+				["PRECEDING_KEY_WORDS"] = {tostring(Original_Hotspot_Array[1][i]), Preceding_Array[j-1]},
+				["VALUE_CHANGE_TABLE"] = {
+					{tostring(Original_Hotspot_Array[j][i]), tostring(New_Hotspot_Array[j][i])}
+				}
+			}
+		Change_Table_Array[#Change_Table_Array + 1] = temp_table
 	end
 	local temp_table =
-		{["PRECEDING_KEY_WORDS"] = {"RegionHotspots", tostring(Original_Hotspot_Array[1][i])},
-			["VALUE_CHANGE_TABLE"] =
-			{
+		{
+			["PRECEDING_KEY_WORDS"] = {"RegionHotspots", tostring(Original_Hotspot_Array[1][i])},
+			["VALUE_CHANGE_TABLE"] = {
 				{"ProbabilityWeighting",tostring(New_Hotspot_Array[2][i])},
 				{"MinRange",tostring(New_Hotspot_Array[3][i])},
 				{"MaxRange",tostring(New_Hotspot_Array[4][i])},
 				{"DiscoveryDistanceThreshold",tostring(New_Hotspot_Array[13][i])}
-		}}
-		Change_Table_Array[#Change_Table_Array + 1] = temp_table
+			}
+		}
+	Change_Table_Array[#Change_Table_Array + 1] = temp_table
 end

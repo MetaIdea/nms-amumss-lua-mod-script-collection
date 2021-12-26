@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GSentinels"
+ModName = "gSentinels"
 ModNameSub = "Fewer"
 BaseDescription = "Fewer Sentinels"
-GameVersion = "352"
+GameVersion = "370"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -20,8 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"SentinelsHigh", 5},							--10
 					{"SentinelsLow", 60},							--30
 					{"ViciousSentinelProbability", .1},				--0.25
-					{"AggressiveSentinelProbability", .6},			--0.13
-					{"AggressiveSentinelProbabilitySurvival", .6},	--0.13
+					{"AggressiveSentinelProbability", .05},			--0.13
+					{"AggressiveSentinelProbabilitySurvival", .05},	--0.13
 					{"LowSentinelProbability", .7},					--0.55
 					{"LowSentinelProbabilitySurvival", .4},			--0.25
 					{"NonAggressiveLushSurvivalProbabability", .75},--0.5

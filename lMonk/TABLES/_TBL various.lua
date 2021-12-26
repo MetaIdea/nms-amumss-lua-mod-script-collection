@@ -1,8 +1,10 @@
---[[┎──────────────────────────────────────────────────────────
-	┃ Increase exocraft inventory size
-	┃ Vykeen monolith accepts Effigy instead of dagger
-	┃ Add freighter cargo bulkhead to freighter tech tree
-────┸──────────────────────────────────────────────────────--]]
+------------------------------------------------------
+local desc = [[
+  Increase exocraft inventory size
+  Vykeen monolith accepts Effigy instead of dagger
+  Add freighter cargo bulkhead to freighter tech tree
+]]----------------------------------------------------
+
 local function NewItemTreeNode(id)
 	return [[
 		<Property value="GcUnlockableItemTreeNode.xml">
@@ -15,11 +17,13 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_TABLES ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
+		-- |higher vehicle inventory|
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -42,20 +46,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'MinSlots',	48},
 					{'MaxSlots',	48}
 				}
-			},
-			-- {
-				-- REPLACE_TYPE 		= 'ALL',
-				-- MATH_OPERATION 		= '+',
-				-- VALUE_MATCH			= 48,
-				-- VALUE_MATCH_OPTIONS = '<',
-				-- PRECEDING_KEY_WORDS = 'MaxTechInventoryCapacity',
-				-- VALUE_CHANGE_TABLE 	= {
-					-- {'IGNORE',		27}
-				-- }
-			-- }
+			}
 		}
 	},
 	{
+		-- |pastry shield|
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -68,6 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
+		-- |Effigy for Vykeen monolith|
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/COSTTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -79,11 +75,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
+		-- |craft freight bulkehad|
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Title', 'UI_FREIGHTER_TREE'},
 				PRECEDING_KEY_WORDS = 'Children',
+				SECTION_ACTIVE		= 1,
 				ADD					= NewItemTreeNode('FREI_INV_TOKEN')
 			}
 		}

@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GPlayer"
+ModName = "gPlayer"
 ModNameSub = "Walk"
 BaseDescription = ""
-GameVersion = "336"
+GameVersion = "370"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
 

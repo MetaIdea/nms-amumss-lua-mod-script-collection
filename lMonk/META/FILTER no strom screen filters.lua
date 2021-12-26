@@ -1,12 +1,15 @@
---[[┎──────────────────────────────────────────────────────────
-	┃ Disable storm weather filters
-	┃ remove screen filter from scanning and surveying binocs
-────┸──────────────────────────────────────────────────────--]]
+----------------------------------------------------------
+local desc = [[
+  Disable storm weather filters
+  remove screen filter from scanning and surveying binocs
+]]--------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META screen filters.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_META ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

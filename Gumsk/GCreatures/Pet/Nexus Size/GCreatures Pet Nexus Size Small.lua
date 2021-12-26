@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GCreatures Pet Nexus Size"
 ModNameSub = "Small"
 BaseDescription = "Unlocks Nexus pet size"
-GameVersion = "322"
+GameVersion = "400"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 

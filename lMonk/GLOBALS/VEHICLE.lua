@@ -1,11 +1,16 @@
---[[┎──────────────────────────────────────────
-	┃ General tweaks to vehicle stats
-────┸──────────────────────────────────────--]]
+------------------------------------------------------------
+local desc = [[
+  General better handling in water; stronger & longer boost
+  Nimbler Mech handling;
+  Eject on top of submarine; much longer summoning range
+]]----------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC VEHICLE.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -13,9 +18,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				MATH_OPERATION 		= '+',
+				INTEGER_TO_FLOAT	= 'FORCE',
 				VALUE_CHANGE_TABLE 	= {
-					{'MiningLaserRadius', 			-0.5},	-- 1.3
-					{'VehicleMaxSummonDistance',	4000},	-- 50
 					{'MechLandBrake',				1},		-- 4
 					{'MechJetpackLandTime',			-0.2},	-- 0.6
 					{'MechTurnSpeed',				-0.8},	-- 1.5
@@ -30,7 +34,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'ExitStopTime',				1.5},	-- 0.5
 					{'ExitStopForce',				-40},	-- 50
 					{'SubmarineEjectRadius',		-1.8},	-- 1.8 -- stand on top
-					{'SubmarineEjectDownOffset',	3}		-- -2
+					{'SubmarineEjectDownOffset',	3},		-- -2
+					{'MiningLaserRadius', 			-0.5},	-- 1.3
+					{'VehicleMaxSummonDistance',	4000},	-- 50
+					{'SpawnRotation',				-40},	-- 10
+					{'MechSpawnRotation',			-40},	-- 190
+
 				}
 			},
 			{
@@ -100,10 +109,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'Name', 'SUBMARINE'},
 				VALUE_CHANGE_TABLE 	= {
 					{'UnderwaterEnginePower',		2},		-- 6
-					{'UnderwaterEngineMaxSpeed',	7},		-- 15
-					{'UnderwaterEngineFalloff', 	-0.5},	-- 0.7
-					{'TopSpeedForward', 			7},		-- 15
-					{'VehicleGravity',				-5},	-- 30
+					{'UnderwaterEngineMaxSpeed',	4},		-- 15
+					{'UnderwaterEngineFalloff', 	-0.4},	-- 0.7
+					{'TopSpeedForward', 			4},		-- 15
 					{'VehicleGravityWater',			-1},	-- 17.5
 				}
 			},

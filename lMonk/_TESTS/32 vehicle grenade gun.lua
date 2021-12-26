@@ -1,11 +1,12 @@
---[[┎──────────────────────────────────────────────────────────────────────
-	┃ vehicle gun turret shoots grenades!!
-	┃ replace vehicle gun upgrade module Gun Heat bonus with splash radius
-────┸──────────────────────────────────────────────────────────────────--]]
+--[[--------------------------------------------------------------------
+  vehicle gun turret shoots grenades!!
+  replace vehicle gun upgrade module Gun Heat bonus with splash radius
+----------------------------------------------------------------------]]
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 32 vehicle grenade gun.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

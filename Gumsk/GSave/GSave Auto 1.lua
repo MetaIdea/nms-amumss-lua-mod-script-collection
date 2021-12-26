@@ -1,8 +1,8 @@
 Author = "Mjjstral+Gumsk"
-ModName = "GSave Auto"
+ModName = "gSave Auto"
 ModNameSub = "1"
 BaseDescription = "Autosaves game on a timer"
-GameVersion = "335"
+GameVersion = "371"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN"
 
@@ -28,7 +28,9 @@ AddText = [[
       <Property name="InteractFiendCrimeType" value="GcFiendCrime.xml">
         <Property name="FiendCrime" value="None" />
       </Property>
+      <Property name="InteractFiendCrimeChance" value="1" />
       <Property name="InteractCrimeLevel" value="0" />
+      <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
         <Property name="AltIds" />
@@ -37,7 +39,7 @@ AddText = [[
         <Property name="RequiredTech" value="" />
       </Property>
       <Property name="StatToTrack" value="GcStatsEnum.xml">
-        <Property name="Stat" value="None" />
+        <Property name="GcStatEnum" value="None" />
       </Property>
       <Property name="StartsBuried" value="False" />
       <Property name="MustBeVisibleToInteract" value="False" />
@@ -52,13 +54,13 @@ AddText = [[
       </Property>
       <Property name="ActivateLocatorsFromRarity" value="False" />
       <Property name="RarityLocators">
-        <Property value="NMSString0x10.xml">
+        <Property name="Common" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
+        <Property name="Uncommon" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
+        <Property name="Rare" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
       </Property>
@@ -77,7 +79,7 @@ AddText = [[
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>		  
@@ -95,7 +97,7 @@ AddText = [[
           <Property name="StateID" value="RESET_SAVE_STATE" />
           <Property name="Triggers">
 			<Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>
@@ -113,7 +115,7 @@ AddText = [[
           <Property name="StateID" value="SAVE_STATE" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Trigger" value="GcStateTimeEvent.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="60" />
                 <Property name="RandomSeconds" value="0" />
               </Property>

@@ -1,21 +1,23 @@
---[[┎──────────────────────────────────────────────────
-	┃ META folder tweaks collection
-────┸──────────────────────────────────────────────--]]
+------------------------------------------------------------
+local desc = [[
+  Restore old creature-scanned icon; Remove choice HUD icons
+  Faster screen text
+  Increase suit tech inventory size; round stack to 10000
+  remove startup logo splash
+  add eye texture to alien head4
+  better cloud map
+]]----------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_META ~@~collection.pak',
-	MOD_DESCRIPTION		= [[
-							Replace the creature-scanned icon
-							Faster screen text
-							Increase suit tech inventory size; round stack to 10000
-							remove startup logo splash
-							better cloud map  ]],
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		-- replace the creature-scanned icon
+		-- |restore-remove HUD icons|
 		MBIN_FILE_SOURCE	= 'METADATA/UI/HUD/SCANNERICONS.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -23,11 +25,39 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'Filename', 'TEXTURES/UI/HUD/CREATURE.SCANNED2.DDS'}
 				}
-			}
+			},
+			{
+				REPLACE_TYPE 		= 'ALL',
+				PRECEDING_KEY_WORDS = 'MessageBeacon',
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.DDS'}
+				}
+			},
+			{
+				REPLACE_TYPE 		= 'ALL',
+				PRECEDING_KEY_WORDS = 'MessageBeaconSmall',
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.DDS'}
+				}
+			},
+			{
+				REPLACE_TYPE 		= 'ALL',
+				PRECEDING_KEY_WORDS = 'FreighterBase',
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.DDS'}
+				}
+			},
+			{
+				REPLACE_TYPE 		= 'ALL',
+				PRECEDING_KEY_WORDS = 'PlayerFreighter',
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.DDS'}
+				}
+			},
 		}
 	},
 	{
-		-- Faster screen text
+		-- |Faster screen text|
 		MBIN_FILE_SOURCE	= 'METADATA/UI/SPECIALTEXTPUNCTUATIONDELAYDATA.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -42,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		-- Increase suit tech inventory size; round stack to 10000
+		-- |Increase suit tech inventory| size; round stack to 10000
 		MBIN_FILE_SOURCE	= {
 			'METADATA/GAMESTATE/DEFAULTINVENTORYBALANCE.MBIN',
 			'METADATA/GAMESTATE/DEFAULTINVENTORYBALANCESURVIVAL.MBIN'
@@ -62,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		-- Increase substance stack in survival mode
+		-- Increase |substance stack in survival| mode
 		MBIN_FILE_SOURCE	= 'METADATA/GAMESTATE/DEFAULTINVENTORYBALANCESURVIVAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -73,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		-- faster startup logo splash
+		-- |faster splash logo| 
 		MBIN_FILE_SOURCE	= 'METADATA/UI/BOOTLOGOPC.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
@@ -87,7 +117,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		-- better cloud map
+		-- |restore eyes to head4| alien
+		MBIN_FILE_SOURCE	= 'METADATA/GAMESTATE/PLAYERDATA/CHARACTERCUSTOMISATIONDESCRIPTORGROUPSDATA.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'GroupID', 'FOURTH_HEAD_1'},
+				PRECEDING_KEY_WORDS = 'Descriptors',
+				ADD 				= [[<Property value="NMSString0x20.xml">
+											<Property name="Value" value="_EYES_DEFAULT1"/>
+										</Property>]]
+			}
+		}
+	},
+	{
+		-- |better clouds|
 		MBIN_FILE_SOURCE	= 'MATERIALS/ATMOSPHERE.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			-- {

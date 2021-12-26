@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GWeather Storms"
 ModNameSub = "Longer"
 BaseDescription = "Makes storms longer"
-GameVersion = "352"
+GameVersion = "363"
 ModVersion = "a"
 FileSource1 = "GCSKYGLOBALS.GLOBALS.MBIN"
 
