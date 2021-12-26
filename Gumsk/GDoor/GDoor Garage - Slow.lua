@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GDoor"
+ModName = "gDoor"
 ModNameSub = "Garage Slow"
 BaseDescription = "Proximity garage doors"
-GameVersion = "335"
+GameVersion = "375"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\COMMON\ENTITIES\GARAGEDOOR.ENTITY.MBIN"
 
@@ -15,7 +15,7 @@ States = [[
 					<Property name="StateID" value="PROXON" />
 					<Property name="Triggers">
 						<Property value="GcActionTrigger.xml">		
-							<Property name="Trigger" value="GcPlayerNearbyEvent.xml">
+							<Property name="Event" value="GcPlayerNearbyEvent.xml">
 								<Property name="RequirePlayerAction" value="OnFoot" />
 								<Property name="Distance" value="20" />
 								<Property name="Angle" value="360" />
@@ -52,7 +52,7 @@ States = [[
 					<Property name="StateID" value="PROXOFF" />
 					<Property name="Triggers">
 						<Property value="GcActionTrigger.xml">		
-							<Property name="Trigger" value="GcPlayerNearbyEvent.xml">
+							<Property name="Event" value="GcPlayerNearbyEvent.xml">
 								<Property name="RequirePlayerAction" value="OnFoot" />
 								<Property name="Distance" value="20" />
 								<Property name="Angle" value="360" />
@@ -97,19 +97,37 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource1,
-	["EXML_CHANGE_TABLE"] = {
-		-- {["SPECIAL_KEY_WORDS"] = {"Anim","OPEN"},
-		-- ["VALUE_CHANGE_TABLE"] =
-			-- {{"Speed", 3}}},
-		-- {["SPECIAL_KEY_WORDS"] = {"Anim","CLOSE"},
-		-- ["VALUE_CHANGE_TABLE"] =
-			-- {{"Speed", 0.5}}},
-		{["PRECEDING_KEY_WORDS"] = {"GcTriggerActionComponentData.xml"},
-			["REMOVE"] = "SECTION"},
-		{["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
-			["ADD"] = States,
-			["REPLACE_TYPE"] = "ADDAFTERSECTION"}
-}}}}}}
+["MODIFICATIONS"]	= {
+{
+	["MBIN_CHANGE_TABLE"] = {
+		{
+			["MBIN_FILE_SOURCE"] = FileSource1,
+			["EXML_CHANGE_TABLE"] = {
+				-- {
+					-- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/MESHES/COMMON/ANIMS/GARAGEDOOR_OPEN.ANIM.MBIN",},
+					-- ["INTEGER_TO_FLOAT"] = "FORCE",
+					-- ["VALUE_CHANGE_TABLE"] = {
+						-- {"Speed", 3}
+					-- }
+				-- },
+				-- {
+					-- ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/MESHES/COMMON/ANIMS/GARAGEDOOR_CLOSE.ANIM.MBIN",},
+					-- ["INTEGER_TO_FLOAT"] = "FORCE",
+					-- ["VALUE_CHANGE_TABLE"] = {
+						-- {"Speed", 0.5}
+					-- }
+				-- },
+				{
+					["PRECEDING_KEY_WORDS"] = {"GcTriggerActionComponentData.xml"},
+					["REMOVE"] = "SECTION"
+				},
+				{
+					["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml"},
+					["ADD"] = States,
+					["REPLACE_TYPE"] = "ADDAFTERSECTION"
+				}
+			}
+		}
+	}
+}
+}}

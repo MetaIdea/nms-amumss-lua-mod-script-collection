@@ -1,6 +1,6 @@
---[[┎────────────────────────────────────────────────────────────────────
-	┃ trigger reward from base part - WALLSCREENB2 - Orange Wall Screen
-────┸────────────────────────────────────────────────────────────────--]]
+--[[---------------------------------------------------------------
+ trigger reward from base part - WALLSCREENB2 - Orange Wall Screen
+-----------------------------------------------------------------]]
 
 -- GcAnimFrameEvent trigger
 local function AddIteractionEntityEXML(reward_id)
@@ -418,7 +418,7 @@ Base_Parts = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DECORA
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 04 trigger reward with base part.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

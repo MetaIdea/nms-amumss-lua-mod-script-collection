@@ -1,9 +1,10 @@
 Author = "Gumsk"
-ModName = "GDamage"
-ModNameSub = ""
+ModName = "GExos Challenge"
+ModNameSub = "gDamage"
 BaseDescription = "Damage adjustments"
-GameVersion = "352"
+GameVersion = "370"
 ModVersion = "a"
+
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -74,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","PLAYERPREDDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 40
+		{"Damage", 60}}}, --default 40
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","PREDDMGVR"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -94,35 +95,35 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 35}}}, --default 14
+		{"Damage", 25}}}, --default 14
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 30}}}, --default 15
+		{"Damage", 25}}}, --default 15
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40}}}, --default 16
+		{"Damage", 25}}}, --default 16
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 60}}}, --default 16
+		{"Damage", 30}}}, --default 16
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 16
+		{"Damage", 35}}}, --default 16
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40}}}, --default 20
+		{"Damage", 30}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 60}}}, --default 30
+		{"Damage", 40}}}, --default 30
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 50
+		{"Damage", 60}}}, --default 50
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","WALKERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -130,23 +131,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 35}}}, --default 16
+		{"Damage", 50}}}, --default 16
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 30}}}, --default 15
+		{"Damage", 45}}}, --default 15
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 200}}},
+		{"Damage", 150}}},
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","MEDIUMASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 400}}},
+		{"Damage", 250}}},
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","LARGEASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 600}}},
+		{"Damage", 400}}},
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
 	["VALUE_CHANGE_TABLE"] = {
@@ -158,11 +159,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 80}}}, --default 20
+		{"Damage", 1}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 65}}}, --default 20
+		{"Damage", 1}}}, --default 20
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT"},
 	["VALUE_CHANGE_TABLE"] = {	

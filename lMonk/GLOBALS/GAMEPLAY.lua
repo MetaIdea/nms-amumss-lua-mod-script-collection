@@ -1,13 +1,16 @@
---[[┎────────────────────────────────────────────────────────────────
-	┃ Decrease binoc scan and charge times
-	┃ visor focus: unknown is red / scanned is dark blue
-	┃ Change torch color and intensity
-────┸────────────────────────────────────────────────────────────--]]
+------------------------------------------------------
+local desc = [[
+  Decrease binoc scan and charge times
+  visor focus: unknown is red / scanned is dark blue
+  Change torch color and intensity
+]]----------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC GAMEPLAY.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -22,9 +25,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 					{'ShipScanPlanetRechargeMultiplier',	-0.5},	-- 1
 					{'ShipScanSpaceRechargeMultiplier',		-0.1},	-- 0.3
+					{'NormalModeHeatBonus',					1},		-- 2
 					{'OverheatGenerosity',					0.05},	-- 1.05
 					{'SurveyMaxDistance',					200},	-- 400
-					-- {'MaxNumSameGroupTech',					3},		-- 3
 					{'BinocMinScanTime',					-1.1},	-- 3.9
 					{'BinocScanTime',						-1.1},	-- 3.9
 					{'BinocCreatureScanTime',				-1},	-- 3.2
@@ -45,6 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'UndergroundTorchStrength',			0.7},	-- 2.5
 					{'TorchOffsetY',						0.1},	-- 0.5
 					{'TorchOffsetZ',						-0.45},	-- -0.2
+					{'TorchFollowCameraTime',				-0.08},	-- 0.15
 					{'LightStrength',						0.8},	-- 1 (build selected item light)
 				}
 			},

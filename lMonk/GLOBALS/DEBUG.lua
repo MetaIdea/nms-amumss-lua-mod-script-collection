@@ -1,11 +1,14 @@
---[[┎────────────────────────────────────────────────────────────────
-	┃ debug tweaks
-────┸────────────────────────────────────────────────────────────--]]
+----------------------
+local desc = [[
+  debug tweaks
+]]--------------------
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC DEBUG.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -15,7 +18,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'SkipIntro',							true},
 					{'SkipLogos',							true},
-					{'SkipPlanetDiscoverOnBoot',			true}, -- ??
+					{'SkipTutorial',						true},					
+					{'SkipPlanetDiscoverOnBoot',			true},
 					{'AllowSavingOnAbandonedFreighters',	true},
 					{'CanLeaveDialogs',						true},
 					{'DisableSaveSlotSorting',				true},

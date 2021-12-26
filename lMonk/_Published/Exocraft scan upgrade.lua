@@ -13,86 +13,72 @@ local Scan_Table = {
 		scan  = {'DEPOT', 'TERMINAL'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
 		icon  = 'QUICKMENU/BUILDINGS.DEPOT.DDS',
-	},
-	{
+	},{
 		name  = 'VEHICLE_BUILDING_DAMAGEDMACHINE',
 		scan  = {'DROPPOD'},
 		tech  = {'VEHICLE_SCAN1'},
 		icon  = 'QUICKMENU/BUILDINGS.DAMAGEDMACHINE.DDS'
-	},
-	{
+	},{
 		name  = 'VEHICLE_BUILDING_ABANDONED',
 		scan  = {'ABANDONED', 'UW_ABANDONED'},
 		tech  = {'VEHICLE_SCAN1'},
 		icon  = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
-	},
-	{
+	},{
 		name  = 'VEHICLE_BUILDING_RUIN',
 		scan  = {'RUIN', 'UW_RUIN'},
 		tech  = {'VEHICLE_SCAN2'},
 		icon  = 'QUICKMENU/BUILDINGS.RUIN.DDS'
-	},
-	{
+	},{
 		name  = 'VEHICLE_BUILDING_NPC',
 		scan  = {'MONOLITH', 'PLAQUE'},
 		tech  = {'VEHICLE_SCAN2'},
 		icon  = 'QUICKMENU/BUILDINGS.MONOLITH.DDS',
-	},
-	{
+	},{
 		name  = 'SUB_RADAR_SCAN_CRASH',
 		scan  = {'UW_SHIPCRASH'},
 		tech  = {'SUB_BINOCS'},
 		icon  = 'QUICKMENU/BUILDINGS.STARSHIPS.DDS'
-	},
-	{
+	},{
 		name  = 'SUB_RADAR_SCAN_FREIGHTER',
 		scan  = {'UW_FREIGHTCRASH'},
 		tech  = {'SUB_BINOCS'},
 		icon  = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
-	},
-	{
+	},{
 		name  = 'SUB_RADAR_SCAN_ABANDON',
 		scan  = {'UW_ABANDONED'},
 		tech  = {'SUB_BINOCS'},
 		icon  = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
-	},
-	{
+	},{
 		name  = 'SUB_RADAR_SCAN_RUIN',
 		scan  = {'UW_RUIN'},
 		tech  = {'SUB_BINOCS'},
 		icon  = 'QUICKMENU/BUILDINGS.RUIN.DDS'
-	},
-	{
+	},{
 		name  = 'VEHICLE_BUILDING_OUTPOST', -- 'BUILDING_SHOP_L',
 		scan  = {'SHOP', 'OUTPOST'},
 		tech  = {'VEHICLE_SCAN1'},
 		icon  = 'QUICKMENU/BUILDINGS.OUTPOST.DDS'
-	},
-	-- {
+	-- },{
 		-- name  = 'UI_SETTLEMENT_LABEL',
 		-- scan  = {'SETTLEMENT'},
 		-- tech  = {'VEHICLE_SCAN2'},
 		-- icon  = 'BUILDABLE/STONE.BASIC_ROOF_TOP4.DDS',
-	-- },
-	{
+	},{
 		name  = 'INTRCT_CLAIM_BASE',
 		scan  = {'BASE'},
 		tech  = {'VEHICLE_SCAN2'},
 		icon  = 'BUILDABLE/BUILDABLE.BASECOREFLAG.DDS',
-	},
-	{
+	},{
 		name  = 'UI_LIBRARY_ENTRANCE_DESC',
 		scan  = {'LIBRARY'},
 		tech  = {'VEHICLE_SCAN2'},
 		icon  = 'UPDATE3/TREASUREPROD.STRANGEBOOK.DDS',
-	},
-	{
+	},{
 		name  = 'MECH_SCAN_FACT',
 		scan  = {'HARVESTER', 'RADIOTOWER', 'FACTORY', 'OBSERVATORY'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
 		icon  = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
-	},
-	{
+	},{
 		name  = 'MECH_SCAN_CRASH',
 		scan  = {'DISTRESS', 'DISTRESS_NPC', 'UW_SHIPCRASH', 'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
@@ -139,28 +125,24 @@ local Scan_Events = {
 		class = 'Terminal',
 		osd	  = 'SIGNAL_TERMINAL',
 		tip   = 'TIP_TERMINAL',
-	},
-	{
+	},{
 		event = 'PLAQUE',
 		class = 'Plaque',
 		osd   = 'SIGNAL_PLAQUE',
 		tip   = 'TIP_PLAQUE',
-	},
-	-- {
+	-- },{
 		-- event = 'SETTLEMENT',
 		-- btype = 'UnownedSettlement',
 		-- class = 'None',
 		-- osd   = 'UI_SETTLEMENT_LOCATED_OSD',
 		-- tip   = 'UI_SETTLEMENT_LOCATED',
 		-- mark  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SETTLEMENT.DDS',
-	-- },
-	{
+	},{
 		event = 'BASE',
 		class = 'Base',
 		osd   = 'SIGNAL_BASE',
 		tip   = 'TIP_BASE',
-	},
-	{
+	},{
 		event = 'LIBRARY',
 		class = 'LargeBuilding',
 		osd   = 'SIGNAL_LIBRARY',
@@ -356,7 +338,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..Mod_Version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.73',
+	NMS_VERSION			= 3.75,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

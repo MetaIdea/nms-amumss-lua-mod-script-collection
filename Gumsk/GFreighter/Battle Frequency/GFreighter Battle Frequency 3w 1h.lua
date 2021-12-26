@@ -1,5 +1,5 @@
 Author = "Gumsk"
-ModName = "GFreighter Battle Frequency"
+ModName = "gFreighter Battle Frequency"
 ModNameSub = "3w 1h"
 BaseDescription = "Changes the frequency of freighter battles"
 GameVersion = "321"
@@ -14,14 +14,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource1,
-["EXML_CHANGE_TABLE"] = {
-
-	{["VALUE_CHANGE_TABLE"] = {
-		{"WarpsBetweenBattles", WarpsBetweenBattles},
-		{"HoursBetweenBattles", HoursBetweenBattles},
-	}},
-}},
-}},}}
+["MODIFICATIONS"]	= {
+{
+	["MBIN_CHANGE_TABLE"] = {
+		{
+			["MBIN_FILE_SOURCE"] = FileSource1,
+			["EXML_CHANGE_TABLE"] = {
+				{
+					["VALUE_CHANGE_TABLE"] = {
+						{"WarpsBetweenBattles", WarpsBetweenBattles},
+						{"HoursBetweenBattles", HoursBetweenBattles},
+					}
+				},
+			}
+		},
+	}
+},
+}}

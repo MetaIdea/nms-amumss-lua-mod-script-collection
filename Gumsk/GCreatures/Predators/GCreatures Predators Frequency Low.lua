@@ -1,12 +1,12 @@
 Author = "Gumsk"
-ModName = "GPredators Frequency"
+ModName = "gPredators Frequency"
 ModNameSub = "Low"
 BaseDescription = "More dense predators"
-GameVersion = "352"
+GameVersion = "364"
 ModVersion = "a"
 
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORMED.MBIN"
---FileSource2 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORLARGE.MBIN"
+FileSource2 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORLARGE.MBIN"
 --FileSource3 = "METADATA\SIMULATION\ECOSYSTEM\UNDERWATER\UNDERWATERTABLECOMMON.MBIN"
 FileSource4 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONARCHETYPES.MBIN"
 FileSource5 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
@@ -14,7 +14,7 @@ FileSource5 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
 DefaultTypeWeight = 0		--0
 ButterflyTypeWeight = 1		--1
 AlienTypeWeight = 1.5		--1.5
-DangerousTypeWeight = 2		--1
+DangerousTypeWeight = 1		--1
 HerdTypeWeight = 1			--1
 HuntedHerdTypeWeight = 1	--1
 ParadiseTypeWeight = 1.5	--1.5
@@ -59,20 +59,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}},
 }},
 
--- {
--- ["MBIN_FILE_SOURCE"] = FileSource2,
--- ["EXML_CHANGE_TABLE"] = {
-	-- {
-		-- ["PRECEDING_KEY_WORDS"] = {"Density"},
-		-- ["LINE_OFFSET"] = 1,
-		-- ["VALUE_CHANGE_TABLE"] = {
-			-- {"Density", "Sparse"},
-	-- }},
-	-- {
-		-- ["VALUE_CHANGE_TABLE"] = {
-			-- {"LifeSetting", "High"},
-	-- }},
--- }},
+{
+["MBIN_FILE_SOURCE"] = FileSource2,
+["EXML_CHANGE_TABLE"] = {
+	{
+		["PRECEDING_KEY_WORDS"] = {"Density"},
+		["LINE_OFFSET"] = 1,
+		["VALUE_CHANGE_TABLE"] = {
+			{"Density", "Sparse"},
+	}},
+	{
+		["VALUE_CHANGE_TABLE"] = {
+			{"LifeSetting", "Mid"},
+	}},
+}},
 
 -- {
 -- ["MBIN_FILE_SOURCE"] = FileSource3,
@@ -90,11 +90,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MBIN_FILE_SOURCE"] = FileSource4,
 ["EXML_CHANGE_TABLE"] = {
 
-	{
-		["SPECIAL_KEY_WORDS"] = {"Id","DEFAULT","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEHERBIVOREMED.MBIN"},
-		["REPLACE_TYPE"] = "ADDAFTERSECTION",
-		["ADD"] = AddPredatorText,
-	},
+	-- {
+		-- ["SPECIAL_KEY_WORDS"] = {"Id","DEFAULT","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEHERBIVOREMED.MBIN"},
+		-- ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+		-- ["ADD"] = AddPredatorText,
+	-- },
 
 	{
 		["SPECIAL_KEY_WORDS"] = {"Id","HERD","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEPREDATORLARGE.MBIN"},
@@ -108,17 +108,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["ADD"] = AddPredatorText,
 	},
 	
-	{
-		["SPECIAL_KEY_WORDS"] = {"Id","GIANT","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEHERBIVOREGIANT.MBIN"},
-		["REPLACE_TYPE"] = "ADDAFTERSECTION",
-		["ADD"] = AddPredatorText,
-	},
+	-- {
+		-- ["SPECIAL_KEY_WORDS"] = {"Id","GIANT","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEHERBIVOREGIANT.MBIN"},
+		-- ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+		-- ["ADD"] = AddPredatorText,
+	-- },
 	
-	{
-		["SPECIAL_KEY_WORDS"] = {"Id","BUSY","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEHERBIVOREGIANT.MBIN"},
-		["REPLACE_TYPE"] = "ADDAFTERSECTION",
-		["ADD"] = AddPredatorText,
-	},
+	-- {
+		-- ["SPECIAL_KEY_WORDS"] = {"Id","BUSY","File","METADATA/SIMULATION/ECOSYSTEM/GROUND/GROUNDTABLEHERBIVOREGIANT.MBIN"},
+		-- ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+		-- ["ADD"] = AddPredatorText,
+	-- },
 	
 }},
 

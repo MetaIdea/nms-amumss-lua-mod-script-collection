@@ -1,10 +1,10 @@
 Author = "Gumsk"
-ModName = "GBase"
+ModName = "gBase"
 ModNameSub = "Items 10x"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "352"
+GameVersion = "371"
 ModVersion = "a"
-FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGTABLE.MBIN"
+FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
 MessageModRegion = 2		--Original 3/planet
 SolarRate = 500				--Original 50
@@ -79,19 +79,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 		-- {"BuildableAboveWater","False"},
 		}},
 		
-	{["SPECIAL_KEY_WORDS"] = {"ID","W_WALL"},
+	{["SPECIAL_KEY_WORDS"] = {"ID","T_WALL"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"BuildableOnPlanet", "False"},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","W_FLOOR"},
+	{["SPECIAL_KEY_WORDS"] = {"ID","T_FLOOR"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"BuildableOnPlanet", "False"},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","W_ROOF"},
+	{["SPECIAL_KEY_WORDS"] = {"ID","T_ROOF6"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"BuildableOnPlanet", "False"},
 		}},
-	{["SPECIAL_KEY_WORDS"] = {"ID","W_DOOR"},
+	{["SPECIAL_KEY_WORDS"] = {"ID","T_DOOR1"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"BuildableOnPlanet", "False"},
 		}},

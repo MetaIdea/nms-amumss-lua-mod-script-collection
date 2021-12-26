@@ -1,6 +1,7 @@
---[[┎──────────────────────────────────────────────────────
-	┃ Scientific add wing engine glow to WingL
-────┸──────────────────────────────────────────────────--]]
+--[[-----------------------------------------
+ Scientific add wing engine glow to WingL
+-------------------------------------------]]
+
 local function AddGlowings(x, y, z, s)
 	return [[
 	<Property value="TkSceneNodeData.xml">
@@ -257,7 +258,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 05 Scientific WingL engine glow.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.53',
+	NMS_VERSION			= 3.75,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
