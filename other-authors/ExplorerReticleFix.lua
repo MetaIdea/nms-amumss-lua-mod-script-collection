@@ -16,7 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] 	= {"Name","_Canopy_B",},
-							--["PRECEDING_KEY_WORDS"] 	= "",
 							["VALUE_CHANGE_TABLE"] 		= 
 							{	
 								{ "TransY", 							"2.435838" }, --Original "2.600616"
