@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] 			= "Speed_Increase_Analysis.pak",
     ["MOD_AUTHOR"]				= "Mjjstral", -- At least I THINK it was Mjjstral who wrote this mod...
-    ["NMS_VERSION"]				= "3.21",
+    ["NMS_VERSION"]				= "3.75",
     ["MODIFICATIONS"] 			= 
 	{
 		{

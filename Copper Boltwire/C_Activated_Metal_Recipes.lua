@@ -169,7 +169,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]	= "Activated_Metal_Recipes.pak",
     ["MOD_AUTHOR"]		= "Exosolar+Gumsk", -- Expanded upon by Copper
-    ["NMS_VERSION"]		= "3.21",
+    ["NMS_VERSION"]		= "3.75",
     ["MODIFICATIONS"]	= 
     {
         {

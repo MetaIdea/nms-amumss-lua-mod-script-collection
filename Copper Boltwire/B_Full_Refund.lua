@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] 			= "Full_Refund.pak", 
     ["MOD_AUTHOR"]				= "Lo2k",
-    ["NMS_VERSION"]				= "3.21",
+    ["NMS_VERSION"]				= "3.75",
     ["MODIFICATIONS"] 			= 
 	{
 		{

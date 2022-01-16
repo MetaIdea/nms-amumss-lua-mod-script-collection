@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] 			= "Terrain Manipulator Gain Booster.pak",
     ["MOD_AUTHOR"]				= "Makto",
-    ["NMS_VERSION"]				= "3.21",
+    ["NMS_VERSION"]				= "3.75",
     ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ResourceDirtMaxAmount",   "100"}, -- 8 Terrain Editor Gain
 								{"ResourceCommonMinAmount", "50"}, -- 1 ?
 								{"ResourceCommonMaxAmount", "100"}, -- 8 ?
-								{"ResourceMinAmount",       "50"}, -- 1 Fat Asteroids (Gold/Silver)
+								{"ResourceMinAmount",       "50"}, -- 1 Fat Asteroids (Gold/Silver), maybe - got a different file altering this, so maybe something else?
 								{"ResourceMaxAmount",       "100"}, -- 2 Fat Asteroids (Gold/Silver)
 								{"SpecialMiningAmount",     "100"} -- 30 ?
 							}

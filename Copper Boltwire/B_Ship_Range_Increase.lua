@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] 			= "Ship_Range_Increase.pak",
     ["MOD_AUTHOR"]				= "Mjjstral",
-    ["NMS_VERSION"]				= "3.21",
+    ["NMS_VERSION"]				= "3.75",
     ["MODIFICATIONS"] 			= 
 	{
 		{
