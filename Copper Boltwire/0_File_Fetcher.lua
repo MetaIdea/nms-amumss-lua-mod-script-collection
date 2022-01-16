@@ -1,6 +1,7 @@
 
 --[[ Summery Description:
 This fetches all the files from the scripts BEFORE the scripts uses them.
+(ONLY useful if scripts are COMBINED, otherwise just a waste of time to run.)
 That's it.
 ]]--
 
@@ -9,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] 			= "0_File_Fetcher.pak",
   ["MOD_DESCRIPTION"]		= "",
   ["MOD_AUTHOR"]				= "Wbertro",
-  ["NMS_VERSION"]				= "ALL",
+  ["NMS_VERSION"]				= "ALL", --3.75
   ["MODIFICATIONS"] 		=
 	{
 		{

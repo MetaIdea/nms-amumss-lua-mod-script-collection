@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] 			= "StackingTechnologyModules.pak",
     ["MOD_AUTHOR"]				= "Wbertro", --suggested by Seekker
-    ["NMS_VERSION"]				= "3.21",
+    ["NMS_VERSION"]				= "3.75",
     ["MODIFICATIONS"] 			= 
 	{
 		{

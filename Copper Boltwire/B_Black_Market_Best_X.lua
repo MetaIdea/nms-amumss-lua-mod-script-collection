@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]	= "Black_Market_Best_X.pak",
     ["MOD_AUTHOR"]		= "Gumsk",
-    ["NMS_VERSION"]		= "3.21",
+    ["NMS_VERSION"]		= "3.75",
     ["MODIFICATIONS"]	= 
     {
         {

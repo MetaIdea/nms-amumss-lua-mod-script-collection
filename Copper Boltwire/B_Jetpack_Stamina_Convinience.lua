@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]	= "Jetpack_Stamina_Convinience.pak",
     ["MOD_AUTHOR"]		= "Gumsk and Copper",
-    ["NMS_VERSION"]		= "3.21",
+    ["NMS_VERSION"]		= "3.75",
     ["MODIFICATIONS"]	= 
     {
         {

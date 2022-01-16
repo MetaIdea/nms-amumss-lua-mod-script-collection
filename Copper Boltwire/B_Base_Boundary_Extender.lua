@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]	= "Base_Boundary_Extender.pak",
     ["MOD_AUTHOR"]		= "Gumsk",
-    ["NMS_VERSION"]		= "3.21",
+    ["NMS_VERSION"]		= "3.75",
     ["MODIFICATIONS"]	= 
     {
         {
@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxRadiusForSpaceBases", MaxRadiusForSpaceBases},
                                 {"BuildingPlacementMaxConnectionLength", BuildingPlacementMaxConnectionLength},
                                 {"StartCrashSiteMinDistance", StartCrashMin},
-                                {"StartCrashSiteMaaxDistance", StartCrashMax},
+                                {"StartCrashSiteMaxDistance", StartCrashMax},
                                 {"StartShelterMinDistance", StartShelterMin},
                                 {"StartShelterMaxDistance", StartShelterMax},
                             }

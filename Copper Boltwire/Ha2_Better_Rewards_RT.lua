@@ -641,8 +641,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"AmountMin",	10},
-								{"AmountMax",	13}
+								{"AmountMin",	6}, -- Had to decrease these values O_O
+								{"AmountMax",	9}
 							}
 						},
                         {   
@@ -651,8 +651,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"AmountMin",	10},
-								{"AmountMax",	13}
+								{"AmountMin",	5}, -- Had to decrease these values O_O
+								{"AmountMax",	6}
 							}
 						},
                         {   
@@ -671,8 +671,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"AmountMin",	10},
-								{"AmountMax",	13}
+								{"AmountMin",	5}, -- Had to decrease these values O_O
+								{"AmountMax",	6}
 							}
 						},
                         {   
@@ -691,8 +691,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"AmountMin",	10},
-								{"AmountMax",	13}
+								{"AmountMin",	8}, -- Had to decrease these values O_O
+								{"AmountMax",	11}
 							}
 						},
                         
