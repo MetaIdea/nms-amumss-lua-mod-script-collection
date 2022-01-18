@@ -1,27 +1,27 @@
 
 --[[ Summery Description:
-
+More powerful Biogenerator, Biogenerator takes less resources. Solar panels are more powerful. Storage in batteries are greatly increased. Etc... Read below.
 ]]--
 
-SolarRate = 500				--Original 50
-BioRate = 750				--Original 50 -- Because it costs carbon, i think it should be balanced by producing more power then the passive power from solar panels... -CB
-BioStorage = 250			--Original 3600 -- However, just like Gumsk suggests, i think it's storage should be small. We still want you to use the superior solar panels.
-BatteryStorage = 999000		--Original 45000
-EMRate = 2500				--Original 1 (C=175, B=220, A=250, S=300)
-EMAnywhere = "Power"		--Original Power - set to "None" for EMAnywhere to work where ever you like (apparently...)
-MineralRate = 1000			--100
-MineralStorage = 3600000	--360000
-GasRate = 1000				--100
-GasStorage = 3600000		--360000
-SiloStorage = 9999999		--Original 1400000
-FreighterRate = 999999		--10000
+SolarRate = 500             --Original 50
+BioRate = 750               --Original 50 -- Because it costs carbon, i think it should be balanced by producing more power then the passive power from solar panels... -CB
+BioStorage = 250            --Original 3600 -- However, just like Gumsk suggests, i think it's storage should be small. We still want you to use the superior solar panels.
+BatteryStorage = 999000     --Original 45000
+EMRate = 2500               --Original 1 (C=175, B=220, A=250, S=300)
+EMAnywhere = "Power"        --Original Power - set to "None" for EMAnywhere to work where ever you like (apparently...)
+MineralRate = 1000          --100
+MineralStorage = 3600000    --360000
+GasRate = 1000              --100
+GasStorage = 3600000        --360000
+SiloStorage = 9999999       --Original 1400000
+FreighterRate = 999999      --10000
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]	= "B_Building_changes.pak",
-    ["MOD_AUTHOR"]		= "Gumsk",
-    ["NMS_VERSION"]		= "3.75",
-    ["MODIFICATIONS"]	= 
+    ["MOD_FILENAME"]    = "B_Building_changes.pak",
+    ["MOD_AUTHOR"]      = "Gumsk",
+    ["NMS_VERSION"]     = "3.75",
+    ["MODIFICATIONS"]   = 
     {
         {
             ["MBIN_CHANGE_TABLE"] = 
@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"ID","U_BIOGENERATOR"},
                             ["VALUE_CHANGE_TABLE"] = 
                             {
-                                {"DependentRate",BioRate}, -- was "DependentRateRate" in the old version? lol, what??? why did that not even spit a warning???
+                                {"DependentRate",BioRate},
                                 {"Storage",BioStorage},
                             }
                         },

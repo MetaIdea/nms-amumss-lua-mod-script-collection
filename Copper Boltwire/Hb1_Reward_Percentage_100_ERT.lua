@@ -9,35 +9,33 @@ So hunt those Di-Hydrogen crystals.
 Changes other percent chances to 100% throughout the game.
 ]]--
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] 			= "Hb1_Reward_Percentage_100_ERT.pak", 
-    ["MOD_AUTHOR"]				= "Mjjstral+Gumsk",
-    ["NMS_VERSION"]				= "3.75",
-    ["MODIFICATIONS"] 			= 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
-				{
-					--["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-                    ["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							--["PRECEDING_KEY_WORDS"] = "",
-							--["MATH_OPERATION"] 		= "",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "100",
-							["VALUE_MATCH_OPTIONS"]	= "<", -- Apparently there was a few that was higher than 100, so we change only those that are 99 or less to 100.
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PercentageChance",	"100"}
-							}
-						}
-					}
-				}	
-			}
-		}
-	}	
+    ["MOD_FILENAME"]    = "Hb1_Reward_Percentage_100_ERT.pak", 
+    ["MOD_AUTHOR"]      = "Mjjstral+Gumsk",
+    ["NMS_VERSION"]     = "3.75",
+    ["MODIFICATIONS"]   =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            { 
+                {
+                    --["MBIN_FILE_SOURCE"]    = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"]    = "METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_MATCH"]         = "100",
+                            ["VALUE_MATCH_OPTIONS"] = "<", -- Apparently there was a few that was higher than 100, so we change only those that are 99 or less to 100.
+                            ["VALUE_CHANGE_TABLE"]  = 
+                            {
+                                {"PercentageChance",    "100"}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

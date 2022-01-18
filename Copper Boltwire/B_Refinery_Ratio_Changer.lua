@@ -27,10 +27,10 @@ so i don't have access to all materials from the get go... Meaning you'll just h
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]	= "Refinery_Ratio_Changer.pak",
-    ["MOD_AUTHOR"]		= "Gumsk",
-    ["NMS_VERSION"]		= "3.75",
-    ["MODIFICATIONS"]	= 
+    ["MOD_FILENAME"]    = "Refinery_Ratio_Changer.pak",
+    ["MOD_AUTHOR"]      = "Gumsk",
+    ["NMS_VERSION"]     = "3.75",
+    ["MODIFICATIONS"]   = 
     {
         {
             ["MBIN_CHANGE_TABLE"] = 

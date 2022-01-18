@@ -6,7 +6,8 @@ simply by mixing basic Copper with Chromatic material or Cadmium and Chromatic m
 The Ratios is as follows: 1:4
 ]]--
 
-RecipeAdd = [[	
+RecipeAdd =
+[[    
     <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_GEXO_YELLOW" />
       <Property name="Name" value="RECIPE_STELLAR_FROM_LAND" />
@@ -36,8 +37,8 @@ RecipeAdd = [[
         </Property>
       </Property>
     </Property>
-	
-	<Property value="GcRefinerRecipe.xml">
+    
+    <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_GEXO_GREEN" />
       <Property name="Name" value="RECIPE_STELLAR_FROM_LAND" />
       <Property name="TimeToMake" value="10" />
@@ -65,9 +66,9 @@ RecipeAdd = [[
           <Property name="Amount" value="1" />
         </Property>
       </Property>
-    </Property>	
-	
-	<Property value="GcRefinerRecipe.xml">
+    </Property>    
+    
+    <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_GEXO_RED" />
       <Property name="Name" value="RECIPE_STELLAR_FROM_LAND" />
       <Property name="TimeToMake" value="10" />
@@ -95,9 +96,9 @@ RecipeAdd = [[
           <Property name="Amount" value="1" />
         </Property>
       </Property>
-    </Property>		
-	
-	<Property value="GcRefinerRecipe.xml">
+    </Property>        
+    
+    <Property value="GcRefinerRecipe.xml">
       <Property name="Id" value="REFINERECIPE_GEXO_BLUE" />
       <Property name="Name" value="RECIPE_STELLAR_FROM_LAND" />
       <Property name="TimeToMake" value="10" />
@@ -162,28 +163,29 @@ RecipeAdd = [[
           <Property name="Amount" value="1" />
         </Property>
       </Property>
-    </Property>]]
+    </Property>
+]]
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]	= "Activated_Metal_Recipes.pak",
-    ["MOD_AUTHOR"]		= "Exosolar+Gumsk", -- Expanded upon by Copper
-    ["NMS_VERSION"]		= "3.75",
-    ["MODIFICATIONS"]	= 
+    ["MOD_FILENAME"]    = "Activated_Metal_Recipes.pak",
+    ["MOD_AUTHOR"]      = "Exosolar+Gumsk", -- Expanded upon by Copper
+    ["NMS_VERSION"]     = "3.75",
+    ["MODIFICATIONS"]   = 
     {
         {
             ["MBIN_CHANGE_TABLE"] = 
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["MBIN_FILE_SOURCE"]    = "METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"]   = 
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id","REFINERECIPE_39"},
-                            --["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-                            ["ADD"] = RecipeAdd
+                            ["SPECIAL_KEY_WORDS"]   = {"Id","REFINERECIPE_39"},
+                            --["SECTION_UP"]          = 1,
+                            ["REPLACE_TYPE"]        = "ADDAFTERSECTION",
+                            ["ADD"]                 = RecipeAdd
                         },
                     }
                 }
