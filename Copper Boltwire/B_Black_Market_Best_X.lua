@@ -5,14 +5,14 @@ So normally, the probability curve leans toward a bad result.
 This changes the curve to lean toward the better result.
 ]]--
 
-WeightingCurve = "MinIsSuperRare"		--MaxIsRare
+WeightingCurve = "MinIsSuperRare"   --MaxIsRare
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]	= "Black_Market_Best_X.pak",
-    ["MOD_AUTHOR"]		= "Gumsk",
-    ["NMS_VERSION"]		= "3.75",
-    ["MODIFICATIONS"]	= 
+    ["MOD_FILENAME"]    = "Black_Market_Best_X.pak",
+    ["MOD_AUTHOR"]      = "Gumsk",
+    ["NMS_VERSION"]     = "3.75",
+    ["MODIFICATIONS"]   = 
     {
         {
             ["MBIN_CHANGE_TABLE"] = 

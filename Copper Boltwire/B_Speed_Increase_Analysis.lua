@@ -8,35 +8,35 @@ Now it only takes 2-thirds of a second. HUGE improvement!
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 			= "Speed_Increase_Analysis.pak",
-    ["MOD_AUTHOR"]				= "Mjjstral", -- At least I THINK it was Mjjstral who wrote this mod...
-    ["NMS_VERSION"]				= "3.75",
-    ["MODIFICATIONS"] 			= 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"BinocTimeBeforeScan",					"0.2"}, 	-- Original "0.5"
-								{"BinocMinScanTime",					"0.7"},		-- Original "3.9"
-								{"BinocScanTime",						"0.7"}, 	-- Original "3.9"
-								{"BinocCreatureScanTime",				"0.7"},		-- Original "3.2"
-								{"BinocularScanTargetInitialFadeTime",	"0.2"}, 	-- Original "0.5"
-								{"BinocularScanTargetFadeTime",			"0.2"}		-- Original "0.5"
-								--{"TerrainResourceScanTime",			"30"},	-- Original "30"
-								--{"TerrainResourceScanRange",			"1200"}, 	-- Original "1200"								
-							}
-						}
-					}
-				}
-			}
-		}
-	}	
+    ["MOD_FILENAME"]    = "Speed_Increase_Analysis.pak",
+    ["MOD_AUTHOR"]      = "Mjjstral", -- At least I THINK it was Mjjstral who wrote this mod...
+    ["NMS_VERSION"]     = "3.75",
+    ["MODIFICATIONS"]   = 
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] = 
+            { 
+                {
+                    ["MBIN_FILE_SOURCE"]    = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"]   = 
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "",
+                            ["VALUE_CHANGE_TABLE"]  = 
+                            {
+                                {"BinocTimeBeforeScan",                 "0.2"}, -- Original "0.5"
+                                {"BinocMinScanTime",                    "0.7"}, -- Original "3.9"
+                                {"BinocScanTime",                       "0.7"}, -- Original "3.9"
+                                {"BinocCreatureScanTime",               "0.7"}, -- Original "3.2"
+                                {"BinocularScanTargetInitialFadeTime",  "0.2"}, -- Original "0.5"
+                                {"BinocularScanTargetFadeTime",         "0.2"}, -- Original "0.5"
+                                --{"TerrainResourceScanTime",             "30"}, -- Original "30"
+                                --{"TerrainResourceScanRange",            "1200"}, -- Original "1200"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

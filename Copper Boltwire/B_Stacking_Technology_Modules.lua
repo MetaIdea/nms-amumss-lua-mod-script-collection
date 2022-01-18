@@ -10,28 +10,28 @@ TechnologyStackingSize = 99 --original "3", change for new value
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"] 			= "StackingTechnologyModules.pak",
-    ["MOD_AUTHOR"]				= "Wbertro", --suggested by Seekker
-    ["NMS_VERSION"]				= "3.75",
-    ["MODIFICATIONS"] 			= 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxNumSameGroupTech",	TechnologyStackingSize}  --Original "3"						
-							}
-						}
-					}
-				}
-			}
-		}
-	}	
+    ["MOD_FILENAME"]    = "StackingTechnologyModules.pak",
+    ["MOD_AUTHOR"]      = "Wbertro", --suggested by Seekker
+    ["NMS_VERSION"]     = "3.75",
+    ["MODIFICATIONS"]   = 
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] = 
+            { 
+                {
+                    ["MBIN_FILE_SOURCE"]    = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"]   = 
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "",
+                            ["VALUE_CHANGE_TABLE"]  = 
+                            {
+                                {"MaxNumSameGroupTech", TechnologyStackingSize} --Original "3"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
