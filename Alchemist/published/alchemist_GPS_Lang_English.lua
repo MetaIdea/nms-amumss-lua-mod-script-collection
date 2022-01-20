@@ -3,7 +3,7 @@ Author = "alchemist"
 ModName = "GPS"
 BaseDescription = [[Better scanning]]
 GameVersion = "3-75"
-ModVersion = "1-1-0"
+ModVersion = "1-1-1"
 
 -- =========
 -- CONSTANTS
@@ -35,7 +35,9 @@ LanguageName = "English"
 -- or all language files (true). If true, players will see the provided strings no
 -- matter what language they play in. Should probably be true, unless you have
 -- a specific reason.
+--
 ForceAllLanguageFiles = true
+--
 
 -- Which group of files from the "Language" directory of the extracted game files to
 -- inject the new language entries into. Translators should not change.
@@ -68,7 +70,7 @@ the color of text or add icons. Format wrappers and icon tags must be in English
 
 --]]
 
--- Total keys: 182
+-- Total keys: 181
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_PORT_ERR_NEED_PASS"] = "Feature Unavailable <IMG>SLASH<> Technology Requirement Unfulfilled <IMG>SLASH<> Atlas Pass", --
@@ -249,7 +251,6 @@ LANGUAGE_TABLE = {
   ["D_ALSCSB_PL_SCAN_DESC"] = "Deep Space Scanning <TRADEABLE>AVAILABLE<> <IMG>SLASH<> Select planetary query pattern...", --
   ["D_ALSCSB_PL_SCAN_OPT_A"] = "Biome Pattern Query...", --
   ["D_ALSCSB_PL_SCAN_OPT_B"] = "Resource Pattern Query...", --
-  ["D_ALSCSB_PL_SCAN_OPT_C"] = "Complex Pattern Query...", --
   ["SIGNALSCANNER_OPT_G"] = "Frigate Recon Status...", --
   ["SIGNALSCANNER_OPT_H"] = "[ ! ] Download Frigate Data Cache", --
   ["SIGNALSCANNER_RES_G"] = "Frigate planetary sweep in progress <IMG>SLASH<> Relaying locations to suit <IMG>SLASH<> Awaiting finalized frigate data cache.", --

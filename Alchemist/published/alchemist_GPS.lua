@@ -2,7 +2,7 @@ Author = "alchemist"
 ModName = "GPS"
 BaseDescription = [[Better scanning]]
 GameVersion = "3-75"
-ModVersion = "1-1-0"
+ModVersion = "1-1-1"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 
@@ -4226,7 +4226,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="RequiresScanEvent" value=""/>
             <Property name="Options">
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_TREASURERUIN_L"/>
+                <Property name="Name" value="ALCH_SCAN_POI_TREA_MENU"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value="C_ALSCAN_LG"/>
@@ -4271,7 +4271,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_TREASURERUIN_L"/>
+                <Property name="Name" value="ALCH_SCAN_POI_TREA_MENU"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value=""/>
@@ -10687,7 +10687,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="RequiresScanEvent" value=""/>
             <Property name="Options">
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_TREASURERUIN_L"/>
+                <Property name="Name" value="ALCH_SCAN_POI_TREA_MENU"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value="C_ALSCAN_LG"/>
@@ -10732,7 +10732,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_TREASURERUIN_L"/>
+                <Property name="Name" value="ALCH_SCAN_POI_TREA_MENU"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value=""/>
@@ -11839,36 +11839,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="TruncateCost" value="False"/>
                 <Property name="MarkInteractionComplete" value="True"/>
                 <Property name="NextInteraction" value="D_ALSCSB_PR_P1"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions"/>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="D_ALSCSB_PL_SCAN_OPT_C"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="False"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value="D_ALSCSB_PZ_P1"/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT"/>
