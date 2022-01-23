@@ -1,6 +1,8 @@
 
 --[[ Summery Description:
-To be done...
+Increases spawnrate of Exotic ships, making them less "exotic".
+Decreases spawnrate of shuttle crafts by quite a large amount. Don't get me wrong, shuttles are nice, but i just don't like the look of them.
+Want normal spawnrate for shuttles? read the comment below.
 ]]--
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -31,6 +33,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Royal","25"},
                                 --{"Alien","5"}, -- Alien ships are CRAP, and until HG fixes them, i will not support them in my mod either...
+                            },
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"SpaceshipWeightings",},
+                            ["MATH_OPERATION"] 	    = "/",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Shuttle","4"}, -- Greatly decreasing shuttles
+                                                 -- If you want normal spawnrate of shuttles, change 4 to 1 -- Don't change to 0, unless you wish to completely disable shuttles.
                             },
                         },
                     }
