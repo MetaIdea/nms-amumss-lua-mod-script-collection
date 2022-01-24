@@ -1,21 +1,74 @@
-LANGUAGE_NAMES = {"English", "French", "Italian", "German", "Spanish", "Russian", "Polish",
-  "Dutch", "Portuguese", "LatinAmericanSpanish", "BrazilianPortuguese", "SimplifiedChinese",
-  "TraditionalChinese", "TencentChinese", "Korean", "Japanese", "USEnglish"}
-
--- Original Mod Author Information (Do not edit)
+-- Original Mod Author Information (translators - do not edit)
 Author = "alchemist"
 ModName = "GPS"
 BaseDescription = [[Better scanning]]
 GameVersion = "3-75"
-ModVersion = "1-0-0"
+ModVersion = "1-1-1"
 
---
+-- =========
+-- CONSTANTS
+-- =========
+
+LANGUAGE_NAMES = {"English", "French", "Italian", "German", "Spanish", "Russian", "Polish",
+  "Dutch", "Portuguese", "LatinAmericanSpanish", "BrazilianPortuguese", "SimplifiedChinese",
+  "TraditionalChinese", "TencentChinese", "Korean", "Japanese", "USEnglish"}
+
+-- for if the filename spelling of a language is different than just string.upper()
+LANGUAGE_FILENAME_TABLE = {
+  ["LatinAmericanSpanish"] = "LATINAMERAICANSPANISH"
+}
+
+-- ========================
 -- BEGIN TRANSLATOR SECTION
+-- ========================
+
+-- Hello, my name is...
+TranslationAuthor = "alchemist"
+
+-- The language provided by this build. Used in the output file name and (possibly)
+-- to select which file to inject language entries in to.
+--
+-- Select from LANGUAGE_NAMES array above.
+LanguageName = "English"
+
+-- Whether to inject the language table into just the target language file (false),
+-- or all language files (true). If true, players will see the provided strings no
+-- matter what language they play in. Should probably be true, unless you have
+-- a specific reason.
+--
+ForceAllLanguageFiles = true
 --
 
-TranslationAuthor = "alchemist"
-LanguageName = "English"
-LanguageFile = "NMS_LOC7_ENGLISH.MBIN"
+-- Which group of files from the "Language" directory of the extracted game files to
+-- inject the new language entries into. Translators should not change.
+LanguageFilePrefix = "NMS_LOC7_"
+
+--[[
+
+# Adding Language Entries
+
+The LANGUAGE_TABLE is a key-value table. When asked to display text, the game will
+look up the the key in the player's preferred language file. 
+
+Mod Authors: Add key-value pairs. Keys must be unique across the entire game.
+Translators: Make changes to the values, do NOT make changes to keys.
+
+  ["KEY"] = "Value",
+
+All entries should be single line strings. If the output should be a multi-line
+string, use \n to denote line breaks.
+
+  ["MULTILINE_KEY"] = "This is the first line.\nThis is the second line.",
+
+Line-breaks are especially important in dialogs as it also indicates where to
+wait for the player to hit a button to continue reading.
+
+The link below is for a guide on NMS text formatting. This will allow you to change
+the color of text or add icons. Format wrappers and icon tags must be in English.
+
+  https://www.nexusmods.com/nomanssky/mods/2134
+
+--]]
 
 -- Total keys: 181
 LANGUAGE_TABLE = {
@@ -54,17 +107,17 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_FLYBY_COMM_DESC"] = "Request received Commander. What type of frequencies should we focus on?", --
   ["ALCH_SCAN_GPS_INTRO_OSD"] = "GALACTIC POSITIONING SYSTEM", --
   ["ALCH_SCAN_GRP_ANC_DESC"] = "Tuned for Ancient Sites", --
-  ["ALCH_SCAN_GRP_ANC_FLYBY"] = "Confirmed. Focusing on relics of the past. Deploying friggate detachment.", --
+  ["ALCH_SCAN_GRP_ANC_FLYBY"] = "Confirmed. Focusing on relics of the past. Deploying frigate detachment.", --
   ["ALCH_SCAN_GRP_ANC_FLYBY_DONE"] = "Ancient Sites marked. Data cache available.", --
   ["ALCH_SCAN_GRP_ANC_MENU"] = "Ancient Sites...", --
   ["ALCH_SCAN_GRP_ANC_NAME"] = "Ancient Sites", --
   ["ALCH_SCAN_GRP_BLD_DESC"] = "Tuned for Buildings", --
-  ["ALCH_SCAN_GRP_BLD_FLYBY"] = "Confirmed. Focusing on trade and public networks. Deploying friggate detachment.", --
+  ["ALCH_SCAN_GRP_BLD_FLYBY"] = "Confirmed. Focusing on trade and public networks. Deploying frigate detachment.", --
   ["ALCH_SCAN_GRP_BLD_FLYBY_DONE"] = "Building locations marked. Data cache available.", --
   ["ALCH_SCAN_GRP_BLD_MENU"] = "Population Centres...", --
   ["ALCH_SCAN_GRP_BLD_NAME"] = "Population Centres", --
   ["ALCH_SCAN_GRP_SIG_DESC"] = "Tuned for public network signals", --
-  ["ALCH_SCAN_GRP_SIG_FLYBY"] = "Confirmed. Focusing on assistance requests and public networks. Deploying friggate detachment.", --
+  ["ALCH_SCAN_GRP_SIG_FLYBY"] = "Confirmed. Focusing on assistance requests and public networks. Deploying frigate detachment.", --
   ["ALCH_SCAN_GRP_SIG_FLYBY_DONE"] = "Signal Sources marked. Data cache available.", --
   ["ALCH_SCAN_GRP_SIG_MENU"] = "Public Broadcasts...", --
   ["ALCH_SCAN_GRP_SIG_NAME"] = "Public Broadcasts", --
@@ -74,7 +127,7 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_GRP_SVG_MENU"] = "Salvage Opportunities...", --
   ["ALCH_SCAN_GRP_SVG_NAME"] = "Salvage Opportunities", --
   ["ALCH_SCAN_GRP_UW_DESC"] = "Tuned for underwater signals", --
-  ["ALCH_SCAN_GRP_UW_FLYBY"] = "Confirmed. Focusing on signals with aquatic interference. Deploying friggate detachment.", --
+  ["ALCH_SCAN_GRP_UW_FLYBY"] = "Confirmed. Focusing on signals with aquatic interference. Deploying frigate detachment.", --
   ["ALCH_SCAN_GRP_UW_FLYBY_DONE"] = "Underwater signals marked. Data cache available.", --
   ["ALCH_SCAN_GRP_UW_MENU"] = "Underwater...", --
   ["ALCH_SCAN_GRP_UW_NAME"] = "Underwater", --
@@ -203,9 +256,17 @@ LANGUAGE_TABLE = {
   ["SIGNALSCANNER_RES_G"] = "Frigate planetary sweep in progress <IMG>SLASH<> Relaying locations to suit <IMG>SLASH<> Awaiting finalized frigate data cache.", --
 }
 
---
+-- ======================================
 -- END TRANSLATOR SECTION // BEGIN AMUMSS
---
+-- ======================================
+
+-- this could likely be much better
+local function escapeLang(value)
+  value = value:gsub("<", "&lt;")
+  value = value:gsub(">", "&gt;")
+  value = value:gsub("\n", "&#xA;")
+  return value
+end
 
 local function langEntry(language, value)
   return [[
@@ -215,19 +276,10 @@ local function langEntry(language, value)
 ]]
 end
 
--- this could likely be much better
--- so far, these are the only things that i have seen that interfere with xml
-local function escapeLang(value)
-  value = value:gsub("<", "&lt;")
-  value = value:gsub(">", "&gt;")
-  value = value:gsub("\n", "&#xA;")
-  return value
-end
-
-local function TkLocalisationEntry(id, value)
+local function TkLocalisationEntry(lang, id, value)
   local entries = ""
   for i = 1, #LANGUAGE_NAMES do
-    if LANGUAGE_NAMES[i] == LanguageName then
+    if LANGUAGE_NAMES[i] == lang then
       entries = entries..langEntry(LANGUAGE_NAMES[i], escapeLang(value))
     else
       entries = entries..langEntry(LANGUAGE_NAMES[i], "")
@@ -242,16 +294,22 @@ local function TkLocalisationEntry(id, value)
 ]]
 end
 
-local langOutput = ""
-for key, value in pairs(LANGUAGE_TABLE) do
-  langOutput = langOutput..TkLocalisationEntry(key, value)
+-- build xml with LANGUAGE_TABLE associated with given language
+local function buildForLanguage(lang)
+  local langOutput = ""
+  for key, value in pairs(LANGUAGE_TABLE) do
+    langOutput = langOutput..TkLocalisationEntry(lang, key, value)
+  end
+  return langOutput;
 end
 
+-- build pak name
 ModName = ModName.."_Lang_"..LanguageName
 if Author ~= TranslationAuthor then
   ModName = ModName.."_"..TranslationAuthor
 end
 
+-- actual AMUMSS instructions
 NMS_MOD_DEFINITION_CONTAINER = {
 
 ["MOD_FILENAME"]				= Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
@@ -262,13 +320,36 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MODIFICATIONS"]	= {
 {["MBIN_CHANGE_TABLE"] = {
 
-	{["MBIN_FILE_SOURCE"] = "LANGUAGE\\"..LanguageFile,
-	["EXML_CHANGE_TABLE"] = {
-
-    {["PRECEDING_KEY_WORDS"] = {"Table"},
-    ["LINE_OFFSET"] = 0,
-    ["ADD"] = langOutput},
-
-	}},
+  -- empty on purpose
 
 }}}}
+
+local Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+
+local function addChangeTable(lang)
+  local langFilename
+  if LANGUAGE_FILENAME_TABLE[lang] ~= nil then
+    langFilename = LANGUAGE_FILENAME_TABLE[lang]
+  else
+    langFilename = string.upper(lang)
+  end
+
+  Ref[#Ref + 1] = {
+    ["MBIN_FILE_SOURCE"] = "LANGUAGE\\"..LanguageFilePrefix..langFilename..".MBIN",
+	  ["EXML_CHANGE_TABLE"] = {
+      {
+        ["PRECEDING_KEY_WORDS"] = {"Table"},
+        ["LINE_OFFSET"] = 0,
+        ["ADD"] = buildForLanguage(lang)
+      },
+	  }
+  }
+end
+
+if ForceAllLanguageFiles == true then
+  for i = 1, #LANGUAGE_NAMES do
+    addChangeTable(LANGUAGE_NAMES[i])
+  end
+else
+  addChangeTable(LanguageName)
+end

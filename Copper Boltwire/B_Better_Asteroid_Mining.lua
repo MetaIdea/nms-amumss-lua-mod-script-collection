@@ -6,10 +6,10 @@ Now you can sit back and enjoy the life of being utterly rich in mere minutes.
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]	= "Better_Asteroid_Mining.pak",
-    ["MOD_AUTHOR"]		= "Gumsk",
-    ["NMS_VERSION"]		= "3.75",
-    ["MODIFICATIONS"]	= {
+    ["MOD_FILENAME"]    = "Better_Asteroid_Mining.pak",
+    ["MOD_AUTHOR"]      = "Gumsk and Copper B.",
+    ["NMS_VERSION"]     = "3.75",
+    ["MODIFICATIONS"]   = {
         {
             ["MBIN_CHANGE_TABLE"] = 
             {
@@ -18,8 +18,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   = 
                     {
                         {
-                            ["MATH_OPERATION"] 		= "*",
-                            ["REPLACE_TYPE"] 		= "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  = 
                             {
                                 {"CommonAsteroidMinResources", 10},
@@ -29,16 +29,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             },
                         },
                         {
-                            ["REPLACE_TYPE"] 		= "ALL",
+                            ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  = 
                             {
-                                {"AsteroidSomeRaresOdds", 0.50},             -- 0.2_ Increased the chance of rare asteroids.
+                                {"AsteroidSomeRaresOdds", 0.50}, -- 0.2_ Increased the chance of rare asteroids.
                                 
-                                {"CommonAsteroidResourceSecondaryOdds", 0.50},     -- 0.2_ Chance of getting "gold" material.
+                                {"CommonAsteroidResourceSecondaryOdds", 0.50}, -- 0.2_ Chance of getting "gold" material.
                                 
-                                {"RareAsteroidResourceFuelOdds", 0.50},     -- 0.2_ Chance of getting a "TRITIUM HYPERCLUSTER".
+                                {"RareAsteroidResourceFuelOdds", 0.50},      -- 0.2_ Chance of getting a "TRITIUM HYPERCLUSTER".
                                 {"CommonAsteroidResourceProductOdds", 0.45}, -- 0.2_ Chance of getting a "GOLD NUGGET".
-                                {"RareAsteroidDataProductOdds", 0.01},      -- 0.005_ Chance of getting an "ANOMALY DETECTOR".
+                                {"RareAsteroidDataProductOdds", 0.01},       -- 0.005_ Chance of getting an "ANOMALY DETECTOR".
                             },
                         },
                     }
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   = 
                     {
                         {
-                            ["REPLACE_TYPE"] 		= "ALL",
+                            ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"]  = 
                             {
                                 {"AsteroidResourceReducer", 10}, -- 20_ This should also increase gain from asteroids, as the amount in TINY...
