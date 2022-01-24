@@ -2,7 +2,7 @@ Author = "alchemist"
 ModName = "GPS"
 BaseDescription = [[Better scanning]]
 GameVersion = "3-75"
-ModVersion = "1-0-0"
+ModVersion = "1-1-1"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 
@@ -4226,7 +4226,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="RequiresScanEvent" value=""/>
             <Property name="Options">
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_TREASURERUIN_L"/>
+                <Property name="Name" value="ALCH_SCAN_POI_TREA_MENU"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value="C_ALSCAN_LG"/>
@@ -4271,7 +4271,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_TREASURERUIN_L"/>
+                <Property name="Name" value="ALCH_SCAN_POI_TREA_MENU"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value=""/>
@@ -10687,7 +10687,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="RequiresScanEvent" value=""/>
             <Property name="Options">
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_TREASURERUIN_L"/>
+                <Property name="Name" value="ALCH_SCAN_POI_TREA_MENU"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value="C_ALSCAN_LG"/>
@@ -10732,7 +10732,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_TREASURERUIN_L"/>
+                <Property name="Name" value="ALCH_SCAN_POI_TREA_MENU"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value=""/>
@@ -15029,7 +15029,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="DisplayCost" value="False"/>
                 <Property name="TruncateCost" value="False"/>
                 <Property name="MarkInteractionComplete" value="False"/>
-                <Property name="NextInteraction" value="D_ALSCSB_PS_P1"/>
+                <Property name="NextInteraction" value="D_ALSCSB_PL_SCAN"/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT"/>
@@ -19924,8 +19924,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="DefaultProductType" value="None"/>
                   </Property>
                   <Property name="ID" value="NAV_DATA"/>
-                  <Property name="AmountMin" value="4"/>
-                  <Property name="AmountMax" value="6"/>
+                  <Property name="AmountMin" value="8"/>
+                  <Property name="AmountMax" value="12"/>
+                  <Property name="ForceSpecialMessage" value="False"/>
+                  <Property name="HideInSeasonRewards" value="False"/>
+                  <Property name="Silent" value="False"/>
+                </Property>
+                <Property name="LabelID" value=""/>
+              </Property>
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100"/>
+                <Property name="Reward" value="GcRewardSpecificProduct.xml">
+                  <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                    <Property name="DefaultProductType" value="None"/>
+                  </Property>
+                  <Property name="ID" value="POI_LOCATOR"/>
+                  <Property name="AmountMin" value="1"/>
+                  <Property name="AmountMax" value="3"/>
                   <Property name="ForceSpecialMessage" value="False"/>
                   <Property name="HideInSeasonRewards" value="False"/>
                   <Property name="Silent" value="False"/>
@@ -38746,7 +38761,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="BuildingClass" value="None"/>
           </Property>
           <Property name="AllowFriendsBases" value="False"/>
-          <Property name="ForceWideRandom" value="True"/>
+          <Property name="ForceWideRandom" value="False"/>
           <Property name="MustFindSystem" value="False"/>
           <Property name="AllowOverriddenBuildings" value="True"/>
           <Property name="SolarSystemLocation" value="LocalOrNear"/>
@@ -38778,7 +38793,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowEmpty" value="True"/>
             <Property name="NeverAllowAbandoned" value="True"/>
             <Property name="RequireUndiscovered" value="True"/>
-            <Property name="NeedsWaterPlanet" value="True"/>
+            <Property name="NeedsWaterPlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
@@ -38827,7 +38842,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowEmpty" value="True"/>
             <Property name="NeverAllowAbandoned" value="True"/>
             <Property name="RequireUndiscovered" value="True"/>
-            <Property name="NeedsWaterPlanet" value="True"/>
+            <Property name="NeedsWaterPlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
@@ -39815,7 +39830,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="BuildingClass" value="None"/>
           </Property>
           <Property name="AllowFriendsBases" value="False"/>
-          <Property name="ForceWideRandom" value="True"/>
+          <Property name="ForceWideRandom" value="False"/>
           <Property name="MustFindSystem" value="False"/>
           <Property name="AllowOverriddenBuildings" value="True"/>
           <Property name="SolarSystemLocation" value="LocalOrNear"/>
@@ -39862,7 +39877,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="BiomeSubType" value="None"/>
             </Property>
             <Property name="NeedsEmptySystem" value="False"/>
-            <Property name="NeedsAbandonedSystem" value="False"/>
+            <Property name="NeedsAbandonedSystem" value="True"/>
             <Property name="NeedsResourceHint" value=""/>
             <Property name="SuitableForCreatureDiscovery" value="False"/>
             <Property name="SuitableForCreatureTaming" value="False"/>
@@ -39911,7 +39926,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="BiomeSubType" value="None"/>
             </Property>
             <Property name="NeedsEmptySystem" value="False"/>
-            <Property name="NeedsAbandonedSystem" value="False"/>
+            <Property name="NeedsAbandonedSystem" value="True"/>
             <Property name="NeedsResourceHint" value=""/>
             <Property name="SuitableForCreatureDiscovery" value="False"/>
             <Property name="SuitableForCreatureTaming" value="False"/>
@@ -40884,7 +40899,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="BuildingClass" value="None"/>
           </Property>
           <Property name="AllowFriendsBases" value="False"/>
-          <Property name="ForceWideRandom" value="True"/>
+          <Property name="ForceWideRandom" value="False"/>
           <Property name="MustFindSystem" value="False"/>
           <Property name="AllowOverriddenBuildings" value="True"/>
           <Property name="SolarSystemLocation" value="LocalOrNear"/>
@@ -54232,6 +54247,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
   -- 
 
   -- Encounters 
+
+  -- Pirate Bounties 
 
   -- Stats 
   {["MBIN_FILE_SOURCE"] = "METADATA\\GAMESTATE\\STATS\\STATGROUPSTABLE.MBIN",

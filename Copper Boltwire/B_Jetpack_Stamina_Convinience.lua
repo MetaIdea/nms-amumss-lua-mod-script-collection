@@ -21,44 +21,44 @@ HardLandTime = 8            --0.5 -- This is assuming that it's calculated in se
 HardLandMin = 50            --5
 HardLandMax = 150           --18
 
-JetpackFillRate = 10             --0.5
-JetpackFillRateHardMode = 10     --0.2
-JetpackFillRateMidair = 10       --0.25
+JetpackFillRate = 10            --0.5
+JetpackFillRateHardMode = 10    --0.2
+JetpackFillRateMidair = 10      --0.25
 JetpackFillRateSpaceStationMultiplier = 20  --5
-JetpackFillRateFleetMultiplier = 10      --5
-JetpackFillRateNexusMultiplier = 20     --20
-JetpackUnderwaterDrainRate = 0.1        --0.4
-JetpackUnderwaterFillRate = 10           --1
+JetpackFillRateFleetMultiplier = 10        --5
+JetpackFillRateNexusMultiplier = 20       --20
+JetpackUnderwaterDrainRate = 0.1         --0.4
+JetpackUnderwaterFillRate = 10          --1
 
-FreeJetpackRange = 7								--3
-FreeJetpackRangeNonTerrain = 2						--1.1
-JetpackDrainHorizontalFactor = 3					--2.5
-JetpackForce = 50									--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
-JetpackMinLevel = 0.1								--0.5 ; ?How flat does the ground need to be to ignite jetpack? At 99, couldn't ignite in most places
-JetpackMaxSpeed = 25								--5 (40)
-JetpackMaxUpSpeed = 60								--30 (100)
-JetpackUpForce = 60									--30 (50) ; Needs to be above about 20 to overcome standard gravity
-JetpackIgnitionForce = 80							--60 ; No noticeable effect
-JetpackIgnitionTime = 10							--0.4 ; 
-JetpackMinIgnitionTime = .1							--0.2 ; How quickly after igniting the jetpack FROM A SURFACE will jetpack thrust stop?
-JetpackUpForceDeadPlanetExtra = 30					--10
-JetpackForceDeadPlanetExtra = 40					--15
-JetpackIgnitionForceDeadPlanetExtra = 90			--45
+FreeJetpackRange = 7                --3
+FreeJetpackRangeNonTerrain = 2      --1.1
+JetpackDrainHorizontalFactor = 3    --2.5
+JetpackForce = 50                    --31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
+JetpackMinLevel = 0.1                 --0.5 ; ?How flat does the ground need to be to ignite jetpack? At 99, couldn't ignite in most places
+JetpackMaxSpeed = 25                   --5 (40)
+JetpackMaxUpSpeed = 60                  --30 (100)
+JetpackUpForce = 60                      --30 (50) ; Needs to be above about 20 to overcome standard gravity
+JetpackIgnitionForce = 80                 --60 ; No noticeable effect
+JetpackIgnitionTime = 10                   --0.4 ; 
+JetpackMinIgnitionTime = .1                 --0.2 ; How quickly after igniting the jetpack FROM A SURFACE will jetpack thrust stop?
+JetpackUpForceDeadPlanetExtra = 30          --10
+JetpackForceDeadPlanetExtra = 40            --15
+JetpackIgnitionForceDeadPlanetExtra = 90    --45
 
-UnderwaterMaxSpeed = 7								--4
-UnderwaterForce = 25								--15
-UnderwaterMaxJetpackSpeed = 25						--8 (40)
-UnderwaterJetpackForce = 50							--25 (80)
-UnderwaterMaxJetpackEscapeSpeed = 20				--8
-UnderwaterJetpackEscapeForce = 30					--20
+UnderwaterMaxSpeed = 7                  --4
+UnderwaterForce = 25                    --15
+UnderwaterMaxJetpackSpeed = 25          --8 (40)
+UnderwaterJetpackForce = 50             --25 (80)
+UnderwaterMaxJetpackEscapeSpeed = 20    --8
+UnderwaterJetpackEscapeForce = 30       --20
 
-  
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]	= "Jetpack_Stamina_Convinience.pak",
-    ["MOD_AUTHOR"]		= "Gumsk and Copper",
-    ["NMS_VERSION"]		= "3.75",
-    ["MODIFICATIONS"]	= 
+    ["MOD_FILENAME"]    = "Jetpack_Stamina_Convinience.pak",
+    ["MOD_AUTHOR"]      = "Gumsk and Copper",
+    ["NMS_VERSION"]     = "3.75",
+    ["MODIFICATIONS"]   = 
     {
         {
             ["MBIN_CHANGE_TABLE"] = 
@@ -86,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
                                 {"FreeJetpackRange",FreeJetpackRange},
                                 {"FreeJetpackRangeNonTerrain",FreeJetpackRangeNonTerrain},
-                                {"JetpackDrainHorizontalFactor",JetpackDrainHorizontalFactor},	
+                                {"JetpackDrainHorizontalFactor",JetpackDrainHorizontalFactor},    
                                 {"JetpackForce",JetpackForce},
                                 {"JetpackMinLevel",JetpackMinLevel},
                                 {"JetpackMaxSpeed",JetpackMaxSpeed},
