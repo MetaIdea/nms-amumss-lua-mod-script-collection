@@ -187,44 +187,62 @@ CUSTOM_GENERICREWARD_ALL = ""
 function CreateCustomMultitoolRewardSubEntry(DEC_SEED, HEX_SEED, TYPE)
 local GENERIC_REWARD_ENTRY =
 [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-			  <Property name="Reward" value="GcRewardSpecificWeapon.xml">
-				<Property name="WeaponResource" value="GcExactResource.xml">
-				  <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
-				  <Property name="GenerationSeed" value="GcSeed.xml">
-					<Property name="Seed" value="]] .. DEC_SEED .. [[" />
-					<Property name="UseSeedValue" value="True" />
-				  </Property>
-				</Property>
-				<Property name="WeaponLayout" value="GcInventoryLayout.xml">
-				  <Property name="Slots" value="1" />
-				  <Property name="Seed" value="GcSeed.xml">
-					<Property name="Seed" value="1" />
-					<Property name="UseSeedValue" value="True" />
-				  </Property>
-				  <Property name="Level" value="1" />
-				</Property>
-				<Property name="WeaponInventory" value="GcInventoryContainer.xml">
-				  <Property name="Slots" />
-				  <Property name="ValidSlotIndices" />
-				  <Property name="Class" value="GcInventoryClass.xml">
-					<Property name="InventoryClass" value="S" />
-				  </Property>
-				  <Property name="SubstanceMaxStorageMultiplier" value="0" />
-				  <Property name="ProductMaxStorageMultiplier" value="0" />
-				  <Property name="BaseStatValues" />
-				  <Property name="SpecialSlots" />
-				  <Property name="Width" value="0" />
-				  <Property name="Height" value="0" />
-				  <Property name="IsCool" value="False" />
-				  <Property name="Name" value="]] .. HEX_SEED .. [[" />
-				  <Property name="Version" value="0" />
-				</Property>
-				<Property name="NameOverride" value="]] .. HEX_SEED .. [[" />
-			  </Property>
-            <Property name="LabelID" value="" />
-          </Property>	  
+	<Property value="GcRewardTableItem.xml">
+	<Property name="PercentageChance" value="100" />
+	<Property name="Reward" value="GcRewardSpecificWeapon.xml">
+	  <Property name="WeaponInventory" value="GcInventoryContainer.xml">
+		<Property name="Slots">
+		  <Property value="GcInventoryElement.xml">
+			<Property name="Type" value="GcInventoryType.xml">
+			  <Property name="InventoryType" value="Technology" />
+			</Property>
+			<Property name="Id" value="LASER" />
+			<Property name="Amount" value="200" />
+			<Property name="MaxAmount" value="200" />
+			<Property name="DamageFactor" value="0" />
+			<Property name="FullyInstalled" value="True" />
+			<Property name="Index" value="GcInventoryIndex.xml">
+			  <Property name="X" value="-1" />
+			  <Property name="Y" value="-1" />
+			</Property>
+		  </Property>
+		</Property>
+		<Property name="ValidSlotIndices" />
+		<Property name="Class" value="GcInventoryClass.xml">
+		  <Property name="InventoryClass" value="S" />
+		</Property>
+		<Property name="SubstanceMaxStorageMultiplier" value="0" />
+		<Property name="ProductMaxStorageMultiplier" value="0" />
+		<Property name="BaseStatValues" />
+		<Property name="SpecialSlots" />
+		<Property name="Width" value="0" />
+		<Property name="Height" value="0" />
+		<Property name="IsCool" value="False" />
+		<Property name="Name" value="" />
+		<Property name="Version" value="0" />
+	  </Property>
+	  <Property name="WeaponLayout" value="GcInventoryLayout.xml">
+		<Property name="Slots" value="24" />
+		<Property name="Seed" value="GcSeed.xml">
+		  <Property name="Seed" value="1" />
+		  <Property name="UseSeedValue" value="True" />
+		</Property>
+		<Property name="Level" value="1" />
+	  </Property>
+	  <Property name="WeaponResource" value="GcExactResource.xml">
+		<Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
+		<Property name="GenerationSeed" value="GcSeed.xml">
+		  <Property name="Seed" value="]] .. DEC_SEED .. [[" />
+		  <Property name="UseSeedValue" value="True" />
+		</Property>
+	  </Property>
+	  <Property name="NameOverride" value="]] .. HEX_SEED .. [[" />
+	  <Property name="IsGift" value="True" />
+	  <Property name="IsRewardWeapon" value="True" />
+	  <Property name="FormatAsSeasonal" value="False" />
+	</Property>
+	<Property name="LabelID" value="" />
+  </Property>
 ]]
 return GENERIC_REWARD_ENTRY
 end
@@ -551,7 +569,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["Maintainer"]				= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]				= "3.73",
+["NMS_VERSION"]				= "3.75",
 ["MODIFICATIONS"] 			= 
 	{
 		{

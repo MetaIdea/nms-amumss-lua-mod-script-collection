@@ -489,7 +489,7 @@ QUICK_ACTION_MENU =
 	},
 	["PLANET_FINDER"] = 
 	{
-		["TITLE"] 			= "Find Lush Planet (WIP)",
+		["TITLE"] 			= "Find Lush Planet",
 		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS",
 		["ANIM"] 			= "PLANET_FINDER",
 		["TYPE"]			= "REWARD",
@@ -540,7 +540,7 @@ QUICK_ACTION_MENU =
           <Property name="CanEndFromOutsideMission" value="False" />
           <Property name="DisableMultiplayerSync" value="False" />
           <Property name="ReplaceEventIfAlreadyActive" value="False" />
-          <Property name="BuildingLocation" value="Random" />
+          <Property name="BuildingLocation" value="PlanetSearch" />
           <Property name="BuildingType" value="Any" />
           <Property name="BuildingClass" value="GcBuildingClassification.xml">
             <Property name="BuildingClass" value="None" />
@@ -551,7 +551,7 @@ QUICK_ACTION_MENU =
           <Property name="AllowOverriddenBuildings" value="True" />
           <Property name="SolarSystemLocation" value="LocalOrNear" />
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
-            <Property name="UseStarType" value="True" />
+            <Property name="UseStarType" value="False"/>
             <Property name="UseWealth" value="False" />
             <Property name="UseTrading" value="False" />
             <Property name="UseRace" value="GcAlienRace.xml">
@@ -578,7 +578,7 @@ QUICK_ACTION_MENU =
             <Property name="NeverAllowEmpty" value="False" />
             <Property name="NeverAllowAbandoned" value="False" />
             <Property name="RequireUndiscovered" value="False" />
-            <Property name="NeedsWaterPlanet" value="True" />
+            <Property name="NeedsWaterPlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -634,7 +634,7 @@ QUICK_ACTION_MENU =
             <Property name="NeedsExtremeHazardPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />	    
             <Property name="AnyRGBBiome" value="False" />
-            <Property name="NeedsBiome" value="False" />
+            <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush" />
             </Property>
@@ -660,11 +660,11 @@ QUICK_ACTION_MENU =
           <Property name="TechShopType" value="GcTechnologyCategory.xml">
             <Property name="TechnologyCategory" value="All" />
           </Property>
-          <Property name="OSDMessage" value="" />
-          <Property name="InterstellarOSDMessage" value="" />
+          <Property name="OSDMessage" value="Lush Planet Finder" />
+          <Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM" />
           <Property name="MarkerLabel" value="Lush Planet" />
           <Property name="MarkerIcon" value="TkTextureResource.xml">
-            <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/GAS.1.DDS" />
+            <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS"/>
           </Property>
           <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
             <Property name="ScannerIconHighlightType" value="Diamond" />
@@ -673,7 +673,7 @@ QUICK_ACTION_MENU =
           <Property name="MessageTime" value="0" />
           <Property name="MessageDisplayTime" value="4" />
           <Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
-            <Property name="AkEvent" value="INVALID_EVENT" />
+            <Property name="AkEvent" value="VO_TUT_COORDSRECEIVED"/>
           </Property>
           <Property name="IconTime" value="4" />
           <Property name="TooltipTime" value="10" />
@@ -1424,7 +1424,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]				= "3.73",
+["NMS_VERSION"]				= "3.75",
 ["MODIFICATIONS"] 			= 
 	{
 		{
