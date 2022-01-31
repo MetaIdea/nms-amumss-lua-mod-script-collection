@@ -49,24 +49,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "IGNORE", 					"99" }, 		--Original "4"
-							}	
-						},						
-						{
-							["PRECEDING_KEY_WORDS"] = {"JetpackTankTimes"},
-							["LINE_OFFSET"] 	= "2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
 								{ "IGNORE", 					"99" }, 		--Original "6"
+								{ "IGNORE", 					"99" }, 		--Original "8"								
 							}	
-						},						
-						{
-							["PRECEDING_KEY_WORDS"] = {"JetpackTankTimes"},
-							["LINE_OFFSET"] 	= "3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "IGNORE", 					"99" }, 		--Original "8"
-							}	
-						},						
+						},											
 					}
 				}
 			}
