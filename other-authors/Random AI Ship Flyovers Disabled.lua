@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"] 			= "_GPA_Random_AI_Ship_Flyovers_Disabled.pak", 
 ["MOD_AUTHOR"]				= "GhengopelALPHA",
-["NMS_VERSION"]				= "2.61.1",
+["NMS_VERSION"]				= "3.53",
 ["MOD_DESCRIPTION"]		= "",
 ["MODIFICATIONS"] 			= {
 	{

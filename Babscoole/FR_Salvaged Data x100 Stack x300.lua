@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "FR_Salvaged Data x100 Stack x300.pak",
 ["MOD_AUTHOR"]				= "Silver70",
-["MOD_AUTHOR"]				= "Babscoole",
+["LUA_AUTHOR"]				= "Babscoole",
 ["NMS_VERSION"]				= "3.75",
 ["MODIFICATIONS"] 			= 
 	{
