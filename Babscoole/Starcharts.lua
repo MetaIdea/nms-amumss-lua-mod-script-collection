@@ -3,6 +3,7 @@ SEARCH_OBJECT_TABLE =
 	{ ["ID_NAME"]="DEPOT", 	 	["EVENT_NAME"]="DEPOT", 			["LABELID_NAME"]="Depot",				["PATH"]="FACTORY"},
 	{ ["ID_NAME"]="FACTORY",	["EVENT_NAME"]="FACTORY", 			["LABELID_NAME"]="Factory",				["PATH"]="FACTORY"},
 	{ ["ID_NAME"]="HARVESTER", 	["EVENT_NAME"]="HARVESTER", 		["LABELID_NAME"]="Harvester",			["PATH"]="FACTORY"},
+	{ ["ID_NAME"]="BASESITE", 	["EVENT_NAME"]="BASE", 				["LABELID_NAME"]="Base",				["PATH"]="FACTORY"},	
 	{ ["ID_NAME"]="ABANDONED", 	["EVENT_NAME"]="ABANDONED", 		["LABELID_NAME"]="Abandoned",			["PATH"]="DISTRESSSIGNAL"},
 	{ ["ID_NAME"]="DISTRESS",  	["EVENT_NAME"]="DISTRESS", 			["LABELID_NAME"]="Distress",			["PATH"]="DISTRESSSIGNAL"},
 	{ ["ID_NAME"]="DISTRESS_N",	["EVENT_NAME"]="DISTRESS_NPC", 		["LABELID_NAME"]="Distress with NPC",	["PATH"]="DISTRESSSIGNAL"},
@@ -17,6 +18,7 @@ SEARCH_OBJECT_TABLE =
 	{ ["ID_NAME"]="PLAQUE", 	["EVENT_NAME"]="PLAQUE", 			["LABELID_NAME"]="Plaque",				["PATH"]="RUNE"},
 	{ ["ID_NAME"]="MONOLITH",  	["EVENT_NAME"]="MONOLITH", 			["LABELID_NAME"]="Monolith",			["PATH"]="RUNE"},
 	{ ["ID_NAME"]="RUIN", 	 	["EVENT_NAME"]="RUIN", 				["LABELID_NAME"]="Ruin",				["PATH"]="RUNE"},
+	{ ["ID_NAME"]="PORTAL", 	["EVENT_NAME"]="PORTAL", 			["LABELID_NAME"]="RevealPortal",		["PATH"]="RUNE"},	
 }
 
 
