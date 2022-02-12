@@ -22,14 +22,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AutoAimExtraAngle",   15},
 							}
 						},
-						{
+						--[[{
 							["PRECEDING_KEY_WORDS"] = {"ShipWeapons", "Minigun"},
 							["VALUE_CHANGE_TABLE"] 	= 	
 							{
 								{"AutoAimAngle",		0},
 								{"AutoAimExtraAngle",   0},
 							}
-						},
+						},]]
 					}
 				}
 			}
