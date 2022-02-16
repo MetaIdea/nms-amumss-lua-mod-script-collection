@@ -134,7 +134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},						
 						{
 							["PRECEDING_KEY_WORDS"] = {"Children",},
-							
+							["SECTION_ACTIVE"] = {1,},
 							["REMOVE"] = "SECTION",																																
 						},	
 						{
