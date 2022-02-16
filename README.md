@@ -26,4 +26,6 @@ More:
 - [Wyzoom](https://github.com/Wyzoom/OmmmNoms)
 - [csakypeter](https://github.com/csakypeter/NMS-BetterRewards)
 
+Any in the form of a .zip file have additional files that need to be added by placing into ModExtraFilesToInclude in AMUMSS when the LUA is run.
+
 
