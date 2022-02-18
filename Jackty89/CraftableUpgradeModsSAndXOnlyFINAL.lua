@@ -1,4 +1,4 @@
-GameVersion = "3_70"
+GameVersion = "3_80"
 NexusModName = "CraftableUpgradeModsSAndXOnly"
 Author = "jackty89"
 
@@ -29,7 +29,7 @@ IsCraftableToTrue = "True"
 IdArray = {}
 SubList = {}
 
-Languages = 
+Languages =
 {
 	"English",
 	"French",
@@ -50,7 +50,7 @@ Languages =
 	"USEnglish"
 }
 
-AddNewLanguatext = 
+AddNewLanguatext =
 {
     {Languages[1], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
     {Languages[2], "Une amélioration de cargo fabriqué.&#xA;&#xA;Peut être redéployée dans votre propre vaisseau amiral pour améliorer sa &lt;TECHNOLOGY&gt;Technologie&lt;&gt;."},
@@ -147,7 +147,7 @@ GeneralUpgradeMods =
             {"U_MECHLAS", "4", "2"}
         }
     }
-    
+
 }
 
 BioShipMods =
@@ -206,7 +206,7 @@ XClassMods =
     }
 }
 
-CustomFreighterModData = 
+CustomFreighterModData =
 {
     {
         {
@@ -215,7 +215,7 @@ CustomFreighterModData =
             CostTypeNanite
         },
         {
-            --id, noUpgrades, startNo, TemplateBase/NameBase, DeployBase    
+            --id, noUpgrades, startNo, TemplateBase/NameBase, DeployBase
             {"U_FREIG_SPE", "4", "1", "SPEED", "SpeedDeploy" },
             {"U_FREIG_COM", "4", "1", "COM", "ComDeploy"},
             {"U_FREIG_EXP", "4", "1", "EXP", "ExpDeploy"},
@@ -289,38 +289,38 @@ Requirements =
     }
 }
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= NexusModName..GameVersion..".pak",
-["MOD_DESCRIPTION"]			= "",   
+["MOD_DESCRIPTION"]			= "",
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,
-["MODIFICATIONS"] 			= 
+["MODIFICATIONS"] 			=
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] 	=
 			{
-				
+
                 {
                     ["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	= 
+                    ["EXML_CHANGE_TABLE"] 	=
                     {
 
                     }
                 },
 				{
                     ["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	= 
+                    ["EXML_CHANGE_TABLE"] 	=
                     {
-											
+
                     }
                 },
-                { 
+                {
                     -- Add recipes to the Tree
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] 	=
 					{
-						
+
                     }
 				}
             }
@@ -386,12 +386,12 @@ function NewDescriptionText(newDescId)
 		</Property>
 	</Property>
 	]]
- 
-	return result 
+
+	return result
 end
 
 function CreateModTabpageTree(RootTech, Children, CostTypeID)
-    return 
+    return
     [[
         <Property value="GcUnlockableItemTree.xml">
 		    <Property name="Title" value="]]..TechTreeSub..[[" />
@@ -427,7 +427,7 @@ function CreateTabPageChildren(ModName, PrevChildMod)
             </Property>
         ]]
     end
-    
+
     return result
 end
 
@@ -468,7 +468,7 @@ function CreateNewCustomModDeploys(ModDeployID, Template, ModDeployName, ModDepl
             </Property>
         </Property>
     ]]
-    
+
     return result
 end
 
@@ -577,10 +577,10 @@ function ClassStringsAndData(UpgradeNumber)
         --S-Class
         return {"UP_S","_S", "480","3.070513E-05","TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PROCTECH/PROCTECH.S.", "Legendary", "NoWeighting"}
     elseif UpgradeNumber == 3 then
-        --A-Class        
+        --A-Class
         return {"UP_A","_A", "300","1.91666677E-05","TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PROCTECH/PROCTECH.A.", "Epic", "NoWeighting"}
     elseif UpgradeNumber == 2 then
-        --B-Class            
+        --B-Class
         return {"UP_B","_B", "140","8.910257E-06","TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PROCTECH/PROCTECH.B.", "Rare", "MaxIsUncommon"}
     elseif UpgradeNumber == 1 then
         --C-Class
@@ -890,7 +890,7 @@ function CreateRequirementsString(RequirementsArray)
         RequirementsString = RequirementsString..CreateRequirement(RequirementsArray[i])
     end
 
-    return 
+    return
     [[
         <Property name="Requirements">
         ]]..RequirementsString..[[
@@ -912,14 +912,14 @@ for i = 1, #CustomFreighterModData do
     local FrCostType= CustomFreighterModData[i][1][3]
 
     local CustomFreighterMods = CustomFreighterModData[i][2]
-    
+
     local Tree = ""
     local Children = ""
 
     local UpgradeMods = ""
     local DeployMods = ""
 
-    for l = 1, #CustomFreighterMods do    
+    for l = 1, #CustomFreighterMods do
         local UpgradeMod = CustomFreighterMods[l]
 
         local NumberOfUpgrades = UpgradeMod[2]
@@ -974,7 +974,7 @@ for i = 1, #CustomFreighterModData do
     end
     Tree = CreateModTabpageTree(FrRootTech, Children, FrCostType)
 
-    local ChangesToUnlockableItemTrees_temp = 
+    local ChangesToUnlockableItemTrees_temp =
     {
         ["SPECIAL_KEY_WORDS"] = {"Title", FrTree, "Title", TechTreeSub},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -1002,7 +1002,7 @@ for i = 1, #GeneralUpgradeMods do
     local RootTech = GeneralUpgradeMods[i][1][2]
     local CostType = GeneralUpgradeMods[i][1][3]
     local UpgradeMods = GeneralUpgradeMods[i][2]
-    
+
     local Tree = ""
     local Children = ""
 
@@ -1018,10 +1018,10 @@ for i = 1, #GeneralUpgradeMods do
         end
         Children = Children..ModTree
     end
-    
+
     Tree = CreateModTabpageTree(RootTech, Children, CostType)
 
-    local UnlockableItemTree = 
+    local UnlockableItemTree =
     {
         ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSub},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -1055,7 +1055,7 @@ for i = 1, #BioShipMods do
 
     Tree = CreateModTabpageTree(RootTech, Children, CostType)
 
-    local UnlockableItemTree = 
+    local UnlockableItemTree =
     {
         ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSub},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
@@ -1106,30 +1106,30 @@ for i = 1, #XClassMods do
 
     Tree = CreateModTabpageTree(RootTech,Children, CostType)
 
-    local UnlockableItemTree = 
+    local UnlockableItemTree =
     {
         ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSubFactory},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
         ["ADD"]	= Tree
     }
-    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree    
+    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
 end
 
 for i = 1, #AddNewLanguatext do
     local Language = AddNewLanguatext[i][1]
     local LanguageUC = string.upper(Language)
-    
+
     if Language == "LatinAmericanSpanish" then
         LanguageUC = "LATINAMERAICANSPANISH"
     end
-    
+
     local Text = AddNewLanguatext[i][2]
 
     if Text~="" then
         local temp_table =
         {
             ["MBIN_FILE_SOURCE"] 	= "LANGUAGE\NMS_LOC6_"..LanguageUC..".MBIN",
-            ["EXML_CHANGE_TABLE"] 	= 
+            ["EXML_CHANGE_TABLE"] 	=
             {
                 {
                     ["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -1138,16 +1138,16 @@ for i = 1, #AddNewLanguatext do
                 {
                     ["SPECIAL_KEY_WORDS"] = {"Id", CraftedFreighterModDescrId , Language, "VariableSizeString.xml"},
                     ["PRECEDING_KEY_WORDS"] = {Language},
-                    ["VALUE_CHANGE_TABLE"] = 
+                    ["VALUE_CHANGE_TABLE"] =
                     {
                         {"Value", Text}
                     }
-                }             
+                }
             }
         }
 
         ChangesToLangaugeTables[#ChangesToLangaugeTables + 1] = temp_table
-    end    
+    end
 end
 
 GetAllIDs(XClassMods)
@@ -1158,12 +1158,12 @@ GetAllIDs(BioShipMods)
 for i = 1, #IdArray do
 
     local ProdModID = IdArray[i][1]
-       
+
     local RequirementsArray = IdArray[i][2][1]
-    local RecipeCost = IdArray[i][2][2][1] 
+    local RecipeCost = IdArray[i][2][2][1]
 
     local RequirementsString = CreateRequirementsString(RequirementsArray)
-    
+
     local ChangesToProductTable_temp =
     {
         ["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
@@ -1173,14 +1173,14 @@ for i = 1, #IdArray do
                 ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID,"CraftAmountMultiplier","1"},
                 ["LINE_OFFSET"] 	= "+1",
                 ["REMOVE"]	= "LINE"
-            }, 
+            },
             {
                 ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID,"CraftAmountMultiplier","1"},
                 ["ADD"] = RequirementsString
-            },						
+            },
             {
                 ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID},
-                ["VALUE_CHANGE_TABLE"] 	= 
+                ["VALUE_CHANGE_TABLE"] 	=
                 {
                     {"IsCraftable", IsCraftableToTrue},
                     {"RecipeCost", RecipeCost}
@@ -1189,4 +1189,4 @@ for i = 1, #IdArray do
         }
     }
     MassChangesToProductTable[#MassChangesToProductTable + 1] = ChangesToProductTable_temp
-end       
+end

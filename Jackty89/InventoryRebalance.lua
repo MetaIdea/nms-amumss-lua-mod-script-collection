@@ -1,5 +1,5 @@
 ModName = "InventoryRebalance"
-GameVersion = "3_71"
+GameVersion = "3_80"
 
 --NORMAL
 SubstanceDefaultStackSizeNormal = 50000	-- Stacksize of substances (Original 9999)
