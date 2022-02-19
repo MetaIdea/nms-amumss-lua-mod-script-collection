@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "NoChargePortal.pak",
+["MOD_FILENAME"]	= "NoPortalCharge.pak",
 ["MOD_AUTHOR"]		= "Lenni",
 ["NMS_VERSION"]		= "3.75+",
 ["MOD_DESCRIPTION"]	= "Removes Portal charge cost",
