@@ -71,6 +71,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_FIRST"]    = "TRUE",
 							["SPECIAL_KEY_WORDS"]    = {"Filename", "MODELS/COMMON/SPACECRAFT/FRIGATES/SUPPORTFRIGATE.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"SystemSpaceships", "Civilian",},
+							["REPLACE_TYPE"] = "ALL",							
 							["VALUE_CHANGE_TABLE"] = 
 								{
 									{"Filename", ""}
@@ -85,7 +86,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 									{"Filename", ""}
 								},
                         },
-						
+				--[[	{
+							["PRECEDING_FIRST"]    = "TRUE",
+							["SPECIAL_KEY_WORDS"]    = {"Filename", "MODELS/COMMON/SPACECRAFT/FRIGATES/LIVINGFRIGATE.SCENE.MBIN",},
+							["PRECEDING_KEY_WORDS"] = {"SystemSpaceships", "Civilian",},
+							["VALUE_CHANGE_TABLE"] = 
+								{
+									{"Filename", ""}
+								},
+                        }, ]]--
                     },
 				},
             }
