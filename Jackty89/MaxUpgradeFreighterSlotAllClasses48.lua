@@ -1,7 +1,7 @@
 GameVersion = "3_81"
-ModeName = "MaxUpgradeFreighterSlotAllClasses"
+ModeName = "MaxUpgradeFreighterSlotAllClasses48"
 Author = "Jackty89"
-Description = "Tiny mod that allows any class of freighter to be upgraded to 48/21"
+Description = "Tiny mod that allows any class of freighter to be upgraded to 48/48"
 
 InventoryTablePath = "METADATA\\REALITY\\TABLES\\INVENTORYTABLE.MBIN"
 
@@ -33,9 +33,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Freighter","MaxTechInventoryCapacity"},
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
-                                {"14","21"},
-                                {"7","21"},
-                                {"7","21"}
+                                {"21","48"},
+                                {"14","48"},
+                                {"7","48"},
+                                {"7","48"}
                             }
                         }
                     }
