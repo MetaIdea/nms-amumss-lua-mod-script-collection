@@ -2,7 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "UniqueCompanion-Sandworm.pak",
 ["MOD_AUTHOR"]				= "Mjjstral",
-["NMS_VERSION"]				= "3.73",
+["MOD_MAINTENANCE"]			= "Babscoole",
+["NMS_VERSION"]				= "3.81",
 ["DESCRIPTION"]				= "Use the sphere spawner to get this unique companion",
 ["MODIFICATIONS"] 			= 
 	{

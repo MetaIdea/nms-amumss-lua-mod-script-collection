@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "Disable-VR-Warnings.pak",
 ["MOD_AUTHOR"]				= "Mjjstral",
-["Maintainer"]				= "Babscoole",
-["NMS_VERSION"]				= "3.73",
+["MOD_MAINTENANCE"]			= "Babscoole",
+["NMS_VERSION"]				= "3.81",
 ["MODIFICATIONS"] 			= 
 	{
 		{

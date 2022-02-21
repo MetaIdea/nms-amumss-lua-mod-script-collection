@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_FILENAME"] 			= "_Exosolar's Starmap Upgrade.pak",
 	["MOD_AUTHOR"]				= "Exosolar",
 	["LUA_AUTHOR"]				= "Makto & Updated by Babscoole",
-	["NMS_VERSION"]				= "3.73",
+	["NMS_VERSION"]				= "3.81",
 	["MODIFICATIONS"] 			= 
 	{
 		{
