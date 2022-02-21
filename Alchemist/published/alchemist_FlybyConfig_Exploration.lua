@@ -2,7 +2,7 @@
 Author = "alchemist"
 ModName = "FlybyConfig_Exploration"
 BaseDescription = "Survive."
-GameVersion = "3-7x"
+GameVersion = "3-81"
 ModVersion = "1"
 
 -- This is all quick hack stuff.
