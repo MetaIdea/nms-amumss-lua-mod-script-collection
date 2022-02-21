@@ -2,8 +2,8 @@
 Author = "alchemist"
 ModName = "GPS"
 BaseDescription = [[Better scanning]]
-GameVersion = "3-75"
-ModVersion = "1-1-1"
+GameVersion = "3-81"
+ModVersion = "1-2-0"
 
 -- =========
 -- CONSTANTS
@@ -70,7 +70,7 @@ the color of text or add icons. Format wrappers and icon tags must be in English
 
 --]]
 
--- Total keys: 181
+-- Total keys: 176
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_PORT_ERR_NEED_PASS"] = "Feature Unavailable <IMG>SLASH<> Technology Requirement Unfulfilled <IMG>SLASH<> Atlas Pass", --
@@ -149,6 +149,7 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_MENU_SHIP_RANGE_ERR"] = "Deep Space Scanning <IMG>SLASH<> UNAVAILABLE <IMG>SLASH<> Interference detected", --
   ["ALCH_SCAN_MENU_SHIP_RECON"] = "Planetary Sweep...", --
   ["ALCH_SCAN_MENU_SHIP_RECON_ERR"] = "Planetary Sweep <IMG>SLASH<> UNAVAILABLE <IMG>SLASH<> Atmospheric flight required", --
+  ["ALCH_SCAN_PIO_GRAVE_TIP"] = "<TITLE>Fallen traveler exosuit signal detected<>\nEcho may have knowledge required for Portal travel", --
   ["ALCH_SCAN_POI_TREA_MENU"] = "Treasure Ruins", --
   ["ALCH_SCAN_POI_UWAB"] = "Submerged Building", --
   ["ALCH_SCAN_POI_UWCF"] = "Submerged Freighter", --
@@ -202,20 +203,14 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_RB_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <IMG>SLASH<> Salvageable Scrap", --
   ["ALCH_SCAN_PQ_RB_MENU"] = "Salvageable Scrap", --
   ["ALCH_SCAN_PQ_RB_TITLE"] = "Planet Query ~ Salvageable Scrap", --
+  ["ALCH_SCAN_PQ_RC_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <IMG>SLASH<> Populated Wealthy System ~ Undiscovered Planet ~ Biome Not Wierd or Dead ~ Low Sentinel Presence", --
+  ["ALCH_SCAN_PQ_RC_MENU"] = "Wealthy Economy", --
+  ["ALCH_SCAN_PQ_RC_TITLE"] = "Planet Query ~ Wealthy Economy", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ"] = "Search Registered with Navigation Computer", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ_TIP"] = "This planetary query has been registered with the ship's navigation computer and will proceed during normal <SPECIAL>space flight<>.\n\n<STELLAR>ADVISORY<> ~ Portal travel and Nexus missions cause <FUEL>interdimension interference<>. All active queries will be paused for the duration of these activities.", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ"] = "Travel to System", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ_TIP"] = "A planet matching the given <SPECIAL>query parameters<> has been identified in a <TECHNOLOGY>remote system<>.\n\nUse <IMG>QUICK_MENU<> to open <STELLAR>Galactic Map<> and travel to the marked system.", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ_WAIT"] = "<TITLE>Query result located in<> <TECHNOLOGY>remote system<>\nUse <IMG>QUICK_MENU<> to open <STELLAR>Galactic Map<>", --
-  ["ALCH_SCAN_PQ_ZA_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <IMG>SLASH<> Lush Biome ~ Large Flora ~ Abundunt Fauna ~ Water ~ Low Sentinels", --
-  ["ALCH_SCAN_PQ_ZA_MENU"] = "Debutante", --
-  ["ALCH_SCAN_PQ_ZA_TITLE"] = "Planet Query ~ Debutante", --
-  ["ALCH_SCAN_PQ_ZB_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <IMG>SLASH<> Volcanic Eruptions ~ Extreme Pyroclastic Storms ~ Abandoned ~ Ancient Bones", --
-  ["ALCH_SCAN_PQ_ZB_MENU"] = "Reckoner", --
-  ["ALCH_SCAN_PQ_ZB_TITLE"] = "Planet Query ~ Reckoner", --
-  ["ALCH_SCAN_PQ_ZC_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <IMG>SLASH<> ???kZ? ~ [ERR DIV ZERO]", --
-  ["ALCH_SCAN_PQ_ZC_MENU"] = "Voices", --
-  ["ALCH_SCAN_PQ_ZC_TITLE"] = "Planet Query ~ Voices", --
   ["ALCH_SCAN_PR_DESC"] = "<TECHNOLOGY>Resource<> Pattern Query <IMG>SLASH<> Immediate results expected <IMG>SLASH<> Consult <STELLAR>Mission Log<> for details", --
   ["ALCH_SCAN_PZ_DESC"] = "<SPECIAL>Complex<> Pattern Query <IMG>SLASH<> <FUEL>ADVISORY<> ~ Immediate results unlikely <IMG>SLASH<> Consult <STELLAR>Mission Log<> for details", --
   ["ALCH_SCAN_SCAN_EXACT_DESC"] = "Select category for further options.", --
