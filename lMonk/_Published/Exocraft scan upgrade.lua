@@ -1,18 +1,18 @@
 --------------------------------------------------------------------------
 local desc = [[
   Add planetary archive, base computer, minor settlement, trading post,
-  ancient plaque, remote terminal, secure facility, distress signals
-  and underwater targets to the exocraft scanner.
+  ancient plaque, remote terminal, secure facility, distress signals,
+  sentinel pillar and underwater targets to the exocraft scanner.
   Make exocraft scanner tech available to the mech.
 ]]------------------------------------------------------------------------
-Mod_Version = 1.41
+Mod_Version = 1.5
 
 local Scan_Table = {
 	{
 		name  = 'VEHICLE_BUILDING_DEPOT',
 		scan  = {'DEPOT', 'TERMINAL'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'QUICKMENU/BUILDINGS.DEPOT.DDS',
+		icon  = 'QUICKMENU/BUILDINGS.DEPOT.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_DAMAGEDMACHINE',
 		scan  = {'DROPPOD'},
@@ -54,37 +54,43 @@ local Scan_Table = {
 		tech  = {'SUB_BINOCS'},
 		icon  = 'QUICKMENU/BUILDINGS.RUIN.DDS'
 	},{
-		name  = 'VEHICLE_BUILDING_OUTPOST', -- 'BUILDING_SHOP_L',
+		name  = 'VEHICLE_BUILDING_OUTPOST',
 		scan  = {'SHOP', 'OUTPOST'},
 		tech  = {'VEHICLE_SCAN1'},
 		icon  = 'QUICKMENU/BUILDINGS.OUTPOST.DDS'
-	-- },{
-		-- name  = 'UI_SETTLEMENT_LABEL',
-		-- scan  = {'SETTLEMENT'},
-		-- tech  = {'VEHICLE_SCAN2'},
-		-- icon  = 'BUILDABLE/STONE.BASIC_ROOF_TOP4.DDS',
 	},{
-		name  = 'INTRCT_CLAIM_BASE',
-		scan  = {'BASE'},
-		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'BUILDABLE/BUILDABLE.BASECOREFLAG.DDS',
-	},{
-		name  = 'UI_LIBRARY_ENTRANCE_DESC',
-		scan  = {'LIBRARY'},
-		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'UPDATE3/TREASUREPROD.STRANGEBOOK.DDS',
+		name  = 'BUILDING_OBSERVATORY_L',
+		scan  = {'RADIOTOWER', 'OBSERVATORY'},
+		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
+		icon  = 'BUILDABLE/BUILDABLE.VEHICLESUMMONER.FREIGHTER.DDS'
 	},{
 		name  = 'MECH_SCAN_FACT',
-		scan  = {'HARVESTER', 'RADIOTOWER', 'FACTORY', 'OBSERVATORY'},
-		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
+		scan  = {'HARVESTER', 'FACTORY'},
+		tech  = {'VEHICLE_SCAN1'},
 		icon  = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
 	},{
 		name  = 'MECH_SCAN_CRASH',
 		scan  = {'DISTRESS', 'DISTRESS_NPC', 'UW_SHIPCRASH', 'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
 		icon  = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
+	},{
+		name  = 'UI_LIBRARY_ENTRANCE_DESC',
+		scan  = {'LIBRARY'},
+		tech  = {'VEHICLE_SCAN2'},
+		icon  = 'UPDATE3/TREASUREPROD.STRANGEBOOK.DDS'
+	},{
+		name  = 'INTRCT_CLAIM_BASE',
+		scan  = {'BASE'},
+		tech  = {'VEHICLE_SCAN2'},
+		icon  = 'BUILDABLE/BUILDABLE.BASECOREFLAG.DDS'
+	},{
+		name  = 'UI_SENTINEL_HIVE_NAME',
+		scan  = {'DRONE_HIVE'},
+		tech  = {'VEHICLE_SCAN2'},
+		icon  = 'U4PRODUCTS/PRODUCT.WALKERBRAIN2.DDS'
 	}
 }
+
 function Scan_Table:GetEntry(ste)
 	local function getScanList(lst)
 		local exml = '<Property name="ScanList">'
@@ -130,13 +136,13 @@ local Scan_Events = {
 		class = 'Plaque',
 		osd   = 'SIGNAL_PLAQUE',
 		tip   = 'TIP_PLAQUE',
-	-- },{
-		-- event = 'SETTLEMENT',
-		-- btype = 'UnownedSettlement',
-		-- class = 'None',
-		-- osd   = 'UI_SETTLEMENT_LOCATED_OSD',
-		-- tip   = 'UI_SETTLEMENT_LOCATED',
-		-- mark  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SETTLEMENT.DDS',
+	},{
+		event = 'DRONE_HIVE',
+		class = 'DroneHive',
+		osd   = 'UI_DRONEHIVE_LOCATED_OSD',
+		mlbl  = 'UI_SENTINEL_HIVE_NAME',
+		micon = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS',
+		tip   = 'UI_DRONEHIVE_LOCATED',
 	},{
 		event = 'BASE',
 		class = 'Base',
@@ -161,6 +167,7 @@ local function NewScanEvent(scn)
 		<Property name="ForceBroken" value="False"/>
 		<Property name="ForceFixed" value="False"/>
 		<Property name="ForceOverridesAll" value="True"/>
+		<Property name="ForceOverrideEncounter" value=""/>
 		<Property name="IsCommunityPortalOverride" value="False"/>
 		<Property name="ClearForcedInteractionOnCompletion" value="False"/>
 		<Property name="BuildingPreventionRadius" value="0"/>
@@ -297,9 +304,9 @@ local function NewScanEvent(scn)
 		</Property>
 		<Property name="OSDMessage" value="]]..scn.osd..[["/>
 		<Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM"/>
-		<Property name="MarkerLabel" value=""/>
+		<Property name="MarkerLabel" value="]]..(scn.mlbl or '')..[["/>
 		<Property name="MarkerIcon" value="TkTextureResource.xml">
-			<Property name="Filename" value="]]..(scn.mark or '')..[["/>
+			<Property name="Filename" value="]]..(scn.micon or '')..[["/>
 		</Property>
 		<Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
 			<Property name="ScannerIconHighlightType" value="Diamond"/>
@@ -338,7 +345,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..Mod_Version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
+	NMS_VERSION			= 3.81,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
