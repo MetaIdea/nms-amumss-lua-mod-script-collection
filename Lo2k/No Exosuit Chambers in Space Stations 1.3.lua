@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Exosuit Chambers in Space Stations 1.2.pak", 
+["MOD_FILENAME"] 			= "No Exosuit Chambers in Space Stations 1.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.66",
+["NMS_VERSION"]				= "3.81",
 ["MOD_DESCRIPTION"]			= "This mod removes exosuit chambers in Space Stations",
 ["MODIFICATIONS"] 			= 
 	{
