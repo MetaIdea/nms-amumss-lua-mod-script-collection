@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "_Exosolar's Super Ship Teleporter.pak", 
 ["MOD_AUTHOR"]				= "Exosolar",
 ["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.73",
+["NMS_VERSION"]				= "3.81",
 ["MOD_DESCRIPTION"]			= "",
 ["MODIFICATIONS"] 			= 
 	{

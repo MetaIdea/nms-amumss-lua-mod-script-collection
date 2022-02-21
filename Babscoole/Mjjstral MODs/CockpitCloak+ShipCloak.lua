@@ -2,8 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "CockpitCloak+ShipCloak.pak",
 ["MOD_AUTHOR"]				= "Mod and toggle idea by Mjjstral, original concept Gmr_Leon",
-["Maintainer"]				= "Babscoole",
-["NMS_VERSION"]				= "3.73",
+["MOD_MAINTENANCE"]		= "Babscoole",
+["NMS_VERSION"]				= "3.81",
 ["DESCRIPTION"]				= "Makes the cockpit interior and ship invisible when flying",
 ["MODIFICATIONS"] 			= 
 	{

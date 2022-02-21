@@ -508,6 +508,8 @@ QUICK_ACTION_MENU =
               <Property name="ScanEventTable" value="Tutorial" />
               <Property name="DoAerialScan" value="True" />
               <Property name="UseMissionSeedForEvent" value="False" />
+              <Property name="StartDelay" value="6" />
+              <Property name="UseStartDelayWhenNoAerialScan" value="False" />				  
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -526,6 +528,7 @@ QUICK_ACTION_MENU =
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
+		  <Property name="ForceOverrideEncounter" value="" />		  
           <Property name="IsCommunityPortalOverride" value="False" />
           <Property name="ClearForcedInteractionOnCompletion" value="False" />
       	  <Property name="BuildingPreventionRadius" value="0" />
@@ -1424,7 +1427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]				= "3.75",
+["NMS_VERSION"]				= "3.81",
 ["MODIFICATIONS"] 			= 
 	{
 		{
