@@ -14,7 +14,7 @@ for i = 1,#NEWSECTIONS do
     ["ADD"] = 
 [[
 		<Property value="GcStatsBonus.xml">
-          <Property name="StatsTypes" value="GcStatsTypes.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
             <Property name="StatsType" value="Weapon_Laser_Damage" />
           </Property>
           <Property name="Bonus" value="]]..NEWSECTIONS[i][3]..[[" />
@@ -29,9 +29,9 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 				= "Multi-Tool Mining Speed Fix 1.6.pak", 
+  ["MOD_FILENAME"] 				= "Multi-Tool Mining Speed Fix 1.7.pak", 
   ["MOD_AUTHOR"]				= "Lo2k",
-  ["NMS_VERSION"]				= "3.74",
+  ["NMS_VERSION"]				= "3.81",
   ["MOD_DESCRIPTION"]			= "This mod really changes multi-tool efficiency",
   ["MODIFICATIONS"] 			= 
   {
