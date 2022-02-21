@@ -1,9 +1,12 @@
-GameVersion = "3_71"
+GameVersion = "3_81"
 ModName = "ExtendedExocraftAndShipScanner"
+
+VehicleScanTablePath = "METADATA\\SIMULATION\\SCANNING\\VEHICLESCANTABLE.MBIN"
+BuildingGlobalsPath = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 
 --Scanner lvl 0 = base scanner, lvl 1 = 1st uprgade, lvl 2 = 2nd uprgade
 ----Exocraft can now scan for TradePosts with scanner lvl2
-AddCrashedShipExoCraft = 
+AddCrashedShipExoCraft =
 [[
 	<Property value="GcVehicleScanTableEntry.xml">
 		<Property name="ScanList">
@@ -16,7 +19,7 @@ AddCrashedShipExoCraft =
 		<Property name="Icon" value="TkTextureResource.xml">
 			<Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.SHIP.DDS" />
 		</Property>
-	</Property> 
+	</Property>
 ]]
 
 --Exocraft can now scan for TradePosts with scanner lvl0
@@ -138,22 +141,22 @@ AddSettlementExoCraft =
 	</Property>
 ]]
 
---Exocraft can now scan for TradePosts with scanner lvl0
-AddTradingPostExoCraft =
-[[
-	<Property value="GcVehicleScanTableEntry.xml">
-		<Property name="ScanList">
-			<Property value="NMSString0x20.xml">
-				<Property name="Value" value="OUTPOST" />
-			</Property>
-		</Property>
-		<Property name="Name" value="BUILDING_OUTPOST_L" />
-		<Property name="RequiredTech" value="VEHICLE_SCAN" />
-		<Property name="Icon" value="TkTextureResource.xml">
-			<Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.DEPOTRAID.DDS" />
-		</Property>
-	</Property>
-]]
+--Exocraft can now scan for TradePosts with scanner lvl0 (has been added into vanilla)
+-- AddTradingPostExoCraft =
+-- [[
+-- 	<Property value="GcVehicleScanTableEntry.xml">
+-- 		<Property name="ScanList">
+-- 			<Property value="NMSString0x20.xml">
+-- 				<Property name="Value" value="OUTPOST" />
+-- 			</Property>
+-- 		</Property>
+-- 		<Property name="Name" value="BUILDING_OUTPOST_L" />
+-- 		<Property name="RequiredTech" value="VEHICLE_SCAN" />
+-- 		<Property name="Icon" value="TkTextureResource.xml">
+-- 			<Property name="Filename" value="TEXTURES\UI\HUD\ICONS\MISSIONS\MISSION.DEPOTRAID.DDS" />
+-- 		</Property>
+-- 	</Property>
+-- ]]
 
 -- Exocraft can now scan for Portal with scanner lvl0
 AddPortalExoCraft =
@@ -349,24 +352,24 @@ AddPortalEventTableVehicles =
   </Property>
 ]]
 
+-- TODO: add portal scan (if possible)
 AddedScanEventsExoCraft = AddCrashedShipExoCraft..AddCrashedFreighterExoCraft..AddDistressedNPCExoCraft..AddFactoryExoCraft..
-				AddHarvesterExoCraft..AddObservatoryExoCraft..AddRadioTowerExoCraft..AddSettlementExoCraft..AddTradingPostExoCraft
-				-- ..AddPortalExoCraft
+				AddHarvesterExoCraft..AddObservatoryExoCraft..AddRadioTowerExoCraft..AddSettlementExoCraft
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
-["MOD_DESCRIPTION"]			= "",   
+["MOD_DESCRIPTION"]			= "",
 ["MOD_AUTHOR"]				= "Jackty89",
 ["NMS_VERSION"]				= GameVersion,
-["MODIFICATIONS"] 			= 
+["MODIFICATIONS"] 			=
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] 	=
 			{
-				{ 
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCANNING\VEHICLESCANTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+				{
+					["MBIN_FILE_SOURCE"] 	= VehicleScanTablePath,
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"VehicleScanTable"},
@@ -375,9 +378,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						}
           }
 				},
-        { 
-					["MBIN_FILE_SOURCE"] 	= "GCBUILDINGGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+        {
+					["MBIN_FILE_SOURCE"] 	= BuildingGlobalsPath,
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
               ["VALUE_CHANGE_TABLE"] =
@@ -389,17 +392,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						}
           }
 				}
-				-- {
-				-- 	["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCANNING\SCANEVENTTABLEVEHICLE.MBIN",
-				-- 	["EXML_CHANGE_TABLE"] 	= 
-				-- 	{
-				-- 		{
-				-- 			["PRECEDING_KEY_WORDS"] = {"Events"},
-				-- 			["LINE_OFFSET"] 		= "+0",
-				-- 			["ADD"]	= AddPortalEventTableVehicles
-				-- 		}
-				-- 	}
-        -- }
       }
     }
   }
