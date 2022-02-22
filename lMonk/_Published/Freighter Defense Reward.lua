@@ -5,7 +5,7 @@ local desc = [[
   * (the lists are non-random because a bug causes them to misbehave)
 ]]------------------------------------------------------------------------
 
-Mod_Version = 1.08
+Mod_Version = 1.09
 
 local F_ = {}
 F_.TableItemSingle = function(item, data, reward)
@@ -34,12 +34,10 @@ F_.Product = function(item)
 	return F_.TableItemSingle(item, exml, 'GcRewardSpecificProduct.xml')
 end
 F_.Substance = function(item)
-	local exml = [[
-		<Property name="Default" value="GcDefaultMissionProduct.xml">
-			<Property name="Product" value="GcProductTableEnum.xml">
-				<Property name="gcproducttableEnum" value="None" />
-			</Property>
-		</Property>
+	local exml = [[	
+		<Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
+			<Property name="DefaultSubstanceType" value="None"/>
+		</Property>	
 		<Property name="ID" value="]]..item.id..[[" />
 		<Property name="HardModeMultiplier" value="1" />
 		<Property name="DisableMultiplier" value="False" />
@@ -186,7 +184,7 @@ local Rewards = {
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Freighter Defense Rewards.'..Mod_Version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
+	NMS_VERSION			= 3.81,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
