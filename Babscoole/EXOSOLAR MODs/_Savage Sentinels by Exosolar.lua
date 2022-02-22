@@ -21,13 +21,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxNumPatrolDrones", 2},
 								{"UnderwaterPerceptionMargin", 2},
 								{"CombatWaveSpawnTime", 15},
-								{"DroneMiningValueActivate", 100},
-								{"DroneCrimeWitnessLimit", 3},
-								{"DroneCrimeProximityMultiplier", 3},
-								{"DroneHealth", 1000},
-								{"CorruptedDroneHealth", 3500},
-								{"QuadHealth", 4000},
-								{"WalkerHealth", 24000},
 								{"WalkerEnergyLength", 20},
 								{"WalkerEnergyMinAlpha", 0.1},
 								{"RobotHUDMarkerRange", 120},
@@ -44,7 +37,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"QuadAttackTurnAngleMin", 20},								
 								{"QuadAttackAngle", 10},
 								{"QuadChargeTargetLockPercent", 0.8},
-								{"QuadRepairChargeTime", 4},
 								{"QuadJumpBackRange", 16},
 								{"QuadPounceMinRange", 7},
 								{"QuadPounceMinTimeBetweenPounces", 6},
@@ -120,18 +112,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"DronePatrolHonkTime", 1.2},
 								{"DronePatrolHonkProbability", 7},
 								{"DroneAlertTime", 3},		
-								{"AttackFireRate", 0.025},
-								{"AttackTimeout", 12},
-								{"AttackNumShotsMin", 1},		
-								{"AttackNumShotsMax", 1},
-								{"AttackFireTimeMin", 0.065},
-								{"AttackFireTimeMax", 0.065},
-								{"AttackAngle", 30},	
-								{"AttackRange", 90},		
+								{"AttackAngle", 30},			
 								{"AttackActivateTime", 1},
 								{"AttackBobAmount", 0.5},								
 								{"AttackBobRotation", 0.05},
-								{"AttackMoveDistanceMin", 0.1},
 								{"AttackMoveMinChoiceTime", 0.05},	
 								{"AttackMoveAngle", 1},
 								{"AttackMaxDistanceFromAlert", 120},
@@ -149,7 +133,111 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"EngineDirSpeedMin", 60},
 								{"EngineDirAngleMax", 0}
 							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONE.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth","1500",},
+								{"HealthIncreasePerLevel","1400",},
+								{"RepairTime","3",},
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONEARMOURED.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth","2000",},
+								{"HealthIncreasePerLevel","2100",},
+								{"RepairTime","3",},
+							}
 						},	
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONEMEDIC.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth","2000",},
+								{"HealthIncreasePerLevel","1400",},
+								{"RepairTime","1.5",},
+							}
+						},	
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/DRONESUMMONER.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth","2000",},
+								{"HealthIncreasePerLevel","2100",},
+								{"RepairTime","1.5",},
+							}
+						},	
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/CORRUPTEDDRONE.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth","3500",},
+								{"HealthIncreasePerLevel","4500",},
+								{"RepairTime","3",},
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/QUADRUPED.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth","5200",},
+								{"HealthIncreasePerLevel","8500",},
+								{"RepairTime","5",},
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/SENTINELMECH.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth","16000",},
+								{"HealthIncreasePerLevel","12000",},
+								{"RepairTime","7",},
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Resource","MODELS/COMMON/ROBOTS/WALKER.SCENE.MBIN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"BaseHealth","24000",},
+								{"HealthIncreasePerLevel","25000",},
+								{"RepairTime","7",},
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Id","SENMECHGUN",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxRange","70",},
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Id","SENMECHCANON",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxRange","100",},
+							}
+						},
+						{						
+							["SPECIAL_KEY_WORDS"] = {"Id","MECHFLAME",},
+							["INTEGER_TO_FLOAT"] = "FORCE",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxRange","40",},
+							}
+						},						
 					}
 				},
 			}
