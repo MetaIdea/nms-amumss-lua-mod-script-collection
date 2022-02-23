@@ -1,8 +1,8 @@
 Author = "alchemist"
 ModName = "GPS"
 BaseDescription = [[Better scanning]]
-GameVersion = "3-81"
-ModVersion = "1-2-0"
+GameVersion = "3-82"
+ModVersion = "1-2-1"
 
 --[[
 
@@ -3556,7 +3556,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="RequiresScanEvent" value=""/>
             <Property name="Options">
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_DRONEHIVE_L"/>
+                <Property name="Name" value="UI_SENTINEL_HIVE_NAME"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value="C_ALSCAN_MD"/>
@@ -3601,7 +3601,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_DRONEHIVE_L"/>
+                <Property name="Name" value="UI_SENTINEL_HIVE_NAME"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value=""/>
@@ -10101,7 +10101,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="RequiresScanEvent" value=""/>
             <Property name="Options">
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_DRONEHIVE_L"/>
+                <Property name="Name" value="UI_SENTINEL_HIVE_NAME"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value="C_ALSCAN_MD"/>
@@ -10146,7 +10146,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="BUILDING_DRONEHIVE_L"/>
+                <Property name="Name" value="UI_SENTINEL_HIVE_NAME"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
                 <Property name="Cost" value=""/>
@@ -44256,7 +44256,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="TechShopType" value="GcTechnologyCategory.xml">
         <Property name="TechnologyCategory" value="All"/>
       </Property>
-      <Property name="OSDMessage" value="SIGNAL_DRONEHIVE"/>
+      <Property name="OSDMessage" value="UI_DRONEHIVE_LOCATED_OSD"/>
       <Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM"/>
       <Property name="MarkerLabel" value=""/>
       <Property name="MarkerIcon" value="TkTextureResource.xml">
@@ -44275,7 +44275,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="TooltipTime" value="10"/>
       <Property name="TooltipRepeats" value="False"/>
       <Property name="ShowEndTooltip" value="True"/>
-      <Property name="TooltipMessage" value="TIP_DRONEHIVE"/>
+      <Property name="TooltipMessage" value="UI_DRONEHIVE_LOCATED"/>
       <Property name="ResourceOverride" value="GcResourceElement.xml">
         <Property name="Filename" value=""/>
         <Property name="Seed" value="GcSeed.xml">
@@ -45372,7 +45372,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45384,7 +45384,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45396,7 +45396,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45408,7 +45408,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45420,7 +45420,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45432,7 +45432,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45453,7 +45453,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45465,7 +45465,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45477,7 +45477,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45489,7 +45489,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45501,7 +45501,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45513,7 +45513,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45534,7 +45534,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45546,7 +45546,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45558,7 +45558,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45570,7 +45570,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45582,7 +45582,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45594,7 +45594,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45615,7 +45615,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45627,7 +45627,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45639,7 +45639,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45651,7 +45651,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45663,7 +45663,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45684,7 +45684,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45696,7 +45696,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45708,7 +45708,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45720,7 +45720,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45741,7 +45741,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45762,7 +45762,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45783,7 +45783,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45804,7 +45804,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45825,7 +45825,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45846,7 +45846,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45867,7 +45867,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45888,7 +45888,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45909,7 +45909,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45930,7 +45930,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45951,7 +45951,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45972,7 +45972,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -45993,7 +45993,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46014,7 +46014,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46035,7 +46035,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46056,7 +46056,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46077,7 +46077,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46098,7 +46098,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46119,7 +46119,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46140,7 +46140,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46161,7 +46161,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46182,7 +46182,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46203,7 +46203,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46224,7 +46224,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46245,7 +46245,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46266,7 +46266,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46287,7 +46287,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46308,7 +46308,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46329,7 +46329,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46350,7 +46350,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46371,7 +46371,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46392,7 +46392,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46413,7 +46413,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46434,7 +46434,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46455,7 +46455,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46476,7 +46476,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46497,7 +46497,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46518,7 +46518,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46539,7 +46539,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46560,7 +46560,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46581,7 +46581,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46602,7 +46602,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46623,7 +46623,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46644,7 +46644,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46665,7 +46665,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46686,7 +46686,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46707,7 +46707,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46728,7 +46728,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46749,7 +46749,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46770,7 +46770,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46791,7 +46791,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46812,7 +46812,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46833,7 +46833,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46854,7 +46854,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46875,7 +46875,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46896,7 +46896,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46917,7 +46917,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46938,7 +46938,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="False"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>
@@ -46959,7 +46959,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ScanEventTable" value="Planet"/>
               <Property name="DoAerialScan" value="True"/>
               <Property name="UseMissionSeedForEvent" value="False"/>
-              <Property name="StartDelay" value="0"/>
+              <Property name="StartDelay" value="6"/>
               <Property name="UseStartDelayWhenNoAerialScan" value="False"/>
             </Property>
             <Property name="LabelID" value=""/>

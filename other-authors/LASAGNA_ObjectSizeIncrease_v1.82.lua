@@ -23,7 +23,7 @@ PLANET_LOD_MULTIPLIER = 10		--planet lod distance multiplier
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_ObjectSizeIncrease_v1.81.pak",
+["MOD_FILENAME"] 			= "LASAGNA_ObjectSizeIncrease_v1.82.pak",
 ["MOD_AUTHOR"]				= "Mjjstral_Modified_By_Lllasagna_With_InsaneRuffles_And_trevix_+_Babscoole_Script",
 ["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 

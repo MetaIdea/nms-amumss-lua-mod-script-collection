@@ -2,8 +2,8 @@
 Author = "alchemist"
 ModName = "GPS"
 BaseDescription = [[Better scanning]]
-GameVersion = "3-81"
-ModVersion = "1-2-0"
+GameVersion = "3-82"
+ModVersion = "1-2-1"
 
 -- =========
 -- CONSTANTS

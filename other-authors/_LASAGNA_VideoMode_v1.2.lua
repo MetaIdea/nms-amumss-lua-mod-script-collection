@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_VideoMode_v1.1.pak",
+["MOD_FILENAME"] 			= "_LASAGNA_VideoMode_v1.2.pak",
 ["MOD_AUTHOR"]				= "Lasagna_original_idea_by_Rohtang13",
 ["NMS_VERSION"]				= "3.70",
 ["MODIFICATIONS"] 			= 
