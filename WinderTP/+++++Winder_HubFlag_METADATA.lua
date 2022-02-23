@@ -25,6 +25,10 @@ OVERRIDE_INACTIVE = true 	-- OVERWRITES BASEBUILDINGTABLE InactiveModel ENTRIES 
 							
 FREE_SPECIALS = 	false	-- INCLUDES WDSPEC OBJECTS IN DEFAULT SAVES
 							-- ELSE WDSPEC OBJECTS NEED TO BE PURCHASED IN SPECIAL SHOP
+							
+BUILD_ANYWHERE = 	false	-- ALLOWS ALL EUCLI-EA OBJECTS TO BE BUILT ANYWHERE
+							-- BY SETTING BuildableOnFreighter & BuildableOnPlanet TO "True"
+							-- ANY OBJECTS BUILT OUTSIDE BASE PARAMETERS WILL NOT BE INCLUDED IN THE BASE SECTION OF THE SAVE FILE
 
 SNAPPING_DISTANCE = "0.05"	-- OBJECT SNAPPING DISTANCE MULTIPLIER
 
@@ -1973,7 +1977,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="Type" value="GcInteractionType.xml">
         <Property name="InteractionType" value="200" />
       </Property>
-      <Property name="Category" value="GcAlienPuzzleCategory.xml">
+      <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
         <Property name="AlienPuzzleCategory" value="Default" />
       </Property>
       <Property name="AdditionalOptions" value="None" />
@@ -2043,7 +2047,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="Type" value="GcInteractionType.xml">
         <Property name="InteractionType" value="201" />
       </Property>
-      <Property name="Category" value="GcAlienPuzzleCategory.xml">
+      <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
         <Property name="AlienPuzzleCategory" value="Default" />
       </Property>
       <Property name="AdditionalOptions" value="None" />
@@ -2176,7 +2180,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="Type" value="GcInteractionType.xml">
         <Property name="InteractionType" value="201" />
       </Property>
-      <Property name="Category" value="GcAlienPuzzleCategory.xml">
+      <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
         <Property name="AlienPuzzleCategory" value="Default" />
       </Property>
       <Property name="AdditionalOptions" value="None" />
@@ -61671,7 +61675,7 @@ end
 function GetBaseBuildingObject(ID, PLACEMENT, STYLE, SNAP, MODEL, DTYPE, PLACE, ISDECOR, BIOME, FREIGHTER, PLANET, CHECKCOLL, COLLSCALE, ENCOLL, STACK, SCALEABLE, GROUPS, STORAGE, COLOUR, MAT, RAD, TERRAIN, T_SHAPE, T_BASE, T_TOP, T_SCALE, SEAL, POWER, SNAP_SHORT)
 GROUP_INJECT = ""
 POWER_INJECT = ""
-POWER_INJECT = _ENV.HUBFLAG_LINKGRID[POWER]
+POWER_INJECT = HUBFLAG_LINKGRID[POWER]
 SNAP_INJECT = ""
 TOUCH_INJECT = ""
 if SNAP == "" then SNAP_INJECT = MODEL 
@@ -61679,7 +61683,11 @@ else SNAP_INJECT = SNAP
 end
 
 INACTIVE = ""
-if _ENV.OVERRIDE_INACTIVE then INACTIVE = MODEL 
+if OVERRIDE_INACTIVE then INACTIVE = MODEL end
+
+if BUILD_ANYWHERE then
+	FREIGHTER = "True"
+	PLANET = "True"
 end
 
 if ENCOLL == "True" then TOUCH_INJECT = "False" 
@@ -61689,7 +61697,7 @@ end
 GROUPS_TEMP = {}
 for m,n in pairs(GROUPS) do
 	TOP_GROUP = ""
-	for o,p in pairs(_ENV.HUBFLAG_GROUPS) do
+	for o,p in pairs(HUBFLAG_GROUPS) do
 		for q,r in pairs(p["SubGroups"]) do
 			if n == r["ID"] then TOP_GROUP = p["ID"] 
 			end 
@@ -61710,6 +61718,7 @@ for m,n in pairs(GROUPS) do
 	table.insert(GROUPS_TEMP, TOP_GROUP)
 	end
 end
+
 return [[
     <Property value="GcBaseBuildingEntry.xml">
       <Property name="ID" value="]] .. ID .. [[" />
@@ -61722,18 +61731,15 @@ return [[
       <Property name="PlacementScene" value="TkModelResource.xml">
         <Property name="Filename" value="]] .. PLACEMENT .. [[" />
       </Property>
-      <Property name="SnapPoints" value="TkModelResource.xml">
-        <Property name="Filename" value="" />
-        <!--Property name="Filename" value="]] .. SNAP_INJECT .. [[" /-->
+      <!--Property name="SnapPoints" value="TkModelResource.xml">
+        <Property name="Filename" value="]] .. SNAP_INJECT .. [[" />
       </Property>
       <Property name="Model" value="TkModelResource.xml">
-        <Property name="Filename" value="" />
-        <!--Property name="Filename" value="]] .. MODEL .. [[" /-->
+        <Property name="Filename" value="]] .. MODEL .. [[" />
       </Property>
       <Property name="InactiveModel" value="TkModelResource.xml">
-        <Property name="Filename" value="" />
-        <!--Property name="Filename" value="]] .. INACTIVE .. [[" /-->
-      </Property>
+        <Property name="Filename" value="]] .. INACTIVE .. [[" />
+      </Property-->
       <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
         <Property name="BaseBuildingDecorationType" value="]] .. DTYPE .. [[" />
       </Property>
@@ -61755,7 +61761,7 @@ return [[
       <Property name="PlanetBaseLimit" value="0" />
       <Property name="FreighterBaseLimit" value="0" />
       <Property name="CheckPlaceholderCollision" value="]] .. CHECKCOLL .. [[" />
-      <Property name="CollisionScale" value="]] .. COLLSCALE .. [[" />
+      <!--Property name="CollisionScale" value="]] .. COLLSCALE .. [[" /-->
       <Property name="EnableCollision" value="]] .. ENCOLL .. [[" />
       <Property name="OptionalPhysics" value="]] .. TOUCH_INJECT .. [[" />
       <Property name="CanPlaceOnItself" value="]] .. STACK .. [[" />
@@ -61772,13 +61778,14 @@ return [[
       <Property name="CanChangeColour" value="]] .. COLOUR .. [[" />
       <Property name="CanChangeMaterial" value="]] .. MAT .. [[" />
       <Property name="CanPickUp" value="False" />
-      <Property name="ScanRadius" value="0" />
+      <Property name="ShowInBuildMenu" value="True" />
+      <Property name="CompositePartObjectIDs" />
       <Property name="RemovesAttachedDecoration" value="]] .. RAD .. [[" />
       <Property name="EditsTerrain" value="]] .. TERRAIN .. [[" />
       <Property name="BaseTerrainEditShape" value="]] .. T_SHAPE .. [[" />
-      <Property name="TerrainEditBaseYOffset" value="]] .. T_BASE .. [[" />
+      <!--Property name="TerrainEditBaseYOffset" value="]] .. T_BASE .. [[" />
       <Property name="TerrainEditTopYOffset" value="]] .. T_TOP .. [[" />
-      <Property name="TerrainEditBoundsScalar" value="]] .. T_SCALE .. [[" />
+      <Property name="TerrainEditBoundsScalar" value="]] .. T_SCALE .. [[" /-->
       <Property name="IsSealed" value="]] .. SEAL .. [[" />
       <Property name="CloseMenuAfterBuild" value="False" />
       <Property name="LinkGridData" value="GcBaseLinkGridData.xml">
@@ -61903,7 +61910,7 @@ end
 
 function GetBaseBuildingPart(ID, STYLE, MODEL, INACTIVE)
 INACTIVE = ""
-if SHOW then INACTIVE = MODEL 
+if OVERRIDE_INACTIVE then INACTIVE = MODEL 
 end
 return [[
     <Property value="GcBaseBuildingPart.xml">
