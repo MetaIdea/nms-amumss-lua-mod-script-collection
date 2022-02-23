@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   = 
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RECIPE_LAND1"},
+                            ["SPECIAL_KEY_WORDS"] = {"RecipeType", "RECIPE_LAND1"},
                             ["PRECEDING_KEY_WORDS"] = "Ingredients",
                             ["VALUE_CHANGE_TABLE"]  =   
                             {
@@ -22,7 +22,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RECIPE_LAND3"},
+                            ["SPECIAL_KEY_WORDS"] = {"RecipeType", "RECIPE_LAND3"},
                             ["PRECEDING_KEY_WORDS"] = "Result",
                             ["VALUE_CHANGE_TABLE"]  =   
                             {
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RECIPE_PLANT_DUST"},
+                            ["SPECIAL_KEY_WORDS"] = {"RecipeType", "RECIPE_PLANT_DUST"},
                             ["PRECEDING_KEY_WORDS"] = "Result",
                             ["VALUE_CHANGE_TABLE"]  =   
                             {
@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RECIPE_PLANT_HOT"},
+                            ["SPECIAL_KEY_WORDS"] = {"RecipeType", "RECIPE_PLANT_HOT"},
                             ["PRECEDING_KEY_WORDS"] = "Result",
                             ["VALUE_CHANGE_TABLE"]  =   
                             {
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "RECIPE_PLANT_LUSH"},
+                            ["SPECIAL_KEY_WORDS"] = {"RecipeType", "RECIPE_PLANT_LUSH"},
                             ["PRECEDING_KEY_WORDS"] = "Result",
                             ["VALUE_CHANGE_TABLE"]  =   
                             {
