@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] 			= "ExosuitTech48Slots.pak",
-  ["MOD_DESCRIPTION"]		= "Allows the exosuit technology tab to be upgraded to 48 slots.",
+  ["MOD_DESCRIPTION"]		= "Enables the exosuit technology tab to be upgraded to 48 slots.",
   ["MOD_AUTHOR"]			= "RealGenuineHuman",
-  ["NMS_VERSION"]			= "1.81",
+  ["NMS_VERSION"]			= "3.82",
   ["MODIFICATIONS"] 		=
 	{
 		{

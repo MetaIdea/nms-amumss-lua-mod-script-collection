@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_ObjectDensityIncrease_v1.81.pak",
+["MOD_FILENAME"] 			= "LASAGNA_ObjectDensityIncrease_v1.82.pak",
 ["MOD_AUTHOR"]				= "Mjjstral_Modified_By_Lllasagna",
 ["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 
