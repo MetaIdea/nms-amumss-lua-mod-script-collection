@@ -130,7 +130,7 @@ SKIPTUT =
                     </Property>
                   </Property>
                   <Property name="DisplayTechId" value="" />
-                  <Property name="Setname" value="" />
+                  <Property name="SetName" value="" />
                   <Property name="Silent" value="True" />
                 </Property>
                 <Property name="LabelID" value="" />
