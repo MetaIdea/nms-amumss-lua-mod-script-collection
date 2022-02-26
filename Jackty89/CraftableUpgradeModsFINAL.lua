@@ -1,4 +1,4 @@
-GameVersion = "3_80"
+GameVersion = "3_82"
 NexusModName = "CraftableUpgradeMods"
 Author = "jackty89"
 
@@ -129,7 +129,8 @@ GeneralUpgradeMods =
             {"U_SCANNER", "4", "1"},
             {"U_GRENADE", "4", "1"},
             {"U_SHOTGUN", "4", "1"},
-            {"U_SMG", "4", "1"}
+            {"U_SMG", "4", "1"},
+            {"U_CANNON", "4", "1"}
         }
     },
     --ExoCraftMods
@@ -191,6 +192,7 @@ XClassMods =
             {"U_HYPERX", "", "", "2"},
             {"U_SHIPSHIELDX", "", "", "2"},
             {"U_PULSEX", "", "", "2"},
+            {"U_LAUNCHX", "", "", "2"},
 
             {"U_SHIPGUNX", "", "", "3"},
             {"U_SHIPMINIX", "", "", "3"},
@@ -204,8 +206,13 @@ XClassMods =
             {"U_SMGX", "", "", "4"},
 
             {"U_RAILX", "", "", "5"},
-            {"U_BOLTX", "", "", "5"},
-            {"U_TGRENADEX", "", "", "5"}
+            {"U_BOLTX", "", "", "5"},            
+            {"U_TGRENADEX", "", "", "5"},
+            {"U_GRENADEX", "", "", "5"},
+            {"U_CANNONX", "", "", "5"},
+
+            {"U_SENTGUN", "", "", "6"},
+            {"U_SENTSUIT", "", "", "6"}
         }
     }
 }
@@ -626,7 +633,6 @@ function GetStatLevelData(DeployBase, UpgradeNumber)
             {
                 {"Freighter_Hyperdrive_JumpDistance","50","100", "MaxIsUncommon"}
             }
-
         end
     elseif DeployBase=="SPEED" then
         if UpgradeNumber == 4 then
@@ -1076,8 +1082,6 @@ for i = 1, #XClassMods do
 
     local OldModListNumber = ""
 
-    -- local List = {}
-
     for j = 1, #UpgradeMods do
         local UpgradeMod = UpgradeMods[j]
         local ModID = UpgradeMod[1]
@@ -1143,7 +1147,6 @@ for i = 1, #AddNewLanguatext do
                 }
             }
         }
-
         ChangesToLangaugeTables[#ChangesToLangaugeTables + 1] = temp_table
     end
 end
@@ -1153,36 +1156,27 @@ GetAllIDs(CustomFreighterModData)
 GetAllIDs(GeneralUpgradeMods)
 GetAllIDs(BioShipMods)
 
-local MassChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]
--- local ChangesToProductTable_temp = {}
-
 for i = 1, #IdArray do
-
     local ProdModID = IdArray[i][1]
-
     local RequirementsArray = IdArray[i][2][1]
     local RecipeCost = IdArray[i][2][2][1]
 
     local RequirementsString = CreateRequirementsString(RequirementsArray)
-    -- local massadd = ""
-    local ChangesToProductTable_temp
 
-    ChangesToProductTable_temp =
+    ChangesToProductTable[#ChangesToProductTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID,"CraftAmountMultiplier","1"},
         ["LINE_OFFSET"] 	= "+1",
         ["REMOVE"]	= "LINE"
     }
-    ChangesToProductTable[#ChangesToProductTable + 1] = ChangesToProductTable_temp
 
-    ChangesToProductTable_temp =
+    ChangesToProductTable[#ChangesToProductTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID,"CraftAmountMultiplier","1"},
         ["ADD"] = RequirementsString
     }
-    ChangesToProductTable[#ChangesToProductTable + 1] = ChangesToProductTable_temp
 
-    ChangesToProductTable_temp =
+    ChangesToProductTable[#ChangesToProductTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID},
         ["VALUE_CHANGE_TABLE"] 	=
@@ -1191,31 +1185,4 @@ for i = 1, #IdArray do
             {"RecipeCost", RecipeCost}
         }
     }
-    ChangesToProductTable[#ChangesToProductTable +1] = ChangesToProductTable_temp
-
-
-    -- massadd =
-    -- {
-    --     {
-    --         ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID,"CraftAmountMultiplier","1"},
-    --         ["LINE_OFFSET"] 	= "+1",
-    --         ["REMOVE"]	= "LINE"
-    --     },
-    --     {
-    --         ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID,"CraftAmountMultiplier","1"},
-    --         ["ADD"] = RequirementsString
-    --     },
-    --     {
-    --         ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID},
-    --         ["VALUE_CHANGE_TABLE"] 	=
-    --         {
-    --             {"IsCraftable", IsCraftableToTrue},
-    --             {"RecipeCost", RecipeCost}
-    --         }
-    --     }
-    -- }
-
-    -- if i == #IdArray then
-    --     MassChangesToProductTable[#MassChangesToProductTable + 1] = massadd
-    -- end
 end
