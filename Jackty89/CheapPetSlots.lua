@@ -6,11 +6,11 @@ CostTablePath = "METADATA\\REALITY\\TABLES\\COSTTABLE.MBIN"
 CostString = [[
     <Property name="Costs">
         <Property value="25" />
-        <Property value="25" />
         <Property value="50" />
-        <Property value="250" />
-        <Property value="500" />
-        <Property value="1000" />
+        <Property value="75" />
+        <Property value="100" />
+        <Property value="125" />
+        <Property value="150" />
     </Property>
 ]]
 
