@@ -1,0 +1,47 @@
+GameVersion = "3_82"
+ModName = "CheapPetSlots"
+Author = "Jackty89"
+
+CostTablePath = "METADATA\\REALITY\\TABLES\\COSTTABLE.MBIN"
+CostString = [[
+    <Property name="Costs">
+        <Property value="25" />
+        <Property value="25" />
+        <Property value="50" />
+        <Property value="250" />
+        <Property value="500" />
+        <Property value="1000" />
+    </Property>
+]]
+
+NMS_MOD_DEFINITION_CONTAINER =
+{
+    ["MOD_FILENAME"]            = ModName..GameVersion..".pak",
+    ["MOD_DESCRIPTION"]         = ModName,
+    ["MOD_AUTHOR"]              = Author,
+    ["NMS_VERSION"]             = GameVersion,
+    ["MODIFICATIONS"]           =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] 	=
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]    = CostTablePath,
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Costs"},
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_PET_SLOT"},
+                            ["REMOVE"]              = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Id", "C_PET_SLOT", "Cost", "GcCostMoneyList.xml"},
+                            ["ADD"]                 = CostString
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
