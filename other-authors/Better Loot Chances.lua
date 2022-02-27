@@ -16,13 +16,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/REWARDTABLE.MBIN", -- Location of the File
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PercentageChance",  LOOT_MULTIPLIER}
-							}
-						}
+                            ["VALUE_MATCH_OPTIONS"]     = "<",
+                            ["VALUE_MATCH"]             = "100",
+                            ["REPLACE_TYPE"]             = "ALL",
+                            ["VALUE_CHANGE_TABLE"]         = 
+                            {
+                                {"PercentageChance",  "100"}
+                            }
 					}
 				}
 			}
