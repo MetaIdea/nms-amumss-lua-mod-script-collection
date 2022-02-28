@@ -225,7 +225,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxSpeed",						"400"},
+								{"MaxSpeed",						"400"},   -- DO NOT EDIT THIS LINE
 							}
 						},						
 						{
