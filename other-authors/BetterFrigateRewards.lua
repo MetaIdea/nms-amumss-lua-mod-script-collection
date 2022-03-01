@@ -62,8 +62,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 -----------------------------------------------------------------------------------------------------
 
 						{
-							["SPECIAL_KEY_WORDS"]	= {"gcproducttableEnum", "None"},
-							["SECTION_UP"]			= 2,
+							["SPECIAL_KEY_WORDS"]	= {"DefaultSubstanceType", "None"},
+							["SECTION_UP"]			= 1,
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
