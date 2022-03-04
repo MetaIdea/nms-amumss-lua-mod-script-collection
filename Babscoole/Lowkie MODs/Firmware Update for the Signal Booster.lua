@@ -1,5 +1,5 @@
-NMSVersion = "3.81"
-MODVersion = "3.81"
+NMSVersion = "3.84"
+MODVersion = "3.84"
 
  All_Request_Leave =[[
         <Property value="GcAlienPuzzleOption.xml">
@@ -167,14 +167,13 @@ return[[          <Property value="GcAlienPuzzleOption.xml">
       <Property name="Options">
       ]]
  end
- 
 
 --Changes for the Rewards table
 REWARD1 = GetReward ("CRASHED_SHIP", "DISTRESS")
 REWARD2 = GetReward ("TOOL_LOCATION", "SHOP")
 REWARD3 = GetReward ("PLANET_ARCHIVES", "LIBRARY")
 
-REWARDSET = REWARD1..REWARD2..REWARD3   
+REWARDSET = REWARD1..REWARD2..REWARD3
 
 --First set of options only 4 options per set allowed
 Menu1_Option1 = GetPuzzleOption("UI_PORTAL_OPT", "REVEAL_PORTAL")
@@ -192,15 +191,20 @@ Menu2_Option3 = GetPuzzleOption("Planetary Archives", "PLANET_ARCHIVES")
 More_Options2 = GetMorePuzzleOption("?ATOMIC_SCANNER")
 Menu2_Options = Menu2_Option1..Menu2_Option2..Menu2_Option3..More_Options2
 
---Third set of options, also get a close option
+--Third set of options
 Menu3_Option1 = GetPuzzleOption("Crashed Freighter", "SHOW_CRASHSITE") 
 Menu3_Option2 = GetPuzzleOption("Observatory", "SEC_SCN_OBS")
 Menu3_Option3 = GetPuzzleOption("NAV_DATA_OPTC", "RANDOM_SCAN_C")
-Menu3_Options = Menu3_Option1..Menu3_Option2..Menu3_Option3..All_Request_Leave
+More_Options3 = GetMorePuzzleOption("?NUCLEAR_SCANNER")
+Menu3_Options = Menu3_Option1..Menu3_Option2..Menu3_Option3..More_Options3
+
+--Fourth set of options, also get a close option
+Menu4_Option1 = GetPuzzleOption("Sentinel Pillar", "R_SHOW_HIVEONLY") 
+Menu4_Options = Menu4_Option1..All_Request_Leave
 
 --Put all the options together.  
 ALL_PUZZLE_UPDATES = [[      <Property name="Options">
-]]..Menu1_Options..Menu2_Options..Menu3_Options
+]]..Menu1_Options..Menu2_Options..Menu3_Options..Menu4_Options
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -256,7 +260,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =   REWARDSET,	
                         },
                     },
-                },                               
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"METADATA\SIMULATION\SCANNING\SCANEVENTTABLEPLANET.MBIN"},
+                    ["EXML_CHANGE_TABLE"] = 
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","DRONE_HIVE",},														
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ReplaceEventIfAlreadyActive",	"True"},
+								{"InterstellarOSDMessage", "SCANEVENT_ANOTHER_SYSTEM"},
+							}	
+                        },						
+                    },
+                },				
 			}
         }
 	}
