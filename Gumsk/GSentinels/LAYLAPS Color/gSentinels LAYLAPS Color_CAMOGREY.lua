@@ -1,7 +1,7 @@
-Color = "RED"
+Color = "CAMOGREY"
 RedAmount = "1.0"
-GreenAmount = "0"
-BlueAmount = "0"
+GreenAmount = "1.0"
+BlueAmount = "1.0"
 
 
 Author = "Gumsk"
