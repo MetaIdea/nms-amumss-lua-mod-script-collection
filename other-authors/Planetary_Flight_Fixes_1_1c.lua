@@ -10,9 +10,9 @@ BOOSTMULT = 1.5		-- Multiplier for strength of the boost acceleration; Set this 
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]             = "Planetary_Flight_Fixes_1_1b.pak", 
+  ["MOD_FILENAME"]             = "Planetary_Flight_Fixes_1_1c.pak", 
   ["MOD_AUTHOR"]               = "chronicallybored",
-  ["NMS_VERSION"]              = "3.82",
+  ["NMS_VERSION"]              = "3.84",
   ["MOD_DESCRIPTION"]          = "Fixes various aspects of the flight system while inside a planets atmossphere",
   ["MODIFICATIONS"]            = 
 	{

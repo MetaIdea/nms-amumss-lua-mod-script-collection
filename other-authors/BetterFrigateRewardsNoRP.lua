@@ -1,7 +1,7 @@
 UNITS_MULTI		= 5			-- Default value is 1 | Multiplys the amount of units you get 
 NANITES_MULTI	= 5			-- Default value is 1 | Multiplys the amount of nanites you get
-PRODUCT_MULTI	= 2			-- Default value is 1 | Multiplys the amount of products you get
-RESOURCES_MULTI	= 3			-- Default value is 1 | Multiplys the amount of resources you get
+PRODUCT_MULTI	= 1			-- Default value is 1 | Multiplys the amount of products you get
+RESOURCES_MULTI	= 1			-- Default value is 1 | Multiplys the amount of resources you get
 
 -- All the above multipliers are modifying the frigate (freighter) mission rewards.
 -- If you are looking for the main mod files' .lua, download the other one on the mod page. (Better Rewards LUA)

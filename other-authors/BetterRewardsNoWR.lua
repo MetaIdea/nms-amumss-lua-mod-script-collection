@@ -18,12 +18,11 @@ NADA_MILESTONE_REWARD	= 150	-- Default value is 50 | Sets the reward value (in n
 
 QS_MULTI				= 5		-- Default value is 1 | Multiplys the amount of quicksilver you get
 
-RESOURCES_MULTI			= 2		-- Default value is 1 | Multiplys the amount of resources gathered, as well as containers, depots, guild rewards and ships that have resources
+RESOURCES_MULTI			= 1		-- Default value is 1 | Multiplys the amount of resources gathered, as well as containers, depots, guild rewards and ships that have resources
 
-WORDS_TO_LEARN			= 3		-- Default value is 1 | Sets the amount of words you learn from non npc sources
-ATLAS_WORDS_TO_LEARN	= 5		-- Default value is 1 | Sets the amount of words you learn from the Atlas Interface
+WORDS_TO_LEARN			= 1		-- Default value is 1 | Sets the amount of words you learn from non npc sources
 
-SALVAGED_DATA			= 3		-- Default value is 1 | Multiplys the amount of salvaged data you mine up and get in Missions
+SALVAGED_DATA			= 1		-- Default value is 1 | Multiplys the amount of salvaged data you mine up and get in Missions
 
 MISSION_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units you get from Mission Board (Space Station) Missions
 MISSION_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Mission Board (Space Station) Missions
@@ -39,7 +38,7 @@ NEXUS_PROD_MULTI		= 1		-- Default value is 1 | Multiplys the amount of products 
 
 ATLAS_WORD = [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="15" />
+            <Property name="PercentageChance" value="0" />
             <Property name="Reward" value="GcRewardTeachWord.xml">
               <Property name="Race" value="GcAlienRace.xml">
                 <Property name="AlienRace" value="Atlas" />
@@ -78,79 +77,7 @@ MISC_WORD =
           </Property>
 ]]
 
-ATLAS_WORD_FULL =
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="Atlas" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-]]
-
-PIRATE_UNIT_1 =
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="100000" />
-              <Property name="AmountMax" value="100000" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Units" />
-              </Property>
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-]]
-
-PIRATE_UNIT_2 =
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="200000" />
-              <Property name="AmountMax" value="200000" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Units" />
-              </Property>
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-]]
-
-PIRATE_UNIT_3 =
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardMoney.xml">
-              <Property name="AmountMin" value="300000" />
-              <Property name="AmountMax" value="300000" />
-              <Property name="Currency" value="GcCurrency.xml">
-                <Property name="Currency" value="Units" />
-              </Property>
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-]]
-
 MISC_WORD_LEARN = string.rep(MISC_WORD, WORDS_TO_LEARN)
-
-ATLAS_WORD_LEARN = string.rep(ATLAS_WORD_FULL, ATLAS_WORDS_TO_LEARN - 1)
-
-PIRATE_FIX_1 = string.rep(PIRATE_UNIT_1, UNITS_MULTI - 1)
-
-PIRATE_FIX_2 = string.rep(PIRATE_UNIT_2, UNITS_MULTI - 1)
-
-PIRATE_FIX_3 = string.rep(PIRATE_UNIT_3, UNITS_MULTI - 1)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -235,8 +162,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 -----------------------------------------------------------------------------------------------------
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY1", "Currency", "Units"},
-							["SECTION_UP"]			= 1,
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY1"},
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -247,14 +173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY1", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= PIRATE_FIX_1
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY2", "Currency", "Units"},
-							["SECTION_UP"]			= 1,
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY2"},
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -265,14 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY2", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= PIRATE_FIX_2
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY3", "Currency", "Units"},
-							["SECTION_UP"]			= 1,
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY3"},
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -280,12 +192,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AmountMin",	UNITS_MULTI},
 								{"AmountMax",	UNITS_MULTI}
 							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY3", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= PIRATE_FIX_3
 						},
 						
 						{
@@ -1038,12 +944,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]	= {"Id", "TEACHWORD_WAR", "PercentageChance", "IGNORE"},
 							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
 								["ADD"] 			= MISC_WORD_LEARN
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "TEACHWORD_ATLAS", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= ATLAS_WORD_LEARN
 						}
 					}
 				}
