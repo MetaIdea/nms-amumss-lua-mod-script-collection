@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_FILENAME"] 			= "_Exosolar's Starmap Upgrade.pak",
 	["MOD_AUTHOR"]				= "Exosolar",
 	["LUA_AUTHOR"]				= "Makto & Updated by Babscoole",
-	["NMS_VERSION"]				= "3.81",
+	["NMS_VERSION"]				= "3.84",
 	["MODIFICATIONS"] 			= 
 	{
 		{
@@ -21,7 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PathToTargetIndicatorTimeFactor",		   		"0.4"},  
 								{"PathUISelectionMultiplierMouse",				"0.8"}, 
 								{"ShowPopupAtCameraMinDistance",		   		"5"},  
-								{"GalacticPathMaximumJumpDistanceLightyears",	"3000"}, 
+								{"GalacticPathMaximumJumpDistanceLightyears",	"3000"}, --Disable for Expeditions
 								{"GalacticPathPreferGuideStarsTillJump",		"30"},
 								{"IntroFadeInRate",								"0.065"},
 								{"IntroTitleFadeTrigger",						"4.5"}, 
