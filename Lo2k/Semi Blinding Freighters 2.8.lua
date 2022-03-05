@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Semi Blinding Freighters 2.7.pak", 
+["MOD_FILENAME"] 			= "Semi Blinding Freighters 2.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.70",
+["NMS_VERSION"]				= "3.84",
 ["MOD_DESCRIPTION"]			= "This mods reduces white flashes for fleets existing warp",
 ["MODIFICATIONS"] 			= 
 	{
@@ -21,6 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						    ["INTEGER_TO_FLOAT"] = "FORCE",
 							["SPECIAL_KEY_WORDS"] = {"Id", "WARP_FRT"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -28,6 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["SPECIAL_KEY_WORDS"] = {"Id", "WARP_FRG"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

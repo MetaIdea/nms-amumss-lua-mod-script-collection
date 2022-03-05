@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Blinding Freighters 2.7.pak", 
+["MOD_FILENAME"] 			= "No Blinding Freighters 2.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.70",
+["NMS_VERSION"]				= "3.84",
 ["MOD_DESCRIPTION"]			= "This mods removes flashes for fleets existing warp",
 ["MODIFICATIONS"] 			= 
 	{

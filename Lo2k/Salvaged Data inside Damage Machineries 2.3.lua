@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Salvaged Data inside Damage Machineries 2.2.pak", 
+["MOD_FILENAME"] 			= "Salvaged Data inside Damage Machineries 2.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.82",
+["NMS_VERSION"]				= "3.84",
 ["MOD_DESCRIPTION"]			= "This mod place salvaged blueprints directly into damaged machineries",
 ["MODIFICATIONS"] 			= 
 	{
