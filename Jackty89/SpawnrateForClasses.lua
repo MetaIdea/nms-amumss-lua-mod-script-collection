@@ -1,4 +1,4 @@
-GameVersion = "3_81"
+GameVersion = "3_84"
 ModeName = "SpawnrateForClasses"
 Author = "Jackty89"
 

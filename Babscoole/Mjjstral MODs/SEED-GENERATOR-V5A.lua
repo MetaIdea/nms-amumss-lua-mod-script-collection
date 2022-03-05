@@ -434,7 +434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "zzzSEED-GENERATOR-V5A.pak",
 ["MOD_AUTHOR"]				= "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"]			= "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]				= "3.81",
+["NMS_VERSION"]				= "3.84",
 ["MODIFICATIONS"] 			= 
 	{
 		{

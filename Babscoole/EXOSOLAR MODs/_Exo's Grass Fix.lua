@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "_Exo's Grass Fix.pak",
 ["MOD_AUTHOR"]				= "Exosolar",
 ["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.81",
+["NMS_VERSION"]				= "3.84",
 ["MODIFICATIONS"] 			=
 	{
 		{

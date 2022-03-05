@@ -97,14 +97,66 @@ ATLAS_WORD_FULL =
           </Property>
 ]]
 
+PIRATE_UNIT_1 =
+[[
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardMoney.xml">
+              <Property name="AmountMin" value="100000" />
+              <Property name="AmountMax" value="100000" />
+              <Property name="Currency" value="GcCurrency.xml">
+                <Property name="Currency" value="Units" />
+              </Property>
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+]]
+
+PIRATE_UNIT_2 =
+[[
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardMoney.xml">
+              <Property name="AmountMin" value="200000" />
+              <Property name="AmountMax" value="200000" />
+              <Property name="Currency" value="GcCurrency.xml">
+                <Property name="Currency" value="Units" />
+              </Property>
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+]]
+
+PIRATE_UNIT_3 =
+[[
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardMoney.xml">
+              <Property name="AmountMin" value="300000" />
+              <Property name="AmountMax" value="300000" />
+              <Property name="Currency" value="GcCurrency.xml">
+                <Property name="Currency" value="Units" />
+              </Property>
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+]]
+
 MISC_WORD_LEARN = string.rep(MISC_WORD, WORDS_TO_LEARN)
+
 ATLAS_WORD_LEARN = string.rep(ATLAS_WORD_FULL, ATLAS_WORDS_TO_LEARN - 1)
+
+PIRATE_FIX_1 = string.rep(PIRATE_UNIT_1, UNITS_MULTI - 1)
+
+PIRATE_FIX_2 = string.rep(PIRATE_UNIT_2, UNITS_MULTI - 1)
+
+PIRATE_FIX_3 = string.rep(PIRATE_UNIT_3, UNITS_MULTI - 1)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "BetterRewards.pak",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "3.70",
+["NMS_VERSION"]		= "3.84",
 ["MODIFICATIONS"] 	=
 	{
 		{
@@ -183,7 +235,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 -----------------------------------------------------------------------------------------------------
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY1"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY1", "Currency", "Units"},
+							["SECTION_UP"]			= 1,
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -194,7 +247,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY2"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY1", "PercentageChance", "IGNORE"},
+							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
+								["ADD"] 			= PIRATE_FIX_1
+						},
+						
+						{
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY2", "Currency", "Units"},
+							["SECTION_UP"]			= 1,
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -205,7 +265,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY3"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY2", "PercentageChance", "IGNORE"},
+							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
+								["ADD"] 			= PIRATE_FIX_2
+						},
+						
+						{
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY3", "Currency", "Units"},
+							["SECTION_UP"]			= 1,
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -213,6 +280,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AmountMin",	UNITS_MULTI},
 								{"AmountMax",	UNITS_MULTI}
 							}
+						},
+						
+						{
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY3", "PercentageChance", "IGNORE"},
+							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
+								["ADD"] 			= PIRATE_FIX_3
 						},
 						
 						{
@@ -364,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 -----------------------------------------------------------------------------------------------------
 
 						{
-							["SPECIAL_KEY_WORDS"]	= {"gcproducttableEnum", "None"},
+							["SPECIAL_KEY_WORDS"]	= {"DefaultSubstanceType", "None"},
 							["SECTION_UP"]			= 2,
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
