@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "PoliceShipOnStart.pak", 
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
-["NMS_VERSION"]				= "3.73",
+["NMS_VERSION"]				= "3.84",
 ["MODIFICATIONS"] 			= 
 	{
 		{

@@ -533,43 +533,43 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		-- Photon Cannons
 		{ --AISHIPGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 		{ --TRADERGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","TRADERGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 		{ --POLICEGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 		{ --BOUNTYGUN1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 		{ --BOUNTYGUN2
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 		{ --BOUNTYGUN3
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 		{ --FREIGHTGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","15000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
 		{ --COP_FREIGHTGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","COP_FREIGHTGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","15000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
 		{ --BASE_TURRET_M
 		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_M"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","15000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
 		{ --BASE_TURRET_L
 		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_L"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","25000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
 		-- Lasers
 		{ --AI_SHIP 
 		["SPECIAL_KEY_WORDS"] = {"Id","AI_SHIP"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","1500"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","1500"}}},
 		{--AI_FREIGHTER 
 		["SPECIAL_KEY_WORDS"] = {"Id","AI_FREIGHTER"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 		{--COP_FREIGHTER 
 		["SPECIAL_KEY_WORDS"] = {"Id","COP_FREIGHTER"},
-			["VALUE_CHANGE_TABLE"] = {{"Damage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 	}},
 }}}}

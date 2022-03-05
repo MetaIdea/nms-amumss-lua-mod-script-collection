@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 				= "_Merged_MOD_Mission_Timer_Redux_+_LMF_Always-SClass-MaxStats.pak",
+["MOD_FILENAME"] 			= "_Merged_MOD_Mission_Timer_Redux_+_LMF_Always-SClass-MaxStats.pak",
 ["MOD_DESCRIPTION"] 			= "Reduce Mission Timer, Atlas, Base Computer, Living Ship, Fleet and Frigates spawn with best initial stats and always as S class",
 ["MOD_AUTHOR"]				= "NooBzPoWaH & ll62518475TheSecond",
+["LUA_AUTHOR"] 				= "Babscoole",
 ["NMS_VERSION"]				= "3.+",
 ["MODIFICATIONS"] 			= 
 	{
@@ -15,6 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Message","UI_POLO_LONGWAIT_MSG"},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Time",				"0"},
@@ -28,6 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Message","UI_BASEFLAG_COOLDOWN_MSG"},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Time",				"0"}, 
@@ -69,6 +72,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
+				{	-- This section is for the Settlement Timers
+					["MBIN_FILE_SOURCE"]     = "GCSETTLEMENTGLOBALS.MBIN",
+					["EXML_CHANGE_TABLE"]     =
+					{
+						{
+							["VALUE_CHANGE_TABLE"]     =
+							{
+							  {"BuildingUpgradeTimeInSeconds",    "60"},        -- original value is "7200" whihc is 2 hrs
+							  {"JudgementWaitTimeMin",         "120"},        -- original value is "900" which is 30 mins
+							  {"JudgementWaitTimeMax",        "300"},        -- original value is "7200" which is 2 hrs
+							  {"Settlement_LandingZone",        "30"},        -- original value is "14400" which is 4 hrs
+							  {"Settlement_Bar",            "30"},        -- original value is "3600" which is 1 hr
+							  {"Settlement_Tower",            "30"},        -- original value is "14400" which is 4 hrs
+							  {"Settlement_Market",            "30"},        -- original value is "7200" which is 2 hrs
+							  {"Settlement_Small",            "30"},        -- original value is "1200" which is 20 mins
+							  {"Settlement_SmallIndustrial",    "30"},        -- original value is "1200" which is 20 mins
+							  {"Settlement_Medium",            "30"},        -- original value is "2800" which is 46 mins and 39 secs
+							  {"Settlement_Large",            "30"},        -- original value is "7200" which is 2 hrs
+							  {"Settlement_SheriffsOffice",        "90"},        -- original value is "90"
+							  {"Settlement_Double",            "30"},        -- original value is "3600" which is 1 hr
+							  {"Settlement_Farm",            "30"},        -- original value is "5600" which is 1 hr 30 mins and 20 secs
+							  {"Settlement_Factory",        "30"},        -- original value is "5600" which is 1 hr 30 mins and 20 secs
+							 }
+						},
+					}
+				},				
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCFLEETGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -85,76 +114,40 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-								
-							["PRECEDING_KEY_WORDS"] = {"FrigateClass","Combat","Stats","Combat"},
+							["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 5},		-- Original 1
 							},
 						},
 						{
-								
-							["PRECEDING_KEY_WORDS"] = {"FrigateClass","Combat","Stats","Exploration"},
+							["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 2},		-- Original 0
 							},
 						},
 						{
-								
-							["PRECEDING_KEY_WORDS"] = {"FrigateClass","Combat","Stats","Mining"},
+							["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 4},		-- Original 0
 							},
 						},
 						{
-								
-							["PRECEDING_KEY_WORDS"] = {"FrigateClass","Combat","Stats","Diplomatic"},
+							["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 2},		-- Original 0
 							},
 						},
 						{
-								
-							["PRECEDING_KEY_WORDS"] = {"FrigateClass","Combat","Stats","FuelBurnRate"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 3},		-- Original 8
-								{"Maximum", 6},		-- Original 12
-							},
-						},
-												{
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Combat"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 2},		-- Original 0
-							},
-						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Exploration"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 5},		-- Original 1
-							},
-						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Mining"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 2},		-- Original 0
-							},
-						},
-						{		
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Diplomatic"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 4},		-- Original 0
-							},
-						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","FuelBurnRate"},
+							["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},	
+							["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 3},		-- Original 8
@@ -162,71 +155,81 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Combat"},
+							["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 2},		-- Original 0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 5},		-- Original 1
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 2},		-- Original 0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 4},		-- Original 0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Exploration","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 3},		-- Original 8
+								{"Maximum", 6},		-- Original 12
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 3},		-- Original 0
 							},
 						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Exploration"},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},						
+							["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 1},		-- Original 0
 							},
 						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Mining"},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 5},		-- Original 1
 							},
 						},
-						{		
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Diplomatic"},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 3},		-- Original 0
 							},
 						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","FuelBurnRate"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 3},		-- Original 8
-								{"Maximum", 6},		-- Original 12
-							},
-						},
-												{
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","Combat"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 1},		-- Original 0
-							},
-						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","Exploration"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 2},		-- Original 0
-							},
-						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","Mining"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 4},		-- Original 0
-							},
-						},
-						{		
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","Diplomatic"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Minimum", 5},		-- Original 1
-							},
-						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","FuelBurnRate"},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Mining","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 3},		-- Original 8
@@ -234,35 +237,81 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","Stats","Combat"},
+							["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},					
+							["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 1},		-- Original 0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 2},		-- Original 0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 4},		-- Original 0
 							},
 						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","Stats","Exploration"},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 5},		-- Original 1
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Diplomacy","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","FuelBurnRate"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 3},		-- Original 8
+								{"Maximum", 6},		-- Original 12
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Combat"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 4},		-- Original 0
 							},
 						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","Stats","Mining"},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Exploration"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 4},		-- Original 0
 							},
 						},
-						{		
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","Stats","Diplomatic"},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Mining"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 4},		-- Original 0
 							},
 						},
-						{	
-							["PRECEDING_KEY_WORDS"] = {"Stats","Stats","Stats","Stats","Stats","FuelCapacity"},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","Diplomatic"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"Minimum", 4},		-- Original 0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Support","GcFrigateStats.xml",},
+							["PRECEDING_KEY_WORDS"] = {"Stats","FuelCapacity"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Minimum", 5},		-- Original 1

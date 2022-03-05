@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 	["MOD_FILENAME"] 	= "BetterFrigateRewards.pak",
 	["MOD_AUTHOR"]		= "MrTrack",
-	["NMS_VERSION"]		= "3.70",
+	["NMS_VERSION"]		= "3.84",
 	["MODIFICATIONS"] 	=
 	{
 		{
@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 -----------------------------------------------------------------------------------------------------
 
 						{
-							["SPECIAL_KEY_WORDS"]	= {"gcproducttableEnum", "None"},
+							["SPECIAL_KEY_WORDS"]	= {"DefaultSubstanceType", "None"},
 							["SECTION_UP"]			= 2,
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",

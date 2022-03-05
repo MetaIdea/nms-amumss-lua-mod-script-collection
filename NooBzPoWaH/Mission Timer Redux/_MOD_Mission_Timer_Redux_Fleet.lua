@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "_MOD_Mission_Timer_Redux_Fleet.pak",
 ["MOD_DESCRIPTION"] 			= "Reduce Fleet Mission Timer",
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
+["LUA_AUTHOR"] 				= "Babscoole",
 ["NMS_VERSION"]				= "3.+",
 ["MODIFICATIONS"] 			= 
 	{

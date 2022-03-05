@@ -165,6 +165,7 @@ HEADS =
 										"FOR_HEAD_STING",
 										"GEK_HEAD_NUT",
 										"FOR_HEAD_HOOD",
+										"VYK_HEAD_WORM",
 									  },
 					  },
 	},
@@ -219,14 +220,14 @@ for i,j in pairs(RACES) do						-- adding all the heads to each race
 		for k,l in pairs(q["HEAD"]) do			-- adding one head to one preset
 			if j ~= q["EXCLUDE"] then			-- exclude head list from being added into race if excluded
 			ADD_HEAD_ENTRY = {}
-			ADD_HEAD_ENTRY = {["SPECIAL_KEY_WORDS"] = {"Name", j .. "_" .. PRESET_SLOT[PRESET_COUNT]}, ["PRECEDING_KEY_WORDS"] = {"NMSString0x10.xml", "NMSString0x10.xml"}, ["VALUE_CHANGE_TABLE"] = {}}
+			ADD_HEAD_ENTRY = {["SPECIAL_KEY_WORDS"] = {"Name", j .. "_" .. PRESET_SLOT[PRESET_COUNT]}, ["PRECEDING_KEY_WORDS"] = {"NMSString0x10.xml", "NMSString0x10.xml"}, ["REPLACE_TYPE"] = "", ["VALUE_CHANGE_TABLE"] = {}}
 			-- replace value at 2nd NMSString0x10.xml since first is race
 			HEAD_TEMP = {"Value", l}
 			table.insert(ADD_HEAD_ENTRY["VALUE_CHANGE_TABLE"], HEAD_TEMP)
 			table.insert(HEAD_CHANGE_TABLE, ADD_HEAD_ENTRY)
 			for m,n in pairs(SHOULDERKNESSANDTOES) do			-- adding each body part sequentially in their own EXML_CHANGE_TABLE entry
 				ADD_HEAD_ENTRY = {}
-				ADD_HEAD_ENTRY = {["SPECIAL_KEY_WORDS"] = {"Name", j .. "_" .. PRESET_SLOT[PRESET_COUNT]}, ["PRECEDING_KEY_WORDS"] = {"NMSString0x10.xml", "NMSString0x10.xml"}, ["VALUE_CHANGE_TABLE"] = {}}
+				ADD_HEAD_ENTRY = {["SPECIAL_KEY_WORDS"] = {"Name", j .. "_" .. PRESET_SLOT[PRESET_COUNT]}, ["PRECEDING_KEY_WORDS"] = {"NMSString0x10.xml", "NMSString0x10.xml"}, ["REPLACE_TYPE"] = "", ["VALUE_CHANGE_TABLE"] = {}}
 				for o=1, m do					-- adding more NMSString0x10.xml for m times for each body part
 					table.insert(ADD_HEAD_ENTRY["PRECEDING_KEY_WORDS"], "NMSString0x10.xml")
 				end
@@ -235,12 +236,18 @@ for i,j in pairs(RACES) do						-- adding all the heads to each race
 				table.insert(HEAD_CHANGE_TABLE, ADD_HEAD_ENTRY)
 			end
 			for	m,n in pairs(PRESET_COLOURS) do	-- set colours to preset color according to PRESET_COLOURS
-				-- ADD_HEAD_ENTRY = {["PRECEDING_FIRST"] = "TRUE", ["PRECEDING_KEY_WORDS"] = j .. "_" .. PRESET_SLOT[PRESET_COUNT], ["SPECIAL_KEY_WORDS"] = {{"Palette", n["Palette"]},{"ColourAlt", n["ColourAlt"]}}, ["SECTION_UP"] = 1, ["VALUE_CHANGE_TABLE"] = {}}
+				-- ADD_HEAD_ENTRY = {["PRECEDING_FIRST"] = "TRUE", ["PRECEDING_KEY_WORDS"] = j .. "_" .. PRESET_SLOT[PRESET_COUNT], ["SPECIAL_KEY_WORDS"] = {"Palette", n["Palette"],"ColourAlt", n["ColourAlt"]}, ["SECTION_UP"] = 1, ["VALUE_CHANGE_TABLE"] = {}}
 				-- Replace machine broke, now using archaic method
-				ADD_HEAD_ENTRY = {["SPECIAL_KEY_WORDS"] = {"Name", j .. "_" .. PRESET_SLOT[PRESET_COUNT]}, ["PRECEDING_KEY_WORDS"] = {"GcCharacterCustomisationColourData.xml"}, ["INTEGER_TO_FLOAT"] = "FORCE", ["VALUE_CHANGE_TABLE"] = {}}
-				for t=2, m do
-					table.insert(ADD_HEAD_ENTRY["PRECEDING_KEY_WORDS"],"GcCharacterCustomisationColourData.xml")
-				end
+				print(m)
+				ADD_HEAD_ENTRY = {["SPECIAL_KEY_WORDS"] = {"Name", j .. "_" .. PRESET_SLOT[PRESET_COUNT]},
+									-- ["PRECEDING_KEY_WORDS"] = {"Colours"}, 
+									["PRECEDING_KEY_WORDS"] = {"GcCharacterCustomisationColourData.xml"}, 
+									["SECTION_ACTIVE"] = m,
+									["INTEGER_TO_FLOAT"] = "FORCE", ["VALUE_CHANGE_TABLE"] = {},
+									["REPLACE_TYPE"] = ""}
+				-- for t=2, m do
+					-- table.insert(ADD_HEAD_ENTRY["PRECEDING_KEY_WORDS"],"GcCharacterCustomisationColourData.xml")
+				-- end
 				for r,s in pairs(RGB) do
 					HEAD_TEMP = {s, NEW_COLOURS[n["Colour"]][s]}
 					table.insert(ADD_HEAD_ENTRY["VALUE_CHANGE_TABLE"], HEAD_TEMP)

@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "DroneShip.pak",
 ["MOD_AUTHOR"]				= "Mjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
-["NMS_VERSION"]				= "3.73",
+["NMS_VERSION"]				= "3.84",
 ["DESCRIPTION"]				= "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
 ["MODIFICATIONS"] 			= 
 	{
