@@ -137,6 +137,7 @@ PRODUCTS =
 
 SUBSTANCES = 
 {
+	{"UI_AF_METAL_NAME", LOWVALUE}, 
 	{"UI_FUEL_1_NAME", STD}, 
 	{"UI_FUEL_2_NAME", STD},
 	{"UI_AIR1_NAME", STD}, 
@@ -235,9 +236,9 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 		= "Colorless Inventory 4.0.pak", 
+  ["MOD_FILENAME"] 		= "Colorless Inventory 4.1.pak", 
   ["MOD_AUTHOR"]		= "Lo2k",
-  ["NMS_VERSION"]		= "3.75",
+  ["NMS_VERSION"]		= "3.84",
   ["MOD_DESCRIPTION"]	= "This mods changes background of most items",
   ["MODIFICATIONS"] = 
   {
