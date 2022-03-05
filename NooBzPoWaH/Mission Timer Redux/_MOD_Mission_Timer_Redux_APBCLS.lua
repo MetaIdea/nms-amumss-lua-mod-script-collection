@@ -3,6 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "_MOD_Mission_Timer_Redux_APBCLS.pak",
 ["MOD_DESCRIPTION"] 			= "Reduce Mission Timer, Atlas, Base Computer and Living Ship",
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
+["LUA_AUTHOR"] 				= "Babscoole",
 ["NMS_VERSION"]				= "3.+",
 ["MODIFICATIONS"] 			= 
 	{
@@ -15,6 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Message","UI_POLO_LONGWAIT_MSG"},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Time",				"0"}, 
@@ -28,6 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Message","UI_BASEFLAG_COOLDOWN_MSG"},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Time",				"0"}, 
