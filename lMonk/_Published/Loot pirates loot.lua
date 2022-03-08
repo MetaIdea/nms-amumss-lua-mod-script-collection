@@ -3,22 +3,49 @@ local desc = [[
   Replace space pirates battle loot with a more varied list
 ]]------------------------------------------------------------------------
 
-mod_version = 1.06
+mod_version = 1.1
 
 local F_ = {}
 F_.TableItemSingle = function(item, data, reward)
-	return [[
+	local minmax = ''
+	if item.x ~= nil then
+		minmax = string.format([[
+			<Property name="AmountMin" value="%s" />
+			<Property name="AmountMin" value="%s" />]],
+			item.n, item.x
+		)
+	end
+	return string.format([[
 		<Property value="GcRewardTableItem.xml">
-			<Property name="PercentageChance" value="]]..item.c..[[" />
-			<Property name="Reward" value="]]..reward..[[">
-				]]..data..[[
-				<Property name="AmountMin" value="]]..item.n..[[" />
-				<Property name="AmountMax" value="]]..item.x..[[" />
+			<Property name="PercentageChance" value="%s" />
+			<Property name="Reward" value="%s">
+				%s%s
 			</Property>
 			<Property name="LabelID" value="" />
-		</Property>
-	]]
+		</Property>]],
+		item.c,	-- chance
+		reward,
+		data,
+		minmax
+	)
 end
+F_.Procedural = function(item)
+	local exml = string.format([[
+		<Property name="Type" value="GcProceduralProductCategory.xml">
+			<Property name="ProceduralProductCategory" value="%s"/>
+		</Property>
+		<Property name="OSDMessage" value=""/>
+		<Property name="SubIfPlayerAlreadyHasOne" value="False"/>
+		<Property name="OverrideRarity" value="False"/>
+		<Property name="Rarity" value="GcRarity.xml">
+			<Property name="Rarity" value="%s"/>
+		</Property>]],
+		item.id,
+		item.r or 'Common'
+	)
+	return F_.TableItemSingle(item, exml, 'GcRewardProceduralProduct.xml')
+end
+
 F_.Product = function(item)
 	local exml = [[
 		<Property name="Default" value="GcDefaultMissionProductEnum.xml">
@@ -32,10 +59,10 @@ F_.Product = function(item)
 	return F_.TableItemSingle(item, exml, 'GcRewardSpecificProduct.xml')
 end
 F_.Substance = function(item)
-	local exml = [[	
+	local exml = [[
 		<Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
 			<Property name="DefaultSubstanceType" value="None"/>
-		</Property>	
+		</Property>
 		<Property name="ID" value="]]..item.id..[[" />
 		<Property name="HardModeMultiplier" value="1" />
 		<Property name="DisableMultiplier" value="False" />
@@ -78,39 +105,81 @@ F_.Shield = function(item)
 end
 F_.ItemList = function(item)
 	local function tableItemMulti(itc, data, reward)
-		return [[
+		return string.format([[
 			<Property value="GcRewardTableItem.xml">
-				<Property name="PercentageChance" value="]]..itc.c..[[" />
-				<Property name="Reward" value="]]..reward..[[">
-					]]..data..[[
+				<Property name="PercentageChance" value="%s" />
+				<Property name="Reward" value="%s">
+					%s
 				</Property>
 				<Property name="LabelID" value="" />
-			</Property>
-		]]
+			</Property>]],
+			itc.c,
+			reward,
+			data
+		)
 	end
 	local exml = '<Property name="Items">'
 	for i=1, #item do
-		exml = exml..[[
+		exml = string.format([[%s
 			<Property value="GcMultiSpecificItemEntry.xml">
-				<Property name="MultiItemRewardType" value="]]..item[i].t..[[" />
-				<Property name="Id" value="]]..item[i].id..[[" />
-				<Property name="Amount" value="]]..item[i].n..[[" />
+				<Property name="MultiItemRewardType" value="%s" />
+				<Property name="Id" value="%s" />
+				<Property name="Amount" value="%s" />
 				<Property name="ProcTechGroup" value="" />
-				<Property name="ProcTechQuality" value="0" />
+				<Property name="ProcTechQuality" value="3" />
 				<Property name="ProcProdType" value="GcProceduralProductCategory.xml">
-					<Property name="ProceduralProductCategory" value="Loot" />
+					<Property name="ProceduralProductCategory" value="%s" />
 				</Property>
 				<Property name="ProcProdRarity" value="GcRarity.xml">
-					<Property name="Rarity" value="Common" />
+					<Property name="Rarity" value="%s" />
 				</Property>
 				<Property name="HideInSeasonRewards" value="False" />
-			</Property>]]
+			</Property>]],
+			exml,
+			item[i].t,				-- MultiItemRewardType
+			item[i].id or '',		-- Id
+			item[i].n or 1,			-- Amount
+			item[i].pid or 'Loot',	-- ProceduralProductCategory
+			item[i].r or 'Common'	-- Rarity
+		)
 	end
 	exml = exml..'</Property>'
 	return tableItemMulti(item, exml, 'GcRewardMultiSpecificItems.xml')
 end
 
-local T_ = { PRD='Product', SBT='Substance', PCT='ProcTech', PCP='ProcProduct'}
+local E_ = {
+	-- ProceduralProductCategoryEnum
+	LOT='Loot',
+	FRH='FreighterTechHyp',
+	FRS='FreighterTechSpeed',
+	FRF='FreighterTechFuel',
+	FRT='FreighterTechTrade',
+	FRC='FreighterTechCombat',
+	FRM='FreighterTechMine',
+	FRE='FreighterTechExp',
+	DBI='DismantleBio',
+	DTC='DismantleTech',
+	DDT='DismantleData',
+	BIO='BioSample',
+	BNS='Bones',
+	FOS='Fossil',
+	SLT='SeaLoot',
+	SHR='SeaHorror',
+	SPB='SpaceBones',
+	SPH='SpaceHorror',
+	SLV='Salvage',
+
+	-- MultiItemRewardTypeEnum
+	PDT='Product',
+	SBT='Substance',
+ 	PRP='ProcProduct',
+	-- PRT='ProcTech', not supported
+
+	-- RarityEnum
+	C='Common',
+	U='Uncommon',
+	R='Rare',
+}
 
 local Rewards = {
 	Pirate_Loot_Esay = {
@@ -120,11 +189,12 @@ local Rewards = {
 			--id					Min		Max		%		function
 			{id='LAND2',			n=60,	x=160,	c=5,	f=F_.Substance},
 			{id='CAVE1',			n=70,	x=170,	c=5,	f=F_.Substance},
+			{id=E_.DBI,				r=E_.C,			c=3,	f=F_.Procedural},
+			{id=E_.DTC,				r=E_.C,			c=3,	f=F_.Procedural},
 			{id='TRA_ALLOY1',		n=1,	x=3,	c=3,	f=F_.Product},
 			{id='TRA_ENERGY1',		n=1,	x=3,	c=3,	f=F_.Product},
 			{id='TRA_EXOTICS1',		n=1,	x=3,	c=3,	f=F_.Product},
 			{id='FOOD_CM_APPLE',	n=1,	x=1,	c=1,	f=F_.Product},
-			-- {id='shield',			n=30,	x=40,	c=100,	f=F_.Shield},
 		}
 	},
 	Pirate_Loot_Med = {
@@ -135,13 +205,14 @@ local Rewards = {
 			{id='ALLOY2',			n=1,	x=1,	c=5,	f=F_.Product},
 			{id='ALLOY3',			n=1,	x=1,	c=5,	f=F_.Product},
 			{id='ALLOY4',			n=1,	x=1,	c=5,	f=F_.Product},
-			{id='WATER2',			n=90,	x=190,	c=5,	f=F_.Substance},
-			{id='CAVE2',			n=100,	x=200,	c=5,	f=F_.Substance},
+			{id='WATER2',			n=260,	x=280,	c=5,	f=F_.Substance},
+			{id='GEODE_CAVE',		n=1,	x=2,	c=5,	f=F_.Product},
+			{id=E_.DBI,				r=E_.U,			c=3,	f=F_.Procedural},
+			{id=E_.DTC,				r=E_.U,			c=3,	f=F_.Procedural},
 			{id='TRA_ALLOY2',		n=1,	x=3,	c=3,	f=F_.Product},
 			{id='TRA_ENERGY2',		n=1,	x=3,	c=3,	f=F_.Product},
 			{id='TRA_TECH2',		n=1,	x=3,	c=3,	f=F_.Product},
 			{id='FOOD_ICE_GLITCH',	n=1,	x=1,	c=1,	f=F_.Product},
-			-- {id='shield',			n=40,	x=50,	c=100,	f=F_.Shield},
 		}
 	},
 	Pirate_Loot_Reg = {
@@ -152,7 +223,9 @@ local Rewards = {
 			{id='ALLOY2',			n=1,	x=1,	c=5,	f=F_.Product},
 			{id='ALLOY3',			n=1,	x=1,	c=5,	f=F_.Product},
 			{id='ALLOY4',			n=1,	x=1,	c=5,	f=F_.Product},
-			{id='WATER2',			n=120,	x=220,	c=5,	f=F_.Substance},
+			{id='WATER2',			n=260,	x=280,	c=5,	f=F_.Substance},
+			{id=E_.DBI,				r=E_.U,			c=5,	f=F_.Procedural},
+			{id=E_.DTC,				r=E_.U,			c=5,	f=F_.Procedural},
 			{id='TRA_ALLOY3',		n=1,	x=3,	c=5,	f=F_.Product},
 			{id='TRA_ENERGY3',		n=1,	x=3,	c=5,	f=F_.Product},
 			{id='TRA_COMPONENT3',	n=1,	x=3,	c=5,	f=F_.Product},
@@ -176,7 +249,7 @@ local Rewards = {
 			{id='ALLOY4',			n=1,	x=1,	c=5,	f=F_.Product},
 			{id='ALLOY5',			n=1,	x=1,	c=5,	f=F_.Product},
 			{id='ALLOY6',			n=1,	x=1,	c=5,	f=F_.Product},
-			{id='WATER2',			n=130,	x=230,	c=5,	f=F_.Substance},
+			{id='WATER2',			n=260,	x=280,	c=5,	f=F_.Substance},
 			{id='TRA_ENERGY4',		n=1,	x=3,	c=5,	f=F_.Product},
 			{id='TRA_ALLOY4',		n=1,	x=3,	c=5,	f=F_.Product},
 			{id='TRA_EXOTICS4',		n=1,	x=3,	c=5,	f=F_.Product},
@@ -184,7 +257,8 @@ local Rewards = {
 			{id='GEODE_RARE',		n=1,	x=1,	c=3,	f=F_.Product},
 			{id='EX_GREEN',			n=90,	x=190,	c=3,	f=F_.Substance},
 			{id='EX_BLUE',			n=80,	x=180,	c=3,	f=F_.Substance},
-			{id='FOOD_CM_APPLE',	n=1,	x=2,	c=3,	f=F_.Product},
+			{id=E_.DBI,				r=E_.R,			c=3,	f=F_.Procedural},
+			{id=E_.DTC,				r=E_.R,			c=3,	f=F_.Procedural},
 			{id='FOOD_CM_CHOC',		n=1,	x=2,	c=3,	f=F_.Product},
 			{id='FOOD_ICE_GLITCH',	n=1,	x=2,	c=3,	f=F_.Product},
 			{id='AF_METAL',			n=140,	x=160,	c=2,	f=F_.Substance},
@@ -199,22 +273,26 @@ local Rewards = {
 			for _,v in pairs(lst) do exml = exml..v.f(v) end
 			return exml..'</Property>'
 		end
-		return [[
-		<Property value="GcGenericRewardTableEntry.xml">
-			<Property name="Id" value="]]..rte.id..[[" />
-			<Property name="List" value="GcRewardTableItemList.xml">
-				<Property name="RewardChoice" value="]]..rte.choice..[[" />
-				<Property name="OverrideZeroSeed" value="False" />
-				]]..getRewardsList(rte.rewardlist)..[[
-			</Property>
-		</Property>]]
+		return string.format([[
+			<Property value="GcGenericRewardTableEntry.xml">
+				<Property name="Id" value="%s" />
+				<Property name="List" value="GcRewardTableItemList.xml">
+					<Property name="RewardChoice" value="%s" />
+					<Property name="OverrideZeroSeed" value="False" />
+					%s
+				</Property>
+			</Property>]],
+			rte.id,
+			rte.choice,
+			getRewardsList(rte.rewardlist)
+		)
 	end
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Loot pirates loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.81,
+	NMS_VERSION			= 3.84,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
