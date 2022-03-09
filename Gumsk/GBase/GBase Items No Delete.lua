@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items No Delete"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "371"
+GameVersion = "384"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 

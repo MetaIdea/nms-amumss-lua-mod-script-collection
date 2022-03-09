@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBobble"
 ModNameSub = "Invisible"
 BaseDescription = "Hides bobbleheads completely"
-GameVersion = "371"
+GameVersion = "382"
 ModVersion = "a"
 FileSource1 = "METADATA\GAMESTATE\PLAYERDATA\BOBBLEHEADCUSTOMISATIONDATA.MBIN"
 

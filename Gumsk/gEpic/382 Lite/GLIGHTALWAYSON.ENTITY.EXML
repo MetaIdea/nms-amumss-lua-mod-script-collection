@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (3.12.0)-->
+<Data template="TkAttachmentData">
+  <Property name="Components">
+    <Property value="GcTriggerActionComponentData.xml">
+      <Property name="HideModel" value="False" />
+      <Property name="StartInactive" value="False" />
+      <Property name="States">
+	  	 <Property value="GcActionTriggerState.xml">
+          <Property name="StateID" value="BOOT" />
+          <Property name="Triggers">
+            <Property value="GcActionTrigger.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
+                <Property name="Seconds" value="0" />
+                <Property name="RandomSeconds" value="0" />
+              </Property>
+              <Property name="Action">
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Activate" />
+                  <Property name="Name" value="ConOn1_" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="False" />
+                  <Property name="IncludeChildPhysics" value="False" />
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="False" />
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Persistent" value="False" />
+      <Property name="PersistentState" value="" />
+      <Property name="ResetShotTimeOnStateChange" value="False" />
+      <Property name="LinkStateToBaseGrid" value="False" />
+    </Property>
+  </Property>
+  <Property name="LodDistances">
+    <Property value="0" />
+    <Property value="50" />
+    <Property value="80" />
+    <Property value="150" />
+    <Property value="500" />
+  </Property>
+</Data>

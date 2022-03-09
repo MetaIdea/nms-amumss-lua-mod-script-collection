@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gHot"
 ModNameSub = ""
 BaseDescription = "Hotspot balancing"
-GameVersion = "371"
+GameVersion = "382"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN"
 

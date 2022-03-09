@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GExos Challenge"
 ModNameSub = "gDamage"
 BaseDescription = "Damage adjustments"
-GameVersion = "370"
+GameVersion = "382"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -23,36 +23,44 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ENERGY"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 50}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","EXTREMEHEATDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","NOOXYDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","EXTREMECOLDDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","TOXICGASDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","RADIATIONDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 5}}}, --default 4
+		{"Damage", 4}}}, --default 2
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG_MED"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 7}}}, --default 3.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTBIGGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 11}}}, --default 8
-		
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGRENADEDMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 10}}}, --default 7
+
 	{["SPECIAL_KEY_WORDS"] = {"Id","LASERDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 7}}}, --default 5
@@ -128,7 +136,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{["SPECIAL_KEY_WORDS"] = {"Id","WALKERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 25}}}, --default 9		
-		
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","SENTINEL_FLAME"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 6}}}, --default 3
+
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 50}}}, --default 16

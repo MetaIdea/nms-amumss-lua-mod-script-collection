@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items Minimalist"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "371"
+GameVersion = "384"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
@@ -25,6 +25,7 @@ GasLimit = 1				--0
 SiloStorage = 9999999		--Original 1400000
 SiloLimit = 5				--0
 FreighterRate = 999999		--10000
+ParagonDistance = 100000	--1000
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -150,6 +151,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"PlanetBaseLimit", SiloLimit},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","U_SILO_S"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Storage",SiloStorage},
+		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanetWithProduct", "False"},
+		{"PlanetBaseLimit", SiloLimit},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"ConnectionDistance",ParagonDistance},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","AIRLCKCONNECTOR"},
 	["VALUE_CHANGE_TABLE"] = {

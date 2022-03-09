@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (3.3.0)-->
+<Data template="TkAttachmentData">
+  <Property name="Components">
+    <Property value="TkPhysicsComponentData.xml">
+      <Property name="Data" value="TkPhysicsData.xml">
+        <Property name="Mass" value="0" />
+        <Property name="Friction" value="0.5" />
+        <Property name="RollingFriction" value="0.2" />
+        <Property name="AngularDamping" value="0.2" />
+        <Property name="LinearDamping" value="0.1" />
+        <Property name="Gravity" value="20" />
+      </Property>
+      <Property name="VolumeTriggerType" value="TkVolumeTriggerType.xml">
+        <Property name="VolumeTriggerType" value="GenericInterior" />
+      </Property>
+      <Property name="SurfaceProperties" value="None" />
+      <Property name="TriggerVolume" value="True" />
+      <Property name="Climbable" value="False" />
+      <Property name="Floor" value="False" />
+      <Property name="IgnoreModelOwner" value="False" />
+      <Property name="NoVehicleCollide" value="False" />
+      <Property name="NoPlayerCollide" value="False" />
+      <Property name="CameraInvisible" value="False" />
+      <Property name="InvisibleForInteraction" value="False" />
+      <Property name="AllowTeleporter" value="True" />
+      <Property name="BlockTeleporter" value="False" />
+      <Property name="DisableGravity" value="False" />
+      <Property name="SpinOnCreate" value="0" />
+	  <Property name="UseBasePartOptimisation" value="False" />
+    </Property>
+  </Property>
+  <Property name="LodDistances">
+    <Property value="0" />
+    <Property value="50" />
+    <Property value="80" />
+    <Property value="150" />
+    <Property value="500" />
+  </Property>
+</Data>

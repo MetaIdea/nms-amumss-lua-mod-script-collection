@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items Freighter Power"
 BaseDescription = "Increases amount of free power on freighters"
-GameVersion = "371"
+GameVersion = "384"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
