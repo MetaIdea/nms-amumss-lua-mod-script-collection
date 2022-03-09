@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GCreatures Life"
 ModNameSub = "150"
 BaseDescription = "150% of normal life"
-GameVersion = "363"
+GameVersion = "382"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
 

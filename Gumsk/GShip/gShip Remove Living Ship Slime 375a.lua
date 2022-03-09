@@ -1,7 +1,7 @@
 Author = "Gumsk"
 ModName = "gShip"
 ModNameSub = "Remove Living Ship Slime"
-BaseDescription = "Test"
+BaseDescription = "Removes instances of slime from living ships"
 GameVersion = "375"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\BIOSHIP_PROC.SCENE.MBIN"

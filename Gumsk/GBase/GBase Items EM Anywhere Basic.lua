@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items EM Any Basic"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "371"
+GameVersion = "384"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
@@ -22,9 +22,10 @@ MineralLimit = 0			--0
 GasRate = 100				--100
 GasStorage = 360000			--360000
 GasLimit = 0				--0
-SiloStorage = 1400000		--Original 1400000
+SiloStorage = 1440000		--Original 1440000
 SiloLimit = 0				--0
 FreighterRate = 999999		--10000
+ParagonDistance = 100000	--1000
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -95,7 +96,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"BuildableOnPlanet", "False"},
 		}},
-		
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_SOLAR_S"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Rate",SolarRate},
@@ -151,7 +151,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"PlanetBaseLimit", SiloLimit},
 		}},
-		{["SPECIAL_KEY_WORDS"] = {"ID","AIRLCKCONNECTOR"},
+	{["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"ConnectionDistance",ParagonDistance},
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","AIRLCKCONNECTOR"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Rate", FreighterRate},
 		}},

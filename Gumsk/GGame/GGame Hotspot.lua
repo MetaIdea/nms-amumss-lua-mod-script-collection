@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGame"
 ModNameSub = "Hotspot"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "375"
+GameVersion = "382"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

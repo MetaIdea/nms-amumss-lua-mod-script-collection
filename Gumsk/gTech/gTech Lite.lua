@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Lite"
 BaseDescription = "All my changes to the Technology Table"
-GameVersion = "375"
+GameVersion = "382"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 

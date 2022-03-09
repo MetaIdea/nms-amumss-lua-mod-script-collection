@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gNoClip"
 ModNameSub = "Terrain Objects"
 BaseDescription = "Enables NoClip mode for terrain objects"
-GameVersion = "371"
+GameVersion = "382"
 ModVersion = "a"
 FileSource1 = {
 "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULL.MBIN",

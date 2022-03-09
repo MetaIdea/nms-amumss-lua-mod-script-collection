@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gDebug"
 ModNameSub = "Ships"
 BaseDescription = "Changes to GCDEBUGOPTIONS.GLOBAL.MBIN"
-GameVersion = "370"
+GameVersion = "384"
 ModVersion = "a"
 FileSource = "GCDEBUGOPTIONS.GLOBAL.MBIN"
 

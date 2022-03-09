@@ -2,12 +2,13 @@ Author = "Gumsk"
 ModName = "gLonely"
 ModNameSub = ""
 BaseDescription = "Generates a lonely galaxy"
-GameVersion = "371"
+GameVersion = "382"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
 FileSource3 = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN"
 FileSource4 = "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
+FileSource5 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -39,6 +40,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"SolarSystemMaximumRadiusMassive",4000000}, --1000000
 					},
 				},
+				
+	--=============================================================================
+	--Fewer Freighters and Pirates by Gumsk
+	--=============================================================================				
+				{
+					["VALUE_CHANGE_TABLE"] = {
+						{"LocatorScatterChanceOfCapitalShips",0.5},		--5
+						{"LocatorScatterChanceOfPirates",3},			--20
+					}
+				},
+
 	--=============================================================================
 	--Asteroid Ribbons by Exosolar
 	--=============================================================================
@@ -152,7 +164,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["LINE_OFFSET"] = "+1",
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
-						{"IGNORE",0.05},
+						{"IGNORE",0.03},
 					},
 				},
 				{
@@ -160,7 +172,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["LINE_OFFSET"] = "+2",
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
-						{"IGNORE",0.2},
+						{"IGNORE",0.1},
 					},
 				},
 				{
@@ -168,13 +180,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["LINE_OFFSET"] = "+3",
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
-						{"IGNORE",3},
+						{"IGNORE",1},
 					},
 				},			
 			}
 		},
 	--=============================================================================
-	--Random AI Ship Flyovers Disabled by GhengopelALPHA
+	--Random AI Ship Flyovers Disabled by Gumsk
 	--=============================================================================
 		{
 			["MBIN_FILE_SOURCE"] = FileSource2,
@@ -182,8 +194,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					["PRECEDING_KEY_WORDS"] = {"FlybySpawns","Count"},
 					["VALUE_CHANGE_TABLE"] = {
-						{"x",0}, --1
-						{"y",0}, --3
+						{"x",0}, 	--1
+						{"y",0}, 	--3
 					},
 				},		
 			}
@@ -280,6 +292,38 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 			}
 		},
+
+	--=============================================================================
+	--Fewer Pulse Encounters by Gumsk
+	--=============================================================================
+		{
+			["MBIN_FILE_SOURCE"] = FileSource5,
+			["EXML_CHANGE_TABLE"] = {
+				{
+					["VALUE_CHANGE_TABLE"] = {
+						{"PulseEncounterChance",0.000066}, 			--0.00066
+						{"PulseEncounterChanceStandard",0.00066}, 	--0.0066
+						{"PulseEncounterChanceRed",0.0001}, 		--0.001
+						{"PulseEncounterChanceGreen",0.0002}, 		--0.002
+						{"PulseEncounterChanceBlue",0.0003}, 		--0.003
+					},
+				},
+				
+	--=============================================================================
+	--Fewer Freighter Battles by Gumsk
+	--=============================================================================
+				{
+					["VALUE_CHANGE_TABLE"] = {
+						{"WarpsBetweenBattles",10}, 				--5
+						{"HoursBetweenBattles",5}, 					--3
+					},
+				},
+			}
+		},
+
+	--=============================================================================
+	--=============================================================================
+
 	}
 }
 }}
