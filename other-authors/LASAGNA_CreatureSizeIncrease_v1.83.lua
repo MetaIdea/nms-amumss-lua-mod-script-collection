@@ -15,7 +15,7 @@ SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**This line
 -------------------------------
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CreatureSizeIncrease_v1.82.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CreatureSizeIncrease_v1.83.pak",
 ["MOD_AUTHOR"]				= "Mjjstral_Modified_By_Lllasagna_With_InsaneRuffles_Script",
 ["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 
@@ -29,7 +29,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FISH"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -40,7 +39,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FISHFLOCK"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -51,7 +49,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SWIMCOW"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -62,7 +59,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SWIMRODENT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -73,7 +69,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","JELLYFISH"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -84,7 +79,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SEASNAKE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -95,7 +89,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SHARK"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -106,7 +99,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 												{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLOCK"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -117,7 +109,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FIENDFISHSMALL"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -128,7 +119,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FIENDFISHBIG"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -139,7 +129,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","CRAB"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -150,7 +139,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","BIRD"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -161,7 +149,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FLYINGSNAKE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -172,7 +159,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FLYINGLIZARD"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -183,7 +169,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLY"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -194,7 +179,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SMALLBIRD"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -205,7 +189,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","LARGEBUTTERFLY"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -216,7 +199,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FLYINGBEETLE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -227,7 +209,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","ANTELOPE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -238,7 +219,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -249,7 +229,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","TRICERATOPS"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -260,7 +239,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","RODENT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -271,7 +249,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","MOLE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -282,7 +259,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","COW"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -293,7 +269,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","CAT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -304,7 +279,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","BONECAT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -315,7 +289,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","STRIDER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -326,7 +299,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","TREX"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -337,7 +309,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","TWOLEGANTELOPE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -348,7 +319,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -359,7 +329,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -370,7 +339,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","GRUNT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -381,7 +349,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","BLOB"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -392,7 +359,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SPIDER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -403,7 +369,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -414,7 +379,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","PROTOROLLER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -425,7 +389,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -436,7 +399,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","PROTODIGGER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -447,7 +409,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","PLOUGH"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -458,7 +419,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","DRILL"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -469,7 +429,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDROLL"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -480,7 +439,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDFLOAT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -491,7 +449,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDCRYSTAL"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -502,7 +459,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDBUTTERFLY"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -513,7 +469,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FIEND"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -524,7 +479,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -535,7 +489,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SLUG"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -546,7 +499,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","MINIFIEND"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -557,7 +509,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","FLOATER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -568,7 +519,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -579,7 +529,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","ROCKCREATURE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -590,7 +539,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-						["PRECEDING_KEY_WORDS"] = "...",
 						["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -693,7 +641,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "...",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
