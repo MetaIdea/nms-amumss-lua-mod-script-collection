@@ -32,9 +32,9 @@ NEXUS_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units yo
 NEXUS_NANITES_MULTI		= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Nexus Missions
 NEXUS_PROD_MULTI		= 1		-- Default value is 1 | Multiplys the amount of products you get from Nexus Missions
 
--- When learning words, you can choose to have a PERCENTAGE(%) chance at learning an Atlas word along with them (default value is 15%)
--- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 42): <Property name="PercentageChance" value="15" />
--- Edit the value in the double bracket -> [[ ]] <- section below!! ----> <Property name="PercentageChance" value="15" /> <---- edit this "15", the " " must stay!!
+-- When learning words, you can choose to have a PERCENTAGE(%) chance at learning an Atlas word along with them (default value is 0%)
+-- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 41): <Property name="PercentageChance" value="0" />
+-- Edit the value in the double bracket -> [[ ]] <- section below!! ----> <Property name="PercentageChance" value="0" /> <---- edit this "0", the " " must stay!!
 
 ATLAS_WORD = [[
           <Property value="GcRewardTableItem.xml">
@@ -162,7 +162,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 -----------------------------------------------------------------------------------------------------
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY1"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY1", "Currency", "Units"},
+							["SECTION_UP"]			= 1,
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -173,7 +174,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY2"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY2", "Currency", "Units"},
+							["SECTION_UP"]			= 1,
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
@@ -184,7 +186,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY3"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "PIRATE_BOUNTY3", "Currency", "Units"},
+							["SECTION_UP"]			= 1,
 							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
