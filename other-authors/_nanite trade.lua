@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]              = "_Nanites_trade.pak",
 ["MOD_AUTHOR"]                = "Bambr44",
-["NMS_VERSION"]               = "3.68",
+["NMS_VERSION"]               = "3.84",
 ["MOD_DESCRIPTION"]           = "Stations and Trade posts sell Nanites.",
 ["MODIFICATIONS"]             =
     {
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"NeverSellableItems"},							
-							["SPECIAL_KEY_WORDS"]   = {"Value","TECHFRAG",},
+							
 							["LINE_OFFSET"] 		= "+14",         
 							["REMOVE"] 				= "LINE",
 							
