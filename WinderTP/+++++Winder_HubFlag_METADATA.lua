@@ -32,12 +32,18 @@ BUILD_ANYWHERE = 	false	-- ALLOWS ALL EUCLI-EA OBJECTS TO BE BUILT ANYWHERE
 
 SNAPPING_DISTANCE = "0.05"	-- OBJECT SNAPPING DISTANCE MULTIPLIER
 
+MORE_VANILLA_FLOOR = false 	-- REVERTS THE ADVANCED BASIC FLOOR SNAPPING TO VANILLA
+
+MORE_BUILDING_DISTANCE = false	
+							-- INCREASE DISTANCE AT WHICH OBJECTS CAN BE PLACED
+							-- ALSO ALLOWS ALL OBJECTS TO BE SCALED TO A SMALLER MINIMUM AND BIGGER MAXIMUM
+
 -- BUILDING DISTANCE AND OBJECT SCALING OVERRIDE; NOT REALLY NEEDED ANYMORE SINCE SNAPPING DISTANCE CAN NOW BE TWEAKED
 -- USERS CAN STILL ENABLE THIS TWEAK BY UNCOMMENTING THE NEXT 3 LINES
 -- AND THE "GCBUILDINGGLOBALS.GLOBAL.MBIN" CHANGE TABLE AT THE BOTTOM OF THE FILE
--- BUILD_DISTANCE = 	"1250"
--- OBJECT_SCALE_MIN =	"0.01"
--- OBJECT_SCALE_MAX = 	"4"
+BUILD_DISTANCE = 	"1250"
+OBJECT_SCALE_MIN =	"0.01"
+OBJECT_SCALE_MAX = 	"4"
 
 HUBFLAG_GROUPS = -- BASEBUILDINGTABLE GROUPS
 {
@@ -2562,7 +2568,7 @@ HUBFLAG_VANILLA = -- DEFAULTSAVEDATA VANILLA KnownProducts
 
 INFRA_ADDGROUP =  [[<Property name="Groups">
 <Property value="GcBaseBuildingEntryGroup.xml">
-<Property name="Group" value="BASIC_LEGACY" />
+<Property name="Group" value="ROOMS" />
 <Property name="SubGroupName" value="LEG_INFRA" />
 <Property name="SubGroup" value="0" />
 </Property>
@@ -3114,7 +3120,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"PF_B_M_FLOOR_T_Q",
+	{	["OBJECT"] = {	["ID"] =						"PF_B_M_FLOOR_TQ",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/BASIC_FLOOR_TRI_QUARTER.SCENE.MBIN",  			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
@@ -9060,7 +9066,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"PF_B_BF_WALL_Q_H",
+	{	["OBJECT"] = {	["ID"] =						"PF_B_BF_WALL_QH",
 						["PlacementScene"] =			"",
 						["Style"] = 					"Metal",
 						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/BASIC_WALL_SMALL_HALF.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
@@ -10231,7 +10237,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"PF_B_RB_WALL_Q_H",
+	{	["OBJECT"] = {	["ID"] =						"PF_B_RB_WALL_QH",
 						["PlacementScene"] =			"",
 						["Style"] = 					"Concrete",
 						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/BASIC_WALL_SMALL_HALF.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
@@ -16682,7 +16688,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"PF_ROAD_B_2X2UPF",
+	{	["OBJECT"] = {	["ID"] =						"PF_ROAD_B_2X2UF",
 						["PlacementScene"] =			"",
 						["Style"] = 					"Wood",
 						["SnapPoints"] = 				"CUSTOMMODELS\WINDER\210602_ROADS_1\ROAD_90_2X2UPF_SP.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
@@ -17192,7 +17198,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"PF_ROAD_R_2X2UPF",
+	{	["OBJECT"] = {	["ID"] =						"PF_ROAD_R_2X2UF",
 						["PlacementScene"] =			"",
 						["Style"] = 					"Metal",
 						["SnapPoints"] = 				"CUSTOMMODELS\WINDER\210602_ROADS_1\ROAD_90_2X2UPF_SP.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
@@ -26201,8 +26207,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
 						["NameLower"] = 				"Hungngoi-Taamcaak",
-						["Subtitle"] = 					"Lazer detector - red",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A lazer detector.",
+						["Subtitle"] = 					"Laser detector",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A laser detector.",
 						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
 						["Icon"] = 						"",
 						["Requirements"] ={ 
@@ -62078,7 +62084,8 @@ return [[
       <Property name="InstanceMeshesCost" value="0" />
       <Property name="LastProfiledTimestamp" value="1638162922" />
       <Property name="InstanceLastProfiledTimestamp" value="0" />
-    </Property>]]
+    </Property>
+]]
 end
 
 function MakePlacementScenePath(ID)
@@ -62154,7 +62161,7 @@ end
 	end
 end
 
--- ADDING SNAPFEOUPS TO PARTS TABLE
+-- ADDING SNAPGROUPS TO PARTS TABLE
 for i,j in pairs(HUBFLAG_SNAPGROUPS) do
 	table.insert(EXPORT_PARTS_LIST,GetSnapGroupPart(j["ID"], j["StyleModels"], OVERRIDE_INACTIVE))
 	for k,l in pairs(j["StyleModels"]) do
@@ -62212,6 +62219,46 @@ EXPORT_AUTOPARTDATA		= table.concat(EXPORT_AUTOPARTDATA_LIST)
 if EVERYTHING_CAN_SCALE then
 EXPORT_BASEOBJECTS = EXPORT_BASEOBJECTS:gsub([[name="CanScale" value="False"]], [[name="CanScale" value="True"]])
 end
+
+VANILLA_FLOOR_VALUE_CHANGE = 
+				{
+					["MBIN_FILE_SOURCE"] 	= { "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\BASIC_FLOOR.SCENE.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["REPLACE_TYPE"] 	= "",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "IGNORE"}
+							}
+						},
+					} 
+				}
+
+BUILDING_DISTANCE_CHANGE =
+				{
+					["MBIN_FILE_SOURCE"] 	= "GCBUILDINGGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"]	= 
+					{
+						{
+							--["PRECEDING_KEY_WORDS"] = 	{""},
+							["VALUE_CHANGE_TABLE"] 	= 	
+							{
+								{"BuildingPlacementMaxDistance",	BUILD_DISTANCE},
+							},
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "BuildingPlacementScaleMinMax",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"x", OBJECT_SCALE_MIN},
+								{"y", OBJECT_SCALE_MAX},
+							}
+						},
+					},
+				}
 
 BASEBUILD_ENTRIES =
 {
@@ -62902,8 +62949,7 @@ BASEBUILD_ENTRIES =
 						["ADD"] 				= EXPORT_GROUPS
 					},
 					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "UI_BUILD_GRID_METAL"},
-						-- ["PRECEDING_KEY_WORDS"]	= {"UI_BUILD_GRID_METAL"},
+						["SPECIAL_KEY_WORDS"] = {"Name", "UI_BUILD_GRID_CUBEROOMS"},
 						["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
 						--["LINE_OFFSET"] 		= "+1",
 						["ADD"] 				= 
@@ -62915,17 +62961,8 @@ BASEBUILD_ENTRIES =
 				}
 
 -- THE FINAL COUNTDOWN
-NMS_MOD_DEFINITION_CONTAINER = 
-{
-["MOD_FILENAME"] 		= "~~~~~Winder_HubFlag_METADATA.pak",
-["MOD_BATCHNAME"]		= "~~~~~Winder_HubFlag_COMPATIBILITY.pak",
-["MOD_DESCRIPTION"]		= "Generates Metadata files and patch other mods with this script",
-["MOD_AUTHOR"]			= "WinderTP",
-["NMS_VERSION"]			= "3.75",
-["MODIFICATIONS"] 		= 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] = 
+
+FINAL_VALUE_CHANGE = 
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGCOSTSTABLE.MBIN",
@@ -63058,29 +63095,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 						}
 					},
 				},
-				-- {
-					-- ["MBIN_FILE_SOURCE"] 	= "GCBUILDINGGLOBALS.GLOBAL.MBIN",
-					-- ["EXML_CHANGE_TABLE"]	= 
-					-- {
-						-- {
-							-- --["PRECEDING_KEY_WORDS"] = 	{""},
-							-- ["VALUE_CHANGE_TABLE"] 	= 	
-							-- {
-								-- {"BuildingPlacementMaxDistance",	BUILD_DISTANCE},
-							-- },
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "BuildingPlacementScaleMinMax",
-							-- ["INTEGER_TO_FLOAT"]	= "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"x", OBJECT_SCALE_MIN},
-								-- {"y", OBJECT_SCALE_MAX},
-							-- }
-						-- },
-					-- },
-				-- },
 			}
+
+if MORE_VANILLA_FLOOR then
+	table.insert(FINAL_VALUE_CHANGE, VANILLA_FLOOR_VALUE_CHANGE)
+end
+
+if MORE_BUILDING_DISTANCE then
+	table.insert(FINAL_VALUE_CHANGE, BUILDING_DISTANCE_CHANGE)
+end 
+
+NMS_MOD_DEFINITION_CONTAINER = 
+{
+["MOD_FILENAME"] 		= "~~~~~Winder_HubFlag_METADATA.pak",
+["MOD_BATCHNAME"]		= "~~~~~Winder_HubFlag_COMPATIBILITY.pak",
+["MOD_DESCRIPTION"]		= "Generates Metadata files and patch other mods with this script",
+["MOD_AUTHOR"]			= "WinderTP",
+["NMS_VERSION"]			= "3.75",
+["MODIFICATIONS"] 		= 
+	{
+		{
+			["MBIN_CHANGE_TABLE"] = FINAL_VALUE_CHANGE
 		}
 	},
 ["ADD_FILES"] 			= NEWFILES_FINAL,
