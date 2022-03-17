@@ -8,6 +8,18 @@ NEW_COLOURS_HEX =
 -- COLOURS WILL BE SHOWN TO OTHER PLAYERS IN MULTIPLAYER AS WHITE
 -- KEEP THE "Name" VALUE UNDER 30 CHARACTERS
 -- NOTE: TYPE "&" SYMBOL AS "&amp;"
+--[[ CODE EXAMPLE FOR A SINGLE PALETTE
+	{
+		["PrimaryColour"] = 	"000000",
+		["SecondaryColour"] = 	"000000",
+		["TernaryColour"] = 	"000000",
+		["QuaternaryColour"] = 	"000000",
+		["Name"] =				"All Black",
+		["Id"] =				"BF_ALLBLACK",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+	},
+-- COLOURS ARE IN HEXCODE
+]]
 {	
 	-- {
 		-- ["PrimaryColour"] = 	"ff0000",
@@ -91,39 +103,12 @@ NEW_COLOURS_HEX =
 		-- ["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
 	-- },
 	{
-		["PrimaryColour"] = 	"C737FA",	--284
-		["SecondaryColour"] = 	"F54198",
-		["TernaryColour"] = 	"DE31DB",
-		["QuaternaryColour"] = 	"DE31DB",
-		["Name"] =				"Psychedelic Purple &amp; Rose",
-		["Id"] =				"BF_PSYC_ROSE",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	},
-	{
-		["PrimaryColour"] = 	"F568D3",	--314
-		["SecondaryColour"] = 	"4EF5F2",
-		["TernaryColour"] = 	"3EA8A6",
-		["QuaternaryColour"] = 	"A8368E",
-		["Name"] =				"Rose Pink &amp; Fluorescent Blue",
-		["Id"] =				"BF_ROS_FLUBLU",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	},
-	{
 		["PrimaryColour"] = 	"f090be",	--331
 		["SecondaryColour"] = 	"a4e6f0",
 		["TernaryColour"] = 	"a34673",
 		["QuaternaryColour"] = 	"659ba3",
 		["Name"] =				"Pastel Magenta &amp; Blizzard Blue",
 		["Id"] =				"BF_MAG_BLIZ",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	},
-	{
-		["PrimaryColour"] = 	"F63B3B",	--0
-		["SecondaryColour"] = 	"903BF6",
-		["TernaryColour"] = 	"D43383",
-		["QuaternaryColour"] = 	"A833D4",
-		["Name"] =				"Coral Red &amp; Veronica",
-		["Id"] =				"BF_COR_VER",
 		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
 	},
 	{
@@ -142,6 +127,69 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"D49D1C",
 		["Name"] =				"Crayon Orange &amp; Jonquil",
 		["Id"] =				"BF_ORA_JON",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+	},
+	{
+		["PrimaryColour"] = 	"A5F54E",	--88
+		["SecondaryColour"] = 	"EB6BFF",
+		["TernaryColour"] = 	"61A814",
+		["QuaternaryColour"] = 	"9725A8",
+		["Name"] =				"French Lime &amp; Heliotrope",
+		["Id"] =				"BF_LIM_HELIO",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+	},
+	{
+		["PrimaryColour"] = 	"A9F3CC",	--148
+		["SecondaryColour"] = 	"A8F29D",
+		["TernaryColour"] = 	"B6F0F2",
+		["QuaternaryColour"] = 	"B6F0F2",
+		["Name"] =				"Magic Mint &amp; Light Green",
+		["Id"] =				"BF_MINT_LG",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+	},
+	{
+		["PrimaryColour"] = 	"2CF6D7",	--170
+		["SecondaryColour"] = 	"2C3EF6",
+		["TernaryColour"] = 	"26BFD4",
+		["QuaternaryColour"] = 	"2663D4",
+		["Name"] =				"Turquoise &amp; Palatinate Blue",
+		["Id"] =				"BF_TUR_PAL",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+	},
+	{
+		["PrimaryColour"] = 	"0057b7",	--211
+		["SecondaryColour"] = 	"ffd700",
+		["TernaryColour"] = 	"ffd700",
+		["QuaternaryColour"] = 	"ffd700",
+		["Name"] =				"Ukraine Colours",
+		["Id"] =				"BF_UKRAINE",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+	},
+	{
+		["PrimaryColour"] = 	"2c65a9",	--212
+		["SecondaryColour"] = 	"52ce97",
+		["TernaryColour"] = 	"52ce97",
+		["QuaternaryColour"] = 	"52ce97",
+		["Name"] =				"Lapis &amp; Shamrock",
+		["Id"] =				"BF_LAP_SHAM",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+	},
+{
+		["PrimaryColour"] = 	"C737FA",	--284
+		["SecondaryColour"] = 	"F54198",
+		["TernaryColour"] = 	"DE31DB",
+		["QuaternaryColour"] = 	"DE31DB",
+		["Name"] =				"Psychedelic Purple &amp; Rose",
+		["Id"] =				"BF_PSYC_ROSE",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+	},
+	{
+		["PrimaryColour"] = 	"F63B3B",	--0
+		["SecondaryColour"] = 	"903BF6",
+		["TernaryColour"] = 	"D43383",
+		["QuaternaryColour"] = 	"A833D4",
+		["Name"] =				"Coral Red &amp; Veronica",
+		["Id"] =				"BF_COR_VER",
 		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
 	},
 	{
@@ -181,15 +229,6 @@ NEW_COLOURS_HEX =
 		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
 	},
 	{
-		["PrimaryColour"] = 	"A5F54E",	--88
-		["SecondaryColour"] = 	"EB6BFF",
-		["TernaryColour"] = 	"61A814",
-		["QuaternaryColour"] = 	"9725A8",
-		["Name"] =				"French Lime &amp; Heliotrope",
-		["Id"] =				"BF_SKY_YELORA",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	},
-	{
 		["PrimaryColour"] = 	"2b651e",	--109
 		["SecondaryColour"] = 	"5fc8dc",
 		["TernaryColour"] = 	"5fc8dc",
@@ -217,21 +256,12 @@ NEW_COLOURS_HEX =
 		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
 	},
 	{
-		["PrimaryColour"] = 	"A9F3CC",	--148
-		["SecondaryColour"] = 	"A8F29D",
-		["TernaryColour"] = 	"B6F0F2",
-		["QuaternaryColour"] = 	"B6F0F2",
-		["Name"] =				"Magic Mint &amp; Light Green",
-		["Id"] =				"BF_MINT_LG",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	},
-	{
-		["PrimaryColour"] = 	"2CF6D7",	--170
-		["SecondaryColour"] = 	"2C3EF6",
-		["TernaryColour"] = 	"26BFD4",
-		["QuaternaryColour"] = 	"2663D4",
-		["Name"] =				"Turquoise &amp; Palatinate Blue",
-		["Id"] =				"BF_TUR_PAL",
+		["PrimaryColour"] = 	"69CFFF",	--199
+		["SecondaryColour"] = 	"F5A84C",
+		["TernaryColour"] = 	"237EA8",
+		["QuaternaryColour"] = 	"A86413",
+		["Name"] =				"Light Sky Blue &amp; Yellow Orange",
+		["Id"] =				"BF_SKY_YELORA",
 		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
 	},
 	{
@@ -244,39 +274,12 @@ NEW_COLOURS_HEX =
 		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
 	},
 	{
-		["PrimaryColour"] = 	"69CFFF",	--199
-		["SecondaryColour"] = 	"F5A84C",
-		["TernaryColour"] = 	"237EA8",
-		["QuaternaryColour"] = 	"A86413",
-		["Name"] =				"Light Sky Blue &amp; Yellow Orange",
-		["Id"] =				"BF_SKY_YELORA",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	},
-	{
 		["PrimaryColour"] = 	"BAD6F5",	--211
 		["SecondaryColour"] = 	"AEF4F5",
 		["TernaryColour"] = 	"C9C6F5",
 		["QuaternaryColour"] = 	"C9C6F5",
 		["Name"] =				"Cornflower &amp; Pale Blue",
 		["Id"] =				"BF_CORN_BLUE",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	},
-	{
-		["PrimaryColour"] = 	"0057b7",	--211
-		["SecondaryColour"] = 	"ffd700",
-		["TernaryColour"] = 	"ffd700",
-		["QuaternaryColour"] = 	"ffd700",
-		["Name"] =				"Ukraine Colours",
-		["Id"] =				"BF_UKRAINE",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	},
-	{
-		["PrimaryColour"] = 	"2c65a9",	--212
-		["SecondaryColour"] = 	"52ce97",
-		["TernaryColour"] = 	"52ce97",
-		["QuaternaryColour"] = 	"52ce97",
-		["Name"] =				"Lapis &amp; Shamrock",
-		["Id"] =				"BF_LAP_SHAM",
 		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
 	},
 	{
@@ -311,28 +314,30 @@ NEW_COLOURS_HEX =
 VANILLA_PALETTE_IDS =
 -- VANILLA PALETTE IDS TO BE ADDED TO OTHER PALETTE GROUPS
 {
-	-- {
-		-- ["Group"] = "LEGACY",
-		-- ["Palettes"] =
-		-- {
-			-- "LEGACY1",
-			-- "LEGACY2",
-			-- "LEGACY3",
-			-- "LEGACY4",
-			-- "LEGACY5",
-			-- "LEGACY6",
-			-- "LEGACY7",
-			-- "LEGACY8",
-			-- "LEGACY9",
-			-- "LEGACY10",
-			-- "LEGACY11",
-			-- "LEGACY12",
-			-- "LEGACY13",
-			-- "LEGACY14",
-			-- "LEGACY15",
-			-- "LEGACY16",
-		-- }
-	-- },
+	["LEGACY"] = 
+	{
+		["Group"] = "LEGACY",
+		["Palettes"] =
+		{
+			"LEGACY1",
+			"LEGACY2",
+			"LEGACY3",
+			"LEGACY4",
+			"LEGACY5",
+			"LEGACY6",
+			"LEGACY7",
+			"LEGACY8",
+			"LEGACY9",
+			"LEGACY10",
+			"LEGACY11",
+			"LEGACY12",
+			"LEGACY13",
+			"LEGACY14",
+			"LEGACY15",
+			"LEGACY16",
+		}
+	},
+	["FLAGS"] =
 	{
 		["Group"] = "FLAGS",
 		["Palettes"] =
@@ -345,6 +350,7 @@ VANILLA_PALETTE_IDS =
 			"FLAGS6",
 		}
 	},
+	["COLOURS_S"] =
 	{
 		["Group"] = "COLOURS_S",
 		["Palettes"] =
@@ -362,6 +368,7 @@ VANILLA_PALETTE_IDS =
 			"STONEROYAL1",
 		}
 	},
+	["COLOURS_F"] =
 	{
 		["Group"] = "COLOURS_F",
 		["Palettes"] =
@@ -376,6 +383,7 @@ VANILLA_PALETTE_IDS =
 			"FIBREGLASS8",
 		}
 	},
+	["COLOURS_T"] =
 	{
 		["Group"] = "COLOURS_T",
 		["Palettes"] =
@@ -408,12 +416,16 @@ NUM_VANILLA_COLOUR =
 ["COLOURS_T"] = 9,
 }
 
+-- MULTIPLIER TO THE HEIGHT OF THE COLOUR PALETTE SELECTRION WINDOW
+-- MODIFY WITH CARE
+UI_HEIGHT_MULTIPLIER = "2.2"
+
 -- NUMBER OF CURRENT VANILLA PALETTES
--- ONLY EDIT UPON VANILLA BASE BUILDING PALETTE UPDATE
+-- ONLY EDIT UPON VANILLA BASE BUILDING PALETTE UPDATES
 CURRENT_VANILLA_COLOUR = 51
 
 -- NUMBER OF CURRENT VANILLA UI PALLETE SLOTS
--- ONLY EDIT UPON VANILLA UI UPDATE
+-- ONLY EDIT UPON VANILLA UI UPDATES
 VANILLA_UI_SLOTS = 25
 
 -- HARDCODED NUMBER OF MAXIMUM SLOTS
@@ -424,15 +436,12 @@ PALETTE_SLOTS_LIMIT = 64
 -- DO NOT ALTER
 UI_SINGLE_LINE = 7
 
--- MULTIPLIER TO THE HEIGHT OF THE COLOUR PALETTE SELECTRION WINDOW
--- MODIFY WITH CARE
-UI_HEIGHT_MULTIPLIER = "2.3"
-
 -- SUB CANVAS EXTRA UI HEIGHT
 -- DO NOT ALTER
 UI_OUTER_SPACING = "17"
 
-
+-- PRINT DEBUG TEXT
+DEBUG_TEXT = false
 
 -- EXML DATA BLOCKS
 SPACING = [[
@@ -585,10 +594,12 @@ LINE_BREAK = [[
         </Property>
 ]]
 
--- SETTING ALL OBJECTS TO USE LEGACY PALETTE GROUP
-PALETTE_GROUP_CHANGE = 
+-- FORCES ALL BASE OBJECT TO USE THE NOW-UNIFIED LEGACY PALETTE GROUP
+PALETTE_GROUP_REPLACEMENT =
 	{
-		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml"},
+		-- ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml"},
+		-- ["VALUE_MATCH_OPTIONS"] = "~=",
+		-- ["VALUE_MATCH"] = ".+",
 		["REPLACE_TYPE"] = "ALL",
 		["VALUE_CHANGE_TABLE"] = 
 		{
@@ -636,19 +647,48 @@ return [[
 ]]
 end
 
-function GetPaletteGroupEntry(PALETTEGROUP, ID)
+--[[function GetObjectPaletteGroupReplacement(FROM)
+return
+	{
+		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml"},
+		["VALUE_MATCH"] = FROM,
+		["REPLACE_TYPE"] = "ALL",
+		["VALUE_CHANGE_TABLE"] = 
+		{
+			{"ColourPaletteGroupId", "LEGACY"}
+		}
+	}
+end]]
+
+function GetPaletteGroupEntry(PALETTEGROUP, ADD)
 return
 	{
 		["PRECEDING_KEY_WORDS"] = {"PaletteGroups"},
 		["PRECEDING_FIRST"] = "TRUE",
 		["SPECIAL_KEY_WORDS"] = {"Id", PALETTEGROUP},
 		["LINE_OFFSET"] = "+1",
-		["ADD"] = [[
+		["ADD"] = ADD
+	}
+end
+
+-- EFFICIENCY IMPROVEMENTS COURTESY OF Wberto
+function GetPaletteGroupEntry_ALT(ID)
+return [[
 		<Property value="NMSString0x20.xml">
-		  <!--BUILDFRAME-->
+		  <!--BUILDFRAME -->
 		  <Property name="Value" value= "]] .. ID .. [["/>
 		</Property>
 ]]
+end
+
+-- ADDING NEW PALETTES SO THAT THE LAST CUSTOM PALETTE IS THE PALETTE_SLOTS_LIMITth ONE
+function GetYeetPaletteTable(WHERE, ADD)
+return
+	{
+		["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingPalette.xml"},
+		["SECTION_ACTIVE"] = WHERE,
+		["REPLACE_TYPE"] = "ADDafterSECTION",
+		["ADD"] = ADD
 	}
 end
 
@@ -871,16 +911,21 @@ end
 
 MARVELLER = {}
 CHANGE_LEOPARDON = {}
-table.insert(MARVELLER, [[<!--BuildFrame-->]])
+table.insert(MARVELLER, [[<!--BuildFrame-->
+]])
+PALETTE_GROUP_CHANGE_TABLE = {}
+PALETTE_GROUP_ADD_TEXT = {}
 
 -- PALETTE EXPANSION
--- INJECTING ALL PALETTES IN GROUPS OTHER THAN LEGACY INTO THE LEGACY GROUP
+
+-- INITIALISE THE TEXT TABLE TO BE INJECTED INTO CORRESPONDING VANILLA PALETTE GROUPS
+-- EFFICIENCY IMPROVEMENTS COURTESY OF Wberto
 for i,j in pairs(VANILLA_PALETTE_IDS) do
-	for k,l in pairs(j["Palettes"]) do
-		table.insert(CHANGE_LEOPARDON, GetPaletteGroupEntry("LEGACY", l))
-	end
+	if DEBUG_TEXT then print(j["Group"]) end
+	PALETTE_GROUP_ADD_TEXT[j["Group"]] = {}
 end
--- ADDING IN NEW PALETTES
+
+-- ADDING NEW PALETTES
 for m,n in pairs(NEW_COLOURS_HEX) do
 NEW_COLOURS = {}
 CURRENT_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR + 1
@@ -890,23 +935,38 @@ CURRENT_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR + 1
 		for k,l in pairs(RGB) do
 			-- CONVERTING 2 DIGITS OF THE HEX COLOUR INTO DECIMAL, DIVIDING BY 255 AND TRUNCATING TO 3 D.P
 			NEW_COLOUR_TEMP[l] = trunc(tonumber(string.sub(n[j],((k-1)*2)+1,((k-1)*2)+2),16)/255)
-			print(l .. [[ - ]] .. NEW_COLOUR_TEMP[l])
+			if DEBUG_TEXT then print(l .. [[ - ]] .. NEW_COLOUR_TEMP[l]) end
 		end
 		-- SETTING PRI/SEC/TER/QUA COLOURS ACCORDING TO PALETTE_QUAD
 		NEW_COLOURS[j] = NEW_COLOUR_TEMP
 	end
 	table.insert(MARVELLER,GetBaseBuildingPalette(NEW_COLOURS["PrimaryColour"], NEW_COLOURS["SecondaryColour"], NEW_COLOURS["TernaryColour"], NEW_COLOURS["QuaternaryColour"], n["Name"], n["Id"]))
-	-- LIMITS NUMBER OF CUSTOM COLOURS SINCE COLOUR PALETTES ARE FIXED 25 SLOTS WITHOUT UI FILE CHANGES
 	for o,p in pairs(n["PaletteGroup"]) do
-		-- NUM_VANILLA_COLOUR[p] = NUM_VANILLA_COLOUR[p] + 1
-		-- REMAINING_COLOUR_SLOTS = PALETTE_SLOTS_LIMIT - NUM_VANILLA_COLOUR[p]
-		-- if REMAINING_COLOUR_SLOTS > 0 then
-			-- DOESN'T ADD THE PALETTE IF REMAINING_COLOUR_SLOTS REACHES 0 I.E. UI CANNOT HANDLE IT
-			table.insert(CHANGE_LEOPARDON, GetPaletteGroupEntry(p, n["Id"]))
-		-- end
+		table.insert(PALETTE_GROUP_ADD_TEXT[p], GetPaletteGroupEntry_ALT(n["Id"]))
 	end
+	-- CHECK TOTAL NUMBER OF PALETTES TO PREVENT VANILLA PALETTES DISAPPEARING FROM OVERFLOW
 	if CURRENT_VANILLA_COLOUR == PALETTE_SLOTS_LIMIT and not YEET_VANILLA_PALETTES then break end
 end
+
+-- INJECTING ALL VANILLA PALETTES IN GROUPS OTHER THAN LEGACY INTO THE LEGACY GROUP
+for i,j in pairs(VANILLA_PALETTE_IDS) do
+	-- table.insert(CHANGE_LEOPARDON, GetObjectPaletteGroupReplacement(j["Group"]))
+	if j["Group"] ~= "LEGACY" then
+		for k,l in pairs(j["Palettes"]) do
+			table.insert(PALETTE_GROUP_ADD_TEXT["LEGACY"], GetPaletteGroupEntry_ALT(l))
+		end
+	end
+end
+
+-- EFFICIENCY IMPROVEMENTS COURTESY OF Wberto
+table.insert(CHANGE_LEOPARDON, PALETTE_GROUP_REPLACEMENT)
+for i,j in pairs(VANILLA_PALETTE_IDS) do
+	-- DOESN'T TRY TO MAKE AMUMSS DO NOTHING IF A PALETTE GROUP HAS NOTHING ADDED TO IT, REDUCES WARNINGS
+	if #PALETTE_GROUP_ADD_TEXT[j["Group"]] > 0 then
+		PALETTE_GROUP_CHANGE_TABLE[j["Group"]] = GetPaletteGroupEntry(j["Group"], table.concat(PALETTE_GROUP_ADD_TEXT[j["Group"]]))
+	end
+end
+
 table.insert(MARVELLER, [[<!--BuildFrame End-->]])
 
 
@@ -924,10 +984,16 @@ for i = VANILLA_UI_SLOTS + 1, PALETTE_SLOTS_LIMIT do
 	table.insert(COLOUR_UI_ADD_TABLE, GetPaletteUIData(i-1))
 end
 table.insert(COLOUR_UI_ADD_TABLE, [[<!--BuildFrame End-->]])
--- print(table.concat(COLOUR_UI_ADD_TABLE))
+if DEBUG_TEXT then
+	print(table.concat(COLOUR_UI_ADD_TABLE))
+	print(#VANILLA_PALETTE_IDS["LEGACY"]["Palettes"])
+end
 
-table.insert(CHANGE_LEOPARDON, { ["PRECEDING_KEY_WORDS"] = {"Palettes"}, ["LINE_OFFSET"] = "+0", ["ADD"] = table.concat(MARVELLER)})
-table.insert(CHANGE_LEOPARDON, PALETTE_GROUP_CHANGE)
+table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(#VANILLA_PALETTE_IDS["LEGACY"]["Palettes"]), table.concat(MARVELLER)))
+
+for i,j in pairs(PALETTE_GROUP_CHANGE_TABLE) do
+	table.insert(CHANGE_LEOPARDON, j)
+end
 
 
 
@@ -935,7 +1001,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "~~~SACS.pak",
 ["MOD_BATCHNAME"]			= "~~~~BuildFrame_Comp.pak",
-["MOD_AUTHOR"]				= "WinderTP, Babscoole",
+["MOD_AUTHOR"]				= "WinderTP, Babscoole, Wberto",
 ["MOD_DESCRIPTION"]			= "Selection Augmentation for Colour System", -- AKA Palette Augmentation and Tailoring System (PAnTS)
 ["NMS_VERSION"]				= "",
 ["GLOBAL_INTEGER_TO_FLOAT"]	= "PRESERVE",
@@ -975,7 +1041,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- THIS SECTION IS A SUB CANVAS WITH EXTRA UNITS MORE HEIGHT
 							-- THE EXTRA UNITS ARE FIRST TAKEN AWAY
 							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData.xml" }, 
-							["SECTION_ACTIVE"] = 1,
+							-- ["SECTION_ACTIVE"] = 1,
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] = "-",
 							["VALUE_CHANGE_TABLE"] = 
@@ -986,7 +1052,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							-- THE MATCHED HEIGHT IS MULTIPLIED EQUALLY TO THE PARENT UI CANVAS
 							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData.xml" }, 
-							["SECTION_ACTIVE"] = 1,
+							-- ["SECTION_ACTIVE"] = 1,
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] = "*",
 							["VALUE_CHANGE_TABLE"] = 
@@ -997,7 +1063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							-- THE EXTRA UNITS ARE ADDED BACK AFTER MULTIPLICATION
 							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData.xml" }, 
-							["SECTION_ACTIVE"] = 1,
+							-- ["SECTION_ACTIVE"] = 1,
 							["REPLACE_TYPE"] = "",
 							["MATH_OPERATION"] = "+",
 							["VALUE_CHANGE_TABLE"] = 
@@ -1022,12 +1088,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-							-- EXPANDS MAIN COLOUR/MATERIAL CUSTOMISATION CANVAS TO VERTICAL 85% OF SCREEN
+							-- EXPANDS MAIN COLOUR/MATERIAL CUSTOMISATION CANVAS TO VERTICAL 90% OF SCREEN
 							["SPECIAL_KEY_WORDS"] = {"ID", "CUSTOMISE", "Layout", "GcNGuiLayoutData.xml"},
 							["REPLACE_TYPE"] = "",
 							["VALUE_CHANGE_TABLE"] = 
 							{ 
-								{"Height", "85" },
+								{"Height", "90" },
 							},
 						},
 					}
