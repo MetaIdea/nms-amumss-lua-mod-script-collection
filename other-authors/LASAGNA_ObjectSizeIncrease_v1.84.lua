@@ -7,8 +7,9 @@ LARGEST_SCALE = 9
 
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
 RADIUS_MULTIPLIER = 3			--objects draw distance multiplier (limited by engine's hard-limit)
-GRASS_RADIUS_MULTIPLIER = 1		--GRASS draw distance multiplier --***1 = no changes to vanilla
-LOD_DISTANCE_MULTIPLIER = 2		--LOD distance multiplier (object visual quality in distance)
+-- GRASS_RADIUS_MULTIPLIER = 1		--GRASS draw distance multiplier --***1 = no changes to vanilla, commented out
+LARGE_LOD_DISTANCE_MULTIPLIER = 2 --*** Added this line in 1.84 -lasagna
+LOD_DISTANCE_MULTIPLIER = 1.5		--LOD distance multiplier (object visual quality in distance)   --and this to 1.5 (from 1 & 2)
 COVERAGE_MULTIPLIER = 1			--object placement coverage multiplier (object density) --***needed to work
 
 --GCGRAPHICSGLOBALS.GLOBAL
@@ -23,7 +24,7 @@ PLANET_LOD_MULTIPLIER = 10		--planet lod distance multiplier
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_ObjectSizeIncrease_v1.83.pak",
+["MOD_FILENAME"] 			= "LASAGNA_ObjectSizeIncrease_v1.84.pak",
 ["MOD_AUTHOR"]				= "Mjjstral_Modified_By_Lllasagna_With_InsaneRuffles_And_trevix_+_Babscoole_Script",
 ["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 
@@ -947,49 +948,49 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] 		= "+1",     --one line down
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"LodDistances",	LARGE_LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*", --***Removed these 4 sections to just impact trees & larger objects
+							["REPLACE_TYPE"] 		= "ALL",   --***Otherwise, way too much hitching
+							["LINE_OFFSET"] 		= "+2",	   --***re-added in v1.84
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
 								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
 							}
 						},
-						--{
-							--["PRECEDING_KEY_WORDS"] = "",
-							--["MATH_OPERATION"] 		= "*", --***Removed these 4 sections to just impact trees & larger objects
-							--["REPLACE_TYPE"] 		= "ALL",   --***Otherwise, way too much hitching
-							--["LINE_OFFSET"] 		= "+2",
-							--["VALUE_CHANGE_TABLE"] 	= 
-							--{
-								--{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
-							--}
-						--},
-						--{
-							--["PRECEDING_KEY_WORDS"] = "",
-							--["MATH_OPERATION"] 		= "*",
-							--["REPLACE_TYPE"] 		= "ALL",
-							--["LINE_OFFSET"] 		= "+3",
-							--["VALUE_CHANGE_TABLE"] 	= 
-							--{
-								--{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
-							--}
-						--},
-						--{
-							--["PRECEDING_KEY_WORDS"] = "",
-							--["MATH_OPERATION"] 		= "*",
-							--["REPLACE_TYPE"] 		= "ALL",
-							--["LINE_OFFSET"] 		= "+4",
-							--["VALUE_CHANGE_TABLE"] 	= 
-							--{
-								--{"LodDistances",	LOD_DISTANCE_MULTIPLIER} 
-							--}
-						--},
-						--{
-							--["PRECEDING_KEY_WORDS"] = "",
-							--["MATH_OPERATION"] 		= "*",
-							--["REPLACE_TYPE"] 		= "ALL",
-							--["LINE_OFFSET"] 		= "+5",
-							--["VALUE_CHANGE_TABLE"] 	= 
-							--{
-								--{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
-							--}
-						--},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER} 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -1018,19 +1019,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"FadeOutEndDistance",		RADIUS_MULTIPLIER}
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS",},
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
-								{"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
-								{"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
-								{"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER}
-							}
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS",},
+							-- ["PRECEDING_KEY_WORDS"] = "",
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								-- {"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								-- {"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								-- {"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER}
+							-- }
+						-- },
 						{			
 							["PRECEDING_KEY_WORDS"] = { "Placement", "GRASS" }, --***these 6 lines = code by lasagna, this applies to all objects, not just GRASS, incidentally
 							["REPLACE_TYPE"] 		= "ALL",
@@ -1133,7 +1134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] 		= "+1",    
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"RegionLODRadius",	0}		--distance radius of finest details, increase causes flickering on some planets
+								{"RegionLODRadius",	"0"}		--distance radius of finest details, increase causes flickering on some planets
 							}
 						},
 						{
@@ -1227,12 +1228,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 							["ADD"] = 
 [[
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN" />
-        </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENBIGPROPSOBJECTSFULL.MBIN" />
         </Property>
