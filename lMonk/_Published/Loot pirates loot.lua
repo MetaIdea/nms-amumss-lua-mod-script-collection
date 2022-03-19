@@ -3,7 +3,7 @@ local desc = [[
   Replace space pirates battle loot with a more varied list
 ]]------------------------------------------------------------------------
 
-mod_version = 1.1
+mod_version = 1.11
 
 local F_ = {}
 F_.TableItemSingle = function(item, data, reward)
@@ -11,7 +11,7 @@ F_.TableItemSingle = function(item, data, reward)
 	if item.x ~= nil then
 		minmax = string.format([[
 			<Property name="AmountMin" value="%s" />
-			<Property name="AmountMin" value="%s" />]],
+			<Property name="AmountMax" value="%s" />]],
 			item.n, item.x
 		)
 	end
