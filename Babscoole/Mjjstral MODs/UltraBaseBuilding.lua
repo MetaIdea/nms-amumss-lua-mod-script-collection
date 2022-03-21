@@ -833,7 +833,7 @@ BUILDABLE_OBJECT_TABLE =
 }
 
 function GetBaseBuildingObject(ID_NAME, P_NAME, PATH, OFFSET, GROUP_NAME, SUBGROUP_NAME)
-BASEBUILDINGTABLE_ADDING =
+BASEBUILDINGOBJECTSTABLE_ADDING =
 [[
     <Property value="GcBaseBuildingEntry.xml">
 	  <Property name="ID" value="]].. ID_NAME ..[[" />
@@ -920,14 +920,14 @@ BASEBUILDINGTABLE_ADDING =
       </Property>
     </Property>
 ]]
-return BASEBUILDINGTABLE_ADDING
+return BASEBUILDINGOBJECTSTABLE_ADDING
 end
 
 function GetBaseBuildingPart(ID_NAME, P_NAME, PATH)
 BASEBUILDINGPARTSTABLE_ADDING =
 [[
     <Property value="GcBaseBuildingPart.xml">
-      <Property name="ID" value="]].. ID_NAME ..[[" />
+      <Property name="ID" value="_]].. ID_NAME ..[[" />
       <Property name="StyleModels">
         <Property value="GcBaseBuildingPartStyleModel.xml">
           <Property name="Style" value="GcBaseBuildingPartStyle.xml">
@@ -947,7 +947,7 @@ return BASEBUILDINGPARTSTABLE_ADDING
 end
 
 function GetProduct(ID_NAME, P_NAME, ICON)
-PRODUCT =
+PRODUCT_ADDING =
 [[
     <Property value="GcProductData.xml">
 	  <Property name="Id" value="]].. ID_NAME ..[[" />
@@ -1033,14 +1033,14 @@ PRODUCT =
 	  <Property name="EggModifierIngredient" value="True" />
     </Property>
 ]]
-return PRODUCT
+return PRODUCT_ADDING
 end
 
 function GetAutoPartData(ID_NAME)
-AutoPartData =
+AUTOPARTDATA_ADDING =
 [[
 	<Property value="GcBaseBuildingPartData.xml">
-      <Property name="PartID" value="]] .. ID_NAME .. [[" />
+      <Property name="PartID" value="_]] .. ID_NAME .. [[" />
       <Property name="Style" value="GcBaseBuildingPartStyle.xml">
         <Property name="Style" value="None" />
       </Property>
@@ -1085,17 +1085,35 @@ AutoPartData =
       <Property name="InstanceLastProfiledTimestamp" value="0" />
     </Property>
 ]]
-return AutoPartData
+return AUTOPARTDATA_ADDING
 end
 
+function GetBaseBuildingCost(ID_NAME)
+BASEBUILDINGCOST_ADDING =
+[[
+    <Property value="GcBaseBuildingEntryCosts.xml">
+      <Property name="ID" value="]].. ID_NAME ..[[" />
+      <Property name="Active0AverageFrameTimeCost" value="0.0082" />
+      <Property name="Active1AverageFrameTimeCost" value="0.008175" />
+      <Property name="ActiveTotalNodes" value="36" />
+      <Property name="ActivePhysicsComponents" value="12" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.00809" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0.00801" />
+      <Property name="InactiveTotalNodes" value="25" />
+      <Property name="InactivePhysicsComponents" value="1" />
+    </Property>
+]]
+return BASEBUILDINGCOST_ADDING
+end	
+
 function GetKnownProduct(ID_NAME)
-DEFAULTSAVEDATA_KNOWNPRODUCT =
+DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING =
 [[
       <Property value="NMSString0x10.xml">
 		<Property name="Value" value="]].. ID_NAME ..[[" />
       </Property>
 ]]
-return DEFAULTSAVEDATA_KNOWNPRODUCT
+return DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING
 end
 
 function GetPlaceDataEntity(ID_NAME)
@@ -1109,7 +1127,7 @@ PLACEMENTDATA_ENTITY =
         <Property value="GcBasePlacementRule.xml">
           <Property name="Conditions" />
           <Property name="PositionLocator" value="" />
-          <Property name="PartID" value="]].. ID_NAME ..[[" />
+          <Property name="PartID" value="_]].. ID_NAME ..[[" />
           <Property name="ORConditions" value="False" />
           <Property name="TwinCriteria" value="None" />
         </Property>
@@ -1323,20 +1341,22 @@ GROUP =
 <!-- UBB GROUPS END-->	
 ]]
 
-BASEBUILDINGTABLE_ADDING_ALL = {}
+BASEBUILDINGOBJECTSTABLE_ADDING_ALL = {}
 BASEBUILDINGPARTSTABLE_ADDING_ALL = {}
-PRODUCT_ALL = {}
-AutoPartData_ALL = {}
-DEFAULTSAVEDATA_KNOWNPRODUCT_ALL = {}
+PRODUCT_ADDING_ALL = {}
+AUTOPARTDATA_ADDING_ALL = {}
+BASEBUILDINGCOST_ADDING_ALL = {}
+DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING_ALL = {}
 PLACEMENTDATA_ENTITY_ALL = {}
 ADD_FILES_TABLE = {}
 
 for i=1,#BUILDABLE_OBJECT_TABLE,1 do
-	table.insert(BASEBUILDINGTABLE_ADDING_ALL,GetBaseBuildingObject(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"], BUILDABLE_OBJECT_TABLE[i]["OFFSET"],BUILDABLE_OBJECT_TABLE[i]["GROUP_NAME"], BUILDABLE_OBJECT_TABLE[i]["SUBGROUP_NAME"]))
+	table.insert(BASEBUILDINGOBJECTSTABLE_ADDING_ALL,GetBaseBuildingObject(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"], BUILDABLE_OBJECT_TABLE[i]["OFFSET"],BUILDABLE_OBJECT_TABLE[i]["GROUP_NAME"], BUILDABLE_OBJECT_TABLE[i]["SUBGROUP_NAME"]))
 	table.insert(BASEBUILDINGPARTSTABLE_ADDING_ALL,GetBaseBuildingPart(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"]))
-	table.insert(PRODUCT_ALL,GetProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["ICON"]))
-	table.insert(AutoPartData_ALL,GetAutoPartData(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
-	table.insert(DEFAULTSAVEDATA_KNOWNPRODUCT_ALL,GetKnownProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
+	table.insert(PRODUCT_ADDING_ALL,GetProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["ICON"]))
+	table.insert(AUTOPARTDATA_ADDING_ALL,GetAutoPartData(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
+	table.insert(BASEBUILDINGCOST_ADDING_ALL,GetBaseBuildingCost(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))	
+	table.insert(DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING_ALL,GetKnownProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
 	table.insert(PLACEMENTDATA_ENTITY_ALL,GetPlaceDataEntity(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
 	table.insert(ADD_FILES_TABLE,GetEntityAddFile(BUILDABLE_OBJECT_TABLE[i]["PATH"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
 	table.insert(ADD_FILES_TABLE,GetSceneAddFile(BUILDABLE_OBJECT_TABLE[i]["PATH"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"]))
@@ -1347,7 +1367,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "0-UltraBaseBuilding.pak",
 ["MOD_AUTHOR"]				= "Mjjstral and Babscoole",
 ["Contributors"]			= "Ignacio and GhostRick",
-["NMS_VERSION"]				= "3.84a",
+["NMS_VERSION"]				= "3.84b",
 ["ADD_FILES"] = ADD_FILES_TABLE,
 ["MODIFICATIONS"] 			=
 	{
@@ -1361,7 +1381,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects"},
 							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= table.concat(BASEBUILDINGTABLE_ADDING_ALL)
+							["ADD"] 				= table.concat(BASEBUILDINGOBJECTSTABLE_ADDING_ALL)
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","PLANET_TECH",},
@@ -1388,7 +1408,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
 							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= table.concat(PRODUCT_ALL)
+							["ADD"] 				= table.concat(PRODUCT_ADDING_ALL)
 						}
 					}
 				},
@@ -1399,32 +1419,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PartsData"},
 							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= table.concat(AutoPartData_ALL)
+							["ADD"] 				= table.concat(AUTOPARTDATA_ADDING_ALL)
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGCOSTSTABLE.MBIN",
+					["EXML_CHANGE_TABLE"]	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
+							["LINE_OFFSET"] 		= "+0",
+							["ADD"] 				= table.concat(BASEBUILDINGCOST_ADDING_ALL)
+						}
+					},
+				},				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						[[METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN]],
+						[[METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN]],
+					},
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
 							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= table.concat(DEFAULTSAVEDATA_KNOWNPRODUCT_ALL)
+							["ADD"] 				= table.concat(DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING_ALL)
 						}
 					}
 				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= table.concat(DEFAULTSAVEDATA_KNOWNPRODUCT_ALL)
-						}
-					}
-				}
 			}
 		},
 	},
