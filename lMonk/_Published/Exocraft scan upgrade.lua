@@ -3,128 +3,134 @@ local desc = [[
   Add planetary archive, base computer, minor settlement, trading post,
   ancient plaque, remote terminal, secure facility, distress signals,
   sentinel pillar and underwater targets to the exocraft scanner.
+  Re-arrange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]------------------------------------------------------------------------
-Mod_Version = 1.51
+Mod_Version = 1.55
 
 local Scan_Table = {
 	{
 		name  = 'VEHICLE_BUILDING_DEPOT',
 		scan  = {'DEPOT', 'TERMINAL'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.BUILDING.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.BUILDING.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_DAMAGEDMACHINE',
 		scan  = {'DROPPOD'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.POD.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.POD.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_ABANDONED',
 		scan  = {'ABANDONED', 'UW_ABANDONED'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_RUIN',
 		scan  = {'RUIN', 'UW_RUIN'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_NPC',
 		scan  = {'MONOLITH', 'PLAQUE'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.RUNE.DDS'
-	},{
-		name  = 'SUB_RADAR_SCAN_CRASH',
-		scan  = {'UW_SHIPCRASH', 'UW_FREIGHTCRASH'},
-		tech  = {'SUB_BINOCS'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.DISTRESSSIGNAL.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUNE.DDS'
 	},{
 		name  = 'SUB_RADAR_SCAN_ABANDON',
 		scan  = {'UW_ABANDONED'},
 		tech  = {'SUB_BINOCS'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
 	},{
 		name  = 'SUB_RADAR_SCAN_RUIN',
 		scan  = {'UW_RUIN'},
 		tech  = {'SUB_BINOCS'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
+	},{
+		name  = 'SUB_RADAR_SCAN_CRASH',
+		scan  = {'UW_SHIPCRASH'},
+		tech  = {'SUB_BINOCS'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.SHIP.DDS'
+	},{
+		name  = 'SUB_RADAR_SCAN_FREIGHTER',
+		scan  = {'UW_FREIGHTCRASH'},
+		tech  = {'SUB_BINOCS'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/WIKI/TRADE10.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_OUTPOST',
 		scan  = {'SHOP', 'OUTPOST'},
-		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.OUTPOST.DDS'
+		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.OUTPOST.DDS'
 	},{
 		name  = 'BUILDING_RADIOTOWER_L',
 		scan  = {'RADIOTOWER', 'OBSERVATORY'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.SIGNAL.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SIGNAL.DDS'
 	},{
 		name  = 'MECH_SCAN_FACT',
 		scan  = {'HARVESTER', 'FACTORY'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.FACTORY.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.FACTORY.DDS'
 	},{
 		name  = 'MECH_SCAN_CRASH',
-		scan  = {'DISTRESS', 'DISTRESS_NPC', 'UW_SHIPCRASH', 'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH'},
+		scan  = {'DISTRESS', 'DISTRESS_NPC', 'UW_SHIPCRASH'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.DISTRESSSIGNAL.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.SHIP.DDS'
+	},{
+		name  = 'SUB_RADAR_SCAN_FREIGHTER',
+		scan  = {'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH'},
+		tech  = {'VEHICLE_SCAN1'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/WIKI/TRADE10.DDS'
 	},{
 		name  = 'UI_LIBRARY_ENTRANCE_DESC',
 		scan  = {'LIBRARY'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.LIBRARY.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.LIBRARY.DDS'
 	},{
-		name  = 'INTRCT_CLAIM_BASE',
+		name  = 'UI_RECOVER_BASE_MARKER',
 		scan  = {'BASE'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.BASE.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.BASE.DDS'
 	},{
 		name  = 'UI_SENTINEL_HIVE_NAME',
 		scan  = {'DRONE_HIVE'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS'
 	}
 }
-
 function Scan_Table:GetEntry(ste)
 	local function getScanList(lst)
-		local exml = '<Property name="ScanList">'
-		for _,v in pairs(lst) do
+		local exml = ''
+		for _,trg in pairs(lst) do
 			exml = exml..[[
 				<Property value="NMSString0x20.xml">
-					<Property name="Value" value="]]..v..[[" />
+					<Property name="Value" value="]]..trg..[[" />
 				</Property>]]
 		end
-		return exml..'</Property>'
+		return '<Property name="ScanList">'..exml..'</Property>'
 	end
 	local exml = ''
 	for _,tech in pairs(ste.tech) do
-		exml = string.format([[%s
+		exml = exml..[[
 			<Property value="GcVehicleScanTableEntry.xml">
-				%s
-				<Property name="Name" value="%s" />
-				<Property name="RequiredTech" value="%s" />
+				]]..getScanList(ste.scan)..[[
+				<Property name="Name" value="]]..ste.name..[[" />
+				<Property name="RequiredTech" value="]]..tech..[[" />
 				<Property name="Icon" value="TkTextureResource.xml">
-					<Property name="Filename" value="TEXTURES/UI/%s" />
+					<Property name="Filename" value="]]..ste.icon..[[" />
 				</Property>
-			</Property>]],
-			exml,
-			getScanList(ste.scan),
-			ste.name,
-			tech,
-			ste.icon
-		)
+			</Property>]]
 	end
 	return exml
 end
 
 local function BuildVehicleScanTable()
-	local exml = [[<?xml version="1.0" encoding="utf-8"?>
-		<Data template="GcVehicleScanTable"><Property name="VehicleScanTable">]]
+	local exml = ''
 	for _,v in ipairs(Scan_Table) do
 		exml = exml..Scan_Table:GetEntry(v)
 	end
-	return exml..'</Property></Data>'
+	return [[<?xml version="1.0" encoding="utf-8"?>
+		<Data template="GcVehicleScanTable"><Property name="VehicleScanTable">]]
+		..exml..
+		[[</Property></Data>]]
 end
 
 local Scan_Events = {
@@ -143,7 +149,6 @@ local Scan_Events = {
 		class = 'DroneHive',
 		osd   = 'UI_DRONEHIVE_LOCATED_OSD',
 		mlbl  = 'UI_SENTINEL_HIVE_NAME',
-		micon = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS',
 		tip   = 'UI_DRONEHIVE_LOCATED',
 	},{
 		event = 'BASE',
@@ -308,7 +313,7 @@ local function NewScanEvent(scn)
 			<Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM"/>
 			<Property name="MarkerLabel" value="%s"/>
 			<Property name="MarkerIcon" value="TkTextureResource.xml">
-				<Property name="Filename" value="%s"/>
+				<Property name="Filename" value=""/>
 			</Property>
 			<Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
 				<Property name="ScannerIconHighlightType" value="Diamond"/>
@@ -342,15 +347,32 @@ local function NewScanEvent(scn)
 		scn.class or 'None', 			-- BuildingClass
 		scn.osd, 						-- OSDMessage
 		scn.mlbl or '',					-- MarkerLabel
-		scn.micon or '',				-- Filename
 		scn.tip							-- TooltipMessage
 	)
 end
 
-local function InsertNewEvents()
+local function InsertNewScanEvents()
 	local exml = ''
 	for _,v in ipairs(Scan_Events) do exml = exml..NewScanEvent(v) end
 	return exml
+end
+
+-- replace icons of found target to match
+-- the new ones in the targets list
+local function UpdateScanEventIcons()
+	local T = {}
+	for _,st in ipairs(Scan_Table) do
+		for _,scn in ipairs(st.scan) do
+			table.insert(T, {
+				SPECIAL_KEY_WORDS	= {'Name', scn},
+				PRECEDING_KEY_WORDS	 = 'MarkerIcon',
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', st.icon}
+				}
+			})
+		end
+	end
+	return T
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -358,16 +380,36 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_AUTHOR			= 'lMonk',
 	NMS_VERSION			= 3.84,
 	MOD_DESCRIPTION		= desc,
+	ADD_FILES = {
+		{
+			EXTERNAL_FILE_SOURCE= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/MenuIcons/QUICKMENU/VEHICLESCAN.DDS',
+			FILE_DESTINATION	= 'TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/VEHICLESCAN.DDS'
+		},
+		{
+			FILE_DESTINATION 	= 'METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.EXML',
+			FILE_CONTENT		= BuildVehicleScanTable()
+		},
+	},
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
+				SPECIAL_KEY_WORDS	= {'Name', 'RUIN'},
+				VALUE_CHANGE_TABLE 	= {
+					{'OSDMessage', 'UI_SIGNAL_TREASURERUIN'}
+				}
+			},
+			{
 				PRECEDING_KEY_WORDS = 'Events',
-				ADD					= InsertNewEvents()
+				ADD					= InsertNewScanEvents()
 			}
 		}
+	},
+	{
+		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN',
+		EXML_CHANGE_TABLE	= UpdateScanEventIcons()
 	},
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',
@@ -392,15 +434,4 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	}
-}}},
-	ADD_FILES = {
-		{
-			EXTERNAL_FILE_SOURCE= 'E:/MODZ_stuff/NoMansSky/Sources/ICONS/TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SHIP.SCAN.DDS',
-			FILE_DESTINATION	= 'TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/VEHICLESCAN.DDS'
-		},
-		{
-			FILE_DESTINATION 	= 'METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.EXML',
-			FILE_CONTENT		= BuildVehicleScanTable()
-		},
-	}
-}
+}}}}
