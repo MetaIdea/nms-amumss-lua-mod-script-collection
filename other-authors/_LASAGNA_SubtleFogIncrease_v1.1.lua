@@ -11,11 +11,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCSKYGLOBALS.GLOBALS.MBIN",
-					["INTEGER_TO_FLOAT"]    = "FORCE",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
 						["PRECEDING_KEY_WORDS"] = { "PlanetProperties", "PlanetFog" },
+						["INTEGER_TO_FLOAT"]    = "FORCE",
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "FogStrength", 				"0.15" }, --Original "0.04" --tried 0.2
