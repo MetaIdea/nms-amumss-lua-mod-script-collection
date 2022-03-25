@@ -1,21 +1,23 @@
+--all multiplied, i.e. x8
 UNDERWATER_ALL_OTHER_MAX_SCALE_SIZE = 8
 FISHFLOCK_MAX_SCALE_SIZE = 2 --glitch if too big
 BUTTERFLOCK_MAX_SCALE_SIZE = 1 --glitch if too big
-SANDWORM_MAX_SCALE_SIZE = 2
+--SANDWORM_MAX_SCALE_SIZE = 2 --breaks sandworms
 GROUND_AIR_SMALLER_MAX_SCALE_SIZE = 8
-GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE = 25 --moon-sized creatures if too big
+GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE = 18 --moon-sized creatures if too big --v2.0: 18 from 25
 PROTODIGGER_MAX_SCALE_SIZE = 3 --Octopus legs
 
-GLOBAL_MAX_CREATURE_SIZE = 25 --global variable, overrides many creatures i.e. ground
+GLOBAL_MAX_CREATURE_SIZE = 18 --global variable, overrides many creatures i.e. ground --v2.0: 18 from 25
 
-CREATURE_MINCOUNT = 0.5 --changes
+CREATURE_MINCOUNT = 1 --minimum spawn count per species, float value causes error
+MOVE_SPEED_SCALE = 0.7 --movement speed --added in v2.0
 
 -------------------------------
 SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**This line is code by InsaneRuffles**
 -------------------------------
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CreatureSizeIncrease_v1.83.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Creatures_v1.9.pak",
 ["MOD_AUTHOR"]				= "Mjjstral_Modified_By_Lllasagna_With_InsaneRuffles_Script",
 ["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 
@@ -538,16 +540,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
 							}
 						},
-						{
-						["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM"},
-						["MATH_OPERATION"] 		= "*",
-						["INTEGER_TO_FLOAT"]    = "FORCE",
-						["REPLACE_TYPE"] 		= "ALL",
-						["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{ "MaxScale", 				SANDWORM_MAX_SCALE_SIZE },
-							}
-						},
+						-- {
+						-- ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM"}, --breaks sandworms, commented out
+						-- ["MATH_OPERATION"] 		= "*",
+						-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+						-- ["REPLACE_TYPE"] 		= "ALL",
+						-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {	
+								-- { "MaxScale", 				SANDWORM_MAX_SCALE_SIZE },
+							-- }
+						-- },
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
@@ -559,10 +561,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MinCount",		CREATURE_MINCOUNT },
 							}
 						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MoveSpeedScale",	 MOVE_SPEED_SCALE },
+							}
+						},
 					}
-				},-----------------------------------------------------------------------------------------------------------
-				{-----------Code by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)------------
-					["MBIN_FILE_SOURCE"] 	= 
+				},-------------------------------------------------------------------------------------------------------------------
+				{-----------Code originally by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)---------
+					["MBIN_FILE_SOURCE"] 	= ---------------------------------------------------------------------------------------
 					{
 "METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLEBIGBIRD.MBIN",
 "METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLEBUSY.MBIN",
@@ -628,9 +641,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"IncreasedSpawnDistance",	SPAWNDISTANCE_MULTIPLIER}
 							}
 						}
-					}--------------------------------------------------------------------------------------------------------
-				}-----------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)------------
-			}
+					}-------------------------------------------------------------------------------------------------------------
+				}---------Code originally by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)--------
+			}---------------------------------------------------------------------------------------------------------------------
 		},
 		{
 			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak", --globals
