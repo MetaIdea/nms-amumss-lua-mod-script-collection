@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_SubtleFogIncrease_v1.1.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_SubtleFog_v1.1.pak",       
 ["MOD_AUTHOR"]				= "Lllasagna",         
 ["NMS_VERSION"]				= "3.68",     
 ["MODIFICATIONS"] 			=             
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-						["PRECEDING_KEY_WORDS"] = { "PlanetProperties", "PlanetFog" },
+						["PRECEDING_KEY_WORDS"] = { "PlanetProperties", "GcExternalObjectListOptions.xml", "" },
 						["INTEGER_TO_FLOAT"]    = "FORCE",
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
