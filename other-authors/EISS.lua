@@ -1477,6 +1477,9 @@ Products =
 		<Property value="NMSString0x10.xml">
 			<Property name="Value" value="CHART_SETTLE" />
 		</Property>
+		<Property value="NMSString0x10.xml">
+			<Property name="Value" value="CHART_HIVE" />
+		</Property>
 ]]
 Substances = 
 [[
@@ -1786,6 +1789,24 @@ WeapTechSpecialist =
 		<Property value="NMSString0x10.xml">
 			<Property name="Value" value="U_SMGX" />
 		</Property>
+		<Property value="NMSString0x10.xml">
+			<Property name="Value" value="U_CANNON1" />
+		</Property>
+		<Property value="NMSString0x10.xml">
+			<Property name="Value" value="U_CANNON2" />
+		</Property>
+		<Property value="NMSString0x10.xml">
+			<Property name="Value" value="U_CANNON3" />
+		</Property>
+		<Property value="NMSString0x10.xml">
+			<Property name="Value" value="U_CANNON4" />
+		</Property>
+		<Property value="NMSString0x10.xml">
+			<Property name="Value" value="U_CANNONX" />
+		</Property>
+		<Property value="NMSString0x10.xml">
+			<Property name="Value" value="U_SENTGUN" />
+		</Property>
 ]]
 SuitTechSpecialist = 
 [[
@@ -1878,6 +1899,9 @@ SuitTechSpecialist =
 		</Property>
 		<Property value="NMSString0x10.xml">
 			<Property name="Value" value="U_HAZARDX" />
+		</Property>
+		<Property value="NMSString0x10.xml">
+			<Property name="Value" value="U_SENTSUIT" />
 		</Property>
 ]]
 ShipTechSpecialist = 
@@ -2198,7 +2222,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] = "EISS.pak",
   ["MOD_AUTHOR"] = "musty123",
-  ["NMS_VERSION"] = "3.53",
+  ["NMS_VERSION"] = "3.82",
   ["MOD_DESCRIPTION"] = "This mod adds the most of the items in game to the space station trade terminal.",
   ["MODIFICATIONS"] =
   {
