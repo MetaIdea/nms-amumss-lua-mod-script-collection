@@ -24,7 +24,7 @@ PLANET_LOD_MULTIPLIER = 10		--planet lod distance multiplier
 -------------------------------------------------------------------------------------------------------------------------------
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Environments_v1.91.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Environments_v1.92.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles and trevix/Babscoole code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -1351,7 +1351,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"PlanetFlipDistance",		PLANET_LOD_MULTIPLIER},
 								--{"PlanetEffectEndDistance",	PLANET_LOD_MULTIPLIER}
 							}
-						}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",  
+							["VALUE_CHANGE_TABLE"]	=
+							{
+								{"TerrainFadeTime",						  "0.7"},
+								{"TerrainFadeTimeInShip",				  "0.9"},
+								{"CreatureFadeTime",					  "0.9"},
+								{"FloraFadeTime",						  "0.5"}, --less causes hitching
+								{"FloraFadeTimeMax",				      "0.9"}, --less causes hitching
+							}
+						},
 					} 
 				}--------------------------------------------------------------------------------------------------------------
 			}--------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)---------------
