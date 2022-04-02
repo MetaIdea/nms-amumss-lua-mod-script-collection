@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "NoPortalCharge.pak",
+["MOD_FILENAME"]	= "NoChargePortal.pak",
 ["MOD_AUTHOR"]		= "Lenni",
 ["NMS_VERSION"]		= "3.75+",
 ["MOD_DESCRIPTION"]	= "Removes Portal charge cost",
@@ -14,12 +14,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 		= 
-							{	
-								{ "MinRandAmount", 									"100" }, 		--Original "0"
-								{ "MaxRandAmount", 									"100" }, 		--Original "0"
-							}
+						  ["PRECEDING_KEY_WORDS"] = "GcMaintenanceComponentData.xml",
+						  ["REMOVE"] = "SECTION",
 						}
 					}
 				}
