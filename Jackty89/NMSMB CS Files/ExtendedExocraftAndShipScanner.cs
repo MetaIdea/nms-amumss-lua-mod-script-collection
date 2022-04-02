@@ -1,15 +1,5 @@
 //=============================================================================
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-
-using nms = libMBIN.NMS;
-using libMBIN.NMS.Globals;
-using libMBIN.NMS.GameComponents;
-using libMBIN.NMS.Toolkit;
+//Author: Jackty89
 
 //=============================================================================
 
