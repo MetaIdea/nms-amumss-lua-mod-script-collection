@@ -1,15 +1,5 @@
 //=============================================================================
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-
-using nms = libMBIN.NMS;
-using libMBIN.NMS.Globals;
-using libMBIN.NMS.GameComponents;
-using libMBIN.NMS.Toolkit;
+//Author: Jackty89
 
 //=============================================================================
 
@@ -95,17 +85,17 @@ namespace cmk.NMS.Scripts.Mod
 
         protected override void Execute()
         {
-            //float MechSuitLaserDamange = 350f;
-            //float MechSuitCanonDamange = 2500f;
+            
 
             ImproveExoCrafts();
+            //ChangeMechTechDamage();
         }
 
         //...........................................................
 
         protected void ImproveExoCrafts()
         {
-            var mbin = ExtractMbin<GcVehicleGlobals>(
+            var Mbin = ExtractMbin<GcVehicleGlobals>(
                 "GCVEHICLEGLOBALS.GLOBAL.MBIN"
             );
 
@@ -120,20 +110,20 @@ namespace cmk.NMS.Scripts.Mod
             float VehicleBoostFuelRate = 1f;
             float VehicleBoostFuelRateSurvival = 2f;
 
-            mbin.MechJetpackForce = MechSuitJPForce;
-            mbin.MechJetpackMaxSpeed = MechSuitJPMaxSpeed;
-            mbin.MechJetpackMaxUpSpeed = MechSuitJPMaxUpSpeed;
-            mbin.MechJetpackDrainRate = MechSuitJPDrainRate;
-            mbin.MechJetpackFillRate = MechSuitJPFillRate;
+            Mbin.MechJetpackForce = MechSuitJPForce;
+            Mbin.MechJetpackMaxSpeed = MechSuitJPMaxSpeed;
+            Mbin.MechJetpackMaxUpSpeed = MechSuitJPMaxUpSpeed;
+            Mbin.MechJetpackDrainRate = MechSuitJPDrainRate;
+            Mbin.MechJetpackFillRate = MechSuitJPFillRate;
 
-            mbin.VehicleFuelRate = VehicleFuelRate;
-            mbin.VehicleFuelRateSurvival = VehicleFuelRateSurvival;
-            mbin.VehicleBoostFuelRate = VehicleBoostFuelRate;
-            mbin.VehicleBoostFuelRate = VehicleBoostFuelRateSurvival;
+            Mbin.VehicleFuelRate = VehicleFuelRate;
+            Mbin.VehicleFuelRateSurvival = VehicleFuelRateSurvival;
+            Mbin.VehicleBoostFuelRate = VehicleBoostFuelRate;
+            Mbin.VehicleBoostFuelRate = VehicleBoostFuelRateSurvival;
 
             foreach (var exoCraftData in ExocraftDataArray)
             {
-                var exocraft = mbin.VehicleDataTable.Find(EXOCRAFT => EXOCRAFT.Name == exoCraftData.Name);
+                var exocraft = Mbin.VehicleDataTable.Find(EXOCRAFT => EXOCRAFT.Name == exoCraftData.Name);
                 if (exoCraftData.Name == "SUBMARINE")
                 {
                     float NautilonUnderwaterEnginePower = 10f; // Acceleration speed
@@ -156,6 +146,20 @@ namespace cmk.NMS.Scripts.Mod
                 exocraft.VehicleBoostTime = exoCraftData.VehicleBoostTime;
                 exocraft.VehicleBoostRechargeTime = exoCraftData.VehicleBoostRechargeTime;
             }
+        }
+        protected void ChangeMechTechDamage()
+        {
+            float MechSuitLaserDamange = 350f;
+            float MechSuitCanonDamange = 2500f;
+            var Mbin = ExtractMbin<GcTechnologyTable>(
+                "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
+            );
+            var Laser = Mbin.Table.Find(TECH => TECH.ID == "MECH_LASER");
+            Laser.StatBonuses.Find(BONUS => BONUS.Stat.StatsType == GcStatsTypes.StatsTypeEnum.Vehicle_LaserDamage).Bonus = MechSuitLaserDamange;
+            var Cannon = Mbin.Table.Find(TECH => TECH.ID == "MECH_GUN");
+            Cannon.StatBonuses.Find(BONUS => BONUS.Stat.StatsType == GcStatsTypes.StatsTypeEnum.Vehicle_GunDamage).Bonus = MechSuitCanonDamange;
+
+
         }
     }
 }
