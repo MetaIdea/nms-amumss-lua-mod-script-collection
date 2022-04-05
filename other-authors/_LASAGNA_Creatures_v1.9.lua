@@ -4,7 +4,7 @@ FISHFLOCK_MAX_SCALE_SIZE = 2 --glitch if too big
 BUTTERFLOCK_MAX_SCALE_SIZE = 1 --glitch if too big
 --SANDWORM_MAX_SCALE_SIZE = 2 --breaks sandworms
 GROUND_AIR_SMALLER_MAX_SCALE_SIZE = 8
-GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE = 18 --moon-sized creatures if too big --v2.0: 18 from 25
+GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE = 18 --moon-sized creatures if too big --v1.9: 18 from 25
 PROTODIGGER_MAX_SCALE_SIZE = 3 --Octopus legs
 
 GLOBAL_MAX_CREATURE_SIZE = 18 --global variable, overrides many creatures i.e. ground --v2.0: 18 from 25
