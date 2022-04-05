@@ -2,9 +2,11 @@ SMALLEST_SCALE = 1.5
 SMALL_SCALE = 2.3 --grass, bushes, etc. (2.3 so tall grass doesn't hit eyes on uphill climb)
 MEDIUM_SCALE = 4 --misc. outlier values
 LARGEST_SCALE = 9
+
 -------------------------------------------------------------------------------------------------------------------------------
 --Code originally by InsaneRuffles in section below, modified by Lllasagna (--*** = lasagna comments)--------------------------
 -------------------------------------------------------------------------------------------------------------------------------
+
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
 RADIUS_MULTIPLIER = 3			--objects draw distance multiplier (limited by engine's hard-limit)
 --GRASS_RADIUS_MULTIPLIER = 1		--GRASS draw distance multiplier --***1 = no changes to vanilla, commented out
@@ -19,12 +21,14 @@ SHADOW_LENGTH_MULTIPLIER = 3	--shadows draw distance multiplier --***needed to w
 LOD_ADJUST_MULTIPLIER = 2		--inconsistent results
 REGIONLODRADIUS_ADD = 3			--increases draw distance hard-limit, value above '3' caused crash
 PLANET_LOD_MULTIPLIER = 10		--planet lod distance multiplier
+
 -------------------------------------------------------------------------------------------------------------------------------
 --Code originally by InsaneRuffles in section above, modified by Lllasagna ----------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Environments_v1.92.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Environments_v1.93.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles and trevix/Babscoole code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -120,13 +124,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHULTRAOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\ULTRAEXTERNALOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\BEACH\FULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\BARREN.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\DEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FROZEN.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\LUSH.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\RADIOACTIVE.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\SCORCHED.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\TOXIC.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULLSAFE.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\MOUNTAIN\FULL.MBIN",
@@ -263,359 +260,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["MATH_OPERATION"] 		= "*",
+							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7.9", --8 = HUGEPLATFORMROCK-barren-, --20 = HUGESPIKEROCK,
-							["VALUE_MATCH_OPTIONS"] = ">=", --8 = HQTREE17, --9 = HQTREE10 --10 = HQTREE63
-							["VALUE_CHANGE_TABLE"] 	=
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
+							["VALUE_CHANGE_TABLE"] 	= 
+							{				
+								{"DestroyedByPlayerShip",	"True"}, --So you can't get stuck in huge objects while in ship
 							}
 						},
 						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7.8",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7.7",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7.6",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},			
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7.5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7.4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7.3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7.2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7.1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "7",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6.9",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6.8",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6.7",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6.6",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6.5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6.4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6.3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6.2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6.1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "6", --YUKKA-swamp-, FERNLIGHT-swamp-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5.9",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5.8",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5.7",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5.6",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5.5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5.4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5.3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5.2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5.1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "5", --FERNLARGEALT-swamp-, HQTREEREF-swamp-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "4.9",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "4.8",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "4.7",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "4.6",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "4.5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "4.4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "4.3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "4.2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	LARGEST_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "4.1",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["MATH_OPERATION"] 		= "*", --8 = HQTREE17, --9 = HQTREE10 --10 = HQTREE63
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --8 = HUGEPLATFORMROCK-barren-, --20 = HUGESPIKEROCK,
+							["VALUE_MATCH"] 		= "4.1", --5 = FERNLARGEALT-swamp-, HQTREEREF-swamp-
+							["VALUE_MATCH_OPTIONS"] = ">=",
+							["VALUE_CHANGE_TABLE"] 	= --6 = --YUKKA-swamp-, FERNLIGHT-swamp-
 							{						
 								{ "MaxScale",	LARGEST_SCALE }
 							}
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --CACTUSSML, SMALLSHROOMCLUSTER-swamp-, 
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --**GRAVELPATCHSNOWBLEND, GRAVELPATCHSANDBLEND
 							["VALUE_MATCH"] 		= "4", --LARGESNOWBLENDROCK, LARGESANDBLENDROCK, MEDIUMBOULDER01-toxicinfested-
 							["VALUE_CHANGE_TABLE"] 	=     --FUNGALTREE-toxic-
@@ -625,6 +290,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "3.9",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -634,6 +300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "3.8",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -643,6 +310,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "3.7",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -652,6 +320,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "3.6",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -661,6 +330,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --MEDIUMBLUESHROOM-toxicinfested-
 							["VALUE_MATCH"] 		= "3.5", --GRAVELPATCHSNOWBLEND**
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -670,6 +340,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "3.4",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -679,6 +350,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "3.3", --MANGROVELARGEFULL
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -688,6 +360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "3.2",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -697,6 +370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "3.1",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -706,6 +380,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --LARGEVOLCANO, LARGESHARDINACTIVE02-lava-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --DEADTREE-swamp-, LARGEMOSSROCK-swamp-
 							["VALUE_MATCH"] 		= "3", --3 = HEROPINE, LARGESNOWBLENDROCK, LARGESANDBLENDROCK
 							["VALUE_CHANGE_TABLE"] 	=  --MEDIUMBOULDER02-toxicinfested-, SMALLTENDRIL-toxicinfested-
@@ -715,6 +390,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "2.9",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -724,6 +400,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "2.8", --MANGROVELARGE
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -733,6 +410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --HQTREEREF-lushobjectsmid-
 							["VALUE_MATCH"] 		= "2.7", --SKINNYPINE, RADIOACTIVETREE
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -742,6 +420,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "2.6", --FUNGALTREE-toxic-
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -751,6 +430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --FUNGALTREE
 							["VALUE_MATCH"] 		= "2.5", --MEDIUMSNOWBLENDROCK, MEDIUMSANDBLENDROCK
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -760,6 +440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "2.4", --LARGEROCK-lava-
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -769,6 +450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", 
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --HQTREEREF-lushobjectslow-
 							["VALUE_MATCH"] 		= "2.3", --STARJOINT, MEDIUMDEADTREE01-lava-
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -778,6 +460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --SMALLJOINT
 							["VALUE_MATCH"] 		= "2.2", --2.2 = TALLPINE, HQTREEREF-lushobjectsmed-
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -787,6 +470,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						}, -------------------------------------------
 						{
 							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --TOXICGRASS-radioactive-
 							["VALUE_MATCH"] 		= "2.1", --RADIOACTIVETREE, FUNGALTREE-toxic-
 							["VALUE_CHANGE_TABLE"] 	=      --MEDIUMROCK-toxic-
@@ -796,6 +480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --MEDIUMSHROOM-swamp-, MEDIUMSPIRE-lava-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --**MEDIUMROCK, LARGEROCK, GROUNDREVEALROCK01
 							["VALUE_MATCH"] 		= "2", --MEDIUMSNOWBLENDROCK, MEDIUMSANDBLENDROCK, FROZENGRASSLARGE, BEAMSTONE
 							["VALUE_CHANGE_TABLE"] 	=    --SMALLERODEPLANT-toxicinfested-, SMALLBOULDER-""-, BUBBLELUSHGRASS-""-
@@ -805,6 +490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "1.9", --MEDIUMPLANT-toxic-
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -814,6 +500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",  --SMALLPLANT-lushobjectslow-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --LARGEPLANT, **MEDIUMROCK
 							["VALUE_MATCH"] 		= "1.8", --LARGETREEBARE, **MEDIUMPLANT
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -823,6 +510,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",  
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", 
 							["VALUE_MATCH"] 		= "1.75", --SPRIGBUSH-barrenhqobjectsfull-
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -832,6 +520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --HQFLOWERCACTUS
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --LARGETUBEROCK-radioactive-, LARGESPIKEROCK--radioactive-
 							["VALUE_MATCH"] 		= "1.7", --**MEDIUMBUSH, FUNGALTREE-toxic-
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -841,6 +530,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --SMALLFLOWERS-lushobjectsmid-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --FERNLIGHT, **LARGEROCK, LARGEPLANT-lushobjectslow-
 							["VALUE_MATCH"] 		= "1.6", --**MEDIUMBUSH, GROUNDFLOWER-barren-, **SMALLROCK
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -850,6 +540,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --LARGESNOWBLENDROCK, MEDIUMPLANT, **SCRUBBUSH, NEWCROSSGRASS-lushobjectsmid-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --**MEDIUMROCK, --YARROW-flower-, MEDIUMSTEAMER--radioactive-
 							["VALUE_MATCH"] 		= "1.5", --1.5=GRASS, GRASSCLUMP, **NEWCROSSGRASS
 							["VALUE_CHANGE_TABLE"] 	= --HUGEBEAM, **LARGEROCK, LARGESANDBLENDROCK, FRAGMENTS, TOXICGRASS-toxicinfested-
@@ -859,6 +550,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", 
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", 
 							["VALUE_MATCH"] 		= "1.43", --TENDRIL-toxic-
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -868,6 +560,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --MEDIUMJELLYPLANT, SCRUBBUSH, **MEDIUMBUSH
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --MEDIUMROCKS, LARGEROCK-laval-, CURVEDROCK-radioactive-
 							["VALUE_MATCH"] 		= "1.4", --**MOUNTAINROCK_1, LARGEICEROCK_1, LARGEROCKSTACK_1
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -877,6 +570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --FERNLIGHT, LAVAGEMS, VOLUMEBUSH-lava-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --YARROW-flower-, MEDIUMJELLYPLANT-radioactive-
 							["VALUE_MATCH"] 		= "1.3", --SCABIOUS-flower-, **SCRUBGRASS, 
 							["VALUE_CHANGE_TABLE"] 	=   --MEDIUMROCK-
@@ -886,6 +580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --NEWSCRIBGRASS-barrenhqobjectsfull-
 							["VALUE_MATCH"] 		= "1.25", --SINGLEJOINT-weird-
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -895,6 +590,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*", --LARGETREEBARE, MEDIUMROCK, MEDIUMGROWTHS-radioactive-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --FROZENBUSHYGRASS, **SCRUBGRASS, SMALLBOULDER
 							["VALUE_MATCH"] 		= "1.2", --MEDIUMBOULDER02, **SMALLROCK, **BUTTERCUP
 							["VALUE_CHANGE_TABLE"] 	=    --TALLGRASSBILLBOARD-toxicinfested-, SPONGE-toxic-
@@ -904,6 +600,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL", --LARGEROCK-lushobjectslow-
 							["VALUE_MATCH"] 		= "1.15", --**MEDIUMROCK, SMALLPLANT
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -912,29 +609,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL", --SCABIOUS-flower-
-							["VALUE_MATCH"] 		= "1.1", --FERN, SNOWCLUMP, SMALLSNOWCLUMPS, SMALLROCK, SMALLROCKCLUMPS
-							["VALUE_CHANGE_TABLE"] 	= --MOSSHUT,     LAVACLUMP, LAVAGEMS
-							{						
-								{ "MaxScale",	SMALL_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL", --TALLGRASSBILLBOARD, CURVEDMEDIUM-radioactive-
-							["VALUE_MATCH"] 		= "1", --MEDIUMBOULDER02, **SMALLROCK
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	SMALL_SCALE }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL", --0.5 = LEAFDROPLET-lava-
-							["VALUE_MATCH"] 		= "1", --0.6 = TALLGRASSBILLBOARD, MEDIUMJELLYPLANT-radioactive-
-							["VALUE_MATCH_OPTIONS"] = "<", --0.8 = MOUNTAINROCK_1, **TALLGRASSBILLBOARD, SCRUBGRASS, GROUNDFLOWER--radioactive-
-							["VALUE_CHANGE_TABLE"] 	= 
+							["MATH_OPERATION"] 		= "*", --1.1 = SCABIOUS-flower-, FERN, SNOWCLUMP, SMALLSNOWCLUMPS, SMALLROCK, SMALLROCKCLUMP, MOSSHUT, LAVACLUMP, LAVAGEMS
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --1 = TALLGRASSBILLBOARD, CURVEDMEDIUM-radioactive-, MEDIUMBOULDER02, **SMALLROCK
+							["VALUE_MATCH"] 		= "1.1",--0.5 = LEAFDROPLET-lava-
+							["VALUE_MATCH_OPTIONS"] = "<=",--0.6 = TALLGRASSBILLBOARD, MEDIUMJELLYPLANT-radioactive-
+							["VALUE_CHANGE_TABLE"] 	=      --0.8 = MOUNTAINROCK_1, **TALLGRASSBILLBOARD, SCRUBGRASS, GROUNDFLOWER--radioactive-
 							{						
 								{ "MaxScale",	SMALL_SCALE }
 							}
@@ -1063,6 +743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"] 		= "", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"DestroyedByPlayerShip",	"True"},
 								{"MaxScale",	"15"}, --from ~1
 								{"MaxScaleY",	"3"}, --from 1
 								{"MaxAngle",	"180"}, --from ~40
@@ -1176,8 +857,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxScale",	"2"}, --from ~1
 								{"MaxScaleY",	"1.5"}, --from 1
 								{"MaxAngle",	"180"}, --from ~40
-								{"PatchEdgeScaling",	"0.75"}, --from 0
-								{"MaxXZRotation",	"5"},
+								--{"PatchEdgeScaling",	"0.75"}, --from 0
+								--{"MaxXZRotation",	"5"},
 								{"CollideWithPlayer",	"True"},
 							}
 						},---------------------------------------------------------------------------------------------------------------------
@@ -1360,7 +1041,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"TerrainFadeTime",						  "0.7"},
 								{"TerrainFadeTimeInShip",				  "0.9"},
-								{"CreatureFadeTime",					  "0.9"},
+								--{"CreatureFadeTime",					  "0.9"}, --caused hitching
 								{"FloraFadeTime",						  "0.5"}, --less causes hitching
 								{"FloraFadeTimeMax",				      "0.9"}, --less causes hitching
 							}
@@ -1498,7 +1179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		-----------------------------------------------------------------------------------------------------------------------
-		----------------Code originally by trevix/Babscoole in remainder of script (*** = lasagna comment)---------------------
+		-------------------Code originally by trevix/Babscoole in section below (*** = lasagna comment)------------------------
 		------------------------------["MOD_AUTHOR"] = "trevix", ["LUA_AUTHOR"] = "Babscoole",---------------------------------
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
@@ -2010,6 +1691,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 				}, 
 			}
 		},
+		-----------------------------------------------------------------------------------------------------------------------
+		-------------------Code originally by trevix/Babscoole in section above (*** = lasagna comment)------------------------
+		-----------------------------------------------------------------------------------------------------------------------
 		{
 			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
