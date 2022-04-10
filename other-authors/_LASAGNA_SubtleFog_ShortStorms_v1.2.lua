@@ -1,12 +1,12 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_SubtleFog_v1.1.pak",       
-["MOD_AUTHOR"]				= "Lllasagna",         
-["NMS_VERSION"]				= "3.68",     
+["MOD_FILENAME"] 			= "_LASAGNA_SubtleFog_ShortStorms_v1.2.pak",       
+["MOD_AUTHOR"]				= "Lasagna",         
+["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak", --globals
+			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-						["PRECEDING_KEY_WORDS"] = { "PlanetProperties", "GcExternalObjectListOptions.xml", "" },
+						["PRECEDING_KEY_WORDS"] = { "PlanetProperties", "PlanetFog" },
 						["INTEGER_TO_FLOAT"]    = "FORCE",
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
@@ -31,6 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "PlanetProperties", "PlanetFlightFog" },
+						["INTEGER_TO_FLOAT"]    = "FORCE",
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "FogStrength", 				"0.08" }, --Original "0.04" --tried 0.2
@@ -44,30 +45,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "FogHeight", 					"64"   }, --Original "128" --too low = jarring in flight
 							}
 						},
+						{
+						["REPLACE_TYPE"] 		= "ALL",
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MinStormLengthLow", 				"30" }, --Original "120"
+								{ "MaxStormLengthLow", 				"45" }, --Original "180"
+								{ "MinStormLengthHigh", 				"38" }, --Original "150"
+								{ "MaxStormLengthHigh", 				"80" }, --Original "320"
+								{ "MaxStormCloudCover", 				"1" }, --Original "0.8"
+							}
+						},
 					}
 				},
-				--{
-					--["MBIN_FILE_SOURCE"] 	= "GCGRAPHICSGLOBALS.GLOBAL.MBIN", --this conflicts with objectsizeincrease
-					--["EXML_CHANGE_TABLE"] 	= 
-					--{
-						--{
-							--["VALUE_CHANGE_TABLE"] 		= 
-							--{	
-								--{ "FoliageSaturationMin", 			"0.8" }, 		--Original "0.6"
-								--{ "FoliageSaturationMax", 			"0.9" }, 		--Original "0.8"
-								--{ "GrassSaturationMin", 			"0.8" }, 		--Original "0.6"
-								--{ "GrassSaturationMax", 			"0.9" }, 		--Original "0.7"
-								--{ "SkySaturationMin", 				"0.8" }, 		--Original "0.7"
-								--{ "SkySaturationMax", 				"0.9" }, 		--Original "0.8"
-								--{ "WaterSaturation", 				"0.9" }, 		--Original "0.8"
-							--}
-						--}
-					--}
-				--},
 			}
 		}
 	}	
 }	
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
 --IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE
+--DON'T ADD ANYTHING PAST THIS POINT HERE
