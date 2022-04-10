@@ -4,22 +4,23 @@ FISHFLOCK_MAX_SCALE_SIZE = 2 --glitch if too big
 BUTTERFLOCK_MAX_SCALE_SIZE = 1 --glitch if too big
 --SANDWORM_MAX_SCALE_SIZE = 2 --breaks sandworms
 GROUND_AIR_SMALLER_MAX_SCALE_SIZE = 8
-GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE = 18 --moon-sized creatures if too big --v1.9: 18 from 25
+GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE = 12 --moon-sized creatures if too big --v1.9: 18 from 25
 PROTODIGGER_MAX_SCALE_SIZE = 3 --Octopus legs
 
-GLOBAL_MAX_CREATURE_SIZE = 18 --global variable, overrides many creatures i.e. ground --v2.0: 18 from 25
+GLOBAL_MAX_CREATURE_SIZE = 12 --global variable, overrides many creatures i.e. ground --v1.94: 18 from 25, v2.0: 12 from 18
 
 CREATURE_MINCOUNT = 1 --minimum spawn count per species, float value causes error
-MOVE_SPEED_SCALE = 0.7 --movement speed --added in v2.0
+CREATURE_MAXCOUNT = 3 --max "  " --v2.0: added this to prevent huge groups, which caused lag
+MOVE_SPEED_SCALE = 0.8 --movement speed --added in v1.94
 
 -------------------------------
 SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**This line is code by InsaneRuffles**
 -------------------------------
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Creatures_v1.9.pak",
-["MOD_AUTHOR"]				= "Mjjstral_Modified_By_Lllasagna_With_InsaneRuffles_Script",
-["NMS_VERSION"]				= "3.68",
+["MOD_FILENAME"] 			= "LASAGNA_Creatures_v2.0.pak",
+["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
+["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -559,6 +560,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinCount",		CREATURE_MINCOUNT },
+								{"MaxCount",		CREATURE_MAXCOUNT },
 							}
 						},
 						{
