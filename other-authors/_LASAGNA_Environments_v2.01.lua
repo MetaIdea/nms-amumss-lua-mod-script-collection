@@ -10,8 +10,8 @@ LARGEST_SCALE = 9
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
 RADIUS_MULTIPLIER = 3			--objects draw distance multiplier (limited by engine's hard-limit)
 --GRASS_RADIUS_MULTIPLIER = 1		--GRASS draw distance multiplier --***1 = no changes to vanilla, commented out
-LOD_DISTANCE_MULTIPLIER = 1.8		--LOD distance multiplier (object visual quality in distance)
-SMALL_LOD_DISTANCE_MULTIPLIER = 1.2 --***too much = hitching
+LOD_DISTANCE_MULTIPLIER = 1.9		--LOD distance multiplier (object visual quality in distance)
+--SMALL_LOD_DISTANCE_MULTIPLIER = 1.2 --***too much = hitching. v2.1: removed again, too much hitching = low fps
 COVERAGE_MULTIPLIER = 1			--object placement coverage multiplier (object density) --***needed to work
 
 --GCGRAPHICSGLOBALS.GLOBAL
@@ -29,7 +29,7 @@ PLANET_LOD_MULTIPLIER = 3		--planet lod distance multiplier
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Environments_v2.0.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Environments_v2.01.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -645,50 +645,50 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*", --***Removed these 4 sections to just impact trees & larger objects
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",   --***Otherwise, way too much hitching
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER} 
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER}
-							}
-						},
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = "",
+							-- ["MATH_OPERATION"] 		= "*", --***Removed these 4 sections to just impact trees & larger objects
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",   --***Otherwise, way too much hitching
+							-- ["LINE_OFFSET"] 		= "+2",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER}
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = "",
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+3",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER}
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = "",
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+4",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER} 
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = "",
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+5",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER}
+							-- }
+						-- },
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -1026,6 +1026,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"PlanetEffectEndDistance",	PLANET_LOD_MULTIPLIER}
 							}
 						},
+						------------------------------------------------------------------------------------------------------------------
+						--------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)---------------
+						------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["INTEGER_TO_FLOAT"]	= "FORCE",
@@ -1040,9 +1043,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 					} 
-				}--------------------------------------------------------------------------------------------------------------
-			}--------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)---------------
-		},---------------------------------------------------------------------------------------------------------------------
+				}
+			}
+		},
 		{
 			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
