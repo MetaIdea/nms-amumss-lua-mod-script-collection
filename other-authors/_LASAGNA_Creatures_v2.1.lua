@@ -9,8 +9,12 @@ PROTODIGGER_MAX_SCALE_SIZE = 3 --Octopus legs
 
 GLOBAL_MAX_CREATURE_SIZE = 12 --global variable, overrides many creatures i.e. ground --v1.94: 18 from 25, v2.0: 12 from 18
 
+--not multiplied, replaces
 CREATURE_MINCOUNT = 1 --minimum spawn count per species, float value causes error
 CREATURE_MAXCOUNT = 3 --max "  " --v2.0: added this to prevent huge groups, which caused lag
+CREATURE_MAXCOUNT_LARGE = 2 --larger creatures
+CREATURE_MAXCOUNT_SMALL = 10
+
 MOVE_SPEED_SCALE = 0.8 --movement speed --added in v1.94
 
 -------------------------------
@@ -18,7 +22,7 @@ SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**This line
 -------------------------------
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Creatures_v2.0.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Creatures_v2.1.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -42,6 +46,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","FISH"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","FISHFLOCK"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -62,6 +73,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SWIMCOW"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","SWIMRODENT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -69,6 +87,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				UNDERWATER_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SWIMRODENT"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
 							}
 						},
 						{
@@ -82,6 +107,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","JELLYFISH"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","SEASNAKE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -89,6 +121,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				UNDERWATER_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SEASNAKE"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
 							}
 						},
 						{
@@ -101,7 +140,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxScale", 				UNDERWATER_ALL_OTHER_MAX_SCALE_SIZE },
 							}
 						},
-												{
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SHARK"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT_LARGE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLOCK"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -122,6 +168,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","FIENDFISHSMALL"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT_SMALL },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","FIENDFISHBIG"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -129,6 +182,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				UNDERWATER_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","FIENDFISHBIG"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT_LARGE },
 							}
 						},
 						{
@@ -152,6 +212,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","BIRD"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","FLYINGSNAKE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -159,6 +226,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","FLYINGSNAKE"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT_LARGE },
 							}
 						},
 						{
@@ -172,6 +246,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","FLYINGLIZARD"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT_LARGE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLY"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -179,6 +260,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_SMALLER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","BUTTERFLY"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
 							}
 						},
 						{
@@ -202,6 +290,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","LARGEBUTTERFLY"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","FLYINGBEETLE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -209,6 +304,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","FLYINGBEETLE"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT_LARGE },
 							}
 						},
 						{
@@ -402,6 +504,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","PROTODIGGER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -429,6 +538,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_SMALLER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","DRILL"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
 							}
 						},
 						{
@@ -469,6 +585,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_SMALLER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDBUTTERFLY"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT },
 							}
 						},
 						{
@@ -522,6 +645,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","FLOATER"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT_SMALL },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -529,6 +659,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "MaxCount",				CREATURE_MAXCOUNT_SMALL },
 							}
 						},
 						{
@@ -560,7 +697,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MinCount",		CREATURE_MINCOUNT },
-								{"MaxCount",		CREATURE_MAXCOUNT },
 							}
 						},
 						{
@@ -661,7 +797,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MinRideSize",		1 	},
 								{"MaxCreatureSize",		GLOBAL_MAX_CREATURE_SIZE },
 							}
 						},

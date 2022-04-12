@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_SubtleFog_ShortStorms_v1.2.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_SubtleFog_ShortStorms_v1.3.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             
@@ -53,7 +53,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxStormLengthLow", 				"45" }, --Original "180"
 								{ "MinStormLengthHigh", 				"38" }, --Original "150"
 								{ "MaxStormLengthHigh", 				"80" }, --Original "320"
-								{ "MaxStormCloudCover", 				"1" }, --Original "0.8"
 							}
 						},
 					}
