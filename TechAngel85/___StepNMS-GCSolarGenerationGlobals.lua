@@ -8,17 +8,18 @@ FileSource01 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 
 --##### Variables #####
 --## Step ##
-PlanetInvalidAsteroidZone = 20000	-- No asteroid zone around planets | vanilla=10000 // CSO=30000 | 41
+PlanetInvalidAsteroidZone = 30000	-- No asteroid zone around planets | vanilla=10000 // CSO=30000 | 41
 AsteroidNoiseScale = 40000			-- The bigger it is, the greater the distance between fields is, but the closer asteroids are inside fields | vanilla=30000 // CSO=330000 | 44
-AsteroidFadeRangeMin = 10000		-- Weird: 0 here makes asteroids appear from greater distances (v3.02). Didn't make it in case it changes. | vanilla=1000 // CSO=6000 | 78
-AsteroidFadeRangeMax = 20000		--  | vanilla=2000 // CSO=12000 | 79
-AsteroidSpacing = 1500 				--  Distance between normal asteroids, also affect the drawing distance of asteroids | vanilla=1000 // CSO=6000 | 80
+AsteroidFadeRangeMin = 8000			-- The minimum range that normal asteroids will start to fade out // Weird: 0 here makes asteroids appear from greater distances (v3.02). Didn't make it in case it changes. | vanilla=1000 // CSO=6000 | 78
+AsteroidFadeRangeMax = 16000		-- The max range that normal asteroids will end fading out; beyond here there are no asteroids displayed | vanilla=2000 // CSO=12000 | 79
+AsteroidSpacing = 1500 				-- Distance between normal asteroids // affects the drawing distance of asteroids too | vanilla=1000 // CSO=6000 | 80
 LargeAsteroidSpacing = 4500			-- Distance between large asteroids | vanilla=3000 // CSO=12000 | 102
-LargeAsteroidFadeRangeMin = 10000	-- 0 messes up things | vanilla=4000 // CSO=12000 | 104
+LargeAsteroidFadeRangeMin = 10000	--  // 0 messes up things | vanilla=4000 // CSO=12000 | 104
 LargeAsteroidFadeRangeMax = 20000	--  | vanilla=4000 // CSO=16000 | 105
 RingAsteroidSpacing = 1000			--  | vanilla=300 // CSO=1800 | 108
-RingAsteroidFadeRangeMin = 10000	--  | vanilla=500 // CSO=6000 | 109
-RingAsteroidFadeRangeMax = 20000	--  | vanilla=2000 // CSO=12000 | 110
+RingAsteroidFadeRangeMin = 8000		--  | vanilla=500 // CSO=6000 | 109
+RingAsteroidFadeRangeMax = 16000	--  | vanilla=2000 // CSO=12000 | 110
+AsteroidMaxNumGeneratesPulseJump = 500 -- Number of asteroids generated during pulse | vanilla=1000 | 112
 
 
 --## Clean Space Origins ##
@@ -50,6 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"RingAsteroidSpacing", RingAsteroidSpacing}, 
 						{"RingAsteroidFadeRangeMin", RingAsteroidFadeRangeMin}, 
 						{"RingAsteroidFadeRangeMax", RingAsteroidFadeRangeMax}, 
+						{"AsteroidMaxNumGeneratesPulseJump", AsteroidMaxNumGeneratesPulseJump}, 
 					}
 				},
 --

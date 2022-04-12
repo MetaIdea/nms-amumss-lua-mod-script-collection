@@ -7,55 +7,56 @@ FileSource01 = "GCPLAYERGLOBALS.GLOBAL.MBIN"
 -- The comments are laid out in the following format: -- ParameterDescription (if available) | DefaultValue | LineNumber
 
 --##### Variables #####
-GroundWalkForceMultiplier = 24			-- Force applied while walking | 22 | 310
-GroundWalkBrakeWhileMoving = 6.6		-- Brake force applied while in motion | 5.5 | 312
-GroundWalkSpeed = 6.4					-- Walking speed | 4.4 | 313
-GroundRunSpeed = 9.4					-- Running speed | 8 | 315
-GroundWalkSpeedLowG = 3.2				-- Walking speed in low gravity | 1.6 | 316
-GroundRunSpeedLowG = 5.2				-- Running speed in low gravity | 3.5 | 317
+GroundWalkForceMultiplier = 24			-- Force applied while walking | 22 | 313
+GroundWalkBrakeWhileMoving = 6.6		-- Brake force applied while in motion | 5.5 | 315
+GroundWalkSpeed = 6.4					-- Walking speed | 4.4 | 316
+GroundRunSpeed = 9.4					-- Running speed | 8 | 318
+GroundWalkSpeedLowG = 3.2				-- Walking speed in low gravity | 1.6 | 319
+GroundRunSpeedLowG = 5.2				-- Running speed in low gravity | 3.5 | 320
 
-JetpackUnderwaterDrainRate = 0.2		-- Rate the jetpack drain underwater | 0.4 | 476
-JetpackUnderwaterFillRate = 1.5			-- Rate the jetpack refills underwater | 1 | 476
-UnderwaterMaxSpeed = 6					-- Swimming speed | 4 | 485
-UnderwaterMaxJetpackSpeed = 10			-- Jetpack speed while underwater | 8 | 487
-UnderwaterMaxJetpackEscapeSpeed = 12	-- Underwater exit speed while using jetpack | 8 | 489
+JetpackUnderwaterDrainRate = 0.2		-- Rate the jetpack drain underwater | 0.4 | 479
+JetpackUnderwaterFillRate = 1.5			-- Rate the jetpack refills underwater | 1 | 480
+UnderwaterMaxSpeed = 6					-- Swimming speed | 4 | 488
+UnderwaterMaxJetpackSpeed = 10			-- Jetpack speed while underwater | 8 | 490
+UnderwaterMaxJetpackEscapeSpeed = 12	-- Underwater exit speed while using jetpack | 8 | 492
 
-HardModeEnergyDischargeRateLow = 0.04	-- Rate the suit energy is drained | 0.08 | 595
-HardModeEnergyDischargeRateMedium = 0.4	-- '' | 0.8 | 596
-HardModeEnergyDischargeRateHigh = 1.1	-- '' | 2.2 | 597
-EnergyDischargeRateLow = 0.01			-- '' | 0.02 | 600
-EnergyDischargeRateMedium = 0.125		-- '' | 0.25 | 601
-EnergyDischargeRateHigh = 0.45			-- '' | 0.9 | 602
-EnergyDischargeRateFloatingInSpace = 5	-- '' | 30 | 603
+HardModeEnergyDischargeRateLow = 0.04	-- Rate the suit energy is drained | 0.08 | 601
+HardModeEnergyDischargeRateMedium = 0.4	-- '' | 0.8 | 602
+HardModeEnergyDischargeRateHigh = 1.1	-- '' | 2.2 | 603
+EnergyDischargeRateLow = 0.01			-- '' | 0.02 | 606
+EnergyDischargeRateMedium = 0.125		-- '' | 0.25 | 607
+EnergyDischargeRateHigh = 0.45			-- '' | 0.9 | 608
+EnergyDischargeRateFloatingInSpace = 5	-- '' | 30 | 609
 
-FreeJetpackRange = 30					--  | 3 | 642
-FreeJetpackRangeNonTerrain = 30			--  | 1.1 | 644
-JetpackDrainHorizontalFactor = 1.25		--  | 2.5 | 645
+FreeJetpackRange = 30					--  | 3 | 650
+FreeJetpackRangePrime = 50					--  | 5 | 651
+FreeJetpackRangeNonTerrain = 30			--  | 1.1 | 652
+JetpackDrainHorizontalFactor = 1.25		--  | 2.5 | 653
 
-RocketBootsImpulse = 4					--  | 2.5 | 655
-RocketBootsBoostForce = 75				--  | 68 | 656
-RocketBootsDriftForce = 35				--  | 30 | 657
-RocketBootsMinDesiredHeight = 4			--  | 2 | 660
-RocketBootsMaxDesiredHeight = 12		--  | 6 | 661
-RocketBootsHeightAdjustTime = 0.36		--  | 0.18 | 662
-RocketBootsHeightAdjustUpStrength = 0.66	--  | 0.57 | 663
-RocketBootsBoostTankDrainSpeed = 2		--  | 6 | 666
+RocketBootsImpulse = 4					--  | 3 | 663
+RocketBootsBoostForce = 75				--  | 68 | 664
+RocketBootsDriftForce = 35				--  | 30 | 665
+RocketBootsMinDesiredHeight = 4			--  | 2 | 668
+RocketBootsMaxDesiredHeight = 12		--  | 6 | 669
+RocketBootsHeightAdjustTime = 0.36		--  | 0.18 | 670
+RocketBootsHeightAdjustUpStrength = 0.66	--  | 0.57 | 671
+RocketBootsBoostTankDrainSpeed = 2		--  | 6 | 674
 
-JetpackBrake = 6.6						--  | 2.2 | 678
-JetpackMaxSpeed = 15					-- Jetpack speed | 5 | 680
-JetpackIgnitionTime = 0.2				-- Time it takes to start the Jetpack | 0.4 | 684
-JetpackTankTime01 = 16					--  | 4 | 687
-JetpackTankTime02 = 24					--  | 6 | 688
-JetpackTankTime03 = 36					--  | 8 | 689
-JetpackFillRate = 1						-- Rate at which Jetpack refills | 0.5 | 691
-JetpackFillRateHardMode = 0.5			-- Rate at which Jetpack refills on Survival | 0.2 | 692
-JetpackFillRateMidair = 0.5				-- Rate at which Jetpack refills while in the air | 0.25 | 693
-JetpackFillRateSpaceStationMultiplier = 10	-- Multiplier used on Jetpack refill rate while on Space Stations | 5 | 694
-JetpackFillRateFleetMultiplier = 10		-- Multiplier used on Jetpack refill rate while on your Fleet | 5 | 695
-JetpackIgnitionForceDeadPlanetExtra = 30	-- The initial force applied during Jetpack use while on Dead Planets | 45 | 699
+JetpackBrake = 6.6						--  | 2.2 | 688
+JetpackMaxSpeed = 15					-- Jetpack speed | 5 | 691
+JetpackIgnitionTime = 0.2				-- Time it takes to start the Jetpack | 0.4 | 695
+JetpackTankTime01 = 16					--  | 4 | 698
+JetpackTankTime02 = 24					--  | 6 | 699
+JetpackTankTime03 = 36					--  | 8 | 700
+JetpackFillRate = 1						-- Rate at which Jetpack refills | 0.5 | 702
+JetpackFillRateHardMode = 0.5			-- Rate at which Jetpack refills on Survival | 0.2 | 703
+JetpackFillRateMidair = 0.5				-- Rate at which Jetpack refills while in the air | 0.25 | 704
+JetpackFillRateSpaceStationMultiplier = 10	-- Multiplier used on Jetpack refill rate while on Space Stations | 5 | 705
+JetpackFillRateFleetMultiplier = 10		-- Multiplier used on Jetpack refill rate while on your Fleet | 5 | 706
+JetpackIgnitionForceDeadPlanetExtra = 30	-- The initial force applied during Jetpack use while on Dead Planets | 45 | 710
 
-SpaceJetpackMaxSpeed = 25				-- Jetpack speed while in Space | 10 | 705
-SpaceJetpackDrainRate = 0.1				-- Rate the Jetpack drains while in Space | 0.3 | 706
+SpaceJetpackMaxSpeed = 25				-- Jetpack speed while in Space | 10 | 716
+SpaceJetpackDrainRate = 0.1				-- Rate the Jetpack drains while in Space | 0.3 | 717
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -88,6 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"EnergyDischargeRateHigh", EnergyDischargeRateHigh}, 
 						{"EnergyDischargeRateFloatingInSpace", EnergyDischargeRateFloatingInSpace}, 
 						{"FreeJetpackRange", FreeJetpackRange}, 
+						{"FreeJetpackRangePrime", FreeJetpackRangePrime}, 
 						{"FreeJetpackRangeNonTerrain", FreeJetpackRangeNonTerrain}, 
 						{"JetpackDrainHorizontalFactor", JetpackDrainHorizontalFactor}, 
 						{"RocketBootsImpulse", RocketBootsImpulse}, 
