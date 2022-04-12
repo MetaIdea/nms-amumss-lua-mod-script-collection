@@ -3,23 +3,25 @@ SMALL_SCALE = 2.3 --grass, bushes, etc. (2.3 so tall grass doesn't hit eyes on u
 MEDIUM_SCALE = 4 --misc. outlier values
 LARGEST_SCALE = 9
 
+PATCHSIZE_REGIONSCALE_MULTIPLIER = 1.25
+
 -------------------------------------------------------------------------------------------------------------------------------
 --Code originally by InsaneRuffles in section below, modified by Lllasagna (--*** = lasagna comments)--------------------------
 -------------------------------------------------------------------------------------------------------------------------------
 
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
 RADIUS_MULTIPLIER = 3			--objects draw distance multiplier (limited by engine's hard-limit)
---GRASS_RADIUS_MULTIPLIER = 1		--GRASS draw distance multiplier --***1 = no changes to vanilla, commented out
-LOD_DISTANCE_MULTIPLIER = 1.9		--LOD distance multiplier (object visual quality in distance)
+GRASS_RADIUS_MULTIPLIER = 2		--GRASS draw distance multiplier --***1 = no changes to vanilla, commented out
+LOD_DISTANCE_MULTIPLIER = 2		--LOD distance multiplier (object visual quality in distance)
 --SMALL_LOD_DISTANCE_MULTIPLIER = 1.2 --***too much = hitching. v2.1: removed again, too much hitching = low fps
-COVERAGE_MULTIPLIER = 1			--object placement coverage multiplier (object density) --***needed to work
+--COVERAGE_MULTIPLIER = 1			--object placement coverage multiplier (object density) --***needed to work
 
 --GCGRAPHICSGLOBALS.GLOBAL
 FORCE_UNCACHED_TERRAIN = "True"	--fix slow terrain textures loading (default = false)
 SHADOW_LENGTH_MULTIPLIER = 3	--shadows draw distance multiplier --***needed to work
 
 --GCENVIRONMENTGLOBALS.GLOBAL
-LOD_ADJUST_MULTIPLIER = 1.8		--inconsistent results
+LOD_ADJUST_MULTIPLIER = 2		--inconsistent results
 REGIONLODRADIUS_ADD = 3			--increases draw distance hard-limit, value above '3' caused crash
 PLANET_LOD_MULTIPLIER = 3		--planet lod distance multiplier
 
@@ -29,7 +31,7 @@ PLANET_LOD_MULTIPLIER = 3		--planet lod distance multiplier
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Environments_v2.01.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Environments_v2.1.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -620,174 +622,81 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxScale",	SMALL_SCALE }
 							}
 						},
-						-- {
-							-- ["MATH_OPERATION"] = "*",
-							-- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["REPLACE_TYPE"] = "ALL",
-							-- ["VALUE_CHANGE_TABLE"] =
-							-- {
-								-- {"Coverage",		COVERAGE },
-								-- {"FlatDensity",		FLAT_AND_SLOPE_DENSITY },
-								-- {"SlopeDensity",	FLAT_AND_SLOPE_DENSITY },
-							-- }
-						-- },
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	1},
+								{"FlatDensity", 1},
+								{"SlopeDensity",	1},
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	0.9},
+								{"FlatDensity", 1},
+								{"SlopeDensity",	1},
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	0.9},
+								{"FlatDensity", 0.9},
+								{"SlopeDensity",	0.9},
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	1},
+								{"FlatDensity", 1},
+								{"SlopeDensity",	1},
+							}	
+						},
+						{			
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "MaxAngle", 90 },
+							}
+						},
 						------------------------------------------------------------------------------------------------------------------------
 						---------------Code by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)--------------------
 						------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",   	--if we wanted to replace only in a group, we would put a key_word here
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LOD_DISTANCE_MULTIPLIER
-							["INTEGER_TO_FLOAT"] = "FORCE",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",    --ALL means all the file since we have no PRECEDING_KEY_WORDS
 							["LINE_OFFSET"] 		= "+1",     --one line down
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
-							}
-						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["MATH_OPERATION"] 		= "*", --***Removed these 4 sections to just impact trees & larger objects
-							-- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",   --***Otherwise, way too much hitching
-							-- ["LINE_OFFSET"] 		= "+2",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+3",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+4",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER} 
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+5",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	SMALL_LOD_DISTANCE_MULTIPLIER}
-							-- }
-						-- },
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"PlacementPriority",		"High"},
-								{"MinRegionRadius",			"0"},
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",				COVERAGE_MULTIPLIER},
-								{"MaxRegionRadius",			RADIUS_MULTIPLIER},
-								{"MaxImposterRadius",		RADIUS_MULTIPLIER},
-								{"FadeOutStartDistance",	RADIUS_MULTIPLIER},
-								{"FadeOutEndDistance",		RADIUS_MULTIPLIER}
-							}
-						},
-						-- {
-							-- ["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS",},
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
-								-- {"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
-								-- {"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
-								-- {"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER}
-							-- }
-						-- },
-						{			
-							["REPLACE_TYPE"] 		= "ALL", --***this = code by lasagna
-							["VALUE_CHANGE_TABLE"] 	= 					
-							{
-								{ "MaxAngle", 90 },
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	=
-					{
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\BARREN.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\DEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FROZEN.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\LUSH.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\RADIOACTIVE.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\SCORCHED.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\TOXIC.MBIN",
-					},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "", 
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"DestroyedByPlayerShip",	"True"},
-								{"MaxScale",	"15"}, --from ~1
-								{"MaxScaleY",	"3"}, --from 1
-								{"MaxAngle",	"180"}, --from ~40
-								{"PatchEdgeScaling",	"0.75"}, --from 0
-								{"MaxXZRotation",	"5"},
-								{"CollideWithPlayer",	"True"},
-							}
-						},----------------------------------------------------------------------------------------------------------------------
-						{---------Code originally by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)--------------
-						------------------------------------------------------------------------------------------------------------------------
-						
-							["PRECEDING_KEY_WORDS"] = "",   	--if we wanted to replace only in a group, we would put a key_word here
-							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LOD_DISTANCE_MULTIPLIER
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",    --ALL means all the file since we have no PRECEDING_KEY_WORDS
-							["LINE_OFFSET"] 		= "+1",     --one line down
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*", --***Removed these 4 sections to just impact trees & larger objects
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",   --***Otherwise, way too much hitching
-							["LINE_OFFSET"] 		= "+2",	   --***re-added in v1.84
+							["LINE_OFFSET"] 		= "+2",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
@@ -842,20 +751,151 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "9999",
 							["VALUE_MATCH_OPTIONS"] = "<",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",				COVERAGE_MULTIPLIER},
+								--{"Coverage",				COVERAGE_MULTIPLIER},
 								{"MaxRegionRadius",			RADIUS_MULTIPLIER},
 								{"MaxImposterRadius",		RADIUS_MULTIPLIER},
 								{"FadeOutStartDistance",	RADIUS_MULTIPLIER},
 								{"FadeOutEndDistance",		RADIUS_MULTIPLIER}
 							}
 						},
-					} 
+						{
+							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS",},
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								{"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								{"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								{"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER}
+							}
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	=
+					{
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\BARREN.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\DEAD.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FROZEN.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\LUSH.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\RADIOACTIVE.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\SCORCHED.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\TOXIC.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"DestroyedByPlayerShip",	"True"},
+								{"MaxScale",	"15"}, --from ~1
+								{"MaxScaleY",	"3"}, --from 1
+								{"MaxAngle",	"180"}, --from ~40
+								{"PatchEdgeScaling",	"0.75"}, --from 0
+								{"MaxXZRotation",	"5"},
+								{"CollideWithPlayer",	"True"},
+							}
+						},
+						 -----------------------------------------------------------------------------------------------------------------------
+						 ---------Code originally by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)--------------
+						 -----------------------------------------------------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								--{"PlacementPriority",		"High"},
+								{"MinRegionRadius",			"0"},
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								--{"Coverage",				COVERAGE_MULTIPLIER},
+								{"MaxRegionRadius",			RADIUS_MULTIPLIER},
+								{"MaxImposterRadius",		RADIUS_MULTIPLIER},
+								{"FadeOutStartDistance",	RADIUS_MULTIPLIER},
+								{"FadeOutEndDistance",		RADIUS_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   	--if we wanted to replace only in a group, we would put a key_word here
+							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LOD_DISTANCE_MULTIPLIER
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",    --ALL means all the file since we have no PRECEDING_KEY_WORDS
+							["LINE_OFFSET"] 		= "+1",     --one line down
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER} 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+					}
 				},
 			}
 		},
@@ -1055,121 +1095,148 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","FOREST",},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Name","FOREST",}, --v2.1: Changed these to * 1.5
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"128"}, 	-- Original "64"
-								{"RegionScale",				"18"}		-- Original "6"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "64"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "6"
 							}
 						},
-						
 						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","BIOMEPLANT",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"1100"}, 	-- Original "550"
-								{"RegionScale",				"0.4"}		-- "0.2"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "550"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- "0.2"
 							}
 						},
-						
 						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","RARE",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"300"}, 	-- Original "100"
-								{"RegionScale",				"1.5"}		-- Original "0.75"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "100"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "0.75"
 							}
 						},
-						
 						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","RARE1",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"1180"}, 	-- Original "590"
-								{"RegionScale",				"0.2"}		-- Original "0.1"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "590"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "0.1"
 							}
 						},
-						
 						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","RARE2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"1220"}, 	-- Original "610"
-								{"RegionScale",				"0.2"}		-- Original "0.1"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "610"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "0.1"
 							}
 						},
-						
 						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","RARE3",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"1300"}, 	-- Original "650"
-								{"RegionScale",				"0.2"}		-- Original "0.1"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "650"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "0.1"
 							}
 						},
-						
 						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"300"}, 	-- Original "150"
-								{"RegionScale",				"2"}		-- Original "1"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "150"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "1"
 							}
 						},
-						
 						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","SPARSECLUMP",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"60"}, 	-- Original "30"
-								{"RegionScale",				"10"}		-- Original "5"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "30"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "5"
 							}
 						},
-						
+						-- {
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["SPECIAL_KEY_WORDS"] = {"Name","BARRENROCKCLUMP",},
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "25"
+								-- {"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "8"
+							-- }
+						-- },
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","BARRENROCKCLUMP",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchSize",				"25"}, 	-- Original "25"
-								{"RegionScale",				"16"}		-- Original "8"
-							}
-						},
-						
-						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","FLORACLUMP",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"10"}, 	-- Original "5"
-								{"RegionScale",				"5"}		-- Original "5"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "5"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "5"
 							}
 						},
-						
 						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","STORMCRYST",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"440"}, 	-- Original "220"
-								{"RegionScale",				"2"}		-- Original "1"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "220"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "1"
 							}
 						},
-						
 						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
 							["SPECIAL_KEY_WORDS"] = {"Name","WILDPLANTS",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PatchSize",				"240"}, 	-- Original "120"
-								{"RegionScale",				"1.2"}		-- Original "0.6"
+								{"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "120"
+								{"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "0.6"
 							}
 						},
-
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","GRASS",},
-							["VALUE_CHANGE_TABLE"] 	= 		
-							{
-								{"PatchSize",				"100"}, 	-- Original "100"
-								{"RegionScale",				"5"}		-- Original "5"
-							}
-						},
+						-- {
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["SPECIAL_KEY_WORDS"] = {"Name","GRASS",},
+							-- ["VALUE_CHANGE_TABLE"] 	= 		
+							-- {
+								-- {"PatchSize",				PATCHSIZE_REGIONSCALE_MULTIPLIER}, 	-- Original "100"
+								-- {"RegionScale",				PATCHSIZE_REGIONSCALE_MULTIPLIER}		-- Original "5"
+							-- }
+						-- },
 					}
 				}
 			}
