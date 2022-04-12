@@ -10,35 +10,39 @@ FileSource01 = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
 --## Step / Miscellaneous ##
 LandingHoverOffset = 1.5				--  | 3 | 11
 LandingMargin = 0.7						-- The size of the area that must be considered "cleared" of object to allow for landing | 1.4 | 14
-HoverTakeoffHeight = 75					-- Initial height upon ship takeoff | 90 | 324
-HoverSpeedFactor = 0.001				-- Speed at which ship hovers | 20 | 329
-HoverMinSpeed = 0.001					-- Minimum speed at which ship will hover | 1 | 331
-LandingPushNoseUpFactor = 0.05			-- Angle the ship nose will point upwards during landing | 0.15 | 355
-NoBoostAnomalyDistance = 1800			-- Distance from Anomaly that boost is disabled | 3000 | 801
-MiniWarpLinesSpacing = 12000			-- Spacing between the vertical metric lines during warp | 3000 | 923
-FreighterApproachSpeedDamper = 1		-- The amount of speed dampener applied when approaching Freighters | 0.5 | 1016
-MiniWarpShakeStrength = 1				-- The strentgh of the shake during warp | 2 | 1018
-MiniWarpSpeed = 45000					-- Speed at which ship travels during warp | 30000 | 1024
-MiniWarpTopSpeedTime = 0.25				-- Time it takes to reach top warp speed | 0.1 | 1025
-MiniWarpStoppingMarginStation = 1800	-- Distance at which the ship will exit warp when traveling to a station | 2500 | 1030
-MiniWarpExitTime = 0.25 				-- Time it take to exit warp | 0.5 | 1034
-MiniWarpHUDArrowAttractAngle = 5		-- The sensistivity the mouse will auto-hover over marker icons | 10  | 1035
-MiniWarpHUDArrowAttractAngleDense = 3	-- The sensistivity the mouse will auto-hover over marker icons when the icons are considered denses packed | 4 | 1039
-MiniWarpHUDArrowNumMarkersToBeDense = 4	-- The number of icons that are close together to be considered densely packed, at which time the sensistivity will change to "MiniWarpHUDArrowAttractAngleDense" | 6 | 1040
-AnomalyStationMaxApproachSpeed = 120	-- The max speed allow during docking approach to the Anomaly | 60 | 1068
+LandingObstacleMinHeight = 2.5			-- The minimum height of objects that obstruct landing | 2 | 15
+HoverTakeoffHeight = 75					-- Initial height upon ship takeoff | 90 | 326
+HoverSpeedFactor = 0.001				-- Speed at which ship hovers | 20 | 331
+HoverMinSpeed = 0.001					-- Minimum speed at which ship will hover | 1 | 333
+LandingPushNoseUpFactor = 0.05			-- Angle the ship nose will point upwards during landing | 0.15 | 357
+NoBoostAnomalyDistance = 1800			-- Distance from Anomaly that boost is disabled | 3000 | 803
+MiniWarpLinesSpacing = 12000			-- Spacing between the vertical metric lines during warp | 3000 | 925
+FreighterApproachSpeedDamper = 1		-- The amount of speed dampener applied when approaching Freighters | 0.5 | 1018
+MiniWarpShakeStrength = 1				-- The strentgh of the shake during warp | 2 | 1020
+MiniWarpSpeed = 45000					-- Speed at which ship travels during warp | 30000 | 1026
+MiniWarpTopSpeedTime = 0.25				-- Time it takes to reach top warp speed | 0.1 | 1027
+MiniWarpStoppingMarginStation = 1800	-- Distance at which the ship will exit warp when traveling to a station | 2500 | 1032
+MiniWarpExitTime = 0.25 				-- Time it take to exit warp | 0.5 | 1036
+MiniWarpHUDArrowAttractAngle = 5		-- The sensistivity the mouse will auto-hover over marker icons | 10  | 1037
+MiniWarpHUDArrowAttractAngleDense = 3	-- The sensistivity the mouse will auto-hover over marker icons when the icons are considered denses packed | 4 | 1041
+MiniWarpHUDArrowNumMarkersToBeDense = 4	-- The number of icons that are close together to be considered densely packed, at which time the sensistivity will change to "MiniWarpHUDArrowAttractAngleDense" | 6 | 1042
+AnomalyStationMaxApproachSpeed = 120	-- The max speed allow during docking approach to the Anomaly | 60 | 1070
 
 --## Step / Ship Controls ##
+ShipPlanetBrakeAlignMaxTime = 4			--  | 8 | 495...
+
 -- Control/SpaceEngine
 ControlSEThrustForce = 60				-- Amount of force the thruster has | 40 | 401
 ControlSEMaxSpeed = 540					-- Max speed the ship will travel | 180 | 402
 ControlSEMinSpeed = 0					-- Minimum allowed speed for the ship | 1 | 403
-ControlSEFalloff = 0					-- The amount of speed the ship will automatically loose during coasting | 0.7 | 404
+ControlSEFalloff = 0.33					-- The amount of speed the ship will automatically loose during coasting | 0.7 | 404
 ControlSEBoostMaxSpeed = 2700			-- The max speed the ship will travel during boosting | 1200 | 407
-ControlSEBoostFalloff = 0.15			-- The amount of speed the ship will automatically loose during coasting | 0.7 | 408
+ControlSEBoostFalloff = 0.33			-- The amount of speed the ship will automatically loose during coasting | 0.7 | 408
 ControlSEBoostingTurnDamp = 0.2			-- The amount of speed the ship will automatically loose during turning | 0.1 | 409
 ControlSEDirectionBrakeMin = 1.2		-- The minimum amount of directional brake applied | 1 | 410
 ControlSEDirectionBrake = 1.7			-- The amount of normal directional brake applied | 1.5 | 411
 ControlSEReverseBrake = 1				-- The amount of reverse brake applied | 0.5 | 412
+ControlSEOverspeedBrake = 6				-- The amount of brake applied when over the max speed | 3 | 413
 ControlSETurnBrakeMax = 3				-- The max amount of brake applied while turning | 2 | 416
 ControlSETurnStrength = 5				-- The strength of the turning brake | 1 | 417
 ControlSERollAutoTime = 1				-- The length of time it takes for an auto-roll correction event to occur | 2 | 420
@@ -69,13 +73,14 @@ ControlCERollAutoTime = 1				--  | 2 | 468
 ControlLTSEThrustForce = 90				--  | 80 | 498
 ControlLTSEMaxSpeed = 7200				--  | 180 | 499
 ControlLTSEMinSpeed = 0					--  | 1 | 500
-ControlLTSEFalloff = 0					--  | 0.7 | 501
+ControlLTSEFalloff = 0.27				--  | 0.7 | 501
 ControlLTSEBoostMaxSpeed = 3600			--  | 1300 | 504
-ControlLTSEBoostFalloff = 0.1			--  | 0.7 | 505
+ControlLTSEBoostFalloff = 0.27			--  | 0.7 | 505
 ControlLTSEBoostingTurnDamp = 0.15		--  | 0.1 | 506
 ControlLTSEDirectionBrakeMin = 1		--  | 0.8 | 507
 ControlLTSEDirectionBrake = 1.5			--  | 1.2 | 508
 ControlLTSEReverseBrake = 1.2			--  | 0.5 | 509
+ControlLTSEOverspeedBrake = 6			--  | 3 | 510
 ControlLTSETurnBrakeMin = 2				--  | 1 | 512
 ControlLTSETurnBrakeMax = 4				--  | 3 | 513
 ControlLTSETurnStrength = 6				--  | 1.1 | 514
@@ -108,13 +113,14 @@ ControlLTCERollAutoTime = 1				--  | 2 | 565
 ControlHVYSEThrustForce = 45			--  | 40 | 595
 ControlHVYSEMaxSpeed = 360				--  | 180 | 596
 ControlHVYSEMinSpeed = 0				--  | 1 | 597
-ControlHVYSEFalloff = 0					--  | 0.7 | 598
+ControlHVYSEFalloff = 0.25				--  | 0.7 | 598
 ControlHVYSEBoostMaxSpeed = 1800		--  | 1100 | 601
-ControlHVYSEBoostFalloff = 0.2			--  | 0.7 | 602
+ControlHVYSEBoostFalloff = 0.39			--  | 0.7 | 602
 ControlHVYSEBoostingTurnDamp = 0.25		--  | 0.1 | 603
 ControlHVYSEDirectionBrakeMin = 1.4		--  | 1 | 604
 ControlHVYSEDirectionBrake = 1.9		--  | 1.5 | 605
 ControlHVYSEReverseBrake = 0.8			--  | 0.5 | 606
+ControlHVYSEOverspeedBrake = 6			--  | 3 | 607
 ControlHVYSETurnBrakeMax = 2			--  | 3 | 610
 ControlHVYSETurnStrength = 4			--  | 0.6 | 611
 ControlHVYSERollAutoTime = 1			--  | 2 | 614
@@ -164,6 +170,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 --## Step ##
 						{"LandingHoverOffset", LandingHoverOffset},
 						{"LandingMargin", LandingMargin},
+						{"LandingObstacleMinHeight", LandingObstacleMinHeight},
 						{"HoverTakeoffHeight", HoverTakeoffHeight},
 						{"HoverSpeedFactor", HoverSpeedFactor}, 
 						{"LandingPushNoseUpFactor", LandingPushNoseUpFactor},
@@ -194,6 +201,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 --##### Everything after here is from Step and alters the ship controls #####
 --
 --## Normal-class ship contols ##
+				{["PRECEDING_KEY_WORDS"] = {"",},
+					["REPLACE_TYPE"] = "ALL",
+					["VALUE_CHANGE_TABLE"] = {
+						{"ShipPlanetBrakeAlignMaxTime", ShipPlanetBrakeAlignMaxTime}, 
+					}
+				},
 				{["PRECEDING_KEY_WORDS"] = {"Control", "SpaceEngine",},
 					["VALUE_CHANGE_TABLE"] = {
 						{"ThrustForce", ControlSEThrustForce}, 
@@ -206,6 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"DirectionBrakeMin", ControlSEDirectionBrakeMin}, 
 						{"DirectionBrake", ControlSEDirectionBrake}, 
 						{"ReverseBrake", ControlSEReverseBrake}, 
+						{"OverspeedBrake", ControlSEOverspeedBrake}, 
 						{"TurnBrakeMax", ControlSETurnBrakeMax}, 
 						{"TurnStrength", ControlSETurnStrength}, 
 						{"RollAutoTime", ControlSERollAutoTime}, 
@@ -248,6 +262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"DirectionBrakeMin", ControlLTSEDirectionBrakeMin}, 
 						{"DirectionBrake", ControlLTSEDirectionBrake}, 
 						{"ReverseBrake", ControlLTSEReverseBrake}, 
+						{"OverspeedBrake", ControlLTSEOverspeedBrake}, 
 						{"TurnBrakeMin", ControlLTSETurnBrakeMin},
 						{"TurnBrakeMax", ControlLTSETurnBrakeMax}, 
 						{"TurnStrength", ControlLTSETurnStrength}, 
@@ -294,6 +309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"DirectionBrakeMin", ControlHVYSEDirectionBrakeMin}, 
 						{"DirectionBrake", ControlHVYSEDirectionBrake}, 
 						{"ReverseBrake", ControlHVYSEReverseBrake}, 
+						{"OverspeedBrake", ControlHVYSEOverspeedBrake}, 
 						{"TurnBrakeMax", ControlHVYSETurnBrakeMax}, 
 						{"TurnStrength", ControlHVYSETurnStrength}, 
 						{"RollAutoTime", ControlHVYSERollAutoTime}, 

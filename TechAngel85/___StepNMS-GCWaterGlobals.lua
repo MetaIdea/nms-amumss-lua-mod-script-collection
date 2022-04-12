@@ -9,7 +9,6 @@ FileSource01 = "GCWATERGLOBALS.GLOBAL.MBIN"
 --##### Variables #####
 --## Step ##
 WaveHeight = 0.1				--  | vanilla=1.5 // FineLOD=-0.2 // Abyss=0.25 | 6
--- WaveFrequency = 0.01
 NightWtrFoamColorR = 0.333		--  | vanilla=1 // Exo=0 | 150
 NightWtrFoamColorG = 0.333		--  | vanilla=1 // Exo=0 | 151
 NightWtrFoamColorB = 0.333		--  | vanilla=1 // Exo=0 | 152

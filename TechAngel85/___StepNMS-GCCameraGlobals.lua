@@ -273,6 +273,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"Active", ShakeOff}, 
 					}
 				},
+				{["SPECIAL_KEY_WORDS"] = {"Name", "WORMGRNDROAR",},
+					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
+					["VALUE_CHANGE_TABLE"] = {
+						{"Active", ShakeOff}, 
+					}
+				},
 				{["SPECIAL_KEY_WORDS"] = {"Name", "LIGHTNINGSTRIKE",},
 					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
 					["VALUE_CHANGE_TABLE"] = {
