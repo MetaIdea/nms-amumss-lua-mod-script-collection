@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Instant Actions 4.1.pak", 
+["MOD_FILENAME"] 			= "Instant Actions 4.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.8",
+["NMS_VERSION"]				= "3.85",
 ["MOD_DESCRIPTION"]			= "This mods makes clicks and keys press instant",
 ["MODIFICATIONS"] 			= 
 	{
