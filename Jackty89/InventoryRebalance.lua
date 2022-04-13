@@ -1,5 +1,6 @@
 ModName = "InventoryRebalance"
-GameVersion = "3_80"
+GameVersion = "3_85"
+FilePath = {"METADATA\\GAMESTATE\\DEFAULTINVENTORYBALANCE.MBIN", "METADATA\\GAMESTATE\\DEFAULTINVENTORYBALANCESURVIVAL.MBIN"}
 
 --NORMAL
 SubstanceDefaultStackSizeNormal = 50000	-- Stacksize of substances (Original 9999)
@@ -22,7 +23,7 @@ StackMultiPlierShipSurvival = 8 -- Ship Inventory 250 x 10 = 2000
 StackMultiPlierFreighterAndContainerSurvival = 20 -- Freighter and Cotainer 250 x 20 = 5000
 
 ProductStackMultiPlierExosuitInvetorySurvival = 5 -- Product Stack Size = 5 ExoSuitInvetory
-ProductStackMutiplierExosuitCargoAndShip = 10 -- Product Stack Size = 10 ExoSuitCargo and ShipInvetory   
+ProductStackMutiplierExosuitCargoAndShip = 10 -- Product Stack Size = 10 ExoSuitCargo and ShipInvetory
 ProductStackMutiplierFreighterAndContainer = 25 -- Product Stack Size = 25 Freigher and BaseContainer
 
 -- ExoSuit Tech Slot 8 x 3 = 24
@@ -33,31 +34,31 @@ RefundSurvival = 0.5  -- Refund from base Deconstruct (Original 0.5). This will 
 
 SubstanceAndProcductStackSizeLimit = 999999 -- (Original 9999)
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
-  ["MOD_DESCRIPTION"]		= "Rebalance of InvetorySize and Deconstruction cost",         
-  ["MOD_AUTHOR"]			= "Jackty89",         
-  ["NMS_VERSION"]			= GameVersion,     
-  ["MODIFICATIONS"] 		= 
+  ["MOD_DESCRIPTION"]		= "Rebalance of InvetorySize and Deconstruction cost",
+  ["MOD_AUTHOR"]			= "Jackty89",
+  ["NMS_VERSION"]			= GameVersion,
+  ["MODIFICATIONS"] 		=
     {
-	    {
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
+		{
+			["MBIN_CHANGE_TABLE"] 	=
+			{
 				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DEFAULTINVENTORYBALANCE.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] 	= FilePath[1],
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"DefaultSubstanceMaxAmount",			        SubstanceDefaultStackSizeNormal},
-								{"DefaultProductMaxAmount",                     ProductDefaultStackSizeNormal}, 
-							    {"CargoSubstanceStorageMultiplier",             StackMultiPlierFreighterAndCargoNormal},
-								{"CargoProductStorageMultiplier",		        StackMultiPlierFreighterAndCargoNormal}, 
+								{"DefaultProductMaxAmount",                     ProductDefaultStackSizeNormal},
+								{"CargoSubstanceStorageMultiplier",             StackMultiPlierFreighterAndCargoNormal},
+								{"CargoProductStorageMultiplier",		        StackMultiPlierFreighterAndCargoNormal},
 								{"FreighterSubstanceStorageMultiplier",         StackMultiPlierFreighterAndCargoNormal},
-								{"FreighterProductStorageMultiplier",	        StackMultiPlierFreighterAndCargoNormal}, 
+								{"FreighterProductStorageMultiplier",	        StackMultiPlierFreighterAndCargoNormal},
 								{"ShipSubstanceStorageMultiplier",              StackMultiPlierExosuitAndShipNormal},
 								{"ShipProductStorageMultiplier",                StackMultiPlierExosuitAndShipNormal},
 								{"ChestSubstanceStorageMultiplier",             StackMultiPlierExosuitAndShipNormal},
@@ -69,26 +70,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SubstanceMaxAmountLimit",                     SubstanceAndProcductStackSizeLimit},
 								{"ProductMaxAmountLimit",                       SubstanceAndProcductStackSizeLimit},
 								{"PlayerPersonalInventoryTechWidth",            TechWidthNormal},
-                                {"PlayerPersonalInventoryTechHeight",           TechHeightNormal},	
+                                {"PlayerPersonalInventoryTechHeight",           TechHeightNormal},
 								{"DeconstructRefundPercentage",                 RefundNormal}
 							}
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DEFAULTINVENTORYBALANCESURVIVAL.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] 	= FilePath[2],
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
-							    {"DefaultSubstanceMaxAmount",			        SubstanceDefaultStackSizeSurvival},
-								{"DefaultProductMaxAmount",                     ProductDefaultStackSizeSurvival}, 
+								{"DefaultSubstanceMaxAmount",			        SubstanceDefaultStackSizeSurvival},
+								{"DefaultProductMaxAmount",                     ProductDefaultStackSizeSurvival},
 								{"CargoSubstanceStorageMultiplier",             StackMultiPlierExosuitCargoSurvival},
-								{"CargoProductStorageMultiplier",		        ProductStackMutiplierExosuitCargoAndShip}, 
+								{"CargoProductStorageMultiplier",		        ProductStackMutiplierExosuitCargoAndShip},
 								{"FreighterSubstanceStorageMultiplier",         StackMultiPlierFreighterAndContainerSurvival},
-								{"FreighterProductStorageMultiplier",	        ProductStackMutiplierFreighterAndContainer}, 
+								{"FreighterProductStorageMultiplier",	        ProductStackMutiplierFreighterAndContainer},
 								{"ShipSubstanceStorageMultiplier",              StackMultiPlierShipSurvival},
 								{"ShipProductStorageMultiplier",                ProductStackMutiplierExosuitCargoAndShip},
 								{"ChestSubstanceStorageMultiplier",             StackMultiPlierFreighterAndContainerSurvival},
@@ -100,7 +101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SubstanceMaxAmountLimit",                     SubstanceAndProcductStackSizeLimit},
 								{"ProductMaxAmountLimit",                       SubstanceAndProcductStackSizeLimit},
 								{"PlayerPersonalInventoryTechWidth",            TechWidthSurvival},
-                                {"PlayerPersonalInventoryTechHeight",           TechHeightSurvival},	
+                                {"PlayerPersonalInventoryTechHeight",           TechHeightSurvival},
                                 {"DeconstructRefundPercentage",                 RefundSurvival}
 							}
 						}
@@ -109,7 +110,4 @@ NMS_MOD_DEFINITION_CONTAINER =
             }
 		}
     }
-}	
---NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE
+}

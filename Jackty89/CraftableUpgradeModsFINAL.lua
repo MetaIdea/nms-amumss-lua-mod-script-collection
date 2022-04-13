@@ -1,4 +1,4 @@
-GameVersion = "3_82"
+GameVersion = "3_85"
 NexusModName = "CraftableUpgradeMods"
 Author = "jackty89"
 
