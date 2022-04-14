@@ -1,0 +1,34 @@
+DelCreature = {"BUTTERFLY","BUTTERFLOCK","LARGEBUTTERFLY","FLYINGBEETLE","SPIDER","FLOATSPIDER","WEIRDBUTTERFLY"}
+
+NMS_MOD_DEFINITION_CONTAINER = 
+{
+["MOD_FILENAME"] 			= "Anti-Entomophobia.pak",
+["MOD_AUTHOR"]				= "Babscoole",
+["NMS_VERSION"]				= "3.85",
+["MODIFICATIONS"] 			= 
+	{
+		{
+			["MBIN_CHANGE_TABLE"] 	= 
+			{ 
+				{
+					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+					
+					},
+				},								
+			},
+		},
+	},	
+}
+
+local DelCreatureTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+for i=1,#DelCreature do
+	local value = DelCreature[i]
+    DelCreatureTable[#DelCreatureTable +1 ] = 
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id",value},	
+						--	["SECTION_UP"] = 1,
+							["REMOVE"] = "SECTION"
+						}					
+end
