@@ -28,7 +28,6 @@ for i=1,#DelCreature do
     DelCreatureTable[#DelCreatureTable +1 ] = 
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id",value},	
-						--	["SECTION_UP"] = 1,
 							["REMOVE"] = "SECTION"
 						}					
 end
