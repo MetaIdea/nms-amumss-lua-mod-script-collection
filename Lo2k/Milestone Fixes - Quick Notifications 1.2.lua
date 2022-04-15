@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Milestone Fixes - No Notifications 1.1.pak", 
+["MOD_FILENAME"] 			= "Milestone Fixes - Quick Notifications 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.10",
-["MOD_DESCRIPTION"]			= "This mod fixes incorrect milestone total count and removes notifications",
+["NMS_VERSION"]				= "3.85",
+["MOD_DESCRIPTION"]			= "This mod fixes incorrect milestone total count and makes notifications quicker",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -17,14 +17,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"StatMessageType",	"Silent"},
+								{"StatMessageType",	"Quick"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"StatId", "PIRATES_KILLED",},
+							--["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"StatMessageType",	"Silent"},
+								{"StatMessageType",	"Silent"},
 								{"ShowInTerminal",	"False"},
 								{"ShowStatLevel", "False"},
 							}

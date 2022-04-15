@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Milestone Fixes - Standard 1.1.pak", 
+["MOD_FILENAME"] 			= "Milestone Fixes - Standard 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.10",
+["NMS_VERSION"]				= "3.85",
 ["MOD_DESCRIPTION"]			= "This mod fixes incorrect milestone total count",
 ["MODIFICATIONS"] 			= 
 	{
