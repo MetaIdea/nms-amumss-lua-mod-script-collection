@@ -74,7 +74,7 @@ NewRecipes =
     },
     {
         -- D + D => 2T
-        "Trit_3D",
+        "Trit_2D",
         SubstanceIds[1],
         {
             {SubstanceIds[2], "1", SubstanceOrProduct[1]},

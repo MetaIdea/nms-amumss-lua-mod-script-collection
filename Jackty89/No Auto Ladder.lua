@@ -1,8 +1,8 @@
-GameVersion = "3_68"
-ModeName = "NoLadderAutoGrab"
-Author = "Jackty89"
+GameVersion = "3_82"
+ModeName = "No Auto Ladder"
+Author = "Methatronc/Jackty89"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"] 			= ModeName..GameVersion..".pak",
     ["MOD_DESCRIPTION"]			= ModeName,
