@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Fractured Mining 2.7.pak", 
+["MOD_FILENAME"] 			= "Fractured Mining 2.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.7",
+["NMS_VERSION"]				= "3.85",
 ["MOD_DESCRIPTION"]			= "This mod improves mining effects",
 ["MODIFICATIONS"] 			= 
 	{
