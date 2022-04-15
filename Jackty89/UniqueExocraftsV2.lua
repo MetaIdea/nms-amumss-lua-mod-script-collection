@@ -1,4 +1,3 @@
-GameVersion = "3_8x"
 ModName = "UniqueExoCrafts"
 Description = "A small mod that make exocraft faster but also stand out from eachother"
 
@@ -86,10 +85,9 @@ ExoCraftsNewValues = {
 
 -- HOVBERCraft is an unreleased vehcile this is NOT the Nomad
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"] = ModName .. GameVersion .. ".pak",
+	["MOD_FILENAME"] = ModName.. ".pak",
 	["MOD_DESCRIPTION"] = Description,
 	["MOD_AUTHOR"] = "Jackty89",
-	["NMS_VERSION"] = GameVersion,
 	["MODIFICATIONS"] = {
 		{
 			["MBIN_CHANGE_TABLE"] = {
@@ -110,28 +108,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							}
 						}
 					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= GCTechnologyTablePath,
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","MECH_LASER"},
+							["PRECEDING_KEY_WORDS"] = {"StatBonuses","StatsTypes"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Bonus", MechSuitLaserDamange}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","MECH_GUN"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Bonus", MechSuitCanonDamange}
+							}
+						}
+					}
 				}
-				-- {
-				-- 	["MBIN_FILE_SOURCE"] 	= GCTechnologyTablePath,
-				-- 	["EXML_CHANGE_TABLE"] 	=
-				-- 	{
-				-- 		{
-				-- 			["SPECIAL_KEY_WORDS"] = {"ID","MECH_LASER"},
-				-- 			["PRECEDING_KEY_WORDS"] = {"StatBonuses","StatsTypes"},
-				-- 			["VALUE_CHANGE_TABLE"] 	=
-				-- 			{
-				-- 				{"Bonus", MechSuitLaserDamange}
-				-- 			}
-				-- 		},
-				-- 		{
-				-- 			["SPECIAL_KEY_WORDS"] = {"ID","MECH_GUN"},
-				-- 			["VALUE_CHANGE_TABLE"] 	=
-				-- 			{
-				-- 				{"Bonus", MechSuitCanonDamange}
-				-- 			}
-				-- 		}
-				-- 	}
-				-- }
 			}
 		}
 	}
@@ -145,7 +143,6 @@ for i = 1, #ExoCraftsNewValues do
 		vehicleChanges[#vehicleChanges + 1] = {
 			["SPECIAL_KEY_WORDS"] = {"Name", ExoCraftsNewValues[i]["ID"]},
 			["VALUE_CHANGE_TABLE"] = {
-				{"UnderwaterEngineMaxSpeed", ExoCraftsNewValues[i]["Speed"]},
 				{"UnderwaterEngineMaxSpeed", ExoCraftsNewValues[i]["Speed"]},
 				{"UnderwaterEnginePower", NautilonUnderwaterEnginePower},
 				{"UnderwaterEngineFalloff", NautilonUnderwaterEngineFalloff},

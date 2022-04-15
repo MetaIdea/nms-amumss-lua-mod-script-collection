@@ -142,7 +142,7 @@ NewRequirementsArray =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "Craftable Modules.pak",
+    ["MOD_FILENAME"]            = "CraftableModules.pak",
     ["MOD_DESCRIPTION"]         = "Allows you to craft Rapair Kits, the Salvaged Frigate Module, the Cargo Bulkhead and the Storage Augmentation",
     ["MOD_AUTHOR"]              = "Methatronc/Maintained and edited by Jackty89",
     ["MODIFICATIONS"]           =

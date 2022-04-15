@@ -136,17 +136,12 @@ namespace cmk.NMS.Scripts.Mod
 
         protected override void Execute()
 		{
-			//HelloWorld("Hello World");
+			//GcDefaultSaveData(NewRecipes);
             GcRecipeTable(NewRecipes);
             GcEditRecipeTable(ExistingRecipes);
         }
 
         //...........................................................
-
-        protected void HelloWorld(string HW)
-        {
-			Log.AddInformation($"Hello = { HW}");
-		}
 
         protected void GcRecipeTable(List<GcRefinerRecipe> Recipes)
 		{
@@ -173,7 +168,20 @@ namespace cmk.NMS.Scripts.Mod
 					existingRecipe.Ingredients.Add(ingredient);
             }
 		}
-	}
+        protected void GcDefaultSaveData(List<GcRefinerRecipe> Recipes)
+        {
+            if (Recipes.IsNullOrEmpty()) return;
+            var paths = new[] {
+                "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN",
+                "METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN"
+            };
+            foreach (var path in paths)
+            {
+                var mbin = ExtractMbin<GcDefaultSaveData>(path);
+                Recipes.ForEach(RECIPE => mbin.State.KnownRefinerRecipes.AddUnique(RECIPE.Id));
+            }
+        }
+    }
 }
 
 //=============================================================================
