@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Long Range Freighters 4.0.pak", 
+["MOD_FILENAME"] 			= "Long Range Freighters 4.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.84",
+["NMS_VERSION"]				= "3.85",
 ["MOD_DESCRIPTION"]			= "This mod multiply by 10 all freighter warp drive ranges",
 ["MODIFICATIONS"] 			= 
 	{
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","F_HYPERDRIVE",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","F_HDRIVEBOOST1",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","F_HDRIVEBOOST2",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","F_HDRIVEBOOST3",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -51,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS1",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -60,7 +60,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS2",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -69,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS3",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -84,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UP_FRHYP1",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -94,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UP_FRHYP2",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -104,7 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UP_FRHYP3",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -114,7 +114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","UP_FRHYP4",},
-							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Freighter_Teleport",},
 							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
