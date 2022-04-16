@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Asteroid Explosions 1.7.pak", 
+["MOD_FILENAME"] 			= "Better Asteroid Explosions 1.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.70",
+["NMS_VERSION"]				= "3.85",
 ["MOD_DESCRIPTION"]			= "This mod improves asteroid explosions",
 ["MODIFICATIONS"] 			= 
 	{
