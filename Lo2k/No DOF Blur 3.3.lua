@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No DOF Blur 3.2.pak", 
+["MOD_FILENAME"] 			= "No DOF Blur 3.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.82",
+["NMS_VERSION"]				= "3.85",
 ["MOD_DESCRIPTION"]			= "This mods removes depth of field for dialogs",
 ["MODIFICATIONS"] 			= 
 	{

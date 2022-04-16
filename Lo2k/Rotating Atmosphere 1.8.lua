@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Rotating Atmosphere 1.7.pak",
+["MOD_FILENAME"] 			= "Rotating Atmosphere 1.8.pak",
 ["MOD_AUTHOR"]				= "Lo2k (mod) & Mjjstral(script)",
-["NMS_VERSION"]				= "3.81",
+["NMS_VERSION"]				= "3.85",
 ["MODIFICATIONS"] 			= 
 	{
 		{
