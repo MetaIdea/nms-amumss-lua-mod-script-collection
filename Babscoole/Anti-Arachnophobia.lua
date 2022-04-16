@@ -1,8 +1,8 @@
-DelCreature = {"SEASNAKE","FLYINGSNAKE","SANDWORM"}
+DelCreature = {"SPIDER","FLOATSPIDER","ROCKCREATURE","SCUTTLER","CRAB"}
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Anti-Ophidiophobia.pak",
+["MOD_FILENAME"] 			= "Anti-Arachnophobia.pak",
 ["MOD_AUTHOR"]				= "Babscoole",
 ["NMS_VERSION"]				= "3.85",
 ["MODIFICATIONS"] 			= 
