@@ -1,5 +1,6 @@
 # nms-amumss-lua-mod-script-collection
 A collection of public amumss lua mod scripts for nms.
+Now also includes .cs scripts for use with NMS Mod Builder (NMSMB)
 
 Mod script authors:
 
@@ -26,6 +27,10 @@ More:
 - [FelipeMendesGD](https://github.com/FelipeMendesGD/NMS-Modding)
 - [Wyzoom](https://github.com/Wyzoom/OmmmNoms)
 - [csakypeter](https://github.com/csakypeter/NMS-BetterRewards)
+
+Mod Tools:
+- [AMUMSS](https://github.com/HolterPhylo/AMUMSS)
+- [NMSMB](https://github.com/cmkushnir/NMSModBuilder)
 
 Any in the form of a .zip file have additional files that need to be added by placing into ModExtraFilesToInclude in AMUMSS when the LUA is run.
 
