@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Mod.7z" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="cmkNMSCommon">
+      <HintPath>..\..\cmkNMSCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="cmkNMSModBuilder">
+      <HintPath>..\..\cmkNMSModBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="libMBIN">
+      <HintPath>..\..\libMBIN.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
