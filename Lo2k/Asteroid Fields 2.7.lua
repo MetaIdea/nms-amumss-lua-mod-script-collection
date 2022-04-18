@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Asteroid Fields 2.6.pak", 
+["MOD_FILENAME"] 			= "Asteroid Fields 2.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.34",
+["NMS_VERSION"]				= "3.85",
 ["MOD_DESCRIPTION"]			= "This mod changes asteroid repartition",
 ["MODIFICATIONS"] 			= 
 	{
@@ -55,7 +55,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"AsteroidSpacing",	"1500"},
-								{"AsteroidMaxNumGenerates", "3500"},
+								{"AsteroidMaxNumGenerates", "3500"},  --was 50000 and changed to 5000 in Outlaws update
 							},
 						}					
 					}
