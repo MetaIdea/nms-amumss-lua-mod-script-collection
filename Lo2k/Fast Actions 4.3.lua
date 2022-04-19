@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Fast Actions 4.1.pak", 
+["MOD_FILENAME"] 			= "Fast Actions 4.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.8",
+["NMS_VERSION"]				= "3.87",
 ["MOD_DESCRIPTION"]			= "This mods reduces clicks and keys press duration",
 ["MODIFICATIONS"] 			= 
 	{
