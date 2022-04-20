@@ -1,5 +1,185 @@
-NMSVersion = "3.84"
-MODVersion = "3.84"
+NMSVersion = "3.87"
+MODVersion = "3.87"
+
+Grave_Scan_Event =
+[[
+    <Property value="GcScanEventData.xml">
+      <Property name="Name" value="GRAVE"/>
+      <Property name="ForceInteraction" value=""/>
+      <Property name="ForceInteractionType" value="GcInteractionType.xml">
+        <Property name="InteractionType" value="None"/>
+      </Property>
+      <Property name="ForceBroken" value="False"/>
+      <Property name="ForceFixed" value="False"/>
+      <Property name="ForceOverridesAll" value="True"/>
+      <Property name="ForceOverrideEncounter" value=""/>
+      <Property name="IsCommunityPortalOverride" value="False"/>
+      <Property name="ClearForcedInteractionOnCompletion" value="False"/>
+      <Property name="BuildingPreventionRadius" value="0"/>
+      <Property name="AlwaysShow" value="False"/>
+      <Property name="NeverShow" value="False"/>
+      <Property name="PlanetLabelText" value=""/>
+      <Property name="SurveyDistance" value="0"/>
+      <Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD"/>
+      <Property name="EventStartType" value="ObjectScan"/>
+      <Property name="EventEndType" value="Proximity"/>
+      <Property name="EventPriority" value="Regular"/>
+      <Property name="CanEndFromOutsideMission" value="False"/>
+      <Property name="DisableMultiplayerSync" value="True"/>
+      <Property name="ReplaceEventIfAlreadyActive" value="True"/>
+      <Property name="BuildingLocation" value="Nearest"/>
+      <Property name="BuildingType" value="BuildingClass"/>
+      <Property name="BuildingClass" value="GcBuildingClassification.xml">
+        <Property name="BuildingClass" value="GraveInCave"/>
+      </Property>
+      <Property name="AllowFriendsBases" value="False"/>
+      <Property name="ForceWideRandom" value="False"/>
+      <Property name="MustFindSystem" value="False"/>
+      <Property name="AllowOverriddenBuildings" value="False"/>
+      <Property name="SolarSystemLocation" value="Local"/>
+      <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
+        <Property name="UseStarType" value="False"/>
+        <Property name="UseWealth" value="False"/>
+        <Property name="UseTrading" value="False"/>
+        <Property name="UseRace" value="GcAlienRace.xml">
+          <Property name="AlienRace" value="None"/>
+        </Property>
+        <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
+          <Property name="GalaxyStarAnomaly" value="None"/>
+        </Property>
+        <Property name="UseConflict" value="GcPlayerConflictData.xml">
+          <Property name="ConflictLevel" value="Default"/>
+        </Property>
+        <Property name="StarType" value="GcGalaxyStarTypes.xml">
+          <Property name="GalaxyStarType" value="Yellow"/>
+        </Property>
+        <Property name="TradingData" value="GcPlanetTradingData.xml">
+          <Property name="WealthClass" value="GcWealthClass.xml">
+            <Property name="WealthClass" value="Average"/>
+          </Property>
+          <Property name="TradingClass" value="GcTradingClass.xml">
+            <Property name="TradingClass" value="Mining"/>
+          </Property>
+        </Property>
+        <Property name="AllowUnsafeMatches" value="False"/>
+        <Property name="NeverAllowEmpty" value="False"/>
+        <Property name="NeverAllowAbandoned" value="False"/>
+        <Property name="RequireUndiscovered" value="False"/>
+        <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsExtremeSentinelPlanet" value="False"/>
+        <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
+        <Property name="NeedsExtremeWeatherPlanet" value="False"/>
+        <Property name="NeedsExtremeHazardPlanet" value="False"/>
+        <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
+        <Property name="AnyRGBBiome" value="False"/>
+        <Property name="NeedsBiome" value="False"/>
+        <Property name="NeedsBiomeType" value="GcBiomeType.xml">
+          <Property name="Biome" value="Lush"/>
+        </Property>
+        <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
+          <Property name="BiomeSubType" value="None"/>
+        </Property>
+        <Property name="NeedsEmptySystem" value="False"/>
+        <Property name="NeedsAbandonedSystem" value="False"/>
+        <Property name="NeedsResourceHint" value=""/>
+        <Property name="SuitableForCreatureDiscovery" value="False"/>
+        <Property name="SuitableForCreatureTaming" value="False"/>
+        <Property name="SamePlanetAsEvent" value=""/>
+      </Property>
+      <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
+        <Property name="UseStarType" value="False"/>
+        <Property name="UseWealth" value="False"/>
+        <Property name="UseTrading" value="False"/>
+        <Property name="UseRace" value="GcAlienRace.xml">
+          <Property name="AlienRace" value="None"/>
+        </Property>
+        <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
+          <Property name="GalaxyStarAnomaly" value="None"/>
+        </Property>
+        <Property name="UseConflict" value="GcPlayerConflictData.xml">
+          <Property name="ConflictLevel" value="Default"/>
+        </Property>
+        <Property name="StarType" value="GcGalaxyStarTypes.xml">
+          <Property name="GalaxyStarType" value="Yellow"/>
+        </Property>
+        <Property name="TradingData" value="GcPlanetTradingData.xml">
+          <Property name="WealthClass" value="GcWealthClass.xml">
+            <Property name="WealthClass" value="Average"/>
+          </Property>
+          <Property name="TradingClass" value="GcTradingClass.xml">
+            <Property name="TradingClass" value="Mining"/>
+          </Property>
+        </Property>
+        <Property name="AllowUnsafeMatches" value="False"/>
+        <Property name="NeverAllowEmpty" value="False"/>
+        <Property name="NeverAllowAbandoned" value="False"/>
+        <Property name="RequireUndiscovered" value="False"/>
+        <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsExtremeSentinelPlanet" value="False"/>
+        <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
+        <Property name="NeedsExtremeWeatherPlanet" value="False"/>
+        <Property name="NeedsExtremeHazardPlanet" value="False"/>
+        <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
+        <Property name="AnyRGBBiome" value="False"/>
+        <Property name="NeedsBiome" value="False"/>
+        <Property name="NeedsBiomeType" value="GcBiomeType.xml">
+          <Property name="Biome" value="Lush"/>
+        </Property>
+        <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
+          <Property name="BiomeSubType" value="None"/>
+        </Property>
+        <Property name="NeedsEmptySystem" value="False"/>
+        <Property name="NeedsAbandonedSystem" value="False"/>
+        <Property name="NeedsResourceHint" value=""/>
+        <Property name="SuitableForCreatureDiscovery" value="False"/>
+        <Property name="SuitableForCreatureTaming" value="False"/>
+        <Property name="SamePlanetAsEvent" value=""/>
+      </Property>
+      <Property name="ForceRestartInteraction" value="True"/>
+      <Property name="HasReward" value=""/>
+      <Property name="NextOption" value=""/>
+      <Property name="TriggerActions" value="GcScanEventTriggers.xml">
+        <Property name="Range" value="100"/>
+        <Property name="Triggers"/>
+        <Property name="AllowRetrigger" value="False"/>
+      </Property>
+      <Property name="UAsList"/>
+      <Property name="TechShopType" value="GcTechnologyCategory.xml">
+        <Property name="TechnologyCategory" value="All"/>
+      </Property>
+      <Property name="OSDMessage" value="UI_MP_PLANTKILL_GRAVE_OSD"/>
+      <Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM"/>
+      <Property name="MarkerLabel" value="SCAN_GRAVE"/>
+      <Property name="MarkerIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value=""/>
+      </Property>
+      <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
+        <Property name="ScannerIconHighlightType" value="Diamond"/>
+      </Property>
+      <Property name="StartTime" value="0"/>
+      <Property name="MessageTime" value="0"/>
+      <Property name="MessageDisplayTime" value="4"/>
+      <Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT"/>
+      </Property>
+      <Property name="IconTime" value="4"/>
+      <Property name="TooltipTime" value="10"/>
+      <Property name="TooltipRepeats" value="False"/>
+      <Property name="ShowEndTooltip" value="True"/>
+      <Property name="TooltipMessage" value="Fallen traveler detected."/>
+      <Property name="ResourceOverride" value="GcResourceElement.xml">
+        <Property name="Filename" value=""/>
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0"/>
+          <Property name="UseSeedValue" value="False"/>
+        </Property>
+        <Property name="AltId" value=""/>
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers"/>
+        </Property>
+      </Property>
+    </Property>
+]]	
 
  All_Request_Leave =[[
         <Property value="GcAlienPuzzleOption.xml">
@@ -172,8 +352,9 @@ return[[          <Property value="GcAlienPuzzleOption.xml">
 REWARD1 = GetReward ("CRASHED_SHIP", "DISTRESS")
 REWARD2 = GetReward ("TOOL_LOCATION", "SHOP")
 REWARD3 = GetReward ("PLANET_ARCHIVES", "LIBRARY")
+REWARD4 = GetReward ("R_GRAVE", "GRAVE")
 
-REWARDSET = REWARD1..REWARD2..REWARD3
+REWARDSET = REWARD1..REWARD2..REWARD3..REWARD4
 
 --First set of options only 4 options per set allowed
 Menu1_Option1 = GetPuzzleOption("UI_PORTAL_OPT", "REVEAL_PORTAL")
@@ -199,8 +380,9 @@ More_Options3 = GetMorePuzzleOption("?NUCLEAR_SCANNER")
 Menu3_Options = Menu3_Option1..Menu3_Option2..Menu3_Option3..More_Options3
 
 --Fourth set of options, also get a close option
-Menu4_Option1 = GetPuzzleOption("Sentinel Pillar", "R_SHOW_HIVEONLY") 
-Menu4_Options = Menu4_Option1..All_Request_Leave
+Menu4_Option1 = GetPuzzleOption("Sentinel Pillar", "R_SHOW_HIVEONLY")
+Menu4_Option2 = GetPuzzleOption("Traveller Grave", "R_GRAVE") 
+Menu4_Options = Menu4_Option1..Menu4_Option2..All_Request_Leave
 
 --Put all the options together.  
 ALL_PUZZLE_UPDATES = [[      <Property name="Options">
@@ -272,7 +454,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ReplaceEventIfAlreadyActive",	"True"},
 								{"InterstellarOSDMessage", "SCANEVENT_ANOTHER_SYSTEM"},
 							}	
-                        },						
+                        },
+						{
+							["PRECEDING_KEY_WORDS"] = {"Events"}, 
+							["LINE_OFFSET"] 		= "+0",
+							["ADD"] = Grave_Scan_Event
+						},
                     },
                 },				
 			}
