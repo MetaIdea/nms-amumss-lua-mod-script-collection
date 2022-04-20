@@ -1,4 +1,3 @@
-GameVersion = "3_84"
 ModName = "SlotMaster"
 Author = "Jackty89"
 
@@ -10,10 +9,9 @@ TechHeight = 6
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"] = ModName .. GameVersion .. ".pak",
+	["MOD_FILENAME"] = ModName.. ".pak",
 	["MOD_DESCRIPTION"] = ModName,
 	["MOD_AUTHOR"] = Author,
-	["NMS_VERSION"] = GameVersion,
 	["MODIFICATIONS"] =
 	{
 		{
@@ -23,6 +21,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] = InventoryTablePath,
 					["EXML_CHANGE_TABLE"] =
 					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"VehicleSmall", "GcInventoryLayoutGenerationDataEntry.xml"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinSlots", "48"},
+								{"MaxSlots", "48"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"VehicleMedium", "GcInventoryLayoutGenerationDataEntry.xml"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinSlots", "48"},
+								{"MaxSlots", "48"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"VehicleLarge", "GcInventoryLayoutGenerationDataEntry.xml"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MinSlots", "48"},
+								{"MaxSlots", "48"}
+							}
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize"},
 							["REPLACE_TYPE"] = "ALL",
