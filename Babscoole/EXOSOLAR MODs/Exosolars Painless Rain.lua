@@ -4,7 +4,7 @@ Maintainer = "Babscoole"
 ModName = "Exosolars Painless Rain"
 ModNameSub = ""
 BaseDescription = "Makes lush storms harmless"
-GameVersion = "3.84"
+GameVersion = "3.87"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\HUMIDWEATHER.MBIN"
 
