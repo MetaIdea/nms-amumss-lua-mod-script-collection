@@ -50,8 +50,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",	"8"}, 		-- Original "15"
 								{"MaxSlots",	"13"}, 		-- Original "19"
-                                {"MinExtraTech",	"5"}, 	-- Original "3"
-								{"MaxExtraTech",	"16"} 	-- Original "5"
+                                {"MinTechSlots",	"5"}, 	-- Original "3"
+								{"MaxTechSlots",	"16"} 	-- Original "5"
 							}
 						},
                         {
@@ -60,8 +60,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",	"10"}, 		-- Original "20"
 								{"MaxSlots",	"15"}, 		-- Original "29"
-                                {"MinExtraTech",	"14"}, 	-- Original "5"
-								{"MaxExtraTech",	"24"} 	-- Original "8"
+                                {"MinTechSlots",	"14"}, 	-- Original "5"
+								{"MaxTechSlots",	"24"} 	-- Original "8"
 							}
 						},
                         {
@@ -70,8 +70,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",	"13"},		-- Original "30"
 								{"MaxSlots",	"18"},		-- Original "38"
-                                {"MinExtraTech",	"20"}, 	-- Original "8"
-								{"MaxExtraTech",	"30"} 	-- Original "12"
+                                {"MinTechSlots",	"20"}, 	-- Original "8"
+								{"MaxTechSlots",	"30"} 	-- Original "12"
 							}
 						},
                         {
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"DrpLarge"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxExtraTech",	"7"} 	-- Original "8"
+								{"MaxTechSlots",	"7"} 	-- Original "8"
 							}
 						},
                         {   
@@ -338,8 +338,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",	"8"}, 		-- Original "15"
 								{"MaxSlots",	"12"}, 		-- Original "19"
-                                {"MinExtraTech",	"6"}, 	-- Original "3"
-								{"MaxExtraTech",	"12"} 	-- Original "5"
+                                {"MinTechSlots",	"6"}, 	-- Original "3"
+								{"MaxTechSlots",	"12"} 	-- Original "5"
 							}
 						},
                         {
@@ -348,8 +348,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",	"12"}, 		-- Original "20"
 								{"MaxSlots",	"18"}, 		-- Original "29"
-                                {"MinExtraTech",	"12"}, 	-- Original "3"
-								{"MaxExtraTech",	"18"} 	-- Original "5"
+                                {"MinTechSlots",	"12"}, 	-- Original "3"
+								{"MaxTechSlots",	"18"} 	-- Original "5"
 							}
 						},
                         {
@@ -358,8 +358,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",	"18"},		-- Original "30"
 								{"MaxSlots",	"24"},		-- Original "38"
-                                {"MinExtraTech",	"18"}, 	-- Original "8"
-								{"MaxExtraTech",	"24"} 	-- Original "12"
+                                {"MinTechSlots",	"18"}, 	-- Original "8"
+								{"MaxTechSlots",	"24"} 	-- Original "12"
 							}
 						},
                         {
@@ -645,8 +645,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",	"12"}, 		-- Original "11"
 								{"MaxSlots",	"22"},		-- Original "14"
-                                {"MinExtraTech",	"8"}, 	-- Original "1"
-								{"MaxExtraTech",	"12"} 	-- Original "3" 		
+                                {"MinTechSlots",	"8"}, 	-- Original "1"
+								{"MaxTechSlots",	"12"} 	-- Original "3" 		
 							}
 						},
                         {
@@ -655,8 +655,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",	"22"}, 		-- Original "15"
 								{"MaxSlots",	"30"},		-- Original "20"
-                                {"MinExtraTech",	"12"}, 	-- Original "4"
-								{"MaxExtraTech",	"18"} 	-- Original "6" 
+                                {"MinTechSlots",	"12"}, 	-- Original "4"
+								{"MaxTechSlots",	"18"} 	-- Original "6" 
 							}
 						},
                         {
@@ -665,8 +665,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",	"30"}, 		-- Original "21"
 								{"MaxSlots",	"36"},		-- Original "30"
-                                {"MinExtraTech",	"18"}, 	-- Original "6"
-								{"MaxExtraTech",	"24"} 	-- Original "10" 
+                                {"MinTechSlots",	"18"}, 	-- Original "6"
+								{"MaxTechSlots",	"24"} 	-- Original "10" 
 							}
 						},
                         {

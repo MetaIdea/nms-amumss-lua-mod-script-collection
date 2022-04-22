@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Slow Clouds 1.6.pak", 
+["MOD_FILENAME"] 			= "Slow Clouds 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.62",
+["NMS_VERSION"]				= "3.88",
 ["MOD_DESCRIPTION"]			= "This mod makes clouds slower",
 ["MODIFICATIONS"] 			= 
 	{

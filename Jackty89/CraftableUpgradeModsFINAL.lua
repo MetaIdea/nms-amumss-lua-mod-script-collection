@@ -1,4 +1,3 @@
-GameVersion = "3_85"
 NexusModName = "CraftableUpgradeMods"
 Author = "jackty89"
 
@@ -27,6 +26,7 @@ FreighterRootTech = "FRIGATE_FUEL_1"
 FactoryTreeTech = "PRODFUEL2"
 
 CraftedFreighterModDescrId = "UP_FR_CRAFTED_DESC"
+CustomLanguageTag = "CustomFrModsDesc"
 
 IsCraftableToTrue = "True"
 
@@ -35,44 +35,43 @@ SubList = {}
 
 Languages =
 {
-	"English",
-	"French",
-	"Italian",
-	"German",
-	"Spanish",
-	"Russian",
-	"Polish",
-	"Dutch",
-	"Portuguese",
-	"LatinAmericanSpanish",
-	"BrazilianPortuguese",
-	"SimplifiedChinese",
-	"TraditionalChinese",
-	"TencentChinese",
-	"Korean",
-	"Japanese",
-	"USEnglish"
+	["English"] = "English",
+	["French"] = "French",
+	["Italian"] = "Italian",
+	["German"] = "German",
+	["Spanish"] = "Spanish",
+	["Russian"] = "Russian",
+	["Polish"] = "Polish",
+	["Dutch"] = "Dutch",
+	["Portuguese"] = "Portuguese",
+	["LatinAmeraicanSpanish"] = "LatinAmericanSpanish", --this is not a typo
+	["BrazilianPortuguese"] = "BrazilianPortuguese",
+	["SimplifiedChinese"] = "SimplifiedChinese",
+	["TraditionalChinese"] = "TraditionalChinese",
+	["TencentChinese"] = "TencentChinese",
+	["Korean"] = "Korean",
+	["Japanese"] = "Japanese",
+	["USEnglish"] = "USEnglish"
 }
-
 AddNewLanguatext =
 {
-    {Languages[1], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
-    {Languages[2], "Une amélioration de cargo fabriqué.&#xA;&#xA;Peut être redéployée dans votre propre vaisseau amiral pour améliorer sa &lt;TECHNOLOGY&gt;Technologie&lt;&gt;."},
-    {Languages[3], "Un miglioramento per il mercantile.&#xA;&#xA;Può essere utilizzato sulla propria ammiraglia per migliorarne l'&lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
-    {Languages[4], "Ein einsetzbares Frachter-Upgrade.&#xA;&#xA;Kann in dein eigenes Hauptschiff wiedereingebaut werden, um dessen &lt;TECHNOLOGY&gt;Technologie&lt;&gt; zu verbessern."},
-    {Languages[5], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
-    {Languages[6], "Модернизация грузового корабля.&#xA;&#xA;Может быть переоборудована в ваш собственный капитальный корабль для улучшения его &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
-    {Languages[7], "Rozmieszczalne ulepszenie frachtowca. MoÅ¼na ponownie zainstalowaÄ na wÅasnym statku gÅównym, aby ulepszyÄ jego &lt;TECHNOLOGY&gt;technologie&lt;&gt;."},
-    {Languages[8], "Een upgrade gemaakt voor een vlaggenschip.&#xA;&#xA;Kan worden geïnstalleerd in je eigen vlaggenschip om de &lt;TECHNOLOGY&gt;Technologie&lt;&gt; te verbeteren."},
-    {Languages[9], "Uma atualização do cargueiro implementável.&#xA;&#xA;Pode ser reimplementada na sua própria nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
-    {Languages[10], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
-    {Languages[11], "Uma atualização implantável de nave cargueira.&#xA;&#xA;Pode ser reimplantada na sua nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt; dela."},
-    {Languages[12], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
-    {Languages[13], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
-    {Languages[14], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
-    {Languages[15], ""},
-    {Languages[16], ""},
-    {Languages[17], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."}
+    {Languages["English"], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
+    {Languages["French"], "Une amélioration de cargo fabriqué.&#xA;&#xA;Peut être redéployée dans votre propre vaisseau amiral pour améliorer sa &lt;TECHNOLOGY&gt;Technologie&lt;&gt;."},
+    {Languages["Italian"], "Un miglioramento per il mercantile.&#xA;&#xA;Può essere utilizzato sulla propria ammiraglia per migliorarne l'&lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
+    {Languages["German"], "Ein einsetzbares Frachter-Upgrade.&#xA;&#xA;Kann in dein eigenes Hauptschiff wiedereingebaut werden, um dessen &lt;TECHNOLOGY&gt;Technologie&lt;&gt; zu verbessern."},
+    {Languages["Spanish"], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
+    {Languages["Russian"], "Модернизация грузового корабля.&#xA;&#xA;Может быть переоборудована в ваш собственный капитальный корабль для улучшения его &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
+    {Languages["Polish"], "Rozmieszczalne ulepszenie frachtowca. MoÅ¼na ponownie zainstalowaÄ na wÅasnym statku gÅównym, aby ulepszyÄ jego &lt;TECHNOLOGY&gt;technologie&lt;&gt;."},
+    {Languages["Dutch"], "Een upgrade gemaakt voor een vlaggenschip.&#xA;&#xA;Kan worden geïnstalleerd in je eigen vlaggenschip om de &lt;TECHNOLOGY&gt;Technologie&lt;&gt; te verbeteren."},
+    {Languages["Portuguese"], "Uma atualização do cargueiro implementável.&#xA;&#xA;Pode ser reimplementada na sua própria nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
+    {Languages["LatinAmeraicanSpanish"], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
+    {Languages["BrazilianPortuguese"], "Uma atualização implantável de nave cargueira.&#xA;&#xA;Pode ser reimplantada na sua nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt; dela."},
+    {Languages["SimplifiedChinese"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
+    {Languages["TraditionalChinese"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
+    {Languages["TencentChinese"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
+    {Languages["Korean"], ""},
+    {Languages["Japanese"], ""},
+    {Languages["USEnglish"], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."}
 }
 
 GeneralUpgradeMods =
@@ -206,7 +205,7 @@ XClassMods =
             {"U_SMGX", "", "", "4"},
 
             {"U_RAILX", "", "", "5"},
-            {"U_BOLTX", "", "", "5"},            
+            {"U_BOLTX", "", "", "5"},
             {"U_TGRENADEX", "", "", "5"},
             {"U_GRENADEX", "", "", "5"},
             {"U_CANNONX", "", "", "5"},
@@ -227,13 +226,13 @@ CustomFreighterModData =
         },
         {
             --id, noUpgrades, startNo, TemplateBase/NameBase, DeployBase
-            {"U_FREIG_SPE", "4", "1", "SPEED", "SpeedDeploy" },
-            {"U_FREIG_COM", "4", "1", "COM", "ComDeploy"},
-            {"U_FREIG_EXP", "4", "1", "EXP", "ExpDeploy"},
-            {"U_FREIG_FUEL", "4", "1", "FUEL", "FuelDeploy"},
-            {"U_FREIG_MINE", "4", "1", "MINE", "MineDeploy"},
-            {"U_FREIG_TRA", "4", "1", "TRADE", "TradeDeploy"},
-            {"U_FREIG_HYP", "4", "1", "HYP", "HyperDeploy"}
+            {"U_FREIG_SPE", "4", "1", "SPEED"},
+            {"U_FREIG_COM", "4", "1", "COM"},
+            {"U_FREIG_EXP", "4", "1", "EXP"},
+            {"U_FREIG_FUEL", "4", "1", "FUEL"},
+            {"U_FREIG_MINE", "4", "1", "MINE"},
+            {"U_FREIG_TRA", "4", "1", "TRADE"},
+            {"U_FREIG_HYP", "4", "1", "HYP"}
         }
     }
 }
@@ -302,22 +301,24 @@ Requirements =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= NexusModName..GameVersion..".pak",
-["MOD_DESCRIPTION"]			= "",
-["MOD_AUTHOR"]				= Author,
-["NMS_VERSION"]				= GameVersion,
-["MODIFICATIONS"] 			=
-	{
-		{
-			["MBIN_CHANGE_TABLE"] 	=
-			{
+    ["MOD_FILENAME"] 			= NexusModName..".pak",
+    ["MOD_DESCRIPTION"]			= "",
+    ["MOD_AUTHOR"]				= Author,
+    ["ADD_FILES"] 				=
+    {
+    },
+    ["MODIFICATIONS"] 			=
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] 	=
+            {
                 {
                     ["MBIN_FILE_SOURCE"] 	= GCProductTablePath,
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
                 },
-				{
+                {
                     ["MBIN_FILE_SOURCE"] 	= GCProcTechnologyPath,
                     ["EXML_CHANGE_TABLE"] 	=
                     {
@@ -325,10 +326,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     -- Add recipes to the Tree
-					["MBIN_FILE_SOURCE"] 	= UnlockableItemTreesPath,
-					["EXML_CHANGE_TABLE"] 	=
-					{
+                    ["MBIN_FILE_SOURCE"] 	= UnlockableItemTreesPath,
+                    ["EXML_CHANGE_TABLE"] 	=
+                    {
                     }
+                },
+				{
+					["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"LocTableList"},
+							["ADD"] 	=
+							[[
+								<Property value="NMSString0x20.xml">
+									<Property name="Value" value="NMS_]]..CustomLanguageTag..[[" />
+								</Property>
+							]]
+						}
+					}
 				}
             }
         }
@@ -889,21 +905,74 @@ function CreateRequirement(Requirement)
 end
 
 function CreateRequirementsString(RequirementsArray)
-    local RequirementsString =""
+    local RequirementsString ={}
 
     for i = 1, #RequirementsArray do
-        RequirementsString = RequirementsString..CreateRequirement(RequirementsArray[i])
+        table.insert(RequirementsString,CreateRequirement(RequirementsArray[i]))
     end
 
     return
     [[
         <Property name="Requirements">
-        ]]..RequirementsString..[[
+        ]]..table.concat(RequirementsString)..[[
         </Property>
     ]]
 end
 
-local ChangesToLangaugeTables = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+function NewLanguagueFile(DescriptionEntries)
+	return
+	[[<?xml version="1.0" encoding="utf-8"?>
+		<Data template="TkLocalisationTable">
+			<Property name="Table">]]
+			..DescriptionEntries..
+			[[
+			</Property>
+		</Data>
+	]]
+end
+
+function NewLanguageEntry(Language, NewDescription)
+	return
+	[[
+		<Property name="]]..Language..[[" value="VariableSizeString.xml">
+			<Property name="Value" value="]]..NewDescription..[[" />
+		</Property>
+	]]
+end
+
+function NewDescriptionText(newDescId, LanguageEntries)
+	return
+	[[
+		<Property value="TkLocalisationEntry.xml">
+			<Property name="Id" value="]]..newDescId..[[" />
+			]]..LanguageEntries..[[
+		</Property>
+	]]
+end
+
+function FillCustomlangFile()
+	local DescriptionEntries = {}
+    local NewDescriptionID = CraftedFreighterModDescrId
+    local LanguageEntries = {}
+
+    for i = 1, #AddNewLanguatext do
+        local Language = AddNewLanguatext[i][1]
+        local NewDescription = AddNewLanguatext[i][2]
+        table.insert(LanguageEntries, NewLanguageEntry(Language, NewDescription))
+	end
+    table.insert(DescriptionEntries, NewDescriptionText(NewDescriptionID, table.concat(LanguageEntries)))
+
+	return NewLanguagueFile(table.concat(DescriptionEntries))
+end
+
+local AddCsutomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
+for Key , Language in pairs(Languages) do
+	AddCsutomLanguageFiles[#AddCsutomLanguageFiles +1] =
+	{
+		["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Key..".EXML",
+		["FILE_CONTENT"] 		=	FillCustomlangFile()
+	}
+end
 
 local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
@@ -918,10 +987,10 @@ for i = 1, #CustomFreighterModData do
     local CustomFreighterMods = CustomFreighterModData[i][2]
 
     local Tree = ""
-    local Children = ""
+    local Children = {}
 
-    local UpgradeMods = ""
-    local DeployMods = ""
+    local UpgradeMods = {}
+    local DeployMods = {}
 
     for l = 1, #CustomFreighterMods do
         local UpgradeMod = CustomFreighterMods[l]
@@ -930,7 +999,7 @@ for i = 1, #CustomFreighterModData do
         local StartingNumberUpgrade = UpgradeMod[3]
 
         local StringBase = UpgradeMod[4]
-        local DeployBase = UpgradeMod[5]
+        local DeployBase = string.lower(string.gsub(UpgradeMod[1], "U_FREIG_",""))
         local ModType = GetModType(StringBase)
 
         local ModNameID = "UP_FR_"..StringBase.."_NAME"
@@ -946,7 +1015,7 @@ for i = 1, #CustomFreighterModData do
             local ClassNumber = math.floor(j)
             local UpgradeModID= UpgradeMod[1]..ClassNumber
             local ModClassDataAndStrings = ClassStringsAndData(ClassNumber)
-            local DeploysInto = ModClassDataAndStrings[1]..DeployBase..ModClassDataAndStrings[2]
+            local DeploysInto = ModClassDataAndStrings[1]..DeployBase.."Deploy"..ModClassDataAndStrings[2]
             local BaseValue = ModClassDataAndStrings[3]
             local NormalisedVal = ModClassDataAndStrings[4]
             local IconPath = ModClassDataAndStrings[5]..ModType..".DDS"
@@ -971,12 +1040,12 @@ for i = 1, #CustomFreighterModData do
                 StatTypesString = StatTypesString..CreateStatLevel(StatType, MinVal, MaxVal, StatWeightingCurve)
             end
             ModTree = CreateTabPageChildren(UpgradeModID, ModTree)
-            UpgradeMods = UpgradeMods..CreateNewCustomMod(UpgradeModID, ModNameID, ModNameLID, BaseValue, IconPath, NormalisedVal, DeploysInto, ClassNumber)
-            DeployMods = DeployMods..CreateNewCustomModDeploys(DeploysInto, DeployTemplate, ModDeployNameID, ModDeployNameLID, Quality, MinNoStats, MaxNoStats, WeightingCurve, StatTypesString)
+            table.insert(UpgradeMods, CreateNewCustomMod(UpgradeModID, ModNameID, ModNameLID, BaseValue, IconPath, NormalisedVal, DeploysInto, ClassNumber))
+            table.insert(DeployMods, CreateNewCustomModDeploys(DeploysInto, DeployTemplate, ModDeployNameID, ModDeployNameLID, Quality, MinNoStats, MaxNoStats, WeightingCurve, StatTypesString))
         end
-        Children = Children..ModTree
+        table.insert(Children, ModTree)
     end
-    Tree = CreateModTabpageTree(FrRootTech, Children, FrCostType)
+    Tree = CreateModTabpageTree(FrRootTech, table.concat(Children), FrCostType)
 
     local ChangesToUnlockableItemTrees_temp =
     {
@@ -989,14 +1058,14 @@ for i = 1, #CustomFreighterModData do
     local ChangesToProceduralTechnology_temp =
     {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = DeployMods
+        ["ADD"] = table.concat(DeployMods)
     }
     ChangesToProceduralTechnology[#ChangesToProceduralTechnology + 1] = ChangesToProceduralTechnology_temp
 
     local ChangesToProductTable_temp =
     {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = UpgradeMods
+        ["ADD"] = table.concat(UpgradeMods)
     }
     ChangesToProductTable[#ChangesToProductTable + 1] = ChangesToProductTable_temp
 end
@@ -1008,7 +1077,7 @@ for i = 1, #GeneralUpgradeMods do
     local UpgradeMods = GeneralUpgradeMods[i][2]
 
     local Tree = ""
-    local Children = ""
+    local Children = {}
 
     for j = 1, #UpgradeMods do
         local ModTree = ""
@@ -1020,10 +1089,10 @@ for i = 1, #GeneralUpgradeMods do
             local ModID = UpgradeMod[1] .. math.floor(l)
             ModTree = CreateTabPageChildren(ModID, ModTree)
         end
-        Children = Children..ModTree
+        table.insert(Children, ModTree)
     end
 
-    Tree = CreateModTabpageTree(RootTech, Children, CostType)
+    Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
 
     local UnlockableItemTree =
     {
@@ -1032,7 +1101,6 @@ for i = 1, #GeneralUpgradeMods do
         ["ADD"]	= Tree
     }
     ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
-
 end
 
 for i = 1, #BioShipMods do
@@ -1041,7 +1109,7 @@ for i = 1, #BioShipMods do
     local CostType = BioShipMods[i][1][3]
     local UpgradeMods = BioShipMods[i][2]
     local Tree = ""
-    local Children = ""
+    local Children = {}
 
     for j = 1, #UpgradeMods do
         local ModTree = ""
@@ -1053,11 +1121,11 @@ for i = 1, #BioShipMods do
             local ModID = UpgradeMod[1] .. math.floor(l)
             ModTree = CreateTabPageChildren(ModID, ModTree)
         end
-        Children = Children.."\n"..ModTree
+        table.insert(Children, "\n"..ModTree)
     end
-    Children = Children.."\n"
+    table.insert(Children, table.concat(Children).."\n")
 
-    Tree = CreateModTabpageTree(RootTech, Children, CostType)
+    Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
 
     local UnlockableItemTree =
     {
@@ -1078,7 +1146,7 @@ for i = 1, #XClassMods do
     local ModSubsLists = {}
 
     local Tree = ""
-    local Children = ""
+    local Children = {}
 
     local OldModListNumber = ""
 
@@ -1103,10 +1171,10 @@ for i = 1, #XClassMods do
         for l = #ModSubList, 1, -1  do
             ModTree = CreateTabPageChildren(ModSubList[l], ModTree)
         end
-        Children = Children..ModTree
+        table.insert(Children, ModTree)
     end
 
-    Tree = CreateModTabpageTree(RootTech,Children, CostType)
+    Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
 
     local UnlockableItemTree =
     {
@@ -1115,40 +1183,6 @@ for i = 1, #XClassMods do
         ["ADD"]	= Tree
     }
     ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
-end
-
-for i = 1, #AddNewLanguatext do
-    local Language = AddNewLanguatext[i][1]
-    local LanguageUC = string.upper(Language)
-
-    if Language == "LatinAmericanSpanish" then
-        LanguageUC = "LATINAMERAICANSPANISH"
-    end
-
-    local Text = AddNewLanguatext[i][2]
-
-    if Text~="" then
-        local temp_table =
-        {
-            ["MBIN_FILE_SOURCE"] 	= "LANGUAGE\\NMS_LOC6_"..LanguageUC..".MBIN",
-            ["EXML_CHANGE_TABLE"] 	=
-            {
-                {
-                    ["PRECEDING_KEY_WORDS"] = {"Table"},
-                    ["ADD"] = ""..NewDescriptionText(CraftedFreighterModDescrId),
-                },
-                {
-                    ["SPECIAL_KEY_WORDS"] = {"Id", CraftedFreighterModDescrId , Language, "VariableSizeString.xml"},
-                    ["PRECEDING_KEY_WORDS"] = {Language},
-                    ["VALUE_CHANGE_TABLE"] =
-                    {
-                        {"Value", Text}
-                    }
-                }
-            }
-        }
-        ChangesToLangaugeTables[#ChangesToLangaugeTables + 1] = temp_table
-    end
 end
 
 GetAllIDs(XClassMods)
