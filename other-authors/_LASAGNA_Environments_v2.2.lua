@@ -11,7 +11,7 @@ PATCHSIZE_REGIONSCALE_MULTIPLIER = 1.25
 
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
 RADIUS_MULTIPLIER = 3			--objects draw distance multiplier (limited by engine's hard-limit)
-GRASS_RADIUS_MULTIPLIER = 2		--GRASS draw distance multiplier --***1 = no changes to vanilla, commented out
+GRASS_RADIUS_MULTIPLIER = 1.5		--GRASS draw distance multiplier --***1 = no changes to vanilla, commented out
 LOD_DISTANCE_MULTIPLIER = 2		--LOD distance multiplier (object visual quality in distance)
 --SMALL_LOD_DISTANCE_MULTIPLIER = 1.2 --***too much = hitching. v2.1: removed again, too much hitching = low fps
 --COVERAGE_MULTIPLIER = 1			--object placement coverage multiplier (object density) --***needed to work
@@ -31,7 +31,7 @@ PLANET_LOD_MULTIPLIER = 3		--planet lod distance multiplier
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Environments_v2.1.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Environments_v2.2.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

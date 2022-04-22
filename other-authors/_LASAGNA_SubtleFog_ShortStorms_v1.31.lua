@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_SubtleFog_ShortStorms_v1.3.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_SubtleFog_ShortStorms_v1.31.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             
