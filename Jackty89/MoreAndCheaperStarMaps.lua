@@ -1,4 +1,3 @@
-GameVersion = "3_82"
 ModName = "MoreAndCheaperStarMaps"
 Author = "Jackty89"
 
@@ -157,10 +156,9 @@ StarMapShopEntry2 = CreateMapShopEntry(HiveMapId)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"] = ModName .. GameVersion .. ".pak",
+	["MOD_FILENAME"] = ModName .. ".pak",
 	["MOD_DESCRIPTION"] = ModName,
 	["MOD_AUTHOR"] = Author,
-	["NMS_VERSION"] = GameVersion,
 	["MODIFICATIONS"] =
 	{
 		{
