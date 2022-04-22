@@ -2,9 +2,9 @@ NUMBER_SAME_TECH = 48	-- maximum number of mods of the same type; DEFAULT 3
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]             = "Remove_Tech_Overload_1_1d.pak", 
+["MOD_FILENAME"]             = "Remove_Tech_Overload_1_1e.pak", 
 ["MOD_AUTHOR"]               = "chronicallybored",
-["NMS_VERSION"]              = "3.87",
+["NMS_VERSION"]              = "3.88",
 ["MOD_DESCRIPTION"]          = "Raises the technology overload cap to 48",
 ["MODIFICATIONS"]            = 
 
