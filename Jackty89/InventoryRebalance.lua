@@ -1,5 +1,4 @@
 ModName = "InventoryRebalance"
-GameVersion = "3_85"
 FilePath = {"METADATA\\GAMESTATE\\DEFAULTINVENTORYBALANCE.MBIN", "METADATA\\GAMESTATE\\DEFAULTINVENTORYBALANCESURVIVAL.MBIN"}
 
 --NORMAL
@@ -36,10 +35,9 @@ SubstanceAndProcductStackSizeLimit = 999999 -- (Original 9999)
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
+  ["MOD_FILENAME"] 			= ModName..".pak",
   ["MOD_DESCRIPTION"]		= "Rebalance of InvetorySize and Deconstruction cost",
   ["MOD_AUTHOR"]			= "Jackty89",
-  ["NMS_VERSION"]			= GameVersion,
   ["MODIFICATIONS"] 		=
     {
 		{
