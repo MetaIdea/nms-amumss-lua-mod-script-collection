@@ -1,8 +1,8 @@
 local modfilename = "_BiomesFireFliesReduced"
 local lua_author  = "Silent"
-local lua_version = "v1.4"
+local lua_version = "v1.5"
 local mod_author  = "Silent369"
-local nms_version = "3.8"
+local nms_version = "3.87"
 local description = "Resized / Reduced(optional) 'heavyair' firefly particles in all biomes. Gas / Smoke Scaled up on other biomes."
 
 --This mod decreases the number of fireflies rendered
@@ -37,6 +37,10 @@ local description = "Resized / Reduced(optional) 'heavyair' firefly particles in
 --MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\STORMFLAME.HEAVYAIR.MBIN
 --MODELS\EFFECTS\HEAVYAIR\JUNGLE\JUNGLE.HEAVYAIR.MBIN
 --MODELS\EFFECTS\HEAVYAIR\MARS\SANDCAVE.HEAVYAIR.MBIN
+--MODELS\EFFECTS\HEAVYAIR\MARS\MARS.HEAVYAIR.MBIN
+--MODELS\EFFECTS\HEAVYAIR\MARS\MARS2.HEAVYAIR.MBIN
+--MODELS\EFFECTS\HEAVYAIR\MARS\MARS3.HEAVYAIR.MBIN
+--MODELS\EFFECTS\HEAVYAIR\MARS\MARS4.HEAVYAIR.MBIN
 --MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\MOUNTAIN.HEAVYAIR.MBIN
 --MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\MOUNTAIN2.HEAVYAIR.MBIN
 --MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\SANDCAVE.HEAVYAIR.MBIN
@@ -82,15 +86,15 @@ local description = "Resized / Reduced(optional) 'heavyair' firefly particles in
 --whole values (2) will halve the number of particles and
 --fractionals (0.5) will double the number of particles.
 
-DIVIDER = 4	   --Modifies the number of firefly particles.
+DIVIDER = 2	   --Modifies the number of firefly particles.
 
 SPEED_V = 5	   --Modifies the visible speed of particles.
-MULTPLY = 1.5  --Modifies the particles radius / radiusY.
+MULTPLY = 1.3  --Modifies the particles radius / radiusY.
 FADES_M = 0.3  --Modifies fade speed of rendered particles.
 SCALE_M = 0.5  --Modifies the x,y,z particles scale ranges.
 
-SCALE_S = 2	   --Modifies smoke/gas scale in certain biomes.
-GASSMOK = 4	   --Modifies Sparks,Embers,Flames particle counts.
+SCALE_S = 5	   --Modifies smoke/gas scale in certain biomes.
+GASSMOK = 5	   --Modifies Sparks,Embers,Flames particle counts.
 
 local function round(number, precision)
    local fmtStr = string.format('%%0.%sf',precision)
@@ -126,6 +130,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS\EFFECTS\HEAVYAIR\FOGSWAMP\NIGHTTIME.HEAVYAIR.MBIN",
 						"MODELS\EFFECTS\HEAVYAIR\JUNGLE\JUNGLE.HEAVYAIR.MBIN",
 						"MODELS\EFFECTS\HEAVYAIR\MARS\SANDCAVE.HEAVYAIR.MBIN",
+						"MODELS\EFFECTS\HEAVYAIR\MARS\MARS.HEAVYAIR.MBIN",
+						"MODELS\EFFECTS\HEAVYAIR\MARS\MARS2.HEAVYAIR.MBIN",
+						"MODELS\EFFECTS\HEAVYAIR\MARS\MARS3.HEAVYAIR.MBIN",
+						"MODELS\EFFECTS\HEAVYAIR\MARS\MARS4.HEAVYAIR.MBIN",
 						"MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\SANDCAVE.HEAVYAIR.MBIN",
 						"MODELS\EFFECTS\HEAVYAIR\RADIOACTIVE\RADIOACTIVEASH1.HEAVYAIR.MBIN",
 						"MODELS\EFFECTS\HEAVYAIR\RADIOACTIVE\RADIOACTIVEFOG.HEAVYAIR.MBIN",
@@ -181,6 +189,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["MATH_OPERATION"]		= "*",
 							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
+							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"FadeTime",		round(FADES_M,2)},
