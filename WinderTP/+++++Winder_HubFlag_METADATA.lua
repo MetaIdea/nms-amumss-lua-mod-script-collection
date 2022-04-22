@@ -45,6 +45,11 @@ BUILD_DISTANCE = 	"1250"
 OBJECT_SCALE_MIN =	"0.01"
 OBJECT_SCALE_MAX = 	"4"
 
+-- RECTUM PROVIDES THE WIGGLE ROOM FOR EXTRA CONDENSATION OF SUBGROUPS
+-- BuildFrame RecTUM - Recategorisation and Trimming Utility for Build Menu
+-- https://www.nexusmods.com/nomanssky/mods/2197
+RECTUM_USED = true
+
 HUBFLAG_GROUPS = -- BASEBUILDINGTABLE GROUPS
 {
 	{ ["ID"]= "WDGARDEN", 				["Name"] = "WDGARDEN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/WLUSH_LSHROM5.DDS]],
@@ -122,6 +127,7 @@ HUBFLAG_GROUPS = -- BASEBUILDINGTABLE GROUPS
 			{["ID"] = "PF_ROOMS_SCI",	["Name"] = "PF_ROOMS_SCI_NAME"},
 			{["ID"] = "PF_ROOMS_WAR",	["Name"] = "PF_ROOMS_WAR_NAME"},
 			{["ID"] = "PF_ROOMS_RUIN",	["Name"] = "PF_ROOMS_RUIN_NAME"},
+			{["ID"] = "PF_ROOMS_MONO",	["Name"] = "BUILDING_MONOLITH"},
 			{["ID"] = "PF_ROOMS_LB_B",	["Name"] = "PF_ROOMS_LB_B_NAME"},
 			{["ID"] = "PF_ROOMS_LB_D",	["Name"] = "PF_ROOMS_LB_D_NAME"},
 			{["ID"] = "PF_ROOMS_MISC",	["Name"] = "PF_ROOMS_MISC_NAME"},
@@ -129,8 +135,8 @@ HUBFLAG_GROUPS = -- BASEBUILDINGTABLE GROUPS
 			{["ID"] = "PF_ACCESS",		["Name"] = "UI_BUILD_GRID_DOORS"},
 			{["ID"] = "PF_ROOMS_ROAD_B",["Name"] = "PF_ROOMS_ROAD_B_NAME"},
 			{["ID"] = "PF_ROOMS_ROAD_R",["Name"] = "PF_ROOMS_ROAD_R_NAME"},
-			{["ID"] = "PF_ROOMS_ROAD_L",["Name"] = "PF_ROOMS_ROAD_L_NAME"},
-			{["ID"] = "PF_ROOMS_ROAD_A",["Name"] = "PF_ROOMS_ROAD_A_NAME"},
+			-- {["ID"] = "PF_ROOMS_ROAD_L",["Name"] = "PF_ROOMS_ROAD_L_NAME"},
+			-- {["ID"] = "PF_ROOMS_ROAD_A",["Name"] = "PF_ROOMS_ROAD_A_NAME"},
 		}
 	},
 	{ ["ID"]= "PF_BASIC_R", 			["Name"] = "W_BASIC_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/PF_CR_W.DDS]],
@@ -152,6 +158,119 @@ HUBFLAG_GROUPS = -- BASEBUILDINGTABLE GROUPS
 	},
 }
 
+HUBFLAG_GROUPS_ASSLESS =	-- BASEBUILDINGTABLE GROUPS IF BUILDFRAME RECTUM IS NOT USED
+{
+	{ ["ID"]= "WDGARDEN", 				["Name"] = "WDGARDEN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/WLUSH_LSHROM5.DDS]],
+		["SubGroups"] =
+		{
+			{["ID"] = "WDGARDEN_SS1",	["Name"] = "WDGARDEN_SS1_NAME"},
+			-- {["ID"] = "WDGARDEN_SM1",	["Name"] = "WDGARDEN_SM1_NAME"},
+			-- {["ID"] = "WDGARDEN_SL1",	["Name"] = "WDGARDEN_SL1_NAME"},
+			{["ID"] = "WDGARDEN_TS1",	["Name"] = "WDGARDEN_TS1_NAME"},
+			-- {["ID"] = "WDGARDEN_TM1",	["Name"] = "WDGARDEN_TM1_NAME"},
+			-- {["ID"] = "WDGARDEN_TL1",	["Name"] = "WDGARDEN_TL1_NAME"},
+			{["ID"] = "WDGARDEN_RS1",	["Name"] = "WDGARDEN_RS1_NAME"},
+			-- {["ID"] = "WDGARDEN_RM1",	["Name"] = "WDGARDEN_RM1_NAME"},
+			-- {["ID"] = "WDGARDEN_RL1",	["Name"] = "WDGARDEN_RL1_NAME"},
+			{["ID"] = "WDGARDEN_GLIT",	["Name"] = "WDGARDEN_GLIT_NAME"},
+			{["ID"] = "WDGARDEN_BONE",	["Name"] = "WDGARDEN_BONE_NAME"},
+			{["ID"] = "WDGARDENCOOK",	["Name"] = "WDGARDENCOOK_NAME"},
+			{["ID"] = "WDGARDENANI",	["Name"] = "WDGARDENANI_NAME"},
+		}
+	},
+	{ ["ID"]= "WDECOR_MAIN", 			["Name"] = "WDECOR_MAIN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/TAPEDECK.DDS]],
+		["SubGroups"] =
+		{
+			{["ID"] = "WDECOR_DIS",		["Name"] = "WDECOR_DIS_NAME"},
+			{["ID"] = "WDECOR_F",		["Name"] = "WDECOR_F_NAME"},
+			{["ID"] = "WDECOR_T",		["Name"] = "WDECOR_T_NAME"},
+			{["ID"] = "WDECOR_IL",		["Name"] = "WDECOR_IL_NAME"},
+			{["ID"] = "WDECOR_W",		["Name"] = "WDECOR_W_NAME"},
+			{["ID"] = "WDECORA",		["Name"] = "WDECORA_NAME"},
+			-- {["ID"] = "WDECORB",		["Name"] = "WDECORB_NAME"},
+			-- {["ID"] = "WDECORC",		["Name"] = "WDECORC_NAME"},
+			-- {["ID"] = "WDSPEC",			["Name"] = "WDSPEC_NAME"},
+			{["ID"] = "WPOSTER",		["Name"] = "UI_BUILD_GRID_POSTERS"},
+		}
+	},
+	{ ["ID"]= "WDECOR_MAIN2", 			["Name"] = "WDECOR_MAIN2_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SCRAP_SHED.DDS]],
+		["SubGroups"] =
+		{
+			{["ID"] = "WDECOR_OS",		["Name"] = "WDECOR_OS_NAME"},
+			-- {["ID"] = "WDECOR_OL",		["Name"] = "WDECOR_OL_NAME"},
+			{["ID"] = "WDECOR_V",		["Name"] = "WDECOR_V_NAME"},
+			{["ID"] = "WDECOR_P",		["Name"] = "WDECOR_P_NAME"},
+			{["ID"] = "WDECOR_IND",		["Name"] = "WDECOR_IND_NAME"},
+			{["ID"] = "WSTORE",			["Name"] = "UI_BUILD_GRID_STORAGE"},
+			{["ID"] = "WNPC",			["Name"] = "WNPC_NAME"},
+			-- {["ID"] = "WINTERACT",		["Name"] = "WINTERACT_NAME"},
+			{["ID"] = "WLIGHTS1",		["Name"] = "WLIGHTS1_NAME"},
+			-- {["ID"] = "WLIGHTS_D",		["Name"] = "WLIGHTS_D_NAME"},
+			{["ID"] = "WNEONSIGN",		["Name"] = "WNEONSIGN_NAME"},
+			-- {["ID"] = "WHOLO_BIG",		["Name"] = "WHOLO_BIG_NAME"},
+			{["ID"] = "WNEONLL",		["Name"] = "WNEONLL_NAME"},
+		}
+	},
+	{ ["ID"]= "WDECAL_MAIN", 			["Name"] = "WDECAL_MAIN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/HUBDECAL/LOGOHUB354/DECAL.HUB354.DDS]],
+		["SubGroups"] =
+		{
+			{["ID"] = "WDMISC",			["Name"] = "WDMISC_NAME"},
+			{["ID"] = "WDAGT",			["Name"] = "WDAGT_NAME"},
+			{["ID"] = "WDHUB",			["Name"] = "WDHUB_NAME"},
+			{["ID"] = "GAME",			["Name"] = "GAME_NAME"},
+			{["ID"] = "WDECAL_OBJ",		["Name"] = "WDECAL_OBJ_NAME"},
+			-- {["ID"] = "WDECAL_FAC",		["Name"] = "WDECAL_FAC_NAME"},
+			-- {["ID"] = "WDECAL_MISC",	["Name"] = "WDECAL_MISC_NAME"},
+			{["ID"] = "WDECAL_POR",		["Name"] = "WDECAL_POR_NAME"},
+			{["ID"] = "WLETTERLU",		["Name"] = "WLETTERLU_NAME"},
+			{["ID"] = "WLETTERLL",		["Name"] = "WLETTERLL_NAME"},
+			{["ID"] = "WLETTERLP",		["Name"] = "WLETTERLP_NAME"},
+			{["ID"] = "SEAN",			["Name"] = "SEAN_NAME"},
+		}
+	},
+	{ ["ID"]= "PF_STRUCT_R", 			["Name"] = "W_PF_NAME", ["Icon"] = [[TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\BUILDINGS.ABANDONED.DDS]],
+		["SubGroups"] =
+		{
+			{["ID"] = "PF_ROOMS_TRA",	["Name"] = "PF_ROOMS_TRA_NAME"},
+			{["ID"] = "PF_ROOMS_SCI",	["Name"] = "PF_ROOMS_SCI_NAME"},
+			{["ID"] = "PF_ROOMS_WAR",	["Name"] = "PF_ROOMS_WAR_NAME"},
+			{["ID"] = "PF_ROOMS_RUIN",	["Name"] = "PF_ROOMS_RUIN_NAME"},
+			-- {["ID"] = "PF_ROOMS_MONO",	["Name"] = "BUILDING_MONOLITH"},
+			{["ID"] = "PF_ROOMS_LB_B",	["Name"] = "PF_ROOMS_LB_B_NAME"},
+			{["ID"] = "PF_ROOMS_LB_D",	["Name"] = "PF_ROOMS_LB_D_NAME"},
+			{["ID"] = "PF_ROOMS_MISC",	["Name"] = "PF_ROOMS_MISC_NAME"},
+			{["ID"] = "PF_ROOMS_COR",	["Name"] = "PF_ROOMS_COR_NAME"},
+			{["ID"] = "PF_ACCESS",		["Name"] = "UI_BUILD_GRID_DOORS"},
+			{["ID"] = "PF_ROOMS_ROAD_B",["Name"] = "PF_ROOMS_ROAD_B_NAME"},
+			{["ID"] = "PF_ROOMS_ROAD_R",["Name"] = "PF_ROOMS_ROAD_R_NAME"},
+			-- {["ID"] = "PF_ROOMS_ROAD_L",["Name"] = "PF_ROOMS_ROAD_L_NAME"},
+			-- {["ID"] = "PF_ROOMS_ROAD_A",["Name"] = "PF_ROOMS_ROAD_A_NAME"},
+		}
+	},
+	{ ["ID"]= "PF_STRUCT_2", 			["Name"] = "W_PF2_NAME", ["Icon"] = [[TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\BUILDINGS.ABANDONED.DDS]],
+		["SubGroups"] =
+		{
+			{["ID"] = "PF_ROOMS_MONO",	["Name"] = "BUILDING_MONOLITH"},
+		}
+	},
+	{ ["ID"]= "PF_BASIC_R", 			["Name"] = "W_BASIC_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/PF_CR_W.DDS]],
+		["SubGroups"] =
+		{
+			{["ID"] = "PF_BASIC_RUIN",	["Name"] = "PF_BASIC_RUIN_NAME"},
+			{["ID"] = "PF_BASIC_BRICK",	["Name"] = "PF_BASIC_BRICK_NAME"},
+			{["ID"] = "PF_BASIC_BF",	["Name"] = "PF_BASIC_BF_NAME"},
+			{["ID"] = "PF_BASIC_MESH",	["Name"] = "PF_BASIC_MESH_NAME"},
+			{["ID"] = "PF_BASIC_CHR",	["Name"] = "PF_BASIC_CHR_NAME"},
+			-- {["ID"] = "PF_BASIC_GLASS",	["Name"] = "PF_BASIC_GLASS_NAME"},
+			{["ID"] = "PF_CUBE_W",		["Name"] = "PF_CUBE_W_NAME"},
+			{["ID"] = "PF_CUBE_C",		["Name"] = "PF_CUBE_C_NAME"},
+			{["ID"] = "PF_CUBE_M",		["Name"] = "PF_CUBE_M_NAME"},
+			{["ID"] = "PF_CUBE_DECOR",	["Name"] = "PF_CUBE_DECOR_NAME"},
+			{["ID"] = "PF_EXT_DECOR",	["Name"] = "UI_BUILD_GRID_EXTERIOR"},
+			{["ID"] = "PF_CUBE_SPACE",	["Name"] = "UI_BUILD_GRID_FREIGHTER_ROOMS"},
+		}
+	},
+}
 
 DEBUG_LANGUAGE = "WIN_Hubflag"
 LANGUAGE_TYPE = {"English", "French", "Italian", "German", "Spanish", "Russian", "Polish", "Dutch", "Portuguese", "LatinAmericanSpanish", "BrazilianPortuguese", "SimplifiedChinese", "TraditionalChinese", "TencentChinese", "Korean", "Japanese", "USEnglish"}
@@ -488,6 +607,27 @@ ADD_LANGUAGE_LIST =
 					 ["SimplifiedChinese"]		= [[銀家傢俬建築]],	
 					 ["TraditionalChinese"]		= [[銀家傢俬建築]],	
 					 ["TencentChinese"]			= [[銀家傢俬建築]],	
+					 ["Korean"]					= [[]],	
+					 ["Japanese"]				= [[]],	
+					 ["USEnglish"]				= [[]],	
+					},
+	},
+	["W_PF2_NAME"] = {
+		["ID"] = "W_PF2_NAME",
+		["Value"] = {["English"]				= [[EUCLI-EA STRUCTURES 2]],
+					 ["French"]					= [[]],	
+					 ["Italian"]				= [[]],	
+					 ["German"]					= [[]],	
+					 ["Spanish"]				= [[]],	
+					 ["Russian"]				= [[]],	
+					 ["Polish"]					= [[]],	
+					 ["Dutch"]					= [[]],	
+					 ["Portuguese"]				= [[]],	
+					 ["LatinAmericanSpanish"]	= [[]],	
+					 ["BrazilianPortuguese"]	= [[]],	
+					 ["SimplifiedChinese"]		= [[銀家傢俬建築2]],	
+					 ["TraditionalChinese"]		= [[銀家傢俬建築2]],	
+					 ["TencentChinese"]			= [[銀家傢俬建築2]],	
 					 ["Korean"]					= [[]],	
 					 ["Japanese"]				= [[]],	
 					 ["USEnglish"]				= [[]],	
@@ -1860,7 +2000,7 @@ ADD_LANGUAGE_LIST =
 	},
 	["PF_ROOMS_ROAD_R_NAME"] = {
 		["ID"] = "PF_ROOMS_ROAD_R_NAME",
-		["Value"] = {["English"]				= [[ROADS - SPECIAL A]],
+		["Value"] = {["English"]				= [[ROADS - SPECIAL]],
 					 ["French"]					= [[]],	
 					 ["Italian"]				= [[]],	
 					 ["German"]					= [[]],	
@@ -1871,9 +2011,9 @@ ADD_LANGUAGE_LIST =
 					 ["Portuguese"]				= [[]],	
 					 ["LatinAmericanSpanish"]	= [[]],	
 					 ["BrazilianPortuguese"]	= [[]],	
-					 ["SimplifiedChinese"]		= [[車道 - 特殊A]],	
-					 ["TraditionalChinese"]		= [[車道 - 特殊A]],	
-					 ["TencentChinese"]			= [[車道 - 特殊A]],	
+					 ["SimplifiedChinese"]		= [[車道 - 特殊]],	
+					 ["TraditionalChinese"]		= [[車道 - 特殊]],	
+					 ["TencentChinese"]			= [[車道 - 特殊]],	
 					 ["Korean"]					= [[]],	
 					 ["Japanese"]				= [[]],	
 					 ["USEnglish"]				= [[]],	
@@ -2564,6 +2704,7 @@ HUBFLAG_VANILLA = -- DEFAULTSAVEDATA VANILLA KnownProducts
 "W_WALL", "W_WALL_H", "W_WALL_Q", "W_WALL_Q_H", "W_WALLDIAGONAL", "W_WALL_WINDOW", "W_DOOR", "W_DOOR_H", "W_GDOOR", "W_DOORWINDOW", "W_FLOOR", "W_TRIFLOOR", "W_TRIFLOOR_Q", "W_GFLOOR", "W_FLOOR_Q", "W_RAMP", "W_RAMP_H", "W_ROOF", "W_ROOF_M", "W_ROOF_C", "W_ROOF_IC", "W_ARCH", "W_ARCH_H", 
 "M_WALL", "M_WALL_H", "M_WALL_Q", "M_WALL_Q_H", "M_WALLDIAGONAL", "M_WALL_WINDOW", "M_DOOR", "M_DOOR_H", "M_GDOOR", "M_DOORWINDOW", "M_FLOOR", "M_TRIFLOOR", "M_TRIFLOOR_Q", "M_GFLOOR", "M_FLOOR_Q", "M_RAMP", "M_RAMP_H", "M_ROOF", "M_ROOF_M", "M_ROOF_C", "M_ROOF_IC", "M_ARCH", "M_ARCH_H",
 "C_WALL", "C_WALL_H", "C_WALL_Q", "C_WALL_Q_H", "C_WALLDIAGONAL", "C_WALL_WINDOW", "C_DOOR", "C_DOOR_H", "C_GDOOR", "C_DOORWINDOW", "C_FLOOR", "C_TRIFLOOR", "C_TRIFLOOR_Q", "C_GFLOOR", "C_FLOOR_Q", "C_RAMP", "C_RAMP_H", "C_ROOF", "C_ROOF_M", "C_ROOF_C", "C_ROOF_IC", "C_ARCH", "C_ARCH_H",
+"SET_MONUMENT", "SET_T_MONU", "SET_F_MONU", "SET_S_TOWER", "FRE_CORR_A", "FRE_CUBE_F", "LAUNCHLOCKER", "FRE_WALK_A", "FRE_ROOM_ROCLOC", "FRE_ROOM_PLANT", "FRE_ELEV_F", "FRE_EXT_A", "FRE_FACE_DOOR_A", "FRE_FACE_WINDOW",  
 }
 
 INFRA_ADDGROUP =  [[<Property name="Groups">
@@ -17266,7 +17407,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_L" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17317,7 +17458,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_L" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17368,7 +17509,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_L" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17419,7 +17560,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_L" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17470,7 +17611,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_L" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17521,7 +17662,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_L" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17572,7 +17713,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_A" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17623,7 +17764,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_A" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17674,7 +17815,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_A" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17725,7 +17866,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_A" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17776,7 +17917,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_A" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -17827,7 +17968,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_A" },
+						["SubGroupName"] = 					{ "PF_ROOMS_ROAD_R" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -19044,6 +19185,823 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 											{ ["ID"] = 				"RADIO1",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"10"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_FOUND",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_FOUNDATION_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_FOUNDATION.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_FOUNDATION_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_FOUNDATION_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"350"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_STAIR1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_STAIRS_1.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BLD_S_RAMP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BLD_S_RAMP_NAME_L",
+						["Subtitle"] = 					"BLD_CORRIDOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_CORRIDOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_STAIR2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_STAIRS_2.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BLD_S_RAMP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BLD_S_RAMP_NAME_L",
+						["Subtitle"] = 					"BLD_CORRIDOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_CORRIDOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},	
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_STAIR3",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_STAIRS_3.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BLD_S_RAMP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BLD_S_RAMP_NAME_L",
+						["Subtitle"] = 					"BLD_CORRIDOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_CORRIDOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ1",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_1.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ2",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_2.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ3",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_3.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ4",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_4.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ4A",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_4A.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ5",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_5.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ6",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_6.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ7",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_7.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ8",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_8.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ9",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_9.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ10",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_10.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ12",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_12.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ13",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_13.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ14",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_14.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PF_MONO_PLAQ15",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PIECE_SNAPPOINTS.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\RUINS\RUINPARTS\MONOLITH_PLAQUE_15.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MONO" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"True",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"BUILDING_MONOLITH_L",
+						["Subtitle"] = 					"BLD_DECOR_SUBTITLE",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_DECOR_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAVA1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"150"
 											},
 										}
 					}
@@ -21225,7 +22183,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\SHACKS\SHACK_SCI.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
+						["IsDecoration"] = 				"False",
 						["Biome"] = 					"Lush",
 						["BuildableOnFreighter"] = 		"True",
 						["BuildableOnPlanet"] = 		"True",
@@ -21272,7 +22230,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\SHACKS\SHACK_TRA.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
+						["IsDecoration"] = 				"False",
 						["Biome"] = 					"Lush",
 						["BuildableOnFreighter"] = 		"True",
 						["BuildableOnPlanet"] = 		"True",
@@ -21319,7 +22277,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\SHACKS\SHACK_WAR.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
+						["IsDecoration"] = 				"False",
 						["Biome"] = 					"Lush",
 						["BuildableOnFreighter"] = 		"True",
 						["BuildableOnPlanet"] = 		"True",
@@ -41526,7 +42484,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\SENTINELHIVE\SENTINELHIVE.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
+						["IsDecoration"] = 				"False",
 						["Biome"] = 					"Lush",
 						["BuildableOnFreighter"] = 		"True",
 						["BuildableOnPlanet"] = 		"False",
@@ -41671,7 +42629,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DAMAGEDMACHINERY\DAMAGEDMACHINERY_POD_1.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
+						["IsDecoration"] = 				"False",
 						["Biome"] = 					"Lush",
 						["BuildableOnFreighter"] = 		"True",
 						["BuildableOnPlanet"] = 		"False",
@@ -41718,7 +42676,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DAMAGEDMACHINERY\DAMAGEDMACHINERY_POD_2.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
+						["IsDecoration"] = 				"False",
 						["Biome"] = 					"Lush",
 						["BuildableOnFreighter"] = 		"True",
 						["BuildableOnPlanet"] = 		"False",
@@ -41765,7 +42723,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DAMAGEDMACHINERY\DAMAGEDMACHINERY_POD_3.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
+						["IsDecoration"] = 				"False",
 						["Biome"] = 					"Lush",
 						["BuildableOnFreighter"] = 		"True",
 						["BuildableOnPlanet"] = 		"False",
@@ -41812,7 +42770,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DAMAGEDMACHINERY\DAMAGEDMACHINERY_POD_4.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"True",
-						["IsDecoration"] = 				"True",
+						["IsDecoration"] = 				"False",
 						["Biome"] = 					"Lush",
 						["BuildableOnFreighter"] = 		"True",
 						["BuildableOnPlanet"] = 		"False",
@@ -42190,6 +43148,276 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["Icon"] = 						"",
 						["Requirements"] ={ 
 											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"SETTLE_MONU_S",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] =						"CUSTOMMODELS\SC_HUBFLAG\DECOR\SETTLEMENT\MONUMENT0.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_OS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Daai-Sekzoeng",
+						["Subtitle"] = 					"Settlement Monument",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A monument, for your own congratulations.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"SAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"40"
+											},
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"40"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"SETTLE_MONU_F",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] =						"CUSTOMMODELS\SC_HUBFLAG\DECOR\SETTLEMENT\MONUMENT0FIBREGLASS.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_OS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Daai-Boleizoeng",
+						["Subtitle"] = 					"Settlement Monument",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A monument, for your own congratulations.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"80"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"SETTLE_MONU_T",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] =						"CUSTOMMODELS\SC_HUBFLAG\DECOR\SETTLEMENT\MONUMENT0TIMBER.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_OS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Daai-Mukzoeng",
+						["Subtitle"] = 					"Settlement Monument",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A monument, for your own congratulations.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"40"
+											},
+											{ ["ID"] = 				"FARMPROD3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"4"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"SETTLE_TOWER_S",
+						["PlacementScene"] =			"CUSTOMMODELS\SC_HUBFLAG\DECOR\SETTLEMENT\TOWER_STONE_PLACEMENT.SCENE.MBIN",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Sizing-Zungsam",
+						["Subtitle"] = 					"Stone Tower",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A settlement stone tower.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"SAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"SETTLE_SCREEN",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\SETTLEMENT\MONUMENT_TERMINAL.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_DIS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Matjip-Gunleicyu",
+						["Subtitle"] = 					"Terminal",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A standing terminal.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"STATION_SCREEN",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\SPACESTATIONPROP\BACK_SECTION_TERMINAL.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_DIS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Ngoijyu-Wudung",
+						["Subtitle"] = 					"Terminal",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A standing terminal.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"35"
 											},
@@ -62253,7 +63481,7 @@ HUBFLAG_SNAPGROUPS =
 			},
 		}
 	},
-	{	["ID"] = "_W_CURVEDCUBEROOF_CONNECTORLEFT", --L_CONNECTOR
+	{	["ID"] = "_W_CURVEDCUBEROOF_CONNECTORL", --L_CONNECTOR, _W_CURVEDCUBEROOF_CONNECTORLEFT
 		["StyleModels"] = 
 		{
 			{
@@ -62270,7 +63498,7 @@ HUBFLAG_SNAPGROUPS =
 			},
 		}
 	},
-	{	["ID"] = "_W_CURVEDCUBEROOF_CONNECTORRIGHT", --R_CONNECTOR
+	{	["ID"] = "_W_CURVEDCUBEROOF_CONNECTORR", --R_CONNECTOR, _W_CURVEDCUBEROOF_CONNECTORRIGHT
 		["StyleModels"] = 
 		{
 			{
@@ -62338,7 +63566,7 @@ HUBFLAG_SNAPGROUPS =
 			},
 		}
 	},
-	{	["ID"] = "_W_CUBEROOMCURVED_CONNECTOR_FLOOR", --CURVEDWALL_CONNECTOR_FLOOR
+	{	["ID"] = "_W_CUBEROOMCURVED_CONNECTOR_F", --CURVEDWALL_CONNECTOR_FLOOR, _W_CUBEROOMCURVED_CONNECTOR_FLOOR
 		["StyleModels"] = 
 		{
 			{
@@ -62355,7 +63583,7 @@ HUBFLAG_SNAPGROUPS =
 			},
 		}
 	},
-	{	["ID"] = "_W_CUBEROOMCURVED_CONNECTOR_ROOF", --CURVEDWALL_CONNECTOR_FLOOR
+	{	["ID"] = "_W_CUBEROOMCURVED_CONNECTOR_R", --CURVEDWALL_CONNECTOR_FLOOR, _W_CUBEROOMCURVED_CONNECTOR_ROOF
 		["StyleModels"] = 
 		{
 			{
@@ -62599,10 +63827,11 @@ HUBFLAG_SNAPGROUPS =
 	
 }
 
-TOPGROUP_MAX = 336 	-- MAX AMOUNT OF BASE OBJECTS INSIDE ONE TOP GROUP
+TOPGROUP_MAX = 312 	-- MAX AMOUNT OF BASE OBJECTS INSIDE ONE TOP GROUP
 					-- DICTATED BY UI/BASEPARTSMENU.MBIN
 
 TOPGROUP_COUNTER = {}
+GROUPS_INJECT = {}
 
 function GetNPCtable(ID, PARENT, NODE, SPEC, RACE, INT, TECH, INT_F, INT_NO)
 return [[
@@ -62746,7 +63975,7 @@ end
 GROUPS_TEMP = {}
 for m,n in pairs(GROUPS) do
 	TOP_GROUP = ""
-	for o,p in pairs(HUBFLAG_GROUPS) do
+	for o,p in pairs(GROUPS_INJECT) do
 		for q,r in pairs(p["SubGroups"]) do
 			if n == r["ID"] then TOP_GROUP = p["ID"] 
 			end 
@@ -62759,7 +63988,7 @@ for m,n in pairs(GROUPS) do
 	if TOP_GROUP ~= "" then
 	TOPGROUP_COUNTER[TOP_GROUP] = TOPGROUP_COUNTER[TOP_GROUP] + 1
 	if TOPGROUP_COUNTER[TOP_GROUP] > TOPGROUP_MAX then
-		print(ID .. [[	- TOP GROUP "]] .. TOP_GROUP .. [[" IS FULL]])
+		print([[HUBFLAG_DEBUG - ]] .. ID .. [[	- TOP GROUP "]] .. TOP_GROUP .. [[" IS FULL]])
 	end
 	GROUP_INJECT = GROUP_INJECT .. [[
 <Property value="GcBaseBuildingEntryGroup.xml">
@@ -63088,7 +64317,7 @@ end
 function getAutoPartData(ID, STYLE)
 return [[
 	<Property value="GcBaseBuildingPartData.xml">
-      <Property name="PartID" value="_]] .. ID .. [[" />
+      <Property name="PartID" value="]] .. ID .. [[" />
       <Property name="Style" value="GcBaseBuildingPartStyle.xml">
         <Property name="Style" value="]] .. STYLE .. [[" />
       </Property>
@@ -63141,7 +64370,12 @@ end
 
 -- BEGIN PUTTING DATA TOGETHER
 
-for i,j in pairs(HUBFLAG_GROUPS) do	-- INITIALISE TOPGROUP_COUNTER
+if RECTUM_USED then
+	GROUPS_INJECT = HUBFLAG_GROUPS
+else GROUPS_INJECT = HUBFLAG_GROUPS_ASSLESS
+end
+
+for i,j in pairs(GROUPS_INJECT) do	-- INITIALISE TOPGROUP_COUNTER
 	TOPGROUP_COUNTER[j["ID"]] = 0
 end
 
@@ -63151,7 +64385,7 @@ for i,j in pairs(HUBFLAG_NPCSPAWN) do
 end
 
 EXPORT_GROUPS_LIST = {"<!-- HUBFLAG GROUPS -->"}
-for i,j in pairs(HUBFLAG_GROUPS) do
+for i,j in pairs(GROUPS_INJECT) do
 	EXPORT_GROUPS_LIST[i+1] = GetGroupData(j["ID"],j["Name"],j["Icon"],j["SubGroups"])
 end
 
@@ -63176,7 +64410,7 @@ for i,j in pairs(HUBFLAG_DECOR_NOSNAP) do
 	HUBFLAG_OBJPROD[#HUBFLAG_OBJPROD + 1] = j
 end
 
-print("Total added objects: " .. #HUBFLAG_OBJPROD)
+print("HUBFLAG_DEBUG Total added objects: " .. #HUBFLAG_OBJPROD)
 
 -- BUILDING TABLE ENTRIES
 for i,j in pairs(HUBFLAG_OBJPROD) do
@@ -63199,7 +64433,7 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"], j["OBJECT"]["SnapPoints"],j["OBJECT"]["Model"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["CollisionScale"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanPlaceOnItself"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["TerrainEditBaseYOffset"],j["OBJECT"]["TerrainEditTopYOffset"],j["OBJECT"]["TerrainEditBoundsScalar"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], SNAPPING_DISTANCE)
 	EXPORT_PRODUCTS_LIST[i+1] = GetBaseProduct(j["OBJECT"]["ID"],j["PRODUCT"]["Name"],j["PRODUCT"]["NameLower"],j["PRODUCT"]["Subtitle"],j["PRODUCT"]["Description"],j["PRODUCT"]["Icon"],j["PRODUCT"]["Requirements"])
 	EXPORT_PARTS_LIST[i+1] = GetBaseBuildingPart(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Model"], OVERRIDE_INACTIVE)
-	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData(j["OBJECT"]["ID"], j["OBJECT"]["Style"])
+	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"])
 	EXPORT_COST_LIST[i+1] = GetBaseBuildingCost(j["OBJECT"]["ID"], POP_IN_RATE)
 	IS_SPEC = false
 	for m,n in pairs(j["OBJECT"]["SubGroupName"]) do
@@ -64010,6 +65244,73 @@ BASEBUILD_ENTRIES =
 <Property name="Name" value="BLD_INFRA_NAME" />
 </Property>]],
 					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","SET_CONSTRUCT"},
+						["VALUE_CHANGE_TABLE"] 	= 
+						{
+							{"BuildableOnPlanetBase", "True"},
+							{"BuildableOnSpaceBase", "True"},
+							{"BuildableOnFreighter", "True"},
+							{"Group", "FURNITURE"},
+							{"SubGroupName", "FURNDECOR"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","SET_MAYORTERM"},
+						["VALUE_CHANGE_TABLE"] 	= 
+						{
+							{"BuildableOnPlanetBase", "True"},
+							{"BuildableOnSpaceBase", "True"},
+							{"BuildableOnFreighter", "True"},
+							{"Group", "FURNITURE"},
+							{"SubGroupName", "FURNDECOR"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","SET_MONUMENT"},
+						["VALUE_CHANGE_TABLE"] 	= 
+						{
+							{"BuildableOnPlanetBase", "True"},
+							{"BuildableOnSpaceBase", "True"},
+							{"BuildableOnFreighter", "True"},
+							{"Group", "FURNITURE"},
+							{"SubGroupName", "FURNDECOR"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","SET_T_MONU"},
+						["VALUE_CHANGE_TABLE"] 	= 
+						{
+							{"BuildableOnPlanetBase", "True"},
+							{"BuildableOnSpaceBase", "True"},
+							{"BuildableOnFreighter", "True"},
+							{"Group", "FURNITURE"},
+							{"SubGroupName", "FURNDECOR"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","SET_F_MONU"},
+						["VALUE_CHANGE_TABLE"] 	= 
+						{
+							{"BuildableOnPlanetBase", "True"},
+							{"BuildableOnSpaceBase", "True"},
+							{"BuildableOnFreighter", "True"},
+							{"Group", "FURNITURE"},
+							{"SubGroupName", "FURNDECOR"},
+						}
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","SET_S_TOWER"},
+						["VALUE_CHANGE_TABLE"] 	= 
+						{
+							{"BuildableOnPlanetBase", "True"},
+							{"BuildableOnSpaceBase", "True"},
+							{"BuildableOnFreighter", "True"},
+							{"Group", "FURNITURE"},
+							{"SubGroupName", "FURNDECOR"},
+						}
+					},
+					
 				}
 
 -- THE FINAL COUNTDOWN
@@ -64036,10 +65337,220 @@ FINAL_VALUE_CHANGE =
 					["EXML_CHANGE_TABLE"]	= 
 					{
 						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_2"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_2"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_2"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_2"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.MONITORDESK.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
+							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_2"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
+							["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_2"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_CONSTRUCT"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.MONITORDESK.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_3"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_3"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_3"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_3"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.MONITORDESK.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
+							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_3"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
+							["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_3"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MAYORTERM"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.MONITORDESK.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SETTLE_MONU_S.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
+							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
+							["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_MONUMENT"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SETTLE_MONU_S.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SETTLE_MONU_F.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
+							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
+							["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_T_MONU"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SETTLE_MONU_F.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "UI_SETTLEMENT_MISS_MARKER_1"},
+								{"NameLower", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_SUB", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"BLD_SET_MONUMENT_DESC", "UI_SETTLEMENT_MISS_MARKER_1"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SETTLE_MONU_T.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
+							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
+							["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "UI_SETTLEMENT_MISS_MARKER_1"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_F_MONU"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SETTLE_MONU_T.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_S_TOWER"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "BLD_TOWER_NAME"},
+								{"NameLower", "BLD_TOWER_NAME_L"},
+								-- {"BLD_SET_SUB", "BLD_TOWER_SUBTITLE"},
+								-- {"BLD_SET_MONUMENT_DESC", "BLD_TOWER_DESCRIPTION"},
+								-- {"TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.WALL_STONE.DDS", "CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SETTLE_TOWER_S.DDS"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_S_TOWER"},
+							["PRECEDING_KEY_WORDS"] = {"Subtitle"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "BLD_TOWER_SUBTITLE"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_S_TOWER"},
+							["PRECEDING_KEY_WORDS"] = {"Description"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value", "BLD_TOWER_DESCRIPTION"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SET_S_TOWER"},
+							["PRECEDING_KEY_WORDS"] = {"Icon"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SETTLE_TOWER_S.DDS"},
+							}
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
 							["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_PRODUCTS
-						}
+						},
 					},
 				},
 				{
@@ -64135,8 +65646,8 @@ FINAL_VALUE_CHANGE =
 					["EXML_CHANGE_TABLE"]	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"LocTableList"},
-							["LINE_OFFSET"] 		= "+0",
+							["SPECIAL_KEY_WORDS"] = {"Value", "NMS_Loc7"},
+							["LINE_OFFSET"] 		= "+1",
 							["ADD"] 				= DEBUG_LANGUAGE_EXPORT
 						},
 						{

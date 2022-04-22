@@ -16,9 +16,9 @@ EndB = "0.084",};
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "true Blood 1.4 - Red.pak", 
+["MOD_FILENAME"] 			= "true Blood 1.5 - Red.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.84",
+["NMS_VERSION"]				= "3.88",
 ["MOD_DESCRIPTION"]			= "This mod changes creature blood color",
 ["MODIFICATIONS"] 			= 
 	{
