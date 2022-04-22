@@ -3,7 +3,7 @@ Author = "alchemist"
 ModName = "CompanionBehaviourAdjustments"
 --ModNexus = "https://www.nexusmods.com/nomanssky/mods/1871"
 BaseDescription = "Tweaks to pet behavior."
-GameVersion = "3-73" -- Expeditions Revisited
+GameVersion = "3-6x" -- Frontiers
 ModVersion = "3"
 
 -- BEGIN CONFIG
