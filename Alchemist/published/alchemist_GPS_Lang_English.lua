@@ -2,8 +2,8 @@
 Author = "alchemist"
 ModName = "GPS"
 BaseDescription = [[Better scanning]]
-GameVersion = "3-82"
-ModVersion = "1-2-1"
+GameVersion = "3-87"
+ModVersion = "1-3-0"
 
 -- =========
 -- CONSTANTS
@@ -70,7 +70,7 @@ the color of text or add icons. Format wrappers and icon tags must be in English
 
 --]]
 
--- Total keys: 176
+-- Total keys: 179
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_PORT_ERR_NEED_PASS"] = "Feature Unavailable <IMG>SLASH<> Technology Requirement Unfulfilled <IMG>SLASH<> Atlas Pass", --
@@ -203,9 +203,12 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_RB_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <IMG>SLASH<> Salvageable Scrap", --
   ["ALCH_SCAN_PQ_RB_MENU"] = "Salvageable Scrap", --
   ["ALCH_SCAN_PQ_RB_TITLE"] = "Planet Query ~ Salvageable Scrap", --
-  ["ALCH_SCAN_PQ_RC_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <IMG>SLASH<> Populated Wealthy System ~ Undiscovered Planet ~ Biome Not Wierd or Dead ~ Low Sentinel Presence", --
+  ["ALCH_SCAN_PQ_RC_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <IMG>SLASH<> Populated Wealthy System ~ Undiscovered Planets ~ Biome Not Wierd or Dead ~ Low Sentinel Presence", --
   ["ALCH_SCAN_PQ_RC_MENU"] = "Wealthy Economy", --
-  ["ALCH_SCAN_PQ_RC_TITLE"] = "Planet Query ~ Wealthy Economy", --
+  ["ALCH_SCAN_PQ_RC_TITLE"] = "System Query ~ Wealthy Economy", --
+  ["ALCH_SCAN_PQ_RD_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <IMG>SLASH<> Pirate Controlled System ~ Black Market Economy ~ Undiscovered Planets ~ Biome Not Wierd or Dead ~ Low Sentinel Presence", --
+  ["ALCH_SCAN_PQ_RD_MENU"] = "Black Market", --
+  ["ALCH_SCAN_PQ_RD_TITLE"] = "System Query ~ Black Market", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ"] = "Search Registered with Navigation Computer", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ_TIP"] = "This planetary query has been registered with the ship's navigation computer and will proceed during normal <SPECIAL>space flight<>.\n\n<STELLAR>ADVISORY<> ~ Portal travel and Nexus missions cause <FUEL>interdimension interference<>. All active queries will be paused for the duration of these activities.", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ"] = "Travel to System", --
