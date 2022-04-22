@@ -1,4 +1,3 @@
-GameVersion = "3_81"
 ModName = "ExtendedExocraftAndShipScanner"
 
 VehicleScanTablePath = "METADATA\\SIMULATION\\SCANNING\\VEHICLESCANTABLE.MBIN"
@@ -152,10 +151,9 @@ AddedScanEventsExoCraft =
   AddSettlementExoCraft
 
 NMS_MOD_DEFINITION_CONTAINER = {
-  ["MOD_FILENAME"] = ModName .. GameVersion .. ".pak",
+  ["MOD_FILENAME"] = ModName .. ".pak",
   ["MOD_DESCRIPTION"] = "",
   ["MOD_AUTHOR"] = "Jackty89",
-  ["NMS_VERSION"] = GameVersion,
   ["MODIFICATIONS"] = {
     {
       ["MBIN_CHANGE_TABLE"] = {
