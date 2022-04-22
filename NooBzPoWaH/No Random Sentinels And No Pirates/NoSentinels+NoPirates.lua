@@ -1,13 +1,13 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_MOD_NoRandomSentinels_NoPirates_Ultimate.pak",
+["MOD_FILENAME"] 			= "NoSentinels+NoPirates.pak",
 ["MOD_AUTHOR"]				= "Mjjstral",
-["LUA_AUTHOR"]			= "Babscoole",
-["MOD_UPLOADER"]			= "NooBzPoWaH",
-["NMS_VERSION"]				= "3.+",
+["NMS_VERSION"]				= "2.0+",
+["MOD_DESCRIPTION"]			= "Remove Sentinels and Pirates completely",
 ["MODIFICATIONS"] 			= 
 	{
 		{
+			["PAK_FILE_SOURCE"] 	= "NMSARC.86055253.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
-              <Property name="Event" value="GcStateTimeEvent.xml">
+              <Property name="Trigger" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
               </Property>
@@ -102,25 +102,39 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
+			["PAK_FILE_SOURCE"] 	= "NMSARC.4C482859.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
+			{
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"SpawnPirates",				"False"}, 	-- Original "True"
-								{"SpawnRobots",					"False"}	-- Original "True"
-							}
+							["PRECEDING_KEY_WORDS"] = {"Pirate"},
+							["VALUE_MATCH"]			= "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
+							["VALUE_CHANGE_TABLE"] 	= {{"File", ""}}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Pirate"},
+							["VALUE_MATCH"]			= "MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
+							["VALUE_CHANGE_TABLE"] 	= {{"File", ""}}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Pirate"},
+							["VALUE_MATCH"]			= "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
+							["VALUE_CHANGE_TABLE"] 	= {{"File", ""}}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Pirate"},
+							["VALUE_MATCH"]			= "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
+							["VALUE_CHANGE_TABLE"] 	= {{"File", ""}}
 						}
 					}
 				}
 			}
 		},
 		{
+			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -131,52 +145,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"PirateSpawns", "Count" },
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",	"0"}, 		-- Original "1"
-								{"y",	"0"} 		-- Original "1"
+								{"x",	"0"},
+								{"y",	"0"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PirateSpawns", "GcAIShipSpawnData.xml", "GcAIShipSpawnData.xml", "Count" },
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",	"0"}, 		-- Original "1"
-								{"y",	"0"} 		-- Original "1"
+								{"x",	"0"},
+								{"y",	"0"},
 							}
 						}
 					}
 				}
 			}
-		},
-		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Pirate"},
-							["VALUE_MATCH"]			= "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
-							["VALUE_CHANGE_TABLE"] 	= {{"Filename", ""}}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Pirate"},
-							["VALUE_MATCH"]			= "MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
-							["VALUE_CHANGE_TABLE"] 	= {{"Filename", ""}}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Pirate"},
-							["VALUE_MATCH"]			= "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
-							["VALUE_CHANGE_TABLE"] 	= {{"Filename", ""}}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Pirate"},
-							["VALUE_MATCH"]			= "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
-							["VALUE_CHANGE_TABLE"] 	= {{"Filename", ""}}
-						}
-					}
-				}
-			}
-		},
-	}	
+		}	
+	}
 }

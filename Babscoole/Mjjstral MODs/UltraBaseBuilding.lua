@@ -1123,6 +1123,33 @@ PLACEMENTDATA_ENTITY =
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAttachmentData">
   <Property name="Components">
+    <Property value="TkPhysicsComponentData.xml">
+      <Property name="Data" value="TkPhysicsData.xml">
+        <Property name="Mass" value="0" />
+        <Property name="Friction" value="0.5" />
+        <Property name="RollingFriction" value="0.2" />
+        <Property name="AngularDamping" value="0.2" />
+        <Property name="LinearDamping" value="0.1" />
+        <Property name="Gravity" value="20" />
+      </Property>
+      <Property name="VolumeTriggerType" value="TkVolumeTriggerType.xml">
+        <Property name="VolumeTriggerType" value="Open" />
+      </Property>
+      <Property name="SurfaceProperties" value="None" />
+      <Property name="TriggerVolume" value="False" />
+      <Property name="Climbable" value="False" />
+      <Property name="Floor" value="False" />
+      <Property name="IgnoreModelOwner" value="False" />
+      <Property name="NoVehicleCollide" value="False" />
+      <Property name="NoPlayerCollide" value="False" />
+      <Property name="CameraInvisible" value="False" />
+      <Property name="InvisibleForInteraction" value="False" />
+      <Property name="AllowTeleporter" value="False" />
+      <Property name="BlockTeleporter" value="False" />
+      <Property name="DisableGravity" value="False" />
+      <Property name="SpinOnCreate" value="0" />
+      <Property name="UseBasePartOptimisation" value="False" />
+    </Property>
     <Property value="GcBasePlacementComponentData.xml">
       <Property name="Rules">
         <Property value="GcBasePlacementRule.xml">
@@ -1152,8 +1179,8 @@ PLACEMENT_SCENE =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkSceneNodeData">
-  <Property name="Name" value="]].. PATH .. P_NAME ..[[.SCENE.MBIN" />
-  <Property name="NameHash" value="1275367091" />
+  <Property name="Name" value="]].. PATH .. P_NAME ..[[_PLACEMENT" />
+  <Property name="NameHash" value="2385968370" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
     <Property name="TransX" value="0" />
@@ -1201,7 +1228,47 @@ PLACEMENT_SCENE =
           <Property name="Value" value="]].. PATH .. P_NAME ..[[_PLACEMENTDATA.ENTITY.MBIN" />
         </Property>
       </Property>
-      <Property name="Children" />
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="]].. PATH .. P_NAME ..[[_PLACEMENT" />
+          <Property name="NameHash" value="2385968370" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0.429757" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.719027" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0.484206" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
     </Property>
   </Property>
 </Data>
@@ -1368,7 +1435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "0-UltraBaseBuilding.pak",
 ["MOD_AUTHOR"]				= "Mjjstral and Babscoole",
 ["Contributors"]			= "Ignacio and GhostRick",
-["NMS_VERSION"]				= "3.84c",
+["NMS_VERSION"]				= "3.87",
 ["ADD_FILES"] = ADD_FILES_TABLE,
 ["MODIFICATIONS"] 			=
 	{
