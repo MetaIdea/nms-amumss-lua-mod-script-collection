@@ -1,4 +1,3 @@
-GameVersion = "3_84"
 ModeName = "UniqueSpaceShips"
 Author = "Jackty89"
 
@@ -80,10 +79,9 @@ Shipchanges =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"] 			= ModeName..GameVersion..".pak",
+	["MOD_FILENAME"] 			= ModeName..".pak",
 	["MOD_DESCRIPTION"]			= "Rework of all Spaceships and their bonuses and price",
 	["MOD_AUTHOR"]				= Author,
-	["NMS_VERSION"]				= GameVersion,
 	["MODIFICATIONS"] 			=
 	{
 		{

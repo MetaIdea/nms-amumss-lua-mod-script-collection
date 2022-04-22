@@ -1,4 +1,3 @@
-GameVersion = "3_84"
 ModeName = "SpawnrateForClasses"
 Author = "Jackty89"
 
@@ -6,10 +5,9 @@ InventoryTablePath = "METADATA\\REALITY\\TABLES\\INVENTORYTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= ModeName..GameVersion..".pak",
+["MOD_FILENAME"] 			= ModeName..".pak",
 ["MOD_DESCRIPTION"]			= "Rework of all Spaceships and their bonuses and price",
 ["MOD_AUTHOR"]				= Author,
-["NMS_VERSION"]				= GameVersion,
 ["MODIFICATIONS"] 			=
 	{
 		{
@@ -25,9 +23,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Average"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"C",	"30"},
-								{"B",	"40"},
-                                {"A",	"28"},
+								{"C",	"40"},
+								{"B",	"35"},
+                                {"A",	"23"},
                                 {"S",	"2"},
 							}
 						},
