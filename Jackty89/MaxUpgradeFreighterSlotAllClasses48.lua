@@ -1,4 +1,3 @@
-GameVersion = "3_81"
 ModeName = "MaxUpgradeFreighterSlotAllClasses48"
 Author = "Jackty89"
 Description = "Tiny mod that allows any class of freighter to be upgraded to 48/48"
@@ -7,10 +6,9 @@ InventoryTablePath = "METADATA\\REALITY\\TABLES\\INVENTORYTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] 			= ModeName..GameVersion..".pak",
-    ["MOD_DESCRIPTION"]			= Description,   
+    ["MOD_FILENAME"] 			= ModeName..".pak",
+    ["MOD_DESCRIPTION"]			= Description,
     ["MOD_AUTHOR"]				= Author,
-    ["NMS_VERSION"]				= GameVersion,
     ["MODIFICATIONS"] 			=
 	{
 		{
