@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Salvaged Data inside Damage Machineries 2.4.pak", 
+["MOD_FILENAME"] 			= "Salvaged Data inside Damage Machineries 2.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.87",
+["NMS_VERSION"]				= "3.88",
 ["MOD_DESCRIPTION"]			= "This mod place salvaged blueprints directly into damaged machineries",
 ["MODIFICATIONS"] 			= 
 	{
@@ -34,6 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="ID" value="BP_SALVAGE" />
               <Property name="AmountMin" value="2" />
               <Property name="AmountMax" value="4" />
+			  <Property name="HideAmountInMessage" value="False" />
               <Property name="ForceSpecialMessage" value="False" />
               <Property name="HideInSeasonRewards" value="False" />
               <Property name="Silent" value="False" />
