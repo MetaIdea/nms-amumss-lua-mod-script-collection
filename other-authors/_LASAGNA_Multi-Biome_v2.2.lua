@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_v2.0.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_v2.2.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with trevix/Babscoole code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = { "Objects", "SelectableObjects" },
 							["LINE_OFFSET"] = "-2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] 	=		--v2.2: doubled all grass loddistances, *(multiply)0.5 to (just newcrossgrass): MaxRegionRadius,MaxImposterRadius, FadeOutStartDistance, FadeOutEndDistance
 							{								--hqtreeref- maxscale: 3 from 3.2, maxscaley: 1.1 from 1
 								{"IGNORE",	"IGNORE",}      --changed minheight, maxheight, and maxangle, [if grass 0.75:] grass shearwindstrength 0.25 from 0.75, buttercup: .03 from .2
 							}, 		                        --changed grass = maxscale 1.38 from 0.6 for first two, newcrossgrass: 2.99 from 1.3, buttercup: 2.76 from 1.2
@@ -355,10 +355,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
-              <Property value="500" />
+              <Property value="30" />
+              <Property value="70" />
+              <Property value="90" />
+              <Property value="1000" />
             </Property>
           </Property>
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -374,10 +374,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
-              <Property value="500" />
+              <Property value="30" />
+              <Property value="70" />
+              <Property value="90" />
+              <Property value="1000" />
             </Property>
           </Property>
         </Property>
@@ -487,10 +487,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
-              <Property value="500" />
+              <Property value="30" />
+              <Property value="70" />
+              <Property value="90" />
+              <Property value="1000" />
             </Property>
           </Property>
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -506,10 +506,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
-              <Property value="500" />
+              <Property value="30" />
+              <Property value="70" />
+              <Property value="90" />
+              <Property value="1000" />
             </Property>
           </Property>
         </Property>
@@ -592,10 +592,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="FlatDensity" value="0.5" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="MaxRegionRadius" value="4999" />
+          <Property name="MaxImposterRadius" value="5" />
+          <Property name="FadeOutStartDistance" value="4999" />
+          <Property name="FadeOutEndDistance" value="4999" />
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
@@ -619,10 +619,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="FadeOutOffsetDistance" value="5" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="8" />
-              <Property value="15" />
-              <Property value="25" />
-              <Property value="500" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
             </Property>
           </Property>
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -638,10 +638,10 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="8" />
-              <Property value="15" />
-              <Property value="25" />
-              <Property value="500" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
             </Property>
           </Property>
         </Property>
@@ -1173,7 +1173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"MaxRegionRadius","5",}, --line 1007
-							["LINE_OFFSET"] = "14",
+							["LINE_OFFSET"] = "14",			--v2.2: NEWCROSSGRASS: coverage: 0.16, flatdensity: 0.4, maxangle: 100
 							["VALUE_CHANGE_TABLE"] 	=       --"MEDIUIMGLOWPLANT" is mispelled in source
 							{								--changed both grass = maxscale 1.5 from 1.3, shearwindstrength 0.25 from 0.75
 								{"IGNORE",	"IGNORE",}      --changed maxangle, glow: 85, crystal: 80 & grass: 180, & minheight and maxheight for all
@@ -1566,7 +1566,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="180" />
+        <Property name="MaxAngle" value="100" />
         <Property name="MatchGroundColour" value="True" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -1591,8 +1591,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="Coverage" value="0.16" />
+          <Property name="FlatDensity" value="0.4" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -1753,9 +1753,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQTENTACLEOBJECTSFULL.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSFULL.MBIN" />

@@ -4,7 +4,7 @@ AMPLIFIED_ADDITION = 0.9
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_AmplifiedTerrain_v1.3.pak",
+["MOD_FILENAME"] 			= "_LASAGNA_AmplifiedTerrain_v1.31.pak",
 ["MOD_AUTHOR"]				= "Mjjsral_Modified_By_Lllasagna",
 ["NMS_VERSION"]				= "3.68",
 ["MODIFICATIONS"] 			= 
