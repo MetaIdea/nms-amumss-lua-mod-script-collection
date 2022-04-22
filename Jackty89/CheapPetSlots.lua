@@ -1,4 +1,3 @@
-GameVersion = "3_82"
 ModName = "CheapPetSlots"
 Author = "Jackty89"
 
@@ -16,10 +15,9 @@ CostString = [[
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = ModName..GameVersion..".pak",
+    ["MOD_FILENAME"]            = ModName..".pak",
     ["MOD_DESCRIPTION"]         = ModName,
     ["MOD_AUTHOR"]              = Author,
-    ["NMS_VERSION"]             = GameVersion,
     ["MODIFICATIONS"]           =
     {
         {
@@ -44,4 +42,3 @@ NMS_MOD_DEFINITION_CONTAINER =
         }
     }
 }
-
