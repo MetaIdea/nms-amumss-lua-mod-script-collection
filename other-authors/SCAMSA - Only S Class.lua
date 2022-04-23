@@ -8,6 +8,12 @@
 
 LivingShipChance	=	100
 
+--Sail Ship Generation Weight
+--Anything above 0 has a chance to generate living ship, the higher the number the higher the chance. (Use values like 100, 50, 25, 10 etc.)
+--Set 0 if you want to disable living ships landing on space stations
+
+SailShipChance	=	100
+
 --Ship spawn probabilities by class.
 --The sum of values below shouldn't exceed 100% chance.
 
@@ -53,6 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "PlayerFreighter",	"0" },
 								{ "Royal",	"100" },
 								{ "Alien",	LivingShipChance },
+								{ "Sail",	SailShipChance },
 							}
 							},
 					}

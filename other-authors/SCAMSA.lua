@@ -8,6 +8,12 @@
 
 LivingShipChance	=	100
 
+--Sail Ship Generation Weight
+--Anything above 0 has a chance to generate living ship, the higher the number the higher the chance. (Use values like 100, 50, 25, 10 etc.)
+--Set 0 if you want to disable living ships landing on space stations
+
+SailShipChance	=	100
+
 --Ship spawn probabilities by class.
 --The sum of values below shouldn't exceed 100% chance.
 
@@ -56,6 +62,21 @@ MaxTechSlotsLivingShip	= 48
 MinTechSlotsFreighter	= 48
 MaxTechSlotsFreighter	= 48
 
+--Minimum and maximum cargo slot values of generated ships.
+
+MinCargoSlotsShip	= 48
+MaxCargoSlotsShip	= 48
+
+--Minimum and maximum cargo slot values of generated living ships.
+
+MinCargoSlotsLivingShip	= 48
+MaxCargoSlotsLivingShip	= 48
+
+--Minimum and maximum cargo slot values of generated freighters.
+
+MinCargoSlotsFreighter	= 48
+MaxCargoSlotsFreighter	= 48
+
 --Maximum inventory capacity of ships depending on their class
 
 SClassMaxInventorySize	=	48
@@ -100,6 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "PlayerFreighter",	"0" },
 								{ "Royal",	"100" },
 								{ "Alien",	LivingShipChance },
+								{ "Sail",	SailShipChance },
 							}
 							},
 					}
@@ -118,8 +140,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -128,8 +152,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -138,8 +164,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -148,8 +176,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -158,8 +188,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -168,8 +200,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -178,8 +212,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -188,8 +224,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -198,8 +236,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -208,8 +248,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -218,8 +260,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -228,8 +272,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -238,8 +284,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -248,8 +296,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -258,8 +308,46 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsShip},
 								{"MaxSlots",		MaxInventorySlotsShip},
-								{"MinExtraTech",		MinTechSlotsShip},
-								{"MaxExtraTech",		MinTechSlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "SailSmall",
+							["VALUE_CHANGE_TABLE"] 	= 	
+							{
+								{"MinSlots",		MinInventorySlotsShip},
+								{"MaxSlots",		MaxInventorySlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "SailMedium",
+							["VALUE_CHANGE_TABLE"] 	= 	
+							{
+								{"MinSlots",		MinInventorySlotsShip},
+								{"MaxSlots",		MaxInventorySlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "SailLarge",
+							["VALUE_CHANGE_TABLE"] 	= 	
+							{
+								{"MinSlots",		MinInventorySlotsShip},
+								{"MaxSlots",		MaxInventorySlotsShip},
+								{"MinTechSlots",		MinTechSlotsShip},
+								{"MaxTechSlots",		MaxTechSlotsShip},
+								{"MinCargoSlots",		MinCargoSlotsShip},
+								{"MaxCargoSlots",		MaxCargoSlotsShip},
 							}
 						},
 						{
@@ -268,8 +356,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsLivingShip},
 								{"MaxSlots",		MaxInventorySlotsLivingShip},
-								{"MinExtraTech",		MinTechSlotsLivingShip},
-								{"MaxExtraTech",		MinTechSlotsLivingShip},
+								{"MinTechSlots",		MinTechSlotsLivingShip},
+								{"MaxTechSlots",		MaxTechSlotsLivingShip},
+								{"MinCargoSlots",		MinCargoSlotsLivingShip},
+								{"MaxCargoSlots",		MaxCargoSlotsLivingShip},
 							}
 						},
 						{
@@ -278,8 +368,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsLivingShip},
 								{"MaxSlots",		MaxInventorySlotsLivingShip},
-								{"MinExtraTech",		MinTechSlotsLivingShip},
-								{"MaxExtraTech",		MinTechSlotsLivingShip},
+								{"MinTechSlots",		MinTechSlotsLivingShip},
+								{"MaxTechSlots",		MaxTechSlotsLivingShip},
+								{"MinCargoSlots",		MinCargoSlotsLivingShip},
+								{"MaxCargoSlots",		MaxCargoSlotsLivingShip},
 							}
 						},
 						{
@@ -288,8 +380,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsLivingShip},
 								{"MaxSlots",		MaxInventorySlotsLivingShip},
-								{"MinExtraTech",		MinTechSlotsLivingShip},
-								{"MaxExtraTech",		MinTechSlotsLivingShip},
+								{"MinTechSlots",		MinTechSlotsLivingShip},
+								{"MaxTechSlots",		MaxTechSlotsLivingShip},
+								{"MinCargoSlots",		MinCargoSlotsLivingShip},
+								{"MaxCargoSlots",		MaxCargoSlotsLivingShip},
 							}
 						},
 						{
@@ -322,8 +416,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsFreighter},
 								{"MaxSlots",		MaxInventorySlotsFreighter},
-								{"MinExtraTech",		MinTechSlotsFreighter},
-								{"MaxExtraTech",		MinTechSlotsFreighter},
+								{"MinTechSlots",		MinTechSlotsFreighter},
+								{"MaxTechSlots",		MaxTechSlotsFreighter},
+								{"MinCargoSlots",		MinCargoSlotsFreighter},
+								{"MaxCargoSlots",		MaxCargoSlotsFreighter},
 							}
 						},
 						{
@@ -332,8 +428,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsFreighter},
 								{"MaxSlots",		MaxInventorySlotsFreighter},
-								{"MinExtraTech",		MinTechSlotsFreighter},
-								{"MaxExtraTech",		MinTechSlotsFreighter},
+								{"MinTechSlots",		MinTechSlotsFreighter},
+								{"MaxTechSlots",		MaxTechSlotsFreighter},
+								{"MinCargoSlots",		MinCargoSlotsFreighter},
+								{"MaxCargoSlots",		MaxCargoSlotsFreighter},
 							}
 						},
 						{
@@ -342,8 +440,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinSlots",		MinInventorySlotsFreighter},
 								{"MaxSlots",		MaxInventorySlotsFreighter},
-								{"MinExtraTech",		MinTechSlotsFreighter},
-								{"MaxExtraTech",		MinTechSlotsFreighter},
+								{"MinTechSlots",		MinTechSlotsFreighter},
+								{"MaxTechSlots",		MaxTechSlotsFreighter},
+								{"MinCargoSlots",		MinCargoSlotsFreighter},
+								{"MaxCargoSlots",		MaxCargoSlotsFreighter},
 							}
 						},
 						{
