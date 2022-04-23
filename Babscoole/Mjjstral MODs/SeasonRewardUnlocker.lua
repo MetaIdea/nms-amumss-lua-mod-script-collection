@@ -21,6 +21,7 @@ REWARDS_1 = {
 	"RS_WARP_TECH",
 	"RS_GLYPHS",
 	"RS_VOIDEGG",
+	"RS_S1_S5M4",
 }
 
 REWARDS_2 = {
@@ -98,36 +99,68 @@ REWARDS_5 = {
 	"RS_S5_PHASE4",
 	"RS_S5_PHASE5",
 	"RS_S5_PARTY",
-	"RS_S5_S1M1",
-	"RS_S5_S1M2",
-	"RS_S5_S1M3",
-	"RS_S5_S1M4",
 	"RS_S5_S1M5",
 	"RS_S5_S1M6",
 	"RS_S5_S1M7",
-	"RS_S5_S2M1",
-	"RS_S5_S2M2",
-	"RS_S5_S2M3",
-	"RS_S5_S2M4",
 	"RS_S5_S2M5",
 	"RS_S5_S2M6",
 	"RS_S5_S2M7",
-	"RS_S5_S3M1",
-	"RS_S5_S3M2",
-	"RS_S5_S3M3",
-	"RS_S5_S3M4",
-	"RS_S5_S4M1",
-	"RS_S5_S4M2",
-	"RS_S5_S4M3",
-	"RS_S5_S4M4",
 	"RS_S5_S4M5",
 	"RS_S5_S4M6",
-	"RS_S5_S5M1",
-	"RS_S5_S5M2",
-	"RS_S5_S5M3",
-	"RS_S5_S5M4",
 	"RS_S5_S5M5",
 	"RS_S5_S5M6",
+}
+
+REWARDS_6 = {
+----SEASON 6 REWARDS-------
+	"EXPD_FLAG_06A",
+	"EXPD_FLAG_06B",
+	"EXPD_FLAG_06C",
+	"EXPD_FLAG_06D",
+	"EXPD_CUBE_06",
+	"DECAL_WORM_P1",
+	"DECAL_WORM_P2",
+	"DECAL_WORM_P3",
+	"DECAL_WORM_P4",
+	"DECAL_WORM_P5",
+	"S_POSTER20",
+	"S_POSTER21",
+	"S_POSTER22",
+	"EXPD_POSTER06A",
+	"EXPD_POSTER06B",
+	"EXPD_POSTER06C",
+	"RS_S6_TRAIL",
+	"RS_S6_COMPLETE",
+	"RS_S6_PHASE1",
+	"RS_S6_PHASE2",
+	"RS_S6_PHASE3",
+	"RS_S6_PHASE4",
+	"RS_S6_PHASE5",
+	"RS_S6_PARTY1",
+	"RS_S6_PARTY2",
+	"RS_S6_PARTY3",
+	"RS_S6_PARTY4",
+	"RS_S6_PARTY5",
+	"RS_S6_S1M1",
+	"RS_S6_S1M2",
+	"RS_S6_S1M3",
+	"RS_S6_S1M4",
+	"RS_S6_S2M1",
+	"RS_S6_S2M2",
+	"RS_S6_S2M3",
+	"RS_S6_S2M4",
+	"RS_S6_S3M1",
+	"RS_S6_S3M2",
+	"RS_S6_S3M3",
+	"RS_S6_S3M4",
+	"RS_S6_S4M1",
+	"RS_S6_S4M2",
+	"RS_S6_S4M3",
+	"RS_S6_S4M4",
+	"RS_S6_S5M1",
+	"RS_S6_S5M2",
+	"RS_S6_S5M3",
+	"RS_S6_S5M4",
 }
 
 REWARDS_GVECTOR = {
@@ -144,7 +177,8 @@ QUICK_ACTION_LIST =
 	"S2_REWARDS",
 	"S3_REWARDS",
 	"S4_REWARDS",
-	"S5_REWARDS", 	
+	"S5_REWARDS",
+	"S6_REWARDS",	
 	"S1_GV",
 	"S3_NORMANDY",	
 }
@@ -155,49 +189,56 @@ QUICK_ACTION_MENU =
 	{
 		["TITLE"] 			= "Unlock Season 1 Reward",
 		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.1.DDS",
-		["ANIM"] 			= "UnlockSeason1Reward",
+		["ANIM"] 			= "Unlock1Reward",
 		["REWARD"]			= REWARDS_1
 	},
 	["S2_REWARDS"] = 
 	{
 		["TITLE"] 			= "Unlock Season 2 Reward",
 		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.2.DDS",
-		["ANIM"] 			= "UnlockSeason2Reward",
+		["ANIM"] 			= "UnlockS2Reward",
 		["REWARD"]			= REWARDS_2
 	},
 	["S3_REWARDS"] = 
 	{
 		["TITLE"] 			= "Unlock Season 3 Reward",
 		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.3.DDS",
-		["ANIM"] 			= "UnlockSeason3Reward",
+		["ANIM"] 			= "UnlockS3Reward",
 		["REWARD"]			= REWARDS_3		
 	},
 	["S4_REWARDS"] = 
 	{
 		["TITLE"] 			= "Unlock Season 4 Reward",
 		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.4.DDS",
-		["ANIM"] 			= "UnlockSeason4Reward",
+		["ANIM"] 			= "UnlockS4Reward",
 		["REWARD"]			= REWARDS_4		
 	},
 	["S5_REWARDS"] = 
 	{
 		["TITLE"] 			= "Unlock Season 5 Reward",
 		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.5.DDS",
-		["ANIM"] 			= "UnlockSeason5Reward",
+		["ANIM"] 			= "UnlockS5Reward",
 		["REWARD"]			= REWARDS_5		
+	},
+	["S6_REWARDS"] = 
+	{
+		["TITLE"] 			= "Unlock Season 6 Reward",
+		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.6.DDS",
+		["ANIM"] 			= "UnlockS6Reward",
+		["REWARD"]			= REWARDS_6		
 	},	
 	["S1_GV"] = 
 	{
 		["TITLE"] 			= "Unlock Golden Vector Reward",
 		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.1.DDS",
-		["ANIM"] 			= "UnlockGoldenVectorReward",
+		["ANIM"] 			= "UnlockGVReward",
 		["REWARD"]			= REWARDS_GVECTOR	
 	},
 	["S3_NORMANDY"] = 
 	{
 		["TITLE"] 			= "Unlock Normandy Reward",
 		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.2A.DDS",
-		["ANIM"] 			= "UnlockNormandyReward",
+		["ANIM"] 			= "UnlockNorReward",
 		["REWARD"]			= REWARDS_NORMANDY		
 	},	
 }
@@ -312,7 +353,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]				= "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"]			= "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]				= "3.84",
+["NMS_VERSION"]				= "3.88",
 ["MODIFICATIONS"] 			= 
 	{
 		{

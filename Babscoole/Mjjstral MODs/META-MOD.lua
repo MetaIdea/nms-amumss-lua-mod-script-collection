@@ -3,15 +3,18 @@ QUICK_ACTION_LIST =
 	"SAVE",
 	"GALACTICMAP",
 	"WARP_TO_BASE", 
-	"TOGGLE_BACKPACK",
-	"TOGGLE_SHIELD", 
+	"TOGGLE_BACKPACK", 
 	"REVEAL_PORTAL",
+	"HEALTH_SUIT",
+	"R_SENTINELS_OFF",
+	"R_FIX_REP",
 	"PLANET_FINDER",
+	"TOGGLE_SHIELD", 	
 	"TOGGLE_INVISIBLE",
 	"REVEAL_RUNES",
+	"WORD",	
 	"FREIGHTER_TRANS",	
 	"SCARE_CREATURES",
-	"HEALTH_SUIT",
 	"STOP_STORM",
 	"STORM",	
 	"POWER_STATE",
@@ -189,6 +192,7 @@ QUICK_ACTION_MENU =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>	
               <Property name="Action">
                 <Property value="GcPlayAnimAction.xml">
@@ -342,6 +346,7 @@ QUICK_ACTION_MENU =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>
               <Property name="Action">
                 <Property value="GcNodeActivationAction.xml">
@@ -487,6 +492,27 @@ QUICK_ACTION_MENU =
 		["ANIM"] 			= "REVEAL_PORTAL",
 		["TYPE"]			= "REWARD",
 	},
+	["R_SENTINELS_OFF"] = 
+	{
+		["TITLE"] 			= "Disable Sentinels",
+		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.SENTINELSSILVER.DDS",
+		["ANIM"] 			= "R_SENTINELS_OFF",
+		["TYPE"]			= "REWARD",
+	},
+	["R_FIX_REP"] = 
+	{
+		["TITLE"] 			= "Reset Reputation",
+		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REPTOKEN.DDS",
+		["ANIM"] 			= "R_FIX_REP",
+		["TYPE"]			= "REWARD",
+	},
+	["WORD"] = 
+	{
+		["TITLE"] 			= "Learn Word",
+		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.WORDSGOLD.DDS",
+		["ANIM"] 			= "WORD",
+		["TYPE"]			= "REWARD",
+	},	
 	["PLANET_FINDER"] = 
 	{
 		["TITLE"] 			= "Find Lush Planet",
@@ -1427,7 +1453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]				= "3.84",
+["NMS_VERSION"]				= "3.88",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -1707,6 +1733,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>	  
               <Property name="Action">
                 <Property value="GcFireSimpleInteractionAction.xml" />
@@ -1852,6 +1879,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>		  
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
@@ -1870,6 +1898,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>
               <Property name="Action">
                 <Property value="GcPlayAudioAction.xml">
