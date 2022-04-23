@@ -260,7 +260,7 @@ COLLISION_NODE =
 		  <Property name="Type" value="LOCATOR" />
 		  <Property name="Transform" value="TkTransformData.xml">
 			<Property name="TransX" value="0" />
-			<Property name="TransY" value="3.841552" />
+			<Property name="TransY" value="3.871552" />
 			<Property name="TransZ" value="0" />
 			<Property name="RotX" value="0" />
 			<Property name="RotY" value="0" />
@@ -328,7 +328,7 @@ SHIELD_SCENE_1 =
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
-        <Property name="TransY" value="-3.841552" />
+        <Property name="TransY" value="-3.871552" />
         <Property name="TransZ" value="0" />
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
@@ -346,7 +346,7 @@ SHIELD_SCENE_1 =
           <Property name="Type" value="MESH" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
-            <Property name="TransY" value="3.841552" />
+            <Property name="TransY" value="3.871552" />
             <Property name="TransZ" value="0" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-110" />
@@ -470,7 +470,7 @@ SHIELD_SCENE_1 =
           <Property name="Type" value="MESH" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
-            <Property name="TransY" value="3.841552" />
+            <Property name="TransY" value="3.871552" />
             <Property name="TransZ" value="0" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="-110" />
@@ -718,7 +718,7 @@ SHIELD_SCENE_1 =
           <Property name="Type" value="MESH" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
-            <Property name="TransY" value="3.841552" />
+            <Property name="TransY" value="3.871552" />
             <Property name="TransZ" value="0" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="0" />
@@ -966,7 +966,7 @@ SHIELD_SCENE_1 =
           <Property name="Type" value="MESH" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
-            <Property name="TransY" value="3.841552" />
+            <Property name="TransY" value="3.871552" />
             <Property name="TransZ" value="0" />
             <Property name="RotX" value="0" />
             <Property name="RotY" value="0" />
@@ -2361,7 +2361,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "ProtectionShield.pak",
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
-["NMS_VERSION"]				= "3.84",
+["NMS_VERSION"]				= "3.88",
 ["DESCRIPTION"]				= "Protective shield against hazards, bullets ...",
 ["MODIFICATIONS"] 			= 
 	{	
@@ -2427,6 +2427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>
               <Property name="Action">
                 <Property value="GcNodeActivationAction.xml">
@@ -2593,7 +2594,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="LinearDamping" value="0.1" />
         <Property name="Gravity" value="20" />
       </Property>
-      <Property name="VolumeTriggerType" value="TkVolumeTriggerType.xml">
+      <Property name="TriggerVolumeType" value="TkVolumeTriggerType.xml">
         <Property name="VolumeTriggerType" value="]] .. SHIELD_VOLUME_TRIGGER_TYPE .. [[" />
       </Property>
       <Property name="SurfaceProperties" value="None" />
@@ -2634,7 +2635,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="LinearDamping" value="0.1" />
         <Property name="Gravity" value="20" />
       </Property>
-      <Property name="VolumeTriggerType" value="TkVolumeTriggerType.xml">
+      <Property name="TriggerVolumeType" value="TkVolumeTriggerType.xml">
         <Property name="VolumeTriggerType" value="]] .. SHIELD_VOLUME_TRIGGER_TYPE .. [[" />
       </Property>
       <Property name="SurfaceProperties" value="None" />
@@ -2767,6 +2768,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               -- <Property name="Trigger" value="GcStateTimeEvent.xml">
                 -- <Property name="Seconds" value="0" />
                 -- <Property name="RandomSeconds" value="0" />
+                -- <Property name="UseMissionClock" value="False" />				
               -- </Property>	
               -- <Property name="Action">
                 -- <Property value="GcPlayAnimAction.xml">

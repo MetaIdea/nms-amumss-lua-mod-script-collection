@@ -1132,7 +1132,7 @@ PLACEMENTDATA_ENTITY =
         <Property name="LinearDamping" value="0.1" />
         <Property name="Gravity" value="20" />
       </Property>
-      <Property name="VolumeTriggerType" value="TkVolumeTriggerType.xml">
+      <Property name="TriggerVolumeType" value="TkVolumeTriggerType.xml">
         <Property name="VolumeTriggerType" value="Open" />
       </Property>
       <Property name="SurfaceProperties" value="None" />
@@ -1435,7 +1435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "0-UltraBaseBuilding+UnlimitedBaseBuilding.pak",
 ["MOD_AUTHOR"]				= "Mjjstral and Babscoole",
 ["Contributors"]			= "Ignacio and GhostRick",
-["NMS_VERSION"]				= "3.87",
+["NMS_VERSION"]				= "3.88",
 ["ADD_FILES"] = ADD_FILES_TABLE,
 ["MODIFICATIONS"] 			=
 	{

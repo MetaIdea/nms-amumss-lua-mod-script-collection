@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "CockpitCloak+ShipCloak.pak",
 ["MOD_AUTHOR"]				= "Mod and toggle idea by Mjjstral, original concept Gmr_Leon",
 ["MOD_MAINTENANCE"]		= "Babscoole",
-["NMS_VERSION"]				= "3.84",
+["NMS_VERSION"]				= "3.88",
 ["DESCRIPTION"]				= "Makes the cockpit interior and ship invisible when flying",
 ["MODIFICATIONS"] 			= 
 	{
@@ -80,6 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="3" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>	  
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
@@ -98,6 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="9.25" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>
               <Property name="Action">		  
                 <Property value="GcNodeActivationAction.xml">
@@ -200,6 +202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="3" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>	  
               <Property name="Action">
                 <Property value="GcNodeActivationAction.xml">
@@ -375,6 +378,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="6" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />
               </Property>	  
               <Property name="Action">
                 <Property value="GcNodeActivationAction.xml">
@@ -453,6 +457,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="9.5" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>	  
               <Property name="Action">
                 <Property value="GcNodeActivationAction.xml">

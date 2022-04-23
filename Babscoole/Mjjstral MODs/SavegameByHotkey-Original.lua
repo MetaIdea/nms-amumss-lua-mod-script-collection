@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["MOD_MAINTENANCE"]		= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]				= "3.84",
+["NMS_VERSION"]				= "3.88",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -130,6 +130,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>		  
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
@@ -148,6 +149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />				
               </Property>
               <Property name="Action">
                 <Property value="GcPlayAudioAction.xml">
