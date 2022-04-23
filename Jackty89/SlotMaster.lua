@@ -7,6 +7,17 @@ InventoryTablePath = "METADATA\\REALITY\\TABLES\\INVENTORYTABLE.MBIN"
 TechWidth = 8
 TechHeight = 6
 
+AlienShipInventory = "48"
+AlienShipTech = "48"
+AlienShipCargo = "48"
+
+AlienEdits = {
+	"AlienSmall",
+	"AlienMedium",
+	"AlienLarge"
+}
+
+
 NMS_MOD_DEFINITION_CONTAINER =
 {
 	["MOD_FILENAME"] = ModName.. ".pak",
@@ -51,12 +62,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"40","48"},
+								{"40","48"},
+								{"36","48"},
+								{"36","48"},
+								{"35","48"},
+								{"35","48"},
+								{"32","48"},
 								{"32","48"},
 								{"24","48"},
+								{"24","48"},
+								{"21","48"},
 								{"21","48"},
 								{"14","48"},
+								{"14","48"},
+								{"12","48"},
+								{"12","48"},
+								{"9","48"},
+								{"9","48"},
 								{"7","48"},
 								{"7","48"},
+								{"6","48"},
+								{"6","48"},
+								{"5","48"},
+								{"5","48"},
+								{"0","48"},
 								{"0","48"}
 							}
 						},
@@ -89,3 +118,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}
 	}
 }
+
+local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+
+for i = 1, #AlienEdits do
+	ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+	{
+		["SPECIAL_KEY_WORDS"] = {AlienEdits[i], "GcInventoryLayoutGenerationDataEntry.xml"},
+		["VALUE_CHANGE_TABLE"] =
+		{
+			{"MinSlots", AlienShipInventory},
+			{"MaxSlots", AlienShipInventory},
+			{"MinTechSlots", AlienShipTech},
+			{"MaxTechSlots", AlienShipTech},
+			{"MinCargoSlots", AlienShipCargo},
+			{"MaxCargoSlots", AlienShipCargo}
+		}
+	}
+end
