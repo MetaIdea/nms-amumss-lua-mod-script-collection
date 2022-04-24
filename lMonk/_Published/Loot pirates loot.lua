@@ -1,9 +1,9 @@
 --------------------------------------------------------------------------
 local desc = [[
-  Replace space pirates battle loot with a more varied list
+  Replace space pirates & raids loot with a more varied selection
 ]]------------------------------------------------------------------------
 
-mod_version = 1.12
+mod_version = 1.5
 
 local F_ = {}
 F_.TableItemSingle = function(item, data, reward)
@@ -196,24 +196,81 @@ local E_ = {
 }
 
 local Rewards = {
-	Pirate_Loot = {
+	Pirate_Loot_Easy = {
+		id = 'PIRATELOOT_EASY',
+		choice = 'SelectAlways',
+		rewardlist = {
+			--id					Min		Max		%		function
+			{id='SHIPCHARGE',		n=1,	x=1,	c=80,	f=F_.Product},
+			{id='TRA_ALLOY1',		n=1,	x=2,	c=40,	f=F_.Product},
+			{id='TRA_ENERGY1',		n=1,	x=2,	c=40,	f=F_.Product},
+			{id='TRA_EXOTICS1',		n=1,	x=2,	c=40,	f=F_.Product},
+			{id='ILLEGAL_PROD3',	n=1,	x=2,	c=40,	f=F_.Product},
+			{id=E_.DBI,				r=E_.C,			c=30,	f=F_.Procedural},
+			{id=E_.DTC,				r=E_.C,			c=30,	f=F_.Procedural},
+			{id=E_.UT,				n=18000,x=30000,c=80,	f=F_.Money},
+		}
+	},
+	Pirate_Loot_Reg = {
 		id = 'PIRATELOOT',
 		choice = 'SelectAlways',
 		zeroseed = 'True',
 		rewardlist = {
 			--id					Min		Max		%		function
-			{id='SHIPCHARGE',		n=3,	x=3,	c=100,	f=F_.Product},
-			{id='SCRAP_GOODS',		n=1,	x=1,	c=100,	f=F_.Product},
-			{id='SCRAP_TECH',		n=1,	x=1,	c=100,	f=F_.Product},
-			{id='SCRAP_WEAP',		n=1,	x=1,	c=100,	f=F_.Product},
+			{id='SHIPCHARGE',		n=1,	x=2,	c=80,	f=F_.Product},
+			{id='SCRAP_GOODS',		n=1,	x=1,	c=90,	f=F_.Product},
+			{id='SCRAP_TECH',		n=1,	x=1,	c=90,	f=F_.Product},
+			{id='SCRAP_WEAP',		n=1,	x=1,	c=90,	f=F_.Product},
 			{id='TRA_ALLOY3',		n=1,	x=3,	c=40,	f=F_.Product},
 			{id='TRA_ENERGY3',		n=1,	x=3,	c=40,	f=F_.Product},
 			{id='TRA_COMPONENT3',	n=1,	x=3,	c=40,	f=F_.Product},
 			{id='TRA_MINERALS3',	n=1,	x=3,	c=40,	f=F_.Product},
+			{id='ILLEGAL_PROD4',	n=1,	x=2,	c=30,	f=F_.Product},
 			{id='AF_METAL',			n=100,	x=130,	c=30,	f=F_.Substance},
 			{id=E_.DBI,				r=E_.U,			c=30,	f=F_.Procedural},
 			{id=E_.DTC,				r=E_.U,			c=30,	f=F_.Procedural},
 			{id=E_.NN,				n=100,	x=250,	c=100,	f=F_.Money},
+		}
+	},
+	Pirate_Loot_Hard = {
+		id = 'PIRATELOOT_HARD',
+		choice = 'SelectAlways',
+		zeroseed = 'True',
+		rewardlist = {
+			--id					Min		Max		%		function
+			{id='SHIPCHARGE',		n=1,	x=3,	c=80,	f=F_.Product},
+			{id='WATER2',			n=260,	x=360,	c=40,	f=F_.Substance},
+			{id='EX_GREEN',			n=150,	x=250,	c=40,	f=F_.Substance},
+			{id='EX_BLUE',			n=120,	x=220,	c=40,	f=F_.Substance},
+			{id='AF_METAL',			n=110,	x=180,	c=40,	f=F_.Substance},
+			{id='SCRAP_GOODS',		n=1,	x=1,	c=40,	f=F_.Product},
+			{id='SCRAP_TECH',		n=1,	x=1,	c=40,	f=F_.Product},
+			{id='SCRAP_WEAP',		n=1,	x=1,	c=40,	f=F_.Product},
+			{id='TRA_ENERGY4',		n=1,	x=3,	c=50,	f=F_.Product},
+			{id='TRA_ALLOY4',		n=1,	x=3,	c=50,	f=F_.Product},
+			{id='TRA_EXOTICS4',		n=1,	x=3,	c=50,	f=F_.Product},
+			{id='TRA_TECH4',		n=1,	x=3,	c=50,	f=F_.Product},
+			{id='ILLEGAL_PROD5',	n=1,	x=2,	c=30,	f=F_.Product},
+			{id='GEODE_RARE',		n=1,	x=1,	c=20,	f=F_.Product},
+			{id=E_.DBI,				r=E_.R,			c=20,	f=F_.Procedural},
+			{id=E_.DTC,				r=E_.R,			c=20,	f=F_.Procedural},
+			{id=E_.NN,				n=300,	x=400,	c=100,	f=F_.Money},
+		}
+	},
+	Raid_Loot = {
+		id = 'RAIDLOOT',
+		choice = 'SelectAlways',
+		rewardlist = {
+			--id					Min		Max		%		function
+			{id='SHIPCHARGE',		n=1,	x=1,	c=80,	f=F_.Product},
+			{id='SCRAP_GOODS',		n=1,	x=1,	c=40,	f=F_.Product},
+			{id='SCRAP_TECH',		n=1,	x=1,	c=40,	f=F_.Product},
+			{id='ILLEGAL_PROD2',	n=1,	x=4,	c=30,	f=F_.Product},
+			{id='WATER2',			n=260,	x=280,	c=30,	f=F_.Substance},
+			{id='GEODE_RARE',		n=1,	x=1,	c=20,	f=F_.Product},
+			{id=E_.DBI,				r=E_.U,			c=20,	f=F_.Procedural},
+			{id=E_.DTC,				r=E_.U,			c=20,	f=F_.Procedural},
+			{id=E_.UT,				n=25000,x=35000,c=80,	f=F_.Money},
 		}
 	},
 	BuildRewardTableEntry = function(rte)
@@ -228,21 +285,20 @@ local Rewards = {
 		end
 		return [[
 			<Property value="GcGenericRewardTableEntry.xml">
-				<Property name="Id" value="]]..rte.id..[[" />
+				<Property name="Id" value="]]..rte.id..[["/>
 				<Property name="List" value="GcRewardTableItemList.xml">
-					<Property name="RewardChoice" value="]]..rte.choice..[[" />
-					<Property name="OverrideZeroSeed" value="False" />
+					<Property name="RewardChoice" value="]]..rte.choice..[["/>
+					<Property name="OverrideZeroSeed" value="]]..(rte.zeroseed or 'False')..[["/>
 					]]..getRewardsList(rte.rewardlist)..[[
 				</Property>
-			</Property>
-		]]
+			</Property>]]
 	end
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Loot pirates loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.87,
+	NMS_VERSION			= 3.88,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -255,7 +311,74 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				PRECEDING_KEY_WORDS	= 'GenericTable',
-				ADD					= Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot)
+				ADD					= Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot_Easy)
+									  ..
+									  Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot_Reg)
+									  ..
+									  Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot_Hard)
+									  ..
+									  Rewards.BuildRewardTableEntry(Rewards.Raid_Loot)
+			}
+		}
+	},
+	{
+		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SPACE/AISPACESHIPATTACKDATATABLE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				PRECEDING_FIRST		= true,
+				PRECEDING_KEY_WORDS = 'Definitions',
+				SPECIAL_KEY_WORDS	= {'Id', 'PIRATE_EASY'},
+				VALUE_CHANGE_TABLE	= {
+					{'Reward',		'PIRATELOOT_EASY'}
+				}
+			},
+			{
+				PRECEDING_FIRST		= true,
+				PRECEDING_KEY_WORDS = 'Definitions',
+				SPECIAL_KEY_WORDS	= {'Id', 'PIRATE'},
+				VALUE_CHANGE_TABLE	= {
+					{'Reward',		'PIRATELOOT'}
+				}
+			},
+			{
+				PRECEDING_FIRST		= true,
+				PRECEDING_KEY_WORDS = 'Definitions',
+				SPECIAL_KEY_WORDS	= {'Id', 'PIRATE_HARD'},
+				VALUE_CHANGE_TABLE	= {
+					{'Reward',		'PIRATELOOT_HARD'}
+				}
+			},
+			{
+				PRECEDING_FIRST		= true,
+				PRECEDING_KEY_WORDS = 'Definitions',
+				SPECIAL_KEY_WORDS	= {'Id', 'RAID_BUILDING'},
+				VALUE_CHANGE_TABLE	= {
+					{'Reward',		'RAIDLOOT'}
+				}
+			},
+			{
+				PRECEDING_FIRST		= true,
+				PRECEDING_KEY_WORDS = 'Definitions',
+				SPECIAL_KEY_WORDS	= {'Id', 'RAID_DOGFIGHT'},
+				VALUE_CHANGE_TABLE	= {
+					{'Reward',		'RAIDLOOT'}
+				}
+			},
+			{
+				PRECEDING_FIRST		= true,
+				PRECEDING_KEY_WORDS = 'Definitions',
+				SPECIAL_KEY_WORDS	= {'Id', 'POLICE'},
+				VALUE_CHANGE_TABLE	= {
+					{'Reward',		'POLICELOOT'}
+				}
+			},
+			{
+				PRECEDING_FIRST		= true,
+				PRECEDING_KEY_WORDS = 'Definitions',
+				SPECIAL_KEY_WORDS	= {'Id', 'PLANET_FLYBY'},
+				VALUE_CHANGE_TABLE	= {
+					{'Reward',		'PIRATELOOT_EASY'}
+				}
 			}
 		}
 	}

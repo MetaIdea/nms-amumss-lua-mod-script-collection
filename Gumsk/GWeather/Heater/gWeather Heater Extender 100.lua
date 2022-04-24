@@ -4,8 +4,8 @@ Author = "Gumsk"
 ModName = "gWeather Heater"
 ModNameSub = "Extender "..Range
 BaseDescription = "Extends the range on the heaters"
-GameVersion = "375"
-ModVersion = "b"
+GameVersion = "388"
+ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL.SCENE.MBIN"
 
 Collision_Add = [[    <Property value="TkSceneNodeData.xml">

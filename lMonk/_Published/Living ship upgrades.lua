@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.living ship upgrades.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.87,
+	NMS_VERSION			= 3.88,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -38,6 +38,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'TechnologyCategory', 'AllShips'}
 				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'CARGOSHIELD', 'TechnologyCategory', 'Ship'},
+				VALUE_CHANGE_TABLE 	= {
+					{'TechnologyCategory', 'AllShips'}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'SHIPLAS_ALIEN'},
+				PRECEDING_KEY_WORDS	= 'StatBonuses',
+				ADD				 	= [[
+					<Property value="GcStatsBonus.xml">
+						<Property name="Stat" value="GcStatsTypes.xml">
+							<Property name="StatsType" value="Ship_Weapons_ShieldLeech" />
+						</Property>
+						<Property name="Bonus" value="0.22" />
+						<Property name="Level" value="1" />
+					</Property>]]
 			},
 		}
 	},

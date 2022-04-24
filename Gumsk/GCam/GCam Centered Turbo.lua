@@ -2,7 +2,7 @@ Author = "Gumsk+Azzinoth"
 ModName = "gCam"
 ModNameSub = "Centered Turbo"
 BaseDescription = "Camera modifications"
-GameVersion = "382"
+GameVersion = "387"
 ModVersion = "a"
 FileSource = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 
@@ -201,6 +201,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"AvoidCollisionLRSpeed", -1},
 		{"AvoidCollisionUDSpeed", 1},
 		{"AvoidCollisionPushSpeed", "0.01"}}},
+				{
+					["PRECEDING_KEY_WORDS"] = "CharacterMiningCam",
+					["INTEGER_TO_FLOAT"] = "FORCE",
+					["VALUE_CHANGE_TABLE"] = {
+						{"OffsetX", "0"},
+						{"OffsetY", "-0.3"},
+						{"BackMinDistance", 6.3},
+						{"BackMaxDistance", 10},
+						{"PanNear", "0"},
+						{"PanFar", "0"},
+						{"VertRotationMin", "-85"},
+						{"VertRotationMax", "85"},
+						{"VertRotationSpeed", "20"},
+						{"SpringSpeed", "0.01"},
+						{"UseSpeedBasedSpring", "False"},
+					}
+				},
 	{["PRECEDING_KEY_WORDS"] = "CharacterIndoorCam",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", "4"},

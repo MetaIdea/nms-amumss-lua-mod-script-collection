@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gWeather Storms"
 ModNameSub = "Fewer"
 BaseDescription = "Reduces the number of storms"
-GameVersion = "382"
+GameVersion = "387"
 ModVersion = "a"
 FileSource1 = "GCSKYGLOBALS.GLOBALS.MBIN"
 

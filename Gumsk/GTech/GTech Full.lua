@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Full"
 BaseDescription = "All my changes to the Technology Table"
-GameVersion = "382"
+GameVersion = "387"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
@@ -436,5 +436,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{ --Ship Infra-Knife Upgrade
 	["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPBLOB","Category","GcTechnologyCategory.xml"},
 		["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
+	
 	
 }}}}}}

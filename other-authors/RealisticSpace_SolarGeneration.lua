@@ -6,7 +6,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	{["MBIN_FILE_SOURCE"]	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-	["EXML_CHANGE_TABLE"]	= {		
+	["EXML_CHANGE_TABLE"]	= {
+		--[[	DEPRECATED	
 		{ --traders distribution
 		["PRECEDING_KEY_WORDS"] = {"Traders"},
 		["VALUE_CHANGE_TABLE"] = {
@@ -43,6 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"Shuttle","0"},
 			{"Royal","100"},
 			{"Alien","1"}}},
+		--]]
 		{ --Less Empty Worlds
 		["PRECEDING_KEY_WORDS"] = {"EmptySystemProbability"},
 			["VALUE_CHANGE_TABLE"] = {

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Hyperdrive"
 BaseDescription = "Vastly increases ship and freighter hyperdrive range."
-GameVersion = "382"
+GameVersion = "387"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 

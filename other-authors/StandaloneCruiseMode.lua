@@ -67,6 +67,36 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
 				{"Falloff","0"}}},
+		{
+		["PRECEDING_KEY_WORDS"] = {"ControlHeavy","AtmosCombatEngine"},
+			["VALUE_CHANGE_TABLE"] = {
+				{"MinSpeed","10"},
+				{"MinSpeedForce","0"},
+				{"MaxSpeed","250"},
+				{"BoostMaxSpeed","250"},
+				{"OverspeedBrake","0"},
+				{"ReverseBrake","1"},
+				{"Falloff","0"}}},
+		{
+		["PRECEDING_KEY_WORDS"] = {"Control","AtmosCombatEngine"},
+			["VALUE_CHANGE_TABLE"] = {
+				{"MinSpeed","10"},
+				{"MinSpeedForce","0"},
+				{"MaxSpeed","250"},
+				{"BoostMaxSpeed","250"},
+				{"OverspeedBrake","0"},
+				{"ReverseBrake","1"},
+				{"Falloff","0"}}},
+		{
+		["PRECEDING_KEY_WORDS"] = {"ControlLight","AtmosCombatEngine"},
+			["VALUE_CHANGE_TABLE"] = {
+				{"MinSpeed","10"},
+				{"MinSpeedForce","0"},
+				{"MaxSpeed","250"},
+				{"BoostMaxSpeed","250"},
+				{"OverspeedBrake","0"},
+				{"ReverseBrake","1"},
+				{"Falloff","0"}}},
 		{ --Buff Player Ship's Non Combat Max Speed, cruise mode, add brake force for reverse
 		["PRECEDING_KEY_WORDS"] = {"ControlHeavy","SpaceEngine"},
 			["VALUE_CHANGE_TABLE"] = {

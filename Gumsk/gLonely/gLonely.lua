@@ -2,13 +2,14 @@ Author = "Gumsk"
 ModName = "gLonely"
 ModNameSub = ""
 BaseDescription = "Generates a lonely galaxy"
-GameVersion = "382"
+GameVersion = "384"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 FileSource2 = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
 FileSource3 = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN"
 FileSource4 = "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
 FileSource5 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
+FileSource6 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -18,15 +19,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MODIFICATIONS"]	= {
 {
 	["MBIN_CHANGE_TABLE"] = {
-		--=============================================================================
-		--Increased system size and planet distance visibility by Fabricator
-		--=============================================================================
+	--=============================================================================
+	--Increased system size and planet distance visibility by Fabricator
+	--=============================================================================
 		{
 			["MBIN_FILE_SOURCE"] = FileSource4,
 			["EXML_CHANGE_TABLE"] = {
 				{
 					["VALUE_CHANGE_TABLE"] = {
-						{"FarClipDistance",9999999}, --5000000
+						{"FarClipDistance",10000000}, --5000000
 					},
 				},
 			}
@@ -46,8 +47,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--=============================================================================				
 				{
 					["VALUE_CHANGE_TABLE"] = {
-						{"LocatorScatterChanceOfCapitalShips",0.5},		--5
-						{"LocatorScatterChanceOfPirates",3},			--20
+						{"LocatorScatterChanceOfCapitalShips",1},		--5
+						{"LocatorScatterChanceOfPirates",2},			--20
 					}
 				},
 
@@ -56,6 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	--=============================================================================
 				{
 					["VALUE_CHANGE_TABLE"] = {
+						{"PlanetInvalidAsteroidZone",2000},
 						{"AsteroidNoiseScale",180000},
 						{"AsteroidDetailNoiseScale",140},
 						{"AsteroidNoiseMinCutoff",-0.3},
@@ -65,30 +67,30 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"AsteroidSomeRaresOdds",0.52},
 						{"AsteroidFadeRangeMin",800},
 						{"AsteroidFadeRangeMax",23000},
-						{"AsteroidSpacing",1800},
+						{"AsteroidSpacing",1200},
 						{"RareAsteroidScale",0.55},
 						{"RareAsteroidMinResources",8},
 						{"RareAsteroidMaxResources",20},
 						{"CommonAsteroidScale",0.2},
 						{"CommonAsteroidMinResources",7},
 						{"CommonAsteroidMaxResources",16},
-						{"CommonAsteroidResourceFuelMultiplier",3},
+						{"CommonAsteroidResourceFuelMultiplier",2},
 						{"CommonAsteroidResourceFuelOdds",0.75},
-						{"RareAsteroidResourceFuelOdds",0.25},
+						{"RareAsteroidResourceFuelOdds",0.2},
 						{"CommonAsteroidHealth",160},
-						{"LargeAsteroidSpacing",16000},
+						{"LargeAsteroidSpacing",10000},
 						{"LargeAsteroidFadeTime",1.2},
 						{"LargeAsteroidFadeRangeMin",22000},
 						{"LargeAsteroidFadeRangeMax",22000},
 						{"RingAsteroidScale",0.016},
-						{"RingAsteroidSpacing",125},
+						{"RingAsteroidSpacing",70},
 						{"RingAsteroidFadeRangeMin",600},
 						{"RingAsteroidFadeRangeMax",6000},
 						{"AsteroidMaxNumGenerates",120000},
 						{"AsteroidMaxNumGeneratesPulseJump",10000},
-						{"AsteroidSpaceStationAvoidRadius",1500},
-						{"AsteroidAnomalyAvoidRadius",1500},
-						{"AsteroidWarpInAreaAvoidRadius",1500},
+						{"AsteroidSpaceStationAvoidRadius",2000},
+						{"AsteroidAnomalyAvoidRadius",2000},
+						{"AsteroidWarpInAreaAvoidRadius",2000},
 					}
 				},
 				{
@@ -183,6 +185,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"IGNORE",1},
 					},
 				},			
+				{
+					["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
+					["LINE_OFFSET"] = "+4",
+					["INTEGER_TO_FLOAT"] = "FORCE",
+					["VALUE_CHANGE_TABLE"] = {
+						{"IGNORE",0.1},
+					},
+				},	
 			}
 		},
 	--=============================================================================
@@ -201,98 +211,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		},
 	--=============================================================================
-	--More Dead and Weird biomes by Gumsk
+	--More Dead and Weird Biomes by Gumsk
 	--=============================================================================
 		{
 			["MBIN_FILE_SOURCE"] = FileSource3,
 			["EXML_CHANGE_TABLE"] = {
 				{
-					["PRECEDING_KEY_WORDS"] = {"Yellow","BiomeProbability"},
+					["MATH_OPERATION"] = "*",
+					["REPLACE_TYPE"] = "ALL",
 					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",4}, 	--2
-						{"Weird",0},	--0
+						{"Dead",3}, 	--4x normal
 					},
 				},
 				{
-					["PRECEDING_KEY_WORDS"] = {"Yellow","PrimeBiomeProbability"},
+					["MATH_OPERATION"] = "*",
+					["REPLACE_TYPE"] = "ALL",
 					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",1}, 	--0.5
-						{"Weird",0},	--0
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"Green","BiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",4}, 	--2
-						{"Weird",2},	--1
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"Green","PrimeBiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",1}, 	--0.5
-						{"Weird",1},	--0.5
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"Blue","BiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",4}, 	--2
-						{"Weird",4},	--2
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"Blue","PrimeBiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",1}, 	--0.5
-						{"Weird",1},	--0.5
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"Red","BiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",4}, 	--2
-						{"Weird",6},	--3
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"Red","PrimeBiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",1}, 	--0.5
-						{"Weird",1},	--0.5
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"LushYellow","BiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",1}, 	--0.5
-						{"Weird",2},	--1
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"LushYellow","PrimeBiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",1}, 	--0.5
-						{"Weird",1},	--0.5
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"AbandonedYellow","BiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",8}, 	--4
-						{"Weird",2},	--1
-					},
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = {"AbandonedYellow","PrimeBiomeProbability"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",1}, 	--0.5
-						{"Weird",0},	--0
+						{"Weird",2},	--2x normal
 					},
 				},
 			}
 		},
-
 	--=============================================================================
 	--Fewer Pulse Encounters by Gumsk
 	--=============================================================================
@@ -308,21 +247,30 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"PulseEncounterChanceBlue",0.0003}, 		--0.003
 					},
 				},
-				
 	--=============================================================================
 	--Fewer Freighter Battles by Gumsk
 	--=============================================================================
 				{
 					["VALUE_CHANGE_TABLE"] = {
-						{"WarpsBetweenBattles",10}, 				--5
+						{"WarpsBetweenBattles",15}, 				--5
 						{"HoursBetweenBattles",5}, 					--3
 					},
 				},
 			}
 		},
-
 	--=============================================================================
+	--Disable Trade Routes by Gumsk
 	--=============================================================================
+		{
+			["MBIN_FILE_SOURCE"] = FileSource6,
+			["EXML_CHANGE_TABLE"] = {
+				{
+					["VALUE_CHANGE_TABLE"] = {
+						{"DisableTradeRoutes","True"}, 				--False
+					},
+				},
+			}
+		},
 
 	}
 }

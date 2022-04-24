@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "370"
+GameVersion = "388"
 ModVersion = "a"
 ModNameSub = "Lab"
 BaseDescription = "Makes Lab Lamp work without power and improves lighting."
