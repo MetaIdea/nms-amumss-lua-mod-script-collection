@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Installs+Jetpack"
 BaseDescription = "Infinite jetpack and enable restricted technology for alien ships and exocraft"
-GameVersion = "382"
+GameVersion = "387"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 

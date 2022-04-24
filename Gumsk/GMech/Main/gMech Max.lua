@@ -2,8 +2,8 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech"
 ModNameSub = "Max"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "384"
-ModVersion = "c"
+GameVersion = "387"
+ModVersion = "a"
 FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
@@ -49,6 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["EXML_CHANGE_TABLE"]	= {
 				{
 					["SPECIAL_KEY_WORDS"] = {"Anim", "FASTWALK"},
+					["SECTION_ACTIVE"] = {1},
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"Speed", FastWalkSpeed}
@@ -56,6 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 				{
 					["SPECIAL_KEY_WORDS"] = {"Anim", "WALK"},
+					["SECTION_ACTIVE"] = {1},
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"Speed", WalkSpeed}

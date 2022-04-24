@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSentinels"
 ModNameSub = "None"
 BaseDescription = "No Sentinels"
-GameVersion = "382"
+GameVersion = "387"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

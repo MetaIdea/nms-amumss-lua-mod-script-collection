@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Frequency"
 ModNameSub = "Exotic Common"
 BaseDescription = "Changes frequency of ships spawning in the wild"
-GameVersion = "382"
+GameVersion = "387"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 
@@ -26,6 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"PlayerFreighter","0"},
 					{"Royal","100"},
 					{"Alien","0"},
+					{"Sail","0"},
 				},
 			},
 			{
@@ -39,6 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"PlayerFreighter","0"},
 					{"Royal","100"},
 					{"Alien","0"},
+					{"Sail","0"},
 				},
 			},
 			{
@@ -52,6 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"PlayerFreighter","0"},
 					{"Royal","100"},
 					{"Alien","0"},
+					{"Sail","0"},
 				},
 			},
 			-- {

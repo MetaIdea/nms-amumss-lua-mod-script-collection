@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GExos Challenge"
 ModNameSub = "gDamage"
 BaseDescription = "Damage adjustments"
-GameVersion = "382"
+GameVersion = "387"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -125,11 +125,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 30}}}, --default 20
 		
-	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
-	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40}}}, --default 30
+	-- {["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
+	-- ["VALUE_CHANGE_TABLE"] = {	
+		-- {"Damage", 40}}}, --default 30
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
+	["SECTION_ACTIVE"] = {1,2},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 60}}}, --default 50
 		
@@ -158,6 +159,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"Damage", 250}}},
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","LARGEASTEROID"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Damage", 400}}},
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTSHIP"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Damage", 400}}},
 
@@ -240,5 +245,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 15}}}, --default 6
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAID"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 15}}}, --default 4
 
 }}}}}}

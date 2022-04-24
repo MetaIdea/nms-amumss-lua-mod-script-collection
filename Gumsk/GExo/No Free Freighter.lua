@@ -2,7 +2,7 @@ Author = "Exosolar"
 ModName = "GExos Challenge"
 ModNameSub = "Exos No Free Freighter"
 BaseDescription = "No free first freighter"
-GameVersion = "353"
+GameVersion = "385"
 ModVersion = "a"
 
 FreighterPuzzleReplace = [[		<Property value="GcAlienPuzzleOption.xml">
@@ -112,167 +112,79 @@ FreighterExoLoot = [[		<Property value="GcGenericRewardTableEntry.xml">
       </Property>
     </Property>]]
 
-AISpaceShipAdd1 = [[		<Property value="GcAISpaceshipModelData.xml">
-          <Property name="File" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses.xml">
-            <Property name="ShipClass" value="Freighter" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
-            <Property name="AIShipRole" value="Freighter" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass.xml">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property value="GcAISpaceshipModelData.xml">
-          <Property name="File" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses.xml">
-            <Property name="ShipClass" value="Freighter" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
-            <Property name="AIShipRole" value="Freighter" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass.xml">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property value="GcAISpaceshipModelData.xml">
-          <Property name="File" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses.xml">
-            <Property name="ShipClass" value="Freighter" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
-            <Property name="AIShipRole" value="Freighter" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass.xml">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property value="GcAISpaceshipModelData.xml">
-          <Property name="File" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses.xml">
-            <Property name="ShipClass" value="Freighter" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
-            <Property name="AIShipRole" value="Freighter" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass.xml">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>
-        <Property value="GcAISpaceshipModelData.xml">
-          <Property name="File" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses.xml">
-            <Property name="ShipClass" value="Freighter" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
-            <Property name="AIShipRole" value="Freighter" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass.xml">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>]]
-
-AISpaceShipAdd2 = [[		<Property value="GcAISpaceshipModelData.xml">
-          <Property name="File" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses.xml">
-            <Property name="ShipClass" value="Freighter" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
-            <Property name="AIShipRole" value="Freighter" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass.xml">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>]]
-
-AISpaceShipAdd3 = [[		<Property value="GcAISpaceshipModelData.xml">
-          <Property name="File" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN" />
-          <Property name="Class" value="GcSpaceshipClasses.xml">
-            <Property name="ShipClass" value="Freighter" />
-          </Property>
-          <Property name="AIRole" value="GcAISpaceshipRoles.xml">
-            <Property name="AIShipRole" value="Freighter" />
-          </Property>
-          <Property name="FrigateClass" value="GcFrigateClass.xml">
-            <Property name="FrigateClass" value="Combat" />
-          </Property>
-        </Property>]]
-
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
 ["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {
+	["MBIN_CHANGE_TABLE"] = {
 
-	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {
-		{["SPECIAL_KEY_WORDS"] = {"TextAlien","WAR_FREIGHT_LANG_1","Value","FREIGHT_REWARD"},
-			["SECTION_UP"] = 2,
-			["ADD"] = FreighterPuzzleReplace,
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
+		{
+			["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+			["EXML_CHANGE_TABLE"]	= {
+				{
+					["SPECIAL_KEY_WORDS"] = {"TextAlien","WAR_FREIGHT_LANG_1","Value","FREIGHT_REWARD"},
+					["SECTION_UP"] = 2,
+					["ADD"] = FreighterPuzzleReplace,
+					["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				},
+				{
+					["SPECIAL_KEY_WORDS"] = {"TextAlien","TRA_FREIGHT_LANG_1","Value","FREIGHT_REWARD"},
+					["SECTION_UP"] = 2,
+					["ADD"] = FreighterPuzzleReplace,
+					["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				},
+				{
+					["SPECIAL_KEY_WORDS"] = {"TextAlien","EXP_FREIGHT_LANG_1","Value","FREIGHT_REWARD"},
+					["SECTION_UP"] = 2,
+					["ADD"] = FreighterPuzzleReplace,
+					["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				},
+				{
+					["SPECIAL_KEY_WORDS"] = {"Value", "FREIGHT_REWARD"},
+					["SECTION_UP"] = 2,
+					["REMOVE"] = "SECTION",
+					["REPLACE_TYPE"] = "ALL",
+				},
+				{
+					["SPECIAL_KEY_WORDS"] = {"Name","ALL_FREIGHTER_OPT_1","Value","FREIGHTERLOOT"},
+					["SECTION_UP"] = 2,
+					["REPLACE_TYPE"] = "ALL",
+					["VALUE_CHANGE_TABLE"] = {
+						{"Name","ALL_FREIGHTER_OPT_3"},
+					}
+				},
+				{
+					["SPECIAL_KEY_WORDS"] = {"NextInteraction","?FREIGHTER"},
+					["REPLACE_TYPE"] = "ALL",
+					["VALUE_CHANGE_TABLE"] = {
+						{"NextInteraction","?FREIGHTER_ALT_END"},
+					}
+				},
+			}
 		},
-		{["SPECIAL_KEY_WORDS"] = {"TextAlien","TRA_FREIGHT_LANG_1","Value","FREIGHT_REWARD"},
-			["SECTION_UP"] = 2,
-			["ADD"] = FreighterPuzzleReplace,
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
+
+		{
+			["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+			["EXML_CHANGE_TABLE"]	= {
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id","FREIGHT_REWARD"},
+					["ADD"] = FreighterRewardReplace,
+					["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				},
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHT_REWARD","PercentageChance","100"},
+					["SECTION_UP"] = 3,
+					["REMOVE"] = "SECTION",
+				},
+				{
+					["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLOOT"},
+					["ADD"] = FreighterExoLoot,
+					["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				},
+			}
 		},
-		{["SPECIAL_KEY_WORDS"] = {"TextAlien","EXP_FREIGHT_LANG_1","Value","FREIGHT_REWARD"},
-			["SECTION_UP"] = 2,
-			["ADD"] = FreighterPuzzleReplace,
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
-		},
-		{["SPECIAL_KEY_WORDS"] = {"Value", "FREIGHT_REWARD"},
-			["SECTION_UP"] = 2,
-			["REMOVE"] = "SECTION",
-			["REPLACE_TYPE"] = "ALL",
-		},
-		{["SPECIAL_KEY_WORDS"] = {"Name","ALL_FREIGHTER_OPT_1","Value","FREIGHTERLOOT"},
-			["SECTION_UP"] = 2,
-			["REPLACE_TYPE"] = "ALL",
-			["VALUE_CHANGE_TABLE"] = {
-				{"Name","ALL_FREIGHTER_OPT_3"},
-		}},
-		{["SPECIAL_KEY_WORDS"] = {"NextInteraction","?FREIGHTER"},
-			["REPLACE_TYPE"] = "ALL",
-			["VALUE_CHANGE_TABLE"] = {
-				{"NextInteraction","?FREIGHTER_ALT_END"},
-		}},
-	}},
-	
-	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {
-		{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHT_REWARD"},
-			["ADD"] = FreighterRewardReplace,
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
-		},
-		{["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHT_REWARD","PercentageChance","100"},
-			["SECTION_UP"] = 3,
-			["REMOVE"] = "SECTION",
-		},
-		{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLOOT"},
-			["ADD"] = FreighterExoLoot,
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
-		},
-	}},
-	
-	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN",
-	["EXML_CHANGE_TABLE"]	= {
-		{["SPECIAL_KEY_WORDS"] = {"File","MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN"},
-			["ADD"] = AISpaceShipAdd1,
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
-		},
-		{["SPECIAL_KEY_WORDS"] = {"File","MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN"},
-			["LINE_OFFSET"] = "-2",
-			["ADD"] = AISpaceShipAdd2,
-		},
-		{["SPECIAL_KEY_WORDS"] = {"File","MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN"},
-			["ADD"] = AISpaceShipAdd3,
-			["REPLACE_TYPE"] = "ADDAFTERSECTION",
-		},
-	}},
-	
-	
-}}}}
+		
+	}
+}}}

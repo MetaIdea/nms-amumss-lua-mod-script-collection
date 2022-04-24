@@ -1,0 +1,44 @@
+Author = "Gumsk"
+ModName = "Test"
+ModNameSub = "Galaxy Diamond"
+BaseDescription = "Test"
+GameVersion = "384"
+ModVersion = "a"
+FileSource1 = ""
+
+NMS_MOD_DEFINITION_CONTAINER = {
+["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+["MOD_DESCRIPTION"]	= BaseDescription,
+["MOD_AUTHOR"]		= Author,
+["NMS_VERSION"]		= GameVersion,
+["ADD_FILES"] = {
+	{
+		["FILE_DESTINATION"] 		= "TEXTURES\UI\HUD\ICONS\PLAYER\DIAMOND.DDS",
+		["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
+	},
+	{
+		["FILE_DESTINATION"] 		= "TEXTURES\UI\HUD\MENUS\DIAMOND.DDS",
+		["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
+	},
+	{
+		["FILE_DESTINATION"] 		= "TEXTURES\UI\FRONTEND\ICONS\GAMEMODE\DIAMOND.DDS",
+		["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
+	},
+	{
+		["FILE_DESTINATION"] 		= "TEXTURES\UI\FRONTEND\COMPONENTS\FRIGATEFLEET\DIAMOND.DDS",
+		["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
+	},
+	{
+		["FILE_DESTINATION"] 		= "TEXTURES\UI\FRONTEND\COMPONENTS\CHARCUSTOMISE\DIAMOND.DDS",
+		["EXTERNAL_FILE_SOURCE"] 	= "BLANK.DDS",
+	},
+},
+["MODIFICATIONS"]	= {
+{
+	["MBIN_CHANGE_TABLE"] = {
+		{
+
+		}
+	}
+}
+}}

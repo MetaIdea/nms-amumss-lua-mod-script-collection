@@ -1,12 +1,3 @@
-RemoveChildText = [[	<Property name="ChildSpawns" />
-      </Property>
-      <Property name="AttackData" value="AI_HARD" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PIRATE.SKULL.DDS" />
-      </Property>
-      <Property name="Label" value="BOUNTY_MARKER" />
-    </Property>]]
-
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= "___ChristianWidjaya_RealisticSpace.pak",
 ["MOD_DESCRIPTION"]		= "Realistic Space Combat, NPC and players deal same damage",
@@ -21,12 +12,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","StatsType","Ship_Weapons_Guns_Damage"},
 			["SECTION_UP"] = 1,
 			["VALUE_CHANGE_TABLE"] = {
-			{"Bonus","15000"}}},
+			{"Bonus","10000"}}},
 		{ --Rocket Launcher Cooldown Tweak
 		["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","StatsType","Ship_Weapons_Guns_CoolTime"},
 			["SECTION_UP"] = 1,
 			["VALUE_CHANGE_TABLE"] = {
-			{"Bonus","5"}}},
+			{"Bonus","5"}}},	
 	}},
 
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN",
@@ -38,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --SHIPLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","25"}}},
+			{"Damage","10"}}},
 		{ --BOUNTYGUN1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -54,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --BOUNTYLASER1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","25"}}},
+			{"Damage","10"}}},
 		-- { --BOUNTYLASER2
 		-- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
 			-- ["VALUE_CHANGE_TABLE"] = {
@@ -62,8 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --BOUNTYLASER3
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","25"}},
-			["REPLACE_TYPE"] = "ALL"},
+			{"Damage","10"}}},
 		{ --POLICEGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -71,9 +61,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --POLICELASER
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","25"}}},
+			{"Damage","10"}}},
 		{ --SMALLASTEROID
-		["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID"},
+		["SPECIAL_KEY_WOR	DS"] = {"Id","SMALLASTEROID"},
 			["VALUE_CHANGE_TABLE"] = {
 			{"Damage","100"}}},
 		{ --MEDIUMASTEROID
@@ -105,32 +95,267 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Damage","500"}}},
 	}},
-
-	{["MBIN_FILE_SOURCE"]	= "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
-	["EXML_CHANGE_TABLE"]    = {
-        { --Balances enemy speed to match players
+	
+	{["MBIN_FILE_SOURCE"]	= "GCVEHICLEGLOBALS.GLOBAL.MBIN",
+	["EXML_CHANGE_TABLE"]	= {
+        { --fix water avoidance issue
         ["VALUE_CHANGE_TABLE"] = {
-            {"MinSpeed","80"},
-            {"MaxSpeed","250"}},
-        ["REPLACE_TYPE"] = "ALL"},
-		{ --100% freighter spawn chance
-        ["VALUE_CHANGE_TABLE"] = {
-            {"FreighterSpawnRate","100"}}},
-    }},
-
+            {"UnderwaterAvoidance","GcVehicleAvoidanceData.xml"}}},	
+	}},
+	
 	{["MBIN_FILE_SOURCE"]	= "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
-	["EXML_CHANGE_TABLE"]	= {	
-		{ --Nerf Player Ship's Regeneration and Tweaks Spawning
+	["EXML_CHANGE_TABLE"]	= {
+		{ --Nerf Player Ship's Regeneration, Tweaks Spawning, forces avoidance to 0
 		["VALUE_CHANGE_TABLE"] = {
-			{"ShieldRechargeMinHitTime","10"},
-			{"ShieldRechargeRate","1"},
+			{"ShieldRechargeMinHitTime","5"},
+			{"ShieldRechargeRate","2"},
 			{"WarpNexusRotation","0"},
 			{"WarpNexusPitch","0"},
 			{"HitAsteroidDamage","100000"},
-			{"LootAttractDistance","1000"},
-			{"BoostNoAsteroidRadius","1"}}}
+			{"LootAttractDistance","1000"}
+		}},
 	}},
 
+	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
+	["EXML_CHANGE_TABLE"]	= {
+		--OUTLAW and later: uses this MBIN instead of GCAISPACESHIPGLOBALS.MBIN
+		{--Balances NPC ships speed to match player
+        ["VALUE_CHANGE_TABLE"] = {
+            {"MinSpeed","80"},
+            {"MaxSpeed","250"},
+			{"BoostSpeed","250"}},
+			["REPLACE_TYPE"] = "ALL"},
+		--OUTLAW and later: Force specific NPC Shield REGEN
+		{--STANDARD SHIELD
+		["SPECIAL_KEY_WORDS"] = {"Id","STANDARD"},
+		["VALUE_CHANGE_TABLE"] = {
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"RechargeTime","25"},
+			{"RechargeDelayTime","5"}},
+		},
+		{--STRONG SHIELD
+		["SPECIAL_KEY_WORDS"] = {"Id","STRONG"},
+		["VALUE_CHANGE_TABLE"] = {
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"RechargeTime","25"},
+			{"RechargeDelayTime","5"}},
+		},
+		{--FAST SHIELD
+		["SPECIAL_KEY_WORDS"] = {"Id","FAST"},
+		["VALUE_CHANGE_TABLE"] = {
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"RechargeTime","25"},
+			{"RechargeDelayTime","5"}},
+		},
+		{--FAST_STRONG SHIELD
+		["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG"},
+		["VALUE_CHANGE_TABLE"] = {
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"RechargeTime","25"},
+			{"RechargeDelayTime","5"}},
+		},
+		{ --Buffs Photon Cannon RPM to 0.14
+		["VALUE_CHANGE_TABLE"] = {
+			{"GunFireRate","0.14"},
+			{"LaserHealthPoint","10000"}},
+			["REPLACE_TYPE"] = "ALL"},
+		{ --Allows NPC to keep shooting without stopping for a min straight
+		["VALUE_CHANGE_TABLE"] = {
+			{"AttackShootTimeMax","60"},
+			{"AttackMaxTime","60"}},
+			["REPLACE_TYPE"] = "ALL"},
+		{ --Disallow NPC to retreat and just tank the damage
+		["VALUE_CHANGE_TABLE"] = {
+			{"NumHitsBeforeBail","10000"},
+			{"NumHitsBeforeReposition","10000"}},
+			["REPLACE_TYPE"] = "ALL"},
+		{ --NPC reposition logic
+		["VALUE_CHANGE_TABLE"] = {
+			{"AttackShootWaitTime","0"},
+			{"AttackApproachOffset","200"},
+			{"AttackApproachMinRange","100"},
+			{"AttackApproachMaxRange","800"},
+			{"AttackTooCloseRange","50"},
+			{"AttackBoostRange","800"},
+			{"AttackBoostTimeToRange","0"},
+			{"FleeBoost","250"},
+			{"FleeUrgentBoost","350"},
+			{"FleeBrakeTime","1"},
+			{"FleeUrgentBrakeTime","1"},
+			{"FleeRepositionTime","3"},
+			{"FleeRepositionUrgentTime","3"},
+			{"FleeMaxTime","5"},
+			{"TurnMin","1.5"},
+			{"TurnMax","1.5"},
+			{"FleeRange","800"},
+			{"AttackTargetMinRange","100"}},
+			["REPLACE_TYPE"] = "ALL"},
+		{ --PIRATE_FREIGHT Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},		
+		{ --PIRATE_EASY Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{ --PIRATE_MEDIUM Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{ --PIRATE_HARD Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_HARD"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{ --POLICE Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","POLICE"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{ --TRADER Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","TRADER"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{ --TRADER ESCORT Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","TRADER_ESCORT"},
+			["VALUE_CHANGE_TABLE"] = {{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{ --RAIDERS(BUILDING) Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{ --RAIDERS(DOGFIGHT) Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{ --PLAYER_SQUADRON Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","PLAYER_SQUADRON"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{ --PLANET_FLYBY Behaviour
+		["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Reward","PIRAT_LOOT_HARD"},
+			{"RewardCount","10"},
+			{"Health","10000"},
+			{"LevelledExtraHealth","40000"},
+			{"Engine","SPACE_HARD"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+	}},
+	
+	{["MBIN_FILE_SOURCE"]	= "METADATA\PROJECTILES\PROJECTILETABLE.MBIN",
+	["EXML_CHANGE_TABLE"]	= {	
+		--Buffs NPC damage againsts each other, just like player would have done.
+		-- Photon Cannons
+		{ --SQUADRON GUN
+		["SPECIAL_KEY_WORDS"] = {"Id","SQUADGUN"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+		{ --PIRATE RAID GUN
+		["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAIDGUN"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+		{ --AISHIPGUN
+		["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+		{ --TRADERGUN
+		["SPECIAL_KEY_WORDS"] = {"Id","TRADERGUN"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+		{ --POLICEGUN
+		["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+		{ --BOUNTYGUN1
+		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+		{ --BOUNTYGUN2
+		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+		{ --BOUNTYGUN3
+		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+		{ --FREIGHTGUN
+		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTGUN"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
+		{ --COP_FREIGHTGUN
+		["SPECIAL_KEY_WORDS"] = {"Id","COP_FREIGHTGUN"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
+		{ --BASE_TURRET_M
+		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_M"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
+		{ --BASE_TURRET_L
+		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_L"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
+		-- Lasers
+		{ --AI_SHIP 
+		["SPECIAL_KEY_WORDS"] = {"Id","AI_SHIP"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","1500"}}},
+		{--AI_FREIGHTER 
+		["SPECIAL_KEY_WORDS"] = {"Id","AI_FREIGHTER"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+		{--COP_FREIGHTER 
+		["SPECIAL_KEY_WORDS"] = {"Id","COP_FREIGHTER"},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+	}},
+	
 	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {
 		{ --Capital freighters spawns instead of normal ones for motherships, sentinel only.
@@ -260,14 +485,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"x","4"},
 				{"y","4"}}},
-		{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTY3"},
-			["PRECEDING_KEY_WORDS"] = {"ChildSpawns"},
-			["REMOVE"] = "SECTION",
-			},
-		{["SPECIAL_KEY_WORDS"] = {"Id","EASYBOUNTY1"},
-			["LINE_OFFSET"] = "-2",
-			["ADD"] = RemoveChildText,
-			},
 		{ --EASYBOUNTY1 Difficulty
 		["SPECIAL_KEY_WORDS"] = {"Id","EASYBOUNTY1"},
 			["VALUE_CHANGE_TABLE"] = {{"AttackData","AI_HARD"}}},
@@ -349,124 +566,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"x","4"},
 				{"y","4"}}},		
-	}},
-	
-	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {	
-		{ --Buffs Photon Cannon RPM to 0.14
-		["VALUE_CHANGE_TABLE"] = {
-			{"GunFireRate","0.14"},
-			{"LaserHealthPoint","10000"}},
-			["REPLACE_TYPE"] = "ALL"},
-		{ --Allows NPC to keep shooting without stopping for a min straight
-		["VALUE_CHANGE_TABLE"] = {
-			{"AttackShootTimeMax","60"},
-			{"AttackMaxTime","60"}},
-			["REPLACE_TYPE"] = "ALL"},
-		{ --Disallow NPC to retreat and just tank the damage
-		["VALUE_CHANGE_TABLE"] = {
-			{"NumHitsBeforeBail","10000"},
-			{"NumHitsBeforeReposition","10000"}},
-			["REPLACE_TYPE"] = "ALL"},
-		{ --NPC reposition logic
-		["VALUE_CHANGE_TABLE"] = {
-			{"AttackShootWaitTime","0"},
-			{"AttackApproachOffset","200"},
-			{"AttackApproachMinRange","100"},
-			{"AttackApproachMaxRange","800"},
-			{"AttackTooCloseRange","50"},
-			{"AttackBoostRange","800"},
-			{"AttackBoostTimeToRange","0"},
-			{"FleeBoost","250"},
-			{"FleeUrgentBoost","350"},
-			{"FleeBrakeTime","1"},
-			{"FleeUrgentBrakeTime","1"},
-			{"FleeRepositionTime","3"},
-			{"FleeRepositionUrgentTime","3"},
-			{"FleeMaxTime","5"},
-			{"TurnMin","1.5"},
-			{"TurnMax","1.5"},
-			{"FleeRange","800"},
-			{"AttackTargetMinRange","100"}},
-			["REPLACE_TYPE"] = "ALL"},
-		{ --PIRATE_FREIGHT Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","PIRAT_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},			
-		{ --AI_EASY Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","AI_EASY"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","PIRAT_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-		{ --AI_MEDIUM Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","AI_MEDIUM"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","PIRAT_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-		{ --AI_HARD Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","AI_HARD"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","PIRAT_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-		{ --AI_SOLO Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","AI_SOLO"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","PIRAT_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-		{ --PIRATE Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","PIRAT_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-		{ --POLICE Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","POLICE"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","PIRAT_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-		{ --TRADE_EASY Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","TRADE_EASY"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","TRAD_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-		{ --TRADE_MED Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","TRADE_MED"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","TRAD_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-		{ --TRADE_HARD Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","TRADE_HARD"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","TRAD_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-		{ --BOUNTY Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTY"},
-			["VALUE_CHANGE_TABLE"] = {{"Behaviour","HARD"},{"Reward","TRAD_LOOT_HARD"},{"RewardCount","10"},{"Health","30000"}}},
-	}},
-	
-	{["MBIN_FILE_SOURCE"]	= "METADATA\PROJECTILES\PROJECTILETABLE.MBIN",
-	["EXML_CHANGE_TABLE"]	= {	
-		--Buffs NPC damage againsts each other, just like player would have done.
-		-- Photon Cannons
-		{ --AISHIPGUN
-		["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
-		{ --TRADERGUN
-		["SPECIAL_KEY_WORDS"] = {"Id","TRADERGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
-		{ --POLICEGUN
-		["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
-		{ --BOUNTYGUN1
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
-		{ --BOUNTYGUN2
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
-		{ --BOUNTYGUN3
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
-		{ --FREIGHTGUN
-		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
-		{ --COP_FREIGHTGUN
-		["SPECIAL_KEY_WORDS"] = {"Id","COP_FREIGHTGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
-		{ --BASE_TURRET_M
-		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_M"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
-		{ --BASE_TURRET_L
-		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_L"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
-		-- Lasers
-		{ --AI_SHIP 
-		["SPECIAL_KEY_WORDS"] = {"Id","AI_SHIP"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","1500"}}},
-		{--AI_FREIGHTER 
-		["SPECIAL_KEY_WORDS"] = {"Id","AI_FREIGHTER"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
-		{--COP_FREIGHTER 
-		["SPECIAL_KEY_WORDS"] = {"Id","COP_FREIGHTER"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 	}},
 }}}}
