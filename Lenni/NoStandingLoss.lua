@@ -17,18 +17,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Id", "KILLED_CIV"},
 							["REMOVE"] = "SECTION",
 						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Id", "STD_DEC_EXP"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Id", "STD_DEC_TRA"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Id", "STD_DEC_WAR"},
-							["REMOVE"] = "SECTION",
-						},
 					},
 				},
 			}
