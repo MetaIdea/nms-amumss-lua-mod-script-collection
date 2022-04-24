@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"]			= "",
 ["MOD_AUTHOR"]				= "WoodyMontana",
 ["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.53",
+["NMS_VERSION"]				= "3.88",
 ["MODIFICATIONS"] 			= 
 	{
 		{
