@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"]             = "NoSmallFreighters.pak",     --the name of the pak created (if not combined) - REQUIRED
-  ["MOD_DESCRIPTION"]        = "Disables small cargo ships and frigates",         --optional, for reference
+  ["MOD_FILENAME"]             = "NoCargoPods.pak",     --the name of the pak created (if not combined) - REQUIRED
+  ["MOD_DESCRIPTION"]        = "Disables small cargo ships",         --optional, for reference
   ["MOD_AUTHOR"]                = "Lenni",         --optional, for reference
   ["NMS_VERSION"]                = "3.75",     --optional, for reference
   ["MODIFICATIONS"]         =             --REQUIRED SECTION
@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 									{"Filename", ""}
 								},
 						},
-						{
+				--[[	{
 							["PRECEDING_FIRST"]    = "TRUE",
 							["SPECIAL_KEY_WORDS"]    = {"Filename", "MODELS/COMMON/SPACECRAFT/FRIGATES/COMBATFRIGATE.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"SystemSpaceships", "Civilian",},
@@ -71,7 +71,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_FIRST"]    = "TRUE",
 							["SPECIAL_KEY_WORDS"]    = {"Filename", "MODELS/COMMON/SPACECRAFT/FRIGATES/SUPPORTFRIGATE.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"SystemSpaceships", "Civilian",},
-							["REPLACE_TYPE"] = "ALL",							
 							["VALUE_CHANGE_TABLE"] = 
 								{
 									{"Filename", ""}
@@ -86,15 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 									{"Filename", ""}
 								},
                         },
-				--[[	{
-							["PRECEDING_FIRST"]    = "TRUE",
-							["SPECIAL_KEY_WORDS"]    = {"Filename", "MODELS/COMMON/SPACECRAFT/FRIGATES/LIVINGFRIGATE.SCENE.MBIN",},
-							["PRECEDING_KEY_WORDS"] = {"SystemSpaceships", "Civilian",},
-							["VALUE_CHANGE_TABLE"] = 
-								{
-									{"Filename", ""}
-								},
-                        }, ]]--
+						]]--
                     },
 				},
             }
