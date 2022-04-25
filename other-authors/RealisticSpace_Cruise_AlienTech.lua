@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= "___ChristianWidjaya_RealisticSpace_cruise_AlienTech.pak",
 ["MOD_DESCRIPTION"]		= "Realistic Space Combat, NPC and players deal same damage, integrated cruise mode, combined with Gumsk's AlienTech",
 ["MOD_AUTHOR"]			= "ChristianWidjaya","Gumsk","1800PETMEDS",
-["NMS_VERSION"]			= "261",
+["NMS_VERSION"]			= "3.87+",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 	
@@ -77,43 +77,43 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --AISHIPGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","35"}}},
+			{"Damage","50"}}},
 		{ --SHIPLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","10"}}},
+			{"Damage","15"}}},
 		{ --BOUNTYGUN1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","35"}}},
+			{"Damage","50"}}},
 		{ --BOUNTYGUN2
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","35"}}},
+			{"Damage","50"}}},
 		{ --BOUNTYGUN3
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","35"}}},
+			{"Damage","50"}}},
 		{ --BOUNTYLASER1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","10"}}},
+			{"Damage","15"}}},
 		-- { --BOUNTYLASER2
 		-- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
 			-- ["VALUE_CHANGE_TABLE"] = {
-			-- {"Damage","25"}}},
+			-- {"Damage","15"}}},
 		{ --BOUNTYLASER3
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","10"}}},
+			{"Damage","50"}}},
 		{ --POLICEGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","35"}}},
+			{"Damage","50"}}},
 		{ --POLICELASER
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","10"}}},
+			{"Damage","50"}}},
 		{ --SMALLASTEROID
 		["SPECIAL_KEY_WOR	DS"] = {"Id","SMALLASTEROID"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -133,7 +133,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --FREIGHTERLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLASER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","50"}}},
+			{"Damage","75"}}},
 		{ --IMPACTGROUND
 		["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -159,8 +159,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["EXML_CHANGE_TABLE"]	= {
 		{ --Nerf Player Ship's Regeneration, Tweaks Spawning, forces avoidance to 0
 		["VALUE_CHANGE_TABLE"] = {
-			{"ShieldRechargeMinHitTime","5"},
-			{"ShieldRechargeRate","2"},
+			{"ShieldRechargeMinHitTime","10"},
+			{"ShieldRechargeRate","5"},
 			{"WarpNexusRotation","0"},
 			{"WarpNexusPitch","0"},
 			{"BoostNoAsteroidRadius","0"},
@@ -306,34 +306,34 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{--STANDARD SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","STANDARD"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
-			{"RechargeTime","25"},
-			{"RechargeDelayTime","5"}},
+			{"Health","30000"},
+			{"LevelledExtraHealth","20000"},
+			{"RechargeTime","20"},
+			{"RechargeDelayTime","10"}},
 		},
 		{--STRONG SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","STRONG"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
-			{"RechargeTime","25"},
-			{"RechargeDelayTime","5"}},
+			{"Health","30000"},
+			{"LevelledExtraHealth","20000"},
+			{"RechargeTime","20"},
+			{"RechargeDelayTime","10"}},
 		},
 		{--FAST SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","FAST"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
-			{"RechargeTime","25"},
-			{"RechargeDelayTime","5"}},
+			{"Health","30000"},
+			{"LevelledExtraHealth","20000"},
+			{"RechargeTime","20"},
+			{"RechargeDelayTime","10"}},
 		},
 		{--FAST_STRONG SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
-			{"RechargeTime","25"},
-			{"RechargeDelayTime","5"}},
+			{"Health","30000"},
+			{"LevelledExtraHealth","20000"},
+			{"RechargeTime","20"},
+			{"RechargeDelayTime","10"}},
 		},
 		{ --Buffs Photon Cannon RPM to 0.14
 		["VALUE_CHANGE_TABLE"] = {
@@ -345,7 +345,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"AttackShootTimeMax","60"},
 			{"AttackMaxTime","60"}},
 			["REPLACE_TYPE"] = "ALL"},
-		{ --Disallow NPC to retreat and just tank the damage
+		{ --Disallow NPC to retreat and just tank the damage until certain value
 		["VALUE_CHANGE_TABLE"] = {
 			{"NumHitsBeforeBail","10000"},
 			{"NumHitsBeforeReposition","10000"}},
@@ -376,8 +376,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},		
@@ -386,8 +386,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
@@ -396,8 +396,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
@@ -406,8 +406,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
@@ -416,8 +416,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
@@ -426,8 +426,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
@@ -435,8 +435,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["SPECIAL_KEY_WORDS"] = {"Id","TRADER_ESCORT"},
 			["VALUE_CHANGE_TABLE"] = {{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
@@ -445,8 +445,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
@@ -455,8 +455,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
@@ -465,8 +465,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
 		{ --PLANET_FLYBY Behaviour
@@ -474,8 +474,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
-			{"Health","10000"},
-			{"LevelledExtraHealth","40000"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
@@ -511,13 +511,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
 		{ --FREIGHTGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
 		{ --COP_FREIGHTGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","COP_FREIGHTGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
 		{ --BASE_TURRET_M
 		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_M"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
 		{ --BASE_TURRET_L
 		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_L"},
 			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
@@ -527,10 +527,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","1500"}}},
 		{--AI_FREIGHTER 
 		["SPECIAL_KEY_WORDS"] = {"Id","AI_FREIGHTER"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","7500"}}},
 		{--COP_FREIGHTER 
 		["SPECIAL_KEY_WORDS"] = {"Id","COP_FREIGHTER"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","7500"}}},
 	}},
 	
 	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
