@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_v2.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_v2.3.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with trevix/Babscoole code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -1173,7 +1173,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"MaxRegionRadius","5",}, --line 1007
-							["LINE_OFFSET"] = "14",			--v2.2: NEWCROSSGRASS: coverage: 0.16, flatdensity: 0.4, maxangle: 100
+							["LINE_OFFSET"] = "14",			--v2.3: NEWCROSSGRASS: changed ALL: *flatdensity to loddistances*. MaxAngle: 100
 							["VALUE_CHANGE_TABLE"] 	=       --"MEDIUIMGLOWPLANT" is mispelled in source
 							{								--changed both grass = maxscale 1.5 from 1.3, shearwindstrength 0.25 from 0.75
 								{"IGNORE",	"IGNORE",}      --changed maxangle, glow: 85, crystal: 80 & grass: 180, & minheight and maxheight for all
@@ -1591,10 +1591,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.16" />
-          <Property name="FlatDensity" value="0.4" />
+          <Property name="Coverage" value="0.12" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
+          <Property name="SlopeMultiplier" value="2.1" />
           <Property name="MaxRegionRadius" value="9999" />
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
@@ -1612,39 +1612,39 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.7" />
-            <Property name="SlopeDensity" value="0.7" />
-            <Property name="SlopeMultiplier" value="2.8" />
-            <Property name="MaxRegionRadius" value="5" />
+            <Property name="FlatDensity" value="0.4" />
+            <Property name="SlopeDensity" value="0.4" />
+            <Property name="SlopeMultiplier" value="2.1" />
+            <Property name="MaxRegionRadius" value="9999" />
             <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="35" />
-            <Property name="FadeOutEndDistance" value="45" />
-            <Property name="FadeOutOffsetDistance" value="5" />
+            <Property name="FadeOutStartDistance" value="9999" />
+            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="8" />
-              <Property value="15" />
-              <Property value="25" />
-              <Property value="500" />
+              <Property value="0" />
+              <Property value="0" />
+              <Property value="0" />
+              <Property value="0" />
             </Property>
           </Property>
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.7" />
-            <Property name="SlopeDensity" value="0.7" />
-            <Property name="SlopeMultiplier" value="2.5" />
-            <Property name="MaxRegionRadius" value="3" />
+            <Property name="FlatDensity" value="0.4" />
+            <Property name="SlopeDensity" value="0.4" />
+            <Property name="SlopeMultiplier" value="2.1" />
+            <Property name="MaxRegionRadius" value="9999" />
             <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="FadeOutStartDistance" value="9999" />
+            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="8" />
-              <Property value="15" />
-              <Property value="25" />
-              <Property value="500" />
+              <Property value="0" />
+              <Property value="0" />
+              <Property value="0" />
+              <Property value="0" />
             </Property>
           </Property>
         </Property>

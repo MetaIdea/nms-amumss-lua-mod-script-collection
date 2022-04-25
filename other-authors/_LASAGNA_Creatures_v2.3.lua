@@ -7,22 +7,27 @@ GROUND_AIR_SMALLER_MAX_SCALE_SIZE = 8
 GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE = 12 --moon-sized creatures if too big --v1.9: 18 from 25
 PROTODIGGER_MAX_SCALE_SIZE = 3 --Octopus legs
 
+HERD_FALSE = "False" --v2.3: Removes herds for 8x or more creatures
+
 GLOBAL_MAX_CREATURE_SIZE = 12 --global variable, overrides many creatures i.e. ground --v1.94: 18 from 25, v2.0: 12 from 18
 
 --not multiplied, replaces
 CREATURE_MINCOUNT = 1 --minimum spawn count per species, float value causes error
-CREATURE_MAXCOUNT = 3 --max "  " --v2.0: added this to prevent huge groups, which caused lag
-CREATURE_MAXCOUNT_LARGE = 2 --larger creatures
+CREATURE_MAXCOUNT = 1 --max "  " --v2.0: added this to prevent huge groups, which caused lag
+CREATURE_MAXCOUNT_LARGE = 1 --larger creatures
 CREATURE_MAXCOUNT_SMALL = 10
 
-MOVE_SPEED_SCALE = 0.8 --movement speed --added in v1.94
+--MOVE_SPEED_SCALE = 0.8 --movement speed --v2.3: commented out, this stops some creatures from moving completely
+ANIM_SPEED_SCALE_MULTIPLIER = 0.7
+MIN_SPEED_SCALE_MULTIPLIER = 0.5
+MAX_SPEED_SCALE_MULTIPLIER = 0.7
 
 -------------------------------
 SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**This line is code by InsaneRuffles**
 -------------------------------
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Creatures_v2.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Creatures_v2.3.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -202,6 +207,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","CRAB"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","BIRD"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -216,6 +228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxCount",				CREATURE_MAXCOUNT },
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -233,6 +246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxCount",				CREATURE_MAXCOUNT_LARGE },
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -250,6 +264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxCount",				CREATURE_MAXCOUNT_LARGE },
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -267,6 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxCount",				CREATURE_MAXCOUNT },
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -280,6 +296,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SMALLBIRD"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","LARGEBUTTERFLY"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -294,6 +317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxCount",				CREATURE_MAXCOUNT },
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -311,6 +335,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxCount",				CREATURE_MAXCOUNT_LARGE },
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -324,6 +349,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","ANTELOPE"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -331,6 +363,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -344,6 +383,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","TRICERATOPS"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","RODENT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -351,6 +397,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","RODENT"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -364,6 +417,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","MOLE"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","COW"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -371,6 +431,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","COW"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -384,6 +451,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","CAT"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","BONECAT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -391,6 +465,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","BONECAT"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -404,6 +485,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","STRIDER"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","TREX"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -411,6 +499,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","TREX"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -424,6 +519,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","TWOLEGANTELOPE"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -431,6 +533,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -444,6 +553,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","GRUNT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -451,6 +567,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","GRUNT"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -464,6 +587,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","BLOB"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","SPIDER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -471,6 +601,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SPIDER"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -484,6 +621,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","PROTOROLLER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -494,6 +638,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","PROTOROLLER"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -507,6 +658,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["SPECIAL_KEY_WORDS"] = {"Id","PROTOFLYER"},
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
+								{ "Herd", 					HERD_FALSE },
 								{ "MaxCount",				CREATURE_MAXCOUNT },
 							}
 						},
@@ -521,6 +673,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","PROTODIGGER"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","PLOUGH"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -531,6 +690,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","PLOUGH"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","DRILL"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -544,6 +710,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["SPECIAL_KEY_WORDS"] = {"Id","DRILL"},
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
+								{ "Herd", 					HERD_FALSE },
 								{ "MaxCount",				CREATURE_MAXCOUNT },
 							}
 						},
@@ -558,6 +725,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDROLL"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDFLOAT"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -568,6 +742,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDFLOAT"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDCRYSTAL"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -575,6 +756,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDCRYSTAL"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -591,6 +779,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["SPECIAL_KEY_WORDS"] = {"Id","WEIRDBUTTERFLY"},
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
+								{ "Herd", 					HERD_FALSE },
 								{ "MaxCount",				CREATURE_MAXCOUNT },
 							}
 						},
@@ -605,6 +794,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","FIEND"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -612,6 +808,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLER"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						{
@@ -625,6 +828,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","SLUG"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","MINIFIEND"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -635,6 +845,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+						["SPECIAL_KEY_WORDS"] = {"Id","MINIFIEND"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
+							}
+						},
+						{
 						["SPECIAL_KEY_WORDS"] = {"Id","FLOATER"},
 						["MATH_OPERATION"] 		= "*",
 						["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -648,6 +865,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["SPECIAL_KEY_WORDS"] = {"Id","FLOATER"},
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
+								{ "Herd", 					HERD_FALSE },
 								{ "MaxCount",				CREATURE_MAXCOUNT_SMALL },
 							}
 						},
@@ -665,6 +883,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE"},
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
+								{ "Herd", 					HERD_FALSE },
 								{ "MaxCount",				CREATURE_MAXCOUNT_SMALL },
 							}
 						},
@@ -676,6 +895,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{ "MaxScale", 				GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE },
+							}
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Id","ROCKCREATURE"},
+						["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{ "Herd", 					HERD_FALSE },
 							}
 						},
 						-- {
@@ -700,16 +926,29 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] = {"Anim","RUN"},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MoveSpeedScale",	 MOVE_SPEED_SCALE },
+								{"AnimSpeed",			ANIM_SPEED_SCALE_MULTIPLIER },
+								{"MinSpeedScale",		MIN_SPEED_SCALE_MULTIPLIER },
+								{"MaxSpeedScale",		MAX_SPEED_SCALE_MULTIPLIER },
 							}
 						},
+						-- { --v2.3: commented out, stops some creature from moving completely
+							-- ["PRECEDING_KEY_WORDS"] = "",
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["VALUE_MATCH"] 		= "",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"MoveSpeedScale",	 MOVE_SPEED_SCALE },
+							-- }
+						-- },
 					}
 				},-------------------------------------------------------------------------------------------------------------------
 				{-----------Code originally by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)---------
