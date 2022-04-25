@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= "___ChristianWidjaya_CruiseModeStandalone.pak",
 ["MOD_DESCRIPTION"]		= "Standalone CruiseMode,taken from https://www.nexusmods.com/nomanssky/mods/1608 , DIY: Do It Yourself. Compile with AMUMSS, and merge conflicts yourself.",
 ["MOD_AUTHOR"]			= "ChristianWidjaya",
-["NMS_VERSION"]			= "261",
+["NMS_VERSION"]			= "3.87+",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 

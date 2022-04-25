@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= "___ChristianWidjaya_RealisticSpace_GameplayGlobal_Addon.pak",
 ["MOD_DESCRIPTION"]		= "Edit spawns and a few quality changes",
 ["MOD_AUTHOR"]			= "ChristianWidjaya",
-["NMS_VERSION"]			= "261",
+["NMS_VERSION"]			= "3.87+",
 ["MODIFICATIONS"]		= {{
 ["MBIN_CHANGE_TABLE"]	= {
 
