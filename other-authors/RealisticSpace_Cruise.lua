@@ -77,7 +77,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --AISHIPGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","50"}}},
+			{"Damage","30"}}},
 		{ --SHIPLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -85,15 +85,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --BOUNTYGUN1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","50"}}},
+			{"Damage","30"}}},
 		{ --BOUNTYGUN2
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","50"}}},
+			{"Damage","30"}}},
 		{ --BOUNTYGUN3
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","50"}}},
+			{"Damage","30"}}},
 		{ --BOUNTYLASER1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -105,15 +105,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --BOUNTYLASER3
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","50"}}},
+			{"Damage","30"}}},
 		{ --POLICEGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","50"}}},
+			{"Damage","30"}}},
 		{ --POLICELASER
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","50"}}},
+			{"Damage","15"}}},
 		{ --SMALLASTEROID
 		["SPECIAL_KEY_WOR	DS"] = {"Id","SMALLASTEROID"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -129,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --FREIGHTERGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERGUN"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","250"}}},
+			{"Damage","150"}}},
 		{ --FREIGHTERLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLASER"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -306,7 +306,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{--STANDARD SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","STANDARD"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","30000"},
+			{"Health","20000"},
 			{"LevelledExtraHealth","20000"},
 			{"RechargeTime","20"},
 			{"RechargeDelayTime","10"}},
@@ -314,7 +314,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{--STRONG SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","STRONG"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","30000"},
+			{"Health","20000"},
 			{"LevelledExtraHealth","20000"},
 			{"RechargeTime","20"},
 			{"RechargeDelayTime","10"}},
@@ -322,7 +322,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{--FAST SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","FAST"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","30000"},
+			{"Health","20000"},
 			{"LevelledExtraHealth","20000"},
 			{"RechargeTime","20"},
 			{"RechargeDelayTime","10"}},
@@ -330,7 +330,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{--FAST_STRONG SHIELD
 		["SPECIAL_KEY_WORDS"] = {"Id","FAST_STRONG"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"Health","30000"},
+			{"Health","20000"},
 			{"LevelledExtraHealth","20000"},
 			{"RechargeTime","20"},
 			{"RechargeDelayTime","10"}},
@@ -487,40 +487,40 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		-- Photon Cannons
 		{ --SQUADRON GUN
 		["SPECIAL_KEY_WORDS"] = {"Id","SQUADGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","3000"}}},
 		{ --PIRATE RAID GUN
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAIDGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","3000"}}},
 		{ --AISHIPGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","3000"}}},
 		{ --TRADERGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","TRADERGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","3000"}}},
 		{ --POLICEGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","3000"}}},
 		{ --BOUNTYGUN1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","3000"}}},
 		{ --BOUNTYGUN2
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","3000"}}},
 		{ --BOUNTYGUN3
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","5000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","3000"}}},
 		{ --FREIGHTGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
 		{ --COP_FREIGHTGUN
 		["SPECIAL_KEY_WORDS"] = {"Id","COP_FREIGHTGUN"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
 		{ --BASE_TURRET_M
 		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_M"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
 		{ --BASE_TURRET_L
 		["SPECIAL_KEY_WORDS"] = {"Id","BASE_TURRET_L"},
-			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","25000"}}},
+			["VALUE_CHANGE_TABLE"] = {{"DefaultDamage","15000"}}},
 		-- Lasers
 		{ --AI_SHIP 
 		["SPECIAL_KEY_WORDS"] = {"Id","AI_SHIP"},
