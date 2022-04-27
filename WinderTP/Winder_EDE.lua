@@ -20,13 +20,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"JetpackUnderwaterFillRate",			"4"		},	
 								{"UnderwaterMaxJetpackEscapeSpeed",		"16"	},	
 								{"UnderwaterJetpackEscapeForce",		"35"	},	
-								{"FreeJetpackRange",					"5"		},	
+								{"FreeJetpackRange",					"8"		},	
+								{"FreeJetpackRangePrime",				"8"		},	
+								{"FreeJetpackRangeNonTerrain",			"8"		},	
+								{"MeleeBoostAirForce",					"7"		},	
+								{"MeleeToAirBoostInitialImpulse",		"12"	},	
+								{"JetpackDrainHorizontalFactor",		"1"		},	
 								{"RocketBootsImpulse",					"6.5"	},	
-								{"RocketBootsBoostForce",				"75"	},	--Amount of momentum
-								{"RocketBootsDriftForce",				"45"	},	--Amount of angular momentum
-								{"RocketBootsForceDuration",			"0.6"	},	
-								{"RocketBootsMinDesiredHeight",			"8"		},	
-								{"RocketBootsMaxDesiredHeight",			"12"	},	
+								{"RocketBootsBoostForce",				"85"	},	--Amount of momentum
+								{"RocketBootsDriftForce",				"50"	},	--Amount of angular momentum
+								{"RocketBootsForceDuration",			"0.65"	},	
+								{"RocketBootsMinDesiredHeight",			"10"	},	
+								{"RocketBootsMaxDesiredHeight",			"14"	},	
 								{"RocketBootsHeightAdjustUpStrength",	"0.65"	},	
 								{"RocketBootsHeightAdjustDownStrength",	"0.1"	},	
 								{"RocketBootsBoostTankDrainSpeed",		"2"		},		
@@ -34,11 +39,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"RocketBootsZigZagForceDuration",		"0.8"	},	
 								{"RocketBootsMaxSpeed",					"60"	},	
 								{"RocketBootsDriftDownwardForce",		"0.2"	},	
+								{"JetpackForce",						"48"	},	
+								{"JetpackBrake",						"3.3"	},	
+								{"JetpackMaxSpeed",						"12"	},	
+								{"JetpackMaxUpSpeed",					"45"	},	
+								{"JetpackUpForce",						"45"	},	
+								{"SpaceJetpackForce",					"55"	},	
+								{"SpaceJetpackUpForce",					"45"	},	
+								{"SpaceJetpackMaxSpeed",				"17"	},	
+								{"JetpackIgnitionForce",				"95"	},	
+								{"JetpackIgnitionTime",					"0.75"	},	
+								-- {"JetpackMinIgnitionTime",				"0.45"	},	
 								{"JetpackFillRate",						"4.5"	},	
 								{"JetpackFillRateHardMode",				"1.5"	},	
 								{"JetpackFillRateMidair",				"3.5"	},	
-								{"SpaceJetpackDrainRate",				"0.15"	},	
+								{"SpaceJetpackDrainRate",				"0.025"	},	
 								{"AbandonedFreighterRechargeMod",		"1"		},	
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "JetpackTankTimes",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"IGNORE",	"3" }
 							}
 						},
 					},
