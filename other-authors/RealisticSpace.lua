@@ -18,34 +18,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SECTION_UP"] = 1,
 			["VALUE_CHANGE_TABLE"] = {
 			{"Bonus","5"}}},
-        { --Add Rocket Launcher
-        ["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","Category","GcTechnologyCategory.xml"},
-            ["VALUE_CHANGE_TABLE"] = {
-            {"TechnologyCategory","AllShips"}}},
 	}},
 
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {		
-		{ --AISHIPGUN
-		["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
 		{ --SHIPLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 			["VALUE_CHANGE_TABLE"] = {
 			{"Damage","15"}}},
-		{ --BOUNTYGUN1
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
-		{ --BOUNTYGUN2
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
-		{ --BOUNTYGUN3
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
 		{ --BOUNTYLASER1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -58,10 +38,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 			["VALUE_CHANGE_TABLE"] = {
 			{"Damage","15"}}},
-		{ --POLICEGUN
-		["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
 		{ --POLICELASER
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -89,22 +65,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --IMPACTGROUND
 		["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","100"}}},
+			{"Damage","300"}}},
 		{ --IMPACTINSTANCE
 		["SPECIAL_KEY_WORDS"] = {"Id","IMPACTINSTANCE"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","100"}}},
+			{"Damage","300"}}},
 		{ --MPSHIPROCKET (rocket from other players, double damage now)
 		["SPECIAL_KEY_WORDS"] = {"Id","MPSHIPROCKET"},
 			["VALUE_CHANGE_TABLE"] = {
 			{"Damage","500"}}},
-	}},
-	
-	{["MBIN_FILE_SOURCE"]	= "GCVEHICLEGLOBALS.GLOBAL.MBIN",
-	["EXML_CHANGE_TABLE"]	= {
-        { --fix water avoidance issue
-        ["VALUE_CHANGE_TABLE"] = {
-            {"UnderwaterAvoidance","GcVehicleAvoidanceData.xml"}}},	
 	}},
 	
 	{["MBIN_FILE_SOURCE"]	= "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
@@ -157,17 +126,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{ --Buffs Photon Cannon RPM to 0.14
 		["VALUE_CHANGE_TABLE"] = {
-			{"GunFireRate","0.14"},
-			{"LaserHealthPoint","10000"}},
+			{"GunFireRate","0.14"}},
 			["REPLACE_TYPE"] = "ALL"},
-		{ --Allows NPC to keep shooting without stopping for a min straight
+		{ --Allows NPC to keep shooting without stopping for a min straight and allow them to use laser at full hp.
 		["VALUE_CHANGE_TABLE"] = {
 			{"AttackShootTimeMax","60"},
-			{"AttackMaxTime","60"}},
+			{"AttackMaxTime","60"},
+			{"LaserHealthPoint","1000"}},
+			["REPLACE_TYPE"] = "ALL"},
+		{--Forces Raid Pirates not to use lasers when on planet
+		["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
+		["VALUE_CHANGE_TABLE"]={
+			{"LaserHealthPoint","0"}},
 			["REPLACE_TYPE"] = "ALL"},
 		{ --Disallow NPC to retreat and just tank the damage until certain value
 		["VALUE_CHANGE_TABLE"] = {
-			{"NumHitsBeforeBail","10000"},
+			{"NumHitsBeforeBail","30000"},
 			{"NumHitsBeforeReposition","10000"}},
 			["REPLACE_TYPE"] = "ALL"},
 		{ --NPC reposition logic

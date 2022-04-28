@@ -17,83 +17,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","StatsType","Ship_Weapons_Guns_CoolTime"},
 			["SECTION_UP"] = 1,
 			["VALUE_CHANGE_TABLE"] = {
-			{"Bonus","5"}}},
-        { --Add Rocket Launcher
-        ["SPECIAL_KEY_WORDS"] = {"ID","SHIPROCKETS","Category","GcTechnologyCategory.xml"},
-            ["VALUE_CHANGE_TABLE"] = {
-            {"TechnologyCategory","AllShips"}}},
-		{ --Add Economy Scanner
-		["SPECIAL_KEY_WORDS"] = {"ID","SHIPSCAN_ECON","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Conflict Scanner
-		["SPECIAL_KEY_WORDS"] = {"ID","SHIPSCAN_COMBAT","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Emergency Warp
-		["SPECIAL_KEY_WORDS"] = {"ID","UT_QUICKWARP","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Teleport Receiver
-		["SPECIAL_KEY_WORDS"] = {"ID","SHIP_TELEPORT","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Rockets Upgrade
-		["SPECIAL_KEY_WORDS"] = {"ID","UT_ROCKETS","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Photonix Core
-		["SPECIAL_KEY_WORDS"] = {"ID","PHOTONIX_CORE","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Ship Shotgun
-		["SPECIAL_KEY_WORDS"] = {"ID","SHIPSHOTGUN","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Ship Shotgun Upgrade
-		["SPECIAL_KEY_WORDS"] = {"ID","T_SHIPSHOT","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Ship Shotgun Upgrade
-		["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPSHOT","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Ship Minigun
-		["SPECIAL_KEY_WORDS"] = {"ID","SHIPMINIGUN","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Ship Minigun Upgrade
-		["SPECIAL_KEY_WORDS"] = {"ID","T_SHIPMINI","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Ship Minigun Upgrade
-		["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPMINI","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Ship Infra-Knife
-		["SPECIAL_KEY_WORDS"] = {"ID","SHIPPLASMA","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Ship Infra-Knife Upgrade
-		["SPECIAL_KEY_WORDS"] = {"ID","T_SHIPBLOB","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Ship Infra-Knife Upgrade
-		["SPECIAL_KEY_WORDS"] = {"ID","UT_SHIPBLOB","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllShips"}}},
-		{ --Exocraft combined hazard protection
-		["SPECIAL_KEY_WORDS"] = {"ID","MECH_PROT","Category","GcTechnologyCategory.xml"},
-			["VALUE_CHANGE_TABLE"] = {{"TechnologyCategory","AllVehicles"}}},		
+			{"Bonus","5"}}},		
 	}},
 
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {		
-		{ --AISHIPGUN
-		["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
 		{ --SHIPLASER
 		["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 			["VALUE_CHANGE_TABLE"] = {
 			{"Damage","15"}}},
-		{ --BOUNTYGUN1
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
-		{ --BOUNTYGUN2
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
-		{ --BOUNTYGUN3
-		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
 		{ --BOUNTYLASER1
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -105,11 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --BOUNTYLASER3
 		["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
-		{ --POLICEGUN
-		["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","30"}}},
+			{"Damage","15"}}},
 		{ --POLICELASER
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -137,11 +65,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --IMPACTGROUND
 		["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","100"}}},
+			{"Damage","300"}}},
 		{ --IMPACTINSTANCE
 		["SPECIAL_KEY_WORDS"] = {"Id","IMPACTINSTANCE"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Damage","100"}}},
+			{"Damage","300"}}},
 		{ --MPSHIPROCKET (rocket from other players, double damage now)
 		["SPECIAL_KEY_WORDS"] = {"Id","MPSHIPROCKET"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -293,7 +221,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"BoostMaxSpeed","250"}}},
 	}},
 
-	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
+{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SPACE\AISPACESHIPATTACKDATATABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {
 		--OUTLAW and later: uses this MBIN instead of GCAISPACESHIPGLOBALS.MBIN
 		{--Balances NPC ships speed to match player
@@ -337,17 +265,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{ --Buffs Photon Cannon RPM to 0.14
 		["VALUE_CHANGE_TABLE"] = {
-			{"GunFireRate","0.14"},
-			{"LaserHealthPoint","10000"}},
+			{"GunFireRate","0.14"}},
 			["REPLACE_TYPE"] = "ALL"},
-		{ --Allows NPC to keep shooting without stopping for a min straight
+		{ --Allows NPC to keep shooting without stopping for a min straight and allow them to use laser at full hp.
 		["VALUE_CHANGE_TABLE"] = {
 			{"AttackShootTimeMax","60"},
-			{"AttackMaxTime","60"}},
+			{"AttackMaxTime","60"},
+			{"LaserHealthPoint","1000"}},
+			["REPLACE_TYPE"] = "ALL"},
+		{--Forces Raid Pirates not to use lasers when on planet
+		["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
+		["VALUE_CHANGE_TABLE"]={
+			{"LaserHealthPoint","0"}},
 			["REPLACE_TYPE"] = "ALL"},
 		{ --Disallow NPC to retreat and just tank the damage until certain value
 		["VALUE_CHANGE_TABLE"] = {
-			{"NumHitsBeforeBail","10000"},
+			{"NumHitsBeforeBail","30000"},
 			{"NumHitsBeforeReposition","10000"}},
 			["REPLACE_TYPE"] = "ALL"},
 		{ --NPC reposition logic
