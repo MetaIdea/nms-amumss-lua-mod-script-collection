@@ -33,7 +33,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 								["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_HeatTime"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",  "999999"}
+								{"Bonus",  "999999"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"ID","SHIPROCKETS"},
+								["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Range"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",  "10000"}, -- original 5000
 							}
 						},
 						{
@@ -42,6 +50,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",  "999999"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"ID","SHIPGUN1"},
+								["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Range"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",  "3000"}, -- original 1500
 							}
 						},
 						{
@@ -61,6 +77,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"]  = {"ID","SHIPSHOTGUN"},
+								["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Range"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",  "1000"}, -- original 500
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"]  = {"ID","SHIPMINIGUN"},
 								["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_HeatTime"},
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -69,11 +93,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"]  = {"ID","SHIPMINIGUN"},
+								["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Range"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",  "4400"}, -- original 2200
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"]  = {"ID","SHIPPLASMA"},
 								["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_HeatTime"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",  "999999"} 
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"ID","SHIPPLASMA"},
+								["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Range"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",  "2500"}, -- original 1250
 							}
 						},
 						{
@@ -90,6 +130,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",  "999999"} 
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"ID","SHIPGUN_ALIEN"},
+								["PRECEDING_KEY_WORDS"] = {"Ship_Weapons_Guns_Range"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",  "3000"}, -- original 1500
 							}
 						}
 					},
