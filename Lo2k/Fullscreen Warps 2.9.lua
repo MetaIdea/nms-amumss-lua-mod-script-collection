@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Fullscreen Warps 2.8.pak", 
+["MOD_FILENAME"] 			= "Fullscreen Warps 2.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.87",
+["NMS_VERSION"]				= "3.88",
 ["MOD_DESCRIPTION"]			= "This mods removes ship from warp sequences",
 ["MODIFICATIONS"] 			= 
 	{
@@ -21,8 +21,8 @@ NMS_MOD_DEFINITION_CONTAINER =
     							{"OffsetZFrequency_2", "0"},
     							{"OffsetZPhase_1", "0"},
     							{"OffsetZPhase_2", "0"},
-    							{"OffsetZStartBias", "-12"},
-    							{"OffsetZBias", "-12"},
+    							{"OffsetZStartBias", "-18"},
+    							{"OffsetZBias", "-18"},
     							{"OffsetZRange", "0"},
     							{"OffsetYFrequency_1", "0"},
     							{"OffsetYFrequency_2", "0"},
