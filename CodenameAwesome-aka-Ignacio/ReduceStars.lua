@@ -1,8 +1,8 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "DoubleStars.pak",    
-  ["MOD_DESCRIPTION"]		= "Doubles the amount of stars in the universe",        
+  ["MOD_FILENAME"] 			= "ReduceStars.pak",    
+  ["MOD_DESCRIPTION"]		= "Reduces the amount of stars in the universe by double",        
   ["MOD_AUTHOR"]				= "CodenameAwesome", 
   ["LUA_AUTHOR"]				= "Striker0420",       
   ["NMS_VERSION"]				= "3.88",    
@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["MATH_OPERATION"] = "/",
+							["MATH_OPERATION"] = "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
