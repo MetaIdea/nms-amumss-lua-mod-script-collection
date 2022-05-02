@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_v2.3.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_v2.4.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with trevix/Babscoole code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -29,9 +29,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Objects", "SelectableObjects" },
 							["LINE_OFFSET"] = "-2",
 							["VALUE_CHANGE_TABLE"] 	=		--v2.2: doubled all grass loddistances, *(multiply)0.5 to (just newcrossgrass): MaxRegionRadius,MaxImposterRadius, FadeOutStartDistance, FadeOutEndDistance
-							{								--hqtreeref- maxscale: 3 from 3.2, maxscaley: 1.1 from 1
+							{								--hqtreeref- maxscale: 5 from 3.2, maxscaley: 1.2 from 1
 								{"IGNORE",	"IGNORE",}      --changed minheight, maxheight, and maxangle, [if grass 0.75:] grass shearwindstrength 0.25 from 0.75, buttercup: .03 from .2
-							}, 		                        --changed grass = maxscale 1.38 from 0.6 for first two, newcrossgrass: 2.99 from 1.3, buttercup: 2.76 from 1.2
+							}, 		                        --changed grass = maxscale 2.2 from 0.6 for first two, newcrossgrass: 4 from 1.3, buttercup: 3.3 from 1.2
 							["ADD"] = 						--5 new objects (1 tree, 3 grass, 1 flower), all from lushobjectsfull.exml
 [[
       <Property value="GcObjectSpawnData.xml">
@@ -174,8 +174,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="False" />
         <Property name="MinScale" value="1" />
-        <Property name="MaxScale" value="3" />
-        <Property name="MinScaleY" value="1.1" />
+        <Property name="MaxScale" value="5" />
+        <Property name="MinScaleY" value="1.2" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
         <Property name="PatchEdgeScaling" value="0" />
@@ -306,7 +306,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
         <Property name="MinScale" value="0.5" />
-        <Property name="MaxScale" value="1.38" />
+        <Property name="MaxScale" value="2.2" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
@@ -438,7 +438,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
         <Property name="MinScale" value="0.5" />
-        <Property name="MaxScale" value="1.38" />
+        <Property name="MaxScale" value="2.2" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
@@ -570,7 +570,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
         <Property name="MinScale" value="0.75" />
-        <Property name="MaxScale" value="2.99" />
+        <Property name="MaxScale" value="4" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
@@ -681,7 +681,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
         <Property name="MinScale" value="0.9" />
-        <Property name="MaxScale" value="2.76" />
+        <Property name="MaxScale" value="3.3" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
@@ -1592,9 +1592,9 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.12" />
-          <Property name="FlatDensity" value="0.3" />
+          <Property name="FlatDensity" value="0.25" />
           <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="2.1" />
+          <Property name="SlopeMultiplier" value="1.8" />
           <Property name="MaxRegionRadius" value="9999" />
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
@@ -1612,9 +1612,9 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.4" />
-            <Property name="SlopeDensity" value="0.4" />
-            <Property name="SlopeMultiplier" value="2.1" />
+            <Property name="FlatDensity" value="0.35" />
+            <Property name="SlopeDensity" value="0.35" />
+            <Property name="SlopeMultiplier" value="1.8" />
             <Property name="MaxRegionRadius" value="9999" />
             <Property name="MaxImposterRadius" value="10" />
             <Property name="FadeOutStartDistance" value="9999" />
@@ -1631,9 +1631,9 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="1" />
-            <Property name="FlatDensity" value="0.4" />
-            <Property name="SlopeDensity" value="0.4" />
-            <Property name="SlopeMultiplier" value="2.1" />
+            <Property name="FlatDensity" value="0.35" />
+            <Property name="SlopeDensity" value="0.35" />
+            <Property name="SlopeMultiplier" value="1.8" />
             <Property name="MaxRegionRadius" value="9999" />
             <Property name="MaxImposterRadius" value="10" />
             <Property name="FadeOutStartDistance" value="9999" />
