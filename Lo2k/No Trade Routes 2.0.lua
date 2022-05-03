@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Trade Routes 1.9.pak", 
+["MOD_FILENAME"] 			= "No Trade Routes 2.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.88",
+["NMS_VERSION"]				= "3.89",
 ["MOD_DESCRIPTION"]			= "This mod removes space trade route white lines",
 ["MODIFICATIONS"] 			= 
 	{
