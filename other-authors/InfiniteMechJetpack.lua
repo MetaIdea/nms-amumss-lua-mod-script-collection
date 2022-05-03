@@ -1,8 +1,18 @@
+ModName = "InfiniteMechJetpack.pak"
+Author = "Striker0420"
+Version = "3.89"
+
+
+VehicleGlobals =  "GCVEHICLEGLOBALS.GLOBAL.MBIN"
+MechForwardSpeed = 4 -- Original value is 2
+
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "InfiniteMechJetpack.pak",
-["MOD_AUTHOR"]				= "Striker0420",
-["NMS_VERSION"]				= "3.88 ",
+["MOD_FILENAME"] 			= ModName,
+["MOD_AUTHOR"]				= Author,
+["LUA_AUTHOR"]				= Author,
+["NMS_VERSION"]				= Version,
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -10,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCVEHICLEGLOBALS.GLOBAL.MBIN",
+					["MBIN_FILE_SOURCE"] 	= VehicleGlobals,
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -21,9 +31,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MechJetpackTurnSpeed","4"}, 
 								{"MechJetpackMaxSpeed",	"45"} ,	
 								{"MechJetpackDrainRate","0.0"}, 
-								{"MechJetpackFillRate",	"10000"}, 		
+								{"MechJetpackFillRate",	"10000"},
+								{"MechPlayerGroundTurnSpeed", "1"}, -- Original 0.5
+								{"MechJetpackFallForce", "0"}, -- Original 80		
+								{"MechJetpackAvoidGroundForce", "1000"} -- Original 120
 							}
-						}
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name","MECH"},
+								["PRECEDING_KEY_WORDS"] = {"WheelSuspensionAnimMax"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",  MechForwardSpeed} 
+							}
+						},
 					} --14 global replacements
 				}
 			}
