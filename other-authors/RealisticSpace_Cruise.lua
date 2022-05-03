@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -129,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -139,7 +139,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -149,7 +149,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -159,7 +159,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -169,7 +169,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -177,7 +177,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --Buff Player Ship's Non Combat Max Speed, cruise mode, add brake force for reverse
 		["PRECEDING_KEY_WORDS"] = {"ControlHeavy","SpaceEngine"},
 			["VALUE_CHANGE_TABLE"] = {
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -187,12 +187,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","0.01"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"}}},
 		{
 		["PRECEDING_KEY_WORDS"] = {"Control","SpaceEngine"},
 			["VALUE_CHANGE_TABLE"] = {
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -202,12 +202,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","0.01"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"}}},
 		{
 		["PRECEDING_KEY_WORDS"] = {"ControlLight","SpaceEngine"},
 			["VALUE_CHANGE_TABLE"] = {
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -217,7 +217,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","0.01"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"}}},
 	}},
 
@@ -227,7 +227,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{--Balances NPC ships speed to match player
         ["VALUE_CHANGE_TABLE"] = {
             {"MinSpeed","80"},
-            {"MaxSpeed","250"},
+            {"MaxSpeed","150"},
 			{"BoostSpeed","250"}},
 			["REPLACE_TYPE"] = "ALL"},
 		--OUTLAW and later: Force specific NPC Shield REGEN
@@ -307,7 +307,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PIRATE_FREIGHT Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
@@ -317,7 +316,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PIRATE_EASY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
@@ -327,7 +325,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PIRATE_MEDIUM Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
@@ -337,7 +334,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PIRATE_HARD Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_HARD"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
@@ -347,7 +343,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --POLICE Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICE"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
+			{"Reward","TRADER_LOOT"},
 			{"RewardCount","10"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
@@ -357,7 +353,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --TRADER Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","TRADER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
@@ -376,7 +371,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --RAIDERS(BUILDING) Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
@@ -386,7 +380,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --RAIDERS(DOGFIGHT) Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
@@ -396,7 +389,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PLAYER_SQUADRON Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PLAYER_SQUADRON"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"Reward","PIRAT_LOOT_HARD"},
 			{"RewardCount","10"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},

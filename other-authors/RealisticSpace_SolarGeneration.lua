@@ -54,10 +54,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Red","0.1"}}},
 		{ --Changes asteroids
 		["VALUE_CHANGE_TABLE"] = {
-			{"AsteroidFadeRangeMin","1000"},
-			{"AsteroidFadeRangeMax","2000"},
+			{"AsteroidFadeRangeMin","4000"},
+			{"AsteroidFadeRangeMax","5000"},
 			{"LargeAsteroidFadeRangeMin","4000"},
-			{"LargeAsteroidFadeRangeMax","4000"},
+			{"LargeAsteroidFadeRangeMax","5000"},
+			{"RingAsteroidFadeRangeMin","4000"},
+			{"RingAsteroidFadeRangeMax","5000"},
 			{"RareAsteroidScale","1.25"},
 			{"CommonAsteroidScale","0.2"},
 			{"RareAsteroidDataProductOdds","0.01"},
