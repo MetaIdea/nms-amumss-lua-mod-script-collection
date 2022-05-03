@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -52,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -72,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -82,7 +82,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -92,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","10"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -100,7 +100,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --Buff Player Ship's Non Combat Max Speed, cruise mode, add brake force for reverse
 		["PRECEDING_KEY_WORDS"] = {"ControlHeavy","SpaceEngine"},
 			["VALUE_CHANGE_TABLE"] = {
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -110,12 +110,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","0.01"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"}}},
 		{
 		["PRECEDING_KEY_WORDS"] = {"Control","SpaceEngine"},
 			["VALUE_CHANGE_TABLE"] = {
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
@@ -125,12 +125,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"MinSpeed","0.01"},
 				{"MinSpeedForce","0"},
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"}}},
 		{
 		["PRECEDING_KEY_WORDS"] = {"ControlLight","SpaceEngine"},
 			["VALUE_CHANGE_TABLE"] = {
-				{"MaxSpeed","250"},
+				{"MaxSpeed","150"},
 				{"BoostMaxSpeed","250"},
 				{"OverspeedBrake","0"},
 				{"ReverseBrake","1"},
