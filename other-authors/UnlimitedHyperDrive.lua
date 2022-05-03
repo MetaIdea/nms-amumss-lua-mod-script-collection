@@ -1,14 +1,24 @@
+ModName = "UnlimitedHyperDrive.pak"
+Author = "Striker0420"
+Version = "3.89"
+
+TechnologyTablePath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
+
+HyperDriveDistance = 1000000 -- 1 million units
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "UnlimitedHyperDrive.pak",
-["MOD_AUTHOR"]				= "Striker0420",
+["MOD_FILENAME"] 			= ModName, 
+["MOD_AUTHOR"]				= Author,
+["LUA_AUTHOR"]				= Author,
+["NMS_VERSION"]				= Version,
 ["MODIFICATIONS"] 			= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= TechnologyTablePath,
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -16,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",	"1000000"}, 	-- Original "100"
+								{"Bonus",	HyperDriveDistance}, 	-- Original "100"
 							}
 						},
                         {
@@ -24,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",	"1000000"}, 	-- Original "100"
+								{"Bonus",	HyperDriveDistance}, 	-- Original "100"
 							}
 						},
 						{
@@ -32,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Bonus",	"1000000"}, 	-- Original "100"
+								{"Bonus",	HyperDriveDistance}, 	-- Original "100"
 							}
 						},
 					}
