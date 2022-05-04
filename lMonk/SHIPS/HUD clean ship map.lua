@@ -3,24 +3,10 @@ local desc = [[
   Remove grainy shader from ship's system map
 ]]---------------------------------------------
 
-local Uniform_Values = [[
-	<Property value="TkMaterialUniform.xml">
-		<Property name="Name" value="gCustomParams01Vec4" />
-		<Property name="Values" value="Vector4f.xml">
-			<Property name="x" value="1" />
-			<Property name="y" value="0" />
-			<Property name="z" value="0" />
-			<Property name="t" value="0" />
-		</Property>
-		<Property name="ExtendedValues" />
-	</Property>
-]]
-
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__SHIP clean HUD map.pak',
 	MOD_AUTHOR			= 'Lo2k; script by lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_SHIPS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -56,7 +42,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				PRECEDING_KEY_WORDS = {'Uniforms'},
-				ADD					= Uniform_Values
+				ADD					= [[<Property value="TkMaterialUniform.xml">
+											<Property name="Name" value="gCustomParams01Vec4" />
+											<Property name="Values" value="Vector4f.xml">
+												<Property name="x" value="1" />
+												<Property name="y" value="0" />
+												<Property name="z" value="0" />
+												<Property name="t" value="0" />
+											</Property>
+											<Property name="ExtendedValues" />
+										</Property>]]
 			}
 		}
 	}

@@ -9,22 +9,25 @@ local desc = [[
 ]]---------------------------------------------------------------------------
 
 local Stack_Mult = {
-	{'CRAFTPROD_SUB', 				6},
-	{'FUELGEL_SUB', 				16},
-	{'FOOD_INGREDIENT_SUB', 		40},
-	{'FOOD_COOKED_SUB',				40},
-	{'LAUNCHFUEL_SUB',				4},
-	{'BP_SALVAGE_SUB',				5},
-	{'UI_REPAIR_KIT_SUB',			4},
+	{'CRAFTPROD_SUB', 				4},
+	-- {'FUELGEL_SUB', 				8},
+	{'FOOD_INGREDIENT_SUB', 		4},
+	{'FOOD_COOKED_SUB',				4},
+	{'LAUNCHFUEL_SUB',				5},
+	{'BP_SALVAGE_SUB',				2},
+	{'UI_SENTINEL_LOOT_SUB',		8},
+	{'UI_REPAIR_KIT_SUB',			2},
 	{'UI_STORMCRYSTAL_SUB',			2},
 	{'UI_ALLOY_COMPLEX_SUBTITLE',	2},
 	{'UI_REACTION_SUBTITLE',		2},
+	{'UI_MEGAPROD_SUBTITLE',		2},
 	{'UI_ULTRAPROD_SUBTITLE',		8},
 	{'BLD_GLITCHPROP_SUBTITLE',		2}
 }
 function Stack_Mult:Get(x)
 	return {
 		REPLACE_TYPE 		= 'ALL',
+		MATH_OPERATION 		= '*',
 		SPECIAL_KEY_WORDS	= {'Value', x[1]},
 		SECTION_UP			= 1,
 		VALUE_CHANGE_TABLE 	= { {'StackMultiplier',	x[2]} }
@@ -47,6 +50,7 @@ local K_Icons = {
 	{'FOOD_M_CRAB',		'TEXTURES/UI/FRONTEND/ICONS/KETAROS/PRODUCT.MEATCHUNKY.DDS'},
 	{'SUMMON_GARAGE',	'TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/BUILDABLE.SIGNAL.DDS'},
 	{'SUIT_INV_TOKEN',	'TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TRADEPROD.ENERGY2.DDS'},
+	{'GEODE_CAVE',		'TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.GEODECAVE.DDS'},
 	{'PRODFUEL2',		'TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.OXYGENGEL2.DDS'},
 	{'SHIPCHARGE',		'TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS'}
 }
@@ -65,6 +69,7 @@ local K_Icons_Color = {
 	{'Id',		'WATERPROD3',					0,	0.54,	0.26,	0.26},
 	{'Id',		'CATAPROD3',					0,	0.54,	0.26,	0.26},
 	{'Id',		'OXYPROD3',						0,	0.54,	0.26,	0.26},
+	{'Id',		'CAVECUBE',						0,	0.302,	0.16,	0.341},	
 	{'Name',	'UI_STORMCRYSTAL_NAME',			0,	0.54,	0.26,	0.26},
 	{'Name',	'UI_VENTGEM_NAME',				0,	0.54,	0.26,	0.26},
 	{'Id',		'SUMMON_GARAGE',				0,	0.04,	0.18,	0.26},
@@ -168,8 +173,7 @@ local Source_Table_Product = 'METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE PRODUCT.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_TABLES ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -180,47 +184,55 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{
 		MBIN_FILE_SOURCE	= Source_Table_Product,
 		EXML_CHANGE_TABLE	= {
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_SPD'},
+				-- PRECEDING_KEY_WORDS = 'Requirements',
+				-- ADD					= AddNewCraftPart({'OXYGEN', 'Substance', 60})
+			-- },
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_SPD', 'ID', 'QUAD_PROD'},
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'ID',			'SHIPCHARGE'},
+					-- {'Amount',		1}
+				-- }
+			-- },
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_SPD', 'ID', 'ASTEROID2'},
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'ID',			'ASTEROID3'},
+					-- {'Amount',		20}
+				-- }
+			-- },
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_COM'},
+				-- PRECEDING_KEY_WORDS = 'Requirements',
+				-- ADD					= AddNewCraftPart({'GRENFUEL1', 'Product', 2})
+			-- },
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_COM', 'ID', 'WALKER_PROD'},
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'ID',			'SHIPCHARGE'}
+				-- }
+			-- },
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_COM', 'ID', 'ASTEROID2'},
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'ID',			'ASTEROID3'},
+					-- {'Amount',		20}
+				-- }
+			-- },
 			{
-				SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_SPD'},
-				PRECEDING_KEY_WORDS = 'Requirements',
-				ADD					= AddNewCraftPart({'OXYGEN', 'Substance', 60})
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_SPD', 'ID', 'QUAD_PROD'},
+				SPECIAL_KEY_WORDS	= {'Id', 'JELLY'},
+				SECTION_ACTIVE		= 2,
 				VALUE_CHANGE_TABLE 	= {
-					{'ID',			'SHIPCHARGE'},
-					{'Amount',		1}
+					{'Subtitle',	'CRAFTPROD_SUB'},
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_SPD', 'ID', 'ASTEROID2'},
+				SPECIAL_KEY_WORDS	= {'Id', 'GEODE_CAVE'},
 				VALUE_CHANGE_TABLE 	= {
-					{'ID',			'ASTEROID3'},
-					{'Amount',		20}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_COM'},
-				PRECEDING_KEY_WORDS = 'Requirements',
-				ADD					= AddNewCraftPart({'GRENFUEL1', 'Product', 2})
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_COM', 'ID', 'WALKER_PROD'},
-				VALUE_CHANGE_TABLE 	= {
-					{'ID',			'SHIPCHARGE'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Id', 'FRIG_BOOST_COM', 'ID', 'ASTEROID2'},
-				VALUE_CHANGE_TABLE 	= {
-					{'ID',			'ASTEROID3'},
-					{'Amount',		20}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Id', 'JELLY', 'ID', 'LAUNCHSUB'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Amount',		50}	-- ancient bug fix
+					{'Name',		'UI_GEODE_NAME_CAVE'},
+					{'NameLower',	'UI_GEODE_NAME_CAVE_L'}
 				}
 			},
 			{
@@ -231,12 +243,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'Id', 'FREI_INV_TOKEN', 'Legality', 'Legal'},
-				LINE_OFFSET			= 8,
-				REMOVE				= 'LINE'
-			},
-			{
 				SPECIAL_KEY_WORDS	= {'Id', 'FREI_INV_TOKEN'},
+				PRECEDING_KEY_WORDS = 'Requirements',
 				ADD					= Prod_Requirements:Build('Cargo_Bulkhead')
 			}
 		}

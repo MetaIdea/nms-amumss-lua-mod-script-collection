@@ -1,8 +1,8 @@
-------------------------------------------------------
+--------------------------------------------------------------
 local desc = [[
   Increase light intensity to various building parts
-  Edit freighter hangar & landing pad lights
-]]----------------------------------------------------
+  Freighter hangar & landing pad lights changed to near-white
+]]------------------------------------------------------------
 
 local function InsertLight(newlight)
 	local light = {
@@ -17,7 +17,7 @@ local function InsertLight(newlight)
 		sy = 1,
 		sz = 1,
 		fov = 100,
-		i = 32000,
+		i = 30000,
 		f = 'quadratic',
 		fr = 2.0,
 		r = 0.95,
@@ -48,7 +48,7 @@ local function InsertLight(newlight)
 			<Property value="TkSceneNodeAttributeData.xml">
 				<Property name="Name" value="FOV"/>
 				<Property name="AltID" value=""/>
-				<Property name="Value" value="]]..light.fov..[[.0"/>
+				<Property name="Value" value="]]..light.fov..[["/>
 			</Property>
 			<Property value="TkSceneNodeAttributeData.xml">
 				<Property name="Name" value="FALLOFF"/>
@@ -63,7 +63,7 @@ local function InsertLight(newlight)
 			<Property value="TkSceneNodeAttributeData.xml">
 				<Property name="Name" value="INTENSITY"/>
 				<Property name="AltID" value=""/>
-				<Property name="Value" value="]]..light.i..[[.0"/>
+				<Property name="Value" value="]]..light.i..[["/>
 			</Property>
 			<Property value="TkSceneNodeAttributeData.xml">
 				<Property name="Name" value="COL_R"/>
@@ -107,8 +107,7 @@ local Stand_Light_Mult = 6
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL base lights tweaks.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_MODELS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

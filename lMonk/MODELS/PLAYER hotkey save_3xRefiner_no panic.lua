@@ -1,6 +1,6 @@
 --------------------------------------------------
 local desc = [[
-  Enable hotkey saving (quick action emote menu)
+  Add hotkey saving (quick action emote menu)
   Disable panic falling animation
   Upgrade suit refiner to 3 slots
 ]]------------------------------------------------
@@ -59,6 +59,7 @@ local SaveInteraction = [[
 		</Property>
 		<Property name="InteractFiendCrimeChance" value="1"/>
 		<Property name="InteractCrimeLevel" value="0"/>
+		<Property name="NotifyEncounter" value="False"/>
 		<Property name="ActivationCost" value="GcInteractionActivationCost.xml">
 			<Property name="SubstanceId" value=""/>
 			<Property name="AltIds"/>
@@ -82,13 +83,13 @@ local SaveInteraction = [[
 		</Property>
 		<Property name="ActivateLocatorsFromRarity" value="False"/>
 		<Property name="RarityLocators">
-			<Property value="NMSString0x10.xml">
+			<Property name="Common" value="NMSString0x10.xml">
 				<Property name="Value" value=""/>
 			</Property>
-			<Property value="NMSString0x10.xml">
+			<Property name="Uncommon" value="NMSString0x10.xml">
 				<Property name="Value" value=""/>
 			</Property>
-			<Property value="NMSString0x10.xml">
+			<Property name="Rare" value="NMSString0x10.xml">
 				<Property name="Value" value=""/>
 			</Property>
 		</Property>
@@ -110,6 +111,7 @@ local SaveInteraction = [[
 						<Property name="Event" value="GcStateTimeEvent.xml">
 							<Property name="Seconds" value="0"/>
 							<Property name="RandomSeconds" value="0"/>
+							<Property name="UseMissionClock" value="False"/>
 						</Property>
 						<Property name="Action">
 							<Property value="GcGoToStateAction.xml">
@@ -128,6 +130,83 @@ local SaveInteraction = [[
 						<Property name="Event" value="GcStateTimeEvent.xml">
 							<Property name="Seconds" value="0"/>
 							<Property name="RandomSeconds" value="0"/>
+							<Property name="UseMissionClock" value="False"/>
+						</Property>
+						<Property name="Action">
+							<Property value="GcPlayAudioAction.xml">
+								<Property name="Sound" value="SignalScanner"/>
+								<Property name="UseOcclusion" value="False"/>
+								<Property name="OcclusionRadius" value="2"/>
+							</Property>
+							<Property value="GcFireSimpleInteractionAction.xml"/>
+							<Property value="GcGoToStateAction.xml">
+								<Property name="State" value="WAIT_FOR_SAVE"/>
+								<Property name="Broadcast" value="False"/>
+								<Property name="BroadcastLevel" value="Local"/>
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+			</Property>
+			<Property value="GcActionTriggerState.xml">
+				<Property name="StateID" value="WAIT_FOR_SAVE"/>
+				<Property name="Triggers">
+					<Property value="GcActionTrigger.xml">
+						<Property name="Event" value="GcAnimFrameEvent.xml">
+							<Property name="Anim" value="SAVEGAME"/>
+							<Property name="FrameStart" value="0"/>
+							<Property name="StartFromEnd" value="False"/>
+						</Property>
+						<Property name="Action">
+							<Property value="GcGoToStateAction.xml">
+								<Property name="State" value="SAVE"/>
+								<Property name="Broadcast" value="False"/>
+								<Property name="BroadcastLevel" value="Local"/>
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+			</Property>
+		</Property>
+		<Property name="Persistent" value="False"/>
+		<Property name="PersistentState" value=""/>
+		<Property name="ResetShotTimeOnStateChange" value="False"/>
+		<Property name="LinkStateToBaseGrid" value="False"/>
+	</Property>
+]]
+
+local SaveInteraction_OLD = [[
+	<Property value="GcTriggerActionComponentData.xml">
+		<Property name="HideModel" value="False"/>
+		<Property name="StartInactive" value="False"/>
+		<Property name="States">
+			<Property value="GcActionTriggerState.xml">
+				<Property name="StateID" value="BOOT"/>
+				<Property name="Triggers">
+					<Property value="GcActionTrigger.xml">
+						<Property name="Event" value="GcStateTimeEvent.xml">
+							<Property name="Seconds" value="0"/>
+							<Property name="RandomSeconds" value="0"/>
+							<Property name="UseMissionClock" value="False"/>
+						</Property>
+						<Property name="Action">
+							<Property value="GcGoToStateAction.xml">
+								<Property name="State" value="WAIT_FOR_SAVE"/>
+								<Property name="Broadcast" value="False"/>
+								<Property name="BroadcastLevel" value="Local"/>
+							</Property>
+						</Property>
+					</Property>
+				</Property>
+			</Property>
+			<Property value="GcActionTriggerState.xml">
+				<Property name="StateID" value="SAVE"/>
+				<Property name="Triggers">
+					<Property value="GcActionTrigger.xml">
+						<Property name="Event" value="GcStateTimeEvent.xml">
+							<Property name="Seconds" value="0"/>
+							<Property name="RandomSeconds" value="0"/>
+							<Property name="UseMissionClock" value="False"/>
 						</Property>
 						<Property name="Action">
 							<Property value="GcPlayAudioAction.xml">
@@ -188,6 +267,29 @@ local SaveEmote = [[
 		<Property name="MoveToCancel" value="False"/>
 		<Property name="GekAnimationName" value=""/>
 		<Property name="GekLoopAnimUntilMove" value=""/>
+		<Property name="AvailableUnderwater" value="False"/>
+		<Property name="RidingAnimationName" value="SAVEGAME"/>
+		<Property name="IsPetCommand" value="False"/>
+		<Property name="PetCommandTitle" value=""/>
+		<Property name="PetCommandIcon" value="TkTextureResource.xml">
+			<Property name="Filename" value=""/>
+		</Property>
+	</Property>
+	<Property value="GcPlayerEmote.xml">
+		<Property name="Title" value="Save"/>
+		<Property name="ChatText" value=""/>
+		<Property name="ChatUsesPrefix" value="False"/>
+		<Property name="AnimationName" value="SAVEGAME"/>
+		<Property name="Icon" value="TkTextureResource.xml">
+			<Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS"/>
+		</Property>
+		<Property name="LinkedSpecialID" value=""/>
+		<Property name="NeverShowInMenu" value="False"/>
+		<Property name="LoopAnimUntilMove" value=""/>
+		<Property name="CloseMenuOnSelect" value="False"/>
+		<Property name="MoveToCancel" value="False"/>
+		<Property name="GekAnimationName" value=""/>
+		<Property name="GekLoopAnimUntilMove" value=""/>
 		<Property name="AvailableUnderwater" value="True"/>
 		<Property name="RidingAnimationName" value="SAVEGAME"/>
 		<Property name="IsPetCommand" value="False"/>
@@ -221,8 +323,7 @@ local NullAnime = [[<?xml version="1.0" encoding="utf-8"?>
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL hotkey save_3xRefiner_no panic.pak',
 	MOD_AUTHOR			= 'lMonk (original by Mjjstral)',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_MODELS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -230,7 +331,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Filename', 'MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/0H_EMOTE_CALL_PET.ANIM.MBIN'},
+				SPECIAL_KEY_WORDS	= {'Anim', '0H_GREET_MOB_04'},
+				SECTION_ACTIVE		= 2,
 				ADD_OPTION			= 'ADDAfterSection',
 				ADD 				= SaveAnime
 			},

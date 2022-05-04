@@ -8,8 +8,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -27,24 +26,42 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			}
 		}
 	},
-	-- {
-		-- MBIN_FILE_SOURCE	= 'GCGRAPHICSGLOBALS.GLOBAL.MBIN',
-		-- EXML_CHANGE_TABLE	= {
-			-- {
-				-- VALUE_CHANGE_TABLE 	= {
-					-- {'ForceUncachedTerrain', true}
-				-- }
-			-- }
-		-- }
-	-- },
+	{
+		-- |GC ROBOT|
+		MBIN_FILE_SOURCE	= 'GCROBOTGLOBALS.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				VALUE_CHANGE_TABLE 	= {
+					{'FriendlyDroneChatCooldown',				12},	-- 5
+					{'FriendlyDroneDissolveTime',				2},		-- 1
+					{'FriendlyDroneChatChanceIdle',				0.15},	-- 0.33
+					{'FriendlyDroneBeepReplaceChatChance',		0.1},	-- 0.3
+				}
+			}
+		}
+	},
+	{
+		MBIN_FILE_SOURCE	= 'GCSIMULATIONGLOBALS.GLOBAL.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				VALUE_CHANGE_TABLE 	= {
+				
+					{'WarpTunnelFile',			'MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN'},
+					{'TeleportTunnelFile',		'MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN'},
+					{'PortalTunnelFile',		'MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN'},
+					{'PortalStoryTunnelFile',	'MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN'},
+					-- {'BlackHoleTunnelFile',		'MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN'},
+				}
+			}
+		}
+	},
 	{
 		-- |GC WATER|
 		MBIN_FILE_SOURCE	= 'GCWATERGLOBALS.GLOBAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				MATH_OPERATION 		= '+',
 				VALUE_CHANGE_TABLE 	= {
-					{'WaveHeight',	-1.7}	-- 1.5
+					{'WaveHeight',	-0.2}	-- 1.5
 				}
 			}
 		}

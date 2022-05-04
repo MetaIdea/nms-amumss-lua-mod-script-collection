@@ -101,7 +101,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 11 freighter hangar lights.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
+	NMS_VERSION			= 3.89,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

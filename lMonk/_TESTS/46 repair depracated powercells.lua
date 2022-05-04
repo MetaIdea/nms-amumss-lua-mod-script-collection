@@ -12,18 +12,14 @@ Add_Charge_Item = {
 		{'T_HOTPROT',	'POWERCELL2'}
 	},
 	Get = function(x)
+		local xml = [[<Property value="NMSString0x10.xml">
+			<Property name="Value" value="%s" />
+			</Property>]]
 		return {
 			SPECIAL_KEY_WORDS	= {'ID', x[1]},
 			PRECEDING_KEY_WORDS	= 'ChargeBy',
-			ADD 				= Add_Charge_Item.AddItem(x[2])
+			ADD 				= string.format(xml, x[2])
 		}
-	end,
-	AddItem = function(item_id)
-		return [[
-		<Property value="NMSString0x10.xml">
-			<Property name="Value" value="]]..item_id..[[" />
-		</Property>
-		]]
 	end
 }
 
@@ -44,12 +40,6 @@ P_Requirements = {
 	}
 }
 
-local function BuildRequirements(lst)
-	local text = '<Property name="Requirements">'
-	for i=1, #lst do text = text..AddNewCraftPart(lst[i]) end
-	return text..'</Property>'
-end
-
 local function AddNewCraftPart(lst)
 	return [[
 		<Property value="GcTechnologyRequirement.xml">
@@ -62,10 +52,16 @@ local function AddNewCraftPart(lst)
 	]]
 end
 
+local function BuildRequirements(lst)
+	local text = '<Property name="Requirements">'
+	for i=1, #lst do text = text..AddNewCraftPart(lst[i]) end
+	return text..'</Property>'
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 46 restore powercells.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
+	NMS_VERSION			= 3.89,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

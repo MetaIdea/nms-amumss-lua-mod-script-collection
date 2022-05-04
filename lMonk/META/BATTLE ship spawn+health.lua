@@ -6,18 +6,18 @@ local desc = [[
 ]]------------------------------------------------------------
 
 local Bounty_Spawn_Count = {
-	{'BOUNTY1',			0, 1},
-	{'BOUNTY2',			2, 3},
-	{'BOUNTY3',			1, 2},
-	{'EASYBOUNTY1',		2, 3},
-	{'EASYBOUNTY2',		2, 3},
-	{'MEDBOUNTY1',		3, 4},
-	{'MEDBOUNTY2',		3, 4},
-	{'HARDBOUNTY1',		5, 6},
-	{'HARDBOUNTY2',		5, 6},
-	{'WEAPGUY_BOUNTY',	5, 6},
-	{'PIRATE_SQUAD',	5, 6},
-	{'PP_BOUNTY',		4, 5}
+	{'BOUNTY1',			0, 2},
+	{'BOUNTY2',			0, 2},
+	{'BOUNTY3',			0, 2},
+	{'EASYBOUNTY1',		0, 1},
+	{'EASYBOUNTY2',		0, 1},
+	{'MEDBOUNTY1',		1, 2},
+	{'MEDBOUNTY2',		1, 2},
+	{'HARDBOUNTY1',		1, 3},
+	{'HARDBOUNTY2',		1, 3},
+	{'WEAPGUY_BOUNTY',	1, 2},
+	{'PIRATE_SQUAD',	0, 2},
+	{'PP_BOUNTY',		1, 3}
 }
 function Bounty_Spawn_Count:Get(x)
 	return {
@@ -30,13 +30,19 @@ function Bounty_Spawn_Count:Get(x)
 end
 
 local Pirate_Spawn_Count = {
-	{{'FlybySpawns',	'Spread'},			12, 14},
-	{{'FlybySpawns',	'Count'},			-1, -1},
-	{{'OutpostSpawns',	'Spread'},			12, 14},
-	{{'OutpostSpawns',	'Count'},			-1, -1},
-	{{'PirateSpawns',	'Count'},			0,  2},
-	{{'PirateSpawns',	'Count', 'Count'},	1,  1},
-	{{'PirateBattleSpawns', 'Count'},		0,  2}
+	{{'FlybySpawns',				'Count'},						0,		-1},
+	{{'OutpostSpawns',				'Count'},						0,		-1},
+	{{'PirateSpawns',				'Count'},						0,		2},
+	{{'PirateSpawns',				'Count', 'Count'},				1,		1},
+	{{'PlanetaryPirateFlybySpawns',	'Count'},						0,		2},
+	{{'PlanetaryPirateRaidSpawns',	'Count'},						0,		2},
+	{{'PirateBattleSpawns',			'Count'},						0,		2},
+	{{'FrigateFlybySpawns',			'Count'},						-1,		0},
+	{{'FrigateFlybySpawns',			'Count', 'Count'},				-1,		-3},
+	{{'FrigateFlybySpawns',			'Count', 'Count', 'Count'},		-1,		-3},
+	{{'FrigateFlybySpawns',			'Spread'},						400,	400},
+	{{'FrigateFlybySpawns',			'Spread', 'Spread'},			200,	200},
+	{{'FrigateFlybySpawns',			'Spread', 'Spread', 'Spread'},	200,	200},
 }
 function Pirate_Spawn_Count:Get(x)
 	return {
@@ -46,30 +52,28 @@ function Pirate_Spawn_Count:Get(x)
 	}
 end
 
-local Ship_Stats = {
-	{'PIRATE_FREIGHT',	'MEDIUM',	5},		-- 3600
-	{'AI_EASY',			'MEDIUM',	3},		-- 6200
-	{'AI_MEDIUM',		'HARD',		3},		-- 8000
-	{'AI_HARD',			'HARD',		1.8},	-- 14000
-	{'AI_SOLO',			'SOLO',		1.8},	-- 30000
-	{'PIRATE',			'MEDIUM',	3.6},	-- 6200
-	{'POLICE',			'HARD',		2.5},	-- 14000
-	{'TRADE_EASY',		'MEDIUM',	3.2},	-- 6000
-	{'TRADE_MED',		'HARD',		3},		-- 8000
-	{'TRADE_HARD',		'HARD',		2},		-- 14000
-	{'BOUNTY',			'HARD',		2},		-- 20000
+local AI_Attacker = {
+	{'PIRATE_EASY', 	'PIRATELOOT_EASY',	1.2},
+	{'PIRATE',		 	'PIRATELOOT',		1.4},
+	{'PIRATE_HARD',	 	'PIRATELOOT_HARD',	1.6},
+	{'RAID_BUILDING', 	'RAIDLOOT',			1.2},
+	{'RAID_DOGFIGHT',	'RAIDLOOT',			1.5},
+	{'POLICE',			'POLICELOOT',		1},
+	{'PLANET_FLYBY',	'PIRATELOOT_EASY',	1.8},
 	multi = true
 }
-function Ship_Stats:Get(x)
+function AI_Attacker:Get(x)
 	return {{
+		PRECEDING_FIRST		= true,
+		PRECEDING_KEY_WORDS = 'Definitions',
 		SPECIAL_KEY_WORDS	= {'Id', x[1]},
-		SECTION_ACTIVE		= 1,
-		VALUE_CHANGE_TABLE	= { {'Behaviour', x[2]} }
+		VALUE_CHANGE_TABLE	= { {'Reward', x[2]} }
 	},{
+		PRECEDING_FIRST		= true,
+		PRECEDING_KEY_WORDS = 'Definitions',
 		MATH_OPERATION 		= '*',
 		INTEGER_TO_FLOAT	= 'PRESERVE',
 		SPECIAL_KEY_WORDS	= {'Id', x[1]},
-		SECTION_ACTIVE		= 1,
 		VALUE_CHANGE_TABLE	= { {'Health', x[3]} }
 	}}
 end
@@ -91,8 +95,7 @@ local Source_Exp_Spawn_Table = 'METADATA/SIMULATION/SCENE/EXPERIENCESPAWNTABLE.M
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META ship spawns & health.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_META ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -101,9 +104,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				REPLACE_TYPE 		= 'ALL',
-				PRECEDING_KEY_WORDS	= 'PirateBountySpawns',
+				PRECEDING_KEY_WORDS	= 'FrigateFlybySpawns',
 				VALUE_CHANGE_TABLE	= {
-					{'AttackData',	'AI_HARD'}
+					{'MinRange',	1100},
 				}
 			}
 		}
@@ -118,6 +121,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SPACE/AISPACESHIPATTACKDATATABLE.MBIN',
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Ship_Stats)
+		EXML_CHANGE_TABLE	= BuildExmlChangeTable(AI_Attacker)
 	}
 }}}}

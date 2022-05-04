@@ -1,13 +1,13 @@
 ----------------------------------------------------
 local desc = [[
   space station interior LOD increase; mod by Lo2k
+  station landing pad lights changed to near-white
 ]]--------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL station interior FIX.pak',
 	MOD_AUTHOR			= 'Lo2k, lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_MODELS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

@@ -11,95 +11,104 @@ local Scan_Table = {
 		name  = 'VEHICLE_BUILDING_DEPOT',
 		scan  = {'DEPOT', 'TERMINAL'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'QUICKMENU/BUILDINGS.DEPOT.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.BUILDING.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_DAMAGEDMACHINE',
 		scan  = {'DROPPOD'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'QUICKMENU/BUILDINGS.DAMAGEDMACHINE.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.POD.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_ABANDONED',
 		scan  = {'ABANDONED', 'UW_ABANDONED'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_RUIN',
 		scan  = {'RUIN', 'UW_RUIN'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'QUICKMENU/BUILDINGS.RUIN.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
 	},{
 		name  = 'VEHICLE_BUILDING_NPC',
 		scan  = {'MONOLITH', 'PLAQUE'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'QUICKMENU/BUILDINGS.MONOLITH.DDS',
-	},{
-		name  = 'SUB_RADAR_SCAN_CRASH',
-		scan  = {'UW_SHIPCRASH'},
-		tech  = {'SUB_BINOCS'},
-		icon  = 'QUICKMENU/BUILDINGS.STARSHIPS.DDS'
-	},{
-		name  = 'SUB_RADAR_SCAN_FREIGHTER',
-		scan  = {'UW_FREIGHTCRASH'},
-		tech  = {'SUB_BINOCS'},
-		icon  = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUNE.DDS'
 	},{
 		name  = 'SUB_RADAR_SCAN_ABANDON',
 		scan  = {'UW_ABANDONED'},
 		tech  = {'SUB_BINOCS'},
-		icon  = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
 	},{
 		name  = 'SUB_RADAR_SCAN_RUIN',
 		scan  = {'UW_RUIN'},
 		tech  = {'SUB_BINOCS'},
-		icon  = 'QUICKMENU/BUILDINGS.RUIN.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
 	},{
-		name  = 'VEHICLE_BUILDING_OUTPOST', -- 'BUILDING_SHOP_L',
+		name  = 'SUB_RADAR_SCAN_CRASH',
+		scan  = {'UW_SHIPCRASH'},
+		tech  = {'SUB_BINOCS'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.SHIP.DDS'
+	},{
+		name  = 'SUB_RADAR_SCAN_FREIGHTER',
+		scan  = {'UW_FREIGHTCRASH'},
+		tech  = {'SUB_BINOCS'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/WIKI/TRADE10.DDS'
+	},{
+		name  = 'VEHICLE_BUILDING_OUTPOST',
 		scan  = {'SHOP', 'OUTPOST'},
-		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'QUICKMENU/BUILDINGS.OUTPOST.DDS'
-	-- },{
-		-- name  = 'UI_SETTLEMENT_LABEL',
-		-- scan  = {'SETTLEMENT'},
-		-- tech  = {'VEHICLE_SCAN2'},
-		-- icon  = 'BUILDABLE/STONE.BASIC_ROOF_TOP4.DDS',
+		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.OUTPOST.DDS'
 	},{
-		name  = 'BUILDING_OBSERVATORY_L',
+		name  = 'BUILDING_RADIOTOWER_L',
 		scan  = {'RADIOTOWER', 'OBSERVATORY'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'BUILDABLE/BUILDABLE.VEHICLESUMMONER.FREIGHTER.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SIGNAL.DDS'
 	},{
 		name  = 'MECH_SCAN_FACT',
 		scan  = {'HARVESTER', 'FACTORY'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'QUICKMENU/BUILDINGS.ABANDONED.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.FACTORY.DDS'
 	},{
 		name  = 'MECH_SCAN_CRASH',
-		scan  = {'DISTRESS', 'DISTRESS_NPC', 'UW_SHIPCRASH', 'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH'},
+		scan  = {'DISTRESS', 'DISTRESS_NPC', 'UW_SHIPCRASH'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'QUICKMENU/BUILDINGS.CRASHEDFREIGHTER.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.SHIP.DDS'
+	},{
+		name  = 'SUB_RADAR_SCAN_FREIGHTER',
+		scan  = {'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH'},
+		tech  = {'VEHICLE_SCAN1'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/WIKI/TRADE10.DDS'
 	},{
 		name  = 'UI_LIBRARY_ENTRANCE_DESC',
 		scan  = {'LIBRARY'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'UPDATE3/TREASUREPROD.STRANGEBOOK.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.LIBRARY.DDS'
+	-- },{
+		-- name  = 'UI_SETTLEMENT_LABEL',
+		-- scan  = {'SETTLEMENT'},
+		-- tech  = {'VEHICLE_SCAN2'},
+		-- icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SETTLEMENT.DDS'
 	},{
-		name  = 'INTRCT_CLAIM_BASE',
+		name  = 'UI_RECOVER_BASE_MARKER',
 		scan  = {'BASE'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'BUILDABLE/BUILDABLE.BASECOREFLAG.DDS'
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.BASE.DDS'
+	},{
+		name  = 'UI_SENTINEL_HIVE_NAME',
+		scan  = {'DRONE_HIVE'},
+		tech  = {'VEHICLE_SCAN2'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS'
 	}
 }
-
 function Scan_Table:GetEntry(ste)
 	local function getScanList(lst)
-		local exml = '<Property name="ScanList">'
-		for _,v in pairs(lst) do
+		local exml = ''
+		for _,trg in pairs(lst) do
 			exml = exml..[[
 				<Property value="NMSString0x20.xml">
-					<Property name="Value" value="]]..v..[[" />
+					<Property name="Value" value="]]..trg..[[" />
 				</Property>]]
 		end
-		return exml..'</Property>'
+		return '<Property name="ScanList">'..exml..'</Property>'
 	end
 	local exml = ''
 	for _,tech in pairs(ste.tech) do
@@ -109,7 +118,7 @@ function Scan_Table:GetEntry(ste)
 				<Property name="Name" value="]]..ste.name..[[" />
 				<Property name="RequiredTech" value="]]..tech..[[" />
 				<Property name="Icon" value="TkTextureResource.xml">
-					<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/]]..ste.icon..[[" />
+					<Property name="Filename" value="]]..ste.icon..[[" />
 				</Property>
 			</Property>]]
 	end
@@ -121,7 +130,10 @@ local function BuildVehicleScanTable()
 	for _,v in ipairs(Scan_Table) do
 		exml = exml..Scan_Table:GetEntry(v)
 	end
-	return exml
+	return [[<?xml version="1.0" encoding="utf-8"?>
+		<Data template="GcVehicleScanTable"><Property name="VehicleScanTable">]]
+		..exml..
+		[[</Property></Data>]]
 end
 
 local Scan_Events = {
@@ -137,11 +149,16 @@ local Scan_Events = {
 		tip   = 'TIP_PLAQUE',
 	-- },{
 		-- event = 'SETTLEMENT',
+		-- blocal= 'Random',
 		-- btype = 'UnownedSettlement',
-		-- class = 'None',
 		-- osd   = 'UI_SETTLEMENT_LOCATED_OSD',
 		-- tip   = 'UI_SETTLEMENT_LOCATED',
-		-- mark  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SETTLEMENT.DDS',
+	},{
+		event = 'DRONE_HIVE',
+		class = 'DroneHive',
+		osd   = 'UI_DRONEHIVE_LOCATED_OSD',
+		mlbl  = 'UI_SENTINEL_HIVE_NAME',
+		tip   = 'UI_DRONEHIVE_LOCATED',
 	},{
 		event = 'BASE',
 		class = 'Base',
@@ -166,6 +183,7 @@ local function NewScanEvent(scn)
 		<Property name="ForceBroken" value="False"/>
 		<Property name="ForceFixed" value="False"/>
 		<Property name="ForceOverridesAll" value="True"/>
+		<Property name="ForceOverrideEncounter" value=""/>
 		<Property name="IsCommunityPortalOverride" value="False"/>
 		<Property name="ClearForcedInteractionOnCompletion" value="False"/>
 		<Property name="BuildingPreventionRadius" value="0"/>
@@ -180,10 +198,10 @@ local function NewScanEvent(scn)
 		<Property name="CanEndFromOutsideMission" value="False"/>
 		<Property name="DisableMultiplayerSync" value="True"/>
 		<Property name="ReplaceEventIfAlreadyActive" value="False"/>
-		<Property name="BuildingLocation" value="Nearest"/>
+		<Property name="BuildingLocation" value="]]..(scn.blocal or 'Nearest')..[["/>
 		<Property name="BuildingType" value="]]..(scn.btype or 'BuildingClass')..[["/>
 		<Property name="BuildingClass" value="GcBuildingClassification.xml">
-			<Property name="BuildingClass" value="]]..scn.class..[["/>
+			<Property name="BuildingClass" value="]]..(scn.class or 'None')..[["/>
 		</Property>
 		<Property name="AllowFriendsBases" value="False"/>
 		<Property name="ForceWideRandom" value="False"/>
@@ -302,9 +320,9 @@ local function NewScanEvent(scn)
 		</Property>
 		<Property name="OSDMessage" value="]]..scn.osd..[["/>
 		<Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM"/>
-		<Property name="MarkerLabel" value=""/>
+		<Property name="MarkerLabel" value="]]..(scn.mlbl or '')..[["/>
 		<Property name="MarkerIcon" value="TkTextureResource.xml">
-			<Property name="Filename" value="]]..(scn.mark or '')..[["/>
+			<Property name="Filename" value=""/>
 		</Property>
 		<Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
 			<Property name="ScannerIconHighlightType" value="Diamond"/>
@@ -334,41 +352,61 @@ local function NewScanEvent(scn)
 	</Property>]]
 end
 
-local function InsertNewEvents()
+local function InsertNewScanEvents()
 	local exml = ''
 	for _,v in ipairs(Scan_Events) do exml = exml..NewScanEvent(v) end
 	return exml
 end
 
+-- replace icons of found target to match
+-- the new ones in the targets list
+local function UpdateScanEventIcons()
+	local T = {}
+	for _,st in ipairs(Scan_Table) do
+		for _,scn in ipairs(st.scan) do
+			table.insert(T, {
+				SPECIAL_KEY_WORDS	= {'Name', scn},
+				PRECEDING_KEY_WORDS	 = 'MarkerIcon',
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', st.icon}
+				}
+			})
+		end
+	end
+	return T
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META vehicle scan targets.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_META ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
-	MODIFICATIONS 		= {{
-	MBIN_CHANGE_TABLE	= {
-	{
-		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				REPLACE_TYPE		= 'ALL',
-				PRECEDING_KEY_WORDS	= 'GcVehicleScanTableEntry.xml',
-				REMOVE				= 'SECTION'
-			},
-			{
-				PRECEDING_KEY_WORDS	= 'VehicleScanTable',
-				ADD 				= BuildVehicleScanTable()
-			}
+	ADD_FILES = {
+		{
+			FILE_DESTINATION = 'METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.EXML',
+			FILE_CONTENT	 = BuildVehicleScanTable()
 		}
 	},
+	MODIFICATIONS 		= {{
+	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
+				-- old bug fix
+				SPECIAL_KEY_WORDS	= {'Name', 'RUIN'},
+				VALUE_CHANGE_TABLE 	= {
+					{'OSDMessage', 'UI_SIGNAL_TREASURERUIN'}
+				}
+			},
+			{
 				PRECEDING_KEY_WORDS = 'Events',
-				ADD					= InsertNewEvents()
-			}
+				ADD					= InsertNewScanEvents()
+			},
 		}
+	},
+	{
+		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN',
+		EXML_CHANGE_TABLE	= UpdateScanEventIcons()
 	}
 }}}}

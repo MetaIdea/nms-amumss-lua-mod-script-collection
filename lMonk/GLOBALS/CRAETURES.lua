@@ -10,8 +10,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC CRAETURES.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -48,15 +47,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'RidingTurnRadiusMultiplier',		-0.4},	-- 1
 					{'FadeDistance',					20},	-- 10
 					{'MinFade',							25},	-- 30
-					-- {'CreatureRidingMedMinSize',		-2},	-- 5
-					-- {'CreatureRidingLargeMinSize',		-4},	-- 12
-					-- {'CreatureRidingHugeMinSize',		-8},	-- 20
 					{'RideSpeedSlow', 					0.7},	-- 0.5
 					{'RideSpeedFast',					1},		-- 2
-					-- {'TurnRadiusMultiplier',			-0.2},	-- 1
-					-- {'PetMaxTurnRad',					-0.3},	-- 1
 					{'PetMaxSizeOffPlanet',				3},		-- 1
-					{'PetTeleportDistOnPlanet',			-30},	-- 150
+					{'PetTeleportDistOnPlanet',			10},	-- 150
+					{'PetWalkAtHeelChanceDevoted',		-0.4},	-- 0.9
+					{'PetWalkAtHeelChanceIndependent',	-0.05},	-- 0.1
+					{'PetWalkAtHeelDistMin',			4},		-- 0
+					{'PetWalkAtHeelDistMax',			6},		-- 4
+					{'PetRunAtHeelDistMin', 			5},		-- 11
+					{'PetRunAtHeelDistMax',				6},		-- 20
+					{'PetFollowRunPlayerDistance',		12},	-- 4
+					{'PetFollowRange',					8},		-- 2
+					{'PetAnimSpeedMax',					-0.5},	-- 1.5
 				}
 			},
 			{
