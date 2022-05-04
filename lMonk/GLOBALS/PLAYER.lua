@@ -6,14 +6,19 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC PLAYER.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'GCPLAYERGLOBALS.GLOBAL.MBIN',
 		EXML_CHANGE_TABLE	= {
+			-- {
+				-- -- Balatant cheat!
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'LuckyWithTech', true}
+				-- }
+			-- },
 			{
 				MATH_OPERATION 		= '+',
 				INTEGER_TO_FLOAT	= 'FORCE',
@@ -25,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'MeleeBoostAirForce',					0.4},	-- 3
 					{'RocketBootsActivationWindow',			0.05},	-- 0.25
 					{'RocketBootsDoubleTapTime',			0.05},	-- 0.2
-					{'RocketBootsBoostTankDrainSpeed',		-1.5},	-- 6
+					{'RocketBootsBoostTankDrainSpeed',		-1},	-- 6
 					{'RocketBootsDriftTankDrainSpeed',		-0.2},	-- 1
 					{'RocketBootsMinDesiredHeight',			0.5},	-- 2
 					{'RocketBootsMaxDesiredHeight',			0.5},	-- 6
@@ -49,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'StaminaRate',							-0.06},	-- 0.1 (pet ride stamina)
 					{'MaxFallSpeed',						26}, 	-- 30
 					{'MaxBuildHeight',						1000}, 	-- 64
-					{'AutoAimMaxAngle',						-12}, 	-- 30
+					{'AutoAimMaxAngle',						-15}, 	-- 30
 				}
 			}
 		}

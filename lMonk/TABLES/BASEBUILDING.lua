@@ -58,6 +58,7 @@ local Decoration_Type = {
 	{'BASE_TOYSPHERE'},
 	{'BASE_TOYJELLY'},
 	{'BASE_TOYCORE'},
+	{'S_WATERVALVE0'},
 	{'PLANETPORTABLE',	'SubGroupName', 2},
 	{'DECOFOLIAGE',		'SubGroupName', 2},
 	{'DECOGLITCHES',	'SubGroupName', 2},
@@ -84,8 +85,7 @@ local Source_Table_BaseObj = 'METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.M
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '__TABLE BASEBUILDING.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_TABLES ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

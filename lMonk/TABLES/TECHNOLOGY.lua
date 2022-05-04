@@ -1,23 +1,25 @@
 --------------------------------------------------------------------------
 local desc = [[
   Increase Charge Amounts for selected items
+  edit / add / remove stats
   Enable ship-tech for bioship _ share tech between vehicle & mech
-  Increase stat value (bonus) for selected items
   Set powercell & life support gel as the default recharge choice
   changes to weapon upgrades projectile color
   Change mech terrain editor fuel to metal - same as the multitool
 ]]------------------------------------------------------------------------
 
 local Charge_Capacity = {
-	{'SHIPJUMP1',		1.2},
-	{'SHIPJUMP_ALIEN',	1.2},
-	{'LAUNCHER',		1.2},
-	{'LAUNCHER_ALIEN',	1.2},
+	{'SHIPJUMP1',		1.5},
+	{'SHIPJUMP_SPEC',	1.5},
+	{'SHIPJUMP_ALIEN',	1.5},
+	{'LAUNCHER',		1.5},
+	{'LAUNCHER_ALIEN',	1.5},
 	{'F_HYPERDRIVE',	4},
 	{'LASER',			2},
 	{'TERRAINEDITOR',	3},
 	{'RAILGUN',			4},
 	{'GRENADE',			1.5},
+	{'STUN_GREN',		1.5},
 	{'VEHICLE_ENGINE',	1.2},
 	{'VEHICLE_LASER',	1.4},
 	{'SUB_ENGINE',		2},
@@ -28,8 +30,10 @@ local Charge_Capacity = {
 	{'T_COLDPROT',		3},
 	{'T_HOTPROT',		3},
 	{'MECH_LASER',		2},
-	{'MECH_MINER',		4},
-	{'MECH_GUN',		1.4}
+	{'MECH_MINER',		3},
+	{'MECH_GUN',		1.4},
+	{'CANNON',			0.6},
+	{'STEALTH',			6}
 }
 function Charge_Capacity:Get(x)
 	return {
@@ -44,6 +48,7 @@ local Include_In_Category = {
 	{'SHIP_TELEPORT',	'Ship',		'AllShips'},
 	{'SHIPSCAN_COMBAT',	'Ship',		'AllShips'},
 	{'SHIPSCAN_ECON',	'Ship',		'AllShips'},
+	{'CARGOSHIELD',		'Ship',		'AllShips'},
 	{'VEHICLE_SCAN1',	'Exocraft',	'AllVehicles'},
 	{'VEHICLE_SCAN2',	'Exocraft',	'AllVehicles'},
 	{'VEHICLE_LASER1',	'Exocraft',	'AllVehicles'},
@@ -56,20 +61,20 @@ function Include_In_Category:Get(x)
 	}
 end
 
-local Projectile_Upgrade_Colour = {
-	{'UT_BOLT', 	0.88,	0.94,	0.2},
-	{'UT_MINER',	0.92,	0.25,	0.82},
-	{'UT_RAIL',		0.74,	0.1,	0.16},
-	{'UT_SHIPLAS',	0.12,	0.1,	0.62},
-	{'UT_SHIPGUN',	0.01,	0.88,	0.1},
-	{'UT_SMG',		0.92,	0.12,	0.82}
+local RBG_Colors = {
+	{'UT_BOLT', 		'UpgradeColour',	0.88,	0.94,	0.2},
+	{'UT_RAIL',			'UpgradeColour',	0.74,	0.1,	0.16},
+	{'UT_SHIPLAS',		'UpgradeColour',	0.12,	0.1,	0.62},
+	{'UT_SHIPGUN',		'UpgradeColour',	0.01,	0.88,	0.1},
+	{'UT_SMG',			'UpgradeColour',	0.92,	0.12,	0.82},
+	{'SHIPJUMP_SPEC',	'Colour',			0.035,	0.36,	0.467},
 }
-function Projectile_Upgrade_Colour:Get(x)
+function RBG_Colors:Get(x)
 	return {
 		INTEGER_TO_FLOAT	= 'FORCE',
-		SPECIAL_KEY_WORDS	= {'ID', x[1],},
-		PRECEDING_KEY_WORDS	= 'UpgradeColour',
-		VALUE_CHANGE_TABLE 	= { {'R', x[2]}, {'G', x[3]}, {'B', x[4]} }
+		SPECIAL_KEY_WORDS	= {'ID', x[1]},
+		PRECEDING_KEY_WORDS	= x[2],
+		VALUE_CHANGE_TABLE 	= { {'R', x[3]}, {'G', x[4]}, {'B', x[5]} }
 	}
 end
 
@@ -77,6 +82,8 @@ local Uncore_Remove_Tech = {
 	'PROTECT',
 	'JET1',
 	'SHIPJUMP1',
+	'SHIPJUMP_SPEC',
+	'LASER',
 	'LAUNCHER',
 	'HYPERDRIVE',
 	'SHIPSHIELD',
@@ -88,7 +95,6 @@ local Uncore_Remove_Tech = {
 	'SHIELD_ALIEN',
 	'SHIPGUN_ALIEN',
 	'SHIPLAS_ALIEN',
-	'LASER'
 }
 function Uncore_Remove_Tech:Get(x)
 	return {
@@ -97,7 +103,7 @@ function Uncore_Remove_Tech:Get(x)
 	}
 end
 
-local Stat_Bonus = {
+local Edit_Stat_Bonus = {
 	{'UT_SCAN',			'Weapon_Scan_Radius',					'*',	1.6},		-- 1.1
 	{'UT_ROCKETS',		'Ship_Weapons_Guns_CoolTime',			'*',	0.5},		-- 0.8
 	{'UT_PROTECT',		'Suit_Protection',						'+',	0.1,	2},	-- 0.2
@@ -105,36 +111,66 @@ local Stat_Bonus = {
 	{'SHIPROCKETS',		'Ship_Weapons_Guns_Damage',				'*',	1.5},		-- 6500
 	{'VEHICLE_GRIP1',	'Vehicle_Grip',							'+',	-0.4},		-- 3
 	{'VEHICLE_GRIP1',	'Vehicle_SkidGrip',						'+',	0.22},		-- 0.66
+	{'VEHICLE_ENGINE',	'Vehicle_Grip',							'+',	1.5},		-- 1
+	{'VEHICLE_ENGINE',	'Vehicle_SkidGrip',						'+',	-0.15},		-- 1
 	{'MECH_GUN',		'Vehicle_GunDamage',					'+',	80},		-- 340
-	{'MECH_GUN',		'Vehicle_GunRate',						'+',	0.45},		-- 0.35
+	{'MECH_GUN',		'Vehicle_GunRate',						'+',	0.35},		-- 0.35
 	{'MECH_ENGINE',		'Vehicle_EngineFuelUse',				'+',	0.5},		-- 0.5
 	{'MECH_FUEL',		'Vehicle_EngineFuelUse',				'+',	0.07},		-- 0.8
 	{'F_HYPERDRIVE',	'Freighter_Hyperdrive_JumpDistance',	'*',	10},		-- 100
 	{'F_HDRIVEBOOST1',	'Freighter_Hyperdrive_JumpDistance',	'*',	8},			-- 200
 	{'F_HDRIVEBOOST2',	'Freighter_Hyperdrive_JumpDistance',	'*',	6},			-- 300
-	{'F_HDRIVEBOOST3',	'Freighter_Hyperdrive_JumpDistance',	'*',	4}			-- 800
+	{'F_HDRIVEBOOST3',	'Freighter_Hyperdrive_JumpDistance',	'*',	4},			-- 800
+	{'SOLAR_SAIL',		'Ship_PulseDrive_MiniJumpFuelSpending',	'+',	0.4},		-- 0.2
+	{'SHIPJUMP_SPEC',	'Ship_BoostManeuverability',			'+',	-0.15},		-- 1.25
+	{'SHIPJUMP_SPEC',	'Ship_Boost',							'+',	-10},		-- 120
+
+	{'MECH_ENGINE',		'Vehicle_FuelRegen',					3,		1},
+	{'VEHICLE_ENGINE',	'Vehicle_FuelRegen',					3,		1},
+	{'SUB_ENGINE',		'Vehicle_FuelRegen',					3,		1},
+	{'STRONGLASER',		'Weapon_Laser_Damage',					3,		0},
+	{'UT_MINER',		'Weapon_Laser_Damage',					4,		0},
+	{'UT_ROCKETS',		'Ship_Weapons_Guns_Damage',				5000,	0},
+	{'PHOTONIX_CORE',	'Ship_Launcher_AutoCharge',				1,		1},
+	{'SOLAR_SAIL',		'Ship_Maneuverability',					1.1,	3},
+	{'SOLAR_SAIL',		'Ship_PulseDrive_MiniJumpSpeed',		1.2,	3},
+	{'PHOTONIX_CORE',	'Ship_PulseDrive_MiniJumpSpeed',		1.3,	3},
+	{'UT_SHIPGUN',		'Ship_Weapons_ShieldLeech',				0.2,	3},
+	{'SHIPLAS_ALIEN',	'Ship_Weapons_ShieldLeech',				0.22,	1},
 }
-function Stat_Bonus:Get(x)
-	local T = {
-		MATH_OPERATION 		= x[3],
-		INTEGER_TO_FLOAT	= 'FORCE',
-		SPECIAL_KEY_WORDS	= {'ID', x[1], 'StatsType', x[2]},
-		SECTION_UP			= 1,
-		VALUE_CHANGE_TABLE 	= { {'Bonus', x[4]} }
-	}
-	if x[5] then T.SECTION_ACTIVE	= x[5] end
+function Edit_Stat_Bonus:Get(x)
+	local T = {}
+	if x[3] then
+		if tonumber(x[3]) ~= nil then
+			-- add new
+			local GcStats = [[
+				<Property value="GcStatsBonus.xml">
+					<Property name="Stat" value="GcStatsTypes.xml">
+						<Property name="StatsType" value="]]..x[2]..[[" />
+					</Property>
+					<Property name="Bonus" value="]]..x[3]..[[" />
+					<Property name="Level" value="]]..x[4]..[[" />
+				</Property>
+			]]
+			T.SPECIAL_KEY_WORDS		= {'ID', x[1]}
+			T.PRECEDING_KEY_WORDS	= 'StatBonuses'
+			T.ADD					= GcStats
+		else
+			-- edit
+			T.MATH_OPERATION 		= x[3]
+			T.INTEGER_TO_FLOAT		= 'FORCE'
+			T.SPECIAL_KEY_WORDS		= {'ID', x[1], 'StatsType', x[2]}
+			T.SECTION_UP			= 1
+			T.SECTION_ACTIVE		= x[5] or 0
+			T.VALUE_CHANGE_TABLE 	= { {'Bonus', x[4]} }
+		end		
+	else
+		-- remove
+		T.SPECIAL_KEY_WORDS		= {'ID', x[1], 'StatsType', x[2]}
+		T.SECTION_UP			= 1
+		T.REMOVE				= 'SECTION'		
+	end
 	return T
-end
-function Stat_Bonus.AddNew(stat, bonus, level)
-	return [[
-		<Property value="GcStatsBonus.xml">
-			<Property name="StatsTypes" value="GcStatsTypes.xml">
-				<Property name="StatsType" value="]]..stat..[[" />
-			</Property>
-			<Property name="Bonus" value="]]..bonus..[[" />
-			<Property name="Level" value="]]..level..[[" />
-		</Property>
-	]]
 end
 
 local Move_Charge_To_Top = {
@@ -180,8 +216,7 @@ local Source_Table_Tech = 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE TECHNOLOGY.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_TABLES ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -189,25 +224,40 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= Source_Table_Tech,
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'STRONGLASER'},
-				PRECEDING_KEY_WORDS	= 'StatBonuses',
-				ADD 				= Stat_Bonus.AddNew('Weapon_Laser_Damage', 3, 0)
+				SPECIAL_KEY_WORDS	= {'ID', 'SOLAR_SAIL'},
+				VALUE_CHANGE_TABLE 	= {
+					{'FragmentCost', 480}
+				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'UT_MINER'},
-				PRECEDING_KEY_WORDS	= 'StatBonuses',
-				ADD 				= Stat_Bonus.AddNew('Weapon_Laser_Damage', 4, 0)
+				SPECIAL_KEY_WORDS	= {'ID', 'PHOTONIX_CORE'},
+				VALUE_CHANGE_TABLE 	= {
+					{'FragmentCost', 480}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'SHIPJUMP_SPEC'},
+				VALUE_CHANGE_TABLE 	= {
+					{'FragmentCost', 520}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'PHOTONIX_CORE'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PULSEPHOTONIX.DDS'}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'ID', 'SHIPJUMP_SPEC'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Filename', 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PULSESPEC.DDS'}
+				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'UT_MINER'},
 				VALUE_CHANGE_TABLE 	= {
 					{'Filename', 'TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.RAILGUN1MOD.DDS'}
 				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID','UT_ROCKETS'},
-				PRECEDING_KEY_WORDS	= 'StatBonuses',
-				ADD 				= Stat_Bonus.AddNew('Ship_Weapons_Guns_Damage', 4600, 0)
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'MECH_MINER'},
@@ -234,11 +284,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	},
 	{
 		MBIN_FILE_SOURCE	= Source_Table_Tech,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Projectile_Upgrade_Colour)
+		EXML_CHANGE_TABLE	= BuildExmlChangeTable(RBG_Colors)
 	},
 	{
 		MBIN_FILE_SOURCE	= Source_Table_Tech,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Stat_Bonus)
+		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Edit_Stat_Bonus)
 	},
 	{
 		MBIN_FILE_SOURCE	= Source_Table_Tech,

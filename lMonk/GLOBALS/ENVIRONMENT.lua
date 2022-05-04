@@ -7,8 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC ENVIRONMENT.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -27,11 +26,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				REPLACE_TYPE 		= 'ALL',
+				MATH_OPERATION 		= '*',
+				INTEGER_TO_FLOAT	= 'FORCE',
+				PRECEDING_KEY_WORDS = 'LODAdjust',
+				SECTION_ACTIVE		= 3,
+				VALUE_CHANGE_TABLE 	= {
+					{'IGNORE',		2}
+				}
+			},
+			{
 				MATH_OPERATION 		= '*',
 				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = 'LODAdjust',
 				SECTION_ACTIVE		= 4,
-				LINE_OFFSET			= 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'IGNORE',		2}
 				}

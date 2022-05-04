@@ -7,8 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC UI.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_GLOBALS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -27,26 +26,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'RefinerPadStartTime',						-0.75},	-- 1
 					{'HUDMarkerDistanceOrTimeDistance',			29000},	-- 1250
 					{'FreighterLeaderIconDistance',				-3000},	-- 10000
-					{'ShipOverheatSwitchMessageWait',			-0.9},	-- 0.9
-					{'ShipOverheatSwitchMessageTime',			-1.6},	-- 1.6
 					{'NotificationsResourceExtractHintCount',	-1000},	-- 1500
 					{'NotificationStaminaHintDistanceWalked',	-8000},	-- 10000
-					{'NotificationMinVisibleTime',				-1},	-- 3
-					{'NotificationInteractHintStartTime',		9999},	-- 1800
-					{'NotificationBuildHintStartTime',			9999},	-- 31
-					{'NotificationJetpackTime',					9999},	-- 1.3
-					{'NotificationShieldTime',					9999},	-- 3.5
+					{'NotificationMinVisibleTime',				-2},	-- 3
+					{'NotificationInteractHintStartTime',		99999},	-- 1800
+					{'NotificationBuildHintStartTime',			99999},	-- 31
+					{'NotificationJetpackTime',					99999},	-- 1.3
+					{'NotificationShieldTime',					99999},	-- 3.5
 					{'NotificationScanTime',					-300},	-- 600
 					{'NotificationScanTimeCutoff',				-14000},-- 20000
 
-					{'NotificationShipBoostTime',				9999},	-- 15.5
-					{'NotificationShipBoostTimeVR',				9999},	-- 30
-					{'NotificationShipJumpMinTime',				-2},	-- 2
-					{'NotificationShipJumpReminderTime',		9999},	-- 300
-					{'NotificationShipJumpReminderTutorial',	9999},	-- 10
-					{'NotificationShipBoostMinTime',			-5},	-- 5
-					{'NotificationShipBoostReminderTime',		9999},	-- 300
-					{'NotificationShipBoostReminderTimeTutorial',9999},	-- 10
+					{'NotificationShipBoostTime',				99999},	-- 15.5
+					{'NotificationShipBoostTimeVR',				99999},	-- 30
+					{'NotificationShipJumpReminderTime',		99999},	-- 300
+					{'NotificationShipJumpReminderTutorial',	99999},	-- 10
+					{'NotificationShipBoostReminderTime',		99999},	-- 300
+					{'NotificationShipBoostReminderTimeTutorial',99999},-- 10
 
 					{'NotificationUrgentMessageTime',			-10},	-- 22
 					{'NotificationMissionHintTime',				-10},	-- 21
@@ -65,7 +60,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'DiscoverPlanetMessageTime',				-4.5}, 	-- 7
 					{'TextChatMaxDisplayTime',					-45},	-- 60
 					{'TextChatStayBigAfterTextInput',			-10}, 	-- 15
-					{'TargetParallaxMouseMultiplier',			-0.36} 	-- 0.36
+				}
+			},
+			{
+				VALUE_CHANGE_TABLE 	= {
+					{'HideExtremePlanetNotifications',			true},
+					{'ShipOverheatSwitchMessageWait',			-1},	-- 0.9
+					{'ShipOverheatSwitchMessageTime',			-1},	-- 1.6
+					{'NotificationShipJumpMinTime',				-1},	-- 2
+					{'NotificationShipBoostMinTime',			-1},	-- 5
+					{'TargetParallaxMouseMultiplier',			0}, 	-- 0.36
 				}
 			},
 			{
@@ -94,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'Distance',		0.44},	-- 1.3
 					{'x',				-0.21},	-- -0.3
-					{'y',				0.06},	-- 0.077
+					{'y',				0.035},	-- 0.077
 					{'z',				0.6},	-- 0
 					{'Pitch',			20},	-- 0
 					{'Rotate',			-40},	-- -45
@@ -106,7 +110,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = {'ModelViews', 'ModelViews', 'Vehicle'},
 				VALUE_CHANGE_TABLE 	= {
-					{'x',				-3.6},
+					{'x',				-3.5},
 					{'y',				0.06},
 					{'Pitch',			5},
 					{'Rotate',			-43},
@@ -132,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'z',				-0.05},
 					{'Pitch',			15},
 					{'LightPitch',		35},
-					{'LightRotate',		251}
+					{'LightRotate',		250}
 				}
 			}
 		}

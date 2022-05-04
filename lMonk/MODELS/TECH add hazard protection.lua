@@ -1,13 +1,14 @@
 -------------------------------------------------------------------------------
 local desc = [[
   Add hazard protection and a small light to beacon, cooker and signal booster
+  (balatant cheat)
 ]]-----------------------------------------------------------------------------
 
 local Tech_Light = { lum=28000.0, r=0.86, g=0.18, b=0.28 }
 
 local Protection_Radius = 8
 
-local Add_Light = [[
+local Beacon_Light = [[
 	<Property value="TkSceneNodeData.xml">
 		<Property name="Name" value="TechLight02"/>
 		<Property name="NameHash" value="0"/>
@@ -79,9 +80,9 @@ local Add_Light = [[
 	</Property>
 ]]
 
-local Add_Heater = [[
+local Shield_Sphere = [[
 	<Property value="TkSceneNodeData.xml">
-		<Property name="Name" value="HeatedFloors"/>
+		<Property name="Name" value="ShieldSphere"/>
 		<Property name="NameHash" value="0"/>
 		<Property name="Type" value="LOCATOR"/>
 		<Property name="Transform" value="TkTransformData.xml">
@@ -139,8 +140,7 @@ local Add_Heater = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL hazard protection with tech.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.75,
-	MOD_BATCHNAME		= '_MODELS ~@~collection.pak',
+	NMS_VERSION			= 3.89,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -154,7 +154,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				PRECEDING_KEY_WORDS	= 'Children',
 				SECTION_ACTIVE		= 1,
-				ADD 				= Add_Light .. Add_Heater
+				ADD 				= Beacon_Light .. Shield_Sphere
 			}
 		}
 	}
