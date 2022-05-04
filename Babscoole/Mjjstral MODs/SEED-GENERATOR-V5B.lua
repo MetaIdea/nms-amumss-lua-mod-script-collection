@@ -4,23 +4,23 @@
 
 DEFAULT_SEED_NUMBER = 17000
 
-NUMBER_OF_SEEDS =
-{
-	["FIGHTER"]		=	DEFAULT_SEED_NUMBER,
-	["DROPSHIP"] 	=	DEFAULT_SEED_NUMBER,
-	["SCIENTIFIC"]	= 	DEFAULT_SEED_NUMBER,
-	["SHUTTLE"]		=   DEFAULT_SEED_NUMBER,
-	["ROYAL"]		=  	DEFAULT_SEED_NUMBER,
-	["ALIEN"]		=  	DEFAULT_SEED_NUMBER,
-	["SAIL"]		=  	DEFAULT_SEED_NUMBER,	
-	["MULTITOOL"] 	= 	DEFAULT_SEED_NUMBER,
-	["ROYALMULTITOOL"] 	= 	DEFAULT_SEED_NUMBER,
-}
+-- NUMBER_OF_SEEDS =  -- Commented out 20 March 2022, unused
+-- {
+	-- ["FIGHTER"]		=	DEFAULT_SEED_NUMBER,
+	-- ["DROPSHIP"] 	=	DEFAULT_SEED_NUMBER,
+	-- ["SCIENTIFIC"]	= 	DEFAULT_SEED_NUMBER,
+	-- ["SHUTTLE"]		=   DEFAULT_SEED_NUMBER,
+	-- ["ROYAL"]		=  	DEFAULT_SEED_NUMBER,
+	-- ["ALIEN"]		=  	DEFAULT_SEED_NUMBER,
+	-- ["SAIL"]	=  	DEFAULT_SEED_NUMBER,	
+	-- ["MULTITOOL"] 	= 	DEFAULT_SEED_NUMBER,
+	-- ["ROYALMULTITOOL"] 	= 	DEFAULT_SEED_NUMBER,
+-- }
 
 SELECTED_SEED_TYPES = 
 {
 	"FIGHTER", "DROPSHIP", "SCIENTIFIC", "SHUTTLE", "ROYAL", "ALIEN", "SAIL",
-	"MULTITOOL", "ROYALMULTITOOL",
+	"MULTITOOL", "ROYALMULTITOOL", 
 	-- "FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
 	-- "SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGAT", "COMBATFRIGATE", "DIPLOMATICFRIGAT",
 	-- "NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
@@ -30,17 +30,17 @@ SELECTED_SEED_TYPES =
 	-- "WEIRDBUTTERFLY"
 }
 
-SEED_TYPES = 
-{ 
-	"FIGHTER", "DROPSHIP", "SCIENTIFIC", "SHUTTLE", "ROYAL", "ALIEN", "SAIL",
-	"MULTITOOL", "ROYALMULTITOOL",
-	-- "FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
-	-- "SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGAT", "COMBATFRIGATE", "DIPLOMATICFRIGAT",
-	-- "POLICEFREIGHTER", "POLICESHIP",
-	-- "NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
-	-- "TREX",
-	-- "PLANET",
-}
+-- SEED_TYPES = -- Commented out 20 March 2022, unused
+-- { 
+	-- "FIGHTER", "DROPSHIP", "SCIENTIFIC", "SHUTTLE", "ROYAL", "ALIEN", "SAIL",
+	-- "MULTITOOL", "ROYALMULTITOOL", 
+	-- -- "FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
+	-- -- "SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGATE", "COMBATFRIGATE", "DIPLOMATICFRIGATE",
+	-- -- "POLICEFREIGHTER", "POLICESHIP",
+	-- -- "NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
+	-- -- "TREX",
+	-- -- "PLANET",
+-- }
 
 SEED_TYPE_PATH = 
 {
@@ -122,46 +122,46 @@ SEED_TYPE_PATH =
 	
 }
 
-USER_SEED_LIST = --Add your own seeds here. If you only want own seeds set the numbers above to 0.
-{
-	["FIGHTER"] =
-	{
-	"-4266666232903262234", --HORIZOSHIP
-	"-8174559354674307366", --ALPHAVSHIP
-	}, 
-	["DROPSHIP"] =
-	{
-	--add your DROPSHIP seeds here
-	},
-	["SCIENTIFIC"] =
-	{
-	--add your SCIENTIFIC seeds here
-	},
-	["SHUTTLE"] =
-	{
-	--add your SHUTTLE seeds here
-	}, 
-	["ROYAL"] =
-	{
-	--add your ROYAL seeds here
-	},
-	["ALIEN"] =
-	{
-	--add your ALIEN seeds here
-	},	
-	["SAIL"] =
-	{
-	--add your SAILSHIP seeds here
-	},		
-	["MULTITOOL"] =
-	{
-		"-3613125059207465828", --REZOSUZ65
-	},
-	["ROYALMULTITOOL"] =
-	{
-	--add your ROYALMULTITOOL seeds here
-	},	
-}
+-- USER_SEED_LIST = --Add your own seeds here. If you only want own seeds set the numbers above to 0.  -- Commented out 20 March 2022, unused
+-- {
+	-- ["FIGHTER"] =
+	-- {
+	-- "-4266666232903262234", --HORIZOSHIP
+	-- "-8174559354674307366", --ALPHAVSHIP
+	-- }, 
+	-- ["DROPSHIP"] =
+	-- {
+	-- --add your DROPSHIP seeds here
+	-- },
+	-- ["SCIENTIFIC"] =
+	-- {
+	-- --add your SCIENTIFIC seeds here
+	-- },
+	-- ["SHUTTLE"] =
+	-- {
+	-- --add your SHUTTLE seeds here
+	-- }, 
+	-- ["ROYAL"] =
+	-- {
+	-- --add your ROYAL seeds here
+	-- },
+	-- ["ALIEN"] =
+	-- {
+	-- --add your ALIEN seeds here
+	-- },	
+	-- ["SAIL"] =
+	-- {
+	-- --add your SAILSHIP seeds here
+	-- },		
+	-- ["MULTITOOL"] =
+	-- {
+		-- "-3613125059207465828", --REZOSUZ65
+	-- },
+	-- ["ROYALMULTITOOL"] =
+	-- {
+	-- --add your ROYALMULTITOOL seeds here
+	-- },
+-- }
 
 ----------------------------------------------------
 --CODINGS-------------------------------------------
@@ -197,7 +197,7 @@ BUTTON_ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
 ANIM_TEMPLATE_ALL = ""
 QUICK_ACTION_BUTTON_ALL = ""
 ACTION_TRIGGER_COMPONENT = ""
-ACTION_TRIGGER_ALL = ""
+--ACTION_TRIGGER_ALL = ""  -- Commented out 20 March 2022, unused
 CUSTOM_GENERICREWARD_ALL = ""
 
 function CreateCustomMultitoolRewardSubEntry(DEC_SEED, HEX_SEED, TYPE)
@@ -488,7 +488,7 @@ local GENERIC_REWARD_ALIEN_SUB_ENTRY =
 						<Property name="InventoryType" value="Technology" />
 					  </Property>
 					  <Property name="Id" value="WARP_ALIEN" />
-					  <Property name="Amount" value="24" />
+					  <Property name="Amount" value="120" />
 					  <Property name="MaxAmount" value="120" />
 					  <Property name="DamageFactor" value="0" />
 					  <Property name="FullyInstalled" value="True" />
@@ -526,11 +526,14 @@ local GENERIC_REWARD_ALIEN_SUB_ENTRY =
 				  <Property name="Name" value="]] .. NAME .. [[" />
 				  <Property name="Version" value="0" />
 				</Property>
+              <Property name="ShipType" value="GcSpaceshipClasses.xml">
+                <Property name="ShipClass" value="Alien" />
+              </Property>				
               <Property name="NameOverride" value="" />
               <Property name="IsGift" value="False" />
               <Property name="IsRewardShip" value="False" />
               <Property name="FormatAsSeasonal" value="False" />					
-			  </Property>
+			</Property>
             <Property name="LabelID" value="" />
           </Property>
 ]]
@@ -677,11 +680,14 @@ local GENERIC_REWARD_SAILSHIP_SUB_ENTRY =
 				  <Property name="Name" value="]] .. NAME .. [[" />
 				  <Property name="Version" value="0" />
 				</Property>
+              <Property name="ShipType" value="GcSpaceshipClasses.xml">
+                <Property name="ShipClass" value="Sail" />
+              </Property>					
               <Property name="NameOverride" value="" />
               <Property name="IsGift" value="False" />
               <Property name="IsRewardShip" value="False" />
               <Property name="FormatAsSeasonal" value="False" />				
-			  </Property>
+			</Property>
             <Property name="LabelID" value="" />
           </Property>
 ]]
@@ -762,7 +768,8 @@ return ACTION_TRIGGER_ENTRY
 end
 
 function CreateActionTriggerComponent(ACTION_TRIGGER_LIST_)
-local ACTION_TRIGGER_COMPONENT =
+ACTION_TRIGGER_COMPONENT =
+--local ACTION_TRIGGER_COMPONENT =  ---- Commented out 20 March 2022, shadow variable
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -837,13 +844,14 @@ QUICK_ACTION_BUTTON_TEMPLATE =
 return QUICK_ACTION_BUTTON_TEMPLATE
 end
 
-function FormatPath(FILEPATH)
-	return string.gsub(FILEPATH, string.char(92) .. string.char(92), string.char(92))	
-end
+-- Commented out 20 March 2022, unused
+-- function FormatPath(FILEPATH)
+	-- return string.gsub(FILEPATH, string.char(92) .. string.char(92), string.char(92))	
+-- end
 
-function GetObjectID(SCENEPATH)
-	return string.gsub(string.match(string.match(SCENEPATH, "^.+/(.+)$"), "(.+)%.(.+)"), ".SCENE", "")
-end
+-- function GetObjectID(SCENEPATH)
+	-- return string.gsub(string.match(string.match(SCENEPATH, "^.+/(.+)$"), "(.+)%.(.+)"), ".SCENE", "")
+-- end
 
 SEED_COUNT = 1
 function CreateSeedRewardLists()
@@ -856,10 +864,8 @@ function CreateSeedRewardLists()
 					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomAlienShipRewardSubEntry(HexToDec(Seed), SELECTED_SEED_TYPES[i], Seed)
 				elseif SELECTED_SEED_TYPES[i] == "SAIL" then
 					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomSailShipRewardSubEntry(HexToDec(Seed), SELECTED_SEED_TYPES[i], Seed)
-				elseif SELECTED_SEED_TYPES[i] == "MULTITOOL" then
-					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SELECTED_SEED_TYPES[i])
-				elseif SELECTED_SEED_TYPES[i] == "ROYALMULTITOOL" then
-					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SELECTED_SEED_TYPES[i])					
+				elseif SELECTED_SEED_TYPES[i] == "MULTITOOL" or "ROYALMULTITOOL" then
+					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SELECTED_SEED_TYPES[i])				
 				else
 					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomShipRewardSubEntry(HexToDec(Seed), SELECTED_SEED_TYPES[i], Seed)				
 				end
@@ -882,7 +888,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "zzzSEED-GENERATOR-V5B.pak",
 ["MOD_AUTHOR"]				= "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"]			= "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]				= "3.88",
+["NMS_VERSION"]				= "3.89",
 ["MODIFICATIONS"] 			= 
 	{
 		{
