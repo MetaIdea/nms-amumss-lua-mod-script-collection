@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "SolarShipUnfoldWithoutSails.pak",
 ["MOD_AUTHOR"]				= "Mjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
-["NMS_VERSION"]				= "3.85+",
+["NMS_VERSION"]				= "3.89",
 ["MODIFICATIONS"] 			= 
 	{
 		{

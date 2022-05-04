@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "IncreaseSpaceEncounterChance.pak",
 ["MOD_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.88",
+["NMS_VERSION"]				= "3.89",
 ["MODIFICATIONS"] 			= 
 	{
 		{

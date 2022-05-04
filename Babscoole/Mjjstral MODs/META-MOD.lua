@@ -36,7 +36,8 @@ QUICK_ACTION_LIST =
 	"TREE_EXO",
 	"TREE_CRAFT",
 	"TREE_FRIGATE",
-	"BLACK_HOLE_WARP", 	
+	"BLACK_HOLE_WARP", 
+	"RELIC_GATE_WARP",
 	"CENTREJOURNEY1",
 	"CENTREJOURNEY2",
 	"CENTREJOURNEY3",
@@ -457,6 +458,27 @@ QUICK_ACTION_MENU =
             </Property>
 ]]		
 	},
+	["RELIC_GATE_WARP"] = 
+	{
+		["TITLE"] 			= "Relic Gate Warp",
+		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS",
+		["ANIM"] 			= "RELIC_GATE_WARP",
+		["ACTION_TRIGGER"] 	= 
+[[
+            <Property value="GcActionTrigger.xml">
+              <Property name="Event" value="GcAnimFrameEvent.xml">
+                <Property name="Anim" value="RELIC_GATE_WARP" />
+                <Property name="FrameStart" value="0" />
+                <Property name="StartFromEnd" value="False" />
+              </Property>	
+              <Property name="Action">
+                <Property value="GcWarpAction.xml">
+                  <Property name="WarpType" value="SpacePOI" />
+                </Property>
+              </Property>
+            </Property>
+]]		
+	},	
 	["POWER_STATE"] = 
 	{
 		["TITLE"] 			= "Emit Electricity (WIP)",
@@ -1453,7 +1475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]				= "3.88",
+["NMS_VERSION"]				= "3.89",
 ["MODIFICATIONS"] 			= 
 	{
 		{

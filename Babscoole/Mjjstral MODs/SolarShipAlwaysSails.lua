@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Disable-VR-Warnings.pak",
-["MOD_AUTHOR"]				= "Mjjstral",
+["MOD_FILENAME"] 			= "SolarShipAlwaysSails.pak",
+["MOD_AUTHOR"]				= "Mjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
 ["NMS_VERSION"]				= "3.89",
 ["MODIFICATIONS"] 			= 
@@ -10,15 +10,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "UI\HUD\HUDVRWARNING.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIPPARTS\SAILSHIPANIMS\SAILSHIP_SHARED\ENTITIES\ROOTJNT.ENTITY.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"IsHidden",						"True"}, 	-- Original "False"								
+								{"Filename", ""},
+
 							}
 						}
 					}
