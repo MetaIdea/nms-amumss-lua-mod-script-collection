@@ -28,9 +28,9 @@ EnergyDischargeRateMedium = 0.125		-- '' | 0.25 | 607
 EnergyDischargeRateHigh = 0.45			-- '' | 0.9 | 608
 EnergyDischargeRateFloatingInSpace = 5	-- '' | 30 | 609
 
-FreeJetpackRange = 30					--  | 3 | 650
-FreeJetpackRangePrime = 50					--  | 5 | 651
-FreeJetpackRangeNonTerrain = 30			--  | 1.1 | 652
+FreeJetpackRange = 20					--  | 3 | 650
+FreeJetpackRangePrime = 40					--  | 5 | 651
+FreeJetpackRangeNonTerrain = 20			--  | 1.1 | 652
 JetpackDrainHorizontalFactor = 1.25		--  | 2.5 | 653
 
 RocketBootsImpulse = 4					--  | 3 | 663
@@ -45,9 +45,9 @@ RocketBootsBoostTankDrainSpeed = 2		--  | 6 | 674
 JetpackBrake = 6.6						--  | 2.2 | 688
 JetpackMaxSpeed = 15					-- Jetpack speed | 5 | 691
 JetpackIgnitionTime = 0.2				-- Time it takes to start the Jetpack | 0.4 | 695
-JetpackTankTime01 = 16					--  | 4 | 698
-JetpackTankTime02 = 24					--  | 6 | 699
-JetpackTankTime03 = 36					--  | 8 | 700
+JetpackTankTime01 = 12					--  | 4 | 698
+JetpackTankTime02 = 18					--  | 6 | 699
+JetpackTankTime03 = 24					--  | 8 | 700
 JetpackFillRate = 1						-- Rate at which Jetpack refills | 0.5 | 702
 JetpackFillRateHardMode = 0.5			-- Rate at which Jetpack refills on Survival | 0.2 | 703
 JetpackFillRateMidair = 0.5				-- Rate at which Jetpack refills while in the air | 0.25 | 704
