@@ -8,12 +8,12 @@ FileSource01 = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN"
 
 --##### Variables #####
 --## Fine LOD ##
-LODAdjust01 = 2				--  | 1 | 130
-LODAdjust02 = 2.5			--  | 1 | 131
-LODAdjust03 = 3				--  | 1 | 132
-LODAdjust04 = 3.5			--  | 1 | 133
-LODAdjust05 = 4				--  | 1 | 134
-TerrainFadeTime = 0.5		-- Amount of time it takes for terrain to fade in/out of different detail modes | 2 | 284
+LODAdjust01 = 2				--  | 1
+LODAdjust02 = 2				--  | 1
+LODAdjust03 = 2				--  | 1
+LODAdjust04 = 2				--  | 1
+LODAdjust05 = 2				--  | 1
+TerrainFadeTime = 1			-- Amount of time it takes for terrain to fade in/out of different detail modes | 2 | 284
 TerrainFadeTimeInShip = 1	-- Amount of time it takes for terrain to fade in/out of different detail modes while in a ship | 2 | 285
 CreatureFadeTime = 0.7		-- Amount of time it takes for creatures to fade in/out of different detail modes | 1.5 | 286
 FloraFadeTimeMin = 0.3		-- Minimum amount of time to take for all flora to fade in/out of different detail modes | 0.6 | 287
@@ -21,8 +21,8 @@ FloraFadeTimeMax = 1.1		-- Max amount of time to take for all flora to fade in/o
 
 --## Step ##
 AnimationScale = 15			-- Determines how fast the clouds morph | 50 | 198
-WindOffsetX = 0.25			-- Determines the speed of the clouds along the X axis | 0.5 | 202
-WindOffsetY = 0.25			-- Determines the speed of the clouds along the Y axis | 0.5 | 203
+WindOffsetX = 0.25			-- Determines the speed of the clouds along the X axis | 0.5 | 222
+WindOffsetY = 0.25			-- Determines the speed of the clouds along the Y axis | 0.5 | 223
 
 Cloud01X = 0.09				-- Determines max cloud size along the X axis | 0.1 | 214
 Cloud01Y = 0.1				-- Determines max cloud size along the Y axis | 0.15 | 215
