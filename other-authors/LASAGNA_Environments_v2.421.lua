@@ -1,3 +1,23 @@
+--There are 8 sections in this script:
+
+--1. Global variables
+--2. Lush biomes (biomes I) - i.e. lush biomes for lower density changes (seperated to address invisible grass bug/ultra planet quality)
+--3. Large/high density biomes (biomes II) - i.e. huge prop biomes for lower density changes
+--4. Smaller/lower density biomes (biomes III) - i.e. frozen biomes for higher density changes
+--5. Just crystals (biomes IV) - i.e. "E3" crystals
+--6. Global misc. terrain/LOD/fade time stuff - only section that affects global .mbins
+--7. Patchscale/regionscale density - i.e. balance forests vs. empty areas
+--8. Fast start
+
+--Biomes I, II, III, IV sub-sections:
+--a. Destroyed by ship & scale
+--b. Coverage/density changes
+--c. LOD distance/radius/fade distance
+
+					---------------------------------------------------------
+					--= = = = = = = = = 1. GLOBAL VARIABLES = = = = = = = = =
+					---------------------------------------------------------
+
 SMALLEST_SCALE = 1.5
 SMALL_SCALE = 2.3 --grass, bushes, etc. (2.3 so tall grass doesn't hit eyes on uphill climb)
 MEDIUM_SCALE = 4 --misc. outlier values
@@ -31,7 +51,7 @@ PLANET_LOD_MULTIPLIER = 3		--planet lod distance multiplier
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Environments_v2.4.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Environments_v2.42.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -40,39 +60,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
+				
+				
+				
+				
 				{
+					---------------------------------------------------------------------------
+					--= = = = = = = = = = = = = 2. LUSH BIOMES (BIOMES I) = = = = = = = = = = =
+					---------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSMID.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSFULLULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR1.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR1ULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR2.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR2ULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR3.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR3ULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENALIENOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENALIENOBJECTSULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULLULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGBIOME.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULLULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKBIOME.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULLULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHBIOME.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICBIOME.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUVWPLANTBIOME.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
+						
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTSULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULLULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTSULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\ULTRAEXTERNALOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL.MBIN",
@@ -87,51 +93,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHULTRAOBJECTS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\MOUNTAIN\MOUNTAINROCKS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FLYTRAPPLANT.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\ALWAYSPRESENT.MBIN",--
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CAVECUBES.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CAVEPROPS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CLAMSHELLPROPS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\FIENDEGGS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\FLOATINGPHYSICS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\FLOATINGPROPS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\GEMPROPS.MBIN",--
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\LANDURCHINS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\METALFORMATION.MBIN",--
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\NAVDATA.MBIN",--
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PHYSICSPROPS.MBIN",--
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PICKUPCUBE.MBIN",--
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROCBONES.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROCSALVAGE.MBIN",--
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROXIMITYPROPS.MBIN",--
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROXIMITYTENTACLEPROPS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\RARECRYSTALPROPS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\RAREROCKS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\STORMCRYSTALS.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERGROUNDFUN.MBIN",
-						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERWATERSPHERES.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BARRENFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\DEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\FULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\LOW.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\MID.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTSULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULLULTRA.MBIN",
-						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCRYSTALS.MBIN",--creates giant crystals, obstructing all water
-						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCUCUMBERLIGHTS.MBIN", --v2.0: removed
-						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCURVECORAL.MBIN",--creates giant coral, obstructing all water
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERDEAD.MBIN",
-						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERFULL.MBIN",--v2.0: removed
-						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERGASBAGS.MBIN", --v2.0: removed
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERMID.MBIN",--
-						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERMONOLITHS.MBIN",--creates plants/shore rocks that stick out of water
-						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERPLANT.MBIN",--creates giant weeds, obstructing all waterCOVERAGE_MULTIPLIER
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEADULTRA.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
+					---------------------------------------------------------------------------------
+					-- = = = = = = = = = = = = = a. DESTROYEDBYSHIP & SCALE CHANGES = = = = = = = = =
+					---------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -340,7 +309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{						
 								{ "MaxScale",	MEDIUM_SCALE }
 							}
-						}, -------------------------------------------
+						},
 						{
 							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
 							["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -492,6 +461,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxScale",	SMALL_SCALE }
 							}
 						},
+						---------------------------------------------------------------------------
+						--= = = = = = = = = = = = b. COVERAGE/DENSITY CHANGES = = = = = = = = = = =
+						---------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -547,11 +519,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxAngle", 90 },
 							}
 						},
+						---------------------------------------------------------------------------
+						-- = = = = = = = c. LOD DISTANCE/RADIUS/FADE DISTANCE CHANGES = = = = = = =
+						---------------------------------------------------------------------------
+						--> AND CHANGES TO GRASS AND MISC. ULTRA OBJECT DENSITY -------------------
+						
 						------------------------------------------------------------------------------------------------------------------------
 						---------------Code by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)--------------------
 						------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",   	--if we wanted to replace only in a group, we would put a key_word here
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",}, --***Only applies to non-ULTRA settings
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LOD_DISTANCE_MULTIPLIER
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",    --ALL means all the file since we have no PRECEDING_KEY_WORDS
@@ -563,6 +541,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -574,6 +553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -585,6 +565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -596,6 +577,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -618,8 +600,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"FadeOutOffsetDistance",	"0"}
 							}
 						},
-						{
+						{ --***these sections broken up into standard and ultra. Ultra to fix "invisible" grass bug at full grass density
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "9999",
@@ -630,25 +613,720 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxRegionRadius",			RADIUS_MULTIPLIER},
 								{"MaxImposterRadius",		RADIUS_MULTIPLIER},
 								{"FadeOutStartDistance",	RADIUS_MULTIPLIER},
-								{"FadeOutEndDistance",		RADIUS_MULTIPLIER}
+								{"FadeOutEndDistance",		RADIUS_MULTIPLIER},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS",},
+							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","ULTRA",},
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",				0.95}, --Partially fixes shadow flickering
+								{"SlopeDensity",			0.95}, --Partially fixes shadow flickering
+								{"MaxRegionRadius",			RADIUS_MULTIPLIER},
+								{"MaxImposterRadius",		RADIUS_MULTIPLIER},
+								{"FadeOutStartDistance",	RADIUS_MULTIPLIER},
+								{"FadeOutEndDistance",		RADIUS_MULTIPLIER},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","STANDARD",},
 							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"FlatDensity",				0.9}, --Partially fixes invisible grass bug
+								{"SlopeDensity",			0.9}, --Partially fixes invisible grass bug
 								{"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
 								{"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
 								{"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
-								{"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER}
+								{"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
 							}
 						},
+						{
+							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",				0.5}, --Partially fixes invisible grass bug on lush biomes
+								{"SlopeDensity",			0.5}, --Partially fixes invisible grass bug on lush biomes
+								-- {"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER}, --Commented out, still causes invisibility bug
+								-- {"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								-- {"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								-- {"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+							}
+						},
+						------------------------------------------------------------------------------------------------------------------------
+						---------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)--------------------
+						------------------------------------------------------------------------------------------------------------------------
 					},
 				},
 				{
+					---------------------------------------------------------------------------
+					--= = = = = = = = = 3. LARGE/HIGH DENSITY BIOMES (BIOMES II) = = = = = = = =
+					---------------------------------------------------------------------------
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULLULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSMID.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSFULLULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR1.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR1ULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR2.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR2ULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR3.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR3ULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENALIENOBJECTS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENALIENOBJECTSULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULLULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGBIOME.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULLULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKBIOME.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULLULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHBIOME.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICBIOME.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUVWPLANTBIOME.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTSULTRA.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\MOUNTAIN\MOUNTAINROCKS.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FLYTRAPPLANT.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\PLANTLARGECROP.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\ALWAYSPRESENT.MBIN",--
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CAVECUBES.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CAVEPROPS.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CLAMSHELLPROPS.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\FIENDEGGS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\FLOATINGPHYSICS.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\FLOATINGPROPS.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\GEMPROPS.MBIN",--
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\LANDURCHINS.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\METALFORMATION.MBIN",--
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\NAVDATA.MBIN",--
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PHYSICSPROPS.MBIN",--
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PICKUPCUBE.MBIN",--
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROCBONES.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROCSALVAGE.MBIN",--
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROXIMITYPROPS.MBIN",--
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\PROXIMITYTENTACLEPROPS.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\RARECRYSTALPROPS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\RAREROCKS.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\STORMCRYSTALS.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERGROUNDFUN.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERWATERSPHERES.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BARRENFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\DEAD.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\FULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\LOW.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\MID.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTSULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULLULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULLULTRA.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCRYSTALS.MBIN",--creates giant crystals, obstructing all water
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCUCUMBERLIGHTS.MBIN", --v2.0: removed
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCURVECORAL.MBIN",--creates giant coral, obstructing all water
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERDEAD.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERFULL.MBIN",--v2.0: removed
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERGASBAGS.MBIN", --v2.0: removed
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERMID.MBIN",--
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERMONOLITHS.MBIN",--creates plants/shore rocks that stick out of water
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERPLANT.MBIN",--creates giant weeds, obstructing all waterCOVERAGE_MULTIPLIER
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+					---------------------------------------------------------------------------------
+					-- = = = = = = = = = = = = = a. DESTROYEDBYSHIP & SCALE CHANGES = = = = = = = = =
+					---------------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{				
+								{"DestroyedByPlayerShip",	"True"}, --So you can't get stuck in huge objects while in ship
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --8 = HQTREE17, --9 = HQTREE10 --10 = HQTREE63
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --8 = HUGEPLATFORMROCK-barren-, --20 = HUGESPIKEROCK,
+							["VALUE_MATCH"] 		= "4.1", --5 = FERNLARGEALT-swamp-, HQTREEREF-swamp-
+							["VALUE_MATCH_OPTIONS"] = ">=",
+							["VALUE_CHANGE_TABLE"] 	= --6 = --YUKKA-swamp-, FERNLIGHT-swamp-
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --CACTUSSML, SMALLSHROOMCLUSTER-swamp-, 
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --**GRAVELPATCHSNOWBLEND, GRAVELPATCHSANDBLEND
+							["VALUE_MATCH"] 		= "4", --LARGESNOWBLENDROCK, LARGESANDBLENDROCK, MEDIUMBOULDER01-toxicinfested-
+							["VALUE_CHANGE_TABLE"] 	=     --FUNGALTREE-toxic-
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "3.9",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "3.8",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "3.7",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "3.6",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --MEDIUMBLUESHROOM-toxicinfested-
+							["VALUE_MATCH"] 		= "3.5", --GRAVELPATCHSNOWBLEND**
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "3.4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "3.3", --MANGROVELARGEFULL
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "3.2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "3.1",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --LARGEVOLCANO, LARGESHARDINACTIVE02-lava-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --DEADTREE-swamp-, LARGEMOSSROCK-swamp-
+							["VALUE_MATCH"] 		= "3", --3 = HEROPINE, LARGESNOWBLENDROCK, LARGESANDBLENDROCK
+							["VALUE_CHANGE_TABLE"] 	=  --MEDIUMBOULDER02-toxicinfested-, SMALLTENDRIL-toxicinfested-
+							{						
+								{ "MaxScale",	SMALLEST_SCALE } --v1.8: changed from small, caused giant rocks on barren planets
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "2.9",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "2.8", --MANGROVELARGE
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --HQTREEREF-lushobjectsmid-
+							["VALUE_MATCH"] 		= "2.7", --SKINNYPINE, RADIOACTIVETREE
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "2.6", --FUNGALTREE-toxic-
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --FUNGALTREE
+							["VALUE_MATCH"] 		= "2.5", --MEDIUMSNOWBLENDROCK, MEDIUMSANDBLENDROCK
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "2.4", --LARGEROCK-lava-
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	MEDIUM_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", 
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --HQTREEREF-lushobjectslow-
+							["VALUE_MATCH"] 		= "2.3", --STARJOINT, MEDIUMDEADTREE01-lava-
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	LARGEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --SMALLJOINT
+							["VALUE_MATCH"] 		= "2.2", --2.2 = TALLPINE, HQTREEREF-lushobjectsmed-
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	MEDIUM_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --TOXICGRASS-radioactive-
+							["VALUE_MATCH"] 		= "2.1", --RADIOACTIVETREE, FUNGALTREE-toxic-
+							["VALUE_CHANGE_TABLE"] 	=      --MEDIUMROCK-toxic-
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --MEDIUMSHROOM-swamp-, MEDIUMSPIRE-lava-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --**MEDIUMROCK, LARGEROCK, GROUNDREVEALROCK01
+							["VALUE_MATCH"] 		= "2", --MEDIUMSNOWBLENDROCK, MEDIUMSANDBLENDROCK, FROZENGRASSLARGE, BEAMSTONE
+							["VALUE_CHANGE_TABLE"] 	=    --SMALLERODEPLANT-toxicinfested-, SMALLBOULDER-""-, BUBBLELUSHGRASS-""-
+							{						
+								{ "MaxScale",	SMALLEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "1.9", --MEDIUMPLANT-toxic-
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	MEDIUM_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",  --SMALLPLANT-lushobjectslow-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --LARGEPLANT, **MEDIUMROCK
+							["VALUE_MATCH"] 		= "1.8", --LARGETREEBARE, **MEDIUMPLANT
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	SMALL_SCALE } --Changed in v1.8 - caused huge flowers everywhere
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",  
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "1.75", --SPRIGBUSH-barrenhqobjectsfull-
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --HQFLOWERCACTUS
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --LARGETUBEROCK-radioactive-, LARGESPIKEROCK--radioactive-
+							["VALUE_MATCH"] 		= "1.7", --**MEDIUMBUSH, FUNGALTREE-toxic-
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --SMALLFLOWERS-lushobjectsmid-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --FERNLIGHT, **LARGEROCK, LARGEPLANT-lushobjectslow-
+							["VALUE_MATCH"] 		= "1.6", --**MEDIUMBUSH, GROUNDFLOWER-barren-, **SMALLROCK
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	SMALLEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --LARGESNOWBLENDROCK, MEDIUMPLANT, **SCRUBBUSH, NEWCROSSGRASS-lushobjectsmid-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --**MEDIUMROCK, --YARROW-flower-, MEDIUMSTEAMER--radioactive-
+							["VALUE_MATCH"] 		= "1.5", --1.5=GRASS, GRASSCLUMP, **NEWCROSSGRASS
+							["VALUE_CHANGE_TABLE"] 	= --HUGEBEAM, **LARGEROCK, LARGESANDBLENDROCK, FRAGMENTS, TOXICGRASS-toxicinfested-
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", 
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "1.43", --TENDRIL-toxic-
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	MEDIUM_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --MEDIUMJELLYPLANT, SCRUBBUSH, **MEDIUMBUSH
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --MEDIUMROCKS, LARGEROCK-laval-, CURVEDROCK-radioactive-
+							["VALUE_MATCH"] 		= "1.4", --**MOUNTAINROCK_1, LARGEICEROCK_1, LARGEROCKSTACK_1
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	SMALLEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --FERNLIGHT, LAVAGEMS, VOLUMEBUSH-lava-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --YARROW-flower-, MEDIUMJELLYPLANT-radioactive-
+							["VALUE_MATCH"] 		= "1.3", --SCABIOUS-flower-, **SCRUBGRASS, 
+							["VALUE_CHANGE_TABLE"] 	=   --MEDIUMROCK-
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --NEWSCRIBGRASS-barrenhqobjectsfull-
+							["VALUE_MATCH"] 		= "1.25", --SINGLEJOINT-weird-
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	SMALL_SCALE } --v1.8 - changed from medium, caused huge grass on barren planets
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --LARGETREEBARE, MEDIUMROCK, MEDIUMGROWTHS-radioactive-
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --FROZENBUSHYGRASS, **SCRUBGRASS, SMALLBOULDER
+							["VALUE_MATCH"] 		= "1.2", --MEDIUMBOULDER02, **SMALLROCK, **BUTTERCUP
+							["VALUE_CHANGE_TABLE"] 	=    --TALLGRASSBILLBOARD-toxicinfested-, SPONGE-toxic-
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --LARGEROCK-lushobjectslow-
+							["VALUE_MATCH"] 		= "1.15", --**MEDIUMROCK, SMALLPLANT
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "MaxScale",	SMALLEST_SCALE }
+							}
+						},
+						{
+							["MATH_OPERATION"] 		= "*", --1.1 = SCABIOUS-flower-, FERN, SNOWCLUMP, SMALLSNOWCLUMPS, SMALLROCK, SMALLROCKCLUMP, MOSSHUT, LAVACLUMP, LAVAGEMS
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL", --1 = TALLGRASSBILLBOARD, CURVEDMEDIUM-radioactive-, MEDIUMBOULDER02, **SMALLROCK
+							["VALUE_MATCH"] 		= "1.1",--0.5 = LEAFDROPLET-lava-
+							["VALUE_MATCH_OPTIONS"] = "<=",--0.6 = TALLGRASSBILLBOARD, MEDIUMJELLYPLANT-radioactive-
+							["VALUE_CHANGE_TABLE"] 	=      --0.8 = MOUNTAINROCK_1, **TALLGRASSBILLBOARD, SCRUBGRASS, GROUNDFLOWER--radioactive-
+							{						
+								{ "MaxScale",	SMALL_SCALE }
+							}
+						},
+						---------------------------------------------------------------------------
+						--= = = = = = = = = = = = b. COVERAGE/DENSITY CHANGES = = = = = = = = = = =
+						---------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	1},
+								{"FlatDensity", 1},
+								{"SlopeDensity",	1},
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	0.9},
+								{"FlatDensity", 1},
+								{"SlopeDensity",	1},
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	0.9},
+								{"FlatDensity", 0.9},
+								{"SlopeDensity",	0.9},
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	0.95},
+								{"FlatDensity", 0.95},
+								{"SlopeDensity",	0.95},
+							}	
+						},
+						{			
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "MaxAngle", 90 },
+							}
+						},
+						---------------------------------------------------------------------------
+						-- = = = = = = = c. LOD DISTANCE/RADIUS/FADE DISTANCE CHANGES = = = = = = =
+						---------------------------------------------------------------------------
+						--> AND CHANGES TO GRASS AND MISC. ULTRA OBJECT DENSITY -------------------
+						
+						------------------------------------------------------------------------------------------------------------------------
+						---------------Code by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)--------------------
+						------------------------------------------------------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = "",   	--if we wanted to replace only in a group, we would put a key_word here
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",}, --***Only applies to non-ULTRA settings
+							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LOD_DISTANCE_MULTIPLIER
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",    --ALL means all the file since we have no PRECEDING_KEY_WORDS
+							["LINE_OFFSET"] 		= "+1",     --one line down
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER} 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LOD_DISTANCE_MULTIPLIER}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								--{"PlacementPriority",		"High"},
+								{"MinRegionRadius",			"0"},
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}
+							}
+						},
+						{ --***these sections broken up into standard and ultra. Ultra to fix "invisible" grass bug at full grass density
+							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								--{"Coverage",				COVERAGE_MULTIPLIER},
+								{"MaxRegionRadius",			RADIUS_MULTIPLIER},
+								{"MaxImposterRadius",		RADIUS_MULTIPLIER},
+								{"FadeOutStartDistance",	RADIUS_MULTIPLIER},
+								{"FadeOutEndDistance",		RADIUS_MULTIPLIER},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","ULTRA",},
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",				0.95}, --Partially fixes shadow flickering
+								{"SlopeDensity",			0.95}, --Partially fixes shadow flickering
+								{"MaxRegionRadius",			RADIUS_MULTIPLIER},
+								{"MaxImposterRadius",		RADIUS_MULTIPLIER},
+								{"FadeOutStartDistance",	RADIUS_MULTIPLIER},
+								{"FadeOutEndDistance",		RADIUS_MULTIPLIER},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",				0.9}, --Partially fixes invisible grass bug
+								{"SlopeDensity",			0.9}, --Partially fixes invisible grass bug
+								{"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								{"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								{"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								{"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",				0.7}, --Partially fixes invisible grass bug
+								{"SlopeDensity",			0.7}, --Partially fixes invisible grass bug
+								-- {"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER}, --Commented out, still causes invisibility bug
+								-- {"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								-- {"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								-- {"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+							}
+						},
+						------------------------------------------------------------------------------------------------------------------------
+						---------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)--------------------
+						------------------------------------------------------------------------------------------------------------------------
+					},
+				},
+				{
+					---------------------------------------------------------------------------
+					-- = = = = = = = 4. SMALLER/LOWER DENSITY BIOMES  (BIOMES III) = = = = = = =
+					---------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTS.MBIN",
@@ -683,13 +1361,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULLULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTSULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULLULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTSULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\ULTRAEXTERNALOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\BEACH\FULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULLSAFE.MBIN",
@@ -709,7 +1380,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FULLSAFE.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\LUSH.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\LUSHWILD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\PLANTLARGECROP.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\RADIOACTIVE.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\RADIOACTIVEWILD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\SCORCHED.MBIN",
@@ -731,8 +1401,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTSULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDALIENOBJECTS.MBIN",
@@ -764,8 +1432,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEADULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEADULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEADULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD.MBIN",
@@ -784,6 +1450,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
+					---------------------------------------------------------------------------------
+					-- = = = = = = = = = = = = = a. DESTROYEDBYSHIP & SCALE CHANGES = = = = = = = = =
+					---------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -992,7 +1661,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{						
 								{ "MaxScale",	MEDIUM_SCALE }
 							}
-						}, -------------------------------------------
+						},
 						{
 							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
 							["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -1144,7 +1813,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxScale",	SMALL_SCALE }
 							}
 						},
-						{ --v1.3 Changed all of these to increases density
+						---------------------------------------------------------------------------
+						--= = = = = = = = = = = = b. COVERAGE/DENSITY CHANGES = = = = = = = = = = =
+						---------------------------------------------------------------------------
+						{ --v1.3 Changed all of these to increase density
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -1199,11 +1871,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxAngle", 90 },
 							}
 						},
+						---------------------------------------------------------------------------
+						-- = = = = = = = c. LOD DISTANCE/RADIUS/FADE DISTANCE CHANGES = = = = = = =
+						---------------------------------------------------------------------------
+						--> AND CHANGES TO GRASS AND MISC. ULTRA OBJECT DENSITY -------------------
+						
 						------------------------------------------------------------------------------------------------------------------------
 						---------------Code by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)--------------------
 						------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",   	--if we wanted to replace only in a group, we would put a key_word here
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",}, --***Only applies to non-ULTRA settings
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LOD_DISTANCE_MULTIPLIER
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",    --ALL means all the file since we have no PRECEDING_KEY_WORDS
@@ -1215,6 +1893,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -1226,6 +1905,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -1237,6 +1917,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -1248,6 +1929,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -1270,8 +1952,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"FadeOutOffsetDistance",	"0"}
 							}
 						},
-						{
+						{ --***these sections broken up into standard and ultra. Ultra to fix "invisible" grass bug at full grass density
 							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "9999",
@@ -1282,26 +1965,66 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxRegionRadius",			RADIUS_MULTIPLIER},
 								{"MaxImposterRadius",		RADIUS_MULTIPLIER},
 								{"FadeOutStartDistance",	RADIUS_MULTIPLIER},
-								{"FadeOutEndDistance",		RADIUS_MULTIPLIER}
+								{"FadeOutEndDistance",		RADIUS_MULTIPLIER},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS",},
+							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","ULTRA",},
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",				0.95}, --from 1, --Partially fixes shadow flickering
+								{"SlopeDensity",			0.95}, --from 1, --Partially fixes shadow flickering
+								{"MaxRegionRadius",			RADIUS_MULTIPLIER},
+								{"MaxImposterRadius",		RADIUS_MULTIPLIER},
+								{"FadeOutStartDistance",	RADIUS_MULTIPLIER},
+								{"FadeOutEndDistance",		RADIUS_MULTIPLIER},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","STANDARD",},
 							["PRECEDING_KEY_WORDS"] = "",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"FlatDensity",				0.9}, --Partially fixes invisible grass bug
+								{"SlopeDensity",			0.9}, --Partially fixes invisible grass bug
 								{"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
 								{"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
 								{"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
-								{"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER}
+								{"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",				0.7}, --Partially fixes invisible grass bug
+								{"SlopeDensity",			0.7}, --Partially fixes invisible grass bug
+								{"MaxRegionRadius",			1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								{"MaxImposterRadius",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								{"FadeOutStartDistance",	1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
+								{"FadeOutEndDistance",		1 / RADIUS_MULTIPLIER * GRASS_RADIUS_MULTIPLIER},
 							}
 						},
 					},
 				},
+				------------------------------------------------------------------------------------------------------------------------
+				---------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)--------------------
+				------------------------------------------------------------------------------------------------------------------------
 				{
 					["MBIN_FILE_SOURCE"] 	=
+					---------------------------------------------------------------------------
+					--= = = = = = = = = = = 5. JUST CRYSTALS (BIOMES IV) = = = = = = = = = = =
+					---------------------------------------------------------------------------
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\BARREN.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\DEAD.MBIN",
@@ -1314,6 +2037,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
+						---------------------------------------------------------------------------------
+						--= = = = = = = = a. DESTROYEDBYSHIP/SCALE/ROTATION/COLLISION CHANGES = = = = = =
+						---------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -1330,9 +2056,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"CollideWithPlayer",	"True"},
 							}
 						},
-						 -----------------------------------------------------------------------------------------------------------------------
-						 ---------Code originally by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)--------------
-						 -----------------------------------------------------------------------------------------------------------------------
+						---------------------------------------------------------------------------
+						-- = = = = = = c. [no b.] LOD DISTANCE/RADIUS/FADE DISTANCE CHANGES = = = =
+						---------------------------------------------------------------------------
+						
+						-----------------------------------------------------------------------------------------------------------------------
+						---------Code originally by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)--------------
+						-----------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -1426,6 +2156,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
+				
+				-----------------------------------------------------------------
+				--= = = = = 6. GLOBAL MISC. TERRAIN/LOD/FADE TIME STUFF = = = = = 
+				-----------------------------------------------------------------
+--This includes: uncached terrain, shadows, lod adjust, region, planet LOD, and fade time changes
+				
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"GCGRAPHICSGLOBALS.GLOBAL.MBIN"
@@ -1613,6 +2349,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
+						-------------------------------------------------------------------------
+						--= = = = = 7. PATCH SCALE/REGION SCALE/SPAWN DENSITY CHANGES = = = = = =
+						-------------------------------------------------------------------------
+		--Modifies placement/regions on a planet, i.e. high density areas & expansive open areas
+						
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\PLACEMENTVALUES\SPAWNDENSITYLIST.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -1768,9 +2509,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
+									----------------------------------------------------
+									-- = = = = = = = 8. FAST START CHANGES = = = = = = =
+									----------------------------------------------------
+						--makes boot load time faster, doesn't remove mod warning
+						
 					["MBIN_FILE_SOURCE"] 	= 
 					{
-						"METADATA\UI\BOOTLOGOPC.MBIN", --makes boot load time faster, doesn't remove mod warning
+						"METADATA\UI\BOOTLOGOPC.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] = {
                         {
