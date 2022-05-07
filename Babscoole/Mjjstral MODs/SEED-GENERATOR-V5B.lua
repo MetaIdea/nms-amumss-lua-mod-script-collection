@@ -853,8 +853,9 @@ end
 	-- return string.gsub(string.match(string.match(SCENEPATH, "^.+/(.+)$"), "(.+)%.(.+)"), ".SCENE", "")
 -- end
 
-SEED_COUNT = 1
+--SEED_COUNT = 1
 function CreateSeedRewardLists()
+	local SEED_COUNT = 1
 	for i=1,#SELECTED_SEED_TYPES,1 do
 			local Seed = ""
 			SUB_REWARD_ENTRY_ALL = ""
@@ -864,12 +865,12 @@ function CreateSeedRewardLists()
 					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomAlienShipRewardSubEntry(HexToDec(Seed), SELECTED_SEED_TYPES[i], Seed)
 				elseif SELECTED_SEED_TYPES[i] == "SAIL" then
 					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomSailShipRewardSubEntry(HexToDec(Seed), SELECTED_SEED_TYPES[i], Seed)
-				elseif SELECTED_SEED_TYPES[i] == "MULTITOOL" or "ROYALMULTITOOL" then
+				elseif SELECTED_SEED_TYPES[i] == "MULTITOOL" or SELECTED_SEED_TYPES[i] == "ROYALMULTITOOL" then
 					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SELECTED_SEED_TYPES[i])				
 				else
 					SUB_REWARD_ENTRY_ALL = SUB_REWARD_ENTRY_ALL .. CreateCustomShipRewardSubEntry(HexToDec(Seed), SELECTED_SEED_TYPES[i], Seed)				
 				end
-				print(SEED_COUNT .. "." .. SELECTED_SEED_TYPES[i] .. ": " .. Seed)
+			--	print(SEED_COUNT .. "." .. SELECTED_SEED_TYPES[i] .. ": " .. Seed)
 				SEED_COUNT = SEED_COUNT + 1
 			end
 			local ID = SELECTED_SEED_TYPES[i] -- .. "_REWARD"
