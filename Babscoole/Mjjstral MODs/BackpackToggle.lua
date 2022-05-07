@@ -82,6 +82,42 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Toggle" />
+                  <Property name="Name" value="_Cape_Pirate" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />				  
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Toggle" />
+                  <Property name="Name" value="_Cape_Atlas" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />				  
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Toggle" />
+                  <Property name="Name" value="_Cape_Proto" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />				  
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>						
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Toggle" />
                   <Property name="Name" value="_Chest_Vanilla" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
