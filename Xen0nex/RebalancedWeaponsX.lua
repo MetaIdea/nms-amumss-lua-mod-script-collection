@@ -11,11 +11,13 @@ GSD = 										1					--1		For all player Starship weapon damage
 ExplosionObjectMult = 0										--1
 
 --Damage multiplier for Lasers against items designated as CREATURES / ROBOTS
-LaserCreatureMult = 0.25									--1
-VehicleLaserCreatureMult = 0.25								--1
+LaserCritMult = 2										--4		How much the damage of the mining laser is multiplied on a critical hit (typically on the head / eye)
 
-LaserSentinelMult = 0.25									--0.6
-VehicleLaserSentinelMult = 0.25								--0.2
+LaserCreatureMult = 1									--1		Lowering this value appears to disable the critical weak points on creatures with the mining laser
+VehicleLaserCreatureMult = 0.2							--1
+
+LaserSentinelMult = 0.6									--0.6
+VehicleLaserSentinelMult = 0.2							--0.2
 
 	--WIP
 --Damage multipliers against DOORs and DEPOTs
@@ -888,6 +890,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\PROJECTILES\PROJECTILETABLE.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
 		{
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				--["PRECEDING_KEY_WORDS"] = {"GcLaserBeamData.xml"},
+				["SPECIAL_KEY_WORDS"] = {"Id", "PLAYER"},
+				--["SECTION_UP"] = 1,
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"CriticalHitModifier",	LaserCritMult}
+				}
+			},
 			{
 				--["PRECEDING_FIRST"] = "TRUE",
 				["REPLACE_TYPE"] 		= "",
