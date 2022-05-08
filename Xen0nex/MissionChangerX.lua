@@ -8,7 +8,7 @@ GameVersion = "3_87"
 --"MissionID" value="G_COLLECT3" />
 --"MissionID" value="G_COLLECT2" />
 
-StartingHazDamage =		25				--76	What percentage of your Hazard protection is missing when starting a new game file
+StartingHazDamage =		1				--76	What percentage of your Hazard protection is missing when starting a new game file
 
 --Multipliers to apply to amount of items needed to hand in to complete certain stages of the "Expanding the Base" questline
 SubstanceReqMult =		20				--16x quests: 40 Chromatic Metal, 50 Pugneum,  45 Solanium, 100 Mordite, 100 Gold, 50 Mag. Ferrite, 30 Cobalt, 30 Marrow Bulb, 25 Faecium, 50 Frost Crystals, 50 Solanium, 50 Fungal Mould, 50 Gamma Root, 100 Cactus Flesh, 25 Star Bulbs, 25 Mordite

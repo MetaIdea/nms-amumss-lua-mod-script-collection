@@ -26,17 +26,29 @@ PirateB		=	5				-- Default "5"
 PirateA		=	5				-- Default "5" 
 PirateS		=	5				-- Default "5" 
 
---Replacers for Shuttle Class C, since it's vanilla bonuses are all 0 at Class C
-	--Note these will affected by GlobalShipShieldMult below, but unaffected by the values in ShipStatChanges below
-ShuttleMinStatC	=	1			-- Default "0" 
-ShuttleMaxStatC	=	5			-- Default "0" 
+--Replacers for Shuttle Class C & B base bonuses, since many of its vanilla bonuses are 0 at those Classes
+	--Note these base bonus values will then be affected by the multipliers in the sections below
+ShuttleStatChanges =
+{
+	{
+		{"C"},
+		{"Min",		0.5},	-- Default "0"
+		{"Max",		2.5},	-- Default "0"
+	},
+	{
+		{"B"},
+		{"Min",		2.5},	-- Default "0"
+		{"Max",		5},		-- Default "5"
+	},
+}
 
 Class = {"C", "B", "A", "S"}
+ShipStats = {"SHIP_DAMAGE", "SHIP_SHIELD", "SHIP_HYPERDRIVE"}
 
 --Multipliers to apply on top of the ship stat bonuses
-GlobalShipShieldMult = 2				--1		[2]	Multiplier to apply to the Shield bonuses for ALL ship types, stacks multiplicatively with the values below
---Note that unlike other stats, ship shield bonuses only contribute 1/3 as much compared to the ship's initial base shield. I.E. A ship with a +100% shield bonus will only have ~1.33x as much shields as a ship with a +0% shield bonus
-		--I've increased shield bonuses by x2 across the board to help make them more impactful (now they contribute 2/3 as much as other stats), though you may need mods to increase enemy ship damage / attack rate / etc. to balance that out
+GlobalShipShieldMult = 1.4				--Multiplier to apply to all Shield bonuses from ship type, stacks multiplicatively with the values below
+--Note that unlike other stats, ship shield bonuses from ship type only contribute ~71% as much compared to the ship's initial base shield. I.E. A ship with a +100% shield bonus will only have ~1.71x as much shields as a ship with a +0% shield bonus
+		--This 1.4x multiplier essentially makes ship type shield bonuses work at 100% effectiveness as expected, though you may need mods to increase enemy ship damage / attack rate / etc. to balance that out
 ShipStatChanges	=
 {
 	{
@@ -44,18 +56,18 @@ ShipStatChanges	=
 			"Shuttle"					--	Maneuverability: Medium (245-330)			Speed: Medium			Takeoff cost is 0.66x
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				1,		2,		2,		1.5},		--			+		0,			0-5,		5-10,		15-20	%
-			{"SHIP_SHIELD",				1,		2,		2,		1.5},		--			+		0,			0-5,		5-10,		15-20	%
-			{"SHIP_HYPERDRIVE",			1,		2,		2,		1.5}		--			+		0,			0-5,		5-10,		15-20	%		"Default" Hyperdrive range is 100ly
+			{"SHIP_DAMAGE",				3,		3,		3,		2},			--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%
+			{"SHIP_SHIELD",				6,		6,		6,		4.5},		--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%
+			{"SHIP_HYPERDRIVE",			3,		3,		3,		2},			--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%		"Default" Hyperdrive range is 100ly
 		}
 	},
 	{
 		{
-			"Fighter"					--	Maneuverability: Very High (350-445)		Speed: High
+			"Fighter"					--	Maneuverability: High (350-445)				Speed: High
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				1.15,	1.15,	1.15,	1.15},		--			+		5-10,		15-30,		35-50,		55-60	%
-			{"SHIP_SHIELD",				1,		1,		1,		1},			--			+		0,			5-10,		15-20,		15-25	%
+			{"SHIP_DAMAGE",				1.7,	1.7,	1.7,	1.7},		--			+		5-10,		15-30,		35-50,		55-60	%
+			{"SHIP_SHIELD",				2,		2,		2,		2},			--			+		0,			5-10,		15-20,		15-25	%
 			{"SHIP_HYPERDRIVE",			1,		1,		1,		1}			--			+		0,			0,			0,			0		%
 		}
 	},
@@ -65,7 +77,7 @@ ShipStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		0,			0-5,		5-10,		10-20	%
-			{"SHIP_SHIELD",				1.75,	1.75,	1.75,	1.75},		--			+		12-20,		25-35,		40-50,		65-85	%
+			{"SHIP_SHIELD",				3.5,	3.5,	3.5,	3.5},		--			+		12-20,		25-35,		40-50,		65-85	%
 			{"SHIP_HYPERDRIVE",			1,		1,		1,		1}			--			+		0-5,		5-10,		15-25,		30-35	%
 		}
 	},
@@ -75,7 +87,7 @@ ShipStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		0,			0,			0,			0		%
-			{"SHIP_SHIELD",				2,		2,		2,		2},			--			+		0,			0-8,		10-15,		20-25	%
+			{"SHIP_SHIELD",				4,		4,		4,		4},			--			+		0,			0-8,		10-15,		20-25	%
 			{"SHIP_HYPERDRIVE",			1.5,	1.5,	2.1,	1.9}		--			+		7-15,		20-30,		35-45,		60-80	%				(up to ~4,200 ly maxed out?)
 		}
 	},
@@ -84,9 +96,9 @@ ShipStatChanges	=
 			"Royal"			--Exotic		Maneuverability: High (390-445)				Speed: High
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				0.9,	0.9,	0.9,	0.9},		--			+		35-50,		35-50,		35-50,		35-50	%
-			{"SHIP_SHIELD",				1,		1,		1,		1},			--			+		55-60,		55-60,		55-60,		55-60	%
-			{"SHIP_HYPERDRIVE",			0.9,	0.9,	0.9,	0.9}		--			+		50-65,		50-65,		50-65,		50-65	%
+			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		35-50,		35-50,		35-50,		35-50	%
+			{"SHIP_SHIELD",				2.5,	2.5,	2.5,	2.5},		--			+		55-60,		55-60,		55-60,		55-60	%
+			{"SHIP_HYPERDRIVE",			1,		1,		1,		1}			--			+		50-65,		50-65,		50-65,		50-65	%
 		}
 	},
 	{
@@ -95,8 +107,8 @@ ShipStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1.1,	1.1,	1.1,	1.1},		--			+		N/A,		N/A,		N/A,		35-50	%
-			{"SHIP_SHIELD",				1.1,	1.1,	1.1,	1.1},		--			+		N/A,		N/A,		N/A,		10-25	%
-			{"SHIP_HYPERDRIVE",			1.2,	1.2,	1.2,	1.2}		--			+		N/A,		N/A,		N/A,		50-65	%
+			{"SHIP_SHIELD",				2,		2,		2,		2},			--			+		N/A,		N/A,		N/A,		10-25	%
+			{"SHIP_HYPERDRIVE",			1.4,	1.4,	1.4,	1.4}		--			+		N/A,		N/A,		N/A,		50-65	%
 		}
 	},
 	{
@@ -104,8 +116,8 @@ ShipStatChanges	=
 			"Sail"			--Solar		Maneuverability: High (350-445 +10%)			Speed: High ??? +15%			Pulse jump costs only 20% of base pulse fuel rate, launch fuel auto-recharges
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"SHIP_DAMAGE",				1.0,	1.0,	1.0,	1.0},		--			+		5-10,		15-30,		30-40,		40-50	%
-			{"SHIP_SHIELD",				1.2,	1.2,	1.2,	1.2},		--			+		5-10,		5-20,		15-25,		15-35	%
+			{"SHIP_DAMAGE",				1.4,	1.4,	1.4,	1.4},		--			+		5-10,		15-30,		30-40,		40-50	%
+			{"SHIP_SHIELD",				2.2,	2.2,	2.2,	2.2},		--			+		5-10,		5-20,		15-25,		15-35	%
 			{"SHIP_HYPERDRIVE",			1.3,	1.3,	1.3,	1.3}		--			+		5-10,		10-20,		20-30,		25-35	%
 		}
 	},
@@ -185,7 +197,7 @@ ShipUpgradeSizeChanges	=
 		{"MaxCargoInventoryCapacity"},	--Cargo Inventory					(Seems to only work properly when using multiples of 7)
 		{
 		--Replacers for max UPGRADEABLE size at	C,		B,		A,		S	class		Vanilla is	C,		B,		A,		S	class
-			{"Shuttle",							0,		0,		7,		7,							6,		9,		14,		21},
+			{"Shuttle",							0,		7,		7,		14,							6,		9,		14,		21},
 			{"Fighter",							0,		7,		7,		14,							6,		9,		14,		21},
 			{"Dropship",						14,		21,		28,		35,							12,		12,		24,		36},		--42 max size in practice, since it's the next multiple of 7
 			{"Scientific",						0,		7,		7,		14,							6,		9,		14,		21},
@@ -216,7 +228,7 @@ CostChanges	=
 			{"Scientific",			1,			65,			12,			32},		--Vanilla values are 1.25 mil,		9.2 mil,		19,	30		Catalogued at 0.445 mil	~	39 mil		(26 mil)			15	~	38	general &	3	~	12	tech slots initially
 			{"Royal",				2.5,		8,			15,			20},		--Vanilla values are 5 mil,			12 mil,			15,	20		Catalogued at 5 mil		~	12 mil		(12 mil)			15	~	20	general &	4	~	6	tech slots initially
 			{"Alien",				5,			70,			25,			48},		--Vanilla values are 5 mil,			70 mil,			25,	48		Catalogued at 2.98 mil	~	2.98mil		(2.98 mil)			22	~	22	general &	21	~	21	tech slots initially
-			{"Sail",				1,			70,			12,			32},		--Vanilla values are 2.2 mil,		11.1 mil,		19,	36		Catalogued at 1.00 mil	~	2.42mil		(2.2 mil)			15	~	19	general &	4	~	6	tech slots initially
+			{"Sail",				1,			100,		12,			32},		--Vanilla values are 2.2 mil,		11.1 mil,		19,	36		Catalogued at 1.00 mil	~	2.42mil		(2.2 mil)			15	~	19	general &	4	~	6	tech slots initially
 			{"Freighter",			25,			200,		15,			34},		--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
 			{"PlayerFreighter",		25,			200,		15,			34}			--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
 		}
@@ -243,7 +255,7 @@ ShipTradeInMultiplier = 40												--70				Applies to both trading in to buy 
 FreighterTradeInMultiplier = 10											--70				Reduced with the assumption of accepting the first free freighter, but not using it until able to purchase a new freighter, and not wanting the trade-in value of the free freighter to easily pay for the new freighter
 ToolTradeInMultiplier = 40												--70
 
-SalvageValueMultiplier = 0.6											--0.6				Unknown function, doesn't appear to affect value of scrapping ship
+--SalvageValueMultiplier = 0.6											--0.6				Unknown function, doesn't appear to affect value of scrapping ship
 
 
 CostClassModifierChanges =	--Replaces vanilla cost bonus at different Classes
@@ -409,39 +421,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_FIRST"] = "TRUE",
-							--["MATH_OPERATION"] = "*",
-							["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Shuttle","BaseStatsPerClass","C"},
-							["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Min",ShuttleMinStatC}, 	-- Original "0" 
-								{"Max",ShuttleMaxStatC} 	-- Original "0"
-							}
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE",
-							--["MATH_OPERATION"] = "*",
-							["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Shuttle","BaseStatsPerClass","C"},
-							["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Min",ShuttleMinStatC}, 	-- Original "0" 
-								{"Max",ShuttleMaxStatC} 	-- Original "0"
-							}
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE",
-							--["MATH_OPERATION"] = "*",
-							["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Shuttle","BaseStatsPerClass","C"},
-							["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Min",ShuttleMinStatC}, 	-- Original "0" 
-								{"Max",ShuttleMaxStatC} 	-- Original "0"
-							}
-						},
-						{
 							["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 							["MATH_OPERATION"] = "*",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -557,6 +536,29 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 
 local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+
+for i = 1, #ShuttleStatChanges do
+	local ShuttleClass = ShuttleStatChanges[i][1][1]
+	local ShuttleMin = ShuttleStatChanges[i][2][2]
+	local ShuttleMax = ShuttleStatChanges[i][3][2]
+
+	for j = 1, #ShipStats do
+		ShuttleStat = ShipStats[j]
+			
+			ChangesToInventoryTable[#ChangesToInventoryTable+1] =
+			{
+				["PRECEDING_FIRST"] = "TRUE",
+				--["MATH_OPERATION"] = "*",
+				["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Shuttle","BaseStatsPerClass", ShuttleClass},
+				["SPECIAL_KEY_WORDS"] = {"BaseStatID", ShuttleStat},
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Min", ShuttleMin},
+					{"Max", ShuttleMax}
+				}
+			}
+	end
+end
 
 for i = 1, #ShipStatChanges do
 	local ShipType = ShipStatChanges[i][1][1]

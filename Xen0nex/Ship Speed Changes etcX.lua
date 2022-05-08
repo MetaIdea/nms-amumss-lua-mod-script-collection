@@ -13,7 +13,7 @@ LivingShipQuestTimers = 14400							--79200 seconds = 22 hours in vanilla
 --Multipliers to apply to the base attributes of all ships
 EngSpdMult = 0.667										--	Multiplier to apply to the base speed for all starship Pulse Engines (or lIving Ship equivalent)
 EngManMult = 1											--	Multiplier to apply to the base Maneuverability for all starship Pulse Engines (or lIving Ship equivalent)
-ShieldMult = 1											--	Multiplier to apply to the base Ship_Armour_Shield_Strength for all starship default Shields
+--BaseShieldStrength = 0.65								--0.65 	(NOTE: Changing this value seems to cause issues, negative shield values displayed in UI, etc.)	The base Ship_Armour_Shield_Strength for all starship default Shields (0.65 by default, results in 165 core shields without any bonuses)
 
 --Multipliers for specific ship tech / upgrade modules
 --RechargeTechRate = 0.5									--1				From the special purchasable Tech		(default rate is 14sec per 1% recharged)	Changing these values doesn't affect the charge rate
@@ -29,7 +29,7 @@ EngModLSSpdMult = 0.3999										--	Multiplier to apply to the bonus boost spee
 ShieldModMult = 1										--	Multiplier to apply to the bonus shield from regular ship Shield upgrade modules	NOTE, the game increases this by 50%
 ShieldLSModMult = 1										--	Multiplier to apply to the bonus shield from Living ship Shield upgrade modules	NOTE, the game increases this by 50%
 
---Launcher uranium recharge rate?
+--Changes to using items to recharge starship tech
 ShipLaunchRechargeMult = 2								--	Multiplier to apply to the cost of Uranium on recharging ship launchers					40 to fully charge
 LivingShipLaunchRechargeMult = 0.75						--	Multiplier to apply to the cost of Mordite / Oxygen on recharging Living ship launchers	200 / 200 to fully charge
 ShipPulseRechargeMult = 1.25							--	Multiplier to apply to the cost of Tritium / Pyrite on recharging ship Pulse engine		100 / 40 to fully charge
@@ -140,13 +140,13 @@ ShipTechChanges =
 			}
 		}
 	},
-	{
+	--[[{
 		{
 			"SHIPSHIELD"			--Regular ship default shield
 		},
 		{
 			{
-				"Ship_Armour_Shield_Strength",		0.65*ShieldMult					--0.65
+				"Ship_Armour_Shield_Strength",		BaseShieldStrength				--0.65
 			},
 		}
 	},
@@ -156,10 +156,10 @@ ShipTechChanges =
 		},
 		{
 			{
-				"Ship_Armour_Shield_Strength",		0.65*ShieldMult					--0.65
+				"Ship_Armour_Shield_Strength",		BaseShieldStrength				--0.65
 			},
 		}
-	},
+	},]]
 }
 
 
