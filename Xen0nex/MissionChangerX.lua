@@ -8,7 +8,9 @@ GameVersion = "3_87"
 --"MissionID" value="G_COLLECT3" />
 --"MissionID" value="G_COLLECT2" />
 
-StartingHazDamage =		1				--76	What percentage of your Hazard protection is missing when starting a new game file
+StartingHazDamage =		25				--76	What percentage of your Hazard protection is missing when starting a new game file
+StarNewGameWithIonBatt = true			--true to begin new games with Ion Battery in the inventory, false otherwise
+NewGameIonBattAmmount = 1				--Amount of Ion Batteries to start the game with, if above setting set to true
 
 --Multipliers to apply to amount of items needed to hand in to complete certain stages of the "Expanding the Base" questline
 SubstanceReqMult =		20				--16x quests: 40 Chromatic Metal, 50 Pugneum,  45 Solanium, 100 Mordite, 100 Gold, 50 Mag. Ferrite, 30 Cobalt, 30 Marrow Bulb, 25 Faecium, 50 Frost Crystals, 50 Solanium, 50 Fungal Mould, 50 Gamma Root, 100 Cactus Flesh, 25 Star Bulbs, 25 Mordite
@@ -46,6 +48,25 @@ SalvagedDataReward =
 
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
+
+function RewardIonBattery (amount)
+    return
+[[<Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="ID" value="POWERCELL" />
+              <Property name="AmountMin" value="]]..amount..[[" />
+              <Property name="AmountMax" value="1" />
+              <Property name="ForceSpecialMessage" value="True" />
+              <Property name="HideInSeasonRewards" value="False" />
+              <Property name="Silent" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>]]
+end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]		= ModName..GameVersion..".pak",
@@ -292,5 +313,20 @@ for i = 1, #ReplacedRewardsSentinel do
 				["REPLACE_TYPE"] 		= "",
 				--["SECTION_UP"] = 2,
 				["REMOVE"] = "SECTION"
+			}
+end
+
+local ChangesToTutorialMissionTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+
+if StarNewGameWithIonBatt then
+ChangesToTutorialMissionTable[#ChangesToTutorialMissionTable+1] =
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Id", "R_SET_HAZ"},
+				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
+				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+				["ADD"] = RewardIonBattery (NewGameIonBattAmmount)
 			}
 end

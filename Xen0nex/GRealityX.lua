@@ -69,10 +69,14 @@ SuitCargoPrices = [[ <Property name="SuitCargoUpgradePrices">
 	<Property value="25000000"  />
   </Property>]]
   
-  --Initial unlocked slots for different Exosuit tabs on a new game
-  SuitStartingSlotLayout = 20										--24
-  SuitTechOnlyStartingSlotLayout = 0								--4
-  SuitCargoStartingSlotLayout = 0									--2
+  --Initial unlocked slots for different Exosuit tabs on a new game			Added by Xen0nex
+  SuitStartingSlotLayout = 24										--24	(20)		Setting this to a value other than 24 seems to result in the game automatically unlocking random new slots each time you load the game
+  SuitTechOnlyStartingSlotLayout = 0								--4		(0)
+  SuitCargoStartingSlotLayout = 0									--2		(0)
+  
+  --These changes didn't seem to have any effect
+  --SuitGenSeed = 1													--1
+  --SuitGenUseSeed = "True"											--"True"		Whether the Exosuit General tab slots should use a seed to determine layout???
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -87,6 +91,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{["PRECEDING_KEY_WORDS"] = {"SuitStartingSlotLayout"},
 		["VALUE_CHANGE_TABLE"] = {
 			{"Slots",SuitStartingSlotLayout},
+			--{"Seed",SuitGenSeed},
+			--{"UseSeedValue",SuitGenUseSeed},
 	}},
 	{["PRECEDING_KEY_WORDS"] = {"SuitTechOnlyStartingSlotLayout"},
 		["VALUE_CHANGE_TABLE"] = {
