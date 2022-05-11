@@ -103,9 +103,9 @@ SpecialWeatherHazards =
 			{"SpawnConditions",					"DuringStorm"},						--"DuringStorm"
 			{"MaxHazardsOfThisTypeActive",		5},									--5
 			{"SpawnAttemptsPerRegion",			1},									--1
-			{"SpawnChancePerSecondPerAttempt",	0.001*EventMult},					--0.0001	The game appears to use this value on both "regular" and "Extreme" weather planets, at least in some cases?
+			{"SpawnChancePerSecondPerAttempt",	0.0006*EventMult},					--0.0001	The game appears to use this value on both "regular" and "Extreme" weather planets, at least in some cases?
 			{"ChanceOfPlanetBeingExtreme",		0.15},								--0.15		???
-			{"SpawnChancePerSecondExtreme",		0.3*EventMult},						--0.1		The game doesn't appear to actually use this value, at least in some cases? 
+			{"SpawnChancePerSecondExtreme",		0.18*EventMult},					--0.1		The game doesn't appear to actually use this value, at least in some cases? 
 			{"MinSpawnDistance",				50},								--50		Distance from the player the hazard spawns at
 			{"MaxSpawnDistance",				250},								--250
 			{"MinLifetime",						50},								--50

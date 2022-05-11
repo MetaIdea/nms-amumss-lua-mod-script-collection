@@ -477,7 +477,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	1,			3}		--1,		1		(1,			6)
+					{"Count",	1,			2}		--1,		1		(1,			6)
 				}
 			},
 			{--EASYBOUNTY2			
@@ -486,7 +486,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	1,			3}		--1,		1		(2,			8)		[2,	4]
+					{"Count",	1,			2}		--1,		1		(2,			8)		[2,	4]
 				}
 			},
 			{--MEDBOUNTY1
@@ -495,7 +495,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	2,			4}		--1,		1		(3,			12)
+					{"Count",	1,			3}		--1,		1		(3,			12)
 				}
 			},
 			{--MEDBOUNTY2
@@ -504,7 +504,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	2,			4}		--1,		1		(4,			12)	(in the original mod, it seems these entries accidentally changed the "Scale" for MEDBOUNTY2 instead of changing the "Spread")
+					{"Count",	1,			3}		--1,		1		(4,			12)	(in the original mod, it seems these entries accidentally changed the "Scale" for MEDBOUNTY2 instead of changing the "Spread")
 				}
 			},
 			{--HARDBOUNTY1
@@ -513,7 +513,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	3,			5}		--1,		1		(3,			9)
+					{"Count",	2,			3}		--1,		1		(3,			9)
 				}
 			},
 			{--HARDBOUNTY2
@@ -522,7 +522,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	3,			5}		--3,		3		(6,			6)
+					{"Count",	2,			3}		--3,		3		(6,			6)
 				}
 			},
 			{--WEAPGUY_BOUNTY		Base Armourer mission
@@ -911,8 +911,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATLTEASY"},			--default "PIRATELOOT"			Note, changing to a custom modded lootpool such as PIRATLTEASY requires it to be defined and added to REWARDTABLE.MBIN, or this won't work.
-		{"Health", 15000},					--default 5200
-		{"LevelledExtraHealth", 42000},		--default 14000
+		{"Health", 12000},					--default 5200
+		{"LevelledExtraHealth", 32000},		--default 14000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 1},			--default 1
 		}},
@@ -924,8 +924,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", 30000},					--default 5200
-		{"LevelledExtraHealth", 90000},		--default 14000
+		{"Health", 22000},					--default 5200
+		{"LevelledExtraHealth", 68000},		--default 14000
 		{"Shield", "STRONG"},				--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -937,8 +937,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_HRD"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATLTHARD"},			--default "PIRATELOOT"			(Custom Lootpool)
-		{"Health", 60000},					--default 6500
-		{"LevelledExtraHealth", 180000},	--default 14000
+		{"Health", 45000},					--default 6500
+		{"LevelledExtraHealth", 135000},	--default 14000
 		{"Shield", "SLOW_STRONG"},			--default "FAST_STRONG"
 		{"LaserDamageLevel", 3},			--default 1
 		}},
@@ -950,8 +950,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		Probably maps to "POLICELOOT" somehow
-		{"Health", 45000},					--default 11500
-		{"LevelledExtraHealth", 135000},	--default 34000
+		{"Health", 34000},					--default 11500
+		{"LevelledExtraHealth", 101000},	--default 34000
 		{"Shield", "FAST_STRONG"},			--default "FAST"
 		{"LaserDamageLevel", 3},			--default 1
 		}},	
@@ -963,8 +963,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "TRADERLOOT"},			--default "TRADERLOOT"
-		{"Health", 5000},					--default 9000
-		{"LevelledExtraHealth", 8000},		--default 16000
+		{"Health", 3800},					--default 9000
+		{"LevelledExtraHealth", 6000},		--default 16000
 		{"Shield", "HUGE"},					--default "STANDARD"
 		{"LaserDamageLevel",2},				--default 1
 		}},
@@ -976,8 +976,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "ESCORTLOOT"},			--default "TRADERLOOT"			(Custom Lootpool)
-		{"Health", 56000},					--default 14000
-		{"LevelledExtraHealth", 110000},	--default 36000
+		{"Health", 42000},					--default 14000
+		{"LevelledExtraHealth", 83000},	--default 36000
 		{"Shield", "FAST"},					--default "FAST"
 		{"LaserDamageLevel",2},				--default 1
 		}},
@@ -989,8 +989,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "RAID_BUILDING"},	--default "RAID_BUILDING"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", 36000},					--default 9000
-		{"LevelledExtraHealth", 60000},		--default 16000
+		{"Health", 27000},					--default 9000
+		{"LevelledExtraHealth", 45000},		--default 16000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1002,8 +1002,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", 36000},					--default 9000
-		{"LevelledExtraHealth", 60000},		--default 16000
+		{"Health", 27000},					--default 9000
+		{"LevelledExtraHealth", 45000},		--default 16000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1015,8 +1015,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", 21000},					--default 5200
-		{"LevelledExtraHealth", 50000},		--default 14000
+		{"Health", 16000},					--default 5200
+		{"LevelledExtraHealth", 38000},		--default 14000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1029,8 +1029,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", 12000},					--default 3000
-		{"LevelledExtraHealth", 12000},		--default 3000
+		{"Health", 9000},					--default 3000
+		{"LevelledExtraHealth", 9000},		--default 3000
 		{"Shield", "NULL"},					--default "NULL"
 		{"LaserDamageLevel", 1},			--default 1
 		}},
@@ -1042,8 +1042,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", 16000},					--default 5000
-		{"LevelledExtraHealth", 16000},		--default 5000
+		{"Health", 12000},					--default 5000
+		{"LevelledExtraHealth", 12000},		--default 5000
 		{"Shield", "STANDARD"},				--default "STRONG"
 		{"LaserDamageLevel", 1},			--default 1
 		}},
@@ -1055,8 +1055,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", 20000},					--default 5000
-		{"LevelledExtraHealth", 20000},		--default 5000
+		{"Health", 15000},					--default 5000
+		{"LevelledExtraHealth", 15000},		--default 5000
 		{"Shield", "STRONG"},				--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1068,8 +1068,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_HRD"},	--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", 24000},					--default 6000
-		{"LevelledExtraHealth", 24000},		--default 6000
+		{"Health", 18000},					--default 6000
+		{"LevelledExtraHealth", 18000},		--default 6000
 		{"Shield", "FAST_STRONG"},			--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1698,9 +1698,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 15000},											--5600
-		{"LevelledExtraHealth", 60000},								--19000
-		{"RechargeTime", 15},										--5
+		{"Health", 11000},											--5600
+		{"LevelledExtraHealth", 45000},								--19000
+		{"RechargeTime", 11},										--5
 		{"RechargeDelayTime", 6},									--6
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
@@ -1708,9 +1708,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 30000},											--10000
-		{"LevelledExtraHealth", 90000},								--35000
-		{"RechargeTime", 24},										--8
+		{"Health", 23000},											--10000
+		{"LevelledExtraHealth", 68000},								--35000
+		{"RechargeTime", 18},										--8
 		{"RechargeDelayTime", 10},									--10
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
@@ -1718,9 +1718,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 8000},											--2000
-		{"LevelledExtraHealth", 24000},								--10000
-		{"RechargeTime", 4},										--1
+		{"Health", 6000},											--2000
+		{"LevelledExtraHealth", 18000},								--10000
+		{"RechargeTime", 3},										--1
 		{"RechargeDelayTime", 3},									--3
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
@@ -1728,9 +1728,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 30000},											--10000
-		{"LevelledExtraHealth", 75000},								--25000
-		{"RechargeTime", 9},										--3
+		{"Health", 22000},											--10000
+		{"LevelledExtraHealth", 56000},								--25000
+		{"RechargeTime", 7},										--3
 		{"RechargeDelayTime", 4},									--4
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
@@ -1748,9 +1748,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 60000},											--Custom	[60000]
-		{"LevelledExtraHealth", 150000},							--Custom	[150000]
-		{"RechargeTime", 48},										--Custom	[48]
+		{"Health", 45000},											--Custom	[60000]
+		{"LevelledExtraHealth", 112000},							--Custom	[150000]
+		{"RechargeTime", 36},										--Custom	[48]
 		{"RechargeDelayTime", 4},									--Custom	[4]
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
@@ -1758,9 +1758,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 90000},											--Custom	[90000]
-		{"LevelledExtraHealth", 220000},							--Custom	[220000]
-		{"RechargeTime", 96},										--Custom	[96]
+		{"Health", 68000},											--Custom	[90000]
+		{"LevelledExtraHealth", 165000},							--Custom	[220000]
+		{"RechargeTime", 72},										--Custom	[96]
 		{"RechargeDelayTime", 12},									--Custom	[12]
 		}},
 	}}
