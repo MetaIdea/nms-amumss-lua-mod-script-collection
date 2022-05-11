@@ -281,6 +281,7 @@ SubstanceCostChanges =
 	{"GREEN2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"BLUE2",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--BaseValue = 464
 	{"STELLAR2",		SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Chromatic Metal	BaseValue = 245
+	{"LUSH1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"DUSTY1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"TOXIC1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},
 	{"RADIO1",			SubstanceSpaceStationMarkup,	SubstanceBuyBaseMarkup,	SubstanceBuyMarkupMod},			--Uranium,		BaseValue = 62

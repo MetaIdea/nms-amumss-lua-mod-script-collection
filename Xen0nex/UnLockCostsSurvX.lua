@@ -120,6 +120,9 @@ TechAdjustments =
 		"STUN_GREN",	2				--Paralysis Mortar
 	},
 	{
+		"UT_ROCKETS",	3.5				--Large Rocket Tubes			50
+	},
+	{
 		"F_TELEPORT",	3.2				--Matter Beam					5 Salvaged Frigate Modules			(Not affected by TechCostMult)
 	}
 }
