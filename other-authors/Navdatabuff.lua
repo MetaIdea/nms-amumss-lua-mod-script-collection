@@ -69,6 +69,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 ["REMOVE"] = "SECTION"
             },
 			{
+                ["SPECIAL_KEY_WORDS"] = {"Value","HARVESTER"},
+             ["REPLACE_TYPE"]         = "ALL",
+                ["SECTION_UP"] = 2,
+                ["REMOVE"] = "SECTION"
+            },
+            {
+                ["SPECIAL_KEY_WORDS"] = {"Value","DISTRESS"},
+             ["REPLACE_TYPE"]         = "ALL",
+                ["SECTION_UP"] = 2,
+                ["REMOVE"] = "SECTION"
+            },
+			{
 				["REPLACE_TYPE"] 		= "",
 				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"Value","MONOLITH"},

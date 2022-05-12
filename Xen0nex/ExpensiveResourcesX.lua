@@ -171,7 +171,10 @@ GravHostCadmiumNeeded			=	60				--0		(replaces 25 Chromatic Metal)
 GravHostGravitinoBallsNeeded	=	1				--0		(replaces 25 Magnetised Ferrite)
 
 --Solar Panel construction recipe
-SolarGlassNeeded				=	2				--0
+SolarPlatesNeeded				=	3				--1
+SolarGoldNeeded					=	40				--30
+SolarGlassNeeded				=	2				--0		(replaces 50 Chromatic Metal)
+
 --Electromagnetic Generator construction recipe
 EGenPlatesNeeded				=	6				--2
 EGenMagFerriteNeeded			=	180				--60
@@ -559,11 +562,49 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "U_SOLAR_S",		"ID", "CASING"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", SolarPlatesNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "U_SOLAR_S",		"ID", "ASTEROID2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", SolarGoldNeeded},
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "U_SOLAR_S",		"ID", "STELLAR2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", SolarGlassNeeded},
+								{"ID", "FARMPROD3"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "U_SOLAR_S",		"ID", "FARMPROD3"},
+							["VALUE_MATCH"] 	= "Substance",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"InventoryType", "Product"}
+							}
+						},
+						--[[{
 							["SPECIAL_KEY_WORDS"] = {"Id","U_SOLAR_S"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = AddedGlassCost (SolarGlassNeeded),
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-						},
+						},]]
 						{
 							["REPLACE_TYPE"] 		= "",
 							["MATH_OPERATION"] 		= "",
