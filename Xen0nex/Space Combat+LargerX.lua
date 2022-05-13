@@ -144,7 +144,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		120},
-					{"Count",	1,			2}		--1,		1
+					{"Count",	1,			1}		--1,		1
 				}
 			},
 			{--1st "ChildSpawns" entry
@@ -153,7 +153,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	60,			100},
-					{"Count",	2,			3}		--2,		2
+					{"Count",	2,			2}		--2,		2
 				}
 			},
 			{--2nd "ChildSpawns" entry, etc.
@@ -162,7 +162,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	60,			120},
-					{"Count",	2,			3}		--2,		2		(3,		4)
+					{"Count",	3,			5}		--2,		2		(3,		4)
 				}
 			},
 			{--3rd "ChildSpawns" entry
@@ -171,16 +171,16 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	60,			120},
-					{"Count",	2,			3}		--2,		2		(3,		6)
+					{"Count",	6,			8}		--2,		2		(3,		6)
 				}
 			},
-			{--4th "ChildSpawns" entry
+			{--4th "ChildSpawns" entry		This is the Sentinel Freighter
 				{
 					"GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml","GcAIShipSpawnData.xml"
 				},
 				{
 					{"Spread",	200,		600},
-					{"Count",	1,			2}		--1,		1
+					{"Count",	1,			1}		--1,		1
 				}
 			},
 		}
@@ -946,14 +946,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["SPECIAL_KEY_WORDS"] = {"Id","POLICE"},					--Sentinel Interceptors, presumably?
 	["PRECEDING_FIRST"] = "True",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Behaviour", "SPACE_HRD"},			--default "SPACE"
+		{"Behaviour", "SPACE"},				--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		Probably maps to "POLICELOOT" somehow
 		{"Health", 34000},					--default 11500
 		{"LevelledExtraHealth", 101000},	--default 34000
-		{"Shield", "FAST_STRONG"},			--default "FAST"
-		{"LaserDamageLevel", 3},			--default 1
+		{"Shield", "FAST"},					--default "FAST"
+		{"LaserDamageLevel", 2},			--default 1
 		}},	
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
 	["SPECIAL_KEY_WORDS"] = {"Id","TRADER"},
@@ -1750,8 +1750,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Health", 45000},											--Custom	[60000]
 		{"LevelledExtraHealth", 112000},							--Custom	[150000]
-		{"RechargeTime", 36},										--Custom	[48]
-		{"RechargeDelayTime", 4},									--Custom	[4]
+		{"RechargeTime", 54},										--Custom	[48]
+		{"RechargeDelayTime", 6},									--Custom	[4]
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"ShieldTable"},
 	["SPECIAL_KEY_WORDS"] = {"Id","HUGE"},							--Custom Shield
