@@ -1446,8 +1446,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BuildableOnPlanetWithProduct", "True"},
 								{"BuildableUnderwater", 		 "True"},
 								{"BuildableAboveWater", 		 "True"},								
-								{"GlobalLimit", 					"0"},			
-								{"SystemLimit", 					"0"},
 								{"PlanetLimit", 					"0"},
 								{"RegionLimit", 					"0"},
 								{"PlanetBaseLimit", 				"0"},
