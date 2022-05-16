@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"]			= "",
 ["MOD_AUTHOR"]				= "degraaaff",
 ["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.88",
+["NMS_VERSION"]				= "3.89",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -18,6 +18,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",								
 							["VALUE_CHANGE_TABLE"] 	= 	
 							{
+								{"DroneInvestigateMinWitnessRange",  "0"},  -- Original  22
+								{"DroneCrimeWitnessInvestigateDistance",  "0"},  -- Original  30							
 								{"DroneCrimeWitnessLimit",  "30000"},  -- Original  3
 								{"DroneCrimeWitnessInvestigateDistance",  "0"},  -- Original  30
 								{"DroneCrimeProximityMultiplier",  "0"},  -- Original  3

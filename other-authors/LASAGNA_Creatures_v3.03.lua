@@ -27,7 +27,7 @@ SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**This line
 -------------------------------
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Creatures_v3.0.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Creatures_v3.03.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

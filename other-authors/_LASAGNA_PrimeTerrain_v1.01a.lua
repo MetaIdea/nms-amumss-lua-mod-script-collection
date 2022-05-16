@@ -13,7 +13,7 @@ SlopeErosion = 1
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_PrimeTerrain_v1.0.pak",
+["MOD_FILENAME"] 			= "_LASAGNA_PrimeTerrain_v1.01a.pak",
 ["MOD_AUTHOR"]				= "Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -76,7 +76,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						-----------------------------------------------------------------------------------------------------
 						--= = = = = = = = = = = = = = = = = = = = = HUGEARCHESPRIME = = = = = = = = = = = = = = = = = = = = =
 						-----------------------------------------------------------------------------------------------------
-						------------------------------------------No water swamp planets-------------------------------------
+						------------------------------No water swamp planets/Huge misc. water islands------------------------
 						{			
 							["SPECIAL_KEY_WORDS"] = { "HugeArchesPrime","TkVoxelGeneratorSettingsElement.xml",},		
                             ["PRECEDING_KEY_WORDS"] = { "Elevation", },
@@ -146,6 +146,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Height", 			WaterDepthMultiplier },
 							}
 						},
+						{			
+							["SPECIAL_KEY_WORDS"] = { "HugeArchesPrime","TkVoxelGeneratorSettingsElement.xml",},
+							["PRECEDING_KEY_WORDS"] = { "Base", },
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",			
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "Height", 			300 },
+								{ "Width", 				1000 },
+							}
+						},
+						{			
+							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},
+							["PRECEDING_KEY_WORDS"] = { "Continent", },
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",			
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "Height", 			400 },
+							}
+						},
+						
 						-----------------------------------------------------------------------------------------------------
 						--= = = = = = = = = = = = = = = = = = = = = = ALPINEPRIME = = = = = = = = = = = = = = = = = = = = = =
 						-----------------------------------------------------------------------------------------------------
@@ -553,6 +575,134 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Height", 			WaterDepthMultiplier },
 							}
 						},
+						-----------------------------------------------------------------------------------------------------
+						-- = = = = = = = = = = = = = = = = = = = = = GrandCanyonPrime = = = = = = = = = = = = = = = = = = = =
+						-----------------------------------------------------------------------------------------------------
+						---------------------------------------Tall narrow swamp mountains-----------------------------------
+						{			
+							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},		
+                            ["PRECEDING_KEY_WORDS"] = { "Elevation", },
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",							
+							["REPLACE_TYPE"] 		= "ALL",			
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								
+								{ "RemapFromMax", 		MaxMultiplier },
+								{ "RemapToMax", 		MaxMultiplier },
+							}
+						},
+						{			
+							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},
+							["PRECEDING_KEY_WORDS"] = { "Elevation", },
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",			
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "SharpToRoundFeatures", 	SharpToRoundFeatures },
+								{ "PerturbFeatures", 		PerturbFeatures},
+								{ "AltitudeErosion", 		AltitudeErosion },
+								{ "RidgeErosion", 			RidgeErosion },
+								{ "SlopeErosion", 			SlopeErosion },
+								{ "PlateauSharpness", 		PlateauSharpness },
+								{ "PlateauRegionSize", 		PlateauRegion },
+								{ "Height", 			1600 },
+							}
+						},
+						{			
+							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},
+							["PRECEDING_KEY_WORDS"] = { "Hill", },
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",			
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "NoiseVoxelType", 	"Base" },
+								{ "Height", 			1500 },
+								{ "Width", 				50 },
+								{ "SharpToRoundFeatures", 	SharpToRoundFeatures },
+								{ "PerturbFeatures", 		PerturbFeatures},
+								{ "AltitudeErosion", 		AltitudeErosion },
+								{ "RidgeErosion", 			RidgeErosion },
+								{ "SlopeErosion", 			SlopeErosion },
+								{ "PlateauSharpness", 		PlateauSharpness },
+								{ "PlateauRegionSize", 		PlateauRegion },
+								
+							}
+						},
+						{			
+							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},
+							["PRECEDING_KEY_WORDS"] = { "Continent", },
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",			
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "Height", 			950 },
+							}
+						},
+						{			
+							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},
+							["PRECEDING_KEY_WORDS"] = { "Base", },
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",			
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "Height", 			300 },
+								{ "Width", 				1000 },
+							}
+						},
+						{			
+							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},
+							["PRECEDING_KEY_WORDS"] = { "UnderWater" },
+							["REPLACE_TYPE"] 		= "ALL",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "Height", 			WaterDepthMultiplier },
+							}
+						},
+						{			
+							["SPECIAL_KEY_WORDS"] = { "CratersPrime","TkVoxelGeneratorSettingsElement.xml",},
+							["PRECEDING_KEY_WORDS"] = { "Mountain", },
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",			
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "NoiseVoxelType", 	"Base" },
+								{ "Height", 			5 },
+								{ "Width", 				50 },
+								{ "SharpToRoundFeatures", 	SharpToRoundFeatures },
+								{ "PerturbFeatures", 		PerturbFeatures},
+								{ "AltitudeErosion", 		AltitudeErosion },
+								{ "RidgeErosion", 			RidgeErosion },
+								{ "SlopeErosion", 			SlopeErosion },
+								{ "PlateauSharpness", 		PlateauSharpness },
+								{ "PlateauRegionSize", 		PlateauRegion },
+								
+							}
+						},
+						{			
+							["SPECIAL_KEY_WORDS"] = { "CratersPrime","TkVoxelGeneratorSettingsElement.xml",},
+							["PRECEDING_KEY_WORDS"] = { "Rock", },
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",			
+							["VALUE_CHANGE_TABLE"] 	= 					
+							{
+								{ "NoiseVoxelType", 	"Base" },
+								{ "Height", 			2 },
+								{ "Width", 				1000 },
+								{ "SharpToRoundFeatures", 	SharpToRoundFeatures },
+								{ "PerturbFeatures", 		PerturbFeatures},
+								{ "AltitudeErosion", 		AltitudeErosion },
+								{ "RidgeErosion", 			RidgeErosion },
+								{ "SlopeErosion", 			SlopeErosion },
+								{ "PlateauSharpness", 		PlateauSharpness },
+								{ "PlateauRegionSize", 		PlateauRegion },
+								
+							}
+						},
+						
+						
 						
 						
 						-----------------------------------------------------------------------------------------------------
@@ -663,7 +813,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{			
-							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},		
+							["SPECIAL_KEY_WORDS"] = { "DesertPrime","TkVoxelGeneratorSettingsElement.xml",},	
                             ["PRECEDING_KEY_WORDS"] = { "Elevation", },
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",							
@@ -676,7 +826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{			
-							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},	
+							["SPECIAL_KEY_WORDS"] = { "DesertPrime","TkVoxelGeneratorSettingsElement.xml",},	
 							["PRECEDING_KEY_WORDS"] = { "Elevation", },
 							["MATH_OPERATION"] 		= "+",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -684,33 +834,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{ "AmplifyFeatures", 	AmplifiedAddition },
-							}
-						},
-						{			
-							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},
-							["PRECEDING_KEY_WORDS"] = { "Elevation", },
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_CHANGE_TABLE"] 	= 					
-							{
-								{ "SharpToRoundFeatures", 	SharpToRoundFeatures },
-								{ "PerturbFeatures", 		PerturbFeatures},
-								{ "AltitudeErosion", 		AltitudeErosion },
-								{ "RidgeErosion", 			RidgeErosion },
-								{ "SlopeErosion", 			SlopeErosion },
-								{ "PlateauSharpness", 		PlateauSharpness },
-								{ "PlateauRegionSize", 		PlateauRegion },
-							}
-						},
-						{			
-							["SPECIAL_KEY_WORDS"] = { "GrandCanyonPrime","TkVoxelGeneratorSettingsElement.xml",},
-							["PRECEDING_KEY_WORDS"] = { "UnderWater" },
-							["REPLACE_TYPE"] 		= "ALL",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 					
-							{
-								{ "Height", 			WaterDepthMultiplier },
 							}
 						},
 						{			
@@ -762,30 +885,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
 								{ "Height", 			WaterDepthMultiplier },
-							}
-						},
-						{			
-							["SPECIAL_KEY_WORDS"] = { "DesertPrime","TkVoxelGeneratorSettingsElement.xml",},	
-                            ["PRECEDING_KEY_WORDS"] = { "Elevation", },
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",							
-							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_CHANGE_TABLE"] 	= 					
-							{
-								
-								{ "RemapFromMax", 		MaxMultiplier },
-								{ "RemapToMax", 		MaxMultiplier },
-							}
-						},
-						{			
-							["SPECIAL_KEY_WORDS"] = { "DesertPrime","TkVoxelGeneratorSettingsElement.xml",},	
-							["PRECEDING_KEY_WORDS"] = { "Elevation", },
-							["MATH_OPERATION"] 		= "+",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",			
-							["VALUE_CHANGE_TABLE"] 	= 					
-							{
-								{ "AmplifyFeatures", 	AmplifiedAddition },
 							}
 						},
 						{			
