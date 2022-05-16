@@ -4299,20 +4299,20 @@ function GetColours(R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5,
         </Property>
         <Property name="LightColour" value="Colour.xml">
           <Property name="R" value="]].. R9 ..[[" />
-          <Property name="G" value="]].. G9 ..[[" /> />
-          <Property name="B" value="]].. B9 ..[[" />5" />
+          <Property name="G" value="]].. G9 ..[[" />
+          <Property name="B" value="]].. B9 ..[[" />
           <Property name="A" value="]].. A9 ..[[" />
         </Property>
         <Property name="CloudColour1" value="Colour.xml">
           <Property name="R" value="]].. R10 ..[[" />
-          <Property name="G" value="]].. G10 ..[[" />/>
-          <Property name="B" value="]].. B10 ..[[" /> />
+          <Property name="G" value="]].. G10 ..[[" />
+          <Property name="B" value="]].. B10 ..[[" />
           <Property name="A" value="]].. A10 ..[[" />
         </Property>
         <Property name="CloudColour2" value="Colour.xml">
           <Property name="R" value="]].. R11 ..[[" />
-          <Property name="G" value="]].. G11 ..[[" />>
-          <Property name="B" value="]].. B11 ..[[" />/>
+          <Property name="G" value="]].. G11 ..[[" />
+          <Property name="B" value="]].. B11 ..[[" />
           <Property name="A" value="]].. A11 ..[[" />
         </Property>
       </Property>

@@ -33,9 +33,11 @@ c. Lod distances/Ultra invisible bug fix
 InsaneRuffles code = "----IR:"
 
 ]]
-					---------------------------------------------------------------------------
-					--= = = = = = = = = = = = = 0. GLOBAL VARIABLES = = = = = = = = = = = = = =
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = = = = = = = = 0. GLOBAL VARIABLES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 		
 --Multiplier only if "multiplier" in the name, otherwise replaces:
 
@@ -72,9 +74,9 @@ MaxAngleSmall = 60 			--i.e. trees, largest objects
 PatchsizeRegionScaleMultiplier = 1 --unchanged
 PatchsizeRegionScaleMultiplierJustForest = 1.1
 
--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 --Code originally by InsaneRuffles in section below, modified by Lasagna (--*** = lasagna comments)----------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
 RadiusMultiplier = 3			--objects draw distance multiplier (limited by engine's hard-limit)
@@ -96,13 +98,13 @@ LODAdjustMultiplier = 2		--inconsistent results
 RegionLODRadiusAdd = 3			--increases draw distance hard-limit, value above '3' caused crash
 PlanetLODMultiplier = 3		--planet lod distance multiplier
 
--------------------------------------------------------------------------------------------------------------------------------------------------
---Code originally by InsaneRuffles in section above, modified by Lasagna ------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--Code originally by InsaneRuffles in section above, modified by Lasagna -------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Environments_v3.0.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Environments_v3.03.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -112,9 +114,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					---------------------------------------------------------------------------------
-					-- = = = = = = = = = = = = = = 1. LARGE LUSH (BIOMES 1) = = = = = = = = = = = = =
-					---------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--= = = = = = = = = = = = = = = = = = = = = = = = = = = 1. LARGE LUSH (BIOMES 1) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
@@ -135,9 +139,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-					----------------------------------------------------------------------------------
-					-- a.SCALE CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-					----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- a.SCALE CHANGES -------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["MATH_OPERATION"] 		= "*", --8 = HQTREE17, --9 = HQTREE10 --10 = HQTREE63
 							["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -490,9 +494,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxScale",	ScaleMediumMultiplier }
 							}
 						},
-						----------------------------------------------------------------------------
-						-- b. COVERAGE/DENSITY CHANGES = = = = = = = = = = = = = = = = = = = = = = =
-						----------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY CHANGES ------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -541,9 +545,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SlopeDensity",	DensityLowMultiplier},
 							}	
 						},
-						---------------------------------------------------------------------------------------------------------------
-						-- c. DESTROYED BY SHIP/MAX ANGLE/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["VALUE_MATCH"] 		= "", 
@@ -603,9 +607,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxAngle",				MaxAngleLarge},
 							}	
 						},
-						--------------------------------------------------------------------------------------
-						-- d. REGION/IMPOSTER/FADE OUT = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- d. REGION/IMPOSTER/FADE OUT ------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -663,9 +667,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"SlopeDensity",	DensityMediumMultiplier},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------
-						-- e. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) = = =
-						------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- e. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
@@ -784,7 +788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FlatDensity",				DensityLowMultiplier}, --***Fixes shadow flickering
-								{"SlopeDensity",			DensityLowMultiplier},
+								{"SlopeDensity",			DensityLowMultiplier}, --***Fixes shadow flickering
 							}
 						},
 						{
@@ -794,7 +798,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
+								{"FlatDensity",			    DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"MaxRegionRadius",			GrassRadiusMultiplier},
 								{"MaxImposterRadius",		GrassRadiusMultiplier},
@@ -820,9 +824,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					---------------------------------------------------------------------------
-					-- = = = = = = = = = = 2. HUGE/HIGH DENSITY (BIOMES 2) = = = = = = = = = =
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = = = 2. HUGE/HIGH DENSITY (BIOMES 2) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSFULL.MBIN",
@@ -873,10 +879,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\FULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\LOW.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\MID.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTSULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULLULTRA.MBIN",
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCRYSTALS.MBIN",--creates giant crystals, obstructing all water
@@ -891,9 +893,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-					----------------------------------------------------------------------------------
-					-- a.SCALE CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-					----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- a.SCALE CHANGES -------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["MATH_OPERATION"] 		= "*", --8 = HQTREE17, --9 = HQTREE10 --10 = HQTREE63
 							["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -1246,9 +1248,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxScale",	ScaleMediumMultiplier }
 							}
 						},
-						----------------------------------------------------------------------------
-						-- b. COVERAGE/DENSITY CHANGES = = = = = = = = = = = = = = = = = = = = = = =
-						----------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY CHANGES ------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -1297,9 +1299,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SlopeDensity",	DensityLowMultiplier},
 							}	
 						},
-						---------------------------------------------------------------------------------------------------------------
-						-- c. DESTROYED BY SHIP/MAX ANGLE/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["VALUE_MATCH"] 		= "", 
@@ -1359,9 +1361,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxAngle",				MaxAngleLarge},
 							}	
 						},
-						--------------------------------------------------------------------------------------
-						-- d. REGION/IMPOSTER/FADE OUT = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- d. REGION/IMPOSTER/FADE OUT ------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -1419,9 +1421,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"SlopeDensity",	DensityMediumMultiplier},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------
-						-- e. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) = = =
-						------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- e. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
@@ -1540,7 +1542,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FlatDensity",				DensityLowMultiplier}, --***Fixes shadow flickering
-								{"SlopeDensity",			DensityLowMultiplier},
+								{"SlopeDensity",			DensityLowMultiplier}, --***Fixes shadow flickering
 							}
 						},
 						{
@@ -1550,7 +1552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
+								{"FlatDensity",			    DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"MaxRegionRadius",			GrassRadiusMultiplier},
 								{"MaxImposterRadius",		GrassRadiusMultiplier},
@@ -1576,9 +1578,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					---------------------------------------------------------------------------
-					--= = = = = = = = = 3. SMALLER/LOWER DENSITY (BIOMES 3) = = = = = = = = =
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = = = = = 3. SMALLER/LOWER DENSITY (BIOMES 3) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHIVESOBJECTS.MBIN",
@@ -1633,8 +1637,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSMID.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSOBJECTSULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDALIENOBJECTS.MBIN",
@@ -1661,9 +1663,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-					----------------------------------------------------------------------------------
-					-- a.SCALE CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-					----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- a.SCALE CHANGES -------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["MATH_OPERATION"] 		= "*", --8 = HQTREE17, --9 = HQTREE10 --10 = HQTREE63
 							["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -2016,9 +2018,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MaxScale",	ScaleMediumMultiplier }
 							}
 						},
-						----------------------------------------------------------------------------
-						-- b. COVERAGE/DENSITY CHANGES = = = = = = = = = = = = = = = = = = = = = = =
-						----------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY CHANGES ------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{ --v1.3 Changed all of these to increase density
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -2067,9 +2069,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SlopeDensity",	DensityLowMultiplier},
 							}	
 						},
-						---------------------------------------------------------------------------------------------------------------
-						-- c. DESTROYED BY SHIP/MAX ANGLE/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["VALUE_MATCH"] 		= "", 
@@ -2129,9 +2131,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxAngle",				MaxAngleLarge},
 							}	
 						},
-						--------------------------------------------------------------------------------------
-						-- d. REGION/IMPOSTER/FADE OUT = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- d. REGION/IMPOSTER/FADE OUT ------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -2189,322 +2191,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"SlopeDensity",	DensityMediumMultiplier},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------
-						-- e. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) = = =
-						------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",     --one line down
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects} 
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",     --one line down
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks} 
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["SPECIAL_KEY_WORDS"] 	= {"ID","ULTRA",},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",				DensityLowMultiplier}, --***Fixes shadow flickering
-								{"SlopeDensity",			DensityLowMultiplier},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","ULTRA",},
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",				0.7}, --***Fixes invisible grass Ultra bug
-								{"SlopeDensity",			0.7}, --***Fixes invisible grass Ultra bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier}, --***Don't use these, grass bug
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	    GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-							}
-						},
-					},
-				},
-				------------------------------------------------------------------------------------------------------------------------
-				---------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)--------------------
-				------------------------------------------------------------------------------------------------------------------------
-				{
-					---------------------------------------------------------------------------
-					--= = = = = = = = = = = = 4. HIGH DENSITY (BIOMES 4) = = = = = = = = = = =
-					---------------------------------------------------------------------------
-					["MBIN_FILE_SOURCE"] 	= 
-					{
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTSULTRA.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSMID.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMAOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS.MBIN",
-					},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						---------------------------------------------------------------------------------------------------------------
-						-- c. DESTROYED BY SHIP/MAX ANGLE/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL", 
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxScale",				ScaleExtraLarge},
-								{"MaxAngle",				MaxAngleSmall},
-								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxScale",				ScaleLarge},
-								{"MaxAngle",				MaxAngleSmall},
-								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxScale",				ScaleSmall},
-								{"MaxAngle",				MaxAngleLarge},
-								{"PatchEdgeScaling",		PatchEdgeScalingMedium},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxScale",				ScaleSmallest},
-								{"MaxAngle",				MaxAngleLarge},
-								{"PatchEdgeScaling",		PatchEdgeScalingSmall},
-							}	
-						},
-						--------------------------------------------------------------------------------------
-						-- b. COVERAGE/DENSITY/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						--------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	CoverageMultiplier},
-								--{"FlatDensity", 1.1},
-								--{"SlopeDensity",	1.05},
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	CoverageMultiplier},
-								{"FlatDensity", DensityHighMultiplier},
-								--{"SlopeDensity",	DensityMediumMultiplier},
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	CoverageMultiplier},
-								--{"FlatDensity", 1.2},
-								--{"SlopeDensity",	DensityMediumMultiplier},
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"Coverage",	DensityMediumMultiplier},
-								--{"FlatDensity", DensityMediumMultiplier},
-								--{"SlopeDensity",	DensityMediumMultiplier},
-							}	
-						},
-						------------------------------------------------------------------------------------------------------------
-						-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) = = =
-						------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- e. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
@@ -2633,7 +2322,324 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"FlatDensity",			    DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
+								{"MaxRegionRadius",			GrassRadiusMultiplier},
+								{"MaxImposterRadius",		GrassRadiusMultiplier},
+								{"FadeOutStartDistance",	GrassRadiusMultiplier},
+								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",				0.7}, --***Fixes invisible grass Ultra bug
+								{"SlopeDensity",			0.7}, --***Fixes invisible grass Ultra bug
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier}, --***Don't use these, grass bug
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	    GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
+							}
+						},
+					},
+				},
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment) ---------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+				{
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--= = = = = = = = = = = = = = = = = = = = = = = 4. HIGH DENSITY (BIOMES 4) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTSULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSMID.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMAOBJECTS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTS.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTSULTRA.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
+								{"MaxScale",				ScaleExtraLarge},
+								{"MaxAngle",				MaxAngleSmall},
+								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
+								{"MaxScale",				ScaleLarge},
+								{"MaxAngle",				MaxAngleSmall},
+								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
+								{"MaxScale",				ScaleSmall},
+								{"MaxAngle",				MaxAngleLarge},
+								{"PatchEdgeScaling",		PatchEdgeScalingMedium},
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
+								{"MaxScale",				ScaleSmallest},
+								{"MaxAngle",				MaxAngleLarge},
+								{"PatchEdgeScaling",		PatchEdgeScalingSmall},
+							}	
+						},
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY/ETC ----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	CoverageMultiplier},
+								--{"FlatDensity", 1.1},
+								--{"SlopeDensity",	1.05},
+								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
+								{"MaxImposterRadius",		RadiusMultiplier},
+								{"FadeOutStartDistance",	RadiusMultiplier},
+								{"FadeOutEndDistance",		RadiusMultiplier}, ----
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	CoverageMultiplier},
+								{"FlatDensity", DensityHighMultiplier},
+								--{"SlopeDensity",	DensityMediumMultiplier},
+								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
+								{"MaxImposterRadius",		RadiusMultiplier},
+								{"FadeOutStartDistance",	RadiusMultiplier},
+								{"FadeOutEndDistance",		RadiusMultiplier}, ----
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	CoverageMultiplier},
+								--{"FlatDensity", 1.2},
+								--{"SlopeDensity",	DensityMediumMultiplier},
+								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
+								{"MaxImposterRadius",		RadiusMultiplier},
+								{"FadeOutStartDistance",	RadiusMultiplier},
+								{"FadeOutEndDistance",		RadiusMultiplier}, ----
+							}	
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								--{"Coverage",	DensityMediumMultiplier},
+								--{"FlatDensity", DensityMediumMultiplier},
+								--{"SlopeDensity",	DensityMediumMultiplier},
+							}	
+						},
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+1",     --one line down
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierDistantObjects}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierDistantObjects}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierDistantObjects}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierDistantObjects} 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierDistantObjects}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+1",     --one line down
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks} 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] 	= {"ID","ULTRA",},
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",				DensityLowMultiplier}, --***Fixes shadow flickering
+								{"SlopeDensity",			DensityLowMultiplier}, --***Fixes shadow flickering --***Fixes shadow flickering
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FlatDensity",			    DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"MaxRegionRadius",			GrassRadiusMultiplier},
 								{"MaxImposterRadius",		GrassRadiusMultiplier},
@@ -2659,9 +2665,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					---------------------------------------------------------------------------
-					--= = = = = = = = = = = =5. OTHER HUGE (BIOMES 5) = = = = = = = = = = = = =
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--= = = = = = = = = = = = = = = = = = = = = = = 5. OTHER HUGE (BIOMES 5) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULL.MBIN",
@@ -2670,6 +2678,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHOBJECTSFULL.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTS.MBIN",--
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTSULTRA.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL.MBIN",--
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD.MBIN",
@@ -2677,9 +2689,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						---------------------------------------------------------------------------------------------------------------
-						-- c. DESTROYED BY SHIP/MAX ANGLE/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["VALUE_MATCH"] 		= "", 
@@ -2747,9 +2759,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PatchEdgeScaling",		PatchEdgeScalingSmall},
 							}	
 						},
-						--------------------------------------------------------------------------------------
-						-- b. COVERAGE/DENSITY/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY/ETC ----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -2816,9 +2828,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"SlopeDensity",	DensityMediumMultiplier},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------
-						-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) = = =
-						------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
@@ -2937,7 +2949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FlatDensity",				DensityLowMultiplier}, --***Fixes shadow flickering
-								{"SlopeDensity",			DensityLowMultiplier}, --***Fixes shadow flickering
+								{"SlopeDensity",			DensityLowMultiplier}, --***Fixes shadow flickering --***Fixes shadow flickering
 							}
 						},
 						{
@@ -2947,7 +2959,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
+								{"FlatDensity",			    DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"MaxRegionRadius",			GrassRadiusMultiplier},
 								{"MaxImposterRadius",		GrassRadiusMultiplier},
@@ -2973,18 +2985,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					---------------------------------------------------------------------------
-					--= = = = = = = = = = = 6. LOW DENSITY HQ (BIOMES 6) = = = = = = = = = = =
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--= = = = = = = = = = = = = = = = = = = = = = 6. LOW DENSITY HQ (BIOMES 6) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						---------------------------------------------------------------------------
-						-- a. Destroyed by ship/Max scale/Max angle/Patch edge scaling/Etc = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- a. Destroyed by ship/Max scale/Max angle/Patch edge scaling/Etc -------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["VALUE_MATCH"] 		= "", 
@@ -3052,9 +3064,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PatchEdgeScaling",		PatchEdgeScalingSmall},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------------------------------------------
-						-- b. Coverage/Density/Etc = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY/ETC --------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -3121,9 +3133,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"SlopeDensity",	1},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------------------------------------------
-						-- c. Lod distances/Ultra invisible bug fix (code originally by InsaneRuffles *** = lasagna comments): = = = = = = = = = = = = = = = = = = = = =
-						------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. Lod distances/Ultra invisible bug fix (code originally by InsaneRuffles *** = lasagna comments): ----------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {},
 							["SPECIAL_KEY_WORDS"] 	= {"ID","STANDARD",},
@@ -3288,9 +3300,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					---------------------------------------------------------------------------
-					--= = = = = = = = = = 7. HIGHEST DENSITY (BIOMES 7) = = = = = = = = = = =
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = = = = = = 7. HIGHEST DENSITY (BIOMES 7) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSDEAD.MBIN",
@@ -3308,9 +3322,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						---------------------------------------------------------------------------------------------------------------
-						-- c. DESTROYED BY SHIP/MAX ANGLE/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["VALUE_MATCH"] 		= "", 
@@ -3391,9 +3405,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PatchEdgeScaling",		PatchEdgeScalingSmall},
 							}	
 						},
-						--------------------------------------------------------------------------------------
-						-- b. COVERAGE/DENSITY/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY/ETC ----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -3460,9 +3474,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"SlopeDensity",	DensityMediumMultiplier},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------
-						-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) = = =
-						------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
@@ -3581,7 +3595,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FlatDensity",				DensityLowMultiplier}, --***Fixes shadow flickering
-								{"SlopeDensity",			DensityLowMultiplier},
+								{"SlopeDensity",			DensityLowMultiplier}, --***Fixes shadow flickering
 							}
 						},
 						{
@@ -3591,7 +3605,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
+								{"FlatDensity",			    DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"MaxRegionRadius",			GrassRadiusMultiplier},
 								{"MaxImposterRadius",		GrassRadiusMultiplier},
@@ -3617,9 +3631,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					---------------------------------------------------------------------------
-					--= = = = = = = = = = 8. MEDIUM DENSITY (BIOMES 8) = = = = = = = = = = =
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--= = = = = = = = = = = = = = = = = = = = = 8. MEDIUM DENSITY (BIOMES 8) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSFULL.MBIN",
@@ -3642,9 +3658,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						---------------------------------------------------------------------------------------------------------------
-						-- c. DESTROYED BY SHIP/MAX ANGLE/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["VALUE_MATCH"] 		= "", 
@@ -3712,9 +3728,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PatchEdgeScaling",		PatchEdgeScalingSmall},
 							}	
 						},
-						--------------------------------------------------------------------------------------
-						-- b. COVERAGE/DENSITY/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY/ETC ----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -3781,9 +3797,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"SlopeDensity",	DensityMediumMultiplier},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------
-						-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) = = =
-						------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
@@ -3902,7 +3918,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FlatDensity",				DensityLowMultiplier}, --***Fixes shadow flickering
-								{"SlopeDensity",			DensityLowMultiplier},
+								{"SlopeDensity",			DensityLowMultiplier}, --***Fixes shadow flickering
 							}
 						},
 						{
@@ -3912,7 +3928,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
+								{"FlatDensity",			    DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"MaxRegionRadius",			GrassRadiusMultiplier},
 								{"MaxImposterRadius",		GrassRadiusMultiplier},
@@ -3938,9 +3954,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					---------------------------------------------------------------------------
-					--= = = = = = = = = = = = 9. BUGGY BIOMES (BIOMES 9) = = = = = = = = = = = 
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--= = = = = = = = = = = = = = = = = = = = = = = 9. BUGGY BIOMES (BIOMES 9) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHQOBJECTSFULL.MBIN", --Only this doesn't cause crashes
@@ -3949,9 +3967,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						---------------------------------------------------------------------------------------------------------------
-						-- c. DESTROYED BY SHIP/MAX ANGLE/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["VALUE_MATCH"] 		= "", 
@@ -4043,9 +4061,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PatchEdgeScaling",		PatchEdgeScalingSmall},
 							}	
 						},
-						--------------------------------------------------------------------------------------
-						-- b. COVERAGE/DENSITY/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY/ETC ----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -4112,9 +4130,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								-- {"SlopeDensity",	DensityLowestMultiplier},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------
-						-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) = = =
-						------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
@@ -4233,7 +4251,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FlatDensity",				DensityLowMultiplier}, --***Fixes shadow flickering
-								{"SlopeDensity",			DensityLowMultiplier},
+								{"SlopeDensity",			DensityLowMultiplier}, --***Fixes shadow flickering
 							}
 						},
 						{
@@ -4243,7 +4261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
+								{"FlatDensity",			    DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"MaxRegionRadius",			GrassRadiusMultiplier},
 								{"MaxImposterRadius",		GrassRadiusMultiplier},
@@ -4269,9 +4287,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					---------------------------------------------------------------------------
-					-- = = = = = = = = 10. LOW DENSITY LAVA/TENTACLE (BIOMES 10) = = = = = = = =
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = 10. LOW DENSITY LAVA/TENTACLE (BIOMES 10) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN",
@@ -4281,9 +4301,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						---------------------------------------------------------------------------------------------------------------
-						-- c. DESTROYED BY SHIP/MAX ANGLE/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						---------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["VALUE_MATCH"] 		= "", 
@@ -4351,9 +4371,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PatchEdgeScaling",		PatchEdgeScalingSmall},
 							}	
 						},
-						--------------------------------------------------------------------------------------
-						-- b. COVERAGE/DENSITY/ETC = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
-						--------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- b. COVERAGE/DENSITY/ETC ----------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] = "*",
@@ -4420,9 +4440,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								-- {"SlopeDensity",	DensityLowestMultiplier},
 							}	
 						},
-						------------------------------------------------------------------------------------------------------------
-						-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) = = =
-						------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
 							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
@@ -4541,7 +4561,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"FlatDensity",				DensityLowMultiplier}, --***Fixes shadow flickering
-								{"SlopeDensity",			DensityLowMultiplier},
+								{"SlopeDensity",			DensityLowMultiplier}, --***Fixes shadow flickering
 							}
 						},
 						{
@@ -4551,7 +4571,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
+								{"FlatDensity",			    DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityLowestMultiplier}, --***Fixes invisible grass bug
 								{"MaxRegionRadius",			GrassRadiusMultiplier},
 								{"MaxImposterRadius",		GrassRadiusMultiplier},
@@ -4576,14 +4596,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					},
 				},
-				------------------------------------------------------------------------------------------------------------------------
-				---------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)--------------------
-				------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment) ---------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 				{
 					["MBIN_FILE_SOURCE"] 	=
-					---------------------------------------------------------------------------
-					--= = = = = = = = = = 11. JUST CRYSTALS (BIOMES 11) = = = = = = = = = = = =
-					---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = = = = = = 11. JUST CRYSTALS (BIOMES 11) = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\BARREN.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\DEAD.MBIN",
@@ -4596,9 +4618,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						---------------------------------------------------------------------------------
-						--= = = = = = = = a. DESTROYEDBYSHIP/SCALE/ROTATION/COLLISION CHANGES = = = = = =
-						---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- a. DESTROYEDBYSHIP/SCALE/ROTATION/COLLISION CHANGES ------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -4615,13 +4637,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"CollideWithPlayer",	"True"},
 							}
 						},
-						---------------------------------------------------------------------------
-						-- = = = = = = c. [no b.] LOD DISTANCE/RADIUS/FADE DISTANCE CHANGES = = = =
-						---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- c. [no b.] LOD DISTANCE/RADIUS/FADE DISTANCE CHANGES ------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 						
-						-----------------------------------------------------------------------------------------------------------------------
-						---------Code originally by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment)--------------
-						-----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- Code originally by InsaneRuffles in section below, modified by Lllasagna (*** = lasagna comment) ----------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -4715,10 +4737,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-				
-				-----------------------------------------------------------------
-				--= = = = = 12. GLOBAL MISC TERRAIN/LOD/FADE TIME STUFF = = = = = 
-				-----------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = = 12. GLOBAL MISC TERRAIN/LOD/FADE TIME STUFF = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 --This includes: uncached terrain, shadows, lod adjust, region, planet LOD, and fade time changes
 				
 					["MBIN_FILE_SOURCE"] 	= 
@@ -4814,7 +4837,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] 		= "+1",    
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"RegionLODRadius",	0}		--distance radius of finest details, increase causes flickering on some planets
+								{"RegionLODRadius",	0}	--distance radius of finest details, increase causes flickering on some planets
 							}
 						},
 						{
@@ -4883,9 +4906,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"PlanetEffectEndDistance",	PlanetLODMultiplier}
 							}
 						},
-						------------------------------------------------------------------------------------------------------------------------------------
-						--------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)---------------
-						------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)-----------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["INTEGER_TO_FLOAT"]	= "FORCE",
@@ -4908,10 +4931,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-						-------------------------------------------------------------------------
-						-- = = = = = 13. PATCH SCALE/REGION SCALE/SPAWN DENSITY CHANGES = = = = =
-						-------------------------------------------------------------------------
-		--Modifies placement/regions on a planet, i.e. high density areas & expansive open areas
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--= = = = = = = = = = = = = = = = = = = 13. PATCH SCALE/REGION SCALE/SPAWN DENSITY CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--Modifies placement/regions on a planet, i.e. high density areas & expansive open areas
 						
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\PLACEMENTVALUES\SPAWNDENSITYLIST.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -5068,10 +5093,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-								------------------------------------------------------------
-								--= = = = = = = = = 14. FAST START CHANGES = = = = = = = = =
-								------------------------------------------------------------
-						--makes boot load time faster, doesn't remove mod warning
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--= = = = = = = = = = = = = = = = = = = = = 14. FAST START CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--makes boot load time faster, doesn't remove mod warning
 						
 					["MBIN_FILE_SOURCE"] 	= 
 					{
