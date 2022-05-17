@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items EM Any 2x"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "387"
+GameVersion = "389"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
@@ -52,8 +52,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"RegionLimit",0},
 		{"PlanetLimit",0},
 		{"FreighterBaseLimit",0},
-		{"SystemLimit",0},
-		{"GlobalLimit",0},
 		{"CheckPlaceholderCollision","False"},
 		{"CanPlaceOnItself","True"},
 		{"CanRotate3D","True"},
