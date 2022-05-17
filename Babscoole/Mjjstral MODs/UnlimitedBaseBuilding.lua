@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								--{"DisableLimits",					"True"},
 								{"DisableBaseBuildingLimits",		"True"},
-								{"BaseBuildingPartsRequirePower",	"False"},		
+								{"DisableBasePowerRequirements",	"True"},		
 								{"BaseDownloadTimeout",				"120"},	--ORIGINAL 40
 							}
 						}
