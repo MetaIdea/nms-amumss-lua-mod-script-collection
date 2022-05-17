@@ -714,6 +714,7 @@ else
 			["SPECIAL_KEY_WORDS"]	= {"ID", UNLIMITED_BUILPART_ID_TABLE[i]},
 			["VALUE_MATCH"] = 0,
 			["VALUE_MATCH_OPTIONS"] = "~=", --does NOT match value above
+			["NOTICE_OFF"] = "True",
 			["VALUE_CHANGE_TABLE"]	= 
 			{
 				{"PlanetLimit", 0},

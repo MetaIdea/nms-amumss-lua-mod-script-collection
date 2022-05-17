@@ -2902,6 +2902,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -2945,6 +2946,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -2988,6 +2990,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3031,6 +3034,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3074,6 +3078,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3117,6 +3122,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3160,6 +3166,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3203,6 +3210,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3246,6 +3254,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3289,6 +3298,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3332,6 +3342,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3374,7 +3385,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3417,7 +3429,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_GLASSCUBE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3464,7 +3477,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CURVEDROOF_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3507,7 +3521,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CURVEDWALL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3551,6 +3566,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEFLOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3594,6 +3610,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINNERWALL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3637,6 +3654,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINNERDOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3680,6 +3698,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINTSTAIRS_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3723,6 +3742,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3766,6 +3786,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3809,6 +3830,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3852,6 +3874,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3895,6 +3918,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3937,7 +3961,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -3980,7 +4005,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_GLASSCUBE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4027,7 +4053,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CURVEDROOF_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4070,7 +4097,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CURVEDWALL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4114,6 +4142,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEFLOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4157,6 +4186,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINNERWALL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4200,6 +4230,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINNERDOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4243,6 +4274,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINTSTAIRS_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4286,6 +4318,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4329,6 +4362,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4372,6 +4406,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4415,6 +4450,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4458,6 +4494,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4500,7 +4537,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4543,7 +4581,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_GLASSCUBE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4590,7 +4629,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CURVEDROOF_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4633,7 +4673,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CURVEDWALL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4677,6 +4718,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEFLOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4720,6 +4762,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINNERWALL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4763,6 +4806,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINNERDOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4806,6 +4850,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINTSTAIRS_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4849,6 +4894,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4892,6 +4938,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4935,6 +4982,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -4978,6 +5026,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5021,6 +5070,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEROOFCAP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5063,7 +5113,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5106,7 +5157,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5149,7 +5201,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5192,7 +5245,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5235,7 +5289,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5278,7 +5333,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5321,7 +5377,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5365,6 +5422,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_RAMP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5412,6 +5470,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_RAMP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5458,7 +5517,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5501,7 +5561,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5544,7 +5605,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5587,7 +5649,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5630,7 +5693,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5673,7 +5737,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5716,7 +5781,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5759,7 +5825,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5802,7 +5869,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5845,7 +5913,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5888,7 +5957,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5932,6 +6002,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -5974,7 +6045,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6017,7 +6089,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"3",
 						["TerrainEditBoundsScalar"] = 	"0.85",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6060,7 +6133,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6104,6 +6178,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"3",
 						["TerrainEditBoundsScalar"] = 	"0.85",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_LANDINGPAD_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6154,7 +6229,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6197,7 +6273,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CORRIDOR_L_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6240,7 +6317,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CORRIDOR_T_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6283,7 +6361,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CORRIDOR_X_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6326,7 +6405,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_STAIRS_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6369,7 +6449,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6416,7 +6497,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6463,7 +6545,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6510,7 +6593,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6557,7 +6641,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6604,7 +6689,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6651,7 +6737,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6698,7 +6785,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6745,7 +6833,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6792,7 +6881,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_TOWER_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6839,7 +6929,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_TOWER_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6886,7 +6977,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_TOWER_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6933,7 +7025,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -6980,7 +7073,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7027,7 +7121,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7074,7 +7169,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7121,7 +7217,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7168,7 +7265,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_FOUNDATION_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7215,7 +7313,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_FOUNDATION_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7262,7 +7361,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_FOUNDATION_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7309,7 +7409,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7356,7 +7457,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7403,7 +7505,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7450,7 +7553,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7497,7 +7601,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7544,7 +7649,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7591,7 +7697,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7638,7 +7745,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7686,6 +7794,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7729,6 +7838,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7772,6 +7882,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7815,6 +7926,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7858,6 +7970,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7901,6 +8014,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7944,6 +8058,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_C_DOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -7987,6 +8102,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8030,6 +8146,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8077,6 +8194,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8120,6 +8238,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8163,6 +8282,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8206,6 +8326,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8253,6 +8374,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8296,6 +8418,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8339,6 +8462,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8382,6 +8506,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8425,6 +8550,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8468,6 +8594,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8511,6 +8638,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8554,6 +8682,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORNERPOST_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8597,6 +8726,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORNERPOST_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8640,6 +8770,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORNERPOST_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8683,6 +8814,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"0.7",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_TOWER_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8730,6 +8862,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"5",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_TOWER_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8777,6 +8910,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_TOWER_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8824,6 +8958,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_TOWER_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8871,6 +9006,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_TOWER_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8918,6 +9054,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -8965,6 +9102,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9012,6 +9150,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9059,6 +9198,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9106,6 +9246,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9149,6 +9290,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9192,6 +9334,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9235,6 +9378,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9278,6 +9422,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9321,6 +9466,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_M_DOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9364,6 +9510,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9407,6 +9554,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9454,6 +9602,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9497,6 +9646,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9540,6 +9690,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9583,6 +9734,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9630,6 +9782,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9673,6 +9826,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9716,6 +9870,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9759,6 +9914,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9802,6 +9958,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9845,6 +10002,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9889,6 +10047,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9933,6 +10092,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -9976,6 +10136,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10019,6 +10180,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10062,6 +10224,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10105,6 +10268,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10148,6 +10312,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10191,6 +10356,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10234,6 +10400,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10277,6 +10444,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10320,6 +10488,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10363,6 +10532,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10406,6 +10576,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10449,6 +10620,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10492,6 +10664,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_C_DOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10535,6 +10708,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10578,6 +10752,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10621,6 +10796,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10664,6 +10840,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORNERPOST_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10706,7 +10883,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10754,6 +10932,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10801,6 +10980,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10844,6 +11024,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10886,7 +11067,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10929,7 +11111,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -10972,7 +11155,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11015,7 +11199,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11058,7 +11243,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"-0.4",
 						["TerrainEditTopYOffset"] = 	"-1",
 						["TerrainEditBoundsScalar"] = 	"0.89",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11102,6 +11288,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_C_WALL_WINDOW_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11145,6 +11332,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_C_GFLOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11188,6 +11376,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_C_WALL_WINDOW_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11231,6 +11420,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_C_GFLOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11274,6 +11464,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11321,6 +11512,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11364,6 +11556,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11407,6 +11600,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_WALLDOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11450,6 +11644,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_WALLDOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11493,6 +11688,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11540,6 +11736,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11586,7 +11783,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11630,6 +11828,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11677,6 +11876,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11724,6 +11924,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11767,6 +11968,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11810,6 +12012,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11853,6 +12056,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11896,6 +12100,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11939,6 +12144,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -11982,6 +12188,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12025,6 +12232,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12072,6 +12280,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12115,6 +12324,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12158,6 +12368,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_LADDER_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12201,6 +12412,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12244,6 +12456,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12287,6 +12500,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12330,6 +12544,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12373,6 +12588,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12416,6 +12632,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12459,6 +12676,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_RAMP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12506,6 +12724,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12553,6 +12772,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12600,6 +12820,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12647,6 +12868,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12690,6 +12912,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12737,6 +12960,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12784,6 +13008,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_PAVING_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12827,6 +13052,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_PAVING_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12870,6 +13096,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",	-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBESHAPE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12913,6 +13140,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12956,6 +13184,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -12999,6 +13228,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_BASE_TELEPORT_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13046,6 +13276,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"10",
 						["TerrainEditBoundsScalar"] = 	"1.05",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_PAVING_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13089,6 +13320,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"10",
 						["TerrainEditBoundsScalar"] = 	"1.05",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_PAVING_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13132,6 +13364,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"10",
 						["TerrainEditBoundsScalar"] = 	"1.05",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_PAVING_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13175,6 +13408,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"10",
 						["TerrainEditBoundsScalar"] = 	"1.05",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_PAVING_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13218,6 +13452,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_WALL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13250,7 +13485,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_EXT_DECOR", "WDECAL_MAIN" },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -13261,6 +13496,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13293,7 +13529,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_EXT_DECOR", "WDECAL_MAIN" },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -13304,6 +13540,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13336,7 +13573,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_EXT_DECOR", "WDECAL_MAIN" },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -13347,6 +13584,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_PIPESHAPE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13379,7 +13617,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_EXT_DECOR", "WDECAL_MAIN" },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -13390,6 +13628,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_PIPESHAPE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13422,7 +13661,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_EXT_DECOR", "WDECAL_MAIN" },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -13433,6 +13672,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_PIPESHAPE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13476,6 +13716,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_WALL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13519,6 +13760,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13562,6 +13804,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13605,6 +13848,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13648,6 +13892,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13691,6 +13936,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13734,6 +13980,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORNERPOST_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13781,6 +14028,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CORNERPOST_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13828,6 +14076,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13875,6 +14124,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13922,6 +14172,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -13969,6 +14220,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14016,6 +14268,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14063,6 +14316,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14110,6 +14364,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CORRIDOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14156,7 +14411,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CORRIDOR_L_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14204,6 +14460,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CORRIDOR_X_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14251,6 +14508,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_STAIRS_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14298,6 +14556,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_STAIRS_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14345,6 +14604,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_STAIRS_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14392,6 +14652,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_STAIRS_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14439,6 +14700,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"3",
 						["TerrainEditBoundsScalar"] = 	"0.85",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_LANDINGPAD_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14490,6 +14752,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14537,6 +14800,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14584,6 +14848,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14635,6 +14900,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14686,6 +14952,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14737,6 +15004,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14788,6 +15056,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14839,6 +15108,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14890,6 +15160,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14941,6 +15212,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -14992,6 +15264,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15043,6 +15316,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15094,6 +15368,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15145,6 +15420,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15196,6 +15472,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15247,6 +15524,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15298,6 +15576,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15349,6 +15628,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15400,6 +15680,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15451,6 +15732,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15502,6 +15784,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"50",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15552,7 +15835,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"1.3",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.35",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"SPACECUBE",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15599,7 +15883,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"1.3",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.35",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"SPACECUBE",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15646,7 +15931,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"1.3",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.35",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"SPACECUBE",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15693,7 +15979,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"1.3",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.35",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"SPACECUBE",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15740,7 +16027,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"1.3",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.35",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"SPACECUBE",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15787,7 +16075,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"1.3",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.35",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"SPACECUBE",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15834,7 +16123,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"1.3",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.35",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"SPACECUBE",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"UI_SPACE_CUBEROOM_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15881,7 +16171,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15924,7 +16215,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -15967,7 +16259,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16010,7 +16303,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16053,7 +16347,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16096,7 +16391,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16139,7 +16435,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16182,7 +16479,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16225,7 +16523,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16268,7 +16567,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16311,7 +16611,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16354,7 +16655,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.2",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16398,6 +16700,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16449,6 +16752,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16500,6 +16804,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16551,6 +16856,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16602,6 +16908,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16653,6 +16960,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16704,6 +17012,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16755,6 +17064,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16806,6 +17116,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16857,6 +17168,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16908,6 +17220,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -16959,6 +17272,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17010,6 +17324,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17061,6 +17376,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17112,6 +17428,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17163,6 +17480,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17214,6 +17532,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17265,6 +17584,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17316,6 +17636,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17367,6 +17688,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17418,6 +17740,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17469,6 +17792,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17520,6 +17844,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17571,6 +17896,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17622,6 +17948,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17673,6 +18000,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17724,6 +18052,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17775,6 +18104,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17826,6 +18156,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17877,6 +18208,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17928,6 +18260,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -17979,6 +18312,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"7.5",
 						["TerrainEditBoundsScalar"] = 	"0.95",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18030,6 +18364,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"BATTERY",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18077,6 +18412,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_ALL_1_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18120,6 +18456,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_ALL_2_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18163,6 +18500,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_ALL_3_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18206,6 +18544,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_LUSH_WILD_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18249,6 +18588,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_DUST_WILD_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18292,6 +18632,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_HOT_WILD_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18335,6 +18676,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_COLD_WILD_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18378,6 +18720,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_RAD_WILD_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18421,6 +18764,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_TOX_WILD_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18464,6 +18808,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_GLITCH_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18507,6 +18852,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"PLANTER",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18558,6 +18904,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"PLANTER",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18609,6 +18956,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18656,6 +19004,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18703,6 +19052,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18750,6 +19100,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18797,6 +19148,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18844,6 +19196,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18891,6 +19244,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18938,6 +19292,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -18985,6 +19340,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19032,6 +19388,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19079,6 +19436,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19126,6 +19484,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINNERWALL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19169,6 +19528,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_CUBEINNERDOOR_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19215,7 +19575,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19258,7 +19619,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_S_RAMP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19301,7 +19663,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_S_RAMP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19344,7 +19707,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_S_RAMP_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19387,7 +19751,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19430,7 +19795,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19473,7 +19839,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19516,7 +19883,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19559,7 +19927,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19602,7 +19971,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19645,7 +20015,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19688,7 +20059,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19731,7 +20103,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19774,7 +20147,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19817,7 +20191,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19860,7 +20235,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19903,7 +20279,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19946,7 +20323,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -19989,7 +20367,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BUILDING_MONOLITH",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20038,6 +20417,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20085,6 +20465,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20132,6 +20513,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20179,6 +20561,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20226,6 +20609,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20277,6 +20661,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20324,6 +20709,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20371,6 +20757,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20418,6 +20805,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20465,6 +20853,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20512,6 +20901,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20544,7 +20934,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA" },
+						["SubGroupName"] = 					{ "WDECORA", "WDECOR_IND" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -20555,6 +20945,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20598,6 +20989,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20641,6 +21033,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20684,6 +21077,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20727,6 +21121,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20774,6 +21169,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20817,6 +21213,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20860,6 +21257,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20911,6 +21309,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20954,6 +21353,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -20997,6 +21397,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21040,6 +21441,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21083,6 +21485,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21126,6 +21529,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21173,6 +21577,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21224,6 +21629,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21271,6 +21677,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21318,6 +21725,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21369,6 +21777,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21420,6 +21829,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21463,6 +21873,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21506,6 +21917,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21553,6 +21965,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21600,6 +22013,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21647,6 +22061,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21694,6 +22109,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21737,6 +22153,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21780,6 +22197,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21823,6 +22241,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21870,6 +22289,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21917,6 +22337,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -21964,6 +22385,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22011,6 +22433,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22058,6 +22481,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22105,6 +22529,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22152,6 +22577,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22202,7 +22628,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"3",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22249,7 +22676,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22296,7 +22724,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0.5",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22344,6 +22773,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22391,6 +22821,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22438,6 +22869,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22485,6 +22917,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22532,6 +22965,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22579,6 +23013,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22630,6 +23065,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22677,6 +23113,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22728,6 +23165,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22775,6 +23213,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22822,6 +23261,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22869,6 +23309,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22916,6 +23357,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -22967,6 +23409,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23014,6 +23457,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23061,6 +23505,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23104,6 +23549,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23151,6 +23597,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23198,6 +23645,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23245,6 +23693,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23292,6 +23741,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23339,6 +23789,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23386,6 +23837,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23433,6 +23885,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23480,6 +23933,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23527,6 +23981,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23574,6 +24029,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23621,6 +24077,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23664,6 +24121,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23707,6 +24165,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23750,6 +24209,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23793,6 +24253,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23836,6 +24297,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23879,6 +24341,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23922,6 +24385,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -23965,6 +24429,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24008,6 +24473,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24051,6 +24517,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24094,6 +24561,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24137,6 +24605,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24180,6 +24649,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24223,6 +24693,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24266,6 +24737,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24309,6 +24781,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24352,6 +24825,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24395,6 +24869,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24438,6 +24913,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24481,6 +24957,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24524,6 +25001,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24567,6 +25045,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24610,6 +25089,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24657,6 +25137,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24704,6 +25185,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24751,6 +25233,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24802,6 +25285,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24853,6 +25337,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24900,6 +25385,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24947,6 +25433,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -24994,6 +25481,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25041,6 +25529,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25088,6 +25577,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25135,6 +25625,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25182,6 +25673,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25229,6 +25721,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25276,6 +25769,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25323,6 +25817,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25370,6 +25865,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25417,6 +25913,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25464,6 +25961,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25511,6 +26009,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25558,6 +26057,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25605,6 +26105,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25652,6 +26153,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25699,6 +26201,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25746,6 +26249,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25793,6 +26297,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25840,6 +26345,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25887,6 +26393,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25934,6 +26441,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -25981,6 +26489,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26028,6 +26537,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26075,6 +26585,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26114,7 +26625,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26126,6 +26637,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26157,7 +26669,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26169,6 +26681,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26200,7 +26713,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26212,6 +26725,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26243,7 +26757,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26255,6 +26769,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26286,7 +26801,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26298,6 +26813,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26329,7 +26845,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26341,6 +26857,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26372,7 +26889,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26384,6 +26901,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26415,7 +26933,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26427,6 +26945,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26458,7 +26977,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26470,6 +26989,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26501,7 +27021,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26513,6 +27033,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26544,7 +27065,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26556,6 +27077,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26587,7 +27109,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26599,6 +27121,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26630,7 +27153,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26642,6 +27165,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26673,7 +27197,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26685,6 +27209,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26716,7 +27241,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26728,6 +27253,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26759,7 +27285,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
-						["CanScale"] = 					"False",
+						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WPOSTER" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -26771,6 +27297,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26814,6 +27341,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26857,6 +27385,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26900,6 +27429,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26943,6 +27473,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -26990,6 +27521,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27033,6 +27565,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27076,6 +27609,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27119,6 +27653,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27170,6 +27705,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27213,6 +27749,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27256,6 +27793,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27299,6 +27837,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27342,6 +27881,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27385,6 +27925,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27428,6 +27969,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27471,6 +28013,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27518,6 +28061,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27565,6 +28109,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27616,6 +28161,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27659,6 +28205,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27706,6 +28253,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27753,6 +28301,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27800,6 +28349,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27847,6 +28397,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27898,6 +28449,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27941,6 +28493,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -27984,6 +28537,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28035,6 +28589,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28086,6 +28641,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28129,6 +28685,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28172,6 +28729,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28219,6 +28777,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28266,6 +28825,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28309,6 +28869,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28356,6 +28917,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28399,6 +28961,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28442,6 +29005,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28489,6 +29053,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28532,6 +29097,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28575,6 +29141,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28622,6 +29189,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28669,6 +29237,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28712,6 +29281,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28755,6 +29325,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28802,6 +29373,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28849,6 +29421,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28896,6 +29469,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28943,6 +29517,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -28990,6 +29565,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29037,6 +29613,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29084,6 +29661,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29131,6 +29709,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29178,6 +29757,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29221,6 +29801,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29264,6 +29845,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29307,6 +29889,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29350,6 +29933,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29397,6 +29981,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29440,6 +30025,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29483,6 +30069,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29530,6 +30117,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29577,6 +30165,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29624,6 +30213,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29671,6 +30261,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29718,6 +30309,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29764,7 +30356,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29811,7 +30404,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29859,6 +30453,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29902,6 +30497,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29945,6 +30541,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -29988,6 +30585,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30031,6 +30629,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30074,6 +30673,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30117,6 +30717,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30160,6 +30761,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30203,6 +30805,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30246,6 +30849,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30289,6 +30893,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30332,6 +30937,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30375,6 +30981,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30418,6 +31025,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30461,6 +31069,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30504,6 +31113,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30555,6 +31165,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30598,6 +31209,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30641,6 +31253,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30684,6 +31297,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30727,6 +31341,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30770,6 +31385,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30813,6 +31429,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30856,6 +31473,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30899,6 +31517,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30942,6 +31561,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -30985,6 +31605,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31028,6 +31649,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31071,6 +31693,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31118,6 +31741,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31165,6 +31789,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31212,6 +31837,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31259,6 +31885,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31306,6 +31933,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31353,6 +31981,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31400,6 +32029,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31447,6 +32077,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31494,6 +32125,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_STORAGE_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31541,6 +32173,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31588,6 +32221,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31631,6 +32265,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31674,6 +32309,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31717,6 +32353,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31760,6 +32397,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31803,6 +32441,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31846,6 +32485,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31889,6 +32529,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31936,6 +32577,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -31983,6 +32625,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32030,6 +32673,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32077,6 +32721,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32124,6 +32769,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32171,6 +32817,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32218,6 +32865,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32265,6 +32913,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32308,6 +32957,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32351,6 +33001,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32394,6 +33045,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32437,6 +33089,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32488,6 +33141,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32531,6 +33185,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32574,6 +33229,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32617,6 +33273,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32660,6 +33317,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32703,6 +33361,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32750,6 +33409,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32797,6 +33457,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32840,6 +33501,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32883,6 +33545,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32915,7 +33578,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "INT_DECOR", "WDECAL_MAIN" },
+						["SubGroupName"] = 					{ "INT_DECOR", "PF_EXT_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -32926,6 +33589,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_BUILDFLATPANEL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -32962,7 +33626,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "INT_DECOR", "WDECAL_MAIN" },
+						["SubGroupName"] = 					{ "INT_DECOR", "PF_EXT_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -32973,6 +33637,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33020,6 +33685,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33063,6 +33729,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33106,6 +33773,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33149,6 +33817,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33196,6 +33865,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33239,6 +33909,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33282,6 +33953,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33325,6 +33997,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33368,6 +34041,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33411,6 +34085,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33454,6 +34129,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33497,6 +34173,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33540,6 +34217,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33583,6 +34261,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33626,6 +34305,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33673,6 +34353,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33720,6 +34401,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33771,6 +34453,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33818,6 +34501,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33865,6 +34549,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33912,6 +34597,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\SUMMONBIKE.DDS",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -33959,6 +34645,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34010,6 +34697,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34061,6 +34749,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34111,7 +34800,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditBaseYOffset"] = 	"0",
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"True",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"CUBEROOM",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34159,6 +34849,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"3",
 						["TerrainEditBoundsScalar"] = 	"0.85",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_LANDINGPAD_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34210,6 +34901,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"3",
 						["TerrainEditBoundsScalar"] = 	"0.85",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_SHIPSUMMON_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34261,6 +34953,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34308,6 +35001,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"FARMING",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34355,6 +35049,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34406,6 +35101,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34449,6 +35145,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34492,6 +35189,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34535,6 +35233,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34578,6 +35277,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34621,6 +35321,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34664,6 +35365,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34707,6 +35409,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34754,6 +35457,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34801,6 +35505,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34848,6 +35553,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34895,6 +35601,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34938,6 +35645,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -34985,6 +35693,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35028,6 +35737,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35079,6 +35789,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35130,6 +35841,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35181,6 +35893,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35232,6 +35945,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35283,6 +35997,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35334,6 +36049,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35385,6 +36101,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35436,6 +36153,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35487,6 +36205,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35538,6 +36257,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35589,6 +36309,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35640,6 +36361,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35691,6 +36413,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35742,6 +36465,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35793,6 +36517,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35836,6 +36561,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35879,6 +36605,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35922,6 +36649,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -35965,6 +36693,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36008,6 +36737,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36051,6 +36781,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36094,6 +36825,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36137,6 +36869,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36180,6 +36913,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36223,6 +36957,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36266,6 +37001,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36309,6 +37045,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36352,6 +37089,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36395,6 +37133,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36438,6 +37177,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36481,6 +37221,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36524,6 +37265,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36567,6 +37309,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36610,6 +37353,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36653,6 +37397,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36696,6 +37441,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36739,6 +37485,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36786,6 +37533,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36829,6 +37577,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36872,6 +37621,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36915,6 +37665,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -36958,6 +37709,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37005,6 +37757,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37052,6 +37805,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37099,6 +37853,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37146,6 +37901,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37193,6 +37949,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37240,6 +37997,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37283,6 +38041,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37326,6 +38085,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37369,6 +38129,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37412,6 +38173,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37455,6 +38217,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37498,6 +38261,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37541,6 +38305,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37584,6 +38349,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37627,6 +38393,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37670,6 +38437,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1.1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37717,6 +38485,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37764,6 +38533,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37807,6 +38577,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37850,6 +38621,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37893,6 +38665,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37940,6 +38713,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -37983,6 +38757,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38030,6 +38805,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38077,6 +38853,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38124,6 +38901,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38171,6 +38949,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38218,6 +38997,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38265,6 +39045,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38312,6 +39093,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38359,6 +39141,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38406,6 +39189,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38449,6 +39233,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38496,6 +39281,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38539,6 +39325,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38586,6 +39373,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38629,6 +39417,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38672,6 +39461,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38715,6 +39505,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38758,6 +39549,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38801,6 +39593,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38844,6 +39637,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38887,6 +39681,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38930,6 +39725,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -38973,6 +39769,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39016,6 +39813,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39059,6 +39857,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39102,6 +39901,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39145,6 +39945,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39192,6 +39993,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39239,6 +40041,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39286,6 +40089,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39333,6 +40137,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39380,6 +40185,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39427,6 +40233,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39474,6 +40281,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39521,6 +40329,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39568,6 +40377,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39615,6 +40425,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39662,6 +40473,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39709,6 +40521,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39756,6 +40569,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39803,6 +40617,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39850,6 +40665,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39897,6 +40713,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39944,6 +40761,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -39991,6 +40809,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40038,6 +40857,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40085,6 +40905,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40132,6 +40953,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40175,6 +40997,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40222,6 +41045,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40269,6 +41093,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40316,6 +41141,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40363,6 +41189,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40410,6 +41237,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40453,6 +41281,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40496,6 +41325,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40539,6 +41369,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40582,6 +41413,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40625,6 +41457,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40668,6 +41501,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40711,6 +41545,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40754,6 +41589,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40797,6 +41633,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40844,6 +41681,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40891,6 +41729,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40938,6 +41777,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -40981,6 +41821,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41024,6 +41865,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41067,6 +41909,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41110,6 +41953,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41153,6 +41997,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41196,6 +42041,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41239,6 +42085,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41282,6 +42129,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41325,6 +42173,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41368,6 +42217,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41411,6 +42261,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41462,6 +42313,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41513,6 +42365,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41564,6 +42417,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41615,6 +42469,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41666,6 +42521,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41717,6 +42573,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41768,6 +42625,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41819,6 +42677,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41870,6 +42729,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41913,6 +42773,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41956,6 +42817,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -41999,6 +42861,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42046,6 +42909,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42093,6 +42957,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42140,6 +43005,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42187,6 +43053,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42234,6 +43101,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42281,6 +43149,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42324,6 +43193,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42367,6 +43237,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42410,6 +43281,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42453,6 +43325,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42504,6 +43377,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42555,6 +43429,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42606,6 +43481,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42649,6 +43525,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42696,6 +43573,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42743,6 +43621,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42790,6 +43669,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42837,6 +43717,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42880,6 +43761,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42923,6 +43805,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -42966,6 +43849,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43009,6 +43893,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43052,6 +43937,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43095,6 +43981,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43138,6 +44025,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43181,6 +44069,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43228,6 +44117,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43271,6 +44161,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43318,6 +44209,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43365,6 +44257,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43408,6 +44301,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43420,6 +44314,834 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											{ ["ID"] = 				"LAND1",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_BURNBARREL",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\BURNINGBARREL.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_W" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Wailou",
+						["Subtitle"] = 					"Burning Barrel",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A barrel with fire burning.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"SPACEGUNK3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+											{ ["ID"] = 				"PLANT_HOT",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"5"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_SILOS",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\COVEREDSILOS.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"False",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Hai-fo",
+						["Subtitle"] = 					"Silos with cloth",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Some silos covered by a cloth.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+											{ ["ID"] = 				"TRA_COMMODITY2",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"2"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_WRAPCARGO",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\WRAPPEDCARGO.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Seoi-fo",
+						["Subtitle"] = 					"Cargo with cloth",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"Some cargo covered by a cloth.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+											{ ["ID"] = 				"TRA_COMMODITY2",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"1"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_CRANE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\CRANE.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_OS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Gau-Tincing",
+						["Subtitle"] = 					"Crane",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A crane.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ASTEROID1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"125"
+											},
+											{ ["ID"] = 				"ROCKETSUB",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_BROKECHEST",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\RESOURCECRATE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "WDECOR_W" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Baaugaak",
+						["Subtitle"] = 					"Broken Storage Unit",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A broken storage unit.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_TRACKS",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\WALKERS_TRACKS_DISPLAY.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Fowan-Gwaidou",
+						["Subtitle"] = 					"Hanging Tracks",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A set of hanging tracks.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"100"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_HANGHOOK",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\WALKERS_HANGER.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Doudiu-gwa",
+						["Subtitle"] = 					"Hanging Hook",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A hook, usually hung on tracks.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_SCAFFOLD",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\WALKERS_SCAFFOLD_DISPLAY.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND", "PF_ROOMS_MISC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Paanggaa",
+						["Subtitle"] = 					"Metal Scaffolds",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_S_SCAFFOLD_L_DESC",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"75"
+											},
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_SCAFFOLD_S",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\WALKERS_SCAFFOLD_SINGLE.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND", "PF_ROOMS_MISC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Gong-paang",
+						["Subtitle"] = 					"Metal Scaffolds",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_S_SCAFFOLD_L_DESC",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_HANGLIGHT",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\WALKERS_CEILINGLIGHT.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WLIGHTS1" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Dangpun",
+						["Subtitle"] = 					"Ceiling Light",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"BLD_LIGHT_DESCRIPTION",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"25"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_TENT",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\SMALLSHACK_TENT.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Gwanjung-Zoengpung",
+						["Subtitle"] = 					"Half-Barrel Tent",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A half-barrel tent.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"50"
+											},
+											{ ["ID"] = 				"TRA_COMMODITY2",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"1"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_PALLET",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\SHOPWEAPON_PALLET.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECORA" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Tit-tokpun",
+						["Subtitle"] = 					"Metal Pallet",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A metal pallet.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_METALMESH",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\SHOPWEAPON_MESH.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECORA" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Titsimong",
+						["Subtitle"] = 					"Metal Mesh",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A Metal Mesh.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"15"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_BULLET",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\SHOPWEAPON_BULLET.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_T" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Paaudaan",
+						["Subtitle"] = 					"Artilliary Round",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"An artilliary round used for warfare.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"5"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_SCREENPOLE",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\SHOPTRADETERMINAL_SCREENPOLE_DISPLAY.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_DIS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Zikfaan",
+						["Subtitle"] = 					"Monitor Pole",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A pole with screens.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"FUEL2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+											{ ["ID"] = 				"CATALYST1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+											{ ["ID"] = 				"LAND1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"10"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_CUBEHOLO",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\SHOPTRADETERMINAL_HOLOGRAM.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_T" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Fongtong",
+						["Subtitle"] = 					"Cube Holograms",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A hologram of multiple cubes.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"CATALYST1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"15"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_WALLCLOTH",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\PIRATEDECORATION_CLOTH.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_F" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Laanbou",
+						["Subtitle"] = 					"Hanging Cloth",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A torn piece of cloth.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"TRA_COMMODITY2",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"2"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"PIR_SHIPSHOP",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\PIRATES\DROPSHIP_SHOP.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC", "WDECOR_V" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Laangwai-syun",
+						["Subtitle"] = 					"Spaceship Shed",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A shed made from a broken down spaceship.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"250"
+											},
+											{ ["ID"] = 				"ALLOY7",
+											  ["InventoryType"] = 	"Product",
+											  ["Amount"] = 			"5"
 											},
 										}
 					}
@@ -43456,6 +45178,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -43502,6 +45225,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43548,6 +45272,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43594,6 +45319,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43640,6 +45366,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43686,6 +45413,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43732,6 +45460,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43778,6 +45507,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43824,6 +45554,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43870,6 +45601,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43916,6 +45648,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -43962,6 +45695,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44008,6 +45742,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44054,6 +45789,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44100,6 +45836,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44146,6 +45883,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44192,6 +45930,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44238,6 +45977,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44284,6 +46024,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44330,6 +46071,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44376,6 +46118,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44419,6 +46162,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44462,6 +46206,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44505,6 +46250,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44548,6 +46294,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44591,6 +46338,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44634,6 +46382,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44677,6 +46426,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44720,6 +46470,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44763,6 +46514,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44806,6 +46558,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44849,6 +46602,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44892,6 +46646,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44935,6 +46690,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -44978,6 +46734,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45021,6 +46778,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45064,6 +46822,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",
@@ -45107,6 +46866,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45150,6 +46910,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45193,6 +46954,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45236,6 +46998,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45279,6 +47042,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45322,6 +47086,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45365,6 +47130,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45408,6 +47174,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45451,6 +47218,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45494,6 +47262,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45537,6 +47306,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45580,6 +47350,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45623,6 +47394,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45666,6 +47438,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45709,6 +47482,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45752,6 +47526,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -45795,6 +47570,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"HELLO GAMES LOGO",
@@ -45838,6 +47614,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"FEDERATION EMBLEM",
@@ -45881,6 +47658,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"AMINO HUB EMBLEM",
@@ -45924,6 +47702,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"NO MAN'S SKY LOVE EMBLEM",
@@ -45967,6 +47746,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"ARTIFICES CAELI EMBLEM",
@@ -46010,6 +47790,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46053,6 +47834,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46096,6 +47878,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46139,6 +47922,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46182,6 +47966,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46225,6 +48010,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46268,6 +48054,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46311,6 +48098,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46354,6 +48142,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46397,6 +48186,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46440,6 +48230,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46483,6 +48274,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46526,6 +48318,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46569,6 +48362,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46612,6 +48406,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46655,6 +48450,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46698,6 +48494,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 	"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46741,6 +48538,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46787,6 +48585,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR
 					},
 		["PRODUCT"] = {	["Name"] = 						"",
@@ -46833,6 +48632,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -46876,6 +48676,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -46919,6 +48720,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -46962,6 +48764,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47005,6 +48808,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47048,6 +48852,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47091,6 +48896,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47134,6 +48940,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47177,6 +48984,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47220,6 +49028,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47263,6 +49072,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47306,6 +49116,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47349,6 +49160,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47392,6 +49204,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47435,6 +49248,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47478,6 +49292,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47521,6 +49336,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47564,6 +49380,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47607,6 +49424,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47650,6 +49468,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47693,6 +49512,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47736,6 +49556,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47779,6 +49600,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47822,6 +49644,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47865,6 +49688,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47908,6 +49732,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47951,6 +49776,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -47994,6 +49820,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48037,6 +49864,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48080,6 +49908,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48123,6 +49952,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48166,6 +49996,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48209,6 +50040,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48252,6 +50084,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48295,6 +50128,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48338,6 +50172,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48381,6 +50216,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48424,6 +50260,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48467,6 +50304,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48510,6 +50348,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48553,6 +50392,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48596,6 +50436,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48639,6 +50480,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48682,6 +50524,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48725,6 +50568,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48768,6 +50612,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48811,6 +50656,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48854,6 +50700,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48897,6 +50744,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48940,6 +50788,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -48983,6 +50832,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49026,6 +50876,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49069,6 +50920,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49112,6 +50964,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49155,6 +51008,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49198,6 +51052,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49241,6 +51096,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49284,6 +51140,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49327,6 +51184,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49370,6 +51228,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49413,6 +51272,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49456,6 +51316,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49499,6 +51360,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49542,6 +51404,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49585,6 +51448,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49628,6 +51492,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49671,6 +51536,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49714,6 +51580,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49757,6 +51624,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49800,6 +51668,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49843,6 +51712,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49886,6 +51756,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49929,6 +51800,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -49972,6 +51844,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50015,6 +51888,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50058,6 +51932,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50101,6 +51976,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50144,6 +52020,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50187,6 +52064,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50230,6 +52108,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50273,6 +52152,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50316,6 +52196,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50359,6 +52240,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50402,6 +52284,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50445,6 +52328,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50488,6 +52372,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50531,6 +52416,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50574,6 +52460,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50617,6 +52504,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50660,6 +52548,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50703,6 +52592,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50746,6 +52636,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50789,6 +52680,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50832,6 +52724,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50875,6 +52768,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50918,6 +52812,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -50961,6 +52856,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51004,6 +52900,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51047,6 +52944,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51090,6 +52988,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51133,6 +53032,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51176,6 +53076,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51219,6 +53120,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51262,6 +53164,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51305,6 +53208,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51348,6 +53252,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51391,6 +53296,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51434,6 +53340,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51477,6 +53384,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51520,6 +53428,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51563,6 +53472,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51606,6 +53516,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51649,6 +53560,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51692,6 +53604,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51735,6 +53648,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51778,6 +53692,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51821,6 +53736,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51864,6 +53780,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51907,6 +53824,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51950,6 +53868,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -51993,6 +53912,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52036,6 +53956,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52079,6 +54000,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52122,6 +54044,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52165,6 +54088,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52208,6 +54132,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52251,6 +54176,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52294,6 +54220,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52337,6 +54264,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52380,6 +54308,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52423,6 +54352,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52466,6 +54396,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52509,6 +54440,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52552,6 +54484,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52595,6 +54528,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52638,6 +54572,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52681,6 +54616,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52724,6 +54660,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52767,6 +54704,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52810,6 +54748,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52853,6 +54792,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52896,6 +54836,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52939,6 +54880,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -52982,6 +54924,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53025,6 +54968,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53068,6 +55012,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53111,6 +55056,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53154,6 +55100,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"BLD_DECAL_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53197,6 +55144,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53240,6 +55188,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53283,6 +55232,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53326,6 +55276,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53369,6 +55320,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53412,6 +55364,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53455,6 +55408,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53498,6 +55452,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53541,6 +55496,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53584,6 +55540,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53627,6 +55584,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53670,6 +55628,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53713,6 +55672,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53756,6 +55716,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53799,6 +55760,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53842,6 +55804,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53885,6 +55848,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53928,6 +55892,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -53971,6 +55936,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54014,6 +55980,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54057,6 +56024,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54100,6 +56068,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54143,6 +56112,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54186,6 +56156,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54229,6 +56200,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54272,6 +56244,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54314,6 +56287,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54357,6 +56331,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54400,6 +56375,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54443,6 +56419,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54486,6 +56463,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54529,6 +56507,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54572,6 +56551,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54615,6 +56595,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54658,6 +56639,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54701,6 +56683,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54744,6 +56727,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54787,6 +56771,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54830,6 +56815,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54872,6 +56858,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54915,6 +56902,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -54958,6 +56946,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55001,6 +56990,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55044,6 +57034,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55086,6 +57077,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55129,6 +57121,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55172,6 +57165,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55215,6 +57209,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55258,6 +57253,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55301,6 +57297,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55344,6 +57341,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55387,6 +57385,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55430,6 +57429,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55473,6 +57473,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55516,6 +57517,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55559,6 +57561,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55602,6 +57605,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55645,6 +57649,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55688,6 +57693,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55731,6 +57737,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55774,6 +57781,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55817,6 +57825,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55860,6 +57869,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55903,6 +57913,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55946,6 +57957,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -55989,6 +58001,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56032,6 +58045,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56075,6 +58089,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56118,6 +58133,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56161,6 +58177,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56204,6 +58221,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56247,6 +58265,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56290,6 +58309,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56333,6 +58353,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56376,6 +58397,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56419,6 +58441,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56462,6 +58485,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56505,6 +58529,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56548,6 +58573,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56591,6 +58617,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56634,6 +58661,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56676,6 +58704,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56719,6 +58748,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56762,6 +58792,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56805,6 +58836,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56848,6 +58880,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56891,6 +58924,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56934,6 +58968,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -56977,6 +59012,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57020,6 +59056,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57063,6 +59100,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57106,6 +59144,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57149,6 +59188,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57192,6 +59232,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57235,6 +59276,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57278,6 +59320,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57321,6 +59364,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57363,6 +59407,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57406,6 +59451,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57449,6 +59495,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57491,6 +59538,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57533,6 +59581,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57576,6 +59625,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57618,6 +59668,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57661,6 +59712,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57704,6 +59756,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57747,6 +59800,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57790,6 +59844,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57837,6 +59892,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57884,6 +59940,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57927,6 +59984,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -57970,6 +60028,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58013,6 +60072,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58060,6 +60120,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58107,6 +60168,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58150,6 +60212,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58193,6 +60256,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58236,6 +60300,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58279,6 +60344,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58322,6 +60388,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58365,6 +60432,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58408,6 +60476,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58451,6 +60520,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58494,6 +60564,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58541,6 +60612,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58588,6 +60660,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58635,6 +60708,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58682,6 +60756,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58729,6 +60804,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58776,6 +60852,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58823,6 +60900,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58870,6 +60948,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58917,6 +60996,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -58964,6 +61044,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59011,6 +61092,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59058,6 +61140,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59105,6 +61188,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59152,6 +61236,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59203,6 +61288,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59254,6 +61340,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59305,6 +61392,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59352,6 +61440,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59395,6 +61484,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59442,6 +61532,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59489,6 +61580,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59540,6 +61632,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59587,6 +61680,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59634,6 +61728,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59681,6 +61776,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59728,6 +61824,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59775,6 +61872,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59818,6 +61916,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59861,6 +61960,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59904,6 +62004,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59947,6 +62048,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -59990,6 +62092,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60033,6 +62136,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60076,6 +62180,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60119,6 +62224,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60162,6 +62268,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60205,6 +62312,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60248,6 +62356,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60291,6 +62400,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60334,6 +62444,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60377,6 +62488,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60420,6 +62532,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60463,6 +62576,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60510,6 +62624,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60554,6 +62669,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60597,6 +62713,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60644,6 +62761,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60691,6 +62809,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60738,6 +62857,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60781,6 +62901,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60828,6 +62949,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60875,6 +62997,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60922,6 +63045,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -60969,6 +63093,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61016,6 +63141,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61063,6 +63189,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61110,6 +63237,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_GLITCH_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61153,6 +63281,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61200,6 +63329,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61247,6 +63377,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61294,6 +63425,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61341,6 +63473,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61388,6 +63521,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61435,6 +63569,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"FOOD_PLANT_GLITCH_NAME",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61478,6 +63613,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61525,6 +63661,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61572,6 +63709,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61619,6 +63757,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61666,6 +63805,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61713,6 +63853,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61760,6 +63901,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61807,6 +63949,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61854,6 +63997,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61901,6 +64045,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61948,6 +64093,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -61995,6 +64141,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62042,6 +64189,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62089,6 +64237,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62136,6 +64285,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62183,6 +64333,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62230,6 +64381,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62277,6 +64429,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62324,6 +64477,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62371,6 +64525,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62418,6 +64573,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62465,6 +64621,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62512,6 +64669,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62555,6 +64713,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62598,6 +64757,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62649,6 +64809,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62700,6 +64861,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62751,6 +64913,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62802,6 +64965,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62853,6 +65017,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62904,6 +65069,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -62955,6 +65121,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -63006,6 +65173,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -63057,6 +65225,7 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["TerrainEditTopYOffset"] = 	"0",
 						["TerrainEditBoundsScalar"] = 	"1",
 						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
 						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
 					},
 		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
@@ -63956,6 +66125,7 @@ POWER_INJECT = ""
 POWER_INJECT = HUBFLAG_LINKGRID[POWER]
 SNAP_INJECT = ""
 TOUCH_INJECT = ""
+SNAPDIST_INJECT = ""
 if SNAP == "" then SNAP_INJECT = MODEL 
 else SNAP_INJECT = SNAP 
 end
@@ -63970,6 +66140,10 @@ end
 
 if ENCOLL == "True" then TOUCH_INJECT = "False" 
 else TOUCH_INJECT = "True" 
+end
+
+if SNAP_SHORT ~= "" then SNAPDIST_INJECT = SNAP_SHORT
+else SNAPDIST_INJECT = SNAPPING_DISTANCE
 end
 
 GROUPS_TEMP = {}
@@ -64074,7 +66248,7 @@ return [[
 ]] .. POWER_INJECT .. [[
       </Property>
       <Property name="GhostsCountOverride" value="2" />
-      <Property name="SnappingDistanceOverride" value="]] .. SNAP_SHORT .. [[" />
+      <Property name="SnappingDistanceOverride" value="]] .. SNAPDIST_INJECT .. [[" />
       <Property name="RegionSpawnLOD" value="1" />
       <Property name="NPCInteractionScene" value="TkModelResource.xml">
         <Property name="Filename" value="" />
@@ -64430,7 +66604,7 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 		PLACEMENT_PATH = MakePlacementScenePath(j["OBJECT"]["ID"]) .. [[.MBIN]]
 	else PLACEMENT_PATH = j["OBJECT"]["PlacementScene"]
 	end
-	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"], j["OBJECT"]["SnapPoints"],j["OBJECT"]["Model"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["CollisionScale"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanPlaceOnItself"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["TerrainEditBaseYOffset"],j["OBJECT"]["TerrainEditTopYOffset"],j["OBJECT"]["TerrainEditBoundsScalar"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], SNAPPING_DISTANCE)
+	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"], j["OBJECT"]["SnapPoints"],j["OBJECT"]["Model"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["CollisionScale"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanPlaceOnItself"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["TerrainEditBaseYOffset"],j["OBJECT"]["TerrainEditTopYOffset"],j["OBJECT"]["TerrainEditBoundsScalar"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], j["OBJECT"]["SnappingDistanceOverride"])
 	EXPORT_PRODUCTS_LIST[i+1] = GetBaseProduct(j["OBJECT"]["ID"],j["PRODUCT"]["Name"],j["PRODUCT"]["NameLower"],j["PRODUCT"]["Subtitle"],j["PRODUCT"]["Description"],j["PRODUCT"]["Icon"],j["PRODUCT"]["Requirements"])
 	EXPORT_PARTS_LIST[i+1] = GetBaseBuildingPart(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Model"], OVERRIDE_INACTIVE)
 	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"])
@@ -64507,6 +66681,7 @@ EXPORT_BASEOBJECTS = EXPORT_BASEOBJECTS:gsub([[name="CanScale" value="False"]], 
 end
 
 VANILLA_FLOOR_VALUE_CHANGE = 
+			{
 				{
 					["MBIN_FILE_SOURCE"] 	= { "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\BASIC_FLOOR.SCENE.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
@@ -64520,7 +66695,22 @@ VANILLA_FLOOR_VALUE_CHANGE =
 							}
 						},
 					} 
-				}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= { "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\BASIC_WALL.SCENE.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["REPLACE_TYPE"] 	= "",							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Name", "IGNORE"}
+							}
+						},
+					} 
+				},
+			}
 
 BUILDING_DISTANCE_CHANGE =
 				{
@@ -64548,30 +66738,6 @@ BUILDING_DISTANCE_CHANGE =
 
 BASEBUILD_ENTRIES =
 {
-					{
-						["PRECEDING_KEY_WORDS"] = {"Objects"},
-						["LINE_OFFSET"] 		= "+0",
-					--	["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"}, --Changed 04 DEC 2021
-					--	["LINE_OFFSET"] 		= "-3",
-						["ADD"] 				= EXPORT_BASEOBJECTS
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","WALL"},
-						["REPLACE_TYPE"] 		= "RAW",
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-						--{ [[REPLACE_THIS]],	[[WITH_THIS]] },
-							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
-						}	
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","WALLCURVED"},
-						["REPLACE_TYPE"] 		= "RAW",
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
-						}
-					},
 					{
 						["SPECIAL_KEY_WORDS"] = {"ID","MAINROOM_WATER"},
 						["VALUE_CHANGE_TABLE"] 	= 
@@ -65229,12 +67395,6 @@ BASEBUILD_ENTRIES =
 -- </Property>]],
 					-- },
 					{
-						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml",},
-						["SECTION_ACTIVE"] = {1,},  --Added 04 DEC 2021
-						["LINE_OFFSET"] 		= "-1",
-						["ADD"] 				= EXPORT_GROUPS
-					},
-					{
 						["SPECIAL_KEY_WORDS"] = {"Name", "UI_BUILD_GRID_CUBEROOMS"},
 						["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
 						--["LINE_OFFSET"] 		= "+1",
@@ -65310,24 +67470,42 @@ BASEBUILD_ENTRIES =
 							{"SubGroupName", "FURNDECOR"},
 						}
 					},
-					
+					{
+						["PRECEDING_KEY_WORDS"] = {"Objects"},
+						["LINE_OFFSET"] 		= "+0",
+					--	["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"}, --Changed 04 DEC 2021
+					--	["LINE_OFFSET"] 		= "-3",
+						["ADD"] 				= EXPORT_BASEOBJECTS
+					},
+					{
+						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml",},
+						["SECTION_ACTIVE"] = {1,},  --Added 04 DEC 2021
+						["LINE_OFFSET"] 		= "-1",
+						["ADD"] 				= EXPORT_GROUPS
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","WALL"},
+						["REPLACE_TYPE"] 		= "RAW",
+						["VALUE_CHANGE_TABLE"] 	= 
+						{
+						--{ [[REPLACE_THIS]],	[[WITH_THIS]] },
+							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
+						}	
+					},
+					{
+						["SPECIAL_KEY_WORDS"] = {"ID","WALLCURVED"},
+						["REPLACE_TYPE"] 		= "RAW",
+						["VALUE_CHANGE_TABLE"] 	= 
+						{
+							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
+						}
+					},
 				}
 
 -- THE FINAL COUNTDOWN
 
 FINAL_VALUE_CHANGE = 
 			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGCOSTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"]	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= EXPORT_COST
-						}
-					},
-				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
 					["EXML_CHANGE_TABLE"]	= BASEBUILD_ENTRIES
@@ -65554,6 +67732,17 @@ FINAL_VALUE_CHANGE =
 					},
 				},
 				{
+					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGCOSTSTABLE.MBIN",
+					["EXML_CHANGE_TABLE"]	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
+							["LINE_OFFSET"] 		= "+0",
+							["ADD"] 				= EXPORT_COST
+						}
+					},
+				},
+				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGPARTSTABLE.MBIN",
 					["EXML_CHANGE_TABLE"]	= 
 					{
@@ -65661,7 +67850,9 @@ FINAL_VALUE_CHANGE =
 			}
 
 if MORE_VANILLA_FLOOR then
-	table.insert(FINAL_VALUE_CHANGE, VANILLA_FLOOR_VALUE_CHANGE)
+	for i,j in pairs(VANILLA_FLOOR_VALUE_CHANGE) do
+		table.insert(FINAL_VALUE_CHANGE, j)
+	end
 end
 
 if MORE_BUILDING_DISTANCE then

@@ -8,7 +8,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
+			{
+				{
+					["MBIN_FILE_SOURCE"] 	= "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxAsteroidGenerationPerFrame",  "120000"},  --org 5000
+								{"MaxAsteroidGenerationPerFramePulseJump",  "10000"}, --org 1000
+							}
+						},						
+					}
+				},			
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -44,8 +58,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"RingAsteroidSpacing",  "125"},
 								{"RingAsteroidFadeRangeMin",  "600"},
 								{"RingAsteroidFadeRangeMax",  "6000"},
-								{"AsteroidMaxNumGenerates",  "120000"},
-								{"AsteroidMaxNumGeneratesPulseJump",  "10000"},
+								--{"AsteroidMaxNumGenerates",  "120000"},
+								--{"AsteroidMaxNumGeneratesPulseJump",  "10000"},
 								{"AsteroidSpaceStationAvoidRadius",  "1500"},
 								{"AsteroidAnomalyAvoidRadius",  "1500"},
 								{"AsteroidWarpInAreaAvoidRadius",  "1500"},

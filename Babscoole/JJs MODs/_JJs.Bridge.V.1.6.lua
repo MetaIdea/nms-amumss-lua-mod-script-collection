@@ -97,6 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{																																
 						{
 							["SPECIAL_KEY_WORDS"] = {"Type","MODEL",},
+							["NOTICE_OFF"] = "True",
 							["VALUE_CHANGE_TABLE"] 	= 	
 							{
 								{"Name", "MODELS\EFFECTS\SPHERE"},
