@@ -5,6 +5,10 @@ BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
 GameVersion = "387"
 ModVersion = "a"
 
+--Multipliers to apply to the hull & shields of all AI-controlled starships
+ShipHull =				1
+ShipShield =			1
+
 --Currently missing 4 sets of changes to Spread and Count (Seems to just be for Freighters though), as I haven't found a way to target the sections they are in
 	--Similarly, this mod doesn't change the Scale on line 975 from 1.2 > 1.4
 
@@ -37,7 +41,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	300,		300},	--300,		300
-					{"Count",	2,			6}		--2,		3
+					{"Count",	2,			6}		--2,		3		[2,	6]
 				}
 			},
 			{--1st "ChildSpawns" entry
@@ -46,7 +50,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	250,		250},	--250,		250
-					{"Count",	2,			4}		--2,		2
+					{"Count",	2,			4}		--2,		2		[2,	4]
 				}
 			},
 			{--2nd "ChildSpawns" entry
@@ -55,7 +59,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	250,		250},	--250,		250
-					{"Count",	4,			6}		--3,		4
+					{"Count",	4,			6}		--3,				[4,	6]
 				}
 			},
 		}
@@ -65,13 +69,13 @@ LargerBattleChanges =
 			"PirateSpawns"					--These do NOT attack Freighters.	For the following, RewardMessage is NOTIFY_PIRATE_WIN
 		},
 		{
-			{
+			{--This may control several things: it appears to act as a multiplier to the amount of pirates spawned during space station pirate hunting missions
 				{
 					"GcAIShipSpawnData.xml"
 				},
 				{
 					{"Spread",	80,			80},
-					{"Count",	1,			3}		--1,		1		(1,			6)
+					{"Count",	1,			1}		--1,		1		(1,			6)		[1,		3]
 				}
 			},
 			{--1st "ChildSpawns" entry
@@ -80,7 +84,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	80,			80},
-					{"Count",	1,			3}		--1,		1		(2,			6)
+					{"Count",	1,			2}		--1,		1		(2,			6)		[1,		3]
 				}
 			},
 		}
@@ -471,13 +475,14 @@ LargerBattleChanges =
 					{"Count",	1,			3}		--1,		1		(2,			8)
 				}
 			},]]
-			{--EASYBOUNTY1			(This doesn't appear to control the "Hunt Easy Pirates" mission, despite how the .MBIN makes it seem. Also, in that mission the ships use a mix of the AI_MEDIUM & AI_HARD attack type, none use AI_EASY despite how the .MBIN makes it seem. The other bounty missions are similarly odd)
+			--Despite how it seems, the following don't appear to control the space station missions for hunting pirates. At least, the values don't match up with in-game, and changing these seems to have no effect.
+			{--EASYBOUNTY1
 				{
 					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	1,			2}		--1,		1		(1,			6)
+					{"Count",	1,			1}		--1,		1		(1,			6)
 				}
 			},
 			{--EASYBOUNTY2			
@@ -486,7 +491,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	1,			2}		--1,		1		(2,			8)		[2,	4]
+					{"Count",	1,			1}		--1,		1		(2,			8)		[2,	4]
 				}
 			},
 			{--MEDBOUNTY1
@@ -495,7 +500,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	1,			3}		--1,		1		(3,			12)
+					{"Count",	1,			1}		--1,		1		(3,			12)		[1,	3]
 				}
 			},
 			{--MEDBOUNTY2
@@ -504,7 +509,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	1,			3}		--1,		1		(4,			12)	(in the original mod, it seems these entries accidentally changed the "Scale" for MEDBOUNTY2 instead of changing the "Spread")
+					{"Count",	1,			1}		--1,		1		(4,			12)		[1,	3]	(in the original mod, it seems these entries accidentally changed the "Scale" for MEDBOUNTY2 instead of changing the "Spread")
 				}
 			},
 			{--HARDBOUNTY1
@@ -513,7 +518,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	2,			3}		--1,		1		(3,			9)
+					{"Count",	2,			2}		--1,		1		(3,			9)		[2,	3]
 				}
 			},
 			{--HARDBOUNTY2
@@ -522,7 +527,7 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	2,			3}		--3,		3		(6,			6)
+					{"Count",	2,			2}		--3,		3		(6,			6)		[2,	3]
 				}
 			},
 			{--WEAPGUY_BOUNTY		Base Armourer mission
@@ -531,16 +536,16 @@ LargerBattleChanges =
 				},
 				{
 					{"Spread",	100,		100},
-					{"Count",	2,			4}		--2,		2		(4,			8)
+					{"Count",	2,			2}		--2,		2		(4,			8)
 				}
 			},
-			{--PIRATE_SQUAD
+			{--PIRATE_SQUAD			Unknown function
 				{
 					"GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml","GcBountySpawnInfo.xml"
 				},
 				{
 					{"Spread",	800,		800},
-					{"Count",	6,			10}		--6,		6		(9,			18)
+					{"Count",	6,			6}		--6,		6		(9,			18)		[6,		10]
 				}
 			},
 			{--PP_BOUNTY			Planet Procedural mission
@@ -911,8 +916,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATLTEASY"},			--default "PIRATELOOT"			Note, changing to a custom modded lootpool such as PIRATLTEASY requires it to be defined and added to REWARDTABLE.MBIN, or this won't work.
-		{"Health", 12000},					--default 5200
-		{"LevelledExtraHealth", 32000},		--default 14000
+		{"Health", math.floor(ShipHull*12000)},			--default 5200
+		{"LevelledExtraHealth", math.floor(ShipHull*32000)},		--default 14000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 1},			--default 1
 		}},
@@ -924,8 +929,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", 22000},					--default 5200
-		{"LevelledExtraHealth", 68000},		--default 14000
+		{"Health", math.floor(ShipHull*22000)},			--default 5200
+		{"LevelledExtraHealth", math.floor(ShipHull*68000)},		--default 14000
 		{"Shield", "STRONG"},				--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -937,8 +942,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_HRD"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATLTHARD"},			--default "PIRATELOOT"			(Custom Lootpool)
-		{"Health", 45000},					--default 6500
-		{"LevelledExtraHealth", 135000},	--default 14000
+		{"Health", math.floor(ShipHull*45000)},			--default 6500
+		{"LevelledExtraHealth", math.floor(ShipHull*135000)},	--default 14000
 		{"Shield", "SLOW_STRONG"},			--default "FAST_STRONG"
 		{"LaserDamageLevel", 3},			--default 1
 		}},
@@ -950,8 +955,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		Probably maps to "POLICELOOT" somehow
-		{"Health", 34000},					--default 11500
-		{"LevelledExtraHealth", 101000},	--default 34000
+		{"Health", math.floor(ShipHull*34000)},			--default 11500
+		{"LevelledExtraHealth", math.floor(ShipHull*101000)},	--default 34000
 		{"Shield", "FAST"},					--default "FAST"
 		{"LaserDamageLevel", 2},			--default 1
 		}},	
@@ -963,8 +968,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "TRADERLOOT"},			--default "TRADERLOOT"
-		{"Health", 3800},					--default 9000
-		{"LevelledExtraHealth", 6000},		--default 16000
+		{"Health", math.floor(ShipHull*3800)},			--default 9000
+		{"LevelledExtraHealth", math.floor(ShipHull*6000)},		--default 16000
 		{"Shield", "HUGE"},					--default "STANDARD"
 		{"LaserDamageLevel",2},				--default 1
 		}},
@@ -976,8 +981,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "ESCORTLOOT"},			--default "TRADERLOOT"			(Custom Lootpool)
-		{"Health", 42000},					--default 14000
-		{"LevelledExtraHealth", 83000},	--default 36000
+		{"Health", math.floor(ShipHull*42000)},			--default 14000
+		{"LevelledExtraHealth", math.floor(ShipHull*83000)},	--default 36000
 		{"Shield", "FAST"},					--default "FAST"
 		{"LaserDamageLevel",2},				--default 1
 		}},
@@ -989,8 +994,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "RAID_BUILDING"},	--default "RAID_BUILDING"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", 27000},					--default 9000
-		{"LevelledExtraHealth", 45000},		--default 16000
+		{"Health", math.floor(ShipHull*27000)},			--default 9000
+		{"LevelledExtraHealth", math.floor(ShipHull*45000)},		--default 16000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1002,8 +1007,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", 27000},					--default 9000
-		{"LevelledExtraHealth", 45000},		--default 16000
+		{"Health", math.floor(ShipHull*27000)},			--default 9000
+		{"LevelledExtraHealth", math.floor(ShipHull*45000)},		--default 16000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1015,8 +1020,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
-		{"Health", 16000},					--default 5200
-		{"LevelledExtraHealth", 38000},		--default 14000
+		{"Health", math.floor(ShipHull*16000)},			--default 5200
+		{"LevelledExtraHealth", math.floor(ShipHull*38000)},		--default 14000
 		{"Shield", "STANDARD"},				--default "STANDARD"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1029,8 +1034,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", 9000},					--default 3000
-		{"LevelledExtraHealth", 9000},		--default 3000
+		{"Health", math.floor(ShipHull*9000)},			--default 3000
+		{"LevelledExtraHealth", math.floor(ShipHull*9000)},		--default 3000
 		{"Shield", "NULL"},					--default "NULL"
 		{"LaserDamageLevel", 1},			--default 1
 		}},
@@ -1042,8 +1047,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", 12000},					--default 5000
-		{"LevelledExtraHealth", 12000},		--default 5000
+		{"Health", math.floor(ShipHull*12000)},			--default 5000
+		{"LevelledExtraHealth", math.floor(ShipHull*12000)},		--default 5000
 		{"Shield", "STANDARD"},				--default "STRONG"
 		{"LaserDamageLevel", 1},			--default 1
 		}},
@@ -1055,8 +1060,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", 15000},					--default 5000
-		{"LevelledExtraHealth", 15000},		--default 5000
+		{"Health", math.floor(ShipHull*15000)},			--default 5000
+		{"LevelledExtraHealth", math.floor(ShipHull*15000)},		--default 5000
 		{"Shield", "STRONG"},				--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1068,8 +1073,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"PlanetBehaviour", "PLANET_HRD"},	--default "PLANET"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
-		{"Health", 18000},					--default 6000
-		{"LevelledExtraHealth", 18000},		--default 6000
+		{"Health", math.floor(ShipHull*18000)},			--default 6000
+		{"LevelledExtraHealth", math.floor(ShipHull*18000)},		--default 6000
 		{"Shield", "FAST_STRONG"},			--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
 		}},
@@ -1698,8 +1703,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 11000},											--5600
-		{"LevelledExtraHealth", 45000},								--19000
+		{"Health", math.floor(ShipShield*11000)},								--5600
+		{"LevelledExtraHealth", math.floor(ShipShield*45000)},					--19000
 		{"RechargeTime", 11},										--5
 		{"RechargeDelayTime", 6},									--6
 		}},
@@ -1708,8 +1713,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 23000},											--10000
-		{"LevelledExtraHealth", 68000},								--35000
+		{"Health", math.floor(ShipShield*23000)},								--10000
+		{"LevelledExtraHealth", math.floor(ShipShield*68000)},					--35000
 		{"RechargeTime", 18},										--8
 		{"RechargeDelayTime", 10},									--10
 		}},
@@ -1718,8 +1723,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 6000},											--2000
-		{"LevelledExtraHealth", 18000},								--10000
+		{"Health", math.floor(ShipShield*6000)},								--2000
+		{"LevelledExtraHealth", math.floor(ShipShield*18000)},					--10000
 		{"RechargeTime", 3},										--1
 		{"RechargeDelayTime", 3},									--3
 		}},
@@ -1728,8 +1733,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 22000},											--10000
-		{"LevelledExtraHealth", 56000},								--25000
+		{"Health", math.floor(ShipShield*22000)},								--10000
+		{"LevelledExtraHealth", math.floor(ShipShield*56000)},					--25000
 		{"RechargeTime", 7},										--3
 		{"RechargeDelayTime", 4},									--4
 		}},
@@ -1738,8 +1743,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 0},												--0
-		{"LevelledExtraHealth", 0},									--0
+		{"Health", math.floor(ShipShield*0)},									--0
+		{"LevelledExtraHealth", math.floor(ShipShield*0)},						--0
 		{"RechargeTime", 5},										--5
 		{"RechargeDelayTime", 10},									--10
 		}},
@@ -1748,8 +1753,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 45000},											--Custom	[60000]
-		{"LevelledExtraHealth", 112000},							--Custom	[150000]
+		{"Health", math.floor(ShipShield*45000)},								--Custom	[60000]
+		{"LevelledExtraHealth", math.floor(ShipShield*112000)},					--Custom	[150000]
 		{"RechargeTime", 54},										--Custom	[48]
 		{"RechargeDelayTime", 6},									--Custom	[4]
 		}},
@@ -1758,8 +1763,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	--["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"Health", 68000},											--Custom	[90000]
-		{"LevelledExtraHealth", 165000},							--Custom	[220000]
+		{"Health", math.floor(ShipShield*68000)},								--Custom	[90000]
+		{"LevelledExtraHealth", math.floor(ShipShield*165000)},					--Custom	[220000]
 		{"RechargeTime", 72},										--Custom	[96]
 		{"RechargeDelayTime", 12},									--Custom	[12]
 		}},
