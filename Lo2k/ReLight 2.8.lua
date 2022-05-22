@@ -105,7 +105,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 2.7.pak", 
+["MOD_FILENAME"] 			= "ReLight 2.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "3.89",
 ["MOD_DESCRIPTION"]			= "This mod rework most of the lights placed in NPC building",
@@ -586,7 +586,33 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},							
 					},
-				},
+				},   
+				{  -- Removes pillar lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LAYOUTS\LAYOUTSHOP_1\LIGHTS1_MAT2.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
+				},	
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"7000.0"},  --original : 10000
+							},
+						},						
+					},
+				},			
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\OBSERVATORY\HOLOGRAM.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -610,6 +636,89 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",	"20000.000000"},  --original : 50000
+							},
+						},						
+					},
+				},
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\MODULES\WALLMODULE_TECHSHOP.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "COL_R"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.4"},  --original : 0.0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.720000"},  --original : 0.72
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.0"},  --original : 1.0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "COL_R"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.4"},  --original : 0.0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.720000"},  --original : 0.72
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.0"},  --original : 1.0
+							},
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\ROOF_OBSERVATORY.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "COL_R"},  --pointLight1
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.2"},  --original : 0.29
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.800000"},  --original : 1.0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.0"},  --original : 0.9
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"30000.000000"},  --original : 300000
 							},
 						},						
 					},
@@ -868,20 +977,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{  -- REVERSE LANDING PAD LIGHTS (Lights around landing pad)
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1", "Name", "FALLOFF"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"linear"},  --original : quadratic
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1","Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 150000
-							},
+							["SPECIAL_KEY_WORDS"] = {"Name", "spotLight1",},
+							["REMOVE"] 	= "SECTION",
 						},
-						{  --ACTUAL LANDING PAD 4 LIGHTS
+						{  -- ACTUAL LANDING PAD 4 LIGHTS
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -965,13 +1064,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\INTERACTIVE\MONEYSTATION.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 20000.000000
-							},
-						},	
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
+							["REMOVE"] 	= "SECTION",
+						},
 						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "FOV"},
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -1095,7 +1191,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "SUB1WeaponTechStation"},  --upper blue light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "SUB1WeaponTechStation"},  --back orange light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = InsertNewLight({name='BackLight', ty=0.7, tz=-0.5, i=2500, r='1.000', g='1.000', b='0.800'}),  
 						},
@@ -1200,6 +1296,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},	
 						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4b", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"2500.000000"},  --original : 8000.000000
+							},
+						},	
+						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4v"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1213,20 +1316,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Value",	"2500.000000"},  --original : 8000.000000
 							},
 						},
-						{
+						{  -- TEAL SMALL LIGHT
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4c"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"TransZ",	"-0.056227"},  --original : -0.256227
+								{"TransZ",	"-0.156227"},  --original : -0.256227
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4c", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"2500.000000"},  --original : 8000.000000
+								{"Value",	"5000.000000"},  --original : 8000.000000
 							},
-						},	
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4c", "Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.0"},  --original : 0.6712000
+							},
+						},							
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4x"},
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -1307,14 +1417,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"TransZ",	"-0.056227"},  --original : -0.256227
+								{"TransZ",	"-0.156227"},  --original : -0.256227
 							},
 						},	
 						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4", "Name", "FOV"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"180.000000"},  --original : 360.000000
+								{"Value",	"360.000000"},  --original : 360.000000
 							},
 						},
 						{
@@ -1406,11 +1516,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOT.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-					{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "PotLOD0", "Name", "pointLight1"},  --counter teal light
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "PotLOD0", "Name", "pointLight1"},  --top blue light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight2', ty=0.4, rx=90, fov=180, i=4000, r='0.300', g='0.700'}),  -- <Property name="NameHash" value="4219409884" />
+							["ADD"] = InsertNewLight({name='pointLight2A', ty=0.4, rx=90, fov=180, i=4000, r='0.300', g='0.700'}),  -- <Property name="NameHash" value="4219409884" />
 						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "PotLOD1", "Name", "pointLight1"},  --top blue light
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='pointLight2B', ty=0.4, rx=90, fov=180, i=4000, r='0.300', g='0.700'}),  -- <Property name="NameHash" value="4219409884" />
+						},	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "PotLOD2", "Name", "pointLight1"},  --top blue light
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='pointLight2C', ty=0.4, rx=90, fov=180, i=4000, r='0.300', g='0.700'}),  -- <Property name="NameHash" value="4219409884" />
+						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"},
 							["REPLACE_TYPE"] 	= "ALL",
@@ -1437,7 +1557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"Value",	"3000.000000"},  --original : 4000.000000
 							},
-						},							
+						},					
 					},
 				},
 				{
@@ -1698,115 +1818,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},						
 					},
 				},
-				{
+				{  -- NPC Double circles stand lights
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\STANDINGLIGHTS\STANDINGLIGHTS.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LODDIST1"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"20.000000"},  --original : 10.000000
-							},
+						{  -- LOD0
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  -- LOD1
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight4",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  -- LOD2
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight5",},
+							["REMOVE"] 	= "SECTION",
 						},	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LODDIST2"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"40.000000"},  --original : 15.000000
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LODDIST3"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"80.000000"},  --original : 20.000000
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight3"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransZ",	"-0.8"},  --original : -0.551843
-							},
-						},		
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight3", "Name", "FOV"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"120.000000"},  --original : 360.000000
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight3", "Name", "FALLOFF"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"linear"},  --original : quadratic
-							},
-						},		
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight3", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"10000.000000"},  --original : 20000.000000
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransZ",	"-0.8"},  --original : -0.551843
-							},
-						},		
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4", "Name", "FOV"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"120.000000"},  --original : 360.000000
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4", "Name", "FALLOFF"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"linear"},  --original : quadratic
-							},
-						},		
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight4", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"8000.000000"},  --original : 13000.000000
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight5"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransZ",	"-0.8"},  --original : -0.551843
-							},
-						},		
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight5", "Name", "FOV"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"120.000000"},  --original : 360.000000
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight5", "Name", "FALLOFF"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"linear"},  --original : quadratic
-							},
-						},		
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight5", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"5000.000000"},  --original : 8000.000000
-							},
-						},							
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LightLOD3"},  --create a new LOD independant light
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='newLight', ty=2.68094, tz =-0.8, fov=120, f = 'linear', i=10000}),  
+						},										
 					},
 				},
 				{
@@ -2360,25 +2392,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 8500.000000
-							},
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
+							["REMOVE"] 	= "SECTION",
 						},
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 5000.000000
-							},
-						},
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2",},
+							["REMOVE"] 	= "SECTION",
+						},						
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight3", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 3000.000000
-							},
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
+							["REMOVE"] 	= "SECTION",
 						},
 					},
 				},				
@@ -2468,11 +2491,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{"Value",	"0.000000"},  --original : 8500
-							},
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
+							["REMOVE"] 	= "SECTION",
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2","Name", "INTENSITY"},
@@ -2507,63 +2527,45 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION.SCENE.MBIN",   
 					["EXML_CHANGE_TABLE"] 	= 
-					{						
+					{	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftPlatformLight", "Name", "INTENSITY"},   --blue lights
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftPlatformLight", "Name", "INTENSITY"},   --blue lights, light kept to add another light later
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",	"0.000000"},  --original : 20000.000000 
 							},
+						},				
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "RightPlatformLight", "Name", "INTENSITY"},  --blue lights, light kept to add another light later
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.000000"},  --original : 20000.000000 
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "LeftPlatformLight2",},
+							["REMOVE"] 	= "SECTION",
+						},					
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "LeftPlatformLight3",},
+							["REMOVE"] 	= "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight313",},  --white pilar lights
+							["REMOVE"] 	= "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight314",},
+							["REMOVE"] 	= "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight315",},  
+							["REMOVE"] 	= "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight316",},
+							["REMOVE"] 	= "SECTION",
 						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "RightPlatformLight", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 20000.000000 
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftPlatformLight3", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 20000.000000 
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftPlatformLight2", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 20000.000000 
-							},
-						},	
-{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight313", "Name", "INTENSITY"},  --white pilar lights
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 18000.000000 
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight314", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 18000.000000 
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight315", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 18000.000000 
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight316", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.000000"},  --original : 18000.000000 
-							},
-						},		
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight317", "Name", "FOV"},  -- TELEPORTER
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -2601,7 +2603,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = InsertNewLight({name='pointLight5c', ty=17.428, tz=195.92, f='linear', i=38000, r=0.627, g=0.911}),	
 						},							
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight116"},  --wings nwhite lights
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight116"},  --wings white lights
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TransX",	"49.0"}, 
@@ -2758,6 +2760,33 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},							
 					},
 				},
+				{  -- SPACE STATION TUNNEL PITS BLUE LIGHTS
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PARTS\TUNNELOPENING.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{  -- LOD0
+							["SPECIAL_KEY_WORDS"] = {"Name", "Light",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  -- LOD1
+							["SPECIAL_KEY_WORDS"] = {"Name", "Light",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  -- LOD2
+							["SPECIAL_KEY_WORDS"] = {"Name", "Light",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  -- LOD3
+							["SPECIAL_KEY_WORDS"] = {"Name", "Light",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "TunnelLOD3"},  --create a new LOD independant light
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='newLight', ty=-0.316384, roty =-180, i=60000, r=0.0, g=0.6923}),  
+						},
+					},
+				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN",   --landing pad lights
 					["EXML_CHANGE_TABLE"] 	= 
@@ -2773,6 +2802,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "FOV"}, 
+							["REPLACE_TYPE"] 	= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",	"60.000000"},  --original : 90.000000 
@@ -2782,21 +2812,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight7", "Name", "INTENSITY"},  
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"100000.000000"},  
+								{"Value",	"85000.000000"},  
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight8", "Name", "INTENSITY"},  
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"70000.000000"},  
+								{"Value",	"85000.000000"},  
 							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight9", "Name", "INTENSITY"},  
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"50000.000000"},  
+								{"Value",	"85000.000000"},  
 							},
 						},	
 						{
