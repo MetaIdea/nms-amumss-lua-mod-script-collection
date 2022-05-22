@@ -7,6 +7,13 @@ ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
 
+--Global damage multipliers to quickly adjust all damage values within a particular category
+Starships =					1				--Damage from starships / freighters
+Flora =						1				--Damage from all kinds of Hazardous Flora
+Fauna =						1				--Damage from all kinds of Hazardous Fauna / Creatures
+Robots =					1				--Damage from planetary Sentinels, turrets/drones in Derelict Freighters (Sentinel starships/freighters covered by "Starships")
+Other =						1				--Damage from most other damage sources such as environmental hazards, falling, starship impact, etc.
+
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= BaseDescription,
@@ -23,111 +30,111 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ENERGY"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 60}}}, --default 28
+		{"Damage", 60*Other}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","EXTREMEHEATDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 28
+		{"Damage", 50*Other}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","NOOXYDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 28
+		{"Damage", 50*Other}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","EXTREMECOLDDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 28
+		{"Damage", 50*Other}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","TOXICGASDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 28
+		{"Damage", 50*Other}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","RADIATIONDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 28
+		{"Damage", 50*Other}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 5}}}, --default 2
+		{"Damage", 5*Robots}}}, --default 2
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG_MED"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 7}}}, --default 3.5
+		{"Damage", 7*Robots}}}, --default 3.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTBIGGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 10}}}, --default 6 (used to be 11, default 8) ~Xen0nex
+		{"Damage", 10*Robots}}}, --default 6 (used to be 11, default 8) ~Xen0nex
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGRENADEDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 11}}}, --default 7
+		{"Damage", 11*Robots}}}, --default 7
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","LASERDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 6}}}, --default 3	(used to be 7, default 5) ~Xen0nex
+		{"Damage", 6*Robots}}}, --default 3	(used to be 7, default 5) ~Xen0nex
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SMLCREATUREDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 30}}}, --default 20
+		{"Damage", 30*Fauna}}}, --default 20
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","MEDCREATUREDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 30
+		{"Damage", 50*Fauna}}}, --default 30
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","LRGCREATUREDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 80}}}, --default 50
+		{"Damage", 80*Fauna}}}, --default 50
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","HUGECREATUREDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 80
+		{"Damage", 100*Fauna}}}, --default 80
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","PLAYERPREDDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 60}}}, --default 40
+		{"Damage", 60*Fauna}}}, --default 40
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","PREDDMGVR"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40}}}, --default 20
+		{"Damage", 40*Fauna}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","WEIRDCRTDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 80}}}, --default 40
+		{"Damage", 80*Fauna}}}, --default 40
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FIEND_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 45}}}, --default 30
+		{"Damage", 45*Fauna}}}, --default 30
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FIENDSPIT_DMG"},				--Added Xen0nex
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 3}}}, --default 1
+		{"Damage", 3*Fauna}}}, --default 1
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","PLANTDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 20
+		{"Damage", 100*Flora}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 30}}}, --default 14
+		{"Damage", 30*Starships}}}, --default 14
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 35}}}, --default 15
+		{"Damage", 35*Starships}}}, --default 15
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 35}}}, --default 16
+		{"Damage", 35*Starships}}}, --default 16
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40}}}, --default 16
+		{"Damage", 40*Starships}}}, --default 16
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 45}}}, --default 16
+		{"Damage", 45*Starships}}}, --default 16
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40}}}, --default 20
+		{"Damage", 40*Starships}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -135,126 +142,126 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 30
+		{"Damage", 50*Starships}}}, --default 30
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 75}}}, --default 50
+		{"Damage", 75*Starships}}}, --default 50
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","WALKERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 12}}}, --default 5		(used to be 25, default 9) ~Xen0nex
+		{"Damage", 12*Robots}}}, --default 5		(used to be 25, default 9) ~Xen0nex
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SENTINEL_FLAME"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 8}}}, --default 3
+		{"Damage", 8*Robots}}}, --default 3
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 16
+		{"Damage", 50*Starships}}}, --default 16
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 15
+		{"Damage", 50*Starships}}}, --default 15
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 150}}},
+		{"Damage", 150*Other}}},
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","MEDIUMASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 250}}},
+		{"Damage", 250*Other}}},
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","LARGEASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 400}}},
+		{"Damage", 400*Other}}},
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTGROUND"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 800}}},
+		{"Damage", 800*Other}}},
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTSHIP"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 25}}},	--deafult 10
+		{"Damage", 25*Other}}},	--deafult 10
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTINSTANCE"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"Damage", 400}}},
+		{"Damage", 400*Other}}},
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 120}}}, --default 20
+		{"Damage", 120*Starships}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 45}}}, --default 20
+		{"Damage", 45*Starships}}}, --default 20
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 18
+		{"Damage", 100*Flora}}}, --default 18
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","VENT_HEAT"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 125}}}, --default 75
+		{"Damage", 125*Other}}}, --default 75
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SPORE_VENT"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 75}}}, --default 25
+		{"Damage", 75*Flora}}}, --default 25
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 65
+		{"Damage", 100*Fauna}}}, --default 65
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FLOATER_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 125}}}, --default 80
+		{"Damage", 125*Fauna}}}, --default 80
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","JELLYFISH_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 35}}}, --default 20
+		{"Damage", 35*Fauna}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","GRABPLANT_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 10
+		{"Damage", 50*Flora}}}, --default 10
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","FISHFIEND_PROP"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 10}}}, --default 1
+		{"Damage", 10*Fauna}}}, --default 1
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","CLAM_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 35
+		{"Damage", 100*Fauna}}}, --default 35
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","VENUSFLY_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 20
+		{"Damage", 100*Flora}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLERSPITDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40}}}, --default 20
+		{"Damage", 40*Fauna}}}, --default 20
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","BASETURRETPDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 20}}}, --default 5	
+		{"Damage", 20*Robots}}}, --default 5	
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","LIGHTNING"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 125}}}, --default 75
+		{"Damage", 125*Other}}}, --default 75
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","METEOR"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 125}}}, --default 75
+		{"Damage", 125*Other}}}, --default 75
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","TORNADO"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 50}}}, --default 35
+		{"Damage", 50*Other}}}, --default 35
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 15}}}, --default 6
+		{"Damage", 15*Robots}}}, --default 6
 	
 	{["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAID"},		--Maybe when pirates attack buildings?
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 10}}}, --default 4
+		{"Damage", 10*Starships}}}, --default 4
 
 }}}}}}

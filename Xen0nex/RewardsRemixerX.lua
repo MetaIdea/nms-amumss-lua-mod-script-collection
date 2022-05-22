@@ -45,7 +45,7 @@ ShipLootChanges =
 			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			100},				--"SCRAP_GOODS",		1,			1,			100
 			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			100},				--"SCRAP_TECH",			1,			1,			100
 			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			100},				--"SCRAP_WEAP",			1,			1,			100
-			{"SHIPCHARGE",			"SHIPCHARGE",			1,			2,			100},				--"SHIPCHARGE",			3,			3,			100
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100},				--"SHIPCHARGE",			3,			3,			100
 			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			10},				--"TRA_CURIO1",			1,			3,			40
 			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			10},				--"WAR_CURIO1",			1,			3,			40
 			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			10},				--"EXP_CURIO1",			1,			3,			40
@@ -57,7 +57,7 @@ ShipLootChanges =
 			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			1,			50},				--"SCRAP_GOODS",		1,			1,			100
 			{"SCRAP_TECH",			"SCRAP_TECH",			1,			1,			50},				--"SCRAP_TECH",			1,			1,			100
 			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			1,			50},				--"SCRAP_WEAP",			1,			1,			100
-			{"SHIPCHARGE",			"SHIPCHARGE",			1,			2,			100},				--"SHIPCHARGE",			3,			3,			100
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100},				--"SHIPCHARGE",			3,			3,			100
 			{"TRA_CURIO1",			"TRA_CURIO1",			1,			1,			40},				--"TRA_CURIO1",			1,			3,			40
 			{"WAR_CURIO1",			"WAR_CURIO1",			1,			1,			40},				--"WAR_CURIO1",			1,			3,			40
 			{"EXP_CURIO1",			"EXP_CURIO1",			1,			1,			40},				--"EXP_CURIO1",			1,			3,			40
@@ -69,13 +69,13 @@ ShipLootChanges =
 			{"SCRAP_GOODS",			"SCRAP_GOODS",			1,			2,			100},				--"SCRAP_GOODS",		1,			1,			100
 			{"SCRAP_TECH",			"SCRAP_TECH",			1,			2,			100},				--"SCRAP_TECH",			1,			1,			100
 			{"SCRAP_WEAP",			"SCRAP_WEAP",			1,			2,			100},				--"SCRAP_WEAP",			1,			1,			100
-			{"SHIPCHARGE",			"SHIPCHARGE",			1,			2,			100},				--"SHIPCHARGE",			3,			3,			100
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			4,			100},				--"SHIPCHARGE",			3,			3,			100
 		}
 	},
 	{	--Sentinel Interceptors:	per destroyed ship containers
 		{"POLICELOOT"},							--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SHIPCHARGE",			"SHIPCHARGE",			1,			1,			100},				--"SHIPCHARGE",			1,			1,			100
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			2,			100},				--"SHIPCHARGE",			1,			1,			100
 			{"ROBOT1",				"ROBOT1",				80,			120,		50},				--"ROBOT1",				80,			120,		100
 			{"SENTINEL_LOOT",		"SENTINEL_LOOT",		1,			1,			50},				--"SENTINEL_LOOT",		1,			1,			100
 		}
@@ -94,7 +94,7 @@ ShipLootChanges =
 	{	--Trader Escorts:	per destroyed ship containers	(Added by this mod)
 		{"ESCORTLOOT"},							--Ships with this reward drop 1x containers
 		{	--Old Item ID			New Item ID				AmountMin	AmountMax	%Chance	(relative weight, not necessarily out of 100)
-			{"SHIPCHARGE",			"SHIPCHARGE",			1,			1,			50},				--"SHIPCHARGE",			1,			1,			100
+			{"SHIPCHARGE",			"SHIPCHARGE",			2,			2,			50},				--"SHIPCHARGE",			1,			1,			100
 			{"FRIG_BOOST_TRA",		"FRIG_BOOST_TRA",		1,			1,			50},				--"FRIG_BOOST_TRA",			1,			1,			100
 		}	--(Also drop random upgrade modules for starship Pulse Engine, and Shields at 100 chance weight each)
 	},
@@ -257,7 +257,7 @@ SpaceStationMissionLootChanges =
 			{"FRIG_BOOST_SPD",			"FRIG_BOOST_SPD",		1,	1,		0},		--1,	1,		1		Fuel Oxidiser
 			{"POWERCELL",				"POWERCELL",			5,	10,		2},		--5,	5,		1		Ion Battery
 			{"PRODFUEL2",				"PRODFUEL2",			5,	10,		2},		--5,	5,		1		Life Support Gel
-			{"SHIPCHARGE",				"SHIPCHARGE",			5,	10,		2},		--5,	5,		1		Starshield Battery
+			{"SHIPCHARGE",				"SHIPCHARGE",			6,	12,		2},		--5,	5,		1		Starshield Battery
 			{"EYEBALL",					"EYEBALL",				3,	5,		1},		--1,	3,		1		Hypnotic Eye
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			3,	5,		0},		--1,	3,		1		NipNip Buds
 			{"STORM_CRYSTAL",			"STORM_CRYSTAL",		3,	5,		1},		--1,	3,		1		Storm Crystal
@@ -307,7 +307,7 @@ SpaceStationMissionLootChanges =
 			{"FRIG_BOOST_SPD",			"FRIG_BOOST_SPD",		1,	1,		0.5},	--1,	1,		1		Fuel Oxidiser
 			{"POWERCELL",				"POWERCELL",			10,	15,		0.5},	--5,	15,		1		Ion Battery
 			{"PRODFUEL2",				"PRODFUEL2",			10,	15,		0.5},	--5,	15,		1		Life Support Gel
-			{"SHIPCHARGE",				"SHIPCHARGE",			8,	10,		1},		--5,	5,		1		Starshield Battery
+			{"SHIPCHARGE",				"SHIPCHARGE",			8,	14,		1},		--5,	5,		1		Starshield Battery
 			{"EYEBALL",					"EYEBALL",				5,	8,		1},		--3,	5,		1		Hypnotic Eye
 			{"WALKER_PROD",				"WALKER_PROD",			1,	1,		0.5},	--1,	1,		0.5		Walker Brain
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			5,	8,		0.5},	--3,	5,		1		NipNip Buds
@@ -357,7 +357,7 @@ SpaceStationMissionLootChanges =
 			{"FRIG_BOOST_SPD",			"FRIG_BOOST_SPD",		1,	2,		1},		--1,	1,		1		Fuel Oxidiser
 			{"POWERCELL",				"POWERCELL",			5,	15,		0},		--5,	15,		0.5		Ion Battery
 			{"PRODFUEL2",				"PRODFUEL2",			5,	15,		0},		--5,	15,		0.5		Life Support Gel
-			{"SHIPCHARGE",				"SHIPCHARGE",			10,	15,		0.5},	--5,	5,		1		Starshield Battery
+			{"SHIPCHARGE",				"SHIPCHARGE",			12,	18,		0.5},	--5,	5,		1		Starshield Battery
 			{"EYEBALL",					"EYEBALL",				7,	10,		1},		--3,	5,		1		Hypnotic Eye
 			{"WALKER_PROD",				"WALKER_PROD",			1,	1,		1},		--1,	1,		1		Walker Brain
 			{"NIPNIPBUDS",				"NIPNIPBUDS",			10,	12,		1},		--3,	5,		1		NipNip Buds
@@ -549,14 +549,14 @@ GuildGiftChanges =
 	{	--Guild Giftpool ID
 		{"R_WGUILD_GIFT2"},
 		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance (weight?)
-			{"WALKER_PROD",		"SHIPCHARGE",		1,			5,			100},						--"WALKER_PROD",			1,			5,			100
+			{"WALKER_PROD",		"SHIPCHARGE",		2,			6,			100},						--"WALKER_PROD",			1,			5,			100
 			{"QUAD_PROD",		"QUAD_PROD",		1,			1,			100},						--"QUAD_PROD",				1,			3,			100
 		}
 	},
 	{	--Guild Giftpool ID
 		{"R_WGUILD_GIFT3"},
 		{	--Old Item ID		New Item ID			AmountMin	AmountMax	PercentageChance (weight?)
-			{"WALKER_PROD",		"SHIPCHARGE",		2,			6,			100},						--"WALKER_PROD",			2,			4,			100
+			{"WALKER_PROD",		"SHIPCHARGE",		4,			8,			100},						--"WALKER_PROD",			2,			4,			100
 			{"QUAD_PROD",		"QUAD_PROD",		1,			2,			100},						--"QUAD_PROD",				2,			5,			100
 		}
 	},

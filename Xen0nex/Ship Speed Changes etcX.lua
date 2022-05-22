@@ -136,7 +136,7 @@ ShipTechChanges =
 				"Ship_PulseDrive_MiniJumpSpeed",	1.15							--1
 			},
 			{
-				"Ship_PulseDrive_MiniJumpFuelSpending",		0.2						--0.2
+				"Ship_PulseDrive_MiniJumpFuelSpending",		0.4						--0.2
 			}
 		}
 	},
