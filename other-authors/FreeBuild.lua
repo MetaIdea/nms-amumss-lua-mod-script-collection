@@ -1,15 +1,28 @@
+ModName = "_FreeBuilding.pak"
+Author = "Striker0420"
+Version = "3.90"
+
+BaseBuildingObjectsTable = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
+DebugGlobals = "GCDEBUGOPTIONS.GLOBAL.MBIN"
+PlayerGlobals = "GCPLAYERGLOBALS.GLOBAL.MBIN"
+BuildingGlobals = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
+
+ScaleMax = 3000
+ScaleMin = 0.0000025
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_FreeBuilding.pak", 
-["MOD_AUTHOR"]				= "Striker0420",
-["NMS_VERSION"]				= "3.88",
+["MOD_FILENAME"] 			= ModName, 
+["MOD_AUTHOR"]				= Author,
+["LUA_AUTHOR"]				= Author,
+["NMS_VERSION"]				= Version,
 ["MODIFICATIONS"] 			= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= BaseBuildingObjectsTable,
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -38,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
+					["MBIN_FILE_SOURCE"] 	= DebugGlobals,
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -62,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCPLAYERGLOBALS.GLOBAL.MBIN",
+					["MBIN_FILE_SOURCE"] 	= PlayerGlobals,
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -74,15 +87,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCBUILDINGGLOBALS.GLOBAL.MBIN",
+					["MBIN_FILE_SOURCE"] 	= BuildingGlobals,
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["SPECIAL_KEY_WORDS"]  = {"BuildingPlacementScaleMinMax", "Vector2f.xml"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",  "0.0000025"},-- makes it so you can scale bigger or smaller
-								{"y", "3000"}
+								{"x",  ScaleMin},-- makes it so you can scale bigger or smaller
+								{"y", ScaleMax}
 							}
 						}
 					}
