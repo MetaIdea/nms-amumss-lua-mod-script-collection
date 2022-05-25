@@ -1,5 +1,15 @@
 SPECIAL_LIST =
 {
+	{ ["ID"] = "EXPD_POSTER07A",	["IsConsumable"] = "False"},
+	{ ["ID"] = "EXPD_POSTER07B",	["IsConsumable"] = "False"},
+	{ ["ID"] = "EXPD_POSTER07C",	["IsConsumable"] = "False"},
+	{ ["ID"] = "SHIP_ROGUE",	["IsConsumable"] = "False"},
+	{ ["ID"] = "EXPD_CAPE07",	["IsConsumable"] = "False"},
+	{ ["ID"] = "BLD_MINI_BIOFRI",	["IsConsumable"] = "False"},
+	{ ["ID"] = "EXPD_TITLE07",	["IsConsumable"] = "False"},
+	{ ["ID"] = "EXPD_DECAL07",	["IsConsumable"] = "False"},
+	{ ["ID"] = "EXPD_BANNER07",	["IsConsumable"] = "False"},
+	{ ["ID"] = "EXPD_BIOFRIG",	["IsConsumable"] = "False"},
 	{ ["ID"] = "SHIP_PIRATE",	["IsConsumable"] = "False"},
 	{ ["ID"] = "EXPD_CAPE06",	["IsConsumable"] = "False"},
 	{ ["ID"] = "SPEC_HOOD01",	["IsConsumable"] = "False"},
