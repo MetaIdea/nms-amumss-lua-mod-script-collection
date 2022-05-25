@@ -1,6 +1,6 @@
 ModName = "_FreeBuildingLite.pak"
 Author = "Striker0420"
-Version = "3.89"
+Version = "3.90"
 
 BaseBuildingObjectsTable = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 DebugGlobals = "GCDEBUGOPTIONS.GLOBAL.MBIN"
@@ -34,6 +34,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BuildableOnFreighter", 		 "True"},
 								{"BuildableOnPlanet", 		 	 "True"},
 								{"BuildableOnPlanetWithProduct", "True"},							
+								{"GlobalLimit", 					"0"},			
+								{"SystemLimit", 					"0"},
+								{"PlanetLimit", 					"0"},
+								{"RegionLimit", 					"0"},
+								{"PlanetBaseLimit", 				"0"},
+								{"FreighterBaseLimit", 				"0"},
 								{"CanScale",   					"True"},					
 							}
 						}
@@ -49,6 +55,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"DisableBaseBuildingLimits",		"True"},
 								{"BaseBuildingPartsRequirePower",	"False"},		
 								{"BaseDownloadTimeout",				"120"},	--ORIGINAL 40
+								{"InfiniteInteractions",	"True"},		
+								{"AlwaysAllowShipOperations",	"True"},	
+								{"AlwaysAllowVehicleOperations",	"True"},	
+								{"AlwaysAllowFreighterInventoryAccess",	"True"},
+								{"IgnoreFreighterSpawnWarpRequirement",	"True"},
 								{"EverythingIsFree",	"True"},	
 								
 							}
