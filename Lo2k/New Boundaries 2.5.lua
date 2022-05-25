@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "New Boundaries 2.4.pak", 
+["MOD_FILENAME"] 			= "New Boundaries 2.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.88",
+["NMS_VERSION"]				= "3.90",
 ["MOD_DESCRIPTION"]			= "This mod extends photo and building modes boundaries",
 ["MODIFICATIONS"] 			= 
 	{
