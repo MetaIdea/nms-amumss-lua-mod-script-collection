@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Asteroid Hits 2.1.pak", 
+["MOD_FILENAME"] 			= "Asteroid Hits 2.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.87",
+["NMS_VERSION"]				= "3.90",
 ["MOD_DESCRIPTION"]			= "This mod greatly increases damages due to asteroid collision",
 ["MODIFICATIONS"] 			= 
 	{
