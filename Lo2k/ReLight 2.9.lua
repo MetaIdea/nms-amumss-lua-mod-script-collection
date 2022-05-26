@@ -105,9 +105,9 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 2.8.pak", 
+["MOD_FILENAME"] 			= "ReLight 2.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.89",
+["NMS_VERSION"]				= "3.90",
 ["MOD_DESCRIPTION"]			= "This mod rework most of the lights placed in NPC building",
 ["MODIFICATIONS"] 			= 
 	{
@@ -599,7 +599,98 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},						
 					},
+				},			
+				{  -- Removes Guild shop front lights lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\GUILDSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
+				},				
+				{  -- Removes Map shop front lights lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\MAPSHOP\LIGHTS1_MAT6.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
 				},	
+				{  -- Removes Suit shop front lights lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\SUITSHOP\LIGHTS1_MAT2.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
+				},				
+				{  -- Removes Mission shop front lights lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\MISSIONSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
+				},	
+				{  -- Removes Ship shop front lights lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\SHIPSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
+				},
+				{  -- Removes Vehicule shop front lights lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\VEHICLESHOP\CORRIDORMODULE_STRAIGHT2_LIGHTS1_MAT.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
+				},
+				{  -- Removes Weapon shop front lights lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\WEAPONSHOP\CORRIDORMODULE_STRAIGHT3_LIGHTS1_MAT.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
+				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -2355,6 +2446,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 					},
 				},		
+				{  -- SHACK INTERIOR WALL DRAPE LIGHTS
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\HANGINGDRAPES\TRADERWALLDRAPE.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "WallFlagLight"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								--{"TransX", "-0.014919"},  	--original 0.002193
+								--{"TransY", "1.206272"},   	--original 1.490884
+								--{"TransZ", "-0.340135"},	--original -0.474377
+								{"RotX", "-55.334534"},	--original -83.03872
+							},
+						},	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "WallFlagLight", "Name", "FOV"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"125.000000"},  --original : 125
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "WallFlagLight", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"20000.000000"},  --original : 15000.0
+							},
+						},
+					},
+				},
 				{  -- SHACK EXTERIOR WALL DRAPE LIGHTS
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\HANGINGDRAPES\WALLDRAPE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -2574,16 +2696,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},	
 						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight317", "Name", "INTENSITY"},  -- TELEPORTER
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"50000.000000"},  --original : 70000.000000 
+							},
+						},	
+						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight317", "Name", "COL_G"},  -- TELEPORTER
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"0.802300"},  --original : 0.692300 
+								{"Value",	"0.8"},  --original : 0.692300 
 							},
 						},							
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight317"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight317b', tx=-49.132, ty=8.78, tz=139.64, ry=180, fov=160, i=70000, r='0.000', g='0.800'}),					
+							["ADD"] = InsertNewLight({name='pointLight317b', tx=-49.132, ty=8.78, tz=139.64, ry=180, fov=160, i=50000, r='0.000', g='0.800'}),					
 						},					
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight5", "Name", "INTENSITY"},  --Main teal light
@@ -2835,7 +2964,119 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = InsertNewLight({name='spotLight7b',tx=0.1, ty=-5.46, tz=2.267, rx=90,sx=20, sy=20, sz=20, fov=180, f='quadratic', i=90000, r='0.000', g='0.828'}),
 						},						
 					},
-				},	
+				},					
+	--[[			{  -- SAVE POINT
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINTPRESCALE.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "joint1"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='newLight',y=0.5, i=15000, g=0.60, b=0.0}),  
+						},
+					},
+				},
+	]]--
+				{  -- BLUEPRINT ANALYSER hologram
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\PARTS\BPANALYSER\BLUEPRINTANALYSEREFFECT.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{  -- Folder yellow light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"4000.0"},  --original : 1.0
+							},
+						},
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight2", "Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.000000"},  --original : 0.496
+							},
+						},
+						{  --Blue light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"8000.0"},  --original : 1.0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "COL_R"},  --pointLight1
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.0"},  --original : 0.45
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.400000"},  --original : 0.87
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.0"},  --original : 1.0
+							},
+						},
+					},
+				},
+				{  -- BLUEPRINT ANALYSER
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\BLUEPRINTANALYSER.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{		
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "Light"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='newtealLight1',tx=0.0, ty=1.0, tz=0.1, ry=180, fov=145, i=5000,r=0.45, g=0.87, b=1.0}),  
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "Light"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='newtealLight2',tx=0.0, ty=1.0, tz=-0.1, fov=145, i=5000, r=0.45, g=0.87, b=1.0}),  
+						},
+					},
+				},
+				--[[
+				{  -- tiny bulb on top of a plant
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "_MedPlant_C"},  --create a new LOD independant light
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='newLight', ty=0.516384, i=60000, r=0.0, g=0.6923}),  
+						},
+					},
+				},
+				
+				{  -- UNSURE
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLPLANT.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "_SmallPlant_ALOD0"},  --create a new LOD independant light
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='newLight', ty=0.516384, i=20000, r=0.4, g=0.72, b=0.0}),  
+						},
+					},
+				},
+				]]--
+				{  -- BIG MARROW BULBS
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\CAVE\MEDIUMPROP\MEDIUMGLOWPLANT.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "_MedPlant_C"},  --create a new LOD independant light
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='newLight', ty=1.0, i=40000, r=0.4, g=0.72, b=0.0}),  
+						},
+					},
+				},
 --[[				
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\MISSIONSHOP.SCENE.MBIN",
