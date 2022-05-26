@@ -1,5 +1,5 @@
-ModName = "DoubleStars.pak"
-ModDescription = "Doubles the amount of stars in the universe"
+ModName = "LessStars.pak"
+ModDescription = "Decreases the amount of stars in the universe"
 Author = "Striker0420"
 Version = "3.90"
 
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["MATH_OPERATION"] = "/",
+							["MATH_OPERATION"] = "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

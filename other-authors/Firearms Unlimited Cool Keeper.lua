@@ -1,6 +1,6 @@
 ModName = "FireArmsUnlimitedCoolKeeper.pak"
 Author = "Striker0420"
-Version = "3.89"
+Version = "3.90"
 
 TechnologyTablePath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 SpaceShipGlobals =  "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
