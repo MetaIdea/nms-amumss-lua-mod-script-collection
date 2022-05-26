@@ -1,5 +1,5 @@
-NMSVersion = "3.89"
-MODVersion = "3.89"
+NMSVersion = "3.90"
+MODVersion = "3.90"
 
 Grave_Scan_Event =
 [[
@@ -359,12 +359,13 @@ Base_Scan_Event =
         </Property>
       </Property>
     </Property>
-]]	
+]]
 
- All_Request_Leave =[[
+ All_Request_Leave =
+[[
         <Property value="GcAlienPuzzleOption.xml">
-        <Property name="Name" value="ALL_REQUEST_LEAVE" />
-        <Property name="Text" value="" />
+          <Property name="Name" value="ALL_REQUEST_LEAVE" />
+          <Property name="Text" value="" />
           <Property name="IsAlien" value="False" />
           <Property name="Cost" value="" />
           <Property name="Rewards" />
@@ -392,11 +393,13 @@ Base_Scan_Event =
             <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
-      </Property>]]   
+      </Property>
+]]
 
 function GetReward(ID, EVENT)
-return[[
-    <Property value="GcGenericRewardTableEntry.xml">
+return
+[[
+	<Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="]]..ID..[[" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlways" />
@@ -410,7 +413,7 @@ return[[
               <Property name="DoAerialScan" value="False" />
               <Property name="UseMissionSeedForEvent" value="False" />
               <Property name="StartDelay" value="6" />
-              <Property name="UseStartDelayWhenNoAerialScan" value="False" />			  
+              <Property name="UseStartDelayWhenNoAerialScan" value="False" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -421,7 +424,9 @@ return[[
 end
 
 function GetPuzzleOption(NAME, ACTION)
-return[[  <Property value="GcAlienPuzzleOption.xml">
+return
+[[
+        <Property value="GcAlienPuzzleOption.xml">
           <Property name="Name" value="]]..NAME..[[" />
           <Property name="Text" value="" />
           <Property name="IsAlien" value="False" />
@@ -454,12 +459,14 @@ return[[  <Property value="GcAlienPuzzleOption.xml">
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
             <Property name="gcwordcategorytableEnum" value="MISC" />
           </Property>
-        </Property>                              
+        </Property>
 ]]
-end          
-        
+end
+
 function GetMorePuzzleOption(NEXTACTION)
-return[[          <Property value="GcAlienPuzzleOption.xml">
+return
+[[
+        <Property value="GcAlienPuzzleOption.xml">
           <Property name="Name" value="More Options" />
           <Property name="Text" value="" />
           <Property name="IsAlien" value="False" />
@@ -525,7 +532,7 @@ return[[          <Property value="GcAlienPuzzleOption.xml">
       <Property name="ProgressiveDialogue" value="False" />
       <Property name="RequiresScanEvent" value="" />
       <Property name="Options">
-      ]]
+]]
  end
 
 --Changes for the Rewards table (ID, EVENT)
@@ -545,9 +552,9 @@ Menu1_Option3 = GetPuzzleOption("NPC_TECHSHOP_CATEGORY_WEAP","TOOL_LOCATION")  -
 --Generate a new Puzzle option that points to the next dialog set
 More_Options1 = GetMorePuzzleOption("?POWER_SCANNER")
 --Put the options together with a more options closer
-Menu1_Options = Menu1_Option1..Menu1_Option2..Menu1_Option3..More_Options1     
-      
---Second set of options      
+Menu1_Options = Menu1_Option1..Menu1_Option2..Menu1_Option3..More_Options1
+
+--Second set of options
 Menu2_Option1 = GetPuzzleOption("BUILDING_FACTORY_L","SEC_SCN_FACT")  -- Manufacturing Facility
 Menu2_Option2 = GetPuzzleOption("UI_NAV_DROPPOD_NAME_L", "SCAN_1")  -- ExoSuit DropPod
 Menu2_Option3 = GetPuzzleOption("UI_LIBRARY_ENTRANCE_DESC", "PLANET_ARCHIVES")  -- Planetary Archives
@@ -564,29 +571,29 @@ Menu3_Options = Menu3_Option1..Menu3_Option2..Menu3_Option3..More_Options3
 --Fourth set of options, also get a close option
 Menu4_Option1 = GetPuzzleOption("UI_SENTINEL_HIVE_NAME", "R_SHOW_HIVEONLY")  -- Sentinel Pillar
 Menu4_Option2 = GetPuzzleOption("SCAN_GRAVE", "R_GRAVE")  -- Traveller Grave
-Menu4_Option3 = GetPuzzleOption("UI_RECOVER_BASE_SUB", "R_BASE")  -- "Wild" Base Computer 
+Menu4_Option3 = GetPuzzleOption("UI_RECOVER_BASE_SUB", "R_BASE")  -- "Wild" Base Computer
 Menu4_Options = Menu4_Option1..Menu4_Option2..Menu4_Option3..All_Request_Leave
 
---Put all the options together.  
+--Put all the options together.
 ALL_PUZZLE_UPDATES = [[      <Property name="Options">
 ]]..Menu1_Options..Menu2_Options..Menu3_Options..Menu4_Options
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] 			= "Firmware Update for the Signal Booster"..MODVersion..".pak",
   ["MOD_DESCRIPTION"]		= "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]			= "Lowkie",
   ["MOD_MAINTENANCE"]		= "Babscoole",
-  ["NMS_VERSION"]			= NMSVersion,     
-  ["MODIFICATIONS"] 		=             
+  ["NMS_VERSION"]			= NMSVersion,
+  ["MODIFICATIONS"] 		=
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
-                 
+			["MBIN_CHANGE_TABLE"] =
+			{
+
                 {
                     ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
@@ -597,10 +604,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
                     },
                },
-               {                
+               {
                     ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] = 
-					{ 
+					["EXML_CHANGE_TABLE"] =
+					{
 						{
 							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
 							["VALUE_CHANGE_TABLE"] 	= {{"TextAlien", 	""}},    --org UI_SIGNAL_SCANNER_DESC_ALT},
@@ -611,45 +618,45 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"]                 = ALL_PUZZLE_UPDATES,
 						},
                     },
-                }, 
+                },
                 {
                     ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"},
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SEC_CRASHEDSHIP"},
-                            ["PRECEDING_KEY_WORDS"] = {"",},								
-                            ["LINE_OFFSET"] 		= "0",							
+                            ["PRECEDING_KEY_WORDS"] = {"",},
+                            ["LINE_OFFSET"] 		= "0",
                             ["REPLACE_TYPE"] = "ADDAFTERSECTION",
                             ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"}},
-                            ["ADD"] =   REWARDSET,	
+                            ["ADD"] =   REWARDSET,
                         },
                     },
                 },
                 {
                     ["MBIN_FILE_SOURCE"]  = {"METADATA\SIMULATION\SCANNING\SCANEVENTTABLEPLANET.MBIN"},
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","DRONE_HIVE",},														
-							["VALUE_CHANGE_TABLE"] 	= 
+                            ["SPECIAL_KEY_WORDS"] = {"Name","DRONE_HIVE",},
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"ReplaceEventIfAlreadyActive",	"True"},
 								{"InterstellarOSDMessage", "SCANEVENT_ANOTHER_SYSTEM"},
-							}	
+							}
                         },
 						{
-							["PRECEDING_KEY_WORDS"] = {"Events"}, 
+							["PRECEDING_KEY_WORDS"] = {"Events"},
 							["LINE_OFFSET"] 		= "+0",
 							["ADD"] = Grave_Scan_Event
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Events"}, 
+							["PRECEDING_KEY_WORDS"] = {"Events"},
 							["LINE_OFFSET"] 		= "+0",
 							["ADD"] = Base_Scan_Event
-						},						
+						},
                     },
-                },				
+                },
 			}
         }
 	}
