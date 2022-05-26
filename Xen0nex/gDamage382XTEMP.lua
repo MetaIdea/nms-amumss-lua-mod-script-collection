@@ -260,8 +260,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 15*Robots}}}, --default 6
 	
-	{["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAID"},		--Maybe when pirates attack buildings?
+	{["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAID"},		--Maybe when pirates attack buildings?	(In PTSd they attack much more rapidly))
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 10*Starships}}}, --default 4
+		{"Damage", 8*Other}}}, --default 4
 
 }}}}}}

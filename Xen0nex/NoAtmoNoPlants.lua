@@ -1,5 +1,5 @@
 ModName = "NoAtmoNoPlants"
-GameVersion = "3_84"
+GameVersion = "3_90"
 
 MinHeight =				250					-- -1			Height (above sea level) it is allowed to spawn?
 MaxHeight =				252					-- 128
