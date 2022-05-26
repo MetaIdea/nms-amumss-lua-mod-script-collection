@@ -222,6 +222,18 @@ QUICK_ACTION_MENU =
                 </Property>
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Toggle" />
+                  <Property name="Name" value="_Cape_Infinity" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />				  
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>					
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Toggle" />
                   <Property name="Name" value="_Cape_Pirate" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
@@ -1511,7 +1523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]				= "Mjjstral",
 ["MOD_MAINTENANCE"]			= "Babscoole",
 ["MOD_DESCRIPTION"]			= "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]				= "3.89",
+["NMS_VERSION"]				= "3.90",
 ["MODIFICATIONS"] 			= 
 	{
 		{
