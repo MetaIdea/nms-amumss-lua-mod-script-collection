@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Reduced Launch Cost 5% 2.2B.pak", 
+["MOD_FILENAME"] 			= "Reduced Launch Cost 5% 2.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.85",
+["NMS_VERSION"]				= "3.90",
 ["MOD_DESCRIPTION"]			= "This mods makes each launch costing 5% instead of 25% ",
 ["MODIFICATIONS"] 			= 
 	{
