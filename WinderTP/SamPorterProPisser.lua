@@ -238,7 +238,43 @@ return [[
   <Property name="StartEnabled" value="True" />
   <Property name="Oneshot" value="False" />
   <Property name="MaxCount" value="]] .. P_MAX .. [[" />
-  <Property name="Burst" value="0" />
+  <Property name="BurstData" value="TkParticleBurstData.xml">
+    <Property name="BurstAmount" value="TkEmitterFloatProperty.xml">
+      <Property name="Authoring" value="FixedValue" />
+      <Property name="FixedValue" value="0" />
+      <Property name="MinRandomValue" value="0.1" />
+      <Property name="MaxRandomValue" value="1" />
+      <Property name="CurveVariation" value="0" />
+      <Property name="CurveStartValue" value="1" />
+      <Property name="CurveMidValue" value="1" />
+      <Property name="CurveEndValue" value="1" />
+      <Property name="CurveBlendMidpoint" value="0.5" />
+      <Property name="Curve1Shape" value="TkCurveType.xml">
+        <Property name="Curve" value="Linear" />
+      </Property>
+      <Property name="Curve2Shape" value="TkCurveType.xml">
+        <Property name="Curve" value="Linear" />
+      </Property>
+    </Property>
+    <Property name="BurstInterval" value="TkEmitterFloatProperty.xml">
+      <Property name="Authoring" value="FixedValue" />
+      <Property name="FixedValue" value="1" />
+      <Property name="MinRandomValue" value="0.1" />
+      <Property name="MaxRandomValue" value="1" />
+      <Property name="CurveVariation" value="0" />
+      <Property name="CurveStartValue" value="1" />
+      <Property name="CurveMidValue" value="1" />
+      <Property name="CurveEndValue" value="1" />
+      <Property name="CurveBlendMidpoint" value="0.5" />
+      <Property name="Curve1Shape" value="TkCurveType.xml">
+        <Property name="Curve" value="Linear" />
+      </Property>
+      <Property name="Curve2Shape" value="TkCurveType.xml">
+        <Property name="Curve" value="Linear" />
+      </Property>
+    </Property>
+    <Property name="LoopCount" value="0" />
+  </Property>
   <Property name="EmissionRate" value="TkEmitterFloatProperty.xml">
     <Property name="Authoring" value="FixedValue" />
     <Property name="FixedValue" value="]] .. E_RATE .. [[" />
