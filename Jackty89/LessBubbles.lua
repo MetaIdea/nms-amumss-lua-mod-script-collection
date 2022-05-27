@@ -1,4 +1,3 @@
-GameVersion = "3_81"
 ModeName = "LessBubbles"
 Author = "Jackty89"
 
@@ -8,10 +7,9 @@ FixedValue = "50"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = ModeName..GameVersion..".pak",
+    ["MOD_FILENAME"]            = ModeName..".pak",
     ["MOD_DESCRIPTION"]         = ModeName,
     ["MOD_AUTHOR"]              = Author,
-    ["NMS_VERSION"]             = GameVersion,
     ["MODIFICATIONS"]           =
     {
         {
@@ -22,7 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Burst" , "0","EmissionRate","TkEmitterFloatProperty.xml", "Authoring", "FixedValue" },
+                            -- ["SPECIAL_KEY_WORDS"] = {"Burst" , "0","EmissionRate","TkEmitterFloatProperty.xml", "Authoring", "FixedValue" },
+                            ["SPECIAL_KEY_WORDS"] = {"EmissionRate","TkEmitterFloatProperty.xml"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FixedValue", FixedValue}

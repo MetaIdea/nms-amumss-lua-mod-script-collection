@@ -6,7 +6,7 @@ RewardTablePath = "METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN"
 ConsumeableItemTablePath = "METADATA\\REALITY\\TABLES\\CONSUMABLEITEMTABLE.MBIN"
 DefaultRealityPath = "METADATA\\REALITY\\DEFAULTREALITY.MBIN"
 
-StarMapCrashedShipId = "CHART_CRASHSHIP"
+StarMapCrashedShipId = "MAP_CRASHSHIP"
 HiveMapId = "CHART_HIVE"
 
 function CreateStarMap(NewId)
