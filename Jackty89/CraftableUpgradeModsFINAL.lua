@@ -35,23 +35,23 @@ SubList = {}
 
 Languages =
 {
-	["English"] = "English",
-	["French"] = "French",
-	["Italian"] = "Italian",
-	["German"] = "German",
-	["Spanish"] = "Spanish",
-	["Russian"] = "Russian",
-	["Polish"] = "Polish",
-	["Dutch"] = "Dutch",
-	["Portuguese"] = "Portuguese",
-	["LatinAmeraicanSpanish"] = "LatinAmericanSpanish", --this is not a typo
-	["BrazilianPortuguese"] = "BrazilianPortuguese",
-	["SimplifiedChinese"] = "SimplifiedChinese",
-	["TraditionalChinese"] = "TraditionalChinese",
-	["TencentChinese"] = "TencentChinese",
-	["Korean"] = "Korean",
-	["Japanese"] = "Japanese",
-	["USEnglish"] = "USEnglish"
+    ["English"] = "English",
+    ["French"] = "French",
+    ["Italian"] = "Italian",
+    ["German"] = "German",
+    ["Spanish"] = "Spanish",
+    ["Russian"] = "Russian",
+    ["Polish"] = "Polish",
+    ["Dutch"] = "Dutch",
+    ["Portuguese"] = "Portuguese",
+    ["LatinAmeraicanSpanish"] = "LatinAmericanSpanish", --this is not a typo
+    ["BrazilianPortuguese"] = "BrazilianPortuguese",
+    ["SimplifiedChinese"] = "SimplifiedChinese",
+    ["TraditionalChinese"] = "TraditionalChinese",
+    ["TencentChinese"] = "TencentChinese",
+    ["Korean"] = "Korean",
+    ["Japanese"] = "Japanese",
+    ["USEnglish"] = "USEnglish"
 }
 AddNewLanguatext =
 {
@@ -331,86 +331,86 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                     }
                 },
-				{
-					["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"LocTableList"},
-							["ADD"] 	=
-							[[
-								<Property value="NMSString0x20.xml">
-									<Property name="Value" value="NMS_]]..CustomLanguageTag..[[" />
-								</Property>
-							]]
-						}
-					}
-				}
+                {
+                    ["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"LocTableList"},
+                            ["ADD"] 	=
+                            [[
+                                <Property value="NMSString0x20.xml">
+                                    <Property name="Value" value="NMS_]]..CustomLanguageTag..[[" />
+                                </Property>
+                            ]]
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 function NewDescriptionText(newDescId)
-	local result =
-	[[
-	<Property value="TkLocalisationEntry.xml">
-		<Property name="Id" value="]]..newDescId..[[" />
-		<Property name="English" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="French" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="Italian" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="German" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="Spanish" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="Russian" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="Polish" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="Dutch" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="Portuguese" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="LatinAmericanSpanish" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="BrazilianPortuguese" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="SimplifiedChinese" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="TraditionalChinese" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="TencentChinese" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="Korean" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="Japanese" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-		<Property name="USEnglish" value="VariableSizeString.xml">
-			<Property name="Value" value="" />
-		</Property>
-	</Property>
-	]]
+    local result =
+    [[
+    <Property value="TkLocalisationEntry.xml">
+        <Property name="Id" value="]]..newDescId..[[" />
+        <Property name="English" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="French" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="Italian" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="German" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="Spanish" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="Russian" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="Polish" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="Dutch" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="Portuguese" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="LatinAmericanSpanish" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="BrazilianPortuguese" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="SimplifiedChinese" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="TraditionalChinese" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="TencentChinese" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="Korean" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="Japanese" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+        <Property name="USEnglish" value="VariableSizeString.xml">
+            <Property name="Value" value="" />
+        </Property>
+    </Property>
+    ]]
 
-	return result
+    return result
 end
 
 function CreateModTabpageTree(RootTech, Children, CostTypeID)
@@ -920,38 +920,38 @@ function CreateRequirementsString(RequirementsArray)
 end
 
 function NewLanguagueFile(DescriptionEntries)
-	return
-	[[<?xml version="1.0" encoding="utf-8"?>
-		<Data template="TkLocalisationTable">
-			<Property name="Table">]]
-			..DescriptionEntries..
-			[[
-			</Property>
-		</Data>
-	]]
+    return
+    [[<?xml version="1.0" encoding="utf-8"?>
+        <Data template="TkLocalisationTable">
+            <Property name="Table">]]
+            ..DescriptionEntries..
+            [[
+            </Property>
+        </Data>
+    ]]
 end
 
 function NewLanguageEntry(Language, NewDescription)
-	return
-	[[
-		<Property name="]]..Language..[[" value="VariableSizeString.xml">
-			<Property name="Value" value="]]..NewDescription..[[" />
-		</Property>
-	]]
+    return
+    [[
+        <Property name="]]..Language..[[" value="VariableSizeString.xml">
+            <Property name="Value" value="]]..NewDescription..[[" />
+        </Property>
+    ]]
 end
 
 function NewDescriptionText(newDescId, LanguageEntries)
-	return
-	[[
-		<Property value="TkLocalisationEntry.xml">
-			<Property name="Id" value="]]..newDescId..[[" />
-			]]..LanguageEntries..[[
-		</Property>
-	]]
+    return
+    [[
+        <Property value="TkLocalisationEntry.xml">
+            <Property name="Id" value="]]..newDescId..[[" />
+            ]]..LanguageEntries..[[
+        </Property>
+    ]]
 end
 
 function FillCustomlangFile()
-	local DescriptionEntries = {}
+    local DescriptionEntries = {}
     local NewDescriptionID = CraftedFreighterModDescrId
     local LanguageEntries = {}
 
@@ -959,19 +959,19 @@ function FillCustomlangFile()
         local Language = AddNewLanguatext[i][1]
         local NewDescription = AddNewLanguatext[i][2]
         table.insert(LanguageEntries, NewLanguageEntry(Language, NewDescription))
-	end
+    end
     table.insert(DescriptionEntries, NewDescriptionText(NewDescriptionID, table.concat(LanguageEntries)))
 
-	return NewLanguagueFile(table.concat(DescriptionEntries))
+    return NewLanguagueFile(table.concat(DescriptionEntries))
 end
 
 local AddCsutomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
 for Key , Language in pairs(Languages) do
-	AddCsutomLanguageFiles[#AddCsutomLanguageFiles +1] =
-	{
-		["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Key..".EXML",
-		["FILE_CONTENT"] 		=	FillCustomlangFile()
-	}
+    AddCsutomLanguageFiles[#AddCsutomLanguageFiles +1] =
+    {
+        ["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Key..".EXML",
+        ["FILE_CONTENT"] 		=	FillCustomlangFile()
+    }
 end
 
 local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]

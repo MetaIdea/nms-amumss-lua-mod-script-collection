@@ -1,4 +1,3 @@
-GameVersion = "3_81"
 ModeName = "NoBubbles"
 Author = "Jackty89"
 
@@ -8,10 +7,9 @@ EmissionRateString = '<Property name="EmissionRate" value="" />'
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = ModeName..GameVersion..".pak",
+    ["MOD_FILENAME"]            = ModeName..".pak",
     ["MOD_DESCRIPTION"]         = ModeName,
     ["MOD_AUTHOR"]              = Author,
-    ["NMS_VERSION"]             = GameVersion,
     ["MODIFICATIONS"]           =
     {
         {
@@ -22,11 +20,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Burst" , "0","EmissionRate","TkEmitterFloatProperty.xml", "Authoring", "FixedValue" },
+                            ["SPECIAL_KEY_WORDS"] = {"EmissionRate","TkEmitterFloatProperty.xml"},
                             ["REMOVE"]	= "Section"
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Burst" , "0"},
+                            ["SPECIAL_KEY_WORDS"] = {"BurstData", "TkParticleBurstData.xml"},
+                            ["REPLACE_TYPE"] = "ADDAFTERSECTION",
                             ["ADD"] = EmissionRateString
                         }
                     }

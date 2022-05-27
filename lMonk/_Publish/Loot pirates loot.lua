@@ -3,7 +3,11 @@ local desc = [[
   Replace space pirates & raids loot with a more varied selection
 ]]------------------------------------------------------------------------
 
-mod_version = 1.5
+mod_version = 1.51
+
+local function bool(b)
+	if b and b == true then return 'True' end return 'False'
+end
 
 local F_ = {}
 F_.TableItemSingle = function(item, data, reward)
@@ -69,7 +73,7 @@ F_.Technology = function(item)
 	local exml = [[
 		<Property name="TechId" value="]]..item.id..[["/>
 		<Property name="AutoPin" value="False"/>
-		<Property name="Silent" value="False"/>
+		<Property name="Silent" value="]]..bool(item.s)..[["/>
 	]]
 	return F_.TableItemSingle(item, exml, 'GcRewardSpecificTech.xml')
 end
@@ -110,6 +114,20 @@ F_.Jetboost = function(item)
 	]]
 	return F_.TableItemSingle(item, exml, 'GcRewardJetpackBoost.xml')
 end
+F_.Stamina = function(item)
+	local exml = [[
+		<Property name="Duration" value="]]..(10 * item.t)..[["/>
+	]]
+	return F_.TableItemSingle(item, exml, 'GcRewardFreeStamina.xml')
+end
+F_.Hazard = function(item)
+	local exml = [[
+		<Property name="Amount" value="-]]..item.n..[["/>
+		<Property name="SetNotAdd" value="False"/>
+		<Property name="Silent" value="True"/>
+	]]
+	return F_.TableItemSingle(item, exml, 'GcRewardRefreshHazProt.xml')
+end
 F_.Shield = function(item)
 	local exml = [[
 		<Property name="ShowOSDOnSuccess" value="True"/>
@@ -131,7 +149,7 @@ F_.ItemList = function(item)
 				<Property name="Amount" value="]]..(item[i].n or 1)..[["/>
 				<Property name="ProcTechGroup" value=""/>
 				<Property name="ProcTechQuality" value="3"/>
-				<Property name="IllegalProcTech" value="]]..(item[i].l or 'False')..[["/>
+				<Property name="IllegalProcTech" value="]]..bool(item[i].l)..[["/>
 				<Property name="ProcProdType" value="GcProceduralProductCategory.xml">
 					<Property name="ProceduralProductCategory" value="]]..(item[i].pid or 'Loot')..[["/>
 				</Property>
@@ -192,10 +210,10 @@ local E_ = {
 	-- Money
 	UT='Units',
 	NN='Nanites',
-	HG='Specials',
+	HG='Specials', -- quicksilver
 }
 
-local Rewards = {
+local new_reward = {
 	Pirate_Loot_Easy = {
 		id = 'PIRATELOOT_EASY',
 		choice = 'SelectAlways',
@@ -272,33 +290,33 @@ local Rewards = {
 			{id=E_.DTC,				r=E_.U,			c=20,	f=F_.Procedural},
 			{id=E_.UT,				n=25000,x=35000,c=80,	f=F_.Money},
 		}
-	},
-	BuildRewardTableEntry = function(rte)
-		local function getRewardsList(list)
-			local exml = {}
-			table.insert(exml, '<Property name="List">')
-			for _,rwd in pairs(list) do
-				table.insert(exml, rwd.f(rwd))
-			end
-			table.insert(exml, '</Property>')
-			return table.concat(exml)
-		end
-		return [[
-			<Property value="GcGenericRewardTableEntry.xml">
-				<Property name="Id" value="]]..rte.id..[["/>
-				<Property name="List" value="GcRewardTableItemList.xml">
-					<Property name="RewardChoice" value="]]..rte.choice..[["/>
-					<Property name="OverrideZeroSeed" value="]]..(rte.zeroseed or 'False')..[["/>
-					]]..getRewardsList(rte.rewardlist)..[[
-				</Property>
-			</Property>]]
-	end
+	}
 }
+function new_reward:AddTableEntry(rte)
+	local function getRewardsList(list)
+		local exml = {}
+		table.insert(exml, '<Property name="List">')
+		for _,rwd in pairs(list) do
+			table.insert(exml, rwd.f(rwd))
+		end
+		table.insert(exml, '</Property>')
+		return table.concat(exml)
+	end
+	return [[
+		<Property value="GcGenericRewardTableEntry.xml">
+			<Property name="Id" value="]]..rte.id..[["/>
+			<Property name="List" value="GcRewardTableItemList.xml">
+				<Property name="RewardChoice" value="]]..rte.choice..[["/>
+				<Property name="OverrideZeroSeed" value="]]..bool(rte.zeroseed)..[["/>
+				]]..getRewardsList(rte.rewardlist)..[[
+			</Property>
+		</Property>]]
+end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Loot pirates loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.91,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -311,13 +329,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				PRECEDING_KEY_WORDS	= 'GenericTable',
-				ADD					= Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot_Easy)
+				ADD					= new_reward:AddTableEntry(new_reward.Pirate_Loot_Easy)
 									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot_Reg)
+									  new_reward:AddTableEntry(new_reward.Pirate_Loot_Reg)
 									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot_Hard)
+									  new_reward:AddTableEntry(new_reward.Pirate_Loot_Hard)
 									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.Raid_Loot)
+									  new_reward:AddTableEntry(new_reward.Raid_Loot)
 			}
 		}
 	},

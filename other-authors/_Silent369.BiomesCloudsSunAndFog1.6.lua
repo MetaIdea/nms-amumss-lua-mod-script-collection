@@ -1,8 +1,8 @@
-local modfilename = "_BiomesSunCloudsAndFog"
+local modfilename = "Biomes.SunCloudsAndFog"
 local lua_author  = "Silent"
-local lua_version = "1.5"
+local lua_version = "1.6"
 local mod_author  = "Silent369"
-local nms_version = "3.87"
+local nms_version = "3.90"
 local description = "Realtime (NMS time) Day Length (Optional), Better Detailed Clouds, Slower Cloud Animation, Sun Properties and Planet Fog Adjustments. LOD Adjustments, Optional Lens Dirt Removal."
 
 --modifies the following:
@@ -15,13 +15,14 @@ local description = "Realtime (NMS time) Day Length (Optional), Better Detailed 
 --01Hr =  3600
 --03Hr = 10800
 --06Hr = 21600
+--09Hr = 32400
 --12Hr = 43200
 --24Hr = 86400
 
-_Day_Length				= 86400 --Original "1800"
+_Day_Length				= 1800 --Original "1800"
 
 --CLOUD ANIM SPEED
-_Anim_Scale				= 20   --Original "50" wtf!
+_Anim_Scale				= 23   --Original "50" wtf!
 
 ----------------------------------------------------------------------------------------------------
 --------------------------- SHOULD LEAVE THESE VALUES ALONE - PROBABLY!	 ---------------------------
@@ -29,7 +30,7 @@ _Anim_Scale				= 20   --Original "50" wtf!
 
 --SUN BRIGHTNESS
 _LUTDFMult				= 1	   --Original "0"
-_Intensity				= 3.2  --Original "3"
+_Intensity				= 3.5  --Original "3"
 _BlendTime				= 3	   --Original "5"
 _RayDensity				= 1	   --Original "1"
 _Brightness				= 0	   --Original "0"
@@ -51,8 +52,8 @@ _StormTransitionTime	= 20   --Original "25"
 _MaxCloudCover			= 0.89 --Original "0.8"
 _MaxStormCloudCover		= 0.95 --Original "0.8"
 _CloudCoverSmoothTime	= 15   --Original "10"
-_CloudRatioSmoothTime	= 5    --Original "4"
-_StormCloudSmoothTime	= 1    --Original "0.8"
+_CloudRatioSmoothTime	= 10   --Original "4"
+_StormCloudSmoothTime	= 10   --Original "0.8"
 
 --Storm Settings
 _MinStormLengthLow		= 100  --Original "120"
@@ -63,22 +64,22 @@ _ExtremeAudioLevel		= 0.2  --Original "0.3"
 _StormAudioLevel		= 0.3  --Original "0.5"
 
 --CLOUD RATIO
-_CloudRatio				= 1.19  --Original "0.5-0.6"
-_CloudRatioPrime		= 1.29  --Original "0.5-0.6"
+_CloudRatio				= 0.666  --Original "0.5-0.6"
+_CloudRatioPrime		= 0.999  --Original "0.5-0.6"
 
 --CLOUD SETTINGS
 _LightScalar			= 4	   --Original "5"
 _AmbientScalar			= 1.72 --Original "1.721854"
 _Density				= 2	   --Original "1"
 _AmbientDensity			= 0.1  --Original "0.1"
-_BaseScale				= 1    --Original "1"
+_BaseScale				= 1.1  --Original "1"
 _SampleScalar			= 3	   --Original "5"
 _SampleThreshold		= 0.26 --Original "0.25"
 _CloudBottomFade		= 1    --Original "1"
-_DetailScale			= 12   --Original "6"
-_ErosionEdgeSize		= 0.6  --Original "0.5"
-_CloudDistortion		= 69   --Original "50"
-_CloudDistortionScale	= 1    --Original "1"
+_DetailScale			= 9    --Original "6"
+_ErosionEdgeSize		= 0.8  --Original "0.5"
+_CloudDistortion		= 89   --Original "50"
+_CloudDistortionScale	= 1.2  --Original "1"
 _MaxIterations			= 256  --Original "128"
 
 --Horizon
@@ -110,6 +111,10 @@ _Curve					= "EaseInOutSine" --Original "Linear"
 --Wind Offset
 WindOffsetX = 0.25		--Original "0.5"
 WindOffsetY = 0.25		--Original "0.5"
+
+--Stratosphere Wind Offset
+SWindOffsetX = -0.25	--Original "-0.5"
+SWindOffsetY = 0.25		--Original "0.5"
 
 --Cloud Gradient (Width,Height,Breadth)
 Cloud01X = 0.08			--Original "0.1"
@@ -218,11 +223,11 @@ _SpacePlanetFogStrength =
 _LODAdjust =
 [[
 	  <Property name="LODAdjust">
+		<Property value="1" />
 		<Property value="2" />
 		<Property value="2.5" />
-		<Property value="3.0" />
+		<Property value="3" />
 		<Property value="3.5" />
-		<Property value="4.0" />
 	  </Property>
 ]]
 
@@ -250,7 +255,7 @@ _RegLODAdjust =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]			= modfilename..lua_version..".pak",
+	["MOD_FILENAME"]			= "_"..modfilename..lua_version..".pak",
 	["LUA_AUTHOR"]				= lua_author,
 	["MOD_AUTHOR"]				= mod_author,
 	["NMS_VERSION"]				= nms_version,
@@ -291,20 +296,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"DOFFarPlaneInteraction",			   "10"}, --Original "0.2"
 								{"DOFFarFadeDistanceInteraction",	  "100"}, --Original "2"
 
-								{"Redo_SkyIntensity",					"3"}, --Original "1"
-								{"Redo_BounceIntensity",			  "0.8"}, --Original "1"
-								{"New_BounceLightPower",				"1"}, --Original "4"
-								{"New_BounceLightIntensity",		  "0.5"}, --Original "1"
-								{"New_SkyLightPower",					"1"}, --Original "2"
-								{"New_SideRimWarp",						"0"}, --Original "0.85"
-								{"New_SideRimColourMixer",			 "0.25"}, --Original "0.5"
-								{"New_TopRimWarp",						"0"}, --Original "1"
-								{"New_TopRimColourMixer",				"0"}, --Original "1"
-								{"New_TopRimPower",						"0"}, --Original "30"
-								{"New_TopRimIntensity",				  "0.1"}, --Original "0.3"
-								{"Old_SideRimWarp",						"0"}, --Original "0.5"
-								{"Old_TopRimWarp",						"0"}, --Original "1"
-								{"Old_TopRimPower",						"0"}, --Original "30"
 								{"ModelRendererLightIntensity",			"3"}, --Original "4"
 
 								{"ShadowLength",					  "800"}, --Original "400"
@@ -314,12 +305,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"HBAORadius",							"5"}, --Original "2"
 								{"HBAOIntensity",					  "1.0"}, --Original "5"
 
-								--WARP
-								{"WarpK",							"-0.55"}, --Original "-0.35"
-								{"WarpKCube",						 "0.35"}, --Original "0.2"
-								{"WarpScale",						  "0.8"}, --Original "1.08"
-								{"WarpKDispersion",					 "0.25"}, --Original "0.025"
-
 								--LENS DIRT--
 								--{"LensScale",							"0"}, --Original "0.3"
 								--{"LensDirt",							"0"}, --Original "0.3"
@@ -327,13 +312,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"LensDirtCave",						"0"}, --Original "0.4"
 
 								--LOD Adjustments
-								{"ForceCachedTerrain",				"False"}, --Original "False"
-								{"ForceUncachedTerrain",			 "True"}, --Original "False"
 								{"TerrainDroppedMipsLow",				"0"}, --Original "1"
 								{"TerrainDroppedMipsMed",				"0"}, --Original "1"
 								{"TerrainMipBiasLow",					"0"}, --Original "0.5"
 
-								--TAA Settings
+								----TAA Settings
 								{"TaaLowFreqConstant", 				  "100"}, --Original "0.5"
 								{"TaaHighFreqConstant", 			  "100"}, --Original "100"
 								{"TaaAccumDelay", 					 "1.05"}, --Original "0.9"
@@ -475,7 +458,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"x",						 "0.3"}, --Original "1"
-								{"y",						 "0.3"}, --Original "-0.75"
+								{"y",						 "-0.3"}, --Original "-0.75"
 							}
 						},
 					}
@@ -509,18 +492,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"CreatureFadeTime",					  "0.7"}, --Original "1.5"
 								{"FloraFadeTime",						  "0.3"}, --Original "0.6"
 								{"FloraFadeTimeMax",					  "1.1"}, --Original "2.25"
-                                {"AnimationScale",						   "10"}, --Original ""
-
-								--HotSpot Changes
-								{"HotspotsLOD",								"5"}, --Original "3"
-								{"RegionHotspotProbability",			  "0.8"}, --Original "0.2"
-								{"MaxHotspotOffsetDistance",			   "75"}, --Original "150"
-								{"MinHotspotFalloffDistance",			   "50"}, --Original "100"
-								{"MaxHotspotFalloffDistance",			  "250"}, --Original "500"
 
 								--Asteroid Changes
-								{"MaxAsteroidGenerationPerFrame", 			 "500"}, --Original "5000"
-								{"MaxAsteroidGenerationPerFramePulseJump",     "0"}, --Original "1000"
+								{"MaxAsteroidGenerationPerFrame", 		  "100"}, --Original "5000"
+								{"MaxAsteroidGenerationPerFramePulseJump",  "0"}, --Original "1000"
 							}
 						},
 
@@ -641,6 +616,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AnimationScale",					 _Anim_Scale}, --Original "50"
 								{"Density",								_Density}, --Original "1"
 								{"AmbientDensity",				 _AmbientDensity}, --Original "0.1"
+								{"ForwardScatteringG",					   "0.9"}, --Original ""
+								{"BackwardScatteringG",					   "0.3"}, --Original ""
 								{"BaseScale",						  _BaseScale}, --Original "1"
 								{"SampleScalar",				   _SampleScalar}, --Original "5"
 								{"SampleThreshold",				_SampleThreshold}, --Original "0.25"
@@ -653,31 +630,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"HorizonFadeStartAlpha", _HorizonFadeStartAlpha}, --Original "0.25"
 								{"HorizonFadeScalar",		  _HorizonFadeScalar}, --Original "0.25"
 								{"HorizonDistance",				_HorizonDistance}, --Original "11165"
-							}
-						},
-						----------------------------------------------------------------------------
-						--CLOUD BASE COLOUR
-						----------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"CloudBaseColour"},
-							["INTEGER_TO_FLOAT"] 	= "FORCE",
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"R",					  "0.028"}, --Original "0.026"
-								{"G",					   "0.14"}, --Original "0.151"
-								{"B",					    "0.3"}, --Original "0.275"
-								{"A",						  "1"}, --Original "1"
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"CloudTopColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"R",					  "0.992"}, --Original "0.982"
-								{"G",					  "0.996"}, --Original "0.999"
-								{"B",						  "1"}, --Original "1"
-								{"A",						  "1"}, --Original "1"
+								{"DistortionStep", 							 "3"}, --Original "2"
+								{"HDeform",								  "0.08"}, --Original "0.05"
+								{"SDeform",								   "0.3"}, --Original "0.2"
+								{"VDeform",								   "0.1"}, --Original "0.2"
 							}
 						},
 						----------------------------------------------------------------------------
@@ -733,8 +689,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"x",					WindOffsetX},
-								{"y",					WindOffsetY},
+								{"x",					SWindOffsetX},
+								{"y",					SWindOffsetY},
 							}
 						},
 						----------------------------------------------------------------------------
@@ -773,29 +729,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxFogValue",					  "0.72"},
 								{"NoAtmosphereFogStrength",		  "0.02"},
 							},
-						},
-						----------------------------------------------------------------------------
-						--DUSK / SUN SET SKY PROPERTIES
-						----------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"MinNightFade",				   "0.6"}, -- Original "0.62"
-								{"MaxNightFade",				  "0.85"}, -- Original "0.68"
-								{"MinSunsetFade",				 "0.433"}, -- Original "0.4"
-								{"MaxSunsetFade",				 "0.667"}, -- Original "0.5"
-								{"MinSunsetHorizonFade",		 "0.417"}, -- Original "0.4"
-								{"MaxSunsetHorizonFade",		 "0.667"}, -- Original "0.5"
-								{"MinSunsetAtmosphereFade",		 "0.467"}, -- Original "0.4"
-								{"MaxSunsetAtmosphereFade",		 "0.733"}, -- Original "0.5"
-								{"MinSunsetColourFade",			   "0.5"}, -- Original "0.65"
-								{"MaxSunsetColourFade",			 "0.667"}, -- Original "0.7"
-								{"AmbientFactor",				   "0.4"}, -- Original "0.4"
-								{"HorizonMultiplier",				 "1"}, -- Original "1"
-								{"DuskHorizonMultiplier",		   "0.9"}, -- Original "1.2"
-								{"NightHorizonMultiplier",		   "0.1"}, -- Original "1.554867"
-							}
 						},
 						----------------------------------------------------------------------------
 						--SUN PROPERTIES
@@ -895,8 +828,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"StormAudioLevel",				   _StormAudioLevel}, --Original "0.5"
 
 								--GENERAL SETTINGS
-								{"AmbientFactor",							  "0.5"}, --Original "0.4"
-								{"MaxFogSaturation",						  "0.4"}, --Original "0.3"
+								{"AmbientFactor",							  "0.3"}, --Original "0.4"
+								{"MaxFogSaturation",						  "0.2"}, --Original "0.3"
 
 								--STAR CHANCE--
 								{"BinaryStarChance",			  _BinaryStarChance}, --Original "0.2"
@@ -904,7 +837,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 								--WEATHER
 								{"WeatherBloomGain",			  _WeatherBloomGain}, --Original "7.1"
-								{"RainWetnessFadeInTime",						"7"}, --Original "15"
+
+								--DUSK SETTINGS (FlorianB1)
+								{"MinNightFade",							  "0.6"}, -- Original "0.62"
+								{"MaxNightFade",							 "0.85"}, -- Original "0.68"
+								{"MinSunsetFade",					   "0.43333333"}, -- Original "0.4"
+								{"MaxSunsetFade",					   "0.66666667"}, -- Original "0.5"
+								{"MinSunsetHorizonFade",			   "0.41666667"}, -- Original "0.4"
+								{"MaxSunsetHorizonFade",			   "0.66666667"}, -- Original "0.5"
+								{"MinSunsetAtmosphereFade",			   "0.46666667"}, -- Original "0.4"
+								{"MaxSunsetAtmosphereFade",			   "0.73333333"}, -- Original "0.5"
+								{"MinSunsetColourFade",						  "0.5"}, -- Original "0.65"
+								{"MaxSunsetColourFade",				   "0.66666667"}, -- Original "0.7"
+								{"AmbientFactor",							  "0.4"}, -- Original "0.4"
+								{"SunClampAngle",							   "90"}, -- Original "55"
+								{"HorizonMultiplier",							"1"}, -- Original "1"
+								{"DuskHorizonMultiplier",					  "0.9"}, -- Original "1.2"
+								{"NightHorizonMultiplier",					  "0.1"}, -- Original "1.554867"
 							}
 						},
 						{
@@ -1041,7 +990,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Offset3",						"5"}, --Original "0"
 								{"RateOfChange",			 "0.01"}, --Original "0.1"
 								{"SecondaryRateOfChange",	"0.025"}, --Original "0.15"
-								{"Cloudiness",				"CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
+								{"Cloudiness",				"ClearWithCloudySpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
 							}
 						},
 						{
@@ -1059,7 +1008,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Offset3",					   "15"}, --Original "5"
 								{"RateOfChange",			 "0.01"}, --Original "0.1"
 								{"SecondaryRateOfChange",	"0.045"}, --Original "0.15"
-								{"Cloudiness",				"CloudyWithClearSpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
+								{"Cloudiness",				"ClearWithCloudySpells"}, --Original "CloudyWithClearSpells" --Alternate "ClearWithCloudySpells"
 							}
 						},
 						----------------------------------------------------------------------------

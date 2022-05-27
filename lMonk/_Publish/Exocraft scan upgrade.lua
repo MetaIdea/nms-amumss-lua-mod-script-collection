@@ -6,9 +6,9 @@ local desc = [[
   Re-arange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]------------------------------------------------------------------------
-Mod_Version = 1.6
+mod_version = 1.61
 
-local Scan_Table = {
+local scan_table = {
 	{
 		name  = 'VEHICLE_BUILDING_DEPOT',
 		scan  = {'DEPOT', 'TERMINAL'},
@@ -96,7 +96,7 @@ local Scan_Table = {
 		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS'
 	}
 }
-function Scan_Table:GetEntry(ste)
+function scan_table:GetEntry(ste)
 	local function getScanList(lst)
 		local exml = ''
 		for _,trg in pairs(lst) do
@@ -124,8 +124,8 @@ end
 
 local function BuildVehicleScanTable()
 	local exml = ''
-	for _,v in ipairs(Scan_Table) do
-		exml = exml..Scan_Table:GetEntry(v)
+	for _,v in ipairs(scan_table) do
+		exml = exml..scan_table:GetEntry(v)
 	end
 	return [[<?xml version="1.0" encoding="utf-8"?>
 		<Data template="GcVehicleScanTable"><Property name="VehicleScanTable">]]
@@ -133,7 +133,7 @@ local function BuildVehicleScanTable()
 		[[</Property></Data>]]
 end
 
-local Scan_Events = {
+local scan_events = {
 	{
 		event = 'TERMINAL',
 		class = 'Terminal',
@@ -228,61 +228,14 @@ local function NewScanEvent(scn)
 			<Property name="NeverAllowAbandoned" value="False"/>
 			<Property name="RequireUndiscovered" value="False"/>
 			<Property name="NeedsWaterPlanet" value="False"/>
+			<Property name="NeedsPrimePlanet" value="False"/>
 			<Property name="NeedsExtremeSentinelPlanet" value="False"/>
 			<Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
 			<Property name="NeedsExtremeWeatherPlanet" value="False"/>
 			<Property name="NeedsExtremeHazardPlanet" value="False"/>
 			<Property name="AnyBiomeNotWeirdOrDead" value="False"/>
 			<Property name="AnyRGBBiome" value="False"/>
-			<Property name="NeedsBiome" value="False"/>
-			<Property name="NeedsBiomeType" value="GcBiomeType.xml">
-				<Property name="Biome" value="Lush"/>
-			</Property>
-			<Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-				<Property name="BiomeSubType" value="None"/>
-			</Property>
-			<Property name="NeedsEmptySystem" value="False"/>
-			<Property name="NeedsAbandonedSystem" value="False"/>
-			<Property name="NeedsResourceHint" value=""/>
-			<Property name="SuitableForCreatureDiscovery" value="False"/>
-			<Property name="SuitableForCreatureTaming" value="False"/>
-			<Property name="SamePlanetAsEvent" value=""/>
-		</Property>
-		<Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
-			<Property name="UseStarType" value="False"/>
-			<Property name="UseWealth" value="False"/>
-			<Property name="UseTrading" value="False"/>
-			<Property name="UseRace" value="GcAlienRace.xml">
-				<Property name="AlienRace" value="None"/>
-			</Property>
-			<Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
-				<Property name="GalaxyStarAnomaly" value="None"/>
-			</Property>
-			<Property name="UseConflict" value="GcPlayerConflictData.xml">
-				<Property name="ConflictLevel" value="Default"/>
-			</Property>
-			<Property name="StarType" value="GcGalaxyStarTypes.xml">
-				<Property name="GalaxyStarType" value="Yellow"/>
-			</Property>
-			<Property name="TradingData" value="GcPlanetTradingData.xml">
-				<Property name="WealthClass" value="GcWealthClass.xml">
-					<Property name="WealthClass" value="Average"/>
-				</Property>
-				<Property name="TradingClass" value="GcTradingClass.xml">
-					<Property name="TradingClass" value="Mining"/>
-				</Property>
-			</Property>
-			<Property name="AllowUnsafeMatches" value="False"/>
-			<Property name="NeverAllowEmpty" value="False"/>
-			<Property name="NeverAllowAbandoned" value="False"/>
-			<Property name="RequireUndiscovered" value="False"/>
-			<Property name="NeedsWaterPlanet" value="False"/>
-			<Property name="NeedsExtremeSentinelPlanet" value="False"/>
-			<Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
-			<Property name="NeedsExtremeWeatherPlanet" value="False"/>
-			<Property name="NeedsExtremeHazardPlanet" value="False"/>
-			<Property name="AnyBiomeNotWeirdOrDead" value="False"/>
-			<Property name="AnyRGBBiome" value="False"/>
+			<Property name="AnyInfestedBiome" value="False"/>
 			<Property name="NeedsBiome" value="False"/>
 			<Property name="NeedsBiomeType" value="GcBiomeType.xml">
 				<Property name="Biome" value="Lush"/>
@@ -345,7 +298,7 @@ end
 
 local function InsertNewScanEvents()
 	local exml = ''
-	for _,v in ipairs(Scan_Events) do exml = exml..NewScanEvent(v) end
+	for _,v in ipairs(scan_events) do exml = exml..NewScanEvent(v) end
 	return exml
 end
 
@@ -353,7 +306,7 @@ end
 -- the new ones in the targets list
 local function UpdateScanEventIcons()
 	local T = {}
-	for _,st in ipairs(Scan_Table) do
+	for _,st in ipairs(scan_table) do
 		for _,scn in ipairs(st.scan) do
 			table.insert(T, {
 				SPECIAL_KEY_WORDS	= {'Name', scn},
@@ -368,9 +321,9 @@ local function UpdateScanEventIcons()
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..Mod_Version..'.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.91,
 	MOD_DESCRIPTION		= desc,
 	ADD_FILES = {
 		{

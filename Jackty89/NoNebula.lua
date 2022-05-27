@@ -1,4 +1,3 @@
-GameVersion = "3_82"
 ModeName = "NoNebula"
 Author = "Jackty89"
 
@@ -6,10 +5,9 @@ Value = "0"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] = ModeName .. GameVersion .. ".pak",
+    ["MOD_FILENAME"] = ModeName .. ".pak",
     ["MOD_DESCRIPTION"] = ModeName,
     ["MOD_AUTHOR"] = Author,
-    ["NMS_VERSION"] = GameVersion,
     ["MODIFICATIONS"] =
     {
         {

@@ -14,14 +14,14 @@ AddFlame = [[
 AddDot = [[
 	<Property value="GcStatsBonus.xml">
 		<Property name="Stat" value="GcStatsTypes.xml">
-  			<Property name="StatsType" value="Weapon_FireDOT" />
+			<Property name="StatsType" value="Weapon_FireDOT" />
 		</Property>
 		<Property name="Bonus" value="100" />
 		<Property name="Level" value="1" />
 	</Property>
 	<Property value="GcStatsBonus.xml">
 		<Property name="Stat" value="GcStatsTypes.xml">
-  			<Property name="StatsType" value="Weapon_FireDOT_Duration" />
+			<Property name="StatsType" value="Weapon_FireDOT_Duration" />
 		</Property>
 		<Property name="Bonus" value="10" />
 		<Property name="Level" value="1" />
@@ -37,7 +37,7 @@ AddDot = [[
 AddBounce = [[
 	<Property value="GcStatsBonus.xml">
 		<Property name="Stat" value="GcStatsTypes.xml">
-  			<Property name="StatsType" value="Weapon_Projectile_Bounce" />
+			<Property name="StatsType" value="Weapon_Projectile_Bounce" />
 		</Property>
 		<Property name="Bonus" value="2" />
 	<Property name="Level" value="3" />
@@ -47,7 +47,7 @@ AddProjectile =
 [[
 	<Property value="GcStatsBonus.xml">
 		<Property name="Stat" value="GcStatsTypes.xml">
-  			<Property name="StatsType" value="Weapon_Projectile" />
+			<Property name="StatsType" value="Weapon_Projectile" />
 		</Property>
 		<Property name="Bonus" value="50" />
 		<Property name="Level" value="1" />
@@ -56,20 +56,20 @@ AddProjectile =
 
 AddNade = [[
 	<Property value="GcStatsBonus.xml">
-          <Property name="Stat" value="GcStatsTypes.xml">
-            <Property name="StatsType" value="Weapon_Grenade_Damage" />
-          </Property>
-          <Property name="Bonus" value="500" />
-          <Property name="Level" value="1" />
-        </Property>
+		<Property name="Stat" value="GcStatsTypes.xml">
+			<Property name="StatsType" value="Weapon_Grenade_Damage" />
+		</Property>
+		<Property name="Bonus" value="500" />
+		<Property name="Level" value="1" />
+		</Property>
 
-        <Property value="GcStatsBonus.xml">
-          <Property name="Stat" value="GcStatsTypes.xml">
-            <Property name="StatsType" value="Weapon_Grenade_Radius" />
-          </Property>
-          <Property name="Bonus" value="20" />
-          <Property name="Level" value="1" />
-        </Property>
+		<Property value="GcStatsBonus.xml">
+		<Property name="Stat" value="GcStatsTypes.xml">
+			<Property name="StatsType" value="Weapon_Grenade_Radius" />
+		</Property>
+		<Property name="Bonus" value="20" />
+		<Property name="Level" value="1" />
+		</Property>
 ]]
 
 DefaultProjectile =
@@ -101,9 +101,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "UI_WEAP_TECH_TREE", "Title", "UI_TECH_TREE_SUB","Unlockable", "LASER"},
 							["LINE_OFFSET"] = "+1",
-                            ["ADD"] = AddFlame
+							["ADD"] = AddFlame
 						}
-                    }
+					}
 				},
 				-- { --Optional, if you want to change the look of your projectile
 				-- 	["MBIN_FILE_SOURCE"] 	= PlayerWeaponPropertiesTablePath,
@@ -128,7 +128,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"WikiEnabled", "True"},
 								{"ChargeMultiplier", "2"},
-
 								{"FragmentCost", "2500"},
 							}
 						},
@@ -191,9 +190,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
 							["ADD"] = AddDot..AddBounce..AddProjectile
 						}
-                    }
+					}
 				}
-            }
-        }
-    }
+			}
+		}
+	}
 }

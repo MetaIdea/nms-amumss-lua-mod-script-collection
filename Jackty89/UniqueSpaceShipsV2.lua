@@ -38,6 +38,7 @@ Shipchanges =
 			{"Fighter", MedVale, MedHighValue, HighValue, HighExtrValue},
 			{"Shuttle", NormalValue, LowValue, LowMedValue, MedVale},
 			{"Royal", LowMedValue, MedVale, MedHighValue, HighValue},
+			{"Sail", MedVale, MedHighValue, HighValue, HighExtrValue},
 			{"Alien", "", "", "", HighValue}
 		}
 	},
@@ -51,6 +52,7 @@ Shipchanges =
 			{"Fighter", MedHighValue,HighValue,HighExtrValue,ExtremeValue},
 			{"Shuttle", NormalValue, LowValue, LowMedValue, MedVale},
 			{"Royal", LowMedValue, MedVale, MedHighValue, HighValue},
+			{"Sail", MedVale, MedHighValue, HighValue, HighExtrValue},
 			{"Alien", "", "", "", HighValue}
 		}
 	},
@@ -64,6 +66,7 @@ Shipchanges =
 			{"Fighter", LowValue, LowMedValue, MedVale, MedHighValue},
 			{"Shuttle", NormalValue, LowValue, LowMedValue, MedVale},
 			{"Royal", LowMedValue, MedVale, MedHighValue, HighValue},
+			{"Sail", MedVale, MedHighValue, HighValue, HighExtrValue},
 			{"Alien", "", "", "", HighValue}
 		}
 	},
@@ -75,6 +78,16 @@ Shipchanges =
 			{"Freighter", FreighterC, FreighterB, FreighterA, FreighterS}
 		}
 	}
+}
+
+AlienShipInventory = "48"
+AlienShipTech = "35"
+AlienShipCargo = "32"
+
+AlienEdits = {
+	"AlienSmall",
+	"AlienMedium",
+	"AlienLarge"
 }
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -144,4 +157,20 @@ for i = 1, #Shipchanges do
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] = ChangesToInventoryTable_temp
 		end
 	end
+end
+
+for i = 1, #AlienEdits do
+	ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+	{
+		["SPECIAL_KEY_WORDS"] = {AlienEdits[i], "GcInventoryLayoutGenerationDataEntry.xml"},
+		["VALUE_CHANGE_TABLE"] =
+		{
+			{"MinSlots", AlienShipInventory},
+			{"MaxSlots", AlienShipInventory},
+			{"MinTechSlots", AlienShipTech},
+			{"MaxTechSlots", AlienShipTech},
+			{"MinCargoSlots", AlienShipCargo},
+			{"MaxCargoSlots", AlienShipCargo}
+		}
+	}
 end

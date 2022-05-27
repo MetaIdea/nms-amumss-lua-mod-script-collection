@@ -5,7 +5,11 @@ local desc = [[
   * (the lists are non-random because a bug causes them to misbehave)
 ]]------------------------------------------------------------------------
 
-Mod_Version = 1.23
+Mod_Version = 1.24
+
+local function bool(b)
+	if b and b == true then return 'True' end return 'False'
+end
 
 local F_ = {}
 F_.TableItemSingle = function(item, data, reward)
@@ -71,7 +75,7 @@ F_.Technology = function(item)
 	local exml = [[
 		<Property name="TechId" value="]]..item.id..[["/>
 		<Property name="AutoPin" value="False"/>
-		<Property name="Silent" value="False"/>
+		<Property name="Silent" value="]]..bool(item.s)..[["/>
 	]]
 	return F_.TableItemSingle(item, exml, 'GcRewardSpecificTech.xml')
 end
@@ -112,6 +116,20 @@ F_.Jetboost = function(item)
 	]]
 	return F_.TableItemSingle(item, exml, 'GcRewardJetpackBoost.xml')
 end
+F_.Stamina = function(item)
+	local exml = [[
+		<Property name="Duration" value="]]..(10 * item.t)..[["/>
+	]]
+	return F_.TableItemSingle(item, exml, 'GcRewardFreeStamina.xml')
+end
+F_.Hazard = function(item)
+	local exml = [[
+		<Property name="Amount" value="-]]..item.n..[["/>
+		<Property name="SetNotAdd" value="False"/>
+		<Property name="Silent" value="True"/>
+	]]
+	return F_.TableItemSingle(item, exml, 'GcRewardRefreshHazProt.xml')
+end
 F_.Shield = function(item)
 	local exml = [[
 		<Property name="ShowOSDOnSuccess" value="True"/>
@@ -133,7 +151,7 @@ F_.ItemList = function(item)
 				<Property name="Amount" value="]]..(item[i].n or 1)..[["/>
 				<Property name="ProcTechGroup" value=""/>
 				<Property name="ProcTechQuality" value="3"/>
-				<Property name="IllegalProcTech" value="]]..(item[i].l or 'False')..[["/>
+				<Property name="IllegalProcTech" value="]]..bool(item[i].l)..[["/>
 				<Property name="ProcProdType" value="GcProceduralProductCategory.xml">
 					<Property name="ProceduralProductCategory" value="]]..(item[i].pid or 'Loot')..[["/>
 				</Property>
@@ -194,10 +212,10 @@ local E_ = {
 	-- Money
 	UT='Units',
 	NN='Nanites',
-	HG='Specials',
+	HG='Specials', -- quicksilver
 }
 
-local Rewards = {
+local new_reward = {
 	FreightSave_Explorer = {
 		id = 'FREIGHTERSAVE_E',
 		choice = 'GiveAll',
@@ -248,33 +266,33 @@ local Rewards = {
 			},
 			{id=E_.NN, n=190, x=270, c=100, f=F_.Money},
 		}
-	},
-	BuildRewardTableEntry = function(rte)
-		local function getRewardsList(list)
-			local exml = {}
-			table.insert(exml, '<Property name="List">')
-			for _,rwd in pairs(list) do
-				table.insert(exml, rwd.f(rwd))
-			end
-			table.insert(exml, '</Property>')
-			return table.concat(exml)
-		end
-		return [[
-			<Property value="GcGenericRewardTableEntry.xml">
-				<Property name="Id" value="]]..rte.id..[["/>
-				<Property name="List" value="GcRewardTableItemList.xml">
-					<Property name="RewardChoice" value="]]..rte.choice..[["/>
-					<Property name="OverrideZeroSeed" value="]]..(rte.zeroseed or 'False')..[["/>
-					]]..getRewardsList(rte.rewardlist)..[[
-				</Property>
-			</Property>]]
-	end
+	}
 }
+function new_reward:AddTableEntry(rte)
+	local function getRewardsList(list)
+		local exml = {}
+		table.insert(exml, '<Property name="List">')
+		for _,rwd in pairs(list) do
+			table.insert(exml, rwd.f(rwd))
+		end
+		table.insert(exml, '</Property>')
+		return table.concat(exml)
+	end
+	return [[
+		<Property value="GcGenericRewardTableEntry.xml">
+			<Property name="Id" value="]]..rte.id..[["/>
+			<Property name="List" value="GcRewardTableItemList.xml">
+				<Property name="RewardChoice" value="]]..rte.choice..[["/>
+				<Property name="OverrideZeroSeed" value="]]..bool(rte.zeroseed)..[["/>
+				]]..getRewardsList(rte.rewardlist)..[[
+			</Property>
+		</Property>]]
+end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Freighter Defense Rewards.'..Mod_Version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.91,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -283,11 +301,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS	= 'GenericTable',
-				ADD					= Rewards.BuildRewardTableEntry(Rewards.FreightSave_Explorer)
+				ADD					= new_reward:AddTableEntry(new_reward.FreightSave_Explorer)
 									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.FreightSave_Trader)
+									  new_reward:AddTableEntry(new_reward.FreightSave_Trader)
 									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.FreightSave_Warrior)
+									  new_reward:AddTableEntry(new_reward.FreightSave_Warrior)
 			}
 		}
 	},
