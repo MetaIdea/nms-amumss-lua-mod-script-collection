@@ -1,7 +1,7 @@
 Author = "alchemist"
 ModName = "GPS"
 BaseDescription = [[Better scanning]]
-GameVersion = "3-87"
+GameVersion = "3-90"
 ModVersion = "1-3-0"
 
 --[[
@@ -341,6 +341,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -397,6 +400,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -442,6 +447,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -487,6 +494,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -532,6 +541,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -577,6 +588,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -622,6 +635,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -677,6 +692,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -733,6 +751,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -778,6 +798,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -823,6 +845,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -868,6 +892,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -923,6 +949,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -1079,6 +1108,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -1205,6 +1237,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -1261,6 +1296,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1306,6 +1343,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1351,6 +1390,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1396,6 +1437,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1441,6 +1484,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1486,6 +1531,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1541,6 +1588,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -1597,6 +1647,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1642,6 +1694,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1687,6 +1741,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1732,6 +1788,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1777,6 +1835,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1822,6 +1882,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1877,6 +1939,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -1933,6 +1998,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -1978,6 +2045,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2023,6 +2092,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2068,6 +2139,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2113,6 +2186,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2158,6 +2233,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2213,6 +2290,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -2269,6 +2349,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2314,6 +2396,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2359,6 +2443,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2404,6 +2490,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2449,6 +2537,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2494,6 +2584,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2549,6 +2641,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -2605,6 +2700,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2650,6 +2747,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2705,6 +2804,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -2761,6 +2863,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2806,6 +2910,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2851,6 +2957,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2896,6 +3004,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2941,6 +3051,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -2986,6 +3098,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3041,6 +3155,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -3097,6 +3214,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3142,6 +3261,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3187,6 +3308,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3232,6 +3355,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3277,6 +3402,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3322,6 +3449,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3377,6 +3506,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -3433,6 +3565,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3478,6 +3612,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3533,6 +3669,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -3589,6 +3728,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3634,6 +3775,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3679,6 +3822,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3724,6 +3869,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3769,6 +3916,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3814,6 +3963,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3869,6 +4020,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -3925,6 +4079,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -3970,6 +4126,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4015,6 +4173,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4060,6 +4220,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4115,6 +4277,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -4171,6 +4336,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4216,6 +4383,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4261,6 +4430,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4306,6 +4477,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4351,6 +4524,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4396,6 +4571,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4451,6 +4628,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -4507,6 +4687,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4552,6 +4734,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4607,6 +4791,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -4711,6 +4898,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -4767,6 +4957,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4812,6 +5004,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4857,6 +5051,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4902,6 +5098,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -4991,6 +5189,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -5047,6 +5248,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5092,6 +5295,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5137,6 +5342,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5182,6 +5389,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5227,6 +5436,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5272,6 +5483,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5327,6 +5540,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -5383,6 +5599,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5428,6 +5646,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5473,6 +5693,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5518,6 +5740,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5573,6 +5797,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -5625,6 +5852,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5676,6 +5905,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5727,6 +5958,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5777,6 +6010,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5828,6 +6063,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5878,6 +6115,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5929,6 +6168,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5939,6 +6180,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -5990,6 +6233,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -6034,6 +6279,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCAN_FLYBY_PR"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -6082,6 +6329,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCAN_FLYBY_PR"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -6137,6 +6386,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -6309,6 +6561,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -6319,6 +6574,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6361,6 +6617,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6403,6 +6660,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6423,6 +6681,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6443,6 +6702,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6463,6 +6723,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6483,6 +6744,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6512,6 +6774,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6541,6 +6804,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6570,6 +6834,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6599,6 +6864,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6628,6 +6894,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -6886,6 +7153,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -6942,6 +7212,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -6987,6 +7259,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7032,6 +7306,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7077,6 +7353,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7122,6 +7400,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7167,6 +7447,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7222,6 +7504,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -7278,6 +7563,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7323,6 +7610,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7368,6 +7657,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7413,6 +7704,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7468,6 +7761,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -7624,6 +7920,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -7750,6 +8049,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -7806,6 +8108,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7851,6 +8155,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7896,6 +8202,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7941,6 +8249,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -7986,6 +8296,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8031,6 +8343,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8086,6 +8400,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -8142,6 +8459,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8187,6 +8506,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8232,6 +8553,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8277,6 +8600,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8322,6 +8647,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8367,6 +8694,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8422,6 +8751,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -8478,6 +8810,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8523,6 +8857,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8568,6 +8904,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8613,6 +8951,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8658,6 +8998,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8703,6 +9045,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8758,6 +9102,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -8814,6 +9161,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8859,6 +9208,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8904,6 +9255,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8949,6 +9302,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -8994,6 +9349,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9039,6 +9396,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9094,6 +9453,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -9150,6 +9512,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9195,6 +9559,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9250,6 +9616,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -9306,6 +9675,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9351,6 +9722,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9396,6 +9769,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9441,6 +9816,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9486,6 +9863,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9531,6 +9910,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9586,6 +9967,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -9642,6 +10026,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9687,6 +10073,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9732,6 +10120,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9777,6 +10167,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9822,6 +10214,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9867,6 +10261,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -9922,6 +10318,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -9978,6 +10377,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10023,6 +10424,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10078,6 +10481,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -10134,6 +10540,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10179,6 +10587,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10224,6 +10634,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10269,6 +10681,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10314,6 +10728,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10359,6 +10775,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10414,6 +10832,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -10470,6 +10891,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10515,6 +10938,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10560,6 +10985,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10605,6 +11032,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10660,6 +11089,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -10716,6 +11148,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10761,6 +11195,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10806,6 +11242,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10851,6 +11289,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10896,6 +11336,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10941,6 +11383,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -10996,6 +11440,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -11052,6 +11499,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11097,6 +11546,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11152,6 +11603,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -11262,6 +11716,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -11321,6 +11778,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11369,6 +11828,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11417,6 +11878,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11465,6 +11928,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11520,6 +11985,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -11576,6 +12044,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11621,6 +12091,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11666,6 +12138,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11711,6 +12185,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11756,6 +12232,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11801,6 +12279,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11856,6 +12336,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -11912,6 +12395,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -11957,6 +12442,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12002,6 +12489,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12047,6 +12536,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12102,6 +12593,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -12228,6 +12722,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -12287,6 +12784,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12335,6 +12834,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12417,6 +12918,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12465,6 +12968,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12547,6 +13052,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12595,6 +13102,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12684,6 +13193,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -12743,6 +13255,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12791,6 +13305,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12873,6 +13389,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -12921,6 +13439,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13003,6 +13523,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13051,6 +13573,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13140,6 +13664,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -13199,6 +13726,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13247,6 +13776,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13329,6 +13860,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13377,6 +13910,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13459,6 +13994,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13507,6 +14044,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13596,6 +14135,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -13655,6 +14197,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13703,6 +14247,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13785,6 +14331,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13833,6 +14381,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13915,6 +14465,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -13963,6 +14515,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14052,6 +14606,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -14111,6 +14668,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14159,6 +14718,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14241,6 +14802,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14289,6 +14852,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14371,6 +14936,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14419,6 +14986,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14508,6 +15077,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -14567,6 +15139,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14615,6 +15189,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14704,6 +15280,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -14756,6 +15335,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14797,6 +15378,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14838,6 +15421,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14853,6 +15438,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                         <Property name="Level" value="0"/>
+                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                         <Property name="CompareStat" value=""/>
                         <Property name="DisplayMilestoneNumber" value="1"/>
                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -14908,6 +15495,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -14923,6 +15512,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                         <Property name="Level" value="0"/>
+                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                         <Property name="CompareStat" value=""/>
                         <Property name="DisplayMilestoneNumber" value="1"/>
                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -14978,6 +15569,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
                     <Property name="DisplayMilestoneNumber" value="1"/>
                     <Property name="Test" value="TkEqualityEnum.xml">
@@ -15033,6 +15626,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
@@ -15093,6 +15689,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                         <Property name="Level" value="0"/>
+                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                         <Property name="CompareStat" value=""/>
                         <Property name="DisplayMilestoneNumber" value="1"/>
                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -15156,6 +15754,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                         <Property name="Level" value="0"/>
+                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                         <Property name="CompareStat" value=""/>
                         <Property name="DisplayMilestoneNumber" value="1"/>
                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -15253,6 +15853,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                         <Property name="Level" value="0"/>
+                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                         <Property name="CompareStat" value=""/>
                         <Property name="DisplayMilestoneNumber" value="1"/>
                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -15333,6 +15935,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                         <Property name="Level" value="0"/>
+                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                         <Property name="CompareStat" value=""/>
                         <Property name="DisplayMilestoneNumber" value="1"/>
                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -15478,6 +16082,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -15488,6 +16095,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15530,6 +16138,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15572,6 +16181,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15592,6 +16202,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15612,6 +16223,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15632,6 +16244,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15652,6 +16265,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15681,6 +16295,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15710,6 +16325,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15739,6 +16355,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15768,6 +16385,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15797,6 +16415,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15815,6 +16434,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15833,6 +16453,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15851,6 +16472,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15869,6 +16491,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15887,6 +16510,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15905,6 +16529,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15923,6 +16548,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15941,6 +16567,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15959,6 +16586,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15977,6 +16605,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -15995,6 +16624,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -16013,6 +16643,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -16031,6 +16662,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -16049,6 +16681,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -16067,6 +16700,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -16085,6 +16719,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -17059,6 +17694,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                                 <Property name="Time" value="0.5"/>
                                                 <Property name="DebugText" value=""/>
                                                 <Property name="SuppressMessages" value="False"/>
+                                                <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                               </Property>
                                             </Property>
                                             <Property value="GcGenericMissionStage.xml">
@@ -17097,6 +17733,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                                 <Property name="Time" value="0.5"/>
                                                 <Property name="DebugText" value=""/>
                                                 <Property name="SuppressMessages" value="False"/>
+                                                <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                               </Property>
                                             </Property>
                                             <Property value="GcGenericMissionStage.xml">
@@ -17119,6 +17756,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="1"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                     </Property>
@@ -17328,6 +17966,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Time" value="1"/>
                   <Property name="DebugText" value=""/>
                   <Property name="SuppressMessages" value="False"/>
+                  <Property name="MultiplyTimeBySeasonValue" value="False"/>
                 </Property>
               </Property>
               <Property value="GcGenericMissionStage.xml">
@@ -17403,6 +18042,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="1"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -17418,6 +18059,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="1"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -17426,6 +18068,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_DPOD_N"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -17492,6 +18136,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="1"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -17507,6 +18153,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="11"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -17515,6 +18162,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_DPOT_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -17581,6 +18230,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="1"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -17596,6 +18247,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -17604,6 +18256,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_DIST_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -17670,6 +18324,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="1"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -17685,6 +18341,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -17693,6 +18350,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_CRFR_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -17759,6 +18418,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="1"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -17774,6 +18435,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -17782,6 +18444,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_FACT_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -17848,6 +18512,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="1"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -17863,6 +18529,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -17871,6 +18538,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_HARV_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -17937,6 +18606,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="2"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -17952,6 +18623,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="1"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -17960,6 +18632,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_SHLT_N"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18026,6 +18700,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="2"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18041,6 +18717,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="11"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18049,6 +18726,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_TERM_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18115,6 +18794,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="2"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18130,6 +18811,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18138,6 +18820,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_SHOP_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18204,6 +18888,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="2"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18219,6 +18905,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18227,6 +18914,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_BASE_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18293,6 +18982,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="2"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18308,6 +18999,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18316,6 +19008,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_OUTP_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18382,6 +19076,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="2"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18397,6 +19093,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18405,6 +19102,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_LBRY_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18471,6 +19170,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="2"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18486,6 +19187,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18494,6 +19196,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_SETL_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18560,6 +19264,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="3"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18575,6 +19281,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="1"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18583,6 +19290,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_PLAQ_N"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18649,6 +19358,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="3"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18664,6 +19375,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="11"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18672,6 +19384,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_MONO_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18738,6 +19452,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="3"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18753,6 +19469,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18761,6 +19478,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_PORT_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18827,6 +19546,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="3"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18842,6 +19563,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18850,6 +19572,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_ABAN_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -18916,6 +19640,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="3"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -18931,6 +19657,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -18939,6 +19666,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_RUIN_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19005,6 +19734,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="3"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19020,6 +19751,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19028,6 +19760,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_TREA_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19094,6 +19828,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="3"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19109,6 +19845,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19117,6 +19854,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_GRV_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19183,6 +19922,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="4"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19198,6 +19939,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="1"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19206,6 +19948,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_DRHV_N"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19272,6 +20016,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="4"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19287,6 +20033,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="11"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19295,6 +20042,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_RDIO_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19361,6 +20110,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="4"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19376,6 +20127,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19384,6 +20136,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_OBSV_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19450,6 +20204,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="4"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19465,6 +20221,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19473,6 +20230,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_DNPC_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19539,6 +20298,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="4"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19554,6 +20315,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19562,6 +20324,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_MTOW_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19628,6 +20392,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="5"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19643,6 +20409,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="1"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19651,6 +20418,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_UWAB_N"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19717,6 +20486,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="5"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19732,6 +20503,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="11"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19740,6 +20512,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_UWDS_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19806,6 +20580,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="5"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19821,6 +20597,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19829,6 +20606,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_UWCF_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19895,6 +20674,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="5"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -19910,6 +20691,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -19918,6 +20700,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                         <Property name="Reward" value="R_ALSCAN_UWTR_S"/>
                         <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
                         <Property name="DebugText" value=""/>
                       </Property>
                     </Property>
@@ -19930,6 +20714,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Time" value="5"/>
                   <Property name="DebugText" value=""/>
                   <Property name="SuppressMessages" value="False"/>
+                  <Property name="MultiplyTimeBySeasonValue" value="False"/>
                 </Property>
               </Property>
               <Property value="GcGenericMissionStage.xml">
@@ -20122,6 +20907,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="PersistancyBufferOverride" value="None"/>
             <Property name="CustomFreighterTextIndex" value="-1"/>
             <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -20132,6 +20920,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -20149,6 +20938,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -20188,6 +20978,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -20208,6 +20999,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
@@ -20493,6 +21285,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                               <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                               <Property name="Reward" value="R_ALSCFP_FLYBY_E"/>
                               <Property name="CanOverride" value="False"/>
+                              <Property name="Silent" value="False"/>
+                              <Property name="RewardInventoryOverride" value="None"/>
                               <Property name="DebugText" value=""/>
                             </Property>
                           </Property>
@@ -20711,6 +21505,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="1"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -20726,6 +21522,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="20"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -20734,6 +21531,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_DPOD_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -20800,6 +21599,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="1"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -20815,6 +21616,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="20"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -20823,6 +21625,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_DPOT_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -20889,6 +21693,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="1"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -20904,6 +21710,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="20"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -20912,6 +21719,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_DIST_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -20978,6 +21787,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="1"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -20993,6 +21804,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="20"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21001,6 +21813,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_CRFR_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21067,6 +21881,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="1"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21082,6 +21898,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="20"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21090,6 +21907,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_FACT_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21156,6 +21975,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="1"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21171,6 +21992,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="20"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21179,6 +22001,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_HARV_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21245,6 +22069,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="2"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21260,6 +22086,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21268,6 +22095,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_SHLT_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21334,6 +22163,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="2"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21349,6 +22180,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21357,6 +22189,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_TERM_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21423,6 +22257,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="2"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21438,6 +22274,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21446,6 +22283,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_SHOP_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21512,6 +22351,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="2"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21527,6 +22368,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21535,6 +22377,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_BASE_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21601,6 +22445,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="2"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21616,6 +22462,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21624,6 +22471,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_OUTP_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21690,6 +22539,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="2"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21705,6 +22556,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21713,6 +22565,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_LBRY_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21779,6 +22633,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="2"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21794,6 +22650,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21802,6 +22659,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_SETL_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21868,6 +22727,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="3"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21883,6 +22744,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21891,6 +22753,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_PLAQ_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -21957,6 +22821,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="3"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -21972,6 +22838,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -21980,6 +22847,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_MONO_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22046,6 +22915,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="3"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22061,6 +22932,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22069,6 +22941,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_PORT_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22135,6 +23009,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="3"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22150,6 +23026,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22158,6 +23035,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_ABAN_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22224,6 +23103,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="3"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22239,6 +23120,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22247,6 +23129,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_RUIN_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22313,6 +23197,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="3"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22328,6 +23214,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22336,6 +23223,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_TREA_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22402,6 +23291,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="3"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22417,6 +23308,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="17"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22425,6 +23317,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_GRV_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22491,6 +23385,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="4"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22506,6 +23402,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="24"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22514,6 +23411,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_DRHV_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22580,6 +23479,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="4"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22595,6 +23496,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="24"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22603,6 +23505,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_RDIO_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22669,6 +23573,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="4"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22684,6 +23590,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="24"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22692,6 +23599,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_OBSV_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22758,6 +23667,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="4"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22773,6 +23684,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="24"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22781,6 +23693,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_DNPC_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22847,6 +23761,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="4"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22862,6 +23778,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="24"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22870,6 +23787,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_MTOW_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -22936,6 +23855,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="5"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -22951,6 +23872,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="30"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -22959,6 +23881,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_UWAB_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -23025,6 +23949,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="5"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -23040,6 +23966,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="30"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -23048,6 +23975,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_UWDS_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -23114,6 +24043,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="5"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -23129,6 +24060,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="30"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -23137,6 +24069,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_UWCF_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -23203,6 +24137,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                         <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                         <Property name="StatGroup" value="GLOBAL_STATS"/>
                                         <Property name="Level" value="5"/>
+                                        <Property name="TakeLevelFromSeasonData" value="False"/>
+                                        <Property name="ForceIgnoreLevelledStat" value="False"/>
                                         <Property name="CompareStat" value=""/>
                                         <Property name="DisplayMilestoneNumber" value="1"/>
                                         <Property name="Test" value="TkEqualityEnum.xml">
@@ -23218,6 +24154,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Time" value="30"/>
                                           <Property name="DebugText" value=""/>
                                           <Property name="SuppressMessages" value="False"/>
+                                          <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                         </Property>
                                       </Property>
                                       <Property value="GcGenericMissionStage.xml">
@@ -23226,6 +24163,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                           <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                                           <Property name="Reward" value="R_ALSCAN_UWTR_S"/>
                                           <Property name="CanOverride" value="False"/>
+                                          <Property name="Silent" value="False"/>
+                                          <Property name="RewardInventoryOverride" value="None"/>
                                           <Property name="DebugText" value=""/>
                                         </Property>
                                       </Property>
@@ -23238,6 +24177,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="15"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -23311,6 +24251,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Time" value="3"/>
                   <Property name="DebugText" value=""/>
                   <Property name="SuppressMessages" value="False"/>
+                  <Property name="MultiplyTimeBySeasonValue" value="False"/>
                 </Property>
               </Property>
             </Property>
@@ -23447,6 +24388,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="1"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -23546,6 +24489,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="2"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -23645,6 +24590,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="3"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -23744,6 +24691,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="4"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -23843,6 +24792,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="5"/>
+                      <Property name="TakeLevelFromSeasonData" value="False"/>
+                      <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
                       <Property name="DisplayMilestoneNumber" value="1"/>
                       <Property name="Test" value="TkEqualityEnum.xml">
@@ -23888,6 +24839,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
                   <Property name="Reward" value="R_ALSCFP_FLYBY_S"/>
                   <Property name="CanOverride" value="False"/>
+                  <Property name="Silent" value="False"/>
+                  <Property name="RewardInventoryOverride" value="None"/>
                   <Property name="DebugText" value=""/>
                 </Property>
               </Property>
@@ -24001,6 +24954,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="1"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -24028,6 +24982,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="0.5"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                   </Property>
@@ -24042,6 +24997,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
             <Property name="Reward" value="R_ALSCFP_FLYBY_R"/>
             <Property name="CanOverride" value="False"/>
+            <Property name="Silent" value="False"/>
+            <Property name="RewardInventoryOverride" value="None"/>
             <Property name="DebugText" value=""/>
           </Property>
         </Property>
@@ -24225,12 +25182,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -24274,12 +25233,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -24492,6 +25453,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -24713,6 +25675,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -25091,6 +26054,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -25295,12 +26259,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Toxic"/>
@@ -25344,12 +26310,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Toxic"/>
@@ -25562,6 +26530,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -25783,6 +26752,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -26161,6 +27131,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -26365,12 +27336,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Scorched"/>
@@ -26414,12 +27387,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Scorched"/>
@@ -26632,6 +27607,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -26853,6 +27829,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -27231,6 +28208,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -27435,12 +28413,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Radioactive"/>
@@ -27484,12 +28464,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Radioactive"/>
@@ -27702,6 +28684,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -27923,6 +28906,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -28301,6 +29285,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -28505,12 +29490,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Frozen"/>
@@ -28554,12 +29541,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Frozen"/>
@@ -28772,6 +29761,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -28993,6 +29983,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -29371,6 +30362,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -29575,12 +30567,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Barren"/>
@@ -29624,12 +30618,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Barren"/>
@@ -29842,6 +30838,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -30063,6 +31060,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -30441,6 +31439,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -30645,12 +31644,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Red"/>
@@ -30694,12 +31695,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Red"/>
@@ -30912,6 +31915,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -31133,6 +32137,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -31511,6 +32516,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -31715,12 +32721,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Green"/>
@@ -31764,12 +32772,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Green"/>
@@ -31982,6 +32992,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -32203,6 +33214,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -32581,6 +33593,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -32785,12 +33798,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Blue"/>
@@ -32834,12 +33849,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Blue"/>
@@ -33052,6 +34069,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -33273,6 +34291,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -33651,6 +34670,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -33855,12 +34875,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Swamp"/>
@@ -33904,12 +34926,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Swamp"/>
@@ -34122,6 +35146,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -34343,6 +35368,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -34721,6 +35747,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -34925,12 +35952,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lava"/>
@@ -34974,12 +36003,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lava"/>
@@ -35192,6 +36223,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -35413,6 +36445,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -35791,6 +36824,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -35995,12 +37029,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Dead"/>
@@ -36044,12 +37080,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Dead"/>
@@ -36262,6 +37300,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -36483,6 +37522,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -36861,6 +37901,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -37065,12 +38106,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="False"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -37114,12 +38157,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="False"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -37332,6 +38377,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -37553,6 +38599,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -37931,6 +38978,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -38135,12 +39183,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="False"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -38184,12 +39234,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="False"/>
             <Property name="RequireUndiscovered" value="False"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="False"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -38402,6 +39454,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -38623,6 +39676,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -39001,6 +40055,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -39205,12 +40260,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="True"/>
             <Property name="RequireUndiscovered" value="True"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="True"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="False"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -39254,12 +40311,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="True"/>
             <Property name="RequireUndiscovered" value="True"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="True"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="False"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -39472,6 +40531,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -39693,6 +40753,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -39975,6 +41036,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                               <Property name="Time" value="3"/>
                               <Property name="DebugText" value=""/>
                               <Property name="SuppressMessages" value="False"/>
+                              <Property name="MultiplyTimeBySeasonValue" value="False"/>
                             </Property>
                           </Property>
                         </Property>
@@ -40176,12 +41238,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="True"/>
             <Property name="RequireUndiscovered" value="True"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="True"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="False"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -40225,12 +41289,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeverAllowAbandoned" value="True"/>
             <Property name="RequireUndiscovered" value="True"/>
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
             <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="True"/>
             <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="False"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
@@ -40443,6 +41509,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="Time" value="2"/>
                         <Property name="DebugText" value=""/>
                         <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
@@ -40664,6 +41731,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                     <Property name="Time" value="2"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -40946,6 +42014,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                               <Property name="Time" value="3"/>
                               <Property name="DebugText" value=""/>
                               <Property name="SuppressMessages" value="False"/>
+                              <Property name="MultiplyTimeBySeasonValue" value="False"/>
                             </Property>
                           </Property>
                         </Property>
@@ -41060,12 +42129,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41109,12 +42180,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41236,12 +42309,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41285,12 +42360,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41412,12 +42489,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41461,12 +42540,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41588,12 +42669,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41637,12 +42720,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41764,12 +42849,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41813,12 +42900,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41940,12 +43029,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -41989,12 +43080,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42116,12 +43209,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42165,12 +43260,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42292,12 +43389,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42341,12 +43440,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42468,12 +43569,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42517,12 +43620,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42644,12 +43749,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42693,12 +43800,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42820,12 +43929,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42869,12 +43980,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -42996,12 +44109,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43045,12 +44160,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43172,12 +44289,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43221,12 +44340,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43348,12 +44469,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43397,12 +44520,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43524,12 +44649,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43573,12 +44700,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43700,12 +44829,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43749,12 +44880,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43876,12 +45009,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -43925,12 +45060,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44052,12 +45189,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44101,12 +45240,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44228,12 +45369,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44277,12 +45420,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44404,12 +45549,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44453,12 +45600,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44580,12 +45729,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44629,12 +45780,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44756,12 +45909,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44805,12 +45960,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44932,12 +46089,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -44981,12 +46140,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45108,12 +46269,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45157,12 +46320,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45284,12 +46449,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45333,12 +46500,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45460,12 +46629,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45509,12 +46680,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45636,12 +46809,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45685,12 +46860,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45812,12 +46989,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45861,12 +47040,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -45988,12 +47169,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -46037,12 +47220,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -46164,12 +47349,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -46213,12 +47400,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
         <Property name="NeverAllowAbandoned" value="False"/>
         <Property name="RequireUndiscovered" value="False"/>
         <Property name="NeedsWaterPlanet" value="False"/>
+        <Property name="NeedsPrimePlanet" value="False"/>
         <Property name="NeedsExtremeSentinelPlanet" value="False"/>
         <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
         <Property name="NeedsExtremeWeatherPlanet" value="False"/>
         <Property name="NeedsExtremeHazardPlanet" value="False"/>
         <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
         <Property name="AnyRGBBiome" value="False"/>
+        <Property name="AnyInfestedBiome" value="False"/>
         <Property name="NeedsBiome" value="False"/>
         <Property name="NeedsBiomeType" value="GcBiomeType.xml">
           <Property name="Biome" value="Lush"/>
@@ -46473,6 +47662,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46554,6 +47744,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46635,6 +47826,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46716,6 +47908,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46785,6 +47978,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46842,6 +48036,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46863,6 +48058,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46884,6 +48080,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46905,6 +48102,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46926,6 +48124,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46947,6 +48146,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46968,6 +48168,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -46989,6 +48190,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47010,6 +48212,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47031,6 +48234,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47052,6 +48256,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47073,6 +48278,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47094,6 +48300,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47115,6 +48322,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47136,6 +48344,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47157,6 +48366,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47178,6 +48388,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47199,6 +48410,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47220,6 +48432,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47241,6 +48454,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47262,6 +48476,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47283,6 +48498,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47304,6 +48520,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47325,6 +48542,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47346,6 +48564,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47367,6 +48586,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47388,6 +48608,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47409,6 +48630,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47430,6 +48652,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47451,6 +48674,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47472,6 +48696,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47493,6 +48718,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47514,6 +48740,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47535,6 +48762,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47556,6 +48784,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47577,6 +48806,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47598,6 +48828,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47619,6 +48850,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47640,6 +48872,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47661,6 +48894,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47682,6 +48916,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47703,6 +48938,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47724,6 +48960,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47745,6 +48982,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47766,6 +49004,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47787,6 +49026,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47808,6 +49048,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47829,6 +49070,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47850,6 +49092,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47871,6 +49114,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47892,6 +49136,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47913,6 +49158,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47934,6 +49180,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47955,6 +49202,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47976,6 +49224,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -47997,6 +49246,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -48018,6 +49268,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -48039,6 +49290,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
@@ -48060,6 +49312,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100"/>
