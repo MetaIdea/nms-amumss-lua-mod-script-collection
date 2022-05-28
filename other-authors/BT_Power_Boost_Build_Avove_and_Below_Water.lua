@@ -20,8 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH_TYPE"] 	= "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "BuildableAboveWater", "True"}
-								{ "BuildableBelowWater", "True"}
+								{ "BuildableAboveWater", "True"},
+								{ "BuildableBelowWater", "True"},
 							}
 						},	
 						{
@@ -78,11 +78,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"DependentEffect", "None"}
 							}
 						
-							}
 						}
-						},
 					}
 				},
 			}
 		},
 	}
+}
