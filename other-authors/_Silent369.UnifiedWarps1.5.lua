@@ -1,13 +1,12 @@
 local modfilename = "_UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "v1.4"
+local lua_version = "v1.5"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
 local description = "Unifies Blackhole/Portal/Ship/Teleporter Warps"
 
 --MODIFIES:
 --GCSIMULATIONGLOBALS.GLOBAL.MBIN
---MATERIALS\LIGHT.MATERIAL.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL\SCROLLINGWAVESMAT.MATERIAL.MBIN
@@ -196,15 +195,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 
 						--|----------------------------------------------------------------------------------------
-						--| Change Light Material
+						--| Create New Light Material
+						--| Since the default LIGHT.MATERIAL.MBIN is used throughout the game in many places we
+						--| need to create a new material, edit it and insert back in the scene for our purposes.
 						--|----------------------------------------------------------------------------------------
 
-				{
-					["MBIN_FILE_SOURCE"]	= {"MATERIALS/LIGHT.MATERIAL.MBIN",},
+				{	--Create the new Light Material
+					["MBIN_FILE_SOURCE"] =
+					{
+						{
+							"MATERIALS/LIGHT.MATERIAL.MBIN",
+							"MATERIALS/LIGHT_WARPTUNNEL.MATERIAL.MBIN",
+							"REMOVE"
+						}
+					}
+				},
+				{	--Edit the new Light Material
+					["MBIN_FILE_SOURCE"]	= {"MATERIALS\LIGHT_WARPTUNNEL.MATERIAL.MBIN",},
 					["EXML_CHANGE_TABLE"]	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {""},
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"Class",			"Translucent"}, --Original "GlowTranslucent"
@@ -216,6 +226,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"Anisotropy",		"0"},
+							}
+						},
+					}
+				},
+				{	--Insert the new Light Material
+					["MBIN_FILE_SOURCE"]	= {"MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN",},
+					["EXML_CHANGE_TABLE"]	=
+					{
+						{
+							["SPECIAL_KEY_WORDS"]	= {"Type", "LIGHT", "Name", "MATERIAL"},
+							["REPLACE_TYPE"]		= "ALL",
+							["VALUE_CHANGE_TABLE"]	=
+							{
+								{"Value",		"MATERIALS/LIGHT_WARPTUNNEL.MATERIAL.MBIN"},
 							}
 						},
 					}
