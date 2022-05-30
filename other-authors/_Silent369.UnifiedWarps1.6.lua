@@ -1,6 +1,6 @@
 local modfilename = "_UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "v1.5"
+local lua_version = "v1.6"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
 local description = "Unifies Blackhole/Portal/Ship/Teleporter Warps"
@@ -13,10 +13,8 @@ local description = "Unifies Blackhole/Portal/Ship/Teleporter Warps"
 --MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN
 
 _falloff   = "linear"			--Original "quadratic"
-_falloffrt = "2.500000"			--Original "2.000000"
-_intensity = "000100.000000"	--Original "100000.000000"
-
-_Multiplier = 0.5
+_falloffrt = "2.300000"			--Original "2.000000"
+_intensity = "000010.000000"	--Original "100000.000000"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -68,10 +66,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"]				= "SECTION"
 						},
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Name", "LightArms"},
-							["REMOVE"]				= "SECTION"
-						},
-						{
 							["SPECIAL_KEY_WORDS"]	= {"Name", "LightStreaks"},
 							["REMOVE"]				= "SECTION"
 						},
@@ -84,16 +78,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"]				= "SECTION"
 						},
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Name", "LightStreaksSmall1"},
-							["REMOVE"]				= "SECTION"
-						},
-						{
 							["SPECIAL_KEY_WORDS"]	= {"Name", "LightLargeStreaks"},
 							["REMOVE"]				= "SECTION"
 						},
 
 						--|----------------------------------------------------------------------------------------
-						--| Settings
+						--| Generic Settings
 						--|----------------------------------------------------------------------------------------
 
 						{
@@ -120,19 +110,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Value",			_intensity}, --Original "100000.000000"
 							}
 						},
+					},
+				},
+
+						--|----------------------------------------------------------------------------------------
+						--| Change LIGHTARMSMAT Settings
+						--|----------------------------------------------------------------------------------------
+
+				{
+					["MBIN_FILE_SOURCE"]	= {"MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN"},
+					["EXML_CHANGE_TABLE"]	=
+					{
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Name", "WarpCylinder1", "Transform", "TkTransformData.xml"},
-							["MATH_OPERATION"]		= "*",
-							["INTEGER_TO_FLOAT"]	= "FORCE",
-							["REPLACE_TYPE"]		= "ALL",
+							["SPECIAL_KEY_WORDS"]	= {"Name", "gCustomParams01Vec4", "Values", "Vector4f.xml"},
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",		_Multiplier}, --Original "1"
-								{"ScaleY",		_Multiplier}, --Original "1"
-								{"ScaleZ",		_Multiplier}, --Original "1"
+								{"t",				"0.02"}, --Original "0.04"
 							}
 						},
-					},
+					}
 				},
 
 						--|----------------------------------------------------------------------------------------
@@ -150,7 +146,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"Class",			"Translucent"}, --Original "GlowTranslucent"
-								{"TransparencyLayerID", 	 "10"},
 							}
 						},
 						{
@@ -188,7 +183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"t",			 "0.03"}, --Original "0.04"
+								{"t",				"0.02"}, --Original "0.04"
 							}
 						},
 					}
@@ -260,7 +255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {""},
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"Class",		"Translucent"}, --Original "GlowTranslucent"
+								{"Class",			"Translucent"}, --Original "GlowTranslucent"
 							}
 						},
 						{
@@ -273,7 +268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"t",			 "0.03"}, --Original "0.04"
+								{"t",				"0.05"}, --Original "0.04"
 							}
 						},
 						{
