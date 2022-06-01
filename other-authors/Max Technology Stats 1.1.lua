@@ -1,35 +1,45 @@
+-- File Settings --
+FileName = "Max Technology Stats 1.1.pak" -- can be changed to the name you want the mod but make sure to keep .pak at the end
+ModAuthor = "JustRuthless" -- only for reference
+LuaAuthor = "JustRuthless" -- only for reference
+NMS_Version = "Leviathan 3.91" -- only for reference
+
+-- File Sources --
+FileSource1 = "METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "Min Technology Stats 1.0.pak",
-  ["MOD_AUTHOR"]				= "JustRuthless",
-  ["NMS_VERSION"]				= "3.89",
+  ["MOD_FILENAME"] 			= FileName,
+  ["MOD_AUTHOR"]				= ModAuthor,
+  ["LUA_AUTHOR"]				= LuaAuthor,
+  ["NMS_VERSION"]				= NMS_Version,
   ["MODIFICATIONS"] 		=
 	{
 		{
 			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"},
+					["MBIN_FILE_SOURCE"] 	= {FileSource1},
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcProceduralTechnologyData.xml",},
-							["MATH_OPERATION"] 		  = "*FB:NumStatsMin",
+							["MATH_OPERATION"] 		  = "*F:NumStatsMax",
 							["INTEGER_TO_FLOAT"] 		= "FORCE",
 							["REPLACE_TYPE"] 		    = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"NumStatsMax",	"1",},
+								{"NumStatsMin",	"1",},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"StatLevels",},
-							["MATH_OPERATION"] 		  = "*FB:ValueMin",
+							["MATH_OPERATION"] 		  = "*F:ValueMax",
 							["INTEGER_TO_FLOAT"] 		= "FORCE",
 							["REPLACE_TYPE"] 		    = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"ValueMax",	"1",},
+								{"ValueMin",	"1",},
 							},
 						},
 						{
@@ -94,7 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
-			},
-		}
-	},
+			}
+		},
+	}
 }
