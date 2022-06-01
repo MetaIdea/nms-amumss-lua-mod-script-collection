@@ -1,13 +1,10 @@
 --------------------------------
 -- Max Upgrade Slots Settings --
------------------------------------------------------------------------------------------------------
--- WARNING IF YOU DECREASE THE SLOTS TO BE LESS THAN DEFAULT ANYTHING IN THE SLOTS WILL BE REMOVED --
--- SO CLEAR THEM SLOTS BEFORE EDITING LESS THAN DEFAULT ---------------------------------------------
-----------------------------------------------------------
+--------------------------------
 
 -- Multitool --
 MULTITOOL_INV_C = "24" -- 12 - Numbers on the right are the default values
-MULTITOOL_INV_B = "32" -- 16 - use them for reference when editing
+MULTITOOL_INV_B = "32" -- 16
 MULTITOOL_INV_A = "40" -- 20
 MULTITOOL_INV_S = "48" -- 24
 
@@ -138,19 +135,30 @@ EXOSUIT_SM_CARGO_HEIGHT = "6" -- 6
 -- DONT EDIT ANYTHING BELOW THIS POINT OR THE SCRIPT MIGHT BREAK --
 -------------------------------------------------------------------
 
+-- File Settings --
+FileName = "More Upgradeable Slots 1.1.pak" -- can be changed to the name you want the mod but make sure to keep .pak at the end
+ModAuthor = "JustRuthless" -- only for reference
+LuaAuthor = "JustRuthless" -- only for reference
+NMS_Version = "Leviathan 3.91" -- only for reference
+
+-- File Sources --
+FileSource1 = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
+FileSource2 = "METADATA/GAMESTATE/DEFAULTINVENTORYBALANCE.MBIN"
+FileSource3 = "METADATA/GAMESTATE/DEFAULTINVENTORYBALANCESURVIVAL.MBIN"
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] = "More Upgradeable Slots 1.0.pak",
-  ["MOD_AUTHOR"] = "JustRuthless",
-  ["LUA_AUTHOR"] = "JustRuthless",
-  ["NMS_VERSION"] = "3.89",
+  ["MOD_FILENAME"] = FileName,
+  ["MOD_AUTHOR"] = ModAuthor,
+  ["LUA_AUTHOR"] = LuaAuthor,
+  ["NMS_VERSION"] = NMS_Version,
   ["MODIFICATIONS"] =                     
 	{
 		{
 			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] = {"METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"},
+					["MBIN_FILE_SOURCE"] = {FileSource1},
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
@@ -442,7 +450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] =
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DEFAULTINVENTORYBALANCE.MBIN"},
+					["MBIN_FILE_SOURCE"] 	= {FileSource2},
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
@@ -456,13 +464,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
-			}
-		},
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
 				{
-					["MBIN_FILE_SOURCE"] 	= {"METADATA\GAMESTATE\DEFAULTINVENTORYBALANCESURVIVAL.MBIN"},
+					["MBIN_FILE_SOURCE"] 	= {FileSource3},
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
@@ -478,5 +481,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 			}
 		},
-	}	
+	}
 }
