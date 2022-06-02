@@ -17,6 +17,7 @@ Mod script authors:
 - [TheLich](https://www.nexusmods.com/nomanssky/users/943197?tab=user+files)
 - [Jackty89/GameMaster-BE](https://www.nexusmods.com/nomanssky/users/1932252?tab=user+files)
 - [Xen0nex](https://www.nexusmods.com/nomanssky/users/8462873?tab=user+files)
+- [Lasagna](https://www.nexusmods.com/nomanssky/users/126633893?tab=user+files)
 
 Additional mod script repos:
 - [Ignacio](https://www.nexusmods.com/nomanssky/users/5842786?tab=user+files) -> [Mod scripts](https://github.com/ignamiranda/NMS-ModScripts) / [Open Biome Extender scripts](https://github.com/ignamiranda/OpenBiomeExtender)

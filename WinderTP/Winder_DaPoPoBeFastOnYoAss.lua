@@ -1,5 +1,70 @@
-MIN_MULTIPLIER = 1
-MAX_MULTIPLIER = 7.5
+MULTIPLIER_TABLE = 
+{
+	{
+		["Type"] = "PatrolDrone",
+		["MinAmount"] = 2,
+		["MaxAmount"] = 7.5,		
+	},
+	{
+		["Type"] = "CombatDrone",
+		["MinAmount"] = 2,
+		["MaxAmount"] = 7.5,		
+	},
+	{
+		["Type"] = "MedicDrone",
+		["MinAmount"] = 1,
+		["MaxAmount"] = 4,		
+	},
+	{
+		["Type"] = "SummonerDrone",
+		["MinAmount"] = 1,
+		["MaxAmount"] = 2,		
+	},
+	{
+		["Type"] = "Quad",
+		["MinAmount"] = 1.5,
+		["MaxAmount"] = 4.5,		
+	},
+	{
+		["Type"] = "Mech",
+		["MinAmount"] = 1,
+		["MaxAmount"] = 4,		
+	},
+	{
+		["Type"] = "Walker",
+		["MinAmount"] = 1,
+		["MaxAmount"] = 5,		
+	},
+	{
+		["Type"] = "CorruptedDrone",
+		["MinAmount"] = 1.5,
+		["MaxAmount"] = 7.5,		
+	},
+}
+
+function GetSentinelTypeMultiply(TYPE, MIN, MAX)
+return
+	{
+		["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
+		["SPECIAL_KEY_WORDS"] = {"SentinelType",TYPE},
+		["PRECEDING_FIRST"] = "TRUE",
+		["INTEGER_TO_FLOAT"] = "PRESERVE",
+		["SECTION_UP_SPECIAL"] = 1,
+		["MATH_OPERATION"] = "*",
+		["REPLACE_TYPE"] = "ALL",
+		["VALUE_CHANGE_TABLE"] 	= 
+		{
+			{"MinAmount",	MIN},
+			{"MaxAmount",	MAX},
+		}
+	}
+end
+
+CHANGE_TABLE = {}
+
+for _,j in pairs(MULTIPLIER_TABLE) do
+	table.insert(CHANGE_TABLE, GetSentinelTypeMultiply(j["Type"],j["MinAmount"],j["MaxAmount"]))
+end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -15,20 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
-					["EXML_CHANGE_TABLE"]	=
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
-							["INTEGER_TO_FLOAT"] = "PRESERVE",
-							["MATH_OPERATION"] = "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MinAmount",	MIN_MULTIPLIER},
-								{"MaxAmount",	MAX_MULTIPLIER},
-							}
-						},
-					},
+					["EXML_CHANGE_TABLE"]	= CHANGE_TABLE
 				}
 			}
 		}
