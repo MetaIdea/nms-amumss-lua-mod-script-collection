@@ -1,6 +1,6 @@
 local modfilename = "Biomes.SunCloudsAndFog"
 local lua_author  = "Silent"
-local lua_version = "1.6"
+local lua_version = "1.7"
 local mod_author  = "Silent369"
 local nms_version = "3.90"
 local description = "Realtime (NMS time) Day Length (Optional), Better Detailed Clouds, Slower Cloud Animation, Sun Properties and Planet Fog Adjustments. LOD Adjustments, Optional Lens Dirt Removal."
@@ -9,6 +9,7 @@ local description = "Realtime (NMS time) Day Length (Optional), Better Detailed 
 --GCGRAPHICSGLOBALS.GLOBAL.MBIN
 --GCENVIRONMENTGLOBALS.GLOBAL.MBIN
 --GCSKYGLOBALS.GLOBALS.MBIN
+--PIPELINES\PIPELINEDEFERRED.BIN
 
 --TIME RATIOS
 --30Mn =  1800
@@ -30,20 +31,20 @@ _Anim_Scale				= 23   --Original "50" wtf!
 
 --SUN BRIGHTNESS
 _LUTDFMult				= 1	   --Original "0"
-_Intensity				= 3.5  --Original "3"
-_BlendTime				= 3	   --Original "5"
+_Intensity				= 3.2  --Original "3"
+_BlendTime				= 5	   --Original "5"
 _RayDensity				= 1	   --Original "1"
 _Brightness				= 0	   --Original "0"
-_Contrast				= 0.6  --Original "1"
+_Contrast				= 1    --Original "1"
 _HueVariance			= 1.04 --Original "1.04"
-_Saturation				= 0.73 --Original "1"
-_VSaturation			= 0.04 --Original "0.05"
-_SSunFactor				= 21   --Original "20"
-_SMieFactor				= 0.32 --Original "0.3"
+_Saturation				= 1    --Original "1"
+_VSaturation			= 0.05 --Original "0.05"
+_SSunFactor				= 20   --Original "20"
+_SMieFactor				= 0.3  --Original "0.3"
 _MaxSpaceFogStrength	= 0.2  --Original "0.5"
 _ReflectionStrength		= 0.1  --Original "0.3"
-_WeatherBloomGain		= 3.1  --Original "7.1"
-_WeatherFilterSTCTime	= 5	   --Original "10"
+_WeatherBloomGain		= 4.1  --Original "7.1"
+_WeatherFilterSTCTime	= 6	   --Original "10"
 _DOFFarStrengthWater	= 0.3  --Original "0"
 
 --STORM SETTINGS
@@ -72,7 +73,7 @@ _LightScalar			= 4	   --Original "5"
 _AmbientScalar			= 1.72 --Original "1.721854"
 _Density				= 2	   --Original "1"
 _AmbientDensity			= 0.1  --Original "0.1"
-_BaseScale				= 1.1  --Original "1"
+_BaseScale				= 1    --Original "1"
 _SampleScalar			= 3	   --Original "5"
 _SampleThreshold		= 0.26 --Original "0.25"
 _CloudBottomFade		= 1    --Original "1"
@@ -80,7 +81,7 @@ _DetailScale			= 9    --Original "6"
 _ErosionEdgeSize		= 0.8  --Original "0.5"
 _CloudDistortion		= 89   --Original "50"
 _CloudDistortionScale	= 1.2  --Original "1"
-_MaxIterations			= 256  --Original "128"
+_MaxIterations			= 128  --Original "128"
 
 --Horizon
 _HorizonFadeStartAlpha	= -0.3 --Original "0"
@@ -315,62 +316,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TerrainDroppedMipsLow",				"0"}, --Original "1"
 								{"TerrainDroppedMipsMed",				"0"}, --Original "1"
 								{"TerrainMipBiasLow",					"0"}, --Original "0.5"
+							}
+						},
 
-								----TAA Settings
-								{"TaaLowFreqConstant", 				  "100"}, --Original "0.5"
-								{"TaaHighFreqConstant", 			  "100"}, --Original "100"
-								{"TaaAccumDelay", 					 "1.05"}, --Original "0.9"
-								{"FrustumJitterAmount", 			    "0"}, --Original "0.6"
-								{"UseTaaResolve", 					"False"}, --Original "False"
-								{"ApplyTaaTest", 					"False"}, --Original "False"
-								{"ShowTaaBuf", 						"False"}, --Original "False"
-								{"ShowTaaVarianceBuf", 				"False"}, --Original "False"
-								{"ShowTaaNVarianceBuf", 			"False"}, --Original "False"
-								{"ShowTaaCVarianceBuf", 			"False"}, --Original "False"
-							}
-						},
-						----------------------------------------------------------------------------
-						--TERRAIN SETTINGS
-						----------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"TerrainMipDistanceMed"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"x",							"0"}, --Original "0"
-								{"y",						   "16"}, --Original "32"
-								{"z",						   "32"}, --Original "64"
-								{"t",						   "64"}, --Original "128"
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"]	= {""},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"TerrainBlocksPerFrameLow",   "24"}, --Original "16"
-								{"TerrainBlocksPerFrameMed",   "48"}, --Original "24"
-								{"TerrainBlocksPerFrameHi",    "64"}, --Original "48"
-								{"TerrainBlocksPerFrameUlt",  "128"}, --Original "64"
-							}
-						},
-						----------------------------------------------------------------------------
-						--TAA SETTINGS
-						----------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"TaaSettings"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"x",						   "2"}, --Original "2"
-								{"y",						"0.99"}, --Original "0.7"
-								{"z",				"-0.909999967"}, --Original "0.8"
-								{"t",						 "-10"}, --Original "0.4"
-							}
-						},
 						----------------------------------------------------------------------------
 						--LIGHT SHAFT PROPERTIES
 						----------------------------------------------------------------------------
+
 						{
 							["PRECEDING_KEY_WORDS"]	= {"LightShaftProperties",},
 							["INTEGER_TO_FLOAT"]	= "FORCE",
@@ -571,6 +523,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						----------------------------------------------------------------------------
 						--ENVIRONMENT PROPERTIES
 						----------------------------------------------------------------------------
+
 						{
 							["PRECEDING_KEY_WORDS"] = "EnvironmentProperties",
 							["INTEGER_TO_FLOAT"]	= "FORCE",
@@ -603,9 +556,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"]		  = "+0",
 							["ADD"]				  = _SpacePlanetFogStrength,
 						},
+
 						----------------------------------------------------------------------------
 						--PRIMARY CLOUD PROPERTIES
 						----------------------------------------------------------------------------
+
 						{
 							["PRECEDING_KEY_WORDS"] = "CloudProperties",
 							["INTEGER_TO_FLOAT"]	= "FORCE",
@@ -707,9 +662,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					},
 				},
+
 				----------------------------------------------------------------------------
 				--SKY GLOBALS SETTINGS
 				----------------------------------------------------------------------------
+
 				{
 					["MBIN_FILE_SOURCE"]   = { "GCSKYGLOBALS.GLOBALS.MBIN" },
 					["EXML_CHANGE_TABLE"]  =
