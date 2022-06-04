@@ -105,9 +105,9 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 3.0.pak", 
+["MOD_FILENAME"] 			= "ReLight 3.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.90",
+["NMS_VERSION"]				= "3.91",
 ["MOD_DESCRIPTION"]			= "This mod rework most of the lights placed in NPC building",
 ["MODIFICATIONS"] 			= 
 	{
@@ -600,6 +600,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},						
 					},
 				},			
+				{  -- Removes lens flare from round passage in interior angle wall and from wall light
+					["MBIN_FILE_SOURCE"] 	= {
+					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LAYOUTS\LAYOUTSHOP_3\LIGHTS1_MAT2.MATERIAL.MBIN",
+					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLLIGHTS\WALLLIGHTA\LIGHTS1_MAT.MATERIAL.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
+				},	
 				{  -- Removes Tech shop front lights lens flare from Korvax outposts
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\SCIENTIFICPARTS\MODULES\WALLMODULE_TECHSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -1909,6 +1924,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},										
 					},
 				},
+				{  -- Removes lens flare double circle lights
+					["MBIN_FILE_SOURCE"] 	= {
+					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\STANDINGLIGHTS\STANDINGLIGHTS\LIGHTS1_MAT2.MATERIAL.MBIN",},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 3
+							},
+						},						
+					},
+				},	
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\ROUNDTABLE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -2095,6 +2124,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},								
 					},
 				},
+				{		-- new glass roof
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\TIMBER\BASIC_ROOF_TOP0.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "GlassLOD2"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='pointLight1', i=10000}),
+						},
+					},
+				}, 
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\CEILINGLIGHT.SCENE.MBIN",  -- ring of light
 					["EXML_CHANGE_TABLE"] 	= 
