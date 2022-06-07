@@ -3,7 +3,7 @@ MULTIPLIER_TABLE =
 	{
 		["Type"] = "PatrolDrone",
 		["MinAmount"] = 2,
-		["MaxAmount"] = 7.5,		
+		["MaxAmount"] = 10,		
 	},
 	{
 		["Type"] = "CombatDrone",
@@ -28,12 +28,12 @@ MULTIPLIER_TABLE =
 	{
 		["Type"] = "Mech",
 		["MinAmount"] = 1,
-		["MaxAmount"] = 4,		
+		["MaxAmount"] = 2,		
 	},
 	{
 		["Type"] = "Walker",
 		["MinAmount"] = 1,
-		["MaxAmount"] = 5,		
+		["MaxAmount"] = 2,		
 	},
 	{
 		["Type"] = "CorruptedDrone",
@@ -66,6 +66,18 @@ for _,j in pairs(MULTIPLIER_TABLE) do
 	table.insert(CHANGE_TABLE, GetSentinelTypeMultiply(j["Type"],j["MinAmount"],j["MaxAmount"]))
 end
 
+table.insert(CHANGE_TABLE,
+{
+		["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
+		["INTEGER_TO_FLOAT"] = "PRESERVE",
+		["MATH_OPERATION"] = "*",
+		["REPLACE_TYPE"] = "ALL",
+		["VALUE_CHANGE_TABLE"] 	= 
+		{
+			{"ReinforceAt",	20 }, -- typical vanilla value is 2
+		}	
+})
+	
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 		= "DaPoPoBeFastOnYoAss.pak",
