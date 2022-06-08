@@ -33,10 +33,10 @@ COSTMULT = 		0.2	  -- This sets the ship launch fuel cost; The lower the number,
 							
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]             = "Planetary_Flight_Fixes_2_2.pak", 
+  ["MOD_FILENAME"]             = "Planetary_Flight_Fixes_2_3.pak", 
   ["MOD_AUTHOR"]               = "chronicallybored",
-  ["NMS_VERSION"]              = "3.90",
-  ["MOD_DESCRIPTION"]          = "Fixes various aspects of the flight system while inside a planets atmossphere",
+  ["NMS_VERSION"]              = "3.91",
+  ["MOD_DESCRIPTION"]          = "Fixes various aspects of the flight system while inside a planets atmosphere",
   ["MODIFICATIONS"]            = 
 	{
 		{
