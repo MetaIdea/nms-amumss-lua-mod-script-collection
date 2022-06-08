@@ -13,6 +13,7 @@ EvolveFive =							1800								--430		Unknown Function
 EvolveSix =								1800								--430		Unknown Function
 
 MissionSurveyMaxGuidanceDistance =		5000								--1500		How far away from the target location your "Target Sweep" visor function will be auto-selected when activating your visor and display the estimated distance
+--Note that the actual distance to the target location is controlled in FartherTargetSweepX.lua
 
 DeathMoneyPenalty =						25000								--5000		Money lost on death in Normal mode
 DeathMoneyPenaltyHardMode =				50000								--5000		Money lost on death in Survival mode

@@ -4,6 +4,7 @@ GameVersion = "3_87"
 --Multipliers to use for the "approximate Location" distances, depending on the mission group / file
 DistanceMultLong =						4									--Multiplier to apply to distances greater than 650
 DistanceMultShort =						10									--Multiplier to apply to distances 650 or lower
+--Note that the range at which your Target Sweep Scanner will change from "too far to estimate" to giving an actual distance is controlled in ShipScrappingAndBlackHolesX.lua
 
 Filepaths =
 {	--Missiontype																Vanilla Distances used for missions of this type
