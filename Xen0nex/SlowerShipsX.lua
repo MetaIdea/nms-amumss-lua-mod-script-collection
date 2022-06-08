@@ -209,7 +209,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= 'SlowerShipsX.pak',
 	MOD_AUTHOR			= 'Xen0nex',
 	NMS_VERSION			= '3.87',
-	MOD_DESCRIPTION		= 'Makes ships start out slower',
+	MOD_DESCRIPTION		= 'Makes ships start out slower but end up faster with enough upgrades',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

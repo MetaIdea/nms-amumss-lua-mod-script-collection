@@ -61,22 +61,26 @@ return
 end
 
 CHANGE_TABLE = {}
+MINEST_MIN = 1
 
 for _,j in pairs(MULTIPLIER_TABLE) do
 	table.insert(CHANGE_TABLE, GetSentinelTypeMultiply(j["Type"],j["MinAmount"],j["MaxAmount"]))
+	if j["MinAmount"] < MINEST_MIN then MINEST_MIN = j["MinAmount"] end
 end
 
-table.insert(CHANGE_TABLE,
-{
-		["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
-		["INTEGER_TO_FLOAT"] = "PRESERVE",
-		["MATH_OPERATION"] = "*",
-		["REPLACE_TYPE"] = "ALL",
-		["VALUE_CHANGE_TABLE"] 	= 
-		{
-			{"ReinforceAt",	20 }, -- typical vanilla value is 2
-		}	
-})
+if MINEST_MIN > 1 then
+	table.insert(CHANGE_TABLE,
+	{
+			["PRECEDING_KEY_WORDS"] = {"SentinelSpawns"},
+			["INTEGER_TO_FLOAT"] = "PRESERVE",
+			["MATH_OPERATION"] = "*",
+			["REPLACE_TYPE"] = "ALL",
+			["VALUE_CHANGE_TABLE"] 	= 
+			{
+				{"ReinforceAt",	MINEST_MIN }, -- typical vanilla value is 2
+			}	
+	})
+end
 	
 NMS_MOD_DEFINITION_CONTAINER = 
 {
