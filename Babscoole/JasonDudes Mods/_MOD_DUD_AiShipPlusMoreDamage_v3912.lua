@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_MOD_DUD_AiShipPlusMoreDamage_v3891.pak",
+["MOD_FILENAME"] 			= "_MOD_DUD_AiShipPlusMoreDamage_v3912.pak",
 ["MOD_AUTHOR"]				= "jasondude7116",
 ["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.89",
+["NMS_VERSION"]				= "3.91",
 ["MODIFICATIONS"] 			=
 	{
 		{
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinimumCircleTimeBeforeLanding",      "20"},
-								{"FillUpOutposts",        				"True"},
+								{"FillUpOutposts",        				"False"},
 								{"TradingPostTraderRequestTime",        "60"},
 								--{"TradingPostTraderRange",        		"1500"},
 								{"SpaceStationTraderRequestTime",       "30"},
@@ -770,7 +770,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},					
 					}
-				}				
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\ENTITIES\TURRET.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"]   =
+					{
+						{
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"TurretShootPauseTime",    "1"},
+								{"TurretBurstCount",        "30"},
+								{"TurretDispersionAngle",   "0"},
+								{"Health",       "6000"},
+							},
+						},						
+					}
+				},				
 			}
 		}
 	}
