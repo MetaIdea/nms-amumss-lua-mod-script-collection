@@ -46,16 +46,23 @@ end
 
 
 --[[function GetLoot(Loot)
-return {
-         ["SPECIAL_KEY_WORDS"] = {"Id", Loot, "List","GcRewardTableItemList.xml",},
-         ["PRECEDING_KEY_WORDS"] = {"List",},
-         ["REMOVE"] = "SECTION",
-     },
-     {
-         ["SPECIAL_KEY_WORDS"] = {"Id", Loot ,"UseInventoryChoiceOverride","IGNORE",},
-         ["ADD_OPTION"]     = "ADDafterLINE",
-         ["ADD"] = Ugrades,
-     },
+	return {
+			["SPECIAL_KEY_WORDS"] = {"Id", Loot, "List","GcRewardTableItemList.xml",},
+			["PRECEDING_KEY_WORDS"] = {"List",},
+			["REMOVE"] = "SECTION",
+		},
+		{
+			["SPECIAL_KEY_WORDS"] = {"Id", Loot},
+			["VALUE_CHANGE_TABLE"]	=
+			{
+				{"RewardChoice", "SelectAlways"},
+			},
+		},
+		{
+			["SPECIAL_KEY_WORDS"] = {"Id", Loot ,"UseInventoryChoiceOverride","IGNORE",},
+			["ADD_OPTION"]     = "ADDafterLINE",
+			["ADD"] = Ugrades,
+	},
 end]]--
 
 UPGRADES_ADDING_ALL = {}
