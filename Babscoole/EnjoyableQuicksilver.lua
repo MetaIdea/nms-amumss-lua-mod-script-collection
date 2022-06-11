@@ -1,4 +1,4 @@
-Mod_version = 1.10
+Mod_version = "1.10"
 
 QUICKSILV_S =
 [[
@@ -123,7 +123,7 @@ REWARD_XL =
 REWARD_ENTRIES = 
 [[
     <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="RS_QUICKSILV_XXX" />
+      <Property name="Id" value="RS_QUICKSILV_XSS" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
@@ -250,7 +250,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"]			= "Allows the player to grind Quicksilver through a wide variety of different ways",
 ["MOD_AUTHOR"]				= "ArtisticMisfit",
 ["LUA_AUTHOR"]				= "TheLich and Babscoole",
-["NMS_VERSION"]				= "3.92",
+["NMS_VERSION"]				= "3.91",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -365,8 +365,9 @@ for i=1,#Rewards do
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", value},
               ["PRECEDING_KEY_WORDS"] = {"List", "List"},
-              ["ADD_OPTION"] = "ADDafterSECTION",
-              ["LINE_OFFSET"] = -1,
+			  ["ADD_OPTION"] 	= "ADDafterLINE",
+              -- ["ADD_OPTION"] = "ADDafterSECTION",
+              -- ["LINE_OFFSET"] = -1,
               ["ADD"] = reward["REWARD"],
             }
     Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
