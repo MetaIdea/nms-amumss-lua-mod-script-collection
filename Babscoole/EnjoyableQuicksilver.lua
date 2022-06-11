@@ -1,12 +1,5 @@
 Mod_version = 1.10
 
--- QUICKSILV_XL =
--- [[
-            -- <Property value="NMSString0x10.xml">
-              -- <Property name="Value" value="RS_QUICKSILV_XL" />
-            -- </Property>
--- ]]
-
 QUICKSILV_S =
 [[
             <Property value="NMSString0x10.xml">
@@ -264,7 +257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
 					["REGEXBEFORE"] =
 						{
 							{[[(.*)(".*_CRA_OPT_A_.*")]],[[\1"SECTION_TO_CHANGE" oldvalue=\2]]},
@@ -285,7 +278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -344,7 +337,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\MISSIONS\TUTORIALMISSIONTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
