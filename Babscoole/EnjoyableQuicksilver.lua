@@ -1,4 +1,4 @@
-Mod_version = "1.10"
+Mod_version = "1.11"
 
 QUICKSILV_S =
 [[
