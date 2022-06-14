@@ -2,7 +2,7 @@ Author			= "Gumsk"
 ModName			= "gLonely"
 ModNameSub		= ""
 BaseDescription	= "Generates a lonely galaxy"
-GameVersion		= "389"
+GameVersion		= "391"
 ModVersion		= "a"
 
 FileSource1	= "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
@@ -14,7 +14,6 @@ FileSource6 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 FileSource7 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 FileSource8 = "METADATA\SIMULATION\NPCS\NPCSPAWNTABLE.MBIN"
 FileSource9 = "METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN"
-
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]			= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -49,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 				
 	--=============================================================================
-	--Fewer Freighters and Pirates by Gumsk
+	--Fewer Freighter and Pirate Encounters by Gumsk
 	--=============================================================================				
 				{
 					["VALUE_CHANGE_TABLE"] = {
@@ -218,7 +217,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["MATH_OPERATION"] = "*",
 					["REPLACE_TYPE"] = "ALL",
 					["VALUE_CHANGE_TABLE"] = {
-						{"Dead",3}, 	--4x normal
+						{"Dead",3}, 	--3x normal
 					},
 				},
 				{
@@ -354,7 +353,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 
 	--=============================================================================
-	--Fewer Freighter Battles by Gumsk
+	--Fewer Freighter Rescue Missions by Gumsk
 	--=============================================================================
 				{
 					["VALUE_CHANGE_TABLE"] = {
@@ -836,7 +835,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"HalfWeird","0.2"}, 							--1
 					},
 				},
-				
 				{
 					["SPECIAL_KEY_WORDS"] = {"LargeBuilding","GcBuildingDefinitionData.xml"},
 					["VALUE_CHANGE_TABLE"] = {
