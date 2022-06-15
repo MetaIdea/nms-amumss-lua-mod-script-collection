@@ -3,11 +3,45 @@ NPC            = "2" -- NPC request to learn a word option
 KnowledgeStone = "3" -- words learn from knowledge stones
 WordStation    = "4" -- words learn from word stations/encyclopedias
 Monolith       = "5" -- Monolith seek help with language option
+Monolith_Atlas = "3" -- Monolith atlas word reward from multiple choice questions
+Atlas_Orb      = "2" -- Glowing orbs on the atlas stations
 -------------------------
 
--- Word Function --
-local function Word(race, category, usecategory)
-  return 
+-- Reward Function 1 --
+local function Reward1(id, race)
+return
+[[
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="]]..id..[[" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardTeachWord.xml">
+              <Property name="Race" value="GcAlienRace.xml">
+                <Property name="AlienRace" value="]]..race..[[" />
+              </Property>
+              <Property name="UseCategory" value="False" />
+              <Property name="Category" value="GcWordCategoryTableEnum.xml">
+                <Property name="gcwordcategorytableEnum" value="MISC" />
+              </Property>
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+]]
+end
+
+-- Reward Function 2 --
+local function Reward2(race, category, usecategory)
+return 
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -27,9 +61,9 @@ local function Word(race, category, usecategory)
 ]]
 end
 
--- Rewards Function --
-local function Rewards(id)
-  return 
+-- Reward Function 3 --
+local function Reward3(id)
+return 
 [[
             <Property value="NMSString0x10.xml">
               <Property name="Value" value="]]..id..[[" />
@@ -37,117 +71,102 @@ local function Rewards(id)
 ]]
 end
 
--- Word Station Reward Section --
-WordStation_R =
-[[
-    <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="WORD_STATION_R" />
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAll" />
-        <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False" />
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="None" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-]]
+-- Reward1 Changes Key:
+-- Id: WORD_STATION_R, WORD_ATLAS_ORB are newly added word reward sections
+-- Race: Traders(Gek), Explorers(Korvax), Warriors(Vykeen), Atlas, None
 
--- Word Section Key:
+-- Reward2 Changes Key:
 -- Race: Traders(Gek), Explorers(Korvax), Warriors(Vykeen), Atlas, None
 -- Category: MISC, DIRECTIONS, HELP, TRADE, LORE, TECH, THREAT
 -- UseCategory: True / False (false would learn a random word)
 
--- Word Changes --
-KnowledgeStone_W = Word("None", "MISC", "False") -- Function(Race, Category, UseCategory)
-WordStation_W    = Word("None", "MISC", "False")
+-- Reward3 Changes Key:
+-- Id: TEACHWORD_TRA(Gek), TEACHWORD_EXP(Korvax), TEACHWORD_WAR(Vykeen), TEACHWORD_ATLAS
+-- Each Id is from a different race word reward section
 
-Gek_Direct = Word("Traders", "DIRECTIONS", "True")
-Gek_Help   = Word("Traders", "HELP", "True")
-Gek_Trade  = Word("Traders", "TRADE", "True")
-Gek_Lore   = Word("Traders", "LORE", "True")
-Gek_Tech   = Word("Traders", "TECH", "True")
-Gek_Threat = Word("Traders", "THREAT", "True")
-Gek_Misc   = Word("Traders", "MISC", "True")
+-- Reward1 Changes --
+  KnowledgeStone_R = Reward1("WORD_STONE_R", "None") -- Function(Id, Race)
+  WordStation_R    = Reward1("WORD_STATION_R", "None") 
+  Atlas_Orb_R      = Reward1("WORD_ATLAS_ORB", "Atlas")
 
-Korvax_Direct = Word("Explorers", "DIRECTIONS", "True")
-Korvax_Help   = Word("Explorers", "HELP", "True")
-Korvax_Trade  = Word("Explorers", "TRADE", "True")
-Korvax_Lore   = Word("Explorers", "LORE", "True")
-Korvax_Tech   = Word("Explorers", "TECH", "True")
-Korvax_Threat = Word("Explorers", "THREAT", "True")
-Korvax_Misc   = Word("Explorers", "MISC", "True")
+-- Reward2 Changes --
+  KnowledgeStone_W = Reward2("None", "MISC", "False") -- Function(Race, Category, UseCategory)
+  WordStation_W    = Reward2("None", "MISC", "False")
+  Atlas_Orb_W      = Reward2("Atlas", "MISC", "False")
+  
+  Gek_Direct = Reward2("Traders", "DIRECTIONS", "True")
+  Gek_Help   = Reward2("Traders", "HELP", "True")
+  Gek_Trade  = Reward2("Traders", "TRADE", "True")
+  Gek_Lore   = Reward2("Traders", "LORE", "True")
+  Gek_Tech   = Reward2("Traders", "TECH", "True")
+  Gek_Threat = Reward2("Traders", "THREAT", "True")
+  Gek_Misc   = Reward2("Traders", "MISC", "True")
+  
+  Korvax_Direct = Reward2("Explorers", "DIRECTIONS", "True")
+  Korvax_Help   = Reward2("Explorers", "HELP", "True")
+  Korvax_Trade  = Reward2("Explorers", "TRADE", "True")
+  Korvax_Lore   = Reward2("Explorers", "LORE", "True")
+  Korvax_Tech   = Reward2("Explorers", "TECH", "True")
+  Korvax_Threat = Reward2("Explorers", "THREAT", "True")
+  Korvax_Misc   = Reward2("Explorers", "MISC", "True")
+  
+  Vykeen_Direct = Reward2("Warriors", "DIRECTIONS", "True")
+  Vykeen_Help   = Reward2("Warriors", "HELP", "True")
+  Vykeen_Trade  = Reward2("Warriors", "TRADE", "True")
+  Vykeen_Lore   = Reward2("Warriors", "LORE", "True")
+  Vykeen_Tech   = Reward2("Warriors", "TECH", "True")
+  Vykeen_Threat = Reward2("Warriors", "THREAT", "True")
+  Vykeen_Misc   = Reward2("Warriors", "MISC", "True")
 
-Vykeen_Direct = Word("Warriors", "DIRECTIONS", "True")
-Vykeen_Help   = Word("Warriors", "HELP", "True")
-Vykeen_Trade  = Word("Warriors", "TRADE", "True")
-Vykeen_Lore   = Word("Warriors", "LORE", "True")
-Vykeen_Tech   = Word("Warriors", "TECH", "True")
-Vykeen_Threat = Word("Warriors", "THREAT", "True")
-Vykeen_Misc   = Word("Warriors", "MISC", "True")
-
--- Rewards Changes --
-Gek_Monolith    = Rewards("TEACHWORD_TRA") -- Function(Reward Id)
-Korvax_Monolith = Rewards("TEACHWORD_EXP")
-Vykeen_Monolith = Rewards("TEACHWORD_WAR")
+-- Reward3 Changes --
+  Gek_Monolith    = Reward3("TEACHWORD_TRA") -- Function(Id)
+  Korvax_Monolith = Reward3("TEACHWORD_EXP")
+  Vykeen_Monolith = Reward3("TEACHWORD_WAR")
+  Atlas_Monolith  = Reward3("TEACHWORD_ATLAS")
 
 -- Word Queues --
--- KnoledgeStone_W is repeated as many as KnowledgeStone minus 1. (minus 1 is to account for the original reward section)
-KnowledgeStone_Q = string.rep(KnowledgeStone_W, KnowledgeStone - 1)
-WordStation_Q    = string.rep(WordStation_W, WordStation - 1)
-
-Gek_Direct_Q = string.rep(Gek_Direct, NPC - 1)
-Gek_Help_Q   = string.rep(Gek_Help, NPC - 1)
-Gek_Trade_Q  = string.rep(Gek_Trade, NPC - 1)
-Gek_Lore_Q   = string.rep(Gek_Lore, NPC - 1)
-Gek_Tech_Q   = string.rep(Gek_Tech, NPC - 1)
-Gek_Threat_Q = string.rep(Gek_Threat, NPC - 1)
-Gek_Misc_Q   = string.rep(Gek_Misc, NPC - 1)
-
-Korvax_Direct_Q = string.rep(Korvax_Direct, NPC - 1)
-Korvax_Help_Q   = string.rep(Korvax_Help, NPC - 1)
-Korvax_Trade_Q  = string.rep(Korvax_Trade, NPC - 1)
-Korvax_Lore_Q   = string.rep(Korvax_Lore, NPC - 1)
-Korvax_Tech_Q   = string.rep(Korvax_Tech, NPC - 1)
-Korvax_Threat_Q = string.rep(Korvax_Threat, NPC - 1)
-Korvax_Misc_Q   = string.rep(Korvax_Misc, NPC - 1)
-
-Vykeen_Direct_Q = string.rep(Vykeen_Direct, NPC - 1)
-Vykeen_Help_Q   = string.rep(Vykeen_Help, NPC - 1)
-Vykeen_Trade_Q  = string.rep(Vykeen_Trade, NPC - 1)
-Vykeen_Lore_Q   = string.rep(Vykeen_Lore, NPC - 1)
-Vykeen_Tech_Q   = string.rep(Vykeen_Tech, NPC - 1)
-Vykeen_Threat_Q = string.rep(Vykeen_Threat, NPC - 1)
-Vykeen_Misc_Q   = string.rep(Vykeen_Misc, NPC - 1)
-
-Gek_Monolith_Q    = string.rep(Gek_Monolith, Monolith - 1)
-Korvax_Monolith_Q = string.rep(Korvax_Monolith, Monolith - 1)
-Vykeen_Monolith_Q = string.rep(Vykeen_Monolith, Monolith - 1)
+  KnowledgeStone_Q = string.rep(KnowledgeStone_W, KnowledgeStone - 1) -- KnoledgeStone_W is repeated as many as KnowledgeStone minus 1. (minus 1 is to account for the original reward section)
+  WordStation_Q    = string.rep(WordStation_W, WordStation - 1)
+  Atlas_Orb_Q      = string.rep(Atlas_Orb_W, Atlas_Orb - 1)
+  Gek_Direct_Q = string.rep(Gek_Direct, NPC - 1)
+  Gek_Help_Q   = string.rep(Gek_Help, NPC - 1)
+  Gek_Trade_Q  = string.rep(Gek_Trade, NPC - 1)
+  Gek_Lore_Q   = string.rep(Gek_Lore, NPC - 1)
+  Gek_Tech_Q   = string.rep(Gek_Tech, NPC - 1)
+  Gek_Threat_Q = string.rep(Gek_Threat, NPC - 1)
+  Gek_Misc_Q   = string.rep(Gek_Misc, NPC - 1)
+  Korvax_Direct_Q = string.rep(Korvax_Direct, NPC - 1)
+  Korvax_Help_Q   = string.rep(Korvax_Help, NPC - 1)
+  Korvax_Trade_Q  = string.rep(Korvax_Trade, NPC - 1)
+  Korvax_Lore_Q   = string.rep(Korvax_Lore, NPC - 1)
+  Korvax_Tech_Q   = string.rep(Korvax_Tech, NPC - 1)
+  Korvax_Threat_Q = string.rep(Korvax_Threat, NPC - 1)
+  Korvax_Misc_Q   = string.rep(Korvax_Misc, NPC - 1)
+  Vykeen_Direct_Q = string.rep(Vykeen_Direct, NPC - 1)
+  Vykeen_Help_Q   = string.rep(Vykeen_Help, NPC - 1)
+  Vykeen_Trade_Q  = string.rep(Vykeen_Trade, NPC - 1)
+  Vykeen_Lore_Q   = string.rep(Vykeen_Lore, NPC - 1)
+  Vykeen_Tech_Q   = string.rep(Vykeen_Tech, NPC - 1)
+  Vykeen_Threat_Q = string.rep(Vykeen_Threat, NPC - 1)
+  Vykeen_Misc_Q   = string.rep(Vykeen_Misc, NPC - 1)
+  Gek_Monolith_Q    = string.rep(Gek_Monolith, Monolith - 1)
+  Korvax_Monolith_Q = string.rep(Korvax_Monolith, Monolith - 1)
+  Vykeen_Monolith_Q = string.rep(Vykeen_Monolith, Monolith - 1)
+  Atlas_Monolith_Q  = string.rep(Atlas_Monolith, Monolith_Atlas - 1)
 
 -- File Settings --
-FileName    = "More Words 1.0.pak" -- can be changed to the name you want the mod but make sure to keep .pak at the end
-ModAuthor   = "JustRuthless" -- only for reference
-LuaAuthor   = "JustRuthless" -- only for reference
-NMS_Version = "Leviathan 3.91" -- only for reference
+FileName    = "More Words 1.01.pak"
+ModAuthor   = "JustRuthless"
+LuaAuthor   = "JustRuthless"
+NMS_Version = "Leviathan 3.92"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
 FileSource2 = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
-FileSource3 = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/INTERACTIVE/WORDSTATION/ENTITIES/WORDSTATION.ENTITY.MBIN"
+FileSource3 = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE/ENTITIES/WORDSTONE.ENTITY.MBIN"
+FileSource4 = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/INTERACTIVE/WORDSTATION/ENTITIES/WORDSTATION.ENTITY.MBIN"
+FileSource5 = "MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/PATHORB/PATHORB/ENTITIES/ORBSTONE_1.ENTITY.MBIN"
+
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -156,30 +175,45 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["LUA_AUTHOR"]    = LuaAuthor,
   ["NMS_VERSION"]   = NMS_Version,
   ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= FileSource1,
-					["EXML_CHANGE_TABLE"] = 
-					{
-						{-- adds word station reward section after word reward section
+  {
+    {
+      ["MBIN_CHANGE_TABLE"] = 
+      { 
+        {
+          ["MBIN_FILE_SOURCE"]  = FileSource1,
+          ["EXML_CHANGE_TABLE"] = 
+          {
+            {-- adds knowledge stone reward section after word section
               ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
               ["ADD_OPTION"] = "ADDafterSECTION",
-              ["ADD"] = WordStation_R, 
+              ["ADD"] = KnowledgeStone_R,
+            },
+            {-- adds word station reward section after word section
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] = WordStation_R,
+            },
+            {-- adds atlas orb word reward section after techword_atlas section
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TEACHWORD_ATLAS"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] = Atlas_Orb_R,
+            },
+            {-- adds more words to knowledge stones
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WORD_STONE_R", "PercentageChance", "IGNORE"},
+              ["ADD_OPTION"] = "ADDafterSECTION",
+              ["ADD"] = KnowledgeStone_Q,
             },
             {-- adds more words to word stations/encyclopedias
               ["SPECIAL_KEY_WORDS"] = {"Id", "WORD_STATION_R", "PercentageChance", "IGNORE"},
               ["ADD_OPTION"] = "ADDafterSECTION",
-              ["ADD"] = WordStation_Q, 
+              ["ADD"] = WordStation_Q,
             },
-            {-- adds more words to knowledge stones
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WORD", "PercentageChance", "IGNORE"},
+            {-- adds more words to atlas orbs
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WORD_ATLAS_ORB", "PercentageChance", "IGNORE"},
               ["ADD_OPTION"] = "ADDafterSECTION",
-              ["ADD"] = KnowledgeStone_Q,
+              ["ADD"] = Atlas_Orb_Q,
             },
-            {
+            {-- changes reward choice to give all for npc learn word option reward
               ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_WORD_DIRECT"},
               ["VALUE_CHANGE_TABLE"] =
               {
@@ -326,7 +360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {"RewardChoice", "GiveAll"},
               },
             },
-            {
+            {-- removes the misc word
               ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_WORD_DIRECT", "UseCategory", "False"},
               ["SECTION_UP_SPECIAL"] = 1,
               ["REMOVE"] = "SECTION",
@@ -431,7 +465,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["SECTION_UP_SPECIAL"] = 1,
               ["REMOVE"] = "SECTION",
             },
-            {
+            {-- adds more words to gek learn word options
               ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_WORD_DIRECT", "PercentageChance", "IGNORE"},
               ["ADD_OPTION"] = "ADDafterSECTION",
               ["ADD"] = Gek_Direct_Q,
@@ -466,7 +500,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDafterSECTION",
               ["ADD"] = Gek_Misc_Q,
             },
-            {
+            {-- adds more words to korvax learn word options
               ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_WORD_DIRECT", "PercentageChance", "IGNORE"},
               ["ADD_OPTION"] = "ADDafterSECTION",
               ["ADD"] = Korvax_Direct_Q,
@@ -501,7 +535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDafterSECTION",
               ["ADD"] = Korvax_Misc_Q,
             },
-            {
+            {-- adds more words to vykeen learn word options
               ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_WORD_DIRECT", "PercentageChance", "IGNORE"},
               ["ADD_OPTION"] = "ADDafterSECTION",
               ["ADD"] = Vykeen_Direct_Q,
@@ -536,574 +570,454 @@ NMS_MOD_DEFINITION_CONTAINER =
               ["ADD_OPTION"] = "ADDafterSECTION",
               ["ADD"] = Vykeen_Misc_Q,
             },
-					}
-				},
-			}
+          }
+        },
+      }
     },
     {
       ["MBIN_CHANGE_TABLE"] = 
-      {   
+      {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource2,
           ["EXML_CHANGE_TABLE"] = 
           {
-            {-- adds more word rewards to monolith plaques
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_1"},
+            {-- adds more word rewards to gek monolith plaques
+              ["SPECIAL_KEY_WORDS"] = {"Name", "TRA_1_PLAQUE_OPT_1"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
+              ["REPLACE_TYPE"] = "ALL",
               ["ADD"] = Gek_Monolith_Q,
             },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_2"},
+            {-- adds more word rewards to korvax monolith plaques
+              ["SPECIAL_KEY_WORDS"] = {"Name", "EXP_1_PLAQUE_OPT_1"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_3"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_4"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_5"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_6"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_7"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_8"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_9"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_10"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_11"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_12"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_13"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_14"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_15"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_16"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_17"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_18"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_19"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_20"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_21"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_22"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_23"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_24"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_25"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_26"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_27"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_28"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_29"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "TRADER_PLAQUE_30"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Gek_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_1"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
+              ["REPLACE_TYPE"] = "ALL",
               ["ADD"] = Korvax_Monolith_Q,
             },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_2"},
+            {-- adds more word rewards to vykeen monolith plaques
+              ["SPECIAL_KEY_WORDS"] = {"Name", "WAR_1_PLAQUE_OPT_1"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_3"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_4"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_5"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_6"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_7"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_8"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_9"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_10"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_11"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_12"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_13"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_14"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_15"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_16"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_17"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_18"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_19"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_20"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_21"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_22"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_23"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_24"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_25"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_26"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_27"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_28"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_29"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_30"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_31"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_32"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "EXPLORER_PLAQUE_33"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Korvax_Monolith_Q,
-            },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_1"},
-              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
+              ["REPLACE_TYPE"] = "ALL",
               ["ADD"] = Vykeen_Monolith_Q,
             },
-            {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_2"},
+            {-- adds more atlas word rewards to monolith multiple choice questions
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_2", "Name", "TRA_MON_OPT_A_2"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_3"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_14", "Name", "TRA_MON_OPT_B_14"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_4"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_1", "Name", "TRA_MON_OPT_A_1"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_5"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_12", "Name", "TRA_MON_OPT_A_12"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_6"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_12", "Name", "TRA_MON_OPT_B_12"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_7"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_18", "Name", "TRA_MON_OPT_B_18"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_8"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_3", "Name", "TRA_MON_OPT_A_3"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_9"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_3", "Name", "TRA_MON_OPT_B_3"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_10"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_16", "Name", "TRA_MON_OPT_B_16"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_11"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_4", "Name", "TRA_MON_OPT_A_4"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_12"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_5", "Name", "TRA_MON_OPT_A_5"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_13"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_6", "Name", "TRA_MON_OPT_A_6"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_14"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_7", "Name", "TRA_MON_OPT_A_7"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_15"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_7", "Name", "TRA_MON_OPT_B_7"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_16"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_8", "Name", "TRA_MON_OPT_A_8"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_17"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_8", "Name", "TRA_MON_OPT_B_8"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_18"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_9", "Name", "TRA_MON_OPT_A_9"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_19"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_9", "Name", "TRA_MON_OPT_B_9"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_20"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_10", "Name", "TRA_MON_OPT_A_10"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_21"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_10", "Name", "TRA_MON_OPT_B_10"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_22"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_11", "Name", "TRA_MON_OPT_A_11"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_23"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_15", "Name", "TRA_MON_OPT_B_15"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_24"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_17", "Name", "TRA_MON_OPT_A_17"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_25"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_17", "Name", "TRA_MON_OPT_C_17"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_26"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_20", "Name", "TRA_MON_OPT_B_20"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_27"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_19", "Name", "TRA_MON_OPT_A_19"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_28"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_19", "Name", "TRA_MON_OPT_B_19"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_29"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_13", "Name", "TRA_MON_OPT_A_13"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "WARRIOR_PLAQUE_30"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_13", "Name", "TRA_MON_OPT_B_13"},
               ["PRECEDING_KEY_WORDS"] = {"Rewards"},
-              ["SECTION_ACTIVE"] = 1,
-              ["ADD"] = Vykeen_Monolith_Q,
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "TRA_MON_13", "Name", "TRA_MON_OPT_C_13"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_1", "Name", "EXP_MON_OPT_A_1"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_2", "Name", "EXP_MON_OPT_A_2"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_8", "Name", "EXP_MON_OPT_A_8"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_8", "Name", "EXP_MON_OPT_B_8"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_13", "Name", "EXP_MON_OPT_B_13"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_3", "Name", "EXP_MON_OPT_A_3"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_4", "Name", "EXP_MON_OPT_A_4"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_12", "Name", "EXP_MON_OPT_B_12"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_16", "Name", "EXP_MON_OPT_A_16"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_16", "Name", "EXP_MON_OPT_B_16"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_5", "Name", "EXP_MON_OPT_A_5"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_6", "Name", "EXP_MON_OPT_A_6"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_17", "Name", "EXP_MON_OPT_B_17"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_7", "Name", "EXP_MON_OPT_A_7"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_9", "Name", "EXP_MON_OPT_A_9"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_9", "Name", "EXP_MON_OPT_B_9"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_10", "Name", "EXP_MON_OPT_A_10"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_10", "Name", "EXP_MON_OPT_B_10"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_10", "Name", "EXP_MON_OPT_C_10"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_11", "Name", "EXP_MON_OPT_B_11"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_14", "Name", "EXP_MON_OPT_A_14"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_14", "Name", "EXP_MON_OPT_B_14"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_15", "Name", "EXP_MON_OPT_A_15"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_15", "Name", "EXP_MON_OPT_B_15"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_18", "Name", "EXP_MON_OPT_B_18"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "EXP_MON_19", "Name", "EXP_MON_OPT_A_19"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_11", "Name", "WAR_MON_OPT_B_11"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_1", "Name", "WAR_MON_OPT_A_1"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_12", "Name", "WAR_MON_OPT_A_12"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_12", "Name", "WAR_MON_OPT_B_12"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_12", "Name", "WAR_MON_OPT_C_12"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_2", "Name", "WAR_MON_OPT_A_2"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_3", "Name", "WAR_MON_OPT_A_3"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_13", "Name", "WAR_MON_OPT_B_13"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_4", "Name", "WAR_MON_OPT_A_4"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_20", "Name", "WAR_MON_OPT_B_20"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_5", "Name", "WAR_MON_OPT_A_5"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_5", "Name", "WAR_MON_OPT_B_5"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_6", "Name", "WAR_MON_OPT_A_6"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_6", "Name", "WAR_MON_OPT_B_6"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_14", "Name", "WAR_MON_OPT_A_14"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_14", "Name", "WAR_MON_OPT_B_14"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_15", "Name", "WAR_MON_OPT_A_15"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_7", "Name", "WAR_MON_OPT_A_7"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_7", "Name", "WAR_MON_OPT_B_7"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_8", "Name", "WAR_MON_OPT_A_8"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_9", "Name", "WAR_MON_OPT_A_9"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_10", "Name", "WAR_MON_OPT_B_10"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_10", "Name", "WAR_MON_OPT_C_10"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_16", "Name", "WAR_MON_OPT_A_16"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_16", "Name", "WAR_MON_OPT_B_16"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_17", "Name", "WAR_MON_OPT_B_17"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_18", "Name", "WAR_MON_OPT_B_18"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id", "WAR_MON_19", "Name", "WAR_MON_OPT_A_19"},
+              ["PRECEDING_KEY_WORDS"] = {"Rewards"},
+              ["ADD"] = Atlas_Monolith_Q,
             },
           }
         },
@@ -1111,9 +1025,27 @@ NMS_MOD_DEFINITION_CONTAINER =
     },
     {
       ["MBIN_CHANGE_TABLE"] = 
-      {   
+      {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource3,
+          ["EXML_CHANGE_TABLE"] = 
+          {
+            { -- replaces the reward for Knowledge Stones to a newly added reward
+              ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Reward", "WORD_STONE_R"},
+              },
+            }, -- to separate Knowledge Stone reward so it can be changed without affecting others that used WORD reward
+          }
+        },
+      }
+    },
+    {
+      ["MBIN_CHANGE_TABLE"] = 
+      {
+        {
+          ["MBIN_FILE_SOURCE"]  = FileSource4,
           ["EXML_CHANGE_TABLE"] = 
           {
             { -- replaces the reward for Word Stations / Encyclopedias to a newly added reward
@@ -1122,10 +1054,28 @@ NMS_MOD_DEFINITION_CONTAINER =
               {
                 {"Reward", "WORD_STATION_R"},
               },
-            }, -- to separate Knowledge Stone and Encyclopedia rewards
+            }, -- to separate Encyclopedia rewards so it can be changed without affecting others that used WORD reward
           }
         },
       }
-		},
+    },
+    {
+      ["MBIN_CHANGE_TABLE"] = 
+      {
+        {
+          ["MBIN_FILE_SOURCE"]  = FileSource5,
+          ["EXML_CHANGE_TABLE"] = 
+          {
+            { -- replaces the reward for Atlas Orbs to a newly added reward
+              ["SPECIAL_KEY_WORDS"] = {"Reward", "TEACHWORD_ATLAS"},
+              ["VALUE_CHANGE_TABLE"] =
+              {
+                {"Reward", "WORD_ATLAS_ORB"},
+              },
+            }, -- to separate Atlas Orbs reward so it can be changed without affecting others that used TEACHWORD_ATLAS reward
+          }
+        },
+      }
+    },
 	}
 }
