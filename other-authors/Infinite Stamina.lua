@@ -1,7 +1,7 @@
 Author = "aharttsx"
 ModName = "Infinite Stamina"
 BaseDescription = "Increases Run and Walk Speed for Traveler"
-GameVersion = "3.82"
+GameVersion = "3.93"
 ModVersion = "1.0"
 
 NMS_MOD_DEFINITION_CONTAINER = 
