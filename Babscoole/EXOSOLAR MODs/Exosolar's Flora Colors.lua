@@ -336,7 +336,7 @@ function GetColours(R,G,B,A)
     ]]
 end
 
-function CreateCoulorsProperty(PaletteColours)
+function CreateColoursProperty(PaletteColours)
     local PropertiesString = ""
 
     for j = 1, #PaletteColours do
@@ -355,22 +355,22 @@ function CreateCoulorsProperty(PaletteColours)
     return PropertyColoursString
 end
 
-local BaseCoulorPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local Palette = DataTable[i]["PALETTE"]
     local PaletteColours = DataTable[i]["COLOURS"]
-    local PaletteNumCoulours = DataTable[i]["NUMCOLOURS"]
+    local PaletteNumColours = DataTable[i]["NUMCOLOURS"]
            
-    BaseCoulorPalettesTable[#BaseCoulorPalettesTable +1 ] =
+    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumCoulours },
+        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["PRECEDING_KEY_WORDS"] = { "Colours" },
         ["REMOVE"] = "SECTION"
     }
 
-    BaseCoulorPalettesTable[#BaseCoulorPalettesTable +1 ] = 
+    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] = 
     {
-        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumCoulours },
-        ["ADD"] = CreateCoulorsProperty(PaletteColours)
+        ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
+        ["ADD"] = CreateColoursProperty(PaletteColours)
     }
 end
