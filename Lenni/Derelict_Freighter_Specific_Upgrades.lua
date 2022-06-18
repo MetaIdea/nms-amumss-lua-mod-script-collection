@@ -42,6 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
+-- This function will create a single Rewartable item, the name is provide through parameter
 function GetUpgrade(Upgrade)
     return [[
         <Property value="GcRewardTableItem.xml">
