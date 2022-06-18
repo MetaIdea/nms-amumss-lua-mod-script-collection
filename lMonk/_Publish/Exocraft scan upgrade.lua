@@ -1,12 +1,12 @@
---------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 local desc = [[
-  Add planetary archive, base computer, minor settlement, trading post,
-  ancient plaque, remote terminal, secure facility, distress signals,
-  sentinel pillar and underwater targets to the exocraft scanner.
+  Add settlements, planetary archive, base computer, minor settlement,
+  trading post, ancient plaque, remote terminal, secure facility,
+  distress signals, sentinel pillar and underwater targets to the exocraft scanner.
   Re-arange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
-]]------------------------------------------------------------------------
-mod_version = 1.61
+]]----------------------------------------------------------------------------------
+mod_version = 1.65
 
 local scan_table = {
 	{
@@ -82,7 +82,7 @@ local scan_table = {
 	},{
 		name  = 'UI_LIBRARY_ENTRANCE_DESC',
 		scan  = {'LIBRARY'},
-		tech  = {'VEHICLE_SCAN2'},
+		tech  = {'VEHICLE_SCAN1'},
 		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.LIBRARY.DDS'
 	},{
 		name  = 'UI_RECOVER_BASE_MARKER',
@@ -94,6 +94,11 @@ local scan_table = {
 		scan  = {'DRONE_HIVE'},
 		tech  = {'VEHICLE_SCAN2'},
 		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS'
+	},{
+		name  = 'UI_SETTLEMENT_LABEL',
+		scan  = {'SETTLEMENT'},
+		tech  = {'VEHICLE_SCAN2'},
+		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SETTLEMENT.DDS'
 	}
 }
 function scan_table:GetEntry(ste)
@@ -145,12 +150,6 @@ local scan_events = {
 		osd   = 'SIGNAL_PLAQUE',
 		tip   = 'TIP_PLAQUE',
 	},{
-		event = 'DRONE_HIVE',
-		class = 'DroneHive',
-		osd   = 'UI_DRONEHIVE_LOCATED_OSD',
-		mlbl  = 'UI_SENTINEL_HIVE_NAME',
-		tip   = 'UI_DRONEHIVE_LOCATED',
-	},{
 		event = 'BASE',
 		class = 'Base',
 		osd   = 'SIGNAL_BASE',
@@ -160,6 +159,19 @@ local scan_events = {
 		class = 'LargeBuilding',
 		osd   = 'SIGNAL_LIBRARY',
 		tip   = 'TIP_LIBRARY',
+	},{
+		event = 'DRONE_HIVE',
+		class = 'DroneHive',
+		osd   = 'UI_DRONEHIVE_LOCATED_OSD',
+		mlbl  = 'UI_SENTINEL_HIVE_NAME',
+		tip   = 'UI_DRONEHIVE_LOCATED',
+	},{
+		event = 'SETTLEMENT',
+		blocal= 'Random',
+		btype = 'UnownedSettlement',
+		class = 'Settlement_Hub',
+		osd   = 'UI_SETTLEMENT_LOCATED_OSD',
+		tip   = 'UI_SETTLEMENT_LOCATED',
 	}
 }
 
@@ -323,11 +335,11 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.91,
+	NMS_VERSION			= 3.93,
 	MOD_DESCRIPTION		= desc,
 	ADD_FILES = {
 		{
-			EXTERNAL_FILE_SOURCE= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/MenuIcons/QUICKMENU/VEHICLESCAN.DDS',
+			EXTERNAL_FILE_SOURCE= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/QuickMenu/VEHICLESCAN.DDS',
 			FILE_DESTINATION	= 'TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/VEHICLESCAN.DDS'
 		},
 		{
