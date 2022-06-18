@@ -9,7 +9,6 @@ POSSIBLE_UPGRADES =
 -- "FreighterTechExp",
 }
 
---Loot part not functional!
 OVERWRITE_LOOT =
 {
     "R_ABAND_CRATE",
