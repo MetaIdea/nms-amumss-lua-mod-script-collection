@@ -1,8 +1,8 @@
 Author = "aharttsx"
 ModName = "Companion Riding Improvements"
 BaseDescription = "Increases Companion ride speeds, reduces stamina drain rate, improves mounted camera rotation range, and sligtly shortens teleport-to-player distance to help prevent despawning as frequently"
-GameVersion = "3.82"
-ModVersion = "1.2"
+GameVersion = "3.93"
+ModVersion = "1.3"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 FileSource2 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREPETBEHAVIOURTABLE.MBIN"
 FileSource3 = "GCCAMERAGLOBALS.GLOBAL.MBIN"
@@ -53,6 +53,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							{
 								{"StaminaDrainModifierMin",		"0.3"},	-- Original= 1
 								{"StaminaDrainModifierMax",	"0.6"},		-- original= 0.7
+							},
+						},
+						
+						{	-- removes cooldown time so pet can (hopefully) teleport to player more reliably
+							["PRECEDING_KEY_WORDS"] = {"TeleportToPlayer",},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"CooldownTime",		"0"},	-- Original= 10
 							},
 						},
 					},					
