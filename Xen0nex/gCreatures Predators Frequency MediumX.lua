@@ -1,8 +1,8 @@
 Author = "Gumsk"				--Edited by Xen0nex
 ModName = "gPredators Frequency"
 ModNameSub = "MediumX"
-BaseDescription = "More dense predators"
-GameVersion = "382"
+BaseDescription = "More dense predators; edited to tone down the effect to keep species sync with vanilla players"
+GameVersion = "393"
 ModVersion = "a"
 
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPLAYERPREDATORMED.MBIN"
