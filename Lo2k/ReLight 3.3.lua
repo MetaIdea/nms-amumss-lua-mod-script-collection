@@ -105,7 +105,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 3.2.pak", 
+["MOD_FILENAME"] 			= "ReLight 3.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "3.91",
 ["MOD_DESCRIPTION"]			= "This mod rework most of the lights placed in NPC building",
@@ -615,8 +615,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},						
 					},
 				},	
-				{  -- Removes Tech shop front lights lens flare from Korvax outposts
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\SCIENTIFICPARTS\MODULES\WALLMODULE_TECHSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",
+				{  -- Removes Tech shop front lights lens flare from ALl races outposts
+					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\SCIENTIFICPARTS\MODULES\WALLMODULE_TECHSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\MODULES\WALLMODULE_TECHSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",			"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\WARRIORPARTS\MODULES\WALLSHORTMODULE_TECHSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -1059,7 +1059,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"] 	= "SECTION",
 						},							
 					},
-				},				
+				},	
+				{  -- BED
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BED\BEDA.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{		
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "Bed"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='newLight1', ty=1.0, f = 'linear', i=2500, g=0.98, b=0.98}),  
+						},
+					},
+				},	
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\EXTERIORPROPS\FLOODLIGHTS.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -3230,8 +3241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = InsertNewLight({name='newLight', ty=0.516384, i=20000, r=0.4, g=0.72, b=0.0}),  
 						},
 					},
-				},
-				]]--
+				},			
 				{  -- BIG MARROW BULBS
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\CAVE\MEDIUMPROP\MEDIUMGLOWPLANT.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -3242,7 +3252,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = InsertNewLight({name='newLight', ty=1.0, i=40000, r=0.4, g=0.72, b=0.0}),  
 						},
 					},
-				},				
+				},		]]--		
 --[[				
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\MISSIONSHOP.SCENE.MBIN",
@@ -3449,6 +3459,68 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},						
 					},
 				},	
+				{  -- yellow 8 faces data
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\SMALLPROPS\SMALLPROPB.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"10000.0"},  --original : 30000.0
+							},
+						},						
+					},
+				},	
+				{  -- shelter layout_3 white light
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLLIGHTS\WALLLIGHTA.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LightLOD3"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='RightLight1',tx=0, ty=0, tz=-0.3, i=5000}),
+						},						
+					},
+				},	
+				{  -- shelter layout_3 white light
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='frontLight1',tx=0, ty=1.6, tz=-1.0, rx=0, ry=0, rz=0, fov=160, i=22000, r=0.5, g=1.0, b=1.0,}),
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='backLight1',tx=0, ty=1.6, tz=1.0, rx=0, ry=180, rz=0, fov=160, i=22000, r=0.5, g=1.0, b=1.0,}),
+						},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
+							["REMOVE"] 	= "SECTION",
+						},		
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2",},
+							["REMOVE"] 	= "SECTION",
+						},	
+
+					
+					},
+				},
 			}
 		}
 	}	
