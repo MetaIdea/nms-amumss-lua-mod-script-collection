@@ -1,3 +1,7 @@
+ModName = "_Extra Savage Sentinels by ExosolarX"
+GameVersion = "3_93"
+Description = "Increases the difficulty of Sentinels by changing aggression, firrate, range, sight distance, etc."
+
 function AddWaveSequence (Set)
     return
 [[<Property value="GcSentinelSpawnSequence.xml">
@@ -22,7 +26,7 @@ AddQuadSoloSet =
           <Property name="MaxAmount" value="1" />
         </Property>
       </Property>
-      <Property name="ReinforceAt" value="2" />
+      <Property name="ReinforceAt" value="0" />
     </Property>]]
 
 function AddSentinels (SentinelType, MinAmount, MaxAmount)
@@ -39,10 +43,11 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Extra Savage Sentinels by ExosolarX.pak",
+["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
 ["MOD_AUTHOR"]				= "Exosolar",
 ["LUA_AUTHOR"]				= "Babscoole",		--Edited by Xen0nex
-["NMS_VERSION"]				= "3.87",
+["MOD_DESCRIPTION"]			= Description,
+["NMS_VERSION"]				= "3.93",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -115,12 +120,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddWaveSequence ("QUAD_SOLO")			--Should add a single Sentinel Quad spawn between the initial drones and the Mech
 						},
-						{
+						--WANTED_4_EX already has Quads
+						--[[{
 							["SPECIAL_KEY_WORDS"] = {"Id","WANTED_4_EX"},	--Wanted Level 4, "Extreme" version spawns?
 							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnSequence.xml"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = AddWaveSequence ("QUAD_SOLO")			--Should add a single Sentinel Quad spawn between the initial drones and the Mech
-						},
+						},]]
 						{
 							--["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"GcSentinelSpawnData.xml"},
