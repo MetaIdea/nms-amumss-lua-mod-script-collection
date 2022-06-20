@@ -1,8 +1,8 @@
 Author = "Gumsk"
 ModName = "gGame"
 ModNameSub = "Hotspot+TorchX"
-BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "382"
+BaseDescription = "Various modifications to gameplay globals; just Torch improvements and increased hotspot scanning range"
+GameVersion = "393"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
