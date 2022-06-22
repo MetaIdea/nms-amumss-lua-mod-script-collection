@@ -1,3 +1,4 @@
+--  For use with AMUMSS 4.0 + only
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "_Trading.Post.Revamp.V.1.7.Part.2.pak",
