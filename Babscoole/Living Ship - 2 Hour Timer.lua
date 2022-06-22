@@ -1,3 +1,4 @@
+--  For use with AMUMSS 4.0 + only
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "Living Ship Mission Timer (2 Hours).pak",
