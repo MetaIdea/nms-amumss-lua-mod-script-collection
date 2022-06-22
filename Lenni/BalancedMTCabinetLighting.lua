@@ -1,8 +1,8 @@
-LightIntensity	=	1
+LightIntensity	=	0.7
 
-Light2	=	2000
-Light3	=	6000
-Light5	=	2000
+Light2	=	8000
+Light3	=	8000
+Light5	=	10000
 
 Light2	=	LightIntensity * Light2
 Light3	=	LightIntensity * Light3
@@ -354,8 +354,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				
+				-- Modify minor settlement MT cabinet
 				{
 					["MBIN_FILE_SOURCE"]    = {{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN]],[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPONSS.SCENE.MBIN]]}},
+				},
+				
+				{
+					["MBIN_FILE_SOURCE"]	= 	{
+													"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN",
+													"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPONSS.SCENE.MBIN",					
+												},
 					["EXML_CHANGE_TABLE"]	= 
 					{
 						{
@@ -401,15 +409,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Value",	"linear"},
 							},
 						},
+					},
+				},
+				
+				{
+					["MBIN_FILE_SOURCE"]	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"]	= 
+					{
 						{
-							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight2"},	--I have no clue what this is
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight2", "Name", "INTENSITY"},	--Right
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"Value",	Light2},		--original : 10000; modded: 4000
+								{"Value",	Light2},		--original : 8000
 							},
-						},	
+						},
 						{
-							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight2"},	--I have no clue what this is
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight2"},	--Right
 							["INTEGER_TO_FLOAT"]	=	"FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
@@ -417,16 +432,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TransY",	"0.05"},		--original : 0
 								-- {"TransZ",	"2"},		--original : 0.785311
 							},
-						},	
+						},
+						
 						{
-							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight5"},	--I have no clue what this is
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight5", "Name", "INTENSITY"},	--Center
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{"Value",	Light5},		--original : 10000
 							},
-						},	
+						},
 						{
-							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight5"},	--I have no clue what this is
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight5"},	--Center
 							["INTEGER_TO_FLOAT"]	=	"FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
@@ -434,17 +450,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TransY",	"-0.2"},		--original : 0.2
 								{"TransZ",	"3"},		--original : 1.2
 							},
-						},	
+						},
+						
 						{
-							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3"},	--I have no clue what this is
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3", "Name", "INTENSITY"},	--left
 							["INTEGER_TO_FLOAT"]	=	"FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
 								{"Value",	Light3},	--original : 8000
 							},
-						},	
+						},
 						{
-							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3"},	--I have no clue what this is
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3"},	--left
 							["INTEGER_TO_FLOAT"]	=	"FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
@@ -452,9 +469,39 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TransY",	"0.2"},	--original : 0
 								{"TransZ",	"1"},		--original : 0.785311
 							},
-						},	
+						},
 					},
 				},
+				
+				-- Modify Space Station MT cabinet
+				-- {
+					-- ["MBIN_FILE_SOURCE"]	=	"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPONSS.SCENE.MBIN",
+					-- ["EXML_CHANGE_TABLE"]	= 
+					-- {
+						-- {
+							-- ["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3", "Name", "INTENSITY"},	--left
+							-- ["INTEGER_TO_FLOAT"]	=	"FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {	
+								-- {"Value",	Light3},	--original : 8000
+							-- },
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3"},	--left
+							-- ["INTEGER_TO_FLOAT"]	=	"FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {	
+								-- {"TransX",	"-0.9"},	--original : -0.28914
+								-- {"TransY",	"0.2"},	--original : 0
+								-- {"TransZ",	"1"},		--original : 0.785311
+							-- },
+						-- },
+					-- },
+				-- },
+				
+				
+				
+				
 			}
 		}
 	}	
