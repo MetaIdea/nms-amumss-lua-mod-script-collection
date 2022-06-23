@@ -1,12 +1,21 @@
-LightIntensity	=	0.7
+LightIntensity		=	0.9
+SSLightIntensity	=	0.8
 
 Light2	=	8000
 Light3	=	8000
 Light5	=	10000
 
+SSLight2	=	8000
+SSLight3	=	7000
+SSLight5	=	10000
+
 Light2	=	LightIntensity * Light2
 Light3	=	LightIntensity * Light3
 Light5	=	LightIntensity * Light5
+
+SSLight2	=	SSLightIntensity * SSLight2
+SSLight3	=	SSLightIntensity * SSLight3
+SSLight5	=	SSLightIntensity * SSLight5
 
 
 --Lights copied from pre-Sentinel cabinet
@@ -354,7 +363,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				
-				-- Modify minor settlement MT cabinet
 				{
 					["MBIN_FILE_SOURCE"]    = {{[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN]],[[MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPONSS.SCENE.MBIN]]}},
 				},
@@ -378,30 +386,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						
 						{
-							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","COL_R"},
-							["REPLACE_TYPE"]		=	"ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"1.000000"},
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","COL_G"},
-							["REPLACE_TYPE"]		=	"ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"1.000000"},
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","COL_B"},
-							["REPLACE_TYPE"]		=	"ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"1.000000"},
-							},
-						},
-						{
 							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","FALLOFF"},
 							["REPLACE_TYPE"]		=	"ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -412,10 +396,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				
+				-- Modify minor settlement MT cabinet
 				{
 					["MBIN_FILE_SOURCE"]	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPON.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"]	= 
 					{
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","COL_R"},
+							["REPLACE_TYPE"]		=	"ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.91"},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","COL_G"},
+							["REPLACE_TYPE"]		=	"ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.93"},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","COL_B"},
+							["REPLACE_TYPE"]		=	"ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.945"},
+							},
+						},
+
 						{
 							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight2", "Name", "INTENSITY"},	--Right
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -474,30 +484,91 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				
 				-- Modify Space Station MT cabinet
-				-- {
-					-- ["MBIN_FILE_SOURCE"]	=	"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPONSS.SCENE.MBIN",
-					-- ["EXML_CHANGE_TABLE"]	= 
-					-- {
-						-- {
-							-- ["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3", "Name", "INTENSITY"},	--left
-							-- ["INTEGER_TO_FLOAT"]	=	"FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {	
-								-- {"Value",	Light3},	--original : 8000
-							-- },
-						-- },
-						-- {
-							-- ["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3"},	--left
-							-- ["INTEGER_TO_FLOAT"]	=	"FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {	
-								-- {"TransX",	"-0.9"},	--original : -0.28914
-								-- {"TransY",	"0.2"},	--original : 0
-								-- {"TransZ",	"1"},		--original : 0.785311
-							-- },
-						-- },
-					-- },
-				-- },
+				{
+					["MBIN_FILE_SOURCE"]	=	"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_WEAPONSS.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"]	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","COL_R"},
+							["REPLACE_TYPE"]		=	"ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.97"},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","COL_G"},
+							["REPLACE_TYPE"]		=	"ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.77"},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Type","LIGHT", "Name","COL_B"},
+							["REPLACE_TYPE"]		=	"ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.71"},
+							},
+						},
+
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight2", "Name", "INTENSITY"},	--Right
+							["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{"Value",	SSLight2},		--original : 8000
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight2"},	--Right
+							["INTEGER_TO_FLOAT"]	=	"FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{"TransX",	"0.5"},		--original : 0.289144
+								{"TransY",	"0.05"},		--original : 0
+								-- {"TransZ",	"2"},		--original : 0.785311
+							},
+						},
+						
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight5", "Name", "INTENSITY"},	--Center
+							["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{"Value",	SSLight5},		--original : 10000
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight5"},	--Center
+							["INTEGER_TO_FLOAT"]	=	"FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{"TransX",	"-0.1"},		--original : 0
+								{"TransY",	"-0.2"},		--original : 0.2
+								{"TransZ",	"3"},		--original : 1.2
+							},
+						},
+						
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3", "Name", "INTENSITY"},	--left
+							["INTEGER_TO_FLOAT"]	=	"FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{"Value",	SSLight3},	--original : 8000
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]	=	{"Name", "pointLight3"},	--left
+							["INTEGER_TO_FLOAT"]	=	"FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{	
+								{"TransX",	"-0.9"},	--original : -0.28914
+								{"TransY",	"0.2"},	--original : 0
+								{"TransZ",	"1"},		--original : 0.785311
+							},
+						},
+					},
+				},
 				
 				
 				
