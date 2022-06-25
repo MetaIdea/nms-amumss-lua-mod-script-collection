@@ -105,9 +105,9 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 3.3.pak", 
+["MOD_FILENAME"] 			= "ReLight 3.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.91",
+["NMS_VERSION"]				= "3.93",
 ["MOD_DESCRIPTION"]			= "This mod rework most of the lights placed in NPC building",
 ["MODIFICATIONS"] 			= 
 	{
@@ -1862,12 +1862,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot3LOD3"},  -- LOD independant Light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='YellowLight', ty=-0.006, sx=0.034934, sy=0.034934, sz=0.034934, i=5000, r='1.000', g='0.9227', b='0.5'}),  
+							["ADD"] = InsertNewLight({name='YellowLight', ty=5.0, rx=-90, ry=180, rz=90, sx=0.034934, sy=0.034934, sz=0.034934, fov=180, i=8000, r='1.000', g='0.93', b='0.6'}),  
 						},					
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "YellowLight"},  -- LOD independant top blue light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='BlueTopLight', ty=0.002763, rx=90, ry=0, rz=-90, sx=0.034934, sy=0.034934, sz=0.034934, fov=180, i=4000, r='0.000', g='0.600', b='1.000'}),  
+							["ADD"] = InsertNewLight({name='BlueTopLight', ty=30.0, rx=90, ry=0, rz=-90, sx=0.034934, sy=0.034934, sz=0.034934, fov=180, i=4000, r='0.000', g='0.600', b='1.000'}),  
 						},
 					},
 				},
@@ -2255,7 +2255,41 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = InsertNewLight({name='pointLight1', i=10000}),
 						},
 					},
-				}, 
+				}, 				
+				{  --settlement arabic lamp
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\TABLELAMP0.SCENE.MBIN",  
+					["EXML_CHANGE_TABLE"] 	= 
+					{	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "Lite"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TransY",	"0.15"},  --original : 0.536
+							},
+						},	
+					--[[	{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"10000.000000"},  --original : 1000.000000
+							},
+						},	]]--
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "Lite", "Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.897260"},  --original : 0.797260
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "Lite", "Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.797260"},  --original : 0.581
+							},
+						},						
+					},
+				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\CEILINGLIGHT.SCENE.MBIN",  -- ring of light
 					["EXML_CHANGE_TABLE"] 	= 
@@ -2587,42 +2621,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},	
 					},
-				},
-				{
+				},		
+				{  -- shelter layout_3 white light
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLLIGHTS\WALLLIGHTA.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LODDIST2"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{"Value",	"25.000000"},  --original : 15.000000
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LODDIST3"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{"Value",	"50.000000"},  --original : 20.000000
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "FOV"},
-							["REPLACE_TYPE"] 	= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{"Value",	"150.000000"},  --original : 360.000000
-							},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
+							["REMOVE"] 	= "SECTION",
 						},	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LightLOD0", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{"Value",	"8000.000000"},  --original : 5000.000000
-							},
-						},	
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LightLOD3"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='RightLight1',tx=0, ty=0, tz=-0.3, i=5000}),
+						},						
 					},
-				},		
+				},	
 				{  -- SHACK INTERIOR WALL DRAPE LIGHTS
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\HANGINGDRAPES\TRADERWALLDRAPE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -3141,7 +3163,51 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = InsertNewLight({name='spotLight7b',tx=0.1, ty=-5.46, tz=2.267, rx=90,sx=20, sy=20, sz=20, fov=180, f='quadratic', i=90000, r='0.000', g='0.828'}),
 						},						
 					},
-				},					
+				},		
+				{	--outlaws/pirates landing pads
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN",   --landing pad lights
+					["EXML_CHANGE_TABLE"] 	= 
+					{		
+						{  -- Create counter red light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LandingPadLight"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='ReverseLight',tx=0.1, ty=-5.46, tz=2.267, rx=90,sx=20, sy=20, sz=20, fov=180, f='quadratic', i=90000, g='0.0', b='0.0'}),
+						},	
+						{  -- ORIGINAL TOP RED LIGHT
+							["SPECIAL_KEY_WORDS"] = {"Name", "LandingPadLight",},
+							["REMOVE"] 	= "SECTION",
+						},							
+					},
+				},			
+				{  -- Removes pirate space station core lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\PIRATES\BACKSECTION\FLAREEFFECTBLOOMONLY_MAT.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								--{"x",	"0"},  --original : 1
+								{"y",	"0"},  --original : 2.5
+								--{"z",	"0"},  --original : 0
+								--{"t",	"0"},  --original : 0.04
+							},
+						},						
+					},
+				},		--[[			
+				{  -- Removes normal space station core lens flare
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION_ORB\FLAREEFFECTBLOOMONLY_MAT.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"y",	"1"},  --original : 2.5
+							},
+						},						
+					},
+				},  ]]--
 	--[[			{  -- SAVE POINT
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SAVEPOINTPRESCALE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -3473,29 +3539,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},	
 				{  -- shelter layout_3 white light
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLLIGHTS\WALLLIGHTA.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{  
-							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
-							["REMOVE"] 	= "SECTION",
-						},	
-						{  
-							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
-							["REMOVE"] 	= "SECTION",
-						},	
-						{  
-							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
-							["REMOVE"] 	= "SECTION",
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LightLOD3"}, 
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='RightLight1',tx=0, ty=0, tz=-0.3, i=5000}),
-						},						
-					},
-				},	
-				{  -- shelter layout_3 white light
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\RUINPARTS\WORDSTONE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -3516,9 +3559,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{  
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2",},
 							["REMOVE"] 	= "SECTION",
-						},	
-
-					
+						},						
+					},
+				},  
+				{  -- 
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SETTLEMENT\MAYOR_TERMINAL.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"5000.0"},  --original : 10000.0
+							},
+						},						
 					},
 				},
 			}
