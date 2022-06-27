@@ -3,11 +3,16 @@ local desc = [[
   Change the royal ships to a wider variety of colors by changing it to use
   a full palette of 64 colors in the 'SpaceBottom' palette.
   The unused 'SpaceBottom' is partially changed from the original.
+  
+  * the colors can be represented in 3 formats:
+    percentage	[0 - 1.0]:	{0.87, 0.16, 0.44}
+    standard	[0 - 255]:	{221,  32,   112}
+	hex code 	'string' :	'DD2070'
 ]]---------------------------------------------------------------------------
 
 local palette_for_royals = {
-	{0.264,	0.338,	1},
-	{0.777,	0.463,	0.03},
+	{67,	86,		255},	-- standard 0-255 numbers
+	'C67608',				-- hex code string
 	{0.697,	0.669,	0},
 	{0.605,	0.857,	0.018},
 	{0.827,	0.725,	0.086}, -- original yellow
@@ -72,18 +77,31 @@ local palette_for_royals = {
 	{-1,	-1,		-1},	-- real black
 }
 
--- function hex2rgb(hex)
-	-- local function trunc(x, n)
-		-- return tonumber(string.format('%.'..n..'f', x))
-	-- end
-	-- local n = {}
-	-- for i=1, hex:len()-1, 2 do
-		-- table.insert(n, trunc(tonumber(hex:sub(i, i+1), 16) / 255, 3))
-	-- end
-	-- return n
--- end
-
 local function RebuildPaletteColors()
+	local function trunc(x, n)
+		return tonumber(string.format('%.'..n..'f', x))
+	end
+	local function hex2rgb(hex)
+		local n = {}
+		for i=1, hex:len()-1, 2 do
+			table.insert(n, trunc(tonumber(hex:sub(i, i+1), 16) / 255, 3))
+		end
+		return n
+	end
+	local function asc2prc(as)
+		for i=1, #as do
+			as[i] = trunc(as[i] / 255, 3)
+		end
+		return as
+	end
+	local function Convert2Rgba(c)
+		if type(c) == 'string' then
+			return hex2rgb(c)
+		elseif c[1] > 1 or c[2] > 1 or c[3] > 1 then
+			return asc2prc(c)
+		end
+		return c
+	end
 	local rgba = [[
 		<Property value="Colour.xml">
 			<Property name="R" value="%s"/>
@@ -93,7 +111,7 @@ local function RebuildPaletteColors()
 		</Property>]]
 	local T = {}
 	for _,c in ipairs(palette_for_royals) do
-		-- if type(c) == 'string' then c = hex2rgb(c) end
+		c = Convert2Rgba(c)
 		table.insert(T, string.format(rgba, c[1], c[2], c[3], c[4] or 1))
 	end
 	return '<Property name="Colours">'..table.concat(T)..'</Property>'
