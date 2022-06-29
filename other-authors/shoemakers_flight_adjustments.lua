@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    =   "Shoemaker's Flight Adjustments",
+    ["MOD_FILENAME"]    =   "shoemakers Flight Adjustments",
     ["MOD_AUTHOR"]      =   "shoemakerjones",
     ["LUA_AUTHOR"]      =   "shoemakerjones",
     ["NMS_VERSION"]     =   "3.93",
@@ -17,12 +17,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] = 
                             {
-                                {"LandingHoverOffset", "2"}, -- Original 3
+                                {"LandingHoverOffset", "1"}, -- Original 3
                                 {"LandingMaxSpeed", "120"}, -- Original 80
-                                {"HoverSpeedFactor", "1"}, -- Original 20
-                                {"HoverLandReachedDistance","10"}, -- Original 10
+                                {"HoverSpeedFactor", "0.01"}, -- Original 20
+                                {"HoverLandReachedDistance","5"}, -- Original 10
                                 {"LandingPushNoseUpFactor", "0.01"}, -- Original 0.15
                                 {"MiniWarpLinesNum", "0"}, -- Original 4
+								{"DockingRotateSpeed", "65"}, -- Original 1
                             }
                         },
                         {
