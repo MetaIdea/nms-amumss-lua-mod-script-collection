@@ -44,6 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] = "Blackbox.pak",
   ["MOD_AUTHOR"] = "NeuroHunter with huge help from Kiiritsugu",
+  ["LUA_AUTHOR"] = "Updated for 3.93 by Lenni, Babscoole, Lo2k, and Gumsk",
   ["MOD_DESCRIPTION"] = "Blackbox have an icon",
   [[
   ]],
@@ -60,10 +61,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["EXML_CHANGE_TABLE"] =
           {
             {
-              ["SPECIAL_KEY_WORDS"]	= {"EncounterType","CorruptedDroneReward"},
-              ["LINE_OFFSET"] = "+0",
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-              ["VALUE_CHANGE_TABLE"] ={{"IGNORE", "IGNORE"}},
+              ["PRECEDING_KEY_WORDS"]	= {"Components"},
+              -- ["LINE_OFFSET"] = "+0",
+              -- ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+              -- ["VALUE_CHANGE_TABLE"] ={{"IGNORE", "IGNORE"}},
               ["ADD"] = SOUND
             }
           }

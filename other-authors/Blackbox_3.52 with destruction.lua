@@ -35,11 +35,13 @@ ICON =
       <Property name="FreighterObjectAlreadyUsedLocID" value="" />
       <Property name="AllowedToMerge" value="False" />
       <Property name="MissionSurveyId" value="" />
+      <Property name="MinDisplayDistanceOverride" value="-1" />
     </Property>
-        <Property value="GcShootableComponentData.xml">
+    <Property value="GcShootableComponentData.xml">
       <Property name="Health" value="2500" />
       <Property name="AutoAimTarget" value="False" />
       <Property name="PlayerOnly" value="False" />
+      <Property name="IgnorePlayer" value="False" />
       <Property name="ImpactShake" value="True" />
       <Property name="ImpactShakeEffect" value="SHOOTABLESHAKE" />
       <Property name="ForceImpactType" value="GcProjectileImpactType.xml">
@@ -58,44 +60,73 @@ ICON =
       <Property name="HitEffectEnabled" value="False" />
       <Property name="HitEffectEntireModel" value="False" />
       <Property name="IsArmoured" value="False" />
-      <Property name="IgnoreTerrainEditKill" value="False" />
+      <Property name="CouldCountAsArmourForParent" value="False" />
+      <Property name="IgnoreTerrainEditKills" value="False" />
       <Property name="NameOverride" value="" />
       <Property name="RequiredTech" value="" />
       <Property name="DamageMultiplier" value="" />
+      <Property name="IsPiercable" value="False" />
+      <Property name="IsAffectedByPiercing" value="False" />
     </Property>
     <Property value="GcDestructableComponentData.xml">
       <Property name="Explosion" value="ROCKEXPLODE" />
       <Property name="ExplosionScale" value="1" />
       <Property name="ExplosionScaleToBounds" value="False" />
-      <Property name="VehicleDestroyEffect" value="VEHICLECRASH" /> 
+      <Property name="OnlyExplodeSelf" value="False" />
+      <Property name="VehicleDestroyEffect" value="VEHICLECRASH" />
       <Property name="TriggerAction" value="" />
       <Property name="IncreaseWanted" value="0" />
       <Property name="IncreaseFiendWanted" value="False" />
+      <Property name="IncreaseFiendWantedChance" value="1" />
       <Property name="NotifyEncounter" value="False" />
       <Property name="LootReward" value="" />
       <Property name="LootRewardAmountMin" value="50" />
       <Property name="LootRewardAmountMax" value="50" />
+      <Property name="CanDestroyFromStoredInteraction" value="False" />
       <Property name="GivesSubstances" />
-      <Property name="GivesReward" value="R_NEXUS_CASH" />
+      <Property name="StatToTrack" value="GcStatsEnum.xml">
+        <Property name="GcStatEnum" value="None" />
+      </Property>
+      <Property name="GivesReward" value="" />
+      <Property name="PirateSystemAltReward" value="" />
+      <Property name="RewardIfDestroyedByOther" value="False" />
       <Property name="HideReward" value="False" />
       <Property name="OverrideRewardLoc" value="" />
       <Property name="HardModeSubstanceMultiplier" value="1" />
       <Property name="RewardOverrideTable" />
       <Property name="ActivateLocatorsFromRarity" value="False" />
-      <Property name="UseSystemColorsForTexture" value="False" />
-      <Property name="RemoveModel" value="True" />
-      <Property name="HideModel" value="False" />
-       <Property name="RarityLocators">
-        <Property value="NMSString0x10.xml">
+      <Property name="RarityLocators">
+        <Property name="Common" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
+        <Property name="Uncommon" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
+        <Property name="Rare" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
       </Property>
+      <Property name="UseSystemColorsForTexture" value="False" />
+      <Property name="RemoveModel" value="True" />
+      <Property name="HideModel" value="False" />
+      <Property name="DestroyedModel" value="TkModelResource.xml">
+        <Property name="Filename" value="" />
+      </Property>
+      <Property name="DestroyedModelUsesScale" value="True" />
+      <Property name="DestroyedModelCollidesWithEverything" value="False" />
+      <Property name="DestroyForce" value="10" />
+      <Property name="DestroyForceRadius" value="50" />
+      <Property name="DestroyEffect" value="" />
+      <Property name="DestroyEffectOnSurface" value="False" />
+      <Property name="DestroyEffectPoint" value="SFX" />
+      <Property name="DestroyEffectTime" value="2" />
+      <Property name="DestroyEffectMatrices" value="False" />
+      <Property name="AreaDamage" value="" />
+      <Property name="ShowInteract" value="True" />
+      <Property name="HideInteractWhenAllArmourDestroyed" value="False" />
+      <Property name="ShowInteractRange" value="8" />
+      <Property name="GrenadeSingleHit" value="True" />
+      <Property name="LootItems" />
     </Property>
 ]]
 
@@ -113,6 +144,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] = "Blackbox.pak",
   ["MOD_AUTHOR"] = "NeuroHunter with huge help from Kiiritsugu and Lowkie",
+  ["LUA_AUTHOR"] = "Updated for 3.93 by Lenni, Babscoole, Lo2k, and Gumsk",
   ["MOD_DESCRIPTION"] = "Blackbox have an icon",
   [[
   ]],
@@ -129,10 +161,10 @@ NMS_MOD_DEFINITION_CONTAINER =
           ["EXML_CHANGE_TABLE"] =
           {
             {
-              ["SPECIAL_KEY_WORDS"]	= {"EncounterType","CorruptedDroneReward"},
-              ["LINE_OFFSET"] = "+0",
-              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-              ["VALUE_CHANGE_TABLE"] ={{"IGNORE", "IGNORE"}},
+              ["PRECEDING_KEY_WORDS"]	= {"Components"},
+              -- ["LINE_OFFSET"] = "+0",
+              -- ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+              -- ["VALUE_CHANGE_TABLE"] ={{"IGNORE", "IGNORE"}},
               ["ADD"] = SOUND
             }
           }
