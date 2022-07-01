@@ -17,13 +17,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] = 
                             {
-                                {"LandingHoverOffset", "1"}, -- Original 3
-                                {"LandingMaxSpeed", "120"}, -- Original 80
+                                {"LandingHoverOffset", "2"}, -- Original 3
+                                {"LandingMaxSpeed", "80"}, -- Original 80
                                 {"HoverSpeedFactor", "0.01"}, -- Original 20
-                                {"HoverLandReachedDistance","5"}, -- Original 10
-                                {"LandingPushNoseUpFactor", "0.01"}, -- Original 0.15
+                                {"HoverLandReachedDistance","8"}, -- Original 10
+                                {"LandingPushNoseUpFactor", "0.02"}, -- Original 0.15
                                 {"MiniWarpLinesNum", "0"}, -- Original 4
-								{"DockingRotateSpeed", "65"}, -- Original 1
+								{"DockingRotateSpeed", "10"}, -- Original 1
                             }
                         },
                         {
