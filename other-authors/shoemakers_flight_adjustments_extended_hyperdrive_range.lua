@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    =   "Shoemaker's Flight Adjustments - Extended Hyperdrive",
+    ["MOD_FILENAME"]    =   "shoemakers Flight Adjustments Extended Hyperdrive",
     ["MOD_AUTHOR"]      =   "shoemakerjones",
     ["LUA_AUTHOR"]      =   "shoemakerjones",
     ["NMS_VERSION"]     =   "3.93",
@@ -19,10 +19,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LandingHoverOffset", "1"}, -- Original 3
                                 {"LandingMaxSpeed", "120"}, -- Original 80
-                                {"HoverSpeedFactor", "0.1"}, -- Original 20
+                                {"HoverSpeedFactor", "0.01"}, -- Original 20
                                 {"HoverLandReachedDistance","5"}, -- Original 10
                                 {"LandingPushNoseUpFactor", "0.01"}, -- Original 0.15
                                 {"MiniWarpLinesNum", "0"}, -- Original 4
+								{"DockingRotateSpeed", "65"}, -- Original 1
                             }
                         },
                         {
@@ -135,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 -- {"BGColourStage4", "0"},
                                 -- {"BGColourCellBlend", "0"},
                                 -- {"BGColourPow", "0"},
-                                {"StarFieldBlendAmount", "0"}
+                                {"StarFieldBlendAmount", "0"},
                             }
                         },
                         {
@@ -144,12 +145,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 "DefaultRenderSetup",
                                 "GcGalaxyRenderSetupData.xml",
                                 "NebulaeTraceStepRange",
-                                "Vector2f.xml"
+                                "Vector2f.xml",
                             },
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"},
-                                {"y", "0"}
+                                {"y", "0"},
                             }
                         },
                         {
@@ -157,7 +158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] = 
                             {
                                 {"FreePanSpeed", "1.25"}, -- Original 0.8
-                                {"FreePanSpeedTurbo", "75"} -- Original 2.75
+                                {"FreePanSpeedTurbo", "75"}, -- Original 2.75
                             }
                         }
                     }
