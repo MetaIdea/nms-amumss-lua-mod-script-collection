@@ -1,6 +1,8 @@
 
 --[[┎──────────────────────────────────────────────────────
 	┃ Insert new light object to MBIN - by IMonk
+	┃ For lights to work, be sure to enter strings between 
+	┃ single quotes and numbers without any quote
 ────┸──────────────────────────────────────────────────--]]
 
 function InsertNewLight(T_New)
@@ -105,7 +107,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 3.4.pak", 
+["MOD_FILENAME"] 			= "ReLight 3.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "3.93",
 ["MOD_DESCRIPTION"]			= "This mod rework most of the lights placed in NPC building",
@@ -118,11 +120,33 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LODDIST1"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"15"},  --original : 5.7
+							},
+						},
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LODDIST2"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"25"},  --original : 16 / 40
+							},
+						},
+						-- planetary hologram light
+						{ 
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight60", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"60000.000000"},  --original : 50000.000000
+								{"Value",	"30000.000000"},  --original : 50000.000000
+							},
+						}, 
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight60"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TransY",	"2.0"},  --original : 2.31
 							},
 						},
 						{
@@ -146,55 +170,162 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Value",	"0.360784"}, 
 							},
 						},
+						-- Main 10m high light
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TransY",	"7.0"},  --original : 9.91
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "FALLOFF"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"LINEAR"},  --original : QUADRATIC
+							},
+						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"140000.000000"},  --original : 100000.000000
+								{"Value",	"80000.000000"},  --original : 100000.000000 //80000
 							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "COL_R"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"0.854902"}, 
+								{"Value",	"0.95"},  --0.854902
 							},
 						},					
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "COL_G"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"0.858391"},  
+								{"Value",	"1.0"},  
 							},
 						},	
+												{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.0"},  
+							},
+						},	
+						-- Captain yellow 5m high light
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"TransY", "5.8"},-- original 5.10245
 								{"TransZ", "-11.220206"},
+								{"RotX",	"-90"},  --original : 0
+								{"RotY",	"180"},  --original : 0
+								{"RotZ",	"90"},  --original : 0
 							},
 						},	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61", "Name", "FOV"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"180.0"},  --original : 360.0
+							},
+						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"30000.000000"},  --original : 40000.000000
+								{"Value",	"30000.0"},  --original : 40000.0
 							},
 						},				
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61", "Name", "COL_G"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"0.905596"},  
+								{"Value",	"0.9056"},  
 							},
 						},						
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61", "Name", "COL_B"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"0.685000"}, 
+								{"Value",	"0.685"}, 
 							},
 						},	
+						{  -- Blue Holo-Tractor field Light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- Middle window behind captain
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='SpaceLight0',tx=0.0, ty=-1.0, tz=-21, i=80000, r=0.3, g=0.7, b=1.0}),
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- left windows behind captain
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='SpaceLight1',tx=-13.0, ty=-1.0, tz=-18, i=80000, r=0.3, g=0.7, b=1.0}),
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- right windows behind captain
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='SpaceLight2',tx=13.0, ty=-1.0, tz=-18, i=80000, r=0.3, g=0.7, b=1.0}),
+						},
+						{  -- Space Light  -- 1st floor windows
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- Top Middle window
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='SpaceLight3',tx=0.0, ty=7.0, tz=-21, i=60000, r=0.3, g=0.7, b=1.0}),
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- Top left windows 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='SpaceLight4',tx=-13.0, ty=7.0, tz=-18, i=60000, r=0.3, g=0.7, b=1.0}),
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- Top right windows 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='SpaceLight5',tx=13.0, ty=7.0, tz=-18, i=60000, r=0.3, g=0.7, b=1.0}),
+						}, 
+						-- White internal neons - left side
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NeonLight1l',tx=-5.0, ty=4.5, tz=-12.4, i=15000}),
+						},
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NeonLight2l',tx=-12.7, ty=4.5, tz=-5.2, i=15000}),
+						},
+						{ 
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NeonLight3l',tx=-12.7, ty=4.5, tz=5.2, i=15000}),
+						},
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NeonLight4l',tx=-5.0, ty=4.5, tz=12.4, i=15000}),
+						},
+						-- White internal neons - right side
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NeonLight1r',tx=5.0, ty=4.5, tz=-12.4, i=15000}),
+						},
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NeonLight2r',tx=12.7, ty=4.5, tz=-5.2, i=15000}),
+						},
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NeonLight3r',tx=12.7, ty=4.5, tz=5.2, i=15000}),
+						},
+						{ 
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NeonLight4r',tx=5.0, ty=4.5, tz=12.4, i=15000}),
+						},
+						-- blue entry light
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight62"},
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -206,7 +337,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight62", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"50000.000000"},  --original : 70000.000000
+								{"Value",	"40000.0"},  --original : 70000.0
+							},
+						},	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight62", "Name", "COL_R"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.608391"}, 
 							},
 						},	
 						{
@@ -220,9 +358,68 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight62", "Name", "COL_B"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"1.000000"}, 
+								{"Value",	"1.0"}, 
 							},
 						},							
+					},
+				},
+				{  -- FREIGHTER BRIDGE TERMINAL
+					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+					-- TERMINAL LOD dist are already fine 50 /80/ 150
+						
+						{  -- Galactic map yellow light
+							["SPECIAL_KEY_WORDS"] = {"Name", "Light",},
+							["REMOVE"] 	= "SECTION",
+						},
+						{  -- Customize panel yellow light
+							["SPECIAL_KEY_WORDS"] = {"Name", "Light1",},
+							["REMOVE"] 	= "SECTION",
+						},
+						{  -- Customize panel 2nd yellow light
+							["SPECIAL_KEY_WORDS"] = {"Name", "Light4",},
+							["REMOVE"] 	= "SECTION",
+						},
+						{  -- Navigator yellow light
+							["SPECIAL_KEY_WORDS"] = {"Name", "Light2",},
+							["REMOVE"] 	= "SECTION",
+						},
+						{-- galactic map blue light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "MPLIGHT", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"3000.0"},  --original : 10000.0
+							},
+						},	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "MPLIGHT", "Name", "COL_R"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.3"}, 
+							},
+						},					
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "MPLIGHT", "Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.7"},  
+							},
+						},						
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "MPLIGHT", "Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.0"}, 
+							},
+						},		
+						--[[{  -- RESTORED EFFECT
+							["SPECIAL_KEY_WORDS"]  = {"Name", "MiddleEffectBase", "Name", "ATTACHMENT"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL\ENTITIES\MIDDLEEFFECT.ENTITY.MBIN"}, 
+							},
+						},		--]]					
 					},
 				},
 				{
@@ -235,12 +432,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TransY", "11.0848007"},
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight70"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
 								{"TransZ", "-10.3616943"},
 							},
 						},	
@@ -288,12 +479,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TransY", "11.0848007"},
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight125"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
 								{"TransZ", "-10.3616943"},
 							},
 						},	
@@ -2079,7 +2264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Type", "COLLISION"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight1', ty=0.55, i=4000}),   --<Property name="NameHash" value="4219409884" />
+							["ADD"] = InsertNewLight({name='pointLight1', ty=0.30, i=4000}), 
 						},
 					},
 				},  
@@ -2726,6 +2911,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					},
 				},				
+				{  -- GENERIC TERMINAL CONSOLE
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\INTERACTIVECONSOLE.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						--{
+						--	["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
+						--	["REMOVE"] 	= "SECTION",
+						--},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"2000.0"},  --original : 10000
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "COL_R"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.0"},  --original : 0.823529
+							},
+						},
+						{  -- COL_G = 1.0 already
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.0"},  --original : 0.957940
+							},
+						},
+					},
+				},
 				{  -- MONITOR DESK
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\MONITORDESK.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -3190,7 +3406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								--{"x",	"0"},  --original : 1
 								{"y",	"0"},  --original : 2.5
 								--{"z",	"0"},  --original : 0
-								--{"t",	"0"},  --original : 0.04
+								--{"t",	"0.0"},  --original : 0.04
 							},
 						},						
 					},
@@ -3283,7 +3499,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] = InsertNewLight({name='newtealLight2',tx=0.0, ty=1.0, tz=-0.1, fov=145, i=5000, r=0.45, g=0.87, b=1.0}),  
 						},
 					},
+				},  
+				{  -- HOVER exocraft Base
+					["MBIN_FILE_SOURCE"] 	= 
+						{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\VEHICLEGARAGEBIKE.SCENE.MBIN",				
+						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\VEHICLEGARAGECUSTOMISER.SCENE.MBIN",
+						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\VEHICLEGARAGEHOVER.SCENE.MBIN",
+						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\VEHICLEGARAGELARGE.SCENE.MBIN",
+						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\VEHICLEGARAGEMECH.SCENE.MBIN",
+						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\VEHICLEGARAGESMALL.SCENE.MBIN",
+						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\VEHICLEGARAGESUBMARINE.SCENE.MBIN",
+						},					
+					["EXML_CHANGE_TABLE"] 	= 
+					{		
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "Light3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+					},
 				},
+				
 				--[[
 				{  -- tiny bulb on top of a plant
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT.SCENE.MBIN",
@@ -3574,7 +3809,39 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},						
 					},
-				},
+				},			
+				{  -- Nexus column yellow light
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\NEXUS\PARTS\LIGHTING\LIGHTCOLLUMN.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight699",},
+							["REPLACE_TYPE"] = "ALL",
+							["REMOVE"] 	= "SECTION",
+						},		
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LightColumnLOD3"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='YellowLight',tx=0.008792, ty=2.446671, tz=0.038787, i=40000, r=1.0, g=0.77, b=0.4,}),
+						},						
+					},
+				},  		
+				{  -- Nexus small column yellow light
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\NEXUS\PARTS\LIGHTING\SMALLLIGHTCOLLUMN.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight820",},
+							["REPLACE_TYPE"] = "ALL",
+							["REMOVE"] 	= "SECTION",
+						}, 
+						--[[  {
+							["SPECIAL_KEY_WORDS"]  = {"Name", "SmallLightColumnLOD3"}, 
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='YellowLight',tx=0.02866, ty=0.595435, tz=0.025357, i=20000, r=1.0, g=0.7, b=0.4,}),
+						},		--]]				
+					},
+				}, 
 			}
 		}
 	}	
