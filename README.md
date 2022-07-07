@@ -39,4 +39,9 @@ Other NMS Mod Tools:
 
 Any in the form of a .zip file have additional files that need to be added by placing into ModExtraFilesToInclude in AMUMSS when the LUA is run.
 
+The purpose of this repository is to provide the definitive repository of NMS LUA scripts for use as templates and examples for other script authors, so scripts are arranged and categorized by script author.
+  If a script is written for anothers mod by other than the original mod author, the original author must be credited within the script in the MOD_AUTHOR field.
+
+A separate folder and link in the Mod script authors list will be provided for prolific script authors who have made over a dozen scripts.
+
 
