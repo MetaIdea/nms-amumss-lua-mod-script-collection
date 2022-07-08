@@ -46,7 +46,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"G", 	"0.8869"},	-- Original "0.5"								
 								{"B", 	"0"},		-- Original "0.2"
-    							}
+    						}
 						},
 					}
 				}
