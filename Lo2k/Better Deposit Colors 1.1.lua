@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Deposit Colors.pak", 
+["MOD_FILENAME"] 			= "Better Deposit Colors 1.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "3.93",
-["MOD_DESCRIPTION"]			= "This mod improves substances aspects",
+["MOD_DESCRIPTION"]			= "This mod improves deposit substances aspects",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -13,7 +13,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCSUBSTANCETABLE.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-					
+						-- ACTIVATED CADMIUM
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "EX_RED"}, 
+							["PRECEDING_KEY_WORDS"] = {"DebrisFile"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/CADMIUM.SCENE.MBIN"},
+							}
+						}, 
+						
 						-- ACTIVATED COPPER
 						{  
 							["SPECIAL_KEY_WORDS"] = {"ID", "EX_YELLOW"}, 
@@ -35,6 +44,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						
+						-- ACTIVATED EMERIL
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "EX_GREEN"}, 
+							["PRECEDING_KEY_WORDS"] = {"DebrisFile"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/EMERIL.SCENE.MBIN"},
+							}
+						}, 
+						{ 
+							["SPECIAL_KEY_WORDS"] = {"ID", "EX_GREEN"},
+							["PRECEDING_KEY_WORDS"] = {"WorldColour"},  
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"R", "0.2"},
+								{"G", "0.8"},
+								{"B", "0.0"},
+							}
+						},
+						
 						-- AMMONIA
 						{  
 							["SPECIAL_KEY_WORDS"] = {"ID", "TOXIC1"}, 
@@ -50,11 +80,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"R", "0.85"},
+								{"R", "0.75"},
 								{"G", "1.0"},
-								{"B", "0.85"},
+								{"B", "0.75"},
 							}
 						},
+						
+						-- CADMIUM
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "RED2"}, 
+							["PRECEDING_KEY_WORDS"] = {"DebrisFile"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/CADMIUM.SCENE.MBIN"},
+							}
+						}, 
 						
 						-- COBALT
 						{  
@@ -150,7 +190,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"B", "0.0"},
 							}
 						},
-
 						
 						-- MAGNETIZED FERRITE
 						{  
@@ -193,6 +232,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Filename", "MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/PHOSPHORUS.SCENE.MBIN"},
 							}
 						}, 
+						{ 
+							["SPECIAL_KEY_WORDS"] = {"ID", "HOT1"},
+							["PRECEDING_KEY_WORDS"] = {"WorldColour"},  
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"R", "0.96"},
+								{"G", "0.25"},
+								{"B", "0.32"},
+							}
+						},
 
 						
 						-- RUSTED METAL					
@@ -222,7 +272,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"DebrisFile"}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Filename", "MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/SALTDEBRIS.SCENE.MBIN"},
+								{"Filename", "MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS2.SCENE.MBIN"},
 							}
 						}, 
 						{ 
@@ -272,6 +322,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						
 						-- URANIUM
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "RADIO1"}, 
+							["PRECEDING_KEY_WORDS"] = {"DebrisFile"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Filename", "MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/URANIUM.SCENE.MBIN"},
+							}
+						}, 
 						{ 
 							["SPECIAL_KEY_WORDS"] = {"ID", "RADIO1"},
 							["PRECEDING_KEY_WORDS"] = {"WorldColour"},  
