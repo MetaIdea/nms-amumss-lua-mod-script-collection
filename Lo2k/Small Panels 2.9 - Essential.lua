@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 2.8 - Standard.pak", 
+["MOD_FILENAME"] 			= "Small Panels 2.9 - Essential.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.91",
+["NMS_VERSION"]				= "3.93",
 ["MOD_DESCRIPTION"]			= "This mod reduces the size of most game panels",
 ["MODIFICATIONS"] 			= 
 	{
@@ -306,6 +306,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Height",	"79"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Height",	"60"},		-- Original "79"  
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"ID","BUTTON"},
 							["REPLACE_TYPE"]    = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -313,6 +321,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PositionX",	"0"},		-- Original "20"   
 							}
 						},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "BUTTON1",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "BUTTON3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+
 					}
 				},
 				--COMPONENTS
@@ -320,6 +337,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\ACTIONBUTTON.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"PositionY",	"6"},
+							["REPLACE_TYPE"]    = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PositionY",	"0"},		-- Original "6"   
+							}
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Height",	"6"},
 							["REPLACE_TYPE"]    = "ALL", 
@@ -337,12 +362,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"Height",	"33"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Height",	"23"},		-- Original "33"   
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"Width",	"80"},
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Width",	"424"},		-- Original "80"   
+								{"Height",	"60"},		-- Original "73"  
 								{"WidthPercentage",	"False"},		-- Original "True"   
+								{"Vertical",	"Middle"},		-- Original "Top"   
 								{"Horizontal",	"Right"},		-- Original "Left"   
 							}
 						},
@@ -351,7 +386,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FontHeight",	"20"},		-- Original "0"   
+								{"FontHeight",	"12"},		-- Original "0"   
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"FontHeight",	"20"},
+							["REPLACE_TYPE"]    = "ALL",  
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"FontHeight",	"16"},		-- Original "0"   
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID",	"BUTTON"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PositionX",	"15"},		-- Original "20"   
+								{"Height",	"60"},		-- Original "79"   
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID",	"DESCRIPTION"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PositionY",	"23"},		-- Original "33"  
 							}
 						},
 					}
@@ -436,6 +494,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Width",	"520"},		-- Original "650"					
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"PositionX",	"642"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PositionX",	"512"},		-- Original "642"					
 							}
 						},
 						{
