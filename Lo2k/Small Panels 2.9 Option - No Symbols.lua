@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 2.8 Option - No Symbols.pak", 
+["MOD_FILENAME"] 			= "Small Panels 2.9 Option - No Symbols.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.89",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.93",
 ["MOD_DESCRIPTION"]			= "This mod removes substance symbol from inventory icons",
 ["MODIFICATIONS"] 			= 
 	{
