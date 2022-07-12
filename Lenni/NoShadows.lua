@@ -24,6 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "ShadowLengthStation", 				"0" }, 		--Original "1300"
 								{ "ShadowLengthFreighterAbandoned", 	"0" }, 		--Original "2500"
 								{ "ShadowLengthCameraView", 			"0" }, 		--Original "1300"
+								{ "ShadowLengthFreighterAbandoned", 	"0" }, 		--Original "1300"
 							}
 						}
 					}
