@@ -6,7 +6,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"] = 
 	{
 		{
-			["PAK_FILE_SOURCE"] = "NMSARC.59B126E2.pak",
 			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
@@ -16,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"TerrainFadeTime",			"0"},
+								{"TerrainFadeTime",		"0"},
 								{"TerrainFadeTimeInShip",	"0"},
 								{"CreatureFadeTime",		"0"},
 								{"FloraFadeTimeMin",		"0"},
