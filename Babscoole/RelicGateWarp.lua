@@ -1,23 +1,23 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "RelicGateWarp.pak",
-["NMS_VERSION"]				= "3.90",
-["MOD_AUTHOR"]				= "Babscoole",
-["MOD_DESCRIPTION"]			= "WTFAI",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "RelicGateWarp.pak",
+["NMS_VERSION"]     = "3.95",
+["MOD_AUTHOR"]      = "Babscoole",
+["MOD_DESCRIPTION"] = "WTFAI",
+["MODIFICATIONS"]   = 
 	{	
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE",}, 
-							["LINE_OFFSET"] 		= "+0",
-							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
-							["ADD"] 				= 
+							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE",}, 
+							["LINE_OFFSET"] = "+0",
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = 
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="RELIC_GATE_WARP" />
@@ -50,8 +50,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
-							["ADD"] 				= 
+							["LINE_OFFSET"] = "-2",
+							["ADD"] = 
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -85,13 +85,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
+							["LINE_OFFSET"] = "+0",
+							["ADD"] = 
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="Relic Gate Warp" />
@@ -150,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] = 
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">

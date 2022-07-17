@@ -1,22 +1,22 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_MOD_DUD_PetRider_v3911.pak",
-["MOD_AUTHOR"]				= "jasondude7116",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.91",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "_MOD_DUD_PetRider_v3911.pak",
+["MOD_AUTHOR"]    = "jasondude7116",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.91",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","ANTELOPE","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","TRICERATOPS","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","RODENT","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -52,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","COW","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","CAT","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","BONECAT","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","STRIDER","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -88,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","TREX","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","TWOLEGANTELOPE","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -106,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -115,7 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -124,7 +124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GRUNT","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -133,7 +133,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","BLOB","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -142,7 +142,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER","Anim","TROT",},
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinPetSpeedScale",			"0.7"},
 								{"MaxPetSpeedScale",			"1.2"},								
@@ -151,12 +151,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},				
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCCREATUREGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",						
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"RideSpeedSlow",					"0.9"},
 								{"RideSpeedChangeTime",				"1"},

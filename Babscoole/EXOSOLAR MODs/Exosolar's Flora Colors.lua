@@ -288,19 +288,19 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "_Exo's Flora Colors.pak",
-    ["MOD_AUTHOR"]              = "Exosolar",
-    ["LUA_AUTHOR"]         		= "Jackty89, WinderTP, and Babscoole",
-    ["MOD_MAINTENANCE"]         = "Babscoole",	
-    ["NMS_VERSION"]             = "3.90",
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"]    = "_Exo's Flora Colors.pak",
+    ["MOD_AUTHOR"]      = "Exosolar",
+    ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
+    ["MOD_MAINTENANCE"] = "Babscoole",	
+    ["NMS_VERSION"]     = "3.90",
+    ["MODIFICATIONS"]   =
     {
         {
-            ["MBIN_CHANGE_TABLE"] 	=
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
+                    ["EXML_CHANGE_TABLE"] =
                     {
 						{
 							["SPECIAL_KEY_WORDS"] = { "Plant", "GcPaletteData.xml"  },

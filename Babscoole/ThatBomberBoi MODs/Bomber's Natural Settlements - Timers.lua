@@ -1,17 +1,17 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"] 			= "BNS-Timers 3.91.pak",
-	["MOD_DESCRIPTION"]			= "",
-	["MOD_AUTHOR"]				= "ThatBomberBoi",
-	["NMS_VERSION"]				= "3.91",
-	["MODIFICATIONS"] 			=
+	["MOD_FILENAME"]    = "BNS-Timers 3.91.pak",
+	["MOD_DESCRIPTION"] = "",
+	["MOD_AUTHOR"]      = "ThatBomberBoi",
+	["NMS_VERSION"]     = "3.91",
+	["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	=
+			["MBIN_CHANGE_TABLE"] =
 			{
                 {
-					["MBIN_FILE_SOURCE"] 	= "GCSETTLEMENTGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "GCSETTLEMENTGLOBALS.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SettlementBuildingTimes"},

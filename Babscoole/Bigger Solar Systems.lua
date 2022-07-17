@@ -1,17 +1,17 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_planetdistance.pak",
-["MOD_AUTHOR"]				= "Nero2258",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.53",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "_planetdistance.pak",
+["MOD_AUTHOR"]    = "Nero2258",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.53",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "SolarSystemSize",
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{ "SolarSystemMaximumRadius", 			"9999999" },  --Original "500000"
 								{ "SolarSystemMaximumRadiusMassive", 	"9999999" },  --Original "1000000"

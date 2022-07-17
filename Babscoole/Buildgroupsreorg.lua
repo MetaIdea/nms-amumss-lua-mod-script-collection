@@ -1,17 +1,17 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "BuildMenuRedo.pak", 
-["MOD_AUTHOR"]				= "WinderTP and Babscoole",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.82",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "BuildMenuRedo.pak", 
+["MOD_AUTHOR"]    = "WinderTP and Babscoole",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.82",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},

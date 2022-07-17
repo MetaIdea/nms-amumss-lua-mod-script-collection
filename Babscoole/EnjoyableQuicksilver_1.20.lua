@@ -262,18 +262,18 @@ Rewards =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "EnjoyableQuicksilver."..Mod_version..".pak",
-["MOD_DESCRIPTION"]			= "Allows the player to grind Quicksilver through a wide variety of different ways",
-["MOD_AUTHOR"]				= "ArtisticMisfit",
-["LUA_AUTHOR"]				= "TheLich, Babscoole, ArtisticMisfit",
-["NMS_VERSION"]				= "3.91",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "EnjoyableQuicksilver."..Mod_version..".pak",
+["MOD_DESCRIPTION"] = "Allows the player to grind Quicksilver through a wide variety of different ways",
+["MOD_AUTHOR"]      = "ArtisticMisfit",
+["LUA_AUTHOR"]      = "TheLich, Babscoole, ArtisticMisfit",
+["NMS_VERSION"]     = "3.91",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+					["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
 					["REGEXBEFORE"] =
 						{
 							{[[(.*)(".*_CRA_OPT_A_.*")]],[[\1"SECTION_TO_CHANGE" oldvalue=\2]]},
@@ -283,7 +283,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							{[[(.*)("SECTION_TO_CHANGE").*(".*")]],[[\1\3]]},
 						},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "SECTION_TO_CHANGE"},
@@ -294,8 +294,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{													
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "RS_MONEY_L"},
@@ -305,8 +305,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_RESET_SAL"},
@@ -318,8 +318,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Message","UI_RETURN_MISSION_OBJ1_MSG"},
@@ -332,8 +332,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/PIRATEMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/PIRATEMISSIONTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Message","UI_RETURN_PIRATE_MSG"},
@@ -346,8 +346,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/MULTIPLAYERMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/MULTIPLAYERMISSIONTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Message","UI_RETURN_MPMISSION_OBJ1_MSG"},

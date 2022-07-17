@@ -1,11 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "CrashedShipFinder.pak",
-  ["MOD_DESCRIPTION"]		= "Planetary Chart B (Emergency Cartographic Data) increased chances of finding Crashed Ship",
-  ["MOD_AUTHOR"]			= "Fartbottum10",   
-  ["LUA_AUTHOR"]			= "Babscoole", 
-  ["NMS_VERSION"]			= "3.91",
-  ["MODIFICATIONS"] 		= 
+  ["MOD_FILENAME"]    = "CrashedShipFinder.pak",
+  ["MOD_DESCRIPTION"] = "Planetary Chart B (Emergency Cartographic Data) increased chances of finding Crashed Ship",
+  ["MOD_AUTHOR"]      = "Fartbottum10",   
+  ["LUA_AUTHOR"]      = "Babscoole", 
+  ["NMS_VERSION"]     = "3.91",
+  ["MODIFICATIONS"]   = 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] = 

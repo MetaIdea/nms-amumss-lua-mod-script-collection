@@ -1,22 +1,22 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Bodie420.PlayerGlobals.4.3.pak",
-["MOD_DESCRIPTION"]			= "",
-["MOD_AUTHOR"]				= "Bodie420",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "4.3",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "_Bodie420.PlayerGlobals.4.3.pak",
+["MOD_DESCRIPTION"] = "",
+["MOD_AUTHOR"]      = "Bodie420",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "4.3",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCPLAYERGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCPLAYERGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	= 	
+							["VALUE_CHANGE_TABLE"] = 	
 							{
 								{"FingerButtonClickTime",  "0.02"},  --Original 0.2
 								{"HandInteractionLightTime",  "0.03"},  --Original 0.3
@@ -45,8 +45,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"JetpackTankTimes"},
-							["LINE_OFFSET"] 	= "1",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["LINE_OFFSET"] = "1",
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{ "IGNORE", 					"99" }, 		--Original "4"
 								{ "IGNORE", 					"99" }, 		--Original "6"

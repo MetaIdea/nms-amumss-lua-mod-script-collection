@@ -75,18 +75,18 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "BetterShipColors_v1.2_BW.pak",
-    ["MOD_AUTHOR"]              = "MusicAndSilence",
-    ["LUA_AUTHOR"]         		= "Babscoole",	
-    ["NMS_VERSION"]             = "3.93",
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"]  = "BetterShipColors_v1.2_BW.pak",
+    ["MOD_AUTHOR"]    = "MusicAndSilence",
+    ["LUA_AUTHOR"]    = "Babscoole",	
+    ["NMS_VERSION"]   = "3.93",
+    ["MODIFICATIONS"] =
     {
         {
-            ["MBIN_CHANGE_TABLE"] 	=
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
 					
                     }

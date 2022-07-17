@@ -626,14 +626,14 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "_MOD_DUD_SpaceColors_v3935.pak",
-    ["MOD_AUTHOR"]              = "Jasondude7116",
-    ["LUA_AUTHOR"]              = "Jackty89, WinderTP, and Babscoole",
-    ["NMS_VERSION"]             = "3.93",
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"]  = "_MOD_DUD_SpaceColors_v3935.pak",
+    ["MOD_AUTHOR"]    = "Jasondude7116",
+    ["LUA_AUTHOR"]    = "Jackty89, WinderTP, and Babscoole",
+    ["NMS_VERSION"]   = "3.93",
+    ["MODIFICATIONS"] =
     {
         {
-            ["MBIN_CHANGE_TABLE"] 	=
+            ["MBIN_CHANGE_TABLE"] =
             {
             }
         }
@@ -796,12 +796,12 @@ for i = 1, #DataTable do
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
 	{
-		["MBIN_FILE_SOURCE"] 	= FileSource,
-		["EXML_CHANGE_TABLE"] 	=
+		["MBIN_FILE_SOURCE"]  = FileSource,
+		["EXML_CHANGE_TABLE"] =
 		{
 			{
 				["PRECEDING_KEY_WORDS"] = { "GcSolarSystemSkyColourData.xml" },
-				["REPLACE_TYPE"]    = "ALL", 
+				["REPLACE_TYPE"] = "ALL", 
 				["REMOVE"] = "SECTION",
 			},			
 			{

@@ -1,29 +1,29 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_MOD_DUD_Asteroid_v3911.pak", 
-["MOD_AUTHOR"]				= "jasondude7116",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.91",
-["MOD_DESCRIPTION"]			= "",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "_MOD_DUD_Asteroid_v3911.pak", 
+["MOD_AUTHOR"]      = "jasondude7116",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "3.91",
+["MOD_DESCRIPTION"] = "",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["PRECEDING_KEY_WORDS"]  = {"AsteroidScaleVariance"},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["PRECEDING_KEY_WORDS"] = {"AsteroidScaleVariance"},
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"x",	"0.3"},
 							},
 						},
 						{
-							["PRECEDING_KEY_WORDS"]  = {"LargeAsteroidNoiseRange"},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidNoiseRange"},
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"x",	"0.4"},
 								{"y",	"0.55"},
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PlanetInvalidAsteroidZone",	"40000"},
 								{"AsteroidNoiseScale",	"350000"},

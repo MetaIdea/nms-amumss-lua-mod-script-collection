@@ -16,14 +16,14 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "_Natural_Skies.pak",
-	["MOD_AUTHOR"]				= "degraaaff",
-	["LUA_AUTHOR"]				= "Babscoole",
-    ["NMS_VERSION"]             = "3.89",
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"]  = "_Natural_Skies.pak",
+	["MOD_AUTHOR"]    = "degraaaff",
+	["LUA_AUTHOR"]    = "Babscoole",
+    ["NMS_VERSION"]   = "3.89",
+    ["MODIFICATIONS"] =
     {
         {
-            ["MBIN_CHANGE_TABLE"] 	=
+            ["MBIN_CHANGE_TABLE"] =
             {
 
             }

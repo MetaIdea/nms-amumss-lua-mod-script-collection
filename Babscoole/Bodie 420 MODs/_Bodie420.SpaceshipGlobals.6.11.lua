@@ -1,21 +1,21 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "__Bodie420.SpaceshipGlobals.6.11.pak",
-["MOD_DESCRIPTION"]			= "",
-["MOD_AUTHOR"]				= "Bodie420",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "6.11",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "__Bodie420.SpaceshipGlobals.6.11.pak",
+["MOD_DESCRIPTION"] = "",
+["MOD_AUTHOR"]      = "Bodie420",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "6.11",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["VALUE_CHANGE_TABLE"] 	= 	
+							["VALUE_CHANGE_TABLE"] = 	
 							{
 								{"LandingMaxSpeed", "2000"},  --Original  80
 								{"OutpostDockSpeedAlignMinDistance", "1"},  --Original  100
@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "Control", "SpaceEngine" },
-						["VALUE_CHANGE_TABLE"] 	= 
+						["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxSpeed", "999999"},  -- Original 180
 								{"BoostThrustForce", "1000"},  -- Original 500
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "Control", "PlanetEngine" },
-						["VALUE_CHANGE_TABLE"] 	= 
+						["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxSpeed", "9999"},  -- Original 125
 								{"BoostThrustForce", "500"},  -- Original 100
@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "Control", "CombatEngine" },
-						["VALUE_CHANGE_TABLE"] 	= 
+						["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxSpeed", "9999"},  -- Original 80
 								{"BoostThrustForce", "1000"},  -- Original 500
@@ -67,7 +67,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "ControlLight", "SpaceEngine" },
-						["VALUE_CHANGE_TABLE"] 	= 
+						["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxSpeed", "999999"},  -- Original 180
 								{"BoostThrustForce", "1000"},  -- Original 500
@@ -76,7 +76,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "ControlLight", "PlanetEngine" },
-						["VALUE_CHANGE_TABLE"] 	= 
+						["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxSpeed", "9999"},  -- Original 125
 								{"BoostThrustForce", "500"},  -- Original 200
@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "ControlLight", "CombatEngine" },
-						["VALUE_CHANGE_TABLE"] 	= 
+						["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxSpeed", "9999"},  -- Original 80
 								{"BoostThrustForce", "1000"},  -- Original 500
@@ -94,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "SpaceEngine" },
-						["VALUE_CHANGE_TABLE"] 	= 
+						["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxSpeed", "99999"},  -- Original 180
 								{"BoostThrustForce", "1000"},  -- Original 500
@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "PlanetEngine" },
-						["VALUE_CHANGE_TABLE"] 	= 
+						["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxSpeed", "9999"},  -- Original 130
 								{"BoostThrustForce", "500"},  -- Original 20
@@ -112,7 +112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 						["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "CombatEngine" },
-						["VALUE_CHANGE_TABLE"] 	= 
+						["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxSpeed", "9999"},  -- Original 80
 								{"BoostThrustForce", "1000"},  -- Original 500
