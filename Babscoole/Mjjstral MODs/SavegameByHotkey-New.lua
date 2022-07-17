@@ -1,23 +1,23 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "z-SavegameByHotkey-New.pak",
-["NMS_VERSION"]				= "3.90",
-["MOD_AUTHOR"]				= "Mjjstral and Babscoole",
-["MOD_DESCRIPTION"]			= "Enable hotkey saving (quick action emote menu)",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "z-SavegameByHotkey-New.pak",
+["NMS_VERSION"]     = "3.95",
+["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
+["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
+["MODIFICATIONS"]   = 
 	{	
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE",}, 
-							["LINE_OFFSET"] 		= "+0",
-							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
-							["ADD"] 				= 
+							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE",}, 
+							["LINE_OFFSET"]       = "+0",
+							["REPLACE_TYPE"]      = "ADDAFTERSECTION",
+							["ADD"] = 
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="SAVEGAME" />
@@ -50,8 +50,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
-							["ADD"] 				= 
+							["LINE_OFFSET"]         = "-2",
+							["ADD"] = 
 [[
     <Property value="TkReferenceComponentData.xml">
       <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/SAVE.SCENE.MBIN" />
@@ -91,13 +91,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
+							["LINE_OFFSET"]         = "+0",
+							["ADD"] = 
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="Save" />

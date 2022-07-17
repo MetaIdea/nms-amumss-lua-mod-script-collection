@@ -1008,29 +1008,29 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "_Exo's Abyss.pak",
-    ["MOD_AUTHOR"]              = "Exosolar",
-    ["LUA_AUTHOR"]              = "Jackty89, WinderTP, and Babscoole",	
-    ["MOD_MAINTENANCE"]         = "Babscoole",
-    ["NMS_VERSION"]             = "3.90",
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"]    = "_Exo's Abyss.pak",
+    ["MOD_AUTHOR"]      = "Exosolar",
+    ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",	
+    ["MOD_MAINTENANCE"] = "Babscoole",
+    ["NMS_VERSION"]     = "3.95",
+    ["MODIFICATIONS"]   =
     {
         {
-            ["MBIN_CHANGE_TABLE"] 	=
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\WATERCOLOURS.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
+                    ["EXML_CHANGE_TABLE"] =
                     {						
                     }
                 },
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCWATERGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "GCWATERGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"WaveHeight",		   	"0.25"},  
 								{"WaveFrequency",		"0.08"}, 
@@ -1047,7 +1047,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"WaterFogColourNear"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"R", "0.02"},  
 								{"G", "0.02"},
@@ -1169,7 +1169,7 @@ function CreateColoursProperty(PaletteColours)
 return PropertiesString
 end
 
-local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local BaseColourPalettesTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local PaletteColours = DataTable[i]["COLOURS"]
 

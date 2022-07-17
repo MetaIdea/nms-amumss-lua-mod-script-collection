@@ -1,17 +1,17 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Exo's Return of Maglock.pak",
-["MOD_AUTHOR"]				= "Exosolar",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "_Exo's Return of Maglock.pak",
+["MOD_AUTHOR"]    = "Exosolar",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.95",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\DEFAULTREALITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\DEFAULTREALITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"ShipWeapons", "Laser"},

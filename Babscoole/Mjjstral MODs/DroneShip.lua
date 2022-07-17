@@ -3,23 +3,23 @@ SHIP_SCALE = "1.0"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "DroneShip.pak",
-["MOD_AUTHOR"]				= "Mjstral",
-["MOD_MAINTENANCE"]			= "Babscoole",
-["NMS_VERSION"]				= "3.90",
-["DESCRIPTION"]				= "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "DroneShip.pak",
+["MOD_AUTHOR"]      = "Mjstral",
+["MOD_MAINTENANCE"] = "Babscoole",
+["NMS_VERSION"]     = "3.95",
+["DESCRIPTION"]     = "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{		
 				{
-					["MBIN_FILE_SOURCE"] 	= { SHIP_SCENE },
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = { SHIP_SCENE },
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["REPLACE_TYPE"]       = "RAW",
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{
 									[[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP\ENTITIES\SHIP.ENTITY.MBIN]], 
@@ -28,9 +28,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Ship",},
-							["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	= 
+							["SPECIAL_KEY_WORDS"]  = {"Name","Ship",},
+							["INTEGER_TO_FLOAT"]   = "FORCE",							
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"TransY", "0.6"},
 								{"ScaleX", SHIP_SCALE},
@@ -40,8 +40,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Children","Children"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
+							["LINE_OFFSET"]          = "+0",
+							["ADD"] = 
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="CockpitPos" />
@@ -68,17 +68,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
-							["ADD"] 				= 
+							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
+							["LINE_OFFSET"]       = "+0",
+							["REPLACE_TYPE"]      = "ADDAFTERSECTION",
+							["ADD"] = 
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="TRIGGERANIM" />
@@ -112,8 +112,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
-							["ADD"] 				= 
+							["LINE_OFFSET"]         = "-2",
+							["ADD"] = 
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -190,13 +190,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
+							["LINE_OFFSET"]         = "+0",
+							["ADD"] = 
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="Custom Ship" />
@@ -249,19 +249,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
+							["LINE_OFFSET"]         = "+0",
+							["ADD"] = 
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="CUSTOMSHIP" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+		<Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />

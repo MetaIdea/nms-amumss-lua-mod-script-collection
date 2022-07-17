@@ -268,6 +268,7 @@ local GENERIC_REWARD_MAIN_ENTRY =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="]] .. TYPE .. [[" />
         <Property name="OverrideZeroSeed" value="False" />
+		<Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
 ]] .. SUB_ENTRY .. [[
         </Property>
@@ -454,51 +455,51 @@ CreateSeedRewardLists()
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "zzzSEED-GENERATOR-V6A.pak",
-["MOD_AUTHOR"]				= "Mjjstral & Babscoole",
-["MOD_DESCRIPTION"]			= "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A.pak",
+["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
+["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
+["NMS_VERSION"]     = "3.95",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
-							["ADD"] 				= ANIM_TEMPLATE_ALL
+							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
+							["LINE_OFFSET"]       = "+0",
+							["REPLACE_TYPE"]      = "ADDAFTERSECTION",
+							["ADD"]               = ANIM_TEMPLATE_ALL
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
-							["ADD"] 				= ACTION_TRIGGER_COMPONENT
+							["LINE_OFFSET"]         = "-2",
+							["ADD"]                 = ACTION_TRIGGER_COMPONENT
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= QUICK_ACTION_BUTTON_ALL
+							["LINE_OFFSET"]         = "+0",
+							["ADD"]                 = QUICK_ACTION_BUTTON_ALL
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= CUSTOM_GENERICREWARD_ALL
+							["LINE_OFFSET"]         = "+0",
+							["ADD"]                 = CUSTOM_GENERICREWARD_ALL
 						}
 					}
 				}

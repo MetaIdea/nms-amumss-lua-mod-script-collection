@@ -212,10 +212,10 @@ CUSTOM_BUILDCOUNT_LIMITS =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_Beyond Base Building.pak",
-	["MOD_AUTHOR"]		= "NeptuneX3 after Sparky after Exosolar",
-	["MOD_MAINTENANCE"]		= "Babscoole",
-	["MOD_DESCRIPTION"]	=
+	["MOD_FILENAME"]    = "_Beyond Base Building.pak",
+	["MOD_AUTHOR"]      = "NeptuneX3 after Sparky after Exosolar",
+	["MOD_MAINTENANCE"] = "Babscoole",
+	["MOD_DESCRIPTION"] =
 	[[ An extreme degree of freedom added to the vanilla base-building options.
 	
 	—Mod Introduction and Features:
@@ -244,9 +244,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 	—For latest versions and more visit:-
 	https://www.nexusmods.com/nomanssky/mods/1096 
 	]],
-	["MOD_VERSION"]		= "3.90",
-	["NMS_VERSION"]		= "2.62+",	-- NMS version when first scripted
-	["MODIFICATIONS"]	= 
+	["MOD_VERSION"]   = "3.95",
+	["NMS_VERSION"]   = "2.62+",	-- NMS version when first scripted
+	["MODIFICATIONS"] = 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] = 

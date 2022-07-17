@@ -103,10 +103,10 @@ QUICK_ACTION_MENU =
 {
 	["SAVE"] = 
 	{
-		["TITLE"] 			= "Save",
-		["ICON"] 			= "TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS",
-		["ANIM"] 			= "SAVEGAME",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Save",
+		["ICON"]  = "TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS",
+		["ANIM"]  = "SAVEGAME",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -123,7 +123,7 @@ QUICK_ACTION_MENU =
               </Property>
             </Property>
 ]],
-		["COMPONENT"] 	= 
+		["COMPONENT"] = 
 [[
     <Property value="TkReferenceComponentData.xml">
       <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/SAVE.SCENE.MBIN" />
@@ -133,10 +133,10 @@ QUICK_ACTION_MENU =
 	},
 	["GALACTICMAP"] = 
 	{
-		["TITLE"] 			= "Galactic Map",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/GALACTICMAP/GALACTICMAP.DDS",
-		["ANIM"] 			= "GALACTICMAP",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Galactic Map",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/GALACTICMAP/GALACTICMAP.DDS",
+		["ANIM"]  = "GALACTICMAP",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -153,7 +153,7 @@ QUICK_ACTION_MENU =
               </Property>
             </Property>
 ]],
-		["COMPONENT"] 	= 
+		["COMPONENT"] = 
 [[
     <Property value="TkReferenceComponentData.xml">
       <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/GALACTICMAPOPTION.SCENE.MBIN" />
@@ -163,10 +163,10 @@ QUICK_ACTION_MENU =
 	},	
 	["WARP_TO_BASE"] = 
 	{
-		["TITLE"] 			= "Warp To Base",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.WARP.DDS",
-		["ANIM"] 			= "WARP_TO_BASE",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Warp To Base",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.WARP.DDS",
+		["ANIM"]  = "WARP_TO_BASE",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -184,10 +184,10 @@ QUICK_ACTION_MENU =
 	},
 	["TOGGLE_BACKPACK"] = 
 	{
-		["TITLE"] 			= "Toggle Backpack",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS",
-		["ANIM"] 			= "TOGGLE_BACKPACK",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Toggle Backpack",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS",
+		["ANIM"]  = "TOGGLE_BACKPACK",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
@@ -339,10 +339,10 @@ QUICK_ACTION_MENU =
 	},
 	["TOGGLE_INVISIBLE"] = 
 	{
-		["TITLE"] 			= "Toggle Invisibility",
-		["ICON"] 			= "TEXTURES/UI/HUD/ICONS/MISSIONS/HIDE_N_SEEK.DDS",
-		["ANIM"] 			= "TOGGLE_INVISIBLE",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Toggle Invisibility",
+		["ICON"]  = "TEXTURES/UI/HUD/ICONS/MISSIONS/HIDE_N_SEEK.DDS",
+		["ANIM"]  = "TOGGLE_INVISIBLE",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -386,10 +386,10 @@ QUICK_ACTION_MENU =
 	},
 	["TOGGLE_SHIELD"] = 
 	{
-		["TITLE"] 			= "Shield",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SUIT.PROTECTION.DDS",
-		["ANIM"] 			= "TOGGLE_SHIELD",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Shield",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SUIT.PROTECTION.DDS",
+		["ANIM"]  = "TOGGLE_SHIELD",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
@@ -449,7 +449,7 @@ QUICK_ACTION_MENU =
               </Property>
             </Property>
 ]],
-		["COMPONENT"] 	= 
+		["COMPONENT"] = 
 [[
     <Property value="TkReferenceComponentData.xml">
       <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/SHIELD/SHIELD.SCENE.MBIN" />
@@ -459,10 +459,10 @@ QUICK_ACTION_MENU =
 	},
 	["SCARE_CREATURES"] = 
 	{
-		["TITLE"] 			= "Scare Creatures",
-		["ICON"] 			= "TEXTURES/UI/HUD/EYE.CREATURE.DDS",
-		["ANIM"] 			= "SCARE_CREATURES",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Scare Creatures",
+		["ICON"]  = "TEXTURES/UI/HUD/EYE.CREATURE.DDS",
+		["ANIM"]  = "SCARE_CREATURES",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -487,10 +487,10 @@ QUICK_ACTION_MENU =
 	},
 	["BLACK_HOLE_WARP"] = 
 	{
-		["TITLE"] 			= "Black Hole Warp",
-		["ICON"] 			= "TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.BLACKHOLE.DDS",
-		["ANIM"] 			= "BLACK_HOLE_WARP",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Black Hole Warp",
+		["ICON"]  = "TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.BLACKHOLE.DDS",
+		["ANIM"]  = "BLACK_HOLE_WARP",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -508,10 +508,10 @@ QUICK_ACTION_MENU =
 	},
 	["RELIC_GATE_WARP"] = 
 	{
-		["TITLE"] 			= "Relic Gate Warp",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS",
-		["ANIM"] 			= "RELIC_GATE_WARP",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Relic Gate Warp",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS",
+		["ANIM"]  = "RELIC_GATE_WARP",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -529,10 +529,10 @@ QUICK_ACTION_MENU =
 	},	
 	["POWER_STATE"] = 
 	{
-		["TITLE"] 			= "Emit Electricity (WIP)",
-		["ICON"] 			= "TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.STORMCRYSTALS.DDS",
-		["ANIM"] 			= "POWER_STATE",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Emit Electricity (WIP)",
+		["ICON"]  = "TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.STORMCRYSTALS.DDS",
+		["ANIM"]  = "POWER_STATE",
+		["ACTION_TRIGGER"]= 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -557,45 +557,46 @@ QUICK_ACTION_MENU =
 	},
 	["REVEAL_PORTAL"] = 
 	{
-		["TITLE"] 			= "Find Portal",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.PORTAL.DDS",
-		["ANIM"] 			= "REVEAL_PORTAL",
-		["TYPE"]			= "REWARD",
+		["TITLE"] = "Find Portal",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.PORTAL.DDS",
+		["ANIM"]  = "REVEAL_PORTAL",
+		["TYPE"]  = "REWARD",
 	},
 	["R_SENTINELS_OFF"] = 
 	{
-		["TITLE"] 			= "Disable Sentinels",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.SENTINELSSILVER.DDS",
-		["ANIM"] 			= "R_SENTINELS_OFF",
-		["TYPE"]			= "REWARD",
+		["TITLE"] = "Disable Sentinels",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.SENTINELSSILVER.DDS",
+		["ANIM"]  = "R_SENTINELS_OFF",
+		["TYPE"]  = "REWARD",
 	},
 	["R_FIX_REP"] = 
 	{
-		["TITLE"] 			= "Reset Reputation",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REPTOKEN.DDS",
-		["ANIM"] 			= "R_FIX_REP",
-		["TYPE"]			= "REWARD",
+		["TITLE"] = "Reset Reputation",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REPTOKEN.DDS",
+		["ANIM"]  = "R_FIX_REP",
+		["TYPE"]  = "REWARD",
 	},
 	["WORD"] = 
 	{
-		["TITLE"] 			= "Learn Word",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.WORDSGOLD.DDS",
-		["ANIM"] 			= "WORD",
-		["TYPE"]			= "REWARD",
+		["TITLE"] = "Learn Word",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.WORDSGOLD.DDS",
+		["ANIM"]  = "WORD",
+		["TYPE"]  = "REWARD",
 	},	
 	["PLANET_FINDER"] = 
 	{
-		["TITLE"] 			= "Find Lush Planet",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS",
-		["ANIM"] 			= "PLANET_FINDER",
-		["TYPE"]			= "REWARD",
-		["REWARDTABLE"] 	= 
+		["TITLE"] = "Find Lush Planet",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS",
+		["ANIM"]  = "PLANET_FINDER",
+		["TYPE"]  = "REWARD",
+		["REWARDTABLE"] = 
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="PLANET_FINDER" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -613,7 +614,7 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]],
-		["SCANEVENTTABLE"] 	= 
+		["SCANEVENTTABLE"] = 
 [[
         <Property value="GcScanEventData.xml">
           <Property name="Name" value="PLANET_FINDER" />
@@ -624,7 +625,7 @@ QUICK_ACTION_MENU =
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
-		  <Property name="ForceOverrideEncounter" value="" />		  
+          <Property name="ForceOverrideEncounter" value="" />		  
           <Property name="IsCommunityPortalOverride" value="False" />
           <Property name="ClearForcedInteractionOnCompletion" value="False" />
       	  <Property name="BuildingPreventionRadius" value="0" />
@@ -678,12 +679,14 @@ QUICK_ACTION_MENU =
             <Property name="NeverAllowAbandoned" value="False" />
             <Property name="RequireUndiscovered" value="False" />
             <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True" />
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush" />
@@ -694,8 +697,8 @@ QUICK_ACTION_MENU =
             <Property name="NeedsEmptySystem" value="False" />
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
-			<Property name="SuitableForCreatureDiscovery" value="False" />
-			<Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
           </Property>
           <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
@@ -727,12 +730,14 @@ QUICK_ACTION_MENU =
             <Property name="NeverAllowAbandoned" value="False" />
             <Property name="RequireUndiscovered" value="False" />
             <Property name="NeedsWaterPlanet" value="False" />
+            <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
             <Property name="AnyBiomeNotWeirdOrDead" value="False" />	    
             <Property name="AnyRGBBiome" value="False" />
+            <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush" />
@@ -743,8 +748,8 @@ QUICK_ACTION_MENU =
             <Property name="NeedsEmptySystem" value="False" />
             <Property name="NeedsAbandonedSystem" value="False" />
             <Property name="NeedsResourceHint" value="" />
-	    <Property name="SuitableForCreatureDiscovery" value="False" />
-	    <Property name="SuitableForCreatureTaming" value="False" />
+            <Property name="SuitableForCreatureDiscovery" value="False" />
+            <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
           </Property>
           <Property name="ForceRestartInteraction" value="True" />
@@ -791,17 +796,18 @@ QUICK_ACTION_MENU =
 	},
 	["STOP_STORM"] = 
 	{
-		["TITLE"] 			= "Stop Storm",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANETDATA.WEATHER.DDS",
-		["ANIM"] 			= "STOP_STORM",
-		["TYPE"]			= "REWARD",
-		["REWARDTABLE"] 	= 
+		["TITLE"] = "Stop Storm",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANETDATA.WEATHER.DDS",
+		["ANIM"]  = "STOP_STORM",
+		["TYPE"]  = "REWARD",
+		["REWARDTABLE"] = 
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="STOP_STORM" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -817,17 +823,18 @@ QUICK_ACTION_MENU =
 	},
 	["STORM"] = 
 	{
-		["TITLE"] 			= "Trigger Storm",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANETDATA.WEATHER.DDS",
-		["ANIM"] 			= "STORM",
-		["TYPE"]			= "REWARD",
-		["REWARDTABLE"] 	= 
+		["TITLE"] = "Trigger Storm",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANETDATA.WEATHER.DDS",
+		["ANIM"]  = "STORM",
+		["TYPE"]  = "REWARD",
+		["REWARDTABLE"]= 
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="STORM" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -843,17 +850,18 @@ QUICK_ACTION_MENU =
 	},
 	["UPLOAD_BASE"] = 
 	{
-		["TITLE"] 			= "Upload Base",
-		["ICON"] 			= "TEXTURES/UI/HUD/ICONS/SCANNING/BUILDING.UPLOADBASE.DDS",
-		["ANIM"] 			= "UPLOAD_BASE",
-		["TYPE"]			= "REWARD",
-		["REWARDTABLE"] 	= 
+		["TITLE"] = "Upload Base",
+		["ICON"]  = "TEXTURES/UI/HUD/ICONS/SCANNING/BUILDING.UPLOADBASE.DDS",
+		["ANIM"]  = "UPLOAD_BASE",
+		["TYPE"]  = "REWARD",
+		["REWARDTABLE"] = 
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="UPLOAD_BASE" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -864,7 +872,7 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]],
-		["ACTION_TRIGGER"] 	= 
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -888,17 +896,18 @@ QUICK_ACTION_MENU =
 	},
 	["DEACT_FIENDS"] = 
 	{
-		["TITLE"] 			= "Deactivate Fiends",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.FIEND.OFF.DDS",
-		["ANIM"] 			= "DEACT_FIENDS",
-		["TYPE"]			= "REWARD",
-		["REWARDTABLE"] 	= 
+		["TITLE"] = "Deactivate Fiends",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.FIEND.OFF.DDS",
+		["ANIM"]  = "DEACT_FIENDS",
+		["TYPE"]  = "REWARD",
+		["REWARDTABLE"] = 
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="DEACT_FIENDS" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+		<Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -909,7 +918,7 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]],
-		["ACTION_TRIGGER"] 	= 
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -933,11 +942,11 @@ QUICK_ACTION_MENU =
 	},
 	["HEALTH_SUIT"] = 
 	{
-		["TITLE"] 			= "Full Health+Suit+Stamina",
-		["ICON"] 			= "TEXTURES/UI/HUD/ICONS/SCANNING/PICKUP.HEALTH.DDS",
-		["ANIM"] 			= "HEALTH_SUIT",
-		["TYPE"]			= "REWARD",
-		["ACTION_TRIGGER"] 	= 
+		["TITLE"] = "Full Health+Suit+Stamina",
+		["ICON"]  = "TEXTURES/UI/HUD/ICONS/SCANNING/PICKUP.HEALTH.DDS",
+		["ANIM"]  = "HEALTH_SUIT",
+		["TYPE"]  = "REWARD",
+		["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -946,7 +955,7 @@ QUICK_ACTION_MENU =
                 <Property name="StartFromEnd" value="False" />
               </Property>	
               <Property name="Action">
-				<Property value="GcRewardAction.xml">
+                <Property value="GcRewardAction.xml">
                   <Property name="Reward" value="HEALTHLARGE" />
                 </Property>
                 <Property value="GcRewardAction.xml">
@@ -967,7 +976,7 @@ QUICK_ACTION_MENU =
 	["CENTREJOURNEY3"] = { ["TITLE"]="Switch to Abandoned Universe", ["ICON"]="TEXTURES/SPACE/ATLASSTATION/ENDING_1/GALAXYTEXTURE.DDS", ["ANIM"]="CENTREJOURNEY3", ["TYPE"]="REWARD" },
 	["CENTREJOURNEY4"] = { ["TITLE"]="Switch to Balanced Universe", ["ICON"]="TEXTURES/SPACE/ATLASSTATION/ENDING_1/GALAXYTEXTURE.1.DDS", ["ANIM"]="CENTREJOURNEY4", ["TYPE"]="REWARD" },
 	["FREE_EXPLORE"] = { ["TITLE"]="Free Explore", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.EXPLORATION.ON.DDS", ["ANIM"]="FREE_EXPLORE", ["TYPE"]="REWARD",
-		["ACTION_TRIGGER"] 	= 
+        ["ACTION_TRIGGER"] = 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -1002,7 +1011,7 @@ QUICK_ACTION_MENU =
 	["TREE_CRAFT"] = { ["TITLE"]="Unlock Craft Products", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.COG.DDS", ["ANIM"]="TREE_CRAFT", ["TYPE"]="REWARD" },
 	["TREE_FRIGATE"] = { ["TITLE"]="Unlock Freighter Tech", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.COG.DDS", ["ANIM"]="TREE_FRIGATE", ["TYPE"]="REWARD" },	
 	["ENABLE_NEXUS"] = { ["TITLE"]="Enable Nexus", ["ICON"]="TEXTURES/UI/HUD/ICONS/BUILDINGS/NEXUS.DDS", ["ANIM"]="ENABLE_NEXUS", ["TYPE"]="REWARD", 
-		["ACTION_TRIGGER"] 	= 
+        ["ACTION_TRIGGER"] 	= 
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -1030,6 +1039,7 @@ QUICK_ACTION_MENU =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+		<Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1043,16 +1053,17 @@ QUICK_ACTION_MENU =
     </Property>
 ]]
 	},
-	["REVEAL_RUNES"] = { ["TITLE"]="Reveal Portal Runes", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.RUNE.DDS", ["ANIM"]="REVEAL_RUNES", ["TYPE"]="REWARD" },
-	["FREIGHTER_TRANS"] = { ["TITLE"]="Transfer Freighter Inventory", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/CATEGORIES/INVCAT.FREIGHTER.DDS", ["ANIM"]="FREIGHTER_TRANS", ["TYPE"]="REWARD" },
-	["CLEAR_WANTED"] = { ["TITLE"]="Clear Wanted Level", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/GAMEMODE/STAR.DDS", ["ANIM"]="CLEAR_WANTED", ["TYPE"]="REWARD", 
-		["REWARDTABLE"] = 
+        ["REVEAL_RUNES"] = { ["TITLE"]="Reveal Portal Runes", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.RUNE.DDS", ["ANIM"]="REVEAL_RUNES", ["TYPE"]="REWARD" },
+        ["FREIGHTER_TRANS"] = { ["TITLE"]="Transfer Freighter Inventory", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/CATEGORIES/INVCAT.FREIGHTER.DDS", ["ANIM"]="FREIGHTER_TRANS", ["TYPE"]="REWARD" },
+        ["CLEAR_WANTED"] = { ["TITLE"]="Clear Wanted Level", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/GAMEMODE/STAR.DDS", ["ANIM"]="CLEAR_WANTED", ["TYPE"]="REWARD", 
+        ["REWARDTABLE"] = 
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="CLEAR_WANTED" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+		<Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1067,14 +1078,15 @@ QUICK_ACTION_MENU =
     </Property>
 ]]
 	},
-	["ADD_WANTED"] = { ["TITLE"]="Add Wanted Level", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/GAMEMODE/STAR.DDS", ["ANIM"]="ADD_WANTED", ["TYPE"]="REWARD", 
-		["REWARDTABLE"] = 
+        ["ADD_WANTED"] = { ["TITLE"]="Add Wanted Level", ["ICON"]="TEXTURES/UI/FRONTEND/ICONS/GAMEMODE/STAR.DDS", ["ANIM"]="ADD_WANTED", ["TYPE"]="REWARD", 
+        ["REWARDTABLE"] = 
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="ADD_WANTED" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+		<Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1098,9 +1110,11 @@ SEED_TYPE_PATH =
 	["DROPSHIP"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
 	["SCIENTIFIC"]="MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
 	["SHUTTLE"]="MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
-	["EXOTIC"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
-	["BIO"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
+	["ROYAL"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
+	["ALIEN"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
+	["SAIL"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
 	["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
+	["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
 	["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN",	
 }
 
@@ -1192,6 +1206,7 @@ return [[
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+		<Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1331,6 +1346,7 @@ return [[
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+		<Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1431,14 +1447,14 @@ for i=1,#NEW_EMOTE_TABLE,1 do
 	NEW_EMOTES_ALL = NEW_EMOTES_ALL .. GetQuickAction(NEW_EMOTE_TABLE[i]["TITLE"], NEW_EMOTE_TABLE[i]["ANIM"], NEW_EMOTE_TABLE[i]["ICON"], "False")
 end		
 
-ANIMS 				= ""
-COMPONENTS 			= ""
-COMPONENTS_ALL		= ""
-ACTIONCOMPONENTS 	= ""
+ANIMS                  = ""
+COMPONENTS             = ""
+COMPONENTS_ALL         = ""
+ACTIONCOMPONENTS       = ""
 ACTIONCOMPONENTS_TABLE = {}
-EMOTEMENU 			= ""
-REWARDTABLE 		= ""
-SCANEVENTTABLE		= ""
+EMOTEMENU              = ""
+REWARDTABLE            = ""
+SCANEVENTTABLE         = ""
 ACTIONCOMPONENTS_COUNT = 0
 ACTIONCOMPONENTS_LIMIT = 28 --actually 32
 	
@@ -1519,57 +1535,57 @@ COMPONENTS_ALL = COMPONENTS_ALL .. COMPONENTS
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "zzz-MetaMod.pak",
-["MOD_AUTHOR"]				= "Mjjstral",
-["MOD_MAINTENANCE"]			= "Babscoole",
-["MOD_DESCRIPTION"]			= "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "zzz-MetaMod.pak",
+["MOD_AUTHOR"]      = "Mjjstral",
+["MOD_MAINTENANCE"] = "Babscoole",
+["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
+["NMS_VERSION"]     = "3.95",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
-							["ADD"] 				= ANIMS
+							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
+							["LINE_OFFSET"] = "+0",
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = ANIMS
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
-							["ADD"] 				= COMPONENTS_ALL
+							["LINE_OFFSET"] = "-2",
+							["ADD"] = COMPONENTS_ALL
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= EMOTEMENU
+							["LINE_OFFSET"] = "+0",
+							["ADD"] = EMOTEMENU
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_KNEES"}, 
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-							["ADD"] 				= NEW_EMOTES_ALL
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = NEW_EMOTES_ALL
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= REWARDTABLE
+							["LINE_OFFSET"] = "+0",
+							["ADD"] = REWARDTABLE
 						}
 					}
 				},
@@ -1579,28 +1595,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Events"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= SCANEVENTTABLE
+							["LINE_OFFSET"] = "+0",
+							["ADD"] = SCANEVENTTABLE
 						}
 					}
 				}
 			}
 		},
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{
 				{
-					["MBIN_FILE_SOURCE"]     = 
+					["MBIN_FILE_SOURCE"] = 
 					{ 
 						{ 
 							[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]], 
 							[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIPBACKUP.SCENE.MBIN]] 
 						}, 
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["REPLACE_TYPE"] 		= "RAW",
+							["REPLACE_TYPE"] = "RAW",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{
@@ -1612,14 +1628,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},			
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN"
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["REPLACE_TYPE"] 		= "RAW",
+							["REPLACE_TYPE"] = "RAW",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{
@@ -1639,15 +1655,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						"METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN"
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["REPLACE_TYPE"] = "RAW",
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{
 									[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]], 
@@ -1664,7 +1680,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] = 
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
@@ -1688,7 +1704,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\GALACTICMAPOPTION.SCENE.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] = 
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1720,7 +1736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\GALACTICMAPOPTION.ENTITY.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] = 
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1835,7 +1851,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.SCENE.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] = 
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1868,7 +1884,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.ENTITY.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] = 
 [[
 <?xml version="1.0" encoding="utf-8"?>
 

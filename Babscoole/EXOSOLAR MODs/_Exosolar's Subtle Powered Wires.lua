@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 	["MOD_FILENAME"]	= "_Exosolar's Subtle Powered Wires.pak",
-	["MOD_AUTHOR"]		= "Exosolar",
-	["LUA_AUTHOR"]		= "Babscoole",	
+	["MOD_AUTHOR"]      = "Exosolar",
+	["LUA_AUTHOR"]      = "Babscoole",	
 	["MOD_DESCRIPTION"]	= "Makes powered wires much more subtle",
-	["NMS_VERSION"]		= "3.90",	
+	["NMS_VERSION"]     = "3.95",	
 	["MODIFICATIONS"]	= 
 	{
 		{
