@@ -177,12 +177,12 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"] 			= "Starcharts.pak",
-  ["MOD_DESCRIPTION"]		= "LUA port of ModBuilder Starcharts script",
-  ["MOD_AUTHOR"]			= "CMKushnir",
-  ["LUA_AUTHOR"]			= "Babscoole",
-  ["NMS_VERSION"]			= "3.75",
-  ["MODIFICATIONS"] 		=
+  ["MOD_FILENAME"]    = "Starcharts.pak",
+  ["MOD_DESCRIPTION"] = "LUA port of ModBuilder Starcharts script",
+  ["MOD_AUTHOR"]      = "CMKushnir",
+  ["LUA_AUTHOR"]      = "Babscoole",
+  ["NMS_VERSION"]     = "3.75",
+  ["MODIFICATIONS"]   =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] =

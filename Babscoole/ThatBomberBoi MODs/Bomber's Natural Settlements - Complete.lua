@@ -34,18 +34,18 @@ ProducedItemChanges =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"] 			= "BNS-Complete 3.91.pak",
-	["MOD_DESCRIPTION"]			= "",
-	["MOD_AUTHOR"]				= "ThatBomberBoi",
-	["NMS_VERSION"]				= "3.91",
-	["MODIFICATIONS"] 			=
+	["MOD_FILENAME"]    = "BNS-Complete 3.91.pak",
+	["MOD_DESCRIPTION"] = "",
+	["MOD_AUTHOR"]      = "ThatBomberBoi",
+	["NMS_VERSION"]     = "3.91",
+	["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	=
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= {"GCSETTLEMENTGLOBALS.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = {"GCSETTLEMENTGLOBALS.MBIN"},
+					["EXML_CHANGE_TABLE"] = 
 					{
                         {
                             ["VALUE_CHANGE_TABLE"] =
@@ -95,8 +95,8 @@ for i = 1, #ProducedItemChanges do
 			ChangesToProducedItems_temp =
 			{
 				["PRECEDING_KEY_WORDS"] = {SettlementType},
-				["VALUE_MATCH"] 	= OldItem,
-				["VALUE_CHANGE_TABLE"] 	=
+				["VALUE_MATCH"] = OldItem,
+				["VALUE_CHANGE_TABLE"] =
 				{
 					{"Value", NewItem}
 				}

@@ -20,18 +20,18 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "_MOD_DUD_WaterColors_v17710.pak",
-    ["MOD_AUTHOR"]              = "jasondude7116",
-    ["LUA_AUTHOR"]              = "Jackty89, WinderTP, and Babscoole",	
-    ["NMS_VERSION"]             = "3.84",
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"]  = "_MOD_DUD_WaterColors_v17710.pak",
+    ["MOD_AUTHOR"]    = "jasondude7116",
+    ["LUA_AUTHOR"]    = "Jackty89, WinderTP, and Babscoole",	
+    ["NMS_VERSION"]   = "3.84",
+    ["MODIFICATIONS"] =
     {
         {
-            ["MBIN_CHANGE_TABLE"] 	=
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\WATERCOLOURS.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\WATERCOLOURS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {						
                     }
                 },				

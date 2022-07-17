@@ -1,21 +1,21 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Sandworms_Overhaul.pak",
-["MOD_AUTHOR"]				= "Redmas",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.53",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "Sandworms_Overhaul.pak",
+["MOD_AUTHOR"]    = "Redmas",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.53",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",}, 
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinScale",			"80"}, 	-- Original "50"
 								{"MaxScale",			"100"}, 	-- Original "50"
@@ -46,12 +46,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCCREATUREGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",						
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"SandWormChangeDirectionTime",			"0.001"}, 	-- Original "1"
 								{"SandWormSteerAdjustTime",			"0.2"}, 	-- Original "2"
@@ -70,13 +70,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}, 
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkCreatureTailComponentData.xml",},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",							
-							["ADD"] 				= 
+							["ADD"] = 
 [[
 	    <Property value="GcInteractionComponentData.xml">
       <Property name="InteractionAction" value="PressButton" />
@@ -285,11 +285,10 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
 ]]
 						},				
-					
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","Data",},
 							["INTEGER_TO_FLOAT"] = "FORCE",								
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Mass",			"3"}, 	-- Original "1"
 								{"Friction",			"0"}, 	-- Original "0.5"
@@ -299,7 +298,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},							
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Gravity",			"90"}, 	-- Original "20"								
 							}
@@ -307,7 +306,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},
 							["REPLACE_TYPE"] 		= "RAW",							
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"]  = 
 							{
 								{
 									[[<Property name="ChainEnds" />]],
@@ -318,7 +317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},
 							["LINE_OFFSET"] = "+3",
-							["ADD"] 				= 
+							["ADD"] = 
 [[
           <Property value="NMSString0x20.xml">
             <Property name="Value" value="NeckJNT" />
@@ -336,15 +335,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
 						},
 						{							
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"DeathEffect",			"FIENDDEATH"}, 	-- Original ""								
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["REPLACE_TYPE"] 		= "RAW",							
-							["VALUE_CHANGE_TABLE"] 	= 
+							["REPLACE_TYPE"]      = "RAW",							
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{
 									[[<Property name="ReplacementImpacts" />]],
@@ -355,7 +354,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
 							["LINE_OFFSET"] = "+7",
-							["ADD"] 				= 
+							["ADD"] = 
 [[
         <Property value="GcReplacementEffectData.xml">
           <Property name="Id" value="LASERCREATURE" />
@@ -371,7 +370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DiscoveryUIOffset",},
 							["LINE_OFFSET"] = "+5",
-							["ADD"] 				= 
+							["ADD"] = 
 [[
     </Property>
     <Property value="GcShootableComponentData.xml">
@@ -408,4 +407,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 	},	
 }
---NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED

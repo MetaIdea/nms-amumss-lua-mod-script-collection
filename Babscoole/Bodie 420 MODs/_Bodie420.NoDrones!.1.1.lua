@@ -1,18 +1,18 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Bodie420.NoDrones!.1.1.pak",
-["MOD_DESCRIPTION"]			= "",
-["MOD_AUTHOR"]				= "Bodie420",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "1.1",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "_Bodie420.NoDrones!.1.1.pak",
+["MOD_DESCRIPTION"] = "",
+["MOD_AUTHOR"]      = "Bodie420",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "1.1",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCROBOTGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCROBOTGLOBALS.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",								

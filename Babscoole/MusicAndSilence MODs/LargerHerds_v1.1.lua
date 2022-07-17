@@ -1,16 +1,16 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LargerHerds_v1.1.pak",
-["MOD_AUTHOR"]				= "MusicAndSilence",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.93",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "LargerHerds_v1.1.pak",
+["MOD_AUTHOR"]    = "MusicAndSilence",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.93",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	=
+					["MBIN_FILE_SOURCE"] =
 					{					
 						"METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLEBIGBIRD.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEBONE.MBIN",
@@ -19,12 +19,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPREDATORLARGE.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEROBOT.MBIN",						
 					},	
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"8" },					
@@ -33,13 +33,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLEBUSY.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLEBUSY.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"12" },					
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize",	"24" },					
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	
+					["MBIN_FILE_SOURCE"] = 	
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLECOMMON.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEBUTTERFLY.MBIN",
@@ -65,12 +65,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\WEIRD\GROUNDTABLEWEIRDROLL.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\WEIRD\GROUNDTABLEWEIRDROLLPREDATOR.MBIN",
 					},	
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"18" },					
@@ -79,13 +79,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEHERBIVOREMED.MBIN",	
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEHERBIVOREMED.MBIN",	
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"9" },					
@@ -94,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"12" },					
@@ -103,19 +103,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLECOMMONLIZARD.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLECOMMONSNAKE.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLEFLYINGLIZARDONLY.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLEFLYINGSNAKESONLY.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize", 	"24" },					
@@ -124,7 +124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize",	"18" },					
@@ -133,18 +133,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLEFLYINGLIZARDONLY.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\AIR\AIRTABLEFLYINGSNAKESONLY.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEHERBIVORESMALL.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"18" },
 								{"MaxGroupSize", 	"30" },					
@@ -153,7 +153,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize",	"18" },					
@@ -162,13 +162,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\CAVE\CAVETABLECOMMON.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CAVE\CAVETABLECOMMON.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1, 3,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"18" },					
@@ -177,7 +177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize",	"8" },					
@@ -186,13 +186,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEALIEN.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEALIEN.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"5" },					
@@ -201,7 +201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"6" },					
@@ -210,7 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3, 4,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize",	"9" },					
@@ -219,18 +219,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEHERBIVOREGIANT.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEHERBIVORELARGE.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\AIR\AIRTABLESANDWORM.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"5" },					
@@ -239,13 +239,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEHERDMED.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEHERDMED.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"24" },
 								{"MaxGroupSize", 	"48" },					
@@ -254,7 +254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	=
+					["MBIN_FILE_SOURCE"] =
 					{					
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\WEIRD\GROUNDTABLEWEIRDBUTTERFLY.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\WEIRD\GROUNDTABLEWEIRDCRYSTAL.MBIN",
@@ -262,12 +262,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEPREDATORMED.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\FIEND\GROUNDTABLEFIEND.MBIN",
 					},	
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"12" },					
@@ -276,12 +276,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\ECOSYSTEM\GROUND\WEIRD\GROUNDTABLEWEIRDFLOAT.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\GROUND\WEIRD\GROUNDTABLEWEIRDFLOAT.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"24" },					
@@ -290,13 +290,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\UNDERWATER\UNDERWATERTABLECOMMON.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\UNDERWATER\UNDERWATERTABLECOMMON.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1, 2, 3,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"6" },					
@@ -305,7 +305,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {4,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize",	"24" },					
@@ -314,7 +314,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {5,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize",	"18" },					
@@ -323,13 +323,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\UNDERWATER\UNDERWATERTABLECRABS.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\UNDERWATER\UNDERWATERTABLECRABS.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize", 	"24" },					
@@ -338,7 +338,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize",	"18" },					
@@ -347,7 +347,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize",	"12" },					
@@ -356,13 +356,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\AIR\AIRTABLEBUSY.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\AIR\AIRTABLEBUSY.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1, 2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"12" },					
@@ -371,7 +371,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"9" },
 								{"MaxGroupSize",	"15" },					
@@ -380,13 +380,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\AIR\AIRTABLECOMMON.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\AIR\AIRTABLECOMMON.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"9" },
 								{"MaxGroupSize", 	"18" },					
@@ -395,7 +395,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize",	"21" },					
@@ -404,17 +404,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	
+					["MBIN_FILE_SOURCE"] = 	
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\AIR\AIRTABLECOMMONLIZARD.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\AIR\AIRTABLECOMMONSNAKE.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"9" },
 								{"MaxGroupSize", 	"18" },					
@@ -423,7 +423,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize",	"12" },					
@@ -432,17 +432,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	
+					["MBIN_FILE_SOURCE"] = 	
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\AIR\AIRTABLEFLYINGLIZARDONLY.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\AIR\AIRTABLEFLYINGSNAKESONLY.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize", 	"21" },					
@@ -451,7 +451,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize",	"9" },					
@@ -460,13 +460,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\CAVE\CAVETABLECOMMON.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\CAVE\CAVETABLECOMMON.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1, 3,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"9" },					
@@ -475,7 +475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize",	"5" },					
@@ -484,13 +484,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\UNUSED\GROUNDTABLEALLCOW.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\UNUSED\GROUNDTABLEALLCOW.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize", 	"12" },					
@@ -499,7 +499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2, 4, 5,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"3" },					
@@ -508,7 +508,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize",	"9" },					
@@ -517,13 +517,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\UNUSED\GROUNDTABLEDINOSAURS.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\UNUSED\GROUNDTABLEDINOSAURS.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1, 2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize", 	"12" },					
@@ -532,7 +532,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3, 4, 5, 6, 7,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"3" },					
@@ -541,13 +541,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLEPREYBLOBS.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLEPREYBLOBS.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1, 2, 4,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize", 	"12" },					
@@ -556,7 +556,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3, 5,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"3" },					
@@ -565,13 +565,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLESMALLPREDATORS.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLESMALLPREDATORS.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1, 5,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"3" },					
@@ -580,7 +580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2, 4,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"6" },					
@@ -589,7 +589,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize", 	"12" },					
@@ -598,13 +598,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLESPARSE.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLESPARSE.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"9" },
 								{"MaxGroupSize", 	"15" },					
@@ -613,7 +613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize", 	"18" },					
@@ -622,7 +622,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3, 4,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize", 	"12" },					
@@ -631,7 +631,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {5,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"9" },					
@@ -640,7 +640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {6,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"6" },					
@@ -649,18 +649,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLEWEIRD.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLEWEIRDFLOAT.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLEWEIRDROLLPREDATOR.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"12" },					
@@ -669,18 +669,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLEWEIRDBUTTERFLY.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLEWEIRDCRYSTAL.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLEWEIRDCRYSTALPREDATOR.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"6" },					
@@ -689,16 +689,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\GROUND\GROUNDTABLEWEIRDROLL.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"9" },					
@@ -707,17 +707,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\UNDERWATER\UNDERWATERTABLECOMMON.MBIN",
 						"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\UNDERWATER\UNDERWATERTABLESEASNAKE.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"3" },					
@@ -726,13 +726,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\UNDERWATER\UNDERWATERTABLEEXTRA.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\UNDERWATER\UNDERWATERTABLEEXTRA.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"3" },					
@@ -741,7 +741,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"6" },
 								{"MaxGroupSize",	"12" },					
@@ -750,13 +750,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= 	"METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\UNDERWATER\UNDERWATERTABLEWHALE.MBIN",											
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\DEPRECATE\UNDERWATER\UNDERWATERTABLEWHALE.MBIN",											
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize", 	"3" },					
@@ -765,7 +765,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"3" },
 								{"MaxGroupSize",	"9" },					
@@ -774,7 +774,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"12" },
 								{"MaxGroupSize",	"24" },					
@@ -783,7 +783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 												{
 							["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
 							["SECTION_ACTIVE"] = {4,},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MinGroupSize", 	"9" },
 								{"MaxGroupSize",	"21" },					
