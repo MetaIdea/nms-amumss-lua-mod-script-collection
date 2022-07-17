@@ -2,10 +2,10 @@ Color = "GREEN"
 
 Author = "Gumsk"
 ModName = "gMech Hardframe Reskin"
-GameVersion = "382"
+GameVersion = "393"
 ModVersion = "a"
 ModNameSub = Color.." METALLIC"
-BaseDescription = "Changes color of hardframe exomech parts to "..Color
+BaseDescription = "Changes color of hardframe exomech parts to "..Color.." METALLIC"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -22,11 +22,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["EXTERNAL_FILE_SOURCE"] 	= "SENTINELTRIM.MASKS_METALLIC.DDS",
 		},
 	},
-	["MODIFICATIONS"]	= {
-		{
-			["MBIN_CHANGE_TABLE"] = {
-
-			}
-		},
-	}
+	["MODIFICATIONS"]	= {},
 }

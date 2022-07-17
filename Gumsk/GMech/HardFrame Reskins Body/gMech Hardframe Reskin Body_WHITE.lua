@@ -2,7 +2,7 @@ Color = "WHITE"
 
 Author = "Gumsk"
 ModName = "gMech Hardframe Reskin"
-GameVersion = "382"
+GameVersion = "393"
 ModVersion = "a"
 ModNameSub = Color
 BaseDescription = "Changes color of hardframe exomech parts to "..Color
@@ -18,11 +18,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["EXTERNAL_FILE_SOURCE"] 	= "MECHHARDFRAME_"..Color..".DDS",
 		},
 	},
-	["MODIFICATIONS"]	= {
-		{
-			["MBIN_CHANGE_TABLE"] = {
-
-			}
-		},
-	}
+	["MODIFICATIONS"]	= {},
 }
