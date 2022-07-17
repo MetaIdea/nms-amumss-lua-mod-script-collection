@@ -1,21 +1,21 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]		= "_LMF_Always-SClass-MaxStats.pak",
-["MOD_DESCRIPTION"]		= "This mod makes Frigates spawn with best initial stats and always as S class",
-["MOD_AUTHOR"]			= "ll62518475TheSecond",
-["LUA_AUTHOR"]			= "Babscoole",
-["NMS_VERSION"]			= "3.0+",
-["MODIFICATIONS"]			= 
+["MOD_FILENAME"]    = "_LMF_Always-SClass-MaxStats.pak",
+["MOD_DESCRIPTION"] = "This mod makes Frigates spawn with best initial stats and always as S class",
+["MOD_AUTHOR"]      = "ll62518475TheSecond",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "3.0+",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 					{
-					["MBIN_FILE_SOURCE"] 	= "GCFLEETGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "GCFLEETGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["VALUE_CHANGE_TABLE"] 	= 	
+							["VALUE_CHANGE_TABLE"] = 	
 							{
 								{"PercentChangeOfFrigateBeingPurchasable",		"100"},		-- Original 60
 								{"PercentChanceOfFrigateAdditionalSpawnedTrait",	"600"},		-- Original 55
@@ -210,14 +210,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{						
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_1",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -231,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_2",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -245,7 +245,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_3",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -259,7 +259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_4",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -273,7 +273,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_5",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -287,7 +287,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_1",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -301,7 +301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_2",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -315,7 +315,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_3",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -329,7 +329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_4",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -343,7 +343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_5",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -357,7 +357,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_1",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -371,7 +371,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_2",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -385,7 +385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_3",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -399,7 +399,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_4",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -413,7 +413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_5",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -427,7 +427,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_1",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -441,7 +441,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_2",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -455,7 +455,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_3",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -469,7 +469,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_4",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -483,7 +483,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_5",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -497,7 +497,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_1",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -511,7 +511,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_2",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -525,7 +525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_3",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -539,7 +539,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_4",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
@@ -553,7 +553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_5",},
 							["PRECEDING_KEY_WORDS"] = {"ChanceOfBeingOffered",},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Combat",	"0"},
 								{"Exploration",	"0"},
