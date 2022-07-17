@@ -1,17 +1,17 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "UniqueCompanion-Sandworm.pak",
-["MOD_AUTHOR"]				= "Mjjstral",
-["MOD_MAINTENANCE"]			= "Babscoole",
-["NMS_VERSION"]				= "3.90",
-["DESCRIPTION"]				= "Use the sphere spawner to get this unique companion",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "UniqueCompanion-Sandworm.pak",
+["MOD_AUTHOR"]      = "Mjjstral",
+["MOD_MAINTENANCE"] = "Babscoole",
+["NMS_VERSION"]     = "3.95",
+["DESCRIPTION"]     = "Use the sphere spawner to get this unique companion",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{
 				{
-					["MBIN_FILE_SOURCE"]     = 
+					["MBIN_FILE_SOURCE"] = 
 					{ 
 						{ 
 							[[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM.SCENE.MBIN]],
@@ -21,11 +21,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"]     = { [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM_COMPANION.SCENE.MBIN]] },
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = { [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM_COMPANION.SCENE.MBIN]] },
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["REPLACE_TYPE"] 		= "RAW",
+							["REPLACE_TYPE"]        = "RAW",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},	
 				{
-					["MBIN_FILE_SOURCE"]     = 
+					["MBIN_FILE_SOURCE"] = 
 					{ 
 						{ 
 							[[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN]],
@@ -47,12 +47,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"]     = { [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM_COMPANION.ENTITY.MBIN]] },
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = { [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM_COMPANION.ENTITY.MBIN]] },
+					["EXML_CHANGE_TABLE"] = 
 					{
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_CHANGE_TABLE"] = 
 							-- {
 								-- {"IncreaseWanted", 	"0"},
 								-- {"RepairTime", 		"0"},
@@ -61,8 +61,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						-- },
 						{
 							["PRECEDING_KEY_WORDS"] = {"Components"},
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
+							["LINE_OFFSET"]         = "+0",
+							["ADD"] = 
 [[
     <Property value="GcInteractionComponentData.xml">
       <Property name="InteractionAction" value="PressButton" />
@@ -206,14 +206,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\OBJECTSPAWNER\ENTITIES\OBJECTSPAWNER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\OBJECTSPAWNER\ENTITIES\OBJECTSPAWNER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Filename", [[MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM.SCENE.MBIN]]}
 							}

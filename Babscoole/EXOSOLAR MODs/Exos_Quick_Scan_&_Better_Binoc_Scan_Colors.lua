@@ -1,21 +1,20 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Exo's Quick Scan & Better Binoc Scan Colors.pak",
-["MOD_AUTHOR"]				= "Exosolar & Lo2k",
-["LUA_AUTHOR"]				= "Lo2k & Babscoole",
-["NMS_VERSION"]				= "3.64",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "_Exo's Quick Scan & Better Binoc Scan Colors.pak",
+["MOD_AUTHOR"]    = "Exosolar & Lo2k",
+["LUA_AUTHOR"]    = "Lo2k & Babscoole",
+["NMS_VERSION"]   = "3.64",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"SurveyMaxDistance",					 "1000"}, 	-- Original "400"							
 								{"TerrainResourceScanRange",			 "2000"}, 	-- Original "1200"
@@ -33,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "ToolScan",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"300"},	-- Original "200"			
 								{"ChargeTime",					"1"}, 	-- Original "30"		
@@ -41,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "ToolScanHardMode",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"225"},	-- Original "150"			
 								{"ChargeTime",					"5"}, 	-- Original "90"							
@@ -50,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "WaypointScan",
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"7500"},	-- Original "5000"	
 								{"PulseTime",					"0.5"}, 	-- Original "4"										
@@ -60,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "BeaconScan",
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"7500"},	-- Original "5000"	
 								{"PulseTime",					"0.5"}, 	-- Original "8"										
@@ -70,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "RadioTowerScan",
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"150000"},	-- Original "100000"	
 								{"PulseTime",					"0.5"}, 	-- Original "8"										
@@ -80,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "ObservatoryScan",
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"150000"},	-- Original "100000"	
 								{"PulseTime",					"0.5"}, 	-- Original "8"										
@@ -90,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "DistressSignalScan",
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"150000"},	-- Original "100000"	
 								{"PulseTime",					"0.5"}, 	-- Original "8"										
@@ -100,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "DebugScanPlanet",
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"1500000"},	-- Original "100000"	
 								{"PulseTime",					"0.5"}, 	-- Original "5"										
@@ -110,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "DebugScanSpace",
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"1500000"},	-- Original "100000"	
 								{"PulseTime",					"0.5"},		-- Original "5"										
@@ -120,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "ShipScan",
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"15000"},	-- Original "10000"	
 								{"PulseTime",					"0.5"}, 	-- Original "3"									
@@ -130,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = "VisualScan",
 							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PulseRange",					"15000"},	-- Original "10000"	
 								{"PulseTime",					"0.5"}, 	-- Original "8"									
@@ -139,7 +138,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ZoomType", "None"},
-                            ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = 
 							{
                                 {"MaxScanDistance", "20"},		-- Original "10"	
@@ -147,7 +145,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ZoomType", "Far"},
-                            ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = 
 							{
                                 {"FoV", 			"75"},		-- Original "70"
@@ -157,7 +154,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ZoomType", "Mid"},
-                            ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = 
 							{
                                 {"FoV", 			"30"},		-- Original "40"
@@ -168,7 +164,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"ZoomType", "Close"},
-                            ["REPLACE_TYPE"] = "",
                             ["VALUE_CHANGE_TABLE"] = 
 							{
                                 {"FoV", 			"15"},		-- Original "20"
@@ -180,7 +175,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"BinocularSelectedColour"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{	
 								{"R",	"0"},  
 								{"G",	"1"},  
@@ -191,7 +186,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"BinocularSelectedUnknownColour"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{	
 								{"R",	"1"},  
 								{"G",	"0"},  

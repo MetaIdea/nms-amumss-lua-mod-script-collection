@@ -1,42 +1,10 @@
 DEFAULT_SEED_NUMBER = 17000
 
--- NUMBER_OF_SEEDS =  -- Commented out 20 March 2022, unused
--- {
-	-- ["FIGHTER"]		=	DEFAULT_SEED_NUMBER,
-	-- ["DROPSHIP"] 	=	DEFAULT_SEED_NUMBER,
-	-- ["SCIENTIFIC"]	= 	DEFAULT_SEED_NUMBER,
-	-- ["SHUTTLE"]		=	DEFAULT_SEED_NUMBER,
-	-- ["ROYAL"]		=  	DEFAULT_SEED_NUMBER,
-	-- ["ALIEN"]		=  	DEFAULT_SEED_NUMBER,
-	-- ["SAIL"]	        =	DEFAULT_SEED_NUMBER,
-	-- ["MULTITOOL"] 	= 	DEFAULT_SEED_NUMBER,
-	-- ["ROYALMULTITOOL"] 	= 	DEFAULT_SEED_NUMBER,
--- }
-
 SELECTED_SEED_TYPES = 
 {
 	"Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail",
 	"MULTITOOL", "ROYALMULTITOOL", 
-	-- "FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
-	-- "SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGAT", "COMBATFRIGATE", "DIPLOMATICFRIGAT", "LIVINGFRIGATE",
-	-- "NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
-	-- "ANTELOPE", "BEETLE", "SHARK", "BIRD", "FISH", "FLYINGLIZARD", "BUTTERFLY", "RODENT", "COW", "TRICERATOPS", "CAT", 
-	-- "FLYINGSNAKE", "STRIDER", "TREX", "SIXLEGCOW", "TWOLEGANTELOPE", "SIXLEGCAT", "GRUNT", "BLOB", "SPIDER", "QUAD", "FLOATSPIDER", "SWIMCOW", 
-	-- "SWIMRODENT", "FIEND", "FIENDFISHBIG", "FIENDFISHSMALL", "JELLYFISH", "CRAB", "ROCKCREATURE", "MINIFIEND", "WEIRDROLL", "WEIRDCRYSTAL", "WEIRDFLOAT", 
-	-- "WEIRDBUTTERFLY"
 }
-
--- SEED_TYPES = -- Commented out 20 March 2022, unused
--- { 
-	-- "FIGHTER", "DROPSHIP", "SCIENTIFIC", "SHUTTLE", "ROYAL", "ALIEN", "SAIL",
-	-- "MULTITOOL", "ROYALMULTITOOL",
-	-- "FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
-	-- "SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGAT", "COMBATFRIGATE", "DIPLOMATICFRIGAT", "LIVINGFRIGATE",
-	-- "POLICEFREIGHTER", "POLICESHIP",
-	-- "NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
-	-- "TREX",
-	-- "PLANET",
--- }
 
 SEED_TYPE_PATH = 
 {
@@ -49,116 +17,77 @@ SEED_TYPE_PATH =
 	["Sail"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
 	
 	["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
-	["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
-	
-	-- ["FREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN",
-	-- ["CAPITALFREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
-	-- ["CREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
-	
-	-- ["FREIGHTERSMALL"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERSMALL_PROC.SCENE.MBIN",
-	-- ["FREIGHTERTINY"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERTINY_PROC.SCENE.MBIN",
-	
-	-- ["SCIENCEFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/SCIENCEFRIGATELOD0.SCENE.MBIN",
-	-- ["SUPPORTFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/SUPPORTFRIGATELOD0.SCENE.MBIN",
-	-- ["INDUSTRIALFRIGAT"]="MODELS/COMMON/SPACECRAFT/FRIGATES/INDUSTRIALFRIGATELOD0.SCENE.MBIN",
-	-- ["COMBATFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/COMBATFRIGATELOD0.SCENE.MBIN",
-	-- ["DIPLOMATICFRIGAT"]="MODELS/COMMON/SPACECRAFT/FRIGATES/DIPLOMATICFRIGATELOD0.SCENE.MBIN",
-	-- ["LIVINGFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/LIVINGFRIGATELOD0.SCENE.MBIN",
-	
-	-- ["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN",
-	-- ["POLICEFREIGHTER"]="MODELS/COMMON/SPACECRAFT/POLICE/POLICEFREIGHTER.SCENE.MBIN",
-	
-	-- ["NPCFIFTH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCFIFTH.SCENE.MBIN",
-	-- ["NPCFOURTH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCFOURTH.SCENE.MBIN",	
-	-- ["NPCGEK"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCGEK.SCENE.MBIN",
-	-- ["NPCKORVAX"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCKORVAX.SCENE.MBIN",	
-	-- ["NPCVYKEEN"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCVYKEEN.SCENE.MBIN",
-
-	-- ["QUADRUPED"] = "MODELS/COMMON/ROBOTS/QUADRUPED.SCENE.MBIN",
-	-- ["WALKER"] = "MODELS/COMMON/ROBOTS/WALKER.SCENE.MBIN",
-	-- ["DRONE"] = "MODELS/COMMON/ROBOTS/DRONE.SCENE.MBIN",
-	-- ["ANTELOPE"] = "MODELS/PLANETS/CREATURES/ANTELOPERIG/ANTELOPE.SCENE.MBIN",
-	-- ["BEETLE"] = "MODELS/PLANETS/BIOMES/CAVE/SMALLCREATURE/SUNBEETLE/SUNBEETLE.SCENE.MBIN",
-	-- ["SHARK"] = "MODELS/PLANETS/CREATURES/SHARKRIG/SHARK.SCENE.MBIN",
-	-- ["BIRD"] = "MODELS/PLANETS/CREATURES/SMALLBIRD/BIRD.SCENE.MBIN",
-	-- ["FISH"] = "MODELS/PLANETS/CREATURES/FISH/SMALLFISH.SCENE.MBIN",
-	-- ["FLYINGLIZARD"] = "MODELS/PLANETS/CREATURES/FLYINGLIZARDRIG/FLYINGLIZARD.SCENE.MBIN",
-	-- ["BUTTERFLY"] = "MODELS/PLANETS/CREATURES/BUTTERFLYRIG/BUTTERFLY.SCENE.MBIN",
-	-- ["RODENT"] = "MODELS/PLANETS/CREATURES/RODENTRIG/RODENT.SCENE.MBIN",
-	-- ["COW"] = "MODELS/PLANETS/CREATURES/COWRIG/COW.SCENE.MBIN",
-	-- ["TRICERATOPS"] = "MODELS/PLANETS/CREATURES/TRICERATOPSRIG/TRICERATOPS.SCENE.MBIN",
-	-- ["CAT"] = "MODELS/PLANETS/CREATURES/CATRIG/CAT.SCENE.MBIN",
-	-- ["FLYINGSNAKE"] = "MODELS/PLANETS/CREATURES/FLYINGSNAKE/FLYINGSNAKE.SCENE.MBIN",
-	-- ["STRIDER"] = "MODELS/PLANETS/CREATURES/STRIDERRIG/STRIDER.SCENE.MBIN",
-	-- ["TREX"] = "MODELS/PLANETS/CREATURES/TREXRIG/TREX.SCENE.MBIN",
-	-- ["SIXLEGCOW"] = "MODELS/PLANETS/CREATURES/COWRIG/SIXLEGGEDCOW.SCENE.MBIN",
-	-- ["TWOLEGANTELOPE"] = "MODELS/PLANETS/CREATURES/ANTELOPERIG/ANTELOPETWOLEGS.SCENE.MBIN",
-	-- ["SIXLEGCAT"] = "MODELS/PLANETS/CREATURES/CATRIG/SIXLEGCAT.SCENE.MBIN",
-	-- ["GRUNT"] = "MODELS/PLANETS/CREATURES/GRUNTRIG/GRUNT.SCENE.MBIN",
-	-- ["BLOB"] = "MODELS/PLANETS/CREATURES/BLOBRIG/BLOB.SCENE.MBIN",
-	-- ["SPIDER"] = "MODELS/PLANETS/CREATURES/SPIDERRIG/SPIDER.SCENE.MBIN",
-	-- ["QUAD"] = "MODELS/COMMON/ROBOTS/QUADRUPED.SCENE.MBIN",
-	-- ["FLOATSPIDER"] = "MODELS/PLANETS/CREATURES/SPIDERRIG/SPIDERFLOAT.SCENE.MBIN",
-	-- ["SWIMCOW"] = "MODELS/PLANETS/CREATURES/COWRIG/COWSWIM.SCENE.MBIN",
-	-- ["SWIMRODENT"] = "MODELS/PLANETS/CREATURES/RODENTRIG/RODENTSWIM.SCENE.MBIN",
-	-- ["FIEND"] = "MODELS/PLANETS/CREATURES/SPIDERRIG/FIEND.SCENE.MBIN",
-	-- ["FIENDFISHBIG"] = "MODELS/PLANETS/CREATURES/FISH/FISHFIEND.SCENE.MBIN",
-	-- ["FIENDFISHSMALL"] = "MODELS/PLANETS/CREATURES/FISH/FISHFIENDSMALL.SCENE.MBIN",
-	-- ["JELLYFISH"] = "MODELS/PLANETS/CREATURES/FISH/PROC_JELLYFISH.SCENE.MBIN",
-	-- ["CRAB"] = "MODELS/PLANETS/CREATURES/SPIDERRIG/SPIDER.SCENE.MBIN",
-	-- ["ROCKCREATURE"] = "MODELS/PLANETS/CREATURES/SPIDERRIG/ROCKCREATURE.SCENE.MBIN",
-	-- ["MINIFIEND"] = "MODELS/PLANETS/CREATURES/SPIDERRIG/FIEND.SCENE.MBIN",
-	-- ["WEIRDROLL"] = "MODELS/PLANETS/CREATURES/WEIRD/WEIRDRIG.SCENE.MBIN",
-	-- ["WEIRDCRYSTAL"] = "MODELS/PLANETS/CREATURES/WEIRD/WEIRDRIGGROUND.SCENE.MBIN",
-	-- ["WEIRDFLOAT"] = "MODELS/PLANETS/CREATURES/WEIRD/WEIRDRIG.SCENE.MBIN",
-	-- ["WEIRDBUTTERFLY"] = "MODELS/PLANETS/CREATURES/WEIRD/WEIRDBUTTERFLY.SCENE.MBIN",
-	
-	-- --TREE
-
-	-- ["PLANET"]="MODELS/SPACE/PLANETS/PLANETMESH.SCENE.MBIN",
-	
+	["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN"	
 }
 
--- USER_SEED_LIST = --Add your own seeds here. If you only want own seeds set the numbers above to 0.  -- Commented out 20 March 2022, unused
--- {
-	-- ["FIGHTER"] =
-	-- {
-	-- "-4266666232903262234", --HORIZOSHIP
-	-- "-8174559354674307366", --ALPHAVSHIP
-	-- }, 
-	-- ["DROPSHIP"] =
-	-- {
-	-- --add your DROPSHIP seeds here
-	-- },
-	-- ["SCIENTIFIC"] =
-	-- {
-	-- --add your SCIENTIFIC seeds here
-	-- },
-	-- ["SHUTTLE"] =
-	-- {
-	-- --add your SHUTTLE seeds here
-	-- }, 
-	-- ["ROYAL"] =
-	-- {
-	-- --add your ROYAL seeds here
-	-- },
-	-- ["ALIEN"] =
-	-- {
-	-- --add your ALIEN seeds here
-	-- },	
-	-- ["SAIL"] =
-	-- {
-	-- --add your SAILSHIP seeds here
-	-- },		
-	-- ["MULTITOOL"] =
-	-- {
-		-- "-3613125059207465828", --REZOSUZ65
-	-- },
-	-- ["ROYALMULTITOOL"] =
-	-- {
-	-- --add your ROYALMULTITOOL seeds here
-	-- },
--- }
+STATS =
+{
+    ["Fighter"] =
+    {
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"}
+
+    },
+    ["Dropship"] =
+    {
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"}
+    },	
+    ["Scientific"] =
+    {
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"}
+    },	
+    ["Shuttle"] =
+    {
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"}
+    },	
+    ["Royal"] =
+    {
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"}
+    },
+    ["Alien"] =
+    {
+        {["ID"] = "LAUNCHER_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIELD_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPGUN_ALIEN", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "WARP_ALIEN", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPLAS_ALIEN", ["Amount"] ="100", ["MaxAmount"]="100", ["Damage"]="0"}
+    },
+    ["Sail"] =
+    {
+        {["ID"] = "SOLAR_SAIL", ["Amount"] ="-1", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPSHIELD", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPGUN1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
+        {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"}
+    },
+}
 
 ----------------------------------------------------
 --CODINGS-------------------------------------------
@@ -194,7 +123,6 @@ BUTTON_ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
 ANIM_TEMPLATE_ALL = ""
 QUICK_ACTION_BUTTON_ALL = ""
 ACTION_TRIGGER_COMPONENT = ""
---ACTION_TRIGGER_ALL = ""  -- Commented out 20 March 2022, unused
 CUSTOM_GENERICREWARD_ALL = ""
 
 function CreateCustomMultitoolRewardSubEntry(DEC_SEED, HEX_SEED, TYPE)
@@ -260,6 +188,37 @@ local GENERIC_REWARD_ENTRY =
 return GENERIC_REWARD_ENTRY
 end
 
+function AddInvetoryElements(SHIPTYPE)
+    local statsList = STATS[SHIPTYPE]
+    local statsStringTable = {}
+    local statsString = ""
+    for i = 1, #statsList do
+        local ID = statsList[i]["ID"]
+        local Amount = statsList[i]["Amount"]
+        local MaxAmount = statsList[i]["MaxAmount"]
+        local Damage = statsList[i]["Damage"]
+        statsString = 
+[[
+                  <Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="]]..ID..[[" />
+                    <Property name="Amount" value="]]..Amount..[[" />
+                    <Property name="MaxAmount" value="]]..MaxAmount..[[" />
+                    <Property name="DamageFactor" value="]]..Damage..[[" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
+                  </Property>
+]]
+        table.insert(statsStringTable, statsString)
+    end
+return table.concat(statsStringTable)
+end
+
 function CreateCustomShipRewardSubEntry(SHIP_SEED, SHIPTYPE, NAME)
 local GENERIC_REWARD_SUB_ENTRY =
 [[
@@ -287,90 +246,7 @@ local GENERIC_REWARD_SUB_ENTRY =
               </Property>
               <Property name="ShipInventory" value="GcInventoryContainer.xml">
                 <Property name="Slots">
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="LAUNCHER" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="300" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPJUMP1" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPSHIELD" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPGUN1" />
-                    <Property name="Amount" value="1000" />
-                    <Property name="MaxAmount" value="1000" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="HYPERDRIVE" />
-                    <Property name="Amount" value="120" />
-                    <Property name="MaxAmount" value="120" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPLAS1" />
-                    <Property name="Amount" value="1000" />
-                    <Property name="MaxAmount" value="1000" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
+]]..AddInvetoryElements(SHIPTYPE)..[[
                 </Property>
                 <Property name="ValidSlotIndices" />
                 <Property name="Class" value="GcInventoryClass.xml">
@@ -400,300 +276,6 @@ local GENERIC_REWARD_SUB_ENTRY =
 return GENERIC_REWARD_SUB_ENTRY
 end
 
-function CreateCustomAlienShipRewardSubEntry(SHIP_SEED, SHIPTYPE, NAME)
-local GENERIC_REWARD_ALIEN_SUB_ENTRY =
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardSpecificShip.xml">
-              <Property name="ShipResource" value="GcResourceElement.xml">
-                <Property name="Filename" value="]] .. SEED_TYPE_PATH[SHIPTYPE] .. [[" />
-                <Property name="Seed" value="GcSeed.xml">
-                  <Property name="Seed" value="]] .. SHIP_SEED .. [[" />
-                  <Property name="UseSeedValue" value="True" />
-                </Property>
-                <Property name="AltId" value="" />
-                <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-                  <Property name="Samplers" />
-                </Property>
-              </Property>
-              <Property name="ShipLayout" value="GcInventoryLayout.xml">
-                <Property name="Slots" value="22" />
-                <Property name="Seed" value="GcSeed.xml">
-                  <Property name="Seed" value="1" />
-                  <Property name="UseSeedValue" value="True" />
-                </Property>
-                <Property name="Level" value="1" />
-              </Property>
-              <Property name="ShipInventory" value="GcInventoryContainer.xml">
-                <Property name="Slots">
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="LAUNCHER_ALIEN" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPJUMP_ALIEN" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIELD_ALIEN" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPGUN_ALIEN" />
-                    <Property name="Amount" value="100" />
-                    <Property name="MaxAmount" value="100" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="WARP_ALIEN" />
-                    <Property name="Amount" value="120" />
-                    <Property name="MaxAmount" value="120" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPLAS_ALIEN" />
-                    <Property name="Amount" value="100" />
-                    <Property name="MaxAmount" value="100" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="ValidSlotIndices" />
-                <Property name="Class" value="GcInventoryClass.xml">
-                  <Property name="InventoryClass" value="S" />
-                </Property>
-                <Property name="SubstanceMaxStorageMultiplier" value="0" />
-                <Property name="ProductMaxStorageMultiplier" value="0" />
-                <Property name="BaseStatValues" />
-                <Property name="SpecialSlots" />
-                <Property name="Width" value="0" />
-                <Property name="Height" value="0" />
-                <Property name="IsCool" value="False" />
-                <Property name="Name" value="]] .. NAME .. [[" />
-                <Property name="Version" value="0" />
-              </Property>
-              <Property name="ShipType" value="GcSpaceshipClasses.xml">
-                <Property name="ShipClass" value="]] .. SHIPTYPE .. [[" />
-              </Property>
-              <Property name="NameOverride" value="" />
-              <Property name="IsGift" value="False" />
-              <Property name="IsRewardShip" value="False" />
-              <Property name="FormatAsSeasonal" value="False" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-]]
-return GENERIC_REWARD_ALIEN_SUB_ENTRY
-end
-
-function CreateCustomSailShipRewardSubEntry(SHIP_SEED, SHIPTYPE, NAME)
-local GENERIC_REWARD_SAILSHIP_SUB_ENTRY =
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardSpecificShip.xml">
-              <Property name="ShipResource" value="GcResourceElement.xml">
-                <Property name="Filename" value="]] .. SEED_TYPE_PATH[SHIPTYPE] .. [[" />
-                <Property name="Seed" value="GcSeed.xml">
-                  <Property name="Seed" value="]] .. SHIP_SEED .. [[" />
-                  <Property name="UseSeedValue" value="True" />
-                </Property>
-                <Property name="AltId" value="" />
-                <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-                  <Property name="Samplers" />
-                </Property>
-              </Property>
-              <Property name="ShipLayout" value="GcInventoryLayout.xml">
-                <Property name="Slots" value="48" />
-                <Property name="Seed" value="GcSeed.xml">
-                  <Property name="Seed" value="1" />
-                  <Property name="UseSeedValue" value="True" />
-                </Property>
-                <Property name="Level" value="1" />
-              </Property>
-              <Property name="ShipInventory" value="GcInventoryContainer.xml">
-                <Property name="Slots">
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SOLAR_SAIL" />
-                    <Property name="Amount" value="-1" />
-                    <Property name="MaxAmount" value="100" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>				  
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="LAUNCHER" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPJUMP1" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPSHIELD" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPGUN1" />
-                    <Property name="Amount" value="1000" />
-                    <Property name="MaxAmount" value="1000" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="HYPERDRIVE" />
-                    <Property name="Amount" value="120" />
-                    <Property name="MaxAmount" value="120" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="SHIPLAS1" />
-                    <Property name="Amount" value="1000" />
-                    <Property name="MaxAmount" value="1000" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="ValidSlotIndices" />
-                <Property name="Class" value="GcInventoryClass.xml">
-                  <Property name="InventoryClass" value="S" />
-                </Property>
-                <Property name="SubstanceMaxStorageMultiplier" value="0" />
-                <Property name="ProductMaxStorageMultiplier" value="0" />
-                <Property name="BaseStatValues" />
-                <Property name="SpecialSlots" />
-                <Property name="Width" value="8" />
-                <Property name="Height" value="3" />
-                <Property name="IsCool" value="False" />
-                <Property name="Name" value="]] .. NAME .. [[" />
-                <Property name="Version" value="0" />
-              </Property>
-              <Property name="ShipType" value="GcSpaceshipClasses.xml">
-                <Property name="ShipClass" value="]] .. SHIPTYPE .. [[" />
-              </Property>
-              <Property name="NameOverride" value="" />
-              <Property name="IsGift" value="False" />
-              <Property name="IsRewardShip" value="False" />
-              <Property name="FormatAsSeasonal" value="False" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-]]
-return GENERIC_REWARD_SAILSHIP_SUB_ENTRY
-end
-
 function CreateRewardMainEntry(REWARD_ID, SUB_ENTRY, TYPE) 
 local GENERIC_REWARD_MAIN_ENTRY =
 [[
@@ -719,7 +301,7 @@ function CreateAnimEntry(ANIM_ID)
 ANIM_TEMPLATE =
 [[
 		<Property value="TkAnimationData.xml">
-			<Property name="Anim" value="]] .. ANIM_ID .. [[" />
+		  <Property name="Anim" value="]] .. ANIM_ID .. [[" />
 		  <Property name="Filename" value="]] .. GENERIC_ANIMATION_FILE .. [[" />
 		  <Property name="AnimType" value="OneShot" />
 		  <Property name="FrameStart" value="0" />
@@ -770,7 +352,6 @@ end
 
 function CreateActionTriggerComponent(ACTION_TRIGGER_LIST_)
 ACTION_TRIGGER_COMPONENT =
---local ACTION_TRIGGER_COMPONENT =  ---- Commented out 20 March 2022, shadow variable
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -845,15 +426,6 @@ QUICK_ACTION_BUTTON_TEMPLATE =
 return QUICK_ACTION_BUTTON_TEMPLATE
 end
 
--- Commented out 20 March 2022, unused
--- function FormatPath(FILEPATH)
-	-- return string.gsub(FILEPATH, string.char(92) .. string.char(92), string.char(92))	
--- end
-
--- function GetObjectID(SCENEPATH)
-	-- return string.gsub(string.match(string.match(SCENEPATH, "^.+/(.+)$"), "(.+)%.(.+)"), ".SCENE", "")
--- end
-
 function CreateSeedRewardLists()
   local count = 10000
   local SEED_COUNT = 1
@@ -862,16 +434,11 @@ function CreateSeedRewardLists()
 			local Seed = ""
 			local SREA = {}
 			local SST = SELECTED_SEED_TYPES[i]
-			--SUB_REWARD_ENTRY_ALL = "" --SREA	
-			for j=1,DEFAULT_SEED_NUMBER,1 do
-				Seed = GetSeed(j)
+			for _j=1,DEFAULT_SEED_NUMBER,1 do
+				Seed = GetSeed()
 				local SREA_tmp = ""
-				if SST == "Alien" then
-					SREA_tmp = CreateCustomAlienShipRewardSubEntry(HexToDec(Seed), SST, Seed)
-				elseif SST == "Sail" then
-					SREA_tmp = CreateCustomSailShipRewardSubEntry(HexToDec(Seed), SST, Seed)
-				elseif SST == "MULTITOOL" or SST == "ROYALMULTITOOL" then
-					SREA_tmp = CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SST)
+				if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" then
+					SREA_tmp = CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SST)				
 				else
 					SREA_tmp = CreateCustomShipRewardSubEntry(HexToDec(Seed), SST, Seed)
 				end
@@ -883,7 +450,7 @@ function CreateSeedRewardLists()
 			SEED_COUNT = SEED_COUNT + 1
 		end
 		SUB_REWARD_ENTRY_ALL = table.concat(SREA)
-    local ID = string.upper(SST) -- .. "_REWARD"
+    local ID = string.upper(SST)
     QUICK_ACTION_BUTTON_ALL = QUICK_ACTION_BUTTON_ALL .. CreateQuickActionMenuEntry("RANDOM " .. ID, ID, BUTTON_ICON)
     ANIM_TEMPLATE_ALL = ANIM_TEMPLATE_ALL .. CreateAnimEntry(ID)
     ACTION_TRIGGER_COMPONENT = ACTION_TRIGGER_COMPONENT .. CreateActionTriggerComponent(CreateActionTriggerRewardEntry(ID, ID))
@@ -897,51 +464,51 @@ CreateSeedRewardLists()
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "zzzSEED-GENERATOR-V6B.pak",
-["MOD_AUTHOR"]				= "Mjjstral & Babscoole",
-["MOD_DESCRIPTION"]			= "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
+["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
+["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
+["NMS_VERSION"]     = "3.95",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
-							["ADD"] 				= ANIM_TEMPLATE_ALL
+							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
+							["LINE_OFFSET"]       = "+0",
+							["REPLACE_TYPE"]      = "ADDAFTERSECTION",
+							["ADD"]               = ANIM_TEMPLATE_ALL
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
-							["ADD"] 				= ACTION_TRIGGER_COMPONENT
+							["LINE_OFFSET"]         = "-2",
+							["ADD"]                 = ACTION_TRIGGER_COMPONENT
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= QUICK_ACTION_BUTTON_ALL
+							["LINE_OFFSET"]         = "+0",
+							["ADD"]                 = QUICK_ACTION_BUTTON_ALL
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= CUSTOM_GENERICREWARD_ALL
+							["LINE_OFFSET"]         = "+0",
+							["ADD"]                 = CUSTOM_GENERICREWARD_ALL
 						}
 					}
 				}

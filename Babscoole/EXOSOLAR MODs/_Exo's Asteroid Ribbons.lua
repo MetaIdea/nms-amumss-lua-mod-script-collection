@@ -1,21 +1,21 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Exo's Asteroid Ribbons.pak", 
-["MOD_AUTHOR"]				= "Exosolar",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "_Exo's Asteroid Ribbons.pak", 
+["MOD_AUTHOR"]    = "Exosolar",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.95",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"MaxAsteroidGenerationPerFrame",  "120000"},  --org 5000
 								{"MaxAsteroidGenerationPerFramePulseJump",  "10000"}, --org 1000
@@ -24,8 +24,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},			
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"] = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["VALUE_CHANGE_TABLE"] 	= 

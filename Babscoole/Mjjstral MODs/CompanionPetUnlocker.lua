@@ -342,34 +342,33 @@ FrontJNT_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "CompanionPetUnlocker.pak",
-["MOD_AUTHOR"]				= "Mjjstral",
-["MOD_MAINTENANCE"]			= "Babscoole",
-["Pet_Ride_Code"]			= "Corvus",
-["NMS_VERSION"]				= "3.90",
-["DESCRIPTION"]				= "Enables more creatures to become companion pets",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "CompanionPetUnlocker.pak",
+["MOD_AUTHOR"]      = "Mjjstral",
+["MOD_MAINTENANCE"] = "Babscoole",
+["Pet_Ride_Code"]   = "Corvus",
+["NMS_VERSION"]     = "3.95",
+["DESCRIPTION"]     = "Enables more creatures to become companion pets",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= 
+					["MBIN_FILE_SOURCE"] = 
 					{
 						[[MODELS\PLANETS\CREATURES\FLYINGLIZARDRIG\FLYINGLIZARD\ENTITIES\BODY_LIZARD.ENTITY.MBIN]],
 						[[MODELS\PLANETS\CREATURES\FLYINGSNAKE\FLYINGSNAKE\ENTITIES\KITECREATURE.ENTITY.MBIN]],	
 					},	
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   	= {"InteractionAction","PressButton",},
-							["REMOVE"]                     = "SECTION"
+							["SPECIAL_KEY_WORDS"] = {"InteractionAction","PressButton",},
+							["REMOVE"] = "SECTION"
 						},
-
 					}
 				},			
 				{
-					["MBIN_FILE_SOURCE"]     = 
+					["MBIN_FILE_SOURCE"] = 
 					{ 
 						[[MODELS\PLANETS\CREATURES\ANTELOPERIG\ANTELOPE\ENTITIES\_BODY_ALIEN.ENTITY.MBIN]],
 						[[MODELS\PLANETS\CREATURES\ANTELOPERIG\ANTELOPE\ENTITIES\_BODY_DEER.ENTITY.MBIN]],
@@ -471,12 +470,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						-- -- [[MODELS\COMMON\ROBOTS\WALKER\ENTITIES\WALKER.ENTITY.MBIN]],
 						-- -- [[MODELS\PLANETS\CREATURES\SPIDERRIG\FIEND\ENTITIES\_FIEND_BODY.ENTITY.MBIN]],					
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Components"},
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= 
+							["LINE_OFFSET"] = "+0",
+							["ADD"] = 
 [[
     <Property value="GcInteractionComponentData.xml">
       <Property name="InteractionAction" value="PressButton" />
@@ -619,7 +618,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"]     = 
+					["MBIN_FILE_SOURCE"] = 
 					{ 
 						[[MODELS\PLANETS\CREATURES\BEETLERIG\BEETLE\ENTITIES\BEETLEDATA.ENTITY.MBIN]],
 						[[MODELS\PLANETS\CREATURES\BUTTERFLYRIG\LARGEBUTTERFLY\ENTITIES\LARGEBUTTERFLYDATA.ENTITY.MBIN]],
@@ -627,10 +626,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						[[MODELS\PLANETS\CREATURES\WEIRD\WEIRDRIG\ENTITIES\WEIRDFLOAT.ENTITY.MBIN]],
 						[[MODELS\PLANETS\CREATURES\WEIRD\WEIRDRIG\ENTITIES\WEIRDROLL.ENTITY.MBIN]],					
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"RepeatInteraction",	"False"}, 		-- Original "True"
 								{"UseInteractCamera",	"False"},		-- Original "True"
@@ -639,180 +638,180 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/ECOSYSTEM/CREATUREDATATABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/ECOSYSTEM/CREATUREDATATABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","FISH"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = joint1_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","FISH"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = joint1_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","FISHFLOCK"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","FISHFLOCK"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","SWIMCOW"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","SWIMCOW"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","SWIMRODENT"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = GlobalJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","SWIMRODENT"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = GlobalJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","JELLYFISH"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = centre_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","JELLYFISH"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = centre_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","SEASNAKE"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","SEASNAKE"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","SHARK"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = Root_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","SHARK"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = Root_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","BIRD"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = Root_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","BIRD"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = Root_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","FLYINGSNAKE"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","FLYINGSNAKE"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","FLYINGLIZARD"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = Back1JNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","FLYINGLIZARD"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = Back1JNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","BUTTERFLY"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = Root_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","BUTTERFLY"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = Root_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","SMALLBIRD"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = Root_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","SMALLBIRD"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = Root_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","BUTTERFLOCK"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","BUTTERFLOCK"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","MOLE"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = DiggerROOT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","MOLE"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = DiggerROOT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","PROTOROLLER"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","PROTOROLLER"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","PROTODIGGER"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = EyeStalkROOT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","PROTODIGGER"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = EyeStalkROOT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","PLOUGH"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","PLOUGH"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","DRILL"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = DiggerROOT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","DRILL"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = DiggerROOT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","WEIRDROLL"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","WEIRDROLL"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","WEIRDFLOAT"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","WEIRDFLOAT"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","WEIRDCRYSTAL"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","WEIRDCRYSTAL"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","WEIRDBUTTERFLY"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = shellfly_ROOTSHJnt_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","WEIRDBUTTERFLY"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = shellfly_ROOTSHJnt_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","FIEND"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","FIEND"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","SCUTTLER"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","SCUTTLER"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","SLUG"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","SLUG"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","MINIFIEND"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","MINIFIEND"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","FIENDFISHSMALL"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = joint1_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","FIENDFISHSMALL"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = joint1_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","FLOATER"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = FrontJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","FLOATER"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = FrontJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","MINIDRONE"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","MINIDRONE"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","FIENDFISHBIG"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = joint1_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","FIENDFISHBIG"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = joint1_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]         = {"Id","ROCKCREATURE"},
-							["PRECEDING_KEY_WORDS"]         = {"Data"},
-							["ADD"]                         = RootJNT_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","ROCKCREATURE"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = RootJNT_ADD,
 						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/ECOSYSTEM/ROBOTDATATABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/ECOSYSTEM/ROBOTDATATABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   	= {"Id","WALKER"},
-							["PRECEDING_KEY_WORDS"]     = {"Data"},
-							["ADD"]                     = Root_ADD,
+							["SPECIAL_KEY_WORDS"]   = {"Id","WALKER"},
+							["PRECEDING_KEY_WORDS"] = {"Data"},
+							["ADD"]                 = Root_ADD,
 						},
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","QUAD"},
-							["REPLACEMENT_TYPE"]    = {"ADDAFTERSECTION"},
-							["INTEGER_TO_FLOAT"] 	= "FORCE",								
-							["VALUE_CHANGE_TABLE"] 	= 
+							["SPECIAL_KEY_WORDS"]  = {"Id","QUAD"},
+							["REPLACEMENT_TYPE"]   = {"ADDAFTERSECTION"},
+							["INTEGER_TO_FLOAT"]   = "FORCE",								
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"LegSpread",	"True"},
 								{"ScaleForNeutralLegSpread",	"1.25"},
@@ -824,19 +823,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						}
 					}
 				},
-				-- {
-					-- ["MBIN_FILE_SOURCE"] 	= "GCCREATUREGLOBALS.MBIN",
-					-- ["EXML_CHANGE_TABLE"] 	= 
-					-- {
-						-- {
-							-- ["INTEGER_TO_FLOAT"] = "FORCE",						
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"CreatureInteractBaseRange",			"10"}, 	-- Original "5"									
-							-- }
-						-- },				
-					-- }, 
-				-- },				
+				{
+					["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
+					["EXML_CHANGE_TABLE"] = 
+					{
+						{					
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"CreatureInteractBaseRange",	"50"}, 	-- Original "5"									
+							}
+						},				
+					}, 
+				},				
 			}
 		}
 	}

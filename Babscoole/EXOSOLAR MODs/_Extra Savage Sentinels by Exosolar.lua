@@ -1,21 +1,21 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Extra Savage Sentinels by Exosolar.pak",
-["MOD_AUTHOR"]				= "Exosolar",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "_Extra Savage Sentinels by Exosolar.pak",
+["MOD_AUTHOR"]    = "Exosolar",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.95",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCROBOTGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCROBOTGLOBALS.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"GrenadeLaunchFlightTime", 2},
 								{"MaxNumPatrolDrones", 2},
@@ -72,7 +72,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"WalkerGunOffset2"},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"]  = 
 							{
 								{"x", -0.005},		
 								{"y", -0.007}
@@ -81,7 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{					
 							["PRECEDING_KEY_WORDS"] = {"WalkerLaser"},
 							["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"LaserMiningDamage", 130},
 								{"LaserChargeTime", 1},

@@ -227,66 +227,66 @@ QUICK_ACTION_MENU =
 {
 	["S1_REWARDS"] = 
 	{
-		["TITLE"] 			= "Unlock Season 1 Reward",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.1.DDS",
-		["ANIM"] 			= "Unlock1Reward",
-		["REWARD"]			= REWARDS_1
+		["TITLE"]  = "Unlock Season 1 Reward",
+		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.1.DDS",
+		["ANIM"]   = "Unlock1Reward",
+		["REWARD"] = REWARDS_1
 	},
 	["S2_REWARDS"] = 
 	{
-		["TITLE"] 			= "Unlock Season 2 Reward",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.2.DDS",
-		["ANIM"] 			= "UnlockS2Reward",
-		["REWARD"]			= REWARDS_2
+		["TITLE"]  = "Unlock Season 2 Reward",
+		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.2.DDS",
+		["ANIM"]   = "UnlockS2Reward",
+		["REWARD"] = REWARDS_2
 	},
 	["S3_REWARDS"] = 
 	{
-		["TITLE"] 			= "Unlock Season 3 Reward",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.3.DDS",
-		["ANIM"] 			= "UnlockS3Reward",
-		["REWARD"]			= REWARDS_3		
+		["TITLE"]  = "Unlock Season 3 Reward",
+		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.3.DDS",
+		["ANIM"]   = "UnlockS3Reward",
+		["REWARD"] = REWARDS_3		
 	},
 	["S4_REWARDS"] = 
 	{
-		["TITLE"] 			= "Unlock Season 4 Reward",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.4.DDS",
-		["ANIM"] 			= "UnlockS4Reward",
-		["REWARD"]			= REWARDS_4		
+		["TITLE"]  = "Unlock Season 4 Reward",
+		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.4.DDS",
+		["ANIM"]   = "UnlockS4Reward",
+		["REWARD"] = REWARDS_4		
 	},
 	["S5_REWARDS"] = 
 	{
-		["TITLE"] 			= "Unlock Season 5 Reward",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.5.DDS",
-		["ANIM"] 			= "UnlockS5Reward",
-		["REWARD"]			= REWARDS_5		
+		["TITLE"]  = "Unlock Season 5 Reward",
+		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.5.DDS",
+		["ANIM"]   = "UnlockS5Reward",
+		["REWARD"] = REWARDS_5		
 	},
 	["S6_REWARDS"] = 
 	{
-		["TITLE"] 			= "Unlock Season 6 Reward",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.6.DDS",
-		["ANIM"] 			= "UnlockS6Reward",
-		["REWARD"]			= REWARDS_6		
+		["TITLE"]  = "Unlock Season 6 Reward",
+		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.6.DDS",
+		["ANIM"]   = "UnlockS6Reward",
+		["REWARD"] = REWARDS_6		
 	},
 	["S7_REWARDS"] = 
 	{
-		["TITLE"] 			= "Unlock Season 7 Reward",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.7.DDS",
-		["ANIM"] 			= "UnlockS7Reward",
-		["REWARD"]			= REWARDS_7		
+		["TITLE"]  = "Unlock Season 7 Reward",
+		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.7.DDS",
+		["ANIM"]   = "UnlockS7Reward",
+		["REWARD"] = REWARDS_7		
 	},		
 	["S1_GV"] = 
 	{
-		["TITLE"] 			= "Unlock Golden Vector Reward",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.1.DDS",
-		["ANIM"] 			= "UnlockGVReward",
-		["REWARD"]			= REWARDS_GVECTOR	
+		["TITLE"]  = "Unlock Golden Vector Reward",
+		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.1.DDS",
+		["ANIM"]   = "UnlockGVReward",
+		["REWARD"] = REWARDS_GVECTOR	
 	},
 	["S3_NORMANDY"] = 
 	{
-		["TITLE"] 			= "Unlock Normandy Reward",
-		["ICON"] 			= "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.2A.DDS",
-		["ANIM"] 			= "UnlockNorReward",
-		["REWARD"]			= REWARDS_NORMANDY		
+		["TITLE"]  = "Unlock Normandy Reward",
+		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.2A.DDS",
+		["ANIM"]   = "UnlockNorReward",
+		["REWARD"] = REWARDS_NORMANDY		
 	},	
 }
 
@@ -397,40 +397,40 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "zzz-SeasonRewardUnlocker.pak",
-["MOD_AUTHOR"]				= "Mjjstral and Babscoole",
-["MOD_DESCRIPTION"]			= "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
+["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
+["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
+["NMS_VERSION"]     = "3.95",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN]],
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["REPLACE_TYPE"]        = "ADDAFTERSECTION",
-							["ADD"] 				= ANIMS
+							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
+							["LINE_OFFSET"]       = "+0",
+							["REPLACE_TYPE"]      = "ADDAFTERSECTION",
+							["ADD"]               = ANIMS
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] 		= "-2",
-							["ADD"] 				= TRIGGERS						
+							["LINE_OFFSET"]         = "-2",
+							["ADD"]                 = TRIGGERS						
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= [[METADATA\UI\EMOTEMENU.MBIN]],
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= EMOTEMENU						
+							["LINE_OFFSET"]         = "+0",
+							["ADD"]                 = EMOTEMENU						
 						}
 					}
 				}

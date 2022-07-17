@@ -292,25 +292,25 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_AUTHOR"]      = "Exosolar",
     ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
     ["MOD_MAINTENANCE"] = "Babscoole",	
-    ["NMS_VERSION"]     = "3.90",
+    ["NMS_VERSION"]     = "3.95",
     ["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
 						{
-							["SPECIAL_KEY_WORDS"] = { "Plant", "GcPaletteData.xml"  },
+							["SPECIAL_KEY_WORDS"]  = { "Plant", "GcPaletteData.xml"  },
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"NumColours", "All"}
 							}	
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = { "Leaf", "GcPaletteData.xml"  },
+							["SPECIAL_KEY_WORDS"]  = { "Leaf", "GcPaletteData.xml"  },
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"NumColours", "All"}

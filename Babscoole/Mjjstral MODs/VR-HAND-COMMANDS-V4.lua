@@ -1,23 +1,23 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "VR-HAND-COMMANDS.pak", 
-["MOD_AUTHOR"]				= "Mjjstral",
-["MOD_MAINTENANCE"]			= "Babscoole",
-["NMS_VERSION"]				= "3.90",
-["MOD_DESCRIPTION"]			= "Adds trigger-action hand combos, savegame: left-right-left, teleport to base: right-left-right",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]    = "VR-HAND-COMMANDS.pak", 
+["MOD_AUTHOR"]      = "Mjjstral",
+["MOD_MAINTENANCE"] = "Babscoole",
+["NMS_VERSION"]     = "3.95",
+["MOD_DESCRIPTION"] = "Adds trigger-action hand combos, savegame: left-right-left, teleport to base: right-left-right",
+["MODIFICATIONS"]   = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] 	= { "Components" },
-							["LINE_OFFSET"] 			= "+0",
-							["ADD"] 	= 
+							["PRECEDING_KEY_WORDS"] = { "Components" },
+							["LINE_OFFSET"]         = "+0",
+							["ADD"] = 
 [[		
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />

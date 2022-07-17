@@ -5,23 +5,23 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "VR-SHIP-HEADLIGHTS-TOGGLEABLE.pak",
-["MOD_AUTHOR"]				= "Mjjstral",
-["NMS_VERSION"]				= "2.2+",
-["DESCRIPTION"]				= "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "VR-SHIP-HEADLIGHTS-TOGGLEABLE.pak",
+["MOD_AUTHOR"]    = "Mjjstral",
+["NMS_VERSION"]   = "2.2+",
+["DESCRIPTION"]   = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "_PlayerCharacter_Mesh" },
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-							["ADD"] 				= 
+							["REPLACE_TYPE"]      = "ADDAFTERSECTION",
+							["ADD"] = 
 [[
 	<Property value="TkSceneNodeData.xml">
 	  <Property name="Name" value="HEADLIGHTS" />
@@ -83,16 +83,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] 	= { "Components" },
-							["LINE_OFFSET"] 			= "+0",
-							["ADD"] 	= 
+							["PRECEDING_KEY_WORDS"] = { "Components" },
+							["LINE_OFFSET"]         = "+0",
+							["ADD"] = 
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />

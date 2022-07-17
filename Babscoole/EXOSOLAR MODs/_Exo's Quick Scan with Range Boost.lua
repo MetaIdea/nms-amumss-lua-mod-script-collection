@@ -1,20 +1,19 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Exo's Quick Scan with Range Boost.pak",
-["MOD_AUTHOR"]				= "Exosolar",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "_Exo's Quick Scan with Range Boost.pak",
+["MOD_AUTHOR"]    = "Exosolar",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.95",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"SurveyMaxDistance",					 "1000"}, 	-- Original "400"							

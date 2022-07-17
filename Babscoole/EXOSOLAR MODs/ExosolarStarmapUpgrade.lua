@@ -1,22 +1,21 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"] 			= "_Exosolar's Starmap Upgrade.pak",
-	["MOD_AUTHOR"]				= "Exosolar",
-	["LUA_AUTHOR"]				= "Makto & Updated by Babscoole",
-	["NMS_VERSION"]				= "3.90",
-	["MODIFICATIONS"] 			= 
+	["MOD_FILENAME"]  = "_Exosolar's Starmap Upgrade.pak",
+	["MOD_AUTHOR"]    = "Exosolar",
+	["LUA_AUTHOR"]    = "Makto & Updated by Babscoole",
+	["NMS_VERSION"]   = "3.95",
+	["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCGALAXYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "GCGALAXYGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = { },
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["INTEGER_TO_FLOAT"]   = "FORCE",
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"PathToTargetIndicatorTimeFactor",		   		"0.4"},  
 								{"PathUISelectionMultiplierMouse",				"0.8"}, 
@@ -54,8 +53,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Yellow"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["VALUE_CHANGE_TABLE"]  = 
 							{
 								{"R", "1"},  
 								{"G", "0.87"},
@@ -65,8 +64,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Green"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["VALUE_CHANGE_TABLE"]  = 
 							{
 								{"R", "0.3"},  
 								{"G", "1"},
@@ -76,8 +75,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Blue"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["VALUE_CHANGE_TABLE"]  = 
 							{
 								{"R", "0.42"},  
 								{"G", "0.1"},

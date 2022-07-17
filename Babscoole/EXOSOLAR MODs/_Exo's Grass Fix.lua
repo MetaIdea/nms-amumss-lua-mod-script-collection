@@ -8,18 +8,18 @@ LUSH_DENSITY_MULTIPLIER = 0.77
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "_Exo's Grass Fix.pak",
-["MOD_AUTHOR"]				= "Exosolar",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			=
+["MOD_FILENAME"]  = "_Exo's Grass Fix.pak",
+["MOD_AUTHOR"]    = "Exosolar",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.95",
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	=
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},														
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},						
@@ -54,7 +54,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},						
 							["SECTION_UP"] = 1,						
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -70,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -84,7 +84,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -99,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+2",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"8"},				
 							}
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+3",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},				
 							}
@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+4",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},				
 							}
@@ -129,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+5",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},				
 							}
@@ -139,7 +139,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},						
                             ["INTEGER_TO_FLOAT"] = "FORCE",								
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -157,7 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+2",						 
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},				
 							}
@@ -167,7 +167,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",						 
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},				
 							}
@@ -177,7 +177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+4",						 
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},				
 							}
@@ -187,25 +187,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+5",						 
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},				
 							}
 						},					
 						{
 							["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
-							["ADD_OPTION"] 	= "ADDafterSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = [[    <Property name="SelectableObjects" />]],
 						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\CRYSTALS\FULL.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -228,91 +228,91 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},						
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "0.8",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "0.8",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MinScale",			"1.04"},
 							-- }
 						-- },
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "1",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "1",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MaxScale",			"1.3"},
 							-- }
 						-- },
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "0.7",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "0.7",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MinScale",			"0.91"},
 							-- }
 						-- },
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "0.9",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "0.9",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MaxScale",			"1.17"},
 							-- }
 						-- },
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "1",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "1",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MinScale",			"1.3"},
 							-- }
 						-- },
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "1.2",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "1.2",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MaxScale",			"1.56"},
 							-- }
 						-- },
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "0.6",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "0.6",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MinScale",			"0.78"},
 							-- }
 						-- },
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "1.5",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "1.5",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MaxScale",			"1.95"},
 							-- }
 						-- },
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "1.9",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "1.9",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MinScale",			"2.47"},
 							-- }
 						-- },
 						-- {
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_MATCH"] 		= "2.1",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["VALUE_CHANGE_TABLE"] 	=
+							-- ["REPLACE_TYPE"]       = "ALL",
+							-- ["VALUE_MATCH"]        = "2.1",
+                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"MaxScale",			"2.73"},
 							-- }
@@ -320,21 +320,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSING.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSING.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},
 							["LINE_OFFSET"] = "+4",
-							["ADD"] 			  =
+							["ADD"] =
 [[
     <Property name="DetailObjects" />
     <Property name="SelectableObjects" />
@@ -343,21 +343,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSINGGLOW.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BUILDINGDRESSINGGLOW.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},
 							["LINE_OFFSET"] = "+4",
-							["ADD"] 			  =
+							["ADD"] =
 [[
     <Property name="DetailObjects" />
     <Property name="SelectableObjects" />
@@ -366,8 +366,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHOBJECTSFULL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGELUSH\HUGELUSHOBJECTSFULL.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -391,7 +391,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},						
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},				
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Seed", "1"},
 								{"UseSeedValue", "True"},							
@@ -400,7 +400,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},														
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},						
@@ -410,7 +410,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["SECTION_UP"] = 1,						
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -426,7 +426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -440,7 +440,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -455,7 +455,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+3",														
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},				
 							}
@@ -465,7 +465,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+4",														
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},				
 							}
@@ -475,7 +475,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+5",														
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},				
 							}
@@ -484,8 +484,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","GcObjectSpawnDataVariant.xml",},
-							["ADD_OPTION"] 	= "ADDafterSECTION",						
-							["ADD"] 			  =
+							["ADD_OPTION"]  = "ADDafterSECTION",						
+							["ADD"] =
 [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
@@ -510,18 +510,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"SelectableObjects",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
-							["ADD_OPTION"] 	= "ADDafterSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = [[    <Property name="SelectableObjects" />]],
 						},							
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -545,7 +545,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},						
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Seed",},
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Seed", "1"},
 								{"UseSeedValue", "True"},
@@ -553,7 +553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Samplers",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{					
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","ProceduralTexture",},					
@@ -562,7 +562,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Placement", "GRASS"},
 								{"LargeObjectCoverage",	"AlwaysPlace"},
@@ -580,7 +580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -592,7 +592,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -608,7 +608,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances"},
 							["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"8"},
 							}
@@ -616,7 +616,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances"},
 							["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},
 							}
@@ -624,7 +624,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances",},
 							["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},
 							}
@@ -632,7 +632,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","LodDistances",},
 							["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -640,7 +640,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -656,7 +656,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
 							["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -664,7 +664,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
 							["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -672,7 +672,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
 							["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},
 							}
@@ -680,7 +680,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
 							["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -689,7 +689,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["SECTION_UP"] = 1,						
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -706,7 +706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.185"},
 								{"FlatDensity",			"0.32"},
@@ -720,7 +720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},						
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.185"},
 								{"FlatDensity",			"0.32"},
@@ -735,7 +735,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},
 							}
@@ -745,7 +745,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},
 							}
@@ -755,7 +755,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -765,7 +765,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml"},	
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.185"},
 								{"FlatDensity",			"0.32"},
@@ -783,7 +783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},
 							}
@@ -793,7 +793,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},
 							}
@@ -803,7 +803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -811,8 +811,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -837,7 +837,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
@@ -845,7 +845,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Seed", "1"},
 								{"UseSeedValue", "True"},
@@ -855,7 +855,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -872,7 +872,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -886,7 +886,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -901,7 +901,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -911,7 +911,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -929,7 +929,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -939,7 +939,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -949,7 +949,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},
 							}
@@ -959,7 +959,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -967,8 +967,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -993,7 +993,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
@@ -1003,7 +1003,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -1020,7 +1020,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1034,7 +1034,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -1044,7 +1044,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -1054,7 +1054,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -1064,7 +1064,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -1074,7 +1074,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},								
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1091,7 +1091,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"8"},
 							}
@@ -1101,7 +1101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},
 							}
@@ -1111,7 +1111,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},
 							}
@@ -1121,7 +1121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1131,7 +1131,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1149,7 +1149,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -1159,7 +1159,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -1169,7 +1169,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},
 							}
@@ -1179,7 +1179,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1187,8 +1187,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQOBJECTSFULL.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -1213,7 +1213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
@@ -1223,7 +1223,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
 							["SECTION_UP"] = 1,							
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -1239,7 +1239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1253,7 +1253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1268,7 +1268,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1278,7 +1278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},						
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1296,7 +1296,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -1306,7 +1306,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -1316,7 +1316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},
 							}
@@ -1326,7 +1326,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1334,8 +1334,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -1360,7 +1360,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
@@ -1370,7 +1370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},						
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -1386,7 +1386,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1400,7 +1400,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1415,7 +1415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1425,7 +1425,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1443,7 +1443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -1453,7 +1453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -1463,7 +1463,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},
 							}
@@ -1473,7 +1473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1481,8 +1481,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -1507,7 +1507,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
@@ -1517,7 +1517,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},						
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -1534,7 +1534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,							
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1548,7 +1548,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1563,7 +1563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1573,7 +1573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1591,7 +1591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -1601,7 +1601,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -1611,7 +1611,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},
 							}
@@ -1621,7 +1621,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1629,8 +1629,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -1654,7 +1654,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},					
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Seed", "1"},
 								{"UseSeedValue", "True"},
@@ -1663,7 +1663,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
@@ -1673,7 +1673,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},						
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -1689,7 +1689,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1703,7 +1703,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1718,7 +1718,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1728,7 +1728,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1746,7 +1746,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -1756,7 +1756,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -1766,7 +1766,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},
 							}
@@ -1776,7 +1776,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -1784,8 +1784,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -1809,7 +1809,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},					
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","Samplers",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{					
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","ProceduralTexture",},					
@@ -1818,7 +1818,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{					
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml",},						
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Placement",	"GRASS"},
 								{"LargeObjectCoverage",	"AlwaysPlace"},
@@ -1836,7 +1836,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1848,7 +1848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -1864,8 +1864,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
 							["LINE_OFFSET"] = "+10",
-							["ADD_OPTION"] 	= "ADDafterline",							
-							["ADD"] 			  =
+							["ADD_OPTION"]  = "ADDafterline",							
+							["ADD"] =
 [[
             <Property name="LodDistances">
               <Property value="0" />
@@ -1891,7 +1891,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -1899,7 +1899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -1907,7 +1907,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},
 							}
@@ -1915,14 +1915,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Seed", "1"},
 								{"UseSeedValue", "True"},
@@ -1930,7 +1930,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},1,
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"OptionName",			"6"},
 							}
@@ -1939,7 +1939,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaxAngle",			"46"},
 								{"MinScale",			"1.51"},
@@ -1955,7 +1955,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},						
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.185"},
 								{"FlatDensity",			"0.32"},
@@ -1969,7 +1969,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.185"},
 								{"FlatDensity",			"0.32"},
@@ -1984,7 +1984,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},								
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},
 							}
@@ -1994,7 +1994,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},
 							}
@@ -2004,7 +2004,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -2013,8 +2013,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","GcObjectSpawnDataVariant.xml",},
-							["ADD_OPTION"] 	= "ADDafterSECTION",
-							["ADD"] 			  =
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] =
 [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
@@ -2040,8 +2040,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSMID.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSMID.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -2065,7 +2065,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},					
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Seed", "1"},
 								{"UseSeedValue", "True"},
@@ -2074,7 +2074,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},
@@ -2084,7 +2084,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},						
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaxAngle",			"46"},
 								{"MinScale",			"1.66"},
@@ -2099,7 +2099,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2113,7 +2113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2128,7 +2128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},
 							}
@@ -2138,7 +2138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},
 							}
@@ -2148,7 +2148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -2157,8 +2157,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","GcObjectSpawnDataVariant.xml",},
-							["ADD_OPTION"] 	= "ADDafterSECTION",
-							["ADD"] 			  =
+							["ADD_OPTION"]  = "ADDafterSECTION",
+							["ADD"] =
 [[
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
@@ -2184,8 +2184,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTS.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTS.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -2209,7 +2209,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},					
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Seed", 		 "1"},
 								{"UseSeedValue", "True"},
@@ -2219,7 +2219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},						
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PlacementPriority",	"Low"},
 								{"LargeObjectCoverage",	"AlwaysPlace"},								
@@ -2240,7 +2240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},	
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2254,7 +2254,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},	
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -2264,7 +2264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},	
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -2274,7 +2274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},	
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -2284,7 +2284,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},	
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -2294,7 +2294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2312,7 +2312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},							
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"8"},
 							}
@@ -2322,7 +2322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},		
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},
 							}
@@ -2332,7 +2332,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},		
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},
 							}
@@ -2342,7 +2342,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},		
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -2352,7 +2352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2369,7 +2369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -2379,7 +2379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -2389,7 +2389,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -2397,8 +2397,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTS.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTS.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -2422,7 +2422,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},					
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN","Seed","GcSeed.xml",},				
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Seed", "1"},
 								{"UseSeedValue", "True"},							
@@ -2432,7 +2432,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},						
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PlacementPriority",	"Low"},
 								{"LargeObjectCoverage",	"AlwaysPlace"},
@@ -2453,7 +2453,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2467,7 +2467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},	
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -2477,7 +2477,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},	
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -2487,7 +2487,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},	
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -2497,7 +2497,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData","LodDistances",},	
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"0"},
 							}
@@ -2507,7 +2507,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2525,7 +2525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"8"},
 							}
@@ -2535,7 +2535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"15"},
 							}
@@ -2545,7 +2545,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
                             ["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"25"},
 							}
@@ -2555,7 +2555,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -2565,7 +2565,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2582,7 +2582,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},
 							}
@@ -2592,7 +2592,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},
 							}
@@ -2602,7 +2602,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},
                             ["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},
 							}
@@ -2610,8 +2610,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMAOBJECTS.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMAOBJECTS.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -2636,7 +2636,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},														
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},						
@@ -2646,7 +2646,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -2663,7 +2663,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2677,7 +2677,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2692,7 +2692,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+5",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},				
 							}
@@ -2702,7 +2702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},	
                             ["INTEGER_TO_FLOAT"] = "FORCE",								
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2720,7 +2720,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+2",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},				
 							}
@@ -2730,7 +2730,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+3",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},				
 							}
@@ -2740,7 +2740,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+4",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},				
 							}
@@ -2750,7 +2750,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+5",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},				
 							}
@@ -2758,8 +2758,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
@@ -2784,7 +2784,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
 							["PRECEDING_KEY_WORDS"] = {"Samplers",},														
-							["REMOVE"] 			  = "SECTION"
+							["REMOVE"] = "SECTION"
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN","ProceduralTexture","TkProceduralTextureChosenOptionList.xml",},						
@@ -2794,7 +2794,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
 							["SECTION_UP"] = 1,
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"LargeObjectCoverage",	"AlwaysPlace"},
 								{"MaxAngle",			"46"},
@@ -2812,7 +2812,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2826,7 +2826,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},							
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2841,7 +2841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","LodDistances",},	
                             ["LINE_OFFSET"] = "+5",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},				
 							}
@@ -2851,7 +2851,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,						
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},	
                             ["INTEGER_TO_FLOAT"] = "FORCE",								
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",			"0.21"},
 								{"FlatDensity",			"0.36"},
@@ -2869,7 +2869,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+2",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"10"},				
 							}
@@ -2879,7 +2879,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+3",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"20"},				
 							}
@@ -2889,7 +2889,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+4",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"35"},				
 							}
@@ -2899,7 +2899,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_UP_SPECIAL"] = 1,	
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml","LodDistances",},							
                             ["LINE_OFFSET"] = "+5",							
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",			"180"},				
 							}

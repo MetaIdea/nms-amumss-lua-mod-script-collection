@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 	["MOD_FILENAME"]	= "_Exosolar's Invisible Unpowered Wires.pak",
-	["MOD_AUTHOR"]		= "Exosolar",
-	["LUA_AUTHOR"]		= "Babscoole",	
+	["MOD_AUTHOR"]      = "Exosolar",
+	["LUA_AUTHOR"]      = "Babscoole",	
 	["MOD_DESCRIPTION"]	= "Makes unpowered wires invisible",
-	["NMS_VERSION"]		= "3.90",	
+	["NMS_VERSION"]     = "3.95",	
 	["MODIFICATIONS"]	= 
 	{
 		{

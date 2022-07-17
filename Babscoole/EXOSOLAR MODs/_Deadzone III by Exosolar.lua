@@ -1,17 +1,17 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_Deadzone III by Exosolar.pak",
-["MOD_AUTHOR"]				= "Exosolar",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.90",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "_Deadzone III by Exosolar.pak",
+["MOD_AUTHOR"]    = "Exosolar",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.95",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIOME.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIOME.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"ExternalObjectLists"},
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ScreenFilter", "Weird4",},
 							["LINE_OFFSET"] = "+3",
-							["ADD"] 				= 
+							["ADD"] = 
 [[
     <Property value="GcScreenFilterOption.xml">
       <Property name="Filter" value="GcScreenFilters.xml">
@@ -75,15 +75,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["REPLACE_TYPE"] = "RAW",
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{
 									[[    <Property name="DistantObjects" />]], 
@@ -282,7 +282,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},								
 							["PRECEDING_KEY_WORDS"] = {"Objects",},							
 							["REPLACE_TYPE"] = "ADDafterLINE",
-							["ADD"] 				= 
+							["ADD"] = 
 [[
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
@@ -435,7 +435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},								
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects",},							
 							["REPLACE_TYPE"] = "ADDafterLINE",
-							["ADD"] 				= 
+							["ADD"] = 
 [[
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
