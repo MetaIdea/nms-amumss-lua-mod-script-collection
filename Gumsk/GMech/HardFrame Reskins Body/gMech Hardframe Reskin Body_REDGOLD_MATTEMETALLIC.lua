@@ -1,11 +1,11 @@
-Color = "YELLOW"
+Color = "REDGOLD"
 
 Author = "Gumsk"
 ModName = "gMech Hardframe Reskin"
 GameVersion = "393"
 ModVersion = "a"
-ModNameSub = Color
-BaseDescription = "Changes color of hardframe exomech parts to "..Color
+ModNameSub = Color.." MATTEMETALLIC"
+BaseDescription = "Changes color of hardframe exomech parts to "..Color.." MATTEMETALLIC"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -16,6 +16,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			["FILE_DESTINATION"] 		= "TEXTURES\COMMON\ROBOTS\SENTINELTRIM.DDS",
 			["EXTERNAL_FILE_SOURCE"] 	= "MECHHARDFRAME_"..Color..".DDS",
+		},
+		{
+			["FILE_DESTINATION"] 		= "TEXTURES\COMMON\ROBOTS\SENTINELTRIM.MASKS.DDS",
+			["EXTERNAL_FILE_SOURCE"] 	= "SENTINELTRIM.MASKS_MATTEMETALLIC.DDS",
 		},
 	},
 	["MODIFICATIONS"]	= {},
