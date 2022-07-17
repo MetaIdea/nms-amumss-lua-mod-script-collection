@@ -580,32 +580,31 @@ ALL_PUZZLE_UPDATES = [[      <Property name="Options">
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"] 			= "Firmware Update for the Signal Booster"..MODVersion..".pak",
-  ["MOD_DESCRIPTION"]		= "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
-  ["MOD_AUTHOR"]			= "Lowkie",
-  ["MOD_MAINTENANCE"]		= "Babscoole",
-  ["NMS_VERSION"]			= NMSVersion,
-  ["MODIFICATIONS"] 		=
+  ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..MODVersion..".pak",
+  ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
+  ["MOD_AUTHOR"]      = "Lowkie",
+  ["MOD_MAINTENANCE"] = "Babscoole",
+  ["NMS_VERSION"]     = NMSVersion,
+  ["MODIFICATIONS"]   =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] =
 			{
-
-                {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
+				{
+					["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
 							["PRECEDING_KEY_WORDS"] = {"Options"},
-                            ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE", "IGNORE"}},
-							["LINE_OFFSET"] 		= "1",
+							["VALUE_CHANGE_TABLE"] 	= {{"IGNORE", "IGNORE"}},
+							["LINE_OFFSET"]         = "1",
 							["REMOVE"] = "SECTION",  --Remove original options section
 						},
-                    },
-               },
-               {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
@@ -614,50 +613,50 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
-                            ["PRECEDING_KEY_WORDS"] = {"RequiresScanEvent"},
-                            ["ADD"]                 = ALL_PUZZLE_UPDATES,
+							["PRECEDING_KEY_WORDS"] = {"RequiresScanEvent"},
+							["ADD"]                 = ALL_PUZZLE_UPDATES,
 						},
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"},
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "SEC_CRASHEDSHIP"},
-                            ["PRECEDING_KEY_WORDS"] = {"",},
-                            ["LINE_OFFSET"] 		= "0",
-                            ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-                            ["VALUE_CHANGE_TABLE"] 	= {{"IGNORE",	"IGNORE"}},
-                            ["ADD"] =   REWARDSET,
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"]  = {"METADATA\SIMULATION\SCANNING\SCANEVENTTABLEPLANET.MBIN"},
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name","DRONE_HIVE",},
-							["VALUE_CHANGE_TABLE"] 	=
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"},
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id", "SEC_CRASHEDSHIP"},
+							["PRECEDING_KEY_WORDS"] = {"",},
+							["LINE_OFFSET"]         = "0",
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["VALUE_CHANGE_TABLE"] = {{"IGNORE",	"IGNORE"}},
+							["ADD"] =   REWARDSET,
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"]  = {"METADATA\SIMULATION\SCANNING\SCANEVENTTABLEPLANET.MBIN"},
+					["EXML_CHANGE_TABLE"] =
+					{
+ 						{
+							["SPECIAL_KEY_WORDS"] = {"Name","DRONE_HIVE",},
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"ReplaceEventIfAlreadyActive",	"True"},
 								{"InterstellarOSDMessage", "SCANEVENT_ANOTHER_SYSTEM"},
 							}
-                        },
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Events"},
-							["LINE_OFFSET"] 		= "+0",
+							["LINE_OFFSET"]         = "+0",
 							["ADD"] = Grave_Scan_Event
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Events"},
-							["LINE_OFFSET"] 		= "+0",
+							["LINE_OFFSET"]         = "+0",
 							["ADD"] = Base_Scan_Event
 						},
-                    },
-                },
+					},
+				},
 			}
-        }
+		}
 	}
 }
