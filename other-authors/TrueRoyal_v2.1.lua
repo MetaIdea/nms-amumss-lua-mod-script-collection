@@ -156,7 +156,7 @@ NEW_COLORS =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"] = "TrueRoyal_v2.0.pak",
+  ["MOD_FILENAME"] = "TrueRoyal_v2.1.pak",
   ["MOD_AUTHOR"] = "MusicAndSilence",
   ["LUA_AUTHOR"] = "Weasel",  
   ["MOD_DESCRIPTION"] =
