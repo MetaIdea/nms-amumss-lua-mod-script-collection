@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"SunLightIntensity",				"5.5"}, -- Original "3"
+								{"SunLightIntensity","5.5"}, -- Original "3"
 							}
 						},
 					}

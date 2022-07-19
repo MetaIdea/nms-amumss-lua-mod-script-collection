@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"ID","BIOROOM",},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"CanScale",		"True"},
+								{"CanScale", "True"},
 							}
 						},
 					}
