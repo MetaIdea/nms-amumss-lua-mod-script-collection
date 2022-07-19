@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Sandworms_Overhaul.pak",
 ["MOD_AUTHOR"]    = "Redmas",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.53",
+["NMS_VERSION"]   = "3.70",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -17,54 +17,54 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"MinScale",			"80"}, 	-- Original "50"
-								{"MaxScale",			"100"}, 	-- Original "50"
-								{"TurnRadiusScale",			"10"}, 	-- Original "1"
-								{"HeightMin",			"-100"}, 	-- Original "45"
-								{"SwarmMovementSpeed",			"1"}, 	-- Original "90"
-								{"SwarmMovementRadius",			"1000"}, 	-- Original "100"
-								{"SwarmMovementType",			"Random"}, 	-- Original "FollowPlayer"
-								{"MaxSpeed",			"100"}, 	-- Original "80"									
+								{"MinScale",            "80"},     -- Original "50"
+								{"MaxScale",            "100"},    -- Original "50"
+								{"TurnRadiusScale",     "10"}, 	   -- Original "1"
+								{"HeightMin",           "-100"},   -- Original "45"
+								{"SwarmMovementSpeed",  "1"},      -- Original "90"
+								{"SwarmMovementRadius", "1000"},   -- Original "100"
+								{"SwarmMovementType",   "Random"}, -- Original "FollowPlayer"
+								{"MaxSpeed",            "100"},    -- Original "80"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
 							["PRECEDING_KEY_WORDS"] = {"PredatorProbabilityModifier",}, 							
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"CreatureRoleFrequencyModifier",			"Never"}, 	-- Original "Normal"								
+								{"CreatureRoleFrequencyModifier",	"Never"}, -- Original "Normal"								
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
 							["PRECEDING_KEY_WORDS"] = {"HerbivoreProbabilityModifier",}, 							
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"CreatureRoleFrequencyModifier",			"High"}, 	-- Original "Normal"								
+								{"CreatureRoleFrequencyModifier",	"High"}, -- Original "Normal"								
 							}
 						},						
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
+					["MBIN_FILE_SOURCE"] = "GCCREATUREGLOBALS.MBIN",
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",						
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"SandWormChangeDirectionTime",			"0.001"}, 	-- Original "1"
-								{"SandWormSteerAdjustTime",			"0.2"}, 	-- Original "2"
-								{"SandWormMaxSteer",			"10"}, 	-- Original "0.3"
-								{"SandWormMaxHeightAdjust",			"10"}, 	-- Original "1"
-								{"SandWormJumpHeight",			"35"}, 	-- Original "120"
-								{"SandWormJumpTime",			"0.0001"}, 	-- Original "3"
-								{"SandWormSubmergeDepth",			"1"}, 	-- Original "100"
-								{"SandWormSubmergeTime",			"1"}, 	-- Original "3"	
-								{"SandWormSurfaceTime",			"3"}, 	-- Original "1"
-								{"SandWormMaxJumps",			"1500"}, 	-- Original "5"
-								{"SandWormDespawnDist",			"1500"}, 	-- Original "1500"
-								{"SandWormSpawnTimer",			"15"}, 	-- Original "300"									
+								{"SandWormChangeDirectionTime", "0.001"},  -- Original "1"
+								{"SandWormSteerAdjustTime",     "0.2"},    -- Original "2"
+								{"SandWormMaxSteer",            "10"},     -- Original "0.3"
+								{"SandWormMaxHeightAdjust",     "10"},     -- Original "1"
+								{"SandWormJumpHeight",          "35"},     -- Original "120"
+								{"SandWormJumpTime",            "0.0001"}, -- Original "3"
+								{"SandWormSubmergeDepth",       "1"},      -- Original "100"
+								{"SandWormSubmergeTime",        "1"},      -- Original "3"	
+								{"SandWormSurfaceTime",         "3"},      -- Original "1"
+								{"SandWormMaxJumps",            "1500"},   -- Original "5"
+								{"SandWormDespawnDist",         "1500"},   -- Original "1500"
+								{"SandWormSpawnTimer",          "15"},     -- Original "300"									
 							}
 						},				
 					}, 
@@ -78,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",							
 							["ADD"] = 
 [[
-	    <Property value="GcInteractionComponentData.xml">
+    <Property value="GcInteractionComponentData.xml">
       <Property name="InteractionAction" value="PressButton" />
       <Property name="InteractionType" value="GcInteractionType.xml">
         <Property name="InteractionType" value="Pet" />
@@ -164,6 +164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="AlienRace" value="None" />
       </Property>
       <Property name="AttractDistanceSq" value="100" />
+      <Property name="SecondaryMeshAlwaysVisible" value="False" />	  
       <Property name="RepeatInteraction" value="True" />
       <Property name="UseInteractCamera" value="False" />
       <Property name="BlendToCameraTime" value="1.5" />
@@ -213,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="UsePersonalPersistentBuffer" value="False" />
       <Property name="InWorldUIScaler" value="0" />
     </Property>
-	    <Property value="GcSimpleInteractionComponentData.xml">
+    <Property value="GcSimpleInteractionComponentData.xml">
       <Property name="SimpleInteractionType" value="GenericReward" />
       <Property name="InteractDistance" value="1.80" />
       <Property name="Use2dInteractDistance" value="False" />
@@ -236,6 +237,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="InteractFiendCrimeChance" value="1" />
       <Property name="InteractCrimeLevel" value="0" />
+      <Property name="NotifyEncounter" value="False" />	  
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
         <Property name="AltIds" />
@@ -259,14 +261,14 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="ActivateLocatorsFromRarity" value="True" />
       <Property name="RarityLocators">
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="COMMON" />
+        <Property name="Common" value="NMSString0x10.xml">
+          <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="MED" />
+        <Property name="Uncommon" value="NMSString0x10.xml">
+          <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="RARE" />
+        <Property name="Rare" value="NMSString0x10.xml">
+          <Property name="Value" value="" />
         </Property>
       </Property>
       <Property name="BaseBuildingTriggerActions" />
@@ -284,29 +286,29 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="CanCollectInMech" value="True" />
     </Property>
 ]]
-						},				
+						},					
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","Data",},
 							["INTEGER_TO_FLOAT"] = "FORCE",								
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Mass",			"3"}, 	-- Original "1"
-								{"Friction",			"0"}, 	-- Original "0.5"
-								{"AngularDamping",			"0.8"}, 	-- Original "0.2"
-								{"Gravity",			"90"}, 	-- Original "20"								
+								{"Mass",		"3"}, 	-- Original "1"
+								{"Friction",		"0"}, 	-- Original "0.5"
+								{"AngularDamping",	"0.8"}, -- Original "0.2"
+								{"Gravity",		"90"}, 	-- Original "20"								
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},							
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Gravity",			"90"}, 	-- Original "20"								
+								{"Gravity",	"90"}, -- Original "20"								
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},
-							["REPLACE_TYPE"] 		= "RAW",							
-							["VALUE_CHANGE_TABLE"]  = 
+							["REPLACE_TYPE"] = "RAW",							
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{
 									[[<Property name="ChainEnds" />]],
@@ -337,12 +339,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{							
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DeathEffect",			"FIENDDEATH"}, 	-- Original ""								
+								{"DeathEffect",	 "FIENDDEATH"}, -- Original ""								
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["REPLACE_TYPE"]      = "RAW",							
+							["REPLACE_TYPE"] = "RAW",							
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{
@@ -377,6 +379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Health" value="300000" />
       <Property name="AutoAimTarget" value="False" />
       <Property name="PlayerOnly" value="False" />
+      <Property name="IgnorePlayer" value="False" />	  
       <Property name="ImpactShake" value="False" />
       <Property name="ImpactShakeEffect" value="SHOOTABLESHAKE" />
       <Property name="ForceImpactType" value="GcProjectileImpactType.xml">
@@ -395,10 +398,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="HitEffectEnabled" value="True" />
       <Property name="HitEffectEntireModel" value="True" />
       <Property name="IsArmoured" value="False" />
-      <Property name="IgnoreTerrainEditKill" value="False" />
+      <Property name="CouldCountAsArmourForParent" value="True" />	  
+      <Property name="IgnoreTerrainEditKills" value="False" />
       <Property name="NameOverride" value="" />
       <Property name="RequiredTech" value="" />
       <Property name="DamageMultiplier" value="FIEND" />
+      <Property name="IsPiercable" value="False" />
+      <Property name="IsAffectedByPiercing" value="False" />	  
 ]]
 						},						
 					}
