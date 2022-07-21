@@ -13,10 +13,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["REPLACE_TYPE"]       = "ALL",
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"CanScale",	"True"},					
+								{"CanScale", "True"},					
 							}
 						}
 					}

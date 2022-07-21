@@ -15,12 +15,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"PulseEncounterCheckTimer",	 "1"}, 		-- Original "1"
-								{"PulseEncounterChance",	 "0.0264"}, 	-- Original "0.00066"
-								{"PulseEncounterChanceStandard", "0.0264"}, 	-- Original "0.00066"
-								{"PulseEncounterChanceRed",	 "0.03"}, 	-- Original "0.001"
-								{"PulseEncounterChanceGreen",	 "0.04"}, 	-- Original "0.002"
-								{"PulseEncounterChanceBlue",	 "0.05"}, 	-- Original "0.003"								
+								{"PulseEncounterCheckTimer",	 "1"},      -- Original "1"
+								{"PulseEncounterChance",	 "0.0264"}, -- Original "0.00066"
+								{"PulseEncounterChanceStandard", "0.0264"}, -- Original "0.00066"
+								{"PulseEncounterChanceRed",	 "0.03"},   -- Original "0.001"
+								{"PulseEncounterChanceGreen",	 "0.04"},   -- Original "0.002"
+								{"PulseEncounterChanceBlue",	 "0.05"},   -- Original "0.003"								
 							}
 						},
 					}

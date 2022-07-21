@@ -17,9 +17,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 	
 							{
-								{"DisableBaseBuildingLimits","True"},  --Original False
-								{"AllowGlobalPartSnapping","True"},  --Original False
-								{"DisableBasePowerRequirements","True"},  --Original False
+								{"DisableBaseBuildingLimits",    "True"}, --Original False
+								{"AllowGlobalPartSnapping",      "True"}, --Original False
+								{"DisableBasePowerRequirements", "True"}, --Original False
 							}
 						},
 					}

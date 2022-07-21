@@ -15,8 +15,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "PLANET_TECH",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "PLANET_TECH",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "TECHNOLOGY"},
@@ -24,8 +24,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "FREIGHTER",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "FREIGHTER",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "TECHNOLOGY"},
@@ -33,8 +33,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "BASE_TECH",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "BASE_TECH",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "TECHNOLOGY"},
@@ -42,8 +42,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},						
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "POWER",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "POWER",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "TECHNOLOGY"},
@@ -51,8 +51,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "ROOMS",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "ROOMS",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "STRUCTURES"},
@@ -60,8 +60,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},						
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "BASIC_T",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "BASIC_T",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "STRUCTURES"},
@@ -69,8 +69,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "BASIC_S",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "BASIC_S",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "STRUCTURES"},
@@ -78,8 +78,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "BASIC_F",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "BASIC_F",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "STRUCTURES"},
@@ -87,8 +87,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "BASIC_LEGACY",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "BASIC_LEGACY",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "STRUCTURES"},
@@ -96,8 +96,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "EXOTICS",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "EXOTICS",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "DECORATIONS"},
@@ -105,8 +105,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects", "GcBaseBuildingEntry.xml", "GcBaseBuildingEntryGroup.xml"},
-							["REPLACE_TYPE"]     = "ALL",
-						 	["VALUE_MATCH"]    = "WALL_ART",
+							["REPLACE_TYPE"] = "ALL",
+						 	["VALUE_MATCH"] = "WALL_ART",
 							["VALUE_CHANGE_TABLE"]     = 
 								{
 									{"Group", "DECORATIONS"},
@@ -334,8 +334,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
   </Property>
-]]
-							
+]]							
 						},						
 					}
 				},

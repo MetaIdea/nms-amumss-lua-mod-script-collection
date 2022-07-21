@@ -18,9 +18,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] = 	
 							{
-								{"StealthMinLevel",  "0"},  --Original 0.15
-								{"StealthDrainRate",  "0"},  --Original 15
-								{"StealthRechargeRate",  "10000"},  --Original 12
+								{"StealthMinLevel",     "0"},     --Original 0.15
+								{"StealthDrainRate",    "0"},     --Original 15
+								{"StealthRechargeRate", "10000"}, --Original 12
 							}
 						},											
 					}

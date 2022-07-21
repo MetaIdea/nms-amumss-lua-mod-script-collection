@@ -17,8 +17,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "RARE3"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"PatchSize",		"400"},
-								{"RegionScale",		"5"},				
+								{"PatchSize",   "400"},
+								{"RegionScale", "5"},				
 							}
 						},
 					}

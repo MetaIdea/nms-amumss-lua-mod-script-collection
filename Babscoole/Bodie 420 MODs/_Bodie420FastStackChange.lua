@@ -17,13 +17,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 	
 							{
-								{"StackSizeChangeMaxRate",  "1000"},  --Original 60
-								{"AllowInWorldDebugBorders",  "True"},  --Original False
-								{"EnableHandMenuDebug",  "True"},  --Original False
-								{"EnableCraftingTree",  "True"},  --Original False
-								{"HandControlButtonSize",  "0.10"},  --Original 0.05
-								{"QuickMenuAllowCycle",  "True"},  --Original False
-								{"BuildingShopMaxItems",  "999999"},  --Original 32
+								{"StackSizeChangeMaxRate",   "1000"},   --Original 60
+								{"AllowInWorldDebugBorders", "True"},   --Original False
+								{"EnableHandMenuDebug",      "True"},   --Original False
+								{"EnableCraftingTree",       "True"},   --Original False
+								{"HandControlButtonSize",    "0.10"},   --Original 0.05
+								{"QuickMenuAllowCycle",      "True"},   --Original False
+								{"BuildingShopMaxItems",     "999999"}, --Original 32
 							}
 						},
 					}

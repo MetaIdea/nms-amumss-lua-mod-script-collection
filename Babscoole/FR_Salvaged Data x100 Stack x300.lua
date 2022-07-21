@@ -18,8 +18,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE",},										       		
 							["VALUE_CHANGE_TABLE"] = 					
 							{
-								{"BaseValue",	"1000"},	-- Original 50000
-								{"StackMultiplier",	"60"} 	-- Original 3							
+								{"BaseValue",       "1000"}, -- Original 50000
+								{"StackMultiplier", "60"}    -- Original 3							
 							}
 						}
 					}
@@ -32,8 +32,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","BP_SALVAGE_ONLY",},										       		
 							["VALUE_CHANGE_TABLE"] = 					
 							{
-								{"AmountMin",	"100"}, 	-- Original 2
-								{"AmountMax",	"200"} 	-- Original 4							
+								{"AmountMin", "100"}, -- Original 2
+								{"AmountMax", "200"}  -- Original 4							
 							}
 						}
 					}

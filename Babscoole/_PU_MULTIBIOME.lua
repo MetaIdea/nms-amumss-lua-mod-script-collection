@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD_OPTION"] 	= "ADDafterSECTION",						
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"IGNORE",	"IGNORE",}
+								{"IGNORE", "IGNORE",}
 							},
 							["ADD"] = 
 [[

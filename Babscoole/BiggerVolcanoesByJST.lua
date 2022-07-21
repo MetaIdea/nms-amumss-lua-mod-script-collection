@@ -17,8 +17,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"]  = 
 							{
-								{"MaxScale",			"7"}, 	-- Original "3"
-								{"MaxScaleY",			"3"}, 	-- Original "1"
+								{"MaxScale",  "7"}, -- Original "3"
+								{"MaxScaleY", "3"}, -- Original "1"
 							}
 						}
 					}

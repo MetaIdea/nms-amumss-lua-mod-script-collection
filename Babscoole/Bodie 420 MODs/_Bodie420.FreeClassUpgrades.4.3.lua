@@ -20,105 +20,105 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","C_STATIONKEY",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_SUIT_SLOT",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_PET_CUSTOMISE",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_PET_SLOT",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_PET_ADOPT",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_PET_EGG_READY",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_PET_MILK",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_PET_RIDE",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_PET_TREAT",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_LIB_VAULT_FC",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_LIB_VAULT_FU",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_LIB_VAULT_FR",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_LIB_VAULT_TC",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_WEAP_UPGRADE",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","C_REPAIRPART",}, 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DontCharge",			"True"}, 	-- Original "False"									
+								{"DontCharge", "True"}, -- Original "False"									
 							}
 						},							
 						{
@@ -129,14 +129,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH_TYPE"]    = "",
 							["VALUE_CHANGE_TABLE"]  = 
 							{
-								{"IGNORE",	COST_MULTIPLIER }
+								{"IGNORE", COST_MULTIPLIER }
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","NPC_BUILD1",}, 							
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"CannotAffordOSDMsg",			"You Broke Fool!"}, 	-- Original ""									
+								{"CannotAffordOSDMsg", "You Broke Fool!"}, -- Original ""									
 							}
 						},	
 					}

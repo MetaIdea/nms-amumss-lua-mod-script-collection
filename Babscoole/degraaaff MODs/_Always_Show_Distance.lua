@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{						
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"HUDMarkerDistanceOrTimeDistance",	"10000000"},
+								{"HUDMarkerDistanceOrTimeDistance", "10000000"},
 							}
 						},
 					}

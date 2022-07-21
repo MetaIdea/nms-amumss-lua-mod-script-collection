@@ -14,11 +14,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["REPLACE_TYPE"]       = "ALL",			
-							["VALUE_MATCH"]        = "False",  						
+							["REPLACE_TYPE"] = "ALL",			
+							["VALUE_MATCH"]  = "False",  						
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"ShowTimeToDeadline",	"True"},
+								{"ShowTimeToDeadline", "True"},
 							}
 						}
 					}
