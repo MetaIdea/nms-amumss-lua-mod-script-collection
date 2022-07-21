@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_ACTIVE"] = {"2",},								
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Bonus",	"0.25"}
+								{"Bonus", "0.25"}
 							}
 						},
 						{
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",								
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Bonus",	"16"}
+								{"Bonus", "16"}
 							}
 						},						
 					}

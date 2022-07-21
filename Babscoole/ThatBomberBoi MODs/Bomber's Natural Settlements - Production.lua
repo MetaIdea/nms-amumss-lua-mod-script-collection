@@ -2,43 +2,43 @@ ProducedItemChanges =
 {
 	{
 		{"GekProductionElements"},
-		{	--Vanilla item			Replacement item
-			{"TRA_CURIO2",			"ULTRAPROD2"},		
-			{"PLANT_POOP",			"TRA_CURIO2"},
-			{"PLANT_WATER",			"FOOD_V_GEK"},
-			{"PLANT_CAVE",			"NIPNIPBUDS"},
-			{"PLANT_LUSH",			"TRA_EXOTICS3"}
+		{	--Vanilla item              Replacement item
+			{"TRA_CURIO2",              "ULTRAPROD2"},		
+			{"PLANT_POOP",              "TRA_CURIO2"},
+			{"PLANT_WATER",             "FOOD_V_GEK"},
+			{"PLANT_CAVE",              "NIPNIPBUDS"},
+			{"PLANT_LUSH",              "TRA_EXOTICS3"}
 		}
 	},
 	{
 		{"KorvaxProductionElements"},
-		{	--Vanilla item			Replacement item
-			{"GAS2",				"HYPERFUEL2"},
-			{"PLANT_DUST",			"U_HYPERX"},
-			{"SALVAGE_TECH1",		"U_HAZARDX"},
-			{"SALVAGE_TECH2",		"U_ENERGYX"},
-			{"EX_BLUE",				"SALVAGE_TECH10"}
+		{	--Vanilla item               Replacement item
+			{"GAS2",                     "HYPERFUEL2"},
+			{"PLANT_DUST",               "U_HYPERX"},
+			{"SALVAGE_TECH1",            "U_HAZARDX"},
+			{"SALVAGE_TECH2",            "U_ENERGYX"},
+			{"EX_BLUE",                  "SALVAGE_TECH10"}
 		}
 	},
 	{
 		{"VykeenProductionElements"},
-		{	--Vanilla item			Replacement item
-			{"GAS3",				"WAR_CURIO2"},
-			{"PLANT_RADIO",			"U_SHOTGUNX"},
-			{"ROBOT1",				"SCRAP_WEAP"},	
-			{"SPACEGUNK3",			"U_BOLTX"},
-			{"PLANT_TOXIC",			"ULTRAPROD1"}
+		{	--Vanilla item                Replacement item
+			{"GAS3",                      "WAR_CURIO2"},
+			{"PLANT_RADIO",               "U_SHOTGUNX"},
+			{"ROBOT1",                    "SCRAP_WEAP"},	
+			{"SPACEGUNK3",                "U_BOLTX"},
+			{"PLANT_TOXIC",               "ULTRAPROD1"}
 		}
 	},
 }
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]    = "BNS-Production 3.91.pak",
-	["MOD_DESCRIPTION"] = "",
-	["MOD_AUTHOR"]      = "ThatBomberBoi",
-	["NMS_VERSION"]     = "3.91",
-	["MODIFICATIONS"]   =
+["MOD_FILENAME"]    = "BNS-Production 3.91.pak",
+["MOD_DESCRIPTION"] = "",
+["MOD_AUTHOR"]      = "ThatBomberBoi",
+["NMS_VERSION"]     = "3.91",
+["MODIFICATIONS"]   =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] =
@@ -50,9 +50,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					
 					}
 				}
-            }
-        }
-    }
+			}
+		}
+	}
 }
 
 

@@ -16,14 +16,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["FOREACH_SKW_GROUP"] = 
 							{  
-								{"TriggerAction","STEP1_ENTER",},  
-								{"TriggerAction","STEP1",},
-								{"TriggerAction","STEP2_ENTER",}, 
-								{"TriggerAction","STEP2",},
+								{"TriggerAction", "STEP1_ENTER",},  
+								{"TriggerAction", "STEP1",},
+								{"TriggerAction", "STEP2_ENTER",}, 
+								{"TriggerAction", "STEP2",},
 							},  
 							["VCT"] = 
 							{
-								{"Time",	"1200"} 
+								{"Time", "1200"} 
 							} 
 						}, 						
 					}
@@ -39,14 +39,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["FOREACH_SKW_GROUP"] = 
 							{  
-								{"TriggerAction","STEP1_ENTER",},  
-								{"TriggerAction","STEP1",},
-								{"TriggerAction","STEP2_ENTER",}, 
-								{"TriggerAction","STEP2",},
+								{"TriggerAction", "STEP1_ENTER",},  
+								{"TriggerAction", "STEP1",},
+								{"TriggerAction", "STEP2_ENTER",}, 
+								{"TriggerAction", "STEP2",},
 							},  
 							["VCT"] = 
 							{
-								{"Time",	"1800"} 
+								{"Time", "1800"} 
 							} 
 						}, 						
 					}
@@ -63,14 +63,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["FOREACH_SKW_GROUP"] = 
 							{  
-								{"TriggerAction","STEP1_ENTER",},  
-								{"TriggerAction","STEP1",},
-								{"TriggerAction","STEP2_ENTER",}, 
-								{"TriggerAction","STEP2",},
+								{"TriggerAction", "STEP1_ENTER",},  
+								{"TriggerAction", "STEP1",},
+								{"TriggerAction", "STEP2_ENTER",}, 
+								{"TriggerAction", "STEP2",},
 							},  
 							["VCT"] = 
 							{
-								{"Time",	"900"} 
+								{"Time", "900"} 
 							} 
 						}, 						
 					}
@@ -90,14 +90,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["FOREACH_SKW_GROUP"] = 
 							{  
-								{"TriggerAction","STEP1_ENTER",},  
-								{"TriggerAction","STEP1",},
-								{"TriggerAction","STEP2_ENTER",}, 
-								{"TriggerAction","STEP2",},
+								{"TriggerAction", "STEP1_ENTER",},  
+								{"TriggerAction", "STEP1",},
+								{"TriggerAction", "STEP2_ENTER",}, 
+								{"TriggerAction", "STEP2",},
 							},  
 							["VCT"] = 
 							{
-								{"Time",	"600"} 
+								{"Time", "600"} 
 							} 
 						}, 						
 					}

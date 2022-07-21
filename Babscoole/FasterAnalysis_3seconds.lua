@@ -16,9 +16,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"BinocMinScanTime",					"3"},		-- Original "3.9"
-								{"BinocScanTime",						"3"}, 		-- Original "3.9"
-								{"BinocCreatureScanTime",				"3"},		-- Original "3.2"							
+								{"BinocMinScanTime",      "3"}, -- Original "3.9"
+								{"BinocScanTime",         "3"}, -- Original "3.9"
+								{"BinocCreatureScanTime", "3"}, -- Original "3.2"							
 							}
 						},
 					}

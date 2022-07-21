@@ -18,8 +18,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"]   = "FORCE",
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"StackSizeRateChangeRate",	"6"}, --Original 1.25
-								{"StackSizeChangeMaxRate",	"1000"}, --Original 60
+								{"StackSizeRateChangeRate", "6"},    --Original 1.25
+								{"StackSizeChangeMaxRate",  "1000"}, --Original 60
 							}
 						}
 					}

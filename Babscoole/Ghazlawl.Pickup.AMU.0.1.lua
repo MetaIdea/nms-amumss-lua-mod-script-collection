@@ -14,10 +14,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-                            ["SPECIAL_KEY_WORDS"] = {"ID","BUILDHARVESTER",},						
+							["SPECIAL_KEY_WORDS"] = {"ID","BUILDHARVESTER",},						
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"CanPickUp",	"True"},
+								{"CanPickUp", "True"},
 							}
 						}
 					}

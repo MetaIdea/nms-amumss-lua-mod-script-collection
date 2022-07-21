@@ -489,14 +489,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{													
 							["PRECEDING_KEY_WORDS"] = "Textures",
-							["VALUE_CHANGE_TABLE"] = "",
 							["REMOVE"] = "SECTION",
 						}
 					},
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "DisplayTime",
-							["VALUE_CHANGE_TABLE"] = "",
 							["REMOVE"] = "SECTION",
 						},
 					},					
@@ -508,13 +506,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 						  	["VALUE_CHANGE_TABLE"] = 
 							{
-								{"SkipIntro",                 "True"},      -- Original "False"
-								{"BootMusic",                 "False"},     -- Original "True"
-								{"DisableSaveSlotSorting",    "True"}, 	    -- Original "False"
-								{"ForceInitialShip",          "False"},     -- Original "True"
-								{"ForceInitialWeapon",        "False"},     -- Original "True"
-								{"ForceLoadAllWeather",       "True"},      -- Original "False"
-								{"MultiplePlayerFreightersInASystem","True"}, -- Original "False"
+								{"SkipIntro",                         "True"},  -- Original "False"
+								{"BootMusic",                         "False"}, -- Original "True"
+								{"DisableSaveSlotSorting",            "True"},  -- Original "False"
+								{"ForceInitialShip",                  "False"}, -- Original "True"
+								{"ForceInitialWeapon",                "False"}, -- Original "True"
+								{"ForceLoadAllWeather",               "True"},  -- Original "False"
+								{"MultiplePlayerFreightersInASystem", "True"},  -- Original "False"
 							}	
 						},
 					}
@@ -525,8 +523,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Missions",},
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= SKIPTUT	
+							["LINE_OFFSET"] = "+0",
+							["ADD"] = SKIPTUT	
 						},
 					}
 				},				

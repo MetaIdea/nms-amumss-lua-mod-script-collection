@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 	
 							{
-								{"PercentChangeOfFrigateBeingPurchasable",100},
+								{"PercentChangeOfFrigateBeingPurchasable", 100},
 							}
 						},
 					}

@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PercentageChance",	"100"},
+								{"PercentageChance", "100"},
 							},
 						},											
 						{
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PercentageChance",	"0"},
+								{"PercentageChance", "0"},
 							},
 						},
 						{
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},	
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PercentageChance",	"0"},
+								{"PercentageChance", "0"},
 							},
 						},
 						{
@@ -42,7 +42,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PercentageChance",	"0"},
+								{"PercentageChance", "0"},
 							},
 						},						
 						{
@@ -50,7 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"PercentageChance",	"0"},
+								{"PercentageChance", "0"},
 							},
 						},						
 					},

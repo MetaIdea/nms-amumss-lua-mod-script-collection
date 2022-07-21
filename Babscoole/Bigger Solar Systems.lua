@@ -25,9 +25,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{ "SolarSystemMaximumRadius", 			"9999999" },  --Original "500000"
-								{ "SolarSystemMaximumRadiusMassive", 	"9999999" },  --Original "1000000"
-								{ "GenerateMaximumSolarSystem", 		"True" },  --Original "False"
+								{ "SolarSystemMaximumRadius",        "9999999" }, --Original "500000"
+								{ "SolarSystemMaximumRadiusMassive", "9999999" }, --Original "1000000"
+								{ "GenerateMaximumSolarSystem",      "True" },    --Original "False"
 							}
 						}
 					} 

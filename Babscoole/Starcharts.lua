@@ -1,24 +1,24 @@
 SEARCH_OBJECT_TABLE =
 {
-	{ ["ID_NAME"]="DEPOT", 	 	["EVENT_NAME"]="DEPOT", 			["LABELID_NAME"]="Depot",				["PATH"]="FACTORY"},
-	{ ["ID_NAME"]="FACTORY",	["EVENT_NAME"]="FACTORY", 			["LABELID_NAME"]="Factory",				["PATH"]="FACTORY"},
-	{ ["ID_NAME"]="HARVESTER", 	["EVENT_NAME"]="HARVESTER", 		["LABELID_NAME"]="Harvester",			["PATH"]="FACTORY"},
-	{ ["ID_NAME"]="BASESITE", 	["EVENT_NAME"]="BASE", 				["LABELID_NAME"]="Base",				["PATH"]="FACTORY"},	
-	{ ["ID_NAME"]="ABANDONED", 	["EVENT_NAME"]="ABANDONED", 		["LABELID_NAME"]="Abandoned",			["PATH"]="DISTRESSSIGNAL"},
-	{ ["ID_NAME"]="DISTRESS",  	["EVENT_NAME"]="DISTRESS", 			["LABELID_NAME"]="Distress",			["PATH"]="DISTRESSSIGNAL"},
-	{ ["ID_NAME"]="DISTRESS_N",	["EVENT_NAME"]="DISTRESS_NPC", 		["LABELID_NAME"]="Distress with NPC",	["PATH"]="DISTRESSSIGNAL"},
-	{ ["ID_NAME"]="CRASHED_FR",	["EVENT_NAME"]="CRASHED_FREIGHTER",	["LABELID_NAME"]="Crashed Freighter",	["PATH"]="DISTRESSSIGNAL"},
-	{ ["ID_NAME"]="OBSERVATOR",	["EVENT_NAME"]="OBSERVATORY", 		["LABELID_NAME"]="Observatory",			["PATH"]="DISTRESSSIGNAL"},
-	{ ["ID_NAME"]="LIBRARY", 	["EVENT_NAME"]="LIBRARY", 			["LABELID_NAME"]="",					["PATH"]="BUILDING"},
-	{ ["ID_NAME"]="SHELTER", 	["EVENT_NAME"]="SHELTER", 			["LABELID_NAME"]="Shelter",				["PATH"]="BUILDING"},
-	{ ["ID_NAME"]="OUTPOST", 	["EVENT_NAME"]="OUTPOST", 			["LABELID_NAME"]="Outpost",				["PATH"]="BUILDING"},
-	{ ["ID_NAME"]="SHOP", 	 	["EVENT_NAME"]="SHOP", 				["LABELID_NAME"]="Shop",				["PATH"]="BUILDING"},
-	{ ["ID_NAME"]="RADIOTOWER",	["EVENT_NAME"]="RADIOTOWER", 		["LABELID_NAME"]="RadioTower",			["PATH"]="BUILDING"},
-	{ ["ID_NAME"]="OBSERVATOR",	["EVENT_NAME"]="OBSERVATORY", 		["LABELID_NAME"]="Observatory",			["PATH"]="BUILDING"},
-	{ ["ID_NAME"]="PLAQUE", 	["EVENT_NAME"]="PLAQUE", 			["LABELID_NAME"]="Plaque",				["PATH"]="RUNE"},
-	{ ["ID_NAME"]="MONOLITH",  	["EVENT_NAME"]="MONOLITH", 			["LABELID_NAME"]="Monolith",			["PATH"]="RUNE"},
-	{ ["ID_NAME"]="RUIN", 	 	["EVENT_NAME"]="RUIN", 				["LABELID_NAME"]="Ruin",				["PATH"]="RUNE"},
-	{ ["ID_NAME"]="PORTAL", 	["EVENT_NAME"]="PORTAL", 			["LABELID_NAME"]="RevealPortal",		["PATH"]="RUNE"},	
+	{ ["ID_NAME"]="DEPOT",      ["EVENT_NAME"]="DEPOT",             ["LABELID_NAME"]="Depot",             ["PATH"]="FACTORY"},
+	{ ["ID_NAME"]="FACTORY",    ["EVENT_NAME"]="FACTORY",           ["LABELID_NAME"]="Factory",           ["PATH"]="FACTORY"},
+	{ ["ID_NAME"]="HARVESTER",  ["EVENT_NAME"]="HARVESTER",         ["LABELID_NAME"]="Harvester",         ["PATH"]="FACTORY"},
+	{ ["ID_NAME"]="BASESITE",   ["EVENT_NAME"]="BASE",              ["LABELID_NAME"]="Base",              ["PATH"]="FACTORY"},	
+	{ ["ID_NAME"]="ABANDONED",  ["EVENT_NAME"]="ABANDONED",         ["LABELID_NAME"]="Abandoned",         ["PATH"]="DISTRESSSIGNAL"},
+	{ ["ID_NAME"]="DISTRESS",   ["EVENT_NAME"]="DISTRESS",          ["LABELID_NAME"]="Distress",          ["PATH"]="DISTRESSSIGNAL"},
+	{ ["ID_NAME"]="DISTRESS_N", ["EVENT_NAME"]="DISTRESS_NPC",      ["LABELID_NAME"]="Distress with NPC", ["PATH"]="DISTRESSSIGNAL"},
+	{ ["ID_NAME"]="CRASHED_FR", ["EVENT_NAME"]="CRASHED_FREIGHTER", ["LABELID_NAME"]="Crashed Freighter", ["PATH"]="DISTRESSSIGNAL"},
+	{ ["ID_NAME"]="OBSERVATOR", ["EVENT_NAME"]="OBSERVATORY",       ["LABELID_NAME"]="Observatory",       ["PATH"]="DISTRESSSIGNAL"},
+	{ ["ID_NAME"]="LIBRARY",    ["EVENT_NAME"]="LIBRARY",           ["LABELID_NAME"]="",                  ["PATH"]="BUILDING"},
+	{ ["ID_NAME"]="SHELTER",    ["EVENT_NAME"]="SHELTER",           ["LABELID_NAME"]="Shelter",           ["PATH"]="BUILDING"},
+	{ ["ID_NAME"]="OUTPOST",    ["EVENT_NAME"]="OUTPOST",           ["LABELID_NAME"]="Outpost",           ["PATH"]="BUILDING"},
+	{ ["ID_NAME"]="SHOP",       ["EVENT_NAME"]="SHOP",              ["LABELID_NAME"]="Shop",              ["PATH"]="BUILDING"},
+	{ ["ID_NAME"]="RADIOTOWER", ["EVENT_NAME"]="RADIOTOWER",        ["LABELID_NAME"]="RadioTower",        ["PATH"]="BUILDING"},
+	{ ["ID_NAME"]="OBSERVATOR", ["EVENT_NAME"]="OBSERVATORY",       ["LABELID_NAME"]="Observatory",       ["PATH"]="BUILDING"},
+	{ ["ID_NAME"]="PLAQUE",     ["EVENT_NAME"]="PLAQUE",            ["LABELID_NAME"]="Plaque",            ["PATH"]="RUNE"},
+	{ ["ID_NAME"]="MONOLITH",   ["EVENT_NAME"]="MONOLITH",          ["LABELID_NAME"]="Monolith",          ["PATH"]="RUNE"},
+	{ ["ID_NAME"]="RUIN",       ["EVENT_NAME"]="RUIN",              ["LABELID_NAME"]="Ruin",              ["PATH"]="RUNE"},
+	{ ["ID_NAME"]="PORTAL",     ["EVENT_NAME"]="PORTAL",            ["LABELID_NAME"]="RevealPortal",      ["PATH"]="RUNE"},	
 }
 
 
@@ -177,12 +177,12 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = "Starcharts.pak",
-  ["MOD_DESCRIPTION"] = "LUA port of ModBuilder Starcharts script",
-  ["MOD_AUTHOR"]      = "CMKushnir",
-  ["LUA_AUTHOR"]      = "Babscoole",
-  ["NMS_VERSION"]     = "3.75",
-  ["MODIFICATIONS"]   =
+["MOD_FILENAME"]    = "Starcharts.pak",
+["MOD_DESCRIPTION"] = "LUA port of ModBuilder Starcharts script",
+["MOD_AUTHOR"]      = "CMKushnir",
+["LUA_AUTHOR"]      = "Babscoole",
+["NMS_VERSION"]     = "3.75",
+["MODIFICATIONS"]   =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] =
@@ -194,8 +194,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","R_S2_BEACON",},
 							["ADD_OPTION"] 	= "ADDafterSECTION",
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= table.concat(REWARD_ADDING_ALL)
+							["LINE_OFFSET"] = "+0",
+							["ADD"] = table.concat(REWARD_ADDING_ALL)
 						},
 					},
 				},
@@ -206,8 +206,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","FOOD_CG_HONEY",},
 							["ADD_OPTION"] 	= "ADDafterSECTION",
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= table.concat(GCPRODUCT_ADDING_ALL)
+							["LINE_OFFSET"] = "+0",
+							["ADD"] = table.concat(GCPRODUCT_ADDING_ALL)
 						},
 					},
 				},
@@ -218,8 +218,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","FOOD_R_BCREAM",},
 							["ADD_OPTION"] 	= "ADDafterSECTION",
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= table.concat(CONSUMABLEITEM_ADDING_ALL)
+							["LINE_OFFSET"] = "+0",
+							["ADD"] = table.concat(CONSUMABLEITEM_ADDING_ALL)
 						},
 					},
 				},
@@ -229,8 +229,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Value","CHART_SETTLE",},
-							["LINE_OFFSET"] 		= "+1",
-							["ADD"] 				= table.concat(DEFAULTREALITY_ADDING_ALL)
+							["LINE_OFFSET"] = "+1",
+							["ADD"] = table.concat(DEFAULTREALITY_ADDING_ALL)
 						},
 					},
 				},

@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_ACTIVE"] = {1,},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{ "Poor", 	 "100" },
+								{ "Poor",    "100" },
 								{ "Average", "400" },
 								{ "Wealthy", "800" },
 								{ "Pirate",  "400" },
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_ACTIVE"] = {1,},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{ "Poor", 	 "400" },
+								{ "Poor",    "400" },
 								{ "Average", "800" },
 								{ "Wealthy", "1800" },
 								{ "Pirate",  "800" },

@@ -17,14 +17,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["FOREACH_SKW_GROUP"] = 
 							{  
-								{"Message","UI_BIO_SHIP_MISSION1_MSG3",},  
-								{"Message","UI_BIO_SHIP_MISSION2_MSG3",},
-								{"Message","UI_BIO_SHIP_MISSION3_MSG3",}, 
-								{"Message","UI_BIO_SHIP_MISSION4_MSG3",},
+								{"Message", "UI_BIO_SHIP_MISSION1_MSG3",},  
+								{"Message", "UI_BIO_SHIP_MISSION2_MSG3",},
+								{"Message", "UI_BIO_SHIP_MISSION3_MSG3",}, 
+								{"Message", "UI_BIO_SHIP_MISSION4_MSG3",},
 							},  
 							["VCT"] = 
 							{
-								{"Time",	"7200"} 
+								{"Time", "7200"} 
 							} 
 						}, 						
 					}
