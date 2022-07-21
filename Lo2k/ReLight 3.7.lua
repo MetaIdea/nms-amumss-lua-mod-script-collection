@@ -107,10 +107,11 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 3.6.pak", 
+["MOD_FILENAME"] 			= "ReLight 3.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.93",
-["MOD_DESCRIPTION"]			= "This mod rework most of the lights placed in NPC building",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.94",
+["MOD_DESCRIPTION"]			= "This mod tunes most of the lights",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -120,20 +121,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LODDIST1"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"15"},  --original : 5.7
-							},
-						},
-						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LODDIST2"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"25"},  --original : 16 / 40
-							},
-						},
 						-- planetary hologram light
 						{ 
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight60", "Name", "INTENSITY"},
@@ -1932,7 +1919,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"] 	= "SECTION",
 						},	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LightLOD3"},  --create a new LOD independant light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "LightsOn3LOD3"},  --create a new LOD independant light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = InsertNewLight({name='newLight', ty=2.681, tz =-0.8, fov=120, f = 'linear', i=10000}),  
 						},										
@@ -1970,79 +1957,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Value",	"5000.0"},  --original : 5000.0
 							},
 						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B"},  -- round table with yellow stand
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransY",	"0.8"},  --original : 0.350297
-								{"RotX",	"-90"},  --original : 0
-								{"RotY",	"180"},  --original : 0
-								{"RotZ",	"90"},  --original : 0
-							},
+						
+						-- Round table with yellow light in stand
+						{  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B"},  
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NewLight', ty=0.8, rx=-90, fov=180, i=9000, r=1.0, g=0.75, b=0.0}),  
 						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B", "Name", "FOV"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"180.0"},  --original : 360.0
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"9000.0"},  --original : 4000.0
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B", "Name", "COL_G"},  --R = 1.0
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.75"},  --original : 1.0
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B", "Name", "COL_B"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.0"},  --original : 1.0
-							},
-						},	
-						{   --hexagonal table with blue light in the stand
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1B",},
+							["REMOVE"] 	= "SECTION",
+						},
+						
+						-- Hexagonal table with blue light in the stand
+						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B1s"},  
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransY",	"0.5"},  --original : 1.395906
-							},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='NewLight', ty=0.7, rx=-90, fov=180, i=9000, r=0.3823, g=0.9286, b=1.0}),  
 						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B1s", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"9000.0"},  --original : 4000.0
-							},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1B1s",},
+							["REMOVE"] 	= "SECTION",
 						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B1s", "Name", "COL_R"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.3823"},  --original : 0.88230
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B1s", "Name", "COL_G"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.9286"},  --original : 0.858600
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B1s", "Name", "COL_B"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"1.0"},  --original : 0.743900
-							},
-						},	
+						
+						
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1B1s1"},
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -2324,7 +2262,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1"},
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"TransY",	"1.2"},  --original : 0.852511
@@ -2332,14 +2270,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1", "Name", "FOV"},
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "FOV"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",	"360.0"},  --original : 40.0
 							},
 						},	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1", "Name", "INTENSITY"},
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",	"20000.0"},  --original : 1000.0
