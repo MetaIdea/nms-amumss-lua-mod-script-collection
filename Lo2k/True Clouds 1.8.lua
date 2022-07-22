@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "True Clouds 1.7.pak", 
+["MOD_FILENAME"] 			= "True Clouds 1.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.88",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.95",
 ["MOD_DESCRIPTION"]			= "This mods changes clouds to prevent them looking like floating cones",
 ["MODIFICATIONS"] 			= 
 	{
