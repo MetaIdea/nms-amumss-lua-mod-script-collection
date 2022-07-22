@@ -6,14 +6,14 @@ local nms_version = "3.94"
 local description = "Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics."
 
 --=============================================================================================================================
-_min_Speed = 0.01
+_min_speed = 0.01
 _boostMult = 1.8
 _brakeMult = 0.8
 _lsptrnDmp = 0.01
 _speedMult = 3.2
 _thrstMult = 2.5
 _turnBMult = 0.5
-_warpSMult = 4.2
+_warpSMult = 4
 _padTurnSp = 0.75
 _fuelMulti = 0.05 --95% cost saving on launch
 --=============================================================================================================================
@@ -54,59 +54,36 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"GroundHeightSoft",                              "7"}, --Original "20"
                                 {"GroundHeightSoftForce",                        "10"}, --Original "35"
-                                {"LandingHoverOffset",                            "2"}, --Original "3"
+                                {"LandingHoverOffset",                            "1"}, --Original "3"
                                 {"LandingMaxSpeed",                              "60"}, --Original "80"
-                                {"LandingMaxAngle",                              "50"}, --Original "45"
+                                {"LandingMaxAngle",                              "35"}, --Original "45"
                                 {"LandingMargin",                               "2.4"}, --Original "1.4"
-                                {"LandingObstacleMinHeight",                    "1.4"}, --Original "2"
-                                {"LandingTooManyLowPointsFraction",             "0.1"}, --Original "0.3"
-                                {"VignetteAmountAcceleration",                    "0"}, --Original "20"
-                                {"VignetteAmountTurning",                         "0"}, --Original "0.4"
+                                {"LandingObstacleMinHeight",                    "1.3"}, --Original "2"
+                                {"LandingTooManyLowPointsFraction",               "0"}, --Original "0.3"
+                                {"LaunchThrustersRegenTimePeriod",                "1"}, --Original "1440"
                                 {"AnomalyStationMaxApproachSpeed",              "120"}, --Original "60"
+                                {"BoostChargeRate",                             "5.0"}, --Original "2.5"
                                 {"BoostNoAsteroidRadius",                      "2000"}, --Original "1000"
                                 {"MaximumDistanceFromShipWhenExiting",            "6"}, --Original "10"
                                 {"DockingRotateSpeed",                     _padTurnSp}, --Original "1"
                                 {"HoverTakeoffHeight",                           "75"}, --Original "90"
                                 {"HoverAlignTime",                              "0.3"}, --Original "0.7"
-                                {"HoverMinSpeed",                          _min_Speed}, --Original "1"
-                                {"HoverLandReachedDistance",                      "3"}, --Original "4"
-                                {"HoverLandManeuvreTimeMin",                    "0.3"}, --Original "0.7"
-                                {"LandingOnGroundTip",                          "-15"}, --Original "-20"
+                                {"HoverMinSpeed",                          _min_speed}, --Original "1"
+                                {"HoverLandReachedDistance",                      "2"}, --Original "4"
+                                {"HoverLandManeuvreTimeMin",                    "0.4"}, --Original "0.7"
+                                {"LandingOnGroundTip",                          "-13"}, --Original "-20"
                                 {"LandingCheckBuildingRadiusFactor",           "0.75"}, --Original "1.1"
                                 {"LandingButtonMinTime",                       "0.25"}, --Original "0.5"
                                 {"LandHeightThreshold",                          "60"}, --Original "100"
-                                {"LandingPushNoseUpFactor",                    "0.04"}, --Original "0.15"
-                                {"MiniWarpLinesNum",                              "0"}, --Original "4"
-                                {"MiniWarpFuelTime",                           "0.01"}, --Original "0.5" (1/50th)
-                                {"MiniWarpChargeTime",                          "1.3"}, --Original "2"
+                                {"LandingPushNoseUpFactor",                    "0.02"}, --Original "0.15"
+                                {"MiniWarpLinesNum",                              "0"}, --Original "4"      --METRIC LINES
+                                {"MiniWarpFuelTime",                           "0.01"}, --Original "0.5"
+                                {"MiniWarpChargeTime",                         "0.95"}, --Original "2"
                                 {"PadTurnSpeed",                           _padTurnSp}, --Original "1"
                                 {"PostWarpSlowDownTime",                        "1.5"}, --Original "3"
                                 {"PulseDriveStationApproachSlowdownRange",     "3500"}, --Original "5000"
-                                {"PulseDriveStationApproachSlowdownRangeMin",   "600"}, --Original "1000"
-                                {"TurnRudderStrength",                            "1"}, --Original "0.4"
-
-                        --|----------------------------------------------------------------------------------------
-                        --| WarpIn Range Settings
-                        --|----------------------------------------------------------------------------------------
-
-                                {"WarpInRange",                                "6000"}, --Original "10000"
-                                {"WarpInRangeFreighter",                       "3500"}, --Original "5000"
-                                {"WarpInRangeNexus",                           "3500"}, --Original "5000"
-                                {"WarpNexusDistance",                         "-6000"}, --Original "-9000"
-                                {"WarpNexusPitch",                                "0"}, --Original "15"
-                                {"WarpNexusRotation",                             "0"}, --Original "15"
-                                {"WarpOutRange",                                "500"}, --Original "1000"
-
-                        --|----------------------------------------------------------------------------------------
-                        --| Miniwarp Settings
-                        --|----------------------------------------------------------------------------------------
-
-                                {"MiniWarpHUDArrowAttractAngle",                  "3"}, --Original "10"
-                                {"MiniWarpStoppingMarginPlanet",               "2000"}, --Original "5000"
-                                {"MiniWarpMinPlanetDistance",                   "300"}, --Original "2000"
-                                {"MiniWarpStoppingMarginStation",              "1000"}, --Original "2500"
-                                {"MiniWarpTrackingMargin",                       "20"}, --Original "100"
-                                {"MiniWarpExitSpeed",                           "800"}, --Original "1000"
+                                {"PulseDriveStationApproachSlowdownRangeMin",   "700"}, --Original "1000"
+                                {"TurnRudderStrength",                            "4"}, --Original "0.4"
 
                         --|----------------------------------------------------------------------------------------
                         --| Slower AI Trader Flyby Speeds
@@ -144,7 +121,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"BoostChargeRate",                               "5"}, --Original "2.5"
                                 {"ShieldRechargeRate",                           "12"}, --Original "6"
                                 {"LaunchThrustersRegenTimePeriod",              "360"}, --Original "1440"
-
                             }
                         },
 
@@ -193,10 +169,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 
                         --|----------------------------------------------------------------------------------------
-                        --| Flight Control
+                        --| Flight Control (Space Engine)
                         --|----------------------------------------------------------------------------------------
 
-                        {   --CONTROL SPACE ENGINE--
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"SpaceEngine"},
                             ["MATH_OPERATION"]      = "*",
                             ["REPLACE_TYPE"]        = "ALL",
@@ -204,8 +180,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"LowSpeedTurnDamper",                     _lsptrnDmp},
-								{"MaxSpeed",                               _speedMult},
-                                {"MinSpeed",                               _min_Speed},
+                                {"MaxSpeed",                               _speedMult},
+                                {"MinSpeed",                               _min_speed},
                                 {"BoostMaxSpeed",                          _speedMult},
                                 {"DirectionBrakeMin",                      _speedMult},
                                 {"DirectionBrake",                         _speedMult},
@@ -216,7 +192,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"BoostThrustForce",                       _boostMult},
                             }
                         },
-                        {   --CONTROL PLANET ENGINE--
+
+                        --|----------------------------------------------------------------------------------------
+                        --| Flight Control (Planet Engine)
+                        --|----------------------------------------------------------------------------------------
+
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetEngine"},
                             ["MATH_OPERATION"]      = "*",
                             ["REPLACE_TYPE"]        = "ALL",
@@ -224,8 +205,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"LowSpeedTurnDamper",                     _lsptrnDmp},
-								{"MaxSpeed",                               _speedMult},
-                                {"MinSpeed",                               _min_Speed},
+                                {"MaxSpeed",                               _speedMult},
+                                {"MinSpeed",                               _min_speed},
                                 {"BoostMaxSpeed",                          _speedMult},
                                 {"DirectionBrakeMin",                      _speedMult},
                                 {"DirectionBrake",                         _speedMult},
@@ -236,7 +217,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"BoostThrustForce",                       _boostMult},
                             }
                         },
-                        {   --CONTROL COMBAT ENGINE--
+
+                        --|----------------------------------------------------------------------------------------
+                        --| Flight Control (Combat Engine)
+                        --|----------------------------------------------------------------------------------------
+
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"CombatEngine"},
                             ["MATH_OPERATION"]      = "*",
                             ["REPLACE_TYPE"]        = "ALL",
@@ -244,8 +230,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"LowSpeedTurnDamper",                     _lsptrnDmp},
-								{"MaxSpeed",                               _speedMult},
-                                {"MinSpeed",                               _min_Speed},
+                                {"MaxSpeed",                               _speedMult},
+                                {"MinSpeed",                               _min_speed},
                                 {"BoostMaxSpeed",                          _speedMult},
                                 {"DirectionBrakeMin",                      _speedMult},
                                 {"DirectionBrake",                         _speedMult},
@@ -253,10 +239,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TurnStrength",                           _speedMult},
                                 {"TurnBrakeMin",                           _turnBMult},
                                 {"TurnBrakeMax",                           _turnBMult},
-                                {"BoostThrustForce",                       _boostMult}
+                                {"BoostThrustForce",                       _boostMult},
                             }
                         },
-                        {   --CONTROL ATMOS COMBAT ENGINE--
+
+                        --|----------------------------------------------------------------------------------------
+                        --| Flight Control (Atmos Combat Engine)
+                        --|----------------------------------------------------------------------------------------
+
+                        {
                             ["PRECEDING_KEY_WORDS"] = {"AtmosCombatEngine"},
                             ["MATH_OPERATION"]      = "*",
                             ["REPLACE_TYPE"]        = "ALL",
@@ -264,8 +255,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"LowSpeedTurnDamper",                     _lsptrnDmp},
-								{"MaxSpeed",                               _speedMult},
-                                {"MinSpeed",                               _min_Speed},
+                                {"MaxSpeed",                               _speedMult},
+                                {"MinSpeed",                               _min_speed},
                                 {"BoostMaxSpeed",                          _speedMult},
                                 {"DirectionBrakeMin",                      _speedMult},
                                 {"DirectionBrake",                         _speedMult},
@@ -273,65 +264,96 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TurnStrength",                           _speedMult},
                                 {"TurnBrakeMin",                           _turnBMult},
                                 {"TurnBrakeMax",                           _turnBMult},
-                                {"BoostThrustForce",                       _boostMult}
+                                {"BoostThrustForce",                       _boostMult},
                             }
                         },
 
                         --|----------------------------------------------------------------------------------------
-                        --| Control Bonuses
+                        --| Control Bonus (C)
                         --|----------------------------------------------------------------------------------------
 
-                        {   --CONTROLBONUSC--
-                            ["PRECEDING_KEY_WORDS"] = "ControlBonusC",
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"BoostMaxSpeedMax",                       _boostMult},
-                                {"BoostMaxSpeedMin",                       _boostMult},
-                                {"MaxSpeedMax",                            _speedMult},
-                                {"MaxSpeedMin",                            _speedMult},
-                            }
+                        {
+                          ["PRECEDING_KEY_WORDS"] = "ControlBonusC",
+                          ["MATH_OPERATION"]      = "*",
+                          ["REPLACE_TYPE"]        = "ALL",
+                          ["INTEGER_TO_FLOAT"]    = "FORCE",
+                          ["VALUE_CHANGE_TABLE"]  =
+                          {
+                              {"BoostMaxSpeedMax",                         _boostMult},
+                              {"BoostMaxSpeedMin",                         _boostMult},
+                              {"DirectionBrakeMin",                        _brakeMult},
+                              {"DirectionBrakeMax",                        _brakeMult},
+                              {"MaxSpeedMax",                              _speedMult},
+                              {"MaxSpeedMin",                              _speedMult},
+                              {"ThrustForceMax",                           _thrstMult},
+                              {"ThrustForceMin",                           _thrstMult},
+                          }
                         },
-                        {   --CONTROLBONUSB--
-                            ["PRECEDING_KEY_WORDS"] = "ControlBonusB",
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"BoostMaxSpeedMax",                       _boostMult},
-                                {"BoostMaxSpeedMin",                       _boostMult},
-                                {"MaxSpeedMax",                            _speedMult},
-                                {"MaxSpeedMin",                            _speedMult},
-                            }
+
+                        --|----------------------------------------------------------------------------------------
+                        --| Control Bonus (B)
+                        --|----------------------------------------------------------------------------------------
+
+                        {
+                          ["PRECEDING_KEY_WORDS"] = "ControlBonusB",
+                          ["MATH_OPERATION"]      = "*",
+                          ["REPLACE_TYPE"]        = "ALL",
+                          ["INTEGER_TO_FLOAT"]    = "FORCE",
+                          ["VALUE_CHANGE_TABLE"]  =
+                          {
+                              {"BoostMaxSpeedMax",                         _boostMult},
+                              {"BoostMaxSpeedMin",                         _boostMult},
+                              {"DirectionBrakeMin",                        _brakeMult},
+                              {"DirectionBrakeMax",                        _brakeMult},
+                              {"MaxSpeedMax",                              _speedMult},
+                              {"MaxSpeedMin",                              _speedMult},
+                              {"ThrustForceMax",                           _thrstMult},
+                              {"ThrustForceMin",                           _thrstMult}
+                          }
                         },
-                        {   --CONTROLBONUSA--
-                            ["PRECEDING_KEY_WORDS"] = "ControlBonusA",
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"BoostMaxSpeedMax",                       _boostMult},
-                                {"BoostMaxSpeedMin",                       _boostMult},
-                                {"MaxSpeedMax",                            _speedMult},
-                                {"MaxSpeedMin",                            _speedMult},
-                            }
+
+                        --|----------------------------------------------------------------------------------------
+                        --| Control Bonus (A)
+                        --|----------------------------------------------------------------------------------------
+
+                        {
+                          ["PRECEDING_KEY_WORDS"] = "ControlBonusA",
+                          ["MATH_OPERATION"]      = "*",
+                          ["REPLACE_TYPE"]        = "ALL",
+                          ["INTEGER_TO_FLOAT"]    = "FORCE",
+                          ["VALUE_CHANGE_TABLE"]  =
+                          {
+                              {"BoostMaxSpeedMax",                         _boostMult},
+                              {"BoostMaxSpeedMin",                         _boostMult},
+                              {"DirectionBrakeMin",                        _brakeMult},
+                              {"DirectionBrakeMax",                        _brakeMult},
+                              {"MaxSpeedMax",                              _speedMult},
+                              {"MaxSpeedMin",                              _speedMult},
+                              {"ThrustForceMax",                           _thrstMult},
+                              {"ThrustForceMin",                           _thrstMult}
+                          }
                         },
-                        {   --CONTROLBONUSS--
-                            ["PRECEDING_KEY_WORDS"] = "ControlBonusS",
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"BoostMaxSpeedMax",                       _boostMult},
-                                {"BoostMaxSpeedMin",                       _boostMult},
-                                {"MaxSpeedMax",                            _speedMult},
-                                {"MaxSpeedMin",                            _speedMult},
-                            }
+
+                        --|----------------------------------------------------------------------------------------
+                        --| Control Bonus (S)
+                        --|----------------------------------------------------------------------------------------
+
+                        {
+                          ["PRECEDING_KEY_WORDS"] = "ControlBonusS",
+                          ["MATH_OPERATION"]      = "*",
+                          ["REPLACE_TYPE"]        = "ALL",
+                          ["INTEGER_TO_FLOAT"]    = "FORCE",
+                          ["VALUE_CHANGE_TABLE"]  =
+                          {
+                              {"BoostMaxSpeedMax",                         _boostMult},
+                              {"BoostMaxSpeedMin",                         _boostMult},
+                              {"DirectionBrakeMin",                        _brakeMult},
+                              {"DirectionBrakeMax",                        _brakeMult},
+                              {"MaxSpeedMax",                              _speedMult},
+                              {"MaxSpeedMin",                              _speedMult},
+                              {"ThrustForceMax",                           _thrstMult},
+                              {"ThrustForceMin",                           _thrstMult}
+                          }
                         }
                     }
                 },

@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Natural Steering 1.2.pak", 
+["MOD_FILENAME"] 			= "Natural Steering 1.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.84",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.94",
 ["MOD_DESCRIPTION"]			= "This mods uncouples mouse view from steering",
 ["MODIFICATIONS"] 			= 
 	{
