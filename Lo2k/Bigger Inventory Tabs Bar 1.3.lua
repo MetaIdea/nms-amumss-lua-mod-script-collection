@@ -2,9 +2,10 @@ Offset = 105
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Bigger Inventory Tabs Bar 1.2.pak", 
+["MOD_FILENAME"] 			= "Bigger Inventory Tabs Bar 1.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.82",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.94",
 ["MOD_DESCRIPTION"]			= "This mod increased inventory tabs bar size",
 ["MODIFICATIONS"] 			= 
 	{
