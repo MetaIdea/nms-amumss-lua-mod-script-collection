@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Speed Halo 1.5 - Almost.pak", 
+["MOD_FILENAME"] 			= "No Speed Halo 2.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.52",
-["MOD_DESCRIPTION"]			= "This mods reduces or removes ship speed effect",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.94",
+["MOD_DESCRIPTION"]			= "This mods removes ship speed effect",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -17,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name","gMaterialColourVec4"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"t",	"0.06"}  -- Set to 1 for Vanilla or 0 for No Effect
+								{"t",	"0"}  -- Set to 1 for Vanilla or 0.06 for Almost
 							}	
 						}
 					}

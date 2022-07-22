@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Flat Landing 3.3.pak", 
+["MOD_FILENAME"] 			= "Flat Landing 3.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.90",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.94",
 ["MOD_DESCRIPTION"]			= "This mod prevents ship nose up effect at landing time",
 ["MODIFICATIONS"] 			= 
 	{
