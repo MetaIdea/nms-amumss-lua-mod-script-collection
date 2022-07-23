@@ -1,11 +1,11 @@
-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 local desc = [[
   Rebuild and add to unlockable items tree
   - Each consecutive full tree addition is placed BEFORE the last one!
-  - The items tree a classic Tree data structure; Each node consists of a table
-   containing an item's id and a table, containing one or more nodes.
-]]--------------------------------------------------------------------------------
-local version = 1.0
+  - The items tree is a classic Tree data structure. The node is a table
+   containing an item's id string and a table which contains one or more nodes.
+]]------------------------------------------------------------------------------
+local version = 1.1
 
 local unlockable_items = {
 	{
@@ -378,14 +378,9 @@ local function BuildExmlNodes(tree, root)
 	for i=1, #tree do
 		if type(tree[i]) == 'string' then
 			if i < #tree then
-				if root then
-					root = 'name="Root"'
-				else
-					root = ''
-				end
 				return string.format(
 					treenode,
-					root,
+					(root and 'name="Root"' or ''),
 					tree[i],
 					string.format(
 						'<Property name="Children">%s</Property>',
@@ -393,11 +388,7 @@ local function BuildExmlNodes(tree, root)
 					)
 				)
 			else
-				return string.format(
-					treenode, '',
-					tree[i],
-					'<Property name="Children"/>'
-				)
+				return string.format(treenode, '', tree[i], '')
 			end
 		else
 			exml = exml..BuildExmlNodes(tree[i], false)
@@ -477,7 +468,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit Update.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.93,
+	NMS_VERSION			= 3.96,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

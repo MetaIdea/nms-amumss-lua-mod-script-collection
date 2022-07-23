@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    =   "shoemakers Flight Adjustments Extended Hyperdrive",
+    ["MOD_FILENAME"]    =   "shoemakers Flight Adjustments Extended Hyperdrive.pak",
     ["MOD_AUTHOR"]      =   "shoemakerjones",
     ["LUA_AUTHOR"]      =   "shoemakerjones",
     ["NMS_VERSION"]     =   "3.93",
@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-								{"Bonus", "1000000"}, 	-- Original "100"
+								{"Bonus", "10000"}, 	-- Original "100"
                             }
                         },
                         {
@@ -116,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-								{"Bonus", "1000000"}, 	-- Original "100"
+								{"Bonus", "10000"}, 	-- Original "100"
                             }
                         },
                         {
@@ -124,15 +124,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Freighter_Hyperdrive_JumpDistance",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-								{"Bonus", "1000000"}, 	-- Original "100"
+								{"Bonus", "10000"}, 	-- Original "100"
                             }
                         },
                         {
 							["SPECIAL_KEY_WORDS"] = {"ID","HYPERDRIVE_SPEC",},
-							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpDistance",},
+							["PRECEDING_KEY_WORDS"] = {"Ship_Hyperdrive_JumpsPerCell",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-								{"Bonus", "1000000"}, 	-- Original "100"
+								{"Bonus", "10000"}, 	-- Original "100"
                             }
                         }
                     }
