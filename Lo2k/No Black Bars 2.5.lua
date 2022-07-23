@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] = "No Black Bars 2.4.pak", 
-["MOD_AUTHOR"]= "Lo2k (script by MrFisse)",
-["NMS_VERSION"]  = "3.84",
+["MOD_FILENAME"] = "No Black Bars 2.5.pak", 
+["MOD_AUTHOR"]= "Lo2k",
+["LUA_AUTHOR"]= "MrFisse",
+["NMS_VERSION"]  = "3.96",
 ["MOD_DESCRIPTION"] = "No cutscene black bars",
 ["MODIFICATIONS"]= 
 	{
@@ -16,7 +17,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] = {{"IsHidden", "True"}},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"IsHidden", "True"}
+							},
 						},
 					}
 				},
