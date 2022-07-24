@@ -1,8 +1,8 @@
-local modfilename = "_BiomesFireFliesReduced"
+local modfilename = "Biomes.FireFliesReduced"
 local lua_author  = "Silent"
-local lua_version = "v1.5"
+local lua_version = "v1.6"
 local mod_author  = "Silent369"
-local nms_version = "3.87"
+local nms_version = "3.9x"
 local description = "Resized / Reduced(optional) 'heavyair' firefly particles in all biomes. Gas / Smoke Scaled up on other biomes."
 
 --This mod decreases the number of fireflies rendered
@@ -86,15 +86,16 @@ local description = "Resized / Reduced(optional) 'heavyair' firefly particles in
 --whole values (2) will halve the number of particles and
 --fractionals (0.5) will double the number of particles.
 
-DIVIDER = 2	   --Modifies the number of firefly particles.
+DIVIDER = 0.4	--Modifies the number of firefly particles.
 
-SPEED_V = 5	   --Modifies the visible speed of particles.
-MULTPLY = 1.3  --Modifies the particles radius / radiusY.
-FADES_M = 0.3  --Modifies fade speed of rendered particles.
-SCALE_M = 0.5  --Modifies the x,y,z particles scale ranges.
+SPEED_V = 0.1	--Modifies the visible speed of particles.
+MULTPLY = 1.3	--Modifies the particles radius / radiusY.
+FADES_M = 0.7	--Modifies fade speed of rendered particles.
+SCALE_M = 1.5	--Modifies the x,y,z particles scale ranges.
+ROTAT_R = 0.5	--Modifies the rotational range of particles.
 
-SCALE_S = 5	   --Modifies smoke/gas scale in certain biomes.
-GASSMOK = 5	   --Modifies Sparks,Embers,Flames particle counts.
+SCALE_S = 1		--Modifies smoke/gas scale in certain biomes.
+GASSMOK = 0.6	--Modifies Sparks,Embers,Flames particle counts.
 
 local function round(number, precision)
    local fmtStr = string.format('%%0.%sf',precision)
@@ -104,7 +105,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]			= modfilename..lua_version..".pak",
+	["MOD_FILENAME"]			= "_"..modfilename..lua_version..".pak",
 	["LUA_AUTHOR"]				= lua_author,
 	["MOD_AUTHOR"]				= mod_author,
 	["NMS_VERSION"]				= nms_version,
@@ -148,8 +149,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--NUMBER OF PARTICLES (OPTIONAL)
 						--===============================================================================
 						{
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -161,13 +162,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--MAX VISIBLE PARTICLE SPEED
 						--===============================================================================
 						{
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"MaxVisibleSpeed",	  round(SPEED_V,0)},
+								{"MaxVisibleSpeed",	  round(SPEED_V,3)},
 							}
 						},
 						--===============================================================================
@@ -175,7 +176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--===============================================================================
 						{
 							["MATH_OPERATION"]		= "*",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -192,34 +193,34 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"FadeTime",		round(FADES_M,2)},
+								{"FadeTime",		round(FADES_M,3)},
 							}
 						},
 						--===============================================================================
 						--PARTICLES SCALE RANGES
 						--===============================================================================
 						{
-							["PRECEDING_KEY_WORDS"]	= {"ScaleRange",},
+							["PRECEDING_KEY_WORDS"]	= {"ScaleRange"},
 							["MATH_OPERATION"]		= "*",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"x",				round(SCALE_M,2)},
-								{"y",				round(SCALE_M,2)},
-								{"z",				round(SCALE_M,2)},
+								{"x",				round(SCALE_M,3)},
+								{"y",				round(SCALE_M,3)},
+								{"z",				round(SCALE_M,3)},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"]	= {"RotationSpeedRange",},
+							["PRECEDING_KEY_WORDS"]	= {"RotationSpeedRange"},
 							["MATH_OPERATION"]		= "*",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"y",				round(SCALE_M,2)},
+								{"y",				round(ROTAT_R,3)},
 							}
 						}
 					}
@@ -235,12 +236,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]	= {"Value", "MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE.HEAVYAIR.MBIN"},
 							["SECTION_UP_SPECIAL"]	= 2,
 							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",			SCALE_S},
-								{"ScaleY",			SCALE_S},
-								{"ScaleZ",			SCALE_S},
+								{"ScaleX",			round(SCALE_S,1)},
+								{"ScaleY",			round(SCALE_S,1)},
+								{"ScaleZ",			round(SCALE_S,1)},
 							}
 						},
 					}
@@ -251,8 +253,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/SMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -276,9 +278,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",			SCALE_S},
-								{"ScaleY",			SCALE_S},
-								{"ScaleZ",			SCALE_S},
+								{"ScaleX",			round(SCALE_S,1)},
+								{"ScaleY",			round(SCALE_S,1)},
+								{"ScaleZ",			round(SCALE_S,1)},
 							}
 						},
 					}
@@ -289,8 +291,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/NEWSMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -314,9 +316,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",			SCALE_S},
-								{"ScaleY",			SCALE_S},
-								{"ScaleZ",			SCALE_S},
+								{"ScaleX",			round(SCALE_S,1)},
+								{"ScaleY",			round(SCALE_S,1)},
+								{"ScaleZ",			round(SCALE_S,1)},
 							}
 						},
 					}
@@ -327,8 +329,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/NEWSMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -344,8 +346,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/SMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -361,8 +363,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/SCORCHSPARK.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -378,8 +380,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/HEAVYAIR/EMBERS/EMBERSMAT.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -395,8 +397,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/HEAVYAIR/FIRESTORM/STORMSMOKEMAT.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -420,9 +422,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",			SCALE_S},
-								{"ScaleY",			SCALE_S},
-								{"ScaleZ",			SCALE_S},
+								{"ScaleX",			round(SCALE_S,1)},
+								{"ScaleY",			round(SCALE_S,1)},
+								{"ScaleZ",			round(SCALE_S,1)},
 							}
 						},
 					}
@@ -433,8 +435,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/HEAVYAIR/GRAVITYSPIKES/GRAVITYEMBERMAT.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -450,8 +452,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/NEWSMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -467,8 +469,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/HEAVYAIR/GRAVITYSPIKES/GRAVITYSPIKEMAT.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -484,8 +486,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/HEAVYAIR/GRAVITYSPIKES/GRAVITYSPIKELMAT.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -501,8 +503,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/SCORCHSPARK.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -518,8 +520,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/HEAVYAIR/EMBERS/EMBERSMAT.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -543,9 +545,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",			SCALE_S},
-								{"ScaleY",			SCALE_S},
-								{"ScaleZ",			SCALE_S},
+								{"ScaleX",			round(SCALE_S,1)},
+								{"ScaleY",			round(SCALE_S,1)},
+								{"ScaleZ",			round(SCALE_S,1)},
 							}
 						},
 					}
@@ -556,8 +558,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/SMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -573,8 +575,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/SPARK.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -598,9 +600,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",			SCALE_S},
-								{"ScaleY",			SCALE_S},
-								{"ScaleZ",			SCALE_S},
+								{"ScaleX",			round(SCALE_S,1)},
+								{"ScaleY",			round(SCALE_S,1)},
+								{"ScaleZ",			round(SCALE_S,1)},
 							}
 						},
 					}
@@ -619,9 +621,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",			SCALE_S},
-								{"ScaleY",			SCALE_S},
-								{"ScaleZ",			SCALE_S},
+								{"ScaleX",			round(SCALE_S,1)},
+								{"ScaleY",			round(SCALE_S,1)},
+								{"ScaleZ",			round(SCALE_S,1)},
 							}
 						},
 					}
@@ -632,8 +634,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/NEWSMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -649,8 +651,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/SMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -666,8 +668,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/HEAVYAIR/SMALLFLAME/SMALLFLAMEMAT.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -683,8 +685,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/SCORCHSPARK.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -708,9 +710,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",			SCALE_S},
-								{"ScaleY",			SCALE_S},
-								{"ScaleZ",			SCALE_S},
+								{"ScaleX",			round(SCALE_S,1)},
+								{"ScaleY",			round(SCALE_S,1)},
+								{"ScaleZ",			round(SCALE_S,1)},
 							}
 						},
 					}
@@ -721,8 +723,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/SMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -738,8 +740,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/RAINDROP.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -763,9 +765,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
 							{
-								{"ScaleX",			SCALE_S},
-								{"ScaleY",			SCALE_S},
-								{"ScaleZ",			SCALE_S},
+								{"ScaleX",			round(SCALE_S,1)},
+								{"ScaleY",			round(SCALE_S,1)},
+								{"ScaleZ",			round(SCALE_S,1)},
 							}
 						},
 					}
@@ -776,8 +778,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/NEWSMOKE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -793,8 +795,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/RAINDROP.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -810,8 +812,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/RAINDROP2.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
@@ -827,8 +829,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"Material", "MODELS/EFFECTS/COMMON/MATERIALS/TOXICSPORE.MATERIAL.MBIN"},
-							["MATH_OPERATION"]		= "/",
-							["INTEGER_TO_FLOAT"]	= "PRESERVE",
+							["MATH_OPERATION"]		= "*",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
 							["REPLACE_TYPE"]		= "ALL",
 							["VALUE_MATCH"]			= "",
 							["VALUE_CHANGE_TABLE"]	=
