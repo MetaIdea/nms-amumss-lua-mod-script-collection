@@ -1,19 +1,24 @@
 local modfilename = "NoSpeedLines4Streamers"
 local lua_author  = "Silent"
-local lua_version = "v1.0"
+local lua_version = "v1.2"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
 local description = "No speed lines. No ship halo effect at cruise/boost/pulse speeds in space. No Space Dust / Plasma."
 
 --Modifies:
 --MODELS\EFFECTS\ENGINES\SPEEDCOOL\TUNNELMAT.MATERIAL.MBIN
+--MODELS\EFFECTS\ENGINES\SPEEDCOOLREVERSE\TUNNELMAT.MATERIAL.MBIN
+--MODELS\EFFECTS\HEAVYAIR\SPACE\SPACE.HEAVYAIR.MBIN
 --MODELS\EFFECTS\HEAVYAIR\SPACE\SPACE2.HEAVYAIR.MBIN
 --MODELS\EFFECTS\HEAVYAIR\SPACE\SPACEPLASMA.HEAVYAIR.MBIN
 --MODELS\EFFECTS\LINES\SPEEDLINE2MATERIAL.MATERIAL.MBIN
 --MODELS\EFFECTS\LINES\SPEEDLINE3MATERIAL.MATERIAL.MBIN
+--MODELS\EFFECTS\LINES\SPEEDLINE4MATERIAL.MATERIAL.MBIN
 --MODELS\EFFECTS\LINES\SPEEDLINEMATERIAL.MATERIAL.MBIN
 --MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES.SPEEDLINE.MBIN
 --MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES2.SPEEDLINE.MBIN
+--MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES3.SPEEDLINE.MBIN
+--MODELS\EFFECTS\SPEEDLINES\MINIJUMPSPEEDLINES4.SPEEDLINE.MBIN
 --MODELS\EFFECTS\SPEEDLINES\SPACE.SPEEDLINE.MBIN
 --MODELS\EFFECTS\SPEEDLINES\SPACE2.SPEEDLINE.MBIN
 --MODELS\EFFECTS\SPEEDLINES\SPACEBIG.SPEEDLINE.MBIN
@@ -24,13 +29,13 @@ _tParamsVec4 			 = 0
 
 --Dust Particles	(cannot be 0)
 _dparticleNum 			 = 1		--Original "500"
-_dpartLifeMin 			 = 0.1		--Original "1.5"
-_dpartLifeMax 			 = 0.1		--Original "2.5"
+_dpartLifeMin 			 = 0.01		--Original "1.5"
+_dpartLifeMax 			 = 0.01		--Original "2.5"
 
 --Plasma Particles	(cannot be 0)
 _pparticleNum 			 = 1		--Original "100"
-_ppartLifeMin 			 = 0.1		--Original "1"
-_ppartLifeMax 			 = 0.1		--Original "1"
+_ppartLifeMin 			 = 0.01		--Original "1"
+_ppartLifeMax 			 = 0.01		--Original "1"
 
 --Speed Particles 	(cannot be 0)
 _NumParticles			 = 1		--Original ""
@@ -56,8 +61,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					["MBIN_FILE_SOURCE"]	=
 					{
-						"MODELS/EFFECTS/ENGINES/SPEEDCOOL/TUNNELMAT.MATERIAL.MBIN",
-						"MODELS/EFFECTS/WARP/SPEEDTUNNEL/SPEEDTUNNELMAT.MATERIAL.MBIN"
+						"MODELS\EFFECTS\ENGINES\SPEEDCOOL\TUNNELMAT.MATERIAL.MBIN",
+						"MODELS\EFFECTS\ENGINES\SPEEDCOOLREVERSE\TUNNELMAT.MATERIAL.MBIN",
+						"MODELS\EFFECTS\WARP\SPEEDTUNNEL\SPEEDTUNNELMAT.MATERIAL.MBIN"
 					},
 					["EXML_CHANGE_TABLE"]	=
 					{
@@ -81,7 +87,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"MODELS/EFFECTS/LINES/SPEEDLINEMATERIAL.MATERIAL.MBIN",
 						"MODELS/EFFECTS/LINES/SPEEDLINE2MATERIAL.MATERIAL.MBIN",
-						"MODELS/EFFECTS/LINES/SPEEDLINE3MATERIAL.MATERIAL.MBIN"
+						"MODELS/EFFECTS/LINES/SPEEDLINE3MATERIAL.MATERIAL.MBIN",
+						"MODELS/EFFECTS/LINES/SPEEDLINE4MATERIAL.MATERIAL.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] =
 					{
@@ -93,6 +100,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"t",					_tParamsVec4}
 							}
 						},
+					}
+				},
+
+					--|----------------------------------------------------------------------------------------
+					--| Space Debris (Multi) Particles
+					--|----------------------------------------------------------------------------------------
+
+				{
+					["MBIN_FILE_SOURCE"] = {"MODELS/EFFECTS/HEAVYAIR/SPACE/SPACE.HEAVYAIR.MBIN"},
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["REPLACE_TYPE"]	   = "ALL",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"NumberOfParticles",	_dparticleNum},
+								{"MinParticleLifetime",	_dpartLifeMin},
+								{"MaxParticleLifetime",	_dpartLifeMax},
+							}
+						}
 					}
 				},
 
@@ -146,6 +174,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"]	 =
 					{
 						"MODELS/EFFECTS/SPEEDLINES/SPACE.SPEEDLINE.MBIN",
+						"MODELS/EFFECTS/SPEEDLINES/SPACE2.SPEEDLINE.MBIN",
+						"MODELS/EFFECTS/SPEEDLINES/SPACEBIG.SPEEDLINE.MBIN",
 					},
 					["EXML_CHANGE_TABLE"]	 =
 					{
@@ -162,59 +192,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 
 					--|----------------------------------------------------------------------------------------
-					--| Speed Lines 2 (Cruise)
-					--|----------------------------------------------------------------------------------------
-
-				{
-					["MBIN_FILE_SOURCE"]	 =
-					{
-						"MODELS/EFFECTS/SPEEDLINES/SPACE2.SPEEDLINE.MBIN",
-					},
-					["EXML_CHANGE_TABLE"]	 =
-					{
-						{
-							["PRECEDING_KEY_WORDS"]	= {""},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"NumberOfParticles",	 _NumParticles},	--Original "4000"
-								{"Alpha",				 _AlphaTexture},	--Original "0.5"
-							},
-						},
-					},
-				},
-
-					--|----------------------------------------------------------------------------------------
-					--| Speed Lines 3 (Cruise Big)
-					--|----------------------------------------------------------------------------------------
-
-				{
-					["MBIN_FILE_SOURCE"]	 =
-					{
-						"MODELS/EFFECTS/SPEEDLINES/SPACEBIG.SPEEDLINE.MBIN",
-					},
-					["EXML_CHANGE_TABLE"]	 =
-					{
-						{
-							["PRECEDING_KEY_WORDS"]	= {""},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"NumberOfParticles",	 _NumParticles},	--Original "2500"
-								{"Alpha",				 _AlphaTexture},	--Original "0.5"
-							},
-						},
-					},
-				},
-
-					--|----------------------------------------------------------------------------------------
-					--| Mini Warp Speed Lines 1 (Pulse Jump)
+					--| Mini Warp Speed Lines (Pulse Jump)
 					--|----------------------------------------------------------------------------------------
 
 				{
 					["MBIN_FILE_SOURCE"]	 =
 					{
 						"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES.SPEEDLINE.MBIN",
+						"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES2.SPEEDLINE.MBIN",
+						"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES3.SPEEDLINE.MBIN",
+						"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES4.SPEEDLINE.MBIN",
 					},
 					["EXML_CHANGE_TABLE"]	 =
 					{
@@ -224,29 +211,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"NumberOfParticles",	 _NumParticles},	--Original "2000"
-								{"Alpha",				 _AlphaTexture},	--Original "0.5"
-							},
-						},
-					},
-				},
-
-					--|----------------------------------------------------------------------------------------
-					--| Mini Warp Speed Lines 2 (Pulse Jump)
-					--|----------------------------------------------------------------------------------------
-
-				{
-					["MBIN_FILE_SOURCE"]	 =
-					{
-						"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES2.SPEEDLINE.MBIN",
-					},
-					["EXML_CHANGE_TABLE"]	 =
-					{
-						{
-							["PRECEDING_KEY_WORDS"]	= {""},
-							["INTEGER_TO_FLOAT"]	= "FORCE",
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"NumberOfParticles",	 _NumParticles},	--Original "4000"
 								{"Alpha",				 _AlphaTexture},	--Original "0.5"
 							},
 						},
