@@ -185,8 +185,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_ACTIVE"] = {2,},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"MinGroupSize", 	"12" },
-								{"MaxGroupSize",	"24" },					
+								{"MinGroupSize", "12" },
+								{"MaxGroupSize", "24" },					
 							}
 						},
 					}
