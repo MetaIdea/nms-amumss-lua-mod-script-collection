@@ -1,9 +1,9 @@
 local modfilename = "Biomes.RoboticSpawns"
 local lua_author  = "Silent"
-local lua_version = "v1.0"
+local lua_version = "v1.1"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
-local description = "Robotic life forms spawn in more biomes and more often within Abandoned/Empty Systems."
+local description = "Robotic life forms spawn in more biomes and more often within Empty Systems."
 
 --|-----------------------------------------------------------------------------------------
 --| Probability / Scale Multiplier
@@ -12,67 +12,6 @@ local description = "Robotic life forms spawn in more biomes and more often with
 _Probability     = 0.6  --Original "0.1"
 _Min_Scale       = 3    --Original "0.4"
 _Max_Scale       = 12   --Original "3"
-
---|-----------------------------------------------------------------------------------------
---| Biome Archetypes
---|-----------------------------------------------------------------------------------------
-
-_RobotBiomes = {
-    "Lush",
-    "Toxic",
-    "Scorched",
-    "Radioactive",
-    "Frozen",
-    "Barren",
-    "Red",
-    "Green",
-    "Blue",
-    "Swamp",
-    "Lava",
-    "Waterworld",
-}
-
-_AbandonedBiomes = {
-    "AbandonedSystemSpecific"
-}
-
---|-----------------------------------------------------------------------------------------
---| Format for initial BiomeSpecific Archetypes
---|-----------------------------------------------------------------------------------------
-
-_RobotArchetypes =
-[[
-      <Property name="Archetypes" value="GcCreatureGenerationWeightedList.xml">
-        <Property name="Ground">
-          <Property value="GcCreatureGenerationWeightedListDomainEntry.xml">
-            <Property name="Weight" value="1" />
-            <Property name="Archetype" value="ROBOT" />
-          </Property>
-        </Property>
-        <Property name="Air" />
-        <Property name="Cave" />
-        <Property name="Water" />
-      </Property>
-]]
-
---|-----------------------------------------------------------------------------------------
---| Format changes for AbandonedSystemSpecific
---|-----------------------------------------------------------------------------------------
-
-_RobotArchetypeSystem =
-[[
-    <Property name="Archetypes" value="GcCreatureGenerationWeightedList.xml">
-      <Property name="Ground">
-        <Property value="GcCreatureGenerationWeightedListDomainEntry.xml">
-          <Property name="Weight" value="1" />
-          <Property name="Archetype" value="ROBOT" />
-        </Property>
-      </Property>
-      <Property name="Air" />
-      <Property name="Cave" />
-      <Property name="Water" />
-    </Property>
-]]
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -95,14 +34,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"]   = {"EmptySystemSpecific", "GcCreatureGenerationOptionalWeightedList.xml"},
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Probability",     _Probability},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"AbandonedSystemSpecific", "GcCreatureGenerationOptionalWeightedList.xml"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
@@ -189,49 +120,3 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
     }
 }
-
-local CreatureGenerationData = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-
---|-----------------------------------------------------------------------------------------
---| Add Robots To RobotBiomes List
---|-----------------------------------------------------------------------------------------
-
-for i = 1, #_RobotBiomes do
-    CreatureGenerationData[#CreatureGenerationData + 1] =
-    {
-        ["SPECIAL_KEY_WORDS"]   = {_RobotBiomes[i], "GcCreatureGenerationOptionalWeightedList.xml", "Archetypes", "GcCreatureGenerationWeightedList.xml"},
-        ["SECTION_ACTIVE"]      = {1,},
-        ["REMOVE"]              = "SECTION",
-    }
-end
-for j = 1, #_RobotBiomes do
-    CreatureGenerationData[#CreatureGenerationData + 1] =
-    {
-        ["SPECIAL_KEY_WORDS"]   = {_RobotBiomes[j], "GcCreatureGenerationOptionalWeightedList.xml", "OverrideAllDomains", "True"},
-        ["SECTION_ACTIVE"]      = {1,},
-        ["ADD_OPTION"]          = "ADDafterLINE",
-        ["ADD"]                 = _RobotArchetypes,
-    }
-end
-
---|-----------------------------------------------------------------------------------------
---| Add Robot To AbandonedSystemSpecific
---|-----------------------------------------------------------------------------------------
-
-for i = 1, #_AbandonedBiomes do
-    CreatureGenerationData[#CreatureGenerationData + 1] =
-    {
-        ["SPECIAL_KEY_WORDS"]   = {_AbandonedBiomes[i], "GcCreatureGenerationOptionalWeightedList.xml", "Archetypes", "GcCreatureGenerationWeightedList.xml"},
-        ["SECTION_ACTIVE"]      = {1,},
-        ["REMOVE"]              = "SECTION"
-    }
-end
-for j = 1, #_AbandonedBiomes do
-    CreatureGenerationData[#CreatureGenerationData + 1] =
-    {
-        ["SPECIAL_KEY_WORDS"]   = {_AbandonedBiomes[j], "GcCreatureGenerationOptionalWeightedList.xml", "OverrideAllDomains", "True"},
-        ["SECTION_ACTIVE"]      = {1,},
-        ["ADD_OPTION"]          = "ADDafterLINE",
-        ["ADD"]                 = _RobotArchetypeSystem
-    }
-end
