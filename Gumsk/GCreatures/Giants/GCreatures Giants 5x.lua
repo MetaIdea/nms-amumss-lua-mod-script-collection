@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Giants"
 ModNameSub = "5x"
 BaseDescription = "Increases creature sizes"
-GameVersion = "382"
+GameVersion = "397"
 ModVersion = "a"
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN"
 
