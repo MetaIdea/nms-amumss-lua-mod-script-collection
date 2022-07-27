@@ -2,7 +2,7 @@
 Author = "alchemist"
 ModName = "RefinerInputsExpanded_Portable"
 BaseDescription = "Survive."
-GameVersion = "3-73"
+GameVersion = "3-6x"
 ModVersion = "1"
 
 --[[
