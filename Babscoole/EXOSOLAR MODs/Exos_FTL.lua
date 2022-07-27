@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's FTL.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.95",
+["NMS_VERSION"]   = "3.97",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "MiniWarpTopSpeedTime",                       "0.001" },      --Original "0.1"
 								{ "MiniWarpCooldownTime",                       "0.02" },       --Original "2"
 								{ "MiniWarpExitTime",                           "0.005" },      --Original "0.5"
-								--{ "MiniWarpSpaceStationUnAttractMultiplier",  "1" },          --Original "2.5"
+								--{ "MiniWarpSpaceStationUnAttractMultiplier",    "1" },          --Original "2.5"
 								{ "MiniWarpFlashIntensity",                     "0.4" },        --Original "0.9"
 								{ "MiniWarpFlashDuration",                      "0.4" },        --Original "0.9"
 								{ "MiniWarpNoAsteroidRadius",                   "15000" },      --Original "1500"

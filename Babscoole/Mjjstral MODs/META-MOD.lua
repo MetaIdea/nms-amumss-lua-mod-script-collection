@@ -12,6 +12,7 @@ QUICK_ACTION_LIST =
 	"TOGGLE_SHIELD", 	
 	"TOGGLE_INVISIBLE",
 	"REVEAL_RUNES",
+	"CRASHED_SHIP",
 	"WORD",	
 	"FREIGHTER_TRANS",	
 	"SCARE_CREATURES",
@@ -220,6 +221,18 @@ QUICK_ACTION_MENU =
                   <Property name="RestartEmitters" value="False" />
                   <Property name="AffectModels" value="True" />
                 </Property>
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Toggle" />
+                  <Property name="Name" value="_Cape_Freighter" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />				  
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>	
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Toggle" />
                   <Property name="Name" value="_Cape_Infinity" />
@@ -622,6 +635,9 @@ QUICK_ACTION_MENU =
           <Property name="ForceInteractionType" value="GcInteractionType.xml">
             <Property name="InteractionType" value="None" />
           </Property>
+          <Property name="RequireInteractionRace" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None" />
+          </Property>
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
@@ -789,6 +805,42 @@ QUICK_ACTION_MENU =
             <Property name="Seed" value="GcSeed.xml">
               <Property name="Seed" value="0" />
               <Property name="UseSeedValue" value="False" />
+            </Property>
+            <Property name="AltId" value="" />
+            <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+              <Property name="Samplers" />
+            </Property>
+          </Property>
+        </Property>
+]]
+	},
+	["CRASHED_SHIP"] = 
+	{
+		["TITLE"] = "Find Crashed Ship",
+		["ICON"]  = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.CRASH.DDS",
+		["ANIM"]  = "CRASHED_SHIP",
+		["TYPE"]  = "REWARD",
+		["REWARDTABLE"] = 
+[[
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="CRASHED_SHIP" />
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+		<Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="List">
+         <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardScanEvent.xml">
+              <Property name="Event" value="DISTRESS" />
+              <Property name="ScanEventTable" value="Planet" />
+              <Property name="DoAerialScan" value="True" />
+              <Property name="UseMissionSeedForEvent" value="False" />
+              <Property name="StartDelay" value="6" />
+              <Property name="UseStartDelayWhenNoAerialScan" value="False" />
+            </Property>
+            <Property name="LabelID" value="Distress" />
+          </Property>		  
         </Property>
       </Property>
     </Property>
@@ -1539,7 +1591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "3.95",
+["NMS_VERSION"]     = "3.97",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -1763,7 +1815,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="InteractFiendCrimeType" value="GcFiendCrime.xml">
         <Property name="FiendCrime" value="None" />
       </Property>
+      <Property name="InteractFiendCrimeChance" value="0" />
       <Property name="InteractCrimeLevel" value="0" />
+      <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
         <Property name="AltIds" />
@@ -1787,13 +1841,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="ActivateLocatorsFromRarity" value="False" />
       <Property name="RarityLocators">
-        <Property value="NMSString0x10.xml">
+        <Property name="Common" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
+        <Property name="Uncommon" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
-        <Property value="NMSString0x10.xml">
+        <Property name="Rare" value="NMSString0x10.xml">
           <Property name="Value" value="" />
         </Property>
       </Property>

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Dead Booster.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.95",
+["NMS_VERSION"]   = "3.97",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -17,27 +17,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",			
 							["VALUE_CHANGE_TABLE"] = 					
 							{
-								{ "Dead", 	"1000001" }, 
+								{ "Dead", "1000001" }, 
 							}
 						},
 						{		
 							["PRECEDING_KEY_WORDS"] = "LifeChance",			
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
-								{ "Dead", 	"1000000" }, 
+								{ "Dead", "1000000" }, 
 							}
 						},
 						{		
 							["PRECEDING_KEY_WORDS"] = "AbandonedLifeChance",			
 							["VALUE_CHANGE_TABLE"] 	= 					
 							{
-								{ "Dead", 	"1000000" }, 
+								{ "Dead", "1000000" }, 
 							}
 						},
 						{					
 							["VALUE_CHANGE_TABLE"] = 					
 							{
-								{ "ConvertDeadToWeird", 	"0.05" }, 
+								{ "ConvertDeadToWeird", "0.05" }, 
 							}
 						},						
 					}

@@ -106,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-				<Property name="UseMissionClock" value="False" />
+                <Property name="UseMissionClock" value="False" />
               </Property>		  
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
@@ -188,7 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="1.0" />
                 <Property name="RandomSeconds" value="0" />
-				<Property name="UseMissionClock" value="False" />
+                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
@@ -208,7 +208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-				<Property name="UseMissionClock" value="False" />
+                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcNodeActivationAction.xml">
@@ -240,7 +240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="1.0" />
                 <Property name="RandomSeconds" value="0" />
-				<Property name="UseMissionClock" value="False" />
+                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcNodeActivationAction.xml">

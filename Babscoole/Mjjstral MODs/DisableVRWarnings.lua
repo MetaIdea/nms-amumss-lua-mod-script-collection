@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "Disable-VR-Warnings.pak",
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "3.95",
+["NMS_VERSION"]     = "3.97",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -14,11 +14,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"]        = "ALL",
 							["VALUE_CHANGE_TABLE"]  = 
 							{
-								{"IsHidden",						"True"}, 	-- Original "False"								
+								{"IsHidden", "True"}, -- Original "False"								
 							}
 						}
 					}

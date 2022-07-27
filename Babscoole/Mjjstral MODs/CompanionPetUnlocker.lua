@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["Pet_Ride_Code"]   = "Corvus",
-["NMS_VERSION"]     = "3.95",
+["NMS_VERSION"]     = "3.97",
 ["DESCRIPTION"]     = "Enables more creatures to become companion pets",
 ["MODIFICATIONS"]   = 
 	{
@@ -377,6 +377,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						[[MODELS\PLANETS\CREATURES\BUTTERFLYRIG\BUTTERFLY\ENTITIES\JELLYFISH.ENTITY.MBIN]],
 						[[MODELS\PLANETS\CREATURES\BUTTERFLYRIG\BUTTERFLYFLOCK\ENTITIES\BUTTERFLYFLOCK.ENTITY.MBIN]],					
 						[[MODELS\PLANETS\CREATURES\COWRIG\COWSWIM\ENTITIES\_COW_SWIM.ENTITY.MBIN]],
+						[[MODELS\PLANETS\CREATURES\FISH\ASTEROIDJELLYFISH\ENTITIES\ASTEROIDJELLYFISH.ENTITY.MBIN]],
 						[[MODELS\PLANETS\CREATURES\FISH\FISHFIEND\ENTITIES\FISHFIEND.ENTITY.MBIN]],
 						[[MODELS\PLANETS\CREATURES\FISH\FISHFLOCK\ENTITIES\FISHFLOCK.ENTITY.MBIN]],						
 						[[MODELS\PLANETS\CREATURES\FISH\FREIGHTERJELLYFISH\ENTITIES\FREIGHTERJELLYFISH.ENTITY.MBIN]],
@@ -563,7 +564,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="AlienRace" value="None" />
       </Property>
       <Property name="AttractDistanceSq" value="100" />
-      <Property name="SecondaryMeshAlwaysVisible" value="False" />	  
+      <Property name="SecondaryMeshAlwaysVisible" value="False" />
       <Property name="RepeatInteraction" value="False" />
       <Property name="UseInteractCamera" value="False" />
       <Property name="BlendToCameraTime" value="1.5" />
@@ -631,8 +632,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"RepeatInteraction",	"False"}, 		-- Original "True"
-								{"UseInteractCamera",	"False"},		-- Original "True"
+								{"RepeatInteraction", "False"}, -- Original "True"
+								{"UseInteractCamera", "False"}, -- Original "True"
 							}
 						}
 					}
@@ -814,11 +815,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"LegSpread",	"True"},
-								{"ScaleForNeutralLegSpread",	"1.25"},
-								{"ScaleForMinLegSpread",	"0.5"},
-								{"ScaleForMaxLegSpread",	"4.75"},
-								{"IdleRidingAnim",	"RIDE_ANT_IDLE"},
-								{"DefaultRidingAnim",	"RIDE_ANT_WALK"},
+								{"ScaleForNeutralLegSpread", "1.25"},
+								{"ScaleForMinLegSpread",     "0.5"},
+								{"ScaleForMaxLegSpread",     "4.75"},
+								{"IdleRidingAnim",           "RIDE_ANT_IDLE"},
+								{"DefaultRidingAnim",        "RIDE_ANT_WALK"},
 							}
 						}
 					}
@@ -830,7 +831,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{					
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"CreatureInteractBaseRange",	"50"}, 	-- Original "5"									
+								{"CreatureInteractBaseRange", "50"}, -- Original "5"									
 							}
 						},				
 					}, 

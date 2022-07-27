@@ -393,12 +393,12 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "_Exo's Expanse Black Edition.pak",
-    ["MOD_AUTHOR"]              = "Exosolar",
-    ["LUA_AUTHOR"]              = "Jackty89, WinderTP, and Babscoole",
-    ["MOD_MAINTENANCE"]         = "Babscoole",
-    ["NMS_VERSION"]             = "3.95",
-    ["MODIFICATIONS"]           =
+["MOD_FILENAME"]    = "_Exo's Expanse Black Edition.pak",
+["MOD_AUTHOR"]      = "Exosolar",
+["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
+["MOD_MAINTENANCE"] = "Babscoole",
+["NMS_VERSION"]     = "3.97",
+["MODIFICATIONS"]   =
     {
         {
             ["MBIN_CHANGE_TABLE"] 	=
@@ -562,16 +562,16 @@ for i = 1, #DataTable do
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
 	{
-		["MBIN_FILE_SOURCE"] 	= 
-					{ 
-						[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN]],
-						[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],				
-					},		
+		["MBIN_FILE_SOURCE"] = 
+		{ 
+			[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN]],
+			[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],				
+		},		
 		["EXML_CHANGE_TABLE"] 	=
 		{
 			{
 				["PRECEDING_KEY_WORDS"] = { "GcSolarSystemSkyColourData.xml" },
-				["REPLACE_TYPE"]    = "ALL", 
+				["REPLACE_TYPE"] = "ALL", 
 				["REMOVE"] = "SECTION",
 			},			
 			{
