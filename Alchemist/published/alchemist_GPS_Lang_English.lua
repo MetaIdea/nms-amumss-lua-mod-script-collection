@@ -1,8 +1,11 @@
 -- Original Mod Author Information (translators - do not edit)
 Author = "alchemist"
 ModName = "GPS"
-BaseDescription = [[Better scanning]]
-GameVersion = "3-90"
+BaseDescription = [[Overhaul to Ship and Signal Scanner capabilities. Find nearest 
+building by type or planet by biome. Optional costs and tech requirements.
+
+https://www.nexusmods.com/nomanssky/mods/2144]]
+GameVersion = "3-97"
 ModVersion = "1-3-0"
 
 -- =========
@@ -31,16 +34,20 @@ TranslationAuthor = "alchemist"
 -- Select from LANGUAGE_NAMES array above.
 LanguageName = "English"
 
--- Whether to inject the language table into just the target language file (false),
--- or all language files (true). If true, players will see the provided strings no
--- matter what language they play in. Should probably be true, unless you have
--- a specific reason.
---
+-- When 'false', will inject language into existing files, using LanguageFilePrefix.
+-- When 'true', will create seperate files for the mod in the LANGUAGE folder.
+--    Usage of 'true' requires AMUMSS 4.0.0+.
+CreateSeperateLanguageFiles = false
+
+-- Whether to create/inject the language entries into just the target language's 
+-- file (false), or all language files (true). If true, players will see the 
+-- provided strings no matter what language they play in. Should probably be true, 
+-- unless you have a specific reason not to.
 ForceAllLanguageFiles = true
---
 
 -- Which group of files from the "Language" directory of the extracted game files to
--- inject the new language entries into. Translators should not change.
+-- inject the new language entries into. Translators should not change. Only used
+-- when 'CreateSeperateLanguageFiles = true'.
 LanguageFilePrefix = "NMS_LOC7_"
 
 --[[
@@ -48,7 +55,7 @@ LanguageFilePrefix = "NMS_LOC7_"
 # Adding Language Entries
 
 The LANGUAGE_TABLE is a key-value table. When asked to display text, the game will
-look up the the key in the player's preferred language file. 
+look up the the key in the player's preferred language file.
 
 Mod Authors: Add key-value pairs. Keys must be unique across the entire game.
 Translators: Make changes to the values, do NOT make changes to keys.
@@ -67,6 +74,10 @@ The link below is for a guide on NMS text formatting. This will allow you to cha
 the color of text or add icons. Format wrappers and icon tags must be in English.
 
   https://www.nexusmods.com/nomanssky/mods/2134
+
+IMPORTANT: Translators, be sure this file is saved in UTF-8 encoding. Any other
+encoding throw errors during the AMUMSS build cycle due to a mismatch with the game
+files.
 
 --]]
 
@@ -302,36 +313,57 @@ local function buildForLanguage(lang)
 end
 
 -- build pak name
-ModName = ModName.."_Lang_"..LanguageName
+local pakName = ModName.."_Lang_"..LanguageName
 if Author ~= TranslationAuthor then
-  ModName = ModName.."_"..TranslationAuthor
+  pakName = ModName.."_"..TranslationAuthor
 end
 
 -- actual AMUMSS instructions
 NMS_MOD_DEFINITION_CONTAINER = {
 
-["MOD_FILENAME"]				= Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
+["MOD_FILENAME"]				= Author.."_"..pakName.."_"..GameVersion.."_"..ModVersion..".pak",
 ["MOD_DESCRIPTION"]			= BaseDescription,
 ["MOD_AUTHOR"]					= Author,
 ["NMS_VERSION"]					= GameVersion,
+["MODIFICATIONS"] = {{ ["MBIN_CHANGE_TABLE"] = {} }}
 
-["MODIFICATIONS"]	= {
-{["MBIN_CHANGE_TABLE"] = {
+}
 
-  -- empty on purpose
+local Ref
+if CreateSeperateLanguageFiles == true then
+  NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"] = {}
+  Ref = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
 
-}}}}
+  local modRef = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+  modRef[#modRef + 1] = {
+    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+    ["EXML_CHANGE_TABLE"] = {
+        {
+          ["PRECEDING_KEY_WORDS"] = {"LocTableList"},
+          ["LINE_OFFSET"] = "+18",
+          ["ADD"] = [[
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="]]..Author.."_"..ModName..[[" />
+    </Property>]]
+        }
+    }
+  }
+else
+  Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+end
 
-local Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
-
-local function addChangeTable(lang)
+local function langFilenameSuffix(lang)
   local langFilename
   if LANGUAGE_FILENAME_TABLE[lang] ~= nil then
     langFilename = LANGUAGE_FILENAME_TABLE[lang]
   else
     langFilename = string.upper(lang)
   end
+  return langFilename
+end
 
+local function addChangeTable(lang)
+  local langFilename = langFilenameSuffix(lang)
   Ref[#Ref + 1] = {
     ["MBIN_FILE_SOURCE"] = "LANGUAGE\\"..LanguageFilePrefix..langFilename..".MBIN",
 	  ["EXML_CHANGE_TABLE"] = {
@@ -344,10 +376,28 @@ local function addChangeTable(lang)
   }
 end
 
-if ForceAllLanguageFiles == true then
+local function createLanguageFile(lang)
+  local langFilename = langFilenameSuffix(lang)
+  Ref[#Ref + 1] = {
+    ["FILE_DESTINATION"] = "LANGUAGE\\"..Author.."_"..ModName.."_"..langFilename..".EXML",
+    ["FILE_CONTENT"] = [[<Data template="TkLocalisationTable">
+  <Property name="Table">
+]]..buildForLanguage(lang)..[[
+  </Property>
+</Data>]]
+  }
+end
+
+if CreateSeperateLanguageFiles == true then
   for i = 1, #LANGUAGE_NAMES do
-    addChangeTable(LANGUAGE_NAMES[i])
+    createLanguageFile(LANGUAGE_NAMES[i])
   end
 else
-  addChangeTable(LanguageName)
+  if ForceAllLanguageFiles == true then
+    for i = 1, #LANGUAGE_NAMES do
+      addChangeTable(LANGUAGE_NAMES[i])
+    end
+  else
+    addChangeTable(LanguageName)
+  end
 end
