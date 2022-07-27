@@ -137,8 +137,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 local vehicleChanges = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 for i = 1, #ExoCraftsNewValues do
-	print(vehicleChanges[i][1])
-
 	if (ExoCraftsNewValues[i]["ID"] == "SUBMARINE") then
 		vehicleChanges[#vehicleChanges + 1] = {
 			["SPECIAL_KEY_WORDS"] = {"Name", ExoCraftsNewValues[i]["ID"]},

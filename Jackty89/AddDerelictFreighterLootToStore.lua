@@ -26,7 +26,7 @@ function CreateMapShopEntry(NewId)
         <Property value="NMSString0x10.xml">
             <Property name="Value" value="]]..NewId..[[" />
         </Property>
-	]]
+    ]]
 end
 
 StarMapShopEntry = ""

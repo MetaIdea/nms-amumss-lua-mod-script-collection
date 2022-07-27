@@ -10,10 +10,10 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_DESCRIPTION"]			= Description,
     ["MOD_AUTHOR"]				= Author,
     ["MODIFICATIONS"] 			=
-	{
-		{
+    {
+        {
             ["MBIN_CHANGE_TABLE"] 	=
-			{
+            {
                 {
                     ["MBIN_FILE_SOURCE"] 	= InventoryTablePath,
                     ["EXML_CHANGE_TABLE"] 	=
@@ -39,6 +39,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 }
             }
-		}
-	}
+        }
+    }
 }
