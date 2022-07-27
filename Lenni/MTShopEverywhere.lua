@@ -27,15 +27,14 @@ BLDGICON = "TEXTURES/UI/FRONTEND/ICONS/WIKI/BASE4.DDS"
 
 BUILDABLE_OBJECT_TABLE =
 {
-	{ ["ID_NAME"]="SHOPWEAPON", 	["P_NAME"]="SHOPWEAPON", 	    	["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/", 		["GROUP_NAME"]="PLANET_TECH", ["SUBGROUP_NAME"]="PLANETPORTABLE", ["OFFSET"]="0", ["ICON"]=BLDGICON },
+	{ ["ID_NAME"]="SHOPWEAPON", 	["P_NAME"]="SHOPWEAPON", 	    	["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/", 		["GROUP_NAME"]="PLANET_TECH", ["SUBGROUP_NAME"]="PLANETPORTABLE", ["ICON"]=BLDGICON },
 }
 
-function GetBaseBuildingObject(ID_NAME, P_NAME, PATH, OFFSET, GROUP_NAME, SUBGROUP_NAME)
+function GetBaseBuildingObject(ID_NAME, P_NAME, PATH, GROUP_NAME, SUBGROUP_NAME)
 BASEBUILDINGOBJECTSTABLE_ADDING =
 [[
     <Property value="GcBaseBuildingEntry.xml">
 	  <Property name="ID" value="]].. ID_NAME ..[[" />
-      <Property name="HasProduct" value="True" />
       <Property name="IsTemporary" value="False" />
       <Property name="IsFromModFolder" value="True" />
       <Property name="Style" value="GcBaseBuildingPartStyle.xml">
@@ -49,7 +48,6 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       </Property>
       <Property name="IsPlaceable" value="True" />
       <Property name="IsDecoration" value="False" />
-      <Property name="PlacementNormalOffset" value="]].. OFFSET ..[[" />
       <Property name="Biome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
       </Property>
@@ -65,9 +63,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="PlanetBaseLimit" value="0" />
       <Property name="FreighterBaseLimit" value="0" />
       <Property name="CheckPlaceholderCollision" value="False" />
-      <Property name="EnableCollision" value="True" />
-      <Property name="OptionalPhysics" value="False" />
-      <Property name="CanPlaceOnItself" value="False" />
+      <Property name="CheckPlayerCollision" value="True" />
       <Property name="CanRotate3D" value="False" />
       <Property name="CanScale" value="False" />
       <Property name="Groups">
@@ -87,9 +83,13 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="CanPickUp" value="False" />
       <Property name="ShowInBuildMenu" value="True" />
       <Property name="CompositePartObjectIDs" />
+      <Property name="FamilyIDs" />
+      <Property name="BuildEffectAccelerator" value="1" />
       <Property name="RemovesAttachedDecoration" value="True" />
+      <Property name="RemovesWhenUnsnapped" value="False" />
       <Property name="EditsTerrain" value="False" />
       <Property name="BaseTerrainEditShape" value="Cube" />
+      <Property name="MinimumDeleteDistance" value="1" />
       <Property name="IsSealed" value="False" />
       <Property name="CloseMenuAfterBuild" value="False" />
       <Property name="LinkGridData" value="GcBaseLinkGridData.xml">
@@ -111,6 +111,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
         <Property name="DependentConnections" />
       </Property>
       <Property name="GhostsCountOverride" value="0" />
+      <Property name="ShowGhosts" value="True" />
       <Property name="SnappingDistanceOverride" value="0" />
       <Property name="RegionSpawnLOD" value="1" />
       <Property name="NPCInteractionScene" value="TkModelResource.xml">
@@ -502,7 +503,7 @@ PLACEMENTDATA_ENTITY_ALL = {}
 ADD_FILES_TABLE = {}
 
 for i=1,#BUILDABLE_OBJECT_TABLE,1 do
-	table.insert(BASEBUILDINGOBJECTSTABLE_ADDING_ALL,GetBaseBuildingObject(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"], BUILDABLE_OBJECT_TABLE[i]["OFFSET"],BUILDABLE_OBJECT_TABLE[i]["GROUP_NAME"], BUILDABLE_OBJECT_TABLE[i]["SUBGROUP_NAME"]))
+	table.insert(BASEBUILDINGOBJECTSTABLE_ADDING_ALL,GetBaseBuildingObject(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"],BUILDABLE_OBJECT_TABLE[i]["GROUP_NAME"], BUILDABLE_OBJECT_TABLE[i]["SUBGROUP_NAME"]))
 	table.insert(BASEBUILDINGPARTSTABLE_ADDING_ALL,GetBaseBuildingPart(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"]))
 	table.insert(PRODUCT_ADDING_ALL,GetProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["ICON"]))
 	table.insert(AUTOPARTDATA_ADDING_ALL,GetAutoPartData(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
@@ -518,7 +519,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
 ["MOD_FILENAME"] 			=	"MTShopEverywhere.pak",
 ["MOD_AUTHOR"]				=	"Lenni",
 ["Contributors"]			=	"Babscoole, ApexFatality, WinderTP",
-["NMS_VERSION"]				=	"3.93",
+["NMS_VERSION"]				=	"3.97",
 ["ADD_FILES"]				=	ADD_FILES_TABLE,
 ["MODIFICATIONS"]			=
 	{
