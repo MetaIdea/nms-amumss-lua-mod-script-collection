@@ -2,7 +2,7 @@
 Author = "alchemist"
 ModName = "RefinerInputsExpanded_Backpack"
 BaseDescription = "Survive."
-GameVersion = "3-73"
+GameVersion = "3-6x"
 ModVersion = "1"
 
 -- must be 1-3 or game will crash

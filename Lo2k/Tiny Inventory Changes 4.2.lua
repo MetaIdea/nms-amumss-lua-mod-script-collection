@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Tiny Inventory Changes 4.1.pak", 
+["MOD_FILENAME"] 			= "Tiny Inventory Changes 4.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.88",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.97",
 ["MOD_DESCRIPTION"]			= "This mods changes orientation and lighting of inventory 3D models",
 ["MODIFICATIONS"] 			= 
 	{
