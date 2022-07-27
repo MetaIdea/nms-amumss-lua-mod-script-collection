@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 2.9 - Standard.pak", 
+["MOD_FILENAME"] 			= "Small Panels 3.0 - Essential.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.93",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.97",
 ["MOD_DESCRIPTION"]			= "This mod reduces the size of most game panels",
 ["MODIFICATIONS"] 			= 
 	{
@@ -321,6 +322,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PositionX",	"0"},		-- Original "20"   
 							}
 						},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "BUTTON1",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "BUTTON3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+
 					}
 				},
 				--COMPONENTS
@@ -480,14 +490,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\POPUPTITLEWITHSUBTITLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{ -- ITEM TOP BAR WIDTH
+						{
 							["SPECIAL_KEY_WORDS"] = {"Width",	"650"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Width",	"520"},		-- Original "650"					
 							}
 						},
-						{  -- ITEM AMOUNT at the right of TOP BAR
+						{
 							["SPECIAL_KEY_WORDS"] = {"PositionX",	"642"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
