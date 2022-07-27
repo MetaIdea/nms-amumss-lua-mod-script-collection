@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkCreatureTailComponentData.xml",},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",							
+							["ADD_OPTION"] = "ADDafterSECTION",						
 							["ADD"] = 
 [[
     <Property value="GcInteractionComponentData.xml">
@@ -292,21 +292,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",								
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Mass",		"3"}, 	-- Original "1"
-								{"Friction",		"0"}, 	-- Original "0.5"
-								{"AngularDamping",	"0.8"}, -- Original "0.2"
-								{"Gravity",		"90"}, 	-- Original "20"								
+								{"Mass",           "3"},   -- Original "1"
+								{"Friction",       "0"},   -- Original "0.5"
+								{"AngularDamping", "0.8"}, -- Original "0.2"
+								{"Gravity",        "90"},  -- Original "20"								
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},							
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Gravity",	"90"}, -- Original "20"								
+								{"Gravity", "90"}, -- Original "20"								
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},
+							["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
 							["REPLACE_TYPE"] = "RAW",							
 							["VALUE_CHANGE_TABLE"] = 
 							{
@@ -317,7 +317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},
+							["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
 							["LINE_OFFSET"] = "+3",
 							["ADD"] = 
 [[
@@ -336,12 +336,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 ]]
 						},
-						{							
-							["VALUE_CHANGE_TABLE"] = 
-							{
-								{"DeathEffect",	 "FIENDDEATH"}, -- Original ""								
-							}
-						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
 							["REPLACE_TYPE"] = "RAW",							
@@ -351,6 +345,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 									[[<Property name="ReplacementImpacts" />]],
 									[[<Property name="ReplacementImpacts">]]
 								},						
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},						
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"DeathEffect", "FIENDDEATH"}, -- Original ""								
 							}
 						},
 						{
@@ -370,11 +371,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"DiscoveryUIOffset",},
-							["LINE_OFFSET"] = "+5",
+							["PRECEDING_KEY_WORDS"] = {"Components",},
+							["ADD_OPTION"] = "ADDafterLINE",
 							["ADD"] = 
 [[
-    </Property>
     <Property value="GcShootableComponentData.xml">
       <Property name="Health" value="300000" />
       <Property name="AutoAimTarget" value="False" />
@@ -404,7 +404,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="RequiredTech" value="" />
       <Property name="DamageMultiplier" value="FIEND" />
       <Property name="IsPiercable" value="False" />
-      <Property name="IsAffectedByPiercing" value="False" />	  
+      <Property name="IsAffectedByPiercing" value="False" />
+    </Property>	  
 ]]
 						},						
 					}
