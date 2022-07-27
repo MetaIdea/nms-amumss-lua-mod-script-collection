@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Boundary 5k"
 BaseDescription = "Base boundary and wire length extensions"
-GameVersion = "389"
+GameVersion = "397"
 ModVersion = "a"
 FileSource1 = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"MaxRadiusForSpaceBases", MaxRadiusForSpaceBases},
 		{"BuildingPlacementMaxConnectionLength", BuildingPlacementMaxConnectionLength},
 		{"StartCrashSiteMinDistance", StartCrashMin},
-		{"StartCrashSiteMaaxDistance", StartCrashMax},
+		{"StartCrashSiteMaxDistance", StartCrashMax},
 		{"StartShelterMinDistance", StartShelterMin},
 		{"StartShelterMaxDistance", StartShelterMax},
 	}},
