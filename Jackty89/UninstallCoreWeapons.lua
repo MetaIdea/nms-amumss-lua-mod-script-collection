@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{
 			["MBIN_CHANGE_TABLE"] 	=
 			{
-                {
+				{
 					["MBIN_FILE_SOURCE"] 	= GCTechnologyTablePath,
 					["EXML_CHANGE_TABLE"] 	=
 					{
@@ -24,16 +24,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Core",	"False"}
 							}
 						},
-                        {
+						{
 							["SPECIAL_KEY_WORDS"] = {"ID","LASER"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Core",	"False"}
 							}
 						}
-                    }
+					}
 				}
-            }
-        }
-    }
+			}
+		}
+	}
 }

@@ -615,8 +615,8 @@ function GetStatLevelData(DeployBase, UpgradeNumber)
     local StatLevelData = ""
 
     local StatTypes = ""
-    local NoStatsMin = ""
-    local NoStatsMax = ""
+    local NoStatsMin = 0
+    local NoStatsMax = 0
 
     if DeployBase=="HYP" then
         if UpgradeNumber == 4 then
