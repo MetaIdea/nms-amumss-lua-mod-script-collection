@@ -1,6 +1,6 @@
 local modfilename = "_AlmostPerfectFlight"
 local lua_author  = "Silent"
-local lua_version = "v1.5"
+local lua_version = "v1.6"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
 local description = "Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics."
@@ -160,7 +160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LandingCurveHeavy",},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Curve",           "ReallySlowOut"}, --"ReallySlowOut"
+                                {"Curve",           "EaseOutSine"}, --"ReallySlowOut"
                             }
                         },
 
@@ -281,94 +281,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TurnBrakeMax",                           _turnBMult},
                             }
                         },
-
-                        --|----------------------------------------------------------------------------------------
-                        --| Control Bonus (C)
-                        --|----------------------------------------------------------------------------------------
-
-                        --{
-                        --  ["PRECEDING_KEY_WORDS"] = "ControlBonusC",
-                        --  ["MATH_OPERATION"]      = "*",
-                        --  ["REPLACE_TYPE"]        = "ALL",
-                        --  ["INTEGER_TO_FLOAT"]    = "FORCE",
-                        --  ["VALUE_CHANGE_TABLE"]  =
-                        --  {
-                        --      {"BoostMaxSpeedMax",                         _boostMult},
-                        --      {"BoostMaxSpeedMin",                         _boostMult},
-                        --      {"DirectionBrakeMin",                        _brakeMult},
-                        --      {"DirectionBrakeMax",                        _brakeMult},
-                        --      {"MaxSpeedMax",                              _speedMult},
-                        --      {"MaxSpeedMin",                              _speedMult},
-                        --      {"ThrustForceMax",                           _thrstMult},
-                        --      {"ThrustForceMin",                           _thrstMult},
-                        --  }
-                        --},
-
-                        --|----------------------------------------------------------------------------------------
-                        --| Control Bonus (B)
-                        --|----------------------------------------------------------------------------------------
-
-                        --{
-                        --  ["PRECEDING_KEY_WORDS"] = "ControlBonusB",
-                        --  ["MATH_OPERATION"]      = "*",
-                        --  ["REPLACE_TYPE"]        = "ALL",
-                        --  ["INTEGER_TO_FLOAT"]    = "FORCE",
-                        --  ["VALUE_CHANGE_TABLE"]  =
-                        --  {
-                        --      {"BoostMaxSpeedMax",                         _boostMult},
-                        --      {"BoostMaxSpeedMin",                         _boostMult},
-                        --      {"DirectionBrakeMin",                        _brakeMult},
-                        --      {"DirectionBrakeMax",                        _brakeMult},
-                        --      {"MaxSpeedMax",                              _speedMult},
-                        --      {"MaxSpeedMin",                              _speedMult},
-                        --      {"ThrustForceMax",                           _thrstMult},
-                        --      {"ThrustForceMin",                           _thrstMult}
-                        --  }
-                        --},
-
-                        --|----------------------------------------------------------------------------------------
-                        --| Control Bonus (A)
-                        --|----------------------------------------------------------------------------------------
-
-                        --{
-                        --  ["PRECEDING_KEY_WORDS"] = "ControlBonusA",
-                        --  ["MATH_OPERATION"]      = "*",
-                        --  ["REPLACE_TYPE"]        = "ALL",
-                        --  ["INTEGER_TO_FLOAT"]    = "FORCE",
-                        --  ["VALUE_CHANGE_TABLE"]  =
-                        --  {
-                        --      {"BoostMaxSpeedMax",                         _boostMult},
-                        --      {"BoostMaxSpeedMin",                         _boostMult},
-                        --      {"DirectionBrakeMin",                        _brakeMult},
-                        --      {"DirectionBrakeMax",                        _brakeMult},
-                        --      {"MaxSpeedMax",                              _speedMult},
-                        --      {"MaxSpeedMin",                              _speedMult},
-                        --      {"ThrustForceMax",                           _thrstMult},
-                        --      {"ThrustForceMin",                           _thrstMult}
-                        --  }
-                        --},
-
-                        --|----------------------------------------------------------------------------------------
-                        --| Control Bonus (S)
-                        --|----------------------------------------------------------------------------------------
-
-                        --{
-                        --  ["PRECEDING_KEY_WORDS"] = "ControlBonusS",
-                        --  ["MATH_OPERATION"]      = "*",
-                        --  ["REPLACE_TYPE"]        = "ALL",
-                        --  ["INTEGER_TO_FLOAT"]    = "FORCE",
-                        --  ["VALUE_CHANGE_TABLE"]  =
-                        --  {
-                        --      {"BoostMaxSpeedMax",                         _boostMult},
-                        --      {"BoostMaxSpeedMin",                         _boostMult},
-                        --      {"DirectionBrakeMin",                        _brakeMult},
-                        --      {"DirectionBrakeMax",                        _brakeMult},
-                        --      {"MaxSpeedMax",                              _speedMult},
-                        --      {"MaxSpeedMin",                              _speedMult},
-                        --      {"ThrustForceMax",                           _thrstMult},
-                        --      {"ThrustForceMin",                           _thrstMult}
-                        --  }
-                        --}
                     }
                 },
             }

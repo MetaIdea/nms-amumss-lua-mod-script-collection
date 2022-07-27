@@ -19627,7 +19627,7 @@ NewNightSkyColors = [[
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_SkyColors_SubtleFog_v1.0s.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_SkyColors_NoSubtleFog_v1.01.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             
@@ -19640,38 +19640,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "GCSKYGLOBALS.GLOBALS.MBIN",
 					["EXML_CHANGE_TABLE"] 	=
 					{
-						{
-						["PRECEDING_KEY_WORDS"] = { "PlanetProperties", "PlanetFog" }, 		--SUBTLE FOG--
-						["INTEGER_TO_FLOAT"]    = "FORCE",
-						["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{ "FogStrength", 				"0.15" }, --Original "0.04" --tried 0.2
-								{ "FogMax", 					"0.7" }, --Original "1" --tried 0.9
-								{ "FogColourStrength", 			"10"   }, --Original "10"
-								--{ "FogColourMax", 				"1"   }, --Original "1"
-								{ "HeightFogStrength", 			"0.3" }, --Original "0.08"
-								{ "HeightFogFadeOutStrength", 	"0.1" }, --Original "0.25"
-								--{ "HeightFogOffset", 			"0"   }, --Original "0"
-								{ "HeightFogMax", 				"0.6" }, --Original "0.8"
-								{ "FogHeight", 					"128"   }, --Original "128" --too low = jarring in flight
-							}
-						},
-						{
-						["PRECEDING_KEY_WORDS"] = { "PlanetProperties", "PlanetFlightFog" },
-						["INTEGER_TO_FLOAT"]    = "FORCE",
-						["VALUE_CHANGE_TABLE"] 	= 
-							{	
-								{ "FogStrength", 				"0.08" }, --Original "0.04" --tried 0.2
-								{ "FogMax", 					"0.7" }, --Original "1" --tried 0.9
-								{ "FogColourStrength", 			"10"   }, --Original "10"
-								--{ "FogColourMax", 				"1"   }, --Original "1"
-								{ "HeightFogStrength", 			"0.15" }, --Original "0.08"
-								{ "HeightFogFadeOutStrength", 	"0.15" }, --Original "0.25"
-								--{ "HeightFogOffset", 			"0"   }, --Original "0"
-								{ "HeightFogMax", 				"0.7" }, --Original "0.8"
-								{ "FogHeight", 					"64"   }, --Original "128" --too low = jarring in flight
-							}
-						},																 --/SUBTLE FOG--
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",

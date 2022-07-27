@@ -1,6 +1,6 @@
 --[[
 
-There are 14 sections in this script:
+There are 13 sections in this script:
 
 0. Global variables		  			 	  	- i.e. quick adjustments
 1. Large lush [changes]       -	(BIOMES 1)	- i.e. lush mid/full, for large scale forests
@@ -14,9 +14,8 @@ There are 14 sections in this script:
 9. Buggy biomes 		      -	(BIOMES 9)	- i.e. full toxic/radio (to fix crashes with multi-biome mod)
 10. Low density lava/tentacle -	(BIOMES 10) - i.e. lava valcanoes (to fix valcanoes/tentacles everywhere)
 11. Just crystals 		      -	(BIOMES 11)	- i.e. "E3" crystals
-12. Global misc terrain/LOD/fade time stuff - only section that affects global .mbins
-13. Patchscale/regionscale density 		  	- i.e. balance forests vs. empty areas
-14. Fast start								- i.e. remove intro logo
+12. Patchscale/regionscale density 		  	- i.e. balance forests vs. empty areas
+13. Fast start								- i.e. remove intro logo
 
 Biomes 1-3 subsections: (old method = giant biomes, less scale variation, longer time)
 a. Scale changes
@@ -44,28 +43,28 @@ InsaneRuffles code = "----IR:"
 DestroyedByPlayerShip = "True"
 
 --Only in biomes 1-3:
-ScaleHugeMultiplier = 9
-ScaleLargeMultiplier = 4 		--misc. outlier values
-ScaleMediumMultiplier = 2.2 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
+ScaleHugeMultiplier = 5
+ScaleLargeMultiplier = 3 		--misc. outlier values
+ScaleMediumMultiplier = 2 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
 ScaleSmallestMultiplier = 1.5
 
 --Only in biomes 4-10:
-ScaleHuge = 70					--All scale replacement = balanced by patchedgescaling:
-ScaleExtraLarge = 38
-ScaleLarge = 19
-ScaleMedium = 11
-ScaleSmall = 8
-ScaleSmallest = 2.3
+ScaleHuge = 42					--All scale replacement = balanced by patchedgescaling:
+ScaleExtraLarge = 23
+ScaleLarge = 11
+ScaleMedium = 8
+ScaleSmall = 6
+ScaleSmallest = 2
 
-PatchEdgeScalingLarge = 0.75	--Changing these will heavily impact flora/object sizes
-PatchEdgeScalingMedium = 0.74
-PatchEdgeScalingSmall = 0.7			
+PatchEdgeScalingLarge = 0.74	--Changing these will heavily impact flora/object sizes
+PatchEdgeScalingMedium = 0.73
+PatchEdgeScalingSmall = 0.69		
 
 --In all:
-DensityHighestMultiplier = 1.4
-DensityMediumMultiplier = 1 	--Caution: raising this will break some planets
+DensityHighestMultiplier = 1.3
+DensityMediumMultiplier = 0.95 	--Caution: raising this will break some planets
 DensityLowMultiplier = 0.95
-DensityLowestMultiplier = 0.9	--Caution: raising this will break some planets
+DensityLowestMultiplier = 0.85	--Caution: raising this will break some planets
 
 MaxAngleGrass = 90
 MaxAngleLarge = 80 			--i.e. grass, cactus, rocks
@@ -84,21 +83,12 @@ PatchsizeRegionScaleMultiplierJustForest = 1.1
 RadiusMultiplier = 3			--objects draw distance multiplier (limited by engine's hard-limit)
 RadiusMultiplierLow = 2 					--***float = errors
 GrassRadiusMultiplier = 1.5	--GRASS draw distance multiplier
-LodDistanceMultiplierDistantObjects = 2 	--***i.e. big rings/huge objects
-LodDistanceMultiplierLandmarks = 2 			--***i.e. trees/biome plants (unchanged rn)
-LodDistanceMultiplierLow = 1.5 				--***i.e. high detailobjects biomes, like toxic
+LodDistanceMultiplierDistantObjects = 1.5 	--***i.e. big rings/huge objects
+LodDistanceMultiplierLandmarks = 1.5 			--***i.e. trees/biome plants (unchanged rn)
+LodDistanceMultiplierLow = 1.25 				--***i.e. high detailobjects biomes, like toxic
 LodDistanceMultiplierLowest = 1.1 			--***i.e. HQ biomes that already have high LODD
 LodDistanceMultiplierHQUltraForest = 0.1    --***just hq forest
 CoverageMultiplier = 1			--object placement coverage multiplier (object density) --***needed to work
-
---GCGRAPHICSGLOBALS.GLOBAL
-ForceUncachedTerrain = "True"	--fix slow terrain textures loading (default = false)
-ShadowLengthMultiplier = 3	--shadows draw distance multiplier --***needed to work
-
---GCENVIRONMENTGLOBALS.GLOBAL
-LODAdjustMultiplier = 2		--inconsistent results
-RegionLODRadiusAdd = 3			--increases draw distance hard-limit, value above '3' caused crash
-PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --Code originally by InsaneRuffles in section above, modified by Lasagna -------------------------------------------------------------------------
@@ -106,7 +96,7 @@ PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Maxima_v3.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Minima_v3.3.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -125,17 +115,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\ULTRAEXTERNALOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSLOW.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHULTRAOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEOBJECTSDEADULTRA.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -836,23 +822,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR1.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR1ULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR2.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR2ULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR3.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR3ULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUVWPLANTBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTSULTRA.MBIN",
 						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\MOUNTAIN\MOUNTAINROCKS.MBIN",
 						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FLYTRAPPLANT.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\PLANTLARGECROP.MBIN",
@@ -884,7 +863,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\LOW.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\MID.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULLULTRA.MBIN",
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCRYSTALS.MBIN",--creates giant crystals, obstructing all water
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCUCUMBERLIGHTS.MBIN", --v2.0: removed
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERCURVECORAL.MBIN",--creates giant coral, obstructing all water
@@ -1594,17 +1572,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENINFESTEDOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENINFESTEDOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENROCKYOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEADULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\FROZENDEADOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\FROZENDEADOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYWEIRDOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENROCKYWEIRDOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\BEACH\FULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULLSAFE.MBIN",
@@ -1634,17 +1606,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\TOXICWILD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\WEIRDWILD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEALIENOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEALIENOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDSHIELDTREEOBJECTS.MBIN", --Large yellow/red oval trees
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDSHIELDTREEOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSMOONOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSMOONOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICINFESTEDOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICINFESTEDOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICSPORESOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICSPORESOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOUROBJECTSDEADULTRA.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -2350,17 +2316,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTS.MBIN",--
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULL.MBIN",--
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENOBJECTSDEADULTRA.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -2672,34 +2633,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENCORALOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHIVESOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENHIVESOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSMID.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\FROZENDEADWEIRDOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\FROZENDEADWEIRDOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHOBJECTSMID.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMAOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBOBJECTS.MBIN",
 						
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSLOW.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEOBJECTSMID.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKEPOTATOOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDALIENOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDALIENOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSMID.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDOBJECTSLOW.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESOBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICOBJECTSLOW.MBIN",
@@ -2712,7 +2666,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSMID.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQOBJECTSMID.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWOBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWOBJECTSULTRA.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -3343,10 +3296,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTS.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTSULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULLULTRA.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -3683,23 +3634,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALOBJECTS.MBIN", 		--Huge disappearing swirl objects
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALOBJECTSULTRA.MBIN", --Huge disappearing swirl objects
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSOBJECTSDEADULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEOBJECTSDEADULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONOBJECTSDEADULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HOUDINIPROPS\HOUDINIPROPSOBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSOBJECTSDEADULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTOBJECTSDEADULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEADULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEADULTRA.MBIN"
 					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -4358,7 +4301,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULLULTRA.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= 
@@ -4799,207 +4741,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
-				{
---------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------
--- = = = = = = = = = = = = = = = = = 12. GLOBAL MISC TERRAIN/LOD/FADE TIME STUFF = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
---------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------
---This includes: uncached terrain, shadows, lod adjust, region, planet LOD, and fade time changes
-				
-					["MBIN_FILE_SOURCE"] 	= 
-					{
-						"GCGRAPHICSGLOBALS.GLOBAL.MBIN"
-					},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"ForceUncachedTerrain",	ForceUncachedTerrain},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",   
-							["MATH_OPERATION"] 		= "*",    
-							["REPLACE_TYPE"] 		= "ALL",    
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"ShadowLength",			ShadowLengthMultiplier},
-								--{"ShadowLengthShip",		ShadowLengthMultiplier},
-								{"ShadowLengthSpace",		ShadowLengthMultiplier},
-								{"ShadowLengthStation",		ShadowLengthMultiplier},
-								{"ShadowLengthCameraView",	ShadowLengthMultiplier},
-							}
-						},
-					} 
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= 
-					{
-						"GCENVIRONMENTGLOBALS.GLOBAL.MBIN"		
-					},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",   
-							["MATH_OPERATION"] 		= "*",    
-							["REPLACE_TYPE"] 		= "ALL",    
-							["LINE_OFFSET"] 		= "+1",    
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LODAdjust",	LODAdjustMultiplier} 
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LODAdjust",	LODAdjustMultiplier}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LODAdjust",	LODAdjustMultiplier}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LODAdjust",	LODAdjustMultiplier}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LODAdjust",	LODAdjustMultiplier}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",   
-							["MATH_OPERATION"] 		= "+",    
-							["REPLACE_TYPE"] 		= "ALL",    
-							["LINE_OFFSET"] 		= "+1",    
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"RegionLODRadius",	0}	--distance radius of finest details, increase causes flickering on some planets
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "+",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"RegionLODRadius",	RegionLODRadiusAdd}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "+",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"RegionLODRadius",	RegionLODRadiusAdd}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "+",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"RegionLODRadius",	RegionLODRadiusAdd}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "+",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"RegionLODRadius",	RegionLODRadiusAdd}
-							}
-						},						
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "+",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+6",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"RegionLODRadius",	RegionLODRadiusAdd}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "",   
-							["MATH_OPERATION"] 		= "*",    
-							["REPLACE_TYPE"] 		= "ALL",    
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PlanetObjectSwitch",			PlanetLODMultiplier},
-								{"PlanetLodSwitch0",			PlanetLODMultiplier},
-								{"PlanetLodSwitch0Elevation",	PlanetLODMultiplier},
-								{"PlanetLodSwitch1",			PlanetLODMultiplier},
-								{"PlanetLodSwitch2",			PlanetLODMultiplier},
-								{"PlanetLodSwitch3",			PlanetLODMultiplier}
-								--{"PlanetFlipDistance",		PlanetLODMultiplier},
-								--{"PlanetEffectEndDistance",	PlanetLODMultiplier}
-							}
-						},
---------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)-----------------------
---------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["INTEGER_TO_FLOAT"]	= "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",  
-							["VALUE_CHANGE_TABLE"]	=
-							{
-								{"TerrainFadeTime",						  "0.7"},
-								{"TerrainFadeTimeInShip",				  "0.9"},
-								--{"CreatureFadeTime",					  "0.9"}, --caused hitching
-								{"FloraFadeTime",						  "0.5"}, --less causes hitching
-								{"FloraFadeTimeMax",				      "0.9"}, --less causes hitching
-							}
-						},
-					} 
-				}
-			}
-		},
-		{
 			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
---= = = = = = = = = = = = = = = = = = = 13. PATCH SCALE/REGION SCALE/SPAWN DENSITY CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--= = = = = = = = = = = = = = = = = = = 12. PATCH SCALE/REGION SCALE/SPAWN DENSITY CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --Modifies placement/regions on a planet, i.e. high density areas & expansive open areas
@@ -5161,7 +4909,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
---= = = = = = = = = = = = = = = = = = = = = 14. FAST START CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--= = = = = = = = = = = = = = = = = = = = = 13. FAST START CHANGES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --makes boot load time faster, doesn't remove mod warning

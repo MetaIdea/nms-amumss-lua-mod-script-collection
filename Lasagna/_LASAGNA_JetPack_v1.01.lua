@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_JetPack_v1.0g.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_JetPack_v1.01.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             
