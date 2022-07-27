@@ -1008,22 +1008,22 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = "_Exo's Abyss.pak",
-    ["MOD_AUTHOR"]      = "Exosolar",
-    ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",	
-    ["MOD_MAINTENANCE"] = "Babscoole",
-    ["NMS_VERSION"]     = "3.95",
-    ["MODIFICATIONS"]   =
-    {
-        {
-            ["MBIN_CHANGE_TABLE"] =
-            {
-                {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\WATERCOLOURS.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {						
-                    }
-                },
+["MOD_FILENAME"]    = "_Exo's Abyss.pak",
+["MOD_AUTHOR"]      = "Exosolar",
+["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",	
+["MOD_MAINTENANCE"] = "Babscoole",
+["NMS_VERSION"]     = "3.97",
+["MODIFICATIONS"]   =
+	{
+		{
+			["MBIN_CHANGE_TABLE"] =
+			{
+				{
+					["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\WATERCOLOURS.MBIN",
+					["EXML_CHANGE_TABLE"] =
+					{						
+					}
+				},
 				{
 					["MBIN_FILE_SOURCE"] = "GCWATERGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] = 
@@ -1032,16 +1032,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"WaveHeight",		   	"0.25"},  
-								{"WaveFrequency",		"0.08"}, 
-								{"WaterStrength",		"0.0065"},  
-								{"WaterColourStrength",	"0.0095"}, 
-								{"WaterMultiplyMax",	"0.85"},
-								{"FoamFadeHeight",		"0"},  
-								{"Foam1Scale",			"0.000000024"}, 
-								{"Foam1Speed",		   	"0.0000007"},  
-								{"Foam2Scale",			"0.000000012"}, 
-								{"Foam2Speed",			"0.0002"},								
+								{"WaveHeight",          "0.25"},  
+								{"WaveFrequency",       "0.08"}, 
+								{"WaterStrength",       "0.0065"},  
+								{"WaterColourStrength", "0.0095"}, 
+								{"WaterMultiplyMax",    "0.85"},
+								{"FoamFadeHeight",      "0"},  
+								{"Foam1Scale",          "0.000000024"}, 
+								{"Foam1Speed",          "0.0000007"},  
+								{"Foam2Scale",          "0.000000012"}, 
+								{"Foam2Speed",          "0.0002"},								
 							}
 						},
 						{
@@ -1057,7 +1057,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"WaterFogColourFar"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"R", "0.0267"},  
 								{"G", "0.0267"},
@@ -1067,7 +1067,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"WaterColourBase"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"R", "0"},  
 								{"G", "0"},
@@ -1077,7 +1077,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"WaterColourAdd"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"R", "0"},  
 								{"G", "0"},
@@ -1087,7 +1087,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"FoamColour"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"R", "0"},  
 								{"G", "0"},
@@ -1096,9 +1096,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},							
 					} 
 				}				
-            }
-        }
-    }
+			}
+		}
+	}
 }
 
 

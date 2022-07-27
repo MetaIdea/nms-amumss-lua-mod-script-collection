@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] = "_Exo's Guaranteed Freighter Battles.pak",
 ["MOD_AUTHOR"]   = "Exosolar",
 ["LUA_AUTHOR"]   = "Babscoole",
-["NMS_VERSION"]  = "3.95",
+["NMS_VERSION"]  = "3.97",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -16,8 +16,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 
 							{
-                                {"WarpsBetweenBattles", "0"},
-                                {"HoursBetweenBattles", "0"}								
+								{"WarpsBetweenBattles", "0"},
+								{"HoursBetweenBattles", "0"}								
 							}
 						}
 					}

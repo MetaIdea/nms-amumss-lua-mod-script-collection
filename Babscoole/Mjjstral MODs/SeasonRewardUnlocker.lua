@@ -174,32 +174,61 @@ REWARDS_7 = {
 	"RS_S7_S3COMM",
 	"RS_S7_S4COMM",
 	"RS_S7_S5COMM",
-	"RS_S7_S1M1",
-	"RS_S7_S1M2",
-	"RS_S7_S1M3",
-	"RS_S7_S1M4",
-	"RS_S7_S1M5",
-	"RS_S7_S1M6",
-	"RS_S7_S2M1",
-	"RS_S7_S2M2",
-	"RS_S7_S2M3",
-	"RS_S7_S2M4",
-	"RS_S7_S2M5",
-	"RS_S7_S3M1",
-	"RS_S7_S3M2",
-	"RS_S7_S3M3",
-	"RS_S7_S3M4",
-	"RS_S7_S3M5",
-	"RS_S7_S4M1",
-	"RS_S7_S4M2",
-	"RS_S7_S4M3",
-	"RS_S7_S4M4",
-	"RS_S7_S4M5",
-	"RS_S7_S5M1",
-	"RS_S7_S5M2",
-	"RS_S7_S5M3",
-	"RS_S7_S5M4",
-	"RS_S7_S5M5",	
+}
+
+REWARDS_8 = {
+----SEASON 8 REWARDS-------
+	"EXPD_EGG_08",
+	"EXPD_BANNER08",
+	"EXPD_DECAL08",
+	"EXPD_TITLE08",
+	"EXPD_CAPE08",
+	"EXPD_POSTER08C",
+	"EXPD_POSTER08B",
+	"EXPD_POSTER08A",
+	"RS_S8_COMPLETE",
+	"RS_S8_EGG",
+	"RS_S8_PHASE1",
+	"RS_S8_PHASE2",
+	"RS_S8_PHASE3",
+	"RS_S8_PHASE4",
+	"RS_S8_PHASE5",
+	"RS_S8_PARTY",
+	"RS_S8_PARTY1",
+	"RS_S8_PARTY2",
+	"RS_S8_PARTY3",
+	"RS_S8_S1M1",
+	"RS_S8_S1M2",
+	"RS_S8_S1M3",
+	"RS_S8_S1M4",
+	"RS_S8_S1M5",
+	"RS_S8_S1M6",
+	"RS_S8_S1M7",
+	"RS_S8_S2M1",
+	"RS_S8_S2M2",
+	"RS_S8_S2M3",
+	"RS_S8_S2M4",
+	"RS_S8_S2M5",
+	"RS_S8_S2M6",
+	"RS_S8_S2M7",
+	"RS_S8_S3M1",
+	"RS_S8_S3M2",
+	"RS_S8_S3M3",
+	"RS_S8_S3M4",
+	"RS_S8_S3M5",
+	"RS_S8_S3M6",
+	"RS_S8_S3M7",
+	"RS_S8_S4M1",
+	"RS_S8_S4M2",
+	"RS_S8_S4M3",
+	"RS_S8_S4M4",
+	"RS_S8_S4M5",
+	"RS_S8_S4M6",
+	"RS_S8_S5M1",
+	"RS_S8_S5M2",
+	"RS_S8_S5M3",
+	"RS_S8_S5M4",
+	"RS_S8_S5M5",
 }
 
 REWARDS_GVECTOR = {
@@ -218,7 +247,8 @@ QUICK_ACTION_LIST =
 	"S4_REWARDS",
 	"S5_REWARDS",
 	"S6_REWARDS",
-	"S7_REWARDS",	
+	"S7_REWARDS",
+	"S8_REWARDS",		
 	"S1_GV",
 	"S3_NORMANDY",	
 }
@@ -228,51 +258,58 @@ QUICK_ACTION_MENU =
 	["S1_REWARDS"] = 
 	{
 		["TITLE"]  = "Unlock Season 1 Reward",
-		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.1.DDS",
+		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.1.DDS",
 		["ANIM"]   = "Unlock1Reward",
 		["REWARD"] = REWARDS_1
 	},
 	["S2_REWARDS"] = 
 	{
 		["TITLE"]  = "Unlock Season 2 Reward",
-		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.2.DDS",
+		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.2.DDS",
 		["ANIM"]   = "UnlockS2Reward",
 		["REWARD"] = REWARDS_2
 	},
 	["S3_REWARDS"] = 
 	{
 		["TITLE"]  = "Unlock Season 3 Reward",
-		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.3.DDS",
+		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.3.DDS",
 		["ANIM"]   = "UnlockS3Reward",
 		["REWARD"] = REWARDS_3		
 	},
 	["S4_REWARDS"] = 
 	{
 		["TITLE"]  = "Unlock Season 4 Reward",
-		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.4.DDS",
+		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.4.DDS",
 		["ANIM"]   = "UnlockS4Reward",
 		["REWARD"] = REWARDS_4		
 	},
 	["S5_REWARDS"] = 
 	{
 		["TITLE"]  = "Unlock Season 5 Reward",
-		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.5.DDS",
+		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.5.DDS",
 		["ANIM"]   = "UnlockS5Reward",
 		["REWARD"] = REWARDS_5		
 	},
 	["S6_REWARDS"] = 
 	{
 		["TITLE"]  = "Unlock Season 6 Reward",
-		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.6.DDS",
+		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.6.DDS",
 		["ANIM"]   = "UnlockS6Reward",
 		["REWARD"] = REWARDS_6		
 	},
 	["S7_REWARDS"] = 
 	{
 		["TITLE"]  = "Unlock Season 7 Reward",
-		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/BYTEBEAT/BYTEBEAT.7.DDS",
+		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.7.DDS",
 		["ANIM"]   = "UnlockS7Reward",
 		["REWARD"] = REWARDS_7		
+	},
+	["S8_REWARDS"] = 
+	{
+		["TITLE"]  = "Unlock Season 8 Reward",
+		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.8.DDS",
+		["ANIM"]   = "UnlockS8Reward",
+		["REWARD"] = REWARDS_8		
 	},		
 	["S1_GV"] = 
 	{
@@ -400,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "3.95",
+["NMS_VERSION"]     = "3.97",
 ["MODIFICATIONS"]   = 
 	{
 		{

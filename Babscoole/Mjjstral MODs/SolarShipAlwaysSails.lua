@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "SolarShipAlwaysSails.pak",
 ["MOD_AUTHOR"]      = "Mjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "3.95",
+["NMS_VERSION"]     = "3.97",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -18,7 +18,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Filename", ""},
-
 							}
 						}
 					}

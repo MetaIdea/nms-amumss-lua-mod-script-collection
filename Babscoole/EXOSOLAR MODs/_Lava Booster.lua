@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Lava Booster.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.95",
+["NMS_VERSION"]   = "3.97",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",			
 							["VALUE_CHANGE_TABLE"] = 					
 							{
-								{ "Lava", 	"1000001" }, 
+								{ "Lava", "1000001" }, 
 							}
 						}
 					}

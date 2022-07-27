@@ -1,11 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "_Exosolar's Invisible Powered Wires.pak",
-	["MOD_AUTHOR"]      = "Exosolar",
-	["LUA_AUTHOR"]      = "Babscoole",	
-	["MOD_DESCRIPTION"]	= "Makes powered wires invisible",
-	["NMS_VERSION"]     = "3.95",	
-	["MODIFICATIONS"]	= 
+["MOD_FILENAME"]    = "_Exosolar's Invisible Powered Wires.pak",
+["MOD_AUTHOR"]      = "Exosolar",
+["LUA_AUTHOR"]      = "Babscoole",	
+["MOD_DESCRIPTION"] = "Makes powered wires invisible",
+["NMS_VERSION"]     = "3.97",	
+["MODIFICATIONS"]   = 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] = 

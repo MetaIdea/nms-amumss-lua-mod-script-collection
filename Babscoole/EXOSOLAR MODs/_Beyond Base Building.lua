@@ -168,9 +168,6 @@ end
 ----- NOT settings related tables -----
 ---------------------------------------
 
--- Exceptions to {"CanPlaceOnItself","True"}
-NO_OVERLAP_BUILDPART_ID_TABLE = {"BASE_FLAG", "RACE_START", "TELEPORTER", "TELEPORTER_F", "U_MINIPORTAL", "BUILDHARVESTER", "U_EXTRACTOR_S"}
-
 -- Vehicles parts which can be scaled
 SCALEABLE_VEHICLESPART_ID_TABLE = {"RACE_RAMP", "RACE_BOOSTER"}
 
@@ -244,7 +241,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	—For latest versions and more visit:-
 	https://www.nexusmods.com/nomanssky/mods/1096 
 	]],
-	["MOD_VERSION"]   = "3.95",
+	["MOD_VERSION"]   = "3.97",
 	["NMS_VERSION"]   = "2.62+",	-- NMS version when first scripted
 	["MODIFICATIONS"] = 
 	{
@@ -263,7 +260,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_MATCH"] = "False",
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"CanPlaceOnItself", "True"},
 								{"CanRotate3D", "True"},
 								{"CanScale", "True"},
 								{"CanChangeColour", "True"},
@@ -282,7 +278,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						
-						-- Reverts decals : must be destroyed when parent (wall, etc) is destroyed. Unlimited placement. CanPlaceOnItself also false.
+						-- Reverts decals : must be destroyed when parent (wall, etc) is destroyed. Unlimited placement.
 						-- Decals are matched by their "SubGroupName" keyword : if any new one is added by the devs it should trigger this.
 						{
 							["SPECIAL_KEY_WORDS"] = {"SubGroupName", "WALLDECALS"},
@@ -293,7 +289,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"IsDecoration", "True"},
 								{"PlanetBaseLimit", 0},
 								{"FreighterBaseLimit", 0},
-								{"CanPlaceOnItself", "False"},
 							},
 						},
 						
@@ -786,23 +781,6 @@ if METAL_PARTS_OUTSIDE_BASE then
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_metal
 		
 	end
-	
-end
-
-
-
---Building Parts that can't be placed on itself
-for i = 1,#NO_OVERLAP_BUILDPART_ID_TABLE do
-
-	local temp_table_notonown =
-	{
-		["SPECIAL_KEY_WORDS"]	= {"ID", NO_OVERLAP_BUILDPART_ID_TABLE[i]},
-		["VALUE_CHANGE_TABLE"]	= 
-		{
-			{"CanPlaceOnItself", "False"},
-		},
-	}
-	Change_Table_Array[#Change_Table_Array + 1] = temp_table_notonown
 	
 end
 

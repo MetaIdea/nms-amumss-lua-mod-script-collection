@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "UnlimitedBaseBuilding.pak", 
 ["MOD_AUTHOR"]    = "Mjjstral",
 ["Maintainer"]    = "Babscoole",
-["NMS_VERSION"]   = "3.95",
+["NMS_VERSION"]   = "3.97",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -11,30 +11,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["REPLACE_TYPE"]       = "ALL",
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"BuildableOnPlanetBase", 		 "True"},
-								{"BuildableOnSpaceBase", 		 "True"},
-								{"BuildableOnFreighter", 		 "True"},
-								{"BuildableOnPlanet", 		 	 "True"},
+								{"BuildableOnPlanetBase",        "True"},
+								{"BuildableOnSpaceBase",         "True"},
+								{"BuildableOnFreighter",         "True"},
+								{"BuildableOnPlanet",            "True"},
 								{"BuildableOnPlanetWithProduct", "True"},
-								{"BuildableUnderwater", 		 "True"},
-								{"BuildableAboveWater", 		 "True"},								
-								{"PlanetLimit", 					"0"},
-								{"RegionLimit", 					"0"},
-								{"PlanetBaseLimit", 				"0"},
-								{"FreighterBaseLimit", 				"0"},
-								{"CheckPlaceholderCollision",   "False"},
-								--{"EnableCollision",   			"False"},
-								{"CanPlaceOnItself",   			"True"},
-								{"CanRotate3D",   				"True"},
-								{"CanScale",   					"True"},
-								--{"BaseBuildingDecorationType", "Normal"},			
-								--{"IsDecoration", 				"False"},						
+								{"BuildableUnderwater",          "True"},
+								{"BuildableAboveWater",          "True"},								
+								{"PlanetLimit",                  "0"},
+								{"RegionLimit",                  "0"},
+								{"PlanetBaseLimit",              "0"},
+								{"FreighterBaseLimit",           "0"},
+								{"CheckPlaceholderCollision",    "False"},
+								{"CanRotate3D",                  "True"},
+								{"CanScale",                     "True"},
+								--{"BaseBuildingDecorationType",   "Normal"},			
+								--{"IsDecoration",                 "False"},						
 							}
 						}
 					}
@@ -46,10 +44,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								--{"DisableLimits",					"True"},
-								{"DisableBaseBuildingLimits",		"True"},
-								{"DisableBasePowerRequirements",	"True"},		
-								{"BaseDownloadTimeout",				"120"},	--ORIGINAL 40
+								--{"DisableLimits",                "True"},
+								{"DisableBaseBuildingLimits",    "True"},
+								{"DisableBasePowerRequirements", "True"},		
+								{"BaseDownloadTimeout",          "120"}, --ORIGINAL 40
 							}
 						}
 					}

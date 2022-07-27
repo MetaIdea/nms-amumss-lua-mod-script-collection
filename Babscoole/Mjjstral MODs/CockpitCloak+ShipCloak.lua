@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "CockpitCloak+ShipCloak.pak",
 ["MOD_AUTHOR"]      = "Mod and toggle idea by Mjjstral, original concept Gmr_Leon",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "3.95",
+["NMS_VERSION"]     = "3.97",
 ["DESCRIPTION"]     = "Makes the cockpit interior and ship invisible when flying",
 ["MODIFICATIONS"]   = 
 	{
@@ -217,7 +217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
                 </Property>
-			  </Property>
+              </Property>
             </Property>
           </Property>
         </Property>
@@ -344,7 +344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
                 </Property>
-			  </Property>
+              </Property>
             </Property>
           </Property>
         </Property>
@@ -522,7 +522,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
                 </Property>	
-				</Property>
+              </Property>
             </Property>
           </Property>
         </Property>
@@ -625,7 +625,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
                 </Property>	
-				</Property>
+              </Property>
             </Property>
           </Property>
         </Property>
@@ -663,7 +663,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name","Spacemap",},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"TransZ",				"-3"},							
+								{"TransZ", "-3"},							
 							}
 						}
 					}

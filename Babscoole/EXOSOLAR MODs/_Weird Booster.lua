@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Weird Booster.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.95",
+["NMS_VERSION"]   = "3.97",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -17,13 +17,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",			
 							["VALUE_CHANGE_TABLE"] = 					
 							{
-								{ "Weird", 	"1000001" }, 
+								{ "Weird", "1000001" }, 
 							}
 						},
 						{				
 							["VALUE_CHANGE_TABLE"] = 					
 							{
-								{ "ConvertDeadToWeird", 	"0.95" }, 
+								{ "ConvertDeadToWeird", "0.95" }, 
 							}
 						},						
 					}

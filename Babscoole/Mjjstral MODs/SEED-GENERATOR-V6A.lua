@@ -1,21 +1,8 @@
 DEFAULT_SEED_NUMBER = 2000
 
--- NUMBER_OF_SEEDS =  -- Commented out 20 March 2022, unused
--- {
-	-- ["FIGHTER"]		=	DEFAULT_SEED_NUMBER,
-	-- ["DROPSHIP"] 	=	DEFAULT_SEED_NUMBER,
-	-- ["SCIENTIFIC"]	= 	DEFAULT_SEED_NUMBER,
-	-- ["SHUTTLE"]		=	DEFAULT_SEED_NUMBER,
-	-- ["ROYAL"]		=  	DEFAULT_SEED_NUMBER,
-	-- ["ALIEN"]		=  	DEFAULT_SEED_NUMBER,
-	-- ["SAIL"]	        =	DEFAULT_SEED_NUMBER,
-	-- ["MULTITOOL"] 	= 	DEFAULT_SEED_NUMBER,
-	-- ["ROYALMULTITOOL"] 	= 	DEFAULT_SEED_NUMBER,
--- }
-
 SELECTED_SEED_TYPES = 
 {
-	"FIGHTER", "DROPSHIP", "SCIENTIFIC", "SHUTTLE", "ROYAL", "ALIEN", "SAIL",
+	"Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail",
 	"MULTITOOL", "ROYALMULTITOOL",
 	"FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
 	"SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGAT", "COMBATFRIGATE", "DIPLOMATICFRIGAT", "LIVINGFRIGATE",
@@ -26,27 +13,15 @@ SELECTED_SEED_TYPES =
 	"WEIRDBUTTERFLY"
 }
 
--- SEED_TYPES = -- Commented out 20 March 2022, unused
--- { 
-	-- "FIGHTER", "DROPSHIP", "SCIENTIFIC", "SHUTTLE", "ROYAL", "ALIEN", "SAIL",
-	-- "MULTITOOL", "ROYALMULTITOOL",
-	-- "FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
-	-- "SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGAT", "COMBATFRIGATE", "DIPLOMATICFRIGAT", "LIVINGFRIGATE",
-	-- "POLICEFREIGHTER", "POLICESHIP",
-	-- "NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
-	-- "TREX",
-	-- "PLANET",
--- }
-
 SEED_TYPE_PATH = 
 {
-	["FIGHTER"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
-	["DROPSHIP"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
-	["SCIENTIFIC"]="MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
-	["SHUTTLE"]="MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
-	["ROYAL"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
-	["ALIEN"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
-	["SAIL"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
+	["Fighter"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
+	["Dropship"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
+	["Scientific"]="MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC.SCENE.MBIN",
+	["Shuttle"]="MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC.SCENE.MBIN",
+	["Royal"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
+	["Alien"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
+	["Sail"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
 	
 	["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
 	["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
@@ -112,8 +87,6 @@ SEED_TYPE_PATH =
 	["WEIRDCRYSTAL"] = "MODELS/PLANETS/CREATURES/WEIRD/WEIRDRIGGROUND.SCENE.MBIN",
 	["WEIRDFLOAT"] = "MODELS/PLANETS/CREATURES/WEIRD/WEIRDRIG.SCENE.MBIN",
 	["WEIRDBUTTERFLY"] = "MODELS/PLANETS/CREATURES/WEIRD/WEIRDBUTTERFLY.SCENE.MBIN",
-	
-	--TREE
 
 	["PLANET"]="MODELS/SPACE/PLANETS/PLANETMESH.SCENE.MBIN",
 	
@@ -194,68 +167,67 @@ BUTTON_ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
 ANIM_TEMPLATE_ALL = ""
 QUICK_ACTION_BUTTON_ALL = ""
 ACTION_TRIGGER_COMPONENT = ""
---ACTION_TRIGGER_ALL = ""  -- Commented out 20 March 2022, unused
 CUSTOM_GENERICREWARD_ALL = ""
 
 function CreateCustomMultitoolRewardSubEntry(DEC_SEED, HEX_SEED, TYPE)
 local GENERIC_REWARD_ENTRY =
 [[
-	<Property value="GcRewardTableItem.xml">
-	<Property name="PercentageChance" value="100" />
-	<Property name="Reward" value="GcRewardSpecificWeapon.xml">
-	  <Property name="WeaponInventory" value="GcInventoryContainer.xml">
-		<Property name="Slots">
-		  <Property value="GcInventoryElement.xml">
-			<Property name="Type" value="GcInventoryType.xml">
-			  <Property name="InventoryType" value="Technology" />
-			</Property>
-			<Property name="Id" value="LASER" />
-			<Property name="Amount" value="200" />
-			<Property name="MaxAmount" value="200" />
-			<Property name="DamageFactor" value="0" />
-			<Property name="FullyInstalled" value="True" />
-			<Property name="Index" value="GcInventoryIndex.xml">
-			  <Property name="X" value="-1" />
-			  <Property name="Y" value="-1" />
-			</Property>
-		  </Property>
-		</Property>
-		<Property name="ValidSlotIndices" />
-		<Property name="Class" value="GcInventoryClass.xml">
-		  <Property name="InventoryClass" value="S" />
-		</Property>
-		<Property name="SubstanceMaxStorageMultiplier" value="0" />
-		<Property name="ProductMaxStorageMultiplier" value="0" />
-		<Property name="BaseStatValues" />
-		<Property name="SpecialSlots" />
-		<Property name="Width" value="0" />
-		<Property name="Height" value="0" />
-		<Property name="IsCool" value="False" />
-		<Property name="Name" value="" />
-		<Property name="Version" value="0" />
-	  </Property>
-	  <Property name="WeaponLayout" value="GcInventoryLayout.xml">
-		<Property name="Slots" value="24" />
-		<Property name="Seed" value="GcSeed.xml">
-		  <Property name="Seed" value="1" />
-		  <Property name="UseSeedValue" value="True" />
-		</Property>
-		<Property name="Level" value="1" />
-	  </Property>
-	  <Property name="WeaponResource" value="GcExactResource.xml">
-		<Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
-		<Property name="GenerationSeed" value="GcSeed.xml">
-		  <Property name="Seed" value="]] .. DEC_SEED .. [[" />
-		  <Property name="UseSeedValue" value="True" />
-		</Property>
-	  </Property>
-	  <Property name="NameOverride" value="]] .. HEX_SEED .. [[" />
-	  <Property name="IsGift" value="True" />
-	  <Property name="IsRewardWeapon" value="True" />
-	  <Property name="FormatAsSeasonal" value="False" />
-	</Property>
-	<Property name="LabelID" value="" />
-  </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardSpecificWeapon.xml">
+              <Property name="WeaponInventory" value="GcInventoryContainer.xml">
+                <Property name="Slots">
+                  <Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="LASER" />
+                    <Property name="Amount" value="200" />
+                    <Property name="MaxAmount" value="200" />
+                    <Property name="DamageFactor" value="0" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
+                  </Property>
+                    </Property>
+                <Property name="ValidSlotIndices" />
+                <Property name="Class" value="GcInventoryClass.xml">
+                  <Property name="InventoryClass" value="S" />
+                </Property>
+                <Property name="SubstanceMaxStorageMultiplier" value="0" />
+                <Property name="ProductMaxStorageMultiplier" value="0" />
+                <Property name="BaseStatValues" />
+                <Property name="SpecialSlots" />
+                <Property name="Width" value="0" />
+                <Property name="Height" value="0" />
+                <Property name="IsCool" value="False" />
+                <Property name="Name" value="" />
+                <Property name="Version" value="0" />
+              </Property>
+              <Property name="WeaponLayout" value="GcInventoryLayout.xml">
+                <Property name="Slots" value="24" />
+                <Property name="Seed" value="GcSeed.xml">
+                  <Property name="Seed" value="1" />
+                  <Property name="UseSeedValue" value="True" />
+                </Property>
+                <Property name="Level" value="1" />
+              </Property>
+              <Property name="WeaponResource" value="GcExactResource.xml">
+                <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
+                <Property name="GenerationSeed" value="GcSeed.xml">
+                  <Property name="Seed" value="]] .. DEC_SEED .. [[" />
+                  <Property name="UseSeedValue" value="True" />
+                </Property>
+              </Property>
+              <Property name="NameOverride" value="]] .. HEX_SEED .. [[" />
+              <Property name="IsGift" value="True" />
+              <Property name="IsRewardWeapon" value="True" />
+              <Property name="FormatAsSeasonal" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
 ]]
 return GENERIC_REWARD_ENTRY
 end
@@ -268,7 +240,7 @@ local GENERIC_REWARD_MAIN_ENTRY =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="]] .. TYPE .. [[" />
         <Property name="OverrideZeroSeed" value="False" />
-		<Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
 ]] .. SUB_ENTRY .. [[
         </Property>
@@ -285,7 +257,7 @@ function CreateAnimEntry(ANIM_ID)
 ANIM_TEMPLATE =
 [[
 		<Property value="TkAnimationData.xml">
-			<Property name="Anim" value="]] .. ANIM_ID .. [[" />
+		  <Property name="Anim" value="]] .. ANIM_ID .. [[" />
 		  <Property name="Filename" value="]] .. GENERIC_ANIMATION_FILE .. [[" />
 		  <Property name="AnimType" value="OneShot" />
 		  <Property name="FrameStart" value="0" />
@@ -306,9 +278,9 @@ ANIM_TEMPLATE =
 		  <Property name="AdditiveBaseAnim" value="" />
 		  <Property name="AdditiveBaseFrame" value="0" />
 		  <Property name="GameData" value="TkAnimationGameData.xml">
-			<Property name="RootMotionEnabled" value="False" />
-			<Property name="BlockPlayerMovement" value="False" />
-			<Property name="BlockPlayerWeapon" value="Unblocked" />
+		    <Property name="RootMotionEnabled" value="False" />
+		    <Property name="BlockPlayerMovement" value="False" />
+		    <Property name="BlockPlayerWeapon" value="Unblocked" />
 		  </Property>
 		</Property>	
 ]]
@@ -336,7 +308,6 @@ end
 
 function CreateActionTriggerComponent(ACTION_TRIGGER_LIST_)
 ACTION_TRIGGER_COMPONENT =
---local ACTION_TRIGGER_COMPONENT =  ---- Commented out 20 March 2022, shadow variable
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -411,15 +382,6 @@ QUICK_ACTION_BUTTON_TEMPLATE =
 return QUICK_ACTION_BUTTON_TEMPLATE
 end
 
--- Commented out 20 March 2022, unused
--- function FormatPath(FILEPATH)
-	-- return string.gsub(FILEPATH, string.char(92) .. string.char(92), string.char(92))	
--- end
-
--- function GetObjectID(SCENEPATH)
-	-- return string.gsub(string.match(string.match(SCENEPATH, "^.+/(.+)$"), "(.+)%.(.+)"), ".SCENE", "")
--- end
-
 function CreateSeedRewardLists()
   local count = 1000
   local SEED_COUNT = 1
@@ -428,9 +390,8 @@ function CreateSeedRewardLists()
 			local Seed = ""
 			local SREA = {}
 			local SST = SELECTED_SEED_TYPES[i]
-			--SUB_REWARD_ENTRY_ALL = "" --SREA	
-			for j=1,DEFAULT_SEED_NUMBER,1 do
-				Seed = GetSeed(j)
+			for _j=1,DEFAULT_SEED_NUMBER,1 do
+				Seed = GetSeed()
 				local SREA_tmp = ""
 					SREA_tmp = CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SST)
 			table.insert(SREA,SREA_tmp)
@@ -441,8 +402,8 @@ function CreateSeedRewardLists()
 			SEED_COUNT = SEED_COUNT + 1
 		end
 		SUB_REWARD_ENTRY_ALL = table.concat(SREA)
-    local ID = SST -- .. "_REWARD"
-    QUICK_ACTION_BUTTON_ALL = QUICK_ACTION_BUTTON_ALL .. CreateQuickActionMenuEntry("RANDOM " .. SST, ID, BUTTON_ICON)
+    local ID = string.upper(SST)
+    QUICK_ACTION_BUTTON_ALL = QUICK_ACTION_BUTTON_ALL .. CreateQuickActionMenuEntry("RANDOM " .. ID, ID, BUTTON_ICON)
     ANIM_TEMPLATE_ALL = ANIM_TEMPLATE_ALL .. CreateAnimEntry(ID)
     ACTION_TRIGGER_COMPONENT = ACTION_TRIGGER_COMPONENT .. CreateActionTriggerComponent(CreateActionTriggerRewardEntry(ID, ID))
     CUSTOM_GENERICREWARD_ALL = CUSTOM_GENERICREWARD_ALL .. CreateRewardMainEntry(ID, SUB_REWARD_ENTRY_ALL, "Select")
@@ -458,7 +419,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "3.95",
+["NMS_VERSION"]     = "3.97",
 ["MODIFICATIONS"]   = 
 	{
 		{

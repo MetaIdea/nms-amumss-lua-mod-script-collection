@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "_Exosolar's Super Ship Teleporter.pak", 
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "3.95",
+["NMS_VERSION"]     = "3.97",
 ["MOD_DESCRIPTION"] = "",
 ["MODIFICATIONS"]   = 
 	{
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"ID", "SHIP_TELEPORT"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"Bonus",  "1005"}
+								{"Bonus", "1005"}
 							}
 						}
 					}

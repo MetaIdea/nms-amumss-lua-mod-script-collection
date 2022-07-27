@@ -3,7 +3,7 @@ DEFAULT_SEED_NUMBER = 17000
 SELECTED_SEED_TYPES = 
 {
 	"Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail",
-	"MULTITOOL", "ROYALMULTITOOL", 
+	"MULTITOOL", "ROYALMULTITOOL",
 }
 
 SEED_TYPE_PATH = 
@@ -17,7 +17,7 @@ SEED_TYPE_PATH =
 	["Sail"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
 	
 	["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
-	["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN"	
+	["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
 }
 
 STATS =
@@ -322,9 +322,9 @@ ANIM_TEMPLATE =
 		  <Property name="AdditiveBaseAnim" value="" />
 		  <Property name="AdditiveBaseFrame" value="0" />
 		  <Property name="GameData" value="TkAnimationGameData.xml">
-			<Property name="RootMotionEnabled" value="False" />
-			<Property name="BlockPlayerMovement" value="False" />
-			<Property name="BlockPlayerWeapon" value="Unblocked" />
+		    <Property name="RootMotionEnabled" value="False" />
+		    <Property name="BlockPlayerMovement" value="False" />
+		    <Property name="BlockPlayerWeapon" value="Unblocked" />
 		  </Property>
 		</Property>	
 ]]
@@ -438,7 +438,7 @@ function CreateSeedRewardLists()
 				Seed = GetSeed()
 				local SREA_tmp = ""
 				if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" then
-					SREA_tmp = CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SST)				
+					SREA_tmp = CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SST)
 				else
 					SREA_tmp = CreateCustomShipRewardSubEntry(HexToDec(Seed), SST, Seed)
 				end
@@ -467,7 +467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "3.95",
+["NMS_VERSION"]     = "3.97",
 ["MODIFICATIONS"]   = 
 	{
 		{
