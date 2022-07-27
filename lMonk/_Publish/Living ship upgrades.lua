@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.living ship upgrades.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.91,
+	NMS_VERSION			= 3.97,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -44,28 +44,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'TechnologyCategory', 'AllShips'}
 				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'SHIPLAS_ALIEN'},
-				PRECEDING_KEY_WORDS	= 'StatBonuses',
-				ADD				 	= [[
-					<Property value="GcStatsBonus.xml">
-						<Property name="Stat" value="GcStatsTypes.xml">
-							<Property name="StatsType" value="Ship_Weapons_ShieldLeech" />
-						</Property>
-						<Property name="Bonus" value="0.22" />
-						<Property name="Level" value="1" />
-					</Property>]]
-			},
+			}
 		}
 	},
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
+				INTEGER_TO_FLOAT	= 'Force',
 				SPECIAL_KEY_WORDS	= {'Template', 'A_SHIPJUMP', 'StatsType', 'Ship_Boost'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
@@ -74,9 +62,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
+				INTEGER_TO_FLOAT	= 'Force',
 				SPECIAL_KEY_WORDS	= {'Template', 'A_SHIPJUMP', 'StatsType', 'Ship_BoostManeuverability'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
@@ -85,9 +73,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
+				INTEGER_TO_FLOAT	= 'Force',
 				SPECIAL_KEY_WORDS	= {'Template', 'A_SHIPJUMP', 'StatsType', 'Ship_Maneuverability'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {

@@ -1,14 +1,14 @@
 -- Ship Hunting Assistant // Will NOT affect default seeds!
 -- Author: DarkScythe
--- Date Created: July 3, 2022
--- Last Updated: July 9, 2022
+-- Date Created: July 03, 2022
+-- Last Updated: July 27, 2022
 --------------------------------------------------------------------------------
 modName		= "FastLocateAssistantforShipHunting"
 modAuthor	= "DarkScythe"
 modDesc		= "Speeds up ship hunting by filtering to specific types and increases spawn rates WITHOUT affecting default seeds so you get the same ships as vanilla players in every system. Helpful for players who want to share coordinates of interesting finds with others."
 modVer		= "1.0."
 scriptVer	= "a"
-gameVer		= "3.93"
+gameVer		= "3.97"
 -- Credits --
 -- Thanks to Lenni and Apex Fatality for the idea of isolating ship models.
 -- Thanks to Gumsk for the idea of speeding up NPC spawns.
@@ -22,8 +22,7 @@ target are the other types, and Exotics may take a while to spawn.
 
 You can technically disable everything, but then nothing will spawn.
 You can also enable everything and ship pools will be as normal, but with
-extra spawns and boosted turnover at trading posts; However, AMUMSS will throw a
-harmless warning because there will be nothing to modify in the first table.
+extra spawns and boosted turnover at trading posts.
 --]]
 huntExotics			= true	-- Extreme spawn rate boost if all others are disabled
 huntExplorers		= false
@@ -68,18 +67,23 @@ Note that ONLY code from AMUMSS' EXML_CHANGE_TABLE blocks should be pasted there
 
 Two files are optional, and should only be active (and conflict with other mods)
 if their associated optional toggles are enabled; Otherwise they shouldn't load.
-Space for merging code for those two are in two separate functions at the bottom.
+One other file is *conditionally* optional: Only when nothing is filtered.
+Space for merging code for all files exist in various functions at the bottom.
+Look for spaces that have been marked as reserved for merging for each file.
 --]]
 
--- Main files being used by this mod
-shipManagerFile		= "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN"
+-- Main files always required by this mod
 spawnTableFile		= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
 shipGlobalFile		= "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 
+-- This file is optional ONLY if every ship type is enabled simultaneously
+-- In that case nothing is filtered, so the script will skip the file entirely
+shipManagerFile		= "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN"
+
 -- Optional files that should only be in use when their toggles are enabled
 -- Will NOT conflict with other mods using these files if toggles remain disabled
-inventoryTableFile	= "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"
-solargenGlobalFile	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
+inventoryTableFile	= "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"	-- forceSClass
+solargenGlobalFile	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"		-- modSpawnFreqMultis
 
 -----------------------------------------------------------------------------
 --
@@ -107,42 +111,44 @@ shipInfo = {
 -- We need to find keywords that let us specify which code block to modify.
 -- Still using AISPACESHIPMANAGER for these.
 -- Alter these values if they ever change to something else at some point.
-shipSection		= "Civilian"	-- We're not interested in Player/Pirate/Police factions
+shipFaction		= "Civilian"	-- We're not interested in Player/Pirate/Police factions
 fileHandle		= "Filename"	-- In case they change this again in the future
 
 -- Time to figure out what ship types we need to work with.
--- These two will be filled in automatically in a moment.
--- **** DO NOT CHANGE THESE ****
--- Breaking these and the next loop will break the whole mod
-shipsToRemove	= {}
-activeShipCount	= 0
+-- ************************************
+-- **** DO NOT CHANGE THIS SECTION ****
+-- ************************************
+-- Breaking this loop may break the whole mod if we need to filter anything
 
 --[[
-This loop does a few things:
-First, it checks our shipInfo table to see which ship types have been enabled.
+This loop checks our shipInfo table to see which ship types have been enabled.
 
-Next, disabled ones have entries created for AMUMSS to overwrite their model files
+Disabled ones have entries created for AMUMSS to overwrite their model files
 with empty strings to effectively prevent the game from being able to load them.
-These are loaded into the empty table we just declared and will be called within
-the AMUMSS mod container itself later since that container doesn't exist yet.
-
-Finally, it counts up how many enabled ship types there are and updates the
-global counter so we can use it for spawn rate adjustments.
+These are loaded into the empty table we'll declare below and will be recalled
+later to insert the entries into the AMUMSS mod container, after it exists.
 --]]
+
+-- This table will be filled in automatically in a moment.
+shipsToRemove	= {}
+
+-- Scan through shipInfo and fill in the above table
 for i = 1, #shipInfo do
 	if not shipInfo[i].shipActive then
 		shipsToRemove[#shipsToRemove + 1] = {
 			["PRECEDING_FIRST"]		= "TRUE",
-			["PRECEDING_KEY_WORDS"]	= shipSection,
+			["PRECEDING_KEY_WORDS"]	= shipFaction,
 			["SPECIAL_KEY_WORDS"]	= {fileHandle, shipInfo[i].shipFile},
 			["VALUE_CHANGE_TABLE"]	= {
 				{fileHandle, ""}
 			},
 		}
-	else
-		activeShipCount = activeShipCount + 1
 	end
 end
+
+-- We can now figure out how many ship types are active
+-- We need this number to scale spawn rates with later
+activeShipCount	= #shipInfo - #shipsToRemove
 
 --[[
 Define some multipliers for various spawn rate numbers we need.
@@ -232,21 +238,6 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {
 				{
-					-- Modding AISPACESHIPMANAGER
-					["MBIN_FILE_SOURCE"]	= shipManagerFile,
-					["EXML_CHANGE_TABLE"]	= shipsToRemove
-					--[[
-					Additional changes to this file cannot be merged here directly.
-					Either add another section with this file source again
-					or use Lua to find and add directly to this section's
-					EXML_CHANGE_TABLE with extra indices via another Lua table.
-
-					Hint: Use the following:
-					NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-					as the root, and its size + 1 for the next available index to insert into.
-					--]]
-				},
-				{
 					-- Modding EXPERIENCESPAWNTABLE
 					-- Adjust the keywords if they ever change in future versions
 					["MBIN_FILE_SOURCE"]	= spawnTableFile,
@@ -307,10 +298,52 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 ---- END OF MAIN AMUMSS MOD CONTAINER TABLE ----
 ------------------------------------------------
 
+--[[
+The following space is reserved for any additional changes to AISPACESHIPMANAGER
+--------------------------------------------------------------------------------
+This space is separated due to how we are filling the EXML_CHANGE_TABLE entry.
+Add any additional code to merge into the changes for this file only in the
+table below.
+
+Remember: This should ONLY be code blocks within the EXML_CHANGE_TABLE entry.
+Treat the following block as if it was ["EXML_CHANGE_TABLE"] = {},
+--]]
+mergeManagerEXML = {
+	--------------------------------------------------------------
+	---- Merge additional changes to AISPACESHIPMANAGER below ----
+	--------------------------------------------------------------
+
+}
+
 ---------------------------------------------------
 -- Begin Lua functions for optional table additions
 -- Do not modify unless you know what you are doing
 ---------------------------------------------------
+
+--[[
+This block is contained inside an IF condition to prevent two things:
+1. A harmless warning about an empty table from AMUMSS if nothing is filtered.
+2. This mod using AISPACESHIPMANAGER if there's nothing to remove from it.
+
+Again, the ONLY time this section doesn't run / file becomes optional is when
+every single ship type is enabled simultaneously, meaning no ships are filtered.
+--]]
+if #shipsToRemove > 0 then
+	local shipSpawnFilter = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
+	shipSpawnFilter[#shipSpawnFilter + 1] = {
+		["MBIN_FILE_SOURCE"] = shipManagerFile,
+		["EXML_CHANGE_TABLE"] = shipsToRemove,
+		-- DO NOT MERGE HERE; Use the mergeManagerEXML table above
+	}
+
+	-- If we have any merges defined above, this will insert them at the end
+	if #mergeManagerEXML > 0 then
+		local managerChanges = shipSpawnFilter[#shipSpawnFilter].EXML_CHANGE_TABLE
+		for i = 1, #mergeManagerEXML do
+			table.insert(managerChanges, mergeManagerEXML[i])
+		end
+	end
+end
 
 --[[
 This block is contained inside an IF condition to prevent the mod from
@@ -324,7 +357,7 @@ Merging to this table can be done directly below, but is not necessary unless
 forceSClass is enabled.
 --]]
 if forceSClass then
-	addExtraTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+	local addExtraTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	addExtraTable[#addExtraTable + 1] = {
 		["MBIN_FILE_SOURCE"] = inventoryTableFile,
 		["EXML_CHANGE_TABLE"] = {
@@ -363,7 +396,7 @@ reliable coordinates impossible.
 This one change to Spawn Frequency does not alter seeds.
 --]]
 if modSpawnFreqMultis then
-	addExtraTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
+	local addExtraTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	addExtraTable[#addExtraTable + 1] = {
 		["MBIN_FILE_SOURCE"] = solargenGlobalFile,
 		["EXML_CHANGE_TABLE"] = {

@@ -1,6 +1,6 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "v1.2"
+local lua_version = "v1.3"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
 local description = "Modifies AI Ships Outpost Approach/Landing. Freighter Hangerdoor/Spacestation Letterbox Entrance Curves"
@@ -11,7 +11,7 @@ local description = "Modifies AI Ships Outpost Approach/Landing. Freighter Hange
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN
 
 _ApproachRange = 120
-_ApproachSpeed = 150
+_ApproachSpeed = 180
 _AutoLandRange = 400
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -38,8 +38,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PlayerAutoLandRange",                   "400"}, --Original "300"
                                 {"CircleRadius",                         "1900"}, --Original "2000"
                                 {"LandingSpeed",                       "0.0001"}, --Original "10"
-                                {"LandingHeight",                         "9.5"}, --Original "10"
-                                {"TakeOffHeight",                           "1"}, --Original "3"
+                                {"LandingHeight",                         "8.5"}, --Original "10"
+                                {"TakeOffHeight",                           "2"}, --Original "3"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
                                 {"TakeOffTime",                             "1"}, --Original "1"
                                 {"TakeOffAlignTime",                      "1.1"}, --Original "1"
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PlayerAutoLandRange",          _AutoLandRange}, --Original "300"
                                 {"CircleRadius",                          "190"}, --Original "200"
                                 {"LandingSpeed",                       "0.0001"}, --Original "10"
-                                {"LandingHeight",                         "9.5"}, --Original "10"
+                                {"LandingHeight",                         "8.5"}, --Original "10"
                                 {"TakeOffHeight",                           "2"}, --Original "10"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
                                 {"TakeOffTime",                             "1"}, --Original "1"
@@ -80,6 +80,31 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"]    = {"GCAISPACESHIPGLOBALS.GLOBAL.MBIN",},
                     ["EXML_CHANGE_TABLE"]   =
                     {
+                            ---------------------------------------------------------------------------------------
+                            --Outpost / Planet Landing Adjustments (NPC)
+                            ---------------------------------------------------------------------------------------
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"OutpostLanding", "GcSpaceshipTravelData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Force",                                 "100"}, --Original "300"
+                                {"MinSpeedForce",                           "3"}, --Original "5"
+                                {"MinHeight",                            "11.9"}, --Original "15"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"PlanetLanding", "GcSpaceshipTravelData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Force",                                  "50"}, --Original "200"
+                                {"MinSpeedForce",                           "3"}, --Original "5"
+                                {"MinHeight",                            "11.9"}, --Original "15"
+                            }
+                        },
                             ---------------------------------------------------------------------------------------
                             --Outpost Approach / Landing / Speed
                             ---------------------------------------------------------------------------------------
@@ -132,44 +157,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"CrashedShipTechSlotsCostDiscount",        "1"},
                             }
                         },
-
-                            ---------------------------------------------------------------------------------------
-                            --Outpost / Planet Landing Adjustments (NPC)
-                            ---------------------------------------------------------------------------------------
-
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"OutpostLanding", "GcSpaceshipTravelData.xml"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"MinSpeed",                               "80"}, --Original "80"
-                                {"MaxSpeed",                               "90"}, --Original "80"
-                                {"BoostSpeed",                            "900"}, --Original "1000"
-                                {"Force",                                 "250"}, --Original "300"
-                                {"MinSpeedForce",                           "3"}, --Original "5"
-                                {"DirectionBrake",                          "7"}, --Original "10"
-                                {"Falloff",                               "0.3"}, --Original "0.8"
-                                {"MinHeight",                            "12.7"}, --Original "15"
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"PlanetLanding", "GcSpaceshipTravelData.xml"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"MinSpeed",                               "15"}, --Original "15"
-                                {"MaxSpeed",                               "30"}, --Original "20"
-                                {"BoostSpeed",                            "900"}, --Original "1000"
-                                {"Force",                                 "100"}, --Original "200"
-                                {"MinSpeedForce",                           "3"}, --Original "5"
-                                {"DirectionBrake",                          "7"}, --Original "10"
-                                {"Falloff",                               "0.3"}, --Original "0.8"
-                                {"MinHeight",                            "12.7"}, --Original "15"
-                            }
-                        },
-
                             ---------------------------------------------------------------------------------------
                             --No Pirate Attacks On Specific Buildings
                             ---------------------------------------------------------------------------------------
