@@ -1,8 +1,8 @@
 
-Author			= "SpeedyS©1978 @_25_07_2022"
+Author			= "SpeedyS©1978 @_28_07_2022"
 AuthorII		= "© by Onykron"
 ModName			= "Hyper-Hyperdrive"
-GameVersion		= "ENDURANCE 3.96"
+GameVersion		= "ENDURANCE 3.97"
 BaseDescription	= "Travel straight the galaxy from the edge to the center with one Hyperdrive."
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]	= {"ID","HYPERDRIVE",},
-							["PRECEDING_KEY_WORDS"]	= {"Ship_Hyperdrive_JumpsPerCell",},
+							["PRECEDING_KEY_WORDS"]	= {"Ship_Hyperdrive_JumpDistance",},
 							["VALUE_CHANGE_TABLE"]	= 
 							{
 								{"Bonus",	"999999"}, -- Original "100"
@@ -32,7 +32,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
                         {
 							["SPECIAL_KEY_WORDS"]	= {"ID","WARP_ALIEN",},
-							["PRECEDING_KEY_WORDS"]	= {"Ship_Hyperdrive_JumpsPerCell",},
+							["PRECEDING_KEY_WORDS"]	= {"Ship_Hyperdrive_JumpDistance",},
 							["VALUE_CHANGE_TABLE"]	= 
 							{
 								{"Bonus",	"999999"}, -- Original "100"
@@ -40,7 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"]	= {"ID","F_HYPERDRIVE",},
-							["PRECEDING_KEY_WORDS"]	= {"Freighter_Teleport",},
+							["PRECEDING_KEY_WORDS"]	= {"Freighter_Hyperdrive",},
 							["VALUE_CHANGE_TABLE"]	= 
 							{
 								{"Bonus",	"999999"}, -- Original "100"
