@@ -14,13 +14,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"EmptySystemSpecific","GcCreatureGenerationOptionalWeightedList.xml",},
-							["VALUE_CHANGE_TABLE"] = 
-							{
-								{"Probability", "0.2" },
-							}
-						},
-						{
 							["PRECEDING_KEY_WORDS"] = {"CaveGroupsPerKm",},
 							["VALUE_CHANGE_TABLE"] = 
 							{
