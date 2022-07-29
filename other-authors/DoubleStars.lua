@@ -1,7 +1,7 @@
 ModName = "DoubleStars.pak"
 ModDescription = "Doubles the amount of stars in the universe"
 Author = "Striker0420"
-Version = "3.90"
+Version = "3.97"
 
 GalaxyGlobals = "GCGALAXYGLOBALS.GLOBAL.MBIN"
 
