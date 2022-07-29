@@ -1,5 +1,5 @@
 Author = "Step Modifications"
-ModName = "ZZZZStepNoMansSky"
+ModName = "___StepNoMansSky"
 ModDescription = "These changes alter the damage chances for slots/tech on crashed ships."
 FileSource01 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 
@@ -7,8 +7,8 @@ FileSource01 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 -- The comments are laid out in the following format: -- ParameterDescription (if available) | DefaultValue | LineNumber
 
 --##### Variables #####
-CrashedShipBrokenSlotChance = 0.5		-- Chance slots will be damaged on crashed ships | 0.75| 28
-CrashedShipBrokenTechChance = 0.5		-- Chance technology will be damaged on crashed ships | 0.7 | 29
+CrashedShipBrokenSlotChance = 0.5		-- Chance slots will be damaged on crashed ships | 0.75| 244
+CrashedShipBrokenTechChance = 0.5		-- Chance technology will be damaged on crashed ships | 0.7 | 245
 DockingRotateSpeed = 0.7				-- Speed at which ship will rotate when docking | 0.5 | 720
 
 

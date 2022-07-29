@@ -1,5 +1,5 @@
 Author = "Step Modifications"
-ModName = "ZZZZStepNoMansSky"
+ModName = "___StepNoMansSky"
 ModDescription = "These changes alter various settings dealing with the various vehicles."
 FileSource01 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
@@ -7,10 +7,10 @@ FileSource01 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 -- The comments are laid out in the following format: -- ParameterDescription (if available) | DefaultValue | LineNumber
 
 --##### Variables #####
-VehScanPulseRange = 3000		-- Pulse range of vehicles | 1500 | 736
-VehScanChargeTime = 5			-- Time to recharge vehicle pulses | 20 | 739
-VehScanLocPulseRange = 400		--  | 200 | 743
-VehScanLocChargeTime = 5		--  | 20  | 746
+VehScanPulseRange = 3000		-- Pulse range of vehicles | 1500 | 737
+VehScanChargeTime = 5			-- Time to recharge vehicle pulses | 20 | 740
+VehScanLocPulseRange = 400		--  | 200 | 744
+VehScanLocChargeTime = 5		--  | 20  | 747
 
 
 NMS_MOD_DEFINITION_CONTAINER = 

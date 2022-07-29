@@ -1,5 +1,5 @@
 Author = "Step Modifications"
-ModName = "ZZZZStepNoMansSky"
+ModName = "___StepNoMansSky"
 ModDescription = "These changes alter various settings dealing with Space."
 FileSource01 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 
@@ -8,18 +8,15 @@ FileSource01 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 
 --##### Variables #####
 --## Step ##
-PlanetInvalidAsteroidZone = 30000	-- No asteroid zone around planets | vanilla=10000 // CSO=30000 | 41
-AsteroidNoiseScale = 40000			-- The bigger it is, the greater the distance between fields is, but the closer asteroids are inside fields | vanilla=30000 // CSO=330000 | 44
-AsteroidFadeRangeMin = 8000			-- The minimum range that normal asteroids will start to fade out // Weird: 0 here makes asteroids appear from greater distances (v3.02). Didn't make it in case it changes. | vanilla=1000 // CSO=6000 | 78
-AsteroidFadeRangeMax = 16000		-- The max range that normal asteroids will end fading out; beyond here there are no asteroids displayed | vanilla=2000 // CSO=12000 | 79
-AsteroidSpacing = 1500 				-- Distance between normal asteroids // affects the drawing distance of asteroids too | vanilla=1000 // CSO=6000 | 80
-LargeAsteroidSpacing = 4500			-- Distance between large asteroids | vanilla=3000 // CSO=12000 | 102
-LargeAsteroidFadeRangeMin = 10000	--  // 0 messes up things | vanilla=4000 // CSO=12000 | 104
-LargeAsteroidFadeRangeMax = 20000	--  | vanilla=4000 // CSO=16000 | 105
-RingAsteroidSpacing = 1000			--  | vanilla=300 // CSO=1800 | 108
-RingAsteroidFadeRangeMin = 8000		--  | vanilla=500 // CSO=6000 | 109
-RingAsteroidFadeRangeMax = 16000	--  | vanilla=2000 // CSO=12000 | 110
-AsteroidMaxNumGeneratesPulseJump = 500 -- Number of asteroids generated during pulse | vanilla=1000 | 112
+PlanetInvalidAsteroidZone = 30000	-- No asteroid zone around planets | vanilla=10000 // CSO=30000 | 39
+
+CommonAsteroidSpacing = 1500 		-- Distance between normal asteroids // affects the drawing distance of asteroids too | vanilla=1000 // CSO=6000 | 51
+CommonAsteroidFadeRange = 16000		-- The max range that normal asteroids will end fading out; beyond here there are no asteroids displayed | vanilla=2000 // CSO=12000 | 56
+RingAsteroidSpacing = 1000			-- Distance between ring asteroids | vanilla=200 // CSO=1800 | 66
+RingAsteroidFadeRange = 12000		--  | vanilla=3000 // CSO=12000 | 71
+LargeAsteroidFadeRange = 20000		--  | vanilla=4000 // CSO=16000 | 86
+RareAsteroidSpacing = 1200			-- Distance between rare asteroids | vanilla=850 | 96
+RareAsteroidFadeRange = 14000		--  | vanilla=9000 | 101
 
 
 --## Clean Space Origins ##
@@ -41,48 +38,60 @@ NMS_MOD_DEFINITION_CONTAINER =
 --## Step ##
 -- Asteroids repartition and draw distance
 						{"PlanetInvalidAsteroidZone", PlanetInvalidAsteroidZone}, 
-						{"AsteroidNoiseScale", AsteroidNoiseScale}, 
-						{"AsteroidFadeRangeMin", AsteroidFadeRangeMin}, 
-						{"AsteroidFadeRangeMax", AsteroidFadeRangeMax}, 
-						{"AsteroidSpacing",	AsteroidSpacing}, 
-						{"LargeAsteroidSpacing", LargeAsteroidSpacing}, 
-						{"LargeAsteroidFadeRangeMin", LargeAsteroidFadeRangeMin}, 
-						{"LargeAsteroidFadeRangeMax", LargeAsteroidFadeRangeMax}, 
-						{"RingAsteroidSpacing", RingAsteroidSpacing}, 
-						{"RingAsteroidFadeRangeMin", RingAsteroidFadeRangeMin}, 
-						{"RingAsteroidFadeRangeMax", RingAsteroidFadeRangeMax}, 
-						{"AsteroidMaxNumGeneratesPulseJump", AsteroidMaxNumGeneratesPulseJump}, 
+					}
+				},
+				{["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData",},
+					["VALUE_CHANGE_TABLE"] = {
+						{"Spacing", CommonAsteroidSpacing}, 
+						{"FadeRange", CommonAsteroidFadeRange}, 
+					}
+				},
+				{["PRECEDING_KEY_WORDS"] = {"RingAsteroidData",},
+					["VALUE_CHANGE_TABLE"] = {
+						{"Spacing", RingAsteroidSpacing}, 
+						{"FadeRange", RingAsteroidFadeRange}, 
+					}
+				},
+				{["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData",},
+					["VALUE_CHANGE_TABLE"] = {
+						{"FadeRange", LargeAsteroidFadeRange}, 
+					}
+				},
+				{["PRECEDING_KEY_WORDS"] = {"RareAsteroidData",},
+					["VALUE_CHANGE_TABLE"] = {
+						{"Spacing", RareAsteroidSpacing}, 
+						{"FadeRange", RareAsteroidFadeRange}, 
 					}
 				},
 --
 --##### Everything after here is from Clean Space Origins mod #####
 --
 -- Asteroid fields shape
-				{["PRECEDING_KEY_WORDS"] = {"AsteroidNoiseRange",}, 
-					["VALUE_CHANGE_TABLE"] = {
-						{"x", "0.485"}, {"y", "0.515"}, 
-					}
-				},
-				{["PRECEDING_KEY_WORDS"] = {"LargeAsteroidNoiseRange",}, 
-					["VALUE_CHANGE_TABLE"] = {
-						{"x", "0.47"}, {"y", "0.53"}, 
-					}
-				},
-				{["PRECEDING_KEY_WORDS"] = {"RareAsteroidNoiseRangeFewRares",}, 
-					["VALUE_CHANGE_TABLE"] = {
-						{"x", "0.4992"}, {"y", "0.5008"}, 
-					}
-				},
-				{["PRECEDING_KEY_WORDS"] = {"RareAsteroidNoiseRangeSomeRares",}, 
-					["VALUE_CHANGE_TABLE"] = {
-						{"x", "0.4985"}, {"y", "0.5015"}, 
-					}
-				},
-				{["PRECEDING_KEY_WORDS"] = {"RareAsteroidNoiseRangeLotsOfRares",}, 
-					["VALUE_CHANGE_TABLE"] = {
-						{"x", "0.493"}, {"y", "0.507"}, 
-					}
-				},
+--				{["PRECEDING_KEY_WORDS"] = {"AsteroidNoiseRange",}, 
+--					["VALUE_CHANGE_TABLE"] = {
+--						{"x", "0.485"}, {"y", "0.515"}, 
+--					}
+--				},
+--				{["PRECEDING_KEY_WORDS"] = {"LargeAsteroidNoiseRange",}, 
+--					["VALUE_CHANGE_TABLE"] = {
+--						{"x", "0.47"}, {"y", "0.53"}, 
+--					}
+--				},
+--				{["PRECEDING_KEY_WORDS"] = {"RareAsteroidNoiseRangeFewRares",}, 
+--					["VALUE_CHANGE_TABLE"] = {
+--						{"x", "0.4992"}, {"y", "0.5008"}, 
+--					}
+--				},
+--				{["PRECEDING_KEY_WORDS"] = {"RareAsteroidNoiseRangeSomeRares",}, 
+--					["VALUE_CHANGE_TABLE"] = {
+--						{"x", "0.4985"}, {"y", "0.5015"}, 
+--					}
+--				},
+--				{["PRECEDING_KEY_WORDS"] = {"RareAsteroidNoiseRangeLotsOfRares",}, 
+--					["VALUE_CHANGE_TABLE"] = {
+--						{"x", "0.493"}, {"y", "0.507"}, 
+--					}
+--				},
 -- Asteroids resources
 				{["PRECEDING_KEY_WORDS"] = "", 
 					["MATH_OPERATION"] = "*",

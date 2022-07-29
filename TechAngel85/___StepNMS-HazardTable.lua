@@ -1,5 +1,5 @@
 Author = "Step Modifications"
-ModName = "ZZZZStepNoMansSky"
+ModName = "___StepNoMansSky"
 ModDescription = "These changes alter various settings dealing with environmental hazards on the suit."
 FileSource01 = "METADATA\SIMULATION\ENVIRONMENT\HAZARDTABLE.MBIN"
 

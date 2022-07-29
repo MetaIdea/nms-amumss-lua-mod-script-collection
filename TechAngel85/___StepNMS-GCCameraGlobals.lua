@@ -1,5 +1,5 @@
 Author = "Step Modifications"
-ModName = "ZZZZStepNoMansSky"
+ModName = "___StepNoMansSky"
 ModDescription = "These changes alter various camera and shake settings."
 FileSource01 = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 
@@ -9,14 +9,14 @@ FileSource01 = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 --##### Variables #####
 --## Step ##
 ShakeOff = "False"
-BigPainSHStrength = 0.0075			-- Shake strength during large injuries | 0.02 | 3713
-BigPainSHFrequency = 3				-- Shake frequency during large injuries | 5 | 3714
-BigPainVibStrength = 0.0075			-- Vibration strength during large injuries | 0.02 | 3715
-BigPainVibFrequency = 3				-- Vibration frequency during large injuries | 5 | 3716
-ExplosionPainSHStrength = 0.01		-- Shake strength during explosions | 0.02 | 3769
-ExplosionPainSHFrequency = 5		-- Shake frequency during explosions | 7 | 3770
-ExplosionPainVibStrength = 0.01		-- Vibration strength during explosions | 0.02 | 3771
-ExplosionPainVibFrequency = 5		-- Vibration frequency during explosions | 7 | 3772
+BigPainSHStrength = 0.0075			-- Shake strength during large injuries | 0.02 | 
+BigPainSHFrequency = 3				-- Shake frequency during large injuries | 5 | 
+BigPainVibStrength = 0.0075			-- Vibration strength during large injuries | 0.02 | 
+BigPainVibFrequency = 3				-- Vibration frequency during large injuries | 5 | 
+ExplosionPainSHStrength = 0.01		-- Shake strength during explosions | 0.02 | 4160
+ExplosionPainSHFrequency = 5		-- Shake frequency during explosions | 7 | 4161
+ExplosionPainVibStrength = 0.01		-- Vibration strength during explosions | 0.02 | 4162
+ExplosionPainVibFrequency = 5		-- Vibration frequency during explosions | 7 | 4163
 GrenadeSHStrength = 0.01			-- Shake strength during grenade explosions | 0.02 | 4105
 GrenadeSHFrequency = 3				-- Shake frequency during grenade explosions | 5 | 4106
 GrenadeVibStrength = 0.01			-- Vibration strength during grenade explosions | 0.02 | 4107
@@ -286,6 +286,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{["SPECIAL_KEY_WORDS"] = {"Name", "WARP_FRG_ATMOS",},
+					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
+					["VALUE_CHANGE_TABLE"] = {
+						{"Active", ShakeOff}, 
+					}
+				},
+				{["SPECIAL_KEY_WORDS"] = {"Name", "FRG_FLYBY_PREP",},
+					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
+					["VALUE_CHANGE_TABLE"] = {
+						{"Active", ShakeOff}, 
+					}
+				},
+				{["SPECIAL_KEY_WORDS"] = {"Name", "FREIGHTERLIFT",},
 					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
 					["VALUE_CHANGE_TABLE"] = {
 						{"Active", ShakeOff}, 

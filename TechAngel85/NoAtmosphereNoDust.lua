@@ -1,5 +1,5 @@
 Author = "degraaaff"
-ModName = "ZZZZStepNoMansSky"
+ModName = "___StepNoMansSky"
 ModDescription = "Removes flying dust from planets without an atmosphere."
 
 --## Legend ##
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		}
 	}	
-}	
+}
 --NOTE: ANYTHING DOWN HERE IS IGNORED
 --ADD THINGS AT THE TOP IF YOU NEED TO
 --DON'T ADD ANYTHING PASS THIS POINT HERE
