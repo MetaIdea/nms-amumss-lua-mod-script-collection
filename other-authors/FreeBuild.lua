@@ -1,6 +1,6 @@
 ModName = "_FreeBuilding.pak"
 Author = "Striker0420"
-Version = "3.90"
+Version = "3.97"
 
 BaseBuildingObjectsTable = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 DebugGlobals = "GCDEBUGOPTIONS.GLOBAL.MBIN"
@@ -94,8 +94,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"BuildingPlacementScaleMinMax", "Vector2f.xml"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",  ScaleMin},-- makes it so you can scale bigger or smaller
-								{"y", ScaleMax}
+								{"x",  0.00025},-- makes it so you can scale bigger or smaller
+								{"y", 3000}
 							}
 						}
 					}

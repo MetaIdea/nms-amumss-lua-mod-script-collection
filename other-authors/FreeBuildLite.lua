@@ -1,6 +1,6 @@
-ModName = "_FreeBuildingLite.pak"
+ModName = "_FreeBuilding.pak"
 Author = "Striker0420"
-Version = "3.90"
+Version = "3.97"
 
 BaseBuildingObjectsTable = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 DebugGlobals = "GCDEBUGOPTIONS.GLOBAL.MBIN"
@@ -8,7 +8,7 @@ PlayerGlobals = "GCPLAYERGLOBALS.GLOBAL.MBIN"
 BuildingGlobals = "GCBUILDINGGLOBALS.GLOBAL.MBIN"
 
 ScaleMax = 3000
-ScaleMin = 0.0000025
+ScaleMin = 0.00025
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {

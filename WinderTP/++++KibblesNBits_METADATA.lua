@@ -11136,7 +11136,7 @@ end
 
 function GetGroupData(ID, NAME, ICON, CHILDREN)
 SUBGROUP_INJECT = ""
-for m,n in pairs(CHILDREN) do
+for _,n in pairs(CHILDREN) do
 	SUBGROUP_INJECT = SUBGROUP_INJECT .. [[
         <Property value="GcBaseBuildingSubGroup.xml">
           <Property name="Id" value="]] .. n["ID"] .. [[" />
@@ -11178,7 +11178,8 @@ else SNAP_INJECT = SNAP
 end
 
 INACTIVE = ""
-if OVERRIDE_INACTIVE then INACTIVE = MODEL end
+if OVERRIDE_INACTIVE then INACTIVE = MODEL
+ end
 
 if BUILD_ANYWHERE then
 	FREIGHTER = "True"
@@ -11190,15 +11191,15 @@ else TOUCH_INJECT = "True"
 end
 
 GROUPS_TEMP = {}
-for m,n in pairs(GROUPS) do
+for _,n in pairs(GROUPS) do
 	TOP_GROUP = ""
-	for o,p in pairs(KIBBLES_GROUPS) do
-		for q,r in pairs(p["SubGroups"]) do
+	for _,p in pairs(KIBBLES_GROUPS) do
+		for _,r in pairs(p["SubGroups"]) do
 			if n == r["ID"] then TOP_GROUP = p["ID"] 
 			end 
 		end
 	end
-	for s,t in pairs(GROUPS_TEMP) do
+	for _,t in pairs(GROUPS_TEMP) do
 		if TOP_GROUP == t then TOP_GROUP = "" 
 		end
 	end
@@ -11217,7 +11218,6 @@ end
 return [[
     <Property value="GcBaseBuildingEntry.xml">
       <Property name="ID" value="]] .. ID .. [[" />
-      <Property name="HasProduct" value="True" />
       <Property name="IsTemporary" value="False" />
       <Property name="IsFromModFolder" value="True" />
       <Property name="Style" value="GcBaseBuildingPartStyle.xml">
@@ -11240,7 +11240,6 @@ return [[
       </Property>
       <Property name="IsPlaceable" value="]] .. PLACE .. [[" />
       <Property name="IsDecoration" value="]] .. ISDECOR .. [[" />
-      <Property name="PlacementNormalOffset" value="0" />
       <Property name="Biome" value="GcBiomeType.xml">
         <Property name="Biome" value="]] .. BIOME .. [[" />
       </Property>
@@ -11256,10 +11255,10 @@ return [[
       <Property name="PlanetBaseLimit" value="0" />
       <Property name="FreighterBaseLimit" value="0" />
       <Property name="CheckPlaceholderCollision" value="]] .. CHECKCOLL .. [[" />
+	  <Property name="CheckPlayerCollision" value="]] .. ENCOLL .. [[" />
       <!--Property name="CollisionScale" value="]] .. COLLSCALE .. [[" /-->
-      <Property name="EnableCollision" value="]] .. ENCOLL .. [[" />
-      <Property name="OptionalPhysics" value="]] .. TOUCH_INJECT .. [[" />
-      <Property name="CanPlaceOnItself" value="]] .. STACK .. [[" />
+      <!--Property name="OptionalPhysics" value="]] .. TOUCH_INJECT .. [[" /-->
+      <!--Property name="CanPlaceOnItself" value="]] .. STACK .. [[" /-->
       <Property name="CanRotate3D" value="True" />
       <Property name="CanScale" value="]] .. SCALEABLE .. [[" />
       <Property name="Groups">
@@ -11275,18 +11274,23 @@ return [[
       <Property name="CanPickUp" value="False" />
       <Property name="ShowInBuildMenu" value="True" />
       <Property name="CompositePartObjectIDs" />
+      <Property name="FamilyIDs" />
+      <Property name="BuildEffectAccelerator" value="1" />
       <Property name="RemovesAttachedDecoration" value="]] .. RAD .. [[" />
+      <Property name="RemovesWhenUnsnapped" value="False" />
       <Property name="EditsTerrain" value="]] .. TERRAIN .. [[" />
       <Property name="BaseTerrainEditShape" value="]] .. T_SHAPE .. [[" />
       <!--Property name="TerrainEditBaseYOffset" value="]] .. T_BASE .. [[" />
       <Property name="TerrainEditTopYOffset" value="]] .. T_TOP .. [[" />
       <Property name="TerrainEditBoundsScalar" value="]] .. T_SCALE .. [[" /-->
+      <Property name="MinimumDeleteDistance" value="1" />
       <Property name="IsSealed" value="]] .. SEAL .. [[" />
       <Property name="CloseMenuAfterBuild" value="False" />
       <Property name="LinkGridData" value="GcBaseLinkGridData.xml">
 ]] .. POWER_INJECT .. [[
       </Property>
       <Property name="GhostsCountOverride" value="2" />
+      <Property name="ShowGhosts" value="True" />
       <Property name="SnappingDistanceOverride" value="]] .. SNAP_SHORT .. [[" />
       <Property name="RegionSpawnLOD" value="1" />
       <Property name="NPCInteractionScene" value="TkModelResource.xml">
@@ -11311,7 +11315,7 @@ ICON_INJECT = [[CUSTOMMODELS/KIBBLES/ICONS/]] .. ID .. [[_ICON.DDS]]
 else ICON_INJECT = ICON 
 end
 INGRED_INJECT = ""
-for m,n in pairs(INGRED) do
+for _,n in pairs(INGRED) do
 	INGRED_INJECT = INGRED_INJECT .. [[
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="]] .. n["ID"] .. [[" />
@@ -11399,6 +11403,7 @@ return [[
       <Property name="GoodForSelling" value="False" />
       <Property name="GiveRewardOnSpecialPurchase" value="" />
       <Property name="EggModifierIngredient" value="False" />
+      <Property name="IsTechBox" value="False" />
     </Property>
 ]]
 end
@@ -11427,35 +11432,35 @@ return [[
 ]]
 end
 
-function GetSnapGroupPart(ID, MODELS, INACTIVE)
-STYLEMODEL_INJECT = ""
-for k,l in pairs(MODELS) do
-	INACTIVE_INJECT = ""
-	if INACTIVE then INACTIVE_INJECT = l["Filename"] 
-end
-	STYLEMODEL_INJECT = STYLEMODEL_INJECT .. [[
-        <Property value="GcBaseBuildingPartStyleModel.xml">
-          <Property name="Style" value="GcBaseBuildingPartStyle.xml">
-            <Property name="Style" value="]] .. l["Style"] .. [[" />
-          </Property>
-          <Property name="Model" value="TkModelResource.xml">
-            <Property name="Filename" value="]] .. l["Filename"] .. [[" />
-          </Property>
-          <Property name="Inactive" value="TkModelResource.xml">
-            <Property name="Filename" value="]] .. INACTIVE_INJECT .. [[" />
-          </Property>
-        </Property>
-]]
-end
-return [[
-    <Property value="GcBaseBuildingPart.xml">
-      <Property name="ID" value="]] .. ID .. [[" />
-      <Property name="StyleModels">
-	  ]] .. STYLEMODEL_INJECT .. [[
-      </Property>
-    </Property>
-]]
-end
+-- function GetSnapGroupPart(ID, MODELS, INACTIVE)
+-- STYLEMODEL_INJECT = ""
+-- for _,l in pairs(MODELS) do
+	-- INACTIVE_INJECT = ""
+	-- if INACTIVE then INACTIVE_INJECT = l["Filename"] 
+-- end
+	-- STYLEMODEL_INJECT = STYLEMODEL_INJECT .. [[
+        -- <Property value="GcBaseBuildingPartStyleModel.xml">
+          -- <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+            -- <Property name="Style" value="]] .. l["Style"] .. [[" />
+          -- </Property>
+          -- <Property name="Model" value="TkModelResource.xml">
+            -- <Property name="Filename" value="]] .. l["Filename"] .. [[" />
+          -- </Property>
+          -- <Property name="Inactive" value="TkModelResource.xml">
+            -- <Property name="Filename" value="]] .. INACTIVE_INJECT .. [[" />
+          -- </Property>
+        -- </Property>
+-- ]]
+-- end
+-- return [[
+    -- <Property value="GcBaseBuildingPart.xml">
+      -- <Property name="ID" value="]] .. ID .. [[" />
+      -- <Property name="StyleModels">
+	  -- ]] .. STYLEMODEL_INJECT .. [[
+      -- </Property>
+    -- </Property>
+-- ]]
+-- end
 
 function getAutoPartData(ID, STYLE)
 return [[
@@ -11575,7 +11580,7 @@ EXPORT_BASEOBJECTS = EXPORT_BASEOBJECTS:gsub([[name="CanScale" value="False"]], 
 end
 
 if FORCE_DECOR_TYPE ~= "" then
-	for i,j in pairs(BASEBUILDINGDECORATIONTYPE) do
+	for _,j in pairs(BASEBUILDINGDECORATIONTYPE) do
 		if FORCE_DECOR_TYPE == j then
 			EXPORT_BASEOBJECTS = EXPORT_BASEOBJECTS:gsub([[name="BaseBuildingDecorationType" value="]] .. "%a+" .. [["]], [[name="BaseBuildingDecorationType" value="]] .. j .. [["]])
 		end
@@ -11605,8 +11610,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 		= "~~~~~KibblesNBits_METADATA.pak",
 ["MOD_BATCHNAME"]		= "~~~~~KibblesNBits_COMPATIBILITY.pak",
 ["MOD_DESCRIPTION"]		= "Generates Metadata files and patch other mods with this script",
-["MOD_AUTHOR"]			= "Kibbles, Babscoole, WinderTP",
-["NMS_VERSION"]			= "3.75",
+["MOD_AUTHOR"]			= "Kibbles, WinderTP, Babscoole",
+["NMS_VERSION"]			= "3.97",
 ["MODIFICATIONS"] 		= 
 	{
 		{
