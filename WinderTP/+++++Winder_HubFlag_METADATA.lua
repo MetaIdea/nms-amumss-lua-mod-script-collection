@@ -41,16 +41,18 @@ MORE_BUILDING_DISTANCE = false
 -- BUILDING DISTANCE AND OBJECT SCALING OVERRIDE; NOT REALLY NEEDED ANYMORE SINCE SNAPPING DISTANCE CAN NOW BE TWEAKED
 -- USERS CAN STILL ENABLE THIS TWEAK BY UNCOMMENTING THE NEXT 3 LINES
 -- AND THE "GCBUILDINGGLOBALS.GLOBAL.MBIN" CHANGE TABLE AT THE BOTTOM OF THE FILE
-BUILD_DISTANCE = 	"1250"
-OBJECT_SCALE_MIN =	"0.01"
-OBJECT_SCALE_MAX = 	"4"
+BUILD_DISTANCE_MAX = 	"1250"
+BUILD_DISTANCE_MIN =	"0.7"
+BUILD_DISTANCE_CONNECT = "600"
+OBJECT_SCALE_MIN =		"0.01"
+OBJECT_SCALE_MAX = 		"4"
 
 -- RECTUM PROVIDES THE WIGGLE ROOM FOR EXTRA CONDENSATION OF SUBGROUPS
 -- BuildFrame RecTUM - Recategorisation and Trimming Utility for Build Menu
 -- https://www.nexusmods.com/nomanssky/mods/2197
-RECTUM_USED = true
+-- RECTUM_USED = false
 
-HUBFLAG_GROUPS = -- BASEBUILDINGTABLE GROUPS
+HUBFLAG_GROUPS =	-- BASEBUILDINGTABLE GROUPS
 {
 	{ ["ID"]= "WDGARDEN", 				["Name"] = "WDGARDEN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/WLUSH_LSHROM5.DDS]],
 		["SubGroups"] =
@@ -66,14 +68,12 @@ HUBFLAG_GROUPS = -- BASEBUILDINGTABLE GROUPS
 			-- {["ID"] = "WDGARDEN_RL1",	["Name"] = "WDGARDEN_RL1_NAME"},
 			{["ID"] = "WDGARDEN_GLIT",	["Name"] = "WDGARDEN_GLIT_NAME"},
 			{["ID"] = "WDGARDEN_BONE",	["Name"] = "WDGARDEN_BONE_NAME"},
-			{["ID"] = "WDGARDENCOOK",	["Name"] = "WDGARDENCOOK_NAME"},
 			{["ID"] = "WDGARDENANI",	["Name"] = "WDGARDENANI_NAME"},
 		}
 	},
-	{ ["ID"]= "WDECOR_MAIN", 			["Name"] = "WDECOR_MAIN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/TAPEDECK.DDS]],
+	{ ["ID"]= "WDECOR_MAIN", 			["Name"] = "WDECOR_MAIN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/GUNCRATE_NEW.DDS]],
 		["SubGroups"] =
 		{
-			{["ID"] = "WDECOR_DIS",		["Name"] = "WDECOR_DIS_NAME"},
 			{["ID"] = "WDECOR_F",		["Name"] = "WDECOR_F_NAME"},
 			{["ID"] = "WDECOR_T",		["Name"] = "WDECOR_T_NAME"},
 			{["ID"] = "WDECOR_IL",		["Name"] = "WDECOR_IL_NAME"},
@@ -82,118 +82,24 @@ HUBFLAG_GROUPS = -- BASEBUILDINGTABLE GROUPS
 			-- {["ID"] = "WDECORB",		["Name"] = "WDECORB_NAME"},
 			-- {["ID"] = "WDECORC",		["Name"] = "WDECORC_NAME"},
 			-- {["ID"] = "WDSPEC",			["Name"] = "WDSPEC_NAME"},
-			{["ID"] = "WPOSTER",		["Name"] = "UI_BUILD_GRID_POSTERS"},
 		}
 	},
-	{ ["ID"]= "WDECOR_MAIN2", 			["Name"] = "WDECOR_MAIN2_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SCRAP_SHED.DDS]],
-		["SubGroups"] =
-		{
-			{["ID"] = "WDECOR_OS",		["Name"] = "WDECOR_OS_NAME"},
-			-- {["ID"] = "WDECOR_OL",		["Name"] = "WDECOR_OL_NAME"},
-			{["ID"] = "WDECOR_V",		["Name"] = "WDECOR_V_NAME"},
-			{["ID"] = "WDECOR_P",		["Name"] = "WDECOR_P_NAME"},
-			{["ID"] = "WDECOR_IND",		["Name"] = "WDECOR_IND_NAME"},
-			{["ID"] = "WSTORE",			["Name"] = "UI_BUILD_GRID_STORAGE"},
-			{["ID"] = "WNPC",			["Name"] = "WNPC_NAME"},
-			-- {["ID"] = "WINTERACT",		["Name"] = "WINTERACT_NAME"},
-			{["ID"] = "WLIGHTS1",		["Name"] = "WLIGHTS1_NAME"},
-			-- {["ID"] = "WLIGHTS_D",		["Name"] = "WLIGHTS_D_NAME"},
-			{["ID"] = "WNEONSIGN",		["Name"] = "WNEONSIGN_NAME"},
-			-- {["ID"] = "WHOLO_BIG",		["Name"] = "WHOLO_BIG_NAME"},
-			{["ID"] = "WNEONLL",		["Name"] = "WNEONLL_NAME"},
-		}
-	},
-	{ ["ID"]= "WDECAL_MAIN", 			["Name"] = "WDECAL_MAIN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/HUBDECAL/LOGOHUB354/DECAL.HUB354.DDS]],
-		["SubGroups"] =
-		{
-			{["ID"] = "WDMISC",			["Name"] = "WDMISC_NAME"},
-			{["ID"] = "WDAGT",			["Name"] = "WDAGT_NAME"},
-			{["ID"] = "WDHUB",			["Name"] = "WDHUB_NAME"},
-			{["ID"] = "GAME",			["Name"] = "GAME_NAME"},
-			{["ID"] = "WDECAL_OBJ",		["Name"] = "WDECAL_OBJ_NAME"},
-			-- {["ID"] = "WDECAL_FAC",		["Name"] = "WDECAL_FAC_NAME"},
-			-- {["ID"] = "WDECAL_MISC",	["Name"] = "WDECAL_MISC_NAME"},
-			{["ID"] = "WDECAL_POR",		["Name"] = "WDECAL_POR_NAME"},
-			{["ID"] = "WLETTERLU",		["Name"] = "WLETTERLU_NAME"},
-			{["ID"] = "WLETTERLL",		["Name"] = "WLETTERLL_NAME"},
-			{["ID"] = "WLETTERLP",		["Name"] = "WLETTERLP_NAME"},
-			{["ID"] = "SEAN",			["Name"] = "SEAN_NAME"},
-		}
-	},
-	{ ["ID"]= "PF_STRUCT_R", 			["Name"] = "W_PF_NAME", ["Icon"] = [[TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\BUILDINGS.ABANDONED.DDS]],
-		["SubGroups"] =
-		{
-			{["ID"] = "PF_ROOMS_TRA",	["Name"] = "PF_ROOMS_TRA_NAME"},
-			{["ID"] = "PF_ROOMS_SCI",	["Name"] = "PF_ROOMS_SCI_NAME"},
-			{["ID"] = "PF_ROOMS_WAR",	["Name"] = "PF_ROOMS_WAR_NAME"},
-			{["ID"] = "PF_ROOMS_RUIN",	["Name"] = "PF_ROOMS_RUIN_NAME"},
-			{["ID"] = "PF_ROOMS_MONO",	["Name"] = "BUILDING_MONOLITH"},
-			{["ID"] = "PF_ROOMS_LB_B",	["Name"] = "PF_ROOMS_LB_B_NAME"},
-			{["ID"] = "PF_ROOMS_LB_D",	["Name"] = "PF_ROOMS_LB_D_NAME"},
-			{["ID"] = "PF_ROOMS_MISC",	["Name"] = "PF_ROOMS_MISC_NAME"},
-			{["ID"] = "PF_ROOMS_COR",	["Name"] = "PF_ROOMS_COR_NAME"},
-			{["ID"] = "PF_ACCESS",		["Name"] = "UI_BUILD_GRID_DOORS"},
-			{["ID"] = "PF_ROOMS_ROAD_B",["Name"] = "PF_ROOMS_ROAD_B_NAME"},
-			{["ID"] = "PF_ROOMS_ROAD_R",["Name"] = "PF_ROOMS_ROAD_R_NAME"},
-			-- {["ID"] = "PF_ROOMS_ROAD_L",["Name"] = "PF_ROOMS_ROAD_L_NAME"},
-			-- {["ID"] = "PF_ROOMS_ROAD_A",["Name"] = "PF_ROOMS_ROAD_A_NAME"},
-		}
-	},
-	{ ["ID"]= "PF_BASIC_R", 			["Name"] = "W_BASIC_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/PF_CR_W.DDS]],
-		["SubGroups"] =
-		{
-			{["ID"] = "PF_BASIC_RUIN",	["Name"] = "PF_BASIC_RUIN_NAME"},
-			{["ID"] = "PF_BASIC_BRICK",	["Name"] = "PF_BASIC_BRICK_NAME"},
-			{["ID"] = "PF_BASIC_BF",	["Name"] = "PF_BASIC_BF_NAME"},
-			{["ID"] = "PF_BASIC_MESH",	["Name"] = "PF_BASIC_MESH_NAME"},
-			{["ID"] = "PF_BASIC_CHR",	["Name"] = "PF_BASIC_CHR_NAME"},
-			-- {["ID"] = "PF_BASIC_GLASS",	["Name"] = "PF_BASIC_GLASS_NAME"},
-			{["ID"] = "PF_CUBE_W",		["Name"] = "PF_CUBE_W_NAME"},
-			{["ID"] = "PF_CUBE_C",		["Name"] = "PF_CUBE_C_NAME"},
-			{["ID"] = "PF_CUBE_M",		["Name"] = "PF_CUBE_M_NAME"},
-			{["ID"] = "PF_CUBE_DECOR",	["Name"] = "PF_CUBE_DECOR_NAME"},
-			{["ID"] = "PF_EXT_DECOR",	["Name"] = "UI_BUILD_GRID_EXTERIOR"},
-			{["ID"] = "PF_CUBE_SPACE",	["Name"] = "UI_BUILD_GRID_FREIGHTER_ROOMS"},
-		}
-	},
-}
-
-HUBFLAG_GROUPS_ASSLESS =	-- BASEBUILDINGTABLE GROUPS IF BUILDFRAME RECTUM IS NOT USED
-{
-	{ ["ID"]= "WDGARDEN", 				["Name"] = "WDGARDEN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/WLUSH_LSHROM5.DDS]],
-		["SubGroups"] =
-		{
-			{["ID"] = "WDGARDEN_SS1",	["Name"] = "WDGARDEN_SS1_NAME"},
-			-- {["ID"] = "WDGARDEN_SM1",	["Name"] = "WDGARDEN_SM1_NAME"},
-			-- {["ID"] = "WDGARDEN_SL1",	["Name"] = "WDGARDEN_SL1_NAME"},
-			{["ID"] = "WDGARDEN_TS1",	["Name"] = "WDGARDEN_TS1_NAME"},
-			-- {["ID"] = "WDGARDEN_TM1",	["Name"] = "WDGARDEN_TM1_NAME"},
-			-- {["ID"] = "WDGARDEN_TL1",	["Name"] = "WDGARDEN_TL1_NAME"},
-			{["ID"] = "WDGARDEN_RS1",	["Name"] = "WDGARDEN_RS1_NAME"},
-			-- {["ID"] = "WDGARDEN_RM1",	["Name"] = "WDGARDEN_RM1_NAME"},
-			-- {["ID"] = "WDGARDEN_RL1",	["Name"] = "WDGARDEN_RL1_NAME"},
-			{["ID"] = "WDGARDEN_GLIT",	["Name"] = "WDGARDEN_GLIT_NAME"},
-			{["ID"] = "WDGARDEN_BONE",	["Name"] = "WDGARDEN_BONE_NAME"},
-			{["ID"] = "WDGARDENCOOK",	["Name"] = "WDGARDENCOOK_NAME"},
-			{["ID"] = "WDGARDENANI",	["Name"] = "WDGARDENANI_NAME"},
-		}
-	},
-	{ ["ID"]= "WDECOR_MAIN", 			["Name"] = "WDECOR_MAIN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/TAPEDECK.DDS]],
+	{ ["ID"]= "WDECOR_MAIN3", 			["Name"] = "WDECOR_MAIN3_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/HOLO_TELE.DDS]],
 		["SubGroups"] =
 		{
 			{["ID"] = "WDECOR_DIS",		["Name"] = "WDECOR_DIS_NAME"},
-			{["ID"] = "WDECOR_F",		["Name"] = "WDECOR_F_NAME"},
-			{["ID"] = "WDECOR_T",		["Name"] = "WDECOR_T_NAME"},
-			{["ID"] = "WDECOR_IL",		["Name"] = "WDECOR_IL_NAME"},
-			{["ID"] = "WDECOR_W",		["Name"] = "WDECOR_W_NAME"},
-			{["ID"] = "WDECORA",		["Name"] = "WDECORA_NAME"},
-			-- {["ID"] = "WDECORB",		["Name"] = "WDECORB_NAME"},
-			-- {["ID"] = "WDECORC",		["Name"] = "WDECORC_NAME"},
-			-- {["ID"] = "WDSPEC",			["Name"] = "WDSPEC_NAME"},
-			{["ID"] = "WPOSTER",		["Name"] = "UI_BUILD_GRID_POSTERS"},
+			{["ID"] = "WINTERACT",		["Name"] = "UI_BUILD_GRID_TECH"},
+			{["ID"] = "WDGARDENCOOK",	["Name"] = "WDGARDENCOOK_NAME"},
+			{["ID"] = "WNPC",			["Name"] = "WNPC_NAME"},
+			{["ID"] = "WSTORE",			["Name"] = "UI_BUILD_GRID_STORAGE"},
+			{["ID"] = "WLIGHTS1",		["Name"] = "WLIGHTS1_NAME"},
+			-- {["ID"] = "WLIGHTS_D",		["Name"] = "WLIGHTS_D_NAME"},
+			{["ID"] = "WNEONSIGN",		["Name"] = "WNEONSIGN_NAME"},
+			-- {["ID"] = "WHOLO_BIG",		["Name"] = "WHOLO_BIG_NAME"},
+			{["ID"] = "WNEONLL",		["Name"] = "WNEONLL_NAME"},
 		}
 	},
-	{ ["ID"]= "WDECOR_MAIN2", 			["Name"] = "WDECOR_MAIN2_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SCRAP_SHED.DDS]],
+	{ ["ID"]= "WDECOR_MAIN2", 			["Name"] = "WDECOR_MAIN2_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/SETTLE_TOWER_S.DDS]],
 		["SubGroups"] =
 		{
 			{["ID"] = "WDECOR_OS",		["Name"] = "WDECOR_OS_NAME"},
@@ -201,14 +107,7 @@ HUBFLAG_GROUPS_ASSLESS =	-- BASEBUILDINGTABLE GROUPS IF BUILDFRAME RECTUM IS NOT
 			{["ID"] = "WDECOR_V",		["Name"] = "WDECOR_V_NAME"},
 			{["ID"] = "WDECOR_P",		["Name"] = "WDECOR_P_NAME"},
 			{["ID"] = "WDECOR_IND",		["Name"] = "WDECOR_IND_NAME"},
-			{["ID"] = "WSTORE",			["Name"] = "UI_BUILD_GRID_STORAGE"},
-			{["ID"] = "WNPC",			["Name"] = "WNPC_NAME"},
-			-- {["ID"] = "WINTERACT",		["Name"] = "WINTERACT_NAME"},
-			{["ID"] = "WLIGHTS1",		["Name"] = "WLIGHTS1_NAME"},
-			-- {["ID"] = "WLIGHTS_D",		["Name"] = "WLIGHTS_D_NAME"},
-			{["ID"] = "WNEONSIGN",		["Name"] = "WNEONSIGN_NAME"},
-			-- {["ID"] = "WHOLO_BIG",		["Name"] = "WHOLO_BIG_NAME"},
-			{["ID"] = "WNEONLL",		["Name"] = "WNEONLL_NAME"},
+			{["ID"] = "WPOSTER",		["Name"] = "UI_BUILD_GRID_POSTERS"},
 		}
 	},
 	{ ["ID"]= "WDECAL_MAIN", 			["Name"] = "WDECAL_MAIN_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/HUBDECAL/LOGOHUB354/DECAL.HUB354.DDS]],
@@ -236,20 +135,20 @@ HUBFLAG_GROUPS_ASSLESS =	-- BASEBUILDINGTABLE GROUPS IF BUILDFRAME RECTUM IS NOT
 			{["ID"] = "PF_ROOMS_WAR",	["Name"] = "PF_ROOMS_WAR_NAME"},
 			{["ID"] = "PF_ROOMS_RUIN",	["Name"] = "PF_ROOMS_RUIN_NAME"},
 			-- {["ID"] = "PF_ROOMS_MONO",	["Name"] = "BUILDING_MONOLITH"},
-			{["ID"] = "PF_ROOMS_LB_B",	["Name"] = "PF_ROOMS_LB_B_NAME"},
-			{["ID"] = "PF_ROOMS_LB_D",	["Name"] = "PF_ROOMS_LB_D_NAME"},
 			{["ID"] = "PF_ROOMS_MISC",	["Name"] = "PF_ROOMS_MISC_NAME"},
 			{["ID"] = "PF_ROOMS_COR",	["Name"] = "PF_ROOMS_COR_NAME"},
 			{["ID"] = "PF_ACCESS",		["Name"] = "UI_BUILD_GRID_DOORS"},
-			{["ID"] = "PF_ROOMS_ROAD_B",["Name"] = "PF_ROOMS_ROAD_B_NAME"},
-			{["ID"] = "PF_ROOMS_ROAD_R",["Name"] = "PF_ROOMS_ROAD_R_NAME"},
 			-- {["ID"] = "PF_ROOMS_ROAD_L",["Name"] = "PF_ROOMS_ROAD_L_NAME"},
 			-- {["ID"] = "PF_ROOMS_ROAD_A",["Name"] = "PF_ROOMS_ROAD_A_NAME"},
+			{["ID"] = "PF_ROOMS_ROAD_B",["Name"] = "PF_ROOMS_ROAD_B_NAME"},
+			{["ID"] = "PF_ROOMS_ROAD_R",["Name"] = "PF_ROOMS_ROAD_R_NAME"},
 		}
 	},
-	{ ["ID"]= "PF_STRUCT_2", 			["Name"] = "W_PF2_NAME", ["Icon"] = [[TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\BUILDINGS.ABANDONED.DDS]],
+	{ ["ID"]= "PF_STRUCT_2", 			["Name"] = "W_PF2_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/PF_LB_TOW_TK3.DDS]],
 		["SubGroups"] =
 		{
+			{["ID"] = "PF_ROOMS_LB_B",	["Name"] = "PF_ROOMS_LB_B_NAME"},
+			{["ID"] = "PF_ROOMS_LB_D",	["Name"] = "PF_ROOMS_LB_D_NAME"},
 			{["ID"] = "PF_ROOMS_MONO",	["Name"] = "BUILDING_MONOLITH"},
 		}
 	},
@@ -272,7 +171,7 @@ HUBFLAG_GROUPS_ASSLESS =	-- BASEBUILDINGTABLE GROUPS IF BUILDFRAME RECTUM IS NOT
 	},
 }
 
-DEBUG_LANGUAGE = "WIN_Hubflag"
+DEBUG_LANGUAGE = "NMS_LOC7"
 LANGUAGE_TYPE = {"English", "French", "Italian", "German", "Spanish", "Russian", "Polish", "Dutch", "Portuguese", "LatinAmericanSpanish", "BrazilianPortuguese", "SimplifiedChinese", "TraditionalChinese", "TencentChinese", "Korean", "Japanese", "USEnglish"}
 ADD_LANGUAGE_LIST = 
 {
@@ -551,7 +450,7 @@ ADD_LANGUAGE_LIST =
 	},
 	["WDECOR_MAIN2_NAME"] = {
 		["ID"] = "WDECOR_MAIN2_NAME",
-		["Value"] = {["English"]				= [[EUCLI-EA OUTDOOR / LIGHTS / TECHNOLOGY]],
+		["Value"] = {["English"]				= [[EUCLI-EA OUTDOOR]],
 					 ["French"]					= [[]],	
 					 ["Italian"]				= [[]],	
 					 ["German"]					= [[]],	
@@ -562,9 +461,30 @@ ADD_LANGUAGE_LIST =
 					 ["Portuguese"]				= [[]],	
 					 ["LatinAmericanSpanish"]	= [[]],	
 					 ["BrazilianPortuguese"]	= [[]],	
-					 ["SimplifiedChinese"]		= [[銀家傢俬戶外/燈光/科技]],	
-					 ["TraditionalChinese"]		= [[銀家傢俬戶外/燈光/科技]],	
-					 ["TencentChinese"]			= [[銀家傢俬戶外/燈光/科技]],	
+					 ["SimplifiedChinese"]		= [[銀家傢俬戶外]],	
+					 ["TraditionalChinese"]		= [[銀家傢俬戶外]],	
+					 ["TencentChinese"]			= [[銀家傢俬戶外]],	
+					 ["Korean"]					= [[]],	
+					 ["Japanese"]				= [[]],	
+					 ["USEnglish"]				= [[]],	
+					},
+	},
+	["WDECOR_MAIN3_NAME"] = {
+		["ID"] = "WDECOR_MAIN3_NAME",
+		["Value"] = {["English"]				= [[EUCLI-EA LIGHTS / TECHNOLOGY]],
+					 ["French"]					= [[]],	
+					 ["Italian"]				= [[]],	
+					 ["German"]					= [[]],	
+					 ["Spanish"]				= [[]],	
+					 ["Russian"]				= [[]],	
+					 ["Polish"]					= [[]],	
+					 ["Dutch"]					= [[]],	
+					 ["Portuguese"]				= [[]],	
+					 ["LatinAmericanSpanish"]	= [[]],	
+					 ["BrazilianPortuguese"]	= [[]],	
+					 ["SimplifiedChinese"]		= [[銀家傢俬燈光/科技]],	
+					 ["TraditionalChinese"]		= [[銀家傢俬燈光/科技]],	
+					 ["TencentChinese"]			= [[銀家傢俬燈光/科技]],	
 					 ["Korean"]					= [[]],	
 					 ["Japanese"]				= [[]],	
 					 ["USEnglish"]				= [[]],	
@@ -593,6 +513,27 @@ ADD_LANGUAGE_LIST =
 	},
 	["W_PF_NAME"] = {
 		["ID"] = "W_PF_NAME",
+		["Value"] = {["English"]				= [[EUCLI-EA OUTPOSTS]],
+					 ["French"]					= [[]],	
+					 ["Italian"]				= [[]],	
+					 ["German"]					= [[]],	
+					 ["Spanish"]				= [[]],	
+					 ["Russian"]				= [[]],	
+					 ["Polish"]					= [[]],	
+					 ["Dutch"]					= [[]],	
+					 ["Portuguese"]				= [[]],	
+					 ["LatinAmericanSpanish"]	= [[]],	
+					 ["BrazilianPortuguese"]	= [[]],	
+					 ["SimplifiedChinese"]		= [[銀家傢俬住房]],	
+					 ["TraditionalChinese"]		= [[銀家傢俬住房]],	
+					 ["TencentChinese"]			= [[銀家傢俬住房]],	
+					 ["Korean"]					= [[]],	
+					 ["Japanese"]				= [[]],	
+					 ["USEnglish"]				= [[]],	
+					},
+	},
+	["W_PF2_NAME"] = {
+		["ID"] = "W_PF2_NAME",
 		["Value"] = {["English"]				= [[EUCLI-EA STRUCTURES]],
 					 ["French"]					= [[]],	
 					 ["Italian"]				= [[]],	
@@ -607,27 +548,6 @@ ADD_LANGUAGE_LIST =
 					 ["SimplifiedChinese"]		= [[銀家傢俬建築]],	
 					 ["TraditionalChinese"]		= [[銀家傢俬建築]],	
 					 ["TencentChinese"]			= [[銀家傢俬建築]],	
-					 ["Korean"]					= [[]],	
-					 ["Japanese"]				= [[]],	
-					 ["USEnglish"]				= [[]],	
-					},
-	},
-	["W_PF2_NAME"] = {
-		["ID"] = "W_PF2_NAME",
-		["Value"] = {["English"]				= [[EUCLI-EA STRUCTURES 2]],
-					 ["French"]					= [[]],	
-					 ["Italian"]				= [[]],	
-					 ["German"]					= [[]],	
-					 ["Spanish"]				= [[]],	
-					 ["Russian"]				= [[]],	
-					 ["Polish"]					= [[]],	
-					 ["Dutch"]					= [[]],	
-					 ["Portuguese"]				= [[]],	
-					 ["LatinAmericanSpanish"]	= [[]],	
-					 ["BrazilianPortuguese"]	= [[]],	
-					 ["SimplifiedChinese"]		= [[銀家傢俬建築2]],	
-					 ["TraditionalChinese"]		= [[銀家傢俬建築2]],	
-					 ["TencentChinese"]			= [[銀家傢俬建築2]],	
 					 ["Korean"]					= [[]],	
 					 ["Japanese"]				= [[]],	
 					 ["USEnglish"]				= [[]],	
@@ -1223,7 +1143,7 @@ ADD_LANGUAGE_LIST =
 	},
 	["WINTERACT_NAME"] = {
 		["ID"] = "WINTERACT_NAME",
-		["Value"] = {["English"]				= [[INTERACTIVE DECORATIONS]],
+		["Value"] = {["English"]				= [[DECORATIVE TECHNOLOGY]],
 					 ["French"]					= [[]],	
 					 ["Italian"]				= [[]],	
 					 ["German"]					= [[]],	
@@ -1234,9 +1154,9 @@ ADD_LANGUAGE_LIST =
 					 ["Portuguese"]				= [[]],	
 					 ["LatinAmericanSpanish"]	= [[]],	
 					 ["BrazilianPortuguese"]	= [[]],	
-					 ["SimplifiedChinese"]		= [[互動裝飾]],	
-					 ["TraditionalChinese"]		= [[互動裝飾]],	
-					 ["TencentChinese"]			= [[互動裝飾]],	
+					 ["SimplifiedChinese"]		= [[科技裝飾]],	
+					 ["TraditionalChinese"]		= [[科技裝飾]],	
+					 ["TencentChinese"]			= [[科技裝飾]],	
 					 ["Korean"]					= [[]],	
 					 ["Japanese"]				= [[]],	
 					 ["USEnglish"]				= [[]],	
@@ -2455,12 +2375,15 @@ CUSTOM_REWARDS = --REWARDTABLE REWARDS
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardSpecificProductRecipe.xml">
-              <Property name="Id" value="DECALHUB369" />
-              <Property name="Slient" value="False" />
+              <Property name="ID" value="DECALHUB369" />
+              <Property name="Silent" value="False" />
+              <Property name="HideInSeasonRewards" value="False" />
+              <Property name="SeasonRewardFormat" value="UI_BLUEPRINT_REWARD_FORMAT" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -2472,6 +2395,7 @@ CUSTOM_REWARDS = --REWARDTABLE REWARDS
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -2709,7 +2633,7 @@ HUBFLAG_VANILLA = -- DEFAULTSAVEDATA VANILLA KnownProducts
 
 INFRA_ADDGROUP =  [[<Property name="Groups">
 <Property value="GcBaseBuildingEntryGroup.xml">
-<Property name="Group" value="ROOMS" />
+<Property name="Group" value="BASIC_LEGACY" />
 <Property name="SubGroupName" value="LEG_INFRA" />
 <Property name="SubGroup" value="0" />
 </Property>
@@ -5991,7 +5915,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "ROOMS", "PF_ROOMS_COR" },
+						["SubGroupName"] = 					{ "PF_ROOMS_COR" },
+						-- ["SubGroupName"] = 					{ "ROOMS", "PF_ROOMS_COR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -7015,6 +6940,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_RUIN" },
 						["SubGroupName"] = 					{ "PF_ROOMS_RUIN", "PF_BASIC_RUIN" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -7063,6 +6989,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_RUIN" },
 						["SubGroupName"] = 					{ "PF_ROOMS_RUIN", "PF_BASIC_RUIN" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -7111,6 +7038,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_RUIN" },
 						["SubGroupName"] = 					{ "PF_ROOMS_RUIN", "PF_BASIC_RUIN" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -7159,6 +7087,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_RUIN" },
 						["SubGroupName"] = 					{ "PF_ROOMS_RUIN", "PF_BASIC_RUIN" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -10036,7 +9965,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -10081,7 +10011,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -10125,7 +10056,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -10169,7 +10101,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -10213,7 +10146,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -10257,7 +10191,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -10301,7 +10236,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS", "PF_BASIC_BF" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS", "PF_BASIC_BF" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -10345,7 +10281,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS", "PF_BASIC_RUIN" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS", "PF_BASIC_RUIN" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -10873,7 +10810,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_BASIC_BRICK", "PF_ROOMS_RUIN" },
+						["SubGroupName"] = 					{ "PF_BASIC_BRICK" },
+						-- ["SubGroupName"] = 					{ "PF_BASIC_BRICK", "PF_ROOMS_RUIN" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -10969,7 +10907,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -11013,7 +10952,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -11677,7 +11617,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "CUBES", "PF_CUBE_DECOR" },
+						["SubGroupName"] = 					{ "PF_CUBE_DECOR" },
+						-- ["SubGroupName"] = 					{ "CUBES", "PF_CUBE_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -11725,7 +11666,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "CUBES", "PF_CUBE_DECOR" },
+						["SubGroupName"] = 					{ "PF_CUBE_DECOR" },
+						-- ["SubGroupName"] = 					{ "CUBES", "PF_CUBE_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -11817,7 +11759,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -11865,7 +11808,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -11913,7 +11857,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -11957,7 +11902,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12001,7 +11947,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12045,7 +11992,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12089,7 +12037,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12133,7 +12082,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12357,7 +12307,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -12401,7 +12352,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12445,7 +12397,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12489,7 +12442,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12533,7 +12487,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12577,7 +12532,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12621,7 +12577,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "PF_ACCESS_D1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12665,7 +12622,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -12713,7 +12671,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12761,7 +12719,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12809,7 +12767,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -12857,7 +12815,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -13129,7 +13087,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -13173,7 +13132,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["SubGroupName"] = 					{ "PF_ACCESS"},
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -13217,7 +13177,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -13705,7 +13665,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR", },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -13749,7 +13710,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR", },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -13793,7 +13755,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR", },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -13837,7 +13800,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR", },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -13881,7 +13845,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR", },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -13925,7 +13890,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR", },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_MISC", "PF_EXT_DECOR", },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -13969,7 +13935,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -14017,7 +13984,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -14065,7 +14033,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -14113,7 +14082,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -14161,7 +14131,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -14209,7 +14180,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -18353,7 +18325,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_ROAD", "UTILITY_POWER", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDECOR_OS" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_ROAD", "UTILITY_POWER", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -18401,7 +18374,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18445,7 +18419,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18489,7 +18464,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18533,7 +18509,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18577,7 +18554,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18621,7 +18599,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18665,7 +18644,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18709,7 +18689,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18753,7 +18734,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18797,7 +18779,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18841,7 +18824,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -18893,7 +18877,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDGARDENCOOK", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -19473,7 +19458,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "CUBES", "PF_CUBE_DECOR" },
+						["SubGroupName"] = 					{ "PF_CUBE_DECOR" },
+						-- ["SubGroupName"] = 					{ "CUBES", "PF_CUBE_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -19517,7 +19503,8 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "CUBES", "PF_CUBE_DECOR" },
+						["SubGroupName"] = 					{ "PF_CUBE_DECOR" },
+						-- ["SubGroupName"] = 					{ "CUBES", "PF_CUBE_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20406,7 +20393,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDECORA", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20454,7 +20442,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDECORA", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20502,7 +20491,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "FARM" },
+						["SubGroupName"] = 					{ "WDGARDENCOOK" },
+						-- ["SubGroupName"] = 					{ "WDECORA", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20598,7 +20588,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20650,7 +20640,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20698,7 +20688,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20746,7 +20736,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20794,7 +20784,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20842,7 +20832,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -20934,7 +20924,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDECOR_IND" },
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						-- ["SubGroupName"] = 					{ "WDECORA", "WDECOR_IND" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -21518,7 +21509,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -21566,7 +21557,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -21618,7 +21609,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -21666,7 +21657,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -21714,7 +21705,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_F", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -21766,7 +21757,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_F", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -22618,7 +22609,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -22666,7 +22658,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -22714,7 +22707,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -22906,7 +22900,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA" },
+						["SubGroupName"] = 					{ "WDECOR_F" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -23102,7 +23096,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WDECOR_F", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -23142,7 +23136,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"CUSTOMMODELS/SC_HUBFLAG/DECOR/CORNERTABLE_1.SCENE.MBIN",
+						["Model"] = 					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\CORNERTABLEPARTS\CORNERTABLE_1.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"True",
 						["IsDecoration"] = 				"True",
@@ -23398,7 +23392,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_OS", "WLIGHTS1" },
+						["SubGroupName"] = 					{ "WLIGHTS1" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "WLIGHTS1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -23446,7 +23441,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_OS", "WLIGHTS1" },
+						["SubGroupName"] = 					{ "WLIGHTS1" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "WLIGHTS1" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -23874,7 +23870,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_F", "FARM" },
+						["SubGroupName"] = 					{ "WDECOR_F" },
+						-- ["SubGroupName"] = 					{ "WDECOR_F", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -23922,7 +23919,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_F", "FARM" },
+						["SubGroupName"] = 					{ "WDECOR_F" },
+						-- ["SubGroupName"] = 					{ "WDECOR_F", "FARM" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -25222,7 +25220,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WDECOR_F", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -25274,7 +25272,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WDECOR_F", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -26574,7 +26572,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WDECOR_F", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -27330,7 +27328,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -27374,7 +27373,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -27418,7 +27418,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -27642,7 +27643,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -28994,7 +28995,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA" },
+						["SubGroupName"] = 					{ "WDECOR_F" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -29086,7 +29087,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_IL", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_IL", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -29178,7 +29180,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA" },
+						["SubGroupName"] = 					{ "WDECOR_DIS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -29790,7 +29792,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA" },
+						["SubGroupName"] = 					{ "WDECOR_V" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -31102,7 +31104,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -32162,7 +32164,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -33578,7 +33580,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "INT_DECOR", "PF_EXT_DECOR" },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR" },
+						-- ["SubGroupName"] = 					{ "INT_DECOR", "PF_EXT_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -33626,7 +33629,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "INT_DECOR", "PF_EXT_DECOR" },
+						["SubGroupName"] = 					{ "PF_EXT_DECOR" },
+						-- ["SubGroupName"] = 					{ "INT_DECOR", "PF_EXT_DECOR" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -34390,7 +34394,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WDECOR_OS", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -34942,7 +34946,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -34990,7 +34994,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -35038,7 +35042,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"True",
@@ -38474,7 +38478,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -38654,7 +38659,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECORA" },
+						["SubGroupName"] = 					{ "W_DEAD" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -38794,7 +38799,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -38842,7 +38848,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -39130,7 +39137,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECORA", "WDSPEC" },
+						["SubGroupName"] = 					{ "WINTERACT", "WDSPEC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -39934,6 +39941,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
 						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_DIS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -39982,6 +39990,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
 						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_DIS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
@@ -40030,6 +40039,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
 						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_DIS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
@@ -40078,6 +40088,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
 						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_DIS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
@@ -40126,6 +40137,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
 						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_DIS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
@@ -40174,7 +40186,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -40222,7 +40235,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -40270,7 +40284,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -40318,7 +40333,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -40366,7 +40382,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -40414,7 +40431,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -40462,7 +40480,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -40510,7 +40529,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -40558,7 +40578,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -40606,7 +40627,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
+						["SubGroupName"] = 					{ "PF_ROOMS_LB_D" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_LB_D", "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -44198,7 +44220,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "WDECOR_OS" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"True",
 						["CanChangeMaterial"] = 		"False",
@@ -44334,7 +44356,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "WDECOR_W" },
+						["SubGroupName"] = 					{ "W_DEAD" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -44658,7 +44680,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_IND", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_IND", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -44706,7 +44729,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_IND", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_IND", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -44794,7 +44818,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "WDECOR_OS", "PF_ROOMS_MISC" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -44842,7 +44867,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECORA" },
+						["SubGroupName"] = 					{ "WDECORA", "WDECOR_IND" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -44886,7 +44911,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECORA" },
+						["SubGroupName"] = 					{ "WDECORA", "WDECOR_IND" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -44974,7 +44999,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"True",
-						["SubGroupName"] = 					{ "WDECOR_DIS" },
+						["SubGroupName"] = 					{ "W_DEAD" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -45114,7 +45139,8 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"True",
 						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ROOMS_MISC", "WDECOR_V" },
+						["SubGroupName"] = 					{ "PF_ROOMS_MISC" },
+						-- ["SubGroupName"] = 					{ "PF_ROOMS_MISC", "WDECOR_V" },
 						["StorageContainerIndex"] = 	"-1",
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
@@ -66088,7 +66114,7 @@ end
 
 function GetGroupData(ID, NAME, ICON, CHILDREN)
 SUBGROUP_INJECT = ""
-for m,n in pairs(CHILDREN) do
+for _m,n in pairs(CHILDREN) do
 	SUBGROUP_INJECT = SUBGROUP_INJECT .. [[
         <Property value="GcBaseBuildingSubGroup.xml">
           <Property name="Id" value="]] .. n["ID"] .. [[" />
@@ -66131,7 +66157,8 @@ else SNAP_INJECT = SNAP
 end
 
 INACTIVE = ""
-if OVERRIDE_INACTIVE then INACTIVE = MODEL end
+if OVERRIDE_INACTIVE then INACTIVE = MODEL
+end
 
 if BUILD_ANYWHERE then
 	FREIGHTER = "True"
@@ -66147,15 +66174,15 @@ else SNAPDIST_INJECT = SNAPPING_DISTANCE
 end
 
 GROUPS_TEMP = {}
-for m,n in pairs(GROUPS) do
+for _m,n in pairs(GROUPS) do
 	TOP_GROUP = ""
-	for o,p in pairs(GROUPS_INJECT) do
-		for q,r in pairs(p["SubGroups"]) do
+	for _o,p in pairs(GROUPS_INJECT) do
+		for _q,r in pairs(p["SubGroups"]) do
 			if n == r["ID"] then TOP_GROUP = p["ID"] 
 			end 
 		end
 	end
-	for s,t in pairs(GROUPS_TEMP) do
+	for _s,t in pairs(GROUPS_TEMP) do
 		if TOP_GROUP == t then TOP_GROUP = "" 
 		end
 	end
@@ -66178,7 +66205,6 @@ end
 return [[
     <Property value="GcBaseBuildingEntry.xml">
       <Property name="ID" value="]] .. ID .. [[" />
-      <Property name="HasProduct" value="True" />
       <Property name="IsTemporary" value="False" />
       <Property name="IsFromModFolder" value="True" />
       <Property name="Style" value="GcBaseBuildingPartStyle.xml">
@@ -66201,7 +66227,6 @@ return [[
       </Property>
       <Property name="IsPlaceable" value="]] .. PLACE .. [[" />
       <Property name="IsDecoration" value="]] .. ISDECOR .. [[" />
-      <Property name="PlacementNormalOffset" value="0" />
       <Property name="Biome" value="GcBiomeType.xml">
         <Property name="Biome" value="]] .. BIOME .. [[" />
       </Property>
@@ -66217,10 +66242,10 @@ return [[
       <Property name="PlanetBaseLimit" value="0" />
       <Property name="FreighterBaseLimit" value="0" />
       <Property name="CheckPlaceholderCollision" value="]] .. CHECKCOLL .. [[" />
+	  <Property name="CheckPlayerCollision" value="]] .. ENCOLL .. [[" />
       <!--Property name="CollisionScale" value="]] .. COLLSCALE .. [[" /-->
-      <Property name="EnableCollision" value="]] .. ENCOLL .. [[" />
-      <Property name="OptionalPhysics" value="]] .. TOUCH_INJECT .. [[" />
-      <Property name="CanPlaceOnItself" value="]] .. STACK .. [[" />
+      <!--Property name="OptionalPhysics" value="]] .. TOUCH_INJECT .. [[" /-->
+      <!--Property name="CanPlaceOnItself" value="]] .. STACK .. [[" /-->
       <Property name="CanRotate3D" value="True" />
       <Property name="CanScale" value="]] .. SCALEABLE .. [[" />
       <Property name="Groups">
@@ -66236,18 +66261,23 @@ return [[
       <Property name="CanPickUp" value="False" />
       <Property name="ShowInBuildMenu" value="True" />
       <Property name="CompositePartObjectIDs" />
+      <Property name="FamilyIDs" />
+      <Property name="BuildEffectAccelerator" value="1" />
       <Property name="RemovesAttachedDecoration" value="]] .. RAD .. [[" />
+      <Property name="RemovesWhenUnsnapped" value="False" />
       <Property name="EditsTerrain" value="]] .. TERRAIN .. [[" />
       <Property name="BaseTerrainEditShape" value="]] .. T_SHAPE .. [[" />
       <!--Property name="TerrainEditBaseYOffset" value="]] .. T_BASE .. [[" />
       <Property name="TerrainEditTopYOffset" value="]] .. T_TOP .. [[" />
       <Property name="TerrainEditBoundsScalar" value="]] .. T_SCALE .. [[" /-->
+      <Property name="MinimumDeleteDistance" value="1" />
       <Property name="IsSealed" value="]] .. SEAL .. [[" />
       <Property name="CloseMenuAfterBuild" value="False" />
       <Property name="LinkGridData" value="GcBaseLinkGridData.xml">
 ]] .. POWER_INJECT .. [[
       </Property>
       <Property name="GhostsCountOverride" value="2" />
+      <Property name="ShowGhosts" value="True" />
       <Property name="SnappingDistanceOverride" value="]] .. SNAPDIST_INJECT .. [[" />
       <Property name="RegionSpawnLOD" value="1" />
       <Property name="NPCInteractionScene" value="TkModelResource.xml">
@@ -66272,7 +66302,7 @@ ICON_INJECT = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/]] .. ID .. [[.DDS]]
 else ICON_INJECT = ICON 
 end
 INGRED_INJECT = ""
-for m,n in pairs(INGRED) do
+for _m,n in pairs(INGRED) do
 	INGRED_INJECT = INGRED_INJECT .. [[
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="]] .. n["ID"] .. [[" />
@@ -66360,6 +66390,7 @@ return [[
       <Property name="GoodForSelling" value="False" />
       <Property name="GiveRewardOnSpecialPurchase" value="" />
       <Property name="EggModifierIngredient" value="False" />
+      <Property name="IsTechBox" value="False" />
     </Property>
 ]]
 end
@@ -66390,7 +66421,7 @@ end
 
 function GetSnapGroupPart(ID, MODELS, INACTIVE)
 STYLEMODEL_INJECT = ""
-for k,l in pairs(MODELS) do
+for _k,l in pairs(MODELS) do
 	INACTIVE_INJECT = ""
 	if INACTIVE then INACTIVE_INJECT = l["Filename"] 
 end
@@ -66544,12 +66575,12 @@ end
 
 -- BEGIN PUTTING DATA TOGETHER
 
-if RECTUM_USED then
+-- if RECTUM_USED then
 	GROUPS_INJECT = HUBFLAG_GROUPS
-else GROUPS_INJECT = HUBFLAG_GROUPS_ASSLESS
-end
+-- else GROUPS_INJECT = HUBFLAG_GROUPS_ASSLESS
+-- end
 
-for i,j in pairs(GROUPS_INJECT) do	-- INITIALISE TOPGROUP_COUNTER
+for _i,j in pairs(GROUPS_INJECT) do	-- INITIALISE TOPGROUP_COUNTER
 	TOPGROUP_COUNTER[j["ID"]] = 0
 end
 
@@ -66577,10 +66608,10 @@ EXPORT_SPECSHOP= "<!-- HUBFLAG SPECIALS -->"
 NEWFILES_FINAL = {}
 
 -- JOINING THE OBJECT LISTS
-for i,j in pairs(HUBFLAG_DECAL_GARDEN) do
+for _i,j in pairs(HUBFLAG_DECAL_GARDEN) do
 	HUBFLAG_DECOR_NOSNAP[#HUBFLAG_DECOR_NOSNAP+1] = j
 end
-for i,j in pairs(HUBFLAG_DECOR_NOSNAP) do
+for _i,j in pairs(HUBFLAG_DECOR_NOSNAP) do
 	HUBFLAG_OBJPROD[#HUBFLAG_OBJPROD + 1] = j
 end
 
@@ -66610,8 +66641,9 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"])
 	EXPORT_COST_LIST[i+1] = GetBaseBuildingCost(j["OBJECT"]["ID"], POP_IN_RATE)
 	IS_SPEC = false
-	for m,n in pairs(j["OBJECT"]["SubGroupName"]) do
-		if n == "WDSPEC" then IS_SPEC = true end		
+	for _m,n in pairs(j["OBJECT"]["SubGroupName"]) do
+		if n == "WDSPEC" then IS_SPEC = true
+		end		
 	end
 	if IS_SPEC then
 			EXPORT_SPECSHOP = EXPORT_SPECSHOP .. GetSpecials(j["OBJECT"]["ID"])		-- PUTTING WDSPEC OBJECTS IN PURCHASEABLESPECIALS
@@ -66622,38 +66654,11 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 end
 
 -- ADDING SNAPGROUPS TO PARTS TABLE
-for i,j in pairs(HUBFLAG_SNAPGROUPS) do
+for _i,j in pairs(HUBFLAG_SNAPGROUPS) do
 	table.insert(EXPORT_PARTS_LIST,GetSnapGroupPart(j["ID"], j["StyleModels"], OVERRIDE_INACTIVE))
-	for k,l in pairs(j["StyleModels"]) do
+	for _k,l in pairs(j["StyleModels"]) do
 		table.insert(EXPORT_AUTOPARTDATA_LIST, getAutoPartData(j["ID"], l["Style"]))
 	end
-end
-
--- BUILDING LANGUAGE TABLES 
-LANGUAGE_FILE_HEADER = [[
-<?xml version="1.0" encoding="utf-8"?>
-<Data template="TkLocalisationTable">
-  <Property name="Table">]]
-for i,j in pairs(LANGUAGE_TYPE) do
-	LANGUAGE_TEMP = {}
-	EXPORT_LANGUAGE = {}
-	table.insert(EXPORT_LANGUAGE, LANGUAGE_FILE_HEADER)
-	for k,l in pairs(ADD_LANGUAGE_LIST) do
-		-- USES ENGLISH ENTRY IF THERE IS NO TRANSLATION
-		if l["Value"][j] == "" then
-			 table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"]["English"]))
-		else table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"][j])) 
-		end
-	end
-		table.insert(EXPORT_LANGUAGE, [[
-</Property>
-</Data>]])
-	if j == "LatinAmericanSpanish" then
-		LANGUAGE_TEMP = {["FILE_DESTINATION"] = [[LANGUAGE\]] .. string.upper(DEBUG_LANGUAGE) .. "_LATINAMERAICANSPANISH.EXML" ,["FILE_CONTENT"] = table.concat(EXPORT_LANGUAGE)}
-	else
-		LANGUAGE_TEMP = {["FILE_DESTINATION"] = [[LANGUAGE\]] .. string.upper(DEBUG_LANGUAGE) .. "_" .. string.upper(j) .. ".EXML" ,["FILE_CONTENT"] = table.concat(EXPORT_LANGUAGE)}
-	end
-	table.insert(NEWFILES_FINAL, LANGUAGE_TEMP)
 end
 
 -- END TAGS FOR MANUAL READING EXML_Helper FILES
@@ -66721,7 +66726,9 @@ BUILDING_DISTANCE_CHANGE =
 							--["PRECEDING_KEY_WORDS"] = 	{""},
 							["VALUE_CHANGE_TABLE"] 	= 	
 							{
-								{"BuildingPlacementMaxDistance",	BUILD_DISTANCE},
+								{"BuildingPlacementMaxDistance",	BUILD_DISTANCE_MAX},
+								{"BuildingPlacementDefaultMinDistance",	BUILD_DISTANCE_MIN},
+								{"BuildingPlacementMaxConnectionLength", BUILD_DISTANCE_CONNECT},
 							},
 						},
 						{
@@ -66896,7 +66903,7 @@ BASEBUILD_ENTRIES =
 						["VALUE_CHANGE_TABLE"] 	= 
 						{
 							--{"Filename", [[CUSTOMMODELS\SC_HUBFLAG\DECOR\DOOR\SPACEBASE\CORRIDOR_LSHAPE_SNAPPOINT.SCENE.MBIN]]},
-							{"BuildableOnPlanetBase", "True"},
+							-- {"BuildableOnPlanetBase", "True"},
 							{"BuildableOnSpaceBase", "True"},
 						}
 					},
@@ -66927,7 +66934,7 @@ BASEBUILD_ENTRIES =
 						["VALUE_CHANGE_TABLE"] 	= 
 						{
 							--{"Filename", [[CUSTOMMODELS\SC_HUBFLAG\DECOR\DOOR\SPACEBASE\CORRIDOR_TSHAPE_SNAPPOINT.SCENE.MBIN]]},
-							{"BuildableOnPlanetBase", "True"},
+							-- {"BuildableOnPlanetBase", "True"},
 							{"BuildableOnSpaceBase", "True"},
 						}
 					},
@@ -66937,8 +66944,9 @@ BASEBUILD_ENTRIES =
 						["VALUE_CHANGE_TABLE"] 	= 
 						{
 							--{"Filename", [[CUSTOMMODELS\SC_HUBFLAG\DECOR\DOOR\SPACEBASE\CORRIDOR_STAIRS_SNAPPOINT.SCENE.MBIN]]},
-							{"BuildableOnPlanetBase", "True"},
+							-- {"BuildableOnPlanetBase", "True"},
 							{"BuildableOnSpaceBase", "True"},
+							{"BuildableOnFreighter", "True"},
 						}
 					},
 					{
@@ -66968,7 +66976,7 @@ BASEBUILD_ENTRIES =
 						["VALUE_CHANGE_TABLE"] 	= 
 						{
 							-- {"Filename", [[CUSTOMMODELS\SC_HUBFLAG\DECOR\DOOR\SPACEBASE\CORRIDOR_XSHAPE_SNAPPOINT.SCENE.MBIN]]},
-							{"BuildableOnPlanetBase", "True"},
+							-- {"BuildableOnPlanetBase", "True"},
 							{"BuildableOnSpaceBase", "True"},
 						}
 					},
@@ -67395,7 +67403,7 @@ BASEBUILD_ENTRIES =
 -- </Property>]],
 					-- },
 					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "UI_BUILD_GRID_CUBEROOMS"},
+						["SPECIAL_KEY_WORDS"] = {"Name", "UI_BUILD_GRID_METAL"},
 						["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
 						--["LINE_OFFSET"] 		= "+1",
 						["ADD"] 				= 
@@ -67830,7 +67838,7 @@ FINAL_VALUE_CHANGE =
 						}
 					},
 				},
-				{
+				--[[{
 					["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"]	= 
 					{
@@ -67846,11 +67854,58 @@ FINAL_VALUE_CHANGE =
 							},
 						}
 					},
-				},
+				},]]
 			}
 
+-- BUILDING LANGUAGE TABLES 
+LANGUAGE_FILE_HEADER = [[
+<?xml version="1.0" encoding="utf-8"?>
+<Data template="TkLocalisationTable">
+  <Property name="Table">]]
+for i,j in pairs(LANGUAGE_TYPE) do
+	LANGUAGE_TEMP = {}
+	EXPORT_LANGUAGE = {}
+	-- table.insert(EXPORT_LANGUAGE, LANGUAGE_FILE_HEADER)
+	for k,l in pairs(ADD_LANGUAGE_LIST) do
+		-- USES ENGLISH ENTRY IF THERE IS NO TRANSLATION
+		if l["Value"][j] == "" then
+			 table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"]["English"]))
+		else table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"][j])) 
+		end
+	end
+		-- table.insert(EXPORT_LANGUAGE, [[
+-- </Property>
+-- </Data>]])
+	if j == "LatinAmericanSpanish" then
+		LANGUAGE_TEMP = {
+							["MBIN_FILE_SOURCE"] = [[LANGUAGE\]] .. string.upper(DEBUG_LANGUAGE) .. "_LATINAMERAICANSPANISH.MBIN" ,
+							["EXML_CHANGE_TABLE"]	= 
+							{
+								{
+									["PRECEDING_KEY_WORDS"] = {"Table"},
+									["LINE_OFFSET"] 		= "+0",
+									["ADD"] 				= table.concat(EXPORT_LANGUAGE)
+								}
+							}
+						}
+	else
+		LANGUAGE_TEMP = {
+							["MBIN_FILE_SOURCE"] = [[LANGUAGE\]] .. string.upper(DEBUG_LANGUAGE) .. "_" .. string.upper(j) .. ".MBIN" ,
+							["EXML_CHANGE_TABLE"]	= 
+							{
+								{
+									["PRECEDING_KEY_WORDS"] = {"Table"},
+									["LINE_OFFSET"] 		= "+0",
+									["ADD"] 				= table.concat(EXPORT_LANGUAGE)
+								}
+							}
+						}
+	end
+	table.insert(FINAL_VALUE_CHANGE, LANGUAGE_TEMP)
+end
+
 if MORE_VANILLA_FLOOR then
-	for i,j in pairs(VANILLA_FLOOR_VALUE_CHANGE) do
+	for _i,j in pairs(VANILLA_FLOOR_VALUE_CHANGE) do
 		table.insert(FINAL_VALUE_CHANGE, j)
 	end
 end
@@ -67872,5 +67927,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] = FINAL_VALUE_CHANGE
 		}
 	},
-["ADD_FILES"] 			= NEWFILES_FINAL,
+-- ["ADD_FILES"] 			= NEWFILES_FINAL,
 }
