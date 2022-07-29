@@ -1,5 +1,5 @@
 Author = "Step Modifications"
-ModName = "ZZZZStepNoMansSky"
+ModName = "___StepNoMansSky"
 ModDescription = "These changes alter various graphical settings."
 FileSource01 = "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
 
@@ -9,6 +9,8 @@ FileSource01 = "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
 --##### Variables #####
 --## Step ##
 ShadowLengthStation = 2000		-- How far away shadows are drawn | 1300 | 274
+ShadowLengthFreighter = 300		-- | 150 | 275
+MaxParticleRenderRange = 150	-- Max distance particles will render | 75 | 493
 TerrainAnisoLow = 8				-- Default Anisotropic  Filtering for Low Preset | 2 | 591
 TerrainAnisoMed = 16			-- Default Anisotropic  Filtering for Medium Preset | 2 | 592
 TerrainAnisoHi = 16				-- Default Anisotropic  Filtering for High Preset | 4 | 593
@@ -35,6 +37,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{ ["PRECEDING_KEY_WORDS"] = "",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ShadowLengthStation", ShadowLengthStation}, 
+						{"ShadowLengthFreighter", ShadowLengthFreighter}, 
+						{"MaxParticleRenderRange", MaxParticleRenderRange}, 
 						{"TerrainAnisoLow", TerrainAnisoLow}, 
 						{"TerrainAnisoMed", TerrainAnisoMed}, 
 						{"TerrainAnisoHi", TerrainAnisoHi}, 

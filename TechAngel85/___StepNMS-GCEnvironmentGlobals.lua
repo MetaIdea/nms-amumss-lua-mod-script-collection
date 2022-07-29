@@ -1,5 +1,5 @@
 Author = "Step Modifications"
-ModName = "ZZZZStepNoMansSky"
+ModName = "___StepNoMansSky"
 ModDescription = "These changes alter various evironmental elements."
 FileSource01 = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN"
 
@@ -8,36 +8,31 @@ FileSource01 = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN"
 
 --##### Variables #####
 --## Fine LOD ##
-LODAdjust01 = 2				--  | 1
-LODAdjust02 = 2				--  | 1
-LODAdjust03 = 2				--  | 1
-LODAdjust04 = 2				--  | 1
-LODAdjust05 = 2				--  | 1
-TerrainFadeTime = 1			-- Amount of time it takes for terrain to fade in/out of different detail modes | 2 | 284
-TerrainFadeTimeInShip = 1	-- Amount of time it takes for terrain to fade in/out of different detail modes while in a ship | 2 | 285
-CreatureFadeTime = 0.7		-- Amount of time it takes for creatures to fade in/out of different detail modes | 1.5 | 286
-FloraFadeTimeMin = 0.3		-- Minimum amount of time to take for all flora to fade in/out of different detail modes | 0.6 | 287
-FloraFadeTimeMax = 1.1		-- Max amount of time to take for all flora to fade in/out of different detail modes | 2.25 | 288
+TerrainFadeTime = 1			-- Amount of time it takes for terrain to fade in/out of different detail modes | 2 | 333
+TerrainFadeTimeInShip = 1	-- Amount of time it takes for terrain to fade in/out of different detail modes while in a ship | 2 | 
+CreatureFadeTime = 0.7		-- Amount of time it takes for creatures to fade in/out of different detail modes | 1.5 | 
+FloraFadeTimeMin = 0.3		-- Minimum amount of time to take for all flora to fade in/out of different detail modes | 0.6 | 
+FloraFadeTimeMax = 1.1		-- Max amount of time to take for all flora to fade in/out of different detail modes | 2.25 | 
 
 --## Step ##
-AnimationScale = 15			-- Determines how fast the clouds morph | 50 | 198
-WindOffsetX = 0.25			-- Determines the speed of the clouds along the X axis | 0.5 | 222
-WindOffsetY = 0.25			-- Determines the speed of the clouds along the Y axis | 0.5 | 223
+AnimationScale = 15			-- Determines how fast the clouds morph | 50 | 234
+WindOffsetX = 0.25			-- Determines the speed of the clouds along the X axis | 0.5 | 236
+WindOffsetY = 0.25			-- Determines the speed of the clouds along the Y axis | 0.5 | 237
 
-Cloud01X = 0.09				-- Determines max cloud size along the X axis | 0.1 | 214
-Cloud01Y = 0.1				-- Determines max cloud size along the Y axis | 0.15 | 215
-Cloud01Z = 0.13				-- Determines max cloud size along the Z axis | 0.15 | 216
-Cloud01T = 0.15				--  | 0.2 | 217
+Cloud01X = 0.09				-- Determines max cloud size along the X axis | 0.1 | 248
+Cloud01Y = 0.1				-- Determines max cloud size along the Y axis | 0.15 | 249
+Cloud01Z = 0.13				-- Determines max cloud size along the Z axis | 0.15 | 250
+Cloud01T = 0.15				--  | 0.2 | 251
 
-Cloud02X = 0				-- '' | 0 | 220
-Cloud02Y = 0.12				-- '' | 0.1 | 221
-Cloud02Z = 0.2				-- '' | 0.3 | 222
-Cloud02T = 0.25				--  | 0.6 | 223
+Cloud02X = 0				-- '' | 0 | 254
+Cloud02Y = 0.12				-- '' | 0.1 | 255
+Cloud02Z = 0.2				-- '' | 0.3 | 256
+Cloud02T = 0.25				--  | 0.6 | 257
 
-Cloud03X = 0				-- '' | 0 | 226
-Cloud03Y = 0.15				-- '' | 0.2 | 227
-Cloud03Z = 0.3				-- '' | 0.3 | 228
-Cloud03T = 0.5				--  | 1 | 229
+Cloud03X = 0				-- '' | 0 | 260
+Cloud03Y = 0.15				-- '' | 0.2 | 261
+Cloud03Z = 0.3				-- '' | 0.3 | 262
+Cloud03T = 0.5				--  | 1 | 263
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -57,39 +52,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"CreatureFadeTime", CreatureFadeTime}, 
 						{"FloraFadeTimeMin", FloraFadeTimeMin}, 
 						{"FloraFadeTimeMax", FloraFadeTimeMax}, 
-					}
-				},
---
---##### Everything after here is from Fine LOD mod #####
---
-				{["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml",},
-					["LINE_OFFSET"] = "+1",		--one line down from "LODAdjust"
-					["VALUE_CHANGE_TABLE"] = {
-						{"LODAdjust", LODAdjust01}, 
-					}
-				},
-				{["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml",},
-					["LINE_OFFSET"] = "+2",		--two lines down from "LODAdjust"
-					["VALUE_CHANGE_TABLE"] = {
-						{"LODAdjust", LODAdjust02}, 
-					}
-				},
-				{["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml",},
-					["LINE_OFFSET"] = "+3",		--three lines down from "LODAdjust"
-					["VALUE_CHANGE_TABLE"] = {
-						{"LODAdjust", LODAdjust03}, 
-					}
-				},
-				{["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml",},
-					["LINE_OFFSET"] = "+4",		--four lines down from "LODAdjust"
-					["VALUE_CHANGE_TABLE"] = {
-						{"LODAdjust", LODAdjust04}, 
-					}
-				},
-				{["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml",},
-					["LINE_OFFSET"] = "+5",		--fives lines down from "LODAdjust"
-					["VALUE_CHANGE_TABLE"] = {
-						{"LODAdjust", LODAdjust05}, 
 					}
 				},
 --

@@ -1,5 +1,5 @@
 Author = "Step Modifications"
-ModName = "ZZZZStepNoMansSky"
+ModName = "___StepNoMansSky"
 ModDescription = "These changes alter various settings dealing with water."
 FileSource01 = "GCWATERGLOBALS.GLOBAL.MBIN"
 
