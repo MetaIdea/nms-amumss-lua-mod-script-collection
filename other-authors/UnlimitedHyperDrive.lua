@@ -1,6 +1,6 @@
 ModName = "UnlimitedHyperDrive.pak"
 Author = "Striker0420"
-Version = "3.89"
+Version = "3.97"
 
 TechnologyTablePath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 

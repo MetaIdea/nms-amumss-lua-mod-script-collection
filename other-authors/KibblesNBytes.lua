@@ -581,13 +581,12 @@ OVERRIDE2 = {
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_______KibblesNBytes-1.3.1.pak", 
-["MOD_AUTHOR"]				= "InstaKibs",
-["NMS_VERSION"]				= "3.7+",
+["MOD_FILENAME"] 			= "_______KibblesNBytes.pak", 
+["MOD_AUTHOR"]				= "InstaKibs, WinderTP, Babscoole",
+["NMS_VERSION"]				= "3.97",
 ["MODIFICATIONS"] 			= 
 	{
 		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
 				{
@@ -610,14 +609,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PlanetBaseLimit", 0},
 								{"FreighterBaseLimit", 0},
 								{"CheckPlaceholderCollision", "False"},
-								{"CanPlaceOnItself", "True"},
 								{"CanRotate3D", "True"},
 								{"CanScale", "True"},
 								{"CanChangeColour", "True"},
 								{"CanChangeMaterial", "True"},
 								{"DependsOnEnvironment", "None"},
 								{"RemovesAttachedDecoration", "False"},
-								{"GhostsCountOverride", "1"}
+								{"GhostsCountOverride", "1"},
+								{"ShowGhosts", "True"},
 							}
 						}
 					}
