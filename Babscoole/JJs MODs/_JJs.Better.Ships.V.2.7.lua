@@ -65,11 +65,11 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "_JJs.Better.Ships.V.2.6.pak",
+["MOD_FILENAME"]    = "_JJs.Better.Ships.V.2.7.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "JJHookah",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "3.91",
+["NMS_VERSION"]     = "3.97",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -169,6 +169,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"y","6.5",},				
+							["VALUE_CHANGE_TABLE"] = 	
+							{
+								{"x","0"},	-- Original "2.5"					
+								{"y","0"}	-- Original "6.5"
+							}
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"AmbientSpawns"},
 							["SPECIAL_KEY_WORDS"] = {"MinRange","5000"},
 							["PRECEDING_FIRST"] = "TRUE",
@@ -177,15 +185,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MinRange","8000"} --Original "5000"
 							}
 						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"GcAIShipSpawnData.xml","Count",},
-							-- ["SECTION_ACTIVE"] = {17,},						
-							-- ["VALUE_CHANGE_TABLE"] 	= 	
-							-- {
-								-- {"x",	"1"}, -- Original "2"
-								-- {"y",	"3"}, -- Original "5"
-							-- }
-						-- },
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcAIShipSpawnData.xml","Role"},
+							["SECTION_ACTIVE"] = {22,},
+							["VALUE_CHANGE_TABLE"] = 	
+							{
+								{"AIShipRole",	"CapitalFreighter"}, -- Original "Freighter"	
+							}
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"ChildSpawns","Role"},
 							["SECTION_ACTIVE"] = {3,},								
@@ -193,15 +200,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"AIShipRole",	"Freighter"}, -- Original "Frigate"			
 							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"GcAIShipSpawnData.xml","Role",},
-							["SECTION_ACTIVE"] = {21,},							
-							["VALUE_CHANGE_TABLE"] = 	
-							{
-								{"AIShipRole",	"CapitalFreighter"}, -- Original "Freighter"					
-							}
-						},						
+						},					
 						{
 							["SPECIAL_KEY_WORDS"] = {"MinRange","200",},
 							["SECTION_ACTIVE"] = {5,},							
@@ -239,16 +238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"AttackFreighter","False","Count","Vector2f.xml",},
-							["SECTION_ACTIVE"] = {1,},							
-							["VALUE_CHANGE_TABLE"] = 	
-							{
-								{"x",	"1"}, -- Original "0"
-								{"y",	"3"}, -- Original "5"
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"AttackFreighter","False","Count","Vector2f.xml",},
-							["SECTION_ACTIVE"] = {20,},							
+							["SECTION_ACTIVE"] = {1, 21,},							
 							["VALUE_CHANGE_TABLE"] = 	
 							{
 								{"x",	"1"}, -- Original "0"
@@ -269,8 +259,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_ACTIVE"] = {22,},							
 							["VALUE_CHANGE_TABLE"] = 	
 							{
-								{"x",	"4"}, -- Original "0"
-								{"y",	"6"}, -- Original "5"
+								{"x",	"3"}, -- Original "0"
+								{"y",	"5"}, -- Original "5"
 							}
 						},						
 						{
@@ -278,19 +268,28 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SECTION_ACTIVE"] = {22,},							
 							["VALUE_CHANGE_TABLE"] = 	
 							{
-								{"x",	"0"}, -- Original "0"
-								{"y",	"0"}, -- Original "5"
+								{"x",	"4"}, -- Original "0.5"
+								{"y",	"6"}, -- Original "3.5"
 							}
 						},							
 						{
-							["SPECIAL_KEY_WORDS"] = {"AttackFreighter","False","StartTime","Vector2f.xml",},
-							["SECTION_ACTIVE"] = {18,},							
+							["SPECIAL_KEY_WORDS"] = {"AttackFreighter","False","Count","Vector2f.xml",},
+							["SECTION_ACTIVE"] = {23,},							
 							["VALUE_CHANGE_TABLE"] = 	
 							{
-								{"x",	"0"}, -- Original "4"
+								{"x",	"4"}, -- Original "0"
+								{"y",	"6"}, -- Original "5"
+							}
+						},						
+						{
+							["SPECIAL_KEY_WORDS"] = {"AttackFreighter","False","StartTime","Vector2f.xml",},
+							["SECTION_ACTIVE"] = {23,},							
+							["VALUE_CHANGE_TABLE"] = 	
+							{
+								{"x",	"0"}, -- Original "2"
 								{"y",	"0"}, -- Original "6"
 							}
-						},
+						},	
 						{
 							["PRECEDING_KEY_WORDS"] = {"ChildSpawns","Count",},
 							["SECTION_ACTIVE"] = {4,},							
