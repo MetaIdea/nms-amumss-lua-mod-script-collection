@@ -540,6 +540,7 @@ function GetParticleFile(E_RATE, E_LIFE, E_MID, E_SPREAD, E_SPREAD_MIN, E_D_X, E
 return [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkParticleData">
+  <Property name="AudioEvent" value="0" />
   <Property name="StartEnabled" value="True" />
   <Property name="Oneshot" value="False" />
   <Property name="MaxCount" value="]] .. P_MAX .. [[" />
@@ -840,6 +841,8 @@ return [[
       <Property name="Curve" value="Linear" />
     </Property>
   </Property>
+  <Property name="OnRefractionsDisabled" value="Hide" />
+  <Property name="FadeRefractionsAtScreenEdge" value="False" />
   <Property name="UserColour" value="" />
   <Property name="MaxRenderDistance" value="0" />
   <Property name="MaxSpawnDistance" value="0" />
