@@ -1,6 +1,6 @@
 ModName = "InfiniteMechJetpack.pak"
 Author = "Striker0420"
-Version = "3.90"
+Version = "3.97"
 
 
 VehicleGlobals =  "GCVEHICLEGLOBALS.GLOBAL.MBIN"
