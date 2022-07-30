@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "3_93"
+GameVersion = "3_97"
 --Currently balancing around Survival Mode
 
 --Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
@@ -32,7 +32,7 @@ ValuableCraftsMult	=				10			--Multiplier applied to default cost of 250 Nanites
 
 --Blueprint cost multipliers
 ExoCraftBuildingsMult	=			7.5			--Multiplier applied to default cost of 4, 8, or 10 Salvaged Data
-ExoCraftSummonBuildingsMult	=		2			--Multiplier applied to default cost of 12 and 15 Salvaged Data
+ExoCraftSummonBuildingsMult	=		2			--Multiplier applied to default cost of 12 Salvaged Data
 FarmingBlueprintsMult	=			8			--Multiplier applied to default cost of 3 Salvaged Data 
 LargePlanterBlueprintMult	=		3			--Multiplier applied to default cost of 10 Salvaged Data 
 CookingAndLivestockMult	=			3			--Multiplier applied to default cost of 10 Salvaged Data
@@ -41,11 +41,16 @@ MachineMult	=						3			--Multiplier applied to default cost of 10 Salvaged Data	
 AntimatterReactorMult	=			1.5			--Multiplier applied to default cost of 20 Salvaged Data
 StorageContainersMult	=			1			--Multiplier applied to default cost of 5 Salvaged Data
 
+FreighterDoubleCultivationRoomMult	=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
+FreighterScannerRoomMult			=	4		--Multiplier applied to default cost of 1 Salvaged Frigate Data
+FreighterExocraftRoomMult			=	6		--Multiplier applied to default cost of 1 Salvaged Frigate Data
+
+
 --Specific Tech Adjustment Multipliers	(stacks multiplicatively with the TechCostMult
 TechAdjustments =
 {
-	{
-		"UT_TRANSLATE1",	0.15			--Translator Tech
+	{--	ID					Multiplier		Name					Unlock cost in Nanites / Salvaged Frigate Modules
+		"UT_TRANSLATE1",	0.15		--Translator Tech
 	},
 	{
 		"UT_TRANSLATE2",	0.15
@@ -69,7 +74,7 @@ TechAdjustments =
 		"UT_PULSESPEED",	0.2			--Sub-light amplifier
 	},
 	{
-		"UT_QUICKWARP",	0.2				--Emergency Warp				240
+		"UT_QUICKWARP",	0.2				--Emergency Warp				240 Nanites
 	},
 	{
 		"UT_LAUNCHCHARGE",	0.3			--Launch System Recharger
@@ -123,8 +128,14 @@ TechAdjustments =
 		"UT_ROCKETS",	3.5				--Large Rocket Tubes			50
 	},
 	{
+		"CARGOSHIELD",	0.5				--Cargo Scan Deflector			240
+	},
+	{
+		"UT_SHIPDRIFT",	0.3				--Flight Assist Override		460
+	},
+	{
 		"F_TELEPORT",	3.2				--Matter Beam					5 Salvaged Frigate Modules			(Not affected by TechCostMult)
-	}
+	},
 }
 
 --New recipe for installing Matter Beam in freigther
@@ -250,7 +261,7 @@ RecipeChanges	=
 	},
 	{
 		"SUMMON_GARAGE",		--12
-		"GARAGE_FREIGHT"		--15
+		"GARAGE_FREIGHT"		--15		--Deprecated, as of NMS v3.97 has been replaced by version bought with Salvaged Frigate Modules on Freighter bridge
 	}
 },
 {
@@ -341,8 +352,32 @@ RecipeChanges	=
 		"CONTAINER7",
 		"CONTAINER8",
 		"CONTAINER9"
+	},
+},
+{
+	{
+		FreighterDoubleCultivationRoomMult
+	},
+	{
+		"FRE_ROOM_PLANT0"				----Double Cultivation Chamber	1 Salvaged Frigate Modules
 	}
-}
+},
+{
+	{
+		FreighterScannerRoomMult
+	},
+	{
+		"FRE_ROOM_SCAN"					--Scanner Room					1 Salvaged Frigate Modules			(Not affected by TechCostMult)
+	},
+},
+{
+	{
+		FreighterExocraftRoomMult
+	},
+	{
+		"FRE_ROOM_VEHICL"				--Orbital Exocraft Materializer	1 Salvaged Frigate Modules
+	}
+},
 }
 
 UpgradeChanges = 

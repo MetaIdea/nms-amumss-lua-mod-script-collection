@@ -1,4 +1,4 @@
-GameVersion = "3_93"
+GameVersion = "3_97"
 ModName = "UniqueExoCraftsX"
 Description = "A small mod that make exocraft faster but also stand out from eachother"
 
@@ -9,8 +9,8 @@ NomadSpeed = "24"		--18
 RoamerSpeed = "20"		--16
 PilgrimSpeed = "28"		--18
 ColossusSpeed = "16"	--12
-NautilonSpeed = "36"	--15
-NautilonUnderwaterEnginePower = "10" --6 		Acceleration speed
+NautilonSpeed = "36"	--18	(15 pre-3.97)
+NautilonUnderwaterEnginePower = "10" --10	(6 pre 3.97) 		Acceleration speed
 NautilonUnderwaterEngineFalloff = "1" --0.7		1 = 100% so no fall of , 0.9 =90% means speed wil be 10% slower  => 45u
 
 -- BIKE/NOMAD
@@ -58,7 +58,7 @@ NautilonVehicleBoostTime = "3" --2.5
 NautilonVehicleBoostRechargeTime = "3" --2.5
 NautilonVehicleJumpForce = 				"1200"		--1200
 --[[
---MECH
+--MECH														--Currently handled by GMech in PTSd
 MechVehicleBoostForce = "2250" --900
 MechVehicleBoostMaxSpeed = "50"--25
 MechVehicleBoostExtraMaxSpeedAir = "50"--10

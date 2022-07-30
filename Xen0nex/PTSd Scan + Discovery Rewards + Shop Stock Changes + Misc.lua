@@ -1,7 +1,7 @@
 Author = "Xen0nex"
 ModName = "PTSd Scan + Discovery Rewards + Shop Stock Changes + Misc"
 Description = "Adjusts scan & discovery rewards and items available in shops. Also changes starter starship slots and % chance to spawn jellyfish / anglerfish underwater."
-GameVersion = "393"
+GameVersion = "397"
 
 --Inventory size for the starter ship on a new save
 StarterShipGenSlots = 12							--14
@@ -46,7 +46,7 @@ AnglerfishSpawnChance = 0.45						--0.5		Chance to spawn Anglerfish when collect
 	{
 		{"Mineral"},
 		{
-			{"OnScan",		5},						--200	(Not normally boosted by Scanner upgrades)
+			{"OnScan",		0.75},					--200													Guessing that it is boosted up to ~80k with maxed Scanner upgrades
 			{"Record",		5}						--3, 5, or 12 Nanites, but the game only ever seems to use 3
 		}
 	},

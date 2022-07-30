@@ -48,13 +48,14 @@ MechStunWeaponFireDOT =						80					--80			Fire DOT of minotaur stun weapon
 MechStunWeaponFireDuration =				3					--3				Duration in seconds of minotaur stun weapon Fire DOT
 
 PhaseBeamLeechAmountMult =					0.5					--				Multiplier to apply to the Shield Leech amount for Phase Beam, and the bonus from Fourier De-Limiter (0.2 and 0.1 in vanilla)
-LivingShipBeamLeechAmount = 				0.1					--0				By default Living Ships laser beams don't leech shields like regular ship Phase Beams do
+LivingShipBeamLeechMult = 					1.0					--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
+LivingShipBeamLeechUpgradeMult = 			0.25				--				Multiplier to apply to the Shield Leech amount bonus for upgrades to Gazing Eyes (0.05 ~ 0.3 in vanilla)
 
 --Multipliers for certain bonuses from Starship weapon upgrade modules
 PhaseBeamUpgradesHeatMult =					0.25				--				Multiplier to apply to the bonus heat time for Phase Beam upgrades (1.1 ~ 2 for Class C ~ X)
 LivingShipBeamUpgradesHeatMult =			0.25				--				Multiplier to apply to the bonus heat time for Gazing Eye upgrades (1.1 ~ 1.95 for Class C ~ S)
 CyclotronUpgradesHeatMult =					0.5					--				Multiplier to apply to the bonus heat time for Cyclotron Ballista upgrades (1.1 ~ 1.4 for Class C ~ X)
-InfraKnifeUpgradesHeatMult =				0.8					--				Multiplier to apply to the bonus heat time for Infra-Knife upgrades (1.01 ~ 1.13 for Class C ~ X)
+InfraKnifeUpgradesHeatMult =				1.0					--				Multiplier to apply to the bonus heat time for Infra-Knife upgrades (1.01 ~ 1.1 for Class C ~ X)
 PositronUpgradesHeatMult =					0.4					--				Multiplier to apply to the bonus heat time for Positron upgrades (1.01 ~ 1.2 for Class C ~ X)
 
 PhotonUpgradesFireRateMult =				1.0					--				Multiplier to apply to the bonus fire rate for Photon Cannon upgrades (1.001 ~ 1.026 for Class C ~ X)
@@ -85,11 +86,11 @@ NautilonCannonDMG =							1.0					--220			(110 theoretical sustained DPS, plus e
 MinotaurCannonDMG =							1.0					--420			(147 theoretical sustained DPS, plus explosions with AOE???)
 
 PhaseBeamDMG =								1.4					--250
-LivingShipBeamDMG =							1.25				--250
+LivingShipBeamDMG =							1.1					--280
 PhotonCannonDMG =							0.9*1.667			--320			(2,400 theoretical burst DPS)	Multiplied by 1.667 to balance out the 40% lower fire rate I added
-LivingShipCannonDMG =						0.9*1.667			--320			(3,200 theoretical burst DPS)	Multiplied by 1.667 to balance out the 40% lower fire rate I added
+LivingShipCannonDMG =						0.9*1.667			--320			(3,400 theoretical burst DPS)	Multiplied by 1.667 to balance out the 40% lower fire rate I added
 RocketsDMG =								1.5					--6500
-PositronEjectorDMG =						0.8*0.667			--280 x 14		(7,840 theoretical burst DPS)	Multiplied by 0.667 to balance out the 50% more projectiles I added
+PositronEjectorDMG =						0.9*0.667			--280 x 14		(7,840 theoretical burst DPS)	Multiplied by 0.667 to balance out the 50% more projectiles I added
 InfraKnifeDMG =								1.0*0.75			--160 x 1		(1,845 theoretical burst DPS)	Multiplied by 0.75 to balance out the 33% faster fire rate I added
 CyclotronDMG =								0.9*5				--600 x 2		(3,600 theoretical burst DPS)	Multiplied by 5 to balance out the 80% slower fire rate I added
 
@@ -390,15 +391,18 @@ WeaponStatChanges =
 	},
 	{
 		{
-			"SHIPLAS_ALIEN"		--Living Ship Phase Beam equivalent
+			"SHIPLAS_ALIEN"		--Gazing Eyes
 		},
 		{
 			{
-				"Ship_Weapons_Lasers_Damage",	LivingShipBeamDMG*GSD	--250
+				"Ship_Weapons_Lasers_Damage",	LivingShipBeamDMG*GSD	--280
 			},
 			{
 				"Ship_Weapons_Lasers_HeatTime",	1					--3.5
-			}
+			},
+			{
+				"Ship_Weapons_ShieldLeech",	LivingShipBeamLeechMult	--0.1
+			},
 		}
 	},
 	{
@@ -432,10 +436,10 @@ WeaponStatChanges =
 		},
 		{
 			{
-				"Ship_Weapons_Guns_Damage",	LivingShipCannonDMG*GSD	--320		(3,200 theoretical burst DPS)
+				"Ship_Weapons_Guns_Damage",	LivingShipCannonDMG*GSD	--340		(3,400 theoretical burst DPS)
 			},
 			{
-				"Ship_Weapons_Guns_Rate",	0.6					--10
+				"Ship_Weapons_Guns_Rate",	0.5					--10
 			},
 			{
 				"Ship_Weapons_Guns_Range",	1					--1500
@@ -444,7 +448,7 @@ WeaponStatChanges =
 				"Ship_Weapons_Guns_Dispersion",	1				--0
 			},
 			{
-				"Ship_Weapons_Guns_HeatTime",	0.8				--7.5
+				"Ship_Weapons_Guns_HeatTime",	0.8				--10
 			},
 			{
 				"Ship_Weapons_Guns_CoolTime",	1				--1
@@ -889,23 +893,40 @@ UpgradeOtherChanges =
 			},
 		}
 	},
+	{	--Gazing Eye						Shield Leech bonus amount
+		{"Ship_Weapons_ShieldLeech",		LivingShipBeamLeechUpgradeMult},	--Applies multiplier to all upgrades for this weapon
+		{
+			{--	Upgrade			Min		Max
+				"UA_SLASR1",	0.05,	0.1								--0.05,	0.1
+			},
+			{
+				"UA_SLASR2",	0.1,	0.15							--0.1,	0.15
+			},
+			{
+				"UA_SLASR3",	0.15,	0.2								--0.15,	0.2
+			},
+			{
+				"UA_SLASR4",	0.2,	0.3								--0.2,	0.3
+			},
+		}
+	},
 	{	--Positron Ejector			Fire Rate
 		{"Ship_Weapons_Guns_Rate",	PositronUpgradesFireRateMult},		--Applies multiplier to all upgrades for this weapon
 		{
 			{--	Upgrade		Min		Max
-				"UP_SSHOT1",	1.05,	1.1								--1.05,	1.1
+				"UP_SSHOT1",	1.01,	1.04							--1.01,	1.04
 			},
 			{
-				"UP_SSHOT2",	1.1,	1.135							--1.1,	1.135
+				"UP_SSHOT2",	1.04,	1.06							--1.04,	1.06
 			},
 			{
-				"UP_SSHOT3",	1.135,	1.15							--1.135,	1.15
+				"UP_SSHOT3",	1.06,	1.1								--1.06,	1.1
 			},
 			{
-				"UP_SSHOT4",	1.15,	1.15							--1.15,	1.15
+				"UP_SSHOT4",	1.06,	1.1								--1.06,	1.1
 			},
 			{
-				"UP_SSHOTX",	1.05,	1.2								--1.05,	1.2
+				"UP_SSHOTX",	1.01,	1.15							--1.05,	1.1
 			},
 		}
 	},
@@ -913,19 +934,19 @@ UpgradeOtherChanges =
 		{"Ship_Weapons_Guns_HeatTime",	PositronUpgradesHeatMult},		--Applies multiplier to all upgrades for this weapon
 		{
 			{--	Upgrade			Min		Max
-				"UP_SSHOT1",	1.01,	1.05							--1.01,	1.05
+				"UP_SSHOT1",	1.01,	1.04							--1.01,	1.04
 			},
 			{
-				"UP_SSHOT2",	1.05,	1.1								--1.05,	1.1	
+				"UP_SSHOT2",	1.04,	1.06							--1.04,	1.06	
 			},
 			{
-				"UP_SSHOT3",	1.1,	1.15							--1.1,	1.15
+				"UP_SSHOT3",	1.06,	1.1								--1.06,	1.1
 			},
 			{
-				"UP_SSHOT4",	1.15,	1.15							--1.15,	1.15
+				"UP_SSHOT4",	1.06,	1.1								--1.06,	1.1
 			},
 			{
-				"UP_SSHOTX",	1.01,	1.2								--1.01,	1.2
+				"UP_SSHOTX",	1.01,	1.15							--1.01,	1.1
 			},
 		}
 	},
@@ -1412,12 +1433,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"ChargeMultiplier", MechStunWeaponChargeMultiplier}
 				}
 			},
+			--[[
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID","SHIPLAS_ALIEN"},
 				["PRECEDING_KEY_WORDS"] = {"GcStatsBonus.xml"},
 				["ADD"] = AddShieldLeech (LivingShipBeamLeechAmount),
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
+			]]
 			{
 				["MATH_OPERATION"] 		= "",
 				["SPECIAL_KEY_WORDS"] = {"ID", "SHIPPLASMA", "StatsType", "Ship_Weapons_Guns_Rate"},

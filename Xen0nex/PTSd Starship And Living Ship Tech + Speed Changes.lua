@@ -1,7 +1,7 @@
 -----------------------------------------------------------------------------
 ModName = 'PTSd Starship And Living Ship Tech + Speed Changes'
 ModAuthor = 'Xen0nex and lMonk'		--Edited by Xen0nex
-Version = '3.93'
+Version = '3.97'
 local desc = [[
   Changes to various aspects of starship speeds and charging.
   Includes improvements to Living Ships and related quest timers from "Living Ship Upgrades" by lMonk
@@ -9,7 +9,7 @@ local desc = [[
 
 --These changes originally by lMonk
 ShipTeleportMult = 7.5									--1			a value of 7.5 expands the range to ~= 750u range	
-TelportAndScannerStatus = 'AllShips'					--'Ship'	determines if only metallic ships or also Living Ships can install Ship Teleport and the Economy/Combat Scanners
+TeleportAndScannerStatus = 'AllShips'					--'Ship'	determines if only metallic ships or also Living Ships can install Ship Teleport ( Economy/Combat Scanners no longer needed as Living ships now have a dedicated upgrade for those)
 LivingShipQuestTimers = 14400							--79200 seconds = 22 hours in vanilla
 
 	--These sections includes additions by Xen0nex
@@ -33,14 +33,14 @@ ShieldModMult = 1										--	Multiplier to apply to the bonus shield from regul
 ShieldLSModMult = 1										--	Multiplier to apply to the bonus shield from Living ship Shield upgrade modules	NOTE, the game increases this by 50%
 
 --Changes to using items to recharge starship tech
-ShipLaunchRechargeMult = 2								--	Multiplier to apply to the cost of Uranium on recharging ship launchers					40 to fully charge
-LivingShipLaunchRechargeMult = 0.75						--	Multiplier to apply to the cost of Mordite / Oxygen on recharging Living ship launchers	200 / 200 to fully charge
-ShipPulseRechargeMult = 1.25							--	Multiplier to apply to the cost of Tritium / Pyrite on recharging ship Pulse engine		100 / 40 to fully charge
-LivingShipPulseRechargeMult = 1							--	Multiplier to apply to the cost of Silver / Gold on recharging Living ship Pulse engine	200 / 100 to fully charge
-LivingShipWarpRechargeMult = 1.5						--	Multiplier to apply to the cost of Chromatic Metal on recharging Living ship Hyperdive		60 to fully charge
+ShipLaunchRechargeMult = 2								--	Multiplier to apply to the cost of Uranium on recharging ship launchers										40 to fully charge
+LivingShipLaunchRechargeMult = 0.75						--	Multiplier to apply to the cost of Mordite / Oxygen / Cond. Carbon on recharging Living ship launchers		200 / 200 / ? to fully charge
+ShipPulseRechargeMult = 1.25							--	Multiplier to apply to the cost of Tritium / Pyrite on recharging ship Pulse engine							100 / 40 to fully charge
+LivingShipPulseRechargeMult = 1							--	Multiplier to apply to the cost of Silver / Carbon / Viscous Fluids on recharging Living ship Pulse engine	200 / ? to fully charge
+LivingShipWarpRechargeMult = 1.5						--	Multiplier to apply to the cost of Chromatic Metal / Processed Meat / Living Slime on recharging Living ship Hyperdive		60 / ? / ? to fully charge
 
-ShipShieldRechargeMult = 2								--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging ship shields		100 / 40 to fully charge
-LivingShipShieldRechargeMult = 0.75						--	Multiplier to apply to the cost of Pugneum on recharging Living ship shields				200 to fully charge
+ShipShieldRechargeMult = 2								--	Multiplier to apply to the cost of Sodium / Sodium Nitrate on recharging ship shields						100 / 40 to fully charge
+LivingShipShieldRechargeMult = 0.75						--	Multiplier to apply to the cost of Pugneum / Mordite / Di-Hydrogen recharging Living ship shields			200 / ? / ? to fully charge
 
 StarshieldBattMult = 2									--	Multiplier to apply to the effectiveness of Starshield Battery. In vanilla it only refills half of your starship's shield
 LivingShipUseBatt = true								--	Allows Living Ships to use Starshield Batteries to recharge shields in addition to Pugneum
@@ -231,21 +231,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'SHIP_TELEPORT', 'TechnologyCategory', 'Ship'},
 				VALUE_CHANGE_TABLE 	= {
-					{'TechnologyCategory', TelportAndScannerStatus}
+					{'TechnologyCategory', TeleportAndScannerStatus}
 				}
 			},
+			--[[
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'SHIPSCAN_COMBAT', 'TechnologyCategory', 'Ship'},
 				VALUE_CHANGE_TABLE 	= {
-					{'TechnologyCategory', TelportAndScannerStatus}
+					{'TechnologyCategory', TeleportAndScannerStatus}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'SHIPSCAN_ECON', 'TechnologyCategory', 'Ship'},
 				VALUE_CHANGE_TABLE 	= {
-					{'TechnologyCategory', TelportAndScannerStatus}
+					{'TechnologyCategory', TeleportAndScannerStatus}
 				}
 			},
+			]]
 			--The following sections added by Xen0nex
 			--[[{
 				SPECIAL_KEY_WORDS	= {'ID', 'SHIPJUMP_ALIEN'},			--Living ship unique tech
@@ -634,8 +636,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'ValueMax', BonusMult (1.15, EngModLSSpdMult)}
 				}
 			},
-			
-			--ShieldModMult
 			{
 				SPECIAL_KEY_WORDS	= {"ID", "UP_S_SHL1", "StatsType", "Ship_Armour_Shield_Strength"},
 				MATH_OPERATION 		= '',
@@ -767,7 +767,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_MATCH_OPTIONS = '=',
 				REPLACE_TYPE 		= 'ALL',	
 				VALUE_CHANGE_TABLE 	= {
-					{'Time',			LivingShipQuestTimers}
+					{'Time',		LivingShipQuestTimers}
 				}
 			},
 			{

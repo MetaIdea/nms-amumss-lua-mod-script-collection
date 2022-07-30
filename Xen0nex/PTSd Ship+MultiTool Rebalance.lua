@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "3_93"
+GameVersion = "3_97"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 FuelLessIsBetter =				"TRUE"				--"FALSE", Makes the "Speed" Frigate-boosting upgrade modules for freigthers properly increase Fleet Coordination rather than decrease it (still doesn't affect speed though)
@@ -156,14 +156,14 @@ ShipInitialSizeChanges	=
 	{"RoyMedium",						15,		20,			4,		6,			2,		3},					--	15,		20,			4,		6,			3,		6
 	{"RoyLarge",						21,		30,			6,		10,			3,		4},					--	21,		30,			6,		10,			6,		8		Unused in-game by default
 	{"AlienSmall",						21,		21,			28,		28,			7,		7},					--	22,		22,			21,		21,			4,		8		Unused in-game by default
-	{"AlienMedium",						21,		21,			28,		28,			14,		14},				--	22,		22,			21,		21,			8,		14
+	{"AlienMedium",						18,		18,			21,		21,			10,		10},				--	22,		22,			21,		21,			8,		14
 	{"AlienLarge",						21,		21,			28,		28,			21,		21},				--	22,		22,			21,		21,			10,		20		Unused in-game by default
 	{"SailSmall",						12,		28,			4,		10,			6,		12},				--	15,		19,			4,		6,			3,		4
 	{"SailMedium",						17,		23,			6,		10,			8,		10},				--	20,		28,			6,		10,			4,		6		Unused in-game by default
 	{"SailLarge",						24,		30,			10,		18,			10,		14},				--	30,		36,			10,		18,			5,		7		Unused in-game by default
-	{"FreighterSmall",					15,		19,			3,		6,			0,		0},					--	15,		19,			3,		6,			0,		0	"Regular" Freighters
-	{"FreighterMedium",					20,		30,			5,		9,			0,		0},					--	24,		34,			5,		9,			0,		0	"Capital" Freighters
-	{"FreighterLarge",					31,		42,			7,		12,			0,		0},					--	35,		48,			7,		12,			0,		0		Unused in-game by default
+	{"FreighterSmall",					15,		19,			3,		6,			4,		6},					--	15,		19,			3,		6,			2,		3	"Regular" Freighters
+	{"FreighterMedium",					20,		30,			5,		9,			6,		8},					--	24,		34,			5,		9,			3,		4	"Capital" Freighters
+	{"FreighterLarge",					31,		42,			7,		12,			4,		6},					--	35,		48,			7,		12,			4,		6		Unused in-game by default
 }
 
 --Replacers for maximum UPGRADEABLE Inventory size for ships. NOT initial sizes for spawned ships.
@@ -178,8 +178,8 @@ ShipUpgradeSizeChanges	=
 			{"Dropship",						16,		25,		30,		35,							24,		32,		40,		48},
 			{"Scientific",						16,		25,		30,		35,							24,		32,		40,		48},
 			{"Royal",							16,		25,		30,		35,							24,		32,		40,		48},
-			--{"Alien",							0,		0,		0,		35,							0,		0,		0,		35},
-			{"Sail",							16,		25,		25,		35,							24,		32,		40,		48},
+			--{"Alien",							0,		0,		0,		35,							0,		0,		0,		35},		--Handled in LivingShipUpgradeSizeChanges section below
+			{"Sail",							16,		25,		30,		35,							24,		32,		40,		48},
 			{"Freighter",						16,		25,		35,		40,							24,		32,		40,		48},
 			{"PlayerFreighter",					0,		0,		0,		0,							0,		0,		0,		0},			--Most likely PlayerFreighter is just some obsolete, unused data, but included for completeness
 		}
@@ -193,7 +193,7 @@ ShipUpgradeSizeChanges	=
 			{"Dropship",						0,		7,		7,		14,							0,		7,		14,		21},
 			{"Scientific",						7,		14,		21,		28,							0,		7,		14,		21},
 			{"Royal",							0,		7,		14,		21,							0,		7,		14,		21},
-			--{"Alien",							0,		0,		0,		28,							0,		0,		0,		48},
+			--{"Alien",							0,		0,		0,		28,							0,		0,		0,		48},		--Handled in LivingShipUpgradeSizeChanges section below
 			{"Sail",							0,		7,		14,		21,							0,		7,		14,		21},
 			{"Freighter",						0,		7,		14,		21,							7,		7,		14,		21},
 			{"PlayerFreighter",					0,		0,		0,		0,							0,		0,		0,		0},
@@ -207,7 +207,7 @@ ShipUpgradeSizeChanges	=
 			{"Dropship",						14,		21,		28,		35,							12,		12,		24,		36},		--42 max size in practice, since it's the next multiple of 7
 			{"Scientific",						0,		7,		7,		14,							6,		9,		14,		21},
 			{"Royal",							0,		0,		7,		7,							5,		9,		14,		21},
-			--{"Alien",							0,		0,		0,		14,							0,		0,		0,		32},
+			--{"Alien",							0,		0,		0,		14,							0,		0,		0,		32},		--Handled in LivingShipUpgradeSizeChanges section below
 			{"Sail",							0,		7,		14,		21,							6,		9,		14,		21},
 			{"Freighter",						21,		28,		35,		42,							24,		32,		40,		48},		--Freighters can't use Cargo Slots
 			{"PlayerFreighter",					0,		0,		0,		0,							0,		0,		0,		0},
@@ -220,19 +220,19 @@ LivingShipUpgradeSizeChanges =
 {
 	{
 		{"MaxInventoryCapacity"},	--General Inventory						(Grid size fluctuates, possible values include 16, 25, 30, 35, 40, 48)
-		{		--	New, Old
-			{"Alien",							0,		0,		0,		35,							0,		0,		0,		35},
+		{--New max UPGRADEABLE size at			C,		B,		A,		S	class		Vanilla is	C,		B,		A,		S	class
+			{"Alien",							0,		0,		0,		25,							0,		0,		0,		35},
 		}
 	},
 	{
 		{"MaxTechInventoryCapacity"},	--Tech Inventory					(Seems to only work properly when using multiples of 7)
 		{
-			{"Alien",							0,		0,		0,		28,							0,		0,		0,		48},
+			{"Alien",							0,		0,		0,		42,							0,		0,		0,		48},
 		},
 		{
 		{"MaxCargoInventoryCapacity"},	--Cargo Inventory					(Seems to only work properly when using multiples of 7)
 		{
-			{"Alien",							0,		0,		0,		14,							0,		0,		0,		32},
+			{"Alien",							0,		0,		0,		21,							0,		0,		0,		32},
 		}
 	}
 	}

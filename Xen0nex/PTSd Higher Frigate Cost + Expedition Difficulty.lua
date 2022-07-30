@@ -1,5 +1,5 @@
 ModName = "PTSd Higher Frigate Cost + Expedition Difficulty"
-GameVersion = "3_93"
+GameVersion = "3_97"
 Description = "Makes Frigates more expensive to buy, and enables 4 star difficulty Frigate missions, and increases by 2~3x how many stat points needed to make a fleet of a particular Star ranking"
 
 PercentChangeOfFrigateBeingPurchasable =			80			--60		Percentage of AI Frigates you encounter surrounding AI freigthers being purchasable
@@ -64,6 +64,9 @@ FrigateCostChanges =
 			},
 			{
 				"DeepSpace",		1				--200000000
+			},
+			{
+				"DeepSpaceCommon",	1				--200000000
 			}
 		}
 	},
@@ -92,6 +95,9 @@ FrigateCostChanges =
 			},
 			{
 				"DeepSpace",		0				--0
+			},
+			{
+				"DeepSpaceCommon",	0				--0
 			}
 		}
 	},

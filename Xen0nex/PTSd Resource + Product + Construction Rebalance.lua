@@ -184,6 +184,9 @@ EGenChromMetalNeeded			=	225				--75
 BioDomeMagFerriteNeeded			=	75				--25
 BioDomeGlassNeeded				=	16				--5
 
+--New recipe for installing Nutrition Room in freigther
+CookRoomProcessors = 1						--Nutrient Processor		(replaces 15 Oxygen in vanilla)
+
 --This part adjusts the buying price only (not the selling price) for certain substances/consumables/components.
 
 --Changes the price of Star Charts, paid in Navigation Data at Space Stations
@@ -650,7 +653,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"Amount", BioDomeGlassNeeded}
 							}
-						}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_COOK",		"ID", "OXYGEN"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CookRoomProcessors},
+								{"ID", "COOKER"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_COOK",		"ID", "COOKER"},
+							["VALUE_MATCH"] 	= "Substance",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"InventoryType", "Product"}
+							}
+						},
 					}
 				}
 			}
