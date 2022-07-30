@@ -2,7 +2,7 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "393"
+GameVersion = "397"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
@@ -33,8 +33,8 @@ MineralBaseLimit = 8		--0
 GasBaseLimit = 8			--0
 SiloBaseLimit = 16			--0
 
-BidomeBaseLimit = 0			--0
-BidomePowerDraw = -160		--	-50 kPs		(Remember to make the value negative)
+BiodomeBaseLimit = 0			--0
+BiodomePowerDraw = -160		--	-50 kPs		(Remember to make the value negative)
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -61,16 +61,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"RegionLimit",0},
 		{"PlanetLimit",0},
 		{"FreighterBaseLimit",0},
-		{"SystemLimit",0},
-		{"GlobalLimit",0},
 		{"CheckPlaceholderCollision","False"},
-		{"CanPlaceOnItself","True"},
+		{"CheckPlayerCollision","False"},
 		{"CanRotate3D","True"},
 		{"CanScale","True"},
 		{"CanChangeColour","True"},
 		{"CanChangeMaterial","True"},
 		{"DependsOnEnvironment","None"},
 		{"RemovesAttachedDecoration","False"},
+		{"RemovesWhenUnsnapped","False"},
 		}},
 
 	{["SPECIAL_KEY_WORDS"] = {"ID","MESSAGEMODULE"},
@@ -167,8 +166,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}},
 		{["SPECIAL_KEY_WORDS"] = {"ID","BIOROOM"},
 	["VALUE_CHANGE_TABLE"] = {
-		{"PlanetBaseLimit", BidomeBaseLimit},
-		{"Rate", BidomePowerDraw},
+		{"PlanetBaseLimit", BiodomeBaseLimit},
+		{"Rate", BiodomePowerDraw},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
 	["VALUE_CHANGE_TABLE"] = {
@@ -189,6 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"BuildableOnPlanet", "False"},
 		{"BuildableOnPlanetWithProduct", "False"},
+		{"BuildableOnFreighter", "False"},
 		{"BuildableOnPlanetBase", "False"},
 		{"BuildableOnSpaceBase", "False"},
 		}},
