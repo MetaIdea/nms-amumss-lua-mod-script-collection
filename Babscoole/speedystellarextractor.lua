@@ -1,10 +1,18 @@
-EXTRACTOR_SPEED = -3600 -- default = -79200
-EXTRACTOR_STORAGE = 5000 -- default = 350
+-- speed is in seconds, and has to be a negative value. default = -79200 which is 22 hours, -3600 is 1 hour.
+EXTRACTOR_SPEED = -7200 -- default = -79200
+EXTRACTOR_STORAGE = 6000 -- default = 350
 
+-- change variables in quotes to change item spawned. get IDs from here: https://docs.google.com/spreadsheets/d/1J8WdrubKgo8A9hPY-hbQLq4eVrb3n3lZAgiI2J7ncAU/edit#gid=66931870
+PRODUCT_YELLOWSTAR = "ASTEROID1" -- Silver/ Default = STELLAR2 = Chromatic Metal
+PRODUCT_REDSTAR = "ASTEROID2" -- Gold/ Default = GAS1 = Nitrogen?
+PRODUCT_GREENSTAR = "ASTEROID3" -- Platinum/ Default = GAS2 = Radon?
+PRODUCT_BLUESTAR = "TECHFRAG" -- Nanite Cluster/ Default = GAS3 = Sulphurine?
+
+-- EDITABLE VALUES ABOVE THIS LINE. DON'T TOUCH BELOW UNLESS YOU KNOW WHAT YOU'RE DOING, IN WHICH CASE YOU KNOW MORE THAN ME ;)
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"]    = "_speedystellarextractor.pak",
-["MOD_DESCRIPTION"] = "Improve max storage and cycle time of stellar extractor", 
+["MOD_DESCRIPTION"] = "Improve max storage and cycle time of stellar extractor, and change extractor products", 
 ["MOD_AUTHOR"]      = "Roflnomish",
 ["LUA_AUTHOR"]      = "Babscoole",  
 ["NMS_VERSION"]     = "3.97",
@@ -18,11 +26,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
+						    ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" ,},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MaxCapactiy",           EXTRACTOR_STORAGE},
 								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
+								{"Id", PRODUCT_YELLOWSTAR},
 							},
 						},											
 						{
@@ -31,6 +40,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxCapactiy",           EXTRACTOR_STORAGE},
 								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
+								{"Id", PRODUCT_REDSTAR},
 							},
 						},
 						{
@@ -39,6 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxCapactiy",           EXTRACTOR_STORAGE},
 								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
+								{"Id", PRODUCT_GREENSTAR},
 							},
 						},
 						{
@@ -47,6 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxCapactiy",           EXTRACTOR_STORAGE},
 								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
+								{"Id", PRODUCT_BLUESTAR},
 							},
 						},
 					},

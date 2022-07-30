@@ -1,9 +1,14 @@
 local modfilename = "_AlmostPerfectFlight"
 local lua_author  = "Silent"
-local lua_version = "v1.6"
+local lua_version = "v1.7"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
-local description = "Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics."
+local description = [[
+Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics.
+]]
+
+--Modifies:
+--GCSPACESHIPGLOBALS.GLOBAL.MBIN
 
 --=============================================================================================================================
 _min_speed = 0.01
@@ -17,7 +22,7 @@ _turnBMult = 0.5
 _trnStreng = 2
 _warpSMult = 4.2
 _padTurnSp = 0.85
-_fuelMulti = 0.05 --95% cost saving on launch
+_fuelMulti = 0.30 --75% cost saving on launch
 --=============================================================================================================================
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -56,15 +61,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"GroundHeightSoft",                              "7"}, --Original "20"
                                 {"GroundHeightSoftForce",                        "10"}, --Original "35"
-                                {"LandingHoverOffset",                            "1"}, --Original "3"
-                                {"LandingMaxSpeed",                              "60"}, --Original "80"
-                                {"LandingMaxAngle",                              "35"}, --Original "45"
+                                {"LandingHoverOffset",                            "2"}, --Original "3"
                                 {"LandingMargin",                               "2.4"}, --Original "1.4"
-                                {"LandingObstacleMinHeight",                    "1.3"}, --Original "2"
                                 {"LandingTooManyLowPointsFraction",               "0"}, --Original "0.3"
-                                {"LaunchThrustersRegenTimePeriod",                "1"}, --Original "1440"
                                 {"AnomalyStationMaxApproachSpeed",              "120"}, --Original "60"
-                                {"BoostChargeRate",                             "5.0"}, --Original "2.5"
                                 {"BoostNoAsteroidRadius",                      "2000"}, --Original "1000"
                                 {"MaximumDistanceFromShipWhenExiting",            "6"}, --Original "10"
                                 {"DockingRotateSpeed",                     _padTurnSp}, --Original "1"
@@ -72,15 +72,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HoverAlignTime",                              "0.3"}, --Original "0.7"
                                 {"HoverMinSpeed",                          _min_speed}, --Original "1"
                                 {"HoverLandReachedDistance",                      "2"}, --Original "4"
-                                {"HoverLandManeuvreTimeMin",                    "0.4"}, --Original "0.7"
-                                {"LandingOnGroundTip",                          "-13"}, --Original "-20"
-                                {"LandingCheckBuildingRadiusFactor",           "0.75"}, --Original "1.1"
-                                {"LandingButtonMinTime",                       "0.25"}, --Original "0.5"
-                                {"LandHeightThreshold",                          "60"}, --Original "100"
-                                {"LandingPushNoseUpFactor",                    "0.02"}, --Original "0.15"
+                                {"HoverLandManeuvreTimeMin",                    "0.3"}, --Original "0.7"
+                                {"LandingOnGroundTip",                          "-12"}, --Original "-20"
+                                {"LandingButtonMinTime",                       "0.15"}, --Original "0.5"
+                                {"LandHeightThreshold",                          "80"}, --Original "100"
+                                {"LandingPushNoseUpFactor",                   "-0.02"}, --Original "0.15"
                                 {"MiniWarpLinesNum",                              "0"}, --Original "4"      --METRIC LINES
-                                {"MiniWarpFuelTime",                           "0.01"}, --Original "0.5"
-                                {"MiniWarpChargeTime",                         "0.95"}, --Original "2"
+                                {"MiniWarpNoAsteroidRadius",                   "2000"}, --Original "1500"
                                 {"PadTurnSpeed",                           _padTurnSp}, --Original "1"
                                 {"PostWarpSlowDownTime",                        "1.5"}, --Original "3"
                                 {"PulseDriveStationApproachSlowdownRange",     "3500"}, --Original "5000"
@@ -108,7 +106,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PlanetBoostSpeed",                            "100"}, --Original "200"
 
                         --|----------------------------------------------------------------------------------------
-                        --| Low Altitude Animation Trigger (Solar Ships?)
+                        --| Low Altitude Animation Trigger (Solar Ships Sails Open/Retract Speed)
                         --|----------------------------------------------------------------------------------------
 
                                 {"LowAltitudeAnimationHeight",                 "1050"}, --Original "1200"
@@ -129,12 +127,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"_3rdPersonWarpWanderTimeZ",                   "0.01"}, --Original "30"
 
                         --|----------------------------------------------------------------------------------------
-                        --| Cheat Area, Charge Rate, Regen Time Period (double / half / quarter default values)
+                        --| Cheat Area, Charge Rate, Regen Time Period, Miniwarp Charge/Fuel
                         --|----------------------------------------------------------------------------------------
 
                                 {"BoostChargeRate",                               "5"}, --Original "2.5"
                                 {"ShieldRechargeRate",                           "12"}, --Original "6"
                                 {"LaunchThrustersRegenTimePeriod",              "360"}, --Original "1440"
+                                {"MiniWarpFuelTime",                              "1"}, --Original "0.5"
+                                {"MiniWarpChargeTime",                          "1.4"}, --Original "2"
                             }
                         },
 
@@ -146,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"PitchCorrectHeightCurve",},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Curve",           "EaseOutQuad"}, --"Squared"
+                                {"Curve",           "Squared"}, --"Squared"
                             }
                         },
                         {
@@ -160,7 +160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"LandingCurveHeavy",},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Curve",           "EaseOutSine"}, --"ReallySlowOut"
+                                {"Curve",           "EaseOutQuad"}, --"ReallySlowOut"
                             }
                         },
 
