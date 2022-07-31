@@ -57,9 +57,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "True Black.pak", 
+["MOD_FILENAME"] 			= "True Black 1.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.96",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "3.97",
 ["MOD_DESCRIPTION"]			= "This mod changes darkest paint color into pure black",
 ["MODIFICATIONS"] 			= 
 	{
@@ -86,9 +87,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{  -- Dark Grey
-								{"R", "-1.0"},
-								{"G", "-1.0"},
-								{"B", "-1.0"}
+							  -- Hint from MusicAndSilence : if two colors have the exact same value, the second will be ignored
+								{"R", "-0.999"},  			
+								{"G", "-0.999"},
+								{"B", "-0.999"}
 							},
 						},
 						{

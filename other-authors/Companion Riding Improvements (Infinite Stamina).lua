@@ -1,7 +1,7 @@
 Author = "aharttsx"
 ModName = "Companion Riding Improvements (Infinite Stamina)"
 BaseDescription = "Increases Companion ride speeds, reduces stamina drain rate, improves mounted camera rotation range, and sligtly shortens teleport-to-player distance to help prevent despawning as frequently"
-GameVersion = "3.93"
+GameVersion = "3.97"
 ModVersion = "1.3"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 FileSource2 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREPETBEHAVIOURTABLE.MBIN"
