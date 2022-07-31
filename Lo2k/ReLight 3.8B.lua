@@ -105,10 +105,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 3.8.pak", 
+["MOD_FILENAME"] 			= "ReLight 3.8B.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.96",
+["NMS_VERSION"]				= "3.97",
 ["MOD_DESCRIPTION"]			= "This mod tunes most of the lights",
 ["MODIFICATIONS"] 			= 
 	{
