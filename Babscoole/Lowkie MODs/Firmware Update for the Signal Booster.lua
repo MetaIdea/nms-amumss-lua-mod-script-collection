@@ -373,7 +373,7 @@ All_Request_Leave =
 
 Grave_Scan_Event = GetCustomScanEvent("SE_GRAVE", "Nearest", "BuildingClass", "GraveInCave", "False", "False", "Local", "UI_MP_PLANTKILL_GRAVE_OSD", "SCAN_GRAVE", "", "UI_TITLE_OWNED_LORE1")
 Base_Scan_Event = GetCustomScanEvent("SE_BASE", "Nearest", "BuildingClass", "Base", "False", "False", "Local", "UI_RECOVER_BASE_OSD", "UI_RECOVER_BASE_MARKER", "", "UI_RECOVER_BASE_MARKER")
---Settle_Scan_Event = GetCustomScanEvent("SE_SETTLE", "Random", "UnownedSettlement", "Settlement_Hub", "True", "True", "Local", "UI_SETTLEMENT_LOCATED_OSD", "UI_SETTLEMENT_LABEL", "TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SETTLEMENT.DDS", "UI_SETTLEMENT_LOCATED")
+Glitch_Scan_Event = GetCustomScanEvent("SE_GLITCH", "Nearest", "BuildingClass", "StoryGlitch", "False", "False", "Local", "NPC_COMM_WEEK_04_GLITCH_OSD", "BUILDING_GLITCHYSTORYBOX", "", "BUILDING_GLITCHYSTORYBOX")
 
 --Changes for the Rewards table (ID, EVENT)
 REWARD1 = GetReward ("CRASHED_SHIP", "DISTRESS")
@@ -381,9 +381,9 @@ REWARD2 = GetReward ("TOOL_LOCATION", "SHOP")
 REWARD3 = GetReward ("PLANET_ARCHIVES", "LIBRARY")
 REWARD4 = GetReward ("R_GRAVE", "SE_GRAVE")
 REWARD5 = GetReward ("R_BASE", "SE_BASE")
---REWARD6 = GetReward ("R_SETTLE", "SE_SETTLE")
+REWARD6 = GetReward ("R_GLITCH", "SE_GLITCH")
 
-REWARDSET = REWARD1..REWARD2..REWARD3..REWARD4..REWARD5--..REWARD6
+REWARDSET = REWARD1..REWARD2..REWARD3..REWARD4..REWARD5..REWARD6
 
 --PuzzleOptions (NAME, ACTION)
 --First set of options only 4 options per set allowed
@@ -413,16 +413,16 @@ Menu3_Options = Menu3_Option1..Menu3_Option2..Menu3_Option3..More_Options3
 Menu4_Option1 = GetPuzzleOption("UI_SENTINEL_HIVE_NAME", "R_SHOW_HIVEONLY")  -- Sentinel Pillar
 Menu4_Option2 = GetPuzzleOption("SCAN_GRAVE", "R_GRAVE")  -- Traveller Grave
 Menu4_Option3 = GetPuzzleOption("UI_RECOVER_BASE_SUB", "R_BASE")  -- "Wild" Base Computer
---More_Options4 = GetMorePuzzleOption("?HYDRO_SCANNER")
-Menu4_Options = Menu4_Option1..Menu4_Option2..Menu4_Option3..All_Request_Leave
+More_Options4 = GetMorePuzzleOption("?HYDRO_SCANNER")
+Menu4_Options = Menu4_Option1..Menu4_Option2..Menu4_Option3..More_Options4
 
 -- --Fifth set of options, also get a close option
--- Menu5_Option1 = GetPuzzleOption("UI_SETTLEMENT_LABEL", "R_SETTLE")  -- Settlement
--- Menu5_Options = Menu5_Option1..All_Request_Leave
+Menu5_Option1 = GetPuzzleOption("BUILDING_GLITCHYSTORYBOX", "R_GLITCH")  -- Settlement
+Menu5_Options = Menu5_Option1..All_Request_Leave
 
 --Put all the options together.
 ALL_PUZZLE_UPDATES = [[      <Property name="Options">
-]]..Menu1_Options..Menu2_Options..Menu3_Options..Menu4_Options--..Menu5_Options
+]]..Menu1_Options..Menu2_Options..Menu3_Options..Menu4_Options..Menu5_Options
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -499,11 +499,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"]         = "+0",
 							["ADD"] = Base_Scan_Event
 						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Events"},
-							-- ["LINE_OFFSET"]         = "+0",
-							-- ["ADD"] = Settle_Scan_Event
-						-- },						
+						{
+							["PRECEDING_KEY_WORDS"] = {"Events"},
+							["LINE_OFFSET"]         = "+0",
+							["ADD"] = Glitch_Scan_Event
+						},						
 					},
 				},
 			}

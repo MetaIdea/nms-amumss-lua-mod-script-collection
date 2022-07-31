@@ -150,6 +150,7 @@ HUBFLAG_GROUPS =	-- BASEBUILDINGTABLE GROUPS
 			{["ID"] = "PF_ROOMS_LB_B",	["Name"] = "PF_ROOMS_LB_B_NAME"},
 			{["ID"] = "PF_ROOMS_LB_D",	["Name"] = "PF_ROOMS_LB_D_NAME"},
 			{["ID"] = "PF_ROOMS_MONO",	["Name"] = "BUILDING_MONOLITH"},
+			{["ID"] = "VANILLA_LEGACY",	["Name"] = "VANILLA_LEGACY_NAME"},
 		}
 	},
 	{ ["ID"]= "PF_BASIC_R", 			["Name"] = "W_BASIC_NAME", ["Icon"] = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/PF_CR_W.DDS]],
@@ -166,7 +167,7 @@ HUBFLAG_GROUPS =	-- BASEBUILDINGTABLE GROUPS
 			{["ID"] = "PF_CUBE_M",		["Name"] = "PF_CUBE_M_NAME"},
 			{["ID"] = "PF_CUBE_DECOR",	["Name"] = "PF_CUBE_DECOR_NAME"},
 			{["ID"] = "PF_EXT_DECOR",	["Name"] = "UI_BUILD_GRID_EXTERIOR"},
-			{["ID"] = "PF_CUBE_SPACE",	["Name"] = "UI_BUILD_GRID_FREIGHTER_ROOMS"},
+			{["ID"] = "PF_CUBE_SPACE",	["Name"] = "UI_BUILD_GRID_FREIGHTER_CORE"},
 		}
 	},
 }
@@ -2023,6 +2024,27 @@ ADD_LANGUAGE_LIST =
 					 ["USEnglish"]				= [[]],	
 					},
 	},
+	["VANILLA_LEGACY_NAME"] = {
+		["ID"] = "VANILLA_LEGACY_NAME",
+		["Value"] = {["English"]				= [[LEGACY OBJECTS]],
+					 ["French"]					= [[]],	
+					 ["Italian"]				= [[]],	
+					 ["German"]					= [[]],	
+					 ["Spanish"]				= [[]],	
+					 ["Russian"]				= [[]],	
+					 ["Polish"]					= [[]],	
+					 ["Dutch"]					= [[]],	
+					 ["Portuguese"]				= [[]],	
+					 ["LatinAmericanSpanish"]	= [[]],	
+					 ["BrazilianPortuguese"]	= [[]],	
+					 ["SimplifiedChinese"]		= [[中古建築]],	
+					 ["TraditionalChinese"]		= [[中古建築]],	
+					 ["TencentChinese"]			= [[中古建築]],	
+					 ["Korean"]					= [[]],	
+					 ["Japanese"]				= [[]],	
+					 ["USEnglish"]				= [[]],	
+					},
+	},
 	
 }
 
@@ -2623,26 +2645,6 @@ HUBFLAG_NPCSPAWN =
 	},
 }
 
-HUBFLAG_VANILLA = -- DEFAULTSAVEDATA VANILLA KnownProducts
-{ "WALL", "WALLCURVED", "WALLTALL", "ROOMFLOOR", "WALLDOOR", "CORNERPOST", "CUBEROOF", "WALLSCREENB2",
-"W_WALL", "W_WALL_H", "W_WALL_Q", "W_WALL_Q_H", "W_WALLDIAGONAL", "W_WALL_WINDOW", "W_DOOR", "W_DOOR_H", "W_GDOOR", "W_DOORWINDOW", "W_FLOOR", "W_TRIFLOOR", "W_TRIFLOOR_Q", "W_GFLOOR", "W_FLOOR_Q", "W_RAMP", "W_RAMP_H", "W_ROOF", "W_ROOF_M", "W_ROOF_C", "W_ROOF_IC", "W_ARCH", "W_ARCH_H", 
-"M_WALL", "M_WALL_H", "M_WALL_Q", "M_WALL_Q_H", "M_WALLDIAGONAL", "M_WALL_WINDOW", "M_DOOR", "M_DOOR_H", "M_GDOOR", "M_DOORWINDOW", "M_FLOOR", "M_TRIFLOOR", "M_TRIFLOOR_Q", "M_GFLOOR", "M_FLOOR_Q", "M_RAMP", "M_RAMP_H", "M_ROOF", "M_ROOF_M", "M_ROOF_C", "M_ROOF_IC", "M_ARCH", "M_ARCH_H",
-"C_WALL", "C_WALL_H", "C_WALL_Q", "C_WALL_Q_H", "C_WALLDIAGONAL", "C_WALL_WINDOW", "C_DOOR", "C_DOOR_H", "C_GDOOR", "C_DOORWINDOW", "C_FLOOR", "C_TRIFLOOR", "C_TRIFLOOR_Q", "C_GFLOOR", "C_FLOOR_Q", "C_RAMP", "C_RAMP_H", "C_ROOF", "C_ROOF_M", "C_ROOF_C", "C_ROOF_IC", "C_ARCH", "C_ARCH_H",
-"SET_MONUMENT", "SET_T_MONU", "SET_F_MONU", "SET_S_TOWER", "FRE_CORR_A", "FRE_CUBE_F", "LAUNCHLOCKER", "FRE_WALK_A", "FRE_ROOM_ROCLOC", "FRE_ROOM_PLANT", "FRE_ELEV_F", "FRE_EXT_A", "FRE_FACE_DOOR_A", "FRE_FACE_WINDOW",  
-}
-
-INFRA_ADDGROUP =  [[<Property name="Groups">
-<Property value="GcBaseBuildingEntryGroup.xml">
-<Property name="Group" value="BASIC_LEGACY" />
-<Property name="SubGroupName" value="LEG_INFRA" />
-<Property name="SubGroup" value="0" />
-</Property>
-<Property value="GcBaseBuildingEntryGroup.xml">
-<Property name="Group" value="PF_BASIC_R" />
-<Property name="SubGroupName" value="PF_EXT_DECOR" /> <!--HUBFLAG TWEAK-->
-<Property name="SubGroup" value="0" />
-</Property>
-</Property>]]
 
 HUBFLAG_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
 {	
@@ -16072,7 +16074,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 	{	["OBJECT"] = {	["ID"] =						"CR_SPACE_AB_F",
 						["PlacementScene"] =			"",
 						["Style"] = 					"Stone",
-						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\CUBEROOM\SPACEBASE/CUBEROOM_SNAPPOINT_X2.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/SPACEBASE/CUBEROOM_SNAPPOINT.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\CUBEROOM\SPACEBASE/CUBEROOM_ABAND_4.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
 						["IsPlaceable"] = 				"False",
@@ -65323,7 +65325,7 @@ HUBFLAG_SNAPGROUPS =
 			},
 			{
 				["Style"] = "Concrete", -- CR_SPACE_BUNK
-				["Filename"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\MESHES\CUBEROOM_WALLSIDE_BUNK.SCENE.MBIN"
+				["Filename"] = "CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\CUBEROOM\SPACEBASE\CUBEROOM_WALLSIDE_BUNK.SCENE.MBIN"
 			},
 		}
 	},
@@ -65361,19 +65363,19 @@ HUBFLAG_SNAPGROUPS =
 			},
 			{
 				["Style"] = "Stone",
-				["Filename"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\MESHES\CUBEROOM_CAPCORNER_4.SCENE.MBIN"
+				["Filename"] = "CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\CUBEROOM\SPACEBASE\CUBEROOM_CAPCORNER_4.SCENE.MBIN"
 			},
 			{
 				["Style"] = "Wood",
-				["Filename"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\MESHES\CUBEROOM_CAPCORNER_2.SCENE.MBIN"
+				["Filename"] = "CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\CUBEROOM\SPACEBASE\CUBEROOM_CAPCORNER_2.SCENE.MBIN"
 			},
 			{
 				["Style"] = "Metal",
-				["Filename"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\MESHES\CUBEROOM_CAPCORNER_3.SCENE.MBIN"
+				["Filename"] = "CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\CUBEROOM\SPACEBASE\CUBEROOM_CAPCORNER_3.SCENE.MBIN"
 			},
 			{
 				["Style"] = "Concrete",
-				["Filename"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\MESHES\CUBEROOM_CAPCORNER_2.SCENE.MBIN"
+				["Filename"] = "CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\CUBEROOM\SPACEBASE\CUBEROOM_CAPCORNER_2.SCENE.MBIN"
 			},
 		}
 	},
@@ -65438,6 +65440,27 @@ HUBFLAG_SNAPGROUPS =
 			},
 		}
 	},	
+	{	["ID"] = "_W_FRE_EXT_OUTCORNER",
+		["StyleModels"] = 
+		{
+			{
+				["Style"] = "Stone",
+				["Filename"] = "CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\CUBEROOM\SPACEBASE\OUTCORNER0_X2.SCENE.MBIN"
+			},
+			{
+				["Style"] = "Wood",
+				["Filename"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTERIORS\OUTCORNER0.SCENE.MBIN"
+			},
+			{
+				["Style"] = "Metal",
+				["Filename"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTERIORS\OUTCORNER0.SCENE.MBIN"
+			},
+			{
+				["Style"] = "Concrete",
+				["Filename"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTERIORS\OUTCORNER0.SCENE.MBIN"
+			},
+		}
+	},
 	{	["ID"] = "_W_CUBEFLOOR", --CUBEROOM_INNERFLOOR
 		["StyleModels"] = 
 		{
@@ -66595,9 +66618,9 @@ for i,j in pairs(GROUPS_INJECT) do
 end
 
 EXPORT_KNOWNPRODUCTS_LIST = {"<!-- HUBFLAG VANILLA -->"}
-for i,j in pairs(HUBFLAG_VANILLA) do	-- ADDING FOUNDATION INFRASTRUCTURE PIECES INTO DEFAULTSAVE
-	EXPORT_KNOWNPRODUCTS_LIST[i+1] = GetKnownProducts(j)
-end
+-- for _i,j in pairs(HUBFLAG_VANILLA) do	-- ADDING FOUNDATION INFRASTRUCTURE PIECES INTO DEFAULTSAVE
+	-- EXPORT_KNOWNPRODUCTS_LIST[i+1] = GetKnownProducts(j)
+-- end
 
 EXPORT_BASEOBJECTS_LIST = {"<!--HUBFLAG PRODUCT-->"}
 EXPORT_PRODUCTS_LIST = {"<!--HUBFLAG-->"}
@@ -66777,30 +66800,6 @@ BASEBUILD_ENTRIES =
 						["VALUE_CHANGE_TABLE"] 	= 
 						{
 							{"CanPickUp", "True"}, -- TECHPLUS
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","WALLTALL"},
-						["REPLACE_TYPE"] 		= "RAW",
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","WALLDOOR"},
-						["REPLACE_TYPE"] 		= "RAW",
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","ROOMFLOOR"},
-						["REPLACE_TYPE"] 		= "RAW",
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
 						}
 					},
 					{
@@ -67062,14 +67061,6 @@ BASEBUILD_ENTRIES =
 						}
 					},
 					{
-						["SPECIAL_KEY_WORDS"] = {"ID","CORNERPOST"},
-						["REPLACE_TYPE"] 		= "RAW",
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
-						}
-					},
-					{
 						["SPECIAL_KEY_WORDS"] = {"ID","BUILDTERMINAL"},
 						["VALUE_CHANGE_TABLE"] 	= 
 						{
@@ -67282,14 +67273,6 @@ BASEBUILD_ENTRIES =
 							{"CanPickUp", "True"}, -- TECHPLUS
 						}
 					},
-					-- {
-						-- ["SPECIAL_KEY_WORDS"] = {"ID","CHECKPOINT"},
-						-- ["REPLACE_TYPE"] 		= "RAW",
-						-- ["VALUE_CHANGE_TABLE"] 	= 
-						-- {
-							-- { [[<Property name="Groups" />]], INFRA_ADDGROUP },
-						-- }
-					-- },
 					{
 						["SPECIAL_KEY_WORDS"] = {"ID","RACE_RAMP"},
 						["VALUE_CHANGE_TABLE"] 	= 
@@ -67403,72 +67386,7 @@ BASEBUILD_ENTRIES =
 -- </Property>]],
 					-- },
 					{
-						["SPECIAL_KEY_WORDS"] = {"Name", "UI_BUILD_GRID_METAL"},
-						["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-						--["LINE_OFFSET"] 		= "+1",
-						["ADD"] 				= 
-[[<Property value="GcBaseBuildingSubGroup.xml">
-<Property name="Id" value="LEG_INFRA" />
-<Property name="Name" value="BLD_INFRA_NAME" />
-</Property>]],
-					},
-					{
 						["SPECIAL_KEY_WORDS"] = {"ID","SET_CONSTRUCT"},
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{"BuildableOnPlanetBase", "True"},
-							{"BuildableOnSpaceBase", "True"},
-							{"BuildableOnFreighter", "True"},
-							{"Group", "FURNITURE"},
-							{"SubGroupName", "FURNDECOR"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","SET_MAYORTERM"},
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{"BuildableOnPlanetBase", "True"},
-							{"BuildableOnSpaceBase", "True"},
-							{"BuildableOnFreighter", "True"},
-							{"Group", "FURNITURE"},
-							{"SubGroupName", "FURNDECOR"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","SET_MONUMENT"},
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{"BuildableOnPlanetBase", "True"},
-							{"BuildableOnSpaceBase", "True"},
-							{"BuildableOnFreighter", "True"},
-							{"Group", "FURNITURE"},
-							{"SubGroupName", "FURNDECOR"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","SET_T_MONU"},
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{"BuildableOnPlanetBase", "True"},
-							{"BuildableOnSpaceBase", "True"},
-							{"BuildableOnFreighter", "True"},
-							{"Group", "FURNITURE"},
-							{"SubGroupName", "FURNDECOR"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","SET_F_MONU"},
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{"BuildableOnPlanetBase", "True"},
-							{"BuildableOnSpaceBase", "True"},
-							{"BuildableOnFreighter", "True"},
-							{"Group", "FURNITURE"},
-							{"SubGroupName", "FURNDECOR"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","SET_S_TOWER"},
 						["VALUE_CHANGE_TABLE"] 	= 
 						{
 							{"BuildableOnPlanetBase", "True"},
@@ -67490,23 +67408,6 @@ BASEBUILD_ENTRIES =
 						["SECTION_ACTIVE"] = {1,},  --Added 04 DEC 2021
 						["LINE_OFFSET"] 		= "-1",
 						["ADD"] 				= EXPORT_GROUPS
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","WALL"},
-						["REPLACE_TYPE"] 		= "RAW",
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-						--{ [[REPLACE_THIS]],	[[WITH_THIS]] },
-							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
-						}	
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"ID","WALLCURVED"},
-						["REPLACE_TYPE"] 		= "RAW",
-						["VALUE_CHANGE_TABLE"] 	= 
-						{
-							{ [[<Property name="Groups" />]], INFRA_ADDGROUP },
-						}
 					},
 				}
 
@@ -67862,11 +67763,11 @@ LANGUAGE_FILE_HEADER = [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
   <Property name="Table">]]
-for i,j in pairs(LANGUAGE_TYPE) do
+for _i,j in pairs(LANGUAGE_TYPE) do
 	LANGUAGE_TEMP = {}
 	EXPORT_LANGUAGE = {}
 	-- table.insert(EXPORT_LANGUAGE, LANGUAGE_FILE_HEADER)
-	for k,l in pairs(ADD_LANGUAGE_LIST) do
+	for _k,l in pairs(ADD_LANGUAGE_LIST) do
 		-- USES ENGLISH ENTRY IF THERE IS NO TRANSLATION
 		if l["Value"][j] == "" then
 			 table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"]["English"]))

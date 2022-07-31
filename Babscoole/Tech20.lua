@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "BP_SALVAGE", "ID","BP_SALVAGE",},
-							["SECTION_ACTIVE"] = {5,},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"AmountMin", "10"},
