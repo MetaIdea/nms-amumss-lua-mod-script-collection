@@ -9,7 +9,6 @@ function InsertNewLight(T_New)
 	-- values from T_New will overwrite the defaults in T
 	local T = {
 		name = 'NewLight',
-		--hash = 0,
 		tx = 0,
 		ty = 0,
 		tz = 0,
@@ -26,7 +25,7 @@ function InsertNewLight(T_New)
 		r = 1.0,
 		g = 1.0,
 		b = 1.0,
-		--v = 0
+		v = 0.0,
 	}
 	for k, v in pairs(T_New) do
 		T[k] = v
@@ -91,7 +90,7 @@ function InsertNewLight(T_New)
 	    <Property value="TkSceneNodeAttributeData.xml">
 	      <Property name="Name" value="VOLUMETRIC" />
 	      <Property name="AltID" value="" />
-	      <Property name="Value" value="0.0" />
+	      <Property name="Value" value="]] .. T.v .. [[" />
 	    </Property>
 	    <Property value="TkSceneNodeAttributeData.xml">
 	      <Property name="Name" value="MATERIAL" />
@@ -104,252 +103,123 @@ function InsertNewLight(T_New)
 end
 
 
-
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 3.7.pak", 
+["MOD_FILENAME"] 			= "ReLight 3.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.94",
+["NMS_VERSION"]				= "3.96",
 ["MOD_DESCRIPTION"]			= "This mod tunes most of the lights",
 ["MODIFICATIONS"] 			= 
 	{
-		{
+		{					
 			["MBIN_CHANGE_TABLE"] 	= 
 			{	
 				{  -- FREIGHTER BRIDGE
 					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						-- planetary hologram light
-						{ 
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight60", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"30000.0"},  --original : 50000.0
-							},
+						-- DeleteLight('Lightpath03')
+						--[[
+						{  -- Remove new yellow lights all around floor0
+							["SPECIAL_KEY_WORDS"] = {"Name", "Lightpath02",},
+							["REMOVE"] 	= "SECTION",
+						},						
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "Lightpath03",},
+							["REMOVE"] 	= "SECTION",
+						},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "Lightpath04",}, 
+							["REMOVE"] 	= "SECTION",
+						},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "Lightpath05",}, 
+							["REMOVE"] 	= "SECTION",
+						},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "Lightpath06",}, 
+							["REMOVE"] 	= "SECTION",
+						},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "Lightpath07",}, 
+							["REMOVE"] 	= "SECTION",
 						}, 
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight60"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransY",	"2.0"},  --original : 2.31
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight60", "Name", "COL_R"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"1.0"}, 
-							},
-						},					
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight60", "Name", "COL_G"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.668880"},  
-							},
-						},						
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight60", "Name", "COL_B"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.360784"}, 
-							},
-						},
-						-- Main 10m high light
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransY",	"7.0"},  --original : 9.91
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "FALLOFF"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"LINEAR"},  --original : QUADRATIC
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"80000.0"},  --original : 100000.0 //80000
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "COL_R"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.95"},  --0.854902
-							},
-						},					
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "COL_G"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"1.0"},  
-							},
-						},	
-												{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight59", "Name", "COL_B"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"1.0"},  
-							},
-						},	
-						-- Captain yellow 5m high light
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransY", "5.8"},-- original 5.10245
-								{"TransZ", "-11.220206"},
-								{"RotX",	"-90"},  --original : 0
-								{"RotY",	"180"},  --original : 0
-								{"RotZ",	"90"},  --original : 0
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61", "Name", "FOV"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"180.0"},  --original : 360.0
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"30000.0"},  --original : 40000.0
-							},
-						},				
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61", "Name", "COL_G"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.9056"},  
-							},
-						},						
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61", "Name", "COL_B"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.685"}, 
-							},
-						},	
-						{  -- Blue Holo-Tractor field Light
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- Middle window behind captain
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='SpaceLight0',tx=0.0, ty=-1.0, tz=-21, i=80000, r=0.3, g=0.7, b=1.0}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- left windows behind captain
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='SpaceLight1',tx=-13.0, ty=-1.0, tz=-18, i=80000, r=0.3, g=0.7, b=1.0}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- right windows behind captain
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='SpaceLight2',tx=13.0, ty=-1.0, tz=-18, i=80000, r=0.3, g=0.7, b=1.0}),
-						},
-						{  -- Space Light  -- 1st floor windows
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- Top Middle window
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='SpaceLight3',tx=0.0, ty=7.0, tz=-21, i=60000, r=0.3, g=0.7, b=1.0}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- Top left windows 
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='SpaceLight4',tx=-13.0, ty=7.0, tz=-18, i=60000, r=0.3, g=0.7, b=1.0}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  -- Top right windows 
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='SpaceLight5',tx=13.0, ty=7.0, tz=-18, i=60000, r=0.3, g=0.7, b=1.0}),
+						--]]
+						{  -- Remove white light above base entry at 1st floor
+							["SPECIAL_KEY_WORDS"] = {"Name", "Lightpath08",}, 
+							["REMOVE"] 	= "SECTION",
+						}, 
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight124",}, --Remove blue light above captain
+							["REMOVE"] 	= "SECTION",
 						}, 
 						
-						-- White internal neons - left side
-						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NeonLight1l',tx=-5.0, ty=4.5, tz=-12.4, i=15000}),
+						{  -- Remove light as we will recreate them
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight59",}, -- Main 10m high light
+							["REMOVE"] 	= "SECTION",
 						},
 						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NeonLight2l',tx=-12.7, ty=4.5, tz=-5.2, i=15000}),
-						},
-						{ 
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NeonLight3l',tx=-12.7, ty=4.5, tz=5.2, i=15000}),
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight60",}, -- planetary hologram light
+							["REMOVE"] 	= "SECTION",
 						},
 						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NeonLight4l',tx=-5.0, ty=4.5, tz=12.4, i=15000}),
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight61",}, -- Captain yellow top light
+							["REMOVE"] 	= "SECTION",
+						},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight62",}, -- blue top entry light
+							["REMOVE"] 	= "SECTION",
 						},
 						
-						-- White internal neons - right side
-						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
+						{  -- Blue Holo-Tractor field  and Interior Light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "Lightpath01"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NeonLight1r',tx=5.0, ty=4.5, tz=-12.4, i=15000}),
-						},
-						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NeonLight2r',tx=12.7, ty=4.5, tz=-5.2, i=15000}),
-						},
-						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NeonLight3r',tx=12.7, ty=4.5, tz=5.2, i=15000}),
-						},
-						{ 
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight61"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='NeonLight4r',tx=5.0, ty=4.5, tz=12.4, i=15000}),
-						},
-						
-						-- blue entry light
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight62"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransZ", "14.081081"},
-							},
-						},							
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight62", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"40000.0"},  --original : 70000.0
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight62", "Name", "COL_R"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.608391"}, 
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight62", "Name", "COL_G"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"0.808391"}, 
-							},
-						},						
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight62", "Name", "COL_B"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"1.0"}, 
-							},
+							["ADD"] = InsertNewLight({name='pointLight59',tx=0.0, ty=7.0, tz=0.0, i=80000, r=0.95, g=1.0, b=1.0}) -- Main 10m high light
+									..InsertNewLight({name='pointLight60',tx=0.0, ty=2.0, tz=0.0, i=30000, r=1.0, g=0.67, b=0.361}) -- planetary hologram light
+									..InsertNewLight({name='pointLight61',tx=0.0, ty=5.8, tz=-11.22, rx=-90, fov =180, i=32000, r=1.0, g=0.905, b=0.685}) -- Captain yellow top light
+									..InsertNewLight({name='pointLight62',tx=0.0, ty=8.58, tz=14.08, i=40000, r=0.6, g=0.8, b=1.0}) -- blue top entry light
+							
+									-- Tractor beam blue light
+									..InsertNewLight({name='SpaceLight0',tx=0.0, ty=-1.0, tz=-21, i=80000, r=0.3, g=0.7, b=1.0}) -- Middle window behind captain
+									..InsertNewLight({name='SpaceLight1',tx=-13.0, ty=-1.0, tz=-18, i=80000, r=0.3, g=0.7, b=1.0}) -- left windows behind captain
+									..InsertNewLight({name='SpaceLight2',tx=13.0, ty=-1.0, tz=-18, i=80000, r=0.3, g=0.7, b=1.0})  -- right windows behind captain
+									..InsertNewLight({name='SpaceLight3',tx=0.0, ty=7.0, tz=-21, i=60000, r=0.3, g=0.7, b=1.0})  -- Top Middle window
+									..InsertNewLight({name='SpaceLight4',tx=-13.0, ty=7.0, tz=-18, i=60000, r=0.3, g=0.7, b=1.0}) -- Top left windows 
+									..InsertNewLight({name='SpaceLight5',tx=13.0, ty=7.0, tz=-18, i=60000, r=0.3, g=0.7, b=1.0}) -- Top right windows 
+									
+								-- White roof0 neons - left side
+									..InsertNewLight({name='NeonLeft1',tx=-5.0, ty=4.5, tz=-12.4, i=15000})
+									..InsertNewLight({name='NeonLeft2',tx=-12.7, ty=4.5, tz=-5.2, i=15000})
+									..InsertNewLight({name='NeonLeft3',tx=-12.7, ty=4.5, tz=5.2, i=15000})
+									..InsertNewLight({name='NeonLeft4',tx=-5.0, ty=4.5, tz=12.4, i=15000})
+								-- White roof0 neons - right side
+									..InsertNewLight({name='NeonRight1',tx=5.0, ty=4.5, tz=-12.4, i=15000})
+									..InsertNewLight({name='NeonRight2',tx=12.7, ty=4.5, tz=-5.2, i=15000})
+									..InsertNewLight({name='NeonRight3',tx=12.7, ty=4.5, tz=5.2, i=15000})
+									..InsertNewLight({name='NeonRight4',tx=5.0, ty=4.5, tz=12.4, i=15000})
+									
+								-- White Floor Lights - left side
+									..InsertNewLight({name='Floor0Left1',tx=-5.42, ty=1.97, tz=-13.06, i=4000})
+									..InsertNewLight({name='Floor0Left2',tx=-13.06, ty=1.97, tz=-5.42, i=4000})
+									..InsertNewLight({name='Floor0Left3',tx=-13.06, ty=1.97, tz=5.42, i=4000})
+									..InsertNewLight({name='Floor0Left4',tx=-5.42, ty=1.97, tz=13.06, i=4000})
+								-- White Floor Lights - right side
+									..InsertNewLight({name='Floor0Right1',tx=5.42, ty=1.97, tz=-13.06, i=4000})
+									..InsertNewLight({name='Floor0Right2',tx=13.06, ty=1.97, tz=-5.42, i=4000})
+									..InsertNewLight({name='Floor0Right3',tx=13.06, ty=1.97, tz=5.42, i=4000})
+									..InsertNewLight({name='Floor0Right4',tx=5.42, ty=1.97, tz=13.06, i=4000})
+									
+								-- White Floor Lights - left side
+									..InsertNewLight({name='Floor1Left1',tx=-6.42, ty=5.97, tz=-15.5, i=4000})
+									..InsertNewLight({name='Floor1Left2',tx=-15.5, ty=5.97, tz=-6.42, i=4000})
+									..InsertNewLight({name='Floor1Left3',tx=-15.5, ty=5.97, tz=6.42, i=4000})
+									..InsertNewLight({name='Floor1Left4',tx=-6.42, ty=5.97, tz=15.5, i=4000})
+								-- White Floor Lights - right side
+									..InsertNewLight({name='Floor1Right1',tx=6.42, ty=5.97, tz=-15.5, i=4000})
+									..InsertNewLight({name='Floor1Right2',tx=15.5, ty=5.97, tz=-6.42, i=4000})
+									..InsertNewLight({name='Floor1Right3',tx=15.5, ty=5.97, tz=6.42, i=4000})
+									..InsertNewLight({name='Floor1Right4',tx=6.42, ty=5.97, tz=15.5, i=4000})
 						},							
 					},
 				},
@@ -414,102 +284,34 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\DOORSFRONT.SCENE.MBIN",   
+					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR.SCENE.MBIN", 
 					["EXML_CHANGE_TABLE"] 	= 
 					{	
-					--[[
-						{  -- cargo hangar left stairs
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight70"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransY", "11.0848"},
-								{"TransZ", "-10.3617"},
-							},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight70"},  -- left stairs light
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = -- left stairs light
+									  InsertNewLight({name='pointLight125z',tx=-16.66565, ty=14.0848, tz=-30,8617})
+									..InsertNewLight({name='pointLight125b',tx=-22.66565, ty=11.0848, tz=-25,8617, rx=-135, fov=180, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight125c',tx=-22.66565, ty=8.0848, tz=-20,8617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight125d',tx=-22.66565, ty=5.3848, tz=-15,8617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight125e',tx=-22.66565, ty=2.6848, tz=-10,3617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight125f',tx=-22.66565, ty=0.0, tz=-4,36167, g=0.851, b=0.745})
+									 -- right stairs light
+									..InsertNewLight({name='pointLight70z',tx=16.66565, ty=14.0848, tz=-30,8617})
+									..InsertNewLight({name='pointLight70b',tx=22.66565, ty=11.0848, tz=-25,8617, rx=-135, fov=180, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight70c',tx=22.66565, ty=8.0848, tz=-20,8617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight70d',tx=22.66565, ty=5.3848, tz=-15,8617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight70e',tx=22.66565, ty=2.6848, tz=-10,3617, g=0.851, b=0.745})
+									..InsertNewLight({name='pointLight70f',tx=22.66565, ty=0.0, tz=-4,36167, g=0.851, b=0.745}),
 						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight70", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"30000.0"}, 
-							},
-						},
-						]]
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  -- left door light
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight70z',tx=16.66565, ty=14.0848, tz=-4.3617}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight70b',tx=22.66565, ty=11.0848, tz=-10.3617, rx=-45, fov=180, g=0.851, b=0.745}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight70c',tx=22.66565, ty=8.0848, tz=-15.8617, g=0.851, b=0.745}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight70d',tx=22.66565, ty=5.3848, tz=-20.8617, g=0.851, b=0.745}),
-						},		
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight70e',tx=22.66565, ty=2.6848, tz=-25.8617, g=0.851, b=0.745}),
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight7501",}, -- light in the middle of left stairs
+							["REMOVE"] 	= "SECTION",
 						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight70f',tx=22.66565, ty=0.0, tz=-30.8617, g=0.851, b=0.745}),
-						},	
-						--[[
-						{  -- cargo hangar right stairs
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight125"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TransY", "11.0848"},
-								{"TransZ", "-10.3617"},
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight125", "Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"30000.0"}, 
-							},
-						},
-						]]
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  -- left door light
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight125z',tx=-16.66565, ty=14.0848, tz=-4.36167}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight125b',tx=-22.66565, ty=11.0848, tz=-10.3617, rx=-45, fov=180, g=0.851, b=0.745}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight125c',tx=-22.66565, ty=8.0848, tz=-15.8617, g=0.851, b=0.745}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight125d',tx=-22.66565, ty=5.3848, tz=-20.8617, g=0.851, b=0.745}),
-						},		
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight125e',tx=-22.66565, ty=2.6848, tz=-25.8617, g=0.851, b=0.745}),
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "DefaultColour"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight70f',tx=-22.66565, ty=0.0, tz=-30.8617, g=0.851, b=0.745}),
+						{  
+							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight70",}, -- light in the middle of right stairs
+							["REMOVE"] 	= "SECTION",
 						},							
 					},
 				},
@@ -550,7 +352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{    -- FREIGHTER LIGHTS UNDER STAIRS
 					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARLAYOUT.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
-					{			
+					{							
 						{  -- LEFT STAIRS
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight75",},
 							["REMOVE"] 	= "SECTION",
@@ -561,6 +363,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},								
 					},
 				},
+				
+				{  -- Freighter Bridge-hangar Teleporters
+					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\TELEPORTER\TELEPORTER_BRIDGE.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{  -- white back light
+							["SPECIAL_KEY_WORDS"] = {"Name", "StraightShape0_TopLiteL1",},
+							["REMOVE"] 	= "SECTION",
+						},	
+					}
+				},
+				
 				{    -- FREIGHTER LITTLE STAIRS ORANGE LIGHTS
 					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\HANGARSTEPS.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -588,21 +402,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 					},
 				},
-				--[[ doesn't work
-				{    -- FREIGHTER STRONG REAR ORANGE LIGHT
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HULLBOTTOM.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{  -- ORANGE SPOT
-							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value", "0.0"},  -- original 83453.234375
-							},
-						},
-					},
-				},
-				]]--
+
 				{    -- FREIGHTER LANDING PADS
 					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -1191,13 +991,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{	
 						{  -- main orange light
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "FALLOFF"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"quadratic"},  --original : quadratic
-							},
-						},
-						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight6", "Name", "INTENSITY"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1224,6 +1017,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},							
 					},
 				},	
+				
 				{  -- BED
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\BED\BEDA.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -1274,11 +1068,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},							
 					}
 				},
-				{
+				{  -- Big Hanging Drapes in Space Station
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\HANGINGDRAPES\ALLWALLDRAPES.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{  -- Big Hanging Drapes in Space Station
+						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "WallFlagLight"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -1785,15 +1579,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "ALL",
 							["REMOVE"] 	= "SECTION",
 						},	
-						{  -- creates a new LOD independant Top blue light
+						{  
 							["SPECIAL_KEY_WORDS"]  = {"Name", "PotLOD3"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopLight', ty=0.4, rx=90, fov=180, i=4000, r=0.3, g=0.7}),  
-						},
-						{  -- creates a new LOD independant Bottom teal light
-							["SPECIAL_KEY_WORDS"]  = {"Name", "PotLOD3"},  
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TealLight', ty=0.2, rx=-90, ry=180, rz=90, fov=180, i=3000, r=0.0, g=1.0; b=0.965}),  
+							["ADD"] = InsertNewLight({name='TopLight', ty=0.4, rx=90, fov=180, i=4000, r=0.3, g=0.7}) -- creates a new LOD independant Top blue light
+									..InsertNewLight({name='TealLight', ty=0.2, rx=-90, fov=180, i=3000, r=0.0, g=1.0; b=0.965}), -- creates a new LOD independant Bottom teal light 
 						},				
 					},
 				},
@@ -1828,14 +1618,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						
 						-- Cube pot
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot1LOD3"},  -- top blue light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot1LOD3"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopBlueLight', ty=0.2, rx=90, fov=180, i=400, r=0.0, g=0.600, b=1.0}),  
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot1LOD3"},  -- bottom teal Light
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TealLight', ty=5.0, rx=-90, ry=180, rz=90, sx=0.0349, sy=0.0349, sz=0.0349, fov=180, i=2500, r=1.0, g=0.93, b=0.6}),  
+							["ADD"] = InsertNewLight({name='TopBlueLight', ty=0.2, rx=90, fov=180, i=400, r=0.0, g=0.6, b=1.0})  -- top blue light
+									..InsertNewLight({name='TealLight', ty=5.0, rx=-90, sx=0.035, sy=0.035, sz=0.035, fov=180, i=2500, r=1.0, g=0.93, b=0.6}),  -- bottom teal Light
 						},				
 
 
@@ -1843,20 +1629,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot2LOD3"},  -- top blue light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopBlueLight', ty=35.0, rx=90, sx=0.0349, sy=0.0349, sz=0.0349, fov=180, fr=2.0, i=5000, r=0.0, g=0.300, b=0.7}),  
+							["ADD"] = InsertNewLight({name='TopBlueLight', ty=35.0, rx=90, sx=0.035, sy=0.035, sz=0.035, fov=180, fr=2.0, i=5000, r=0.0, g=0.300, b=0.7}),  
 						},					
 						
 
 						-- Round pot with yellow light
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot3LOD3"},  -- top blue light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot3LOD3"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopBlueLight', ty=30.0, rx=90, ry=0, rz=-90, sx=0.0349, sy=0.0349, sz=0.0349, fov=180, i=4000, r=0.0, g=0.600, b=1.0}),  
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "Pot3LOD3"},  -- Bottom yellow Light
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='YellowLight', ty=5.0, rx=-90, ry=180, rz=90, sx=0.0349, sy=0.0349, sz=0.0349, fov=180, i=8000, r=1.0, g=0.93, b=0.6}),  
+							["ADD"] = InsertNewLight({name='TopBlueLight', ty=30.0, rx=90, ry=0, rz=-90, sx=0.035, sy=0.035, sz=0.035, fov=180, i=4000, r=0.0, g=0.6, b=1.0}) -- top blue light 
+									..InsertNewLight({name='YellowLight', ty=5.0, rx=-90, sx=0.035, sy=0.035, sz=0.035, fov=180, i=8000, r=1.0, g=0.93, b=0.6}),  -- Bottom yellow Light
 						},					
 					},
 				},
@@ -2056,19 +1838,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"},  --top blue light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"},  
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='TopLight', ty=0.40, tz=-0.327, i=3000, r=0.0, g=0.6, b=1.0}),  
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"},  --middle blue light
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='MiddleLight', tz=-0.327, i=3000, r=0.0, g=0.6, b=1.0}),  
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"},  --bottom blue light
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='BottomLight', ty=-0.40, tz=-0.327, i=3000, r=0.1, g=0.6, b=1.0}),  
+							["ADD"] = InsertNewLight({name='TopLight', ty=0.40, tz=-0.327, i=3000, r=0.0, g=0.6, b=1.0})  --top blue light
+									..InsertNewLight({name='MiddleLight', tz=-0.327, i=3000, r=0.0, g=0.6, b=1.0})  --middle blue light
+									..InsertNewLight({name='BottomLight', ty=-0.40, tz=-0.327, i=3000, r=0.1, g=0.6, b=1.0}),  --bottom blue light
 						},
 						{  -- Removes original light
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
@@ -2195,7 +1969,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "polySUrface468LOD3"},
+							["SPECIAL_KEY_WORDS"] = {"Name", "polySurface468LOD3"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = InsertNewLight({name='pointLight1', i=10000}),
 						},
@@ -2298,16 +2072,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Value", "ConON1_Shape"},
 							["LINE_OFFSET"] = "+2",
 							["REPLACE_TYPE"] = "",
-							--["SECTION_UP"] = 1,
-							--["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = [[      <Property name="Children" >
-      </Property>]],
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Value", "ConON1_Shape"},
-							["LINE_OFFSET"] = "+3",
-							["REPLACE_TYPE"] = "",
-							["ADD"] = InsertNewLight({name='pointLight1', ty=0.2, i=20000}),
+]]..InsertNewLight({name='pointLight1', ty=0.2, i=20000})..[[ 
+</Property>]]
 						},
 					},
 				},
@@ -2495,6 +2262,62 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 							["ADD"] = InsertNewLight({name='Light2', ty=7, i=40000, g=0.642, b=0.0}),
 						},
+					},
+				},
+				
+				--  FLEET FREIGHTER ROOM
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\FLEETROOM\PARTS\FLOOR0.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{	
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "ABANDLIGHT4"},
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD"] = InsertNewLight({name='ScreenLight', ty=2.3, i=12000, r=0.5, g=0.8, b=1.0}),
+						},
+					},
+				},
+				
+				--  TRADE FREIGHTER ROOM
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SHOPROOM\PARTS\FLOOR0.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "ABANDLIGHT2",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TransY",	"1.2"},  --original : 1.345
+							},
+						},	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "ABANDLIGHT2", "Name", "INTENSITY"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"10000.0"},  --original : 7000.0 
+							},
+						},								
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "ABANDLIGHT2", "Name", "COL_R"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.5"},  --original : 0.0
+							},
+						},	
+												{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "ABANDLIGHT2", "Name", "COL_G"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"0.8"},  --original : 1.0
+							},
+						},	
+												{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "ABANDLIGHT2", "Name", "COL_B"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"1.0"},  --original : 0.94
+							},
+						},	
 					},
 				},
 				{
@@ -2926,12 +2749,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight5"},
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight5b', ty=17.428, tz=115.92, f='linear', i=38000, r=0.627, g=0.91}),	
-						},	
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight5b"},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='pointLight5c', ty=17.428, tz=195.92, f='linear', i=38000, r=0.627, g=0.91}),	
+							["ADD"] = InsertNewLight({name='pointLight5b', ty=17.428, tz=115.92, f='linear', i=38000, r=0.627, g=0.91})	
+									..InsertNewLight({name='pointLight5c', ty=17.428, tz=195.92, f='linear', i=38000, r=0.627, g=0.91}),	
 						},							
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftSectionModule", "Name", "pointLight116"},  --wings white lights
@@ -3052,42 +2871,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftPlatformLight"},  --middle lights
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='LeftLight1',tx=36, ty=10, tz=145, rx=-90, i=28000}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftLight1"},  --middle lights
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='LeftLight2',tx=39.5, ty=10, tz=145, rx=-90, i=28000}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftLight2"},  --middle lights
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='LeftLight3',tx=36, ty=10, tz=160, rx=-90, i=28000}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "LeftLight3"},  --middle lights
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='LeftLight4',tx=39.5, ty=10, tz=160, rx=-90, i=28000}),
+							["ADD"] = InsertNewLight({name='LeftLight1',tx=36, ty=10, tz=145, rx=-90, i=28000})
+									..InsertNewLight({name='LeftLight2',tx=39.5, ty=10, tz=145, rx=-90, i=28000})
+									..InsertNewLight({name='LeftLight3',tx=36, ty=10, tz=160, rx=-90, i=28000})
+									..InsertNewLight({name='LeftLight4',tx=39.5, ty=10, tz=160, rx=-90, i=28000}),
 						},		
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "RightPlatformLight"},  --middle lights
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='RightLight1',tx=-36, ty=10, tz=145, rx=-90, i=28000}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "RightLight1"},  --middle lights
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='RightLight2',tx=-39.5, ty=10, tz=145, rx=-90, i=28000}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "RightLight2"},  --middle lights
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='RightLight3',tx=-36, ty=10, tz=160, rx=-90, i=28000}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "RightLight3"},  --middle lights
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='RightLight4',tx=-39.5, ty=10, tz=160, rx=-90, i=28000}),
+							["ADD"] = InsertNewLight({name='RightLight1',tx=-36, ty=10, tz=145, rx=-90, i=28000})
+									..InsertNewLight({name='RightLight2',tx=-39.5, ty=10, tz=145, rx=-90, i=28000})
+									..InsertNewLight({name='RightLight3',tx=-36, ty=10, tz=160, rx=-90, i=28000})
+									..InsertNewLight({name='RightLight4',tx=-39.5, ty=10, tz=160, rx=-90, i=28000}),
 						},							
 					},
 				},
@@ -3275,12 +3070,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Light"}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newtealLight1',tx=0.0, ty=1.0, tz=0.1, ry=180, fov=145, i=5000,r=0.45, g=0.87, b=1.0}),  
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "Light"}, 
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='newtealLight2',tx=0.0, ty=1.0, tz=-0.1, fov=145, i=5000, r=0.45, g=0.87, b=1.0}),  
+							["ADD"] = InsertNewLight({name='newtealLight1',tx=0.0, ty=1.0, tz=0.1, ry=180, fov=145, i=5000,r=0.45, g=0.87, b=1.0}) 
+									..InsertNewLight({name='newtealLight2',tx=0.0, ty=1.0, tz=-0.1, fov=145, i=5000, r=0.45, g=0.87, b=1.0}),  
 						},
 					},
 				},  
@@ -3565,12 +3356,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"}, 
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='frontLight1',tx=0, ty=1.6, tz=-1.0, rx=0, ry=0, rz=0, fov=160, i=22000, r=0.5, g=1.0, b=1.0,}),
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"}, 
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='backLight1',tx=0, ty=1.6, tz=1.0, rx=0, ry=180, rz=0, fov=160, i=22000, r=0.5, g=1.0, b=1.0,}),
+							["ADD"] = InsertNewLight({name='frontLight1',tx=0, ty=1.6, tz=-1.0, rx=0, ry=0, rz=0, fov=160, i=22000, r=0.5, g=1.0, b=1.0,})
+									..InsertNewLight({name='backLight1',tx=0, ty=1.6, tz=1.0, rx=0, ry=180, rz=0, fov=160, i=22000, r=0.5, g=1.0, b=1.0,}),
 						},
 						{  
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
