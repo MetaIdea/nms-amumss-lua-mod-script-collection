@@ -1,10 +1,14 @@
 Author = "Gumsk"
 ModName = "gBase"
-ModNameSub = "Items No Delete"
+ModNameSub = "Items EM Any Only"
 BaseDescription = "Removes restrictions on base building items"
 GameVersion = "398"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
+
+EMRate = 250				--Original 1 (C=175, B=220, A=250, S=300)
+EMLimit = 0					--0
+EMAnywhere = "None"			--Power, None for EMAnywhere
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -18,11 +22,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["MBIN_FILE_SOURCE"] = FileSource1,
 					["EXML_CHANGE_TABLE"] = {
 						{
-							["PRECEDING_KEY_WORDS"] = {""},
-							["REPLACE_TYPE"] = "ALL",
+							["SPECIAL_KEY_WORDS"] = {"ID","U_GENERATOR_S"},
 							["VALUE_CHANGE_TABLE"] = {
-								{"RemovesAttachedDecoration","False"},
-								{"RemovesWhenUnsnapped","False"},
+								{"DependsOnHotspots",EMAnywhere},
+								{"Rate",EMRate},
+								{"BuildableOnPlanet", "False"},
+								{"BuildableOnPlanetWithProduct", "False"},
+								{"RegionLimit", EMLimit},
 							}
 						},
 					},
