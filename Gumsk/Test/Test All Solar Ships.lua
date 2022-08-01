@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "Test"
 ModNameSub = "All Solar Ships"
 BaseDescription = "Test"
-GameVersion = "387"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 
@@ -20,10 +20,56 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
-						{"PirateClassShipOverrideProbability",1},				--0.1 
-						{"PirateClassShipOverrideProbabilityPirateSystem",1},	--0.85 
+						{"PirateClassShipOverrideProbability",0.01},					--0.1 
+						{"PirateClassShipOverrideProbabilityPirateSystem",0.85},	--0.85 
 					}
 				},
+				
+				
+				-- {
+					-- ["PRECEDING_KEY_WORDS"] = {"SpaceshipWeightings","CivilianClassWeightings"},
+					-- ["VALUE_CHANGE_TABLE"] = {
+						-- {"Freighter","0"},
+						-- {"Dropship","0"},
+						-- {"Fighter","100"},
+						-- {"Scientific","0"},
+						-- {"Shuttle","1"},
+						-- {"PlayerFreighter","0"},
+						-- {"Royal","1"},
+						-- {"Alien","0"},
+						-- {"Sail","0"},
+					-- },
+				-- },
+				-- {
+					-- ["PRECEDING_KEY_WORDS"] = {"SpaceshipWeightings","CivilianClassWeightings","CivilianClassWeightings"},
+					-- ["VALUE_CHANGE_TABLE"] = {
+						-- {"Freighter","0"},
+						-- {"Dropship","0"},
+						-- {"Fighter","100"},
+						-- {"Scientific","0"},
+						-- {"Shuttle","1"},
+						-- {"PlayerFreighter","0"},
+						-- {"Royal","1"},
+						-- {"Alien","0"},
+						-- {"Sail","0"},
+					-- },
+				-- },
+				-- {
+					-- ["PRECEDING_KEY_WORDS"] = {"SpaceshipWeightings","CivilianClassWeightings","CivilianClassWeightings","CivilianClassWeightings"},
+					-- ["VALUE_CHANGE_TABLE"] = {
+						-- {"Freighter","0"},
+						-- {"Dropship","0"},
+						-- {"Fighter","100"},
+						-- {"Scientific","0"},
+						-- {"Shuttle","1"},
+						-- {"PlayerFreighter","0"},
+						-- {"Royal","1"},
+						-- {"Alien","0"},
+						-- {"Sail","0"},
+					-- },
+				-- },
+				
+				
 				{
 					["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
 					["LINE_OFFSET"] = "+1",

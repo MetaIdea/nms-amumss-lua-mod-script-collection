@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Refiner Large"
 BaseDescription = "Mutes the large refiner"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\REFINER\ENTITIES\REFINER3.ENTITY.MBIN"
 

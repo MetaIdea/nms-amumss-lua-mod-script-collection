@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Server Stack"
 BaseDescription = "Mutes the Server Stack"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\SERVERSTACK\ENTITIES\AUDIOSERVER.ENTITY.MBIN"
 

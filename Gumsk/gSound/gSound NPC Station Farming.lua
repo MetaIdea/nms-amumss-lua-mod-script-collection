@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "NPC Station Farming"
 BaseDescription = "Mutes the NPC farming station"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\NPCROOMS\NPC_FARMING\ENTITIES\WORKSTATION.ENTITY.MBIN"
 

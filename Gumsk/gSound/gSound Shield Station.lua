@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Shield Station"
 BaseDescription = "Mutes the shield station"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\SHIELDSTATION\ENTITIES\SHIELDSTATION.ENTITY.MBIN"
 

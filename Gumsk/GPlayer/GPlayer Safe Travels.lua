@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Safe Travels"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "370"
+GameVersion = "398"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
 
@@ -33,37 +33,44 @@ HardLandMax = 150									--18
 
   
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {{
-["MBIN_FILE_SOURCE"] = FileSource,
-["EXML_CHANGE_TABLE"] = {
-	{["VALUE_CHANGE_TABLE"] = {
-	
-	{"HardModeEnergyDischargeRateLow",HardModeEnergyDischargeRateLow},
-	{"HardModeEnergyDischargeRateMedium",HardModeEnergyDischargeRateMedium},
-	{"HardModeEnergyDischargeRateHigh",HardModeEnergyDischargeRateHigh},
-	{"EnergyDischargeRateLow",EnergyDischargeRateLow},
-	{"EnergyDischargeRateMedium",EnergyDischargeRateMedium},
-	{"EnergyDischargeRateHigh",EnergyDischargeRateHigh},
-	{"EnergyDischargeRateFloatingInSpace",EnergyDischargeRateFloatingInSpace},
-	{"NormalModeHazardTimeMultiplier",NormalModeHazardTimeMultiplier},
-	{"NormalModeHazardDamageRateMultiplier",NormalModeHazardDamageRateMultiplier},
-	{"NormalModeHazardDamageWoundRateMultiplier",NormalModeHazardDamageWoundRateMultiplier},
-	{"NormalModeHazardRechargeUnderground",NormalModeHazardRechargeUnderground},
-	{"HardModeHazardTimeMultiplier",HardModeHazardTimeMultiplier},
-	{"HardModeHazardDamageRateMultiplier",HardModeHazardDamageRateMultiplier},
-	{"HardModeHazardDamageWoundRateMultiplier",HardModeHazardDamageWoundRateMultiplier},
-	{"HardModeHazardRechargeUnderground",HardModeHazardRechargeUnderground},
-	{"ShieldRestoreSpeed",ShieldRestoreSpeed},
-	{"ShieldRestoreDelay",ShieldRestoreDelay},
-	{"ShieldRechargeMinTimeSinceDamage",ShieldRechargeMinTimeSinceDamage},
-	{"ShieldRechargeRate",ShieldRechargeRate},
-	{"StaminaRecoveryRate",StaminaRecoveryRate},
-	{"HardLandTime",HardLandTime},
-	
-	}},
-}}}}}}
+	["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"]	= {
+		{
+			["MBIN_CHANGE_TABLE"] = {
+				{
+					["MBIN_FILE_SOURCE"] = FileSource,
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["VALUE_CHANGE_TABLE"] = {
+								{"HardModeEnergyDischargeRateLow",HardModeEnergyDischargeRateLow},
+								{"HardModeEnergyDischargeRateMedium",HardModeEnergyDischargeRateMedium},
+								{"HardModeEnergyDischargeRateHigh",HardModeEnergyDischargeRateHigh},
+								{"EnergyDischargeRateLow",EnergyDischargeRateLow},
+								{"EnergyDischargeRateMedium",EnergyDischargeRateMedium},
+								{"EnergyDischargeRateHigh",EnergyDischargeRateHigh},
+								{"EnergyDischargeRateFloatingInSpace",EnergyDischargeRateFloatingInSpace},
+								{"NormalModeHazardTimeMultiplier",NormalModeHazardTimeMultiplier},
+								{"NormalModeHazardDamageRateMultiplier",NormalModeHazardDamageRateMultiplier},
+								{"NormalModeHazardDamageWoundRateMultiplier",NormalModeHazardDamageWoundRateMultiplier},
+								{"NormalModeHazardRechargeUnderground",NormalModeHazardRechargeUnderground},
+								{"HardModeHazardTimeMultiplier",HardModeHazardTimeMultiplier},
+								{"HardModeHazardDamageRateMultiplier",HardModeHazardDamageRateMultiplier},
+								{"HardModeHazardDamageWoundRateMultiplier",HardModeHazardDamageWoundRateMultiplier},
+								{"HardModeHazardRechargeUnderground",HardModeHazardRechargeUnderground},
+								{"ShieldRestoreSpeed",ShieldRestoreSpeed},
+								{"ShieldRestoreDelay",ShieldRestoreDelay},
+								{"ShieldRechargeMinTimeSinceDamage",ShieldRechargeMinTimeSinceDamage},
+								{"ShieldRechargeRate",ShieldRechargeRate},
+								{"StaminaRecoveryRate",StaminaRecoveryRate},
+								{"HardLandTime",HardLandTime},
+							},
+						},
+					},
+				},
+			}
+		}
+	}
+}

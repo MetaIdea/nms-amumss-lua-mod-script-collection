@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Predators"
 ModNameSub = "Deadly"
 BaseDescription = "More aggressive and dangerous predators"
-GameVersion = "387"
+GameVersion = "397"
 ModVersion = "a"
 FileSource1 = "GCCREATUREGLOBALS.MBIN"
 
@@ -50,8 +50,6 @@ FiendPerceptionDistance = 100				--Default 60
 FiendAggroTime = 20							--Default 45
 FiendMaxEngaged = 10						--Default 6
 FiendMaxAttackers = 8						--Default 2
-DelayBetweenPounceAttacks = 1.2				--Default 2
-DelayBetweenSpitAttacks = 0.5				--Default 1
 FiendMaxVerticalForPounce = 0.7				--Default 0.3
 FiendZigZagSpeed = 0						--Default 0
 FiendZigZagStrength = 0						--Default 0
@@ -78,88 +76,91 @@ FishFiendBigScale = 5						--Default 3
 PredatorSpeedMultiplier = 1.5				--Default 1.1
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
-{["MBIN_CHANGE_TABLE"] = {
-
-{
-["MBIN_FILE_SOURCE"] = FileSource1,
-["EXML_CHANGE_TABLE"] = {
-	{["PRECEDING_KEY_WORDS"] = {""},
-		["VALUE_CHANGE_TABLE"] = {
-			{"SharkAttackSpeed", SharkAttackSpeed},
-			{"SharkAttackAccel", SharkAttackAccel},
-			{"AggressiveSharks", AggressiveSharks},
-			{"PredatorPerceptionDistance", PredatorPerceptionDistance},
-			{"PredatorFishPerceptionDistance", PredatorFishPerceptionDistance},
-			{"PassiveFleePlayerDistance", PassiveFleePlayerDistance},
-			{"AdultBabyKilledNoticeDistance", AdultBabyKilledNoticeDistance},
-			{"PercentagePlayerPredators", PercentagePlayerPredators},
-			{"PredatorSmallHealth", PredatorSmallHealth},
-			{"PredatorMedHealth", PredatorMedHealth},
-			{"PredatorLargeHealth", PredatorLargeHealth},
-			{"PredatorHugeHealth", PredatorHugeHealth},
-			{"PlayerPredatorHealthModifier", PlayerPredatorHealthModifier},
-			{"PredatorApproachTime", PredatorApproachTime},
-			{"PredatorNoticePauseTime", PredatorNoticePauseTime},
-			{"PredatorStealthDist", PredatorStealthDist},
-			{"PredatorChargeDist", PredatorChargeDist},
-			{"PredatorChargeDistScale", PredatorChargeDistScale},
-			{"FishPredatorChargeDist", FishPredatorChargeDist},
-			{"FishPredatorChargeDistScale", FishPredatorChargeDistScale},
-			{"ScuttlersCanAttack", ScuttlersCanAttack},
-			{"ScuttlerHealth", ScuttlerHealth},
-			{"ScuttlerInitialNoAttackTime", ScuttlerInitialNoAttackTime},
-			{"ScuttlerMoveTimeMin", ScuttlerMoveTimeMin},
-			{"ScuttlerMoveTimeMax", ScuttlerMoveTimeMax},
-			{"ScuttlerIdleTimeMin", ScuttlerIdleTimeMin},
-			{"ScuttlerIdleTimeMax", ScuttlerIdleTimeMax},
-			{"ScuttlerZigZagTimeMin", ScuttlerZigZagTimeMin},
-			{"ScuttlerZigZagTimeMax", ScuttlerZigZagTimeMax},
-			{"ScuttlerZigZagStrength", ScuttlerZigZagStrength},
-			{"ScuttlerSpitDelay", ScuttlerSpitDelay},
-			{"ScuttlerSpitChargeTime", ScuttlerSpitChargeTime},
-			{"MiniDroneEnergyRecoverRate", MiniDroneEnergyRecoverRate},
-			{"MiniDroneEnergyUsePerShot", MiniDroneEnergyUsePerShot},
-			{"MiniDroneShotDelay", MiniDroneShotDelay},
-			{"MiniDroneShotMaxAngle", MiniDroneShotMaxAngle},
-			{"FiendsCanAttack", FiendsCanAttack},
-			{"FiendOnscreenMarkers", FiendOnscreenMarkers},
-			{"FiendHealth", FiendHealth},
-			{"FiendPerceptionDistance", FiendPerceptionDistance},
-			{"FiendAggroTime", FiendAggroTime},
-			{"FiendMaxEngaged", FiendMaxEngaged},
-			{"FiendMaxAttackers", FiendMaxAttackers},
-			{"DelayBetweenPounceAttacks", DelayBetweenPounceAttacks},
-			{"DelayBetweenSpitAttacks", DelayBetweenSpitAttacks},
-			{"FiendMaxVerticalForPounce", FiendMaxVerticalForPounce},
-			{"FiendZigZagSpeed", FiendZigZagSpeed},
-			{"FiendZigZagStrength", FiendZigZagStrength},
-			{"FiendEggsToUnlockSpit", FiendEggsToUnlockSpit},
-			{"MaxFiendsToSpawn", MaxFiendsToSpawn},
-			{"FiendMinSpawnTime", FiendMinSpawnTime},
-			{"FiendMaxSpawnTime", FiendMaxSpawnTime},
-			{"FiendAggroIncreaseDamageEgg", FiendAggroIncreaseDamageEgg},
-			{"FiendAggroIncreaseDestroyEgg", FiendAggroIncreaseDestroyEgg},
-			{"FiendAggroDecreasePerSpawn", FiendAggroDecreasePerSpawn},
-			{"FiendCritAreaSize", FiendCritAreaSize},
-			{"FiendDistToConsiderTargetSwtich", FiendDistToConsiderTargetSwtich},
-			{"FiendDistReduceForBeingShot", FiendDistReduceForBeingShot},
-			{"FiendBeingShotMemoryTime", FiendBeingShotMemoryTime},
-			{"MaxFishFiends", MaxFishFiends},
-			{"FishFiendSmallHealth", FishFiendSmallHealth},
-			{"FishFiendBigHealth", FishFiendBigHealth},
-			{"FishFiendSmallBoostStrength", FishFiendSmallBoostStrength},
-			{"FishFiendSmallBoostTime", FishFiendSmallBoostTime},
-			{"FishFiendSmallScale", FishFiendSmallScale},
-			{"FishFiendBigBoostStrength", FishFiendBigBoostStrength},
-			{"FishFiendBigBoostTime", FishFiendBigBoostTime},
-			{"FishFiendBigScale", FishFiendBigScale},
-			{"PredatorSpeedMultiplier", PredatorSpeedMultiplier},
-	}},
-}},
-
-}}}}
+	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"]	= {
+		{
+			["MBIN_CHANGE_TABLE"] = {
+				{
+					["MBIN_FILE_SOURCE"] = FileSource1,
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["PRECEDING_KEY_WORDS"] = {""},
+							["VALUE_CHANGE_TABLE"] = {
+								{"SharkAttackSpeed", SharkAttackSpeed},
+								{"SharkAttackAccel", SharkAttackAccel},
+								{"AggressiveSharks", AggressiveSharks},
+								{"PredatorPerceptionDistance", PredatorPerceptionDistance},
+								{"PredatorFishPerceptionDistance", PredatorFishPerceptionDistance},
+								{"PassiveFleePlayerDistance", PassiveFleePlayerDistance},
+								{"AdultBabyKilledNoticeDistance", AdultBabyKilledNoticeDistance},
+								{"PercentagePlayerPredators", PercentagePlayerPredators},
+								{"PredatorSmallHealth", PredatorSmallHealth},
+								{"PredatorMedHealth", PredatorMedHealth},
+								{"PredatorLargeHealth", PredatorLargeHealth},
+								{"PredatorHugeHealth", PredatorHugeHealth},
+								{"PlayerPredatorHealthModifier", PlayerPredatorHealthModifier},
+								{"PredatorApproachTime", PredatorApproachTime},
+								{"PredatorNoticePauseTime", PredatorNoticePauseTime},
+								{"PredatorStealthDist", PredatorStealthDist},
+								{"PredatorChargeDist", PredatorChargeDist},
+								{"PredatorChargeDistScale", PredatorChargeDistScale},
+								{"FishPredatorChargeDist", FishPredatorChargeDist},
+								{"FishPredatorChargeDistScale", FishPredatorChargeDistScale},
+								{"ScuttlersCanAttack", ScuttlersCanAttack},
+								{"ScuttlerHealth", ScuttlerHealth},
+								{"ScuttlerInitialNoAttackTime", ScuttlerInitialNoAttackTime},
+								{"ScuttlerMoveTimeMin", ScuttlerMoveTimeMin},
+								{"ScuttlerMoveTimeMax", ScuttlerMoveTimeMax},
+								{"ScuttlerIdleTimeMin", ScuttlerIdleTimeMin},
+								{"ScuttlerIdleTimeMax", ScuttlerIdleTimeMax},
+								{"ScuttlerZigZagTimeMin", ScuttlerZigZagTimeMin},
+								{"ScuttlerZigZagTimeMax", ScuttlerZigZagTimeMax},
+								{"ScuttlerZigZagStrength", ScuttlerZigZagStrength},
+								{"ScuttlerSpitDelay", ScuttlerSpitDelay},
+								{"ScuttlerSpitChargeTime", ScuttlerSpitChargeTime},
+								{"MiniDroneEnergyRecoverRate", MiniDroneEnergyRecoverRate},
+								{"MiniDroneEnergyUsePerShot", MiniDroneEnergyUsePerShot},
+								{"MiniDroneShotDelay", MiniDroneShotDelay},
+								{"MiniDroneShotMaxAngle", MiniDroneShotMaxAngle},
+								{"FiendsCanAttack", FiendsCanAttack},
+								{"FiendOnscreenMarkers", FiendOnscreenMarkers},
+								{"FiendHealth", FiendHealth},
+								{"FiendPerceptionDistance", FiendPerceptionDistance},
+								{"FiendAggroTime", FiendAggroTime},
+								{"FiendMaxEngaged", FiendMaxEngaged},
+								{"FiendMaxAttackers", FiendMaxAttackers},
+								{"FiendMaxVerticalForPounce", FiendMaxVerticalForPounce},
+								{"FiendZigZagSpeed", FiendZigZagSpeed},
+								{"FiendZigZagStrength", FiendZigZagStrength},
+								{"FiendEggsToUnlockSpit", FiendEggsToUnlockSpit},
+								{"MaxFiendsToSpawn", MaxFiendsToSpawn},
+								{"FiendMinSpawnTime", FiendMinSpawnTime},
+								{"FiendMaxSpawnTime", FiendMaxSpawnTime},
+								{"FiendAggroIncreaseDamageEgg", FiendAggroIncreaseDamageEgg},
+								{"FiendAggroIncreaseDestroyEgg", FiendAggroIncreaseDestroyEgg},
+								{"FiendAggroDecreasePerSpawn", FiendAggroDecreasePerSpawn},
+								{"FiendCritAreaSize", FiendCritAreaSize},
+								{"FiendDistToConsiderTargetSwtich", FiendDistToConsiderTargetSwtich},
+								{"FiendDistReduceForBeingShot", FiendDistReduceForBeingShot},
+								{"FiendBeingShotMemoryTime", FiendBeingShotMemoryTime},
+								{"MaxFishFiends", MaxFishFiends},
+								{"FishFiendSmallHealth", FishFiendSmallHealth},
+								{"FishFiendBigHealth", FishFiendBigHealth},
+								{"FishFiendSmallBoostStrength", FishFiendSmallBoostStrength},
+								{"FishFiendSmallBoostTime", FishFiendSmallBoostTime},
+								{"FishFiendSmallScale", FishFiendSmallScale},
+								{"FishFiendBigBoostStrength", FishFiendBigBoostStrength},
+								{"FishFiendBigBoostTime", FishFiendBigBoostTime},
+								{"FishFiendBigScale", FishFiendBigScale},
+								{"PredatorSpeedMultiplier", PredatorSpeedMultiplier},
+							},
+						},
+					},
+				},
+			}
+		}
+	}
+}

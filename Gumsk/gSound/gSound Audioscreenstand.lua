@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Monitor Desk Screen Stand"
 BaseDescription = "Mutes the monitor desk screen stand"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\MONITORDESK\ENTITIES\AUDIOSCREENSTAND.ENTITY.MBIN"
 

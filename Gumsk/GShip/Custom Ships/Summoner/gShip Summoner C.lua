@@ -303,10 +303,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "gShip Custom Summoner C 388a.pak",
+["MOD_FILENAME"] 			= "gShip Custom Summoner C 397a.pak",
 ["MOD_AUTHOR"]				= "Gumsk, based almost entirely on Mjjstral's action LUAs",
 ["MOD_DESCRIPTION"]			= "Adds summoning quick actions for gShip Custom ships",
-["NMS_VERSION"]				= "3.88",
+["NMS_VERSION"]				= "3.97",
 ["MODIFICATIONS"] 			= 
 	{
 		{

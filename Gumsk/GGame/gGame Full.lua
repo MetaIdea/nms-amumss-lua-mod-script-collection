@@ -2,8 +2,8 @@ Author = "Gumsk"
 ModName = "gGame"
 ModNameSub = "Full"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "387"
-ModVersion = "a"
+GameVersion = "397"
+ModVersion = "b"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
 --Tech Grouping Bonus Adjustments
@@ -15,17 +15,19 @@ BonusChildMult = 0.03							--0.03 ;
 
 --Torch Adjustments
 TorchFoV = 120									--Torch arc width, in degrees. 181+=360 degrees. Original value "120"
-TorchStrength = 4.5								--Torch brightness. Original value "3.5"
+TorchStrength = 4.2								--Torch brightness. Original value "3.5"
 TorchCookieIndex = 0							--0
 TorchDimFoV = 65								--65 Derelict Freighter FOV
 TorchDimStrength = 2.2							--1.5 Derelict Freighter Strength
 InteractionTorchFoV = 120						--120
-InteractionTorchStrength = 2					--2
+InteractionTorchStrength = 1.5					--2
 UndergroundTorchFoV = 70						--70
-UndergroundTorchStregth = 3						--2.5
+UndergroundTorchFoVFar = 100					--100
+UndergroundTorchStrength = 3.0					--2.5
+UndergroundTorchStrengthFar = 7.5				--6.5
 TorchOffsetX = 0								--Torch source, + right, -left of centerline of character, in u. Original value "0"
-TorchOffsetY = -0.2								--Torch source, + above, -below top of character head, in u. Original value "-0.5"
-TorchOffsetZ = -0.65							--Torch source, + behind, - in front of centerline of character, in u. Original value "-0.75"
+TorchOffsetY = -0.35							--Torch source, + above, -below top of character head, in u. Original value "-0.5"
+TorchOffsetZ = -0.7								--Torch source, + behind, - in front of centerline of character, in u. Original value "-0.75"
 TorchRotation = 0.0								--???
 TorchColourRed = 0.95							--Torch color red saturation percent. Original value "0.95"
 TorchColourGreen = 0.993						--Torch color green saturation percent. Original value "0.993"
@@ -80,7 +82,6 @@ SurveySonarMinPulseSpeed = -2.4					--0.4 ; Frequency for sweeps or pings of the
 -- There are also debug scanners that can be enabled that see a lot more.
 -- VisualScan? PassiveScan? What are these?
 -- ScannerColour2 v Unknown at end?
---Missile Adjustments
 
 --Trading Adjustments
 UseTradingCostTable = "False"					--??? Original value "False"
@@ -102,8 +103,8 @@ MaxDronesNormal = 2								--2
 MaxDronesNormalSurvival = 2						--2
 MaxDronesAggressive = 1							--1
 MaxDronesAggressiveSurvival = 1					--1
-SentinelsHigh = 10								--10 ; 
-SentinelsLow = 30								--30 ; 
+--SentinelsHigh = 10							--10 ; 
+--SentinelsLow = 30								--30 ; 
 ViciousSentinelProbability = 0.25				--0.25 ; 
 
 --Misc Adjustments
@@ -111,189 +112,192 @@ RefinerProductsMadeInTime = 20					--2 ;
 RefinerSubsMadeInTime = 2500					--250 ; 
 RefinerProductsMadeInTimeSurvival = 10			--1 ; 
 RefinerSubsMadeInTimeSurvival = 1000			--100 ; 
-AtmosphereEntryTime = 1.5						--1.5
-ShipInteractRadius = 200						--80 ; How close you need to be to your ship to interact with it, in u
-LightStrength = 1								--1 ; All lights. 4 is blinding in small areas or up close
-AirLockDoorRange = 3							--3 ; 
-DisableBasePowerHUDOverlay = "False"			--"False"
+AtmosphereEntryTime = 1.0						--1.5
+ShipInteractRadius = 300						--80 ; How close you need to be to your ship to interact with it, in u
+LightStrength = 1.1								--1 ; All lights. 4 is blinding in small areas or up close
+AirLockDoorRange = 3							--3 ;
 FourthRaceSpawnPercentage = 3					--3 ; How likely are you to see a Traveller on stations, in percent
 NonDominantRaceSpawnPercentage = 30				--30
 ViciousStormProbability = 0.5					--0.5 ; 
 ViciousWeatherProbability = 0.5					--0.5 ; 
-BuildingBeamDistance = 800						--800
-HardModeTechDamageMidNum = 5					--5
-HardModeTechDamageMidPercent = 50				--50
-HardModeTechDamageHighPercent = 20				--20
+-- BuildingBeamDistance = 800					--800
+-- HardModeTechDamageMidNum = 5					--5
+-- HardModeTechDamageMidPercent = 50			--50
+-- HardModeTechDamageHighPercent = 20			--20
 WarpsBetweenBattles = 3							--5
 HoursBetweenBattles = 1							--3
 DeadPlanetGravityFactor = 0.4					--0.6
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
-{
-	["MBIN_CHANGE_TABLE"] = {
+	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"]	= {
 		{
-			["MBIN_FILE_SOURCE"] = FileSource1,
-			["EXML_CHANGE_TABLE"] = {
+			["MBIN_CHANGE_TABLE"] = {
+				{
+					["MBIN_FILE_SOURCE"] = FileSource1,
+					["EXML_CHANGE_TABLE"] = {
 
---Scanning
-				{
-					["PRECEDING_KEY_WORDS"] = "ToolScan",
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"PulseRange", ToolScanPulseRangeEasy},
-						{"ChargeTime", ToolScanRechargeEasy}
-					}
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = "ToolScanHardMode",
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"PulseRange", ToolScanPulseRangeHard},
-						{"ChargeTime", ToolScanRechargeHard}
-					}
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = "ShipScan",
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"PulseRange", ShipScanPulseRange},
-						{"ChargeTime", ShipScanRecharge}
-					}
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = "BinocularSelectedEffect",
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"BasecolourIntensity", BinocularSelectedColourIntensity},
-						{"ScanlinesSeparation", BinocularSelectedScanlines},
-						{"FresnelIntensity", BinocularSelectedFresnel},
-						{"GlowIntensity", BinocularSelectedGlow},
-						{"FadeInTime", BinocularFadeInTime},
-						{"FadeOutTime", BinocularFadeOutTime}
-					}
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = "BinocularSelectedColour",
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"R", BinocularSelectedKnownRed},
-						{"G", BinocularSelectedKnownGreen},
-						{"B", BinocularSelectedKnownBlue},
-						{"A", BinocularSelectedKnownAlpha}
-					}
-				},	
-				{
-					["PRECEDING_KEY_WORDS"] = "BinocularSelectedUnknownColour",
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"R", BinocularSelectedUnknownRed},
-						{"G", BinocularSelectedUnknownGreen},
-						{"B", BinocularSelectedUnknownBlue},
-						{"A", BinocularSelectedUnknownAlpha}
-					}
-				},					
-					
-				{
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"TerrainResourceScanTime", TerrainResourceScanTime},
-						{"TerrainResourceScanRange", TerrainResourceScanRange},
-						{"BinocsDisplayUnknownCreatures", BinocsDisplayUnknownCreatures},
-						{"BinocularScanTargetMinHeight", BinocularScanTargetMinHeight},
-						{"BinocularScanTargetHeightRange", BinocularScanTargetHeightRange},
-						{"BinocTimeBeforeScan", BinocTimeBeforeScan},
-						{"BinocMinScanTime", BinocMinScanTime},
-						{"BinocScanTime", BinocScanTime},
-						{"BinocCreatureScanTime", BinocCreatureScanTime},
-						{"ScanStartTimeDelayMinDist", ScanStartTimeDelayMinDist},
-						{"ScanStartTimeDelayRange", ScanStartTimeDelayRange},
-						{"ScanStartTimeDistanceDelayTime", ScanStartTimeDistanceDelayTime},
-						{"ScanStickyDecay", ScanStickyDecay},
-						{"CreatureScanStickyDecay", CreatureScanStickyDecay},
-						{"CreatureScanAngle", CreatureScanAngle},
-						{"CreatureMinScanTime", CreatureMinScanTime},
-						{"ScanAngle", ScanAngle},
-						{"NewDiscoveryDisplayTime", NewDiscoveryDisplayTime},
-						{"SurveyMaxDistance", SurveyMaxDistance},
-						{"SurveySonarMinPulseSpeed", SurveySonarMinPulseSpeed},
+		--Scanning
+						{
+							["PRECEDING_KEY_WORDS"] = "ToolScan",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"PulseRange", ToolScanPulseRangeEasy},
+								{"ChargeTime", ToolScanRechargeEasy}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "ToolScanHardMode",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"PulseRange", ToolScanPulseRangeHard},
+								{"ChargeTime", ToolScanRechargeHard}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "ShipScan",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"PulseRange", ShipScanPulseRange},
+								{"ChargeTime", ShipScanRecharge}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "BinocularSelectedEffect",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"BasecolourIntensity", BinocularSelectedColourIntensity},
+								{"ScanlinesSeparation", BinocularSelectedScanlines},
+								{"FresnelIntensity", BinocularSelectedFresnel},
+								{"GlowIntensity", BinocularSelectedGlow},
+								{"FadeInTime", BinocularFadeInTime},
+								{"FadeOutTime", BinocularFadeOutTime}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "BinocularSelectedColour",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"R", BinocularSelectedKnownRed},
+								{"G", BinocularSelectedKnownGreen},
+								{"B", BinocularSelectedKnownBlue},
+								{"A", BinocularSelectedKnownAlpha}
+							}
+						},	
+						{
+							["PRECEDING_KEY_WORDS"] = "BinocularSelectedUnknownColour",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"R", BinocularSelectedUnknownRed},
+								{"G", BinocularSelectedUnknownGreen},
+								{"B", BinocularSelectedUnknownBlue},
+								{"A", BinocularSelectedUnknownAlpha}
+							}
+						},					
+							
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"TerrainResourceScanTime", TerrainResourceScanTime},
+								{"TerrainResourceScanRange", TerrainResourceScanRange},
+								{"BinocsDisplayUnknownCreatures", BinocsDisplayUnknownCreatures},
+								{"BinocularScanTargetMinHeight", BinocularScanTargetMinHeight},
+								{"BinocularScanTargetHeightRange", BinocularScanTargetHeightRange},
+								{"BinocTimeBeforeScan", BinocTimeBeforeScan},
+								{"BinocMinScanTime", BinocMinScanTime},
+								{"BinocScanTime", BinocScanTime},
+								{"BinocCreatureScanTime", BinocCreatureScanTime},
+								{"ScanStartTimeDelayMinDist", ScanStartTimeDelayMinDist},
+								{"ScanStartTimeDelayRange", ScanStartTimeDelayRange},
+								{"ScanStartTimeDistanceDelayTime", ScanStartTimeDistanceDelayTime},
+								{"ScanStickyDecay", ScanStickyDecay},
+								{"CreatureScanStickyDecay", CreatureScanStickyDecay},
+								{"CreatureScanAngle", CreatureScanAngle},
+								{"CreatureMinScanTime", CreatureMinScanTime},
+								{"ScanAngle", ScanAngle},
+								{"NewDiscoveryDisplayTime", NewDiscoveryDisplayTime},
+								{"SurveyMaxDistance", SurveyMaxDistance},
+								{"SurveySonarMinPulseSpeed", SurveySonarMinPulseSpeed},
 
-				--Grouping
-						{"MaxNumSameGroupTech", MaxNumSameGroupTech},
-						{"BonusSameTypeElementsAdd", BonusSameTypeAdd},
-						{"BonusSameTypeElementsMultiply", BonusSameTypeMult},
-						{"BonusChildTypeElementsAdd", BonusChildAdd},
-						{"BonusChildTypeElementsMultiply", BonusChildMult},
+						--Grouping
+								{"MaxNumSameGroupTech", MaxNumSameGroupTech},
+								{"BonusSameTypeElementsAdd", BonusSameTypeAdd},
+								{"BonusSameTypeElementsMultiply", BonusSameTypeMult},
+								{"BonusChildTypeElementsAdd", BonusChildAdd},
+								{"BonusChildTypeElementsMultiply", BonusChildMult},
 
-				--Random
-						{"AtmosphereEntryTime", AtmosphereEntryTime},
-						{"ShipInteractRadius", ShipInteractRadius},
-						{"LightStrength", LightStrength},
-						{"AirLockDoorRange", AirLockDoorRange},
-						{"UseTradingCostTable", UseTradingCostTable},
-						{"ChangePricesLocally", ChangePricesLocally},
-						{"ProductItemStockDecayTime", TradeProdcutDecay},
-						{"ProductItemStockReplenishTime", TradeProductRestock},
-						{"SubstanceItemStockDecayTime", TradeSubstanceDecay},
-						{"SubstanceItemStockReplenishTime", TradeSubstanceRestock},
-						{"RefinerProductsMadeInTime", RefinerProductsMadeInTime},
-						{"RefinerSubsMadeInTime", RefinerSubsMadeInTime},
-						{"RefinerProductsMadeInTimeSurvival", RefinerProductsMadeInTimeSurvival},
-						{"RefinerSubsMadeInTimeSurvival", RefinerSubsMadeInTimeSurvival},
-						{"FourthRaceSpawnPercentage", FourthRaceSpawnPercentage},
-						{"NonDominantRaceSpawnPercentage", NonDominantRaceSpawnPercentage},
-						{"ViciousStormProbability", ViciousStormProbability},
-						{"ViciousWeatherProbability", ViciousWeatherProbability},
-						{"WarpsBetweenBattles", WarpsBetweenBattles},
-						{"HoursBetweenBattles", HoursBetweenBattles},
-						{"DeadPlanetGravityFactor", DeadPlanetGravityFactor},
+						--Random
+								{"AtmosphereEntryTime", AtmosphereEntryTime},
+								{"ShipInteractRadius", ShipInteractRadius},
+								{"LightStrength", LightStrength},
+								{"AirLockDoorRange", AirLockDoorRange},
+								{"UseTradingCostTable", UseTradingCostTable},
+								{"ChangePricesLocally", ChangePricesLocally},
+								{"ProductItemStockDecayTime", TradeProdcutDecay},
+								{"ProductItemStockReplenishTime", TradeProductRestock},
+								{"SubstanceItemStockDecayTime", TradeSubstanceDecay},
+								{"SubstanceItemStockReplenishTime", TradeSubstanceRestock},
+								{"RefinerProductsMadeInTime", RefinerProductsMadeInTime},
+								{"RefinerSubsMadeInTime", RefinerSubsMadeInTime},
+								{"RefinerProductsMadeInTimeSurvival", RefinerProductsMadeInTimeSurvival},
+								{"RefinerSubsMadeInTimeSurvival", RefinerSubsMadeInTimeSurvival},
+								{"FourthRaceSpawnPercentage", FourthRaceSpawnPercentage},
+								{"NonDominantRaceSpawnPercentage", NonDominantRaceSpawnPercentage},
+								{"ViciousStormProbability", ViciousStormProbability},
+								{"ViciousWeatherProbability", ViciousWeatherProbability},
+								{"WarpsBetweenBattles", WarpsBetweenBattles},
+								{"HoursBetweenBattles", HoursBetweenBattles},
+								{"DeadPlanetGravityFactor", DeadPlanetGravityFactor},
 
-				--Sentinels
-						{"ViciousSentinelProbability", ViciousSentinelProbability},
-						{"AggressiveSentinelProbabilitySurvival", AggressiveSentinelProbabilitySurvival},
-						{"LowSentinelProbability", LowSentinelProbability},
-						{"LowSentinelProbabilitySurvival", LowSentinelProbabilitySurvival},
-						{"NonAggressiveLushSurvivalProbability", NonAggressiveLushSurvivalProbability},
-						{"MaxDronesLow", MaxDronesLow},
-						{"MaxDronesLowSurvival", MaxDronesLowSurvival},
-						{"MaxDronesNormal", MaxDronesNormal},
-						{"MaxDronesNormalSurvival", MaxDronesNormalSurvival},
-						{"MaxDronesAggressive", MaxDronesAggressive},
-						{"MaxDronesAggressiveSurvival", MaxDronesAggressiveSurvival},
+						--Sentinels
+								{"ViciousSentinelProbability", ViciousSentinelProbability},
+								{"AggressiveSentinelProbability", AggressiveSentinelProbability},
+								{"AggressiveSentinelProbabilitySurvival", AggressiveSentinelProbabilitySurvival},
+								{"LowSentinelProbability", LowSentinelProbability},
+								{"LowSentinelProbabilitySurvival", LowSentinelProbabilitySurvival},
+								{"NonAggressiveLushSurvivalProbabability", NonAggressiveLushSurvivalProbability},
+								{"MaxDronesLow", MaxDronesLow},
+								{"MaxDronesLowSurvival", MaxDronesLowSurvival},
+								{"MaxDronesNormal", MaxDronesNormal},
+								{"MaxDronesNormalSurvival", MaxDronesNormalSurvival},
+								{"MaxDronesAggressive", MaxDronesAggressive},
+								{"MaxDronesAggressiveSurvival", MaxDronesAggressiveSurvival},
 
-				--Torch
-						{"TorchFoV", TorchFoV},
-						{"TorchStrength", TorchStrength},
-						{"TorchCookieIndex", TorchCookieIndex},
-						{"TorchDimFoV", TorchDimFoV},
-						{"TorchDimStrength", TorchDimStrength},
-						{"InteractionTorchFoV", InteractionTorchFoV},
-						{"InteractionTorchStrength", InteractionTorchStrength},
-						{"UndergroundTorchFoV", UndergroundTorchFoV},
-						{"UndergroundTorchStregth", UndergroundTorchStregth},
-						{"TorchOffsetX", TorchOffsetX},
-						{"TorchOffsetY", TorchOffsetY},
-						{"TorchOffsetZ", TorchOffsetZ},
-						{"TorchRotation", TorchRotation},
-					}
-				},
-				{
-					["PRECEDING_KEY_WORDS"] = "TorchColour",
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"R", TorchColourRed},
-						{"G", TorchColourGreen},
-						{"B", TorchColourBlue},
-						{"A", TorchColourA}
+						--Torch
+								{"TorchFoV", TorchFoV},
+								{"TorchStrength", TorchStrength},
+								{"TorchCookieIndex", TorchCookieIndex},
+								{"TorchDimFoV", TorchDimFoV},
+								{"TorchDimStrength", TorchDimStrength},
+								{"InteractionTorchFoV", InteractionTorchFoV},
+								{"InteractionTorchStrength", InteractionTorchStrength},
+								{"UndergroundTorchFoV", UndergroundTorchFoV},
+								{"UndergroundTorchFoVFar", UndergroundTorchFoVFar},
+								{"UndergroundTorchStrength", UndergroundTorchStrength},
+								{"UndergroundTorchStrengthFar", UndergroundTorchStrengthFar},
+								{"TorchOffsetX", TorchOffsetX},
+								{"TorchOffsetY", TorchOffsetY},
+								{"TorchOffsetZ", TorchOffsetZ},
+								{"TorchRotation", TorchRotation},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "TorchColour",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"R", TorchColourRed},
+								{"G", TorchColourGreen},
+								{"B", TorchColourBlue},
+								{"A", TorchColourA}
+							}
+						},
 					}
 				},
 			}
 		},
 	}
-},
-}}
+}

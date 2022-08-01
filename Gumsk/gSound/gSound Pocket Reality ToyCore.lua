@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Pocket Reality ToyCore"
 BaseDescription = "Mutes the Pocket Reality Generator ToyCore"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\TOY_CORE\ENTITIES\AUDIOTOYCORE.ENTITY.MBIN"
 
