@@ -6,8 +6,8 @@ BlueAmount = "0.8"
 
 Author = "Gumsk"
 ModName = "gJetpack"
-GameVersion = "370"
-ModVersion = "b"
+GameVersion = "397"
+ModVersion = "a"
 ModNameSub = "Trail".." "..Color
 BaseDescription = "Changes color of green jetpack trail to "..Color
 
@@ -16,7 +16,7 @@ FileSource2 = "MODELS\EFFECTS\PLAYER\JETPACKEFFECTS\JETPACKGREEN\ENGINEJETDARKMA
 FileSource3 = "MODELS\EFFECTS\PLAYER\JETPACKEFFECTS\JETPACKGREEN\ENGINEJETDARKCOREMAT.MATERIAL.MBIN"
 FileSource4 = "MODELS\EFFECTS\PLAYER\JETPACKEFFECTS\SJETPACKGREEN\ENGINEJETDARKMAT.MATERIAL.MBIN"
 FileSource5 = "MODELS\EFFECTS\PLAYER\JETPACKEFFECTS\SJETPACKGREEN\ENGINEJETDARKCOREMAT.MATERIAL.MBIN"
-FileSource6 = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN"
+FileSource6 = "METADATA\GAMESTATE\PLAYERDATA\THRUSTERCUSTOMISATIONDATA.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -37,6 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["EXTERNAL_FILE_SOURCE"] 	= "GUMSKPLAYERCORE"..Color..".DDS",
 		}
 	},
+	["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 	["MODIFICATIONS"]	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {
@@ -99,39 +100,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["MBIN_FILE_SOURCE"] = FileSource6,
 					["EXML_CHANGE_TABLE"] = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","JetpackLightG","Name","COL_R"},
+							["SPECIAL_KEY_WORDS"] = {"Name","GREEN","LightColour","Colour.xml"},
 							["VALUE_CHANGE_TABLE"] = {
-								{"Value", RedAmount},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","JetpackLightG","Name","COL_G"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"Value", GreenAmount},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","JetpackLightG","Name","COL_B"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"Value", BlueAmount},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","SJetpackLightG","Name","COL_R"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"Value", RedAmount},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","SJetpackLightG","Name","COL_G"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"Value", GreenAmount},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","SJetpackLightG","Name","COL_B"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"Value", BlueAmount},
+								{"R", RedAmount},
+								{"G", GreenAmount},
+								{"B", BlueAmount},
 							}
 						},
 					}

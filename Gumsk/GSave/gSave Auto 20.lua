@@ -139,22 +139,24 @@ AddText = [[
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-	["MBIN_CHANGE_TABLE"] = {{
-		["MBIN_FILE_SOURCE"] = FileSource1,
-		["EXML_CHANGE_TABLE"] 	= 
-			{
+	["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"]	= {
+		{
+			["MBIN_CHANGE_TABLE"] = {
 				{
-					["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-					["LINE_OFFSET"] 		= "-2",
-					["ADD"] 				= AddText
-
-				}
+					["MBIN_FILE_SOURCE"] = FileSource1,
+					["EXML_CHANGE_TABLE"] 	= {
+						{
+							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
+							["LINE_OFFSET"] 		= "-2",
+							["ADD"] 				= AddText,
+						},
+					},
+				},
 			}
-		},
+		}
 	}
-}},}
+}

@@ -2,8 +2,8 @@ Author = "Gumsk"
 ModName = "gCreatures Sandworms"
 ModNameSub = "No"
 BaseDescription = "No Sandworms"
-GameVersion = "387"
-ModVersion = "a"
+GameVersion = "397"
+ModVersion = "b"
 FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
 FileSource2 = "GCCREATUREGLOBALS.MBIN"
 
@@ -50,6 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["VALUE_CHANGE_TABLE"] = {
 			{"SandWormSpawnChanceMin", SandWormSpawnChanceMin},
 			{"SandWormSpawnChanceMax", SandWormSpawnChanceMax},
+			{"SandWormSpawnChanceInfested", SandWormSpawnChanceMin},
 	}},
 }},
 

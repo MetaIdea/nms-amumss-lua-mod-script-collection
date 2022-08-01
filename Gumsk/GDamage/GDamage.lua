@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GExos Challenge"
 ModNameSub = "gDamage"
 BaseDescription = "Damage adjustments"
-GameVersion = "387"
+GameVersion = "397"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -99,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","PLANTDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 20
+		{"Damage", 75}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -184,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 18
+		{"Damage", 75}}}, --default 18
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","VENT_HEAT"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -216,11 +216,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","CLAM_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 35
+		{"Damage", 75}}}, --default 35
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","VENUSFLY_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 20
+		{"Damage", 75}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLERSPITDMG"},
 	["VALUE_CHANGE_TABLE"] = {	

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gVehicle"
 ModNameSub = "Normal"
 BaseDescription = "Exocraft modifications"
-GameVersion = "382"
+GameVersion = "397"
 ModVersion = "a"
 FileSource1 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
@@ -56,81 +56,91 @@ SubVehicleBoostTime					= 6			--2.5
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {{
-["MBIN_CHANGE_TABLE"] = {
-
-	{["MBIN_FILE_SOURCE"] = FileSource1,
-	["EXML_CHANGE_TABLE"] = {
-
-		{["SPECIAL_KEY_WORDS"] = {"Name","BIKE"},
-		["VALUE_CHANGE_TABLE"] = {
-			{"TopSpeedForward",BikeTopSpeedForward},
-			{"TopSpeedReverse",BikeTopSpeedReverse},
-			{"UnderwaterEngineMaxSpeed",BikeUnderwaterEngineMaxSpeed},
-			{"VehicleJumpForce",BikeVehicleJumpForce},
-			{"VehicleBoostForce",BikeVehicleBoostForce},
-			{"VehicleBoostMaxSpeed",BikeVehicleBoostMaxSpeed},
-			{"VehicleBoostTime",BikeVehicleBoostTime},
-		}},
-
-		{["SPECIAL_KEY_WORDS"] = {"Name","MED_BUGGY"},
-		["VALUE_CHANGE_TABLE"] = {
-			{"TopSpeedForward",BuggyTopSpeedForward},
-			{"TopSpeedReverse",BuggyTopSpeedReverse},
-			{"UnderwaterEngineMaxSpeed",BuggyUnderwaterEngineMaxSpeed},
-			{"VehicleJumpForce",BuggyVehicleJumpForce},
-			{"VehicleBoostForce",BuggyVehicleBoostForce},
-			{"VehicleBoostMaxSpeed",BuggyVehicleBoostMaxSpeed},
-			{"VehicleBoostTime",BuggyVehicleBoostTime},
-		}},
-
-		{["SPECIAL_KEY_WORDS"] = {"Name","TRUCK"},
-		["VALUE_CHANGE_TABLE"] = {
-			{"TopSpeedForward",TruckTopSpeedForward},
-			{"TopSpeedReverse",TruckTopSpeedReverse},
-			{"UnderwaterEngineMaxSpeed",TruckUnderwaterEngineMaxSpeed},
-			{"VehicleJumpForce",TruckVehicleJumpForce},
-			{"VehicleBoostForce",TruckVehicleBoostForce},
-			{"VehicleBoostMaxSpeed",TruckVehicleBoostMaxSpeed},
-			{"VehicleBoostTime",TruckVehicleBoostTime},
-		}},
-		
-		{["SPECIAL_KEY_WORDS"] = {"Name","WHEELEDBIKE"},
-		["VALUE_CHANGE_TABLE"] = {
-			{"TopSpeedForward",WheeledBikeTopSpeedForward},
-			{"TopSpeedReverse",WheeledBikeTopSpeedReverse},
-			{"UnderwaterEngineMaxSpeed",WheeledBikeUnderwaterEngineMaxSpeed},
-			{"VehicleJumpForce",WheeledBikeVehicleJumpForce},
-			{"VehicleBoostForce",WheeledBikeVehicleBoostForce},
-			{"VehicleBoostMaxSpeed",WheeledBikeVehicleBoostMaxSpeed},
-			{"VehicleBoostTime",WheeledBikeVehicleBoostTime},
-		}},
-
-		{["SPECIAL_KEY_WORDS"] = {"Name","HOVERCRAFT"},
-		["VALUE_CHANGE_TABLE"] = {
-			{"TopSpeedForward",HovercraftTopSpeedForward},
-			{"TopSpeedReverse",HovercraftTopSpeedReverse},
-			{"UnderwaterEngineMaxSpeed",HovercraftUnderwaterEngineMaxSpeed},
-			{"VehicleJumpForce",HovercraftVehicleJumpForce},
-			{"VehicleBoostForce",HovercraftVehicleBoostForce},
-			{"VehicleBoostMaxSpeed",HovercraftVehicleBoostMaxSpeed},
-			{"VehicleBoostTime",HovercraftVehicleBoostTime},
-		}},
-
-		{["SPECIAL_KEY_WORDS"] = {"Name","SUBMARINE"},
-		["VALUE_CHANGE_TABLE"] = {
-			{"TopSpeedForward",SubTopSpeedForward},
-			{"TopSpeedReverse",SubTopSpeedReverse},
-			{"UnderwaterEngineMaxSpeed",SubUnderwaterEngineMaxSpeed},
-			{"VehicleJumpForce",SubVehicleJumpForce},
-			{"VehicleBoostForce",SubVehicleBoostForce},
-			{"VehicleBoostMaxSpeed",SubVehicleBoostMaxSpeed},
-			{"VehicleBoostTime",SubVehicleBoostTime},
-		}},
-
-	}}
-}}}}
+	["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"]	= {
+		{
+			["MBIN_CHANGE_TABLE"] = {
+				{
+					["MBIN_FILE_SOURCE"] = FileSource1,
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","BIKE"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"TopSpeedForward",BikeTopSpeedForward},
+								{"TopSpeedReverse",BikeTopSpeedReverse},
+								{"UnderwaterEngineMaxSpeed",BikeUnderwaterEngineMaxSpeed},
+								{"VehicleJumpForce",BikeVehicleJumpForce},
+								{"VehicleBoostForce",BikeVehicleBoostForce},
+								{"VehicleBoostMaxSpeed",BikeVehicleBoostMaxSpeed},
+								{"VehicleBoostTime",BikeVehicleBoostTime},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","MED_BUGGY"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"TopSpeedForward",BuggyTopSpeedForward},
+								{"TopSpeedReverse",BuggyTopSpeedReverse},
+								{"UnderwaterEngineMaxSpeed",BuggyUnderwaterEngineMaxSpeed},
+								{"VehicleJumpForce",BuggyVehicleJumpForce},
+								{"VehicleBoostForce",BuggyVehicleBoostForce},
+								{"VehicleBoostMaxSpeed",BuggyVehicleBoostMaxSpeed},
+								{"VehicleBoostTime",BuggyVehicleBoostTime},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","TRUCK"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"TopSpeedForward",TruckTopSpeedForward},
+								{"TopSpeedReverse",TruckTopSpeedReverse},
+								{"UnderwaterEngineMaxSpeed",TruckUnderwaterEngineMaxSpeed},
+								{"VehicleJumpForce",TruckVehicleJumpForce},
+								{"VehicleBoostForce",TruckVehicleBoostForce},
+								{"VehicleBoostMaxSpeed",TruckVehicleBoostMaxSpeed},
+								{"VehicleBoostTime",TruckVehicleBoostTime},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","WHEELEDBIKE"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"TopSpeedForward",WheeledBikeTopSpeedForward},
+								{"TopSpeedReverse",WheeledBikeTopSpeedReverse},
+								{"UnderwaterEngineMaxSpeed",WheeledBikeUnderwaterEngineMaxSpeed},
+								{"VehicleJumpForce",WheeledBikeVehicleJumpForce},
+								{"VehicleBoostForce",WheeledBikeVehicleBoostForce},
+								{"VehicleBoostMaxSpeed",WheeledBikeVehicleBoostMaxSpeed},
+								{"VehicleBoostTime",WheeledBikeVehicleBoostTime},
+							},
+						},
+						{
+						["SPECIAL_KEY_WORDS"] = {"Name","HOVERCRAFT"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"TopSpeedForward",HovercraftTopSpeedForward},
+								{"TopSpeedReverse",HovercraftTopSpeedReverse},
+								{"UnderwaterEngineMaxSpeed",HovercraftUnderwaterEngineMaxSpeed},
+								{"VehicleJumpForce",HovercraftVehicleJumpForce},
+								{"VehicleBoostForce",HovercraftVehicleBoostForce},
+								{"VehicleBoostMaxSpeed",HovercraftVehicleBoostMaxSpeed},
+								{"VehicleBoostTime",HovercraftVehicleBoostTime},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","SUBMARINE"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"TopSpeedForward",SubTopSpeedForward},
+								{"TopSpeedReverse",SubTopSpeedReverse},
+								{"UnderwaterEngineMaxSpeed",SubUnderwaterEngineMaxSpeed},
+								{"VehicleJumpForce",SubVehicleJumpForce},
+								{"VehicleBoostForce",SubVehicleBoostForce},
+								{"VehicleBoostMaxSpeed",SubVehicleBoostMaxSpeed},
+								{"VehicleBoostTime",SubVehicleBoostTime},
+							},
+						},
+					},
+				},
+			}
+		}
+	}
+}

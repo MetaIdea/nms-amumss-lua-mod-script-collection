@@ -2,8 +2,8 @@ Author = "Gumsk"
 ModName = "gGame"
 ModNameSub = "Tech Scan"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "387"
-ModVersion = "a"
+GameVersion = "397"
+ModVersion = "b"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
 --Tech Grouping Bonus Adjustments
@@ -13,24 +13,26 @@ BonusSameTypeMult = 0.04						--0.04 ;
 BonusChildAdd = 0.05							--0.05 ; 
 BonusChildMult = 0.03							--0.03 ; 
 
---Torch Adjustments
-TorchFoV = 120									--Torch arc width, in degrees. 181+=360 degrees. Original value "120"
-TorchStrength = 3.5								--Torch brightness. Original value "3.5"
-TorchCookieIndex = 0							--0
-TorchDimFoV = 65								--65 Derelict Freighter FOV
-TorchDimStrength = 1.5							--1.5 Derelict Freighter Strength
-InteractionTorchFoV = 120						--120
-InteractionTorchStrength = 2					--2
-UndergroundTorchFoV = 70						--70
-UndergroundTorchStregth = 2.5					--2.5
-TorchOffsetX = 0								--Torch source, + right, -left of centerline of character, in u. Original value "0"
-TorchOffsetY = -0.5								--Torch source, + above, -below top of character head, in u. Original value "-0.5"
-TorchOffsetZ = -0.75							--Torch source, + behind, - in front of centerline of character, in u. Original value "-0.75"
-TorchRotation = 0.0								--???
-TorchColourRed = 0.95							--Torch color red saturation percent. Original value "0.95"
-TorchColourGreen = 0.993						--Torch color green saturation percent. Original value "0.993"
-TorchColourBlue = 0.944							--Torch color blue saturation percent. Original value "0.944"
-TorchColourA = 1								--???? Original value "1"
+-- --Torch Adjustments
+-- TorchFoV = 120									--Torch arc width, in degrees. 181+=360 degrees. Original value "120"
+-- TorchStrength = 4.2								--Torch brightness. Original value "3.5"
+-- TorchCookieIndex = 0							--0
+-- TorchDimFoV = 65								--65 Derelict Freighter FOV
+-- TorchDimStrength = 2.2							--1.5 Derelict Freighter Strength
+-- InteractionTorchFoV = 120						--120
+-- InteractionTorchStrength = 1.5					--2
+-- UndergroundTorchFoV = 70						--70
+-- UndergroundTorchFoVFar = 100					--100
+-- UndergroundTorchStrength = 3.0					--2.5
+-- UndergroundTorchStrengthFar = 7.5				--6.5
+-- TorchOffsetX = 0								--Torch source, + right, -left of centerline of character, in u. Original value "0"
+-- TorchOffsetY = -0.35							--Torch source, + above, -below top of character head, in u. Original value "-0.5"
+-- TorchOffsetZ = -0.7								--Torch source, + behind, - in front of centerline of character, in u. Original value "-0.75"
+-- TorchRotation = 0.0								--???
+-- TorchColourRed = 0.95							--Torch color red saturation percent. Original value "0.95"
+-- TorchColourGreen = 0.993						--Torch color green saturation percent. Original value "0.993"
+-- TorchColourBlue = 0.944							--Torch color blue saturation percent. Original value "0.944"
+-- TorchColourA = 1								--???? Original value "1"
 
 --Scanner Adjustments
 TerrainResourceScanTime = 30					--30 ; ???
@@ -80,53 +82,51 @@ SurveySonarMinPulseSpeed = -2.4					--0.4 ; Frequency for sweeps or pings of the
 -- There are also debug scanners that can be enabled that see a lot more.
 -- VisualScan? PassiveScan? What are these?
 -- ScannerColour2 v Unknown at end?
---Missile Adjustments
 
---Trading Adjustments
-UseTradingCostTable = "False"					--??? Original value "False"
-ChangePricesLocally = "False"					--?? Original value "False"
-TradeProdcutDecay = 60							--?Original value "60"
-TradeProductRestock = 60						--?Original value "60"
-TradeSubstanceDecay = 2							--?Original value "2"
-TradeSubstanceRestock = 2						--?Original value "2"
+-- --Trading Adjustments
+-- UseTradingCostTable = "False"					--??? Original value "False"
+-- ChangePricesLocally = "False"					--?? Original value "False"
+-- TradeProdcutDecay = 60							--?Original value "60"
+-- TradeProductRestock = 60						--?Original value "60"
+-- TradeSubstanceDecay = 2							--?Original value "2"
+-- TradeSubstanceRestock = 2						--?Original value "2"
 
---Sentinels
-AggressiveSentinelProbability = 0.13			--0.13 ;
-AggressiveSentinelProbabilitySurvival = 0.13	--0.13 ;
-LowSentinelProbability = 0.55					--0.55 ;
-LowSentinelProbabilitySurvival = 0.25			--0.25 ;
-NonAggressiveLushSurvivalProbability = 0.5		--0.5 ;
-MaxDronesLow = 0								--0
-MaxDronesLowSurvival = 1						--1
-MaxDronesNormal = 2								--2
-MaxDronesNormalSurvival = 2						--2
-MaxDronesAggressive = 1							--1
-MaxDronesAggressiveSurvival = 1					--1
-SentinelsHigh = 10								--10 ; 
-SentinelsLow = 30								--30 ; 
-ViciousSentinelProbability = 0.25				--0.25 ; 
+-- --Sentinels
+-- AggressiveSentinelProbability = 0.13			--0.13 ;
+-- AggressiveSentinelProbabilitySurvival = 0.13	--0.13 ;
+-- LowSentinelProbability = 0.55					--0.55 ;
+-- LowSentinelProbabilitySurvival = 0.25			--0.25 ;
+-- NonAggressiveLushSurvivalProbability = 0.5		--0.5 ;
+-- MaxDronesLow = 0								--0
+-- MaxDronesLowSurvival = 1						--1
+-- MaxDronesNormal = 2								--2
+-- MaxDronesNormalSurvival = 2						--2
+-- MaxDronesAggressive = 1							--1
+-- MaxDronesAggressiveSurvival = 1					--1
+-- SentinelsHigh = 10								--10 ; 
+-- SentinelsLow = 30								--30 ; 
+-- ViciousSentinelProbability = 0.25				--0.25 ; 
 
---Misc Adjustments
-RefinerProductsMadeInTime = 20					--2 ; 
-RefinerSubsMadeInTime = 2500					--250 ; 
-RefinerProductsMadeInTimeSurvival = 10			--1 ; 
-RefinerSubsMadeInTimeSurvival = 1000			--100 ; 
-AtmosphereEntryTime = 1.5						--1.5
-ShipInteractRadius = 200						--80 ; How close you need to be to your ship to interact with it, in u
-LightStrength = 1								--1 ; All lights. 4 is blinding in small areas or up close
-AirLockDoorRange = 3							--3 ; 
-DisableBasePowerHUDOverlay = "False"			--"False"
-FourthRaceSpawnPercentage = 3					--3 ; How likely are you to see a Traveller on stations, in percent
-NonDominantRaceSpawnPercentage = 30				--30
-ViciousStormProbability = 0.5					--0.5 ; 
-ViciousWeatherProbability = 0.5					--0.5 ; 
-BuildingBeamDistance = 800						--800
-HardModeTechDamageMidNum = 5					--5
-HardModeTechDamageMidPercent = 50				--50
-HardModeTechDamageHighPercent = 20				--20
-WarpsBetweenBattles = 3							--5
-HoursBetweenBattles = 1							--3
-DeadPlanetGravityFactor = 0.4					--0.6
+-- --Misc Adjustments
+-- RefinerProductsMadeInTime = 20					--2 ; 
+-- RefinerSubsMadeInTime = 2500					--250 ; 
+-- RefinerProductsMadeInTimeSurvival = 10			--1 ; 
+-- RefinerSubsMadeInTimeSurvival = 1000			--100 ; 
+-- AtmosphereEntryTime = 1.0						--1.5
+-- ShipInteractRadius = 300						--80 ; How close you need to be to your ship to interact with it, in u
+-- LightStrength = 1.1								--1 ; All lights. 4 is blinding in small areas or up close
+-- AirLockDoorRange = 3							--3 ;
+-- FourthRaceSpawnPercentage = 3					--3 ; How likely are you to see a Traveller on stations, in percent
+-- NonDominantRaceSpawnPercentage = 30				--30
+-- ViciousStormProbability = 0.5					--0.5 ; 
+-- ViciousWeatherProbability = 0.5					--0.5 ; 
+-- BuildingBeamDistance = 800						--800
+-- HardModeTechDamageMidNum = 5					--5
+-- HardModeTechDamageMidPercent = 50				--50
+-- HardModeTechDamageHighPercent = 20				--20
+-- WarpsBetweenBattles = 3							--5
+-- HoursBetweenBattles = 1							--3
+-- DeadPlanetGravityFactor = 0.4					--0.6
 
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -255,10 +255,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 				-- --Sentinels
 						-- {"ViciousSentinelProbability", ViciousSentinelProbability},
+						-- {"AggressiveSentinelProbability", AggressiveSentinelProbability},
 						-- {"AggressiveSentinelProbabilitySurvival", AggressiveSentinelProbabilitySurvival},
 						-- {"LowSentinelProbability", LowSentinelProbability},
 						-- {"LowSentinelProbabilitySurvival", LowSentinelProbabilitySurvival},
-						-- {"NonAggressiveLushSurvivalProbability", NonAggressiveLushSurvivalProbability},
+						-- {"NonAggressiveLushSurvivalProbabability", NonAggressiveLushSurvivalProbability},
 						-- {"MaxDronesLow", MaxDronesLow},
 						-- {"MaxDronesLowSurvival", MaxDronesLowSurvival},
 						-- {"MaxDronesNormal", MaxDronesNormal},
@@ -275,7 +276,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						-- {"InteractionTorchFoV", InteractionTorchFoV},
 						-- {"InteractionTorchStrength", InteractionTorchStrength},
 						-- {"UndergroundTorchFoV", UndergroundTorchFoV},
-						-- {"UndergroundTorchStregth", UndergroundTorchStregth},
+						-- {"UndergroundTorchFoVFar", UndergroundTorchFoVFar},
+						-- {"UndergroundTorchStrength", UndergroundTorchStrength},
+						-- {"UndergroundTorchStrengthFar", UndergroundTorchStrengthFar},
 						-- {"TorchOffsetX", TorchOffsetX},
 						-- {"TorchOffsetY", TorchOffsetY},
 						-- {"TorchOffsetZ", TorchOffsetZ},

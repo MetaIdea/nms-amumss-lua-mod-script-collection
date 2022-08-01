@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "NPC Station Weapons"
 BaseDescription = "Mutes the NPC weapons station"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\NPCROOMS\NPC_WEAPONS\ENTITIES\WORKSTATION.ENTITY.MBIN"
 

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Calcishroom"
 BaseDescription = "Mutes the Calcishroom"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FOLIAGE\HYDROPOD\ENTITIES\PODGROWING.ENTITY.MBIN"
 

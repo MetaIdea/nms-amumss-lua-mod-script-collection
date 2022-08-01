@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Cuboid Glitch"
 BaseDescription = "Mutes the Cuboid glitch"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FOLIAGE\WEIRDCUBE\ENTITIES\CUBOIDSMALL.ENTITY.MBIN"
 

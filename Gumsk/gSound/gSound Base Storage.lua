@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Base Storage Container"
 BaseDescription = "Mutes the base storage container"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TERMINAL_CUBECRATE\ENTITIES\TERMINALCHAR.ENTITY.MBIN"
 

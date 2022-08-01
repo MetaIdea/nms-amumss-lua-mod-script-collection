@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GSound"
 ModNameSub = "Oscilloscope EncasedMonitor"
 BaseDescription = "Mutes the Oscilloscope EncasedMonitor"
-GameVersion = "353"
+GameVersion = "388"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\ENCASEDMONITOR\ENTITIES\AUDIOMONITOR.ENTITY.MBIN"
 

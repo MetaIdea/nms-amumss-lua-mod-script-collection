@@ -1,5 +1,5 @@
 Author = "Gumsk"
-ModName = "GCreatures Life"
+ModName = "gCreatures Life"
 ModNameSub = "150"
 BaseDescription = "150% of normal life"
 GameVersion = "397"

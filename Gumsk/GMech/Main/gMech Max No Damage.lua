@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech"
 ModNameSub = "Max No Damage"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "387"
+GameVersion = "398"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
@@ -36,70 +36,70 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 	
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
-{
-	["MBIN_CHANGE_TABLE"] = {
-
+	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"]	= {
 		{
-			["MBIN_FILE_SOURCE"]	= FileSource1,
-			["EXML_CHANGE_TABLE"]	= {
+			["MBIN_CHANGE_TABLE"] = {
+
 				{
-					["SPECIAL_KEY_WORDS"] = {"Anim", "FASTWALK"},
-					["SECTION_ACTIVE"] = {1},
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"Speed", FastWalkSpeed}
+					["MBIN_FILE_SOURCE"]	= FileSource1,
+					["EXML_CHANGE_TABLE"]	= {
+						{
+							["SPECIAL_KEY_WORDS"] = {"Anim", "FASTWALK"},
+							["SECTION_ACTIVE"] = {1},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"Speed", FastWalkSpeed}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Anim", "WALK"},
+							["SECTION_ACTIVE"] = {1},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"Speed", WalkSpeed}
+							}
+						},
 					}
 				},
 				{
-					["SPECIAL_KEY_WORDS"] = {"Anim", "WALK"},
-					["SECTION_ACTIVE"] = {1},
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"Speed", WalkSpeed}
+					["MBIN_FILE_SOURCE"]	= FileSource2,
+					["EXML_CHANGE_TABLE"]	= {
+						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"MechContrailAlpha",MechContrailAlpha},
+								{"MechPlayerGroundTurnSpeed",MechPlayerGroundTurnSpeed},
+								{"MechJetpackTurnSpeed",MechJetpackTurnSpeed},
+								{"MechWalkToRunTimeIdle",MechWalkToRunTimeIdle},
+								{"MechWalkToRunTimeSkid",MechWalkToRunTimeSkid},
+								{"MechLandBrake",MechLandBrake},
+								{"MechJetpackLandTime",MechJetpackLandTime},
+								{"MechJetpackForce",MechJetpackForce},
+								{"MechJetpackMaxSpeed",MechJetpackMaxSpeed},
+								{"MechJetpackMaxUpSpeed",MechJetpackMaxUpSpeed},
+								{"MechJetpackUpForce",MechJetpackUpForce},
+								{"MechJetpackIgnitionForce",MechJetpackIgnitionForce},
+								{"MechJetpackIgnitionTime",MechJetpackIgnitionTime},
+								{"MechJetpackDrainRate",MechJetpackDrainRate},
+								{"DamageTechNumHitsRequired",DamageTechNumHitsRequired},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","MECH"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = {
+								{"TopSpeedForward",MechTopSpeedForward},
+								{"TopSpeedReverse",MechTopSpeedReverse},
+								{"HeadlightIntensity",MechHeadlightIntensity},
+							}
+						},
 					}
 				},
 			}
-		},
-
-		{
-			["MBIN_FILE_SOURCE"]	= FileSource2,
-			["EXML_CHANGE_TABLE"]	= {
-				{
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"MechContrailAlpha",MechContrailAlpha},
-						{"MechPlayerGroundTurnSpeed",MechPlayerGroundTurnSpeed},
-						{"MechJetpackTurnSpeed",MechJetpackTurnSpeed},
-						{"MechWalkToRunTimeIdle",MechWalkToRunTimeIdle},
-						{"MechWalkToRunTimeSkid",MechWalkToRunTimeSkid},
-						{"MechLandBrake",MechLandBrake},
-						{"MechJetpackLandTime",MechJetpackLandTime},
-						{"MechJetpackForce",MechJetpackForce},
-						{"MechJetpackMaxSpeed",MechJetpackMaxSpeed},
-						{"MechJetpackMaxUpSpeed",MechJetpackMaxUpSpeed},
-						{"MechJetpackUpForce",MechJetpackUpForce},
-						{"MechJetpackIgnitionForce",MechJetpackIgnitionForce},
-						{"MechJetpackIgnitionTime",MechJetpackIgnitionTime},
-						{"MechJetpackDrainRate",MechJetpackDrainRate},
-						{"DamageTechNumHitsRequired",DamageTechNumHitsRequired},
-					}
-				},
-				{
-					["SPECIAL_KEY_WORDS"] = {"Name","MECH"},
-					["INTEGER_TO_FLOAT"] = "FORCE",
-					["VALUE_CHANGE_TABLE"] = {
-						{"TopSpeedForward",MechTopSpeedForward},
-						{"TopSpeedReverse",MechTopSpeedReverse},
-						{"HeadlightIntensity",MechHeadlightIntensity},
-					}
-				},
-			}
-		},
+		}
 	}
 }
-}}

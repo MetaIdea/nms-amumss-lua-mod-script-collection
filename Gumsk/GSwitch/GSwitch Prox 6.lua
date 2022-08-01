@@ -1,36 +1,40 @@
+DistanceOpen = 6
+DistanceClose = 8
+
 Author = "Gumsk"
-ModName = "gSwitch"
-ModNameSub = "Prox 6"
+ModName = "gSwitch Prox"
+ModNameSub = DistanceOpen
 BaseDescription = "Shortened proximity switch distance"
-GameVersion = "371"
+GameVersion = "398"
 ModVersion = "a"
 FileSource = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\SWITCH_PROXIMITY\ENTITIES\SWITCH_PROXIMITY.ENTITY.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
-{
-	["MBIN_CHANGE_TABLE"] = {
+	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"]	= {
 		{
-			["MBIN_FILE_SOURCE"] = FileSource,
-			["EXML_CHANGE_TABLE"] = {
+			["MBIN_CHANGE_TABLE"] = {
 				{
-					["SPECIAL_KEY_WORDS"] = {"StateID","SWITCHON"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Distance",6}
-					}
-				},
-				{
-					["SPECIAL_KEY_WORDS"] = {"StateID","ON"},
-					["VALUE_CHANGE_TABLE"] = {
-						{"Distance",8}
-					}
+					["MBIN_FILE_SOURCE"] = FileSource,
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["SPECIAL_KEY_WORDS"] = {"StateID","SWITCHON"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"Distance",DistanceOpen},
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"StateID","ON"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"Distance",DistanceClose},
+							},
+						},
+					},
 				},
 			}
-		},
+		}
 	}
-},
-}}
+}
