@@ -9,7 +9,7 @@ FileName    = "More Refiners.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
-NMS_Version = "3.97"
+NMS_Version = "3.98"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/BASEBUILDINGTABLE.MBIN"

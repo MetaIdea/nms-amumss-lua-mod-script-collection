@@ -147,6 +147,9 @@ if O2_ATMO_HARVESTERS_ANYWHERE then
 	end
 end
 
+-- Re-add planters after Endurance update
+PLANTERS_ON_FREIGHTER_ID_TABLE = {"PLANTERMEGA", "PLANTER"}
+
 
 -- Exceptions to {"CanScale","True"}
 NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG", "BUILDLANDINGPAD", "S_LANDINGZONE"}
@@ -172,7 +175,7 @@ end
 SCALEABLE_VEHICLESPART_ID_TABLE = {"RACE_RAMP", "RACE_BOOSTER"}
 
 -- Parts which are unlimited by the mod even if NO_BUILDCOUNT_LIMIT is false.
--- Removed "GARAGE_FREIGHT" due to warning, already 4x0 3.97 Endurance
+-- Removed "GARAGE_FREIGHT" due to warning for 3.97 Endurance
 UNLIMITED_BUILPART_ID_TABLE = {"BASE_TERRARIUM", "BASE_AQUARIUM", "BASE_TOYSPHERE", "BASE_TOYCORE", "DRESSING_TABLE", "SPAWNER_BALL", "U_SWITCHBUTTON", "BYTEBEAT", "MESSAGEMODULE", "BUILDTERMINAL", "RACE_RAMP", "RACE_BOOSTER", "BASE_ROBOTOY", "BASE_TOYCUBE", "BUILDLANDINGPAD", "S_LANDINGZONE", "TELEPORTER", "TELEPORTER_F", "RACE_START", "CHECKPOINT", "WATERBUBBLE", "BUILD_REFINER2", "BUILD_REFINER3", "BASE_TOYJELLY", "BLD_PLANET_HOLO"}
 -- Decals are included in the "general modifications". Storage containers are included in the dedicated part at the bottom of the script.
 
@@ -198,7 +201,8 @@ CUSTOM_BUILDCOUNT_LIMITS =
 	{"BUILDSIGNAL",		0,				6,				0,					0},		-- Signal Booster
 	{"BUILDBEACON",		0,				6,				0,					0},		-- Save Beacon
 	{"BUILDSAVE",		0,				6,				0,					0},		-- Save Point
-	{"MESSAGE",			0,				3,				0,					0}		-- Communications Station
+	{"MESSAGE",  		0,				3,				0,					0},		-- Communications Station
+	{"BLD_DATASIGN",	0,				0,				0,					0},		-- Data Display Unit
 	--{"DECALPATH",		0,				0,				0,					0}		-- ?
 	
 }
@@ -242,8 +246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	—For latest versions and more visit:-
 	https://www.nexusmods.com/nomanssky/mods/1096 
 	]],
-	["MOD_VERSION"]   = "3.97",
-	["NMS_VERSION"]   = "2.62+",	-- NMS version when first scripted
+	["NMS_VERSION"]   = "3.98",
 	["MODIFICATIONS"] = 
 	{
 		{
@@ -305,8 +308,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 							},
 						},
-				
-						
 					},
 				},
 			},
@@ -803,3 +804,33 @@ for i = 1,#ANYTERRAIN_BUILDPART_ID_TABLE do
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table_notbare
 	
 end
+
+-- Re-add planters after Endurance update
+for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
+	
+	local temp_table_planterfreightergroup =
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID", PLANTERS_ON_FREIGHTER_ID_TABLE[i]},
+		["PRECEDING_KEY_WORDS"] = {"Groups"},
+		["LINE_OFFSET"]= "+0",
+		["ADD"] = 
+[[
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHTER_BIO" />
+          <Property name="SubGroupName" value="FRE_PLANTS" />
+          <Property name="SubGroup" value="0" />
+        </Property>
+]]
+	}
+	Change_Table_Array[#Change_Table_Array + 1] = temp_table_planterfreightergroup
+
+	local temp_table_planterfreighterplace =
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID", PLANTERS_ON_FREIGHTER_ID_TABLE[i]},
+		["VALUE_CHANGE_TABLE"] = 
+		{
+			{"IsPlaceable", "True"},
+		},
+	}
+	Change_Table_Array[#Change_Table_Array + 1] = temp_table_planterfreighterplace
+ end
