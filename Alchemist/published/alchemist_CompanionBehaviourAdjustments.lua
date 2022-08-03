@@ -3,8 +3,8 @@ Author = "alchemist"
 ModName = "CompanionBehaviourAdjustments"
 --ModNexus = "https://www.nexusmods.com/nomanssky/mods/1871"
 BaseDescription = "Tweaks to pet behavior."
-GameVersion = "3-6x" -- Frontiers
-ModVersion = "3"
+GameVersion = "3-98"
+ModVersion = "4"
 
 -- BEGIN CONFIG
 
@@ -281,6 +281,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
   {["PRECEDING_KEY_WORDS"] = {
     "Rest"
   },
+  ["INTEGER_TO_FLOAT"] = "FORCE",
   ["VALUE_CHANGE_TABLE"] = {
     {"Weight", 0},
     {"CooldownTime", 90},
@@ -292,6 +293,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     "Tickle",
     "MoodModifiers"
   },
+  ["INTEGER_TO_FLOAT"] = "FORCE",
   ["VALUE_CHANGE_TABLE"] = {
     {"Lonely", -0.3},
   }},
@@ -301,6 +303,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     "Treat",
     "MoodModifiers"
   },
+  ["INTEGER_TO_FLOAT"] = "FORCE",
   ["VALUE_CHANGE_TABLE"] = {
     {"Hungry", -0.3},
     {"Lonely", -0.1},
@@ -311,6 +314,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     "Ride",
     "MoodModifiers"
   },
+  ["INTEGER_TO_FLOAT"] = "FORCE",
   ["VALUE_CHANGE_TABLE"] = {
     {"Hungry", 0.05},
     {"Lonely", -0.1},
@@ -321,6 +325,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     "Customise",
     "MoodModifiers"
   },
+  ["INTEGER_TO_FLOAT"] = "FORCE",
   ["VALUE_CHANGE_TABLE"] = {
     {"Hungry", 0},
     {"Lonely", -0.3},
@@ -371,6 +376,7 @@ for i = 1, #BEHAVIOR_TABLE do
   if ai["VALUE_CHANGE_TABLE"] ~= nil then
     Ref[#Ref + 1] = {
       ["PRECEDING_KEY_WORDS"] = {"Behaviours", id},
+      ["INTEGER_TO_FLOAT"] = "FORCE",
       ["VALUE_CHANGE_TABLE"] = ai["VALUE_CHANGE_TABLE"]
     }
   end
@@ -379,6 +385,7 @@ for i = 1, #BEHAVIOR_TABLE do
   if ai["MoodModifyOnComplete"] ~= nil then
     Ref[#Ref + 1] = {
       ["PRECEDING_KEY_WORDS"] = {"Behaviours", id, "MoodModifyOnComplete"},
+      ["INTEGER_TO_FLOAT"] = "FORCE",
       ["VALUE_CHANGE_TABLE"] = ai["MoodModifyOnComplete"]
     }
   end

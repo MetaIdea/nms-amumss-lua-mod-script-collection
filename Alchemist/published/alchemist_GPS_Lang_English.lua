@@ -5,7 +5,7 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "3-97"
+GameVersion = "3-98"
 ModVersion = "2-0-1"
 
 -- =========
@@ -31,18 +31,19 @@ LanguageName = "English"
 
 -- When 'false', will inject language into existing files, using LanguageFilePrefix.
 -- When 'true', will create seperate files for the mod in the LANGUAGE folder.
--- WARNING: Experimental
+-- When 'true', adds entries to GCDEBUGOPTIONS.GLOBAL.MBIN to register the new files.
 CreateSeperateLanguageFiles = false
 
 -- Whether to create/inject the language entries into just the target language's 
 -- file (false), or all language files (true). If true, players will see the 
 -- provided strings no matter what language they play in. Should probably be true, 
--- unless you have a specific reason not to.
+-- unless you have a specific reason not to. Only used
+-- when 'CreateSeperateLanguageFiles = false'.
 ForceAllLanguageFiles = true
 
 -- Which group of files from the "Language" directory of the extracted game files to
 -- inject the new language entries into. Translators should not change. Only used
--- when 'CreateSeperateLanguageFiles = true'.
+-- when 'CreateSeperateLanguageFiles = false'.
 LanguageFilePrefix = "NMS_LOC7_"
 
 --[[
