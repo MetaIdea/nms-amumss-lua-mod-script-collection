@@ -2,7 +2,7 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "397"
+GameVersion = "398"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
@@ -35,6 +35,8 @@ SiloBaseLimit = 16			--0
 
 BiodomeBaseLimit = 0			--0
 BiodomePowerDraw = -160		--	-50 kPs		(Remember to make the value negative)
+
+BiodomeFreighter = "False"	--Override for setting if Biodomes can be built on freighters or not
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -168,6 +170,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"PlanetBaseLimit", BiodomeBaseLimit},
 		{"Rate", BiodomePowerDraw},
+		{"BuildableOnSpaceBase", BiodomeFreighter},
+		{"BuildableOnFreighter", BiodomeFreighter},
 		}},
 	{["SPECIAL_KEY_WORDS"] = {"ID","U_PARAGON"},
 	["VALUE_CHANGE_TABLE"] = {

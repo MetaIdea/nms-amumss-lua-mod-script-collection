@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Reduced Launch Cost 41% 2.1X.pak", 
+["MOD_FILENAME"] 			= "Reduced Launch Cost 41% 2.4X.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",				--Edited by Xen0nex
 ["NMS_VERSION"]				= "3.93",
 ["MOD_DESCRIPTION"]			= "This mods makes each launch costing 41% instead of 50% in Survival, to make the -20% Launch Cost Tech useful for all ship types.",
@@ -31,6 +31,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",	"41"}			--50	(20)
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID", "LAUNCHER_SPEC"},
+							["PRECEDING_KEY_WORDS"] = {"Ship_Launcher_TakeOffCost"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",	"20"}			--25?	(10)
 							}
 						}
 					}

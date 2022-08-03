@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "3_97"
+GameVersion = "3_98"
 --Currently balancing around Survival Mode
 
 --Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
@@ -142,6 +142,11 @@ TechAdjustments =
 MatterHeart = 16						--Heart of the Sun		(5 Antimatter in vanilla)
 MatterBulk = 1							--Cargo Bulkhead		(3 Magnet in vanilla)
 MatterAug = 1							--Storage AUgmentation	(10 Wiring Loom in vanilla)
+
+--New recipe for installing Interstellar Scanner in freigther
+IntScannerWalkBrain = 1					--Walker Brain		(160 Chromatic Metal in vanilla)
+IntScannerHardEngine = 1				--Hardframe Engine		(70 Mag. Ferrite in vanilla)
+IntScannerWireLoom = 2					--2 Wiring Loom
 
 --Adds Hardframe Engine as a requirement for all Exo-Mech Hardframe upgrades
 MechPart = [[<Property value="GcTechnologyRequirement.xml">
@@ -367,7 +372,7 @@ RecipeChanges	=
 		FreighterScannerRoomMult
 	},
 	{
-		"FRE_ROOM_SCAN"					--Scanner Room					1 Salvaged Frigate Modules			(Not affected by TechCostMult)
+		"FRE_ROOM_SCAN"					--Scanner Room					1 Salvaged Frigate Modules
 	},
 },
 {
@@ -717,6 +722,58 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",	"ID", "STELLAR2"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	IntScannerWalkBrain},
+								{"ID",	"WALKER_PROD"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",		"ID", "WALKER_PROD"},
+							["VALUE_MATCH"] 	= "Substance",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"InventoryType", "Product"}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",	"ID", "LAND3"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	IntScannerHardEngine},
+								{"ID",	"MECH_PROD"},
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",		"ID", "MECH_PROD"},
+							["VALUE_MATCH"] 	= "Substance",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"InventoryType", "Product"}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "F_SCANNER",	"ID", "TECH_COMP"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	IntScannerWireLoom},
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_L_ARM"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = MechPart,
@@ -773,7 +830,27 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         }
                     }
-				}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",		--Swaps position of Matter Beam and Interstellar Scanner in freighter unlock tree
+					["EXML_CHANGE_TABLE"]     = 
+                    {
+                        {
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","F_SCANNER"}, 
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"Unlockable",    "F_TELEPORT"}
+                            }
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","F_TELEPORT"}, 
+                            ["VALUE_CHANGE_TABLE"]     = 
+                            {
+                                {"Unlockable",    "F_SCANNER"}
+                            }
+                        },
+                    }
+				},
             }
 		}
     }

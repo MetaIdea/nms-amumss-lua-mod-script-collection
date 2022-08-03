@@ -494,6 +494,25 @@ if ALL_PARTS_ON_FREIGHTER then
 				},              
 			}
 			Change_Table_Array[#Change_Table_Array + 1] = temp_table_geofreighter
+		end	
+			
+		for i = 1,#GEOBAYS_ON_FREIGHTER_ID_TABLE do
+	
+			local temp_table_geofreightergroup =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
+				["PRECEDING_KEY_WORDS"] = {"Groups"},
+				["LINE_OFFSET"]= "+0",
+				["ADD"] = 
+[[
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHTER_TECH" />
+          <Property name="SubGroupName" value="FRE_TECH_OTHER" />
+          <Property name="SubGroup" value="0" />
+        </Property>
+]]
+			}
+			Change_Table_Array[#Change_Table_Array + 1] = temp_table_geofreightergroup
 			
 		end
 		
@@ -805,7 +824,7 @@ for i = 1,#ANYTERRAIN_BUILDPART_ID_TABLE do
 	
 end
 
--- Re-add planters after Endurance update
+-- Re-add planters on freighters after Endurance update
 for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
 	
 	local temp_table_planterfreightergroup =
