@@ -1,8 +1,8 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "3_97"
+GameVersion = "3_98"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
-FuelLessIsBetter =				"TRUE"				--"FALSE", Makes the "Speed" Frigate-boosting upgrade modules for freigthers properly increase Fleet Coordination rather than decrease it (still doesn't affect speed though)
+FuelLessIsBetter =				"TRUE"				--"FALSE", Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
 --LandingCost = 	50									--0		(TakeOffCost is 100)	[18]		Unknown function
 
 --ShieldLeechMul = 0.07								--0.07	Unknown Function, doesn't seem to affect how much shield you leech with lasers

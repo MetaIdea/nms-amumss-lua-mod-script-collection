@@ -1,5 +1,5 @@
 ModName = "PTSd Rewards Remixer"
-GameVersion = "3_93"
+GameVersion = "3_98"
 Description = "Rebalances rewards for many actions & activities, such as defeating starships or sentinels or certain fauna, pirate bounties, space station missions, frigate expeditions, certain planetary Points of Interest, etc. Makes Archive Vaults always give rare artifacts."
 
 --Changes how many Nanites you receive for choosing "Extract Nanites" at a Manufacturing Facility so you now get 150-200 Nanites
@@ -675,6 +675,11 @@ CropYieldReduction =
 	{"PLANT_POOP",		0.5}					--25		Faecium
 }
 
+--Multiplier to appy to the carbon reward from Standing Planters
+StandingPlanterMult = 0.5									--Vanilla gives 40 - 80 carbon
+--New reward for harvesting plants on the walls of certain new freighter rooms.  "INTERIORPLANTS" gives 5 - 20 carbon
+FreighterCarbonWallReward = "INTERIORPLANTS"				--"PLANTER_CARBON" in vanilla copies reward of standing planters above (40 - 80 carbon)
+
 --WIP attempt: Swaps the reward for "DE_SEAHORROR", which I am guessing is defeating an Abyssal Horror (anglerfish), which currently seems to drop no loot?
 	--Tested and this doesn't seem to be the case...
 SeaHorrorReward = "SeaHorror"			--"SeaHorror"
@@ -1262,7 +1267,7 @@ ESCORTLOOTRewards =
         </Property>
       </Property>
     </Property>]]
-
+	
 PlaqueChanges =
 {
 	{"TEACHWORD_EXP", "Explorers"},
@@ -1706,7 +1711,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["ADD"] = CropNanites(StormCrystalNanitesChance, StormCrystalNanitesAmount),
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 			},
-			{--StormCrystalNanitesChance
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "PLANTER_CARBON"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "*",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	StandingPlanterMult},
+					{"AmountMax",	StandingPlanterMult},
+				}
+			},
+			{
 				["SPECIAL_KEY_WORDS"] = {"Id","PROC_PROD_CHEST"},
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = ExtraChestArtifact,
@@ -2078,6 +2093,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"ID", IndiumReplacement}
 				}
 			}
+		}
+	},
+	{
+		["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\PLANTROOM\PARTS\WALLBB0\ENTITIES\INTERACTION.ENTITY.MBIN"},
+		["EXML_CHANGE_TABLE"] 	= 
+		{
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml"},
+				--["SPECIAL_KEY_WORDS"] = {"Id", "PLANTER_CARBON"},
+				["MATH_OPERATION"] 		= "", 
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Id",	FreighterCarbonWallReward}		--PLANTER_CARBON
+				}
+			},
 		}
 	},
 	

@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "3_93"
+GameVersion = "3_98"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part applies multipliers to the actual value (buying and selling price) for certain substances or products
@@ -184,8 +184,34 @@ EGenChromMetalNeeded			=	225				--75
 BioDomeMagFerriteNeeded			=	75				--25
 BioDomeGlassNeeded				=	16				--5
 
---New recipe for installing Nutrition Room in freigther
-CookRoomProcessors = 1						--Nutrient Processor		(replaces 15 Oxygen in vanilla)
+--New recipe for installing Nutrition Room in freighter
+CookRoomProcessors = 1								--how many Nutrient Processors required		(replaces 15 Oxygen in vanilla)
+CookRoomSilver = 20									--60 Silver
+CookRoomPureFerrite = 20							--40 Pure Ferrite
+--New recipe for installing Refiner Room in freighter
+RefinerRoomMicrochips = 8							--how many Microprocessors required		(replaces 2 Di-Hydrogen Jelly in vanilla)
+RefinerRoomSilver = 50								--60 Silver
+RefinerRoomGold = 30								--45 Gold
+--New recipe for installing Cultivation Chamber in freighter
+CultivationChamberSilver = 60						--50 Silver
+CultivationChamberPlates = 6						--how many Metal Plates required	(replaces 25 Oxygen in vanilla)
+CultivationChamberFaecium = 80						--10 Faecium
+--New recipe for installing Double Cultivation Chamber in freighter
+DoubleCultivationChamberSilver = 160				--60 Silver
+DoubleCultivationChamberPlates = 16					--how many Metal Plates required	(replaces 35 Oxygen in vanilla)
+DoubleCultivationChamberFaecium = 220				--25 Faecium
+--New recipe for installing Stellar Extractor in freighter
+StellarExtractorSilver = 60							--60 Silver
+StellarExtractorGold = 45							--45 Gold
+StellarExtractorGravBall = 1						--how many Gravitino Balls required	(replaces 40 Mag. Ferrite in vanilla)
+--New recipe for installing Scanner Room in freighter
+ScannerRoomSilver = 60								--60 Silver
+ScannerRoomEmeril = 30								--how much Emeril is required		(replaces 30 Gold in vanilla)
+ScannerRoomQuantProc = 1							--how many Quantum Processors required	(replaces 1 Ion Battery in vanilla)
+--New recipe for installing Orbital Exocraft Materializer in freighter
+OrbitalExoGold = 150								--150 Gold
+OrbitalExoEmeril = 50								--how much Emeril is required		(replaces 50 Ionized Cobalt in vanilla)
+OrbitalExoPortReact = 1								--how many Portable Reactors required	(replaces 3 Warp Cell in vanilla)
 
 --This part adjusts the buying price only (not the selling price) for certain substances/consumables/components.
 
@@ -672,6 +698,224 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"InventoryType", "Product"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_COOK",		"ID", "ASTEROID1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CookRoomSilver}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_COOK",		"ID", "LAND2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CookRoomPureFerrite}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_REFINE",		"ID", "JELLY"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", RefinerRoomMicrochips},
+								{"ID", "MICROCHIP"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_REFINE",		"ID", "ASTEROID1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", RefinerRoomSilver}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_REFINE",		"ID", "ASTEROID2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", RefinerRoomGold}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT1",		"ID", "ASTEROID1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CultivationChamberSilver}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT1",		"ID", "OXYGEN"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CultivationChamberPlates},
+								{"ID", "CASING"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT1",		"ID", "CASING"},
+							["VALUE_MATCH"] 	= "Substance",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"InventoryType", "Product"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT1",		"ID", "PLANT_POOP"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", CultivationChamberFaecium}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT0",		"ID", "ASTEROID1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", DoubleCultivationChamberSilver}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT0",		"ID", "OXYGEN"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", DoubleCultivationChamberPlates},
+								{"ID", "CASING"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT0",		"ID", "CASING"},
+							["VALUE_MATCH"] 	= "Substance",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"InventoryType", "Product"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_PLANT0",		"ID", "PLANT_POOP"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", DoubleCultivationChamberFaecium}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_EXTR",		"ID", "ASTEROID1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", StellarExtractorSilver}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_EXTR",		"ID", "ASTEROID2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", StellarExtractorGold}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_EXTR",		"ID", "LAND3"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", StellarExtractorGravBall},
+								{"ID", "GRAVBALL"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_EXTR",		"ID", "GRAVBALL"},
+							["VALUE_MATCH"] 	= "Substance",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"InventoryType", "Product"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_SCAN",		"ID", "ASTEROID1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", ScannerRoomSilver}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_SCAN",		"ID", "ASTEROID2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", ScannerRoomEmeril},
+								{"ID", "GREEN2"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_SCAN",		"ID", "POWERCELL"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", ScannerRoomQuantProc},
+								{"ID", "MEGAPROD2"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_VEHICL",		"ID", "ASTEROID2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", OrbitalExoGold}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_VEHICL",		"ID", "CAVE2"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", OrbitalExoEmeril},
+								{"ID", "GREEN2"}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "FRE_ROOM_VEHICL",		"ID", "HYPERFUEL1"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", OrbitalExoPortReact},
+								{"ID", "MEGAPROD1"}
 							}
 						},
 					}
