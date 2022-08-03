@@ -1,14 +1,14 @@
 -- Ship Hunting Assistant // Will NOT affect default seeds!
 -- Author: DarkScythe
--- Date Created: July 03, 2022
--- Last Updated: July 27, 2022
+-- Date Created: Jul 03, 2022
+-- Last Updated: Aug 02, 2022
 --------------------------------------------------------------------------------
 modName		= "FastLocateAssistantforShipHunting"
 modAuthor	= "DarkScythe"
 modDesc		= "Speeds up ship hunting by filtering to specific types and increases spawn rates WITHOUT affecting default seeds so you get the same ships as vanilla players in every system. Helpful for players who want to share coordinates of interesting finds with others."
 modVer		= "1.0."
 scriptVer	= "a"
-gameVer		= "3.97"
+gameVer		= "3.98"
 -- Credits --
 -- Thanks to Lenni and Apex Fatality for the idea of isolating ship models.
 -- Thanks to Gumsk for the idea of speeding up NPC spawns.
@@ -227,7 +227,7 @@ shipBehaviorAdjustments = {
 -- This is still just a Lua table at its core, so you can add to it later
 -- See the if() blocks near the bottom for how to reference it
 NMS_MOD_DEFINITION_CONTAINER	= {
-	["MOD_FILENAME"]			= "__" .. modName .. "_v" .. modVer .. gameVer .. scriptVer .. ".pak",
+	["MOD_FILENAME"]			= table.concat({"__", modName, "_v", modVer, gameVer, scriptVer, ".pak"}),
 	["MOD_DESCRIPTION"]			= modDesc,
 	["MOD_AUTHOR"]				= modAuthor,
 	["LUA_AUTHOR"]				= modAuthor,
