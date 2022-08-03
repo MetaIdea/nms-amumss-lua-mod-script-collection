@@ -22,9 +22,9 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]             = "_Remove_Tech_Overload_Ultimate_2_1.pak", 
+	["MOD_FILENAME"]             = "_Remove_Tech_Overload_Ultimate_2_1_1.pak", 
 	["MOD_AUTHOR"]               = "chronicallybored",
-	["NMS_VERSION"]              = "3.97",
+	["NMS_VERSION"]              = "3.98",
 	["MOD_DESCRIPTION"]          = "Removes technology overload , expands tech and inventory slots for pretty much everything and increases inventory stack sizes",
 	["MODIFICATIONS"]            = 
 
