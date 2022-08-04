@@ -53,6 +53,7 @@ TechUpgradeChanges =
       {"Weapon_Scan_Radius",             1.10, 1.10, "NoWeighting"}, -- 1.05, 1.10, MaxIsUncommon
       {"Weapon_Scan_Discovery_Creature",   20,   20, "NoWeighting"}, --   10,   20, MaxIsUncommon
       {"Weapon_Scan_Discovery_Flora",      20,   20, "NoWeighting"}, --   10,   20, MaxIsUncommon
+      {"Weapon_Scan_Discovery_Mineral",    20,   20, "NoWeighting"}, --   10,   20, MaxIsUncommon
     }
   },
   { -- Scanner B Class
@@ -61,6 +62,7 @@ TechUpgradeChanges =
       {"Weapon_Scan_Radius",             1.20, 1.20, "NoWeighting"}, -- 1.10, 1.20, MaxIsUncommon
       {"Weapon_Scan_Discovery_Creature",   50,   50, "NoWeighting"}, --   25,   50, MaxIsUncommon
       {"Weapon_Scan_Discovery_Flora",      50,   50, "NoWeighting"}, --   10,   20, MaxIsUncommon
+      {"Weapon_Scan_Discovery_Mineral",    50,   50, "NoWeighting"}, --   25,   50, MaxIsUncommon
     }
   },
   { -- Scanner A Class
@@ -69,6 +71,7 @@ TechUpgradeChanges =
       {"Weapon_Scan_Radius",             1.30, 1.30, "NoWeighting"}, -- 1.20, 1.30, MaxIsUncommon
       {"Weapon_Scan_Discovery_Creature",  100,  100, "NoWeighting"}, --   50,  100, MaxIsSuperRare
       {"Weapon_Scan_Discovery_Flora",     100,  100, "NoWeighting"}, --   50,  100, MaxIsSuperRare
+      {"Weapon_Scan_Discovery_Mineral",   100,  100, "NoWeighting"}, --   50,  100, MaxIsSuperRare
     }
   },
   { -- Scanner S Class
@@ -77,6 +80,7 @@ TechUpgradeChanges =
       {"Weapon_Scan_Radius",             1.40, 1.40, "NoWeighting"}, -- 1.30, 1.40, MaxIsUncommon
       {"Weapon_Scan_Discovery_Creature",  100,  100, "NoWeighting"}, --   65,  100, MaxIsUncommon
       {"Weapon_Scan_Discovery_Flora",     100,  100, "NoWeighting"}, --   65,  100, MaxIsUncommon
+      {"Weapon_Scan_Discovery_Mineral",   100,  100, "NoWeighting"}, --   65,  100, MaxIsUncommon
     }
   },
   { -- Scanner X Class
@@ -85,6 +89,7 @@ TechUpgradeChanges =
       {"Weapon_Scan_Radius",             1.50, 1.50, "NoWeighting"}, -- 1.05, 1.50, MaxIsUncommon
       {"Weapon_Scan_Discovery_Creature",  110,  110, "NoWeighting"}, --   10,  110, MaxIsUncommon
       {"Weapon_Scan_Discovery_Flora",     110,  110, "NoWeighting"}, --   10,  110, MaxIsUncommon
+      {"Weapon_Scan_Discovery_Mineral",   110,  110, "NoWeighting"}, --   10,  110, MaxIsUncommon
     }
   },
   { -- Boltcaster C Class
@@ -752,7 +757,7 @@ TechUpgradeChanges =
   { -- Ship Hyperdrive S Class
     {"UP_HYP4", 2, 2, "NoWeighting"}, -- 2, 2, NoWeighting
     {
-      {"Ship_Hyperdrive_JumpDistance",  200,  200, "NoWeighting"}, --  200,  250, MaxIsUncommon
+      {"Ship_Hyperdrive_JumpDistance",  250,  250, "NoWeighting"}, --  200,  250, MaxIsUncommon
       {"Ship_Hyperdrive_JumpsPerCell",    1,    1, "NoWeighting"}, --    1,    1, NoWeighting
     }
   },
@@ -1378,6 +1383,7 @@ TechUpgradeChanges =
     {
       {"Ship_Weapons_Lasers_HeatTime", 1.35, 1.35, "NoWeighting"}, -- 1.10, 1.35, MaxIsUncommon
       {"Ship_Weapons_Lasers_Damage",     40,   40, "NoWeighting"}, --   30,   40, MaxIsUncommon
+      {"Ship_Weapons_ShieldLeech",     0.1,   0.1, "NoWeighting"}, -- 0.05,  0.1, MaxIsUncommon
     }
   },
   { -- Ship Alien Grafted Eyes B Class
@@ -1385,6 +1391,7 @@ TechUpgradeChanges =
     {
       {"Ship_Weapons_Lasers_HeatTime", 1.55, 1.55, "NoWeighting"}, -- 1.35, 1.55, MaxIsUncommon
       {"Ship_Weapons_Lasers_Damage",     50,   50, "NoWeighting"}, --   40,   50, MaxIsUncommon
+      {"Ship_Weapons_ShieldLeech",     0.15, 0.15, "NoWeighting"}, --  0.1, 0.15, MaxIsUncommon
     }
   },
   { -- Ship Alien Grafted Eyes A Class
@@ -1392,6 +1399,7 @@ TechUpgradeChanges =
     {
       {"Ship_Weapons_Lasers_HeatTime", 1.75, 1.75, "NoWeighting"}, -- 1.55, 1.75, MaxIsUncommon
       {"Ship_Weapons_Lasers_Damage",     60,   60, "NoWeighting"}, --   50,   60, MaxIsUncommon
+      {"Ship_Weapons_ShieldLeech",     0.2,   0.2, "NoWeighting"}, -- 0.15,  0.2, MaxIsUncommon
     }
   },
   { -- Ship Alien Grafted Eyes S Class
@@ -1399,6 +1407,7 @@ TechUpgradeChanges =
     {
       {"Ship_Weapons_Lasers_HeatTime", 1.95, 1.95, "NoWeighting"}, -- 1.75, 1.95, MaxIsUncommon
       {"Ship_Weapons_Lasers_Damage",     70,   70, "NoWeighting"}, --   60,   70, MaxIsUncommon
+      {"Ship_Weapons_ShieldLeech",     0.3,   0.3, "NoWeighting"}, --  0.2,  0.3, MaxIsUncommon
     }
   },
   { -- Freighter Hyperdrive C Class
@@ -1577,9 +1586,9 @@ TechUpgradeChanges =
 FileName    = "Max Technology Stats.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
+ModMaintenance = "Babscoole, DarkScythe"
 Description = ""
-NMS_Version = "3.97"
+NMS_Version = "3.98"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
