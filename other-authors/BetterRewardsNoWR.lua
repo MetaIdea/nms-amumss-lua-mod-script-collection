@@ -1,6 +1,3 @@
--- Learning more words was created by ChoseSauvage ( https://www.nexusmods.com/nomanssky/mods/733 )
--- and converted to lua script by Mjjstral (available in AMUMSS script collection)
-
 -- Please be aware if you set any of the values below to 0 or NOT integer, you
 -- might break the math used and the .lua won't produce a useable .pak file!
 
@@ -18,72 +15,24 @@ NADA_MILESTONE_REWARD	= 150	-- Default value is 50 | Sets the reward value (in n
 
 QS_MULTI				= 5		-- Default value is 1 | Multiplys the amount of quicksilver you get
 
-RESOURCES_MULTI			= 1		-- Default value is 1 | Multiplys the amount of resources gathered, as well as containers, depots, guild rewards and ships that have resources
-
-WORDS_TO_LEARN			= 1		-- Default value is 1 | Sets the amount of words you learn from non npc sources
-
-SALVAGED_DATA			= 1		-- Default value is 1 | Multiplys the amount of salvaged data you mine up and get in Missions
-
 MISSION_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units you get from Mission Board (Space Station) Missions
 MISSION_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Mission Board (Space Station) Missions
-MISSION_PROD_MULTI		= 1		-- Default value is 1 | Multiplys the amount of products you get from Mission Board (Space Station) Missions
 
 NEXUS_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units you get from Nexus Missions
 NEXUS_NANITES_MULTI		= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Nexus Missions
-NEXUS_PROD_MULTI		= 1		-- Default value is 1 | Multiplys the amount of products you get from Nexus Missions
 
--- When learning words, you can choose to have a PERCENTAGE(%) chance at learning an Atlas word along with them (default value is 0%)
--- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 41): <Property name="PercentageChance" value="0" />
--- Edit the value in the double bracket -> [[ ]] <- section below!! ----> <Property name="PercentageChance" value="0" /> <---- edit this "0", the " " must stay!!
-
-ATLAS_WORD = [[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="0" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="Atlas" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-]]
+BOUNTY_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units you get from Bounty Board Missions (Pirate or outlaw run Space Stations)
+BOUNTY_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Bounty Board Missions (Pirate or outlaw run Space Stations)
 
 ------------------------------------------------------------------------------
 -------------------- DO NOT EDIT ANYTHING PAST THIS POINT --------------------
 ------------------------------------------------------------------------------
 
-MISC_WORD =
-[[
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100" />
-            <Property name="Reward" value="GcRewardTeachWord.xml">
-              <Property name="Race" value="GcAlienRace.xml">
-                <Property name="AlienRace" value="None" />
-              </Property>
-              <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
-              </Property>
-              <Property name="AmountMin" value="1" />
-              <Property name="AmountMax" value="1" />
-            </Property>
-            <Property name="LabelID" value="" />
-          </Property>
-]]
-
-MISC_WORD_LEARN = string.rep(MISC_WORD, WORDS_TO_LEARN)
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "BetterRewards.pak",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "3.84",
+["NMS_VERSION"]		= "3.98",
 ["MODIFICATIONS"] 	=
 	{
 		{
@@ -340,99 +289,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AmountMax",	NANITES_MULTI}
 							}
 						},
-
------------------------------------------------------------------------------------------------------
---------------------------------------------- RESOURCES ---------------------------------------------
------------------------------------------------------------------------------------------------------
-
+						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"DefaultSubstanceType", "None"},
-							["SECTION_UP"]			= 2,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	RESOURCES_MULTI},
-								{"AmountMax",	RESOURCES_MULTI}
-							}
-						},
-
------------------------------------------------------------------------------------------------------
---------------------------------------------- MISSIONS ----------------------------------------------
------------------------------------------------------------------------------------------------------
-
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_LOW", "DefaultProductType", "None"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "R_PIRATEBOARD_B", "Currency", "Units"},
 							["SECTION_UP"]			= 1,
-							["MATH_OPERATION"] 		= "*",
+							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"AmountMin",	MISSION_PROD_MULTI},
-								{"AmountMax",	MISSION_PROD_MULTI}
+								{"AmountMin",	UNITS_MULTI},
+								{"AmountMax",	UNITS_MULTI}
 							}
 						},
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_MED", "DefaultProductType", "None"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "R_PIRATEBOARD_B", "Currency", "Nanites"},
 							["SECTION_UP"]			= 1,
-							["MATH_OPERATION"] 		= "*",
+							["MATH_OPERATION"] 		= "/",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"AmountMin",	MISSION_PROD_MULTI},
-								{"AmountMax",	MISSION_PROD_MULTI}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_HIGH", "DefaultProductType", "None"},
-							["SECTION_UP"]			= 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	MISSION_PROD_MULTI},
-								{"AmountMax",	MISSION_PROD_MULTI}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_MEGA", "DefaultProductType", "None"},
-							["SECTION_UP"]			= 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	MISSION_PROD_MULTI},
-								{"AmountMax",	MISSION_PROD_MULTI}
+								{"AmountMin",	NANITES_MULTI},
+								{"AmountMax",	NANITES_MULTI}
 							}
 						},
 
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_NEXUS_MED", "DefaultProductType", "None"},
-							["SECTION_UP"]			= 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	NEXUS_PROD_MULTI},
-								{"AmountMax",	NEXUS_PROD_MULTI}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_NEXUS_MEGA", "DefaultProductType", "None"},
-							["SECTION_UP"]			= 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	NEXUS_PROD_MULTI},
-								{"AmountMax",	NEXUS_PROD_MULTI}
-							}
-						},
-						
 -----------------------------------------------------------------------------------------------------
 ---------------------------------------- CURRENCY: MISSIONS -----------------------------------------
 -----------------------------------------------------------------------------------------------------
@@ -581,234 +462,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						
------------------------------------------------------------------------------------------------------
---------------------------------------- MISSIONS CORRECTIONS ----------------------------------------
------------------------------------------------------------------------------------------------------
-						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_LOW", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "/",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	MISSION_PROD_MULTI},
-								{"AmountMax",	MISSION_PROD_MULTI}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_MED", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "/",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	MISSION_PROD_MULTI},
-								{"AmountMax",	MISSION_PROD_MULTI}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_HIGH", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "/",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	MISSION_PROD_MULTI},
-								{"AmountMax",	MISSION_PROD_MULTI}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_MEGA", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "/",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	MISSION_PROD_MULTI},
-								{"AmountMax",	MISSION_PROD_MULTI}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_NEXUS_MED", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "/",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	NEXUS_PROD_MULTI},
-								{"AmountMax",	NEXUS_PROD_MULTI}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_NEXUS_MEGA", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "/",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	NEXUS_PROD_MULTI},
-								{"AmountMax",	NEXUS_PROD_MULTI}
-							}
-						},
-
------------------------------------------------------------------------------------------------------
-------------------------------------------- SALVAGED DATA -------------------------------------------
------------------------------------------------------------------------------------------------------
-
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "DE_PET_ROCK", "ID", "BP_SALVAGE"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "R_PIRATEBOARD_B", "Currency", "Units"},
+							["SECTION_UP"]			= 1,
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
+								{"AmountMin",	BOUNTY_UNITS_MULTI},
+								{"AmountMax",	BOUNTY_UNITS_MULTI}
 							}
 						},
 						
 						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_TGUILD_GIFT2", "ID", "BP_SALVAGE"},
+							["SPECIAL_KEY_WORDS"]	= {"Id", "R_PIRATEBOARD_B", "Currency", "Nanites"},
+							["SECTION_UP"]			= 1,
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
+								{"AmountMin",	BOUNTY_NANITES_MULTI},
+								{"AmountMax",	BOUNTY_NANITES_MULTI}
 							}
 						},
 						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_TGUILD_GIFT3", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_TGUILD_GIFT4", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "BP_SALVAGE_ONLY", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "BP_SALVAGE", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_COMM_UG_HARD", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_LOW", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_MED", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_HIGH", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_MB_MEGA", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_NEXUS_MED", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "R_NEXUS_MEGA", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "RS_BASE_TOKENS", "ID", "BP_SALVAGE"},
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"AmountMin",	SALVAGED_DATA},
-								{"AmountMax",	SALVAGED_DATA}
-							}
-						},
-
 -----------------------------------------------------------------------------------------------------
 ------------------------------------------------ MISC -----------------------------------------------
 -----------------------------------------------------------------------------------------------------
@@ -821,132 +498,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"AmountPerStat",	NADA_MILESTONE_REWARD}
 							}
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "WORD", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= ATLAS_WORD
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Id", "WORD", "PercentageChance", "IGNORE", "AlienRace", "None"},
-							["SECTION_UP"] 			= 2,
-							["REMOVE"] 				= "SECTION"
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "WORD", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= MISC_WORD_LEARN
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "TRA_WORD", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= ATLAS_WORD
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Id", "TRA_WORD", "PercentageChance", "IGNORE", "AlienRace", "Traders"},
-							["SECTION_UP"] 			= 2,
-							["REMOVE"] 				= "SECTION"
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "TRA_WORD", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= MISC_WORD_LEARN
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "EXP_WORD", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= ATLAS_WORD
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Id", "EXP_WORD", "PercentageChance", "IGNORE", "AlienRace", "Explorers"},
-							["SECTION_UP"] 			= 2,
-							["REMOVE"] 				= "SECTION"
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "EXP_WORD", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= MISC_WORD_LEARN
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "WAR_WORD", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= ATLAS_WORD
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Id", "WAR_WORD", "PercentageChance", "IGNORE", "AlienRace", "Warriors"},
-							["SECTION_UP"] 			= 2,
-							["REMOVE"] 				= "SECTION"
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "WAR_WORD", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= MISC_WORD_LEARN
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "TEACHWORD_EXP", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= ATLAS_WORD
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Id", "TEACHWORD_EXP", "PercentageChance", "IGNORE", "AlienRace", "Explorers"},
-							["SECTION_UP"] 			= 2,
-							["REMOVE"] 				= "SECTION"
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "TEACHWORD_EXP", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= MISC_WORD_LEARN
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "TEACHWORD_TRA", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= ATLAS_WORD
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Id", "TEACHWORD_TRA", "PercentageChance", "IGNORE", "AlienRace", "Traders"},
-							["SECTION_UP"] 			= 2,
-							["REMOVE"] 				= "SECTION"
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "TEACHWORD_TRA", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= MISC_WORD_LEARN
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "TEACHWORD_WAR", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= ATLAS_WORD
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"] 	= {"Id", "TEACHWORD_WAR", "PercentageChance", "IGNORE", "AlienRace", "Warriors"},
-							["SECTION_UP"] 			= 2,
-							["REMOVE"] 				= "SECTION"
-						},
-						
-						{
-							["SPECIAL_KEY_WORDS"]	= {"Id", "TEACHWORD_WAR", "PercentageChance", "IGNORE"},
-							["REPLACE_TYPE"] 		= "ADDAFTERSECTION",
-								["ADD"] 			= MISC_WORD_LEARN
 						}
 					}
 				}
