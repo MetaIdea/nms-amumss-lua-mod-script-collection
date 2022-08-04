@@ -37,7 +37,7 @@ BOUNTY_UNITS_MULTI		= 5		-- Default value is 1 | Multiplys the amount of units y
 BOUNTY_NANITES_MULTI	= 5		-- Default value is 1 | Multiplys the amount of nanites you get from Bounty Board Missions (Pirate or outlaw run Space Stations)
 
 -- When learning words, you can choose to have a PERCENTAGE(%) chance at learning an Atlas word along with them (default value is 15%)
--- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 42): <Property name="PercentageChance" value="15" />
+-- If you wish to learn Atlas words change the value to a number ranging from 1-100 in the following line (line 45): <Property name="PercentageChance" value="15" />
 -- Edit the value in the double bracket -> [[ ]] <- section below!! ----> <Property name="PercentageChance" value="15" /> <---- edit this "15", the " " must stay!!
 
 ATLAS_WORD = [[
