@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 	["MOD_FILENAME"] 	= "BetterFrigateRewards.pak",
 	["MOD_AUTHOR"]		= "MrTrack",
-	["NMS_VERSION"]		= "3.84",
+	["NMS_VERSION"]		= "3.98",
 	["MODIFICATIONS"] 	=
 	{
 		{
