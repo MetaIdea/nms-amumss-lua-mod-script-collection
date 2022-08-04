@@ -4,7 +4,6 @@ PRODUCT_MULTI	= 2			-- Default value is 1 | Multiplys the amount of products you
 RESOURCES_MULTI	= 3			-- Default value is 1 | Multiplys the amount of resources you get
 
 -- All the above multipliers are modifying the frigate (freighter) mission rewards.
--- If you are looking for the main mod files' .lua, download the other one on the mod page. (Better Rewards LUA)
 
 -----------------------------------------------------------------------------------------------------------
 ---------------------------------- DO NOT EDIT ANYTHING PAST THIS POINT -----------------------------------
