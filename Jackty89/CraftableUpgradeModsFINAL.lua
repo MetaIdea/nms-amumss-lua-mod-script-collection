@@ -612,9 +612,9 @@ function ClassStringsAndData(UpgradeNumber)
 end
 
 function GetStatLevelData(DeployBase, UpgradeNumber)
-    local StatLevelData = ""
+    local StatLevelData = {}
 
-    local StatTypes = ""
+    local StatTypes = {}
     local NoStatsMin = 0
     local NoStatsMax = 0
 
