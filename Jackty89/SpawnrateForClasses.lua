@@ -17,27 +17,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= InventoryTablePath,
 					["EXML_CHANGE_TABLE"] 	=
 					{
-                        --General Ship Spawn changes for sytsems - 1 Star still has 0% chance
-                        {
-                            --2 Star systems now have a 2% chance of getting S ships
+						--General Ship Spawn changes for sytsems - 1 Star still has 0% chance
+						{
+							--2 Star systems now have a 2% chance of getting S ships
 							["PRECEDING_KEY_WORDS"] = {"Average"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"C",	"40"},
 								{"B",	"35"},
-                                {"A",	"23"},
-                                {"S",	"2"},
+								{"A",	"23"},
+								{"S",	"2"},
 							}
 						},
-                        {
-                            --3 Star System now have a 5% chance of getting S ships
+						{
+							--3 Star System now have a 5% chance of getting S ships
 							["PRECEDING_KEY_WORDS"] = {"Wealthy"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"C",	"30"},
 								{"B",	"37"},
-                                {"A",	"28"},
-                                {"S",	"5"},
+								{"A",	"28"},
+								{"S",	"5"},
 							}
 						}
 					}
