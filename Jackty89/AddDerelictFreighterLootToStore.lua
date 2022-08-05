@@ -2,7 +2,13 @@ ModName = "AddDerelictFreighterLootToStore"
 Author = "Jackty89"
 
 DefaultRealityPath = "METADATA\\REALITY\\DEFAULTREALITY.MBIN"
+UnlockableItemTreesPath = "METADATA\\REALITY\\TABLES\\UNLOCKABLEITEMTREES.MBIN"
 
+MainTree = "UI_PURCHASABLE_BASEPARTS_TREE"
+Root = "SLIME_MED"
+TechSub = "UI_DECORATION_TREE"
+CostType = "SALVAGE"
+SubList = {}
 ListOfIds =
 {
     "MEDTUBE",
@@ -19,6 +25,29 @@ ListOfIds =
     "ABAND_BENCH",
     "PALLET",
     "ABAND_BARREL"
+}
+
+ListOfIdsSplitForTree =
+{
+    {
+        {"MEDTUBE", "1"},
+        {"HEATER", "1"},
+        {"FOORLIGHT", "1"},
+        {"PLANTTUBE", "1"},
+
+        {"ABAND_SHELF", "2"},
+        {"ABAND_CRATE_M", "2"},
+        {"ABAND_CRATE_L", "2"},
+        {"ABAND_CRATE_XL", "2"},
+
+        {"ABAND_CASE", "3"},
+        {"FOOTLOCKER", "3"},
+        {"ABAND_BENCH", "3"},
+        {"PALLET", "3"},
+
+        {"LOCKER2", "4"},
+        {"ABAND_BARREL", "4"}
+    }
 }
 
 function CreateMapShopEntry(NewId)
@@ -55,14 +84,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         }
                     }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = UnlockableItemTreesPath,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
                 }
             }
         }
     }
 }
 
-local ChangesToDefaultReality =
-    NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToDefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
 for i = 1, #ListOfIds do
     StarMapShopEntry = StarMapShopEntry .. CreateMapShopEntry(ListOfIds[i])
@@ -78,4 +112,106 @@ for i = 1, #ListOfIds do
             ["ADD"] = StarMapShopEntry
         }
     end
+end
+
+-- create itemtree
+function CreateModTabpageTree(RootTech, Children, CostTypeID)
+    return
+    [[
+        <Property value="GcUnlockableItemTree.xml">
+            <Property name="Title" value="]]..TechSub..[[" />
+            <Property name="CostTypeID" value="]]..CostTypeID..[[" />
+            <Property name="Root" value="GcUnlockableItemTreeNode.xml">
+                <Property name="Unlockable" value="]]..RootTech..[[" />
+                <Property name="Children">
+                ]]..Children..[[
+                </Property>
+            </Property>
+        </Property>
+    ]]
+end
+
+function CreateTabPageChildren(ItemName, PrevChildMod)
+    local result = ""
+    if PrevChildMod == "" then
+        result =
+        [[
+            <Property value="GcUnlockableItemTreeNode.xml">
+                <Property name="Unlockable" value="]]..ItemName..[[" />
+                <Property name="Children" />
+            </Property>
+        ]]
+    else
+        result =
+        [[
+            <Property value="GcUnlockableItemTreeNode.xml">
+                <Property name="Unlockable" value="]]..ItemName..[[" />
+                <Property name="Children">
+                ]]..PrevChildMod..[[
+                </Property>
+            </Property>
+        ]]
+    end
+
+    return result
+end
+
+function CreateSubList(ModlistNumberOld,ModlistNumber, ModId)
+    if ModlistNumberOld == ModlistNumber then
+        SubList[#SubList+1] = ModId
+    else
+        SubList = {}
+        SubList[#SubList+1] = ModId
+    end
+end
+
+
+local ChangesToUnlockableItemTrees = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+
+for i = 1, #ListOfIdsSplitForTree do
+    local TechTree = MainTree
+    local RootTech = Root
+    local CostType = CostType
+
+    local Items = ListOfIdsSplitForTree[i]
+    local ItemSubsLists = {}
+
+    local Tree = ""
+    local Children = {}
+
+    local OldItemListNumber = ""
+
+    for j = 1, #Items do
+        local Item = Items[j]
+        local ItemID = Item[1]
+        local ItemlistNumber = Item[2]
+
+        CreateSubList(OldItemListNumber, ItemlistNumber, ItemID)
+
+        if OldItemListNumber~=ItemlistNumber then
+            ItemSubsLists[#ItemSubsLists+1] = SubList
+        else
+            ItemSubsLists[#ItemSubsLists] = SubList
+        end
+        OldItemListNumber = ItemlistNumber
+    end
+
+    for k = 1, #ItemSubsLists do
+        local ItemSubList = ItemSubsLists[k]
+        local ModTree = ""
+        for l = #ItemSubList, 1, -1  do
+            ModTree = CreateTabPageChildren(ItemSubList[l], ModTree)
+        end
+        table.insert(Children, ModTree)
+    end
+
+    Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
+
+    local UnlockableItemTree =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechSub},
+        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+        ["ADD"]	= Tree
+    }
+    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
 end

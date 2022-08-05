@@ -20,6 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Freighter","MaxInventoryCapacity"},
+                            ["REPLACE_TYPE"] 		= "ALL",
+                            ["VALUE_MATCH_TYPE"] 	= "NUMBER",
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"24","48"},
@@ -29,10 +31,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Freighter","MaxTechInventoryCapacity"},
+                            ["REPLACE_TYPE"] 		= "ALL",
+                            ["VALUE_MATCH_TYPE"] 	= "NUMBER",
                             ["VALUE_CHANGE_TABLE"] 	=
                             {
                                 {"14","21"},
-                                {"7","21"},
                                 {"7","21"}
                             }
                         }
