@@ -1,8 +1,8 @@
 
-Author			= "SpeedyS©1978 @_28_07_2022"
+Author			= "SpeedyS©1978 @_04_08_2022"
 AuthorII		= "© by Onykron, SpeedyS©1978"
 ModName			= "TechSlots"
-GameVersion		= "ENDURANCE 3.97"
+GameVersion		= "ENDURANCE 3.98"
 BaseDescription	= "Increase all Main-, Tech- & Cargo Slots to maximum for all type of ships, freighter, weapon and add max slots for player tech tab"
 
 AllMinSize			= 48 	--min value of ship, freighter, etc... size 

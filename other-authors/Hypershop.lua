@@ -12,10 +12,10 @@
 -- greetings SpeedyS©1978 ----------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 
-Author			= "SpeedyS©1978 @_28_07_2022"
+Author			= "SpeedyS©1978 @_04_08_2022"
 AuthorII		= "© by Onykron; edit © by Spencerbug; edit © by SpeedyS©1978"
 ModName			= "Hypershop"
-GameVersion		= "ENDURANCE 3.97"
+GameVersion		= "ENDURANCE 3.98"
 BaseDescription	= "Buy Nanites & all Techs, Materials, Substances, Items and food-stuff with Units, QSilver, Nanites; max count to buy is 99999"
 
 NANITESADD =
