@@ -1,14 +1,30 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Black Carbon 2.2.pak", 
-["MOD_AUTHOR"]				= "lo2k (.lua file by Lowkie)",
-["NMS_VERSION"]				= "3.52",
+["MOD_FILENAME"] 			= "Black Carbon 2.4.pak", 
+["MOD_AUTHOR"]				= "Lo2k",
+["LUA_AUTHOR"]				= "Lowkie (+ Lo2k)",
+["NMS_VERSION"]				= "3.98",
 ["MOD_DESCRIPTION"]			= "This mod makes carbon black",
 ["MODIFICATIONS"] 			= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
-			{                 
+			{    
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\DEFAULTREALITY.MBIN"},
+					["EXML_CHANGE_TABLE"] = 
+                    {
+						{
+							["PRECEDING_KEY_WORDS"] = {"SubstanceCategoryColours", "Fuel"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"R",	"0.093"},
+								{"G",	"0.093"},  -- B is already 0.093
+							}	
+						},
+                    },
+                },			
                 {
                     ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\DEBRIS\RESOURCEDEBRIS.SCENE.MBIN"},
 					["EXML_CHANGE_TABLE"] = 
