@@ -1,8 +1,8 @@
 
-Author			= "SpeedyS©1978 @_28_07_2022"
+Author			= "SpeedyS©1978 @_04_08_2022"
 AuthorII		= "© by Onykron"
 ModName			= "Hyper-Hyperdrive"
-GameVersion		= "ENDURANCE 3.97"
+GameVersion		= "ENDURANCE 3.98"
 BaseDescription	= "Travel straight the galaxy from the edge to the center with one Hyperdrive."
 
 NMS_MOD_DEFINITION_CONTAINER = 
