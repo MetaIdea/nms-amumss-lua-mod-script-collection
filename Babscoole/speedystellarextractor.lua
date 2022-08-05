@@ -4,9 +4,9 @@ EXTRACTOR_STORAGE = 6000 -- default = 350
 
 -- change variables in quotes to change item spawned. get IDs from here: https://docs.google.com/spreadsheets/d/1J8WdrubKgo8A9hPY-hbQLq4eVrb3n3lZAgiI2J7ncAU/edit#gid=66931870
 PRODUCT_YELLOWSTAR = "ASTEROID1" -- Silver/ Default = STELLAR2 = Chromatic Metal
-PRODUCT_REDSTAR = "ASTEROID2" -- Gold/ Default = GAS1 = Nitrogen?
-PRODUCT_GREENSTAR = "ASTEROID3" -- Platinum/ Default = GAS2 = Radon?
-PRODUCT_BLUESTAR = "TECHFRAG" -- Nanite Cluster/ Default = GAS3 = Sulphurine?
+PRODUCT_REDSTAR = "ASTEROID2" -- Gold/ Default = GAS1 = Sulpherine
+PRODUCT_GREENSTAR = "ASTEROID3" -- Platinum/ Default = GAS2 = Radon
+PRODUCT_BLUESTAR = "TECHFRAG" -- Nanite Cluster/ Default = GAS3 = Nitrogen
 
 -- EDITABLE VALUES ABOVE THIS LINE. DON'T TOUCH BELOW UNLESS YOU KNOW WHAT YOU'RE DOING, IN WHICH CASE YOU KNOW MORE THAN ME ;)
 NMS_MOD_DEFINITION_CONTAINER = 
