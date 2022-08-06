@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 3.0 - Standard.pak", 
+["MOD_FILENAME"] 			= "Small Panels 3.1 - Essential.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.97",
+["NMS_VERSION"]				= "3.98",
 ["MOD_DESCRIPTION"]			= "This mod reduces the size of most game panels",
 ["MODIFICATIONS"] 			= 
 	{
@@ -68,6 +68,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"PositionY",	"425"},		-- Original "488.00998"								
+							}
+						},
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "UI\POPUP_BUILDMENUITEM.MBIN",  --new
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{  --main window and main description width  
+							["SPECIAL_KEY_WORDS"] = {"Width","650"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Width",	"520"},  
+							}
+						},
+						{  -- Action Key reminder buttons
+							["SPECIAL_KEY_WORDS"] = {"Height",	"79"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Height",	"60"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"PositionX","20"},
+							["REPLACE_TYPE"]    = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PositionX",	"0"},
 							}
 						},
 					}
@@ -322,6 +352,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PositionX",	"0"},		-- Original "20"   
 							}
 						},
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "BUTTON1",},
+							["REMOVE"] 	= "SECTION",
+						},	
+						{  
+							["SPECIAL_KEY_WORDS"] = {"ID", "BUTTON3",},
+							["REMOVE"] 	= "SECTION",
+						},	
+
 					}
 				},
 				--COMPONENTS
@@ -481,14 +520,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\POPUPTITLEWITHSUBTITLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{ -- ITEM TOP BAR WIDTH
+						{
 							["SPECIAL_KEY_WORDS"] = {"Width",	"650"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Width",	"520"},		-- Original "650"					
 							}
 						},
-						{  -- ITEM AMOUNT at the right of TOP BAR
+						{
 							["SPECIAL_KEY_WORDS"] = {"PositionX",	"642"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

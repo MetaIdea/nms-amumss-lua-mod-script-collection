@@ -29,7 +29,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MeleeBoostAirForce", "7"},
                                 {"MeleeToAirBoostInitialImpulse", "12"},
                                 {"MaxTimeInMeleeBoost", "2.8"},
-                                {"JetpackDrainHorizontalFactor", "0.98"},
+                                {"JetpackDrainHorizontalFactor", "1.38"},
                                 {"JetpackForce", "43"}, 
                                 {"JetpackBrake", "8.2"},
                                 {"JetpackMaxSpeed", "13"},

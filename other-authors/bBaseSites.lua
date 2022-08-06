@@ -1,11 +1,14 @@
 REWARD_TABLE_TEXT =
   [[
           <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="12" />
+            <Property name="PercentageChance" value="10" />
             <Property name="Reward" value="GcRewardScanEvent.xml">
               <Property name="Event" value="BASE" />
               <Property name="ScanEventTable" value="Planet" />
               <Property name="DoAerialScan" value="True" />
+			  <Property name="UseMissionSeedForEvent" value="False" />
+              <Property name="StartDelay" value="6" />
+              <Property name="UseStartDelayWhenNoAerialScan" value="False" />
             </Property>
             <Property name="LabelID" value="Base" />
           </Property>
@@ -18,6 +21,9 @@ SCANEVENT_TEXT =
       <Property name="ForceInteraction" value="" />
       <Property name="ForceInteractionType" value="GcInteractionType.xml">
         <Property name="InteractionType" value="None" />
+      </Property>
+	  <Property name="RequireInteractionRace" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
       </Property>
       <Property name="ForceBroken" value="False" />
       <Property name="ForceFixed" value="False" />
@@ -204,7 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     https://nomansskymods.com/mods/easy-base-building/.
 ]],
   ["MOD_AUTHOR"] = "Bladehawke",
-  ["NMS_VERSION"] = "3.91", -- Changes in PLANETBUILDINGTABLE files made this change necessary
+  ["NMS_VERSION"] = "3.98", -- Changes in files made this change necessary
   ["UPDATE_LINK"] = "https://pastebin.com/raw/UkVFmagZ",
   
   ["MODIFICATIONS"] = {
