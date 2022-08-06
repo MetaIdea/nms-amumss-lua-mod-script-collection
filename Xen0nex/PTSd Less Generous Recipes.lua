@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "3_93"
+GameVersion = "3_98"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -342,7 +342,14 @@ RecipeChanges =
 		{
 			{"FUEL1",			25}										--Requires Carbon				x1
 		}
-	}
+	},
+--Reduces the nanite yield of refining Tainted Metal proportionally to balance out the increased reward of Tainted metal
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_324",	2,					90},				--Makes Nanites					x2		in	90 time
+		{
+			{"AF_METAL",		3}										--Requires Tainted Metal		x1
+		}
+	},
 }
 
 --Changes certain recipes for Creature Pellets to require 5x uncooked plantable crops instead of only 1x (along with 1x Faecium)

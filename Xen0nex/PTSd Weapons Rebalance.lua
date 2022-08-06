@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "3_93"
+GameVersion = "3_98"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 --Global Damage multipliers for convenience to apply to all player weapons of that category (stacks multiplicatively with the individual weapons adjustments below)
@@ -48,15 +48,15 @@ MechStunWeaponFireDOT =						80					--80			Fire DOT of minotaur stun weapon
 MechStunWeaponFireDuration =				3					--3				Duration in seconds of minotaur stun weapon Fire DOT
 
 PhaseBeamLeechAmountMult =					0.5					--				Multiplier to apply to the Shield Leech amount for Phase Beam, and the bonus from Fourier De-Limiter (0.2 and 0.1 in vanilla)
-LivingShipBeamLeechMult = 					1.0					--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
-LivingShipBeamLeechUpgradeMult = 			0.25				--				Multiplier to apply to the Shield Leech amount bonus for upgrades to Gazing Eyes (0.05 ~ 0.3 in vanilla)
+LivingShipBeamLeechMult = 					0.5					--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
+LivingShipBeamLeechUpgradeMult = 			0.1					--0.05~0.3		Multiplier to apply to the Shield Leech amount bonus for upgrades to Gazing Eyes (0.05 ~ 0.3 each in vanilla, up to 6x per ship)
 
 --Multipliers for certain bonuses from Starship weapon upgrade modules
 PhaseBeamUpgradesHeatMult =					0.25				--				Multiplier to apply to the bonus heat time for Phase Beam upgrades (1.1 ~ 2 for Class C ~ X)
 LivingShipBeamUpgradesHeatMult =			0.25				--				Multiplier to apply to the bonus heat time for Gazing Eye upgrades (1.1 ~ 1.95 for Class C ~ S)
 CyclotronUpgradesHeatMult =					0.5					--				Multiplier to apply to the bonus heat time for Cyclotron Ballista upgrades (1.1 ~ 1.4 for Class C ~ X)
-InfraKnifeUpgradesHeatMult =				1.0					--				Multiplier to apply to the bonus heat time for Infra-Knife upgrades (1.01 ~ 1.1 for Class C ~ X)
-PositronUpgradesHeatMult =					0.4					--				Multiplier to apply to the bonus heat time for Positron upgrades (1.01 ~ 1.2 for Class C ~ X)
+InfraKnifeUpgradesHeatMult =				0.8					--				Multiplier to apply to the bonus heat time for Infra-Knife upgrades (1.01 ~ 1.1 for Class C ~ X)
+PositronUpgradesHeatMult =					0.5					--				Multiplier to apply to the bonus heat time for Positron upgrades (1.01 ~ 1.2 for Class C ~ X)
 
 PhotonUpgradesFireRateMult =				1.0					--				Multiplier to apply to the bonus fire rate for Photon Cannon upgrades (1.001 ~ 1.026 for Class C ~ X)
 LSPhotonUpgradesFireRateMult =				1.0					--				Multiplier to apply to the bonus fire rate for Spewing Vents upgrades (1.001 ~ 1.021 for Class C ~ S)
@@ -744,6 +744,7 @@ WeaponProjChanges =
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
 --Applies the same damage multiplier for the weapon to the upgrade modules for that weapon (damage upgrade modules apply set amount of damage instead of percentage increases like other upgrade modules)
+	--Also used for other additive values like shield leech effect
 UpgradeDamageChanges =
 {
 	{
@@ -795,6 +796,10 @@ UpgradeDamageChanges =
 		{"UA_SLASR1", "UA_SLASR2", "UA_SLASR3", "UA_SLASR4"}
 	},
 	{
+		{"Ship_Weapons_ShieldLeech",	LivingShipBeamLeechUpgradeMult},					--Gazing Eyes	(Shield Leech effect)	
+		{"UA_SLASR1", "UA_SLASR2", "UA_SLASR3", "UA_SLASR4"}	--(0.05 ~ 0.3 in vanilla)
+	},
+	{
 		{"Ship_Weapons_Guns_Damage",	PhotonCannonDMG*PhotonUpgradesDMGMult*GSD},			--Photon Cannon		
 		{"UP_SGUN1", "UP_SGUN2", "UP_SGUN3", "UP_SGUN4", "UP_SGUNX"}
 	},
@@ -816,7 +821,7 @@ UpgradeDamageChanges =
 	},
 }
 
---Changes other bonuses from weapon upgrade modules, such as heat capacity or fire rate
+--Changes other bonuses from weapon upgrade modules, such as heat capacity or fire rate, that use multiplicative values like 1.05 or 1.2
 UpgradeOtherChanges =
 {
 	{	--Photon Cannon				Fire Rate
@@ -890,23 +895,6 @@ UpgradeOtherChanges =
 			},
 			{
 				"UA_SLASR4",	1.75,	1.95							--1.75,	1.95
-			},
-		}
-	},
-	{	--Gazing Eye						Shield Leech bonus amount
-		{"Ship_Weapons_ShieldLeech",		LivingShipBeamLeechUpgradeMult},	--Applies multiplier to all upgrades for this weapon
-		{
-			{--	Upgrade			Min		Max
-				"UA_SLASR1",	0.05,	0.1								--0.05,	0.1
-			},
-			{
-				"UA_SLASR2",	0.1,	0.15							--0.1,	0.15
-			},
-			{
-				"UA_SLASR3",	0.15,	0.2								--0.15,	0.2
-			},
-			{
-				"UA_SLASR4",	0.2,	0.3								--0.2,	0.3
 			},
 		}
 	},
@@ -1516,7 +1504,7 @@ for i = 1, #UpgradeDamageChanges do
 end
 for i = 1, #UpgradeOtherChanges do
 	local StatID = UpgradeOtherChanges[i][1][1]
-	local HeatMult = UpgradeOtherChanges[i][1][2]
+	local Mult = UpgradeOtherChanges[i][1][2]
 	local UpgradeIDs = UpgradeOtherChanges[i][2]
 
 	for j = 1, #UpgradeIDs do
@@ -1532,8 +1520,8 @@ for i = 1, #UpgradeOtherChanges do
 				["INTEGER_TO_FLOAT"] = "FORCE",
 				["VALUE_CHANGE_TABLE"] 	=
 				{
-					{"ValueMin", BonusMult (OldMin, HeatMult)},
-					{"ValueMax", BonusMult (OldMax, HeatMult)}
+					{"ValueMin", BonusMult (OldMin, Mult)},
+					{"ValueMax", BonusMult (OldMax, Mult)}
 				}
 			}
 	end
