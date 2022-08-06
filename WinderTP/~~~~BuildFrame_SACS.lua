@@ -1,6 +1,12 @@
+-- HARD LIMITS THE NUMBER OF CUSTOM PALETTES TO 13
+-- KEEPS THE PRE-3.95 PALETTE ALLOCATION PLUS NEW VANILLA PALETTES
+-- OVERRIDES YEET_VANILLA_PALETTES
+USE_LEGACY_PALETTE_LIST = false
+
 -- SET TO TRUE TO IGNORE VANILLA PALETTE NUMBER LIMITS
 -- EFFECTIVELY ELIMINATING SOME VANILLA PALETTES
-YEET_VANILLA_PALETTES = false
+-- UNUSED SINCE 3.95
+-- YEET_VANILLA_PALETTES = false
 
 NEW_COLOURS_HEX =
 -- HEX COLOUR VALUES WITHOUT THE HASHTAG
@@ -16,38 +22,11 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"000000",
 		["Name"] =				"All Black",
 		["Id"] =				"BF_ALLBLACK",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 -- COLOURS ARE IN HEXCODE
 ]]
 {	
-	-- {
-		-- ["PrimaryColour"] = 	"ff0000",
-		-- ["SecondaryColour"] = 	"ff0000",
-		-- ["TernaryColour"] = 	"ff0000",
-		-- ["QuaternaryColour"] = 	"ff0000",
-		-- ["Name"] =				"All Red",
-		-- ["Id"] =				"BF_ALLRED",
-		-- ["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	-- },
-	-- {
-		-- ["PrimaryColour"] = 	"00ff00",
-		-- ["SecondaryColour"] = 	"00ff00",
-		-- ["TernaryColour"] = 	"00ff00",
-		-- ["QuaternaryColour"] = 	"00ff00",
-		-- ["Name"] =				"All Green",
-		-- ["Id"] =				"BF_ALLGREEN",
-		-- ["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	-- },
-	-- {
-		-- ["PrimaryColour"] = 	"0000ff",
-		-- ["SecondaryColour"] = 	"0000ff",
-		-- ["TernaryColour"] = 	"0000ff",
-		-- ["QuaternaryColour"] = 	"0000ff",
-		-- ["Name"] =				"All Blue",
-		-- ["Id"] =				"BF_ALLBLUE",
-		-- ["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	-- },
 	{
 		["PrimaryColour"] = 	"000000",
 		["SecondaryColour"] = 	"000000",
@@ -55,7 +34,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"000000",
 		["Name"] =				"All Black",
 		["Id"] =				"BF_ALLBLACK",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"ffffff",
@@ -64,7 +43,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"ffffff",
 		["Name"] =				"All White",
 		["Id"] =				"BF_ALLWHITE",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"000000",
@@ -73,7 +52,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"ffffff",
 		["Name"] =				"Tai-chi 1",
 		["Id"] =				"BF_TAICHI1",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"ffffff",
@@ -82,7 +61,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"000000",
 		["Name"] =				"Tai-chi 2",
 		["Id"] =				"BF_TAICHI2",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"bbd5bf",
@@ -91,17 +70,8 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"487473",
 		["Name"] =				"ArC 1",
 		["Id"] =				"BF_ARCONE",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
-	-- {
-		-- ["PrimaryColour"] = 	"d46738",
-		-- ["SecondaryColour"] = 	"bbd5bf",
-		-- ["TernaryColour"] = 	"487473",
-		-- ["QuaternaryColour"] = 	"487473",
-		-- ["Name"] =				"ArC 2",
-		-- ["Id"] =				"BF_ARCTWO",
-		-- ["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
-	-- },
 	{
 		["PrimaryColour"] = 	"f090be",	--331
 		["SecondaryColour"] = 	"a4e6f0",
@@ -109,7 +79,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"659ba3",
 		["Name"] =				"Pastel Magenta &amp; Blizzard Blue",
 		["Id"] =				"BF_MAG_BLIZ",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"F78A83",	--3
@@ -118,7 +88,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"75211B",
 		["Name"] =				"Coral Pink &amp; Red Orange",
 		["Id"] =				"BF_CORP_REDOR",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"F66420",	--19
@@ -127,7 +97,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"D49D1C",
 		["Name"] =				"Crayon Orange &amp; Jonquil",
 		["Id"] =				"BF_ORA_JON",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"A5F54E",	--88
@@ -136,7 +106,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"9725A8",
 		["Name"] =				"French Lime &amp; Heliotrope",
 		["Id"] =				"BF_LIM_HELIO",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"A9F3CC",	--148
@@ -145,7 +115,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"B6F0F2",
 		["Name"] =				"Magic Mint &amp; Light Green",
 		["Id"] =				"BF_MINT_LG",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"2CF6D7",	--170
@@ -154,7 +124,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"2663D4",
 		["Name"] =				"Turquoise &amp; Palatinate Blue",
 		["Id"] =				"BF_TUR_PAL",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"0057b7",	--211
@@ -163,7 +133,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"ffd700",
 		["Name"] =				"Ukraine Colours",
 		["Id"] =				"BF_UKRAINE",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"2c65a9",	--212
@@ -172,7 +142,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"52ce97",
 		["Name"] =				"Lapis &amp; Shamrock",
 		["Id"] =				"BF_LAP_SHAM",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 {
 		["PrimaryColour"] = 	"C737FA",	--284
@@ -181,7 +151,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"DE31DB",
 		["Name"] =				"Psychedelic Purple &amp; Rose",
 		["Id"] =				"BF_PSYC_ROSE",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"F63B3B",	--0
@@ -190,7 +160,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"A833D4",
 		["Name"] =				"Coral Red &amp; Veronica",
 		["Id"] =				"BF_COR_VER",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"F0A741",	--34
@@ -199,7 +169,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"A32425",
 		["Name"] =				"Yellow Orange &amp; Carmine Pink",
 		["Id"] =				"BF_YO_CPINK",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"F2ECBF",	--52
@@ -208,7 +178,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"F3DEB5",
 		["Name"] =				"Pale Spring Bud &amp; Apricot",
 		["Id"] =				"BF_BUD_APRI",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"FFF870",	--57
@@ -217,7 +187,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"4817A3",
 		["Name"] =				"Icterine &amp; Lavender Indigo",
 		["Id"] =				"BF_ICT_LAV",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"ede91e",	--58
@@ -226,7 +196,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"826494",
 		["Name"] =				"Titanium Yellow &amp; French Lilac",
 		["Id"] =				"BF_TIT_LILAC",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"2b651e",	--109
@@ -235,7 +205,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"5fc8dc",
 		["Name"] =				"Dark Green &amp; Middle Blue",
 		["Id"] =				"BF_DG_MIDB",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"3DF656",	--128
@@ -244,7 +214,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"C1D435",
 		["Name"] =				"Erin &amp; Dandelion",
 		["Id"] =				"BF_ERIN_DAN",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"48C25A",	--128
@@ -253,7 +223,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"2B7536",
 		["Name"] =				"Bice &amp; Fern Green",
 		["Id"] =				"BF_BICE_FERN",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"69CFFF",	--199
@@ -262,7 +232,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"A86413",
 		["Name"] =				"Light Sky Blue &amp; Yellow Orange",
 		["Id"] =				"BF_SKY_YELORA",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"C1E7FA",	--199
@@ -271,7 +241,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"B2ABDE",
 		["Name"] =				"Uranian Blue &amp; Pale Lavender",
 		["Id"] =				"BF_URAN_LAV",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"BAD6F5",	--211
@@ -280,7 +250,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"C9C6F5",
 		["Name"] =				"Cornflower &amp; Pale Blue",
 		["Id"] =				"BF_CORN_BLUE",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"73A1F5",	--218
@@ -289,7 +259,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"8836A8",
 		["Name"] =				"Vista Blue &amp; Medium Orchid",
 		["Id"] =				"BF_VISB_ORC",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"8146b3",	--272
@@ -298,7 +268,7 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"8146b3",
 		["Name"] =				"Medium Violet &amp; White",
 		["Id"] =				"BF_MVIO_WHI",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 	{
 		["PrimaryColour"] = 	"E1BDF5",	--278
@@ -307,7 +277,241 @@ NEW_COLOURS_HEX =
 		["QuaternaryColour"] = 	"F5C9E5",
 		["Name"] =				"Electric Lav &amp; Max Blurple",
 		["Id"] =				"BF_LAV_BLUP",
-		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T" }
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"ff0000",
+		["SecondaryColour"] = 	"ff0000",
+		["TernaryColour"] = 	"ff0000",
+		["QuaternaryColour"] = 	"ff0000",
+		["Name"] =				"All Red",
+		["Id"] =				"BF_ALLRED",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"00ff00",
+		["SecondaryColour"] = 	"00ff00",
+		["TernaryColour"] = 	"00ff00",
+		["QuaternaryColour"] = 	"00ff00",
+		["Name"] =				"All Green",
+		["Id"] =				"BF_ALLGREEN",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"0000ff",
+		["SecondaryColour"] = 	"0000ff",
+		["TernaryColour"] = 	"0000ff",
+		["QuaternaryColour"] = 	"0000ff",
+		["Name"] =				"All Blue",
+		["Id"] =				"BF_ALLBLUE",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"d46738",
+		["SecondaryColour"] = 	"bbd5bf",
+		["TernaryColour"] = 	"487473",
+		["QuaternaryColour"] = 	"487473",
+		["Name"] =				"ArC 2",
+		["Id"] =				"BF_ARCTWO",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"05445E",
+		["SecondaryColour"] = 	"75E6DA",
+		["TernaryColour"] = 	"189AB4",
+		["QuaternaryColour"] = 	"D4F1F4",
+		["Name"] =				"Summer Splash",
+		["Id"] =				"BF_NEW1",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"145DA0",
+		["SecondaryColour"] = 	"0C2D48",
+		["TernaryColour"] = 	"2E8BC0",
+		["QuaternaryColour"] = 	"B1D4E0",
+		["Name"] =				"Mermaid Lagoon",
+		["Id"] =				"BF_NEW2",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"3D550C",
+		["SecondaryColour"] = 	"ECF87F",
+		["TernaryColour"] = 	"81B622",
+		["QuaternaryColour"] = 	"59981A",
+		["Name"] =				"Healthy Leaves",
+		["Id"] =				"BF_NEW3",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"EEB5EB",
+		["SecondaryColour"] = 	"C8F4F9",
+		["TernaryColour"] = 	"C26DBC",
+		["QuaternaryColour"] = 	"3CACAE",
+		["Name"] =				"Icy Gradient",
+		["Id"] =				"BF_NEW4",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"F2C5E0",
+		["SecondaryColour"] = 	"D43790",
+		["TernaryColour"] = 	"EC8FD0",
+		["QuaternaryColour"] = 	"870A30",
+		["Name"] =				"Petal Party",
+		["Id"] =				"BF_NEW7",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"0A7029",
+		["SecondaryColour"] = 	"FEDE00",
+		["TernaryColour"] = 	"C8DF52",
+		["QuaternaryColour"] = 	"DBE8D8",
+		["Name"] =				"Cheeky Marguerita",
+		["Id"] =				"BF_NEW8",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"4297A0",
+		["SecondaryColour"] = 	"E57F84",
+		["TernaryColour"] = 	"F4EAE6",
+		["QuaternaryColour"] = 	"2F5061",
+		["Name"] =				"San Francisco Clouded",
+		["Id"] =				"BF_NEW9",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"FFC2C7",
+		["SecondaryColour"] = 	"B6E5D8",
+		["TernaryColour"] = 	"FBE5C8",
+		["QuaternaryColour"] = 	"8FDDE7",
+		["Name"] =				"Afternoon Sinkers",
+		["Id"] =				"BF_NEW10",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"BBE7FE",
+		["SecondaryColour"] = 	"D3B5E5",
+		["TernaryColour"] = 	"FFD4DB",
+		["QuaternaryColour"] = 	"EFF1DB",
+		["Name"] =				"Easter Egg Nest",
+		["Id"] =				"BF_NEW11",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"C4DBE0",
+		["SecondaryColour"] = 	"2EB5E0",
+		["TernaryColour"] = 	"00A8A8",
+		["QuaternaryColour"] = 	"0C6980",
+		["Name"] =				"In the Blue",
+		["Id"] =				"BF_NEW12",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"5BB0BA",
+		["SecondaryColour"] = 	"C15B78",
+		["TernaryColour"] = 	"EBF5F7",
+		["QuaternaryColour"] = 	"F6C8CC",
+		["Name"] =				"Melted Ice Cream",
+		["Id"] =				"BF_NEW14",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"54627B",
+		["SecondaryColour"] = 	"ECD5BB",
+		["TernaryColour"] = 	"FFFFFF",
+		["QuaternaryColour"] = 	"710117",
+		["Name"] =				"Lake View",
+		["Id"] =				"BF_NEW15",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"15B5B0",
+		["SecondaryColour"] = 	"F9BDC0",
+		["TernaryColour"] = 	"FBE698",
+		["QuaternaryColour"] = 	"6DECE0",
+		["Name"] =				"Bubbly Banana",
+		["Id"] =				"BF_NEW16",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"BA0F30",
+		["SecondaryColour"] = 	"2F2440",
+		["TernaryColour"] = 	"C6B79B",
+		["QuaternaryColour"] = 	"FF2511",
+		["Name"] =				"Red Beanie",
+		["Id"] =				"BF_NEW17",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"FF8370",
+		["SecondaryColour"] = 	"00B1B0",
+		["TernaryColour"] = 	"FEC84D",
+		["QuaternaryColour"] = 	"E42256",
+		["Name"] =				"Apple Shine",
+		["Id"] =				"BF_NEW18",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"39918C",
+		["SecondaryColour"] = 	"2F435A",
+		["TernaryColour"] = 	"D0B49F",
+		["QuaternaryColour"] = 	"AB6B51",
+		["Name"] =				"Coffee Run",
+		["Id"] =				"BF_NEW19",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"DC4731",
+		["SecondaryColour"] = 	"FFF3D9",
+		["TernaryColour"] = 	"B8390E",
+		["QuaternaryColour"] = 	"3B0918",
+		["Name"] =				"Pomegranate Crush",
+		["Id"] =				"BF_NEW20",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"774A62",
+		["SecondaryColour"] = 	"FBD2C9",
+		["TernaryColour"] = 	"313E61",
+		["QuaternaryColour"] = 	"81ABBC",
+		["Name"] =				"Fresh Blankets",
+		["Id"] =				"BF_NEW21",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"FEDE00",
+		["SecondaryColour"] = 	"B4F8C8",
+		["TernaryColour"] = 	"6AB8EE",
+		["QuaternaryColour"] = 	"A8D9F8",
+		["Name"] =				"Thirst Quencher",
+		["Id"] =				"BF_NEW22",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"DBA40E",
+		["SecondaryColour"] = 	"4B5A20",
+		["TernaryColour"] = 	"787D12",
+		["QuaternaryColour"] = 	"7E6E13",
+		["Name"] =				"Trees During Fall",
+		["Id"] =				"BF_NEW23",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"5E376D",
+		["SecondaryColour"] = 	"BD97CB",
+		["TernaryColour"] = 	"F3EAC0",
+		["QuaternaryColour"] = 	"747080",
+		["Name"] =				"Ivy Swipe",
+		["Id"] =				"BF_NEW24",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
+	},
+	{
+		["PrimaryColour"] = 	"391306",
+		["SecondaryColour"] = 	"F1CED4",
+		["TernaryColour"] = 	"710019",
+		["QuaternaryColour"] = 	"F9CCD3",
+		["Name"] =				"Cherry Blossom",
+		["Id"] =				"BF_NEW25",
+		["PaletteGroup"] =		{ "LEGACY", "COLOURS_S", "COLOURS_F", "COLOURS_T", "FREIGHTERBASE" }
 	},
 }
 
@@ -399,6 +603,29 @@ VANILLA_PALETTE_IDS =
 			"TIMBERROYAL1",
 		}
 	},
+	["FREIGHTERBASE"] =
+	{
+		["Group"] = "FREIGHTERBASE",
+		["Palettes"] =
+		{
+			"FREIGHTERBASE0",
+			"FREIGHTERBASE1",
+			"FREIGHTERBASE2",
+			"FREIGHTERBASE3",
+			"FREIGHTERBASE4",
+			"FREIGHTERBASE5",
+			"FREIGHTERBASE6",
+			"FREIGHTERBASE7",
+			"FREIGHTERBASE8",
+			"FREIGHTERBASE9",
+			"FREIGHTERBASE10",
+			"FREIGHTERBASE11",
+			"FREIGHTERBASE12",
+			"FREIGHTERBASE13",
+			"FREIGHTERBASE14",
+			"FREIGHTERBASE15",
+		}
+	},
 }
 
 PALETTE_QUAD = {"PrimaryColour", "SecondaryColour", "TernaryColour", "QuaternaryColour"}
@@ -414,38 +641,109 @@ NUM_VANILLA_COLOUR =
 ["COLOURS_S"] = 11,
 ["COLOURS_F"] = 8,
 ["COLOURS_T"] = 9,
+["FREIGHTERBASE"] = 16,
 }
 
 -- MULTIPLIER TO THE HEIGHT OF THE COLOUR PALETTE SELECTRION WINDOW
 -- MODIFY WITH CARE
-UI_HEIGHT_MULTIPLIER = "2.2"
+UI_HEIGHT_MULTIPLIER = "3.2"
 
 -- NUMBER OF CURRENT VANILLA PALETTES
 -- ONLY EDIT UPON VANILLA BASE BUILDING PALETTE UPDATES
-CURRENT_VANILLA_COLOUR = 51
+CURRENT_VANILLA_COLOUR = 0
+-- CURRENT_VANILLA_COLOUR = 66
+for _,j in pairs(NUM_VANILLA_COLOUR) do
+	CURRENT_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR + j
+end
 
 -- NUMBER OF CURRENT VANILLA UI PALLETE SLOTS
 -- ONLY EDIT UPON VANILLA UI UPDATES
-VANILLA_UI_SLOTS = 25
+-- VANILLA_UI_SLOTS = 25
 
 -- HARDCODED NUMBER OF MAXIMUM SLOTS
 -- DO NOT ALTER
-PALETTE_SLOTS_LIMIT = 64
+-- PALETTE_SLOTS_LIMIT = 98
+PALETTE_SLOTS_LIMIT = 127
 
 -- NUMBER OF MAXIMUM PALETTE SLOTS PER LINE DICTATED BY UI FILES
 -- DO NOT ALTER
-UI_SINGLE_LINE = 7
+UI_SINGLE_LINE = 8
 
 -- SUB CANVAS EXTRA UI HEIGHT
 -- DO NOT ALTER
 UI_OUTER_SPACING = "17"
 
+-- NUMBER OF PALETTES ADDED WITH YEET_VANILLA_PALETTES TRUE PRE-3.95
+-- DO NOT ALTER
+LEGACY_INJECT_AMOUNT = 13
+
 -- PRINT DEBUG TEXT
 DEBUG_TEXT = false
 
 -- EXML DATA BLOCKS
+COLOUR_START =  [[
+		<!--BuildFrame-->
+        <Property value="GcNGuiSpacingData.xml">
+          <Property name="Data" value="GcNGuiElementData.xml">
+            <Property name="ID" value="" />
+            <Property name="PresetID" value="" />
+            <Property name="IsHidden" value="False" />
+            <Property name="Layout" value="GcNGuiLayoutData.xml">
+              <Property name="PositionX" value="0" />
+              <Property name="PositionY" value="0" />
+              <Property name="Width" value="50" />
+              <Property name="WidthPercentage" value="False" />
+              <Property name="Height" value="6" />
+              <Property name="HeightPercentage" value="False" />
+              <Property name="ConstrainProportions" value="False" />
+              <Property name="ConstrainAspect" value="1" />
+              <Property name="ForceAspect" value="False" />
+              <Property name="Anchor" value="False" />
+              <Property name="AnchorPercent" value="False" />
+              <Property name="SameLine" value="False" />
+              <Property name="Align" value="TkNGuiAlignment.xml">
+                <Property name="Vertical" value="Top" />
+                <Property name="Horizontal" value="Left" />
+              </Property>
+              <Property name="SlowCursorOnHover" value="False" />
+              <Property name="MaxWidth" value="0" />
+              <Property name="VROverrides" />
+              <Property name="AccessibleOverrides" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcNGuiSpacingData.xml">
+          <Property name="Data" value="GcNGuiElementData.xml">
+            <Property name="ID" value="" />
+            <Property name="PresetID" value="" />
+            <Property name="IsHidden" value="False" />
+            <Property name="Layout" value="GcNGuiLayoutData.xml">
+              <Property name="PositionX" value="0" />
+              <Property name="PositionY" value="0" />
+              <Property name="Width" value="0" />
+              <Property name="WidthPercentage" value="False" />
+              <Property name="Height" value="5" />
+              <Property name="HeightPercentage" value="False" />
+              <Property name="ConstrainProportions" value="False" />
+              <Property name="ConstrainAspect" value="1" />
+              <Property name="ForceAspect" value="False" />
+              <Property name="Anchor" value="False" />
+              <Property name="AnchorPercent" value="False" />
+              <Property name="SameLine" value="False" />
+              <Property name="Align" value="TkNGuiAlignment.xml">
+                <Property name="Vertical" value="Top" />
+                <Property name="Horizontal" value="Left" />
+              </Property>
+              <Property name="SlowCursorOnHover" value="False" />
+              <Property name="MaxWidth" value="0" />
+              <Property name="VROverrides" />
+              <Property name="AccessibleOverrides" />
+            </Property>
+          </Property>
+        </Property>
+]]
 SPACING = [[
-		<Property value="GcNGuiSpacingData.xml">
+        <Property value="GcNGuiSpacingData.xml">
           <Property name="Data" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
@@ -476,7 +774,7 @@ SPACING = [[
         </Property>
 ]]
 LINE_BREAK = [[
-        <Property value="GcNGuiSpacingData.xml">
+		<!--Property value="GcNGuiSpacingData.xml">
           <Property name="Data" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
@@ -486,7 +784,7 @@ LINE_BREAK = [[
               <Property name="PositionY" value="0" />
               <Property name="Width" value="5" />
               <Property name="WidthPercentage" value="False" />
-              <Property name="Height" value="5" />
+              <Property name="Height" value="20" />
               <Property name="HeightPercentage" value="False" />
               <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
@@ -513,9 +811,9 @@ LINE_BREAK = [[
             <Property name="Layout" value="GcNGuiLayoutData.xml">
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
-              <Property name="Width" value="5" />
+              <Property name="Width" value="15" />
               <Property name="WidthPercentage" value="False" />
-              <Property name="Height" value="5" />
+              <Property name="Height" value="20" />
               <Property name="HeightPercentage" value="False" />
               <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
@@ -533,7 +831,7 @@ LINE_BREAK = [[
               <Property name="AccessibleOverrides" />
             </Property>
           </Property>
-        </Property>
+        </Property-->
         <Property value="GcNGuiSpacingData.xml">
           <Property name="Data" value="GcNGuiElementData.xml">
             <Property name="ID" value="THIS ONE" />
@@ -544,7 +842,7 @@ LINE_BREAK = [[
               <Property name="PositionY" value="0" />
               <Property name="Width" value="7" />
               <Property name="WidthPercentage" value="False" />
-              <Property name="Height" value="12" />
+              <Property name="Height" value="2" />
               <Property name="HeightPercentage" value="False" />
               <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
@@ -573,7 +871,7 @@ LINE_BREAK = [[
               <Property name="PositionY" value="0" />
               <Property name="Width" value="0" />
               <Property name="WidthPercentage" value="False" />
-              <Property name="Height" value="50" />
+              <Property name="Height" value="2" />
               <Property name="HeightPercentage" value="False" />
               <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
@@ -604,6 +902,18 @@ PALETTE_GROUP_REPLACEMENT =
 		["VALUE_CHANGE_TABLE"] = 
 		{
 			{"ColourPaletteGroupId", "LEGACY"}
+		}
+	}
+
+DEFAULT_PALETTE_REPLACEMENT =
+	{
+		-- ["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingEntry.xml"},
+		-- ["VALUE_MATCH_OPTIONS"] = "~=",
+		-- ["VALUE_MATCH"] = ".+",
+		["REPLACE_TYPE"] = "ALL",
+		["VALUE_CHANGE_TABLE"] = 
+		{
+			{"DefaultColourPaletteId", "LEGACY1"}
 		}
 	}
 
@@ -920,39 +1230,45 @@ PALETTE_GROUP_ADD_TEXT = {}
 
 -- INITIALISE THE TEXT TABLE TO BE INJECTED INTO CORRESPONDING VANILLA PALETTE GROUPS
 -- EFFICIENCY IMPROVEMENTS COURTESY OF Wberto
-for i,j in pairs(VANILLA_PALETTE_IDS) do
-	if DEBUG_TEXT then print(j["Group"]) end
+for _,j in pairs(VANILLA_PALETTE_IDS) do
+	if DEBUG_TEXT then print(j["Group"])
+	end
 	PALETTE_GROUP_ADD_TEXT[j["Group"]] = {}
 end
 
+OG_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR
 -- ADDING NEW PALETTES
-for m,n in pairs(NEW_COLOURS_HEX) do
+for _,n in pairs(NEW_COLOURS_HEX) do
 NEW_COLOURS = {}
 CURRENT_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR + 1
 	-- RGB IN Vector3f FORMAT, TRUNCATED TO 3 DECIMAL PLACES
-	for i,j in pairs(PALETTE_QUAD) do
+	for _,j in pairs(PALETTE_QUAD) do
 		NEW_COLOUR_TEMP = {}
 		for k,l in pairs(RGB) do
 			-- CONVERTING 2 DIGITS OF THE HEX COLOUR INTO DECIMAL, DIVIDING BY 255 AND TRUNCATING TO 3 D.P
 			NEW_COLOUR_TEMP[l] = trunc(tonumber(string.sub(n[j],((k-1)*2)+1,((k-1)*2)+2),16)/255)
-			if DEBUG_TEXT then print(l .. [[ - ]] .. NEW_COLOUR_TEMP[l]) end
+			if DEBUG_TEXT then print(l .. [[ - ]] .. NEW_COLOUR_TEMP[l])
+			end
 		end
 		-- SETTING PRI/SEC/TER/QUA COLOURS ACCORDING TO PALETTE_QUAD
 		NEW_COLOURS[j] = NEW_COLOUR_TEMP
 	end
 	table.insert(MARVELLER,GetBaseBuildingPalette(NEW_COLOURS["PrimaryColour"], NEW_COLOURS["SecondaryColour"], NEW_COLOURS["TernaryColour"], NEW_COLOURS["QuaternaryColour"], n["Name"], n["Id"]))
-	for o,p in pairs(n["PaletteGroup"]) do
+	for _,p in pairs(n["PaletteGroup"]) do
 		table.insert(PALETTE_GROUP_ADD_TEXT[p], GetPaletteGroupEntry_ALT(n["Id"]))
 	end
 	-- CHECK TOTAL NUMBER OF PALETTES TO PREVENT VANILLA PALETTES DISAPPEARING FROM OVERFLOW
-	if CURRENT_VANILLA_COLOUR == PALETTE_SLOTS_LIMIT and not YEET_VANILLA_PALETTES then break end
+	if USE_LEGACY_PALETTE_LIST then
+		if CURRENT_VANILLA_COLOUR == OG_VANILLA_COLOUR + LEGACY_INJECT_AMOUNT then break end
+	end
+	if CURRENT_VANILLA_COLOUR == PALETTE_SLOTS_LIMIT then break end
 end
 
 -- INJECTING ALL VANILLA PALETTES IN GROUPS OTHER THAN LEGACY INTO THE LEGACY GROUP
-for i,j in pairs(VANILLA_PALETTE_IDS) do
+for _,j in pairs(VANILLA_PALETTE_IDS) do
 	-- table.insert(CHANGE_LEOPARDON, GetObjectPaletteGroupReplacement(j["Group"]))
 	if j["Group"] ~= "LEGACY" then
-		for k,l in pairs(j["Palettes"]) do
+		for _,l in pairs(j["Palettes"]) do
 			table.insert(PALETTE_GROUP_ADD_TEXT["LEGACY"], GetPaletteGroupEntry_ALT(l))
 		end
 	end
@@ -960,7 +1276,8 @@ end
 
 -- EFFICIENCY IMPROVEMENTS COURTESY OF Wberto
 table.insert(CHANGE_LEOPARDON, PALETTE_GROUP_REPLACEMENT)
-for i,j in pairs(VANILLA_PALETTE_IDS) do
+table.insert(CHANGE_LEOPARDON, DEFAULT_PALETTE_REPLACEMENT)
+for _,j in pairs(VANILLA_PALETTE_IDS) do
 	-- DOESN'T TRY TO MAKE AMUMSS DO NOTHING IF A PALETTE GROUP HAS NOTHING ADDED TO IT, REDUCES WARNINGS
 	if #PALETTE_GROUP_ADD_TEXT[j["Group"]] > 0 then
 		PALETTE_GROUP_CHANGE_TABLE[j["Group"]] = GetPaletteGroupEntry(j["Group"], table.concat(PALETTE_GROUP_ADD_TEXT[j["Group"]]))
@@ -972,13 +1289,15 @@ table.insert(MARVELLER, [[<!--BuildFrame End-->]])
 
 -- UI EXPANSION
 COLOUR_UI_ADD_TABLE = {}
-table.insert(COLOUR_UI_ADD_TABLE, [[<!--BuildFrame-->]])
+table.insert(COLOUR_UI_ADD_TABLE, COLOUR_START)
 -- PLUS ONE TO AVOID ADDING THE LAST VANILLA ENTRY AGAIN
-for i = VANILLA_UI_SLOTS + 1, PALETTE_SLOTS_LIMIT do
+for i = 1, PALETTE_SLOTS_LIMIT do
 	-- ADD LINE BREAK EVERY "UI_SINGLE_LINE"TH UI ENTRY, ELSE ADD HORIZONTAL SPACING
-	if (i - 1) % UI_SINGLE_LINE > 0 then
-		table.insert(COLOUR_UI_ADD_TABLE, SPACING)
-		else table.insert(COLOUR_UI_ADD_TABLE, LINE_BREAK)
+	if i ~= 1 then -- FIRST ONE HAS NO SPACING
+		if (i - 1) % UI_SINGLE_LINE > 0 then
+			table.insert(COLOUR_UI_ADD_TABLE, SPACING)
+			else table.insert(COLOUR_UI_ADD_TABLE, LINE_BREAK)
+		end
 	end
 	-- MINUS 1 SINCE VANILLA ID STARTS WITH 0
 	table.insert(COLOUR_UI_ADD_TABLE, GetPaletteUIData(i-1))
@@ -989,13 +1308,14 @@ if DEBUG_TEXT then
 	print(#VANILLA_PALETTE_IDS["LEGACY"]["Palettes"])
 end
 
-table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(#VANILLA_PALETTE_IDS["LEGACY"]["Palettes"]), table.concat(MARVELLER)))
-
-for i,j in pairs(PALETTE_GROUP_CHANGE_TABLE) do
-	table.insert(CHANGE_LEOPARDON, j)
+if USE_LEGACY_PALETTE_LIST then
+	table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(#VANILLA_PALETTE_IDS["LEGACY"]["Palettes"]), table.concat(MARVELLER)))
+else table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(OG_VANILLA_COLOUR + 1), table.concat(MARVELLER)))
 end
 
-
+for _,j in pairs(PALETTE_GROUP_CHANGE_TABLE) do
+	table.insert(CHANGE_LEOPARDON, j)
+end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -1019,9 +1339,58 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
+							-- COMPLETELY REMOVE THE ORIGINAL COLOUR UI BLOCK (COLOUR SLOT)
+							-- ["PRECEDING_KEY_WORDS"] = {"Children", "Children", "GcNGuiLayerData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"DataFilename", "UI/COMPONENTS/CHARCUSTOMISE/BUILDCOLOUROPTION.MBIN"},
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							-- COMPLETELY REMOVE THE ORIGINAL COLOUR UI BLOCK (SPACING)
+							-- ["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
+							-- ["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "Layout", "GcNGuiLayoutData.xml", "SameLine", "True"},
+							-- ["SECTION_UP"] = 2,
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
+						},
+						--[[{
+							["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "Layout", "GcNGuiLayoutData.xml", "SameLine", "True"},
+							["SECTION_UP"] = 2,
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
+						},]]
+						--[[{
+							["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "ID", "THIS ONE"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "Layout", "GcNGuiLayoutData.xml", "Height", "12"},
+							["SECTION_UP"] = 2,
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["PRECEDING_FIRST"] = "TRUE",
+							["PRECEDING_KEY_WORDS"] = {"GcNGuiSpacingData.xml"},
+							["SPECIAL_KEY_WORDS"] = {"Data", "GcNGuiElementData.xml", "Layout", "GcNGuiLayoutData.xml", "Height", "50"},
+							["SECTION_UP"] = 2,
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
+						},]]
+						{
+							-- ADDS THE REBUILT COLOUR UI BLOCK
 							-- ["PRECEDING_KEY_WORDS"] = {"GcNGuiLayerData.xml"},
 							-- ["PRECEDING_FIRST"] = "TRUE",
-							["SPECIAL_KEY_WORDS"] = {"ID", "OPTION" .. VANILLA_UI_SLOTS - 1}, -- MINUS 1 SINCE VANILLA ID STARTS WITH 0
+							["SPECIAL_KEY_WORDS"] = {"ID", "LABEL"},
 							["SECTION_UP_SPECIAL"] = 1,
 							["ADD_OPTION"] = "ADDafterSECTION",
 							["ADD"] = table.concat(COLOUR_UI_ADD_TABLE)
@@ -1093,7 +1462,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "",
 							["VALUE_CHANGE_TABLE"] = 
 							{ 
-								{"Height", "90" },
+								{"PositionY", "5" },
+								{"Height", "100" },
 							},
 						},
 					}
