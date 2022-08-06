@@ -14,7 +14,7 @@ UpgradeSBaseMarkup	=	2							--0.2
 UpgradeXMult	=		1.5							--Vanilla cost is	280, 320, 600	(depends of which tech it upgrades)
 UpgradeXBaseMarkup	=	0.2							--0.2
 
-RegUpgradeSpaceStationMarkup = 0					--0						Doesn't seem to apply to regular upgrades.	Affects how much shops mark up the price ON TOP OF other values, e.g. a value of 0.5 means space stations charge +50% more than other sources
+RegUpgradeSpaceStationMarkup = 0					--0						Doesn't seem to apply to regular upgrades.	Affects the buying AND selling price when using space station trade terminals or item vendors on outlaw stations ON TOP OF other values, e.g. a value of 0.5 means space stations charge & pay +50% more than other sources
 SusUpgradeSpaceStationMarkup = 1					--0						For suspicious upgrades in Outlaw stations.	Untested.
 
 UpgradeScannerMult	=	1.2							--Additional multiplier to apply to BaseValue of all Scanner upgrades (including X class) on top of the above multipliers

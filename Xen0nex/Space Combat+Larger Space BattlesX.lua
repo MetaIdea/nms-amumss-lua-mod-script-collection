@@ -3,7 +3,7 @@ LuaAuthor = "DeathWrench and Babscoole and Xen0nex"
 ModName = "gExos Challenge"
 ModNameSub = "Space Combat+Larger Space BattlesX"
 BaseDescription = "Adaptation of part(s) of Xaliber's Space Combat Reworked"
-GameVersion = "393"
+GameVersion = "398"
 ModVersion = "a"
 
 --Multipliers to apply to the hull & shields of all AI-controlled starships
@@ -916,6 +916,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
+		{"Engine", "SPACE_EASY"},			--default "SPACE_EASY"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATLTEASY"},			--default "PIRATELOOT"			Note, changing to a custom modded lootpool such as PIRATLTEASY requires it to be defined and added to REWARDTABLE.MBIN, or this won't work.
 		{"Health", math.floor(ShipHull*12000)},			--default 5200
@@ -929,6 +931,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
 		{"Health", math.floor(ShipHull*22000)},			--default 5200
@@ -942,6 +946,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_HRD"},				--default "SPACE"
 		{"PlanetBehaviour", "PLANET_HRD"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "PIRATLTHARD"},			--default "PIRATELOOT"			(Custom Lootpool)
 		{"Health", math.floor(ShipHull*45000)},			--default 6500
@@ -955,6 +961,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		Probably maps to "POLICELOOT" somehow
 		{"Health", math.floor(ShipHull*34000)},			--default 11500
@@ -968,6 +976,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_EASY"},			--default "SPACE_EASY"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "TRADERLOOT"},			--default "TRADERLOOT"
 		{"Health", math.floor(ShipHull*3800)},			--default 9000
@@ -981,6 +991,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_HRD"},			--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_HARD"},			--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", "ESCORTLOOT"},			--default "TRADERLOOT"			(Custom Lootpool)
 		{"Health", math.floor(ShipHull*42000)},			--default 14000
@@ -994,6 +1006,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
 		{"PlanetBehaviour", "RAID_BUILDING"},	--default "RAID_BUILDING"
+		{"Engine", "SPACE_EASY"},			--default "SPACE_EASY"
+		{"PlanetEngine", "RAID_BUILDING"},	--default "RAID_BUILDING"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
 		{"Health", math.floor(ShipHull*27000)},			--default 9000
@@ -1007,6 +1021,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
+		{"Engine", "SPACE_EASY"},			--default "SPACE_EASY"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
 		{"Health", math.floor(ShipHull*27000)},			--default 9000
@@ -1020,6 +1036,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SPACE_EASY"},			--default "SPACE_EASY"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 2},					--default 2
 		{"Reward", "PIRATELOOT"},			--default "PIRATELOOT"
 		{"Health", math.floor(ShipHull*16000)},			--default 5200
@@ -1034,6 +1052,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SQUADRON_WEAK"},		--default "SQUADRON_WEAK"
 		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
+		{"Engine", "SQUADRON_SLOW"},		--default "SQUADRON_SLOW"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
 		{"Health", math.floor(ShipHull*9000)},			--default 3000
@@ -1047,6 +1067,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SQUADRON_MED"},		--default "SQUADRON_WEAK"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SQUADRON_SLOW"},		--default "SQUADRON_SLOW"
+		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
 		{"Health", math.floor(ShipHull*12000)},			--default 5000
@@ -1060,6 +1082,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SQUADRON_MED"},		--default "SQUADRON_STRONG"
 		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"Engine", "SQUADRON_FAST"},		--default "SQUADRON_FAST"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
 		{"Health", math.floor(ShipHull*15000)},			--default 5000
@@ -1073,12 +1097,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SQUADRON_STRONG"},	--default "SQUADRON_STRONG"
 		{"PlanetBehaviour", "PLANET_HRD"},	--default "PLANET"
+		{"Engine", "SQUADRON_FAST"},		--default "SQUADRON_FAST"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
 		{"RewardCount", 1},					--default 1
 		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
 		{"Health", math.floor(ShipHull*18000)},			--default 6000
 		{"LevelledExtraHealth", math.floor(ShipHull*18000)},		--default 6000
 		{"Shield", "FAST_STRONG"},			--default "STRONG"
 		{"LaserDamageLevel", 2},			--default 1
+		}},
+	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
+	["SPECIAL_KEY_WORDS"] = {"Id","ALIEN_HOSTILE"},				--ALIEN_PIRATES, possibly part of a Season?
+	["PRECEDING_FIRST"] = "True",
+	["VALUE_CHANGE_TABLE"] = {
+		{"Behaviour", "SPACE"},	--default "SPACE"
+		{"PlanetBehaviour", "PLANET"},	--default "PLANET"
+		{"Engine", "SPACE_HARD"},		--default "SPACE_HARD"
+		{"PlanetEngine", "PLANET_HARD"},	--default "PLANET_HARD"
+		{"RewardCount", 1},					--default 1
+		{"Reward", ""},						--default ""		I guess you wouldn't be destroying them anyways?
+		{"Health", math.floor(ShipHull*39000)},			--default 13000
+		{"LevelledExtraHealth", math.floor(ShipHull*72000)},		--default 24000
+		{"Shield", "NULL"},			--default "NULL"
+		{"LaserDamageLevel", 1},			--default 0
 		}},
 	--[[	Deprecated as of NMS v3.85
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
@@ -1530,8 +1571,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--10
-		{"MaxSpeed", 200},									--60
-		{"BoostSpeed", 1200},								--900
+		{"MaxSpeed", 140},									--60		(200)
+		{"BoostSpeed", 1067},								--900		NOTE: Often you can still outrun enemy ships even if your ship's "CombatEngine" 's "BoostMaxSpeed" is only ~75% of this value, presumably due to how the enemy ships occassionally stop boosting when pursuing the player
 		{"TurnMin", 0.6},									--0.6
 		{"DirectionBrake", 4},								--5
 		{"Roll", 2},										--1
@@ -1544,8 +1585,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--20
-		{"MaxSpeed", 250},									--90
-		{"BoostSpeed", 3000},								--1200
+		{"MaxSpeed", 200},									--90		(250)
+		{"BoostSpeed", 1600},								--1200		(e.g. a value of 1600 means in practice you can generally outrun them with ~1200u/s space combat speed)
 		{"TurnMin", 0.7},									--0.7
 		{"DirectionBrake", 2.5},							--3
 		{"Roll", 1.2},										--0.6
@@ -1558,8 +1599,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 10},									--50
-		{"MaxSpeed", 120},									--80
-		{"BoostSpeed", 1200},								--180
+		{"MaxSpeed", 100},									--80
+		{"BoostSpeed", 120},								--180
 		{"TurnMin", 0.6},									--0.4
 		{"DirectionBrake", 2.5},							--3
 		{"Roll", 2},										--1
@@ -1573,7 +1614,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 15},									--60
 		{"MaxSpeed", 160},									--130
-		{"BoostSpeed", 1200},								--180
+		{"BoostSpeed", 180},								--180
 		{"TurnMin", 1.2},									--0.8
 		{"DirectionBrake", 1},								--1.2
 		{"Roll", 2},										--1
@@ -1601,7 +1642,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 0},									--0
 		{"MaxSpeed", 200},									--200
-		{"BoostSpeed", 1000},								--1000
+		{"BoostSpeed", 1200},								--1000
 		{"TurnMin", 0.6},									--0.6
 		{"DirectionBrake", 8},								--8
 		{"Roll", 1},										--1
@@ -1615,7 +1656,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"MinSpeed", 0},									--0
 		{"MaxSpeed", 300},									--300
-		{"BoostSpeed", 1500},								--1500
+		{"BoostSpeed", 1800},								--1500
 		{"TurnMin", 0.8},									--0.8
 		{"DirectionBrake", 10},								--10
 		{"Roll", 1.5},										--1.5

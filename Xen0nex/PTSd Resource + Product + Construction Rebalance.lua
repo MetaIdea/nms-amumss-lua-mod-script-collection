@@ -105,8 +105,8 @@ ProceduralProductSaleChanges =
 	{"ITEMGEN_SALVAGE_RARE",		0.8}			--1,100,000 ~ 2,400,000,	Dropweight 1		(14%)
 }
 
-TradeMult = 0.4									--These Trade items have a default StackMultiplier of 5, resulting in a total default stacksize of 25
-IllTradeMult = 0.2								--These Illegal Trade items also have a default StackMultiplier of 5, but as of NMS v3.88 are only sold in batches of 2~8 or so at Outlaw stations
+TradeMult = 					0.4					--These Trade items have a default StackMultiplier of 5, resulting in a total default stacksize of 25
+IllTradeMult = 					0.2					--These Illegal Trade items also have a default StackMultiplier of 5, but as of NMS v3.88 are only sold in batches of 2~8 or so at Outlaw stations
 --Multipliers to apply to the item's Product Stack multiplier (vanilla total stack size, not multiplier, is listed in the -- comments below), and to their BuyBaseMarkup (how much extra you always have to pay about base value)
 ProductStackChanges =
 {					--			StackMultMult		BuyBaseMarkupMult
@@ -219,7 +219,7 @@ OrbitalExoPortReact = 1								--how many Portable Reactors required	(replaces 3
 RegChartCost =						2				--1		For "Secure Site of Interest", "Distress Signal", "Inhabited Outpost", and "Ancient Artifact Site" charts
 SettlementChartCost =				8				--5		For "Planetary Settlement" charts
 
---SpaceStationMarkup seems to apply an extra + bonus % on top of BuyMarkupMod for the item, if bought at a space station. e.g. a value of 0.5 means +50% to the price
+--SpaceStationMarkup seems to apply an extra + bonus % on top of BuyMarkupMod for the item, if bought OR SOLD at a trade terminal on a space station (or item vendor on outlaw station). e.g. a value of 0.5 means +50% to the price when buying OR SELLING
 --BuyBaseMarkup seems to apply the bonus %  to the cost of the item when bought from any source. e.g. a value of 0.2 means +20% to the price
 --BuyMarkupMod seemed to apply the bonus %  to consumable items bought (at least from my base's trade terminal), but didn't affect launcher fuel, which had BuyBaseMarkup of 98 instead of 0.2 for the others
 	--But BuyMarkupMod didn't seem to affect components anywhere. Haven't figure out exactly what this one does...
@@ -232,7 +232,7 @@ SettlementChartCost =				8				--5		For "Planetary Settlement" charts
 	
 --Substances
 --Substances are generally all of the "elements" / "chemicals", as well as the farmable plants
-SubstanceSpaceStationMarkup = 		1				--0
+SubstanceSpaceStationMarkup = 		0.3				--0
 SubstanceBuyBaseMarkup = 			19				--0.25
 	--SubstanceBuyMarkupMod = 			0				--0
 
@@ -271,22 +271,36 @@ LoomSpaceStationMarkup = 			1				--0
 LoomBuyBaseMarkup = 				0.2				--0.2
 	--LoomBuyMarkupMod = 				2				--2
 
---Misc
 --Miscellaneous other items
-SusGoodsSpaceStationMarkup =		900				--300		(BaseValue 150)
-SusGoodsBaseMarkup =				0.2				--0.2
-SusTechSpaceStationMarkup =			3000			--300		(BaseValue 200)
-SusTechBaseMarkup =					0.2				--0.2
-SusWeapSpaceStationMarkup =			3000			--300		(BaseValue 350)
-SusWeapBaseMarkup =					0.2				--0.2
-RepairKitSpaceStationMarkup =		300				--154		(BaseValue 450)
-RepairKitBaseMarkup =				0.2				--0.2
-LarvalCoreSpaceStationMarkup =		1				--0			(BaseValue 65000)
-LarvalCoreBaseMarkup =				0.2				--0.2
-HadalCoreSpaceStationMarkup =		1				--0			(BaseValue 97500)
-HadalCoreBaseMarkup =				0.2				--0.2
-NipNipSpaceStationMarkup =			1				--0			(BaseValue 17776)
-NipNipBaseMarkup =					8				--3
+LarvalCoreSpaceStationMarkup =		0				--0			(BaseValue 65000)
+LarvalCoreBaseMarkup =				1.4				--0.2
+HadalCoreSpaceStationMarkup =		0				--0			(BaseValue 97500)
+HadalCoreBaseMarkup =				1.4				--0.2
+NipNipSpaceStationMarkup =			0				--0			(BaseValue 17776)
+NipNipBaseMarkup =					16				--3		(8)
+	--The increased BaseMarkup for these items balanced out with increased amounts of Tainted Metal rewarded in Rewards Remixer.lua
+SusGoodsSpaceStationMarkup =		300				--300		(BaseValue 150)
+SusGoodsBaseMarkup =				2.6				--0.2
+SusTechSpaceStationMarkup =			715				--300		(BaseValue 200)
+SusTechBaseMarkup =					3.32			--0.2
+SusWeapSpaceStationMarkup =			715				--300		(BaseValue 350)
+SusWeapBaseMarkup =					3.32			--0.2
+RepairKitSpaceStationMarkup =		150				--154		(BaseValue 450)
+RepairKitBaseMarkup =				1.4				--0.2
+ScrapDealerDecorativeBaseMarkup =	2				--0 for all price modifiers		Decorative items sold by scrap dealer
+
+
+SuspiciousBuyMarkupMod = 0
+ProductBuyMarkupModChanges = 
+{	--
+	{"UI_SUSPECT_GOODS_NAME",		SuspiciousBuyMarkupMod},							--0
+	{"UI_SUSPECT_TECH_NAME",		SuspiciousBuyMarkupMod},							--0
+	{"UI_SUSPECT_WEAP_NAME",		SuspiciousBuyMarkupMod},							--0
+	{"UI_REPAIR_KIT_NAME",			SuspiciousBuyMarkupMod},							--0
+	{"UI_FIENDCORE_NAME",			SuspiciousBuyMarkupMod},							--0
+	{"UI_FISHCORE_NAME",			SuspiciousBuyMarkupMod},							--0.2
+	{"PROD_NIP_NAME",				SuspiciousBuyMarkupMod},							--0
+}
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
@@ -388,13 +402,39 @@ ProductCostChanges =
 	{"UI_TECHMOD_NAME",				LoomSpaceStationMarkup,	LoomBuyBaseMarkup,	LoomBuyMarkupMod},										--Wiring Loom?	BaseMarkup = 0.2,	BuyMarkupMod = 2,	BaseValue = 25000
 	--Misc
 	{"UI_SUSPECT_GOODS_NAME",		SusGoodsSpaceStationMarkup,	SusGoodsBaseMarkup,	ConsumableBuyMarkupMod},							--BaseValue = 150
-	{"UI_SUSPECT_TECH_NAME",		SusTechSpaceStationMarkup,	SusTechBaseMarkup,	ConsumableBuyMarkupMod},							--BaseValue = 150
-	{"UI_SUSPECT_WEAP_NAME",		SusWeapSpaceStationMarkup,	SusWeapBaseMarkup,	ConsumableBuyMarkupMod},							--BaseValue = 150
+	{"UI_SUSPECT_TECH_NAME",		SusTechSpaceStationMarkup,	SusTechBaseMarkup,	ConsumableBuyMarkupMod},							--BaseValue = 200
+	{"UI_SUSPECT_WEAP_NAME",		SusWeapSpaceStationMarkup,	SusWeapBaseMarkup,	ConsumableBuyMarkupMod},							--BaseValue = 350
 	{"UI_REPAIR_KIT_NAME",			RepairKitSpaceStationMarkup,	RepairKitBaseMarkup,	ComponentBuyMarkupMod},						--BaseValue = 450
 	{"UI_FIENDCORE_NAME",			LarvalCoreSpaceStationMarkup,	LarvalCoreBaseMarkup,	ComponentBuyMarkupMod},
 	{"UI_FISHCORE_NAME",			HadalCoreSpaceStationMarkup,	HadalCoreBaseMarkup,	ComponentBuyMarkupMod},
 	{"PROD_NIP_NAME",				NipNipSpaceStationMarkup,	NipNipBaseMarkup,	ComponentBuyMarkupMod},
+	
+	{"BLD_SPOOKY_PLANT_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_SLIME_MED_NAME",			0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"UI_BANNER_SPOOKY_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"UI_BANNER_SLIMY_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_TOYJELLY_NAME",			0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"UI_SPEC_SPOOKYHEAD_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_DECAL_SKULL_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_DECAL_HORROR_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_DECAL_JELLY_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_DECAL_HAZARD_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_MEDTUBE_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_HEATER_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_LIGHT_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_PLANT_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_LOCKER_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_SHELF_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_CRATE_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_CRATEL_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_CRATEXL_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_CASE_NAME",			0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_FOOTLOCKER_NAME",	0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_BENCH_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_PALLET_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
+	{"BLD_ABAND_BARREL_NAME",		0,	ScrapDealerDecorativeBaseMarkup,	0},
 }
+
 
 --[[TradingCostChanges =	--This is attempting to correct for the greatly reduced Demand for items that happens when the buy price is raised
 {
@@ -499,7 +539,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\NMS_REALITY_GCSUBSTANCETABLE.MBIN"},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						--This entry intentionally left blank, to be filled in by the SubstanceCostChanges at the bottom of this script
+						--This entry intentionally left blank, to be filled in by the SubstanceSaleChanges at the bottom of this script
 					}
 				},
 				{
@@ -1010,6 +1050,25 @@ for i = 1, #ChartCostChanges do
 				["VALUE_CHANGE_TABLE"] 	=
 				{
 					{"RecipeCost", NewChartCost}
+				}
+			}
+end
+for i = 1, #ProductBuyMarkupModChanges do
+	local NameID = ProductBuyMarkupModChanges[i][1]
+	local BuyMarkupMod = ProductBuyMarkupModChanges[i][2]
+
+			ChangesToProductCosts[#ChangesToProductCosts+1] =
+			{
+				--["PRECEDING_FIRST"] = "TRUE",
+				--["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				["SPECIAL_KEY_WORDS"] = {"Name", NameID},
+				--["PRECEDING_KEY_WORDS"] = {"StatBonuses"},
+				--["SECTION_UP"] = 1,
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"BuyMarkupMod", BuyMarkupMod}
 				}
 			}
 end

@@ -570,6 +570,9 @@ GuildGiftChanges =
 	}
 }
 
+--Multiplier to all rewards of Tainted Metal (to balance out the increased price of Suspicious Packets when buying from Scrap Dealers)
+TaintedMetalMult =						3						--1
+
 --Replacers for how much Standing is awarded for turning over Derelict Freighter Crew Manifest / Captain's Log to Guild Envoys instead of Scrap Dealers
 CrewManGuildStand =						4						--2
 CaptLogGuildStand =						6						--3
@@ -1479,6 +1482,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
 				["ADD"] = CaptLogGuildUnitReward,
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID","AF_METAL"},
+				["MATH_OPERATION"] 		= "*", 
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin",	TaintedMetalMult},
+					{"AmountMax",	TaintedMetalMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","AF_METAL"},
+				["MATH_OPERATION"] 		= "*", 
+				["REPLACE_TYPE"] 		= "ALL",
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Amount",	TaintedMetalMult}
+				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id","TRADERLOOT",	"Group","SHIPJUMP_NAME_L"},
