@@ -34,11 +34,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"]	= 
                             {
-								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
-                                {"MaxSpeed", "720"},  
+								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this  
                                 {"MinSpeed", "1"},  
-                                {"BoostThrustForce", "1000"},  
-                                {"BoostMaxSpeed", "2400"},  
                                 {"ReverseBrake", "0.6"},  
                                 {"OverSpeedBrake", "2"},  
 								{"TurnStrength", "2"},  
@@ -53,10 +50,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	= 
                             {
 								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
-                                {"MaxSpeed", "500"},  
-                                {"MinSpeed", "1"}, 
-                                {"BoostThrustForce", "200"},  
-                                {"BoostMaxSpeed", "1200"},  
+                                {"MinSpeed", "1"},  
                                 {"ReverseBrake", "1"},  
                                 {"OverSpeedBrake", "2"},  
 								{"TurnStrength", "2"},  
@@ -71,10 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	= 
                             {
 								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
-                                {"MaxSpeed", "160"},  
-                                {"MinSpeed", "1"},  
-                                {"BoostThrustForce", "1000"},  
-                                {"BoostMaxSpeed", "2400"},  
+                                {"MinSpeed", "1"},   
                                 {"ReverseBrake", "0.6"},  
                                 {"OverSpeedBrake", "2"}, 
 								{"TurnStrength", "2.6"},  
@@ -89,10 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	= 
                             {
 								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
-                                {"MaxSpeed", "160"},  
-                                {"MinSpeed", "1"},  
-                                {"BoostThrustForce", "200"},  
-                                {"BoostMaxSpeed", "1200"},  
+                                {"MinSpeed", "1"},   
                                 {"ReverseBrake", "0.6"},  
                                 {"OverSpeedBrake", "2"},  
 								{"TurnStrength", "2.6"},  
