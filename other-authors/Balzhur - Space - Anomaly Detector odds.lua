@@ -2,12 +2,14 @@ ModAuthor	= "Balzhur"
 LuaAuthor	= "Balzhur"
 ModName		= "Anomaly Detector odds"
 ModCategory	= "Space"
-ModDescription	= "Increase the chance of getting Anomaly Detector from asteroids"
+ModDescription	= "Increased chance of getting Anomaly Detector from asteroids"
 GameVersion	= "3.98"
-ModVersion	= "1.0"
+ModVersion	= "1.1"
+-- Change next line to suit your taste.
+ChanceMult	= 5	-- x times more often to find Anomaly detector
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModAuthor.." - "..ModCategory.." - "..ModName.."-"..ModVersion..".pak",
+	["MOD_FILENAME"]	= ModAuthor.." - "..ModCategory.." - "..ModName.." ("..ChanceMult.."x)-"..ModVersion..".pak",
 	["MOD_DESCRIPTION"]	= ModDescription,
 	["MOD_MAINTENANCE"]	= LuaAuthor,
 	["MOD_AUTHOR"]		= ModAuthor,
@@ -18,9 +20,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["MBIN_FILE_SOURCE"] 	= "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
 			["EXML_CHANGE_TABLE"] 	= {{
 				["PRECEDING_KEY_WORDS"]	= "",
+				["MATH_OPERATION"]	= "*",
 				["VALUE_CHANGE_TABLE"]	= {
---					{"RareAsteroidDataProduct",	"POI_LOCATOR"},	-- Original "POI_LOCATOR" = Anomaly Detector
-					{"RareAsteroidDataProductOdds", "0.01"}, 	-- Original "0.005"	  = twice often
+					{"RareAsteroidDataProductOdds", ChanceMult}, 	-- Original "0.005". Multiplies original value by user defined amount.
 				}
 			}}
 		}}
