@@ -68086,10 +68086,10 @@ BASEBUILD_ENTRIES =
 						}
 					},
 					{
-						["PRECEDING_KEY_WORDS"] = {"Objects"},
-						["LINE_OFFSET"] 		= "+0",
-					--	["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"}, --Changed 04 DEC 2021
-					--	["LINE_OFFSET"] 		= "-3",
+						-- ["PRECEDING_KEY_WORDS"] = {"Objects"},
+						-- ["LINE_OFFSET"] 		= "+0",
+						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"},
+						["LINE_OFFSET"] 		= "-3",
 						["ADD"] 				= EXPORT_BASEOBJECTS
 					},
 					{
