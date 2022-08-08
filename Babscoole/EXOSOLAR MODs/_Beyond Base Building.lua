@@ -147,8 +147,8 @@ if O2_ATMO_HARVESTERS_ANYWHERE then
 	end
 end
 
--- Re-add planters after Endurance update
-PLANTERS_ON_FREIGHTER_ID_TABLE = {"PLANTERMEGA", "PLANTER"}
+-- Re-add planters and Pots after Endurance update
+PLANTERS_ON_FREIGHTER_ID_TABLE = {"PLANTERMEGA", "PLANTER", "PLANTPOT", "PLANTPOT1", "PLANTPOT2", "PLANTPOT3"}
 
 
 -- Exceptions to {"CanScale","True"}
