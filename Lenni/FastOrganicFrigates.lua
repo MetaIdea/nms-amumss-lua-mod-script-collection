@@ -19,13 +19,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"] = "SECTION",
 						},
 						{
+							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG"},
+							["VALUE_CHANGE_TABLE"]	=
+							{
+								{"RestartOnCompletion", "True"}
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG", "Stage", "GcMissionSequenceCreateSpecificPulseEncounter.xml"},
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"PulseEncounterID", "BIO_FRIG"}
 							}
 						},
-						
 					},
 				},
 			}
