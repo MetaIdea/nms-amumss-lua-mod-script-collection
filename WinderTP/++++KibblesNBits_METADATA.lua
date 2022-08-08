@@ -11590,10 +11590,10 @@ end
 BASEBUILD_ENTRIES =
 {
 					{
-						["PRECEDING_KEY_WORDS"] = {"Objects"},
-						["LINE_OFFSET"] 		= "+0",
-					--	["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"}, --Changed 04 DEC 2021
-					--	["LINE_OFFSET"] 		= "-3",
+						-- ["PRECEDING_KEY_WORDS"] = {"Objects"},
+						-- ["LINE_OFFSET"] 		= "+0",
+						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"}, --Changed 04 DEC 2021
+						["LINE_OFFSET"] 		= "-3",
 						["ADD"] 				= EXPORT_BASEOBJECTS
 					},
 					{
@@ -11607,7 +11607,7 @@ BASEBUILD_ENTRIES =
 -- THE FINAL COUNTDOWN
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 		= "~~~~~KibblesNBits_METADATA.pak",
+["MOD_FILENAME"] 		= "~~~~~KibblesNBits.pak",
 ["MOD_BATCHNAME"]		= "~~~~~KibblesNBits_COMPATIBILITY.pak",
 ["MOD_DESCRIPTION"]		= "Generates Metadata files and patch other mods with this script",
 ["MOD_AUTHOR"]			= "Kibbles, WinderTP, Babscoole",
