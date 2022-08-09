@@ -7,32 +7,36 @@
 
 -- Terrain edit :
 
-DISABLE_TERRAINEDIT_FOR_TIMBER = false		--Vanilla false // Mod default false // true to disable terrain edit for timber floors
-DISABLE_TERRAINEDIT_FOR_ALLOY = false		--Vanilla false // Mod default false // true to disable terrain edit for alloy floors
-DISABLE_TERRAINEDIT_FOR_STONE = false		--Vanilla false // Mod default false // true to disable terrain edit for stone floors
-DISABLE_TERRAINEDIT_FOR_WOOD = false		--Vanilla false // Mod default false // true to disable terrain edit for legacy wood floors
-DISABLE_TERRAINEDIT_FOR_CONCRETE = false	--Vanilla false // Mod default false // true to disable terrain edit for legacy concrete floors
-DISABLE_TERRAINEDIT_FOR_METAL = false		--Vanilla false // Mod default false // true to disable terrain edit for legacy metal floors
-DISABLE_TERRAINEDIT_FOR_LIGHTFLOOR = false 	--Vanilla false // Mod default false // true to disable terrain edit for light floor
-DISABLE_TERRAINEDIT_FOR_PAVING = false		--Vanilla false // Mod default false // true to disable terrain edit for paving floors
-DISABLE_TERRAINEDIT_FOR_ALL = false			--Vanilla false // Mod default false // true to disable terrain edit for ALL building parts (all floors, geobays, prefab rooms, etc)
+DISABLE_TERRAINEDIT_FOR_TIMBER = false          --Vanilla false // Mod default false // true to disable terrain edit for timber floors
+DISABLE_TERRAINEDIT_FOR_ALLOY = false           --Vanilla false // Mod default false // true to disable terrain edit for alloy floors
+DISABLE_TERRAINEDIT_FOR_STONE = false           --Vanilla false // Mod default false // true to disable terrain edit for stone floors
+DISABLE_TERRAINEDIT_FOR_WOOD = false            --Vanilla false // Mod default false // true to disable terrain edit for legacy wood floors
+DISABLE_TERRAINEDIT_FOR_CONCRETE = false        --Vanilla false // Mod default false // true to disable terrain edit for legacy concrete floors
+DISABLE_TERRAINEDIT_FOR_METAL = false           --Vanilla false // Mod default false // true to disable terrain edit for legacy metal floors
+DISABLE_TERRAINEDIT_FOR_LIGHTFLOOR = false      --Vanilla false // Mod default false // true to disable terrain edit for light floor
+DISABLE_TERRAINEDIT_FOR_PAVING = false          --Vanilla false // Mod default false // true to disable terrain edit for paving floors
+DISABLE_TERRAINEDIT_FOR_ALL = false             --Vanilla false // Mod default false // true to disable terrain edit for ALL building parts (all floors, geobays, prefab rooms, etc)
 
 -- General limitations :
-ALL_PARTS_ABOVE_WATER = true				--Vanilla false // Mod default true // true to enable all building parts above water
-ALL_PARTS_UNDER_WATER = true				--Vanilla false // Mod default true // true to enable all building parts under water
-ALL_PARTS_ON_FREIGHTER = true				--Vanilla false // Mod default true // true to enable all building parts on freighters
-ALL_PARTS_ON_PLANETBASE = true				--Vanilla false // Mod default true // true to enable all building parts on planet bases (like freighter ones).
-NO_BUILDCOUNT_LIMIT = false					--Vanilla false // Mod Default false // true to remove build-count limits on almost all parts. If false, all parts NOT related to resources farming will be unlimited
+ALL_PARTS_ABOVE_WATER = true                    --Vanilla false // Mod default true // true to enable all building parts above water
+ALL_PARTS_UNDER_WATER = true                    --Vanilla false // Mod default true // true to enable all building parts under water
+--*******Please keep in mind that ALL_PARTS_ON_FREIGHTER only changes one property, but post Endurance other changes may be required*******
+ALL_PARTS_ON_FREIGHTER = true                   --Vanilla false // Mod default true // true to enable all building parts on freighters
+--*******Please keep in mind that ALL_PARTS_ON_FREIGHTER only changes one property, but post Endurance other changes may be required*******
+--*******Please keep in mind that ALL_PARTS_ON_PLANETBASE only changes one property, but post Endurance other changes may be required*******
+ALL_PARTS_ON_PLANETBASE = true                  --Vanilla false // Mod default true // true to enable all building parts on planet bases (like freighter ones).
+--*******Please keep in mind that ALL_PARTS_ON_PLANETBASE only changes one property, but post Endurance other changes may be required*******
+NO_BUILDCOUNT_LIMIT = false                     --Vanilla false // Mod Default false // true to remove build-count limits on almost all parts. If false, all parts NOT related to resources farming will be unlimited
 
 -- Specific placements/limits :
-MARINESHELTER_ABOVE_WATER = false			--Vanilla false // Mod default false // true to enable marine shelter placement above water, ALL_PARTS_ABOVE_WATER must be true too
-EXOMATERIALISER_ON_PLANETBASE = false		--Vanilla false // Mod default false // true to enable the Orbital Exocraft Materialiser on planet bases (decorative purpose only), ALL_PARTS_ON_PLANETBASE must be true too
-NIPNIP_OUTDOOR_FARMING = false				--Vanilla false // Mod default false // true to enable planting NipNip outdoor on lush planets
-METAL_PARTS_OUTSIDE_BASE = false			--Vanilla false // Mod default false // true to makes some metal parts buildable outside of bases. Won't snap together outside of bases! Use it at your own risks!
-GEOBAYS_ON_FREIGHTER = false				--Vanilla false // Mod default false // true to enable vehicles geobays on freighters, ALL_PARTS_ON_FREIGHTER must be true too. Can be very glitchy, use it at your own risks!
-O2_ATMO_HARVESTERS_ANYWHERE = false			--Vanilla false // Mod default false // true to make Oxygen and Atmosphere harvesters buildable NOT only on bare terrain (also makes them buildable but bugged on dead planets).
-CAN_SCALE_PREFAB_PARTS = false				--Vanilla false // Mod Default false // true to allow all prefab rooms related parts to be scaled (doors attachment points bug out when scaled though)
-CAN_SCALE_EXTRACTORS = false				--Vanilla false // Mod Default false // true to allow gas/mineral extractors to be scaled (when greatly scaled their resources won't be linked to the resources network though)
+MARINESHELTER_ABOVE_WATER = false               --Vanilla false // Mod default false // true to enable marine shelter placement above water, ALL_PARTS_ABOVE_WATER must be true too
+EXOMATERIALISER_ON_PLANETBASE = false           --Vanilla false // Mod default false // true to enable the Orbital Exocraft Materialiser on planet bases (decorative purpose only), ALL_PARTS_ON_PLANETBASE must be true too
+FARM_IN_ANY_BIOME = false                       --Vanilla false // Mod default false // true to enable planting in any biome
+METAL_PARTS_OUTSIDE_BASE = false                --Vanilla false // Mod default false // true to makes some metal parts buildable outside of bases. Won't snap together outside of bases! Use it at your own risks!
+GEOBAYS_ON_FREIGHTER = false                    --Vanilla false // Mod default false // true to enable vehicles geobays on freighters, ALL_PARTS_ON_FREIGHTER must be true too. Can be very glitchy, use it at your own risks!
+O2_ATMO_HARVESTERS_ANYWHERE = false             --Vanilla false // Mod default false // true to make Oxygen and Atmosphere harvesters buildable NOT only on bare terrain (also makes them buildable but bugged on dead planets).
+CAN_SCALE_PREFAB_PARTS = false                  --Vanilla false // Mod Default false // true to allow all prefab rooms related parts to be scaled (doors attachment points bug out when scaled though)
+CAN_SCALE_EXTRACTORS = false                    --Vanilla false // Mod Default false // true to allow gas/mineral extractors to be scaled (when greatly scaled their resources won't be linked to the resources network though)
 ---------------------------------------------
 ---------------------------------------------
 
@@ -44,15 +48,15 @@ CAN_SCALE_EXTRACTORS = false				--Vanilla false // Mod Default false // true to 
 -----------------------------------
 
 -- Timber, alloy, stone, wood, concrete, metal, light floor, paving floors tables.
-TIMBER_FLOOR_KEYWORD_TABLE = {"T_FLOORS"}					-- Timber floors
-ALLOY_FLOOR_KEYWORD_TABLE = {"F_FLOORS"}					-- Alloy floors
-STONE_FLOOR_KEYWORD_TABLE = {"S_FLOORS"}					-- Stone floors
-WOOD_FLOOR_KEYWORD_TABLE = {"BASICWOOD"}					-- Wood floors (legacy)
-CONC_FLOOR_KEYWORD_TABLE = {"BASICCONCRETE"} 				-- Concrete floors (legacy)
-METAL_FLOOR_KEYWORD_TABLE = {"BASICMETAL"}					-- Metal floors (legacy)
+TIMBER_FLOOR_KEYWORD_TABLE = {"T_FLOORS"}                       -- Timber floors
+ALLOY_FLOOR_KEYWORD_TABLE = {"F_FLOORS"}                        -- Alloy floors
+STONE_FLOOR_KEYWORD_TABLE = {"S_FLOORS"}                        -- Stone floors
+WOOD_FLOOR_KEYWORD_TABLE = {"BASICWOOD"}                        -- Wood floors (legacy)
+CONC_FLOOR_KEYWORD_TABLE = {"BASICCONCRETE"}                    -- Concrete floors (legacy)
+METAL_FLOOR_KEYWORD_TABLE = {"BASICMETAL"}                      -- Metal floors (legacy)
 
-LIGHT_FLOOR_ID_TABLE = {"L_FLOOR_Q"}						-- Light floor
-PAVING_FLOOR_ID_TABLE = {"BUILDPAVING", "BUILDPAVING_BIG"}	-- Paving (small and big floor ones)
+LIGHT_FLOOR_ID_TABLE = {"L_FLOOR_Q"}                            -- Light floor
+PAVING_FLOOR_ID_TABLE = {"BUILDPAVING", "BUILDPAVING_BIG"}      -- Paving (small and big floor ones)
 
 DISABLE_TERRAINEDIT_ID_TABLE = {} --define new empty parent table for parts (by ID)
 DISABLE_TERRAINEDIT_KEYWORD_TABLE = {} --define new empty parent table for parts (by subgroup keywords)
@@ -150,6 +154,11 @@ end
 -- Re-add planters and Pots after Endurance update
 PLANTERS_ON_FREIGHTER_ID_TABLE = {"PLANTERMEGA", "PLANTER", "PLANTPOT", "PLANTPOT1", "PLANTPOT2", "PLANTPOT3"}
 
+-- Re-add Misc on freighters after Endurance update
+MISC_ON_FREIGHTER_ID_TABLE = {"POWERLINE_HIDER", "NOISEBOX", "SPAWNER_BALL", "BYTEBEATSWITCH", "RACE_START", "RACE_RAMP", "RACE_BOOSTER", "BUILD_REFINER2", "BUILD_REFINER3", "DRESSING_TABLE", "BUILDTERMINAL", "TELEPORTER", "BUILDSIGNAL", "O2_HARVESTER", "BUILDGASHARVEST", "BUILDHARVESTER", "BUILDANTIMATTER", "BASECAPSULE", "CREATURE_FARM", "CREATURE_FEED", "U_GENERATOR_S", "U_PIPELINE", "U_EXTRACTOR_S", "U_SILO_S", "U_GASEXTRACTOR", "BUILDLANDINGPAD", "S_LANDINGZONE"}
+
+-- Plant in any biome
+FARM_IN_ANY_BIOME_ID_TABLE = {"RADIOPLANT", "TOXICPLANT", "SNOWPLANT", "SACVENOMPLANT", "SCORCHEDPLANT", "POOPPLANT", "GRAVPLANT", "CREATUREPLANT", "BARRENPLANT", "LUSHPLANT", "PEARLPLANT", "NIPPLANT"}
 
 -- Exceptions to {"CanScale","True"}
 NOT_SCALEABLE_BUILDPART_ID_TABLE = {"BASE_FLAG", "BUILDLANDINGPAD", "S_LANDINGZONE"}
@@ -182,28 +191,28 @@ UNLIMITED_BUILPART_ID_TABLE = {"BASE_TERRARIUM", "BASE_AQUARIUM", "BASE_TOYSPHER
 -- Custom build-count limits
 CUSTOM_BUILDCOUNT_LIMITS =
 {
---  {"ID",				PlanetLimit,	RegionLimit, 	PlanetBaseLimit, 	FreighterBaseLimit}
-	{"POWERLINE_HIDER",	0,				0,				1,					1},		-- Electrical Cloaking Unit
-	{"NPCFRIGTERM",		0,				0,				10,					10},	-- Fleet Command Room
-	{"NPCBUILDERTERM",	0,				0,				1,					1},		-- Construction Terminal
-	{"NPCVEHICLETERM",	0,				0,				1,					1},		-- Exocraft Terminal
-	{"NPCWEAPONTERM",	0,				0,				1,					1},		-- Weapons Terminal
-	{"NPCSCIENCETERM",	0,				0,				1,					1},		-- Science Terminal
-	{"NPCFARMTERM",		0,				0,				1,					1},		-- Agricultural Terminal
-	{"BASECAPSULE",		0,				1,				0,					0},		-- Base Salvage Capsule
-	{"SUMMON_GARAGE",	0,				9,				0,					0},		-- Exocraft Summoning Station
-	{"GARAGE_B",		0,				9,				0,					0},		-- Pilgrim Geobay
-	{"GARAGE_S",		0,				9,				0,					0},		-- Nomad Geobay
-	{"GARAGE_M",		0,				9,				0,					0},		-- Roamer Geobay
-	{"GARAGE_L",		0,				9,				0,					0},		-- Colossus Geobay
-	{"GARAGE_SUB",		0,				9,				0,					0},		-- Nautilon Geobay
-	{"GARAGE_MECH",		0,				9,				0,					0},		-- Minotaur Geobay
-	{"BUILDSIGNAL",		0,				6,				0,					0},		-- Signal Booster
-	{"BUILDBEACON",		0,				6,				0,					0},		-- Save Beacon
-	{"BUILDSAVE",		0,				6,				0,					0},		-- Save Point
-	{"MESSAGE",  		0,				3,				0,					0},		-- Communications Station
-	{"BLD_DATASIGN",	0,				0,				0,					0},		-- Data Display Unit
-	--{"DECALPATH",		0,				0,				0,					0}		-- ?
+--      {"ID",				PlanetLimit,	RegionLimit, 	PlanetBaseLimit, 	FreighterBaseLimit}
+        {"POWERLINE_HIDER",	0,				0,				1,					1},		-- Electrical Cloaking Unit
+        {"NPCFRIGTERM",		0,				0,				10,					10},	-- Fleet Command Room
+        {"NPCBUILDERTERM",	0,				0,				1,					1},		-- Construction Terminal
+        {"NPCVEHICLETERM",	0,				0,				1,					1},		-- Exocraft Terminal
+        {"NPCWEAPONTERM",	0,				0,				1,					1},		-- Weapons Terminal
+        {"NPCSCIENCETERM",	0,				0,				1,					1},		-- Science Terminal
+        {"NPCFARMTERM",		0,				0,				1,					1},		-- Agricultural Terminal
+        {"BASECAPSULE",		0,				1,				0,					0},		-- Base Salvage Capsule
+        {"SUMMON_GARAGE",	0,				9,				0,					0},		-- Exocraft Summoning Station
+        {"GARAGE_B",		0,				9,				0,					0},		-- Pilgrim Geobay
+        {"GARAGE_S",		0,				9,				0,					0},		-- Nomad Geobay
+        {"GARAGE_M",		0,				9,				0,					0},		-- Roamer Geobay
+        {"GARAGE_L",		0,				9,				0,					0},		-- Colossus Geobay
+        {"GARAGE_SUB",		0,				9,				0,					0},		-- Nautilon Geobay
+        {"GARAGE_MECH",		0,				9,				0,					0},		-- Minotaur Geobay
+        {"BUILDSIGNAL",		0,				6,				0,					0},		-- Signal Booster
+        {"BUILDBEACON",		0,				6,				0,					0},		-- Save Beacon
+        {"BUILDSAVE",		0,				6,				0,					0},		-- Save Point
+        {"MESSAGE",  		0,				3,				0,					0},		-- Communications Station
+        {"BLD_DATASIGN",	0,				0,				0,					0},		-- Data Display Unit
+        --{"DECALPATH",		0,				0,				0,					0}		-- ?
 	
 }
 
@@ -246,7 +255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	—For latest versions and more visit:-
 	https://www.nexusmods.com/nomanssky/mods/1096 
 	]],
-	["NMS_VERSION"]   = "3.98",
+	["NMS_VERSION"]   = "3.99",
 	["MODIFICATIONS"] = 
 	{
 		{
@@ -370,7 +379,6 @@ else
 			Change_Table_Array[#Change_Table_Array + 1] = temp_table_disableterrainkey
 		end
 	end
-	
 end
 
 
@@ -404,7 +412,6 @@ if ALL_PARTS_ABOVE_WATER then
 			},
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_marinefalse
-		
 	end
 	
 	-- Specific exceptions list for parts not buildable above water
@@ -420,9 +427,7 @@ if ALL_PARTS_ABOVE_WATER then
 			},              
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_notabovewater
-		
 	end
-	
 end
 ----- All parts buildable above water end -----
 -----------------------------------------------
@@ -443,7 +448,6 @@ if ALL_PARTS_UNDER_WATER then
 		},
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table_allunderwater
-	
 end
 
 
@@ -513,10 +517,8 @@ if ALL_PARTS_ON_FREIGHTER then
 ]]
 			}
 			Change_Table_Array[#Change_Table_Array + 1] = temp_table_geofreightergroup
-			
 		end
-		
-	end
+end
 
 	-- Specific exceptions list for parts not buildable on freighters
 	for i = 1,#NOT_FREIGHTER_BUILDPART_ID_TABLE do
@@ -531,9 +533,7 @@ if ALL_PARTS_ON_FREIGHTER then
 			},              
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_notfreighter
-		
 	end
-	
 end
 ----- All parts on freighters rules end -----
 ---------------------------------------------
@@ -570,7 +570,6 @@ if ALL_PARTS_ON_PLANETBASE then
 			}, 
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_matnotplanet
-		
 	end
 
 	-- Reverts "BuildableOnPlanetBase" to "False" for the exceptions list
@@ -585,9 +584,7 @@ if ALL_PARTS_ON_PLANETBASE then
 			}, 
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_exceptnotplanet
-		
 	end
-	
 end
 ----- All parts on planet bases rules end -----
 -----------------------------------------------
@@ -613,7 +610,6 @@ if CAN_SCALE_PREFAB_PARTS == false then
 			},
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_prefabnotscale
-		
 	end
 	
 	-- Reverts "CanScale" to "False" for freighter storage containers
@@ -630,9 +626,7 @@ if CAN_SCALE_PREFAB_PARTS == false then
 			},
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_conexnotscale
-		
 	end
-	
 end
 
 -- Reverts "CanScale" to "False" for vehicles parts (scaling them can cause important issues)
@@ -661,7 +655,6 @@ for i = 1,#SCALEABLE_VEHICLESPART_ID_TABLE do
 		},
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table_vehiclescale
-	
 end
 
 -- Specific exceptions list for building parts not scaleable
@@ -676,7 +669,6 @@ for i = 1,#NOT_SCALEABLE_BUILDPART_ID_TABLE do
 		},
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table
-	
 end
 ----- CanScale rules end -----
 ------------------------------
@@ -740,9 +732,7 @@ else
 			},
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_nofarmnotbuildlimit
-		
 	end
-
 end
 
 -- Applies custom build-count limits for specific parts
@@ -760,30 +750,50 @@ for i = 1,#CUSTOM_BUILDCOUNT_LIMITS do
 		},
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table_custombuildlimit
-	
 end
 ----- Build-count limits end -----
 ----------------------------------
 
 
 
--- Makes planting NipNip outdoor on lush planets possible
-if NIPNIP_OUTDOOR_FARMING then
+-- Makes planting in any biome possible
+if FARM_IN_ANY_BIOME then
 
-	local temp_table_nipnip =
-	{					
-		["SPECIAL_KEY_WORDS"] = {"ID","NIPPLANT"},
-		["VALUE_MATCH"] = "GcBiomeType.xml", 
-		["VALUE_MATCH_OPTIONS"] = "~=", 	--does NOT match value above
-		["VALUE_CHANGE_TABLE"]  = 
-		{ 
-			{"Biome", "Lush"},
+	for i = 1,#FARM_IN_ANY_BIOME_ID_TABLE do
+
+	local temp_table_farmanydeco =
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i]},
+		["VALUE_CHANGE_TABLE"] = 
+		{
+		    {"BaseBuildingDecorationType","Normal"},
 		},
 	}
-	Change_Table_Array[#Change_Table_Array + 1] = temp_table_nipnip
+	Change_Table_Array[#Change_Table_Array + 1] = temp_table_farmanydeco
 	
+	local temp_table_farmanybiome =
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID",FARM_IN_ANY_BIOME_ID_TABLE[i],"Biome","GcBiomeType.xml"},
+		["LINE_OFFSET"] = "+1",
+		["VALUE_CHANGE_TABLE"] = 
+		{
+		    {"Biome","All"}
+		}
+	}
+	Change_Table_Array[#Change_Table_Array + 1] = temp_table_farmanybiome
+	
+	local temp_table_farmanypower =
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID", FARM_IN_ANY_BIOME_ID_TABLE[i]},
+		["PRECEDING_KEY_WORDS"] = {"DependentConnections"},
+		["VALUE_CHANGE_TABLE"] = 
+		{
+		    {"ConnectionDistance",100}
+		}
+	}
+	Change_Table_Array[#Change_Table_Array + 1] = temp_table_farmanypower	
+	end
 end
-
 
 
 -- Allows to build some metal parts outside of bases
@@ -796,13 +806,11 @@ if METAL_PARTS_OUTSIDE_BASE then
 			["SPECIAL_KEY_WORDS"]	= {"ID", METAL_OUTSIDE_BASE_ID_TABLE[i]},
 			["VALUE_CHANGE_TABLE"]	= 
 			{ 
-				{"BuildableOnPlanet", "True"},
-			}, 
+				{"BuildableOnPlanet", "True"}
+			} 
 		}
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_metal
-		
 	end
-	
 end
 
 
@@ -821,7 +829,6 @@ for i = 1,#ANYTERRAIN_BUILDPART_ID_TABLE do
 		},
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table_notbare
-	
 end
 
 -- Re-add planters on freighters after Endurance update
@@ -852,4 +859,35 @@ for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
 		},
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table_planterfreighterplace
+ end
+ 
+ -- Re-add misc on freighters after Endurance update
+for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
+	
+	local temp_table_miscfreightergroup =
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID", MISC_ON_FREIGHTER_ID_TABLE[i]},
+		["PRECEDING_KEY_WORDS"] = {"Groups"},
+		["LINE_OFFSET"]= "+0",
+		["ADD"] = 
+[[
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHTER_TECH" />
+          <Property name="SubGroupName" value="FRE_TECH_OTHER" />
+          <Property name="SubGroup" value="0" />
+        </Property>
+]]
+	}
+	Change_Table_Array[#Change_Table_Array + 1] = temp_table_miscfreightergroup
+
+	local temp_table_miscfreighterallow =
+	{
+		["SPECIAL_KEY_WORDS"] = {"ID", MISC_ON_FREIGHTER_ID_TABLE[i]},
+		["VALUE_CHANGE_TABLE"] = 
+		{
+			{"BuildableOnSpaceBase", "True"},
+			{"BuildableOnFreighter", "True"},
+		},
+	}
+	Change_Table_Array[#Change_Table_Array + 1] = temp_table_miscfreighterallow
  end
