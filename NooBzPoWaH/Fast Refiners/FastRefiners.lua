@@ -21,14 +21,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	=
-            {
-              "METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN",
-            },
+					{
+						"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN",
+					},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "",
-              ["INTEGER_TO_FLOAT"] = "FORCE",
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "", 
