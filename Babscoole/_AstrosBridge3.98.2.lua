@@ -7,6 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "3.99",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
+["MODIFICATIONS"]	= {},
 ["ADD_FILES"]       = 
 	{
 		{
@@ -54723,5 +54724,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 </Data>
 ]]
 		},
-	}
+	},
 }
