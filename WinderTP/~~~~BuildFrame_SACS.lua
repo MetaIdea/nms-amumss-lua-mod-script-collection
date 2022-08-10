@@ -1075,6 +1075,7 @@ return [[
               <Property name="StrokeSize" value="1" />
               <Property name="Image" value="0" />
               <Property name="Icon" value="0" />
+              <Property name="Desaturation" value="0" />
               <Property name="StrokeGradient" value="True" />
               <Property name="StrokeGradientOffset" value="0" />
               <Property name="StrokeGradientFeather" value="0" />
@@ -1127,6 +1128,7 @@ return [[
               <Property name="StrokeSize" value="1" />
               <Property name="Image" value="0" />
               <Property name="Icon" value="0" />
+              <Property name="Desaturation" value="0" />
               <Property name="StrokeGradient" value="True" />
               <Property name="StrokeGradientOffset" value="0" />
               <Property name="StrokeGradientFeather" value="0" />
@@ -1179,6 +1181,7 @@ return [[
               <Property name="StrokeSize" value="1" />
               <Property name="Image" value="0" />
               <Property name="Icon" value="0" />
+              <Property name="Desaturation" value="0" />
               <Property name="StrokeGradient" value="True" />
               <Property name="StrokeGradientOffset" value="0" />
               <Property name="StrokeGradientFeather" value="0" />

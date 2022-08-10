@@ -16,12 +16,12 @@ SUBGROUP_MOVE_TABLE =
 	{ ["SubGroup"] = "WALLPOSTERS", ["Name"] = "UI_BUILD_GRID_POSTERS", ["From"] = "WALL_ART", ["To"] = "EXOTICS" },
 	-- { ["SubGroup"] = "FREIGHTERROOMS", ["Name"] = "UI_BUILD_GRID_FREIGHTER_ROOMS", ["From"] = "FREIGHTER", ["To"] = "ROOMS" },
 	-- { ["SubGroup"] = "FREIGHTERTECH", ["Name"] = "UI_BUILD_GRID_FREIGHTER_TECH", ["From"] = "FREIGHTER", ["To"] = "PLANET_TECH" },
-	{ ["SubGroup"] = "FRE_TECH_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_TECHROO", ["From"] = "FREIGHTER_TECH", ["To"] = "FREIGHTER" },
 	{ ["SubGroup"] = "FRE_TECH_OTHER", ["Name"] = "UI_BUILD_GRID_FREIGHTPORTABLE", ["From"] = "FREIGHTER_TECH", ["To"] = "FREIGHTER" },
-	{ ["SubGroup"] = "FRE_BIO_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_BIOROOM", ["From"] = "FREIGHTER_BIO", ["To"] = "FREIGHTER" },
 	{ ["SubGroup"] = "FRE_PLANTS", ["Name"] = "UI_BUILD_GRID_FREIGHTER_PLANTS", ["From"] = "FREIGHTER_BIO", ["To"] = "FREIGHTER" },
-	{ ["SubGroup"] = "FRE_IND_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_INDROOM", ["From"] = "FREIGHTER_IND", ["To"] = "FREIGHTER" },
 	{ ["SubGroup"] = "FREIGHTERLEGACY", ["Name"] = "UI_BUILD_GRID_FREIGHT_LEGACY_S", ["From"] = "FREIGHT_LEGACY", ["To"] = "FREIGHTER" },
+	{ ["SubGroup"] = "FRE_IND_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_INDROOM", ["From"] = "FREIGHTER_IND", ["To"] = "FREIGHTER" },
+	{ ["SubGroup"] = "FRE_BIO_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_BIOROOM", ["From"] = "FREIGHTER_BIO", ["To"] = "FREIGHTER" },
+	{ ["SubGroup"] = "FRE_TECH_SUB", ["Name"] = "UI_BUILD_GRID_FREIGHTER_TECHROO", ["From"] = "FREIGHTER_TECH", ["To"] = "FREIGHTER" },
 	{ ["SubGroup"] = "T_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_T", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "S_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_S", ["To"] = "ROOMS" },
 	{ ["SubGroup"] = "F_FLOORS", ["Name"] = "UI_BUILD_GRID_FLOORS", ["From"] = "BASIC_F", ["To"] = "ROOMS" },
@@ -192,6 +192,7 @@ return [[
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
                           <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradient" value="False" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -244,6 +245,7 @@ return [[
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
                           <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradient" value="False" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -296,6 +298,7 @@ return [[
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
                           <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradient" value="False" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -409,6 +412,7 @@ return [[
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
                           <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradient" value="False" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -461,6 +465,7 @@ return [[
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
                           <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradient" value="False" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -513,6 +518,7 @@ return [[
                           <Property name="StrokeSize" value="0" />
                           <Property name="Image" value="0" />
                           <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
                           <Property name="StrokeGradient" value="False" />
                           <Property name="StrokeGradientOffset" value="0" />
                           <Property name="StrokeGradientFeather" value="0" />
@@ -590,7 +596,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_BATCHNAME"]			= "~~~~BuildFrame_Comp.pak",
 ["MOD_AUTHOR"]				= "WinderTP, Babscoole",
 ["MOD_DESCRIPTION"]			= "Recategorisation Trimming Utility for Build Menu",
-["NMS_VERSION"]				= "3.97",
+["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
 	{
 		{
