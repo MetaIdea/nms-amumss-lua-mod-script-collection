@@ -331,7 +331,7 @@ ToolStatChanges	=
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"WEAPON_DAMAGE",			1,		1,		1,		1},			--			+		0,			0,			0,			0		%
-			{"WEAPON_MINING",			1.3,	1.5,	1.5,	1.3},		--			+		5-10,		10-15,		15-20,		20-35	%
+			{"WEAPON_MINING",			1.3,	1.5,	1.5,	1.3},		--			+		5-10,		10-15,		15-20,		20-35[25-35]%
 			{"WEAPON_SCAN",				0.8,	0.8,	0.8,	0.8}		--			+		10-20,		25-30,		35-40,		45-50	%
 		}
 	},

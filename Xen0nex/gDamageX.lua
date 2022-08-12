@@ -2,17 +2,17 @@ Author = "Gumsk"	-- Edited by Xen0nex	(temporary fix to BOUNTYLASER3 typo)
 ModName = "GExos Challenge"
 ModNameSub = "gDamageX"
 BaseDescription = "Damage adjustments"
-GameVersion = "393"
+GameVersion = "398"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
 
---Global damage multipliers to quickly adjust all damage values within a particular category
+--Global damage multipliers to quickly adjust all damage values within a particular category, on top of any individual adjustments below
 Starships =					1				--Damage from starships / freighters
 Flora =						1				--Damage from all kinds of Hazardous Flora
 Fauna =						1				--Damage from all kinds of Hazardous Fauna / Creatures
 Robots =					1				--Damage from planetary Sentinels, turrets/drones in Derelict Freighters (Sentinel starships/freighters covered by "Starships")
-Other =						1				--Damage from most other damage sources such as environmental hazards, falling, starship impact, etc.
+Other =						1				--Damage from most other damage sources such as environmental hazards, falling, starship impact, pirate building raids, etc.
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -260,8 +260,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 15*Robots}}}, --default 6
 	
-	{["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAID"},		--Maybe when pirates attack buildings?	(In PTSd they attack much more rapidly))
+	{["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAID"},		--RAID_BUILDING when Pirate Raids are attacking a building before the player takes off in their ship, or PLANET_FLYBY
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 8*Other}}}, --default 4
+		{"Damage", 4*Other}}}, --default 4		(8)
 
 }}}}}}

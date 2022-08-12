@@ -35,8 +35,9 @@ SiloBaseLimit = 16			--0
 
 BiodomeBaseLimit = 0			--0
 BiodomePowerDraw = -160		--	-50 kPs		(Remember to make the value negative)
-
 BiodomeFreighter = "False"	--Override for setting if Biodomes can be built on freighters or not
+
+TeleportersBuildable = "True"	--"True"		Set this to "False" to disable the player from constructing Teleporters in bases or freighters. (You can still use Station Teleporters to teleport to your base or freighter)
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -187,6 +188,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableOnPlanetWithProduct", "False"},
 		{"BuildableOnFreighter", "False"},
 		{"BuildableOnSpaceBase", "False"},
+		{"ShowInBuildMenu", TeleportersBuildable},					--True
 		}},	
 	{["SPECIAL_KEY_WORDS"] = {"ID","TELEPORTER_F"},
 	["VALUE_CHANGE_TABLE"] = {
@@ -195,6 +197,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{"BuildableOnFreighter", "False"},
 		{"BuildableOnPlanetBase", "False"},
 		{"BuildableOnSpaceBase", "False"},
+		{"ShowInBuildMenu", TeleportersBuildable},					--True
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_ROOM_TELEPO"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"ShowInBuildMenu", TeleportersBuildable},					--True
 		}},
 	
 },}},}}}

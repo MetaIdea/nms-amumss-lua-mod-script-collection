@@ -1,5 +1,5 @@
 ModName = "PTSd Expensive Pilots + Broadcast Receivers"
-GameVersion = "3_93"
+GameVersion = "3_98"
 Description = "Makes Emergency Broadcast Receivers for finding Derelict Freighters start out a little more expensive and continue increasing in price up until the eleventh daily purchase, instead of stopping at the fourth. Also more expensive Pilot slots."
 
 --Receiver prices reset each day
@@ -72,8 +72,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{
 					{800, FirstPilot},
 					{3500, SecondPilot},
+					{10000, FourthPilot},	--Have to do fourth pilot before third pilot to avoid having two costs at 10,000 at the same time
 					{7500, ThirdPilot},
-					{10000, FourthPilot}
 				}
 			},
 		}

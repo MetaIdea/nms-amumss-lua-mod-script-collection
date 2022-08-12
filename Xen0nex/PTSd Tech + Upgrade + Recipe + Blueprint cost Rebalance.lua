@@ -62,6 +62,18 @@ TechAdjustments =
 		"MECH_PILOT",	0.625			--Minotaur AI Pilot
 	},
 	{
+		"MECH_SCAN",	2				--Minotaur Radar Array					120 Nanites
+	},
+	{
+		"VEHICLE_SCAN",	1				--Exocraft Signal Booster				120 Nanites
+	},
+	{
+		"VEHICLE_SCAN1",	0.65		--Advanced Signal Booster				210 Nanites
+	},
+	{
+		"VEHICLE_SCAN2",	0.5			--Exocraft Signal Booster Upgrade Tau	320 Nanites
+	},
+	{
 		"UT_MINER",	0.5					--Optical Drill
 	},
 	{
@@ -74,7 +86,7 @@ TechAdjustments =
 		"UT_PULSESPEED",	0.2			--Sub-light amplifier
 	},
 	{
-		"UT_QUICKWARP",	0.2				--Emergency Warp				240 Nanites
+		"UT_QUICKWARP",	0.2				--Emergency Warp						240 Nanites
 	},
 	{
 		"UT_LAUNCHCHARGE",	0.3			--Launch System Recharger
@@ -89,28 +101,31 @@ TechAdjustments =
 		"UT_WATERJET",	0.3				--Efficient Water Jets
 	},
 	{
+		"UT_WATERENERGY",	0.65		--Oxygen Rerouter						240 Nanites
+	},
+	{
 		"SUB_RECHARGE",	0.3				--Osmotic Generator
 	},
 	{
 		"UT_SURVEY",	0.5				--Survey Device
 	},
 	{
-		"UT_HOT",	0.3					--Coolant Network				160
+		"UT_HOT",	0.4					--Coolant Network				160
 	},
 	{
-		"UT_COLD",	0.3					--Thermic Layer					160
+		"UT_COLD",	0.4					--Thermic Layer					160
 	},
 	{
-		"UT_TOX",	0.3					--Toxic Suppressor				160
+		"UT_TOX",	0.4					--Toxic Suppressor				160
 	},
 	{
-		"UT_RAD",	0.3					--Radiation Deflector			160
+		"UT_RAD",	0.4					--Radiation Deflector			160
 	},
 	{
 		"STEALTH",	1.5					--Cloaking Device 
 	},
 	{
-		"SUB_BINOCS",	10				--High-Power Sonar 
+		"SUB_BINOCS",	12				--High-Power Sonar 				10
 	},
 	{
 		"HDRIVEBOOST1",	1.5				--Cadmium Drive					80
@@ -650,6 +665,9 @@ UpgradeScannerChanges =
 	}
 }
 
+TextA =
+[[<Property name="Children" />]]
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] 			= ModName..GameVersion..".pak",
@@ -832,11 +850,20 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",		--Swaps position of Matter Beam and Interstellar Scanner in freighter unlock tree
+					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",
 					["EXML_CHANGE_TABLE"]     = 
                     {
                         {
-							["SPECIAL_KEY_WORDS"] = {"Unlockable","F_SCANNER"}, 
+							["SPECIAL_KEY_WORDS"] = {"Title","UI_EXOCRAFT_TREE",		"Unlockable","FRE_ROOM_VEHICL"},		--Removes Orbital Exocraft Materializer from Anomaly unlock station
+							["SECTION_UP"] = 1,
+                            ["REMOVE"] = "SECTION"
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Title","UI_EXOCRAFT_TREE",		"Unlockable","SUMMON_GARAGE"},
+                            ["ADD"] = TextA
+                        },
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","F_SCANNER"}, 		--Swaps position of Matter Beam and Interstellar Scanner in freighter unlock tree
                             ["VALUE_CHANGE_TABLE"]     = 
                             {
                                 {"Unlockable",    "F_TELEPORT"}

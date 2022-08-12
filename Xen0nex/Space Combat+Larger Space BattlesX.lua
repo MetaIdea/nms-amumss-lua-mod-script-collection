@@ -1001,7 +1001,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"LaserDamageLevel",2},				--default 1
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},				--Planetary Pirate raids on buildings, presumably?
+	["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},				--Planetary Pirate raids on buildings, while the player is still on the ground. HOWEVER, vanilla seems bugged where at Planetary Archives, pirates use a "normal" behaviour instead of RAID_BUILDING
 	["PRECEDING_FIRST"] = "True",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
@@ -1016,7 +1016,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"LaserDamageLevel", 2},			--default 1
 		}},
 	{["PRECEDING_KEY_WORDS"] = {"Definitions"},
-	["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},				--Unsure, some kind of pirate attack, maybe in space?
+	["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},				--Planetary Pirate raids on buildings, once the player is in the air in their starship the pirates swap to using this behaviour
 	["PRECEDING_FIRST"] = "True",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE"},				--default "SPACE"
@@ -1035,7 +1035,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	["VALUE_CHANGE_TABLE"] = {
 		{"Behaviour", "SPACE_EZ"},			--default "SPACE"
-		{"PlanetBehaviour", "PLANET"},		--default "PLANET"
+		{"PlanetBehaviour", "PLANET_EZ"},	--default "PLANET"
 		{"Engine", "SPACE_EASY"},			--default "SPACE_EASY"
 		{"PlanetEngine", "PLANET_EASY"},	--default "PLANET_EASY"
 		{"RewardCount", 2},					--default 2
@@ -1194,7 +1194,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 3},						
 		{"GunFireRate", 0.08},							
-		{"LaserHealthPoint", 35},
+		{"LaserHealthPoint", 40},							--LaserHealthPoint determines at what % of remaining health the enemy starship will start using their lasers instead of only their "photon cannon"
 		{"AttackWeaponRange", 1200},
 		{"AttackShootWaitTime", 0.1},
 		{"AttackShootTimeMin", 1},
@@ -1236,7 +1236,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 1},
 		{"GunFireRate", 0.04},								
-		{"LaserHealthPoint", 75},
+		{"LaserHealthPoint", 70},
 		{"AttackWeaponRange", 2000},
 		{"AttackShootWaitTime", 0.1},
 		{"AttackShootTimeMin", 10},
@@ -1257,9 +1257,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 2.7},
 		{"GunFireRate", 0.08},
-		{"LaserHealthPoint", 35},
+		{"LaserHealthPoint", 40},
 		{"AttackWeaponRange", 800},
-		{"AttackShootWaitTime", 0},
+		{"AttackShootWaitTime", 0.1},						--N/A			(0)
 		{"AttackShootTimeMin", 5},
 		{"AttackShootTimeMax", 15},
 		{"AttackMaxTime", 20},
@@ -1280,7 +1280,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"GunFireRate", 0.06},								--0.15
 		{"LaserHealthPoint", 50},							--50
 		{"AttackWeaponRange", 1100},						--500
-		{"AttackShootWaitTime", 0},							--0.1
+		{"AttackShootWaitTime", 0.1},						--0.1			(0)
 		{"AttackShootTimeMin", 10},							--2.5
 		{"AttackShootTimeMax", 30},							--5
 		{"AttackMaxTime", 30},								--6
@@ -1299,9 +1299,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["VALUE_CHANGE_TABLE"] = {
 		{"GunDispersionAngle", 0.9},
 		{"GunFireRate", 0.04},
-		{"LaserHealthPoint", 75},
+		{"LaserHealthPoint", 70},
 		{"AttackWeaponRange", 1400},
-		{"AttackShootWaitTime", 0},
+		{"AttackShootWaitTime", 0.1},						--N/A			(0)
 		{"AttackShootTimeMin", 20},
 		{"AttackShootTimeMax", 40},
 		{"AttackMaxTime", 40},
@@ -1318,19 +1318,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["PRECEDING_FIRST"] = "True",
 	["INTEGER_TO_FLOAT"] = "FORCE",
 	["VALUE_CHANGE_TABLE"] = {
-		{"GunDispersionAngle", 0.9},						--3
-		{"GunFireRate", 0.06},								--0.15
-		{"LaserHealthPoint", 50},							--0
-		{"AttackWeaponRange", 1100},						--500
-		{"AttackShootWaitTime", 0},							--0.1
-		{"AttackShootTimeMin", 10},							--2.5
-		{"AttackShootTimeMax", 45},							--5
-		{"AttackMaxTime", 60},								--6
-		{"AttackApproachOffset", 250},						--150
-		{"AttackApproachMinRange", 40},						--300
-		{"AttackTooCloseRange", 120},						--650
-		{"AttackFlybyOffset", 50},							--150
-		{"AttackBoostAngle", 210},							--40
+		{"GunDispersionAngle", 2},							--3				(0.9)
+		{"GunFireRate", 0.09},								--0.15			(0.06)
+		{"LaserHealthPoint", 30},							--0
+		{"AttackWeaponRange", 500},							--500
+		{"AttackShootWaitTime", 0.1},						--0.1			(0)
+		{"AttackShootTimeMin", 5},							--2.5
+		{"AttackShootTimeMax", 10},							--5
+		{"AttackMaxTime", 12},								--6
+		{"AttackApproachOffset", 100},						--150
+		{"AttackApproachMinRange", 200},					--300
+		{"AttackTooCloseRange", 400},						--650
+		{"AttackFlybyOffset", 100},							--150
+		{"AttackBoostAngle", 60},							--40
 		{"NumHitsBeforeBail", 5000},						--3000
 		{"NumHitsBeforeReposition", 1750},					--1000
 		}},
@@ -1631,7 +1631,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"BoostSpeed", 120},								--120
 		{"TurnMin", 1},										--1
 		{"DirectionBrake", 20},								--20
-		{"Roll", 2},										--1
+		{"Roll", 1},										--1
 		{"MinHeight", 20},									--30
 		{"Hovering", "False"},								--"False"
 		}},
