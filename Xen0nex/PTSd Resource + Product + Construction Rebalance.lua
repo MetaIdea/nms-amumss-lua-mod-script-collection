@@ -201,9 +201,9 @@ DoubleCultivationChamberSilver = 160				--60 Silver
 DoubleCultivationChamberPlates = 16					--how many Metal Plates required	(replaces 35 Oxygen in vanilla)
 DoubleCultivationChamberFaecium = 220				--25 Faecium
 --New recipe for installing Stellar Extractor in freighter
-StellarExtractorSilver = 60							--60 Silver
-StellarExtractorGold = 45							--45 Gold
-StellarExtractorGravBall = 1						--how many Gravitino Balls required	(replaces 40 Mag. Ferrite in vanilla)
+StellarExtractorSilver = 120						--60 Silver
+StellarExtractorGold = 90							--45 Gold
+StellarExtractorGravBall = 6						--how many Gravitino Balls required	(replaces 40 Mag. Ferrite in vanilla)
 --New recipe for installing Scanner Room in freighter
 ScannerRoomSilver = 60								--60 Silver
 ScannerRoomEmeril = 30								--how much Emeril is required		(replaces 30 Gold in vanilla)
@@ -289,6 +289,10 @@ RepairKitSpaceStationMarkup =		150				--154		(BaseValue 450)
 RepairKitBaseMarkup =				1.4				--0.2
 ScrapDealerDecorativeBaseMarkup =	2				--0 for all price modifiers		Decorative items sold by scrap dealer
 
+SubstanceStackChanges =
+{					--			StackMultMult		BuyBaseMarkupMult
+	{"UI_AF_METAL_NAME",		3,					1},				--1,	0.25		Tainted Metal		(increasing stack size to balance out increasing the amount rewarded)
+}
 
 SuspiciousBuyMarkupMod = 0
 ProductBuyMarkupModChanges = 
@@ -990,6 +994,25 @@ for i = 1, #SubstanceCostChanges do
 				}
 			}
 			ChangesToSubstanceCosts[#ChangesToSubstanceCosts+1] = ChangesToSubstanceCosts_temp
+end
+for i = 1, #SubstanceStackChanges do
+	local NameID = SubstanceStackChanges[i][1]
+	local StackMult = SubstanceStackChanges[i][2]
+	local BuyMarkMult = SubstanceStackChanges[i][3]
+
+	ChangesToSubstanceCosts[#ChangesToSubstanceCosts+1] =
+					{
+						["PRECEDING_KEY_WORDS"] = "",
+						["SPECIAL_KEY_WORDS"] = {"Name",	NameID}, 
+						["MATH_OPERATION"]         = "*",  
+						["REPLACE_TYPE"]         = "ALL",  
+						["INTEGER_TO_FLOAT"] = "FORCE",
+						["VALUE_CHANGE_TABLE"]     = 
+						{
+							{"StackMultiplier",    StackMult},
+							{"BuyBaseMarkup",    BuyMarkMult},
+						}
+					}
 end
 
 local ChangesToSubstanceSales = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]

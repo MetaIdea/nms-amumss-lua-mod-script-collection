@@ -229,8 +229,8 @@ PoliceFrigComMax = 					1
 PoliceFrigComChance = 				100
 
 --New additional rewards for rescuing a Freighter from Pirates
-FreighterRescueUnitsMin = 			250000
-FreighterRescueUnitsMax = 			750000
+FreighterRescueUnitsMin = 			400000
+FreighterRescueUnitsMax = 			1000000
 FreighterRescueUnitsChance = 		100
 
 FreighterRescueFrigModMin = 		1			--Salvaged Frigate Module
