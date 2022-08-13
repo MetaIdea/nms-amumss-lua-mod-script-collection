@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-    ["MOD_FILENAME"]    =   "shoemakers Flight Adjustments.pak",
+    ["MOD_FILENAME"]    =   "shoemakers Flight Adjustments Vanilla Handling.pak",
     ["MOD_AUTHOR"]      =   "shoemakerjones",
     ["LUA_AUTHOR"]      =   "shoemakerjones",
     ["NMS_VERSION"]     =   "3.98",
@@ -35,10 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	= 
                             {
 								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
-                                {"MaxSpeed", "720"},  
                                 {"MinSpeed", "1"},  
-                                {"BoostThrustForce", "1000"},  
-                                {"BoostMaxSpeed", "2400"},  
                                 {"ReverseBrake", "0.6"},  
                                 {"OverSpeedBrake", "2"},  
 								{"TurnStrength", "2.4"},  
@@ -53,11 +50,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"]	= 
                             {
-								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
-                                {"MaxSpeed", "500"},  
-                                {"MinSpeed", "1"}, 
-                                {"BoostThrustForce", "200"},  
-                                {"BoostMaxSpeed", "1200"},  
+								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this  
+                                {"MinSpeed", "1"},   
                                 {"ReverseBrake", "1"},  
                                 {"OverSpeedBrake", "2"},  
 								{"TurnStrength", "2.4"},  
@@ -72,11 +66,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"]	= 
                             {
-								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
-                                {"MaxSpeed", "160"},  
-                                {"MinSpeed", "1"},  
-                                {"BoostThrustForce", "1000"},  
-                                {"BoostMaxSpeed", "2400"},  
+								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this 
+                                {"MinSpeed", "1"},    
                                 {"ReverseBrake", "0.6"},  
                                 {"OverSpeedBrake", "2"}, 
 								{"TurnStrength", "3"},  
@@ -92,10 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	= 
                             {
 								{"LowSpeedTurnDamper", "0.01"}, -- Do not change this
-                                {"MaxSpeed", "160"},  
-                                {"MinSpeed", "1"}, 
-                                {"BoostThrustForce", "200"},
-                                {"BoostMaxSpeed", "1200"},  
+                                {"MinSpeed", "1"},  
                                 {"ReverseBrake", "0.6"},  
                                 {"OverSpeedBrake", "2"},  
 								{"TurnStrength", "3"},  
