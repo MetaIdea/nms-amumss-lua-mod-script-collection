@@ -15,7 +15,7 @@ env:
   # Optional push arguments
   PUSH_ARGS: ""
 
-# This runs every day on 1801 UTC
+# This runs every half hour
 on:
   schedule:
     - cron: '*/30 * * * *'
