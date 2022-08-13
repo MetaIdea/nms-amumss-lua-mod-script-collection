@@ -1123,7 +1123,6 @@ for i = 1, #BioShipMods do
         end
         table.insert(Children, "\n"..ModTree)
     end
-    table.insert(Children, table.concat(Children).."\n")
 
     Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
 
