@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","nShack"},
 							["PRECEDING_KEY_WORDS"] = {"TkLSystemRestrictionData.xml"},
-							["REPLACE_TYPE"]    = "ONCE",  
+							--["REPLACE_TYPE"]    = "ONCE",  
 							["SECTION_ACTIVE"] = {1,}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","nShack"},
 							["PRECEDING_KEY_WORDS"] = {"TkLSystemRestrictionData.xml"},
-							["REPLACE_TYPE"]    = "ONCE",  
+							--["REPLACE_TYPE"]    = "ONCE",  
 							["SECTION_ACTIVE"] = {2,}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -56,7 +56,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","nShack"},
 							["PRECEDING_KEY_WORDS"] = {"TkLSystemRestrictionData.xml"},
-							["REPLACE_TYPE"]    = "ONCE",  
+							--["REPLACE_TYPE"]    = "ONCE",  
 							["SECTION_ACTIVE"] = {1,}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -66,7 +66,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","nShack"},
 							["PRECEDING_KEY_WORDS"] = {"TkLSystemRestrictionData.xml"},
-							["REPLACE_TYPE"]    = "ONCE",  
+							--["REPLACE_TYPE"]    = "ONCE",  
 							["SECTION_ACTIVE"] = {2,}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","nShack"},
 							["PRECEDING_KEY_WORDS"] = {"TkLSystemRestrictionData.xml"},
-							["REPLACE_TYPE"]    = "ONCE",  
+							--["REPLACE_TYPE"]    = "ONCE",  
 							["SECTION_ACTIVE"] = {1,}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
@@ -99,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","nShack"},
 							["PRECEDING_KEY_WORDS"] = {"TkLSystemRestrictionData.xml"},
-							["REPLACE_TYPE"]    = "ONCE",  
+							--["REPLACE_TYPE"]    = "ONCE",  
 							["SECTION_ACTIVE"] = {2,}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{

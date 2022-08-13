@@ -1093,6 +1093,16 @@ for i = 1, #GeneralUpgradeMods do
     end
 
     Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
+
+    local UnlockableItemTree =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSub},
+        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+        ["ADD"]	= Tree
+    }
+    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
+end
+
 for i = 1, #BioShipMods do
     local TechTree = BioShipMods[i][1][1]
     local RootTech = BioShipMods[i][1][2]
@@ -1113,7 +1123,6 @@ for i = 1, #BioShipMods do
         end
         table.insert(Children, "\n"..ModTree)
     end
-    table.insert(Children, table.concat(Children).."\n")
 
     Tree = CreateModTabpageTree(RootTech, table.concat(Children), CostType)
 
@@ -1126,16 +1135,6 @@ for i = 1, #BioShipMods do
     ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
 
 end
-    local UnlockableItemTree =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSub},
-        ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]	= Tree
-    }
-    ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
-end
-
-
 
 for i = 1, #XClassMods do
     local TechTree = XClassMods[i][1][1]
