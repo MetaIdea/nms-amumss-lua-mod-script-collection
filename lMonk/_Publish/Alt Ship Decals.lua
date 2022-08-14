@@ -98,38 +98,6 @@ local proc_texture_files = {
 			color	= 'Alternative2',
 			diff	= true
 		}
-	},
-	{
-	---	space station front lettering
-		label	= 'LETTERING',
-		group	= 'DECALLETTER',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/station/',
-		nmspath	= 'TEXTURES/SPACE/SPACESTATION/DECALS/',
-		{
-			ly_name	= 'OVERLAY',
-			color	= 'Primary',
-			masks	= true
-		},{
-			ly_name	= 'BASE',
-			tx_name	= {'ST1', 'ST2', 'ST3', 'ST4', 'ST5', 'ST6', 'ST7'},
-			diff	= true
-		}
-	},
-	{
-	---	space station front number
-		label	= 'NUMBER',
-		group	= 'DECALNUMBER',
-		source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Decals/station/',
-		nmspath	= 'TEXTURES/SPACE/SPACESTATION/DECALS/',
-		{
-			ly_name	= 'OVERLAY',
-			color	= 'Primary',
-			masks	= true
-		},{
-			ly_name	= 'BASE',
-			tx_name	= {'C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9'},
-			diff	= true
-		}
 	}
 }
 
