@@ -1,4 +1,4 @@
-local modfilename = "Biomes.CloudsSunAndFog-24-Hour"
+local modfilename = "Biomes.CloudsSunAndFog"
 local lua_author  = "Silent"
 local lua_version = "1.9"
 local mod_author  = "Silent369"
@@ -24,7 +24,7 @@ Also disables all Bloom effects.
 --12Hr = 43200
 --24Hr = 86400
 
-_Day_Length              = 86400 --Original "1800"
+_Day_Length              = 1800 --Original "1800"
 
 --CLOUD ANIM SPEED
 _Anim_Scale              = 21   --Original "50" wtf!
