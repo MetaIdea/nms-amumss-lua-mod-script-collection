@@ -1,9 +1,13 @@
-local modfilename = "Biomes.CloudsSunAndFog"
+local modfilename = "Biomes.CloudsSunAndFog-24-Hour"
 local lua_author  = "Silent"
-local lua_version = "1.8"
+local lua_version = "1.9"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
-local description = "Realtime (NMS time) Day Length (Optional), Better Detailed Clouds, Slower Cloud Animation, Sun Properties and Planet Fog Adjustments. LOD Adjustments, Optional Lens Dirt Removal."
+local description = [[
+Realtime (NMS time) Day Length (Optional), Better Detailed Clouds, Slower Cloud Animation,
+Sun Properties and Planet Fog Adjustments. LOD Adjustments, Optional Lens Dirt Removal.
+Also disables all Bloom effects.
+]]
 
 --modifies the following:
 --GCGRAPHICSGLOBALS.GLOBAL.MBIN
@@ -20,84 +24,84 @@ local description = "Realtime (NMS time) Day Length (Optional), Better Detailed 
 --12Hr = 43200
 --24Hr = 86400
 
-_Day_Length             = 1800 --Original "1800"
+_Day_Length              = 86400 --Original "1800"
 
 --CLOUD ANIM SPEED
-_Anim_Scale             = 20   --Original "50" wtf!
+_Anim_Scale              = 21   --Original "50" wtf!
 
 ----------------------------------------------------------------------------------------------------
 --------------------------- SHOULD LEAVE THESE VALUES ALONE - PROBABLY!  ---------------------------
 ----------------------------------------------------------------------------------------------------
 
 --SUN BRIGHTNESS
-_LUTDFMult              = 1    --Original "0"
-_Intensity              = 3.2  --Original "3"
-_BlendTime              = 5    --Original "5"
-_RayDensity             = 1    --Original "1"
-_Brightness             = 0    --Original "0"
-_Contrast               = 1    --Original "1"
-_HueVariance            = 1.04 --Original "1.04"
-_Saturation             = 1    --Original "1"
-_VSaturation            = 0.05 --Original "0.05"
-_SSunFactor             = 20   --Original "20"
-_SMieFactor             = 0.3  --Original "0.3"
-_MaxSpaceFogStrength    = 0.3  --Original "0.5"
-_ReflectionStrength     = 0.2  --Original "0.3"
-_WeatherBloomGain       = 3.1  --Original "7.1"
-_WeatherFilterSTCTime   = 5    --Original "10"
-_DOFFarStrengthWater    = 0.3  --Original "0"
+_LUTDFMult               = 1    --Original "0"
+_Intensity               = 3.3  --Original "3"
+_BlendTime               = 5    --Original "5"
+_RayDensity              = 1    --Original "1"
+_Brightness              = 0    --Original "0"
+_Contrast                = 1    --Original "1"
+_HueVariance             = 1.04 --Original "1.04"
+_Saturation              = 1    --Original "1"
+_VSaturation             = 0.05 --Original "0.05"
+_SSunFactor              = 20   --Original "20"
+_SMieFactor              = 0.3  --Original "0.3"
+_MaxSpaceFogStrength     = 0.3  --Original "0.5"
+_ReflectionStrength      = 0.2  --Original "0.3"
+_WeatherBloomGain        = 3.1  --Original "7.1"
+_WeatherFilterSTCTime    = 5    --Original "10"
+_DOFFarStrengthWater     = 0.3  --Original "0"
 
 --STORM SETTINGS
-_StormWarningTime       = 25   --Original "25"
-_StormTransitionTime    = 20   --Original "25"
-_MaxCloudCover          = 0.89 --Original "0.8"
-_MaxStormCloudCover     = 0.99 --Original "0.8"
-_CloudCoverSmoothTime   = 15   --Original "10"
-_CloudRatioSmoothTime   = 10   --Original "4"
-_StormCloudSmoothTime   = 10   --Original "0.8"
+_StormWarningTime        = 25   --Original "25"
+_StormTransitionTime     = 20   --Original "25"
+_MaxCloudCover           = 0.89 --Original "0.8"
+_MaxStormCloudCover      = 0.99 --Original "0.8"
+_CloudCoverSmoothTime    = 20   --Original "10"
+_CloudRatioSmoothTime    = 15   --Original "4"
+_StormCloudSmoothTime    = 15   --Original "0.8"
 
 --Storm Settings
-_MinStormLengthLow      = 100  --Original "120"
-_MaxStormLengthLow      = 120  --Original "180"
-_MinStormLengthHigh     = 120  --Original "150"
-_MaxStormLengthHigh     = 160  --Original "320"
-_ExtremeAudioLevel      = 0.2  --Original "0.3"
-_StormAudioLevel        = 0.4  --Original "0.5"
+_MinStormLengthLow       = 60   --Original "120"
+_MaxStormLengthLow       = 90   --Original "180"
+_MinStormLengthHigh      = 75   --Original "150"
+_MaxStormLengthHigh      = 160  --Original "320"
+_ExtremeAudioLevel       = 0.2  --Original "0.3"
+_StormAudioLevel         = 0.4  --Original "0.5"
 
 --CLOUD RATIO
-_CloudRatio             = 0.59  --Original "0.5-0.6"
-_CloudRatioPrime        = 0.69  --Original "0.5-0.6"
+_CloudRatio              = 0.69  --Original "0.5-0.6"
+_CloudRatioPrime         = 0.79  --Original "0.5-0.6"
 
 --CLOUD SETTINGS
-_LightScalar            = 5    --Original "5"
-_AmbientScalar          = 1.72 --Original "1.721854"
-_Density                = 2    --Original "1"
-_AmbientDensity         = 0.1  --Original "0.1"
-_BaseScale              = 1.1  --Original "1"
-_SampleScalar           = 3    --Original "5"
-_SampleThreshold        = 0.26 --Original "0.25"
-_CloudBottomFade        = 1    --Original "1"
-_DetailScale            = 12   --Original "6"
-_ErosionEdgeSize        = 0.65 --Original "0.5"
-_CloudDistortion        = 69   --Original "50"
-_CloudDistortionScale   = 0.8  --Original "1"
-_MaxIterations          = 128  --Original "128"
+_LightScalar             = 5    --Original "5"
+_AmbientScalar           = 1.72 --Original "1.721854"
+_Density                 = 2    --Original "1"
+_AmbientDensity          = 0.1  --Original "0.1"
+_BaseScale               = 1    --Original "1"
+_SampleScalar            = 3    --Original "5"
+_SampleThreshold         = 0.23 --Original "0.25"
+_CloudBottomFade         = 1    --Original "1"
+_DetailScale             = 9    --Original "6"
+_ErosionEdgeSize         = 0.65 --Original "0.5"
+_CloudDistortion         = 89   --Original "50"
+_CloudDistortionScale    = 1.5  --Original "1"
+_MaxIterations           = 128  --Original "128"
 
 --Horizon
-_HorizonFadeStartAlpha  = -0.3 --Original "0"
-_HorizonFadeScalar      = 0.2  --Original "0.25"
-_HorizonDistance        = 23165 --Original "11165"
+_HorizonFadeStartAlpha   = -0.3 --Original "0"
+_HorizonFadeScalar       = 0.2  --Original "0.25"
+_HorizonDistance         = 23165 --Original "11165"
 
 --Cloud Heights
-_CloudHeightMin         = 750  --Original "650"
-_CloudHeightMax         = 950  --Original "900"
-_SkyAtmosphereHeight    = 6300 --Original "6000"
-_StratosphereHeight     = 4300 --Original "4000"
+_CloudHeightMin          = 750  --Original "650"
+_CloudHeightMax          = 950  --Original "900"
+_SkyAtmosphereHeight     = 6300 --Original "6000"
+_StratosphereHeight      = 4300 --Original "4000"
 
-_CloudHeightMinP        = 1400 --Original "1500"
-_CloudHeightMaxP        = 1500 --Original "1500"
-_SkyAtmosphereHeightP   = 7400 --Original "7200"
-_StratosphereHeightP    = 5400 --Original "5200"
+_CloudHeightMinP         = 1400 --Original "1500"
+_CloudHeightMaxP         = 1500 --Original "1500"
+_SkyAtmosphereHeightP    = 7400 --Original "7200"
+_StratosphereHeightP     = 5400 --Original "5200"
 
 --Curve types that make sense with cloud animations
 --Linear
@@ -108,92 +112,92 @@ _StratosphereHeightP    = 5400 --Original "5200"
 --EaseInOutSine
 --EaseInOutQuad
 
-_Curve                  = "EaseInOutSine" --Original "Linear"
+_Curve                   = "Logarithmic" --Original "Linear"
 
 --Wind Offset
-WindOffsetX             = -0.3  --Original "0.5"
-WindOffsetY             = -0.3  --Original "0.5"
+WindOffsetX              = 0.1  --Original "0.5"
+WindOffsetY              = 0.1  --Original "0.5"
 
 --Stratosphere Wind Offset
-SWindOffsetX            = -0.15 --Original "-0.5"
-SWindOffsetY            = 0.15  --Original "0.5"
+SWindOffsetX             = -0.15 --Original "-0.5"
+SWindOffsetY             = 0.15  --Original "0.5"
 
 --Cloud Gradient (Width,Height,Breadth)
-Cloud01X                = 0.08  --Original "0.1"
-Cloud01Y                = 0.1   --Original "0.15"
-Cloud01Z                = 0.12  --Original "0.15"
-Cloud01T                = 0.15  --Original "0.2"
+Cloud01X                 = 0.08  --Original "0.1"
+Cloud01Y                 = 0.1   --Original "0.15"
+Cloud01Z                 = 0.10  --Original "0.15"
+Cloud01T                 = 0.15  --Original "0.2"
 
-Cloud02X                = 0     --Original "0"
-Cloud02Y                = 0.1   --Original "0.1"
-Cloud02Z                = 0.15  --Original "0.3"
-Cloud02T                = 0.3   --Original "0.6"
+Cloud02X                 = 0     --Original "0"
+Cloud02Y                 = 0.1   --Original "0.1"
+Cloud02Z                 = 0.15  --Original "0.3"
+Cloud02T                 = 0.3   --Original "0.6"
 
-Cloud03X                = 0     --Original "0"
-Cloud03Y                = 0.1   --Original "0.2"
-Cloud03Z                = 0.2   --Original "0.3"
-Cloud03T                = 0.4   --Original "1"
+Cloud03X                 = 0     --Original "0"
+Cloud03Y                 = 0.1   --Original "0.2"
+Cloud03Z                 = 0.2   --Original "0.3"
+Cloud03T                 = 0.4   --Original "1"
 
 --Height Fog Height
-_HeightFogHeightMin     = -2   --Original "100"
-_WaterAlphaHeightMin    = 2    --Original "40"
+_HeightFogHeightMin      = -3   --Original "100"
+_WaterAlphaHeightMin     = 3    --Original "40"
 
 --Planet Fog
-_PPF_FogStrength        = 0.05 --Original "0.04"
-_PPF_FogMax             = 0.8  --Original "1"
-_PPF_FogColourStrength  = 0.8  --Original "10"
-_PPF_HeightFogStrength  = 0.05 --Original "0.08"
-_PPF_HeightFogFOStrength = 0.15 --Original "0.25"
-_PPF_HeightFogMax       = 0.5  --Original "0.8"
-_PPF_FogHeight          = 50   --Original "128"
+_PPF_FogStrength         = 0.03 --Original "0.04"
+_PPF_FogMax              = 0.7  --Original "1"
+_PPF_FogColourStrength   = 0.8  --Original "10"
+_PPF_HeightFogStrength   = 0.10 --Original "0.08"
+_PPF_HeightFogFOStrength = 0.12 --Original "0.25"
+_PPF_HeightFogMax        = 0.65 --Original "0.8"
+_PPF_FogHeight           = 96   --Original "128"
 
 --Planet Flight Fog
-_PFF_FogStrength        = 0.05 --Original "0.04"
-_PFF_FogMax             = 0.8  --Original "1"
-_PFF_FogColourStrength  = 0.8  --Original "10"
-_PFF_HeightFogStrength  = 0.05 --Original "0.08"
-_PFF_HeightFogFOStrength = 0.15 --Original "0.25"
-_PFF_HeightFogMax       = 0.5  --Original "0.8"
-_PFF_FogHeight          = 50   --Original "128"
+_PFF_FogStrength         = 0.03 --Original "0.04"
+_PFF_FogMax              = 0.7  --Original "1"
+_PFF_FogColourStrength   = 0.8  --Original "10"
+_PFF_HeightFogStrength   = 0.10 --Original "0.08"
+_PFF_HeightFogFOStrength = 0.12 --Original "0.25"
+_PFF_HeightFogMax        = 0.65 --Original "0.8"
+_PFF_FogHeight           = 96   --Original "128"
 
 --Planet Extreme Fog
-_PXF_FogStrength        = 0.04  --Original "0.5"
-_PXF_FogMax             = 0.8  --Original "0.9"
-_PXF_FogColourStrength  = 0.8  --Original "6"
-_PXF_HeightFogStrength  = 0.04 --Original "0.3"
-_PXF_HeightFogFOStrength = 0.15 --Original "0.1"
-_PXF_HeightFogMax       = 0.4  --Original "0.6"
-_PXF_FogHeight          = 4    --Original "8"
+_PXF_FogStrength         = 0.4  --Original "0.5"
+_PXF_FogMax              = 0.6  --Original "0.9"
+_PXF_FogColourStrength   = 0.8  --Original "6"
+_PXF_HeightFogStrength   = 0.10 --Original "0.3"
+_PXF_HeightFogFOStrength = 0.05 --Original "0.1"
+_PXF_HeightFogMax        = 0.4  --Original "0.6"
+_PXF_FogHeight           = 6    --Original "8"
 
 --Planet Storm Fog
-_PSF_FogStrength        = 0.75 --Original "1.5"
-_PSF_FogMax             = 0.8  --Original "0.95"
-_PSF_FogColourStrength  = 1.5  --Original "2.5"
-_PSF_HeightFogStrength  = 0.4  --Original "0.5"
-_PSF_HeightFogFOStrength = 0.2  --Original "0.3"
-_PSF_HeightFogMax       = 0.4  --Original "0.6"
-_PSF_FogHeight          = 4    --Original "4"
+_PSF_FogStrength         = 0.85 --Original "1.5"
+_PSF_FogMax              = 0.7  --Original "0.95"
+_PSF_FogColourStrength   = 0.8  --Original "2.5"
+_PSF_HeightFogStrength   = 0.10 --Original "0.5"
+_PSF_HeightFogFOStrength = 0.15 --Original "0.3"
+_PSF_HeightFogMax        = 0.4  --Original "0.6"
+_PSF_FogHeight           = 2    --Original "4"
 
 --SUN CLAMP
-_SunClmHMin             = 300  --Original "300"
-_SunClmHMax             = 390  --Original "390"
-_SunClampAngle          = 95   --Original "55"
-_SunFactorMin           = 0.4 --Original "0.4"
+_SunClmHMin              = 300  --Original "300"
+_SunClmHMax              = 390  --Original "390"
+_SunClampAngle           = 95   --Original "55"
+_SunFactorMin            = 0.4 --Original "0.4"
 
 --SUN POSITION
-_sun_position_x         = -77.25284 --Original "-77.25284"
-_sun_position_y         = 61.62304  --Original "61.62304"
-_sun_position_z         = -21.84243 --Original "-21.84243"
+_sun_position_x          = -77.25284 --Original "-77.25284"
+_sun_position_y          = 61.62304  --Original "61.62304"
+_sun_position_z          = -21.84243 --Original "-21.84243"
 
 --HEAVYAIR
-_ThickNess              = 0.1  --Original "1"
-_Speed                  = 0.1  --Original "1"
-_Alpha1                 = 0.5  --Original "1"
-_Alpha2                 = 0.5  --Original "1"
+_ThickNess               = 0.5  --Original "1"
+_Speed                   = 0.1  --Original "1"
+_Alpha1                  = 0.5  --Original "1"
+_Alpha2                  = 0.5  --Original "1"
 
 --STAR CHANCE
-_BinaryStarChance       = 0.2  --Original "0.2"
-_TernaryStarChance      = 0.05 --Original "0.05"
+_BinaryStarChance        = 0.2  --Original "0.2"
+_TernaryStarChance       = 0.05 --Original "0.05"
 
 --Original
 --  <Property name="SpacePlanetFogStrength">
@@ -208,8 +212,8 @@ _SpacePlanetFogStrength =
     <Property name="SpacePlanetFogStrength">
       <Property value="5" />
       <Property value="5" />
-      <Property value="6" />
-      <Property value="7" />
+      <Property value="5" />
+      <Property value="5" />
     </Property>
 ]]
 
@@ -306,10 +310,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HBAOIntensity",                     "1.0"}, --Original "5"
 
                                 --LENS DIRT--
-                                {"LensScale",                           "0"}, --Original "0.3"
-                                {"LensDirt",                            "0"}, --Original "0.3"
-                                {"LensScaleCave",                       "0"}, --Original "4"
-                                {"LensDirtCave",                        "0"}, --Original "0.4"
+                                --{"LensScale",                           "0"}, --Original "0.3"
+                                --{"LensDirt",                            "0"}, --Original "0.3"
+                                --{"LensScaleCave",                       "0"}, --Original "4"
+                                --{"LensDirtCave",                        "0"}, --Original "0.4"
 
                                 --LOD Adjustments
                                 {"TerrainDroppedMipsLow",               "0"}, --Original "1"
@@ -348,9 +352,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TerrainBlocksPerFrameUlt",  "128"}, --Original "64"
                             }
                         },
-                        --------------------------------------------------------------------------------
-                        ------TAA SETTINGS
-                        --------------------------------------------------------------------------------
+                        ----------------------------------------------------------------------------
+                        --TAA SETTINGS
+                        ----------------------------------------------------------------------------
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TaaSettings"},
                             ["INTEGER_TO_FLOAT"] = "FORCE",
@@ -481,7 +485,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SunClampHeightMax",               _SunClmHMax}, --Original "390"
                                 {"SunFactorMin",                  _SunFactorMin}, --Original "0.4"
                                 {"InteractionRadius",                    "0.25"}, --Original "0.15"
-                
+
                                 --LOD Changes
                                 {"TerrainFadeTime",                       "0.5"}, --Original "2"
                                 {"TerrainFadeTimeInShip",                   "1"}, --Original "2"
@@ -490,11 +494,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FloraFadeTimeMax",                      "1.1"}, --Original "2.25"
                             }
                         },
-                
+
                         ----------------------------------------------------------------------------
                         --LOD SETTINGS
                         ----------------------------------------------------------------------------
-                
+
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LODSettings", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "LODAdjust"},
                             ["REMOVE"]              = "SECTION",
@@ -513,11 +517,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = _RegLODAdjust,
                         },
-                
+
                         ----------------------------------------------------------------------------
                         --LOD SETTINGS
                         ----------------------------------------------------------------------------
-                
+
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LODSettings", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "LODAdjust"},
                             ["REMOVE"]              = "SECTION",
@@ -536,11 +540,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = _RegLODAdjust,
                         },
-                
+
                         ----------------------------------------------------------------------------
                         --LOD SETTINGS
                         ----------------------------------------------------------------------------
-                
+
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LODSettings", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "TkLODSettingsData.xml", "LODAdjust"},
                             ["REMOVE"]              = "SECTION",
@@ -559,11 +563,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD_OPTION"]          = "ADDafterSECTION",
                             ["ADD"]                 = _RegLODAdjust,
                         },
-                
+
                         ----------------------------------------------------------------------------
                         --ENVIRONMENT PROPERTIES
                         ----------------------------------------------------------------------------
-                
+
                         {
                             ["PRECEDING_KEY_WORDS"] = "EnvironmentProperties",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -596,11 +600,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]       = "+0",
                             ["ADD"]               = _SpacePlanetFogStrength,
                         },
-                
+
                         ----------------------------------------------------------------------------
                         --PRIMARY CLOUD PROPERTIES
                         ----------------------------------------------------------------------------
-                
+
                         {
                             ["PRECEDING_KEY_WORDS"] = "CloudProperties",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -719,7 +723,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"SunSize",                "0.001"}, --Original "0.25"
-                                {"SunStrength",              "0.2"}, --Original "0.225806"
                                 {"SunSurroundSize",         "0.02"}, --Original "10"
                                 {"SunSurroundStrength",     "0.02"}, --Original "12"
                             }
@@ -731,7 +734,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"SunSize",                "0.001"}, --Original "0.25"
-                                {"SunStrength",              "0.2"}, --Original "0.225806"
                                 {"SunSurroundSize",         "0.02"}, --Original "10"
                                 {"SunSurroundStrength",     "0.02"}, --Original "12"
                             }
@@ -742,9 +744,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"SunSize",               "0.0001"}, --Original "0.005"
-                                {"StarVisibility",          "0.85"}, --Original "0.82"
+                                {"StarVisibility",          "0.83"}, --Original "0.82"
                                 {"CenterPower",                "3"}, --Original "2.5"
-                                {"SunStrength",             "0.55"}, --Original "0.6"
                                 {"AtmosphereThickness",     "0.25"}, --Original "0.28"
                             }
                         },
@@ -754,9 +755,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"SunSize",               "0.0001"}, --Original "0.005"
-                                {"StarVisibility",          "0.85"}, --Original "0.82"
+                                {"StarVisibility",          "0.83"}, --Original "0.82"
                                 {"CenterPower",                "3"}, --Original "2.5"
-                                {"SunStrength",             "0.55"}, --Original "0.6"
                                 {"AtmosphereThickness",     "0.25"}, --Original "0.28"
                             }
                         },
@@ -819,7 +819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"R",                           "1"}, --Original "1"
                                 {"G",                           "1"}, --Original "1"
-                                {"B",                        "0.95"}, --Original "0.904"
+                                {"B",                        "0.96"}, --Original "0.904"
                                 {"A",                           "1"}, --Original "1"
                             }
                         },
