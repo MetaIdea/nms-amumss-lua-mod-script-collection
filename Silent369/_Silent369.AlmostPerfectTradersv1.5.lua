@@ -1,6 +1,6 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "v1.4"
+local lua_version = "v1.5"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
 local description = [[
@@ -12,10 +12,67 @@ Letterbox Entrance Curves.
 --GCAISPACESHIPGLOBALS.GLOBAL.MBIN
 --MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN
+--MODELS\COMMON\SPACECRAFT\SCIENTIFIC\ACCESSORIES\LANDINGGEAR\LANDINGGEAR_POD\ENTITIES\LANDINGGEAR.ENTITY.MBIN
 
-_ApproachRange = 120
-_ApproachSpeed = 150
-_AutoLandRange = 400
+--|=======================================================================================--
+
+_NoPirateAttacks = true
+_CrashShipDamage = true
+
+--|=======================================================================================--
+
+--Station Entity
+_sApproachRange = 155
+_sApproachSpeed = 160
+_sAutoLandRange = 350
+
+--Station Dock Entity
+_dApproachRange = 105
+_dApproachSpeed = 110
+_dAutoLandRange = 350
+
+--Explorer LandingGear
+_eXpAnimSpeedUp = 1.5
+
+--|=======================================================================================--
+
+TableData = TableData or {}
+
+--|=======================================================================================--
+
+--| Crashed Ships Have Less Damaged Slots / Cost Less To Repair
+--|=======================================================================================--
+if _CrashShipDamage then
+table.insert(TableData,
+                        {
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"CrashedShipBrokenSlotChance",             "0"},
+                                {"CrashedShipBrokenTechChance",             "0"},
+                                {"CrashedShipRepairSlotCostIncreaseFactor", "0"},
+                                {"CrashedShipGeneralCostDiscount",          "1"},
+                                {"CrashedShipTechSlotsCostDiscount",        "1"},
+                            }
+                        })
+end
+
+--| No Pirate Attacks On Specific Buildings (for Ship Hunters, Outposts/Planet Archives).
+--|=======================================================================================--
+if _NoPirateAttacks then
+table.insert(TableData,
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PirateAttackableBuildingClasses"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Outpost",                             "False"}, --Original "True"
+                                {"LargeBuilding",                       "False"}, --Original "True"
+                            }
+                        })
+end
+
+--|=======================================================================================--
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -26,6 +83,15 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_DESCRIPTION"]         = description,
     ["MODIFICATIONS"]           =
     {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] = TableData,
+                },
+            }
+        },
         {
             ["MBIN_CHANGE_TABLE"]   =
             {
@@ -38,9 +104,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"PlayerAutoLandRange",                   "400"}, --Original "300"
-                                {"CircleRadius",                         "1900"}, --Original "2000"
-                                {"LandingHeight",                         "8.5"}, --Original "10"
+                                {"ApproachRange",               _sApproachRange}, --Original "150"
+                                {"ApproachSpeed",               _sApproachSpeed}, --Original "150"
+                                {"PlayerAutoLandRange",         _sAutoLandRange}, --Original "300"
+                                {"CircleRadius",                         "1950"}, --Original "2000"
+                                {"LandingSpeed",                            "1"}, --Original "10"
                                 {"TakeOffHeight",                           "2"}, --Original "3"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
                                 {"TakeOffTime",                             "1"}, --Original "1"
@@ -48,6 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TakeOffSpeed",                          "550"}, --Original "500"
                                 {"TakeOffBoost",                          "130"}, --Original "120"
                                 {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
+                                {"PostTakeOffExtraPlayerSpeed",           "120"}, --Original "60"
                             }
                         },
                     }
@@ -61,11 +130,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"ApproachRange",                _ApproachRange}, --Original "100"
-                                {"ApproachSpeed",                _ApproachSpeed}, --Original "100"
-                                {"PlayerAutoLandRange",          _AutoLandRange}, --Original "300"
-                                {"CircleRadius",                          "190"}, --Original "200"
-                                {"LandingHeight",                         "8.5"}, --Original "10"
+                                {"ApproachRange",               _dApproachRange}, --Original "100"
+                                {"ApproachSpeed",               _dApproachSpeed}, --Original "100"
+                                {"PlayerAutoLandRange",         _dAutoLandRange}, --Original "300"
+                                {"CircleRadius",                          "195"}, --Original "200"
+                                {"LandingSpeed",                            "1"}, --Original "10"
                                 {"TakeOffHeight",                           "2"}, --Original "10"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
                                 {"TakeOffTime",                             "1"}, --Original "1"
@@ -73,24 +142,52 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"TakeOffSpeed",                          "120"}, --Original "100"
                                 {"TakeOffBoost",                           "12"}, --Original "10"
                                 {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
+                                {"PostTakeOffExtraPlayerSpeed",           "120"}, --Original "60"
                             }
                         },
                     }
                 },
+                            ---------------------------------------------------------------------------------------
+                            --Explorer Landing Gear Animation Speed
+                            ---------------------------------------------------------------------------------------
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\COMMON\SPACECRAFT\SCIENTIFIC\ACCESSORIES\LANDINGGEAR\LANDINGGEAR_POD\ENTITIES\LANDINGGEAR.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "LANDING"},
+                            ["SECTION_ACTIVE"]      = {1,},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Speed",           _eXpAnimSpeedUp}, --Original "1"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Anim", "TAKEOFF"},
+                            ["SECTION_ACTIVE"]      = {1,},
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Speed",           _eXpAnimSpeedUp}, --Original "1"
+                            }
+                        },
+                    }
+                },
+                            ---------------------------------------------------------------------------------------
+                            --Outpost / Planet Landing Adjustments (NPC)
+                            ---------------------------------------------------------------------------------------
                 {
                     ["MBIN_FILE_SOURCE"]    = {"GCAISPACESHIPGLOBALS.GLOBAL.MBIN",},
                     ["EXML_CHANGE_TABLE"]   =
                     {
-                            ---------------------------------------------------------------------------------------
-                            --Outpost / Planet Landing Adjustments (NPC)
-                            ---------------------------------------------------------------------------------------
                         {
                             ["SPECIAL_KEY_WORDS"]   = {"OutpostLanding", "GcSpaceshipTravelData.xml"},
                             ["REPLACE_TYPE"]        = "ALL",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinHeight",                            "12.3"}, --Original "15"
+                                {"MinHeight",                            "13.5"}, --Original "15"
                             }
                         },
                         {
@@ -99,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinHeight",                            "12.3"}, --Original "15"
+                                {"MinHeight",                            "13.5"}, --Original "15"
                             }
                         },
                             ---------------------------------------------------------------------------------------
@@ -112,51 +209,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"MinimumCircleTimeBeforeLanding",          "1"}, --Original "5"
                                 {"MinimumTimeBetweenOutpostLandings",       "1"}, --Original "3"
-                                {"SpaceStationTraderRequestTime",           "-1"}, --Original "20"
+                                {"SpaceStationTraderRequestTime",          "-1"}, --Original "20"
                                 {"FillUpOutposts",                       "True"}, --Original "False"
                                 {"DockingWaitDistance",                     "8"}, --Original "10"
-                                {"DockingLandingTime",                      "2"}, --Original "1.6"
-                                {"DockingSpringTime",                       "4"}, --Original "6"
-                                {"DockingRotateSpeed",                   "0.65"}, --Original "0.5"
-                                {"DockingLandingBounceTime",              "0.4"}, --Original "0.8"
+                                {"DockingRotateSpeed",                    "0.6"}, --Original "0.5"
+                                {"DockingLandingBounceTime",              "0.6"}, --Original "0.8"
                                 {"DockingLandingBounceHeight",            "0.4"}, --Original "0.5"
-                                {"DirectionBrakeThresholdSq",             "0.5"}, --Original "1"
-                                {"OutpostDockAIGetToApproachForce",       "0.3"}, --Original "0.5"
-                                {"OutpostDockAIGetToApproachBrakeForce",    "2"}, --Original "1"
                                 {"OutpostDockMinTipLength",                 "5"}, --Original "5"
                                 {"OutpostDockMaxTipLength",                "12"}, --Original "10"
                                 {"OutpostDockApproachUpAmount",          "0.02"}, --Original "0.1"
                                 {"OutpostToLandingDistance",               "40"}, --Original "50"
                                 {"LandingTipAngle",                        "15"}, --Original "25"
                                 {"LandingLongTipAngle",                     "6"}, --Original "10"
-                            }
-                        },
-
-                            ---------------------------------------------------------------------------------------
-                            --Crashed Ships Have Less Damaged Slots / Cost Less To Repair
-                            ---------------------------------------------------------------------------------------
-
-                        {
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"CrashedShipBrokenSlotChance",             "0"},
-                                {"CrashedShipBrokenTechChance",             "0"},
-                                {"CrashedShipRepairSlotCostIncreaseFactor", "0"},
-                                {"CrashedShipGeneralCostDiscount",          "1"},
-                                {"CrashedShipTechSlotsCostDiscount",        "1"},
-                            }
-                        },
-                            ---------------------------------------------------------------------------------------
-                            --No Pirate Attacks On Specific Buildings
-                            ---------------------------------------------------------------------------------------
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"PirateAttackableBuildingClasses"},
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Outpost",                             "False"}, --Original "True"
-                                {"LargeBuilding",                       "False"}, --Original "True"
                             }
                         },
                     }
