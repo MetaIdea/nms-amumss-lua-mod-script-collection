@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Cheap Paint 1.2.pak", 
+["MOD_FILENAME"] 			= "Cheap Paint 1.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.98",
+["NMS_VERSION"]				= "3.99",
 ["MOD_DESCRIPTION"]			= "This mods reduces cost of freighter paints",
 ["MODIFICATIONS"] 			= 
 	{

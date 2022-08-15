@@ -105,10 +105,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 3.8B.pak", 
+["MOD_FILENAME"] 			= "ReLight 3.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.97",
+["NMS_VERSION"]				= "3.99",
 ["MOD_DESCRIPTION"]			= "This mod tunes most of the lights",
 ["MODIFICATIONS"] 			= 
 	{
@@ -303,7 +303,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 									..InsertNewLight({name='pointLight70c',tx=22.66565, ty=8.0848, tz=-20,8617, g=0.851, b=0.745})
 									..InsertNewLight({name='pointLight70d',tx=22.66565, ty=5.3848, tz=-15,8617, g=0.851, b=0.745})
 									..InsertNewLight({name='pointLight70e',tx=22.66565, ty=2.6848, tz=-10,3617, g=0.851, b=0.745})
-									..InsertNewLight({name='pointLight70f',tx=22.66565, ty=0.0, tz=-4,36167, g=0.851, b=0.745}),
+									..InsertNewLight({name='pointLight70f',tx=22.66565, ty=0.0, tz=-4,36167, g=0.851, b=0.745})
+									
+									..InsertNewLight({name='pointLight8b',tx=8.0, ty=12.128, tz=48.882, i=27000, r=0.947, g=0.59, b=0.306})
+									..InsertNewLight({name='pointLight8b',tx=0.0, ty=12.128, tz=48.882, i=27000, r=0.947, g=0.59, b=0.306}),
 						},	
 						{  
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight7501",}, -- light in the middle of left stairs
@@ -312,41 +315,54 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{  
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight70",}, -- light in the middle of right stairs
 							["REMOVE"] 	= "SECTION",
-						},							
-					},
-				},
-				{    -- FREIGHTER ORANGE LIGHTS
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGARINTERIOR.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{			
-						{  
-							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"},  --pointLight5 to 10
+						},					
+						
+						{  -- Front Orange Light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "lightorange1", "Name", "INTENSITY"}, 
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",	"40000.0"},  --original : 40000
 							},
 						},	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "COL_R"},
+							["SPECIAL_KEY_WORDS"]  = {"Name", "lightorange1", "Name", "COL_R"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",	"0.3"},  
 							},
 						},							
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "COL_G"},
+							["SPECIAL_KEY_WORDS"]  = {"Name", "lightorange1", "Name", "COL_G"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",	"0.5"},  
 							},
 						},	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "COL_B"},
+							["SPECIAL_KEY_WORDS"]  = {"Name", "lightorange1", "Name", "COL_B"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Value",	"0.6"},  
 							},
+						},	
+						
+						{  -- Back strong orange light
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight8"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TransX", "-8.0"},  -- -10.0 right
+								{"TransY", "12.128"},  -- 10.128 right
+								{"TransZ", "48.882"},  -- 47.882 right
+							},
 						},							
+						{ 
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight8", "Name", "INTENSITY"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"27000.0"},  --original : 40000
+							},
+						},					
 					},
 				},
 				{    -- FREIGHTER LIGHTS UNDER STAIRS
@@ -562,139 +578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},							
 					},
-				},   
-				{  -- Removes pillar lens flare
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LAYOUTS\LAYOUTSHOP_1\LIGHTS1_MAT2.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},			
-				{  -- Removes lens flare from round passage in interior angle wall and from wall light
-					["MBIN_FILE_SOURCE"] 	= {
-					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LAYOUTS\LAYOUTSHOP_3\LIGHTS1_MAT2.MATERIAL.MBIN",
-					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLLIGHTS\WALLLIGHTA\LIGHTS1_MAT.MATERIAL.MBIN"},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},	
-				{  -- Removes Tech shop front lights lens flare from All races outposts
-					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\SCIENTIFICPARTS\MODULES\WALLMODULE_TECHSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\MODULES\WALLMODULE_TECHSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",			"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\WARRIORPARTS\MODULES\WALLSHORTMODULE_TECHSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},
-				{  -- Removes Guild shop front lights lens flare
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\GUILDSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},				
-				{  -- Removes Map shop front lights lens flare
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\MAPSHOP\LIGHTS1_MAT6.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},	
-				{  -- Removes Suit shop front lights lens flare
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\SUITSHOP\LIGHTS1_MAT2.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},				
-				{  -- Removes Mission shop front lights lens flare
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\MISSIONSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},	
-				{  -- Removes Ship shop front lights lens flare
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\SHIPSHOP\CORRIDORMODULE_STRAIGHT1_LIGHTS1_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},
-				{  -- Removes Vehicule shop front lights lens flare
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\VEHICLESHOP\CORRIDORMODULE_STRAIGHT2_LIGHTS1_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},
-				{  -- Removes Weapon shop front lights lens flare
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\SHOPS\WEAPONSHOP\CORRIDORMODULE_STRAIGHT3_LIGHTS1_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},
+				},   								
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRATE\CRATE_WEAPON.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -1707,20 +1591,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},										
 					},
 				},
-				{  -- Removes lens flare double circle lights
-					["MBIN_FILE_SOURCE"] 	= {
-					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\STANDINGLIGHTS\STANDINGLIGHTS\LIGHTS1_MAT2.MATERIAL.MBIN",},
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},						
-					},
-				},	
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\ROUNDTABLE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -1779,32 +1649,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},							
 					},
 				},
-				{    -- Stand Big white light from the first round table
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\ROUNDTABLE\LIGHTS1_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},	
-					},
-				},
-				{    -- Stand Big white light from the second round table (with moving top light)
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\ROUNDTABLEPARTS\TABLE_2\LIGHTS1_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},	
-					},
-				},
 				
 				-- SMALL HEXAGONAL TABLE WITH WHITE LIGHT STAND
 				{		
@@ -1818,21 +1662,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					},
 				},  
-				{		
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\TABLE\SMALLHEXTABLE\LIGHTS1_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"y",	"1"},  --original : 3
-							},
-						},	
-					},
-				},
-				
-				
+	
 				{  -- VERTICAL BLUE HOLO-PANEL
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\WALLMONITORS\WALLMONITORB.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
