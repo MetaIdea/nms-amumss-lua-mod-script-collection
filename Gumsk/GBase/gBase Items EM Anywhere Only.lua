@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items EM Any Only"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "398"
+GameVersion = "399"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
@@ -29,11 +29,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"BuildableOnPlanet", "False"},
 								{"BuildableOnPlanetWithProduct", "False"},
 								{"RegionLimit", EMLimit},
-							}
+							},
 						},
 					},
-				}
-			},
+				},
+			}
 		}
 	}
 }
