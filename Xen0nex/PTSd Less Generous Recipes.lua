@@ -222,6 +222,20 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_145",	2,					90},				--Makes Sodium					x2		in	90 time
+		{
+			{"PLANT_CAVE",		1},										--Requires Marrow Bulb			x1
+			{"FUEL1",			1}										--Requires Carbon				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_151",	6,					120},				--Makes Sodium					x2		in	90 time
+		{
+			{"PLANT_CAVE",		3},										--Requires Marrow Bulb			x1
+			{"FUEL2",			2}										--Requires Condensed Carbon		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
 		{"REFINERECIPE_148",	2,					90},				--Makes Sodium Nitrate			x2		in	90 time
 		{
 			{"PLANT_CAVE",		2},										--Requires Marrow Bulb			x1

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exo's Asteroid Ribbons.pak", 
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.97",
+["NMS_VERSION"]   = "3.99",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"y", "1.15"}
 							}
 						},
-												{
+						{
 							["PRECEDING_KEY_WORDS"] = {"AsteroidScaleVariance"},
 							["VALUE_CHANGE_TABLE"] = 
 							{

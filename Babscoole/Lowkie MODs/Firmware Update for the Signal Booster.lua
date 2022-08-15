@@ -1,5 +1,5 @@
-NMSVersion = "3.97"
-MODVersion = "3.97"
+NMSVersion = "3.99"
+MODVersion = "3.99"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -382,8 +382,9 @@ REWARD3 = GetReward ("PLANET_ARCHIVES", "LIBRARY")
 REWARD4 = GetReward ("R_GRAVE", "SE_GRAVE")
 REWARD5 = GetReward ("R_BASE", "SE_BASE")
 REWARD6 = GetReward ("R_GLITCH", "SE_GLITCH")
+REWARD7 = GetReward ("R_ABANDONED", "ABANDONED")
 
-REWARDSET = REWARD1..REWARD2..REWARD3..REWARD4..REWARD5..REWARD6
+REWARDSET = REWARD1..REWARD2..REWARD3..REWARD4..REWARD5..REWARD6..REWARD7
 
 --PuzzleOptions (NAME, ACTION)
 --First set of options only 4 options per set allowed
@@ -417,8 +418,9 @@ More_Options4 = GetMorePuzzleOption("?HYDRO_SCANNER")
 Menu4_Options = Menu4_Option1..Menu4_Option2..Menu4_Option3..More_Options4
 
 -- --Fifth set of options, also get a close option
-Menu5_Option1 = GetPuzzleOption("BUILDING_GLITCHYSTORYBOX", "R_GLITCH")  -- Settlement
-Menu5_Options = Menu5_Option1..All_Request_Leave
+Menu5_Option1 = GetPuzzleOption("BUILDING_GLITCHYSTORYBOX", "R_GLITCH")  -- BOUNDARY FAILURE
+Menu5_Option2 = GetPuzzleOption("BUILDING_ABANDONED", "R_ABANDONED")  -- Abandoned Building
+Menu5_Options = Menu5_Option1..Menu5_Option2..All_Request_Leave
 
 --Put all the options together.
 ALL_PUZZLE_UPDATES = [[      <Property name="Options">
@@ -487,6 +489,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"ReplaceEventIfAlreadyActive",	"True"},
 								{"InterstellarOSDMessage", "SCANEVENT_ANOTHER_SYSTEM"},
+							}
+						},
+ 						{
+							["SPECIAL_KEY_WORDS"] = {"Name","FACTORY_R",},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"ReplaceEventIfAlreadyActive",	"True"},                               
 							}
 						},
 						{

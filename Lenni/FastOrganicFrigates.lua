@@ -20,6 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"]	=	{"MissionID", "BIO_FRIG"},
+							["SECTION_ACTIVE"]		=	1,
 							["VALUE_CHANGE_TABLE"]	=
 							{
 								{"RestartOnCompletion", "True"}

@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Anti-Ophidiophobia.pak",
 ["MOD_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.97",
+["NMS_VERSION"]   = "3.99",
 ["MODIFICATIONS"] = 
 	{
 		{

@@ -1588,7 +1588,7 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole, DarkScythe"
 Description = ""
-NMS_Version = "3.98"
+NMS_Version = "3.99"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
