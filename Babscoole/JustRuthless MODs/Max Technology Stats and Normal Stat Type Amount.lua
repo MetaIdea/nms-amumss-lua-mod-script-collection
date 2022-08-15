@@ -2,8 +2,8 @@
 FileName = "Max Technology Stats and Normal Stat Type Amount.pak" -- can be changed to the name you want the mod but make sure to keep .pak at the end
 ModAuthor = "JustRuthless" -- only for reference
 LuaAuthor = "JustRuthless" -- only for reference
-ModMaintenance = "Babscoole"
-NMS_Version = "3.97" -- only for reference
+ModMaintenance = "Babscoole, DarkScythe"
+NMS_Version = "3.99" -- only for reference
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"

@@ -1591,7 +1591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "3.97",
+["NMS_VERSION"]     = "3.99",
 ["MODIFICATIONS"]   = 
 	{
 		{

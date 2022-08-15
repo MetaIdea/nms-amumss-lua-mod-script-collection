@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "NoAerialScanStarcharts.pak",
 ["MOD_DESCRIPTION"] = "Removes the fly up Aerial Scan animation when using StarCharts A-D", 
 ["MOD_AUTHOR"]      = "Babscoole", 
-["NMS_VERSION"]     = "3.98",
+["NMS_VERSION"]     = "3.99",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 						    ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_A","List","GcRewardTableItemList.xml",},
-							["REPLACE_TYPE"] = {"ALL",},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"DoAerialScan", "False"},
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},											
 						{
 						    ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_B","List","GcRewardTableItemList.xml",},
-							["REPLACE_TYPE"] = {"ALL",},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"DoAerialScan", "False"},
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 						{
 						    ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_C","List","GcRewardTableItemList.xml",},
-							["REPLACE_TYPE"] = {"ALL",},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"DoAerialScan", "False"},
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 						{
 						    ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_D","List","GcRewardTableItemList.xml",},
-							["REPLACE_TYPE"] = {"ALL",},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"DoAerialScan", "False"},

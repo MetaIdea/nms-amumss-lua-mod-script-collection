@@ -2,15 +2,15 @@ Author = "Gumsk"			--Edited by Xen0nex
 ModName = "gBase"
 ModNameSub = "Items BasicX"
 BaseDescription = "Removes restrictions on base building items, reduces effectiveness of mining machines, increases power usage of Biodomes"
-GameVersion = "398"
+GameVersion = "399"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
 MessageModRegion = 2		--Original 3/planet					~X (Vanilla is 2/Region?)
 SolarRate = 50				--Original 50
 SolarStorage = 0			--Original 0
-BioRate = 500				--Original 50
-BioStorage = 250			--Original 3600
+BioRate = 50				--Original 50
+BioStorage = 180000			--Original 180000
 BatteryRate = 0				--Original 0
 BatteryStorage = 50000		--Original 50000
 EMRate = 1					--Original 1 (C=175, B=220, A=250, S=300)
@@ -203,5 +203,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["VALUE_CHANGE_TABLE"] = {
 		{"ShowInBuildMenu", TeleportersBuildable},					--True
 		}},
-	
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_DOOR_A"},		--Making this placable with "free place" prevents you from deleting it afterwards
+	["VALUE_CHANGE_TABLE"] = {
+		{"IsPlaceable", "False"},									--False
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","FRE_FACE_WALL"},		--Making this placable with "free place" seems to just place an invisible object
+	["VALUE_CHANGE_TABLE"] = {
+		{"IsPlaceable", "False"},									--False
+		}},
+	{["SPECIAL_KEY_WORDS"] = {"ID","CORSTAIRS_SPACE"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"BuildableOnPlanet", "False"},
+		{"BuildableOnPlanetWithProduct", "False"},
+		{"BuildableOnFreighter", "False"},
+		{"BuildableOnPlanetBase", "False"},
+		{"BuildableOnSpaceBase", "False"},
+		}},
 },}},}}}

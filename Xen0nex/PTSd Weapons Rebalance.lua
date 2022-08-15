@@ -51,6 +51,9 @@ PhaseBeamLeechAmountMult =					0.5					--				Multiplier to apply to the Shield L
 LivingShipBeamLeechMult = 					0.5					--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
 LivingShipBeamLeechUpgradeMult = 			0.1					--0.05~0.3		Multiplier to apply to the Shield Leech amount bonus for upgrades to Gazing Eyes (0.05 ~ 0.3 each in vanilla, up to 6x per ship)
 
+SentWpnDMGMult =							0.75				--1~4			Sentinel Weapon Upgrade Module damage bonus (Only applies to Boltcaster?)
+SentWpnRateMult =							0.75				--1.01~1.2		Sentinel Weapon Upgrade Module firerate bonus (Only applies to Boltcaster?)
+
 --Multipliers for certain bonuses from Starship weapon upgrade modules
 PhaseBeamUpgradesHeatMult =					0.25				--				Multiplier to apply to the bonus heat time for Phase Beam upgrades (1.1 ~ 2 for Class C ~ X)
 LivingShipBeamUpgradesHeatMult =			0.25				--				Multiplier to apply to the bonus heat time for Gazing Eye upgrades (1.1 ~ 1.95 for Class C ~ S)
@@ -68,7 +71,7 @@ PhaseBeamUpgradesDMGMult =					1.0					--				Multiplier to apply to the bonus da
 LSBeamUpgradesDMGMult =						1.0					--				Multiplier to apply to the bonus damage for Gazing Eye upgrades (30 ~ 70 for Class C ~ S)
 PhotonUpgradesDMGMult =						1.1					--				Multiplier to apply to the bonus damage for Photon Cannon upgrades (8 ~ 32 for Class C ~ X)
 LSPhotonUpgradesDMGMult =					1.1					--				Multiplier to apply to the bonus damage for Spewing Vents upgrades (8 ~ 28 for Class C ~ S)
-PositronUpgradesDMGMult =					1.0*3				--				Multiplier to apply to the bonus damage for Positron upgrades (2 ~ 12 for Class C ~ X)
+PositronUpgradesDMGMult =					1.25*3				--				Multiplier to apply to the bonus damage for Positron upgrades (2 ~ 12 for Class C ~ X)
 InfraKnifeUpgradesDMGMult =					0.7					--				Multiplier to apply to the bonus damage for Infra-Knife upgrades (2 ~ 14 for Class C ~ X)
 CyclotronUpgradesDMGMult =					1.1*10				--				Multiplier to apply to the bonus damage for Cyclotron upgrades (2 ~ 14 for Class C ~ X)
 
@@ -76,7 +79,7 @@ CyclotronUpgradesDMGMult =					1.1*10				--				Multiplier to apply to the bonus 
 PlasmaLauncherDMG =							1.0					--500
 GeologyCannonDMG =							1.0					--1000
 BlazeJavelinDMG =							3.0					--1500			(500 theoretical sustained DPS)					(large DMG multiplier but also longer charge time below to make it possible with enough upgrades on a good enough Multii-Tool to one-shot both unarmored Drones and Repair Drones with the edited "Savage Sentinels" mod)
-BoltcasterDMG =								1.0					--180			(1,350 theoretical burst DPS)
+BoltcasterDMG =								0.9					--180			(1,350 theoretical burst DPS)
 ScatterBlasterDMG =							0.8					--150 x 8		(2,640 theoretical burst DPS)
 PulseSpitterDMG =							1.0					--96 x 2		(1,536 theoretical burst DPS)
 NeutronCannonDMG =							1.1					--100			(Uncharged)
@@ -90,7 +93,7 @@ LivingShipBeamDMG =							1.1					--280
 PhotonCannonDMG =							0.9*1.667			--320			(2,400 theoretical burst DPS)	Multiplied by 1.667 to balance out the 40% lower fire rate I added
 LivingShipCannonDMG =						0.9*1.667			--340			(3,400 theoretical burst DPS)	Multiplied by 1.667 to balance out the 40% lower fire rate I added
 RocketsDMG =								1.5					--6500
-PositronEjectorDMG =						0.9*0.667			--280 x 14		(7,840 theoretical burst DPS)	Multiplied by 0.667 to balance out the 50% more projectiles I added
+PositronEjectorDMG =						1.05*0.667			--280 x 14		(7,840 theoretical burst DPS)	Multiplied by 0.667 to balance out the 50% more projectiles I added
 InfraKnifeDMG =								1.0*0.75			--160 x 1		(1,845 theoretical burst DPS)	Multiplied by 0.75 to balance out the 33% faster fire rate I added
 CyclotronDMG =								0.9*5				--600 x 2		(3,600 theoretical burst DPS)	Multiplied by 5 to balance out the 80% slower fire rate I added
 
@@ -764,6 +767,10 @@ UpgradeDamageChanges =
 		{"UP_BOLT1", "UP_BOLT2", "UP_BOLT3", "UP_BOLT4", "UP_BOLTX"}
 	},
 	{
+		{"Weapon_Projectile_Damage",	SentWpnDMGMult*GMD},				--Sentinel Weapon Upgrade (only works for Boltcaster?)		
+		{"UP_SENGUN"}
+	},
+	{
 		{"Weapon_Projectile_Damage",	ScatterBlasterDMG*GMD},			--Scatter Blaster		
 		{"UP_SHOT1", "UP_SHOT2", "UP_SHOT3", "UP_SHOT4", "UP_SHOTX"}
 	},
@@ -1015,6 +1022,14 @@ UpgradeOtherChanges =
 			},
 			{
 				"UP_SBLOBX",	1.1,	1.4								--1.1,	1.4
+			},
+		}
+	},
+	{	--Sentinel Weapon upgrade (Only applies to Boltcaster?)
+		{"Weapon_Projectile_Rate",	SentWpnRateMult},					--Applies multiplier to all upgrades for this weapon
+		{
+			{--	Upgrade			Min		Max
+				"UP_SENGUN",	1.01,	1.2								--1.01,	1.2
 			},
 		}
 	},
