@@ -120,7 +120,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.royal palette.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.93,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -164,16 +164,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+			--	add to the silly fixed length array
 				SPECIAL_KEY_WORDS	= {'Name', 'BASE'},
 				ADD_OPTION			= 'AddAfterSection',
-				ADD 				= [[
-					<Property value="TkProceduralTextureLayer.xml">
-						<Property name="Name" value=""/>
-						<Property name="Probability" value="1"/>
-						<Property name="Group" value=""/>
-						<Property name="SelectToMatchBase" value="False"/>
-						<Property name="Textures"/>
-					</Property>]]
+				ADD 				= '<Property value="TkProceduralTextureLayer.xml"/>'
 			},
 		}
 	}
