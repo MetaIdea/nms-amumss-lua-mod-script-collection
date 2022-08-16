@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_DESCRIPTION"] = "quick edit to salvaged technology-data drops, from 2-4 to 5-10 or 10-20", 
   ["MOD_AUTHOR"]      = "GrandTickler", 
   ["LUA_AUTHOR"]      = "Babscoole", 
-  ["NMS_VERSION"]     = "3.97",
+  ["NMS_VERSION"]     = "3.99",
   ["MODIFICATIONS"]   = 
 	{
 		{
