@@ -1,9 +1,9 @@
-Author = "Gumsk"
+Author = "unsick"
 ModName = "gFleet Perfect Frigates"
 ModNameSub = ""
 BaseDescription = ""
 GameVersion = "399"
-ModVersion = "a"
+ModVersion = "b"
 FileSource1 = "GCFLEETGLOBALS.GLOBAL.MBIN"
 FileSource2 = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN"
 
@@ -11,6 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
 	["MOD_DESCRIPTION"]	= BaseDescription,
 	["MOD_AUTHOR"]		= Author,
+	["LUA_AUTHOR"]		= "Gumsk",
 	["NMS_VERSION"]		= GameVersion,
 	["MODIFICATIONS"]	= {
 		{
@@ -52,6 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = {
+								{"Combat",0},
 								{"Exploration",0},
 								{"Mining",0},
 								{"Diplomacy",0},
@@ -66,6 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = {
+								{"Combat",0},
 								{"Exploration",0},
 								{"Mining",0},
 								{"Diplomacy",0},
@@ -80,6 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = {
+								{"Combat",0},
 								{"Exploration",0},
 								{"Mining",0},
 								{"Diplomacy",0},
