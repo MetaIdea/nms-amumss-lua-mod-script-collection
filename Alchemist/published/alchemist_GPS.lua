@@ -4,8 +4,8 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "3-98"
-ModVersion = "2-0-1"
+GameVersion = "3-99"
+ModVersion = "2-1-0"
 
 --[[
 
@@ -15,6 +15,7 @@ METADATA/SIMULATION/MISSIONS/ENABLINGCONDITIONSTABLE.MBIN
 - ALCH_RECON_SHIP
 - ALCH_FLYBY_PORT
 - ALCH_BIOS_FREI
+- ALCH_SCAN_TASK
 
 METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN
 - ALCH_SCAN_QA
@@ -33,6 +34,8 @@ METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN
 - ALCH_SCAN_RB
 - ALCH_SCAN_RC
 - ALCH_SCAN_OA
+- ALCH_SCAN_OB
+- ALCH_SCAN_OC
 - ALCH_SCAN_GA
 - ALCH_SCAN_GB
 
@@ -95,6 +98,8 @@ METADATA/REALITY/TABLES/COSTTABLE.MBIN
 - C_ALSCAN_PMRB
 - C_ALSCAN_PMRC
 - C_ALSCAN_PMOA
+- C_ALSCAN_PMOB
+- C_ALSCAN_PMOC
 - C_ALSCAN_PMGA
 - C_ALSCAN_PMGB
 
@@ -176,10 +181,13 @@ METADATA/REALITY/TABLES/REWARDTABLE.MBIN
 - R_ALSCAN_PMRB
 - R_ALSCAN_PMRC
 - R_ALSCAN_PMOA
+- R_ALSCAN_PMOB
+- R_ALSCAN_PMOC
 - R_ALSCAN_PMGA
 - R_ALSCAN_PMGB
 
 METADATA/GAMESTATE/STATS/STATDEFINITIONSTABLE.MBIN
+- ALSCAN_CFG_CHAT
 - ALSCPB_CFG_DONE
 - ALSCPB_CFG_COST
 - ALSCPB_CFG_PASS
@@ -197,6 +205,7 @@ METADATA/GAMESTATE/MESSAGES/STATUSMESSAGEDEFINITIONS.MBIN
 - ALSCAN_CHAT
 
 METADATA/GAMESTATE/STATS/STATGROUPSTABLE.MBIN
+- ALSCAN_CFG_CHAT
 - ALSCPB_CFG_DONE
 - ALSCPB_CFG_COST
 - ALSCPB_CFG_PASS
@@ -284,7 +293,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
   -- Injected Tables
   {["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\ENABLINGCONDITIONSTABLE.MBIN",
   ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = 0,
+    {["LINE_OFFSET"] = -1,
+    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
     --
     ["PRECEDING_KEY_WORDS"] = {
@@ -387,6 +397,1227 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="CancelSetsComplete" value="False"/>
       <Property name="Dialog" value="GcAlienPuzzleTable.xml">
         <Property name="Table">
+          <Property value="GcAlienPuzzleEntry.xml">
+            <Property name="ProgressionIndex" value="-1"/>
+            <Property name="MinProgressionForSelection" value="0"/>
+            <Property name="Id" value="D_ALSCPB_HOME"/>
+            <Property name="Race" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None"/>
+            </Property>
+            <Property name="Type" value="GcInteractionType.xml">
+              <Property name="InteractionType" value="SignalScanner"/>
+            </Property>
+            <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
+              <Property name="AlienPuzzleCategory" value="Default"/>
+            </Property>
+            <Property name="AdditionalOptions" value="None"/>
+            <Property name="Title" value=""/>
+            <Property name="Text" value=""/>
+            <Property name="TextAlien" value="ALCH_BIOS_PORT_MENU_HOME_DESC"/>
+            <Property name="TranslateAlienText" value="False"/>
+            <Property name="TranslationBrackets" value="False"/>
+            <Property name="ProgressiveDialogue" value="False"/>
+            <Property name="RequiresScanEvent" value=""/>
+            <Property name="Options">
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_OPT_INIT"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_BOOT"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_SCAN_FAST"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_FAST_P1"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue"/>
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionIsMissionInProgress.xml">
+                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
+                      </Property>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_SCAN_EXACT"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCPB_PASS"/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_SBS_P1"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue"/>
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionIsMissionInProgress.xml">
+                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
+                      </Property>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue"/>
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionHasProduct.xml">
+                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                          <Property name="DefaultProductType" value="None"/>
+                        </Property>
+                        <Property name="Product" value="ACCESS1"/>
+                        <Property name="Amount" value="1"/>
+                        <Property name="SyncWithMissionFireteam" value="False"/>
+                        <Property name="ForceSearchFreighterAndChests" value="False"/>
+                        <Property name="SearchEveryShip" value="False"/>
+                        <Property name="TakeAmountFromSeasonData" value="False"/>
+                        <Property name="DependentOnSeasonMilestone" value="False"/>
+                        <Property name="UseAmountToAffordRecipe" value=""/>
+                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
+                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
+                      </Property>
+                      <Property value="GcMissionConditionHasProduct.xml">
+                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                          <Property name="DefaultProductType" value="None"/>
+                        </Property>
+                        <Property name="Product" value="ACCESS2"/>
+                        <Property name="Amount" value="1"/>
+                        <Property name="SyncWithMissionFireteam" value="False"/>
+                        <Property name="ForceSearchFreighterAndChests" value="False"/>
+                        <Property name="SearchEveryShip" value="False"/>
+                        <Property name="TakeAmountFromSeasonData" value="False"/>
+                        <Property name="DependentOnSeasonMilestone" value="False"/>
+                        <Property name="UseAmountToAffordRecipe" value=""/>
+                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
+                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
+                      </Property>
+                      <Property value="GcMissionConditionHasProduct.xml">
+                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                          <Property name="DefaultProductType" value="None"/>
+                        </Property>
+                        <Property name="Product" value="ACCESS3"/>
+                        <Property name="Amount" value="1"/>
+                        <Property name="SyncWithMissionFireteam" value="False"/>
+                        <Property name="ForceSearchFreighterAndChests" value="False"/>
+                        <Property name="SearchEveryShip" value="False"/>
+                        <Property name="TakeAmountFromSeasonData" value="False"/>
+                        <Property name="DependentOnSeasonMilestone" value="False"/>
+                        <Property name="UseAmountToAffordRecipe" value=""/>
+                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
+                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
+                      </Property>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_SCAN_EXACT"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_SBS_P1"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue"/>
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionIsMissionInProgress.xml">
+                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
+                      </Property>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AllFalse"/>
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionHasProduct.xml">
+                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                          <Property name="DefaultProductType" value="None"/>
+                        </Property>
+                        <Property name="Product" value="ACCESS1"/>
+                        <Property name="Amount" value="1"/>
+                        <Property name="SyncWithMissionFireteam" value="False"/>
+                        <Property name="ForceSearchFreighterAndChests" value="False"/>
+                        <Property name="SearchEveryShip" value="False"/>
+                        <Property name="TakeAmountFromSeasonData" value="False"/>
+                        <Property name="DependentOnSeasonMilestone" value="False"/>
+                        <Property name="UseAmountToAffordRecipe" value=""/>
+                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
+                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
+                      </Property>
+                      <Property value="GcMissionConditionHasProduct.xml">
+                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                          <Property name="DefaultProductType" value="None"/>
+                        </Property>
+                        <Property name="Product" value="ACCESS2"/>
+                        <Property name="Amount" value="1"/>
+                        <Property name="SyncWithMissionFireteam" value="False"/>
+                        <Property name="ForceSearchFreighterAndChests" value="False"/>
+                        <Property name="SearchEveryShip" value="False"/>
+                        <Property name="TakeAmountFromSeasonData" value="False"/>
+                        <Property name="DependentOnSeasonMilestone" value="False"/>
+                        <Property name="UseAmountToAffordRecipe" value=""/>
+                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
+                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
+                      </Property>
+                      <Property value="GcMissionConditionHasProduct.xml">
+                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                          <Property name="DefaultProductType" value="None"/>
+                        </Property>
+                        <Property name="Product" value="ACCESS3"/>
+                        <Property name="Amount" value="1"/>
+                        <Property name="SyncWithMissionFireteam" value="False"/>
+                        <Property name="ForceSearchFreighterAndChests" value="False"/>
+                        <Property name="SearchEveryShip" value="False"/>
+                        <Property name="TakeAmountFromSeasonData" value="False"/>
+                        <Property name="DependentOnSeasonMilestone" value="False"/>
+                        <Property name="UseAmountToAffordRecipe" value=""/>
+                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
+                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
+                      </Property>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_SCAN_EXACT"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_SBS_P1"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue"/>
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionIsMissionInProgress.xml">
+                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
+                      </Property>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_OPT_NEXT"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_UTIL"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue"/>
+                    </Property>
+                    <Property name="Conditions">
+                      <Property value="GcMissionConditionIsMissionInProgress.xml">
+                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
+                      </Property>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="D_ALSCPB_HOME_OPT_G"/>
+                <Property name="Text" value="D_ALSCPB_HOME_RES_G"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value="D_ALSCPB_HOME"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCAN_FLYBY_PR"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="D_ALSCPB_HOME_OPT_H"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCPB_FLYBY_R"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCAN_FLYBY_PR"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALL_REQUEST_LEAVE"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="True"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions"/>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+            </Property>
+            <Property name="AdditionalText"/>
+            <Property name="AdditionalTextAlien"/>
+            <Property name="Mood" value="GcAlienMood.xml">
+              <Property name="Mood" value="Neutral"/>
+            </Property>
+            <Property name="Prop" value="GcNPCPropTypes.xml">
+              <Property name="NPCProp" value="DontCare"/>
+            </Property>
+            <Property name="AdvancedInteractionFlow"/>
+            <Property name="PersistancyBufferOverride" value="None"/>
+            <Property name="CustomFreighterTextIndex" value="-1"/>
+            <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
+          </Property>
+          <Property value="GcAlienPuzzleEntry.xml">
+            <Property name="ProgressionIndex" value="-1"/>
+            <Property name="MinProgressionForSelection" value="0"/>
+            <Property name="Id" value="D_ALSCPB_UTIL"/>
+            <Property name="Race" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None"/>
+            </Property>
+            <Property name="Type" value="GcInteractionType.xml">
+              <Property name="InteractionType" value="None"/>
+            </Property>
+            <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
+              <Property name="AlienPuzzleCategory" value="Default"/>
+            </Property>
+            <Property name="AdditionalOptions" value="None"/>
+            <Property name="Title" value=""/>
+            <Property name="Text" value=""/>
+            <Property name="TextAlien" value="ALCH_BIOS_PORT_MENU_HOME_DESC"/>
+            <Property name="TranslateAlienText" value="False"/>
+            <Property name="TranslationBrackets" value="False"/>
+            <Property name="ProgressiveDialogue" value="False"/>
+            <Property name="RequiresScanEvent" value=""/>
+            <Property name="Options">
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_FLEET_RECON"/>
+                <Property name="Text" value="D_ALSCPB_UTIL_RES_A"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_FLYBY_REQ1"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
+                  </Property>
+                  <Property value="GcMissionConditionIsFrigateFlybyActive.xml">
+                    <Property name="FrigateFlybyType" value="GcFrigateFlybyType.xml">
+                      <Property name="FrigateFlybyType" value="AmbientGroup"/>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionHasFreighter.xml">
+                    <Property name="FreighterInCurrentSystem" value="No"/>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_FLEET_RECON"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCPB_NOOP_A"/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="False"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AllFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
+                  </Property>
+                  <Property value="GcMissionConditionIsFrigateFlybyActive.xml">
+                    <Property name="FrigateFlybyType" value="GcFrigateFlybyType.xml">
+                      <Property name="FrigateFlybyType" value="AmbientGroup"/>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionHasFreighter.xml">
+                    <Property name="FreighterInCurrentSystem" value="No"/>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_OPT_CONFIG"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_CONFIG"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions"/>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_OPT_BACK"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_HOME"/>
+                <Property name="SelectedOnBackOut" value="True"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions"/>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+            </Property>
+            <Property name="AdditionalText"/>
+            <Property name="AdditionalTextAlien"/>
+            <Property name="Mood" value="GcAlienMood.xml">
+              <Property name="Mood" value="Neutral"/>
+            </Property>
+            <Property name="Prop" value="GcNPCPropTypes.xml">
+              <Property name="NPCProp" value="DontCare"/>
+            </Property>
+            <Property name="AdvancedInteractionFlow"/>
+            <Property name="PersistancyBufferOverride" value="None"/>
+            <Property name="CustomFreighterTextIndex" value="-1"/>
+            <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
+          </Property>
+          <Property value="GcAlienPuzzleEntry.xml">
+            <Property name="ProgressionIndex" value="-1"/>
+            <Property name="MinProgressionForSelection" value="0"/>
+            <Property name="Id" value="D_ALSCPB_BOOT"/>
+            <Property name="Race" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None"/>
+            </Property>
+            <Property name="Type" value="GcInteractionType.xml">
+              <Property name="InteractionType" value="None"/>
+            </Property>
+            <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
+              <Property name="AlienPuzzleCategory" value="Default"/>
+            </Property>
+            <Property name="AdditionalOptions" value="None"/>
+            <Property name="Title" value=""/>
+            <Property name="Text" value=""/>
+            <Property name="TextAlien" value="D_ALSCPB_BOOT_LANG"/>
+            <Property name="TranslateAlienText" value="False"/>
+            <Property name="TranslationBrackets" value="False"/>
+            <Property name="ProgressiveDialogue" value="False"/>
+            <Property name="RequiresScanEvent" value=""/>
+            <Property name="Options">
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_OPT_YES"/>
+                <Property name="Text" value="D_ALSCPB_BOOT_RES_A"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCPB_CFG_A"/>
+                  </Property>
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_GPS_HI"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value="D_ALSCPB_HOME"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions"/>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_OPT_NO"/>
+                <Property name="Text" value="D_ALSCPB_BOOT_RES_B"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCPB_CFG_B"/>
+                  </Property>
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_GPS_HI"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value="D_ALSCPB_HOME"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions"/>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+            </Property>
+            <Property name="AdditionalText"/>
+            <Property name="AdditionalTextAlien"/>
+            <Property name="Mood" value="GcAlienMood.xml">
+              <Property name="Mood" value="Neutral"/>
+            </Property>
+            <Property name="Prop" value="GcNPCPropTypes.xml">
+              <Property name="NPCProp" value="DontCare"/>
+            </Property>
+            <Property name="AdvancedInteractionFlow"/>
+            <Property name="PersistancyBufferOverride" value="None"/>
+            <Property name="CustomFreighterTextIndex" value="-1"/>
+            <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
+          </Property>
+          <Property value="GcAlienPuzzleEntry.xml">
+            <Property name="ProgressionIndex" value="-1"/>
+            <Property name="MinProgressionForSelection" value="0"/>
+            <Property name="Id" value="D_ALSCPB_CONFIG"/>
+            <Property name="Race" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None"/>
+            </Property>
+            <Property name="Type" value="GcInteractionType.xml">
+              <Property name="InteractionType" value="None"/>
+            </Property>
+            <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
+              <Property name="AlienPuzzleCategory" value="Default"/>
+            </Property>
+            <Property name="AdditionalOptions" value="None"/>
+            <Property name="Title" value=""/>
+            <Property name="Text" value=""/>
+            <Property name="TextAlien" value="D_ALSCPB_CONFIG_LANG"/>
+            <Property name="TranslateAlienText" value="False"/>
+            <Property name="TranslationBrackets" value="False"/>
+            <Property name="ProgressiveDialogue" value="False"/>
+            <Property name="RequiresScanEvent" value=""/>
+            <Property name="Options">
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_COST_E"/>
+                <Property name="Text" value="D_ALSCPB_CONFIG_RES_A"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCPB_CST_ON"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AllFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_COST_D"/>
+                <Property name="Text" value="D_ALSCPB_CONFIG_RES_B"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCPB_CST_OFF"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AllFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_TECH_E"/>
+                <Property name="Text" value="D_ALSCPB_CONFIG_RES_C"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCPB_AP_ON"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AllFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_TECH_D"/>
+                <Property name="Text" value="D_ALSCPB_CONFIG_RES_D"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCPB_AP_OFF"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AllFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="D_ALSCPB_CONFIG_OPT_E"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_GPS_HI"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions"/>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_OPT_BACK"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCPB_UTIL"/>
+                <Property name="SelectedOnBackOut" value="True"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions"/>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+            </Property>
+            <Property name="AdditionalText"/>
+            <Property name="AdditionalTextAlien"/>
+            <Property name="Mood" value="GcAlienMood.xml">
+              <Property name="Mood" value="Neutral"/>
+            </Property>
+            <Property name="Prop" value="GcNPCPropTypes.xml">
+              <Property name="NPCProp" value="DontCare"/>
+            </Property>
+            <Property name="AdvancedInteractionFlow"/>
+            <Property name="PersistancyBufferOverride" value="None"/>
+            <Property name="CustomFreighterTextIndex" value="-1"/>
+            <Property name="RadialInteraction" value="False"/>
+            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
+              <Property name="AkEvent" value="INVALID_EVENT"/>
+            </Property>
+          </Property>
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
             <Property name="MinProgressionForSelection" value="0"/>
@@ -1071,7 +2302,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
                 <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value="SIGNALSCANNER"/>
+                <Property name="NextInteraction" value="D_ALSCPB_HOME"/>
                 <Property name="SelectedOnBackOut" value="True"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT"/>
@@ -1366,7 +2597,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
                 <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value="SIGNALSCANNER"/>
+                <Property name="NextInteraction" value="D_ALSCPB_HOME"/>
                 <Property name="SelectedOnBackOut" value="True"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT"/>
@@ -5121,924 +6352,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property value="GcAlienPuzzleEntry.xml">
             <Property name="ProgressionIndex" value="-1"/>
             <Property name="MinProgressionForSelection" value="0"/>
-            <Property name="Id" value="D_ALSCPB_BOOT"/>
-            <Property name="Race" value="GcAlienRace.xml">
-              <Property name="AlienRace" value="None"/>
-            </Property>
-            <Property name="Type" value="GcInteractionType.xml">
-              <Property name="InteractionType" value="None"/>
-            </Property>
-            <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
-              <Property name="AlienPuzzleCategory" value="Default"/>
-            </Property>
-            <Property name="AdditionalOptions" value="None"/>
-            <Property name="Title" value=""/>
-            <Property name="Text" value=""/>
-            <Property name="TextAlien" value="D_ALSCPB_BOOT_LANG"/>
-            <Property name="TranslateAlienText" value="False"/>
-            <Property name="TranslationBrackets" value="False"/>
-            <Property name="ProgressiveDialogue" value="False"/>
-            <Property name="RequiresScanEvent" value=""/>
-            <Property name="Options">
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_OPT_YES"/>
-                <Property name="Text" value="D_ALSCPB_BOOT_RES_A"/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards">
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCPB_CFG_A"/>
-                  </Property>
-                </Property>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions"/>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_OPT_NO"/>
-                <Property name="Text" value="D_ALSCPB_BOOT_RES_B"/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards">
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCPB_CFG_B"/>
-                  </Property>
-                </Property>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions"/>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-            </Property>
-            <Property name="AdditionalText"/>
-            <Property name="AdditionalTextAlien"/>
-            <Property name="Mood" value="GcAlienMood.xml">
-              <Property name="Mood" value="Neutral"/>
-            </Property>
-            <Property name="Prop" value="GcNPCPropTypes.xml">
-              <Property name="NPCProp" value="DontCare"/>
-            </Property>
-            <Property name="AdvancedInteractionFlow"/>
-            <Property name="PersistancyBufferOverride" value="None"/>
-            <Property name="CustomFreighterTextIndex" value="-1"/>
-            <Property name="RadialInteraction" value="False"/>
-            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
-              <Property name="AkEvent" value="INVALID_EVENT"/>
-            </Property>
-          </Property>
-          <Property value="GcAlienPuzzleEntry.xml">
-            <Property name="ProgressionIndex" value="-1"/>
-            <Property name="MinProgressionForSelection" value="0"/>
-            <Property name="Id" value="SIGNALSCANNER"/>
-            <Property name="Race" value="GcAlienRace.xml">
-              <Property name="AlienRace" value="None"/>
-            </Property>
-            <Property name="Type" value="GcInteractionType.xml">
-              <Property name="InteractionType" value="SignalScanner"/>
-            </Property>
-            <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
-              <Property name="AlienPuzzleCategory" value="Default"/>
-            </Property>
-            <Property name="AdditionalOptions" value="None"/>
-            <Property name="Title" value=""/>
-            <Property name="Text" value=""/>
-            <Property name="TextAlien" value="ALCH_BIOS_PORT_MENU_HOME_DESC"/>
-            <Property name="TranslateAlienText" value="False"/>
-            <Property name="TranslationBrackets" value="False"/>
-            <Property name="ProgressiveDialogue" value="False"/>
-            <Property name="RequiresScanEvent" value=""/>
-            <Property name="Options">
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_OPT_INIT"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="False"/>
-                <Property name="NextInteraction" value="D_ALSCPB_BOOT"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="0"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_SCAN_FAST"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="False"/>
-                <Property name="NextInteraction" value="D_ALSCPB_FAST_P1"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AnyTrue"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionIsMissionInProgress.xml">
-                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_SCAN_EXACT"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value="C_ALSCPB_PASS"/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="False"/>
-                <Property name="NextInteraction" value="D_ALSCPB_SBS_P1"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AnyTrue"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionIsMissionInProgress.xml">
-                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AnyTrue"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionHasProduct.xml">
-                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                          <Property name="DefaultProductType" value="None"/>
-                        </Property>
-                        <Property name="Product" value="ACCESS1"/>
-                        <Property name="Amount" value="1"/>
-                        <Property name="SyncWithMissionFireteam" value="False"/>
-                        <Property name="ForceSearchFreighterAndChests" value="False"/>
-                        <Property name="SearchEveryShip" value="False"/>
-                        <Property name="TakeAmountFromSeasonData" value="False"/>
-                        <Property name="DependentOnSeasonMilestone" value="False"/>
-                        <Property name="UseAmountToAffordRecipe" value=""/>
-                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
-                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
-                      </Property>
-                      <Property value="GcMissionConditionHasProduct.xml">
-                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                          <Property name="DefaultProductType" value="None"/>
-                        </Property>
-                        <Property name="Product" value="ACCESS2"/>
-                        <Property name="Amount" value="1"/>
-                        <Property name="SyncWithMissionFireteam" value="False"/>
-                        <Property name="ForceSearchFreighterAndChests" value="False"/>
-                        <Property name="SearchEveryShip" value="False"/>
-                        <Property name="TakeAmountFromSeasonData" value="False"/>
-                        <Property name="DependentOnSeasonMilestone" value="False"/>
-                        <Property name="UseAmountToAffordRecipe" value=""/>
-                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
-                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
-                      </Property>
-                      <Property value="GcMissionConditionHasProduct.xml">
-                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                          <Property name="DefaultProductType" value="None"/>
-                        </Property>
-                        <Property name="Product" value="ACCESS3"/>
-                        <Property name="Amount" value="1"/>
-                        <Property name="SyncWithMissionFireteam" value="False"/>
-                        <Property name="ForceSearchFreighterAndChests" value="False"/>
-                        <Property name="SearchEveryShip" value="False"/>
-                        <Property name="TakeAmountFromSeasonData" value="False"/>
-                        <Property name="DependentOnSeasonMilestone" value="False"/>
-                        <Property name="UseAmountToAffordRecipe" value=""/>
-                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
-                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_SCAN_EXACT"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="False"/>
-                <Property name="NextInteraction" value="D_ALSCPB_SBS_P1"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AnyTrue"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionIsMissionInProgress.xml">
-                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AllFalse"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionHasProduct.xml">
-                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                          <Property name="DefaultProductType" value="None"/>
-                        </Property>
-                        <Property name="Product" value="ACCESS1"/>
-                        <Property name="Amount" value="1"/>
-                        <Property name="SyncWithMissionFireteam" value="False"/>
-                        <Property name="ForceSearchFreighterAndChests" value="False"/>
-                        <Property name="SearchEveryShip" value="False"/>
-                        <Property name="TakeAmountFromSeasonData" value="False"/>
-                        <Property name="DependentOnSeasonMilestone" value="False"/>
-                        <Property name="UseAmountToAffordRecipe" value=""/>
-                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
-                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
-                      </Property>
-                      <Property value="GcMissionConditionHasProduct.xml">
-                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                          <Property name="DefaultProductType" value="None"/>
-                        </Property>
-                        <Property name="Product" value="ACCESS2"/>
-                        <Property name="Amount" value="1"/>
-                        <Property name="SyncWithMissionFireteam" value="False"/>
-                        <Property name="ForceSearchFreighterAndChests" value="False"/>
-                        <Property name="SearchEveryShip" value="False"/>
-                        <Property name="TakeAmountFromSeasonData" value="False"/>
-                        <Property name="DependentOnSeasonMilestone" value="False"/>
-                        <Property name="UseAmountToAffordRecipe" value=""/>
-                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
-                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
-                      </Property>
-                      <Property value="GcMissionConditionHasProduct.xml">
-                        <Property name="Default" value="GcDefaultMissionProductEnum.xml">
-                          <Property name="DefaultProductType" value="None"/>
-                        </Property>
-                        <Property name="Product" value="ACCESS3"/>
-                        <Property name="Amount" value="1"/>
-                        <Property name="SyncWithMissionFireteam" value="False"/>
-                        <Property name="ForceSearchFreighterAndChests" value="False"/>
-                        <Property name="SearchEveryShip" value="False"/>
-                        <Property name="TakeAmountFromSeasonData" value="False"/>
-                        <Property name="DependentOnSeasonMilestone" value="False"/>
-                        <Property name="UseAmountToAffordRecipe" value=""/>
-                        <Property name="TakeAffordRecipeFromSeasonData" value="False"/>
-                        <Property name="UseAffordRecipeForTextFormatting" value="False"/>
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_SCAN_EXACT"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="False"/>
-                <Property name="NextInteraction" value="D_ALSCPB_SBS_P1"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AnyTrue"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionIsMissionInProgress.xml">
-                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="0"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_OPT_NEXT"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="False"/>
-                <Property name="NextInteraction" value="D_ALSCPB_UTIL"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AnyTrue"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionIsMissionInProgress.xml">
-                        <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_DONE"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="SIGNALSCANNER_OPT_G"/>
-                <Property name="Text" value="SIGNALSCANNER_RES_G"/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionIsMissionInProgress.xml">
-                    <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCAN_FLYBY_PR"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="0"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="SIGNALSCANNER_OPT_H"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards">
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCPB_FLYBY_R"/>
-                  </Property>
-                </Property>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value="SIGNALSCANNER"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionIsMissionInProgress.xml">
-                    <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
-                  </Property>
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCAN_FLYBY_PR"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALL_REQUEST_LEAVE"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="True"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions"/>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-            </Property>
-            <Property name="AdditionalText"/>
-            <Property name="AdditionalTextAlien"/>
-            <Property name="Mood" value="GcAlienMood.xml">
-              <Property name="Mood" value="Neutral"/>
-            </Property>
-            <Property name="Prop" value="GcNPCPropTypes.xml">
-              <Property name="NPCProp" value="DontCare"/>
-            </Property>
-            <Property name="AdvancedInteractionFlow"/>
-            <Property name="PersistancyBufferOverride" value="None"/>
-            <Property name="CustomFreighterTextIndex" value="-1"/>
-            <Property name="RadialInteraction" value="False"/>
-            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
-              <Property name="AkEvent" value="INVALID_EVENT"/>
-            </Property>
-          </Property>
-          <Property value="GcAlienPuzzleEntry.xml">
-            <Property name="ProgressionIndex" value="-1"/>
-            <Property name="MinProgressionForSelection" value="0"/>
-            <Property name="Id" value="D_ALSCPB_UTIL"/>
-            <Property name="Race" value="GcAlienRace.xml">
-              <Property name="AlienRace" value="None"/>
-            </Property>
-            <Property name="Type" value="GcInteractionType.xml">
-              <Property name="InteractionType" value="None"/>
-            </Property>
-            <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
-              <Property name="AlienPuzzleCategory" value="Default"/>
-            </Property>
-            <Property name="AdditionalOptions" value="None"/>
-            <Property name="Title" value=""/>
-            <Property name="Text" value=""/>
-            <Property name="TextAlien" value="ALCH_BIOS_PORT_MENU_HOME_DESC"/>
-            <Property name="TranslateAlienText" value="False"/>
-            <Property name="TranslationBrackets" value="False"/>
-            <Property name="ProgressiveDialogue" value="False"/>
-            <Property name="RequiresScanEvent" value=""/>
-            <Property name="Options">
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_FLEET_RECON"/>
-                <Property name="Text" value="D_ALSCPB_UTIL_RES_A"/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value="D_ALSCPB_FLYBY_REQ1"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyTrue"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionIsMissionInProgress.xml">
-                    <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
-                  </Property>
-                  <Property value="GcMissionConditionIsFrigateFlybyActive.xml">
-                    <Property name="FrigateFlybyType" value="GcFrigateFlybyType.xml">
-                      <Property name="FrigateFlybyType" value="AmbientGroup"/>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionHasFreighter.xml">
-                    <Property name="FreighterInCurrentSystem" value="No"/>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_FLEET_RECON"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value="C_ALSCPB_NOOP_A"/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="False"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="False"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AllFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionIsMissionInProgress.xml">
-                    <Property name="MissionID" value="ALCH_FLYBY_PORT"/>
-                  </Property>
-                  <Property value="GcMissionConditionIsFrigateFlybyActive.xml">
-                    <Property name="FrigateFlybyType" value="GcFrigateFlybyType.xml">
-                      <Property name="FrigateFlybyType" value="AmbientGroup"/>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionHasFreighter.xml">
-                    <Property name="FreighterInCurrentSystem" value="No"/>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_OPT_CONFIG"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="False"/>
-                <Property name="NextInteraction" value="D_ALSCPB_CONFIG"/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions"/>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_OPT_BACK"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value="SIGNALSCANNER"/>
-                <Property name="SelectedOnBackOut" value="True"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions"/>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-            </Property>
-            <Property name="AdditionalText"/>
-            <Property name="AdditionalTextAlien"/>
-            <Property name="Mood" value="GcAlienMood.xml">
-              <Property name="Mood" value="Neutral"/>
-            </Property>
-            <Property name="Prop" value="GcNPCPropTypes.xml">
-              <Property name="NPCProp" value="DontCare"/>
-            </Property>
-            <Property name="AdvancedInteractionFlow"/>
-            <Property name="PersistancyBufferOverride" value="None"/>
-            <Property name="CustomFreighterTextIndex" value="-1"/>
-            <Property name="RadialInteraction" value="False"/>
-            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
-              <Property name="AkEvent" value="INVALID_EVENT"/>
-            </Property>
-          </Property>
-          <Property value="GcAlienPuzzleEntry.xml">
-            <Property name="ProgressionIndex" value="-1"/>
-            <Property name="MinProgressionForSelection" value="0"/>
             <Property name="Id" value="D_ALSCPB_FLYBY_REQ1"/>
             <Property name="Race" value="GcAlienRace.xml">
               <Property name="AlienRace" value="None"/>
@@ -6077,7 +6390,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6125,7 +6438,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6173,7 +6486,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6221,7 +6534,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6269,7 +6582,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6317,7 +6630,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6361,7 +6674,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value="D_ALSCPB_FLYBY_REQ2"/>
                 <Property name="SelectedOnBackOut" value="True"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6435,7 +6748,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6483,7 +6796,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6531,7 +6844,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6579,7 +6892,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="False"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -6603,303 +6916,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     </Property>
                   </Property>
                 </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_OPT_BACK"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards"/>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="True"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value="D_ALSCPB_UTIL"/>
-                <Property name="SelectedOnBackOut" value="True"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions"/>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-            </Property>
-            <Property name="AdditionalText"/>
-            <Property name="AdditionalTextAlien"/>
-            <Property name="Mood" value="GcAlienMood.xml">
-              <Property name="Mood" value="Neutral"/>
-            </Property>
-            <Property name="Prop" value="GcNPCPropTypes.xml">
-              <Property name="NPCProp" value="DontCare"/>
-            </Property>
-            <Property name="AdvancedInteractionFlow"/>
-            <Property name="PersistancyBufferOverride" value="None"/>
-            <Property name="CustomFreighterTextIndex" value="-1"/>
-            <Property name="RadialInteraction" value="False"/>
-            <Property name="NextStageAudioEventOverride" value="GcAudioWwiseEvents.xml">
-              <Property name="AkEvent" value="INVALID_EVENT"/>
-            </Property>
-          </Property>
-          <Property value="GcAlienPuzzleEntry.xml">
-            <Property name="ProgressionIndex" value="-1"/>
-            <Property name="MinProgressionForSelection" value="0"/>
-            <Property name="Id" value="D_ALSCPB_CONFIG"/>
-            <Property name="Race" value="GcAlienRace.xml">
-              <Property name="AlienRace" value="None"/>
-            </Property>
-            <Property name="Type" value="GcInteractionType.xml">
-              <Property name="InteractionType" value="None"/>
-            </Property>
-            <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
-              <Property name="AlienPuzzleCategory" value="Default"/>
-            </Property>
-            <Property name="AdditionalOptions" value="None"/>
-            <Property name="Title" value=""/>
-            <Property name="Text" value=""/>
-            <Property name="TextAlien" value="D_ALSCPB_CONFIG_LANG"/>
-            <Property name="TranslateAlienText" value="False"/>
-            <Property name="TranslationBrackets" value="False"/>
-            <Property name="ProgressiveDialogue" value="False"/>
-            <Property name="RequiresScanEvent" value=""/>
-            <Property name="Options">
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_COST_E"/>
-                <Property name="Text" value="D_ALSCPB_CONFIG_RES_A"/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards">
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCPB_CST_ON"/>
-                  </Property>
-                </Property>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AllFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_COST"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="0"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_COST_D"/>
-                <Property name="Text" value="D_ALSCPB_CONFIG_RES_B"/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards">
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCPB_CST_OFF"/>
-                  </Property>
-                </Property>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AllFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_COST"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_TECH_E"/>
-                <Property name="Text" value="D_ALSCPB_CONFIG_RES_C"/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards">
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCPB_AP_ON"/>
-                  </Property>
-                </Property>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AllFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="0"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_TECH_D"/>
-                <Property name="Text" value="D_ALSCPB_CONFIG_RES_D"/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards">
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCPB_AP_OFF"/>
-                  </Property>
-                </Property>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AllFalse"/>
-                </Property>
-                <Property name="EnablingConditions">
-                  <Property value="GcMissionConditionStatLevel.xml">
-                    <Property name="Stat" value="ALSCPB_CFG_PASS"/>
-                    <Property name="StatGroup" value="GLOBAL_STATS"/>
-                    <Property name="Level" value="1"/>
-                    <Property name="TakeLevelFromSeasonData" value="False"/>
-                    <Property name="ForceIgnoreLevelledStat" value="False"/>
-                    <Property name="CompareStat" value=""/>
-                    <Property name="DisplayMilestoneNumber" value="1"/>
-                    <Property name="Test" value="TkEqualityEnum.xml">
-                      <Property name="EqualityEnum" value="Equal"/>
-                    </Property>
-                  </Property>
-                </Property>
-                <Property name="EnablingConditionId" value=""/>
-                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-                  <Property name="gcwordcategorytableEnum" value="MISC"/>
-                </Property>
-              </Property>
-              <Property value="GcAlienPuzzleOption.xml">
-                <Property name="Name" value="D_ALSCPB_CONFIG_OPT_E"/>
-                <Property name="Text" value=""/>
-                <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value=""/>
-                <Property name="Rewards">
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCAN_GPS_HI"/>
-                  </Property>
-                </Property>
-                <Property name="Mood" value="GcAlienMood.xml">
-                  <Property name="Mood" value="Neutral"/>
-                </Property>
-                <Property name="Prop" value="GcNPCPropTypes.xml">
-                  <Property name="NPCProp" value="DontCare"/>
-                </Property>
-                <Property name="KeepOpen" value="False"/>
-                <Property name="DisplayCost" value="True"/>
-                <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
-                <Property name="SelectedOnBackOut" value="False"/>
-                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-                  <Property name="AkEvent" value="INVALID_EVENT"/>
-                </Property>
-                <Property name="TitleOverride" value=""/>
-                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-                  <Property name="ConditionTest" value="AnyFalse"/>
-                </Property>
-                <Property name="EnablingConditions"/>
                 <Property name="EnablingConditionId" value=""/>
                 <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
                   <Property name="gcwordcategorytableEnum" value="MISC"/>
@@ -6957,6 +6973,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
       </Property>
       <Property name="ScanEvents"/>
       <Property name="Rewards">
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALSCPB_FLYBY_R"/>
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll"/>
+            <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100"/>
+                <Property name="Reward" value="GcRewardMissionMessage.xml">
+                  <Property name="MessageID" value="M_ALSCAN_PFLY_R"/>
+                  <Property name="BroadcastInMultiplayer" value="False"/>
+                </Property>
+                <Property name="LabelID" value=""/>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
         <Property value="GcGenericRewardTableEntry.xml">
           <Property name="Id" value="R_ALSCPB_CFG_A"/>
           <Property name="List" value="GcRewardTableItemList.xml">
@@ -7044,7 +7078,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           </Property>
         </Property>
         <Property value="GcGenericRewardTableEntry.xml">
-          <Property name="Id" value="R_ALSCPB_FLYBY_R"/>
+          <Property name="Id" value="R_ALSCPB_CST_ON"/>
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
             <Property name="OverrideZeroSeed" value="False"/>
@@ -7052,9 +7086,75 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100"/>
-                <Property name="Reward" value="GcRewardMissionMessage.xml">
-                  <Property name="MessageID" value="M_ALSCAN_PFLY_R"/>
-                  <Property name="BroadcastInMultiplayer" value="False"/>
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="ALSCPB_CFG_COST"/>
+                  <Property name="OtherStat" value=""/>
+                  <Property name="Amount" value="1"/>
+                  <Property name="UseOtherStat" value="False"/>
+                  <Property name="ModifyType" value="Set"/>
+                </Property>
+                <Property name="LabelID" value=""/>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALSCPB_CST_OFF"/>
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll"/>
+            <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100"/>
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="ALSCPB_CFG_COST"/>
+                  <Property name="OtherStat" value=""/>
+                  <Property name="Amount" value="0"/>
+                  <Property name="UseOtherStat" value="False"/>
+                  <Property name="ModifyType" value="Set"/>
+                </Property>
+                <Property name="LabelID" value=""/>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALSCPB_AP_ON"/>
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll"/>
+            <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100"/>
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="ALSCPB_CFG_PASS"/>
+                  <Property name="OtherStat" value=""/>
+                  <Property name="Amount" value="1"/>
+                  <Property name="UseOtherStat" value="False"/>
+                  <Property name="ModifyType" value="Set"/>
+                </Property>
+                <Property name="LabelID" value=""/>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALSCPB_AP_OFF"/>
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll"/>
+            <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100"/>
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="ALSCPB_CFG_PASS"/>
+                  <Property name="OtherStat" value=""/>
+                  <Property name="Amount" value="0"/>
+                  <Property name="UseOtherStat" value="False"/>
+                  <Property name="ModifyType" value="Set"/>
                 </Property>
                 <Property name="LabelID" value=""/>
               </Property>
@@ -7211,90 +7311,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
             </Property>
           </Property>
         </Property>
-        <Property value="GcGenericRewardTableEntry.xml">
-          <Property name="Id" value="R_ALSCPB_CST_ON"/>
-          <Property name="List" value="GcRewardTableItemList.xml">
-            <Property name="RewardChoice" value="GiveAll"/>
-            <Property name="OverrideZeroSeed" value="False"/>
-            <Property name="UseInventoryChoiceOverride" value="False"/>
-            <Property name="List">
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100"/>
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="ALSCPB_CFG_COST"/>
-                  <Property name="OtherStat" value=""/>
-                  <Property name="Amount" value="1"/>
-                  <Property name="UseOtherStat" value="False"/>
-                  <Property name="ModifyType" value="Set"/>
-                </Property>
-                <Property name="LabelID" value=""/>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcGenericRewardTableEntry.xml">
-          <Property name="Id" value="R_ALSCPB_CST_OFF"/>
-          <Property name="List" value="GcRewardTableItemList.xml">
-            <Property name="RewardChoice" value="GiveAll"/>
-            <Property name="OverrideZeroSeed" value="False"/>
-            <Property name="UseInventoryChoiceOverride" value="False"/>
-            <Property name="List">
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100"/>
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="ALSCPB_CFG_COST"/>
-                  <Property name="OtherStat" value=""/>
-                  <Property name="Amount" value="0"/>
-                  <Property name="UseOtherStat" value="False"/>
-                  <Property name="ModifyType" value="Set"/>
-                </Property>
-                <Property name="LabelID" value=""/>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcGenericRewardTableEntry.xml">
-          <Property name="Id" value="R_ALSCPB_AP_ON"/>
-          <Property name="List" value="GcRewardTableItemList.xml">
-            <Property name="RewardChoice" value="GiveAll"/>
-            <Property name="OverrideZeroSeed" value="False"/>
-            <Property name="UseInventoryChoiceOverride" value="False"/>
-            <Property name="List">
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100"/>
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="ALSCPB_CFG_PASS"/>
-                  <Property name="OtherStat" value=""/>
-                  <Property name="Amount" value="1"/>
-                  <Property name="UseOtherStat" value="False"/>
-                  <Property name="ModifyType" value="Set"/>
-                </Property>
-                <Property name="LabelID" value=""/>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcGenericRewardTableEntry.xml">
-          <Property name="Id" value="R_ALSCPB_AP_OFF"/>
-          <Property name="List" value="GcRewardTableItemList.xml">
-            <Property name="RewardChoice" value="GiveAll"/>
-            <Property name="OverrideZeroSeed" value="False"/>
-            <Property name="UseInventoryChoiceOverride" value="False"/>
-            <Property name="List">
-              <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="100"/>
-                <Property name="Reward" value="GcRewardModifyStat.xml">
-                  <Property name="Stat" value="ALSCPB_CFG_PASS"/>
-                  <Property name="OtherStat" value=""/>
-                  <Property name="Amount" value="0"/>
-                  <Property name="UseOtherStat" value="False"/>
-                  <Property name="ModifyType" value="Set"/>
-                </Property>
-                <Property name="LabelID" value=""/>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
       </Property>
       <Property name="Costs">
         <Property value="GcCostTableEntry.xml">
@@ -7322,7 +7338,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DontCharge" value="True"/>
           <Property name="HideOptionAndDisplayCostOnly" value="False"/>
           <Property name="DisplayOnlyCostIfCantAfford" value="False"/>
-          <Property name="HideCostStringIfCanAfford" value="False"/>
+          <Property name="HideCostStringIfCanAfford" value="True"/>
           <Property name="RemoveOptionIfCantAfford" value="False"/>
           <Property name="MustAffordInCreative" value="True"/>
           <Property name="CannotAffordOSDMsg" value="ALCH_BIOS_PORT_ERR_NEED_PASS"/>
@@ -15277,7 +15293,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Name" value="ALCH_SCAN_PQ_OA_MENU"/>
                 <Property name="Text" value="ALCH_SCAN_PQ_OA_DESC"/>
                 <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value="C_ALSCAN_PQMD"/>
+                <Property name="Cost" value="C_ALSCAN_PQLG"/>
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCAN_PMOA"/>
@@ -15411,6 +15427,280 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 </Property>
               </Property>
               <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OB_MENU"/>
+                <Property name="Text" value="ALCH_SCAN_PQ_OB_DESC"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCAN_PQMD"/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_PMOB"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OB"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OB_MENU"/>
+                <Property name="Text" value="ALCH_SCAN_PQ_OB_DESC"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_PMOB"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OB"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OB_MENU"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCAN_PMOB"/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OB"/>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OC_MENU"/>
+                <Property name="Text" value="ALCH_SCAN_PQ_OC_DESC"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCAN_PQMD"/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_PMOC"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OC"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OC_MENU"/>
+                <Property name="Text" value="ALCH_SCAN_PQ_OC_DESC"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_PMOC"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OC"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OC_MENU"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCAN_PMOC"/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OC"/>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
                 <Property name="Name" value="ALCH_SCAN_MENU_OPT_HOME"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
@@ -15487,9 +15777,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Cost" value=""/>
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCSB_REBOOT"/>
-                  </Property>
-                  <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCSB_CFG_A"/>
                   </Property>
                 </Property>
@@ -15499,11 +15786,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSASB_HOME"/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT"/>
@@ -15525,9 +15812,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Cost" value=""/>
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCSB_REBOOT"/>
-                  </Property>
-                  <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCSB_CFG_B"/>
                   </Property>
                 </Property>
@@ -15537,11 +15821,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSASB_HOME"/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT"/>
@@ -15721,23 +16005,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="EqualityEnum" value="Equal"/>
                     </Property>
                   </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_TECH"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
                   <Property value="GcMissionConditionGroup.xml">
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue"/>
                     </Property>
                     <Property name="Conditions">
-                      <Property value="GcMissionConditionStatLevel.xml">
-                        <Property name="Stat" value="ALSCSB_CFG_TECH"/>
-                        <Property name="StatGroup" value="GLOBAL_STATS"/>
-                        <Property name="Level" value="0"/>
-                        <Property name="TakeLevelFromSeasonData" value="False"/>
-                        <Property name="ForceIgnoreLevelledStat" value="False"/>
-                        <Property name="CompareStat" value=""/>
-                        <Property name="DisplayMilestoneNumber" value="1"/>
-                        <Property name="Test" value="TkEqualityEnum.xml">
-                          <Property name="EqualityEnum" value="Equal"/>
-                        </Property>
-                      </Property>
                       <Property value="GcMissionConditionHasShip.xml">
                         <Property name="ShipType" value="GcSpaceshipClasses.xml">
                           <Property name="ShipClass" value="Alien"/>
@@ -15751,6 +16035,74 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="TakeValueFromSeasonData" value="False"/>
                       </Property>
                     </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_SCAN_EXACT"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCSB_TECHC"/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCSB_SBS_P1"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_DONE"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_TECH"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionHasShip.xml">
+                    <Property name="ShipType" value="GcSpaceshipClasses.xml">
+                      <Property name="ShipClass" value="Alien"/>
+                    </Property>
+                    <Property name="ShipInventoryClass" value="GcInventoryClass.xml">
+                      <Property name="InventoryClass" value="S"/>
+                    </Property>
+                    <Property name="CheckAllShips" value="False"/>
+                    <Property name="BetterClassMatches" value="True"/>
+                    <Property name="DontCheckType" value="False"/>
+                    <Property name="TakeValueFromSeasonData" value="False"/>
                   </Property>
                 </Property>
                 <Property name="EnablingConditionId" value=""/>
@@ -15796,35 +16148,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="EqualityEnum" value="Equal"/>
                     </Property>
                   </Property>
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AllFalse"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionStatLevel.xml">
-                        <Property name="Stat" value="ALSCSB_CFG_TECH"/>
-                        <Property name="StatGroup" value="GLOBAL_STATS"/>
-                        <Property name="Level" value="0"/>
-                        <Property name="TakeLevelFromSeasonData" value="False"/>
-                        <Property name="ForceIgnoreLevelledStat" value="False"/>
-                        <Property name="CompareStat" value=""/>
-                        <Property name="DisplayMilestoneNumber" value="1"/>
-                        <Property name="Test" value="TkEqualityEnum.xml">
-                          <Property name="EqualityEnum" value="Equal"/>
-                        </Property>
-                      </Property>
-                      <Property value="GcMissionConditionHasShip.xml">
-                        <Property name="ShipType" value="GcSpaceshipClasses.xml">
-                          <Property name="ShipClass" value="Alien"/>
-                        </Property>
-                        <Property name="ShipInventoryClass" value="GcInventoryClass.xml">
-                          <Property name="InventoryClass" value="S"/>
-                        </Property>
-                        <Property name="CheckAllShips" value="False"/>
-                        <Property name="BetterClassMatches" value="True"/>
-                        <Property name="DontCheckType" value="False"/>
-                        <Property name="TakeValueFromSeasonData" value="False"/>
-                      </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_TECH"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
                     </Property>
                   </Property>
                 </Property>
@@ -15976,23 +16309,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="GcMissionConditionLocation.xml">
                     <Property name="MissionPlayerLocation" value="InShipInPlanetOrbit"/>
                   </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_TECH"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
                   <Property value="GcMissionConditionGroup.xml">
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue"/>
                     </Property>
                     <Property name="Conditions">
-                      <Property value="GcMissionConditionStatLevel.xml">
-                        <Property name="Stat" value="ALSCSB_CFG_TECH"/>
-                        <Property name="StatGroup" value="GLOBAL_STATS"/>
-                        <Property name="Level" value="0"/>
-                        <Property name="TakeLevelFromSeasonData" value="False"/>
-                        <Property name="ForceIgnoreLevelledStat" value="False"/>
-                        <Property name="CompareStat" value=""/>
-                        <Property name="DisplayMilestoneNumber" value="1"/>
-                        <Property name="Test" value="TkEqualityEnum.xml">
-                          <Property name="EqualityEnum" value="Equal"/>
-                        </Property>
-                      </Property>
                       <Property value="GcMissionConditionHasShip.xml">
                         <Property name="ShipType" value="GcSpaceshipClasses.xml">
                           <Property name="ShipClass" value="Alien"/>
@@ -16006,6 +16339,65 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="TakeValueFromSeasonData" value="False"/>
                       </Property>
                     </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_SHIP_RECON"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCSB_TECHC"/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCSB_RECON_REQ1"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionLocation.xml">
+                    <Property name="MissionPlayerLocation" value="InShipInPlanetOrbit"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_TECH"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionHasShip.xml">
+                    <Property name="ShipType" value="GcSpaceshipClasses.xml">
+                      <Property name="ShipClass" value="Alien"/>
+                    </Property>
+                    <Property name="ShipInventoryClass" value="GcInventoryClass.xml">
+                      <Property name="InventoryClass" value="S"/>
+                    </Property>
+                    <Property name="CheckAllShips" value="False"/>
+                    <Property name="BetterClassMatches" value="True"/>
+                    <Property name="DontCheckType" value="False"/>
+                    <Property name="TakeValueFromSeasonData" value="False"/>
                   </Property>
                 </Property>
                 <Property name="EnablingConditionId" value=""/>
@@ -16042,35 +16434,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="GcMissionConditionLocation.xml">
                     <Property name="MissionPlayerLocation" value="InShipInPlanetOrbit"/>
                   </Property>
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AllFalse"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionStatLevel.xml">
-                        <Property name="Stat" value="ALSCSB_CFG_TECH"/>
-                        <Property name="StatGroup" value="GLOBAL_STATS"/>
-                        <Property name="Level" value="0"/>
-                        <Property name="TakeLevelFromSeasonData" value="False"/>
-                        <Property name="ForceIgnoreLevelledStat" value="False"/>
-                        <Property name="CompareStat" value=""/>
-                        <Property name="DisplayMilestoneNumber" value="1"/>
-                        <Property name="Test" value="TkEqualityEnum.xml">
-                          <Property name="EqualityEnum" value="Equal"/>
-                        </Property>
-                      </Property>
-                      <Property value="GcMissionConditionHasShip.xml">
-                        <Property name="ShipType" value="GcSpaceshipClasses.xml">
-                          <Property name="ShipClass" value="Alien"/>
-                        </Property>
-                        <Property name="ShipInventoryClass" value="GcInventoryClass.xml">
-                          <Property name="InventoryClass" value="S"/>
-                        </Property>
-                        <Property name="CheckAllShips" value="False"/>
-                        <Property name="BetterClassMatches" value="True"/>
-                        <Property name="DontCheckType" value="False"/>
-                        <Property name="TakeValueFromSeasonData" value="False"/>
-                      </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_TECH"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
                     </Property>
                   </Property>
                 </Property>
@@ -16118,7 +16491,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Name" value="ALCH_SCAN_MENU_PQ_NAME"/>
                 <Property name="Text" value=""/>
                 <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value="C_ALSCSB_TECHA"/>
+                <Property name="Cost" value="C_ALSCSB_TECHB"/>
                 <Property name="Rewards"/>
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral"/>
@@ -16143,23 +16516,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="GcMissionConditionLocation.xml">
                     <Property name="MissionPlayerLocation" value="InShipInSpace"/>
                   </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_TECH"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
                   <Property value="GcMissionConditionGroup.xml">
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue"/>
                     </Property>
                     <Property name="Conditions">
-                      <Property value="GcMissionConditionStatLevel.xml">
-                        <Property name="Stat" value="ALSCSB_CFG_TECH"/>
-                        <Property name="StatGroup" value="GLOBAL_STATS"/>
-                        <Property name="Level" value="0"/>
-                        <Property name="TakeLevelFromSeasonData" value="False"/>
-                        <Property name="ForceIgnoreLevelledStat" value="False"/>
-                        <Property name="CompareStat" value=""/>
-                        <Property name="DisplayMilestoneNumber" value="1"/>
-                        <Property name="Test" value="TkEqualityEnum.xml">
-                          <Property name="EqualityEnum" value="Equal"/>
-                        </Property>
-                      </Property>
                       <Property value="GcMissionConditionHasShip.xml">
                         <Property name="ShipType" value="GcSpaceshipClasses.xml">
                           <Property name="ShipClass" value="Alien"/>
@@ -16172,6 +16545,77 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         <Property name="DontCheckType" value="False"/>
                         <Property name="TakeValueFromSeasonData" value="False"/>
                       </Property>
+                      <Property value="GcMissionConditionOnMultiplayerMission.xml"/>
+                      <Property value="GcMissionConditionOnOtherSideOfPortal.xml">
+                        <Property name="TestForRegularPortal" value="True"/>
+                        <Property name="TestForStoryPortal" value="True"/>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_PQ_NAME"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCSB_TECHC"/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCSB_PL_SCAN"/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionLocation.xml">
+                    <Property name="MissionPlayerLocation" value="InShipInSpace"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_TECH"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                  <Property value="GcMissionConditionHasShip.xml">
+                    <Property name="ShipType" value="GcSpaceshipClasses.xml">
+                      <Property name="ShipClass" value="Alien"/>
+                    </Property>
+                    <Property name="ShipInventoryClass" value="GcInventoryClass.xml">
+                      <Property name="InventoryClass" value="S"/>
+                    </Property>
+                    <Property name="CheckAllShips" value="False"/>
+                    <Property name="BetterClassMatches" value="True"/>
+                    <Property name="DontCheckType" value="False"/>
+                    <Property name="TakeValueFromSeasonData" value="False"/>
+                  </Property>
+                  <Property value="GcMissionConditionGroup.xml">
+                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                      <Property name="ConditionTest" value="AnyTrue"/>
+                    </Property>
+                    <Property name="Conditions">
                       <Property value="GcMissionConditionOnMultiplayerMission.xml"/>
                       <Property value="GcMissionConditionOnOtherSideOfPortal.xml">
                         <Property name="TestForRegularPortal" value="True"/>
@@ -16214,6 +16658,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="GcMissionConditionLocation.xml">
                     <Property name="MissionPlayerLocation" value="InShipInSpace"/>
                   </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCSB_CFG_TECH"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
                   <Property value="GcMissionConditionGroup.xml">
                     <Property name="ConditionTest" value="GcMissionConditionTest.xml">
                       <Property name="ConditionTest" value="AnyTrue"/>
@@ -16223,37 +16679,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property value="GcMissionConditionOnOtherSideOfPortal.xml">
                         <Property name="TestForRegularPortal" value="True"/>
                         <Property name="TestForStoryPortal" value="True"/>
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property value="GcMissionConditionGroup.xml">
-                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
-                      <Property name="ConditionTest" value="AllFalse"/>
-                    </Property>
-                    <Property name="Conditions">
-                      <Property value="GcMissionConditionStatLevel.xml">
-                        <Property name="Stat" value="ALSCSB_CFG_TECH"/>
-                        <Property name="StatGroup" value="GLOBAL_STATS"/>
-                        <Property name="Level" value="0"/>
-                        <Property name="TakeLevelFromSeasonData" value="False"/>
-                        <Property name="ForceIgnoreLevelledStat" value="False"/>
-                        <Property name="CompareStat" value=""/>
-                        <Property name="DisplayMilestoneNumber" value="1"/>
-                        <Property name="Test" value="TkEqualityEnum.xml">
-                          <Property name="EqualityEnum" value="Equal"/>
-                        </Property>
-                      </Property>
-                      <Property value="GcMissionConditionHasShip.xml">
-                        <Property name="ShipType" value="GcSpaceshipClasses.xml">
-                          <Property name="ShipClass" value="Alien"/>
-                        </Property>
-                        <Property name="ShipInventoryClass" value="GcInventoryClass.xml">
-                          <Property name="InventoryClass" value="S"/>
-                        </Property>
-                        <Property name="CheckAllShips" value="False"/>
-                        <Property name="BetterClassMatches" value="True"/>
-                        <Property name="DontCheckType" value="False"/>
-                        <Property name="TakeValueFromSeasonData" value="False"/>
                       </Property>
                     </Property>
                   </Property>
@@ -17040,9 +17465,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCSB_CST_ON"/>
                   </Property>
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCSB_REBOOT"/>
-                  </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral"/>
@@ -17050,10 +17472,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -17091,9 +17513,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCSB_CST_OFF"/>
                   </Property>
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCSB_REBOOT"/>
-                  </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral"/>
@@ -17101,10 +17520,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -17142,9 +17561,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCSB_TCH_ON"/>
                   </Property>
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCSB_REBOOT"/>
-                  </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral"/>
@@ -17152,10 +17568,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -17193,9 +17609,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCSB_TCH_OFF"/>
                   </Property>
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCSB_REBOOT"/>
-                  </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral"/>
@@ -17203,10 +17616,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -17221,6 +17634,102 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_CHAT_E"/>
+                <Property name="Text" value="D_ALSCSB_CONFIG_RES_E"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCSB_CHT_ON"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AllFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_CHAT_D"/>
+                <Property name="Text" value="D_ALSCSB_CONFIG_RES_F"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCSB_CHT_OFF"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AllFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -17608,6 +18117,48 @@ NMS_MOD_DEFINITION_CONTAINER = {
           </Property>
         </Property>
         <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALSCSB_CHT_ON"/>
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll"/>
+            <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100"/>
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
+                  <Property name="OtherStat" value=""/>
+                  <Property name="Amount" value="0"/>
+                  <Property name="UseOtherStat" value="False"/>
+                  <Property name="ModifyType" value="Set"/>
+                </Property>
+                <Property name="LabelID" value=""/>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALSCSB_CHT_OFF"/>
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll"/>
+            <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100"/>
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
+                  <Property name="OtherStat" value=""/>
+                  <Property name="Amount" value="1"/>
+                  <Property name="UseOtherStat" value="False"/>
+                  <Property name="ModifyType" value="Set"/>
+                </Property>
+                <Property name="LabelID" value=""/>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
           <Property name="Id" value="R_ALSCSB_REBOOT"/>
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll"/>
@@ -17652,9 +18203,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DontCharge" value="False"/>
           <Property name="HideOptionAndDisplayCostOnly" value="False"/>
           <Property name="DisplayOnlyCostIfCantAfford" value="False"/>
-          <Property name="HideCostStringIfCanAfford" value="False"/>
+          <Property name="HideCostStringIfCanAfford" value="True"/>
           <Property name="RemoveOptionIfCantAfford" value="False"/>
-          <Property name="MustAffordInCreative" value="False"/>
+          <Property name="MustAffordInCreative" value="True"/>
           <Property name="CannotAffordOSDMsg" value=""/>
           <Property name="MissionMessageWhenCharged" value=""/>
           <Property name="Cost" value="GcCostInstalledTech.xml">
@@ -17668,13 +18219,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="DontCharge" value="False"/>
           <Property name="HideOptionAndDisplayCostOnly" value="False"/>
           <Property name="DisplayOnlyCostIfCantAfford" value="False"/>
-          <Property name="HideCostStringIfCanAfford" value="False"/>
+          <Property name="HideCostStringIfCanAfford" value="True"/>
           <Property name="RemoveOptionIfCantAfford" value="False"/>
-          <Property name="MustAffordInCreative" value="False"/>
+          <Property name="MustAffordInCreative" value="True"/>
           <Property name="CannotAffordOSDMsg" value=""/>
           <Property name="MissionMessageWhenCharged" value=""/>
           <Property name="Cost" value="GcCostInstalledTech.xml">
             <Property name="Id" value="SHIPSCAN_ECON"/>
+            <Property name="InventoryToCheck" value="Ship"/>
+          </Property>
+        </Property>
+        <Property value="GcCostTableEntry.xml">
+          <Property name="Id" value="C_ALSCSB_TECHC"/>
+          <Property name="DisplayCost" value="True"/>
+          <Property name="DontCharge" value="False"/>
+          <Property name="HideOptionAndDisplayCostOnly" value="False"/>
+          <Property name="DisplayOnlyCostIfCantAfford" value="False"/>
+          <Property name="HideCostStringIfCanAfford" value="True"/>
+          <Property name="RemoveOptionIfCantAfford" value="False"/>
+          <Property name="MustAffordInCreative" value="True"/>
+          <Property name="CannotAffordOSDMsg" value=""/>
+          <Property name="MissionMessageWhenCharged" value=""/>
+          <Property name="Cost" value="GcCostInstalledTech.xml">
+            <Property name="Id" value="SHIPSCAN_ALIEN"/>
             <Property name="InventoryToCheck" value="Ship"/>
           </Property>
         </Property>
@@ -17858,6 +18425,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                           </Property>
                         </Property>
                         <Property name="AllowedToFormatObjectives" value="False"/>
+                        <Property name="ForceAllowMissionRestart" value="False"/>
+                        <Property name="ForceAllowMissionRestartEvent" value=""/>
                         <Property name="DebugText" value=""/>
                         <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                           <Property name="MissionMarkup" value="None"/>
@@ -18018,6 +18587,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -18114,6 +18685,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcMissionConditionIsCurrentMission.xml"/>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -20100,6 +20673,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                           </Property>
                         </Property>
                         <Property name="AllowedToFormatObjectives" value="False"/>
+                        <Property name="ForceAllowMissionRestart" value="False"/>
+                        <Property name="ForceAllowMissionRestartEvent" value=""/>
                         <Property name="DebugText" value=""/>
                         <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                           <Property name="MissionMarkup" value="None"/>
@@ -20159,6 +20734,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                           </Property>
                         </Property>
                         <Property name="AllowedToFormatObjectives" value="False"/>
+                        <Property name="ForceAllowMissionRestart" value="False"/>
+                        <Property name="ForceAllowMissionRestartEvent" value=""/>
                         <Property name="DebugText" value=""/>
                         <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                           <Property name="MissionMarkup" value="None"/>
@@ -21413,30 +21990,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
-                <Property name="Stage" value="GcMissionSequenceReward.xml">
-                  <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
-                  <Property name="Reward" value="R_ALSCFP_FLYBY_S"/>
-                  <Property name="CanOverride" value="False"/>
-                  <Property name="Silent" value="False"/>
-                  <Property name="RewardInventoryOverride" value="None"/>
-                  <Property name="DebugText" value=""/>
-                </Property>
-              </Property>
-              <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions"/>
-                <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
-                  <Property name="MissionUpdateMessage" value="Start"/>
-                  <Property name="CustomMessageLocID" value=""/>
-                  <Property name="CustomObjectiveLocID" value=""/>
-                  <Property name="SetMissionSelected" value="True"/>
-                  <Property name="WaitForMessageOver" value="True"/>
-                  <Property name="ShowChangeMissionNotify" value="False"/>
-                  <Property name="PlayMusicSting" value="None"/>
-                  <Property name="DebugText" value=""/>
-                </Property>
-              </Property>
-              <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceGroup.xml">
                   <Property name="Silent" value="True"/>
                   <Property name="Icon" value="TkTextureResource.xml">
@@ -21500,6 +22053,30 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property name="Stages">
                     <Property value="GcGenericMissionStage.xml">
                       <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceReward.xml">
+                        <Property name="Message" value="UI_REWARD_FAILED_MSG"/>
+                        <Property name="Reward" value="R_ALSCFP_FLYBY_S"/>
+                        <Property name="CanOverride" value="False"/>
+                        <Property name="Silent" value="False"/>
+                        <Property name="RewardInventoryOverride" value="None"/>
+                        <Property name="DebugText" value=""/>
+                      </Property>
+                    </Property>
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
+                        <Property name="MissionUpdateMessage" value="Start"/>
+                        <Property name="CustomMessageLocID" value=""/>
+                        <Property name="CustomObjectiveLocID" value=""/>
+                        <Property name="SetMissionSelected" value="True"/>
+                        <Property name="WaitForMessageOver" value="True"/>
+                        <Property name="ShowChangeMissionNotify" value="False"/>
+                        <Property name="PlayMusicSting" value="None"/>
+                        <Property name="DebugText" value=""/>
+                      </Property>
+                    </Property>
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
                       <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
                         <Property name="Message" value="ALCH_FLYBY_PORT_FLYBY_R_OBJ_TIP"/>
                         <Property name="ConditionTest" value="GcMissionConditionTest.xml">
@@ -21534,6 +22111,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                           </Property>
                         </Property>
                         <Property name="AllowedToFormatObjectives" value="False"/>
+                        <Property name="ForceAllowMissionRestart" value="False"/>
+                        <Property name="ForceAllowMissionRestartEvent" value=""/>
                         <Property name="DebugText" value=""/>
                         <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                           <Property name="MissionMarkup" value="None"/>
@@ -24807,7 +25386,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Name" value="ALCH_SCAN_PQ_OA_MENU"/>
                 <Property name="Text" value="ALCH_SCAN_PQ_OA_DESC"/>
                 <Property name="IsAlien" value="False"/>
-                <Property name="Cost" value="C_ALSCAN_PQMD"/>
+                <Property name="Cost" value="C_ALSCAN_PQLG"/>
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCAN_PMOA"/>
@@ -24933,6 +25512,280 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="EnablingConditions">
                   <Property value="GcMissionConditionIsMissionInProgress.xml">
                     <Property name="MissionID" value="ALCH_SCAN_OA"/>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OB_MENU"/>
+                <Property name="Text" value="ALCH_SCAN_PQ_OB_DESC"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCAN_PQMD"/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_PMOB"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OB"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCFB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OB_MENU"/>
+                <Property name="Text" value="ALCH_SCAN_PQ_OB_DESC"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_PMOB"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OB"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCFB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OB_MENU"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCAN_PMOB"/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OB"/>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OC_MENU"/>
+                <Property name="Text" value="ALCH_SCAN_PQ_OC_DESC"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCAN_PQMD"/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_PMOC"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OC"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCFB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OC_MENU"/>
+                <Property name="Text" value="ALCH_SCAN_PQ_OC_DESC"/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCAN_PMOC"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyTrue"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OC"/>
+                  </Property>
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCFB_CFG_COST"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_PQ_OC_MENU"/>
+                <Property name="Text" value=""/>
+                <Property name="IsAlien" value="False"/>
+                <Property name="Cost" value="C_ALSCAN_PMOC"/>
+                <Property name="Rewards"/>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="False"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AnyFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionIsMissionInProgress.xml">
+                    <Property name="MissionID" value="ALCH_SCAN_OC"/>
                   </Property>
                 </Property>
                 <Property name="EnablingConditionId" value=""/>
@@ -25233,7 +26086,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value="D_ALSCFB_CONFIG"/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -25340,7 +26193,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property value="GcAlienPuzzleOption.xml">
                 <Property name="Name" value="ALCH_SCAN_MENU_OPT_YES"/>
                 <Property name="Text" value="D_ALSCFB_BOOT_RES_A"/>
-                <Property name="IsAlien" value="False"/>
+                <Property name="IsAlien" value="True"/>
                 <Property name="Cost" value=""/>
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
@@ -25353,11 +26206,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCFB_HOME"/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT"/>
@@ -25375,7 +26228,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property value="GcAlienPuzzleOption.xml">
                 <Property name="Name" value="ALCH_SCAN_MENU_OPT_NO"/>
                 <Property name="Text" value="D_ALSCFB_BOOT_RES_B"/>
-                <Property name="IsAlien" value="False"/>
+                <Property name="IsAlien" value="True"/>
                 <Property name="Cost" value=""/>
                 <Property name="Rewards">
                   <Property value="NMSString0x10.xml">
@@ -25388,11 +26241,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
-                <Property name="NextInteraction" value=""/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value="D_ALSCFB_HOME"/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                   <Property name="AkEvent" value="INVALID_EVENT"/>
@@ -25455,9 +26308,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCFB_CST_ON"/>
                   </Property>
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCFB_REBOOT"/>
-                  </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral"/>
@@ -25465,10 +26315,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -25506,9 +26356,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCFB_CST_OFF"/>
                   </Property>
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCFB_REBOOT"/>
-                  </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral"/>
@@ -25516,10 +26363,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -25557,9 +26404,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCFB_TCH_ON"/>
                   </Property>
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCFB_REBOOT"/>
-                  </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral"/>
@@ -25567,10 +26411,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -25608,9 +26452,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                   <Property value="NMSString0x10.xml">
                     <Property name="Value" value="R_ALSCFB_TCH_OFF"/>
                   </Property>
-                  <Property value="NMSString0x10.xml">
-                    <Property name="Value" value="R_ALSCFB_REBOOT"/>
-                  </Property>
                 </Property>
                 <Property name="Mood" value="GcAlienMood.xml">
                   <Property name="Mood" value="Neutral"/>
@@ -25618,10 +26459,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Prop" value="GcNPCPropTypes.xml">
                   <Property name="NPCProp" value="DontCare"/>
                 </Property>
-                <Property name="KeepOpen" value="False"/>
+                <Property name="KeepOpen" value="True"/>
                 <Property name="DisplayCost" value="True"/>
                 <Property name="TruncateCost" value="False"/>
-                <Property name="MarkInteractionComplete" value="True"/>
+                <Property name="MarkInteractionComplete" value="False"/>
                 <Property name="NextInteraction" value=""/>
                 <Property name="SelectedOnBackOut" value="False"/>
                 <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
@@ -25636,6 +26477,102 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_CHAT_E"/>
+                <Property name="Text" value="D_ALSCFB_CONFIG_RES_E"/>
+                <Property name="IsAlien" value="True"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCFB_CHT_ON"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AllFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="1"/>
+                    <Property name="TakeLevelFromSeasonData" value="False"/>
+                    <Property name="ForceIgnoreLevelledStat" value="False"/>
+                    <Property name="CompareStat" value=""/>
+                    <Property name="DisplayMilestoneNumber" value="1"/>
+                    <Property name="Test" value="TkEqualityEnum.xml">
+                      <Property name="EqualityEnum" value="Equal"/>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property name="EnablingConditionId" value=""/>
+                <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+                  <Property name="gcwordcategorytableEnum" value="MISC"/>
+                </Property>
+              </Property>
+              <Property value="GcAlienPuzzleOption.xml">
+                <Property name="Name" value="ALCH_SCAN_MENU_CONFIG_CHAT_D"/>
+                <Property name="Text" value="D_ALSCFB_CONFIG_RES_F"/>
+                <Property name="IsAlien" value="True"/>
+                <Property name="Cost" value=""/>
+                <Property name="Rewards">
+                  <Property value="NMSString0x10.xml">
+                    <Property name="Value" value="R_ALSCFB_CHT_OFF"/>
+                  </Property>
+                </Property>
+                <Property name="Mood" value="GcAlienMood.xml">
+                  <Property name="Mood" value="Neutral"/>
+                </Property>
+                <Property name="Prop" value="GcNPCPropTypes.xml">
+                  <Property name="NPCProp" value="DontCare"/>
+                </Property>
+                <Property name="KeepOpen" value="True"/>
+                <Property name="DisplayCost" value="True"/>
+                <Property name="TruncateCost" value="False"/>
+                <Property name="MarkInteractionComplete" value="False"/>
+                <Property name="NextInteraction" value=""/>
+                <Property name="SelectedOnBackOut" value="False"/>
+                <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+                  <Property name="AkEvent" value="INVALID_EVENT"/>
+                </Property>
+                <Property name="TitleOverride" value=""/>
+                <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+                  <Property name="ConditionTest" value="AllFalse"/>
+                </Property>
+                <Property name="EnablingConditions">
+                  <Property value="GcMissionConditionStatLevel.xml">
+                    <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
+                    <Property name="StatGroup" value="GLOBAL_STATS"/>
+                    <Property name="Level" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -25872,6 +26809,48 @@ NMS_MOD_DEFINITION_CONTAINER = {
             </Property>
           </Property>
         </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALSCFB_CHT_ON"/>
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll"/>
+            <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100"/>
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
+                  <Property name="OtherStat" value=""/>
+                  <Property name="Amount" value="0"/>
+                  <Property name="UseOtherStat" value="False"/>
+                  <Property name="ModifyType" value="Set"/>
+                </Property>
+                <Property name="LabelID" value=""/>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_ALSCFB_CHT_OFF"/>
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll"/>
+            <Property name="OverrideZeroSeed" value="False"/>
+            <Property name="UseInventoryChoiceOverride" value="False"/>
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100"/>
+                <Property name="Reward" value="GcRewardModifyStat.xml">
+                  <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
+                  <Property name="OtherStat" value=""/>
+                  <Property name="Amount" value="1"/>
+                  <Property name="UseOtherStat" value="False"/>
+                  <Property name="ModifyType" value="Set"/>
+                </Property>
+                <Property name="LabelID" value=""/>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
       </Property>
       <Property name="Costs">
         <Property value="GcCostTableEntry.xml">
@@ -25935,6 +26914,305 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="BlocksPinning" value="False"/>
       <Property name="TelemetryUpload" value="False"/>
       <Property name="UseSeasonTitleOverride" value="False"/>
+    </Property>
+    <Property value="GcGenericMissionSequence.xml">
+      <Property name="MissionID" value="ALCH_SCAN_TASK"/>
+      <Property name="MissionClass" value="Guide"/>
+      <Property name="MissionIsCritical" value="False"/>
+      <Property name="MissionObjective" value=""/>
+      <Property name="MissionTitles" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionSubtitles" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionDescriptions" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionA" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionB" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionC" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value=""/>
+      </Property>
+      <Property name="MissionIconSelected" value="TkTextureResource.xml">
+        <Property name="Filename" value=""/>
+      </Property>
+      <Property name="MissionIconNotSelected" value="TkTextureResource.xml">
+        <Property name="Filename" value=""/>
+      </Property>
+      <Property name="MissionPriority" value="0"/>
+      <Property name="MissionCategory" value="GcMissionCategory.xml">
+        <Property name="MissionCategory" value="Mission"/>
+      </Property>
+      <Property name="MissionPageHint" value="GcMissionPageHint.xml">
+        <Property name="MissionPageHint" value="None"/>
+      </Property>
+      <Property name="MissionPageLocID" value=""/>
+      <Property name="MissionBuildMenuHint" value=""/>
+      <Property name="MissionHasColourOverride" value="False"/>
+      <Property name="MissionColourOverride" value="Colour.xml">
+        <Property name="R" value="1"/>
+        <Property name="G" value="1"/>
+        <Property name="B" value="1"/>
+        <Property name="A" value="1"/>
+      </Property>
+      <Property name="BeginCheckFrequency" value="1"/>
+      <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
+        <Property name="PrimarySubstances"/>
+        <Property name="SecondarySubstances"/>
+        <Property name="PrimaryProducts"/>
+        <Property name="SecondaryProducts"/>
+      </Property>
+      <Property name="PrefixTitle" value="False"/>
+      <Property name="NextMissionHint" value=""/>
+      <Property name="MessageComplete" value="Never"/>
+      <Property name="MessageStart" value="Never"/>
+      <Property name="MissionBoardOptions" value="GcMissionBoardOptions.xml">
+        <Property name="Type" value="GcMissionType.xml">
+          <Property name="MissionType" value="SpaceCombat"/>
+        </Property>
+        <Property name="Difficulty" value="GcMissionDifficulty.xml">
+          <Property name="MissionDifficulty" value="Normal"/>
+        </Property>
+        <Property name="MinRank" value="0"/>
+        <Property name="CloseMissionGiver" value="False"/>
+        <Property name="IsGuildShopMission" value="False"/>
+        <Property name="IsPlanetProcMission" value="False"/>
+        <Property name="IsMultiplayerEventMission" value="False"/>
+        <Property name="RewardPenaltyOnAbandon" value=""/>
+        <Property name="Faction"/>
+        <Property name="Weighting" value="0"/>
+        <Property name="IgnoreCalculatedObjective" value="False"/>
+        <Property name="MultiplayerMissionInitialWarpScanEvent" value=""/>
+        <Property name="DefaultItemInitialWarpScanEvents"/>
+        <Property name="DefaultItemTypeForInitialWarp" value="None"/>
+        <Property name="BasePartBlueprints"/>
+      </Property>
+      <Property name="AutoStart" value="AllModes"/>
+      <Property name="RestartOnCompletion" value="False"/>
+      <Property name="CancelSetsComplete" value="False"/>
+      <Property name="Dialog" value="GcAlienPuzzleTable.xml">
+        <Property name="Table"/>
+      </Property>
+      <Property name="ScanEvents"/>
+      <Property name="Rewards"/>
+      <Property name="Costs"/>
+      <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
+        <Property name="ConditionTest" value="AnyFalse"/>
+      </Property>
+      <Property name="CancelConditionTest" value="GcMissionConditionTest.xml">
+        <Property name="ConditionTest" value="AnyFalse"/>
+      </Property>
+      <Property name="StartIsCancel" value="True"/>
+      <Property name="StartingConditions">
+        <Property value="GcMissionConditionStatLevel.xml">
+          <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
+          <Property name="StatGroup" value="GLOBAL_STATS"/>
+          <Property name="Level" value="0"/>
+          <Property name="TakeLevelFromSeasonData" value="False"/>
+          <Property name="ForceIgnoreLevelledStat" value="False"/>
+          <Property name="CompareStat" value=""/>
+          <Property name="DisplayMilestoneNumber" value="1"/>
+          <Property name="Test" value="TkEqualityEnum.xml">
+            <Property name="EqualityEnum" value="Equal"/>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="CancelingConditions"/>
+      <Property name="FinalStageVersions"/>
+      <Property name="Stages">
+        <Property value="GcGenericMissionStage.xml">
+          <Property name="Versions"/>
+          <Property name="Stage" value="GcMissionSequenceGroup.xml">
+            <Property name="Silent" value="True"/>
+            <Property name="Icon" value="TkTextureResource.xml">
+              <Property name="Filename" value=""/>
+            </Property>
+            <Property name="PageHint" value="GcMissionPageHint.xml">
+              <Property name="MissionPageHint" value="None"/>
+            </Property>
+            <Property name="PageDataLocID" value=""/>
+            <Property name="BuildMenuHint" value=""/>
+            <Property name="InventoryHint" value=""/>
+            <Property name="DebugText" value=""/>
+            <Property name="ObjectiveID" value=""/>
+            <Property name="ObjectiveTipID" value=""/>
+            <Property name="HasCategoryOverride" value="False"/>
+            <Property name="OverrideCategory" value="GcMissionCategory.xml">
+              <Property name="MissionCategory" value="Mission"/>
+            </Property>
+            <Property name="HasColourOverride" value="False"/>
+            <Property name="ColourOverride" value="Colour.xml">
+              <Property name="R" value="1"/>
+              <Property name="G" value="1"/>
+              <Property name="B" value="1"/>
+              <Property name="A" value="1"/>
+            </Property>
+            <Property name="PrefixTitle" value="False"/>
+            <Property name="PrefixTitleText" value=""/>
+            <Property name="BlockPinning" value="False"/>
+            <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+              <Property name="ConditionTest" value="AnyFalse"/>
+            </Property>
+            <Property name="RepeatLogic" value="Loop"/>
+            <Property name="IconStyle" value="Default"/>
+            <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+              <Property name="InputButton" value="None"/>
+            </Property>
+            <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+              <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+              <Property name="FormattableObjective" value=""/>
+              <Property name="FormattableObjectiveTip" value=""/>
+            </Property>
+            <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+              <Property name="TargetMissionSurveyId" value=""/>
+              <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+            </Property>
+            <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+              <Property name="HasCustomNotifyTimer" value="False"/>
+              <Property name="NotifyDisplayTime" value="32"/>
+              <Property name="NotifyPauseTime" value="30"/>
+            </Property>
+            <Property name="Conditions"/>
+            <Property name="Consequences"/>
+            <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
+                  <Property name="Message" value=""/>
+                  <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                    <Property name="ConditionTest" value="AnyTrue"/>
+                  </Property>
+                  <Property name="Conditions">
+                    <Property value="GcMissionConditionMissionMessage.xml">
+                      <Property name="Message" value="M_ALSCAN_PQ_LOOP"/>
+                    </Property>
+                  </Property>
+                  <Property name="AllowedToFormatObjectives" value="False"/>
+                  <Property name="ForceAllowMissionRestart" value="False"/>
+                  <Property name="ForceAllowMissionRestartEvent" value=""/>
+                  <Property name="DebugText" value=""/>
+                  <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
+                    <Property name="MissionMarkup" value="None"/>
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceSendChatMessage.xml">
+                  <Property name="StatusMessageId" value="ALSCAN_CHAT"/>
+                  <Property name="CustomText" value="ALCH_SCAN_TASK_NOTIF"/>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                  <Property name="Silent" value="True"/>
+                  <Property name="Icon" value="TkTextureResource.xml">
+                    <Property name="Filename" value=""/>
+                  </Property>
+                  <Property name="PageHint" value="GcMissionPageHint.xml">
+                    <Property name="MissionPageHint" value="None"/>
+                  </Property>
+                  <Property name="PageDataLocID" value=""/>
+                  <Property name="BuildMenuHint" value=""/>
+                  <Property name="InventoryHint" value=""/>
+                  <Property name="DebugText" value=""/>
+                  <Property name="ObjectiveID" value=""/>
+                  <Property name="ObjectiveTipID" value=""/>
+                  <Property name="HasCategoryOverride" value="False"/>
+                  <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                    <Property name="MissionCategory" value="Mission"/>
+                  </Property>
+                  <Property name="HasColourOverride" value="False"/>
+                  <Property name="ColourOverride" value="Colour.xml">
+                    <Property name="R" value="1"/>
+                    <Property name="G" value="1"/>
+                    <Property name="B" value="1"/>
+                    <Property name="A" value="1"/>
+                  </Property>
+                  <Property name="PrefixTitle" value="False"/>
+                  <Property name="PrefixTitleText" value=""/>
+                  <Property name="BlockPinning" value="False"/>
+                  <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                    <Property name="ConditionTest" value="AnyTrue"/>
+                  </Property>
+                  <Property name="RepeatLogic" value="None"/>
+                  <Property name="IconStyle" value="Default"/>
+                  <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                    <Property name="InputButton" value="None"/>
+                  </Property>
+                  <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                    <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                    <Property name="FormattableObjective" value=""/>
+                    <Property name="FormattableObjectiveTip" value=""/>
+                  </Property>
+                  <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                    <Property name="TargetMissionSurveyId" value=""/>
+                    <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                  </Property>
+                  <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                    <Property name="HasCustomNotifyTimer" value="False"/>
+                    <Property name="NotifyDisplayTime" value="32"/>
+                    <Property name="NotifyPauseTime" value="30"/>
+                  </Property>
+                  <Property name="Conditions">
+                    <Property value="GcMissionConditionMissionMessageWarp.xml"/>
+                    <Property value="GcMissionConditionMissionMessage.xml">
+                      <Property name="Message" value="M_ALSCAN_PQ_BOOT"/>
+                    </Property>
+                  </Property>
+                  <Property name="Consequences"/>
+                  <Property name="Stages">
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceWait.xml">
+                        <Property name="Time" value="600"/>
+                        <Property name="DebugText" value=""/>
+                        <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="ForcesPageHint" value="False"/>
+      <Property name="ForcesBuildMenuHint" value="False"/>
+      <Property name="IsProceduralAllowed" value="False"/>
+      <Property name="IsRecurring" value="False"/>
+      <Property name="IsLegacy" value="False"/>
+      <Property name="BlocksPinning" value="False"/>
+      <Property name="TelemetryUpload" value="False"/>
+      <Property name="UseSeasonTitleOverride" value="False"/>
     </Property>      
 ]]
     },
@@ -25943,7 +27221,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
   --
   {["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\NPCMISSIONTABLE.MBIN",
   ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = 0,
+    {["LINE_OFFSET"] = -1,
+    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
     --
     ["PRECEDING_KEY_WORDS"] = {
@@ -26064,7 +27343,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -26304,6 +27583,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -26612,10 +27902,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -26698,6 +27999,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -26720,6 +28023,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -26946,6 +28251,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -27043,6 +28350,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -27224,7 +28533,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -27464,6 +28773,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -27772,10 +29092,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -27858,6 +29189,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -27880,6 +29213,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -28106,6 +29441,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -28203,6 +29540,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -28384,7 +29723,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -28624,6 +29963,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -28932,10 +30282,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -29018,6 +30379,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -29040,6 +30403,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -29266,6 +30631,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -29363,6 +30730,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -29544,7 +30913,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -29784,6 +31153,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -30092,10 +31472,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -30178,6 +31569,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -30200,6 +31593,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -30426,6 +31821,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -30523,6 +31920,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -30704,7 +32103,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -30944,6 +32343,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -31252,10 +32662,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -31338,6 +32759,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -31360,6 +32783,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -31586,6 +33011,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -31683,6 +33110,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -31864,7 +33293,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -32104,6 +33533,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -32412,10 +33852,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -32498,6 +33949,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -32520,6 +33973,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -32746,6 +34201,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -32843,6 +34300,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -33024,7 +34483,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -33264,6 +34723,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -33572,10 +35042,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -33658,6 +35139,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -33680,6 +35163,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -33906,6 +35391,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -34003,6 +35490,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -34184,7 +35673,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -34424,6 +35913,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -34732,10 +36232,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -34818,6 +36329,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -34840,6 +36353,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -35066,6 +36581,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -35163,6 +36680,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -35344,7 +36863,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -35584,6 +37103,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -35892,10 +37422,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -35978,6 +37519,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -36000,6 +37543,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -36226,6 +37771,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -36323,6 +37870,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -36504,7 +38053,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -36744,6 +38293,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -37052,10 +38612,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -37138,6 +38709,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -37160,6 +38733,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -37386,6 +38961,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -37483,6 +39060,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -37664,7 +39243,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -37904,6 +39483,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -38212,10 +39802,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -38298,6 +39899,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -38320,6 +39923,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -38546,6 +40151,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -38643,6 +40250,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -38824,7 +40433,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -39064,6 +40673,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -39372,10 +40992,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -39458,6 +41089,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -39480,6 +41113,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -39706,6 +41341,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -39803,6 +41440,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -39984,7 +41623,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -40224,6 +41863,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -40532,10 +42182,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -40618,6 +42279,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -40640,6 +42303,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -40866,6 +42531,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -40963,6 +42630,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -41144,7 +42813,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -41384,6 +43053,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -41692,10 +43372,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -41778,6 +43469,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -41800,6 +43493,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -42026,6 +43721,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -42123,6 +43820,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -42304,7 +44003,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -42544,6 +44243,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -42852,10 +44562,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -42938,6 +44659,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -42960,6 +44683,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -43186,6 +44911,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -43283,6 +45010,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -43464,7 +45193,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="IsCommunityPortalOverride" value="False"/>
           <Property name="ClearForcedInteractionOnCompletion" value="False"/>
           <Property name="BuildingPreventionRadius" value="0"/>
-          <Property name="AlwaysShow" value="False"/>
+          <Property name="AlwaysShow" value="True"/>
           <Property name="NeverShow" value="False"/>
           <Property name="PlanetLabelText" value=""/>
           <Property name="SurveyDistance" value="0"/>
@@ -43481,10 +45210,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="BuildingClass" value="None"/>
           </Property>
           <Property name="AllowFriendsBases" value="False"/>
-          <Property name="ForceWideRandom" value="True"/>
+          <Property name="ForceWideRandom" value="False"/>
           <Property name="MustFindSystem" value="False"/>
           <Property name="AllowOverriddenBuildings" value="True"/>
-          <Property name="SolarSystemLocation" value="Near"/>
+          <Property name="SolarSystemLocation" value="LocalOrNear"/>
           <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False"/>
             <Property name="UseWealth" value="False"/>
@@ -43510,29 +45239,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
               </Property>
             </Property>
             <Property name="AllowUnsafeMatches" value="False"/>
-            <Property name="NeverAllowEmpty" value="False"/>
-            <Property name="NeverAllowAbandoned" value="False"/>
+            <Property name="NeverAllowEmpty" value="True"/>
+            <Property name="NeverAllowAbandoned" value="True"/>
             <Property name="RequireUndiscovered" value="True"/>
             <Property name="NeedsWaterPlanet" value="False"/>
             <Property name="NeedsPrimePlanet" value="True"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
-            <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
+            <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
-            <Property name="AnyInfestedBiome" value="True"/>
-            <Property name="NeedsBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
+            <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
             </Property>
             <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-              <Property name="BiomeSubType" value="None"/>
+              <Property name="BiomeSubType" value="HugeLush"/>
             </Property>
             <Property name="NeedsEmptySystem" value="False"/>
             <Property name="NeedsAbandonedSystem" value="False"/>
             <Property name="NeedsResourceHint" value=""/>
-            <Property name="SuitableForCreatureDiscovery" value="False"/>
+            <Property name="SuitableForCreatureDiscovery" value="True"/>
             <Property name="SuitableForCreatureTaming" value="False"/>
             <Property name="SamePlanetAsEvent" value=""/>
           </Property>
@@ -43561,29 +45290,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
               </Property>
             </Property>
             <Property name="AllowUnsafeMatches" value="False"/>
-            <Property name="NeverAllowEmpty" value="False"/>
-            <Property name="NeverAllowAbandoned" value="False"/>
+            <Property name="NeverAllowEmpty" value="True"/>
+            <Property name="NeverAllowAbandoned" value="True"/>
             <Property name="RequireUndiscovered" value="True"/>
             <Property name="NeedsWaterPlanet" value="False"/>
             <Property name="NeedsPrimePlanet" value="True"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
-            <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
+            <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
             <Property name="AnyRGBBiome" value="False"/>
-            <Property name="AnyInfestedBiome" value="True"/>
-            <Property name="NeedsBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
+            <Property name="NeedsBiome" value="True"/>
             <Property name="NeedsBiomeType" value="GcBiomeType.xml">
               <Property name="Biome" value="Lush"/>
             </Property>
             <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
-              <Property name="BiomeSubType" value="None"/>
+              <Property name="BiomeSubType" value="HugeLush"/>
             </Property>
             <Property name="NeedsEmptySystem" value="False"/>
             <Property name="NeedsAbandonedSystem" value="False"/>
             <Property name="NeedsResourceHint" value=""/>
-            <Property name="SuitableForCreatureDiscovery" value="False"/>
+            <Property name="SuitableForCreatureDiscovery" value="True"/>
             <Property name="SuitableForCreatureTaming" value="False"/>
             <Property name="SamePlanetAsEvent" value=""/>
           </Property>
@@ -43704,6 +45433,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -44012,10 +45752,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -44098,6 +45849,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -44120,6 +45873,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -44346,6 +46101,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -44443,6 +46200,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -44482,6 +46241,2386 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceEndScanEvent.xml">
                   <Property name="Event" value="SE_ALSCOA_QRY"/>
+                  <Property name="DebugText" value=""/>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
+                  <Property name="MissionUpdateMessage" value="End"/>
+                  <Property name="CustomMessageLocID" value=""/>
+                  <Property name="CustomObjectiveLocID" value=""/>
+                  <Property name="SetMissionSelected" value="False"/>
+                  <Property name="WaitForMessageOver" value="False"/>
+                  <Property name="ShowChangeMissionNotify" value="False"/>
+                  <Property name="PlayMusicSting" value="End"/>
+                  <Property name="DebugText" value=""/>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="ForcesPageHint" value="False"/>
+      <Property name="ForcesBuildMenuHint" value="False"/>
+      <Property name="IsProceduralAllowed" value="False"/>
+      <Property name="IsRecurring" value="False"/>
+      <Property name="IsLegacy" value="False"/>
+      <Property name="BlocksPinning" value="False"/>
+      <Property name="TelemetryUpload" value="False"/>
+      <Property name="UseSeasonTitleOverride" value="False"/>
+    </Property>
+    <Property value="GcGenericMissionSequence.xml">
+      <Property name="MissionID" value="ALCH_SCAN_OB"/>
+      <Property name="MissionClass" value="Secondary"/>
+      <Property name="MissionIsCritical" value="False"/>
+      <Property name="MissionObjective" value=""/>
+      <Property name="MissionTitles" value="GcNumberedTextList.xml">
+        <Property name="Format" value="ALCH_SCAN_PQ_OB_TITLE"/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionSubtitles" value="GcNumberedTextList.xml">
+        <Property name="Format" value="ALCH_PLANET_EXP_SUB_%d"/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionDescriptions" value="GcNumberedTextList.xml">
+        <Property name="Format" value="ALCH_SCAN_PQ_OB_DESC"/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionA" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionB" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionC" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.PIN.ON.DDS"/>
+      </Property>
+      <Property name="MissionIconSelected" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.PIN.ON.DDS"/>
+      </Property>
+      <Property name="MissionIconNotSelected" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.PIN.OFF.DDS"/>
+      </Property>
+      <Property name="MissionPriority" value="0"/>
+      <Property name="MissionCategory" value="GcMissionCategory.xml">
+        <Property name="MissionCategory" value="Mission"/>
+      </Property>
+      <Property name="MissionPageHint" value="GcMissionPageHint.xml">
+        <Property name="MissionPageHint" value="None"/>
+      </Property>
+      <Property name="MissionPageLocID" value=""/>
+      <Property name="MissionBuildMenuHint" value=""/>
+      <Property name="MissionHasColourOverride" value="False"/>
+      <Property name="MissionColourOverride" value="Colour.xml">
+        <Property name="R" value="1"/>
+        <Property name="G" value="1"/>
+        <Property name="B" value="1"/>
+        <Property name="A" value="1"/>
+      </Property>
+      <Property name="BeginCheckFrequency" value="1"/>
+      <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
+        <Property name="PrimarySubstances"/>
+        <Property name="SecondarySubstances"/>
+        <Property name="PrimaryProducts"/>
+        <Property name="SecondaryProducts"/>
+      </Property>
+      <Property name="PrefixTitle" value="True"/>
+      <Property name="NextMissionHint" value=""/>
+      <Property name="MessageComplete" value="Never"/>
+      <Property name="MessageStart" value="Never"/>
+      <Property name="MissionBoardOptions" value="GcMissionBoardOptions.xml">
+        <Property name="Type" value="GcMissionType.xml">
+          <Property name="MissionType" value="SpaceCombat"/>
+        </Property>
+        <Property name="Difficulty" value="GcMissionDifficulty.xml">
+          <Property name="MissionDifficulty" value="Normal"/>
+        </Property>
+        <Property name="MinRank" value="0"/>
+        <Property name="CloseMissionGiver" value="False"/>
+        <Property name="IsGuildShopMission" value="False"/>
+        <Property name="IsPlanetProcMission" value="False"/>
+        <Property name="IsMultiplayerEventMission" value="False"/>
+        <Property name="RewardPenaltyOnAbandon" value=""/>
+        <Property name="Faction"/>
+        <Property name="Weighting" value="0"/>
+        <Property name="IgnoreCalculatedObjective" value="False"/>
+        <Property name="MultiplayerMissionInitialWarpScanEvent" value=""/>
+        <Property name="DefaultItemInitialWarpScanEvents"/>
+        <Property name="DefaultItemTypeForInitialWarp" value="None"/>
+        <Property name="BasePartBlueprints"/>
+      </Property>
+      <Property name="AutoStart" value="None"/>
+      <Property name="RestartOnCompletion" value="False"/>
+      <Property name="CancelSetsComplete" value="False"/>
+      <Property name="Dialog" value="GcAlienPuzzleTable.xml">
+        <Property name="Table"/>
+      </Property>
+      <Property name="ScanEvents">
+        <Property value="GcScanEventData.xml">
+          <Property name="Name" value="SE_ALSCOB_QRY"/>
+          <Property name="ForceInteraction" value=""/>
+          <Property name="ForceInteractionType" value="GcInteractionType.xml">
+            <Property name="InteractionType" value="None"/>
+          </Property>
+          <Property name="RequireInteractionRace" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None"/>
+          </Property>
+          <Property name="ForceBroken" value="False"/>
+          <Property name="ForceFixed" value="False"/>
+          <Property name="ForceOverridesAll" value="True"/>
+          <Property name="ForceOverrideEncounter" value=""/>
+          <Property name="IsCommunityPortalOverride" value="False"/>
+          <Property name="ClearForcedInteractionOnCompletion" value="False"/>
+          <Property name="BuildingPreventionRadius" value="0"/>
+          <Property name="AlwaysShow" value="True"/>
+          <Property name="NeverShow" value="False"/>
+          <Property name="PlanetLabelText" value=""/>
+          <Property name="SurveyDistance" value="0"/>
+          <Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD"/>
+          <Property name="EventStartType" value="Special"/>
+          <Property name="EventEndType" value="None"/>
+          <Property name="EventPriority" value="Regular"/>
+          <Property name="CanEndFromOutsideMission" value="False"/>
+          <Property name="DisableMultiplayerSync" value="True"/>
+          <Property name="ReplaceEventIfAlreadyActive" value="False"/>
+          <Property name="BuildingLocation" value="PlanetSearch"/>
+          <Property name="BuildingType" value="Any"/>
+          <Property name="BuildingClass" value="GcBuildingClassification.xml">
+            <Property name="BuildingClass" value="None"/>
+          </Property>
+          <Property name="AllowFriendsBases" value="False"/>
+          <Property name="ForceWideRandom" value="False"/>
+          <Property name="MustFindSystem" value="False"/>
+          <Property name="AllowOverriddenBuildings" value="True"/>
+          <Property name="SolarSystemLocation" value="LocalOrNear"/>
+          <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
+            <Property name="UseStarType" value="False"/>
+            <Property name="UseWealth" value="False"/>
+            <Property name="UseTrading" value="False"/>
+            <Property name="UseRace" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None"/>
+            </Property>
+            <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
+              <Property name="GalaxyStarAnomaly" value="None"/>
+            </Property>
+            <Property name="UseConflict" value="GcPlayerConflictData.xml">
+              <Property name="ConflictLevel" value="Default"/>
+            </Property>
+            <Property name="StarType" value="GcGalaxyStarTypes.xml">
+              <Property name="GalaxyStarType" value="Yellow"/>
+            </Property>
+            <Property name="TradingData" value="GcPlanetTradingData.xml">
+              <Property name="WealthClass" value="GcWealthClass.xml">
+                <Property name="WealthClass" value="Average"/>
+              </Property>
+              <Property name="TradingClass" value="GcTradingClass.xml">
+                <Property name="TradingClass" value="Mining"/>
+              </Property>
+            </Property>
+            <Property name="AllowUnsafeMatches" value="False"/>
+            <Property name="NeverAllowEmpty" value="False"/>
+            <Property name="NeverAllowAbandoned" value="False"/>
+            <Property name="RequireUndiscovered" value="True"/>
+            <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="True"/>
+            <Property name="NeedsExtremeSentinelPlanet" value="False"/>
+            <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
+            <Property name="NeedsExtremeWeatherPlanet" value="True"/>
+            <Property name="NeedsExtremeHazardPlanet" value="False"/>
+            <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
+            <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
+            <Property name="NeedsBiome" value="True"/>
+            <Property name="NeedsBiomeType" value="GcBiomeType.xml">
+              <Property name="Biome" value="Lava"/>
+            </Property>
+            <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
+              <Property name="BiomeSubType" value="None"/>
+            </Property>
+            <Property name="NeedsEmptySystem" value="False"/>
+            <Property name="NeedsAbandonedSystem" value="False"/>
+            <Property name="NeedsResourceHint" value=""/>
+            <Property name="SuitableForCreatureDiscovery" value="False"/>
+            <Property name="SuitableForCreatureTaming" value="False"/>
+            <Property name="SamePlanetAsEvent" value=""/>
+          </Property>
+          <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
+            <Property name="UseStarType" value="False"/>
+            <Property name="UseWealth" value="False"/>
+            <Property name="UseTrading" value="False"/>
+            <Property name="UseRace" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None"/>
+            </Property>
+            <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
+              <Property name="GalaxyStarAnomaly" value="None"/>
+            </Property>
+            <Property name="UseConflict" value="GcPlayerConflictData.xml">
+              <Property name="ConflictLevel" value="Default"/>
+            </Property>
+            <Property name="StarType" value="GcGalaxyStarTypes.xml">
+              <Property name="GalaxyStarType" value="Yellow"/>
+            </Property>
+            <Property name="TradingData" value="GcPlanetTradingData.xml">
+              <Property name="WealthClass" value="GcWealthClass.xml">
+                <Property name="WealthClass" value="Average"/>
+              </Property>
+              <Property name="TradingClass" value="GcTradingClass.xml">
+                <Property name="TradingClass" value="Mining"/>
+              </Property>
+            </Property>
+            <Property name="AllowUnsafeMatches" value="False"/>
+            <Property name="NeverAllowEmpty" value="False"/>
+            <Property name="NeverAllowAbandoned" value="False"/>
+            <Property name="RequireUndiscovered" value="True"/>
+            <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="True"/>
+            <Property name="NeedsExtremeSentinelPlanet" value="False"/>
+            <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
+            <Property name="NeedsExtremeWeatherPlanet" value="True"/>
+            <Property name="NeedsExtremeHazardPlanet" value="False"/>
+            <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
+            <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="False"/>
+            <Property name="NeedsBiome" value="True"/>
+            <Property name="NeedsBiomeType" value="GcBiomeType.xml">
+              <Property name="Biome" value="Lava"/>
+            </Property>
+            <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
+              <Property name="BiomeSubType" value="None"/>
+            </Property>
+            <Property name="NeedsEmptySystem" value="False"/>
+            <Property name="NeedsAbandonedSystem" value="False"/>
+            <Property name="NeedsResourceHint" value=""/>
+            <Property name="SuitableForCreatureDiscovery" value="False"/>
+            <Property name="SuitableForCreatureTaming" value="False"/>
+            <Property name="SamePlanetAsEvent" value=""/>
+          </Property>
+          <Property name="ForceRestartInteraction" value="True"/>
+          <Property name="HasReward" value=""/>
+          <Property name="NextOption" value=""/>
+          <Property name="TriggerActions" value="GcScanEventTriggers.xml">
+            <Property name="Range" value="100"/>
+            <Property name="Triggers"/>
+            <Property name="AllowRetrigger" value="False"/>
+          </Property>
+          <Property name="UAsList"/>
+          <Property name="TechShopType" value="GcTechnologyCategory.xml">
+            <Property name="TechnologyCategory" value="All"/>
+          </Property>
+          <Property name="OSDMessage" value="ALCH_SCAN_PQ_OB_TITLE"/>
+          <Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM"/>
+          <Property name="MarkerLabel" value="ALCH_SCAN_PQ_OB_TITLE"/>
+          <Property name="MarkerIcon" value="TkTextureResource.xml">
+            <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS"/>
+          </Property>
+          <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
+            <Property name="ScannerIconHighlightType" value="Diamond"/>
+          </Property>
+          <Property name="StartTime" value="0"/>
+          <Property name="MessageTime" value="0"/>
+          <Property name="MessageDisplayTime" value="4"/>
+          <Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
+            <Property name="AkEvent" value="VO_TUT_COORDSRECEIVED"/>
+          </Property>
+          <Property name="IconTime" value="4"/>
+          <Property name="TooltipTime" value="10"/>
+          <Property name="TooltipRepeats" value="False"/>
+          <Property name="ShowEndTooltip" value="True"/>
+          <Property name="TooltipMessage" value=""/>
+          <Property name="ResourceOverride" value="GcResourceElement.xml">
+            <Property name="Filename" value=""/>
+            <Property name="Seed" value="GcSeed.xml">
+              <Property name="Seed" value="0"/>
+              <Property name="UseSeedValue" value="False"/>
+            </Property>
+            <Property name="AltId" value=""/>
+            <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+              <Property name="Samplers"/>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Rewards"/>
+      <Property name="Costs"/>
+      <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
+        <Property name="ConditionTest" value="AnyFalse"/>
+      </Property>
+      <Property name="CancelConditionTest" value="GcMissionConditionTest.xml">
+        <Property name="ConditionTest" value="AnyFalse"/>
+      </Property>
+      <Property name="StartIsCancel" value="False"/>
+      <Property name="StartingConditions"/>
+      <Property name="CancelingConditions"/>
+      <Property name="FinalStageVersions"/>
+      <Property name="Stages">
+        <Property value="GcGenericMissionStage.xml">
+          <Property name="Versions"/>
+          <Property name="Stage" value="GcMissionSequenceGroup.xml">
+            <Property name="Silent" value="True"/>
+            <Property name="Icon" value="TkTextureResource.xml">
+              <Property name="Filename" value=""/>
+            </Property>
+            <Property name="PageHint" value="GcMissionPageHint.xml">
+              <Property name="MissionPageHint" value="None"/>
+            </Property>
+            <Property name="PageDataLocID" value=""/>
+            <Property name="BuildMenuHint" value=""/>
+            <Property name="InventoryHint" value=""/>
+            <Property name="DebugText" value=""/>
+            <Property name="ObjectiveID" value=""/>
+            <Property name="ObjectiveTipID" value=""/>
+            <Property name="HasCategoryOverride" value="False"/>
+            <Property name="OverrideCategory" value="GcMissionCategory.xml">
+              <Property name="MissionCategory" value="Mission"/>
+            </Property>
+            <Property name="HasColourOverride" value="False"/>
+            <Property name="ColourOverride" value="Colour.xml">
+              <Property name="R" value="1"/>
+              <Property name="G" value="1"/>
+              <Property name="B" value="1"/>
+              <Property name="A" value="1"/>
+            </Property>
+            <Property name="PrefixTitle" value="False"/>
+            <Property name="PrefixTitleText" value=""/>
+            <Property name="BlockPinning" value="False"/>
+            <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+              <Property name="ConditionTest" value="AnyFalse"/>
+            </Property>
+            <Property name="RepeatLogic" value="None"/>
+            <Property name="IconStyle" value="Default"/>
+            <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+              <Property name="InputButton" value="None"/>
+            </Property>
+            <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+              <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+              <Property name="FormattableObjective" value=""/>
+              <Property name="FormattableObjectiveTip" value=""/>
+            </Property>
+            <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+              <Property name="TargetMissionSurveyId" value=""/>
+              <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+            </Property>
+            <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+              <Property name="HasCustomNotifyTimer" value="False"/>
+              <Property name="NotifyDisplayTime" value="32"/>
+              <Property name="NotifyPauseTime" value="30"/>
+            </Property>
+            <Property name="Conditions"/>
+            <Property name="Consequences"/>
+            <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
+                  <Property name="MissionUpdateMessage" value="Start"/>
+                  <Property name="CustomMessageLocID" value=""/>
+                  <Property name="CustomObjectiveLocID" value=""/>
+                  <Property name="SetMissionSelected" value="True"/>
+                  <Property name="WaitForMessageOver" value="False"/>
+                  <Property name="ShowChangeMissionNotify" value="False"/>
+                  <Property name="PlayMusicSting" value="Start"/>
+                  <Property name="DebugText" value=""/>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                  <Property name="Silent" value="True"/>
+                  <Property name="Icon" value="TkTextureResource.xml">
+                    <Property name="Filename" value=""/>
+                  </Property>
+                  <Property name="PageHint" value="GcMissionPageHint.xml">
+                    <Property name="MissionPageHint" value="None"/>
+                  </Property>
+                  <Property name="PageDataLocID" value=""/>
+                  <Property name="BuildMenuHint" value=""/>
+                  <Property name="InventoryHint" value=""/>
+                  <Property name="DebugText" value=""/>
+                  <Property name="ObjectiveID" value=""/>
+                  <Property name="ObjectiveTipID" value=""/>
+                  <Property name="HasCategoryOverride" value="False"/>
+                  <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                    <Property name="MissionCategory" value="Mission"/>
+                  </Property>
+                  <Property name="HasColourOverride" value="False"/>
+                  <Property name="ColourOverride" value="Colour.xml">
+                    <Property name="R" value="1"/>
+                    <Property name="G" value="1"/>
+                    <Property name="B" value="1"/>
+                    <Property name="A" value="1"/>
+                  </Property>
+                  <Property name="PrefixTitle" value="False"/>
+                  <Property name="PrefixTitleText" value=""/>
+                  <Property name="BlockPinning" value="False"/>
+                  <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                    <Property name="ConditionTest" value="AnyTrue"/>
+                  </Property>
+                  <Property name="RepeatLogic" value="Loop"/>
+                  <Property name="IconStyle" value="Default"/>
+                  <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                    <Property name="InputButton" value="None"/>
+                  </Property>
+                  <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                    <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                    <Property name="FormattableObjective" value=""/>
+                    <Property name="FormattableObjectiveTip" value=""/>
+                  </Property>
+                  <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                    <Property name="TargetMissionSurveyId" value=""/>
+                    <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                  </Property>
+                  <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                    <Property name="HasCustomNotifyTimer" value="False"/>
+                    <Property name="NotifyDisplayTime" value="32"/>
+                    <Property name="NotifyPauseTime" value="30"/>
+                  </Property>
+                  <Property name="Conditions">
+                    <Property value="GcMissionConditionIsScanEventActive.xml">
+                      <Property name="Event" value="SE_ALSCOB_QRY"/>
+                      <Property name="MustMatchThisMissionSeed" value="True"/>
+                    </Property>
+                  </Property>
+                  <Property name="Consequences"/>
+                  <Property name="Stages">
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceWait.xml">
+                        <Property name="Time" value="2"/>
+                        <Property name="DebugText" value=""/>
+                        <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                      </Property>
+                    </Property>
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                        <Property name="Silent" value="False"/>
+                        <Property name="Icon" value="TkTextureResource.xml">
+                          <Property name="Filename" value=""/>
+                        </Property>
+                        <Property name="PageHint" value="GcMissionPageHint.xml">
+                          <Property name="MissionPageHint" value="None"/>
+                        </Property>
+                        <Property name="PageDataLocID" value=""/>
+                        <Property name="BuildMenuHint" value=""/>
+                        <Property name="InventoryHint" value=""/>
+                        <Property name="DebugText" value=""/>
+                        <Property name="ObjectiveID" value="ALCH_SCAN_PQ_SEARCH_OBJ"/>
+                        <Property name="ObjectiveTipID" value="ALCH_SCAN_PQ_SEARCH_OBJ_TIP"/>
+                        <Property name="HasCategoryOverride" value="False"/>
+                        <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                          <Property name="MissionCategory" value="Mission"/>
+                        </Property>
+                        <Property name="HasColourOverride" value="False"/>
+                        <Property name="ColourOverride" value="Colour.xml">
+                          <Property name="R" value="1"/>
+                          <Property name="G" value="1"/>
+                          <Property name="B" value="1"/>
+                          <Property name="A" value="1"/>
+                        </Property>
+                        <Property name="PrefixTitle" value="False"/>
+                        <Property name="PrefixTitleText" value=""/>
+                        <Property name="BlockPinning" value="False"/>
+                        <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                          <Property name="ConditionTest" value="AllFalse"/>
+                        </Property>
+                        <Property name="RepeatLogic" value="None"/>
+                        <Property name="IconStyle" value="Default"/>
+                        <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                          <Property name="InputButton" value="None"/>
+                        </Property>
+                        <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                          <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                          <Property name="FormattableObjective" value=""/>
+                          <Property name="FormattableObjectiveTip" value=""/>
+                        </Property>
+                        <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                          <Property name="TargetMissionSurveyId" value=""/>
+                          <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                        </Property>
+                        <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                          <Property name="HasCustomNotifyTimer" value="False"/>
+                          <Property name="NotifyDisplayTime" value="32"/>
+                          <Property name="NotifyPauseTime" value="30"/>
+                        </Property>
+                        <Property name="Conditions">
+                          <Property value="GcMissionConditionOnMultiplayerMission.xml"/>
+                          <Property value="GcMissionConditionOnOtherSideOfPortal.xml">
+                            <Property name="TestForRegularPortal" value="True"/>
+                            <Property name="TestForStoryPortal" value="True"/>
+                          </Property>
+                        </Property>
+                        <Property name="Consequences"/>
+                        <Property name="Stages">
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceStop.xml">
+                              <Property name="Message" value=""/>
+                              <Property name="DebugText" value=""/>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                        <Property name="Silent" value="False"/>
+                        <Property name="Icon" value="TkTextureResource.xml">
+                          <Property name="Filename" value=""/>
+                        </Property>
+                        <Property name="PageHint" value="GcMissionPageHint.xml">
+                          <Property name="MissionPageHint" value="None"/>
+                        </Property>
+                        <Property name="PageDataLocID" value=""/>
+                        <Property name="BuildMenuHint" value=""/>
+                        <Property name="InventoryHint" value=""/>
+                        <Property name="DebugText" value=""/>
+                        <Property name="ObjectiveID" value="ALCH_SCAN_PQ_ACTIVE_OBJ"/>
+                        <Property name="ObjectiveTipID" value="ALCH_SCAN_PQ_ACTIVE_OBJ_TIP"/>
+                        <Property name="HasCategoryOverride" value="False"/>
+                        <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                          <Property name="MissionCategory" value="Mission"/>
+                        </Property>
+                        <Property name="HasColourOverride" value="False"/>
+                        <Property name="ColourOverride" value="Colour.xml">
+                          <Property name="R" value="1"/>
+                          <Property name="G" value="1"/>
+                          <Property name="B" value="1"/>
+                          <Property name="A" value="1"/>
+                        </Property>
+                        <Property name="PrefixTitle" value="False"/>
+                        <Property name="PrefixTitleText" value=""/>
+                        <Property name="BlockPinning" value="False"/>
+                        <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                          <Property name="ConditionTest" value="AnyTrue"/>
+                        </Property>
+                        <Property name="RepeatLogic" value="None"/>
+                        <Property name="IconStyle" value="Default"/>
+                        <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                          <Property name="InputButton" value="None"/>
+                        </Property>
+                        <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                          <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                          <Property name="FormattableObjective" value=""/>
+                          <Property name="FormattableObjectiveTip" value=""/>
+                        </Property>
+                        <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                          <Property name="TargetMissionSurveyId" value=""/>
+                          <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                        </Property>
+                        <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                          <Property name="HasCustomNotifyTimer" value="False"/>
+                          <Property name="NotifyDisplayTime" value="32"/>
+                          <Property name="NotifyPauseTime" value="30"/>
+                        </Property>
+                        <Property name="Conditions">
+                          <Property value="GcMissionConditionOnMultiplayerMission.xml"/>
+                          <Property value="GcMissionConditionOnOtherSideOfPortal.xml">
+                            <Property name="TestForRegularPortal" value="True"/>
+                            <Property name="TestForStoryPortal" value="True"/>
+                          </Property>
+                        </Property>
+                        <Property name="Consequences"/>
+                        <Property name="Stages">
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                              <Property name="Silent" value="True"/>
+                              <Property name="Icon" value="TkTextureResource.xml">
+                                <Property name="Filename" value=""/>
+                              </Property>
+                              <Property name="PageHint" value="GcMissionPageHint.xml">
+                                <Property name="MissionPageHint" value="None"/>
+                              </Property>
+                              <Property name="PageDataLocID" value=""/>
+                              <Property name="BuildMenuHint" value=""/>
+                              <Property name="InventoryHint" value=""/>
+                              <Property name="DebugText" value=""/>
+                              <Property name="ObjectiveID" value=""/>
+                              <Property name="ObjectiveTipID" value=""/>
+                              <Property name="HasCategoryOverride" value="False"/>
+                              <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                                <Property name="MissionCategory" value="Mission"/>
+                              </Property>
+                              <Property name="HasColourOverride" value="False"/>
+                              <Property name="ColourOverride" value="Colour.xml">
+                                <Property name="R" value="1"/>
+                                <Property name="G" value="1"/>
+                                <Property name="B" value="1"/>
+                                <Property name="A" value="1"/>
+                              </Property>
+                              <Property name="PrefixTitle" value="False"/>
+                              <Property name="PrefixTitleText" value=""/>
+                              <Property name="BlockPinning" value="False"/>
+                              <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                <Property name="ConditionTest" value="AllFalse"/>
+                              </Property>
+                              <Property name="RepeatLogic" value="None"/>
+                              <Property name="IconStyle" value="Default"/>
+                              <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                                <Property name="InputButton" value="None"/>
+                              </Property>
+                              <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                                <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                                <Property name="FormattableObjective" value=""/>
+                                <Property name="FormattableObjectiveTip" value=""/>
+                              </Property>
+                              <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                                <Property name="TargetMissionSurveyId" value=""/>
+                                <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                                <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                                <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                                <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                                <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                              </Property>
+                              <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                                <Property name="HasCustomNotifyTimer" value="False"/>
+                                <Property name="NotifyDisplayTime" value="32"/>
+                                <Property name="NotifyPauseTime" value="30"/>
+                              </Property>
+                              <Property name="Conditions">
+                                <Property value="GcMissionConditionLocation.xml">
+                                  <Property name="MissionPlayerLocation" value="InShipInSpace"/>
+                                </Property>
+                                <Property value="GcMissionConditionLocation.xml">
+                                  <Property name="MissionPlayerLocation" value="InYourFreighter"/>
+                                </Property>
+                              </Property>
+                              <Property name="Consequences"/>
+                              <Property name="Stages">
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceStartScanEvent.xml">
+                                    <Property name="ScanTable" value="Tutorial"/>
+                                    <Property name="Participant" value="GcPlayerMissionParticipantType.xml">
+                                      <Property name="ParticipantType" value="Secondary2"/>
+                                    </Property>
+                                    <Property name="Event" value="SE_ALSCOB_QRY"/>
+                                    <Property name="Time" value="2"/>
+                                    <Property name="AllowOtherPlayerBase" value="False"/>
+                                    <Property name="DebugText" value=""/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWait.xml">
+                                    <Property name="Time" value="3"/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                              <Property name="Silent" value="True"/>
+                              <Property name="Icon" value="TkTextureResource.xml">
+                                <Property name="Filename" value=""/>
+                              </Property>
+                              <Property name="PageHint" value="GcMissionPageHint.xml">
+                                <Property name="MissionPageHint" value="None"/>
+                              </Property>
+                              <Property name="PageDataLocID" value=""/>
+                              <Property name="BuildMenuHint" value=""/>
+                              <Property name="InventoryHint" value=""/>
+                              <Property name="DebugText" value=""/>
+                              <Property name="ObjectiveID" value=""/>
+                              <Property name="ObjectiveTipID" value=""/>
+                              <Property name="HasCategoryOverride" value="False"/>
+                              <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                                <Property name="MissionCategory" value="Mission"/>
+                              </Property>
+                              <Property name="HasColourOverride" value="False"/>
+                              <Property name="ColourOverride" value="Colour.xml">
+                                <Property name="R" value="1"/>
+                                <Property name="G" value="1"/>
+                                <Property name="B" value="1"/>
+                                <Property name="A" value="1"/>
+                              </Property>
+                              <Property name="PrefixTitle" value="False"/>
+                              <Property name="PrefixTitleText" value=""/>
+                              <Property name="BlockPinning" value="False"/>
+                              <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                <Property name="ConditionTest" value="AnyTrue"/>
+                              </Property>
+                              <Property name="RepeatLogic" value="None"/>
+                              <Property name="IconStyle" value="Default"/>
+                              <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                                <Property name="InputButton" value="None"/>
+                              </Property>
+                              <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                                <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                                <Property name="FormattableObjective" value=""/>
+                                <Property name="FormattableObjectiveTip" value=""/>
+                              </Property>
+                              <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                                <Property name="TargetMissionSurveyId" value=""/>
+                                <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                                <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                                <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                                <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                                <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                              </Property>
+                              <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                                <Property name="HasCustomNotifyTimer" value="False"/>
+                                <Property name="NotifyDisplayTime" value="32"/>
+                                <Property name="NotifyPauseTime" value="30"/>
+                              </Property>
+                              <Property name="Conditions">
+                                <Property value="GcMissionConditionMissionMessageWarp.xml"/>
+                              </Property>
+                              <Property name="Consequences"/>
+                              <Property name="Stages">
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
+                                    <Property name="Message" value=""/>
+                                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                      <Property name="ConditionTest" value="AllFalse"/>
+                                    </Property>
+                                    <Property name="Conditions">
+                                      <Property value="GcMissionConditionLocation.xml">
+                                        <Property name="MissionPlayerLocation" value="InShipInSpace"/>
+                                      </Property>
+                                      <Property value="GcMissionConditionLocation.xml">
+                                        <Property name="MissionPlayerLocation" value="InYourFreighter"/>
+                                      </Property>
+                                    </Property>
+                                    <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
+                                      <Property name="MissionMarkup" value="None"/>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
+                                    <Property name="Message" value=""/>
+                                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                      <Property name="ConditionTest" value="AnyTrue"/>
+                                    </Property>
+                                    <Property name="Conditions">
+                                      <Property value="GcMissionConditionLocation.xml">
+                                        <Property name="MissionPlayerLocation" value="InShipInSpace"/>
+                                      </Property>
+                                      <Property value="GcMissionConditionLocation.xml">
+                                        <Property name="MissionPlayerLocation" value="InYourFreighter"/>
+                                      </Property>
+                                    </Property>
+                                    <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
+                                      <Property name="MissionMarkup" value="None"/>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericMissionStage.xml">
+          <Property name="Versions"/>
+          <Property name="Stage" value="GcMissionSequenceGroup.xml">
+            <Property name="Silent" value="True"/>
+            <Property name="Icon" value="TkTextureResource.xml">
+              <Property name="Filename" value=""/>
+            </Property>
+            <Property name="PageHint" value="GcMissionPageHint.xml">
+              <Property name="MissionPageHint" value="None"/>
+            </Property>
+            <Property name="PageDataLocID" value=""/>
+            <Property name="BuildMenuHint" value=""/>
+            <Property name="InventoryHint" value=""/>
+            <Property name="DebugText" value=""/>
+            <Property name="ObjectiveID" value=""/>
+            <Property name="ObjectiveTipID" value=""/>
+            <Property name="HasCategoryOverride" value="False"/>
+            <Property name="OverrideCategory" value="GcMissionCategory.xml">
+              <Property name="MissionCategory" value="Mission"/>
+            </Property>
+            <Property name="HasColourOverride" value="False"/>
+            <Property name="ColourOverride" value="Colour.xml">
+              <Property name="R" value="1"/>
+              <Property name="G" value="1"/>
+              <Property name="B" value="1"/>
+              <Property name="A" value="1"/>
+            </Property>
+            <Property name="PrefixTitle" value="False"/>
+            <Property name="PrefixTitleText" value=""/>
+            <Property name="BlockPinning" value="False"/>
+            <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+              <Property name="ConditionTest" value="AnyFalse"/>
+            </Property>
+            <Property name="RepeatLogic" value="None"/>
+            <Property name="IconStyle" value="Default"/>
+            <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+              <Property name="InputButton" value="None"/>
+            </Property>
+            <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+              <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+              <Property name="FormattableObjective" value=""/>
+              <Property name="FormattableObjectiveTip" value=""/>
+            </Property>
+            <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+              <Property name="TargetMissionSurveyId" value=""/>
+              <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+            </Property>
+            <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+              <Property name="HasCustomNotifyTimer" value="False"/>
+              <Property name="NotifyDisplayTime" value="32"/>
+              <Property name="NotifyPauseTime" value="30"/>
+            </Property>
+            <Property name="Conditions"/>
+            <Property name="Consequences"/>
+            <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                  <Property name="Silent" value="False"/>
+                  <Property name="Icon" value="TkTextureResource.xml">
+                    <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS"/>
+                  </Property>
+                  <Property name="PageHint" value="GcMissionPageHint.xml">
+                    <Property name="MissionPageHint" value="None"/>
+                  </Property>
+                  <Property name="PageDataLocID" value=""/>
+                  <Property name="BuildMenuHint" value=""/>
+                  <Property name="InventoryHint" value=""/>
+                  <Property name="DebugText" value=""/>
+                  <Property name="ObjectiveID" value="ALCH_SCAN_PQ_SYSTEM_OBJ"/>
+                  <Property name="ObjectiveTipID" value="ALCH_SCAN_PQ_SYSTEM_OBJ_TIP"/>
+                  <Property name="HasCategoryOverride" value="False"/>
+                  <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                    <Property name="MissionCategory" value="Mission"/>
+                  </Property>
+                  <Property name="HasColourOverride" value="False"/>
+                  <Property name="ColourOverride" value="Colour.xml">
+                    <Property name="R" value="1"/>
+                    <Property name="G" value="1"/>
+                    <Property name="B" value="1"/>
+                    <Property name="A" value="1"/>
+                  </Property>
+                  <Property name="PrefixTitle" value="False"/>
+                  <Property name="PrefixTitleText" value=""/>
+                  <Property name="BlockPinning" value="False"/>
+                  <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                    <Property name="ConditionTest" value="AnyTrue"/>
+                  </Property>
+                  <Property name="RepeatLogic" value="None"/>
+                  <Property name="IconStyle" value="Default"/>
+                  <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                    <Property name="InputButton" value="None"/>
+                  </Property>
+                  <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                    <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                    <Property name="FormattableObjective" value=""/>
+                    <Property name="FormattableObjectiveTip" value=""/>
+                  </Property>
+                  <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                    <Property name="TargetMissionSurveyId" value=""/>
+                    <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                  </Property>
+                  <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                    <Property name="HasCustomNotifyTimer" value="False"/>
+                    <Property name="NotifyDisplayTime" value="32"/>
+                    <Property name="NotifyPauseTime" value="30"/>
+                  </Property>
+                  <Property name="Conditions">
+                    <Property value="GcMissionConditionMissionMessage.xml">
+                      <Property name="Message" value="M_ALSCOB_01_ARVL"/>
+                    </Property>
+                  </Property>
+                  <Property name="Consequences"/>
+                  <Property name="Stages">
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
+                        <Property name="MissionUpdateMessage" value="Start"/>
+                        <Property name="CustomMessageLocID" value=""/>
+                        <Property name="CustomObjectiveLocID" value=""/>
+                        <Property name="SetMissionSelected" value="True"/>
+                        <Property name="WaitForMessageOver" value="False"/>
+                        <Property name="ShowChangeMissionNotify" value="False"/>
+                        <Property name="PlayMusicSting" value="None"/>
+                        <Property name="DebugText" value=""/>
+                      </Property>
+                    </Property>
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                        <Property name="Silent" value="True"/>
+                        <Property name="Icon" value="TkTextureResource.xml">
+                          <Property name="Filename" value=""/>
+                        </Property>
+                        <Property name="PageHint" value="GcMissionPageHint.xml">
+                          <Property name="MissionPageHint" value="None"/>
+                        </Property>
+                        <Property name="PageDataLocID" value=""/>
+                        <Property name="BuildMenuHint" value=""/>
+                        <Property name="InventoryHint" value=""/>
+                        <Property name="DebugText" value=""/>
+                        <Property name="ObjectiveID" value=""/>
+                        <Property name="ObjectiveTipID" value=""/>
+                        <Property name="HasCategoryOverride" value="False"/>
+                        <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                          <Property name="MissionCategory" value="Mission"/>
+                        </Property>
+                        <Property name="HasColourOverride" value="False"/>
+                        <Property name="ColourOverride" value="Colour.xml">
+                          <Property name="R" value="1"/>
+                          <Property name="G" value="1"/>
+                          <Property name="B" value="1"/>
+                          <Property name="A" value="1"/>
+                        </Property>
+                        <Property name="PrefixTitle" value="False"/>
+                        <Property name="PrefixTitleText" value=""/>
+                        <Property name="BlockPinning" value="False"/>
+                        <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                          <Property name="ConditionTest" value="AnyFalse"/>
+                        </Property>
+                        <Property name="RepeatLogic" value="Loop"/>
+                        <Property name="IconStyle" value="Default"/>
+                        <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                          <Property name="InputButton" value="None"/>
+                        </Property>
+                        <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                          <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                          <Property name="FormattableObjective" value=""/>
+                          <Property name="FormattableObjectiveTip" value=""/>
+                        </Property>
+                        <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                          <Property name="TargetMissionSurveyId" value=""/>
+                          <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                        </Property>
+                        <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                          <Property name="HasCustomNotifyTimer" value="False"/>
+                          <Property name="NotifyDisplayTime" value="32"/>
+                          <Property name="NotifyPauseTime" value="30"/>
+                        </Property>
+                        <Property name="Conditions"/>
+                        <Property name="Consequences"/>
+                        <Property name="Stages">
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
+                              <Property name="Message" value="ALCH_SCAN_PQ_SYSTEM_OBJ_WAIT"/>
+                              <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                <Property name="ConditionTest" value="AnyTrue"/>
+                              </Property>
+                              <Property name="Conditions">
+                                <Property value="GcMissionConditionIsScanEventLocal.xml">
+                                  <Property name="Event" value="SE_ALSCOB_QRY"/>
+                                  <Property name="RequiresFullFireteam" value="False"/>
+                                </Property>
+                              </Property>
+                              <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
+                              <Property name="DebugText" value=""/>
+                              <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
+                                <Property name="MissionMarkup" value="None"/>
+                              </Property>
+                            </Property>
+                          </Property>
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                              <Property name="Silent" value="False"/>
+                              <Property name="Icon" value="TkTextureResource.xml">
+                                <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS"/>
+                              </Property>
+                              <Property name="PageHint" value="GcMissionPageHint.xml">
+                                <Property name="MissionPageHint" value="None"/>
+                              </Property>
+                              <Property name="PageDataLocID" value=""/>
+                              <Property name="BuildMenuHint" value=""/>
+                              <Property name="InventoryHint" value=""/>
+                              <Property name="DebugText" value=""/>
+                              <Property name="ObjectiveID" value="ALCH_SCAN_PQ_PLANET_OBJ"/>
+                              <Property name="ObjectiveTipID" value="ALCH_SCAN_PQ_PLANET_OBJ_TIP"/>
+                              <Property name="HasCategoryOverride" value="False"/>
+                              <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                                <Property name="MissionCategory" value="Mission"/>
+                              </Property>
+                              <Property name="HasColourOverride" value="False"/>
+                              <Property name="ColourOverride" value="Colour.xml">
+                                <Property name="R" value="1"/>
+                                <Property name="G" value="1"/>
+                                <Property name="B" value="1"/>
+                                <Property name="A" value="1"/>
+                              </Property>
+                              <Property name="PrefixTitle" value="False"/>
+                              <Property name="PrefixTitleText" value=""/>
+                              <Property name="BlockPinning" value="False"/>
+                              <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                <Property name="ConditionTest" value="AnyFalse"/>
+                              </Property>
+                              <Property name="RepeatLogic" value="None"/>
+                              <Property name="IconStyle" value="Default"/>
+                              <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                                <Property name="InputButton" value="None"/>
+                              </Property>
+                              <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                                <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                                <Property name="FormattableObjective" value=""/>
+                                <Property name="FormattableObjectiveTip" value=""/>
+                              </Property>
+                              <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                                <Property name="TargetMissionSurveyId" value=""/>
+                                <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                                <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                                <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                                <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                                <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                              </Property>
+                              <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                                <Property name="HasCustomNotifyTimer" value="False"/>
+                                <Property name="NotifyDisplayTime" value="32"/>
+                                <Property name="NotifyPauseTime" value="30"/>
+                              </Property>
+                              <Property name="Conditions">
+                                <Property value="GcMissionConditionIsScanEventLocal.xml">
+                                  <Property name="Event" value="SE_ALSCOB_QRY"/>
+                                  <Property name="RequiresFullFireteam" value="False"/>
+                                </Property>
+                              </Property>
+                              <Property name="Consequences"/>
+                              <Property name="Stages">
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
+                                    <Property name="MissionUpdateMessage" value="Start"/>
+                                    <Property name="CustomMessageLocID" value=""/>
+                                    <Property name="CustomObjectiveLocID" value=""/>
+                                    <Property name="SetMissionSelected" value="True"/>
+                                    <Property name="WaitForMessageOver" value="False"/>
+                                    <Property name="ShowChangeMissionNotify" value="False"/>
+                                    <Property name="PlayMusicSting" value="None"/>
+                                    <Property name="DebugText" value=""/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
+                                    <Property name="Message" value="ALCH_SCAN_PQ_PLANET_OBJ_WAIT"/>
+                                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                      <Property name="ConditionTest" value="AnyTrue"/>
+                                    </Property>
+                                    <Property name="Conditions">
+                                      <Property value="GcMissionConditionIsScanEventOnCurrentPlanet.xml">
+                                        <Property name="Event" value="SE_ALSCOB_QRY"/>
+                                        <Property name="AllowInShip" value="True"/>
+                                      </Property>
+                                    </Property>
+                                    <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
+                                      <Property name="MissionMarkup" value="None"/>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCOB_01_ARVL"/>
+                                    <Property name="Seeded" value="True"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWait.xml">
+                                    <Property name="Time" value="3"/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceEndScanEvent.xml">
+                  <Property name="Event" value="SE_ALSCOB_QRY"/>
+                  <Property name="DebugText" value=""/>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
+                  <Property name="MissionUpdateMessage" value="End"/>
+                  <Property name="CustomMessageLocID" value=""/>
+                  <Property name="CustomObjectiveLocID" value=""/>
+                  <Property name="SetMissionSelected" value="False"/>
+                  <Property name="WaitForMessageOver" value="False"/>
+                  <Property name="ShowChangeMissionNotify" value="False"/>
+                  <Property name="PlayMusicSting" value="End"/>
+                  <Property name="DebugText" value=""/>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="ForcesPageHint" value="False"/>
+      <Property name="ForcesBuildMenuHint" value="False"/>
+      <Property name="IsProceduralAllowed" value="False"/>
+      <Property name="IsRecurring" value="False"/>
+      <Property name="IsLegacy" value="False"/>
+      <Property name="BlocksPinning" value="False"/>
+      <Property name="TelemetryUpload" value="False"/>
+      <Property name="UseSeasonTitleOverride" value="False"/>
+    </Property>
+    <Property value="GcGenericMissionSequence.xml">
+      <Property name="MissionID" value="ALCH_SCAN_OC"/>
+      <Property name="MissionClass" value="Secondary"/>
+      <Property name="MissionIsCritical" value="False"/>
+      <Property name="MissionObjective" value=""/>
+      <Property name="MissionTitles" value="GcNumberedTextList.xml">
+        <Property name="Format" value="ALCH_SCAN_PQ_OC_TITLE"/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionSubtitles" value="GcNumberedTextList.xml">
+        <Property name="Format" value="ALCH_PLANET_EXP_SUB_%d"/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionDescriptions" value="GcNumberedTextList.xml">
+        <Property name="Format" value="ALCH_SCAN_PQ_OC_DESC"/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionA" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionB" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionProcDescriptionC" value="GcNumberedTextList.xml">
+        <Property name="Format" value=""/>
+        <Property name="Count" value="1"/>
+      </Property>
+      <Property name="MissionIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.PIN.ON.DDS"/>
+      </Property>
+      <Property name="MissionIconSelected" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.PIN.ON.DDS"/>
+      </Property>
+      <Property name="MissionIconNotSelected" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.PIN.OFF.DDS"/>
+      </Property>
+      <Property name="MissionPriority" value="0"/>
+      <Property name="MissionCategory" value="GcMissionCategory.xml">
+        <Property name="MissionCategory" value="Mission"/>
+      </Property>
+      <Property name="MissionPageHint" value="GcMissionPageHint.xml">
+        <Property name="MissionPageHint" value="None"/>
+      </Property>
+      <Property name="MissionPageLocID" value=""/>
+      <Property name="MissionBuildMenuHint" value=""/>
+      <Property name="MissionHasColourOverride" value="False"/>
+      <Property name="MissionColourOverride" value="Colour.xml">
+        <Property name="R" value="1"/>
+        <Property name="G" value="1"/>
+        <Property name="B" value="1"/>
+        <Property name="A" value="1"/>
+      </Property>
+      <Property name="BeginCheckFrequency" value="1"/>
+      <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
+        <Property name="PrimarySubstances"/>
+        <Property name="SecondarySubstances"/>
+        <Property name="PrimaryProducts"/>
+        <Property name="SecondaryProducts"/>
+      </Property>
+      <Property name="PrefixTitle" value="True"/>
+      <Property name="NextMissionHint" value=""/>
+      <Property name="MessageComplete" value="Never"/>
+      <Property name="MessageStart" value="Never"/>
+      <Property name="MissionBoardOptions" value="GcMissionBoardOptions.xml">
+        <Property name="Type" value="GcMissionType.xml">
+          <Property name="MissionType" value="SpaceCombat"/>
+        </Property>
+        <Property name="Difficulty" value="GcMissionDifficulty.xml">
+          <Property name="MissionDifficulty" value="Normal"/>
+        </Property>
+        <Property name="MinRank" value="0"/>
+        <Property name="CloseMissionGiver" value="False"/>
+        <Property name="IsGuildShopMission" value="False"/>
+        <Property name="IsPlanetProcMission" value="False"/>
+        <Property name="IsMultiplayerEventMission" value="False"/>
+        <Property name="RewardPenaltyOnAbandon" value=""/>
+        <Property name="Faction"/>
+        <Property name="Weighting" value="0"/>
+        <Property name="IgnoreCalculatedObjective" value="False"/>
+        <Property name="MultiplayerMissionInitialWarpScanEvent" value=""/>
+        <Property name="DefaultItemInitialWarpScanEvents"/>
+        <Property name="DefaultItemTypeForInitialWarp" value="None"/>
+        <Property name="BasePartBlueprints"/>
+      </Property>
+      <Property name="AutoStart" value="None"/>
+      <Property name="RestartOnCompletion" value="False"/>
+      <Property name="CancelSetsComplete" value="False"/>
+      <Property name="Dialog" value="GcAlienPuzzleTable.xml">
+        <Property name="Table"/>
+      </Property>
+      <Property name="ScanEvents">
+        <Property value="GcScanEventData.xml">
+          <Property name="Name" value="SE_ALSCOC_QRY"/>
+          <Property name="ForceInteraction" value=""/>
+          <Property name="ForceInteractionType" value="GcInteractionType.xml">
+            <Property name="InteractionType" value="None"/>
+          </Property>
+          <Property name="RequireInteractionRace" value="GcAlienRace.xml">
+            <Property name="AlienRace" value="None"/>
+          </Property>
+          <Property name="ForceBroken" value="False"/>
+          <Property name="ForceFixed" value="False"/>
+          <Property name="ForceOverridesAll" value="True"/>
+          <Property name="ForceOverrideEncounter" value=""/>
+          <Property name="IsCommunityPortalOverride" value="False"/>
+          <Property name="ClearForcedInteractionOnCompletion" value="False"/>
+          <Property name="BuildingPreventionRadius" value="0"/>
+          <Property name="AlwaysShow" value="True"/>
+          <Property name="NeverShow" value="False"/>
+          <Property name="PlanetLabelText" value=""/>
+          <Property name="SurveyDistance" value="0"/>
+          <Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD"/>
+          <Property name="EventStartType" value="Special"/>
+          <Property name="EventEndType" value="None"/>
+          <Property name="EventPriority" value="Regular"/>
+          <Property name="CanEndFromOutsideMission" value="False"/>
+          <Property name="DisableMultiplayerSync" value="True"/>
+          <Property name="ReplaceEventIfAlreadyActive" value="False"/>
+          <Property name="BuildingLocation" value="PlanetSearch"/>
+          <Property name="BuildingType" value="Any"/>
+          <Property name="BuildingClass" value="GcBuildingClassification.xml">
+            <Property name="BuildingClass" value="None"/>
+          </Property>
+          <Property name="AllowFriendsBases" value="False"/>
+          <Property name="ForceWideRandom" value="False"/>
+          <Property name="MustFindSystem" value="False"/>
+          <Property name="AllowOverriddenBuildings" value="True"/>
+          <Property name="SolarSystemLocation" value="LocalOrNear"/>
+          <Property name="SolarSystemAttributes" value="GcScanEventSolarSystemLookup.xml">
+            <Property name="UseStarType" value="False"/>
+            <Property name="UseWealth" value="False"/>
+            <Property name="UseTrading" value="False"/>
+            <Property name="UseRace" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None"/>
+            </Property>
+            <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
+              <Property name="GalaxyStarAnomaly" value="None"/>
+            </Property>
+            <Property name="UseConflict" value="GcPlayerConflictData.xml">
+              <Property name="ConflictLevel" value="Default"/>
+            </Property>
+            <Property name="StarType" value="GcGalaxyStarTypes.xml">
+              <Property name="GalaxyStarType" value="Yellow"/>
+            </Property>
+            <Property name="TradingData" value="GcPlanetTradingData.xml">
+              <Property name="WealthClass" value="GcWealthClass.xml">
+                <Property name="WealthClass" value="Average"/>
+              </Property>
+              <Property name="TradingClass" value="GcTradingClass.xml">
+                <Property name="TradingClass" value="Mining"/>
+              </Property>
+            </Property>
+            <Property name="AllowUnsafeMatches" value="False"/>
+            <Property name="NeverAllowEmpty" value="False"/>
+            <Property name="NeverAllowAbandoned" value="False"/>
+            <Property name="RequireUndiscovered" value="True"/>
+            <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="True"/>
+            <Property name="NeedsExtremeSentinelPlanet" value="False"/>
+            <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
+            <Property name="NeedsExtremeWeatherPlanet" value="False"/>
+            <Property name="NeedsExtremeHazardPlanet" value="False"/>
+            <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
+            <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="True"/>
+            <Property name="NeedsBiome" value="False"/>
+            <Property name="NeedsBiomeType" value="GcBiomeType.xml">
+              <Property name="Biome" value="Lush"/>
+            </Property>
+            <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
+              <Property name="BiomeSubType" value="None"/>
+            </Property>
+            <Property name="NeedsEmptySystem" value="False"/>
+            <Property name="NeedsAbandonedSystem" value="False"/>
+            <Property name="NeedsResourceHint" value=""/>
+            <Property name="SuitableForCreatureDiscovery" value="False"/>
+            <Property name="SuitableForCreatureTaming" value="False"/>
+            <Property name="SamePlanetAsEvent" value=""/>
+          </Property>
+          <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
+            <Property name="UseStarType" value="False"/>
+            <Property name="UseWealth" value="False"/>
+            <Property name="UseTrading" value="False"/>
+            <Property name="UseRace" value="GcAlienRace.xml">
+              <Property name="AlienRace" value="None"/>
+            </Property>
+            <Property name="UseAnomaly" value="GcGalaxyStarAnomaly.xml">
+              <Property name="GalaxyStarAnomaly" value="None"/>
+            </Property>
+            <Property name="UseConflict" value="GcPlayerConflictData.xml">
+              <Property name="ConflictLevel" value="Default"/>
+            </Property>
+            <Property name="StarType" value="GcGalaxyStarTypes.xml">
+              <Property name="GalaxyStarType" value="Yellow"/>
+            </Property>
+            <Property name="TradingData" value="GcPlanetTradingData.xml">
+              <Property name="WealthClass" value="GcWealthClass.xml">
+                <Property name="WealthClass" value="Average"/>
+              </Property>
+              <Property name="TradingClass" value="GcTradingClass.xml">
+                <Property name="TradingClass" value="Mining"/>
+              </Property>
+            </Property>
+            <Property name="AllowUnsafeMatches" value="False"/>
+            <Property name="NeverAllowEmpty" value="False"/>
+            <Property name="NeverAllowAbandoned" value="False"/>
+            <Property name="RequireUndiscovered" value="True"/>
+            <Property name="NeedsWaterPlanet" value="False"/>
+            <Property name="NeedsPrimePlanet" value="True"/>
+            <Property name="NeedsExtremeSentinelPlanet" value="False"/>
+            <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
+            <Property name="NeedsExtremeWeatherPlanet" value="False"/>
+            <Property name="NeedsExtremeHazardPlanet" value="False"/>
+            <Property name="AnyBiomeNotWeirdOrDead" value="False"/>
+            <Property name="AnyRGBBiome" value="False"/>
+            <Property name="AnyInfestedBiome" value="True"/>
+            <Property name="NeedsBiome" value="False"/>
+            <Property name="NeedsBiomeType" value="GcBiomeType.xml">
+              <Property name="Biome" value="Lush"/>
+            </Property>
+            <Property name="UseBiomeSubType" value="GcBiomeSubType.xml">
+              <Property name="BiomeSubType" value="None"/>
+            </Property>
+            <Property name="NeedsEmptySystem" value="False"/>
+            <Property name="NeedsAbandonedSystem" value="False"/>
+            <Property name="NeedsResourceHint" value=""/>
+            <Property name="SuitableForCreatureDiscovery" value="False"/>
+            <Property name="SuitableForCreatureTaming" value="False"/>
+            <Property name="SamePlanetAsEvent" value=""/>
+          </Property>
+          <Property name="ForceRestartInteraction" value="True"/>
+          <Property name="HasReward" value=""/>
+          <Property name="NextOption" value=""/>
+          <Property name="TriggerActions" value="GcScanEventTriggers.xml">
+            <Property name="Range" value="100"/>
+            <Property name="Triggers"/>
+            <Property name="AllowRetrigger" value="False"/>
+          </Property>
+          <Property name="UAsList"/>
+          <Property name="TechShopType" value="GcTechnologyCategory.xml">
+            <Property name="TechnologyCategory" value="All"/>
+          </Property>
+          <Property name="OSDMessage" value="ALCH_SCAN_PQ_OC_TITLE"/>
+          <Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM"/>
+          <Property name="MarkerLabel" value="ALCH_SCAN_PQ_OC_TITLE"/>
+          <Property name="MarkerIcon" value="TkTextureResource.xml">
+            <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS"/>
+          </Property>
+          <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
+            <Property name="ScannerIconHighlightType" value="Diamond"/>
+          </Property>
+          <Property name="StartTime" value="0"/>
+          <Property name="MessageTime" value="0"/>
+          <Property name="MessageDisplayTime" value="4"/>
+          <Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
+            <Property name="AkEvent" value="VO_TUT_COORDSRECEIVED"/>
+          </Property>
+          <Property name="IconTime" value="4"/>
+          <Property name="TooltipTime" value="10"/>
+          <Property name="TooltipRepeats" value="False"/>
+          <Property name="ShowEndTooltip" value="True"/>
+          <Property name="TooltipMessage" value=""/>
+          <Property name="ResourceOverride" value="GcResourceElement.xml">
+            <Property name="Filename" value=""/>
+            <Property name="Seed" value="GcSeed.xml">
+              <Property name="Seed" value="0"/>
+              <Property name="UseSeedValue" value="False"/>
+            </Property>
+            <Property name="AltId" value=""/>
+            <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+              <Property name="Samplers"/>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Rewards"/>
+      <Property name="Costs"/>
+      <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
+        <Property name="ConditionTest" value="AnyFalse"/>
+      </Property>
+      <Property name="CancelConditionTest" value="GcMissionConditionTest.xml">
+        <Property name="ConditionTest" value="AnyFalse"/>
+      </Property>
+      <Property name="StartIsCancel" value="False"/>
+      <Property name="StartingConditions"/>
+      <Property name="CancelingConditions"/>
+      <Property name="FinalStageVersions"/>
+      <Property name="Stages">
+        <Property value="GcGenericMissionStage.xml">
+          <Property name="Versions"/>
+          <Property name="Stage" value="GcMissionSequenceGroup.xml">
+            <Property name="Silent" value="True"/>
+            <Property name="Icon" value="TkTextureResource.xml">
+              <Property name="Filename" value=""/>
+            </Property>
+            <Property name="PageHint" value="GcMissionPageHint.xml">
+              <Property name="MissionPageHint" value="None"/>
+            </Property>
+            <Property name="PageDataLocID" value=""/>
+            <Property name="BuildMenuHint" value=""/>
+            <Property name="InventoryHint" value=""/>
+            <Property name="DebugText" value=""/>
+            <Property name="ObjectiveID" value=""/>
+            <Property name="ObjectiveTipID" value=""/>
+            <Property name="HasCategoryOverride" value="False"/>
+            <Property name="OverrideCategory" value="GcMissionCategory.xml">
+              <Property name="MissionCategory" value="Mission"/>
+            </Property>
+            <Property name="HasColourOverride" value="False"/>
+            <Property name="ColourOverride" value="Colour.xml">
+              <Property name="R" value="1"/>
+              <Property name="G" value="1"/>
+              <Property name="B" value="1"/>
+              <Property name="A" value="1"/>
+            </Property>
+            <Property name="PrefixTitle" value="False"/>
+            <Property name="PrefixTitleText" value=""/>
+            <Property name="BlockPinning" value="False"/>
+            <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+              <Property name="ConditionTest" value="AnyFalse"/>
+            </Property>
+            <Property name="RepeatLogic" value="None"/>
+            <Property name="IconStyle" value="Default"/>
+            <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+              <Property name="InputButton" value="None"/>
+            </Property>
+            <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+              <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+              <Property name="FormattableObjective" value=""/>
+              <Property name="FormattableObjectiveTip" value=""/>
+            </Property>
+            <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+              <Property name="TargetMissionSurveyId" value=""/>
+              <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+            </Property>
+            <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+              <Property name="HasCustomNotifyTimer" value="False"/>
+              <Property name="NotifyDisplayTime" value="32"/>
+              <Property name="NotifyPauseTime" value="30"/>
+            </Property>
+            <Property name="Conditions"/>
+            <Property name="Consequences"/>
+            <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
+                  <Property name="MissionUpdateMessage" value="Start"/>
+                  <Property name="CustomMessageLocID" value=""/>
+                  <Property name="CustomObjectiveLocID" value=""/>
+                  <Property name="SetMissionSelected" value="True"/>
+                  <Property name="WaitForMessageOver" value="False"/>
+                  <Property name="ShowChangeMissionNotify" value="False"/>
+                  <Property name="PlayMusicSting" value="Start"/>
+                  <Property name="DebugText" value=""/>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                  <Property name="Silent" value="True"/>
+                  <Property name="Icon" value="TkTextureResource.xml">
+                    <Property name="Filename" value=""/>
+                  </Property>
+                  <Property name="PageHint" value="GcMissionPageHint.xml">
+                    <Property name="MissionPageHint" value="None"/>
+                  </Property>
+                  <Property name="PageDataLocID" value=""/>
+                  <Property name="BuildMenuHint" value=""/>
+                  <Property name="InventoryHint" value=""/>
+                  <Property name="DebugText" value=""/>
+                  <Property name="ObjectiveID" value=""/>
+                  <Property name="ObjectiveTipID" value=""/>
+                  <Property name="HasCategoryOverride" value="False"/>
+                  <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                    <Property name="MissionCategory" value="Mission"/>
+                  </Property>
+                  <Property name="HasColourOverride" value="False"/>
+                  <Property name="ColourOverride" value="Colour.xml">
+                    <Property name="R" value="1"/>
+                    <Property name="G" value="1"/>
+                    <Property name="B" value="1"/>
+                    <Property name="A" value="1"/>
+                  </Property>
+                  <Property name="PrefixTitle" value="False"/>
+                  <Property name="PrefixTitleText" value=""/>
+                  <Property name="BlockPinning" value="False"/>
+                  <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                    <Property name="ConditionTest" value="AnyTrue"/>
+                  </Property>
+                  <Property name="RepeatLogic" value="Loop"/>
+                  <Property name="IconStyle" value="Default"/>
+                  <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                    <Property name="InputButton" value="None"/>
+                  </Property>
+                  <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                    <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                    <Property name="FormattableObjective" value=""/>
+                    <Property name="FormattableObjectiveTip" value=""/>
+                  </Property>
+                  <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                    <Property name="TargetMissionSurveyId" value=""/>
+                    <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                  </Property>
+                  <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                    <Property name="HasCustomNotifyTimer" value="False"/>
+                    <Property name="NotifyDisplayTime" value="32"/>
+                    <Property name="NotifyPauseTime" value="30"/>
+                  </Property>
+                  <Property name="Conditions">
+                    <Property value="GcMissionConditionIsScanEventActive.xml">
+                      <Property name="Event" value="SE_ALSCOC_QRY"/>
+                      <Property name="MustMatchThisMissionSeed" value="True"/>
+                    </Property>
+                  </Property>
+                  <Property name="Consequences"/>
+                  <Property name="Stages">
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceWait.xml">
+                        <Property name="Time" value="2"/>
+                        <Property name="DebugText" value=""/>
+                        <Property name="SuppressMessages" value="False"/>
+                        <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                      </Property>
+                    </Property>
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                        <Property name="Silent" value="False"/>
+                        <Property name="Icon" value="TkTextureResource.xml">
+                          <Property name="Filename" value=""/>
+                        </Property>
+                        <Property name="PageHint" value="GcMissionPageHint.xml">
+                          <Property name="MissionPageHint" value="None"/>
+                        </Property>
+                        <Property name="PageDataLocID" value=""/>
+                        <Property name="BuildMenuHint" value=""/>
+                        <Property name="InventoryHint" value=""/>
+                        <Property name="DebugText" value=""/>
+                        <Property name="ObjectiveID" value="ALCH_SCAN_PQ_SEARCH_OBJ"/>
+                        <Property name="ObjectiveTipID" value="ALCH_SCAN_PQ_SEARCH_OBJ_TIP"/>
+                        <Property name="HasCategoryOverride" value="False"/>
+                        <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                          <Property name="MissionCategory" value="Mission"/>
+                        </Property>
+                        <Property name="HasColourOverride" value="False"/>
+                        <Property name="ColourOverride" value="Colour.xml">
+                          <Property name="R" value="1"/>
+                          <Property name="G" value="1"/>
+                          <Property name="B" value="1"/>
+                          <Property name="A" value="1"/>
+                        </Property>
+                        <Property name="PrefixTitle" value="False"/>
+                        <Property name="PrefixTitleText" value=""/>
+                        <Property name="BlockPinning" value="False"/>
+                        <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                          <Property name="ConditionTest" value="AllFalse"/>
+                        </Property>
+                        <Property name="RepeatLogic" value="None"/>
+                        <Property name="IconStyle" value="Default"/>
+                        <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                          <Property name="InputButton" value="None"/>
+                        </Property>
+                        <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                          <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                          <Property name="FormattableObjective" value=""/>
+                          <Property name="FormattableObjectiveTip" value=""/>
+                        </Property>
+                        <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                          <Property name="TargetMissionSurveyId" value=""/>
+                          <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                        </Property>
+                        <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                          <Property name="HasCustomNotifyTimer" value="False"/>
+                          <Property name="NotifyDisplayTime" value="32"/>
+                          <Property name="NotifyPauseTime" value="30"/>
+                        </Property>
+                        <Property name="Conditions">
+                          <Property value="GcMissionConditionOnMultiplayerMission.xml"/>
+                          <Property value="GcMissionConditionOnOtherSideOfPortal.xml">
+                            <Property name="TestForRegularPortal" value="True"/>
+                            <Property name="TestForStoryPortal" value="True"/>
+                          </Property>
+                        </Property>
+                        <Property name="Consequences"/>
+                        <Property name="Stages">
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceStop.xml">
+                              <Property name="Message" value=""/>
+                              <Property name="DebugText" value=""/>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                        <Property name="Silent" value="False"/>
+                        <Property name="Icon" value="TkTextureResource.xml">
+                          <Property name="Filename" value=""/>
+                        </Property>
+                        <Property name="PageHint" value="GcMissionPageHint.xml">
+                          <Property name="MissionPageHint" value="None"/>
+                        </Property>
+                        <Property name="PageDataLocID" value=""/>
+                        <Property name="BuildMenuHint" value=""/>
+                        <Property name="InventoryHint" value=""/>
+                        <Property name="DebugText" value=""/>
+                        <Property name="ObjectiveID" value="ALCH_SCAN_PQ_ACTIVE_OBJ"/>
+                        <Property name="ObjectiveTipID" value="ALCH_SCAN_PQ_ACTIVE_OBJ_TIP"/>
+                        <Property name="HasCategoryOverride" value="False"/>
+                        <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                          <Property name="MissionCategory" value="Mission"/>
+                        </Property>
+                        <Property name="HasColourOverride" value="False"/>
+                        <Property name="ColourOverride" value="Colour.xml">
+                          <Property name="R" value="1"/>
+                          <Property name="G" value="1"/>
+                          <Property name="B" value="1"/>
+                          <Property name="A" value="1"/>
+                        </Property>
+                        <Property name="PrefixTitle" value="False"/>
+                        <Property name="PrefixTitleText" value=""/>
+                        <Property name="BlockPinning" value="False"/>
+                        <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                          <Property name="ConditionTest" value="AnyTrue"/>
+                        </Property>
+                        <Property name="RepeatLogic" value="None"/>
+                        <Property name="IconStyle" value="Default"/>
+                        <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                          <Property name="InputButton" value="None"/>
+                        </Property>
+                        <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                          <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                          <Property name="FormattableObjective" value=""/>
+                          <Property name="FormattableObjectiveTip" value=""/>
+                        </Property>
+                        <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                          <Property name="TargetMissionSurveyId" value=""/>
+                          <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                        </Property>
+                        <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                          <Property name="HasCustomNotifyTimer" value="False"/>
+                          <Property name="NotifyDisplayTime" value="32"/>
+                          <Property name="NotifyPauseTime" value="30"/>
+                        </Property>
+                        <Property name="Conditions">
+                          <Property value="GcMissionConditionOnMultiplayerMission.xml"/>
+                          <Property value="GcMissionConditionOnOtherSideOfPortal.xml">
+                            <Property name="TestForRegularPortal" value="True"/>
+                            <Property name="TestForStoryPortal" value="True"/>
+                          </Property>
+                        </Property>
+                        <Property name="Consequences"/>
+                        <Property name="Stages">
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                              <Property name="Silent" value="True"/>
+                              <Property name="Icon" value="TkTextureResource.xml">
+                                <Property name="Filename" value=""/>
+                              </Property>
+                              <Property name="PageHint" value="GcMissionPageHint.xml">
+                                <Property name="MissionPageHint" value="None"/>
+                              </Property>
+                              <Property name="PageDataLocID" value=""/>
+                              <Property name="BuildMenuHint" value=""/>
+                              <Property name="InventoryHint" value=""/>
+                              <Property name="DebugText" value=""/>
+                              <Property name="ObjectiveID" value=""/>
+                              <Property name="ObjectiveTipID" value=""/>
+                              <Property name="HasCategoryOverride" value="False"/>
+                              <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                                <Property name="MissionCategory" value="Mission"/>
+                              </Property>
+                              <Property name="HasColourOverride" value="False"/>
+                              <Property name="ColourOverride" value="Colour.xml">
+                                <Property name="R" value="1"/>
+                                <Property name="G" value="1"/>
+                                <Property name="B" value="1"/>
+                                <Property name="A" value="1"/>
+                              </Property>
+                              <Property name="PrefixTitle" value="False"/>
+                              <Property name="PrefixTitleText" value=""/>
+                              <Property name="BlockPinning" value="False"/>
+                              <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                <Property name="ConditionTest" value="AllFalse"/>
+                              </Property>
+                              <Property name="RepeatLogic" value="None"/>
+                              <Property name="IconStyle" value="Default"/>
+                              <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                                <Property name="InputButton" value="None"/>
+                              </Property>
+                              <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                                <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                                <Property name="FormattableObjective" value=""/>
+                                <Property name="FormattableObjectiveTip" value=""/>
+                              </Property>
+                              <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                                <Property name="TargetMissionSurveyId" value=""/>
+                                <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                                <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                                <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                                <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                                <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                              </Property>
+                              <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                                <Property name="HasCustomNotifyTimer" value="False"/>
+                                <Property name="NotifyDisplayTime" value="32"/>
+                                <Property name="NotifyPauseTime" value="30"/>
+                              </Property>
+                              <Property name="Conditions">
+                                <Property value="GcMissionConditionLocation.xml">
+                                  <Property name="MissionPlayerLocation" value="InShipInSpace"/>
+                                </Property>
+                                <Property value="GcMissionConditionLocation.xml">
+                                  <Property name="MissionPlayerLocation" value="InYourFreighter"/>
+                                </Property>
+                              </Property>
+                              <Property name="Consequences"/>
+                              <Property name="Stages">
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceStartScanEvent.xml">
+                                    <Property name="ScanTable" value="Tutorial"/>
+                                    <Property name="Participant" value="GcPlayerMissionParticipantType.xml">
+                                      <Property name="ParticipantType" value="Secondary2"/>
+                                    </Property>
+                                    <Property name="Event" value="SE_ALSCOC_QRY"/>
+                                    <Property name="Time" value="2"/>
+                                    <Property name="AllowOtherPlayerBase" value="False"/>
+                                    <Property name="DebugText" value=""/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWait.xml">
+                                    <Property name="Time" value="3"/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                              <Property name="Silent" value="True"/>
+                              <Property name="Icon" value="TkTextureResource.xml">
+                                <Property name="Filename" value=""/>
+                              </Property>
+                              <Property name="PageHint" value="GcMissionPageHint.xml">
+                                <Property name="MissionPageHint" value="None"/>
+                              </Property>
+                              <Property name="PageDataLocID" value=""/>
+                              <Property name="BuildMenuHint" value=""/>
+                              <Property name="InventoryHint" value=""/>
+                              <Property name="DebugText" value=""/>
+                              <Property name="ObjectiveID" value=""/>
+                              <Property name="ObjectiveTipID" value=""/>
+                              <Property name="HasCategoryOverride" value="False"/>
+                              <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                                <Property name="MissionCategory" value="Mission"/>
+                              </Property>
+                              <Property name="HasColourOverride" value="False"/>
+                              <Property name="ColourOverride" value="Colour.xml">
+                                <Property name="R" value="1"/>
+                                <Property name="G" value="1"/>
+                                <Property name="B" value="1"/>
+                                <Property name="A" value="1"/>
+                              </Property>
+                              <Property name="PrefixTitle" value="False"/>
+                              <Property name="PrefixTitleText" value=""/>
+                              <Property name="BlockPinning" value="False"/>
+                              <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                <Property name="ConditionTest" value="AnyTrue"/>
+                              </Property>
+                              <Property name="RepeatLogic" value="None"/>
+                              <Property name="IconStyle" value="Default"/>
+                              <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                                <Property name="InputButton" value="None"/>
+                              </Property>
+                              <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                                <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                                <Property name="FormattableObjective" value=""/>
+                                <Property name="FormattableObjectiveTip" value=""/>
+                              </Property>
+                              <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                                <Property name="TargetMissionSurveyId" value=""/>
+                                <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                                <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                                <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                                <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                                <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                              </Property>
+                              <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                                <Property name="HasCustomNotifyTimer" value="False"/>
+                                <Property name="NotifyDisplayTime" value="32"/>
+                                <Property name="NotifyPauseTime" value="30"/>
+                              </Property>
+                              <Property name="Conditions">
+                                <Property value="GcMissionConditionMissionMessageWarp.xml"/>
+                              </Property>
+                              <Property name="Consequences"/>
+                              <Property name="Stages">
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
+                                    <Property name="Message" value=""/>
+                                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                      <Property name="ConditionTest" value="AllFalse"/>
+                                    </Property>
+                                    <Property name="Conditions">
+                                      <Property value="GcMissionConditionLocation.xml">
+                                        <Property name="MissionPlayerLocation" value="InShipInSpace"/>
+                                      </Property>
+                                      <Property value="GcMissionConditionLocation.xml">
+                                        <Property name="MissionPlayerLocation" value="InYourFreighter"/>
+                                      </Property>
+                                    </Property>
+                                    <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
+                                      <Property name="MissionMarkup" value="None"/>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
+                                    <Property name="Message" value=""/>
+                                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                      <Property name="ConditionTest" value="AnyTrue"/>
+                                    </Property>
+                                    <Property name="Conditions">
+                                      <Property value="GcMissionConditionLocation.xml">
+                                        <Property name="MissionPlayerLocation" value="InShipInSpace"/>
+                                      </Property>
+                                      <Property value="GcMissionConditionLocation.xml">
+                                        <Property name="MissionPlayerLocation" value="InYourFreighter"/>
+                                      </Property>
+                                    </Property>
+                                    <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
+                                      <Property name="MissionMarkup" value="None"/>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcGenericMissionStage.xml">
+          <Property name="Versions"/>
+          <Property name="Stage" value="GcMissionSequenceGroup.xml">
+            <Property name="Silent" value="True"/>
+            <Property name="Icon" value="TkTextureResource.xml">
+              <Property name="Filename" value=""/>
+            </Property>
+            <Property name="PageHint" value="GcMissionPageHint.xml">
+              <Property name="MissionPageHint" value="None"/>
+            </Property>
+            <Property name="PageDataLocID" value=""/>
+            <Property name="BuildMenuHint" value=""/>
+            <Property name="InventoryHint" value=""/>
+            <Property name="DebugText" value=""/>
+            <Property name="ObjectiveID" value=""/>
+            <Property name="ObjectiveTipID" value=""/>
+            <Property name="HasCategoryOverride" value="False"/>
+            <Property name="OverrideCategory" value="GcMissionCategory.xml">
+              <Property name="MissionCategory" value="Mission"/>
+            </Property>
+            <Property name="HasColourOverride" value="False"/>
+            <Property name="ColourOverride" value="Colour.xml">
+              <Property name="R" value="1"/>
+              <Property name="G" value="1"/>
+              <Property name="B" value="1"/>
+              <Property name="A" value="1"/>
+            </Property>
+            <Property name="PrefixTitle" value="False"/>
+            <Property name="PrefixTitleText" value=""/>
+            <Property name="BlockPinning" value="False"/>
+            <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+              <Property name="ConditionTest" value="AnyFalse"/>
+            </Property>
+            <Property name="RepeatLogic" value="None"/>
+            <Property name="IconStyle" value="Default"/>
+            <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+              <Property name="InputButton" value="None"/>
+            </Property>
+            <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+              <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+              <Property name="FormattableObjective" value=""/>
+              <Property name="FormattableObjectiveTip" value=""/>
+            </Property>
+            <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+              <Property name="TargetMissionSurveyId" value=""/>
+              <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+              <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+              <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+              <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+              <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+            </Property>
+            <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+              <Property name="HasCustomNotifyTimer" value="False"/>
+              <Property name="NotifyDisplayTime" value="32"/>
+              <Property name="NotifyPauseTime" value="30"/>
+            </Property>
+            <Property name="Conditions"/>
+            <Property name="Consequences"/>
+            <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                  <Property name="Silent" value="False"/>
+                  <Property name="Icon" value="TkTextureResource.xml">
+                    <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS"/>
+                  </Property>
+                  <Property name="PageHint" value="GcMissionPageHint.xml">
+                    <Property name="MissionPageHint" value="None"/>
+                  </Property>
+                  <Property name="PageDataLocID" value=""/>
+                  <Property name="BuildMenuHint" value=""/>
+                  <Property name="InventoryHint" value=""/>
+                  <Property name="DebugText" value=""/>
+                  <Property name="ObjectiveID" value="ALCH_SCAN_PQ_SYSTEM_OBJ"/>
+                  <Property name="ObjectiveTipID" value="ALCH_SCAN_PQ_SYSTEM_OBJ_TIP"/>
+                  <Property name="HasCategoryOverride" value="False"/>
+                  <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                    <Property name="MissionCategory" value="Mission"/>
+                  </Property>
+                  <Property name="HasColourOverride" value="False"/>
+                  <Property name="ColourOverride" value="Colour.xml">
+                    <Property name="R" value="1"/>
+                    <Property name="G" value="1"/>
+                    <Property name="B" value="1"/>
+                    <Property name="A" value="1"/>
+                  </Property>
+                  <Property name="PrefixTitle" value="False"/>
+                  <Property name="PrefixTitleText" value=""/>
+                  <Property name="BlockPinning" value="False"/>
+                  <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                    <Property name="ConditionTest" value="AnyTrue"/>
+                  </Property>
+                  <Property name="RepeatLogic" value="None"/>
+                  <Property name="IconStyle" value="Default"/>
+                  <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                    <Property name="InputButton" value="None"/>
+                  </Property>
+                  <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                    <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                    <Property name="FormattableObjective" value=""/>
+                    <Property name="FormattableObjectiveTip" value=""/>
+                  </Property>
+                  <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                    <Property name="TargetMissionSurveyId" value=""/>
+                    <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                    <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                    <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                    <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                    <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                  </Property>
+                  <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                    <Property name="HasCustomNotifyTimer" value="False"/>
+                    <Property name="NotifyDisplayTime" value="32"/>
+                    <Property name="NotifyPauseTime" value="30"/>
+                  </Property>
+                  <Property name="Conditions">
+                    <Property value="GcMissionConditionMissionMessage.xml">
+                      <Property name="Message" value="M_ALSCOC_01_ARVL"/>
+                    </Property>
+                  </Property>
+                  <Property name="Consequences"/>
+                  <Property name="Stages">
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
+                        <Property name="MissionUpdateMessage" value="Start"/>
+                        <Property name="CustomMessageLocID" value=""/>
+                        <Property name="CustomObjectiveLocID" value=""/>
+                        <Property name="SetMissionSelected" value="True"/>
+                        <Property name="WaitForMessageOver" value="False"/>
+                        <Property name="ShowChangeMissionNotify" value="False"/>
+                        <Property name="PlayMusicSting" value="None"/>
+                        <Property name="DebugText" value=""/>
+                      </Property>
+                    </Property>
+                    <Property value="GcGenericMissionStage.xml">
+                      <Property name="Versions"/>
+                      <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                        <Property name="Silent" value="True"/>
+                        <Property name="Icon" value="TkTextureResource.xml">
+                          <Property name="Filename" value=""/>
+                        </Property>
+                        <Property name="PageHint" value="GcMissionPageHint.xml">
+                          <Property name="MissionPageHint" value="None"/>
+                        </Property>
+                        <Property name="PageDataLocID" value=""/>
+                        <Property name="BuildMenuHint" value=""/>
+                        <Property name="InventoryHint" value=""/>
+                        <Property name="DebugText" value=""/>
+                        <Property name="ObjectiveID" value=""/>
+                        <Property name="ObjectiveTipID" value=""/>
+                        <Property name="HasCategoryOverride" value="False"/>
+                        <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                          <Property name="MissionCategory" value="Mission"/>
+                        </Property>
+                        <Property name="HasColourOverride" value="False"/>
+                        <Property name="ColourOverride" value="Colour.xml">
+                          <Property name="R" value="1"/>
+                          <Property name="G" value="1"/>
+                          <Property name="B" value="1"/>
+                          <Property name="A" value="1"/>
+                        </Property>
+                        <Property name="PrefixTitle" value="False"/>
+                        <Property name="PrefixTitleText" value=""/>
+                        <Property name="BlockPinning" value="False"/>
+                        <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                          <Property name="ConditionTest" value="AnyFalse"/>
+                        </Property>
+                        <Property name="RepeatLogic" value="Loop"/>
+                        <Property name="IconStyle" value="Default"/>
+                        <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                          <Property name="InputButton" value="None"/>
+                        </Property>
+                        <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                          <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                          <Property name="FormattableObjective" value=""/>
+                          <Property name="FormattableObjectiveTip" value=""/>
+                        </Property>
+                        <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                          <Property name="TargetMissionSurveyId" value=""/>
+                          <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                          <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                          <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                          <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                          <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                        </Property>
+                        <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                          <Property name="HasCustomNotifyTimer" value="False"/>
+                          <Property name="NotifyDisplayTime" value="32"/>
+                          <Property name="NotifyPauseTime" value="30"/>
+                        </Property>
+                        <Property name="Conditions"/>
+                        <Property name="Consequences"/>
+                        <Property name="Stages">
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
+                              <Property name="Message" value="ALCH_SCAN_PQ_SYSTEM_OBJ_WAIT"/>
+                              <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                <Property name="ConditionTest" value="AnyTrue"/>
+                              </Property>
+                              <Property name="Conditions">
+                                <Property value="GcMissionConditionIsScanEventLocal.xml">
+                                  <Property name="Event" value="SE_ALSCOC_QRY"/>
+                                  <Property name="RequiresFullFireteam" value="False"/>
+                                </Property>
+                              </Property>
+                              <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
+                              <Property name="DebugText" value=""/>
+                              <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
+                                <Property name="MissionMarkup" value="None"/>
+                              </Property>
+                            </Property>
+                          </Property>
+                          <Property value="GcGenericMissionStage.xml">
+                            <Property name="Versions"/>
+                            <Property name="Stage" value="GcMissionSequenceGroup.xml">
+                              <Property name="Silent" value="False"/>
+                              <Property name="Icon" value="TkTextureResource.xml">
+                                <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.PLANET.DDS"/>
+                              </Property>
+                              <Property name="PageHint" value="GcMissionPageHint.xml">
+                                <Property name="MissionPageHint" value="None"/>
+                              </Property>
+                              <Property name="PageDataLocID" value=""/>
+                              <Property name="BuildMenuHint" value=""/>
+                              <Property name="InventoryHint" value=""/>
+                              <Property name="DebugText" value=""/>
+                              <Property name="ObjectiveID" value="ALCH_SCAN_PQ_PLANET_OBJ"/>
+                              <Property name="ObjectiveTipID" value="ALCH_SCAN_PQ_PLANET_OBJ_TIP"/>
+                              <Property name="HasCategoryOverride" value="False"/>
+                              <Property name="OverrideCategory" value="GcMissionCategory.xml">
+                                <Property name="MissionCategory" value="Mission"/>
+                              </Property>
+                              <Property name="HasColourOverride" value="False"/>
+                              <Property name="ColourOverride" value="Colour.xml">
+                                <Property name="R" value="1"/>
+                                <Property name="G" value="1"/>
+                                <Property name="B" value="1"/>
+                                <Property name="A" value="1"/>
+                              </Property>
+                              <Property name="PrefixTitle" value="False"/>
+                              <Property name="PrefixTitleText" value=""/>
+                              <Property name="BlockPinning" value="False"/>
+                              <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                <Property name="ConditionTest" value="AnyFalse"/>
+                              </Property>
+                              <Property name="RepeatLogic" value="None"/>
+                              <Property name="IconStyle" value="Default"/>
+                              <Property name="SpecialButtonIcon" value="TkInputEnum.xml">
+                                <Property name="InputButton" value="None"/>
+                              </Property>
+                              <Property name="ObjectiveFormatting" value="GcObjectiveTextFormatOptions.xml">
+                                <Property name="ObjectivesCanBeFormattedBySequences" value="False"/>
+                                <Property name="FormattableObjective" value=""/>
+                                <Property name="FormattableObjectiveTip" value=""/>
+                              </Property>
+                              <Property name="SurveyTarget" value="GcTargetMissionSurveyOptions.xml">
+                                <Property name="TargetMissionSurveyId" value=""/>
+                                <Property name="TargetMissionSurveyDefinitelyExists" value="False"/>
+                                <Property name="SurveyInactiveHint" value="NOTIFY_MISSION_SURVEY_INACTIVE"/>
+                                <Property name="SurveySwapHint" value="NOTIFY_MISSION_SURVEY_SWAP"/>
+                                <Property name="SurveyHint" value="NOTIFY_MISSION_SURVEY"/>
+                                <Property name="SurveyVehicleHint" value="NOTIFY_MISSION_SURVEY"/>
+                              </Property>
+                              <Property name="CustomNotifyTimers" value="GcCustomNotifyTimerOptions.xml">
+                                <Property name="HasCustomNotifyTimer" value="False"/>
+                                <Property name="NotifyDisplayTime" value="32"/>
+                                <Property name="NotifyPauseTime" value="30"/>
+                              </Property>
+                              <Property name="Conditions">
+                                <Property value="GcMissionConditionIsScanEventLocal.xml">
+                                  <Property name="Event" value="SE_ALSCOC_QRY"/>
+                                  <Property name="RequiresFullFireteam" value="False"/>
+                                </Property>
+                              </Property>
+                              <Property name="Consequences"/>
+                              <Property name="Stages">
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
+                                    <Property name="MissionUpdateMessage" value="Start"/>
+                                    <Property name="CustomMessageLocID" value=""/>
+                                    <Property name="CustomObjectiveLocID" value=""/>
+                                    <Property name="SetMissionSelected" value="True"/>
+                                    <Property name="WaitForMessageOver" value="False"/>
+                                    <Property name="ShowChangeMissionNotify" value="False"/>
+                                    <Property name="PlayMusicSting" value="None"/>
+                                    <Property name="DebugText" value=""/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
+                                    <Property name="Message" value="ALCH_SCAN_PQ_PLANET_OBJ_WAIT"/>
+                                    <Property name="ConditionTest" value="GcMissionConditionTest.xml">
+                                      <Property name="ConditionTest" value="AnyTrue"/>
+                                    </Property>
+                                    <Property name="Conditions">
+                                      <Property value="GcMissionConditionIsScanEventOnCurrentPlanet.xml">
+                                        <Property name="Event" value="SE_ALSCOC_QRY"/>
+                                        <Property name="AllowInShip" value="True"/>
+                                      </Property>
+                                    </Property>
+                                    <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
+                                      <Property name="MissionMarkup" value="None"/>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCOC_01_ARVL"/>
+                                    <Property name="Seeded" value="True"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceWait.xml">
+                                    <Property name="Time" value="3"/>
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="SuppressMessages" value="False"/>
+                                    <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceEndScanEvent.xml">
+                  <Property name="Event" value="SE_ALSCOC_QRY"/>
                   <Property name="DebugText" value=""/>
                 </Property>
               </Property>
@@ -44866,6 +49005,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
                   <Property name="MissionUpdateMessage" value="Start"/>
                   <Property name="CustomMessageLocID" value=""/>
@@ -45172,10 +49322,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -45258,6 +49419,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -45280,6 +49443,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -45506,6 +49671,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -45736,7 +49903,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False"/>
             <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
-            <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
+            <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="True"/>
@@ -45787,7 +49954,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="NeedsWaterPlanet" value="False"/>
             <Property name="NeedsPrimePlanet" value="False"/>
             <Property name="NeedsExtremeSentinelPlanet" value="False"/>
-            <Property name="NeverAllowExtremeSentinelPlanet" value="True"/>
+            <Property name="NeverAllowExtremeSentinelPlanet" value="False"/>
             <Property name="NeedsExtremeWeatherPlanet" value="False"/>
             <Property name="NeedsExtremeHazardPlanet" value="False"/>
             <Property name="AnyBiomeNotWeirdOrDead" value="True"/>
@@ -45924,6 +50091,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
             <Property name="Conditions"/>
             <Property name="Consequences"/>
             <Property name="Stages">
+              <Property value="GcGenericMissionStage.xml">
+                <Property name="Versions"/>
+                <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                  <Property name="DebugText" value=""/>
+                  <Property name="MessageID" value="M_ALSCAN_PQ_BOOT"/>
+                  <Property name="Seeded" value="False"/>
+                  <Property name="SendToAllMatchingSeeds" value="False"/>
+                  <Property name="Multiplayer" value="False"/>
+                  <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
+                </Property>
+              </Property>
               <Property value="GcGenericMissionStage.xml">
                 <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceShowMissionUpdateMessage.xml">
@@ -46232,10 +50410,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 <Property value="GcGenericMissionStage.xml">
                                   <Property name="Versions"/>
                                   <Property name="Stage" value="GcMissionSequenceWait.xml">
-                                    <Property name="Time" value="2"/>
+                                    <Property name="Time" value="3"/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="SuppressMessages" value="False"/>
                                     <Property name="MultiplyTimeBySeasonValue" value="False"/>
+                                  </Property>
+                                </Property>
+                                <Property value="GcGenericMissionStage.xml">
+                                  <Property name="Versions"/>
+                                  <Property name="Stage" value="GcMissionSequenceBroadcastMessage.xml">
+                                    <Property name="DebugText" value=""/>
+                                    <Property name="MessageID" value="M_ALSCAN_PQ_LOOP"/>
+                                    <Property name="Seeded" value="False"/>
+                                    <Property name="SendToAllMatchingSeeds" value="False"/>
+                                    <Property name="Multiplayer" value="False"/>
+                                    <Property name="BroadcastToActiveMultiplayerMission" value="False"/>
                                   </Property>
                                 </Property>
                               </Property>
@@ -46318,6 +50507,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -46340,6 +50531,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                       </Property>
                                     </Property>
                                     <Property name="AllowedToFormatObjectives" value="False"/>
+                                    <Property name="ForceAllowMissionRestart" value="False"/>
+                                    <Property name="ForceAllowMissionRestartEvent" value=""/>
                                     <Property name="DebugText" value=""/>
                                     <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                       <Property name="MissionMarkup" value="None"/>
@@ -46566,6 +50759,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                 </Property>
                               </Property>
                               <Property name="AllowedToFormatObjectives" value="False"/>
+                              <Property name="ForceAllowMissionRestart" value="False"/>
+                              <Property name="ForceAllowMissionRestartEvent" value=""/>
                               <Property name="DebugText" value=""/>
                               <Property name="StatusMessageMissionMarkup" value="GcStatusMessageMissionMarkup.xml">
                                 <Property name="MissionMarkup" value="None"/>
@@ -46638,7 +50833,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
   --
   {["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SCANNING\\SCANEVENTTABLEPLANET.MBIN",
   ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = 0,
+    {["LINE_OFFSET"] = -1,
+    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
     --
     ["PRECEDING_KEY_WORDS"] = {
@@ -52326,7 +56522,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
   --
   {["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\COSTTABLE.MBIN",
   ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = 0,
+    {["LINE_OFFSET"] = -1,
+    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
     --
     ["PRECEDING_KEY_WORDS"] = {
@@ -52778,6 +56975,40 @@ NMS_MOD_DEFINITION_CONTAINER = {
       </Property>
     </Property>
     <Property value="GcCostTableEntry.xml">
+      <Property name="Id" value="C_ALSCAN_PMOB"/>
+      <Property name="DisplayCost" value="True"/>
+      <Property name="DontCharge" value="False"/>
+      <Property name="HideOptionAndDisplayCostOnly" value="False"/>
+      <Property name="DisplayOnlyCostIfCantAfford" value="False"/>
+      <Property name="HideCostStringIfCanAfford" value="False"/>
+      <Property name="RemoveOptionIfCantAfford" value="False"/>
+      <Property name="MustAffordInCreative" value="True"/>
+      <Property name="CannotAffordOSDMsg" value="ALCH_SCAN_ERR_PS_ACTIVE_OSD"/>
+      <Property name="MissionMessageWhenCharged" value=""/>
+      <Property name="Cost" value="GcCostMissionComplete.xml">
+        <Property name="Cost" value="ALCH_SCAN_OB"/>
+        <Property name="TextOverride" value="ALCH_SCAN_ERR_PS_ACTIVE"/>
+        <Property name="HideIfCompleted" value="True"/>
+      </Property>
+    </Property>
+    <Property value="GcCostTableEntry.xml">
+      <Property name="Id" value="C_ALSCAN_PMOC"/>
+      <Property name="DisplayCost" value="True"/>
+      <Property name="DontCharge" value="False"/>
+      <Property name="HideOptionAndDisplayCostOnly" value="False"/>
+      <Property name="DisplayOnlyCostIfCantAfford" value="False"/>
+      <Property name="HideCostStringIfCanAfford" value="False"/>
+      <Property name="RemoveOptionIfCantAfford" value="False"/>
+      <Property name="MustAffordInCreative" value="True"/>
+      <Property name="CannotAffordOSDMsg" value="ALCH_SCAN_ERR_PS_ACTIVE_OSD"/>
+      <Property name="MissionMessageWhenCharged" value=""/>
+      <Property name="Cost" value="GcCostMissionComplete.xml">
+        <Property name="Cost" value="ALCH_SCAN_OC"/>
+        <Property name="TextOverride" value="ALCH_SCAN_ERR_PS_ACTIVE"/>
+        <Property name="HideIfCompleted" value="True"/>
+      </Property>
+    </Property>
+    <Property value="GcCostTableEntry.xml">
       <Property name="Id" value="C_ALSCAN_PMGA"/>
       <Property name="DisplayCost" value="True"/>
       <Property name="DontCharge" value="False"/>
@@ -52818,7 +57049,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
   --
   {["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN",
   ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = 0,
+    {["LINE_OFFSET"] = -1,
+    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
     --
     ["PRECEDING_KEY_WORDS"] = {
@@ -54473,6 +58705,44 @@ NMS_MOD_DEFINITION_CONTAINER = {
       </Property>
     </Property>
     <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_ALSCAN_PMOB"/>
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll"/>
+        <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100"/>
+            <Property name="Reward" value="GcRewardMission.xml">
+              <Property name="Mission" value="ALCH_SCAN_OB"/>
+              <Property name="SetAsSelected" value="True"/>
+              <Property name="FailRewardIfMissionActive" value="True"/>
+            </Property>
+            <Property name="LabelID" value=""/>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_ALSCAN_PMOC"/>
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll"/>
+        <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100"/>
+            <Property name="Reward" value="GcRewardMission.xml">
+              <Property name="Mission" value="ALCH_SCAN_OC"/>
+              <Property name="SetAsSelected" value="True"/>
+              <Property name="FailRewardIfMissionActive" value="True"/>
+            </Property>
+            <Property name="LabelID" value=""/>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_PMGA"/>
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll"/>
@@ -54517,7 +58787,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
   --
   {["MBIN_FILE_SOURCE"] = "METADATA\\GAMESTATE\\STATS\\STATDEFINITIONSTABLE.MBIN",
   ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = 0,
+    {["LINE_OFFSET"] = -1,
+    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
     --
     ["PRECEDING_KEY_WORDS"] = {
@@ -54525,6 +58796,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
       "StatDefinitionTable", --
     },--
     ["ADD"] = [[
+    <Property value="GcStatDefinition.xml">
+      <Property name="Type" value="GcStatType.xml">
+        <Property name="StatType" value="Int"/>
+      </Property>
+      <Property name="TrackType" value="GcStatTrackType.xml">
+        <Property name="StatTrackType" value="Set"/>
+      </Property>
+      <Property name="DisplayType" value="GcStatDisplayType.xml">
+        <Property name="StatDisplayType" value="None"/>
+      </Property>
+      <Property name="DefaultValue" value="GcStatValueData.xml">
+        <Property name="IntValue" value="0"/>
+        <Property name="FloatValue" value="0"/>
+        <Property name="Denominator" value="0"/>
+      </Property>
+      <Property name="Id" value="ALSCAN_CFG_CHAT"/>
+      <Property name="TelemetryUpload" value="False"/>
+      <Property name="IsProgression" value="False"/>
+      <Property name="MissionMessageDecimals" value="0"/>
+    </Property>
     <Property value="GcStatDefinition.xml">
       <Property name="Type" value="GcStatType.xml">
         <Property name="StatType" value="Int"/>
@@ -54772,7 +59063,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
   --
   {["MBIN_FILE_SOURCE"] = "METADATA\\GAMESTATE\\MESSAGES\\STATUSMESSAGEDEFINITIONS.MBIN",
   ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = 0,
+    {["LINE_OFFSET"] = -1,
+    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
     --
     ["PRECEDING_KEY_WORDS"] = {
@@ -54790,7 +59082,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
       <Property name="ReplicateTo" value="None"/>
       <Property name="PostLocally" value="True"/>
       <Property name="Distance" value="0"/>
-      <Property name="DisplayDurationMultiplier" value="0.2"/>
+      <Property name="DisplayDurationMultiplier" value="0.15"/>
       <Property name="OnlyInMultiplayer" value="False"/>
       <Property name="OnlyOnFireteam" value="False"/>
       <Property name="MissionMarkup" value="GcStatusMessageMissionMarkup.xml">
@@ -54804,7 +59096,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
   --
   {["MBIN_FILE_SOURCE"] = "METADATA\\GAMESTATE\\STATS\\STATGROUPSTABLE.MBIN",
   ["EXML_CHANGE_TABLE"] = {
-    {["LINE_OFFSET"] = 0,
+    {["LINE_OFFSET"] = -1,
+    ["REPLACE_TYPE"] = "ADDafterSECTION",
     --
     ["SPECIAL_KEY_WORDS"] = {
       --
@@ -54817,6 +59110,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
       "TrackedStats", --
     },--
     ["ADD"] = [[
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="ALSCAN_CFG_CHAT"/>
+        </Property>
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="ALSCPB_CFG_DONE"/>
         </Property>

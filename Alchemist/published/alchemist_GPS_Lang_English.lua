@@ -5,8 +5,8 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "3-98"
-ModVersion = "2-0-1"
+GameVersion = "3-99"
+ModVersion = "2-1-0"
 
 -- =========
 -- CONSTANTS
@@ -32,7 +32,7 @@ LanguageName = "English"
 -- When 'false', will inject language into existing files, using LanguageFilePrefix.
 -- When 'true', will create seperate files for the mod in the LANGUAGE folder.
 -- When 'true', adds entries to GCDEBUGOPTIONS.GLOBAL.MBIN to register the new files.
-CreateSeperateLanguageFiles = false
+CreateSeperateLanguageFiles = true
 
 -- Whether to create/inject the language entries into just the target language's 
 -- file (false), or all language files (true). If true, players will see the 
@@ -77,7 +77,7 @@ files.
 
 --]]
 
--- Total keys: 197
+-- Total keys: 211
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_FREI_QRY_CFG"] = "Configure Deep Space Scanning...", --
@@ -100,8 +100,8 @@ LANGUAGE_TABLE = {
   ["ALCH_BIOS_SHIP_SPACE_OBJ_WAIT"] = "Complex <TECHNOLOGY>signal analysis<> <FUEL>unavailable<> <IMG>DANGER<>", --
   ["ALCH_BIOS_SHIP_SUB_1"] = "Enhanced Scanning Options", --
   ["ALCH_BIOS_SHIP_TITLE_1"] = "Ship Scanning Interface", --
-  ["ALCH_FLYBY_PORT_CHAT_END_1"] = "<VISOR>Frigate Recon<>: -{{ All scans complete. Returning to fleet. }}-", --
-  ["ALCH_FLYBY_PORT_CHAT_START_1"] = "<VISOR>Frigate Recon<>: -{{ Planetary approach complete. Starting scan sequence. }}-", --
+  ["ALCH_FLYBY_PORT_CHAT_END_1"] = "<VISOR>[ Frigate Recon ]<>: -{{ All scans complete. Returning to fleet. }}-", --
+  ["ALCH_FLYBY_PORT_CHAT_START_1"] = "<VISOR>[ Frigate Recon ]<>: -{{ Planetary approach complete. Starting scan sequence. }}-", --
   ["ALCH_FLYBY_PORT_FLYBY_DONE"] = "Frigate Recon Expedition Complete", --
   ["ALCH_FLYBY_PORT_FLYBY_OBJ"] = "Maintain Datalink", --
   ["ALCH_FLYBY_PORT_FLYBY_OBJ_TIP"] = "A frigate detachment has been deployed to your location.\nRemain in atmosphere on current planet to prevent datalink disruption.", --
@@ -118,32 +118,34 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_ERR_PS_ACTIVE"] = "Search Active", --
   ["ALCH_SCAN_ERR_PS_ACTIVE_OSD"] = "ERROR <HIGHLIGHT>//<> SEARCH ACTIVE <HIGHLIGHT>//<> Abandon mission from log", --
   ["ALCH_SCAN_FLYBY_COMM_DESC"] = "Request received Commander. What type of frequencies should we focus on?", --
-  ["ALCH_SCAN_GPS_INTRO_OSD"] = "GALACTIC POSITIONING SYSTEM", --
+  ["ALCH_SCAN_GPS_INTRO_OSD"] = "GALACTIC POSITIONING SYSTEM <HIGHLIGHT>//<> <TRADE>ONLINE<>", --
   ["ALCH_SCAN_GRP_ANC_DESC"] = "Tuned for Ancient Sites", --
   ["ALCH_SCAN_GRP_ANC_FLYBY"] = "Confirmed. Focusing on relics of the past. Deploying frigate detachment.", --
-  ["ALCH_SCAN_GRP_ANC_FLYBY_DONE"] = "<VISOR>Frigate Recon<>: -{{ Ancient Sites marked. Data cache available. }}-", --
+  ["ALCH_SCAN_GRP_ANC_FLYBY_DONE"] = "<VISOR>[ Frigate Recon ]<>: -{{ Ancient Sites marked. Data cache available. }}-", --
   ["ALCH_SCAN_GRP_ANC_MENU"] = "Ancient Sites...", --
   ["ALCH_SCAN_GRP_ANC_NAME"] = "Ancient Sites", --
   ["ALCH_SCAN_GRP_BLD_DESC"] = "Tuned for Buildings", --
   ["ALCH_SCAN_GRP_BLD_FLYBY"] = "Confirmed. Focusing on trade and public networks. Deploying frigate detachment.", --
-  ["ALCH_SCAN_GRP_BLD_FLYBY_DONE"] = "<VISOR>Frigate Recon<>: -{{ Building locations marked. Data cache available. }}-", --
+  ["ALCH_SCAN_GRP_BLD_FLYBY_DONE"] = "<VISOR>[ Frigate Recon ]<>: -{{ Building locations marked. Data cache available. }}-", --
   ["ALCH_SCAN_GRP_BLD_MENU"] = "Population Centres...", --
   ["ALCH_SCAN_GRP_BLD_NAME"] = "Population Centres", --
   ["ALCH_SCAN_GRP_SIG_DESC"] = "Tuned for public network signals", --
   ["ALCH_SCAN_GRP_SIG_FLYBY"] = "Confirmed. Focusing on assistance requests and public networks. Deploying frigate detachment.", --
-  ["ALCH_SCAN_GRP_SIG_FLYBY_DONE"] = "<VISOR>Frigate Recon<>: -{{ Signal Sources marked. Data cache available. }}-", --
+  ["ALCH_SCAN_GRP_SIG_FLYBY_DONE"] = "<VISOR>[ Frigate Recon ]<>: -{{ Signal Sources marked. Data cache available. }}-", --
   ["ALCH_SCAN_GRP_SIG_MENU"] = "Public Broadcasts...", --
   ["ALCH_SCAN_GRP_SIG_NAME"] = "Public Broadcasts", --
   ["ALCH_SCAN_GRP_SVG_DESC"] = "Tuned for Salvage Opportunities", --
   ["ALCH_SCAN_GRP_SVG_FLYBY"] = "Confirmed. Focusing on salvage opportunities and private networks. Deploying friggate detachment.", --
-  ["ALCH_SCAN_GRP_SVG_FLYBY_DONE"] = "<VISOR>Frigate Recon<>: -{{ Salvage locations marked. Data cache available. }}-", --
+  ["ALCH_SCAN_GRP_SVG_FLYBY_DONE"] = "<VISOR>[ Frigate Recon ]<>: -{{ Salvage locations marked. Data cache available. }}-", --
   ["ALCH_SCAN_GRP_SVG_MENU"] = "Salvage Opportunities...", --
   ["ALCH_SCAN_GRP_SVG_NAME"] = "Salvage Opportunities", --
   ["ALCH_SCAN_GRP_UW_DESC"] = "Tuned for underwater signals", --
   ["ALCH_SCAN_GRP_UW_FLYBY"] = "Confirmed. Focusing on signals with aquatic interference. Deploying frigate detachment.", --
-  ["ALCH_SCAN_GRP_UW_FLYBY_DONE"] = "<VISOR>Frigate Recon<>: -{{ Underwater signals marked. Data cache available. }}-", --
+  ["ALCH_SCAN_GRP_UW_FLYBY_DONE"] = "<VISOR>[ Frigate Recon ]<>: -{{ Underwater signals marked. Data cache available. }}-", --
   ["ALCH_SCAN_GRP_UW_MENU"] = "Underwater...", --
   ["ALCH_SCAN_GRP_UW_NAME"] = "Underwater", --
+  ["ALCH_SCAN_MENU_CONFIG_CHAT_D"] = "Disable Chat Notifications", --
+  ["ALCH_SCAN_MENU_CONFIG_CHAT_E"] = "Enable Chat Notifications", --
   ["ALCH_SCAN_MENU_CONFIG_COST_D"] = "Disable Scan Costs", --
   ["ALCH_SCAN_MENU_CONFIG_COST_E"] = "Enable Scan Costs", --
   ["ALCH_SCAN_MENU_CONFIG_TECH_D"] = "Disable Tech Requirements", --
@@ -178,18 +180,25 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_POI_UWCF"] = "Submerged Freighter", --
   ["ALCH_SCAN_POI_UWDS"] = "Submerged Ship", --
   ["ALCH_SCAN_POI_UWTR"] = "Submerged Ruins", --
+  ["ALCH_SCAN_PO_DESC"] = "<SPECIAL>Outlier<> Pattern Query <HIGHLIGHT>//<> <FUEL>ADVISORY<> ~ Immediate results unlikely <HIGHLIGHT>//<> Consult <STELLAR>Mission Log<> for details", --
   ["ALCH_SCAN_PQ_ACTIVE_OBJ"] = "Query Active", --
   ["ALCH_SCAN_PQ_ACTIVE_OBJ_TIP"] = "Planetary Query subroutines are currently <TRADEABLE>ACTIVE<> and will be invoked during <STELLAR>space flight<>.\nIncrease search coverage through warp travel. Use <IMG>QUICK_MENU<> to open <COMMODITY>Galactic Map<>.", --
   ["ALCH_SCAN_PQ_DESC"] = "<TECHNOLOGY>Biome<> Pattern Query <HIGHLIGHT>//<> Immediate results expected <HIGHLIGHT>//<> Consult <STELLAR>Mission Log<> for details", --
   ["ALCH_SCAN_PQ_GA_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Pirate Controlled System ~ Black Market Economy ~ Undiscovered Planets", --
   ["ALCH_SCAN_PQ_GA_MENU"] = "Black Market", --
   ["ALCH_SCAN_PQ_GA_TITLE"] = "System Query ~ Black Market", --
-  ["ALCH_SCAN_PQ_GB_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Populated Wealthy System ~ Undiscovered Planets ~ Biome Not Wierd or Dead ~ Low Sentinel Presence", --
+  ["ALCH_SCAN_PQ_GB_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Populated Wealthy System ~ Undiscovered Planets", --
   ["ALCH_SCAN_PQ_GB_MENU"] = "Wealthy Economy", --
   ["ALCH_SCAN_PQ_GB_TITLE"] = "System Query ~ Wealthy Economy", --
-  ["ALCH_SCAN_PQ_OA_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Any Infested Biome ~ Prime Variant", --
-  ["ALCH_SCAN_PQ_OA_MENU"] = "Prime Infested", --
-  ["ALCH_SCAN_PQ_OA_TITLE"] = "Planet Query ~ Prime Infested", --
+  ["ALCH_SCAN_PQ_OA_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Lush Biome ~ Prime Variant ~ Overgrown Flora ~ Abundant Fauna ~ Passive Sentinels", --
+  ["ALCH_SCAN_PQ_OA_MENU"] = "Prime Lush", --
+  ["ALCH_SCAN_PQ_OA_TITLE"] = "Planet Query ~ Prime Lush", --
+  ["ALCH_SCAN_PQ_OB_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Volcanic Biome ~ Prime Variant ~ Extreme Weather Patterns", --
+  ["ALCH_SCAN_PQ_OB_MENU"] = "Prime Volcanic", --
+  ["ALCH_SCAN_PQ_OB_TITLE"] = "Planet Query ~ Prime Volcanic", --
+  ["ALCH_SCAN_PQ_OC_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Any Infested Biome ~ Prime Variant", --
+  ["ALCH_SCAN_PQ_OC_MENU"] = "Prime Infestation", --
+  ["ALCH_SCAN_PQ_OC_TITLE"] = "Planet Query ~ Prime Infestation", --
   ["ALCH_SCAN_PQ_PLANET_OBJ"] = "Travel to Planet", --
   ["ALCH_SCAN_PQ_PLANET_OBJ_TIP"] = "A planet matching the given <SPECIAL>query parameters<> has been identified in the <TRADEABLE>current system<>. Enter the planet's atmosphere to complete the mission.\nHold <IMG>ROLLLEFT<> and <IMG>ROLLRIGHT<> together to engage Pulse Jump.", --
   ["ALCH_SCAN_PQ_PLANET_OBJ_WAIT"] = "<TITLE>Query result located in<> <TRADEABLE>current system<>\nEnter the planet's atmosphere to complete the mission", --
@@ -246,14 +255,17 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PR_DESC"] = "<TECHNOLOGY>Resource<> Pattern Query <HIGHLIGHT>//<> Immediate results expected <HIGHLIGHT>//<> Consult <STELLAR>Mission Log<> for details", --
   ["ALCH_SCAN_SCAN_EXACT_DESC"] = "Select category for further options.", --
   ["ALCH_SCAN_SCAN_FAST_DESC"] = "Tuned to common signals...", --
+  ["ALCH_SCAN_TASK_NOTIF"] = "<TECHNOLOGY>[ System Notification ]<>: <SPECIAL>Deep Space Query<> <HIGHLIGHT>//<> <TITLE>Nearby systems scanned, some queries still<> {{ PENDING MATCH }} <HIGHLIGHT>//<> <TITLE>Hybernating...<>", --
   ["D_ALSCFB_BOOT_LANG"] = "Commander, this freighter's <TECHNOLOGY>DEEP SPACE SCANNING<> system is now available but it requires configuration.\nIf <STELLAR>IMMERSIVE MODE<> is enabled then an <TECHNOLOGY>Interstellar Scanner<> must be installed in this freighter and all scans will require <FUEL>Anomaly Detectors<>. Enable <STELLAR>IMMERSIVE MODE<>?", --
-  ["D_ALSCFB_BOOT_RES_A"] = "Confirmed, immersive mode ENABLED for freighter <TECHNOLOGY>DEEP SPACE SCANNING<> system.\nCome see me when you would like to begin a <TECHNOLOGY>DEEP SPACE QUERY<> or want to modify the configuration in greater detail.", --
-  ["D_ALSCFB_BOOT_RES_B"] = "Confirmed, immersive mode <FUEL>DISABLED<> for freighter <TECHNOLOGY>DEEP SPACE SCANNING<> system.\nCome see me when you would like to begin a <TECHNOLOGY>DEEP SPACE QUERY<> or want to modify the configuration in greater detail.", --
+  ["D_ALSCFB_BOOT_RES_A"] = "Confirmed, immersive mode <TRADE>ENABLED<> for freighter <TECHNOLOGY>DEEP SPACE SCANNING<> system. The enhanced scanning interface is now <TRADE>ONLINE<>.", --
+  ["D_ALSCFB_BOOT_RES_B"] = "Confirmed, immersive mode <FUEL>DISABLED<> for freighter <TECHNOLOGY>DEEP SPACE SCANNING<> system. The enhanced scanning interface is now <TRADE>ONLINE<>.", --
   ["D_ALSCFB_CONFIG_LANG"] = "Commander, this freighter's <TECHNOLOGY>DEEP SPACE SCANNING<> system can now be reconfigured. What should be changed?", --
-  ["D_ALSCFB_CONFIG_RES_A"] = "Confirmed, scan costs set to ENABLED. Just a moment while the system reboots...", --
-  ["D_ALSCFB_CONFIG_RES_B"] = "Confirmed, scan costs set to DISABLED. Just a moment while the system reboots...", --
-  ["D_ALSCFB_CONFIG_RES_C"] = "Confirmed, technology requirements set to ENABLED. Just a moment while the system reboots...", --
-  ["D_ALSCFB_CONFIG_RES_D"] = "Confirmed, technology requirements set to DISABLED. Just a moment while the system reboots...", --
+  ["D_ALSCFB_CONFIG_RES_A"] = "Confirmed, scan costs set to ENABLED. Anything else, Commander?", --
+  ["D_ALSCFB_CONFIG_RES_B"] = "Confirmed, scan costs set to DISABLED. Anything else, Commander?", --
+  ["D_ALSCFB_CONFIG_RES_C"] = "Confirmed, technology requirements set to ENABLED. Anything else, Commander?", --
+  ["D_ALSCFB_CONFIG_RES_D"] = "Confirmed, technology requirements set to DISABLED. Anything else, Commander?", --
+  ["D_ALSCFB_CONFIG_RES_E"] = "Confirmed, chat notifications set to ENABLED. Anything else, Commander?", --
+  ["D_ALSCFB_CONFIG_RES_F"] = "Confirmed, chat notifications set to DISABLED. Anything else, Commander?", --
   ["D_ALSCFP_SHIP_R_DESC"] = "Frigate Recon Expedition <HIGHLIGHT>//<> <TRADEABLE>SUCCESS<> <HIGHLIGHT>//<> <TECHNOLOGY>Navigation Data<> cache available", --
   ["D_ALSCFP_SHIP_R_OPT_A"] = "Download", --
   ["D_ALSCPB_BOOT_LANG"] = "Signal Scanner BIOS <HIGHLIGHT>//<> Configuration Required <HIGHLIGHT>//<> Starting configuration wizard...\n<STELLAR>IMMERSIVE MODE<> <HIGHLIGHT>//<> Scans require Navigation Data <HIGHLIGHT>//<> Exact target scan requires Atlas Pass <HIGHLIGHT>//<> Enable immersive mode?", --
@@ -265,18 +277,20 @@ LANGUAGE_TABLE = {
   ["D_ALSCPB_CONFIG_RES_B"] = "Signal Scanner BIOS <HIGHLIGHT>//<> Scan costs set to DISABLED <HIGHLIGHT>//<> Rebooting...", --
   ["D_ALSCPB_CONFIG_RES_C"] = "Signal Scanner BIOS <HIGHLIGHT>//<> <COMMODITY>Atlas Pass<> requirement set to ENABLED <HIGHLIGHT>//<> Rebooting...", --
   ["D_ALSCPB_CONFIG_RES_D"] = "Signal Scanner BIOS <HIGHLIGHT>//<> <COMMODITY>Atlas Pass<> requirement set to DISABLED <HIGHLIGHT>//<> Rebooting...", --
+  ["D_ALSCPB_HOME_OPT_G"] = "Frigate Recon Status...", --
+  ["D_ALSCPB_HOME_OPT_H"] = "[ ! ] Download Frigate Data Cache", --
+  ["D_ALSCPB_HOME_RES_G"] = "Frigate planetary sweep in progress <HIGHLIGHT>//<> Relaying locations to suit <HIGHLIGHT>//<> Awaiting finalized frigate data cache.", --
   ["D_ALSCPB_UTIL_RES_A"] = "Connecting to Fleet...", --
   ["D_ALSCSB_BOOT_DESC"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Configuration Required <HIGHLIGHT>//<> Starting configuration wizard...\n<STELLAR>IMMERSIVE MODE<> <HIGHLIGHT>//<> Scans require resources <HIGHLIGHT>//<> Exact target scan requires Ship Tech <HIGHLIGHT>//<> Enable immersive mode?", --
-  ["D_ALSCSB_BOOT_RES_A"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Immersive mode ENABLED <HIGHLIGHT>//<> Rebooting...", --
-  ["D_ALSCSB_BOOT_RES_B"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Immersive mode DISABLED <HIGHLIGHT>//<> Rebooting...", --
+  ["D_ALSCSB_BOOT_RES_A"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Immersive mode ENABLED <HIGHLIGHT>//<> Enhanced scanning interface... <TRADE>ONLINE<>", --
+  ["D_ALSCSB_BOOT_RES_B"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Immersive mode DISABLED <HIGHLIGHT>//<> Enhanced scanning interface... <TRADE>ONLINE<>", --
   ["D_ALSCSB_CONFIG_LANG"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Select configuration task...", --
-  ["D_ALSCSB_CONFIG_RES_A"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Scan costs set to ENABLED <HIGHLIGHT>//<> Rebooting...", --
-  ["D_ALSCSB_CONFIG_RES_B"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Scan costs set to DISABLED <HIGHLIGHT>//<> Rebooting...", --
-  ["D_ALSCSB_CONFIG_RES_C"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Tech Requirements set to ENABLED <HIGHLIGHT>//<> Rebooting...", --
-  ["D_ALSCSB_CONFIG_RES_D"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Tech Requirements set to DISABLED <HIGHLIGHT>//<> Rebooting...", --
-  ["SIGNALSCANNER_OPT_G"] = "Frigate Recon Status...", --
-  ["SIGNALSCANNER_OPT_H"] = "[ ! ] Download Frigate Data Cache", --
-  ["SIGNALSCANNER_RES_G"] = "Frigate planetary sweep in progress <HIGHLIGHT>//<> Relaying locations to suit <HIGHLIGHT>//<> Awaiting finalized frigate data cache.", --
+  ["D_ALSCSB_CONFIG_RES_A"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Scan costs set to ENABLED", --
+  ["D_ALSCSB_CONFIG_RES_B"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Scan costs set to DISABLED", --
+  ["D_ALSCSB_CONFIG_RES_C"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Tech Requirements set to ENABLED", --
+  ["D_ALSCSB_CONFIG_RES_D"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Tech Requirements set to DISABLED", --
+  ["D_ALSCSB_CONFIG_RES_E"] = "Deep Space Scanning <HIGHLIGHT>//<> Chat notifications set to ENABLED", --
+  ["D_ALSCSB_CONFIG_RES_F"] = "Deep Space Scanning <HIGHLIGHT>//<> Chat notifications set to DISABLED", --
 }
 
 -- ======================================
