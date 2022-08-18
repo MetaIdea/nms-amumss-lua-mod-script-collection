@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL station interior FIX.pak',
 	MOD_AUTHOR			= 'Lo2k, lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -171,11 +171,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		-- |station landing pad lights|
+	---	|station landing pad lights|
 		MBIN_FILE_SOURCE 	= 'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/LANDINGPAD.SCENE.MBIN',
 		EXML_CHANGE_TABLE 	= {
 			{
-				REPLACE_TYPE		= 'ALL',
+				REPLACE_TYPE		= 'All',
 				SPECIAL_KEY_WORDS	= {'Type', 'LIGHT'},
 				VALUE_CHANGE_TABLE	= {
 					{'TransY',		25},	--original : 10.46178
@@ -183,28 +183,28 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				REPLACE_TYPE		= 'ALL',
+				REPLACE_TYPE		= 'All',
 				SPECIAL_KEY_WORDS	= {'Name', 'FOV'},
 				VALUE_CHANGE_TABLE	= {
 					{'Value',		70},
 				}
 			},
 			{
-				REPLACE_TYPE		= 'ALL',
+				REPLACE_TYPE		= 'All',
 				SPECIAL_KEY_WORDS	= {'Name', 'COL_R'},
 				VALUE_CHANGE_TABLE	= {
 					{'Value',		0.95}
 				}
 			},
 			{
-				REPLACE_TYPE		= 'ALL',
+				REPLACE_TYPE		= 'All',
 				SPECIAL_KEY_WORDS	= {'Name', 'COL_G'},
 				VALUE_CHANGE_TABLE	= {
 					{'Value',		0.95}
 				}
 			},
 			{
-				REPLACE_TYPE		= 'ALL',
+				REPLACE_TYPE		= 'All',
 				SPECIAL_KEY_WORDS	= {'Name', 'COL_B'},
 				VALUE_CHANGE_TABLE	= {
 					{'Value',		0.85}

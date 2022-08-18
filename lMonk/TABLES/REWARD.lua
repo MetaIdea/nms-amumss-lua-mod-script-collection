@@ -1,162 +1,209 @@
 --------------------------------------------------------------------------
 local desc = [[
   Replace freighter defense reward (requires changes in AlienPuzzle)
-  Changes to pirate battle loot
+  Changes to pirate battle loot & other custom rewards
   Increase wild plants harvest yield
   More words learned at word stones and other places
-
-  ** ADD reward technology blueprint
 ]]------------------------------------------------------------------------
 
-local F_ = {}
-F_.TableItemSingle = function(item, data, reward)
-	local minmax = ''
-	if item.x ~= nil then
-		minmax = [[
-			<Property name="AmountMin" value="]]..item.n..[["/>
-			<Property name="AmountMax" value="]]..item.x..[["/>
-		]]
+local function bool(b)
+	return (b == true) and 'True' or 'False'
+end
+
+local function R_TableItem(item, reward, data)
+	local function Amount()
+		if not item.x then return '' end
+		return [[
+			<Property name="AmountMin" value="]]..(item.n or item.x)..[["/>
+			<Property name="AmountMax" value="]]..item.x..[["/>]]
 	end
 	return [[
 		<Property value="GcRewardTableItem.xml">
 			<Property name="PercentageChance" value="]]..item.c..[["/>
 			<Property name="Reward" value="]]..reward..[[">
-				]]..data..minmax..[[
+				]]..data..Amount()..[[
 			</Property>
-			<Property name="LabelID" value=""/>
-		</Property>
-	]]
+		</Property>]]
 end
-F_.Procedural = function(item)
-	local exml = [[
-		<Property name="Type" value="GcProceduralProductCategory.xml">
-			<Property name="ProceduralProductCategory" value="]]..item.id..[["/>
-		</Property>
-		<Property name="OSDMessage" value=""/>
-		<Property name="SubIfPlayerAlreadyHasOne" value="False"/>
-		<Property name="OverrideRarity" value="False"/>
-		<Property name="Rarity" value="GcRarity.xml">
-			<Property name="Rarity" value="]]..(item.r or 'Common')..[["/>
-		</Property>
-	]]
-	return F_.TableItemSingle(item, exml, 'GcRewardProceduralProduct.xml')
-end
-F_.Product = function(item)
-	local exml = [[
-		<Property name="Default" value="GcDefaultMissionProductEnum.xml">
-			<Property name="DefaultProductType" value="None"/>
-		</Property>
-		<Property name="ID" value="]]..item.id..[["/>
-		<Property name="HideAmountInMessage" value="False"/>
-		<Property name="ForceSpecialMessage" value="False"/>
-		<Property name="HideInSeasonRewards" value="False"/>
-		<Property name="Silent" value="False"/>
-	]]
-	return F_.TableItemSingle(item, exml, 'GcRewardSpecificProduct.xml')
-end
-F_.Substance = function(item)
-	local exml = [[
-		<Property name="Default" value="GcDefaultMissionSubstanceEnum.xml">
-			<Property name="DefaultSubstanceType" value="None"/>
-		</Property>
-		<Property name="ID" value="]]..item.id..[["/>
-		<Property name="HardModeMultiplier" value="1"/>
-		<Property name="DisableMultiplier" value="False"/>
-		<Property name="RewardAsBlobs" value="False"/>
-		<Property name="UseFuelMultiplier" value="False"/>
-		<Property name="Silent" value="False"/>
-	]]
-	return F_.TableItemSingle(item, exml, 'GcRewardSpecificSubstance.xml')
-end
-F_.Technology = function(item)
-	local exml = [[
-		<Property name="TechId" value="]]..item.id..[["/>
-		<Property name="AutoPin" value="False"/>
-		<Property name="Silent" value="False"/>
-	]]
-	return F_.TableItemSingle(item, exml, 'GcRewardSpecificTech.xml')
-end
-F_.ProductRecipe = function(item)
-	local exml = [[
-		<Property name="Id" value="]]..item.id..[["/>
-		<Property name="Silent" value="False"/>
-	]]
-	return F_.TableItemSingle(item, exml, 'GcRewardSpecificProductRecipe.xml')
-end
-F_.Word = function(item)
-	local exml = [[
-		<Property name="Race" value="GcAlienRace.xml">
-			<Property name="AlienRace" value="]]..item.id..[["/>
-		</Property>
-		<Property name="UseCategory" value="False"/>
-		<Property name="Category" value="GcWordCategoryTableEnum.xml">
-			<Property name="gcwordcategorytableEnum" value="MISC"/>
-		</Property>
-	]]
-	return F_.TableItemSingle(item, exml, 'GcRewardTeachWord.xml')
-end
-F_.Money = function(item)
-	local exml = [[
-		<Property name="RoundNumber" value="False"/>
-		<Property name="Currency" value="GcCurrency.xml">
-			<Property name="Currency" value="]]..item.id..[["/>
-		</Property>
-	]]
-	return F_.TableItemSingle(item, exml, 'GcRewardMoney.xml')
-end
-F_.Jetboost = function(item)
-	local exml = [[
-		<Property name="Duration" value="]]..		(10 * item.t)..[["/>
-		<Property name="ForwardBoost" value="]]..	(4.2 * item.b)..[["/>
-		<Property name="UpBoost" value="]]..		(0.9 * item.b)..[["/>
-		<Property name="IgnitionBoost" value="]]..	(1.8 * item.b)..[["/>
-	]]
-	return F_.TableItemSingle(item, exml, 'GcRewardJetpackBoost.xml')
-end
-F_.Shield = function(item)
-	local exml = [[
-		<Property name="ShowOSDOnSuccess" value="True"/>
-		<Property name="ShowOSDOnFail" value="True"/>
-	]]
-	return F_.TableItemSingle(item, exml, 'GcRewardShield.xml')
-end
-F_.Health = function(item)
-	local exml = '<Property name="SilentUnlessShieldAtMax" value="True"/>'
-	return F_.TableItemSingle(item, exml, 'GcRewardHealth.xml')
-end
-F_.ItemList = function(item)
+local function R_MultiItem(item)
 	local exml = ''
-	for i=1, #item do
+	for _,itm in ipairs(item) do
 		exml = exml..[[
 			<Property value="GcMultiSpecificItemEntry.xml">
-				<Property name="MultiItemRewardType" value="]]..item[i].t..[["/>
-				<Property name="Id" value="]]..(item[i].id or '')..[["/>
-				<Property name="Amount" value="]]..(item[i].n or 1)..[["/>
-				<Property name="ProcTechGroup" value=""/>
-				<Property name="ProcTechQuality" value="3"/>
-				<Property name="IllegalProcTech" value="]]..(item[i].l or 'False')..[["/>
+				<Property name="MultiItemRewardType" value="]]..itm.t..[["/>
+				<Property name="Id" value="]]..(itm.id or '')..[["/>
+				<Property name="Amount" value="]]..(itm.n or 1)..[["/>
+				<Property name="ProcTechGroup" value="]]..(itm.tg or '')..[["/>
+				<Property name="ProcTechQuality" value="]]..(itm.q or 0)..[["/>
+				<Property name="IllegalProcTech" value="]]..bool(itm.l)..[["/>
 				<Property name="ProcProdType" value="GcProceduralProductCategory.xml">
-					<Property name="ProceduralProductCategory" value="]]..(item[i].pid or 'Loot')..[["/>
+					<Property name="ProceduralProductCategory" value="]]..(itm.pid or 'Loot')..[["/>
 				</Property>
 				<Property name="ProcProdRarity" value="GcRarity.xml">
-					<Property name="Rarity" value="]]..(item[i].r or 'Common')..[["/>
+					<Property name="Rarity" value="]]..(itm.r or 'Common')..[["/>
 				</Property>
-				<Property name="HideInSeasonRewards" value="False"/>
+			</Property>]]
+	end
+	return R_TableItem(
+		item,
+		'GcRewardMultiSpecificItems.xml',
+		[[
+			<Property name="Silent" value="]]..bool(item.s)..[["/>
+			<Property name="Items">
+				]]..exml..[[
 			</Property>
 		]]
-	end
-	return [[
-		<Property value="GcRewardTableItem.xml">
-			<Property name="PercentageChance" value="]]..item.c..[["/>
-			<Property name="Reward" value="GcRewardMultiSpecificItems.xml">
-				<Property name="Silent" value="False"/>
-				<Property name="Items">
-					]]..exml..[[
-				</Property>
+	)
+end
+local function R_Procedural(item)
+	return R_TableItem(
+		item,
+		'GcRewardProceduralProduct.xml',
+		[[
+			<Property name="Type" value="GcProceduralProductCategory.xml">
+				<Property name="ProceduralProductCategory" value="]]..item.id..[["/>
 			</Property>
-			<Property name="LabelID" value=""/>
-		</Property>
-	]]
+			<Property name="Rarity" value="GcRarity.xml">
+				<Property name="Rarity" value="]]..(item.r or 'Common')..[["/>
+			</Property>
+		]]
+	)
+end
+local function R_Product(item)
+	return R_TableItem(
+		item,
+		'GcRewardSpecificProduct.xml',
+		[[
+			<Property name="ID" value="]]..item.id..[["/>
+			<Property name="Silent" value="]]..bool(item.s)..[["/>
+		]]
+	)
+end
+local function R_Substance(item)
+	return R_TableItem(
+		item,
+		'GcRewardSpecificSubstance.xml',
+		[[
+			<Property name="ID" value="]]..item.id..[["/>
+			<Property name="HardModeMultiplier" value="1"/>
+			<Property name="Silent" value="]]..bool(item.s)..[["/>
+		]]
+	)
+end
+local function R_Technology(item)
+	return R_TableItem(
+		item,
+		'GcRewardSpecificTech.xml',
+		[[
+			<Property name="TechId" value="]]..item.id..[["/>
+			<Property name="Silent" value="]]..bool(item.s)..[["/>
+		]]
+	)
+end
+local function R_ProductRecipe(item)
+	return R_TableItem(
+		item,
+		'GcRewardSpecificProductRecipe.xml',
+		[[
+			<Property name="ID" value="]]..item.id..[["/>
+			<Property name="Silent" value="]]..bool(item.s)..[["/>
+		]]
+	)
+end
+local function R_Word(item)
+	return R_TableItem(
+		item,
+		'GcRewardTeachWord.xml',
+		[[
+			<Property name="Race" value="GcAlienRace.xml">
+				<Property name="AlienRace" value="]]..item.id..[["/>
+			</Property>
+			<Property name="Category" value="GcWordCategoryTableEnum.xml">
+				<Property name="gcwordcategorytableEnum" value="MISC"/>
+			</Property>
+		]]
+	)
+end
+local function R_Money(item)
+	return R_TableItem(
+		item,
+		'GcRewardMoney.xml',
+		[[
+			<Property name="Currency" value="GcCurrency.xml">
+				<Property name="Currency" value="]]..item.id..[["/>
+			</Property>
+		]]
+	)
+end
+local function R_Jetboost(item)
+	return R_TableItem(
+		item,
+		'GcRewardJetpackBoost.xml',
+		[[
+			<Property name="Duration" value="]]..		(10 * item.t)..[["/>
+			<Property name="ForwardBoost" value="]]..	(4.2 * item.b)..[["/>
+			<Property name="UpBoost" value="]]..		(0.9 * item.b)..[["/>
+			<Property name="IgnitionBoost" value="]]..	(1.8 * item.b)..[["/>
+		]]
+	)
+end
+local function R_Stamina(item)
+	return R_TableItem(
+		item,
+		'GcRewardFreeStamina.xml',
+		[[<Property name="Duration" value="]]..(10 * item.t)..[["/>]]
+	)
+end
+local function R_Hazard(item)
+	return R_TableItem(
+		item,
+		'GcRewardRefreshHazProt.xml',
+		[[
+			<Property name="Amount" value="-]]..item.n..[["/>
+			<Property name="Silent" value="]]..bool(item.s)..[["/>
+		]]
+	)
+end
+local function R_Shield(item)
+	return R_TableItem(item, 'GcRewardShield.xml', '')
+end
+local function R_Health(item)
+	return R_TableItem(
+		item,
+		'GcRewardHealth.xml',
+		[[<Property name="SilentUnlessShieldAtMax" value="]]..bool(item.s)..[["/>]]
+	)
+end
+local function R_Wanted(item)
+	return R_TableItem(
+		item,
+		'GcRewardWantedLevel.xml',
+		[[<Property name="Level" value="]]..(item.n or 0)..[["/>]]
+	)
+end
+local function R_NoSentinels(item)
+	return R_TableItem(
+		item,
+		'GcRewardDisableSentinels.xml',
+		[[
+			<Property name="Duration" value="]]..(item.t or -1)..[["/>
+			<Property name="OSDMessage" value="UI_SENTINELS_DISABLED"/>
+			<Property name="WantedBarMessage" value="UI_SENTINELS_DISABLED_MSG"/>
+		]]
+	)
+end
+local function R_FlyBy(item) -- AmbientGroup DeepSpaceCommon
+	return R_TableItem(
+		item,
+		'GcRewardFrigateFlyby.xml',
+		[[
+			<Property name="FlybyType" value="GcFrigateFlybyType.xml">
+				<Property name="FrigateFlybyType" value="DeepSpaceCommon"/>
+			</Property>
+			<Property name="AppearanceDelay" value="]]..(item.t or 3)..[["/>
+			<Property name="CameraShake" value="FRG_FLYBY_PREP"/>
+		]]
+	)
 end
 
 local E_ = {
@@ -182,27 +229,22 @@ local E_ = {
 	SLV='Salvage',
 
 	-- MultiItemRewardTypeEnum
-	PDT='Product',
-	SBT='Substance',
- 	PRP='ProcProduct',
+	PDT='Product',	SBT='Substance',	PRP='ProcProduct',
 	-- PRT='ProcTech', not supported
 
 	-- RarityEnum
-	C='Common',
-	U='Uncommon',
-	R='Rare',
+	C='Common',		U='Uncommon',		R='Rare',
 
 	-- Money
-	UT='Units',
-	NN='Nanites',
-	HG='Specials',
+	UT='Units',		NN='Nanites',		HG='Specials', -- quicksilver
 }
 
-local Rewards = {
-	FreightSave_Explorer = {
-		id = 'FREIGHTERSAVE_E',
-		choice = 'GiveAll',
-		rewardlist = {
+local new_reward = {
+	{
+	---	explorer freighter defense battle ---
+		id			= 'FREIGHTERSAVE_E',
+		choice		= 'GiveAll',
+		rewardlist	= {
 			{
 				--id				Amount	type
 				{id='HYPERFUEL1',	n=1, 	t=E_.PDT},	-- Hyperdrive fuel
@@ -211,15 +253,15 @@ local Rewards = {
 				{id='ASTEROID3',	n=169, 	t=E_.SBT},	-- Platinum
 				{pid=E_.SPB,		r=E_.U,	t=E_.PRP},	-- Space Bones Procedural
 				c=100,
-				f=F_.ItemList
+				f=R_MultiItem
 			},
-			{id=E_.HG, n=50, x=60, c=100, f=F_.Money},
+			{id=E_.HG, n=50, x=60, c=100, f=R_Money},
 		}
-	},
-	FreightSave_Trader = {
-		id = 'FREIGHTERSAVE_T',
-		choice = 'GiveAll',
-		rewardlist = {
+	},{
+	---	trader freighter defense battle ---
+		id			= 'FREIGHTERSAVE_T',
+		choice		= 'GiveAll',
+		rewardlist	= {
 			{
 				--id				Amount	type
 				{id='HYPERFUEL1',	n=1, 	t=E_.PDT},
@@ -228,15 +270,15 @@ local Rewards = {
 				{id='ASTEROID1',	n=523, 	t=E_.SBT},	-- silver
 				{pid=E_.SLV,		r=E_.U,	t=E_.PRP},	-- Salvage Procedural
 				c=100,
-				f=F_.ItemList
+				f=R_MultiItem
 			},
-			{id=E_.UT, n=35100, x=50200, c=100, f=F_.Money},
+			{id=E_.UT, n=35100, x=50200, c=100, f=R_Money},
 		}
-	},
-	FreightSave_Warrior = {
-		id = 'FREIGHTERSAVE_W',
-		choice = 'GiveAll',
-		rewardlist = {
+	},{
+	---	warior freighter defense battle ---
+		id			= 'FREIGHTERSAVE_W',
+		choice		= 'GiveAll',
+		rewardlist	= {
 			{
 				--id				Amount	type
 				{id='HYPERFUEL1',	n=1, 	t=E_.PDT},
@@ -245,147 +287,195 @@ local Rewards = {
 				{id='ASTEROID2',	n=387, 	t=E_.SBT},	-- gold
 				{pid=E_.DTC,		r=E_.U,	t=E_.PRP},
 				c=100,
-				f=F_.ItemList
+				f=R_MultiItem
 			},
-			{id=E_.NN, n=190, x=270, c=100, f=F_.Money},
+			{id=E_.NN, n=190, x=270, c=100, f=R_Money},
 		}
-	},
-	Pirate_Loot_Easy = {
-		id = 'PIRATELOOT_EASY',
-		choice = 'SelectAlways',
-		rewardlist = {
+	},{
+	---	pirate attack loot - easy level ---
+		id			= 'PIRATELOOT_EASY',
+		choice		= 'SelectAlways',
+		rewardlist	= {
 			--id					Min		Max		%		function
-			{id='SHIPCHARGE',		n=1,	x=1,	c=80,	f=F_.Product},
-			{id='TRA_ALLOY1',		n=1,	x=2,	c=40,	f=F_.Product},
-			{id='TRA_ENERGY1',		n=1,	x=2,	c=40,	f=F_.Product},
-			{id='TRA_EXOTICS1',		n=1,	x=2,	c=40,	f=F_.Product},
-			{id='ILLEGAL_PROD3',	n=1,	x=2,	c=40,	f=F_.Product},
-			{id=E_.DBI,				r=E_.C,			c=30,	f=F_.Procedural},
-			{id=E_.DTC,				r=E_.C,			c=30,	f=F_.Procedural},
-			{id=E_.UT,				n=18000,x=30000,c=80,	f=F_.Money},
+			{id='SHIPCHARGE',				x=1,	c=80,	f=R_Product},
+			{id='TRA_ALLOY1',		n=1,	x=2,	c=40,	f=R_Product},
+			{id='TRA_ENERGY1',		n=1,	x=2,	c=40,	f=R_Product},
+			{id='TRA_EXOTICS1',		n=1,	x=2,	c=40,	f=R_Product},
+			{id='ILLEGAL_PROD3',	n=1,	x=2,	c=40,	f=R_Product},
+			{id=E_.DBI,				r=E_.C,			c=30,	f=R_Procedural},
+			{id=E_.DTC,				r=E_.C,			c=30,	f=R_Procedural},
+			{id=E_.UT,				n=18000,x=30000,c=80,	f=R_Money},
 		}
-	},
-	Pirate_Loot_Reg = {
-		id = 'PIRATELOOT',
-		choice = 'SelectAlways',
-		zeroseed = 'True',
-		rewardlist = {
+	},{
+	---	pirate attack loot - normal level ---
+		id			= 'PIRATELOOT',
+		choice 		= 'SelectAlways',
+		zeroseed 	= true,
+		replacement	= true,
+		rewardlist	= {
 			--id					Min		Max		%		function
-			{id='SHIPCHARGE',		n=1,	x=2,	c=80,	f=F_.Product},
-			{id='SCRAP_GOODS',		n=1,	x=1,	c=90,	f=F_.Product},
-			{id='SCRAP_TECH',		n=1,	x=1,	c=90,	f=F_.Product},
-			{id='SCRAP_WEAP',		n=1,	x=1,	c=90,	f=F_.Product},
-			{id='TRA_ALLOY3',		n=1,	x=3,	c=40,	f=F_.Product},
-			{id='TRA_ENERGY3',		n=1,	x=3,	c=40,	f=F_.Product},
-			{id='TRA_COMPONENT3',	n=1,	x=3,	c=40,	f=F_.Product},
-			{id='TRA_MINERALS3',	n=1,	x=3,	c=40,	f=F_.Product},
-			{id='ILLEGAL_PROD4',	n=1,	x=2,	c=30,	f=F_.Product},
-			{id='AF_METAL',			n=100,	x=130,	c=30,	f=F_.Substance},
-			{id=E_.DBI,				r=E_.U,			c=30,	f=F_.Procedural},
-			{id=E_.DTC,				r=E_.U,			c=30,	f=F_.Procedural},
-			{id=E_.NN,				n=100,	x=250,	c=100,	f=F_.Money},
+			{id='SHIPCHARGE',		n=1,	x=2,	c=80,	f=R_Product},
+			{id='SCRAP_GOODS',				x=1,	c=90,	f=R_Product},
+			{id='SCRAP_TECH',				x=1,	c=90,	f=R_Product},
+			{id='SCRAP_WEAP',				x=1,	c=90,	f=R_Product},
+			{id='TRA_ALLOY3',		n=1,	x=3,	c=40,	f=R_Product},
+			{id='TRA_ENERGY3',		n=1,	x=3,	c=40,	f=R_Product},
+			{id='TRA_COMPONENT3',	n=1,	x=3,	c=40,	f=R_Product},
+			{id='TRA_MINERALS3',	n=1,	x=3,	c=40,	f=R_Product},
+			{id='ILLEGAL_PROD4',	n=1,	x=2,	c=30,	f=R_Product},
+			{id='AF_METAL',			n=100,	x=130,	c=30,	f=R_Substance},
+			{id=E_.DBI,				r=E_.U,			c=30,	f=R_Procedural},
+			{id=E_.DTC,				r=E_.U,			c=30,	f=R_Procedural},
+			{id=E_.NN,				n=100,	x=250,	c=100,	f=R_Money},
 		}
-	},
-	Pirate_Loot_Hard = {
-		id = 'PIRATELOOT_HARD',
-		choice = 'SelectAlways',
-		zeroseed = 'True',
-		rewardlist = {
+	},{
+	---	 pirate attack loot - hard level ---
+		id			= 'PIRATELOOT_HARD',
+		choice		= 'SelectAlways',
+		zeroseed	= true,
+		rewardlist	= {
 			--id					Min		Max		%		function
-			{id='SHIPCHARGE',		n=1,	x=3,	c=80,	f=F_.Product},
-			{id='WATER2',			n=260,	x=360,	c=40,	f=F_.Substance},
-			{id='EX_GREEN',			n=150,	x=250,	c=40,	f=F_.Substance},
-			{id='EX_BLUE',			n=120,	x=220,	c=40,	f=F_.Substance},
-			{id='AF_METAL',			n=110,	x=180,	c=40,	f=F_.Substance},
-			{id='SCRAP_GOODS',		n=1,	x=1,	c=40,	f=F_.Product},
-			{id='SCRAP_TECH',		n=1,	x=1,	c=40,	f=F_.Product},
-			{id='SCRAP_WEAP',		n=1,	x=1,	c=40,	f=F_.Product},
-			{id='TRA_ENERGY4',		n=1,	x=3,	c=50,	f=F_.Product},
-			{id='TRA_ALLOY4',		n=1,	x=3,	c=50,	f=F_.Product},
-			{id='TRA_EXOTICS4',		n=1,	x=3,	c=50,	f=F_.Product},
-			{id='TRA_TECH4',		n=1,	x=3,	c=50,	f=F_.Product},
-			{id='ILLEGAL_PROD5',	n=1,	x=2,	c=30,	f=F_.Product},
-			{id='GEODE_RARE',		n=1,	x=1,	c=20,	f=F_.Product},
-			{id=E_.DBI,				r=E_.R,			c=20,	f=F_.Procedural},
-			{id=E_.DTC,				r=E_.R,			c=20,	f=F_.Procedural},
-			{id=E_.NN,				n=300,	x=400,	c=100,	f=F_.Money},
+			{id='SHIPCHARGE',		n=1,	x=3,	c=80,	f=R_Product},
+			{id='WATER2',			n=260,	x=360,	c=40,	f=R_Substance},
+			{id='EX_GREEN',			n=150,	x=250,	c=40,	f=R_Substance},
+			{id='EX_BLUE',			n=120,	x=220,	c=40,	f=R_Substance},
+			{id='AF_METAL',			n=110,	x=180,	c=40,	f=R_Substance},
+			{id='SCRAP_GOODS',				x=1,	c=40,	f=R_Product},
+			{id='SCRAP_TECH',				x=1,	c=40,	f=R_Product},
+			{id='SCRAP_WEAP',				x=1,	c=40,	f=R_Product},
+			{id='TRA_ENERGY4',		n=1,	x=3,	c=50,	f=R_Product},
+			{id='TRA_ALLOY4',		n=1,	x=3,	c=50,	f=R_Product},
+			{id='TRA_EXOTICS4',		n=1,	x=3,	c=50,	f=R_Product},
+			{id='TRA_TECH4',		n=1,	x=3,	c=50,	f=R_Product},
+			{id='ILLEGAL_PROD5',	n=1,	x=2,	c=30,	f=R_Product},
+			{id='GEODE_RARE',				x=1,	c=20,	f=R_Product},
+			{id=E_.DBI,				r=E_.R,			c=20,	f=R_Procedural},
+			{id=E_.DTC,				r=E_.R,			c=20,	f=R_Procedural},
+			{id=E_.NN,				n=300,	x=400,	c=100,	f=R_Money},
 		}
-	},
-	Raid_Loot = {
-		id = 'RAIDLOOT',
-		choice = 'SelectAlways',
-		rewardlist = {
+	},{
+	---	 pirate attack loot - building raid ---
+		id			= 'RAIDLOOT',
+		choice		= 'SelectAlways',
+		rewardlist	= {
 			--id					Min		Max		%		function
-			{id='SHIPCHARGE',		n=1,	x=1,	c=80,	f=F_.Product},
-			{id='SCRAP_GOODS',		n=1,	x=1,	c=40,	f=F_.Product},
-			{id='SCRAP_TECH',		n=1,	x=1,	c=40,	f=F_.Product},
-			{id='ILLEGAL_PROD2',	n=1,	x=4,	c=30,	f=F_.Product},
-			{id='WATER2',			n=260,	x=280,	c=30,	f=F_.Substance},
-			{id='GEODE_RARE',		n=1,	x=1,	c=20,	f=F_.Product},
-			{id=E_.DBI,				r=E_.U,			c=20,	f=F_.Procedural},
-			{id=E_.DTC,				r=E_.U,			c=20,	f=F_.Procedural},
-			{id=E_.UT,				n=25000,x=35000,c=80,	f=F_.Money},
+			{id='SHIPCHARGE',				x=1,	c=80,	f=R_Product},
+			{id='SCRAP_GOODS',				x=1,	c=40,	f=R_Product},
+			{id='SCRAP_TECH',				x=1,	c=40,	f=R_Product},
+			{id='ILLEGAL_PROD2',	n=1,	x=4,	c=30,	f=R_Product},
+			{id='WATER2',			n=260,	x=280,	c=30,	f=R_Substance},
+			{id='GEODE_RARE',				x=1,	c=20,	f=R_Product},
+			{id=E_.DBI,				r=E_.U,			c=20,	f=R_Procedural},
+			{id=E_.DTC,				r=E_.U,			c=20,	f=R_Procedural},
+			{id=E_.UT,				n=25000,x=35000,c=80,	f=R_Money},
 		}
-	},
-	Health_Major = {
-		id = 'HEALTH_MAJOR',
-		choice = 'GiveAllSilent',
-		rewardlist = {
-			{id='Health',		n=3,	x=5,	c=100,	f=F_.Health},
-			{id='shield',		n=50,	x=70,	c=100,	f=F_.Shield},
-			{id='jetboost',		t=4,	b=1.2,	c=100,	f=F_.Jetboost},
+	},{
+	---	jetpack boost from tech plant ---
+		id			= 'JETPACK_BOOST',
+		choice		= 'GiveAll',
+		replacement	= true,
+		rewardlist	= {
+			{id='jetboost',		t=5,	b=1.25,	c=100,	f=R_Jetboost},
 		}
-	},
-	Test_Loot_09 = {
-		id = 'TEST_REWARD_09',
-		choice = 'SelectAlways',
-		rewardlist = {
-			--id					Min/Rarity	Max	%		function
-			{id=E_.SLT,				r=E_.C,			c=3,	f=F_.Procedural},
-			{id=E_.DBI,				r=E_.C,			c=3,	f=F_.Procedural},
-			{id=E_.FOS,				r=E_.R,			c=3,	f=F_.Procedural},
-			{id=E_.SPH,				r=E_.U,			c=3,	f=F_.Procedural},
-			{id=E_.FRH,				r=E_.R,			c=3,	f=F_.Procedural},
-			{id=E_.SLV,				r=E_.U,			c=3,	f=F_.Procedural},
-			{id=E_.BIO,				r=E_.R,			c=3,	f=F_.Procedural},
-			{id='ALLOY1',			n=1,	x=2,	c=3,	f=F_.Product},
-			{id='ALLOY5',			n=1,	x=2,	c=3,	f=F_.Product},
-			{id='ALLOY6',			n=1,	x=2,	c=3,	f=F_.Product},
-			{id='WATER2',			n=260,	x=280,	c=3,	f=F_.Substance},
-			{id='TRA_ENERGY4',		n=6,	x=7,	c=3,	f=F_.Product},
-			{id='TRA_ALLOY4',		n=6,	x=7,	c=3,	f=F_.Product},
-			{id='EX_BLUE',			n=160,	x=180,	c=3,	f=F_.Substance},
-			{id='FOOD_CM_APPLE',	n=3,	x=4,	c=3,	f=F_.Product},
-			{id='FOOD_ICE_GLITCH',	n=3,	x=4,	c=3,	f=F_.Product},
-			{id='AF_METAL',			n=140,	x=160,	c=3,	f=F_.Substance},
-			{id='SCRAP_TECH',		n=1,	x=1,	c=3,	f=F_.Product},
-			{id='SCRAP_WEAP',		n=1,	x=1,	c=3,	f=F_.Product},
-			{id=E_.HG,				n=192,	x=322,	c=100,	f=F_.Money}, -- quicksilver
+	},{
+	---	jetpack boost from ? ---
+		id			= 'MIXER_JETPACK',
+		choice		= 'GiveAll',
+		replacement	= true,
+		rewardlist	= {
+			{id='jetboost',		t=4,	b=1.2,	c=100,	f=R_Jetboost},
 		}
-	},
-	BuildRewardTableEntry = function(rte)
-		local function getRewardsList(list)
-			local exml = {}
-			table.insert(exml, '<Property name="List">')
-			for _,rwd in pairs(list) do
-				table.insert(exml, rwd.f(rwd))
-			end
-			table.insert(exml, '</Property>')
-			return table.concat(exml)
-		end
-		return [[
-			<Property value="GcGenericRewardTableEntry.xml">
-				<Property name="Id" value="]]..rte.id..[["/>
-				<Property name="List" value="GcRewardTableItemList.xml">
-					<Property name="RewardChoice" value="]]..rte.choice..[["/>
-					<Property name="OverrideZeroSeed" value="]]..(rte.zeroseed or 'False')..[["/>
-					]]..getRewardsList(rte.rewardlist)..[[
-				</Property>
-			</Property>]]
-	end
+	},{
+	---	jetpack boost from consumable product ---
+		id			= 'DE_FOOD_JETPACK',
+		choice		= 'GiveAll',
+		replacement	= true,
+		rewardlist	= {
+			{id='jetboost',		t=3,	b=1.15,	c=100,	f=R_Jetboost},
+		}
+	},{
+	---	quicksilver tiny=30 ---
+		id			= 'RS_QUICKSILV_T',
+		choice		= 'GiveAll',
+		rewardlist	= {
+			{id=E_.HG,			x=30,		c=100,		f=R_Money},
+		}
+	},{
+	---	health + shield + stamina + hazard + jetboost = balatant cheat! ---
+		id			= 'HEALTH_MAJOR',
+		choice		= 'GiveAllSilent',
+		rewardlist	= {
+			{id='health',		n=3,	x=5,	c=100,	f=R_Health},
+			{id='shield',		n=70,	x=100,	c=100,	f=R_Shield},
+			{id='hazard',		n=80,			c=100,	f=R_Hazard},
+			{id='stamina',		t=6,			c=100,	f=R_Stamina},
+			{id='jetboost',		t=4,	b=1.2,	c=100,	f=R_Jetboost},
+		}
+	},{
+	---	test reward ---
+		id			= 'TEST_REWARD_09',
+		choice		= 'GiveAll', -- SelectAlways
+		rewardlist	= {
+			-- id					details			%		function
+			{id='flyby',			t=5,			c=100,	f=R_FlyBy},
+			{id='no_sentinels',		t=20,			c=90,	f=R_NoSentinels},
+			{id='wanted_level',		w=0,			c=50,	f=R_Wanted},
+			{id='ROGUE_HAZBOX',				x=1,	c=10,	f=R_Product},
+			{id='UT_SHIPLAS',				x=1,	c=10,	f=R_Product},
+			{id=E_.FOS,				r=E_.R,			c=10,	f=R_Procedural},
+			{id=E_.SPH,				r=E_.U,			c=10,	f=R_Procedural},
+			{id='ALLOY6',			n=1,	x=2,	c=10,	f=R_Product},
+			{id='WATER2',			n=260,	x=280,	c=10,	f=R_Substance},
+			{id='WORMDUST',			n=1060,	x=1180,	c=10,	f=R_Substance},
+			{id='FOOD_ICE_GLITCH',	n=3,	x=4,	c=10,	f=R_Product},
+			{id='SCRAP_WEAP',				x=1,	c=10,	f=R_Product},
+			{id='STEALTH',			s=true,			c=10,	f=R_Technology},
+			{id='ACCESS1',			s=true,			c=10,	f=R_ProductRecipe},
+			{id=E_.HG,				n=101,	x=202,	c=100,	f=R_Money},
+		}
+	}
 }
+function new_reward:AddTableEntry(rte)
+	local function getRewardsList(list)
+		local exml = {}
+		table.insert(exml, '<Property name="List">')
+		for _,rwd in pairs(list) do
+			table.insert(exml, rwd.f(rwd))
+		end
+		table.insert(exml, '</Property>')
+		return table.concat(exml)
+	end
+	return [[
+		<Property value="GcGenericRewardTableEntry.xml">
+			<Property name="Id" value="]]..rte.id..[["/>
+			<Property name="List" value="GcRewardTableItemList.xml">
+				<Property name="RewardChoice" value="]]..rte.choice..[["/>
+				<Property name="OverrideZeroSeed" value="]]..bool(rte.zeroseed)..[["/>
+				]]..getRewardsList(rte.rewardlist)..[[
+			</Property>
+		</Property>]]
+end
 
-local Plant_Harvest = {
+local function AddNewRewardsToChangeTable()
+	local T = {}
+	local rewards = ''
+	for _,rwd in ipairs(new_reward) do
+		if rwd.replacement then
+			table.insert(T, {
+				SPECIAL_KEY_WORDS	= {'Id', rwd.id},
+				REMOVE				= 'Section'
+			})
+		end
+		rewards = rewards..new_reward:AddTableEntry(rwd)
+	end
+	table.insert(T, {
+		PRECEDING_KEY_WORDS	= 'GenericTable',
+		ADD					= rewards
+	})
+	return T
+end
+
+local plant_harvest = {
 	{'DE_COOK_ALL1',	1.3,	1.5},	-- Heptaploid Wheat
 	{'DE_COOK_ALL2',	1.3,	1.5},	-- Sweetroot
 	{'DE_COOK_ALL3',	1.3,	1.5},	-- Pulpy Roots
@@ -403,10 +493,10 @@ local Plant_Harvest = {
 	{'WILD_TOXIC',		1.6,	2},		-- Fungal Mould
 	{'WILD_LUSH',		1.6,	2.2},	-- Star Bulb
 }
-function Plant_Harvest:Get(x)
+function plant_harvest:Get(x)
 	return {
 		MATH_OPERATION 		= '*',
-		INTEGER_TO_FLOAT	= 'PRESERVE',
+		INTEGER_TO_FLOAT	= 'Preserve',
 		SPECIAL_KEY_WORDS	= {'Id', x[1]},
 		VALUE_CHANGE_TABLE 	= {
 			{'AmountMin',	x[2]},
@@ -415,7 +505,7 @@ function Plant_Harvest:Get(x)
 	}
 end
 
-local Learn_More_Words = {
+local learn_more_words = {
 	{'WORD',			'None',			3},
 	{'EXP_WORD',		'Explorers',	3},
 	{'TRA_WORD',		'Traders',		3},
@@ -426,7 +516,7 @@ local Learn_More_Words = {
 	{'TEACHWORD_ATLAS',	'Atlas',		3},
 	multi = true
 }
-function Learn_More_Words:Get(x)
+function learn_more_words:Get(x)
 	local t = {}
 	for i=1, (x[3] - 1) do
 		t[i] = {
@@ -434,7 +524,7 @@ function Learn_More_Words:Get(x)
 			SECTION_ACTIVE		= 1,
 			PRECEDING_KEY_WORDS = 'GcRewardTableItem.xml',
 			ADD_OPTION			= 'ADDAfterSection',
-			ADD					= F_.Word({id=x[2], n=1, x=1, c=45})
+			ADD					= R_Word({id=x[2], n=1, x=1, c=45})
 		}
 	end
 	return t
@@ -452,94 +542,42 @@ local function BuildExmlChangeTable(tbl)
 	return T
 end
 
-local Source_Table_Reward = 'METADATA/REALITY/TABLES/REWARDTABLE.MBIN'
+local source_table_reward = 'METADATA/REALITY/TABLES/REWARDTABLE.MBIN'
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE REWARD.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
+	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= Source_Table_Reward,
+		MBIN_FILE_SOURCE	= source_table_reward,
+		EXML_CHANGE_TABLE	= AddNewRewardsToChangeTable()
+	},
+	{
+		MBIN_FILE_SOURCE	= source_table_reward,
 		EXML_CHANGE_TABLE	= {
-			{
-				INTEGER_TO_FLOAT	= 'FORCE',
-				MATH_OPERATION 		= '*',
-				SPECIAL_KEY_WORDS	= {'Id', 'JETPACK_BOOST'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Duration',		4},		-- 10
-					{'ForwardBoost',	1.5},	-- 4.5
-					{'UpBoost',			1.2},	-- 0.8
-					{'IgnitionBoost',	1.3},	-- 1.9
-				}
-			},
-			{
-				INTEGER_TO_FLOAT	= 'FORCE',
-				MATH_OPERATION 		= '*',
-				SPECIAL_KEY_WORDS	= {'Id', 'MIXER_JETPACK'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Duration',		4},
-					{'ForwardBoost',	1.5},
-					{'UpBoost',			1.2},
-					{'IgnitionBoost',	1.3},
-				}
-			},
-			{
-				INTEGER_TO_FLOAT	= 'FORCE',
-				MATH_OPERATION 		= '*',
-				SPECIAL_KEY_WORDS	= {'Id', 'DE_FOOD_JETPACK'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Duration',		4},
-					{'ForwardBoost',	1.5},
-					{'UpBoost',			1.2},
-					{'IgnitionBoost',	1.3},
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Id', 'PIRATELOOT'},
-				REMOVE				= 'SECTION'
-			},
-			{
-				PRECEDING_KEY_WORDS	= 'GenericTable',
-				ADD					= Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot_Easy)
-									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot_Reg)
-									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.Pirate_Loot_Hard)
-									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.Raid_Loot)
-									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.FreightSave_Explorer)
-									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.FreightSave_Trader)
-									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.FreightSave_Warrior)
-									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.Health_Major)
-									  ..
-									  Rewards.BuildRewardTableEntry(Rewards.Test_Loot_09)
-			},
 			{
 				SPECIAL_KEY_WORDS	= {'Id', 'TECHDEBRIS', 'ID', 'LAUNCHFUEL'},
 				SECTION_UP			= 1,
 				ADD_OPTION			= 'ADDAfterSection',
-				ADD					= F_.Product({id='BP_SALVAGE', n=2, x=4, c=50})
+				ADD					= R_Product({id='BP_SALVAGE', n=2, x=4, c=50})
 			},
-			{
-				SPECIAL_KEY_WORDS	= {'Id', 'REFRESH_HAZ', 'LabelID', 'UI_RESTORE_HAZARD'},
-				ADD_OPTION			= 'ADDAfterSection',
-				ADD					= F_.Technology({id='BODYSHIELD', c=100})
-			}
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'Id', 'REFRESH_HAZ', 'LabelID', 'UI_RESTORE_HAZARD'},
+				-- ADD_OPTION			= 'ADDAfterSection',
+				-- ADD					= R_Technology({id='BODYSHIELD', c=100, s=true})
+			-- }
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= Source_Table_Reward,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Plant_Harvest)
+		MBIN_FILE_SOURCE	= source_table_reward,
+		EXML_CHANGE_TABLE	= BuildExmlChangeTable(plant_harvest)
 	},
 	{
-		MBIN_FILE_SOURCE	= Source_Table_Reward,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Learn_More_Words)
+		MBIN_FILE_SOURCE	= source_table_reward,
+		EXML_CHANGE_TABLE	= BuildExmlChangeTable(learn_more_words)
 	}
 }}}}

@@ -3,7 +3,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 23 frigates LOD increase.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				-- VALUE_MATCH			= 200,
 				-- VALUE_MATCH_OPTIONS = '<',
 				MATH_OPERATION 		= '*',
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				PRECEDING_KEY_WORDS = {'LodDistances'},
 				VALUE_CHANGE_TABLE 	= {
 					{'IGNORE',		3}
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			-- {
 			-- 	MATH_OPERATION 		= '*',
-			-- 	REPLACE_TYPE 		= 'ALL',
+			-- 	REPLACE_TYPE 		= 'All',
 			-- 	VALUE_CHANGE_TABLE 	= {
 			-- 		{'CrossFadeOverlap',2}
 			-- 	}
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			-- 	VALUE_MATCH			= 5000,
 			-- 	VALUE_MATCH_OPTIONS = '>',
 			-- 	MATH_OPERATION 		= '*',
-			-- 	REPLACE_TYPE 		= 'ALL',
+			-- 	REPLACE_TYPE 		= 'All',
 			-- 	VALUE_CHANGE_TABLE 	= {
 			-- 		{'CrossFadeTime', 0.1}
 			-- 	}
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			-- 	VALUE_MATCH			= 100000,
 			-- 	VALUE_MATCH_OPTIONS = '>',
 			-- 	MATH_OPERATION 		= '*',
-			-- 	REPLACE_TYPE 		= 'ALL',
+			-- 	REPLACE_TYPE 		= 'All',
 			-- 	VALUE_CHANGE_TABLE 	= {
 			-- 		{'CrossFadeTime', 0.01}
 			-- 	}

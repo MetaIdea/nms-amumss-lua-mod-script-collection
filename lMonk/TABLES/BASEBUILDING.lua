@@ -1,14 +1,26 @@
---------------------------------------------------------------
+-------------------------------------------------------------------
 local desc = [[
-  General changes to building parts
-  Set beacon and summon garage as the default of their group
+  Disble restrictions on collisiton, scaling, rotating & freighter
   Increase power generation and storage
-  Build menu tweaks - change defaults & remove unneeded
-]]------------------------------------------------------------
+  Portable exocraft summon garage
+]]-----------------------------------------------------------------
 
-local Build_On_Freighter = {
+local build_on_freighter = {
+	'BUILDSAVE',
+	'COOKER',
+	'PLANTERMEGA',
+	'PLANTER',
+	'NPCBUILDERTERM',
 	'NPCVEHICLETERM',
-	'BUILDANTIMATTER',
+	'NPCWEAPONTERM',
+	'NPCFARMTERM',
+	'NPCSCIENCETERM',
+	'BUILDTERMINAL',
+	'TELEPORTER',
+	'DRESSING_TABLE',
+	'BUILD_REFINER3',
+	'BUILD_REFINER2',
+	'BUILDANTIMATTER',	
 	'CYLINDERSHAPE',
 	'CUBESHAPE',
 	'CURVEPIPESHAPE',
@@ -21,14 +33,14 @@ local Build_On_Freighter = {
 	'BASE_NEXUS2',
 	'BASE_NEXUS3',
 }
-function Build_On_Freighter:Get(x)
+function build_on_freighter:Get(x)
 	return {
 		SPECIAL_KEY_WORDS	= {'ID', x},
 		VALUE_CHANGE_TABLE 	= { {'BuildableOnFreighter', true} }
 	}
 end
 
-local Build_Above_Water = {
+local build_above_water = {
 	'MAINROOM_WATER',
 	'MAINROOMCUBE_W',
 	'MOONPOOL',
@@ -41,14 +53,14 @@ local Build_Above_Water = {
 	'BASE_BARNACLE',
 	'GARAGE_SUB'
 }
-function Build_Above_Water:Get(x)
+function build_above_water:Get(x)
 	return {
 		SPECIAL_KEY_WORDS	= {'ID', x},
 		VALUE_CHANGE_TABLE 	= { {'BuildableAboveWater', true} }
 	}
 end
 
-local Decoration_Type = {
+local decoration_type = {
 	{'BUILDLIGHT'},
 	{'BUILDLIGHT2'},
 	{'BUILDLIGHT3'},
@@ -59,19 +71,26 @@ local Decoration_Type = {
 	{'BASE_TOYJELLY'},
 	{'BASE_TOYCORE'},
 	{'S_WATERVALVE0'},
-	{'PLANETPORTABLE',	'SubGroupName', 2},
-	{'DECOFOLIAGE',		'SubGroupName', 2},
-	{'DECOGLITCHES',	'SubGroupName', 2},
+	{'PLANETPORTABLE',	true},
+	{'DECOFOLIAGE',		true},
+	{'DECOGLITCHES',	true},
 }
-function Decoration_Type:Get(x)
-	local tp = nil
-	if #x > 1 then tp = 'ALL' end
+function decoration_type:Get(x)
 	return {
-		REPLACE_TYPE 		= tp,
-		SPECIAL_KEY_WORDS	= {(x[2] or 'ID'), x[1]},
-		SECTION_UP			= (x[3] or 0),
-		VALUE_CHANGE_TABLE 	= { {'BaseBuildingDecorationType', 'SurfaceNormal'} }
+		REPLACE_TYPE 		= x[2] and 'All' or nil,
+		SPECIAL_KEY_WORDS	= {(x[2] and 'SubGroupName' or 'ID'), x[1]},
+		SECTION_UP			= x[2] and 2 or 0,
+		VALUE_CHANGE_TABLE 	= { {'BaseBuildingDecorationType', 'BuildingSurfaceNormal'} } -- SurfaceNormal
 	}
+end
+
+local function AddToGroup(group, subgroup)
+	return [[
+	<Property value="GcBaseBuildingEntryGroup.xml">
+		<Property name="Group" value="]]..group..[["/>
+		<Property name="SubGroupName" value="]]..subgroup..[["/>
+		<Property name="SubGroup" value="0"/>
+	</Property>]]
 end
 
 local function BuildExmlChangeTable(tbl)
@@ -80,26 +99,26 @@ local function BuildExmlChangeTable(tbl)
 	return T
 end
 
-local Source_Table_BaseObj = 'METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN'
+local source_table_base_obj = 'METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN'
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '__TABLE BASEBUILDING.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
+	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		MBIN_FILE_SOURCE	= Source_Table_BaseObj,
+		MBIN_FILE_SOURCE	= source_table_base_obj,
 		EXML_CHANGE_TABLE	= {
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				VALUE_CHANGE_TABLE 	= {
 					{'CanChangeColour',				true},
 					{'CanChangeMaterial',			true},
 					{'CanRotate3D',					true},
 					{'CanScale',					true},
-					{'CanPlaceOnItself',			true},
 					{'CheckPlaceholderCollision',	false},
 				}
 			},
@@ -143,6 +162,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				SPECIAL_KEY_WORDS	= {'ID', 'TELEPORTER'},
+				PRECEDING_KEY_WORDS = 'Groups',
+				ADD 				= AddToGroup('FREIGHTER_TECH', 'FRE_TECH_OTHER')
+			},
+			{
 				SPECIAL_KEY_WORDS	= {'ID', 'U_SOLAR_S'},
 				VALUE_CHANGE_TABLE 	= {
 					{'Rate',				80},	-- 50
@@ -151,29 +175,29 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'U_BIOGENERATOR'},
 				VALUE_CHANGE_TABLE 	= {
-					{'Storage',				6000},	-- 3600
-					{'DependentRateRate',	80},	-- 50
+					-- {'Storage',				6000},	-- 3600
+					{'DependentRate',		80},	-- 50
 				}
 			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'U_BATTERY_S'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Storage',				80000},	-- 45000
-				}
-			}
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'ID', 'U_BATTERY_S'},
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'Storage',				80000},	-- 45000
+				-- }
+			-- }
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= Source_Table_BaseObj,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Build_On_Freighter)
+		MBIN_FILE_SOURCE	= source_table_base_obj,
+		EXML_CHANGE_TABLE	= BuildExmlChangeTable(build_on_freighter)
 	},
 	{
-		MBIN_FILE_SOURCE	= Source_Table_BaseObj,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Build_Above_Water)
+		MBIN_FILE_SOURCE	= source_table_base_obj,
+		EXML_CHANGE_TABLE	= BuildExmlChangeTable(build_above_water)
 	},
 	{
-		MBIN_FILE_SOURCE	= Source_Table_BaseObj,
-		EXML_CHANGE_TABLE	= BuildExmlChangeTable(Decoration_Type)
+		MBIN_FILE_SOURCE	= source_table_base_obj,
+		EXML_CHANGE_TABLE	= BuildExmlChangeTable(decoration_type)
 	},
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/BASEBUILDINGPARTSTABLE.MBIN',

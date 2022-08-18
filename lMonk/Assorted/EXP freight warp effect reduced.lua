@@ -18,7 +18,7 @@ local Warp_Exp_Scale = {
 	Get = function(x)
 		return {
 			MATH_OPERATION 		= '*',
-			INTEGER_TO_FLOAT	= 'FORCE',
+			INTEGER_TO_FLOAT	= 'Force',
 			SPECIAL_KEY_WORDS	= {'Id', x[1]},
 			VALUE_CHANGE_TABLE 	= { {'Scale', x[2]} }
 		}
@@ -34,7 +34,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META reduce explosion scale.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	-- MOD_BATCHNAME		= '_META ~@~collection.pak',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{

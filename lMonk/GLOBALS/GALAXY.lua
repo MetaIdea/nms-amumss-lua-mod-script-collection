@@ -5,12 +5,13 @@ local desc = [[
 ]]----------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '__GC GALAXY.pak',
-	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
-	MOD_DESCRIPTION		= desc,
-	MODIFICATIONS 		= {{
-	MBIN_CHANGE_TABLE	= {
+	MOD_FILENAME 			= '__GC GALAXY.pak',
+	MOD_AUTHOR				= 'lMonk',
+	NMS_VERSION				= 3.99,
+	MOD_DESCRIPTION			= desc,
+	GLOBAL_INTEGER_TO_FLOAT = 'Force',
+	MODIFICATIONS 			= {{
+	MBIN_CHANGE_TABLE		= {
 	{
 		MBIN_FILE_SOURCE	= 'GCGALAXYGLOBALS.GLOBAL.MBIN',
 		EXML_CHANGE_TABLE	= {
@@ -41,7 +42,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Yellow'},
 				VALUE_CHANGE_TABLE	= {
 					{'R',			0.98},	-- 1
@@ -51,7 +51,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Green'},
 				VALUE_CHANGE_TABLE	= {
 					{'R',			0.144},	-- 0.245
@@ -61,7 +60,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Blue'},
 				VALUE_CHANGE_TABLE	= {
 					{'R',			0.096},	-- 0.296
@@ -71,7 +69,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				INTEGER_TO_FLOAT	= 'FORCE',
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Red'},
 				VALUE_CHANGE_TABLE	= {
 					{'R',			0.988},	-- 0.947

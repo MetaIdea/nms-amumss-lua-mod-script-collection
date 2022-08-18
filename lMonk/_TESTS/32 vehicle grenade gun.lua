@@ -6,7 +6,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 32 vehicle grenade gun.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				MATH_OPERATION 		= '$-',
 				SPECIAL_KEY_WORDS	= {'StatsType', 'Vehicle_GunHeatTime'},
 				SECTION_UP			= 1,
@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				SPECIAL_KEY_WORDS	= {'StatsType', 'Vehicle_GunHeatTime'},
 				VALUE_CHANGE_TABLE 	= {
 					{'StatsType',		'Weapon_Grenade_Radius'}

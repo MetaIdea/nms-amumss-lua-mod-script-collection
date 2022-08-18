@@ -6,21 +6,21 @@ local desc = [[
 ]]----------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '__GC VEHICLE.pak',
-	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
-	MOD_DESCRIPTION		= desc,
-	MODIFICATIONS 		= {{
-	MBIN_CHANGE_TABLE	= {
+	MOD_FILENAME 			= '__GC VEHICLE.pak',
+	MOD_AUTHOR				= 'lMonk',
+	NMS_VERSION				= 3.99,
+	MOD_DESCRIPTION			= desc,
+	GLOBAL_INTEGER_TO_FLOAT = 'Force',
+	MODIFICATIONS 			= {{
+	MBIN_CHANGE_TABLE		= {
 	{
 		MBIN_FILE_SOURCE	= 'GCVEHICLEGLOBALS.GLOBAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
 				VALUE_CHANGE_TABLE 	= {
-					{'MechAIResummonTriggerDistance',	105},	-- 100
-					{'MechAIResummonMinSpawnDistance',	8},		-- 10
+					-- {'MechAIResummonTriggerDistance',	105},	-- 100
+					-- {'MechAIResummonMinSpawnDistance',	10},	-- 10
 					{'MechJetpackTurnSpeed',			-1.2},	-- 3
 					{'MechLandBrake',					1},		-- 4
 					{'MechJetpackStrafeStrength',		1.4},	-- 0.5
@@ -38,15 +38,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'SubmarineEjectDownOffset',		3},		-- -2
 					{'UnderwaterFlattenMinDepth',		-2},	-- 1
 					{'MiningLaserRadius', 				-0.5},	-- 1.3
-					{'VehicleMaxSummonDistance',		4000},	-- 50
+					-- {'VehicleMaxSummonDistance',		4000},	-- 50
 					{'SpawnRotation',					-40},	-- 10
 					{'MechSpawnRotation',				-40},	-- 190
 				}
 			},
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				MATH_OPERATION 		= '*',
-				INTEGER_TO_FLOAT	= 'FORCE',
 				VALUE_CHANGE_TABLE 	= {
 					{'VehicleBoostMaxSpeed', 		1.24},
 					{'VehicleBoostTime', 			1.6},
@@ -57,7 +56,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'Name', 'BIKE'},
 				VALUE_CHANGE_TABLE 	= {
 					{'VehicleGravity',				0.5},	-- 17.5
@@ -69,7 +67,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'Name', 'MED_BUGGY'},
 				VALUE_CHANGE_TABLE 	= {
 					{'TopSpeedForward', 			1},		-- 16
@@ -80,7 +77,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'Name', 'TRUCK'},
 				VALUE_CHANGE_TABLE 	= {
 					{'TopSpeedForward', 			2},		-- 12
@@ -93,7 +89,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'Name', 'WHEELEDBIKE'},
 				VALUE_CHANGE_TABLE 	= {
 					{'VehicleGravity',				2},		-- 20
@@ -118,7 +113,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
 				SPECIAL_KEY_WORDS	= {'Name', 'MECH'},
 				VALUE_CHANGE_TABLE 	= {
 					{'TopSpeedForward', 			1.6}	-- 2

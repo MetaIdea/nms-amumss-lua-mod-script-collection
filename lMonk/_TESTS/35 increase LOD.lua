@@ -7,7 +7,7 @@ Path = 'METADATA/SIMULATION/SOLARSYSTEM/BIOMES/'
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '___TEST 12 increase LOD.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		EXML_CHANGE_TABLE	= {
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				VALUE_MATCH_TYPE 	= 'NUMBER',
 				VALUE_MATCH			= 200,
 				VALUE_MATCH_OPTIONS = '<',
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				VALUE_MATCH_TYPE 	= 'NUMBER',
 				VALUE_MATCH			= 460,
 				VALUE_MATCH_OPTIONS = '>',
@@ -47,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			-- {
-			-- 	REPLACE_TYPE 		= 'ALL',
+			-- 	REPLACE_TYPE 		= 'All',
 			-- 	VALUE_MATCH_TYPE 	= 'NUMBER',
 			-- 	VALUE_MATCH			= 8,
 			-- 	VALUE_MATCH_OPTIONS = '<',
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			-- 	}
 			-- },
 			-- {
-			-- 	REPLACE_TYPE 		= 'ALL',
+			-- 	REPLACE_TYPE 		= 'All',
 			-- 	VALUE_MATCH_TYPE 	= 'NUMBER',
 			-- 	VALUE_MATCH			= 9000,
 			-- 	VALUE_MATCH_OPTIONS = '<',
