@@ -11,7 +11,7 @@ FileSource01 = "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
 ShadowLengthStation = 2000		-- How far away shadows are drawn | 1300 | 274
 ShadowLengthFreighter = 300		-- | 150 | 275
 MaxParticleRenderRange = 150	-- Max distance particles will render | 75 | 493
-TerrainAnisoLow = 8				-- Default Anisotropic  Filtering for Low Preset | 2 | 591
+TerrainAnisoLow = 16				-- Default Anisotropic  Filtering for Low Preset | 2 | 591
 TerrainAnisoMed = 16			-- Default Anisotropic  Filtering for Medium Preset | 2 | 592
 TerrainAnisoHi = 16				-- Default Anisotropic  Filtering for High Preset | 4 | 593
 TerrainAnisoUlt = 16			-- Default Anisotropic  Filtering for Ultra Preset | 8 | 594
@@ -23,6 +23,7 @@ TerrainBlocksPerFrameHi = 64	--  | 48 | 601
 TerrainBlocksPerFrameUlt = 128	--  | 64 | 602
 ForceCachedTerrain = "False"	-- Forces the use of cached terrain, rather loading it fresh | False | 612
 ForceUncachedTerrain = "True"	-- Forces the terrain to reload every time, rather than restoring it from cached files | False | 613
+EnableVariableUpdate = "False"	-- Forwarded from Rotating Atmosphere
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -34,7 +35,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{{ ["MBIN_CHANGE_TABLE"] = 
 		{{ ["MBIN_FILE_SOURCE"] = FileSource01,
 			["EXML_CHANGE_TABLE"] = {
-				{ ["PRECEDING_KEY_WORDS"] = "",
+				{ 	["PRECEDING_KEY_WORDS"] = "",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ShadowLengthStation", ShadowLengthStation}, 
 						{"ShadowLengthFreighter", ShadowLengthFreighter}, 
@@ -51,9 +53,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"TerrainBlocksPerFrameUlt", TerrainBlocksPerFrameUlt}, 
 						{"ForceCachedTerrain", ForceCachedTerrain}, 
 						{"ForceUncachedTerrain", ForceUncachedTerrain}, 
+						{"EnableVariableUpdate", EnableVariableUpdate}, 
 					}
 				},
-				{ ["PRECEDING_KEY_WORDS"] = "TerrainMipDistanceMed",
+				{ 	["PRECEDING_KEY_WORDS"] = "TerrainMipDistanceMed",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"y", "16"}, 
 						{"z", "32"}, 

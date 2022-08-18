@@ -12,13 +12,16 @@ LandingHoverOffset = 1.5				--  | 3 | 14
 LandingMargin = 0.7						-- The size of the area that must be considered "cleared" of object to allow for landing | 1.4 | 17
 LandingObstacleMinHeight = 2.5			-- The minimum height of objects that obstruct landing | 2 | 18
 
-HoverTakeoffHeight = 75					-- Initial height upon ship takeoff | 90 | 340
-HoverSpeedFactor = 0.001				-- Speed at which ship hovers | 20 | 345
-HoverMinSpeed = 0.001					-- Minimum speed at which ship will hover | 1 | 333
-LandingPushNoseUpFactor = 0.05			-- Angle the ship nose will point upwards during landing | 0.15 | 371
-GroundHeightBrakeMultiplier = 2.4		-- | 1.2 | 386
+--Launch Cost Reduction
+LaunchThrustersMinimumSummonPercentage = 10		-- Minimum fuel cost for summoning ship | 25 |1443
 
-NoBoostAnomalyDistance = 1800			-- Distance from Anomaly that boost is disabled | 3000 | 983
+--HoverTakeoffHeight = 90					-- Initial height upon ship takeoff | 90 | 340
+HoverSpeedFactor = 0.001				-- Speed at which ship hovers | 20 | 345
+HoverMinSpeed = 0.001					-- Minimum speed at which ship will hover | 1 | 347
+LandingPushNoseUpFactor = 0.05			-- Angle the ship nose will point upwards during landing | 0.15 | 371
+GroundHeightBrakeMultiplier = 1.8		-- | 1.2 | 386
+
+NoBoostAnomalyDistance = 1500			-- Distance from Anomaly that boost is disabled | 3000 | 983
 
 MiniWarpLinesSpacing = 12000			-- Spacing between the vertical metric lines during warp | 3000 | 1105
 
@@ -31,7 +34,7 @@ MiniWarpHUDArrowAttractAngle = 5		-- The sensitivity the mouse will auto-hover o
 MiniWarpHUDArrowAttractAngleDense = 3	-- The sensitivity the mouse will auto-hover over marker icons when the icons are considered densely packed | 4 | 1226
 MiniWarpHUDArrowNumMarkersToBeDense = 4	-- The number of icons that are close together to be considered densely packed, at which time the sensitivity will change to "MiniWarpHUDArrowAttractAngleDense" | 6 | 1227
 MiniWarpNoAsteroidRadius = 3000			-- The distance asteroids will be while in warp | 1500 | 1234
-AnomalyStationMaxApproachSpeed = 120	-- The max speed allow during docking approach to the Anomaly | 60 | 1255
+AnomalyStationMaxApproachSpeed = 200	-- The max speed allow during docking approach to the Anomaly | 60 | 1255
 
 --## Step / Ship Controls ##
 ShipPlanetBrakeAlignMaxTime = 4			-- Replaces all instances of this value | 8 | 495...
@@ -171,13 +174,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{{ ["MBIN_FILE_SOURCE"] = FileSource01,
 			["EXML_CHANGE_TABLE"] = {
 				{ ["PRECEDING_KEY_WORDS"] = "",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 --## Step ##
 						{"LandingHoverOffset", LandingHoverOffset},
 						{"LandingMargin", LandingMargin},
 						{"LandingObstacleMinHeight", LandingObstacleMinHeight},
-						{"HoverTakeoffHeight", HoverTakeoffHeight},
 						{"HoverSpeedFactor", HoverSpeedFactor}, 
+						{"HoverMinSpeed", HoverMinSpeed}, 
 						{"LandingPushNoseUpFactor", LandingPushNoseUpFactor}, 
 						{"GroundHeightBrakeMultiplier", GroundHeightBrakeMultiplier}, 
 						{"NoBoostAnomalyDistance", NoBoostAnomalyDistance}, 
@@ -192,6 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"MiniWarpHUDArrowNumMarkersToBeDense", MiniWarpHUDArrowNumMarkersToBeDense}, 
 						{"MiniWarpNoAsteroidRadius", MiniWarpNoAsteroidRadius}, 
 						{"AnomalyStationMaxApproachSpeed", AnomalyStationMaxApproachSpeed}, 
+						{"LaunchThrustersMinimumSummonPercentage", LaunchThrustersMinimumSummonPercentage}, 
 --
 --##### Everything after here is from Better Landings mod #####
 --
@@ -199,6 +204,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"LandingCurveHeavy",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"Curve", LandingCurveHeavyCurve}, 
 					}
@@ -209,11 +215,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 --## Normal-class ship contols ##
 				{["PRECEDING_KEY_WORDS"] = {"",},
 					["REPLACE_TYPE"] = "ALL",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ShipPlanetBrakeAlignMaxTime", ShipPlanetBrakeAlignMaxTime}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"Control", "SpaceEngine",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ThrustForce", ControlSEThrustForce}, 
 						{"MaxSpeed", ControlSEMaxSpeed}, 
@@ -232,6 +240,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"Control", "PlanetEngine",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ThrustForce", ControlPEThrustForce}, 
 						{"MaxSpeed", ControlPEMaxSpeed}, 
@@ -251,12 +260,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"Control", "CombatEngine",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"MaxSpeed", ControlCEMaxSpeed}, {"TurnStrength", ControlCETurnStrength}, {"RollAutoTime", ControlCERollAutoTime}, 
 					}
 				},
 --## Light-class ship contols ##
 				{["PRECEDING_KEY_WORDS"] = {"ControlLight", "SpaceEngine",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ThrustForce", ControlLTSEThrustForce}, 
 						{"MaxSpeed", ControlLTSEMaxSpeed}, 
@@ -275,7 +286,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"RollAutoTime", ControlLTSERollAutoTime}, 
 					}
 				},
-				{["PRECEDING_KEY_WORDS"] = {"ControlLight", "PlanetEngine",},
+				{["PRECEDING_KEY_WORDS"] = {"ControlLight", "PlanetEngine",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ThrustForce", ControlLTPEThrustForce}, 
 						{"MaxSpeed", ControlLTPEMaxSpeed}, 
@@ -295,6 +307,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ControlLight", "CombatEngine",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"MaxSpeed", ControlLTCEMaxSpeed}, 
 						{"BoostFalloff", ControlLTCEBoostFalloff}, 
@@ -303,7 +316,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 --## Heavy-class ship contols ##
-				{["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "SpaceEngine",},
+				{["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "SpaceEngine",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ThrustForce", ControlHVYSEThrustForce}, 
 						{"MaxSpeed", ControlHVYSEMaxSpeed}, 
@@ -321,7 +335,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"RollAutoTime", ControlHVYSERollAutoTime}, 
 					}
 				},
-				{["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "PlanetEngine",},
+				{["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "PlanetEngine",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ThrustForce", ControlHVYPEThrustForce}, 
 						{"MaxSpeed", ControlHVYPEMaxSpeed}, 
@@ -340,6 +355,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"RollAutoTime", ControlHVYPERollAutoTime}, 
 						{"BalanceTimeMin", ControlHVYPEBalanceTimeMin}, 
 						{"BalanceTimeMax", ControlHVYPEBalanceTimeMax}, 
+					}
+				},
+				{["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "CombatEngine",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
+					["VALUE_CHANGE_TABLE"] = {
+						{"MaxSpeed", ControlHVYCEMaxSpeed}, 
+						{"BoostFalloff", ControlHVYCEBoostFalloff}, 
+						{"TurnStrength", ControlHVYCETurnStrength}, 
+						{"RollAutoTime", ControlHVYCERollAutoTime}, 
 					}
 				},
 			}

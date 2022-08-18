@@ -89,7 +89,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{{ ["MBIN_CHANGE_TABLE"] = 
 		{{ ["MBIN_FILE_SOURCE"] = FileSource01,
 			["EXML_CHANGE_TABLE"] = {
-				{ ["PRECEDING_KEY_WORDS"] = "",
+				{ 	["PRECEDING_KEY_WORDS"] = "",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"SurveyScanMinSpeed", SurveyScanMinSpeed}, 
 						{"SurveyScanMaxSpeed", SurveyScanMaxSpeed}, 
@@ -119,76 +120,91 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ToolScan",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", ToolScanRange}, {"ChargeTime", ToolScanCharge}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ToolScanHardMode",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", ToolScanRangeHM}, {"ChargeTime", ToolScanChargeHM}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"WaypointScan",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", WaypointScanRange}, {"ChargeTime", WaypointScanCharge}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"BeaconScan",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", BeaconScanRange}, {"PulseTime", BeaconScanTime}, {"ChargeTime", BeaconScanCharge}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"RadioTowerScan",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", RadioTowerScanRange}, {"PulseTime", RadioTowerScanTime}, {"ChargeTime", RadioTowerScanCharge}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ObservatoryScan",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", ObservatoryScanRange}, {"PulseTime", ObservatoryScanTime}, {"ChargeTime", ObservatoryScanCharge}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"DistressSignalScan",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", DistressSignalScanRange}, {"PulseTime", DistressSignalScanTime}, {"ChargeTime", DistressSignalScanCharge}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"DebugScanPlanet",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", DebugScanPlanetRange}, {"PulseTime", DebugScanPlanetTime}, {"ChargeTime", DebugScanPlanetCharge}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"DebugScanSpace",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", DebugScanSpaceRange}, {"PulseTime", DebugScanSpaceTime}, {"ChargeTime", DebugScanSpaceCharge}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ShipScan",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", ShipScanRange}, {"ChargeTime", ShipScanCharge}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"VisualScan",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseTime", VisualScanTime}, {"ChargeTime", VisualScanCharge}, 
 					}
 				},
 				{["SPECIAL_KEY_WORDS"] = {"ZoomType", "None",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"MaxScanDistance", ZoomNoneMaxDistance}, 
 					}
 				},
 				{["SPECIAL_KEY_WORDS"] = {"ZoomType", "Far",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"MaxScanDistance", ZoomFarMaxDistance}, 
 					}
 				},
 				{["SPECIAL_KEY_WORDS"] = {"ZoomType", "Mid",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"FoV", ZoomMidFOV}, {"MinScanDistance", ZoomMidMinDistance}, {"MaxScanDistance", ZoomMidMaxDistance}, 
 					}
 				},
 				{["SPECIAL_KEY_WORDS"] = {"ZoomType", "Close",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"FoV", ZoomCloseFOV}, {"MinScanDistance", ZoomCloseMinDistance}, {"MaxScanDistance", ZoomCloseMaxDistance}, 
 					}

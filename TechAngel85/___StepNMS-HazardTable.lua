@@ -51,76 +51,91 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{{ ["MBIN_FILE_SOURCE"] = FileSource01,
 			["EXML_CHANGE_TABLE"] = {
 				{["PRECEDING_KEY_WORDS"] = {"NoOxygen", "ProtectionTime",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", NoO2ProtectionTimeX},	{"y", NoO2ProtectionTimeY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ExtremeHeat", "ProtectionTime",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", ExHeatProtectionTimeX}, {"y", ExHeatProtectionTimeY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ExtremeHeat", "DamageRate",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", ExHeatDamageRateX}, {"y", ExHeatDamageRateY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ExtremeHeat", "WoundRate",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", ExHeatWoundRateX}, {"y", ExHeatWoundRateY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ExtremeHeat",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"TriggerValue", ExHeatTriggerValue},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ExtremeCold", "ProtectionTime",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", ExColdProtectionTimeX}, {"y", ExColdProtectionTimeY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ExtremeCold", "DamageRate",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", ExColdDamageRateX}, {"y", ExColdDamageRateY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ExtremeCold", "WoundRate",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", ExColdWoundRateX}, {"y", ExColdWoundRateY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ExtremeCold",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"TriggerValue", ExColdTriggerValue},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ToxicGas", "ProtectionTime",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", GasProtectionTimeX}, {"y", GasProtectionTimeY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ToxicGas", "DamageRate",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", GasDamageRateX}, {"y", GasDamageRateY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"ToxicGas", "WoundRate",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", GasWoundRateX}, {"y", GasWoundRateY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"Radiation", "ProtectionTime",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", RadProtectionTimeX}, {"y", RadProtectionTimeY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"Radiation", "DamageRate",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", RadDamageRateX}, {"y", RadDamageRateY},						
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"Radiation", "WoundRate",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", RadWoundRateX}, {"y", RadWoundRateY},						
 					}
