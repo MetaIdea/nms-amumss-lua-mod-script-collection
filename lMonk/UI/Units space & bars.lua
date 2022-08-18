@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__UI more units & less bars.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		EXML_CHANGE_TABLE	= {
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				VALUE_CHANGE_TABLE 	= {
 					{'IsHidden',	true}
 				}

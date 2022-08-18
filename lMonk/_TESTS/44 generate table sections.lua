@@ -59,7 +59,7 @@ end
 local function GetIconColor(x)
 	return {
 		REPLACE_TYPE 		= x[7],
-		INTEGER_TO_FLOAT	= 'FORCE',
+		INTEGER_TO_FLOAT	= 'Force',
 		SPECIAL_KEY_WORDS	= {x[1], x[2]},
 		SECTION_UP			= x[3],
 		VALUE_CHANGE_TABLE 	= { {'R', x[4]}, {'G', x[5]}, {'B', x[6]} }
@@ -69,7 +69,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '___TEST 44 generate table sections.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

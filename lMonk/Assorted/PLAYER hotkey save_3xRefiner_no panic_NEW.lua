@@ -322,7 +322,7 @@ SaveEntity = [[<?xml version="1.0" encoding="utf-8"?>
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL hotkey save_3xRefiner_no panic.pak',
 	MOD_AUTHOR			= 'lMonk (original by Mjjstral)',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_BATCHNAME		= '_MODELS ~@~collection.pak',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{

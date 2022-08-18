@@ -6,7 +6,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC DEBUG.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -16,8 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				VALUE_CHANGE_TABLE 	= {
 					{'SkipPlanetDiscoverOnBoot',			true},
-					{'AllowSavingOnAbandonedFreighters',	true},
-					{'CanLeaveDialogs',						true},
 					{'DisableSaveSlotSorting',				true},
 					{'DisableBaseBuildingLimits',			true},
 					{'DisableProfanityFilter', 				true},
@@ -26,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					-- {'EnableBaseMovingOption',				true},
 					-- {'MoveBaseIndex',						5},
 
-					-- FOR TESTING!!
+					--- FOR TESTING!
 					-- {'ForceSunAngle',						35},	-- 0
 					-- {'EnableDayNightCycle',					false},
 					-- {'DisableStorms',						true},

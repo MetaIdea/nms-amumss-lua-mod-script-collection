@@ -4,6 +4,8 @@ local desc = [[
     various headlights, will will match the ship's main color.
 	
   * Affects fighter, dropship, shuttle & sailship
+  * Restore procedural sail lights who match the sail's color
+
   --- WARNING: may affect ship proc-gen PAINTED/PANELS
 ]]----------------------------------------------------------------
 
@@ -26,7 +28,6 @@ local layered_textures = {
 	},
 	{
 	---	ship: glow circle parts (uses internal texture)
-		group  = '',
 		path   = 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/',
 		palette = 'Paint',
 		color	= 'Primary',
@@ -35,7 +36,6 @@ local layered_textures = {
 	},
 	{
 	---	ship: headlight
-		group  = '',
 		path   = 'TEXTURES/COMMON/SPACECRAFT/SHARED/',
 		palette = 'Paint',
 		color	= 'Primary',
@@ -88,7 +88,9 @@ local function BuildProcTextureLayers(tex)
 	local exml = {}
 	table.insert(exml, GetProceduralTextureLayer(GetProceduralTexture(tex), 'BASE'))
 	-- silly fixed length array
-	for _=1, 7 do table.insert(exml, GetProceduralTextureLayer()) end
+	for _=1, 7 do
+		table.insert(exml, GetProceduralTextureLayer())
+	end
 	return [[<?xml version="1.0" encoding="utf-8"?>
 		<Data template="TkProceduralTextureList">
 		<Property name="Layers">]]..table.concat(exml)..[[</Property></Data>]]
@@ -114,7 +116,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.ship procedural lights.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.91,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	ADD_FILES			= add_tex_layers_files(),
 	MODIFICATIONS 		= {{
@@ -130,6 +132,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
+		-- sailship |sail proc lights|
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC/HQLIGHT_MAT11.MATERIAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{

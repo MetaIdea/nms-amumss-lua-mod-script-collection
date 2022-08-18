@@ -1,20 +1,20 @@
-------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 local desc = [[
   metal instead of 2nd color for wings & engine parts.
   * Only if the metal texture is active.
-  * applying this method to some parts (mostly cockpit) can interfere with how
-    colors are applied to other parts.
-]]----------------------------------------------------------------------------
+  * Using this method in some parts (cockpit/body mostly) can change how proc-gen
+   interperts the seed - might change COATING/PANELS/PAINTED selection.
+]]--------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__SHIP metal textures.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-		-- |METAL instead 2nd paint|
+	---	|METAL instead 2nd paint|
 		MBIN_FILE_SOURCE	= {
 			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_B/COCKPITB/TERTIARY.MATERIAL.MBIN', 		   -- ??
 			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_E/COCKPIT_E/TERTIARY.MATERIAL.MBIN',		   -- ??
@@ -58,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		-- |primary paint instead of 2nd|
+	---	|primary paint instead of 2nd|
 		MBIN_FILE_SOURCE	= {
 			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/NOSE/COCKPITA_NOSEC/COCKPITANOSEC/TERTIARY.MATERIAL.MBIN', -- ??
 			-- 'MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_F/COCKPTF/TERTIARY1.MATERIAL.MBIN',		  -- ??

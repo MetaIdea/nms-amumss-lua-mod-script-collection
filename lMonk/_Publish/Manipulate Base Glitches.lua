@@ -2,11 +2,11 @@
 local desc = [[
   Enable 3D rotation and scaling for Glitch items
 ]]------------------------------------------------------------------------
-	
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '_MOD.lMonk.Manipulate Glitches.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.73',
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -14,7 +14,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				REPLACE_TYPE 		= 'ALL',
+				REPLACE_TYPE 		= 'All',
 				SPECIAL_KEY_WORDS	= {'SubGroupName', 'DECOGLITCHES'},
 				SECTION_UP			= 2,
 				VALUE_CHANGE_TABLE 	= {

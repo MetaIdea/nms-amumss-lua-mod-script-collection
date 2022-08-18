@@ -6,7 +6,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Dropship fanwing light dim.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		EXML_CHANGE_TABLE	= {
 			{
-				INTEGER_TO_FLOAT	= 'FORCE',
+				INTEGER_TO_FLOAT	= 'Force',
 				SPECIAL_KEY_WORDS	= {'Name', 'Glow'},
 				VALUE_CHANGE_TABLE 	= {
 					{'TransY',		0},		-- -0.05168

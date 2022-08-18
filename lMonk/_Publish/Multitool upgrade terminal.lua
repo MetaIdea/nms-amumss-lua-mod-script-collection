@@ -4,9 +4,9 @@ local desc = [[
 ]]----------------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.multitool upgrade terminal.1.0.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.multitool upgrade terminal.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.98,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

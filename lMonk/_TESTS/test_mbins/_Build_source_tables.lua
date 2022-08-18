@@ -24,7 +24,7 @@ local function collateFolders(path)
 	local d = lstDir(path, 'd')
 	for _,v in pairs(d) do
 		dname = v:sub(#path + 2, #v)
-		if dname:find('[!.+]') == nil then
+		if not dname:find('[!.+]') then
 			Batch[dname] = v
 		end
 	end
@@ -33,6 +33,7 @@ end
 -- loop through scripts folder and collate the MBIN sources from each
 -- (keeps uniques only by saving to the table's key)
 local function collateSources(path)
+	local function IsMbin(f) return f:sub(f:len()-3, f:len()) == 'MBIN' end
 	local mbins = {}
 	local luas = lstDir(path, 'f', '*.lua')
 	for _,sf in pairs(luas) do
@@ -44,7 +45,9 @@ local function collateSources(path)
 			for _,mct in pairs(mbin_ct) do
 				mbin_fs = mct.MBIN_FILE_SOURCE
 				if type(mbin_fs) == 'table' then
-					for _,mfs in pairs(mbin_fs) do src[mfs] = 1 end
+					for _,mfs in pairs(mbin_fs) do
+						src[mfs] = 1
+					end
 				else
 					src[mbin_fs] = 1
 				end
@@ -53,7 +56,9 @@ local function collateSources(path)
 		if container.ADD_FILES and #container.ADD_FILES > 0 then
 			for _,af in ipairs(container.ADD_FILES) do
 				s = af.FILE_DESTINATION:gsub('EXML', 'MBIN')
-				src[s] = 1
+				if IsMbin(s) then
+					src[s] = 1
+				end
 			end
 		end
 		for k,_ in pairs(src) do table.insert(mbins, k) end
@@ -70,16 +75,14 @@ local function tableToString(name, tbl, l)
 		return sp
 	end
 	local function key(s)
-		if tonumber(s) ~= nil then return '' else return s..' = ' end
+		-- if tonumber(s) ~= nil then return '' else return s..' = ' end
+		return (tonumber(s) and '' or s..' = ')
 	end
 	local function eval(v)
 		if type(v) == 'number' or type(v) == 'boolean' then
 			return v
-		elseif v:find('\n') ~= nil then
-			return '[['..v..']]'
-		else
-			return '\''..v..'\''
 		end
+		return (v:find('\n') and '[['..v..']]' or '\''..v..'\'')
 	end
 
 	local str = key(name)..'{\n'
@@ -119,11 +122,7 @@ local function generateAmumssScript(b_key)
 	}
 	local f = string.format('%s\\%s.lua', Results_Path, b_key)
 	b = writeTableToFile(mod, 'NMS_MOD_DEFINITION_CONTAINER', f)
-	if b then
-		print('Batch '..b_key..' processed successfully.')
-	else
-		print('Batch '..b_key..' FAILED!')
-	end
+	print('Batch '..b_key..(b and ' processed successfully.' or ' FAILED!'))
 end
 
 -- MAIN
@@ -134,17 +133,12 @@ end
 
 updateMbinsFromAllBatches()
 
-
 --------------------------------------------------------------------------------------------------------
 local function experiment4()
 	assert(loadfile('E:\\MODZ_stuff\\NoMansSky\\AMUMss_Scripts\\TABLES\\TECHNOLOGY.lua'))()
 	mct = NMS_MOD_DEFINITION_CONTAINER
 	b = writeTableToFile(mct, 'NMS_MOD_DEFINITION_CONTAINER', Results_Path..'\\'..'experiment4.lua')
-	if b then
-		print('experiment 4 successful!')
-	else
-		print('experiment 4 FAILED!')
-	end
+	print('experiment 4 '..(b and 'Successful!' or 'FAILED!'))
 end
 
 -- experiment4()

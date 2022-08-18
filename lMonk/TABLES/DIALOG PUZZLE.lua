@@ -2,13 +2,15 @@
 local desc = [[
   Replace freighter battles reward for each race, requires(!) additions in rewards table
   attach the test reward to the construction recipe analyzer <Cancel> menu
+  Keep chef talking - don't close dialog after each interaction
 ]]---------------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE DIALOG PUZZLE.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
+	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
@@ -39,11 +41,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				REPLACE_TYPE 		= 'All',
+				SPECIAL_KEY_WORDS	= {'Value', 'R_CHEF_JUDGE'},
+				SECTION_UP			= 2,
+				VALUE_CHANGE_TABLE 	= {
+					{'KeepOpen',	true}
+				}
+			},
+			{
 				SPECIAL_KEY_WORDS	= {'Id', '?BLUEPRINT_ANALYSER', 'Name', 'ALL_REQUEST_LEAVE'},
 				PRECEDING_KEY_WORDS	= 'Rewards',
 				VALUE_CHANGE_TABLE 	= {
 					{'Value',		'TEST_REWARD_09'}
-					-- {'Value',		'TRIGGER_ACTIVE'}
 				}
 			}
 		}

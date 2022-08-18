@@ -45,21 +45,23 @@ function sailship_edits:Get(x)
 			{'ScaleY',	x[8] or 0},
 		}
 	else
-		T.REMOVE = 'SECTION'
+		T.REMOVE = 'Section'
 	end
 	return T
 end
 
 local function BuildExmlChangeTable(tbl)
 	local T = {}
-	for _,v in ipairs(tbl) do table.insert(T, tbl:Get(v)) end
+	for _,v in ipairs(tbl) do
+		table.insert(T, tbl:Get(v))
+	end
 	return T
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.sailship re-alignments.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.91,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

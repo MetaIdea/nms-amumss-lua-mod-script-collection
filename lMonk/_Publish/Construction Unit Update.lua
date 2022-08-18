@@ -5,7 +5,7 @@ local desc = [[
   - The items tree is a classic Tree data structure. The node is a table
    containing an item's id string and a table which contains one or more nodes.
 ]]------------------------------------------------------------------------------
-local version = 1.1
+local version = 1.15
 
 local unlockable_items = {
 	{
@@ -316,11 +316,21 @@ local unlockable_items = {
 		isroot  = true,
 		issubs	= true,
 		tree	= {
-			'BUILDBEACON', {
+			'BUILDSAVE', {
 				{
-					'U_POWERLINE', {
+					'BASE_FLAG', {
 						{
-							'TELEPORTER', {
+							'NPCBUILDERTERM', {
+								{
+									'NPCSCIENCETERM',
+										{'NPCFARMTERM'}
+								},{
+									'NPCWEAPONTERM',
+										{'NPCVEHICLETERM'}
+								}
+							}
+						},{
+							'U_POWERLINE', {
 								{
 									'U_SOLAR_S',
 										{'U_BATTERY_S'}
@@ -329,22 +339,29 @@ local unlockable_items = {
 								}
 							}
 						},{
-							'BUILDLANDINGPAD',
-								{'BUILDTERMINAL'}
-						}
-					}
-				},{
-					'U_PIPELINE', {
-						{
-							'U_SILO_S', {
-								{'U_EXTRACTOR_S'},
-								{'U_GASEXTRACTOR'}
+							'TELEPORTER', {
+								{
+									'BUILDLANDINGPAD',
+										{'BUILDTERMINAL'}
+								}
+							}
+						},{
+							'U_PIPELINE', {
+								{
+									'U_SILO_S', {
+										{'U_EXTRACTOR_S'},
+										{'U_GASEXTRACTOR'}
+									}
+								}
 							}
 						}
 					}
 				},{
+					'BUILDBEACON', {
+						{'BUILDSIGNAL'}
+					}
+				},{
 					'BUILD_REFINER1', {
-						{'BUILDSIGNAL'},
 						{'COOKER'},
 						{'BUILD_REFINER2'}
 					}
@@ -401,25 +418,34 @@ local function AddTreeToChangeTable(node)
 	local T = {}
 	if node.isroot then
 	--- full tree addition ---
-		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Title', node.parent[1]},
-			PRECEDING_KEY_WORDS	= 'Trees',
-			ADD					= [[
-				<Property value="GcUnlockableItemTree.xml">
-					<Property name="Title" value="]]..node.title..[["/>
-					<Property name="CostTypeID" value="]]..node.cost..[["/>
-					]]..BuildExmlNodes(node.tree, node.isroot)..[[
-				</Property>]]
-		})
+		local tree_root = [[
+			<Property value="GcUnlockableItemTree.xml">
+				<Property name="Title" value="]]..node.title..[["/>
+				<Property name="CostTypeID" value="]]..node.cost..[["/>
+				]]..BuildExmlNodes(node.tree, node.isroot)..[[
+			</Property>]]
+		if node.after then
+			table.insert(T, {
+				SPECIAL_KEY_WORDS	= {'Title', node.parent[1], 'Title', node.after},
+				ADD_OPTION			= 'AddAfterSection',
+				ADD					= tree_root
+			})
+		else
+			table.insert(T, {
+				SPECIAL_KEY_WORDS	= {'Title', node.parent[1]},
+				PRECEDING_KEY_WORDS	= 'Trees',
+				ADD					= tree_root
+			})
+		end
 	elseif not node.haschild then
 	--- childless node ---
 		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent},
+			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
 			PRECEDING_KEY_WORDS	= 'Children',
 			REMOVE				= 'Line'
 		})
 		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent},
+			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
 			ADD					= [[
 				<Property name="Children">
 					]]..BuildExmlNodes(node.tree, false)..[[
@@ -428,7 +454,7 @@ local function AddTreeToChangeTable(node)
 	else
 	--- regular node ---
 		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent},
+			SPECIAL_KEY_WORDS	= {'Unlockable', node.parent[1]},
 			PRECEDING_KEY_WORDS = 'Children',
 			SECTION_ACTIVE		= 1,
 			ADD					= BuildExmlNodes(node.tree, false)
@@ -436,6 +462,7 @@ local function AddTreeToChangeTable(node)
 	end
 	return T
 end
+
 
 local function DeleteTreeInChangeTable(node)
 	local T = {}
@@ -468,7 +495,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit Update.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.96,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

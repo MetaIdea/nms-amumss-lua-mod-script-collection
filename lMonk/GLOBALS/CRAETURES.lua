@@ -10,7 +10,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC CRAETURES.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.89,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'GCCREATUREGLOBALS.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				INTEGER_TO_FLOAT	= 'FORCE',
+				INTEGER_TO_FLOAT	= 'Force',
 				VALUE_CHANGE_TABLE 	= {
 					{'SandWormJumpHeight',				700},	-- 120 --> 700
 					{'SandWormSubmergeDepth',			-500},	-- 100 --> 400
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				MATH_OPERATION 		= '+',
-				INTEGER_TO_FLOAT	= 'FORCE',
+				INTEGER_TO_FLOAT	= 'Force',
 				VALUE_CHANGE_TABLE 	= {
 					{'RepelRange',						-3},	-- 5
 					{'WeaponRepelRange',				-16},	-- 18
@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'SandWormSpawnChanceMin',			0.07},	-- 0.01
 					{'SandWormSpawnChanceMax',			0.05},	-- 0.2
 					{'SpawnOnscreenDist',				20},	-- 100
-					{'RidingTurnRadiusMultiplier',		-0.4},	-- 1
+					-- {'RidingTurnRadiusMultiplier',		-0.4},	-- 1
 					{'FadeDistance',					20},	-- 10
 					{'MinFade',							25},	-- 30
 					{'RideSpeedSlow', 					0.7},	-- 0.5
@@ -63,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				INTEGER_TO_FLOAT	= 'FORCE',
+				INTEGER_TO_FLOAT	= 'Force',
 				PRECEDING_KEY_WORDS = 'PetOffPlanetEffect',
 				VALUE_CHANGE_TABLE 	= {
 					{'R',			0.2},
@@ -74,7 +74,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				MATH_OPERATION 		= '*',
-				INTEGER_TO_FLOAT	= 'PRESERVE',
+				INTEGER_TO_FLOAT	= 'Preserve',
 				VALUE_CHANGE_TABLE 	= {
 					{'CreatureHarvestAmountSmall',		2}, 	-- 1
 					{'CreatureHarvestAmountMed',		2}, 	-- 1

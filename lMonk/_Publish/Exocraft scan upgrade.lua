@@ -6,7 +6,7 @@ local desc = [[
   Re-arange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]----------------------------------------------------------------------------------
-mod_version = 1.7
+mod_version = 1.71
 
 local scan_table = {
 	{
@@ -145,43 +145,43 @@ end
 
 local scan_events = {
 	{
-		event = 'TERMINAL',
-		class = 'Terminal',
-		osd	  = 'SIGNAL_TERMINAL',
-		tip   = 'TIP_TERMINAL',
+		event	= 'TERMINAL',
+		class	= 'Terminal',
+		osd		= 'SIGNAL_TERMINAL',
+		tip		= 'TIP_TERMINAL',
 	},{
-		event = 'DEBRIS_NPC',
-		class = 'NPCDebris',
-		osd	  = 'SIGNAL_DEBRIS',
-		tip   = 'TIP_DEBRIS',
+		event	= 'DEBRIS_NPC',
+		class	= 'NPCDebris',
+		osd		= 'SIGNAL_DEBRIS',
+		tip		= 'TIP_DEBRIS',
 	},{
-		event = 'PLAQUE',
-		class = 'Plaque',
-		osd   = 'SIGNAL_PLAQUE',
-		tip   = 'TIP_PLAQUE',
+		event	= 'PLAQUE',
+		class	= 'Plaque',
+		osd		= 'SIGNAL_PLAQUE',
+		tip		= 'TIP_PLAQUE',
 	},{
-		event = 'BASE',
-		class = 'Base',
-		osd   = 'SIGNAL_BASE',
-		tip   = 'TIP_BASE',
+		event	= 'BASE',
+		class	= 'Base',
+		osd		= 'SIGNAL_BASE',
+		tip		= 'TIP_BASE',
 	},{
-		event = 'LIBRARY',
-		class = 'LargeBuilding',
-		osd   = 'SIGNAL_LIBRARY',
-		tip   = 'TIP_LIBRARY',
+		event	= 'LIBRARY',
+		class	= 'LargeBuilding',
+		osd		= 'SIGNAL_LIBRARY',
+		tip		= 'TIP_LIBRARY',
 	},{
-		event = 'DRONE_HIVE',
-		class = 'DroneHive',
-		osd   = 'UI_DRONEHIVE_LOCATED_OSD',
-		mlbl  = 'UI_SENTINEL_HIVE_NAME',
-		tip   = 'UI_DRONEHIVE_LOCATED',
+		event	= 'DRONE_HIVE',
+		class	= 'DroneHive',
+		osd		= 'UI_DRONEHIVE_LOCATED_OSD',
+		mlabel	= 'UI_SENTINEL_HIVE_NAME',
+		tip		= 'UI_DRONEHIVE_LOCATED',
 	},{
-		event = 'SETTLEMENT',
-		blocal= 'Random',
-		btype = 'UnownedSettlement',
-		class = 'Settlement_Hub',
-		osd   = 'UI_SETTLEMENT_LOCATED_OSD',
-		tip   = 'UI_SETTLEMENT_LOCATED',
+		event	= 'SETTLEMENT',
+		blocal	= 'Random',
+		btype	= 'UnownedSettlement',
+		class	= 'Settlement_Hub',
+		osd		= 'UI_SETTLEMENT_LOCATED_OSD',
+		tip		= 'UI_SETTLEMENT_LOCATED',
 	}
 }
 
@@ -191,9 +191,9 @@ local function NewScanEvent(scn)
 		<Property name="Name" value="]]..scn.event..[["/>
 		<Property name="ForceOverridesAll" value="True"/>
 		<Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD"/>
-		<Property name="EventStartType" value="ObjectScan"/>
-		<Property name="EventEndType" value="Proximity"/>
-		<Property name="EventPriority" value="Regular"/>
+		<Property name="EventStartType" value="]]..(scn.start or 'ObjectScan')..[["/>
+		<Property name="EventEndType" value="]]..(scn.ende or 'Proximity')..[["/>
+		<Property name="EventPriority" value="]]..(scn.priority or 'Regular')..[["/>
 		<Property name="DisableMultiplayerSync" value="True"/>
 		<Property name="BuildingLocation" value="]]..(scn.blocal or 'Nearest')..[["/>
 		<Property name="BuildingType" value="]]..(scn.btype or 'BuildingClass')..[["/>
@@ -211,7 +211,7 @@ local function NewScanEvent(scn)
 		</Property>
 		<Property name="OSDMessage" value="]]..scn.osd..[["/>
 		<Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM"/>
-		<Property name="MarkerLabel" value="]]..(scn.mlbl or '')..[["/>
+		<Property name="MarkerLabel" value="]]..(scn.mlabel or '')..[["/>
 		<Property name="MarkerIcon" value="TkTextureResource.xml">
 			<Property name="Filename" value=""/>
 		</Property>
@@ -231,7 +231,9 @@ end
 
 local function InsertNewScanEvents()
 	local exml = ''
-	for _,ev in ipairs(scan_events) do exml = exml..NewScanEvent(ev) end
+	for _,ev in ipairs(scan_events) do
+		exml = exml..NewScanEvent(ev)
+	end
 	return exml
 end
 
@@ -255,7 +257,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.97,
+	NMS_VERSION			= 3.99,
 	MOD_DESCRIPTION		= desc,
 	ADD_FILES = {
 		{
