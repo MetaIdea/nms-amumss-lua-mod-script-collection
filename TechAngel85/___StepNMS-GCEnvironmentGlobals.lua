@@ -45,6 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{{ ["MBIN_FILE_SOURCE"] = FileSource01,
 			["EXML_CHANGE_TABLE"] = {
 				{ ["PRECEDING_KEY_WORDS"] = "",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"AnimationScale", AnimationScale}, 
 						{"TerrainFadeTime", TerrainFadeTime}, 
@@ -58,11 +59,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 --##### Everything after here is from Step #####
 --
 				{["PRECEDING_KEY_WORDS"] = {"CloudProperties", "WindOffset",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", WindOffsetX}, {"y", WindOffsetY}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"CloudProperties", "CloudHeightGradient1",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", Cloud01X}, 
 						{"y", Cloud01Y}, 
@@ -71,6 +74,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"CloudProperties", "CloudHeightGradient2",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", Cloud02X}, 
 						{"y", Cloud02Y}, 
@@ -79,6 +83,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"CloudProperties", "CloudHeightGradient3",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"x", Cloud03X}, 
 						{"y", Cloud03Y}, 

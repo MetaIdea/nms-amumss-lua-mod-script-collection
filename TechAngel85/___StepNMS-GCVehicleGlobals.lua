@@ -23,11 +23,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{{ ["MBIN_FILE_SOURCE"] = FileSource01,
 			["EXML_CHANGE_TABLE"] = {
 				{["PRECEDING_KEY_WORDS"] = {"VehicleScan",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", VehScanPulseRange}, {"ChargeTime", VehScanChargeTime}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = {"VehicleLocalScan",}, 
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"PulseRange", VehScanLocPulseRange}, {"ChargeTime", VehScanLocChargeTime}, 						
 					}

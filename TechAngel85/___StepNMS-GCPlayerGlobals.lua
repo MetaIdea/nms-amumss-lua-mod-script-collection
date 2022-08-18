@@ -59,6 +59,8 @@ JetpackIgnitionForceDeadPlanetExtra = 30	-- The initial force applied during Jet
 SpaceJetpackMaxSpeed = 30				-- Jetpack speed while in Space | 10 | 717
 SpaceJetpackDrainRate = 0.1				-- Rate the Jetpack drains while in Space | 0.3 | 718
 
+PirateFlybyAttackProbability= .25		-- | .5 | 819
+
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -69,7 +71,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{{ ["MBIN_CHANGE_TABLE"] = 
 		{{ ["MBIN_FILE_SOURCE"] = FileSource01,
 			["EXML_CHANGE_TABLE"] = {
-				{ ["PRECEDING_KEY_WORDS"] = "",
+				{ 	["PRECEDING_KEY_WORDS"] = "",
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"GroundWalkForceMultiplier", GroundWalkForceMultiplier},  
 						{"GroundWalkBrakeWhileMoving", GroundWalkBrakeWhileMoving}, 
@@ -113,25 +116,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"JetpackIgnitionForceDeadPlanetExtra", JetpackIgnitionForceDeadPlanetExtra}, 
 						{"SpaceJetpackMaxSpeed", SpaceJetpackMaxSpeed}, 
 						{"SpaceJetpackDrainRate", SpaceJetpackDrainRate}, 
-						{"UnderwaterMaxSpeed", UnderwaterMaxSpeed}, 
-						{"UnderwaterMaxSpeed", UnderwaterMaxSpeed}, 
-						{"UnderwaterMaxSpeed", UnderwaterMaxSpeed}, 
+						{"PirateFlybyAttackProbability", PirateFlybyAttackProbability}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = "", 
 					["LINE_OFFSET"] = "+1",		--one line down from "JetpackTankTimes"
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"JetpackTankTimes", JetpackTankTime01}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = "", 
 					["LINE_OFFSET"] = "+2",		--two lines down from "JetpackTankTimes"
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"JetpackTankTimes", JetpackTankTime02}, 
 					}
 				},
 				{["PRECEDING_KEY_WORDS"] = "", 
 					["LINE_OFFSET"] = "+3",		--three lines down from "JetpackTankTimes"
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"JetpackTankTimes", JetpackTankTime03}, 
 					}

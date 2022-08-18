@@ -113,6 +113,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{["SPECIAL_KEY_WORDS"] = {"Name", "BIGPAINSHAKE",},
 					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ShakeStrength", BigPainSHStrength}, 
 						{"ShakeFrequency", BigPainSHFrequency}, 
@@ -122,6 +123,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{["SPECIAL_KEY_WORDS"] = {"Name", "EXPLOSIONPAINSH",},
 					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ShakeStrength", ExplosionPainSHStrength}, 
 						{"ShakeFrequency", ExplosionPainSHFrequency}, 
@@ -149,6 +151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{["SPECIAL_KEY_WORDS"] = {"Name", "GRENADESHAKE",},
 					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ShakeStrength", GrenadeSHStrength}, 
 						{"ShakeFrequency", GrenadeSHFrequency}, 
@@ -260,6 +263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{["SPECIAL_KEY_WORDS"] = {"Name", "SANDWORMEMERGE",},
 					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
+					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ShakeStrength", SandwarmEmergeSHStrength}, 
 						{"ShakeFrequency", SandwarmEmergeSHFrequency}, 
