@@ -1,10 +1,8 @@
 Author = "Prof Horatio Hafnaugels"
 LUAAuthor = "Droseran"
 ModName = "Fine LOD"
-ModNameSub = ""
 BaseDescription = "Ground textures fix + water level fix + spawn delay reduction + farther LOD switch"
-GameVersion = "3.67"
-ModVersion = ""
+GameVersion = "3.97"
 FileSource0 = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN"
 FileSource1 = "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
 FileSource2 = "GCWATERGLOBALS.GLOBAL.MBIN"
@@ -22,62 +20,64 @@ NMS_MOD_DEFINITION_CONTAINER = {
                 {
                     ["MBIN_FILE_SOURCE"] = FileSource0,
                     ["EXML_CHANGE_TABLE"] = {
+                        -- {
+                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
+                            -- ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
+                            -- ["MATH_OPERATION"] = "*",
+                            -- ["LINE_OFFSET"] = "+1",
+                            -- ["VALUE_CHANGE_TABLE"] = {
+                                -- {"LODAdjust", 2}
+                            -- }
+                        -- },
+                        -- {
+                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
+                            -- ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
+                            -- ["MATH_OPERATION"] = "*",
+                            -- ["LINE_OFFSET"] = "+2",
+                            -- ["VALUE_CHANGE_TABLE"] = {
+                                -- {"LODAdjust", 2.5}
+                            -- }
+                        -- },
+                        -- {
+                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
+                            -- ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
+                            -- ["MATH_OPERATION"] = "*",
+                            -- ["LINE_OFFSET"] = "+3",
+                            -- ["VALUE_CHANGE_TABLE"] = {
+                                -- {"LODAdjust", 3}
+                            -- }
+                        -- },
+                        -- {
+                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
+                            -- ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
+                            -- ["MATH_OPERATION"] = "*",
+                            -- ["LINE_OFFSET"] = "+4",
+                            -- ["VALUE_CHANGE_TABLE"] = {
+                                -- {"LODAdjust", 3.5}
+                            -- }
+                        -- },
+                        -- {
+                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
+                            -- ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
+                            -- ["MATH_OPERATION"] = "*",
+                            -- ["LINE_OFFSET"] = "+5",
+                            -- ["VALUE_CHANGE_TABLE"] = {
+                                -- {"LODAdjust", 4}
+                            -- }
+                        -- },
+                        -- {
+                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
+                            -- ["VALUE_CHANGE_TABLE"] = {
+                                -- {"TerrainFadeTime","0.5"},
+                            -- }
+                        -- },
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
-                            ["MATH_OPERATION"] = "*",
-                            ["LINE_OFFSET"] = "+1",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"LODAdjust", 2}
-                            }
-                        },
-                        {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
-                            ["MATH_OPERATION"] = "*",
-                            ["LINE_OFFSET"] = "+2",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"LODAdjust", 2.5}
-                            }
-                        },
-                        {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
-                            ["MATH_OPERATION"] = "*",
-                            ["LINE_OFFSET"] = "+3",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"LODAdjust", 3}
-                            }
-                        },
-                        {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
-                            ["MATH_OPERATION"] = "*",
-                            ["LINE_OFFSET"] = "+4",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"LODAdjust", 3.5}
-                            }
-                        },
-                        {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["PRECEDING_KEY_WORDS"] = {"TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml","TkLODSettingsData.xml"},
-                            ["MATH_OPERATION"] = "*",
-                            ["LINE_OFFSET"] = "+5",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"LODAdjust", 4}
-                            }
-                        },
-                        {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"TerrainFadeTime","0.5"},
-                            }
-                        },
-                        {
+							["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"AnimationScale","10"},
                                 {"TerrainFadeTimeInShip","1"},
                                 {"CreatureFadeTime","0.7"},
+                                {"TerrainFadeTime","1"},
                                 {"FloraFadeTimeMin","0.3"},
                                 {"FloraFadeTimeMax","1.1"},
                             }
@@ -114,10 +114,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             }
                         },
                         {
-                            ["MATH_OPERATION"] = "*",
+                            -- ["MATH_OPERATION"] = "*",
                             ["LINE_OFFSET"] = "+1",
+							["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] = {
-                                {"DisplayTime", 0.3}
+                                {"DisplayTime", 1}
                             }
                         },
                         {
