@@ -1,5 +1,5 @@
 ModName = "PTSd Ship+MultiTool Rebalance"
-GameVersion = "3_98"
+GameVersion = "3_99.1"
 Description = "PTSd module to rebalance the stat & inventory bonuses for Ships, Freighters & Multitools, as well as Ship Spawnrates"
 
 FuelLessIsBetter =				"TRUE"				--"FALSE", Makes the "Fuel" Frigate-boosting upgrade modules for freighters properly increase Fleet Coordination rather than decrease it
@@ -251,11 +251,11 @@ CostChanges	=
 		--Base value in millions 	MinValue	MaxValue	MinSlots	MaxSlots																	Price at Class C with lowest inventory and at Class S with highest inventory as seen in game by players and catalogued to the wiki	(And max S rank cost after undoing the S rank cost bonus)
 			{"Shuttle",				0.75,		60,			15,			37},		--Vanilla values are 0.85 mil,		40 mil,			20,	44		Catalogued at 0.51 mil	~	6.6 mil		(4.4 mil)			18	~	28	general &	3	~	8	tech slots initially
 			{"Fighter",				1.25,		90,			12,			37},		--Vanilla values are 1.5 mil,		10.5 mil,		19,	30		Catalogued at 0.55 mil	~	57.5 mil	(28.75 mil)			15	~	38	general &	2	~	12	tech slots initially
-			{"Dropship",			4.5,		110,		12,			32},		--Vanilla values are 4.5 mil,		70 mil,			25,	48		Catalogued at 4.5 mil	~	126 mil		(70 mil)			25	~	48	general &	2	~	8	tech slots initially
-			{"Scientific",			1,			65,			12,			32},		--Vanilla values are 1.25 mil,		9.2 mil,		19,	30		Catalogued at 0.445 mil	~	39 mil		(26 mil)			15	~	38	general &	3	~	12	tech slots initially
+			{"Dropship",			4.5*0.5,	110*0.85,	12,			32},		--Vanilla values are 4.5 mil,		70 mil,			25,	48		Catalogued at 4.5 mil	~	126 mil		(70 mil)			25	~	48	general &	2	~	8	tech slots initially
+			{"Scientific",			1*1.5,		65*1.1,		12,			32},		--Vanilla values are 1.25 mil,		9.2 mil,		19,	30		Catalogued at 0.445 mil	~	39 mil		(26 mil)			15	~	38	general &	3	~	12	tech slots initially
 			{"Royal",				2.5,		8,			15,			20},		--Vanilla values are 5 mil,			12 mil,			15,	20		Catalogued at 5 mil		~	12 mil		(12 mil)			15	~	20	general &	4	~	6	tech slots initially
 			{"Alien",				5,			70,			25,			48},		--Vanilla values are 5 mil,			70 mil,			25,	48		Catalogued at 2.98 mil	~	2.98mil		(2.98 mil)			22	~	22	general &	21	~	21	tech slots initially
-			{"Sail",				1,			100,		12,			32},		--Vanilla values are 2.2 mil,		11.1 mil,		19,	36		Catalogued at 1.00 mil	~	2.42mil		(2.2 mil)			15	~	19	general &	4	~	6	tech slots initially
+			{"Sail",				1*1.5,		100,		12,			32},		--Vanilla values are 2.2 mil,		11.1 mil,		19,	36		Catalogued at 1.00 mil	~	2.42mil		(2.2 mil)			15	~	19	general &	4	~	6	tech slots initially
 			{"Freighter",			25,			200,		15,			34},		--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
 			{"PlayerFreighter",		25,			200,		15,			34}			--Vanilla values are 5 mil,			300 mil,		15,	48		Catalogued at 5 mil		~	23 mil  	(11.5 mil)			15	~	19	general &	3	~	6	tech slots initially for Regular,		26.15 mil	~	178 mil 	(89 mil) 24	~	34	general &	5	~	9	tech slots initially for Capital (Reg and Capital just Small and Medium size freighters)
 		}

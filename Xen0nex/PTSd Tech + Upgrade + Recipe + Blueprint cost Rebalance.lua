@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "3_98"
+GameVersion = "3_99"
 --Currently balancing around Survival Mode
 
 --Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
@@ -42,8 +42,8 @@ AntimatterReactorMult	=			1.5			--Multiplier applied to default cost of 20 Salva
 StorageContainersMult	=			1			--Multiplier applied to default cost of 5 Salvaged Data
 
 FreighterDoubleCultivationRoomMult	=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
-FreighterScannerRoomMult			=	4		--Multiplier applied to default cost of 1 Salvaged Frigate Data
-FreighterExocraftRoomMult			=	6		--Multiplier applied to default cost of 1 Salvaged Frigate Data
+FreighterScannerRoomMult			=	3		--Multiplier applied to default cost of 1 Salvaged Frigate Data
+FreighterExocraftRoomMult			=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
 
 
 --Specific Tech Adjustment Multipliers	(stacks multiplicatively with the TechCostMult
