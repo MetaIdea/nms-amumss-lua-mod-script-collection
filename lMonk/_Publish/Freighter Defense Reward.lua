@@ -5,12 +5,12 @@ local desc = [[
   * (the lists are non-random because a bug causes them to misbehave)
 ]]------------------------------------------------------------------------
 
-Mod_Version = 1.27
+Mod_Version = 1.28
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
 end
-local function R_TableItem(item, data, reward)
+local function R_TableItem(item, reward, data)
 	local function Amount()
 		if not item.x then return '' end
 		return [[
@@ -26,12 +26,15 @@ local function R_TableItem(item, data, reward)
 		</Property>]]
 end
 local function R_Money(item)
-	local exml = [[
-		<Property name="Currency" value="GcCurrency.xml">
-			<Property name="Currency" value="]]..item.id..[["/>
-		</Property>
-	]]
-	return R_TableItem(item, exml, 'GcRewardMoney.xml')
+	return R_TableItem(
+		item,
+		'GcRewardMoney.xml',
+		[[
+			<Property name="Currency" value="GcCurrency.xml">
+				<Property name="Currency" value="]]..item.id..[["/>
+			</Property>
+		]]
+	)
 end
 local function R_MultiItem(item)
 	local exml = ''
@@ -52,15 +55,17 @@ local function R_MultiItem(item)
 				</Property>
 			</Property>]]
 	end
-	exml = [[
-		<Property name="Silent" value="]]..bool(item.s)..[["/>
-		<Property name="Items">
-			]]..exml..[[
-		</Property>
-	]]
-	return R_TableItem(item, exml, 'GcRewardMultiSpecificItems.xml')
+	return R_TableItem(
+		item,
+		'GcRewardMultiSpecificItems.xml',
+		[[
+			<Property name="Silent" value="]]..bool(item.s)..[["/>
+			<Property name="Items">
+				]]..exml..[[
+			</Property>
+		]]
+	)
 end
-
 
 local E_ = {
 	-- ProceduralProductCategoryEnum
@@ -186,14 +191,14 @@ local function AddNewRewardsToChangeTable()
 	table.insert(T, {
 		PRECEDING_KEY_WORDS	= 'GenericTable',
 		ADD					= rewards
-	})	
+	})
 	return T
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Freighter Defense Rewards.'..Mod_Version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '3.99.1',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
