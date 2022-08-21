@@ -48,10 +48,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["PRECEDING_KEY_WORDS"] = {""},
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = {
+								{"IsDecoration","False"},
 								{"IsPlaceable","True"},
 								{"BuildableOnPlanetBase","True"},
 								{"BuildableOnPlanet","True"},
-								{"BuildableOnPlanetWithProduct","True"},
+								--{"BuildableOnPlanetWithProduct","True"},
 								{"BuildableOnFreighter","True"},
 								{"BuildableOnSpaceBase","True"},
 								{"BuildableUnderwater","True"},
