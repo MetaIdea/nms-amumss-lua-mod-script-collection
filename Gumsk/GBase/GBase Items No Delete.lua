@@ -21,6 +21,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							["PRECEDING_KEY_WORDS"] = {""},
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = {
+								{"IsDecoration","False"},
 								{"RemovesAttachedDecoration","False"},
 								{"RemovesWhenUnsnapped","False"},
 							}
