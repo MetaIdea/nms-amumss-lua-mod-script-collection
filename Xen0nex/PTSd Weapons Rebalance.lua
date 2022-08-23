@@ -1,5 +1,5 @@
 ModName = "PTSd Weapons Rebalance"
-GameVersion = "3_98"
+GameVersion = "3_99.1"
 Description = "Changes various properties of some player or NPC weapons to be more balanced"
 
 --Global Damage multipliers for convenience to apply to all player weapons of that category (stacks multiplicatively with the individual weapons adjustments below)
@@ -22,13 +22,15 @@ VehicleLaserSentinelMult = 0.2							--0.2
 
 	--WIP
 --Damage multipliers against DOORs and DEPOTs
-ShipWeaponDoorMult = 0.1								--1
-VehicleGunDoorMult = 0.1								--1
-VehicleLaserDoorMult = 0								--1
+ShipWeaponDoorMult = 0.02								--1
+VehicleGunDoorMult = 0.05								--1
+VehicleLaserDoorMult = 0								--1		To match regular Laser damage = 0
+DefaultDoorMult = 	0.33								--1		Multiplier for most other damage against DOORs
 
-ShipWeaponDepotMult = 0.1								--1
-VehicleGunDepotMult = 0.1								--1
-VehicleLaserDepotMult = 0								--1
+ShipWeaponDepotMult = 0.02								--1
+VehicleGunDepotMult = 0.05								--1
+VehicleLaserDepotMult = 0								--1		To match regular Laser damage = 0
+DefaultDepotMult = 	0.33								--1		Multiplier for most other damage against DEPOTs
 
 	--WIP
 --Damage multiplier against CARGO (cargo pods on space freighters???)
@@ -51,10 +53,7 @@ PhaseBeamLeechAmountMult =					0.5					--				Multiplier to apply to the Shield L
 LivingShipBeamLeechMult = 					0.5					--0.1			Multiplier to apply to the Shield Leech amount for Gazing Eyes (0.1 in vanilla)
 LivingShipBeamLeechUpgradeMult = 			0.1					--0.05~0.3		Multiplier to apply to the Shield Leech amount bonus for upgrades to Gazing Eyes (0.05 ~ 0.3 each in vanilla, up to 6x per ship)
 
-SentWpnDMGMult =							0.75				--1~4			Sentinel Weapon Upgrade Module damage bonus (Only applies to Boltcaster?)
-SentWpnRateMult =							0.75				--1.01~1.2		Sentinel Weapon Upgrade Module firerate bonus (Only applies to Boltcaster?)
-
---Multipliers for certain bonuses from Starship weapon upgrade modules
+--Multipliers for certain bonuses from Starship weapon procedural upgrade modules
 PhaseBeamUpgradesHeatMult =					0.25				--				Multiplier to apply to the bonus heat time for Phase Beam upgrades (1.1 ~ 2 for Class C ~ X)
 LivingShipBeamUpgradesHeatMult =			0.25				--				Multiplier to apply to the bonus heat time for Gazing Eye upgrades (1.1 ~ 1.95 for Class C ~ S)
 CyclotronUpgradesHeatMult =					0.5					--				Multiplier to apply to the bonus heat time for Cyclotron Ballista upgrades (1.1 ~ 1.4 for Class C ~ X)
@@ -75,14 +74,25 @@ PositronUpgradesDMGMult =					1.25*3				--				Multiplier to apply to the bonus d
 InfraKnifeUpgradesDMGMult =					0.7					--				Multiplier to apply to the bonus damage for Infra-Knife upgrades (2 ~ 14 for Class C ~ X)
 CyclotronUpgradesDMGMult =					1.1*10				--				Multiplier to apply to the bonus damage for Cyclotron upgrades (2 ~ 14 for Class C ~ X)
 
+--Multipliers for damage bonuses from Multi-Tool weapon procedural upgrade modules
+BoltcasterUpgradesDMGMult =					4.0					--				Multiplier to apply to the bonus damage for Boltcaster upgrades
+SentWpnDMGMult =							0.5					--1~4			Multiplier to apply to Sentinel Weapon Upgrade Module damage bonus (Only applies to Boltcaster?)
+SentWpnRateMult =							0.5					--1.01~1.2		Multiplier to apply to Sentinel Weapon Upgrade Module firerate bonus (Only applies to Boltcaster?)
+PulseUpgradesDMGMult =						1.0					--				Multiplier to apply to the bonus damage for Pulse Spitter upgrades
+ScatterUpgradesDMGMult =					0.4					--				Multiplier to apply to the bonus damage for Scatter Blaster upgrades
+NeutronUpgradesDMGMult =					0.3					--				Multiplier to apply to the bonus damage for Neutron Cannon upgrades
+BlazeUpgradesDMGMult =						2.5					--				Multiplier to apply to the bonus damage for Blaze Javelin upgrades
+PlasmaUpgradesDMGMult =						0.7					--				Multiplier to apply to the bonus damage for Plamsa Launcher upgrades
+GeologyUpgradesDMGMult =					1.0					--				Multiplier to apply to the bonus damage for Geology Cannon upgrades
+
 --Multipliers to apply to the base damage for various player weapons (Also will be applied to upgrade modules for that weapon)  Stacks multiplicatively with the Global Damage Multipliers above
-PlasmaLauncherDMG =							1.0					--500
-GeologyCannonDMG =							1.0					--1000
-BlazeJavelinDMG =							3.0					--1500			(500 theoretical sustained DPS)					(large DMG multiplier but also longer charge time below to make it possible with enough upgrades on a good enough Multii-Tool to one-shot both unarmored Drones and Repair Drones with the edited "Savage Sentinels" mod)
-BoltcasterDMG =								0.9					--180			(1,350 theoretical burst DPS)
-ScatterBlasterDMG =							0.8					--150 x 8		(2,640 theoretical burst DPS)
-PulseSpitterDMG =							1.0					--96 x 2		(1,536 theoretical burst DPS)
-NeutronCannonDMG =							1.1					--100			(Uncharged)
+BoltcasterDMG =								1.2					--180			(1,350 theoretical burst DPS)
+PulseSpitterDMG =							0.9					--96 x 2		(1,536 theoretical burst DPS)
+ScatterBlasterDMG =							1.1					--150 x 8		(2,640 theoretical burst DPS)
+NeutronCannonDMG =							3.4					--100			(Uncharged)
+BlazeJavelinDMG =							2.4					--1500			(500 theoretical sustained DPS)					(large DMG multiplier but also longer charge time below to make it possible with enough upgrades on a good enough Multii-Tool to one-shot both unarmored Drones and Repair Drones with the edited "Savage Sentinels" mod)
+PlasmaLauncherDMG =							1.45				--500
+GeologyCannonDMG =							1.1					--1000
 
 ExocraftCannonDMG =							1.0					--320			(160 theoretical sustained DPS, plus explosions with AOE???)
 NautilonCannonDMG =							1.0					--220			(110 theoretical sustained DPS, plus explosions with AOE???)
@@ -188,7 +198,7 @@ WeaponStatChanges =
 		},
 		{
 			{
-				"Weapon_Laser_Damage",	BlazeJavelinDMG*GMD	--200 added damge
+				"Weapon_Laser_Damage",	BlazeJavelinDMG*GMD*1.35	--200 added damge
 			}
 		}
 	},
@@ -286,7 +296,7 @@ WeaponStatChanges =
 				"Weapon_Projectile_Damage",	NeutronCannonDMG*GMD	--100	(Uncharged)
 			},
 			{
-				"Weapon_Projectile_MinimumCharge",	1			--1
+				"Weapon_Projectile_MinimumCharge",	1.475			--1
 			},
 			{
 				"Weapon_Projectile_MaximumCharge",	1			--6
@@ -751,19 +761,19 @@ WeaponProjChanges =
 UpgradeDamageChanges =
 {
 	{
-		{"Weapon_Grenade_Damage",	PlasmaLauncherDMG*GMD},				--Plasma Launcher		
+		{"Weapon_Grenade_Damage",	PlasmaUpgradesDMGMult*PlasmaLauncherDMG*GMD},				--Plasma Launcher		
 		{"UP_GREN1", "UP_GREN2", "UP_GREN3", "UP_GREN4", "UP_GRENX"}
 	},
 	{
-		{"Weapon_Grenade_Damage",	GeologyCannonDMG*GMD},				--Geology Cannon		
+		{"Weapon_Grenade_Damage",	GeologyUpgradesDMGMult*GeologyCannonDMG*GMD},				--Geology Cannon		
 		{"UP_TGREN1", "UP_TGREN2", "UP_TGREN3", "UP_TGREN4", "UP_TGRENX"}
 	},
 	{
-		{"Weapon_Laser_Damage",	BlazeJavelinDMG*GMD},					--Blaze Javelin		
+		{"Weapon_Laser_Damage",	BlazeUpgradesDMGMult*BlazeJavelinDMG*GMD},					--Blaze Javelin		
 		{"UP_RAIL1", "UP_RAIL2", "UP_RAIL3", "UP_RAIL4", "UP_RAILX"}
 	},
 	{
-		{"Weapon_Projectile_Damage",	BoltcasterDMG*GMD},				--Boltcaster		
+		{"Weapon_Projectile_Damage",	BoltcasterUpgradesDMGMult*BoltcasterDMG*GMD},				--Boltcaster		
 		{"UP_BOLT1", "UP_BOLT2", "UP_BOLT3", "UP_BOLT4", "UP_BOLTX"}
 	},
 	{
@@ -771,15 +781,15 @@ UpgradeDamageChanges =
 		{"UP_SENGUN"}
 	},
 	{
-		{"Weapon_Projectile_Damage",	ScatterBlasterDMG*GMD},			--Scatter Blaster		
+		{"Weapon_Projectile_Damage",	ScatterUpgradesDMGMult*ScatterBlasterDMG*GMD},			--Scatter Blaster		
 		{"UP_SHOT1", "UP_SHOT2", "UP_SHOT3", "UP_SHOT4", "UP_SHOTX"}
 	},
 	{
-		{"Weapon_Projectile_Damage",	PulseSpitterDMG*GMD},			--Pulse Spiiter		
+		{"Weapon_Projectile_Damage",	PulseUpgradesDMGMult*PulseSpitterDMG*GMD},			--Pulse Spiiter		
 		{"UP_SMG1", "UP_SMG2", "UP_SMG3", "UP_SMG4", "UP_SMGX"}
 	},
 	{
-		{"Weapon_Projectile_Damage",	NeutronCannonDMG*GMD},			--Neutron Cannon		
+		{"Weapon_Projectile_Damage",	NeutronUpgradesDMGMult*NeutronCannonDMG*GMD},			--Neutron Cannon		
 		{"UP_CANN1", "UP_CANN2", "UP_CANN3", "UP_CANN4", "UP_CANNX"}
 	},
 	{
@@ -1257,6 +1267,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				["PRECEDING_KEY_WORDS"] = {"GcDamageMultiplier.xml"},
 				["REPLACE_TYPE"] = "ADDAFTERSECTION",
 				["ADD"] = DamageMult("VehicleLaser", VehicleLaserCreatureMult)
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "DOOR"},
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] = "",
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Default",	DefaultDoorMult}
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "DEPOT"},
+				["MATH_OPERATION"] 		= "",
+				["REPLACE_TYPE"] = "",
+				["INTEGER_TO_FLOAT"] = "FORCE",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Default",	DefaultDepotMult}
+				}
 			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "DOOR"},
