@@ -16,7 +16,9 @@ NewGameIonBattAmmount = 1				--Amount of Ion Batteries to start the game with, i
 --Multipliers to apply to amount of items needed to hand in to complete certain stages of the "Expanding the Base" questline
 SubstanceReqMult =		20				--16x quests: 40 Chromatic Metal, 50 Pugneum,  45 Solanium, 100 Mordite, 100 Gold, 50 Mag. Ferrite, 30 Cobalt, 30 Marrow Bulb, 25 Faecium, 50 Frost Crystals, 50 Solanium, 50 Fungal Mould, 50 Gamma Root, 100 Cactus Flesh, 25 Star Bulbs, 25 Mordite
 ProductReqMult =		10				--7x quests: Vanilla requirements are 2 Microprocessors, 1 Circuit Board, 1 Gravitino Ball, 2 Vy'Keen Daggers, 3 Ion Batteries, 1 Korvax Convergence Cube, and 1 Gravitino Ball
-
+--Overrides to replace the amount required for specific items 
+KorvaxCubeReq =			1				--1 Cube		(setting to values other than 1 makes that mission stage loop to keep giving you cubes until you have the new requirement))
+VyKeenDaggerReq =		10				--2 Daggers		This type of item is rarer to find than some others
 
 --Quest Rewards to be replaced
 ReplacedRewardsSentinel =
@@ -156,6 +158,48 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"Amount", ProductReqMult},
 					{"AmountMin", ProductReqMult},
 					{"AmountMax", ProductReqMult},
+				}
+			},
+			--Overrides amounts for Korvax Cube, VyKeen Daggers
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "EXP_CURIO2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				--["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Amount", KorvaxCubeReq},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Product", "EXP_CURIO2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				--["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Amount", KorvaxCubeReq},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id", "WAR_CURIO2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				--["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"Amount", VyKeenDaggerReq},
+				}
+			},
+			{
+				["SPECIAL_KEY_WORDS"] = {"Product", "WAR_CURIO2"},
+				["REPLACE_TYPE"] 		= "",
+				["MATH_OPERATION"] 		= "",
+				--["SECTION_UP"] = 1,
+				["VALUE_CHANGE_TABLE"] 	=
+				{
+					{"AmountMin", VyKeenDaggerReq},
+					{"AmountMax", VyKeenDaggerReq},
 				}
 			},
 			--Resets these non-Expanding the Base mission requirements to default
