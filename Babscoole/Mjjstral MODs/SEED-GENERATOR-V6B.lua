@@ -480,7 +480,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
 							["LINE_OFFSET"]       = "+0",
-							["REPLACE_TYPE"]      = "ADDAFTERSECTION",
+							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]               = ANIM_TEMPLATE_ALL
 						},
 						{

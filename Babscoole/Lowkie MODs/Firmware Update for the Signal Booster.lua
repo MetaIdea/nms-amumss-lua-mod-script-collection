@@ -473,7 +473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "SEC_CRASHEDSHIP"},
 							["LINE_OFFSET"]         = "0",
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["VALUE_CHANGE_TABLE"] = {{"IGNORE",	"IGNORE"}},
 							["ADD"] =   REWARDSET,
 						},

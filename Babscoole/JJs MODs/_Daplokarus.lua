@@ -92,7 +92,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","FISHFLOCK"},
-							["REPLACE_TYPE"]      = "ADDAFTERSECTION",							
+							["ADD_OPTION"]        = "ADDafterSECTION",							
 							["ADD"] = 
 [[
     <Property value="GcCreatureFilename.xml">

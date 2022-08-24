@@ -16,7 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{					
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","NEWCROSSGRASS",},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE",	"IGNORE",}
@@ -140,7 +140,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},	
 						{
 							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+							["ADD_OPTION"]  = "ADDafterSECTION",
 							["VALUE_CHANGE_TABLE"] = 	
 							{
 								{"IGNORE",	"IGNORE",}

@@ -281,7 +281,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},								
 							["PRECEDING_KEY_WORDS"] = {"Objects",},							
-							["REPLACE_TYPE"] = "ADDafterLINE",
+							["ADD_OPTION"] = "ADDafterLINE",
 							["ADD"] = 
 [[
       <Property value="GcObjectSpawnData.xml">
@@ -434,7 +434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},								
 							["PRECEDING_KEY_WORDS"] = {"DetailObjects",},							
-							["REPLACE_TYPE"] = "ADDafterLINE",
+							["ADD_OPTION"] = "ADDafterLINE",
 							["ADD"] = 
 [[
       <Property value="GcObjectSpawnData.xml">

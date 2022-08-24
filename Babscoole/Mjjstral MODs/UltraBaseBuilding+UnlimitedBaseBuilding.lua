@@ -1497,7 +1497,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "_O2_HARVESTER"},
-							["REPLACE_TYPE"]      = "ADDAFTERSECTION",
+							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]               = table.concat(BASEBUILDINGPARTSTABLE_ADDING_ALL)
 						},
 					}
