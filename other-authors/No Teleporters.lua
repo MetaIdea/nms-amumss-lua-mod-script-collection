@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"]	= "No Teleporters.pak",
-  ["MOD_DESCRIPTION"]	= "1.0.0 Disables all teleporters: Stations, Nexus, Bases, Freighters",
+  ["MOD_DESCRIPTION"]	= "1.0.1 Disables all teleporters: Stations, Nexus, Bases, Freighters",
   ["MOD_AUTHOR"]	= "Pythonaut",
-  ["NMS_VERSION"]	= "3.98",
+  ["NMS_VERSION"]	= "3.99.1",
   ["MODIFICATIONS"] 	=         
     {
 	{
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 			    ["VALUE_CHANGE_TABLE"] = 
 			    {
-					{"InteractionType", "None"}, 
+					{"InteractDistance", "0"}, 
 			    }	
 			},
 		    }
