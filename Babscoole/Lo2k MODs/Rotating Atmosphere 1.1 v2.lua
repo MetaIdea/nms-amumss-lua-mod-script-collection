@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","MESHLINK"}, 
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",						
+							["ADD_OPTION"]  = "ADDafterSECTION",						
 							["ADD"] 				= 
 [[
         <Property value="TkSceneNodeAttributeData.xml">
@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","MESHLINK"}, 
-							["REPLACE_TYPE"] = "ADDAFTERSECTION",						
+							["ADD_OPTION"]  = "ADDafterSECTION",						
 							["ADD"] 				= 
 [[
         <Property value="TkSceneNodeAttributeData.xml">
