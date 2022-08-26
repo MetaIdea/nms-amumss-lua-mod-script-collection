@@ -635,6 +635,9 @@ Products =
 			<Property name="Value" value="SCRAP_WEAP" />
 		</Property>
 		<Property value="NMSString0x10.xml">
+			<Property name="Value" value="SENTINEL_LOOT" />
+		</Property>
+		<Property value="NMSString0x10.xml">
 			<Property name="Value" value="ROGUE_TECHBOX" />
 		</Property>
 		<Property value="NMSString0x10.xml">
