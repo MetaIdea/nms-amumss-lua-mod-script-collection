@@ -6,12 +6,12 @@ GameVersion = "399"
 ModVersion = "a"
 FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
 
-DerelictAbandCrateChance = 15	--5/198
-CrashedSmallChance = 20			--8/121
-CrashedMedChance = 20			--8/121
+DerelictAbandCrateChance = 20	--5/198
+CrashedSmallChance = 25			--8/121
+CrashedMedChance = 25			--8/121
 PiracyChance = 20				--20/1520
 OutlawPiracyChance = 20			--20/1520
-PirateChance = 5000				--0/620, adding to list
+PirateChance = 15				--0/620, adding to list
 
 AddTextA = [[          <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="]]
