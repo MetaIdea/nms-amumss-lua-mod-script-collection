@@ -65,11 +65,11 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "_JJs.Better.Ships.V.2.7.pak",
+["MOD_FILENAME"]    = "_JJs.Better.Ships.V.2.8.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "JJHookah",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "3.97",
+["NMS_VERSION"]     = "3.99",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -118,7 +118,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"A",	"33"}, -- Original "5"
 								{"S",	"34"} -- Original "5"
 							}
-						},						
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"LocID","STAT_FREI_FLEET",},
+							["PRECEDING_KEY_WORDS"] = {"GcInventoryBaseStatBonus.xml",},
+							["SECTION_ACTIVE"] = {3,},
+							["VALUE_CHANGE_TABLE"] = 	
+							{
+								{"LessIsBetter", "False"}, -- Original "True"
+							}
+						},							
 					}
 				},
 				{
