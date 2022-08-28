@@ -1,5 +1,5 @@
 ModName = "_Extra Savage Sentinels by ExosolarX"
-GameVersion = "3_93"
+GameVersion = "3_99.1"
 Description = "Increases the difficulty of Sentinels by changing aggression, firrate, range, sight distance, etc."
 
 function AddWaveSequence (Set)
@@ -61,7 +61,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"CombatSpawnMinWantedTime", 10},				--10				Unknown Function
-								{"WantedTimeoutAggressive", 5}					--5					Unknown Function
+								{"WantedTimeoutAggressive", 5},					--5					Unknown Function
+								{"ExperienceDroneSpawnOffset", 75}				--25				Sets how far from the player Patrol Drones spawn
 							}
 						},
 						{
@@ -276,6 +277,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"DroneCrimeCooldownWaitTimeAtMax", 15},			--15				Unknown Function
 								{"DroneDecisionTime", 2},							--2					Unknown Function
 								{"DroneCrimeWitnessInvestigateDistance", 45},		--30				How close an idle, passive drone needs to be to notice a Crime and begin an Investigation
+								
+								{"DronePatrolDistanceMin", 15},						--10				These 3 vairables together control how close Patrol Drones will try to stay to their initial spawn point when passivley wandering on patrol
+								{"DronePatrolDistanceMax", 50},						--30				
+								{"DronePatrolTargetDistance", 25},					--10				
 								
 								{"DroneSearchTime", 10},							--10				Unknown Function, doesn't seem to control how long sentinels will search for you when running away
 								{"DroneSearchPauseTime", 0.5},						--3					Unknown Function

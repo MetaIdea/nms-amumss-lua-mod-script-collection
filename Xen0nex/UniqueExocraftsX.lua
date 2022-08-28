@@ -1,4 +1,4 @@
-GameVersion = "3_97"
+GameVersion = "3_99.1"
 ModName = "UniqueExoCraftsX"
 Description = "A small mod that make exocraft faster but also stand out from eachother"
 
@@ -8,7 +8,7 @@ VehicleGlobalsPath = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 NomadSpeed = "24"		--18
 RoamerSpeed = "20"		--16
 PilgrimSpeed = "28"		--18
-ColossusSpeed = "16"	--12
+ColossusSpeed = "20"	--12	(still ends up significantly slower than roamer overall due to other variables below)
 NautilonSpeed = "36"	--18	(15 pre-3.97)
 NautilonUnderwaterEnginePower = "10" --10	(6 pre 3.97) 		Acceleration speed
 NautilonUnderwaterEngineFalloff = "1" --0.7		1 = 100% so no fall of , 0.9 =90% means speed wil be 10% slower  => 45u

@@ -1,5 +1,5 @@
 ModName = "PTSd Resource + Product + Construction Rebalance"
-GameVersion = "3_98"
+GameVersion = "3_99.1"
 Description = "Rebalances the purchase & selling price for many items. Changes the stacksize for certain valuables. Changes the construction costs for certain buildables."
 
 --This part applies multipliers to the actual value (buying and selling price) for certain substances or products
@@ -175,7 +175,6 @@ GravHostGravitinoBallsNeeded	=	1				--0		(replaces 25 Magnetised Ferrite)
 SolarPlatesNeeded				=	3				--1
 SolarGoldNeeded					=	40				--30
 SolarGlassNeeded				=	2				--0		(replaces 50 Chromatic Metal)
-
 --Electromagnetic Generator construction recipe
 EGenPlatesNeeded				=	6				--2
 EGenMagFerriteNeeded			=	180				--60
@@ -183,6 +182,11 @@ EGenChromMetalNeeded			=	225				--75
 --Bio-Dome construction recipe
 BioDomeMagFerriteNeeded			=	75				--25
 BioDomeGlassNeeded				=	16				--5
+
+--Antimatter Reactor construction recipe
+AntiMatStormNeeded				=	10				--5		Storm Crystal
+AntiMatAntiNeeded				=	10				--2		Antimatter
+AntiMatFluidNeeded				=	10				--2		(Experimental Power Fluid, replaces 2 Metal Plates)
 
 --New recipe for installing Nutrition Room in freighter
 CookRoomProcessors = 1								--how many Nutrient Processors required		(replaces 15 Oxygen in vanilla)
@@ -722,6 +726,35 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Amount", BioDomeGlassNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "BUILDANTIMATTER",		"ID", "STORM_CRYSTAL"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", AntiMatStormNeeded}
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "BUILDANTIMATTER",		"ID", "ANTIMATTER"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", AntiMatAntiNeeded},
+							}
+						},
+						{
+							["REPLACE_TYPE"] 		= "",
+							["MATH_OPERATION"] 		= "",
+							["SPECIAL_KEY_WORDS"] = {"Id", "BUILDANTIMATTER",		"ID", "CASING"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Amount", AntiMatFluidNeeded},
+								{"ID", "TRA_ENERGY4"}
+								
 							}
 						},
 						{

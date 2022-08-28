@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"		--Edited by Xen0nex
 ModName = "GMech"
 ModNameSub = "+ReducedFuelX"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "393"
+GameVersion = "399.1"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
@@ -21,8 +21,8 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 	MechJetpackLandTime							= 0.4		--0.6		(0.2)
 	
 	MechJetpackForce							= 75		--70	[80]
-	MechJetpackMaxSpeed							= 30		--20	[25]
-	MechJetpackMaxUpSpeed						= 30		--20	[25]
+	MechJetpackMaxSpeed							= 40		--20	[25]
+	MechJetpackMaxUpSpeed						= 40		--20	[25]
 	MechJetpackUpForce							= 125		--100	[110]
 	MechJetpackIgnitionForce					= 120		--120	[110]
 	MechJetpackIgnitionTime						= 0.4		--0.4
@@ -34,7 +34,7 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 	MechTopSpeedForward							= 4			--2			(5)
 	MechTopSpeedReverse							= 15		--15  ; No effect
 	
-	DamageTechNumHitsRequired					= 20		--20
+	DamageTechNumHitsRequired					= 30		--20
 	
 --[[
 --GCVEHICLEGLOBALS Reduced Fuel rates for vehicles

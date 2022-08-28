@@ -1,5 +1,5 @@
 ModName = "PTSd Tech + Upgrade + Recipe + Blueprint cost Rebalance"
-GameVersion = "3_99"
+GameVersion = "3_99.1"
 --Currently balancing around Survival Mode
 
 --Procedural Tech (Upgrades) multipliers to the "BaseValue" cost
@@ -38,7 +38,7 @@ LargePlanterBlueprintMult	=		3			--Multiplier applied to default cost of 10 Salv
 CookingAndLivestockMult	=			3			--Multiplier applied to default cost of 10 Salvaged Data
 SimpleMachineMult	=				5			--Multiplier applied to default cost of 1 Salvaged Data
 MachineMult	=						3			--Multiplier applied to default cost of 10 Salvaged Data	(Alternative Landing Pad is 1 Salvaged Data, though)
-AntimatterReactorMult	=			1.5			--Multiplier applied to default cost of 20 Salvaged Data
+AntimatterReactorMult	=			2.5			--Multiplier applied to default cost of 20 Salvaged Data
 StorageContainersMult	=			1			--Multiplier applied to default cost of 5 Salvaged Data
 
 FreighterDoubleCultivationRoomMult	=	2		--Multiplier applied to default cost of 1 Salvaged Frigate Data
@@ -159,9 +159,14 @@ MatterBulk = 1							--Cargo Bulkhead		(3 Magnet in vanilla)
 MatterAug = 1							--Storage AUgmentation	(10 Wiring Loom in vanilla)
 
 --New recipe for installing Interstellar Scanner in freigther
-IntScannerWalkBrain = 1					--Walker Brain		(160 Chromatic Metal in vanilla)
+IntScannerWalkBrain = 1					--Walker Brain			(160 Chromatic Metal in vanilla)
 IntScannerHardEngine = 1				--Hardframe Engine		(70 Mag. Ferrite in vanilla)
 IntScannerWireLoom = 2					--2 Wiring Loom
+
+--New recipe for installing Minotaur AI Pilot in Exomech
+AIPilotComputer = 8						--1 Quantum Computer
+AIPilotAPU = 16							--Autonomous Positioning Unit	(1 Antimatter in vanilla)
+AIPilotLoom = 4							--1 Wiring Loom
 
 --Adds Hardframe Engine as a requirement for all Exo-Mech Hardframe upgrades
 MechPart = [[<Property value="GcTechnologyRequirement.xml">
@@ -179,6 +184,9 @@ QuadParts = [[<Property value="GcTechnologyRequirement.xml">
           </Property>
           <Property name="Amount" value="2" />
         </Property>]]
+
+--Changes base fuel usage rate for Minotaur exomech engine
+MinotaurFuelRate = 0.75					--0.5
 
 --Everything below this point doesn't need to be changed, all the values can be edited in the sections above
 
@@ -792,6 +800,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_PILOT",	"ID", "COMPUTER"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	AIPilotComputer},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_PILOT",	"ID", "ANTIMATTER"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	AIPilotAPU},
+								{"ID",	"TRA_TECH4"},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "", 
+							["REPLACE_TYPE"] 		= "",	 
+							["SPECIAL_KEY_WORDS"] = {"ID", "MECH_PILOT",	"ID", "TECH_COMP"},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Amount",	AIPilotLoom},
+							}
+						},
+						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_L_ARM"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = MechPart,
@@ -814,7 +853,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},
 							["ADD"] = MechPart,
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-						}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","MECH_ENGINE",	"StatsType","Vehicle_EngineFuelUse"},
+							["SECTION_UP"] = 1,
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Bonus",	MinotaurFuelRate},
+							}
+						},
 					}
 				},
 				--This entry intentionally left blank, to be filled in by the TechAdjustments function at the bottom of this script

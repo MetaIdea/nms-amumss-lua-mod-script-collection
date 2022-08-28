@@ -8,7 +8,6 @@ GravTime =				14400					--7200 seconds for Gravitino Ball	(2 hours)
 VenomTime =				43200					--12000 seconds for Sac Venom		(3 hours 20 min)
 NipTime =				15600					--14400 seconds for NipNip Buds		(4 hours)
 
-
 --Autonomous Mining Unit
 AMUHarvestTime =	600							--3600	(seconds)
 AMUHarvestAmount =	250							--250
@@ -18,8 +17,12 @@ AtmoHarvestTime =	600							--3600	(seconds)
 AtmoHarvestAmount =	250							--250
 
 --Oxygen Harvester
-O2HarvestTime =		480							--720	(seconds)
+O2HarvestTime =		600							--720	(seconds)
 O2HarvestAmount =	250							--250
+
+--Antimatter Reactor
+AntiMatterHarvestTime =		600					--720	(seconds)
+AntiMatterHarvestAmount =	8					-- -1	(value of "-1" results in 20 Antimatter created)
 
 --Nothing below this should need to be changed. All values can be edited in the sections above this line
 
@@ -149,6 +152,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
+				{
+					["MBIN_FILE_SOURCE"] 	= {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\ANTIMATTERHARVESTER\ENTITIES\ANTIMATTERHARVESTER.ENTITY.MBIN"},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"InventoryType", "Technology"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "", 
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"AmountEmptyTimePeriod",	AntiMatterHarvestTime},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"InventoryType", "Product"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "", 
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"AmountEmptyTimePeriod",	-1*AntiMatterHarvestTime},
+								{"MaxCapactiy",	AntiMatterHarvestAmount}
+							}
+						},
+					}
+				},
 			}
 		}
 	}
@@ -177,7 +205,7 @@ for i = 1, #GrowthChanges do
 		}
 end
 
-local ChangesToBaseObjects = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+local ChangesToBaseObjects = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
 
 for i = 1, #MaxGrowthTimes do
 	local PlantID = MaxGrowthTimes[i][1]
@@ -196,7 +224,7 @@ for i = 1, #MaxGrowthTimes do
 end
 
 for i = 1, #GrowthChanges do
-	local ChangesToGrowths = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][i+4]["EXML_CHANGE_TABLE"]
+	local ChangesToGrowths = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][i+5]["EXML_CHANGE_TABLE"]
 
 		for j = 1, #Steps do
 			Step = Steps[j]

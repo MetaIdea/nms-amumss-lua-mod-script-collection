@@ -1,5 +1,5 @@
 ModName = "PTSd Less Generous Recipes"
-GameVersion = "3_98"
+GameVersion = "3_99.1"
 Description = "Changes certain refiner recipes to remove some infinite loops and overly generous results. Also for some common resources like Carbon, Cobalt, Ferrite, Sodium, makes using the lower-tier version more efficient for duplicating, but the higher-tier version faster for duplicating. Also add recipes for refining Tritium & Di-Hydrogen from valuables, and some Nutrient Processor recipes."
 
 RecipeChanges =
@@ -67,23 +67,23 @@ RecipeChanges =
 	},
 --Adjusts several recipes that have disproportionately high yields while only costing some Oxygen or Condensed Carbon
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_88",		4,					180},				--Makes Magnetised Ferrite		x1		in	60 time
-		{
-			{"LAND1",			6},										--Requires Ferrite Dust			x1
-			{"FUEL1",			3}										--Requires Carbon				x1
-		}
-	},
-	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_89",		2,					60},				--Makes Magnetised Ferrite		x2		in	60 time
+		{"REFINERECIPE_88",		2,					120},				--Makes Magnetised Ferrite		x1		in	60 time
 		{
 			{"LAND1",			3},										--Requires Ferrite Dust			x1
-			{"FUEL2",			1}										--Requires Condensed Carbon		x1
+			{"FUEL1",			1}										--Requires Carbon				x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_90",		2,					45},				--Makes Magnetised Ferrite		x2		in	60 time
+		{"REFINERECIPE_89",		6,					270},				--Makes Magnetised Ferrite		x2		in	60 time
 		{
-			{"LAND2",			3},										--Requires Pure Ferrite			x1
+			{"LAND1",			9},										--Requires Ferrite Dust			x1
+			{"FUEL2",			2}										--Requires Condensed Carbon		x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_90",		4,					120},				--Makes Magnetised Ferrite		x2		in	60 time
+		{
+			{"LAND2",			6},										--Requires Pure Ferrite			x1
 			{"FUEL1",			3}										--Requires Carbon				x1
 		}
 	},
@@ -91,7 +91,7 @@ RecipeChanges =
 		{"REFINERECIPE_91",		2,					30},				--Makes Magnetised Ferrite		x3		in	60 time
 		{
 			{"LAND2",			3},										--Requires Pure Ferrite			x1
-			{"FUEL2",			2}										--Requires Condensed Carbon		x1
+			{"FUEL2",			1}										--Requires Condensed Carbon		x1
 		}
 	},
 	
@@ -103,10 +103,10 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_96",		2,					30},				--Makes Condensed Carbon		x6		in	90 time
+		{"REFINERECIPE_96",		6,					90},				--Makes Condensed Carbon		x6		in	90 time
 		{
-			{"FUEL2",			1},										--Requires Condensed Carbon		x1
-			{"OXYGEN",			2}										--Requires Oxygen				x2
+			{"FUEL2",			3},										--Requires Condensed Carbon		x1
+			{"OXYGEN",			4}										--Requires Oxygen				x2
 		}
 	},
 	{							--Amount per batch	--Time per batch
@@ -124,24 +124,24 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_125",	2,					30},				--Makes Chlorine				x6		in	90 time
+		{"REFINERECIPE_125",	6,					90},				--Makes Chlorine				x6		in	90 time
 		{
-			{"WATER2",			1},										--Requires Chlorine				x1
-			{"OXYGEN",			1}										--Requires Oxygen				x2
+			{"WATER2",			3},										--Requires Chlorine				x1
+			{"OXYGEN",			4}										--Requires Oxygen				x2
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_126",	3,					90},				--Makes Ionized Cobalt			x5		in	90 time
+		{"REFINERECIPE_126",	3,					90},				--Makes Ionised Cobalt			x5		in	90 time
 		{
 			{"CAVE1",			2},										--Requires Cobalt				x2
 			{"OXYGEN",			2}										--Requires Oxygen				x2
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_127",	2,					60},				--Makes Ionized Cobalt			x6		in	90 time
+		{"REFINERECIPE_127",	6,					90},				--Makes Ionised Cobalt			x6		in	90 time
 		{
-			{"CAVE2",			1},										--Requires Ionized Cobalt		x1
-			{"OXYGEN",			1}										--Requires Oxygen				x2
+			{"CAVE2",			3},										--Requires Ionised Cobalt		x1
+			{"OXYGEN",			4}										--Requires Oxygen				x2
 		}
 	},
 	{							--Amount per batch	--Time per batch
@@ -155,6 +155,63 @@ RecipeChanges =
 		{
 			{"LAND2",			2},										--Requires Pure Ferrite			x1
 			{"OXYGEN",			2}										--Requires Oxygen				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_97",		3,					270},				--Makes Sodium Nitrate			x1		in	90 time
+		{
+			{"CATALYST1",		2},										--Requires Sodium				x1
+			{"OXYGEN",			2},										--Requires Oxygen				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_98",		6,					270},				--Makes Sodium Nitrate			x2		in	90 time
+		{
+			{"CATALYST2",		3},										--Requires Sodium Nitrate		x1
+			{"OXYGEN",			4},										--Requires Oxygen				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_99",		3,					270},				--Makes Sodium Nitrate			x1		in	90 time
+		{
+			{"FUEL1",			2},										--Requires Carbon				x1
+			{"CATALYST1",		2}										--Requires Sodium				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_100",	3,					135},				--Makes Sodium Nitrate			x2		in	90 time
+		{
+			{"FUEL2",			1},										--Requires Condensed Carbon		x1
+			{"CATALYST1",		3}										--Requires Sodium				x1
+		}
+	},
+--Similar adjustments, but for getting Ionised Cobalt from Marrow Bulbs
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_140",	3,					135},				--Makes Ionised Cobalt			x2		in	90 time
+		{
+			{"PLANT_CAVE",		2},										--Requires Marrow Bulb			x1
+			{"OXYGEN",			2}										--Requires Oxyegn				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_143",	3,					120},				--Makes Ionised Cobalt			x2		in	90 time
+		{
+			{"PLANT_CAVE",		2},										--Requires Marrow Bulb			x1
+			{"ROBOT1",			2}										--Requires Pugneum				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_157",	3,					135},				--Makes Ionised Cobalt			x2		in	90 time
+		{
+			{"PLANT_CAVE",		2},										--Requires Marrow Bulb			x1
+			{"CAVE1",			2}										--Requires Cobalt				x1
+		}
+	},
+	{							--Amount per batch	--Time per batch
+		{"REFINERECIPE_159",	5,					110},				--Makes Ionised Cobalt			x2		in	90 time
+		{
+			{"PLANT_CAVE",		4},										--Requires Marrow Bulb			x1
+			{"CAVE2",			2}										--Requires Ionised Cobalt		x1
 		}
 	},
 --Nerfs some recipes for easily getting some biome-specific ores or Sodium Nitrate from various gases & Ferrites
@@ -221,6 +278,7 @@ RecipeChanges =
 			{"LAND3",			2}										--Requires Magnetised Ferrite	x1
 		}
 	},
+--Makes sure you can't make an infinite loop with Sodium/Sodium Nitrate & Marrow Bulbs
 	{							--Amount per batch	--Time per batch
 		{"REFINERECIPE_145",	2,					90},				--Makes Sodium					x2		in	90 time
 		{
