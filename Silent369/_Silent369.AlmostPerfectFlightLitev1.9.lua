@@ -1,6 +1,6 @@
-local modfilename = "_AlmostPerfectFlightLite"
+local modfilename = "AlmostPerfectFlightLite"
 local lua_author  = "Silent"
-local lua_version = "v1.8"
+local lua_version = "v1.9"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
 local description = [[
@@ -13,8 +13,8 @@ With optional settings to make flight much easier (a bit cheaty, hence optional)
 
 --|=======================================================================================--
 
-_cheatySettings = false
-_launchFuelCost = false
+_cheatySettings = true
+_launchFuelCost = true
 _shipHoverSpeed = true
 _shipStatsBonus = true
 _warpSpeedMulti = true
@@ -26,20 +26,20 @@ _boostMult = 1.25
 _boostMxSp = 2
 _speedMult = 1.75
 _thrstMult = 1.25
-_warpSMult = 1.5
+_warpSMult = 2
 
 --Handling
 _brakeMult = 0.8
-_lsptrnDmp = 1
-_min_speed = 0.01
+_lsptrnDmp = 0.1
+_min_speed = 0
 _overBreak = 0.15
-_speedFall = 0.01
-_trnStreng = 2
+_speedFall = 0
+_trnStreng = 3
 _turnBMult = 0.5
 
 --Settings
-_padTurnSp = 0.85
-_fuelMulti = 0.30 --fuel cost saving on launch
+_padTurnSp = 0.75
+_fuelMulti = 0.35 --fuel cost saving on launch
 
 --|=======================================================================================--
 
@@ -256,7 +256,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = modfilename..lua_version..".pak",
+    ["MOD_FILENAME"]            = "_"..modfilename..lua_version..".pak",
     ["LUA_AUTHOR"]              = lua_author,
     ["MOD_AUTHOR"]              = mod_author,
     ["NMS_VERSION"]             = nms_version,

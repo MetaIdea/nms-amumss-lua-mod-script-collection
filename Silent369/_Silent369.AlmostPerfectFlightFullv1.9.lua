@@ -1,11 +1,11 @@
 local modfilename = "AlmostPerfectFlightFull"
 local lua_author  = "Silent"
-local lua_version = "v1.8"
+local lua_version = "v1.9"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
 local description = [[
 Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics.
-With optional bonus/cheat settings to make flight much easier.
+With optional settings to make flight much easier (a bit cheaty, hence optional).
 ]]
 
 --Modifies:
@@ -30,16 +30,16 @@ _warpSMult = 4.2
 
 --Handling
 _brakeMult = 0.8
-_lsptrnDmp = 1
-_min_speed = 0.01
+_lsptrnDmp = 0.1
+_min_speed = 0
 _overBreak = 0.15
-_speedFall = 0.001
-_trnStreng = 2
+_speedFall = 0
+_trnStreng = 3
 _turnBMult = 0.5
 
 --Settings
-_padTurnSp = 0.85
-_fuelMulti = 0.30 --fuel cost saving on launch
+_padTurnSp = 0.75
+_fuelMulti = 0.35 --fuel cost saving on launch
 
 --|=======================================================================================--
 
@@ -47,7 +47,7 @@ TableData = TableData or {}
 
 --|=======================================================================================--
 
---| Cheat Area, Charge Rate, Regen Time Period, Miniwarp Fuel
+--| Cheat Area, Charge Rate, Regen Time Period, Miniwarp Charge/Fuel
 --|=======================================================================================--
 if _cheatySettings then
 table.insert(TableData,
