@@ -1,6 +1,6 @@
+ModName         =   "__BAAA_Winder_InterstellarHole"
 ModAuthor       =   "WinderTP"
 LuaAuthor       =   "Hypn0tick"
-ModName         =   "__BAAA_Winder_InterstellarHole"
 BaseDescription =   "Replaces current blackhole model with a somewhat more scientifically accurate one."
 GameVersion     =   "3.99"
 ModVersion      =   "2.0"

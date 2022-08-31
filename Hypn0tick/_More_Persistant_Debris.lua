@@ -12,7 +12,7 @@ DebrisMaxSpawnDistance      = "90000"
 DebrisDistanceScaleMax      = "100"
 ExplosionMaxSpawnDistance   = "100"
 PlayerEffectsNumber         = "14"
-PlayerEffectsLife           = "45"
+PlayerEffectsLife           = "9" -- Default: 45
 LaserHitEffectLife          = "0.8"
 DroneDebrisSpeed            = "60"
 DroneExplodeSpeed           = "80"
@@ -34,7 +34,7 @@ CargoShipExplosionNumber2   = "20"
 MedAsteroidExplosionNumber  = "6"
 RockDebrisNumber            = "13"
 PlantDebrisNumber           = "13"
-StormCrystalNumber          = "13"
+StormCrystalNumber          = "3"
 GroundExplodeNumber         = "10"
 ResourceExplodeNumber       = "10"
 FiendDeathNumber            = "2"
@@ -903,8 +903,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "SENTHIVEEXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
-                            ["ADD"] = EXPLOSIONTABLE_TEXT,
                             ["REMOVE"] = "LINE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id",  "SENTHIVEEXPL"},
+                            ["PRECEDING_KEY_WORDS"] = {"AkEvent"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = EXPLOSIONTABLE_TEXT,
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "SENTHIVEEXPL"},
@@ -952,9 +957,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_R_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"UseSeedValue"},
                             ["LINE_OFFSET"]         = "+1",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE","IGNORE"}
-                            },
                             ["ADD"] = SPACEEFFECTS_TEXT,
                         },
                         {
@@ -983,9 +985,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_S_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"UseSeedValue"},
                             ["LINE_OFFSET"]         = "+2",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE","IGNORE"}
-                            },
                             ["ADD"] = SPACEEFFECTS_TEXT_2,
                         },
                         {
@@ -998,11 +997,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_L_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE","IGNORE"}
-                            },
-                            ["ADD"] = SPACEEFFECTS_TEXT_3,
+                            --["ADD"] = SPACEEFFECTS_TEXT_3,
                             ["REMOVE"] = "LINE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_L_EXP"},
+                            ["PRECEDING_KEY_WORDS"] = {"AkEvent"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = SPACEEFFECTS_TEXT_3,
+                            --["REMOVE"] = "LINE",
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "ASTEROID_L_EXP"},
@@ -1038,11 +1041,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "SHIPDYING"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE","IGNORE"}
-                            },
-                            ["ADD"] = SPACEEFFECTS_TEXT_4,
                             ["REMOVE"] = "LINE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id",  "SHIPDYING"},
+                            ["PRECEDING_KEY_WORDS"] = {"AkEvent"},
+                            ["ADD_OPTION"] = {"ADDafterSECTION"},
+                            ["ADD"] = SPACEEFFECTS_TEXT_4,
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "SHIPEXPLODE"},
@@ -1058,9 +1063,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "SHIPEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"UseSeedValue"},
                             ["LINE_OFFSET"]         = "+2",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE","IGNORE"}
-                            },
                             ["ADD"] = SPACEEFFECTS_TEXT_5,
                         },
                         {
@@ -1122,11 +1124,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "DRONEDYING"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE","IGNORE"}
-                            },
-                            ["ADD"] = PLANETEFFECTS_TEXT,
                             ["REMOVE"] = "LINE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id",  "DRONEDYING"},
+                            ["PRECEDING_KEY_WORDS"] = {"AkEvent"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = PLANETEFFECTS_TEXT,
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "DRONEEXPLODE"},
@@ -1191,7 +1195,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename",  "MODELS/EFFECTS/DEBRIS/DRONE/CHASSIS_GIB.SCENE.MBIN"},
                             ["SECTION_UP"] = 1,
-                            ["REPLACE_TYPE"] = "",
+                            ["SECTION_ACTIVE"] = 1,
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"Number",    DroneChassisDebrisNumber2},
                                 {"Speed",     DroneDebrisSpeed},
@@ -1203,9 +1207,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "DRONEEXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"MODELS/EFFECTS/DEBRIS/DRONE/EYE_GIB.SCENE.MBIN"},
                             ["LINE_OFFSET"]         = "-1",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE","IGNORE"}
-                            },
                             ["ADD"] = PLANETEFFECTS_TEXT_2,
                         },
                         {
@@ -1232,11 +1233,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "WALKEREXPLODE"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE","IGNORE"}
-                            },
-                            ["ADD"] = PLANETEFFECTS_TEXT_3,
                             ["REMOVE"] = "LINE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "WALKEREXPLODE"},
+                            ["PRECEDING_KEY_WORDS"] = {"AkEvent"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = PLANETEFFECTS_TEXT_3,
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "ALIENBLOBEXPLOD"},
@@ -1347,9 +1350,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FIENDDEATH"},
                             ["PRECEDING_KEY_WORDS"] = {"Number"},
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE","IGNORE"}
-                            },
                             ["ADD"] = PLANETEFFECTS_TEXT_4,
                         },
                         {
@@ -1357,9 +1357,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SECTION_ACTIVE"] = 2,
                             ["SECTION_UP"] = 2,
                             ["LINE_OFFSET"]         = "+7",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE",  "IGNORE"}
-                            },
                             ["REMOVE"] = "LINE",
                         },
                         {
@@ -1367,9 +1364,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SECTION_ACTIVE"] = 2,
                             ["SECTION_UP"] = 2,
                             ["LINE_OFFSET"]         = "+7",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE",  "IGNORE"}
-                            },
                             ["REMOVE"] = "LINE",
                         },
                         {
@@ -1377,9 +1371,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SECTION_ACTIVE"] = 2,
                             ["SECTION_UP"] = 2,
                             ["LINE_OFFSET"]         = "+7",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE",  "IGNORE"}
-                            },
                             ["REMOVE"] = "LINE",
                         },
                         {
@@ -1387,9 +1378,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                             ["SECTION_ACTIVE"] = 2,
                             ["SECTION_UP"] = 2,
                             ["LINE_OFFSET"]         = "+7",
-                            ["VALUE_CHANGE_TABLE"] = {
-                                {"IGNORE",  "IGNORE"}
-                            },
                             ["REMOVE"] = "LINE",
                         },
                         {
@@ -1459,8 +1447,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "SENTINELARMOUR"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
-                            ["ADD"] = PLANETEFFECTS_TEXT_5,
                             ["REMOVE"] = "LINE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id",  "SENTINELARMOUR"},
+                            ["PRECEDING_KEY_WORDS"] = {"AkEvent"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = PLANETEFFECTS_TEXT_5,
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "SENTINELARMOUR"},
@@ -1471,7 +1464,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "SENTINELARMOUR"},
-                            --["VALUE_MATCH"] = "50",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"DistanceScaleMax",    DebrisDistanceScaleMax},
                                 {"MaxSpawnDistance",    DebrisMaxSpawnDistance},
@@ -1479,7 +1471,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "DRONEWALKEREXPL"},
-                            --["VALUE_MATCH"] = "50",
                             ["VALUE_CHANGE_TABLE"] = {
                                 {"Life",    DebrisLife},
                                 {"DistanceScaleMax",    DebrisDistanceScaleMax},
@@ -1489,8 +1480,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id",  "DRONEWALKEREXPL"},
                             ["PRECEDING_KEY_WORDS"] = {"Debris"},
-                            ["ADD"] = PLANETEFFECTS_TEXT_6,
                             ["REMOVE"] = "LINE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id",  "DRONEWALKEREXPL"},
+                            ["PRECEDING_KEY_WORDS"] = {"AkEvent"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = PLANETEFFECTS_TEXT_6,
                         },
                     }
                 },
