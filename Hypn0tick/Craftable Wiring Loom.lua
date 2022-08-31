@@ -4,8 +4,8 @@ LuaAuthor       =   "Hypn0tick"
 BaseDescription =   "Adds an unlockable Wiring Loom blueprint which can then be crafted like any other product."
 GameVersion     =   "3.99"
 
-WLoomIngredient1		=	"COMPUTER"	-- COMPUTER = Quantum Computer
-WLoomIngredient1Quantity	=	"1"
+WLoomIngredient1		=	"MICROCHIP"	-- COMPUTER = Quantum Computer
+WLoomIngredient1Quantity	=	"5"
 WLoomIngredient2		=	"FARMPROD6"	-- FARMPROD6 = Unstable Gel
 WLoomIngredient2Quantity	=	"1"
 WLoomIngredient3		=	"EX_YELLOW"	-- EX_YELLOW = Activated Copper
