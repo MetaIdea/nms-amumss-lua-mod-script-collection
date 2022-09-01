@@ -830,6 +830,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Amount",	AIPilotLoom},
 							}
 						},
+						{	--Removes Pugenum / Life Support gel from these recipes so that they still have a total of 3 ingredients
+							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_L_ARM",		"ID","ROBOT1"},
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_R_ARM",		"ID","ROBOT1"},
+							["REMOVE"] = "SECTION",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_HEAD",		"ID","PRODFUEL2"},
+							["REMOVE"] = "SECTION",
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_SENT_L_ARM"},
 							["PRECEDING_KEY_WORDS"] = {"GcTechnologyRequirement.xml"},

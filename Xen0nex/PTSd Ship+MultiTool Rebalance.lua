@@ -60,7 +60,7 @@ ShipStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				3,		3,		3,		2},			--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%
 			{"SHIP_SHIELD",				6,		6,		6,		4.5},		--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%
-			{"SHIP_HYPERDRIVE",			3,		3,		3,		2},			--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%		"Default" Hyperdrive range is 100ly
+			{"SHIP_HYPERDRIVE",			4,		4,		4,		3},			--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%		"Default" Hyperdrive range is 100ly
 		}
 	},
 	{
@@ -80,7 +80,7 @@ ShipStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		0,			0-5,		5-10,		10-20	%
 			{"SHIP_SHIELD",				3.5,	3.5,	3.5,	3.5},		--			+		12-20,		25-35,		40-50,		65-85	%
-			{"SHIP_HYPERDRIVE",			1,		1,		1,		1}			--			+		0-5,		5-10,		15-25,		30-35	%
+			{"SHIP_HYPERDRIVE",			1.5,	1.5,	1.5,	1.5}		--			+		0-5,		5-10,		15-25,		30-35	%
 		}
 	},
 	{
@@ -90,7 +90,7 @@ ShipStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		0,			0,			0,			0		%
 			{"SHIP_SHIELD",				4,		4,		4,		4},			--			+		0,			0-8,		10-15,		20-25	%
-			{"SHIP_HYPERDRIVE",			1.5,	1.5,	2.1,	1.9}		--			+		7-15,		20-30,		35-45,		60-80	%				(up to ~4,200 ly maxed out?)
+			{"SHIP_HYPERDRIVE",			3.15,	3.15,	4.4,	4}			--			+		7-15,		20-30,		35-45,		60-80	%				(up to ~4,200 ly maxed out?)
 		}
 	},
 	{
@@ -100,7 +100,7 @@ ShipStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		35-50,		35-50,		35-50,		35-50	%
 			{"SHIP_SHIELD",				2.5,	2.5,	2.5,	2.5},		--			+		55-60,		55-60,		55-60,		55-60	%
-			{"SHIP_HYPERDRIVE",			1,		1,		1,		1}			--			+		50-65,		50-65,		50-65,		50-65	%
+			{"SHIP_HYPERDRIVE",			1.5,	1.5,	1.5,	1.5}		--			+		50-65,		50-65,		50-65,		50-65	%
 		}
 	},
 	{
@@ -110,7 +110,7 @@ ShipStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1.4,	1.4,	1.4,	1.4},		--			+		5-10,		15-30,		30-40,		40-50	%
 			{"SHIP_SHIELD",				2.2,	2.2,	2.2,	2.2},		--			+		5-10,		5-20,		15-25,		15-35	%
-			{"SHIP_HYPERDRIVE",			1.3,	1.3,	1.3,	1.3}		--			+		5-10,		10-20,		20-30,		25-35	%
+			{"SHIP_HYPERDRIVE",			1.2,	1.2,	1.2,	1.2}		--			+		5-10,		10-20,		20-30,		25-35	%
 		}
 	},
 	{
@@ -118,7 +118,7 @@ ShipStatChanges	=
 			"Freighter"					
 		},
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
-			{"FREI_HYPERDRIVE",			2.4,	3.2,	1.6,	1.6},		--			+		7-15,		10-19,		40-60,		60-80	%		"Default" Hyperdrive range is 100ly		(up to ~6,500 ly maxed out?)
+			{"FREI_HYPERDRIVE",			3.3,	4.4,	2.2,	2.2},		--			+		7-15,		10-19,		40-60,		60-80	%		"Default" Hyperdrive range is 100ly		(up to ~6,500 ly maxed out?)
 			{"FREI_FLEET",				0.75,	0.75,	0.75,	0.75}		--			+		1-10,		10-20,		20-40,		40-60	%		Fleet Coordination base amount maybe is 25??? 15??? Final stat on fresh freighters seems to range from ~20- ~31, but with the yellow "bonus" gauge about as long as the white part...
 		}
 	},
@@ -133,7 +133,7 @@ LivingShipStatChanges =
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1.1,	1.1,	1.1,	1.1},		--			+		N/A,		N/A,		N/A,		35-50	%
 			{"SHIP_SHIELD",				2,		2,		2,		2},			--			+		N/A,		N/A,		N/A,		10-25	%
-			{"SHIP_HYPERDRIVE",			1.4,	1.4,	1.4,	1.4}		--			+		N/A,		N/A,		N/A,		50-65	%
+			{"SHIP_HYPERDRIVE",			3.15,	3.15,	3.15,	3.15}		--			+		N/A,		N/A,		N/A,		50-65	%
 		}
 	}
 }
