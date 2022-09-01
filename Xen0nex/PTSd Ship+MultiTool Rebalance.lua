@@ -60,7 +60,7 @@ ShipStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				3,		3,		3,		2},			--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%
 			{"SHIP_SHIELD",				6,		6,		6,		4.5},		--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%
-			{"SHIP_HYPERDRIVE",			4,		4,		4,		3},			--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%		"Default" Hyperdrive range is 100ly
+			{"SHIP_HYPERDRIVE",			8,		8,		8,		5.5},		--			+		0[0.5-2.5],	0-5[2.5-5],	5-10,		15-20	%		"Default" Hyperdrive range is 100ly
 		}
 	},
 	{
@@ -80,7 +80,7 @@ ShipStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		0,			0-5,		5-10,		10-20	%
 			{"SHIP_SHIELD",				3.5,	3.5,	3.5,	3.5},		--			+		12-20,		25-35,		40-50,		65-85	%
-			{"SHIP_HYPERDRIVE",			1.5,	1.5,	1.5,	1.5}		--			+		0-5,		5-10,		15-25,		30-35	%
+			{"SHIP_HYPERDRIVE",			1.9,	1.9,	1.9,	1.9}		--			+		0-5,		5-10,		15-25,		30-35	%
 		}
 	},
 	{
@@ -100,7 +100,7 @@ ShipStatChanges	=
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1,		1,		1,		1},			--			+		35-50,		35-50,		35-50,		35-50	%
 			{"SHIP_SHIELD",				2.5,	2.5,	2.5,	2.5},		--			+		55-60,		55-60,		55-60,		55-60	%
-			{"SHIP_HYPERDRIVE",			1.5,	1.5,	1.5,	1.5}		--			+		50-65,		50-65,		50-65,		50-65	%
+			{"SHIP_HYPERDRIVE",			2.5,	2.5,	2.5,	2.5}		--			+		50-65,		50-65,		50-65,		50-65	%
 		}
 	},
 	{
@@ -133,7 +133,7 @@ LivingShipStatChanges =
 		{--Multipliers for stats at		C,		B,		A,		S	class	(Vanilla bonus at	C,			B,			A,			S	class)
 			{"SHIP_DAMAGE",				1.1,	1.1,	1.1,	1.1},		--			+		N/A,		N/A,		N/A,		35-50	%
 			{"SHIP_SHIELD",				2,		2,		2,		2},			--			+		N/A,		N/A,		N/A,		10-25	%
-			{"SHIP_HYPERDRIVE",			3.15,	3.15,	3.15,	3.15}		--			+		N/A,		N/A,		N/A,		50-65	%
+			{"SHIP_HYPERDRIVE",			3.9,	3.9,	3.9,	3.9}		--			+		N/A,		N/A,		N/A,		50-65	%
 		}
 	}
 }
