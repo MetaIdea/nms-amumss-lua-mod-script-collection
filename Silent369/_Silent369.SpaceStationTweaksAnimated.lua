@@ -1,9 +1,12 @@
 local modfilename = "SpaceStationTweaks"
 local lua_author  = "Silent"
-local lua_version = "v1.2"
+local lua_version = "v1.3"
 local mod_author  = "Silent369"
 local nms_version = "3.9x"
-local description = "Beautify Landing Pads at Space Stations."
+local description = [[
+Beautify Landing Pads at the various Space Stations within the game.
+Also includes subtle animations to some of the pad glowing textures.
+]]
 
 --Created:
 --MATERIALS\PAD_LIGHT.MATERIAL.MBIN
@@ -17,6 +20,7 @@ local description = "Beautify Landing Pads at Space Stations."
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\ANIMS\LANDINGPAD_OPEN.ANIM.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\LEFTSECTIONTRIGGER.ENTITY.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\RIGHTSECTIONTRIGGER.ENTITY.MBIN
+--MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\SPACESTATIONEXTERIOR.ENTITY.MBIN
 
 --Modifies
 --TEXTURES\SPACE\SPACESTATION\SSRFLOOR.MASKS.DDS
@@ -24,30 +28,127 @@ local description = "Beautify Landing Pads at Space Stations."
 --TEXTURES\SPACE\SPACESTATION\STATIONLANESABAN.DDS
 --TEXTURES\SPACE\SPACESTATION\INTERIOR\METALHORIZONTALPATTERN.DDS
 
-_LightIntensitySpt = "29500.000000"
-_LightScalesMulti  = 1.6  --Pad Light Adjustment
-_PadsAdjustAnimate = 0.7  --Pad Animation Height
-_LocatorAdjPirates = 0.8  --Pad Locator Adjust (Must be 1 increment higher than _PadsAdjustAnimate value)
-_LocatorAdjStation = 0.8  --Pad Locator Adjust (Must be 1 increment higher than _PadsAdjustAnimate value)
+_LightIntensitySpt = "35000.000000"
+_LightVolumetricSp = "0.000000"
+_LightScalesMulti  = 0.6  --Pad Light Spot Width
+_LightHeightMulti  = 1.8  --Pad Light Spot Height
+_PadsAdjustAnimate = 0.6  --Pad Animation Height
+_LocatorAdjPirates = 0.7  --Pad Locator Adjust (Must be +1 increment more than _PadsAdjustAnimate value)
+_LocatorAdjStation = 0.7  --Pad Locator Adjust (Must be +1 increment more than _PadsAdjustAnimate value)
 
 _RedS = 0.8
-_GrnS = 0.3
-_BluS = 0.1
-_AlpS = 0.5
+_GrnS = 0.2
+_BluS = 0
+_AlpS = 0.8
 
 _RedP = 0.8
-_GrnP = 0.3
-_BluP = 0.1
-_AlpP = 0.5
+_GrnP = 0.1
+_BluP = 0
+_AlpP = 0.8
 
 _LodDistances =
 [[
   <Property name="LodDistances">
-    <Property value="50" />
-    <Property value="100" />
+    <Property value="75" />
+    <Property value="150" />
     <Property value="300" />
-    <Property value="500" />
-    <Property value="800" />
+    <Property value="600" />
+    <Property value="900" />
+  </Property>
+]]
+
+_MaterialFlags =
+[[
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F07_UNLIT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F09_TRANSPARENT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F10_NORECEIVESHADOW" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F14_UVSCROLL" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F34_GLOW" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F27_VBTANGENT" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F29_VBCOLOUR" />
+    </Property>
+]]
+
+_gUVScrollStepS =
+[[
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gUVScrollStepVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="-0.3" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0.3" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+]]
+
+_gUVScrollStepP =
+[[
+    <Property value="TkMaterialUniform.xml">
+      <Property name="Name" value="gUVScrollStepVec4" />
+      <Property name="Values" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="-0.03" />
+        <Property name="z" value="0.03" />
+        <Property name="t" value="0" />
+      </Property>
+      <Property name="ExtendedValues" />
+    </Property>
+]]
+
+_gDiffuseMapS =
+[[
+  <Property name="Samplers">
+    <Property value="TkMaterialSampler.xml">
+      <Property name="Name" value="gDiffuseMap" />
+      <Property name="Map" value="TEXTURES/SPACE/SPACESTATION/PIRATES/PANNINGCIRCUIT2.DDS" />
+      <Property name="IsCube" value="False" />
+      <Property name="UseCompression" value="True" />
+      <Property name="UseMipMaps" value="True" />
+      <Property name="IsSRGB" value="True" />
+      <Property name="MaterialAlternativeId" value="" />
+      <Property name="TextureAddressMode" value="Wrap" />
+      <Property name="TextureFilterMode" value="Trilinear" />
+      <Property name="Anisotropy" value="0" />
+    </Property>
+  </Property>
+]]
+
+_gDiffuseMapP =
+[[
+  <Property name="Samplers">
+    <Property value="TkMaterialSampler.xml">
+      <Property name="Name" value="gDiffuseMap" />
+      <Property name="Map" value="TEXTURES/SPACE/SPACESTATION/PIRATES/PANNINGCIRCUIT.DDS" />
+      <Property name="IsCube" value="False" />
+      <Property name="UseCompression" value="True" />
+      <Property name="UseMipMaps" value="True" />
+      <Property name="IsSRGB" value="True" />
+      <Property name="MaterialAlternativeId" value="" />
+      <Property name="TextureAddressMode" value="Wrap" />
+      <Property name="TextureFilterMode" value="Trilinear" />
+      <Property name="Anisotropy" value="0" />
+    </Property>
   </Property>
 ]]
 
@@ -143,6 +244,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
+                            ["PRECEDING_KEY_WORDS"] = {"TkMaterialFlags.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["REMOVE"]              = "SECTION"
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Flags"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = _MaterialFlags,
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "gMaterialColourVec4"},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
@@ -154,19 +265,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gCustomParams01Vec4"},
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"x",                 "1"},
-                                {"y",                 "1"},
-                                {"z",                 "0"},
-                                {"t",              "0.07"},
-                            }
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gMaterialSFXColVec4"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = _gUVScrollStepS,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ShaderMillDataHash", "0"},
+                            ["LINE_OFFSET"]         = "-1",
+                            ["REMOVE"]              = "LINE",
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Uniforms"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = _gDiffuseMapS,
                         },
                     }
                 },
-                {   --Insert Glow Material
+                {   --Insert Orange Glow Material
                     ["MBIN_FILE_SOURCE"]    =
                     {
                         "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN",
@@ -178,9 +293,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"ScaleX",         "0.85"},
-                                {"ScaleY",         "0.85"},
-                                {"ScaleZ",         "0.85"},
+                                {"ScaleX",         "0.95"},
+                                {"ScaleY",         "0.95"},
+                                {"ScaleZ",         "0.95"},
                             }
                         },
                         {
@@ -240,6 +355,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"]  = {"Type", "LIGHT", "Name", "VOLUMETRIC"},
+                            ["REPLACE_TYPE"]       = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value",          _LightVolumetricSp}, --0.000000
+                            }
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"]  = {"Type", "LIGHT", "Name", "COL_R"},
                             ["REPLACE_TYPE"]       = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
@@ -270,7 +393,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TransY",         _LightScalesMulti},
+                                {"TransY",         _LightHeightMulti},
                                 {"ScaleX",         _LightScalesMulti},
                                 {"ScaleY",         _LightScalesMulti},
                                 {"ScaleZ",         _LightScalesMulti},
@@ -283,7 +406,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     --| Create New Glow Material (Pirate Station)
                     --|----------------------------------------------------------------------------------------
 
-                {   --Create Glow Material
+                {   --Create Red Glow Material
                     ["MBIN_FILE_SOURCE"] =
                     {
                         {
@@ -293,10 +416,26 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
-                {   --Edit Glow Material
+                {   --Edit Red Glow Material
                     ["MBIN_FILE_SOURCE"]    = {"MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN\GLOW_RED_MAT.MATERIAL.MBIN",},
                     ["EXML_CHANGE_TABLE"]   =
                     {
+                        {
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Class",          "GlowTranslucent"}, --Original "Glow"
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TkMaterialFlags.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["REMOVE"]              = "SECTION"
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Flags"},
+                            ["LINE_OFFSET"]         = "+0",
+                            ["ADD"]                 = _MaterialFlags,
+                        },
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"Name", "gMaterialColourVec4"},
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
@@ -309,19 +448,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"]  = {"Name", "gCustomParams01Vec4"},
-                            ["INTEGER_TO_FLOAT"]   = "FORCE",
-                            ["VALUE_CHANGE_TABLE"] =
-                            {
-                                {"x",                "1"},
-                                {"y",                "1"},
-                                {"z",                "0"},
-                                {"t",             "0.07"},
-                            }
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gMaterialSFXColVec4"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = _gUVScrollStepP,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ShaderMillDataHash", "0"},
+                            ["LINE_OFFSET"]         = "-1",
+                            ["REMOVE"]              = "LINE",
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Uniforms"},
+                            ["ADD_OPTION"]          = "ADDafterSECTION",
+                            ["ADD"]                 = _gDiffuseMapP,
                         },
                     }
                 },
-                {   --Insert Glow Material
+                {   --Insert Red Glow Material
                     ["MBIN_FILE_SOURCE"]    =
                     {
                         "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPADABAN.SCENE.MBIN",
@@ -435,7 +578,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"TransY",          _LightScalesMulti},
+                                {"TransY",          _LightHeightMulti},
                                 {"ScaleX",          _LightScalesMulti},
                                 {"ScaleY",          _LightScalesMulti},
                                 {"ScaleZ",          _LightScalesMulti},
@@ -498,7 +641,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                           ["PRECEDING_KEY_WORDS"] = {"Components"},
                           ["ADD_OPTION"]          = "ADDafterSECTION",
-                          ["ADD"]                 = _LodDistances
+                          ["ADD"]                 = _LodDistances,
                         }
                     }
                 },
@@ -524,7 +667,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                           ["PRECEDING_KEY_WORDS"] = {"Components"},
                           ["ADD_OPTION"]          = "ADDafterSECTION",
-                          ["ADD"]                 = _LodDistances
+                          ["ADD"]                 = _LodDistances,
                         }
                     }
                 },
