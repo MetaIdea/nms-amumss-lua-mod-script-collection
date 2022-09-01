@@ -190,7 +190,7 @@ RecipeChanges =
 		{"REFINERECIPE_140",	3,					135},				--Makes Ionised Cobalt			x2		in	90 time
 		{
 			{"PLANT_CAVE",		2},										--Requires Marrow Bulb			x1
-			{"OXYGEN",			2}										--Requires Oxyegn				x1
+			{"OXYGEN",			2}										--Requires Oxygen				x1
 		}
 	},
 	{							--Amount per batch	--Time per batch
@@ -335,7 +335,7 @@ RecipeChanges =
 		}
 	},
 	{							--Amount per batch	--Time per batch
-		{"REFINERECIPE_5",		100	,				60},				--Makes Sodium Nitrate			x50			in	60 time
+		{"REFINERECIPE_5",		75	,				90},				--Makes Sodium Nitrate			x50			in	60 time
 		{
 			{"VENTGEM",			1}										--Requires Crystal Sulphide		x1
 		}
@@ -412,7 +412,7 @@ RecipeChanges =
 	{							--Amount per batch	--Time per batch
 		{"RECIPE_577",			1,					5},					--Makes Creature Pellets		x1		in	5 time
 		{
-			{"FUEL1",			25}										--Requires Carbon				x1
+			{"FUEL1",			20}										--Requires Carbon				x1
 		}
 	},
 --Reduces the nanite yield of refining Tainted Metal proportionally to balance out the increased reward of Tainted metal
@@ -565,9 +565,6 @@ NewRecipe2 =
         </Property>
       </Property>
     </Property>]]
---Albumen Pearl =			33,600			stack 10
---Gravitino Ball =			63,195			stack 5
---Sac Venom =				96,000			stack 5
 
 --Adds Recipe for refining Navigation Data into 10 Nanites
 NewRecipe3 = 

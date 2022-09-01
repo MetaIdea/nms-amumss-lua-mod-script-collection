@@ -1,6 +1,9 @@
 ModName = "PTSd Expensive Pilots + Broadcast Receivers"
-GameVersion = "3_98"
+GameVersion = "3_99.1"
 Description = "Makes Emergency Broadcast Receivers for finding Derelict Freighters start out a little more expensive and continue increasing in price up until the eleventh daily purchase, instead of stopping at the fourth. Also more expensive Pilot slots."
+
+--This is the price paid in Nanites during certain dialog choices. Mostly used for asking Travellers for directions to a grave to get portal glyphs, but is alaso rarely used in certain alien NPC dialog choices
+MedNaniteCost =			500					--100
 
 --Receiver prices reset each day
 FirstReceiverCost = 	8000000				--5000000
@@ -51,6 +54,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\COSTTABLE.MBIN"},
 		["EXML_CHANGE_TABLE"] 	= 
 		{
+			{
+				["SPECIAL_KEY_WORDS"] = {"Id","TECHFRAG_MD"},
+				["REPLACE_TYPE"] = "",
+				["VALUE_CHANGE_TABLE"] 	= 
+				{
+					{"Cost", MedNaniteCost},
+				}
+			},
 			{
 				["SPECIAL_KEY_WORDS"] = {"Id", "C_ABAND_START"},
 				["PRECEDING_KEY_WORDS"] = {"Costs"},

@@ -68,7 +68,7 @@ ProductSaleChanges =
 	{"NEWPROD11_NAME",	4.0},						--5,800			Vortex Cube
 	{"NEWPROD13_NAME",	0.40379},					--42,130		Gravitino Ball		(2 hr grow time)		(In game price is 40024? some kind of global multiplier of 0.95 on item sell / value prices?)
 	{"UI_CLAMPEARL_NAME",	9.0},					--5,050			Living Pearl		(Refines to 100 Gold = 35,300u vanilla)
-	{"UI_VENTGEM_NAME",	7.0},						--7,800			Crystal Sulphide
+	{"UI_VENTGEM_NAME",	5.0},						--7,800			Crystal Sulphide
 	{"UI_EYEBALL_NAME",	2.5},						--60,000		Hypnotic Eye
 	
 	{"NEWPROD3_NAME",	10.0},						--13,063		KORVAXCUBE
