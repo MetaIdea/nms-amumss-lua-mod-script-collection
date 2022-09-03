@@ -21,6 +21,21 @@ Languages =
 
 SubstanceOrProduct = { ["Substance"] = "Substance", ["Product"] =  "Product"}
 
+-- Adjust this stuff to change how all of the extractors work --
+
+-- TLDR: --
+-- Speed is in SECONDS and MUST be a negative value, THE LOWER THE VALUE, THE FASTER THE EXTRACTOR FILLS
+--Storage is self explanatory lol
+
+ExtrSpeed = -3660 -- 1hr
+ExtrCap = 9999 -- max cap
+
+-- Extr Speed is calculated as a countdown, the lower the countdown value, the faster the extractor fills up. Higher Capacity + Faster ExtrSpeed = Higher Yields.
+-- ExtrSpeed Default is -79200, or 22 hrs. I currently have it set to -3600, which is 1 hr
+-- ExtrCap Default is 350, I set it to 9999.
+-- You can adjust this stuff to suit your needs, just be aware that making the extractors too fast/too slow may break immersion
+
+
 AddNewExtrRooms =
 {
     {
@@ -302,16 +317,17 @@ AddNewPDEBL =
 -------------------------------		CODE LOGIC STARTS HERE, NO TOUCHY UNLESS YOU WANNA BREAKY		------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ModName 						= "NMS Moar Stellar Extractors"
+ModName 						= "NMS Moar Stellar Extractors "
 Author								= "EchoTree "
 LuaAuthor							= "EchoTree & Jackty89"
 ModDescription				=	"Adds 4 new Stellar Extractor rooms to the game. Adds 20 New Files, Modifies METADATA/REALITY DEFAULTSAVEDATA.MBIN, DEFAULTSAVEDATACREATIVE.MBIN, /TABLES BASEBUILDINGOBJECTSTABLE.MBIN, BASEBUILDINGPARTSTABLE.MBIN, BASEBUILDINGPARTSNAVDATATABLE.MBIN, NMS_REALITY_GCPRODUCTTABLE.MBIN, and all of the PLACEMENTDATA.ENTITY.MBINS for the Industrial Rooms."
-GameVersion					=	"3.99.1.1"
+GameVersion					=	"v3.99.1"
+Build									= ".2"
 CustomLanguageTag		= "NMSMSE"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"] 				= Author..ModName..".pak",
+	["MOD_FILENAME"] 				= Author..ModName..GameVersion..Build..".pak",
 	["MOD_DESCRIPTION"]      = ModDescription.."Compatible with NMS"..GameVersion,
 	["MOD_AUTHOR"]				= Author,
 	["LUA_AUTHOR"]					= LuaAuthor,
@@ -441,36 +457,44 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"ROCKETSUB"}
-							}
+								{"Id",				"ROCKETSUB"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"ASTEROID1"}
-							}
+								{"Id",				"ASTEROID1"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"ASTEROID2"}
-							}
+								{"Id",				"ASTEROID2"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"ASTEROID3"}
-							}
+								{"Id", "ASTEROID3"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Description",				"UI_FRE_EMEXTR_DESC"}
-							}
+								{"Description",				"UI_FRE_ROOM_EMEXTR_DESC"}
+							},
 						},
 					}
 				},
@@ -548,36 +572,44 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"OXYGEN"}
-							}
+								{"Id",				"OXYGEN"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"FUEL1"}
-							}
+								{"Id",				"FUEL1"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"TOXIC1"}
-							}
+								{"Id",				"TOXIC1"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"LAUNCHSUB"}
-							}
+								{"Id",				"LAUNCHSUB"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Description",				"UI_FRE_GEXTR_DESC"}
-							}
+								{"Description",				"UI_FRE_ROOM_GEXTR_DESC"}
+							},
 						},
 					}
 				},
@@ -655,36 +687,44 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"CATALYST1"}
-							}
+								{"Id",				"CATALYST1"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"LAND2"}
-							}
+								{"Id",				"LAND2"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"WATER1"}
-							}
+								{"Id", "WATER1"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed},
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"CAVE1"}
-							}
+								{"Id",				"CAVE1"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}								
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Description",				"UI_FRE_MEXTR_DESC"}
-							}
+								{"Description",				"UI_FRE_ROOM_MEXTR_DESC"}
+							},
 						},
 					}
 				},
@@ -762,79 +802,125 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","STELLAR2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"YELLOW2"}
-							}
+								{"Id",				"YELLOW2"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"RED2"}
-							}
+								{"Id",				"RED2"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"GREEN2"}
-							}
+								{"Id",				"GREEN2"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Id",				"BLUE2"}
-							}
+								{"Id",				"BLUE2"},
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Description","UI_FRE_EXTR_DESC",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Description",				"UI_FRE_SMEXTR_DESC"}
-							}
+								{"Description",				"UI_FRE_ROOM_SMEXTR_DESC"}
+							},
 						},
+					}
+				},
+				{	-- 																																								EXTRACTORTERMINAL.ENTITY.MBIN										25																									--
+					["MBIN_FILE_SOURCE"] =	{"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0\ENTITIES\EXTRACTORTERMINAL.ENTITY.MBIN"},
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+						    ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" ,},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod",				ExtrSpeed}
+							},
+						},											
+						{
+						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod",				 ExtrSpeed}
+							},
+						},
+						{
+						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod", 				ExtrSpeed}
+							},
+						},
+						{
+						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxCapactiy",				ExtrCap},
+								{"AmountEmptyTimePeriod",				ExtrSpeed}
+							},
+						},					
 					}
 				},
 				
 				--																																										METADATA/REALITY/TABLES																																							--
 				
-				{	--																																								BASEBUILDING OBJECSTS TABLE													25																									--
+				{	--																																								BASEBUILDING OBJECSTS TABLE													26																									--
 					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
 				},
-				{	--																																								BASEBUILDING PARTS TABLE															26																									--
+				{	--																																								BASEBUILDING PARTS TABLE															27																									--
 					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/BASEBUILDINGPARTSTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
 				},
-				{	--																																						BASEBUILDINGPARTS NAV DATA TABLE												27																									--
+				{	--																																						BASEBUILDINGPARTS NAV DATA TABLE												28																									--
 					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/BASEBUILDINGPARTSNAVDATATABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
 				},
-				{	--																																											PRODUCT TABLE																	28																									--
+				{	--																																											PRODUCT TABLE																	29																									--
 					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
 				},
-                {	--																																										DEFAULT SAVEDATA																29																									--
+                {	--																																										DEFAULT SAVEDATA																30																									--
                     ["MBIN_FILE_SOURCE"] 	= "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
                 },
-                {	--																																								DEFAULT SAVEDATACREATIVE														30																									--
+                {	--																																								DEFAULT SAVEDATACREATIVE														31																									--
                     ["MBIN_FILE_SOURCE"] 	= "METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
                 },
-				{	--																																									PLACEMENT DATA EDITING														31																									--
+				{	--																																									PLACEMENT DATA EDITING														32																									--
                     ["MBIN_FILE_SOURCE"] 	= 
 					{
 						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\ROOM_EMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
@@ -861,7 +947,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                     }
                 },
-                {	--																												I DON'T KNOW WHAT THIS IS BUT MY LANGUAGE FILES WON'T WORK WITHOUT IT		32																									--
+                {	--																																						ADDING LANG REF TO DEBUGOPTIONS												33																									--
                     ["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -993,7 +1079,7 @@ function CreateKnownProduct(ProductID)
     ]]
 end
 
-local AddToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][28]["EXML_CHANGE_TABLE"]
+local AddToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][29]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewExtrRooms do
     local Requirements        = {}
     local ProductRequirements = ""
@@ -1139,7 +1225,7 @@ function CreateNewBBObjects(NewBBObjectID, NewBBObjectFileName)
     ]]
 end
 
-local AddToBBObjectsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][25]["EXML_CHANGE_TABLE"]
+local AddToBBObjectsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][26]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewBBObjects do
     local BBObjectID         				= string.upper(AddNewBBObjects[i]["BBObjectID"])
     local BBObjectFileName          = string.upper(AddNewBBObjects[i]["BBObjectFileName"])
@@ -1172,7 +1258,7 @@ function CreateNewBBParts(NewFloor0ID, NewFloor0Path)
     ]]
 end
 
-local AddToBBPartsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][26]["EXML_CHANGE_TABLE"]
+local AddToBBPartsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][27]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewBBParts do
     local Floor0ID         				= string.upper(AddNewBBParts[i]["Floor0ID"])
 	local Floor0Path					= string.upper(AddNewBBParts[i]["Floor0Path"])
@@ -1469,7 +1555,7 @@ function CreateNewBBPartsNavData(NewBBPartsNavID)
 	]]
 end
 
-local AddToBBPartsNavDataTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][27]["EXML_CHANGE_TABLE"]
+local AddToBBPartsNavDataTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][28]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewBBPartsNavData do
     local BBPartsNavID   				= string.upper(AddNewBBPartsNavData[i]["BBPartsNavID"])
 
@@ -1480,8 +1566,8 @@ for i = 1, #AddNewBBPartsNavData do
     }
 end
 
-local AddToDefaultSaveData    		  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][29]["EXML_CHANGE_TABLE"]
-local AddToDefaultSaveDataCreative    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][30]["EXML_CHANGE_TABLE"]
+local AddToDefaultSaveData    		  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][30]["EXML_CHANGE_TABLE"]
+local AddToDefaultSaveDataCreative    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
 
 function CreateNewPDEntity(NewEntityId, NewSnapPt)
     return
@@ -1497,7 +1583,7 @@ function CreateNewPDEntity(NewEntityId, NewSnapPt)
 	]]
 end
 
-local AddToPDEFront = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEFront = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][32]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewPDEFront do
     local EntityId           = (AddNewPDEFront[i]["EntityId"])
 	local SnapPt			  = (AddNewPDEFront[i]["SnapPt"])
@@ -1510,7 +1596,7 @@ for i = 1, #AddNewPDEFront do
 	}
 end
 
-local AddToPDEBack = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEBack = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][32]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewPDEBack do
     local EntityId           = (AddNewPDEBack[i]["EntityId"])
 	local SnapPt			  = (AddNewPDEBack[i]["SnapPt"])
@@ -1523,7 +1609,7 @@ for i = 1, #AddNewPDEBack do
     }
 end
 
-local AddToPDELeft = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDELeft = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][32]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewPDELeft do
     local EntityId           = (AddNewPDELeft[i]["EntityId"])
 	local SnapPt			  = (AddNewPDELeft[i]["SnapPt"])
@@ -1536,7 +1622,7 @@ for i = 1, #AddNewPDELeft do
     }
 end
 
-local AddToPDERight = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDERight = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][32]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewPDERight do
     local EntityId           = (AddNewPDERight[i]["EntityId"])
 	local SnapPt			  = (AddNewPDERight[i]["SnapPt"])
@@ -1549,7 +1635,7 @@ for i = 1, #AddNewPDERight do
     }
 end
 
-local AddToPDEFR = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEFR = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][32]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewPDEFR do
     local EntityId           = (AddNewPDEFR[i]["EntityId"])
 	local SnapPt			  = (AddNewPDEFR[i]["SnapPt"])
@@ -1562,7 +1648,7 @@ for i = 1, #AddNewPDEFR do
     }
 end
 
-local AddToPDEFL = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEFL = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][32]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewPDEFL do
     local EntityId           = (AddNewPDEFL[i]["EntityId"])
 	local SnapPt			  = (AddNewPDEFL[i]["SnapPt"])
@@ -1575,7 +1661,7 @@ for i = 1, #AddNewPDEFL do
     }
 end
 
-local AddToPDEnBR = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEnBR = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][32]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewPDEBR do
     local EntityId           = (AddNewPDEBR[i]["EntityId"])
 	local SnapPt			  = (AddNewPDEBR[i]["SnapPt"])
@@ -1588,7 +1674,7 @@ for i = 1, #AddNewPDEBR do
     }
 end
 
-local AddToPDEBL = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEBL = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][32]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewPDEBL do
     local EntityId           = (AddNewPDEBL[i]["EntityId"])
 	local SnapPt			  = (AddNewPDEBL[i]["SnapPt"])
@@ -1652,6 +1738,7 @@ function FillCustomlangFile(Data)
 
     for i = 1, #Data do
         local ProductID = string.upper(Data[i]["ProductID"])
+		local UIDescEntries = {}
         local DescriptionEntries = {}
         local SubtitleEntries = {}
         local NameLCEntries = {}
@@ -1663,6 +1750,7 @@ function FillCustomlangFile(Data)
         local NameLCID = ProductID.."_NAME_L"
         local SubID = ProductID.."_SUB"
         local DescID = ProductID.."_DESC"
+		local UIDescID = "UI_"..ProductID.."_DESC"
 
         for j = 1, #Languages do
             local Language = Languages[j][1]
@@ -1678,13 +1766,16 @@ function FillCustomlangFile(Data)
 
             local NewDescription = Languages[j][4]
             table.insert(DescriptionEntries, NewLanguageEntry(Language, NewDescription))
+			
+			local NewUIDesc = Languages[j][2]
+			table.insert(UIDescEntries, NewLanguageEntry(Language, NewUIDesc))
         end
 
         table.insert(NewProductLangEntries, NewDescriptionText(NameLCID, table.concat(NameLCEntries)))
         table.insert(NewProductLangEntries, NewDescriptionText(NameID, table.concat(NameEntries)))
         table.insert(NewProductLangEntries, NewDescriptionText(SubID, table.concat(SubtitleEntries)))
         table.insert(NewProductLangEntries, NewDescriptionText(DescID, table.concat(DescriptionEntries)))
-
+		table.insert(NewProductLangEntries, NewDescriptionText(UIDescID, table.concat(UIDescEntries)))
     end
     return NewLanguagueFile(table.concat(NewProductLangEntries))
 end
