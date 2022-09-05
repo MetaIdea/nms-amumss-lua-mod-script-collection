@@ -6,7 +6,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '_MOD.lMonk.Manipulate Glitches.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '3.99.1',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -20,7 +20,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'CanRotate3D',	true},
 					{'CanScale',	true},
-					{'BaseBuildingDecorationType',	'SurfaceNormal'}
+					{'BaseBuildingDecorationType',	'BuildingSurfaceNormal'}
 				}
 			},
 			{
@@ -28,7 +28,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'CanRotate3D',	true},
 					{'CanScale',	true},
-					{'BaseBuildingDecorationType',	'SurfaceNormal'}
+					{'BaseBuildingDecorationType',	'BuildingSurfaceNormal'}
 				}
 			},
 			{
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'CanRotate3D',	true},
 					{'CanScale',	true},
-					{'BaseBuildingDecorationType',	'SurfaceNormal'}
+					{'BaseBuildingDecorationType',	'BuildingSurfaceNormal'}
 				}
 			},
 			{
@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'CanRotate3D',	true},
 					{'CanScale',	true},
-					{'BaseBuildingDecorationType',	'SurfaceNormal'}
+					{'BaseBuildingDecorationType',	'BuildingSurfaceNormal'}
 				}
 			},
 			{
@@ -52,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE 	= {
 					{'CanRotate3D',	true},
 					{'CanScale',	true},
-					{'BaseBuildingDecorationType',	'SurfaceNormal'}
+					{'BaseBuildingDecorationType',	'BuildingSurfaceNormal'}
 				}
 			}
 		}
