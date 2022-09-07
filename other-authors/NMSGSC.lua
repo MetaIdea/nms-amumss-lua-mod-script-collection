@@ -1,4 +1,3 @@
--- Choose one of these fe. english would be Languages[1], french Languages[2] ...
 Languages =
 {
     ["English"]               = "English",
@@ -20,10 +19,8 @@ Languages =
     ["USEnglish"]             = "USEnglish"
 }
 
--- SubstanceOrProduct[1] = Substance, ...[2] = Product
 SubstanceOrProduct = { ["Substance"] = "Substance", ["Product"] =  "Product"}
 
---Data to create new consumable product
 AddNewConsumableProducts =
 {
     {
@@ -31,7 +28,7 @@ AddNewConsumableProducts =
         ["Requirements"]        =
         {
 			{"YELLOW2",      "10", SubstanceOrProduct["Substance"]},
-            {"CREDITCARD",      "1", SubstanceOrProduct["Product"]},
+            {"CREDITCARD",      "1", SubstanceOrProduct["Substance"]},
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
@@ -47,7 +44,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"], "1,000U CREDIT ", "Galactic Standard Currency", "An Encrypted Microchip, encased in copper. The data within the Credit contains 1,000 units."}
+            {Languages["English"], "1,000U CREDIT ", "Galactic Standard Currency", "An Encrypted Microchip, encased in copper. The data within the Credit contains 1,000 units.", "Acquire Units", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 1,000 Units."}
         }
     },
 	{
@@ -71,7 +68,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"], "10,000U CREDIT", "Galactic Standard Currency", "Upgraded storage allows for the Credit to store more currency, allowing for a much higher yield when used. This Credit can store 10,000 units."}
+            {Languages["English"], "10,000U CREDIT", "Galactic Standard Currency", "Upgraded storage allows for the Credit to store more currency, allowing for a much higher yield when used. This Credit can store 10,000 units.", "Acquire Units", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 10,000 Units."}
         }
     },
 	{
@@ -95,7 +92,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"],  "100,000U CREDIT", "Galactic Standard Currency", "Improvements in storage technology allow for currency storage in the hundred thousands. This Credit can store 100,000 units."}
+            {Languages["English"],  "100,000U CREDIT", "Galactic Standard Currency", "Improvements in storage technology allow for currency storage in the hundred thousands. This Credit can store 100,000 units.", "Acquire Units", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 100,000 Units."}
         }
     },
 	{
@@ -119,7 +116,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"],  "1,000,000U CREDIT", "Galactic Standard Currency", "Improvements in storage technology allow for currency storage in the millions. This Credit can store 1,000,000 units."}
+            {Languages["English"],  "1,000,000U CREDIT", "Galactic Standard Currency", "Improvements in storage technology allow for currency storage in the millions. This Credit can store 1,000,000 units.", "Acquire Units", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 1,000,000 Units."}
         }
     },
 	{
@@ -143,7 +140,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"],  "1,000N CREDIT", "Galactic Standard Currency", "Special compression techniques, along with utilization of activated materials allows for an Encrypted Microchip to store Nanite Clusters."}
+            {Languages["English"],  "1,000N CREDIT", "Galactic Standard Currency", "Special compression techniques, along with utilization of activated materials allows for an Encrypted Microchip to store Nanite Clusters.", "Acquire Nanites", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 1,000 Nanites."}
         }
     },
 	{
@@ -167,7 +164,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"],  "10,000N CREDIT", "Galactic Standard Currency", "Special compression techniques and an increased storage capacity allows for higher storage of Nanite Clusters. This Credit can store 10,000 Nanites."}
+            {Languages["English"],  "10,000N CREDIT", "Galactic Standard Currency", "Special compression techniques and an increased storage capacity allows for higher storage of Nanite Clusters. This Credit can store 10,000 Nanites.", "Acquire Nanites", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 10,000 Nanites."}
         }
     },
 	{
@@ -191,7 +188,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"],  "100,000N CREDIT", "Galactic Standard Currency", "Special compression techniques and an increased storage capacity allows for higher storage of Nanite Clusters. This Credit can store 100,000 Nanites."}
+            {Languages["English"],  "100,000N CREDIT", "Galactic Standard Currency", "Special compression techniques and an increased storage capacity allows for higher storage of Nanite Clusters. This Credit can store 100,000 Nanites.", "Acquire Nanites", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 100,000 Nanites."}
         }
     },
 	{
@@ -215,7 +212,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"],  "1,000,000N CREDIT", "Galactic Standard Currency", "Special compression techniques and an increased storage capacity allows for higher storage of Nanite Clusters. This Credit can store 1,000,000 Nanites."}
+            {Languages["English"],  "1,000,000N CREDIT", "Galactic Standard Currency", "Special compression techniques and an increased storage capacity allows for higher storage of Nanite Clusters. This Credit can store 1,000,000 Nanites.", "Acquire Nanites", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 1,000,000 Nanites."}
         }
     },
 	{
@@ -239,7 +236,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"],  "1,000Q CREDIT", "Galactic Standard Currency", "Credits created by Polo's Quicksilver Synthesis Companion, each one yields 1,000 Quicksilver.. "}
+            {Languages["English"],  "1,000Q CREDIT", "Galactic Standard Currency", "Credits created by Polo's Quicksilver Synthesis Companion, each one yields 1,000 Quicksilver..", "Acquire Quicksilver", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 1,000 Quicksilver."}
         }
     },
 	{
@@ -263,7 +260,7 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"],  "10,000Q CREDIT", "Galactic Standard Currency", "Credits created by Polo's Quicksilver Synthesis Companion, each one yields 10,000 Quicksilver.. "}
+            {Languages["English"],  "10,000Q CREDIT", "Galactic Standard Currency", "Credits created by Polo's Quicksilver Synthesis Companion, each one yields 10,000 Quicksilver..", "Acquire Quicksilver", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 10,000 Quicksilver."}
         }
     },
 	{
@@ -287,12 +284,11 @@ AddNewConsumableProducts =
 		},
 		["Languages"] =
         {
-            {Languages["English"],  "100,000Q CREDIT", "Galactic Standard Currency", "Credits created by Polo's Quicksilver Synthesis Companion, each one yields 100,000 Quicksilver.. "}
+            {Languages["English"],  "100,000Q CREDIT", "Galactic Standard Currency", "Credits created by Polo's Quicksilver Synthesis Companion, each one yields 100,000 Quicksilver..", "Acquire Quicksilver", "Exosuit Central Processing Unit will analyze the data on the card and Credit you 100,000 Quicksilver."}
         }
     }
 }
 
---Data to create new product
 AddNewBlunitProducts =
 {
     {
@@ -417,19 +413,20 @@ AddNewQunitProducts =
 ----------------------------------------------------------------------------------------------
 -------------------------------     CODE LOGIC START      ------------------------------------
 ----------------------------------------------------------------------------------------------
-ModName                  = "NMS Galactic Standard Currency"
-Build					 = " v1.1.0"
-GameVersion				 = " v3.99"
-Author                   = "EchoTree and Jackty89"
-ModDescription           = "Adds Craftable, Tradable Consumable Currencies to NMS"
-CustomLanguageTag        = "NMSGSC"
+ModName                 				= "NMS Galactic Standard Currency"
+GameVersion							= " v3.99.1."
+Build					 						= "13"
+Author                  						= "EchoTree "
+LuaAuthor									= "Jackty89"
+ModDescription          			= "Adds Craftable, Tradable Consumable Currencies to NMS"
+CustomLanguageTag       		= "NMSGSC"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]         = ModName..GameVersion..".pak",
-    ["MOD_DESCRIPTION"]      = ModDescription..Build.."Compatible with NMS"..GameVersion,
-    ["MOD_AUTHOR"]           = Author,
-    ["ADD_FILES"]            =
+    ["MOD_FILENAME"]       		= Author..ModName..GameVersion..Build..".pak",
+    ["MOD_DESCRIPTION"]		= "Lua Written by"..LuaAuthor..ModDescription.."Compatible with NMS "..GameVersion,
+    ["MOD_AUTHOR"]          		= Author,
+    ["ADD_FILES"]           			=
     {
     },
     ["MODIFICATIONS"] 			=
@@ -460,6 +457,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
+                },				
+                {
+                    ["MBIN_FILE_SOURCE"] 	= "METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN",
+                    ["EXML_CHANGE_TABLE"] 	=
+                    {
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/DEFAULTREALITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] 	=
+                    {
+                    }
                 },
                 {
                     ["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
@@ -476,12 +485,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
-                {
-                    ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/DEFAULTREALITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
-                    {
-                    }
-                }
             }
         }
     }
@@ -598,8 +601,8 @@ function CreateNewConsumable(NewProductID, NewProductConsumeRewardID)
             <Property name="ID" value="]]..NewProductID..[[" />
             <Property name="RewardID" value="]]..NewProductConsumeRewardID..[[" />
             <Property name="TutorialRewardID" value="" />
-            <Property name="ButtonLocID" value="UI_OPEN_SENT" />
-            <Property name="ButtonSubLocID" value="UI_OPEN_SENT_SUB" />
+            <Property name="ButtonLocID" value="UI_CONSUME_]]..NewProductID..[[" />
+            <Property name="ButtonSubLocID" value="UI_CONSUME_]]..NewProductID..[[_SUB" />
             <Property name="CloseInventoryWhenUsed" value="False" />
             <Property name="AudioEventOnOpen" value="GcAudioWwiseEvents.xml">
                 <Property name="AkEvent" value="INVALID_EVENT" />
@@ -645,7 +648,7 @@ function CreateCurrecyRewardItem(PercentageChance, AmountMin, AmountMax, Currenc
     ]]
 end
 
-function CreateKnowProduct(ProductID)
+function CreateKnownProduct(ProductID)
     return [[
         <Property value="NMSString0x10.xml">
             <Property name="Value" value="]]..ProductID..[[" />
@@ -737,17 +740,16 @@ for i = 1, #AddNewBlunitProducts do
     }
 end
 
-local AddToDefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewNanitProducts do
-    local ProductID = string.upper(AddNewNanitProducts[i]["ProductID"])
+for j = 1, #AddNewNanitProducts do
+    local ProductID = string.upper(AddNewNanitProducts[j]["ProductID"])
     local ProductName         = string.upper(ProductID).."_NAME"
     local ProductNameLC       = string.upper(ProductID).."_NAME_L"
     local ProductDesc         = string.upper(ProductID).."_DESC"
     local ProductSub          = string.upper(ProductID).."_SUB"
 
-    local ProductStackSize    = AddNewNanitProducts[i]["Stacksize"]
-    local ProductValue        = AddNewNanitProducts[i]["Price"]
-    local ProductIcon         = AddNewNanitProducts[i]["NewProductIcon"]
+    local ProductStackSize    = AddNewNanitProducts[j]["Stacksize"]
+    local ProductValue        = AddNewNanitProducts[j]["Price"]
+    local ProductIcon         = AddNewNanitProducts[j]["NewProductIcon"]
 
 	local ProductRequirements = ""
 
@@ -766,17 +768,16 @@ for i = 1, #AddNewNanitProducts do
     }
 end
 
-local AddToDefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewQunitProducts do
-    local ProductID = string.upper(AddNewQunitProducts[i]["ProductID"])
+for k = 1, #AddNewQunitProducts do
+    local ProductID = string.upper(AddNewQunitProducts[k]["ProductID"])
     local ProductName         = string.upper(ProductID).."_NAME"
     local ProductNameLC       = string.upper(ProductID).."_NAME_L"
     local ProductDesc         = string.upper(ProductID).."_DESC"
     local ProductSub          = string.upper(ProductID).."_SUB"
 
-    local ProductStackSize    = AddNewQunitProducts[i]["Stacksize"]
-    local ProductValue        = AddNewQunitProducts[i]["Price"]
-    local ProductIcon         = AddNewQunitProducts[i]["NewProductIcon"]
+    local ProductStackSize    = AddNewQunitProducts[k]["Stacksize"]
+    local ProductValue        = AddNewQunitProducts[k]["Price"]
+    local ProductIcon         = AddNewQunitProducts[k]["NewProductIcon"]
 
 	local ProductRequirements = ""
 
@@ -837,12 +838,12 @@ for i = 1, #AddNewConsumableProducts do
     AddToDefaultSaveData[#AddToDefaultSaveData + 1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-        ["ADD"] = CreateKnowProduct(ProductID)
+        ["ADD"] = CreateKnownProduct(ProductID)
     }
 	AddToDefaultSaveDataCreative[#AddToDefaultSaveDataCreative + 1] =
     {
         ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-        ["ADD"] = CreateKnowProduct(ProductID)
+        ["ADD"] = CreateKnownProduct(ProductID)
     }
     --- Adds the new consumable
     AddToConsumableTable[#AddToConsumableTable + 1] =
@@ -894,6 +895,8 @@ function FillCustomlangFile(Data)
         local SubtitleEntries = {}
         local NameLCEntries = {}
         local NameEntries = {}
+		local ButtonNameEntries = {}
+		local ButtonSubEntries = {}
 
         local Languages = Data[i]["Languages"]
 
@@ -901,27 +904,43 @@ function FillCustomlangFile(Data)
         local NameLCID = ProductID.."_NAME_L"
         local SubID = ProductID.."_SUB"
         local DescID = ProductID.."_DESC"
+		local ButtonID = "UI_CONSUME_"..ProductID
+		local ButtonSubID = "UI_CONSUME_"..ProductID.."_SUB"
 
         for j = 1, #Languages do
             local Language = Languages[j][1]
 
+            local Name = string.upper(Languages[j][2])
+            table.insert(NameEntries, NewLanguageEntry(Language, Name))
+
             local NameLC = Languages[j][2]
             table.insert(NameLCEntries, NewLanguageEntry(Language, NameLC))
-
-            local Name = string.upper(NameLC)
-            table.insert(NameEntries, NewLanguageEntry(Language, Name))
 
             local NewSubTitle = Languages[j][3]
             table.insert(SubtitleEntries, NewLanguageEntry(Language, NewSubTitle))
 
             local NewDescription = Languages[j][4]
             table.insert(DescriptionEntries, NewLanguageEntry(Language, NewDescription))
+			
+			local NewButtonName = Languages[j][5]
+				print("NewButtonName = Languages[j][5] is ["..tostring(NewButtonName).."]")
+				if NewButtonName ~= nil then
+				table.insert(ButtonNameEntries, NewLanguageEntry(Language, NewButtonName))
+			end
+	
+			local NewButtonSub = Languages[j][6]
+				print("NewButtonSub = Languages[j][6] is ["..tostring(NewButtonSub).."]")
+				if NewButtonSub ~= nil then
+				table.insert(ButtonSubEntries, NewLanguageEntry(Language, NewButtonSub))
+			end
         end
 
         table.insert(NewProductLangEntries, NewDescriptionText(NameLCID, table.concat(NameLCEntries)))
         table.insert(NewProductLangEntries, NewDescriptionText(NameID, table.concat(NameEntries)))
         table.insert(NewProductLangEntries, NewDescriptionText(SubID, table.concat(SubtitleEntries)))
         table.insert(NewProductLangEntries, NewDescriptionText(DescID, table.concat(DescriptionEntries)))
+        table.insert(NewProductLangEntries, NewDescriptionText(ButtonID, table.concat(ButtonNameEntries)))
+        table.insert(NewProductLangEntries, NewDescriptionText(ButtonSubID, table.concat(ButtonSubEntries)))
 
     end
     return NewLanguagueFile(table.concat(NewProductLangEntries))
@@ -939,31 +958,31 @@ for Key , Language in pairs(Languages) do
             ["Languages"] = AddNewConsumableProducts[i]["Languages"] ,
         }
     end
-
-    for j = 1, #AddNewBlunitProducts do
+	
+	for j = 1, #AddNewBlunitProducts do
         LanguageData[#LanguageData+1] = 
         {
             ["ProductID"] = AddNewBlunitProducts[j]["ProductID"],
             ["Languages"] = AddNewBlunitProducts[j]["Languages"] ,
         }
     end
+
+	for k = 1, #AddNewNanitProducts do
+        LanguageData[#LanguageData+1] = 
+        {
+            ["ProductID"] = AddNewNanitProducts[k]["ProductID"],
+            ["Languages"] = AddNewNanitProducts[k]["Languages"] ,
+        }
+    end
 	
-	for j = 1, #AddNewNanitProducts do
+	for l = 1, #AddNewQunitProducts do
         LanguageData[#LanguageData+1] = 
         {
-            ["ProductID"] = AddNewNanitProducts[j]["ProductID"],
-            ["Languages"] = AddNewNanitProducts[j]["Languages"] ,
+            ["ProductID"] = AddNewQunitProducts[l]["ProductID"],
+            ["Languages"] = AddNewQunitProducts[l]["Languages"] ,
         }
     end
-
-    for j = 1, #AddNewQunitProducts do
-        LanguageData[#LanguageData+1] = 
-        {
-            ["ProductID"] = AddNewQunitProducts[j]["ProductID"],
-            ["Languages"] = AddNewQunitProducts[j]["Languages"] ,
-        }
-    end
-
+	
     AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
     {
         ["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Key..".EXML",
