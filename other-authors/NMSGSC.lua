@@ -32,6 +32,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.BLUNITS.DDS",
 		["RewardData"]          =
         {
@@ -56,6 +57,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.BLUNITS.DDS",
 		["RewardData"]          =
         {
@@ -80,6 +82,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.BLUNITS.DDS",
 		["RewardData"]          =
         {
@@ -104,6 +107,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.BLUNITS.DDS",
 		["RewardData"]          =
         {
@@ -128,6 +132,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.NANITEZ.DDS",
 		["RewardData"]          =
         {
@@ -152,6 +157,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.NANITEZ.DDS",
 		["RewardData"]          =
         {
@@ -176,6 +182,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.NANITEZ.DDS",
 		["RewardData"]          =
         {
@@ -200,6 +207,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.NANITEZ.DDS",
 		["RewardData"]          =
         {
@@ -224,6 +232,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.QUICKSILVER.DDS",
 		["RewardData"]          =
         {
@@ -248,6 +257,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.QUICKSILVER.DDS",
 		["RewardData"]          =
         {
@@ -272,6 +282,7 @@ AddNewConsumableProducts =
         },
         ["Stacksize"]           = "10",
 		["Price"]               = "1",
+		["Cat"]				= "None",
 		["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/CURRENCIES/CURRENCIES.QUICKSILVER.DDS",
 		["RewardData"]          =
         {
@@ -295,16 +306,18 @@ AddNewBlunitProducts =
         ["ProductID"]           = "CREDITCARD",
         ["Stacksize"]           = "25",
         ["Price"]               = "1000",
+		["Cat"]				= "None",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
-            {Languages["English"], "CREDIT CARD", "Currency Storage Device", "An advanced microchip with a super processor, designed to process and store Units."}
+            {Languages["English"], "Credit Card", "Currency Storage Device", "An advanced microchip with a super processor, designed to process and store Units."}
         }
     },
 	{
         ["ProductID"]           = "CREDITCARD1",
         ["Stacksize"]           = "25",
         ["Price"]               = "10000",
+		["Cat"]				= "None",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -315,6 +328,7 @@ AddNewBlunitProducts =
         ["ProductID"]           = "CREDITCARD2",
         ["Stacksize"]           = "25",
         ["Price"]               = "100000",
+		["Cat"]				= "None",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -325,6 +339,7 @@ AddNewBlunitProducts =
         ["ProductID"]           = "CREDITCARD3",
         ["Stacksize"]           = "25",
         ["Price"]               = "1000000",
+		["Cat"]				= "None",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -339,6 +354,7 @@ AddNewNanitProducts =
         ["ProductID"]           = "NANITCARD",
         ["Stacksize"]           = "25",
         ["Price"]               = "1000",
+		["Cat"]				= "None",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -349,6 +365,7 @@ AddNewNanitProducts =
         ["ProductID"]           = "NANITCARD1",
         ["Stacksize"]           = "25",
         ["Price"]               = "10000",
+		["Cat"]				= "None",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -359,6 +376,7 @@ AddNewNanitProducts =
         ["ProductID"]           = "NANITCARD2",
         ["Stacksize"]           = "25",
         ["Price"]               = "100000",
+		["Cat"]				= "None",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -369,6 +387,7 @@ AddNewNanitProducts =
         ["ProductID"]           = "NANITCARD3",
         ["Stacksize"]           = "25",
         ["Price"]               = "1000000",
+		["Cat"]				= "None",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -383,6 +402,7 @@ AddNewQunitProducts =
         ["ProductID"]           = "QUNITCARD",
         ["Stacksize"]           = "25",
         ["Price"]               = "1000",
+		["Cat"]				= "SpecialShop",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -393,6 +413,7 @@ AddNewQunitProducts =
         ["ProductID"]           = "QUNITCARD1",
         ["Stacksize"]           = "25",
         ["Price"]               = "10000",
+		["Cat"]				= "SpecialShop",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -402,7 +423,8 @@ AddNewQunitProducts =
 	{
         ["ProductID"]           = "QUNITCARD2",
         ["Stacksize"]           = "25",
-        ["Price"]               = "100000",
+        ["Price"]               = "100000",		
+		["Cat"]				= "SpecialShop",
         ["NewProductIcon"]      = "TEXTURES/UI/FRONTEND/ICONS/UPDATE3/FARMPROD.9.DDS",
         ["Languages"] =
         {
@@ -415,7 +437,7 @@ AddNewQunitProducts =
 ----------------------------------------------------------------------------------------------
 ModName                 				= "NMS Galactic Standard Currency"
 GameVersion							= " v3.99.1."
-Build					 						= "13"
+Build					 						= "14"
 Author                  						= "EchoTree "
 LuaAuthor									= "Jackty89"
 ModDescription          			= "Adds Craftable, Tradable Consumable Currencies to NMS"
@@ -434,43 +456,60 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
             ["MBIN_CHANGE_TABLE"] 	=
             {
-                {
+                {	--																														PRODUCT TABLE																														1																							--
                     ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
                 },
-                {
+                {	--																												CONSUMABLEITEMTABLE																												2																							--
                     ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
                 },
-                {
+                {	--																														REWARDTABLE																															3																							--
                     ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
                 },
-                {
+                {	--																												PURCHASEABLESPECIALS																												4																							--
+                    ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/PURCHASEABLESPECIALS.MBIN",
+                    ["EXML_CHANGE_TABLE"] 	=
+                    {
+                    }
+                },
+                {	--																													DEFAULTSAVEDATA																													5																							--
                     ["MBIN_FILE_SOURCE"] 	= "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
                 },				
-                {
+                {	--																											DEFAULTSAVEDATACREATIVE																											6																							--
                     ["MBIN_FILE_SOURCE"] 	= "METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN",
                     ["EXML_CHANGE_TABLE"] 	=
                     {
                     }
                 },
-                {
+                {	--																														DEFAULTREALITY																														7																							--
                     ["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/DEFAULTREALITY.MBIN",
-                    ["EXML_CHANGE_TABLE"] 	=
-                    {
-                    }
+                    ["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"TradeSettings", "GcTradeSettings.xml", "SuitTechSpecialist", "GcTradeData.xml", },
+							["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Poor",				"10"},
+								{"Average",				"25"},
+								{"Wealthy",				"50"},
+								{"Pirate",				"5"},								
+							},
+						},
+					}
                 },
-                {
+                {	--																													  GCDEBUGOPTIONS																													8																							--
                     ["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -490,7 +529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     }
 }
 
-function CreateNewProduct(NewProductID, NewProductName, NewProductNameLc, NewProductSub, NewProductDesc, NewProductStackSize, NewProductValue, NewProductIcon, NewProductRequirements)
+function CreateNewProduct(NewProductID, NewProductName, NewProductNameLc, NewProductSub, NewProductDesc, NewProductStackSize, NewProductValue, NewProductIcon, NewProductRequirements, NewProdTradeCat)
     local RequirementsString = ""
     if NewProductRequirements ~= "" then
         RequirementsString = [[<Property name="Requirements">]]..NewProductRequirements..[[</Property>]]
@@ -521,7 +560,7 @@ function CreateNewProduct(NewProductID, NewProductName, NewProductNameLc, NewPro
                 <Property name="Filename" value="]]..NewProductIcon..[[" />
             </Property>
             <Property name="HeroIcon" value="TkTextureResource.xml">
-                <Property name="Filename" value="" />
+                <Property name="Filename" value="]]..NewProductIcon..[[" />
             </Property>
             <Property name="Colour" value="Colour.xml">
             <Property name="R" value="0.101960786" />
@@ -561,7 +600,7 @@ function CreateNewProduct(NewProductID, NewProductName, NewProductNameLc, NewPro
             <Property name="NormalisedValueOnWorld" value="0.008012757" />
             <Property name="NormalisedValueOffWorld" value="0.008012757" />
             <Property name="TradeCategory" value="GcTradeCategory.xml">
-                <Property name="TradeCategory" value="None" />
+                <Property name="TradeCategory" value="]]..NewProdTradeCat..[[" />
             </Property>
             <Property name="WikiCategory" value="Tech" />
             <Property name="IsCraftable" value="True" />
@@ -664,6 +703,17 @@ function CreateShopEntry(NewId)
     ]]
 end
 
+function CreateSpecialsShopEntry(NewSSID)
+	return
+	[[
+		<Property value="GcPurchaseableSpecial.xml">
+		  <Property name="ID" value="]]..NewSSID..[[" />
+		  <Property name="ShopNumber" value="1" />
+		  <Property name="MissionTier" value="-1" />
+		  <Property name="IsConsumable" value="True" />
+		</Property>
+	]]
+end
 ----------------------------------------------------------------------------------------------
 -------------------------------     Product creation     -------------------------------------
 ----------------------------------------------------------------------------------------------
@@ -681,6 +731,7 @@ for i = 1, #AddNewConsumableProducts do
 
     local ProductStackSize    = AddNewConsumableProducts[i]["Stacksize"]
     local ProductValue        = AddNewConsumableProducts[i]["Price"]
+	local ProdTradeCat		= AddNewConsumableProducts[i]["Cat"]
     local ProductIcon         = AddNewConsumableProducts[i]["NewProductIcon"]
 
 	local RequirementsList    = AddNewConsumableProducts[i]["Requirements"]
@@ -700,12 +751,14 @@ for i = 1, #AddNewConsumableProducts do
     AddToProductTable[#AddToProductTable + 1]  =
     {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductStackSize, ProductValue, ProductIcon, ProductRequirements)
+        ["ADD"] = CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductStackSize, ProductValue, ProductIcon, ProductRequirements, ProdTradeCat)
     }
 end
 
 -------------------------------     Non-Consumable Product   -------------------------------------
-local AddToDefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
+
+local AddToSpecialShop	= NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+local AddToDefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][7]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewBlunitProducts do
     local ProductID = string.upper(AddNewBlunitProducts[i]["ProductID"])
     local ProductName         = string.upper(ProductID).."_NAME"
@@ -715,6 +768,7 @@ for i = 1, #AddNewBlunitProducts do
 
     local ProductStackSize    = AddNewBlunitProducts[i]["Stacksize"]
     local ProductValue        = AddNewBlunitProducts[i]["Price"]
+	local ProdTradeCat		= AddNewBlunitProducts[i]["Cat"]
     local ProductIcon         = AddNewBlunitProducts[i]["NewProductIcon"]
 
 	local ProductRequirements = ""
@@ -723,7 +777,7 @@ for i = 1, #AddNewBlunitProducts do
     AddToProductTable[#AddToProductTable + 1]  =
     {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductStackSize, ProductValue, ProductIcon, ProductRequirements)
+        ["ADD"] = CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductStackSize, ProductValue, ProductIcon, ProductRequirements, ProdTradeCat)
     }
 
     -------- Adds products to store  this can be added to a seperate loop if not all products should be added------------
@@ -749,6 +803,7 @@ for j = 1, #AddNewNanitProducts do
 
     local ProductStackSize    = AddNewNanitProducts[j]["Stacksize"]
     local ProductValue        = AddNewNanitProducts[j]["Price"]
+	local ProdTradeCat		=	AddNewNanitProducts[j]["Cat"]
     local ProductIcon         = AddNewNanitProducts[j]["NewProductIcon"]
 
 	local ProductRequirements = ""
@@ -757,7 +812,7 @@ for j = 1, #AddNewNanitProducts do
     AddToProductTable[#AddToProductTable + 1]  =
     {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductStackSize, ProductValue, ProductIcon, ProductRequirements)
+        ["ADD"] = CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductStackSize, ProductValue, ProductIcon, ProductRequirements, ProdTradeCat)
     }
 
     local ShopEntry = CreateShopEntry(ProductID)
@@ -769,7 +824,7 @@ for j = 1, #AddNewNanitProducts do
 end
 
 for k = 1, #AddNewQunitProducts do
-    local ProductID = string.upper(AddNewQunitProducts[k]["ProductID"])
+    local ProductID			 = string.upper(AddNewQunitProducts[k]["ProductID"])
     local ProductName         = string.upper(ProductID).."_NAME"
     local ProductNameLC       = string.upper(ProductID).."_NAME_L"
     local ProductDesc         = string.upper(ProductID).."_DESC"
@@ -777,21 +832,28 @@ for k = 1, #AddNewQunitProducts do
 
     local ProductStackSize    = AddNewQunitProducts[k]["Stacksize"]
     local ProductValue        = AddNewQunitProducts[k]["Price"]
+	local ProdTradeCat		= AddNewQunitProducts[k]["Cat"]
     local ProductIcon         = AddNewQunitProducts[k]["NewProductIcon"]
-
+	local SSID						= string.upper(AddNewQunitProducts[k]["ProductID"])
 	local ProductRequirements = ""
 
     --adds product to product table
     AddToProductTable[#AddToProductTable + 1]  =
     {
         ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductStackSize, ProductValue, ProductIcon, ProductRequirements)
+        ["ADD"] = CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductStackSize, ProductValue, ProductIcon, ProductRequirements, ProdTradeCat)
     }
 
-    local ShopEntry = CreateShopEntry(ProductID)
+    AddToSpecialShop[#AddToSpecialShop + 1] =
+	{
+		["PRECEDING_KEY_WORDS"]	=	{"Table"},
+		["ADD"] = CreateSpecialsShopEntry(SSID)
+	}
+	
+	local ShopEntry = CreateShopEntry(ProductID)
     AddToDefaultReality[#AddToDefaultReality + 1]  =
     {
-        ["PRECEDING_KEY_WORDS"] = {"TradeSettings", "SuitTechSpecialist", "AlwaysPresentProducts"},
+        ["PRECEDING_KEY_WORDS"] = {"NeverSellableItems"},
         ["ADD"] = ShopEntry
     }
 end
@@ -803,8 +865,8 @@ end
 
 local AddToConsumableTable   		  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 local AddToRewardTable        		  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
-local AddToDefaultSaveData    		  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
-local AddToDefaultSaveDataCreative    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+local AddToDefaultSaveData    		  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+local AddToDefaultSaveDataCreative    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
 
 for i = 1, #AddNewConsumableProducts do
     local ProductID         = string.upper(AddNewConsumableProducts[i]["ProductID"])
