@@ -30,59 +30,41 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"AsteroidNoiseScale",                   "180000"},
-								{"AsteroidDetailNoiseScale",             "140"},
-								{"AsteroidNoiseMinCutoff",               "-0.3"},
-								{"AsteroidNoiseMaxCutoff",               "0.3"},
-								{"AsteroidRotateMin",                    "-0.2"},
-								{"AsteroidRotateMax",                    "0.2"},
+								{"PlanetInvalidAsteroidZone",            "40000"},
+								{"SparseAsteroidSpread",                 "-25"},
+								{"AsteroidNoiseOctaves",                 "1"},
+								{"AsteroidSpaceStationAvoidRadius",      "10000"},
+								{"AsteroidAnomalyAvoidRadius",           "10000"},
+								{"AsteroidWarpInAreaAvoidRadius",        "10000"},
 								{"AsteroidSomeRaresOdds",                "0.52"},
-								{"AsteroidFadeRangeMin",                 "800"},
-								{"AsteroidFadeRangeMax",                 "23000"},
-								{"AsteroidSpacing",                      "1800"},
-								{"RareAsteroidScale",                    "0.55"},
 								{"RareAsteroidMinResources",             "8"},
 								{"RareAsteroidMaxResources",             "20"},
-								{"CommonAsteroidScale",                  "0.2"},
 								{"CommonAsteroidMinResources",           "7"},
 								{"CommonAsteroidMaxResources",           "16"},
 								{"CommonAsteroidResourceFuelMultiplier", "3"},
 								{"CommonAsteroidResourceFuelOdds",       "0.75"},
 								{"RareAsteroidResourceFuelOdds",         "0.25"},
-								{"CommonAsteroidHealth",                 "160"},
-								{"LargeAsteroidSpacing",                 "16000"},
 								{"LargeAsteroidFadeTime",                "1.2"},
-								{"LargeAsteroidFadeRangeMin",            "22000"},
-								{"LargeAsteroidFadeRangeMax",            "22000"},
-								{"RingAsteroidScale",                    "0.016"},
-								{"RingAsteroidSpacing",                  "125"},
-								{"RingAsteroidFadeRangeMin",             "600"},
-								{"RingAsteroidFadeRangeMax",             "6000"},
-								--{"AsteroidMaxNumGenerates",            "120000"},
-								--{"AsteroidMaxNumGeneratesPulseJump",   "10000"},
-								{"AsteroidSpaceStationAvoidRadius",      "1500"},
-								{"AsteroidAnomalyAvoidRadius",           "1500"},
-								{"AsteroidWarpInAreaAvoidRadius",        "1500"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"AsteroidScaleVariance"},
+							["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"x", "0.85"},  
-								{"y", "1.15"}
+								{"Spacing",    "387"},
+								{"FadeRange",  "1000"},
+								{"NoiseScale", "100000"},  
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"AsteroidScaleVariance"},
+							["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData", "ScaleVariance"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"x", "0.85"},  
-								{"y", "1.15"}
+								{"y", "1.3"}
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"AsteroidNoiseRange"},
+							["PRECEDING_KEY_WORDS"] = {"CommonAsteroidData", "NoiseRange"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"x", "0.499"},  
@@ -90,35 +72,75 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidNoiseRange"},
+							["PRECEDING_KEY_WORDS"] = {"RingAsteroidData"},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"FadeRange", "1000"},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"RingAsteroidData", "ScaleVariance"},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"y", "1.3"}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData"},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"Spacing",    "3500"},
+								{"FadeRange",  "3500"},
+								{"NoiseScale", "100000"}, 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"LargeAsteroidData", "NoiseRange"},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"x", "0.495"},  
+								{"y", "0.505"}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"RareAsteroidData"},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"Spacing",    "510"},
+								{"FadeRange",  "1000"},
+								{"NoiseScale", "100000"}, 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"RareAsteroidData", "ScaleVariance"},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"y", "1.3"}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"RareAsteroidData", "NoiseRange"},
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"x", "0.499"},
+								{"y", "0.501"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeSomeRares", "Vector2f.xml",},
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["VALUE_CHANGE_TABLE"] = 
+							{
+								{"x", "0.4985"},  
+								{"y", "0.5015"}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeLotsOfRares", "Vector2f.xml",},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"x", "0.498"},  
 								{"y", "0.502"}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"RareAsteroidNoiseRangeFewRares"},
-							["VALUE_CHANGE_TABLE"] = 
-							{
-								{"x", "0.512"},  
-								{"y", "0.51"}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"RareAsteroidNoiseRangeSomeRares"},
-							["VALUE_CHANGE_TABLE"] = 
-							{
-								{"x", "0.4975"},  
-								{"y", "0.5025"}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"RareAsteroidNoiseRangeLotsOfRares"},
-							["VALUE_CHANGE_TABLE"] = 
-							{
-								{"x", "0.4975"},  
-								{"y", "0.5025"}
 							}
 						},						
 					}
