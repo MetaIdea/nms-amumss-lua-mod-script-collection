@@ -49,7 +49,7 @@ AddNewExtrRooms =
         ["Languages"] =
         {
             --					language									name											subtitle																								description					--
-            {Languages["English"], "Stellar Extractor: Exotic Materials", "Moar Stellar Extractors", "A modified variant of the standard Stellar Extractor, this Extractor Harvests Exotic materials like Gold, Silver, and Tritium from matter-dense Nebulae."}
+            {Languages["English"], "Stellar Extractor: Exotic Materials", "Moar Useful Elements", "Naturally ocurring in Stars, Helium is the product of the nuclear fusion of hydrogen atoms. New synthesis tehcnologies allow for Helium to be created in refiners."}
         }
     },
 	{
@@ -313,6 +313,49 @@ AddNewPDEBL =
     }
 }
 
+-- New PlacementData.Entity entries for Walls, Windows and Doors --
+--SnapPoint_Face
+AddNewSnapPTFace =
+{
+	{
+		["EntityId"]	=	"FRE_ROOM_EMEXTR",
+		["SnapPt"]	=	"SnapPoint_Face",
+	},
+	{
+		["EntityId"]	=	"FRE_ROOM_GEXTR",
+		["SnapPt"]	=	"SnapPoint_Face",
+	},
+	{
+		["EntityId"]	=	"FRE_ROOM_MEXTR",
+		["SnapPt"]	=	"SnapPoint_Face",
+	},
+	{
+		["EntityId"]	=	"FRE_ROOM_SMEXTR",
+		["SnapPt"]	=	"SnapPoint_Face",
+	}
+}
+
+--SnapPoint_SPIGN_Face1
+AddNewSnapPTSpignFace =
+{
+	{
+		["EntityId"]	=	"FRE_ROOM_EMEXTR",
+		["SnapPt"]	=	"SnapPoint_SPIGN_Face1",
+	},
+	{
+		["EntityId"]	=	"FRE_ROOM_GEXTR",
+		["SnapPt"]	=	"SnapPoint_SPIGN_Face1",
+	},
+	{
+		["EntityId"]	=	"FRE_ROOM_MEXTR",
+		["SnapPt"]	=	"SnapPoint_SPIGN_Face1",
+	},
+	{
+		["EntityId"]	=	"FRE_ROOM_SMEXTR",
+		["SnapPt"]	=	"SnapPoint_SPIGN_Face1",
+	}
+}
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------		CODE LOGIC STARTS HERE, NO TOUCHY UNLESS YOU WANNA BREAKY		------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -322,7 +365,7 @@ Author								= "EchoTree "
 LuaAuthor							= "EchoTree & Jackty89"
 ModDescription				=	"Adds 4 new Stellar Extractor rooms to the game. Adds 20 New Files, Modifies METADATA/REALITY DEFAULTSAVEDATA.MBIN, DEFAULTSAVEDATACREATIVE.MBIN, /TABLES BASEBUILDINGOBJECTSTABLE.MBIN, BASEBUILDINGPARTSTABLE.MBIN, BASEBUILDINGPARTSNAVDATATABLE.MBIN, NMS_REALITY_GCPRODUCTTABLE.MBIN, and all of the PLACEMENTDATA.ENTITY.MBINS for the Industrial Rooms."
 GameVersion					=	"v3.99.1"
-Build									= ".2"
+Build									= ".3"
 CustomLanguageTag		= "NMSMSE"
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -882,6 +925,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				
+				
 				--																																										METADATA/REALITY/TABLES																																							--
 				
 				{	--																																								BASEBUILDING OBJECSTS TABLE													26																									--
@@ -920,7 +964,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                     }
                 },
-				{	--																																									PLACEMENT DATA EDITING														32																									--
+				{	--																																							ROOM PLACEMENT DATA EDITING													32																									--
                     ["MBIN_FILE_SOURCE"] 	= 
 					{
 						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EMEXTRROOM\ROOM_EMEXTR_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
@@ -947,7 +991,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                     }
                 },
-                {	--																																						ADDING LANG REF TO DEBUGOPTIONS												33																									--
+				{	--																																							WALL PLACEMENT DATA EDITING													33																									--
+                    ["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\DOOR\A\FACE_DOOR_A_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
+						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\WALL\FACE_WALL_A_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
+						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\WINDOW\A\FACE_WINDOW_A_PLACEMENT\ENTITIES\PLACEMENTDATA.ENTITY.MBIN",
+					},
+                    ["EXML_CHANGE_TABLE"] 	=
+                    {
+                    }
+                },
+                {	--																																						ADDING LANG REF TO DEBUGOPTIONS												34																									--
                     ["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
@@ -1067,14 +1122,6 @@ function CreateProductRequirement(IngredientID, IngredientType, IngredientAmount
                 <Property name="InventoryType" value="]]..IngredientType..[[" />
             </Property>
         <Property name="Amount" value="]]..IngredientAmount..[[" />
-        </Property>
-    ]]
-end
-
-function CreateKnownProduct(ProductID)
-    return [[
-        <Property value="NMSString0x10.xml">
-            <Property name="Value" value="]]..ProductID..[[" />
         </Property>
     ]]
 end
@@ -1566,8 +1613,32 @@ for i = 1, #AddNewBBPartsNavData do
     }
 end
 
+
+function CreateKnownProduct(ProductID)
+    return [[
+        <Property value="NMSString0x10.xml">
+            <Property name="Value" value="]]..ProductID..[[" />
+        </Property>
+    ]]
+end
+
 local AddToDefaultSaveData    		  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][30]["EXML_CHANGE_TABLE"]
 local AddToDefaultSaveDataCreative    = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+
+for i = 1, #AddNewExtrRooms do
+    local ProductID         = string.upper(AddNewExtrRooms[i]["ProductID"])
+
+    AddToDefaultSaveData[#AddToDefaultSaveData + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
+        ["ADD"] = CreateKnownProduct(ProductID)
+    }
+	AddToDefaultSaveDataCreative[#AddToDefaultSaveDataCreative + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
+        ["ADD"] = CreateKnownProduct(ProductID)
+    }
+end
 
 function CreateNewPDEntity(NewEntityId, NewSnapPt)
     return
@@ -1687,19 +1758,48 @@ for i = 1, #AddNewPDEBL do
     }
 end
 
-for i = 1, #AddNewExtrRooms do
-    local ProductID         = string.upper(AddNewExtrRooms[i]["ProductID"])
 
-    AddToDefaultSaveData[#AddToDefaultSaveData + 1] =
+function CreateNewFaceSnaps(NewEntityID, NewSnapPt)
+	return
+	[[
+		<Property value="GcSnapPointCondition.xml">
+		  <Property name="SnapPoint" value="]]..NewSnapPt..[[" />
+		  <Property name="SnapState" value="GcBaseSnapState.xml">
+			<Property name="SnapState" value="IsSnapped" />
+		  </Property>
+		  <Property name="ObjectId" value="]]..NewEntityID..[[" />
+		  <Property name="SnapPointIndex" value="0" />
+		</Property>
+	]]
+end
+
+local AddToFaceSnaps = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][33]["EXML_CHANGE_TABLE"]
+for i = 1, #AddNewSnapPTFace do
+    local EntityId           = (AddNewSnapPTFace[i]["EntityId"])
+	local SnapPt			  = (AddNewSnapPTFace[i]["SnapPt"])
+	
+    AddToFaceSnaps[#AddToFaceSnaps + 1]  =
+	
     {
-        ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-        ["ADD"] = CreateKnownProduct(ProductID)
-    }
-	AddToDefaultSaveDataCreative[#AddToDefaultSaveDataCreative + 1] =
+		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+		["SECTION_ACTIVE"] 						= 		{1, 2,},
+		["ADD_OPTION"]								=		"ADDafterSECTION",
+		["ADD"]												= 		CreateNewFaceSnaps(EntityId, SnapPt)
+    }	
+end
+
+for j = 1, #AddNewSnapPTSpignFace do
+    local EntityId           = (AddNewSnapPTSpignFace[j]["EntityId"])
+	local SnapPt			  = (AddNewSnapPTSpignFace[j]["SnapPt"])
+	
+    AddToFaceSnaps[#AddToFaceSnaps + 1]  =
+	
     {
-        ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-        ["ADD"] = CreateKnownProduct(ProductID)
-    }
+		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+		["SECTION_ACTIVE"] 						= 		{1, 2,},
+		["ADD_OPTION"]								=		"ADDafterSECTION",
+		["ADD"]												= 		CreateNewFaceSnaps(EntityId, SnapPt)
+    }	
 end
 
 function NewLanguagueFile(DescriptionEntries)
