@@ -1,109 +1,179 @@
-------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
 local desc = [[
-  Add settlements, planetary archive, base computer, minor settlement,
-  tech debris, ancient plaque, remote terminal, secure facility,
-  distress signals, sentinel pillar and underwater targets to the exocraft scanner.
+  Adds planetary settlement, archive, ship debris, sentinel pillar, claimable base site,
+  minor settlement, secure facility, ancient plaque, remote terminal, treausere ruin,
+  traveller grave, distress signals and underwater locations to exocraft scanner.
   Re-arange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
-]]----------------------------------------------------------------------------------
-mod_version = 1.71
+]]--------------------------------------------------------------------------------------
+mod_version = 1.8
+
+local icon = {
+	unknown	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.HIDE_N_SEEK.MSHOP.DDS',
+	outpost	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.OUTPOST.DDS',
+	home	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SMALLBUILDING.DDS',
+	droppod	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.POD.DDS',
+	aband	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS',
+	ruins	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS',
+	rune	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUNE.DDS',
+	ship	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SHIP.MSHOP.DDS',
+	depot	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.DEPOTRAID.MSHOP.DDS',
+	trade	= 'TEXTURES/UI/HUD/ICONS/WIKI/TRADE3.DDS',
+	freight	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.FREIGHTER.MSHOP.DDS',
+	cogs	= 'TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/BASICPRODUCTION.DDS',
+	signal	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SIGNAL.DDS',
+	planet	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.ENTERORBIT.ON.DDS',  
+	fact	= 'TEXTURES/UI/HUD/ICONS/WIKI/BASE4.DDS',
+	tech	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SCIENCEMISSIONS.MSHOP.DDS',
+	chest	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.COLLECT.MSHOP.DDS',
+	base	= 'TEXTURES/UI/HUD/ICONS/WIKI/BASE1.DDS',
+	lib		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.LIBRARY.DDS',
+	hive	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS',
+	grave	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.ATLASPATH.MSHOP.DDS',
+	settle	= 'TEXTURES/UI/HUD/ICONS/WIKI/WIKI.SETTLEMENT.DDS',
+	water	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.WATER.ON.DDS',
+}
 
 local scan_table = {
 	{
-		name  = 'VEHICLE_BUILDING_OUTPOST',
-		scan  = {'SHOP', 'OUTPOST'},
+		name  = 'SHIP_CLOSESTTARGET',
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.OUTPOST.DDS'
+		scan  = {
+			{'BOUND_GLITCH',	icon.unknown},
+			{'OUTPOST',			icon.outpost},
+			{'SHOP',			icon.home},
+			{'DROPPOD', 		icon.droppod},
+			{'DEPOT',			icon.depot},
+			{'TERMINAL',		icon.trade},
+			{'ABANDONED',		icon.aband},
+			{'UW_ABANDONED',	icon.water},
+			{'RUIN',			icon.ruins},
+			{'T_RUIN',			icon.chest},
+			{'UW_RUIN',			icon.water},
+			{'MONOLITH',		icon.rune},
+			{'PLAQUE',			icon.rune},
+			{'RADIOTOWER',		icon.signal},
+			{'OBSERVATORY',		icon.signal},
+			{'HARVESTER',		icon.tech},
+			{'FACTORY',			icon.fact},
+			{'DISTRESS',		icon.ship},
+			{'DISTRESS_NPC',	icon.ship},
+			{'DEBRIS_NPC',		icon.cogs},
+			{'UW_SHIPCRASH',	icon.water},
+			{'TRAVEL_GRAVE',	icon.grave},
+			{'CRASHED_FREIGHTER',icon.freight},
+			{'UW_FREIGHTCRASH',	icon.water},
+			{'NEW_BASE',		icon.base},
+			{'LIBRARY',			icon.lib},
+			{'DRONE_HIVE',		icon.hive},
+			{'SETTLEMENT',		icon.settle}
+		}
+	},{
+		name  = 'VEHICLE_BUILDING_OUTPOST',
+		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
+		scan  = {
+			{'OUTPOST',		icon.outpost},
+			{'SHOP',		icon.home},
+		}
 	},{
 		name  = 'VEHICLE_BUILDING_DEPOT',
-		scan  = {'DEPOT', 'TERMINAL'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.BUILDING.DDS'
+		scan  = {
+			{'DEPOT',		icon.depot},
+			{'TERMINAL',	icon.trade}
+		}
 	},{
 		name  = 'VEHICLE_BUILDING_DAMAGEDMACHINE',
-		scan  = {'DROPPOD'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.POD.DDS'
+		scan  = {{'DROPPOD', icon.droppod}}
 	},{
 		name  = 'VEHICLE_BUILDING_ABANDONED',
-		scan  = {'ABANDONED', 'UW_ABANDONED'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
+		scan  = {
+			{'ABANDONED',	icon.aband},
+			{'UW_ABANDONED',icon.water}
+		}
 	},{
 		name  = 'VEHICLE_BUILDING_RUIN',
-		scan  = {'RUIN', 'UW_RUIN'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
+		scan  = {
+			{'RUIN',		icon.ruins},
+			{'T_RUIN',		icon.chest},
+			{'UW_RUIN',		icon.water}
+		}
 	},{
 		name  = 'VEHICLE_BUILDING_NPC',
-		scan  = {'MONOLITH', 'PLAQUE'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUNE.DDS'
-	},{
-		name  = 'SUB_RADAR_SCAN_ABANDON',
-		scan  = {'UW_ABANDONED'},
-		tech  = {'SUB_BINOCS'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS'
-	},{
-		name  = 'SUB_RADAR_SCAN_RUIN',
-		scan  = {'UW_RUIN'},
-		tech  = {'SUB_BINOCS'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS'
-	},{
-		name  = 'SUB_RADAR_SCAN_CRASH',
-		scan  = {'UW_SHIPCRASH'},
-		tech  = {'SUB_BINOCS'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.SHIP.DDS'
-	},{
-		name  = 'SUB_RADAR_SCAN_FREIGHTER',
-		scan  = {'UW_FREIGHTCRASH'},
-		tech  = {'SUB_BINOCS'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/WIKI/TRADE10.DDS'
-	},{
-		name  = 'SHIPWRECK',
-		scan  = {'DEBRIS_NPC'},
-		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.COG.DDS'
+		scan  = {
+			{'MONOLITH',	icon.rune},
+			{'PLAQUE',		icon.rune}
+		}
 	},{
 		name  = 'BUILDING_RADIOTOWER_L',
-		scan  = {'RADIOTOWER', 'OBSERVATORY'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SIGNAL.DDS'
+		scan  = {
+			{'RADIOTOWER',	icon.signal},
+			{'OBSERVATORY',	icon.planet}
+		}
 	},{
 		name  = 'MECH_SCAN_FACT',
-		scan  = {'HARVESTER', 'FACTORY'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.FACTORY.DDS'
+		scan  = {
+			{'FACTORY',		icon.fact},
+			{'HARVESTER',	icon.tech}
+		}
 	},{
 		name  = 'MECH_SCAN_CRASH',
-		scan  = {'DISTRESS', 'DISTRESS_NPC', 'UW_SHIPCRASH'},
 		tech  = {'VEHICLE_SCAN', 'MECH_SCAN'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/SCANNING/SCAN.SHIP.DDS'
+		scan  = {
+			{'DISTRESS',	icon.ship},
+			{'DISTRESS_NPC',icon.ship},
+			{'DEBRIS_NPC',	icon.cogs},
+			{'UW_SHIPCRASH',icon.water}
+		}
 	},{
 		name  = 'SUB_RADAR_SCAN_FREIGHTER',
-		scan  = {'CRASHED_FREIGHTER', 'UW_FREIGHTCRASH'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/WIKI/TRADE10.DDS'
+		scan  = {
+			{'CRASHED_FREIGHTER',icon.freight},
+			{'UW_FREIGHTCRASH',	icon.water}
+		}
 	},{
 		name  = 'UI_RECOVER_BASE_MARKER',
-		scan  = {'BASE'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.BASE.DDS'
+		scan  = {{'NEW_BASE', icon.base}}
 	},{
 		name  = 'UI_LIBRARY_ENTRANCE_DESC',
-		scan  = {'LIBRARY'},
 		tech  = {'VEHICLE_SCAN1'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.LIBRARY.DDS'
+		scan  = {
+			{'LIBRARY',		icon.lib},
+			{'BOUND_GLITCH',icon.unknown}
+		}
 	},{
 		name  = 'UI_SENTINEL_HIVE_NAME',
-		scan  = {'DRONE_HIVE'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS'
+		scan  = {{'DRONE_HIVE', icon.hive}}
 	},{
 		name  = 'UI_SETTLEMENT_LABEL',
-		scan  = {'SETTLEMENT'},
 		tech  = {'VEHICLE_SCAN2'},
-		icon  = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SETTLEMENT.DDS'
+		scan  = {{'SETTLEMENT', icon.settle}}
+	},{
+	---	submarine targets
+		name  = 'SUB_RADAR_SCAN_ABANDON',
+		tech  = {'SUB_BINOCS'},
+		scan  = {{'UW_ABANDONED', icon.aband}}
+	},{
+		name  = 'SUB_RADAR_SCAN_RUIN',
+		tech  = {'SUB_BINOCS'},
+		scan  = {{'UW_RUIN', icon.ruins}}
+	},{
+		name  = 'SUB_RADAR_SCAN_CRASH',
+		tech  = {'SUB_BINOCS'},
+		scan  = {{'UW_SHIPCRASH', icon.ship}}
+	},{
+		name  = 'SUB_RADAR_SCAN_FREIGHTER',
+		tech  = {'SUB_BINOCS'},
+		scan  = {{'UW_FREIGHTCRASH', icon.freight}}
 	}
 }
 function scan_table:GetEntry(entry)
@@ -112,8 +182,9 @@ function scan_table:GetEntry(entry)
 		for _,scn in ipairs(scans) do
 			exml = exml..[[
 				<Property value="NMSString0x20.xml">
-					<Property name="Value" value="]]..scn..[["/>
-				</Property>]]
+					<Property name="Value" value="]]..scn[1]..[["/>
+				</Property>
+			]]
 		end
 		return '<Property name="ScanList">'..exml..'</Property>'
 	end
@@ -125,9 +196,10 @@ function scan_table:GetEntry(entry)
 				<Property name="Name" value="]]..entry.name..[["/>
 				<Property name="RequiredTech" value="]]..tech..[["/>
 				<Property name="Icon" value="TkTextureResource.xml">
-					<Property name="Filename" value="]]..entry.icon..[["/>
+					<Property name="Filename" value="]]..entry.scan[1][2]..[["/>
 				</Property>
-			</Property>]]
+			</Property>
+		]]
 	end
 	return exml
 end
@@ -150,6 +222,11 @@ local scan_events = {
 		osd		= 'SIGNAL_TERMINAL',
 		tip		= 'TIP_TERMINAL',
 	},{
+		event	= 'T_RUIN',
+		class	= 'TreasureRuins',
+		osd		= 'UI_SIGNAL_TREASURERUIN',
+		tip		= 'UI_TIP_TREASURERUIN',
+	},{
 		event	= 'DEBRIS_NPC',
 		class	= 'NPCDebris',
 		osd		= 'SIGNAL_DEBRIS',
@@ -160,7 +237,7 @@ local scan_events = {
 		osd		= 'SIGNAL_PLAQUE',
 		tip		= 'TIP_PLAQUE',
 	},{
-		event	= 'BASE',
+		event	= 'NEW_BASE',
 		class	= 'Base',
 		osd		= 'SIGNAL_BASE',
 		tip		= 'TIP_BASE',
@@ -182,6 +259,18 @@ local scan_events = {
 		class	= 'Settlement_Hub',
 		osd		= 'UI_SETTLEMENT_LOCATED_OSD',
 		tip		= 'UI_SETTLEMENT_LOCATED',
+	},{
+		name	= 'BUILDING_GLITCHYSTORYBOX_L',
+		event	= 'BOUND_GLITCH',
+		class	= 'StoryGlitch',
+		osd		= 'UI_MP_PORTALQUEST_RIFT_OSD',
+		tip		= 'TUT_BASEBUILD_SURVEY_OSD',
+	},{
+		name	= 'SCAN_GRAVE',
+		event	= 'TRAVEL_GRAVE',
+		class	= 'GraveInCave',
+		osd		= 'UI_BIOSHIP5_SURVEY_OSD',
+		tip		= 'UI_MP_PLANTKILL_GRAVE_SURV_OSD2',
 	}
 }
 
@@ -190,10 +279,9 @@ local function NewScanEvent(scn)
 	<Property value="GcScanEventData.xml">
 		<Property name="Name" value="]]..scn.event..[["/>
 		<Property name="ForceOverridesAll" value="True"/>
-		<Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD"/>
-		<Property name="EventStartType" value="]]..(scn.start or 'ObjectScan')..[["/>
-		<Property name="EventEndType" value="]]..(scn.ende or 'Proximity')..[["/>
-		<Property name="EventPriority" value="]]..(scn.priority or 'Regular')..[["/>
+		<Property name="EventStartType" value="ObjectScan"/>
+		<Property name="EventEndType" value="Proximity"/>
+		<Property name="EventPriority" value="Regular"/>
 		<Property name="DisableMultiplayerSync" value="True"/>
 		<Property name="BuildingLocation" value="]]..(scn.blocal or 'Nearest')..[["/>
 		<Property name="BuildingType" value="]]..(scn.btype or 'BuildingClass')..[["/>
@@ -201,55 +289,46 @@ local function NewScanEvent(scn)
 			<Property name="BuildingClass" value="]]..(scn.class or 'None')..[["/>
 		</Property>
 		<Property name="AllowOverriddenBuildings" value="True"/>
-		<Property name="SolarSystemLocation" value="Local"/>
 		<Property name="ForceRestartInteraction" value="True"/>
 		<Property name="TriggerActions" value="GcScanEventTriggers.xml">
 			<Property name="Range" value="100"/>
 		</Property>
-		<Property name="TechShopType" value="GcTechnologyCategory.xml">
-			<Property name="TechnologyCategory" value="All"/>
-		</Property>
 		<Property name="OSDMessage" value="]]..scn.osd..[["/>
-		<Property name="InterstellarOSDMessage" value="SCANEVENT_ANOTHER_SYSTEM"/>
 		<Property name="MarkerLabel" value="]]..(scn.mlabel or '')..[["/>
 		<Property name="MarkerIcon" value="TkTextureResource.xml">
 			<Property name="Filename" value=""/>
 		</Property>
-		<Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
-			<Property name="ScannerIconHighlightType" value="Diamond"/>
-		</Property>
 		<Property name="MessageDisplayTime" value="4"/>
-		<Property name="MessageAudio" value="GcAudioWwiseEvents.xml">
-			<Property name="AkEvent" value="INVALID_EVENT"/>
-		</Property>
 		<Property name="IconTime" value="4"/>
 		<Property name="TooltipTime" value="8"/>
 		<Property name="ShowEndTooltip" value="True"/>
 		<Property name="TooltipMessage" value="]]..scn.tip..[["/>
-	</Property>]]
+	</Property>
+	]]
 end
 
-local function InsertNewScanEvents()
+local function AddNewScanEvents()
 	local exml = ''
-	for _,ev in ipairs(scan_events) do
-		exml = exml..NewScanEvent(ev)
-	end
+	for _,ev in ipairs(scan_events) do exml = exml..NewScanEvent(ev) end
 	return exml
 end
 
--- replace icons of found target to match those in the targets list
+-- add/replace marker icon for found targets
 local function UpdateScanEventIcons()
-	local T = {}
+	local tmp = {}
+	-- collect scan event ids to filter out duplicates
 	for _,entry in ipairs(scan_table) do
 		for _,scn in ipairs(entry.scan) do
-			table.insert(T, {
-				SPECIAL_KEY_WORDS	= {'Name', scn},
-				PRECEDING_KEY_WORDS	 = 'MarkerIcon',
-				VALUE_CHANGE_TABLE 	= {
-					{'Filename', entry.icon}
-				}
-			})
+			tmp[scn[1]] = scn[2]
 		end
+	end
+	local T = {}
+	for n, i in pairs(tmp) do
+		table.insert(T, {
+			SPECIAL_KEY_WORDS	= {'Name', n},
+			PRECEDING_KEY_WORDS	= 'MarkerIcon',
+			VALUE_CHANGE_TABLE	= { {'Filename', i} }
+		})
 	end
 	return T
 end
@@ -257,17 +336,13 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '3.99.1',
 	MOD_DESCRIPTION		= desc,
 	ADD_FILES = {
 		{
-			EXTERNAL_FILE_SOURCE= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/QuickMenu/VEHICLESCAN.DDS',
-			FILE_DESTINATION	= 'TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/VEHICLESCAN.DDS'
-		},
-		{
 			FILE_DESTINATION 	= 'METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.EXML',
 			FILE_CONTENT		= BuildVehicleScanTable()
-		},
+		}
 	},
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -283,7 +358,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			{
 				PRECEDING_KEY_WORDS = 'Events',
-				ADD					= InsertNewScanEvents()
+				ADD					= AddNewScanEvents()
 			}
 		}
 	},
@@ -294,12 +369,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN',
 		EXML_CHANGE_TABLE	= {
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'VEHICLE_SCAN', 'TechnologyCategory', 'Exocraft'},
-				VALUE_CHANGE_TABLE 	= {
-					{'TechnologyCategory', 'AllVehicles'}
-				}
-			},
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'VEHICLE_SCAN1', 'TechnologyCategory', 'Exocraft'},
 				VALUE_CHANGE_TABLE 	= {
