@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (3.97.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_ROOTJNT_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_ROOTJNT_" />
+          <Property name="Name" value="_RootJNT_" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+<!--     <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_TIPS_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TIPS_A" />
+          <Property name="Name" value="_Tips_A" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TIPS_B" />
+          <Property name="Name" value="_Tips_B" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TIPS_C" />
+          <Property name="Name" value="_Tips_C" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TIPS_D" />
+          <Property name="Name" value="_Tips_D" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TIPS_E" />
+          <Property name="Name" value="_Tips_E" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+   -->
+  <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_WINGS_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_A" />
+          <Property name="Name" value="_Wings_A" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_JNT_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_JNT_PARENTCONSTRAINT1" />
+                      <Property name="Name" value="_JNT_parentConstraint1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_B" />
+          <Property name="Name" value="_Wings_B" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_JNT_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_JNT_PARENTCONSTRAINT1" />
+                      <Property name="Name" value="_JNT_parentConstraint1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_C" />
+          <Property name="Name" value="_Wings_C" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_JNT_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_JNT_PARENTCONSTRAINT1" />
+                      <Property name="Name" value="_JNT_parentConstraint1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_D" />
+          <Property name="Name" value="_Wings_D" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_JNT_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_JNT_PARENTCONSTRAINT1" />
+                      <Property name="Name" value="_JNT_parentConstraint1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_E" />
+          <Property name="Name" value="_Wings_E" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_JNT_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_JNT_PARENTCONSTRAINT1" />
+                      <Property name="Name" value="_JNT_parentConstraint1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_WINGS_F" />
+          <Property name="Name" value="_Wings_F" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_JNT_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_JNT_PARENTCONSTRAINT1" />
+                      <Property name="Name" value="_JNT_parentConstraint1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_BODY_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BODY_A" />
+          <Property name="Name" value="_Body_A" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BODY_B" />
+          <Property name="Name" value="_Body_B" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BODY_C" />
+          <Property name="Name" value="_Body_C" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BODY_D" />
+          <Property name="Name" value="_Body_D" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BODY_E" />
+          <Property name="Name" value="_Body_E" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_PROCDUMMY_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_PROCDUMMY_E" />
+                      <Property name="Name" value="_ProcDummy_E" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BODY_F" />
+          <Property name="Name" value="_Body_F" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/SAILSHIPAIRVENT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+  
+<!--   <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_SAILS_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SAILS_A" />
+          <Property name="Name" value="_Sails_A" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SAILS_B" />
+          <Property name="Name" value="_Sails_B" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SAILS_C" />
+          <Property name="Name" value="_Sails_C" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+  -->
+ </Property>
+</Data>
