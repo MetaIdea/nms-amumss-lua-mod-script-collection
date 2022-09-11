@@ -754,7 +754,7 @@ PLANETEFFECTS_TEXT_6 = [[
 ]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]      = ModName.."-"..ModVersion..".pak",
+    ["MOD_FILENAME"]      = ModAuthor.."_"..ModName.."-"..ModVersion..".pak",
     ["MOD_DESCRIPTION"]   = BaseDescription,
     ["MOD_AUTHOR"]        = ModAuthor,
     ["LUA_AUTHOR"]        = LuaAuthor,
