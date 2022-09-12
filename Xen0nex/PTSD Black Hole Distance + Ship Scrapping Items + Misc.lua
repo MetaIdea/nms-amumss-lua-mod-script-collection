@@ -25,14 +25,6 @@ IllegalTechProductTradingMod = 			0.2									--0.2		Multiplier (price drop) tha
 SalvageValueAsProds =					0.2									--0.2
 SalvageSubstanceValueThreshold =		15000								--20000
 
---Limits on the amount of simultaneous wandering Patrol Drones spawned on Low / Normal / Aggressive Sentinel planets in Normal / Survival mode
-MaxDronesLow =							0									--0
-MaxDronesLowSurvival =					1									--1
-MaxDronesNormal =						3									--2
-MaxDronesNormalSurvival =				3									--2
-MaxDronesAggressive =					2									--1
-MaxDronesAggressiveSurvival =			2									--1
-
 ShipScrappingItemChanges =
 {
 	{
@@ -82,12 +74,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"DeathMoneyPenalty", DeathMoneyPenalty},
 					{"DeathMoneyPenaltyHardMode", DeathMoneyPenaltyHardMode},
 					{"MissionSurveyMaxGuidanceDistance", MissionSurveyMaxGuidanceDistance},
-					{"MaxDronesLow", MaxDronesLow},
-					{"MaxDronesLowSurvival", MaxDronesLowSurvival},
-					{"MaxDronesNormal", MaxDronesNormal},
-					{"MaxDronesNormalSurvival", MaxDronesNormalSurvival},
-					{"MaxDronesAggressive", MaxDronesAggressive},
-					{"MaxDronesAggressiveSurvival", MaxDronesAggressiveSurvival},
 				}
 			},
 			{
