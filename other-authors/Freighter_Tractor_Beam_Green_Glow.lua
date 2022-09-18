@@ -12,15 +12,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= 
                     {
                         "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR\ENTRANCEBEAMPARTICLESMAT1.MATERIAL.MBIN",
-                        "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR\ENTRANCEMARKERVA_MAT1.MATERIAL.MBIN",
-                        --"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR\ENTRANCESCROLLEFFECTMAT.MATERIAL.MBIN",--Enable for NO beam outside
+                        "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR\ENTRANCEMARKERVA_MAT1.MATERIAL.MBIN",  "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARPARTS\HANGARDOOR\HANGARDOOR_ANIMATED\GLOWGRADIENT_SKINNEDMAT.MATERIAL.MBIN",                        --"MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\HANGAR\ENTRANCESCROLLEFFECTMAT.MATERIAL.MBIN",--Enable for NO beam outside
                     },
                     ["EXML_CHANGE_TABLE"] 	= 
                     {          
                         {
                             ["VALUE_CHANGE_TABLE"]  =   
                             {
-                                {"Map", "TEXTURES/SPACE/SPACESTATION/BLACKBAR.DDS"},                               
+                                {"Map", "TEXTURES/SPACE/SPACESTATION/ENTRANCEBEAM_OFF.DDS"},                               
                             }
                         },  
                     }                        
