@@ -2737,25 +2737,6 @@ HUBFLAG_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
         <Property name="DependsOnEnvironment" value="None" />
         <Property name="DependsOnHotspots" value="None" />
         <Property name="DependentConnections" />
-        <!-- <Property name="DependentConnections">
-          <Property value="GcBaseLinkGridConnectionDependency.xml">
-            <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
-              <Property name="Network" value="GcLinkNetworkTypes.xml">
-                <Property name="LinkNetworkType" value="Power" />
-              </Property>
-              <Property name="NetworkSubGroup" value="9" />
-              <Property name="NetworkMask" value="1280" />
-              <Property name="ConnectionDistance" value="1" />
-              <Property name="UseMinDistance" value="False" />
-              <Property name="LinkSocketPositions" />
-              <Property name="LinkSocketSubGroups" />
-            </Property>
-            <Property name="DependentRateRate" value="0" />
-            <Property name="DependentEffect" value="EnablesRate" />
-            <Property name="DisableWhenOffline" value="False" />
-            <Property name="TransfersConnections" value="True" />
-          </Property>
-        </Property> -->
 ]],
 	["PLANTER"] = [[
         <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
@@ -66834,7 +66815,7 @@ for _,n in pairs(CHILDREN) do
         </Property>
 ]]
 end
-return [[
+return [[ 
     <Property value="GcBaseBuildingGroup.xml">
       <Property name="ID" value="]] .. ID .. [[" />
       <Property name="Name" value="]] .. string.upper(NAME) .. [[" />
@@ -66914,7 +66895,7 @@ for _,n in pairs(GROUPS) do
 	end
 end
 
-return [[
+return [[ 
     <Property value="GcBaseBuildingEntry.xml">
       <Property name="ID" value="]] .. ID .. [[" />
       <Property name="IsTemporary" value="False" />
@@ -66925,15 +66906,6 @@ return [[
       <Property name="PlacementScene" value="TkModelResource.xml">
         <Property name="Filename" value="]] .. PLACEMENT .. [[" />
       </Property>
-      <!--Property name="SnapPoints" value="TkModelResource.xml">
-        <Property name="Filename" value="]] .. SNAP_INJECT .. [[" />
-      </Property>
-      <Property name="Model" value="TkModelResource.xml">
-        <Property name="Filename" value="]] .. MODEL .. [[" />
-      </Property>
-      <Property name="InactiveModel" value="TkModelResource.xml">
-        <Property name="Filename" value="]] .. INACTIVE .. [[" />
-      </Property-->
       <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
         <Property name="BaseBuildingDecorationType" value="]] .. DTYPE .. [[" />
       </Property>
@@ -66979,9 +66951,9 @@ return [[
       <Property name="RemovesWhenUnsnapped" value="False" />
       <Property name="EditsTerrain" value="]] .. TERRAIN .. [[" />
       <Property name="BaseTerrainEditShape" value="]] .. T_SHAPE .. [[" />
-      <!--Property name="TerrainEditBaseYOffset" value="]] .. T_BASE .. [[" />
-      <Property name="TerrainEditTopYOffset" value="]] .. T_TOP .. [[" />
-      <Property name="TerrainEditBoundsScalar" value="]] .. T_SCALE .. [[" /-->
+      <!--Property name="TerrainEditBaseYOffset" value="]] .. T_BASE .. [[" /-->
+      <!--Property name="TerrainEditTopYOffset" value="]] .. T_TOP .. [[" /-->
+      <!--Property name="TerrainEditBoundsScalar" value="]] .. T_SCALE .. [[" /-->
       <Property name="MinimumDeleteDistance" value="1" />
       <Property name="IsSealed" value="]] .. SEAL .. [[" />
       <Property name="CloseMenuAfterBuild" value="False" />
@@ -67307,7 +67279,7 @@ for i,j in pairs(GROUPS_INJECT) do
 end
 
 EXPORT_KNOWNPRODUCTS_LIST = {"<!-- HUBFLAG VANILLA -->"}
--- for _,j in pairs(HUBFLAG_VANILLA) do	-- ADDING FOUNDATION INFRASTRUCTURE PIECES INTO DEFAULTSAVE
+-- for i,j in pairs(HUBFLAG_VANILLA) do	-- ADDING FOUNDATION INFRASTRUCTURE PIECES INTO DEFAULTSAVE
 	-- EXPORT_KNOWNPRODUCTS_LIST[i+1] = GetKnownProducts(j)
 -- end
 

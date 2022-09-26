@@ -4,18 +4,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Living Ship Mission Timer (2 Hours).pak",
 ["MOD_AUTHOR"]    = "Framby",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.89",
+["NMS_VERSION"]   = "3.99",
 ["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
+			["MBIN_CT"] = 
 			{
 				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\MISSIONS\SPACEPOIMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["MBIN_FS"]  = "METADATA\SIMULATION\MISSIONS\SPACEPOIMISSIONTABLE.MBIN",
+					["EXML_CT"] = 
 					{
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FSKWG"] = 
 							{  
 								{"Message", "UI_BIO_SHIP_MISSION1_MSG3",},  
 								{"Message", "UI_BIO_SHIP_MISSION2_MSG3",},

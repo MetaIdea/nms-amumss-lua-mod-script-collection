@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Frequency"
 ModNameSub = "Sail All"
 BaseDescription = "Changes frequency of ships spawning in the wild"
-GameVersion = "398"
+GameVersion = "399"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 
