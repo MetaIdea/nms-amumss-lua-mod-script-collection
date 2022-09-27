@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="GEOMETRY" />
       <Property name="AltID" value="" />
-      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\CONDUIT_PIPELINE.GEOMETRY.MBIN" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PLUGSOCKET_AVAILABLE\CONDUIT_PIPELINE.GEOMETRY.MBIN" />
     </Property>
     <Property value="TkSceneNodeAttributeData.xml">
       <Property name="Name" value="NUMLODS" />
