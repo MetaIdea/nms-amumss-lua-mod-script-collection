@@ -27,10 +27,10 @@ BLDGICON = "TEXTURES/UI/FRONTEND/ICONS/WIKI/BASE4.DDS"
 
 BUILDABLE_OBJECT_TABLE =
 {
-	{ ["ID_NAME"]="SHOPWEAPON", 	["P_NAME"]="SHOPWEAPON", 	    	["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/", 		["GROUP_NAME"]="PLANET_TECH", ["SUBGROUP_NAME"]="PLANETPORTABLE", ["ICON"]=BLDGICON },
+	{ ["ID_NAME"]="SHOPWEAPON", 	["P_NAME"]="SHOPWEAPON", 	    	["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/PIRATES/",	["ICON"]=BLDGICON },
 }
 
-function GetBaseBuildingObject(ID_NAME, P_NAME, PATH, GROUP_NAME, SUBGROUP_NAME)
+function GetBaseBuildingObject(ID_NAME, P_NAME, PATH)
 BASEBUILDINGOBJECTSTABLE_ADDING =
 [[
     <Property value="GcBaseBuildingEntry.xml">
@@ -68,8 +68,13 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="CanScale" value="False" />
       <Property name="Groups">
         <Property value="GcBaseBuildingEntryGroup.xml">
-          <Property name="Group" value="]].. GROUP_NAME ..[[" />
-          <Property name="SubGroupName" value="]].. SUBGROUP_NAME ..[[" />
+          <Property name="Group" value="PLANET_TECH" />
+          <Property name="SubGroupName" value="PLANETPORTABLE" />
+          <Property name="SubGroup" value="0" />
+        </Property>
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHTER_TECH" />
+          <Property name="SubGroupName" value="FRE_TECH_OTHER" />
           <Property name="SubGroup" value="0" />
         </Property>
       </Property>
@@ -145,13 +150,13 @@ BASEBUILDINGPARTSTABLE_ADDING =
 return BASEBUILDINGPARTSTABLE_ADDING
 end
 
-function GetProduct(ID_NAME, P_NAME, ICON)
+function GetProduct(ID_NAME, ICON)
 PRODUCT_ADDING =
 [[
     <Property value="GcProductData.xml">
 	  <Property name="Id" value="]].. ID_NAME ..[[" />
-      <Property name="Name" value="]].. P_NAME ..[[" />
-      <Property name="NameLower" value="]].. P_NAME ..[[" />
+      <Property name="Name" value="]].. ID_NAME ..[[" />
+      <Property name="NameLower" value="]].. ID_NAME ..[[" />
       <Property name="Subtitle" value="VariableSizeString.xml">
         <Property name="Value" value="" />
       </Property>
@@ -196,14 +201,6 @@ PRODUCT_ADDING =
       <Property name="CraftAmountStepSize" value="1" />
       <Property name="CraftAmountMultiplier" value="1" />
       <Property name="Requirements" />
-    <!--    <Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="LAND1" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Substance" />
-          </Property>
-          <Property name="Amount" value="1" />
-        </Property>
-      </Property>-->
       <Property name="AltRequirements" />
       <Property name="Cost" value="GcItemPriceModifiers.xml">
         <Property name="SpaceStationMarkup" value="0" />
@@ -229,7 +226,8 @@ PRODUCT_ADDING =
       <Property name="CookingValue" value="0" />
       <Property name="GoodForSelling" value="False" />
       <Property name="GiveRewardOnSpecialPurchase" value="" />
-	  <Property name="EggModifierIngredient" value="True" />
+	  <Property name="EggModifierIngredient" value="False" />
+      <Property name="IsTechBox" value="False" />
     </Property>
 ]]
 return PRODUCT_ADDING
@@ -503,9 +501,9 @@ PLACEMENTDATA_ENTITY_ALL = {}
 ADD_FILES_TABLE = {}
 
 for i=1,#BUILDABLE_OBJECT_TABLE,1 do
-	table.insert(BASEBUILDINGOBJECTSTABLE_ADDING_ALL,GetBaseBuildingObject(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"],BUILDABLE_OBJECT_TABLE[i]["GROUP_NAME"], BUILDABLE_OBJECT_TABLE[i]["SUBGROUP_NAME"]))
+	table.insert(BASEBUILDINGOBJECTSTABLE_ADDING_ALL,GetBaseBuildingObject(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"]))
 	table.insert(BASEBUILDINGPARTSTABLE_ADDING_ALL,GetBaseBuildingPart(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"]))
-	table.insert(PRODUCT_ADDING_ALL,GetProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["ICON"]))
+	table.insert(PRODUCT_ADDING_ALL,GetProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["ICON"]))
 	table.insert(AUTOPARTDATA_ADDING_ALL,GetAutoPartData(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
 	table.insert(BASEBUILDINGCOST_ADDING_ALL,GetBaseBuildingCost(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))	
 	table.insert(DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING_ALL,GetKnownProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
@@ -519,7 +517,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
 ["MOD_FILENAME"] 			=	"MTShopEverywhere.pak",
 ["MOD_AUTHOR"]				=	"Lenni",
 ["Contributors"]			=	"Babscoole, ApexFatality, WinderTP",
-["NMS_VERSION"]				=	"3.97",
+["NMS_VERSION"]				=	"3.99.1",
 ["ADD_FILES"]				=	ADD_FILES_TABLE,
 ["MODIFICATIONS"]			=
 	{
