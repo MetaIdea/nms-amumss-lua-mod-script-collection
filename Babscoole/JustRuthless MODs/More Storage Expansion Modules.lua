@@ -11,29 +11,29 @@ RewardChanges =
   {  
     {"R_MB_MED"}, -- Mission Board Med
     {   -- LootID,      Min, Max, Chance,   Original
-      {"WEAP_INV_TOKEN",  2,   2,     5}, -- 1, 1, 1
-      {"SHIP_INV_TOKEN",  2,   2,     5}, -- 1, 1, 1
+      {"WEAP_INV_TOKEN",  2,   2,     6}, -- 1, 1, 6
+      {"SHIP_INV_TOKEN",  2,   2,     6}, -- 1, 1, 6
     }
   },
   {  
     {"R_MB_HIGH"}, -- Mission Board High
     {   -- LootID,      Min, Max, Chance,   Original
-      {"WEAP_INV_TOKEN",  3,   3,     5}, -- 1, 1, 1
-      {"SHIP_INV_TOKEN",  3,   3,     5}, -- 1, 1, 1
+      {"WEAP_INV_TOKEN",  3,   3,     6}, -- 1, 1, 6
+      {"SHIP_INV_TOKEN",  3,   3,     6}, -- 1, 1, 6
     }
   },
   {  
     {"R_MB_MEGA"}, -- Mission Board Mega
     {   -- LootID,      Min, Max, Chance,   Original
-      {"WEAP_INV_TOKEN",  4,   4,     5}, -- 1, 1, 1
-      {"SHIP_INV_TOKEN",  4,   4,     5}, -- 1, 1, 1
+      {"WEAP_INV_TOKEN",  4,   4,     7}, -- 1, 1, 7
+      {"SHIP_INV_TOKEN",  4,   4,     7}, -- 1, 1, 7
     }
   },
   {  
     {"R_NEXUS_MEGA"}, -- Nexus Mission Mega
     {   -- LootID,      Min, Max, Chance,   Original
-      {"WEAP_INV_TOKEN",  4,   4,    10}, -- 1, 1, 1
-      {"SHIP_INV_TOKEN",  4,   4,    10}, -- 1, 1, 1
+      {"WEAP_INV_TOKEN",  4,   4,    10}, -- 1, 1, 5
+      {"SHIP_INV_TOKEN",  4,   4,    10}, -- 1, 1, 5
     }
   },
   {  
@@ -220,9 +220,9 @@ end
 FileName    = "More Storage Expansion Modules.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
+ModMaintenance = "Babscoole and DarkScythe"
 Description = ""
-NMS_Version = "3.99"
+NMS_Version = "4.00"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"

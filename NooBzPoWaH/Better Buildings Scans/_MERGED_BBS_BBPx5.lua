@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "_MERGED_BBS_BBPx5.pak", 
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
 ["LUA_AUTHOR"]				= "NooBzPoWaH",
-["NMS_VERSION"]				= "3.+",
+["NMS_VERSION"]				= "4.+",
 ["MOD_DESCRIPTION"]			= "Merged file for Better Buildings Scans and Base Boundary Plus",
 ["MODIFICATIONS"] 			= 
 	{

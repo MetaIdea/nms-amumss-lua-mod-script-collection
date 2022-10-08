@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"]    = "RelicGateWarp.pak",
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.00",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "WTFAI",
 ["MODIFICATIONS"]   = 
@@ -14,8 +14,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE",}, 
-							["LINE_OFFSET"] = "+0",
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = 
 [[
@@ -49,8 +49,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"] = "-2",
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"] = 
 [[
     <Property value="GcTriggerActionComponentData.xml">

@@ -24,32 +24,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "PoliceShipOnStart.pak", 
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.00",
 ["MODIFICATIONS"]   = 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] = 
-			{ 
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DEFAULTSAVEDATACREATIVE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"CurrentShip"},
-							["VALUE_CHANGE_TABLE"]  = 
-							{
-								{"Filename", PROC_SCENE_PATH[SHIP_TYPE]},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"CurrentShip","Seed"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Seed", HexToDec(SHIP_SEED)},
-							}
-						}
-					}
-				},
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
 					["EXML_CHANGE_TABLE"] = 

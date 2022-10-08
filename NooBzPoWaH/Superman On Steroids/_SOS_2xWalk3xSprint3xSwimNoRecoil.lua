@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "_SOS_2xWalk3xSprint3xSwimNoRecoil.pak",
 ["MOD_DESCRIPTION"]			= "This mod basically allows you to fly",
 ["MOD_AUTHOR"]				= "JimminyBillyBob888 AKA TheNexGDD and NooBzPoWaH",
-["NMS_VERSION"]				= "3.+",
+["NMS_VERSION"]				= "4.+",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -63,7 +63,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "JetpackIgnitionTime", 			"0.1" }, 	--Original "0.4"
 								{ "JetpackMinIgnitionTime", 			"0.05" }, 	--Original "0.2"
 								{ "JetpackFillRate", 				"99" }, 	--Original "0.5"
-								{ "JetpackFillRateHardMode", 			"99" }, 	--Original "0.2"
 								{ "JetpackFillRateSpaceStationMultiplier",	"10" },		--Original "5"
 								{ "JetpackUpForceDeadPlanetExtra",		"15" },		--Original "10"
 								{ "JetpackForceDeadPlanetExtra",		"80" },		--Original "15

@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "DroneShip.pak",
 ["MOD_AUTHOR"]      = "Mjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.00",
 ["DESCRIPTION"]     = "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
 ["MODIFICATIONS"]   = 
 	{
@@ -75,9 +75,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"]       = "+0",
-							["ADD_OPTION"]  = "ADDafterSECTION",
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SECTION_ACTIVE"]    = {2,},
+							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"] = 
 [[
         <Property value="TkAnimationData.xml">
@@ -111,8 +111,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"]         = "-2",
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"] = 
 [[
     <Property value="GcTriggerActionComponentData.xml">
@@ -269,6 +269,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 			  <Property name="Reward" value="GcRewardSpecificShip.xml">
 				<Property name="ShipResource" value="GcResourceElement.xml">
 				  <Property name="Filename" value="]] .. SHIP_SCENE .. [[" />
+				  <Property name="ResHandle" value="GcResource.xml">
+					<Property name="ResourceID" value="0" />
+				  </Property>
 				  <Property name="Seed" value="GcSeed.xml">
 					<Property name="Seed" value="]] .. 0 .. [[" />
 					<Property name="UseSeedValue" value="True" />
@@ -377,8 +380,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 				  <Property name="Class" value="GcInventoryClass.xml">
 					<Property name="InventoryClass" value="S" />
 				  </Property>
-				  <Property name="SubstanceMaxStorageMultiplier" value="0" />
-				  <Property name="ProductMaxStorageMultiplier" value="0" />
+                <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
+                  <Property name="InventoryStackSizeGroup" value="Default" />
+                </Property>
 				  <Property name="BaseStatValues" />
 				  <Property name="SpecialSlots" />
 				  <Property name="Width" value="0" />

@@ -3860,7 +3860,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.00",
 ["MODIFICATIONS"]   =
     {
         {
@@ -3960,9 +3960,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"RainbowStormAlpha",          "0.25"},
 								{"SafeSkyMaxIndex",            "2303"},
 								{"FrozenSkyMaxIndex",          "2303"},
-								{"SunClampAngle",              "95"},
-								{"ToFootFadeTime",             "12"},
-								{"ToFlightFadeTime",           "12"},
+								{"SunClampAngle",              "55"},
+								{"ToFootFadeTime",             "3"},
+								{"ToFlightFadeTime",           "3"},
 								{"InFlightStormStrength",      "0.5"},
 								{"CloudCoverSmoothTime",       "16"},
 								{"CloudRatioSmoothTime",       "8"},

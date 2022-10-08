@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_JetPack_v1.01.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_JetPack_v1.02.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"JetpackMaxUpSpeed",				"33"},  --from 30
 								{"JetpackUpForce",					"35"},  --from 30
 								{"JetpackFillRate",					"2"},   --from 0.5
-								{"JetpackFillRateHardMode",			"1.5"}, --from 0.2
+								{"JetpackFillRateMidair",			"1.5"}, --from 0.25
 								{"JetpackUnderwaterDrainRate",		"0.2"}, --from 0.4
 								{"JetpackUnderwaterFillRate",		"2"},   --from 1
 							}	

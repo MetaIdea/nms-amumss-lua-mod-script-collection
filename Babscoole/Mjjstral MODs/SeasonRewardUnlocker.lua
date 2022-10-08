@@ -21,7 +21,6 @@ REWARDS_1 = {
 	"RS_WARP_TECH",
 	"RS_GLYPHS",
 	"RS_VOIDEGG",
-	"RS_S1_S5M4",
 }
 
 REWARDS_2 = {
@@ -33,6 +32,7 @@ REWARDS_2 = {
 	"RS_S2_PHASE4",
 	"RS_S2_PHASE5",
 	"RS_S2_PARTY",
+	"RS_S2_S5M0",
 }
 
 REWARDS_3 = {
@@ -100,11 +100,6 @@ REWARDS_5 = {
 	"RS_S5_PHASE4",
 	"RS_S5_PHASE5",
 	"RS_S5_PARTY",
-	"RS_S5_S1M7",
-	"RS_S5_S2M6",
-	"RS_S5_S2M7",
-	"RS_S5_S4M6",
-	"RS_S5_S5M6",
 }
 
 REWARDS_6 = {
@@ -197,38 +192,55 @@ REWARDS_8 = {
 	"RS_S8_PARTY1",
 	"RS_S8_PARTY2",
 	"RS_S8_PARTY3",
-	"RS_S8_S1M1",
-	"RS_S8_S1M2",
-	"RS_S8_S1M3",
-	"RS_S8_S1M4",
-	"RS_S8_S1M5",
-	"RS_S8_S1M6",
-	"RS_S8_S1M7",
-	"RS_S8_S2M1",
-	"RS_S8_S2M2",
-	"RS_S8_S2M3",
-	"RS_S8_S2M4",
-	"RS_S8_S2M5",
-	"RS_S8_S2M6",
-	"RS_S8_S2M7",
-	"RS_S8_S3M1",
-	"RS_S8_S3M2",
-	"RS_S8_S3M3",
-	"RS_S8_S3M4",
 	"RS_S8_S3M5",
 	"RS_S8_S3M6",
 	"RS_S8_S3M7",
-	"RS_S8_S4M1",
-	"RS_S8_S4M2",
-	"RS_S8_S4M3",
-	"RS_S8_S4M4",
-	"RS_S8_S4M5",
-	"RS_S8_S4M6",
-	"RS_S8_S5M1",
-	"RS_S8_S5M2",
-	"RS_S8_S5M3",
-	"RS_S8_S5M4",
-	"RS_S8_S5M5",
+}
+
+REWARDS_9 = {
+	"RS_S9_COMPLETE",
+	"RS_S9_EGG",
+	"RS_S9_PHASE1",
+	"RS_S9_PHASE2",
+	"RS_S9_PHASE3",
+	"RS_S9_PHASE4",
+	"RS_S9_PHASE5",
+	"RS_S9_PARTY",
+	"RS_S9_S1M1",
+	"RS_S9_S1M2",
+	"RS_S9_S1M3",
+	"RS_S9_S1M4",
+	"RS_S9_S1M5",
+	"RS_S9_S1M6",
+	"RS_S9_S1M7",
+	"RS_S9_S2M1",
+	"RS_S9_S2M2",
+	"RS_S9_S2M3",
+	"RS_S9_S2M4",
+	"RS_S9_S2M5",
+	"RS_S9_S2M6",
+	"RS_S9_S2M7",
+	"RS_S9_S3M1",
+	"RS_S9_S3M2",
+	"RS_S9_S3M3",
+	"RS_S9_S3M4",
+	"RS_S9_S4M1",
+	"RS_S9_S4M2",
+	"RS_S9_S4M3",
+	"RS_S9_S4M4",
+	"RS_S9_S4M5",
+	"RS_S9_S4M6",
+	"RS_S9_S5M1",
+	"RS_S9_S5M2",
+	"RS_S9_S5M3",
+	"RS_S9_S5M4",
+	"RS_S9_S5M5",
+	"RS_S9_S5M6",
+	"R_S9_TREE_SHIP",
+	"R_S9_TREE_EXO", 
+	"R_S9_TREE_WEP",
+	"R_S9_TREE_SUIT",
+	"R_S9_TREE_PART",
 }
 
 REWARDS_GVECTOR = {
@@ -248,7 +260,8 @@ QUICK_ACTION_LIST =
 	"S5_REWARDS",
 	"S6_REWARDS",
 	"S7_REWARDS",
-	"S8_REWARDS",		
+	"S8_REWARDS",
+	"S9_REWARDS",	
 	"S1_GV",
 	"S3_NORMANDY",	
 }
@@ -310,6 +323,13 @@ QUICK_ACTION_MENU =
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.8.DDS",
 		["ANIM"]   = "UnlockS8Reward",
 		["REWARD"] = REWARDS_8		
+	},
+	["S9_REWARDS"] = 
+	{
+		["TITLE"]  = "Unlock Season 9 Reward",
+		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\BYTEBEAT\BYTEBEAT.9.DDS",
+		["ANIM"]   = "UnlockS9Reward",
+		["REWARD"] = REWARDS_9		
 	},		
 	["S1_GV"] = 
 	{
@@ -374,7 +394,8 @@ return [[
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
               </Property>	
-              <Property name="Action">]] .. REWARD_ACTIONS .. [[
+              <Property name="Action">
+]] .. REWARD_ACTIONS .. [[
               </Property>
             </Property>
           </Property>
@@ -415,8 +436,6 @@ return [[
     </Property>	
 ]]
 end
-LF = string.char(10)
-TAB = string.char(9)
 ANIMS = ""
 TRIGGERS = ""
 REWARD_ACTIONS = ""
@@ -425,7 +444,10 @@ EMOTEMENU = ""
 for i=1,#QUICK_ACTION_LIST,1 do
 	ANIMS = ANIMS .. GetAnim(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"])
 	for j=1,#QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARD"],1 do
-		REWARD_ACTIONS = REWARD_ACTIONS .. TAB..TAB..TAB..[[<Property value="GcRewardAction.xml">]] .. LF..TAB..TAB..TAB .. [[<Property name="Reward" value="]] .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARD"][j] .. [[" />]] .. LF..TAB..TAB..TAB .. [[</Property>]] .. LF
+		REWARD_ACTIONS = REWARD_ACTIONS..[[                <Property value="GcRewardAction.xml">
+]]..[[                  <Property name="Reward" value="]]..QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["REWARD"][j]..[[" />
+]]..[[                </Property>
+]]
 	end
 	TRIGGERS = TRIGGERS .. GetTrigger(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], REWARD_ACTIONS)
     REWARD_ACTIONS = ""	
@@ -437,7 +459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.00",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -448,14 +470,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"]       = "+0",
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]               = ANIMS
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"]         = "-2",
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["ADD_OPTION"]          = "ADDafterSECTION",
 							["ADD"]                 = TRIGGERS						
 						}
 					}

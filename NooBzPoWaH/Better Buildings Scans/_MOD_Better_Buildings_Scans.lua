@@ -2,9 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "_MOD_Better_Buildings_Scans.pak", 
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
-["LUA_AUTHOR"]				= "NooBzPoWaH",
-["NMS_VERSION"]				= "3.+",
-["MOD_DESCRIPTION"]			= "This mods increases the ships and visor's scans range to find buildings",
+["NMS_VERSION"]				= "2.11",
+["MOD_DESCRIPTION"]			= "This mods increases the ship and visor scans to find buildings",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -18,14 +17,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"UnknownBuildingRange",	"4800"}  --Original "600"  line 187
+								{"UnknownBuildingRange",	"1200"}  --Original "600"  line 187
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxIconRange",	"9600"}  --Original "1200"  line 188
+								{"MaxIconRange",	"2400"}  --Original "1200"  line 188
 							}
 						},
 						{
@@ -39,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxShipScanBuildings",	"4"}  --Original "2" line 192
+								{"MaxShipScanBuildings",	"3"}  --Original "2" line 192
 							}
 						}	
 					} --4 global replacements

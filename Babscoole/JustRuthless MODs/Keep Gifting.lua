@@ -155,9 +155,11 @@ return
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Positive" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
+          <Property name="OverrideWithAlienWord" value="False" />
+          <Property name="ReseedInteractionOnUse" value="False" />
           <Property name="KeepOpen" value="]]..keepopen..[[" />
           <Property name="DisplayCost" value="True" />
           <Property name="TruncateCost" value="False" />
@@ -173,7 +175,7 @@ return
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
 ]]
@@ -186,7 +188,7 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "3.99"
+NMS_Version = "4.00"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/COSTTABLE.MBIN"

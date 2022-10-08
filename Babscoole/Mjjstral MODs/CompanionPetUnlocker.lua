@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["Pet_Ride_Code"]   = "Corvus",
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.00",
 ["DESCRIPTION"]     = "Enables more creatures to become companion pets",
 ["MODIFICATIONS"]   = 
 	{
@@ -575,6 +575,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="TriggerAction" value="INACTIVE" />
       <Property name="TriggerActionOnPrepare" value="" />
@@ -591,6 +592,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="1" />
         <Property name="Repeat" value="True" />
         <Property name="RequiredTech" value="" />
+        <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="EventRenderers" />
       <Property name="EventRenderersAlt" />
@@ -613,6 +615,8 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ReseedAfterRewardSuccess" value="False" />
       <Property name="UsePersonalPersistentBuffer" value="False" />
       <Property name="InWorldUIScaler" value="0" />
+      <Property name="StartMissionOnUse" value="" />
+      <Property name="AllowMissionUnderwater" value="True" />
     </Property>
 ]]
 						}

@@ -95,7 +95,7 @@ PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_AntGuy'sSky_v1.02.pak",
+["MOD_FILENAME"] 			= "LASAGNA_AntGuy'sSky_v1.03.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
