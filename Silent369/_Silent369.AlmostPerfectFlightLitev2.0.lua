@@ -31,7 +31,7 @@ _warpSMult = 2.25
 --Handling
 _brakeMult = 0.8
 _lsptrnDmp = 0.1
-_min_speed = 0.01
+_min_speed = 0
 _overBreak = 0.15
 _speedFall = 0
 _trnStreng = 3

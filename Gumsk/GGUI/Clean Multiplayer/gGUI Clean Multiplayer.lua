@@ -2,7 +2,7 @@ Author = "Gumsk,lMonk"
 ModName = "gGUI"
 ModNameSub = "Clean Multiplayer"
 BaseDescription = ""
-GameVersion = "397"
+GameVersion = "401"
 ModVersion = "a"
 FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\MESSENGER\MESSENGER.SCENE.MBIN"
 FileSource2 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\MESSENGER\ENTITIES\MESSENGER.ENTITY.MBIN"
@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							["SPECIAL_KEY_WORDS"]	= {"InteractionType","MessageBeacon"},
-							["LINE_OFFSET"] = "+1",
+							["LINE_OFFSET"] = 0,
 							["VALUE_CHANGE_TABLE"] 	= {
 								{"InteractionType","None"}
 							}

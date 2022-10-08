@@ -3,9 +3,9 @@ NewStrength = 6
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Torch Light 3.3.pak", 
+["MOD_FILENAME"] 			= "Better Torch Light 3.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.96",
+["NMS_VERSION"]				= "4.03",
 ["MOD_DESCRIPTION"]			= "This mods makes torch light more realistic",
 ["MODIFICATIONS"] 			= 
 	{
