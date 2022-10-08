@@ -5,7 +5,7 @@ local desc = [[
   * (the lists are non-random because a bug causes them to misbehave)
 ]]------------------------------------------------------------------------
 
-Mod_Version = 1.28
+Mod_Version = 1.3
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -23,7 +23,8 @@ local function R_TableItem(item, reward, data)
 			<Property name="Reward" value="]]..reward..[[">
 				]]..data..Amount()..[[
 			</Property>
-		</Property>]]
+		</Property>
+	]]
 end
 local function R_Money(item)
 	return R_TableItem(
@@ -53,7 +54,8 @@ local function R_MultiItem(item)
 				<Property name="ProcProdRarity" value="GcRarity.xml">
 					<Property name="Rarity" value="]]..(itm.r or 'Common')..[["/>
 				</Property>
-			</Property>]]
+			</Property>
+		]]
 	end
 	return R_TableItem(
 		item,
@@ -99,7 +101,6 @@ local E_ = {
 	-- Money
 	UT='Units',		NN='Nanites',		HG='Specials', -- quicksilver
 }
-
 
 local new_reward = {
 	{
@@ -151,7 +152,7 @@ local new_reward = {
 				c=100,
 				f=R_MultiItem
 			},
-			{id=E_.NN, n=190, x=270, c=100, f=R_Money},
+			{id=E_.NN, n=340, x=450, c=100, f=R_Money},
 		}
 	}
 }
@@ -173,19 +174,14 @@ function new_reward:AddTableEntry(rte)
 				<Property name="OverrideZeroSeed" value="]]..bool(rte.zeroseed)..[["/>
 				]]..getRewardsList(rte.rewardlist)..[[
 			</Property>
-		</Property>]]
+		</Property>
+	]]
 end
 
 local function AddNewRewardsToChangeTable()
 	local T = {}
 	local rewards = ''
 	for _,rwd in ipairs(new_reward) do
-		if rwd.replacement then
-			table.insert(T, {
-				SPECIAL_KEY_WORDS	= {'Id', rwd.id},
-				REMOVE				= 'Section'
-			})
-		end
 		rewards = rewards..new_reward:AddTableEntry(rwd)
 	end
 	table.insert(T, {
@@ -198,7 +194,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Freighter Defense Rewards.'..Mod_Version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.99.1',
+	NMS_VERSION			= '4.0.1',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Full"
 BaseDescription = "All my changes to the Technology Table"
-GameVersion = "397"
+GameVersion = "401"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
@@ -48,10 +48,10 @@ FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
 --Starship Adjustments
 	ShipTransferRange = 800										--How much distance does the Teleport Receiver tech add, in u? Original value "150"
-			Ship_PulseDrive_MiniJumpFuelSpending = 1					--1
-			Ship_Boost = 100											--100
-			Ship_Maneuverability = 1									--1
-			Ship_PulseDrive_MiniJumpSpeed = 1							--1
+			-- Ship_PulseDrive_MiniJumpFuelSpending = 1					--1
+			-- Ship_Boost = 100											--100
+			-- Ship_Maneuverability = 1									--1
+			-- Ship_PulseDrive_MiniJumpSpeed = 1							--1
 	
 
 --Multitool Adjustments
@@ -104,13 +104,13 @@ FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 	MechVehicle_BoostTanks = 9999							--1 - Infinite
 		
 	--Mech Laser
-			MechVehicle_LaserDamage = 100							--100
-			MechVehicle_LaserHeatTime = 1							--1
+			-- MechVehicle_LaserDamage = 100							--100
+			-- MechVehicle_LaserHeatTime = 1							--1
 	
 	--Mech Gun
-			MechVehicle_GunDamage = 340								--340
-			MechVehicle_GunHeatTime = 1								--1
-			MechVehicle_GunRate = 0.35								--.35
+			-- MechVehicle_GunDamage = 340								--340
+			-- MechVehicle_GunHeatTime = 1								--1
+			-- MechVehicle_GunRate = 0.35								--.35
 		
 
 NMS_MOD_DEFINITION_CONTAINER = {

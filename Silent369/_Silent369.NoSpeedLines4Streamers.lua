@@ -1,8 +1,8 @@
 local modfilename = "NoSpeedLines4Streamers"
 local lua_author  = "Silent"
-local lua_version = "v1.3"
+local lua_version = "v1.4"
 local mod_author  = "Silent369"
-local nms_version = "3.9x"
+local nms_version = "4.0.x"
 local description = "No speed lines. No ship halo effect at cruise/boost/pulse speeds in space. No Space Dust / Plasma."
 
 --Modifies:
@@ -15,17 +15,17 @@ local description = "No speed lines. No ship halo effect at cruise/boost/pulse s
 --MODELS\EFFECTS\WARP\SPEEDTUNNEL\SPEEDTUNNELMAT.MATERIAL.MBIN
 
 --Material Vec4
-_tParamsVec4             = 0
+local _tParamsVec4             = 0
 
 --Dust Particles    (cannot be 0)
-_dparticleNum            = 1        --Original "500"
-_dpartLifeMin            = 0.01     --Original "1.5"
-_dpartLifeMax            = 0.01     --Original "2.5"
+local _dparticleNum            = 1        --Original "500"
+local _dpartLifeMin            = 0.01     --Original "1.5"
+local _dpartLifeMax            = 0.01     --Original "2.5"
 
 --Plasma Particles  (cannot be 0)
-_pparticleNum            = 1        --Original "100"
-_ppartLifeMin            = 0.01     --Original "1"
-_ppartLifeMax            = 0.01     --Original "1"
+local _pparticleNum            = 1        --Original "100"
+local _ppartLifeMin            = 0.01     --Original "1"
+local _ppartLifeMax            = 0.01     --Original "1"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -150,6 +150,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
+
+                    --|----------------------------------------------------------------------------------------
+                    --| Max Asteroid Generation Per Frame Pulse Jump
+                    --|----------------------------------------------------------------------------------------
+
+                --{
+                --    ["MBIN_FILE_SOURCE"]   = {"GCENVIRONMENTGLOBALS.GLOBAL.MBIN"},
+                --    ["EXML_CHANGE_TABLE"]  =
+                --    {
+                --        {
+                --            ["VALUE_CHANGE_TABLE"]  =
+                --            {
+                --                {"MaxAsteroidGenerationPerFramePulseJump",   "0"}, --Original "1000"
+                --            }
+                --        },
+                --    }
+                --},
             }
         },
     }

@@ -120,7 +120,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.royal palette.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.0.1',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -171,4 +171,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 		}
 	}
-}}}}
+}}},
+	ADD_FILES	= {
+		{
+			EXTERNAL_FILE_SOURCE = 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Ship/Royal/*.DDS',
+			FILE_DESTINATION	 = 'TEXTURES/COMMON/SPACECRAFT/S-CLASS/*.DDS',
+		}
+	}
+}

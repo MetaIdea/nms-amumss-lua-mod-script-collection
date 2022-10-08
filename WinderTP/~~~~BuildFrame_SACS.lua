@@ -652,7 +652,7 @@ UI_HEIGHT_MULTIPLIER = "3.2"
 -- ONLY EDIT UPON VANILLA BASE BUILDING PALETTE UPDATES
 CURRENT_VANILLA_COLOUR = 0
 -- CURRENT_VANILLA_COLOUR = 66
-for _,j in pairs(NUM_VANILLA_COLOUR) do
+for _i,j in pairs(NUM_VANILLA_COLOUR) do
 	CURRENT_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR + j
 end
 
@@ -684,7 +684,7 @@ DEBUG_TEXT = false
 COLOUR_START =  [[
 		<!--BuildFrame-->
         <Property value="GcNGuiSpacingData.xml">
-          <Property name="Data" value="GcNGuiElementData.xml">
+          <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
@@ -713,7 +713,7 @@ COLOUR_START =  [[
           </Property>
         </Property>
         <Property value="GcNGuiSpacingData.xml">
-          <Property name="Data" value="GcNGuiElementData.xml">
+          <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
@@ -744,7 +744,7 @@ COLOUR_START =  [[
 ]]
 SPACING = [[
         <Property value="GcNGuiSpacingData.xml">
-          <Property name="Data" value="GcNGuiElementData.xml">
+          <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
@@ -774,66 +774,8 @@ SPACING = [[
         </Property>
 ]]
 LINE_BREAK = [[
-		<!--Property value="GcNGuiSpacingData.xml">
-          <Property name="Data" value="GcNGuiElementData.xml">
-            <Property name="ID" value="" />
-            <Property name="PresetID" value="" />
-            <Property name="IsHidden" value="False" />
-            <Property name="Layout" value="GcNGuiLayoutData.xml">
-              <Property name="PositionX" value="0" />
-              <Property name="PositionY" value="0" />
-              <Property name="Width" value="5" />
-              <Property name="WidthPercentage" value="False" />
-              <Property name="Height" value="20" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
-              <Property name="ConstrainAspect" value="1" />
-              <Property name="ForceAspect" value="False" />
-              <Property name="Anchor" value="False" />
-              <Property name="AnchorPercent" value="False" />
-              <Property name="SameLine" value="True" />
-              <Property name="Align" value="TkNGuiAlignment.xml">
-                <Property name="Vertical" value="Top" />
-                <Property name="Horizontal" value="Left" />
-              </Property>
-              <Property name="SlowCursorOnHover" value="False" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="VROverrides" />
-              <Property name="AccessibleOverrides" />
-            </Property>
-          </Property>
-        </Property>
         <Property value="GcNGuiSpacingData.xml">
-          <Property name="Data" value="GcNGuiElementData.xml">
-            <Property name="ID" value="" />
-            <Property name="PresetID" value="" />
-            <Property name="IsHidden" value="False" />
-            <Property name="Layout" value="GcNGuiLayoutData.xml">
-              <Property name="PositionX" value="0" />
-              <Property name="PositionY" value="0" />
-              <Property name="Width" value="15" />
-              <Property name="WidthPercentage" value="False" />
-              <Property name="Height" value="20" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
-              <Property name="ConstrainAspect" value="1" />
-              <Property name="ForceAspect" value="False" />
-              <Property name="Anchor" value="False" />
-              <Property name="AnchorPercent" value="False" />
-              <Property name="SameLine" value="True" />
-              <Property name="Align" value="TkNGuiAlignment.xml">
-                <Property name="Vertical" value="Top" />
-                <Property name="Horizontal" value="Left" />
-              </Property>
-              <Property name="SlowCursorOnHover" value="False" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="VROverrides" />
-              <Property name="AccessibleOverrides" />
-            </Property>
-          </Property>
-        </Property-->
-        <Property value="GcNGuiSpacingData.xml">
-          <Property name="Data" value="GcNGuiElementData.xml">
+          <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="THIS ONE" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
@@ -862,7 +804,7 @@ LINE_BREAK = [[
           </Property>
         </Property>
         <Property value="GcNGuiSpacingData.xml">
-          <Property name="Data" value="GcNGuiElementData.xml">
+          <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
@@ -984,9 +926,9 @@ end
 -- EFFICIENCY IMPROVEMENTS COURTESY OF Wberto
 function GetPaletteGroupEntry_ALT(ID)
 return [[
+    <!--BUILDFRAME -->
 		<Property value="NMSString0x20.xml">
-		  <!--BUILDFRAME -->
-		  <Property name="Value" value= "]] .. ID .. [["/>
+		  <Property name="Value" value="]] .. ID .. [[ "/>
 		</Property>
 ]]
 end
@@ -1233,31 +1175,33 @@ PALETTE_GROUP_ADD_TEXT = {}
 
 -- INITIALISE THE TEXT TABLE TO BE INJECTED INTO CORRESPONDING VANILLA PALETTE GROUPS
 -- EFFICIENCY IMPROVEMENTS COURTESY OF Wberto
-for _,j in pairs(VANILLA_PALETTE_IDS) do
-	if DEBUG_TEXT then print(j["Group"])
+for i,j in pairs(VANILLA_PALETTE_IDS) do
+	if DEBUG_TEXT then
+		print(j["Group"])
 	end
 	PALETTE_GROUP_ADD_TEXT[j["Group"]] = {}
 end
 
 OG_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR
 -- ADDING NEW PALETTES
-for _,n in pairs(NEW_COLOURS_HEX) do
+for m,n in pairs(NEW_COLOURS_HEX) do
 NEW_COLOURS = {}
 CURRENT_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR + 1
 	-- RGB IN Vector3f FORMAT, TRUNCATED TO 3 DECIMAL PLACES
-	for _,j in pairs(PALETTE_QUAD) do
+	for i,j in pairs(PALETTE_QUAD) do
 		NEW_COLOUR_TEMP = {}
 		for k,l in pairs(RGB) do
 			-- CONVERTING 2 DIGITS OF THE HEX COLOUR INTO DECIMAL, DIVIDING BY 255 AND TRUNCATING TO 3 D.P
 			NEW_COLOUR_TEMP[l] = trunc(tonumber(string.sub(n[j],((k-1)*2)+1,((k-1)*2)+2),16)/255)
-			if DEBUG_TEXT then print(l .. [[ - ]] .. NEW_COLOUR_TEMP[l])
+			if DEBUG_TEXT then
+				print(l .. [[ - ]] .. NEW_COLOUR_TEMP[l])
 			end
 		end
 		-- SETTING PRI/SEC/TER/QUA COLOURS ACCORDING TO PALETTE_QUAD
 		NEW_COLOURS[j] = NEW_COLOUR_TEMP
 	end
 	table.insert(MARVELLER,GetBaseBuildingPalette(NEW_COLOURS["PrimaryColour"], NEW_COLOURS["SecondaryColour"], NEW_COLOURS["TernaryColour"], NEW_COLOURS["QuaternaryColour"], n["Name"], n["Id"]))
-	for _,p in pairs(n["PaletteGroup"]) do
+	for o,p in pairs(n["PaletteGroup"]) do
 		table.insert(PALETTE_GROUP_ADD_TEXT[p], GetPaletteGroupEntry_ALT(n["Id"]))
 	end
 	-- CHECK TOTAL NUMBER OF PALETTES TO PREVENT VANILLA PALETTES DISAPPEARING FROM OVERFLOW
@@ -1268,10 +1212,10 @@ CURRENT_VANILLA_COLOUR = CURRENT_VANILLA_COLOUR + 1
 end
 
 -- INJECTING ALL VANILLA PALETTES IN GROUPS OTHER THAN LEGACY INTO THE LEGACY GROUP
-for _,j in pairs(VANILLA_PALETTE_IDS) do
+for i,j in pairs(VANILLA_PALETTE_IDS) do
 	-- table.insert(CHANGE_LEOPARDON, GetObjectPaletteGroupReplacement(j["Group"]))
 	if j["Group"] ~= "LEGACY" then
-		for _,l in pairs(j["Palettes"]) do
+		for k,l in pairs(j["Palettes"]) do
 			table.insert(PALETTE_GROUP_ADD_TEXT["LEGACY"], GetPaletteGroupEntry_ALT(l))
 		end
 	end
@@ -1280,7 +1224,7 @@ end
 -- EFFICIENCY IMPROVEMENTS COURTESY OF Wberto
 table.insert(CHANGE_LEOPARDON, PALETTE_GROUP_REPLACEMENT)
 table.insert(CHANGE_LEOPARDON, DEFAULT_PALETTE_REPLACEMENT)
-for _,j in pairs(VANILLA_PALETTE_IDS) do
+for i,j in pairs(VANILLA_PALETTE_IDS) do
 	-- DOESN'T TRY TO MAKE AMUMSS DO NOTHING IF A PALETTE GROUP HAS NOTHING ADDED TO IT, REDUCES WARNINGS
 	if #PALETTE_GROUP_ADD_TEXT[j["Group"]] > 0 then
 		PALETTE_GROUP_CHANGE_TABLE[j["Group"]] = GetPaletteGroupEntry(j["Group"], table.concat(PALETTE_GROUP_ADD_TEXT[j["Group"]]))
@@ -1313,10 +1257,11 @@ end
 
 if USE_LEGACY_PALETTE_LIST then
 	table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(#VANILLA_PALETTE_IDS["LEGACY"]["Palettes"]), table.concat(MARVELLER)))
-else table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(OG_VANILLA_COLOUR + 1), table.concat(MARVELLER)))
+else
+  table.insert(CHANGE_LEOPARDON, GetYeetPaletteTable(tostring(OG_VANILLA_COLOUR + 1), table.concat(MARVELLER)))
 end
 
-for _,j in pairs(PALETTE_GROUP_CHANGE_TABLE) do
+for i,j in pairs(PALETTE_GROUP_CHANGE_TABLE) do
 	table.insert(CHANGE_LEOPARDON, j)
 end
 

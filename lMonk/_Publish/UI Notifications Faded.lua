@@ -3,27 +3,23 @@ local desc = [[
   removes the notification panel's background and icon and add transparency
   to the text - fading the message into the background (and a bit harder to read)
 ]]------------------------------------------------------------------------
-Text_Alpha = 0.66
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '_MOD.lMonk.FADED Notifications.pak',
-	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
-	MOD_DESCRIPTION		= desc,
-	MODIFICATIONS 		= {{
-	MBIN_CHANGE_TABLE 	= {
+	MOD_FILENAME 			= '_MOD.lMonk.FADED Notifications.pak',
+	MOD_AUTHOR				= 'lMonk',
+	NMS_VERSION				= '4.0.1',
+	MOD_DESCRIPTION			= desc,
+	GLOBAL_INTEGER_TO_FLOAT = 'Force',
+	MODIFICATIONS 			= {{
+	MBIN_CHANGE_TABLE 		= {
 	{
 		MBIN_FILE_SOURCE	= 'UI/HUD/HUDNOTIFICATIONPANEL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'TITLEBACKGROUND'},
-				SECTION_UP			= 1,
-				VALUE_CHANGE_TABLE 	= {
-					{'IsHidden',	true}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'BACKGROUND'},
+				FOREACH_SKW_GROUP 	= {
+					{'ID', 'TITLEBACKGROUND'},
+					{'ID', 'BACKGROUND'},
+				},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
 					{'IsHidden',	true}
@@ -36,43 +32,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				FOREACH_SKW_GROUP 	= {
+					{'ID', 'TITLE'},
+					{'ID', 'BODY'}
+				},
 				REPLACE_TYPE 		= 'All',
-				MATH_OPERATION 		= '*',
-				INTEGER_TO_FLOAT	= 'Force',
-				SPECIAL_KEY_WORDS	= {'ID', 'TITLE'},
+				VALUE_MATCH			= 1,
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
-					{'A',	Text_Alpha}
+					{'A',			0.64}
 				}
 			},
 			{
+				FOREACH_SKW_GROUP 	= {
+					{'ID', 'HEADERLINE'},
+					{'ID', 'BASELINE'}
+				},
 				REPLACE_TYPE 		= 'All',
-				MATH_OPERATION 		= '*',
-				INTEGER_TO_FLOAT	= 'Force',
-				SPECIAL_KEY_WORDS	= {'ID', 'BODY'},
+				VALUE_MATCH			= 1,
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
-					{'A',	Text_Alpha}
-				}
-			},
-			{
-				REPLACE_TYPE 		= 'All',
-				MATH_OPERATION 		= '*',
-				INTEGER_TO_FLOAT	= 'Force',
-				SPECIAL_KEY_WORDS	= {'ID', 'HEADERLINE'},
-				SECTION_UP			= 1,
-				VALUE_CHANGE_TABLE 	= {
-					{'A',	Text_Alpha - 0.1}
-				}
-			},
-			{
-				REPLACE_TYPE 		= 'All',
-				MATH_OPERATION 		= '*',
-				INTEGER_TO_FLOAT	= 'Force',
-				SPECIAL_KEY_WORDS	= {'ID', 'BASELINE'},
-				SECTION_UP			= 1,
-				VALUE_CHANGE_TABLE 	= {
-					{'A',	Text_Alpha - 0.1}
+					{'A',			0.3}
 				}
 			}
 		}

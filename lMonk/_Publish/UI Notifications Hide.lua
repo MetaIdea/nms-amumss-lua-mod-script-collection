@@ -6,7 +6,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Hide notifications.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.0.1',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE 	= {
@@ -14,31 +14,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'UI/HUD/HUDNOTIFICATIONPANEL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'ID', 'TITLE'},
-				VALUE_CHANGE_TABLE 	= {
-					{'IsHidden',	true}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'BODY'},
-				VALUE_CHANGE_TABLE 	= {
-					{'IsHidden',	true}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'HEADERLINE'},
-				VALUE_CHANGE_TABLE 	= {
-					{'IsHidden',	true}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'BASELINE'},
-				VALUE_CHANGE_TABLE 	= {
-					{'IsHidden',	true}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'ICONS'},
+				FOREACH_SKW_GROUP 	= {
+					{'ID', 'TITLE'},
+					{'ID', 'BODY'},
+					{'ID', 'HEADERLINE'},
+					{'ID', 'BASELINE'},
+					{'ID', 'ICONS'},
+					{'ID', 'SMALLICON'},
+					{'ID', 'EXCLAMATION'}
+				},
 				VALUE_CHANGE_TABLE 	= {
 					{'IsHidden',	true}
 				}
@@ -46,18 +30,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'ID', 'ICON', 'Vertical', 'Bottom'},
 				SECTION_UP			= 2,
-				VALUE_CHANGE_TABLE 	= {
-					{'IsHidden',	true}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'SMALLICON'},
-				VALUE_CHANGE_TABLE 	= {
-					{'IsHidden',	true}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'ID', 'EXCLAMATION'},
 				VALUE_CHANGE_TABLE 	= {
 					{'IsHidden',	true}
 				}

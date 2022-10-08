@@ -3,11 +3,11 @@ local desc = [[
   Enable scanner tech and materials teleport for bioship
   Increase bioship pulse upgrades stats for higher speed and maneuverability
 ]]---------------------------------------------------------------------------
-	
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.living ship upgrades.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.0.1',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

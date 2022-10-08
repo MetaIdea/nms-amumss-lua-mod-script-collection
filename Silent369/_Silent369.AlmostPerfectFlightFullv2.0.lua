@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectFlightFull"
 local lua_author  = "Silent"
-local lua_version = "v1.9"
+local lua_version = "v2.0"
 local mod_author  = "Silent369"
-local nms_version = "3.9x"
+local nms_version = "4.0.x"
 local description = [[
 Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics.
 With optional settings to make flight much easier (a bit cheaty, hence optional).
@@ -31,7 +31,7 @@ _warpSMult = 4.2
 --Handling
 _brakeMult = 0.8
 _lsptrnDmp = 0.1
-_min_speed = 0
+_min_speed = 0.01
 _overBreak = 0.15
 _speedFall = 0
 _trnStreng = 3
@@ -300,24 +300,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HoverMinSpeed",                          _min_speed}, --Original "1"
                                 {"HoverLandReachedDistance",                      "3"}, --Original "4"
                                 {"HoverLandManeuvreTimeMin",                    "0.5"}, --Original "0.7"
-                                {"LandingOnGroundTip",                          "-13"}, --Original "-20"
+                                {"LandingOnGroundTip",                          "-11"}, --Original "-20"
                                 {"LandingButtonMinTime",                       "0.15"}, --Original "0.5"
                                 {"LandHeightThreshold",                          "80"}, --Original "100"
-                                {"LandingPushNoseUpFactor",                    "0.05"}, --Original "0.15"
+                                {"LandingPushNoseUpFactor",                     "0.1"}, --Original "0.15"
                                 {"MiniWarpChargeTime",                          "1.4"}, --Original "2"
                                 {"MiniWarpLinesNum",                              "0"}, --Original "4"      --METRIC LINES
                                 {"MiniWarpNoAsteroidRadius",                   "9000"}, --Original "1500"
-                                {"MiniWarpHUDArrowAttractAngle",                  "5"}, --Original "10"
+                                {"MiniWarpHUDArrowAttractAngle",                  "7"}, --Original "10"
                                 {"MiniWarpStationRadius",                       "500"}, --Original "700"
                                 {"MiniWarpStoppingMarginPlanet",               "2000"}, --Original "5000"
-                                {"MiniWarpStoppingMarginStation",              "1250"}, --Original "2500"
+                                {"MiniWarpStoppingMarginDefault",              "1250"}, --Original "2500"
+                                {"MiniWarpStoppingMarginLong",                 "1750"}, --Original "3500"
+                                {"MiniWarpTrackingMargin",                       "50"}, --Original "100"
+                                {"MiniWarpExitSpeed",                           "500"}, --Original "1000"
+                                {"MiniWarpExitSpeedStation",                    "250"}, --Original "500"
+                                {"MiniWarpExitTime",                           "0.25"}, --Original "0.5"
                                 {"PadTurnSpeed",                           _padTurnSp}, --Original "1"
                                 {"PostWarpSlowDownTime",                        "1.5"}, --Original "3"
                                 {"PulseDriveStationApproachSlowdownRange",     "3500"}, --Original "5000"
                                 {"PulseDriveStationApproachSlowdownRangeMin",   "700"}, --Original "1000"
                                 {"TurnRudderStrength",                            "1"}, --Original "0.4"
                                 {"MaximumDistanceFromShipWhenExiting",            "5"}, --Original "10"
-
                                 {"ShipMinHeightForce",                          "0.1"}, --Original "1"
 
                                 {"NoBoostStationDistance",                        "0"}, --Original "2000"
@@ -341,7 +345,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --| Landing Slope Settings
                         --|=======================================================================================--
 
+                                {"LandLookingForward",                            "6"}, --Original "160"
                                 {"LandSlopeMax",                                 "90"}, --Original "22"
+                                {"LandingAreaFloorOffset",                      "0.5"}, --Original "1"
 
                         --|=======================================================================================--
                         --| WarpIn Range Settings

@@ -6,7 +6,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.multitool upgrade terminal.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.0.1',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -50,7 +50,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							<Property name="FarFadeDistance" value="2"/>
 						</Property>
 						<Property name="OverrideInteriorExteriorMarker" value="No"/>
-					</Property>]]
+					</Property>
+				]]
 			}
 		}
 	}

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= "Short Shop Dialogs 2.4.pak",
+	["MOD_FILENAME"]	= "Short Shop Dialogs 2.5.pak",
 	["MOD_DESCRIPTION"]	= "Reduces shop dialogs to 1 page.",
 	["MOD_AUTHOR"]		= "Lo2k",
 	["LUA_AUTHOR"]		= "Droseran",
-	["NMS_VERSION"]		= "3.99",
+	["NMS_VERSION"]		= "4.0",
 	["MODIFICATIONS"]	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {

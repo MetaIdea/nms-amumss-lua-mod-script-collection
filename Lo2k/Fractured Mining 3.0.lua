@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Fractured Mining 2.9.pak", 
+["MOD_FILENAME"] 			= "Fractured Mining 3.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.97",
+["NMS_VERSION"]				= "4.0",
 ["MOD_DESCRIPTION"]			= "This mod improves mining effects",
 ["MODIFICATIONS"] 			= 
 	{
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"Scale",	"0.8"},
 								{"Speed",	"2"},
-								{"AngularSpeed", "0.75"},			
+								{"AnglularSpeed", "0.75"},			
 							}
 						},
 					},

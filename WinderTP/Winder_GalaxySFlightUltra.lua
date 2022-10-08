@@ -54,12 +54,18 @@ table.insert(FINAL_CHANGES,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"MiniWarpSpeed",						"150000"},	
-								{"MiniWarpHUDArrowAttractAngle",		"5"},	
+								{"MiniWarpHUDArrowAttractAngle",		"2"},	
+								{"MiniWarpHUDArrowAttractAngleStation",		"1"},	
+								{"MiniWarpHUDArrowAttractAngleDense",		"1"},	
 								{"MiniWarpStoppingMarginPlanet",		"2000"},	
 								{"MiniWarpMinPlanetDistance",			"300"},	
 								{"MiniWarpStoppingMarginStation",		"1000"},	
 								{"MiniWarpTrackingMargin",				"20"},	
-								{"MiniWarpExitSpeed",					"750"},	
+								{"MiniWarpExitSpeed",					"450"},	
+								{"MiniWarpExitTime",					"0.225"},	
+								{"MiniWarpMarkerApproachSlowdown",		"0.96"},	
+								{"MiniWarpPlanetRadius",				"200"},	
+								{"MiniWarpStationRadius",				"200"},	
 							}
 						}	)
 end
@@ -131,6 +137,11 @@ table.insert(FINAL_CHANGES,
 								-- {"ShipPlanetBrakeMaxHeight",			"-1"},
 								{"ShipPlanetBrakeAlignMinTime",			"-1"},
 								{"ShipPlanetBrakeAlignMaxTime",			"-1"},
+								-- {"CruiseHeight",						"-1"},
+								-- {"CruiseHeightRange",					"1000"},
+								-- {"CruiseOffAngle",						"0"},
+								-- {"CruiseOffAngleRange",					"0"},
+								-- {"CruiseForce",							"50"},
 							}
 						}	)
 end
