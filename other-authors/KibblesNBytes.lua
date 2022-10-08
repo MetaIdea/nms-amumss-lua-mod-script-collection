@@ -150,6 +150,7 @@ SURFACENORMAL = {
 "FLOORMAT1",
 "FOORLIGHT",
 "FOOTLOCKER",
+"FRE_ROOM_LADDER",
 "GARAGE_B",
 "GARAGE_FREIGHT",
 "GARAGE_L",
@@ -583,7 +584,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "_______KibblesNBytes.pak", 
 ["MOD_AUTHOR"]				= "InstaKibs, WinderTP, Babscoole",
-["NMS_VERSION"]				= "3.97",
+["NMS_VERSION"]				= "4.00",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -594,7 +595,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{				
 						{
-							["PRECEDING_KEY_WORDS"] = "",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
