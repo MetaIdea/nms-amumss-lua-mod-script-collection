@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Quick Machineries.pak", 
+["MOD_FILENAME"] 			= "Quick Machineries 1.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.93",
+["NMS_VERSION"]				= "4.0",
 ["MOD_DESCRIPTION"]			= "This mod opens machineries in 1-click",
 ["MODIFICATIONS"] 			= 
 	{

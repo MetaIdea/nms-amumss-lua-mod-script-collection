@@ -1,8 +1,8 @@
 local modfilename = "BgDarkUI"
 local lua_author  = "Silent"
-local lua_version = "v1.1"
+local lua_version = "v1.2"
 local mod_author  = "Silent369"
-local nms_version = "3.99x"
+local nms_version = "4.00.x"
 local description = "Changes Start/Options Backgrounds and Transparent UI"
 
 --credit to Lo2k (https://www.nexusmods.com/nomanssky/mods/1706)

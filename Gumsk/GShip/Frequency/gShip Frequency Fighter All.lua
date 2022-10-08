@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Frequency"
 ModNameSub = "Fighter All"
 BaseDescription = "Changes frequency of ships spawning in the wild"
-GameVersion = "399"
+GameVersion = "401"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 

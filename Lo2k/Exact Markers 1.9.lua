@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Exact Markers 1.8.pak", 
+["MOD_FILENAME"] 			= "Exact Markers 1.9.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.94",
+["NMS_VERSION"]				= "4.0",
 ["MOD_DESCRIPTION"]			= "This mods place markers at the exact item position",
 ["MODIFICATIONS"] 			= 
 	{
