@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "GExos Challenge"
 ModNameSub = "gDamage"
 BaseDescription = "Damage adjustments"
-GameVersion = "397"
+GameVersion = "401"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
