@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "AbandonedBuildingFinder.pak",
 ["MOD_DESCRIPTION"] = "Planetary Chart B (Emergency Cartographic Data) will only show abandoned buildings", 
 ["MOD_AUTHOR"]      = "Babscoole", 
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.00",
 ["MODIFICATIONS"]   = 
 	{
 		{

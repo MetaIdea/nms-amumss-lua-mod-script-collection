@@ -582,8 +582,8 @@ return
                 <Property name="AlienRace" value="]]..race..[[" />
               </Property>
               <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
+              <Property name="Category" value="wordcategorytableEnum.xml">
+                <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -607,8 +607,8 @@ return
                 <Property name="AlienRace" value="]]..race..[[" />
               </Property>
               <Property name="UseCategory" value="]]..usecategory..[[" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="]]..category..[[" />
+              <Property name="Category" value="wordcategorytableEnum.xml">
+                <Property name="wordcategorytableEnum" value="]]..category..[[" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -635,7 +635,7 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "3.99"
+NMS_Version = "4.00"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"

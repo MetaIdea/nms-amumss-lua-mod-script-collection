@@ -83,14 +83,12 @@ BUILDABLE_OBJECT_TABLE =
 	{ ["ID_NAME"]="NPCSPECIALSHOP", ["P_NAME"]="NPCSPECIALSHOP", 	["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="NPCVYKEEN", 	    ["P_NAME"]="NPCVYKEEN", 	    ["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="PLAYERCHARACTER",["P_NAME"]="PLAYERCHARACTER",	["PATH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/",	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
-	{ ["ID_NAME"]="ANOMALYEXPLORER",["P_NAME"]="ANOMALYEXPLORER",	["PATH"]="MODELS/PLANETS/NPCS/EXPLORER/", 			["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="EXPLORER", 	    ["P_NAME"]="EXPLORER", 	    	["PATH"]="MODELS/PLANETS/NPCS/EXPLORER/", 			["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="EXPLORERSTAND", 	["P_NAME"]="EXPLORERSTAND", 	["PATH"]="MODELS/PLANETS/NPCS/EXPLORER/", 			["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="FOURTHRACE", 	["P_NAME"]="FOURTHRACE", 	    ["PATH"]="MODELS/PLANETS/NPCS/FOURTHRACE/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="HOLOEXPLORER", 	["P_NAME"]="HOLOEXPLORER", 	    ["PATH"]="MODELS/PLANETS/NPCS/FOURTHRACE/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="HOLONOONE", 	    ["P_NAME"]="HOLONOONE", 	    ["PATH"]="MODELS/PLANETS/NPCS/FOURTHRACE/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="HOLOSCEPTIC", 	["P_NAME"]="HOLOSCEPTIC", 	    ["PATH"]="MODELS/PLANETS/NPCS/FOURTHRACE/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
-	{ ["ID_NAME"]="ANOMALYLWRORDER",["P_NAME"]="ANOMALYLOWERORDER", ["PATH"]="MODELS/PLANETS/NPCS/LOWERORDER/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="LOWERORDER", 	["P_NAME"]="LOWERORDER", 	    ["PATH"]="MODELS/PLANETS/NPCS/LOWERORDER/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="LOWERORDERBODY", ["P_NAME"]="LOWERORDERBODY", 	["PATH"]="MODELS/PLANETS/NPCS/LOWERORDER/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
 	{ ["ID_NAME"]="LOWERORDERIPAD", ["P_NAME"]="LOWERORDERIPAD", 	["PATH"]="MODELS/PLANETS/NPCS/LOWERORDER/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="NPC", ["ICON"]=NPCICON },
@@ -603,6 +601,7 @@ BUILDABLE_OBJECT_TABLE =
 	{ ["ID_NAME"]="CORRUPTEDDRONE", ["P_NAME"]="CORRUPTEDDRONE", 		["PATH"]="MODELS/COMMON/ROBOTS/", 			  						["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="VEHICLES", ["ICON"]=SHIPICON },
 	{ ["ID_NAME"]="DRONE", 	    	["P_NAME"]="DRONE", 	    		["PATH"]="MODELS/COMMON/ROBOTS/", 			  						["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="VEHICLES", ["ICON"]=SHIPICON },
 	{ ["ID_NAME"]="DRONEARMOURED", 	["P_NAME"]="DRONEARMOURED", 	    ["PATH"]="MODELS/COMMON/ROBOTS/", 			  						["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="VEHICLES", ["ICON"]=SHIPICON },
+	{ ["ID_NAME"]="DRONESUMMONER", 	["P_NAME"]="DRONESUMMONER", 	    ["PATH"]="MODELS/COMMON/ROBOTS/", 			  						["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="VEHICLES", ["ICON"]=SHIPICON },
 	{ ["ID_NAME"]="QUADRUPED", 	    ["P_NAME"]="QUADRUPED", 	    	["PATH"]="MODELS/COMMON/ROBOTS/", 			  						["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="VEHICLES", ["ICON"]=SHIPICON },
 	{ ["ID_NAME"]="WALKER", 	    ["P_NAME"]="WALKER", 	    		["PATH"]="MODELS/COMMON/ROBOTS/", 			  						["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="VEHICLES", ["ICON"]=SHIPICON },
 	{ ["ID_NAME"]="HMDDRONE", 	    ["P_NAME"]="HMDDRONE", 	    		["PATH"]="MODELS/COMMON/HMD/", 			  							["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="VEHICLES", ["ICON"]=SHIPICON },
@@ -682,6 +681,7 @@ BUILDABLE_OBJECT_TABLE =
 	{ ["ID_NAME"]="TRADINGPOSTWAR", ["P_NAME"]="TRADINGPOSTWARRIOR", 	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TRADINGPOST/", 			  			["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="TRADINGPOSTSCI", ["P_NAME"]="TRADINGPOSTSCIENTIFIC", ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TRADINGPOST/", 			  			["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="MONOLITH", 	    ["P_NAME"]="MONOLITH", 	    		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/MONOLITH/", 			  				["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
+	{ ["ID_NAME"]="DMGMACHINE_POD", ["P_NAME"]="DAMAGEDMACHINERY_POD", 	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DAMAGEDMACHINERY/", 			  		["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="HEXMONOLITH", 	["P_NAME"]="HEXMONOLITH", 	    	["PATH"]="MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/", 			  					["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="SMALLMONOLITH", 	["P_NAME"]="SMALLMONOLITH", 	    ["PATH"]="MODELS/PLANETS/BIOMES/UNDERWATER/UPDATEPROPS/", 			  					["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="ANOMALY", 	    ["P_NAME"]="ANOMALY", 	    		["PATH"]="MODELS/SPACE/ANOMALY/", 			  						["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
@@ -707,7 +707,7 @@ BUILDABLE_OBJECT_TABLE =
 	{ ["ID_NAME"]="INDUSTFRIGLOD0", ["P_NAME"]="INDUSTRIALFRIGATELOD0", ["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/", 			  			["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
 	{ ["ID_NAME"]="SCIFRIGLOD0", 	["P_NAME"]="SCIENCEFRIGATELOD0", 	["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/", 			  			["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
 	{ ["ID_NAME"]="COMBATFRIGLOD0", ["P_NAME"]="COMBATFRIGATELOD0", 	["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/", 			  			["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
-	{ ["ID_NAME"]="LIVINGFRIGLOD0", ["P_NAME"]="LIVINGFRIGATELOD0", 	["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/", 			  			["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },	
+	{ ["ID_NAME"]="LIVINGFRIGLOD0", ["P_NAME"]="LIVINGFRIGATELOD0", 	["PATH"]="MODELS/COMMON/SPACECRAFT/FRIGATES/", 			  			["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
 	{ ["ID_NAME"]="POLICEFREIGHTER",["P_NAME"]="POLICEFREIGHTER", 	    ["PATH"]="MODELS/COMMON/SPACECRAFT/POLICE/", 			  			["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
 	{ ["ID_NAME"]="ASTEROIDXL", 	["P_NAME"]="ASTEROIDXL", 	    	["PATH"]="MODELS/SPACE/ASTEROIDS/", 			  					["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
 	{ ["ID_NAME"]="GIANTASTEROID", 	["P_NAME"]="GIANTASTEROID", 	    ["PATH"]="MODELS/SPACE/ASTEROIDS/", 			  					["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
@@ -717,26 +717,26 @@ BUILDABLE_OBJECT_TABLE =
 	{ ["ID_NAME"]="ASTERSUBSTANCE", ["P_NAME"]="ASTEROIDSUBSTANCE", 	["PATH"]="MODELS/SPACE/ASTEROIDS/DESTRUCTIBLE/", 			  		["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
 	{ ["ID_NAME"]="BIGASTEROID01", 	["P_NAME"]="BIGASTEROID01", 	    ["PATH"]="MODELS/SPACE/ASTEROIDS/NONDESTRUCTIBLE/", 			  	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
 	{ ["ID_NAME"]="BIGASTERDEBRIS", ["P_NAME"]="BIGASTEROIDDEBRIS", 	["PATH"]="MODELS/SPACE/ASTEROIDS/NONDESTRUCTIBLE/", 			  	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="SPACE", ["ICON"]=SPACEICON },
-	{ ["ID_NAME"]="ALOEFLESH", 	    ["P_NAME"]="ALOEFLESH", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/",	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="BLOODYORGAN", 	["P_NAME"]="BLOODYORGAN", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="CREATUREPELLETS",["P_NAME"]="CREATUREPELLETS", 		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="ENZYMEFLUID", 	["P_NAME"]="ENZYMEFLUID", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="FERMENTEDFRUIT", ["P_NAME"]="FERMENTEDFRUIT", 		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="FIREBERRY", 	    ["P_NAME"]="FIREBERRY", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="FIREFLIES", 	    ["P_NAME"]="FIREFLIES", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="FOODGROUNDMEAT", ["P_NAME"]="FOODGROUNDMEAT", 		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="FROZENTUBERS", 	["P_NAME"]="FROZENTUBERS", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="GRAHFRUIT", 	    ["P_NAME"]="GRAHFRUIT", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="HEPTAWHEAT", 	["P_NAME"]="HEPTAWHEAT", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="HEXABERRY", 	    ["P_NAME"]="HEXABERRY", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="IMPULSEBEANS", 	["P_NAME"]="IMPULSEBEANS", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="JADEPEAS", 	    ["P_NAME"]="JADEPEAS", 	    		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="PHEROMONESACK", 	["P_NAME"]="PHEROMONESACK", 	    ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="PULPYROOTS", 	["P_NAME"]="PULPYROOTS", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="SCENTEDHERBS", 	["P_NAME"]="SCENTEDHERBS", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="SWEETCOMPOST",	["P_NAME"]="SWEETENEDCOMPOST",		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="SWEETROOT", 	    ["P_NAME"]="SWEETROOT", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
-	{ ["ID_NAME"]="SYNTHETICWORMS", ["P_NAME"]="SYNTHETICWORMS", 		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="ALOEFLESH", 	    ["P_NAME"]="ALOEFLESH", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/",	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="BLOODYORGAN", 	["P_NAME"]="BLOODYORGAN", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="CREATUREPELLETS",["P_NAME"]="CREATUREPELLETS", 		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="ENZYMEFLUID", 	["P_NAME"]="ENZYMEFLUID", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="FERMENTEDFRUIT", ["P_NAME"]="FERMENTEDFRUIT", 		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="FIREBERRY", 	    ["P_NAME"]="FIREBERRY", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="FIREFLIES", 	    ["P_NAME"]="FIREFLIES", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="FOODGROUNDMEAT", ["P_NAME"]="FOODGROUNDMEAT", 		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="FROZENTUBERS", 	["P_NAME"]="FROZENTUBERS", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="GRAHFRUIT", 	    ["P_NAME"]="GRAHFRUIT", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="HEPTAWHEAT", 	["P_NAME"]="HEPTAWHEAT", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="HEXABERRY", 	    ["P_NAME"]="HEXABERRY", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="IMPULSEBEANS", 	["P_NAME"]="IMPULSEBEANS", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="JADEPEAS", 	    ["P_NAME"]="JADEPEAS", 	    		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="PHEROMONESACK", 	["P_NAME"]="PHEROMONESACK", 	    ["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="PULPYROOTS", 	["P_NAME"]="PULPYROOTS", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="SCENTEDHERBS", 	["P_NAME"]="SCENTEDHERBS", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="SWEETCOMPOST",	["P_NAME"]="SWEETENEDCOMPOST",		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="SWEETROOT", 	    ["P_NAME"]="SWEETROOT", 	    	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
+	{ ["ID_NAME"]="SYNTHETICWORMS", ["P_NAME"]="SYNTHETICWORMS", 		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/COOKING/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="COOKING", ["ICON"]=COOKICON },
 	{ ["ID_NAME"]="MULTITOOL", 	    ["P_NAME"]="MULTITOOL", 	    	["PATH"]="MODELS/COMMON/WEAPONS/MULTITOOL/", 			  		["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="EXTRAS", ["ICON"]=EXTRAICON },
 	{ ["ID_NAME"]="BASEPROJECTOR", 	["P_NAME"]="BASEPROJECTOR", 	    ["PATH"]="MODELS/UI/WORLD/", 			  						["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="EXTRAS", ["ICON"]=EXTRAICON },
 	{ ["ID_NAME"]="SPACEGRAVE", 	["P_NAME"]="SPACEGRAVE", 	    	["PATH"]="MODELS/COMMON/PLAYER/", 			  					["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="EXTRAS", ["ICON"]=EXTRAICON },
@@ -839,6 +839,9 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       </Property>
       <Property name="PlacementScene" value="TkModelResource.xml">
         <Property name="Filename" value="]].. PATH .. P_NAME ..[[_PLACEMENT.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
         <Property name="BaseBuildingDecorationType" value="Normal" />
@@ -860,7 +863,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="PlanetBaseLimit" value="0" />
       <Property name="FreighterBaseLimit" value="0" />
       <Property name="CheckPlaceholderCollision" value="False" />
-      <Property name="CheckPlayerCollision" value="False" />
+      <Property name="CheckPlayerCollision" value="True" />
       <Property name="CanRotate3D" value="True" />
       <Property name="CanScale" value="True" />
       <Property name="Groups">
@@ -913,6 +916,9 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="RegionSpawnLOD" value="1" />
       <Property name="NPCInteractionScene" value="TkModelResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
 ]]
@@ -931,9 +937,15 @@ BASEBUILDINGPARTSTABLE_ADDING =
           </Property>
           <Property name="Model" value="TkModelResource.xml">
             <Property name="Filename" value="]].. PATH .. P_NAME ..[[.SCENE.MBIN" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="Inactive" value="TkModelResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -946,7 +958,7 @@ function GetProduct(ID_NAME, P_NAME, ICON)
 PRODUCT_ADDING =
 [[
     <Property value="GcProductData.xml">
-      <Property name="Id" value="]].. ID_NAME ..[[" />
+      <Property name="ID" value="]].. ID_NAME ..[[" />
       <Property name="Name" value="]].. P_NAME ..[[" />
       <Property name="NameLower" value="]].. P_NAME ..[[" />
       <Property name="Subtitle" value="VariableSizeString.xml">
@@ -959,14 +971,23 @@ PRODUCT_ADDING =
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource.xml">
         <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="BaseValue" value="1" />
       <Property name="Level" value="0" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]].. ICON ..[[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HeroIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="Colour" value="Colour.xml">
         <Property name="R" value="0.172549" />
@@ -995,7 +1016,7 @@ PRODUCT_ADDING =
       <Property name="Requirements">
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="LAND2" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="Substance" />
           </Property>
           <Property name="Amount" value="50" />
@@ -1027,7 +1048,7 @@ PRODUCT_ADDING =
       <Property name="GoodForSelling" value="False" />
       <Property name="GiveRewardOnSpecialPurchase" value="" />
       <Property name="EggModifierIngredient" value="True" />
-      <Property name="IsTechBox" value="False" />
+      <Property name="IsTechbox" value="False" />
     </Property>
 ]]
 return PRODUCT_ADDING
@@ -1318,6 +1339,10 @@ GROUP =
           <Property name="Id" value="VEGETATION" />
           <Property name="Name" value="VEGETATION" />
         </Property>
+        <Property value="GcBaseBuildingSubGroup.xml">
+          <Property name="Id" value="COOKING" />
+          <Property name="Name" value="COOKING" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcBaseBuildingGroup.xml">
@@ -1381,10 +1406,6 @@ GROUP =
           <Property name="Name" value="BUILDINGS" />
         </Property>
         <Property value="GcBaseBuildingSubGroup.xml">
-          <Property name="Id" value="COOKING" />
-          <Property name="Name" value="COOKING" />
-        </Property>
-        <Property value="GcBaseBuildingSubGroup.xml">
           <Property name="Id" value="EXTRAS" />
           <Property name="Name" value="EXTRAS" />
         </Property>
@@ -1431,7 +1452,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "0-UltraBaseBuilding+UnlimitedBaseBuilding.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
-["NMS_VERSION"]   = "3.99",
+["NMS_VERSION"]   = "4.00",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
 	{
@@ -1536,11 +1557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},				
 				{
-					["MBIN_FILE_SOURCE"] = 
-					{
-						[[METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN]],
-						[[METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN]],
-					},
+					["MBIN_FILE_SOURCE"] = "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN",
 					["EXML_CHANGE_TABLE"] =
 					{
 						{

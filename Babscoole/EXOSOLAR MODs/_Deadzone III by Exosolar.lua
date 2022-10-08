@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Deadzone III by Exosolar.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.99",
+["NMS_VERSION"]   = "4.00",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -279,8 +279,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},									
 						{
-							["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml",},								
-							["PRECEDING_KEY_WORDS"] = {"Objects",},							
+							["PRECEDING_FIRST"] = "True",							
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects",},							
 							["ADD_OPTION"] = "ADDafterLINE",
 							["ADD"] = 
 [[

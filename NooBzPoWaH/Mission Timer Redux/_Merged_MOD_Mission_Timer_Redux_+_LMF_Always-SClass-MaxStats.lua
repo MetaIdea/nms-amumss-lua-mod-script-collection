@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] 			= "Reduce Mission Timer, Atlas, Base Computer, Living Ship, Fleet and Frigates spawn with best initial stats and always as S class",
 ["MOD_AUTHOR"]				= "NooBzPoWaH & ll62518475TheSecond",
 ["LUA_AUTHOR"] 				= "Babscoole",
-["NMS_VERSION"]				= "3.+",
+["NMS_VERSION"]				= "4.+",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -106,11 +106,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"PercentChangeOfFrigateBeingPurchasable",		"100"},		-- Original 60
+								{"MinFrigateStatValue",						"50"},		-- Original -10
 								{"PercentChanceOfFrigateAdditionalSpawnedTrait",	"600"},		-- Original 55
-								{"LowDamageNumberOfExpeditions",			"1"},		-- Original 3
-								{"RampDamageNumberOfExpeditions",			"5"},		-- Original 10
-								{"TimeTakenForExpeditionEvent_Easy", "180"},			-- Original 900
-								{"TimeTakenForExpeditionEvent",		 "900"},			-- Original 5400
+								{"LowDamageNumberOfExpeditions",				"1"},			-- Original 3
+								{"RampDamageNumberOfExpeditions",				"5"},			-- Original 10
+								{"TimeTakenForExpeditionEvent_Easy",			"180"},		-- Original 900
+								{"TimeTakenForExpeditionEvent",				"900"},		-- Original 5400
 							},
 						},
 						{
@@ -377,6 +378,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -391,6 +394,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -405,6 +410,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -419,6 +426,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -433,6 +442,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -447,6 +458,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -461,6 +474,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -475,6 +490,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -489,6 +506,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -503,6 +522,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},						
 						{
@@ -517,6 +538,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -531,6 +554,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -545,6 +570,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -559,6 +586,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -573,6 +602,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -587,6 +618,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -601,6 +634,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -615,6 +650,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -629,6 +666,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -643,6 +682,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -657,6 +698,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -671,6 +714,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -685,6 +730,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -699,6 +746,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 						{
@@ -713,6 +762,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Diplomacy",	"0"},
 								{"Support",	"0"},
 								{"Normandy",	"0"},
+								{"DeepSpace",	"0"},
+								{"DeepSpaceCommon",	"0"},
 							}
 						},
 					}

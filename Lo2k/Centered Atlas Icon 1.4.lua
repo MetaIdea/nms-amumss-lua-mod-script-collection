@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Centered Atlas Icon 1.3.pak", 
+["MOD_FILENAME"] 			= "Centered Atlas Icon 1.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.94",
+["NMS_VERSION"]				= "4.0",
 ["MOD_DESCRIPTION"]			= "This mod simply centers the Atlas icon on the first menu screen",
 ["MODIFICATIONS"] 			= 
 	{

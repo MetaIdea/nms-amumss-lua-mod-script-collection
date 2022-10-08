@@ -1,9 +1,13 @@
+WARPS = "0"
+HOURS = "0"
+SPAWNRATE = "100"
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] = "_Exo's Guaranteed Freighter Battles.pak",
 ["MOD_AUTHOR"]   = "Exosolar",
 ["LUA_AUTHOR"]   = "Babscoole",
-["NMS_VERSION"]  = "3.99",
+["NMS_VERSION"]  = "4.00",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -16,12 +20,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"WarpsBetweenBattles", "0"},
-								{"HoursBetweenBattles", "0"}								
+								{"WarpsBetweenBattles", WARPS},
+								{"HoursBetweenBattles", HOURS},								
 							}
 						}
 					}
-				}
+				},
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] = {
+                        {
+                            ["VALUE_CHANGE_TABLE"] = {
+                                {"FreighterSpawnRate", SPAWNRATE}
+                            }
+                        }
+                    }
+                },
 			}
 		}
 	}	

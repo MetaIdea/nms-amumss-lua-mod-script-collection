@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "Storm Cutter.pak",
 ["MOD_AUTHOR"]    = "Zurls",
 ["LUA_AUTHOR"]    = "Babscoole",
-["MOD_VERSION"]   = "3.99",
+["MOD_VERSION"]   = "4.00",
 ["MODIFICATIONS"] = 
 	{
 		{

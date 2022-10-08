@@ -9,11 +9,10 @@ FileName    = "More Refiners.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
-NMS_Version = "3.99"
+NMS_Version = "4.00"
 
 -- File Sources --
-FileSource1 = "METADATA/REALITY/TABLES/BASEBUILDINGTABLE.MBIN"
-FileSource2 = "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN"
+FileSource1 = "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -28,11 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] = 
-					{
-						FileSource1,
-						FileSource2,
-					},
+					["MBIN_FILE_SOURCE"] = FileSource1,
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{

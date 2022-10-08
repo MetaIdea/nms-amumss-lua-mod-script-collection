@@ -162,7 +162,6 @@ function HexToDec(number)
 end
 
 GENERIC_ANIMATION_FILE = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" 
-BUTTON_ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
 
 ANIM_TEMPLATE_ALL = ""
 QUICK_ACTION_BUTTON_ALL = ""
@@ -196,8 +195,9 @@ local GENERIC_REWARD_ENTRY =
                 <Property name="Class" value="GcInventoryClass.xml">
                   <Property name="InventoryClass" value="S" />
                 </Property>
-                <Property name="SubstanceMaxStorageMultiplier" value="0" />
-                <Property name="ProductMaxStorageMultiplier" value="0" />
+                <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
+                  <Property name="InventoryStackSizeGroup" value="Default" />
+                </Property>
                 <Property name="BaseStatValues" />
                 <Property name="SpecialSlots" />
                 <Property name="Width" value="0" />
@@ -329,7 +329,31 @@ ACTION_TRIGGER_COMPONENT =
 return ACTION_TRIGGER_COMPONENT
 end
 
-function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID, ICON)
+function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
+				
+				local ICON = ""
+				if ANIM_ID == "FIGHTER" then
+					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS"
+				elseif ANIM_ID == "DROPSHIP" then
+					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP15.DDS"
+				elseif ANIM_ID == "SCIENTIFIC" then
+					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP12.DDS"
+				elseif ANIM_ID == "SHUTTLE" then
+					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.TWITCH.SHIP06.DDS"
+				elseif ANIM_ID == "ROYAL" then
+					ICON = "D:\Unpacked\TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.SHIP_B.DDS"
+				elseif ANIM_ID == "ALIEN" then
+					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.EXPEDITION.MINIBIOFRIG.DDS"
+				elseif ANIM_ID == "SAIL" then
+					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.EXPEDITION.BANNER01.DDS"
+				elseif ANIM_ID == "MULTITOOL" then
+					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS"
+				elseif ANIM_ID == "ROYALMULTITOOL" then
+					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN05.DDS"
+				else ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
+				end
+
+				
 QUICK_ACTION_BUTTON_TEMPLATE =
 [[
     <Property value="GcPlayerEmote.xml">
@@ -403,7 +427,7 @@ function CreateSeedRewardLists()
 		end
 		SUB_REWARD_ENTRY_ALL = table.concat(SREA)
     local ID = string.upper(SST)
-    QUICK_ACTION_BUTTON_ALL = QUICK_ACTION_BUTTON_ALL .. CreateQuickActionMenuEntry("RANDOM " .. ID, ID, BUTTON_ICON)
+    QUICK_ACTION_BUTTON_ALL = QUICK_ACTION_BUTTON_ALL .. CreateQuickActionMenuEntry("RANDOM " .. ID, ID)
     ANIM_TEMPLATE_ALL = ANIM_TEMPLATE_ALL .. CreateAnimEntry(ID)
     ACTION_TRIGGER_COMPONENT = ACTION_TRIGGER_COMPONENT .. CreateActionTriggerComponent(CreateActionTriggerRewardEntry(ID, ID))
     CUSTOM_GENERICREWARD_ALL = CUSTOM_GENERICREWARD_ALL .. CreateRewardMainEntry(ID, SUB_REWARD_ENTRY_ALL, "Select")
@@ -419,7 +443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.00",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -430,14 +454,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"]       = "+0",
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]               = ANIM_TEMPLATE_ALL
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"]         = "-2",
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]                 = ACTION_TRIGGER_COMPONENT
 						}
 					}

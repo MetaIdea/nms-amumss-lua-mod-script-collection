@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] 			= "Reduce Mission Timer, Atlas, Base Computer and Living Ship",
 ["MOD_AUTHOR"]				= "NooBzPoWaH",
 ["LUA_AUTHOR"] 				= "Babscoole",
-["NMS_VERSION"]				= "3.+",
+["NMS_VERSION"]				= "4.+",
 ["MODIFICATIONS"] 			= 
 	{
 		{

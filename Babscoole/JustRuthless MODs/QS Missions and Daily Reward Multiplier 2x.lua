@@ -90,7 +90,7 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "3.99"
+NMS_Version = "4.00"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"

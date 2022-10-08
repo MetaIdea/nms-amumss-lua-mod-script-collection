@@ -12,7 +12,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "FastRefiners.pak",
 ["MOD_AUTHOR"]				= "wim95-NooBzPoWaH",
 ["MOD_DESCRIPTION"]			= "This Mod makes Refiners speed 10 times faster",
-["NMS_VERSION"]				= "3.xx",
+["NMS_VERSION"]				= "4.xx",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -21,14 +21,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{ 
 				{
 					["MBIN_FILE_SOURCE"] 	=
-					{
-						"METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN",
-					},
+            {
+              "METADATA\REALITY\TABLES\NMS_REALITY_GCRECIPETABLE.MBIN",
+            },
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "",
-							["INTEGER_TO_FLOAT"] = "FORCE",
+              ["INTEGER_TO_FLOAT"] = "FORCE",
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_MATCH"] 		= "", 

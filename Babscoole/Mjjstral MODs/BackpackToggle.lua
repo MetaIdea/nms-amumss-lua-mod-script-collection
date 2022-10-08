@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.00",
 ["MODIFICATIONS"]   = 
 	{	
 		{
@@ -15,8 +15,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","JETPACK_CLOSE"}, 
-							["LINE_OFFSET"]       = "+0",
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"] = 
 [[
@@ -50,8 +50,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LodDistances"}, 
-							["LINE_OFFSET"]         = "-2",
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"] = 
 [[
     <Property value="GcTriggerActionComponentData.xml">

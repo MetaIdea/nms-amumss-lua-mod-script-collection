@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Flat Landing 3.4.pak", 
+["MOD_FILENAME"] 			= "No Metrics Lines 2.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.94",
-["MOD_DESCRIPTION"]			= "This mod prevents ship nose up effect at landing time",
+["NMS_VERSION"]				= "4.0",
+["MOD_DESCRIPTION"]			= "This mod removes thin regular vertical white lines during pulse jumps",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"LandingPushNoseUpFactor", "-0.1"}
+								{"MiniWarpLinesNum", "0"}
 							}
 						}
 					}

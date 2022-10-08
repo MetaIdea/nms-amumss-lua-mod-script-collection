@@ -106,7 +106,7 @@ PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Maxima_v3.3.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Maxima_v3.31.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

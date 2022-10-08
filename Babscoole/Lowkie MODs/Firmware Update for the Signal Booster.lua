@@ -1,5 +1,5 @@
-NMSVersion = "3.99"
-MODVersion = "3.99"
+NMSVersion = "4.00"
+MODVersion = "4.00"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -234,9 +234,11 @@ return
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Neutral" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
+          <Property name="OverrideWithAlienWord" value="False" />
+          <Property name="ReseedInteractionOnUse" value="False" />
           <Property name="KeepOpen" value="False" />
           <Property name="DisplayCost" value="True" />
           <Property name="TruncateCost" value="False" />
@@ -253,7 +255,7 @@ return
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
 ]]
@@ -271,9 +273,11 @@ return
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Neutral" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
+          <Property name="OverrideWithAlienWord" value="False" />
+          <Property name="ReseedInteractionOnUse" value="False" />
           <Property name="KeepOpen" value="True" />
           <Property name="DisplayCost" value="True" />
           <Property name="TruncateCost" value="False" />
@@ -290,7 +294,7 @@ return
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
       </Property>
@@ -299,7 +303,7 @@ return
       <Property name="Mood" value="GcAlienMood.xml">
         <Property name="Mood" value="Neutral" />
       </Property>
-      <Property name="Prop" value="GcNPCPropTypes.xml">
+      <Property name="Prop" value="GcNPCPropType.xml">
         <Property name="NPCProp" value="DontCare" />
       </Property>
       <Property name="AdvancedInteractionFlow" />
@@ -320,7 +324,7 @@ return
       <Property name="Type" value="GcInteractionType.xml">
         <Property name="InteractionType" value="SignalScanner" />
       </Property>
-      <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
+      <Property name="Category" value="GcAlienPuzzleCategory.xml">
         <Property name="AlienPuzzleCategory" value="Default" />
       </Property>
       <Property name="AdditionalOptions" value="None" />
@@ -346,9 +350,11 @@ All_Request_Leave =
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Neutral" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
+          <Property name="OverrideWithAlienWord" value="False" />
+          <Property name="ReseedInteractionOnUse" value="False" />
           <Property name="KeepOpen" value="False" />
           <Property name="DisplayCost" value="True" />
           <Property name="TruncateCost" value="False" />
@@ -365,7 +371,7 @@ All_Request_Leave =
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
           <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
       </Property>
@@ -471,11 +477,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "SEC_CRASHEDSHIP"},
-							["LINE_OFFSET"]         = "0",
-							["ADD_OPTION"]  = "ADDafterSECTION",
+							["SPECIAL_KEY_WORDS"]  = {"Id", "SEC_CRASHEDSHIP"},
+							["LINE_OFFSET"]        = "0",
+							["ADD_OPTION"]         = "ADDafterSECTION",
 							["VALUE_CHANGE_TABLE"] = {{"IGNORE",	"IGNORE"}},
-							["ADD"] =   REWARDSET,
+							["ADD"] = REWARDSET,
 						},
 					},
 				},
@@ -484,7 +490,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
  						{
-							["SPECIAL_KEY_WORDS"] = {"Name","DRONE_HIVE",},
+							["SPECIAL_KEY_WORDS"]  = {"Name","DRONE_HIVE",},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"ReplaceEventIfAlreadyActive",	"True"},
@@ -492,7 +498,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
  						{
-							["SPECIAL_KEY_WORDS"] = {"Name","FACTORY_R",},
+							["SPECIAL_KEY_WORDS"]  = {"Name","FACTORY_R",},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"ReplaceEventIfAlreadyActive",	"True"},                               
