@@ -1,11 +1,24 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "v1.5"
+local lua_version = "v1.7"
 local mod_author  = "Silent369"
-local nms_version = "3.9x"
+local nms_version = "4.0.x"
 local description = [[
-Modifies AI Ships Outpost Approach/Landing. Freighter Hangerdoor/Spacestation
-Letterbox Entrance Curves.
+Modifies AI Ships Outpost / Planetary Archive / Station Approach and Landing Settings.
+
+Changes settings so that outposts / planetary archives and stations 'feel' much more
+alive and bustling with activity. There should be a faster turnaround of ships arriving
+and leaving these locations.
+
+NB: As far as i have tested, although we try to always fill these locations landing
+pads, it doesn't appear to interfere with the systems' ship spawns in any negative
+way. If in doubt, you can toggle this setting on/off below before compiling the lua.
+
+Also changes slightly the Explorer ship landing gear animation speed timing so that it
+lands with its gear fully extended.
+
+There are also optional settings to turn off Pirate Attacks at Trade Outposts / Archives
+and to minimise the damage to Crashed Ships when discovered to save resources on repair.
 ]]
 
 --Modifies:
@@ -16,23 +29,24 @@ Letterbox Entrance Curves.
 
 --|=======================================================================================--
 
-_NoPirateAttacks = true
-_CrashShipDamage = true
+local _NoPirateAttacks = true
+local _CrashShipDamage = true
+local _FillUp_Outposts = true
 
 --|=======================================================================================--
 
 --Station Entity
-_sApproachRange = 155
-_sApproachSpeed = 160
-_sAutoLandRange = 350
+local _sApproachRange  = 155
+local _sApproachSpeed  = 160
+local _sAutoLandRange  = 350
 
 --Station Dock Entity
-_dApproachRange = 105
-_dApproachSpeed = 110
-_dAutoLandRange = 350
+local _dApproachRange  = 105
+local _dApproachSpeed  = 110
+local _dAutoLandRange  = 350
 
 --Explorer LandingGear
-_eXpAnimSpeedUp = 1.5
+local _eXpAnimSpeedUp  = 1.7
 
 --|=======================================================================================--
 
@@ -68,6 +82,19 @@ table.insert(TableData,
                             {
                                 {"Outpost",                             "False"}, --Original "True"
                                 {"LargeBuilding",                       "False"}, --Original "True"
+                            }
+                        })
+end
+
+--| Toggle whether to Fill Up Outposts or not.
+--|=======================================================================================--
+if _FillUp_Outposts then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"FillUpOutposts", "False"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FillUpOutposts",                       "True"}, --Original "False"
                             }
                         })
 end
@@ -111,10 +138,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LandingSpeed",                            "1"}, --Original "10"
                                 {"TakeOffHeight",                           "2"}, --Original "3"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
-                                {"TakeOffTime",                             "1"}, --Original "1"
-                                {"TakeOffAlignTime",                      "1.1"}, --Original "1"
-                                {"TakeOffSpeed",                          "550"}, --Original "500"
-                                {"TakeOffBoost",                          "130"}, --Original "120"
+                                {"TakeOffAlignTime",                      "0.7"}, --Original "1"
                                 {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
                                 {"PostTakeOffExtraPlayerSpeed",           "120"}, --Original "60"
                             }
@@ -137,10 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"LandingSpeed",                            "1"}, --Original "10"
                                 {"TakeOffHeight",                           "2"}, --Original "10"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
-                                {"TakeOffTime",                             "1"}, --Original "1"
-                                {"TakeOffAlignTime",                      "1.1"}, --Original "1"
-                                {"TakeOffSpeed",                          "120"}, --Original "100"
-                                {"TakeOffBoost",                           "12"}, --Original "10"
+                                {"TakeOffAlignTime",                      "0.7"}, --Original "1"
                                 {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
                                 {"PostTakeOffExtraPlayerSpeed",           "120"}, --Original "60"
                             }
@@ -187,7 +208,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinHeight",                            "13.5"}, --Original "15"
+                                {"MinHeight",                            "13.7"}, --Original "15"
                             }
                         },
                         {
@@ -196,21 +217,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"MinHeight",                            "13.5"}, --Original "15"
+                                {"MinHeight",                            "13.7"}, --Original "15"
                             }
                         },
                             ---------------------------------------------------------------------------------------
                             --Outpost Approach / Landing / Speed
                             ---------------------------------------------------------------------------------------
                         {
-                            ["REPLACE_TYPE"]        = "ALL",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"MinimumCircleTimeBeforeLanding",          "1"}, --Original "5"
                                 {"MinimumTimeBetweenOutpostLandings",       "1"}, --Original "3"
                                 {"SpaceStationTraderRequestTime",          "-1"}, --Original "20"
-                                {"FillUpOutposts",                       "True"}, --Original "False"
                                 {"DockingWaitDistance",                     "8"}, --Original "10"
                                 {"DockingRotateSpeed",                    "0.6"}, --Original "0.5"
                                 {"DockingLandingBounceTime",              "0.6"}, --Original "0.8"
