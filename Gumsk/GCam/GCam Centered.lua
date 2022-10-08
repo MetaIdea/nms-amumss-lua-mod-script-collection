@@ -2,7 +2,7 @@ Author = "Gumsk+Azzinoth"
 ModName = "gCam"
 ModNameSub = "Centered"
 BaseDescription = "Camera modifications"
-GameVersion = "397"
+GameVersion = "401"
 ModVersion = "a"
 FileSource = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 
@@ -11,10 +11,10 @@ FileSource = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 	DistanceForFleetInteraction = 6000							--3900 ; 
 	DistanceForFrigateInteraction = 2000						--650 ; 
 	DistanceForFrigatePurchaseInteraction = 2000				--500 ;
-	PhotoModeVelocitySmoothTime = 1.5							--0.5
+	PhotoModeVelocitySmoothTime = 3.0							--0.5
 	PhotoModeMoveSpeed = 17										--11 ; 
-	PhotoModeTurnSpeed = 60										--60 ; 
-	PhotoModeMaxDistance = 99999									--100 ; 
+	PhotoModeTurnSpeed = 40										--60 ; 
+	PhotoModeMaxDistance = 99999								--100 ; 
 	PhotoModeMaxDistanceSpace = 99999							--200 ; 
 	BuildingModeMaxDistance = 99999								--60 ; 
 --Flashes

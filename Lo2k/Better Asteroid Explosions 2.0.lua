@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Asteroid Explosions 1.9.pak", 
+["MOD_FILENAME"] 			= "Better Asteroid Explosions 2.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.97",
+["NMS_VERSION"]				= "4.0",
 ["MOD_DESCRIPTION"]			= "This mod improves asteroid explosions",
 ["MODIFICATIONS"] 			= 
 	{
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Speed",	"30"},
-								{"AngularSpeed",	"8"},
+								{"AnglularSpeed",	"8"},
 							},
 						},				
 						{
@@ -47,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Number",	"5"},
 								{"Scale",	"0.08"},
 								{"Speed",	"2000"},
-								{"AngularSpeed",	"5"},
+								{"AnglularSpeed",	"5"},
 							},
 						},	
 						{
@@ -59,7 +59,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Number",	"9"},
 								{"Scale",	"0.055"},
 								{"Speed",	"3000"},
-								{"AngularSpeed",	"8"},
+								{"AnglularSpeed",	"8"},
 							},
 						},	
 						{
@@ -86,7 +86,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"Scale",	"0.4"},
 								{"Speed",	"1000"},
-								{"AngularSpeed",	"5"},
+								{"AnglularSpeed",	"5"},
 							},
 						},					
 						{

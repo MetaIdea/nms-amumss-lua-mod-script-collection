@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Black Carbon 2.4.pak", 
+["MOD_FILENAME"] 			= "Black Carbon 2.5.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lowkie (+ Lo2k)",
-["NMS_VERSION"]				= "3.98",
+["NMS_VERSION"]				= "4.0",
 ["MOD_DESCRIPTION"]			= "This mod makes carbon black",
 ["MODIFICATIONS"] 			= 
 	{
@@ -19,8 +19,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"R",	"0.093"},
-								{"G",	"0.093"},  -- B is already 0.093
+								{"R",	"0.14"},
+								{"G",	"0.14"},  
+								{"B",	"0.14"},  
 							}	
 						},
                     },

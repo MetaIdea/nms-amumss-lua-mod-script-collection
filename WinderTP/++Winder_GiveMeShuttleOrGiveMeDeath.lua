@@ -120,32 +120,32 @@ MaxUpgradeSize =
 							["InvType"] = "MaxInventoryCapacity",
 							["Class"] =
 							{
-								{"24", "24" },
-								{"32", "32" },
-								{"40", "40" },
-								{"48", "48" },
+								{"C", "48" },
+								{"B", "74" },
+								{"A", "96" },
+								{"S", "120" },
 							}
 						},
 						{
 							["InvType"] = "MaxTechInventoryCapacity",
 							["Class"] =
 							{
-								{"0", "0"},
-								{"7", "7"},
-								{"14", "14"},
-								{"21", "21"},
+								{"C", "30"},
+								{"B", "40"},
+								{"A", "50"},
+								{"S", "60"},
 							}
 						},
-						{
-							["InvType"] = "MaxCargoInventoryCapacity",
-							["Class"] =
-							{
-								{"6", "12"},
-								{"9", "12"},
-								{"14", "24"},
-								{"21", "36"},
-							}
-						},
+						-- {
+							-- ["InvType"] = "MaxCargoInventoryCapacity",
+							-- ["Class"] =
+							-- {
+								-- {"C", "12"},
+								-- {"B", "12"},
+								-- {"A", "24"},
+								-- {"S", "36"},
+							-- }
+						-- },
 					},
 	}
 }
@@ -180,14 +180,11 @@ end
 for i,j in pairs(SpawnInventory) do
 	for k,l in pairs(j["Sizes"]) do
 		if j["Type"] == "Shuttle" and l["Size"] == "Small" then
-			SHIP_SIZE = "ShuSmall"
-		else SHIP_SIZE = GenerationSizeType[j["Type"]] .. l["Size"]
-		end
 		TEMP_TABLE =
 		{
 			--["MATH_OPERATION"] = "*", -- "*", "+", "-", "/" or leave empty for normal replacement
 			["INTEGER_TO_FLOAT"] = "FORCE",
-			["PRECEDING_KEY_WORDS"] = {"GenerationData", SHIP_SIZE},
+			["PRECEDING_KEY_WORDS"] = {"GenerationData", "ShuSmall"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
 				{ "MinSlots", l["MinSlots"] },
@@ -198,6 +195,23 @@ for i,j in pairs(SpawnInventory) do
 				{ "MaxCargoSlots", l["MaxCargoSlots"] },
 			}
 		}
+		else 
+		TEMP_TABLE =
+		{
+			--["MATH_OPERATION"] = "*", -- "*", "+", "-", "/" or leave empty for normal replacement
+			["INTEGER_TO_FLOAT"] = "FORCE",
+			["PRECEDING_KEY_WORDS"] = {"GenerationData", GenerationSizeType[j["Type"]] .. l["Size"]},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{ "MinSlots", l["MinSlots"] },
+				{ "MaxSlots", l["MaxSlots"] },
+				{ "MinTechSlots", l["MinTechSlots"] },
+				{ "MaxTechSlots", l["MaxTechSlots"] },
+				{ "MinCargoSlots", l["MinCargoSlots"] },
+				{ "MaxCargoSlots", l["MaxCargoSlots"] },
+			}
+		}
+		end
 		table.insert(INVENTORY_CHANGE["EXML_CHANGE_TABLE"], TEMP_TABLE)
 	end
 end

@@ -1,13 +1,13 @@
 ModName = "AddDerelictFreighterLootToStore"
 Author = "Jackty89"
 
-DefaultRealityPath = "METADATA\\REALITY\\DEFAULTREALITY.MBIN"
-UnlockableItemTreesPath = "METADATA\\REALITY\\TABLES\\UNLOCKABLEITEMTREES.MBIN"
+DefaultRealityPath = "METADATA/REALITY/DEFAULTREALITY.MBIN"
+UnlockableItemTreesPath = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN"
 
-MainTree = "UI_PURCHASABLE_BASEPARTS_TREE"
-Root = "SLIME_MED"
-TechSub = "UI_DECORATION_TREE"
-CostType = "SALVAGE"
+MAINTREE = "UI_PURCHASABLE_BASEPARTS_TREE"
+ROOT = "SLIME_MED"
+TECHSUB = "UI_DECORATION_TREE"
+COSTTYPE = "SALVAGE"
 SubList = {}
 ListOfIds =
 {
@@ -119,7 +119,7 @@ function CreateModTabpageTree(RootTech, Children, CostTypeID)
     return
     [[
         <Property value="GcUnlockableItemTree.xml">
-            <Property name="Title" value="]]..TechSub..[[" />
+            <Property name="Title" value="]]..TECHSUB..[[" />
             <Property name="CostTypeID" value="]]..CostTypeID..[[" />
             <Property name="Root" value="GcUnlockableItemTreeNode.xml">
                 <Property name="Unlockable" value="]]..RootTech..[[" />
@@ -169,9 +169,9 @@ end
 local ChangesToUnlockableItemTrees = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
 for i = 1, #ListOfIdsSplitForTree do
-    local TechTree = MainTree
-    local RootTech = Root
-    local CostType = CostType
+    local TechTree = MAINTREE
+    local RootTech = ROOT
+    local CostType = COSTTYPE
 
     local Items = ListOfIdsSplitForTree[i]
     local ItemSubsLists = {}
@@ -209,7 +209,7 @@ for i = 1, #ListOfIdsSplitForTree do
 
     local UnlockableItemTree =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechSub},
+        ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TECHSUB},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
         ["ADD"]	= Tree
     }

@@ -2,13 +2,13 @@
 local desc = [[
   Replace space pirates & raids loot with a more varied selection
 ]]------------------------------------------------------------------------
-mod_version = 1.53
+mod_version = 1.55
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
 end
 
-local function R_TableItem(item, data, reward)
+local function R_TableItem(item, reward, data)
 	local function Amount()
 		if not item.x then return '' end
 		return [[
@@ -21,41 +21,53 @@ local function R_TableItem(item, data, reward)
 			<Property name="Reward" value="]]..reward..[[">
 				]]..data..Amount()..[[
 			</Property>
-		</Property>]]
+		</Property>
+	]]
 end
 local function R_Procedural(item)
-	local exml = [[
-		<Property name="Type" value="GcProceduralProductCategory.xml">
-			<Property name="ProceduralProductCategory" value="]]..item.id..[["/>
-		</Property>
-		<Property name="Rarity" value="GcRarity.xml">
-			<Property name="Rarity" value="]]..(item.r or 'Common')..[["/>
-		</Property>
-	]]
-	return R_TableItem(item, exml, 'GcRewardProceduralProduct.xml')
+	return R_TableItem(
+		item,
+		'GcRewardProceduralProduct.xml',
+		[[
+			<Property name="Type" value="GcProceduralProductCategory.xml">
+				<Property name="ProceduralProductCategory" value="]]..item.id..[["/>
+			</Property>
+			<Property name="Rarity" value="GcRarity.xml">
+				<Property name="Rarity" value="]]..(item.r or 'Common')..[["/>
+			</Property>
+		]]
+	)
 end
 local function R_Product(item)
-	local exml = [[
-		<Property name="ID" value="]]..item.id..[["/>
-		<Property name="Silent" value="]]..bool(item.s)..[["/>
-	]]
-	return R_TableItem(item, exml, 'GcRewardSpecificProduct.xml')
+	return R_TableItem(
+		item,
+		'GcRewardSpecificProduct.xml',
+		[[
+			<Property name="ID" value="]]..item.id..[["/>
+			<Property name="Silent" value="]]..bool(item.s)..[["/>
+		]]
+	)
 end
 local function R_Substance(item)
-	local exml = [[
-		<Property name="ID" value="]]..item.id..[["/>
-		<Property name="HardModeMultiplier" value="1"/>
-		<Property name="Silent" value="]]..bool(item.s)..[["/>
-	]]
-	return R_TableItem(item, exml, 'GcRewardSpecificSubstance.xml')
+	return R_TableItem(
+		item,
+		'GcRewardSpecificSubstance.xml',
+		[[
+			<Property name="ID" value="]]..item.id..[["/>
+			<Property name="Silent" value="]]..bool(item.s)..[["/>
+		]]
+	)
 end
 local function R_Money(item)
-	local exml = [[
-		<Property name="Currency" value="GcCurrency.xml">
-			<Property name="Currency" value="]]..item.id..[["/>
-		</Property>
-	]]
-	return R_TableItem(item, exml, 'GcRewardMoney.xml')
+	return R_TableItem(
+		item,
+		'GcRewardMoney.xml',
+		[[
+			<Property name="Currency" value="GcCurrency.xml">
+				<Property name="Currency" value="]]..item.id..[["/>
+			</Property>
+		]]
+	)
 end
 
 local E_ = {
@@ -190,32 +202,33 @@ function new_reward:AddTableEntry(rte)
 				<Property name="OverrideZeroSeed" value="]]..bool(rte.zeroseed)..[["/>
 				]]..getRewardsList(rte.rewardlist)..[[
 			</Property>
-		</Property>]]
+		</Property>
+	]]
 end
 
+-- loop through the rewards list and return the generated exml
 local function AddNewRewardsToChangeTable()
 	local T = {}
+	T[1] = { FSKWG={}, REMOVE='Section' }
 	local rewards = ''
 	for _,rwd in ipairs(new_reward) do
+		-- collect exisitng rewards to be removed in FSKWG
 		if rwd.replacement then
-			table.insert(T, {
-				SPECIAL_KEY_WORDS	= {'Id', rwd.id},
-				REMOVE				= 'Section'
-			})
+			table.insert(T[1].FSKWG, {'Id', rwd.id})
 		end
 		rewards = rewards..new_reward:AddTableEntry(rwd)
 	end
 	table.insert(T, {
 		PRECEDING_KEY_WORDS	= 'GenericTable',
 		ADD					= rewards
-	})	
+	})
 	return T
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Loot pirates loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.0.1',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

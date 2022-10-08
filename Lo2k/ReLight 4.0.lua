@@ -105,10 +105,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 3.9.pak", 
+["MOD_FILENAME"] 			= "ReLight 4.0 beta.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.99",
+["NMS_VERSION"]				= "3.99.1",
 ["MOD_DESCRIPTION"]			= "This mod tunes most of the lights",
 ["MODIFICATIONS"] 			= 
 	{
@@ -419,14 +419,39 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 
-				{    -- FREIGHTER LANDING PADS
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN",
+				{    
+					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\LANDINGPAD_HANGAR.SCENE.MBIN",  -- freighter landing pads
 					["EXML_CHANGE_TABLE"] 	= 
 					{			
 						{  -- TOP AMBIENT LIGHT
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
 							["REMOVE"] 	= "SECTION",
 						},			
+						--[[{  --pretty weak results, all landing pads are not lit up
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1"},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TransY",	"30.462"},  --original : 
+								{"TransZ",	"2.2662"},  --original : 
+								{"RotX",	   "-90"},  --original : 0
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "FOV"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"60.0"},  --original : 
+							},
+						},	
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "pointLight1", "Name", "INTENSITY"}, 
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Value",	"83000.0"},  --50000
+							},
+						},	]]--
+						
 						{  -- YELLOW SPOT
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2",},
 							["REMOVE"] 	= "SECTION",
@@ -591,7 +616,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},						
 					},
-				},			
+				},		
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LARGEBUILDINGS\COMMON\HOLOADVERT_GEK.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Name", "PointLight57"},
+							["REMOVE"] 	= "SECTION",
+						},								
+					},
+				},					
 				{
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\OBSERVATORY\HOLOGRAM.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -2744,7 +2779,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN",   --landing pad lights
+					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\LANDINGPAD.SCENE.MBIN",   --Space station landing pad lights
 					["EXML_CHANGE_TABLE"] 	= 
 					{	
 						{
@@ -2765,30 +2800,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},	
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight7", "Name", "INTENSITY"},  
+							["FOREACH_SKW_GROUP"]  = {{"Name", "COL_R"}, {"Name", "COL_G"}, {"Name", "COL_B"}},
+							["REPLACE_TYPE"] 	= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"85000.0"},  
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight8", "Name", "INTENSITY"},  
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"85000.0"},  
+								{"Value",	"1.0"},  --original : 1.0, 0.8, 0.569
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight9", "Name", "INTENSITY"},  
+							["SPECIAL_KEY_WORDS"]  = {"Name", "INTENSITY"}, 
+							["REPLACE_TYPE"] 	= "ALL",  -- all lods
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Value",	"85000.0"},  
+								{"Value",	"83000.0"},  
 							},
 						},	
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight7"},  --counter teal light
 							["REPLACE_TYPE"] = "ADDAFTERSECTION",
-							["ADD"] = InsertNewLight({name='spotLight7b',tx=0.1, ty=-5.46, tz=2.267, rx=90, sx=20, sy=20, sz=20, fov=180, f='quadratic', i=90000, r=0.0, g=0.828}),
+							["ADD"] = InsertNewLight({name='spotLight7b',tx=0.1, ty=-5.46, tz=2.267, rx=90, sx=20, sy=20, sz=20, fov=180, f='quadratic', i=80000, r=0.6, g=1.0}),  --0.0, 0.828
 						},						
 					},
 				},		

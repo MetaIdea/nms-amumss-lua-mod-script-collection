@@ -9,7 +9,7 @@ local desc = [[
   - A new tree is inserted as 1st in its ItemTrees by default. Inesrting [after] work
    only on existing trees, not newly-added, and needs the 'after' Title.
 ]]------------------------------------------------------------------------------
-local version = 1.12
+local version = 1.21
 
 local unlockable_items = {
 	{
@@ -467,27 +467,14 @@ local function AddTreeToChangeTable(node)
 	return T
 end
 
-local function DeleteTreeInChangeTable(node)
-	local T = {}
-	if node.issubs then
-	--- delete full tree ---
-		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Title', node.parent[1], 'Title', node.parent[2]},
-			REMOVE				= 'Section'
-		})
-	end
-	return T
-end
-
 local function AddAllTrees()
 	local T = {}
-	-- do all REMOVEs before adding
+	T[1] = { FSKWG={}, REMOVE='Section' }
 	for _,tree in ipairs(unlockable_items) do
-		for _,n in ipairs(DeleteTreeInChangeTable(tree)) do
-			table.insert(T, n)
+		-- do all REMOVEs before adding
+		if tree.issubs then
+			table.insert(T[1].FSKWG, {'Title', tree.parent[1], 'Title', tree.parent[2]})
 		end
-	end
-	for _,tree in ipairs(unlockable_items) do
 		for _,n in ipairs(AddTreeToChangeTable(tree)) do
 			table.insert(T, n)
 		end
@@ -498,7 +485,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit Update.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '3.99.1',
+	NMS_VERSION			= '4.0.1',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

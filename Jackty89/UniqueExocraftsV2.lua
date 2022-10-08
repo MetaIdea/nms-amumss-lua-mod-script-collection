@@ -1,7 +1,7 @@
 ModName = "UniqueExoCrafts"
 Description = "A small mod that make exocraft faster but also stand out from eachother"
 
-GCTechnologyTablePath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
+GCTechnologyTablePath = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 VehicleGlobalsPath = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
 NautilonUnderwaterEnginePower = "10" -- Acceleration speed
@@ -115,7 +115,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","MECH_LASER"},
-							["PRECEDING_KEY_WORDS"] = {"StatBonuses","StatsTypes"},
+							["PRECEDING_KEY_WORDS"] = {"StatBonuses", "GcStatsBonus.xml"},
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Bonus", MechSuitLaserDamange}

@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPRODUCTTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"]    = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"]   =
                     {
                     }
@@ -48,7 +48,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = "METADATA\\REALITY\\TABLES\\UNLOCKABLEITEMTREES.MBIN",
+                    ["MBIN_FILE_SOURCE"]    = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",
                     ["EXML_CHANGE_TABLE"]   =
                     {
                         {
@@ -73,7 +73,7 @@ function CreateRequirement(Requirement)
     [[
         <Property value="GcTechnologyRequirement.xml">
             <Property name="ID" value="]]..RequirementID..[[" />
-            <Property name="InventoryType" value="GcInventoryType.xml">
+            <Property name="Type" value="GcInventoryType.xml">
                 <Property name="InventoryType" value="]]..RequirementInventoryType..[[" />
             </Property>
             <Property name="Amount" value="]]..RequirementAmount..[[" />
@@ -122,5 +122,4 @@ for i = 1, #NewRequirementsArray do
         ["SPECIAL_KEY_WORDS"] = {"Id", ProductId,"CraftAmountMultiplier","1"},
         ["ADD"]               = RequirementsString,
     }
-
 end

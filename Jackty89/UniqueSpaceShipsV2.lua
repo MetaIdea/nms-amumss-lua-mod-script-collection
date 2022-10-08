@@ -2,7 +2,7 @@ ModeName = "UniqueSpaceShips"
 Author = "Jackty89"
 
 SpaceShipGlobalsPath = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
-InventoryTablePath = "METADATA\\REALITY\\TABLES\\INVENTORYTABLE.MBIN"
+InventoryTablePath = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
 
 ShuttleTakeOffReductionMultiplier = "0.75" -- Reduction of 25% for the base-value
 
@@ -80,16 +80,6 @@ Shipchanges =
 	}
 }
 
-AlienShipInventory = "48"
-AlienShipTech = "35"
-AlienShipCargo = "32"
-
-AlienEdits = {
-	"AlienSmall",
-	"AlienMedium",
-	"AlienLarge"
-}
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
 	["MOD_FILENAME"] 			= ModeName..".pak",
@@ -157,20 +147,4 @@ for i = 1, #Shipchanges do
 			ChangesToInventoryTable[#ChangesToInventoryTable+1] = ChangesToInventoryTable_temp
 		end
 	end
-end
-
-for i = 1, #AlienEdits do
-	ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
-	{
-		["SPECIAL_KEY_WORDS"] = {AlienEdits[i], "GcInventoryLayoutGenerationDataEntry.xml"},
-		["VALUE_CHANGE_TABLE"] =
-		{
-			{"MinSlots", AlienShipInventory},
-			{"MaxSlots", AlienShipInventory},
-			{"MinTechSlots", AlienShipTech},
-			{"MaxTechSlots", AlienShipTech},
-			{"MinCargoSlots", AlienShipCargo},
-			{"MaxCargoSlots", AlienShipCargo}
-		}
-	}
 end

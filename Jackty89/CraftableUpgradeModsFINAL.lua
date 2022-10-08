@@ -499,7 +499,7 @@ function CreateNewCustomMod(ModID, ModName, ModNameL, BaseValue, Icon, Normalise
     local result =
     [[
         <Property value="GcProductData.xml">
-            <Property name="Id" value="]]..ModID..[[" />
+            <Property name="ID" value="]]..ModID..[[" />
             <Property name="Name" value="]]..ModName..[[" />
             <Property name="NameLower" value="]]..ModNameL..[[" />
             <Property name="Subtitle" value="VariableSizeString.xml">
@@ -512,14 +512,23 @@ function CreateNewCustomMod(ModID, ModName, ModNameL, BaseValue, Icon, Normalise
             <Property name="GroupID" value="" />
             <Property name="DebrisFile" value="TkModelResource.xml">
                 <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+                <Property name="ResHandle" value="GcResource.xml">
+                    <Property name="ResourceID" value="0" />
+                </Property>
             </Property>
             <Property name="BaseValue" value="]]..BaseValue..[[" />
             <Property name="Level" value="0" />
             <Property name="Icon" value="TkTextureResource.xml">
                 <Property name="Filename" value="]]..Icon..[[" />
+                <Property name="ResHandle" value="GcResource.xml">
+                    <Property name="ResourceID" value="0" />
+                </Property>
             </Property>
             <Property name="HeroIcon" value="TkTextureResource.xml">
                 <Property name="Filename" value="" />
+                <Property name="ResHandle" value="GcResource.xml">
+                    <Property name="ResourceID" value="0" />
+                </Property>
             </Property>
             <Property name="Colour" value="Colour.xml">
                 <Property name="R" value="0.101960786" />
@@ -528,7 +537,7 @@ function CreateNewCustomMod(ModID, ModName, ModNameL, BaseValue, Icon, Normalise
                 <Property name="A" value="1" />
             </Property>
             <Property name="Category" value="GcRealitySubstanceCategory.xml">
-                <Property name="SubstanceCategory" value="Fuel" />
+                <Property name="SubstanceCategory" value="Special" />
             </Property>
             <Property name="Type" value="GcProductCategory.xml">
                 <Property name="ProductCategory" value="Consumable" />
@@ -541,10 +550,11 @@ function CreateNewCustomMod(ModID, ModName, ModNameL, BaseValue, Icon, Normalise
             </Property>
             <Property name="Consumable" value="True" />
             <Property name="ChargeValue" value="0" />
-            <Property name="StackMultiplier" value="0" />
+            <Property name="StackMultiplier" value="1" />
             <Property name="DefaultCraftAmount" value="1" />
             <Property name="CraftAmountStepSize" value="1" />
             <Property name="CraftAmountMultiplier" value="1" />
+            <Property name="Requirements" />
             <Property name="AltRequirements" />
             <Property name="Cost" value="GcItemPriceModifiers.xml">
                 <Property name="SpaceStationMarkup" value="0" />
@@ -571,6 +581,7 @@ function CreateNewCustomMod(ModID, ModName, ModNameL, BaseValue, Icon, Normalise
             <Property name="GoodForSelling" value="False" />
             <Property name="GiveRewardOnSpecialPurchase" value="" />
             <Property name="EggModifierIngredient" value="False" />
+            <Property name="IsTechbox" value="False" />
         </Property>
     ]]
 
@@ -896,7 +907,7 @@ function CreateRequirement(Requirement)
     [[
         <Property value="GcTechnologyRequirement.xml">
             <Property name="ID" value="]]..RequirementID..[[" />
-            <Property name="InventoryType" value="GcInventoryType.xml">
+            <Property name="Type" value="GcInventoryType.xml">
                 <Property name="InventoryType" value="]]..RequirementInventoryType..[[" />
             </Property>
             <Property name="Amount" value="]]..RequirementAmount..[[" />
@@ -966,7 +977,7 @@ function FillCustomlangFile()
 end
 
 local AddCsutomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
-for Key , Language in pairs(Languages) do
+for Key , _Language in pairs(Languages) do
     AddCsutomLanguageFiles[#AddCsutomLanguageFiles +1] =
     {
         ["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Key..".EXML",

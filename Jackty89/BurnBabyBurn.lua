@@ -1,9 +1,9 @@
 ModName = "BurnBabyBurn"
 Author = "Jackty89"
 
-UnlockableItemTrees = "METADATA\\REALITY\\TABLES\\UNLOCKABLEITEMTREES.MBIN"
-TechnologyTablePath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
-PlayerWeaponPropertiesTablePath = "METADATA\\REALITY\\TABLES\\PLAYERWEAPONPROPERTIESTABLE.MBIN"
+UnlockableItemTrees = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN"
+TechnologyTablePath = "METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
+-- PlayerWeaponPropertiesTablePath = "METADATA/REALITY/TABLES/PLAYERWEAPONPROPERTIESTABLE.MBIN"
 
 AddFlame = [[
 	<Property value="GcUnlockableItemTreeNode.xml">
@@ -54,35 +54,17 @@ AddProjectile =
 	</Property>
 ]]
 
-AddNade = [[
-	<Property value="GcStatsBonus.xml">
-		<Property name="Stat" value="GcStatsTypes.xml">
-			<Property name="StatsType" value="Weapon_Grenade_Damage" />
-		</Property>
-		<Property name="Bonus" value="500" />
-		<Property name="Level" value="1" />
-		</Property>
-
-		<Property value="GcStatsBonus.xml">
-		<Property name="Stat" value="GcStatsTypes.xml">
-			<Property name="StatsType" value="Weapon_Grenade_Radius" />
-		</Property>
-		<Property name="Bonus" value="20" />
-		<Property name="Level" value="1" />
-		</Property>
-]]
-
-DefaultProjectile =
-{
-	"MINE_GREN",
-	"GRENADE",
-	"CANNON",
-	"SMG",
-	"SHOTGUN",
-	"BOLTGUN",
-	"STUN_GREN",
-	"FLAMETHROW",
-}
+-- DefaultProjectile =
+-- {
+-- 	"MINE_GREN",
+-- 	"GRENADE",
+-- 	"CANNON",
+-- 	"SMG",
+-- 	"SHOTGUN",
+-- 	"BOLTGUN",
+-- 	"STUN_GREN",
+-- 	"FLAMETHROW",
+-- }
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -148,6 +130,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "FLAME" },
 							["PRECEDING_KEY_WORDS"] = {"Weapon_Projectile_Dispersion"},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Bonus", "15"}
@@ -156,6 +139,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "FLAME" },
 							["PRECEDING_KEY_WORDS"] = {"Weapon_Projectile_Range"},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Bonus", "250"}
@@ -164,6 +148,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "FLAME" },
 							["PRECEDING_KEY_WORDS"] = {"Weapon_Projectile_BulletsPerShot"},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Bonus", "5"}
@@ -172,6 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "FLAME" },
 							["PRECEDING_KEY_WORDS"] = {"Weapon_Projectile_Damage"},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Bonus", "150"}
@@ -180,6 +166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID", "FLAME" },
 							["PRECEDING_KEY_WORDS"] = {"Weapon_Projectile_Rate"},
+							["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Bonus", "12"}

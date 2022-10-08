@@ -1,10 +1,10 @@
 ModName = "MoreAndCheaperStarMaps"
 Author = "Jackty89"
 
-ProductTablePath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPRODUCTTABLE.MBIN"
-RewardTablePath = "METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN"
-ConsumeableItemTablePath = "METADATA\\REALITY\\TABLES\\CONSUMABLEITEMTABLE.MBIN"
-DefaultRealityPath = "METADATA\\REALITY\\DEFAULTREALITY.MBIN"
+ProductTablePath = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN"
+RewardTablePath = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
+ConsumeableItemTablePath = "METADATA/REALITY/TABLES/CONSUMABLEITEMTABLE.MBIN"
+DefaultRealityPath = "METADATA/REALITY/DEFAULTREALITY.MBIN"
 
 StarMapCrashedShipId = "MAP_CRASHSHIP"
 HiveMapId = "CHART_HIVE"
@@ -12,9 +12,7 @@ HiveMapId = "CHART_HIVE"
 function CreateStarMap(NewId)
 	return [[
 		<Property value="GcProductData.xml">
-			<Property name="Id" value="]] ..
-		NewId ..
-			[[" />
+			<Property name="ID" value="]]..NewId ..[[" />
 			<Property name="Name" value="UI_STARCHART_NAME" />
 			<Property name="NameLower" value="UI_STARCHART_NAME_L" />
 			<Property name="Subtitle" value="VariableSizeString.xml">
@@ -27,14 +25,23 @@ function CreateStarMap(NewId)
 			<Property name="GroupID" value="" />
 			<Property name="DebrisFile" value="TkModelResource.xml">
 				<Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+				<Property name="ResHandle" value="GcResource.xml">
+					<Property name="ResourceID" value="0" />
+				</Property>
 			</Property>
 			<Property name="BaseValue" value="3200" />
 			<Property name="Level" value="0" />
 			<Property name="Icon" value="TkTextureResource.xml">
 				<Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STARCHART.CRASHEDSHIP.dds" />
+				<Property name="ResHandle" value="GcResource.xml">
+					<Property name="ResourceID" value="0" />
+				</Property>
 			</Property>
 			<Property name="HeroIcon" value="TkTextureResource.xml">
 				<Property name="Filename" value="" />
+				<Property name="ResHandle" value="GcResource.xml">
+					<Property name="ResourceID" value="0" />
+				</Property>
 			</Property>
 			<Property name="Colour" value="Colour.xml">
 				<Property name="R" value="0.101960786" />
@@ -87,6 +94,7 @@ function CreateStarMap(NewId)
 			<Property name="GoodForSelling" value="False" />
 			<Property name="GiveRewardOnSpecialPurchase" value="" />
 			<Property name="EggModifierIngredient" value="False" />
+			<Property name="IsTechbox" value="False" />
 		</Property>
 	]]
 end
