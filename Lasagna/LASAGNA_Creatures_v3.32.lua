@@ -1,33 +1,33 @@
 --all multiplied, i.e. x8
-UNDERWATER_ALL_OTHER_MAX_SCALE_SIZE = 8
-FISHFLOCK_MAX_SCALE_SIZE = 2 --glitch if too big
-BUTTERFLOCK_MAX_SCALE_SIZE = 1 --glitch if too big
+local UNDERWATER_ALL_OTHER_MAX_SCALE_SIZE = 8
+local FISHFLOCK_MAX_SCALE_SIZE = 2 --glitch if too big
+local BUTTERFLOCK_MAX_SCALE_SIZE = 1 --glitch if too big
 --SANDWORM_MAX_SCALE_SIZE = 2 --breaks sandworms
-GROUND_AIR_SMALLER_MAX_SCALE_SIZE = 8
-GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE = 12 --moon-sized creatures if too big --v1.9: 18 from 25
-PROTODIGGER_MAX_SCALE_SIZE = 3 --Octopus legs
+local GROUND_AIR_SMALLER_MAX_SCALE_SIZE = 8
+local GROUND_AIR_ALL_OTHER_MAX_SCALE_SIZE = 12 --moon-sized creatures if too big --v1.9: 18 from 25
+local PROTODIGGER_MAX_SCALE_SIZE = 3 --Octopus legs
 
-HERD_FALSE = "False" --v2.3: Removes herds for 8x or more creatures
+local HERD_FALSE = "False" --v2.3: Removes herds for 8x or more creatures
 
-GLOBAL_MAX_CREATURE_SIZE = 12 --global variable, overrides many creatures i.e. ground --v1.94: 18 from 25, v2.0: 12 from 18
+local GLOBAL_MAX_CREATURE_SIZE = 12 --global variable, overrides many creatures i.e. ground --v1.94: 18 from 25, v2.0: 12 from 18
 
 --not multiplied, replaces
-CREATURE_MINCOUNT = 1 --minimum spawn count per species, float value causes error
-CREATURE_MAXCOUNT = 1 --max "  " --v2.0: added this to prevent huge groups, which caused lag
-CREATURE_MAXCOUNT_LARGE = 1 --larger creatures
-CREATURE_MAXCOUNT_SMALL = 10
+local CREATURE_MINCOUNT = 1 --minimum spawn count per species, float value causes error
+local CREATURE_MAXCOUNT = 1 --max "  " --v2.0: added this to prevent huge groups, which caused lag
+local CREATURE_MAXCOUNT_LARGE = 1 --larger creatures
+local CREATURE_MAXCOUNT_SMALL = 10
 
 --MOVE_SPEED_SCALE = 0.8 --movement speed --v2.3: commented out, this stops some creatures from moving completely
-ANIM_SPEED_SCALE_MULTIPLIER = 0.7
-MIN_SPEED_SCALE_MULTIPLIER = 0.5
-MAX_SPEED_SCALE_MULTIPLIER = 0.7
+local ANIM_SPEED_SCALE_MULTIPLIER = 0.7
+local MIN_SPEED_SCALE_MULTIPLIER = 0.5
+local MAX_SPEED_SCALE_MULTIPLIER = 0.7
 
 -------------------------------
-SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**This line is code by InsaneRuffles**
+local SPAWNDISTANCE_MULTIPLIER = 4 --creatures spawn distance multiplier --**This line is code by InsaneRuffles**
 -------------------------------
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Creatures_v3.31.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Creatures_v3.32.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

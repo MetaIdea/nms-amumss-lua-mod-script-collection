@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Exosuit Chambers in the Nexus 1.2.pak", 
+["MOD_FILENAME"] 			= "No Exosuit Chambers in the Nexus 1.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.66",
+["NMS_VERSION"]				= "4.03",
 ["MOD_DESCRIPTION"]			= "This mod removes exosuit chambers in the Nexus",
 ["MODIFICATIONS"] 			= 
 	{

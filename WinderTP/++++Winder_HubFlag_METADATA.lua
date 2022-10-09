@@ -2054,7 +2054,7 @@ DEBUG_LANGUAGE_EXPORT = -- DEBUG GLOBAL LANGUAGE LIST ENTRY
     </Property>]] 
 
 CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
-[[<!--HUBFLAG INTERACTION-->
+[[
     <Property value="GcAlienPuzzleEntry.xml">
     	<Property name="ProgressionIndex" value="-1" />
       <Property name="MinProgressionForSelection" value="0" />
@@ -2065,7 +2065,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="Type" value="GcInteractionType.xml">
         <Property name="InteractionType" value="200" />
       </Property>
-      <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
+      <Property name="Category" value="GcAlienPuzzleCategory.xml">
         <Property name="AlienPuzzleCategory" value="Default" />
       </Property>
       <Property name="AdditionalOptions" value="None" />
@@ -2090,7 +2090,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Positive" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
           <Property name="KeepOpen" value="False" />
@@ -2102,13 +2102,14 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
+          <Property name="TitleOverride" value="" />
           <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+          <Property name="WordCategory" value="wordcategorytableEnum.xml">
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
       </Property>
@@ -2117,7 +2118,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="Mood" value="GcAlienMood.xml">
         <Property name="Mood" value="Positive" />
       </Property>
-      <Property name="Prop" value="GcNPCPropTypes.xml">
+      <Property name="Prop" value="GcNPCPropType.xml">
         <Property name="NPCProp" value="DontCare" />
       </Property>
       <Property name="AdvancedInteractionFlow" />
@@ -2135,7 +2136,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="Type" value="GcInteractionType.xml">
         <Property name="InteractionType" value="201" />
       </Property>
-      <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
+      <Property name="Category" value="GcAlienPuzzleCategory.xml">
         <Property name="AlienPuzzleCategory" value="Default" />
       </Property>
       <Property name="AdditionalOptions" value="None" />
@@ -2156,7 +2157,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Positive" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
           <Property name="KeepOpen" value="True" />
@@ -2168,13 +2169,14 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
+          <Property name="TitleOverride" value="" />
           <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+          <Property name="WordCategory" value="wordcategorytableEnum.xml">
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
         <Property value="GcAlienPuzzleOption.xml">
@@ -2190,7 +2192,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Positive" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
           <Property name="KeepOpen" value="False" />
@@ -2202,13 +2204,14 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
+          <Property name="TitleOverride" value="" />
           <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
-            <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+            <Property name="WordCategory" value="wordcategorytableEnum.xml">
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
          </Property>
         <Property value="GcAlienPuzzleOption.xml">
@@ -2220,7 +2223,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Neutral" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
           <Property name="KeepOpen" value="False" />
@@ -2232,13 +2235,14 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
+          <Property name="TitleOverride" value="" />
           <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+          <Property name="WordCategory" value="wordcategorytableEnum.xml">
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
       </Property>
@@ -2247,7 +2251,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="Mood" value="GcAlienMood.xml">
         <Property name="Mood" value="Neutral" />
       </Property>
-      <Property name="Prop" value="GcNPCPropTypes.xml">
+      <Property name="Prop" value="GcNPCPropType.xml">
         <Property name="NPCProp" value="DontCare" />
       </Property>
       <Property name="AdvancedInteractionFlow" />
@@ -2268,7 +2272,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="Type" value="GcInteractionType.xml">
         <Property name="InteractionType" value="201" />
       </Property>
-      <Property name="AlienPuzzleCategory" value="GcAlienPuzzleCategory.xml">
+      <Property name="Category" value="GcAlienPuzzleCategory.xml">
         <Property name="AlienPuzzleCategory" value="Default" />
       </Property>
       <Property name="AdditionalOptions" value="None" />
@@ -2289,7 +2293,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Neutral" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
           <Property name="KeepOpen" value="True" />
@@ -2301,13 +2305,14 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
+          <Property name="TitleOverride" value="" />
           <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+          <Property name="WordCategory" value="wordcategorytableEnum.xml">
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
         <Property value="GcAlienPuzzleOption.xml">
@@ -2323,7 +2328,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Positive" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
           <Property name="KeepOpen" value="False" />
@@ -2335,13 +2340,14 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
+          <Property name="TitleOverride" value="" />
           <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+          <Property name="WordCategory" value="wordcategorytableEnum.xml">
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
         <Property value="GcAlienPuzzleOption.xml">
@@ -2353,7 +2359,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="Mood" value="GcAlienMood.xml">
             <Property name="Mood" value="Neutral" />
           </Property>
-          <Property name="Prop" value="GcNPCPropTypes.xml">
+          <Property name="Prop" value="GcNPCPropType.xml">
             <Property name="NPCProp" value="DontCare" />
           </Property>
           <Property name="KeepOpen" value="False" />
@@ -2365,13 +2371,14 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
           <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
             <Property name="AkEvent" value="INVALID_EVENT" />
           </Property>
+          <Property name="TitleOverride" value="" />
           <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
             <Property name="ConditionTest" value="AnyFalse" />
           </Property>
           <Property name="EnablingConditions" />
           <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="gcwordcategorytableEnum" value="MISC" />
+          <Property name="WordCategory" value="wordcategorytableEnum.xml">
+            <Property name="wordcategorytableEnum" value="MISC" />
           </Property>
         </Property>
       </Property>
@@ -2380,7 +2387,7 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="Mood" value="GcAlienMood.xml">
         <Property name="Mood" value="Neutral" />
       </Property>
-      <Property name="Prop" value="GcNPCPropTypes.xml">
+      <Property name="Prop" value="GcNPCPropType.xml">
         <Property name="NPCProp" value="DontCare" />
       </Property>
       <Property name="AdvancedInteractionFlow" />
@@ -2388,10 +2395,10 @@ CUSTOM_INTERACTIONS = -- ALIENPUZZLETABLE INTERACTIONS
       <Property name="CustomFreighterTextIndex" value="-1" />
       <Property name="RadialInteraction" value="False" />
     </Property>
-	<!--HUBFLAG END-->]]
+	]]
 
 CUSTOM_REWARDS = --REWARDTABLE REWARDS
-[[	<!--HUBFLAG GenericRewardTable-->
+[[	
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="SEAN" />
       <Property name="List" value="GcRewardTableItemList.xml">
@@ -2429,7 +2436,7 @@ CUSTOM_REWARDS = --REWARDTABLE REWARDS
         </Property>
       </Property>
     </Property>
-	<!--HUBFLAG END-->]]
+	]]
 
 HUBFLAG_NPCSPAWN = 
 {
@@ -66726,7 +66733,7 @@ return [[
     <Property value="GcNPCPlacementInfo.xml">
       <Property name="PlacementRuleId" value="]] .. ID .. [[" />
       <Property name="SpawnUnderNodeName" value="]] .. PARENT .. [[" />
-      <Property name="PlacementNodeName" value="]] .. NODE .. [[" />
+      <Property name="PlacmentNodeName" value="]] .. NODE .. [[" />
       <Property name="MustPlace" value="True" />
       <Property name="SpawnChance" value="1" />
       <Property name="FractionOfNodesActive" value="1" />
@@ -66749,6 +66756,7 @@ return [[
       <Property name="SpawnMoving" value="False" />
       <Property name="SpawnInAbandoned" value="True" />
       <Property name="HideDuringMissions" />
+      <Property name="OnlyUsePuzzleOverridesIfPlayerOwned" value="False" />
     </Property>
 ]]
 end
@@ -66807,7 +66815,7 @@ end
 
 function GetGroupData(ID, NAME, ICON, CHILDREN)
 SUBGROUP_INJECT = ""
-for _,n in pairs(CHILDREN) do
+for _m,n in pairs(CHILDREN) do
 	SUBGROUP_INJECT = SUBGROUP_INJECT .. [[
         <Property value="GcBaseBuildingSubGroup.xml">
           <Property name="Id" value="]] .. n["ID"] .. [[" />
@@ -66850,8 +66858,7 @@ else SNAP_INJECT = SNAP
 end
 
 INACTIVE = ""
-if OVERRIDE_INACTIVE then INACTIVE = MODEL
-end
+if OVERRIDE_INACTIVE then INACTIVE = MODEL end
 
 if BUILD_ANYWHERE then
 	FREIGHTER = "True"
@@ -66867,15 +66874,15 @@ else SNAPDIST_INJECT = SNAPPING_DISTANCE
 end
 
 GROUPS_TEMP = {}
-for _,n in pairs(GROUPS) do
+for _m,n in pairs(GROUPS) do
 	TOP_GROUP = ""
-	for _,p in pairs(GROUPS_INJECT) do
-		for _,r in pairs(p["SubGroups"]) do
+	for _o,p in pairs(GROUPS_INJECT) do
+		for _q,r in pairs(p["SubGroups"]) do
 			if n == r["ID"] then TOP_GROUP = p["ID"] 
 			end 
 		end
 	end
-	for _,t in pairs(GROUPS_TEMP) do
+	for _s,t in pairs(GROUPS_TEMP) do
 		if TOP_GROUP == t then TOP_GROUP = "" 
 		end
 	end
@@ -66905,6 +66912,9 @@ return [[
       </Property>
       <Property name="PlacementScene" value="TkModelResource.xml">
         <Property name="Filename" value="]] .. PLACEMENT .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
         <Property name="BaseBuildingDecorationType" value="]] .. DTYPE .. [[" />
@@ -66927,9 +66937,6 @@ return [[
       <Property name="FreighterBaseLimit" value="0" />
       <Property name="CheckPlaceholderCollision" value="]] .. CHECKCOLL .. [[" />
 	  <Property name="CheckPlayerCollision" value="]] .. ENCOLL .. [[" />
-      <!--Property name="CollisionScale" value="]] .. COLLSCALE .. [[" /-->
-      <!--Property name="OptionalPhysics" value="]] .. TOUCH_INJECT .. [[" /-->
-      <!--Property name="CanPlaceOnItself" value="]] .. STACK .. [[" /-->
       <Property name="CanRotate3D" value="True" />
       <Property name="CanScale" value="]] .. SCALEABLE .. [[" />
       <Property name="Groups">
@@ -66951,9 +66958,6 @@ return [[
       <Property name="RemovesWhenUnsnapped" value="False" />
       <Property name="EditsTerrain" value="]] .. TERRAIN .. [[" />
       <Property name="BaseTerrainEditShape" value="]] .. T_SHAPE .. [[" />
-      <!--Property name="TerrainEditBaseYOffset" value="]] .. T_BASE .. [[" /-->
-      <!--Property name="TerrainEditTopYOffset" value="]] .. T_TOP .. [[" /-->
-      <!--Property name="TerrainEditBoundsScalar" value="]] .. T_SCALE .. [[" /-->
       <Property name="MinimumDeleteDistance" value="1" />
       <Property name="IsSealed" value="]] .. SEAL .. [[" />
       <Property name="CloseMenuAfterBuild" value="False" />
@@ -66966,6 +66970,9 @@ return [[
       <Property name="RegionSpawnLOD" value="1" />
       <Property name="NPCInteractionScene" value="TkModelResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
 ]]
@@ -66986,11 +66993,11 @@ ICON_INJECT = [[CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/]] .. ID .. [[.DDS]]
 else ICON_INJECT = ICON 
 end
 INGRED_INJECT = ""
-for _,n in pairs(INGRED) do
+for _m,n in pairs(INGRED) do
 	INGRED_INJECT = INGRED_INJECT .. [[
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="]] .. n["ID"] .. [[" />
-          <Property name="InventoryType" value="GcInventoryType.xml">
+          <Property name="Type" value="GcInventoryType.xml">
             <Property name="InventoryType" value="]] .. n["InventoryType"] .. [[" />
           </Property>
           <Property name="Amount" value="]] .. n["Amount"] .. [[" />
@@ -66999,7 +67006,7 @@ for _,n in pairs(INGRED) do
 end
 return [[
     <Property value="GcProductData.xml">
-      <Property name="Id" value="]] .. ID .. [[" />
+      <Property name="ID" value="]] .. ID .. [[" />
       <Property name="Name" value="]] .. NAMEUP_INJECT .. [[" />
       <Property name="NameLower" value="]] .. NAMEL .. [[" />
       <Property name="Subtitle" value="VariableSizeString.xml">
@@ -67012,14 +67019,23 @@ return [[
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource.xml">
         <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="BaseValue" value="1" />
       <Property name="Level" value="0" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON_INJECT .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HeroIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="Colour" value="Colour.xml">
         <Property name="R" value="0.17254902" />
@@ -67074,7 +67090,7 @@ return [[
       <Property name="GoodForSelling" value="False" />
       <Property name="GiveRewardOnSpecialPurchase" value="" />
       <Property name="EggModifierIngredient" value="False" />
-      <Property name="IsTechBox" value="False" />
+      <Property name="IsTechbox" value="False" />
     </Property>
 ]]
 end
@@ -67093,9 +67109,15 @@ return [[
           </Property>
           <Property name="Model" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. MODEL .. [[" />
+			<Property name="ResHandle" value="GcResource.xml">
+			  <Property name="ResourceID" value="0" />
+			</Property>
           </Property>
           <Property name="Inactive" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. INACTIVE .. [[" />
+			<Property name="ResHandle" value="GcResource.xml">
+			  <Property name="ResourceID" value="0" />
+			</Property>
           </Property>
         </Property>
       </Property>
@@ -67105,7 +67127,7 @@ end
 
 function GetSnapGroupPart(ID, MODELS, INACTIVE)
 STYLEMODEL_INJECT = ""
-for _,l in pairs(MODELS) do
+for k,l in pairs(MODELS) do
 	INACTIVE_INJECT = ""
 	if INACTIVE then INACTIVE_INJECT = l["Filename"] 
 end
@@ -67116,9 +67138,15 @@ end
           </Property>
           <Property name="Model" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. l["Filename"] .. [[" />
+			<Property name="ResHandle" value="GcResource.xml">
+			  <Property name="ResourceID" value="0" />
+			</Property>
           </Property>
           <Property name="Inactive" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. INACTIVE_INJECT .. [[" />
+			<Property name="ResHandle" value="GcResource.xml">
+			  <Property name="ResourceID" value="0" />
+			</Property>
           </Property>
         </Property>
 ]]
@@ -67264,38 +67292,38 @@ end
 -- else GROUPS_INJECT = HUBFLAG_GROUPS_ASSLESS
 -- end
 
-for _,j in pairs(GROUPS_INJECT) do	-- INITIALISE TOPGROUP_COUNTER
+for i,j in pairs(GROUPS_INJECT) do	-- INITIALISE TOPGROUP_COUNTER
 	TOPGROUP_COUNTER[j["ID"]] = 0
 end
 
-CUSTOM_NPCS_LIST = {"<!-- HUBFLAG LIST-->"}
+CUSTOM_NPCS_LIST = {""}
 for i,j in pairs(HUBFLAG_NPCSPAWN) do
 	CUSTOM_NPCS_LIST[i+1] =  GetNPCtable(j["ID"],j["SpawnUnderNodeName"],j["PlacementNodeName"],j["SpawnSpecific"],j["Race"],j["InteractionOverride"],j["TechShopCategory"],j["ForceInteraction"],j["DisableInteraction"])
 end
 
-EXPORT_GROUPS_LIST = {"<!-- HUBFLAG GROUPS -->"}
+EXPORT_GROUPS_LIST = {""}
 for i,j in pairs(GROUPS_INJECT) do
 	EXPORT_GROUPS_LIST[i+1] = GetGroupData(j["ID"],j["Name"],j["Icon"],j["SubGroups"])
 end
 
-EXPORT_KNOWNPRODUCTS_LIST = {"<!-- HUBFLAG VANILLA -->"}
+EXPORT_KNOWNPRODUCTS_LIST = {""}
 -- for i,j in pairs(HUBFLAG_VANILLA) do	-- ADDING FOUNDATION INFRASTRUCTURE PIECES INTO DEFAULTSAVE
 	-- EXPORT_KNOWNPRODUCTS_LIST[i+1] = GetKnownProducts(j)
 -- end
 
-EXPORT_BASEOBJECTS_LIST = {"<!--HUBFLAG PRODUCT-->"}
-EXPORT_PRODUCTS_LIST = {"<!--HUBFLAG-->"}
-EXPORT_PARTS_LIST = {"<!--HUBFLAG-->"}
-EXPORT_AUTOPARTDATA_LIST = {"<!--HUBFLAG-->"}
-EXPORT_COST_LIST = {"<!-- HUBFLAG OBJECT COSTS-->"}
-EXPORT_SPECSHOP= "<!-- HUBFLAG SPECIALS -->"
+EXPORT_BASEOBJECTS_LIST = {""}
+EXPORT_PRODUCTS_LIST = {""}
+EXPORT_PARTS_LIST = {""}
+EXPORT_AUTOPARTDATA_LIST = {""}
+EXPORT_COST_LIST = {""}
+EXPORT_SPECSHOP= ""
 NEWFILES_FINAL = {}
 
 -- JOINING THE OBJECT LISTS
-for _,j in pairs(HUBFLAG_DECAL_GARDEN) do
+for i,j in pairs(HUBFLAG_DECAL_GARDEN) do
 	HUBFLAG_DECOR_NOSNAP[#HUBFLAG_DECOR_NOSNAP+1] = j
 end
-for _,j in pairs(HUBFLAG_DECOR_NOSNAP) do
+for i,j in pairs(HUBFLAG_DECOR_NOSNAP) do
 	HUBFLAG_OBJPROD[#HUBFLAG_OBJPROD + 1] = j
 end
 
@@ -67325,9 +67353,8 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"])
 	EXPORT_COST_LIST[i+1] = GetBaseBuildingCost(j["OBJECT"]["ID"], POP_IN_RATE)
 	IS_SPEC = false
-	for _,n in pairs(j["OBJECT"]["SubGroupName"]) do
-		if n == "WDSPEC" then IS_SPEC = true
-		end		
+	for m,n in pairs(j["OBJECT"]["SubGroupName"]) do
+		if n == "WDSPEC" then IS_SPEC = true end		
 	end
 	if IS_SPEC then
 			EXPORT_SPECSHOP = EXPORT_SPECSHOP .. GetSpecials(j["OBJECT"]["ID"])		-- PUTTING WDSPEC OBJECTS IN PURCHASEABLESPECIALS
@@ -67338,23 +67365,23 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 end
 
 -- ADDING SNAPGROUPS TO PARTS TABLE
-for _,j in pairs(HUBFLAG_SNAPGROUPS) do
+for i,j in pairs(HUBFLAG_SNAPGROUPS) do
 	table.insert(EXPORT_PARTS_LIST,GetSnapGroupPart(j["ID"], j["StyleModels"], OVERRIDE_INACTIVE))
-	for _,l in pairs(j["StyleModels"]) do
+	for k,l in pairs(j["StyleModels"]) do
 		table.insert(EXPORT_AUTOPARTDATA_LIST, getAutoPartData(j["ID"], l["Style"]))
 	end
 end
 
 -- END TAGS FOR MANUAL READING EXML_Helper FILES
-CUSTOM_NPCS_LIST[#CUSTOM_NPCS_LIST + 1] = "<!-- HUBFLAG END-->"
-EXPORT_KNOWNPRODUCTS_LIST[#EXPORT_KNOWNPRODUCTS_LIST + 1] = "<!-- HUBFLAG -->"
-EXPORT_COST_LIST[#EXPORT_COST_LIST + 1] = "<!-- HUBFLAG OBJECT COSTS END-->"
-EXPORT_BASEOBJECTS_LIST[#EXPORT_BASEOBJECTS_LIST + 1] = "<!--HUBFLAG PRODUCT END-->"
-EXPORT_GROUPS_LIST[#EXPORT_GROUPS_LIST + 1] = "<!-- HUBFLAG GROUPS END-->"
-EXPORT_PRODUCTS_LIST[#EXPORT_PRODUCTS_LIST + 1] = "<!--HUBFLAG END-->"
-EXPORT_PARTS_LIST[#EXPORT_PARTS_LIST + 1] = "<!--HUBFLAG END-->"
-EXPORT_AUTOPARTDATA_LIST[#EXPORT_AUTOPARTDATA_LIST + 1] = "<!--HUBFLAG END-->"
-EXPORT_SPECSHOP = EXPORT_SPECSHOP .. "<!--HUBFLAG END-->"
+CUSTOM_NPCS_LIST[#CUSTOM_NPCS_LIST + 1] = ""
+EXPORT_KNOWNPRODUCTS_LIST[#EXPORT_KNOWNPRODUCTS_LIST + 1] = ""
+EXPORT_COST_LIST[#EXPORT_COST_LIST + 1] = ""
+EXPORT_BASEOBJECTS_LIST[#EXPORT_BASEOBJECTS_LIST + 1] = ""
+EXPORT_GROUPS_LIST[#EXPORT_GROUPS_LIST + 1] = ""
+EXPORT_PRODUCTS_LIST[#EXPORT_PRODUCTS_LIST + 1] = ""
+EXPORT_PARTS_LIST[#EXPORT_PARTS_LIST + 1] = ""
+EXPORT_AUTOPARTDATA_LIST[#EXPORT_AUTOPARTDATA_LIST + 1] = ""
+EXPORT_SPECSHOP = EXPORT_SPECSHOP .. ""
 
 CUSTOM_NPCS				= table.concat(CUSTOM_NPCS_LIST)
 EXPORT_KNOWNPRODUCTS	= table.concat(EXPORT_KNOWNPRODUCTS_LIST)
@@ -68040,10 +68067,10 @@ BASEBUILD_ENTRIES =
 						-- ["LINE_OFFSET"] 		= "+0",
 						-- ["ADD"] 				=
 						-- [[<Property value="NMSString0x10.xml">
--- <Property name="Value" value="PF_EXT_DECOR" /> <!--HUBFLAG TWEAK-->
+-- <Property name="Value" value="PF_EXT_DECOR" /> 
 -- </Property>
 -- <Property value="NMSString0x10.xml">
--- <Property name="Value" value="PF_EXT_DECOR_D1" /> <!--HUBFLAG TWEAK-->
+-- <Property name="Value" value="PF_EXT_DECOR_D1" /> 
 -- </Property>]],
 					-- },
 					{
@@ -68368,18 +68395,11 @@ FINAL_VALUE_CHANGE =
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
-					["EXML_CHANGE_TABLE"]	= 
+					["MBIN_FILE_SOURCE"] 	= 
 					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-							["LINE_OFFSET"] 		= "+0",
-							["ADD"] 				= EXPORT_KNOWNPRODUCTS
-						}
+						-- [[METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN]],
+						[[METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN]],
 					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\DEFAULTSAVEDATACREATIVE.MBIN",
 					["EXML_CHANGE_TABLE"]	= 
 					{
 						{
@@ -68425,11 +68445,11 @@ LANGUAGE_FILE_HEADER = [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
   <Property name="Table">]]
-for _,j in pairs(LANGUAGE_TYPE) do
+for i,j in pairs(LANGUAGE_TYPE) do
 	LANGUAGE_TEMP = {}
 	EXPORT_LANGUAGE = {}
 	table.insert(EXPORT_LANGUAGE, LANGUAGE_FILE_HEADER)
-	for _,l in pairs(ADD_LANGUAGE_LIST) do
+	for k,l in pairs(ADD_LANGUAGE_LIST) do
 		-- USES ENGLISH ENTRY IF THERE IS NO TRANSLATION
 		if l["Value"][j] == "" then
 			 table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"]["English"]))
@@ -68480,7 +68500,7 @@ for _,j in pairs(LANGUAGE_TYPE) do
 end
 
 if MORE_VANILLA_FLOOR then
-	for _,j in pairs(VANILLA_FLOOR_VALUE_CHANGE) do
+	for i,j in pairs(VANILLA_FLOOR_VALUE_CHANGE) do
 		table.insert(FINAL_VALUE_CHANGE, j)
 	end
 end

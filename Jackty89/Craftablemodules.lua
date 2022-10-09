@@ -264,7 +264,7 @@ function CreateRequirement(Requirement)
     [[
         <Property value="GcTechnologyRequirement.xml">
             <Property name="ID" value="]]..RequirementID..[[" />
-            <Property name="InventoryType" value="GcInventoryType.xml">
+            <Property name="Type" value="GcInventoryType.xml">
                 <Property name="InventoryType" value="]]..RequirementInventoryType..[[" />
             </Property>
             <Property name="Amount" value="]]..RequirementAmount..[[" />

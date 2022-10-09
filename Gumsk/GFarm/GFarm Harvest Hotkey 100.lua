@@ -2,7 +2,7 @@ Author = "Mjjstral+Gumsk"
 ModName = "gFarm Harvest Hotkey"
 ModNameSub = "100"
 BaseDescription = "Harvests all farm plants within specified u."
-GameVersion = "397"
+GameVersion = "403"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN"
 
@@ -18,8 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["MBIN_FILE_SOURCE"] = FileSource1,
 						["EXML_CHANGE_TABLE"] = {
 							{
-								["SPECIAL_KEY_WORDS"]	= {"Filename","MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/0H_EMOTE_CALL_PET.ANIM.MBIN"}, 
-								["LINE_OFFSET"]			= "+0",
+								["SPECIAL_KEY_WORDS"]	= {"Filename","MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/0H_EMOTE_CALL_PET.ANIM.MBIN"},
 								["REPLACE_TYPE"]		= "ADDAFTERSECTION",
 								["ADD"]					= 
 [[
@@ -86,15 +85,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		<Property name="Cost" value="0" />
 		<Property name="Repeat" value="False" />
 		<Property name="RequiredTech" value="" />
+		<Property name="OnlyChargeDuringSeasons" />
 	  </Property>
 	  <Property name="StatToTrack" value="GcStatsEnum.xml">
-		<Property name="GcStatEnum" value="None" />
+		<Property name="StatEnum" value="None" />
 	  </Property>
 	  <Property name="StartsBuried" value="False" />
 	  <Property name="MustBeVisibleToInteract" value="False" />
 	  <Property name="NeedsStorm" value="False" />
 	  <Property name="Name" value="" />
 	  <Property name="VRInteractMessage" value="" />
+	  <Property name="TerminalHeading" value="" />
 	  <Property name="TerminalMessage" value="" />
 	  <Property name="ScanType" value="" />
 	  <Property name="ScanData" value="" />
@@ -137,7 +138,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				<Property value="GcGoToStateAction.xml">
 				  <Property name="State" value="WAIT_FOR_HARVEST" />
 				  <Property name="Broadcast" value="False" />
-				  <Property name="BroadcastLevel" value="Local" />
+				  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+				    <Property name="BroadcastLevel" value="Local" />
+				  </Property>
 				</Property>			
 			  </Property>
 			</Property>
@@ -159,7 +162,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				<Property value="GcGoToStateAction.xml">
 				  <Property name="State" value="WAIT_FOR_HARVEST" />
 				  <Property name="Broadcast" value="False" />
-				  <Property name="BroadcastLevel" value="Local" />
+				  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+				    <Property name="BroadcastLevel" value="Local" />
+				  </Property>
 				</Property>				
 			  </Property>
 			</Property>
@@ -178,7 +183,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				<Property value="GcGoToStateAction.xml">
 				  <Property name="State" value="HARVEST" />
 				  <Property name="Broadcast" value="False" />
-				  <Property name="BroadcastLevel" value="Local" />
+				  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+				    <Property name="BroadcastLevel" value="Local" />
+				  </Property>
 				</Property>			
 			  </Property>
 			</Property>	
@@ -198,8 +205,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
 						["EXML_CHANGE_TABLE"] 	= {
 							{
-								["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-								["LINE_OFFSET"] 		= "+0",
+								["PRECEDING_KEY_WORDS"] = {"Emotes"},
 								["ADD"] 				= 
 	[[
 		<Property value="GcPlayerEmote.xml">
@@ -209,6 +215,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		  <Property name="AnimationName" value="HARVEST" />
 		  <Property name="Icon" value="TkTextureResource.xml">
 			<Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.PLANTGREEN.DDS" />
+			<Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
 		  </Property>
 		  <Property name="LinkedSpecialID" value="" />
 		  <Property name="LoopAnimUntilMove" value="" />
@@ -229,8 +238,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			["FILE_DESTINATION"] = [[MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.EXML]],
 			["FILE_CONTENT"] 	 = 
-	[[
-	<?xml version="1.0" encoding="utf-8"?>
+	[[<?xml version="1.0" encoding="utf-8"?>
 	<Data template="TkAnimMetadata">
 	  <Property name="FrameCount" value="10" />
 	  <Property name="NodeCount" value="0" />
