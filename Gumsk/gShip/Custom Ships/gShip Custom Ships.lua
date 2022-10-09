@@ -2,8 +2,8 @@ Author = "WinderTP,Kibbles,Gumsk"
 ModName = "gShip"
 ModNameSub = "Custom Ships"
 BaseDescription = "Adds new ship models"
-GameVersion = "393"
-ModVersion = "c"
+GameVersion = "399"
+ModVersion = "b"
 
 ShipInfo = 	{
 				{["NAME"] = "GOLDENVECTOR",		["ORDER"] = "22",	["COCKPITX"] = "0",	["COCKPITY"] = "0",		["COCKPITZ"] = "0",		["SCENE"] = "GOLDENVECTOR"},

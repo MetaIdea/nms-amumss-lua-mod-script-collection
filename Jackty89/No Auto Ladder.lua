@@ -1,13 +1,11 @@
-GameVersion = "3_82"
 ModeName = "No Auto Ladder"
 Author = "Methatronc/Jackty89"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] 			= ModeName..GameVersion..".pak",
+    ["MOD_FILENAME"] 			= ModeName..".pak",
     ["MOD_DESCRIPTION"]			= ModeName,
     ["MOD_AUTHOR"]				= Author,
-    ["NMS_VERSION"]				= GameVersion,
     ["MODIFICATIONS"] 			=
 	{
 		{
@@ -18,6 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"LadderDistanceToAutoMount", "-1"},

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gSquad Damage"
 ModNameSub = "10"
 BaseDescription = ""
-GameVersion = "399"
+GameVersion = "403"
 ModVersion = "a"
 FileSource1 = "METADATA\PROJECTILES\PROJECTILETABLE.MBIN"
 

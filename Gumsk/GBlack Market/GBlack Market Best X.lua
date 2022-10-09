@@ -2,8 +2,8 @@ Author = "Gumsk"
 ModName = "gBlack Market"
 ModNameSub = "Best X"
 BaseDescription = "Changes the weighting curve of X-class upgrades"
-GameVersion = "399"
-ModVersion = "a"
+GameVersion = "403"
+ModVersion = "b"
 FileSource1 = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
 WeightingCurve = "MinIsSuperRare"			--MaxIsRare; X-class curves where higher is better
@@ -45,10 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["MBIN_FILE_SOURCE"] = FileSource1,
 					["EXML_CHANGE_TABLE"] = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"ID","UP_LASERX"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"NumStatsMax", 4},
-							},
+
 						},
 					}
 				},
@@ -71,7 +68,7 @@ for i = 1,#IdList do
 			{"WeightingCurve","MinIsUncommon"},
 			{"WeightingCurve","MinIsRare"}
 		},
-		["LINE_OFFSET"] = 1,
+		["LINE_OFFSET"] = 0,
 		["VALUE_CHANGE_TABLE"] = {
 			{"WeightingCurve", "Reverse"}
 		}
@@ -87,7 +84,7 @@ for i = 1,#IdList do
 			{"WeightingCurve","MaxIsUncommon"},
 			{"WeightingCurve","MaxIsRare"}
 		},
-		["LINE_OFFSET"] = 1,
+		["LINE_OFFSET"] = 0,
 		["VALUE_CHANGE_TABLE"] = {
 			{"WeightingCurve", WeightingCurve}
 		}
@@ -102,7 +99,7 @@ for i = 1,#IdList do
 		["WHERE_IN_SUBSECTION"] = {
 			{"WeightingCurve","Reverse"}
 		},
-		["LINE_OFFSET"] = 1,
+		["LINE_OFFSET"] = 0,
 		["VALUE_CHANGE_TABLE"] = {
 			{"WeightingCurve", WeightingCurveReverse}
 		}

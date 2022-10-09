@@ -109,7 +109,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						},
 						{
 							["SPECIAL_KEY_WORDS"]	= {"InteractionType","MessageBeacon"},
-							["LINE_OFFSET"] = 0,
+							["LINE_OFFSET"] = "0",
 							["VALUE_CHANGE_TABLE"] 	= {
 								{"InteractionType","None"}
 							}
