@@ -48,8 +48,8 @@ ATLAS_WORD = [[
                 <Property name="AlienRace" value="Atlas" />
               </Property>
               <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
+              <Property name="Category" value="WordCategoryTableEnum.xml">
+                <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -71,8 +71,8 @@ MISC_WORD =
                 <Property name="AlienRace" value="None" />
               </Property>
               <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
+              <Property name="Category" value="WordCategoryTableEnum.xml">
+                <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -90,8 +90,8 @@ ATLAS_WORD_FULL =
                 <Property name="AlienRace" value="Atlas" />
               </Property>
               <Property name="UseCategory" value="False" />
-              <Property name="Category" value="GcWordCategoryTableEnum.xml">
-                <Property name="gcwordcategorytableEnum" value="MISC" />
+              <Property name="Category" value="WordCategoryTableEnum.xml">
+                <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
