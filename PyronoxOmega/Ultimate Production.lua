@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "Ultimate_Production"
-GameVersion = "3.97"
-ModVersion = "1.1"
+GameVersion = "4"
+ModVersion = "1.2"
 Description = "Freighter Production Enhancement"
 Filesource = {
 "MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/FARMALBUMEN/ENTITIES/PLANTINTERACTION.ENTITY.MBIN", 
@@ -103,16 +103,38 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{ 
 						{
 							["INTEGER_TO_FLOAT"] ="FORCE",
-							["SPECIAL_KEY_WORDS"] = {"Cooking","True",},
+							
+							["SPECIAL_KEY_WORDS"] = {"Cooking","True","Result","GcRefinerRecipeElement.xml"},
 							["REPLACE_TYPE"]    = "ALL", 
 							["VALUE_CHANGE_TABLE"] =
 							{		
-								{"TimeToMake", C_Time},	
+								--{"TimeToMake", C_Time},	
 								{"Amount", Batch},								
 							}
 						}
 					}
 				},
+								{
+					["MBIN_FILE_SOURCE"]  = FileSource2,							
+					["EXML_CHANGE_TABLE"] = 
+					{ 
+						{
+							["INTEGER_TO_FLOAT"] ="FORCE",
+							--["MATH_OPERATION"] 		= "*",
+							["SPECIAL_KEY_WORDS"] = {"Cooking","True"},
+							["REPLACE_TYPE"]    = "ALL", 
+							["VALUE_CHANGE_TABLE"] =
+							{		
+								{"TimeToMake", C_Time},	
+															
+							}
+						}
+					}
+				},
+				
+				
+				
+				
 			    --reduced refiners speed --	
 				{
 					["MBIN_FILE_SOURCE"]  = FileSource2,							
