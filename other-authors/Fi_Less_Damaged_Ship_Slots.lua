@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_FILENAME"] 			= "Fi_Less_Damaged_Ship_Slots_Mod.pak",
   ["MOD_DESCRIPTION"]		= "", 
   ["MOD_AUTHOR"]				= "Ficell",
-  ["NMS_VERSION"]				= "3.52",
+  ["NMS_VERSION"]				= "3.60",
   ["MODIFICATIONS"] 		=
 	{
 		{
