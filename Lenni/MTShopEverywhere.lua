@@ -154,7 +154,7 @@ function GetProduct(ID_NAME, ICON)
 PRODUCT_ADDING =
 [[
     <Property value="GcProductData.xml">
-	  <Property name="Id" value="]].. ID_NAME ..[[" />
+	  <Property name="ID" value="]].. ID_NAME ..[[" />
       <Property name="Name" value="]].. ID_NAME ..[[" />
       <Property name="NameLower" value="]].. ID_NAME ..[[" />
       <Property name="Subtitle" value="VariableSizeString.xml">
@@ -167,14 +167,23 @@ PRODUCT_ADDING =
       <Property name="GroupID" value="" />
       <Property name="DebrisFile" value="TkModelResource.xml">
         <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="BaseValue" value="1" />
       <Property name="Level" value="0" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]].. ICON ..[[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HeroIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="Colour" value="Colour.xml">
         <Property name="R" value="0.172549" />
@@ -227,7 +236,7 @@ PRODUCT_ADDING =
       <Property name="GoodForSelling" value="False" />
       <Property name="GiveRewardOnSpecialPurchase" value="" />
 	  <Property name="EggModifierIngredient" value="False" />
-      <Property name="IsTechBox" value="False" />
+      <Property name="IsTechbox" value="False" />
     </Property>
 ]]
 return PRODUCT_ADDING
@@ -614,11 +623,7 @@ NMS_MOD_DEFINITION_CONTAINER	=
 					},
 				},				
 				{
-					["MBIN_FILE_SOURCE"]	= 
-					{
-						[[METADATA/GAMESTATE/DEFAULTSAVEDATACREATIVE.MBIN]],
-						[[METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN]],
-					},
+					["MBIN_FILE_SOURCE"]	= [[METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN]],
 					["EXML_CHANGE_TABLE"]	=
 					{
 						{
