@@ -3,8 +3,8 @@ Author = "alchemist"
 ModName = "CompanionBehaviourAdjustments"
 --ModNexus = "https://www.nexusmods.com/nomanssky/mods/1871"
 BaseDescription = "Tweaks to pet behavior."
-GameVersion = "3-98"
-ModVersion = "4"
+GameVersion = "4-03"
+ModVersion = "5"
 
 -- BEGIN CONFIG
 
@@ -23,7 +23,7 @@ local function Trait(trait, tMin, tMax, wMin, wMax, cMin, cMax)
   return [[
         <Property value="GcPetBehaviourTraitModifier.xml">
           <Property name="Trait" value="GcCreaturePetTraits.xml">
-            <Property name="PetTraits" value="]]..trait..[[" />
+            <Property name="PetTrait" value="]]..trait..[[" />
           </Property>
           <Property name="TraitMin" value="]]..tMin..[[" />
           <Property name="TraitMax" value="]]..tMax..[[" />
@@ -59,7 +59,7 @@ local function FollowUp(behavior, traitBased, trait, tMin, tMax, wMin, wMax)
           </Property>
           <Property name="TraitBased" value="]]..traitBased..[[" />
           <Property name="Trait" value="GcCreaturePetTraits.xml">
-            <Property name="PetTraits" value="]]..trait..[[" />
+            <Property name="PetTrait" value="]]..trait..[[" />
           </Property>
           <Property name="TraitMin" value="]]..tMin..[[" />
           <Property name="TraitMax" value="]]..tMax..[[" />

@@ -1,7 +1,7 @@
 Author = "alchemist"
 ModName = "Globals_CreatureGlobals"
 BaseDescription = "Tweaks to pet timers and behavior."
-GameVersion = "3-98"
+GameVersion = "4-03"
 ModVersion = "2"
 
 -- sanity to seconds conversion

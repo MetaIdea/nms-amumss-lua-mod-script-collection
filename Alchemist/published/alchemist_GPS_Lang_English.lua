@@ -5,8 +5,8 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "3-99"
-ModVersion = "2-1-0"
+GameVersion = "4-03"
+ModVersion = "2-2-0"
 
 -- =========
 -- CONSTANTS
@@ -77,7 +77,7 @@ files.
 
 --]]
 
--- Total keys: 211
+-- Total keys: 216
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_FREI_QRY_CFG"] = "Configure Deep Space Scanning...", --
@@ -247,6 +247,9 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_RC_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Any Biome Not Wierd or Dead ~ Abundant Fauna ~ Low Sentinels", --
   ["ALCH_SCAN_PQ_RC_MENU"] = "Abundant Fauna", --
   ["ALCH_SCAN_PQ_RC_TITLE"] = "Planet Query ~ Abundant Fauna", --
+  ["ALCH_SCAN_PQ_RD_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Storm Crystals", --
+  ["ALCH_SCAN_PQ_RD_MENU"] = "Storm Crystals", --
+  ["ALCH_SCAN_PQ_RD_TITLE"] = "Planet Query ~ Storm Crystals", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ"] = "Search Registered with Navigation Computer", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ_TIP"] = "This planetary query has been registered with the ship's navigation computer and will proceed during normal <SPECIAL>space flight<>.\n<STELLAR>ADVISORY<> ~ Portal travel and Nexus missions cause <FUEL>interdimension interference<>. All active queries will be paused for the duration of these activities.", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ"] = "Travel to System", --
@@ -255,7 +258,7 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PR_DESC"] = "<TECHNOLOGY>Resource<> Pattern Query <HIGHLIGHT>//<> Immediate results expected <HIGHLIGHT>//<> Consult <STELLAR>Mission Log<> for details", --
   ["ALCH_SCAN_SCAN_EXACT_DESC"] = "Select category for further options.", --
   ["ALCH_SCAN_SCAN_FAST_DESC"] = "Tuned to common signals...", --
-  ["ALCH_SCAN_TASK_NOTIF"] = "<TECHNOLOGY>[ System Notification ]<>: <SPECIAL>Deep Space Query<> <HIGHLIGHT>//<> <TITLE>Nearby systems scanned, some queries still<> {{ PENDING MATCH }} <HIGHLIGHT>//<> <TITLE>Hybernating...<>", --
+  ["ALCH_SCAN_TASK_NOTIF"] = "<TECHNOLOGY>[ System Notification ]<>: <SPECIAL>Deep Space Query<> <HIGHLIGHT>//<> <TITLE>Nearby systems scanned, some queries still<> {{ PENDING MATCH }} <HIGHLIGHT>//<> <TITLE>Hibernating...<>", --
   ["D_ALSCFB_BOOT_LANG"] = "Commander, this freighter's <TECHNOLOGY>DEEP SPACE SCANNING<> system is now available but it requires configuration.\nIf <STELLAR>IMMERSIVE MODE<> is enabled then an <TECHNOLOGY>Interstellar Scanner<> must be installed in this freighter and all scans will require <FUEL>Anomaly Detectors<>. Enable <STELLAR>IMMERSIVE MODE<>?", --
   ["D_ALSCFB_BOOT_RES_A"] = "Confirmed, immersive mode <TRADE>ENABLED<> for freighter <TECHNOLOGY>DEEP SPACE SCANNING<> system. The enhanced scanning interface is now <TRADE>ONLINE<>.", --
   ["D_ALSCFB_BOOT_RES_B"] = "Confirmed, immersive mode <FUEL>DISABLED<> for freighter <TECHNOLOGY>DEEP SPACE SCANNING<> system. The enhanced scanning interface is now <TRADE>ONLINE<>.", --
@@ -269,6 +272,8 @@ LANGUAGE_TABLE = {
   ["D_ALSCFP_SHIP_R_DESC"] = "Frigate Recon Expedition <HIGHLIGHT>//<> <TRADEABLE>SUCCESS<> <HIGHLIGHT>//<> <TECHNOLOGY>Navigation Data<> cache available", --
   ["D_ALSCFP_SHIP_R_OPT_A"] = "Download", --
   ["D_ALSCPB_BOOT_LANG"] = "Signal Scanner BIOS <HIGHLIGHT>//<> Configuration Required <HIGHLIGHT>//<> Starting configuration wizard...\n<STELLAR>IMMERSIVE MODE<> <HIGHLIGHT>//<> Scans require Navigation Data <HIGHLIGHT>//<> Exact target scan requires Atlas Pass <HIGHLIGHT>//<> Enable immersive mode?", --
+  ["D_ALSCPB_BOOT_OPT_A"] = "Enable Immersive Mode", --
+  ["D_ALSCPB_BOOT_OPT_B"] = "Disable Immersive Mode", --
   ["D_ALSCPB_BOOT_RES_A"] = "Signal Scanner BIOS <HIGHLIGHT>//<> Immersive mode ENABLED <HIGHLIGHT>//<> Rebooting...", --
   ["D_ALSCPB_BOOT_RES_B"] = "Signal Scanner BIOS <HIGHLIGHT>//<> Immersive mode DISABLED <HIGHLIGHT>//<> Rebooting...", --
   ["D_ALSCPB_CONFIG_LANG"] = "Signal Scanner BIOS <HIGHLIGHT>//<> Select configuration task...", --
