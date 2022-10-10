@@ -24,6 +24,7 @@ OSSLight5	=	OSSLightIntensity * Light5
 
 
 --Lights copied from pre-Sentinel cabinet
+--[[
 pointLight4 = [[
 		<Property value="TkSceneNodeData.xml">
 		  <Property name="Name" value="pointLight4" />
