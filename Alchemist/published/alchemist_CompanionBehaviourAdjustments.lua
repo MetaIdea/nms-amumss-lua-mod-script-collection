@@ -4,7 +4,7 @@ ModName = "CompanionBehaviourAdjustments"
 --ModNexus = "https://www.nexusmods.com/nomanssky/mods/1871"
 BaseDescription = "Tweaks to pet behavior."
 GameVersion = "4-03"
-ModVersion = "5"
+ModVersion = "6"
 
 -- BEGIN CONFIG
 
@@ -347,7 +347,7 @@ for i = 1, #BEHAVIOR_TABLE do
       ["PRECEDING_KEY_WORDS"] = {id, "MoodBehaviourModifiers"},
       ["REMOVE"] = "SECTION"
     }
-  else
+  elseif ai["HadMoods"] == false and #ai["Moods"] > 0 then
     Ref[#Ref + 1] = {
       ["PRECEDING_KEY_WORDS"] = {id},
       ["REPLACE_TYPE"] = "RAW",
@@ -450,10 +450,12 @@ for i = 1, #BEHAVIOR_TABLE do
   end
 
   -- and add it in
-  Ref[#Ref + 1] = {
-    ["PRECEDING_KEY_WORDS"] = {id, "MoodModifyOnComplete"},
-    ["LINE_OFFSET"] = -1,
-    ["ADD"] = moodStr
-  }
+  if #ai["Moods"] > 0 then
+    Ref[#Ref + 1] = {
+      ["PRECEDING_KEY_WORDS"] = {id, "MoodModifyOnComplete"},
+      ["LINE_OFFSET"] = -1,
+      ["ADD"] = moodStr
+    }
+  end
 
 end
