@@ -928,7 +928,7 @@ function GetPaletteGroupEntry_ALT(ID)
 return [[
     <!--BUILDFRAME -->
 		<Property value="NMSString0x20.xml">
-		  <Property name="Value" value="]] .. ID .. [[ "/>
+		  <Property name="Value" value="]] .. ID .. [["/>
 		</Property>
 ]]
 end

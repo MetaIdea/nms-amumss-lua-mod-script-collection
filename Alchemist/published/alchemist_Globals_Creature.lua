@@ -2,12 +2,20 @@ Author = "alchemist"
 ModName = "Globals_CreatureGlobals"
 BaseDescription = "Tweaks to pet timers and behavior."
 GameVersion = "4-03"
-ModVersion = "2"
+ModVersion = "3"
 
 -- sanity to seconds conversion
-local function minutes(m) return m * 60 end
-local function hours(h) return h * minutes(60) end
-local function days(d) return d * hours(24) end
+local function minutes(m)
+	return m * 60
+end
+
+local function hours(h)
+	return h * minutes(60)
+end
+
+local function days(d)
+	return d * hours(24)
+end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= Author.."_"..ModName.."_"..GameVersion.."_"..ModVersion..".pak",
