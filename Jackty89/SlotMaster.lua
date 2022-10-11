@@ -1,126 +1,246 @@
 ModName = "SlotMaster"
 Author = "Jackty89"
 
-FilePath = {"METADATA\\GAMESTATE\\DEFAULTINVENTORYBALANCE.MBIN", "METADATA\\GAMESTATE\\DEFAULTINVENTORYBALANCESURVIVAL.MBIN"}
-InventoryTablePath = "METADATA\\REALITY\\TABLES\\INVENTORYTABLE.MBIN"
+InventoryTablePath = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
 
-TechWidth = 8
-TechHeight = 6
+MaxInventory     = 120
+MaxTech          = 60
 
-AlienShipInventory = "48"
-AlienShipTech = "48"
-AlienShipCargo = "48"
+InventoryWidth   = 10
+InventoryHeight  = 12
 
-AlienEdits = {
-	"AlienSmall",
-	"AlienMedium",
-	"AlienLarge"
+TechWidth        = 10
+TechHeight       = 6
+
+
+ImproveShip      = true
+ImproveWeapon    = true
+ImproveAlien     = true
+ImproveVehicle   = true
+ImproveInventory = true
+ImproveFreighter = true
+
+MaxSlot          = false
+
+AlienSizes = {
+    "AlienSmall",
+    "AlienMedium",
+    "AlienLarge"
 }
 
+VehicleSizes = {
+    "VehicleSmall",
+    "VehicleMedium",
+    "VehicleLarge"
+}
+
+FreighterSizes = {
+    "FreighterSmall",
+    "FreighterMedium",
+    "FreighterLarge",
+}
+
+WeaponSizes = {
+    "WeaponSmall",
+    "WeaponMedium",
+    "WeaponLarge"
+}
+
+ShipSizes = {
+    "SciSmall",
+    "SciMedium",
+    "SciLarge",
+    
+    "FgtSmall",
+    "FgtMedium",
+    "FgtLarge",
+    
+    "ShuSmall",
+    "ShtMedium",
+    "ShtLarge",
+    
+    "DrpSmall",
+    "DrpMedium",
+    "DrpLarge",
+    
+    "SailSmall",
+    "SailMedium",
+    "SailLarge",
+    
+    "RoySmall",
+    "RoyMedium",
+    "FreighterLarge"
+}
+
+ShipTypes = {
+    "Dropship",
+    "Fighter",
+    "Scientific",
+    "Shuttle",
+    "Royal",
+    "Sail"
+}
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"] = ModName.. ".pak",
-	["MOD_DESCRIPTION"] = ModName,
-	["MOD_AUTHOR"] = Author,
-	["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] = InventoryTablePath,
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"VehicleSmall", "GcInventoryLayoutGenerationDataEntry.xml"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinSlots", "48"},
-								{"MaxSlots", "48"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"VehicleMedium", "GcInventoryLayoutGenerationDataEntry.xml"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinSlots", "48"},
-								{"MaxSlots", "48"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"VehicleLarge", "GcInventoryLayoutGenerationDataEntry.xml"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinSlots", "48"},
-								{"MaxSlots", "48"}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize"},
-							["REPLACE_TYPE"] 		= "ALL",
-                            ["VALUE_MATCH_TYPE"] 	= "NUMBER",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"40","48"},
-								{"36","48"},
-								{"35","48"},
-								{"32","48"},
-								{"24","48"},
-								{"21","48"},
-								{"14","48"},
-								{"12","48"},
-								{"9","48"},
-								{"7","48"},
-								{"6","48"},
-								{"5","48"},
-								{"0","48"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"WeaponInventoryMaxUpgradeSize", "GcWeaponInventoryMaxUpgradeCapacity.xml"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"C", "48"},
-								{"B", "48"},
-								{"A", "48"},
-								{"S", "48"}
-							}
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = FilePath,
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"PlayerPersonalInventoryTechWidth", TechWidth},
-								{"PlayerPersonalInventoryTechHeight", TechHeight}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+    ["MOD_FILENAME"]    = ModName.. ".pak",
+    ["MOD_DESCRIPTION"] = ModName,
+    ["MOD_AUTHOR"]      = Author,
+    ["MODIFICATIONS"]   =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = InventoryTablePath,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                }
+            }
+        }
+    }
 }
 
 local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
-for i = 1, #AlienEdits do
-	ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
-	{
-		["SPECIAL_KEY_WORDS"] = {AlienEdits[i], "GcInventoryLayoutGenerationDataEntry.xml"},
-		["VALUE_CHANGE_TABLE"] =
-		{
-			{"MinSlots", AlienShipInventory},
-			{"MaxSlots", AlienShipInventory},
-			{"MinTechSlots", AlienShipTech},
-			{"MaxTechSlots", AlienShipTech},
-			{"MinCargoSlots", AlienShipCargo},
-			{"MaxCargoSlots", AlienShipCargo}
-		}
-	}
+function ImproveSuitInventory()
+    EditInventory("Suit", MaxSlot)
+end
+
+function ImproveShipInventory()
+    for _key, shipSize in ipairs(ShipSizes) do
+        EditInventory(shipSize, MaxSlot)
+    end
+    for _key, shipType in ipairs(ShipTypes) do
+        ImproveClassSlotLimit(shipType)
+    end
+end
+
+function ImproveVehicleInventory()
+    for _key, vehicleSize in ipairs(VehicleSizes) do
+        EditInventory(vehicleSize, true)
+    end
+end
+
+function ImproveWeaponInventory()
+    for _key, weaponSize in ipairs(WeaponSizes) do
+        EditInventory(weaponSize, MaxSlot)
+    end
+
+    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"WeaponInventoryMaxUpgradeSize", "GcWeaponInventoryMaxUpgradeCapacity.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"C", MaxTech},
+            {"B", MaxTech},
+            {"A", MaxTech},
+            {"S", MaxTech}
+        }
+    }
+end
+
+function ImproveFreighterInventory()
+    for _key, freighterSize in ipairs(FreighterSizes) do
+        EditInventory(freighterSize, MaxSlot)
+    end
+    ImproveClassSlotLimit("Freighter")
+end
+
+function ImproveAlienInventory()
+    for _key, alienSize in ipairs(AlienSizes) do
+        EditInventory(alienSize, MaxSlot)
+    end
+    ImproveClassSlotLimit("Alien")
+end
+
+function EditInventory(type, maxSlot)
+    if maxSlot then
+        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"MinSlots", MaxInventory},
+                {"MaxSlots", MaxInventory},
+                {"MinTechSlots", MaxTech},
+                {"MaxTechSlots", MaxTech},
+            }
+        }
+    end
+
+    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "Bounds", "GcInventoryLayoutGenerationBounds.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"MaxWidthSmall",     InventoryWidth},
+            {"MaxHeightSmall",    InventoryHeight},
+            {"MaxWidthStandard",  InventoryWidth},
+            {"MaxHeightStandard", InventoryHeight},
+            {"MaxWidthLarge",     InventoryWidth},
+            {"MaxHeightLarge",    InventoryHeight},
+        }
+    }
+
+    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "TechBounds", "GcInventoryLayoutGenerationBounds.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"MaxWidthSmall",     TechWidth},
+            {"MaxHeightSmall",    TechHeight},
+            {"MaxWidthStandard",  TechWidth},
+            {"MaxHeightStandard", TechHeight},
+            {"MaxWidthLarge",     TechWidth},
+            {"MaxHeightLarge",    TechHeight},
+        }
+    }
+end
+
+function ImproveClassSlotLimit(type)
+    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    {
+        ["PRECEDING_KEY_WORDS "] = {"ShipInventoryMaxUpgradeSize", type, "MaxInventoryCapacity"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"C", MaxInventory},
+            {"B", MaxInventory},
+            {"A", MaxInventory},
+            {"S", MaxInventory}
+        }
+    }
+
+    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    {
+        -- ["SPECIAL_KEY_WORDS"] = {type, "GcShipInventoryMaxUpgradeCapacity.xml"},
+        ["PRECEDING_KEY_WORDS "] = {"ShipInventoryMaxUpgradeSize", type, "MaxTechInventoryCapacity"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"C", MaxTech},
+            {"B", MaxTech},
+            {"A", MaxTech},
+            {"S", MaxTech}
+        }
+    }
+end
+
+if ImproveShip then
+    ImproveShipInventory()
+end
+if ImproveWeapon then
+    ImproveWeaponInventory()
+end
+if ImproveAlien then
+    ImproveAlienInventory()
+end
+if ImproveVehicle then
+    ImproveVehicleInventory()
+end
+if ImproveInventory then
+    ImproveSuitInventory()
+end
+if ImproveFreighter then
+    ImproveFreighterInventory()
 end
