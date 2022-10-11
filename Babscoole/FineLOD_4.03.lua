@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = "_Fine_LOD_399.pak",
+["MOD_FILENAME"] = "_Fine_LOD_4.03.pak",
 ["MOD_AUTHOR"] = "Prof Horatio Hafnaugels",
 ["LUA_AUTHOR"] = "Babscoole",
-["NMS_VERSION"] = "3.99",
+["NMS_VERSION"] = "4.03",
 ["MODIFICATIONS"] =
 	{
 		{
@@ -70,8 +70,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TerrainFadeTime",       "1"},   -- Original "2"
 								{"TerrainFadeTimeInShip", "1"},   -- Original "2"
 								{"CreatureFadeTime",      "0.7"}, -- Original "1.5"
-								{"FloraFadeTimeMin",      "1.2"}, -- Original "0.6"
-								{"FloraFadeTimeMax",      "1.8"}  -- Original "2.25"
+								{"FloraFadeTimeMin",      "1"}, -- Original "0.6"
+								{"FloraFadeTimeMax",      "1.5"}  -- Original "2.25"
 							}
 						},
 						{
@@ -80,7 +80,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] = "+1",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"IGNORE", "2"} -- Original "1"
+								{"IGNORE", "3"} -- Original "1"
 							}
 						},
 						{
@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] = "+2",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"IGNORE", "2"} -- Original "1"
+								{"IGNORE", "3"} -- Original "1"
 							}
 						},
 						{
@@ -98,7 +98,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] = "+3",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"IGNORE", "2"} -- Original "1"
+								{"IGNORE", "3"} -- Original "1"
 							}
 						},
 						{
@@ -107,7 +107,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] = "+4",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"IGNORE", "2"} -- Original "1"
+								{"IGNORE", "3"} -- Original "1"
 							}
 						},
 						{
@@ -116,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["LINE_OFFSET"] = "+5",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"IGNORE", "2"} -- Original "1"
+								{"IGNORE", "3"} -- Original "1"
 							}
 						},
 						{
