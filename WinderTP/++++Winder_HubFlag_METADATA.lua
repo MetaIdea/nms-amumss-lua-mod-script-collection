@@ -66858,7 +66858,8 @@ else SNAP_INJECT = SNAP
 end
 
 INACTIVE = ""
-if OVERRIDE_INACTIVE then INACTIVE = MODEL end
+if OVERRIDE_INACTIVE then INACTIVE = MODEL
+end
 
 if BUILD_ANYWHERE then
 	FREIGHTER = "True"
@@ -67109,15 +67110,15 @@ return [[
           </Property>
           <Property name="Model" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. MODEL .. [[" />
-			<Property name="ResHandle" value="GcResource.xml">
-			  <Property name="ResourceID" value="0" />
-			</Property>
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="Inactive" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. INACTIVE .. [[" />
-			<Property name="ResHandle" value="GcResource.xml">
-			  <Property name="ResourceID" value="0" />
-			</Property>
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -67127,7 +67128,7 @@ end
 
 function GetSnapGroupPart(ID, MODELS, INACTIVE)
 STYLEMODEL_INJECT = ""
-for k,l in pairs(MODELS) do
+for _,l in pairs(MODELS) do
 	INACTIVE_INJECT = ""
 	if INACTIVE then INACTIVE_INJECT = l["Filename"] 
 end
@@ -67292,7 +67293,7 @@ end
 -- else GROUPS_INJECT = HUBFLAG_GROUPS_ASSLESS
 -- end
 
-for i,j in pairs(GROUPS_INJECT) do	-- INITIALISE TOPGROUP_COUNTER
+for _,j in pairs(GROUPS_INJECT) do	-- INITIALISE TOPGROUP_COUNTER
 	TOPGROUP_COUNTER[j["ID"]] = 0
 end
 
@@ -67320,10 +67321,10 @@ EXPORT_SPECSHOP= ""
 NEWFILES_FINAL = {}
 
 -- JOINING THE OBJECT LISTS
-for i,j in pairs(HUBFLAG_DECAL_GARDEN) do
+for _,j in pairs(HUBFLAG_DECAL_GARDEN) do
 	HUBFLAG_DECOR_NOSNAP[#HUBFLAG_DECOR_NOSNAP+1] = j
 end
-for i,j in pairs(HUBFLAG_DECOR_NOSNAP) do
+for _,j in pairs(HUBFLAG_DECOR_NOSNAP) do
 	HUBFLAG_OBJPROD[#HUBFLAG_OBJPROD + 1] = j
 end
 
@@ -67353,8 +67354,9 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"])
 	EXPORT_COST_LIST[i+1] = GetBaseBuildingCost(j["OBJECT"]["ID"], POP_IN_RATE)
 	IS_SPEC = false
-	for m,n in pairs(j["OBJECT"]["SubGroupName"]) do
-		if n == "WDSPEC" then IS_SPEC = true end		
+	for _,n in pairs(j["OBJECT"]["SubGroupName"]) do
+		if n == "WDSPEC" then IS_SPEC = true
+		end		
 	end
 	if IS_SPEC then
 			EXPORT_SPECSHOP = EXPORT_SPECSHOP .. GetSpecials(j["OBJECT"]["ID"])		-- PUTTING WDSPEC OBJECTS IN PURCHASEABLESPECIALS
@@ -67365,9 +67367,9 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 end
 
 -- ADDING SNAPGROUPS TO PARTS TABLE
-for i,j in pairs(HUBFLAG_SNAPGROUPS) do
+for _,j in pairs(HUBFLAG_SNAPGROUPS) do
 	table.insert(EXPORT_PARTS_LIST,GetSnapGroupPart(j["ID"], j["StyleModels"], OVERRIDE_INACTIVE))
-	for k,l in pairs(j["StyleModels"]) do
+	for _,l in pairs(j["StyleModels"]) do
 		table.insert(EXPORT_AUTOPARTDATA_LIST, getAutoPartData(j["ID"], l["Style"]))
 	end
 end
@@ -68064,7 +68066,7 @@ BASEBUILD_ENTRIES =
 					-- {
 						-- ["SPECIAL_KEY_WORDS"] = {"ID","WALLFLOORLADDER"},
 						-- ["PRECEDING_KEY_WORDS"]	= {"Groups"},
-						-- ["LINE_OFFSET"] 		= "+0",
+						-- --["LINE_OFFSET"] 		= "+0",
 						-- ["ADD"] 				=
 						-- [[<Property value="NMSString0x10.xml">
 -- <Property name="Value" value="PF_EXT_DECOR" /> 
@@ -68086,7 +68088,7 @@ BASEBUILD_ENTRIES =
 					},
 					{
 						-- ["PRECEDING_KEY_WORDS"] = {"Objects"},
-						-- ["LINE_OFFSET"] 		= "+0",
+						-- --["LINE_OFFSET"] 		= "+0",
 						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"},
 						["LINE_OFFSET"] 		= "-3",
 						["ADD"] 				= EXPORT_BASEOBJECTS
@@ -68323,7 +68325,7 @@ FINAL_VALUE_CHANGE =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
-							["LINE_OFFSET"] 		= "+0",
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_PRODUCTS
 						},
 					},
@@ -68334,7 +68336,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
-							["LINE_OFFSET"] 		= "+0",
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_COST
 						}
 					},
@@ -68356,7 +68358,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"PartsData"},
-							["LINE_OFFSET"] 		= "+0",
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_AUTOPARTDATA
 						}
 					}
@@ -68367,7 +68369,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
-							["LINE_OFFSET"] 		= "+0",
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= CUSTOM_INTERACTIONS
 						}
 					},
@@ -68378,7 +68380,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"},
-							["LINE_OFFSET"] 		= "+0",
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= CUSTOM_REWARDS
 						}
 					},
@@ -68389,7 +68391,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlacementInfos"},
-							["LINE_OFFSET"] 		= "+0",
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= CUSTOM_NPCS
 						}
 					},
@@ -68404,7 +68406,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-							["LINE_OFFSET"] 		= "+0",
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_KNOWNPRODUCTS
 						}
 					},
@@ -68415,7 +68417,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
-							["LINE_OFFSET"] 		= "+0",
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_SPECSHOP
 						}
 					},
@@ -68445,11 +68447,11 @@ LANGUAGE_FILE_HEADER = [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
   <Property name="Table">]]
-for i,j in pairs(LANGUAGE_TYPE) do
+for _,j in pairs(LANGUAGE_TYPE) do
 	LANGUAGE_TEMP = {}
 	EXPORT_LANGUAGE = {}
 	table.insert(EXPORT_LANGUAGE, LANGUAGE_FILE_HEADER)
-	for k,l in pairs(ADD_LANGUAGE_LIST) do
+	for _,l in pairs(ADD_LANGUAGE_LIST) do
 		-- USES ENGLISH ENTRY IF THERE IS NO TRANSLATION
 		if l["Value"][j] == "" then
 			 table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"]["English"]))
@@ -68478,7 +68480,7 @@ for i,j in pairs(LANGUAGE_TYPE) do
 							-- {
 								-- {
 									-- ["PRECEDING_KEY_WORDS"] = {"Table"},
-									-- ["LINE_OFFSET"] 		= "+0",
+									-- --["LINE_OFFSET"] 		= "+0",
 									-- ["ADD"] 				= table.concat(EXPORT_LANGUAGE)
 								-- }
 							-- }
@@ -68490,7 +68492,7 @@ for i,j in pairs(LANGUAGE_TYPE) do
 							-- {
 								-- {
 									-- ["PRECEDING_KEY_WORDS"] = {"Table"},
-									-- ["LINE_OFFSET"] 		= "+0",
+									-- --["LINE_OFFSET"] 		= "+0",
 									-- ["ADD"] 				= table.concat(EXPORT_LANGUAGE)
 								-- }
 							-- }
@@ -68500,7 +68502,7 @@ for i,j in pairs(LANGUAGE_TYPE) do
 end
 
 if MORE_VANILLA_FLOOR then
-	for i,j in pairs(VANILLA_FLOOR_VALUE_CHANGE) do
+	for _,j in pairs(VANILLA_FLOOR_VALUE_CHANGE) do
 		table.insert(FINAL_VALUE_CHANGE, j)
 	end
 end

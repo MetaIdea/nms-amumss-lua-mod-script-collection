@@ -1,7 +1,7 @@
 -- FOR USE ALONG WITH THE ORIGINAL HOBOTOWN PAK
 -- THIS SCRIPT DOESN NOT GENERATE CERTAIN VITAL FILES
 
-EDITION = "BIG" 	--"BIG" OR "NO_BIG"
+EDITION = "NO_BIG" 	--"BIG" OR "NO_BIG"
 SLEEP = true		--MODIFIES 2 VALUES IN GCCREATUREGLOBALS
 					--ALLOWS SPAWNING CLOSER TO BASES AND WILD CREATURE SLEEPING
 
@@ -850,7 +850,7 @@ for i,j in pairs(BOYOS_DATA["NO_BIG"]["Ecosystem"]) do
 			{
 				{
 					["PRECEDING_KEY_WORDS"] = {"RoleDescription"},  
-					["LINE_OFFSET"] 		= "+0",
+					--["LINE_OFFSET"] 		= "+0",
 					["ADD"] 				= ROLE_ADD
 				},
 			},
@@ -876,7 +876,7 @@ if EDITION == "BIG" then
 				{
 					{
 						["PRECEDING_KEY_WORDS"] = {"RoleDescription"},  
-						["LINE_OFFSET"] 		= "+0",
+						--["LINE_OFFSET"] 		= "+0",
 						["ADD"] 				= ROLE_ADD
 					},
 				},
@@ -892,7 +892,7 @@ DATA_FINAL =
 	{
 		{
 			["PRECEDING_KEY_WORDS"] = {"Table"},  
-			["LINE_OFFSET"] 		= "+0",
+			--["LINE_OFFSET"] 		= "+0",
 			["ADD"] 				= DATA_ADD
 		},
 	},
@@ -905,7 +905,7 @@ FILENAME_FINAL =
 	{
 		{
 			["PRECEDING_KEY_WORDS"] = {"Table"},  
-			["LINE_OFFSET"] 		= "+0",
+			--["LINE_OFFSET"] 		= "+0",
 			["ADD"] 				= FILENAME_ADD
 		},
 	},

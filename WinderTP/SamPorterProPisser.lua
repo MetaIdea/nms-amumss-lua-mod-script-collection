@@ -832,7 +832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"}, 
-							["LINE_OFFSET"] 		= "+0",
+							-- ["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPLOD_EFFECT
 						}
 					}
