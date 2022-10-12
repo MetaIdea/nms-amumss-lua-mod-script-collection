@@ -1465,7 +1465,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects"},
-							["LINE_OFFSET"]         = "+0",
 							["ADD"]                 = table.concat(BASEBUILDINGOBJECTSTABLE_ADDING_ALL)
 						},
 						{
@@ -1492,7 +1491,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
-							["LINE_OFFSET"]         = "+0",
 							["ADD"]                 = table.concat(PRODUCT_ADDING_ALL)
 						}
 					}
@@ -1503,7 +1501,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"PartsData"},
-							["LINE_OFFSET"]         = "+0",
 							["ADD"]                 = table.concat(AUTOPARTDATA_ADDING_ALL)
 						}
 					}
@@ -1514,7 +1511,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
-							["LINE_OFFSET"]         = "+0",
 							["ADD"]                 = table.concat(BASEBUILDINGCOST_ADDING_ALL)
 						}
 					},
@@ -1525,7 +1521,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-							["LINE_OFFSET"]         = "+0",
 							["ADD"]                 = table.concat(DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING_ALL)
 						}
 					}

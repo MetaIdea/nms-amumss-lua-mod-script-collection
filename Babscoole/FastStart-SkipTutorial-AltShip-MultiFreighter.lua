@@ -523,7 +523,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Missions",},
-							["LINE_OFFSET"] = "+0",
 							["ADD"] = SKIPTUT	
 						},
 					}

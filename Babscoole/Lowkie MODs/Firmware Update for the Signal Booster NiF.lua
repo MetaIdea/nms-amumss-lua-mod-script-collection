@@ -478,7 +478,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Id", "SEC_CRASHEDSHIP"},
-							["LINE_OFFSET"]        = "0",
 							["ADD_OPTION"]         = "ADDafterSECTION",
 							["VALUE_CHANGE_TABLE"] = {{"IGNORE",	"IGNORE"}},
 							["ADD"] = REWARDSET,
@@ -506,17 +505,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Events"},
-							["LINE_OFFSET"]         = "+0",
 							["ADD"] = Grave_Scan_Event
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Events"},
-							["LINE_OFFSET"]         = "+0",
 							["ADD"] = Base_Scan_Event
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Events"},
-							["LINE_OFFSET"]         = "+0",
 							["ADD"] = Glitch_Scan_Event
 						},						
 					},
