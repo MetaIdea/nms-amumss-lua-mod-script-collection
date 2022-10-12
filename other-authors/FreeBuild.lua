@@ -36,8 +36,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BuildableOnPlanetWithProduct", "True"},
 								{"BuildableUnderwater", 		 "True"},
 								{"BuildableAboveWater", 		 "True"},								
-								{"GlobalLimit", 					"0"},			
-								{"SystemLimit", 					"0"},
 								{"PlanetLimit", 					"0"},
 								{"RegionLimit", 					"0"},
 								{"PlanetBaseLimit", 				"0"},
@@ -59,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"DisableLimits",					"True"},
 								{"DisableBaseBuildingLimits",		"True"},
-								{"BaseBuildingPartsRequirePower",	"False"},		
+								{"DisableBasePowerRequirements",	"True"},		
 								{"BaseDownloadTimeout",				"120"},	--ORIGINAL 40
 								{"InfiniteInteractions",	"True"},		
 								{"AlwaysAllowShipOperations",	"True"},	

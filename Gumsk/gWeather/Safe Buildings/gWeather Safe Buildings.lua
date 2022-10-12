@@ -2,7 +2,7 @@ Author = "Gumsk+Kibbles"
 ModName = "gWeather"
 ModNameSub = "Safe Buildings"
 BaseDescription = "Basic floor pieces have hazard protection"
-GameVersion = "397"
+GameVersion = "403"
 ModVersion = "a"
 
 HeaterAdd = [[		<Property value="TkSceneNodeData.xml">
@@ -24,7 +24,7 @@ HeaterAdd = [[		<Property value="TkSceneNodeData.xml">
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="ATTACHMENT" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="GUMSK\GUMSKHEATER.ENTITY.MBIN" />
+              <Property name="Value" value="GUMSK/GUMSKHEATER.ENTITY.MBIN" />
             </Property>
           </Property>
           <Property name="Children">

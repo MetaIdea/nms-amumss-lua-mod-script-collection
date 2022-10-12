@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGame"
 ModNameSub = "Scan"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "401"
+GameVersion = "403"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

@@ -20,7 +20,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "Components",
 							--["LINE_OFFSET"] 		= "+1",
 							["ADD"] = 
-[[  <Property value="GcMaintenanceComponentData.xml">
+[[
+    <Property value="GcMaintenanceComponentData.xml">
       <Property name="VisibleMaintenanceSlots" value="-1" />
       <Property name="AllowRepair" value="True" />
       <Property name="AllowCharge" value="False" />
@@ -37,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ForceNoninteraction" value="False" />
       <Property name="CompletedTransitionDelay" value="1" />
       <Property name="ShareInteractionModelRender" value="True" />
-      <Property name="ModelRendererData" value="TkModelRendererData.xml">
+      <Property name="ModelRenderData" value="TkModelRendererData.xml">
         <Property name="Camera" value="TkModelRendererCameraData.xml">
           <Property name="Distance" value="1.5" />
           <Property name="Offset" value="Vector3f.xml">
@@ -75,7 +76,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
-      <Property name="ModelRendererDataAlt" value="TkModelRendererData.xml">
+      <Property name="ModelRenderDataAlt" value="TkModelRendererData.xml">
         <Property name="Camera" value="TkModelRendererCameraData.xml">
           <Property name="Distance" value="1.5" />
           <Property name="Offset" value="Vector3f.xml">
@@ -115,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="ModelRendererResource" value="ModelNode" />
       <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
-        <Property name="GalaxyMarkerType" value="LocalModel" />
+        <Property name="BroadcastLevel" value="LocalModel" />
       </Property>
       <Property name="Title" value="UI_DROPPOD_MAINT_TITLE" />
       <Property name="Description" value="UI_DROPPOD_MAINT_SUB" />
@@ -124,6 +125,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ActionWarningOverride" value="WARN_TECH_DAMAGED" />
       <Property name="InWorldUIScaler" value="0" />
       <Property name="InteractionRequiresPower" value="False" />
+      <Property name="StartMissionOnUse" value="" />
     </Property>
 ]],
 						},

@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "LivestockHarvestMultiplier.pak",
 ["MOD_DESCRIPTION"]			= "Fauna produce 100x more products and the harvesting cooldown time is greatly reduced.",
 ["MOD_AUTHOR"]				= "chickazee4",
-["NMS_VERSION"]				= "3.88",
+["NMS_VERSION"]				= "4.03",
 ["MODIFICATIONS"] 			= 
 	{
 		{
