@@ -1414,7 +1414,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] = "+0",
 							["ADD"] = EMOTEMENU
 						},
 						{
@@ -1430,7 +1429,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["LINE_OFFSET"] = "+0",
 							["ADD"] = REWARDTABLE
 						}
 					}
@@ -1441,7 +1439,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Events"}, 
-							["LINE_OFFSET"] = "+0",
 							["ADD"] = SCANEVENTTABLE
 						}
 					}

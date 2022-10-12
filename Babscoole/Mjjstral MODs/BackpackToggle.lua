@@ -225,7 +225,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"]         = "+0",
 							["ADD"] = 
 [[
     <Property value="GcPlayerEmote.xml">

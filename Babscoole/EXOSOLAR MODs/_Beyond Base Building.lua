@@ -494,7 +494,6 @@ if ALL_PARTS_ON_FREIGHTER then
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
 				["PRECEDING_KEY_WORDS"] = {"Groups"},
-				["LINE_OFFSET"]= "+0",
 				["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">
@@ -819,7 +818,6 @@ for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
 	{
 		["SPECIAL_KEY_WORDS"] = {"ID", PLANTERS_ON_FREIGHTER_ID_TABLE[i]},
 		["PRECEDING_KEY_WORDS"] = {"Groups"},
-		["LINE_OFFSET"]= "+0",
 		["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">
@@ -849,7 +847,6 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
 	{
 		["SPECIAL_KEY_WORDS"] = {"ID", MISC_ON_FREIGHTER_ID_TABLE[i]},
 		["PRECEDING_KEY_WORDS"] = {"Groups"},
-		["LINE_OFFSET"]= "+0",
 		["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">

@@ -521,7 +521,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"]         = "+0",
 							["ADD"]                 = QUICK_ACTION_BUTTON_ALL
 						}
 					}
@@ -532,7 +531,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["LINE_OFFSET"]         = "+0",
 							["ADD"]                 = CUSTOM_GENERICREWARD_ALL
 						}
 					}

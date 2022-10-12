@@ -72,7 +72,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Components"},
-							["LINE_OFFSET"]         = "+0",
 							["ADD"] = 
 [[
     <Property value="GcInteractionComponentData.xml">
