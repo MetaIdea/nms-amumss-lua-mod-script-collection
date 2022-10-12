@@ -1,4 +1,4 @@
-EDITION = "CLASSICS"	-- CLASSICS, FOURTH_A, FOURTH_B
+EDITION = "CLASSICS_B"	-- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
 
 
 -- Suit parts minus backpack
@@ -6,7 +6,7 @@ EDITION = "CLASSICS"	-- CLASSICS, FOURTH_A, FOURTH_B
 -- GOLD = Golden Suit
 GET_SUIT = "VYK"
 
-CAPE = "CAPE_PROTO"
+CAPE = "CAPE_INFINITY"
 -- Choose the cape
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you don't want any capes
@@ -176,7 +176,16 @@ HEADS =
 										"REG_HEAD_BIOME1",
 										"HEAD_GEKHELM",
 										"HEAD_G_GEKHELM",
+									  },
+					  },
+							
+	},
+	["CLASSICS_B"]  	= 
+	{	
+		["ASTRO"]	= {	["EXCLUDE"] = "ASTRO",
+						["HEAD"]	= {
 										"REG_HEAD_HOOD01",
+										"REG_HEAD_SAIL",
 									  },
 					  },
 							
@@ -334,7 +343,7 @@ table.insert(HEAD_CHANGE_TABLE, {
 		table.insert(HEAD_CHANGE_TABLE,	{
 											["SPECIAL_KEY_WORDS"] = {"Name", j .. "_" .. PRESET_SLOT[1]},
 											["PRECEDING_KEY_WORDS"] = {"DescriptorGroups"},
-											["LINE_OFFSET"] 		= "+0",
+											-- ["LINE_OFFSET"] 		= "+0",
 											["ADD"] = GetDescriptorGroupEntry(BACKPACK)
 										})
 	end
@@ -391,6 +400,7 @@ end
 PAK_NAME =
 {
 	["CLASSICS"] = "_Winder_GettingHead_Classics.pak",
+	["CLASSICS_B"] = "_Winder_GettingHead_Classics_B.pak",
 	["FOURTH_A"] = "_Winder_GettingHead_Fourth_A.pak",
 	["FOURTH_B"] = "_Winder_GettingHead_Fourth_B.pak"
 }
