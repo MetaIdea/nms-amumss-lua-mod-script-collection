@@ -114,7 +114,6 @@ return
 	{
 		["SPECIAL_KEY_WORDS"] = {"ID", TO},
 		["PRECEDING_KEY_WORDS"] = {"SubGroups"},
-		["LINE_OFFSET"] 		= "+0",
 		["ADD"] 				= GetSubGroupData(SUBGROUP, NAME)
 	}
 end
@@ -596,7 +595,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_BATCHNAME"]			= "~~~~BuildFrame_Comp.pak",
 ["MOD_AUTHOR"]				= "WinderTP, Babscoole",
 ["MOD_DESCRIPTION"]			= "Recategorisation Trimming Utility for Build Menu",
-["NMS_VERSION"]				= "",
+["NMS_VERSION"]				= "3.98",
+["AMUMSS_SUPPRESS_MSG"] = "SUPPRESS_FLOOR_DIV",
 ["MODIFICATIONS"] 			= 
 	{
 		{
