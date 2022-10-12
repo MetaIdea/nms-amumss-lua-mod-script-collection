@@ -2,9 +2,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	= "SoS.pak",
 ["MOD_AUTHOR"]		= "OTBP",
-["NMS_VERSION"]		= "2.0+",
-["MOD_DESCRIPTION"]	= "Speeder",
-["MODIFICATIONS"]	= 
+["NMS_VERSION"]		= "4.0",
+["MOD_DESCRIPTION"]	= "Walk, Run, Swim, Jet:Range, Height, Landing, Melee, Force, Speed, Refill, More..",
+["MODIFICATIONS"]	=
 	{
 		{
 			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
@@ -20,12 +20,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 		= 
 							{	
 								{ "GroundWalkSpeed", 					"6.0" }, 	--Original "4.4"
-								{ "GroundWalkSpeed_Unknown", 			"6.0" }, 	--Original "4.4"
 								{ "GroundRunSpeed", 					"12" }, 	--Original "8"
 								{ "UnderwaterMaxSpeed", 				"12" }, 	--Original "4"
 								{ "UnderwaterForce", 					"20" }, 	--Original "15"
 								{ "UnderwaterMaxJetpackEscapeSpeed", 	"24" }, 	--Original "8"
-								{ "Unknown0x85C", 						"1" }, 		--Original "True"
+								{ "UnderwaterJetpackEscapeForce",		"36" },     --Original "20" Testing
 								{ "HealthRechargeMinTimeSinceDamage", 	"1" }, 		--Original "10"
 								{ "CockpitEjectTestSphereRadius", 		"2" }, 		--Original "0.4"
 								{ "EnergyDischargeRateMedium", 			"0.02" }, 	--Original "0.25"
@@ -54,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "JetpackIgnitionTime", 				"0.1" }, 	--Original "0.4"
 								{ "JetpackMinIgnitionTime", 			"0.05" }, 	--Original "0.2"
 								{ "JetpackFillRate", 					"99" }, 	--Original "0.5"
-								{ "JetpackFillRateHardMode", 			"99" }, 	--Original "0.2"
+								{ "JetpackFillRateMidair",				"2" },      --Original "0.25" Testing
 								{ "JetpackIgnitionForceDeadPlanetExtra", "80" }, 	--Original "45"
 								{ "MaxNumDestroyEffects", 				"0" }, 		--Original "8"
 								{ "MinNumDestroyEffects", 				"0" }, 		--Original "3"
@@ -82,8 +81,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "LaserBeamFlickerAmp", 				"0.5" }, 	--Original "1.5"
 								{ "LaserBeamFlickerFreq", 				"10" }, 	--Original "1"
 								{ "LaserBeamTerrainDeformRadius", 		"1" }, 		--Original "2"
-								{ "LaserBeamOverheatTime", 				"5" }, 		--Original "1.2"
-								{ "LaserBeamAmmoUseTime", 				"1.2" }, 	--Original "0.5"
+								{ "LaserBeamAmmoUseTime", 				"0.5" }, 	--Original "0.5"
 								{ "ReloadButtonHoldTimeToHolster", 		"0.5" }, 	--Original "0.75"
 								{ "WeaponChangeModeTime", 				"0.75" }, 	--Original "0"
 								{ "HardLandMin", 						"98" }, 	--Original "5"

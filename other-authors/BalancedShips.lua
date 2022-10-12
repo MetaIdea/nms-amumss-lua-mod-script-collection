@@ -848,17 +848,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Max","100"}
 			}
 		},
-		--Okay, now let's buff up max capacity for every class S classes to 48/21
-		--Alien/Living Ship has lower inventory capacity, let's make it 48 just like other ship
-		{--Max Inventory Capacity
-			["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize","Alien","MaxInventoryCapacity"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{--3 entries of 0, let's change three times
-				{"0","48"},		-- Original "0"		- C Class	-	Modded	48	Grid	=	6x8
-				{"0","48"},		-- Original "0"		- B Class	-	Modded	48	Grid	=	6x8
-				{"0","48"},		-- Original "0"		- A Class	-	Modded	48	Grid	=	6x8
-				{"35","48"}		-- Original "35"	- S Class	-	Modded	48	Grid	=	6x8
-			}
-		},
 	}},
 }}}}
