@@ -1,8 +1,8 @@
 Author = "Gumsk"
 ModName = "gGame"
-ModNameSub = "Tech Overload"
+ModNameSub = "Tech"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "401"
+GameVersion = "403"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -19,8 +19,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["EXML_CHANGE_TABLE"] = {
 						{
 							["VALUE_CHANGE_TABLE"] = {
-								{"TechMustBeInTechInventory", "False"},				--True
-								{"MaxNumSameGroupTech", 48},						--3; Maximum number of same tech group on one inventory page
+								-- {"TechMustBeInTechInventory", "False"},				--True
+								{"MaxNumSameGroupTech", 120},						--3; Maximum number of same tech group on one inventory page
 								{"BonusSameTypeElementsAdd", 0.06},					--0.06; 
 								{"BonusSameTypeElementsMultiply", 0.04},			--0.04; 
 								{"BonusChildTypeElementsAdd", 0.05},				--0.05; 

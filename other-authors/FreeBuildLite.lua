@@ -34,8 +34,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BuildableOnFreighter", 		 "True"},
 								{"BuildableOnPlanet", 		 	 "True"},
 								{"BuildableOnPlanetWithProduct", "True"},							
-								{"GlobalLimit", 					"0"},			
-								{"SystemLimit", 					"0"},
 								{"PlanetLimit", 					"0"},
 								{"RegionLimit", 					"0"},
 								{"PlanetBaseLimit", 				"0"},
@@ -53,7 +51,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"DisableBaseBuildingLimits",		"True"},
-								{"BaseBuildingPartsRequirePower",	"False"},		
+								{"DisableBasePowerRequirements",	"True"},		
 								{"BaseDownloadTimeout",				"120"},	--ORIGINAL 40
 								{"InfiniteInteractions",	"True"},		
 								{"AlwaysAllowShipOperations",	"True"},	

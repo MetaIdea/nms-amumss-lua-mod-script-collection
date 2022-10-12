@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "388"
+GameVersion = "370"
 ModVersion = "a"
 ModNameSub = "Wall Yellow"
 BaseDescription = "Makes Wall Light Yellow work without power and improves lighting."

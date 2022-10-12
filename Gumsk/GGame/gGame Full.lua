@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gGame"
 ModNameSub = "Full"
 BaseDescription = "Various modifications to gameplay globals"
-GameVersion = "401"
+GameVersion = "403"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
@@ -97,7 +97,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"SurveySonarMinPulseSpeed",-2.4},					--0.4; Frequency for sweeps or pings of the hotspot scanner. Lower is slower.
 
 				--Grouping
-								{"TechMustBeInTechInventory", "False"},				--True
+								-- {"TechMustBeInTechInventory", "False"},				--True
 								{"MaxNumSameGroupTech", 120},						--3; Maximum number of same tech group on one inventory page
 								{"BonusSameTypeElementsAdd", 0.06},					--0.06; 
 								{"BonusSameTypeElementsMultiply", 0.04},			--0.04; 

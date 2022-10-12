@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "388"
+GameVersion = "370"
 ModVersion = "a"
 ModNameSub = "Box"
 BaseDescription = "Makes the light box work without power."
