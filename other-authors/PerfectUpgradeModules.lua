@@ -1,14 +1,14 @@
 -- Perfect Upgrade Modules
 -- Author: DarkScythe
 -- Date Created: Jul 18, 2022
--- Last Updated: Sep 28, 2022
+-- Last Updated: Oct 07, 2022
 --------------------------------------------------------------------------------
 modName		= "PerfectUpgradeModules"
 modAuthor	= "DarkScythe"
 modDesc		= "Overrides all upgrade modules to have the best possible vanilla stats, with optional custom power scaling"
 modVer		= "1.0."
 scriptVer	= "a"
-gameVer		= "3.991"
+gameVer		= "4.00"
 
 --[[
 Enter a number here to set the approximate Power Scaling of upgrade module stats
@@ -27,18 +27,66 @@ Going beyond 2-3 will start resulting in amusingly extreme values
 Minimum value is 0.1; any lower and you might as well not equip upgrades at all
 YOU HAVE BEEN WARNED! USE EXTREME VALUES AT YOUR OWN RISK!
 --]]
-powerScale = 1
+powerScale		= 1
+
+--[[
+Optional settings for tweaking Technology Upgrade Module Overloading
+--------------------------------------------------------------------------------
+Note that enabling this setting will cause the mod to edit/load an additional
+global file, which has a high chance of conflicting with other mods
+
+No change will be made if this remains false / turned off
+--]]
+overloadTech	= false
+maxTechStack	= 6		-- Default 3
 
 ---- **** END OF USER-ADJUSTABLE SETTINGS **** ----
 -----------------------------------------------------------------------------
 ---- Alter following code only if this mod is no longer being maintained ----
 -----------------------------------------------------------------------------
 
--- Safety check
+-- AMUMSS Input Request Definitions
+-- Using the values defined in the variables above as the fallback
+overrideScale	= {powerScale,
+[[	Input any number to scale the power of all upgrade modules
+	Press ENTER without an answer to skip and use the CURRENT values
+	Default = 1 | Current = >> ]] .. powerScale .. [[ << | Minimum = 0.1
+]]}
+
+getOverload		= {overloadTech,
+[[	Would you like to adjust the number of tech upgrades until overload?
+	Be aware that this may cause conflicts with other mods
+	Default = N | Current = >> ]] .. (overloadTech and "Y" or "N") .. [[ <<
+]]}
+
+getMaxStack		= {maxTechStack,
+[[	Input the maximum installable upgrade modules before they overload
+	Default = 3 | Current = >> ]] .. maxTechStack .. [[ <<
+]]}
+
+-- Allow overrides to avoid needing to make any changes to the Lua at all
+powerScale		= GUIF(overrideScale)
+overloadTech	= GUIF(getOverload)
+maxTechStack	= overloadTech and GUIF(getMaxStack) or maxTechStack
+
+-- Safety checks
 assert(type(powerScale) == "number" and powerScale >= 0.1,
 	"Invalid Power Scale defined: Must be a numeric value of at least 0.1")
+assert(type(maxTechStack) == "number" and maxTechStack > 0,
+	"Invalid tech overload cap defined: Must be a positive integer")
 
 --[[
+These are the files being used by this mod.
+Adjust these if the filenames or directory structures ever change,
+and the mod is no longer being maintained.
+
+This mod will conflict with any other mod that alters these same files.
+A spot for merging in code from conflicting mods is provided below.
+Note that ONLY code from AMUMSS' EXML_CHANGE_TABLE blocks should be pasted there.
+
+One file is optional, and should only be active (and conflict with other mods)
+if its associated optional toggle is enabled; Otherwise it should not load.
+--------------------------------------------------------------------------------
 Main file required by this mod
 This file should contain the data for every procedurally-generated upgrade module
 
@@ -46,6 +94,9 @@ Theoretically, this should also pick up new modules added by other mods if
 combined after those other mods
 --]]
 upgradeModTable	= "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
+
+-- Optional file that should only be used when the overloadTech option is enabled
+gameGlobalFile	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
 -----------------------------------------------------------------------------
 --
@@ -309,10 +360,10 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 							and "MaxIs...", avoiding entries that are already
 							"NoWeighting"
 							--]]
-							VALUE_MATCH			= "{^M[ai][nx]Is[%a]+$}",
-							REPLACE_TYPE		= "ALL",
+							VALUE_MATCH		= "{^M[ai][nx]Is[%a]+$}",
+							REPLACE_TYPE	= "ALL",
 							-- Change everything matched above to the preferred curve
-							VCT = {
+							VCT	= {
 								{"WeightingCurve", curveTarget},
 							},
 						},
@@ -321,14 +372,14 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 							Start changing stat values now, beginning with the
 							number of stat LINES each module can roll
 							--]]
-							MATH_OP				= "*F:" .. lineMax,
-							REPLACE_TYPE		= "ALL",
+							MATH_OP			= "*F:" .. lineMax,
+							REPLACE_TYPE	= "ALL",
 							--[[
 							Change the MIN stat lines to match MAX * 1
 							This will set every module to the maximum number
 							of vanilla stat lines possible regardless of scaling
 							--]]
-							VCT = {
+							VCT	= {
 								{lineMin, 1},
 							},
 						},
@@ -433,7 +484,7 @@ if #scaleLower > 0 or #lowSpecial > 0 then
 	local statLineTable		= {}
 	-- Since we are going to replace the MAX with the MIN which comes before it
 	-- we need to set the "fetch backward" flag for AMUMSS here
-	local scaleDownFormula	= "!^FB:"
+	local scaleDownFormula	= "^FB:"
 
 	-- Call the function to process the data from the scaling pool tables
 	processStatTable(statLineTable, scaleLower)
@@ -456,7 +507,7 @@ if #scaleHigher > 0 or #highSpecial > 0 then
 	local statLineTable		= {}
 	-- For this one, we are replacing MIN with the MAX which comes after it
 	-- so we do not need the "fetch backward" flag for AMUMSS
-	local scaleUpFormula	= "!^F:"
+	local scaleUpFormula	= "^F:"
 
 	-- Call the function to process the data from the scaling pool tables
 	processStatTable(statLineTable, scaleHigher)
@@ -478,7 +529,7 @@ if #scaleLinear > 0 then
 	local statLineTable		= {}
 	-- Similar to above, we will be replacing MIN with the MAX which comes after
 	-- so "fetch backward" flag is not needed, but using multiplication instead
-	local scaleFlatFormula	= "!*F:"
+	local scaleFlatFormula	= "*F:"
 
 	-- Call the function to process the data from the scaling pool table
 	processStatTable(statLineTable, scaleLinear)
@@ -510,6 +561,35 @@ order to be scaled
 -- Lack of the optional fourth argument forces the function to apply the changes
 -- to every stat in every module across the entire file
 statModTable[#statModTable + 1] = createScalerEntry("*F:", statMax, statMin)
+
+--[[
+With the General Inventory being removed beginning with the NMS v4.0 update,
+an optional toggle has been added to allow users to install the 6 techs they had
+before the update, when split between tech and general inventories
+
+If the option is enabled, we need to add a new entry into AMUMSS for processing,
+otherwise we can skip this block entirely and avoid conflicts with this file
+
+Space for merging into GCGAMEPLAYGLOBALS is available below, but is unnecessary
+unless overloadTech is enabled
+--]]
+if overloadTech then
+	local addExtraTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
+	addExtraTable[#addExtraTable + 1] = {
+		MBIN_FS = gameGlobalFile,
+		EXML_CT = {
+			{
+				VCT = {
+					{"MaxNumSameGroupTech", maxTechStack},
+				},
+			},
+			-------------------------------------------------------------
+			---- Merge additional changes to GCGAMEPLAYGLOBALS below ----
+			-------------------------------------------------------------
+
+		}
+	}
+end
 
 ------------------------
 -- Main Script Completed
