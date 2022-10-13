@@ -48,7 +48,7 @@ ATLAS_WORD = [[
                 <Property name="AlienRace" value="Atlas" />
               </Property>
               <Property name="UseCategory" value="False" />
-              <Property name="Category" value="WordCategoryTableEnum.xml">
+              <Property name="Category" value="GcWordCategoryTableEnum.xml">
                 <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
@@ -71,7 +71,7 @@ MISC_WORD =
                 <Property name="AlienRace" value="None" />
               </Property>
               <Property name="UseCategory" value="False" />
-              <Property name="Category" value="WordCategoryTableEnum.xml">
+              <Property name="Category" value="GcWordCategoryTableEnum.xml">
                 <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
@@ -90,7 +90,7 @@ ATLAS_WORD_FULL =
                 <Property name="AlienRace" value="Atlas" />
               </Property>
               <Property name="UseCategory" value="False" />
-              <Property name="Category" value="WordCategoryTableEnum.xml">
+              <Property name="Category" value="GcWordCategoryTableEnum.xml">
                 <Property name="wordcategorytableEnum" value="MISC" />
               </Property>
               <Property name="AmountMin" value="1" />
@@ -108,7 +108,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 	= "BetterRewards.pak",
 ["MOD_AUTHOR"]		= "MrTrack",
-["NMS_VERSION"]		= "3.98",
+["NMS_VERSION"]		= "4.03",
 ["MODIFICATIONS"] 	=
 	{
 		{
