@@ -1,14 +1,14 @@
 -- Ship Hunting Assistant // Will NOT affect default seeds!
 -- Author: DarkScythe
 -- Date Created: Jul 03, 2022
--- Last Updated: Aug 02, 2022
+-- Last Updated: Oct 07, 2022
 --------------------------------------------------------------------------------
 modName		= "FastLocateAssistantforShipHunting"
 modAuthor	= "DarkScythe"
 modDesc		= "Speeds up ship hunting by filtering to specific types and increases spawn rates WITHOUT affecting default seeds so you get the same ships as vanilla players in every system. Helpful for players who want to share coordinates of interesting finds with others."
 modVer		= "1.0."
 scriptVer	= "a"
-gameVer		= "3.98"
+gameVer		= "4.00"
 -- Credits --
 -- Thanks to Lenni and Apex Fatality for the idea of isolating ship models.
 -- Thanks to Gumsk for the idea of speeding up NPC spawns.
@@ -55,6 +55,80 @@ spawnFreqMultiOverride	= 100	-- Only used if modSpawnFreqMultis is enabled
 -----------------------------------------------------------------------------
 ---- Alter following code only if this mod is no longer being maintained ----
 -----------------------------------------------------------------------------
+
+-- AMUMSS Input Request Definitions
+-- Using the values defined in the variables above as the fallback
+inputPrompts		= {
+	tweakSettings	= {false,
+[[	Would you like to tweak this mod's settings?
+	Pressing ENTER without a response to any question will use CURRENT settings from the Lua script.
+]]},
+	findExotics		= {huntExotics,
+[[	Do you want to find Exotic Ships?
+	Default = Y | Current = >> ]] .. (huntExotics and "Y" or "N") .. [[ <<
+]]},
+	findExplorers	= {huntExplorers,
+[[	Do you want to find Explorers?
+	Default = N | Current = >> ]] .. (huntExplorers and "Y" or "N") .. [[ <<
+]]},
+	findFighters	= {huntFighters,
+[[	Do you want to find Fighters?
+	Default = N | Current = >> ]] .. (huntFighters and "Y" or "N") .. [[ <<
+]]},
+	findHaulers		= {huntHaulers,
+[[	Do you want to find Haulers?
+	Default = N | Current = >> ]] .. (huntHaulers and "Y" or "N") .. [[ <<
+]]},
+	findShuttles	= {huntShuttles,
+[[	Do you want to find Shuttles?
+	Default = N | Current = >> ]] .. (huntShuttles and "Y" or "N") .. [[ <<
+]]},
+	findSolars		= {huntSolars,
+[[	Do you want to find Solar Sail ships?
+	Default = N | Current = >> ]] .. (huntSolars and "Y" or "N") .. [[ <<
+]]},
+	tweakOpts		= {false,
+[[	Would you like to adjust the optional script settings?
+]]},
+	toggleSRank		= {forceSClass,
+[[	Do you want to restrict all spawns to S-class?
+	Default = N | Current = >> ]] .. (forceSClass and "Y" or "N") .. [[ <<
+]]},
+	toggleSpawnFreq	= {modSpawnFreqMultis,
+[[	Do you want to change the spawn frequency multipliers?
+	Default = N | Current = >> ]] .. (modSpawnFreqMultis and "Y" or "N") .. [[ <<
+]]},
+	getFreqOverride	= {spawnFreqMultiOverride,
+[[	Please enter any non-negative number as a desired spawn frequency multiplier:
+	Default: 0.5 ~ 5 | Current = >> ]] .. spawnFreqMultiOverride .. [[ <<
+]]},
+	processNone		= {false,
+[[	WARNING: Current settings will result in ZERO ship types being spawned!
+	Do you want to continue processing the script with these settings?
+	Default: N
+]]},
+}
+
+-- Allow overrides to avoid needing to make any changes to the Lua at all
+if GUIF(inputPrompts.tweakSettings) then
+	-- Get ship types desired
+	huntExotics		= GUIF(inputPrompts.findExotics)
+	huntExplorers	= GUIF(inputPrompts.findExplorers)
+	huntFighters	= GUIF(inputPrompts.findFighters)
+	huntHaulers		= GUIF(inputPrompts.findHaulers)
+	huntShuttles	= GUIF(inputPrompts.findShuttles)
+	huntSolars		= GUIF(inputPrompts.findSolars)
+	-- See if Optional Settings need changing
+	if GUIF(inputPrompts.tweakOpts) then
+		forceSClass				= GUIF(inputPrompts.toggleSRank)
+		modSpawnFreqMultis		= GUIF(inputPrompts.toggleSpawnFreq)
+		spawnFreqMultiOverride	= modSpawnFreqMultis and GUIF(inputPrompts.getFreqOverride) or spawnFreqMultiOverride
+	end
+end
+
+-- Safety check
+assert(type(spawnFreqMultiOverride) == "number" and spawnFreqMultiOverride >= 0,
+	"Invalid Spawn Frequency Multiplier defined: Must be a non-negative number.")
 
 --[[
 These are the files being used by this mod.
@@ -136,10 +210,10 @@ shipsToRemove	= {}
 for i = 1, #shipInfo do
 	if not shipInfo[i].shipActive then
 		shipsToRemove[#shipsToRemove + 1] = {
-			["PRECEDING_FIRST"]		= "TRUE",
-			["PRECEDING_KEY_WORDS"]	= shipFaction,
-			["SPECIAL_KEY_WORDS"]	= {fileHandle, shipInfo[i].shipFile},
-			["VALUE_CHANGE_TABLE"]	= {
+			PRECEDING_FIRST	= "TRUE",
+			PKW				= shipFaction,
+			SKW				= {fileHandle, shipInfo[i].shipFile},
+			VCT				= {
 				{fileHandle, ""}
 			},
 		}
@@ -149,6 +223,12 @@ end
 -- We can now figure out how many ship types are active
 -- We need this number to scale spawn rates with later
 activeShipCount	= #shipInfo - #shipsToRemove
+
+-- Second safety check, in case all ship types got filtered out
+if activeShipCount == 0 then
+	assert(GUIF(inputPrompts.processNone),
+		"Script processing canceled by user: No ship types selected.")
+end
 
 --[[
 Define some multipliers for various spawn rate numbers we need.
@@ -191,7 +271,7 @@ These settings are adjusted to make finding specific ships much faster.
 
 -- This table will be inserted into the AMUMSS mod container table later
 shipBehaviorAdjustments = {
-	["VALUE_CHANGE_TABLE"]	= {
+	VCT	= {
 		-- These settings allow more ships to land
 		-- Warning: Space Stations may fill up and not allow you inside
 		{"MaxNumActiveTraders", maxActiveSpawns},	-- Default 15 // Modded 104~520 depending on ship types
@@ -227,26 +307,26 @@ shipBehaviorAdjustments = {
 -- This is still just a Lua table at its core, so you can add to it later
 -- See the if() blocks near the bottom for how to reference it
 NMS_MOD_DEFINITION_CONTAINER	= {
-	["MOD_FILENAME"]			= table.concat({"__", modName, "_v", modVer, gameVer, scriptVer, ".pak"}),
-	["MOD_DESCRIPTION"]			= modDesc,
-	["MOD_AUTHOR"]				= modAuthor,
-	["LUA_AUTHOR"]				= modAuthor,
-	["NMS_VERSION"]				= gameVer,
+	MOD_FILENAME				= table.concat({"__", modName, "_v", modVer, gameVer, scriptVer, ".pak"}),
+	MOD_DESCRIPTION				= modDesc,
+	MOD_AUTHOR					= modAuthor,
+	LUA_AUTHOR					= modAuthor,
+	NMS_VERSION					= gameVer,
 
 	-- Actual mod container
-	["MODIFICATIONS"]			= {
+	MODIFICATIONS	= {
 		{
-			["MBIN_CHANGE_TABLE"] = {
+			MBIN_CHANGE_TABLE	= {
 				{
 					-- Modding EXPERIENCESPAWNTABLE
 					-- Adjust the keywords if they ever change in future versions
-					["MBIN_FILE_SOURCE"]	= spawnTableFile,
-					["EXML_CHANGE_TABLE"]	= {
+					MBIN_FILE_SOURCE	= spawnTableFile,
+					EXML_CHANGE_TABLE	= {
 						{
 							-- OutpostSpawns controls the waves bound for
 							-- Planetary Trading posts
-							["PRECEDING_KEY_WORDS"]	= {"OutpostSpawns", "Count"},
-							["VALUE_CHANGE_TABLE"]	= {
+							PKW	= {"OutpostSpawns", "Count"},
+							VCT	= {
 								{"x", minSpawns},	-- "x" is used as the min
 								{"y", maxSpawns},	-- "y" is used as the max
 							},						-- Update if they ever change
@@ -254,8 +334,8 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 						{
 							-- TraderSpawns controls the waves bound for
 							-- Space Stations
-							["PRECEDING_KEY_WORDS"]	= {"TraderSpawns", "Count"},
-							["VALUE_CHANGE_TABLE"]	= {
+							PKW	= {"TraderSpawns", "Count"},
+							VCT	= {
 								{"x", minSpawns * spaceSpawnMulti},
 								{"y", maxSpawns * spaceSpawnMulti},
 							},
@@ -265,8 +345,8 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 							-- that spawn when you're flying around in space
 							-- Used to help supplement the naturally lower
 							-- spawns in space
-							["PRECEDING_KEY_WORDS"]	= {"SpaceFlybySpawns", "GcAIShipSpawnData.xml", "Count"},
-							["VALUE_CHANGE_TABLE"]	= {
+							PKW	= {"SpaceFlybySpawns", "GcAIShipSpawnData.xml", "Count"},
+							VCT	= {
 								{"x", minSpawns * spaceSpawnMulti},
 								{"y", maxSpawns * spaceSpawnMulti},
 							},
@@ -281,8 +361,8 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 					-- Modding GCAISPACESHIPGLOBALS
 					-- All of these changes were already defined earlier, so
 					-- we'll just insert the table as-is here
-					["MBIN_FILE_SOURCE"]	= shipGlobalFile,
-					["EXML_CHANGE_TABLE"]	= {
+					MBIN_FILE_SOURCE	= shipGlobalFile,
+					EXML_CHANGE_TABLE	= {
 						shipBehaviorAdjustments,
 						----------------------------------------------------------------
 						---- Merge additional changes to GCAISPACESHIPGLOBALS below ----
@@ -331,8 +411,8 @@ every single ship type is enabled simultaneously, meaning no ships are filtered.
 if #shipsToRemove > 0 then
 	local shipSpawnFilter = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	shipSpawnFilter[#shipSpawnFilter + 1] = {
-		["MBIN_FILE_SOURCE"] = shipManagerFile,
-		["EXML_CHANGE_TABLE"] = shipsToRemove,
+		MBIN_FILE_SOURCE	= shipManagerFile,
+		EXML_CHANGE_TABLE	= shipsToRemove,
 		-- DO NOT MERGE HERE; Use the mergeManagerEXML table above
 	}
 
@@ -359,13 +439,13 @@ forceSClass is enabled.
 if forceSClass then
 	local addExtraTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	addExtraTable[#addExtraTable + 1] = {
-		["MBIN_FILE_SOURCE"] = inventoryTableFile,
-		["EXML_CHANGE_TABLE"] = {
+		MBIN_FILE_SOURCE	= inventoryTableFile,
+		EXML_CHANGE_TABLE	= {
 			{
 				-- Update this if the keyword ever changes in the future
-				["PRECEDING_KEY_WORDS"]	= "ClassProbabilityData",
-				["REPLACE_TYPE"]		= "ALL",
-				["VALUE_CHANGE_TABLE"]	= {
+				PKW				= "ClassProbabilityData",
+				REPLACE_TYPE	= "ALL",
+				VCT				= {
 					{"C", 0},
 					{"B", 0},
 					{"A", 0},
@@ -398,23 +478,23 @@ This one change to Spawn Frequency does not alter seeds.
 if modSpawnFreqMultis then
 	local addExtraTable = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	addExtraTable[#addExtraTable + 1] = {
-		["MBIN_FILE_SOURCE"] = solargenGlobalFile,
-		["EXML_CHANGE_TABLE"] = {
+		MBIN_FILE_SOURCE	= solargenGlobalFile,
+		EXML_CHANGE_TABLE	= {
 			{
 				-- Update these keywords if they ever change in the future
-				["PRECEDING_KEY_WORDS"]	= "SpaceshipSpawnFreqMultipliers",
-				["MATH_OPERATION"]		= "*",
-				["REPLACE_TYPE"]		= "ALL",
-				["VALUE_CHANGE_TABLE"]	= {
+				PKW				= "SpaceshipSpawnFreqMultipliers",
+				MATH_OP			= "*",
+				REPLACE_TYPE	= "ALL",
+				VCT				= {
 					{"IGNORE", 0}
 				}
 			},
 			{
-				["PRECEDING_KEY_WORDS"]	= "SpaceshipSpawnFreqMultipliers",
-				["MATH_OPERATION"]		= "+",
-				["INTEGER_TO_FLOAT"]	= "FORCE",
-				["REPLACE_TYPE"]		= "ALL",
-				["VALUE_CHANGE_TABLE"]	= {
+				PKW				= "SpaceshipSpawnFreqMultipliers",
+				MATH_OP			= "+",
+				ITF				= "FORCE",
+				REPLACE_TYPE	= "ALL",
+				VCT				= {
 					{"IGNORE", spawnFreqMultiOverride}
 				}
 			},
