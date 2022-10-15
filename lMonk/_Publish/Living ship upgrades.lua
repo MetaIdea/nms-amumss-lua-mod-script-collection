@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.living ship upgrades.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.0.1',
+	NMS_VERSION			= '4.04',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '*',
 				SPECIAL_KEY_WORDS	= {'ID', 'SHIP_TELEPORT'},
 				VALUE_CHANGE_TABLE 	= {
-					{'Bonus',			12}
+					{'Bonus',			24}
 				}
 			},
 			{
@@ -57,8 +57,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'Template', 'A_SHIPJUMP', 'StatsType', 'Ship_Boost'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
-					{'ValueMin',		0.1},	-- 1.1
-					{'ValueMax',		0.1}	-- 1.15
+					{'ValueMin',		0.16},	-- 1.1
+					{'ValueMax',		0.2}	-- 1.25
 				}
 			},
 			{
@@ -68,8 +68,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'Template', 'A_SHIPJUMP', 'StatsType', 'Ship_BoostManeuverability'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
-					{'ValueMin',		0.12},	-- 1.05
-					{'ValueMax',		0.1}	-- 1.12
+					{'ValueMin',		0.18},	-- 1.05
+					{'ValueMax',		0.32}	-- 1.18
 				}
 			},
 			{
@@ -79,8 +79,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'Template', 'A_SHIPJUMP', 'StatsType', 'Ship_Maneuverability'},
 				SECTION_UP			= 1,
 				VALUE_CHANGE_TABLE 	= {
-					{'ValueMin',		0.044},	-- 1.005
-					{'ValueMax',		0.045} 	-- 1.005
+					{'ValueMin',		0.07},	-- 1.0065
+					{'ValueMax',		0.07} 	-- 1.0065
 				}
 			}
 		}
