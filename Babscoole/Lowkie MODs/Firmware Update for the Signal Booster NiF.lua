@@ -1,5 +1,4 @@
-NMSVersion = "4.00"
-MODVersion = "4.00"
+NMSVersion = "4.04"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -160,6 +159,9 @@ return
       <Property name="MarkerLabel" value="]]..MARKERLABEL..[["/>
       <Property name="MarkerIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="]]..FILENAME..[[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
         <Property name="ScannerIconHighlightType" value="Diamond" />
@@ -177,6 +179,9 @@ return
       <Property name="TooltipMessage" value="]]..TOOLTIP..[["/>
       <Property name="ResourceOverride" value="GcResourceElement.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -377,7 +382,6 @@ All_Request_Leave =
       </Property>
 ]]
 
-Grave_Scan_Event = GetCustomScanEvent("SE_GRAVE", "Nearest", "BuildingClass", "GraveInCave", "False", "False", "Local", "UI_MP_PLANTKILL_GRAVE_OSD", "SCAN_GRAVE", "", "UI_TITLE_OWNED_LORE1")
 Base_Scan_Event = GetCustomScanEvent("SE_BASE", "Nearest", "BuildingClass", "Base", "False", "False", "Local", "UI_RECOVER_BASE_OSD", "UI_RECOVER_BASE_MARKER", "", "UI_RECOVER_BASE_MARKER")
 Glitch_Scan_Event = GetCustomScanEvent("SE_GLITCH", "Nearest", "BuildingClass", "StoryGlitch", "False", "False", "Local", "NPC_COMM_WEEK_04_GLITCH_OSD", "BUILDING_GLITCHYSTORYBOX", "", "BUILDING_GLITCHYSTORYBOX")
 
@@ -385,12 +389,11 @@ Glitch_Scan_Event = GetCustomScanEvent("SE_GLITCH", "Nearest", "BuildingClass", 
 REWARD1 = GetReward ("CRASHED_SHIP", "DISTRESS")
 REWARD2 = GetReward ("TOOL_LOCATION", "SHOP")
 REWARD3 = GetReward ("PLANET_ARCHIVES", "LIBRARY")
-REWARD4 = GetReward ("R_GRAVE", "SE_GRAVE")
 REWARD5 = GetReward ("R_BASE", "SE_BASE")
 REWARD6 = GetReward ("R_GLITCH", "SE_GLITCH")
 REWARD7 = GetReward ("R_ABANDONED", "ABANDONED")
 
-REWARDSET = REWARD1..REWARD2..REWARD3..REWARD4..REWARD5..REWARD6..REWARD7
+REWARDSET = REWARD1..REWARD2..REWARD3..REWARD5..REWARD6..REWARD7
 
 --PuzzleOptions (NAME, ACTION)
 --First set of options only 4 options per set allowed
@@ -418,7 +421,7 @@ Menu3_Options = Menu3_Option1..Menu3_Option2..Menu3_Option3..More_Options3
 
 --Fourth set of options
 Menu4_Option1 = GetPuzzleOption("UI_SENTINEL_HIVE_NAME", "R_SHOW_HIVEONLY")  -- Sentinel Pillar
-Menu4_Option2 = GetPuzzleOption("SCAN_GRAVE", "R_GRAVE")  -- Traveller Grave
+Menu4_Option2 = GetPuzzleOption("SCAN_GRAVE", "R_CAVEGRAVE")  -- Traveler Grave
 Menu4_Option3 = GetPuzzleOption("UI_RECOVER_BASE_SUB", "R_BASE")  -- "Wild" Base Computer
 More_Options4 = GetMorePuzzleOption("?HYDRO_SCANNER")
 Menu4_Options = Menu4_Option1..Menu4_Option2..Menu4_Option3..More_Options4
@@ -434,7 +437,7 @@ ALL_PUZZLE_UPDATES = [[      <Property name="Options">
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster NiF"..MODVersion..".pak",
+  ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..NMSVersion..".pak",
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie",
   ["MOD_MAINTENANCE"] = "Babscoole",
@@ -451,7 +454,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
 							["PRECEDING_KEY_WORDS"] = {"Options"},
-							["VALUE_CHANGE_TABLE"] 	= {{"IGNORE", "IGNORE"}},
 							["LINE_OFFSET"]         = "1",
 							["REMOVE"] = "SECTION",  --Remove original options section
 						},
@@ -463,7 +465,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
-							["VALUE_CHANGE_TABLE"] 	= {{"TextAlien", 	""}},    --org UI_SIGNAL_SCANNER_DESC_ALT},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TextAlien", 	""} --org UI_SIGNAL_SCANNER_DESC_ALT},
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
@@ -479,8 +484,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Id", "SEC_CRASHEDSHIP"},
 							["ADD_OPTION"]         = "ADDafterSECTION",
-							["VALUE_CHANGE_TABLE"] = {{"IGNORE",	"IGNORE"}},
 							["ADD"] = REWARDSET,
+						},
+						{
+							["SPECIAL_KEY_WORDS"]  = {"Id", "R_SHOW_HIVEONLY"},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"DoAerialScan", "False"},
+							}
 						},
 					},
 				},
@@ -502,10 +513,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"ReplaceEventIfAlreadyActive",	"True"},                               
 							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Events"},
-							["ADD"] = Grave_Scan_Event
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Events"},

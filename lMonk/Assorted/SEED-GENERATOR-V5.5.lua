@@ -1,5 +1,5 @@
 --[[--------------------------------------------------
-  SEED GENERATOR by Mjjstral - v5.3 updated by lMonk
+  SEED GENERATOR by Mjjstral - v5.5 updated by lMonk
 ------------------------------------------------------
   Set the desired number of seeds you want generated
   for each model (0 skips the unwanted)
