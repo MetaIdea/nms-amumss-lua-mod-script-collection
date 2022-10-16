@@ -87,6 +87,22 @@ STATS =
         {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
         {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"}
     },
+    ["MULTITOOL"] =
+    {
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+    },
+    ["ROYALMULTITOOL"] =
+    {
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+    },
 }
 
 ----------------------------------------------------
@@ -124,6 +140,37 @@ QUICK_ACTION_BUTTON_ALL = ""
 ACTION_TRIGGER_COMPONENT = ""
 CUSTOM_GENERICREWARD_ALL = ""
 
+function AddInvetoryElements(TYPE)
+    local statsList = STATS[TYPE]
+    local statsStringTable = {}
+    local statsString = ""
+    for i = 1, #statsList do
+        local ID = statsList[i]["ID"]
+        local Amount = statsList[i]["Amount"]
+        local MaxAmount = statsList[i]["MaxAmount"]
+        local Damage = statsList[i]["Damage"]
+        statsString = 
+[[
+                  <Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="]]..ID..[[" />
+                    <Property name="Amount" value="]]..Amount..[[" />
+                    <Property name="MaxAmount" value="]]..MaxAmount..[[" />
+                    <Property name="DamageFactor" value="]]..Damage..[[" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
+                  </Property>
+]]
+        table.insert(statsStringTable, statsString)
+    end
+return table.concat(statsStringTable)
+end
+
 function CreateCustomMultitoolRewardSubEntry(DEC_SEED, HEX_SEED, TYPE)
 local GENERIC_REWARD_ENTRY =
 [[
@@ -132,21 +179,8 @@ local GENERIC_REWARD_ENTRY =
             <Property name="Reward" value="GcRewardSpecificWeapon.xml">
               <Property name="WeaponInventory" value="GcInventoryContainer.xml">
                 <Property name="Slots">
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="LASER" />
-                    <Property name="Amount" value="200" />
-                    <Property name="MaxAmount" value="200" />
-                    <Property name="DamageFactor" value="0" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-                    </Property>
+]]..AddInvetoryElements(TYPE)..[[
+                </Property>
                 <Property name="ValidSlotIndices" />
                 <Property name="Class" value="GcInventoryClass.xml">
                   <Property name="InventoryClass" value="S" />
@@ -188,45 +222,17 @@ local GENERIC_REWARD_ENTRY =
 return GENERIC_REWARD_ENTRY
 end
 
-function AddInvetoryElements(SHIPTYPE)
-    local statsList = STATS[SHIPTYPE]
-    local statsStringTable = {}
-    local statsString = ""
-    for i = 1, #statsList do
-        local ID = statsList[i]["ID"]
-        local Amount = statsList[i]["Amount"]
-        local MaxAmount = statsList[i]["MaxAmount"]
-        local Damage = statsList[i]["Damage"]
-        statsString = 
-[[
-                  <Property value="GcInventoryElement.xml">
-                    <Property name="Type" value="GcInventoryType.xml">
-                      <Property name="InventoryType" value="Technology" />
-                    </Property>
-                    <Property name="Id" value="]]..ID..[[" />
-                    <Property name="Amount" value="]]..Amount..[[" />
-                    <Property name="MaxAmount" value="]]..MaxAmount..[[" />
-                    <Property name="DamageFactor" value="]]..Damage..[[" />
-                    <Property name="FullyInstalled" value="True" />
-                    <Property name="Index" value="GcInventoryIndex.xml">
-                      <Property name="X" value="-1" />
-                      <Property name="Y" value="-1" />
-                    </Property>
-                  </Property>
-]]
-        table.insert(statsStringTable, statsString)
-    end
-return table.concat(statsStringTable)
-end
-
-function CreateCustomShipRewardSubEntry(SHIP_SEED, SHIPTYPE, NAME)
+function CreateCustomShipRewardSubEntry(SHIP_SEED, TYPE, NAME)
 local GENERIC_REWARD_SUB_ENTRY =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardSpecificShip.xml">
               <Property name="ShipResource" value="GcResourceElement.xml">
-                <Property name="Filename" value="]] .. SEED_TYPE_PATH[SHIPTYPE] .. [[" />
+                <Property name="Filename" value="]] .. SEED_TYPE_PATH[TYPE] .. [[" />
+                <Property name="ResHandle" value="GcResource.xml">
+                  <Property name="ResourceID" value="0" />
+                </Property>
                 <Property name="Seed" value="GcSeed.xml">
                   <Property name="Seed" value="]] .. SHIP_SEED .. [[" />
                   <Property name="UseSeedValue" value="True" />
@@ -246,7 +252,7 @@ local GENERIC_REWARD_SUB_ENTRY =
               </Property>
               <Property name="ShipInventory" value="GcInventoryContainer.xml">
                 <Property name="Slots">
-]]..AddInvetoryElements(SHIPTYPE)..[[
+]]..AddInvetoryElements(TYPE)..[[
                 </Property>
                 <Property name="ValidSlotIndices" />
                 <Property name="Class" value="GcInventoryClass.xml">
@@ -264,7 +270,7 @@ local GENERIC_REWARD_SUB_ENTRY =
                 <Property name="Version" value="0" />
               </Property>
               <Property name="ShipType" value="GcSpaceshipClasses.xml">
-                <Property name="ShipClass" value="]] .. SHIPTYPE .. [[" />
+                <Property name="ShipClass" value="]] .. TYPE .. [[" />
               </Property>
               <Property name="NameOverride" value="" />
               <Property name="IsGift" value="False" />
@@ -277,13 +283,13 @@ local GENERIC_REWARD_SUB_ENTRY =
 return GENERIC_REWARD_SUB_ENTRY
 end
 
-function CreateRewardMainEntry(REWARD_ID, SUB_ENTRY, TYPE) 
+function CreateRewardMainEntry(REWARD_ID, SUB_ENTRY) 
 local GENERIC_REWARD_MAIN_ENTRY =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="]] .. REWARD_ID .. [[" />
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="]] .. TYPE .. [[" />
+        <Property name="RewardChoice" value="SelectAlways" />
         <Property name="OverrideZeroSeed" value="False" />
         <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
@@ -301,33 +307,33 @@ end
 function CreateAnimEntry(ANIM_ID)
 ANIM_TEMPLATE =
 [[
-		<Property value="TkAnimationData.xml">
-		  <Property name="Anim" value="]] .. ANIM_ID .. [[" />
-		  <Property name="Filename" value="]] .. GENERIC_ANIMATION_FILE .. [[" />
-		  <Property name="AnimType" value="OneShot" />
-		  <Property name="FrameStart" value="0" />
-		  <Property name="FrameEnd" value="0" />
-		  <Property name="StartNode" value="" />
-		  <Property name="ExtraStartNodes" />
-		  <Property name="Priority" value="0" />
-		  <Property name="OffsetMin" value="0" />
-		  <Property name="OffsetMax" value="0" />
-		  <Property name="Delay" value="0" />
-		  <Property name="Speed" value="1" />
-		  <Property name="ActionStartFrame" value="0" />
-		  <Property name="ActionFrame" value="-1" />
-		  <Property name="CreatureSize" value="AllSizes" />
-		  <Property name="Additive" value="False" />
-		  <Property name="Mirrored" value="False" />
-		  <Property name="Active" value="True" />
-		  <Property name="AdditiveBaseAnim" value="" />
-		  <Property name="AdditiveBaseFrame" value="0" />
-		  <Property name="GameData" value="TkAnimationGameData.xml">
-		    <Property name="RootMotionEnabled" value="False" />
-		    <Property name="BlockPlayerMovement" value="False" />
-		    <Property name="BlockPlayerWeapon" value="Unblocked" />
-		  </Property>
-		</Property>	
+        <Property value="TkAnimationData.xml">
+          <Property name="Anim" value="]] .. ANIM_ID .. [[" />
+          <Property name="Filename" value="]] .. GENERIC_ANIMATION_FILE .. [[" />
+          <Property name="AnimType" value="OneShotBlendable" />
+          <Property name="FrameStart" value="0" />
+          <Property name="FrameEnd" value="0" />
+          <Property name="StartNode" value="" />
+          <Property name="ExtraStartNodes" />
+          <Property name="Priority" value="0" />
+          <Property name="OffsetMin" value="0" />
+          <Property name="OffsetMax" value="0" />
+          <Property name="Delay" value="0" />
+          <Property name="Speed" value="1" />
+          <Property name="ActionStartFrame" value="0" />
+          <Property name="ActionFrame" value="-1" />
+          <Property name="CreatureSize" value="AllSizes" />
+          <Property name="Additive" value="False" />
+          <Property name="Mirrored" value="False" />
+          <Property name="Active" value="True" />
+          <Property name="AdditiveBaseAnim" value="" />
+          <Property name="AdditiveBaseFrame" value="0" />
+          <Property name="GameData" value="TkAnimationGameData.xml">
+            <Property name="RootMotionEnabled" value="False" />
+            <Property name="BlockPlayerMovement" value="False" />
+            <Property name="BlockPlayerWeapon" value="Unblocked" />
+          </Property>
+        </Property>	
 ]]
 return ANIM_TEMPLATE
 end
@@ -337,16 +343,36 @@ ACTION_TRIGGER_ENTRY =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
-                <Property name="Anim" value="]] .. ANIM_ID .. [[" />
+                <Property name="Anim" value="]] .. ANIM_ID .. [["/>
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>			  
-              <Property name="Action">
-                <Property value="GcRewardAction.xml">
-                  <Property name="Reward" value="]] .. REWARD .. [[" />
-                </Property>		
               </Property>
-            </Property>			
+              <Property name="Action">
+                <Property value="GcGoToStateAction.xml">
+                  <Property name="State" value="REWARD"/>
+                </Property>
+              </Property>
+           </Property>
+        </Property>
+     </Property>
+     <Property value="GcActionTriggerState.xml">
+     <Property name="StateID" value="REWARD"/>
+       <Property name="Triggers">
+         <Property value="GcActionTrigger.xml">
+           <Property name="Event" value="GcStateTimeEvent.xml">
+             <Property name="Seconds" value="0" />
+             <Property name="RandomSeconds" value="0" />
+             <Property name="UseMissionClock" value="False" />
+           </Property>
+           <Property name="Action">
+             <Property value="GcRewardAction.xml">
+               <Property name="Reward" value="]] .. REWARD .. [["/>
+             </Property>
+             <Property value="GcGoToStateAction.xml">
+               <Property name="State" value="BOOT"/>
+             </Property>
+          </Property>
+          </Property>
 ]]
 return ACTION_TRIGGER_ENTRY
 end
@@ -479,7 +505,7 @@ function CreateSeedRewardLists()
     QUICK_ACTION_BUTTON_ALL = QUICK_ACTION_BUTTON_ALL .. CreateQuickActionMenuEntry("RANDOM " .. ID, ID)
     ANIM_TEMPLATE_ALL = ANIM_TEMPLATE_ALL .. CreateAnimEntry(ID)
     ACTION_TRIGGER_COMPONENT = ACTION_TRIGGER_COMPONENT .. CreateActionTriggerComponent(CreateActionTriggerRewardEntry(ID, ID))
-    CUSTOM_GENERICREWARD_ALL = CUSTOM_GENERICREWARD_ALL .. CreateRewardMainEntry(ID, SUB_REWARD_ENTRY_ALL, "Select")
+    CUSTOM_GENERICREWARD_ALL = CUSTOM_GENERICREWARD_ALL .. CreateRewardMainEntry(ID, SUB_REWARD_ENTRY_ALL)
   end
   print(SEED_COUNT)
 end
@@ -492,7 +518,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.00",
+["NMS_VERSION"]     = "4.04",
 ["MODIFICATIONS"]   = 
 	{
 		{
