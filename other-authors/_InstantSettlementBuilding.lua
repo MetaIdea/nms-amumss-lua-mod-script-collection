@@ -16,6 +16,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"BuildingUpgradeTimeInSeconds", 0},
 								{"Settlement_Hub", 0},
 								{"Settlement_LandingZone", 0},
 								{"Settlement_Bar", 0},

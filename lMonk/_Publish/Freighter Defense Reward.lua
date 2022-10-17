@@ -5,7 +5,7 @@ local desc = [[
   * (the lists are non-random because a bug causes them to misbehave)
 ]]------------------------------------------------------------------------
 
-Mod_Version = 1.31
+Mod_Version = 1.32
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -50,9 +50,6 @@ local function R_MultiItem(item)
 				<Property name="IllegalProcTech" value="]]..bool(itm.l)..[["/>
 				<Property name="ProcProdType" value="GcProceduralProductCategory.xml">
 					<Property name="ProceduralProductCategory" value="]]..(itm.pid or 'Loot')..[["/>
-				</Property>
-				<Property name="ProcProdRarity" value="GcRarity.xml">
-					<Property name="Rarity" value="]]..(itm.r or 'Common')..[["/>
 				</Property>
 			</Property>
 		]]
@@ -114,13 +111,14 @@ local new_reward = {
 				{id='SCRAP_TECH',	n=1, 	t=E_.PDT},
 				{id='FREI_INV_TOKEN',n=1, 	t=E_.PDT},	-- freighter inv slot
 				{id='ASTEROID3',	n=169, 	t=E_.SBT},	-- Platinum
-				{pid=E_.SPB,		r=E_.U,	t=E_.PRP},	-- Space Bones Procedural
+				{pid=E_.SPB,		q=1,	t=E_.PRP},	-- Space Bones Procedural
 				c=100,
 				f=R_MultiItem
 			},
 			{id=E_.HG, n=50, x=60, c=100, f=R_Money},
 		}
-	},{
+	},
+	{
 	---	trader freighter defense battle ---
 		id			= 'FREIGHTERSAVE_T',
 		choice		= 'GiveAll',
@@ -131,13 +129,14 @@ local new_reward = {
 				{id='GEODE_RARE',	n=1, 	t=E_.PDT},
 				{id='FREI_INV_TOKEN',n=1, 	t=E_.PDT},
 				{id='ASTEROID1',	n=523, 	t=E_.SBT},	-- silver
-				{pid=E_.SLV,		r=E_.U,	t=E_.PRP},	-- Salvage Procedural
+				{pid=E_.SLV,		q=1,	t=E_.PRP},	-- Salvage Procedural
 				c=100,
 				f=R_MultiItem
 			},
 			{id=E_.UT, n=35100, x=50200, c=100, f=R_Money},
 		}
-	},{
+	},
+	{
 	---	warior freighter defense battle ---
 		id			= 'FREIGHTERSAVE_W',
 		choice		= 'GiveAll',
@@ -148,11 +147,11 @@ local new_reward = {
 				{id='SCRAP_WEAP',	n=1, 	t=E_.PDT},
 				{id='FREI_INV_TOKEN',n=1, 	t=E_.PDT},
 				{id='ASTEROID2',	n=387, 	t=E_.SBT},	-- gold
-				{pid=E_.DTC,		r=E_.U,	t=E_.PRP},
+				{pid=E_.DTC,		q=1,	t=E_.PRP},
 				c=100,
 				f=R_MultiItem
 			},
-			{id=E_.NN, n=340, x=450, c=100, f=R_Money},
+			{id=E_.NN, n=190, x=270, c=100, f=R_Money},
 		}
 	}
 }

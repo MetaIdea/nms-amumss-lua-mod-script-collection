@@ -4,7 +4,7 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "4-03"
+GameVersion = "4-04"
 ModVersion = "2-2-0"
 
 --[[
@@ -166,6 +166,8 @@ METADATA/REALITY/TABLES/REWARDTABLE.MBIN
 - R_ALSCAN_UWAB_N
 - R_ALSCAN_UWAB_S
 - R_ALSCAN_GPS_HI
+
+METADATA/REALITY/TABLES/REWARDTABLE.MBIN
 - R_ALSCAN_PMQA
 - R_ALSCAN_PMQB
 - R_ALSCAN_PMQC
@@ -26290,6 +26292,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26346,6 +26349,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26402,6 +26406,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26475,6 +26480,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26531,6 +26537,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26604,6 +26611,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26660,6 +26668,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26672,6 +26681,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26728,6 +26738,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26777,6 +26788,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCAN_FLYBY_PR"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -26830,6 +26842,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCAN_FLYBY_PR"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27299,6 +27312,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27349,6 +27363,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27399,6 +27414,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27449,6 +27465,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_PASS"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27608,6 +27625,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27658,6 +27676,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27708,6 +27727,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27758,6 +27778,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27808,6 +27829,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27858,6 +27880,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -27980,6 +28003,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28030,6 +28054,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28080,6 +28105,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28130,6 +28156,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28180,6 +28207,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28230,6 +28258,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28661,6 +28690,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28711,6 +28741,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28761,6 +28792,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28811,6 +28843,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28861,6 +28894,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -28911,6 +28945,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29033,6 +29068,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29083,6 +29119,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29133,6 +29170,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29183,6 +29221,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29233,6 +29272,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29283,6 +29323,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29405,6 +29446,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29455,6 +29497,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29505,6 +29548,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29555,6 +29599,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29605,6 +29650,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29655,6 +29701,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29777,6 +29824,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29827,6 +29875,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29877,6 +29926,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29927,6 +29977,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -29977,6 +30028,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30027,6 +30079,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30149,6 +30202,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30199,6 +30253,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30321,6 +30376,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30371,6 +30427,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30421,6 +30478,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30471,6 +30529,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30521,6 +30580,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30571,6 +30631,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30693,6 +30754,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30743,6 +30805,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30793,6 +30856,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30843,6 +30907,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30893,6 +30958,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -30943,6 +31009,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31065,6 +31132,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31115,6 +31183,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31165,6 +31234,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31215,6 +31285,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31337,6 +31408,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31387,6 +31459,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31437,6 +31510,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31487,6 +31561,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31537,6 +31612,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31587,6 +31663,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31709,6 +31786,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31759,6 +31837,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31809,6 +31888,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31859,6 +31939,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -31981,6 +32062,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32031,6 +32113,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32081,6 +32164,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32131,6 +32215,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32181,6 +32266,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32231,6 +32317,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32353,6 +32440,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32403,6 +32491,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32525,6 +32614,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32575,6 +32665,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32625,6 +32716,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32675,6 +32767,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32725,6 +32818,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32775,6 +32869,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32897,6 +32992,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32947,6 +33043,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -32997,6 +33094,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -33047,6 +33145,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCPB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -33733,6 +33832,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -33783,6 +33883,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -33833,6 +33934,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -33883,6 +33985,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -33933,6 +34036,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -33983,6 +34087,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34105,6 +34210,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34155,6 +34261,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34205,6 +34312,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34255,6 +34363,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34305,6 +34414,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34355,6 +34465,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34786,6 +34897,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34836,6 +34948,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34886,6 +34999,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34936,6 +35050,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -34986,6 +35101,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35036,6 +35152,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35158,6 +35275,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35208,6 +35326,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35258,6 +35377,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35308,6 +35428,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35358,6 +35479,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35408,6 +35530,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35530,6 +35653,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35580,6 +35704,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35630,6 +35755,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35680,6 +35806,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35730,6 +35857,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35780,6 +35908,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35902,6 +36031,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -35952,6 +36082,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36002,6 +36133,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36052,6 +36184,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36102,6 +36235,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36152,6 +36286,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36274,6 +36409,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36324,6 +36460,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36446,6 +36583,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36496,6 +36634,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36546,6 +36685,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36596,6 +36736,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36646,6 +36787,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36696,6 +36838,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36818,6 +36961,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36868,6 +37012,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36918,6 +37063,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -36968,6 +37114,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37018,6 +37165,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37068,6 +37216,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37190,6 +37339,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37240,6 +37390,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37290,6 +37441,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37340,6 +37492,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37462,6 +37615,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37512,6 +37666,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37562,6 +37717,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37612,6 +37768,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37662,6 +37819,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37712,6 +37870,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37834,6 +37993,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37884,6 +38044,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37934,6 +38095,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -37984,6 +38146,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -38106,6 +38269,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -38156,6 +38320,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -38206,6 +38371,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -38256,6 +38422,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -38306,6 +38473,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -38356,6 +38524,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -38478,6 +38647,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -38528,6 +38698,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -38962,6 +39133,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39015,6 +39187,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39105,6 +39278,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39158,6 +39332,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39320,6 +39495,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39373,6 +39549,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39463,6 +39640,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39516,6 +39694,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39606,6 +39785,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39659,6 +39839,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39821,6 +40002,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39874,6 +40056,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -39964,6 +40147,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40017,6 +40201,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40107,6 +40292,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40160,6 +40346,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40322,6 +40509,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40375,6 +40563,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40465,6 +40654,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40518,6 +40708,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40608,6 +40799,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40661,6 +40853,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40823,6 +41016,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40876,6 +41070,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -40966,6 +41161,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41019,6 +41215,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41109,6 +41306,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41162,6 +41360,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41324,6 +41523,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41377,6 +41577,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41467,6 +41668,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41520,6 +41722,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41610,6 +41813,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41663,6 +41867,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41825,6 +42030,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -41878,6 +42084,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42040,6 +42247,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42093,6 +42301,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42183,6 +42392,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42236,6 +42446,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42326,6 +42537,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42379,6 +42591,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42647,6 +42860,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42693,6 +42907,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42739,6 +42954,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42751,6 +42967,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42816,6 +43033,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42828,6 +43046,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42886,6 +43105,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42898,6 +43118,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -42944,6 +43165,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43065,6 +43287,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43133,6 +43356,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43194,6 +43418,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43280,6 +43505,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43353,6 +43579,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43426,6 +43653,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43642,6 +43870,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43692,6 +43921,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43742,6 +43972,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43792,6 +44023,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43842,6 +44074,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -43892,6 +44125,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44014,6 +44248,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44064,6 +44299,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44114,6 +44350,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44164,6 +44401,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44286,6 +44524,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44336,6 +44575,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44386,6 +44626,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44436,6 +44677,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCSB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44486,6 +44728,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -44536,6 +44779,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -46136,6 +46380,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="1"/>
+                      <Property name="LevelledStatRank" value="1"/>
                       <Property name="TakeLevelFromSeasonData" value="False"/>
                       <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
@@ -46334,6 +46579,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="2"/>
+                      <Property name="LevelledStatRank" value="2"/>
                       <Property name="TakeLevelFromSeasonData" value="False"/>
                       <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
@@ -46532,6 +46778,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="3"/>
+                      <Property name="LevelledStatRank" value="3"/>
                       <Property name="TakeLevelFromSeasonData" value="False"/>
                       <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
@@ -46750,6 +46997,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="4"/>
+                      <Property name="LevelledStatRank" value="4"/>
                       <Property name="TakeLevelFromSeasonData" value="False"/>
                       <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
@@ -46908,6 +47156,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                       <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                       <Property name="StatGroup" value="GLOBAL_STATS"/>
                       <Property name="Level" value="5"/>
+                      <Property name="LevelledStatRank" value="5"/>
                       <Property name="TakeLevelFromSeasonData" value="False"/>
                       <Property name="ForceIgnoreLevelledStat" value="False"/>
                       <Property name="CompareStat" value=""/>
@@ -47823,6 +48072,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                   <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                   <Property name="StatGroup" value="GLOBAL_STATS"/>
                                   <Property name="Level" value="1"/>
+                                  <Property name="LevelledStatRank" value="1"/>
                                   <Property name="TakeLevelFromSeasonData" value="False"/>
                                   <Property name="ForceIgnoreLevelledStat" value="False"/>
                                   <Property name="CompareStat" value=""/>
@@ -48037,6 +48287,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                   <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                   <Property name="StatGroup" value="GLOBAL_STATS"/>
                                   <Property name="Level" value="2"/>
+                                  <Property name="LevelledStatRank" value="2"/>
                                   <Property name="TakeLevelFromSeasonData" value="False"/>
                                   <Property name="ForceIgnoreLevelledStat" value="False"/>
                                   <Property name="CompareStat" value=""/>
@@ -48251,6 +48502,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                   <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                   <Property name="StatGroup" value="GLOBAL_STATS"/>
                                   <Property name="Level" value="3"/>
+                                  <Property name="LevelledStatRank" value="3"/>
                                   <Property name="TakeLevelFromSeasonData" value="False"/>
                                   <Property name="ForceIgnoreLevelledStat" value="False"/>
                                   <Property name="CompareStat" value=""/>
@@ -48485,6 +48737,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                   <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                   <Property name="StatGroup" value="GLOBAL_STATS"/>
                                   <Property name="Level" value="4"/>
+                                  <Property name="LevelledStatRank" value="4"/>
                                   <Property name="TakeLevelFromSeasonData" value="False"/>
                                   <Property name="ForceIgnoreLevelledStat" value="False"/>
                                   <Property name="CompareStat" value=""/>
@@ -48659,6 +48912,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                                   <Property name="Stat" value="ALSCAN_FLYBY_ID"/>
                                   <Property name="StatGroup" value="GLOBAL_STATS"/>
                                   <Property name="Level" value="5"/>
+                                  <Property name="LevelledStatRank" value="5"/>
                                   <Property name="TakeLevelFromSeasonData" value="False"/>
                                   <Property name="ForceIgnoreLevelledStat" value="False"/>
                                   <Property name="CompareStat" value=""/>
@@ -49652,6 +49906,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -49705,6 +49960,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -49795,6 +50051,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -49848,6 +50105,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50010,6 +50268,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50063,6 +50322,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50153,6 +50413,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50206,6 +50467,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50296,6 +50558,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50349,6 +50612,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50511,6 +50775,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50564,6 +50829,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50654,6 +50920,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50707,6 +50974,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50797,6 +51065,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -50850,6 +51119,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51012,6 +51282,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51065,6 +51336,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51155,6 +51427,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51208,6 +51481,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51298,6 +51572,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51351,6 +51626,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51513,6 +51789,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51566,6 +51843,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51656,6 +51934,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51709,6 +51988,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51799,6 +52079,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -51852,6 +52133,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52014,6 +52296,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52067,6 +52350,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52157,6 +52441,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52210,6 +52495,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52300,6 +52586,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52353,6 +52640,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52515,6 +52803,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52568,6 +52857,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52730,6 +53020,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52783,6 +53074,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52873,6 +53165,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -52926,6 +53219,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53016,6 +53310,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53069,6 +53364,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53263,6 +53559,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53314,6 +53611,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53326,6 +53624,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53377,6 +53676,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53389,6 +53689,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53440,6 +53741,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_DONE"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53680,6 +53982,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53730,6 +54033,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_COST"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53780,6 +54084,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53830,6 +54135,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCFB_CFG_TECH"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53880,6 +54186,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="1"/>
+                    <Property name="LevelledStatRank" value="1"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -53930,6 +54237,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
                     <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
                     <Property name="StatGroup" value="GLOBAL_STATS"/>
                     <Property name="Level" value="0"/>
+                    <Property name="LevelledStatRank" value="0"/>
                     <Property name="TakeLevelFromSeasonData" value="False"/>
                     <Property name="ForceIgnoreLevelledStat" value="False"/>
                     <Property name="CompareStat" value=""/>
@@ -54420,6 +54728,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
           <Property name="Stat" value="ALSCAN_CFG_CHAT"/>
           <Property name="StatGroup" value="GLOBAL_STATS"/>
           <Property name="Level" value="0"/>
+          <Property name="LevelledStatRank" value="0"/>
           <Property name="TakeLevelFromSeasonData" value="False"/>
           <Property name="ForceIgnoreLevelledStat" value="False"/>
           <Property name="CompareStat" value=""/>
@@ -61028,13 +61337,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
     --
     ["PRECEDING_KEY_WORDS"] = {
       --
-      "GenericTable", --
+      "SpecialRewardTable", --
     },--
     ["ADD"] = [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_SHLT_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61056,7 +61365,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_SHLT_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61078,7 +61387,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_TERM_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61100,7 +61409,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_TERM_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61122,7 +61431,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DPOD_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61144,7 +61453,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DPOD_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61166,7 +61475,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DPOT_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61188,7 +61497,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DPOT_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61210,7 +61519,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_SHOP_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61232,7 +61541,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_SHOP_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61254,7 +61563,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_OUTP_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61276,7 +61585,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_OUTP_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61298,7 +61607,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DIST_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61320,7 +61629,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DIST_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61342,7 +61651,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DNPC_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61364,7 +61673,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DNPC_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61386,7 +61695,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_CRFR_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61408,7 +61717,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_CRFR_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61430,7 +61739,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_ABAN_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61452,7 +61761,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_ABAN_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61474,7 +61783,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_PORT_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61496,7 +61805,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_PORT_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61518,7 +61827,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_GRV_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61540,7 +61849,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_GRV_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61562,7 +61871,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_MONO_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61584,7 +61893,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_MONO_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61606,7 +61915,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_PLAQ_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61628,7 +61937,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_PLAQ_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61650,7 +61959,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_RDIO_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61672,7 +61981,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_RDIO_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61694,7 +62003,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_OBSV_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61716,7 +62025,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_OBSV_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61738,7 +62047,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_FACT_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61760,7 +62069,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_FACT_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61782,7 +62091,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_BASE_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61804,7 +62113,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_BASE_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61826,7 +62135,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_HARV_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61848,7 +62157,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_HARV_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61870,7 +62179,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_MTOW_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61892,7 +62201,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_MTOW_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61914,7 +62223,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_SETL_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61936,7 +62245,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_SETL_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61958,7 +62267,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_LBRY_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -61980,7 +62289,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_LBRY_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62002,7 +62311,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_RUIN_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62024,7 +62333,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_RUIN_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62046,7 +62355,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_TREA_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62068,7 +62377,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_TREA_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62090,7 +62399,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DRHV_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62112,7 +62421,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_DRHV_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62134,7 +62443,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_GLCH_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62156,7 +62465,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_GLCH_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62178,7 +62487,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_UWCF_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62200,7 +62509,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_UWCF_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62222,7 +62531,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_UWTR_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62244,7 +62553,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_UWTR_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62266,7 +62575,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_UWDS_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62288,7 +62597,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_UWDS_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62310,7 +62619,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_UWAB_N"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62332,7 +62641,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_UWAB_S"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62354,7 +62663,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_GPS_HI"/>
       <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="SelectFromSuccessSilent"/>
+        <Property name="RewardChoice" value="SelectAlwaysSilent"/>
         <Property name="OverrideZeroSeed" value="False"/>
         <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
@@ -62372,7 +62681,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
           </Property>
         </Property>
       </Property>
-    </Property>
+    </Property>      
+]]
+    },
+  }},
+
+  --
+  {["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN",
+  ["EXML_CHANGE_TABLE"] = {
+    {["LINE_OFFSET"] = -1,
+    ["REPLACE_TYPE"] = "ADDafterSECTION",
+    --
+    --
+    ["PRECEDING_KEY_WORDS"] = {
+      --
+      "GenericTable", --
+    },--
+    ["ADD"] = [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_ALSCAN_PMQA"/>
       <Property name="List" value="GcRewardTableItemList.xml">
