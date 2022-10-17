@@ -220,16 +220,16 @@ REWARD_ENTRIES =
 
 MISSIONS_QS =
 [[
-              <Property value="GcGenericMissionStage.xml">
-				<Property name="Stage" value="GcMissionSequenceReward.xml">
-                  <Property name="Message" value="UI_REWARD_FAILED_MSG" />
-                  <Property name="Reward" value="RS_QUICKSILV_ML" />
-				  <Property name="CanOverride" value="False" />
-				  <Property name="Silent" value="False" />
-				  <Property name="RewardInventoryOverride" value="None" />
-				  <Property name="DebugText" value="Giving QS reward" />
-                </Property>
-              </Property>
+        <Property value="GcGenericMissionStage.xml">
+          <Property name="Stage" value="GcMissionSequenceReward.xml">
+            <Property name="Message" value="UI_REWARD_FAILED_MSG" />
+            <Property name="Reward" value="RS_QUICKSILV_ML" />
+            <Property name="DoMissionBoardOverride" value="False" />
+            <Property name="Silent" value="False" />
+            <Property name="RewardInventoryOverride" value="None" />
+            <Property name="DebugText" value="Giving QS reward" />
+          </Property>
+       </Property>
 ]]
 
 Rewards = 
@@ -304,19 +304,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},					
 					}
 				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_RESET_SAL"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["LINE_OFFSET"] = -1,
-							["ADD"] = REWARD_M,
-						},
-					}
-				},
+				-- {
+					-- ["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
+					-- ["EXML_CHANGE_TABLE"] 	= 
+					-- {
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id", "R_RESET_SAL"},
+							-- ["PRECEDING_KEY_WORDS"] = {"List", "List"},
+							-- ["ADD_OPTION"] = "ADDafterSECTION",
+							-- ["LINE_OFFSET"] = -1,
+							-- ["ADD"] = REWARD_M,
+						-- },
+					-- }
+				-- },
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA/SIMULATION/MISSIONS/NPCMISSIONTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 

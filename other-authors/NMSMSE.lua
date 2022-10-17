@@ -364,8 +364,8 @@ ModName 						= "NMS Moar Stellar Extractors "
 Author								= "EchoTree "
 LuaAuthor							= "EchoTree & Jackty89"
 ModDescription				=	"Adds 4 new Stellar Extractor rooms to the game. Adds 20 New Files, Modifies METADATA/REALITY DEFAULTSAVEDATA.MBIN, DEFAULTSAVEDATACREATIVE.MBIN, /TABLES BASEBUILDINGOBJECTSTABLE.MBIN, BASEBUILDINGPARTSTABLE.MBIN, BASEBUILDINGPARTSNAVDATATABLE.MBIN, NMS_REALITY_GCPRODUCTTABLE.MBIN, and all of the PLACEMENTDATA.ENTITY.MBINS for the Industrial Rooms."
-GameVersion					=	"v4.0.0"
-Build									= ".1"
+GameVersion					=	"v4.04.0"
+Build									= ".2"
 CustomLanguageTag		= "NMSMSE"
 
 NMS_MOD_DEFINITION_CONTAINER = 
