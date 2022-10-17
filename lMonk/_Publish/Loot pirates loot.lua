@@ -2,12 +2,11 @@
 local desc = [[
   Replace space pirates & raids loot with a more varied selection
 ]]------------------------------------------------------------------------
-mod_version = 1.55
+mod_version = 1.56
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
 end
-
 local function R_TableItem(item, reward, data)
 	local function Amount()
 		if not item.x then return '' end
@@ -32,6 +31,7 @@ local function R_Procedural(item)
 			<Property name="Type" value="GcProceduralProductCategory.xml">
 				<Property name="ProceduralProductCategory" value="]]..item.id..[["/>
 			</Property>
+			<Property name="OverrideRarity" value="]]..bool(item.o)..[["/>
 			<Property name="Rarity" value="GcRarity.xml">
 				<Property name="Rarity" value="]]..(item.r or 'Common')..[["/>
 			</Property>
@@ -107,7 +107,7 @@ local new_reward = {
 	{
 	---	pirate attack loot - easy level ---
 		id			= 'PIRATELOOT_EASY',
-		choice		= 'SelectAlways',
+		choice		= 'SelectAlwaysSilent',
 		rewardlist	= {
 			--id					Min		Max		%		function
 			{id='SHIPCHARGE',				x=1,	c=80,	f=R_Product},
@@ -117,12 +117,13 @@ local new_reward = {
 			{id='ILLEGAL_PROD3',	n=1,	x=2,	c=40,	f=R_Product},
 			{id=E_.DBI,				r=E_.C,			c=30,	f=R_Procedural},
 			{id=E_.DTC,				r=E_.C,			c=30,	f=R_Procedural},
-			{id=E_.UT,				n=18000,x=30000,c=80,	f=R_Money},
+			{id=E_.UT,				n=18000,x=30000,c=80,	f=R_Money}
 		}
-	},{
+	},
+	{
 	---	pirate attack loot - normal level ---
 		id			= 'PIRATELOOT',
-		choice 		= 'SelectAlways',
+		choice 		= 'SelectAlwaysSilent',
 		zeroseed 	= true,
 		replacement	= true,
 		rewardlist	= {
@@ -137,14 +138,15 @@ local new_reward = {
 			{id='TRA_MINERALS3',	n=1,	x=3,	c=40,	f=R_Product},
 			{id='ILLEGAL_PROD4',	n=1,	x=2,	c=30,	f=R_Product},
 			{id='AF_METAL',			n=100,	x=130,	c=30,	f=R_Substance},
-			{id=E_.DBI,				r=E_.U,			c=30,	f=R_Procedural},
-			{id=E_.DTC,				r=E_.U,			c=30,	f=R_Procedural},
-			{id=E_.NN,				n=100,	x=250,	c=100,	f=R_Money},
+			{id=E_.DBI,				o=true,	r=E_.U,	c=30,	f=R_Procedural},
+			{id=E_.DTC,				o=true,	r=E_.U,	c=30,	f=R_Procedural},
+			{id=E_.NN,				n=100,	x=250,	c=100,	f=R_Money}
 		}
-	},{
+	},
+	{
 	---	 pirate attack loot - hard level ---
 		id			= 'PIRATELOOT_HARD',
-		choice		= 'SelectAlways',
+		choice		= 'SelectAlwaysSilent',
 		zeroseed	= true,
 		rewardlist	= {
 			--id					Min		Max		%		function
@@ -162,14 +164,15 @@ local new_reward = {
 			{id='TRA_TECH4',		n=1,	x=3,	c=50,	f=R_Product},
 			{id='ILLEGAL_PROD5',	n=1,	x=2,	c=30,	f=R_Product},
 			{id='GEODE_RARE',				x=1,	c=20,	f=R_Product},
-			{id=E_.DBI,				r=E_.R,			c=20,	f=R_Procedural},
-			{id=E_.DTC,				r=E_.R,			c=20,	f=R_Procedural},
-			{id=E_.NN,				n=300,	x=400,	c=100,	f=R_Money},
+			{id=E_.DBI,				o=true,	r=E_.U,	c=20,	f=R_Procedural},
+			{id=E_.DTC,				o=true,	r=E_.U,	c=20,	f=R_Procedural},
+			{id=E_.NN,				n=300,	x=400,	c=100,	f=R_Money}
 		}
-	},{
+	},
+	{
 	---	 pirate attack loot - building raid ---
 		id			= 'RAIDLOOT',
-		choice		= 'SelectAlways',
+		choice		= 'SelectAlwaysSilent',
 		rewardlist	= {
 			--id					Min		Max		%		function
 			{id='SHIPCHARGE',				x=1,	c=80,	f=R_Product},
@@ -178,9 +181,9 @@ local new_reward = {
 			{id='ILLEGAL_PROD2',	n=1,	x=4,	c=30,	f=R_Product},
 			{id='WATER2',			n=260,	x=280,	c=30,	f=R_Substance},
 			{id='GEODE_RARE',				x=1,	c=20,	f=R_Product},
-			{id=E_.DBI,				r=E_.U,			c=20,	f=R_Procedural},
-			{id=E_.DTC,				r=E_.U,			c=20,	f=R_Procedural},
-			{id=E_.UT,				n=25000,x=35000,c=80,	f=R_Money},
+			{id=E_.DBI,				o=true,	r=E_.U,	c=20,	f=R_Procedural},
+			{id=E_.DTC,				o=true,	r=E_.U,	c=20,	f=R_Procedural},
+			{id=E_.UT,				n=25000,x=35000,c=80,	f=R_Money}
 		}
 	}
 }
@@ -228,7 +231,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Loot pirates loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.0.1',
+	NMS_VERSION			= '4.04',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
