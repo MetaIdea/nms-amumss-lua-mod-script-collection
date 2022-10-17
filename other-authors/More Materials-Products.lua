@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "MoreProducts.pak",
 ["MOD_AUTHOR"]				= "Flugelwulff",
 ["LUA_AUTHOR"]				= "Babscoole/Flugelwulff",
-["NMS_VERSION"]				= "3.98",
+["NMS_VERSION"]				= "4.03",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -15,7 +15,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "MinAmountOfProductAvailable",
-							["SECTION_ACTIVE"] = {1,},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Poor", 	 "100" },
@@ -26,7 +25,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "MaxAmountOfProductAvailable",
-							["SECTION_ACTIVE"] = {1,},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Poor", 	 "400" },
@@ -34,10 +32,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Wealthy", "1800" },
 								{ "Pirate",  "800" },
 							}
-						},
+						},	
 						{
-							["PRECEDING_KEY_WORDS"] = "MinAmountOfProductAvailable",
-							["SECTION_ACTIVE"] = {2,},
+							["PRECEDING_KEY_WORDS"] = {"MinAmountOfProductAvailable", "MinAmountOfProductAvailable"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Poor", 	 "100" },
@@ -47,8 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "MaxAmountOfProductAvailable",
-							["SECTION_ACTIVE"] = {2,},
+							["PRECEDING_KEY_WORDS"] = {"MaxAmountOfProductAvailable", "MaxAmountOfProductAvailable"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Poor", 	 "400" },
@@ -56,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Wealthy", "1800" },
 								{ "Pirate",  "800" },
 							}
-						},						
+						},					
 					} 
 				}
 			}

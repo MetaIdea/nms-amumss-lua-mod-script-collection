@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "MoreSubstances.pak",
 ["MOD_AUTHOR"]				= "Flugelwulff",
 ["LUA_AUTHOR"]				= "Babscoole/Flugelwulff",
-["NMS_VERSION"]				= "3.98",
+["NMS_VERSION"]				= "4.03",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -15,7 +15,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = "MinAmountOfSubstanceAvailable",
-							["SECTION_ACTIVE"] = {1,},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Poor", 	 "1500" },
@@ -26,7 +25,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = "MaxAmountOfSubstanceAvailable",
-							["SECTION_ACTIVE"] = {1,},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Poor", 	 "3000" },
@@ -36,8 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "MinAmountOfSubstanceAvailable",
-							["SECTION_ACTIVE"] = {2,},
+							["PRECEDING_KEY_WORDS"] = {"MinAmountOfSubstanceAvailable", "MinAmountOfSubstanceAvailable"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Poor", 	 "1500" },
@@ -47,8 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = "MaxAmountOfSubstanceAvailable",
-							["SECTION_ACTIVE"] = {2,},
+							["PRECEDING_KEY_WORDS"] = {"MaxAmountOfSubstanceAvailable", "MaxAmountOfSubstanceAvailable"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Poor", 	 "3000" },
