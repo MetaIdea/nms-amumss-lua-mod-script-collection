@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "FasterScanning.pak",
 ["MOD_AUTHOR"]				= "Flugelwulff",
-["NMS_VERSION"]				= "3.96",
+["NMS_VERSION"]				= "4.03",
 ["MODIFICATIONS"] 			= 
 	{
 		{

@@ -73,8 +73,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","15"},
-				{"Max","25"}
+				{"Min","30"},
+				{"Max","50"}
 			}
 		},
 		{--Shield
@@ -83,8 +83,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","25"},
-				{"Max","25"}
+				{"Min","50"},
+				{"Max","50"}
 			}
 		},
 		{--Hyperdrive
@@ -95,6 +95,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				{"Min","0"},
 				{"Max","0"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Dropship","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","10"}
 			}
 		},
 		--B Class
@@ -104,8 +114,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","30"},
-				{"Max","50"} 
+				{"Min","60"},
+				{"Max","100"} 
 			}
 		},
 		{--Shield
@@ -114,8 +124,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","50"},
-				{"Max","50"} 
+				{"Min","100"},
+				{"Max","100"} 
 			}
 		},
 		{--Hyperdrive
@@ -128,6 +138,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Max","0"} 
 			}
 		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Dropship","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","11"},
+				{"Max","20"}
+			}
+		},
 		--A Class
 		{--Damage
 			["PRECEDING_FIRST"] = "TRUE",
@@ -135,8 +155,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","45"},
-				{"Max","75"} 
+				{"Min","90"},
+				{"Max","150"} 
 			}
 		},
 		{--Shield
@@ -145,8 +165,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","75"},
-				{"Max","75"} 
+				{"Min","150"},
+				{"Max","150"} 
 			}
 		},
 		{--Hyperdrive
@@ -159,6 +179,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Max","0"}
 			}
 		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Dropship","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","21"},
+				{"Max","35"}
+			}
+		},
 		--S Class
 		{--Damage
 			["PRECEDING_FIRST"] = "TRUE",
@@ -166,8 +196,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","100"}
+				{"Min","120"},
+				{"Max","200"}
 			}
 		},
 		{--Shield
@@ -176,8 +206,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","100"},
-				{"Max","100"} 
+				{"Min","200"},
+				{"Max","200"} 
 			}
 		},
 		{--Hyperdrive
@@ -188,6 +218,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				{"Min","0"},
 				{"Max","0"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Dropship","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","36"},
+				{"Max","50"}
 			}
 		},
 		--Fighter
@@ -198,8 +238,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","25"},
-				{"Max","25"} 
+				{"Min","50"},
+				{"Max","50"} 
 			}
 		},
 		{--Damage
@@ -208,8 +248,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","15"},
-				{"Max","25"} 
+				{"Min","30"},
+				{"Max","50"} 
 			}
 		},
 		{--Hyperdrive
@@ -222,72 +262,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Max","0"}
 			}
 		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","10"}
+			}
+		},
 		--B Class
 		{--Damage
 			["PRECEDING_FIRST"] = "TRUE",
 			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","B"},
-			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"Min","50"},
-				{"Max","50"} 
-			}
-		},
-		{--Shield
-			["PRECEDING_FIRST"] = "TRUE",
-			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","B"},
-			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"Min","30"},
-				{"Max","50"} 
-			}
-		},
-		{--Hyperdrive
-			["PRECEDING_FIRST"] = "TRUE",
-			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","B"},
-			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"Min","0"},
-				{"Max","0"} 
-			}
-		},
-		--A Class
-		{--Damage
-			["PRECEDING_FIRST"] = "TRUE",
-			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","A"},
-			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"Min","75"},
-				{"Max","75"} 
-			}
-		},
-		{--Shield
-			["PRECEDING_FIRST"] = "TRUE",
-			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","A"},
-			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"Min","45"},
-				{"Max","75"} 
-			}
-		},
-		{--Hyperdrive
-			["PRECEDING_FIRST"] = "TRUE",
-			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","A"},
-			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
-			["VALUE_CHANGE_TABLE"] 	=
-			{
-				{"Min","0"},
-				{"Max","0"} 
-			}
-		},
-		--S Class
-		{--Damage
-			["PRECEDING_FIRST"] = "TRUE",
-			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","S"},
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
@@ -297,12 +285,94 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		},
 		{--Shield
 			["PRECEDING_FIRST"] = "TRUE",
-			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","S"},
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","B"},
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
 				{"Min","60"},
-				{"Max","100"}
+				{"Max","100"} 
+			}
+		},
+		{--Hyperdrive
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","0"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","11"},
+				{"Max","20"}
+			}
+		},
+		--A Class
+		{--Damage
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","150"},
+				{"Max","150"} 
+			}
+		},
+		{--Shield
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","90"},
+				{"Max","150"} 
+			}
+		},
+		{--Hyperdrive
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","0"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","21"},
+				{"Max","35"}
+			}
+		},
+		--S Class
+		{--Damage
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","200"},
+				{"Max","200"} 
+			}
+		},
+		{--Shield
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","120"},
+				{"Max","200"}
 			}
 		},
 		{--Hyperdrive
@@ -313,6 +383,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				{"Min","0"},
 				{"Max","0"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Fighter","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","36"},
+				{"Max","50"}
 			}
 		},
 		--Scientific/Explorer
@@ -333,8 +413,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","25"},
-				{"Max","25"} 
+				{"Min","50"},
+				{"Max","50"} 
 			}
 		},
 		{--Hyperdrive
@@ -343,8 +423,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","15"},
-				{"Max","25"} 
+				{"Min","30"},
+				{"Max","50"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Scientific","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","10"}
 			}
 		},
 		--B Class
@@ -364,8 +454,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","50"},
-				{"Max","50"} 
+				{"Min","100"},
+				{"Max","100"} 
 			}
 		},
 		{--Hyperdrive
@@ -374,8 +464,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","30"},
-				{"Max","50"} 
+				{"Min","60"},
+				{"Max","100"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Scientific","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","11"},
+				{"Max","20"}
 			}
 		},
 		--A Class
@@ -395,8 +495,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","75"},
-				{"Max","75"} 
+				{"Min","150"},
+				{"Max","150"} 
 			}
 		},
 		{--Hyperdrive
@@ -405,8 +505,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","45"},
-				{"Max","75"} 
+				{"Min","90"},
+				{"Max","150"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Scientific","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","21"},
+				{"Max","35"}
 			}
 		},
 		--S Class
@@ -426,8 +536,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","100"},
-				{"Max","100"}
+				{"Min","200"},
+				{"Max","200"}
 			}
 		},
 		{--Hyperdrive
@@ -436,8 +546,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","100"}
+				{"Min","120"},
+				{"Max","200"}
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Scientific","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","36"},
+				{"Max","50"}
 			}
 		},
 		--Shuttle
@@ -458,8 +578,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","15"},
-				{"Max","25"} 
+				{"Min","30"},
+				{"Max","50"} 
 			}
 		},
 		{--Hyperdrive
@@ -468,8 +588,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","25"},
-				{"Max","25"}
+				{"Min","50"},
+				{"Max","50"}
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Shuttle","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","10"}
 			}
 		},
 		--B Class
@@ -489,8 +619,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","30"},
-				{"Max","50"} 
+				{"Min","60"},
+				{"Max","100"} 
 			}
 		},
 		{--Hyperdrive
@@ -499,8 +629,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","50"},
-				{"Max","50"} 
+				{"Min","100"},
+				{"Max","100"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Shuttle","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","11"},
+				{"Max","20"}
 			}
 		},
 		--A Class
@@ -520,8 +660,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","45"},
-				{"Max","75"} 
+				{"Min","90"},
+				{"Max","150"} 
 			}
 		},
 		{--Hyperdrive
@@ -530,8 +670,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","75"},
-				{"Max","75"} 
+				{"Min","150"},
+				{"Max","150"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Shuttle","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","21"},
+				{"Max","35"}
 			}
 		},
 		--S Class
@@ -551,8 +701,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","100"}
+				{"Min","120"},
+				{"Max","200"}
 			}
 		},
 		{--Hyperdrive
@@ -561,8 +711,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","100"},
-				{"Max","100"} 
+				{"Min","200"},
+				{"Max","200"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Shuttle","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","36"},
+				{"Max","50"}
 			}
 		},
 		--Sail/Solar Ship
@@ -573,8 +733,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","20"},
-				{"Max","25"} 
+				{"Min","40"},
+				{"Max","50"} 
 			}
 		},
 		{--Shield
@@ -583,8 +743,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","20"},
-				{"Max","25"} 
+				{"Min","40"},
+				{"Max","50"} 
 			}
 		},
 		{--Hyperdrive
@@ -597,6 +757,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"Max","0"} 
 			}
 		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Sail","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","10"}
+			}
+		},
 		--B Class
 		{--Damage
 			["PRECEDING_FIRST"] = "TRUE",
@@ -604,8 +774,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","40"},
-				{"Max","50"} 
+				{"Min","80"},
+				{"Max","100"} 
 			}
 		},
 		{--Shield
@@ -614,8 +784,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","40"},	
-				{"Max","50"} 	
+				{"Min","80"},	
+				{"Max","100"} 	
 			}
 		},
 		{--Hyperdrive
@@ -626,6 +796,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				{"Min","0"},
 				{"Max","0"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Sail","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","11"},
+				{"Max","20"}
 			}
 		},
 		--A Class
@@ -635,8 +815,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","75"} 
+				{"Min","120"},
+				{"Max","150"} 
 			}
 		},
 		{--Shield
@@ -645,8 +825,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","75"} 
+				{"Min","120"},
+				{"Max","150"} 
 			}
 		},
 		{--Hyperdrive
@@ -657,6 +837,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				{"Min","0"},
 				{"Max","0"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Sail","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","21"},
+				{"Max","35"}
 			}
 		},
 		--S Class
@@ -666,8 +856,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","80"},	-- Original "10"	-	Modded 60
-				{"Max","100"} 	-- Original "20"	-	Modded 100
+				{"Min","160"},	-- Original "10"	-	Modded 60
+				{"Max","200"} 	-- Original "40"	-	Modded 100
 			}
 		},
 		{--Shield
@@ -676,8 +866,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","80"},
-				{"Max","100"}
+				{"Min","160"},
+				{"Max","200"}
 			}
 		},
 		{--Hyperdrive
@@ -688,6 +878,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				{"Min","0"},
 				{"Max","0"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Sail","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","36"},
+				{"Max","50"}
 			}
 		},
 		--Royal/Exotic
@@ -699,8 +899,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"} 
+				{"Min","120"},
+				{"Max","134"} 
 			}
 		},
 		{--Shield
@@ -709,8 +909,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"}
+				{"Min","120"},
+				{"Max","134"}
 			}
 		},
 		{--Hyperdrive
@@ -719,8 +919,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"}
+				{"Min","120"},
+				{"Max","134"}
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Royal","BaseStatsPerClass","C"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","0"},
+				{"Max","10"}
 			}
 		},
 		--B Class
@@ -730,8 +940,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"} 
+				{"Min","120"},
+				{"Max","134"} 
 			}
 		},
 		{--Shield
@@ -740,8 +950,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"}
+				{"Min","120"},
+				{"Max","134"}
 			}
 		},
 		{--Hyperdrive
@@ -750,8 +960,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"}
+				{"Min","120"},
+				{"Max","134"}
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Royal","BaseStatsPerClass","B"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","11"},
+				{"Max","20"}
 			}
 		},
 		--A Class
@@ -761,8 +981,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"}
+				{"Min","120"},
+				{"Max","134"}
 			}
 		},
 		{--Shield
@@ -771,8 +991,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"}
+				{"Min","120"},
+				{"Max","134"}
 			}
 		},
 		{--Hyperdrive
@@ -781,8 +1001,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"}
+				{"Min","120"},
+				{"Max","134"}
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Royal","BaseStatsPerClass","A"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","21"},
+				{"Max","35"}
 			}
 		},
 		--S Class
@@ -792,8 +1022,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"}
+				{"Min","120"},
+				{"Max","134"}
 			}
 		},
 		{--Shield
@@ -802,8 +1032,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_SHIELD"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"} 
+				{"Min","120"},
+				{"Max","134"} 
 			}
 		},
 		{--Hyperdrive
@@ -812,8 +1042,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","60"},
-				{"Max","67"} 
+				{"Min","120"},
+				{"Max","134"} 
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Royal","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","36"},
+				{"Max","50"}
 			}
 		},
 		--Alien/Living Ship
@@ -824,8 +1064,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_DAMAGE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","80"},
-				{"Max","100"}
+				{"Min","160"},
+				{"Max","200"}
 			}
 		},
 		{--Shield
@@ -844,8 +1084,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_HYPERDRIVE"},
 			["VALUE_CHANGE_TABLE"] 	=
 			{
-				{"Min","80"},
-				{"Max","100"}
+				{"Min","160"},
+				{"Max","200"}
+			}
+		},
+		{--Agility
+			["PRECEDING_FIRST"] = "TRUE",
+			["PRECEDING_KEY_WORDS"] = {"ShipBaseStatsData","Alien","BaseStatsPerClass","S"},
+			["SPECIAL_KEY_WORDS"] = {"BaseStatID","SHIP_AGILE"},
+			["VALUE_CHANGE_TABLE"] 	=
+			{
+				{"Min","36"},
+				{"Max","50"}
 			}
 		},
 	}},
