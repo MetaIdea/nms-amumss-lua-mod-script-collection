@@ -1,9 +1,9 @@
 NexusModName = "CraftableUpgradeMods"
 Author = "jackty89"
 
-UnlockableItemTreesPath = "METADATA\\REALITY\\TABLES\\UNLOCKABLEITEMTREES.MBIN"
-GCProductTablePath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPRODUCTTABLE.MBIN"
-GCProcTechnologyPath = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
+UnlockableItemTreesPath = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN"
+GCProductTablePath = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN"
+GCProcTechnologyPath = "METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 
 CostTypeFactory = "FACTORY"
 CostTypeNanite = "NANITES"
@@ -211,7 +211,10 @@ XClassMods =
             {"U_CANNONX", "", "", "5"},
 
             {"U_SENTGUN", "", "", "6"},
-            {"U_SENTSUIT", "", "", "6"}
+            {"U_SENTSUIT", "", "", "6"},
+            {"ROGUE_CARBOX", "", "", "6"},
+            {"ROGUE_HAZBOX", "", "", "6"},
+            {"ROGUE_STARTBOX", "", "", "6"}
         }
     }
 }
@@ -980,7 +983,7 @@ local AddCsutomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
 for Key , _Language in pairs(Languages) do
     AddCsutomLanguageFiles[#AddCsutomLanguageFiles +1] =
     {
-        ["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Key..".EXML",
+        ["FILE_DESTINATION"] 	=	"LANGUAGE/NMS_"..CustomLanguageTag.."_"..Key..".EXML",
         ["FILE_CONTENT"] 		=	FillCustomlangFile()
     }
 end
