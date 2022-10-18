@@ -1,3 +1,4 @@
+-- SHIPS_COLLECTION = {"TEST"}
 SHIPS_COLLECTION = {"ALL", "GSHIP"}
 -- USES LISTS IN COLLECTIONS_LIST
 -- "ALL", "SCI-FI", "REAL-LIFE", "WACKY"
@@ -114,6 +115,7 @@ COLLECTIONS_LIST =
 						"C1280",
 						"Ageis Nemesis",
 						"Predator Nighthawk",
+						-- "Rick's Car",
 					},
 	["SCI-FI"] =	{
 						"X Wing",
@@ -178,6 +180,7 @@ COLLECTIONS_LIST =
 						"C1280",
 						"Ageis Nemesis",
 						"Predator Nighthawk",
+						-- "Rick's Car",
 					},
 	["REAL-LIFE"] =	{
 						"Space Shuttle",
@@ -221,7 +224,6 @@ COLLECTIONS_LIST =
 						"Y Wing B",
 						"X Wing White",
 						"V Wing",
-						"Jedi Interceptor",
 						"Jedi Interceptor Red",
 						"Jedi Interceptor Yoda",
 						"Tie I",
@@ -246,9 +248,28 @@ COLLECTIONS_LIST =
 						"Samus Gunship",
 						"Lego Space Dart I",
 						"Lego Space Scooter",
+						"A-wing Blue",
+						"Bird of Prey",
+						"Cylon Raider",
+						"Whitestar",
+						"White Pelican",
+						"Arwing",
+						"Malovsky",
+						"Molnia",
+						"Avem de Paradiso",
+						"Unitron",
 					},
 	["TEST"] =		{
-						"PREDATOR NIGHTHAWK",
+						-- "BIRD OF PREY",
+						-- "A-WING BLUE",
+						-- "CYLON RAIDER",
+						-- "WHITESTAR",
+						-- "WHITE PELICAN",
+						-- "ARWING",
+						-- "MALOVSKY",
+						-- "MOLNIA",
+						-- "AVEM DE PARADISO",
+						"UNITRON"
 					},
 					
 }
@@ -410,8 +431,8 @@ SHIPS_DATA =
 	["DARK X WING"] =		{ ["Name"] = 		"_Ship_XWingDark",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\XWINGDARK\XWINGDARK.SCENE.MBIN",
 							},
-	["ETA-2"] =				{ ["Name"] = 		"_Ship_JediStarFighter",
-							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\JEDISTARFIGHTER\JEDISTARFIGHTER.SCENE.MBIN",
+	["ETA-2"] =				{ ["Name"] = 		"_Ship_JediInterceptor",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\JEDIINTERCEPTOR\JEDIINTERCEPTOR.SCENE.MBIN",
 							},
 	["STARVIPER"] =			{ ["Name"] = 		"_Ship_StarViper",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\STARVIPER\STARVIPER.SCENE.MBIN",
@@ -437,8 +458,8 @@ SHIPS_DATA =
 	["DANUBE SHUTTLE"] =	{ ["Name"] = 		"_Ship_StDanube",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\STDANUBE\STDANUBE.SCENE.MBIN",
 							},
-	["ENTERPRISE-D"] =		{ ["Name"] = 		"_Ship_StNcc1701d",
-							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\STNCC1701D\STNCC1701D.SCENE.MBIN",
+	["ENTERPRISE-D"] =		{ ["Name"] = 		"_Ship_Entd",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\ENTD\ENTD.SCENE.MBIN",
 							},
 	["DELOREAN"] =			{ ["Name"] = 		"_DELOREAN_",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\WINDER\WINDER_DELOREAN\WINDER_DELOREAN.SCENE.MBIN",
@@ -494,6 +515,9 @@ SHIPS_DATA =
 	["PREDATOR NIGHTHAWK"] ={ ["Name"] = 		"_PREDHAWK_",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\WINDER\WINDER_PREDHAWK\WINDER_PREDHAWK.SCENE.MBIN",
 							},
+	-- ["RICK'S CAR"] =		{ ["Name"] = 		"_RICKSHIP_",
+							  -- ["SCENEGRAPH"] = 	"CUSTOMMODELS\WINDER\WINDER_RICKCAR\WINDER_RICKCAR.SCENE.MBIN",
+							-- },
 	-- GSHIP CUSTOM SHIPS BY GUMSK
 	-- DESCRIPTOR ONLY - PLEASE DOWNLOAD GSHIP SEPARATELY IF YOU WANT TO INCLUDE THESE AT
 	-- https://www.nexusmods.com/nomanssky/mods/1891
@@ -509,8 +533,8 @@ SHIPS_DATA =
 	["SR-71"] =				{ ["Name"] = 		"_Ship_Sr71",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\SR71\SR71.SCENE.MBIN",
 							},
-	["JEDI INTERCEPTOR YODA"]={ ["Name"] = 		"_Ship_JediInterceptorYoda",
-							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\JEDIINTERCEPTORYODA\JEDIINTERCEPTORYODA.SCENE.MBIN",
+	["JEDI INTERCEPTOR YODA"]={ ["Name"] = 		"_Ship_JediIntY",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\JEDIINTY\JEDIINTY.SCENE.MBIN",
 							},
 	["GUNDAM SAZABI"] =		{ ["Name"] = 		"_Ship_GundamSazabi",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\GUNDAMSAZABI\GUNDAMSAZABI.SCENE.MBIN",
@@ -579,7 +603,7 @@ SHIPS_DATA =
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\FEDERATIONATTACK\FEDERATIONATTACK.SCENE.MBIN",
 							},
 	["JEDI INTERCEPTOR RED"]={ ["Name"] = 		"_Ship_JediIntYRed",
-							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\JEDIINTYRED\JEDIINTERCEPTORYODA.SCENE.MBIN",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\JEDIINTYRED\JEDIINTY.SCENE.MBIN",
 							},
 	["LEGO SPACE SCOOTER"] ={ ["Name"] = 		"_Ship_LegoSpaceScooter",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\LEGOSPACESCOOTER\LEGOSPACESCOOTER.SCENE.MBIN",
@@ -589,9 +613,6 @@ SHIPS_DATA =
 							},
 	["TIE A"] =				{ ["Name"] = 		"_Ship_TieA",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\TIEA\TIEA.SCENE.MBIN",
-							},
-	["JEDI INTERCEPTOR"] =	{ ["Name"] = 		"_Ship_JediInterceptor",
-							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\JEDIINTERCEPTOR\JEDIINTERCEPTOR.SCENE.MBIN",
 							},
 	["Y WING B"] =			{ ["Name"] = 		"_Ship_YWingB",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\YWINGB\YWINGB.SCENE.MBIN",
@@ -605,7 +626,7 @@ SHIPS_DATA =
 	["TIE I RED"] =			{ ["Name"] = 		"_Ship_TieIRed",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\TIEIRED\TIEI.SCENE.MBIN",
 							},
-	["X WING WHITE"] =		{ ["Name"] = 		"_Ship_XWingDarkWhite",
+	["X WING WHITE"] =		{ ["Name"] = 		"_Ship_XWingWhite",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\XWINGWHITE\XWINGWHITE.SCENE.MBIN",
 							},
 	["V WING"] =			{ ["Name"] = 		"_Ship_VWing",
@@ -626,6 +647,36 @@ SHIPS_DATA =
 	["SAMUS GUNSHIP"] =		{ ["Name"] = 		"_Ship_Metroid",
 							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\METROID\METROID.SCENE.MBIN",
 							},
+	["A-WING BLUE"] =		{ ["Name"] = 		"_Ship_AwingBlue",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\AWING\AWING.SCENE.MBIN",
+							},
+	["BIRD OF PREY"] =		{ ["Name"] = 		"_Ship_Birdofprey",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\BIRDOFPREY\BIRDOFPREY.SCENE.MBIN",
+							},
+	["CYLON RAIDER"] =		{ ["Name"] = 		"_Ship_Cylon",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\CYLON\CYLON.SCENE.MBIN",
+							},
+	["WHITESTAR"] =			{ ["Name"] = 		"_Ship_Whitestar",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\WHITESTAR\WHITESTAR.SCENE.MBIN",
+							},
+	["WHITE PELICAN"] =		{ ["Name"] = 		"_Ship_Pelicanwhite",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\PELICANWHITE\PELICAN.SCENE.MBIN",
+							},
+	["ARWING"] =			{ ["Name"] = 		"_Ship_Arwing",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\ARWING\ARWING.SCENE.MBIN",
+							},
+	["MALOVSKY"] =			{ ["Name"] = 		"_Ship_Malovsky",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\MALOVSKY\MALOVSKY.SCENE.MBIN",
+							},
+	["MOLNIA"] =			{ ["Name"] = 		"_Ship_Molnia",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\MOLNIA\MOLNIA.SCENE.MBIN",
+							},
+	["AVEM DE PARADISO"] =	{ ["Name"] = 		"_Ship_Paradiso",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\PARADISO\PARADISO.SCENE.MBIN",
+							},
+	["UNITRON"] =			{ ["Name"] = 		"_Ship_Unitron",
+							  ["SCENEGRAPH"] = 	"CUSTOMMODELS\UNITRON\UNITRON.SCENE.MBIN",
+							},
 	
 }
 
@@ -640,7 +691,10 @@ return [[
               <Property name="Value" value="]] .. SCENE .. [[" />
             </Property>
             <Property value="NMSString0x80.xml">
-              <Property name="Value" value="CUSTOMMODELS\WINDER\ENGINE_BOOST.SCENE.MBIN" />
+              <Property name="Value" value="CUSTOMMODELS/WINDER/ENGINE_BOOST.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="CUSTOMMODELS/WINDER/ENGINE_BOOST_NEW.SCENE.MBIN" />
             </Property>
             <Property value="NMSString0x80.xml">
               <Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/WEAPONS/SHIPGUN.SCENE.MBIN" />
