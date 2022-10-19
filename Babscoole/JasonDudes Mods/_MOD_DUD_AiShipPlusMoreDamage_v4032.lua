@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]  = "_MOD_DUD_AiShipPlusMoreDamage_v3931.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_AiShipPlusMoreDamage_v4032.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.93",
+["NMS_VERSION"]   = "4.04",
 ["MODIFICATIONS"] =
 	{
 		{
@@ -16,22 +16,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"MinimumCircleTimeBeforeLanding",      "20"},
-								{"FillUpOutposts",        				"False"},
-								{"TradingPostTraderRequestTime",        "60"},
-								--{"TradingPostTraderRange",        		"1500"},
-								{"SpaceStationTraderRequestTime",       "30"},
-								{"DockingLandingTime",        			"2"},
-								{"DockingLandingTimeDirectional",       "2"},
-								--{"DockingRotateSpeed",        			"0.7"},
-								{"DockWaitMinTime",        				"60"},
-								{"DockWaitMaxTime",        				"120"},
-								{"LandingManuevreTime",        			"2"},
-								{"LandingManeuvreAlignTime",        	"2"},
-								{"CircleApproachDistance",        		"300"},
-								{"GroundCircleHeight",        			"90"},
-								--{"AtmosphereEffectMin",        			"0"},
-								--{"AtmosphereEffectMax",        			"0"},
+								{"MinimumCircleTimeBeforeLanding", "20"},
+								{"FillUpOutposts",                 "False"},
+								{"TradingPostTraderRequestTime",   "60"},
+								--{"TradingPostTraderRange",       "1500"},
+								{"SpaceStationTraderRequestTime",  "30"},
+								{"DockingLandingTime",             "2"},
+								{"DockingLandingTimeDirectional",  "2"},
+								--{"DockingRotateSpeed",           "0.7"},
+								{"DockWaitMinTime",                "60"},
+								{"DockWaitMaxTime",                "120"},
+								{"LandingManuevreTime",            "2"},
+								{"LandingManeuvreAlignTime",       "2"},
+								--{"CircleApproachDistance",         "300"},
+								{"GroundCircleHeight",             "90"},
+								--{"AtmosphereEffectMin",          "0"},
+								--{"AtmosphereEffectMax",          "0"},
 							},
 						},
 						{
@@ -450,7 +450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] =
 							{
 							    --{"MinSpeed",				"100"},
-								{"MaxSpeed",				"105"},
+								--{"MaxSpeed",				"105"},
 								{"TurnMax",					"1.5"},
 							},
 						},
@@ -472,7 +472,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] =
 							{
 							    {"MinSpeed",				"40"},
-								{"MaxSpeed",				"105"},
+								--{"MaxSpeed",				"105"},
 								--{"TurnMax",					"1.5"},
 							}	
 						},
@@ -504,7 +504,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","STANDARD",},
 							["VALUE_CHANGE_TABLE"] =
 							{
-							    {"Health",				"10000"},
+							    {"Health",				"6000"},
 							    {"LevelledExtraHealth",	"20000"},
 							    {"RechargeTime",		"8"},
 							    {"RechargeDelayTime",	"3"},
@@ -516,7 +516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","STRONG",},
 							["VALUE_CHANGE_TABLE"] =
 							{
-							    {"Health",				"20000"},
+							    {"Health",				"12000"},
 							    {"LevelledExtraHealth",	"30000"},
 							    {"RechargeTime",		"12"},
 							    {"RechargeDelayTime",	"3"},
@@ -528,10 +528,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","FAST",},
 							["VALUE_CHANGE_TABLE"] =
 							{
-							    {"Health",				"5000"},
+							    {"Health",				"3000"},
 							    --{"LevelledExtraHealth",	"10000"},
 							    {"RechargeTime",		"3"},
-							    {"RechargeDelayTime",	"2"},
+							    --{"RechargeDelayTime",	"2"},
 							}	
 						},
 						{
@@ -632,37 +632,35 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Damage", 			"3" },
-								{ "HardModeMultiplier", "2" }
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG_MED",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", 			"6" },
-								{ "HardModeMultiplier", "2" }
+								{ "Damage", 			"4" },
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGRENADEDMG",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "HardModeMultiplier", "2" }
-							}
-						},							
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGRENADEDMG",},
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "HardModeMultiplier", "2" }
+							-- }
+						-- },							
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","ROBOTBIGGUN",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", 			"9" },							
-								{ "HardModeMultiplier", "2" }
+								{ "Damage", 			"7" },							
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","LASERDAMAGE",},
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", 			"4" },
+								{ "Damage", 			"3.5" },
 							}
 						},
 						{
@@ -670,134 +668,123 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Damage", 			"4" },							
-								{ "HardModeMultiplier", "2" }
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","PLANTDMG",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", 			"40" },
-								{ "HardModeMultiplier", "2" }
+								{ "Damage", 			"35" },
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Damage", 			"15" },							
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Damage", 			"10" },	
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Damage", 			"18" },							
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN",},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- --{ "Damage", 			"15" },							
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER",},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "Damage", 			"10" },	
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1",},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "HardModeMultiplier", "1.5" }
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2",},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "Damage", 			"18" },							
+							-- }
+						-- },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", 			"20" },							
-								{ "HardModeMultiplier", "1.5" }
+								{ "Damage", 			"17" },							
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Damage", 			"15" },	
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3",},
-							["SECTION_ACTIVE"] = {1,},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Damage", 			"20" },	
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3",},
-							["SECTION_ACTIVE"] = {2,},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Damage", 			"30" },	
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1",},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "Damage", 			"15" },	
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3",},
+							-- ["SECTION_ACTIVE"] = {1,},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "Damage", 			"20" },	
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3",},
+							-- ["SECTION_ACTIVE"] = {2,},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "Damage", 			"30" },	
+							-- }
+						-- },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","WALKERLASER",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", 			"10" },
-								--{ "HardModeMultiplier", "2" }
+								{ "Damage", 			"6" },
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Damage", 			"16" },							
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN",},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "Damage", 			"6" },
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER",},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "Damage", 			"16" },							
+							-- }
+						-- },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", "60" }
+								{ "Damage", "30" }
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","MEDIUMASTEROID",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", "70" }
+								{ "Damage", "40" }
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","LARGEASTEROID",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", "80" }
+								{ "Damage", "60" }
 							}
 						},						
 						{
@@ -805,7 +792,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Damage", "30" },
-								{ "HardModeMultiplier", "2" }								
 							}
 						},
 						{
@@ -813,46 +799,41 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Damage", "30" },
-								{ "HardModeMultiplier", "2" }								
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", "40" },
-								{ "HardModeMultiplier", "2" }
+								{ "Damage", "35" },
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","GRABPLANT_DMG",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", "40" },
-								{ "HardModeMultiplier", "2" }
+								{ "Damage", "35" },
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","VENUSFLY_DMG",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", "40" },
-								{ "HardModeMultiplier", "2" }
+								{ "Damage", "35" },
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","BARRELEXPLODE",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "HardModeMultiplier", "2" }
-							}
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","BARRELEXPLODE",},
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "HardModeMultiplier", "2" }
+							-- }
+						-- },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLERSPITDMG",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Damage", "15" },
-								{ "HardModeMultiplier", "2" }
 							}
 						},
 						-- {
@@ -862,29 +843,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 								-- { "HardModeMultiplier", "2" }
 							-- }
 						-- },
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","LIGHTNING",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Damage", "150" },
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","METEOR",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ "Damage", "150" },
-								{ "HardModeMultiplier", "1.5" }
-							}
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","LIGHTNING",},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "Damage", "150" },
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id","METEOR",},
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { "Damage", "150" },
+							-- }
+						-- },
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","TORNADO",},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "Damage", "70" }
+								{ "Damage", "45" }
 							}
 						},					
 					}
