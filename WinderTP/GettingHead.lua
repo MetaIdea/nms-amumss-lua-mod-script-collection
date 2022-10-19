@@ -1,4 +1,4 @@
-EDITION = "CLASSICS_B"	-- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
+EDITION = "CLASSICS"	-- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
 
 
 -- Suit parts minus backpack
@@ -6,7 +6,7 @@ EDITION = "CLASSICS_B"	-- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
 -- GOLD = Golden Suit
 GET_SUIT = "VYK"
 
-CAPE = "CAPE_INFINITY"
+CAPE = "CAPE_JELLY"
 -- Choose the cape
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you don't want any capes
@@ -17,6 +17,9 @@ CAPE_PROTO
 CAPE_PIRATE
 CAPE_INFINITY
 CAPE_FREIGHTER
+CAPE_FRIGATE
+CAPE_SANDWORM
+CAPE_JELLY
 ]]
 
 BACKPACK = "BACKPACK_ROYAL"
@@ -327,7 +330,7 @@ for i,j in pairs(RACES) do						-- adding all the heads to each race
 	end
 end
 
-if DEBUG_TEXT then print("CAPE EMPTY? - " .. CAPE ~= "") end
+-- if DEBUG_TEXT then print("CAPE EMPTY? - " .. CAPE .. "") end
 if BACKPACK ~= "" then
 table.insert(HEAD_CHANGE_TABLE, {
 									-- ["PRECEDING_KEY_WORDS"] = {"GcCustomisationPreset.xml", "DescriptorGroups"},
