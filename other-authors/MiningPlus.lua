@@ -15,6 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"ID", "UT_MINER"},
 								["PRECEDING_KEY_WORDS"] = {"Weapon_Laser_MiningBonus"},
+								["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",  "5.5"} -- Original was 1.5 or 50%. Changed to 5.5 or 450% (4.5x),  every 0.5 is 50%. example: 1 = 0%, 1.5 = 50%, 2 = 100%, 2.5 = 150%.
@@ -23,6 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"]  = {"ID","LASER"},
 								["PRECEDING_KEY_WORDS"] = {"Weapon_Laser_HeatTime"},
+								["SECTION_UP"] = 1,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Bonus",  "999999"} -- How long it takes for youre Mining Beam to overheat. This also makes it so you have max Efficiency 
