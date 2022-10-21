@@ -5,7 +5,7 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-04"
+GameVersion = "4-05"
 ModVersion = "1-0-0"
 
 --[[
@@ -42,8 +42,8 @@ METADATA/REALITY/TABLES/REWARDTABLE.MBIN
 - R_CHEF_VISIT
 - R_CHEF_J_WAIT
 - R_CHEF_J_DONE
-- R_CHEF_SONG
 - R_CHEFOF_GIFT
+- R_CHEF_SONG
 
 METADATA/SIMULATION/SCENE/EXPERIENCESPAWNTABLE.MBIN
 - PE_CHEF_SONG
@@ -31978,38 +31978,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
       </Property>
     </Property>
     <Property value="GcGenericRewardTableEntry.xml">
-      <Property name="Id" value="R_CHEF_SONG"/>
-      <Property name="List" value="GcRewardTableItemList.xml">
-        <Property name="RewardChoice" value="GiveAllSilent"/>
-        <Property name="OverrideZeroSeed" value="False"/>
-        <Property name="UseInventoryChoiceOverride" value="False"/>
-        <Property name="List">
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100"/>
-            <Property name="Reward" value="GcRewardExchangeProduct.xml">
-              <Property name="IDToGive" value="P_CHEF_SONG_X"/>
-              <Property name="IDToTake" value="P_CHEF_SONG"/>
-              <Property name="AmountToGiveMin" value="1"/>
-              <Property name="AmountToGiveMax" value="1"/>
-              <Property name="AmountToTakeMax" value="1"/>
-              <Property name="HideNewProduct" value="True"/>
-              <Property name="ForceSpecialMessage" value="False"/>
-            </Property>
-            <Property name="LabelID" value=""/>
-          </Property>
-          <Property value="GcRewardTableItem.xml">
-            <Property name="PercentageChance" value="100"/>
-            <Property name="Reward" value="GcRewardMission.xml">
-              <Property name="Mission" value="ALCH_CHEF_WHALE"/>
-              <Property name="SetAsSelected" value="False"/>
-              <Property name="FailRewardIfMissionActive" value="True"/>
-            </Property>
-            <Property name="LabelID" value=""/>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_CHEFOF_GIFT"/>
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll"/>
@@ -32041,6 +32009,38 @@ NMS_MOD_DEFINITION_CONTAINER = {
               <Property name="ForceSpecialMessage" value="False"/>
               <Property name="HideInSeasonRewards" value="False"/>
               <Property name="Silent" value="False"/>
+            </Property>
+            <Property name="LabelID" value=""/>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_CHEF_SONG"/>
+      <Property name="List" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAllSilent"/>
+        <Property name="OverrideZeroSeed" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100"/>
+            <Property name="Reward" value="GcRewardExchangeProduct.xml">
+              <Property name="IDToGive" value="P_CHEF_SONG_X"/>
+              <Property name="IDToTake" value="P_CHEF_SONG"/>
+              <Property name="AmountToGiveMin" value="1"/>
+              <Property name="AmountToGiveMax" value="1"/>
+              <Property name="AmountToTakeMax" value="1"/>
+              <Property name="HideNewProduct" value="True"/>
+              <Property name="ForceSpecialMessage" value="False"/>
+            </Property>
+            <Property name="LabelID" value=""/>
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100"/>
+            <Property name="Reward" value="GcRewardMission.xml">
+              <Property name="Mission" value="ALCH_CHEF_WHALE"/>
+              <Property name="SetAsSelected" value="False"/>
+              <Property name="FailRewardIfMissionActive" value="True"/>
             </Property>
             <Property name="LabelID" value=""/>
           </Property>

@@ -39,11 +39,11 @@ CAN_SCALE_PREFAB_PARTS = false                  --Vanilla false // Mod Default f
 CAN_SCALE_EXTRACTORS = false                    --Vanilla false // Mod Default false // true to allow gas/mineral extractors to be scaled (when greatly scaled their resources won't be linked to the resources network though)
 ---------------------------------------------
 ---------------------------------------------
--- GUIGeo = { enableGeos = { false, [[Do you want GeoBays on Freighters? Default = N. ]] },}
--- GEOBAYS_ON_FREIGHTER = GUIF( GUIGeo.enableGeos )
+GUIGeo = { enableGeos = { false, [[Do you want GeoBays on Freighters? Default = N. ]] },}
+GEOBAYS_ON_FREIGHTER = GUIF( GUIGeo.enableGeos )
 
--- GUIFarm = { enableFarm = { false, [[Do you want to farm in any biome?  Default = N. ]] },}
--- FARM_IN_ANY_BIOME = GUIF( GUIFarm.enableFarm )
+GUIFarm = { enableFarm = { false, [[Do you want to farm in any biome?  Default = N. ]] },}
+FARM_IN_ANY_BIOME = GUIF( GUIFarm.enableFarm )
 
 ----- Settings related tables -----
 -----------------------------------
@@ -256,7 +256,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	—For latest versions and more visit:-
 	https://www.nexusmods.com/nomanssky/mods/1096
 	]],
-	["NMS_VERSION"]   = "4.00",
+	["NMS_VERSION"]   = "4.05",
 	["MODIFICATIONS"] =
 	{
 		{
@@ -494,6 +494,7 @@ if ALL_PARTS_ON_FREIGHTER then
 			{
 				["SPECIAL_KEY_WORDS"] = {"ID", GEOBAYS_ON_FREIGHTER_ID_TABLE[i]},
 				["PRECEDING_KEY_WORDS"] = {"Groups"},
+				["LINE_OFFSET"]= "+0",
 				["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">
@@ -818,6 +819,7 @@ for i = 1,#PLANTERS_ON_FREIGHTER_ID_TABLE do
 	{
 		["SPECIAL_KEY_WORDS"] = {"ID", PLANTERS_ON_FREIGHTER_ID_TABLE[i]},
 		["PRECEDING_KEY_WORDS"] = {"Groups"},
+		["LINE_OFFSET"]= "+0",
 		["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">
@@ -847,6 +849,7 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
 	{
 		["SPECIAL_KEY_WORDS"] = {"ID", MISC_ON_FREIGHTER_ID_TABLE[i]},
 		["PRECEDING_KEY_WORDS"] = {"Groups"},
+		["LINE_OFFSET"]= "+0",
 		["ADD"] =
 [[
         <Property value="GcBaseBuildingEntryGroup.xml">

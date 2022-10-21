@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "VR-HAND-COMMANDS.pak", 
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "3.99",
+["NMS_VERSION"]     = "4.05",
 ["MOD_DESCRIPTION"] = "Adds trigger-action hand combos, savegame: left-right-left, teleport to base: right-left-right",
 ["MODIFICATIONS"]   = 
 	{
@@ -697,15 +697,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="StatToTrack" value="GcStatsEnum.xml">
-        <Property name="GcStatEnum" value="None" />
+        <Property name="StatEnum" value="None" />
       </Property>
       <Property name="StartsBuried" value="False" />
       <Property name="MustBeVisibleToInteract" value="False" />
       <Property name="NeedsStorm" value="False" />
       <Property name="Name" value="" />
       <Property name="VRInteractMessage" value="" />
+      <Property name="TerminalHeading" value="" />
       <Property name="TerminalMessage" value="" />
       <Property name="ScanType" value="" />
       <Property name="ScanData" value="" />

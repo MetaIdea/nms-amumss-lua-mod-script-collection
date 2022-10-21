@@ -330,6 +330,7 @@ QUICK_ACTION_MENU =
 	{
 		["TITLE"]  = "Unlock Season 9 Reward",
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\BYTEBEAT\BYTEBEAT.9.DDS",
+		-- ["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.9.DDS",
 		["ANIM"]   = "UnlockS9Reward",
 		["REWARD"] = REWARDS_9		
 	},		
@@ -461,7 +462,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "4.00",
+["NMS_VERSION"]     = "4.05",
 ["MODIFICATIONS"]   = 
 	{
 		{

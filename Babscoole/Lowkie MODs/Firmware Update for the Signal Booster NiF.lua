@@ -1,4 +1,4 @@
-NMSVersion = "4.04"
+NMSVersion = "4.05"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -437,7 +437,7 @@ ALL_PUZZLE_UPDATES = [[      <Property name="Options">
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster"..NMSVersion..".pak",
+  ["MOD_FILENAME"]    = "Firmware Update for the Signal Booster NiF"..NMSVersion..".pak",
   ["MOD_DESCRIPTION"] = "Allows the Signal booster to find crashed ships, factories, multi tools, and portals with no inputs",
   ["MOD_AUTHOR"]      = "Lowkie",
   ["MOD_MAINTENANCE"] = "Babscoole",

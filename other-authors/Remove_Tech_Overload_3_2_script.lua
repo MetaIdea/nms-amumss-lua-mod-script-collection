@@ -12,9 +12,9 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]             = "_Remove_Tech_Overload_3_1.pak", 
+	["MOD_FILENAME"]             = "_Remove_Tech_Overload_3_2.pak", 
 	["MOD_AUTHOR"]               = "chronicallybored",
-	["NMS_VERSION"]              = "4.04",
+	["NMS_VERSION"]              = "4.05",
 	["MOD_DESCRIPTION"]          = "Removes technology overload and enables tech in cargo slots (deactivated for now since it's bugged).",
 	["MODIFICATIONS"]            = 
 
