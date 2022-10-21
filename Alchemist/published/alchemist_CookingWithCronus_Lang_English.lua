@@ -6,7 +6,7 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-04"
+GameVersion = "4-05"
 ModVersion = "1-0-0"
 
 -- =========
@@ -209,7 +209,7 @@ LANGUAGE_TABLE = {
   ["D_ALCF_WS_TUT3_OPT_A"] = "Prepare offering for transport", --
   ["D_CHEFHI_HI_LANG"] = "Traveler. Have we met before?", --
   ["D_CHEFHI_HI_RES_B"] = "Hmm... Nada and Polo sometimes change things. Granted, it's usually for the better.\nAnd recently, an alchemist has been bringing in shipments of <FLORA>NipNip Buds<>.\nWhat a fascinating plant... Does wonders for my mood, terrible on my memory.\nOh, right! Greetings and salutations Traveler!", --
-  ["D_CHEFHI_INTRO_LANG"] = "I am the iteration known as Cronus. Trader in rare cuisine, professional food critic, and amaetuer whalesong tracker.", --
+  ["D_CHEFHI_INTRO_LANG"] = "I am the iteration known as Cronus. Trader in rare cuisine, professional food critic, and amateur whalesong tracker.", --
   ["D_CHEFHI_INTRO_OPT_A"] = "About rare cuisine...", --
   ["D_CHEFHI_INTRO_OPT_B"] = "About food critiques...", --
   ["D_CHEFHI_INTRO_OPT_C"] = "About whalesong...", --

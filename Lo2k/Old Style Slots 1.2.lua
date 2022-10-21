@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Cursor 4.4.pak", 
+["MOD_FILENAME"] 			= "Old Style Slots 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.04",
-["MOD_DESCRIPTION"]			= "This mods reduces the size of the main game cursor",
+["NMS_VERSION"]				= "4.05",
+["MOD_DESCRIPTION"]			= "This mods restores the old style slots",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -17,8 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FrontendCursorSize", "14"},
-								{"FrontendCursorWidth",	"7"}
+								{"ReplaceItemBarWithNumbers", "False"},
 							}
 						}
 					}

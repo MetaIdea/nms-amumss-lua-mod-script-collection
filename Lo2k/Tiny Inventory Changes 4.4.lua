@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Tiny Inventory Changes 4.2.pak", 
+["MOD_FILENAME"] 			= "Tiny Inventory Changes 4.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.97",
+["NMS_VERSION"]				= "4.05",
 ["MOD_DESCRIPTION"]			= "This mods changes orientation and lighting of inventory 3D models",
 ["MODIFICATIONS"] 			= 
 	{
@@ -27,8 +27,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Distance",	"2.4"},
-								{"x",	"-0.4"},
+								{"Distance",	"2.8"},
+								{"x",	"-0.5"},
 								{"y",	"0.02"},
 								{"LightPitch",	"30"},
 								{"LightRotate",	"-30"},
@@ -55,11 +55,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",	"-0.28"},
-								{"Pitch",	"5"},
+								{"Distance", "27.0"},    -- value="1.2"
+								{"x",	"-5.8"},  -- +move object on the left
+								{"y",	"2.8"},   -- original 0.075
+								{"z",	"0"}, -- original 0 +move away from camera
+								{"Pitch",	"15"},
 								{"Rotate",	"-43"},
 								{"LightPitch",	"30"},
 								{"LightRotate",	"290"},
+								{"FocusType", "DiscoveryView"},  --ResourceBoundingHeight / ResourceBounds / DiscoveryView  --original "NodeBoundingBox"
+
 							}	
 						},
 						{
@@ -78,8 +83,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] 	= "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"x",	"-0.05"},
-								{"z",	"-0.05"},
+								{"x",	"-0.05"},  -- original -0.1  	+ move right
+								{"y",	"0.0"},    -- original 0.06  	+ move camera up
+								{"z",	"-0.05"},  -- original 0		+ move forward
 								{"Pitch",	"15"},
 								{"LightPitch",	"35"},
 								{"LightRotate",	"251"}

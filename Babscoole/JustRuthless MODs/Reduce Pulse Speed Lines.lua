@@ -43,7 +43,7 @@ FileName    = "Reduce Pulse Speed Lines.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
-NMS_Version = "4.00"
+NMS_Version = "4.05"
 
 -- File Sources --
 FileSource1 = "MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES.SPEEDLINE.MBIN"
