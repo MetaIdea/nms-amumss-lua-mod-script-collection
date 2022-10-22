@@ -1,55 +1,65 @@
 ShipInfo = 	{
-				{"GV",					"Golden Vector",			"1"},
+				{"GOLDENVECTOR",		"Golden Vector",			"1"},
 				{"SERENITY",			"Serenity",					"3"},
 				{"RAZORCREST",			"Razor Crest",				"6"},
 				{"XWINGDARK",			"X-Wing Dark",				"51"},
 				{"XWINGWHITE",			"X-Wing White",				"99"},
 				{"JEDIINTERCEPTOR",		"Jedi Interceptor Yellow",	"59"},
 				{"JEDIINTY",			"Jedi Interceptor Green",	"40"},
-				{"JEDIINTYRED",			"Jedi Interceptor Red",		"36"},
+				{"JEDIINTYRED",			"Jedi Interceptor Red",		"105"},
 				{"TIES",				"TIE Silencer",				"2"},
 				{"TIEP",				"TIE Phantom",				"21"},
-				{"TIED",				"TIE Defender",				"94"},
+				{"TIED",				"TIE Defender",				"78"},
 				{"TIEA",				"TIE Advanced",				"25"},
 				{"TIEI",				"TIE Interceptor",			"30"},
-				{"TIEIRED",				"TIE Interceptor Red",		"105"},
-				{"TIEHU",				"TIE Hunter",				"75"},
+				{"TIEIRED",				"TIE Interceptor Red",		"37"},
+				{"TIEHU",				"TIE Hunter",				"92"},
 				{"DROIDTRIFIGHTER",		"Droid Tri-Fighter",		"13"},
-				{"IMPERIALSHUTTLE",		"Imperial Shuttle",			"31"},
+				{"IMPERIALSHUTTLE",		"Imperial Shuttle",			"48"},
 				{"SWFURY",				"Sith Fury Interceptor",	"80"},
-				{"FIRESPRAY",			"Slave I Firespray",		"55"},
-				{"FIRESPRAYUA",			"Slave I Firespray UA",		"95"},
+				{"SLAVE",				"Slave I Firespray",		"72"},
+				{"SLAVEUA",				"Slave I Firespray UA",		"95"},
 				{"YWINGB",				"Y-Wing BTL-B",				"100"},
 				{"X70B",				"X-70B Phantom",			"110"},
-				{"EWING",				"E-Wing",					"65"},
+				{"EWING",				"E-Wing",					"86"},
 				{"VWING",				"V-Wing",					"104"},
-				{"ENTERPRISE",			"Enterprise D",				"14"},
-				{"DEFIANT",				"USS Defiant",				"20"},
-				{"DANUBE",				"Danube Runabout",			"8"},
+				{"AWING",				"A-Wing",					"22"},
+				{"ENTD",				"Enterprise NCC1701-D",		"14"},
+				{"DEFIANT",				"USS Defiant",				"19"},
+				{"STDANUBE",			"Danube Runabout",			"8"},
 				{"FEDERATIONATTACK",	"Federation Attack Fighter","41"},
+				{"BIRDOFPREY",			"Klingon Bird of Prey",		"76"},
 				{"BATWING",				"Batwing",					"4"},
 				{"MILANO",				"Milano",					"64"},
 				{"MILANOMARVEL",		"Captain Marvel Milano",	"61"},
-				{"VIPERIIB",			"Viper Mk II",				"46"},
+				{"VIPERIIB",			"Viper Mk II",				"113"},
+				{"CYLON",				"Cylon Raider",				"79"},
 				{"B5STARFURY",			"Star Fury",				"109"},
 				{"B5SHADOW",			"Shadow",					"60"},
+				{"WHITESTAR",			"White Star",				"82"},
 				{"SWORDFISH",			"Swordfish II",				"16"},
 				{"GUNDAMSAZABI",		"Gundam Sazabi",			"74"},
-				{"GUNDAMSAZABIBLUE",	"Gundam Sazabi Blue",		"79"},
+				{"GUNDAMSAZABIBLUE",	"Gundam Sazabi Blue",		"102"},
 				{"GUNDAMSAZABIPINK",	"Gundam Sazabi Pink",		"85"},
-				{"LEGOSPACEDARTI",		"LEGO Space Dart I",		"26"},
-				{"LEGOSPACESCOOTER",	"LEGO Space Scooter",		"87"},
+				{"LEGOSPACEDARTI",		"LEGO Space Dart I",		"43"},
+				{"LEGOSPACESCOOTER",	"LEGO Space Scooter",		"70"},
 				{"PHANTOM",				"Phantom",					"50"},
 				{"PELICAN",				"Pelican D77-TC",			"84"},
+				{"PELICANWHITE",		"Pelican D77-TC White",		"63"},
 				{"TARDIS",				"T.A.R.D.I.S.",				"69"},
 				{"HOCOTATE",			"Hocotate Rocket",			"115"},
 				{"COSMOZERO",			"Yamato Cosmo Zero",		"45"},
 				{"COSMOTIGERII",		"Yamato Cosmo Tiger II",	"90"},
 				{"TRIMAX",				"Max",						"35"},
 				{"METROID",				"Metroid Gunship",			"114"},
-				{"STARVIPER",			"Star Viper",				"56"},
-				{"BLADE",				"Blade Starship",			"89"},
+				{"ARWING",				"Star Fox Arwing",			"94"},
+				{"STARVIPER",			"Star Viper",				"73"},
+				{"BLADE",				"Blade Starship",			"106"},
 				{"SR71",				"SR71 Blackbird",			"71"},
+				{"MALOVSKY",			"Malovsky Gunship",			"91"},
+				{"MOLNIA",				"Molnia Racer",				"29"},
+				{"PARADISO",			"Avem de Paradiso",			"38"},
+				{"UNITRON",				"Unitron",					"101"},
 				{"POLICE",				"Police",					"5"},
 				{"GASEOUSSENTIENCE",	"Gaseous Sentience",		"7"}, --WEIRDOBJECT5
 				{"DRONE",				"Drone",					"9"},
@@ -87,6 +97,9 @@ for i = 1,#ShipInfo do
 				<Property name="Reward" value="GcRewardSpecificShip.xml">
 				  <Property name="ShipResource" value="GcResourceElement.xml">
 					<Property name="Filename" value="]]..FilePath..[[" />
+					<Property name="ResHandle" value="GcResource.xml">
+					  <Property name="ResourceID" value="0" />
+					</Property>
 					<Property name="Seed" value="GcSeed.xml">
 					  <Property name="Seed" value="]]..ShipInfo[i][3]..[[" />
 					  <Property name="UseSeedValue" value="True" />
@@ -97,7 +110,7 @@ for i = 1,#ShipInfo do
 					</Property>
 				  </Property>
 				  <Property name="ShipLayout" value="GcInventoryLayout.xml">
-					<Property name="Slots" value="10" />
+					<Property name="Slots" value="20" />
 					<Property name="Seed" value="GcSeed.xml">
 					  <Property name="Seed" value="1" />
 					  <Property name="UseSeedValue" value="True" />
@@ -124,7 +137,7 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="SHIPJUMP1" />
+						<Property name="Id" value="SHIPJUMP" />
 						<Property name="Amount" value="200" />
 						<Property name="MaxAmount" value="200" />
 						<Property name="DamageFactor" value="0" />
@@ -181,14 +194,15 @@ for i = 1,#ShipInfo do
 					<Property name="Class" value="GcInventoryClass.xml">
 					  <Property name="InventoryClass" value="C" />
 					</Property>
-					<Property name="SubstanceMaxStorageMultiplier" value="0" />
-					<Property name="ProductMaxStorageMultiplier" value="0" />
+					<Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
+                      <Property name="InventoryStackSizeGroup" value="Default" />
+                    </Property>	   
 					<Property name="BaseStatValues" />
 					<Property name="SpecialSlots" />
 					<Property name="Width" value="0" />
 					<Property name="Height" value="0" />
 					<Property name="IsCool" value="False" />
-					<Property name="Name" value="]]..ShipInfo[i][1]..[[" />
+					<Property name="Name" value="" />
 					<Property name="Version" value="0" />
 				  </Property>
 				  <Property name="ShipType" value="GcSpaceshipClasses.xml">
@@ -215,6 +229,9 @@ for i = 1,#ShipInfo do
 		  <Property name="AnimationName" value="]]..ShipInfo[i][1]..[[" />
 		  <Property name="Icon" value="TkTextureResource.xml">
 			<Property name="Filename" value="TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS" />
+			<Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
 		  </Property>
 		  <Property name="LinkedSpecialID" value="" />
 		  <Property name="NeverShowInMenu" value="False" />
@@ -303,10 +320,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "gShip Custom Summoner C 397a.pak",
+["MOD_FILENAME"] 			= "gShip Custom Summoner C 405a.pak",
 ["MOD_AUTHOR"]				= "Gumsk, based almost entirely on Mjjstral's action LUAs",
 ["MOD_DESCRIPTION"]			= "Adds summoning quick actions for gShip Custom ships",
-["NMS_VERSION"]				= "3.97",
+["NMS_VERSION"]				= "4.05",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -334,7 +351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
+								
 							["ADD"] 				= FinalEmoteEntries
 						}
 					}
@@ -345,7 +362,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["LINE_OFFSET"] 		= "+0",
+								
 							["ADD"] 				= FinalRewardEntries
 						}
 					}

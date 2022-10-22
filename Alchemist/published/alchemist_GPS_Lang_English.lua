@@ -5,8 +5,8 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "4-04"
-ModVersion = "2-2-0"
+GameVersion = "4-05"
+ModVersion = "2-2-1"
 
 -- =========
 -- CONSTANTS
@@ -77,7 +77,7 @@ files.
 
 --]]
 
--- Total keys: 216
+-- Total keys: 219
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_FREI_QRY_CFG"] = "Configure Deep Space Scanning...", --
@@ -199,6 +199,9 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_OC_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Any Infested Biome ~ Prime Variant", --
   ["ALCH_SCAN_PQ_OC_MENU"] = "Prime Infestation", --
   ["ALCH_SCAN_PQ_OC_TITLE"] = "Planet Query ~ Prime Infestation", --
+  ["ALCH_SCAN_PQ_OD_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Wealthy System ~ Lush Biome ~ Overgrown Flora ~ Abundant Fauna ~ Passive Sentinels", --
+  ["ALCH_SCAN_PQ_OD_MENU"] = "Wealthy Lush", --
+  ["ALCH_SCAN_PQ_OD_TITLE"] = "Planet Query ~ Wealthy Lush", --
   ["ALCH_SCAN_PQ_PLANET_OBJ"] = "Travel to Planet", --
   ["ALCH_SCAN_PQ_PLANET_OBJ_TIP"] = "A planet matching the given <SPECIAL>query parameters<> has been identified in the <TRADEABLE>current system<>. Enter the planet's atmosphere to complete the mission.\nHold <IMG>ROLLLEFT<> and <IMG>ROLLRIGHT<> together to engage Pulse Jump.", --
   ["ALCH_SCAN_PQ_PLANET_OBJ_WAIT"] = "<TITLE>Query result located in<> <TRADEABLE>current system<>\nEnter the planet's atmosphere to complete the mission", --
