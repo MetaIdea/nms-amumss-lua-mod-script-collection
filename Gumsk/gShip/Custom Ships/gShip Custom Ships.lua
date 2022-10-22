@@ -63,7 +63,7 @@ ShipInfo = 	{
 				{["NAME"] = "STARVIPER",		["ORDER"] = "56",	["COCKPITX"] = "0",	["COCKPITY"] = "2",		["COCKPITZ"] = "0",		["SCENE"] = "STARVIPER"},
 				{["NAME"] = "BLADE",			["ORDER"] = "33",	["COCKPITX"] = "0",	["COCKPITY"] = "1.8",	["COCKPITZ"] = "0.7",	["SCENE"] = "BLADE"},
 				{["NAME"] = "SR71",				["ORDER"] = "7",	["COCKPITX"] = "0",	["COCKPITY"] = "1.8",	["COCKPITZ"] = "0.7",	["SCENE"] = "SR71"},
-				{["NAME"] = "MALOVSKY",			["ORDER"] = "12",	["COCKPITX"] = "0",	["COCKPITY"] = "1.8",	["COCKPITZ"] = "0.7",	["SCENE"] = "MALOVSKY"},
+				{["NAME"] = "MALOVSKY",			["ORDER"] = "12",	["COCKPITX"] = "0",	["COCKPITY"] = "2.07",	["COCKPITZ"] = "0.95",	["SCENE"] = "MALOVSKY"},
 				{["NAME"] = "MOLNIA",			["ORDER"] = "18",	["COCKPITX"] = "0",	["COCKPITY"] = "1.8",	["COCKPITZ"] = "0.7",	["SCENE"] = "MOLNIA"},
 				{["NAME"] = "PARADISO",			["ORDER"] = "31",	["COCKPITX"] = "0",	["COCKPITY"] = "1.8",	["COCKPITZ"] = "0.7",	["SCENE"] = "PARADISO"},
 				{["NAME"] = "UNITRON",			["ORDER"] = "49",	["COCKPITX"] = "0",	["COCKPITY"] = "1.8",	["COCKPITZ"] = "0.7",	["SCENE"] = "UNITRON"},

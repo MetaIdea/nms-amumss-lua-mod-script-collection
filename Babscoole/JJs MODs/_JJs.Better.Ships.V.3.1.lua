@@ -65,11 +65,11 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "_JJs.Better.Ships.V.2.9.pak",
+["MOD_FILENAME"]    = "_JJs.Better.Ships.V.3.1.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "JJHookah",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.03",
+["NMS_VERSION"]     = "4.05",
 ["MODIFICATIONS"]   = 
 	{
 		{
