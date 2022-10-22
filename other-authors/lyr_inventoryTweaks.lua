@@ -1,38 +1,23 @@
 local batchPakName = "lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Inventory Tweaks 1.0]]
+local modDescription = [[Lyravega's Inventory Tweaks 1.01]]
 local gameVersion = "4.0+"
 
 --[[
-	Below in the 'enabledTweaks' table are toggles for the changes. What they do is commented next to them. Change the value to 'false' to disable the modifications.
+	Below in the 'enabledTweaks' table are modification names and what they do is commented next to them. 
+	Change the values to 'false' (without ''; someModification = false,) to disable the modifications.
 ]]
 
 local enabledTweaks = {
-	smallerItemInHand = true,				-- makes the item in hand smaller
-	restoreItemBars = true,					-- restores the item bars instead of showing X/X where possible
-	swapTechAndCargo = true,				-- swaps the position of tech and cargo inventories
-	hideCargoLabel = true,					-- hides the cargo label (so it will not overlap with freighter tabs)
-	hideTechLabel = true,					-- hides the tech label (so it will be uniform as freighter page doesn't have it)
-	smallerCargoIcons = false,				-- makes the cargo icons smaller (there seems to be a hardcoded (?) limit of 50 active icons so might not be that useful)
+	swapTechAndCargo = true,				-- swaps the position of tech and cargo inventories like in pre-4.0
+	hideCargoLabel = true,					-- hides the cargo label; cargo label gets overlapped with freighter tabs
+	hideTechLabel = true,					-- hides the tech label; freighter inventory doesn't have this label
+	restoreItemBars = true,					-- pre-4.0 item bars are restored for items with X/X display wherever possible
+	smallerLabeledIcons = true,				-- makes the icons for the picked items / items in transfer pop-ups smaller
+	smallerItemAmountFonts = true,			-- slightly decreases the size of fonts for the item amounts
+	smallerCargoIcons = false,				-- makes the cargo icons smaller (disabled by default due to hardcoded limit of max 50 icons)
 }
 
---[[
-	Below in the 'tweaks' table are the changes. If you'd like to change them directly, change the 'altered' values and leave 'default' ones as they are.
-	Fields with same 'altered' and 'default' values won't be processed by AMUMSS. The 'default' values (generated pre-4.0) serve as more of a reference.
-	Not every field value is changed. Some are only exposed for testing purposes and to toy around with, usually belonging to the same sections.
-]]
-
 local tweaks = {
-	misc = {
-		["GCUIGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					BigPicking = {default = true, altered = not enabledTweaks.smallerItemInHand},
-					BigPickingUsesNumbers = {default = true, altered = not enabledTweaks.restoreItemBars},
-					ReplaceItemBarWithNumbers = {default = true, altered = not enabledTweaks.restoreItemBars},
-				}
-			}
-		}
-	},
 	swapTechAndCargo = {
 		["UI/INVENTORYPAGE.MBIN"] = {
 			{
@@ -152,8 +137,49 @@ local tweaks = {
 					A = 0
 				},
 				replaceAll = true
+			}
+		}
+	},
+	restoreItemBars = {
+		["GCUIGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					BigPickingUsesNumbers = {default = true, altered = false},
+					ReplaceItemBarWithNumbers = {default = true, altered = false}
+				}
+			}
+		}
+	},
+	smallerLabeledIcons = {
+		["GCUIGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					BigPicking = {default = true, altered = false}
+				}
+			}
+		}
+	},
+	smallerItemAmountFonts = {
+		{
+			mbinPaths = {
+				"UI/COMPONENTS/INVENTORY/SQU_SLOT_ITEM.MBIN",
+				"UI/SLOTS/SLOT_ITEM.MBIN"
 			},
-		
+			{
+				specialKeyWords = {
+					{"ID", "TEXT_LONG"},
+					{"ID", "TEXT"},
+					{"ID", "TEXTLOW"},
+					{"ID", "TEXTLOW_LONG"},
+				},
+				selectLevel = 1,
+				fields = {
+					FontHeight = 0.8,
+					Height = 0.8
+				},
+				multiply = true,
+				replaceAll = true
+			}
 		}
 	},
 	smallerCargoIcons = {
@@ -180,107 +206,67 @@ local tweaks = {
 	}
 }
 
-local combineTweaks = function(tweakTables)
-	local combinedTweaks = {}
+local processTweaksTable
+processTweaksTable = function(tweakTables)
+	local modificationTables = {}
 
-	for tweakName, tweakTable in pairs(tweakTables) do
+	for tweakName, tweakTable in next, tweakTables do
 		if enabledTweaks[tweakName] or tweakName == "misc" then
 			for mbinPath, changeTables in pairs(tweakTable) do
-				if string.find(mbinPath, ".EXML", 1, true) then
-					mbinPath = string.gsub(mbinPath, ".EXML", ".MBIN")
-				elseif not string.find(mbinPath, ".MBIN", 1, true) then
-					mbinPath = mbinPath..".MBIN"
-				end
-				combinedTweaks[mbinPath] = combinedTweaks[mbinPath] or {}
+				local mbinChangeTable = {
+					MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
+					EXML_CHANGE_TABLE = {}
+				}; local exmlChangeTable = mbinChangeTable.EXML_CHANGE_TABLE
 
-				for _, changeTable in pairs(changeTables) do
-					if changeTable.forEachSpecialKeyWords then
-						local forEachSpecialKeyWords = changeTable.forEachSpecialKeyWords
-						changeTable.forEachSpecialKeyWords = nil
+				for _, changeTable in ipairs(changeTables) do
+					local convertedChangeTable = {
+						SECTION_UP = changeTable.selectLevel or nil,
+						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
+						SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
+						FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
+						REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
+						MATH_OPERATION = changeTable.multiply and "*" or nil,
+						REMOVE = changeTable.removeSection and "SECTION" or nil,
+						ADD_OPTION = changeTable.addSection and "ADDafterSECTION" or nil,
+						ADD = changeTable.addSection and changeTable.section or nil,
+						SECTION_SAVE_TO = changeTable.copySection or nil,
+						SECTION_EDIT = changeTable.editSection or nil,
+						SECTION_ADD_NAMED = changeTable.pasteSection or nil
+					}
 
-						for i, specialKeyWordPair in pairs(forEachSpecialKeyWords) do
-							local newChangeTable = {}
+					if changeTable.addSection or changeTable.removeSection or changeTable.copySection or changeTable.pasteSection then
+						table.insert(exmlChangeTable, convertedChangeTable)
+					elseif changeTable.fields then
+						local valueChangeTable = {}
 
-							for k,v in pairs(changeTable) do
-								newChangeTable[k] = v
+						for fieldName, fieldValue in pairs(changeTable.fields) do
+							if type(fieldValue) == "table" then
+								if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
+									table.insert(valueChangeTable, {fieldName, fieldValue.altered})
+								elseif fieldValue.multiplier and fieldValue.multiplier ~= 1 then
+									table.insert(valueChangeTable, {fieldName, changeTable.multiply and fieldValue.multiplier or fieldValue.default * fieldValue.multiplier})
+								end
+							else
+								table.insert(valueChangeTable, {fieldName, fieldValue})
 							end
-
-							newChangeTable.specialKeyWords = specialKeyWordPair
-
-							table.insert(combinedTweaks[mbinPath], newChangeTable)
 						end
-					else
-						table.insert(combinedTweaks[mbinPath], changeTable)
+
+						if #valueChangeTable > 0 then
+							convertedChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
+							table.insert(exmlChangeTable, convertedChangeTable)
+						end
 					end
+				end
+
+				if #exmlChangeTable > 0 or type(changeTables.mbinPaths)=="table" then
+				    local modificationTable = {MBIN_CHANGE_TABLE = {mbinChangeTable}}
+					table.insert(modificationTables, modificationTable)
 				end
 			end
 		end
 	end
 
-	return combinedTweaks
-end
-
-local processTweaksTable = function(tweakTables)
-	local masterChangeTable = {}
-	local combinedTweaks = combineTweaks(tweakTables)
-
-	for mbinPath, changeTables in pairs(combinedTweaks) do
-		local mbinChangeTable = {
-			MBIN_FILE_SOURCE = mbinPath,
-			EXML_CHANGE_TABLE = {}
-		}
-		local exmlChangeTable = mbinChangeTable.EXML_CHANGE_TABLE
-
-		for _, changeTable in pairs(changeTables) do
-			local convertedChangeTable = {
-				SECTION_UP = changeTable.selectLevel or nil,
-				PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
-				SPECIAL_KEY_WORDS = changeTable.specialKeyWords or nil,
-				REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
-				REMOVE = changeTable.removeSection and "SECTION" or nil,
-				MATH_OPERATION = changeTable.multiply and "*" or nil,
-			}
-
-			if changeTable.removeSection then
-				table.insert(exmlChangeTable, changeTable.priority or #exmlChangeTable+1, convertedChangeTable)
-			elseif changeTable.addSection then
-				convertedChangeTable.ADD_OPTION = "ADDafterSECTION"
-				convertedChangeTable.ADD = changeTable.section
-				table.insert(exmlChangeTable, changeTable.priority or #exmlChangeTable+1, convertedChangeTable)
-			else
-				local valueChangeTable = {}
-
-				for fieldName, fieldValue in pairs(changeTable.fields) do
-					if type(fieldValue) == "table" then
-						if changeTable.multiply then
-							if fieldValue.multiplier then
-								table.insert(valueChangeTable, {fieldName, fieldValue.multiplier})
-							end
-						else
-							if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
-								table.insert(valueChangeTable, {fieldName, fieldValue.altered})
-							elseif fieldValue.multiplier then
-								table.insert(valueChangeTable, {fieldName, fieldValue.default * fieldValue.multiplier})
-							end
-						end
-					else
-						table.insert(valueChangeTable, {fieldName, fieldValue})
-					end
-				end
-
-				if #valueChangeTable > 0 then
-					convertedChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
-					table.insert(exmlChangeTable, convertedChangeTable)
-				end
-			end
-		end
-
-		if #exmlChangeTable > 0 then
-			table.insert(masterChangeTable, mbinChangeTable)
-		end
-	end
-
-	return masterChangeTable
+	return modificationTables
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -291,5 +277,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	MODIFICATIONS =	{{MBIN_CHANGE_TABLE = processTweaksTable(tweaks)}}
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS",
+	MODIFICATIONS =	processTweaksTable(tweaks)
 }

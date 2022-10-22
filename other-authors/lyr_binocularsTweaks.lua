@@ -1,39 +1,22 @@
 local batchPakName = "lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Binoculars Tweaks 1.0]]
+local modDescription = [[Lyravega's Binoculars Tweaks 1.1]]
 local gameVersion = "4.0+"
 
 --[[
-	Below in the 'enabledTweaks' table are toggles for the changes. What they do is commented next to them. Change the value to 'false' to disable the modifications.
+	Below in the 'enabledTweaks' table are modification names and what they do is commented next to them. 
+	Change the values to 'false' (without ''; someModification = false,) to disable the modifications.
 ]]
 
 local enabledTweaks = {
-	reduceAnalysisTime = true,				-- reduces analysis times down to 1.5s
-	disableFlash = true,					-- disables screen flash effect on binocs use
-	removeFilters = true,					-- removes binocs filters, or rather set them to default filter
-	equalizeFieldOfView = true,				-- equalizes the slight FoV difference between binocs and regular first person view
-	improveAnalysisEffects = true,			-- improves the known and unknown target colours, and tones building scan effects down
+	noBinocsFlash = true,					-- using binoculars no longer cause a screen flash
+	normalBinocsFilters = true,				-- a normal filter is applied on all analysis modes instead of coloured ones
+	equalizedBinocsFoV = true,				-- removes the slight FoV difference between the initial binocs zoom level and the first person view
+	betterScanlines = true,					-- the known and unknown target colours are stressed while the building scan effects are toned down
+	fasterAnalysis = true,					-- analysis times are reduced down to a second
 }
 
---[[
-	Below in the 'tweaks' table are the changes. If you'd like to change them directly, change the 'altered' values and leave 'default' ones as they are.
-	Fields with same 'altered' and 'default' values won't be processed by AMUMSS. The 'default' values (generated pre-4.0) serve as more of a reference.
-	Not every field value is changed. Some are only exposed for testing purposes and to toy around with, usually belonging to the same sections.
-]]
-
 local tweaks = {
-	reduceAnalysisTime = {
-		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					BinocTimeBeforeScan = {default = 0.5, altered = 0.25},
-					BinocMinScanTime = {default = 3.9, altered = 1.5},
-					BinocScanTime = {default = 3.9, altered = 1.5},
-					BinocCreatureScanTime = {default = 3.2, altered = 1.5}
-				}
-			}
-		}
-	},
-	disableFlash = {
+	noBinocsFlash = {
 		["GCCAMERAGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -43,10 +26,10 @@ local tweaks = {
 			}
 		},
 	},
-	removeFilters = {
+	normalBinocsFilters = {
 		["METADATA/EFFECTS/SCREENFILTERS.MBIN"] = {
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"Binoculars", "GcScreenFilterData.xml"},
 					{"Surveying", "GcScreenFilterData.xml"},
 					{"MissionSurvey", "GcScreenFilterData.xml"},
@@ -57,7 +40,7 @@ local tweaks = {
 			}
 		}
 	},
-	equalizeFieldOfView = {
+	equalizedBinocsFoV = {
 		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
 				specialKeyWords = {"ZoomType","Far"},
@@ -68,7 +51,7 @@ local tweaks = {
 			}
 		}
 	},
-	improveAnalysisEffects = {
+	betterScanlines = {
 		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
 				precedingKeyWords = {"BuildingScanEffect"},
@@ -98,110 +81,82 @@ local tweaks = {
 				}
 			}
 		}
+	},
+	fasterAnalysis = {
+		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					BinocTimeBeforeScan = {default = 0.5, altered = 0.25},
+					BinocMinScanTime = {default = 2.2, altered = 1.0},
+					BinocScanTime = {default = 2.2, altered = 1.0},
+					BinocCreatureScanTime = {default = 1.9, altered = 1.0}
+				}
+			}
+		}
 	}
 }
 
-local combineTweaks = function(tweakTables)
-	local combinedTweaks = {}
+local processTweaksTable
+processTweaksTable = function(tweakTables)
+	local modificationTables = {}
 
-	for tweakName, tweakTable in pairs(tweakTables) do
+	for tweakName, tweakTable in next, tweakTables do
 		if enabledTweaks[tweakName] or tweakName == "misc" then
 			for mbinPath, changeTables in pairs(tweakTable) do
-				if string.find(mbinPath, ".EXML", 1, true) then
-					mbinPath = string.gsub(mbinPath, ".EXML", ".MBIN")
-				elseif not string.find(mbinPath, ".MBIN", 1, true) then
-					mbinPath = mbinPath..".MBIN"
-				end
-				combinedTweaks[mbinPath] = combinedTweaks[mbinPath] or {}
+				local mbinChangeTable = {
+					MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
+					EXML_CHANGE_TABLE = {}
+				}; local exmlChangeTable = mbinChangeTable.EXML_CHANGE_TABLE
 
-				for _, changeTable in pairs(changeTables) do
-					if changeTable.forEachSpecialKeyWords then
-						local forEachSpecialKeyWords = changeTable.forEachSpecialKeyWords
-						changeTable.forEachSpecialKeyWords = nil
+				for _, changeTable in ipairs(changeTables) do
+					local convertedChangeTable = {
+						SECTION_UP = changeTable.selectLevel or nil,
+						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
+						SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
+						FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
+						REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
+						MATH_OPERATION = changeTable.multiply and "*" or nil,
+						REMOVE = changeTable.removeSection and "SECTION" or nil,
+						ADD_OPTION = changeTable.addSection and "ADDafterSECTION" or nil,
+						ADD = changeTable.addSection and changeTable.section or nil,
+						SECTION_SAVE_TO = changeTable.copySection or nil,
+						SECTION_EDIT = changeTable.editSection or nil,
+						SECTION_ADD_NAMED = changeTable.pasteSection or nil
+					}
 
-						for i, specialKeyWordPair in pairs(forEachSpecialKeyWords) do
-							local newChangeTable = {}
+					if changeTable.addSection or changeTable.removeSection or changeTable.copySection or changeTable.pasteSection then
+						table.insert(exmlChangeTable, convertedChangeTable)
+					elseif changeTable.fields then
+						local valueChangeTable = {}
 
-							for k,v in pairs(changeTable) do
-								newChangeTable[k] = v
+						for fieldName, fieldValue in pairs(changeTable.fields) do
+							if type(fieldValue) == "table" then
+								if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
+									table.insert(valueChangeTable, {fieldName, fieldValue.altered})
+								elseif fieldValue.multiplier and fieldValue.multiplier ~= 1 then
+									table.insert(valueChangeTable, {fieldName, changeTable.multiply and fieldValue.multiplier or fieldValue.default * fieldValue.multiplier})
+								end
+							else
+								table.insert(valueChangeTable, {fieldName, fieldValue})
 							end
-
-							newChangeTable.specialKeyWords = specialKeyWordPair
-
-							table.insert(combinedTweaks[mbinPath], newChangeTable)
 						end
-					else
-						table.insert(combinedTweaks[mbinPath], changeTable)
+
+						if #valueChangeTable > 0 then
+							convertedChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
+							table.insert(exmlChangeTable, convertedChangeTable)
+						end
 					end
+				end
+
+				if #exmlChangeTable > 0 or type(changeTables.mbinPaths)=="table" then
+				    local modificationTable = {MBIN_CHANGE_TABLE = {mbinChangeTable}}
+					table.insert(modificationTables, modificationTable)
 				end
 			end
 		end
 	end
 
-	return combinedTweaks
-end
-
-local processTweaksTable = function(tweakTables)
-	local masterChangeTable = {}
-	local combinedTweaks = combineTweaks(tweakTables)
-
-	for mbinPath, changeTables in pairs(combinedTweaks) do
-		local mbinChangeTable = {
-			MBIN_FILE_SOURCE = mbinPath,
-			EXML_CHANGE_TABLE = {}
-		}
-		local exmlChangeTable = mbinChangeTable.EXML_CHANGE_TABLE
-
-		for _, changeTable in pairs(changeTables) do
-			local convertedChangeTable = {
-				SECTION_UP = changeTable.selectLevel or nil,
-				PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
-				SPECIAL_KEY_WORDS = changeTable.specialKeyWords or nil,
-				REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
-				REMOVE = changeTable.removeSection and "SECTION" or nil,
-				MATH_OPERATION = changeTable.multiply and "*" or nil,
-			}
-
-			if changeTable.removeSection then
-				table.insert(exmlChangeTable, changeTable.priority or #exmlChangeTable+1, convertedChangeTable)
-			elseif changeTable.addSection then
-				convertedChangeTable.ADD_OPTION = "ADDafterSECTION"
-				convertedChangeTable.ADD = changeTable.section
-				table.insert(exmlChangeTable, changeTable.priority or #exmlChangeTable+1, convertedChangeTable)
-			else
-				local valueChangeTable = {}
-
-				for fieldName, fieldValue in pairs(changeTable.fields) do
-					if type(fieldValue) == "table" then
-						if changeTable.multiply then
-							if fieldValue.multiplier then
-								table.insert(valueChangeTable, {fieldName, fieldValue.multiplier})
-							end
-						else
-							if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
-								table.insert(valueChangeTable, {fieldName, fieldValue.altered})
-							elseif fieldValue.multiplier then
-								table.insert(valueChangeTable, {fieldName, fieldValue.default * fieldValue.multiplier})
-							end
-						end
-					else
-						table.insert(valueChangeTable, {fieldName, fieldValue})
-					end
-				end
-
-				if #valueChangeTable > 0 then
-					convertedChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
-					table.insert(exmlChangeTable, convertedChangeTable)
-				end
-			end
-		end
-
-		if #exmlChangeTable > 0 then
-			table.insert(masterChangeTable, mbinChangeTable)
-		end
-	end
-
-	return masterChangeTable
+	return modificationTables
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -212,5 +167,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	MODIFICATIONS =	{{MBIN_CHANGE_TABLE = processTweaksTable(tweaks)}}
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS",
+	MODIFICATIONS =	processTweaksTable(tweaks)
 }

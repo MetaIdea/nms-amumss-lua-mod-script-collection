@@ -1,37 +1,33 @@
 local batchPakName = "lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Ship Tweaks 1.0]]
+local modDescription = [[Lyravega's Ship Tweaks 1.1]]
 local gameVersion = "4.0+"
 
 --[[
-	Below in the 'enabledTweaks' table are toggles for the changes. What they do is commented next to them. Change the value to 'false' to disable the modifications.
+	Below in the 'enabledTweaks' table are modification names and what they do is commented next to them. 
+	Change the values to 'false' (without ''; someModification = false,) to disable the modifications.
 ]]
 
 local enabledTweaks = {
-	increaseLootRange = true,				-- massively increases the range loot is collected
-	improveShipScanner = true,				-- halves the scanner cooldown, boosts max icon range, tries to force results
-	superShipScanner = true,				-- yields lots of results that are normally not available to ship scanners
-	hideAsteroidsFromScan = true,			-- hides rich asteroids from scanner
-	allowHover = true,						-- allows hovering in atmosphere (ship still drifts slightly forward)
-	improveTeleporter = true,				-- increases the teleporter upgrade range (also a new customizable difficulty setting)
-	lesserRestrictions = 0.5,				-- less space flight restrictions
-	increaseShipSpeeds = 1.25,				-- increases ship speeds
-	reduceMiniWarpFlash = true,				-- reduces the pulse drive flash by a lot
-	increaseMiniWarpSpeed = 2.5,			-- increases the pulse drive speed and makes it shake the ship more
-	improveMiniWarpAttraction = true,		-- slightly reduces the auto-lock angles while charging the pulse drive, removes for other player stuff
+	looterExplorer = true,					-- ship loot collection distance is massively increased
+	improvedShipScannerPulse = true,		-- halves the ship scanner pulse cooldown, boosts max icon range, displays more results
+	superShipScannerPulse = true,			-- yields lots of results that are normally not available to ship scanners, dependant on 'improvedShipScannerPulse'
+	noAsteroidsOnScanner = true,			-- hides rich asteroids from ship scanner pulse
+	distantItemTeleporter = true,			-- increases the ship teleporter upgrade range
+	shipSpeedMult = 1.25,					-- ship top speeds in all conditions are multiplied by the given value
+	spaceDustCleaner = true,				-- reduces the amount and the visibility of the particle effects during boosting / using pulse drive
+	flightRestrictionMult = 0.25,			-- some flight restrictions are eased by the given multiplier value for a more pleasant joyride
+	shipAtmosphereHover = true,				-- allows ship hovering in the atmospheres
+	pulseDriveSpeedMult = 2.5,				-- pulse drive top speed is multiplied by the given value, it shakes the ship more and cools down faster
+	reducePulseDriveFlash = true,			-- the initial screen flash caused by the activation of pulse drive is toned down
+	preciseNavigation = true,				-- the auto-locking feature of the pulse drive now have more strict angles and ignores other player stuff
 }
 
---[[
-	Below in the 'tweaks' table are the changes. If you'd like to change them directly, change the 'altered' values and leave 'default' ones as they are.
-	Fields with same 'altered' and 'default' values won't be processed by AMUMSS. The 'default' values (generated pre-4.0) serve as more of a reference.
-	Not every field value is changed. Some are only exposed for testing purposes and to toy around with, usually belonging to the same sections.
-]]
-
 local tweaks = {
-	increaseLootRange = {
+	looterExplorer = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					LootAttractDistance = {default = 120, altered = 500},
+					LootAttractDistance = {default = 120, altered = 1000},
 					LootAttractTime = {default = 0.2, altered = 1.0},
 					LootDampForce = {default = 0.5, altered = 0.5},
 					LootCollectDistance = {default = 20, altered = 100}
@@ -39,13 +35,13 @@ local tweaks = {
 			}
 		}
 	},
-	improveShipScanner = {
+	improvedShipScannerPulse = {
 		["GCBUILDINGGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					MaxIconRange = {default = 1200, altered = 10000},
-					MinShipScanBuildings = {default = 0, altered = enabledTweaks.superShipScanner and 8 or 4},
-					MaxShipScanBuildings = {default = 2, altered = enabledTweaks.superShipScanner and 16 or 8},
+					MaxIconRange = {default = 1200, altered = enabledTweaks.superShipScannerPulse and 100000 or 20000},
+					MinShipScanBuildings = {default = 0, altered = enabledTweaks.superShipScannerPulse and 6 or 4},
+					MaxShipScanBuildings = {default = 2, altered = enabledTweaks.superShipScannerPulse and 30 or 20}
 				}
 			}
 		},
@@ -53,16 +49,16 @@ local tweaks = {
 			{
 				precedingKeyWords = {"ShipScan"},
 				fields = {
-					ScanType = {default = "Ship", altered = enabledTweaks.superShipScanner and "DebugPlanet" or "Ship"}, -- change this to 'DebugPlanet' to see something magical
-					PulseRange = {default = 10000, altered = 10000},
-					PulseTime = {default = 3, altered = 3},
+					ScanType = {default = "Ship", altered = enabledTweaks.superShipScannerPulse and "DebugPlanet" or "Ship"},
+					PulseRange = {default = 10000, altered = enabledTweaks.superShipScannerPulse and 100000 or 20000},
+					PulseTime = {default = 3, altered = 5},
 					PlayAudioOnMarkers = {default = true, altered = true},
 					ChargeTime = {default = 10, altered = 5}
 				}
 			}
 		}
 	},
-	hideAsteroidsFromScan = {
+	noAsteroidsOnScanner = {
 		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -73,7 +69,74 @@ local tweaks = {
 			}
 		}
 	},
-	allowHover = {
+	distantItemTeleporter = {
+		["METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"] = {
+			{
+				specialKeyWords = {"ID", "SHIP_TELEPORT"},
+				fields = {
+					Bonus = {default = 100, altered = 500}
+				}
+			}
+		}
+	},
+	shipSpeedMult = {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				specialKeyWords = {
+					{"SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
+					{"PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
+					{"CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+					{"AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"}
+				},
+				fields = {
+					MaxSpeed = enabledTweaks.shipSpeedMult,
+					BoostMaxSpeed = enabledTweaks.shipSpeedMult
+				},
+				multiply = true,
+				replaceAll = true
+			}
+		}
+	},
+	spaceDustCleaner = {
+		{
+			mbinPaths = {
+				"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES.SPEEDLINE.MBIN",
+				"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES2.SPEEDLINE.MBIN",
+				"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES3.SPEEDLINE.MBIN",
+				"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES4.SPEEDLINE.MBIN",
+				"MODELS/EFFECTS/SPEEDLINES/SPACE.SPEEDLINE.MBIN",
+				"MODELS/EFFECTS/SPEEDLINES/SPACE2.SPEEDLINE.MBIN",
+				"MODELS/EFFECTS/SPEEDLINES/SPACEBIG.SPEEDLINE.MBIN"
+			},
+			{
+				fields = {
+					NumberOfParticles = 0.10,
+					Alpha = 0.35,
+					Lifetime = 0.5,
+					FadeTime = 0.5
+				},
+				multiply = true
+			}
+		}
+	},
+	flightRestrictionMult = {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					NoBoostStationDistance = {default = 2000, multiplier = enabledTweaks.flightRestrictionMult},
+					NoBoostAnomalyDistance = {default = 3000, multiplier = enabledTweaks.flightRestrictionMult},
+					NoBoostSpaceAnomalyDistance = {default = 700, multiplier = enabledTweaks.flightRestrictionMult},
+					NoBoostFreighterDistance = {default = 800, multiplier = enabledTweaks.flightRestrictionMult},
+					NoBoostShipDistance = {default = 2000, multiplier = enabledTweaks.flightRestrictionMult},
+					MiniWarpMinPlanetDistance = {default = 2500, multiplier = enabledTweaks.flightRestrictionMult},
+					MiniWarpPlanetRadius = {default = 500, multiplier = enabledTweaks.flightRestrictionMult},
+					MiniWarpStationRadius = {default = 700, multiplier = enabledTweaks.flightRestrictionMult}
+				},
+				multiply = true
+			}
+		}
+	},
+	shipAtmosphereHover = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				precedingKeyWords = {"PlanetEngine"},
@@ -84,76 +147,32 @@ local tweaks = {
 			}
 		}
 	},
-	improveTeleporter = {
-		["METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"] = {
-			{
-				specialKeyWords = {"ID", "SHIP_TELEPORT"},
-				fields = {
-					Bonus = {default = 100, altered = 500}
-				}
-			}
-		}
-	},
-	lesserRestrictions = {
+	pulseDriveSpeedMult = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					NoBoostStationDistance = {default = 2000, multiplier = enabledTweaks.lesserRestrictions},
-					NoBoostAnomalyDistance = {default = 3000, multiplier = enabledTweaks.lesserRestrictions},
-					NoBoostSpaceAnomalyDistance = {default = 700, multiplier = enabledTweaks.lesserRestrictions},
-					NoBoostFreighterDistance = {default = 800, multiplier = enabledTweaks.lesserRestrictions},
-					NoBoostShipDistance = {default = 2000, multiplier = enabledTweaks.lesserRestrictions},
-					MiniWarpPlanetRadius = {default = 500, multiplier = enabledTweaks.lesserRestrictions},
-					MiniWarpStationRadius = {default = 700, multiplier = enabledTweaks.lesserRestrictions}
-				},
-				multiply = true
-			}
-		}
-	},
-	increaseShipSpeeds = {
-		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
-			{
-				forEachSpecialKeyWords = {
-					{"SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
-					{"PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
-					{"CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
-					{"AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"}
-				},
-				fields = {
-					MaxSpeed = enabledTweaks.increaseShipSpeeds,
-					BoostMaxSpeed = enabledTweaks.increaseShipSpeeds
-				},
-				multiply = true,
-				replaceAll = true
-			}
-		}
-	},
-	reduceMiniWarpFlash = {
-		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					MiniWarpFlashIntensity = {default = 0.9, altered = 0.1},
-					MiniWarpFlashDuration = {default = 0.9, altered = 1},
-					MiniWarpFlashDelay = {default = 0, altered = 0}
-				}
-			}
-		}
-	},
-	increaseMiniWarpSpeed = {
-		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					MiniWarpSpeed = {default = 30000, multiplier = enabledTweaks.increaseMiniWarpSpeed},
+					MiniWarpSpeed = {default = 30000, multiplier = enabledTweaks.pulseDriveSpeedMult},
 					MiniWarpChargeTime = {default = 2, altered = 2},
 					MiniWarpExitTime = {default = 0.5, altered = 0.5},
-					MiniWarpTopSpeedTime = {default = 0.1, multiplier = enabledTweaks.increaseMiniWarpSpeed},
+					MiniWarpTopSpeedTime = {default = 0.1, multiplier = enabledTweaks.pulseDriveSpeedMult},
 					MiniWarpCooldownTime = {default = 2, altered = 1},
 					MiniWarpShakeStrength = {default = 2, altered = 5}
 				}
 			}
 		}
 	},
-	improveMiniWarpAttraction = {
+	reducePulseDriveFlash = {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					MiniWarpFlashIntensity = {default = 0.9, altered = 0.075},
+					MiniWarpFlashDuration = {default = 0.9, altered = 0.75},
+					MiniWarpFlashDelay = {default = 0, altered = 0}
+				}
+			}
+		}
+	},
+	preciseNavigation = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -169,107 +188,67 @@ local tweaks = {
 	}
 }
 
-local combineTweaks = function(tweakTables)
-	local combinedTweaks = {}
+local processTweaksTable
+processTweaksTable = function(tweakTables)
+	local modificationTables = {}
 
-	for tweakName, tweakTable in pairs(tweakTables) do
+	for tweakName, tweakTable in next, tweakTables do
 		if enabledTweaks[tweakName] or tweakName == "misc" then
 			for mbinPath, changeTables in pairs(tweakTable) do
-				if string.find(mbinPath, ".EXML", 1, true) then
-					mbinPath = string.gsub(mbinPath, ".EXML", ".MBIN")
-				elseif not string.find(mbinPath, ".MBIN", 1, true) then
-					mbinPath = mbinPath..".MBIN"
-				end
-				combinedTweaks[mbinPath] = combinedTweaks[mbinPath] or {}
+				local mbinChangeTable = {
+					MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
+					EXML_CHANGE_TABLE = {}
+				}; local exmlChangeTable = mbinChangeTable.EXML_CHANGE_TABLE
 
-				for _, changeTable in pairs(changeTables) do
-					if changeTable.forEachSpecialKeyWords then
-						local forEachSpecialKeyWords = changeTable.forEachSpecialKeyWords
-						changeTable.forEachSpecialKeyWords = nil
+				for _, changeTable in ipairs(changeTables) do
+					local convertedChangeTable = {
+						SECTION_UP = changeTable.selectLevel or nil,
+						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
+						SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
+						FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
+						REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
+						MATH_OPERATION = changeTable.multiply and "*" or nil,
+						REMOVE = changeTable.removeSection and "SECTION" or nil,
+						ADD_OPTION = changeTable.addSection and "ADDafterSECTION" or nil,
+						ADD = changeTable.addSection and changeTable.section or nil,
+						SECTION_SAVE_TO = changeTable.copySection or nil,
+						SECTION_EDIT = changeTable.editSection or nil,
+						SECTION_ADD_NAMED = changeTable.pasteSection or nil
+					}
 
-						for i, specialKeyWordPair in pairs(forEachSpecialKeyWords) do
-							local newChangeTable = {}
+					if changeTable.addSection or changeTable.removeSection or changeTable.copySection or changeTable.pasteSection then
+						table.insert(exmlChangeTable, convertedChangeTable)
+					elseif changeTable.fields then
+						local valueChangeTable = {}
 
-							for k,v in pairs(changeTable) do
-								newChangeTable[k] = v
+						for fieldName, fieldValue in pairs(changeTable.fields) do
+							if type(fieldValue) == "table" then
+								if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
+									table.insert(valueChangeTable, {fieldName, fieldValue.altered})
+								elseif fieldValue.multiplier and fieldValue.multiplier ~= 1 then
+									table.insert(valueChangeTable, {fieldName, changeTable.multiply and fieldValue.multiplier or fieldValue.default * fieldValue.multiplier})
+								end
+							else
+								table.insert(valueChangeTable, {fieldName, fieldValue})
 							end
-
-							newChangeTable.specialKeyWords = specialKeyWordPair
-
-							table.insert(combinedTweaks[mbinPath], newChangeTable)
 						end
-					else
-						table.insert(combinedTweaks[mbinPath], changeTable)
+
+						if #valueChangeTable > 0 then
+							convertedChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
+							table.insert(exmlChangeTable, convertedChangeTable)
+						end
 					end
+				end
+
+				if #exmlChangeTable > 0 or type(changeTables.mbinPaths)=="table" then
+				    local modificationTable = {MBIN_CHANGE_TABLE = {mbinChangeTable}}
+					table.insert(modificationTables, modificationTable)
 				end
 			end
 		end
 	end
 
-	return combinedTweaks
-end
-
-local processTweaksTable = function(tweakTables)
-	local masterChangeTable = {}
-	local combinedTweaks = combineTweaks(tweakTables)
-
-	for mbinPath, changeTables in pairs(combinedTweaks) do
-		local mbinChangeTable = {
-			MBIN_FILE_SOURCE = mbinPath,
-			EXML_CHANGE_TABLE = {}
-		}
-		local exmlChangeTable = mbinChangeTable.EXML_CHANGE_TABLE
-
-		for _, changeTable in pairs(changeTables) do
-			local convertedChangeTable = {
-				SECTION_UP = changeTable.selectLevel or nil,
-				PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
-				SPECIAL_KEY_WORDS = changeTable.specialKeyWords or nil,
-				REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
-				REMOVE = changeTable.removeSection and "SECTION" or nil,
-				MATH_OPERATION = changeTable.multiply and "*" or nil,
-			}
-
-			if changeTable.removeSection then
-				table.insert(exmlChangeTable, changeTable.priority or #exmlChangeTable+1, convertedChangeTable)
-			elseif changeTable.addSection then
-				convertedChangeTable.ADD_OPTION = "ADDafterSECTION"
-				convertedChangeTable.ADD = changeTable.section
-				table.insert(exmlChangeTable, changeTable.priority or #exmlChangeTable+1, convertedChangeTable)
-			else
-				local valueChangeTable = {}
-
-				for fieldName, fieldValue in pairs(changeTable.fields) do
-					if type(fieldValue) == "table" then
-						if changeTable.multiply then
-							if fieldValue.multiplier then
-								table.insert(valueChangeTable, {fieldName, fieldValue.multiplier})
-							end
-						else
-							if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
-								table.insert(valueChangeTable, {fieldName, fieldValue.altered})
-							elseif fieldValue.multiplier then
-								table.insert(valueChangeTable, {fieldName, fieldValue.default * fieldValue.multiplier})
-							end
-						end
-					else
-						table.insert(valueChangeTable, {fieldName, fieldValue})
-					end
-				end
-
-				if #valueChangeTable > 0 then
-					convertedChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
-					table.insert(exmlChangeTable, convertedChangeTable)
-				end
-			end
-		end
-
-		if #exmlChangeTable > 0 then
-			table.insert(masterChangeTable, mbinChangeTable)
-		end
-	end
-
-	return masterChangeTable
+	return modificationTables
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -280,5 +259,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	MODIFICATIONS =	{{MBIN_CHANGE_TABLE = processTweaksTable(tweaks)}}
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS",
+	MODIFICATIONS =	processTweaksTable(tweaks)
 }
