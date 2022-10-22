@@ -1,62 +1,75 @@
 local batchPakName = "lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Other Tweaks 1.0]]
+local modDescription = [[Lyravega's Other Tweaks 1.1]]
 local gameVersion = "4.0+"
 
 --[[
-	Below in the 'enabledTweaks' table are toggles for the changes. What they do is commented next to them. Change the value to 'false' to disable the modifications.
+	Below in the 'enabledTweaks' table are modification names and what they do is commented next to them. 
+	Change the values to 'false' (without ''; someModification = false,) to disable the modifications.
 ]]
 
 local enabledTweaks = {
-	convertProtectionTechsToPassive = true,	-- changes the procedurally generated chargeable hazard protection tech upgrades to passive resistances (S:4-7%, A:2-4%, B:1-2%)
-	luckyWithTech = false,					-- maximizes all procedurally generated tech upgrade percentages
-	noInventoryDamage = true,				-- disables the damage that techs suffer (also a new customizable difficulty setting)
-	fixSomeRepairableStuff = true,			-- fixes damaged crates and tech debris (crates play animation but couldn't get the little pods animate properly)
-	chargePortals = true,					-- removes portal charging steps
-	fasterToolScanner = true,				-- doubles player scanner charge speed (also a new customizable difficulty setting)
-	adjustScannerColour = true,				-- adjusts the scanner colours and tones them down (so that you won't go blind from ship scanners)
-	reduceToastMessages = true,				-- reduces the time expedition stage, milestone and planet discovery is shown
-	fasterInteractions = true,				-- makes interactions faster
-	reduceSomeFlashes = true,				-- reduces duration and intensity of some screen flashes (entering/exiting vehicles, miniportals, teleporters)
-	makeSomeFlashesBlack = true,			-- turns some screen flashes to black (entering/exiting vehicles, miniportals)
-	reduceVehicleTechDamage = true,			-- reduces the damage installed vehicle techs take
-	improveMechJetPack = true,				-- increases jetpack max speed and reduces drain
-	improveMechMovement = 1.25,				-- faster mech animations, movement speed and better jetpack parameters
-	improveAIMechCombat = true,				-- increases the distance for AI controlled mech to resummon, and make it use the laser less and fire the cannon more & rapidly
-	improveMechCamera = true,				-- mech won't occupy the middle of the screen >.>
-	improveMechArmAngles = true,			-- increases the arm angle tolerance; essentially reduces the camera jump when the top and arm mounts swap due to angle limits
-	titanfall3 = true,						-- titanfall (mech summon) takes a bit longer and is more impactful, also mech footprints last longer / TITANFALL 3 WHEN
+	hangarSalvageTerminal = true,			-- adds salvage terminals to the freighter hangar, below stairs (generates WARNING, can be ignored)
+	passiveProtectionTechs = true,			-- changes active hazard protection tech upgrades to passive ones (S:4-7%, A:2-4%, B:1-2%)
+	noWeaponFlashes = true,					-- removes muzzle and projectile flashes from weapons
+	maximizedTechs = false,					-- procedurally generated tech upgrade values are maximized
+	noInventoryDamage = true,				-- disables the damage that the installed techs suffer
+	lessMaintenance = true,					-- some damaged objects; crates and tech debris no longer require maintenance
+	noPortalCharging = true,				-- removes portal charging steps
+	shorterToastMessages = true,			-- shortens the toast message duration of expedition stages, milestones and planet discoveries
+	fasterInteractions = true,				-- hold interactions require less... holding
+	lessScreenFlashes = true,				-- reduces the duration and intensity of some screen flashes (entering/exiting vehicles, miniportals)
+	blackScreenFlashes = true,				-- turns some screen flashes to black (entering/exiting vehicles, miniportals)
+	rapidToolScanner = true,				-- tool scanners recharge much faster and their range is bumped up a little
+	darkerScannerPulse = true,				-- tones ALL of the (tool, vehicle, ship) scanner pulse colours down
 }
 
---[[
-	Below in the 'tweaks' table are the changes. If you'd like to change them directly, change the 'altered' values and leave 'default' ones as they are.
-	Fields with same 'altered' and 'default' values won't be processed by AMUMSS. The 'default' values (generated pre-4.0) serve as more of a reference.
-	Not every field value is changed. Some are only exposed for testing purposes and to toy around with, usually belonging to the same sections.
-]]
-
 local tweaks = {
-	misc = {
-		["GCPLAYERGLOBALS.GLOBAL.MBIN"] = {
+	hangarSalvageTerminal = {
+		{
+			mbinPaths = {"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGARLAYOUT.SCENE.MBIN"},
 			{
-				fields = {
-					InventoryDamage = {default = true, altered = not enabledTweaks.noInventoryDamage},
-					LuckyWithTech = {default = false, altered = enabledTweaks.luckyWithTech}
-				}
+				specialKeyWords = {"Name","RefHangarLayout"},
+				copySection = "reference",
 			}
-		}
-	},
-	luckyWithTech = {
-		["GCPLAYERGLOBALS.GLOBAL.MBIN"] = {
+		},
+		{
+			mbinPaths = {"MODELS/COMMON/SPACECRAFT/COMMONPARTS/HANGARINTERIORPARTS/HANGAR.SCENE.MBIN"},
 			{
+				precedingKeyWords = {"Children"},
+				pasteSection = "reference"
+			},
+			{
+				specialKeyWords = {"Name","RefHangarLayout"},
 				fields = {
-					LuckyWithTech = {default = false, altered = false}
+					Name = "SalvageTerminalR",
+					NameHash = 0,
+					TransX = 22.66539,
+					TransY = -4.297458,
+					TransZ = -25,
+					Value = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SHIPSALVAGETERMINAL.SCENE.MBIN"
 				}
-			}
-		}
+			},
+			{
+				precedingKeyWords = {"Children"},
+				pasteSection = "reference"
+			},
+			{
+				specialKeyWords = {"Name","RefHangarLayout"},
+				fields = {
+					Name = "SalvageTerminalL",
+					NameHash = 0,
+					TransX = -22.66539,
+					TransY = -4.297458,
+					TransZ = -25,
+					Value = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/SHIPSALVAGETERMINAL.SCENE.MBIN"
+				}
+			},
+		},
 	},
-	convertProtectionTechsToPassive = {
+	passiveProtectionTechs = {
 		["METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"] = {
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "T_COLDPROT"},
 					{"ID", "T_HOTPROT"},
 					{"ID", "T_TOX"},
@@ -70,7 +83,7 @@ local tweaks = {
 			},
 			{
 				precedingKeyWords = {"ChargeBy"},
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "T_COLDPROT"},
 					{"ID", "T_HOTPROT"},
 					{"ID", "T_TOX"},
@@ -79,7 +92,7 @@ local tweaks = {
 				removeSection = true
 			},
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "T_COLDPROT", "ChargeType", "GcRealitySubstanceCategory.xml"},
 					{"ID", "T_HOTPROT", "ChargeType", "GcRealitySubstanceCategory.xml"},
 					{"ID", "T_TOX", "ChargeType", "GcRealitySubstanceCategory.xml"},
@@ -91,7 +104,7 @@ local tweaks = {
 		},
 		["METADATA/REALITY/TABLES/NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"] = {
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "UP_COLD1"},
 					{"ID", "UP_COLD2"},
 					{"ID", "UP_COLD3"},
@@ -101,7 +114,7 @@ local tweaks = {
 				}
 			},
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "UP_HOT1"},
 					{"ID", "UP_HOT2"},
 					{"ID", "UP_HOT3"},
@@ -111,7 +124,7 @@ local tweaks = {
 				}
 			},
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "UP_TOX1"},
 					{"ID", "UP_TOX2"},
 					{"ID", "UP_TOX3"},
@@ -121,7 +134,7 @@ local tweaks = {
 				}
 			},
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "UP_RAD1"},
 					{"ID", "UP_RAD2"},
 					{"ID", "UP_RAD3"},
@@ -131,7 +144,7 @@ local tweaks = {
 				}
 			},
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "UP_COLD1"},
 					{"ID", "UP_HOT1"},
 					{"ID", "UP_TOX1"},
@@ -143,7 +156,7 @@ local tweaks = {
 				}
 			},
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "UP_COLD2"},
 					{"ID", "UP_HOT2"},
 					{"ID", "UP_TOX2"},
@@ -155,7 +168,7 @@ local tweaks = {
 				}
 			},
 			{
-				forEachSpecialKeyWords = {
+				specialKeyWords = {
 					{"ID", "UP_COLD3"},
 					{"ID", "UP_HOT3"},
 					{"ID", "UP_TOX3"},
@@ -168,7 +181,44 @@ local tweaks = {
 			},
 		},
 	},
-	fixSomeRepairableStuff = {
+	noWeaponFlashes = {
+		["METADATA/REALITY/TABLES/PLAYERWEAPONPROPERTIESTABLE.MBIN"] = {
+			{
+				specialKeyWords = {
+					{"WeaponClass", "Projectile"},
+					{"WeaponClass", "Laser"},
+					{"WeaponClass", "ChargedProjectile"},
+					{"WeaponClass", "Grenade"},
+					{"WeaponClass", "TerrainEditor"}
+				},
+				selectLevel = 1,
+				fields = {
+					FlashMuzzleOnProjectileFire = false,
+					UseMuzzleLight = false,
+				},
+				replaceAll = true
+			}
+		}
+	},
+	maximizedTechs = {
+		["GCPLAYERGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					LuckyWithTech = {default = false, altered = true}
+				}
+			}
+		}
+	},
+	noInventoryDamage = {
+		["GCPLAYERGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					InventoryDamage = {default = true, altered = false}
+				}
+			}
+		}
+	},
+	lessMaintenance = {
 		["MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATE_LARGE_RARE/ENTITIES/CRATE_LARGE_RARE.ENTITY.MBIN"] = {
 			{
 				precedingKeyWords = {"GcMaintenanceComponentData.xml"},
@@ -188,7 +238,7 @@ local tweaks = {
 			}
 		}
 	},
-	chargePortals = {
+	noPortalCharging = {
 		["MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/PORTAL/ENTITIES/BUTTON.ENTITY.MBIN"] = {
 			{
 				precedingKeyWords = {"GcMaintenanceComponentData.xml"},
@@ -196,43 +246,7 @@ local tweaks = {
 			}
 		}
 	},
-	fasterToolScanner = {
-		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
-			{
-				precedingKeyWords = {"ToolScan"},
-				fields = {
-					ScanType = {default = "Tool", altered = "Tool"}, -- change this to 'DebugPlanet' to see something magical
-					PulseRange = {default = 200, altered = 200},
-					PulseTime = {default = 1, altered = 1},
-					PlayAudioOnMarkers = {default = true, altered = true},
-					ChargeTime = {default = 30, altered = 15}
-				}
-			}
-		}
-	},
-	adjustScannerColour = {
-		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
-			{
-				specialKeyWords = {"ScannerColour1","Colour.xml"},
-				fields = {
-					R = {default = 0.3, altered = 0.03},
-					G = {default = 0.9, altered = 0.09},
-					B = {default = 1, altered = 0.1},
-					A = {default = 1, altered = 0.1}
-				}
-			},
-			{
-				specialKeyWords = {"ScannerColour2","Colour.xml"},
-				fields = {
-					R = {default = 1, altered = 0.1},
-					G = {default = 0.5, altered = 0.05},
-					B = {default = 0.2, altered = 0.02},
-					A = {default = 1, altered = 0.1}
-				}
-			}
-		}
-	},
-	reduceToastMessages = {
+	shorterToastMessages = {
 		["GCUIGLOBALS.GLOBAL.MBIN"] = {
 			{
 				specialKeyWords = {"DiscoveryHelperTimings", "GcDiscoveryHelperTimings.xml"},
@@ -262,7 +276,7 @@ local tweaks = {
 			}
 		}
 	},
-	reduceSomeFlashes = {
+	lessScreenFlashes = {
 		["GCCAMERAGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -282,7 +296,7 @@ local tweaks = {
 			}
 		}
 	},
-	makeSomeFlashesBlack = {
+	blackScreenFlashes = {
 		["GCCAMERAGLOBALS.GLOBAL.MBIN"] = {
 			{
 				specialKeyWords = {"VehicleExitFlashColour","Colour.xml"},
@@ -304,254 +318,105 @@ local tweaks = {
 			}
 		}
 	},
-	improveVehicleTechResistance = {
-		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
+	rapidToolScanner = {
+		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
+				precedingKeyWords = {"ToolScan"},
 				fields = {
-					DamageTechNumHitsRequired = {default = 20, altered = 200},
-					DamageTechMinHitIntervalSeconds = {default = 1, altered = 5}
+					ScanType = {default = "Tool", altered = "Tool"},
+					PulseRange = {default = 200, altered = 250},
+					PulseTime = {default = 1, altered = 2},
+					PlayAudioOnMarkers = {default = true, altered = true},
+					ChargeTime = {default = 30, altered = 15}
 				}
 			}
 		}
 	},
-	improveMechJetPack = {
-		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
+	darkerScannerPulse = {
+		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
+				specialKeyWords = {"ScannerColour1","Colour.xml"},
 				fields = {
-					MechLandBrake = {default = 4, altered = 10},
-					MechJetpackMaxSpeed = {default = 20, altered = 30},
-					MechJetpackMaxUpSpeed = {default = 20, altered = 30},
-					MechJetpackDrainRate = {default = 0.5, altered = 0.375},
-					MechJetpackFillRate = {default = 0.5, altered = 0.5},
-					MechJetpackAvoidGroundProbeLength = {default = 6, altered = 12}
-				}
-			}
-		}
-	},
-	improveMechMovement = {
-		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					MechPowerUpTime = {default = 3.5, multiplier = 1/enabledTweaks.improveMechMovement},
-					MechTitanFallLandIntroTime = {default = 4.5, multiplier = 1/enabledTweaks.improveMechMovement},
-					MechWalkToRunTimeIdle = {default = 2, multiplier = 1/enabledTweaks.improveMechMovement},
-				},
-				multiply = true
-			},
-			{
-				specialKeyWords = {"Name", "MECH"},
-				fields = {
-					TopSpeedForward = {default = 2, multiplier = enabledTweaks.improveMechMovement}
-				},
-				multiply = true
-			}
-		},
-		["MODELS/COMMON/VEHICLES/MECH_SUIT/MECH_SUIT/ENTITIES/MECH.ENTITY.MBIN"] = {
-			{
-				fields = {
-					Speed = enabledTweaks.improveMechMovement
-				},
-				multiply = true,
-				replaceAll = true
-			}
-		}
-	},
-	improveAIMechCombat = {
-		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					MechAIResummonTriggerDistance = {default = 100, altered = 250},
-					AIMechLaserFireDurationMin = {default = 3, altered = 2},
-					AIMechLaserFireDurationMax = {default = 5, altered = 4},
-					AIMechGunFireInterval = {default = 0.5, altered = 0.33},
-					AIMechGunNumShotsMin = {default = 3, altered = 4},
-					AIMechGunNumShotsMax = {default = 5, altered = 8}
-				}
-			}
-		}
-	},
-	improveMechCamera = {
-		["GCCAMERAGLOBALS.GLOBAL.MBIN"] = {
-			{
-				precedingKeyWords = "MechFollowCam",
-				fields = {
-					OffsetX = {default = 2.2, altered = 4},
-					OffsetY = {default = -0.5, altered = -0.5},
-					OffsetYAlt = {default = 2.5, altered = 1.5},
-					OffsetYSlopeExtra = {default = 0.5, altered = 0.5},
-					OffsetZFlat = {default = 0, altered = 0},
-					OffsetYExtraMaxDistance = {default = 4, altered = 4},
-					BackMinDistance = {default = 6.5, altered = 6.5},
-					BackMaxDistance = {default = 14, altered = 14},
-					UpMinDistance = {default = -1, altered = -1},
-					UpMaxDistance = {default = 0, altered = 0},
-					LeftMinDistance = {default = 0, altered = 0},
-					LeftMaxDistance = {default = 0, altered = 0},
-					PanNear = {default = 6, altered = 9},
-					PanFar = {default = 10, altered = 15}
+					R = {default = 0.3, altered = 0.03},
+					G = {default = 0.9, altered = 0.09},
+					B = {default = 1, altered = 0.1},
+					A = {default = 1, altered = 0.1}
 				}
 			},
 			{
-				precedingKeyWords = "MechCombatCam",
+				specialKeyWords = {"ScannerColour2","Colour.xml"},
 				fields = {
-					OffsetX = {default = 5, altered = 4},
-					OffsetY = {default = -1, altered = -0.5},
-					OffsetYAlt = {default = 1.5, altered = 1.5},
-					OffsetYSlopeExtra = {default = 0.5, altered = 0.5},
-					OffsetZFlat = {default = 0, altered = 0},
-					OffsetYExtraMaxDistance = {default = 4, altered = 4},
-					BackMinDistance = {default = 6.5, altered = 6.5},
-					BackMaxDistance = {default = 14, altered = 14},
-					UpMinDistance = {default = -1, altered = -1},
-					UpMaxDistance = {default = 0, altered = 0},
-					LeftMinDistance = {default = 0, altered = 0},
-					LeftMaxDistance = {default = 0, altered = 0},
-					PanNear = {default = 6, altered = 9},
-					PanFar = {default = 10, altered = 15}
-				}
-			},
-			{
-				fields = {
-  					MechCameraNoExtraYTimeAfterLand = {default = 2, altered = 2},
-  					MechCameraExtraYPostLandingBlendTime = {default = 2, altered = 2},
-  					MechCameraArmShootOffsetY = {default = 1, altered = 0},
-  					MechCameraCombatFakeSpeed = {default = 14, altered = 14}
-				}
-			}
-		}
-	},
-	improveMechArmAngles = {
-		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					AttackAngle = 90,
-					AngleToleranceForArmAiming = 90
-				},
-				replaceAll = true
-			}
-		}
-	},
-	titanfall3 = {
-		["GCVEHICLEGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					MechTitanFallHeight = {default = 30, altered = 150},
-					MechTitanFallTerrainEditSize = {default = 2, altered = 10},
-					MechTitanFallTerrainEditOffset = {default = 0.45, altered = 0.15},
-					MechTitanFallCameraShakeDist = {default = 80, altered = 100},
-					MechLandCameraShakeDist = {default = 40, altered = 50},
-					MechFootprintFadeTime = {default = 1, altered = 15},
-					MechFootprintFadeDist = {default = 20, altered = 25}
+					R = {default = 1, altered = 0.1},
+					G = {default = 0.5, altered = 0.05},
+					B = {default = 0.2, altered = 0.02},
+					A = {default = 1, altered = 0.1}
 				}
 			}
 		}
 	}
 }
 
-local combineTweaks = function(tweakTables)
-	local combinedTweaks = {}
+local processTweaksTable
+processTweaksTable = function(tweakTables)
+	local modificationTables = {}
 
-	for tweakName, tweakTable in pairs(tweakTables) do
+	for tweakName, tweakTable in next, tweakTables do
 		if enabledTweaks[tweakName] or tweakName == "misc" then
 			for mbinPath, changeTables in pairs(tweakTable) do
-				if string.find(mbinPath, ".EXML", 1, true) then
-					mbinPath = string.gsub(mbinPath, ".EXML", ".MBIN")
-				elseif not string.find(mbinPath, ".MBIN", 1, true) then
-					mbinPath = mbinPath..".MBIN"
-				end
-				combinedTweaks[mbinPath] = combinedTweaks[mbinPath] or {}
+				local mbinChangeTable = {
+					MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
+					EXML_CHANGE_TABLE = {}
+				}; local exmlChangeTable = mbinChangeTable.EXML_CHANGE_TABLE
 
-				for _, changeTable in pairs(changeTables) do
-					if changeTable.precedingKeyWords and type(changeTable.precedingKeyWords) == "string" then
-						changeTable.precedingKeyWords = {changeTable.precedingKeyWords}
-					end
-					if changeTable.forEachSpecialKeyWords then
-						local forEachSpecialKeyWords = changeTable.forEachSpecialKeyWords
-						changeTable.forEachSpecialKeyWords = nil
+				for _, changeTable in ipairs(changeTables) do
+					local convertedChangeTable = {
+						SECTION_UP = changeTable.selectLevel or nil,
+						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
+						SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
+						FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
+						REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
+						MATH_OPERATION = changeTable.multiply and "*" or nil,
+						REMOVE = changeTable.removeSection and "SECTION" or nil,
+						ADD_OPTION = changeTable.addSection and "ADDafterSECTION" or nil,
+						ADD = changeTable.addSection and changeTable.section or nil,
+						SECTION_SAVE_TO = changeTable.copySection or nil,
+						SECTION_EDIT = changeTable.editSection or nil,
+						SECTION_ADD_NAMED = changeTable.pasteSection or nil
+					}
 
-						for i, specialKeyWordPair in pairs(forEachSpecialKeyWords) do
-							local newChangeTable = {}
+					if changeTable.addSection or changeTable.removeSection or changeTable.copySection or changeTable.pasteSection then
+						table.insert(exmlChangeTable, convertedChangeTable)
+					elseif changeTable.fields then
+						local valueChangeTable = {}
 
-							for k,v in pairs(changeTable) do
-								newChangeTable[k] = v
+						for fieldName, fieldValue in pairs(changeTable.fields) do
+							if type(fieldValue) == "table" then
+								if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
+									table.insert(valueChangeTable, {fieldName, fieldValue.altered})
+								elseif fieldValue.multiplier and fieldValue.multiplier ~= 1 then
+									table.insert(valueChangeTable, {fieldName, changeTable.multiply and fieldValue.multiplier or fieldValue.default * fieldValue.multiplier})
+								end
+							else
+								table.insert(valueChangeTable, {fieldName, fieldValue})
 							end
-
-							newChangeTable.specialKeyWords = specialKeyWordPair
-
-							table.insert(combinedTweaks[mbinPath], newChangeTable)
 						end
-					else
-						table.insert(combinedTweaks[mbinPath], changeTable)
+
+						if #valueChangeTable > 0 then
+							convertedChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
+							table.insert(exmlChangeTable, convertedChangeTable)
+						end
 					end
+				end
+
+				if #exmlChangeTable > 0 or type(changeTables.mbinPaths)=="table" then
+				    local modificationTable = {MBIN_CHANGE_TABLE = {mbinChangeTable}}
+					table.insert(modificationTables, modificationTable)
 				end
 			end
 		end
 	end
 
-	return combinedTweaks
-end
-
-local processTweaksTable = function(tweakTables)
-	local masterChangeTable = {}
-	local combinedTweaks = combineTweaks(tweakTables)
-
-	for mbinPath, changeTables in pairs(combinedTweaks) do
-		local mbinChangeTable = {
-			MBIN_FILE_SOURCE = mbinPath,
-			EXML_CHANGE_TABLE = {}
-		}
-		local exmlChangeTable = mbinChangeTable.EXML_CHANGE_TABLE
-
-		for _, changeTable in pairs(changeTables) do
-			local convertedChangeTable = {
-				SECTION_UP = changeTable.selectLevel or nil,
-				PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
-				SPECIAL_KEY_WORDS = changeTable.specialKeyWords or nil,
-				REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
-				REMOVE = changeTable.removeSection and "SECTION" or nil,
-				MATH_OPERATION = changeTable.multiply and "*" or nil,
-			}
-
-			if changeTable.removeSection then
-				table.insert(exmlChangeTable, changeTable.priority or #exmlChangeTable+1, convertedChangeTable)
-			elseif changeTable.addSection then
-				convertedChangeTable.ADD_OPTION = "ADDafterSECTION"
-				convertedChangeTable.ADD = changeTable.section
-				table.insert(exmlChangeTable, changeTable.priority or #exmlChangeTable+1, convertedChangeTable)
-			else
-				local valueChangeTable = {}
-
-				for fieldName, fieldValue in pairs(changeTable.fields) do
-					if type(fieldValue) == "table" then
-						if changeTable.multiply then
-							if fieldValue.multiplier then
-								table.insert(valueChangeTable, {fieldName, fieldValue.multiplier})
-							end
-						else
-							if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
-								table.insert(valueChangeTable, {fieldName, fieldValue.altered})
-							elseif fieldValue.multiplier then
-								table.insert(valueChangeTable, {fieldName, fieldValue.default * fieldValue.multiplier})
-							end
-						end
-					else
-						table.insert(valueChangeTable, {fieldName, fieldValue})
-					end
-				end
-
-				if #valueChangeTable > 0 then
-					convertedChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
-					table.insert(exmlChangeTable, convertedChangeTable)
-				end
-			end
-		end
-
-		if #exmlChangeTable > 0 then
-			table.insert(masterChangeTable, mbinChangeTable)
-		end
-	end
-
-	return masterChangeTable
+	return modificationTables
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -562,5 +427,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	MODIFICATIONS =	{{MBIN_CHANGE_TABLE = processTweaksTable(tweaks)}}
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS",
+	MODIFICATIONS =	processTweaksTable(tweaks)
 }

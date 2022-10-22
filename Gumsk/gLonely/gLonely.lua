@@ -2,7 +2,7 @@ Author			= "Gumsk"
 ModName			= "gLonely"
 ModNameSub		= ""
 BaseDescription	= "Generates a lonely galaxy"
-GameVersion		= "399"
+GameVersion		= "405"
 ModVersion		= "a"
 
 FileSource1	= "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
@@ -60,20 +60,22 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			--=============================================================================
 						{
 							["PRECEDING_KEY_WORDS"] = {"AbandonedSystemProbability"},
+							["LINE_OFFSET"] = "+1",
 							["VALUE_CHANGE_TABLE"] = {
-								{"Yellow",0.05},
-								{"Green",0},
-								{"Blue",0},
-								{"Red",0.05},
+								{"IGNORE",0.05},		--Yellow
+								{"IGNORE",0},			--Green
+								{"IGNORE",0},				--Blue
+								{"IGNORE",0.05},			--Red
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"EmptySystemProbability"},
+							["LINE_OFFSET"] = "+1",
 							["VALUE_CHANGE_TABLE"] = {
-								{"Yellow",0.9},
-								{"Green",0.95},
-								{"Blue",0.95},
-								{"Red",0.95},
+								{"IGNORE",0.9},			--Yellow
+								{"IGNORE",0.95},			--Green
+								{"IGNORE",0.95},			--Blue
+								{"IGNORE",0.95},			--Red
 							},
 						},
 			--=============================================================================
@@ -334,20 +336,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"y",0}, 									--1000
 							},
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"HardPlanetPirateTimers","GcExperienceTimers.xml","High","Vector2f.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"x",0}, 									--600
-								{"y",0}, 									--900
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"HardPlanetPirateTimers","GcExperienceTimers.xml","Normal","Vector2f.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"x",0}, 									--800
-								{"y",0}, 									--1000
-							},
-						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"HardPlanetPirateTimers","GcExperienceTimers.xml","High","Vector2f.xml"},
+							-- ["VALUE_CHANGE_TABLE"] = {
+								-- {"x",0}, 									--600
+								-- {"y",0}, 									--900
+							-- },
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"HardPlanetPirateTimers","GcExperienceTimers.xml","Normal","Vector2f.xml"},
+							-- ["VALUE_CHANGE_TABLE"] = {
+								-- {"x",0}, 									--800
+								-- {"y",0}, 									--1000
+							-- },
+						-- },
 			--=============================================================================
 			--Disable Frigate Flybys by Gumsk
 			--=============================================================================
@@ -380,14 +382,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					["MBIN_FILE_SOURCE"] = FileSource8,
 					["EXML_CHANGE_TABLE"] = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementRuleId","FILLER","PlacementNodeName","NPCHIREABLE_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacementRuleId","FILLER","PlacmentNodeName","NPCHIREABLE_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FractionOfNodesActive",0.01},
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementNodeName","NPCBLACKMARKET_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacmentNodeName","NPCBLACKMARKET_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MustPlace","False"},
@@ -395,7 +397,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementNodeName","NPCSUIT_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacmentNodeName","NPCSUIT_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MustPlace","False"},
@@ -403,7 +405,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementNodeName","NPCSHIP_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacmentNodeName","NPCSHIP_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MustPlace","False"},
@@ -411,7 +413,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementNodeName","NPCWEAP_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacmentNodeName","NPCWEAP_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MustPlace","False"},
@@ -419,7 +421,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementNodeName","NPCVEH_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacmentNodeName","NPCVEH_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MustPlace","False"},
@@ -427,7 +429,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementNodeName","NPCMISSIONSHOP_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacmentNodeName","NPCMISSIONSHOP_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MustPlace","False"},
@@ -435,7 +437,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementNodeName","NPCGUILDSHOP_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacmentNodeName","NPCGUILDSHOP_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MustPlace","False"},
@@ -443,7 +445,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementNodeName","NPCSCRAPSHOP_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacmentNodeName","NPCSCRAPSHOP_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MustPlace","False"},
@@ -451,7 +453,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 							},
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"PlacementNodeName","NPCMAPSHOP_"},
+							["SPECIAL_KEY_WORDS"] = {"PlacmentNodeName","NPCMAPSHOP_"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MustPlace","False"},
