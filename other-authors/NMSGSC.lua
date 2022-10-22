@@ -546,8 +546,8 @@ AddNewQunitProducts =
 -------------------------------     CODE LOGIC START      ------------------------------------
 ----------------------------------------------------------------------------------------------
 ModName                 				= "NMS Galactic Standard Currency"
-GameVersion							= " v4.04.0"
-Build					 						= ".2"
+GameVersion							= " v4.05.0"
+Build					 						= ".1"
 Author                  						= "EchoTree "
 LuaAuthor									= "EchoTree and Jackty89"
 ModDescription          			= "Adds Craftable, Tradable Consumable Currencies to NMS"
@@ -1076,7 +1076,7 @@ function FillCustomlangFile(Data)
 		local ButtonNameEntries = {}
 		local ButtonSubEntries = {}
 
-        local Languages = Data[i]["Languages"]
+        local LanguagesData = Data[i]["Languages"]
 
         local NameID = ProductID.."_NAME"
         local NameLCID = ProductID.."_NAME_L"
@@ -1085,29 +1085,29 @@ function FillCustomlangFile(Data)
 		local ButtonID = "UI_CONSUME_"..ProductID
 		local ButtonSubID = "UI_CONSUME_"..ProductID.."_SUB"
 
-        for j = 1, #Languages do
-            local Language = Languages[j][1]
+        for j = 1, #LanguagesData do
+            local Language = LanguagesData[j][1]
 
-            local Name = string.upper(Languages[j][2])
+            local Name = string.upper(LanguagesData[j][2])
             table.insert(NameEntries, NewLanguageEntry(Language, Name))
 
-            local NameLC = Languages[j][2]
+            local NameLC = LanguagesData[j][2]
             table.insert(NameLCEntries, NewLanguageEntry(Language, NameLC))
 
-            local NewSubTitle = Languages[j][3]
+            local NewSubTitle = LanguagesData[j][3]
             table.insert(SubtitleEntries, NewLanguageEntry(Language, NewSubTitle))
 
-            local NewDescription = Languages[j][4]
+            local NewDescription = LanguagesData[j][4]
             table.insert(DescriptionEntries, NewLanguageEntry(Language, NewDescription))
 			
-			local NewButtonName = Languages[j][5]
-				print("NewButtonName = Languages[j][5] is ["..tostring(NewButtonName).."]")
+			local NewButtonName = LanguagesData[j][5]
+				print("NewButtonName = LanguagesData[j][5] is ["..tostring(NewButtonName).."]")
 				if NewButtonName ~= nil then
 				table.insert(ButtonNameEntries, NewLanguageEntry(Language, NewButtonName))
 			end
 	
-			local NewButtonSub = Languages[j][6]
-				print("NewButtonSub = Languages[j][6] is ["..tostring(NewButtonSub).."]")
+			local NewButtonSub = LanguagesData[j][6]
+				print("NewButtonSub = LanguagesData[j][6] is ["..tostring(NewButtonSub).."]")
 				if NewButtonSub ~= nil then
 				table.insert(ButtonSubEntries, NewLanguageEntry(Language, NewButtonSub))
 			end

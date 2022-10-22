@@ -26,28 +26,28 @@ GCPRODUCTTABLE_TEXT	=	[[
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="COMPUTER" />
           <Property name="Type" value="GcInventoryType.xml">
-            <Property name="Type" value="Product" />
+            <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
         </Property>
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="FARMPROD6" />
           <Property name="Type" value="GcInventoryType.xml">
-            <Property name="Type" value="Product" />
+            <Property name="InventoryType" value="Product" />
           </Property>
           <Property name="Amount" value="1" />
         </Property>
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="EX_YELLOW" />
           <Property name="Type" value="GcInventoryType.xml">
-            <Property name="Type" value="Substance" />
+            <Property name="InventoryType" value="Substance" />
           </Property>
           <Property name="Amount" value="50" />
         </Property>
       </Property>
 ]]
 
-NMS_MOD_DEFINITION_CONTAINER = {
+NMS_MOD_DEFINITION_Cjavascript-event-stripped {
 	["MOD_FILENAME"]		= "_"..ModAuthor.."."..ModName.."-"..GameVersion..".pak",
 	["MOD_DESCRIPTION"]	= BaseDescription,
 	["MOD_AUTHOR"]			= ModAuthor,
