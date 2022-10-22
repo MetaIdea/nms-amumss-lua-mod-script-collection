@@ -344,43 +344,43 @@ return
 ]]
  end
  
-All_Request_Leave =
-[[
-        <Property value="GcAlienPuzzleOption.xml">
-          <Property name="Name" value="ALL_REQUEST_LEAVE" />
-          <Property name="Text" value="" />
-          <Property name="IsAlien" value="False" />
-          <Property name="Cost" value="" />
-          <Property name="Rewards" />
-          <Property name="Mood" value="GcAlienMood.xml">
-            <Property name="Mood" value="Neutral" />
-          </Property>
-          <Property name="Prop" value="GcNPCPropType.xml">
-            <Property name="NPCProp" value="DontCare" />
-          </Property>
-          <Property name="OverrideWithAlienWord" value="False" />
-          <Property name="ReseedInteractionOnUse" value="False" />
-          <Property name="KeepOpen" value="False" />
-          <Property name="DisplayCost" value="True" />
-          <Property name="TruncateCost" value="False" />
-          <Property name="MarkInteractionComplete" value="True" />
-          <Property name="NextInteraction" value="" />
-          <Property name="SelectedOnBackOut" value="False" />
-          <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-            <Property name="AkEvent" value="INVALID_EVENT" />
-          </Property>
-          <Property name="TitleOverride" value="" />
-          <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
-            <Property name="ConditionTest" value="AnyFalse" />
-          </Property>
-          <Property name="EnablingConditions" />
-          <Property name="EnablingConditionId" value="" />
-          <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
-            <Property name="wordcategorytableEnum" value="MISC" />
-          </Property>
-        </Property>
-      </Property>
-]]
+-- All_Request_Leave =
+-- [[
+        -- <Property value="GcAlienPuzzleOption.xml">
+          -- <Property name="Name" value="ALL_REQUEST_LEAVE" />
+          -- <Property name="Text" value="" />
+          -- <Property name="IsAlien" value="False" />
+          -- <Property name="Cost" value="" />
+          -- <Property name="Rewards" />
+          -- <Property name="Mood" value="GcAlienMood.xml">
+            -- <Property name="Mood" value="Neutral" />
+          -- </Property>
+          -- <Property name="Prop" value="GcNPCPropType.xml">
+            -- <Property name="NPCProp" value="DontCare" />
+          -- </Property>
+          -- <Property name="OverrideWithAlienWord" value="False" />
+          -- <Property name="ReseedInteractionOnUse" value="False" />
+          -- <Property name="KeepOpen" value="False" />
+          -- <Property name="DisplayCost" value="True" />
+          -- <Property name="TruncateCost" value="False" />
+          -- <Property name="MarkInteractionComplete" value="True" />
+          -- <Property name="NextInteraction" value="" />
+          -- <Property name="SelectedOnBackOut" value="False" />
+          -- <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+            -- <Property name="AkEvent" value="INVALID_EVENT" />
+          -- </Property>
+          -- <Property name="TitleOverride" value="" />
+          -- <Property name="EnablingConditionTest" value="GcMissionConditionTest.xml">
+            -- <Property name="ConditionTest" value="AnyFalse" />
+          -- </Property>
+          -- <Property name="EnablingConditions" />
+          -- <Property name="EnablingConditionId" value="" />
+          -- <Property name="WordCategory" value="GcWordCategoryTableEnum.xml">
+            -- <Property name="wordcategorytableEnum" value="MISC" />
+          -- </Property>
+        -- </Property>
+      -- </Property>
+-- ]]
 
 Base_Scan_Event = GetCustomScanEvent("SE_BASE", "Nearest", "BuildingClass", "Base", "False", "False", "Local", "UI_RECOVER_BASE_OSD", "UI_RECOVER_BASE_MARKER", "", "UI_RECOVER_BASE_MARKER")
 Glitch_Scan_Event = GetCustomScanEvent("SE_GLITCH", "Nearest", "BuildingClass", "StoryGlitch", "False", "False", "Local", "NPC_COMM_WEEK_04_GLITCH_OSD", "BUILDING_GLITCHYSTORYBOX", "", "BUILDING_GLITCHYSTORYBOX")
@@ -389,51 +389,54 @@ Glitch_Scan_Event = GetCustomScanEvent("SE_GLITCH", "Nearest", "BuildingClass", 
 REWARD1 = GetReward ("CRASHED_SHIP", "DISTRESS")
 REWARD2 = GetReward ("TOOL_LOCATION", "SHOP")
 REWARD3 = GetReward ("PLANET_ARCHIVES", "LIBRARY")
+REWARD4 = GetReward ("R_HIVE", "DRONE_HIVE_DISABLED")
 REWARD5 = GetReward ("R_BASE", "SE_BASE")
 REWARD6 = GetReward ("R_GLITCH", "SE_GLITCH")
 REWARD7 = GetReward ("R_ABANDONED", "ABANDONED")
 
-REWARDSET = REWARD1..REWARD2..REWARD3..REWARD5..REWARD6..REWARD7
+REWARDSET = REWARD1..REWARD2..REWARD3..REWARD4..REWARD5..REWARD6..REWARD7
 
 --PuzzleOptions (NAME, ACTION)
---First set of options only 4 options per set allowed
-Menu1_Option1 = GetPuzzleOption("UI_PORTAL_OPT", "REVEAL_PORTAL")  -- Portal
-Menu1_Option2 = GetPuzzleOption("BUILDING_DISTRESSSIGNAL_L", "CRASHED_SHIP") -- Crashed Starship
-Menu1_Option3 = GetPuzzleOption("NPC_TECHSHOP_CATEGORY_WEAP","TOOL_LOCATION")  -- Multi-tool Location
+--The first set of Options may only have 2 scan events, allothers may have 3
+--First set of options
+Menu1_Option2 = GetPuzzleOption("UI_PORTAL_OPT", "REVEAL_PORTAL")  -- Portal
+Menu1_Option3 = GetPuzzleOption("BUILDING_DISTRESSSIGNAL_L", "CRASHED_SHIP") -- Crashed Starship
 --Generate a new Puzzle option that points to the next dialog set
 More_Options1 = GetMorePuzzleOption("?POWER_SCANNER")
 --Put the options together with a more options closer
-Menu1_Options = Menu1_Option1..Menu1_Option2..Menu1_Option3..More_Options1
+Menu1_Options = Menu1_Option2..Menu1_Option3..More_Options1
 
 --Second set of options
-Menu2_Option1 = GetPuzzleOption("BUILDING_FACTORY_L","SEC_SCN_FACT")  -- Manufacturing Facility
-Menu2_Option2 = GetPuzzleOption("UI_NAV_DROPPOD_NAME_L", "SCAN_1")  -- ExoSuit DropPod
-Menu2_Option3 = GetPuzzleOption("UI_LIBRARY_ENTRANCE_DESC", "PLANET_ARCHIVES")  -- Planetary Archives
+Menu2_Option1 = GetPuzzleOption("NPC_TECHSHOP_CATEGORY_WEAP","TOOL_LOCATION")  -- Multi-tool Location
+Menu2_Option2 = GetPuzzleOption("BUILDING_FACTORY_L","SEC_SCN_FACT")  -- Manufacturing Facility
+Menu2_Option3 = GetPuzzleOption("UI_NAV_DROPPOD_NAME_L", "SCAN_1")  -- ExoSuit DropPod
 More_Options2 = GetMorePuzzleOption("?ATOMIC_SCANNER")
 Menu2_Options = Menu2_Option1..Menu2_Option2..Menu2_Option3..More_Options2
 
 --Third set of options
-Menu3_Option1 = GetPuzzleOption("UI_CORE_ACT2_STEP8_MARKER", "SHOW_CRASHSITE") -- Crashed Freighter
-Menu3_Option2 = GetPuzzleOption("UI_ABAND_EVENT_AREA20", "SEC_SCN_OBS")  -- Observatory
-Menu3_Option3 = GetPuzzleOption("NAV_DATA_OPTC", "RANDOM_SCAN_C")  -- Scan Habitable Outposts
+Menu3_Option1 = GetPuzzleOption("UI_LIBRARY_ENTRANCE_DESC", "PLANET_ARCHIVES")  -- Planetary Archives
+Menu3_Option2 = GetPuzzleOption("UI_CORE_ACT2_STEP8_MARKER", "SHOW_CRASHSITE") -- Crashed Freighter
+Menu3_Option3 = GetPuzzleOption("UI_ABAND_EVENT_AREA20", "SEC_SCN_OBS")  -- Observatory
 More_Options3 = GetMorePuzzleOption("?NUCLEAR_SCANNER")
 Menu3_Options = Menu3_Option1..Menu3_Option2..Menu3_Option3..More_Options3
 
 --Fourth set of options
-Menu4_Option1 = GetPuzzleOption("UI_SENTINEL_HIVE_NAME", "R_SHOW_HIVEONLY")  -- Sentinel Pillar
-Menu4_Option2 = GetPuzzleOption("SCAN_GRAVE", "R_CAVEGRAVE")  -- Traveler Grave
-Menu4_Option3 = GetPuzzleOption("UI_RECOVER_BASE_SUB", "R_BASE")  -- "Wild" Base Computer
+Menu4_Option1 = GetPuzzleOption("NAV_DATA_OPTC", "RANDOM_SCAN_C")  -- Scan Habitable Outposts
+Menu4_Option2 = GetPuzzleOption("UI_SENTINEL_HIVE_NAME", "R_HIVE")  -- Sentinel Pillar
+Menu4_Option3 = GetPuzzleOption("SCAN_GRAVE", "R_CAVEGRAVE")  -- Traveler Grave
 More_Options4 = GetMorePuzzleOption("?HYDRO_SCANNER")
 Menu4_Options = Menu4_Option1..Menu4_Option2..Menu4_Option3..More_Options4
 
--- --Fifth set of options, also get a close option
-Menu5_Option1 = GetPuzzleOption("BUILDING_GLITCHYSTORYBOX", "R_GLITCH")  -- BOUNDARY FAILURE
-Menu5_Option2 = GetPuzzleOption("BUILDING_ABANDONED", "R_ABANDONED")  -- Abandoned Building
-Menu5_Options = Menu5_Option1..Menu5_Option2..All_Request_Leave
+--Fifth set of options, also get a close option
+Menu5_Option1 = GetPuzzleOption("UI_RECOVER_BASE_SUB", "R_BASE")  -- "Wild" Base Computer
+Menu5_Option2 = GetPuzzleOption("BUILDING_GLITCHYSTORYBOX", "R_GLITCH")  -- BOUNDARY FAILURE
+Menu5_Option3 = GetPuzzleOption("BUILDING_ABANDONED", "R_ABANDONED")  -- Abandoned Building
+--Menu5_Options = Menu5_Option1..Menu5_Option2..Menu5_Option3..All_Request_Leave
+Menu5_Options = Menu5_Option1..Menu5_Option2..Menu5_Option3
 
 --Put all the options together.
-ALL_PUZZLE_UPDATES = [[      <Property name="Options">
-]]..Menu1_Options..Menu2_Options..Menu3_Options..Menu4_Options..Menu5_Options
+--ALL_PUZZLE_UPDATES = [[      <Property name="Options">]]
+ALL_PUZZLE_UPDATES = Menu1_Options..Menu2_Options..Menu3_Options..Menu4_Options..Menu5_Options
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -447,32 +450,34 @@ NMS_MOD_DEFINITION_CONTAINER =
 		{
 			["MBIN_CHANGE_TABLE"] =
 			{
+				-- {
+					-- ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
+					-- ["EXML_CHANGE_TABLE"] =
+					-- {
+						-- {
+							-- ["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER","Name","ALL_REQUEST_LEAVE",},
+							-- -- ["PRECEDING_KEY_WORDS"] = {"Options"},
+							-- -- ["LINE_OFFSET"]         = "1",
+							-- ["REMOVE"] = "SECTION",  --Remove original options section
+						-- },
+					-- },
+				-- },
 				{
 					["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
 					["EXML_CHANGE_TABLE"] =
 					{
+						-- {
+							-- ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER"},
+							-- ["VALUE_CHANGE_TABLE"] =
+						--	{
+						--		{"TextAlien", 	""} --org UI_SIGNAL_SCANNER_DESC_ALT},
+						--	},
+						-- },
 						{
-							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
-							["PRECEDING_KEY_WORDS"] = {"Options"},
-							["LINE_OFFSET"]         = "1",
-							["REMOVE"] = "SECTION",  --Remove original options section
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"TextAlien", 	""} --org UI_SIGNAL_SCANNER_DESC_ALT},
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER"},
-							["PRECEDING_KEY_WORDS"] = {"RequiresScanEvent"},
+							-- ["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER",},
+							["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER","Name","UI_SIGNAL_NEAREST_OPT"},
+							["ADD_OPTION"]        = "ADDafterSECTION",
+							-- ["PRECEDING_KEY_WORDS"] = {"RequiresScanEvent"},
 							["ADD"]                 = ALL_PUZZLE_UPDATES,
 						},
 					},
