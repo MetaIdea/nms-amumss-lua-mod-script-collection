@@ -2,9 +2,11 @@ ModName = "SlotMaster"
 Author = "Jackty89"
 
 InventoryTablePath = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
+DefaultRealityPath = "METADATA/REALITY/DEFAULTREALITY.MBIN"
+DefaultSaveDatePath = "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN"
 
-MaxInventory     = 120
-MaxTech          = 60
+MaxInventoryCap     = 120
+MaxTechCap          = 60
 
 InventoryWidth   = 10
 InventoryHeight  = 12
@@ -12,6 +14,8 @@ InventoryHeight  = 12
 TechWidth        = 10
 TechHeight       = 6
 
+SpecialTechWidth = 10
+SpecialTechHeight = 6
 
 ImproveShip      = true
 ImproveWeapon    = true
@@ -20,6 +24,7 @@ ImproveVehicle   = true
 ImproveInventory = true
 ImproveFreighter = true
 
+ImproveSpecialSlots = false
 MaxSlot          = false
 
 AlienSizes = {
@@ -50,23 +55,23 @@ ShipSizes = {
     "SciSmall",
     "SciMedium",
     "SciLarge",
-    
+
     "FgtSmall",
     "FgtMedium",
     "FgtLarge",
-    
+
     "ShuSmall",
     "ShtMedium",
     "ShtLarge",
-    
+
     "DrpSmall",
     "DrpMedium",
     "DrpLarge",
-    
+
     "SailSmall",
     "SailMedium",
     "SailLarge",
-    
+
     "RoySmall",
     "RoyMedium",
     "FreighterLarge"
@@ -96,6 +101,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                     }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = DefaultRealityPath,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = DefaultSaveDatePath,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
                 }
             }
         }
@@ -103,6 +120,97 @@ NMS_MOD_DEFINITION_CONTAINER =
 }
 
 local ChangesToInventoryTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+
+function EditInventory(type, maxSlot)
+    if maxSlot then
+        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"MinSlots", MaxInventoryCap},
+                {"MaxSlots", MaxInventoryCap},
+                {"MinTechSlots", MaxTechCap},
+                {"MaxTechSlots", MaxTechCap}
+            }
+        }
+    end
+
+    if ImproveSpecialSlots then
+        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"MaxNumSpecialTechSlots", (SpecialTechHeight * SpecialTechWidth)}
+            }
+        }
+
+        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "SpecialTechSlotMaxIndex", "GcInventoryIndex.xml"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"X", SpecialTechWidth},
+                {"Y", SpecialTechHeight}
+            }
+        }
+    end
+
+    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "Bounds", "GcInventoryLayoutGenerationBounds.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"MaxWidthSmall",     InventoryWidth},
+            {"MaxHeightSmall",    InventoryHeight},
+            {"MaxWidthStandard",  InventoryWidth},
+            {"MaxHeightStandard", InventoryHeight},
+            {"MaxWidthLarge",     InventoryWidth},
+            {"MaxHeightLarge",    InventoryHeight}
+        }
+    }
+
+    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "TechBounds", "GcInventoryLayoutGenerationBounds.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"MaxWidthSmall",     TechWidth},
+            {"MaxHeightSmall",    TechHeight},
+            {"MaxWidthStandard",  TechWidth},
+            {"MaxHeightStandard", TechHeight},
+            {"MaxWidthLarge",     TechWidth},
+            {"MaxHeightLarge",    TechHeight}
+        }
+    }
+end
+
+function ImproveClassSlotLimit(type)
+    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize", type, "MaxInventoryCapacity"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"C", MaxInventoryCap},
+            {"B", MaxInventoryCap},
+            {"A", MaxInventoryCap},
+            {"S", MaxInventoryCap}
+        }
+    }
+
+    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize", type, "MaxTechInventoryCapacity"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"C", MaxTechCap},
+            {"B", MaxTechCap},
+            {"A", MaxTechCap},
+            {"S", MaxTechCap}
+        }
+    }
+end
 
 function ImproveSuitInventory()
     EditInventory("Suit", MaxSlot)
@@ -133,10 +241,10 @@ function ImproveWeaponInventory()
         ["SPECIAL_KEY_WORDS"] = {"WeaponInventoryMaxUpgradeSize", "GcWeaponInventoryMaxUpgradeCapacity.xml"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"C", MaxTech},
-            {"B", MaxTech},
-            {"A", MaxTech},
-            {"S", MaxTech}
+            {"C", MaxTechCap},
+            {"B", MaxTechCap},
+            {"A", MaxTechCap},
+            {"S", MaxTechCap}
         }
     }
 end
@@ -155,75 +263,133 @@ function ImproveAlienInventory()
     ImproveClassSlotLimit("Alien")
 end
 
-function EditInventory(type, maxSlot)
-    if maxSlot then
-        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
-        {
-            ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml"},
-            ["VALUE_CHANGE_TABLE"] =
-            {
-                {"MinSlots", MaxInventory},
-                {"MaxSlots", MaxInventory},
-                {"MinTechSlots", MaxTech},
-                {"MaxTechSlots", MaxTech},
-            }
-        }
-    end
-
-    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+local ChangesToDefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
+function NewSaveStartingSlots()
+    ChangesToDefaultReality[#ChangesToDefaultReality + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "Bounds", "GcInventoryLayoutGenerationBounds.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"SuitStartingSlotLayout", "GcInventoryLayout.xml"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"MaxWidthSmall",     InventoryWidth},
-            {"MaxHeightSmall",    InventoryHeight},
-            {"MaxWidthStandard",  InventoryWidth},
-            {"MaxHeightStandard", InventoryHeight},
-            {"MaxWidthLarge",     InventoryWidth},
-            {"MaxHeightLarge",    InventoryHeight},
+            {"Slots", MaxInventoryCap}
         }
     }
-
-    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    ChangesToDefaultReality[#ChangesToDefaultReality + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "TechBounds", "GcInventoryLayoutGenerationBounds.xml"},
+        ["SPECIAL_KEY_WORDS"] = {"ShipStartingLayout", "GcInventoryLayout.xml"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"MaxWidthSmall",     TechWidth},
-            {"MaxHeightSmall",    TechHeight},
-            {"MaxWidthStandard",  TechWidth},
-            {"MaxHeightStandard", TechHeight},
-            {"MaxWidthLarge",     TechWidth},
-            {"MaxHeightLarge",    TechHeight},
+            {"Slots", MaxInventoryCap}
+        }
+    }
+    ChangesToDefaultReality[#ChangesToDefaultReality + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"SuitTechOnlyStartingSlotLayout", "GcInventoryLayout.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Slots", MaxTechCap}
+        }
+    }
+    ChangesToDefaultReality[#ChangesToDefaultReality + 1] =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ShipTechOnlyStartingLayout", "GcInventoryLayout.xml"},
+        ["VALUE_CHANGE_TABLE"] =
+        {
+            {"Slots", MaxTechCap}
         }
     }
 end
 
-function ImproveClassSlotLimit(type)
-    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+function SpecialSlot(row, col)
+    return
+    [[
+      <Property value="GcInventorySpecialSlot.xml">
+        <Property name="Type" value="GcInventorySpecialSlotType.xml">
+          <Property name="InventorySpecialSlotType" value="TechBonus" />
+        </Property>
+        <Property name="Index" value="GcInventoryIndex.xml">
+          <Property name="X" value="]]..row..[[" />
+          <Property name="Y" value="]]..col..[[" />
+        </Property>
+      </Property>
+    ]]
+end
+
+function AddSpecialSlotProperty(entries)
+    return
+    [[
+        <Property name="SpecialSlots">
+        ]]..entries..[[
+        </Property>
+    ]]
+end
+
+local ChangesToDefaultSaveData= NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
+function SaveDataSpecialSlots()
+    local specialTechEntries = {}
+    for row = 0, SpecialTechWidth, 1 do
+        for col = 0, SpecialTechHeight, 1 do
+            table.insert(specialTechEntries, SpecialSlot(row, col))
+        end
+    end
+    ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
     {
-        ["PRECEDING_KEY_WORDS "] = {"ShipInventoryMaxUpgradeSize", type, "MaxInventoryCapacity"},
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"C", MaxInventory},
-            {"B", MaxInventory},
-            {"A", MaxInventory},
-            {"S", MaxInventory}
-        }
+        ["PRECEDING_KEY_WORDS"] = {"Inventory_TechOnly", "SpecialSlots"},
+        ["ADD"]	= table.concat(specialTechEntries)
     }
 
-    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
+    ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
     {
-        -- ["SPECIAL_KEY_WORDS"] = {type, "GcShipInventoryMaxUpgradeCapacity.xml"},
-        ["PRECEDING_KEY_WORDS "] = {"ShipInventoryMaxUpgradeSize", type, "MaxTechInventoryCapacity"},
-        ["VALUE_CHANGE_TABLE"] =
-        {
-            {"C", MaxTech},
-            {"B", MaxTech},
-            {"A", MaxTech},
-            {"S", MaxTech}
-        }
+        ["PRECEDING_KEY_WORDS"] = {"Buggy", "Inventory_TechOnly", "SpecialSlots"},
+        ["ADD"]	= table.concat(specialTechEntries)
     }
+    ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Bike", "Inventory_TechOnly", "SpecialSlots"},
+        ["ADD"]	= table.concat(specialTechEntries)
+    }
+    ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Truck", "Inventory_TechOnly", "SpecialSlots"},
+        ["ADD"]	= table.concat(specialTechEntries)
+    }
+    ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"WheeledBike", "Inventory_TechOnly", "SpecialSlots"},
+        ["ADD"]	= table.concat(specialTechEntries)
+    }
+    ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Hovercraft", "Inventory_TechOnly", "SpecialSlots"},
+        ["ADD"]	= table.concat(specialTechEntries)
+    }
+    ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Submarine", "Inventory_TechOnly", "SpecialSlots"},
+        ["ADD"]	= table.concat(specialTechEntries)
+    }
+    ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Mech", "Inventory_TechOnly", "SpecialSlots"},
+        ["ADD"]	= table.concat(specialTechEntries)
+    }
+
+    -- Only affects the initial ship (newly added ships or fresh spawn are unaffected)
+    -- ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
+    -- {
+    --     ["PRECEDING_KEY_WORDS"] = {"ShipOwnership", "GcPlayerOwnershipData.xml", "Inventory_TechOnly", "StackSizeGroup"},
+    --     ["SECTION_ACTIVE"] = {1,2,3,4,5,6,7,9},
+    --     ["LINE_OFFSET"] = 3,
+    --     ["REMOVE"] = "LINE"
+    -- }
+
+    -- ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
+    -- {
+    --     ["PRECEDING_KEY_WORDS"] = {"GcPlayerOwnershipData.xml", "Inventory_TechOnly", "StackSizeGroup"},
+    --     ["SECTION_ACTIVE"] = {1,2,3,4,5,6,7,9},
+    --     ["LINE_OFFSET"] = 3,
+    --     ["ADD"]	= AddSpecialSlotProperty(table.concat(specialTechEntries))
+    -- }
+
 end
 
 if ImproveShip then
@@ -240,7 +406,12 @@ if ImproveVehicle then
 end
 if ImproveInventory then
     ImproveSuitInventory()
+    NewSaveStartingSlots()
 end
 if ImproveFreighter then
     ImproveFreighterInventory()
+end
+
+if ImproveSpecialSlots then
+    SaveDataSpecialSlots()
 end

@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "SoS.pak",
+["MOD_FILENAME"]	= "BoostGlider.pak",
 ["MOD_AUTHOR"]		= "OTBP",
-["NMS_VERSION"]		= "4.0+",
+["NMS_VERSION"]		= "4.0+ Build ID 9763858",
 ["MOD_DESCRIPTION"]	= "Walk, Run, Swim, Jet:Range, Height, Landing, Melee, Force, Speed, Refill, More..",
 ["MODIFICATIONS"]	=
 	{
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "UnderwaterMaxSpeed", 				"12" }, 	--WayPoint "4"
 								{ "UnderwaterForce", 					"20" }, 	--WayPoint "15"
 								{ "UnderwaterMaxJetpackEscapeSpeed", 	"24" }, 	--WayPoint "8"
-								{ "UnderwaterJetpackEscapeForce","36" },            --WayPoint "20" Testing
+								{ "UnderwaterJetpackEscapeForce",		"36" },     --WayPoint "20" Testing
 								{ "HealthRechargeMinTimeSinceDamage", 	"1" }, 		--WayPoint "10"
 								{ "CockpitEjectTestSphereRadius", 		"2" }, 		--WayPoint "0.4"
 								{ "EnergyDischargeRateMedium", 			"0.02" }, 	--WayPoint "0.25"
@@ -53,7 +53,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "JetpackIgnitionTime", 				"0.1" }, 	--WayPoint "0.4"
 								{ "JetpackMinIgnitionTime", 			"0.05" }, 	--WayPoint "0.2"
 								{ "JetpackFillRate", 					"99" }, 	--WayPoint "0.5"
-								{ "JetpackFillRateMidair","2" },                    --WayPoint "0.25" Testing
+								{ "JetpackFillRateMidair",				"2" },      --WayPoint "0.25" Testing
 								{ "JetpackIgnitionForceDeadPlanetExtra", "80" }, 	--WayPoint "45"
 								{ "MaxNumDestroyEffects", 				"0" }, 		--WayPoint "8"
 								{ "MinNumDestroyEffects", 				"0" }, 		--WayPoint "3"
