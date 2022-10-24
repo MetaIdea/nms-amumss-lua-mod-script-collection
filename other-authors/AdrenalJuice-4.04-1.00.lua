@@ -1,31 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "AdrenalJuice-3.98-1.00.pak",
+["MOD_FILENAME"] 			= "AdrenalJuice-4.04-1.00.pak",
 ["MOD_AUTHOR"]				= "Tinz",
-["NMS_VERSION"]				= "3.98",
+["NMS_VERSION"]				= "4.04",
 ["MODIFICATIONS"] 			= 
 	{
-		{
-			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","JET1",},
-							["PRECEDING_KEY_WORDS"] = {"Suit_Jetpack_Tank",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Bonus",	"200"},	-- Original "2.75" line 549 --This will generate a WARNING
-								{"Bonus",	"100"}, 	-- Original "2.75" line 549
-							}
-						}
-					}
-				},
-			}
-		},
 		{
 			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
@@ -85,9 +64,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
+							["PRECEDING_KEY_WORDS"] = "JetpackTankTimes",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"IGNORE",	"100" }
+							}
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								
+								{"FreeJetpackRange",				"18"},  -- Original "3"
+								{"FreeJetpackRangePrime",			"30"},  -- Original "5"
+								{"FreeJetpackRangeNonTerrain",		"6.6"},  -- Original "1.1"
+								{"JetpackDrainHorizontalFactor",	"0.1"}, -- Original "2.5"
 								{"JetpackMaxSpeed",					"50"}, 	-- Original "5"
 								{"GroundRunSpeed",					"24"}, 	-- Original "8"
 								{"GroundWalkSpeed",					"6"}, 	-- Original "4.4"
