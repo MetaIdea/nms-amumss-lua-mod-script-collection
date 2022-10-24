@@ -364,8 +364,8 @@ ModName 						= "NMS Moar Stellar Extractors "
 Author								= "EchoTree "
 LuaAuthor							= "EchoTree & Jackty89"
 ModDescription				=	"Adds 4 new Stellar Extractor rooms to the game. Adds 20 New Files, Modifies METADATA/REALITY DEFAULTSAVEDATA.MBIN, DEFAULTSAVEDATACREATIVE.MBIN, /TABLES BASEBUILDINGOBJECTSTABLE.MBIN, BASEBUILDINGPARTSTABLE.MBIN, BASEBUILDINGPARTSNAVDATATABLE.MBIN, NMS_REALITY_GCPRODUCTTABLE.MBIN, and all of the PLACEMENTDATA.ENTITY.MBINS for the Industrial Rooms."
-GameVersion					=	"v4.04.0"
-Build									= ".2"
+GameVersion					=	"v4.05.0"
+Build									= ".1"
 CustomLanguageTag		= "NMSMSE"
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -1854,30 +1854,31 @@ function FillCustomlangFile(Data)
         local NameLCEntries = {}
         local NameEntries = {}
 
-        local Languages = Data[i]["Languages"]
+        local LanguagesData = Data[i]["Languages"]
 
         local NameID = ProductID.."_NAME"
         local NameLCID = "BLD_"..ProductID.."_NAME_L"
         local SubID = "BLD_"..ProductID.."_SUB"
         local DescID = "BLD_"..ProductID.."_DESC"
+		
 		local UIDescID = "BLD_"..ProductID.."_DESC"
 
-        for j = 1, #Languages do
-            local Language = Languages[j][1]
+        for j = 1, #LanguagesData do
+            local Language = LanguagesData[j][1]
 
-            local NameLC = Languages[j][2]
+            local NameLC = LanguagesData[j][2]
             table.insert(NameLCEntries, NewLanguageEntry(Language, NameLC))
 
             local Name = string.upper(NameLC)
             table.insert(NameEntries, NewLanguageEntry(Language, Name))
 
-            local NewSubTitle = Languages[j][3]
+            local NewSubTitle = LanguagesData[j][3]
             table.insert(SubtitleEntries, NewLanguageEntry(Language, NewSubTitle))
 
-            local NewDescription = Languages[j][4]
+            local NewDescription = LanguagesData[j][4]
             table.insert(DescriptionEntries, NewLanguageEntry(Language, NewDescription))
 			
-			local NewUIDesc = Languages[j][2]
+			local NewUIDesc = LanguagesData[j][2]
 			table.insert(UIDescEntries, NewLanguageEntry(Language, NewUIDesc))
         end
 
