@@ -11,7 +11,7 @@ local enabledTweaks = {
 	hangarSalvageTerminal = true,			-- adds salvage terminals to the freighter hangar, below stairs (generates WARNING, can be ignored)
 	passiveProtectionTechs = true,			-- changes active hazard protection tech upgrades to passive ones (S:4-7%, A:2-4%, B:1-2%)
 	noWeaponFlashes = true,					-- removes muzzle and projectile flashes from weapons
-	maximizedTechs = false,					-- procedurally generated tech upgrade values are maximized
+	maximizedTechs = false,					-- procedurally generated tech upgrade values are maximized and provide all possible improvements
 	noInventoryDamage = true,				-- disables the damage that the installed techs suffer
 	lessMaintenance = true,					-- some damaged objects; crates and tech debris no longer require maintenance
 	noPortalCharging = true,				-- removes portal charging steps
@@ -21,7 +21,14 @@ local enabledTweaks = {
 	blackScreenFlashes = true,				-- turns some screen flashes to black (entering/exiting vehicles, miniportals)
 	rapidToolScanner = true,				-- tool scanners recharge much faster and their range is bumped up a little
 	darkerScannerPulse = true,				-- tones ALL of the (tool, vehicle, ship) scanner pulse colours down
+	noSentinelTerrainDamage = true,			-- sentinel projectiles damage the terrain no more
 }
+
+local ignore = "IGNORE"
+
+for tweakName, tweakValue in next, enabledTweaks do
+	if string.find(tweakName, "Mult", 1, true) ~= nil and type(tweakValue) == "boolean" then enabledTweaks[tweakName] = 1 end
+end
 
 local tweaks = {
 	hangarSalvageTerminal = {
@@ -73,7 +80,8 @@ local tweaks = {
 					{"ID", "T_COLDPROT"},
 					{"ID", "T_HOTPROT"},
 					{"ID", "T_TOX"},
-					{"ID", "T_RAD"}
+					{"ID", "T_RAD"},
+					{"ID", "T_UNW"}
 				},
 				fields = {
 					Upgrade = {default = false, altered = true},
@@ -87,7 +95,8 @@ local tweaks = {
 					{"ID", "T_COLDPROT"},
 					{"ID", "T_HOTPROT"},
 					{"ID", "T_TOX"},
-					{"ID", "T_RAD"}
+					{"ID", "T_RAD"},
+					{"ID", "T_UNW"}
 				},
 				removeSection = true
 			},
@@ -96,7 +105,8 @@ local tweaks = {
 					{"ID", "T_COLDPROT", "ChargeType", "GcRealitySubstanceCategory.xml"},
 					{"ID", "T_HOTPROT", "ChargeType", "GcRealitySubstanceCategory.xml"},
 					{"ID", "T_TOX", "ChargeType", "GcRealitySubstanceCategory.xml"},
-					{"ID", "T_RAD", "ChargeType", "GcRealitySubstanceCategory.xml"}
+					{"ID", "T_RAD", "ChargeType", "GcRealitySubstanceCategory.xml"},
+					{"ID", "T_UNW", "ChargeType", "GcRealitySubstanceCategory.xml"}
 				},
 				addSection = true,
 				section = [[      <Property name="ChargeBy" />]]
@@ -145,10 +155,21 @@ local tweaks = {
 			},
 			{
 				specialKeyWords = {
+					{"ID", "UP_UNW1"},
+					{"ID", "UP_UNW2"},
+					{"ID", "UP_UNW3"},
+				},
+				fields = {
+					StatsType = {default = "Suit_Underwater", altered = "Suit_Protection_WaterDrain"},
+				}
+			},
+			{
+				specialKeyWords = {
 					{"ID", "UP_COLD1"},
 					{"ID", "UP_HOT1"},
 					{"ID", "UP_TOX1"},
 					{"ID", "UP_RAD1"},
+					{"ID", "UP_UNW1"},
 				},
 				fields = {
 					ValueMin = {default = 180, altered = 1.01},
@@ -161,6 +182,7 @@ local tweaks = {
 					{"ID", "UP_HOT2"},
 					{"ID", "UP_TOX2"},
 					{"ID", "UP_RAD2"},
+					{"ID", "UP_UNW2"},
 				},
 				fields = {
 					ValueMin = {default = 200, altered = 1.02},
@@ -173,6 +195,7 @@ local tweaks = {
 					{"ID", "UP_HOT3"},
 					{"ID", "UP_TOX3"},
 					{"ID", "UP_RAD3"},
+					{"ID", "UP_UNW3"},
 				},
 				fields = {
 					ValueMin = {default = 220, altered = 1.04},
@@ -353,7 +376,21 @@ local tweaks = {
 				}
 			}
 		}
-	}
+	},
+	noSentinelTerrainDamage = {
+		["METADATA/PROJECTILES/PROJECTILETABLE.MBIN"] = {
+			{
+				specialKeyWords = {
+					{"Id", "ROBOTGRENADE"},
+					{"Id", "ROBOTGRENADE2"},
+					{"Id", "SENMECHCANON"}
+				},
+				fields = {
+					BehaviourFlags = "ScareCreatures, ExplosionForce"
+				}
+			}
+		}
+	},
 }
 
 local processTweaksTable
@@ -361,7 +398,8 @@ processTweaksTable = function(tweakTables)
 	local modificationTables = {}
 
 	for tweakName, tweakTable in next, tweakTables do
-		if enabledTweaks[tweakName] or tweakName == "misc" then
+		if tweakName == "misc" or type(enabledTweaks[tweakName]) == "boolean" and enabledTweaks[tweakName]
+		or type(enabledTweaks[tweakName]) == "number" and enabledTweaks[tweakName] ~= 1 and enabledTweaks[tweakName] > 0 then
 			for mbinPath, changeTables in pairs(tweakTable) do
 				local mbinChangeTable = {
 					MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
@@ -371,9 +409,15 @@ processTweaksTable = function(tweakTables)
 				for _, changeTable in ipairs(changeTables) do
 					local convertedChangeTable = {
 						SECTION_UP = changeTable.selectLevel or nil,
-						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
+						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or changeTable.precedingKeyWordsFirst or nil,
+						PRECEDING_FIRST = changeTable.precedingKeyWordsFirst or nil,
 						SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
 						FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
+						WHERE_IN_SECTION = changeTable.findSections or nil,
+						WHERE_IN_SUBSECTION = changeTable.findSubSections or changeTable.findAllSubSections or nil,
+						WISEC_LOP = changeTable.findSectionsIfAllMatch and "AND" or nil,
+						WISUBSEC_LOP = changeTable.findSubSectionsIfAllMatch and "AND" or nil,
+						WISUBSEC_OPTION = changeTable.findAllSubSections and "ALL" or nil,
 						REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
 						MATH_OPERATION = changeTable.multiply and "*" or nil,
 						REMOVE = changeTable.removeSection and "SECTION" or nil,

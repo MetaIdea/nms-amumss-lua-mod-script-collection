@@ -22,6 +22,12 @@ local enabledTweaks = {
 	preciseNavigation = true,				-- the auto-locking feature of the pulse drive now have more strict angles and ignores other player stuff
 }
 
+local ignore = "IGNORE"
+
+for tweakName, tweakValue in next, enabledTweaks do
+	if string.find(tweakName, "Mult", 1, true) ~= nil and type(tweakValue) == "boolean" then enabledTweaks[tweakName] = 1 end
+end
+
 local tweaks = {
 	looterExplorer = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
@@ -193,7 +199,8 @@ processTweaksTable = function(tweakTables)
 	local modificationTables = {}
 
 	for tweakName, tweakTable in next, tweakTables do
-		if enabledTweaks[tweakName] or tweakName == "misc" then
+		if tweakName == "misc" or type(enabledTweaks[tweakName]) == "boolean" and enabledTweaks[tweakName]
+		or type(enabledTweaks[tweakName]) == "number" and enabledTweaks[tweakName] ~= 1 and enabledTweaks[tweakName] > 0 then
 			for mbinPath, changeTables in pairs(tweakTable) do
 				local mbinChangeTable = {
 					MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
@@ -203,9 +210,15 @@ processTweaksTable = function(tweakTables)
 				for _, changeTable in ipairs(changeTables) do
 					local convertedChangeTable = {
 						SECTION_UP = changeTable.selectLevel or nil,
-						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
+						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or changeTable.precedingKeyWordsFirst or nil,
+						PRECEDING_FIRST = changeTable.precedingKeyWordsFirst or nil,
 						SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
 						FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
+						WHERE_IN_SECTION = changeTable.findSections or nil,
+						WHERE_IN_SUBSECTION = changeTable.findSubSections or changeTable.findAllSubSections or nil,
+						WISEC_LOP = changeTable.findSectionsIfAllMatch and "AND" or nil,
+						WISUBSEC_LOP = changeTable.findSubSectionsIfAllMatch and "AND" or nil,
+						WISUBSEC_OPTION = changeTable.findAllSubSections and "ALL" or nil,
 						REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
 						MATH_OPERATION = changeTable.multiply and "*" or nil,
 						REMOVE = changeTable.removeSection and "SECTION" or nil,
