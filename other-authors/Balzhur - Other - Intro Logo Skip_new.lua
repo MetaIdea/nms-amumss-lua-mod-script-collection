@@ -5,7 +5,7 @@ ModName		= "Intro Logo Skip"
 ModCategory	= "Other"
 ModDescription	= "Skip intro logos"
 GameVersion	= "3.66"
-ModVersion	= "1.0"
+ModVersion	= "1.1"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModAuthor.." - "..ModCategory.." - "..ModName.."-"..ModVersion..".pak",
@@ -18,6 +18,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["MBIN_CHANGE_TABLE"] = {{
 			["MBIN_FILE_SOURCE"]	= "METADATA\UI\BOOTLOGOPC.MBIN",
 			["EXML_CHANGE_TABLE"] 	= {{
+				["PRECEDING_KEY_WORDS"]	= {"Textures"},
+				["REPLACE_TYPE"]	= "ALL",
+				["VALUE_CHANGE_TABLE"]	= {
+					{"Value", ""}
+				}
+			},{
 				["PRECEDING_KEY_WORDS"]	= {"DisplayTime"},
 				["REPLACE_TYPE"]	= "ALL",
 				["LINE_OFFSET"]		= "1",
