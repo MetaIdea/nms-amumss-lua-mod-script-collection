@@ -5,7 +5,7 @@ ModName		= "Inventory Slot Font"
 ModCategory	= "UI"
 ModDescription	= "Changes the font style of Substances/Products amount and Tech charge to be consistent with Product XX/YY style"
 GameVersion	= "4.04"
-ModVersion	= "1.0"
+ModVersion	= "1.1"
 -- Thanks to lyravega for ideas!
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -27,6 +27,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{"Height",		"25"}, 	-- Original "32"
 					{"DropShadowOffset",	"1"}, 	-- Original "3"
 					{"OutlineSize",		"2"}, 	-- Original "4"
+				}
+			}}
+		},{
+			["MBIN_FILE_SOURCE"]	= "UI/SLOTS/SLOT_ITEM.MBIN",
+			["EXML_CHANGE_TABLE"] 	= {{
+				["SPECIAL_KEY_WORDS"]	= {"ID", "TEXTLOW"},	-- font style for inventory Substances/Products amount and Tech charge when picked
+				["SECTION_UP"] = 1,
+				["REPLACE_TYPE"]	= "ALL",
+				["VALUE_CHANGE_TABLE"]	= {
+					{"Height",		"25"}, 	-- Original "30"
+					{"PaddingX",		"0"}, 	-- Original "3"
+					{"PaddingY",		"0"}, 	-- Original "1"
 				}
 			}}
 		}}
