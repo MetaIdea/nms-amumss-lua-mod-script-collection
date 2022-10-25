@@ -17,6 +17,12 @@ local enabledTweaks = {
 	smallerCargoIcons = false,				-- makes the cargo icons smaller (disabled by default due to hardcoded limit of max 50 icons)
 }
 
+local ignore = "IGNORE"
+
+for tweakName, tweakValue in next, enabledTweaks do
+	if string.find(tweakName, "Mult", 1, true) ~= nil and type(tweakValue) == "boolean" then enabledTweaks[tweakName] = 1 end
+end
+
 local tweaks = {
 	swapTechAndCargo = {
 		["UI/INVENTORYPAGE.MBIN"] = {
@@ -35,11 +41,10 @@ local tweaks = {
 				replaceAll = true
 			},
 			{
-				specialKeyWords = {"ID", "INV_TECH_LABEL"},
+				specialKeyWords = {"ID", "TECHHEADER"},
 				fields = {
-					PositionX = {default = 1092, altered = 1092},
-					PositionY = {default = 703, altered = 1218},
-					IsHidden = {default = false, altered = enabledTweaks.hideCargoLabel}
+					PositionX = {default = 1095, altered = 1095},
+					PositionY = {default = 701, altered = 1220}
 				},
 				replaceAll = true
 			},
@@ -58,11 +63,10 @@ local tweaks = {
 				replaceAll = true
 			},
 			{
-				specialKeyWords = {"ID", "INV_MAIN_LABEL"},
+				specialKeyWords = {"ID", "CARGOHEADER"},
 				fields = {
-					PositionX = {default = 1092, altered = 1092},
-					PositionY = {default = 1028, altered = 703},
-					IsHidden = {default = false, altered = enabledTweaks.hideTechLabel}
+					PositionX = {default = 1095, altered = 1095},
+					PositionY = {default = 1030, altered = 705}
 				},
 				replaceAll = true
 			}
@@ -72,7 +76,7 @@ local tweaks = {
 				specialKeyWords = {"ID", "SQU_INV_TECH"},
 				fields = {
 					PositionX = {default = 2106, altered = 2106},
-					PositionY = {default = 735, altered = 1250},
+					PositionY = {default = 735, altered = 1260},
 					Width = {default = 1012, altered = 1012},
 					Height = {default = 290, altered = 290},
 					WidthPercentage = {default = false, altered = false},
@@ -88,7 +92,7 @@ local tweaks = {
 				specialKeyWords = {"ID", "SQU_INV_REGULAR"},
 				fields = {
 					PositionX = {default = 2106, altered = 2106},
-					PositionY = {default = 1060, altered = 735},
+					PositionY = {default = 1070, altered = 735},
 					Width = {default = 1012, altered = 1012},
 					Height = {default = 480, altered = 480},
 					WidthPercentage = {default = false, altered = false},
@@ -117,7 +121,10 @@ local tweaks = {
 	hideCargoLabel = {
 		["UI/INVENTORYPAGE.MBIN"] = {
 			{
-				specialKeyWords = {"ID", "INV_MAIN_LABEL"},
+				specialKeyWords = {
+					{"ID", "INV_MAIN_LABEL"},
+					{"ID", "CARGOICON"}
+				},
 				selectLevel = 1,
 				fields = {
 					IsHidden = {default = false, altered = true},
@@ -130,7 +137,10 @@ local tweaks = {
 	hideTechLabel = {
 		["UI/INVENTORYPAGE.MBIN"] = {
 			{
-				specialKeyWords = {"ID", "INV_TECH_LABEL"},
+				specialKeyWords = {
+					{"ID", "INV_TECH_LABEL"},
+					{"ID", "TECHICON"}
+				},
 				selectLevel = 1,
 				fields = {
 					IsHidden = {default = false, altered = true},
@@ -211,7 +221,8 @@ processTweaksTable = function(tweakTables)
 	local modificationTables = {}
 
 	for tweakName, tweakTable in next, tweakTables do
-		if enabledTweaks[tweakName] or tweakName == "misc" then
+		if tweakName == "misc" or type(enabledTweaks[tweakName]) == "boolean" and enabledTweaks[tweakName]
+		or type(enabledTweaks[tweakName]) == "number" and enabledTweaks[tweakName] ~= 1 and enabledTweaks[tweakName] > 0 then
 			for mbinPath, changeTables in pairs(tweakTable) do
 				local mbinChangeTable = {
 					MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
@@ -221,9 +232,15 @@ processTweaksTable = function(tweakTables)
 				for _, changeTable in ipairs(changeTables) do
 					local convertedChangeTable = {
 						SECTION_UP = changeTable.selectLevel or nil,
-						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or nil,
+						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or changeTable.precedingKeyWordsFirst or nil,
+						PRECEDING_FIRST = changeTable.precedingKeyWordsFirst or nil,
 						SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
 						FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
+						WHERE_IN_SECTION = changeTable.findSections or nil,
+						WHERE_IN_SUBSECTION = changeTable.findSubSections or changeTable.findAllSubSections or nil,
+						WISEC_LOP = changeTable.findSectionsIfAllMatch and "AND" or nil,
+						WISUBSEC_LOP = changeTable.findSubSectionsIfAllMatch and "AND" or nil,
+						WISUBSEC_OPTION = changeTable.findAllSubSections and "ALL" or nil,
 						REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
 						MATH_OPERATION = changeTable.multiply and "*" or nil,
 						REMOVE = changeTable.removeSection and "SECTION" or nil,
