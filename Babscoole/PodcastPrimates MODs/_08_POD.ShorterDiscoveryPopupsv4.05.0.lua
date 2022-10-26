@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]  = "_08_POD_Shorter Discovery Popups.pak",
+["MOD_FILENAME"]  = "_08_POD.ShorterDiscoveryPopupsv4.05.0.pak",
 ["MOD_AUTHOR"]    = "PodcastPrimate",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.03",
+["NMS_VERSION"]   = "4.05",
 ["MODIFICATIONS"] = 
 	{
 		{
@@ -17,9 +17,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE", 
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"DiscoverPlanetTotalTime",   "1.5"}
-								{"DiscoverPlanetMessageWait", "0"},
-								{"DiscoverPlanetMessageTime", "1"},
+								{"DiscoverPlanetTotalTime",       "11"},
+								{"DiscoverPlanetMessageTime",     "1"},
+								{"EnableCraftingTree",            "False"},
+								{"DiscoverPlanetMessageTime",     "1"},
+								{"InfoPortalGuideCycleTime",      "5"},
+								{"InfoPortalMilestonesCycleTime", "5"},
 							}
 						},						
 					}
