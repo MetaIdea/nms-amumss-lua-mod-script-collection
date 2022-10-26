@@ -1,14 +1,14 @@
 -- Perfect Upgrade Modules
 -- Author: DarkScythe
 -- Date Created: Jul 18, 2022
--- Last Updated: Oct 15, 2022
+-- Last Updated: Oct 25, 2022
 --------------------------------------------------------------------------------
 modName		= "PerfectUpgradeModules"
 modAuthor	= "DarkScythe"
 modDesc		= "Overrides all upgrade modules to have the best possible vanilla stats, with optional custom power scaling"
 modVer		= "1.0."
 scriptVer	= "a"
-gameVer		= "4.04"
+gameVer		= "4.05"
 
 --[[
 Enter a number here to set the approximate Power Scaling of upgrade module stats
