@@ -47,7 +47,7 @@ GCPRODUCTTABLE_TEXT	=	[[
       </Property>
 ]]
 
-NMS_MOD_DEFINITION_Cjavascript-event-stripped {
+NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]		= "_"..ModAuthor.."."..ModName.."-"..GameVersion..".pak",
 	["MOD_DESCRIPTION"]	= BaseDescription,
 	["MOD_AUTHOR"]			= ModAuthor,
