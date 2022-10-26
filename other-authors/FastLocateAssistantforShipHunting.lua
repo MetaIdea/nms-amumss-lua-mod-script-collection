@@ -1,14 +1,14 @@
 -- Ship Hunting Assistant // Will NOT affect default seeds!
 -- Author: DarkScythe
 -- Date Created: Jul 03, 2022
--- Last Updated: Oct 07, 2022
+-- Last Updated: Oct 25, 2022
 --------------------------------------------------------------------------------
 modName		= "FastLocateAssistantforShipHunting"
 modAuthor	= "DarkScythe"
 modDesc		= "Speeds up ship hunting by filtering to specific types and increases spawn rates WITHOUT affecting default seeds so you get the same ships as vanilla players in every system. Helpful for players who want to share coordinates of interesting finds with others."
 modVer		= "1.0."
 scriptVer	= "a"
-gameVer		= "4.00"
+gameVer		= "4.05"
 -- Credits --
 -- Thanks to Lenni and Apex Fatality for the idea of isolating ship models.
 -- Thanks to Gumsk for the idea of speeding up NPC spawns.
@@ -64,43 +64,43 @@ inputPrompts		= {
 	Pressing ENTER without a response to any question will use CURRENT settings from the Lua script.
 ]]},
 	findExotics		= {huntExotics,
-[[	Do you want to find Exotic Ships?
-	Default = Y | Current = >> ]] .. (huntExotics and "Y" or "N") .. [[ <<
+[[	[#1 / 6] Do you want to find Exotic Ships?
+	Default: Y | Current: >> ]] .. (huntExotics and "Y" or "N") .. [[ <<
 ]]},
 	findExplorers	= {huntExplorers,
-[[	Do you want to find Explorers?
-	Default = N | Current = >> ]] .. (huntExplorers and "Y" or "N") .. [[ <<
+[[	[#2 / 6] Do you want to find Explorers?
+	Default: N | Current: >> ]] .. (huntExplorers and "Y" or "N") .. [[ <<
 ]]},
 	findFighters	= {huntFighters,
-[[	Do you want to find Fighters?
-	Default = N | Current = >> ]] .. (huntFighters and "Y" or "N") .. [[ <<
+[[	[#3 / 6] Do you want to find Fighters?
+	Default: N | Current: >> ]] .. (huntFighters and "Y" or "N") .. [[ <<
 ]]},
 	findHaulers		= {huntHaulers,
-[[	Do you want to find Haulers?
-	Default = N | Current = >> ]] .. (huntHaulers and "Y" or "N") .. [[ <<
+[[	[#4 / 6] Do you want to find Haulers?
+	Default: N | Current: >> ]] .. (huntHaulers and "Y" or "N") .. [[ <<
 ]]},
 	findShuttles	= {huntShuttles,
-[[	Do you want to find Shuttles?
-	Default = N | Current = >> ]] .. (huntShuttles and "Y" or "N") .. [[ <<
+[[	[#5 / 6] Do you want to find Shuttles?
+	Default: N | Current: >> ]] .. (huntShuttles and "Y" or "N") .. [[ <<
 ]]},
 	findSolars		= {huntSolars,
-[[	Do you want to find Solar Sail ships?
-	Default = N | Current = >> ]] .. (huntSolars and "Y" or "N") .. [[ <<
+[[	[#6 / 6] Do you want to find Solar Sail ships?
+	Default: N | Current: >> ]] .. (huntSolars and "Y" or "N") .. [[ <<
 ]]},
 	tweakOpts		= {false,
 [[	Would you like to adjust the optional script settings?
 ]]},
 	toggleSRank		= {forceSClass,
 [[	Do you want to restrict all spawns to S-class?
-	Default = N | Current = >> ]] .. (forceSClass and "Y" or "N") .. [[ <<
+	Default: N | Current: >> ]] .. (forceSClass and "Y" or "N") .. [[ <<
 ]]},
 	toggleSpawnFreq	= {modSpawnFreqMultis,
 [[	Do you want to change the spawn frequency multipliers?
-	Default = N | Current = >> ]] .. (modSpawnFreqMultis and "Y" or "N") .. [[ <<
+	Default: N | Current: >> ]] .. (modSpawnFreqMultis and "Y" or "N") .. [[ <<
 ]]},
 	getFreqOverride	= {spawnFreqMultiOverride,
 [[	Please enter any non-negative number as a desired spawn frequency multiplier:
-	Default: 0.5 ~ 5 | Current = >> ]] .. spawnFreqMultiOverride .. [[ <<
+	Default: 0.5 ~ 5 | Current: >> ]] .. spawnFreqMultiOverride .. [[ <<
 ]]},
 	processNone		= {false,
 [[	WARNING: Current settings will result in ZERO ship types being spawned!
