@@ -8,38 +8,38 @@ FileSource01 = "METADATA\SIMULATION\ENVIRONMENT\HAZARDTABLE.MBIN"
 
 --##### Variables #####
 --## Step ##
-NoO2ProtectionTimeX = 180		--  | 90 | 36
-NoO2ProtectionTimeY = 180		--  | 90 | 37
+NoO2ProtectionTimeX = 120		--  | 90 | 36
+NoO2ProtectionTimeY = 120		--  | 90 | 37
 
-ExHeatProtectionTimeX = 1080	--  | 540 | 64
-ExHeatProtectionTimeY = 80		--  | 40 | 65
-ExHeatDamageRateX = 25			--  | 50 | 68
-ExHeatDamageRateY = 10			--  | 20 | 69
-ExHeatWoundRateX = 25			--  | 50 | 72
-ExHeatWoundRateY = 10			--  | 20 | 73
-ExHeatTriggerValue = 52			--  | 49 | 82
+ExHeatProtectionTimeX = 720		--  | 540 | 64
+ExHeatProtectionTimeY = 54		--  | 40 | 65
+ExHeatDamageRateX = 30			--  | 50 | 68
+ExHeatDamageRateY = 15			--  | 20 | 69
+ExHeatWoundRateX = 30			--  | 50 | 72
+ExHeatWoundRateY = 15			--  | 20 | 73
+ExHeatTriggerValue = 51			--  | 49 | 82
 
-ExColdProtectionTimeX = 1080	--  | 540 | 92
-ExColdProtectionTimeY = 80		--  | 40 | 93
-ExColdDamageRateX = 25			--  | 50 | 96
-ExColdDamageRateY = 10			--  | 20 | 97
-ExColdWoundRateX = 25			--  | 50 | 100
-ExColdWoundRateY = 10			--  | 20 | 101
-ExColdTriggerValue = -52		--  | -49 | 110
+ExColdProtectionTimeX = 720		--  | 540 | 92
+ExColdProtectionTimeY = 54		--  | 40 | 93
+ExColdDamageRateX = 30			--  | 50 | 96
+ExColdDamageRateY = 15			--  | 20 | 97
+ExColdWoundRateX = 30			--  | 50 | 100
+ExColdWoundRateY = 15			--  | 20 | 101
+ExColdTriggerValue = -51		--  | -49 | 110
 
-GasProtectionTimeX = 1080		--  | 540 | 120
-GasProtectionTimeY = 80			--  | 40 | 121
-GasDamageRateX = 65				--  | 50 | 124
-GasDamageRateY = 30				--  | 20 | 125
-GasWoundRateX = 65				--  | 50 | 128
-GasWoundRateY = 30				--  | 20 | 129
+GasProtectionTimeX = 720		--  | 540 | 120
+GasProtectionTimeY = 54			--  | 40 | 121
+GasDamageRateX = 50				--  | 50 | 124
+GasDamageRateY = 20				--  | 20 | 125
+GasWoundRateX = 50				--  | 50 | 128
+GasWoundRateY = 20				--  | 20 | 129
 
-RadProtectionTimeX = 1080		--  | 540 | 148
-RadProtectionTimeY = 80			--  | 40 | 149
-RadDamageRateX = 15				--  | 50 | 152
-RadDamageRateY = 5				--  | 20 | 153
-RadWoundRateX = 15				--  | 50 | 156
-RadWoundRateY = 5				--  | 20 | 157
+RadProtectionTimeX = 720		--  | 540 | 148
+RadProtectionTimeY = 54			--  | 40 | 149
+RadDamageRateX = 20				--  | 50 | 152
+RadDamageRateY = 10				--  | 20 | 153
+RadWoundRateX = 20				--  | 50 | 156
+RadWoundRateY = 10				--  | 20 | 157
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {

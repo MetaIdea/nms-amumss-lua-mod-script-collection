@@ -8,76 +8,75 @@ FileSource01 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
 --##### Variables #####
 -- Miscellaneous
-SurveyScanMinSpeed = 2				--  | 0.75 | 287
-SurveyScanMaxSpeed = 2				--  | 0.75 | 288
-SurveyMaxDistance = 700				--  | 400 | 294 
-TerrainResourceScanRange = 1800		-- Range to scan for resources | 1200 | 425
-TerrainResourceCompassRange = 180	--  | 120 | 426
-WarpsBetweenBattles = 10			-- Number of warps since last space battle before next will occur | 5 | 658
-HoursBetweenBattles = 6				-- Number of hours since last space battle before next will occur | 3 | 659
-NewDiscoveryDisplayTime = 3			-- Time the new discovery message will display on the screen | 2 | 688
-BuildingBeamDistance = 1600			-- Distance from player the beam for building will reach | 800 | 908
-ResourceCommonReducer = 10			--  | 5 |  919
-ShipInteractRadius = 500			-- Distance the player can be and still interact with ship | 50 | 932
+SurveyScanMinSpeed = 2				--  | 0.75 | 4647
+SurveyScanMaxSpeed = 2				--  | 0.75 | 4648
+SurveyMaxDistance = 700				--  | 400 | 4654
+TerrainResourceScanRange = 1800		-- Range to scan for resources | 1200 | 4770
+TerrainResourceCompassRange = 180	--  | 120 | 4771
+WarpsBetweenBattles = 10			-- Number of warps since last space battle before next will occur | 5 | 5003
+HoursBetweenBattles = 6				-- Number of hours since last space battle before next will occur | 3 | 5004
+NewDiscoveryDisplayTime = 3			-- Time the new discovery message will display on the screen | 2 | 5033
+BuildingBeamDistance = 1600			-- Distance from player the beam for building will reach | 800 | 5204
+ResourceCommonReducer = 10			--  | 5 |  5215
+ShipInteractRadius = 500			-- Distance the player can be and still interact with ship | 50 | 5228
 
 -- Refiners
-RefinerProductsMadeInTime = 20			-- Speed at which products are refined | 2 | 348
-RefinerSubsMadeInTime = 2500			--  | 250 | 349
-RefinerProductsMadeInTimeSurvival = 10	-- Speed at which products are refined for Survival Mode | 1 | 350
-RefinerSubsMadeInTimeSurvival = 1000	--  | 100 | 351
+RefinerProductsMadeInTime = 20			-- Speed at which products are refined | 2 | 4693
+RefinerSubsMadeInTime = 2500			--  | 250 | 4694
+RefinerProductsMadeInTimeSurvival = 10	-- Speed at which products are refined for Survival Mode | 1 | 4695
+RefinerSubsMadeInTimeSurvival = 1000	--  | 100 | 4696
 
 -- Scanners
-BinocTimeBeforeScan = 0.25			-- Delay time before a scan starts | 0.5 | 430
-BinocMinScanTime = 1.3				-- Minimum time to scan | 3.9 | 431
-BinocScanTime = 1.3					-- Time it takes to scan | 3.9 | 432
-BinocCreatureScanTime = 1.3			-- Time it takes to scan creatures | 3.2 | 433
-CreatureMinScanTime = 0.4			-- Minimum time to scan a creature | 0.8 | 686
+BinocTimeBeforeScan = 0.25			-- Delay time before a scan starts | 0.5 | 4775
+BinocMinScanTime = 1.1				-- Minimum time to scan | 2.2 | 4776
+BinocScanTime = 1.1					-- Time it takes to scan | 2.2 | 4777
+CreatureMinScanTime = 0.4			-- Minimum time to scan a creature | 0.8 | 5031
 
-ToolScanRange = 300					-- Range the default scanner will reach | 200 | 951
-ToolScanCharge = 15					-- Time it takes for another scanner pulse to be ready | 30 |
-ToolScanRangeHM = 200				-- Range the default scanner will reach in Survival | 150 | 958
-ToolScanChargeHM = 45				-- Time it takes for another scanner pulse to be ready in Survival | 90 |
-WaypointScanRange = 7500			-- Range the waypoint scanner will reach | 5000 | 965
-WaypointScanCharge = 2				-- Time it takes for another scanner pulse to be ready | 4 | 
-BeaconScanRange = 7500				-- Range the beacon scanner will reach | 5000 | 972
+ToolScanRange = 300					-- Range the default scanner will reach | 200 | 5247
+ToolScanCharge = 15					-- Time it takes for another scanner pulse to be ready | 30 | 5250
+ToolScanRangeHM = 200				-- Range the default scanner will reach in Survival | 150 | 5254
+ToolScanChargeHM = 45				-- Time it takes for another scanner pulse to be ready in Survival | 90 | 5257
+WaypointScanRange = 7500			-- Range the waypoint scanner will reach | 5000 | 5261
+WaypointScanCharge = 2				-- Time it takes for another scanner pulse to be ready | 4 | 5264
+BeaconScanRange = 7500				-- Range the beacon scanner will reach | 5000 | 5268
 BeaconScanTime = 4					-- Time it take to complete the scan | 8 | 
 BeaconScanCharge = 2				-- Time it takes for another scanner pulse to be ready | 4 |
-RadioTowerScanRange = 150000		-- Range the tower scanner will reach | 100000 |  979
+RadioTowerScanRange = 150000		-- Range the tower scanner will reach | 100000 |  5275
 RadioTowerScanTime = 4				-- Time it take to complete the scan | 8 |
 RadioTowerScanCharge = 2			-- Time it takes for another scanner pulse to be ready | 4 |
-ObservatoryScanRange = 150000		-- Range the tower scanner will reach | 100000 |  986
+ObservatoryScanRange = 150000		-- Range the tower scanner will reach | 100000 |  5282
 ObservatoryScanTime = 4				-- Time it take to complete the scan | 8 |
 ObservatoryScanCharge = 2			-- Time it takes for another scanner pulse to be ready | 4 |
-DistressSignalScanRange = 150000	-- Range the tower scanner will reach | 100000 |  993
+DistressSignalScanRange = 150000	-- Range the tower scanner will reach | 100000 |  5289
 DistressSignalScanTime = 4			-- Time it take to complete the scan | 8 |
 DistressSignalScanCharge = 2		-- Time it takes for another scanner pulse to be ready | 4 |
-DebugScanPlanetRange = 1500000		-- Range the tower scanner will reach | 1000000 |  1000
+DebugScanPlanetRange = 1500000		-- Range the tower scanner will reach | 1000000 |  5296
 DebugScanPlanetTime = 4				-- Time it take to complete the scan | 5 |
 DebugScanPlanetCharge = 2			-- Time it takes for another scanner pulse to be ready | 4 |
-DebugScanSpaceRange = 1500000		-- Range the tower scanner will reach | 1000000 |  1007
+DebugScanSpaceRange = 1500000		-- Range the tower scanner will reach | 1000000 |  5303
 DebugScanSpaceTime = 4				-- Time it take to complete the scan | 5 |
 DebugScanSpaceCharge = 2			-- Time it takes for another scanner pulse to be ready | 4 | 
-ShipScanRange = 15000				-- Range the tower scanner will reach | 10000 |  1014
+ShipScanRange = 15000				-- Range the tower scanner will reach | 10000 |  5310
 ShipScanCharge = 2					-- Time it takes for another scanner pulse to be ready | 10 |
-VisualScanTime = 4					-- Time it take to complete the scan | 8 | 1022
+VisualScanTime = 4					-- Time it take to complete the scan | 8 | 5318
 VisualScanCharge = 1				-- Time it takes for another scanner pulse to be ready | 4 | 
 
 -- Binocular Zooms
-ZoomNoneMaxDistance = 15	-- Max distance able to scan without zoom | 10 | 1038
-ZoomFarMaxDistance = 33		-- Max distance able to scan | 25 | 1047
-ZoomMidFOV = 50				-- FOV of mid zoom | 40 | 1054
-ZoomMidMinDistance = 2		-- Minimum distance able to scan | 5 | 1055
-ZoomMidMaxDistance = 100	-- Max distance able to scan | 70 | 1056
-ZoomCloseFOV = 30			-- FOV of mid zoom | 20 | 1063
-ZoomCloseMinDistance = 5	-- Minimum distance able to scan | 20 | 1064
-ZoomCloseMaxDistance = 750	-- Max distance able to scan | 500 | 1065
+ZoomNoneMaxDistance = 15	-- Max distance able to scan without zoom | 10 | 5334
+ZoomFarMaxDistance = 33		-- Max distance able to scan | 25 | 5343
+ZoomMidFOV = 50				-- FOV of mid zoom | 40 | 5350
+ZoomMidMinDistance = 2		-- Minimum distance able to scan | 5 | 5351
+ZoomMidMaxDistance = 100	-- Max distance able to scan | 70 | 5352
+ZoomCloseFOV = 30			-- FOV of mid zoom | 20 | 5359
+ZoomCloseMinDistance = 5	-- Minimum distance able to scan | 20 | 5360
+ZoomCloseMaxDistance = 750	-- Max distance able to scan | 500 | 5361
 
 -- Torch/Flashlight
-TorchFoV = 100				-- FOV/angle at which the torch/flashlight will illuminate | 120 | 1755
-InteractionTorchFoV = 100	-- FOV/angle at which the torch/flashlight will illuminate using interaction | 120 | 1760
-UndergroundTorchFoV = 90	-- FOV/angle at which the torch/flashlight will illuminate while underground | 70 | 1762
-TorchOffsetY = 2			-- torch/flashlight Y offset from player | -0.5 | 1767
-TorchOffsetZ = -1			-- torch/flashlight Z offset from player | -0.75 | 1768
+TorchFoV = 100				-- FOV/angle at which the torch/flashlight will illuminate | 120 | 6051
+InteractionTorchFoV = 100	-- FOV/angle at which the torch/flashlight will illuminate using interaction | 120 | 6056
+UndergroundTorchFoV = 90	-- FOV/angle at which the torch/flashlight will illuminate while underground | 70 | 6058
+TorchOffsetY = 2			-- torch/flashlight Y offset from player | -0.5 | 6063
+TorchOffsetZ = -1			-- torch/flashlight Z offset from player | -0.75 | 6064
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -104,7 +103,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{"BinocTimeBeforeScan", BinocTimeBeforeScan}, 
 						{"BinocMinScanTime", BinocMinScanTime}, 
 						{"BinocScanTime", BinocScanTime}, 
-						{"BinocCreatureScanTime", BinocCreatureScanTime}, 
 						{"WarpsBetweenBattles", WarpsBetweenBattles}, 
 						{"HoursBetweenBattles", HoursBetweenBattles}, 
 						{"CreatureMinScanTime", CreatureMinScanTime}, 

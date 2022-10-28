@@ -12,10 +12,6 @@ LandingHoverOffset = 1.5				--  | 3 | 14
 LandingMargin = 0.7						-- The size of the area that must be considered "cleared" of object to allow for landing | 1.4 | 17
 LandingObstacleMinHeight = 2.5			-- The minimum height of objects that obstruct landing | 2 | 18
 
---Launch Cost Reduction
-LaunchThrustersMinimumSummonPercentage = 10		-- Minimum fuel cost for summoning ship | 25 |1443
-
---HoverTakeoffHeight = 90					-- Initial height upon ship takeoff | 90 | 340
 HoverSpeedFactor = 0.001				-- Speed at which ship hovers | 20 | 345
 HoverMinSpeed = 0.001					-- Minimum speed at which ship will hover | 1 | 347
 LandingPushNoseUpFactor = 0.05			-- Angle the ship nose will point upwards during landing | 0.15 | 371
@@ -25,16 +21,19 @@ NoBoostAnomalyDistance = 1500			-- Distance from Anomaly that boost is disabled 
 
 MiniWarpLinesSpacing = 12000			-- Spacing between the vertical metric lines during warp | 3000 | 1105
 
-FreighterApproachSpeedDamper = 1		-- The amount of speed dampener applied when approaching Freighters | 0.5 | 1202
-MiniWarpShakeStrength = 1				-- The strength of the shake during warp | 2 | 1204
-MiniWarpSpeed = 45000					-- Speed at which ship travels during warp | 30000 | 1210
-MiniWarpTopSpeedTime = 0.25				-- Time it takes to reach top warp speed | 0.1 | 1211
-MiniWarpExitTime = 0.25 				-- Time it take to exit warp | 0.5 | 1221
-MiniWarpHUDArrowAttractAngle = 5		-- The sensitivity the mouse will auto-hover over marker icons | 10  | 1222
+FreighterApproachSpeedDamper = 1		-- The amount of speed dampener applied when approaching Freighters | 0.5 | 1200
+MiniWarpShakeStrength = 1				-- The strength of the shake during warp | 2 | 1202
+MiniWarpSpeed = 45000					-- Speed at which ship travels during warp | 30000 | 1208
+MiniWarpTopSpeedTime = 0.25				-- Time it takes to reach top warp speed | 0.1 | 1209
+MiniWarpExitTime = 0.25 				-- Time it take to exit warp | 0.5 | 1219
+MiniWarpHUDArrowAttractAngle = 5		-- The sensitivity the mouse will auto-hover over marker icons | 10  | 1220
 MiniWarpHUDArrowAttractAngleDense = 3	-- The sensitivity the mouse will auto-hover over marker icons when the icons are considered densely packed | 4 | 1226
-MiniWarpHUDArrowNumMarkersToBeDense = 4	-- The number of icons that are close together to be considered densely packed, at which time the sensitivity will change to "MiniWarpHUDArrowAttractAngleDense" | 6 | 1227
-MiniWarpNoAsteroidRadius = 3000			-- The distance asteroids will be while in warp | 1500 | 1234
-AnomalyStationMaxApproachSpeed = 200	-- The max speed allow during docking approach to the Anomaly | 60 | 1255
+MiniWarpHUDArrowNumMarkersToBeDense = 4	-- The number of icons that are close together to be considered densely packed, at which time the sensitivity will change to "MiniWarpHUDArrowAttractAngleDense" | 6 | 1225
+MiniWarpNoAsteroidRadius = 3000			-- The distance asteroids will be while in warp | 1500 | 1232
+AnomalyStationMaxApproachSpeed = 180	-- The max speed allow during docking approach to the Anomaly | 60 | 1253
+
+--Launch Cost Reduction
+LaunchThrustersMinimumSummonPercentage = 10		-- Minimum fuel cost for summoning ship | 25 |1424
 
 --## Step / Ship Controls ##
 ShipPlanetBrakeAlignMaxTime = 4			-- Replaces all instances of this value | 8 | 495...

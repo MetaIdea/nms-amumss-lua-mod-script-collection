@@ -7,10 +7,9 @@ FileSource01 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 -- The comments are laid out in the following format: -- ParameterDescription (if available) | DefaultValue | LineNumber
 
 --##### Variables #####
-VehScanPulseRange = 3000		-- Pulse range of vehicles | 1500 | 737
-VehScanChargeTime = 5			-- Time to recharge vehicle pulses | 20 | 740
-VehScanLocPulseRange = 400		--  | 200 | 744
-VehScanLocChargeTime = 5		--  | 20  | 747
+VehScanPulseRange = 3000		-- Pulse range of vehicles | 1500 | 736
+VehScanChargeTime = 5			-- Time to recharge vehicle pulses | 20 | 739
+VehScanLocChargeTime = 5		--  | 15 | 746
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -31,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{["PRECEDING_KEY_WORDS"] = {"VehicleLocalScan",}, 
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
-						{"PulseRange", VehScanLocPulseRange}, {"ChargeTime", VehScanLocChargeTime}, 						
+						{"ChargeTime", VehScanLocChargeTime}, 						
 					}
 				},
 			}

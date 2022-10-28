@@ -21,10 +21,10 @@ GrenadeSHStrength = 0.01			-- Shake strength during grenade explosions | 0.02 | 
 GrenadeSHFrequency = 3				-- Shake frequency during grenade explosions | 5 | 4106
 GrenadeVibStrength = 0.01			-- Vibration strength during grenade explosions | 0.02 | 4107
 GrenadeVibFrequency = 3				-- Vibration frequency during grenade explosions | 5 | 4108
-SandwarmEmergeSHStrength = 0.03		-- Shake strength during sandworm emerges | 0.06 | 5393
-SandwarmEmergeSHFrequency = 1.15	-- Shake frequency during sandworm emerges | 2.3 | 5394
-SandwarmEmergeVibStrength = 0.01	-- Vibration strength during sandworm emerges | 0.01 | 5395
-SandwarmEmergeVibFrequency = 1.05	-- Vibration frequency during sandworm emerges | 2.2 | 5396
+SandwormEmergeSHStrength = 0.03		-- Shake strength during sandworm emerges | 0.06 | 5393
+SandwormEmergeSHFrequency = 1.15	-- Shake frequency during sandworm emerges | 2.3 | 5394
+SandwormEmergeVibStrength = 0.01	-- Vibration strength during sandworm emerges | 0.01 | 5395
+SandwormEmergeVibFrequency = 1.05	-- Vibration frequency during sandworm emerges | 2.2 | 5396
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -265,10 +265,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["PRECEDING_KEY_WORDS"] = {"CapturedData",},
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
-						{"ShakeStrength", SandwarmEmergeSHStrength}, 
-						{"ShakeFrequency", SandwarmEmergeSHFrequency}, 
-						{"VibrateStrength", SandwarmEmergeVibStrength}, 
-						{"VibrateFrequency", SandwarmEmergeVibFrequency}, 
+						{"ShakeStrength", SandwormEmergeSHStrength}, 
+						{"ShakeFrequency", SandwormEmergeSHFrequency}, 
+						{"VibrateStrength", SandwormEmergeVibStrength}, 
+						{"VibrateFrequency", SandwormEmergeVibFrequency}, 
 					}
 				},
 				{["SPECIAL_KEY_WORDS"] = {"Name", "SANDWORMSHAKE",},
