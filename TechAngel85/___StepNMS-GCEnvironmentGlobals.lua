@@ -11,8 +11,8 @@ FileSource01 = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN"
 TerrainFadeTime = 1			-- Amount of time it takes for terrain to fade in/out of different detail modes | 2 | 333
 TerrainFadeTimeInShip = 1	-- Amount of time it takes for terrain to fade in/out of different detail modes while in a ship | 2 | 
 CreatureFadeTime = 0.7		-- Amount of time it takes for creatures to fade in/out of different detail modes | 1.5 | 
-FloraFadeTimeMin = 0.3		-- Minimum amount of time to take for all flora to fade in/out of different detail modes | 0.6 | 
-FloraFadeTimeMax = 1.1		-- Max amount of time to take for all flora to fade in/out of different detail modes | 2.25 | 
+FloraFadeTimeMin = 0.5		-- Minimum amount of time to take for all flora to fade in/out of different detail modes | 0.6 | 
+FloraFadeTimeMax = 1.5		-- Max amount of time to take for all flora to fade in/out of different detail modes | 2.25 | 
 
 --## Step ##
 AnimationScale = 15			-- Determines how fast the clouds morph | 50 | 234

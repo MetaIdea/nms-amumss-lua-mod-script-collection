@@ -9,12 +9,12 @@ FileSource01 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 --## Step ##
 LocatorScatterChanceOfPirates = 10	--	| 20 | 38
 
-PlanetInvalidAsteroidZone = 30000	-- No asteroid zone around planets | vanilla=10000 // CSO=30000 | 39
+PlanetInvalidAsteroidZone = 24000	-- No asteroid zone around planets | vanilla=10000 // CSO=30000 | 39
 SparseAsteroidSpread = -21			-- How sparse the random floating asteroids not connected to a field are | -7 | 41		
 
-CommonAsteroidScale = 0.54			-- Initial size of the asteroid | 0.28 | 45
-CommonAsteroidSpacing = 4500 		-- Distance between normal asteroids // affects the drawing distance of asteroids too | vanilla=1000 // CSO=6000 | 51
-CommonAsteroidFadeRange = 18000		-- The max range that normal asteroids will end fading out; beyond here there are no asteroids displayed | vanilla=2000 // CSO=12000 | 56
+CommonAsteroidScale = 0.45			-- Initial size of the asteroid | 0.28 | 45
+CommonAsteroidSpacing = 4500 		-- Distance between normal asteroids // affects the drawing distance of asteroids too | vanilla=645 // CSO=6000 | 51
+CommonAsteroidFadeRange = 18000		-- The max range that normal asteroids will end fading out; beyond here there are no asteroids displayed | vanilla=9000 // CSO=12000 | 56
 CommonAsteroidNoiseScale = 60000	-- The size of the asteroid field | 50000 | 57
 
 RingAsteroidScale = 0.21			-- | 0.15 | 60
@@ -23,12 +23,12 @@ RingAsteroidFadeRange = 15000		-- | vanilla=3000 // CSO=12000 | 71
 RingAsteroidNoiseScale = 33000		-- | 120000 | 72
 
 LargeAsteroidSpacing = 7000			-- | 9000 | 81
-LargeAsteroidFadeRange = 24000		-- | vanilla=4000 // CSO=16000 | 86
+LargeAsteroidFadeRange = 24000		-- | vanilla=9000 // CSO=16000 | 86
 LargeAsteroidNoiseScale = 60000		-- | 120000 | 87
 
 RareAsteroidSpacing = 3000			-- | vanilla=850 | 96
 RareAsteroidFadeRange = 18000		-- | vanilla=9000 | 101
-RareAsteroidNoiseScale = 39000		-- | 50000 | 
+RareAsteroidNoiseScale = 39000		-- | 50000 | 102
 
 LargeAsteroidFadeTime = 0.3			-- The time it takes the large asteroids to fade | 0.1 | 143
 

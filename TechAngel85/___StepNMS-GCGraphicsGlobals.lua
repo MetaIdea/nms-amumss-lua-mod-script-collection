@@ -9,7 +9,6 @@ FileSource01 = "GCGRAPHICSGLOBALS.GLOBAL.MBIN"
 --##### Variables #####
 --## Step ##
 ShadowLengthStation = 2000		-- How far away shadows are drawn | 1300 | 274
-ShadowLengthFreighter = 300		-- | 150 | 275
 MaxParticleRenderRange = 150	-- Max distance particles will render | 75 | 493
 TerrainAnisoLow = 16				-- Default Anisotropic  Filtering for Low Preset | 2 | 591
 TerrainAnisoMed = 16			-- Default Anisotropic  Filtering for Medium Preset | 2 | 592
@@ -23,7 +22,7 @@ TerrainBlocksPerFrameHi = 64	--  | 48 | 601
 TerrainBlocksPerFrameUlt = 128	--  | 64 | 602
 ForceCachedTerrain = "False"	-- Forces the use of cached terrain, rather loading it fresh | False | 612
 ForceUncachedTerrain = "True"	-- Forces the terrain to reload every time, rather than restoring it from cached files | False | 613
-EnableVariableUpdate = "False"	-- Forwarded from Rotating Atmosphere
+EnableVariableUpdate = "False"	-- Forwarded from Rotating Atmosphere | True | 1088
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
@@ -39,7 +38,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["VALUE_CHANGE_TABLE"] = {
 						{"ShadowLengthStation", ShadowLengthStation}, 
-						{"ShadowLengthFreighter", ShadowLengthFreighter}, 
 						{"MaxParticleRenderRange", MaxParticleRenderRange}, 
 						{"TerrainAnisoLow", TerrainAnisoLow}, 
 						{"TerrainAnisoMed", TerrainAnisoMed}, 

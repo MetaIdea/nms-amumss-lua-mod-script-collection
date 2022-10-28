@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "BoostGliderMech.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
 ["NMS_VERSION"]				= "4.0+",
-["MOD_DESCRIPTION"]			= "Mech will stay aloft longer and fall slower to allow refill midair to Boost distants",
+["MOD_DESCRIPTION"]			= "Mech will stay aloft longer and fall slower to pad Boost distants",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -18,19 +18,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MechContrailAlpha",							"0.9"},		-- WayPoint "0.6" Testing
-								{"MechTurretTurnTimeGroundPlayerCombat",		"0.9"},		-- WayPoint "value="0.15" Tessting
-								{"MechPlayerGroundTurnSpeed",					"0.2"},		-- WayPoint "value="0.5" Tessting
-								{"MechCoGAdjustTimeAir",						"0.2"},		-- WayPoint "0.7" 
-								{"MechJetpackMaxSpeed",							"35"}, 		-- WayPoint "20"
-								{"MechJetpackMaxUpSpeed",						"35"},		-- WayPoint "20"
-								{"MechJetpackUpForce",							"120"}, 	-- WayPoint "100"
-								{"MechJetpackFallForce",						"25"},		-- WayPoint "80"
-								{"MechJetpackDrainRate",						"0.005"}, 	-- WayPoint "0.5"
-								{"MechJetpackFillRate",							"0.05"},	-- WayPoint "0.5"			
+								--{"MechContrailAlpha",							"0.9"},		-- WayPoint "0.6" Testing
+								{"MechTurretTurnTimeGroundPlayerCombat",		"0.9"},		-- WayPoint "0.15" Testing 3rd person view
+								{"MechPowerUpTime",								"1"},		-- WayPoint "3" Testing
+								{"MechTurretMaxAngleAir",						"100"},		-- WayPoint "90" Good
+								{"MechTurretTurnTimeAir",						"1.1"},		-- WayPoint "0.7" Testing responsivness
+								{"MechJetpackJetScaleTime",						"1"},		-- WayPoint "0.2" Good FX diminish burn over time release trigger
+								{"MechJetpackTurnSpeed",						"1"},		-- WayPoint "3" Good Mid air flight adjust path Greater is slower
+								{"MechPlayerGroundTurnSpeed",					"0.2"},		-- WayPoint "0.5" Good
+								{"MechCoGAdjustTimeAir",						"0.07"},	-- WayPoint "0.7" Testing
+								{"MechJetpackMaxSpeed",							"25"}, 		-- WayPoint "20" Good
+								{"MechJetpackMaxUpSpeed",						"25"},		-- WayPoint "20" Good
+								{"MechJetpackUpForce",							"110"}, 	-- WayPoint "100" Good
+								{"MechJetpackFallForce",						"-20"},		-- WayPoint "80" Good
+								{"MechJetpackDrainRate",						"0.005"}, 	-- WayPoint "0.5" Good
+								{"MechJetpackFillRate",							"0.05"},	-- WayPoint "0.5" Good	
 							}
 						}
-					} --9 global replacements
+					} --14 global replacements
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "GCCAMERAGLOBALS.GLOBAL.MBIN",

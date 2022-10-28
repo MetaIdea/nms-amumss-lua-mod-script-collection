@@ -7,7 +7,7 @@ FileSource01 = "GCSKYGLOBALS.GLOBALS.MBIN"
 -- The comments are laid out in the following format: -- ParameterDescription (if available) | DefaultValue | LineNumber
 
 --##### Variables #####
-StormWarningTime = 40				-- Time a warning is given before a storm | 25 | 85
+StormWarningTime = 35				-- Time a warning is given before a storm | 25 | 85
 StormTransitionTime = 30			-- Time it takes for storm transitions | 20 |86
 NoAtmosphereFogStrength = 0			-- Strength of the fog | 0.3 | 208
 NoAtmosphereFogMax = 0				--  | 0.97 | 209
