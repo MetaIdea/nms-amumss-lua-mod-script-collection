@@ -1,68 +1,61 @@
--- Mod_Version = "1.11"
+-- Mod_Version = "1.12"
 
 ShipMaxUpgradeChanges =
 {
   { -- Type
     {"Shuttle"},
     { -- InvType,                    C,  B,  A,  S,     Originals
-      {"MaxInventoryCapacity",      24, 32, 40, 48}, -- 24, 32, 40, 48
-      {"MaxTechInventoryCapacity",  24, 32, 40, 48}, --  0,  7, 14, 21
-      {"MaxCargoInventoryCapacity", 24, 32, 40, 48}, --  6,  9, 14, 21
+      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 46 74 96 110
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 25 35 45 60
     }
   },
   {
     {"Fighter"},
     {
-      {"MaxInventoryCapacity",      24, 32, 40, 48}, -- 24, 32, 40, 48
-      {"MaxTechInventoryCapacity",  24, 32, 40, 48}, --  0,  7, 14, 21
-      {"MaxCargoInventoryCapacity", 24, 32, 40, 48}, --  6,  9, 14, 21
+      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 32 48 72 96
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
     }
   },
   {
     {"Scientific"}, -- Explorer
     {
-      {"MaxInventoryCapacity",      24, 32, 40, 48}, -- 24, 32, 40, 48
-      {"MaxTechInventoryCapacity",  24, 32, 40, 48}, --  0,  7, 14, 21
-      {"MaxCargoInventoryCapacity", 24, 32, 40, 48}, --  6,  9, 14, 21
+      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 42 72 94 105
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
     }
   },
   {
     {"Dropship"}, -- Hauler
     {
-      {"MaxInventoryCapacity",      24, 32, 40, 48}, -- 24, 32, 40, 48
-      {"MaxTechInventoryCapacity",  24, 32, 40, 48}, --  0,  7, 14, 21
-      {"MaxCargoInventoryCapacity", 24, 32, 40, 48}, -- 12, 12, 24, 36
+      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 48 72 96 120
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 21 30 40 60
     }
   },
   {
     {"Royal"}, -- Exotic
     {
-      {"MaxInventoryCapacity",      24, 32, 40, 48}, -- 24, 32, 40, 48
-      {"MaxTechInventoryCapacity",  24, 32, 40, 48}, --  0,  7, 14, 21
-      {"MaxCargoInventoryCapacity", 24, 32, 40, 48}, --  5,  9, 14, 21
+      {"MaxInventoryCapacity",      120, 120, 120, 120}, -- 105 105 105 105
+      {"MaxTechInventoryCapacity",  99,  99,  99,  99},  -- 60 60 60 60
     }
   },
   {
     {"Alien"}, -- Living
     {
-      {"MaxInventoryCapacity",       0,  0,  0, 48}, --  0,  0,  0, 35
-      {"MaxTechInventoryCapacity",   0,  0,  0, 48}, --  0,  0,  0, 48
-      {"MaxCargoInventoryCapacity",  0,  0,  0, 48}, --  0,  0,  0, 32
+      {"MaxInventoryCapacity",      120, 120, 120, 120}, -- 120 120 120 120
+      {"MaxTechInventoryCapacity",  99,  99,  99,  99},  -- 60 60 60 60
     }
   },
   {
     {"Sail"}, -- Solar
     {
-      {"MaxInventoryCapacity",      24, 32, 40, 48}, -- 24, 32, 40, 48
-      {"MaxTechInventoryCapacity",  24, 32, 40, 48}, --  0,  7, 14, 21
-      {"MaxCargoInventoryCapacity", 24, 32, 40, 48}, --  6,  9, 14, 21
+      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 48 72 92 105
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 25 35 45 60
     }
   },
   {
     {"Freighter"},
     {
-      {"MaxInventoryCapacity",      24, 32, 40, 48}, -- 24, 32, 40, 48
-      {"MaxTechInventoryCapacity",  24, 32, 40, 48}, --  7,  7, 14, 21
+      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 48 72 96 120
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 25 30 45 60
     }
   },
 }
@@ -72,7 +65,7 @@ WeaponMaxUpgradeChanges =
   { -- InvType
   	{"MaxInventoryCapacity"},
     {-- C,  B,  A,  S,     Originals
-      {24, 32, 40, 48}, -- 12, 16, 20, 24
+      {33, 55, 77, 99}, -- 21 30 45 60
     }
   },
 }
@@ -81,46 +74,34 @@ VehicleMaxUpgradeChanges =
 {
   { -- VehicleType
     {"VehicleSmall"}, -- Nomad and Pilgrim
-    { -- Min, Max, Originals
-      {48, 48}, -- 16, 16
+    { -- Min, Max, Tech     Originals
+      {120, 120, 60, 60}, -- 30 30, 26 26
     }
   },
   { -- VehicleType
     {"VehicleMedium"}, -- Roamer, Minotaur, and Nautilon
-    { -- Min, Max, Originals
-      {48, 48}, -- 28, 28
+    { -- Min, Max, Tech     Originals
+      {120, 120, 60, 60}, -- 40 40, 28 28
     }
   },
   { -- VehicleType
     {"VehicleLarge"}, -- Colossus
-    { -- Min, Max, Originals
-      {48, 48}, -- 42, 42
+    { -- Min, Max, Tech     Originals
+      {120, 120, 60, 60}, -- 50 50, 30 30
     }
   },
-}
-
-ExosuitNormalChanges = -- Normal Mode
-{ -- TechWidth, TechHeight, CargoWidth, CargoHeight, Originals
-  {8, 6, 8, 6}, -- 7, 2, 8, 6
-}
-
-ExosuitSurvivalChanges = -- Survival Mode
-{
-  {8, 6, 8, 6}, -- 7, 2, 8, 6
 }
 
 -- File Settings --
 FileName    = "More Upgradeable Slots.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole"
+ModMaintenance = "Babscoole and DarkScythe"
 Description = ""
 NMS_Version = "4.05"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
-FileSource2 = "METADATA/GAMESTATE/DEFAULTINVENTORYBALANCE.MBIN"
-FileSource3 = "METADATA/GAMESTATE/DEFAULTINVENTORYBALANCESURVIVAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -144,31 +125,10 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
       }
     },
-    {
-      ["MBIN_CHANGE_TABLE"] =
-      {
-        {
-          ["MBIN_FILE_SOURCE"]  = FileSource2,
-          ["EXML_CHANGE_TABLE"] = 
-          {
-            -- InventoryBalanceNormal
-          }
-        },
-        {
-          ["MBIN_FILE_SOURCE"]  = FileSource3,
-          ["EXML_CHANGE_TABLE"] =
-          {
-            -- InventoryBalanceSurvival
-          }
-        },
-      }
-    },
   }
 }
 
 local InventoryTable           = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-local InventoryBalanceNormal   = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][2]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
-local InventoryBalanceSurvival = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][2]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 
 -- Ship Max Upgrade Table --
 for i = 1, #ShipMaxUpgradeChanges do
@@ -189,32 +149,8 @@ for i = 1, #ShipMaxUpgradeChanges do
       ["VALUE_CHANGE_TABLE"]  =
       {
         {"IGNORE", C},
-      },
-    }
-    InventoryTable[#InventoryTable+1] =
-    {
-      ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize", Type, InvType},
-      ["LINE_OFFSET"] 	= "+2",
-      ["VALUE_CHANGE_TABLE"]  =
-      {
         {"IGNORE", B},
-      },
-    }
-    InventoryTable[#InventoryTable+1] =
-    {
-      ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize", Type, InvType},
-      ["LINE_OFFSET"] 	= "+3",
-      ["VALUE_CHANGE_TABLE"]  =
-      {
         {"IGNORE", A},
-      },
-    }
-    InventoryTable[#InventoryTable+1] =
-    {
-      ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize", Type, InvType},
-      ["LINE_OFFSET"] 	= "+4",
-      ["VALUE_CHANGE_TABLE"]  =
-      {
         {"IGNORE", S},
       },
     }
@@ -253,6 +189,8 @@ for i = 1, #VehicleMaxUpgradeChanges do
   for j = 1, #Change do
     local Min = Change[j][1]
     local Max = Change[j][2]
+    local techMin = Change[j][3]
+    local techMax = Change[j][4]
 
     InventoryTable[#InventoryTable+1] =
     {
@@ -261,45 +199,9 @@ for i = 1, #VehicleMaxUpgradeChanges do
       {
         {"MinSlots", Min},
         {"MaxSlots", Max},
+        {"MinTechSlots", techMin},
+        {"MaxTechSlots", techMax},
       },
     }
   end
-end
-
--- Exosuit Normal Mode Inventory Size Table --
-for i = 1, #ExosuitNormalChanges do
-  local TechWidth   = ExosuitSurvivalChanges[i][1]
-  local TechHeight  = ExosuitSurvivalChanges[i][2]
-  local CargoWidth  = ExosuitSurvivalChanges[i][3]
-  local CargoHeight = ExosuitSurvivalChanges[i][4]
-
-  InventoryBalanceNormal[#InventoryBalanceNormal+1] =
-  {
-    ["VALUE_CHANGE_TABLE"] =
-    {
-      {"PlayerPersonalInventoryTechWidth", TechWidth},
-      {"PlayerPersonalInventoryTechHeight", TechHeight},
-      {"PlayerPersonalInventoryCargoWidth", CargoWidth},
-      {"PlayerPersonalInventoryCargoHeight", CargoHeight},
-    },
-  }
-end
-
--- Exosuit Survival Mode Inventory Size Table --
-for i = 1, #ExosuitSurvivalChanges do
-  local TechWidth   = ExosuitSurvivalChanges[i][1]
-  local TechHeight  = ExosuitSurvivalChanges[i][2]
-  local CargoWidth  = ExosuitSurvivalChanges[i][3]
-  local CargoHeight = ExosuitSurvivalChanges[i][4]
-
-  InventoryBalanceSurvival[#InventoryBalanceSurvival+1] =
-  {
-    ["VALUE_CHANGE_TABLE"] =
-    {
-      {"PlayerPersonalInventoryTechWidth", TechWidth},
-      {"PlayerPersonalInventoryTechHeight", TechHeight},
-      {"PlayerPersonalInventoryCargoWidth", CargoWidth},
-      {"PlayerPersonalInventoryCargoHeight", CargoHeight},
-    },
-  }
 end
