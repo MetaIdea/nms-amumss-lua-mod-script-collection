@@ -1,8 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Fullscreen Warps 3.1.pak", 
+["MOD_FILENAME"] 			= "Fullscreen Warps 3.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.96",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "4.05",
 ["MOD_DESCRIPTION"]			= "This mods removes ship from warp sequences",
 ["MODIFICATIONS"] 			= 
 	{
@@ -34,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     							{"OffsetXFrequency", "0"},
     							{"OffsetXRange", "0"},
     							{"RollRange", "0"},
-    							{"YawRange", "0"},
+    							{"YawnRange", "0"},
 							}
 						}
 					}
