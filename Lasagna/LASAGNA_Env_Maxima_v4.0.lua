@@ -144,14 +144,6 @@ local PlanetLODMultiplier = 3		--planet lod distance multiplier
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
---[[
-
-These function calls appear next to EXML_CHANGE_TABLE just for biomes 1-3:
-
-BiomesOneTwoThreeModifier(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityLowMultiplier) --biomes 1
-BiomesOneTwoThreeModifier(ScaleLargeMultiplier, DensityMedHighMultiplier, DensityMediumMultiplier, DensityMediumMultiplier) --biomes 3
-
-]]
 
 local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, DensityCustom3, DensityCustom4)
 	local biomeModifier =
@@ -1753,16 +1745,6 @@ end
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 
---[[
-
---These function calls appear next to EXML_CHANGE_TABLE just for biome lists 4, 5, 7, & 8
-
-BiomeFourFiveSevenEightModifier(ScaleHuge, ScaleHuge, DensityMediumMultiplier, CoverageMultiplier, DensityMediumMultiplier, DensityGRASSLowestMultiplier, DensityPointSevenMultiplier) --biomes 4
-BiomeFourFiveSevenEightModifier(ScaleHuge, ScaleHuge, DensityLowestMultiplier, DensityLowestMultiplier, DensityLowestMultiplier, DensityGRASSLowestMultiplier, DensityPointSevenMultiplier) --biomes 5
-BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensitySHADOWLowMultiplier, DensityLowMultiplier, DensityPointSevenMultiplier) --biomes 7
-BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityMediumMultiplier, DensityLowestMultiplier, DensityLowMultiplier, DensitySHADOWLowMultiplier, DensityPointEightMultiplier) --biomes 8
-
-]]
 
 local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, Param5, Param6, Param7)
 	local biomeModifier =
