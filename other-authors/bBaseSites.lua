@@ -6,7 +6,7 @@ REWARD_TABLE_TEXT =
               <Property name="Event" value="BASE" />
               <Property name="ScanEventTable" value="Planet" />
               <Property name="DoAerialScan" value="True" />
-			  <Property name="UseMissionSeedForEvent" value="False" />
+              <Property name="UseMissionSeedForEvent" value="False" />
               <Property name="StartDelay" value="6" />
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
             </Property>
@@ -16,13 +16,13 @@ REWARD_TABLE_TEXT =
 
 SCANEVENT_TEXT =
   [[
-	<Property value="GcScanEventData.xml">
+    <Property value="GcScanEventData.xml">
       <Property name="Name" value="BASE" />
       <Property name="ForceInteraction" value="" />
       <Property name="ForceInteractionType" value="GcInteractionType.xml">
         <Property name="InteractionType" value="None" />
       </Property>
-	  <Property name="RequireInteractionRace" value="GcAlienRace.xml">
+      <Property name="RequireInteractionRace" value="GcAlienRace.xml">
         <Property name="AlienRace" value="None" />
       </Property>
       <Property name="ForceBroken" value="False" />
@@ -172,6 +172,9 @@ SCANEVENT_TEXT =
       <Property name="MarkerLabel" value="" />
       <Property name="MarkerIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
         <Property name="ScannerIconHighlightType" value="Diamond" />
@@ -189,6 +192,9 @@ SCANEVENT_TEXT =
       <Property name="TooltipMessage" value="TIP_BASE" />
       <Property name="ResourceOverride" value="GcResourceElement.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -220,15 +226,63 @@ NMS_MOD_DEFINITION_CONTAINER = {
           ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
           ["EXML_CHANGE_TABLE"] = {
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "RANDOM_SCAN_A", "LabelID", "Factory"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "RANDOM_SCAN_A", "LabelID", "Harvester"},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
               ["ADD"] = REWARD_TABLE_TEXT
             },
             {
-              ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_A", "LabelID", "Factory"},
+              ["SPECIAL_KEY_WORDS"] = {"Id", "R_STARCHART_A", "LabelID", "Harvester"},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
               ["ADD"] = REWARD_TABLE_TEXT
-            }
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id","RANDOM_SCAN_A","List","GcRewardTableItemList.xml",},
+              ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml",},
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+				{"PercentageChance",	"20"},
+              },
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id","RANDOM_SCAN_A","List","GcRewardTableItemList.xml",},
+              ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml",},
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+				{"PercentageChance",	"40"},
+              },
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id","RANDOM_SCAN_A","List","GcRewardTableItemList.xml",},
+              ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+				{"PercentageChance",	"20"},
+              },
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_A","List","GcRewardTableItemList.xml",},
+              ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml",},
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+				{"PercentageChance",	"20"},
+              },
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_A","List","GcRewardTableItemList.xml",},
+              ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml",},
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+				{"PercentageChance",	"40"},
+              },
+            },
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Id","R_STARCHART_A","List","GcRewardTableItemList.xml",},
+              ["PRECEDING_KEY_WORDS"] = {"List","GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+				{"PercentageChance",	"20"},
+              },
+            },			
           }
         },
         
@@ -260,13 +314,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				},
 
         {
-          ["MBIN_FILE_SOURCE"] = {
-            "METADATA/SIMULATION/SCANNING/SCANEVENTTABLEPLANET.MBIN",
-            "METADATA/SIMULATION/SCANNING/SCANEVENTTABLESPACE.MBIN"
-          },
+          ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SCANNING/SCANEVENTTABLEPLANET.MBIN",
           ["EXML_CHANGE_TABLE"] = {
             {
-              ["SPECIAL_KEY_WORDS"] = {"Name", "RADIOTOWER", "TooltipMessage", "TIP_RADIOTOWER"},
+              ["SPECIAL_KEY_WORDS"] = {"Name", "DRONE_HIVE_DISABLED",},
+              ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+              ["ADD"] = SCANEVENT_TEXT
+            }
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN",
+          ["EXML_CHANGE_TABLE"] = {
+            {
+              ["SPECIAL_KEY_WORDS"] = {"Name", "UW_RUIN",},
               ["REPLACE_TYPE"] = "ADDAFTERSECTION",
               ["ADD"] = SCANEVENT_TEXT
             }
@@ -274,14 +335,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
         },
 
         {
-          ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SCANNING/SCANEVENTTABLESPACE.MBIN",
+          ["MBIN_FILE_SOURCE"] = "METADATA/SIMULATION/SCANNING/SCANEVENTTABLEVEHICLE.MBIN",
           ["EXML_CHANGE_TABLE"] = {
             {
               ["SPECIAL_KEY_WORDS"] = {"Name", "BASE"},
               ["VALUE_CHANGE_TABLE"] = {
-                {"EventStartType", "Timer"},
-                {"EventEndType", "Interact"},
-                {"TooltipRepeats", "True"}
+                {"ForceWideRandom", "False"},
               }
             }
           }
