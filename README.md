@@ -21,6 +21,7 @@ Mod script authors:
 - [JustRuthless](https://www.nexusmods.com/nomanssky/users/21587394?tab=user+files)
 - [Silent369](https://www.nexusmods.com/nomanssky/users/122177308?tab=user+files)
 - [PyronoxOmega](https://www.nexusmods.com/nomanssky/users/26756114?tab=user+files)
+- [Lowkie](https://www.nexusmods.com/nomanssky/users/1972404?tab=user+files)
 
 Additional mod script repos:
 - [Ignacio](https://www.nexusmods.com/nomanssky/users/5842786?tab=user+files) -> [Mod scripts](https://github.com/ignamiranda/NMS-ModScripts) / [Open Biome Extender scripts](https://github.com/ignamiranda/OpenBiomeExtender)
