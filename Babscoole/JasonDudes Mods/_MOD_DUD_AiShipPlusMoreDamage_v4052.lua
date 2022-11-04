@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]  = "_MOD_DUD_AiShipPlusMoreDamage_v4032.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_AiShipPlusMoreDamage_v4052.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.04",
@@ -19,11 +19,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MinimumCircleTimeBeforeLanding", "20"},
 								{"FillUpOutposts",                 "False"},
 								{"TradingPostTraderRequestTime",   "60"},
-								--{"TradingPostTraderRange",       "1500"},
+								{"TurretOriginOffset",             "0"},
 								{"SpaceStationTraderRequestTime",  "30"},
 								{"DockingLandingTime",             "2"},
 								{"DockingLandingTimeDirectional",  "2"},
-								--{"DockingRotateSpeed",           "0.7"},
+								{"DisableTradeRoutes",             "True"},
 								{"DockWaitMinTime",                "60"},
 								{"DockWaitMaxTime",                "120"},
 								{"LandingManuevreTime",            "2"},
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"A",	"0"},
+								{"A",	"0.02"},
 							},
 						},						
 					}
@@ -584,7 +584,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]   = {"Id", "FREIGHTGUN"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"DefaultSpeed",		"2500"},						
+								{"DefaultSpeed",		"3500"},						
 								{"DefaultDamage",		"500"}
 							}
 						},
@@ -592,7 +592,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]   = {"Id", "COP_FREIGHTGUN"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"DefaultSpeed",		"2500"},						
+								{"DefaultSpeed",		"3500"},						
 								{"DefaultDamage",		"500"}
 							}
 						},						
@@ -600,7 +600,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]   = {"Id", "SQUADGUN"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"DefaultDamage",		"275"}
+								{"DefaultDamage",		"250"}
 							}
 						},
 						{
@@ -608,8 +608,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"HitWidth",		"50"},
-								{"PulseAmplitude",		"0.2"},								
-								{"DefaultDamage",		"300"}
+								{"PulseAmplitude",		"0.1"},								
+								{"DefaultDamage",		"500"}
 							}
 						},							
 						{
@@ -617,8 +617,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"HitWidth",		"50"},
-								{"PulseAmplitude",		"0.2"},								
-								{"DefaultDamage",		"300"}
+								{"PulseAmplitude",		"0.1"},								
+								{"DefaultDamage",		"500"}
 							}
 						},						
 					}
@@ -875,10 +875,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"TurretShootPauseTime",    "1"},
-								{"TurretBurstCount",        "30"},
-								{"TurretDispersionAngle",   "0"},
-								{"Health",       "6000"},
+								{"TurretRange",           "3000"},
+								{"TurretLaserShootTime",  "2"},
+								{"TurretLaserMoveSpeed",  "5"},
+								{"TurretLaserActiveTime", "1"},
+								{"TurretShootPauseTime",  "2"},
+								{"TurretBurstCount",      "20"},
+								{"TurretBurstTime",       "0.2"},
+								{"TurretMaxDownAngle",    "-5"},
+								{"TurretDispersionAngle", "0"},
+								{"Health",                "6000"},
 							},
 						},						
 					}
