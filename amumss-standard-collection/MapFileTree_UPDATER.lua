@@ -1,8 +1,13 @@
+-- THIS script FORCES MapFileTree files to be UPDATED
+--     without having to run any other script
+
+-- add / delete, as you like, any MBIN file reference below to suit your requirements
+
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "", --please leave EMPTY, so that no pak is created
-  ["MOD_DESCRIPTION"]		= "",
-  ["MOD_AUTHOR"]				= "",
+  ["MOD_FILENAME"] 			= "", --EMPTY string, no pak is created because EXML_CHANGE_TABLE does not exist
+  ["MOD_DESCRIPTION"]		= "Refresh MapFileTree files to latest version",
+  ["MOD_AUTHOR"]				= "Wbertro",
   ["NMS_VERSION"]				= "ALL",
   ["MODIFICATIONS"] 		=
 	{
@@ -10,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= --add / delete any MBIN file below to suit your requirements
+					["MBIN_FILE_SOURCE"] 	= --add / delete any MBIN file reference below to suit your requirements
           {
             "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
             "GCATLASGLOBALS.GLOBAL.MBIN",
@@ -41,6 +46,8 @@ NMS_MOD_DEFINITION_CONTAINER =
             "GCUIGLOBALS.GLOBAL.MBIN",
             "GCVEHICLEGLOBALS.GLOBAL.MBIN",
             "GCWATERGLOBALS.GLOBAL.MBIN",
+            "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN",
+            "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
           },
 				},
 			}
@@ -48,5 +55,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 	}
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE
