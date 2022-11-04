@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4051.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4052.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.05",
@@ -207,7 +207,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="15" />
+                <Property name="PercentageChance" value="10" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
                     <Property name="MissionFaction" value="ExplorerGuild" />
@@ -219,7 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="15" />
+                <Property name="PercentageChance" value="10" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
                     <Property name="MissionFaction" value="TradeGuild" />
@@ -231,7 +231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="15" />
+                <Property name="PercentageChance" value="10" />
                 <Property name="Reward" value="GcRewardFactionStanding.xml">
                   <Property name="Faction" value="GcMissionFaction.xml">
                     <Property name="MissionFaction" value="WarriorGuild" />

@@ -1,5 +1,6 @@
 SPECIAL_LIST =
 {
+	{ ["ID"] = "EXPD_EGG_08",	["IsConsumable"] = "True"},
 	{ ["ID"] = "TECHBOX",	["IsConsumable"] = "True"},
 	{ ["ID"] = "INVBOX",	["IsConsumable"] = "True"},
 	-- { ["ID"] = "ACCESS4",	["IsConsumable"] = "False"},
@@ -175,7 +176,7 @@ return[[    <Property value="GcPurchaseableSpecial.xml">
 end
 
 NEW_SPECIAL = {}
-for i,j in pairs(SPECIAL_LIST) do
+for _,j in pairs(SPECIAL_LIST) do
 table.insert(NEW_SPECIAL, GetNewSpecial(j["ID"], j["IsConsumable"]))
 end
 SPECIAL_EXPORT = table.concat(NEW_SPECIAL)
@@ -196,7 +197,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
-							-- ["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= SPECIAL_EXPORT
 						},
 						{
