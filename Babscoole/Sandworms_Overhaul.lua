@@ -19,12 +19,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MinScale",            "80"},     -- Original "50"
 								{"MaxScale",            "100"},    -- Original "50"
+                {"MoveRange",           "10000"},
 								{"TurnRadiusScale",     "10"}, 	   -- Original "1"
 								{"HeightMin",           "-100"},   -- Original "45"
 								{"SwarmMovementSpeed",  "1"},      -- Original "90"
 								{"SwarmMovementRadius", "1000"},   -- Original "100"
-								{"SwarmMovementType",   "Random"}, -- Original "FollowPlayer"
-								{"MaxSpeed",            "100"},    -- Original "80"									
+								{"SwarmMovementType",   "Circle"}, -- Original "FollowPlayer"
+								{"MaxSpeed",            "90"},    -- Original "80"
+                {"CircleAttractor",     "Player"},									
 							}
 						},
 						{
@@ -56,15 +58,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SandWormChangeDirectionTime", "0.001"},  -- Original "1"
 								{"SandWormSteerAdjustTime",     "0.2"},    -- Original "2"
 								{"SandWormMaxSteer",            "10"},     -- Original "0.3"
-								{"SandWormMaxHeightAdjust",     "10"},     -- Original "1"
-								{"SandWormJumpHeight",          "35"},     -- Original "120"
+								{"SandWormMaxHeightAdjust",     "380"},     -- Original "1"
+								{"SandWormJumpHeight",          "3"},     -- Original "120"
 								{"SandWormJumpTime",            "0.0001"}, -- Original "3"
 								{"SandWormSubmergeDepth",       "1"},      -- Original "100"
 								{"SandWormSubmergeTime",        "1"},      -- Original "3"	
 								{"SandWormSurfaceTime",         "3"},      -- Original "1"
 								{"SandWormMaxJumps",            "1500"},   -- Original "5"
 								{"SandWormDespawnDist",         "1500"},   -- Original "1500"
-								{"SandWormSpawnTimer",          "15"},     -- Original "300"									
+								{"SandWormSpawnTimer",          "30"},     -- Original "300"									
 							}
 						},				
 					}, 
