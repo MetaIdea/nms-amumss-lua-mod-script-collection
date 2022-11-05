@@ -15647,7 +15647,7 @@ then
 		}
 		table.insert(FEATURES_CHANGE_TABLE, SPACESHIPS_TRAILS_CHANGE_TABLE)
 	end
-	-- fix for weird vanilla gltich
+	-- fix for weird vanilla artefacts
 	--
 	NEW_CONTENT =
 		{
@@ -21650,6 +21650,17 @@ then
 
 	-- E3 fantasy assets
 	if E3_FANTASY_ASSETS_FEATURES == "ON" then
+
+		NEW_CONTENT =
+		{
+
+			["FILE_DESTINATION"] 		= [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.EXML]],
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\..\RGOG\EXML\R2\DRACAENA.SCENE.EXML]]
+
+		}
+		table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+
+
 		-- planets fantasy colors
 		FANTASY_COLOURS = readTemplate("FANTASY_COLOURS")
 		FANTASY_FROZEN_COLOURS = readTemplate("FANTASY_FROZEN_COLOURS")
@@ -34656,7 +34667,7 @@ end
 		},
 		MULTIPLAYER_MODE
 	)
-	-- New parts for FreighterAttackDisengageDistance
+	-- New parts for Freighters
 	addFeature
 	(
 		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,
@@ -34763,7 +34774,7 @@ end
 				{
 					{
 						["SPECIAL_KEY_WORDS"] = {"Name", "_CapBbridge_A"},
-						["SECTION_ACTIVE"] = {1,2},
+						["SECTION_ACTIVE"] = {0,1},
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"TransY", "-40"},
