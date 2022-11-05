@@ -34,19 +34,33 @@ EXOMATERIALISER_ON_PLANETBASE = false           --Vanilla false // Mod default f
 FARM_IN_ANY_BIOME = false                       --Vanilla false // Mod default false // true to enable planting in any biome
 METAL_PARTS_OUTSIDE_BASE = false                --Vanilla false // Mod default false // true to makes some metal parts buildable outside of bases. Won't snap together outside of bases! Use it at your own risks!
 GEOBAYS_ON_FREIGHTER = false                    --Vanilla false // Mod default false // true to enable vehicles geobays on freighters, ALL_PARTS_ON_FREIGHTER must be true too. Can be very glitchy, use it at your own risks!
+BASESTORAGE_ON_FREIGHTER = false                --Vanilla false // Mod default false // true to enable base storage containers on freighters, ALL_PARTS_ON_FREIGHTER must be true too. Can be very glitchy, use it at your own risks!
 O2_ATMO_HARVESTERS_ANYWHERE = false             --Vanilla false // Mod default false // true to make Oxygen and Atmosphere harvesters buildable NOT only on bare terrain (also makes them buildable but bugged on dead planets).
 CAN_SCALE_PREFAB_PARTS = false                  --Vanilla false // Mod Default false // true to allow all prefab rooms related parts to be scaled (doors attachment points bug out when scaled though)
 CAN_SCALE_EXTRACTORS = false                    --Vanilla false // Mod Default false // true to allow gas/mineral extractors to be scaled (when greatly scaled their resources won't be linked to the resources network though)
+
+-------- enable/disable features end --------
 ---------------------------------------------
+
+
+------------ GUIF section begins ------------
 ---------------------------------------------
+
 GUIGeo = { enableGeos = { false, [[Do you want GeoBays on Freighters? Default = N. ]] },}
 GEOBAYS_ON_FREIGHTER = GUIF( GUIGeo.enableGeos )
 
 GUIFarm = { enableFarm = { false, [[Do you want to farm in any biome?  Default = N. ]] },}
 FARM_IN_ANY_BIOME = GUIF( GUIFarm.enableFarm )
 
------ Settings related tables -----
------------------------------------
+GUIStor = { enableStor = { false, [[Do you want to place Base Storage Containers on Freighters?  Default = N. ]] },}
+BASESTORAGE_ON_FREIGHTER = GUIF( GUIStor.enableStor )
+
+------------- GUIF section ends -------------
+---------------------------------------------
+
+
+---------- Settings related tables ----------
+---------------------------------------------
 
 -- Timber, alloy, stone, wood, concrete, metal, light floor, paving floors tables.
 TIMBER_FLOOR_KEYWORD_TABLE = {"T_FLOORS"}                       -- Timber floors
@@ -132,6 +146,10 @@ PREFAB_KEYWORDS_TABLE = {"ROOMS", "FREIGHTER"}
 FREIGHTER_CONTAINERS_ID_TABLE = {"S_CONTAINER0", "S_CONTAINER1", "S_CONTAINER2", "S_CONTAINER3", "S_CONTAINER4", "S_CONTAINER5", "S_CONTAINER6", "S_CONTAINER7", "S_CONTAINER8", "S_CONTAINER9"}
 
 
+-- Base storage containers list (don't match "FREIGHTER" keyword to apply scaling rules)
+BASE_CONTAINERID_TABLE = {"CONTAINER0", "CONTAINER1", "CONTAINER2", "CONTAINER3", "CONTAINER4", "CONTAINER5", "CONTAINER6", "CONTAINER7", "CONTAINER8", "CONTAINER9"}
+
+
 -- Metal parts buildable outside of bases if METAL_PARTS_OUTSIDE_BASE is true
 METAL_OUTSIDE_BASE_ID_TABLE = {"M_WALL", "M_DOOR", "M_FLOOR", "M_RAMP", "M_ROOF", "M_ARCH"}
 
@@ -173,13 +191,13 @@ if CAN_SCALE_EXTRACTORS == false then
 	end
 end
 
------ Settings related tables end -----
----------------------------------------
+-------- Settings related tables end --------
+---------------------------------------------
 
 
 
------ NOT settings related tables -----
----------------------------------------
+-------- NOT settings related tables --------
+---------------------------------------------
 
 -- Vehicles parts which can be scaled
 SCALEABLE_VEHICLESPART_ID_TABLE = {"RACE_RAMP", "RACE_BOOSTER"}
@@ -217,8 +235,8 @@ CUSTOM_BUILDCOUNT_LIMITS =
 
 }
 
------ NOT settings related tables end -----
--------------------------------------------
+------ NOT settings related tables end ------
+---------------------------------------------
 
 
 
@@ -256,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	—For latest versions and more visit:-
 	https://www.nexusmods.com/nomanssky/mods/1096
 	]],
-	["NMS_VERSION"]   = "4.05",
+	["NMS_VERSION"]   = "4.06",
 	["MODIFICATIONS"] =
 	{
 		{
@@ -376,8 +394,8 @@ else
 end
 
 
------ All parts buildable above water -----
--------------------------------------------
+------ All parts buildable above water ------
+---------------------------------------------
 if ALL_PARTS_ABOVE_WATER then
 
 	-- Makes all parts buildable above water
@@ -421,8 +439,8 @@ if ALL_PARTS_ABOVE_WATER then
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_notabovewater
 	end
 end
------ All parts buildable above water end -----
------------------------------------------------
+---- All parts buildable above water end ----
+---------------------------------------------
 
 
 -- All parts buildable under water
@@ -441,8 +459,8 @@ if ALL_PARTS_UNDER_WATER then
 end
 
 
------ All parts on freighters rules -----
------------------------------------------
+------- All parts on freighters rules -------
+---------------------------------------------
 if ALL_PARTS_ON_FREIGHTER then
 
 	-- Makes all parts buildable on freighters
@@ -508,6 +526,29 @@ if ALL_PARTS_ON_FREIGHTER then
 		end
 end
 
+	-- Sets Group assignment for Base Storage Containers if BASESTORAGE_ON_FREIGHTER is true
+	if BASESTORAGE_ON_FREIGHTER then
+
+		for i = 1,#BASE_CONTAINERID_TABLE do
+
+			local temp_table_storfreightergroup =
+			{
+				["SPECIAL_KEY_WORDS"] = {"ID", BASE_CONTAINERID_TABLE[i]},
+				["PRECEDING_KEY_WORDS"] = {"Groups"},
+				["LINE_OFFSET"]= "+0",
+				["ADD"] =
+[[
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHT_LEGACY" />
+          <Property name="SubGroupName" value="FREIGHTERLEGACY" />
+          <Property name="SubGroup" value="0" />
+        </Property>
+]]
+			}
+			Change_Table_Array[#Change_Table_Array + 1] = temp_table_storfreightergroup
+		end
+end
+
 	-- Specific exceptions list for parts not buildable on freighters
 	for i = 1,#NOT_FREIGHTER_BUILDPART_ID_TABLE do
 
@@ -527,8 +568,8 @@ end
 ---------------------------------------------
 
 
------ All parts on planet bases rules -----
--------------------------------------------
+------ All parts on planet bases rules ------
+---------------------------------------------
 if ALL_PARTS_ON_PLANETBASE then
 
 	-- Makes all parts buildable on planet bases
@@ -572,12 +613,12 @@ if ALL_PARTS_ON_PLANETBASE then
 		Change_Table_Array[#Change_Table_Array + 1] = temp_table_exceptnotplanet
 	end
 end
------ All parts on planet bases rules end -----
------------------------------------------------
+---- All parts on planet bases rules end ----
+---------------------------------------------
 
 
------ CanScale rules -----
---------------------------
+-------------- CanScale rules ---------------
+---------------------------------------------
 if CAN_SCALE_PREFAB_PARTS == false then
 
 	-- Reverts "CanScale" to "False" for prefab parts
@@ -655,12 +696,12 @@ for i = 1,#NOT_SCALEABLE_BUILDPART_ID_TABLE do
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table
 end
------ CanScale rules end -----
-------------------------------
+------------ CanScale rules end -------------
+---------------------------------------------
 
 
------ Build-count limits -----
-------------------------------
+------------ Build-count limits -------------
+---------------------------------------------
 if NO_BUILDCOUNT_LIMIT then
 
 	-- No build-count limit
@@ -734,8 +775,8 @@ for i = 1,#CUSTOM_BUILDCOUNT_LIMITS do
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table_custombuildlimit
 end
------ Build-count limits end -----
-----------------------------------
+---------- Build-count limits end -----------
+---------------------------------------------
 
 
 -- Makes planting in any biome possible

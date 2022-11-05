@@ -10,7 +10,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   = 
             { 
                 {
-                    ["MBIN_FILE_SOURCE"]    = "LANGUAGE\NMS_LOC5_ENGLISH.MBIN",
+                    ["MBIN_FILE_SOURCE"]    = "LANGUAGE/NMS_LOC5_ENGLISH.MBIN",
                     ["EXML_CHANGE_TABLE"]   = 
                     {
                         {
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]    = "LANGUAGE\NMS_LOC5_FRENCH.MBIN",
+                    ["MBIN_FILE_SOURCE"]    = "LANGUAGE/NMS_LOC5_FRENCH.MBIN",
                     ["EXML_CHANGE_TABLE"]   = 
                     {
                         {
@@ -38,7 +38,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]    = "METADATA\EFFECTS\SCREENFILTERS.MBIN",
+                    ["MBIN_FILE_SOURCE"]    = "METADATA/EFFECTS/SCREENFILTERS.MBIN",
                     ["EXML_CHANGE_TABLE"]   = 
                     {
                         {
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   = 
             { 
                 {
-                    ["MBIN_FILE_SOURCE"]    = "UI\HUD\BINOCULARS\HUDBINOCSCENTRE.MBIN",
+                    ["MBIN_FILE_SOURCE"]    = "UI/HUD/BINOCULARS/HUDBINOCSCENTRE.MBIN",
                     ["EXML_CHANGE_TABLE"]   = 
                     {
                         {
@@ -78,7 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     },
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]    = "UI\HUD\BINOCULARS\HUDBINOCSSURVEYMIDDLE.MBIN",
+                    ["MBIN_FILE_SOURCE"]    = "UI/HUD/BINOCULARS/HUDBINOCSSURVEYMIDDLE.MBIN",
                     ["EXML_CHANGE_TABLE"]   = 
                     {
                         {

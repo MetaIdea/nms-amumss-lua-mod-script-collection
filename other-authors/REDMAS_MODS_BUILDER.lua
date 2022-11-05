@@ -5231,7 +5231,7 @@ local generateRareRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION,MAXS
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="15" />
@@ -5360,7 +5360,7 @@ local generateRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION)
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="35" />
@@ -5560,7 +5560,7 @@ local generateGiantBiomeFOREST = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="10" />
@@ -5625,7 +5625,7 @@ local generateGiantBiomeFOREST = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="15" />
@@ -5825,7 +5825,7 @@ local generateORIGINSTREES = function
 									<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 									<Property name="OverlapStyle" value="SameSeed" />
 									<Property name="MinHeight" value="-1" />
-									<Property name="MaxHeight" value="1280" />
+									<Property name="MaxHeight" value="128" />
 									<Property name="RelativeToSeaLevel" value="True" />
 									<Property name="MinAngle" value="0" />
 									<Property name="MaxAngle" value="60" />
@@ -6037,7 +6037,7 @@ local generateBrokenTreeS = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="30" />
@@ -6133,7 +6133,7 @@ local generateBrokenTreeS = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="180" />
@@ -6230,7 +6230,7 @@ local generateBrokenTreeS = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="60" />
@@ -6408,7 +6408,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlace" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="150" />
@@ -6505,7 +6505,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="140" />
@@ -6640,7 +6640,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="145" />
@@ -6792,7 +6792,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="145" />
@@ -6943,7 +6943,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -7110,7 +7110,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -7261,7 +7261,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -7412,7 +7412,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -7563,7 +7563,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -7714,7 +7714,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -7849,7 +7849,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="150" />
@@ -8000,7 +8000,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="150" />
@@ -8114,7 +8114,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlace" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -8228,7 +8228,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -8342,7 +8342,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -9693,7 +9693,7 @@ local generateMountainBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="10" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -9844,7 +9844,7 @@ local generateMountainBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="1280" />
+								<Property name="MaxHeight" value="128" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -11227,7 +11227,7 @@ local generateGiantBiomeMEGALITH = function
 							<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 							<Property name="OverlapStyle" value="None" />
 							<Property name="MinHeight" value="-1" />
-							<Property name="MaxHeight" value="1280" />
+							<Property name="MaxHeight" value="128" />
 							<Property name="RelativeToSeaLevel" value="True" />
 							<Property name="MinAngle" value="0" />
 							<Property name="MaxAngle" value="15" />
@@ -11346,7 +11346,7 @@ local generateGiantBiomeCITY = function
 							<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 							<Property name="OverlapStyle" value="None" />
 							<Property name="MinHeight" value="-1" />
-							<Property name="MaxHeight" value="1280" />
+							<Property name="MaxHeight" value="128" />
 							<Property name="RelativeToSeaLevel" value="True" />
 							<Property name="MinAngle" value="0" />
 							<Property name="MaxAngle" value="15" />

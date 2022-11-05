@@ -1,8 +1,8 @@
 ModName = "FuelEconomy"
 Author = "Jackty89"
 
-GcRecipeTable = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCRECIPETABLE.MBIN"
-GcProductTable = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPRODUCTTABLE.MBIN"
+GcRecipeTable = "METADATA/REALITY/TABLES/NMS_REALITY_GCRECIPETABLE.MBIN"
+GcProductTable = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN"
 
 SubstanceOrProduct = {"Substance", "Product"}
             -- Tritium,     Deutrium   , Di-Hydrogen
@@ -178,23 +178,23 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = ModName..".pak",
-    ["MOD_DESCRIPTION"]         = ModName,
-    ["MOD_AUTHOR"]              = Author,
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"] = ModName..".pak",
+    ["MOD_DESCRIPTION"] = ModName,
+    ["MOD_AUTHOR"] = Author,
+    ["MODIFICATIONS"] =
     {
         {
-            ["MBIN_CHANGE_TABLE"] 	=
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = GcRecipeTable,
-                    ["EXML_CHANGE_TABLE"]   =
+                    ["MBIN_FILE_SOURCE"] = GcRecipeTable,
+                    ["EXML_CHANGE_TABLE"] =
                     {
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"]    = GcProductTable,
-                    ["EXML_CHANGE_TABLE"]   =
+                    ["MBIN_FILE_SOURCE"] = GcProductTable,
+                    ["EXML_CHANGE_TABLE"] =
                     {
                     }
                 }

@@ -47,22 +47,6 @@ Types =
     ["SUBSTANCE"] = "Substance"
 }
 
-AlteredProductPrices =
-{
-    {
-        ["PRODUCTID"] = "FREI_INV_TOKEN",
-        ["BASEVALUE"] = "1042042"
-    },
-    {
-        ["PRODUCTID"] = "SHIP_INV_TOKEN",
-        ["BASEVALUE"] = "1042042"
-    },
-    {
-        ["PRODUCTID"] = "FRIG_TOKEN",
-        ["BASEVALUE"] = "1042042"
-    }
-}
-
 NewRequirementsArray =
 {
     {
@@ -139,113 +123,109 @@ NewRequirementsArray =
     }
 }
 
+----------------------------------------------------------------------------------------------
+-------------------------------  Customlanguage file data/val  -------------------------------
+-----------------------  This should increase lua compile performance  -----------------------
+----------------------------------------------------------------------------------------------
+Languages =
+{
+    ["EN"] = "English",
+    ["FR"] = "French",
+    ["IT"] = "Italian",
+    ["DE"] = "German",
+    ["ES"] = "Spanish",
+    ["RU"] = "Russian",
+    ["PL"] = "Polish",
+    ["NL"] = "Dutch",
+    ["PT"] = "Portuguese",
+    ["LA"] = "LatinAmericanSpanish",
+    ["BR"] = "BrazilianPortuguese",
+    ["Z1"] = "SimplifiedChinese",
+    ["ZH"] = "TraditionalChinese",
+    ["Z2"] = "TencentChinese",
+    ["KO"] = "Korean",
+    ["JA"] = "Japanese",
+    ["US"] = "USEnglish"
+}
+CraftableModulesLanguageString =
+{
+    {
+        ["ID"] = "FREI_INV_TOKEN",
+        ["NewDescriptionID"] = "CUI_FRIG_TOKEN_DESC",
+        ["Languages"] =
+        {
+            {Languages["EN"], "A technology module crafted from the &lt;STELLAR&gt;proper blueprint&lt;&gt;, or harvested from the remains of a large interstellar starship. May be collected from &lt;STELLAR&gt;freighter crashsites&lt;&gt; or salvaged during &lt;STELLAR&gt;frigate expeditions&lt;&gt;.&#xA;&#xA;Useless in its current form, a &lt;TECHNOLOGY&gt;Research Station&lt;&gt; aboard your freighter may be able to convert it into useable technology."},
+            {Languages["US"], "A technology module crafted from the &lt;STELLAR&gt;proper blueprint&lt;&gt;, or harvested from the remains of a large interstellar starship. May be collected from &lt;STELLAR&gt;freighter crashsites&lt;&gt; or salvaged during &lt;STELLAR&gt;frigate expeditions&lt;&gt;.&#xA;&#xA;Useless in its current form, a &lt;TECHNOLOGY&gt;Research Station&lt;&gt; aboard your freighter may be able to convert it into useable technology."},
+            {Languages["FR"], "Module technologique récupéré sur les vestiges d'un gros vaisseau interstellaire. Peut être obtenu sur les &lt;STELLAR&gt;sites de crash de cargos&lt;&gt; ou au cours d'&lt;STELLAR&gt;expéditions de frégates&lt;&gt;.&#xA;Bien qu'inutile sous sa forme actuelle, une &lt;TECHNOLOGY&gt;station de recherches&lt;&gt; à bord de votre cargo pourrait la convertir en technologie utilisable."}
+        }
+    },
+    {
+        ["ID"] = "SHIP_INV_TOKEN",
+        ["NewDescriptionID"] = "CUI_SHIP_INV_TOKEN_DESC",
+        ["Languages"] =
+        {
+            {Languages["EN"], "A technology module crafted from the &lt;STELLAR&gt;proper blueprint&lt;&gt;, or harvested from the remains of a &lt;STELLAR&gt;salvaged starship&lt;&gt;. May also be collected from &lt;STELLAR&gt;freighter crash sites&lt;&gt; or salvaged during &lt;STELLAR&gt;frigate expeditions&lt;&gt;.&#xA;&#xA;Can be used to expand starship storage capacity at the Space Station's &lt;TECHNOLOGY&gt;Starship Outfitter&lt;&gt;."},
+            {Languages["US"], "A technology module crafted from the &lt;STELLAR&gt;proper blueprint&lt;&gt;, or harvested from the remains of a &lt;STELLAR&gt;salvaged starship&lt;&gt;. May also be collected from &lt;STELLAR&gt;freighter crash sites&lt;&gt; or salvaged during &lt;STELLAR&gt;frigate expeditions&lt;&gt;.&#xA;&#xA;Can be used to expand starship storage capacity at the Space Station's &lt;TECHNOLOGY&gt;Starship Outfitter&lt;&gt;."},
+            {Languages["FR"], "Module technologique récolté dans les vestiges d'un &lt;STELLAR&gt;vaisseau récupéré&lt;&gt;. Peut être obtenu sur les &lt;STELLAR&gt;sites de crash de cargos&lt;&gt; ou au cours d'&lt;STELLAR&gt;expéditions de frégates&lt;&gt;.&#xA;&#xA;&#xA;Peut être utilisé pour améliorer la capacité de stockage du vaisseau auprès de l'&lt;TECHNOLOGY&gt;unité d'améliorations de vaisseau&lt;&gt; dans une station spatiale."}
+        }
+    },
+    {
+        ["ID"] = "FRIG_TOKEN",
+        ["NewDescriptionID"] = "CUI_FREIGHT_INV_TOKEN_DESC",
+        ["Languages"] =
+        {
+            {Languages["EN"], "A technology module crafted from the &lt;STELLAR&gt;proper blueprint&lt;&gt;, or harvested from the remains of an &lt;STELLAR&gt;abandoned freighter&lt;&gt; found floating in space. May also be salvaged during &lt;STELLAR&gt;frigate expeditions&lt;&gt;.&#xA;&#xA;Pre-packed nano-expanders fill out this portable unit and graft it to an existing freighter, increasing its &lt;STELLAR&gt;inventory capacity&lt;&gt;. Apply at your freighter's &lt;TECHNOLOGY&gt;Upgrade Terminal&lt;&gt;."},
+            {Languages["US"], "A technology module crafted from the &lt;STELLAR&gt;proper blueprint&lt;&gt;, or harvested from the remains of an &lt;STELLAR&gt;abandoned freighter&lt;&gt; found floating in space. May also be salvaged during &lt;STELLAR&gt;frigate expeditions&lt;&gt;.&#xA;&#xA;Pre-packed nano-expanders fill out this portable unit and graft it to an existing freighter, increasing its &lt;STELLAR&gt;inventory capacity&lt;&gt;. Apply at your freighter's &lt;TECHNOLOGY&gt;Upgrade Terminal&lt;&gt;."},
+            {Languages["FR"], "Module technologique fabriqué à partir du &lt;STELLAR&gt;plan adéquat&lt;&gt;, ou récupéré sur un &lt;STELLAR&gt;cargo abandonné&lt;&gt; qui dérivait dans l'espace. Peut être obtenu au cours d'&lt;STELLAR&gt;expéditions de frégates&lt;&gt;.&#xA;&#xA;Cette unité portable est remplie de nano-dispositifs d'expansion pré-emballés qui la greffent à un cargo existant, augmentant sa &lt;STELLAR&gt;capacité d'inventaire&lt;&gt;. Appliquez dans le &lt;TECHNOLOGY&gt;terminal d'améliorations&lt;&gt; de votre cargo."}
+        }
+    }
+}
+
+CustomLanguageTag = "CraModLang"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "CraftableModules.pak",
-    ["MOD_DESCRIPTION"]         = "Allows you to craft Rapair Kits, the Salvaged Frigate Module, the Cargo Bulkhead and the Storage Augmentation",
-    ["MOD_AUTHOR"]              = "Methatronc/Maintained and edited by Jackty89",
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"] = "CraftableModules.pak",
+    ["MOD_DESCRIPTION"] = "Allows you to craft Rapair Kits, the Salvaged Frigate Module, the Cargo Bulkhead and the Storage Augmentation",
+    ["LUA_AUTHOR"] = "Jackty89",
+    ["MOD_AUTHOR"] = "Methatronc/Maintained and edited by Jackty89",
+    ["ADD_FILES"] =
+    {
+    },
+    ["MODIFICATIONS"] =
     {
         {
-            ["MBIN_CHANGE_TABLE"]   =
+            ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = "LANGUAGE/NMS_LOC5_ENGLISH.MBIN",
-                    ["EXML_CHANGE_TABLE"]   =
+                    ["MBIN_FILE_SOURCE"] = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "UI_FRIG_TOKEN_DESC"},
-                            ["PRECEDING_KEY_WORDS"] = "English",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value", "A technology module crafted from the &lt;STELLAR&gt;proper blueprint&lt;&gt;, or harvested from the remains of a large interstellar starship. May be collected from &lt;STELLAR&gt;freighter crashsites&lt;&gt; or salvaged during &lt;STELLAR&gt;frigate expeditions&lt;&gt;.&#xA;&#xA;Useless in its current form, a &lt;TECHNOLOGY&gt;Research Station&lt;&gt; aboard your freighter may be able to convert it into useable technology."},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "UI_SHIP_INV_TOKEN_DESC"},
-                            ["PRECEDING_KEY_WORDS"] = "English",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value", "A technology module crafted from the &lt;STELLAR&gt;proper blueprint&lt;&gt;, or harvested from the remains of a &lt;STELLAR&gt;salvaged starship&lt;&gt;. May also be collected from &lt;STELLAR&gt;freighter crash sites&lt;&gt; or salvaged during &lt;STELLAR&gt;frigate expeditions&lt;&gt;.&#xA;&#xA;Can be used to expand starship storage capacity at the Space Station's &lt;TECHNOLOGY&gt;Starship Outfitter&lt;&gt;."},
-                            }
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"]    = "LANGUAGE/NMS_LOC6_ENGLISH.MBIN",
-                    ["EXML_CHANGE_TABLE"]   =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "UI_FREIGHT_INV_TOKEN_DESC"},
-                            ["PRECEDING_KEY_WORDS"] = "English",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value", "A technology module crafted from the &lt;STELLAR&gt;proper blueprint&lt;&gt;, or harvested from the remains of an &lt;STELLAR&gt;abandoned freighter&lt;&gt; found floating in space. May also be salvaged during &lt;STELLAR&gt;frigate expeditions&lt;&gt;.&#xA;&#xA;Pre-packed nano-expanders fill out this portable unit and graft it to an existing freighter, increasing its &lt;STELLAR&gt;inventory capacity&lt;&gt;. Apply at your freighter's &lt;TECHNOLOGY&gt;Upgrade Terminal&lt;&gt;."},
-                            }
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"]    = "LANGUAGE/NMS_LOC5_FRENCH.MBIN",
-                    ["EXML_CHANGE_TABLE"]   =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "UI_FRIG_TOKEN_DESC"},
-                            ["PRECEDING_KEY_WORDS"] = "French",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value", "Module technologique récupéré sur les vestiges d'un gros vaisseau interstellaire. Peut être obtenu sur les &lt;STELLAR&gt;sites de crash de cargos&lt;&gt; ou au cours d'&lt;STELLAR&gt;expéditions de frégates&lt;&gt;.&#xA;Bien qu'inutile sous sa forme actuelle, une &lt;TECHNOLOGY&gt;station de recherches&lt;&gt; à bord de votre cargo pourrait la convertir en technologie utilisable."},
-                            }
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "UI_SHIP_INV_TOKEN_DESC"},
-                            ["PRECEDING_KEY_WORDS"] = "French",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value", "Module technologique récolté dans les vestiges d'un &lt;STELLAR&gt;vaisseau récupéré&lt;&gt;. Peut être obtenu sur les &lt;STELLAR&gt;sites de crash de cargos&lt;&gt; ou au cours d'&lt;STELLAR&gt;expéditions de frégates&lt;&gt;.&#xA;&#xA;&#xA;Peut être utilisé pour améliorer la capacité de stockage du vaisseau auprès de l'&lt;TECHNOLOGY&gt;unité d'améliorations de vaisseau&lt;&gt; dans une station spatiale."},
-                            }
-                        },
-                    },
-                },
-                {
-                    ["MBIN_FILE_SOURCE"]    = "LANGUAGE/NMS_LOC6_FRENCH.MBIN",
-                    ["EXML_CHANGE_TABLE"]   =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Id", "UI_FREIGHT_INV_TOKEN_DESC"},
-                            ["PRECEDING_KEY_WORDS"] = "French",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Value", "Module technologique fabriqué à partir du &lt;STELLAR&gt;plan adéquat&lt;&gt;, ou récupéré sur un &lt;STELLAR&gt;cargo abandonné&lt;&gt; qui dérivait dans l'espace. Peut être obtenu au cours d'&lt;STELLAR&gt;expéditions de frégates&lt;&gt;.&#xA;&#xA;Cette unité portable est remplie de nano-dispositifs d'expansion pré-emballés qui la greffent à un cargo existant, augmentant sa &lt;STELLAR&gt;capacité d'inventaire&lt;&gt;. Appliquez dans le &lt;TECHNOLOGY&gt;terminal d'améliorations&lt;&gt; de votre cargo."},
-                            }
-                        },
+                            ["PRECEDING_KEY_WORDS"] = {"LocTableList"},
+                            ["ADD"] =
+                            [[
+                                <Property value="NMSString0x20.xml">
+                                    <Property name="Value" value="NMS_]]..CustomLanguageTag..[[" />
+                                </Property>
+                            ]]
+                        }
                     }
-                }
-            }
-        },
-        {
-            ["MBIN_CHANGE_TABLE"]   =
-            {
+                },
                 {
                     ["MBIN_FILE_SOURCE"]    = "METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"]   =
                     {
                     }
-                }
-            }
-        },
-        {
-            ["MBIN_CHANGE_TABLE"]   =
-            {
+                },
                 {
-                    ["MBIN_FILE_SOURCE"]    = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",
-                    ["EXML_CHANGE_TABLE"]   =
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Unlockable", "PRODFUEL2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "PRODFUEL2"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD"]                 = UNLOCK,
+                            ["ADD"] = UNLOCK,
                         }
                     }
                 }
@@ -288,7 +268,7 @@ function CreateRequirementsString(Requirements)
 end
 
 
-local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][2]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 for i = 1, #NewRequirementsArray do
     local ProductId = NewRequirementsArray[i]["PRODUCTID"]
     local Requirements = NewRequirementsArray[i]["REQUIREMENTS"]
@@ -314,20 +294,87 @@ for i = 1, #NewRequirementsArray do
         ["SPECIAL_KEY_WORDS"] = {"ID", ProductId,"CraftAmountMultiplier","1"},
         ["ADD"]               = RequirementsString,
     }
+end
 
-    for j = 1, #AlteredProductPrices do
-        local AltProductId = AlteredProductPrices[j]["PRODUCTID"]
-        local BaseValue = AlteredProductPrices[j]["BASEVALUE"]
+----------------------------------------------------------------------------------------------
+-------------------------------     Language file creation     -------------------------------
+----------------------------------------------------------------------------------------------
+function NewLanguagueFile(DescriptionEntries)
+    return
+    [[<?xml version="1.0" encoding="utf-8"?>
+        <Data template="TkLocalisationTable">
+            <Property name="Table">]]
+            ..DescriptionEntries..
+            [[
+            </Property>
+        </Data>
+    ]]
+end
 
-        if ProductId==AltProductId then
-            ChangesToProductTable[#ChangesToProductTable + 1] =
-            {
-                ["SPECIAL_KEY_WORDS"] = {"ID", "FREI_INV_TOKEN"},
-                ["VALUE_CHANGE_TABLE"]  =
-                {
-                    {"BaseValue", BaseValue},
-                }
-            }
+function NewLanguageEntry(Language, NewDescription)
+    return
+    [[
+        <Property name="]]..Language..[[" value="VariableSizeString.xml">
+            <Property name="Value" value="]]..NewDescription..[[" />
+        </Property>
+    ]]
+end
+
+function NewDescriptionText(newDescId, LanguageEntries)
+    return
+    [[
+        <Property value="TkLocalisationEntry.xml">
+            <Property name="Id" value="]]..newDescId..[[" />
+            ]]..LanguageEntries..[[
+        </Property>
+    ]]
+end
+
+function FillCustomlangFile()
+    local DescriptionEntries = {}
+    for i = 1, #CraftableModulesLanguageString do
+        local NewDescriptionID = CraftableModulesLanguageString[i]["NewDescriptionID"]
+        local LanguageEntries = {}
+
+        if not(NewDescriptionID == "")
+        then
+            local LanguagesData = CraftableModulesLanguageString[i]["Languages"]
+            for j = 1, #LanguagesData do
+
+                local Language = LanguagesData[j][1]
+                local NewDescription = LanguagesData[j][2]
+                table.insert(LanguageEntries, NewLanguageEntry(Language, NewDescription))
+            end
+            table.insert(DescriptionEntries, NewDescriptionText(NewDescriptionID, table.concat(LanguageEntries)))
         end
+    end
+    return NewLanguagueFile(table.concat(DescriptionEntries))
+end
+
+local AddCustomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
+for _Key , Language in pairs(Languages) do
+    AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
+    {
+        ["FILE_DESTINATION"] = "LANGUAGE/NMS_"..CustomLanguageTag.."_"..Language..".EXML",
+        ["FILE_CONTENT"] = FillCustomlangFile()
+    }
+end
+
+--PROCTTABLE EDIT (We will change existing product description ID with customDescriptionID)
+for i = 1, #CraftableModulesLanguageString do
+    local NewDescriptionID = CraftableModulesLanguageString[i]["NewDescriptionID"]
+
+    if not(NewDescriptionID == "")
+    then
+        local ProductID = CraftableModulesLanguageString[i]["ID"]
+        ChangesToProductTable[#ChangesToProductTable + 1] =
+        {
+            ["SPECIAL_KEY_WORDS"] = {"ID", ProductID },
+            ["PRECEDING_KEY_WORDS"] = {"Subtitle", "Description"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"Value", NewDescriptionID}
+            }
+        }
     end
 end

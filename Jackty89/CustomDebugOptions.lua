@@ -1,12 +1,12 @@
-ModeName = "InstantTextDisplay"
+ModName = "CustomDebugOptions"
 Author = "Jackty89"
 
-TextDelay = "0.0001"
+DebugoptionsPath = "GCDEBUGOPTIONS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] = ModeName..".pak",
-    ["MOD_DESCRIPTION"] = ModeName,
+    ["MOD_FILENAME"] = ModName..".pak",
+    ["MOD_DESCRIPTION"] = ModName,
     ["MOD_AUTHOR"] = Author,
     ["MODIFICATIONS"] =
     {
@@ -14,16 +14,16 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA/UI/SPECIALTEXTPUNCTUATIONDELAYDATA.MBIN",
+                    ["MBIN_FILE_SOURCE"] = DebugoptionsPath,
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["MATH_OPERATION"] = "*",
-                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Delay", TextDelay},
-                                {"DefaultDelay", TextDelay}
+                                {"MultiplePlayerFreightersInASystem", "True"},
+                                {"DisableProfanityFilter", "True"},
+                                {"SkipIntro", "True"},
+                                {"SkipLogos", "True"},
                             }
                         }
                     }
