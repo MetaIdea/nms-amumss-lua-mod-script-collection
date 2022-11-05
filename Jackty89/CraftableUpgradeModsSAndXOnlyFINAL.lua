@@ -35,43 +35,43 @@ SubList = {}
 
 Languages =
 {
-    ["English"] = "English",
-    ["French"] = "French",
-    ["Italian"] = "Italian",
-    ["German"] = "German",
-    ["Spanish"] = "Spanish",
-    ["Russian"] = "Russian",
-    ["Polish"] = "Polish",
-    ["Dutch"] = "Dutch",
-    ["Portuguese"] = "Portuguese",
-    ["LatinAmeraicanSpanish"] = "LatinAmericanSpanish", --this is not a typo
-    ["BrazilianPortuguese"] = "BrazilianPortuguese",
-    ["SimplifiedChinese"] = "SimplifiedChinese",
-    ["TraditionalChinese"] = "TraditionalChinese",
-    ["TencentChinese"] = "TencentChinese",
-    ["Korean"] = "Korean",
-    ["Japanese"] = "Japanese",
-    ["USEnglish"] = "USEnglish"
+    ["EN"] = "English",
+    ["FR"] = "French",
+    ["IT"] = "Italian",
+    ["DE"] = "German",
+    ["ES"] = "Spanish",
+    ["RU"] = "Russian",
+    ["PL"] = "Polish",
+    ["NL"] = "Dutch",
+    ["PT"] = "Portuguese",
+    ["LA"] = "LatinAmericanSpanish",
+    ["BR"] = "BrazilianPortuguese",
+    ["Z1"] = "SimplifiedChinese",
+    ["ZH"] = "TraditionalChinese",
+    ["Z2"] = "TencentChinese",
+    ["KO"] = "Korean",
+    ["JA"] = "Japanese",
+    ["US"] = "USEnglish"
 }
 AddNewLanguatext =
 {
-    {Languages["English"], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
-    {Languages["French"], "Une amélioration de cargo fabriqué.&#xA;&#xA;Peut être redéployée dans votre propre vaisseau amiral pour améliorer sa &lt;TECHNOLOGY&gt;Technologie&lt;&gt;."},
-    {Languages["Italian"], "Un miglioramento per il mercantile.&#xA;&#xA;Può essere utilizzato sulla propria ammiraglia per migliorarne l'&lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
-    {Languages["German"], "Ein einsetzbares Frachter-Upgrade.&#xA;&#xA;Kann in dein eigenes Hauptschiff wiedereingebaut werden, um dessen &lt;TECHNOLOGY&gt;Technologie&lt;&gt; zu verbessern."},
-    {Languages["Spanish"], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
-    {Languages["Russian"], "Модернизация грузового корабля.&#xA;&#xA;Может быть переоборудована в ваш собственный капитальный корабль для улучшения его &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
-    {Languages["Polish"], "Rozmieszczalne ulepszenie frachtowca. MoÅ¼na ponownie zainstalowaÄ na wÅasnym statku gÅównym, aby ulepszyÄ jego &lt;TECHNOLOGY&gt;technologie&lt;&gt;."},
-    {Languages["Dutch"], "Een upgrade gemaakt voor een vlaggenschip.&#xA;&#xA;Kan worden geïnstalleerd in je eigen vlaggenschip om de &lt;TECHNOLOGY&gt;Technologie&lt;&gt; te verbeteren."},
-    {Languages["Portuguese"], "Uma atualização do cargueiro implementável.&#xA;&#xA;Pode ser reimplementada na sua própria nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
-    {Languages["LatinAmeraicanSpanish"], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
-    {Languages["BrazilianPortuguese"], "Uma atualização implantável de nave cargueira.&#xA;&#xA;Pode ser reimplantada na sua nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt; dela."},
-    {Languages["SimplifiedChinese"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
-    {Languages["TraditionalChinese"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
-    {Languages["TencentChinese"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
-    {Languages["Korean"], ""},
-    {Languages["Japanese"], ""},
-    {Languages["USEnglish"], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."}
+    {Languages["EN"], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
+    {Languages["FR"], "Une amélioration de cargo fabriqué.&#xA;&#xA;Peut être redéployée dans votre propre vaisseau amiral pour améliorer sa &lt;TECHNOLOGY&gt;Technologie&lt;&gt;."},
+    {Languages["IT"], "Un miglioramento per il mercantile.&#xA;&#xA;Può essere utilizzato sulla propria ammiraglia per migliorarne l'&lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
+    {Languages["DE"], "Ein einsetzbares Frachter-Upgrade.&#xA;&#xA;Kann in dein eigenes Hauptschiff wiedereingebaut werden, um dessen &lt;TECHNOLOGY&gt;Technologie&lt;&gt; zu verbessern."},
+    {Languages["ES"], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
+    {Languages["RU"], "Модернизация грузового корабля.&#xA;&#xA;Может быть переоборудована в ваш собственный капитальный корабль для улучшения его &lt;TECHNOLOGY&gt;Technology&lt;&gt;."},
+    {Languages["PL"], "Rozmieszczalne ulepszenie frachtowca. MoÅ¼na ponownie zainstalowaÄ na wÅasnym statku gÅównym, aby ulepszyÄ jego &lt;TECHNOLOGY&gt;technologie&lt;&gt;."},
+    {Languages["NL"], "Een upgrade gemaakt voor een vlaggenschip.&#xA;&#xA;Kan worden geïnstalleerd in je eigen vlaggenschip om de &lt;TECHNOLOGY&gt;Technologie&lt;&gt; te verbeteren."},
+    {Languages["PT"], "Uma atualização do cargueiro implementável.&#xA;&#xA;Pode ser reimplementada na sua própria nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt;."},
+    {Languages["LA"], "Una mejora del carguero hecha a mano.&#xA;&#xA;Se puede volver a desplegar en tu propia nave principal para mejorar su &lt;TECHNOLOGY&gt;Tecnología&lt;&gt;."},
+    {Languages["BR"], "Uma atualização implantável de nave cargueira.&#xA;&#xA;Pode ser reimplantada na sua nave capital para melhorar o &lt;TECHNOLOGY&gt;Tecnologia&lt;&gt; dela."},
+    {Languages["Z1"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
+    {Languages["ZH"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
+    {Languages["Z2"], "可合成的貨船升級。&#xA;&#xA;可以被移除及重新安裝於星際貨船上，以提升&lt;TECHNOLOGY&gt;科技元件&lt;&gt;效能。"},
+    {Languages["KO"], ""},
+    {Languages["JA"], ""},
+    {Languages["US"], "A crafted freighter upgrade.&#xA;&#xA;Can be re-deployed into your own capital ship to improve its &lt;TECHNOLOGY&gt;Technology&lt;&gt;."}
 }
 
 GeneralUpgradeMods =
@@ -304,43 +304,43 @@ Requirements =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"] 			= NexusModName..".pak",
-    ["MOD_DESCRIPTION"]			= "",
-    ["MOD_AUTHOR"]				= Author,
-    ["ADD_FILES"] 				=
+    ["MOD_FILENAME"]             = NexusModName..".pak",
+    ["MOD_DESCRIPTION"]            = "",
+    ["MOD_AUTHOR"]                = Author,
+    ["ADD_FILES"]                 =
     {
     },
-    ["MODIFICATIONS"] 			=
+    ["MODIFICATIONS"]             =
     {
         {
-            ["MBIN_CHANGE_TABLE"] 	=
+            ["MBIN_CHANGE_TABLE"]     =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] 	= GCProductTablePath,
-                    ["EXML_CHANGE_TABLE"] 	=
+                    ["MBIN_FILE_SOURCE"]     = GCProductTablePath,
+                    ["EXML_CHANGE_TABLE"]     =
                     {
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] 	= GCProcTechnologyPath,
-                    ["EXML_CHANGE_TABLE"] 	=
+                    ["MBIN_FILE_SOURCE"]     = GCProcTechnologyPath,
+                    ["EXML_CHANGE_TABLE"]     =
                     {
                     }
                 },
                 {
                     -- Add recipes to the Tree
-                    ["MBIN_FILE_SOURCE"] 	= UnlockableItemTreesPath,
-                    ["EXML_CHANGE_TABLE"] 	=
+                    ["MBIN_FILE_SOURCE"]     = UnlockableItemTreesPath,
+                    ["EXML_CHANGE_TABLE"]     =
                     {
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] 	= "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                    ["MBIN_FILE_SOURCE"]     = "GCDEBUGOPTIONS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LocTableList"},
-                            ["ADD"] 	=
+                            ["ADD"]     =
                             [[
                                 <Property value="NMSString0x20.xml">
                                     <Property name="Value" value="NMS_]]..CustomLanguageTag..[[" />
@@ -980,11 +980,11 @@ function FillCustomlangFile()
 end
 
 local AddCsutomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
-for Key , _Language in pairs(Languages) do
+for _Key , Language in pairs(Languages) do
     AddCsutomLanguageFiles[#AddCsutomLanguageFiles +1] =
     {
-        ["FILE_DESTINATION"] 	=	"LANGUAGE/NMS_"..CustomLanguageTag.."_"..Key..".EXML",
-        ["FILE_CONTENT"] 		=	FillCustomlangFile()
+        ["FILE_DESTINATION"] = "LANGUAGE/NMS_"..CustomLanguageTag.."_"..Language..".EXML",
+        ["FILE_CONTENT"] = FillCustomlangFile()
     }
 end
 
@@ -1065,7 +1065,7 @@ for i = 1, #CustomFreighterModData do
     {
         ["SPECIAL_KEY_WORDS"] = {"Title", FrTree, "Title", TechTreeSub},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]	= Tree
+        ["ADD"]    = Tree
     }
     ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees + 1] = ChangesToUnlockableItemTrees_temp
 
@@ -1112,7 +1112,7 @@ for i = 1, #GeneralUpgradeMods do
     {
         ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSub},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]	= Tree
+        ["ADD"]    = Tree
     }
     ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
 end
@@ -1144,7 +1144,7 @@ for i = 1, #BioShipMods do
     {
         ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSub},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]	= Tree
+        ["ADD"]    = Tree
     }
     ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
 
@@ -1193,7 +1193,7 @@ for i = 1, #XClassMods do
     {
         ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TechTreeSubFactory},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]	= Tree
+        ["ADD"]    = Tree
     }
     ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
 end
@@ -1213,8 +1213,8 @@ for i = 1, #IdArray do
     ChangesToProductTable[#ChangesToProductTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID,"CraftAmountMultiplier","1"},
-        ["LINE_OFFSET"] 	= "+1",
-        ["REMOVE"]	= "LINE"
+        ["LINE_OFFSET"]     = "+1",
+        ["REMOVE"]    = "LINE"
     }
 
     ChangesToProductTable[#ChangesToProductTable +1] =
@@ -1226,7 +1226,7 @@ for i = 1, #IdArray do
     ChangesToProductTable[#ChangesToProductTable +1] =
     {
         ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID},
-        ["VALUE_CHANGE_TABLE"] 	=
+        ["VALUE_CHANGE_TABLE"]     =
         {
             {"IsCraftable", IsCraftableToTrue},
             {"RecipeCost", RecipeCost}

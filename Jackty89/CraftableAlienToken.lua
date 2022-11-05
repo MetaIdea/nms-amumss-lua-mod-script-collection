@@ -28,10 +28,10 @@ NewRequirementsArray =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]            = "CraftableAlienTokens.pak",
-    ["MOD_DESCRIPTION"]         = "Craft Alien inventory tokens",
-    ["MOD_AUTHOR"]              = "Jackty89",
-    ["MODIFICATIONS"]           =
+    ["MOD_FILENAME"] = "CraftableAlienTokens.pak",
+    ["MOD_DESCRIPTION"] = "Craft Alien inventory tokens",
+    ["MOD_AUTHOR"] = "Jackty89",
+    ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"]   =
@@ -48,13 +48,13 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
-                    ["MBIN_FILE_SOURCE"]    = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",
-                    ["EXML_CHANGE_TABLE"]   =
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/UNLOCKABLEITEMTREES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"Unlockable", "PRODFUEL2"},
+                            ["SPECIAL_KEY_WORDS"] = {"Unlockable", "PRODFUEL2"},
                             ["PRECEDING_KEY_WORDS"] = {"Children"},
-                            ["ADD"]                 = UNLOCK,
+                            ["ADD"] = UNLOCK,
                         }
                     }
                 }
@@ -99,13 +99,13 @@ end
 
 local ChangesToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 for i = 1, #NewRequirementsArray do
-    local ProductId    = NewRequirementsArray[i]["PRODUCTID"]
+    local ProductId = NewRequirementsArray[i]["PRODUCTID"]
     local Requirements = NewRequirementsArray[i]["REQUIREMENTS"]
 
     local RequirementsString = CreateRequirementsString(Requirements)
 
     ChangesToProductTable[#ChangesToProductTable + 1] = {
-        ["SPECIAL_KEY_WORDS"]  = {"Id", ProductId},
+        ["SPECIAL_KEY_WORDS"] = {"Id", ProductId},
         ["VALUE_CHANGE_TABLE"] =
         {
             {"IsCraftable", "True"}
@@ -114,12 +114,12 @@ for i = 1, #NewRequirementsArray do
 
     ChangesToProductTable[#ChangesToProductTable + 1] = {
         ["SPECIAL_KEY_WORDS"] = {"Id", ProductId,"CraftAmountMultiplier","1"},
-        ["LINE_OFFSET"]       = "+1",
-        ["REMOVE"]            = "LINE",
+        ["LINE_OFFSET"] = "+1",
+        ["REMOVE"] = "LINE",
     }
 
     ChangesToProductTable[#ChangesToProductTable + 1] = {
         ["SPECIAL_KEY_WORDS"] = {"Id", ProductId,"CraftAmountMultiplier","1"},
-        ["ADD"]               = RequirementsString,
+        ["ADD"] = RequirementsString,
     }
 end

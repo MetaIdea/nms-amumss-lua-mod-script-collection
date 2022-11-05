@@ -211,7 +211,7 @@ for i = 1, #ListOfIdsSplitForTree do
     {
         ["SPECIAL_KEY_WORDS"] = {"Title", TechTree, "Title", TECHSUB},
         ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-        ["ADD"]	= Tree
+        ["ADD"]    = Tree
     }
     ChangesToUnlockableItemTrees[#ChangesToUnlockableItemTrees +1] = UnlockableItemTree
 end

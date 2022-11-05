@@ -3,16 +3,16 @@ Author = "Jackty89"
 
 InventoryTablePath = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"
 
-MaxInventory     = 120
-MaxTech          = 60
+MaxInventory = 120
+MaxTech = 60
 
-InventoryWidth   = 10
-InventoryHeight  = 12
+InventoryWidth = 10
+InventoryHeight = 12
 
-TechWidth        = 10
-TechHeight       = 6
+TechWidth = 10
+TechHeight = 6
 
-MaxSlot          = false
+MaxSlot = false
 
 FreighterSizes = {
     "FreighterSmall",
@@ -22,10 +22,10 @@ FreighterSizes = {
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]    = ModName.. ".pak",
+    ["MOD_FILENAME"] = ModName.. ".pak",
     ["MOD_DESCRIPTION"] = ModName,
-    ["MOD_AUTHOR"]      = Author,
-    ["MODIFICATIONS"]   =
+    ["MOD_AUTHOR"] = Author,
+    ["MODIFICATIONS"] =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -63,12 +63,12 @@ function EditInventory(type, maxSlot)
         ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "Bounds", "GcInventoryLayoutGenerationBounds.xml"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"MaxWidthSmall",     InventoryWidth},
-            {"MaxHeightSmall",    InventoryHeight},
-            {"MaxWidthStandard",  InventoryWidth},
+            {"MaxWidthSmall", InventoryWidth},
+            {"MaxHeightSmall", InventoryHeight},
+            {"MaxWidthStandard", InventoryWidth},
             {"MaxHeightStandard", InventoryHeight},
-            {"MaxWidthLarge",     InventoryWidth},
-            {"MaxHeightLarge",    InventoryHeight},
+            {"MaxWidthLarge", InventoryWidth},
+            {"MaxHeightLarge", InventoryHeight},
         }
     }
 
@@ -77,12 +77,12 @@ function EditInventory(type, maxSlot)
         ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "TechBounds", "GcInventoryLayoutGenerationBounds.xml"},
         ["VALUE_CHANGE_TABLE"] =
         {
-            {"MaxWidthSmall",     TechWidth},
-            {"MaxHeightSmall",    TechHeight},
-            {"MaxWidthStandard",  TechWidth},
+            {"MaxWidthSmall", TechWidth},
+            {"MaxHeightSmall", TechHeight},
+            {"MaxWidthStandard", TechWidth},
             {"MaxHeightStandard", TechHeight},
-            {"MaxWidthLarge",     TechWidth},
-            {"MaxHeightLarge",    TechHeight},
+            {"MaxWidthLarge", TechWidth},
+            {"MaxHeightLarge", TechHeight},
         }
     }
 end
