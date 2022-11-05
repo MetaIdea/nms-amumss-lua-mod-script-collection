@@ -3,8 +3,8 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]    =   "shoemakers Flight Adjustments.pak",
     ["MOD_AUTHOR"]      =   "shoemakerjones",
     ["LUA_AUTHOR"]      =   "shoemakerjones",
-    ["NMS_VERSION"]     =   "3.98",
-    ["MOD_DESCRIPTION"] =   "v2.1 - Makes significant changes to they way flight is handled, both in space as well as in planetary athmosphere.",
+    ["NMS_VERSION"]     =   "4.05",
+    ["MOD_DESCRIPTION"] =   "v2.2 - Makes significant changes to they way flight is handled, both in space as well as in planetary athmosphere.",
     ["MODIFICATIONS"]   = 
     {
         {
