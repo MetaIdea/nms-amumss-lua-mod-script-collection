@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Old Style Slots 1.2.pak", 
+["MOD_FILENAME"] 			= "Old Style Slots 1.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "4.05",
@@ -17,6 +17,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								-- Flat background icons (remove the 3 lines to get vanilla shaded backgrounds again)
+								{"InvSlotGradientFactorMin", "0.0"},
+								{"InvSlotGradientFactor", "0.0"},
+								{"InvSlotGradientTime", "0"},
+								-- Bars instead of numbers
 								{"ReplaceItemBarWithNumbers", "False"},
 							}
 						}
