@@ -1,5 +1,5 @@
 local batchPakName = "lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Specific Icon Tweaks 1.1]]
+local modDescription = [[Lyravega's Specific Icon Tweaks 1.2]]
 local gameVersion = "4.0+"
 
 --[[
@@ -26,7 +26,7 @@ local overrides = {
 	showRuinStuff = {nil, {ScanRange = 100, AlwaysShowRange = 100, CanTagIcon = false, CompassRangeMultiplier = 1.0}, "/BUILDINGS/RUINS/PARTS/CRATE"},
 	showHazPlants = {{ScanIconType = "HazardPlant"}, {AlwaysShowRange = 30, AllowedToMerge = false}},
 	showHazEggs = {{ScanIconType = "HazardEgg"}, {AlwaysShowRange = 10, AllowedToMerge = false}},
-	showDerelictStuff = {{ScanIconType = "Freighter...", ScanName = "UI_SALVAGE_CRATE"}, {AlwaysShowRange = {inherit = "ScanRange", multiply = 0.10}, ScannableType = "Scanner", ScanTime = 15, AllowedToMerge = false}},
+	showDerelictStuff = {{ScanIconType = "Freighter...", ScanName = "UI_SALVAGE_CRATE"}, {AlwaysShowRange = {inherit = "ScanRange", multiply = 0.10}, ScannableType = "Scanner", ScanTime = 30, AllowedToMerge = false}},
 	showSentinelLoot = {nil, {ScanRange = 250, AlwaysShowRange = 50, CompassRangeMultiplier = 0.2, AllowedToMerge = false}, "/LOOTDROP"},
 	showBuriedCrates = {{ScanName = "UI_UNDERGROUND_CRATE"}, {AlwaysShowRange = {inherit = "ScanRange", multiply = 0.10}}},
 }
@@ -1788,7 +1788,7 @@ local entities = {
 		DisableIfBuildingPart = {default = false},
 		DisableIfInBase = {default = false},
 		UseModelNode = {default = true},
-		ScanIconType = {default = "FreighterDataPad"},
+		ScanIconType = {default = "FreighterDataPad", overwrite = "BuriedRare"},
 		ScannableType = {default = "Scanner"},
 		IsPlacedMarker = {default = false},
 		ShowInFreighterBranchRoom = {default = false},

@@ -1,13 +1,24 @@
+local lyr = {tweakStates = {}, tweakTables = {}, ignore = "IGNORE"}
 local batchPakName = "lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Ship Tweaks 1.1]]
+local modDescription = [[Lyravega's Ship Tweaks 1.2]]
 local gameVersion = "4.0+"
 
 --[[
-	Below in the 'enabledTweaks' table are modification names and what they do is commented next to them. 
-	Change the values to 'false' (without ''; someModification = false,) to disable the modifications.
+	Below in the 'lyr.tweakStates' table are modification names and what they do is commented next to them
+	Some modifications may be disabled by default; the double dashes '--' at the beginning of a line will cause it to get ignored
+
+	Ways to disable a modification: 
+		• RECOMMENDED: Add double dashes at the beginning of the line / ex: '--modification =...'
+		• Set the value of the modification to false / ex: 'modification = false,'
+		• Delete the line
+		
+	Ways to (re)enable a modification:
+		• Remove double dashes at the beginning of the line
+		• Set the value of the modification to true / its original
 ]]
 
-local enabledTweaks = {
+lyr.tweakStates = {
+	glareNuker = true,						-- removes the glare from ship displays and a few other vehicle / ship related areas
 	looterExplorer = true,					-- ship loot collection distance is massively increased
 	improvedShipScannerPulse = true,		-- halves the ship scanner pulse cooldown, boosts max icon range, displays more results
 	superShipScannerPulse = true,			-- yields lots of results that are normally not available to ship scanners, dependant on 'improvedShipScannerPulse'
@@ -15,21 +26,201 @@ local enabledTweaks = {
 	distantItemTeleporter = true,			-- increases the ship teleporter upgrade range
 	shipSpeedMult = 1.25,					-- ship top speeds in all conditions are multiplied by the given value
 	spaceDustCleaner = true,				-- reduces the amount and the visibility of the particle effects during boosting / using pulse drive
+	noSpeedTunnel = true,					-- removes the speed tunnel effect from ships, pairs nicely with 'spaceDustCleaner'
 	flightRestrictionMult = 0.25,			-- some flight restrictions are eased by the given multiplier value for a more pleasant joyride
+	stoppingMarginMult = 0.75,				-- pulse drive stopping margins are multiplied by the given value (very low multipliers are not recommended)
 	shipAtmosphereHover = true,				-- allows ship hovering in the atmospheres
 	pulseDriveSpeedMult = 2.5,				-- pulse drive top speed is multiplied by the given value, it shakes the ship more and cools down faster
 	reducePulseDriveFlash = true,			-- the initial screen flash caused by the activation of pulse drive is toned down
 	preciseNavigation = true,				-- the auto-locking feature of the pulse drive now have more strict angles and ignores other player stuff
+	noPulseDriveExitDelay = true,			-- pulse drive exit delay is removed and in turn the camera zoom effect is also disabled
+	fastPulseDriveExit = true,				-- exit from pulse drive at faster speeds
+--	autoStationOrient = true,				-- ship will orient towards enterances of space objects (not recommended)
+--	autoEjectOnLanding = true,				-- automatically eject from the ship on landing
 }
 
-local ignore = "IGNORE"
+---@param tweakName string
+---@return boolean 
+function lyr:checkTweak(tweakName)
+	local tweakValue = self.tweakStates[tweakName]
 
-for tweakName, tweakValue in next, enabledTweaks do
-	if string.find(tweakName, "Mult", 1, true) ~= nil and type(tweakValue) == "boolean" then enabledTweaks[tweakName] = 1 end
+	if tweakValue == nil then return false
+	elseif type(tweakValue) == "boolean" then return tweakValue
+	elseif type(tweakValue) == "number" then
+		if string.find(tweakName, "Mult", 1, true) ~= nil then return tweakValue > 0 and tweakValue ~= 1
+		elseif string.find(tweakName, "Time", 1, true) ~= nil then return tweakValue > 0
+		else return true end
+	else return false end
 end
 
-local tweaks = {
-	looterExplorer = {
+---@param mode string
+---@param ... string
+---@return boolean 
+function lyr:checkTweaks(mode, ...)
+	local tweakNames = {...}
+	local breakPoint = (mode == "and" and true) or (mode == "or" and false)
+	local bp = breakPoint
+
+	for tweakName in next, tweakNames do
+		local tweakState = self:checkTweak(tweakName)
+
+		breakPoint = (mode == "and" and (tweakState and bp)) or (mode == "or" and (tweakState or bp))
+		if breakPoint ~= bp then break end
+	end
+
+	return breakPoint
+end
+
+---@param tweakName string
+---@param defaultValue number
+---@return number
+function lyr:useProxyMult(tweakName, defaultValue)
+	defaultValue = defaultValue or 1
+
+	local multValue = self.tweakStates[tweakName]
+
+	return self:checkTweak(tweakName) and multValue*defaultValue or defaultValue
+end
+
+---@param longString string
+---@return string|nil
+---@return string|nil
+function lyr:parsePair(longString)
+	local t = {}
+
+	-- for w in string.gmatch(longString, "\"(%g+)\"") do t[#t+1] = w end
+	for w in string.gmatch(longString, [["(%g+)"]]) do t[#t+1] = w end
+
+	return t[1], t[2]
+end
+
+lyr.sectionOps = {
+	addSection = true,
+	addAfterSection = true,
+	copySection = true,
+	saveSection = true,
+	pasteSection = true,
+	pasteAfterSection = true,
+	removeSection = true,
+	removeLine = true,
+	replaceLine = true
+}
+
+function lyr:isSectionOp(changeTable)
+	for k in next, changeTable do if self.sectionOps[k] then return true end end
+	return false
+end
+
+---@return table
+function lyr:processTweakTables()
+	local tweakTables = self.tweakTables
+	local modificationTables = {}
+
+	for _, tweakTable in next, tweakTables do if tweakTable then
+		local modificationTable = {
+			MBIN_CHANGE_TABLE = {}
+		}; local mbinChangeTables = modificationTable.MBIN_CHANGE_TABLE
+
+		for mbinPath, changeTables in pairs(tweakTable) do
+			local mbinChangeTable = {
+				MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
+				EXML_CHANGE_TABLE = {}
+			}; local exmlChangeTables = mbinChangeTable.EXML_CHANGE_TABLE
+
+			for _, changeTable in ipairs(changeTables) do if changeTable then
+				local exmlChangeTable = {
+					COMMENT = changeTable.comment or nil,
+					LINE_OFFSET = changeTable.thisLine and 0 or changeTable.lineOffset or nil,
+					SECTION_UP = changeTable.selectLevel or nil,
+					PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or changeTable.precedingKeyWordsFirst or nil,
+					PRECEDING_FIRST = changeTable.precedingKeyWordsFirst and true or nil,
+					SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
+					FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
+					WHERE_IN_SECTION = changeTable.findSections or changeTable.findSectionsWhereAllMatch or nil,
+					WHERE_IN_SUBSECTION = changeTable.findSubSections or changeTable.findAllSubSections or changeTable.findSubSectionsWhereAllMatch or changeTable.findAllSubSectionsWhereAllMatch or nil,
+					WISEC_LOP = changeTable.findSectionsWhereAllMatch and "AND" or nil,
+					WISUBSEC_LOP = changeTable.findSubSectionsWhereAllMatch and "AND" or nil,
+					WISUBSEC_OPTION = (changeTable.findAllSubSections or changeTable.findAllSubSectionsWhereAllMatch) and "ALL" or nil,
+					REPLACE_TYPE = changeTable.replaceAll and "ALL" or changeTable.replaceRaw and "RAW" or nil,
+					MATH_OPERATION = changeTable.multiply and "*" or changeTable.mathOp or nil,
+					INTEGER_TO_FLOAT = changeTable.preserveIntegers and "PRESERVE" or nil,
+					REMOVE = changeTable.removeSection and "SECTION" or changeTable.removeLine and "LINE" or nil,
+					ADD_OPTION = (changeTable.addAfterSection or changeTable.pasteAfterSection) and "ADDafterSECTION" or changeTable.replaceLine and "REPLACEatLINE" or nil,
+					ADD = (changeTable.addAfterSection or changeTable.addSection or changeTable.replaceLine) and changeTable.section or nil,
+					SECTION_SAVE_TO = changeTable.copySection or changeTable.saveSection or nil,
+					SECTION_KEEP = changeTable.saveSection and true or nil,
+					SECTION_EDIT = changeTable.editSection or nil,
+					SECTION_ADD_NAMED = changeTable.pasteSection or changeTable.pasteAfterSection or nil,
+					VALUE_MATCH = changeTable.match and changeTable.match.value or nil,
+					VALUE_MATCH_OPTIONS = changeTable.match and changeTable.match.option or nil,
+					VALUE_CHANGE_TABLE = changeTable.fields and {} or nil
+				}; local valueChangeTable = exmlChangeTable.VALUE_CHANGE_TABLE
+
+				if changeTable.fields then
+					for fieldName, fieldValue in pairs(changeTable.fields) do
+						if type(fieldValue) == "table" then
+							if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
+								table.insert(valueChangeTable, {fieldName, fieldValue.altered})
+							elseif fieldValue.multiplier and fieldValue.multiplier ~= 1 then
+								table.insert(valueChangeTable, {fieldName, changeTable.multiply and fieldValue.multiplier or fieldValue.default * fieldValue.multiplier})
+							elseif type(fieldName) == "number" then
+								table.insert(valueChangeTable, fieldValue)
+							end
+						else
+							table.insert(valueChangeTable, {fieldName, fieldValue})
+						end
+					end
+
+					valueChangeTable = #valueChangeTable > 0 and valueChangeTable or nil
+					exmlChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
+				end
+
+				if valueChangeTable or self:isSectionOp(changeTable) then
+					table.insert(exmlChangeTables, exmlChangeTable)
+				end
+			end end
+
+			table.insert(mbinChangeTables, mbinChangeTable)
+		end
+
+		table.insert(modificationTables, modificationTable)
+	end	end
+
+	return modificationTables
+end
+
+lyr.tweakTables = {
+	glareNuker = lyr:checkTweak("glareNuker") and {
+		{
+			mbinPaths = {
+				"MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITB_INTERIOR/GLASS_MAT1.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPITA_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPITB_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPITCOMMON_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/COCKPIT/SAILSHIPCOCKPITA_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SHUTTLE/INTERIORS/CANOPYA_INTERIOR/CANOPYA_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/VEHICLES/MECH_SUIT/MECH_SUIT_COCKPIT/RAIL12_PASTED__PASTED__GLASS_MAT.MATERIAL.MBIN",
+				"MODELS/COMMON/VEHICLES/SHARED/INTERIOR/COCKPITCHAIR/GLASS_MAT1.MATERIAL.MBIN",
+				"MODELS/COMMON/VEHICLES/SHARED/INTERIOR/COCKPITCHAIRSUB/GLASS_MAT1.MATERIAL.MBIN",
+				"MODELS/COMMON/VEHICLES/SHARED/INTERIOR/SCREENS/SCREEN1_L/GLASS_MAT1.MATERIAL.MBIN",
+				"MODELS/COMMON/VEHICLES/SHARED/INTERIOR/SCREENS/SCREEN1_R/GLASS_MAT1.MATERIAL.MBIN",
+				"MODELS/COMMON/VEHICLES/SUBMARINE/SUBMARINECOCKPIT/GLASS_MAT.MATERIAL.MBIN",
+			},
+			{
+				specialKeyWords = {lyr:parsePair([[<Property name="MaterialFlag" value="_F25_ROUGHNESS_MASK" />]])},
+				removeSection = true
+			},
+			{
+				specialKeyWords = {lyr:parsePair([[<Property name="Name" value="gMaterialParamsVec4" />]])},
+				fields = {
+					x = 1
+				}
+			}
+		}
+	},
+	looterExplorer = lyr:checkTweak("looterExplorer") and {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -41,13 +232,13 @@ local tweaks = {
 			}
 		}
 	},
-	improvedShipScannerPulse = {
+	improvedShipScannerPulse = lyr:checkTweak("improvedShipScannerPulse") and {
 		["GCBUILDINGGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					MaxIconRange = {default = 1200, altered = enabledTweaks.superShipScannerPulse and 100000 or 20000},
-					MinShipScanBuildings = {default = 0, altered = enabledTweaks.superShipScannerPulse and 6 or 4},
-					MaxShipScanBuildings = {default = 2, altered = enabledTweaks.superShipScannerPulse and 30 or 20}
+					MaxIconRange = {default = 1200, altered = lyr.tweakStates.superShipScannerPulse and 100000 or 20000},
+					MinShipScanBuildings = {default = 0, altered = lyr.tweakStates.superShipScannerPulse and 6 or 4},
+					MaxShipScanBuildings = {default = 2, altered = lyr.tweakStates.superShipScannerPulse and 30 or 20}
 				}
 			}
 		},
@@ -55,8 +246,8 @@ local tweaks = {
 			{
 				precedingKeyWords = {"ShipScan"},
 				fields = {
-					ScanType = {default = "Ship", altered = enabledTweaks.superShipScannerPulse and "DebugPlanet" or "Ship"},
-					PulseRange = {default = 10000, altered = enabledTweaks.superShipScannerPulse and 100000 or 20000},
+					ScanType = {default = "Ship", altered = lyr.tweakStates.superShipScannerPulse and "DebugPlanet" or "Ship"},
+					PulseRange = {default = 10000, altered = lyr.tweakStates.superShipScannerPulse and 100000 or 20000},
 					PulseTime = {default = 3, altered = 5},
 					PlayAudioOnMarkers = {default = true, altered = true},
 					ChargeTime = {default = 10, altered = 5}
@@ -64,7 +255,7 @@ local tweaks = {
 			}
 		}
 	},
-	noAsteroidsOnScanner = {
+	noAsteroidsOnScanner = lyr:checkTweak("noAsteroidsOnScanner") and {
 		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -75,7 +266,7 @@ local tweaks = {
 			}
 		}
 	},
-	distantItemTeleporter = {
+	distantItemTeleporter = lyr:checkTweak("distantItemTeleporter") and {
 		["METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"] = {
 			{
 				specialKeyWords = {"ID", "SHIP_TELEPORT"},
@@ -85,7 +276,7 @@ local tweaks = {
 			}
 		}
 	},
-	shipSpeedMult = {
+	shipSpeedMult = lyr:checkTweak("shipSpeedMult") and {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				specialKeyWords = {
@@ -95,15 +286,15 @@ local tweaks = {
 					{"AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"}
 				},
 				fields = {
-					MaxSpeed = enabledTweaks.shipSpeedMult,
-					BoostMaxSpeed = enabledTweaks.shipSpeedMult
+					MaxSpeed = lyr.tweakStates.shipSpeedMult,
+					BoostMaxSpeed = lyr.tweakStates.shipSpeedMult
 				},
 				multiply = true,
 				replaceAll = true
 			}
 		}
 	},
-	spaceDustCleaner = {
+	spaceDustCleaner = lyr:checkTweak("spaceDustCleaner") and {
 		{
 			mbinPaths = {
 				"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES.SPEEDLINE.MBIN",
@@ -116,8 +307,8 @@ local tweaks = {
 			},
 			{
 				fields = {
-					NumberOfParticles = 0.10,
-					Alpha = 0.35,
+					NumberOfParticles = 0.15,
+					Alpha = 0.40,
 					Lifetime = 0.5,
 					FadeTime = 0.5
 				},
@@ -125,24 +316,54 @@ local tweaks = {
 			}
 		}
 	},
-	flightRestrictionMult = {
+	noSpeedTunnel = lyr:checkTweak("noSpeedTunnel") and {
+		{
+			mbinPaths = {
+				"MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA_INTERIOR.SCENE.MBIN",
+				"MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITB_INTERIOR.SCENE.MBIN",
+				"MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPITCOMMON_INTERIOR.SCENE.MBIN",
+				"MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/INTERIOR/CANOPYA_INTERIOR.SCENE.MBIN",
+				"MODELS/COMMON/SPACECRAFT/S-CLASS/INTERIORS/CANOPYA_INTERIOR.SCENE.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR.SCENE.MBIN",
+				"MODELS/COMMON/SPACECRAFT/SHUTTLE/INTERIORS/CANOPYA_INTERIOR/CANOPYA_INTERIOR.SCENE.MBIN",
+			},
+			{
+				specialKeyWords = {"Name", "REFSpeedTunnel"},
+				removeSection = true
+			}
+		}
+	},
+	flightRestrictionMult = lyr:checkTweak("flightRestrictionMult") and {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					NoBoostStationDistance = {default = 2000, multiplier = enabledTweaks.flightRestrictionMult},
-					NoBoostAnomalyDistance = {default = 3000, multiplier = enabledTweaks.flightRestrictionMult},
-					NoBoostSpaceAnomalyDistance = {default = 700, multiplier = enabledTweaks.flightRestrictionMult},
-					NoBoostFreighterDistance = {default = 800, multiplier = enabledTweaks.flightRestrictionMult},
-					NoBoostShipDistance = {default = 2000, multiplier = enabledTweaks.flightRestrictionMult},
-					MiniWarpMinPlanetDistance = {default = 2500, multiplier = enabledTweaks.flightRestrictionMult},
-					MiniWarpPlanetRadius = {default = 500, multiplier = enabledTweaks.flightRestrictionMult},
-					MiniWarpStationRadius = {default = 700, multiplier = enabledTweaks.flightRestrictionMult}
+					NoBoostStationDistance = {default = 2000, multiplier = lyr.tweakStates.flightRestrictionMult},
+					NoBoostAnomalyDistance = {default = 3000, multiplier = lyr.tweakStates.flightRestrictionMult},
+					NoBoostSpaceAnomalyDistance = {default = 700, multiplier = lyr.tweakStates.flightRestrictionMult},
+					NoBoostFreighterDistance = {default = 800, multiplier = lyr.tweakStates.flightRestrictionMult},
+					NoBoostShipDistance = {default = 2000, multiplier = lyr.tweakStates.flightRestrictionMult},
+					MiniWarpMinPlanetDistance = {default = 2500, multiplier = lyr.tweakStates.flightRestrictionMult},
+					MiniWarpPlanetRadius = {default = 500, multiplier = lyr.tweakStates.flightRestrictionMult},
+					MiniWarpStationRadius = {default = 700, multiplier = lyr.tweakStates.flightRestrictionMult},
+					MiniWarpTopSpeedTime = {default = 0.1, multiplier = lyr.tweakStates.flightRestrictionMult}
 				},
 				multiply = true
 			}
 		}
 	},
-	shipAtmosphereHover = {
+	stoppingMarginMult = lyr:checkTweak("stoppingMarginMult") and {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					MiniWarpStoppingMarginPlanet = {default = 5000, multiplier = lyr.tweakStates.stoppingMarginMult},
+					MiniWarpStoppingMarginDefault = {default = 2500, multiplier = lyr.tweakStates.stoppingMarginMult},
+					MiniWarpStoppingMarginLong = {default = 3500, multiplier = lyr.tweakStates.stoppingMarginMult},
+				},
+				multiply = true
+			}
+		}
+	},
+	shipAtmosphereHover = lyr:checkTweak("shipAtmosphereHover") and {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				precedingKeyWords = {"PlanetEngine"},
@@ -153,21 +374,19 @@ local tweaks = {
 			}
 		}
 	},
-	pulseDriveSpeedMult = {
+	pulseDriveSpeedMult = lyr:checkTweak("pulseDriveSpeedMult") and {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
-					MiniWarpSpeed = {default = 30000, multiplier = enabledTweaks.pulseDriveSpeedMult},
+					MiniWarpSpeed = {default = 30000, multiplier = lyr.tweakStates.pulseDriveSpeedMult},
 					MiniWarpChargeTime = {default = 2, altered = 2},
-					MiniWarpExitTime = {default = 0.5, altered = 0.5},
-					MiniWarpTopSpeedTime = {default = 0.1, multiplier = enabledTweaks.pulseDriveSpeedMult},
 					MiniWarpCooldownTime = {default = 2, altered = 1},
 					MiniWarpShakeStrength = {default = 2, altered = 5}
 				}
 			}
 		}
 	},
-	reducePulseDriveFlash = {
+	reducePulseDriveFlash = lyr:checkTweak("reducePulseDriveFlash") and {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -178,7 +397,7 @@ local tweaks = {
 			}
 		}
 	},
-	preciseNavigation = {
+	preciseNavigation = lyr:checkTweak("preciseNavigation") and {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -191,78 +410,45 @@ local tweaks = {
 				}
 			}
 		}
+	},
+	noPulseDriveExitDelay = lyr:checkTweak("noPulseDriveExitDelay") and {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					MiniWarpExitTime = {default = 0.5, altered = 0.01}
+				}
+			}
+		}
+	},
+	fastPulseDriveExit = lyr:checkTweak("fastPulseDriveExit") and {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					MiniWarpExitSpeed = {default = 1000, altered = lyr:useProxyMult("shipSpeedMult", 1250)},
+					MiniWarpExitSpeedStation = {default = 500, altered = lyr:useProxyMult("shipSpeedMult", 625)}
+				}
+			}
+		}
+	},
+	autoStationOrient = lyr:checkTweak("autoStationOrient") and {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					EnablePulseDriveSpaceStationOrient = {default = false, altered = true}
+				}
+			}
+		}
+	},
+	autoEjectOnLanding = lyr:checkTweak("autoEjectOnLanding") and {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					AutoEjectOnLanding = {default = false, altered = true}
+				}
+			}
+		}
 	}
 }
-
-local processTweaksTable
-processTweaksTable = function(tweakTables)
-	local modificationTables = {}
-
-	for tweakName, tweakTable in next, tweakTables do
-		if tweakName == "misc" or type(enabledTweaks[tweakName]) == "boolean" and enabledTweaks[tweakName]
-		or type(enabledTweaks[tweakName]) == "number" and enabledTweaks[tweakName] ~= 1 and enabledTweaks[tweakName] > 0 then
-			for mbinPath, changeTables in pairs(tweakTable) do
-				local mbinChangeTable = {
-					MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
-					EXML_CHANGE_TABLE = {}
-				}; local exmlChangeTable = mbinChangeTable.EXML_CHANGE_TABLE
-
-				for _, changeTable in ipairs(changeTables) do
-					local convertedChangeTable = {
-						SECTION_UP = changeTable.selectLevel or nil,
-						PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or changeTable.precedingKeyWordsFirst or nil,
-						PRECEDING_FIRST = changeTable.precedingKeyWordsFirst or nil,
-						SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
-						FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
-						WHERE_IN_SECTION = changeTable.findSections or nil,
-						WHERE_IN_SUBSECTION = changeTable.findSubSections or changeTable.findAllSubSections or nil,
-						WISEC_LOP = changeTable.findSectionsIfAllMatch and "AND" or nil,
-						WISUBSEC_LOP = changeTable.findSubSectionsIfAllMatch and "AND" or nil,
-						WISUBSEC_OPTION = changeTable.findAllSubSections and "ALL" or nil,
-						REPLACE_TYPE = changeTable.replaceAll and "ALL" or nil,
-						MATH_OPERATION = changeTable.multiply and "*" or nil,
-						REMOVE = changeTable.removeSection and "SECTION" or nil,
-						ADD_OPTION = changeTable.addSection and "ADDafterSECTION" or nil,
-						ADD = changeTable.addSection and changeTable.section or nil,
-						SECTION_SAVE_TO = changeTable.copySection or nil,
-						SECTION_EDIT = changeTable.editSection or nil,
-						SECTION_ADD_NAMED = changeTable.pasteSection or nil
-					}
-
-					if changeTable.addSection or changeTable.removeSection or changeTable.copySection or changeTable.pasteSection then
-						table.insert(exmlChangeTable, convertedChangeTable)
-					elseif changeTable.fields then
-						local valueChangeTable = {}
-
-						for fieldName, fieldValue in pairs(changeTable.fields) do
-							if type(fieldValue) == "table" then
-								if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
-									table.insert(valueChangeTable, {fieldName, fieldValue.altered})
-								elseif fieldValue.multiplier and fieldValue.multiplier ~= 1 then
-									table.insert(valueChangeTable, {fieldName, changeTable.multiply and fieldValue.multiplier or fieldValue.default * fieldValue.multiplier})
-								end
-							else
-								table.insert(valueChangeTable, {fieldName, fieldValue})
-							end
-						end
-
-						if #valueChangeTable > 0 then
-							convertedChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
-							table.insert(exmlChangeTable, convertedChangeTable)
-						end
-					end
-				end
-
-				if #exmlChangeTable > 0 or type(changeTables.mbinPaths)=="table" then
-				    local modificationTable = {MBIN_CHANGE_TABLE = {mbinChangeTable}}
-					table.insert(modificationTables, modificationTable)
-				end
-			end
-		end
-	end
-
-	return modificationTables
-end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME = "lyr_shipTweaks.pak",
@@ -273,5 +459,5 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
 	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS",
-	MODIFICATIONS =	processTweaksTable(tweaks)
+	MODIFICATIONS =	lyr:processTweakTables()
 }
