@@ -1,0 +1,32 @@
+-- list of files no longer supported
+-- and that can be deleted
+.\README - AMUMSS.txt
+.\README - AMUMSS installation.txt
+.\README - AMUMSS_installation.txt
+.\README - AMUMSS Script Rules.html
+.\README - Creating a Patch for existing MOD PAKs.txt
+.\README - Creating_a_Patch_for_existing_MOD_PAKs.txt
+.\README - General Information on AMUMSS.txt
+.\README - OPTIONS DEFINITIONS.txt
+.\README - What are ShowExtraSections.txt
+.\README - What to do when NMS is updated.txt
+.\README - What_to_do_when_NMS_is_updated.txt
+.\README - What's new.txt
+.\README - AMUMSS Version 3.9.5W.txt
+.\README - What's new in 3.9.5.6W.txt
+.\README - What's new in 3.9.5.92W.txt
+.\README - What's new in 3.9.5.93W.txt
+.\README - What's new in 3.9.5.94W.txt
+.\README - What's new in 3.9.5.95W.txt
+.\README - What's new in 3.9.5.96W.txt
+.\README - What's new in 3.9.5.97W.txt
+.\README - What's new in 3.9.5.98W.txt
+.\README - Nexus MODBUILDER.txt
+.\README - Script_Rules.txt
+.\README - Script_Rules.lua
+.\log.txt
+.\ModScriptCollection\MoreLearningExamples\Advanced
+.\x64
+.\ModScript_Manager.exe
+..\MODBUILDER\MBINCompiler.current.exe
+..\MODBUILDER\MBINCompiler.previous.exe

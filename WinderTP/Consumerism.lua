@@ -80,7 +80,7 @@ SPECIAL_LIST =
 		}
 	},
 	{
-		["ShopNumber"] = "61",
+		["ShopNumber"] = "60",
 		["Table"] =  
 		{
 			{ ["ID"] = "SHIP_PIRATE",	["IsConsumable"] = "False"},
@@ -221,10 +221,11 @@ SPECIAL_LIST =
 
 UNLOCK_ALL =
 {
-	["PRECEDING_KEY_WORDS"] = "",
+	-- ["PRECEDING_KEY_WORDS"] = "",
 	["REPLACE_TYPE"] 	= "ALL",
 	["VALUE_CHANGE_TABLE"] 	= 
 	{
+		{"ShopNumber", "1"},
 		{"MissionTier", "-1"} -- Original numbers other than -1 and are capitalist scum
 	}
 }
@@ -274,6 +275,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 	}	
 }
---NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
---IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
---DON'T ADD ANYTHING PASS THIS POINT HERE

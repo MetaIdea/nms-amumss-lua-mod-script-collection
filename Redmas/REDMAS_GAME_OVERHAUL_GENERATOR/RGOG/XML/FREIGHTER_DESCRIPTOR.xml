@@ -1,0 +1,1870 @@
+<Property value="TkResourceDescriptorList.xml">
+	<Property name="TypeId" value="_JG_" />
+	<Property name="Descriptors">
+	  <Property value="TkResourceDescriptorData.xml">
+		<Property name="Id" value="_JG_1" />
+		<Property name="Name" value="" />
+		<Property name="ReferencePaths" />
+		<Property name="Chance" value="0" />
+		<Property name="Children">
+		  <Property value="TkModelDescriptorList.xml">
+			<Property name="List">
+			  <Property value="TkResourceDescriptorList.xml">
+				<Property name="TypeId" value="_JOINT_" />
+				<Property name="Descriptors">
+				  <Property value="TkResourceDescriptorData.xml">
+					<Property name="Id" value="_JOINT_B" />
+					<Property name="Name" value="" />
+					<Property name="ReferencePaths" />
+					<Property name="Chance" value="0" />
+					<Property name="Children">
+					  <Property value="TkModelDescriptorList.xml">
+						<Property name="List">
+						  <Property value="TkResourceDescriptorList.xml">
+							<Property name="TypeId" value="_B1:_JOINT_" />
+							<Property name="Descriptors">
+							  <Property value="TkResourceDescriptorData.xml">
+								<Property name="Id" value="_B1:_JOINT_B" />
+								<Property name="Name" value="" />
+								<Property name="ReferencePaths" />
+								<Property name="Chance" value="0" />
+								<Property name="Children" />
+							  </Property>
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				  <Property value="TkResourceDescriptorData.xml">
+					<Property name="Id" value="_JOINT_A" />
+					<Property name="Name" value="" />
+					<Property name="ReferencePaths" />
+					<Property name="Chance" value="0" />
+					<Property name="Children">
+					  <Property value="TkModelDescriptorList.xml">
+						<Property name="List">
+						  <Property value="TkResourceDescriptorList.xml">
+							<Property name="TypeId" value="_A1:_JOINT_" />
+							<Property name="Descriptors">
+							  <Property value="TkResourceDescriptorData.xml">
+								<Property name="Id" value="_A1:_JOINT_A" />
+								<Property name="Name" value="" />
+								<Property name="ReferencePaths" />
+								<Property name="Chance" value="0" />
+								<Property name="Children" />
+							  </Property>
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+			  </Property>
+			</Property>
+		  </Property>
+		</Property>
+	  </Property>
+	</Property>
+  </Property>
+
+  <Property value="TkResourceDescriptorList.xml">
+  <Property name="TypeId" value="_HULL_" />
+  <Property name="Descriptors">
+	<Property value="TkResourceDescriptorData.xml">
+	  <Property name="Id" value="_HULL_A" />
+	  <Property name="Name" value="_Hull_A" />
+	  <Property name="ReferencePaths">
+		<Property value="NMSString0x80.xml">
+		  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLPANELR.SCENE.MBIN" />
+		</Property>
+		<Property value="NMSString0x80.xml">
+		  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYADOUBLESTART.SCENE.MBIN" />
+		</Property>
+		<Property value="NMSString0x80.xml">
+		  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HANGARROOT.SCENE.MBIN" />
+		</Property>
+		<Property value="NMSString0x80.xml">
+		  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLE.SCENE.MBIN" />
+		</Property>
+		<Property value="NMSString0x80.xml">
+		  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYADOUBLEJOINT.SCENE.MBIN" />
+		</Property>
+		<Property value="NMSString0x80.xml">
+		  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/HULL/HULL_A.SCENE.MBIN" />
+		</Property>
+		<Property value="NMSString0x80.xml">
+		  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/INVENTORY_SMALL.SCENE.MBIN" />
+		</Property>
+	  </Property>
+	  <Property name="Chance" value="0" />
+	  <Property name="Children">
+		<Property value="TkModelDescriptorList.xml">
+		  <Property name="List">
+			<Property value="TkResourceDescriptorList.xml">
+			  <Property name="TypeId" value="_HULLSIDE_" />
+			  <Property name="Descriptors">
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLSIDE_A1" />
+				  <Property name="Name" value="_HullSide_A1" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLSIDEA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLSIDE_B" />
+				  <Property name="Name" value="_HullSide_B" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLPANELL.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+			  </Property>
+			</Property>
+			<Property value="TkResourceDescriptorList.xml">
+			  <Property name="TypeId" value="_HULLATOP_" />
+			  <Property name="Descriptors">
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLATOP_B" />
+				  <Property name="Name" value="_HullATop_B" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/THRUSTERUNIT.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children">
+					<Property value="TkModelDescriptorList.xml">
+					  <Property name="List">
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_BRIDGE_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_BRIDGE_A1" />
+							  <Property name="Name" value="_Bridge_A1" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SPOTLIGHT/SPOTLIGHT_2.SCENE.MBIN" />
+								</Property>
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/BRIDGEA.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children">
+								<Property value="TkModelDescriptorList.xml">
+								  <Property name="List">
+									<Property value="TkResourceDescriptorList.xml">
+									  <Property name="TypeId" value="_VERTICALFIN_" />
+									  <Property name="Descriptors">
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_VERTICALFIN_A4" />
+										  <Property name="Name" value="_VerticalFin_A4" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_VERTICALFIN_NONE4" />
+										  <Property name="Name" value="_VerticalFin_None4" />
+										  <Property name="ReferencePaths" />
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+									  </Property>
+									</Property>
+								  </Property>
+								</Property>
+							  </Property>
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_BRIDGE_B1" />
+							  <Property name="Name" value="_Bridge_B1" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/BRIDGEB.SCENE.MBIN" />
+								</Property>
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SPOTLIGHT/SPOTLIGHT_2.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children">
+								<Property value="TkModelDescriptorList.xml">
+								  <Property name="List">
+									<Property value="TkResourceDescriptorList.xml">
+									  <Property name="TypeId" value="_VERTICALFIN_" />
+									  <Property name="Descriptors">
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_VERTICALFIN_NONE5" />
+										  <Property name="Name" value="_VerticalFin_None5" />
+										  <Property name="ReferencePaths" />
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_VERTICALFIN_A5" />
+										  <Property name="Name" value="_VerticalFin_A5" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+									  </Property>
+									</Property>
+								  </Property>
+								</Property>
+							  </Property>
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLATOP_A" />
+				  <Property name="Name" value="_HullATop_A" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLTOP.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+			  </Property>
+			</Property>
+			<Property value="TkResourceDescriptorList.xml">
+			  <Property name="TypeId" value="_HULLABOT_" />
+			  <Property name="Descriptors">
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLABOT_B5" />
+				  <Property name="Name" value="_HullABot_B5" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/THRUSTERUNIT.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children">
+					<Property value="TkModelDescriptorList.xml">
+					  <Property name="List">
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_VERTICALFIN_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_VERTICALFIN_A3" />
+							  <Property name="Name" value="_VerticalFin_A3" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_VERTICALFIN_NONE3" />
+							  <Property name="Name" value="_VerticalFin_None3" />
+							  <Property name="ReferencePaths" />
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLABOT_B6" />
+				  <Property name="Name" value="_HullABot_B6" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLBOTTOM.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+			  </Property>
+			</Property>
+			<Property value="TkResourceDescriptorList.xml">
+			  <Property name="TypeId" value="_ENGINE_" />
+			  <Property name="Descriptors">
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_ENGINE_A" />
+				  <Property name="Name" value="_Engine_A" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ENGINE/ENGINEA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_ENGINE_B" />
+				  <Property name="Name" value="_Engine_B" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ENGINE/ENGINEB.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_ENGINE_C2" />
+				  <Property name="Name" value="_Engine_C2" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ENGINE/ENGINEB.SCENE.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ENGINE/ENGINEC.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+			  </Property>
+			</Property>
+			<Property value="TkResourceDescriptorList.xml">
+			  <Property name="TypeId" value="_CARGO_" />
+			  <Property name="Descriptors">
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_CARGO_CAPD1" />
+				  <Property name="Name" value="_Cargo_CapD1" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLECAP.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_CARGO_A15" />
+				  <Property name="Name" value="_Cargo_A15" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYADOUBLEJOINT.SCENE.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLE.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children">
+					<Property value="TkModelDescriptorList.xml">
+					  <Property name="List">
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_SIDEACC1_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_SIDEACC1_A1" />
+							  <Property name="Name" value="_SideAcc1_A1" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLPANELR.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_SIDEACC1_NONE1" />
+							  <Property name="Name" value="_SideAcc1_None1" />
+							  <Property name="ReferencePaths" />
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+						  </Property>
+						</Property>
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_CARGO_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_CARGO_TOP9" />
+							  <Property name="Name" value="_Cargo_Top9" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+								</Property>
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+								</Property>
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children">
+								<Property value="TkModelDescriptorList.xml">
+								  <Property name="List">
+									<Property value="TkResourceDescriptorList.xml">
+									  <Property name="TypeId" value="_CARGO_" />
+									  <Property name="Descriptors">
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_CAPT8" />
+										  <Property name="Name" value="_Cargo_CapT8" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_TOP10" />
+										  <Property name="Name" value="_Cargo_Top10" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children">
+											<Property value="TkModelDescriptorList.xml">
+											  <Property name="List">
+												<Property value="TkResourceDescriptorList.xml">
+												  <Property name="TypeId" value="_CARGO_" />
+												  <Property name="Descriptors">
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_CAPT9" />
+													  <Property name="Name" value="_Cargo_CapT9" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_TOP11" />
+													  <Property name="Name" value="_Cargo_Top11" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children">
+														<Property value="TkModelDescriptorList.xml">
+														  <Property name="List">
+															<Property value="TkResourceDescriptorList.xml">
+															  <Property name="TypeId" value="_VERTICALFIN_" />
+															  <Property name="Descriptors">
+																<Property value="TkResourceDescriptorData.xml">
+																  <Property name="Id" value="_VERTICALFIN_A6" />
+																  <Property name="Name" value="_VerticalFin_A6" />
+																  <Property name="ReferencePaths">
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+																	</Property>
+																  </Property>
+																  <Property name="Chance" value="0" />
+																  <Property name="Children" />
+																</Property>
+															  </Property>
+															</Property>
+														  </Property>
+														</Property>
+													  </Property>
+													</Property>
+												  </Property>
+												</Property>
+											  </Property>
+											</Property>
+										  </Property>
+										</Property>
+									  </Property>
+									</Property>
+								  </Property>
+								</Property>
+							  </Property>
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_CARGO_ABOT9" />
+							  <Property name="Name" value="_Cargo_ABot9" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+								</Property>
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+								</Property>
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children">
+								<Property value="TkModelDescriptorList.xml">
+								  <Property name="List">
+									<Property value="TkResourceDescriptorList.xml">
+									  <Property name="TypeId" value="_CARGO_" />
+									  <Property name="Descriptors">
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_CAPB8" />
+										  <Property name="Name" value="_Cargo_CapB8" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_ABOT10" />
+										  <Property name="Name" value="_Cargo_ABot10" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children">
+											<Property value="TkModelDescriptorList.xml">
+											  <Property name="List">
+												<Property value="TkResourceDescriptorList.xml">
+												  <Property name="TypeId" value="_CARGO_" />
+												  <Property name="Descriptors">
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_CAPB9" />
+													  <Property name="Name" value="_Cargo_CapB9" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_ABOT11" />
+													  <Property name="Name" value="_Cargo_ABot11" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+												  </Property>
+												</Property>
+											  </Property>
+											</Property>
+										  </Property>
+										</Property>
+									  </Property>
+									</Property>
+								  </Property>
+								</Property>
+							  </Property>
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_CARGO_A16" />
+							  <Property name="Name" value="_Cargo_A16" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYADOUBLEJOINT.SCENE.MBIN" />
+								</Property>
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLE.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children">
+								<Property value="TkModelDescriptorList.xml">
+								  <Property name="List">
+									<Property value="TkResourceDescriptorList.xml">
+									  <Property name="TypeId" value="_SIDEACC2_" />
+									  <Property name="Descriptors">
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_SIDEACC2_A1" />
+										  <Property name="Name" value="_SideAcc2_A1" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLPANELR.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_SIDEACC2_NONE1" />
+										  <Property name="Name" value="_SideAcc2_None1" />
+										  <Property name="ReferencePaths" />
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+									  </Property>
+									</Property>
+									<Property value="TkResourceDescriptorList.xml">
+									  <Property name="TypeId" value="_CARGO_" />
+									  <Property name="Descriptors">
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_TOP12" />
+										  <Property name="Name" value="_Cargo_Top12" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children">
+											<Property value="TkModelDescriptorList.xml">
+											  <Property name="List">
+												<Property value="TkResourceDescriptorList.xml">
+												  <Property name="TypeId" value="_CARGO_" />
+												  <Property name="Descriptors">
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_CAPT10" />
+													  <Property name="Name" value="_Cargo_CapT10" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_TOP13" />
+													  <Property name="Name" value="_Cargo_Top13" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children">
+														<Property value="TkModelDescriptorList.xml">
+														  <Property name="List">
+															<Property value="TkResourceDescriptorList.xml">
+															  <Property name="TypeId" value="_VERTICALFIN_" />
+															  <Property name="Descriptors">
+																<Property value="TkResourceDescriptorData.xml">
+																  <Property name="Id" value="_VERTICALFIN_A7" />
+																  <Property name="Name" value="_VerticalFin_A7" />
+																  <Property name="ReferencePaths">
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+																	</Property>
+																  </Property>
+																  <Property name="Chance" value="0" />
+																  <Property name="Children" />
+																</Property>
+															  </Property>
+															</Property>
+														  </Property>
+														</Property>
+													  </Property>
+													</Property>
+												  </Property>
+												</Property>
+											  </Property>
+											</Property>
+										  </Property>
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_ABOT12" />
+										  <Property name="Name" value="_Cargo_ABot12" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children">
+											<Property value="TkModelDescriptorList.xml">
+											  <Property name="List">
+												<Property value="TkResourceDescriptorList.xml">
+												  <Property name="TypeId" value="_CARGO_" />
+												  <Property name="Descriptors">
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_CAPB10" />
+													  <Property name="Name" value="_Cargo_CapB10" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_ABOT13" />
+													  <Property name="Name" value="_Cargo_ABot13" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+												  </Property>
+												</Property>
+											  </Property>
+											</Property>
+										  </Property>
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_A17" />
+										  <Property name="Name" value="_Cargo_A17" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYADOUBLEJOINT.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLE.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/INVENTORY_MEDIUM.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children">
+											<Property value="TkModelDescriptorList.xml">
+											  <Property name="List">
+												<Property value="TkResourceDescriptorList.xml">
+												  <Property name="TypeId" value="_SIDEACC3_" />
+												  <Property name="Descriptors">
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_SIDEACC3_A1" />
+													  <Property name="Name" value="_SideAcc3_A1" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLPANELR.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_SIDEACC3_NONE1" />
+													  <Property name="Name" value="_SideAcc3_None1" />
+													  <Property name="ReferencePaths" />
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+												  </Property>
+												</Property>
+												<Property value="TkResourceDescriptorList.xml">
+												  <Property name="TypeId" value="_CARGO_" />
+												  <Property name="Descriptors">
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_TOP14" />
+													  <Property name="Name" value="_Cargo_Top14" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children">
+														<Property value="TkModelDescriptorList.xml">
+														  <Property name="List">
+															<Property value="TkResourceDescriptorList.xml">
+															  <Property name="TypeId" value="_VERTICALFIN_" />
+															  <Property name="Descriptors">
+																<Property value="TkResourceDescriptorData.xml">
+																  <Property name="Id" value="_VERTICALFIN_A8" />
+																  <Property name="Name" value="_VerticalFin_A8" />
+																  <Property name="ReferencePaths">
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+																	</Property>
+																  </Property>
+																  <Property name="Chance" value="0" />
+																  <Property name="Children" />
+																</Property>
+															  </Property>
+															</Property>
+														  </Property>
+														</Property>
+													  </Property>
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_ABOT14" />
+													  <Property name="Name" value="_Cargo_ABot14" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_A18" />
+													  <Property name="Name" value="_Cargo_A18" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYADOUBLEJOINT.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLECAP.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLE.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children">
+														<Property value="TkModelDescriptorList.xml">
+														  <Property name="List">
+															<Property value="TkResourceDescriptorList.xml">
+															  <Property name="TypeId" value="_SIDEACC4_" />
+															  <Property name="Descriptors">
+																<Property value="TkResourceDescriptorData.xml">
+																  <Property name="Id" value="_SIDEACC4_A1" />
+																  <Property name="Name" value="_SideAcc4_A1" />
+																  <Property name="ReferencePaths">
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLPANELR.SCENE.MBIN" />
+																	</Property>
+																  </Property>
+																  <Property name="Chance" value="0" />
+																  <Property name="Children" />
+																</Property>
+																<Property value="TkResourceDescriptorData.xml">
+																  <Property name="Id" value="_SIDEACC4_NONE1" />
+																  <Property name="Name" value="_SideAcc4_None1" />
+																  <Property name="ReferencePaths" />
+																  <Property name="Chance" value="0" />
+																  <Property name="Children" />
+																</Property>
+															  </Property>
+															</Property>
+															<Property value="TkResourceDescriptorList.xml">
+															  <Property name="TypeId" value="_VERTICALFIN_" />
+															  <Property name="Descriptors">
+																<Property value="TkResourceDescriptorData.xml">
+																  <Property name="Id" value="_VERTICALFIN_A10" />
+																  <Property name="Name" value="_VerticalFin_A10" />
+																  <Property name="ReferencePaths">
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+																	</Property>
+																  </Property>
+																  <Property name="Chance" value="0" />
+																  <Property name="Children" />
+																</Property>
+															  </Property>
+															</Property>
+														  </Property>
+														</Property>
+													  </Property>
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_CAPD4" />
+													  <Property name="Name" value="_Cargo_CapD4" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLECAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+												  </Property>
+												</Property>
+											  </Property>
+											</Property>
+										  </Property>
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_CAPD3" />
+										  <Property name="Name" value="_Cargo_CapD3" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLECAP.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+									  </Property>
+									</Property>
+								  </Property>
+								</Property>
+							  </Property>
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_CARGO_CAPD2" />
+							  <Property name="Name" value="_Cargo_CapD2" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOADOUBLECAP.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_CARGO_ABOT5" />
+				  <Property name="Name" value="_Cargo_ABot5" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children">
+					<Property value="TkModelDescriptorList.xml">
+					  <Property name="List">
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_CARGO_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_CARGO_CAPB5" />
+							  <Property name="Name" value="_Cargo_CapB5" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_CARGO_ABOT6" />
+							  <Property name="Name" value="_Cargo_ABot6" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+								</Property>
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children">
+								<Property value="TkModelDescriptorList.xml">
+								  <Property name="List">
+									<Property value="TkResourceDescriptorList.xml">
+									  <Property name="TypeId" value="_CARGO_" />
+									  <Property name="Descriptors">
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_CAPB6" />
+										  <Property name="Name" value="_Cargo_CapB6" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_ABOT7" />
+										  <Property name="Name" value="_Cargo_ABot7" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children">
+											<Property value="TkModelDescriptorList.xml">
+											  <Property name="List">
+												<Property value="TkResourceDescriptorList.xml">
+												  <Property name="TypeId" value="_CARGO_" />
+												  <Property name="Descriptors">
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_CAPB7" />
+													  <Property name="Name" value="_Cargo_CapB7" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_ABOT8" />
+													  <Property name="Name" value="_Cargo_ABot8" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYALOWJOINT.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOW.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+												  </Property>
+												</Property>
+											  </Property>
+											</Property>
+										  </Property>
+										</Property>
+									  </Property>
+									</Property>
+								  </Property>
+								</Property>
+							  </Property>
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_CARGO_TOP5" />
+				  <Property name="Name" value="_Cargo_Top5" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOALOWCAP.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children">
+					<Property value="TkModelDescriptorList.xml">
+					  <Property name="List">
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_CARGO_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_CARGO_CAPT5" />
+							  <Property name="Name" value="_Cargo_CapT5" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_CARGO_TOP6" />
+							  <Property name="Name" value="_Cargo_Top6" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+								</Property>
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children">
+								<Property value="TkModelDescriptorList.xml">
+								  <Property name="List">
+									<Property value="TkResourceDescriptorList.xml">
+									  <Property name="TypeId" value="_CARGO_" />
+									  <Property name="Descriptors">
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_CAPT6" />
+										  <Property name="Name" value="_Cargo_CapT6" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_TOP7" />
+										  <Property name="Name" value="_Cargo_Top7" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+											</Property>
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children">
+											<Property value="TkModelDescriptorList.xml">
+											  <Property name="List">
+												<Property value="TkResourceDescriptorList.xml">
+												  <Property name="TypeId" value="_CARGO_" />
+												  <Property name="Descriptors">
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_CAPT7" />
+													  <Property name="Name" value="_Cargo_CapT7" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_TOP8" />
+													  <Property name="Name" value="_Cargo_Top8" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGHCAP.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYAHIGHJOINT.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOAHIGH.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children">
+														<Property value="TkModelDescriptorList.xml">
+														  <Property name="List">
+															<Property value="TkResourceDescriptorList.xml">
+															  <Property name="TypeId" value="_VERTICALFIN_" />
+															  <Property name="Descriptors">
+																<Property value="TkResourceDescriptorData.xml">
+																  <Property name="Id" value="_VERTICALFIN_A9" />
+																  <Property name="Name" value="_VerticalFin_A9" />
+																  <Property name="ReferencePaths">
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+																	</Property>
+																  </Property>
+																  <Property name="Chance" value="0" />
+																  <Property name="Children" />
+																</Property>
+															  </Property>
+															</Property>
+														  </Property>
+														</Property>
+													  </Property>
+													</Property>
+												  </Property>
+												</Property>
+											  </Property>
+											</Property>
+										  </Property>
+										</Property>
+									  </Property>
+									</Property>
+								  </Property>
+								</Property>
+							  </Property>
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+			  </Property>
+			</Property>
+		  </Property>
+		</Property>
+	  </Property>
+	</Property>
+	<Property value="TkResourceDescriptorData.xml">
+	  <Property name="Id" value="_HULL_B" />
+	  <Property name="Name" value="_Hull_B" />
+	  <Property name="ReferencePaths">
+		<Property value="NMSString0x80.xml">
+		  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/HULL/HULL_B.SCENE.MBIN" />
+		</Property>
+		<Property value="NMSString0x80.xml">
+		  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HANGARROOT.SCENE.MBIN" />
+		</Property>
+	  </Property>
+	  <Property name="Chance" value="0" />
+	  <Property name="Children">
+		<Property value="TkModelDescriptorList.xml">
+		  <Property name="List">
+			<Property value="TkResourceDescriptorList.xml">
+			  <Property name="TypeId" value="_HULLSIDE_" />
+			  <Property name="Descriptors">
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLSIDE_B2" />
+				  <Property name="Name" value="_HullSide_B2" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLWINGS.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+			  </Property>
+			</Property>
+			<Property value="TkResourceDescriptorList.xml">
+			  <Property name="TypeId" value="_HULLBTOP_" />
+			  <Property name="Descriptors">
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLBTOP_B3" />
+				  <Property name="Name" value="_HullBTop_B3" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SPOTLIGHT/SPOTLIGHT.SCENE.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/THRUSTERUNIT.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children">
+					<Property value="TkModelDescriptorList.xml">
+					  <Property name="List">
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_VERTICALFIN_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_VERTICALFIN_A1" />
+							  <Property name="Name" value="_VerticalFin_A1" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_VERTICALFIN_NONE1" />
+							  <Property name="Name" value="_VerticalFin_None1" />
+							  <Property name="ReferencePaths" />
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLBTOP_A" />
+				  <Property name="Name" value="_HullBTop_A" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SPOTLIGHT/SPOTLIGHT.SCENE.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLTOP.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children">
+					<Property value="TkModelDescriptorList.xml">
+					  <Property name="List">
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_VERTICALFIN_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_VERTICALFIN_A" />
+							  <Property name="Name" value="_VerticalFin_A" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_VERTICALFIN_NONE" />
+							  <Property name="Name" value="_VerticalFin_None" />
+							  <Property name="ReferencePaths" />
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+			  </Property>
+			</Property>
+			<Property value="TkResourceDescriptorList.xml">
+			  <Property name="TypeId" value="_HULLBBOT_" />
+			  <Property name="Descriptors">
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLBBOT_B4" />
+				  <Property name="Name" value="_HullBBot_B4" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/THRUSTERUNIT.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children">
+					<Property value="TkModelDescriptorList.xml">
+					  <Property name="List">
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_VERTICALFIN_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_VERTICALFIN_A2" />
+							  <Property name="Name" value="_VerticalFin_A2" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_VERTICALFIN_NONE2" />
+							  <Property name="Name" value="_VerticalFin_None2" />
+							  <Property name="ReferencePaths" />
+							  <Property name="Chance" value="0" />
+							  <Property name="Children" />
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_HULLBBOT_B3" />
+				  <Property name="Name" value="_HullBBot_B3" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/HULLBOTTOM.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children" />
+				</Property>
+			  </Property>
+			</Property>
+			<Property value="TkResourceDescriptorList.xml">
+			  <Property name="TypeId" value="_CARGO_" />
+			  <Property name="Descriptors">
+				<Property value="TkResourceDescriptorData.xml">
+				  <Property name="Id" value="_CARGO_E11" />
+				  <Property name="Name" value="_Cargo_E11" />
+				  <Property name="ReferencePaths">
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOB.SCENE.MBIN" />
+					</Property>
+					<Property value="NMSString0x80.xml">
+					  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/INVENTORY_SMALL.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Chance" value="0" />
+				  <Property name="Children">
+					<Property value="TkModelDescriptorList.xml">
+					  <Property name="List">
+						<Property value="TkResourceDescriptorList.xml">
+						  <Property name="TypeId" value="_CARGO_" />
+						  <Property name="Descriptors">
+							<Property value="TkResourceDescriptorData.xml">
+							  <Property name="Id" value="_CARGO_E10" />
+							  <Property name="Name" value="_Cargo_E10" />
+							  <Property name="ReferencePaths">
+								<Property value="NMSString0x80.xml">
+								  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOB.SCENE.MBIN" />
+								</Property>
+							  </Property>
+							  <Property name="Chance" value="0" />
+							  <Property name="Children">
+								<Property value="TkModelDescriptorList.xml">
+								  <Property name="List">
+									<Property value="TkResourceDescriptorList.xml">
+									  <Property name="TypeId" value="_CARGO_" />
+									  <Property name="Descriptors">
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_E4" />
+										  <Property name="Name" value="_Cargo_E4" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOB.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children">
+											<Property value="TkModelDescriptorList.xml">
+											  <Property name="List">
+												<Property value="TkResourceDescriptorList.xml">
+												  <Property name="TypeId" value="_CARGO_" />
+												  <Property name="Descriptors">
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_ENDE6" />
+													  <Property name="Name" value="_Cargo_EndE6" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SHIELDPSU.SCENE.MBIN" />
+														</Property>
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBCAPBRIDGE.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children" />
+													</Property>
+													<Property value="TkResourceDescriptorData.xml">
+													  <Property name="Id" value="_CARGO_E5" />
+													  <Property name="Name" value="_Cargo_E5" />
+													  <Property name="ReferencePaths">
+														<Property value="NMSString0x80.xml">
+														  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOB.SCENE.MBIN" />
+														</Property>
+													  </Property>
+													  <Property name="Chance" value="0" />
+													  <Property name="Children">
+														<Property value="TkModelDescriptorList.xml">
+														  <Property name="List">
+															<Property value="TkResourceDescriptorList.xml">
+															  <Property name="TypeId" value="_CARGO_" />
+															  <Property name="Descriptors">
+																<Property value="TkResourceDescriptorData.xml">
+																  <Property name="Id" value="_CARGO_E6" />
+																  <Property name="Name" value="_Cargo_E6" />
+																  <Property name="ReferencePaths">
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/INVENTORY_MEDIUM.SCENE.MBIN" />
+																	</Property>
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOB.SCENE.MBIN" />
+																	</Property>
+																  </Property>
+																  <Property name="Chance" value="0" />
+																  <Property name="Children">
+																	<Property value="TkModelDescriptorList.xml">
+																	  <Property name="List">
+																		<Property value="TkResourceDescriptorList.xml">
+																		  <Property name="TypeId" value="_CARGO_" />
+																		  <Property name="Descriptors">
+																			<Property value="TkResourceDescriptorData.xml">
+																			  <Property name="Id" value="_CARGO_ENDE10" />
+																			  <Property name="Name" value="_Cargo_EndE10" />
+																			  <Property name="ReferencePaths">
+																				<Property value="NMSString0x80.xml">
+																				  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SHIELDPSU.SCENE.MBIN" />
+																				</Property>
+																				<Property value="NMSString0x80.xml">
+																				  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBCAPBRIDGE.SCENE.MBIN" />
+																				</Property>
+																			  </Property>
+																			  <Property name="Chance" value="0" />
+																			  <Property name="Children" />
+																			</Property>
+																			<Property value="TkResourceDescriptorData.xml">
+																			  <Property name="Id" value="_CARGO_D" />
+																			  <Property name="Name" value="_Cargo_D" />
+																			  <Property name="ReferencePaths">
+																				<Property value="NMSString0x80.xml">
+																				  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CONTAINER/CONTAINERD.SCENE.MBIN" />
+																				</Property>
+																				<Property value="NMSString0x80.xml">
+																				  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SHIELDPSU.SCENE.MBIN" />
+																				</Property>
+																			  </Property>
+																			  <Property name="Chance" value="0" />
+																			  <Property name="Children">
+																				<Property value="TkModelDescriptorList.xml">
+																				  <Property name="List">
+																					<Property value="TkResourceDescriptorList.xml">
+																					  <Property name="TypeId" value="_CARGO_" />
+																					  <Property name="Descriptors">
+																						<Property value="TkResourceDescriptorData.xml">
+																						  <Property name="Id" value="_CARGO_ENDA" />
+																						  <Property name="Name" value="_Cargo_EndA" />
+																						  <Property name="ReferencePaths">
+																							<Property value="NMSString0x80.xml">
+																							  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBCAPDISC.SCENE.MBIN" />
+																							</Property>
+																						  </Property>
+																						  <Property name="Chance" value="0" />
+																						  <Property name="Children" />
+																						</Property>
+																						<Property value="TkResourceDescriptorData.xml">
+																						  <Property name="Id" value="_CARGO_ENDB" />
+																						  <Property name="Name" value="_Cargo_EndB" />
+																						  <Property name="ReferencePaths">
+																							<Property value="NMSString0x80.xml">
+																							  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBCAPSPHERE.SCENE.MBIN" />
+																							</Property>
+																						  </Property>
+																						  <Property name="Chance" value="0" />
+																						  <Property name="Children" />
+																						</Property>
+																						<Property value="TkResourceDescriptorData.xml">
+																						  <Property name="Id" value="_CARGO_JOINTTB1" />
+																						  <Property name="Name" value="_Cargo_JointtB1" />
+																						  <Property name="ReferencePaths">
+																							<Property value="NMSString0x80.xml">
+																							  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBCAPSMALL.SCENE.MBIN" />
+																							</Property>
+																							<Property value="NMSString0x80.xml">
+																							  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBJOINTRING.SCENE.MBIN" />
+																							</Property>
+																						  </Property>
+																						  <Property name="Chance" value="0" />
+																						  <Property name="Children" />
+																						</Property>
+																					  </Property>
+																					</Property>
+																				  </Property>
+																				</Property>
+																			  </Property>
+																			</Property>
+																			<Property value="TkResourceDescriptorData.xml">
+																			  <Property name="Id" value="_CARGO_JOINTTB" />
+																			  <Property name="Name" value="_Cargo_JointtB" />
+																			  <Property name="ReferencePaths">
+																				<Property value="NMSString0x80.xml">
+																				  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBJOINTRING.SCENE.MBIN" />
+																				</Property>
+																			  </Property>
+																			  <Property name="Chance" value="0" />
+																			  <Property name="Children">
+																				<Property value="TkModelDescriptorList.xml">
+																				  <Property name="List">
+																					<Property value="TkResourceDescriptorList.xml">
+																					  <Property name="TypeId" value="_CARGO_" />
+																					  <Property name="Descriptors">
+																						<Property value="TkResourceDescriptorData.xml">
+																						  <Property name="Id" value="_CARGO_ENDC" />
+																						  <Property name="Name" value="_Cargo_EndC" />
+																						  <Property name="ReferencePaths">
+																							<Property value="NMSString0x80.xml">
+																							  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBCAPSMALL.SCENE.MBIN" />
+																							</Property>
+																							<Property value="NMSString0x80.xml">
+																							  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SHIELDPSU.SCENE.MBIN" />
+																							</Property>
+																						  </Property>
+																						  <Property name="Chance" value="0" />
+																						  <Property name="Children" />
+																						</Property>
+																					  </Property>
+																					</Property>
+																				  </Property>
+																				</Property>
+																			  </Property>
+																			</Property>
+																		  </Property>
+																		</Property>
+																	  </Property>
+																	</Property>
+																  </Property>
+																</Property>
+																<Property value="TkResourceDescriptorData.xml">
+																  <Property name="Id" value="_CARGO_ENDE2" />
+																  <Property name="Name" value="_Cargo_EndE2" />
+																  <Property name="ReferencePaths">
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SHIELDPSU.SCENE.MBIN" />
+																	</Property>
+																	<Property value="NMSString0x80.xml">
+																	  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBCAPBRIDGE.SCENE.MBIN" />
+																	</Property>
+																  </Property>
+																  <Property name="Chance" value="0" />
+																  <Property name="Children" />
+																</Property>
+															  </Property>
+															</Property>
+														  </Property>
+														</Property>
+													  </Property>
+													</Property>
+												  </Property>
+												</Property>
+											  </Property>
+											</Property>
+										  </Property>
+										</Property>
+										<Property value="TkResourceDescriptorData.xml">
+										  <Property name="Id" value="_CARGO_ENDE" />
+										  <Property name="Name" value="_Cargo_EndE" />
+										  <Property name="ReferencePaths">
+											<Property value="NMSString0x80.xml">
+											  <Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/GANTRYBCAPBRIDGE.SCENE.MBIN" />
+											</Property>
+										  </Property>
+										  <Property name="Chance" value="0" />
+										  <Property name="Children" />
+										</Property>
+									  </Property>
+									</Property>
+								  </Property>
+								</Property>
+							  </Property>
+							</Property>
+						  </Property>
+						</Property>
+					  </Property>
+					</Property>
+				  </Property>
+				</Property>
+			  </Property>
+			</Property>
+		  </Property>
+		</Property>
+	  </Property>
+	</Property>
+  </Property>
+</Property>
+
+<Property value="TkResourceDescriptorList.xml">
+<Property name="TypeId" value="_FREIGHT_" />
+<Property name="Descriptors">
+  <Property value="TkResourceDescriptorData.xml">
+	<Property name="Id" value="_FREIGHT_SMALLLOD0" />
+	<Property name="Name" value="_Freight_SmallLOD0" />
+	<Property name="ReferencePaths" />
+	<Property name="Chance" value="0" />
+	<Property name="Children">
+	  <Property value="TkModelDescriptorList.xml">
+		<Property name="List">
+		  <Property value="TkResourceDescriptorList.xml">
+			<Property name="TypeId" value="_LETTERA_" />
+			<Property name="Descriptors">
+			  <Property value="TkResourceDescriptorData.xml">
+				<Property name="Id" value="_LETTERA_A1LOD0" />
+				<Property name="Name" value="_LetterA_A1LOD0" />
+				<Property name="ReferencePaths" />
+				<Property name="Chance" value="0" />
+				<Property name="Children" />
+			  </Property>
+			</Property>
+		  </Property>
+		  <Property value="TkResourceDescriptorList.xml">
+			<Property name="TypeId" value="_LETTERB_" />
+			<Property name="Descriptors">
+			  <Property value="TkResourceDescriptorData.xml">
+				<Property name="Id" value="_LETTERB_A2LOD0" />
+				<Property name="Name" value="_LetterB_A2LOD0" />
+				<Property name="ReferencePaths" />
+				<Property name="Chance" value="0" />
+				<Property name="Children" />
+			  </Property>
+			</Property>
+		  </Property>
+		  <Property value="TkResourceDescriptorList.xml">
+			<Property name="TypeId" value="_CONT_" />
+			<Property name="Descriptors">
+			  <Property value="TkResourceDescriptorData.xml">
+				<Property name="Id" value="_CONT_1LOD0" />
+				<Property name="Name" value="_cont_1LOD0" />
+				<Property name="ReferencePaths" />
+				<Property name="Chance" value="0" />
+				<Property name="Children" />
+			  </Property>
+			  <Property value="TkResourceDescriptorData.xml">
+				<Property name="Id" value="_CONT_2LOD0" />
+				<Property name="Name" value="_cont_2LOD0" />
+				<Property name="ReferencePaths" />
+				<Property name="Chance" value="0" />
+				<Property name="Children" />
+			  </Property>
+			</Property>
+		  </Property>
+		</Property>
+	  </Property>
+	</Property>
+  </Property>
+</Property>
+</Property>
+
+<Property value="TkResourceDescriptorList.xml">
+<Property name="TypeId" value="_LIVINGFRIGATE_" />
+<Property name="Descriptors">
+  <Property value="TkResourceDescriptorData.xml">
+	<Property name="Id" value="_LIVINGFRIGATE_" />
+	<Property name="Name" value="_LivingFrigate_" />
+	<Property name="ReferencePaths" />
+	<Property name="Chance" value="0" />
+	<Property name="Children">
+	  <Property value="TkModelDescriptorList.xml">
+		<Property name="List">
+		  <Property value="TkResourceDescriptorList.xml">
+			<Property name="TypeId" value="_TYPE_" />
+			<Property name="Descriptors">
+			  <Property value="TkResourceDescriptorData.xml">
+				<Property name="Id" value="_TYPE_WHALESQUID" />
+				<Property name="Name" value="_Type_WhaleSquid" />
+				<Property name="ReferencePaths" />
+				<Property name="Chance" value="0" />
+				<Property name="Children" />
+			  </Property>
+			</Property>
+		  </Property>
+		</Property>
+	  </Property>
+	</Property>
+  </Property>
+</Property>
+</Property>
+
+	<Property value="TkResourceDescriptorList.xml">
+	<Property name="TypeId" value="_CAP_" />
+	<Property name="Descriptors">
+	  <Property value="TkResourceDescriptorData.xml">
+		<Property name="Id" value="_CAP_3" />
+		<Property name="Name" value="_Cap_3" />
+		<Property name="ReferencePaths">
+		  <Property value="NMSString0x80.xml">
+			<Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/GANTRY/LARGEGANTRYCAPB_POLICE.SCENE.MBIN" />
+		  </Property>
+		</Property>
+		<Property name="Chance" value="0" />
+		<Property name="Children" />
+	  </Property>
+	</Property>
+  </Property>
+  <Property value="TkResourceDescriptorList.xml">
+	<Property name="TypeId" value="_CARGOC_" />
+	<Property name="Descriptors">
+	  <Property value="TkResourceDescriptorData.xml">
+		<Property name="Id" value="_CARGOC_A2" />
+		<Property name="Name" value="_CargoC_A2" />
+		<Property name="ReferencePaths" />
+		<Property name="Chance" value="0" />
+		<Property name="Children" />
+	  </Property>
+	  <Property value="TkResourceDescriptorData.xml">
+		<Property name="Id" value="_CARGOC_S1" />
+		<Property name="Name" value="_CargoC_S1" />
+		<Property name="ReferencePaths">
+		  <Property value="NMSString0x80.xml">
+			<Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOLARGEB.SCENE.MBIN" />
+		  </Property>
+		  <Property value="NMSString0x80.xml">
+			<Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/VERTICALFIN.SCENE.MBIN" />
+		  </Property>
+		</Property>
+		<Property name="Chance" value="0" />
+		<Property name="Children">
+		  <Property value="TkModelDescriptorList.xml">
+			<Property name="List">
+			  <Property value="TkResourceDescriptorList.xml">
+				<Property name="TypeId" value="_S1_" />
+				<Property name="Descriptors">
+				  <Property value="TkResourceDescriptorData.xml">
+					<Property name="Id" value="_S1_ACCB" />
+					<Property name="Name" value="_S1_AccB" />
+					<Property name="ReferencePaths">
+					  <Property value="NMSString0x80.xml">
+						<Property name="Value" value="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CARGO/CARGOLARGEAACC.SCENE.MBIN" />
+					  </Property>
+					</Property>
+					<Property name="Chance" value="0" />
+					<Property name="Children" />
+				  </Property>
+				</Property>
+			  </Property>
+			</Property>
+		  </Property>
+		</Property>
+	  </Property>
+	</Property>
+  </Property>
