@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.0.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_BASE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_1LOD0" />
+          <Property name="Name" value="_base_1LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ATTACHMENT1_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT1_1LOD0" />
+                      <Property name="Name" value="_attachment1_1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT1_2LOD0" />
+                      <Property name="Name" value="_attachment1_2LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT1_3LOD0" />
+                      <Property name="Name" value="_attachment1_3LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT1_NONELOD0" />
+                      <Property name="Name" value="_attachment1_noneLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_2LOD0" />
+          <Property name="Name" value="_base_2LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ATTACHMENT2_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT2_1LOD0" />
+                      <Property name="Name" value="_attachment2_1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT2_2LOD0" />
+                      <Property name="Name" value="_attachment2_2LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT2_3LOD0" />
+                      <Property name="Name" value="_attachment2_3LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT2_NONELOD0" />
+                      <Property name="Name" value="_attachment2_noneLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_3LOD0" />
+          <Property name="Name" value="_base_3LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ATTACHMENT3_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT3_1LOD0" />
+                      <Property name="Name" value="_attachment3_1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT3_2LOD0" />
+                      <Property name="Name" value="_attachment3_2LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT3_3LOD0" />
+                      <Property name="Name" value="_attachment3_3LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT3_NONELOD0" />
+                      <Property name="Name" value="_attachment3_noneLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_4LOD0" />
+          <Property name="Name" value="_base_4LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ATTACHMENT4_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT4_1LOD0" />
+                      <Property name="Name" value="_attachment4_1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT4_2LOD0" />
+                      <Property name="Name" value="_attachment4_2LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT4_3LOD0" />
+                      <Property name="Name" value="_attachment4_3LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT4_NONELOD0" />
+                      <Property name="Name" value="_attachment4_noneLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_5LOD0" />
+          <Property name="Name" value="_base_5LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ATTACHMENT5_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT5_1LOD0" />
+                      <Property name="Name" value="_attachment5_1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT5_2LOD0" />
+                      <Property name="Name" value="_attachment5_2LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT5_3LOD0" />
+                      <Property name="Name" value="_attachment5_3LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT5_NONELOD0" />
+                      <Property name="Name" value="_attachment5_noneLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_6LOD0" />
+          <Property name="Name" value="_base_6LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ATTACHMENT6_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT6_1LOD0" />
+                      <Property name="Name" value="_attachment6_1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT6_2LOD0" />
+                      <Property name="Name" value="_attachment6_2LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT6_3LOD0" />
+                      <Property name="Name" value="_attachment6_3LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ATTACHMENT6_NONELOD0" />
+                      <Property name="Name" value="_attachment6_noneLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

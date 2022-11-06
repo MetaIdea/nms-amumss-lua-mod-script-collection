@@ -1,0 +1,49 @@
+DOCUMENTATION is coming later
+--
+if you have any question, or issue, ask me on discord,
+https://discord.gg/UPumAssAph
+it will also help me to establish the documentation.
+--
+
+Advices:
+
+- use the .lua file with the "Redmas Game Overhaul Generator", because it requires the RGOG folder ( contening the EXML, XML, IMAGES, sub-folders)
+- If you decide to use AMUMSS only anyway, add the RGOG folder ( contening the EXML, XML, IMAGES, sub-folders),  2 folders above "ModScript" ( ../../RGOG/ )
+
+- You will need RGOG ( REDMAS GAME OVERHAUL GENERATOR ) to EDIT, MERGE, or UPDATE any "___Redmas_" MODS 
+( use the lua coming from RGOG , not the one in the standalone mods )
+
+- choose a PRESET, keep it, and edit it.
+ 
+-You should always have 1 "REDMAS" pak in the mods folder. (if you mix several of the generated .pak you wil have conflicts. )
+
+- Constructs : if you dont have have downloaded Constructs ,
+https://www.nexusmods.com/nomanssky/mods/323 ( only the "core" .pak is needed ),
+make sure to turn ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF",
+
+- If you want to mix several of my mods, set INIT var to "CUSTOM_PRESET", and edit the "CUSTOM_PRESET"
+
+- If you want to merge my mods with another mod(s), place the other mod(s) in "ModScript" folder,
+ inside "Engine" before running the "build mod"
+
+- tips : 
+in order to gain time ,
+use AMUMSS in "Lean" mode for generating the full overhaul ( estimated time 10 minutes in "Lean" mode) 
+
+
+Install :
+-- do it once--
+- EDIT "STEP_1_ENTER_NMS_FOLDER_HERE_BEFORE_INSTALL" with your own NMS folder location.
+- RUN "STEP_2_INSTALL_Redmas_Game_Overhaul_Generator.bat"
+--------------
+-- repeatable ---
+option A :
+- RUN "STEP_3_EDIT_REDMAS_MOD.bat", then
+- RUN STEP_4_GENERATE_REDMAS_MOD.bat
+option B ( will prevent modifying the default "REDMAS_MODS_BUILDER.lua" )
+- EDIT "REDMAS_MODS_BUILDER.lua" located at ENGINE/ModScript
+- RUN ENGINE/BuildMod.bat
+----------------
+
+Credits :
+This tool was only possible thanks to "AMUMSS" ( aka "AMM") TOOL created by Mjstral,  developed/maintained by Wbertro'

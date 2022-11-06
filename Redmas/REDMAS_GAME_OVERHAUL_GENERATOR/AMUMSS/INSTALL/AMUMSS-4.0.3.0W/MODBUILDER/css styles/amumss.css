@@ -1,0 +1,245 @@
+html {
+	background-color: hsl(0, 0%, 55%) ;
+}
+
+body {
+	background-color: hsl(0, 0%, 80%) ;
+	color: #000000 ;
+	font-family: Helvetica, Arial, sans-serif ;
+	text-align: justify ;
+	line-height: 1.25 ;
+	margin: 16px auto ;
+	padding: 32px ;
+	border: solid #ccc 1px ;
+	border-radius: 20px ;
+	max-width: 70em ;
+	width: 90% ;
+}
+
+h1, h2, h3, h4 {
+	color: #000080 ;
+	font-family: Verdana, Geneva, sans-serif ;
+	font-weight: normal ;
+	font-style: normal ;
+	text-align: left ;
+}
+
+h1 {
+	font-size: 28pt ;
+}
+
+h1 img {
+	vertical-align: text-bottom ;
+}
+
+h2:before {
+	content: "\2756" ;
+	padding-right: 0.5em ;
+}
+
+a {
+	text-decoration: none ;
+}
+
+a:link {
+	color: #0000FF ;
+	font-style: italic;
+}
+
+a:link:hover, a:visited:hover {
+	background-color: #f0f0FF ;
+	color: #000080 ;
+	border-radius: 4px ;
+	border-bottom: 1px solid;
+	padding: 0.1% 0.1% 0.1% 0.1%
+}
+
+a:link:active, a:visited:active {
+	color: #FF0000 ;
+}
+
+/* code { */
+	/* width:fit-content; */
+/* } */
+
+/* div.AMUMSS { */
+	/* width:fit-content; */
+/* } */
+
+div.menubar {
+	padding-bottom: 0.5em ;
+}
+
+p.menubar {
+	margin-left: 2.5em ;
+}
+
+.menubar a:hover  {
+	margin: -3px -3px -3px -3px ;
+	padding: 3px  3px  3px  3px ;
+	border-radius: 4px ;
+}
+
+:target {
+	background-color: #F0F0F0 ;
+	margin: -8px ;
+	padding: 3px ;
+	border-radius: 8px ;
+	outline: none ;
+}
+
+hr {
+	display: none ;
+}
+
+table hr {
+	background-color: #a0a0a0 ;
+	color: #a0a0a0 ;
+	border: 0 ;
+	height: 1px ;
+	display: block ;
+}
+
+.footer {
+	color: gray ;
+	font-size: x-small ;
+	text-transform: lowercase ;
+}
+
+input[type=text] {
+	border: solid #a0a0a0 2px ;
+	border-radius: 2em ;
+	background-image: url('images/search.png') ;
+	background-repeat: no-repeat ;
+	background-position: 4px center ;
+	padding-left: 20px ;
+	height: 2em ;
+}
+
+/* pre { */
+	/* width:fit-content; */
+/* } */
+
+pre.session {
+	background-color: #F8F8F8 ;
+	padding: 1em ;
+	border-radius: 8px ;
+}
+
+table {
+	border: none ;
+	border-spacing: 0 ;
+	border-collapse: collapse ;
+}
+
+td {
+	padding: 0 ;
+	margin: 0 ;
+}
+
+td.gutter {
+	width: 4% ;
+}
+
+table.columns td {
+	vertical-align: top ;
+	padding-bottom: 1em ;
+	text-align: justify ;
+	line-height: 1.25 ;
+}
+
+table.book td {
+	vertical-align: top ;
+}
+
+table.book td.cover {
+	padding-right: 1em ;
+}
+
+table.book img {
+	border: solid #000080 1px ;
+}
+
+table.book span {
+	font-size: small ;
+	text-align: left ;
+	display: block ;
+	margin-top: 0.25em ;
+}
+
+p.logos a:link:hover, p.logos a:visited:hover {
+	background-color: inherit ;
+}
+
+img {
+	background-color: white ;
+}
+
+.collapsible {
+  background-color: #b3b3b3;
+  color: blue;
+  cursor: pointer;
+  padding: 18px;
+  /* width: 100% */
+  max-width: 100%;
+  border: none;
+  border-radius: 16px ;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+}
+
+.collapsible:before {
+  content: '\02795  '; /* Unicode character for "plus" sign (+) */
+}
+
+.active {
+  background-color: #333333;
+  color: red;
+}
+
+.active:before {
+  content: '\02796  '; /* Unicode character for "minus" sign (-) */
+}
+
+.collapsible:hover {
+  background-color: #555555;
+  color: yellow;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #cccccc;
+  border-radius: 16px ;
+}
+
+.lua_default {
+	color: #faf4a5;
+}.lua_func1 {
+	color: rgb(206, 223, 153);
+}
+.lua_func2 {
+	color: rgb(220, 220, 204);
+}
+.lua_oper {
+	color: rgb(159, 157, 109);
+}
+.lua_inst {
+	color: rgb(223, 196, 125);
+}
+.lua_str {
+	color: rgb(204, 147, 147);
+}
+.lua_num {
+	color: rgb(140, 208, 211);
+}
+.lua_comment {
+	color: #00b300;
+	font-family: Verdana, Geneva, sans-serif ;
+}
+.lua_BG {
+	background-color: 	#3c1e11;
+	border-radius: 16px ;
+}

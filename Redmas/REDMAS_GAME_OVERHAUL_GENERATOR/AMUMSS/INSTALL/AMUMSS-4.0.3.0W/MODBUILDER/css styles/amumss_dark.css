@@ -1,0 +1,33 @@
+html {
+	background-color: #222222;
+	color: #e1e1e1;
+}
+
+body {
+	background-color: inherit;
+	color: inherit;
+}
+
+h1, h2, h3, h4,
+a:link:active,
+a:visited:active {
+	color: #aaaae0;
+}
+
+a:link,
+a:link:hover,
+a:visited,
+a:visited:hover,
+.collapsible,
+.collapsible:hover,
+.active {
+	background-color: inherit;
+	color: #aaaae0;
+}
+
+:target,
+table hr,
+pre.session,
+.content {
+	background-color: inherit;
+}

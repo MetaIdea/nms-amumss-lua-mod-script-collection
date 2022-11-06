@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (3.5.0)-->
+<Data template="TkSceneNodeData">
+  <Property name="Name" value="MODELS\RGO\CONSTRUCTS\01" />
+  <Property name="NameHash" value="0" />
+  <Property name="Type" value="MODEL" />
+  <Property name="Transform" value="TkTransformData.xml">
+    <Property name="TransX" value="0" />
+    <Property name="TransY" value="0" />
+    <Property name="TransZ" value="0" />
+    <Property name="RotX" value="0" />
+    <Property name="RotY" value="0" />
+    <Property name="RotZ" value="0" />
+    <Property name="ScaleX" value="1" />
+    <Property name="ScaleY" value="1" />
+    <Property name="ScaleZ" value="1" />
+  </Property>
+  <Property name="Attributes">
+    <Property value="TkSceneNodeAttributeData.xml">
+      <Property name="Name" value="GEOMETRY" />
+      <Property name="AltID" value="" />
+      <Property name="Value" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD.GEOMETRY.MBIN" />
+    </Property>
+    <Property value="TkSceneNodeAttributeData.xml">
+      <Property name="Name" value="NUMLODS" />
+      <Property name="AltID" value="" />
+      <Property name="Value" value="1" />
+    </Property>
+    <Property value="TkSceneNodeAttributeData.xml">
+      <Property name="Name" value="ATTACHMENT" />
+      <Property name="AltID" value="" />
+      <Property name="Value" value="MODELS\RGO\ENTITIES\BEACON.ENTITY.MBIN" />
+    </Property>
+  </Property>
+  <Property name="Children">
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="CONSTRUCTFTSHIELD" />
+      <Property name="NameHash" value="4119057161" />
+      <Property name="Type" value="MESH" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="BATCHSTARTPHYSI" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VERTRSTARTPHYSI" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VERTRENDPHYSICS" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="27117" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="BATCHSTARTGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="BATCHCOUNT" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="38322" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VERTRSTARTGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="VERTRENDGRAPHIC" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="27117" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FIRSTSKINMAT" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="LASTSKINMAT" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="LODLEVEL" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="BOUNDHULLST" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="BOUNDHULLED" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="27118" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="AABBMINX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-102.20285034179688" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="AABBMINY" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-6.382681476679863e-07" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="AABBMINZ" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="-102.2028579711914" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="AABBMAXX" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="102.20285034179688" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="AABBMAXY" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="162.3887939453125" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="AABBMAXZ" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="102.20285034179688" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="HASH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="9965804537022436995" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="MATERIAL" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\CRASHEDFREIGHTER\CRASHEDFREIGHTER_MAT.MATERIAL.MBIN" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="MESHLINK" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="CONSTRUCTFTSHIELDShape" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="51.45393" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="22.200000762939453" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="105.41999816894531" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="22.200002670288086" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="87.57693" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Cylinder" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="RADIUS" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="79.37000274658203" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="19.739999771118164" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="7.688999E-06" />
+            <Property name="TransY" value="100.5407" />
+            <Property name="TransZ" value="-2.163649E-05" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Cylinder" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="RADIUS" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="29.725200653076172" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="6.187585830688477" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="1.403689E-05" />
+            <Property name="TransY" value="99.40028" />
+            <Property name="TransZ" value="-2.276897E-05" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Cylinder" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="RADIUS" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="56.71751403808594" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="3.906770706176758" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="17.45" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="36.880001068115234" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="35.939998626708984" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="6.539999961853027" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0.9263392" />
+            <Property name="TransY" value="63.10603" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="81.30146026611328" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="29.201793670654297" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="6.539999961853027" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="1.788139E-07" />
+            <Property name="TransY" value="63.10603" />
+            <Property name="TransZ" value="9.536743E-07" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="89.99999" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="81.30146026611328" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="29.201793670654297" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="6.539999961853027" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-0.6140814" />
+            <Property name="TransY" value="104.4719" />
+            <Property name="TransZ" value="22.70485" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="89.99999" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="10.290677070617676" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="14.05001449584961" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="10.989007949829102" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-0.6140814" />
+            <Property name="TransY" value="136.9429" />
+            <Property name="TransZ" value="22.70485" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="89.99999" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="3.7541165351867676" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="50.8918571472168" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4.008872985839844" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0.9263387" />
+            <Property name="TransY" value="38.63282" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="55.6008415222168" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="19.74463653564453" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="6.539999961853027" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.768372E-07" />
+            <Property name="TransY" value="38.63282" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="89.99999" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="55.6008415222168" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="19.74463653564453" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="6.539999961853027" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-9.536743E-07" />
+            <Property name="TransY" value="85.0851" />
+            <Property name="TransZ" value="-1.907349E-06" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="67.50001" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="0.9999999" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="0.9999999" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="219.9302804428506" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4.242012977600098" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4.628838338186642" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-9.536743E-07" />
+            <Property name="TransY" value="85.0851" />
+            <Property name="TransZ" value="-1.907349E-06" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="22.5" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="219.93028259277344" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4.242012977600098" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4.628838539123535" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-9.536743E-07" />
+            <Property name="TransY" value="85.0851" />
+            <Property name="TransZ" value="-1.907349E-06" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-22.50001" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="219.93028259277344" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4.242012977600098" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4.628838539123535" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-9.536743E-07" />
+            <Property name="TransY" value="85.0851" />
+            <Property name="TransZ" value="-1.907349E-06" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-67.50001" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="0.9999999" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="0.9999999" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="219.9302804428506" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4.242012977600098" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4.628838338186642" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-3.33786E-06" />
+            <Property name="TransY" value="74.42284" />
+            <Property name="TransZ" value="-9.536743E-07" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="89.99999" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="124.76060485839844" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="10.60605239868164" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="12.74002742767334" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-3.33786E-06" />
+            <Property name="TransY" value="74.42284" />
+            <Property name="TransZ" value="-9.536743E-07" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-180" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="124.76060485839844" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="10.60605239868164" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="12.74002742767334" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\CONSTRUCTFTBRONZESHIELD\CONSTRUCTFTBRONZESHIELD" />
+          <Property name="NameHash" value="4119057161" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="17.45" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="89.99999" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="36.880001068115234" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="35.939998626708984" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="6.539999961853027" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="REFERENCE_LIGHT" />
+      <Property name="NameHash" value="4119057161" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="-1.553915" />
+        <Property name="TransY" value="162.3888" />
+        <Property name="TransZ" value="21.95765" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="4" />
+        <Property name="ScaleY" value="4" />
+        <Property name="ScaleZ" value="4" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\EFFECTS\LIGHTS\LIGHT_BLUE.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+  </Property>
+</Data>

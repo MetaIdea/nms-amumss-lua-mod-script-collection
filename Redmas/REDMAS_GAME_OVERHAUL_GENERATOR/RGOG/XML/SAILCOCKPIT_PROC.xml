@@ -1,0 +1,2454 @@
+
+		<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_Cockpit_A" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.1" />
+				<Property name="TransZ" value="-1.4" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1.2" />
+				<Property name="ScaleY" value="1.2" />
+				<Property name="ScaleZ" value="1.2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\RGO\COCKPITA.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children">
+			  
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_ACC_NONE" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ABIG" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AMED" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\_ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ATALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+			
+			  
+			  
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_A" />
+              <Property name="NameHash" value="4260511540" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEA.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_B" />
+              <Property name="NameHash" value="3347042880" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                   <Property name="Value" value="MODELS\RGO\COCKPITANOSEAW.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_C" />
+              <Property name="NameHash" value="294577773" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEC\COCKPITANOSEC.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_D" />
+              <Property name="NameHash" value="3947731435" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSED\COCKPITANOSED.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_E" />
+              <Property name="NameHash" value="2882247396" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEE\COCKPITANOSEE.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+			   
+			  
+ 
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_CV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_DV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+			<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		 
+		<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_Engine_DR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.3" />
+				<Property name="TransZ" value="7.7" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="0.481" />
+				<Property name="ScaleY" value="0.481" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\SQUIDPARTS\ENGINE\ENGINE_A.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		  
+			 </Property>
+		  
+		   </Property>
+		<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_Cockpit_BV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.1" />
+				<Property name="TransZ" value="-1.4" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1.2" />
+				<Property name="ScaleY" value="1.2" />
+				<Property name="ScaleZ" value="1.2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\RGO\COCKPITB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children">
+			  
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_ACC_NONE" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ABIG" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AMED" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\_ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ATALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+			
+			  
+			  
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_A" />
+              <Property name="NameHash" value="4260511540" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEA.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_B" />
+              <Property name="NameHash" value="3347042880" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                   <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEAW.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_C" />
+              <Property name="NameHash" value="294577773" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEC\COCKPITANOSEC.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_D" />
+              <Property name="NameHash" value="3947731435" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSED\COCKPITANOSED.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_E" />
+              <Property name="NameHash" value="2882247396" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEE\COCKPITANOSEE.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+			   
+			  
+ 
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_CV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_DV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+			<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		 
+		<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_Engine_DR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.3" />
+				<Property name="TransZ" value="7.7" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="0.481" />
+				<Property name="ScaleY" value="0.481" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\SQUIDPARTS\ENGINE\ENGINE_A.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		  
+			 </Property>
+		  
+		  </Property>
+		<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_Cockpit_DV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.1" />
+				<Property name="TransZ" value="-1.4" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1.2" />
+				<Property name="ScaleY" value="1.2" />
+				<Property name="ScaleZ" value="1.2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\RGO\COCKPITD.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children">
+			  
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_ACC_NONE" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ABIG" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AMED" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\_ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ATALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+			
+			  
+			  
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_A" />
+              <Property name="NameHash" value="4260511540" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEA.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_B" />
+              <Property name="NameHash" value="3347042880" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                   <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEAW.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_C" />
+              <Property name="NameHash" value="294577773" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEC\COCKPITANOSEC.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_D" />
+              <Property name="NameHash" value="3947731435" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSED\COCKPITANOSED.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_E" />
+              <Property name="NameHash" value="2882247396" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEE\COCKPITANOSEE.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+			   
+			  
+ 
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_CV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_DV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+			<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		 
+		<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_Engine_DR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.3" />
+				<Property name="TransZ" value="7.7" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="0.481" />
+				<Property name="ScaleY" value="0.481" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\SQUIDPARTS\ENGINE\ENGINE_A.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		  
+			 </Property>
+		  </Property>
+		<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_Cockpit_EV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.1" />
+				<Property name="TransZ" value="-1.4" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1.2" />
+				<Property name="ScaleY" value="1.2" />
+				<Property name="ScaleZ" value="1.2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\RGO\COCKPIT_E.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children">
+			  
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_ACC_NONE" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ABIG" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AMED" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\_ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ATALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+			
+			  
+			  
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_A" />
+              <Property name="NameHash" value="4260511540" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEA.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_B" />
+              <Property name="NameHash" value="3347042880" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                   <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEAW.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_C" />
+              <Property name="NameHash" value="294577773" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEC\COCKPITANOSEC.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_D" />
+              <Property name="NameHash" value="3947731435" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSED\COCKPITANOSED.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_E" />
+              <Property name="NameHash" value="2882247396" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEE\COCKPITANOSEE.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+			   
+			  
+ 
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_CV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_DV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+			<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		 
+		<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_Engine_DR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.3" />
+				<Property name="TransZ" value="7.7" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="0.481" />
+				<Property name="ScaleY" value="0.481" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\SQUIDPARTS\ENGINE\ENGINE_A.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		  
+			 </Property>
+		  </Property>
+		<Property value="TkSceneNodeData.xml">
+	  <Property name="Name" value="_Cockpit_FV" />
+	  <Property name="NameHash" value="1402909504" />
+	  <Property name="Type" value="REFERENCE" />
+	  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.1" />
+				<Property name="TransZ" value="-1.4" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1.2" />
+				<Property name="ScaleY" value="1.2" />
+				<Property name="ScaleZ" value="1.2" />
+	  </Property>
+	  <Property name="Attributes">
+		<Property value="TkSceneNodeAttributeData.xml">
+		  <Property name="Name" value="SCENEGRAPH" />
+		  <Property name="AltID" value="" />
+		  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_F\COCKPTF.SCENE.MBIN" />
+		</Property>
+	  </Property>
+			  <Property name="Children">
+			  
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_ACC_NONE" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ACCESSORIES\ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ABIG" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALL.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ASMALL2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCASMALLx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AMED" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\_ACCA.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_ATALL" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCABIG.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDY.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+				  <Property name="Name" value="_Acc_AWINDY2" />
+				  <Property name="NameHash" value="1402909504" />
+				  <Property name="Type" value="REFERENCE" />
+				  <Property name="Transform" value="TkTransformData.xml">
+					<Property name="TransX" value="0" />
+					<Property name="TransY" value="2.411147" />
+					<Property name="TransZ" value="0.017394" />
+					<Property name="RotX" value="0" />
+					<Property name="RotY" value="0" />
+					<Property name="RotZ" value="0" />
+					<Property name="ScaleX" value="1" />
+					<Property name="ScaleY" value="1" />
+					<Property name="ScaleZ" value="1" />
+				  </Property>
+				  <Property name="Attributes">
+					<Property value="TkSceneNodeAttributeData.xml">
+					  <Property name="Name" value="SCENEGRAPH" />
+					  <Property name="AltID" value="" />
+					  <Property name="Value" value="MODELS\RGO\ACCAWINDYx2.SCENE.MBIN" />
+					</Property>
+				  </Property>
+				  <Property name="Children" />
+				</Property>
+			
+			  
+			  
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_A" />
+              <Property name="NameHash" value="4260511540" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEA.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_B" />
+              <Property name="NameHash" value="3347042880" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                   <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEA\COCKPITANOSEAW.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_C" />
+              <Property name="NameHash" value="294577773" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEC\COCKPITANOSEC.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_D" />
+              <Property name="NameHash" value="3947731435" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSED\COCKPITANOSED.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+            <Property value="TkSceneNodeData.xml">
+              <Property name="Name" value="_ANose_E" />
+              <Property name="NameHash" value="2882247396" />
+              <Property name="Type" value="REFERENCE" />
+              <Property name="Transform" value="TkTransformData.xml">
+                <Property name="TransX" value="0" />
+                <Property name="TransY" value="0" />
+                <Property name="TransZ" value="0" />
+                <Property name="RotX" value="0" />
+                <Property name="RotY" value="0" />
+                <Property name="RotZ" value="0" />
+                <Property name="ScaleX" value="1" />
+                <Property name="ScaleY" value="1" />
+                <Property name="ScaleZ" value="1" />
+              </Property>
+              <Property name="Attributes">
+                <Property value="TkSceneNodeAttributeData.xml">
+                  <Property name="Name" value="SCENEGRAPH" />
+                  <Property name="AltID" value="" />
+                  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\NOSE\COCKPITA_NOSEE\COCKPITANOSEE.SCENE.MBIN" />
+                </Property>
+              </Property>
+              <Property name="Children" />
+            </Property>
+			   
+			  
+ 
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_CV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_DV" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+			<Property name="TransZ" value="1" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		 
+		<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_ENGINE_BR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0" />
+				<Property name="TransZ" value="0" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="1" />
+				<Property name="ScaleY" value="1" />
+				<Property name="ScaleZ" value="1" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+			<Property value="TkSceneNodeData.xml">
+			  <Property name="Name" value="_Engine_DR" />
+			  <Property name="NameHash" value="1402909504" />
+			  <Property name="Type" value="REFERENCE" />
+			  <Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransX" value="0" />
+				<Property name="TransY" value="0.3" />
+				<Property name="TransZ" value="7.7" />
+				<Property name="RotX" value="0" />
+				<Property name="RotY" value="0" />
+				<Property name="RotZ" value="0" />
+				<Property name="ScaleX" value="0.481" />
+				<Property name="ScaleY" value="0.481" />
+				<Property name="ScaleZ" value="2" />
+			  </Property>
+			  <Property name="Attributes">
+				<Property value="TkSceneNodeAttributeData.xml">
+				  <Property name="Name" value="SCENEGRAPH" />
+				  <Property name="AltID" value="" />
+				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\S-CLASS\SQUIDPARTS\ENGINE\ENGINE_A.SCENE.MBIN" />
+				</Property>
+			  </Property>
+			  <Property name="Children" />
+			</Property>
+		  
+			 </Property>
+  </Property>
+ 

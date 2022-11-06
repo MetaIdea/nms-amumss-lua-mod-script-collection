@@ -1,0 +1,120 @@
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_Front_A" />
+      <Property name="NameHash" value="907186420" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="-100.610405" />
+        <Property name="TransY" value="165.536758" />
+        <Property name="TransZ" value="31.9607048" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="4" />
+        <Property name="ScaleY" value="4" />
+        <Property name="ScaleZ" value="4" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\CRASHEDFREIGHTER_SPACEPOI.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+	    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_Front_B" />
+      <Property name="NameHash" value="907186420" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="800.610405" />
+        <Property name="TransY" value="845.536758" />
+        <Property name="TransZ" value="831.9607048" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="90" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\SPACE\POI\ASTEROID_BEACON.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+	    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_Front_C" />
+      <Property name="NameHash" value="907186420" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="200.610405" />
+        <Property name="TransY" value="-1245.536758" />
+        <Property name="TransZ" value="31.9607048" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="4" />
+        <Property name="ScaleY" value="4" />
+        <Property name="ScaleZ" value="4" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\CRASHEDFREIGHTER_SPACEPOI2.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+	    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_Front_D" />
+      <Property name="NameHash" value="907186420" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="-1100.610405" />
+        <Property name="TransY" value="-1145.536758" />
+        <Property name="TransZ" value="31.9607048" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="4" />
+        <Property name="ScaleY" value="4" />
+        <Property name="ScaleZ" value="4" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRASHEDFREIGHTER\CRASHEDFREIGHTER_SPACEPOI3.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+	    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_Front_F" />
+      <Property name="NameHash" value="907186420" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="-500.610405" />
+        <Property name="TransY" value="545.536758" />
+        <Property name="TransZ" value="501.9607048" />
+        <Property name="RotX" value="90" />
+        <Property name="RotY" value="90" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="2" />
+        <Property name="ScaleY" value="2" />
+        <Property name="ScaleZ" value="2" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\SPACE\POI\GATE_POI.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>				

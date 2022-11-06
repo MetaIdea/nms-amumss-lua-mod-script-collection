@@ -1,0 +1,60 @@
+ <!-- Redmas Game Overhaul -->
+<Property value="TkSceneNodeData.xml">
+	<Property name="Name" value="COLOUR" />
+	<Property name="NameHash" value="0" />
+	<Property name="Type" value="TRAIL" />
+	<Property name="Transform" value="TkTransformData.xml">
+	  <Property name="TransX" value="0" />
+	  <Property name="TransY" value="0" />
+	  <Property name="TransZ" value="0" />
+	  <Property name="RotX" value="0" />
+	  <Property name="RotY" value="0" />
+	  <Property name="RotZ" value="0" />
+	  <Property name="ScaleX" value="0.1" />
+	  <Property name="ScaleY" value="0.1" />
+	  <Property name="ScaleZ" value="0.1" />
+	</Property>
+	<Property name="Attributes">
+	  <Property value="TkSceneNodeAttributeData.xml">
+		<Property name="Name" value="MATERIAL" />
+		<Property name="AltID" value="" />
+		<Property name="Value" value="Models\Effects\Trails\Spacecraft\DefaultTrail\DefaultTrail.MATERIAL.MBIN" />
+	  </Property>
+	  <Property value="TkSceneNodeAttributeData.xml">
+		<Property name="Name" value="DATA" />
+		<Property name="AltID" value="" />
+		<Property name="Value" value="Models\Effects\Trails\Spacecraft\DefaultTrail\DefaultTrail.trail.MBIN" />
+	  </Property>
+	</Property>
+	<Property name="Children" />
+  </Property>
+  <Property value="TkSceneNodeData.xml">
+	<Property name="Name" value="CORE" />
+	<Property name="NameHash" value="0" />
+	<Property name="Type" value="TRAIL" />
+	<Property name="Transform" value="TkTransformData.xml">
+	  <Property name="TransX" value="0" />
+	  <Property name="TransY" value="0" />
+	  <Property name="TransZ" value="0" />
+	  <Property name="RotX" value="0" />
+	  <Property name="RotY" value="0" />
+	  <Property name="RotZ" value="0" />
+	  <Property name="ScaleX" value="0.11" />
+	  <Property name="ScaleY" value="0.11" />
+	  <Property name="ScaleZ" value="0.11" />
+	</Property>
+	<Property name="Attributes">
+	  <Property value="TkSceneNodeAttributeData.xml">
+		<Property name="Name" value="MATERIAL" />
+		<Property name="AltID" value="" />
+		<Property name="Value" value="Models\Effects\Trails\Spacecraft\DefaultTrail\DefaultTrailCore.MATERIAL.MBIN" />
+	  </Property>
+	  <Property value="TkSceneNodeAttributeData.xml">
+		<Property name="Name" value="DATA" />
+		<Property name="AltID" value="" />
+		<Property name="Value" value="Models\Effects\Trails\Spacecraft\DefaultTrail\DefaultTrailCore.trail.MBIN" />
+	  </Property>
+	</Property>
+	<Property name="Children" />
+ </Property>
+<!-- end Redmas Game Overhaul -->

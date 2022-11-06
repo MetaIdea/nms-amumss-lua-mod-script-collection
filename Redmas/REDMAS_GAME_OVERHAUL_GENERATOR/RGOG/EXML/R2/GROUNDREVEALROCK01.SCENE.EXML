@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.0.0)-->
+<Data template="TkSceneNodeData">
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK01" />
+  <Property name="NameHash" value="1453052650" />
+  <Property name="Type" value="MODEL" />
+  <Property name="Transform" value="TkTransformData.xml">
+    <Property name="TransX" value="0" />
+    <Property name="TransY" value="0" />
+    <Property name="TransZ" value="0" />
+    <Property name="RotX" value="0" />
+    <Property name="RotY" value="0" />
+    <Property name="RotZ" value="0" />
+    <Property name="ScaleX" value="1" />
+    <Property name="ScaleY" value="1" />
+    <Property name="ScaleZ" value="1" />
+  </Property>
+  <Property name="Attributes">
+    <Property value="TkSceneNodeAttributeData.xml">
+      <Property name="Name" value="GEOMETRY" />
+      <Property name="AltID" value="" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK01.GEOMETRY.MBIN" />
+    </Property>
+    <Property value="TkSceneNodeAttributeData.xml">
+      <Property name="Name" value="NUMLODS" />
+      <Property name="AltID" value="" />
+      <Property name="Value" value="1" />
+    </Property>
+  </Property>
+  <Property name="Children">
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="GroundRock_1" />
+      <Property name="NameHash" value="260294893" />
+      <Property name="Type" value="LOCATOR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="ATTACHMENT" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\MEDIUMROCK\ENTITIES\MEDIUMROCKSCAN.ENTITY.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="GroundRock_1LOD0" />
+          <Property name="NameHash" value="2446270768" />
+          <Property name="Type" value="MESH" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="BATCHSTARTPHYSI" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="258" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="VERTRSTARTPHYSI" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="VERTRENDPHYSICS" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="2580" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="BATCHSTARTGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="BATCHCOUNT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="13806" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="VERTRSTARTGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="VERTRENDGRAPHIC" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="2580" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="FIRSTSKINMAT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="LASTSKINMAT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="LODLEVEL" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="BOUNDHULLST" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="BOUNDHULLED" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="48" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="AABBMINX" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="-6.011066" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="AABBMINY" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="-1.591358" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="AABBMINZ" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="-4.653679" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="AABBMAXX" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="5.707143" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="AABBMAXY" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="2.744736" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="AABBMAXZ" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="5.114475" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HASH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="2195996559758589306" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="MATERIAL" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK01\GROUNDREVELROCK01_MAT.MATERIAL.MBIN" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="MESHLINK" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="GroundRock_1LOD0Shape" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+     <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK01" />
+          <Property name="NameHash" value="1453052650" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-0.266092" />
+            <Property name="TransY" value="0.562402" />
+            <Property name="TransZ" value="0.341147" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Mesh" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="BATCHSTART" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="BATCHCOUNT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="258" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="VERTRSTART" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4342" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="VERTREND" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="4498" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="FIRSTSKINMAT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="LASTSKINMAT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="BOUNDHULLST" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="144" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="BOUNDHULLED" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="301" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

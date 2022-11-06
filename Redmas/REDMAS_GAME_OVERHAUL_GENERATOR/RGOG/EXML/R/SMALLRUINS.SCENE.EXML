@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.0.0)-->
+<Data template="TkSceneNodeData">
+  <Property name="Name" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\SMALLRUINS" />
+  <Property name="NameHash" value="170402146" />
+  <Property name="Type" value="MODEL" />
+  <Property name="Transform" value="TkTransformData.xml">
+    <Property name="TransX" value="0" />
+    <Property name="TransY" value="0" />
+    <Property name="TransZ" value="0" />
+    <Property name="RotX" value="0" />
+    <Property name="RotY" value="0" />
+    <Property name="RotZ" value="0" />
+    <Property name="ScaleX" value="1" />
+    <Property name="ScaleY" value="1" />
+    <Property name="ScaleZ" value="1" />
+  </Property>
+  <Property name="Attributes">
+    <Property value="TkSceneNodeAttributeData.xml">
+      <Property name="Name" value="GEOMETRY" />
+      <Property name="AltID" value="" />
+      <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\SMALLRUINS.GEOMETRY.MBIN" />
+    </Property>
+    <Property value="TkSceneNodeAttributeData.xml">
+      <Property name="Name" value="NUMLODS" />
+      <Property name="AltID" value="" />
+      <Property name="Value" value="1" />
+    </Property>
+  </Property>
+  <Property name="Children">
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_RUIN_1" />
+      <Property name="NameHash" value="937734394" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="-10" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="5" />
+        <Property name="ScaleY" value="5" />
+        <Property name="ScaleZ" value="5" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRAIGHT.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallTallAlcove" />
+          <Property name="NameHash" value="236272675" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-8.4" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-8.4" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLTALLALCOVE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CrossBeam" />
+          <Property name="NameHash" value="87229686" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCROSSBEAM.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallCrumble" />
+          <Property name="NameHash" value="1887553356" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-4.2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut" />
+          <Property name="NameHash" value="3929063710" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="Plinth" />
+          <Property name="NameHash" value="3899544819" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-4.99044" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLPLINTH.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="Plinth1" />
+          <Property name="NameHash" value="3455575494" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-8.404304" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-8.74821" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLPLINTH.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="Column" />
+          <Property name="NameHash" value="3384672631" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCOLUMN.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallStraightTall" />
+          <Property name="NameHash" value="1170550273" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-4.2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRAIGHTTALL.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CornerTall" />
+          <Property name="NameHash" value="3975076723" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-8.4" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="Column1" />
+          <Property name="NameHash" value="3745715378" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCOLUMN.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut1" />
+          <Property name="NameHash" value="3278196602" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-2.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut2" />
+          <Property name="NameHash" value="3458360564" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_RUIN_2" />
+      <Property name="NameHash" value="1848253844" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="-10" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="5" />
+        <Property name="ScaleY" value="5" />
+        <Property name="ScaleZ" value="5" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRAIGHT.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="Corner1" />
+          <Property name="NameHash" value="2343183260" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNER.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallCrumble2" />
+          <Property name="NameHash" value="1788439908" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-4.2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut3" />
+          <Property name="NameHash" value="2681735264" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="180" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut4" />
+          <Property name="NameHash" value="2990386475" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-2.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut5" />
+          <Property name="NameHash" value="4199071040" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="Corner2" />
+          <Property name="NameHash" value="1624886776" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNER.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_RUIN_3" />
+      <Property name="NameHash" value="1549302241" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="-10" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="5" />
+        <Property name="ScaleY" value="5" />
+        <Property name="ScaleZ" value="5" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRAIGHT.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="Corner3" />
+          <Property name="NameHash" value="1854499159" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNER.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallCrumble3" />
+          <Property name="NameHash" value="550722009" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-4.2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut6" />
+          <Property name="NameHash" value="84660934" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-6.2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CornerTall1" />
+          <Property name="NameHash" value="2041270785" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-8.4" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallTallArch" />
+          <Property name="NameHash" value="1632099494" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-4.2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLTALLARCH.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut7" />
+          <Property name="NameHash" value="1325655721" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut8" />
+          <Property name="NameHash" value="3916503953" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallCrumble4" />
+          <Property name="NameHash" value="218968653" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-8.4" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-8.4" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="180" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallCrumble5" />
+          <Property name="NameHash" value="891355764" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="4.2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CornerTall2" />
+          <Property name="NameHash" value="2423422863" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_RUIN_5" />
+      <Property name="NameHash" value="1890984620" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="-10" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="5.264401" />
+        <Property name="ScaleY" value="5.264401" />
+        <Property name="ScaleZ" value="5.264401" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSPIRE.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_RUIN_4" />
+      <Property name="NameHash" value="2146746665" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="-10.468506" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="3.702759" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="180" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="5" />
+        <Property name="ScaleY" value="5" />
+        <Property name="ScaleZ" value="5" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCRUMBLE.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallCrumble6" />
+          <Property name="NameHash" value="2740117206" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="4.15471" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut9" />
+          <Property name="NameHash" value="828779374" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-0.04529" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut10" />
+          <Property name="NameHash" value="2587298346" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="2.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-0.04529" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="180" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="SingleStrut11" />
+          <Property name="NameHash" value="2893328037" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-0.04529" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="180" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="Corner5" />
+          <Property name="NameHash" value="1488403891" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-0.04529" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNER.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="_RUIN_6" />
+      <Property name="NameHash" value="2792459810" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="-20" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="10" />
+        <Property name="ScaleY" value="10" />
+        <Property name="ScaleZ" value="10" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLTALLALCOVE.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CornerTall3" />
+          <Property name="NameHash" value="1551374235" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallTallArch1" />
+          <Property name="NameHash" value="353257747" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-4.2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLTALLARCH.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallCrumble7" />
+          <Property name="NameHash" value="1502530383" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-4.2" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CornerTall6" />
+          <Property name="NameHash" value="885311541" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-16.8" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallTallArch2" />
+          <Property name="NameHash" value="50406649" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-12.599999" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="-90" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLTALLARCH.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CornerTall4" />
+          <Property name="NameHash" value="1784066904" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CornerTall5" />
+          <Property name="NameHash" value="655043778" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-4.2" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-8.4" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="WallCrumble8" />
+          <Property name="NameHash" value="1205118939" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="-16.8" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RUINS\PARTS\WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

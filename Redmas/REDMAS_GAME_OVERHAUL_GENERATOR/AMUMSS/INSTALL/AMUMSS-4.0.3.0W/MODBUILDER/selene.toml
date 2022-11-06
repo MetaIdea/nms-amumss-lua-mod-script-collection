@@ -1,0 +1,26 @@
+std = "lua52"
+
+[config]
+empty_if = { comments_count = true }
+
+[[math.atan2.args]]
+removed = true
+
+[[math.cosh.args]]
+removed = true
+
+[[math.sinh.args]]
+removed = true
+
+[[math.tanh.args]]
+removed = true
+
+[[math.pow.args]]
+removed = true
+
+[[math.frexp.args]]
+removed = true
+
+[[math.ldexp.args]]
+removed = true
+

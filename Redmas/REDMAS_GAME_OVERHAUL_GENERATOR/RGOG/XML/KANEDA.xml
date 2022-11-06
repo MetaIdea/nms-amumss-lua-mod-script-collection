@@ -1,0 +1,48 @@
+<Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="pCube1" />
+      <Property name="NameHash" value="2488506156" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="-0.3" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1.2" />
+        <Property name="ScaleY" value="1.5" />
+        <Property name="ScaleZ" value="1.6" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\RGO\KANEDA_WHEELS.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>
+	    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="pCube1" />
+      <Property name="NameHash" value="2488506156" />
+      <Property name="Type" value="REFERENCE" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0.2" />
+        <Property name="TransZ" value="0.6" />
+        <Property name="RotX" value="5" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1.2" />
+        <Property name="ScaleY" value="1.2" />
+        <Property name="ScaleZ" value="1.2" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="SCENEGRAPH" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\RGO\KANEDA_COCKPIT.SCENE.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>

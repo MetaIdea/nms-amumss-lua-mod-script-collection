@@ -1,0 +1,123 @@
+        <Property value="TkSceneNodeData.xml">
+        <Property name="Name" value="Wings_X" />
+        <Property name="NameHash" value="2731109437" />
+        <Property name="Type" value="JOINT" />
+        <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+        </Property>
+        <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Name" value="JOINTINDEX" />
+        <Property name="AltID" value="" />
+        <Property name="Value" value="1" />
+        </Property>
+        </Property>
+        <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+        <Property name="Name" value="RWingJNT" />
+        <Property name="NameHash" value="2731109437" />
+        <Property name="Type" value="JOINT" />
+        <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+        </Property>
+        <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Name" value="JOINTINDEX" />
+        <Property name="AltID" value="" />
+        <Property name="Value" value="4" />
+        </Property>
+        </Property>
+        <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+        <Property name="Name" value="RWing" />
+        <Property name="NameHash" value="2731109437" />
+        <Property name="Type" value="REFERENCE" />
+        <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="-0.21" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="-10" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+        </Property>
+        <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Name" value="SCENEGRAPH" />
+        <Property name="AltID" value="" />
+        <Property name="Value" value="MODELS\RGO\WINGS_FX.SCENE.MBIN" />
+        </Property>
+        </Property>
+        <Property name="Children">
+        </Property>
+        </Property>
+        </Property>
+        </Property>
+        <Property value="TkSceneNodeData.xml">
+        <Property name="Name" value="LWingJNT" />
+        <Property name="NameHash" value="2731109437" />
+        <Property name="Type" value="JOINT" />
+        <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+        </Property>
+        <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Name" value="JOINTINDEX" />
+        <Property name="AltID" value="" />
+        <Property name="Value" value="2" />
+        </Property>
+        </Property>
+        <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+        <Property name="Name" value="LWing" />
+        <Property name="NameHash" value="2731109437" />
+        <Property name="Type" value="REFERENCE" />
+        <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0.21" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="10" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+        </Property>
+        <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Name" value="SCENEGRAPH" />
+        <Property name="AltID" value="" />
+        <Property name="Value" value="MODELS\RGO\WINGS_FX.SCENE.MBIN" />
+        </Property>
+        </Property>
+        </Property>
+        </Property>
+        </Property>
+        </Property>
+        </Property>

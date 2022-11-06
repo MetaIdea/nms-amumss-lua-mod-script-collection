@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.0.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_LARGEROCK_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_ALOD0" />
+          <Property name="Name" value="_LargeRock_ALOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_NULLLOD0" />
+                      <Property name="Name" value="_Acc_NULLLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_ELOD0" />
+                      <Property name="Name" value="_Acc_ELOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_CLOD0" />
+                      <Property name="Name" value="_Acc_CLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_BLOD0" />
+          <Property name="Name" value="_LargeRock_BLOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_CLOD0" />
+          <Property name="Name" value="_LargeRock_CLOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_DLOD0" />
+          <Property name="Name" value="_LargeRock_DLOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_ELOD0" />
+          <Property name="Name" value="_LargeRock_ELOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_FLOD0" />
+          <Property name="Name" value="_LargeRock_FLOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_LRAACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_LRAACC_BLOD0" />
+                      <Property name="Name" value="_LRAacc_BLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G1LOD0" />
+          <Property name="Name" value="_LargeRock_G1LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_AC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_AC_NONELOD0" />
+                      <Property name="Name" value="_Ac_noneLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_AC_1LOD0" />
+                      <Property name="Name" value="_Ac_1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G2XRARELOD0" />
+          <Property name="Name" value="_LargeRock_G2xRARELOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G3LOD0" />
+          <Property name="Name" value="_LargeRock_G3LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACX_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACX_1LOD0" />
+                      <Property name="Name" value="_Acx_1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACX_NONELOD0" />
+                      <Property name="Name" value="_Acx_noneLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G4LOD0" />
+          <Property name="Name" value="_LargeRock_G4LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G5LOD0" />
+          <Property name="Name" value="_LargeRock_G5LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G6LOD0" />
+          <Property name="Name" value="_LargeRock_G6LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G7LOD0" />
+          <Property name="Name" value="_LargeRock_G7LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G8LOD0" />
+          <Property name="Name" value="_LargeRock_G8LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G9LOD0" />
+          <Property name="Name" value="_LargeRock_G9LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_G10XRARELOD0" />
+          <Property name="Name" value="_LargeRock_G10xRARELOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LARGEROCK_GLOD0" />
+          <Property name="Name" value="_LargeRock_GLOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>
