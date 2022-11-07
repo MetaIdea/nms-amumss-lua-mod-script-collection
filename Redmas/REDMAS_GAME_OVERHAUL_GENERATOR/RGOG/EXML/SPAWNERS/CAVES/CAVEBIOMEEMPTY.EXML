@@ -162,7 +162,7 @@
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-                 <Property name="Filename" value="MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN" />
           <Property name="ResHandle" value="GcResource.xml">
             <Property name="ResourceID" value="0" />
           </Property>
@@ -214,8 +214,8 @@
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.91" />
-          <Property name="FlatDensity" value="0.37" />
+          <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.7" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="2.8" />
           <Property name="MaxRegionRadius" value="9999" />

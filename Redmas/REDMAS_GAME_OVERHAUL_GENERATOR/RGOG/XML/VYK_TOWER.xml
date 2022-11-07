@@ -4,7 +4,7 @@
     <Property name="Type" value="REFERENCE" />
     <Property name="Transform" value="TkTransformData.xml">
       <Property name="TransX" value="100" />
-      <Property name="TransY" value="-100" />
+      <Property name="TransY" value="-50" />
       <Property name="TransZ" value="0" />
       <Property name="RotX" value="-180" />
       <Property name="RotY" value="0" />
