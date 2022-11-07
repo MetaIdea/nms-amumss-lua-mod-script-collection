@@ -1,0 +1,6 @@
+
+
+COPY /V /B ..\RGOG\ALL_PRESETS\EUPHORIA.lua+..\RGOG\MAIN.lua ..\ENGINE\ModScript\REDMAS_MODS_BUILDER.lua
+cd ..
+cd ENGINE
+start  BUILDMOD_AUTO.bat

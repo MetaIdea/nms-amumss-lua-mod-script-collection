@@ -1,57 +1,6 @@
--- ************************************************************************************************************
--- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
---
--- REDMAS GAME OVERHAUL BUILDER is a .lua script that allows to,
--- using AMUMSS created by Mjstral,
--- generate / update / modify easily, every single mod that i've done
--- + Easy to tweak at your own taste. -- If you use this tool to create your mods, credits will be highly appreciated.
--- It looks like it is lot of of works, but reality is x100000000 times worst.
--- ***********************************************************************************************************
--- -----------------------------------------------------------------------------------------------------------
--- -----------------------------------------------------------------------------------------------------------
--- ------------------You can configure the overhaul from the following VARs-------------------------------- --
---------------------------------------------------------------------------------------------------------------
--- -----------------------------------------------------------------------------------------------------------
--- Main Features enabler -- ----------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
-DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
-PERFORMANCE_MODE = "OFF" --( Putting ON will reduce CPU-DEMANDING FEATURES )
-MULTIPLAYER_MODE = "OFF" --( Put On if you play heavily in Multiplayer )
-----------------------------------------------------------------------------------
--------------------------------------------------------------------------------------
-INIT = "EUPHORIA_PRESET"
--- presets list ( make sure to edit the preset selected by the "INIT" var )
-------------------------------------
--- EUPHORIA_PRESET
--- SCIFI_PRESET
--- SCIFI_FANTASY_PRESET
--------------------------------
--- CUSTOM_PRESET
--- TEST_PRESET
----------------------------------
--- REDMAS_CHALLENGE_MODE_PRESET
--- REDMAS_NEW_GAME_BONUSES_PRESET
--- REDMAS_START_AS_PRESET
--- REDMAS_SPACE_OVERHAUL_PRESET
--- REDMAS_SPACESHIPS_GENERATION_PRESET
--- REDMAS_E3PIC_FANTASY_PRESET
--- REDMAS_EASY_MODE_PRESET
--- REDMAS_SANDWORM_OVERHAUL_PRESET
--- REDMAS_SPAWNER_FOR_CONSTRUCTS_BY_MSSP_PRESET
--- REDMAS_EXTREME_FANTASY_TERRAIN_PRESET
--- REDMAS_VISUAL_OVERHAUL_PRESET
--- REDMAS_SUPER_VEHICLES_PRESET
--- REDMAS_CAMERA_OVERHAUL_PRESET
--- REDMAS_MENU_REVISION_PRESET
--- NEW_GAMEPLAY_MECHANICS_PRESET
--- PLAYER_GAMEPLAY_REVISION_PRESET
--- INSTANT_MINING_PRESET
--- METAL_SPACESHIPS_PRESET
--- DARKSPACE_COLORS_PRESET
--- REDMAS_PROCEDURAL_SPACE_CRASH_MISSION_PRESET
 ----------------------------------------------------------------------------------------
 --
--- FOR FURTHER EDITING JUMP TO **FEATURES** or to **ADVANCED PARAMS** (using Ctrl + F )
+-- FOR FURTHER EDITING JUMP TO **FEATURES** , **CUSTOM IMAGES** or to **ADVANCED PARAMS** (using Ctrl + F )
 --
 ------------------------------------------------------------------------------------------
 
@@ -1474,14 +1423,13 @@ REDMAS_START_AS_PRESET ={
     },
     ["SKINS"] =
     {
-        ["CHARACTERS_SKINS_FEATURE"] = "ON",
-        -- (E3-DAMAGED or E3)
+        ["CHARACTERS_SKINS_FEATURE"] = "ON",        
 		["DRONE_PET_SKIN_FEATURE"] = "ON",
-        ["DRONE_PET_SKIN"] = "E3-DAMAGED",
+        ["DRONE_PET_SKIN"] = "E3-DAMAGED",-- (E3-DAMAGED or E3)
         -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
         -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
         -- VY-KEEN    /or/   ANOMALY      /or/      GEK
-        ["CHAR_PRESETS_SKINS"] = "THE-WATCHER"
+        ["CHAR_PRESETS_SKINS"] = "GIRLY"
     },
     ["NEWGAME_BONUS_FEATURES"] ={
         ["NEWGAME_BONUSES"] = "OFF",
@@ -11720,7 +11668,7 @@ RESIZABLESENTINELMECH = [[
 
 
 --
----------------------- CUSTOM FILES ---------------------------------------------------------------------------------------------------------
+---------------------- **CUSTOM IMAGES** ---------------------------------------------------------------------------------------------------------
 -- MENUS ----
 if MENU_SPLASH_SCREEN == "E3-RUINS" then
 	MENU_SPLASH_CONTENT =
@@ -11921,7 +11869,7 @@ addFeature
 						{"BackMaxDistance", "5.4"},
 					}
 				},
-				
+
 				{
 					["SPECIAL_KEY_WORDS"] = {"Name","CHARSPACE",},
 					["INTEGER_TO_FLOAT"] = "FORCE",
@@ -17274,7 +17222,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 			},
 			{
 				["MBIN_FILE_SOURCE"]  = [[MODELS\RGO\KANEDA_COCKPIT.SCENE.MBIN]],
-				["REGEXBEFORE"] =
+				["REGEXAFTER"] =
 				{
 					{[[MODELS\\COMMON\\VEHICLES\\BIKE\\BIKE\\ENTITIES\\BIKE.ENTITY.MBIN]],
 					[[MODELS\\COMMON\\VEHICLES\\WHEELEDBIKE\\WHEELEDBIKE\\ENTITIES\\WHEELEDBIKE.ENTITY.MBIN]]},
@@ -34709,7 +34657,7 @@ end
 		[[INDUSTRIAL\LARGEGANTRYCAPB.SCENE.EXML]],
 		[[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\GANTRY\LARGEGANTRYCAPB.SCENE.EXML]]
 	)
-	
+
 	addFeature
 	(
 		ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS,

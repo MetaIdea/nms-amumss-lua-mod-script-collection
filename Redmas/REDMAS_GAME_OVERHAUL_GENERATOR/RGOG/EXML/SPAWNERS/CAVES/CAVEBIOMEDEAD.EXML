@@ -34,9 +34,9 @@
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
         <Property name="MinHeight" value="-128" />
-        <Property name="MaxHeight" value="102" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
+        <Property name="MinAngle" value="145" />
         <Property name="MaxAngle" value="280" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
@@ -108,10 +108,10 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="5" />
+        <Property name="MinAngle" value="145" />
         <Property name="MaxAngle" value="280" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
@@ -183,10 +183,10 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="45" />
+        <Property name="MinAngle" value="145" />
         <Property name="MaxAngle" value="280" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
@@ -258,10 +258,10 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="45" />
+        <Property name="MinAngle" value="145" />
         <Property name="MaxAngle" value="280" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
@@ -333,8 +333,8 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
         <Property name="MaxAngle" value="55" />
@@ -408,8 +408,8 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
         <Property name="MaxAngle" value="65" />
@@ -483,8 +483,8 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
         <Property name="MaxAngle" value="55" />
@@ -560,8 +560,8 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
         <Property name="MaxAngle" value="10" />
@@ -636,11 +636,11 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="111" />
+        <Property name="MinAngle" value="10" />
+        <Property name="MaxAngle" value="11" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -711,11 +711,11 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="115" />
+        <Property name="MinAngle" value="10" />
+        <Property name="MaxAngle" value="15" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -786,11 +786,11 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="115" />
+        <Property name="MaxAngle" value="5" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -861,11 +861,11 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="106" />
+        <Property name="MinAngle" value="5" />
+        <Property name="MaxAngle" value="6" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -936,11 +936,11 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="285" />
+        <Property name="MinAngle" value="80" />
+        <Property name="MaxAngle" value="85" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -1011,11 +1011,11 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-18" />
-        <Property name="MaxHeight" value="128" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="1028" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="275" />
+        <Property name="MinAngle" value="70" />
+        <Property name="MaxAngle" value="75" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
