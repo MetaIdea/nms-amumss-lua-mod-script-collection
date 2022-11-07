@@ -10931,8 +10931,8 @@ local generateCaveBiomes = function
         <Property name="PlacementPriority" value="Low" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
         <Property name="OverlapStyle" value="All" />
-        <Property name="MinHeight" value="-1000" />
-        <Property name="MaxHeight" value="12008" />
+        <Property name="MinHeight" value="-10" />
+        <Property name="MaxHeight" value="18" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
         <Property name="MaxAngle" value="255" />
@@ -10961,8 +10961,8 @@ local generateCaveBiomes = function
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.7" />
-          <Property name="FlatDensity" value="0.7" />
-          <Property name="SlopeDensity" value="0.7" />
+          <Property name="FlatDensity" value="0.37" />
+          <Property name="SlopeDensity" value="0.37" />
           <Property name="SlopeMultiplier" value="2.8" />
           <Property name="MaxRegionRadius" value="7" />
           <Property name="MaxImposterRadius" value="10" />
@@ -32865,8 +32865,8 @@ end
 				}
 
 			},
-		},
-		PERFORMANCE_MODE
+		}
+		
 	)
 
 	addFeature
