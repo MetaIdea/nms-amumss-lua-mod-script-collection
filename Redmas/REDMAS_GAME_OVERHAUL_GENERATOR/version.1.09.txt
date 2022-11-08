@@ -1,0 +1,48 @@
+DOCUMENTATION is coming later
+--
+if you have any question, or issue, ask me on discord,
+https://discord.gg/UPumAssAph
+it will also help me to establish the documentation.
+--
+
+How to update ?
+
+version 1.08 to version 1.09
+--> replace everything.
+
+version 1.09 +
+--> replace everything, this will not erase your changes ( but features will be updated, and your "features.lua" will be back up)
+
+
+Advices:
+
+- You will need RGOG ( REDMAS GAME OVERHAUL GENERATOR ) to EDIT, MERGE, or UPDATE any "___Redmas_" MODS 
+( use the lua coming from RGOG , not the one in the standalone mods )
+
+-You should always have 1 "REDMAS" pak in the mods folder.
+
+- Constructs : if you dont have have downloaded Constructs ,
+https://www.nexusmods.com/nomanssky/mods/323 ( only the "core" .pak is needed ),
+make sure to turn ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF",
+
+- If you want to mix several of my mods, use the  "CUSTOM MOD"
+
+- If you want to merge my mods with another mod(s), place the other mod(s) 
+inside "_Engine\AMUMSS\ModScript" before running the "build mod"
+
+- tips : 
+in order to gain time ,
+use AMUMSS in "Lean" mode for generating the full overhaul ( estimated time 10 minutes in "Lean" mode) 
+
+
+Install :
+-- do it once--
+- EDIT "STEP_1_ENTER_NMS_FOLDER_HERE_BEFORE_INSTALL" with your own NMS folder location.
+- RUN "STEP_2_INSTALL_Redmas_Game_Overhaul_Generator.bat"
+- Go to "Mods Generation"
+----------------
+
+Credits :
+This tool was only possible thanks to "AMUMSS" TOOL
+created by Mjstral,
+developed/maintained by Wbertro'
