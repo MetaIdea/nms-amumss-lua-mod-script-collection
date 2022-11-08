@@ -1,0 +1,3 @@
+cd ..\..\_ENGINE\RGOG\
+cd LITE
+start  lite.exe ..\USERPARAMS\REDMAS_CAMERA_OVERHAUL_PRESET.lua

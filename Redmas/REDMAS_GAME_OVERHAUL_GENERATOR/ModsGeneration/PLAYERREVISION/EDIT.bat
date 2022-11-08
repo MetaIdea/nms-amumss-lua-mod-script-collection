@@ -1,0 +1,3 @@
+cd ..\..\_ENGINE\RGOG\
+cd LITE
+start  lite.exe ..\USERPARAMS\PLAYER_GAMEPLAY_REVISION_PRESET.lua
