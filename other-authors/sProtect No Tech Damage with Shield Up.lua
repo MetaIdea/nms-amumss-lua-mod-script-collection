@@ -2,8 +2,8 @@ Author = "Syzzle"
 ModName = "sProtect"
 ModNameSub = "No Tech Damage with Shield Up"
 BaseDescription = "Makes so your tech won't be breaking until your shield is down."
-GameVersion = "4.05"
-ModVersion = "v1"
+GameVersion = "4.06"
+ModVersion = "v1.1"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {

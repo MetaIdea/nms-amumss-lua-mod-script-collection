@@ -1,7 +1,7 @@
 local lyr = {tweakStates = {}, tweakTables = {}, ignore = "IGNORE"}
-local batchPakName = "lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Vehicle Tweaks 1.2]]
-local gameVersion = "4.0+"
+local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
+local modDescription = [[Lyravega's Vehicle Tweaks 1.5]]
+local gameVersion = "4.06"
 
 --[[
 	Below in the 'lyr.tweakStates' table are modification names and what they do is commented next to them

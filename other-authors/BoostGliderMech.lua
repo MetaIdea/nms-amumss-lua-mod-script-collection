@@ -27,7 +27,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MechJetpackTurnSpeed",						"1"},		-- WayPoint "3" Good Mid air flight adjust path Greater is slower
 								{"MechPlayerGroundTurnSpeed",					"0.2"},		-- WayPoint "0.5" Good
 								{"MechCoGAdjustTimeAir",						"0.07"},	-- WayPoint "0.7" Testing
-								{"MechJetpackMaxSpeed",							"25"}, 		-- WayPoint "20" Good
+								{"MechJetpackMaxSpeed",							"99"}, 		-- WayPoint "20" Good
 								{"MechJetpackMaxUpSpeed",						"25"},		-- WayPoint "20" Good
 								{"MechJetpackUpForce",							"110"}, 	-- WayPoint "100" Good
 								{"MechJetpackFallForce",						"-20"},		-- WayPoint "80" Good

@@ -346,7 +346,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["Pet_Ride_Code"]   = "Corvus",
-["NMS_VERSION"]     = "4.05",
+["NMS_VERSION"]     = "4.06",
 ["DESCRIPTION"]     = "Enables more creatures to become companion pets",
 ["MODIFICATIONS"]   = 
 	{

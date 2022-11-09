@@ -582,41 +582,41 @@ OVERRIDE2 = {
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_______KibblesNBytes.pak", 
-["MOD_AUTHOR"]				= "InstaKibs, WinderTP, Babscoole",
-["NMS_VERSION"]				= "4.00",
-["MODIFICATIONS"] 			= 
+["MOD_FILENAME"]  = "_______KibblesNBytes.pak", 
+["MOD_AUTHOR"]    = "InstaKibs, WinderTP, Babscoole",
+["NMS_VERSION"]   = "4.06",
+["MODIFICATIONS"] = 
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
+			["MBIN_CHANGE_TABLE"] = 
 			{ 
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = 
 					{				
 						{
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"IsPlaceable", "True"},
-								{"BuildableOnPlanetBase", "True"},
-								{"BuildableOnSpaceBase", "True"},
-								{"BuildableOnFreighter", "True"},
-								{"BuildableUnderwater", "True"},
-								{"BuildableAboveWater", "True"},
-								{"PlanetLimit", 0},
-								{"RegionLimit", 0},
-								{"PlanetBaseLimit", 0},
-								{"FreighterBaseLimit", 0},
+								{"IsPlaceable",               "True"},
+								{"BuildableOnPlanetBase",     "True"},
+								{"BuildableOnSpaceBase",      "True"},
+								{"BuildableOnFreighter",      "True"},
+								{"BuildableUnderwater",       "True"},
+								{"BuildableAboveWater",       "True"},
+								{"PlanetLimit",               0},
+								{"RegionLimit",               0},
+								{"PlanetBaseLimit",           0},
+								{"FreighterBaseLimit",        0},
 								{"CheckPlaceholderCollision", "False"},
-								{"CanRotate3D", "True"},
-								{"CanScale", "True"},
-								{"CanChangeColour", "True"},
-								{"CanChangeMaterial", "True"},
-								{"DependsOnEnvironment", "None"},
+								{"CanRotate3D",               "True"},
+								{"CanScale",                  "True"},
+								{"CanChangeColour",           "True"},
+								{"CanChangeMaterial",         "True"},
+								{"DependsOnEnvironment",      "None"},
 								{"RemovesAttachedDecoration", "False"},
-								{"GhostsCountOverride", "1"},
-								{"ShowGhosts", "True"},
+								{"GhostsCountOverride",       "1"},
+								{"ShowGhosts",                "True"},
 							}
 						}
 					}

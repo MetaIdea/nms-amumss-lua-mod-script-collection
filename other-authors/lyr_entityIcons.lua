@@ -1,6 +1,6 @@
-local batchPakName = "lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Specific Icon Tweaks 1.2]]
-local gameVersion = "4.0+"
+local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
+local modDescription = [[Lyravega's Specific Icon Tweaks 1.5]]
+local gameVersion = "4.06"
 
 --[[
 	Below in the 'enabledOverrides' table are modification names and what they do is commented next to them. 

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Panels 3.3 - Essential.pak", 
+["MOD_FILENAME"] 			= "Small Panels 3.4 - Standard.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.05",
+["NMS_VERSION"]				= "4.06",
 ["MOD_DESCRIPTION"]			= "This mod reduces the size of most game panels",
 ["MODIFICATIONS"] 			= 
 	{
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "UI\POPUP_BUILDMENUITEM.MBIN",  --new
+					["MBIN_FILE_SOURCE"] 	= "UI\POPUP_BUILDMENUITEM.MBIN",  
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{  --main window and main description width  
@@ -352,15 +352,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PositionX",	"0"},		-- Original "20"   
 							}
 						},
-						{  
-							["SPECIAL_KEY_WORDS"] = {"ID", "BUTTON1",},
-							["REMOVE"] 	= "SECTION",
-						},	
-						{  
-							["SPECIAL_KEY_WORDS"] = {"ID", "BUTTON3",},
-							["REMOVE"] 	= "SECTION",
-						},	
-
 					}
 				},
 				--COMPONENTS
@@ -520,14 +511,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= "UI\COMPONENTS\POPUPTITLEWITHSUBTITLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
-						{
+						{ -- ITEM TOP BAR WIDTH
 							["SPECIAL_KEY_WORDS"] = {"Width",	"650"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Width",	"520"},		-- Original "650"					
 							}
 						},
-						{
+						{  -- ITEM AMOUNT at the right of TOP BAR
 							["SPECIAL_KEY_WORDS"] = {"PositionX",	"642"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
