@@ -3862,12 +3862,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["NMS_VERSION"]     = "4.06",
 ["MODIFICATIONS"]   =
-    {
-        {
-            ["MBIN_CHANGE_TABLE"] =
-            {
-                {
-					["MBIN_FILE_SOURCE"] = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
+	{
+		{
+			["MBIN_CHANGE_TABLE"] =
+			{
+				{
+					["MBIN_FILE_SOURCE"]  = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
@@ -3875,9 +3875,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"LightShaftScattering", "0.5"},
-								{"LightShaftBottom",     "0.025"},
-								{"LightShaftTop",        "0.32"},
+								{"LightShaftScattering", "0.30"},
+								{"LightShaftBottom",     "0.05"},
+								{"LightShaftTop",        "0.40"},
 							}
 						},
 						{
@@ -3885,10 +3885,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"R",	"0.401"},
-								{"G",	"0.395"},
-								{"B",	"0.385"},
-								{"A",	"0.67"},
+								{"R",	"0.281"},
+								{"G",	"0.276"},
+								{"B",	"0.266"},
 							}
 						},
 						{
@@ -3896,20 +3895,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"R",	"0.301"},
-								{"G",	"0.291"},
-								{"B",	"0.275"},
-								{"A",	"0.33"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"StormLightShaftProperties"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"LightShaftStrength", "0.16"},
-								{"LightShaftBottom",   "0.025"},
-								{"LightShaftTop",      "0.32"},
+								{"R",	"0.251"},
+								{"G",	"0.246"},
+								{"B",	"0.236"},
 							}
 						},
 						{
@@ -3918,9 +3906,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"R",	"0.401"},
-								{"G",	"0.395"},
-								{"B",	"0.385"},
-								{"A",	"0.67"},
+								{"G",	"0.391"},
+								{"B",	"0.375"},
+								{"A",	"0.25"},
 							}
 						},
 						{
@@ -3928,314 +3916,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"R",	"0.301"},
-								{"G",	"0.291"},
-								{"B",	"0.275"},
-								{"A",	"0.33"},
-							}
-						},
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ShadowMapSize",       "4096"},
-								{"GrassSaturationMin",  "0.7"},
-								{"GrassSaturationMax",  "0.6"},
-								{"GrassValueMax",       "0.66"},
-								{"MaxSpaceFogStrength",	"0.72"},
-								{"ReflectionStrength",  "0.33"},
-								{"AlphaCutoutMax",      "0.68"},
+								{"R",	"0.251"},
+								{"G",	"0.246"},
+								{"B",	"0.236"},
 							}
 						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCSKYGLOBALS.GLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"]  = "GCSKYGLOBALS.GLOBALS.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"RainbowStormAlpha",          "0.25"},
-								{"SafeSkyMaxIndex",            "2303"},
-								{"FrozenSkyMaxIndex",          "2303"},
-								{"SunClampAngle",              "55"},
-								{"ToFootFadeTime",             "3"},
-								{"ToFlightFadeTime",           "3"},
-								{"InFlightStormStrength",      "0.5"},
-								{"CloudCoverSmoothTime",       "16"},
-								{"CloudRatioSmoothTime",       "8"},
-								{"MinFogValue",                "0.54"},
-								{"MaxFogValue",                "0.72"},
+								{"SafeSkyMaxIndex",            "2173"},
+								{"SunClampAngle",              "85"},
 								{"NoAtmosphereFogStrength",    "0.02"},
 								{"NoAtmosphereFogMax",         "0"},
 								{"NoAtmosphereColourStrength", "0"},
 								{"NoAtmosphereColourMax",      "0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FogStrength",              "0.085"},
-								{"FogMax",                   "0.725"},
-								{"FogColourStrength",        "7"},
-								{"FogColourMax",             "0.667"},
-								{"HeightFogStrength",        "0.09"},
-								{"HeightFogFadeOutStrength", "0.125"},
-								{"HeightFogMax",             "0.7"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetExtremeFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FogStrength",       "0.55"},
-								{"FogMax",            "0.675"},
-								{"FogColourStrength", "1"},
-								{"FogColourMax",      "0.1"},
-								{"HeightFogMax",      "0.72"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetStormFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FogMax", "0.695"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFlightFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FogStrength",  "0.06"},
-								{"FogMax",       "0.725"},
-								{"HeightFogMax", "0.74"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FogMax",                   "0.69"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "0.33"},
-								{"HeightFogMax",             "0.69"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetExtremeFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FogMax", "0.69"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetStormFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FogMax", "0.63"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetFlightFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FogMax", "0.68"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "AbandonedFreighterFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FogStrength", "0.0275"},
-								{"FogMax",      "0.72"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.36"},
-								{"G",	"0.36"},
-								{"B",	"0.36"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.36"},
-								{"G",	"0.36"},
-								{"B",	"0.36"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "SkySolarColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.36"},
-								{"G",	"0.36"},
-								{"B",	"0.36"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.36"},
-								{"G",	"0.36"},
-								{"B",	"0.36"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "SunColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.36"},
-								{"G",	"0.36"},
-								{"B",	"0.36"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "FogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.36"},
-								{"G",	"0.36"},
-								{"B",	"0.36"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "HeightFogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.36"},
-								{"G",	"0.36"},
-								{"B",	"0.36"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.36"},
-								{"G",	"0.36"},
-								{"B",	"0.36"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "CloudColour1"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.36"},
-								{"G",	"0.36"},
-								{"B",	"0.36"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.075"},
-								{"G",	"0.075"},
-								{"B",	"0.075"},
-								{"A",	"1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "HeavyAirColour1"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.25"},
-								{"G",	"0.25"},
-								{"B",	"0.25"},
-								{"A",	"1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "HeavyAirColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.25"},
-								{"G",	"0.25"},
-								{"B",	"0.25"},
-								{"A",	"1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "NightHorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0"},
-								{"G",	"0"},
-								{"B",	"0"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "NightSkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0"},
-								{"G",	"0"},
-								{"B",	"0"},
-								{"A",	"0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "NightFogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.12"},
-								{"G",	"0.12"},
-								{"B",	"0.12"},
-								{"A",	"0.12"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"NightSkyColours", "NightHeightFogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.12"},
-								{"G",	"0.12"},
-								{"B",	"0.12"},
-								{"A",	"0.12"},
 							}
 						},
 					}
