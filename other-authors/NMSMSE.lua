@@ -1,22 +1,7 @@
 Languages =
 {
     ["English"]               = "English",
-    ["French"]                = "French",
-    ["Italian"]               = "Italian",
     ["German"]                = "German",
-    ["Spanish"]               = "Spanish",
-    ["Russian"]               = "Russian",
-    ["Polish"]                = "Polish",
-    ["Dutch"]                 = "Dutch",
-    ["Portuguese"]            = "Portuguese",
-    ["LatinAmeraicanSpanish"] = "LatinAmericanSpanish", --this is not a typo
-    ["BrazilianPortuguese"]   = "BrazilianPortuguese",
-    ["SimplifiedChinese"]     = "SimplifiedChinese",
-    ["TraditionalChinese"]    = "TraditionalChinese",
-    ["TencentChinese"]        = "TencentChinese",
-    ["Korean"]                = "Korean",
-    ["Japanese"]              = "Japanese",
-    ["USEnglish"]             = "USEnglish"
 }
 
 SubstanceOrProduct = { ["Substance"] = "Substance", ["Product"] =  "Product"}
@@ -360,17 +345,17 @@ AddNewSnapPTSpignFace =
 -------------------------------		CODE LOGIC STARTS HERE, NO TOUCHY UNLESS YOU WANNA BREAKY		------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ModName 						= "NMS Moar Stellar Extractors "
-Author								= "EchoTree "
+ModName 						= "Moar Stellar Extractors "
+Author								= "EchoTree"
 LuaAuthor							= "EchoTree & Jackty89"
 ModDescription				=	"Adds 4 new Stellar Extractor rooms to the game. Adds 20 New Files, Modifies METADATA/REALITY DEFAULTSAVEDATA.MBIN, DEFAULTSAVEDATACREATIVE.MBIN, /TABLES BASEBUILDINGOBJECTSTABLE.MBIN, BASEBUILDINGPARTSTABLE.MBIN, BASEBUILDINGPARTSNAVDATATABLE.MBIN, NMS_REALITY_GCPRODUCTTABLE.MBIN, and all of the PLACEMENTDATA.ENTITY.MBINS for the Industrial Rooms."
-GameVersion					=	"v4.05.0"
+GameVersion					=	"v4.06.0"
 Build									= ".1"
 CustomLanguageTag		= "NMSMSE"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"] 			= Author..ModName..GameVersion..Build..".pak",
+	["MOD_FILENAME"] 			= Author.."'s "..ModName..GameVersion..Build..".pak",
 	["MOD_DESCRIPTION"]      = ModDescription.."Compatible with NMS"..GameVersion,
 	["MOD_AUTHOR"]				= Author,
 	["LUA_AUTHOR"]					= LuaAuthor,
@@ -1130,9 +1115,9 @@ function CreateProductRequirement(IngredientID, IngredientType, IngredientAmount
 end
 
 local AddToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][29]["EXML_CHANGE_TABLE"]
+local PTETable = {}
 for i = 1, #AddNewExtrRooms do
     local Requirements        = {}
-    local ProductRequirements = ""
     local ProductID           = string.upper(AddNewExtrRooms[i]["ProductID"])
     local ProductName         = "BLD_"..string.upper(ProductID).."_NAME"
     local ProductNameLC       = "BLD_"..string.upper(ProductID).."_NAME_L"
@@ -1151,15 +1136,16 @@ for i = 1, #AddNewExtrRooms do
         RequirementAmount       = RequirementsList[k][2]
         table.insert(Requirements, CreateProductRequirement(RequirementID, RequirementType, RequirementAmount))
     end
-    ProductRequirements = table.concat(Requirements)
+    
+		table.insert(PTETable, CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, table.concat(Requirements)))
 
-    AddToProductTable[#AddToProductTable + 1]  =
-    {
-        ["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",},
-		["ADD_OPTION"] = "ADDafterSECTION",
-        ["ADD"] = CreateNewProduct(ProductID, ProductName, ProductNameLC, ProductSub, ProductDesc, ProductRequirements)
-    }
 end
+AddToProductTable[#AddToProductTable + 1]  =
+{
+	["SPECIAL_KEY_WORDS"] = {"ID", "FRE_ROOM_EXTR",},
+	["ADD_OPTION"] = "ADDafterSECTION",
+	["ADD"] = table.concat(PTETable)
+}
 
 function CreateNewBBObjects(NewBBObjectID, NewBBObjectFileName)
 	return [[
@@ -1283,16 +1269,18 @@ function CreateNewBBObjects(NewBBObjectID, NewBBObjectFileName)
 end
 
 local AddToBBObjectsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][26]["EXML_CHANGE_TABLE"]
+local BBOTable = {}
 for i = 1, #AddNewBBObjects do
     local BBObjectID         				= string.upper(AddNewBBObjects[i]["BBObjectID"])
     local BBObjectFileName          = string.upper(AddNewBBObjects[i]["BBObjectFileName"])
-
-    AddToBBObjectsTable[#AddToBBObjectsTable + 1]  =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Objects"},
-        ["ADD"] = CreateNewBBObjects(BBObjectID, BBObjectFileName)
-    }
+	
+	table.insert(BBOTable, CreateNewBBObjects(BBObjectID, BBObjectFileName))
 end
+AddToBBObjectsTable[#AddToBBObjectsTable + 1]  =
+{
+	["PRECEDING_KEY_WORDS"] = {"Objects"},
+	["ADD"] = table.concat(BBOTable)
+}
 
 function CreateNewBBParts(NewFloor0ID, NewFloor0Path)
     return [[
@@ -1322,16 +1310,18 @@ function CreateNewBBParts(NewFloor0ID, NewFloor0Path)
 end
 
 local AddToBBPartsTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][27]["EXML_CHANGE_TABLE"]
+local BBPartsTable = {}
 for i = 1, #AddNewBBParts do
     local Floor0ID         				= string.upper(AddNewBBParts[i]["Floor0ID"])
 	local Floor0Path					= string.upper(AddNewBBParts[i]["Floor0Path"])
-
-    AddToBBPartsTable[#AddToBBPartsTable + 1]  =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Parts"},
-        ["ADD"] = CreateNewBBParts(Floor0ID, Floor0Path)
-    }
+	
+	table.insert(BBPartsTable, CreateNewBBParts(Floor0ID, Floor0Path))
 end
+AddToBBPartsTable[#AddToBBPartsTable + 1]  =
+{
+	["PRECEDING_KEY_WORDS"] = {"Parts"},
+	["ADD"] = table.concat(BBPartsTable)
+}
 
 function CreateNewBBPartsNavData(NewBBPartsNavID)
 	return 
@@ -1619,13 +1609,16 @@ function CreateNewBBPartsNavData(NewBBPartsNavID)
 end
 
 local AddToBBPartsNavDataTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][28]["EXML_CHANGE_TABLE"]
+local BBPartsNavTable = {}
+
 for i = 1, #AddNewBBPartsNavData do
     local BBPartsNavID   				= string.upper(AddNewBBPartsNavData[i]["BBPartsNavID"])
-
+	
+	table.insert(BBPartsNavTable, CreateNewBBPartsNavData(BBPartsNavID))
     AddToBBPartsNavDataTable[#AddToBBPartsNavDataTable + 1]  =
     {
         ["PRECEDING_KEY_WORDS"] = {"Parts"},
-        ["ADD"] = CreateNewBBPartsNavData(BBPartsNavID)
+        ["ADD"] = table.concat(BBPartsNavTable)
     }
 end
 
@@ -1664,111 +1657,6 @@ function CreateNewPDEntity(NewEntityId, NewSnapPt)
 	]]
 end
 
-local AddToPDEFront = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewPDEFront do
-    local EntityId           = (AddNewPDEFront[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEFront[i]["SnapPt"])
-    AddToPDEFront[#AddToPDEFront + 1]  =
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{5,7,11,20,23,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewPDEntity(EntityId, SnapPt)
-	}
-end
-
-local AddToPDEBack = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewPDEBack do
-    local EntityId           = (AddNewPDEBack[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEBack[i]["SnapPt"])
-    AddToPDEBack[#AddToPDEBack + 1]  =
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{1,3,9,14,17,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewPDEntity(EntityId, SnapPt)
-    }
-end
-
-local AddToPDELeft = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewPDELeft do
-    local EntityId           = (AddNewPDELeft[i]["EntityId"])
-	local SnapPt			  = (AddNewPDELeft[i]["SnapPt"])
-    AddToPDELeft[#AddToPDELeft + 1]  =
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{4,6,12,18,21,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewPDEntity(EntityId, SnapPt)
-    }
-end
-
-local AddToPDERight = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewPDERight do
-    local EntityId           = (AddNewPDERight[i]["EntityId"])
-	local SnapPt			  = (AddNewPDERight[i]["SnapPt"])
-    AddToPDERight[#AddToPDERight + 1]  =
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{2,8,10,15,24,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewPDEntity(EntityId, SnapPt)
-    }
-end
-
-local AddToPDEFR = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewPDEFR do
-    local EntityId           = (AddNewPDEFR[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEFR[i]["SnapPt"])
-    AddToPDEFR[#AddToPDEFR + 1]  =
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{22,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewPDEntity(EntityId, SnapPt)
-    }
-end
-
-local AddToPDEFL = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewPDEFL do
-    local EntityId           = (AddNewPDEFL[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEFL[i]["SnapPt"])
-    AddToPDEFL[#AddToPDEFL + 1]  =
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{19,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewPDEntity(EntityId, SnapPt)
-    }
-end
-
-local AddToPDEnBR = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewPDEBR do
-    local EntityId           = (AddNewPDEBR[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEBR[i]["SnapPt"])
-    AddToPDEnBR[#AddToPDEnBR + 1]  =
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{13,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewPDEntity(EntityId, SnapPt)
-    }
-end
-
-local AddToPDEBL = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
-for i = 1, #AddNewPDEBL do
-    local EntityId           = (AddNewPDEBL[i]["EntityId"])
-	local SnapPt			  = (AddNewPDEBL[i]["SnapPt"])
-    AddToPDEBL[#AddToPDEBL + 1]  =
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{16,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewPDEntity(EntityId, SnapPt)
-    }
-end
-
-
 function CreateNewFaceSnaps(NewEntityID, NewSnapPt)
 	return
 	[[
@@ -1783,34 +1671,168 @@ function CreateNewFaceSnaps(NewEntityID, NewSnapPt)
 	]]
 end
 
+
+local AddToPDEFront = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEBack = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDELeft = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDERight = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEFR = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEFL = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEnBR = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
+local AddToPDEBL = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][31]["EXML_CHANGE_TABLE"]
 local AddToFaceSnaps = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][32]["EXML_CHANGE_TABLE"]
+local PDEFrontTable = {}
+local PDEBackTable = {}
+local PDELeftTable = {}
+local PDERightTable = {}
+local PDEFRTable = {}
+local PDEFLTable = {}
+local PDEBRTable = {}
+local PDEBLTable = {}
+local SPtFaceTable = {}
+local SPtSpignFaceTable = {}
+
+for i = 1, #AddNewPDEFront do
+    local EntityId           = (AddNewPDEFront[i]["EntityId"])
+	local SnapPt			  = (AddNewPDEFront[i]["SnapPt"])
+	
+	table.insert(PDEFrontTable, CreateNewPDEntity(EntityId, SnapPt))
+end
+
+for i = 1, #AddNewPDEBack do
+    local EntityId           = (AddNewPDEBack[i]["EntityId"])
+	local SnapPt			  = (AddNewPDEBack[i]["SnapPt"])
+	
+	table.insert(PDEBackTable, CreateNewPDEntity(EntityId, SnapPt))
+end
+
+for i = 1, #AddNewPDELeft do
+    local EntityId           = (AddNewPDELeft[i]["EntityId"])
+	local SnapPt			  = (AddNewPDELeft[i]["SnapPt"])
+	
+	table.insert(PDELeftTable, CreateNewPDEntity(EntityId, SnapPt))
+end
+
+for i = 1, #AddNewPDERight do
+    local EntityId           = (AddNewPDERight[i]["EntityId"])
+	local SnapPt			  = (AddNewPDERight[i]["SnapPt"])
+	
+	table.insert(PDERightTable, CreateNewPDEntity(EntityId, SnapPt))
+end
+
+for i = 1, #AddNewPDEFR do
+    local EntityId           = (AddNewPDEFR[i]["EntityId"])
+	local SnapPt			  = (AddNewPDEFR[i]["SnapPt"])
+	
+	table.insert(PDEFRTable, CreateNewPDEntity(EntityId, SnapPt))
+end
+
+for i = 1, #AddNewPDEFL do
+    local EntityId           = (AddNewPDEFL[i]["EntityId"])
+	local SnapPt			  = (AddNewPDEFL[i]["SnapPt"])
+	
+	table.insert(PDEFLTable, CreateNewPDEntity(EntityId, SnapPt))
+end
+
+for i = 1, #AddNewPDEBR do
+    local EntityId           = (AddNewPDEBR[i]["EntityId"])
+	local SnapPt			  = (AddNewPDEBR[i]["SnapPt"])
+	
+	table.insert(PDEBRTable, CreateNewPDEntity(EntityId, SnapPt))
+end
+
+for i = 1, #AddNewPDEBL do
+    local EntityId           = (AddNewPDEBL[i]["EntityId"])
+	local SnapPt			  = (AddNewPDEBL[i]["SnapPt"])
+	
+	table.insert(PDEBLTable, CreateNewPDEntity(EntityId, SnapPt))
+end
+
 for i = 1, #AddNewSnapPTFace do
     local EntityId           = (AddNewSnapPTFace[i]["EntityId"])
 	local SnapPt			  = (AddNewSnapPTFace[i]["SnapPt"])
 	
-    AddToFaceSnaps[#AddToFaceSnaps + 1]  =
-	
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{1, 2,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewFaceSnaps(EntityId, SnapPt)
-    }	
+	table.insert(SPtFaceTable, CreateNewFaceSnaps(EntityId, SnapPt))
 end
 
 for j = 1, #AddNewSnapPTSpignFace do
     local EntityId           = (AddNewSnapPTSpignFace[j]["EntityId"])
 	local SnapPt			  = (AddNewSnapPTSpignFace[j]["SnapPt"])
 	
-    AddToFaceSnaps[#AddToFaceSnaps + 1]  =
-	
-    {
-		["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
-		["SECTION_ACTIVE"] 						= 		{1, 2,},
-		["ADD_OPTION"]								=		"ADDafterSECTION",
-		["ADD"]												= 		CreateNewFaceSnaps(EntityId, SnapPt)
-    }	
+	table.insert(SPtSpignFaceTable, CreateNewFaceSnaps(EntityId, SnapPt))	
 end
+
+
+AddToPDEFront[#AddToPDEFront + 1] =
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{5,7,11,20,23,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(PDEFrontTable)
+}
+AddToPDEBack[#AddToPDEBack + 1]  =
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{1,3,9,14,17,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(PDEBackTable)
+}
+AddToPDELeft[#AddToPDELeft + 1]  =
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{4,6,12,18,21,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(PDELeftTable)
+}
+AddToPDERight[#AddToPDERight + 1]  =
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{2,8,10,15,24,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(PDERightTable)
+}
+AddToPDEFR[#AddToPDEFR + 1]  =
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{22,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(PDEFRTable)
+}
+AddToPDEFL[#AddToPDEFL + 1]  =
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{19,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(PDEFLTable)
+}
+AddToPDEnBR[#AddToPDEnBR + 1]  =
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{13,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(PDEBRTable)
+}
+AddToPDEBL[#AddToPDEBL + 1]  =
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{16,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(PDEBLTable)
+}
+AddToFaceSnaps[#AddToFaceSnaps + 1]  =	
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{1, 2,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(SPtFaceTable)
+}
+AddToFaceSnaps[#AddToFaceSnaps + 1]  =	
+{
+	["SPECIAL_KEY_WORDS"] 				=		{"ObjectId", "FRE_ROOM_EXTR",},
+	["SECTION_ACTIVE"] 						= 		{1, 2,},
+	["ADD_OPTION"]								=		"ADDafterSECTION",
+	["ADD"]												= 		table.concat(SPtSpignFaceTable)
+}
 
 function NewLanguagueFile(DescriptionEntries)
     return
@@ -1892,7 +1914,7 @@ function FillCustomlangFile(Data)
 end
 
 local AddCustomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
-for Key , Language in pairs(Languages) do
+for Language in pairs(Languages) do
 
     local LanguageData = { ["ProductID"] = "" , ["Languages"] = {}}
     for i = 1, #AddNewExtrRooms do
@@ -1905,7 +1927,7 @@ for Key , Language in pairs(Languages) do
 
     AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
     {
-        ["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Key..".EXML",
+        ["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Language..".EXML",
         ["FILE_CONTENT"] 		=	FillCustomlangFile(LanguageData)
     }
 

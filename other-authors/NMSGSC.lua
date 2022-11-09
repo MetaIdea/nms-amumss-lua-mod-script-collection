@@ -1,22 +1,6 @@
 Languages =
 {
     ["English"]               = "English",
-    ["French"]                = "French",
-    ["Italian"]               = "Italian",
-    ["German"]                = "German",
-    ["Spanish"]               = "Spanish",
-    ["Russian"]               = "Russian",
-    ["Polish"]                = "Polish",
-    ["Dutch"]                 = "Dutch",
-    ["Portuguese"]            = "Portuguese",
-    ["LatinAmeraicanSpanish"] = "LatinAmericanSpanish", --this is not a typo
-    ["BrazilianPortuguese"]   = "BrazilianPortuguese",
-    ["SimplifiedChinese"]     = "SimplifiedChinese",
-    ["TraditionalChinese"]    = "TraditionalChinese",
-    ["TencentChinese"]        = "TencentChinese",
-    ["Korean"]                = "Korean",
-    ["Japanese"]              = "Japanese",
-    ["USEnglish"]             = "USEnglish"
 }
 
 SubstanceOrProduct = {["Substance"] = "Substance", ["Product"] =  "Product"}
@@ -545,17 +529,17 @@ AddNewQunitProducts =
 ----------------------------------------------------------------------------------------------
 -------------------------------     CODE LOGIC START      ------------------------------------
 ----------------------------------------------------------------------------------------------
-ModName                 				= "NMS Galactic Standard Currency"
-GameVersion							= " v4.05.0"
+ModName                 				= "Galactic Standard Currency "
+GameVersion							= "v4.06.0"
 Build					 						= ".1"
-Author                  						= "EchoTree "
+Author                  						= "EchoTree"
 LuaAuthor									= "EchoTree and Jackty89"
 ModDescription          			= "Adds Craftable, Tradable Consumable Currencies to NMS"
 CustomLanguageTag       		= "NMSGSC"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]       		= Author..ModName..GameVersion..Build..".pak",
+    ["MOD_FILENAME"]       		= Author.."'s "..ModName..GameVersion..Build..".pak",
     ["MOD_DESCRIPTION"]		= "Lua Written by"..LuaAuthor..ModDescription.."Compatible with NMS "..GameVersion,
     ["MOD_AUTHOR"]          		= Author,
     ["ADD_FILES"]           			=
@@ -834,9 +818,12 @@ end
 
 -------------------------------     Consumable Product   -------------------------------------
 local AddToProductTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
+local AddToSpecialShop	= NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+local AddToDefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
+local PTETable = {}
+
 for i = 1, #AddNewConsumableProducts do
 	local Requirements 							= {}
-	local PTERequirements 					= ""
 	local PTEID										= string.upper(AddNewConsumableProducts[i]["PTEID"])
 	local PTEName									= string.upper(PTEID).."_NAME"
 	local PTENameLc								= string.upper(PTEID).."_NAME_L"
@@ -864,18 +851,13 @@ for i = 1, #AddNewConsumableProducts do
         RequirementAmount					= RequirementsList[k][2]
         table.insert(Requirements, CreatePTERequirement(RequirementID, RequirementType, RequirementAmount))
     end
-    PTERequirements							= table.concat(Requirements)
-
-    AddToProductTable[#AddToProductTable + 1]  =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateProductTableEntry(PTEID, PTEName, PTENameLc, PTESub, PTEDesc, PTEPrice, PTEIcon, PTESubCat, PTEProdCat, PTERarity, PTEIsConsumable, PTEStackSize, PTETradeCat, PTEIsCraftable, PTERequirements)
-    }	
+	
+	table.insert(PTETable, CreateProductTableEntry(PTEID, PTEName, PTENameLc, PTESub, PTEDesc, PTEPrice, PTEIcon, PTESubCat, PTEProdCat, PTERarity, PTEIsConsumable, PTEStackSize, PTETradeCat, PTEIsCraftable, table.concat(Requirements)))
+	
 end
 
-local AddToSpecialShop	= NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
-local AddToDefaultReality = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
 for i = 1, #AddNewBlunitProducts do
+	local Requirements 							= {}
 	local PTEID										= string.upper(AddNewBlunitProducts[i]["PTEID"])
 	local PTEName									= string.upper(PTEID).."_NAME"
 	local PTENameLc								= string.upper(PTEID).."_NAME_L"
@@ -890,14 +872,8 @@ for i = 1, #AddNewBlunitProducts do
 	local PTEStackSize							= AddNewBlunitProducts[i]["PTEStackSize"]
 	local PTETradeCat							= AddNewBlunitProducts[i]["PTETradeCat"]
 	local PTEIsCraftable						= AddNewBlunitProducts[i]["PTEIsCraftable"]
-	local PTERequirements = ""
 
-    --adds product to product table
-    AddToProductTable[#AddToProductTable + 1]  =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateProductTableEntry(PTEID, PTEName, PTENameLc, PTESub, PTEDesc, PTEPrice, PTEIcon, PTESubCat, PTEProdCat, PTERarity, PTEIsConsumable, PTEStackSize, PTETradeCat, PTEIsCraftable, PTERequirements)
-    }
+	table.insert(PTETable, CreateProductTableEntry(PTEID, PTEName, PTENameLc, PTESub, PTEDesc, PTEPrice, PTEIcon, PTESubCat, PTEProdCat, PTERarity, PTEIsConsumable, PTEStackSize, PTETradeCat, PTEIsCraftable, table.concat(Requirements)))
 
     -------- Adds products to store  this can be added to a seperate loop if not all products should be added------------
     local ShopEntry = CreateShopEntry(PTEID)
@@ -914,6 +890,7 @@ for i = 1, #AddNewBlunitProducts do
 end
 
 for j = 1, #AddNewNanitProducts do
+	local Requirements 							= {}
 	local PTEID										= string.upper(AddNewNanitProducts[j]["PTEID"])
 	local PTEName									= string.upper(PTEID).."_NAME"
 	local PTENameLc								= string.upper(PTEID).."_NAME_L"
@@ -928,14 +905,8 @@ for j = 1, #AddNewNanitProducts do
 	local PTEStackSize							= AddNewNanitProducts[j]["PTEStackSize"]
 	local PTETradeCat							= AddNewNanitProducts[j]["PTETradeCat"]
 	local PTEIsCraftable						= AddNewNanitProducts[j]["PTEIsCraftable"]
-	local PTERequirements = ""
-
-    --adds product to product table
-    AddToProductTable[#AddToProductTable + 1]  =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateProductTableEntry(PTEID, PTEName, PTENameLc, PTESub, PTEDesc, PTEPrice, PTEIcon, PTESubCat, PTEProdCat, PTERarity, PTEIsConsumable, PTEStackSize, PTETradeCat, PTEIsCraftable, PTERequirements)
-    }
+	
+	table.insert(PTETable, CreateProductTableEntry(PTEID, PTEName, PTENameLc, PTESub, PTEDesc, PTEPrice, PTEIcon, PTESubCat, PTEProdCat, PTERarity, PTEIsConsumable, PTEStackSize, PTETradeCat, PTEIsCraftable, table.concat(Requirements)))
 
     local ShopEntry = CreateShopEntry(PTEID)
     AddToDefaultReality[#AddToDefaultReality + 1]  =
@@ -946,6 +917,7 @@ for j = 1, #AddNewNanitProducts do
 end
 
 for k = 1, #AddNewQunitProducts do
+	local Requirements 							= {}
 	local PTEID										= string.upper(AddNewQunitProducts[k]["PTEID"])
 	local SSID											= string.upper(AddNewQunitProducts[k]["PTEID"])
 	local PTEName									= string.upper(PTEID).."_NAME"
@@ -961,14 +933,8 @@ for k = 1, #AddNewQunitProducts do
 	local PTEStackSize							= AddNewQunitProducts[k]["PTEStackSize"]
 	local PTETradeCat							= AddNewQunitProducts[k]["PTETradeCat"]
 	local PTEIsCraftable						= AddNewQunitProducts[k]["PTEIsCraftable"]
-	local PTERequirements = ""
-
-    --adds product to product table
-    AddToProductTable[#AddToProductTable + 1]  =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateProductTableEntry(PTEID, PTEName, PTENameLc, PTESub, PTEDesc, PTEPrice, PTEIcon, PTESubCat, PTEProdCat, PTERarity, PTEIsConsumable, PTEStackSize, PTETradeCat, PTEIsCraftable, PTERequirements)
-    }
+	
+	table.insert(PTETable, CreateProductTableEntry(PTEID, PTEName, PTENameLc, PTESub, PTEDesc, PTEPrice, PTEIcon, PTESubCat, PTEProdCat, PTERarity, PTEIsConsumable, PTEStackSize, PTETradeCat, PTEIsCraftable, table.concat(Requirements)))
 
     AddToSpecialShop[#AddToSpecialShop + 1] =
 	{
@@ -984,18 +950,26 @@ for k = 1, #AddNewQunitProducts do
     }
 end
 
+AddToProductTable[#AddToProductTable + 1]  =
+{
+	["PRECEDING_KEY_WORDS"] = {"Table"},
+	["ADD"] = table.concat(PTETable)
+}	
 
 local AddToConsumableTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][2]["EXML_CHANGE_TABLE"]
 local AddToRewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 local AddToDefaultSaveData = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+local CITETable								= {}
+local RewardTable						= {}
+local KnownProdTable				= {}
 
 for i = 1, #AddNewConsumableProducts do
+	local Rewards 								= {}
     local ProductID							= string.upper(AddNewConsumableProducts[i]["PTEID"])
     local ProductRewardData			= AddNewConsumableProducts[i]["RewardData"]
     local RewardId								= string.upper(ProductRewardData[1])
     local RewardChoice						= ProductRewardData[2]
     local RewardData						= ProductRewardData[3]
-    local Rewards								= {}
 
     for k = 1, #RewardData  do
         local PercentageChance			= ""
@@ -1010,26 +984,30 @@ for i = 1, #AddNewConsumableProducts do
 
         table.insert(Rewards, CreateRTERewardsList(PercentageChance, AmountMin, AmountMax, CurrencyType))
     end	
-	    --- Adds the new consumable
-    AddToConsumableTable[#AddToConsumableTable + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"Table"},
-        ["ADD"] = CreateConsumableTableEntry(ProductID, RewardId)
-    }
-    -- Create new reward entry
-    AddToRewardTable[#AddToRewardTable + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
-        ["ADD"] = CreateRewardTableEntry(RewardId, RewardChoice,  table.concat(Rewards))
-    }
-    --Adds recipe to know products
-    AddToDefaultSaveData[#AddToDefaultSaveData + 1] =
-    {
-        ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-        ["ADD"] = CreateKnownProduct(ProductID)
-    }
+	
+	table.insert(RewardTable, CreateRewardTableEntry(RewardId, RewardChoice, table.concat(Rewards)))
+	table.insert(CITETable, CreateConsumableTableEntry(ProductID, RewardId))
+	table.insert(KnownProdTable, CreateKnownProduct(ProductID))
+end	   
+ --- Adds the new consumable
+AddToConsumableTable[#AddToConsumableTable + 1] =
+{
+	["PRECEDING_KEY_WORDS"] = {"Table"},
+	["ADD"] = table.concat(CITETable)
+}
+-- Create new reward entry
+AddToRewardTable[#AddToRewardTable + 1] =
+{
+	["PRECEDING_KEY_WORDS"] = {"GenericTable"},
+	["ADD"] = table.concat(RewardTable)
+}
+--Adds recipe to know products
+AddToDefaultSaveData[#AddToDefaultSaveData + 1] =
+{
+	["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
+	["ADD"] = table.concat(KnownProdTable)
+}
 
-end
 ----------------------------------------------------------------------------------------------
 -------------------------------     Language file creation     -------------------------------
 ----------------------------------------------------------------------------------------------
@@ -1125,7 +1103,7 @@ function FillCustomlangFile(Data)
 end
 
 local AddCustomLanguageFiles = NMS_MOD_DEFINITION_CONTAINER["ADD_FILES"]
-for Key , Language in pairs(Languages) do
+for Language in pairs(Languages) do
 
     --- Creating a singulare list that contains all new productID's and their langauge strings
     local LanguageData = { ["PTEID"] = "" , ["Languages"] = {}}
@@ -1163,7 +1141,7 @@ for Key , Language in pairs(Languages) do
 	
     AddCustomLanguageFiles[#AddCustomLanguageFiles +1] =
     {
-        ["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Key..".EXML",
+        ["FILE_DESTINATION"] 	=	"LANGUAGE\\NMS_"..CustomLanguageTag.."_"..Language..".EXML",
         ["FILE_CONTENT"] 		=	FillCustomlangFile(LanguageData)
     }
 
