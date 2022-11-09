@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]	= 
 							{	
 								{"PositionX", "1500.6"},				
-								{"Width", "194.4"},				
+								{"Width", "193"},				
 							}
 						},
 						{

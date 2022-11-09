@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "4hrlivingship.pak",
 ["MOD_AUTHOR"]    = "GrandTickler",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.00",
+["NMS_VERSION"]   = "4.06",
 ["MODIFICATIONS"] = 
 	{
 		{

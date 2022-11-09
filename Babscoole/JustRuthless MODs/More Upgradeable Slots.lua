@@ -98,7 +98,7 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole and DarkScythe"
 Description = ""
-NMS_Version = "4.05"
+NMS_Version = "4.06"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"

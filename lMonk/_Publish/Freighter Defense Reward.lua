@@ -5,7 +5,7 @@ local desc = [[
   * (the lists are non-random because a bug causes them to misbehave)
 ]]------------------------------------------------------------------------
 
-Mod_Version = 1.33
+Mod_Version = 1.34
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -89,14 +89,17 @@ local E_ = {
 	SLV='Salvage',
 
 	-- MultiItemRewardTypeEnum
-	PDT='Product',	SBT='Substance',	PRP='ProcProduct',
+	PDT='Product',		SBT='Substance',	PRP='ProcProduct',
 	-- PRT='ProcTech', not supported
 
 	-- RarityEnum
-	C='Common',		U='Uncommon',		R='Rare',
+	C='Common',			U='Uncommon',		R='Rare',
 
 	-- Money
-	UT='Units',		NN='Nanites',		HG='Specials', -- quicksilver
+	UT='Units',			NN='Nanites',		HG='Specials', -- quicksilver
+
+	-- FrigateFlybyType
+	SF='SingleShip',	GF='AmbientGroup',	SW='DeepSpaceCommon'
 }
 
 local new_reward = {
@@ -193,7 +196,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Freighter Defense Rewards.'..Mod_Version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.05',
+	NMS_VERSION			= '4.06',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

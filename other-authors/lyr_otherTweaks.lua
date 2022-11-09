@@ -1,7 +1,7 @@
 local lyr = {tweakStates = {}, tweakTables = {}, ignore = "IGNORE"}
-local batchPakName = "lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Other Tweaks 1.4]]
-local gameVersion = "4.0+"
+local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
+local modDescription = [[Lyravega's Other Tweaks 1.5]]
+local gameVersion = "4.06"
 
 --[[
 	Below in the 'lyr.tweakStates' table are modification names and what they do is commented next to them
@@ -35,6 +35,7 @@ lyr.tweakStates = {
 	rapidToolScanner = true,				-- tool scanners recharge much faster and their range is bumped up a little
 	darkerScannerPulse = true,				-- tones ALL of the (tool, vehicle, ship) scanner pulse colours down
 	noSentinelTerrainDamage = true,			-- sentinel projectiles damage the terrain no more
+	learnMoreWords = 3,						-- learn more words from actions, value is average (setting to 3 will let you learn 2-4)
 }
 
 ---@param tweakName string
@@ -205,7 +206,7 @@ lyr.tweakTables = {
 				specialKeyWords = {lyr:parsePair([[<Property name="LinkNetworkType" value="PlantGrowth" />]])},
 				selectLevel = 2,
 				fields = {
-					Rate = math.floor(lyr.tweakStates.plantGrowthRateMult)
+					Rate = math.max(1,math.floor(lyr.tweakStates.plantGrowthRateMult))
 				},
 				replaceAll = true
 			}
@@ -632,6 +633,18 @@ lyr.tweakTables = {
 				},
 				fields = {
 					BehaviourFlags = "ScareCreatures, ExplosionForce"
+				}
+			}
+		}
+	},
+	learnMoreWords = lyr:checkTweak("learnMoreWords") and {
+		["METADATA/REALITY/TABLES/REWARDTABLE.MBIN"] = {
+			{
+				specialKeyWords = {lyr:parsePair([[<Property name="Reward" value="GcRewardTeachWord.xml">]])},
+				findSections = {{"AmountMin", "1"}, {"AmountMax", "1"}},
+				fields = {
+					AmountMin = math.max(1, lyr.tweakStates.learnMoreWords-1),
+					AmountMax = math.max(3, lyr.tweakStates.learnMoreWords+1)
 				}
 			}
 		}

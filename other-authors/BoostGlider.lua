@@ -90,6 +90,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "AnimRunSpeed", 						"5" }, 		--WayPoint "4"
 								{ "ShieldRestoreSpeed", 				"1" }, 		--WayPoint "0.2"
 								{ "ShieldRestoreDelay", 				"0" }, 		--WayPoint "10"
+								{ "WeaponShotgunSlowdown", 				"0.9" }, 		--WayPoint "0.7"
 							}
 						}
 					}

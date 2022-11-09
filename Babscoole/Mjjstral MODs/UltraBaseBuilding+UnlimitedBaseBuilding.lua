@@ -60,7 +60,7 @@ BUILDABLE_OBJECT_TABLE =
 	{ ["ID_NAME"]="STRIDER", 		["P_NAME"]="STRIDER", 			["PATH"]="MODELS/PLANETS/CREATURES/STRIDERRIG/", 	["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="CREATURES", ["ICON"]=CREAICON },
 	{ ["ID_NAME"]="TREX", 			["P_NAME"]="TREX", 				["PATH"]="MODELS/PLANETS/CREATURES/TREXRIG/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="CREATURES", ["ICON"]=CREAICON },
 	{ ["ID_NAME"]="TRICERATOPS", 	["P_NAME"]="TRICERATOPS", 		["PATH"]="MODELS/PLANETS/CREATURES/TRICERATOPSRIG/",["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="CREATURES", ["ICON"]=CREAICON },
-	{ ["ID_NAME"]="TRICE2HD", 		["P_NAME"]="TRICERATOPSTWOHEADS",["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGECREATURE/TRICERATOPS/",["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="CREATURES", ["ICON"]=CREAICON },	
+	{ ["ID_NAME"]="TRICE2HD", 		["P_NAME"]="TRICERATOPSTWOHEADS",["PATH"]="MODELS/PLANETS/BIOMES/RAINFOREST/LARGECREATURE/TRICERATOPS/",["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="CREATURES", ["ICON"]=CREAICON },
 	{ ["ID_NAME"]="DIGGER", 		["P_NAME"]="DIGGER", 			["PATH"]="MODELS/PLANETS/CREATURES/WEIRD/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="CREATURES", ["ICON"]=CREAICON },
 	{ ["ID_NAME"]="DRILL", 			["P_NAME"]="DRILL", 			["PATH"]="MODELS/PLANETS/CREATURES/WEIRD/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="CREATURES", ["ICON"]=CREAICON },
 	{ ["ID_NAME"]="FLOATERCREATURE",["P_NAME"]="FLOATERCREATURE", 	["PATH"]="MODELS/PLANETS/CREATURES/WEIRD/", 		["GROUP_NAME"]="UBB-NATURE-I", ["SUBGROUP_NAME"]="CREATURES", ["ICON"]=CREAICON },
@@ -615,6 +615,7 @@ BUILDABLE_OBJECT_TABLE =
 	{ ["ID_NAME"]="NEXUSTOWER", 	["P_NAME"]="NEXUSTOWER", 	    	["PATH"]="MODELS/SPACE/NEXUS/PARTS/TOWER/", 			  			["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="TERMINAL", 	    ["P_NAME"]="TERMINAL", 	    		["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TERMINAL/", 		["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="TERM_TADINGPOST",["P_NAME"]="TERMINAL_TADINGPOST", 	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/TERMINAL/", 		["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
+	{ ["ID_NAME"]="SHIPSALVAGETERM",["P_NAME"]="SHIPSALVAGETERMINAL", 	["PATH"]="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/", 	["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="GUILDSHOP", 	    ["P_NAME"]="GUILDSHOP", 	    	["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/", 		["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="MAPSHOP", 	    ["P_NAME"]="MAPSHOP", 	    		["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/", 		["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
 	{ ["ID_NAME"]="MISSIONSHOP", 	["P_NAME"]="MISSIONSHOP", 	    	["PATH"]="MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/SHOPS/", 		["GROUP_NAME"]="UBB-OTHER", ["SUBGROUP_NAME"]="BUILDINGS", ["ICON"]=BLDGICON },
@@ -1065,42 +1066,62 @@ AUTOPARTDATA_ADDING =
       <Property name="MagicData" value="TkMagicModelData.xml">
         <Property name="Vertices">
           <Property value="Vector3f.xml">
-            <Property name="x" value="0.163574" />
-            <Property name="y" value="0.066406" />
-            <Property name="z" value="1" />
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="-2.025391" />
           </Property>
           <Property value="Vector3f.xml">
-            <Property name="x" value="-0.163574" />
-            <Property name="y" value="-0.066406" />
-            <Property name="z" value="1" />
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="2.025391" />
           </Property>
           <Property value="Vector3f.xml">
-            <Property name="x" value="-0.163574" />
-            <Property name="y" value="0.066406" />
-            <Property name="z" value="0" />
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="-2.025391" />
           </Property>
           <Property value="Vector3f.xml">
-            <Property name="x" value="0.163574" />
-            <Property name="y" value="-0.066406" />
-            <Property name="z" value="0" />
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="2.025391" />
           </Property>
         </Property>
         <Property name="Centre" value="Vector3f.xml">
           <Property name="x" value="0" />
-          <Property name="y" value="0" />
-          <Property name="z" value="0.5" />
+          <Property name="y" value="2" />
+          <Property name="z" value="0" />
         </Property>
-        <Property name="Radius" value="0.37417" />
+        <Property name="Radius" value="2.997921" />
       </Property>
-      <Property name="NodesCost" value="4" />
-      <Property name="TimeCost" value="20" />
+      <Property name="NodesCost" value="7" />
+      <Property name="TimeCost" value="29745" />
       <Property name="PhysicsCost" value="1" />
-      <Property name="MeshesCost" value="1" />
-      <Property name="InstanceNodesCost" value="0" />
-      <Property name="InstanceTimeCost" value="100" />
-      <Property name="InstanceMeshesCost" value="0" />
-      <Property name="LastProfiledTimestamp" value="1638162922" />
-      <Property name="InstanceLastProfiledTimestamp" value="0" />
+      <Property name="MeshesCost" value="5" />
+      <Property name="InstanceNodesCost" value="35" />
+      <Property name="InstanceTimeCost" value="52732" />
+      <Property name="InstanceMeshesCost" value="25" />
+      <Property name="LastProfiledTimestamp" value="1667279869" />
+      <Property name="InstanceLastProfiledTimestamp" value="1667186766" />
     </Property>
 ]]
 return AUTOPARTDATA_ADDING
@@ -1115,14 +1136,14 @@ BASEBUILDINGCOST_ADDING =
       <Property name="Active1AverageFrameTimeCost" value="0.008175" />
       <Property name="ActiveTotalNodes" value="36" />
       <Property name="ActivePhysicsComponents" value="12" />
-      <Property name="Inactive0AverageFrameTimeCost" value="0.00809" />
-      <Property name="Inactive1AverageFrameTimeCost" value="0.00801" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.004045" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0.004005" />
       <Property name="InactiveTotalNodes" value="25" />
-      <Property name="InactivePhysicsComponents" value="1" />
+      <Property name="InactivePhysicsComponents" value="15" />
     </Property>
 ]]
 return BASEBUILDINGCOST_ADDING
-end	
+end
 
 function GetKnownProduct(ID_NAME)
 DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING =
@@ -1423,7 +1444,7 @@ GROUP =
         </Property>
       </Property>
     </Property>
-<!-- UBB GROUPS END-->	
+<!-- UBB GROUPS END-->
 ]]
 
 BASEBUILDINGOBJECTSTABLE_ADDING_ALL = {}
@@ -1440,7 +1461,7 @@ for i=1,#BUILDABLE_OBJECT_TABLE,1 do
 	table.insert(BASEBUILDINGPARTSTABLE_ADDING_ALL,GetBaseBuildingPart(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"]))
 	table.insert(PRODUCT_ADDING_ALL,GetProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["ICON"]))
 	table.insert(AUTOPARTDATA_ADDING_ALL,GetAutoPartData(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
-	table.insert(BASEBUILDINGCOST_ADDING_ALL,GetBaseBuildingCost(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))	
+	table.insert(BASEBUILDINGCOST_ADDING_ALL,GetBaseBuildingCost(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
 	table.insert(DEFAULTSAVEDATA_KNOWNPRODUCT_ADDING_ALL,GetKnownProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
 	table.insert(PLACEMENTDATA_ENTITY_ALL,GetPlaceDataEntity(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
 	table.insert(ADD_FILES_TABLE,GetEntityAddFile(BUILDABLE_OBJECT_TABLE[i]["PATH"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
@@ -1452,7 +1473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "0-UltraBaseBuilding+UnlimitedBaseBuilding.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
-["NMS_VERSION"]   = "4.05",
+["NMS_VERSION"]   = "4.06",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
 	{
@@ -1461,26 +1482,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								--{"DisableLimits",                "True"},
 								{"DisableBaseBuildingLimits",    "True"},
-								{"DisableBasePowerRequirements", "True"},		
+								{"DisableBasePowerRequirements", "True"},
 								{"BaseDownloadTimeout",          "120"}, --ORIGINAL 40
 							}
 						}
 					}
-				},			
+				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"BuildableOnPlanetBase",        "True"},
 								{"BuildableOnSpaceBase",         "True"},
@@ -1488,7 +1509,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BuildableOnPlanet",            "True"},
 								{"BuildableOnPlanetWithProduct", "True"},
 								{"BuildableUnderwater",          "True"},
-								{"BuildableAboveWater",          "True"},								
+								{"BuildableAboveWater",          "True"},
 								{"PlanetLimit",                  "0"},
 								{"RegionLimit",                  "0"},
 								{"PlanetBaseLimit",              "0"},
@@ -1496,10 +1517,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"CheckPlaceholderCollision",    "False"},
 								{"CanRotate3D",                  "True"},
 								{"CanScale",                     "True"},
-								--{"BaseBuildingDecorationType",   "Normal"},			
-								--{"IsDecoration",                 "False"},						
+								--{"BaseBuildingDecorationType",   "Normal"},
+								--{"IsDecoration",                 "False"},
 							}
-						},					
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects"},
 							["ADD"]                 = table.concat(BASEBUILDINGOBJECTSTABLE_ADDING_ALL)
@@ -1544,14 +1565,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\BASEBUILDINGCOSTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
 							["ADD"]                 = table.concat(BASEBUILDINGCOST_ADDING_ALL)
 						}
 					},
-				},				
+				},
 				{
 					["MBIN_FILE_SOURCE"] = "METADATA/GAMESTATE/DEFAULTSAVEDATA.MBIN",
 					["EXML_CHANGE_TABLE"] =

@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "AnalysisShipSpeed0.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "4.0+",
+["NMS_VERSION"]				= "4.0+ Build ID 9763858",
 ["MOD_DESCRIPTION"]			= "Target scanning trigger time mimimized, Sandworm",
 ["MODIFICATIONS"] 			= 
 	{

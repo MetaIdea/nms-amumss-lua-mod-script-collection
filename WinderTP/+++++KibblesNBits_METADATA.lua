@@ -9678,7 +9678,7 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 function GetBaseBuildingCost(ID, POPIN)
 BUILDING_COST =
 {
-[[      <Property name="Active0AverageFrameTimeCost" value="0" />
+[[      <Property name="Active0AverageFrameTimeCost" value="0.001" />
       <Property name="Active1AverageFrameTimeCost" value="1" />
       <Property name="ActiveTotalNodes" value="2" />
       <Property name="ActivePhysicsComponents" value="0" />
@@ -9686,38 +9686,38 @@ BUILDING_COST =
       <Property name="Inactive1AverageFrameTimeCost" value="1" />
       <Property name="InactiveTotalNodes" value="1000" />
       <Property name="InactivePhysicsComponents" value="100" />]],
-[[      <Property name="Active0AverageFrameTimeCost" value="0.0082" />
-      <Property name="Active1AverageFrameTimeCost" value="0.008175" />
+[[      <Property name="Active0AverageFrameTimeCost" value="0.082" />
+      <Property name="Active1AverageFrameTimeCost" value="0.08175" />
       <Property name="ActiveTotalNodes" value="36" />
       <Property name="ActivePhysicsComponents" value="12" />
-      <Property name="Inactive0AverageFrameTimeCost" value="0.00809" />
-      <Property name="Inactive1AverageFrameTimeCost" value="0.00801" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.004045" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0.004005" />
       <Property name="InactiveTotalNodes" value="25" />
-      <Property name="InactivePhysicsComponents" value="1" />]],
-[[      <Property name="Active0AverageFrameTimeCost" value="0.0082" />
-      <Property name="Active1AverageFrameTimeCost" value="0.008175" />
+      <Property name="InactivePhysicsComponents" value="15" />]],
+[[      <Property name="Active0AverageFrameTimeCost" value="0.0705" />
+      <Property name="Active1AverageFrameTimeCost" value="0.0715" />
       <Property name="ActiveTotalNodes" value="64" />
       <Property name="ActivePhysicsComponents" value="12" />
-      <Property name="Inactive0AverageFrameTimeCost" value="0.00805" />
-      <Property name="Inactive1AverageFrameTimeCost" value="0.008003" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.03525" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0.03575" />
       <Property name="InactiveTotalNodes" value="60" />
-      <Property name="InactivePhysicsComponents" value="1" />]],
-[[      <Property name="Active0AverageFrameTimeCost" value="0.0082" />
-      <Property name="Active1AverageFrameTimeCost" value="0.008131" />
+      <Property name="InactivePhysicsComponents" value="15" />]],
+[[      <Property name="Active0AverageFrameTimeCost" value="0.0555" />
+      <Property name="Active1AverageFrameTimeCost" value="0.0575" />
       <Property name="ActiveTotalNodes" value="128" />
       <Property name="ActivePhysicsComponents" value="12" />
-      <Property name="Inactive0AverageFrameTimeCost" value="0.00805" />
-      <Property name="Inactive1AverageFrameTimeCost" value="0" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.2775" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0.2875" />
       <Property name="InactiveTotalNodes" value="64" />
-      <Property name="InactivePhysicsComponents" value="1" />]],
-[[      <Property name="Active0AverageFrameTimeCost" value="0.00835" />
-      <Property name="Active1AverageFrameTimeCost" value="0.0082" />
+      <Property name="InactivePhysicsComponents" value="15" />]],
+[[      <Property name="Active0AverageFrameTimeCost" value="0.04068683" />
+      <Property name="Active1AverageFrameTimeCost" value="0.04068683" />
       <Property name="ActiveTotalNodes" value="256" />
       <Property name="ActivePhysicsComponents" value="17" />
-      <Property name="Inactive0AverageFrameTimeCost" value="0.00813" />
-      <Property name="Inactive1AverageFrameTimeCost" value="0.00795" />
+      <Property name="Inactive0AverageFrameTimeCost" value="0.024261653" />
+      <Property name="Inactive1AverageFrameTimeCost" value="0" />
       <Property name="InactiveTotalNodes" value="120" />
-      <Property name="InactivePhysicsComponents" value="1" />]],
+      <Property name="InactivePhysicsComponents" value="15" />]],
 }				
 return [[
     <Property value="GcBaseBuildingEntryCosts.xml">
@@ -10018,52 +10018,425 @@ return [[
 ]]
 end
 
-function getAutoPartData(ID, STYLE)
-return [[
-	<Property value="GcBaseBuildingPartData.xml">
-      <Property name="PartID" value="_]] .. ID .. [[" />
-      <Property name="Style" value="GcBaseBuildingPartStyle.xml">
-        <Property name="Style" value="]] .. STYLE .. [[" />
-      </Property>
+function getAutoPartData(ID, STYLE, POWER_GROUP)
+AUTO_PART_DATA =
+{
+	["DECOR"] = [[
       <Property name="MagicData" value="TkMagicModelData.xml">
         <Property name="Vertices">
           <Property value="Vector3f.xml">
-            <Property name="x" value="0.163574" />
-            <Property name="y" value="0.066406" />
-            <Property name="z" value="1" />
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="-2.025391" />
           </Property>
           <Property value="Vector3f.xml">
-            <Property name="x" value="-0.163574" />
-            <Property name="y" value="-0.066406" />
-            <Property name="z" value="1" />
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="2.025391" />
           </Property>
           <Property value="Vector3f.xml">
-            <Property name="x" value="-0.163574" />
-            <Property name="y" value="0.066406" />
-            <Property name="z" value="0" />
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="-2.025391" />
           </Property>
           <Property value="Vector3f.xml">
-            <Property name="x" value="0.163574" />
-            <Property name="y" value="-0.066406" />
-            <Property name="z" value="0" />
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="2.025391" />
           </Property>
         </Property>
         <Property name="Centre" value="Vector3f.xml">
           <Property name="x" value="0" />
-          <Property name="y" value="0" />
-          <Property name="z" value="0.5" />
+          <Property name="y" value="2" />
+          <Property name="z" value="0" />
         </Property>
-        <Property name="Radius" value="0.37417" />
+        <Property name="Radius" value="2.997921" />
       </Property>
-      <Property name="NodesCost" value="4" />
-      <Property name="TimeCost" value="20" />
+      <Property name="NodesCost" value="7" />
+      <Property name="TimeCost" value="29745" />
       <Property name="PhysicsCost" value="1" />
-      <Property name="MeshesCost" value="1" />
+      <Property name="MeshesCost" value="5" />
+      <Property name="InstanceNodesCost" value="35" />
+      <Property name="InstanceTimeCost" value="52732" />
+      <Property name="InstanceMeshesCost" value="25" />
+      <Property name="LastProfiledTimestamp" value="1667279869" />
+      <Property name="InstanceLastProfiledTimestamp" value="1667186766" />
+]],
+	["BASIC"] = [[
+      <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Vertices">
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.666016" />
+            <Property name="y" value="0.221401" />
+            <Property name="z" value="-2.809712" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.666016" />
+            <Property name="y" value="3.682135" />
+            <Property name="z" value="2.522452" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.666016" />
+            <Property name="y" value="3.017002" />
+            <Property name="z" value="2.954143" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.666016" />
+            <Property name="y" value="-0.443731" />
+            <Property name="z" value="-2.378021" />
+          </Property>
+        </Property>
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="1.619202" />
+          <Property name="z" value="0.072216" />
+        </Property>
+        <Property name="Radius" value="3.775765" />
+      </Property>
+      <Property name="NodesCost" value="8" />
+      <Property name="TimeCost" value="9250" />
+      <Property name="PhysicsCost" value="0" />
+      <Property name="MeshesCost" value="5" />
+      <Property name="InstanceNodesCost" value="2" />
+      <Property name="InstanceTimeCost" value="7960" />
+      <Property name="InstanceMeshesCost" value="1" />
+      <Property name="LastProfiledTimestamp" value="1666150381" />
+      <Property name="InstanceLastProfiledTimestamp" value="1660880178" />
+]],
+	["CUBEROOM"] = [[
+      <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Vertices">
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="2.025391" />
+          </Property>
+        </Property>
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="2" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="Radius" value="2.997921" />
+      </Property>
+      <Property name="NodesCost" value="7" />
+      <Property name="TimeCost" value="29745" />
+      <Property name="PhysicsCost" value="1" />
+      <Property name="MeshesCost" value="5" />
+      <Property name="InstanceNodesCost" value="35" />
+      <Property name="InstanceTimeCost" value="52732" />
+      <Property name="InstanceMeshesCost" value="25" />
+      <Property name="LastProfiledTimestamp" value="1667279869" />
+      <Property name="InstanceLastProfiledTimestamp" value="1667186766" />
+]],
+	["SPACECUBE"] = [[
+      <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Vertices">
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-4.136719" />
+            <Property name="y" value="6.254302" />
+            <Property name="z" value="-4.136719" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-4.136719" />
+            <Property name="y" value="6.254302" />
+            <Property name="z" value="4.136719" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="4.136719" />
+            <Property name="y" value="6.254302" />
+            <Property name="z" value="-4.136719" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="4.136719" />
+            <Property name="y" value="6.254302" />
+            <Property name="z" value="4.136719" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-4.136719" />
+            <Property name="y" value="-2.254302" />
+            <Property name="z" value="-4.136719" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-4.136719" />
+            <Property name="y" value="-2.254302" />
+            <Property name="z" value="4.136719" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="4.136719" />
+            <Property name="y" value="-2.254302" />
+            <Property name="z" value="-4.136719" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="4.136719" />
+            <Property name="y" value="-2.254302" />
+            <Property name="z" value="4.136719" />
+          </Property>
+        </Property>
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="2" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="Radius" value="6.207068" />
+      </Property>
+      <Property name="NodesCost" value="42" />
+      <Property name="TimeCost" value="41825" />
+      <Property name="PhysicsCost" value="1" />
+      <Property name="MeshesCost" value="33" />
+      <Property name="InstanceNodesCost" value="13" />
+      <Property name="InstanceTimeCost" value="25392" />
+      <Property name="InstanceMeshesCost" value="10" />
+      <Property name="LastProfiledTimestamp" value="1660356861" />
+      <Property name="InstanceLastProfiledTimestamp" value="1667384703" />
+]],
+	["FARMING"] = [[
+      <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Vertices">
+          <Property value="Vector3f.xml">
+            <Property name="x" value="0.361726" />
+            <Property name="y" value="-0.159933" />
+            <Property name="z" value="0.388863" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="0.47692" />
+            <Property name="y" value="0.299106" />
+            <Property name="z" value="-0.676767" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="0.901437" />
+            <Property name="y" value="1.638365" />
+            <Property name="z" value="0.344799" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="0.915513" />
+            <Property name="y" value="1.374187" />
+            <Property name="z" value="-0.133735" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-0.144993" />
+            <Property name="y" value="-0.605332" />
+            <Property name="z" value="-0.087962" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-0.47695" />
+            <Property name="y" value="0.278089" />
+            <Property name="z" value="0.540523" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-0.761163" />
+            <Property name="y" value="1.009935" />
+            <Property name="z" value="-0.461055" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-0.929169" />
+            <Property name="y" value="1.674832" />
+            <Property name="z" value="0.24025" />
+          </Property>
+        </Property>
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="-0.006828" />
+          <Property name="y" value="0.53475" />
+          <Property name="z" value="-0.068122" />
+        </Property>
+        <Property name="Radius" value="1.328481" />
+      </Property>
+      <Property name="NodesCost" value="21" />
+      <Property name="TimeCost" value="35045" />
+      <Property name="PhysicsCost" value="1" />
+      <Property name="MeshesCost" value="16" />
       <Property name="InstanceNodesCost" value="0" />
-      <Property name="InstanceTimeCost" value="100" />
+      <Property name="InstanceTimeCost" value="10000" />
       <Property name="InstanceMeshesCost" value="0" />
-      <Property name="LastProfiledTimestamp" value="1638162922" />
+      <Property name="LastProfiledTimestamp" value="1667187304" />
       <Property name="InstanceLastProfiledTimestamp" value="0" />
+]],
+	["PLANTER"] = [[
+      <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Vertices">
+          <Property value="Vector3f.xml">
+            <Property name="x" value="0.480906" />
+            <Property name="y" value="0.199414" />
+            <Property name="z" value="-1.066707" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="0.760019" />
+            <Property name="y" value="2.567245" />
+            <Property name="z" value="0.906695" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="0.895539" />
+            <Property name="y" value="2.570139" />
+            <Property name="z" value="-0.895583" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="1.065948" />
+            <Property name="y" value="0.199269" />
+            <Property name="z" value="0.50545" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-0.481015" />
+            <Property name="y" value="0.199414" />
+            <Property name="z" value="1.066749" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-0.895647" />
+            <Property name="y" value="2.569561" />
+            <Property name="z" value="0.895495" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-0.896428" />
+            <Property name="y" value="2.547997" />
+            <Property name="z" value="-0.896364" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-1.066707" />
+            <Property name="y" value="0.199414" />
+            <Property name="z" value="-0.480925" />
+          </Property>
+        </Property>
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="-0.00038" />
+          <Property name="y" value="1.384704" />
+          <Property name="z" value="2.1E-05" />
+        </Property>
+        <Property name="Radius" value="1.644543" />
+      </Property>
+      <Property name="NodesCost" value="84" />
+      <Property name="TimeCost" value="109159" />
+      <Property name="PhysicsCost" value="1" />
+      <Property name="MeshesCost" value="27" />
+      <Property name="InstanceNodesCost" value="3" />
+      <Property name="InstanceTimeCost" value="9161" />
+      <Property name="InstanceMeshesCost" value="2" />
+      <Property name="LastProfiledTimestamp" value="1661743845" />
+      <Property name="InstanceLastProfiledTimestamp" value="1661404091" />
+]],
+	["BATTERY"] = [[
+      <Property name="MagicData" value="TkMagicModelData.xml">
+        <Property name="Vertices">
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="4" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="-2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="-2.025391" />
+          </Property>
+          <Property value="Vector3f.xml">
+            <Property name="x" value="2.025391" />
+            <Property name="y" value="0" />
+            <Property name="z" value="2.025391" />
+          </Property>
+        </Property>
+        <Property name="Centre" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="2" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="Radius" value="2.997921" />
+      </Property>
+      <Property name="NodesCost" value="7" />
+      <Property name="TimeCost" value="29745" />
+      <Property name="PhysicsCost" value="1" />
+      <Property name="MeshesCost" value="5" />
+      <Property name="InstanceNodesCost" value="35" />
+      <Property name="InstanceTimeCost" value="52732" />
+      <Property name="InstanceMeshesCost" value="25" />
+      <Property name="LastProfiledTimestamp" value="1667279869" />
+      <Property name="InstanceLastProfiledTimestamp" value="1667186766" />
+]],
+}
+-- print(ID .. [[ is using ]] .. AUTO_PART_DATA[POWER_GROUP])
+return [[
+	<Property value="GcBaseBuildingPartData.xml">
+      <Property name="PartID" value="]] .. ID .. [[" />
+      <Property name="Style" value="GcBaseBuildingPartStyle.xml">
+        <Property name="Style" value="]] .. STYLE .. [[" />
+      </Property>
+]] .. AUTO_PART_DATA[POWER_GROUP] .. [[  
     </Property>
 ]]
 end
@@ -10097,10 +10470,11 @@ for i,j in pairs(KIBBLES_OBJPROD) do
 	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], SNAPPING_DISTANCE)
 	EXPORT_PRODUCTS_LIST[i+1] = GetBaseProduct(j["OBJECT"]["ID"],j["PRODUCT"]["Name"],j["PRODUCT"]["NameLower"],j["PRODUCT"]["Subtitle"],j["PRODUCT"]["Description"],j["PRODUCT"]["Icon"],j["PRODUCT"]["Requirements"])
 	EXPORT_PARTS_LIST[i+1] = GetBaseBuildingPart(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Model"], OVERRIDE_INACTIVE)
-	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData(j["OBJECT"]["ID"], j["OBJECT"]["Style"])
+	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Connection"])
 	EXPORT_COST_LIST[i+1] = GetBaseBuildingCost(j["OBJECT"]["ID"], POP_IN_RATE)
 	EXPORT_KNOWNPRODUCTS_LIST[#EXPORT_KNOWNPRODUCTS_LIST+1] = GetKnownProducts(j["OBJECT"]["ID"])
 end
+
 -- END TAGS FOR MANUAL READING EXML_Helper FILES
 EXPORT_KNOWNPRODUCTS_LIST[#EXPORT_KNOWNPRODUCTS_LIST + 1] = ""
 EXPORT_COST_LIST[#EXPORT_COST_LIST + 1] = ""
@@ -10134,7 +10508,6 @@ BASEBUILD_ENTRIES =
 {
 					{
 						-- ["PRECEDING_KEY_WORDS"] = {"Objects"},
-						-- ["LINE_OFFSET"] 		= "+0",
 						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"}, --Changed 04 DEC 2021
 						["LINE_OFFSET"] 		= "-3",
 						["ADD"] 				= EXPORT_BASEOBJECTS
@@ -10154,7 +10527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_BATCHNAME"]		= "~~~KibblesNBits_COMPATIBILITY.pak",
 ["MOD_DESCRIPTION"]		= "Generates Metadata files and patch other mods with this script",
 ["MOD_AUTHOR"]			= "Kibbles, WinderTP, Babscoole",
-["NMS_VERSION"]			= "4.03",
+["NMS_VERSION"]			= "4.06",
 ["MODIFICATIONS"] 		= 
 	{
 		{
@@ -10166,7 +10539,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
-							["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_COST
 						}
 					},
@@ -10181,7 +10553,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
-							["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_PRODUCTS
 						}
 					},
@@ -10203,7 +10574,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"PartsData"},
-							["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_AUTOPARTDATA
 						}
 					}
@@ -10214,7 +10584,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-							["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_KNOWNPRODUCTS
 						}
 					},
@@ -10225,7 +10594,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 					-- {
 						-- {
 							-- ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-							-- ["LINE_OFFSET"] 		= "+0",
 							-- ["ADD"] 				= EXPORT_KNOWNPRODUCTS
 						-- }
 					-- },
