@@ -6,24 +6,24 @@ local desc = [[
   Re-arange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]--------------------------------------------------------------------------------------
-mod_version = 1.9
+mod_version = 1.95
 
 local icon = {
-	glitch		= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.HIDE_N_SEEK.MSHOP.DDS',
+	glitch		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.GLITCH.DDS',
 	outpost		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.OUTPOST.DDS',
 	shop		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SMALLBUILDING.DDS',
 	droppod		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.POD.DDS',
+	debris		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.COG.DDS',
 	abandoned	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.ABANDONED.DDS',
 	ruins		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUINS.DDS',
 	rune		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.RUNE.DDS',
-	ship		= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SHIP.MSHOP.DDS',
+	ship		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SHIP.DDS',
 	depot		= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.DEPOTRAID.MSHOP.DDS',
 	terminal	= 'TEXTURES/UI/HUD/ICONS/WIKI/TRADE3.DDS',
 	freighter	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.FREIGHTER.MSHOP.DDS',
-	debris		= 'TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/BASICPRODUCTION.DDS',
 	signal		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.SIGNAL.DDS',
-	observatory	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.ENTERORBIT.ON.DDS',  
-	factory		= 'TEXTURES/UI/HUD/ICONS/WIKI/BASE4.DDS',
+	observatory	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.OBSERVATORY.DDS',
+	factory		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.FACTORY.DDS',
 	tech		= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.SCIENCEMISSIONS.MSHOP.DDS',
 	chestruin	= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.COLLECT.MSHOP.DDS',
 	base		= 'TEXTURES/UI/HUD/ICONS/WIKI/BASE1.DDS',
@@ -32,7 +32,10 @@ local icon = {
 	dronehive	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.DRONEHIVE.DDS',
 	grave		= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.ATLASPATH.MSHOP.DDS',
 	settlement	= 'TEXTURES/UI/HUD/ICONS/WIKI/WIKI.SETTLEMENT.DDS',
-	water		= 'TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.WATER.ON.DDS',
+	w_abandoned	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.W.ABANDONED.DDS',
+	w_frighter	= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.W.FREIGHTER.DDS',
+	w_ruin		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.W.RUIN.DDS',
+	w_ship		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.W.SHIP.DDS'
 }
 
 local scan_table = {
@@ -47,10 +50,10 @@ local scan_table = {
 			{'DEPOT',			icon.depot},
 			{'TERMINAL',		icon.terminal},
 			{'ABANDONED',		icon.abandoned},
-			{'UW_ABANDONED',	icon.abandoned},
+			{'UW_ABANDONED',	icon.w_abandoned},
 			{'RUIN',			icon.ruins},
 			{'T_RUIN',			icon.chestruin},
-			{'UW_RUIN',			icon.ruins},
+			{'UW_RUIN',			icon.w_ruin},
 			{'MONOLITH',		icon.rune},
 			{'PLAQUE',			icon.rune},
 			{'RADIOTOWER',		icon.signal},
@@ -60,11 +63,11 @@ local scan_table = {
 			{'DISTRESS',		icon.ship},
 			{'DISTRESS_NPC',	icon.ship},
 			{'DEBRIS_NPC',		icon.debris},
-			{'UW_SHIPCRASH',	icon.ship},
+			{'UW_SHIPCRASH',	icon.w_ship},
 			{'TRAVEL_GRAVE',	icon.grave},
 			{'HOLO_TOWER',		icon.holohub},
 			{'CRASHED_FREIGHTER',icon.freighter},
-			{'UW_FREIGHTCRASH',	icon.freighter},
+			{'UW_FREIGHTCRASH',	icon.w_frighter},
 			{'NEW_BASE',		icon.base},
 			{'LIBRARY',			icon.library},
 			{'DRONE_HIVE',		icon.dronehive},
@@ -93,7 +96,7 @@ local scan_table = {
 		tech  = {'VEHICLE_SCAN1'},
 		scan  = {
 			{'ABANDONED',	icon.abandoned},
-			{'UW_ABANDONED',icon.water}
+			{'UW_ABANDONED',icon.w_abandoned}
 		}
 	},{
 		name  = 'VEHICLE_BUILDING_RUIN',
@@ -101,7 +104,7 @@ local scan_table = {
 		scan  = {
 			{'RUIN',		icon.ruins},
 			{'T_RUIN',		icon.chestruin},
-			{'UW_RUIN',		icon.water}
+			{'UW_RUIN',		icon.w_ruin}
 		}
 	},{
 		name  = 'VEHICLE_BUILDING_NPC',
@@ -131,14 +134,14 @@ local scan_table = {
 			{'DISTRESS',	icon.ship},
 			{'DISTRESS_NPC',icon.ship},
 			{'DEBRIS_NPC',	icon.debris},
-			{'UW_SHIPCRASH',icon.water}
+			{'UW_SHIPCRASH',icon.w_ship}
 		}
 	},{
 		name  = 'SUB_RADAR_SCAN_FREIGHTER',
 		tech  = {'VEHICLE_SCAN1'},
 		scan  = {
 			{'CRASHED_FREIGHTER',icon.freighter},
-			{'UW_FREIGHTCRASH',	icon.water}
+			{'UW_FREIGHTCRASH',	icon.w_frighter}
 		}
 	},{
 		name  = 'UI_RECOVER_BASE_MARKER',
@@ -163,19 +166,19 @@ local scan_table = {
 	---	submarine targets
 		name  = 'SUB_RADAR_SCAN_ABANDON',
 		tech  = {'SUB_BINOCS'},
-		scan  = {{'UW_ABANDONED', icon.abandoned}}
+		scan  = {{'UW_ABANDONED', icon.w_abandoned}}
 	},{
 		name  = 'SUB_RADAR_SCAN_RUIN',
 		tech  = {'SUB_BINOCS'},
-		scan  = {{'UW_RUIN', icon.ruins}}
+		scan  = {{'UW_RUIN', icon.w_ruin}}
 	},{
 		name  = 'SUB_RADAR_SCAN_CRASH',
 		tech  = {'SUB_BINOCS'},
-		scan  = {{'UW_SHIPCRASH', icon.ship}}
+		scan  = {{'UW_SHIPCRASH', icon.w_ship}}
 	},{
 		name  = 'SUB_RADAR_SCAN_FREIGHTER',
 		tech  = {'SUB_BINOCS'},
-		scan  = {{'UW_FREIGHTCRASH', icon.freighter}}
+		scan  = {{'UW_FREIGHTCRASH', icon.w_frighter}}
 	}
 }
 function scan_table:GetEntry(entry)
@@ -299,9 +302,6 @@ local function NewScanEvent(scn)
 		</Property>
 		<Property name="AllowOverriddenBuildings" value="True"/>
 		<Property name="ForceRestartInteraction" value="True"/>
-		<Property name="TriggerActions" value="GcScanEventTriggers.xml">
-			<Property name="Range" value="100"/>
-		</Property>
 		<Property name="OSDMessage" value="]]..scn.osd..[["/>
 		<Property name="MarkerLabel" value="]]..(scn.mlabel or '')..[["/>
 		<Property name="MarkerIcon" value="TkTextureResource.xml">
@@ -309,7 +309,7 @@ local function NewScanEvent(scn)
 		</Property>
 		<Property name="MessageDisplayTime" value="4"/>
 		<Property name="IconTime" value="4"/>
-		<Property name="TooltipTime" value="8"/>
+		<Property name="TooltipTime" value="6"/>
 		<Property name="ShowEndTooltip" value="True"/>
 		<Property name="TooltipMessage" value="]]..scn.tip..[["/>
 	</Property>
@@ -344,15 +344,20 @@ local function UpdateScanEventIcons()
 	return T
 end
 
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.0.1',
+	NMS_VERSION			= '4.06',
 	MOD_DESCRIPTION		= desc,
 	ADD_FILES = {
 		{
 			FILE_DESTINATION 	= 'METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.EXML',
 			FILE_CONTENT		= BuildVehicleScanTable()
+		},
+		{
+			EXTERNAL_FILE_SOURCE = 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Hud/Building/*.DDS',
+			FILE_DESTINATION	 = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/*.DDS',
 		}
 	},
 	MODIFICATIONS 		= {{

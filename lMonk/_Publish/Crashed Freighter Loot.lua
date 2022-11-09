@@ -3,7 +3,7 @@ local desc = [[
   Update crashed freighters loot with a better selection
   including a small chance for freighter upgrades
 ]]---------------------------------------------------------
-mod_version = 1.01
+mod_version = 1.03
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -87,14 +87,14 @@ local E_ = {
 	SLV='Salvage',
 
 	-- MultiItemRewardTypeEnum
-	PDT='Product',	SBT='Substance',	PRP='ProcProduct',
+	PDT='Product',		SBT='Substance',	PRP='ProcProduct',
 	-- PRT='ProcTech', not supported
 
 	-- RarityEnum
-	C='Common',		U='Uncommon',		R='Rare',
+	C='Common',			U='Uncommon',		R='Rare',
 
 	-- Money
-	UT='Units',		NN='Nanites',		HG='Specials', -- quicksilver
+	UT='Units',			NN='Nanites',		HG='Specials', -- quicksilver
 }
 
 local new_reward = {
@@ -109,76 +109,77 @@ local new_reward = {
 				f=R_MultiItem,
 				c=45,
 				{id='LAUNCHFUEL',		n=1, 	t=E_.PDT},
-				{pid=E_.DTC, 			q=2,	t=E_.PRP},
+				{id='BP_SALVAGE',		n=3, 	t=E_.PDT},
+				{pid=E_.DTC, 			q=2,	t=E_.PRP}
 			},
 			{
 				f=R_MultiItem,
 				c=45,
-				{id='ANTIMATTER',		n=1, 	t=E_.PDT},
-				{id='AM_HOUSING',		n=1, 	t=E_.PDT},
+				{id='ANTIMATTER',		n=2, 	t=E_.PDT},
+				{id='AM_HOUSING',		n=2, 	t=E_.PDT},
+				{id='TECHFRAG',			n=230, 	t=E_.SBT}
 			},
 			{
 				f=R_MultiItem,
 				c=35,
 				{id='FRIG_TOKEN',		n=1, 	t=E_.PDT},
-				{id='SOULFRAG',			n=34, 	t=E_.SBT},
+				{id='TIMEMILK',			n=94, 	t=E_.SBT}
 			},
 			{
 				f=R_MultiItem,
 				c=35,
 				{id='WEAP_INV_TOKEN',	n=1, 	t=E_.PDT},
-				{id='AF_METAL',			n=27, 	t=E_.SBT},
+				{id='AF_METAL',			n=117, 	t=E_.SBT}
 			},
 			{id=E_.UT,	n=150000,	x=260000,	c=20,	f=R_Money},
 			{
 				f=R_MultiItem,
 				{id='FARMPROD1',		n=1, 	t=E_.PDT},	-- Acid
-				{id='WORMDUST',			n=83, 	t=E_.SBT},
+				{id='WORMDUST',			n=105, 	t=E_.SBT},
 				c=25,
 			},
 			{
 				f=R_MultiItem,
 				c=25,
 				{id='FARMPROD5',		n=1, 	t=E_.PDT},	-- Poly Fibre
-				{id='WORMDUST',			n=83, 	t=E_.SBT},
+				{id='TIMEDUST',			n=94, 	t=E_.SBT}
 			},
 			{
 				f=R_MultiItem,
 				c=25,
 				{id='SALVAGE_TECH8',	n=1, 	t=E_.PDT},	-- Subatomic Regulators
-				{id='SPECIAL_POOP',		n=91, 	t=E_.SBT},
+				{id='SPECIAL_POOP',		n=203, 	t=E_.SBT}
 			},
 			{
 				f=R_MultiItem,
 				c=25,
 				{id='SALVAGE_TECH7',	n=1, 	t=E_.PDT},	-- Recycled Circuitry
-				{id='SPECIAL_POOP',		n=91, 	t=E_.SBT},
+				{id='TIMEMILK',			n=91, 	t=E_.SBT}
 			},
 			{
 				f=R_MultiItem,
 				c=2,
 				{id='FREI_INV_TOKEN',	n=2, 	t=E_.PDT},	-- freighter inv
-				{id='ROBOT1',			n=77, 	t=E_.SBT},
+				{id='ROBOT1',			n=303, 	t=E_.SBT}
 			},
-
 			-- freighter hyper
 			{
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRH, 		q=0,	t=E_.PRP},
-				{id='SPACEGUNK4',	n=187, 	t=E_.SBT},
+				{id='CASING',		n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=2,
 				{pid=E_.FRH, 		q=1,	t=E_.PRP},
-				{id='CASING',		n=1, 	t=E_.PDT},
+				{id='COMPOUND6',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRH, 		q=2,	t=E_.PRP},
-				{id='PRODFUEL2',	n=1, 	t=E_.PDT},
+				{id='PRODFUEL2',	n=1, 	t=E_.PDT}
 			},
 			{
 				c=1,
@@ -191,125 +192,125 @@ local new_reward = {
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRF, 		q=0,	t=E_.PRP},
-				{id='SPACEGUNK1',	n=187, 	t=E_.SBT},
+				{id='NANOTUBES',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=2,
 				{pid=E_.FRF, 		q=1,	t=E_.PRP},
-				{id='NANOTUBES',	n=1, 	t=E_.PDT},
+				{id='COMPOUND5',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRF, 		q=2,	t=E_.PRP},
-				{id='REPAIRKIT',	n=1, 	t=E_.PDT},
+				{id='REPAIRKIT',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRF, 		q=3,	t=E_.PRP},
-				{id='ILLEGAL_PROD5',n=1, 	t=E_.PDT},
+				{id='ILLEGAL_PROD5',n=1, 	t=E_.PDT}
 			},
 			-- freighter trade
 			{
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRT, 		q=0,	t=E_.PRP},
-				{id='SPACEGUNK2',	n=187, 	t=E_.SBT},
+				{id='JELLY',		n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=2,
 				{pid=E_.FRT, 		q=1,	t=E_.PRP},
-				{id='JELLY',		n=1, 	t=E_.PDT},
+				{id='COMPOUND4',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRT, 		q=2,	t=E_.PRP},
-				{id='BIO',			n=1, 	t=E_.PDT},
+				{id='BIO',			n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRT, 		q=3,	t=E_.PRP},
-				{id='ILLEGAL_PROD4',n=1, 	t=E_.PDT},
+				{id='ILLEGAL_PROD4',n=1, 	t=E_.PDT}
 			},
 			-- freighter combat
 			{
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRC, 		q=0,	t=E_.PRP},
-				{id='SPACEGUNK3',	n=187, 	t=E_.SBT},
+				{id='POWERCELL',	n=187, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=2,
 				{pid=E_.FRC, 		q=1,	t=E_.PRP},
-				{id='POWERCELL',	n=1, 	t=E_.PDT},
+				{id='COMPOUND3',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRC, 		q=2,	t=E_.PRP},
-				{id='MIRROR',		n=1, 	t=E_.PDT},
+				{id='MIRROR',		n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRC, 		q=3,	t=E_.PRP},
-				{id='ILLEGAL_PROD3',n=1, 	t=E_.PDT},
+				{id='ILLEGAL_PROD3',n=1, 	t=E_.PDT}
 			},
 			-- freighter mining
 			{
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRM, 		q=0,	t=E_.PRP},
-				{id='SPACEGUNK4',	n=187, 	t=E_.SBT},
+				{id='CATA_CRAFT',	n=187, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=2,
 				{pid=E_.FRM, 		q=1,	t=E_.PRP},
-				{id='CATA_CRAFT',	n=1, 	t=E_.PDT},
+				{id='COMPOUND2',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRM, 		q=2,	t=E_.PRP},
-				{id='MICROCHIP',	n=1, 	t=E_.PDT},
+				{id='MICROCHIP',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRM, 		q=3,	t=E_.PRP},
-				{id='ILLEGAL_PROD2',n=1, 	t=E_.PDT},
+				{id='ILLEGAL_PROD2',n=1, 	t=E_.PDT}
 			},
 			-- freighter explore
 			{
 				f=R_MultiItem,
 				c=5,
 				{pid=E_.FRE, 		q=0,	t=E_.PRP},
-				{id='SPACEGUNK5',	n=187, 	t=E_.SBT},
+				{id='CARBON_SEAL',	n=187, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=2,
 				{pid=E_.FRE, 		q=1,	t=E_.PRP},
-				{id='ILLEGAL_PROD2',n=1, 	t=E_.PDT},
+				{id='COMPOUND1',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRE, 		q=2,	t=E_.PRP},
-				{id='CARBON_SEAL',	n=1, 	t=E_.PDT},
+				{id='TRA_ENERGY5',	n=1, 	t=E_.PDT}
 			},
 			{
 				f=R_MultiItem,
 				c=1,
 				{pid=E_.FRE, 		q=3,	t=E_.PRP},
-				{id='ILLEGAL_PROD1',n=1, 	t=E_.PDT},
+				{id='ILLEGAL_PROD1',n=1, 	t=E_.PDT}
 			}
 		}
 	}
@@ -358,7 +359,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Crashed Freighter Loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.05',
+	NMS_VERSION			= '4.06',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

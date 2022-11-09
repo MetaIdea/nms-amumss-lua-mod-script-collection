@@ -8,11 +8,11 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.scanned fauna icon replace.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.06',
 	MOD_DESCRIPTION		= desc,
 	ADD_FILES = {
 		{
-			EXTERNAL_FILE_SOURCE= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/UI/CreatureDiscovered/CREATURE.DISCOVERED.DDS',
+			EXTERNAL_FILE_SOURCE= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Hud/CREATURE.DISCOVERED.DDS',
 			FILE_DESTINATION	= 'TEXTURES/UI/HUD/CREATURE.DISCOVERED.DDS'
 		}
 	},
