@@ -2,7 +2,7 @@
 local desc = [[
   Replace space pirates & raids loot with a more varied selection
 ]]------------------------------------------------------------------------
-mod_version = 1.57
+mod_version = 1.58
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -93,14 +93,14 @@ local E_ = {
 	SLV='Salvage',
 
 	-- MultiItemRewardTypeEnum
-	PDT='Product',	SBT='Substance',	PRP='ProcProduct',
+	PDT='Product',		SBT='Substance',	PRP='ProcProduct',
 	-- PRT='ProcTech', not supported
 
 	-- RarityEnum
-	C='Common',		U='Uncommon',		R='Rare',
+	C='Common',			U='Uncommon',		R='Rare',
 
 	-- Money
-	UT='Units',		NN='Nanites',		HG='Specials', -- quicksilver
+	UT='Units',			NN='Nanites',		HG='Specials', -- quicksilver
 }
 
 local new_reward = {
@@ -231,7 +231,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Loot pirates loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.05',
+	NMS_VERSION			= '4.06',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
