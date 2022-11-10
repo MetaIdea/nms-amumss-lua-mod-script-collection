@@ -1,0 +1,72 @@
+DOCUMENTATION is coming later
+--
+if you have any question, or issue, ask me on discord,
+https://discord.gg/UPumAssAph
+it will also help me to establish the documentation.
+--
+- You will need RGOG ( REDMAS GAME OVERHAUL GENERATOR ) to EDIT, MERGE, or UPDATE any "___Redmas_" MODS 
+( use the lua coming from RGOG , not the one in the standalone mods )
+
+How to update ?
+
+version 1.09 to version 1.1
+--> replace everything.
+
+changelog :
+V1.1
+o Revived gameoverhauls 
+- Sci Fi Fantasy Gameoverhaul
+- NMS Fantasy Gameoverhaul
+- NMS Fantasy 2.0 Gameoverhaul
+- NMS Fantasy SYNTHESIS Gameoverhaul
+- NMS Fantasy ORIGINS Gameoverhaul
+o New features : 
+- Debug mode ( force features disabled if needed )
+- Merge With
+- Ergonomy improvements
+- Script optimisations
+o generator fix :
+- Fixed a crash that appeared if you disabled sky biomes.
+o new feature:
+- 3 new terrains shapes generation options ( Sci-fi Fantasy / Epic Fantasy / Euphoria )
+
+--------------------------------------------------------
+-- TEMP. DISABLED FEATURES 
+
+CAVE_BIOMES_FEATURE = "OFF" -- under maintenance
+MINING_SPEED = "1" -- MBINCOMPILER ISSUE
+NEWGAME_BONUS_FEATURES = "OFF" -- MBINCOMPILER ISSUE
+GIANT_MECHS_BETA_FEATURE = "OFF " -- MBINCOMPILER ISSUE
+NEW_INTERACTIONS_FEATURE = "OFF" -- MBINCOMPILER ISSUE
+
+-----------------------------------------------------
+
+Advices:
+
+-You should always have 1 "REDMAS" pak in the mods folder.
+
+- Constructs : if you dont have have downloaded Constructs ,
+https://www.nexusmods.com/nomanssky/mods/323 ( only the "core" .pak is needed ),
+make sure to turn ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF",
+
+- If you want to mix several of my mods, use the  "CUSTOM MOD"
+
+- If you want to merge my mods with another mod(s), place the other mod(s) 
+inside "_Engine\AMUMSS\ModScript" before running the "build mod"
+
+- tips : 
+in order to gain time ,
+use AMUMSS in "Lean" mode for generating the full overhaul ( estimated time 10 minutes in "Lean" mode) 
+
+
+Install :
+-- do it once--
+- EDIT "STEP_1_ENTER_NMS_FOLDER_HERE_BEFORE_INSTALL" with your own NMS folder location.
+- RUN "STEP_2_INSTALL_Redmas_Game_Overhaul_Generator.bat"
+- Go to "Mods Generation"
+----------------
+
+Credits :
+This tool was only possible thanks to "AMUMSS" TOOL
+created by Mjstral,
+developed/maintained by Wbertro'

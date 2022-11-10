@@ -12,11 +12,6 @@
 -- ------------------You can configure the overhaul from the following VARs-------------------------------- --
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
--- Main Features enabler -- ----------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
-DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
-PERFORMANCE_MODE = "OFF" --( Putting ON will reduce CPU-DEMANDING FEATURES )
-MULTIPLAYER_MODE = "OFF" --( Put On if you play heavily in Multiplayer )
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
 INIT = "SCIFI_PRESET"
@@ -25,6 +20,10 @@ INIT = "SCIFI_PRESET"
 -- EUPHORIA_PRESET
 -- SCIFI_PRESET
 -- SCIFI_FANTASY_PRESET
+-- FANTASY_PRESET
+-- FANTASY_2_PRESET
+-- FANTASY_SYNTHESIS_PRESET
+-- FANTASY_ORIGINS_PRESET
 -------------------------------
 -- CUSTOM_PRESET
 -- TEST_PRESET

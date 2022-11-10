@@ -17,13 +17,7 @@
 -- ------------------You can configure the overhaul from the following VARs-------------------------------- --
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
--- Main Features enabler -- ----------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
-DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
-PERFORMANCE_MODE = "OFF" --( Putting ON will reduce CPU-DEMANDING FEATURES )
-MULTIPLAYER_MODE = "OFF" --( Put On if you play heavily in Multiplayer )
-----------------------------------------------------------------------------------
--------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 INIT = "EUPHORIA_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
@@ -158,7 +152,7 @@ CUSTOM_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EUPHORIA", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
                 ["TERRAIN_HEIGHT_MAX"] = "140",
             },
@@ -242,4 +236,3 @@ CUSTOM_PRESET ={
         ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
     }
 }
-

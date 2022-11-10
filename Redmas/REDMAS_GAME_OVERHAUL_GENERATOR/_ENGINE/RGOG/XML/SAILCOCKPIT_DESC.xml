@@ -1,39 +1,6 @@
     <Property value="TkResourceDescriptorList.xml">
       <Property name="TypeId" value="_ENGINE_" />
       <Property name="Descriptors">
-        <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_ENGINE_BV" />
-          <Property name="Name" value="_Engine_BV" />
-          <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/ENGINE/ENGINE_B/ENGINEB.SCENE.MBIN" />
-            </Property>
-          </Property>
-          <Property name="Chance" value="0" />
-          <Property name="Children" />
-        </Property>
-        <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_ENGINE_CV" />
-          <Property name="Name" value="_Engine_CV" />
-          <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/ENGINE/ENGINE_C/ENGINEC.SCENE.MBIN" />
-            </Property>
-          </Property>
-          <Property name="Chance" value="0" />
-          <Property name="Children" />
-        </Property>
-        <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_ENGINE_DV" />
-          <Property name="Name" value="_Engine_DV" />
-          <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/ENGINE/ENGINE_D/ENGINED.SCENE.MBIN" />
-            </Property>
-          </Property>
-          <Property name="Chance" value="0" />
-          <Property name="Children" />
-        </Property>
 		<Property value="TkResourceDescriptorData.xml">
           <Property name="Id" value="_ENGINE_BR" />
           <Property name="Name" value="_Engine_BR" />

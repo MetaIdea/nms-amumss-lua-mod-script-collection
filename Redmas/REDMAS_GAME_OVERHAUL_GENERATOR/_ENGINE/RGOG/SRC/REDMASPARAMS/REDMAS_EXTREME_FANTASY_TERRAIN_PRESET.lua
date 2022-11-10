@@ -103,9 +103,9 @@ REDMAS_EXTREME_FANTASY_TERRAIN_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
-                ["TERRAIN_HEIGHT_MAX"] = "14000",
+                ["TERRAIN_HEIGHT_MAX"] = "840",
             },
             ["BIOMES_FEATURES"] =
             {
