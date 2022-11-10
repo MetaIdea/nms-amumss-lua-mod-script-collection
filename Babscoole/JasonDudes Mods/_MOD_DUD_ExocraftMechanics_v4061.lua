@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] = "_MOD_DUD_ExocraftMechanics_v4061.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "JasonDude7116",
-["LUA_AUTHOR"]      = "Babscoole",
+["LUA_AUTHOR"]      = "Babscoole and Wbertro",
 ["NMS_VERSION"]     = "4.06",
 ["MODIFICATIONS"]   = 
 	{
@@ -358,17 +358,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"Value",	"45000.000000"},
 							},
-						},
+						},					
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight1"},
-							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["LINE_OFFSET"] = "+52",
-							["REMOVE"] = "LINE",
-						},						
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight1"},
-							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["ADD_OPTION"] = "ADDafterSECTION",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Children","IGNORE"},
+							},
+							["ADD_OPTION"] = "REPLACEatLINE",
 							["ADD"] =
 [[
           <Property name="Children">
@@ -467,14 +464,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight2"},
-							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["LINE_OFFSET"] = "+52",
-							["REMOVE"] = "LINE",
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "Lights_spotLight2"},
-							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["ADD_OPTION"] = "ADDafterSECTION",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Children","IGNORE"},
+							},
+							["ADD_OPTION"] = "REPLACEatLINE",
 							["ADD"] =
 [[
           <Property name="Children">
@@ -559,47 +553,86 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["FOREACH_SKW_GROUP"] =
 							{
+								{"Name","spotLight1",},
 								{"Name","spotLight2",},
 								{"Name","spotLight3",}, 
 								{"Name","spotLight4",},  
 							},  
 							["REMOVE"]  = "SECTION",  
-						}, 
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1"},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"RotX",	"-20.62733"},
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1", "Name","FOV",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"75.275394"},
-							},
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1", "Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Value",	"45000.000000"},
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1"},
-							["LINE_OFFSET"] = "+68",
-							["REPLACE_TYPE"] = "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[<Property name="Children" />]],	[[<Property name="Children">]] },
-							}
 						},				
 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1"},
+							["SPECIAL_KEY_WORDS"]  = {"Name", "RearLight"},
 							["ADD_OPTION"] = "ADDafterSECTION",
 							["ADD"] =
 [[
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="spotLight1" />
+          <Property name="NameHash" value="422545419" />
+          <Property name="Type" value="LIGHT" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-0.502999" />
+            <Property name="TransY" value="1.10516" />
+            <Property name="TransZ" value="2.461668" />
+            <Property name="RotX" value="-20.62733" />
+            <Property name="RotY" value="180" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="23.547716" />
+            <Property name="ScaleY" value="23.547716" />
+            <Property name="ScaleZ" value="23.547716" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="FOV" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="75.275394" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="FALLOFF" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="linear" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="FALLOFF_RATE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="INTENSITY" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="45000.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="COL_R" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="COL_G" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="COL_B" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="COOKIE_IDX" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="-1" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="VOLUMETRIC" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="MATERIAL" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children">
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="spotLight3" />
               <Property name="NameHash" value="282392410" />
@@ -810,18 +843,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1"},
-							["LINE_OFFSET"] = "+68",
-							["REMOVE"] = "LINE",
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight1"},
-							["LINE_OFFSET"] = "+67",
-							["REMOVE"] = "LINE",
 						},					
 					},
 				},
@@ -845,14 +867,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight2"},
-							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["LINE_OFFSET"] = "+52",
-							["REMOVE"] = "LINE",
-						},						
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight2"},
-							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["ADD_OPTION"] = "ADDafterSECTION",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"Children","IGNORE"},
+							},
+							["ADD_OPTION"] = "REPLACEatLINE",
 							["ADD"] =
 [[
                       <Property name="Children">
@@ -951,14 +970,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight3"},
-							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["LINE_OFFSET"] = "+52",
-							["REMOVE"] = "LINE",
-						},	
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name", "spotLight3"},
-							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["ADD_OPTION"] = "ADDafterSECTION",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Children","IGNORE"},
+							},
+							["ADD_OPTION"] = "REPLACEatLINE",
 							["ADD"] =
 [[
                       <Property name="Children">
