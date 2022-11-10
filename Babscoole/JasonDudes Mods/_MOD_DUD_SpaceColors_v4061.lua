@@ -626,10 +626,10 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]  = "_MOD_DUD_SpaceColors_v3936.pak",
+    ["MOD_FILENAME"]  = "_MOD_DUD_SpaceColors_v4061.pak",
     ["MOD_AUTHOR"]    = "Jasondude7116",
     ["LUA_AUTHOR"]    = "Jackty89, WinderTP, and Babscoole",
-    ["NMS_VERSION"]   = "3.93",
+    ["NMS_VERSION"]   = "4.06",
     ["MODIFICATIONS"] =
     {
         {

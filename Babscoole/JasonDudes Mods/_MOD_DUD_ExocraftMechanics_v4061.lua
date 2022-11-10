@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] = "_MOD_DUD_ExocraftMechanics_v4031.pak",
+["MOD_FILENAME"] = "_MOD_DUD_ExocraftMechanics_v4061.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.05",
+["NMS_VERSION"]     = "4.06",
 ["MODIFICATIONS"]   = 
 	{
 		{

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4052.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4061.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.05",
+["NMS_VERSION"]     = "4.06",
 ["MOD_DESCRIPTION"] = "",
 ["MODIFICATIONS"]   =
 	{
@@ -174,7 +174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["ADD"] =
 [[
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="50" />
+                <Property name="PercentageChance" value="33" />
                 <Property name="Reward" value="GcRewardStanding.xml">
                   <Property name="Race" value="GcAlienRace.xml">
                     <Property name="AlienRace" value="Explorers" />
@@ -185,7 +185,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="50" />
+                <Property name="PercentageChance" value="33" />
                 <Property name="Reward" value="GcRewardStanding.xml">
                   <Property name="Race" value="GcAlienRace.xml">
                     <Property name="AlienRace" value="Traders" />
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="LabelID" value="" />
               </Property>
               <Property value="GcRewardTableItem.xml">
-                <Property name="PercentageChance" value="50" />
+                <Property name="PercentageChance" value="33" />
                 <Property name="Reward" value="GcRewardStanding.xml">
                   <Property name="Race" value="GcAlienRace.xml">
                     <Property name="AlienRace" value="Warriors" />
