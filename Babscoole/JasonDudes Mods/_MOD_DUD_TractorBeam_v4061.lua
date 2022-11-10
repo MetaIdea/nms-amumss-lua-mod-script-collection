@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "_MOD_DUD_TractorBeam_v4031.pak", 
+["MOD_FILENAME"]    = "_MOD_DUD_TractorBeam_v4061.pak", 
 ["MOD_AUTHOR"]      = "jasondude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.05",
+["NMS_VERSION"]     = "4.06",
 ["MOD_DESCRIPTION"] = "",
 ["MODIFICATIONS"]   = 
 	{
