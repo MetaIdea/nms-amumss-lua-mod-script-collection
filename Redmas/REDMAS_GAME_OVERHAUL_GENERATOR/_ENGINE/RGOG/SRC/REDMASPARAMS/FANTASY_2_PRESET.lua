@@ -155,7 +155,7 @@ FANTASY_2_PRESET ={
         -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
         -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
         -- VY-KEEN    /or/   ANOMALY      /or/      GEK
-        ["CHAR_PRESETS_SKINS"] = "GIRLY"
+        ["CHAR_PRESETS_SKINS"] = "ANOMALY"
     },
     ["NEWGAME_BONUS_FEATURES"] ={
          ["NEWGAME_BONUSES"] = "OFF",
