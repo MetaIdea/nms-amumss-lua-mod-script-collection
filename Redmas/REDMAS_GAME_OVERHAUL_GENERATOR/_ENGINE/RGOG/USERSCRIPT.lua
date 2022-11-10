@@ -1,3 +1,897 @@
+-- ************************************************************************************************************
+-- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
+--
+-- REDMAS GAME OVERHAUL BUILDER is a .lua script that allows to,
+-- using AMUMSS created by Mjstral,
+-- generate / update / modify easily, every single mod that i've done
+-- + Easy to tweak at your own taste. -- If you use this tool to create your mods, credits will be highly appreciated.
+-- It looks like it is lot of of works, but reality is x100000000 times worst.
+-- ***********************************************************************************************************
+-- -----------------------------------------------------------------------------------------------------------
+-- -----------------------------------------------------------------------------------------------------------
+-- ------------------You can configure the overhaul from the following VARs-------------------------------- --
+--------------------------------------------------------------------------------------------------------------
+-- -----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+INIT = "FANTASY_ORIGINS_PRESET"
+-- presets list ( make sure to edit the preset selected by the "INIT" var )
+------------------------------------
+-- EUPHORIA_PRESET
+-- SCIFI_PRESET
+-- SCIFI_FANTASY_PRESET
+-- FANTASY_PRESET
+-- FANTASY_2_PRESET
+-- FANTASY_SYNTHESIS_PRESET
+-- FANTASY_ORIGINS_PRESET
+-------------------------------
+-- CUSTOM_PRESET
+-- TEST_PRESET
+---------------------------------
+-- REDMAS_CHALLENGE_MODE_PRESET
+-- REDMAS_NEW_GAME_BONUSES_PRESET
+-- REDMAS_START_AS_PRESET
+-- REDMAS_SPACE_OVERHAUL_PRESET
+-- REDMAS_SPACESHIPS_GENERATION_PRESET
+-- REDMAS_E3PIC_FANTASY_PRESET
+-- REDMAS_EASY_MODE_PRESET
+-- REDMAS_SANDWORM_OVERHAUL_PRESET
+-- REDMAS_SPAWNER_FOR_CONSTRUCTS_BY_MSSP_PRESET
+-- REDMAS_EXTREME_FANTASY_TERRAIN_PRESET
+-- REDMAS_VISUAL_OVERHAUL_PRESET
+-- REDMAS_SUPER_VEHICLES_PRESET
+-- REDMAS_CAMERA_OVERHAUL_PRESET
+-- REDMAS_MENU_REVISION_PRESET
+-- NEW_GAMEPLAY_MECHANICS_PRESET
+-- PLAYER_GAMEPLAY_REVISION_PRESET
+-- INSTANT_MINING_PRESET
+-- METAL_SPACESHIPS_PRESET
+-- DARKSPACE_COLORS_PRESET
+-- REDMAS_PROCEDURAL_SPACE_CRASH_MISSION_PRESET
+----------------------------------------------------------------------------------------
+--
+-- ( Ctrl + S to save ) 
+--
+------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+-- **ADVANCED PARAMS**
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
+PERFORMANCE_MODE = "OFF" --( Putting ON will reduce CPU-DEMANDING FEATURES )
+MULTIPLAYER_MODE = "OFF" --( Put On if you play heavily in Multiplayer )
+----------------------------------------------------------------------------------
+-- SPACESHIPS CONTROLS REWORK
+SPACESHIPS_SPACE_THRUSTFORCE = 140
+SPACESHIPS_SPACE_MAXPSEED = 2420
+SPACESHIPS_SPACE_FALLOFF = 0.007
+SPACESHIPS_SPACE_BOOST_FORCE = SPACESHIPS_SPACE_THRUSTFORCE*4
+SPACESHIPS_SPACE_BOOST_MAX = 2420
+--
+SPACESHIPS_PLANET_THRUSTFORCE = 50
+SPACESHIPS_PLANET_MAXPSEED = 222
+SPACESHIPS_PLANET_FALLOFF = 0.007
+SPACESHIPS_PLANET_BOOST_FORCE = 120
+SPACESHIPS_PLANET_BOOST_MAX = 280
+--
+SPACESHIPS_SMALL_SPEED_MULTIPLIER = 1.111
+SPACESHIPS_HEAVY_SPEED_MULTIPLIER = 1
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-- SPACESHIPS CAMERAS
+SMALL_SPACESHIPS_MIN_DIST = 1
+SMALL_SPACESHIPS_MAX_DIST = 60
+SMALL_SPACESHIPS_UP_MIN_DIST = 0
+SMALL_SPACESHIPS_UP_MAX_DIST = 15
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+LONG_SPACESHIPS_MIN_DIST = 5
+LONG_SPACESHIPS_MAX_DIST = 60
+LONG_SPACESHIPS_UP_MIN_DIST = 1
+LONG_SPACESHIPS_UP_MAX_DIST = 25
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+SMALL_SPACESHIPS_MIN_DIST = tostring(SMALL_SPACESHIPS_MIN_DIST)
+SMALL_SPACESHIPS_MAX_DIST = tostring(SMALL_SPACESHIPS_MAX_DIST)
+SMALL_SPACESHIPS_UP_MIN_DIST = tostring(SMALL_SPACESHIPS_UP_MIN_DIST)
+SMALL_SPACESHIPS_UP_MAX_DIST = tostring(SMALL_SPACESHIPS_UP_MAX_DIST)
+-----------------------------------------
+LONG_SPACESHIPS_MIN_DIST = tostring(LONG_SPACESHIPS_MIN_DIST)
+LONG_SPACESHIPS_MAX_DIST = tostring(LONG_SPACESHIPS_MAX_DIST)
+LONG_SPACESHIPS_UP_MIN_DIST = tostring(LONG_SPACESHIPS_UP_MIN_DIST)
+LONG_SPACESHIPS_UP_MAX_DIST = tostring(LONG_SPACESHIPS_UP_MAX_DIST)
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-- ASTEROID FIELDS PARAMS
+--
+ASTEROIDS_FANTASY_PRESET ={
+	["RARE_ASTEROID_SPACING_MULTIPLIER"] = "1",
+	["LARGE_ASTEROID_SPACING_MULTIPLIER"] = "52",
+	["ASTEROID_SPACING_MULTIPLIER"] = "12",
+	["RARE_ASTEROID_SCALE_MULTIPLIER"] = "64",
+	["LARGE_ASTEROID_SCALE_MULTIPLIER"] = "52",
+	["ASTEROID_SCALE_MULTIPLIER"] = "4"
+}
+--
+ASTEROIDS_GLUED_PRESET ={
+	["RARE_ASTEROID_SPACING_MULTIPLIER"] = "1",
+	["LARGE_ASTEROID_SPACING_MULTIPLIER"] = "16",
+	["ASTEROID_SPACING_MULTIPLIER"] = "4",
+	["RARE_ASTEROID_SCALE_MULTIPLIER"] = "16",
+	["LARGE_ASTEROID_SCALE_MULTIPLIER"] = "8",
+	["ASTEROID_SCALE_MULTIPLIER"] = "2"
+}
+--
+ASTEROIDS_REALISTIC_PRESET ={
+	["RARE_ASTEROID_SPACING_MULTIPLIER"] = "1",
+	["LARGE_ASTEROID_SPACING_MULTIPLIER"] = "64",
+	["ASTEROID_SPACING_MULTIPLIER"] = "16",
+	["RARE_ASTEROID_SCALE_MULTIPLIER"] = "32",
+	["LARGE_ASTEROID_SCALE_MULTIPLIER"] = "16",
+	["ASTEROID_SCALE_MULTIPLIER"] = "4"
+}
+--------------------------------------------------------------------------------------------------------------
+PROCEDURALMAX = 100  -- This is the number of procedural generated new params for this script
+--------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+-- -----------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------
+--
+-- ( Ctrl + S to save ) 
+--
+------------------------------------------------------------------------------------------
+FANTASY_SYNTHESIS_PRESET ={
+	["MODNAME"] = "NMS_FANTASY_SYNTHESIS_GAME-OVERHAUL",
+	["VISUAL_OVERHAUL_FEATURES"] =
+    {
+        ["VISUAL_OVERHAUL"] = "ON",
+        ["REDMAS_WATER_REFLECTIONS"] = "ON",
+        ["SPACE_BLUR_FEATURE"] = "OFF",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
+        ["BINOCULARS_TYPE"] = "SUN", -- CLEAR / CLEAR
+        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
+        ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- (REALISTIC / VANILLA / E3 )
+        ["SPACE_COLOURS_TYPE"] = "FANTASY", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "REALISTIC", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "OFF",
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "OFF",
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "OFF",
+    },
+    ["MENU_OVERHAUL_FEATURES"] =
+    { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
+        ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "E-E3-1", --"E-E3-1"   or another img name 
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
+        ["MENU_SPLASH_SCREEN"] = "SCIFI-BGM", --"E3-RUINS"   or another img name 
+        ["TRANSPARENT_OPTIONS_MENU"] = "ON",
+    },
+    ["CAMERA_FEATURES"] =
+    {
+	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
+	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
+    },
+    ["GAMEPLAY_FEATURES"] =
+    {
+        ["GAMEPLAY_OVERHAUL"] = "ON",
+        ["QOL_FEATURES"] =
+        {
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON",
+            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
+            ["NEW_INTERACTIONS_FEATURE"] = "ON",
+            ["ADVANCED_BUILDS_FEATURE"] = "ON",
+            ["FREE_POWER_ON_EM_GENERATORS"] = "ON",
+        },
+        ["ONFOOT_GAMEPLAY_FEATURES"] =
+        {
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["LONGER_STEATH_FEATURE"] = "OFF",
+            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON",
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
+            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "OFF",
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "ON",
+        },
+        ["SPACESHIPS_GAMEPLAY_FEATURES"] =
+        {
+          ["HOVER_MODE"] = "ON",
+          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON",
+        },
+        ["VEHICLES_FEATURES"] =
+        {
+            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON",
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF",
+            ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF", --  "KANEDA BIKE INSPIRED SKIN"
+            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
+            ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
+            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF", -- LARGER BEHIND WHEELS
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "OFF",
+            ["GIANT_MECHS_BETA_FEATURE"] = "ON",
+            ["MECHS_SIZE_MULTIPLIER"] = 4,  -- ( 2 to 10 -- adviced size : 3 )
+        },
+    },
+    ["CREATURES_FEATURES"] =
+    {
+        ["CREATURES_OVERHAUL"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
+        ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
+        ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
+        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
+        ["GIANTS_CREATURES_FEATURE"] = "ON",
+        ["GIANTS_MAX_SIZE"] = "64", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
+    },
+    ["GENERATION_FEATURES"] =
+    {
+        ["GENERATION_OVERHAUL"] = "ON",
+        ["COLORS_AUTO_GENERATION_FEATURES"] =
+        {
+			-- The script will procedurally generate new colours possibilties
+			-- different each time the overhaul is generated ( x100 by default).
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
+        },
+        ["PLANETS_GENERATION_FEATURES"] =
+        {
+            ["TERRAIN_SHAPES_FEATURES"] =
+            {
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
+                ["TERRAIN_HEIGHT_MAX"] = "140",
+            },
+            ["BIOMES_FEATURES"] =
+            {
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["FANTASY_BIOMES_FEATURE"] = "ON",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["STORM_BIOMES_FEATURES"] = "ON",
+                ["GIANTS_BIOMES_FEATURE"] = "OFF",
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
+                ["MONTAINS_BIOMES_FEATURE"] = "ON",
+                ["CAVE_BIOMES_FEATURE"] = "ON",
+            },
+            ["ASSETS_REPLACEMENTS_FEATURES"] =
+            {
+                ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFFN",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "OFF",
+            },
+        },
+        ["SPACE_GENERATION_FEATURES"] =
+        {
+            ["REDMAS_SPACE_GENERATION"] = "ON",
+            ["TRADING_ROUTES"] = "ON",
+            ["MASSIVE_FLEET"] = "ON",
+            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON",
+        },
+        ["SPACESHIPS_GENERATION_FEATURES"] =
+        {
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
+        },
+    },
+    ["SKINS"] =
+    {
+        ["CHARACTERS_SKINS_FEATURE"] = "ON",
+        -- (E3-DAMAGED or E3)
+        ["DRONE_PET_SKIN_FEATURE"] = "ON",
+		["DRONE_PET_SKIN"] = "E3-DAMAGED",
+        -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
+        -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
+        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
+        ["CHAR_PRESETS_SKINS"] = "ANOMALY"
+    },
+    ["NEWGAME_BONUS_FEATURES"] ={
+         ["NEWGAME_BONUSES"] = "OFF",
+		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
+		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
+		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_SHIP"] = "ALPHA_VECTOR",
+		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
+		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_MULTITOOL"] = "EXPLO1",
+    },
+    ["CHALLENGE_FEATURES"] =
+    {
+        ["CHALLENGE_MODE"] = "OFF",
+		["STRONG_CREATURES_FEATURE"] = "ON",
+        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
+        ["DARK_UNDERWATER"] = "OFF",
+        ["STRONG_PIRATES_FEATURE"] = "OFF",
+    },
+    ["EASY_MODE_FEATURES"] =
+    {
+        ["EASY_MODE"] = "ON",
+        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 4 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
+        ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
+        ["WARPCELL_USAGE_MULTIPLIER"] = 5,
+        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
+    }
+}
+
+
+----------------------------------------------------------------------------------------
+--
+-- ( Ctrl + S to save ) 
+--
+------------------------------------------------------------------------------------------
+FANTASY_ORIGINS_PRESET ={
+	["MODNAME"] = "NMS_FANTASY_ORIGINS_GAME-OVERHAUL",
+	["VISUAL_OVERHAUL_FEATURES"] =
+    {
+        ["VISUAL_OVERHAUL"] = "ON",
+        ["REDMAS_WATER_REFLECTIONS"] = "ON",
+        ["SPACE_BLUR_FEATURE"] = "ON",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
+        ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
+        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
+        ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- (REALISTIC / VANILLA / E3 )
+        ["SPACE_COLOURS_TYPE"] = "VANILLA", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "REALISTIC", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
+    },
+    ["MENU_OVERHAUL_FEATURES"] =
+    { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
+        ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name 
+        ["TRANSPARENT_OPTIONS_MENU"] = "ON",
+    },
+    ["CAMERA_FEATURES"] =
+    {
+	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
+	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
+    },
+    ["GAMEPLAY_FEATURES"] =
+    {
+        ["GAMEPLAY_OVERHAUL"] = "ON",
+        ["QOL_FEATURES"] =
+        {
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON",
+            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
+            ["NEW_INTERACTIONS_FEATURE"] = "ON",
+            ["ADVANCED_BUILDS_FEATURE"] = "ON",
+            ["FREE_POWER_ON_EM_GENERATORS"] = "ON",
+        },
+        ["ONFOOT_GAMEPLAY_FEATURES"] =
+        {
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["LONGER_STEATH_FEATURE"] = "ON",
+            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON",
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
+            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "OFF",
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
+        },
+        ["SPACESHIPS_GAMEPLAY_FEATURES"] =
+        {
+          ["HOVER_MODE"] = "ON",
+          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON",
+        },
+        ["VEHICLES_FEATURES"] =
+        {
+            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON",
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF",
+            ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF", --  "KANEDA BIKE INSPIRED SKIN"
+            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
+            ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
+            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
+            ["GIANT_MECHS_BETA_FEATURE"] = "OFF",
+            ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
+        },
+    },
+    ["CREATURES_FEATURES"] =
+    {
+        ["CREATURES_OVERHAUL"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
+        ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
+        ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
+        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
+        ["GIANTS_CREATURES_FEATURE"] = "ON",
+        ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
+    },
+    ["GENERATION_FEATURES"] =
+    {
+        ["GENERATION_OVERHAUL"] = "ON",
+        ["COLORS_AUTO_GENERATION_FEATURES"] =
+        {
+			-- The script will procedurally generate new colours possibilties
+			-- different each time the overhaul is generated ( x100 by default).
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
+        },
+        ["PLANETS_GENERATION_FEATURES"] =
+        {
+            ["TERRAIN_SHAPES_FEATURES"] =
+            {
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
+                ["TERRAIN_HEIGHT_MAX"] = "140",
+            },
+            ["BIOMES_FEATURES"] =
+            {
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["FANTASY_BIOMES_FEATURE"] = "ON",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["STORM_BIOMES_FEATURES"] = "ON",
+                ["GIANTS_BIOMES_FEATURE"] = "OFF",
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
+                ["MONTAINS_BIOMES_FEATURE"] = "ON",
+                ["CAVE_BIOMES_FEATURE"] = "ON",
+            },
+            ["ASSETS_REPLACEMENTS_FEATURES"] =
+            {
+                ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "OFF",
+            },
+        },
+        ["SPACE_GENERATION_FEATURES"] =
+        {
+            ["REDMAS_SPACE_GENERATION"] = "ON",
+            ["TRADING_ROUTES"] = "OFF",
+            ["MASSIVE_FLEET"] = "ON",
+            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON",
+        },
+        ["SPACESHIPS_GENERATION_FEATURES"] =
+        {
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
+        },
+    },
+    ["SKINS"] =
+    {
+        ["CHARACTERS_SKINS_FEATURE"] = "ON",
+        -- (E3-DAMAGED or E3)
+        ["DRONE_PET_SKIN_FEATURE"] = "ON",
+		["DRONE_PET_SKIN"] = "E3-DAMAGED",
+        -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
+        -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
+        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
+        ["CHAR_PRESETS_SKINS"] = "TRAVELLER"
+    },
+    ["NEWGAME_BONUS_FEATURES"] ={
+         ["NEWGAME_BONUSES"] = "OFF",
+		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
+		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
+		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_SHIP"] = "ALPHA_VECTOR",
+		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
+		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_MULTITOOL"] = "EXPLO1",
+    },
+    ["CHALLENGE_FEATURES"] =
+    {
+        ["CHALLENGE_MODE"] = "OFF",
+		["STRONG_CREATURES_FEATURE"] = "ON",
+        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
+        ["DARK_UNDERWATER"] = "OFF",
+        ["STRONG_PIRATES_FEATURE"] = "OFF",
+    },
+    ["EASY_MODE_FEATURES"] =
+    {
+        ["EASY_MODE"] = "ON",
+        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 4 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
+        ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
+        ["WARPCELL_USAGE_MULTIPLIER"] = 5,
+        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
+    }
+}
+
+
+----------------------------------------------------------------------------------------
+--
+-- ( Ctrl + S to save ) 
+--
+------------------------------------------------------------------------------------------
+FANTASY_2_PRESET ={
+	["MODNAME"] = "FANTASY_2.0_GAME-OVERHAUL",
+	["VISUAL_OVERHAUL_FEATURES"] =
+    {
+        ["VISUAL_OVERHAUL"] = "ON",
+        ["REDMAS_WATER_REFLECTIONS"] = "ON",
+        ["SPACE_BLUR_FEATURE"] = "ON",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
+        ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
+        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
+        ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
+        ["SPACE_COLOURS_TYPE"] = "FANTASY", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "REALISTIC", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
+    },
+    ["MENU_OVERHAUL_FEATURES"] =
+    { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
+        ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "LIBERTEUS", --"E-E3-1"   or another img name 
+        ["NMS_TITLE"] = "TITLE-ATLAS", --"TITLE-WAYPOINT"  -- "TITLE-ATLAS"  or another img name 
+        ["MENU_SPLASH_SCREEN"] = "SCIFI-BGM", --"E3-RUINS"  -- SCIFI-BGM -- or your image name
+        ["TRANSPARENT_OPTIONS_MENU"] = "ON",
+    },
+    ["CAMERA_FEATURES"] =
+    {
+	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
+	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
+    },
+    ["GAMEPLAY_FEATURES"] =
+    {
+        ["GAMEPLAY_OVERHAUL"] = "ON",
+        ["QOL_FEATURES"] =
+        {
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON",
+            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
+            ["NEW_INTERACTIONS_FEATURE"] = "ON",
+            ["ADVANCED_BUILDS_FEATURE"] = "ON",
+            ["FREE_POWER_ON_EM_GENERATORS"] = "ON",
+        },
+        ["ONFOOT_GAMEPLAY_FEATURES"] =
+        {
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["LONGER_STEATH_FEATURE"] = "ON",
+            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON",
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
+            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "ON",
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
+        },
+        ["SPACESHIPS_GAMEPLAY_FEATURES"] =
+        {
+          ["HOVER_MODE"] = "ON",
+          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON",
+        },
+        ["VEHICLES_FEATURES"] =
+        {
+            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON",
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "ON",
+            ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF", --  "KANEDA BIKE INSPIRED SKIN"
+            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
+            ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
+            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
+            ["GIANT_MECHS_BETA_FEATURE"] = "ON",
+            ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
+        },
+    },
+    ["CREATURES_FEATURES"] =
+    {
+        ["CREATURES_OVERHAUL"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
+        ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
+        ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
+        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
+        ["GIANTS_CREATURES_FEATURE"] = "ON",
+        ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
+    },
+    ["GENERATION_FEATURES"] =
+    {
+        ["GENERATION_OVERHAUL"] = "ON",
+        ["COLORS_AUTO_GENERATION_FEATURES"] =
+        {
+			-- The script will procedurally generate new colours possibilties
+			-- different each time the overhaul is generated ( x100 by default).
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
+        },
+        ["PLANETS_GENERATION_FEATURES"] =
+        {
+            ["TERRAIN_SHAPES_FEATURES"] =
+            {
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY",
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
+                ["TERRAIN_HEIGHT_MAX"] = "140",
+            },
+            ["BIOMES_FEATURES"] =
+            {
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["FANTASY_BIOMES_FEATURE"] = "ON",
+                ["SKY_BIOMES_FEATURE"] = "ON",
+                ["STORM_BIOMES_FEATURES"] = "ON",
+                ["GIANTS_BIOMES_FEATURE"] = "ON",
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
+                ["MONTAINS_BIOMES_FEATURE"] = "ON",
+                ["CAVE_BIOMES_FEATURE"] = "ON",
+            },
+            ["ASSETS_REPLACEMENTS_FEATURES"] =
+            {
+                ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON",
+            },
+        },
+        ["SPACE_GENERATION_FEATURES"] =
+        {
+            ["REDMAS_SPACE_GENERATION"] = "ON",
+            ["TRADING_ROUTES"] = "OFF",
+            ["MASSIVE_FLEET"] = "ON",
+            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON",
+        },
+        ["SPACESHIPS_GENERATION_FEATURES"] =
+        {
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
+        },
+    },
+    ["SKINS"] =
+    {
+        ["CHARACTERS_SKINS_FEATURE"] = "ON",
+        -- (E3-DAMAGED or E3)
+        ["DRONE_PET_SKIN_FEATURE"] = "ON",
+		["DRONE_PET_SKIN"] = "E3-DAMAGED",
+        -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
+        -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
+        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
+        ["CHAR_PRESETS_SKINS"] = "GIRLY"
+    },
+    ["NEWGAME_BONUS_FEATURES"] ={
+         ["NEWGAME_BONUSES"] = "OFF",
+		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
+		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
+		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_SHIP"] = "OUTLAW1",
+		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
+		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_MULTITOOL"] = "OUTLAW1",
+    },
+    ["CHALLENGE_FEATURES"] =
+    {
+        ["CHALLENGE_MODE"] = "OFF",
+		["STRONG_CREATURES_FEATURE"] = "ON",
+        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
+        ["DARK_UNDERWATER"] = "OFF",
+        ["STRONG_PIRATES_FEATURE"] = "OFF",
+    },
+    ["EASY_MODE_FEATURES"] =
+    {
+        ["EASY_MODE"] = "ON",
+        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 4 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
+        ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
+        ["WARPCELL_USAGE_MULTIPLIER"] = 5,
+        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
+    }
+}
+
+
+----------------------------------------------------------------------------------------
+--
+-- ( Ctrl + S to save ) 
+--
+------------------------------------------------------------------------------------------
+FANTASY_PRESET ={
+	["MODNAME"] = "NMS_FANTASY_GAME-OVERHAUL",
+	["VISUAL_OVERHAUL_FEATURES"] =
+    {
+        ["VISUAL_OVERHAUL"] = "ON",
+        ["REDMAS_WATER_REFLECTIONS"] = "ON",
+        ["SPACE_BLUR_FEATURE"] = "OFF",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
+        ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
+        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
+        ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- (REALISTIC / VANILLA / E3 )
+        ["SPACE_COLOURS_TYPE"] = "FANTASY", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
+    },
+    ["MENU_OVERHAUL_FEATURES"] =
+    { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
+        ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name 
+        ["TRANSPARENT_OPTIONS_MENU"] = "ON",
+    },
+    ["CAMERA_FEATURES"] =
+    {
+	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
+	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
+    },
+    ["GAMEPLAY_FEATURES"] =
+    {
+        ["GAMEPLAY_OVERHAUL"] = "ON",
+        ["QOL_FEATURES"] =
+        {
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON",
+            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
+            ["NEW_INTERACTIONS_FEATURE"] = "ON",
+            ["ADVANCED_BUILDS_FEATURE"] = "ON",
+            ["FREE_POWER_ON_EM_GENERATORS"] = "ON",
+        },
+        ["ONFOOT_GAMEPLAY_FEATURES"] =
+        {
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["LONGER_STEATH_FEATURE"] = "ON",
+            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON",
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
+            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "OFF",
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
+        },
+        ["SPACESHIPS_GAMEPLAY_FEATURES"] =
+        {
+          ["HOVER_MODE"] = "ON",
+          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON",
+        },
+        ["VEHICLES_FEATURES"] =
+        {
+            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON",
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON",
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF",
+            ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF", --  "KANEDA BIKE INSPIRED SKIN"
+            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
+            ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
+            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
+            ["GIANT_MECHS_BETA_FEATURE"] = "OFF",
+            ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
+        },
+    },
+    ["CREATURES_FEATURES"] =
+    {
+        ["CREATURES_OVERHAUL"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
+        ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
+        ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
+        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
+        ["GIANTS_CREATURES_FEATURE"] = "ON",
+        ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
+    },
+    ["GENERATION_FEATURES"] =
+    {
+        ["GENERATION_OVERHAUL"] = "ON",
+        ["COLORS_AUTO_GENERATION_FEATURES"] =
+        {
+			-- The script will procedurally generate new colours possibilties
+			-- different each time the overhaul is generated ( x100 by default).
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
+        },
+        ["PLANETS_GENERATION_FEATURES"] =
+        {
+            ["TERRAIN_SHAPES_FEATURES"] =
+            {
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
+                ["TERRAIN_HEIGHT_MAX"] = "140",
+            },
+            ["BIOMES_FEATURES"] =
+            {
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["FANTASY_BIOMES_FEATURE"] = "ON",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["STORM_BIOMES_FEATURES"] = "ON",
+                ["GIANTS_BIOMES_FEATURE"] = "OFF",
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
+                ["MONTAINS_BIOMES_FEATURE"] = "ON",
+                ["CAVE_BIOMES_FEATURE"] = "ON",
+            },
+            ["ASSETS_REPLACEMENTS_FEATURES"] =
+            {
+                ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "OFF",
+            },
+        },
+        ["SPACE_GENERATION_FEATURES"] =
+        {
+            ["REDMAS_SPACE_GENERATION"] = "ON",
+            ["TRADING_ROUTES"] = "OFF",
+            ["MASSIVE_FLEET"] = "ON",
+            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON",
+        },
+        ["SPACESHIPS_GENERATION_FEATURES"] =
+        {
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON",
+        },
+    },
+    ["SKINS"] =
+    {
+        ["CHARACTERS_SKINS_FEATURE"] = "ON",
+        -- (E3-DAMAGED or E3)
+        ["DRONE_PET_SKIN_FEATURE"] = "ON",
+		["DRONE_PET_SKIN"] = "E3-DAMAGED",
+        -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
+        -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
+        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
+        ["CHAR_PRESETS_SKINS"] = "ANOMALY"
+    },
+    ["NEWGAME_BONUS_FEATURES"] ={
+         ["NEWGAME_BONUSES"] = "OFF",
+		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
+		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
+		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_SHIP"] = "ALPHA_VECTOR",
+		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
+		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_MULTITOOL"] = "EXPLO1",
+    },
+    ["CHALLENGE_FEATURES"] =
+    {
+        ["CHALLENGE_MODE"] = "OFF",
+		["STRONG_CREATURES_FEATURE"] = "ON",
+        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
+        ["DARK_UNDERWATER"] = "OFF",
+        ["STRONG_PIRATES_FEATURE"] = "OFF",
+    },
+    ["EASY_MODE_FEATURES"] =
+    {
+        ["EASY_MODE"] = "ON",
+        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 4 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
+        ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
+        ["WARPCELL_USAGE_MULTIPLIER"] = 5,
+        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
+    }
+}
+
 
 ----------------------------------------------------------------------------------------
 --
@@ -103,7 +997,7 @@ CUSTOM_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EUPHORIA", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
                 ["TERRAIN_HEIGHT_MAX"] = "140",
             },
@@ -291,7 +1185,7 @@ EUPHORIA_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EUPHORIA", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
                 ["TERRAIN_HEIGHT_MAX"] = "140",
             },
@@ -671,7 +1565,7 @@ DARKSPACE_COLORS_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EUPHORIA", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
                 ["TERRAIN_HEIGHT_MAX"] = "340",
             },
@@ -1882,12 +2776,12 @@ REDMAS_CHALLENGE_MODE_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
+-- ( Ctrl + S to save )
 --
 ------------------------------------------------------------------------------------------
 
 REDMAS_E3PIC_FANTASY_PRESET ={
-	["MODNAME"] = "E3PIC_FANTASY",
+	["MODNAME"] = "E3PIC_FANTASY_TERRAIN",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -1905,10 +2799,10 @@ REDMAS_E3PIC_FANTASY_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS" or another img name   
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS" or another img name
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
@@ -1958,7 +2852,7 @@ REDMAS_E3PIC_FANTASY_PRESET ={
     },
     ["CREATURES_FEATURES"] =
     {
-        ["CREATURES_OVERHAUL"] = "ON",
+        ["CREATURES_OVERHAUL"] = "OFF",
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
         ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
@@ -1975,39 +2869,39 @@ REDMAS_E3PIC_FANTASY_PRESET ={
         ["COLORS_AUTO_GENERATION_FEATURES"] =
         {
             ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
-            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "OFF",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
         },
         ["PLANETS_GENERATION_FEATURES"] =
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
-                ["TERRAIN_HEIGHT_MAX"] = "140",
+                ["TERRAIN_HEIGHT_MAX"] = "2222",
             },
             ["BIOMES_FEATURES"] =
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["SKY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["STORM_BIOMES_FEATURES"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["GIANTS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["MONTAINS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["CAVE_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["FANTASY_BIOMES_FEATURE"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["SKY_BIOMES_FEATURE"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["STORM_BIOMES_FEATURES"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["GIANTS_BIOMES_FEATURE"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["MONTAINS_BIOMES_FEATURE"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["CAVE_BIOMES_FEATURE"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] =
             {
-                ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
-                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON",
-                ["REDMAS_RUINS_FEATURES"] = "ON",
-                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON",
+                ["E3_FANTASY_ASSETS_FEATURES"] = "OFF",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "OFF",
             },
         },
         ["SPACE_GENERATION_FEATURES"] =
@@ -2358,9 +3252,9 @@ REDMAS_EXTREME_FANTASY_TERRAIN_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
-                ["TERRAIN_HEIGHT_MAX"] = "14000",
+                ["TERRAIN_HEIGHT_MAX"] = "840",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -4334,7 +5228,7 @@ SCIFI_FANTASY_PRESET ={
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
         ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- (REALISTIC / VANILLA / FANTASY )
-        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["ASTEROIDS_FIELDS_TYPE"] = "FANTASY", -- ("FANTASY" / "REALISTIC" / "GLUED")
         ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
         ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
         ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
@@ -4351,7 +5245,7 @@ SCIFI_FANTASY_PRESET ={
     {
 	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
 	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
-	    ["CENTERED_CAMERA_FEATURE"] = "ON",
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
     },
     ["GAMEPLAY_FEATURES"] =
     {
@@ -4386,7 +5280,7 @@ SCIFI_FANTASY_PRESET ={
             ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON", --  "KANEDA BIKE INSPIRED SKIN"
             ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
             ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
-            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
+            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF", -- LARGER BEHIND WHEELS
             ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
             ["GIANT_MECHS_BETA_FEATURE"] = "ON",
             ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
@@ -4412,7 +5306,7 @@ SCIFI_FANTASY_PRESET ={
         {
 			-- The script will procedurally generate new colours possibilties
 			-- different each time the overhaul is generated ( x100 by default).
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
             ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
             ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
         },
@@ -4420,15 +5314,15 @@ SCIFI_FANTASY_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "340",
+                ["TERRAIN_HEIGHT_MAX"] = "2222",
             },
             ["BIOMES_FEATURES"] =
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "ON",
-                ["SKY_BIOMES_FEATURE"] = "ON",
+                ["FANTASY_BIOMES_FEATURE"] = "OFF",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
                 ["STORM_BIOMES_FEATURES"] = "ON",
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
@@ -4442,9 +5336,9 @@ SCIFI_FANTASY_PRESET ={
                 ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
                 ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
-                ["REDMAS_RUINS_FEATURES"] = "ON",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
                 ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON",
             },
         },
@@ -4504,91 +5398,7 @@ SCIFI_FANTASY_PRESET ={
         ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
     }
 }
-
-----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
---
-------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------
--- **ADVANCED PARAMS**
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
--- SPACESHIPS CONTROLS REWORK
-SPACESHIPS_SPACE_THRUSTFORCE = 140
-SPACESHIPS_SPACE_MAXPSEED = 2420
-SPACESHIPS_SPACE_FALLOFF = 0.007
-SPACESHIPS_SPACE_BOOST_FORCE = SPACESHIPS_SPACE_THRUSTFORCE*4
-SPACESHIPS_SPACE_BOOST_MAX = 2420
---
-SPACESHIPS_PLANET_THRUSTFORCE = 50
-SPACESHIPS_PLANET_MAXPSEED = 222
-SPACESHIPS_PLANET_FALLOFF = 0.007
-SPACESHIPS_PLANET_BOOST_FORCE = 120
-SPACESHIPS_PLANET_BOOST_MAX = 280
---
-SPACESHIPS_SMALL_SPEED_MULTIPLIER = 1.111
-SPACESHIPS_HEAVY_SPEED_MULTIPLIER = 1
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
--- SPACESHIPS CAMERAS
-SMALL_SPACESHIPS_MIN_DIST = 1
-SMALL_SPACESHIPS_MAX_DIST = 60
-SMALL_SPACESHIPS_UP_MIN_DIST = 0
-SMALL_SPACESHIPS_UP_MAX_DIST = 15
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-LONG_SPACESHIPS_MIN_DIST = 5
-LONG_SPACESHIPS_MAX_DIST = 60
-LONG_SPACESHIPS_UP_MIN_DIST = 1
-LONG_SPACESHIPS_UP_MAX_DIST = 25
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
-SMALL_SPACESHIPS_MIN_DIST = tostring(SMALL_SPACESHIPS_MIN_DIST)
-SMALL_SPACESHIPS_MAX_DIST = tostring(SMALL_SPACESHIPS_MAX_DIST)
-SMALL_SPACESHIPS_UP_MIN_DIST = tostring(SMALL_SPACESHIPS_UP_MIN_DIST)
-SMALL_SPACESHIPS_UP_MAX_DIST = tostring(SMALL_SPACESHIPS_UP_MAX_DIST)
------------------------------------------
-LONG_SPACESHIPS_MIN_DIST = tostring(LONG_SPACESHIPS_MIN_DIST)
-LONG_SPACESHIPS_MAX_DIST = tostring(LONG_SPACESHIPS_MAX_DIST)
-LONG_SPACESHIPS_UP_MIN_DIST = tostring(LONG_SPACESHIPS_UP_MIN_DIST)
-LONG_SPACESHIPS_UP_MAX_DIST = tostring(LONG_SPACESHIPS_UP_MAX_DIST)
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
--- ASTEROID FIELDS PARAMS
---
-ASTEROIDS_FANTASY_PRESET ={
-	["RARE_ASTEROID_SPACING_MULTIPLIER"] = "1",
-	["LARGE_ASTEROID_SPACING_MULTIPLIER"] = "52",
-	["ASTEROID_SPACING_MULTIPLIER"] = "12",
-	["RARE_ASTEROID_SCALE_MULTIPLIER"] = "64",
-	["LARGE_ASTEROID_SCALE_MULTIPLIER"] = "52",
-	["ASTEROID_SCALE_MULTIPLIER"] = "4"
-}
---
-ASTEROIDS_GLUED_PRESET ={
-	["RARE_ASTEROID_SPACING_MULTIPLIER"] = "1",
-	["LARGE_ASTEROID_SPACING_MULTIPLIER"] = "16",
-	["ASTEROID_SPACING_MULTIPLIER"] = "4",
-	["RARE_ASTEROID_SCALE_MULTIPLIER"] = "16",
-	["LARGE_ASTEROID_SCALE_MULTIPLIER"] = "8",
-	["ASTEROID_SCALE_MULTIPLIER"] = "2"
-}
---
-ASTEROIDS_REALISTIC_PRESET ={
-	["RARE_ASTEROID_SPACING_MULTIPLIER"] = "1",
-	["LARGE_ASTEROID_SPACING_MULTIPLIER"] = "64",
-	["ASTEROID_SPACING_MULTIPLIER"] = "16",
-	["RARE_ASTEROID_SCALE_MULTIPLIER"] = "32",
-	["LARGE_ASTEROID_SCALE_MULTIPLIER"] = "16",
-	["ASTEROID_SCALE_MULTIPLIER"] = "4"
-}
---------------------------------------------------------------------------------------------------------------
-PROCEDURALMAX = 100  -- This is the number of procedural generated new params for this script
---------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------
--- -----------------------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------------------------
 -- REDMAS GAME OVERHAUL BUILDER  -----------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 -- DONT CHANGE THAT PART -------------------------------------------------------------------------------------
@@ -5067,7 +5877,10 @@ PULSE_ENGINE_SPEED_MULTIPLIER =  ""
  HYPERDRIVE_RANGE_MULTIPLIER =  ""
 STARTING_SHIP = ""
 STARTING_MULTITOOL =""
-
+NEWGAME_BONUSES =""
+if NEWGAME_BONUS_FEATURES == "OFF" then
+	 NEWGAME_BONUS_FEATURES = "DontThrowNotice"
+end
 local INIT_REDMAS_GAMEOVERHAUL = function (PRESET)
    -------------------------------------------------------------------------------------
 MODNAME = PRESET.MODNAME
@@ -11571,6 +12384,18 @@ end
 if INIT == "REDMAS_SANDWORM_OVERHAUL_PRESET" then
 	INIT_REDMAS_GAMEOVERHAUL(REDMAS_SANDWORM_OVERHAUL_PRESET)
 end
+if INIT == "FANTASY_2_PRESET" then
+	INIT_REDMAS_GAMEOVERHAUL(FANTASY_2_PRESET)
+end
+if INIT == "FANTASY_ORIGINS_PRESET" then
+	INIT_REDMAS_GAMEOVERHAUL(FANTASY_ORIGINS_PRESET)
+end
+if INIT == "FANTASY_SYNTHESIS_PRESET" then
+	INIT_REDMAS_GAMEOVERHAUL(FANTASY_SYNTHESIS_PRESET)
+end
+if INIT == "FANTASY_PRESET" then
+	INIT_REDMAS_GAMEOVERHAUL(FANTASY_PRESET)
+end
 ---------------------------------------------------------------------------------
 if DAY_ONE_MODE == "ON"---------------------------------------------------------------------------------
 then---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -11856,7 +12681,14 @@ end
 ------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------
 -- END REDMAS GAME OVERHAUL BUILDER  -----------------------------------------------------------------------------------------------------
---
+---- FORCED DISABLED FEATURES 
+--  MBINCOMPILER ISSUES OR UNDER MAINTENANCE FEATURES
+CAVE_BIOMES_FEATURE = "OFF" -- under maintenance
+--------------------------------------------------------
+MINING_SPEED = "1" -- MBINCOMPILER ISSUE
+NEWGAME_BONUS_FEATURES = "OFF" -- MBINCOMPILER ISSUE
+GIANT_MECHS_BETA_FEATURE = "OFF " -- MBINCOMPILER ISSUE
+NEW_INTERACTIONS_FEATURE = "OFF" -- MBINCOMPILER ISSUE
 --
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -15743,12 +16575,33 @@ then
 		}
 		table.insert(CUSTOM_CONTENT, FILTERS_CONTENT1)
 
-		if INIT == "SCIFI_FANTASY_PRESET" then
+		if INIT == "SCIFI_FANTASY_PRESET" or "FANTASY_PRESET" then
 			FILTERS_CONTENT1 =
 		{
 
 			["FILE_DESTINATION"] 		= [[TEXTURES\LUT\FILTERS\DEFAULT.DDS]],
 			["EXTERNAL_FILE_SOURCE"] 	= [[..\..\RGOG\IMAGES\FILTERS\CYBER.DDS]]
+
+		}
+		table.insert(CUSTOM_CONTENT, FILTERS_CONTENT1)
+		end
+		if INIT == "FANTASY_SYNTHESIS_PRESET" then
+			FILTERS_CONTENT1 =
+		{
+
+			["FILE_DESTINATION"] 		= [[TEXTURES\LUT\FILTERS\DEFAULT.DDS]],
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\..\RGOG\IMAGES\FILTERS\BRIGHT.DDS]]
+
+		}
+		table.insert(CUSTOM_CONTENT, FILTERS_CONTENT1)
+		end
+
+		if INIT == "FANTASY_ORIGINS_PRESET" then
+			FILTERS_CONTENT1 =
+		{
+
+			["FILE_DESTINATION"] 		= [[TEXTURES\LUT\FILTERS\DEFAULT.DDS]],
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\..\RGOG\IMAGES\FILTERS\E3.DDS]]
 
 		}
 		table.insert(CUSTOM_CONTENT, FILTERS_CONTENT1)
@@ -16547,17 +17400,8 @@ if GAMEPLAY_OVERHAUL == "ON" then
 								{"VehicleJumpAirRotateXAmount",  "0"},
 								{"VehicleJumpAirRotateZAmount",  "0"},
 								{"WheelSpinParticleMaxRate",     "11"},
-								{"AudioBoostStart",              "DragonFly_Boost_Start"},
-								{"AudioBoostStop",               "DragonFly_Boost_Stop"},
-								{"AudioHornStart",               "DragonFly_Horn_Start"},
-								{"AudioHornStop",                "DragonFly_Horn_Stop"},
-								{"AudioIdleExterior",            "DragonFly_Idle_Exterior"},
-								{"AudioImpacts",                 "DragonFly_Impacts"},
-								{"AudioStart",                   "DragonFly_Start"},
-								{"AudioStop",                    "DragonFly_Stop"},
-								{"AudioSuspension",              "DragonFly_Suspension"},
-								{"AudioJump",                    "DragonFly_Jump"},
-								{"DriveOnTopOfWater",            "False"},
+
+
 								{"HeadlightIntensity",           "30"},
 						}
 					},
@@ -20150,26 +20994,6 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					[[MODELS\PLANETS\BIOMES\BARREN\ROCKS\LARGEROCK\ENTITIES\LARGEBARRENROCK.ENTITY.MBIN]] ,
 					[[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK\ENTITIES\MEDIUMROCKBARREN.ENTITY.MBIN]] ,
 					[[MODELS\PLANETS\BIOMES\CAVE\SMALLPROP\SMALLGLOWPLANT\ENTITIES\_MEDPLANT_B.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE\ENTITIES\CRYSTAL_LARGE.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE_CAVE\ENTITIES\CRYSTAL_LARGE_CAVE.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE_MOUNTAIN\ENTITIES\CRYSTAL_LARGE_MOUNTAIN.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE_UNDERWATER\ENTITIES\CRYSTAL_LARGE_UNDERWATER.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTALCUBE_LARGE\ENTITIES\CRYSTALCUBE_LARGE.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM\ENTITIES\CRYSTAL_MEDIUM.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE\ENTITIES\CRYSTAL_MEDIUM_CAVE.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN\ENTITIES\CRYSTAL_MEDIUM_MOUNTAIN.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_UNDERWATER\ENTITIES\CRYSTAL_MEDIUM_UNDERWATER.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM\ENTITIES\CRYSTAL_MEDIUM.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTALCUBE_MEDIUM\ENTITIES\CRYSTALCUBE_MEDIUM.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT\ENTITIES\SHARDS.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_CAVE\ENTITIES\SHARDS_CAVE.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_MOUNTAIN\ENTITIES\SHARDS_MOUNTAIN.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_FRAGMENT_UNDERWATER\ENTITIES\SHARDS_UNDERWATER.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL\ENTITIES\CYSTAL_SMALL.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_CAVE\ENTITIES\CYSTAL_SMALL_CAVE.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_MOUNTAIN\ENTITIES\CYSTAL_SMALL_MOUNTAIN.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTAL_SMALL_UNDERWATER\ENTITIES\CYSTAL_SMALL_UNDERWATER.ENTITY.MBIN]] ,
-					[[MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\SMALL\CRYSTALCUBE_SMALL\ENTITIES\CYSTALCUBE_SMALL.ENTITY.MBIN]] ,
 					[[MODELS\PLANETS\BIOMES\COMMON\PLANTS\LARGEPLANT\ENTITIES\LARGEPLANT.ENTITY.MBIN]] ,
 					[[MODELS\PLANETS\BIOMES\COMMON\PLANTS\MEDIUMBUSH\ENTITIES\_MEDIUMBUSH.ENTITY.MBIN]] ,
 					[[MODELS\PLANETS\BIOMES\COMMON\PLANTS\MEDIUMPLANT\ENTITIES\MEDIUMPLANT.ENTITY.MBIN]] ,
@@ -21306,9 +22130,36 @@ end
 if GENERATION_OVERHAUL == "ON"
 then
 
+	if MODDED_TERRAIN_SHAPES_FEATURE == "EPIC_FANTASY" then
+		copyEXML("ON",[[TERRAINSHAPE\EPIC_FANTASY.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.EXML]])
+	end
+	if MODDED_TERRAIN_SHAPES_FEATURE == "SCI_FI_FANTASY" then
+		copyEXML("ON",[[TERRAINSHAPE\SCI_FI_FANTASY.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.EXML]])
+	end
+	if MODDED_TERRAIN_SHAPES_FEATURE ~= "OFF" then
+		addFeature
+		(
+			"ON",
+			{
+				{
+					["MBIN_FILE_SOURCE"] = [[METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN]],
+					["EXML_CHANGE_TABLE"] =
+					{
+						{
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"MaxHeight",TERRAIN_HEIGHT_MAX},
+								--{"Active","True"},
+							}
+						}
 
-
-	if MODDED_TERRAIN_SHAPES_FEATURE == "ON" then
+					}
+				}
+			}
+		)
+	end
+	if MODDED_TERRAIN_SHAPES_FEATURE == "EUPHORIA" then
 		addFeature
 		(
 			MODDED_TERRAIN_SHAPES_FEATURE,
@@ -21421,6 +22272,8 @@ then
 			}
 		)
 	end
+
+
 
 	-- voxels
 	if E3_STYLE_RESSOURCES_DEPOSITS == "ON" then
@@ -25109,7 +25962,7 @@ then
 			)
 		end -- end underwaters biomes
 
-		--[=[ NEED A REWORK hotfix 1.08
+		-- NEED A REWORK hotfix 1.08
 		-- cave biomes
 		SUBBIOMES_C = ""
 		if CAVE_BIOMES_FEATURE == "ON" then
@@ -25367,7 +26220,7 @@ then
 		end
 		--
 		-- end cave biomes
-		-]=]
+		
         -- Mountains BIOMES
 		if MONTAINS_BIOMES_FEATURE == "ON" then
 			SUBBIOMES_M = ""
@@ -30402,27 +31255,6 @@ then
 								["ADD"] =
 								[[
 								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="SUBBIOMES_DS" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-									<Property name="Options">]]..SUBBIOMES_DS..[[
-									</Property>
-								</Property>
-								]]
-							},
-							{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
 									<Property name="Name" value="SUBBIOMES_PR" />
 									<Property name="ResourceHint" value="" />
 									<Property name="ResourceHintIcon" value="" />
@@ -30518,27 +31350,6 @@ then
 									<Property name="AllowLimiting" value="False" />
 									<Property name="ChooseUsingLifeLevel" value="False" />
 									<Property name="Options">]]..SUBBIOMES_D..[[
-									</Property>
-								</Property>
-								]]
-							},
-							{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="SUBBIOMES_DS" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-									<Property name="Options">]]..SUBBIOMES_DS..[[
 									</Property>
 								</Property>
 								]]
@@ -30715,27 +31526,6 @@ then
 								["ADD"] =
 								[[
 								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="SUBBIOMES_DS" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-									<Property name="Options">]]..SUBBIOMES_DS..[[
-									</Property>
-								</Property>
-								]]
-							},
-							{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
 									<Property name="Name" value="SUBBIOMES_PR" />
 									<Property name="ResourceHint" value="" />
 									<Property name="ResourceHintIcon" value="" />
@@ -30838,27 +31628,6 @@ then
 								["ADD"] =
 								[[
 								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="SUBBIOMES_DS" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-									<Property name="Options">]]..SUBBIOMES_DS..[[
-									</Property>
-								</Property>
-								]]
-							},
-							{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
 									<Property name="Name" value="SUBBIOMES_PR" />
 									<Property name="ResourceHint" value="" />
 									<Property name="ResourceHintIcon" value="" />
@@ -30899,7 +31668,198 @@ then
 					}
 				}
 			)
+			addFeature
+			(
+				SKY_BIOMES_FEATURE,
+				{
+					{
+						["MBIN_FILE_SOURCE"] =
+						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLESBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMABIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBBIOME.MBIN]],
+						},
+						["EXML_CHANGE_TABLE"] =
+						{
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="GRASS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..LUSHGRASSLIST..[[
+									</Property>
+								</Property>
+								]]
+							},
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="SUBBIOMES_DS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..SUBBIOMES_DS..[[
+									</Property>
+								</Property>
+								]]
+							},
+						}
+					},
+					{
+						["MBIN_FILE_SOURCE"] =
+						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOURBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HOUDINIPROPS\HOUDINIPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSBIOME.MBIN]],
+						},
+						["EXML_CHANGE_TABLE"] =
+						{
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="SUBBIOMES_DS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..SUBBIOMES_DS..[[
+									</Property>
+								</Property>
+								]]
+							}							
+						}
+					},			
 
+					{
+						["MBIN_FILE_SOURCE"] =
+						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVERUINSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDSHIELDTREEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICROCKYBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICSPORESBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESBIOME.MBIN]],
+						},
+						["EXML_CHANGE_TABLE"] =
+						{
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="SUBBIOMES_DS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..SUBBIOMES_DS..[[
+									</Property>
+								</Property>
+								]]
+							}							
+						}
+					},
+					{
+						["MBIN_FILE_SOURCE"] =
+						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLARBIOME.MBIN]],
+						},
+						["EXML_CHANGE_TABLE"] =
+						{							
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="SUBBIOMES_DS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..SUBBIOMES_DS..[[
+									</Property>
+								</Property>
+								]]
+							}							
+						}
+					}
+				}
+			)
+			
 
 		end
 		-- Backup ressources
@@ -35952,5 +36912,4 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["NMS_VERSION"]			= "4.02+",
   ["ADD_FILES"] 			= CUSTOM_CONTENT,
   ["MODIFICATIONS"]         = FEATURES_CHANGE_TABLE
-}
-
+}

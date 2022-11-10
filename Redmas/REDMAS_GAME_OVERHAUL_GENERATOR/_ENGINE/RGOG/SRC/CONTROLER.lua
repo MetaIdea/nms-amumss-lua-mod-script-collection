@@ -477,7 +477,10 @@ PULSE_ENGINE_SPEED_MULTIPLIER =  ""
  HYPERDRIVE_RANGE_MULTIPLIER =  ""
 STARTING_SHIP = ""
 STARTING_MULTITOOL =""
-
+NEWGAME_BONUSES =""
+if NEWGAME_BONUS_FEATURES == "OFF" then
+	 NEWGAME_BONUS_FEATURES = "DontThrowNotice"
+end
 local INIT_REDMAS_GAMEOVERHAUL = function (PRESET)
    -------------------------------------------------------------------------------------
 MODNAME = PRESET.MODNAME
@@ -6980,6 +6983,18 @@ if INIT == "REDMAS_NEW_GAME_BONUSES_PRESET" then
 end
 if INIT == "REDMAS_SANDWORM_OVERHAUL_PRESET" then
 	INIT_REDMAS_GAMEOVERHAUL(REDMAS_SANDWORM_OVERHAUL_PRESET)
+end
+if INIT == "FANTASY_2_PRESET" then
+	INIT_REDMAS_GAMEOVERHAUL(FANTASY_2_PRESET)
+end
+if INIT == "FANTASY_ORIGINS_PRESET" then
+	INIT_REDMAS_GAMEOVERHAUL(FANTASY_ORIGINS_PRESET)
+end
+if INIT == "FANTASY_SYNTHESIS_PRESET" then
+	INIT_REDMAS_GAMEOVERHAUL(FANTASY_SYNTHESIS_PRESET)
+end
+if INIT == "FANTASY_PRESET" then
+	INIT_REDMAS_GAMEOVERHAUL(FANTASY_PRESET)
 end
 ---------------------------------------------------------------------------------
 if DAY_ONE_MODE == "ON"---------------------------------------------------------------------------------

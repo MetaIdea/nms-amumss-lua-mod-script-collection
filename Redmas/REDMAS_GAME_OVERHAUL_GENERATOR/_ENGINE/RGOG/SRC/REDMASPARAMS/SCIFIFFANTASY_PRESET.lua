@@ -17,7 +17,7 @@ SCIFI_FANTASY_PRESET ={
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
         ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- (REALISTIC / VANILLA / FANTASY )
-        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["ASTEROIDS_FIELDS_TYPE"] = "FANTASY", -- ("FANTASY" / "REALISTIC" / "GLUED")
         ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
         ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
         ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
@@ -34,7 +34,7 @@ SCIFI_FANTASY_PRESET ={
     {
 	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
 	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
-	    ["CENTERED_CAMERA_FEATURE"] = "ON",
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
     },
     ["GAMEPLAY_FEATURES"] =
     {
@@ -69,7 +69,7 @@ SCIFI_FANTASY_PRESET ={
             ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON", --  "KANEDA BIKE INSPIRED SKIN"
             ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
             ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
-            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
+            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF", -- LARGER BEHIND WHEELS
             ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
             ["GIANT_MECHS_BETA_FEATURE"] = "ON",
             ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
@@ -95,7 +95,7 @@ SCIFI_FANTASY_PRESET ={
         {
 			-- The script will procedurally generate new colours possibilties
 			-- different each time the overhaul is generated ( x100 by default).
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
             ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
             ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
         },
@@ -103,15 +103,15 @@ SCIFI_FANTASY_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "ON",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "340",
+                ["TERRAIN_HEIGHT_MAX"] = "2222",
             },
             ["BIOMES_FEATURES"] =
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "ON",
-                ["SKY_BIOMES_FEATURE"] = "ON",
+                ["FANTASY_BIOMES_FEATURE"] = "OFF",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
                 ["STORM_BIOMES_FEATURES"] = "ON",
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
@@ -125,9 +125,9 @@ SCIFI_FANTASY_PRESET ={
                 ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
                 ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
-                ["REDMAS_RUINS_FEATURES"] = "ON",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
                 ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON",
             },
         },
