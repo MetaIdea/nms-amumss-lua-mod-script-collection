@@ -9462,29 +9462,6 @@ then
 								{"MaxHeight",TERRAIN_HEIGHT_MAX},
 								--{"Active","True"},
 							}
-						}
-
-					}
-				}
-			}
-		)
-	end
-	if MODDED_TERRAIN_SHAPES_FEATURE == "EUPHORIA" then
-		addFeature
-		(
-			MODDED_TERRAIN_SHAPES_FEATURE,
-			{
-				{
-					["MBIN_FILE_SOURCE"] = [[METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.MBIN]],
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MaxHeight",TERRAIN_HEIGHT_MAX},
-								--{"Active","True"},
-							}
 						},
 												{
 							["REPLACE_TYPE"] = "ALL",
@@ -9582,6 +9559,7 @@ then
 			}
 		)
 	end
+
 
 
 
@@ -10699,9 +10677,9 @@ then
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DRONESHIP.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\..\RGOG\EXML\R2\DRONESHIP.SCENE.EXML]]
-  		}
+	  		 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DRONESHIP.SCENE.EXML]],
+     			["EXTERNAL_FILE_SOURCE"] 	= [[..\..\RGOG\EXML\R2\DRONESHIP.SCENE.EXML]]
+  			}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
@@ -23544,7 +23522,8 @@ if CHARACTERS_SKINS_FEATURE == "ON" then
 				{
 					{
 						[[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP.SCENE.MBIN]],
-						[[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]]
+						[[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]],
+						"remove"
 					}
 				}
 			},
@@ -23568,7 +23547,7 @@ if CHARACTERS_SKINS_FEATURE == "ON" then
 			},
 			{
 				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]],
-				["REGEXBEFORE"] =
+				["REGEXAFTER"] =
 					{
 						{
 							[["Value" value="MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESHIP\\ENTITIES\\SHIP.ENTITY.MBIN"]],
@@ -23614,7 +23593,7 @@ if CHARACTERS_SKINS_FEATURE == "ON" then
 			},
 			{
 				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]],
-				["REGEXBEFORE"] =
+				["REGEXAFTER"] =
 					{
 						{
 							[["Value" value="MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESHIP\\ENTITIES\\SHIP.ENTITY.MBIN"]],
