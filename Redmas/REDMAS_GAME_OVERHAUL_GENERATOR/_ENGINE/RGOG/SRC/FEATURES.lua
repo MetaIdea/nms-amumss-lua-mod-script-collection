@@ -4821,7 +4821,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 								{"VehicleJumpAirRotateXAmount",    "0"},
 								{"VehicleJumpAirRotateZAmount",    "0"},
 								{"VehicleJumpAirRotateTimeMax",    "0.5"},
-								{"DriveOnTopOfWater",              "False"},
+								{"DriveOnTopOfWater",              "True"},
 								{"HeadlightIntensity",             "30"},
 						}
 					},
@@ -5655,7 +5655,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				["EXML_CHANGE_TABLE"] =
 				{
 					{
-						["SPECIAL_KEY_WORDS"] = {"Name","HOVERCRAFT",},
+						["SPECIAL_KEY_WORDS"] = {"Name","BIKE",},
 						["INTEGER_TO_FLOAT"] = "FORCE",
 						["VALUE_CHANGE_TABLE"] =
 						{
@@ -9548,8 +9548,8 @@ then
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SwapZY","True"},
-								{"MinHeight","10"},
-								{"MaxHeight","50"},
+								{"MinHeight","110"},
+								{"MaxHeight","350"},
 								{"NoiseGridType","SuperPrimitiveRandom"},
 							}
 						},
