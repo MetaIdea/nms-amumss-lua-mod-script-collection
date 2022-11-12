@@ -1,8 +1,8 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan and Ship Scan"
 GameVersion = "4.06"
-ModVersion = "v1.2"
-Description = "Rare resources now show up when you use Pulse Scan with Multitool or Exocraft, increased range and minimum amount of Buildings you can find with Ship Scan."
+ModVersion = "v1.3"
+Description = "Rare resources and other things now show up when you use Pulse Scan with Multitool or Exocraft, increased range and minimum amount of Buildings you can find with Ship Scan."
 
 -- Thanks to people on Modding Discord and lyravega for a lot of ideas and guidance.
 
@@ -40,7 +40,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/UNDERWATER/SEAURCHIN/ENTITIES/_URCHIN_1.ENTITY.MBIN",
 						"MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/SCRAPHEAP/ENTITIES/SCRAPCORE.ENTITY.MBIN",
 						"MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/BONEPILE/ENTITIES/BONEPILE.ENTITY.MBIN",
-						"MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/UNDERGROUNDPROP/ENTITIES/UNDERGROUNDPROP.ENTITY.MBIN"
+						"MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/UNDERGROUNDPROP/ENTITIES/UNDERGROUNDPROP.ENTITY.MBIN",
+						"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/GRAVEINCAVE/GRAVEINCAVE/ENTITIES/GRAVEINCAVE.ENTITY.MBIN"
 					},						
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -60,8 +61,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"]  =
 							{
-								{"MaxIconRange",4000},
-								{"UnknownBuildingRange",2000},
+								{"MaxIconRange",10000},
+								{"UnknownBuildingRange",5000},
 								{"MinShipScanBuildings",4},
 								{"MaxShipScanBuildings",10}
 							}
