@@ -111,7 +111,7 @@ SCIFI_FANTASY_PRESET ={
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "OFF",
-                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["SKY_BIOMES_FEATURE"] = "ON",
                 ["STORM_BIOMES_FEATURES"] = "ON",
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
