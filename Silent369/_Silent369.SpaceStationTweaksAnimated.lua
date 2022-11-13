@@ -1,8 +1,8 @@
 local modfilename = "SpaceStationTweaks"
 local lua_author  = "Silent"
-local lua_version = "v1.3"
+local lua_version = "v1.4"
 local mod_author  = "Silent369"
-local nms_version = "3.9x"
+local nms_version = "4.0.x"
 local description = [[
 Beautify Landing Pads at the various Space Stations within the game.
 Also includes subtle animations to some of the pad glowing textures.
@@ -20,7 +20,6 @@ Also includes subtle animations to some of the pad glowing textures.
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\ANIMS\LANDINGPAD_OPEN.ANIM.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\LEFTSECTIONTRIGGER.ENTITY.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\RIGHTSECTIONTRIGGER.ENTITY.MBIN
---MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION\ENTITIES\SPACESTATIONEXTERIOR.ENTITY.MBIN
 
 --Modifies
 --TEXTURES\SPACE\SPACESTATION\SSRFLOOR.MASKS.DDS
