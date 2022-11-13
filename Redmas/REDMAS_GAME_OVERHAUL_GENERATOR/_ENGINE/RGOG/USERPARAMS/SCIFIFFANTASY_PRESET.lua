@@ -25,7 +25,7 @@ SCIFI_FANTASY_PRESET ={
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
         ["HELLO_GAMES_SPASH_SCREEN"] = "SCIFIFANTASY",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "E-SCIFI", --"E-E3-1"   or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "LIBERTEUS", --"E-E3-1"   or another img name 
         ["NMS_TITLE"] = "TITLE-ATLAS", --"TITLE-WAYPOINT"  -- "TITLE-ATLAS"  or another img name 
         ["MENU_SPLASH_SCREEN"] = "SCIFI-BGM", --"E3-RUINS"  -- SCIFI-BGM -- or your image name
         ["TRANSPARENT_OPTIONS_MENU"] = "ON",

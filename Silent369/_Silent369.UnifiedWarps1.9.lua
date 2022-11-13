@@ -1,6 +1,6 @@
 local modfilename = "_UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "v1.8"
+local lua_version = "v1.9"
 local mod_author  = "Silent369"
 local nms_version = "4.0.x"
 local description = "Unifies Blackhole/Portal/Ship/Teleporter Warps"
