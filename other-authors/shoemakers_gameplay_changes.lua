@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MOD_DESCRIPTION"]		= "Gameplay changes",
 	["MOD_AUTHOR"]			= "shoemakerjones",
 	["LUA_AUTHOR"]      	= "shoemakerjones",
-	["NMS_VERSION"]			= "3.98",
+	["NMS_VERSION"]			= "4.06",
 	["MODIFICATIONS"] 		= 
 	{
 		{
@@ -67,14 +67,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
 						{
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MiniJump1"},
-                            ["REMOVE"]     = "SECTION"
-                        },
-						{
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MiniJump3"},
-                            ["REMOVE"]     = "SECTION"
-                        },
-						{
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "MiniJump4"},
                             ["REMOVE"]     = "SECTION"
                         },
                     },
