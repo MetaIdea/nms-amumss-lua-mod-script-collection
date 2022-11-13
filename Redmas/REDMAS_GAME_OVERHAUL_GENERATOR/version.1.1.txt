@@ -7,11 +7,6 @@ it will also help me to establish the documentation.
 - You will need RGOG ( REDMAS GAME OVERHAUL GENERATOR ) to EDIT, MERGE, or UPDATE any "___Redmas_" MODS 
 ( use the lua coming from RGOG , not the one in the standalone mods )
 
-How to update ?
-
-version 1.09 to version 1.1
---> replace everything.
-
 changelog :
 V1.1
 o Revived gameoverhauls 
@@ -34,11 +29,6 @@ o new feature:
 -- TEMP. DISABLED FEATURES 
 
 CAVE_BIOMES_FEATURE = "OFF" -- under maintenance
-MINING_SPEED = "1" -- MBINCOMPILER ISSUE
-NEWGAME_BONUS_FEATURES = "OFF" -- MBINCOMPILER ISSUE
-GIANT_MECHS_BETA_FEATURE = "OFF " -- MBINCOMPILER ISSUE
-NEW_INTERACTIONS_FEATURE = "OFF" -- MBINCOMPILER ISSUE
-
 -----------------------------------------------------
 
 Advices:
