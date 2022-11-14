@@ -1,9 +1,11 @@
 local modfilename = "NoSpeedLines4Streamers"
 local lua_author  = "Silent"
-local lua_version = "v1.4"
+local lua_version = "v1.5"
 local mod_author  = "Silent369"
 local nms_version = "4.0.x"
-local description = "No speed lines. No ship halo effect at cruise/boost/pulse speeds in space. No Space Dust / Plasma."
+local description = [[
+No speed lines. No ship halo effect at cruise/boost/pulse speeds in space. No Space Dust / Plasma.
+]]
 
 --Modifies:
 --MODELS\EFFECTS\ENGINES\SPEEDCOOL\TUNNELMAT.MATERIAL.MBIN
@@ -39,7 +41,6 @@ NMS_MOD_DEFINITION_CONTAINER =
         {
             ["MBIN_CHANGE_TABLE"] =
             {
-
                     --|----------------------------------------------------------------------------------------
                     --| Ship Boost Effect
                     --|----------------------------------------------------------------------------------------

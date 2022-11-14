@@ -8,7 +8,7 @@
     <Property name="Landmarks" >
 					<Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
-        <Property name="Type" value="Single" />
+        <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
 		<Property name="Filename" value="MODELS/RGO/BAT.SCENE.MBIN" />
 
@@ -131,17 +131,7 @@
               <Property name="Samplers" />
             </Property>
           </Property>
-		<Property value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/RGO/GIANTWRECKEDSHIP.SCENE.MBIN" />
-            <Property name="Seed" value="GcSeed.xml">
-              <Property name="Seed" value="0" />
-              <Property name="UseSeedValue" value="False" />
-            </Property>
-            <Property name="AltId" value="" />
-            <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-              <Property name="Samplers" />
-            </Property>
-          </Property>
+
         </Property>
      
         <Property name="ExtraTileTypes" />

@@ -704,6 +704,38 @@ PULSE_ENGINE_SPEED_MULTIPLIER = INIT_PRESET.EASY_MODE_FEATURES.PULSE_ENGINE_SPEE
 --------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local interactButton = function(path)
+	local BUTTON = [[
+		<Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="REDMAS_BUTTON" />
+          <Property name="NameHash" value="1402981485" />
+          <Property name="Type" value="LOCATOR" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="ATTACHMENT" />
+              <Property name="AltID" value="" />
+             <Property name="Value" value="]]..path..[[" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>		   
+	]]
+	return BUTTON
+end
+BTN_CARGO = interactButton([[MODELS\RGO\ENTITIES\CARGOGENERATOR.ENTITY.MBIN]])
+BTN_CRATES = interactButton([[MODELS\RGO\ENTITIES\FERRITEDUSTGENERATOR.ENTITY.MBIN]])
+BTN_HYDRO = interactButton([[MODELS\RGO\ENTITIES\DIHYDROGENGENERATOR.ENTITY.MBIN]])
 local addContent = function (CONTENT_TABLE)----------------------------------------------------------------------------
 	local localCONTENT = --------------------------------------------------------------------------------------------------------------------------------------------------------
 	{--------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -7107,8 +7139,8 @@ SHUTTLE_PROC = readTemplate("SHUTTLE_PROC")-------------------------------------
 SHUTTLE_DESC = readTemplate("SHUTTLE_DESC")---------------------------------------------------------------------------------
 FIGHTER_PROC = readTemplate("FIGHTER_PROC")---------------------------------------------------------------------------------
 FIGHTER_DESC = readTemplate("FIGHTER_DESC")---------------------------------------------------------------------------------
-SAILCOCKPIT_PROC = readTemplate("SAILCOCKPIT_PROC")---------------------------------------------------------------------------------
-SAILCOCKPIT_DESC = readTemplate("SAILCOCKPIT_DESC")---------------------------------------------------------------------------------
+--SAILCOCKPIT_PROC = readTemplate("SAILCOCKPIT_PROC")---------------------------------------------------------------------------------
+--SAILCOCKPIT_DESC = readTemplate("SAILCOCKPIT_DESC")---------------------------------------------------------------------------------
 _WINGS_F = readTemplate("_WINGS_F")---------------------------------------------------------------------------------
 ACCAx2 = readTemplate("ACCAx2")---------------------------------------------------------------------------------
 ACCASMALLx2 = readTemplate("ACCASMALLx2")

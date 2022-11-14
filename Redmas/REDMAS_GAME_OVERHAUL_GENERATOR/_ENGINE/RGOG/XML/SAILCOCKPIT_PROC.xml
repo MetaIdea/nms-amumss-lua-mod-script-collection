@@ -1,6 +1,6 @@
 
 		<Property value="TkSceneNodeData.xml">
-			  <Property name="Name" value="_Cockpit_A" />
+			  <Property name="Name" value="_Body_FA" />
 			  <Property name="NameHash" value="1402909504" />
 			  <Property name="Type" value="REFERENCE" />
 			  <Property name="Transform" value="TkTransformData.xml">
@@ -220,81 +220,7 @@
               <Property name="Children" />
             </Property>
 			   
-			  
- 
-			<Property value="TkSceneNodeData.xml">
-			  <Property name="Name" value="_ENGINE_BV" />
-			  <Property name="NameHash" value="1402909504" />
-			  <Property name="Type" value="REFERENCE" />
-			  <Property name="Transform" value="TkTransformData.xml">
-				<Property name="TransX" value="0" />
-				<Property name="TransY" value="0" />
-				<Property name="TransZ" value="1" />
-								<Property name="RotX" value="0" />
-								<Property name="RotY" value="0" />
-								<Property name="RotZ" value="0" />
-								<Property name="ScaleX" value="1" />
-								<Property name="ScaleY" value="1" />
-								<Property name="ScaleZ" value="2" />
-							</Property>
-							<Property name="Attributes">
-								<Property value="TkSceneNodeAttributeData.xml">
-								<Property name="Name" value="SCENEGRAPH" />
-								<Property name="AltID" value="" />
-								<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
-								</Property>
-							</Property>
-							<Property name="Children" />
-							</Property>
-							<Property value="TkSceneNodeData.xml">
-							<Property name="Name" value="_ENGINE_CV" />
-							<Property name="NameHash" value="1402909504" />
-							<Property name="Type" value="REFERENCE" />
-							<Property name="Transform" value="TkTransformData.xml">
-								<Property name="TransX" value="0" />
-								<Property name="TransY" value="0" />
-								<Property name="TransZ" value="0" />
-								<Property name="RotX" value="0" />
-								<Property name="RotY" value="0" />
-								<Property name="RotZ" value="0" />
-								<Property name="ScaleX" value="1" />
-								<Property name="ScaleY" value="1" />
-								<Property name="ScaleZ" value="1" />
-							</Property>
-							<Property name="Attributes">
-								<Property value="TkSceneNodeAttributeData.xml">
-								<Property name="Name" value="SCENEGRAPH" />
-								<Property name="AltID" value="" />
-								<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
-								</Property>
-							</Property>
-							<Property name="Children" />
-							</Property>
-							<Property value="TkSceneNodeData.xml">
-							<Property name="Name" value="_ENGINE_DV" />
-							<Property name="NameHash" value="1402909504" />
-							<Property name="Type" value="REFERENCE" />
-							<Property name="Transform" value="TkTransformData.xml">
-								<Property name="TransX" value="0" />
-								<Property name="TransY" value="0" />
-							<Property name="TransZ" value="1" />
-								<Property name="RotX" value="0" />
-								<Property name="RotY" value="0" />
-								<Property name="RotZ" value="0" />
-								<Property name="ScaleX" value="1" />
-								<Property name="ScaleY" value="1" />
-								<Property name="ScaleZ" value="2" />
-							</Property>
-							<Property name="Attributes">
-								<Property value="TkSceneNodeAttributeData.xml">
-								<Property name="Name" value="SCENEGRAPH" />
-								<Property name="AltID" value="" />
-								<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
-								</Property>
-							</Property>
-							<Property name="Children" />
-							</Property>
-						
+					
 						<Property value="TkSceneNodeData.xml">
 							<Property name="Name" value="_ENGINE_BR" />
 							<Property name="NameHash" value="1402909504" />
@@ -372,7 +298,7 @@
 						
 						</Property>
 						<Property value="TkSceneNodeData.xml">
-							<Property name="Name" value="_Cockpit_BV" />
+							<Property name="Name" value="_Body_FB" />
 							<Property name="NameHash" value="1402909504" />
 							<Property name="Type" value="REFERENCE" />
 							<Property name="Transform" value="TkTransformData.xml">
@@ -470,79 +396,7 @@
 				</Property>
 			
 				
-							<Property value="TkSceneNodeData.xml">
-							<Property name="Name" value="_ENGINE_BV" />
-							<Property name="NameHash" value="1402909504" />
-							<Property name="Type" value="REFERENCE" />
-							<Property name="Transform" value="TkTransformData.xml">
-								<Property name="TransX" value="0" />
-								<Property name="TransY" value="0" />
-				<Property name="TransZ" value="1" />
-								<Property name="RotX" value="0" />
-								<Property name="RotY" value="0" />
-								<Property name="RotZ" value="0" />
-								<Property name="ScaleX" value="1" />
-								<Property name="ScaleY" value="1" />
-								<Property name="ScaleZ" value="2" />
-							</Property>
-							<Property name="Attributes">
-								<Property value="TkSceneNodeAttributeData.xml">
-								<Property name="Name" value="SCENEGRAPH" />
-								<Property name="AltID" value="" />
-								<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
-								</Property>
-							</Property>
-							<Property name="Children" />
-							</Property>
-							<Property value="TkSceneNodeData.xml">
-							<Property name="Name" value="_ENGINE_CV" />
-							<Property name="NameHash" value="1402909504" />
-							<Property name="Type" value="REFERENCE" />
-							<Property name="Transform" value="TkTransformData.xml">
-								<Property name="TransX" value="0" />
-								<Property name="TransY" value="0" />
-								<Property name="TransZ" value="0" />
-								<Property name="RotX" value="0" />
-								<Property name="RotY" value="0" />
-								<Property name="RotZ" value="0" />
-								<Property name="ScaleX" value="1" />
-								<Property name="ScaleY" value="1" />
-								<Property name="ScaleZ" value="1" />
-							</Property>
-							<Property name="Attributes">
-								<Property value="TkSceneNodeAttributeData.xml">
-								<Property name="Name" value="SCENEGRAPH" />
-								<Property name="AltID" value="" />
-								<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
-								</Property>
-							</Property>
-							<Property name="Children" />
-							</Property>
-							<Property value="TkSceneNodeData.xml">
-							<Property name="Name" value="_ENGINE_DV" />
-							<Property name="NameHash" value="1402909504" />
-							<Property name="Type" value="REFERENCE" />
-							<Property name="Transform" value="TkTransformData.xml">
-								<Property name="TransX" value="0" />
-								<Property name="TransY" value="0" />
-							<Property name="TransZ" value="1" />
-								<Property name="RotX" value="0" />
-								<Property name="RotY" value="0" />
-								<Property name="RotZ" value="0" />
-								<Property name="ScaleX" value="1" />
-								<Property name="ScaleY" value="1" />
-								<Property name="ScaleZ" value="2" />
-							</Property>
-							<Property name="Attributes">
-								<Property value="TkSceneNodeAttributeData.xml">
-								<Property name="Name" value="SCENEGRAPH" />
-								<Property name="AltID" value="" />
-								<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
-								</Property>
-							</Property>
-							<Property name="Children" />
-							</Property>
-						
+					
 						<Property value="TkSceneNodeData.xml">
 							<Property name="Name" value="_ENGINE_BR" />
 							<Property name="NameHash" value="1402909504" />
@@ -620,7 +474,7 @@
 						
 						</Property>
 						<Property value="TkSceneNodeData.xml">
-							<Property name="Name" value="_Cockpit_DV" />
+							<Property name="Name" value="_Body_FD" />
 							<Property name="NameHash" value="1402909504" />
 							<Property name="Type" value="REFERENCE" />
 							<Property name="Transform" value="TkTransformData.xml">
@@ -721,79 +575,6 @@
 							
 							
 				
-							<Property value="TkSceneNodeData.xml">
-							<Property name="Name" value="_ENGINE_BV" />
-							<Property name="NameHash" value="1402909504" />
-							<Property name="Type" value="REFERENCE" />
-							<Property name="Transform" value="TkTransformData.xml">
-								<Property name="TransX" value="0" />
-								<Property name="TransY" value="0" />
-				<Property name="TransZ" value="1" />
-				<Property name="RotX" value="0" />
-				<Property name="RotY" value="0" />
-				<Property name="RotZ" value="0" />
-				<Property name="ScaleX" value="1" />
-				<Property name="ScaleY" value="1" />
-				<Property name="ScaleZ" value="2" />
-			  </Property>
-			  <Property name="Attributes">
-				<Property value="TkSceneNodeAttributeData.xml">
-				  <Property name="Name" value="SCENEGRAPH" />
-				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
-				</Property>
-			  </Property>
-			  <Property name="Children" />
-			</Property>
-			<Property value="TkSceneNodeData.xml">
-			  <Property name="Name" value="_ENGINE_CV" />
-			  <Property name="NameHash" value="1402909504" />
-			  <Property name="Type" value="REFERENCE" />
-			  <Property name="Transform" value="TkTransformData.xml">
-				<Property name="TransX" value="0" />
-				<Property name="TransY" value="0" />
-				<Property name="TransZ" value="0" />
-				<Property name="RotX" value="0" />
-				<Property name="RotY" value="0" />
-				<Property name="RotZ" value="0" />
-				<Property name="ScaleX" value="1" />
-				<Property name="ScaleY" value="1" />
-				<Property name="ScaleZ" value="1" />
-			  </Property>
-			  <Property name="Attributes">
-				<Property value="TkSceneNodeAttributeData.xml">
-				  <Property name="Name" value="SCENEGRAPH" />
-				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
-				</Property>
-			  </Property>
-			  <Property name="Children" />
-			</Property>
-			<Property value="TkSceneNodeData.xml">
-			  <Property name="Name" value="_ENGINE_DV" />
-			  <Property name="NameHash" value="1402909504" />
-			  <Property name="Type" value="REFERENCE" />
-			  <Property name="Transform" value="TkTransformData.xml">
-				<Property name="TransX" value="0" />
-				<Property name="TransY" value="0" />
-				<Property name="TransZ" value="1" />
-				<Property name="RotX" value="0" />
-				<Property name="RotY" value="0" />
-				<Property name="RotZ" value="0" />
-				<Property name="ScaleX" value="1" />
-				<Property name="ScaleY" value="1" />
-				<Property name="ScaleZ" value="2" />
-			  </Property>
-			  <Property name="Attributes">
-				<Property value="TkSceneNodeAttributeData.xml">
-				  <Property name="Name" value="SCENEGRAPH" />
-				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
-				</Property>
-			  </Property>
-			  <Property name="Children" />
-			</Property>
-		 
 
 			<Property value="TkSceneNodeData.xml">
 			  <Property name="Name" value="_ENGINE_BR" />
@@ -871,7 +652,7 @@
 			 </Property>
 		  </Property>
 		<Property value="TkSceneNodeData.xml">
-			  <Property name="Name" value="_Cockpit_EV" />
+			  <Property name="Name" value="_Body_FE" />
 			  <Property name="NameHash" value="1402909504" />
 			  <Property name="Type" value="REFERENCE" />
 			  <Property name="Transform" value="TkTransformData.xml">
@@ -971,79 +752,7 @@
 			  
 			  
  
-			<Property value="TkSceneNodeData.xml">
-			  <Property name="Name" value="_ENGINE_BV" />
-			  <Property name="NameHash" value="1402909504" />
-			  <Property name="Type" value="REFERENCE" />
-			  <Property name="Transform" value="TkTransformData.xml">
-				<Property name="TransX" value="0" />
-				<Property name="TransY" value="0" />
-			<Property name="TransZ" value="1" />
-							<Property name="RotX" value="0" />
-							<Property name="RotY" value="0" />
-							<Property name="RotZ" value="0" />
-							<Property name="ScaleX" value="1" />
-							<Property name="ScaleY" value="1" />
-							<Property name="ScaleZ" value="2" />
-						</Property>
-						<Property name="Attributes">
-							<Property value="TkSceneNodeAttributeData.xml">
-							<Property name="Name" value="SCENEGRAPH" />
-							<Property name="AltID" value="" />
-							<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
-							</Property>
-						</Property>
-						<Property name="Children" />
-						</Property>
-						<Property value="TkSceneNodeData.xml">
-						<Property name="Name" value="_ENGINE_CV" />
-						<Property name="NameHash" value="1402909504" />
-						<Property name="Type" value="REFERENCE" />
-						<Property name="Transform" value="TkTransformData.xml">
-							<Property name="TransX" value="0" />
-							<Property name="TransY" value="0" />
-							<Property name="TransZ" value="0" />
-							<Property name="RotX" value="0" />
-							<Property name="RotY" value="0" />
-							<Property name="RotZ" value="0" />
-							<Property name="ScaleX" value="1" />
-							<Property name="ScaleY" value="1" />
-							<Property name="ScaleZ" value="1" />
-						</Property>
-						<Property name="Attributes">
-							<Property value="TkSceneNodeAttributeData.xml">
-							<Property name="Name" value="SCENEGRAPH" />
-							<Property name="AltID" value="" />
-							<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
-							</Property>
-						</Property>
-						<Property name="Children" />
-						</Property>
-						<Property value="TkSceneNodeData.xml">
-						<Property name="Name" value="_ENGINE_DV" />
-						<Property name="NameHash" value="1402909504" />
-						<Property name="Type" value="REFERENCE" />
-						<Property name="Transform" value="TkTransformData.xml">
-							<Property name="TransX" value="0" />
-							<Property name="TransY" value="0" />
-						<Property name="TransZ" value="1" />
-							<Property name="RotX" value="0" />
-							<Property name="RotY" value="0" />
-							<Property name="RotZ" value="0" />
-							<Property name="ScaleX" value="1" />
-							<Property name="ScaleY" value="1" />
-							<Property name="ScaleZ" value="2" />
-						</Property>
-						<Property name="Attributes">
-							<Property value="TkSceneNodeAttributeData.xml">
-							<Property name="Name" value="SCENEGRAPH" />
-							<Property name="AltID" value="" />
-							<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
-							</Property>
-						</Property>
-						<Property name="Children" />
-						</Property>
-					
+		
 					<Property value="TkSceneNodeData.xml">
 						<Property name="Name" value="_ENGINE_BR" />
 						<Property name="NameHash" value="1402909504" />
@@ -1120,7 +829,7 @@
 						</Property>
 					</Property>
 					<Property value="TkSceneNodeData.xml">
-				<Property name="Name" value="_Cockpit_FV" />
+				<Property name="Name" value="_Body_FF" />
 				<Property name="NameHash" value="1402909504" />
 				<Property name="Type" value="REFERENCE" />
 				<Property name="Transform" value="TkTransformData.xml">
@@ -1217,82 +926,7 @@
 							<Property name="Children" />
 							</Property>
 
-						
-						
-			
-						<Property value="TkSceneNodeData.xml">
-						<Property name="Name" value="_ENGINE_BV" />
-						<Property name="NameHash" value="1402909504" />
-						<Property name="Type" value="REFERENCE" />
-						<Property name="Transform" value="TkTransformData.xml">
-							<Property name="TransX" value="0" />
-							<Property name="TransY" value="0" />
-			<Property name="TransZ" value="1" />
-				<Property name="RotX" value="0" />
-				<Property name="RotY" value="0" />
-				<Property name="RotZ" value="0" />
-				<Property name="ScaleX" value="1" />
-				<Property name="ScaleY" value="1" />
-				<Property name="ScaleZ" value="2" />
-			  </Property>
-			  <Property name="Attributes">
-				<Property value="TkSceneNodeAttributeData.xml">
-				  <Property name="Name" value="SCENEGRAPH" />
-				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
-				</Property>
-			  </Property>
-			  <Property name="Children" />
-			</Property>
-			<Property value="TkSceneNodeData.xml">
-			  <Property name="Name" value="_ENGINE_CV" />
-			  <Property name="NameHash" value="1402909504" />
-			  <Property name="Type" value="REFERENCE" />
-			  <Property name="Transform" value="TkTransformData.xml">
-				<Property name="TransX" value="0" />
-				<Property name="TransY" value="0" />
-				<Property name="TransZ" value="0" />
-				<Property name="RotX" value="0" />
-				<Property name="RotY" value="0" />
-				<Property name="RotZ" value="0" />
-				<Property name="ScaleX" value="1" />
-				<Property name="ScaleY" value="1" />
-				<Property name="ScaleZ" value="1" />
-			  </Property>
-			  <Property name="Attributes">
-				<Property value="TkSceneNodeAttributeData.xml">
-				  <Property name="Name" value="SCENEGRAPH" />
-				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_C\ENGINEC.SCENE.MBIN" />
-				</Property>
-			  </Property>
-			  <Property name="Children" />
-			</Property>
-			<Property value="TkSceneNodeData.xml">
-			  <Property name="Name" value="_ENGINE_DV" />
-			  <Property name="NameHash" value="1402909504" />
-			  <Property name="Type" value="REFERENCE" />
-			  <Property name="Transform" value="TkTransformData.xml">
-				<Property name="TransX" value="0" />
-				<Property name="TransY" value="0" />
-			<Property name="TransZ" value="1" />
-				<Property name="RotX" value="0" />
-				<Property name="RotY" value="0" />
-				<Property name="RotZ" value="0" />
-				<Property name="ScaleX" value="1" />
-				<Property name="ScaleY" value="1" />
-				<Property name="ScaleZ" value="2" />
-			  </Property>
-			  <Property name="Attributes">
-				<Property value="TkSceneNodeAttributeData.xml">
-				  <Property name="Name" value="SCENEGRAPH" />
-				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_D\ENGINED.SCENE.MBIN" />
-				</Property>
-			  </Property>
-			  <Property name="Children" />
-			</Property>
-		 
+ 
 		<Property value="TkSceneNodeData.xml">
 			  <Property name="Name" value="_ENGINE_BR" />
 			  <Property name="NameHash" value="1402909504" />

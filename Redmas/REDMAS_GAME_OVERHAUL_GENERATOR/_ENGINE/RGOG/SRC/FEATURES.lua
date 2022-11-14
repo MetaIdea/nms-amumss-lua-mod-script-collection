@@ -3906,6 +3906,17 @@ then
 		table.insert(CUSTOM_CONTENT, FILTERS_CONTENT1)
 		end
 
+		if INIT == "EUPHORIA_PRESET" then
+			FILTERS_CONTENT1 =
+		{
+
+			["FILE_DESTINATION"] 		= [[TEXTURES\LUT\FILTERS\DEFAULT.DDS]],
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\..\RGOG\IMAGES\FILTERS\BRIGHT.DDS]]
+
+		}
+		table.insert(CUSTOM_CONTENT, FILTERS_CONTENT1)
+		end
+
 		if INIT == "FANTASY_ORIGINS_PRESET" then
 			FILTERS_CONTENT1 =
 		{
@@ -7349,23 +7360,6 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					}
 				},
 				--------------------
-				{
-					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
-					{
-						{[["Id" value="DE_RARE_COPPER"]],[["Id" value="DE_GEM_B_LARGE"]]},
-					},
-
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= {
-						{
-							[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
-							[[MODELS\RGO\ENTITIES\DIHYDROGENGENERATOR.ENTITY.MBIN]],
-
-					 	}
-					}
-				},
 				--------------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\BARREL\BARREL_MEDIUM_RARE\ENTITIES\BARREL_MEDIUM_RARE.ENTITY.MBIN]],
@@ -7514,7 +7508,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\CRYOCHAMBERPOD\ENTITIES\CRYOCHAMBERPOD.ENTITY.MBIN]],
-					["REGEXBEFORE"] =
+					["REGEXAFTER"] =
 					{
 						{[["UseInteractCamera" value="True"]],[["UseInteractCamera" value="False"]]},
 						{[["RepeatInteraction" value="False"]],[["RepeatInteraction" value="True"]]},
@@ -7591,26 +7585,14 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BED.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
+					["REGEXBEFORE"] =
 					{
-						{
-							["PRECEDING_KEY_WORDS"] = "Attributes",
-							["SECTION_ACTIVE"] = {1,2},
-							["ADD"] 	=
-							{
-								[[
-									<Property value="TkSceneNodeAttributeData.xml">
-									<Property name="Name" value="ATTACHMENT" />
-									<Property name="AltID" value="" />
-									<Property name="Value" value="MODELS\RGO\ENTITIES\SAVEPOINT.ENTITY.MBIN" />
-									</Property>
-								]]
-							}
-						},
-
+						
+						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\BED\\ENTITIES\\BED.ENTITY.MBIN"]],
+						[["Value" value="MODELS\\RGO\\ENTITIES\\SAVEPOINT.ENTITY.MBIN"]]},
 					}
-
 				},
+				-------------
 				-------------
 				-------------
 				{
@@ -7618,20 +7600,11 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "Attributes",
-							["SECTION_ACTIVE"] = {1,2},
-							["ADD"] 	=
-							{
-								[[
-									<Property value="TkSceneNodeAttributeData.xml">
-									<Property name="Name" value="ATTACHMENT" />
-									<Property name="AltID" value="" />
-									<Property name="Value" value="MODELS\RGO\ENTITIES\DIHYDROGENGENERATOR.ENTITY.MBIN" />
-									</Property>
-								]]
-							}
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0},
+							["ADD"] 	= BTN_HYDRO							
 						},
-					}
+					}				
 				},
 				-------------
 				-------------
@@ -7640,21 +7613,13 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "Attributes",
-							["SECTION_ACTIVE"] = {1,2},
-							["ADD"] 	=
-							{
-								[[
-									<Property value="TkSceneNodeAttributeData.xml">
-									<Property name="Name" value="ATTACHMENT" />
-									<Property name="AltID" value="" />
-									<Property name="Value" value="MODELS\RGO\ENTITIES\FERRITEDUSTGENERATOR.ENTITY.MBIN" />
-									</Property>
-								]]
-							}
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0},
+							["ADD"] 	= BTN_CRATES							
 						},
-					}
+					}					
 				},
+				-------------
 				-------------
 				-------------
 				{
@@ -7681,7 +7646,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LARGEDESK.SCENE.MBIN]],
 					["REGEXBEFORE"] =
 					{
-						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
+						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\ENTITIES\\STATICPHYSICS.ENTITY.MBIN"]],
 						[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\TECH\\SIGNALSCANNER\\ENTITIES\\SIGNALSCANNER.ENTITY.MBIN"]]},
 					}
 				},
@@ -7828,23 +7793,10 @@ if GAMEPLAY_OVERHAUL == "ON" then
 				-------------
 				{
 					["MBIN_FILE_SOURCE"] 	= [[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WEAPONRACK.SCENE.MBIN]],
-					["EXML_CHANGE_TABLE"] =
+					["REGEXBEFORE"] =
 					{
-						{
-							["PRECEDING_KEY_WORDS"] = "Attributes",
-							["SECTION_ACTIVE"] = {1,2},
-							["ADD"] 	=
-							{
-								[[
-									<Property value="TkSceneNodeAttributeData.xml">
-									<Property name="Name" value="ATTACHMENT" />
-									<Property name="AltID" value="" />
-									<Property name="Value" value="MODELS\RGO\ENTITIES\CRATE_WEAPON.ENTITY.MBIN" />
-									</Property>
-								]]
-							}
-						},
-
+						{[["Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN"]],
+						[["Value" value="MODELS\\RGO\\ENTITIES\\CRATE_WEAPON.ENTITY.MBIN"]]},
 					}
 				},
 				-------------
@@ -7854,22 +7806,14 @@ if GAMEPLAY_OVERHAUL == "ON" then
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "Attributes",
-							["SECTION_ACTIVE"] = {1,2},
-							["ADD"] 	=
-							{
-								[[
-									<Property value="TkSceneNodeAttributeData.xml">
-									<Property name="Name" value="ATTACHMENT" />
-									<Property name="AltID" value="" />
-									<Property name="Value" value="MODELS\RGO\ENTITIES\CARGOGENERATOR.ENTITY.MBIN" />
-									</Property>
-								]]
-							}
+							["PRECEDING_KEY_WORDS"] = "Children",
+							["SECTION_ACTIVE"] = {0},
+							["ADD"] 	= BTN_CARGO							
 						},
 
 					}
 				},
+				
 				-------------
 				-------------
 				{
@@ -9105,9 +9049,10 @@ if CREATURES_OVERHAUL == "ON" then
 										{"PredatorLargeHealth", "10000" },
 										{"PredatorHugeHealth", "30000" },
 									}
-								}
+								},
 							}
 					},
+
 					-- LOD improvements for large creatures
 					{
 						["MBIN_FILE_SOURCE"]  = {
@@ -13530,7 +13475,7 @@ then
 		-- end cave biomes
 		
         -- Mountains BIOMES
-		if MONTAINS_BIOMES_FEATURE == "ON" then
+		if MONTAINS_BIOMES_FEATURE == "REACTIVATED" then -- turned off 
 			SUBBIOMES_M = ""
 			--
 			--
@@ -13675,7 +13620,7 @@ then
 
 
 		-- STORM BIOMES
-		if STORM_BIOMES_FEATURES == "ON" then
+		if STORM_BIOMES_FEATURES == "REACTIVATED" then -- turnedoff
 			--SUBBIOMES_S = ""
 			NEW_CONTENT =
 				{
@@ -22123,6 +22068,7 @@ end
 					}
 				},
 				-- SAILSHIPS
+				
 				{
 					["MBIN_FILE_SOURCE"] 	= {
 						{
@@ -22705,7 +22651,7 @@ end
 					}
 
 				},
-
+--[=[
 
 				{
 					["MBIN_FILE_SOURCE"]  = [[MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.SCENE.MBIN]],
@@ -22735,7 +22681,7 @@ end
 						}
 					}
 				},
-
+--]=]
 
 		},
 		MULTIPLAYER_MODE

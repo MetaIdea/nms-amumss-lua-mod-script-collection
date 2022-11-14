@@ -42,8 +42,8 @@
       <Property name="TypeId" value="_BODY_" />
       <Property name="Descriptors">
         <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_COCKPIT_A" />
-          <Property name="Name" value="_Cockpit_A" />
+          <Property name="Id" value="_BODY_FA" />
+          <Property name="Name" value="_Body_FA" />
           <Property name="ReferencePaths">
             <Property value="NMSString0x80.xml">
               <Property name="Value" value="MODELS/RGO/COCKPITA.SCENE.MBIN" />
@@ -119,8 +119,8 @@
           </Property>
         </Property>
         <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_COCKPIT_BV" />
-          <Property name="Name" value="_Cockpit_BV" />
+          <Property name="Id" value="_BODY_FB" />
+          <Property name="Name" value="_Body_FB" />
           <Property name="ReferencePaths">
             <Property value="NMSString0x80.xml">
               <Property name="Value" value="MODELS/RGO/COCKPITB.SCENE.MBIN" />
@@ -130,8 +130,8 @@
           <Property name="Children" />
         </Property>
         <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_COCKPIT_DV" />
-          <Property name="Name" value="_Cockpit_DV" />
+          <Property name="Id" value="_BODY_FD" />
+          <Property name="Name" value="_Body_FD" />
           <Property name="ReferencePaths">
             <Property value="NMSString0x80.xml">
               <Property name="Value" value="MODELS/RGO/COCKPITD.SCENE.MBIN" />
@@ -141,8 +141,8 @@
           <Property name="Children" />
         </Property>
         <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_COCKPIT_EV" />
-          <Property name="Name" value="_Cockpit_EV" />
+          <Property name="Id" value="_BODY_FE" />
+          <Property name="Name" value="_Body_FE" />
           <Property name="ReferencePaths">
             <Property value="NMSString0x80.xml">
               <Property name="Value" value="MODELS/RGO/COCKPITE.SCENE.MBIN" />
@@ -152,8 +152,8 @@
           <Property name="Children" />
         </Property>
         <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_COCKPIT_FV" />
-          <Property name="Name" value="_Cockpit_FV" />
+          <Property name="Id" value="_BODY_FF" />
+          <Property name="Name" value="_Body_FF" />
           <Property name="ReferencePaths">
             <Property value="NMSString0x80.xml">
               <Property name="Value" value="MODELS/RGO/COCKPITF.SCENE.MBIN" />
