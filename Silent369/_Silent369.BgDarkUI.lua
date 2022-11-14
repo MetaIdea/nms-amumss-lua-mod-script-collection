@@ -1,9 +1,12 @@
-local modfilename = "BgDarkUI"
+local modfilename = "BgDarkerUIFonts"
 local lua_author  = "Silent"
-local lua_version = "v1.2"
+local lua_version = "v1.3"
 local mod_author  = "Silent369"
-local nms_version = "4.00.x"
-local description = "Changes Start/Options Backgrounds and Transparent UI"
+local nms_version = "4.0.x"
+local maintenance = mod_author
+local description = [[
+Changes Start/Options Backgrounds/Transparent UI and Fonts 
+]]
 
 --credit to Lo2k (https://www.nexusmods.com/nomanssky/mods/1706)
 --for the centered atlas icon fix, it annoyed me too :)
@@ -15,6 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_AUTHOR"]           = mod_author,
     ["NMS_VERSION"]          = nms_version,
     ["MOD_DESCRIPTION"]      = description,
+    ["MOD_MAINTENANCE"]      = maintenance,
     ["MODIFICATIONS"]        =
     {
         {
