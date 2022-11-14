@@ -1,6 +1,6 @@
-local modfilename = "AlmostPerfectFlightLite"
+local modfilename = "AlmostPerfectFlightLiteNr"
 local lua_author  = "Silent"
-local lua_version = "v2.0"
+local lua_version = "v2.1"
 local mod_author  = "Silent369"
 local nms_version = "4.0.x"
 local description = [[
@@ -13,33 +13,39 @@ With optional settings to make flight much easier (a bit cheaty, hence optional)
 
 --|=======================================================================================--
 
-_cheatySettings = true
-_launchFuelCost = true
-_shipHoverSpeed = true
-_shipStatsBonus = true
-_warpSpeedMulti = true
+local _cheatySettings = true
+local _launchFuelCost = true
+local _shipHoverSpeed = true
+local _shipStatsBonus = true
+local _warpSpeedMulti = true
 
 --|=======================================================================================--
 
 --Boosts
-_boostMult = 1.25
-_boostMxSp = 2
-_speedMult = 1.75
-_thrstMult = 1.25
-_warpSMult = 2.25
+local _boostMult = 1.25
+local _boostMxSp = 2
+local _max_speed = 1.75
+local _thrstMult = 1.25
+local _warpSMult = 2
 
 --Handling
-_brakeMult = 0.8
-_lsptrnDmp = 0.1
-_min_speed = 0
-_overBreak = 0.15
-_speedFall = 0
-_trnStreng = 3
-_turnBMult = 0.5
+local _brakeMult = 0.8
+local _lsptrnDmp = 0.1
+local _min_speed = 0.01
+local _overBreak = 0.15
+local _rudTurnSt = 8
+local _speedFall = 0
+local _trnStreng = 3
+local _turnBMult = 0.5
 
 --Settings
-_padTurnSp = 0.75
-_fuelMulti = 0.35 --fuel cost saving on launch
+local _padTurnSp = 0.85
+local _fuelMulti = 0.35 --fuel cost saving on launch
+
+--NoBoost/MiniWarp/Stopping
+local _Restricts = 0.15 --relax noboost/miniwarp
+local _Multplier = 0.60 --miniwarp exit speed
+local _mStopping = 0.30 --stopping margin
 
 --|=======================================================================================--
 
@@ -140,12 +146,12 @@ table.insert(TableData,
                         })
 end
 
---| Flight Control (Space Engine)
+--| Flight Control Light (Space Engine)
 --|=======================================================================================--
 if _shipStatsBonus then
 table.insert(TableData,
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
                             ["MATH_OPERATION"]      = "*",
                             ["REPLACE_TYPE"]        = "ALL",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -153,14 +159,14 @@ table.insert(TableData,
                             {
                                 {"Falloff",                                _speedFall},
                                 {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _speedMult},
+                                {"MaxSpeed",                               _max_speed},
                                 {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _boostMult},
+                                {"BoostThrustForce",                       _thrstMult},
                                 {"BoostMaxSpeed",                          _boostMxSp},
                                 {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _speedMult},
-                                {"DirectionBrake",                         _speedMult},
-                                {"ReverseBrake",                           _speedMult},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _max_speed},
                                 {"TurnStrength",                           _trnStreng},
                                 {"TurnBrakeMin",                           _turnBMult},
                                 {"TurnBrakeMax",                           _turnBMult},
@@ -168,12 +174,12 @@ table.insert(TableData,
                         })
 end
 
---| Flight Control (Planet Engine)
+--| Flight Control Light (Planet Engine)
 --|=======================================================================================--
 if _shipStatsBonus then
 table.insert(TableData,
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
                             ["MATH_OPERATION"]      = "*",
                             ["REPLACE_TYPE"]        = "ALL",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -181,14 +187,14 @@ table.insert(TableData,
                             {
                                 {"Falloff",                                _speedFall},
                                 {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _speedMult},
+                                {"MaxSpeed",                               _max_speed},
                                 {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _boostMult},
+                                {"BoostThrustForce",                       _thrstMult},
                                 {"BoostMaxSpeed",                          _boostMxSp},
                                 {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _speedMult},
-                                {"DirectionBrake",                         _speedMult},
-                                {"ReverseBrake",                           _speedMult},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _max_speed},
                                 {"TurnStrength",                           _trnStreng},
                                 {"TurnBrakeMin",                           _turnBMult},
                                 {"TurnBrakeMax",                           _turnBMult},
@@ -196,12 +202,12 @@ table.insert(TableData,
                         })
 end
 
---| Flight Control (Combat Engine)
+--| Flight Control Light (Combat Engine)
 --|=======================================================================================--
 if _shipStatsBonus then
 table.insert(TableData,
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
                             ["REPLACE_TYPE"]        = "ALL",
                             ["MATH_OPERATION"]      = "*",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -209,14 +215,14 @@ table.insert(TableData,
                             {
                                 {"Falloff",                                _speedFall},
                                 {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _speedMult},
+                                {"MaxSpeed",                               _max_speed},
                                 {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _boostMult},
+                                {"BoostThrustForce",                       _thrstMult},
                                 {"BoostMaxSpeed",                          _boostMxSp},
                                 {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _speedMult},
-                                {"DirectionBrake",                         _speedMult},
-                                {"ReverseBrake",                           _speedMult},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _max_speed},
                                 {"TurnStrength",                           _trnStreng},
                                 {"TurnBrakeMin",                           _turnBMult},
                                 {"TurnBrakeMax",                           _turnBMult},
@@ -224,12 +230,12 @@ table.insert(TableData,
                         })
 end
 
---| Flight Control (Atmos Combat Engine)
+--| Flight Control Light (Atmos Combat Engine)
 --|=======================================================================================--
 if _shipStatsBonus then
 table.insert(TableData,
                         {
-                            ["SPECIAL_KEY_WORDS"]   = {"AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
                             ["REPLACE_TYPE"]        = "ALL",
                             ["MATH_OPERATION"]      = "*",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -237,14 +243,126 @@ table.insert(TableData,
                             {
                                 {"Falloff",                                _speedFall},
                                 {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _speedMult},
+                                {"MaxSpeed",                               _max_speed},
                                 {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _boostMult},
+                                {"BoostThrustForce",                       _thrstMult},
                                 {"BoostMaxSpeed",                          _boostMxSp},
                                 {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _speedMult},
-                                {"DirectionBrake",                         _speedMult},
-                                {"ReverseBrake",                           _speedMult},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _max_speed},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                            }
+                        })
+end
+
+--| Flight Control Heavy (Space Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"MinSpeed",                               _min_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _max_speed},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                            }
+                        })
+end
+
+--| Flight Control Heavy (Planet Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"MinSpeed",                               _min_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _max_speed},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                            }
+                        })
+end
+
+--| Flight Control Heavy (Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"MinSpeed",                               _min_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _max_speed},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                            }
+                        })
+end
+
+--| Flight Control Heavy (Atmos Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"MinSpeed",                               _min_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _max_speed},
                                 {"TurnStrength",                           _trnStreng},
                                 {"TurnBrakeMin",                           _turnBMult},
                                 {"TurnBrakeMax",                           _turnBMult},
@@ -280,6 +398,62 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         --|=======================================================================================--
+                        --| NoBoost/MiniWarp Settings
+                        --|=======================================================================================--
+                        {
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ONCE",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_MATCH"]         = "",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"NoBoostStationDistance",                 _Restricts}, --Original "2000"
+                                {"NoBoostAnomalyDistance",                 _Restricts}, --Original "3000"
+                                {"NoBoostSpaceAnomalyDistance",            _Restricts}, --Original "700"
+                                {"NoBoostFreighterDistance",               _Restricts}, --Original "800"
+                                {"NoBoostShipDistance",                    _Restricts}, --Original "2000"
+                                {"MiniWarpMinPlanetDistance",              _Restricts}, --Original "2500"
+                                {"MiniWarpPlanetRadius",                   _Restricts}, --Original "500"
+                                {"MiniWarpStationRadius",                  _Restricts}, --Original "700"
+                                {"MiniWarpTopSpeedTime",                   _Restricts}, --Original "0.1"
+                            }
+                        },
+                        {
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ONCE",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_MATCH"]         = "",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MiniWarpExitSpeed",                      _Multplier}, --Original "1000"
+                                {"MiniWarpExitSpeedStation",               _Multplier}, --Original "500"
+                            }
+                        },
+                        {
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ONCE",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_MATCH"]         = "",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MiniWarpStoppingMarginPlanet",           _mStopping}, --Original "5000"
+                                {"MiniWarpStoppingMarginDefault",          _mStopping}, --Original "2500"
+                                {"MiniWarpStoppingMarginLong",             _mStopping}, --Original "3500"
+                            }
+                        },
+                        {
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MiniWarpHUDArrowAttractAngle",                  "8"}, --Original "10"
+								{"MiniWarpHUDArrowAttractAngleStation",           "4"}, --Original "5"
+								{"MiniWarpHUDArrowAttractAngleOtherPlayerStuff",  "0"}, --Original "2"
+								{"MiniWarpHUDArrowAttractAngleSaveBeacon",        "2"}, --Original "2.5
+								{"MiniWarpHUDArrowAttractAngleDense",             "1"}, --Original "4"
+								{"MiniWarpHUDArrowNumMarkersToBeDense",          "10"}, --Original "6"
+								
+                            }
+                        },
+                        --|=======================================================================================--
                         --| General Settings
                         --|=======================================================================================--
                         {
@@ -290,47 +464,34 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"GroundHeightSoftForce",                        "10"}, --Original "35"
                                 {"LandingHoverOffset",                            "1"}, --Original "3"
                                 {"LandingMaxSpeed",                             "160"}, --Original "80"
-                                {"LandingMargin",                               "2.4"}, --Original "1.4"
+                                {"LandingMargin",                               "0.5"}, --Original "1.4"
                                 {"LandingTooManyLowPointsFraction",             "0.2"}, --Original "0.3"
+                                {"AutoLevelWaterAngle",                          "12"}, --Original "45"
                                 {"AnomalyStationMaxApproachSpeed",              "120"}, --Original "60"
                                 {"BoostNoAsteroidRadius",                      "9000"}, --Original "1000"
                                 {"DockingRotateSpeed",                     _padTurnSp}, --Original "1"
                                 {"HoverTakeoffHeight",                           "75"}, --Original "90"
-                                {"HoverAlignTime",                              "0.5"}, --Original "0.7"
+                                {"HoverAlignTime",                              "0.2"}, --Original "0.7"
                                 {"HoverMinSpeed",                          _min_speed}, --Original "1"
                                 {"HoverLandReachedDistance",                      "3"}, --Original "4"
-                                {"HoverLandManeuvreTimeMin",                    "0.5"}, --Original "0.7"
+                                {"HoverLandManeuvreTimeMin",                    "0.3"}, --Original "0.7"
                                 {"LandingOnGroundTip",                          "-11"}, --Original "-20"
                                 {"LandingButtonMinTime",                       "0.15"}, --Original "0.5"
                                 {"LandHeightThreshold",                          "80"}, --Original "100"
                                 {"LandingPushNoseUpFactor",                     "0.1"}, --Original "0.15"
                                 {"MiniWarpChargeTime",                          "1.4"}, --Original "2"
                                 {"MiniWarpLinesNum",                              "0"}, --Original "4"      --METRIC LINES
+                                {"MiniWarpFlashIntensity",                        "0"}, --Original "0.9"
+                                {"MiniWarpFlashDuration",                         "0"}, --Original "0.9"
                                 {"MiniWarpNoAsteroidRadius",                   "9000"}, --Original "1500"
-                                {"MiniWarpHUDArrowAttractAngle",                  "7"}, --Original "10"
-                                {"MiniWarpStationRadius",                       "500"}, --Original "700"
-                                {"MiniWarpStoppingMarginPlanet",               "2000"}, --Original "5000"
-                                {"MiniWarpStoppingMarginDefault",              "1250"}, --Original "2500"
-                                {"MiniWarpStoppingMarginLong",                 "1750"}, --Original "3500"
-                                {"MiniWarpTrackingMargin",                       "50"}, --Original "100"
-                                {"MiniWarpExitSpeed",                           "500"}, --Original "1000"
-                                {"MiniWarpExitSpeedStation",                    "250"}, --Original "500"
-                                {"MiniWarpExitTime",                           "0.25"}, --Original "0.5"
+                                {"MiniWarpExitTime",                           "0.05"}, --Original "0.5"
                                 {"PadTurnSpeed",                           _padTurnSp}, --Original "1"
                                 {"PostWarpSlowDownTime",                        "1.5"}, --Original "3"
                                 {"PulseDriveStationApproachSlowdownRange",     "3500"}, --Original "5000"
                                 {"PulseDriveStationApproachSlowdownRangeMin",   "700"}, --Original "1000"
-                                {"TurnRudderStrength",                            "1"}, --Original "0.4"
-                                {"MaximumDistanceFromShipWhenExiting",            "5"}, --Original "10"
+                                {"TurnRudderStrength",                     _rudTurnSt}, --Original "0.4"
+                                {"MaximumDistanceFromShipWhenExiting",            "4"}, --Original "10"
                                 {"ShipMinHeightForce",                          "0.1"}, --Original "1"
-
-                                {"NoBoostStationDistance",                        "0"}, --Original "2000"
-                                {"NoBoostAnomalyDistance",                        "0"}, --Original "3000"
-                                {"NoBoostSpaceAnomalyDistance",                   "0"}, --Original "700"
-                                {"NoBoostFreighterDistance",                      "0"}, --Original "800"
-                                {"NoBoostCombatEventMinBattleTime",               "0"}, --Original "35"
-                                {"NoBoostCombatEventMinFreighterBattleTime",      "0"}, --Original "55"
-                                {"NoBoostCombatEventTime",                        "0"}, --Original "25"
 
                         --|=======================================================================================--
                         --| Freighter Approach Settings
@@ -365,9 +526,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --| Low Altitude Animation Trigger (Solar Ships Sails Open/Retract Speed)
                         --|=======================================================================================--
 
-                                {"LowAltitudeAnimationHeight",                 "1050"}, --Original "1200"
+                                {"LowAltitudeAnimationHeight",                 "1045"}, --Original "1200"
                                 {"LowAltitudeAnimationHysteresisTime",            "1"}, --Original "4"
-                                {"LowAltitudeAnimationTime",                      "3"}, --Original "6"
+                                {"LowAltitudeAnimationTime",                      "2"}, --Original "6"
 
                         --|=======================================================================================--
                         --| 3rd Person Wander Changes

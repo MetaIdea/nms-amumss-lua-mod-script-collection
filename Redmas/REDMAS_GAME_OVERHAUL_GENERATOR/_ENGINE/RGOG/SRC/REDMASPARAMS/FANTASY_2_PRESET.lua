@@ -102,7 +102,7 @@ FANTASY_2_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EUPHORIA",
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
                 ["TERRAIN_HEIGHT_MAX"] = "140",
             },

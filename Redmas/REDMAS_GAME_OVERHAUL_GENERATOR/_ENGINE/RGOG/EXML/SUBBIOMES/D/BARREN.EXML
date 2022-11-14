@@ -131,17 +131,6 @@
               <Property name="Samplers" />
             </Property>
           </Property>
-		<Property value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/RGO/GIANTWRECKEDSHIP.SCENE.MBIN" />
-            <Property name="Seed" value="GcSeed.xml">
-              <Property name="Seed" value="0" />
-              <Property name="UseSeedValue" value="False" />
-            </Property>
-            <Property name="AltId" value="" />
-            <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-              <Property name="Samplers" />
-            </Property>
-          </Property>
         </Property>
      
         <Property name="ExtraTileTypes" />
