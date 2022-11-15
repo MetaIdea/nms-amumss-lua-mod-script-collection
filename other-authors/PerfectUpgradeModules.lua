@@ -1,14 +1,16 @@
 -- Perfect Upgrade Modules
 -- Author: DarkScythe
 -- Date Created: Jul 18, 2022
--- Last Updated: Oct 25, 2022
+-- Last Updated: Nov 14, 2022
 --------------------------------------------------------------------------------
 modName		= "PerfectUpgradeModules"
+batchName	= ""
 modAuthor	= "DarkScythe"
+modMaint	= "DarkScythe"
 modDesc		= "Overrides all upgrade modules to have the best possible vanilla stats, with optional custom power scaling"
-modVer		= "1.0."
+modVer		= "1.0"
 scriptVer	= "a"
-gameVer		= "4.05"
+gameVer		= "4.06"
 
 --[[
 Enter a number here to set the approximate Power Scaling of upgrade module stats
@@ -72,7 +74,7 @@ maxTechStack	= overloadTech and GUIF(getMaxStack) or maxTechStack
 -- Safety checks
 assert(type(powerScale) == "number" and powerScale >= 0.1,
 	"Invalid Power Scale defined: Must be a numeric value of at least 0.1")
-assert(type(maxTechStack) == "number" and maxTechStack > 0,
+assert(type(maxTechStack) == "number" and maxTechStack >= 1,
 	"Invalid tech overload cap defined: Must be a positive integer")
 
 --[[
@@ -334,10 +336,12 @@ scaling pools, and this mod recompiled
 -----------------------------------------------
 -- This is still just a Lua table at its core, so you can add to it later
 NMS_MOD_DEFINITION_CONTAINER	= {
-	MOD_FILENAME		= table.concat({"__", modName, "_v", modVer, gameVer, scriptVer, ".pak"}),
+	MOD_FILENAME		= table.concat({"__", modName, "_v", modVer, ".", gameVer, scriptVer, ".pak"}),
+	MOD_BATCHNAME		= batchName ~= "" and (batchName .. ".pak") or nil,
 	MOD_DESCRIPTION		= modDesc,
 	MOD_AUTHOR			= modAuthor,
 	LUA_AUTHOR			= modAuthor,
+	MOD_MAINTENANCE		= modMaint,
 	NMS_VERSION			= gameVer,
 
 	-- Actual mod container
@@ -580,7 +584,7 @@ if overloadTech then
 		EXML_CT = {
 			{
 				VCT = {
-					{"MaxNumSameGroupTech", maxTechStack},
+					{"MaxNumSameGroupTech", math.floor(maxTechStack)},
 				},
 			},
 			-------------------------------------------------------------

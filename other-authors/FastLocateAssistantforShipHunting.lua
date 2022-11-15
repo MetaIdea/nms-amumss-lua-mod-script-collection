@@ -1,14 +1,16 @@
 -- Ship Hunting Assistant // Will NOT affect default seeds!
 -- Author: DarkScythe
 -- Date Created: Jul 03, 2022
--- Last Updated: Oct 25, 2022
+-- Last Updated: Nov 14, 2022
 --------------------------------------------------------------------------------
 modName		= "FastLocateAssistantforShipHunting"
+batchName	= ""
 modAuthor	= "DarkScythe"
+modMaint	= "DarkScythe"
 modDesc		= "Speeds up ship hunting by filtering to specific types and increases spawn rates WITHOUT affecting default seeds so you get the same ships as vanilla players in every system. Helpful for players who want to share coordinates of interesting finds with others."
-modVer		= "1.0."
+modVer		= "1.1"
 scriptVer	= "a"
-gameVer		= "4.05"
+gameVer		= "4.06"
 -- Credits --
 -- Thanks to Lenni and Apex Fatality for the idea of isolating ship models.
 -- Thanks to Gumsk for the idea of speeding up NPC spawns.
@@ -209,14 +211,7 @@ shipsToRemove	= {}
 -- Scan through shipInfo and fill in the above table
 for i = 1, #shipInfo do
 	if not shipInfo[i].shipActive then
-		shipsToRemove[#shipsToRemove + 1] = {
-			PRECEDING_FIRST	= "TRUE",
-			PKW				= shipFaction,
-			SKW				= {fileHandle, shipInfo[i].shipFile},
-			VCT				= {
-				{fileHandle, ""}
-			},
-		}
+		shipsToRemove[#shipsToRemove + 1] = {fileHandle, shipInfo[i].shipFile}
 	end
 end
 
@@ -307,11 +302,13 @@ shipBehaviorAdjustments = {
 -- This is still just a Lua table at its core, so you can add to it later
 -- See the if() blocks near the bottom for how to reference it
 NMS_MOD_DEFINITION_CONTAINER	= {
-	MOD_FILENAME				= table.concat({"__", modName, "_v", modVer, gameVer, scriptVer, ".pak"}),
-	MOD_DESCRIPTION				= modDesc,
-	MOD_AUTHOR					= modAuthor,
-	LUA_AUTHOR					= modAuthor,
-	NMS_VERSION					= gameVer,
+	MOD_FILENAME		= table.concat({"__", modName, "_v", modVer, ".", gameVer, scriptVer, ".pak"}),
+	MOD_BATCHNAME		= batchName ~= "" and (batchName .. ".pak") or nil,
+	MOD_DESCRIPTION		= modDesc,
+	MOD_AUTHOR			= modAuthor,
+	LUA_AUTHOR			= modAuthor,
+	MOD_MAINTENANCE		= modMaint,
+	NMS_VERSION			= gameVer,
 
 	-- Actual mod container
 	MODIFICATIONS	= {
@@ -332,12 +329,26 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 							},						-- Update if they ever change
 						},
 						{
+							PKW	= {"OutpostSpawns", "Spread"},
+							VCT	= {
+								{"x", 15},	-- Default 20
+								{"y", 20},	-- Default 30
+							},
+						},
+						{
 							-- TraderSpawns controls the waves bound for
 							-- Space Stations
 							PKW	= {"TraderSpawns", "Count"},
 							VCT	= {
 								{"x", minSpawns * spaceSpawnMulti},
 								{"y", maxSpawns * spaceSpawnMulti},
+							},
+						},
+						{
+							PKW	= {"TraderSpawns", "Spread"},
+							VCT	= {
+								{"x", 10},	-- Default 100
+								{"y", 15},	-- Default 100
 							},
 						},
 						{
@@ -349,6 +360,13 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 							VCT	= {
 								{"x", minSpawns * spaceSpawnMulti},
 								{"y", maxSpawns * spaceSpawnMulti},
+							},
+						},
+						{
+							PKW	= {"SpaceFlybySpawns", "GcAIShipSpawnData.xml", "Spread"},
+							VCT	= {
+								{"x", 20},	-- Default 300
+								{"y", 30},	-- Default 300
 							},
 						},
 						----------------------------------------------------------------
@@ -378,23 +396,6 @@ NMS_MOD_DEFINITION_CONTAINER	= {
 ---- END OF MAIN AMUMSS MOD CONTAINER TABLE ----
 ------------------------------------------------
 
---[[
-The following space is reserved for any additional changes to AISPACESHIPMANAGER
---------------------------------------------------------------------------------
-This space is separated due to how we are filling the EXML_CHANGE_TABLE entry.
-Add any additional code to merge into the changes for this file only in the
-table below.
-
-Remember: This should ONLY be code blocks within the EXML_CHANGE_TABLE entry.
-Treat the following block as if it was ["EXML_CHANGE_TABLE"] = {},
---]]
-mergeManagerEXML = {
-	--------------------------------------------------------------
-	---- Merge additional changes to AISPACESHIPMANAGER below ----
-	--------------------------------------------------------------
-
-}
-
 ---------------------------------------------------
 -- Begin Lua functions for optional table additions
 -- Do not modify unless you know what you are doing
@@ -412,17 +413,21 @@ if #shipsToRemove > 0 then
 	local shipSpawnFilter = NMS_MOD_DEFINITION_CONTAINER.MODIFICATIONS[1].MBIN_CHANGE_TABLE
 	shipSpawnFilter[#shipSpawnFilter + 1] = {
 		MBIN_FILE_SOURCE	= shipManagerFile,
-		EXML_CHANGE_TABLE	= shipsToRemove,
-		-- DO NOT MERGE HERE; Use the mergeManagerEXML table above
-	}
+		EXML_CHANGE_TABLE	= {
+			{
+				PRECEDING_FIRST	= "TRUE",
+				PKW				= shipFaction,
+				FSKWG			= shipsToRemove,
+				VCT				= {
+					{fileHandle, ""}
+				},
+			},
+			--------------------------------------------------------------
+			---- Merge additional changes to AISPACESHIPMANAGER below ----
+			--------------------------------------------------------------
 
-	-- If we have any merges defined above, this will insert them at the end
-	if #mergeManagerEXML > 0 then
-		local managerChanges = shipSpawnFilter[#shipSpawnFilter].EXML_CHANGE_TABLE
-		for i = 1, #mergeManagerEXML do
-			table.insert(managerChanges, mergeManagerEXML[i])
-		end
-	end
+		}
+	}
 end
 
 --[[
