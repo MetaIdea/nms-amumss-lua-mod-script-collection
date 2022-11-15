@@ -1,9 +1,13 @@
-CREATURE_INTERACT_DISTANCE = 20 --Original 5
+CREATURE_INTERACT_DISTANCE = 100 --Original 5
+CREATURE_INTERACT_RANGE = 150
+CREATURE_INTERACT_BOOST = 2
+CREATURE_INCUBATE_TIME = 0
 
-GlobalJNT_ADD =
+function CreateJoint(JointName)
+    local result = 
 [[
         <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="GlobalJNT" />
+          <Property name="JointName" value="]]..JointName..[[" />
           <Property name="AdditionalScaleJoint" value="" />
           <Property name="Offset" value="Vector3f.xml">
             <Property name="x" value="0" />
@@ -33,319 +37,54 @@ GlobalJNT_ADD =
           <Property name="RidingAnims" />
         </Property>
 ]]
+return result
+end
 
-RootJNT_ADD =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="RootJNT" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
-
-centre_ADD =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="centre" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
-
-Root_ADD =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="Root" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
-
-Back1JNT_ADD =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="Back1JNT" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
-
-DiggerROOT_ADD =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="DiggerROOT" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
-
-EyeStalkROOT_ADD =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="EyeStalkROOT" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
-
-shellfly_ROOTSHJnt_ADD =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="shellfly_ROOTSHJnt" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
-
-joint1_ADD =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="joint1" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
-
-FrontJNT_ADD =
-[[
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="FrontJNT" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.25" />
-            <Property name="z" value="-0.125" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.25" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4.75" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-]]
+CREATURE_JOINT_DATA_TABLE =
+	{
+		{"FISH","joint1"},
+		{"FISHFLOCK","RootJNT"},
+		{"SWIMCOW","RootJNT"},
+		{"SWIMRODENT","GlobalJNT"},
+		{"JELLYFISH","centre"},
+		{"SEASNAKE","RootJNT"},
+		{"SHARK","Root"},
+		{"BIRD","Root"},
+		{"FLYINGSNAKE","RootJNT"},
+		{"FLYINGLIZARD","Back2JNT"},
+		{"BUTTERFLY","Root"},
+		{"SMALLBIRD","Root"},
+		{"BUTTERFLOCK","RootJNT"},
+		{"MOLE","DiggerROOT"},
+		{"PROTOROLLER","RootJNT"},
+		{"PROTODIGGER","EyeStalkROOT"},
+		{"PLOUGH","RootJNT"},
+		{"DRILL","DiggerROOT"},
+		{"WEIRDROLL","RootJNT"},
+		{"WEIRDFLOAT","RootJNT"},
+		{"WEIRDCRYSTAL","RootJNT"},
+		{"WEIRDBUTTERFLY","shellfly_ROOTSHJnt"},
+		{"FIEND","RootJNT"},
+		{"SCUTTLER","RootJNT"},
+		{"SLUG","RootJNT"},
+		{"MINIFIEND","RootJNT"},
+		{"FIENDFISHSMALL","joint1"},
+		{"FLOATER","FrontJNT"},
+		{"MINIDRONE","RootJNT"},
+		{"FIENDFISHBIG","joint1"},
+		{"ROCKCREATURE","RootJNT"},
+	}
+	
+ROBOT_JOINT_DATA_TABLE =
+	{
+		{"WALKER","Root"},
+	}
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"]    = "CompanionPetUnlocker.pak",
-["MOD_AUTHOR"]      = "Mjjstral",
-["MOD_MAINTENANCE"] = "Babscoole",
-["Pet_Ride_Code"]   = "Corvus",
+["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
+["CONTRIBUTORS"]    = "Silent369 and Corvus",
 ["NMS_VERSION"]     = "4.06",
 ["DESCRIPTION"]     = "Enables more creatures to become companion pets",
 ["MODIFICATIONS"]   = 
@@ -645,172 +384,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/ECOSYSTEM/CREATUREDATATABLE.MBIN",
 					["EXML_CHANGE_TABLE"] = 
 					{
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","FISH"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = joint1_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","FISHFLOCK"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","SWIMCOW"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","SWIMRODENT"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = GlobalJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","JELLYFISH"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = centre_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","SEASNAKE"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","SHARK"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = Root_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","BIRD"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = Root_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","FLYINGSNAKE"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","FLYINGLIZARD"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = Back1JNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","BUTTERFLY"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = Root_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","SMALLBIRD"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = Root_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","BUTTERFLOCK"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","MOLE"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = DiggerROOT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","PROTOROLLER"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","PROTODIGGER"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = EyeStalkROOT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","PLOUGH"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","DRILL"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = DiggerROOT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","WEIRDROLL"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","WEIRDFLOAT"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","WEIRDCRYSTAL"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","WEIRDBUTTERFLY"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = shellfly_ROOTSHJnt_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","FIEND"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","SCUTTLER"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","SLUG"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","MINIFIEND"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","FIENDFISHSMALL"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = joint1_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","FLOATER"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = FrontJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","MINIDRONE"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","FIENDFISHBIG"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = joint1_ADD,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","ROCKCREATURE"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = RootJNT_ADD,
-						},
+
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/ECOSYSTEM/ROBOTDATATABLE.MBIN",
 					["EXML_CHANGE_TABLE"] = 
 					{
-						{
-							["SPECIAL_KEY_WORDS"]   = {"Id","WALKER"},
-							["PRECEDING_KEY_WORDS"] = {"Data"},
-							["ADD"]                 = Root_ADD,
-						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Id","QUAD"},
 							["REPLACEMENT_TYPE"]   = {"ADDAFTERSECTION"},
@@ -831,15 +411,84 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
 					["EXML_CHANGE_TABLE"] = 
 					{
-						{					
+                        {
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"PetGrowthTime",          CREATURE_INCUBATE_TIME}, --Original "1209600"
+                                {"PetIncubationTime",      CREATURE_INCUBATE_TIME}, --Original "86400"
+                                {"PetEggLayingDuration",   CREATURE_INCUBATE_TIME}, --Original "0.7"
+                                {"PetEggLayingInterval",   CREATURE_INCUBATE_TIME}, --Original "86400"
+                                {"PetEggFirstEggDelay",    CREATURE_INCUBATE_TIME}, --Original "86400"
+                                {"PetTrustChangeInterval", CREATURE_INCUBATE_TIME}, --Original "86400"
+                                {"CanAlwaysLayEgg",        "True"}, --Original "False"
+                                {"PetTrustOnAdoption",     "1"}, --Original "0.6"
+                                {"PetTrustOnHatch",        "1"}, --Original "0.7"
+                                {"PetMinTrust",            "1"}, --Original "0.2"
+                                {"PetEggModificationTime", "1"}, --Original "5"
+                            }
+                        },
+						{
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",						
 							["VALUE_CHANGE_TABLE"] = 
 							{
-								{"CreatureInteractBaseRange", "50"}, -- Original "5"									
+                                {"CreatureInteractBaseRange",              CREATURE_INTERACT_RANGE},
+                                {"PetInteractBaseRange",                   CREATURE_INTERACT_RANGE},
+                                {"CreatureInteractionRangeBoostHuge",      CREATURE_INTERACT_BOOST}, --Original "1.5"
+                                {"CreatureInteractionRangeBoostLarge",     CREATURE_INTERACT_BOOST}, --Original "1.2"
+                                {"CreatureInteractionRangeBoostMedium",    CREATURE_INTERACT_BOOST}, --Original "1.1"
+                                {"CreatureInteractionRangeBoostSmall",     CREATURE_INTERACT_BOOST}, --Original "1"
+                                {"CreatureInteractionRangeBoostRun",       CREATURE_INTERACT_BOOST}, --Original "2"
+                                {"CreatureInteractionRangeBoostSprint",    CREATURE_INTERACT_BOOST}, --Original "3.5"
+                                {"CreatureInteractionRangeReducePredator", CREATURE_INTERACT_BOOST}, --Original "0.3"								
 							}
-						},				
+						},
+                        {
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MinRideSize",      "0.1"}, --Smallest Viable
+                                {"AllowSleeping",    "True"}, --Original "False"
+                                {"AggressiveSharks", "False"}, --Original "False"
+                                {"PiedPiper",        "False"}, --Original "False"
+                            }
+                        },						
 					}, 
 				},				
 			}
 		}
 	}
 }
+
+local ChangesToCDTJoints = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][4]["EXML_CHANGE_TABLE"]
+
+for i = 1, #CREATURE_JOINT_DATA_TABLE do
+	local Id = CREATURE_JOINT_DATA_TABLE[i][1]
+	local JointName = CREATURE_JOINT_DATA_TABLE[i][2]
+
+
+			ChangesToCDTJoints[#ChangesToCDTJoints+1] =
+			{
+				["SPECIAL_KEY_WORDS"]   = {"Id", Id},
+				["PRECEDING_KEY_WORDS"] = {"Data"},
+				["ADD"]                 = CreateJoint(JointName)
+			}
+end
+
+local ChangesToRDTJoints = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][5]["EXML_CHANGE_TABLE"]
+
+for i = 1, #ROBOT_JOINT_DATA_TABLE do
+	local Id = ROBOT_JOINT_DATA_TABLE[i][1]
+	local JointName = ROBOT_JOINT_DATA_TABLE[i][2]
+
+
+			ChangesToRDTJoints[#ChangesToRDTJoints+1] =
+			{
+				["SPECIAL_KEY_WORDS"]   = {"Id", Id},
+				["PRECEDING_KEY_WORDS"] = {"Data"},
+				["ADD"]                 = CreateJoint(JointName)
+			}
+end
