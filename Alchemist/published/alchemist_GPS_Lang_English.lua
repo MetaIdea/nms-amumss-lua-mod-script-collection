@@ -5,8 +5,8 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "4-05"
-ModVersion = "2-2-1"
+GameVersion = "4-06"
+ModVersion = "2-3-0"
 
 -- =========
 -- CONSTANTS
@@ -288,7 +288,7 @@ LANGUAGE_TABLE = {
   ["D_ALSCPB_HOME_OPT_G"] = "Frigate Recon Status...", --
   ["D_ALSCPB_HOME_OPT_H"] = "[ ! ] Download Frigate Data Cache", --
   ["D_ALSCPB_HOME_RES_G"] = "Frigate planetary sweep in progress <HIGHLIGHT>//<> Relaying locations to suit <HIGHLIGHT>//<> Awaiting finalized frigate data cache.", --
-  ["D_ALSCPB_UTIL_RES_A"] = "Connecting to Fleet...", --
+  ["D_ALSCPB_UTIL_RES_B"] = "Connecting to Fleet...", --
   ["D_ALSCSB_BOOT_DESC"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Configuration Required <HIGHLIGHT>//<> Starting configuration wizard...\n<STELLAR>IMMERSIVE MODE<> <HIGHLIGHT>//<> Scans require resources <HIGHLIGHT>//<> Exact target scan requires Ship Tech <HIGHLIGHT>//<> Enable immersive mode?", --
   ["D_ALSCSB_BOOT_RES_A"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Immersive mode ENABLED <HIGHLIGHT>//<> Enhanced scanning interface... <TRADE>ONLINE<>", --
   ["D_ALSCSB_BOOT_RES_B"] = "Ship Scanner BIOS <HIGHLIGHT>//<> Immersive mode DISABLED <HIGHLIGHT>//<> Enhanced scanning interface... <TRADE>ONLINE<>", --
