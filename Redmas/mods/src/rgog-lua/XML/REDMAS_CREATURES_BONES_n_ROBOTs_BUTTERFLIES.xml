@@ -1,0 +1,306 @@
+
+	<Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="Passive" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="Weird" />
+	</Property>
+	<Property name="ForceID" value="WEIRDCRYSTAL" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Small" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="2" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="CRYSTAL" />
+  </Property>
+
+  <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="Passive" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="Weird" />
+	</Property>
+	<Property name="ForceID" value="WEIRDCRYSTAL" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Small" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="2" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="CRYSTAL" />
+  </Property>
+
+   <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="Butterfly" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="Weird" />
+	</Property>
+	<Property name="ForceID" value="WEIRDBUTTERFLY" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Small" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="1" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="VeryDense" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="" />
+  </Property>
+
+   <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="Passive" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="Weird" />
+	</Property>
+	<Property name="ForceID" value="WEIRDFLOAT" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Small" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="4" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="FLOAT" />
+  </Property>
+
+   <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="PlayerPredator" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="Weird" />
+	</Property>
+	<Property name="ForceID" value="WEIRDROLL" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Small" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="1" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="ROLL" />
+  </Property>
+
+  <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="Butterfly" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="Weird" />
+	</Property>
+	<Property name="ForceID" value="WEIRDBUTTERFLY" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Small" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="1" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="" />
+  </Property>
+
+   <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="PlayerPredator" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="Weird" />
+	</Property>
+	<Property name="ForceID" value="WEIRDROLL" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Small" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="4" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="ROLL" />
+  </Property>
+
+   <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="Prey" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="None" />
+	</Property>
+	<Property name="ForceID" value="ROBOTANTELOPE" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Small" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="1" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="1" />
+	<Property name="Filter" value="" />
+  </Property>
+  <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="Passive" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="None" />
+	</Property>
+	<Property name="ForceID" value="ROBOTANTELOPE" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Medium" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="1" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="" />
+  </Property>
+
+  <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="Prey" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="None" />
+	</Property>
+	<Property name="ForceID" value="BONECAT" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Medium" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="1" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="" />
+  </Property>
+  <Property value="GcCreatureRoleDescription.xml">
+	<Property name="Role" value="GcCreatureRoles.xml">
+	  <Property name="CreatureRole" value="Passive" />
+	</Property>
+	<Property name="ForceType" value="GcCreatureTypes.xml">
+	  <Property name="CreatureType" value="None" />
+	</Property>
+	<Property name="ForceID" value="BONECAT" />
+	<Property name="RequireTag" value="" />
+	<Property name="MinSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Medium" />
+	</Property>
+	<Property name="MaxSize" value="GcCreatureSizeClasses.xml">
+	  <Property name="CreatureSizeClass" value="Huge" />
+	</Property>
+	<Property name="MinGroupSize" value="1" />
+	<Property name="MaxGroupSize" value="1" />
+	<Property name="Density" value="GcCreatureGenerationDensity.xml">
+	  <Property name="Density" value="Normal" />
+	</Property>
+	<Property name="ActiveTime" value="GcCreatureActiveTime.xml">
+	  <Property name="CreatureActiveTime" value="AnyTime" />
+	</Property>
+	<Property name="ProbabilityOfBeingEnabled" value="1" />
+	<Property name="IncreasedSpawnDistance" value="4" />
+	<Property name="Filter" value="" />
+  </Property>

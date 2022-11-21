@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.0.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_RUIN_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_RUIN_1" />
+          <Property name="Name" value="_RUIN_1" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLPLINTH.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLTALLALCOVE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCOLUMN.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLSTRAIGHTTALL.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCROSSBEAM.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLSTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLSTRAIGHT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_RUIN_2" />
+          <Property name="Name" value="_RUIN_2" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLSTRAIGHT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCORNER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLSTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_RUIN_3" />
+          <Property name="Name" value="_RUIN_3" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCORNER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLTALLARCH.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLSTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLSTRAIGHT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_RUIN_4" />
+          <Property name="Name" value="_RUIN_4" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCORNER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLSTRUT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_RUIN_5" />
+          <Property name="Name" value="_RUIN_5" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLSPIRE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_RUIN_6" />
+          <Property name="Name" value="_RUIN_6" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLTALLALCOVE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCORNERTALL.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLTALLARCH.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/RUINS/PARTS/WALLCRUMBLE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

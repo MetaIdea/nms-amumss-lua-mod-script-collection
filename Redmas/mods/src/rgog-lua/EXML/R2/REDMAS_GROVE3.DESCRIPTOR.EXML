@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.0.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_MFULL_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_MFULL_01LOD0" />
+          <Property name="Name" value="_MFull_01LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_MFULL_02LOD0" />
+          <Property name="Name" value="_MFull_02LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_NEWTREE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_01" />
+          <Property name="Name" value="_NewTree_01" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE01.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_02" />
+          <Property name="Name" value="_NewTree_02" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE02.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_03" />
+          <Property name="Name" value="_NewTree_03" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE03.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_04" />
+          <Property name="Name" value="_NewTree_04" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE04.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_05" />
+          <Property name="Name" value="_NewTree_05" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE05.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_06" />
+          <Property name="Name" value="_NewTree_06" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE07.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_07" />
+          <Property name="Name" value="_NewTree_07" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE07.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_08" />
+          <Property name="Name" value="_NewTree_08" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE08.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_09" />
+          <Property name="Name" value="_NewTree_09" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE09.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_010" />
+          <Property name="Name" value="_NewTree_010" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE10.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_011" />
+          <Property name="Name" value="_NewTree_011" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE11.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_012" />
+          <Property name="Name" value="_NewTree_012" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE12.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_013" />
+          <Property name="Name" value="_NewTree_013" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE13.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_014" />
+          <Property name="Name" value="_NewTree_014" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE14.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_015" />
+          <Property name="Name" value="_NewTree_015" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE15.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_016" />
+          <Property name="Name" value="_NewTree_016" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE16.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_017" />
+          <Property name="Name" value="_NewTree_017" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE17.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_018" />
+          <Property name="Name" value="_NewTree_018" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE18.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_019" />
+          <Property name="Name" value="_NewTree_019" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE19.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_020" />
+          <Property name="Name" value="_NewTree_020" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE20.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_021" />
+          <Property name="Name" value="_NewTree_021" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE21.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_022" />
+          <Property name="Name" value="_NewTree_022" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE22.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_023" />
+          <Property name="Name" value="_NewTree_023" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE23.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_024" />
+          <Property name="Name" value="_NewTree_024" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE24.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_025" />
+          <Property name="Name" value="_NewTree_025" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE25.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_026" />
+          <Property name="Name" value="_NewTree_026" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE26.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_027" />
+          <Property name="Name" value="_NewTree_027" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE27.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_028" />
+          <Property name="Name" value="_NewTree_028" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE28.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_029" />
+          <Property name="Name" value="_NewTree_029" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE29.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_030" />
+          <Property name="Name" value="_NewTree_030" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE30.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_031" />
+          <Property name="Name" value="_NewTree_031" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE31.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_032" />
+          <Property name="Name" value="_NewTree_032" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE32.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_033" />
+          <Property name="Name" value="_NewTree_033" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE33.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_034" />
+          <Property name="Name" value="_NewTree_034" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE34.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_035" />
+          <Property name="Name" value="_NewTree_035" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE35.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_036" />
+          <Property name="Name" value="_NewTree_036" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE36.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_037" />
+          <Property name="Name" value="_NewTree_037" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE37.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_038" />
+          <Property name="Name" value="_NewTree_038" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE38.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_039" />
+          <Property name="Name" value="_NewTree_039" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE39.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_040" />
+          <Property name="Name" value="_NewTree_040" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE40.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_041" />
+          <Property name="Name" value="_NewTree_041" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE41.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_042" />
+          <Property name="Name" value="_NewTree_042" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE42.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_043" />
+          <Property name="Name" value="_NewTree_043" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE43.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_044" />
+          <Property name="Name" value="_NewTree_044" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE44.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_045" />
+          <Property name="Name" value="_NewTree_045" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE45.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_046" />
+          <Property name="Name" value="_NewTree_046" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE46.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_047" />
+          <Property name="Name" value="_NewTree_047" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE47.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_048" />
+          <Property name="Name" value="_NewTree_048" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE48.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_049" />
+          <Property name="Name" value="_NewTree_049" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE49.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_050" />
+          <Property name="Name" value="_NewTree_050" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE50.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_051" />
+          <Property name="Name" value="_NewTree_051" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE51.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_052" />
+          <Property name="Name" value="_NewTree_052" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE52.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_053" />
+          <Property name="Name" value="_NewTree_053" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE53.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_054" />
+          <Property name="Name" value="_NewTree_054" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE54.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_055" />
+          <Property name="Name" value="_NewTree_055" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE55.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_056" />
+          <Property name="Name" value="_NewTree_056" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE56.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_057" />
+          <Property name="Name" value="_NewTree_057" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE57.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_058" />
+          <Property name="Name" value="_NewTree_058" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE58.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_059" />
+          <Property name="Name" value="_NewTree_059" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE59.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_060" />
+          <Property name="Name" value="_NewTree_060" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE60.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_061" />
+          <Property name="Name" value="_NewTree_061" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE61.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_062" />
+          <Property name="Name" value="_NewTree_062" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE62.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_063" />
+          <Property name="Name" value="_NewTree_063" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE63.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_064" />
+          <Property name="Name" value="_NewTree_064" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE64.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_065" />
+          <Property name="Name" value="_NewTree_065" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE65.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_066" />
+          <Property name="Name" value="_NewTree_066" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE66.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_067" />
+          <Property name="Name" value="_NewTree_067" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE67.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_068" />
+          <Property name="Name" value="_NewTree_068" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE68.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_069" />
+          <Property name="Name" value="_NewTree_069" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE69.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_070" />
+          <Property name="Name" value="_NewTree_070" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE70.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_071" />
+          <Property name="Name" value="_NewTree_071" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE71.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_072" />
+          <Property name="Name" value="_NewTree_072" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE72.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_073" />
+          <Property name="Name" value="_NewTree_073" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE73.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_074" />
+          <Property name="Name" value="_NewTree_074" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE74.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_NEWTREE_075" />
+          <Property name="Name" value="_NewTree_075" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/PARTS/HQTREE75.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_MLARGE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_MLARGE_01LOD0" />
+          <Property name="Name" value="_MLarge_01LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_MLARGE_02LOD0" />
+          <Property name="Name" value="_MLarge_02LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>
