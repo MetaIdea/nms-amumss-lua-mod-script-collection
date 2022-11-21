@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.0.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_BASE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_1" />
+          <Property name="Name" value="_base_1" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_BULB1_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BULB1_1" />
+                      <Property name="Name" value="_bulb1_1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BULB1_2" />
+                      <Property name="Name" value="_bulb1_2" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BULB1_3" />
+                      <Property name="Name" value="_bulb1_3" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_SEAWEED_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_SEAWEED_1" />
+                      <Property name="Name" value="_seaweed_1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_2" />
+          <Property name="Name" value="_base_2" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_BULB2_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BULB2_1" />
+                      <Property name="Name" value="_bulb2_1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BULB2_2" />
+                      <Property name="Name" value="_bulb2_2" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_SEAWEED_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_SEAWEED_2" />
+                      <Property name="Name" value="_seaweed_2" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_3" />
+          <Property name="Name" value="_base_3" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_BULB3_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BULB3_1" />
+                      <Property name="Name" value="_bulb3_1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

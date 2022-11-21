@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (3.5.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_SINGLE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SINGLE_TOP1" />
+          <Property name="Name" value="_SINGLE_TOP1" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_TOP_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TOP_1" />
+                      <Property name="Name" value="_TOP_1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TOP_2" />
+                      <Property name="Name" value="_TOP_2" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TOP_3" />
+                      <Property name="Name" value="_TOP_3" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TOP_4" />
+                      <Property name="Name" value="_TOP_4" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TOP_5" />
+                      <Property name="Name" value="_TOP_5" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TOP_6" />
+                      <Property name="Name" value="_TOP_6" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TOP_7" />
+                      <Property name="Name" value="_TOP_7" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_SILO1_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SILO1_CAPS" />
+          <Property name="Name" value="_SILO1_CAPS" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SILO1_CUBE" />
+          <Property name="Name" value="_SILO1_CUBE" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SILO1_CYL" />
+          <Property name="Name" value="_SILO1_CYL" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SILO1_HEX" />
+          <Property name="Name" value="_SILO1_HEX" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SILO1_SPHERE" />
+          <Property name="Name" value="_SILO1_SPHERE" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_SILO1_TANKS" />
+          <Property name="Name" value="_SILO1_TANKS" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_DOME_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_DOME_A" />
+          <Property name="Name" value="_DOME_A" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_DOME_B" />
+          <Property name="Name" value="_DOME_B" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_DOME_C" />
+          <Property name="Name" value="_DOME_C" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_DOME_D" />
+          <Property name="Name" value="_DOME_D" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_SILO1_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_SILO1_CYL" />
+                      <Property name="Name" value="_SILO1_CYL" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_SILO1_CAPS" />
+                      <Property name="Name" value="_SILO1_CAPS" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_SILO1_HEX" />
+                      <Property name="Name" value="_SILO1_HEX" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_SILO1_SPHERE" />
+                      <Property name="Name" value="_SILO1_SPHERE" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_SILO1_CUBE" />
+                      <Property name="Name" value="_SILO1_CUBE" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_TUBE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TUBE_A" />
+          <Property name="Name" value="_TUBE_A" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TUBE_B" />
+          <Property name="Name" value="_TUBE_B" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TUBE_C" />
+          <Property name="Name" value="_TUBE_C" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_TUBE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TUBE_A" />
+          <Property name="Name" value="_TUBE_A" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TUBE_B" />
+          <Property name="Name" value="_TUBE_B" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_TUBE_C" />
+          <Property name="Name" value="_TUBE_C" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_BASE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_FIVE" />
+          <Property name="Name" value="_BASE_FIVE" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINTOP.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESILO.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETOP.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_FOUR" />
+          <Property name="Name" value="_BASE_FOUR" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESILO.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINTOP.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_1" />
+                      <Property name="Name" value="_ACC_1" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_2" />
+                      <Property name="Name" value="_ACC_2" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBE.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_ONE" />
+          <Property name="Name" value="_BASE_ONE" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINTOP.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESILO.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ONE_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ONE_A" />
+                      <Property name="Name" value="_ONE_A" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEMIDDLE.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETOP.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_ACC_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_ACC_1A" />
+                                  <Property name="Name" value="_ACC_1A" />
+                                  <Property name="ReferencePaths">
+                                    <Property value="NMSString0x80.xml">
+                                      <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+                                    </Property>
+                                  </Property>
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_ACC_1B" />
+                                  <Property name="Name" value="_ACC_1B" />
+                                  <Property name="ReferencePaths">
+                                    <Property value="NMSString0x80.xml">
+                                      <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBE.SCENE.MBIN" />
+                                    </Property>
+                                  </Property>
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ONE_B" />
+                      <Property name="Name" value="_ONE_B" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBE.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_SEVEN" />
+          <Property name="Name" value="_BASE_SEVEN" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESILO.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_7B" />
+                      <Property name="Name" value="_ACC_7B" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/GENERATOR.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_7C" />
+                      <Property name="Name" value="_ACC_7C" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/GENERATOR.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_7A" />
+                      <Property name="Name" value="_ACC_7A" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINBASE.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINTOP.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_SIX" />
+          <Property name="Name" value="_BASE_SIX" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINTOP.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESILO.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETOP.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_SMALL1" />
+          <Property name="Name" value="_BASE_SMALL1" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETOP.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_SMALL2" />
+          <Property name="Name" value="_BASE_SMALL2" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETOP.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_SMALL3" />
+          <Property name="Name" value="_BASE_SMALL3" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETOP.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_THREE" />
+          <Property name="Name" value="_BASE_THREE" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESILO.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINTOP.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_BASE_TWO" />
+          <Property name="Name" value="_BASE_TWO" />
+          <Property name="ReferencePaths">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/LUNARMARKER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINTOP.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESILO.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINMIDDLE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINBASE.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBESIDE.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_TWOA" />
+                      <Property name="Name" value="_ACC_TWOA" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLETANK.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_ACC_TWOB" />
+                      <Property name="Name" value="_ACC_TWOB" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBESIDE.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_MIDDLETWO_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_MIDDLETWO_A" />
+                      <Property name="Name" value="_MIDDLETWO_A" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBE.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUT.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_MIDDLETWO_B" />
+                      <Property name="Name" value="_MIDDLETWO_B" />
+                      <Property name="ReferencePaths">
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESTRUTCOVER.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLEBASE.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/SINGLESILO.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/MAINBASE.SCENE.MBIN" />
+                        </Property>
+                        <Property value="NMSString0x80.xml">
+                          <Property name="Value" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/LUNAR/PARTS/DOUBLETUBESIDE.SCENE.MBIN" />
+                        </Property>
+                      </Property>
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

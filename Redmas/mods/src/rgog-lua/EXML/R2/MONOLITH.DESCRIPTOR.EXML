@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (4.0.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_MONOLITH_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_MONOLITH_1LOD0" />
+          <Property name="Name" value="_Monolith_1LOD0" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_BASE_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BASE_NOTOP1LOD0" />
+                      <Property name="Name" value="_Base_NoTop1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BASE_NOTOP2LOD0" />
+                      <Property name="Name" value="_Base_NoTop2LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_BASE_TOPLOD0" />
+                      <Property name="Name" value="_Base_TopLOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_CLUSTERS_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CLUSTERS_2LOD0" />
+                                  <Property name="Name" value="_Clusters_2LOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CLUSTERS_1LOD0" />
+                                  <Property name="Name" value="_Clusters_1LOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_CLUSTERS_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_CLUSTERS_NT1LOD0" />
+                      <Property name="Name" value="_Clusters_NT1LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_CLUSTERS_NT2LOD0" />
+                      <Property name="Name" value="_Clusters_NT2LOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>

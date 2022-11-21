@@ -1,0 +1,48 @@
+ <Property value="TkSceneNodeData.xml">
+    <Property name="Name" value="_Building_Kor" />
+    <Property name="NameHash" value="505402159" />
+    <Property name="Type" value="REFERENCE" />
+    <Property name="Transform" value="TkTransformData.xml">
+      <Property name="TransX" value="100" />
+      <Property name="TransY" value="-50" />
+      <Property name="TransZ" value="0" />
+      <Property name="RotX" value="0" />
+      <Property name="RotY" value="0" />
+      <Property name="RotZ" value="0" />
+      <Property name="ScaleX" value="1" />
+      <Property name="ScaleY" value="1" />
+      <Property name="ScaleZ" value="1" />
+    </Property>
+    <Property name="Attributes">
+      <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Name" value="SCENEGRAPH" />
+        <Property name="AltID" value="" />
+        <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LARGEBUILDINGS\KORVAX\LARGEBUILDING_KORVAX.SCENE.MBIN" />
+      </Property>
+    </Property>
+    <Property name="Children" />
+ </Property>
+ <Property value="TkSceneNodeData.xml">
+    <Property name="Name" value="_Building_Vyk" />
+    <Property name="NameHash" value="505402159" />
+    <Property name="Type" value="REFERENCE" />
+    <Property name="Transform" value="TkTransformData.xml">
+      <Property name="TransX" value="100" />
+      <Property name="TransY" value="-50" />
+      <Property name="TransZ" value="0" />
+      <Property name="RotX" value="0" />
+      <Property name="RotY" value="0" />
+      <Property name="RotZ" value="0" />
+      <Property name="ScaleX" value="1" />
+      <Property name="ScaleY" value="1" />
+      <Property name="ScaleZ" value="1" />
+    </Property>
+    <Property name="Attributes">
+      <Property value="TkSceneNodeAttributeData.xml">
+        <Property name="Name" value="SCENEGRAPH" />
+        <Property name="AltID" value="" />
+        <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LARGEBUILDINGS\VYKEEN\LARGEBUILDING_VYKEEN.SCENE.MBIN" />
+      </Property>
+    </Property>
+    <Property name="Children" />
+ </Property>

@@ -1,0 +1,169 @@
+ 	<Property value="TkSceneNodeData.xml">
+	<Property name="Name" value="ADDITIONAL_FREIGHTER" />
+	<Property name="NameHash" value="2488506156" />
+	<Property name="Type" value="REFERENCE" />
+	<Property name="Transform" value="TkTransformData.xml">
+	  <Property name="TransX" value="1000" />
+	  <Property name="TransY" value="0" />
+	  <Property name="TransZ" value="0" />
+	  <Property name="RotX" value="0" />
+	  <Property name="RotY" value="0" />
+	  <Property name="RotZ" value="0" />
+	  <Property name="ScaleX" value="1" />
+	  <Property name="ScaleY" value="1" />
+	  <Property name="ScaleZ" value="1" />
+	</Property>
+	<Property name="Attributes">
+	  <Property value="TkSceneNodeAttributeData.xml">
+		<Property name="Name" value="SCENEGRAPH" />
+		<Property name="AltID" value="" />
+		<Property name="Value" value="MODELS\RGO\_FREIGHTERTINY_PROC.SCENE.MBIN" />
+	  </Property>
+	</Property>
+	<Property name="Children" />
+  </Property>
+  <Property value="TkSceneNodeData.xml">
+  <Property name="Name" value="ADDITIONAL_FREIGHTER" />
+  <Property name="NameHash" value="2488506156" />
+  <Property name="Type" value="REFERENCE" />
+  <Property name="Transform" value="TkTransformData.xml">
+	<Property name="TransX" value="-1000" />
+	<Property name="TransY" value="0" />
+	<Property name="TransZ" value="0" />
+	<Property name="RotX" value="0" />
+	<Property name="RotY" value="0" />
+	<Property name="RotZ" value="0" />
+	<Property name="ScaleX" value="1" />
+	<Property name="ScaleY" value="1" />
+	<Property name="ScaleZ" value="1" />
+  </Property>
+  <Property name="Attributes">
+	<Property value="TkSceneNodeAttributeData.xml">
+	  <Property name="Name" value="SCENEGRAPH" />
+	  <Property name="AltID" value="" />
+	  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\LIVINGFRIGATE.SCENE.MBIN" />
+	</Property>
+  </Property>
+  <Property name="Children" />
+</Property>
+<Property value="TkSceneNodeData.xml">
+<Property name="Name" value="ADDITIONAL_FREIGHTER" />
+<Property name="NameHash" value="2488506156" />
+<Property name="Type" value="REFERENCE" />
+<Property name="Transform" value="TkTransformData.xml">
+  <Property name="TransX" value="2000" />
+  <Property name="TransY" value="0" />
+  <Property name="TransZ" value="0" />
+  <Property name="RotX" value="0" />
+  <Property name="RotY" value="0" />
+  <Property name="RotZ" value="0" />
+  <Property name="ScaleX" value="0.21" />
+  <Property name="ScaleY" value="0.21" />
+  <Property name="ScaleZ" value="0.21" />
+</Property>
+<Property name="Attributes">
+  <Property value="TkSceneNodeAttributeData.xml">
+	<Property name="Name" value="SCENEGRAPH" />
+	<Property name="AltID" value="" />
+	<Property name="Value" value="MODELS\COMMON\SPACECRAFT\POLICE\POLICEFREIGHTER.SCENE.MBIN" />
+  </Property>
+</Property>
+<Property name="Children" />
+</Property>
+<Property value="TkSceneNodeData.xml">
+<Property name="Name" value="ADDITIONAL_FREIGHTER" />
+<Property name="NameHash" value="2488506156" />
+<Property name="Type" value="REFERENCE" />
+<Property name="Transform" value="TkTransformData.xml">
+  <Property name="TransX" value="1000" />
+  <Property name="TransY" value="0" />
+  <Property name="TransZ" value="1000" />
+  <Property name="RotX" value="0" />
+  <Property name="RotY" value="0" />
+  <Property name="RotZ" value="0" />
+  <Property name="ScaleX" value="1" />
+  <Property name="ScaleY" value="1" />
+  <Property name="ScaleZ" value="1" />
+</Property>
+<Property name="Attributes">
+  <Property value="TkSceneNodeAttributeData.xml">
+	<Property name="Name" value="SCENEGRAPH" />
+	<Property name="AltID" value="" />
+	<Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTSHIP01.SCENE.MBIN" />
+  </Property>
+</Property>
+<Property name="Children" />
+</Property>
+<Property value="TkSceneNodeData.xml">
+<Property name="Name" value="ADDITIONAL_FREIGHTER" />
+<Property name="NameHash" value="2488506156" />
+<Property name="Type" value="REFERENCE" />
+<Property name="Transform" value="TkTransformData.xml">
+  <Property name="TransX" value="2000" />
+  <Property name="TransY" value="0" />
+  <Property name="TransZ" value="1000" />
+  <Property name="RotX" value="0" />
+  <Property name="RotY" value="0" />
+  <Property name="RotZ" value="0" />
+  <Property name="ScaleX" value="1" />
+  <Property name="ScaleY" value="1" />
+  <Property name="ScaleZ" value="1" />
+</Property>
+<Property name="Attributes">
+  <Property value="TkSceneNodeAttributeData.xml">
+	<Property name="Name" value="SCENEGRAPH" />
+	<Property name="AltID" value="" />
+	<Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTERSMALL_PROC.SCENE.MBIN" />
+  </Property>
+</Property>
+<Property name="Children" />
+</Property>
+<Property value="TkSceneNodeData.xml">
+<Property name="Name" value="ADDITIONAL_FREIGHTER" />
+<Property name="NameHash" value="2488506156" />
+<Property name="Type" value="REFERENCE" />
+<Property name="Transform" value="TkTransformData.xml">
+<Property name="TransX" value="-2000" />
+<Property name="TransY" value="-2000" />
+<Property name="TransZ" value="0" />
+<Property name="RotX" value="0" />
+<Property name="RotY" value="0" />
+<Property name="RotZ" value="0" />
+<Property name="ScaleX" value="1" />
+<Property name="ScaleY" value="1" />
+<Property name="ScaleZ" value="1" />
+</Property>
+<Property name="Attributes">
+<Property value="TkSceneNodeAttributeData.xml">
+  <Property name="Name" value="SCENEGRAPH" />
+  <Property name="AltID" value="" />
+  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\INDUSTRIAL\FREIGHTER_A.SCENE.MBIN" />
+</Property>
+</Property>
+<Property name="Children" />
+</Property>
+<Property value="TkSceneNodeData.xml">
+<Property name="Name" value="ADDITIONAL_FREIGHTER" />
+<Property name="NameHash" value="2488506156" />
+<Property name="Type" value="REFERENCE" />
+<Property name="Transform" value="TkTransformData.xml">
+  <Property name="TransX" value="2000" />
+  <Property name="TransY" value="2000" />
+  <Property name="TransZ" value="1000" />
+  <Property name="RotX" value="0" />
+  <Property name="RotY" value="0" />
+  <Property name="RotZ" value="0" />
+  <Property name="ScaleX" value="1" />
+  <Property name="ScaleY" value="1" />
+  <Property name="ScaleZ" value="1" />
+</Property>
+<Property name="Attributes">
+  <Property value="TkSceneNodeAttributeData.xml">
+	<Property name="Name" value="SCENEGRAPH" />
+	<Property name="AltID" value="" />
+	<Property name="Value" value="MODELS\COMMON\SPACECRAFT\FRIGATES\NORMANDYFRIGATE.SCENE.MBIN" />
+  </Property>
+</Property>
+<Property name="Children" />
+</Property>
+

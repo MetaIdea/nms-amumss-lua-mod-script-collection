@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--File created using MBINCompiler version (3.91.0)-->
+<Data template="TkModelDescriptorList">
+  <Property name="List">
+    <Property value="TkResourceDescriptorList.xml">
+      <Property name="TypeId" value="_HQTREE_" />
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_HQTREE_15" />
+          <Property name="Name" value="_HQTree_15" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children">
+            <Property value="TkModelDescriptorList.xml">
+              <Property name="List">
+                <Property value="TkResourceDescriptorList.xml">
+                  <Property name="TypeId" value="_TRUNK_" />
+                  <Property name="Descriptors">
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TRUNK_ALOD0" />
+                      <Property name="Name" value="_TRUNK_ALOD0" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_BRANCH_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BRANCH_A5XRARELOD0" />
+                                  <Property name="Name" value="_BRANCH_A5xRARELOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_FROND_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_FROND_A5CLOD0" />
+                                              <Property name="Name" value="_FROND_A5CLOD0" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TRUNK_ALOD1" />
+                      <Property name="Name" value="_TRUNK_ALOD1" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_BRANCH_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BRANCH_A5XRARELOD1" />
+                                  <Property name="Name" value="_BRANCH_A5xRARELOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_FROND_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_FROND_A5CLOD1" />
+                                              <Property name="Name" value="_FROND_A5CLOD1" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TRUNK_ALOD2" />
+                      <Property name="Name" value="_TRUNK_ALOD2" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_BRANCH_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BRANCH_A5XRARELOD2" />
+                                  <Property name="Name" value="_BRANCH_A5xRARELOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_FROND_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_FROND_A5CLOD2" />
+                                              <Property name="Name" value="_FROND_A5CLOD2" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_TRUNK_ALOD3" />
+                      <Property name="Name" value="_TRUNK_ALOD3" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_BRANCH_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_BRANCH_A5XRARELOD3" />
+                                  <Property name="Name" value="_BRANCH_A5xRARELOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children">
+                                    <Property value="TkModelDescriptorList.xml">
+                                      <Property name="List">
+                                        <Property value="TkResourceDescriptorList.xml">
+                                          <Property name="TypeId" value="_FROND_" />
+                                          <Property name="Descriptors">
+                                            <Property value="TkResourceDescriptorData.xml">
+                                              <Property name="Id" value="_FROND_A5CLOD3" />
+                                              <Property name="Name" value="_FROND_A5CLOD3" />
+                                              <Property name="ReferencePaths" />
+                                              <Property name="Chance" value="0" />
+                                              <Property name="Children" />
+                                            </Property>
+                                          </Property>
+                                        </Property>
+                                      </Property>
+                                    </Property>
+                                  </Property>
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+  </Property>
+</Data>
