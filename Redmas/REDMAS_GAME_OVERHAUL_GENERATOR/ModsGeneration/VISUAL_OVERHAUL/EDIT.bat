@@ -1,3 +1,0 @@
-cd ..\..\_ENGINE\RGOG\
-cd LITE
-start  lite.exe ..\USERPARAMS\REDMAS_VISUAL_OVERHAUL_PRESET.lua
