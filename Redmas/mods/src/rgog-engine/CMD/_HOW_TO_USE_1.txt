@@ -1,0 +1,13 @@
+v1.5
+**************************************************************************
+this version is a much user friendly version than the v1.1,
+--------------------------------------------------------------------------
+but remains a temporary version while i am developping a UI for RGOG.
+**************************************************************************
+--
+!!!!!!!!!!!!!!! don't put mods.pak inside the "Mods" Folder !!!!!!!!!!!!!!!
+--
+!!!!!!!!!!! The script is only tested on AMUMSS v 4.0.3  !!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!     i recommand to not update AMUMSS for RGOG use !!!!!!!!!!!!!
+--
+----------------------------------------------------------------------------

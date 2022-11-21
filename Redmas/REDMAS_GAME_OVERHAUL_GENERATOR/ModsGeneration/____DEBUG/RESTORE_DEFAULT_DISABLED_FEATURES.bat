@@ -1,5 +1,0 @@
-cd ..\..\_ENGINE\RGOG
-copy SRC\REDMASPARAMS\_DEBUG.lua USERPARAMS\_DEBUG.lua
-
-cd LITE
-start  lite.exe ..\USERPARAMS\_DEBUG.lua

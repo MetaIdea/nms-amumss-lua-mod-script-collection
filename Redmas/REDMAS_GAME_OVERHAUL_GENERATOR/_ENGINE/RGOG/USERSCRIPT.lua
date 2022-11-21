@@ -1,7 +1,0 @@
--- ************************************************************************************************************
--- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
---
--- REDMAS GAME OVERHAUL BUILDER is a .lua script that allows to,
--- using AMUMSS created by Mjstral,
--- generate / update / modify easily, every single mod that i've done
--- + Easy to tweak at your own taste. -- If you use this tool to create your mods, credits

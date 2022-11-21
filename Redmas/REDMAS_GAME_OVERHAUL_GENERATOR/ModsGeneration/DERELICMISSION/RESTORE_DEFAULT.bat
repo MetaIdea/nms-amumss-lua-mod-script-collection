@@ -1,5 +1,0 @@
-cd ..\..\_ENGINE\RGOG
-copy SRC\REDMASPARAMS\DERELIC.lua USERPARAMS\DERELIC.lua
-
-cd LITE
-start  lite.exe ..\USERPARAMS\DERELIC.lua
