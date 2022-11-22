@@ -181,43 +181,7 @@ if ["%_packageExist%"]==["PSAR"] (
 	
 	set /p _packageVersion=<"MODBUILDER\UpdatePackage_CONTENT\MODBUILDER\AMUMSSVersion.txt" 1>NUL 2>NUL
 	
-	if not [!_CurrentVersion!]==[!_packageVersion!] (
-		echo. ===^> New version available [!_packageVersion!]
 
-		echo.
-		CHOICE /c:yn /m " %_zBLACKonYELLOW% ??? Would you like to UPDATE AMUMSS version ( not_recommended_for_RGOG_USE ) %_zDEFAULT%"
-		if !ERRORLEVEL! EQU 2 goto :CancelledByUser
-
-		cd MODBUILDER
-		psarc.exe extract "UpdatePackage/UpdatePackage.pak" --to="!_AMUMSS_PATH!" -y >nul
-		cd ..
-
-		set /p _UpdatedVersion=<"MODBUILDER\AMUMSSVersion.txt" 1>NUL 2>NUL
-
-		if defined _dev (
-			set /p _UpdatedVersion=<"MODBUILDER\UpdatePackage_CONTENT\MODBUILDER\AMUMSSVersion.txt" 1>NUL 2>NUL
-		)
-
-		if [!_packageVersion!]==[!_UpdatedVersion!] (
-			echo. ===^> Update completed successfully, see README-What's_new.txt for details
-			set "_updateDone=Y"
-
-			FOR /F "delims=" %%G in (MODBUILDER\Delete_this.txt) do (
-				if exist "%%G" (
-					Del /f /q /s "%%G" 1>NUL 2>NUL
-					RD "%%G" 1>NUL 2>NUL
-				)
-			)
-
-			echo.
-			echo. %_zBLACKonYELLOW% A NEW update may exist, re-start BUILDMOD.bat to check %_zDEFAULT%
-			pause
-			start "" MODBUILDER\buildmod_update.bat
-			exit
-		)
-	) else (
-		echo. ===^> update already installed
-	)
 )		
 goto :RUN
 

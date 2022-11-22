@@ -13,12 +13,12 @@ rem    KEEP spaces between %_O% and -option Y
 set _O=%_O%      -AutoUpdateMBinCompiler Y
 set _O=%_O%      -CheckForModConflicts N
 set _O=%_O%      -CLEANLOG Y
-set _O=%_O%      -CombinedModType ASK
-set _O=%_O%      -CombineModPak ASK
+set _O=%_O%      -CombinedModType Y
+set _O=%_O%      -CombineModPak Y
 set _O=%_O%      -CopyToGamefolder ASK
 set _O=%_O%      -DEV_MODE L
 set _O=%_O%      -DoConfigGlobal Y
-set _O=%_O%      -GameVersion ASK
+set _O=%_O%      -GameVersion P
 set _O=%_O%      -IncludeLuaScriptInPak Y
 set _O=%_O%      -IndividualModPakType P
 set _O=%_O%      -MAPFILETREE LUAPLUS
@@ -31,8 +31,8 @@ set _O=%_O%      -SHOWOPTIONS N
 set _O=%_O%      -SHOWSECTIONS Y
 set _O=%_O%      -SOUND Y
 set _O=%_O%      -UseColors Y
-set _O=%_O%      -UseExtraFilesInPAK ASK
-set _O=%_O%      -UseLuaScriptInPak ASK
+set _O=%_O%      -UseExtraFilesInPAK Y
+set _O=%_O%      -UseLuaScriptInPak Y
 
 REM for FUTURE OPTIONS
 set _O=%_O%      

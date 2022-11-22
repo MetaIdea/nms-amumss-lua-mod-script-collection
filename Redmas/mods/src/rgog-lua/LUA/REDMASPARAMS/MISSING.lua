@@ -13,7 +13,7 @@ TEST_PRESET ={
         ["REDMAS_WATER_REFLECTIONS"] = "ON",
         ["SPACE_BLUR_FEATURE"] = "ON",
         ["FILTERS_SWAP_FEATURE"] = "ON",
-        ["BINOCULARS_TYPE"] = "SUN", -- CLEAR / CLEAR
+        ["BINOCULARS_TYPE"] = "CLEAR", -- CLEAR / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
         ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- (REALISTIC / VANILLA / FANTASY )
@@ -24,8 +24,8 @@ TEST_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "SCIFIFANTASY",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "LIBERTEUS", --"E-E3-1"   or another img name 
+        ["HELLO_GAMES_SPASH_SCREEN"] = "LARGEBACKDROP",  --"HG-E3-1"  or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "FANTASY_OUTLAWS", --"E-E3-1"   or another img name 
         ["NMS_TITLE"] = "TITLE-ATLAS", --"TITLE-WAYPOINT"  -- "TITLE-ATLAS"  or another img name 
         ["MENU_SPLASH_SCREEN"] = "SCIFI-BGM", --"E3-RUINS"  -- SCIFI-BGM -- or your image name
         ["TRANSPARENT_OPTIONS_MENU"] = "ON",
@@ -187,4 +187,6 @@ TEST_PRESET ={
         ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
     }
 }
+
+
 

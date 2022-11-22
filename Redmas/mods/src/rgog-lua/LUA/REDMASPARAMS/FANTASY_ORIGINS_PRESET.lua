@@ -23,10 +23,10 @@ FANTASY_ORIGINS_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
+        ["HELLO_GAMES_SPASH_SCREEN"] = "PRE-RELEASE2",  --"HG-E3-1"  or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "FANTASY_ORIGINS", --"E-E3-1"   or another img name 
         ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name 
+        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE6", --"E3-RUINS"   or another img name 
         ["TRANSPARENT_OPTIONS_MENU"] = "ON",
     },
     ["CAMERA_FEATURES"] =
