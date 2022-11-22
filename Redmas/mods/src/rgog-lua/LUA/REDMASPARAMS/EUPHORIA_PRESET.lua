@@ -25,7 +25,7 @@ EUPHORIA_PRESET ={
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
         ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name 
         ["ENGINE_SPASH_SCREEN"] = "E-E3-1", --"E-E3-1"   or another img name 
-        ["NMS_TITLE"] = "TITLE-WAYPOINT", --"TITLE-WAYPOINT"   or another img name 
+        ["NMS_TITLE"] = "TITLE-EUPHORIA", --"TITLE-WAYPOINT"   or another img name 
         ["MENU_SPLASH_SCREEN"] = "E3-RUINS", --"E3-RUINS"   or another img name 
         ["TRANSPARENT_OPTIONS_MENU"] = "ON",
     },

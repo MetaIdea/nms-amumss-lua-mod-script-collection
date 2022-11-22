@@ -11972,25 +11972,25 @@ then
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "10",
 				["MAXSIZE"] = "1"
 			},
@@ -12009,20 +12009,20 @@ then
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
@@ -12184,19 +12184,19 @@ then
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
@@ -12234,7 +12234,7 @@ then
 
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "10",
 				["MAXSIZE"] = "10"
 			},
@@ -12252,19 +12252,19 @@ then
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "30"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "30"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "30"
 			},
@@ -12533,7 +12533,7 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\UNDERWATERBOULDER.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "4"
 			},
@@ -12863,14 +12863,14 @@ then
 
 			{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "2"
 			},
 
 			{
 				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "4"
 			},
@@ -12960,9 +12960,9 @@ then
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "31"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SINGLEUMBRELLA.SCENE.MBIN]],

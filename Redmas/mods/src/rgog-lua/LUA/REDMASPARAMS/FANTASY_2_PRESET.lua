@@ -23,8 +23,8 @@ FANTASY_2_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "LIBERTEUS", --"E-E3-1"   or another img name 
+        ["HELLO_GAMES_SPASH_SCREEN"] = "FANTASY_REBORN",  --"HG-E3-1"  or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "FANTASY_REBORN2", --"E-E3-1"   or another img name 
         ["NMS_TITLE"] = "TITLE-ATLAS", --"TITLE-WAYPOINT"  -- "TITLE-ATLAS"  or another img name 
         ["MENU_SPLASH_SCREEN"] = "SCIFI-BGM", --"E3-RUINS"  -- SCIFI-BGM -- or your image name
         ["TRANSPARENT_OPTIONS_MENU"] = "ON",

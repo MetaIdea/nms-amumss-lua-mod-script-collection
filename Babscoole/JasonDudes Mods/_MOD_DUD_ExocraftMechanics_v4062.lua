@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] = "_MOD_DUD_ExocraftMechanics_v4061.pak",
+["MOD_FILENAME"] = "_MOD_DUD_ExocraftMechanics_v4062.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole and Wbertro",
@@ -22,6 +22,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"OffsetY", "2"},
 								{"VertRotationMin", "-15"},
 								{"VertRotationMax", "-4.4"},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"MechFirstPersonCam","GcCameraFollowSettings.xml",},
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] = 	
+							{		
+								{"VertRotationMax", "5"},
 							}
 						},
 						{
@@ -1080,8 +1088,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="-0.6" />
         <Property name="TransY" value="-0.2" />
         <Property name="TransZ" value="-2.5" />
-        <Property name="RotX" value="-15" />
-        <Property name="RotY" value="14" />
+        <Property name="RotX" value="-12" />
+        <Property name="RotY" value="18" />
         <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="23.547716" />
         <Property name="ScaleY" value="23.547716" />
@@ -1106,7 +1114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="45000.000000" />
+          <Property name="Value" value="55000.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_R" />
@@ -1174,22 +1182,22 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="INTENSITY" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="100.000000" />
+              <Property name="Value" value="5.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_R" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="0.800000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_G" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="0.800000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_B" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="0.800000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COOKIE_IDX" />
@@ -1219,8 +1227,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="TransX" value="0.6" />
         <Property name="TransY" value="-0.2" />
         <Property name="TransZ" value="-2.5" />
-        <Property name="RotX" value="-15" />
-        <Property name="RotY" value="-14" />
+        <Property name="RotX" value="-12" />
+        <Property name="RotY" value="-18" />
         <Property name="RotZ" value="0" />
         <Property name="ScaleX" value="23.547716" />
         <Property name="ScaleY" value="23.547716" />
@@ -1245,7 +1253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="INTENSITY" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="45000.000000" />
+          <Property name="Value" value="55000.000000" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="COL_R" />
@@ -1313,22 +1321,22 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="INTENSITY" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="100.000000" />
+              <Property name="Value" value="5.000000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_R" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="0.800000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_G" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="0.800000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COL_B" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.000000" />
+              <Property name="Value" value="0.800000" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="COOKIE_IDX" />
