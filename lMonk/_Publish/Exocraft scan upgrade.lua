@@ -6,7 +6,7 @@ local desc = [[
   Re-arange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]--------------------------------------------------------------------------------------
-mod_version = 1.95
+mod_version = 1.96
 
 local icon = {
 	glitch		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.GLITCH.DDS',
@@ -348,7 +348,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.06',
+	NMS_VERSION			= '4.07',
 	MOD_DESCRIPTION		= desc,
 	ADD_FILES = {
 		{

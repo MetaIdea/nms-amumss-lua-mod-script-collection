@@ -10,7 +10,7 @@
 
 	</Property>
     <Property name="DetailObjects">
-	      <Property value="GcObjectSpawnData.xml">
+	     <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">

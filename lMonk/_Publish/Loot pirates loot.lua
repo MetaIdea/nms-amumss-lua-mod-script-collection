@@ -2,7 +2,7 @@
 local desc = [[
   Replace space pirates & raids loot with a more varied selection
 ]]------------------------------------------------------------------------
-mod_version = 1.58
+mod_version = 1.59
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -231,7 +231,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Loot pirates loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.06',
+	NMS_VERSION			= '4.07',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
