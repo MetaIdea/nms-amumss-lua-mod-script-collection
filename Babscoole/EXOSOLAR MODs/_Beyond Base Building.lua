@@ -274,7 +274,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	—For latest versions and more visit:-
 	https://www.nexusmods.com/nomanssky/mods/1096
 	]],
-	["NMS_VERSION"]   = "4.06",
+	["NMS_VERSION"]   = "4.07",
 	["MODIFICATIONS"] =
 	{
 		{

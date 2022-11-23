@@ -584,7 +584,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_______KibblesNBytes.pak", 
 ["MOD_AUTHOR"]    = "InstaKibs, WinderTP, Babscoole",
-["NMS_VERSION"]   = "4.06",
+["NMS_VERSION"]   = "4.07",
 ["MODIFICATIONS"] = 
 	{
 		{

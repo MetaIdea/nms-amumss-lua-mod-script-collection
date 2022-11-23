@@ -5,29 +5,29 @@ ShipMaxUpgradeChanges =
   { -- Type
     {"Shuttle"},
     { -- InvType,                    C,  B,  A,  S,     Originals
-      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 46 74 96 110
-      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 25 35 45 60
+      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 50 80 90 110
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 25 40 50 60
     }
   },
   {
     {"Fighter"},
     {
-      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 32 48 72 96
+      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 50 70 80 100
       {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
     }
   },
   {
     {"Scientific"}, -- Explorer
     {
-      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 42 72 94 105
+      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 60 80 90 110
       {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
     }
   },
   {
     {"Dropship"}, -- Hauler
     {
-      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 48 72 96 120
-      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 21 30 40 60
+      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 60 80 100 120
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
     }
   },
   {
@@ -47,15 +47,15 @@ ShipMaxUpgradeChanges =
   {
     {"Sail"}, -- Solar
     {
-      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 48 72 92 105
-      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 25 35 45 60
+      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 50 70 90 110
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
     }
   },
   {
     {"Freighter"},
     {
-      {"MaxInventoryCapacity",      48, 72, 96, 120}, -- 48 72 96 120
-      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 25 30 45 60
+      {"MaxInventoryCapacity",      60, 80, 100, 120}, -- 60 80 100 120
+      {"MaxTechInventoryCapacity",  33, 55, 77, 99},  -- 30 40 50 60
     }
   },
 }
@@ -98,7 +98,7 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole and DarkScythe"
 Description = ""
-NMS_Version = "4.06"
+NMS_Version = "4.07"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/INVENTORYTABLE.MBIN"

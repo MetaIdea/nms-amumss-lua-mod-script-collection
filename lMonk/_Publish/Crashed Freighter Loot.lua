@@ -3,7 +3,7 @@ local desc = [[
   Update crashed freighters loot with a better selection
   including a small chance for freighter upgrades
 ]]---------------------------------------------------------
-mod_version = 1.03
+mod_version = 1.04
 
 local function bool(b)
 	return (b == true) and 'True' or 'False'
@@ -359,7 +359,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Crashed Freighter Loot.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.06',
+	NMS_VERSION			= '4.07',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

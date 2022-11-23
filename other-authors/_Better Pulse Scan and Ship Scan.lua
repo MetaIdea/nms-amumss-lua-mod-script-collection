@@ -1,7 +1,7 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan and Ship Scan"
-GameVersion = "4.06"
-ModVersion = "v1.4"
+GameVersion = "4.07"
+ModVersion = "v1.5"
 Description = "Rare resources and other things now show up when you use Pulse Scan with Multitool or Exocraft, increased range and minimum amount of Buildings you can find with Ship Scan."
 
 -- Thanks to people on Modding Discord and lyravega for a lot of ideas and guidance.
@@ -63,7 +63,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"]  =
 							{
 								{"MaxIconRange",10000},
-								{"UnknownBuildingRange",5000},
+								{"UnknownBuildingRange",10000},
 								{"MinShipScanBuildings",4},
 								{"MaxShipScanBuildings",10}
 							}

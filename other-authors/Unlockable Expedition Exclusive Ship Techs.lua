@@ -1,7 +1,7 @@
 Author = "Syzzle"
 ModName = "Unlockable Expedition Exclusive Ship Techs"
-GameVersion = "4.06"
-ModVersion = "v1"
+GameVersion = "4.07"
+ModVersion = "v1.1"
 Description = "Add the Expedition 3 exclusive Ship Techs to the Anomaly list to be unlocked."
 
 UNLOCKABLEITEMTREES_WAVEFORM	=	[[

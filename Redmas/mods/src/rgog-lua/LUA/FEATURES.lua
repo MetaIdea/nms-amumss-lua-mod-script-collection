@@ -10644,19 +10644,7 @@ then
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	  		 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DRONESHIP.SCENE.EXML]],
-     			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DRONESHIP.SCENE.EXML]]
-  			}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DRONESHIP2.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DRONESHIP2.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+		
 
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
@@ -11990,70 +11978,70 @@ then
 			},
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "10",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/BENDYTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.3"
 			},
@@ -12240,61 +12228,61 @@ then
 			},
 			{
 				["PATH"] = [[MODELS/RGO/BENDYTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "30"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "30"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "30"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "30"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "30"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
-				["TYPE"] = "Single",
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "24"
 			},
@@ -12444,6 +12432,12 @@ then
 			{
 				["PATH"] = [[MODELS\RGO\GIANTSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single",
+				["ROTATION"] = "15",
+				["MAXSIZE"] = "14"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "14"
 			},
@@ -12860,17 +12854,23 @@ then
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "4"
 			},
+			{
+				["PATH"] = [[MODELS\RGO\GIANTMETALSPIKE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "5",
+				["MAXSIZE"] = "4"
+			},
 
 			{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "2"
 			},
 
 			{
 				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["TYPE"] = "Single",
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "4"
 			},
@@ -12974,7 +12974,7 @@ then
 				["PATH"] = [[MODELS\RGO\SKULL.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
@@ -13291,7 +13291,7 @@ then
 			end
 
 
-
+--[=[
 			--
 			NEW_CONTENT =
 			{
@@ -13394,7 +13394,7 @@ then
 					</Property>
 			]]
 
-
+--]=]
 		addFeature
 			(
 				CAVE_BIOMES_FEATURE,
@@ -13404,11 +13404,13 @@ then
 
 						["EXML_CHANGE_TABLE"] =
 						{
+							--[=[
 							{
 								["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
 								["SECTION_ACTIVE"] = {1,2},
 								["REMOVE"] = "SECTION"
 							},
+							
 							{
 								["PRECEDING_KEY_WORDS"] = "CommonExternalObjectLists",
 								["SECTION_ACTIVE"] = {1,2},
@@ -13438,7 +13440,7 @@ then
 											</Property>
 											</Property>
 								]]
-							},
+							},--]=]
 							{
 								["SPECIAL_KEY_WORDS"] = {"Name","CAVEEGGS"},
 								["SECTION_ACTIVE"] = {1,2},
@@ -13479,7 +13481,7 @@ then
 		-- end cave biomes
 		
         -- Mountains BIOMES
-		if MONTAINS_BIOMES_FEATURE == "ON" then -- turned off 
+		if MONTAINS_BIOMES_FEATURE == "ON" then
 			SUBBIOMES_M = ""
 			--
 			--
@@ -21707,14 +21709,14 @@ end
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TransX", "0"},
-								{"TransY", "-1"},
-								{"TransZ", "-0.8"},
+								{"TransY", "-0.51"},
+								{"TransZ", "0.8"},
 								{"RotX", "0"},
 								{"RotY", "0"},
 								{"RotZ", "0"},
 								{"ScaleX", "1"},
-								{"ScaleY", "3"},
-								{"ScaleZ", "2"}
+								{"ScaleY", "2"},
+								{"ScaleZ", "1.5"}
 							}
 						},
 						{
@@ -21722,15 +21724,15 @@ end
 							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"TransX", "0"},
-								{"TransY", "-1"},
-								{"TransZ", "-0.8"},
+						{"TransX", "0"},
+								{"TransY", "-0.51"},
+								{"TransZ", "0.8"},
 								{"RotX", "0"},
 								{"RotY", "0"},
 								{"RotZ", "0"},
 								{"ScaleX", "1"},
-								{"ScaleY", "3"},
-								{"ScaleZ", "2"}
+								{"ScaleY", "2"},
+								{"ScaleZ", "1.5"}
 							}
 						},
 						{
@@ -21738,15 +21740,15 @@ end
 							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"TransX", "0"},
-								{"TransY", "-1"},
-								{"TransZ", "-0.8"},
+						{"TransX", "0"},
+								{"TransY", "-0.51"},
+								{"TransZ", "0.8"},
 								{"RotX", "0"},
 								{"RotY", "0"},
 								{"RotZ", "0"},
 								{"ScaleX", "1"},
-								{"ScaleY", "3"},
-								{"ScaleZ", "2"}
+								{"ScaleY", "2"},
+								{"ScaleZ", "1.5"}
 							}
 						},
 						{
@@ -21754,15 +21756,15 @@ end
 							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"TransX", "0"},
-								{"TransY", "-1"},
-								{"TransZ", "-0.8"},
+						{"TransX", "0"},
+								{"TransY", "-0.51"},
+								{"TransZ", "0.8"},
 								{"RotX", "0"},
 								{"RotY", "0"},
 								{"RotZ", "0"},
 								{"ScaleX", "1"},
-								{"ScaleY", "3"},
-								{"ScaleZ", "2"}
+								{"ScaleY", "2"},
+								{"ScaleZ", "1.5"}
 							}
 						},
 					}
@@ -23530,100 +23532,19 @@ if CHARACTERS_SKINS_FEATURE == "ON" then
 
 
 	if DRONE_PET_SKIN == "E3-DAMAGED" then
-	addFeature
+	copyEXML
 	(
 		DRONE_PET_SKIN_FEATURE,
-		{
-			{
-				["MBIN_FILE_SOURCE"] =
-				{
-					{
-						[[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP.SCENE.MBIN]],
-						[[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]],
-						"remove"
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["SPECIAL_KEY_WORDS"] = {"Name","Ship"},
-						["VALUE_CHANGE_TABLE"] = {
-							{"TransY","0"},
-							{"RotY","-180"},
-							{"ScaleX","0.06"},
-							{"ScaleY","0.06"},
-							{"ScaleZ","0.06"},
-						}
-					}
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]],
-				["REGEXAFTER"] =
-					{
-						{
-							[["Value" value="MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESHIP\\ENTITIES\\SHIP.ENTITY.MBIN"]],
-							[["Value" value="MODELS\\COMMON\\ROBOTS\\FRIENDLYDRONE\\ENTITIES\\FRIENDLYDRONE.ENTITY.MBINN"]]
-						},
-					}
-
-			},
-		}
+		[[E3DMG.EXML]],
+		[[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.EXML]]
 	)
 	end
 	if DRONE_PET_SKIN == "E3" then
-	addFeature
+	copyEXML
 	(
 		DRONE_PET_SKIN_FEATURE,
-		{
-			{
-				["MBIN_FILE_SOURCE"] =
-				{
-					{
-						[[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP.SCENE.MBIN]],
-						[[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]]
-					}
-				}
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]],
-				["EXML_CHANGE_TABLE"] =
-				{
-					{
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["SPECIAL_KEY_WORDS"] = {"Name","Ship"},
-						["VALUE_CHANGE_TABLE"] = {
-							{"TransY","0"},
-							{"RotY","-180"},
-							{"ScaleX","0.06"},
-							{"ScaleY","0.06"},
-							{"ScaleZ","0.06"},
-						}
-					}
-				}
-
-			},
-			{
-				["MBIN_FILE_SOURCE"] = [[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.MBIN]],
-				["REGEXAFTER"] =
-					{
-						{
-							[["Value" value="MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESHIP\\ENTITIES\\SHIP.ENTITY.MBIN"]],
-							[["Value" value="MODELS\\COMMON\\ROBOTS\\FRIENDLYDRONE\\ENTITIES\\FRIENDLYDRONE.ENTITY.MBIN"]]
-						},
-						{
-							[["Value" value="MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESHIP\\NEWDRONEMAT.MATERIAL.MBIN"]],
-							[["Value" value="MODELS\\COMMON\\SPACECRAFT\\DRONE\\DRONESPACEDESTROY\\SHIPMAT.MATERIAL.MBIN"]]
-						},
-					}
-
-			},
-		}
+		[[E3DRONE.EXML]],
+		[[MODELS\COMMON\ROBOTS\FRIENDLYDRONE.SCENE.EXML]]
 	)
 	end
 

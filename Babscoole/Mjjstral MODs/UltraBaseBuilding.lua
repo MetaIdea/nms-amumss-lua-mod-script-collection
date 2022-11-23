@@ -1514,7 +1514,7 @@ GROUP =
       <Property name="ID" value="UBB-OTHER-II" />
       <Property name="Name" value="UBB-OTHER-II" />
       <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.BANNER.CHEF.DDS" />
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SPECIALSHOP/SPECIAL.HOUDINIPLANT01.DDS" />
       </Property>
       <Property name="DefaultColourIdx" value="0" />
       <Property name="SubGroups">

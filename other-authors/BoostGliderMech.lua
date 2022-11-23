@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "BoostGliderMech.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "4.0+",
+["NMS_VERSION"]				= "4.0+ Build ID 9964564 ",
 ["MOD_DESCRIPTION"]			= "Mech will stay aloft longer and fall slower to pad Boost distants",
 ["MODIFICATIONS"] 			= 
 	{

@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Savage Sentinels by Exosolar.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.06",
+["NMS_VERSION"]   = "4.07",
 ["MODIFICATIONS"] =
 	{
 		{

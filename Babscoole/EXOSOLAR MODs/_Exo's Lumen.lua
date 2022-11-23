@@ -92,9 +92,9 @@ HANGLAMP3        = GetBlock("Lite1",       "1008033010", "0",     "0.5",  "0",  
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_Exo's Lumen.pak",
-["MOD_AUTHOR"]    = "Exosolar",
+["MOD_AUTHOR"]    = "Exosolar and Babscoole",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.06",
+["NMS_VERSION"]   = "4.07",
 ["MODIFICATIONS"] =
 	{
 		{

@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]	= "BoostGlider.pak",
 ["MOD_AUTHOR"]		= "OTBP",
-["NMS_VERSION"]		= "4.0+ Build ID 9763858",
+["NMS_VERSION"]		= "4.0+ Build ID 9964564",
 ["MOD_DESCRIPTION"]	= "Walk, Run, Swim, Jet:Range, Height, Landing, Melee, Force, Speed, Refill, More..",
 ["MODIFICATIONS"]	=
 	{
@@ -81,16 +81,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "LaserBeamFlickerAmp", 				"0.5" }, 	--WayPoint "1.5"
 								{ "LaserBeamFlickerFreq", 				"10" }, 	--WayPoint "1"
 								{ "LaserBeamTerrainDeformRadius", 		"1" }, 		--WayPoint "2"
-								{ "LaserBeamAmmoUseTime", 				"0.5" }, 	--WayPoint "0.5"
-								{ "ReloadButtonHoldTimeToHolster", 		"0.5" }, 	--WayPoint "0.75"
-								{ "WeaponChangeModeTime", 				"0.75" }, 	--WayPoint "0"
+								{ "LaserBeamAmmoUseTime", 				"0.5" }, 	--WayPoint "1.2"
+								{ "ReloadButtonHoldTimeToHolster", 		"0.5" }, 	--WayPoint "0.5"
+								{ "WeaponChangeModeTime", 				"0.5" }, 	--WayPoint "0.75"
 								{ "HardLandMin", 						"98" }, 	--WayPoint "5"
 								{ "HardLandMax", 						"99" }, 	--WayPoint "18"
 								{ "AnimWalkSpeed", 						"2" }, 		--WayPoint "1.5"
 								{ "AnimRunSpeed", 						"5" }, 		--WayPoint "4"
 								{ "ShieldRestoreSpeed", 				"1" }, 		--WayPoint "0.2"
 								{ "ShieldRestoreDelay", 				"0" }, 		--WayPoint "10"
-								{ "WeaponShotgunSlowdown", 				"0.9" }, 		--WayPoint "0.7"
+								{ "WeaponShotgunSlowdown", 				"0.9" }, 	--WayPoint "0.7"
 							}
 						}
 					}
