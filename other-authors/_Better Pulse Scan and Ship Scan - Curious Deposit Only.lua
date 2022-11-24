@@ -1,7 +1,7 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan and Ship Scan - Curious Deposit Only"
 GameVersion = "4.07"
-ModVersion = "v1.2"
+ModVersion = "v1.3"
 Description = "Curious Deposity now show up when you use Pulse Scan with Multitool or Exocraft, increased range and minimum amount of Buildings you can find with Ship Scan."
 
 -- Thanks to people on Modding Discord and lyravega for a lot of ideas and guidance.
@@ -47,7 +47,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 					}
-				},	
+				},
+{
+					["MBIN_FILE_SOURCE"] 	= "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["VALUE_CHANGE_TABLE"]  =
+							{
+								{"ScannerIconsClumpRadius",25}, -- Original "10"
+							}
+						},	
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "GCUIGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["VALUE_CHANGE_TABLE"]  =
+							{
+								{"ScannableIconMergeAngle",15}, -- Original "9"
+							}
+						},	
+					}
+				},				
 			}
 		}
 	}	

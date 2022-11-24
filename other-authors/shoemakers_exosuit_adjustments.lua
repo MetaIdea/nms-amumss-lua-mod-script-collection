@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"] = "shoemakers Exosuit Adjustments.pak",
     ["MOD_AUTHOR"] = "shoemakerjones",
     ["LUA_AUTHOR"] = "shoemakerjones",
-    ["NMS_VERSION"] = "4.06",
+    ["NMS_VERSION"] = "4.x",
     ["MOD_DESCRIPTION"] = "v1.1 - Makes significant changes to they way movement is handled.",
     ["MODIFICATIONS"] = 
     {
