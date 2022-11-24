@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"] 		= "shoemakers Gameplay Changes.pak",
-	["MOD_DESCRIPTION"]		= "Gameplay changes",
-	["MOD_AUTHOR"]			= "shoemakerjones",
-	["LUA_AUTHOR"]      	= "shoemakerjones",
-	["NMS_VERSION"]			= "4.06",
+    ["MOD_FILENAME"]    =   "shoemakers Gameplay Adjustments.pak",
+    ["MOD_AUTHOR"]      =   "shoemakerjones",
+    ["LUA_AUTHOR"]      =   "shoemakerjones",
+    ["NMS_VERSION"]     =   "4.x",
+    ["MOD_DESCRIPTION"] =   "v1.1 - Makes significant changes to they way gameplay is handled.",
 	["MODIFICATIONS"] 		= 
 	{
 		{

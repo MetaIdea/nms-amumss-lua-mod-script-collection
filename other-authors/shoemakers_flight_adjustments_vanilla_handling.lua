@@ -3,8 +3,8 @@ NMS_MOD_DEFINITION_CONTAINER =
     ["MOD_FILENAME"]    =   "shoemakers Flight Adjustments Vanilla Handling.pak",
     ["MOD_AUTHOR"]      =   "shoemakerjones",
     ["LUA_AUTHOR"]      =   "shoemakerjones",
-    ["NMS_VERSION"]     =   "3.98",
-    ["MOD_DESCRIPTION"] =   "v2.0 - Makes significant changes to they way flight is handled, both in space as well as in planetary athmosphere.",
+    ["NMS_VERSION"]     =   "4.x",
+    ["MOD_DESCRIPTION"] =   "v2.2 - Makes significant changes to they way flight is handled, both in space as well as in planetary athmosphere.",
     ["MODIFICATIONS"]   = 
     {
         {
@@ -23,6 +23,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"HoverLandReachedDistance","8"},
                                 {"LandingPushNoseUpFactor", "0.02"},
                                 {"MiniWarpLinesNum", "0"},
+                                {"MiniWarpSpeed", "120000"},
+                                {"MiniWarpTime", "3"},
 								{"DockingRotateSpeed", "3"},
                                 {"LandGroundTakeOffTime", "0.5"},
                                 {"CombatBoostTurnDamp", "1"},
