@@ -13221,7 +13221,7 @@ then
 
 		
 		-- cave biomes
-		SUBBIOMES_C = ""
+		--SUBBIOMES_C = ""
 		if CAVE_BIOMES_FEATURE == "ON" then
 
 			NEW_CONTENT =

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "NoEmptyCrates.pak", 
+["MOD_FILENAME"] 			= "UndamagedSentinelMT.pak", 
 ["MOD_AUTHOR"]				= "Lenni",
-["NMS_VERSION"]				= "4.06",
-["MOD_DESCRIPTION"]			= "Crates always give a reward",
+["NMS_VERSION"]				= "4.07",
+["MOD_DESCRIPTION"]			= "Multitools from Sentinel Pillars are not damaged",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -14,15 +14,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["FOREACH_SKW_GROUP"]	=
-							{
-								{"Id", "CRATE"},
-								{"Id", "BARREL"},
-							},
-							["REPLACE_TYPE"]		= "ALL",
+							["SKW"]					= {"Id", "R_HIVE_GUN"},
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"RewardChoice",	"SelectAlways"},
+								{"ForceFixed",	"True"},
 							}
 						},
 					}

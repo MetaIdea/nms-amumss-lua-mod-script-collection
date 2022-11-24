@@ -10527,7 +10527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_BATCHNAME"]		= "~~~KibblesNBits_COMPATIBILITY.pak",
 ["MOD_DESCRIPTION"]		= "Generates Metadata files and patch other mods with this script",
 ["MOD_AUTHOR"]			= "Kibbles, WinderTP, Babscoole",
-["NMS_VERSION"]			= "4.06",
+["NMS_VERSION"]			= "4.07",
 ["MODIFICATIONS"] 		= 
 	{
 		{
@@ -10588,16 +10588,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 						}
 					},
 				},
-				-- {
-					-- ["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\DEFAULTSAVEDATACREATIVE.MBIN",
-					-- ["EXML_CHANGE_TABLE"]	= 
-					-- {
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
-							-- ["ADD"] 				= EXPORT_KNOWNPRODUCTS
-						-- }
-					-- },
-				-- },
 			}
 		}
 	},
