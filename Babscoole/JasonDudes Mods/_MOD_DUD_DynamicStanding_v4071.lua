@@ -64,10 +64,10 @@ ER_STAND =
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4062.pak",
+["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4071.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.06",
+["NMS_VERSION"]     = "4.07",
 ["MOD_DESCRIPTION"] = "",
 ["MODIFICATIONS"]   =
 	{
