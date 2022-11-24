@@ -75,7 +75,7 @@ local DensityMediumMultiplier = 0.66 --Caution: raising this over 1 will break s
 local DensityMedLowMultiplier = 0.63
 local DensityLowestMultiplier = 0.55
 
-local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
+--local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
 local DensityDETAILLowestMultiplier = 0.85 --Caution: raising this will break some planets
 local DensityGRASSLowestMultiplier = 0.4
 
@@ -91,23 +91,6 @@ local LargeObjectCoverageGrassAlwaysPlace = "AlwaysPlace"
 
 local PatchsizeRegionScaleMultiplier = 1 --unchanged
 local PatchsizeRegionScaleMultiplierJustForest = 1.1
-
---To empty certain rock and hazardous plant files:
-EMPTY =
-[[
-<?xml version="1.0" encoding="utf-8"?>
-
-<Data template="GcExternalObjectList">
-  <Property name="Objects" value="GcEnvironmentSpawnData.xml">
-    <Property name="Creatures" />
-    <Property name="DistantObjects" />
-    <Property name="Landmarks" />
-    <Property name="Objects" />
-    <Property name="DetailObjects" />
-    <Property name="SelectableObjects" />
-  </Property>
-</Data>
-]]	
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --Code originally by InsaneRuffles in section below, modified by Lasagna (--*** = lasagna comments)----------------------------------------------
@@ -871,6 +854,13 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
 						},
+						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- f. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -930,7 +920,92 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
+						--ROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 						
+						--GRASSCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--BARRENROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1719,6 +1794,13 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
 						},
+						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- f. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1778,7 +1860,92 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
+						--ROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 						
+						--GRASSCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--BARRENROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 -- -------------------------------------------------------------------------------------------------------------------------------------------------
 -- -- g. CHANGE LANDMARKS TO DISTANTOBJECTS <-Causes error in these biomes
 -- -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2179,6 +2346,13 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
 						},
+						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- d. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2238,7 +2412,92 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
-												
+						--ROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--GRASSCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--BARRENROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2638,6 +2897,13 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
 						},
+						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- d. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2697,7 +2963,92 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
-												
+						--ROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--GRASSCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--BARRENROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 -- -------------------------------------------------------------------------------------------------------------------------------------------------
 -- -- g. CHANGE LANDMARKS TO DISTANTOBJECTS -> removed, causes errors in these biomes
 -- -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2753,7 +3104,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Minima_v4.1.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Minima_v4.2.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -2784,11 +3135,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR2.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADBIGPROPSOBJECTSVAR3.MBIN",
 						--++++"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSOBJECTSFULL.MBIN", --HUGE rocks everywhere
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKBIOME.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEROCK\HUGEROCKOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICBIOME.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGETOXIC\HUGETOXICOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUVWPLANTBIOME.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUVWPLANTBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGEUWPLANT\HUGEUWPLANTOBJECTS.MBIN",
 						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\MOUNTAIN\MOUNTAINROCKS.MBIN",
 						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FLYTRAPPLANT.MBIN",
@@ -2858,9 +3209,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\DEAD\DEADOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\BARRENFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\DEAD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\FULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\LOW.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\MID.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\FULL.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\LOW.MBIN",
+						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\ROCK\MID.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\BEACH\FULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\LEVELONEOBJECTS\FULLSAFE.MBIN",
@@ -2884,8 +3235,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\RADIOACTIVEWILD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\SCORCHED.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\SCORCHEDWILD.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\SPOREVENTPLANT.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\TENTACLEPLANT.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\SPOREVENTPLANT.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\TENTACLEPLANT.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\TOXIC.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\TOXICWILD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\WEIRDWILD.MBIN",
@@ -2901,9 +3252,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BARREN\BARRENBIGPROPSOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGBIOME.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGBIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGERING\HUGERINGOBJECTSFULL.MBIN",
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHBIOME.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESCORCHBIOME.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleHuge, ScaleHuge, DensityMediumMultiplier, CoverageMultiplier, DensityMediumMultiplier, DensityDETAILLowestMultiplier, DensityPointSevenMultiplier)
 				},
@@ -3335,6 +3686,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
 						},
+						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- d. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3389,6 +3747,92 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
 							["REPLACE_TYPE"] 		= "ALL", 
 							["VALUE_MATCH"] 		= "FOREST",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						--ROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--GRASSCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--BARRENROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{						
 								{ "Placement",	"FLORACLUMP" }
@@ -3820,6 +4264,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
 						},
+						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- d. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3879,6 +4330,92 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
+						--ROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--GRASSCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--BARRENROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 					},
 				},
 				{
@@ -3889,7 +4426,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 					["MBIN_FILE_SOURCE"] 	= 
 					{
-						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVAOBJECTSFULL.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEOBJECTSFULL.MBIN",
 					},
@@ -4240,6 +4776,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
 						},
+						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- d. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -4294,6 +4837,92 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
 							["REPLACE_TYPE"] 		= "ALL", 
 							["VALUE_MATCH"] 		= "FOREST",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						--ROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--GRASSCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						
+						--BARRENROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{						
 								{ "Placement",	"FLORACLUMP" }
@@ -4688,39 +5317,52 @@ NMS_MOD_DEFINITION_CONTAINER =
                 }
             }
         },
-    },
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --= = = = = = = = = = = = = = = = = = = = = = = = = = 15. REMOVE ROCKS/HAZARD PLANTS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
-["ADD_FILES"] = 
-	{
-		{ --Removes small rocks (not grass) from non-dead biomes
-			["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/ROCK/FULL.MBIN",
-			["FILE_CONTENT"] = 	EMPTY	
-		},
 		{
-			["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/ROCK/LOW.MBIN",
-			["FILE_CONTENT"] = 	EMPTY	
-		},
-		{
-			["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/ROCK/MID.MBIN",
-			["FILE_CONTENT"] = 	EMPTY	
-		},
-		{ --Removes 1 of 3 hazardous plants from biomes
-			["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SPOREVENTPLANT.MBIN",
-			["FILE_CONTENT"] = 	EMPTY	
-		},
-		-- {
-			-- ["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FLYTRAPPLANT.MBIN",
-			-- ["FILE_CONTENT"] = 	EMPTY	
-		-- },
-		-- {
-			-- ["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/TENTACLEPLANT.EXML",
-			-- ["FILE_CONTENT"] = 	EMPTY	
-		-- },
-	},
+			["PAK_FILE_SOURCE"] 	= "",
+			["MBIN_CHANGE_TABLE"] 	= 
+			{ 
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/ROCK/FULL.MBIN",
+						"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/ROCK/LOW.MBIN",
+						"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/ROCK/MID.MBIN",
+						
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/SMALLROCK.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SPOREVENTPLANT.MBIN",
+						
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+                        },
+                    }
+                }
+            }
+        },
+    },
 }
 --NOTE: ANYTHING NOT in table NMS_MOD_DEFINITION_CONTAINER IS IGNORED AFTER THE SCRIPT IS LOADED
 --IT IS BETTER TO ADD THINGS AT THE TOP IF YOU NEED TO
