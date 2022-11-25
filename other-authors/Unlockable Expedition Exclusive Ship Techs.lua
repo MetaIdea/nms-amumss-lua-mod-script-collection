@@ -1,7 +1,7 @@
 Author = "Syzzle"
 ModName = "Unlockable Expedition Exclusive Ship Techs"
 GameVersion = "4.07"
-ModVersion = "v1.1"
+ModVersion = "v1.2"
 Description = "Add the Expedition 3 exclusive Ship Techs to the Anomaly list to be unlocked."
 
 UNLOCKABLEITEMTREES_WAVEFORM	=	[[
@@ -36,6 +36,14 @@ UNLOCKABLEITEMTREES_ADVLAUNCH	=	[[
                           </Property>
                         </Property>
 ]]
+UNLOCKABLEITEMTREES_SINGULARITY	=	[[
+                        <Property name="Children">
+                          <Property value="GcUnlockableItemTreeNode.xml">
+                            <Property name="Unlockable" value="F_MEGAWARP" />
+                            <Property name="Children" />
+                          </Property>
+                        </Property>
+]]
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -62,7 +70,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"]	=	"LINE",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Unlockable",	"UT_PULSESPEED"},
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_PULSESPEED"},
 							["VALUE_CHANGE_TABLE"] 	= {
 								{"IGNORE",	"IGNORE"},
 							},
@@ -77,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"]	=	"LINE",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Unlockable",	"UT_SHIPDRIFT"},
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_SHIPDRIFT"},
 							["VALUE_CHANGE_TABLE"] 	= {
 								{"IGNORE",	"IGNORE"},
 							},
@@ -92,7 +100,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"]	=	"LINE",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Unlockable",	"HDRIVEBOOST3"},
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","HDRIVEBOOST3"},
 							["VALUE_CHANGE_TABLE"] 	= {
 								{"IGNORE",	"IGNORE"},
 							},
@@ -107,11 +115,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REMOVE"]	=	"LINE",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Unlockable",	"UT_LAUNCHCHARGE"},
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","UT_LAUNCHCHARGE"},
 							["VALUE_CHANGE_TABLE"] 	= {
 								{"IGNORE",	"IGNORE"},
 							},
 							["ADD"]	=	UNLOCKABLEITEMTREES_ADVLAUNCH,
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","F_HDRIVEBOOST3"},
+							["PRECEDING_KEY_WORDS"] = {"Children"},
+							["VALUE_CHANGE_TABLE"] 	= {
+								{"IGNORE",	"IGNORE"},
+							},
+							["REMOVE"]	=	"LINE",
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Unlockable","F_HDRIVEBOOST3"},
+							["VALUE_CHANGE_TABLE"] 	= {
+								{"IGNORE",	"IGNORE"},
+							},
+							["ADD"]	=	UNLOCKABLEITEMTREES_SINGULARITY,
 						},
 					}
 				},
@@ -238,6 +261,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"WikiEnabled","True"},
 							}
 						},
+						-- Singularity Engine
+						{
+							["SPECIAL_KEY_WORDS"]  = {"ID","F_MEGAWARP",},
+							["VALUE_CHANGE_TABLE"]  =
+							{
+								--{"Core","False"},
+								{"TechnologyRarity","Rare"},
+							}
+						},
+						-- {
+							-- ["SPECIAL_KEY_WORDS"]  = {"ID","F_MEGAWARP","TechShopRarity","GcTechnologyRarity.xml",},
+							-- ["VALUE_CHANGE_TABLE"]  =
+							-- {
+								-- {"TechnologyRarity","Normal"},
+							-- }
+						-- },
+						-- {
+							-- ["SPECIAL_KEY_WORDS"]  = {"ID","F_MEGAWARP",},
+							-- ["VALUE_CHANGE_TABLE"]  =
+							-- {
+								-- {"FragmentCost",4},
+								-- {"WikiEnabled","True"},
+							-- }
+						-- },
 					}
 				},	
 			}
