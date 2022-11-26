@@ -8941,7 +8941,7 @@ if CREATURES_OVERHAUL == "ON" then
 										{"SwarmMovementSpeed", "0.1"},
 										{"SwarmMovementType", "FollowPlayer"},
 										{"CircleAttractor", "Portal"},
-										{"MaxSpeed", "1"},
+										{"MaxSpeed", "10"},
 									}
 								},
 								{
@@ -8958,7 +8958,7 @@ if CREATURES_OVERHAUL == "ON" then
 										{"FlapAccel", "49"},
 										{"FlapSpeedMinScale", "0.1"},
 										{"CircleAttractor", "Player"},
-										{"MaxSpeed", "30"},
+										{"MaxSpeed", "10"},
 
 									}
 								},
@@ -8975,7 +8975,7 @@ if CREATURES_OVERHAUL == "ON" then
 									["SPECIAL_KEY_WORDS"] = {"Id","LARGEBUTTERFLY"},
 									["VALUE_CHANGE_TABLE"] 	=
 									{
-										{"MaxSpeed", "25"},
+										{"MaxSpeed", "15"},
 										{"GroundAlign", "True"},
 										{"GroundAvoid", "False"},
 										{"SwarmMovementType", "FollowPlayer"},
@@ -8989,7 +8989,7 @@ if CREATURES_OVERHAUL == "ON" then
 										{"MinScale", "0.14"},
 										{"MoveRange", "1000"},
 										{"MoveSpeedScale", "1"},
-										{"MaxSpeed", "25"},
+										{"MaxSpeed", "15"},
 										{"ApplyScaleToSpeed", "False"},
 									}
 								},
@@ -9380,7 +9380,7 @@ if CREATURES_OVERHAUL == "ON" then
 									{"RideSpeedFast", "3" },
 									{"RideSpeedChangeTime", "11.2" },
 									{"RiderLeanTime", "1.3" },
-									{"MaxSpeed", "20" },
+									{"MaxSpeed", "10" },
 									{"CreatureMedMinSize", "5" },
 									{"CreatureLargeMinSize", "12" },
 									{"CreatureHugeMinSize", "20" },
@@ -23815,6 +23815,30 @@ end
 
 if NEWGAME_BONUSES == "ON" then
 
+
+	addFeature
+	(
+		NEWGAME_BONUSES,
+		{
+			{
+				["MBIN_FILE_SOURCE"]  =
+				{
+					[[METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN]],
+				},
+				["EXML_CHANGE_TABLE"] =
+				{
+					{
+						["PRECEDING_KEY_WORDS"] = "KnownProducts",
+						["SECTION_ACTIVE"] = {1,2,3},
+						["ADD"] = KNOWNPROD
+					}
+
+				}
+			}
+		},
+		DAY_ONE_MODE
+	)
+
 	REDMAS_BONUS_SPACESHIPS_TABLE =
 	{
 		["ALPHA_VECTOR"] = {
@@ -24054,7 +24078,7 @@ if NEWGAME_BONUSES == "ON" then
 					[[METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN]],
 				},
 				["EXML_CHANGE_TABLE"] =
-				{
+				{				
 					{
 						["PRECEDING_KEY_WORDS"] = "CurrentWeapon",
 						["SECTION_ACTIVE"] = {1,2,3},

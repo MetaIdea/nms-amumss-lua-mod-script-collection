@@ -7478,6 +7478,7 @@ COCKPIT_F_DATA = readTemplate("COCKPIT_F_DATA")---------------------------------
 --DROPSHIPS_PROC = readTemplate("DROPSHIPS_PROC")-------------------------------------------------------------------------------
 --SCIENTIFIC_PROC = readTemplate("SCIENTIFIC_PROC")-------------------------------------------------------------------------------
 --SCIENTIFIC_DESC = readTemplate("SCIENTIFIC_DESC")-------------------------------------------------------------------------------
+KNOWNPROD = readTemplate("KNOWNPROD")
 if GIANT_MECHS_BETA_FEATURE ~= "ON" then
 	MECHS_SIZE_MULTIPLIER = 1
 end
