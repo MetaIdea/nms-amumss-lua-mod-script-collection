@@ -8596,6 +8596,7 @@ if CREATURES_OVERHAUL == "ON" then
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","BIRD"},
+							
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"MinCount", "1"},
@@ -8604,6 +8605,7 @@ if CREATURES_OVERHAUL == "ON" then
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","FISH"},
+							
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"MinCount", "1"},
@@ -9103,6 +9105,7 @@ if CREATURES_OVERHAUL == "ON" then
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","FISH"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.2"},
@@ -9112,6 +9115,7 @@ if CREATURES_OVERHAUL == "ON" then
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","SHARK"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "1"},
@@ -9124,138 +9128,151 @@ if CREATURES_OVERHAUL == "ON" then
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","FLYINGSNAKE"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.2"},
 										{"MaxScale", "34"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","FLYINGLIZARD"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.1"},
 										{"MaxScale", "20.5"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","LARGEBUTTERFLY"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.02"},
 										{"MaxScale", "14"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","FLYINGBEETLE"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.12"},
 										{"MaxScale", "12"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","ROBOTANTELOPE"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.2"},
 										{"MaxScale", "2"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","TRICERATOPS"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.14"},
 										{"MaxScale", "32"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","RODENT"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.2"},
 										{"MaxScale", "12"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","CAT"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.2"},
 										{"MaxScale", "22"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","BONECAT"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.12"},
 										{"MaxScale", "52"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","STRIDER"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.12"},
 										{"MaxScale", "52"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","TREX"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.12"},
 										{"MaxScale", "55"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","TWOLEGANTELOPE"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.42"},
 										{"MaxScale", "12"},
 										{"MinCount", "1"},
-										{"MaxCount", "1"},
+									  	{"MaxCount", "1"},
 									}
 								},
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.2"},
@@ -9267,6 +9284,7 @@ if CREATURES_OVERHAUL == "ON" then
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.42"},
@@ -9278,6 +9296,7 @@ if CREATURES_OVERHAUL == "ON" then
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","GRUNT"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.12"},
@@ -9289,6 +9308,7 @@ if CREATURES_OVERHAUL == "ON" then
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","BLOB"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.12"},
@@ -9300,6 +9320,7 @@ if CREATURES_OVERHAUL == "ON" then
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","SPIDER"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.12"},
@@ -9311,6 +9332,7 @@ if CREATURES_OVERHAUL == "ON" then
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","FLOATSPIDER"},
+									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.12"},
@@ -9322,6 +9344,7 @@ if CREATURES_OVERHAUL == "ON" then
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
 									["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM"},
+
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "52"},
