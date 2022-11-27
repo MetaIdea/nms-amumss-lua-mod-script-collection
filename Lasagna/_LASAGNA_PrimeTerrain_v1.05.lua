@@ -13,7 +13,7 @@ SlopeErosion = 1
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_PrimeTerrain_v1.04.pak",
+["MOD_FILENAME"] 			= "_LASAGNA_PrimeTerrain_v1.05.pak",
 ["MOD_AUTHOR"]				= "Lasagna",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
