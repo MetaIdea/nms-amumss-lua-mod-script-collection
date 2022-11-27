@@ -3114,7 +3114,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Maxima_v4.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Maxima_v4.21.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

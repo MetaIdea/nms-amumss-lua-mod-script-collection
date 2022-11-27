@@ -649,7 +649,7 @@ NewWaterColors = [[
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_WaterColors_v2.0b.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_WaterColors_v2.01.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             

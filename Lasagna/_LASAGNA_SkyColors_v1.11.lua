@@ -23580,7 +23580,7 @@ NewNightSkyColors = [[
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_SkyColors_v1.1.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_SkyColors_v1.11.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             

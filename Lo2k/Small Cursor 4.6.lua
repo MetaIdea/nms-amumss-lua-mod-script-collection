@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Small Cursor 4.5.pak", 
+["MOD_FILENAME"] 			= "Small Cursor 4.6.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.05",
+["NMS_VERSION"]				= "4.07",
 ["MOD_DESCRIPTION"]			= "This mods reduces the size of the main game cursor",
 ["MODIFICATIONS"] 			= 
 	{
