@@ -1,59 +1,636 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.0.0)-->
+<!--File created using MBINCompiler version (4.6.0)-->
 <Data template="TkModelDescriptorList">
   <Property name="List">
     <Property value="TkResourceDescriptorList.xml">
-      <Property name="TypeId" value="_ASTEROIDS_" />
+      <Property name="TypeId" value="_ASTEROID_" />
       <Property name="Descriptors">
         <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_ASTEROIDS_8" />
-          <Property name="Name" value="_AsteroidS_8" />
+          <Property name="Id" value="_ASTEROID_03" />
+          <Property name="Name" value="_Asteroid_03" />
           <Property name="ReferencePaths" />
           <Property name="Chance" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_ASTEROIDS_9" />
-          <Property name="Name" value="_AsteroidS_9" />
+          <Property name="Id" value="_ASTEROID_04" />
+          <Property name="Name" value="_Asteroid_04" />
           <Property name="ReferencePaths" />
           <Property name="Chance" value="0" />
           <Property name="Children" />
         </Property>
         <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_ASTEROIDS_10" />
-          <Property name="Name" value="_AsteroidS_10" />
-          <Property name="ReferencePaths" />
-          <Property name="Chance" value="0" />
-          <Property name="Children" />
-        </Property>
-        <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_ASTEROIDS_11" />
-          <Property name="Name" value="_AsteroidS_11" />
-          <Property name="ReferencePaths" />
-          <Property name="Chance" value="0" />
-          <Property name="Children" />
-        </Property>
-        <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_ASTEROIDS_12" />
-          <Property name="Name" value="_AsteroidS_12" />
-          <Property name="ReferencePaths" />
-          <Property name="Chance" value="0" />
-          <Property name="Children" />
-        </Property>
-        <Property value="TkResourceDescriptorData.xml">
-          <Property name="Id" value="_ASTEROIDS_13" />
-          <Property name="Name" value="_AsteroidS_13" />
+          <Property name="Id" value="_ASTEROID_05XWEIRD" />
+          <Property name="Name" value="_Asteroid_05xWEIRD" />
           <Property name="ReferencePaths" />
           <Property name="Chance" value="0" />
           <Property name="Children">
             <Property value="TkModelDescriptorList.xml">
               <Property name="List">
                 <Property value="TkResourceDescriptorList.xml">
-                  <Property name="TypeId" value="_ACC_" />
+                  <Property name="TypeId" value="_AST_" />
                   <Property name="Descriptors">
                     <Property value="TkResourceDescriptorData.xml">
-                      <Property name="Id" value="_ACC_1" />
-                      <Property name="Name" value="_acc_1" />
+                      <Property name="Id" value="_AST_BLEND" />
+                      <Property name="Name" value="_Ast_Blend" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_CRYSTAL_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_MLOD0" />
+                                  <Property name="Name" value="_Crystal_MLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_MLOD1" />
+                                  <Property name="Name" value="_Crystal_MLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_MLOD2" />
+                                  <Property name="Name" value="_Crystal_MLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_MLOD3" />
+                                  <Property name="Name" value="_Crystal_MLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_MLOD4" />
+                                  <Property name="Name" value="_Crystal_MLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_SLOD0" />
+                                  <Property name="Name" value="_Crystal_SLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_SLOD1" />
+                                  <Property name="Name" value="_Crystal_SLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_SLOD2" />
+                                  <Property name="Name" value="_Crystal_SLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_SLOD3" />
+                                  <Property name="Name" value="_Crystal_SLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_SLOD4" />
+                                  <Property name="Name" value="_Crystal_SLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_CLOD0" />
+                                  <Property name="Name" value="_Crystal_CLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_CLOD1" />
+                                  <Property name="Name" value="_Crystal_CLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_CLOD2" />
+                                  <Property name="Name" value="_Crystal_CLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_CLOD3" />
+                                  <Property name="Name" value="_Crystal_CLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CRYSTAL_CLOD4" />
+                                  <Property name="Name" value="_Crystal_CLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_AST_SHATTERED" />
+                      <Property name="Name" value="_Ast_Shattered" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_AST_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALMETALLOD0" />
+                                  <Property name="Name" value="_Ast_InternalMetalLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALMETALLOD1" />
+                                  <Property name="Name" value="_Ast_InternalMetalLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALMETALLOD2" />
+                                  <Property name="Name" value="_Ast_InternalMetalLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALMETALLOD3" />
+                                  <Property name="Name" value="_Ast_InternalMetalLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALMETALLOD4" />
+                                  <Property name="Name" value="_Ast_InternalMetalLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALSTONELOD0" />
+                                  <Property name="Name" value="_Ast_InternalStoneLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALSTONELOD1" />
+                                  <Property name="Name" value="_Ast_InternalStoneLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALSTONELOD2" />
+                                  <Property name="Name" value="_Ast_InternalStoneLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALSTONELOD3" />
+                                  <Property name="Name" value="_Ast_InternalStoneLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALSTONELOD4" />
+                                  <Property name="Name" value="_Ast_InternalStoneLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALCRYSTALLOD0" />
+                                  <Property name="Name" value="_Ast_InternalCrystalLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALCRYSTALLOD1" />
+                                  <Property name="Name" value="_Ast_InternalCrystalLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALCRYSTALLOD2" />
+                                  <Property name="Name" value="_Ast_InternalCrystalLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALCRYSTALLOD3" />
+                                  <Property name="Name" value="_Ast_InternalCrystalLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_INTERNALCRYSTALLOD4" />
+                                  <Property name="Name" value="_Ast_InternalCrystalLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_AST_HOLLOW" />
+                      <Property name="Name" value="_Ast_Hollow" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_INTERNALS_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_NULL" />
+                                  <Property name="Name" value="_Internals_NULL" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_STONELOD0" />
+                                  <Property name="Name" value="_Internals_StoneLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_STONELOD1" />
+                                  <Property name="Name" value="_Internals_StoneLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_STONELOD2" />
+                                  <Property name="Name" value="_Internals_StoneLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_STONELOD3" />
+                                  <Property name="Name" value="_Internals_StoneLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_STONELOD4" />
+                                  <Property name="Name" value="_Internals_StoneLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_METALLOD0" />
+                                  <Property name="Name" value="_Internals_MetalLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_METALLOD1" />
+                                  <Property name="Name" value="_Internals_MetalLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_METALLOD2" />
+                                  <Property name="Name" value="_Internals_MetalLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_METALLOD3" />
+                                  <Property name="Name" value="_Internals_MetalLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_METALLOD4" />
+                                  <Property name="Name" value="_Internals_MetalLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_CRYSTALLOD0" />
+                                  <Property name="Name" value="_Internals_CrystalLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_CRYSTALLOD1" />
+                                  <Property name="Name" value="_Internals_CrystalLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_CRYSTALLOD2" />
+                                  <Property name="Name" value="_Internals_CrystalLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_CRYSTALLOD3" />
+                                  <Property name="Name" value="_Internals_CrystalLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_INTERNALS_CRYSTALLOD4" />
+                                  <Property name="Name" value="_Internals_CrystalLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_AST_CRACKED" />
+                      <Property name="Name" value="_Ast_Cracked" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children">
+                        <Property value="TkModelDescriptorList.xml">
+                          <Property name="List">
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_AST_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_METALRIMLOD0" />
+                                  <Property name="Name" value="_Ast_MetalrimLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_METALRIMLOD1" />
+                                  <Property name="Name" value="_Ast_MetalrimLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_METALRIMLOD2" />
+                                  <Property name="Name" value="_Ast_MetalrimLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_METALRIMLOD3" />
+                                  <Property name="Name" value="_Ast_MetalrimLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_METALRIMLOD4" />
+                                  <Property name="Name" value="_Ast_MetalrimLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_CRYSTALRIMLOD0" />
+                                  <Property name="Name" value="_Ast_CrystalrimLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_CRYSTALRIMLOD1" />
+                                  <Property name="Name" value="_Ast_CrystalrimLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_CRYSTALRIMLOD2" />
+                                  <Property name="Name" value="_Ast_CrystalrimLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_CRYSTALRIMLOD3" />
+                                  <Property name="Name" value="_Ast_CrystalrimLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_CRYSTALRIMLOD4" />
+                                  <Property name="Name" value="_Ast_CrystalrimLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_STONERIMLOD0" />
+                                  <Property name="Name" value="_Ast_StonerimLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_STONERIMLOD1" />
+                                  <Property name="Name" value="_Ast_StonerimLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_STONERIMLOD2" />
+                                  <Property name="Name" value="_Ast_StonerimLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_STONERIMLOD3" />
+                                  <Property name="Name" value="_Ast_StonerimLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_AST_STONERIMLOD4" />
+                                  <Property name="Name" value="_Ast_StonerimLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                            <Property value="TkResourceDescriptorList.xml">
+                              <Property name="TypeId" value="_CORE_" />
+                              <Property name="Descriptors">
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_NULL" />
+                                  <Property name="Name" value="_Core_NULL" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_METALLOD0" />
+                                  <Property name="Name" value="_Core_METALLOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_METALLOD1" />
+                                  <Property name="Name" value="_Core_METALLOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_METALLOD2" />
+                                  <Property name="Name" value="_Core_METALLOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_METALLOD3" />
+                                  <Property name="Name" value="_Core_METALLOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_METALLOD4" />
+                                  <Property name="Name" value="_Core_METALLOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_ICELOD0" />
+                                  <Property name="Name" value="_Core_ICELOD0" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_ICELOD1" />
+                                  <Property name="Name" value="_Core_ICELOD1" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_ICELOD2" />
+                                  <Property name="Name" value="_Core_ICELOD2" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_ICELOD3" />
+                                  <Property name="Name" value="_Core_ICELOD3" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                                <Property value="TkResourceDescriptorData.xml">
+                                  <Property name="Id" value="_CORE_ICELOD4" />
+                                  <Property name="Name" value="_Core_ICELOD4" />
+                                  <Property name="ReferencePaths" />
+                                  <Property name="Chance" value="0" />
+                                  <Property name="Children" />
+                                </Property>
+                              </Property>
+                            </Property>
+                          </Property>
+                        </Property>
+                      </Property>
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_AST_STONE" />
+                      <Property name="Name" value="_Ast_Stone" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_AST_ICESHARD" />
+                      <Property name="Name" value="_Ast_IceShard" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_AST_ICELUMP" />
+                      <Property name="Name" value="_Ast_IceLump" />
+                      <Property name="ReferencePaths" />
+                      <Property name="Chance" value="0" />
+                      <Property name="Children" />
+                    </Property>
+                    <Property value="TkResourceDescriptorData.xml">
+                      <Property name="Id" value="_AST_ICESPIKE" />
+                      <Property name="Name" value="_Ast_IceSpike" />
                       <Property name="ReferencePaths" />
                       <Property name="Chance" value="0" />
                       <Property name="Children" />
@@ -63,6 +640,34 @@
               </Property>
             </Property>
           </Property>
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_ASTEROID_06" />
+          <Property name="Name" value="_Asteroid_06" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_ASTEROID_07" />
+          <Property name="Name" value="_Asteroid_07" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_ASTEROID_010" />
+          <Property name="Name" value="_Asteroid_010" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_ASTEROID_VERTICALXWEIRD" />
+          <Property name="Name" value="_Asteroid_VerticalxWEIRD" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
         </Property>
       </Property>
     </Property>

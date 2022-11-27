@@ -70,8 +70,8 @@ FANTASY_ORIGINS_PRESET ={
             ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
             ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
             ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
-            ["GIANT_MECHS_BETA_FEATURE"] = "OFF",
-            ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
+            ["GIANT_MECHS_BETA_FEATURE"] = "ON",
+            ["MECHS_SIZE_MULTIPLIER"] = 6,  -- ( 2 to 10 -- adviced size : 3 )
         },
     },
     ["CREATURES_FEATURES"] =
