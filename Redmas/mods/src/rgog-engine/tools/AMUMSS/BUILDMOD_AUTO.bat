@@ -13,7 +13,7 @@ rem    KEEP spaces between %_O% and -option Y
 set _O=%_O%      -AutoUpdateMBinCompiler Y
 set _O=%_O%      -CheckForModConflicts N
 set _O=%_O%      -CLEANLOG Y
-set _O=%_O%      -CombinedModType Y
+set _O=%_O%      -CombinedModType 3
 set _O=%_O%      -CombineModPak Y
 set _O=%_O%      -CopyToGamefolder ASK
 set _O=%_O%      -DEV_MODE L
