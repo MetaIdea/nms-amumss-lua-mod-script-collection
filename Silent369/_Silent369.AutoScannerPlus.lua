@@ -1,6 +1,6 @@
 local modfilename = "AutoScannerPlus"
 local lua_author  = "Silent"
-local lua_version = "v1.0"
+local lua_version = "v1.1"
 local mod_author  = "Silent369"
 local nms_version = "4.0.x"
 local description = "Auto Scan planet entities (objects, structures) within given range."

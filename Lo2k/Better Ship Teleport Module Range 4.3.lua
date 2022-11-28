@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Ship Teleport Module Range 4.0.pak", 
+["MOD_FILENAME"] 			= "Better Ship Teleport Module Range 4.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.04",
+["NMS_VERSION"]				= "4.07",
 ["MOD_DESCRIPTION"]			= "This mods increases Ship Teleporter Module range from 100 to 400",
 ["MODIFICATIONS"] 			= 
 	{
