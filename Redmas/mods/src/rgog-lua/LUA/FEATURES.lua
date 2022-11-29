@@ -13244,7 +13244,7 @@ then
 
 		
 		-- cave biomes
-		--SUBBIOMES_C = ""
+		SUBBIOMES_C = ""
 		if CAVE_BIOMES_FEATURE == "ON" then
 
 			NEW_CONTENT =
@@ -13314,7 +13314,7 @@ then
 			end
 
 
---[=[
+
 			--
 			NEW_CONTENT =
 			{
@@ -13417,7 +13417,7 @@ then
 					</Property>
 			]]
 
---]=]
+
 		addFeature
 			(
 				CAVE_BIOMES_FEATURE,
@@ -13427,7 +13427,7 @@ then
 
 						["EXML_CHANGE_TABLE"] =
 						{
-							--[=[
+							
 							{
 								["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
 								["SECTION_ACTIVE"] = {1,2},
@@ -13463,7 +13463,7 @@ then
 											</Property>
 											</Property>
 								]]
-							},--]=]
+							},
 							{
 								["SPECIAL_KEY_WORDS"] = {"Name","CAVEEGGS"},
 								["SECTION_ACTIVE"] = {1,2},
@@ -13649,7 +13649,7 @@ then
 
 
 		-- STORM BIOMES
-		if STORM_BIOMES_FEATURES == "REACTIVATED" then -- turnedoff
+		if STORM_BIOMES_FEATURES == "ON" then -- turnedoff
 			--SUBBIOMES_S = ""
 			NEW_CONTENT =
 				{

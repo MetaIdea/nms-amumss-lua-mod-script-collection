@@ -489,8 +489,8 @@
         <Property name="AlignToNormal" value="False" />
         <Property name="MinScale" value="0.5" />
         <Property name="MaxScale" value="1.1" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="4" />
+        <Property name="MinScaleY" value="3" />
+        <Property name="MaxScaleY" value="10.4" />
         <Property name="SlopeScaling" value="1" />
         <Property name="PatchEdgeScaling" value="0" />
         <Property name="MaxXZRotation" value="0" />

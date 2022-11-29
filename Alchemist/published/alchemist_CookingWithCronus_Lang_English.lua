@@ -6,8 +6,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-05"
-ModVersion = "1-0-1"
+GameVersion = "4-07"
+ModVersion = "1-1-0"
 
 -- =========
 -- CONSTANTS
@@ -78,7 +78,7 @@ files.
 
 --]]
 
--- Total keys: 206
+-- Total keys: 207
 LANGUAGE_TABLE = {
   --
   ["ALCH_CHEF_IMC_TITLE"] = "Creature Products", --
@@ -113,6 +113,7 @@ LANGUAGE_TABLE = {
   ["ALCH_CHEF_OFFER_TITLE_1"] = "Forgotten Songs", --
   ["ALCH_CHEF_OFFER_WHALE_OBJ"] = "Follow the offering's guidance", --
   ["ALCH_CHEF_OFFER_WHALE_OBJ_TIP"] = "The <SPECIAL>Offering of a Forgotten Song<> is seeking a harmonic partner. Follow it's guidance to unlock it's secrets.", --
+  ["ALCH_CHEF_WHALE_MP_ERR_OSD"] = "OFFERING OF A FORGOTTEN SONG <HIGHLIGHT>//<> <FUEL>ERROR ~ NEXUS MISSION INTERFERENCE<>", --
   ["ALCH_CHEF_WHALE_NEARBY_MSG1"] = "<SPECIAL>Offering of a Forgotten Song<> <TITLE>seeking harmonic partner<>\nThe song is eminating... %SIGNAL%", --
   ["ALCH_CHEF_WHALE_NEARBY_MSG2"] = "<SPECIAL>Offering of a Forgotten Song<> <TITLE>seeking harmonic partner<>\nReturn to your ship to broadcast the request", --
   ["ALCH_CHEF_WHALE_NEARBY_MSG3"] = "<SPECIAL>Offering of a Forgotten Song<> <TITLE>seeking harmonic partner<>\nActivate the <TECHNOLOGY>Pulse Drive<> to broadcast the request", --
