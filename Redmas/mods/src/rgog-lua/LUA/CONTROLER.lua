@@ -974,7 +974,7 @@ local tablelength = function (T)------------------------------------------------
  end------------------------------------------------------------------------------------------------------------
   return count------------------------------------------------------------------------------------------------------------
 end------------------------------------------------------------------------------------------------------------
-local generateRareRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION,MAXSIZE)------------------------------------------------------------------------------------------------------------
+function generateRareRessourcesBiome(BIOME_PATH,TYPE,PATH,ROTATION,MAXSIZE)------------------------------------------------------------------------------------------------------------
 	BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -1001,11 +1001,11 @@ local generateRareRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION,MAXS
 					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
 				},------------------------------------------------------------------------------------------------------------
 				{------------------------------------------------------------------------------------------------------------
-					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},		
 					["ADD"] 	=
 					[[
-						<Property name="Objects"></Property>
-						<Property name="Landmarks">
+						<Property name="Objects"></Property>	
+						<Property name="Landmarks">	  
 							<Property value="GcObjectSpawnData.xml">
 								<Property name="DebugName" value="" />
 								<Property name="Type" value="]]..TYPE..[[" />
@@ -1052,7 +1052,7 @@ local generateRareRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION,MAXS
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="15" />
@@ -1067,7 +1067,7 @@ local generateRareRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION,MAXS
 								<Property name="MaxScaleY" value="1" />
 								<Property name="SlopeScaling" value="1" />
 								<Property name="PatchEdgeScaling" value="0" />
-								<Property name="MaxXZRotation" value="]]..ROTATION..[[" />
+								<Property name="MaxXZRotation" value="0" />
 								<Property name="AutoCollision" value="False" />
 								<Property name="CollideWithPlayer" value="True" />
 								<Property name="CollideWithPlayerVehicle" value="True" />
@@ -1099,7 +1099,7 @@ local generateRareRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION,MAXS
 								</Property>
 								<Property name="QualityVariants" />
 							</Property>
-
+						
 						</Property>
 					]]
 				},------------------------------------------------------------------------------------------------------------
@@ -1109,7 +1109,7 @@ local generateRareRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION,MAXS
 	addContent(BIOME)------------------------------------------------------------------------------------------------------------
 end	------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
-local generateRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION)
+function generateRessourcesBiome(BIOME_PATH,TYPE,PATH,ROTATION)
 	BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -1131,10 +1131,10 @@ local generateRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION)
 					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
 				},------------------------------------------------------------------------------------------------------------
 				{------------------------------------------------------------------------------------------------------------
-					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},------------------------------------------------------------------------------------------------------------
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},------------------------------------------------------------------------------------------------------------		
 					["ADD"] 	=------------------------------------------------------------------------------------------------------------
 					[[
-						<Property name="DetailObjects">
+						<Property name="DetailObjects">	 
 							<Property value="GcObjectSpawnData.xml">
 								<Property name="DebugName" value="" />
 								<Property name="Type" value="]]..TYPE..[[" />
@@ -1181,7 +1181,7 @@ local generateRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION)
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="35" />
@@ -1197,7 +1197,7 @@ local generateRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION)
 								<Property name="SlopeScaling" value="1" />
 								<Property name="PatchEdgeScaling" value="0" />
 								<Property name="MaxXZRotation" value="]]..ROTATION..[[" />
-								]]..GIANT_OFTEN_SPAWN..[[
+								]]..GIANT_OFTEN_SPAWN..[[						
 							</Property>
 						</Property>
 					]]
@@ -1208,11 +1208,11 @@ local generateRessourcesBiome = function (BIOME_PATH,TYPE,PATH,ROTATION)
 	addContent(BIOME)------------------------------------------------------------------------------------------------------------
 end	------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
-local generateGiantBiomeFOREST = function
+function generateGiantBiomeFOREST
 	(
 		GENERATED_BIOME_PATH,
 		MAIN_TREE_TYPE,
-		MAIN_TREE_PATH,
+		MAIN_TREE_PATH,		
 		MAIN_TREE_ROTATION,
 		MAIN_TREE_SIZEMAX,
 		LARGEROCK_TYPE,
@@ -1249,8 +1249,8 @@ local generateGiantBiomeFOREST = function
 					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},		------------------------------------------------------------------------------------------------------------
 					["ADD"] 	=------------------------------------------------------------------------------------------------------------
 					[[
-						<Property name="Objects"></Property>
-						<Property name="Landmarks">
+						<Property name="Objects"></Property>	
+						<Property name="Landmarks">		  
 							<Property value="GcObjectSpawnData.xml">
 								<Property name="DebugName" value="" />
 								<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
@@ -1381,7 +1381,7 @@ local generateGiantBiomeFOREST = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="10" />
@@ -1399,7 +1399,7 @@ local generateGiantBiomeFOREST = function
 								<Property name="MaxXZRotation" value="]]..MAIN_TREE_ROTATION..[[" />
 								]]..GIANT_OFTEN_SPAWN..[[
 								</Property>
-
+							
 							<Property value="GcObjectSpawnData.xml">
 								<Property name="DebugName" value="" />
 								<Property name="Type" value="]]..LARGEROCK_TYPE..[[" />
@@ -1446,7 +1446,7 @@ local generateGiantBiomeFOREST = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="15" />
@@ -1462,7 +1462,7 @@ local generateGiantBiomeFOREST = function
 								<Property name="SlopeScaling" value="1" />
 								<Property name="PatchEdgeScaling" value="0" />
 								<Property name="MaxXZRotation" value="]]..LARGEROCK_ROTATION..[[" />
-								]]..GIANT_SPARSE_SPAWN..[[
+								]]..GIANT_SPARSE_SPAWN..[[						
 							</Property>
 						</Property>
 					]]
@@ -1474,14 +1474,14 @@ local generateGiantBiomeFOREST = function
 end	------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 --generateORIGINSTREES------------------------------------------------------------------------------------------------------------
-local generateORIGINSTREES = function
+function generateORIGINSTREES
 	(
 		GENERATED_BIOME_PATH,
 		MAIN_TREE_TYPE,
-		MAIN_TREE_PATH,
+		MAIN_TREE_PATH,		
 		MAIN_TREE_ROTATION,
 		MAIN_TREE_SIZEMAX
-
+		
 	)------------------------------------------------------------------------------------------------------------
 	GENERATED_BIOME = ------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
@@ -1509,13 +1509,13 @@ local generateORIGINSTREES = function
 					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
 				},------------------------------------------------------------------------------------------------------------
 				{------------------------------------------------------------------------------------------------------------
-					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------	
 					["ADD"] 	=------------------------------------------------------------------------------------------------------------
 					[[
-						<Property name="Landmarks"></Property>
-							<Property name="Objects">
+						<Property name="Landmarks"></Property>	
+							<Property name="Objects">	  
 
-
+								
 								<Property value="GcObjectSpawnData.xml">
 									<Property name="DebugName" value="" />
 									<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
@@ -1646,7 +1646,7 @@ local generateORIGINSTREES = function
 									<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 									<Property name="OverlapStyle" value="SameSeed" />
 									<Property name="MinHeight" value="-1" />
-									<Property name="MaxHeight" value="128" />
+									<Property name="MaxHeight" value="1280" />
 									<Property name="RelativeToSeaLevel" value="True" />
 									<Property name="MinAngle" value="0" />
 									<Property name="MaxAngle" value="60" />
@@ -1661,7 +1661,7 @@ local generateORIGINSTREES = function
 									<Property name="MaxScaleY" value="1.12" />
 									<Property name="SlopeScaling" value="1" />
 									<Property name="PatchEdgeScaling" value="0" />
-									<Property name="MaxXZRotation" value="]]..MAIN_TREE_ROTATION..[[" />
+									<Property name="MaxXZRotation" value="5" />
 									<Property name="AutoCollision" value="False" />
 									<Property name="CollideWithPlayer" value="True" />
 									<Property name="CollideWithPlayerVehicle" value="True" />
@@ -1692,7 +1692,7 @@ local generateORIGINSTREES = function
 									</Property>
 									</Property>
 									<Property name="QualityVariants">
-
+									
 									</Property>
 								</Property>
 
@@ -1705,15 +1705,14 @@ local generateORIGINSTREES = function
 	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
 end	------------------------------------------------------------------------------------------------------------
 --generate BROKEN TREES
---[=[
-local generateBrokenTreeS = function
+function generateBrokenTreeS
 	(
 		GENERATED_BIOME_PATH,
 		MAIN_TREE_TYPE,
-		MAIN_TREE_PATH,
+		MAIN_TREE_PATH,		
 		MAIN_TREE_ROTATION,
 		MAIN_TREE_SIZEMAX
-
+		
 	)
 	GENERATED_BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
@@ -1741,7 +1740,7 @@ local generateBrokenTreeS = function
 					["REMOVE"] 	= "SECTION"------------------------------------------------------------------------------------------------------------
 				},------------------------------------------------------------------------------------------------------------
 				{------------------------------------------------------------------------------------------------------------
-					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------	
 					["ADD"] 	=------------------------------------------------------------------------------------------------------------
 					[[
 							<Property name="Landmarks">
@@ -1750,9 +1749,9 @@ local generateBrokenTreeS = function
 								<Property name="Type" value="]]..MAIN_TREE_TYPE..[[" />
 								<Property name="Resource" value="GcResourceElement.xml">
 								<Property name="Filename" value="]]..MAIN_TREE_PATH..[[" />
-
-
-
+																					
+																			
+											
 								<Property name="Seed" value="GcSeed.xml">
 									<Property name="Seed" value="0" />
 									<Property name="UseSeedValue" value="False" />
@@ -1858,7 +1857,7 @@ local generateBrokenTreeS = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="30" />
@@ -1904,28 +1903,28 @@ local generateBrokenTreeS = function
 								</Property>
 								</Property>
 								<Property name="QualityVariants">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+																				
+																		
+																		
+																			
+																				
+																				
+																					
+																					
+																						
+																					
+																					
+																
+															
+															
+															
+															
+															
+											
+											
 								</Property>
 							</Property>
-
+							
 							<Property value="GcObjectSpawnData.xml">
 								<Property name="DebugName" value="" />
 								<Property name="Type" value="Instanced" />
@@ -1954,7 +1953,7 @@ local generateBrokenTreeS = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="180" />
@@ -2051,7 +2050,7 @@ local generateBrokenTreeS = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="60" />
@@ -2119,7 +2118,7 @@ local generateBrokenTreeS = function
 								</Property>
 							</Property>
 							</Property>
-
+ 
 							]]
 				},------------------------------------------------------------------------------------------------------------
 			}------------------------------------------------------------------------------------------------------------
@@ -2128,15 +2127,15 @@ local generateBrokenTreeS = function
 	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
 end	------------------------------------------------------------------------------------------------------------
 -- end generate BROKEN trees
---]=]
 
 --generate ROCK SUBBIOMES
-local generateRocksBiomes = function
+function generateRocksBiomes
 	(
 		GENERATED_BIOME_PATH,
 		ROCK_TYPE,
-		ROCK_PATH,
-		ROCK_ROTATION
+		ROCK_PATH,		
+		ROCK_ROTATION,
+		ROCK_SIZEMAX		
 	)
 	GENERATED_BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
@@ -2160,7 +2159,7 @@ local generateRocksBiomes = function
 				},------------------------------------------------------------------------------------------------------------
 					-----------------------------------------------------------------------------------------------------------
 				{------------------------------------------------------------------------------------------------------------
-					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------	
 					["ADD"] 	=------------------------------------------------------------------------------------------------------------
 					[[
 						<Property name="DetailObjects">
@@ -2229,7 +2228,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlace" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="150" />
@@ -2244,7 +2243,7 @@ local generateRocksBiomes = function
 								<Property name="MaxScaleY" value="1" />
 								<Property name="SlopeScaling" value="1" />
 								<Property name="PatchEdgeScaling" value="0" />
-								<Property name="MaxXZRotation" value="]]..ROCK_ROTATION..[[" />
+								<Property name="MaxXZRotation" value="0" />
 								<Property name="AutoCollision" value="False" />
 								<Property name="CollideWithPlayer" value="True" />
 								<Property name="CollideWithPlayerVehicle" value="False" />
@@ -2326,7 +2325,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="140" />
@@ -2461,7 +2460,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="145" />
@@ -2547,7 +2546,7 @@ local generateRocksBiomes = function
 								</Property>
 								</Property>
 							</Property>
-
+    
 							<Property value="GcObjectSpawnData.xml">
 								<Property name="DebugName" value="" />
 								<Property name="Type" value="Instanced" />
@@ -2613,7 +2612,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="0" />
 								<Property name="MaxAngle" value="145" />
@@ -2764,7 +2763,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -2931,7 +2930,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -3082,7 +3081,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -3233,7 +3232,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -3384,7 +3383,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -3535,7 +3534,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -3670,7 +3669,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="All" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="150" />
@@ -3821,7 +3820,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="150" />
@@ -3935,7 +3934,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlace" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -4049,7 +4048,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -4163,7 +4162,7 @@ local generateRocksBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
 								<Property name="OverlapStyle" value="SameSeed" />
 								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="140" />
@@ -4250,8 +4249,8 @@ local generateRocksBiomes = function
 								</Property>
 							</Property>
 							</Property>
-
-
+  
+ 
 							]]
 				},------------------------------------------------------------------------------------------------------------
 			}------------------------------------------------------------------------------------------------------------
@@ -4261,13 +4260,13 @@ local generateRocksBiomes = function
 end	------------------------------------------------------------------------------------------------------------
 -- end generate ROCK SUBBIOMES
 --generate MOUNTAIN SUBBIOMES
-local generateMountainBiomes = function
+function generateMountainBiomes
 	(
 		GENERATED_BIOME_PATH,
 		ROCK_TYPE,
-		ROCK_PATH,
-		ROCK_ROTATION
-
+		ROCK_PATH,		
+		ROCK_ROTATION,
+		ROCK_SIZEMAX		
 	)
 	GENERATED_BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
@@ -4291,7 +4290,7 @@ local generateMountainBiomes = function
 				},------------------------------------------------------------------------------------------------------------
 					-----------------------------------------------------------------------------------------------------------
 				{------------------------------------------------------------------------------------------------------------
-					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------	
 					["ADD"] 	=------------------------------------------------------------------------------------------------------------
 					[[
 						<Property name="DetailObjects">
@@ -4375,7 +4374,7 @@ local generateMountainBiomes = function
 								<Property name="MaxScaleY" value="1" />
 								<Property name="SlopeScaling" value="1" />
 								<Property name="PatchEdgeScaling" value="0" />
-								<Property name="MaxXZRotation" value="]]..ROCK_ROTATION..[[" />
+								<Property name="MaxXZRotation" value="0" />
 								<Property name="AutoCollision" value="False" />
 								<Property name="CollideWithPlayer" value="True" />
 								<Property name="CollideWithPlayerVehicle" value="False" />
@@ -5514,7 +5513,7 @@ local generateMountainBiomes = function
 								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="10" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -5665,7 +5664,7 @@ local generateMountainBiomes = function
 								<Property name="LargeObjectCoverage" value="AlwaysPlace" />
 								<Property name="OverlapStyle" value="None" />
 								<Property name="MinHeight" value="-10" />
-								<Property name="MaxHeight" value="128" />
+								<Property name="MaxHeight" value="1280" />
 								<Property name="RelativeToSeaLevel" value="True" />
 								<Property name="MinAngle" value="10" />
 								<Property name="MaxAngle" value="145" />
@@ -6380,8 +6379,8 @@ local generateMountainBiomes = function
 								</Property>
 							</Property>
 							</Property>
-
-
+  
+ 
 							]]
 				},------------------------------------------------------------------------------------------------------------
 			}------------------------------------------------------------------------------------------------------------
@@ -6391,12 +6390,13 @@ local generateMountainBiomes = function
 end	------------------------------------------------------------------------------------------------------------
 -- end generate MOUNTAIN SUBBIOMES
 --generate CAVE SUBBIOMES
-local generateCaveBiomes = function
+function generateCaveBiomes
 	(
 		GENERATED_BIOME_PATH,
 		PROPS_TYPE,
-		PROPS_PATH,
-		PROPS_ROTATION
+		PROPS_PATH,		
+		PROPS_ROTATION,
+		PROPS_SIZEMAX		
 	)
 	GENERATED_BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
@@ -6420,9 +6420,9 @@ local generateCaveBiomes = function
 				},------------------------------------------------------------------------------------------------------------
 					-----------------------------------------------------------------------------------------------------------
 				{------------------------------------------------------------------------------------------------------------
-					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------
+					["SPECIAL_KEY_WORDS"] = {"Objects","GcEnvironmentSpawnData.xml"},	------------------------------------------------------------------------------------------------------------	
 					["ADD"] 	=------------------------------------------------------------------------------------------------------------
-					[[
+					[[						  
 					    <Property name="DetailObjects">
 			<Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
@@ -6448,23 +6448,23 @@ local generateCaveBiomes = function
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-12800" />
-        <Property name="MaxHeight" value="12800" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="230" />
+        <Property name="MaxAngle" value="10" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.03" />
-        <Property name="MaxScale" value="0.18" />
+        <Property name="MinScale" value="0.3" />
+        <Property name="MaxScale" value="0.8" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
         <Property name="PatchEdgeScaling" value="0" />
-        <Property name="MaxXZRotation" value="]]..PROPS_ROTATION..[[" />
+        <Property name="MaxXZRotation" value="5" />
         <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="True" />
         <Property name="CollideWithPlayerVehicle" value="True" />
@@ -6496,7 +6496,7 @@ local generateCaveBiomes = function
         </Property>
         <Property name="QualityVariants" />
 
-      </Property>
+      </Property>    
 	   <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="]]..PROPS_TYPE..[[" />
@@ -6521,11 +6521,11 @@ local generateCaveBiomes = function
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-12800" />
-        <Property name="MaxHeight" value="12800" />
+        <Property name="MinHeight" value="-128" />
+        <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="220" />
+        <Property name="MinAngle" value="1" />
+        <Property name="MaxAngle" value="2" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -6571,7 +6571,7 @@ local generateCaveBiomes = function
 
       </Property>
 
-
+	
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Single" />
@@ -6796,7 +6796,7 @@ local generateCaveBiomes = function
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="GRASS" />
+        <Property name="Placement" value="JAMESPATCH" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -6804,11 +6804,11 @@ local generateCaveBiomes = function
         <Property name="PlacementPriority" value="Low" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
         <Property name="OverlapStyle" value="All" />
-        <Property name="MinHeight" value="-10" />
-        <Property name="MaxHeight" value="18" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="255" />
+        <Property name="MaxAngle" value="55" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -6833,9 +6833,9 @@ local generateCaveBiomes = function
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.7" />
-          <Property name="FlatDensity" value="0.37" />
-          <Property name="SlopeDensity" value="0.37" />
+          <Property name="Coverage" value="0.3" />
+          <Property name="FlatDensity" value="0.2" />
+          <Property name="SlopeDensity" value="0.7" />
           <Property name="SlopeMultiplier" value="2.8" />
           <Property name="MaxRegionRadius" value="7" />
           <Property name="MaxImposterRadius" value="10" />
@@ -6851,7 +6851,7 @@ local generateCaveBiomes = function
           </Property>
         </Property>
         <Property name="QualityVariants" />
-      </Property>
+      </Property>     
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Single" />
@@ -6945,128 +6945,13 @@ local generateCaveBiomes = function
         </Property>
       </Property>
     </Property>
-
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers">
-              <Property value="TkProceduralTextureChosenOptionSampler.xml">
-                <Property name="Options">
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="BASE" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Grass" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.35" />
-                      <Property name="G" value="0.318" />
-                      <Property name="B" value="0.243" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="FLORACLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Low" />
-        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
-        <Property name="OverlapStyle" value="All" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="39" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="1" />
-        <Property name="MaxScale" value="1.3" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.1" />
-        <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="False" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="True" />
-        <Property name="ShearWindStrength" value="0.75" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
-          <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.2" />
-            <Property name="FlatDensity" value="0.1" />
-            <Property name="SlopeDensity" value="0" />
-            <Property name="SlopeMultiplier" value="3" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
+					     
 
 
 
+  
 
-
+ 
 					]]
 				},------------------------------------------------------------------------------------------------------------
 			}------------------------------------------------------------------------------------------------------------
@@ -7163,7 +7048,7 @@ local generateGiantBiomeMEGALITH = function
 							<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 							<Property name="OverlapStyle" value="None" />
 							<Property name="MinHeight" value="-1" />
-							<Property name="MaxHeight" value="128" />
+							<Property name="MaxHeight" value="1128" />
 							<Property name="RelativeToSeaLevel" value="True" />
 							<Property name="MinAngle" value="0" />
 							<Property name="MaxAngle" value="15" />
@@ -7282,7 +7167,7 @@ local generateGiantBiomeCITY = function
 							<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
 							<Property name="OverlapStyle" value="None" />
 							<Property name="MinHeight" value="-1" />
-							<Property name="MaxHeight" value="128" />
+							<Property name="MaxHeight" value="1128" />
 							<Property name="RelativeToSeaLevel" value="True" />
 							<Property name="MinAngle" value="0" />
 							<Property name="MaxAngle" value="15" />
@@ -7346,10 +7231,11 @@ MODDED_TERRAIN_SHAPES_FEATURE = "OFF"
 E3_STYLE_RESSOURCES_DEPOSITS = "OFF"
 FANTASY_BIOMES_FEATURE = "OFF"
 end
+--[=[
 if PERFORMANCE_MODE == "ON" then
 CAVE_BIOMES_FEATURE = "OFF"
 MONTAINS_BIOMES_FEATURE = "OFF"
-end
+end--]=]
 if ASTEROIDS_FIELDS_TYPE == "REALISTIC" then---------------------------------------------------------------------------------
 	createAsteroidsFields(ASTEROIDS_REALISTIC_PRESET)---------------------------------------------------------------------------------
 end---------------------------------------------------------------------------------------------------------------------------------------------------

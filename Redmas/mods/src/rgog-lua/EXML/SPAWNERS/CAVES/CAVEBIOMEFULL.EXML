@@ -1,18 +1,480 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.73.0)-->
+<!--File created using MBINCompiler version (3.91.0)-->
 <Data template="GcExternalObjectList">
   <Property name="Objects" value="GcEnvironmentSpawnData.xml">
     <Property name="Creatures" />
     <Property name="DistantObjects" />
-    <Property name="Landmarks">
-
-   </Property>
-    <Property name="DetailObjects">
-			<Property value="GcObjectSpawnData.xml">
+    <Property name="Landmarks" />
+    <Property name="Objects">
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Single" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/CAVEDRIPVFX.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="All" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="120" />
+        <Property name="MaxAngle" value="360" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="False" />
+        <Property name="MinScale" value="1" />
+        <Property name="MaxScale" value="1" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.2" />
+            <Property name="FlatDensity" value="0.03" />
+            <Property name="SlopeDensity" value="0.03" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="2" />
+            <Property name="MaxImposterRadius" value="99" />
+            <Property name="FadeOutStartDistance" value="60" />
+            <Property name="FadeOutEndDistance" value="70" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/RGO/LARGEOAK1.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/HANGINGPLANTS.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEROCKCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="High" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="100" />
+        <Property name="MaxAngle" value="230" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="False" />
+        <Property name="MinScale" value="0.5" />
+        <Property name="MaxScale" value="1.1" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1.4" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="2" />
+            <Property name="FlatDensity" value="0.005" />
+            <Property name="SlopeDensity" value="0.005" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="3" />
+            <Property name="MaxImposterRadius" value="99" />
+            <Property name="FadeOutStartDistance" value="80" />
+            <Property name="FadeOutEndDistance" value="90" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="40" />
+              <Property value="60" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/STALACTITES.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="5" />
+          <Property name="UseSeedValue" value="True" />
+        </Property>
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="120" />
+        <Property name="MaxAngle" value="240" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="False" />
+        <Property name="MinScale" value="0.5" />
+        <Property name="MaxScale" value="0.6" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="2.5" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="MaxXZRotation" value="5" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="True" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.5" />
+            <Property name="FlatDensity" value="0.03" />
+            <Property name="SlopeDensity" value="0.03" />
+            <Property name="SlopeMultiplier" value="0" />
+            <Property name="MaxRegionRadius" value="3" />
+            <Property name="MaxImposterRadius" value="99" />
+            <Property name="FadeOutStartDistance" value="80" />
+            <Property name="FadeOutEndDistance" value="90" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="40" />
+              <Property value="70" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/LARGEFUNGHI.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="High" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="25" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.6" />
+        <Property name="MaxScale" value="0.8" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="True" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.28" />
+            <Property name="FlatDensity" value="0.024" />
+            <Property name="SlopeDensity" value="0.024" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="3" />
+            <Property name="MaxImposterRadius" value="99" />
+            <Property name="FadeOutStartDistance" value="80" />
+            <Property name="FadeOutEndDistance" value="90" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="40" />
+              <Property value="70" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/LARGEBOULDER.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEROCKCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="35" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.15" />
+        <Property name="MaxScale" value="0.5" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="True" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.4" />
+            <Property name="FlatDensity" value="0.014" />
+            <Property name="SlopeDensity" value="0.014" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="3" />
+            <Property name="MaxImposterRadius" value="99" />
+            <Property name="FadeOutStartDistance" value="80" />
+            <Property name="FadeOutEndDistance" value="90" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="40" />
+              <Property value="60" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property name="DetailObjects">
+	
+	
+			      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -32,7 +494,7 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-128" />
+        <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
@@ -61,7 +523,7 @@
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-        <Property name="Coverage" value="0.82" />
+        <Property name="Coverage" value="0.2" />
         <Property name="FlatDensity" value="0.08" />
         <Property name="SlopeDensity" value="0.08" />
         <Property name="SlopeMultiplier" value="1" />
@@ -80,12 +542,16 @@
         </Property>
         <Property name="QualityVariants" />
 
-      </Property>    
-	   <Property value="GcObjectSpawnData.xml">
+      </Property>
+    
+
+	
+	
+      <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/RGO/REDMAS_GROVE.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMSTALAGTITES.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -105,100 +571,25 @@
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-128" />
+        <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="1" />
-        <Property name="MaxAngle" value="2" />
+        <Property name="MinAngle" value="140" />
+        <Property name="MaxAngle" value="280" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.03" />
-        <Property name="MaxScale" value="0.18" />
+        <Property name="AlignToNormal" value="False" />
+        <Property name="MinScale" value="0.5" />
+        <Property name="MaxScale" value="1" />
         <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
+        <Property name="MaxScaleY" value="2.5" />
         <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="PatchEdgeScaling" value="0.1" />
         <Property name="MaxXZRotation" value="5" />
         <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-        <Property name="Coverage" value="0.82" />
-        <Property name="FlatDensity" value="0.08" />
-        <Property name="SlopeDensity" value="0.08" />
-        <Property name="SlopeMultiplier" value="1" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="20" />
-            <Property value="60" />
-            <Property value="150" />
-            <Property value="500" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants" />
-
-      </Property>
-
-	
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Single" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\GROUND\FIENDEGG.SCENE.MBIN" />
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers" />
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="RARECAVE" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="High" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
-        <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-128" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="155" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.1" />
-        <Property name="MaxScale" value="1" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0" />
-        <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
         <Property name="CollideWithPlayerVehicle" value="False" />
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
@@ -209,102 +600,10 @@
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.821" />
-          <Property name="FlatDensity" value="0.02" />
-          <Property name="SlopeDensity" value="0.02" />
-          <Property name="SlopeMultiplier" value="0.1" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.821" />
-            <Property name="FlatDensity" value="0.02" />
-            <Property name="SlopeDensity" value="0.02" />
-            <Property name="SlopeMultiplier" value="0.1" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Single" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\CRATE\TREASURE_CHEST.SCENE.MBIN" />
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers" />
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="RARECAVE" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="High" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
-        <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-128" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="55" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.1" />
-        <Property name="MaxScale" value="1" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0" />
-        <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.821" />
-          <Property name="FlatDensity" value="0.0002" />
-          <Property name="SlopeDensity" value="0.0002" />
-          <Property name="SlopeMultiplier" value="1" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
           <Property name="MaxImposterRadius" value="10" />
           <Property name="FadeOutStartDistance" value="9999" />
@@ -321,86 +620,337 @@
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.821" />
-            <Property name="FlatDensity" value="0.0002" />
-            <Property name="SlopeDensity" value="0.0002" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="Coverage" value="0.3" />
+            <Property name="FlatDensity" value="0.1" />
+            <Property name="SlopeDensity" value="0.1" />
+            <Property name="SlopeMultiplier" value="0" />
+            <Property name="MaxRegionRadius" value="6" />
+            <Property name="MaxImposterRadius" value="99" />
+            <Property name="FadeOutStartDistance" value="70" />
+            <Property name="FadeOutEndDistance" value="80" />
+            <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="20" />
+              <Property value="40" />
               <Property value="60" />
-              <Property value="150" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      
-           <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-       <Property name="Filename" value="MODELS\PLANETS\BIOMES\COMMON\FLOWERS\YARROW.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/LARGEPROP/STALAGMITES.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="1" />
-            <Property name="UseSeedValue" value="True" />
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
           </Property>
           <Property name="AltId" value="" />
           <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers">
-              <Property value="TkProceduralTextureChosenOptionSampler.xml">
-                <Property name="Options">
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="BASE" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Plant" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="True" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.42" />
-                      <Property name="G" value="0.53" />
-                      <Property name="B" value="0.239" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="6" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
+            <Property name="Samplers" />
           </Property>
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="GRASS" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
         </Property>
-        <Property name="PlacementPriority" value="Low" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
-        <Property name="OverlapStyle" value="All" />
-        <Property name="MinHeight" value="-10" />
-        <Property name="MaxHeight" value="20" />
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="1255" />
+        <Property name="MinAngle" value="15" />
+        <Property name="MaxAngle" value="45" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="False" />
+        <Property name="MinScale" value="0.3" />
+        <Property name="MaxScale" value="0.7" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="2.5" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="MaxXZRotation" value="5" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="True" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.52" />
+            <Property name="FlatDensity" value="0.04" />
+            <Property name="SlopeDensity" value="0.05" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="6" />
+            <Property name="MaxImposterRadius" value="99" />
+            <Property name="FadeOutStartDistance" value="80" />
+            <Property name="FadeOutEndDistance" value="90" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="45" />
+              <Property value="70" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Single" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLGLOWPLANT.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="High" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="15" />
+        <Property name="MaxAngle" value="45" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
         <Property name="MinScale" value="0.6" />
-        <Property name="MaxScale" value="1.9" />
+        <Property name="MaxScale" value="0.8" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="15" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.4" />
+            <Property name="FlatDensity" value="0.005" />
+            <Property name="SlopeDensity" value="0.005" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="110" />
+            <Property name="FadeOutEndDistance" value="130" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="15" />
+              <Property value="25" />
+              <Property value="35" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Single" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLGLOWPLANT.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="High" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="25" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.6" />
+        <Property name="MaxScale" value="0.8" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="15" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.26" />
+            <Property name="FlatDensity" value="0.005" />
+            <Property name="SlopeDensity" value="0.005" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="110" />
+            <Property name="FadeOutEndDistance" value="130" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="15" />
+              <Property value="25" />
+              <Property value="35" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Single" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLCIELINGPLANT.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="High" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="145" />
+        <Property name="MaxAngle" value="240" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.5" />
+        <Property name="MaxScale" value="1" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
@@ -414,34 +964,54 @@
         <Property name="DestroyedByTerrainEdit" value="True" />
         <Property name="InvisibleToCamera" value="True" />
         <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0.75" />
+        <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.837" />
-          <Property name="FlatDensity" value="0.37" />
-          <Property name="SlopeDensity" value="0.37" />
-          <Property name="SlopeMultiplier" value="2.8" />
-          <Property name="MaxRegionRadius" value="7" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
           <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="100" />
-          <Property name="FadeOutEndDistance" value="110" />
-          <Property name="FadeOutOffsetDistance" value="5" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="8" />
-            <Property value="15" />
-            <Property value="25" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
             <Property value="500" />
           </Property>
         </Property>
-        <Property name="QualityVariants" />
-      </Property>  
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.4" />
+            <Property name="FlatDensity" value="0.002" />
+            <Property name="SlopeDensity" value="0.002" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="110" />
+            <Property name="FadeOutEndDistance" value="130" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="15" />
+              <Property value="25" />
+              <Property value="35" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
       <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
-        <Property name="Type" value="Single" />
+        <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/CAVE/EGGRESOURCE.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMPLANT.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -453,7 +1023,136 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="RARECAVE" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="145" />
+          <Property name="UseSeedValue" value="True" />
+        </Property>
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="30" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.3" />
+        <Property name="MaxScale" value="0.6" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="10" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.22" />
+            <Property name="FlatDensity" value="0.007" />
+            <Property name="SlopeDensity" value="0.007" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="70" />
+            <Property name="FadeOutEndDistance" value="80" />
+            <Property name="FadeOutOffsetDistance" value="0" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="15" />
+              <Property value="25" />
+              <Property value="35" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMROCKPOOL.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers">
+              <Property value="TkProceduralTextureChosenOptionSampler.xml">
+                <Property name="Options">
+                  <Property value="TkProceduralTextureChosenOption.xml">
+                    <Property name="Layer" value="MOSS" />
+                    <Property name="Group" value="" />
+                    <Property name="Palette" value="TkPaletteTexture.xml">
+                      <Property name="Palette" value="Plant" />
+                      <Property name="ColourAlt" value="MatchGround" />
+                    </Property>
+                    <Property name="OverrideColour" value="False" />
+                    <Property name="Colour" value="Colour.xml">
+                      <Property name="R" value="0.403922" />
+                      <Property name="G" value="0.372549" />
+                      <Property name="B" value="0.431373" />
+                      <Property name="A" value="1" />
+                    </Property>
+                    <Property name="OptionName" value="" />
+                  </Property>
+                  <Property value="TkProceduralTextureChosenOption.xml">
+                    <Property name="Layer" value="BASE" />
+                    <Property name="Group" value="" />
+                    <Property name="Palette" value="TkPaletteTexture.xml">
+                      <Property name="Palette" value="Rock" />
+                      <Property name="ColourAlt" value="Primary" />
+                    </Property>
+                    <Property name="OverrideColour" value="False" />
+                    <Property name="Colour" value="Colour.xml">
+                      <Property name="R" value="0.689" />
+                      <Property name="G" value="0.483" />
+                      <Property name="B" value="0.27" />
+                      <Property name="A" value="1" />
+                    </Property>
+                    <Property name="OptionName" value="" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="SPARSECLUMP" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -461,17 +1160,17 @@
         <Property name="PlacementPriority" value="High" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
-        <Property name="MinHeight" value="-128" />
+        <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="60" />
+        <Property name="MaxAngle" value="17" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.8" />
+        <Property name="AlignToNormal" value="False" />
+        <Property name="MinScale" value="0.6" />
         <Property name="MaxScale" value="1.1" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
@@ -490,7 +1189,7 @@
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.82" />
+          <Property name="Coverage" value="0.2" />
           <Property name="FlatDensity" value="0.5" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
@@ -510,35 +1209,30 @@
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="4" />
-            <Property name="FlatDensity" value="0.03" />
-            <Property name="SlopeDensity" value="0.03" />
+            <Property name="Coverage" value="0.32" />
+            <Property name="FlatDensity" value="0.001" />
+            <Property name="SlopeDensity" value="0.001" />
             <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="MaxRegionRadius" value="3" />
+            <Property name="MaxImposterRadius" value="99" />
+            <Property name="FadeOutStartDistance" value="80" />
+            <Property name="FadeOutEndDistance" value="90" />
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="45" />
+              <Property value="70" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-    </Property>
-    <Property name="Objects">
-	      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml">
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLCAVEBUSH.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -550,30 +1244,30 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="JAMESPATCH" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
+          <Property name="Seed" value="100" />
+          <Property name="UseSeedValue" value="True" />
         </Property>
-        <Property name="PlacementPriority" value="Normal" />
-        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
-        <Property name="OverlapStyle" value="SameSeed" />
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="30" />
+        <Property name="MaxAngle" value="20" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="2" />
-        <Property name="MaxScale" value="2.5" />
+        <Property name="MinScale" value="0.5" />
+        <Property name="MaxScale" value="1" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.5" />
+        <Property name="SlopeScaling" value="0" />
+        <Property name="PatchEdgeScaling" value="1" />
         <Property name="MaxXZRotation" value="0" />
         <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="False" />
@@ -583,7 +1277,7 @@
         <Property name="DestroyedByTerrainEdit" value="True" />
         <Property name="InvisibleToCamera" value="True" />
         <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0.5" />
+        <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
@@ -598,39 +1292,20 @@
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
           </Property>
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.1" />
-            <Property name="FlatDensity" value="0.05" />
-            <Property name="SlopeDensity" value="0.03" />
-            <Property name="SlopeMultiplier" value="2" />
-            <Property name="MaxRegionRadius" value="3" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
-            </Property>
-          </Property>
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="ULTRA" />
-            <Property name="Coverage" value="0.1" />
-            <Property name="FlatDensity" value="0.05" />
-            <Property name="SlopeDensity" value="0.03" />
-            <Property name="SlopeMultiplier" value="2" />
-            <Property name="MaxRegionRadius" value="3" />
+            <Property name="Coverage" value="0.07" />
+            <Property name="FlatDensity" value="0.14" />
+            <Property name="SlopeDensity" value="0.14" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
             <Property name="MaxImposterRadius" value="10" />
             <Property name="FadeOutStartDistance" value="70" />
             <Property name="FadeOutEndDistance" value="80" />
@@ -638,8 +1313,8 @@
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="15" />
+              <Property value="25" />
               <Property value="35" />
-              <Property value="45" />
               <Property value="500" />
             </Property>
           </Property>
@@ -649,10 +1324,7 @@
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLCAVEBUSH.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -664,146 +1336,32 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="FLORACLUMP" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
+          <Property name="Seed" value="101" />
+          <Property name="UseSeedValue" value="True" />
         </Property>
-        <Property name="PlacementPriority" value="Normal" />
-        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
-        <Property name="OverlapStyle" value="SameSeed" />
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="30" />
+        <Property name="MinAngle" value="30" />
+        <Property name="MaxAngle" value="50" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="2" />
-        <Property name="MaxScale" value="2.5" />
+        <Property name="MinScale" value="0.5" />
+        <Property name="MaxScale" value="1" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.5" />
+        <Property name="SlopeScaling" value="0" />
+        <Property name="PatchEdgeScaling" value="1" />
         <Property name="MaxXZRotation" value="0" />
         <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0.5" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
-          <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.2" />
-            <Property name="FlatDensity" value="0.05" />
-            <Property name="SlopeDensity" value="0.03" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="3" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
-            </Property>
-          </Property>
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="ULTRA" />
-            <Property name="Coverage" value="0.2" />
-            <Property name="FlatDensity" value="0.05" />
-            <Property name="SlopeDensity" value="0.03" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="3" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/LUSHROOM/SMALLBLUESHROOMS.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers" />
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="FLORACLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Normal" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
-        <Property name="OverlapStyle" value="SameSeed" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="30" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="1.5" />
-        <Property name="MaxScale" value="3" />
-        <Property name="MinScaleY" value="0.8" />
-        <Property name="MaxScaleY" value="1.25" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.5" />
-        <Property name="MaxXZRotation" value="10" />
-        <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="False" />
         <Property name="CollideWithPlayerVehicle" value="False" />
         <Property name="DestroyedByPlayerVehicle" value="True" />
@@ -826,18 +1384,18 @@
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
           </Property>
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.3" />
-            <Property name="FlatDensity" value="0.02" />
-            <Property name="SlopeDensity" value="0.01" />
+            <Property name="Coverage" value="0.54" />
+            <Property name="FlatDensity" value="0.08" />
+            <Property name="SlopeDensity" value="0.08" />
             <Property name="SlopeMultiplier" value="1" />
             <Property name="MaxRegionRadius" value="10" />
             <Property name="MaxImposterRadius" value="10" />
@@ -847,8 +1405,8 @@
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="15" />
+              <Property value="25" />
               <Property value="35" />
-              <Property value="45" />
               <Property value="500" />
             </Property>
           </Property>
@@ -858,10 +1416,7 @@
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/LUSHROOM/SMALLBLUESHROOMS.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLPLANT.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -873,223 +1428,33 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="SMALLCLUMP" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
+          <Property name="Seed" value="3" />
+          <Property name="UseSeedValue" value="True" />
         </Property>
         <Property name="PlacementPriority" value="Normal" />
         <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
-        <Property name="OverlapStyle" value="SameSeed" />
+        <Property name="OverlapStyle" value="None" />
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="45" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="True" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="1.5" />
-        <Property name="MaxScale" value="3" />
-        <Property name="MinScaleY" value="0.8" />
-        <Property name="MaxScaleY" value="1.25" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.5" />
-        <Property name="MaxXZRotation" value="10" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="False" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
-          <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.2" />
-            <Property name="FlatDensity" value="0.02" />
-            <Property name="SlopeDensity" value="0.01" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/LUSHROOM/SMALLBLUESHROOMS.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers" />
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="JAMESPATCH" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Normal" />
-        <Property name="LargeObjectCoverage" value="DoNotPlace" />
-        <Property name="OverlapStyle" value="SameSeed" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="45" />
+        <Property name="MinAngle" value="25" />
+        <Property name="MaxAngle" value="50" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="1.5" />
-        <Property name="MaxScale" value="3" />
-        <Property name="MinScaleY" value="0.8" />
-        <Property name="MaxScaleY" value="1.25" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.5" />
-        <Property name="MaxXZRotation" value="10" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="False" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
-          <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.25" />
-            <Property name="FlatDensity" value="0.01" />
-            <Property name="SlopeDensity" value="0.01" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/SMALLROCK.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers" />
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="FLORACLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="High" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
-        <Property name="OverlapStyle" value="SameSeed" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="30" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="1" />
+        <Property name="MinScale" value="0.8" />
         <Property name="MaxScale" value="1.2" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.1" />
-        <Property name="MaxXZRotation" value="45" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
         <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
+        <Property name="CollideWithPlayer" value="False" />
         <Property name="CollideWithPlayerVehicle" value="False" />
         <Property name="DestroyedByPlayerVehicle" value="True" />
         <Property name="DestroyedByPlayerShip" value="True" />
@@ -1111,29 +1476,29 @@
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
           </Property>
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.182" />
-            <Property name="FlatDensity" value="0.009" />
-            <Property name="SlopeDensity" value="0.03" />
+            <Property name="Coverage" value="0.5" />
+            <Property name="FlatDensity" value="0.035" />
+            <Property name="SlopeDensity" value="0.035" />
             <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxRegionRadius" value="3" />
             <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="FadeOutStartDistance" value="60" />
+            <Property name="FadeOutEndDistance" value="90" />
+            <Property name="FadeOutOffsetDistance" value="40" />
             <Property name="LodDistances">
               <Property value="0" />
               <Property value="15" />
+              <Property value="25" />
               <Property value="35" />
-              <Property value="45" />
               <Property value="500" />
             </Property>
           </Property>
@@ -1143,97 +1508,117 @@
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/FRAGMENTS.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
           </Property>
           <Property name="AltId" value="" />
           <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers">
-              <Property value="TkProceduralTextureChosenOptionSampler.xml">
-                <Property name="Options">
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="BASE" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Plant" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="True" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.409" />
-                      <Property name="G" value="0.583" />
-                      <Property name="B" value="0.261" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="1" />
-                  </Property>
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="OVERLAY2" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Leaf" />
-                      <Property name="ColourAlt" value="Alternative2" />
-                    </Property>
-                    <Property name="OverrideColour" value="True" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.817" />
-                      <Property name="G" value="0.73" />
-                      <Property name="B" value="0.526" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="RIM" />
-                  </Property>
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="OVERLAY" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Leaf" />
-                      <Property name="ColourAlt" value="Alternative1" />
-                    </Property>
-                    <Property name="OverrideColour" value="True" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.563" />
-                      <Property name="G" value="0.341" />
-                      <Property name="B" value="0.101" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="COLOR1" />
-                  </Property>
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="BASE" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Leaf" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="True" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.93" />
-                      <Property name="G" value="0.925" />
-                      <Property name="B" value="0.851" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="1" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
+            <Property name="Samplers" />
           </Property>
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="BLANKETCLUMP" />
+        <Property name="Placement" value="CAVEROCKCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
         </Property>
-        <Property name="PlacementPriority" value="High" />
-        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="50" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.8" />
+        <Property name="MaxScale" value="1.4" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.45" />
+            <Property name="FlatDensity" value="0.03" />
+            <Property name="SlopeDensity" value="0.03" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="3" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="60" />
+            <Property name="FadeOutEndDistance" value="90" />
+            <Property name="FadeOutOffsetDistance" value="40" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="15" />
+              <Property value="25" />
+              <Property value="35" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLPLANT.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="123" />
+          <Property name="UseSeedValue" value="True" />
+        </Property>
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
         <Property name="OverlapStyle" value="None" />
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
@@ -1242,15 +1627,107 @@
         <Property name="MaxAngle" value="30" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="True" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.9" />
-        <Property name="MaxScale" value="1.2" />
+        <Property name="MinScale" value="0.3" />
+        <Property name="MaxScale" value="0.6" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.5" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.07" />
+            <Property name="FlatDensity" value="0.015" />
+            <Property name="SlopeDensity" value="0.015" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="70" />
+            <Property name="FadeOutEndDistance" value="80" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="15" />
+              <Property value="25" />
+              <Property value="35" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/TINYROCKS.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="15" />
+        <Property name="MaxAngle" value="50" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.4" />
+        <Property name="MaxScale" value="0.8" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
         <Property name="MaxXZRotation" value="5" />
         <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="False" />
@@ -1260,7 +1737,7 @@
         <Property name="DestroyedByTerrainEdit" value="True" />
         <Property name="InvisibleToCamera" value="True" />
         <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0.2" />
+        <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
@@ -1275,135 +1752,19 @@
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
           </Property>
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.5" />
-            <Property name="FlatDensity" value="0.018" />
-            <Property name="SlopeDensity" value="0" />
-            <Property name="SlopeMultiplier" value="2" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="5" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="9" />
-              <Property value="20" />
-              <Property value="30" />
-              <Property value="40" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers">
-              <Property value="TkProceduralTextureChosenOptionSampler.xml">
-                <Property name="Options">
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="BASE" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Grass" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.35" />
-                      <Property name="G" value="0.318" />
-                      <Property name="B" value="0.243" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="BLANKETCLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Low" />
-        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
-        <Property name="OverlapStyle" value="All" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="38" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="1.2" />
-        <Property name="MaxScale" value="1.5" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.1" />
-        <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="False" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="True" />
-        <Property name="ShearWindStrength" value="0.75" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
-          <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.1" />
-            <Property name="FlatDensity" value="0.1" />
-            <Property name="SlopeDensity" value="0" />
-            <Property name="SlopeMultiplier" value="3" />
+            <Property name="Coverage" value="0.3" />
+            <Property name="FlatDensity" value="0.07" />
+            <Property name="SlopeDensity" value="0.07" />
+            <Property name="SlopeMultiplier" value="0" />
             <Property name="MaxRegionRadius" value="10" />
             <Property name="MaxImposterRadius" value="10" />
             <Property name="FadeOutStartDistance" value="70" />
@@ -1411,9 +1772,9 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
+              <Property value="20" />
+              <Property value="40" />
+              <Property value="60" />
               <Property value="500" />
             </Property>
           </Property>
@@ -1423,119 +1784,307 @@
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/FERN.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLSHRUB.SCENE.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
           </Property>
           <Property name="AltId" value="" />
           <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers">
-              <Property value="TkProceduralTextureChosenOptionSampler.xml">
-                <Property name="Options">
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="SNOW" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Snow" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.509" />
-                      <Property name="G" value="0.685" />
-                      <Property name="B" value="0.7" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="" />
-                  </Property>
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="MOSS" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Plant" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.278" />
-                      <Property name="G" value="0.581" />
-                      <Property name="B" value="0.653" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="" />
-                  </Property>
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="BASE" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Wood" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.294" />
-                      <Property name="G" value="0.253" />
-                      <Property name="B" value="0.203" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="1" />
-                  </Property>
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="MARKINGS" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Snow" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.509" />
-                      <Property name="G" value="0.685" />
-                      <Property name="B" value="0.7" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="SNOW" />
-                  </Property>
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="BASE" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Leaf" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.611" />
-                      <Property name="G" value="0.168" />
-                      <Property name="B" value="0.128" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
+            <Property name="Samplers" />
           </Property>
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="BLANKETCLUMP" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="3" />
+          <Property name="UseSeedValue" value="True" />
+        </Property>
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="15" />
+        <Property name="MaxAngle" value="45" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.4" />
+        <Property name="MaxScale" value="0.7" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.45" />
+            <Property name="FlatDensity" value="0.034" />
+            <Property name="SlopeDensity" value="0.04" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="3" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="70" />
+            <Property name="FadeOutEndDistance" value="80" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="15" />
+              <Property value="25" />
+              <Property value="35" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLSHRUB.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="40" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.2" />
+        <Property name="MaxScale" value="0.5" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.08" />
+            <Property name="FlatDensity" value="0.005" />
+            <Property name="SlopeDensity" value="0.002" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="70" />
+            <Property name="FadeOutEndDistance" value="80" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="15" />
+              <Property value="25" />
+              <Property value="35" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/SMALLPROP/SMALLROCKS.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Normal" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="10" />
+        <Property name="MaxAngle" value="40" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.3" />
+        <Property name="MaxScale" value="1" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="20" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.2" />
+          <Property name="FlatDensity" value="0.5" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="10" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.4" />
+            <Property name="FlatDensity" value="0.022" />
+            <Property name="SlopeDensity" value="0.022" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="10" />
+            <Property name="MaxImposterRadius" value="10" />
+            <Property name="FadeOutStartDistance" value="70" />
+            <Property name="FadeOutEndDistance" value="80" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="20" />
+              <Property value="40" />
+              <Property value="60" />
+              <Property value="500" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Single" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/CAVE/MEDIUMPROP/MEDIUMGLOWPLANT.SCENE.MBIN" />
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers" />
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="SPARSECLUMP" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
         </Property>
         <Property name="PlacementPriority" value="High" />
-        <Property name="LargeObjectCoverage" value="DoNotPlace" />
-        <Property name="OverlapStyle" value="SameSeed" />
+        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
+        <Property name="OverlapStyle" value="None" />
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="37" />
+        <Property name="MinAngle" value="15" />
+        <Property name="MaxAngle" value="45" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -1547,7 +2096,7 @@
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
         <Property name="PatchEdgeScaling" value="0" />
-        <Property name="MaxXZRotation" value="8" />
+        <Property name="MaxXZRotation" value="15" />
         <Property name="AutoCollision" value="False" />
         <Property name="CollideWithPlayer" value="False" />
         <Property name="CollideWithPlayerVehicle" value="False" />
@@ -1556,7 +2105,7 @@
         <Property name="DestroyedByTerrainEdit" value="True" />
         <Property name="InvisibleToCamera" value="True" />
         <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0.2" />
+        <Property name="ShearWindStrength" value="0" />
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
@@ -1571,592 +2120,35 @@
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
           </Property>
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.09" />
-            <Property name="FlatDensity" value="0.07" />
-            <Property name="SlopeDensity" value="0" />
-            <Property name="SlopeMultiplier" value="3" />
-            <Property name="MaxRegionRadius" value="10" />
+            <Property name="Coverage" value="0.35" />
+            <Property name="FlatDensity" value="0.001" />
+            <Property name="SlopeDensity" value="0.001" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="1" />
             <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="FadeOutStartDistance" value="9999" />
+            <Property name="FadeOutEndDistance" value="9999" />
+            <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="8" />
               <Property value="20" />
               <Property value="30" />
               <Property value="40" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers">
-              <Property value="TkProceduralTextureChosenOptionSampler.xml">
-                <Property name="Options">
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="BASE" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Grass" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="False" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.35" />
-                      <Property name="G" value="0.318" />
-                      <Property name="B" value="0.243" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="FLORACLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Low" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
-        <Property name="OverlapStyle" value="All" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="39" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.6" />
-        <Property name="MaxScale" value="0.8" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.1" />
-        <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="False" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="True" />
-        <Property name="ShearWindStrength" value="0.75" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
-          <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.2" />
-            <Property name="FlatDensity" value="0.1" />
-            <Property name="SlopeDensity" value="0" />
-            <Property name="SlopeMultiplier" value="3" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="70" />
-            <Property name="FadeOutEndDistance" value="80" />
-            <Property name="FadeOutOffsetDistance" value="10" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="15" />
-              <Property value="35" />
-              <Property value="45" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
-      </Property>
-
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers" />
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="FLORACLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Normal" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceClose" />
-        <Property name="OverlapStyle" value="SameSeed" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="45" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="False" />
-        <Property name="MinScale" value="1" />
-        <Property name="MaxScale" value="2" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.3" />
-        <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0.5" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
-          <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.2" />
-            <Property name="FlatDensity" value="0.05" />
-            <Property name="SlopeDensity" value="0.05" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers" />
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="BARRENROCKCLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Normal" />
-        <Property name="LargeObjectCoverage" value="DoNotPlace" />
-        <Property name="OverlapStyle" value="SameSeed" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="45" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="1" />
-        <Property name="MaxScale" value="2" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.5" />
-        <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0.5" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
-          <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.4" />
-            <Property name="FlatDensity" value="0.007" />
-            <Property name="SlopeDensity" value="0.005" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-      <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN" />
-          <Property name="ResHandle" value="GcResource.xml">
-            <Property name="ResourceID" value="0" />
-          </Property>
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="False" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers" />
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="FLORACLUMP" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Normal" />
-        <Property name="LargeObjectCoverage" value="DoNotPlace" />
-        <Property name="OverlapStyle" value="SameSeed" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="45" />
-        <Property name="MatchGroundColour" value="False" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="0.5" />
-        <Property name="MaxScale" value="1.5" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0.3" />
-        <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="True" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0.5" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
-          <Property name="SlopeDensity" value="0" />
-          <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="9999" />
-          <Property name="MaxImposterRadius" value="10" />
-          <Property name="FadeOutStartDistance" value="9999" />
-          <Property name="FadeOutEndDistance" value="9999" />
-          <Property name="FadeOutOffsetDistance" value="0" />
-          <Property name="LodDistances">
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.3" />
-            <Property name="FlatDensity" value="0.01" />
-            <Property name="SlopeDensity" value="0.01" />
-            <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="10" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="9999" />
-            <Property name="FadeOutEndDistance" value="9999" />
-            <Property name="FadeOutOffsetDistance" value="0" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-   
-  <Property value="GcObjectSpawnData.xml">
-        <Property name="DebugName" value="" />
-        <Property name="Type" value="Instanced" />
-        <Property name="Resource" value="GcResourceElement.xml">
-         <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN" />
-          <Property name="Seed" value="GcSeed.xml">
-            <Property name="Seed" value="1" />
-            <Property name="UseSeedValue" value="True" />
-          </Property>
-          <Property name="AltId" value="" />
-          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-            <Property name="Samplers">
-              <Property value="TkProceduralTextureChosenOptionSampler.xml">
-                <Property name="Options">
-                  <Property value="TkProceduralTextureChosenOption.xml">
-                    <Property name="Layer" value="BASE" />
-                    <Property name="Group" value="" />
-                    <Property name="Palette" value="TkPaletteTexture.xml">
-                      <Property name="Palette" value="Plant" />
-                      <Property name="ColourAlt" value="Primary" />
-                    </Property>
-                    <Property name="OverrideColour" value="True" />
-                    <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.42" />
-                      <Property name="G" value="0.53" />
-                      <Property name="B" value="0.239" />
-                      <Property name="A" value="1" />
-                    </Property>
-                    <Property name="OptionName" value="6" />
-                  </Property>
-                </Property>
-              </Property>
-            </Property>
-          </Property>
-        </Property>
-        <Property name="AltResources" />
-        <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="GRASS" />
-        <Property name="Seed" value="GcSeed.xml">
-          <Property name="Seed" value="0" />
-          <Property name="UseSeedValue" value="False" />
-        </Property>
-        <Property name="PlacementPriority" value="Low" />
-        <Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
-        <Property name="OverlapStyle" value="All" />
-        <Property name="MinHeight" value="-1" />
-        <Property name="MaxHeight" value="128" />
-        <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="55" />
-        <Property name="MatchGroundColour" value="True" />
-        <Property name="GroundColourIndex" value="Auto" />
-        <Property name="SwapPrimaryForSecondaryColour" value="False" />
-        <Property name="SwapPrimaryForRandomColour" value="False" />
-        <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="1.6" />
-        <Property name="MaxScale" value="1.9" />
-        <Property name="MinScaleY" value="1" />
-        <Property name="MaxScaleY" value="1" />
-        <Property name="SlopeScaling" value="1" />
-        <Property name="PatchEdgeScaling" value="0" />
-        <Property name="MaxXZRotation" value="0" />
-        <Property name="AutoCollision" value="False" />
-        <Property name="CollideWithPlayer" value="False" />
-        <Property name="CollideWithPlayerVehicle" value="False" />
-        <Property name="DestroyedByPlayerVehicle" value="True" />
-        <Property name="DestroyedByPlayerShip" value="True" />
-        <Property name="DestroyedByTerrainEdit" value="True" />
-        <Property name="InvisibleToCamera" value="True" />
-        <Property name="CreaturesCanEat" value="False" />
-        <Property name="ShearWindStrength" value="0.75" />
-        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-          <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.21" />
-            <Property name="FlatDensity" value="0.7" />
-            <Property name="SlopeDensity" value="0.7" />
-            <Property name="SlopeMultiplier" value="2.8" />
-            <Property name="MaxRegionRadius" value="7" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="100" />
-            <Property name="FadeOutEndDistance" value="110" />
-            <Property name="FadeOutOffsetDistance" value="5" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="8" />
-              <Property value="15" />
-              <Property value="25" />
-              <Property value="500" />
-          </Property>
-        </Property>
-        <Property name="QualityVariants">
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.21" />
-            <Property name="FlatDensity" value="0.7" />
-            <Property name="SlopeDensity" value="0.7" />
-            <Property name="SlopeMultiplier" value="2.8" />
-            <Property name="MaxRegionRadius" value="7" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="100" />
-            <Property name="FadeOutEndDistance" value="110" />
-            <Property name="FadeOutOffsetDistance" value="5" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="8" />
-              <Property value="15" />
-              <Property value="25" />
-              <Property value="500" />
-            </Property>
-          </Property>
-          <Property value="GcObjectSpawnDataVariant.xml">
-            <Property name="ID" value="ULTRA" />
-            <Property name="Coverage" value="0.21" />
-            <Property name="FlatDensity" value="0.7" />
-            <Property name="SlopeDensity" value="0.7" />
-            <Property name="SlopeMultiplier" value="2.8" />
-            <Property name="MaxRegionRadius" value="7" />
-            <Property name="MaxImposterRadius" value="10" />
-            <Property name="FadeOutStartDistance" value="100" />
-            <Property name="FadeOutEndDistance" value="110" />
-            <Property name="FadeOutOffsetDistance" value="5" />
-            <Property name="LodDistances">
-              <Property value="0" />
-              <Property value="8" />
-              <Property value="15" />
-              <Property value="25" />
-              <Property value="500" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-
-   </Property>
-    <Property name="SelectableObjects">
-      <Property value="GcSelectableObjectSpawnList.xml">
-        <Property name="Name" value="" />
-        <Property name="Objects" />
-      </Property>
-      <Property value="GcSelectableObjectSpawnList.xml">
-        <Property name="Name" value="" />
-        <Property name="Objects" />
-      </Property>
-      <Property value="GcSelectableObjectSpawnList.xml">
-        <Property name="Name" value="" />
-        <Property name="Objects" />
-      </Property>
-      <Property value="GcSelectableObjectSpawnList.xml">
-        <Property name="Name" value="" />
-        <Property name="Objects" />
-      </Property>
-      <Property value="GcSelectableObjectSpawnList.xml">
-        <Property name="Name" value="" />
-        <Property name="Objects" />
       </Property>
     </Property>
+    <Property name="SelectableObjects" />
   </Property>
 </Data>
