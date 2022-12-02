@@ -314,6 +314,40 @@
         </Property>
       </Property>
       <Property name="Children">
+              <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="MODELS\RGO\MEDIUMDEADTREE01" />
+          <Property name="NameHash" value="3992099073" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="-0.0328" />
+            <Property name="TransY" value="3.253379" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Capsule" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="RADIUS" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="0.468170" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="7.336339" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE1" />
           <Property name="NameHash" value="3943800339" />

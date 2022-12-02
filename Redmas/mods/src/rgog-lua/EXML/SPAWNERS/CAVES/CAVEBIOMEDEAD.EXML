@@ -25,7 +25,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEROCKCLUMP" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="5" />
           <Property name="UseSeedValue" value="True" />
@@ -100,7 +100,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEROCKCLUMP" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="5" />
           <Property name="UseSeedValue" value="True" />

@@ -10,7 +10,7 @@
 --------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 DAY_ONE_MODE = "OFF"--( put "ON" the day one of a big vanilla update while mbincompiler is being updated to disable some features
-PERFORMANCE_MODE = "ON" --( Putting ON will reduce CPU-DEMANDING FEATURES )
+PERFORMANCE_MODE = "OFF" --( Putting ON will reduce CPU-DEMANDING FEATURES )
 MULTIPLAYER_MODE = "OFF" --( Put On if you play heavily in Multiplayer )
 ----------------------------------------------------------------------------------
 -- SPACESHIPS CONTROLS REWORK
@@ -83,7 +83,7 @@ ASTEROIDS_REALISTIC_PRESET ={
 	["ASTEROID_SCALE_MULTIPLIER"] = "4"
 }
 --------------------------------------------------------------------------------------------------------------
-PROCEDURALMAX = 10  -- This is the number of procedural generated new params for this script
+PROCEDURALMAX = 500  -- This is the number of procedural generated new params for this script
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------

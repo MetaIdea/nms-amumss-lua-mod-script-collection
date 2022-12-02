@@ -9,7 +9,7 @@
         <Property name="DebugName" value="" />
         <Property name="Type" value="Single" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/RGO/_GEK_HEAD.SCENE.MBIN" />
+          <Property name="Filename" value="MODELS/RGO/CHAOS.MBIN" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -39,8 +39,8 @@
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
-        <Property name="MinScale" value="30" />
-        <Property name="MaxScale" value="32" />
+        <Property name="MinScale" value="1" />
+        <Property name="MaxScale" value="31" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
