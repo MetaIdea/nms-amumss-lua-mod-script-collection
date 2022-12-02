@@ -201,9 +201,9 @@ ARCADIA_PRESET ={
         ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
         ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- (REALISTIC / VANILLA / FANTASY )
         ["ASTEROIDS_FIELDS_TYPE"] = "FANTASY", -- ("FANTASY" / "REALISTIC" / "GLUED")
-        ["FIGHTERS_SPACESHIPS_REPAINT"] = "OFF",
-        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "OFF",
-        ["SHUTTLE_SPACESHIPS_REPAINT"] = "OFF",
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
@@ -334,7 +334,7 @@ ARCADIA_PRESET ={
     {
         ["CHARACTERS_SKINS_FEATURE"] = "ON",
         -- (E3-DAMAGED or E3)
-        ["DRONE_PET_SKIN_FEATURE"] = "OFF",
+        ["DRONE_PET_SKIN_FEATURE"] = "ON",
 		["DRONE_PET_SKIN"] = "E3-DAMAGED",
         -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
         -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
