@@ -106,7 +106,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Placement" value="FOREST" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -117,8 +117,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="15" />
+        <Property name="MinAngle" value="60" />
+        <Property name="MinAngle" value="215" />
         <Property name="MatchGroundColour" value="True" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -283,7 +283,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Placement" value="FOREST" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -294,8 +294,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="235" />
+        <Property name="MinAngle" value="60" />
+        <Property name="MinAngle" value="235" />
         <Property name="MatchGroundColour" value="True" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -365,7 +365,7 @@
         <Property name="DebugName" value="" />
         <Property name="Type" value="Single" />
         <Property name="Resource" value="GcResourceElement.xml">
-          <Property name="Filename" value="MODELS/R/GIANTMETALSPIKE.SCENE" />
+          <Property name="Filename" value="MODELS/RGO/GIANTMETALSPIKE.SCENE" />
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -377,7 +377,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Placement" value="FOREST" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -388,8 +388,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="120" />
-        <Property name="MaxAngle" value="360" />
+        <Property name="MinAngle" value="60" />
+        <Property name="MinAngle" value="260" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -469,7 +469,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEROCKCLUMP" />
+        <Property name="Placement" value="GRASSCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -480,8 +480,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="200" />
-        <Property name="MaxAngle" value="230" />
+        <Property name="MinAngle" value="60" />
+        <Property name="MinAngle" value="220" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -561,7 +561,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Placement" value="FOREST" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="5" />
           <Property name="UseSeedValue" value="True" />
@@ -572,8 +572,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="120" />
-        <Property name="MaxAngle" value="240" />
+        <Property name="MinAngle" value="61" />
+        <Property name="MinAngle" value="220" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -653,7 +653,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Placement" value="FOREST" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -664,8 +664,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="100" />
-        <Property name="MaxAngle" value="225" />
+        <Property name="MinAngle" value="6100" />
+        <Property name="MinAngle" value="2225" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -748,7 +748,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Placement" value="FOREST" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -759,8 +759,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="140" />
-        <Property name="MaxAngle" value="280" />
+        <Property name="MinAngle" value="61" />
+        <Property name="MinAngle" value="220" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -888,8 +888,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="17" />
+        <Property name="MinAngle" value="60" />
+        <Property name="MinAngle" value="217" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -969,7 +969,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEROCKCLUMP" />
+        <Property name="Placement" value="GRASSCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -980,8 +980,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="50" />
+        <Property name="MinAngle" value="60" />
+        <Property name="MinAngle" value="250" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -1061,7 +1061,7 @@
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Placement" value="FOREST" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1072,8 +1072,8 @@
         <Property name="MinHeight" value="-1" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="10" />
-        <Property name="MaxAngle" value="40" />
+        <Property name="MinAngle" value="610" />
+        <Property name="MinAngle" value="240" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />

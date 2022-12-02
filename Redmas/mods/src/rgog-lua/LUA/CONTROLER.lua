@@ -974,7 +974,8 @@ local tablelength = function (T)------------------------------------------------
  end------------------------------------------------------------------------------------------------------------
   return count------------------------------------------------------------------------------------------------------------
 end------------------------------------------------------------------------------------------------------------
-function generateRareRessourcesBiome(BIOME_PATH,TYPE,PATH,ROTATION,MAXSIZE)------------------------------------------------------------------------------------------------------------
+function generateRareRessourcesBiome(BIOME_PATH,TYPE,PATH,MAXSIZE)
+	-----------------------------------------------------------------------------------------------------------
 	BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -1219,7 +1220,9 @@ function generateGiantBiomeFOREST
 		LARGEROCK_PATH,
 		LARGEROCK_ROTATION,
 		LARGEROCK_SIZEMAX
-	)------------------------------------------------------------------------------------------------------------
+	)
+
+	------------------------------------------------------------------------------------------------------------
 	GENERATED_GIANT_BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -1479,10 +1482,11 @@ function generateORIGINSTREES
 		GENERATED_BIOME_PATH,
 		MAIN_TREE_TYPE,
 		MAIN_TREE_PATH,		
-		MAIN_TREE_ROTATION,
 		MAIN_TREE_SIZEMAX
 		
-	)------------------------------------------------------------------------------------------------------------
+	)
+
+	------------------------------------------------------------------------------------------------------------
 	GENERATED_BIOME = ------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -1655,7 +1659,7 @@ function generateORIGINSTREES
 									<Property name="SwapPrimaryForSecondaryColour" value="False" />
 									<Property name="SwapPrimaryForRandomColour" value="False" />
 									<Property name="AlignToNormal" value="False" />
-									<Property name="MinScale" value="0.3" />
+									<Property name="MinScale" value="1.3" />
 									<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
 									<Property name="MinScaleY" value="0.91" />
 									<Property name="MaxScaleY" value="1.12" />
@@ -1705,6 +1709,7 @@ function generateORIGINSTREES
 	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
 end	------------------------------------------------------------------------------------------------------------
 --generate BROKEN TREES
+--[=[
 function generateBrokenTreeS
 	(
 		GENERATED_BIOME_PATH,
@@ -1714,6 +1719,7 @@ function generateBrokenTreeS
 		MAIN_TREE_SIZEMAX
 		
 	)
+
 	GENERATED_BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -2127,16 +2133,16 @@ function generateBrokenTreeS
 	addContent(GENERATED_BIOME)------------------------------------------------------------------------------------------------------------
 end	------------------------------------------------------------------------------------------------------------
 -- end generate BROKEN trees
+--]=]
 
 --generate ROCK SUBBIOMES
 function generateRocksBiomes
 	(
 		GENERATED_BIOME_PATH,
 		ROCK_TYPE,
-		ROCK_PATH,		
-		ROCK_ROTATION,
-		ROCK_SIZEMAX		
+		ROCK_PATH		
 	)
+
 	GENERATED_BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -2237,8 +2243,8 @@ function generateRocksBiomes
 								<Property name="SwapPrimaryForSecondaryColour" value="False" />
 								<Property name="SwapPrimaryForRandomColour" value="False" />
 								<Property name="AlignToNormal" value="True" />
-								<Property name="MinScale" value="0.3" />
-								<Property name="MaxScale" value="1" />
+								<Property name="MinScale" value="0.13" />
+								<Property name="MaxScale" value="0.41" />
 								<Property name="MinScaleY" value="1" />
 								<Property name="MaxScaleY" value="1" />
 								<Property name="SlopeScaling" value="1" />
@@ -4264,10 +4270,9 @@ function generateMountainBiomes
 	(
 		GENERATED_BIOME_PATH,
 		ROCK_TYPE,
-		ROCK_PATH,		
-		ROCK_ROTATION,
-		ROCK_SIZEMAX		
+		ROCK_PATH		
 	)
+
 	GENERATED_BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -4350,7 +4355,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="FLORACLUMP" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -4361,8 +4366,8 @@ function generateMountainBiomes
 								<Property name="MinHeight" value="100" />
 								<Property name="MaxHeight" value="1028" />
 								<Property name="RelativeToSeaLevel" value="True" />
-								<Property name="MinAngle" value="1" />
-								<Property name="MaxAngle" value="3" />
+								<Property name="MinAngle" value="51" />
+								<Property name="MaxAngle" value="223" />
 								<Property name="MatchGroundColour" value="False" />
 								<Property name="GroundColourIndex" value="Auto" />
 								<Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -4447,7 +4452,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="GRASS" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -4593,8 +4598,8 @@ function generateMountainBiomes
 								<Property name="MinHeight" value="100" />
 								<Property name="MaxHeight" value="1028" />
 								<Property name="RelativeToSeaLevel" value="True" />
-								<Property name="MinAngle" value="10" />
-								<Property name="MaxAngle" value="350" />
+								<Property name="MinAngle" value="51" />
+								<Property name="MaxAngle" value="323" />
 								<Property name="MatchGroundColour" value="False" />
 								<Property name="GroundColourIndex" value="Auto" />
 								<Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -4733,7 +4738,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="FLORACLUMP" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -4744,7 +4749,7 @@ function generateMountainBiomes
 								<Property name="MinHeight" value="-10" />
 								<Property name="MaxHeight" value="1028" />
 								<Property name="RelativeToSeaLevel" value="True" />
-								<Property name="MinAngle" value="15" />
+								<Property name="MinAngle" value="55" />
 								<Property name="MaxAngle" value="350" />
 								<Property name="MatchGroundColour" value="False" />
 								<Property name="GroundColourIndex" value="Auto" />
@@ -4884,7 +4889,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="FLORACLUMP" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -5051,7 +5056,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="FLORACLUMP" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -5202,7 +5207,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="GRASS" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -5353,7 +5358,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="FLORACLUMP" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -5364,8 +5369,8 @@ function generateMountainBiomes
 								<Property name="MinHeight" value="10" />
 								<Property name="MaxHeight" value="1028" />
 								<Property name="RelativeToSeaLevel" value="True" />
-								<Property name="MinAngle" value="15" />
-								<Property name="MaxAngle" value="35" />
+								<Property name="MinAngle" value="51" />
+								<Property name="MaxAngle" value="223" />
 								<Property name="MatchGroundColour" value="False" />
 								<Property name="GroundColourIndex" value="Auto" />
 								<Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -5504,7 +5509,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="GRASS" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -5655,7 +5660,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="FLORACLUMP" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -5790,7 +5795,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="GRASS" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -5941,7 +5946,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="FLORACLUMP" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -6055,7 +6060,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="GRASS" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -6169,7 +6174,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="GRASS" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -6283,7 +6288,7 @@ function generateMountainBiomes
 								</Property>
 								<Property name="AltResources" />
 								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="FLORACLUMP" />
+								<Property name="Placement" value="FOREST" />
 								<Property name="Seed" value="GcSeed.xml">
 								<Property name="Seed" value="0" />
 								<Property name="UseSeedValue" value="False" />
@@ -6394,10 +6399,9 @@ function generateCaveBiomes
 	(
 		GENERATED_BIOME_PATH,
 		PROPS_TYPE,
-		PROPS_PATH,		
-		PROPS_ROTATION,
-		PROPS_SIZEMAX		
+		PROPS_PATH
 	)
+
 	GENERATED_BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -6440,7 +6444,7 @@ function generateCaveBiomes
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="CAVEGRASSCLUMP" />
+        <Property name="Placement" value="FOREST" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -6451,8 +6455,8 @@ function generateCaveBiomes
         <Property name="MinHeight" value="-128" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="10" />
+        <Property name="MinAngle" value="60" />
+        <Property name="MaxAngle" value="120" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -6524,8 +6528,8 @@ function generateCaveBiomes
         <Property name="MinHeight" value="-128" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="1" />
-        <Property name="MaxAngle" value="2" />
+        <Property name="MinAngle" value="61" />
+        <Property name="MaxAngle" value="222" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -6599,7 +6603,7 @@ function generateCaveBiomes
         <Property name="MinHeight" value="-128" />
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
-        <Property name="MinAngle" value="0" />
+        <Property name="MinAngle" value="60" />
         <Property name="MaxAngle" value="155" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
@@ -6692,7 +6696,7 @@ function generateCaveBiomes
         <Property name="MaxHeight" value="128" />
         <Property name="RelativeToSeaLevel" value="True" />
         <Property name="MinAngle" value="0" />
-        <Property name="MaxAngle" value="55" />
+        <Property name="MaxAngle" value="5" />
         <Property name="MatchGroundColour" value="False" />
         <Property name="GroundColourIndex" value="Auto" />
         <Property name="SwapPrimaryForSecondaryColour" value="False" />
@@ -7499,6 +7503,8 @@ if TRANSPARENT_OPTIONS_MENU == "ON" then
 	}
 table.insert(CUSTOM_CONTENT, TRANSPARENT_OPTIONS_CONTENT)
 end
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------
 -- END REDMAS GAME OVERHAUL BUILDER  -----------------------------------------------------------------------------------------------------
