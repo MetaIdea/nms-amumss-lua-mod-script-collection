@@ -12186,32 +12186,50 @@ then
 				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGEFULL.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "14"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "14"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE3.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
 			},
 
 			{

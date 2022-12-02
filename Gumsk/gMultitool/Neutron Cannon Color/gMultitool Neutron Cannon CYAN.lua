@@ -8,19 +8,28 @@ ModName 		= "gMultitool Neutron Cannon"
 ModNameSub		= ColorName
 BaseDescription = "Changes the neutron cannon projectile and impact colors to "..ColorName
 GameVersion 	= "407"
-ModVersion		= "a"
+ModVersion		= "b"
 
-FileSource1 	= "MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON.SCENE.MBIN"
-FileSource2 	= "MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON/PROJECTILEMESHMAT.MATERIAL.MBIN"
-FileSource3 	= "MODELS/COMMON/PROJECTILES/BLASTOVERLOADPROJECTILE/SPARKS.PARTICLE.MBIN"
-FileSource4		= "MODELS/EFFECTS/MUZZLE/BLASTOVERLOADCHARGE/MUZZLEMAIN.PARTICLE.MBIN"
-FileSource5		= "MODELS/EFFECTS/MUZZLE/BLASTOVERLOADCHARGE/GLOW.PARTICLE.MBIN"
-FileSource6		= "MODELS/EFFECTS/MUZZLE/BLASTOVERLOADCHARGE/FLARE.PARTICLE.MBIN"
-FileSource7		= "MODELS/EFFECTS/MUZZLE/BLASTOVERLOADFULLCHARGE/MUZZLEMAIN.PARTICLE.MBIN"
-FileSource8		= "MODELS/EFFECTS/MUZZLE/BLASTOVERLOADFULLCHARGE/GLOW.PARTICLE.MBIN"
-FileSource9		= "MODELS/EFFECTS/MUZZLE/BLASTOVERLOADFULLCHARGE/FLARE.PARTICLE.MBIN"
-FileSource10	= "MODELS/EFFECTS/IMPACTS/BLASTOVERLOADIMPACT/ENERGYEXPLOSION.PARTICLE.MBIN"
-FileSource11	= "MODELS/EFFECTS/IMPACTS/BLASTOVERLOADIMPACT/SPARKS.PARTICLE.MBIN"
+--[[Files Modified
+MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON.SCENE.MBIN
+MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON/PROJECTILEMESHMAT.MATERIAL.MBIN
+MODELS/COMMON/PROJECTILES/BLASTOVERLOADPROJECTILE/SPARKS.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADCHARGE/MUZZLEMAIN.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADCHARGE/GLOW.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADCHARGE/FLARE.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADFULLCHARGE/MUZZLEMAIN.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADFULLCHARGE/GLOW.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADFULLCHARGE/FLARE.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/DISTORTIONPULSE.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/EMITTER_7.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/FLARE.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/GLOW.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/MUZZLEMAIN.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/SPARKS.PARTICLE.MBIN
+MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/SMOKE.PARTICLE.MBIN
+MODELS/EFFECTS/IMPACTS/BLASTOVERLOADIMPACT/ENERGYEXPLOSION.PARTICLE.MBIN
+MODELS/EFFECTS/IMPACTS/BLASTOVERLOADIMPACT/SPARKS.PARTICLE.MBIN
+--]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]			= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -32,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			["MBIN_CHANGE_TABLE"] = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource1,
+					["MBIN_FILE_SOURCE"] = "MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] = {
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","COL_R"},
@@ -55,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"] = FileSource2,
+					["MBIN_FILE_SOURCE"] = "MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON/PROJECTILEMESHMAT.MATERIAL.MBIN",
 					["EXML_CHANGE_TABLE"] = {
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","gMaterialColourVec4"},
@@ -68,262 +77,43 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"] = FileSource3,
+					["MBIN_FILE_SOURCE"] = {
+						"MODELS/COMMON/PROJECTILES/BLASTOVERLOADPROJECTILE/SPARKS.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADCHARGE/MUZZLEMAIN.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADCHARGE/GLOW.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADCHARGE/FLARE.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADFULLCHARGE/MUZZLEMAIN.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADFULLCHARGE/GLOW.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADFULLCHARGE/FLARE.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/DISTORTIONPULSE.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/EMITTER_7.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/FLARE.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/GLOW.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/MUZZLEMAIN.PARTICLE.MBIN",
+						"MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/SPARKS.PARTICLE.MBIN",
+						"MODELS/EFFECTS/IMPACTS/BLASTOVERLOADIMPACT/ENERGYEXPLOSION.PARTICLE.MBIN",
+						"MODELS/EFFECTS/IMPACTS/BLASTOVERLOADIMPACT/SPARKS.PARTICLE.MBIN",
+					},
 					["EXML_CHANGE_TABLE"] = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = {
-								{"R", 1},					--1.87
-								{"G", 1},					--1.704
-								{"B", 1},					--2
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--1.397
-								{"G", GreenAmount},		--1.178
-								{"B", BlueAmount},		--2
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.736
-								{"G", GreenAmount},			--0.267
-								{"B", BlueAmount},			--1
+								{"R", RedAmount},
+								{"G", GreenAmount},
+								{"B", BlueAmount},
 							},
 						},
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"] = FileSource4,
+					["MBIN_FILE_SOURCE"] = "MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/SMOKE.PARTICLE.MBIN",
 					["EXML_CHANGE_TABLE"] = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--1.442
-								{"G", GreenAmount},		--0.731
-								{"B", BlueAmount},		--2
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--1.282
-								{"G", GreenAmount},		--0.804
-								{"B", BlueAmount},		--2
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.678
-								{"G", GreenAmount},			--0.107
-								{"B", BlueAmount},			--1
-							},
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = FileSource5,
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.698
-								{"G", GreenAmount},			--0.589
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.698
-								{"G", GreenAmount},			--0.589
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.698
-								{"G", GreenAmount},			--0.589
-								{"B", BlueAmount},			--1
-							},
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = FileSource6,
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.736
-								{"G", GreenAmount},			--0.267
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.736
-								{"G", GreenAmount},			--0.267
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.736
-								{"G", GreenAmount},			--0.267
-								{"B", BlueAmount},			--1
-							},
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = FileSource7,
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--1.442
-								{"G", GreenAmount},		--0.731
-								{"B", BlueAmount},		--2
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--1.282
-								{"G", GreenAmount},		--0.804
-								{"B", BlueAmount},		--2
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.678
-								{"G", GreenAmount},			--0.107
-								{"B", BlueAmount},			--1
-							},
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = FileSource8,
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.698
-								{"G", GreenAmount},			--0.589
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.698
-								{"G", GreenAmount},			--0.589
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.698
-								{"G", GreenAmount},			--0.589
-								{"B", BlueAmount},			--1
-							},
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = FileSource9,
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.736
-								{"G", GreenAmount},			--0.267
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.736
-								{"G", GreenAmount},			--0.267
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.736
-								{"G", GreenAmount},			--0.267
-								{"B", BlueAmount},			--1
-							},
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = FileSource10,
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--2.758
-								{"G", GreenAmount},			--2.13
-								{"B", BlueAmount},			--3
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.02
-								{"G", GreenAmount},			--0.017
-								{"B", BlueAmount},			--0.029
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.033
-								{"G", GreenAmount},			--0.013
-								{"B", BlueAmount},			--0.044
-							},
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = FileSource11,
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--4.177
-								{"G", GreenAmount},			--3.13
-								{"B", BlueAmount},			--5
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--2.021
-								{"G", GreenAmount},			--1.323
-								{"B", BlueAmount},			--3
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0.736
-								{"G", GreenAmount},			--0.267
-								{"B", BlueAmount},			--1
+								{"R", 1},
+								{"G", 1},
+								{"B", 1},
 							},
 						},
 					},
