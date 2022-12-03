@@ -2050,148 +2050,148 @@ local function BiomesOneTwoThreeModifierUnderwaterCave(DensityCustom1, DensityCu
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- f. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
-						-- --BLANKETCLUMP -> SPARSECLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BLANKETCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"SPARSECLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BLANKETCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"SPARSECLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BLANKETCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"SPARSECLUMP" }
-							-- }
-						-- },
-						-- --FOREST -> FLORACLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "FOREST",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "FOREST",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "FOREST",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- --ROCKCLUMP -> FLORACLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "ROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "ROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "ROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
+						--BLANKETCLUMP -> SPARSECLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BLANKETCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BLANKETCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BLANKETCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						--FOREST -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "FOREST",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "FOREST",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "FOREST",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						--ROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "ROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 						
-						-- --GRASSCLUMP -> FLORACLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "GRASSCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "GRASSCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "GRASSCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
+						--GRASSCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "GRASSCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 						
-						-- --BARRENROCKCLUMP -> FLORACLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
+						--BARRENROCKCLUMP -> FLORACLUMP
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
+							["REPLACE_TYPE"] 		= "ALL", 
+							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{						
+								{ "Placement",	"FLORACLUMP" }
+							}
+						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
 -- g. CHANGE OBJECTS TO LANDMARKS --------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2645,7 +2645,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_High_v2.3.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_High_v2.3c.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper (aka Lasagna) - with InsaneRuffles code & unused Shaidak's Generation code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -3965,9 +3965,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPROP\LARGEPROP.SCENE.MBIN", 60, 3, 12, 10, 0.18, 0.05)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GASBAGS.SCENE.MBIN", 60, 1, 10, 10, 0.18, 0.02)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPROP\MEDIUMLUMPS.SCENE.MBIN", 60, 5, 30, 10, 0.18, 0.02),
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GASBAGS.SCENE.MBIN", 30, 1, 10, 10, 0.18, 0.02)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LAMPSHAPE.SCENE.MBIN", 30, 3, 17, 10, 0.18, 0.02),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -4148,10 +4147,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] 	= 
 					{
 						"CUSTOMBIOMES\GHOSTLYCAVEBIOMEFULL.MBIN",
-						"CUSTOMBIOMES\GHOSTLYUNDERWATERFULL.MBIN",
-						"CUSTOMBIOMES\GHOSTLYUNDERWATERMID.MBIN",
+						"CUSTOMBIOMES\GHOSTLYUNDERWATERMONOLITHS.MBIN",
+						"CUSTOMBIOMES\GHOSTLYUNDERWATERCRYSTALS.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierUnderwaterCave(ScaleHugeMultiplierSmall, DensityMediumMultiplierSmall, DensityLowestMultiplierSmall, DensityMedLowMultiplierSmall),
+					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierUnderwaterCave(ScaleHugeMultiplierBig, DensityMediumMultiplierSmall, DensityLowestMultiplierSmall, DensityMedLowMultiplierSmall)
 				},
 				
 						
