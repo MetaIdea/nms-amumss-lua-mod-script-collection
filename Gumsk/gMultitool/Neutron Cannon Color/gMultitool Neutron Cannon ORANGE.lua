@@ -8,7 +8,7 @@ ModName 		= "gMultitool Neutron Cannon"
 ModNameSub		= ColorName
 BaseDescription = "Changes the neutron cannon projectile and impact colors to "..ColorName
 GameVersion 	= "407"
-ModVersion		= "b"
+ModVersion		= "c"
 
 --[[Files Modified
 MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON.SCENE.MBIN
@@ -29,6 +29,7 @@ MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/SPARKS.PARTICLE.MBIN
 MODELS/EFFECTS/MUZZLE/BLASTOVERLOADMUZZLE/SMOKE.PARTICLE.MBIN
 MODELS/EFFECTS/IMPACTS/BLASTOVERLOADIMPACT/ENERGYEXPLOSION.PARTICLE.MBIN
 MODELS/EFFECTS/IMPACTS/BLASTOVERLOADIMPACT/SPARKS.PARTICLE.MBIN
+METADATA/REALITY/TABLES/PLAYERWEAPONPROPERTIESTABLE.MBIN
 --]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -41,7 +42,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			["MBIN_CHANGE_TABLE"] = {
 				{
-					["MBIN_FILE_SOURCE"] = "MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON.SCENE.MBIN",
+					["MBIN_FILE_SOURCE"] = {
+						"MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON.SCENE.MBIN",
+						"MODELS/COMMON/WEAPONS/MULTITOOL/GUNMUZZLEFLASH.SCENE.MBIN"
+					},
 					["EXML_CHANGE_TABLE"] = {
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","COL_R"},
@@ -114,6 +118,20 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"R", 1},
 								{"G", 1},
 								{"B", 1},
+							},
+						},
+					},
+				},
+				
+				{
+					["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/PLAYERWEAPONPROPERTIESTABLE.MBIN",
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["SPECIAL_KEY_WORDS"] = {"Cannon","GcPlayerWeaponPropertiesData.xml","DefaultMuzzleLightColour","Colour.xml"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"R", RedAmount},
+								{"G", GreenAmount},
+								{"B", BlueAmount},
 							},
 						},
 					},
