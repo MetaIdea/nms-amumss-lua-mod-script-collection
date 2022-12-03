@@ -778,10 +778,10 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -794,10 +794,10 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -810,10 +810,10 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -1670,10 +1670,10 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -1686,10 +1686,10 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -1702,10 +1702,10 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -2174,10 +2174,10 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -2190,10 +2190,10 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -2206,10 +2206,10 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -2677,10 +2677,10 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -2693,10 +2693,10 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -2709,10 +2709,10 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -2910,7 +2910,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v4.4.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v4.4b.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -3418,10 +3418,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -3434,10 +3434,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -3450,10 +3450,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -3471,7 +3471,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								-- {"MaxImposterRadius",		GRASS_RadiusMultiplier},
 								-- {"FadeOutStartDistance",	    GRASS_RadiusMultiplier},
 								-- {"FadeOutEndDistance",		GRASS_RadiusMultiplier},
-								{"MaxAngle",				MaxAngleDetailObjects},
+								--{"MaxAngle",				MaxAngleDetailObjects},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
 						},
@@ -3996,10 +3996,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -4012,10 +4012,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -4028,10 +4028,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -4508,10 +4508,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -4524,10 +4524,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
@@ -4540,10 +4540,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
 								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
+								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
+								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
+								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
+								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
 								{"MaxAngle",				MaxAngleGrass},
 								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
 							}
