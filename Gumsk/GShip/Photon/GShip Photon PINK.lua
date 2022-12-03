@@ -8,13 +8,14 @@ ModName			= "gShip Photon"
 ModNameSub		= Color
 BaseDescription	= "Changes color of photon cannon to "..Color
 GameVersion		= "407"
-ModVersion		= "a"
+ModVersion		= "b"
 
 --[[Files Modified
+GCSPACESHIPGLOBALS.GLOBAL.MBIN
 MODELS\EFFECTS\WEAPONS\SHIPS\SHIPBULLET_BLUE.MATERIAL.MBIN
 MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\GLOW_EMITTER.PARTICLE.MBIN
-MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\SMOKE_EMITTER.PARTICLE.MBIN
 MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\SPARKS_EMITTER.PARTICLE.MBIN
+MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\SMOKE_EMITTER.PARTICLE.MBIN
 --]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -33,6 +34,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			["MBIN_CHANGE_TABLE"] = {
 				{
+					["MBIN_FILE_SOURCE"] = {"GCSPACESHIPGLOBALS.GLOBAL.MBIN"},
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["VALUE_CHANGE_TABLE"] = {
+								{"MuzzleLightIntensity", 15},			--9
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"MuzzleLightColour","Colour.xml"},
+							["VALUE_CHANGE_TABLE"] = {
+								{"R", RedAmount},			--0.169
+								{"G", GreenAmount},			--0.668
+								{"B", BlueAmount},			--1
+							},
+						},
+					},
+				},
+				{
 					["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\WEAPONS\SHIPS\SHIPBULLET_BLUE.MATERIAL.MBIN"},
 					["EXML_CHANGE_TABLE"] = {
 						{
@@ -44,30 +63,17 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					},
 				},
 				{
-					["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\GLOW_EMITTER.PARTICLE.MBIN"},
+					["MBIN_FILE_SOURCE"] = {
+						"MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\GLOW_EMITTER.PARTICLE.MBIN",
+						"MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\SPARKS_EMITTER.PARTICLE.MBIN"
+					},
 					["EXML_CHANGE_TABLE"] = {
 						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] = {
 								{"R", RedAmount},			--2.03
 								{"G", GreenAmount},			--4.358
 								{"B", BlueAmount},			--5
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0
-								{"G", GreenAmount},			--0.736
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0
-								{"G", GreenAmount},			--0.547
-								{"B", BlueAmount},			--1
 							},
 						},
 					},
@@ -89,35 +95,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"R", 1},					--0.854
 								{"G", 1},					--0.918
 								{"B", 1},					--1
-							},
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\PROJECTILES\SHIPGUN\SHIPGUN\EMITTERS\SPARKS_EMITTER.PARTICLE.MBIN"},
-					["EXML_CHANGE_TABLE"] = {
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourStart","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--3.938
-								{"G", GreenAmount},			--4.731
-								{"B", BlueAmount},			--5
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourMiddle","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--1.313
-								{"G", GreenAmount},			--4.066
-								{"B", BlueAmount},			--1
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ColourEnd","Colour.xml"},
-							["VALUE_CHANGE_TABLE"] = {
-								{"R", RedAmount},			--0
-								{"G", GreenAmount},			--0.507
-								{"B", BlueAmount},			--1
 							},
 						},
 					},
