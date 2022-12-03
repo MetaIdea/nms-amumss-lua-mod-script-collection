@@ -21694,13 +21694,13 @@ end
 							{
 								{"TransX", "0"},
 								{"TransY", "-0.51"},
-								{"TransZ", "0.8"},
+								{"TransZ", "-0.5"},
 								{"RotX", "0"},
 								{"RotY", "0"},
 								{"RotZ", "0"},
 								{"ScaleX", "1"},
-								{"ScaleY", "2"},
-								{"ScaleZ", "1.5"}
+								{"ScaleY", "1.5"},
+								{"ScaleZ", "1"}
 							}
 						},
 						{
@@ -21708,15 +21708,15 @@ end
 							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD1"},
 							["VALUE_CHANGE_TABLE"] =
 							{
-						{"TransX", "0"},
+								{"TransX", "0"},
 								{"TransY", "-0.51"},
-								{"TransZ", "0.8"},
+								{"TransZ", "-0.5"},
 								{"RotX", "0"},
 								{"RotY", "0"},
 								{"RotZ", "0"},
 								{"ScaleX", "1"},
-								{"ScaleY", "2"},
-								{"ScaleZ", "1.5"}
+								{"ScaleY", "1.5"},
+								{"ScaleZ", "1"}
 							}
 						},
 						{
@@ -21724,15 +21724,15 @@ end
 							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD2"},
 							["VALUE_CHANGE_TABLE"] =
 							{
-						{"TransX", "0"},
+								{"TransX", "0"},
 								{"TransY", "-0.51"},
-								{"TransZ", "0.8"},
+								{"TransZ", "-0.5"},
 								{"RotX", "0"},
 								{"RotY", "0"},
 								{"RotZ", "0"},
 								{"ScaleX", "1"},
-								{"ScaleY", "2"},
-								{"ScaleZ", "1.5"}
+								{"ScaleY", "1.5"},
+								{"ScaleZ", "1"}
 							}
 						},
 						{
@@ -21740,15 +21740,15 @@ end
 							["SPECIAL_KEY_WORDS"] = {"Name","AccALOD3"},
 							["VALUE_CHANGE_TABLE"] =
 							{
-						{"TransX", "0"},
+								{"TransX", "0"},
 								{"TransY", "-0.51"},
-								{"TransZ", "0.8"},
+								{"TransZ", "-0.5"},
 								{"RotX", "0"},
 								{"RotY", "0"},
 								{"RotZ", "0"},
 								{"ScaleX", "1"},
-								{"ScaleY", "2"},
-								{"ScaleZ", "1.5"}
+								{"ScaleY", "1.5"},
+								{"ScaleZ", "1"}
 							}
 						},
 					}

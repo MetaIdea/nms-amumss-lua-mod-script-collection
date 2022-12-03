@@ -2707,7 +2707,7 @@
 				<Property value="TkSceneNodeAttributeData.xml">
 				  <Property name="Name" value="SCENEGRAPH" />
 				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				 <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
 				</Property>
 			  </Property>
 			  <Property name="Children" />
@@ -4691,7 +4691,7 @@
 				<Property value="TkSceneNodeAttributeData.xml">
 				  <Property name="Name" value="SCENEGRAPH" />
 				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				  <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
 				</Property>
 			  </Property>
 			  <Property name="Children" />
@@ -6671,7 +6671,7 @@
 				<Property value="TkSceneNodeAttributeData.xml">
 				  <Property name="Name" value="SCENEGRAPH" />
 				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				 <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
 				</Property>
 			  </Property>
 			  <Property name="Children" />
@@ -8655,7 +8655,7 @@
 				<Property value="TkSceneNodeAttributeData.xml">
 				  <Property name="Name" value="SCENEGRAPH" />
 				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				 <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
 				</Property>
 			  </Property>
 			  <Property name="Children" />
@@ -10592,7 +10592,7 @@
 				<Property value="TkSceneNodeAttributeData.xml">
 				  <Property name="Name" value="SCENEGRAPH" />
 				  <Property name="AltID" value="" />
-				  <Property name="Value" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\ENGINE\ENGINE_B\ENGINEB.SCENE.MBIN" />
+				 <Property name="Value" value="MODELS\RGO\ENGINEC.SCENE.MBIN" />
 				</Property>
 			  </Property>
 			  <Property name="Children" />
