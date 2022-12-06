@@ -10299,7 +10299,7 @@ NewSandColorsv2 = [[
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_AllBiomeGroundFloraRingColors_v1.03.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_AllBiomeGroundFloraRingColors_v1.1.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             
@@ -10428,17 +10428,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "",
 							["REMOVE"] = "SECTION",
 						},
-						--Commented out, too cartoony
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = { "RockDark", },
-							-- ["ADD_OPTION"] 	= "ADDafterSECTION",
-							-- ["ADD"] = NewRockDarkColors,
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = { "RockDark", },
-							-- ["REPLACE_TYPE"] 	= "",
-							-- ["REMOVE"] = "SECTION",
-						-- },
+						--v1.1: added back in to improve custom models spawn rate
+						{
+							["PRECEDING_KEY_WORDS"] = { "RockDark", },
+							["ADD_OPTION"] 	= "ADDafterSECTION",
+							["ADD"] = NewRockDarkColors,
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = { "RockDark", },
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = { "RockLight", },
 							["ADD_OPTION"] 	= "ADDafterSECTION",
@@ -10606,17 +10606,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "",
 							["REMOVE"] = "SECTION",
 						},
-						--Commented out, too cartoony
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = { "RockDark", },
-							-- ["ADD_OPTION"] 	= "ADDafterSECTION",
-							-- ["ADD"] = NewRockDarkColors,
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = { "RockDark", },
-							-- ["REPLACE_TYPE"] 	= "",
-							-- ["REMOVE"] = "SECTION",
-						-- },
+						--v1.1: added back in to improve custom models spawn rate
+						{
+							["PRECEDING_KEY_WORDS"] = { "RockDark", },
+							["ADD_OPTION"] 	= "ADDafterSECTION",
+							["ADD"] = NewRockDarkColors,
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = { "RockDark", },
+							["REPLACE_TYPE"] 	= "",
+							["REMOVE"] = "SECTION",
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = { "RockLight", },
 							["ADD_OPTION"] 	= "ADDafterSECTION",
