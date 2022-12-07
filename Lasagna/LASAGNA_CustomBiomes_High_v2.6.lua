@@ -36,7 +36,7 @@ ReplaceWithLandmarksRaw =
 ]]
 
 --This adds basic collisions to pre-release models:
-AddBasicCollisions =
+AddBasicCollisions = --scale y&z flipped compared to blender (v2.6: 0.24 from 0.189618)
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="CHILD1" />
@@ -49,9 +49,9 @@ AddBasicCollisions =
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
         <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="0.189618" />
+        <Property name="ScaleX" value="0.24" />
         <Property name="ScaleY" value="4.113077" />
-        <Property name="ScaleZ" value="0.189618" />
+        <Property name="ScaleZ" value="0.24" />
       </Property>
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
@@ -118,9 +118,9 @@ AddConstruct01Collisions =
         <Property name="RotX" value="0" />
         <Property name="RotY" value="0" />
         <Property name="RotZ" value="0" />
-        <Property name="ScaleX" value="17.3299" />
+        <Property name="ScaleX" value="18" />
         <Property name="ScaleY" value="53.1329" />
-        <Property name="ScaleZ" value="8.98463" />
+        <Property name="ScaleZ" value="9.2" />
       </Property>
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
@@ -403,9 +403,9 @@ AddLargeFir01Collisions =
         <Property name="RotX" value="0" />
         <Property name="RotY" value="-0.000002" />
         <Property name="RotZ" value="8.91439" />
-        <Property name="ScaleX" value="1.0" />
+        <Property name="ScaleX" value="1.2" />
         <Property name="ScaleY" value="18.7235" />
-        <Property name="ScaleZ" value="1.0" />
+        <Property name="ScaleZ" value="1.2" />
       </Property>
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
@@ -541,9 +541,9 @@ AddGiantCubeCollisions =
         <Property name="RotX" value="35.2645" />
         <Property name="RotY" value="-0.547245" />
         <Property name="RotZ" value="-22.8467" />
-        <Property name="ScaleX" value="17.7886" />
-        <Property name="ScaleY" value="17.7886" />
-        <Property name="ScaleZ" value="17.7886" />
+        <Property name="ScaleX" value="18" />
+        <Property name="ScaleY" value="18" />
+        <Property name="ScaleZ" value="18" />
       </Property>
       <Property name="Attributes">
         <Property value="TkSceneNodeAttributeData.xml">
@@ -1116,9 +1116,9 @@ AddSmallTree3Collisions =
             <Property name="RotX" value="0" />
             <Property name="RotY" value="0" />
             <Property name="RotZ" value="0" />
-            <Property name="ScaleX" value="1.20692" />
+            <Property name="ScaleX" value="1.4" />
             <Property name="ScaleY" value="5.32182" />
-            <Property name="ScaleZ" value="1.20692" />
+            <Property name="ScaleZ" value="1.4" />
           </Property>
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
@@ -1129,7 +1129,7 @@ AddSmallTree3Collisions =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="WIDTH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.20692" />
+              <Property name="Value" value="1.4" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HEIGHT" />
@@ -1139,7 +1139,7 @@ AddSmallTree3Collisions =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DEPTH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.20692" />
+              <Property name="Value" value="1.4" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -1155,9 +1155,9 @@ AddSmallTree3Collisions =
             <Property name="RotX" value="0" />
             <Property name="RotY" value="0" />
             <Property name="RotZ" value="0" />
-            <Property name="ScaleX" value="1.75706" />
+            <Property name="ScaleX" value="1.8" />
             <Property name="ScaleY" value="5.97841" />
-            <Property name="ScaleZ" value="1.75706" />
+            <Property name="ScaleZ" value="1.8" />
           </Property>
           <Property name="Attributes">
             <Property value="TkSceneNodeAttributeData.xml">
@@ -1168,7 +1168,7 @@ AddSmallTree3Collisions =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="WIDTH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.75706" />
+              <Property name="Value" value="1.8" />
             </Property>
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="HEIGHT" />
@@ -1178,7 +1178,7 @@ AddSmallTree3Collisions =
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="DEPTH" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="1.75706" />
+              <Property name="Value" value="1.8" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -3824,7 +3824,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_High_v2.5.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_High_v2.6.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper (aka Lasagna) - with InsaneRuffles code & unused Shaidak's Generation code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -5553,6 +5553,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\STRAIGHTTREELARGE.SCENE.MBIN", 10, 3, 14, 10, 0.18, 0.03)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 20, 2, 4, 10, 0.18, 0.07),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddTallSparseGrass(),
+						},
+					},
+				},
+				--Custom biome 56
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"CUSTOMBIOMES\GHOSTLY56.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE.SCENE.MBIN", 30, 3, 30, 20, 0.18, 0.009)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM.SCENE.MBIN", 30, 2, 9, 20, 0.18, 0.01)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\LARGE\CRYSTAL_LARGE_MOUNTAIN.SCENE.MBIN", 30, 4, 40, 20, 0.18, 0.008)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_MOUNTAIN.SCENE.MBIN", 30, 2, 9, 20, 0.18, 0.011)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\CRYSTALS\MEDIUM\CRYSTAL_MEDIUM_CAVE.SCENE.MBIN", 30, 3, 15, 20, 0.18, 0.01),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
