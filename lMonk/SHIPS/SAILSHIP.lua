@@ -58,7 +58,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__SHIP sailship various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
@@ -80,17 +80,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			},
 			-- delete sails
 			-- {
-				-- SPECIAL_KEY_WORDS	= {'Name', '_Sails_A'},
-				-- REMOVE				= 'Section',
-			-- },
-			-- {
-				-- SPECIAL_KEY_WORDS 	= {'Name', '_Sails_B'},
-				-- REMOVE				= 'Section',
-			-- },
-			-- {
-				-- SPECIAL_KEY_WORDS 	= {'Name', '_Sails_C'},
-				-- REMOVE				= 'Section',
-			-- },
+				-- FOREACH_SKW_GROUP 	= {
+					-- {'Name', '_Sails_A'},
+					-- {'Name', '_Sails_B'},
+					-- {'Name', '_Sails_C'}
+				-- },
+				-- REMOVE = 'Section',
+			-- }
 		}
 	},
 	-- {

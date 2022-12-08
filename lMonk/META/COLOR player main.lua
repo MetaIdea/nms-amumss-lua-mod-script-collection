@@ -2,6 +2,7 @@
 local desc = [[
   true for ships & black in customizing palettes
   procedural royal ship palette
+  math.floor(X / 255 * 1000) / 1000 == X * 0.00392
 ]]----------------------------------------------------------
 
 local base_colors = {
@@ -142,24 +143,157 @@ local base_colors = {
 		{0.56,	0.333,	0.424},
 		{0.667,	0.667,	0.667},
 		{-1,	-1,		-1},	-- real black
-	}
+	},
+	bioship_body = {
+		enabled		= true,
+		name		= 'BioShip_Body',
+		num_colors	= '_16',
+		{1,		1,		1},
+		{1,		1,		1},
+		{0.45,	0.45,	0.45},
+		{0.45,	0.45,	0.45},
+		{-1,	-1,		-1},
+		{-1,	-1,		-1},
+		{0.114,	0.071,	0.051},
+		{0.114,	0.071,	0.051},
+		{1,		1,		1},
+		{1,		1,		1},
+		{0.45,	0.45,	0.45},
+		{0.45,	0.45,	0.45},
+		{-1,	-1,		-1},
+		{-1,	-1,		-1},
+		{0.114,	0.071,	0.051},
+		{0.114,	0.071,	0.051},
+		{0.388,	0,		0.02},
+		{0.388,	0,		0.02},
+		{0.678,	0.259,	0.106},
+		{0.678,	0.259,	0.106},
+		{0.757,	0.412,	0.067},
+		{0.757,	0.412,	0.067},
+		{0.855,	0.682,	0.012},
+		{0.855,	0.682,	0.012},
+		{0.388,	0,		0.02},
+		{0.388,	0,		0.02},
+		{0.678,	0.259,	0.106},
+		{0.678,	0.259,	0.106},
+		{0.757,	0.412,	0.067},
+		{0.757,	0.412,	0.067},
+		{0.855,	0.682,	0.012},
+		{0.855,	0.682,	0.012},
+		{0.949,	0.91,	0.106},
+		{0.949,	0.91,	0.106},
+		{0.431,	0.71,	0.153},
+		{0.431,	0.71,	0.153},
+		{0.035,	0.298,	0.145},
+		{0.035,	0.298,	0.145},
+		{0.075,	0.565,	0.6},
+		{0.075,	0.565,	0.6},
+		{0.949,	0.91,	0.106},
+		{0.949,	0.91,	0.106},
+		{0.431,	0.71,	0.153},
+		{0.431,	0.71,	0.153},
+		{0.035,	0.298,	0.145},
+		{0.035,	0.298,	0.145},
+		{0.075,	0.565,	0.6},
+		{0.075,	0.565,	0.6},
+		{0.169,	0.463,	0.757},
+		{0.169,	0.463,	0.757},
+		{0.043,	0.125,	0.447},
+		{0.043,	0.125,	0.447},
+		{0.239,	0.043,	0.357},
+		{0.239,	0.043,	0.357},
+		{0.494,	0.227,	0.447},
+		{0.494,	0.227,	0.447},
+		{0.169,	0.463,	0.757},
+		{0.169,	0.463,	0.757},
+		{0.043,	0.125,	0.447},
+		{0.043,	0.125,	0.447},
+		{0.239,	0.043,	0.357},
+		{0.239,	0.043,	0.357},
+		{0.494,	0.227,	0.447},
+		{0.494,	0.227,	0.447},
+	},
+	bioship_skin = {
+		enabled		= true,
+		name		= 'BioShip_Underbelly',
+		num_colors	= '_16',
+		{1,		1,		1},
+		{1,		1,		1},
+		{0.999,	0.999,	0.999},
+		{0.999,	0.999,	0.999},
+		{0.753,	0.647,	0.561},
+		{0.753,	0.647,	0.561},
+		{0.655,	0.533,	0.431},
+		{0.655,	0.533,	0.431},
+		{1,		1,		1},
+		{1,		1,		1},
+		{0.999,	0.999,	0.999},
+		{0.999,	0.999,	0.999},
+		{0.753,	0.647,	0.561},
+		{0.753,	0.647,	0.561},
+		{0.655,	0.533,	0.431},
+		{0.655,	0.533,	0.431},
+		{0.855,	0.514,	0.49},
+		{0.855,	0.514,	0.49},
+		{0.965,	0.663,	0.502},
+		{0.965,	0.663,	0.502},
+		{0.996,	0.808,	0.545},
+		{0.996,	0.808,	0.545},
+		{1,		0.925,	0.561},
+		{1,		0.925,	0.561},
+		{0.855,	0.514,	0.49},
+		{0.855,	0.514,	0.49},
+		{0.965,	0.663,	0.502},
+		{0.965,	0.663,	0.502},
+		{0.996,	0.808,	0.545},
+		{0.996,	0.808,	0.545},
+		{1,		0.925,	0.561},
+		{1,		0.925,	0.561},
+		{1,		1,		0.573},
+		{1,		1,		0.573},
+		{0.843,	0.965,	0.6},
+		{0.843,	0.965,	0.6},
+		{0.718,	0.937,	0.643},
+		{0.718,	0.937,	0.643},
+		{0.647,	0.929,	0.835},
+		{0.647,	0.929,	0.835},
+		{1,		1,		0.573},
+		{1,		1,		0.573},
+		{0.843,	0.965,	0.6},
+		{0.843,	0.965,	0.6},
+		{0.718,	0.937,	0.643},
+		{0.718,	0.937,	0.643},
+		{0.647,	0.929,	0.835},
+		{0.647,	0.929,	0.835},
+		{0.655,	0.886,	0.984},
+		{0.655,	0.886,	0.984},
+		{0.588,	0.725,	0.996},
+		{0.588,	0.725,	0.996},
+		{0.761,	0.678,	0.929},
+		{0.761,	0.678,	0.929},
+		{0.957,	0.808,	0.973},
+		{0.957,	0.808,	0.973},
+		{0.655,	0.886,	0.984},
+		{0.655,	0.886,	0.984},
+		{0.588,	0.725,	0.996},
+		{0.588,	0.725,	0.996},
+		{0.761,	0.678,	0.929},
+		{0.761,	0.678,	0.929},
+		{0.957,	0.808,	0.973},
+		{0.957,	0.808,	0.973},
+	},
 }
 
 local function RebuildPaletteColors(gc_data)
-	local function trunc(x, n)
-		return tonumber(string.format('%.'..n..'f', x))
-	end
 	local function hex2rgb(hex)
 		local n = {}
-		for i=1, hex:len()-1, 2 do
-			table.insert(n, trunc(tonumber(hex:sub(i, i+1), 16) / 255, 3))
+		for i=1, (hex:len()/2) do
+			table.insert(n, tonumber(hex:sub(i*2-1, i*2), 16) * 0.00392)
 		end
 		return n
 	end
 	local function asc2prc(as)
-		for i=1, #as do
-			as[i] = trunc(as[i] / 255, 3)
-		end
+		for i=1, #as do as[i] = as[i] * 0.00392 end
 		return as
 	end
 	local function Convert2Rgba(c)
@@ -170,34 +304,39 @@ local function RebuildPaletteColors(gc_data)
 		end
 		return c
 	end
-	local rgba = [[
-		<Property value="Colour.xml">
-			<Property name="R" value="%s"/>
-			<Property name="G" value="%s"/>
-			<Property name="B" value="%s"/>
-			<Property name="A" value="%s"/>
-		</Property>]]
 	local T = {}
 	for _,c in ipairs(gc_data) do
 		c = Convert2Rgba(c)
-		table.insert(T, string.format(rgba, c[1], c[2], c[3], c[4] or 1))
+		table.insert(T,
+			string.format([[
+				<Property value="Colour.xml">
+					<Property name="R" value="%s"/>
+					<Property name="G" value="%s"/>
+					<Property name="B" value="%s"/>
+					<Property name="A" value="%s"/>
+				</Property>]],
+				c[1], c[2], c[3], c[4] or 1
+			)
+		)
 	end
 	return '<Property name="Colours">'..table.concat(T)..'</Property>'
 end
 
 local function AddToChangeTable()
 	local T = {}
+	T[1] = {
+		FSKWG	= {},
+		PKW		= 'Colours',
+		REMOVE	= 'Section'
+	}
 	for _,gc_data in pairs(base_colors) do
 		if gc_data.enabled then
+			table.insert(T[1].FSKWG, {gc_data.name, 'GcPaletteData.xml'})
 			table.insert(T, {
 				PRECEDING_KEY_WORDS = gc_data.name,
 				VALUE_CHANGE_TABLE 	= {
 					{'NumColours',	gc_data.num_colors}
 				}
-			})
-			table.insert(T, {
-				PRECEDING_KEY_WORDS = {gc_data.name, 'Colours'},
-				REMOVE				= 'Section'
 			})
 			table.insert(T, {
 				PRECEDING_KEY_WORDS = gc_data.name,
@@ -209,7 +348,6 @@ local function AddToChangeTable()
 end
 
 local function EditSingle(name, i, rgba)
-	rgba = rgba or {0, 0, 0, 1}
 	return {
 		SPECIAL_KEY_WORDS	= {name, 'GcPaletteData.xml'},
 		PRECEDING_KEY_WORDS = 'Colour.xml',
@@ -226,35 +364,25 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META player main palettes.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SOLARSYSTEM/COLOURS/BASECOLOURPALETTES.MBIN',
+		EXML_CHANGE_TABLE	= (
+			function()
+				T = {}
+				for i=2, 58, 8 do table.insert(T, EditSingle('SailShip_Sails',	i, {0.36, 0.38, 0.42})) end
+				return T
+			end
+		)()
+	},
+	{
+		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SOLARSYSTEM/COLOURS/BASECOLOURPALETTES.MBIN',
 		EXML_CHANGE_TABLE	= AddToChangeTable()
 	},
-	-- {
-		-- MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SOLARSYSTEM/COLOURS/BASECOLOURPALETTES.MBIN',
-		-- EXML_CHANGE_TABLE	= {
-			-- [1] = EditSingle('Paint', 8, {-1, -1, -1}),
-			-- {
-				-- PRECEDING_KEY_WORDS = 'SpaceBottom',
-				-- VALUE_CHANGE_TABLE 	= {
-					-- {'NumColours',		'All'}
-				-- }
-			-- },
-			-- {
-				-- PRECEDING_KEY_WORDS = {'SpaceBottom', 'Colours'},
-				-- REMOVE				= 'Section'
-			-- },
-			-- {
-				-- PRECEDING_KEY_WORDS = 'SpaceBottom',
-				-- ADD 				= RebuildPaletteColors()
-			-- }
-		-- }
-	-- },
 	{
 		MBIN_FILE_SOURCE	= 'METADATA/GAMESTATE/PLAYERDATA/CUSTOMISATIONCOLOURPALETTES.MBIN',
 		EXML_CHANGE_TABLE	= {

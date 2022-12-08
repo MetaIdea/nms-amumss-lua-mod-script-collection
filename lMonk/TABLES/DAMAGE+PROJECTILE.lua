@@ -4,6 +4,7 @@ local desc = [[
 ]]-------------------------------------------------------
 
 local player_damage = {
+	-- {'IMPACTSHIP',		0.01},	-- 10
 	{'BASICDAMAGE',		2},		-- 1
 	{'LASERDAMAGE',		2},		-- 3
 	{'AISHIPGUN',		1.5},	-- 14
@@ -20,16 +21,26 @@ local player_damage = {
 	{'ROBOTBIGGUN',		1.5},	-- 6
 	{'WALKERLASER',		1.4},	-- 5
 	{'MINIDRONE_DMG',	1.5},	-- 6
-	{'MPGUN',			0.1},	-- 4
-	{'MPSHIPGUN',		0.1},	-- 25
-	{'MPSHIPSHOTGUN',	0.1},	-- 90
-	{'MPSHIPMINIGUN',	0.1},	-- 17.5
-	{'MPSHIPPLASMAGUN',	0.1},	-- 125
-	{'MPSHIPROCKET',	0.1},
+	{'MPGUN',			0.001},
+	{'MPSHIPGUN',		0.001},
+	{'MPSHIPSHOTGUN',	0.001},
+	{'MPSHIPMINIGUN',	0.001},
+	{'MPSHIPPLASMAGUN',	0.001},
+	{'MPSHIPROCKET',	0.001},
+	{'MPVEHICLE',		0.001},
+	{'MPGRENADE',		0.001},
+	{'MPVEHICLEGUN',	0.001},
+	{'MPPLAYER',		0.001},
+	{'MPPLAYER_SHIP',	0.001},
+	{'MPPLAYER_RAIL',	0.001},
+	{'MPPLAYER_SHOT',	0.001},
+	{'MPPLAYER_SMG',	0.001},
+	{'MPPLAYER_GUN',	0.001},
+	{'MPPLAYER_CANNON',	0.001},
 }
 function player_damage:Get(x)
 	return {
-		INTEGER_TO_FLOAT	= 'Preserve',
+		INTEGER_TO_FLOAT	= 'Force',
 		MATH_OPERATION 		= '*',
 		SPECIAL_KEY_WORDS	= {'Id', x[1]},
 		VALUE_CHANGE_TABLE	= { {'Damage', x[2]} }
@@ -37,7 +48,7 @@ function player_damage:Get(x)
 end
 
 local projectile_damage = {
-	{'SQUADGUN',		10},	-- 40
+	{'SQUADGUN',		8},		-- 40
 	{'AISHIPGUN',		1.6},	-- 15
 	{'TRADERGUN',		1.2},	-- 40
 	{'POLICEGUN',		1.6},	-- 15
@@ -72,7 +83,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE DAMAGE+PROJECTILE.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{

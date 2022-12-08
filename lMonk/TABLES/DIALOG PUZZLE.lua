@@ -8,7 +8,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE DIALOG PUZZLE.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
@@ -48,13 +48,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'KeepOpen',	true}
 				}
 			},
-			{
-				SPECIAL_KEY_WORDS	= {'Id', '?BLUEPRINT_ANALYSER', 'Name', 'ALL_REQUEST_LEAVE'},
-				PRECEDING_KEY_WORDS	= 'Rewards',
-				VALUE_CHANGE_TABLE 	= {
-					{'Value',		'TEST_REWARD_09'}
-				}
-			}
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'Id', '?BLUEPRINT_ANALYSER', 'Name', 'ALL_REQUEST_LEAVE'},
+				-- PRECEDING_KEY_WORDS	= 'Rewards',
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'Value',		'TEST_REWARD_09'}
+				-- }
+			-- }
 		}
 	}
 }}}}

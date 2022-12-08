@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC BUILDING.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					--- Extension for basebuilding
 					-- {'MaxRadiusForPlanetBases',			 	1000},	-- 1000
 					-- {'BaseRadiusExtension',					20},
-					-- {'MinRadiusForBases',					100},
+					-- {'MinRadiusForBases',					1000},
 				}
 			}
 		}

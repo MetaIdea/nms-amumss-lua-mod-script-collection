@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META screen filters.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -15,25 +15,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'METADATA/EFFECTS/SCREENFILTERS.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				PRECEDING_KEY_WORDS = 'DefaultStorm',
-				VALUE_CHANGE_TABLE 	= {
-					{'Filename',	'TEXTURES/LUT/FILTERS/DEFAULT.DDS'}
-				}
-			},
-			{
-				PRECEDING_KEY_WORDS = 'Binoculars',
-				VALUE_CHANGE_TABLE 	= {
-					{'Filename',	'TEXTURES/LUT/FILTERS/DEFAULT.DDS'}
-				}
-			},
-			{
-				PRECEDING_KEY_WORDS = 'Surveying',
-				VALUE_CHANGE_TABLE 	= {
-					{'Filename',	'TEXTURES/LUT/FILTERS/DEFAULT.DDS'}
-				}
-			},
-			{
-				PRECEDING_KEY_WORDS = 'MissionSurvey',
+				WHERE_IN_SUBSECTION	= {
+					{'Filename',	'TEXTURES/LUT/FILTERS/DEFAULTSTORM.DDS'},
+					{'Filename',	'TEXTURES/LUT/FILTERS/BINOCULARS.DDS'},
+					{'Filename',	'TEXTURES/LUT/FILTERS/SURVEYING1.DDS'},
+					{'Filename',	'TEXTURES/LUT/FILTERS/MISSIONSURVEY.DDS'}
+				},
 				VALUE_CHANGE_TABLE 	= {
 					{'Filename',	'TEXTURES/LUT/FILTERS/DEFAULT.DDS'}
 				}

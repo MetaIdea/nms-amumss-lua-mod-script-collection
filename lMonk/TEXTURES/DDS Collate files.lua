@@ -3,13 +3,12 @@ local desc = [[
   Organize texture replacers
 ]]-----------------------------
 
-local file_mover = {
+local dds_sources = {
 	{
 	---	blank replacers
 		source = 'Blanks/',
 		target = '',
 		names  = {
-			{'*.DDS'},
 			-- binoculars screen filters
 			{'BLANK.FILTER.DDS','LUT/FILTERS/BINOCULARS.DDS'},
 			{'BLANK.FILTER.DDS','LUT/FILTERS/SURVEYING1.DDS'},
@@ -22,6 +21,8 @@ local file_mover = {
 			{'BLANK.64.DDS',	'UI/HUD/CROSSHAIRLAZERMIDDLE.DDS'},
 			{'BLANK.64.DDS',	'UI/HUD/CROSSHAIRS/LARGETARGET.DDS'},
 			{'BLANK.64.DDS',	'UI/HUD/CROSSHAIRTARGET.DDS'},
+			-- hide inv tab bulletpoint
+			{'BLANK.32.DDS',	'UI/FONTS/BULLETPOINT.DDS'}
 		}
 	},{
 	---	clean non-chipped fighter paint & white ship lights
@@ -60,34 +61,13 @@ local file_mover = {
 		}
 	},{
 	---	dark blue trail (requires change in HOTDARKTRAIL.MATERIAL.MBIN)
+	---	blue infraknife shot (requires change in SHIPMINIGUNPROJECTILEGRADIENT.MATERIAL.MBIN)
 	---	remove sailship wing blinkers; alt warp textures
 		source = 'Effects/',
 		target = 'EFFECTS/',
 		names  = {
-			{'Trails/BLUEDARKER1.DDS',	'TRAILS/HOT/BLUEDARKER1.DDS'},
-			{'Light/*.DDS',				'LIGHTS/*.DDS'},
-		}
-	},{
-	---	clean glass; freighter bridge windows
-		source = 'Building/',
-		target = 'PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/',
-		names  = {
-			{'GLASS*.DDS'}
-		}
-	},{
-	---	basebuilding Number decals
-		source = 'BaseNumberDecals/',
-		target = 'PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/DECALS/',
-		names  = {
-			{'BASEBUILDINGDECALS_NUMBERS.A?.DDS'},
-			{'BASEBUILDINGDECALS_NUMBERS.A?.MASKS.DDS'}
-		}
-	},{
-	---	Menu icons for the base part number decals
-		source = 'BaseNumberDecals/icons/',
-		target = 'UI/FRONTEND/ICONS/BUILDABLE/',
-		names  = {
-			{'DECAL.NUM?.DDS'}
+			{'Trails/*.DDS',	'TRAILS/HOT/*.DDS'},
+			{'Light/*.DDS',		'LIGHTS/*.DDS'},
 		}
 	},{
 	---	black carbon crystals
@@ -98,27 +78,56 @@ local file_mover = {
 			{'MINERAL2.BASE.DDS',	'CRYSTAL/LARGEPROP/MINERAL2.BASE.DDS'}
 		}
 	},{
-	---	icons for black carbon crystals
-		source = 'BlackCarbon/icons/',
-		target = 'UI/HUD/ICONS/PICKUPS/',
+	---	hangar crane
+		source = 'Building/Crane/',
+		target = 'SPACE/SPACESTATION/PIRATES/',
 		names  = {
-			{'PICKUP.*.DDS'}
+			{'*.DDS'}
 		}
 	},{
-	---	MENU ICONS: products
-		source = 'Icons/Product/',
+	---	building parts: cleaner glass panes, decal replacers
+		source = 'Building/',
+		target = 'PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/',
+		names  = {
+			{'Glass/*.DDS',		'*.DDS'},
+			{'Decals/*.DDS',	'DECALS/*.DDS'}
+		}
+	-- },{
+	-- ---	basebuilding Number decals
+		-- source = 'Base/Decals/',
+		-- target = 'PLANETS/BIOMES/COMMON/BUILDINGS/SHARED/BUILDABLEBUILDINGS/DECALS/',
+		-- names  = {
+			-- {'*.DDS'}
+		-- }
+	},{
+	---	Menu icons for the base part number decals
+		source = 'Icons/Base/',
+		target = 'UI/FRONTEND/ICONS/BUILDABLE/',
+		names  = {
+			{'DECAL.NUM?.DDS'},
+			-- used for the quickmenu
+			{'BUILDABLE.BYTEBEAT.DDS'},
+		}
+	},{
+	---	MENU ICONS: products & substances
+		source = 'Icons/',
 		target = 'UI/FRONTEND/ICONS/',
 		names  = {
-			{'PRODUCTS/PRODUCT.*.DDS'},
-			{'TECHNOLOGY/*.DDS'},
-			-- {'TECHNOLOGY/BIO/*.DDS'},
-			{'U4PRODUCTS/PRODUCT.*.DDS'},
-			{'U4SUBSTANCES/SUBSTANCE.*.DDS'},
+			{'Products/PRODUCT.*.DDS'},
+			{'u4Products/PRODUCT.*.DDS'},
 			{'UPDATE3/*.DDS'},
 			-- REQUIRES changes in NMS_REALITY_GCPRODUCTTABLE.MBIN)
-			{'KETAROS/PRODUCT.*.DDS'},
-			-- used for the quickmenu
-			{'BYTEBEATINTERACTION.DDS', 'BUILDABLE/BUILDABLE.BYTEBEAT.DDS'},
+			{'Products/Ketaros/PRODUCT.*.DDS'},
+			{'U4Substances/SUBSTANCE.*.DDS'},
+		}
+	},{
+	---	MENU ICONS: technology
+		source = 'Icons/Technology/',
+		target = 'UI/FRONTEND/ICONS/TECHNOLOGY/',
+		names  = {
+			{'*.DDS'},
+			{'Bio/*.DDS'},
+			{'Vehicle/*.DDS'},
 		}
 	},{
 	---	ICONS: quickmenu
@@ -130,39 +139,43 @@ local file_mover = {
 			{'THIRDPERSONSHIP.DDS', 'THIRDPERSONCHARACTER.DDS'},
 		}
 	},{
-	---	discovered creature HUD icon (requires change in SCANNERICONS.MBIN)
-		source = 'Icons/Hud/',
-		target = 'UI/HUD/',
-		names  = {
-			{'CREATURE.DISCOVERED.DDS'}
-		}
-	},{
-	---	 ICONS: hud
+	---	 ICONS: translucent hud icons
 		source = 'Icons/Hud/',
 		target = 'UI/HUD/ICONS/',
 		names  = {
-			{'PICKUPS/*.DDS'},
-			{'U4PICKUPS/*.DDS'},
-			{'PLANETPOLE*.DDS'},
-			{'BLACKHOLE.DDS', 'MISSIONS/MISSION.BLACKHOLE.DDS'}
+			{'Building/*.DDS',		'BUILDINGS/*.DDS'},
+			{'Pickups/*.DDS',		'PICKUPS/*.DDS'},
+			{'U4Pickups/*.DDS',		'U4PICKUPS/*.DDS'},
+			{'Poles/*.DDS',			'*.DDS'},
+			{'Player/*.DDS',		'PLAYER/*.DDS'},
+			{'BLACKHOLE.DDS',		'MISSIONS/MISSION.BLACKHOLE.DDS'},
+			-- discovered creature HUD icon (requires change in SCANNERICONS.MBIN)
+			{'CREATURE.DISCOVERED.DDS'}
 		}
 	},{
-	---	ICONS: transparent player hud
-		source = 'Icons/Player/',
-		target = 'UI/HUD/ICONS/PLAYER/',
+	---	player: vkyeen gloves
+		source = 'Player/',
+		target = 'COMMON/PLAYER/PLAYERCHARACTER/',
+		names  = {
+			{'VYKEEN*.DDS'}
+		}
+	},{
+	---	menu: UI background
+		source = 'UI/background/',
+		target = 'UI/FRONTEND/BACKGROUNDS/',
 		names  = {
 			{'*.DDS'}
 		}
-	},
+	}
 }
 
 local function BuildAddFilesTable()
 	local T = {}
-	for _,p in pairs(file_mover) do
+	for _,p in pairs(dds_sources) do
 		for _,s in ipairs(p.names) do
 			table.insert(T, {
 				EXTERNAL_FILE_SOURCE = 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/'..p.source..s[1],
-				FILE_DESTINATION	 = 'TEXTURES/'..p.target..(s[2] or s[1]),
+				FILE_DESTINATION	 = 'TEXTURES/'..(p.target..(s[2] or s[1])):upper(),
 			})
 		end
 	end
@@ -172,8 +185,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TEXTURE collate dds files.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
-	MODIFICATIONS		= {},
 	ADD_FILES			= BuildAddFilesTable()
 }

@@ -9,26 +9,16 @@ local player_anim = [[
 	<Property value="TkAnimationData.xml">
 		<Property name="Anim" value="SAVEGAME"/>
 		<Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN"/>
-		<Property name="AnimType" value="OneShot"/>
+		<Property name="AnimType" value="OneShotBlendable"/>
 		<Property name="Speed" value="1"/>
 		<Property name="ActionFrame" value="-1"/>
-		<Property name="CreatureSize" value="AllSizes"/>
 		<Property name="Active" value="True"/>
-		<Property name="GameData" value="TkAnimationGameData.xml">
-			<Property name="BlockPlayerWeapon" value="Unblocked"/>
-		</Property>
 	</Property>
 ]]
 
-local simple_interact_comp = [[
+local simple_trigger_componenet = [[
 	<Property value="GcSimpleInteractionComponentData.xml">
 		<Property name="SimpleInteractionType" value="Save"/>
-		<Property name="Rarity" value="GcRarity.xml">
-			<Property name="Rarity" value="Common"/>
-		</Property>
-		<Property name="Size" value="GcSizeIndicator.xml">
-			<Property name="SizeIndicator" value="Medium"/>
-		</Property>
 		<Property name="TriggerAction" value="INACTIVE"/>
 		<Property name="HideContents" value="True"/>
 	</Property>
@@ -38,13 +28,12 @@ local simple_interact_comp = [[
 				<Property name="StateID" value="BOOT"/>
 				<Property name="Triggers">
 					<Property value="GcActionTrigger.xml">
-						<Property name="Event" value="GcStateTimeEvent.xml">
-							<Property name="Seconds" value="0"/>
+						<Property name="Event" value="GcAnimFrameEvent.xml">
+							<Property name="Anim" value="SAVEGAME"/>
 						</Property>
 						<Property name="Action">
 							<Property value="GcGoToStateAction.xml">
-								<Property name="State" value="WAIT_FOR_SAVE"/>
-								<Property name="BroadcastLevel" value="Local"/>
+								<Property name="State" value="SAVE"/>
 							</Property>
 						</Property>
 					</Property>
@@ -58,30 +47,13 @@ local simple_interact_comp = [[
 							<Property name="Seconds" value="0"/>
 						</Property>
 						<Property name="Action">
+							<Property value="GcFireSimpleInteractionAction.xml"/>
 							<Property value="GcPlayAudioAction.xml">
 								<Property name="Sound" value="SignalScanner"/>
 								<Property name="OcclusionRadius" value="2"/>
 							</Property>
-							<Property value="GcFireSimpleInteractionAction.xml"/>
 							<Property value="GcGoToStateAction.xml">
-								<Property name="State" value="WAIT_FOR_SAVE"/>
-								<Property name="BroadcastLevel" value="Local"/>
-							</Property>
-						</Property>
-					</Property>
-				</Property>
-			</Property>
-			<Property value="GcActionTriggerState.xml">
-				<Property name="StateID" value="WAIT_FOR_SAVE"/>
-				<Property name="Triggers">
-					<Property value="GcActionTrigger.xml">
-						<Property name="Event" value="GcAnimFrameEvent.xml">
-							<Property name="Anim" value="SAVEGAME"/>
-						</Property>
-						<Property name="Action">
-							<Property value="GcGoToStateAction.xml">
-								<Property name="State" value="SAVE"/>
-								<Property name="BroadcastLevel" value="Local"/>
+								<Property name="State" value="BOOT"/>
 							</Property>
 						</Property>
 					</Property>
@@ -115,7 +87,7 @@ local player_emote = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL hotkey save_3xRefiner_no panic.pak',
 	MOD_AUTHOR			= 'lMonk (original by Mjjstral)',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
@@ -157,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				PRECEDING_KEY_WORDS	= 'GcCombatEffectsComponentData.xml',
 				ADD_OPTION			= 'ADDAfterSection',
-				ADD 				= simple_interact_comp
+				ADD 				= simple_trigger_componenet
 			},
 		}
 	},

@@ -1,10 +1,67 @@
----------------------------------------------------------
+----------------------------------------------------------------
 local desc = [[
-  Generate proc texture files & include the relevant dds
-  diff/normal/masks	= true >> add texture path to layer
-]]-------------------------------------------------------
+  Generate proc texture files & include the relevant dds files
+  diff/normal/masks	= true >> add the texture path to layer
+  If a source path is present add the files to the pak
+]]--------------------------------------------------------------
 
 local proc_texture_files = {
+	{
+	--- bioship engine flare line
+		label	= 'PULSELINES',
+		nmspath	= 'TEXTURES/COMMON/SPACECRAFT/S-CLASS/',
+		{
+			ly_name	= 'BASEP',
+			tx_name	= {'1'},
+			palette = 'Paint',
+			color	= 'Primary',
+			diff	= true
+		}
+	},
+	{
+	--- bioship engine flare
+		label	= 'PULSELINEENGINE',
+		nmspath	= 'TEXTURES/COMMON/SPACECRAFT/S-CLASS/',
+		{
+			ly_name	= 'BASE5',
+			palette = 'Paint',
+			color	= 'Alternative1',
+			diff	= true
+		}
+	},
+	{
+	--- ship interior: plastic
+		label	= 'PLASTICGRAIN',
+		nmspath	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/',
+		{
+			ly_name	= 'BASE',
+			palette = 'Paint',
+			color	= 'Alternative3',
+			diff	= true
+		}
+	},
+	{
+	--- ship interior: plastic alt1
+		label	= 'PLASTICGRAINALT1',
+		nmspath	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/',
+		{
+			ly_name	= 'BASE',
+			palette = 'Paint',
+			color	= 'Primary',
+			diff	= true
+		}
+	},
+	{
+	--- ship interior: plastic alt2 (maybe unused)
+		label	= 'PLASTICGRAINALT2',
+		nmspath	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/COCKPITINTERIORS/',
+		{
+			ly_name	= 'BASE',
+			palette = 'Paint',
+			color	= 'Primary',
+			diff	= true
+		}
+	},
 	{
 	---	ship decals : logo
 		label	= 'LOGO',
@@ -139,55 +196,6 @@ local proc_texture_files = {
 			diff	= true
 		}
 	},
-	-- {
-	-- ---	ship: fake light beam & glow parts !!AFFECTS ship pro-gen PAINTED/PANELS!!
-		-- label	= 'RECTWHITELIGHT',
-		-- source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/',
-		-- nmspath	= 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/',
-		-- {
-			-- ly_name	= 'BASE',
-			-- palette = 'Paint',
-			-- color	= 'Primary',
-			-- diff	= true
-		-- }
-	-- },
-	-- {
-	-- ---	ship: glow rectangle parts !!AFFECTS ship pro-gen PAINTED/PANELS!!
-		-- label	= 'RECTLIGHT',
-		-- source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/',
-		-- nmspath	= 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/',
-		-- {
-			-- ly_name	= 'BASE',
-			-- palette = 'Paint',
-			-- color	= 'Primary',
-			-- diff	= true
-		-- }
-	-- },
-	-- {
-	-- ---	ship: glow circle parts !!AFFECTS ship pro-gen PAINTED/PANELS!!
-		-- label	= 'CIRCLELIGHT',
-		-- source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/',
-		-- nmspath	= 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/',
-		-- {
-			-- ly_name	= 'BASE',
-			-- palette = 'Paint',
-			-- color	= 'Primary',
-			-- diff	= true
-		-- }
-	-- },
-	-- {
-	-- ---	ship: glow circle parts !!AFFECTS ship pro-gen PAINTED/PANELS!!
-		-- label	= 'HEADLIGHT',
-		-- source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/',
-		-- nmspath	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/',
-		-- {
-			-- ly_name	= 'BASE',
-			-- ly_name	= 'BASE',
-			-- palette = 'Paint',
-			-- color	= 'Primary',
-			-- diff	= true
-		-- }
-	-- },
 	{
 	---	royal ship
 		label	= 'ROYALSCLASS_TRIM',
@@ -295,7 +303,7 @@ local function BuildProcTexListMbin(tex_layer)
 			[[</Property></Property>]]
 		)
 	end
-	-- silly fixed length array
+	-- complete silly fixed length array
 	for _=1, (8 - #tex_layer) do
 		table.insert(T, '<Property value="TkProceduralTextureLayer.xml"/>')
 	end
@@ -313,20 +321,74 @@ local function AddProcTexFiles()
 			FILE_CONTENT		= BuildProcTexListMbin(ptf),
 			FILE_DESTINATION	= ptf.nmspath..ptf.label..'.TEXTURE.EXML'
 		})
-		table.insert(T, {
-			EXTERNAL_FILE_SOURCE= ptf.source..ptf.label..'*.DDS',
-			FILE_DESTINATION	= ptf.nmspath..'*.DDS'
-		})
+		if ptf.source then
+			table.insert(T, {
+				EXTERNAL_FILE_SOURCE= ptf.source..ptf.label..'*.DDS',
+				FILE_DESTINATION	= ptf.nmspath..'*.DDS'
+			})
+		end
 	end
 	return T
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '__TEXTURE add proc-gen layers.pak',
+	MOD_FILENAME 		= '__TEXTURE build proc-gen layers.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
-	MODIFICATIONS		= {},
 	ADD_FILES			= AddProcTexFiles()
 }
+
+--------------------------------------------------------------------------------------
+--- proc-gen ship lights
+
+	-- {
+	-- ---	ship: fake light beam & glow parts !!AFFECTS ship pro-gen PAINTED/PANELS!!
+		-- label	= 'RECTWHITELIGHT',
+		-- source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/',
+		-- nmspath	= 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/',
+		-- {
+			-- ly_name	= 'BASE',
+			-- palette = 'Paint',
+			-- color	= 'Primary',
+			-- diff	= true
+		-- }
+	-- },
+	-- {
+	-- ---	ship: glow rectangle parts !!AFFECTS ship pro-gen PAINTED/PANELS!!
+		-- label	= 'RECTLIGHT',
+		-- source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/',
+		-- nmspath	= 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/',
+		-- {
+			-- ly_name	= 'BASE',
+			-- palette = 'Paint',
+			-- color	= 'Primary',
+			-- diff	= true
+		-- }
+	-- },
+	-- {
+	-- ---	ship: glow circle parts !!AFFECTS ship pro-gen PAINTED/PANELS!!
+		-- label	= 'CIRCLELIGHT',
+		-- source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/',
+		-- nmspath	= 'TEXTURES/COMMON/SPACECRAFT/FIGHTERS/SHARED/',
+		-- {
+			-- ly_name	= 'BASE',
+			-- palette = 'Paint',
+			-- color	= 'Primary',
+			-- diff	= true
+		-- }
+	-- },
+	-- {
+	-- ---	ship: glow circle parts !!AFFECTS ship pro-gen PAINTED/PANELS!!
+		-- label	= 'HEADLIGHT',
+		-- source	= 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/_Publish/',
+		-- nmspath	= 'TEXTURES/COMMON/SPACECRAFT/SHARED/',
+		-- {
+			-- ly_name	= 'BASE',
+			-- ly_name	= 'BASE',
+			-- palette = 'Paint',
+			-- color	= 'Primary',
+			-- diff	= true
+		-- }
+	-- },

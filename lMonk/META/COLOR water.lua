@@ -1,7 +1,8 @@
----------------------------------------------
+----------------------------------------------------
 local desc = [[
   Add more water color choices
-]]-------------------------------------------
+  math.floor(X / 255 * 1000) / 1000 == X * 0.00392
+]]--------------------------------------------------
 
 local water_colors = {
 ---	earth blue
@@ -85,20 +86,15 @@ local water_colors = {
 }
 
 local function GcWaterColourSetting(colors_list)
-	local function trunc(x, n)
-		return tonumber(string.format('%.'..(n or 0)..'f', x))
-	end
 	local function hex2rgb(hex)
 		local n = {}
-		for i=1, hex:len()-1, 2 do
-			table.insert(n, trunc(tonumber(hex:sub(i, i+1), 16) / 255, 3))
+		for i=1, (hex:len()/2) do
+			table.insert(n, tonumber(hex:sub(i*2-1, i*2), 16) * 0.00392)
 		end
 		return n
 	end
 	local function asc2prc(as)
-		for i=1, #as do
-			as[i] = trunc(as[i] / 255, 3)
-		end
+		for i=1, #as do as[i] = as[i] * 0.00392 end
 		return as
 	end
 	local function Convert2Rgba(c)
@@ -150,10 +146,9 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME		= '__META water colors.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
-	MODIFICATIONS		= {},
 	ADD_FILES			= {
 		{
 			FILE_CONTENT		= GcWaterColourSetting(water_colors),

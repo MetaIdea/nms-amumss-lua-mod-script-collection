@@ -5,10 +5,18 @@ local desc = [[
   Change torch color and intensity
 ]]----------------------------------------------------
 
+local function Hex2Rgb(hex)
+	local rgb = {{'R', 1}, {'G', 1}, {'B', 1}, {'A', 1}}
+	for i=1, (hex:len()/2) do
+		rgb[i][2] = tonumber(hex:sub(i*2-1, i*2), 16) * 0.00392
+	end
+	return rgb
+end
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__GC GAMEPLAY.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= 3.99,
+	NMS_VERSION				= '4.08',
 	MOD_DESCRIPTION			= desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -19,30 +27,23 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				MATH_OPERATION 		= '+',
 				VALUE_CHANGE_TABLE 	= {
-					-- {'InfestedPlanetDeepSpaceFlybyMultiplier',30},	-- 3.5
-
-					{'WarpsBetweenBattles',					8},		-- 5
-					{'HoursBetweenBattles',					5},		-- 3
-					{'CargoShieldStrength',					0.22},	-- 0.5
+					{'WarpsBetweenBattles',					3},		-- 5
+					{'HoursBetweenBattles',					2},		-- 3
+					{'CargoShieldStrength',					0.22},	-- 0.5		4413
+					{'TechDamageChanceShieldedMax',			-0.3},	-- 0.5
+					{'TechDamageChanceShieldLevelMax',		-0.6},	-- 0.75
 					{'ShipScanPlanetRechargeMultiplier',	-0.5},	-- 1
 					{'ShipScanSpaceRechargeMultiplier',		-0.1},	-- 0.3
 					{'NormalModeHeatBonus',					1},		-- 2
 					{'OverheatGenerosity',					0.05},	-- 1.05
 					{'SurveyMaxDistance',					200},	-- 400
-					{'BinocMinScanTime',					-1.3},	-- 3.9
-					{'BinocScanTime',						-1.3},	-- 3.9
-					{'BinocCreatureScanTime',				-1.1},	-- 3.2
-					{'RefinerProductsMadeInTimeSurvival',	1},		-- 1
-					{'RefinerSubsMadeInTimeSurvival',		100},	-- 100
 					{'FreighterStartPecent',				-50},	-- 60
 					{'LowSentinelProbability',				0.15},	-- 0.55
-					{'LowSentinelProbabilitySurvival',		0.3},	-- 0.25
 					{'AggressiveSentinelProbability',		-0.08},	-- 0.13
-					{'AggressiveSentinelProbabilitySurvival',-0.06},-- 0.13
 					{'MaxDronesLowSurvival',				-1},	-- 1
 					{'ShipInteractRadius',					800},	-- 50
 					{'ZoomFindBuildingRange',				400},	-- 600
-					{'TorchFoV',							-40},	-- 120
+					{'TorchFoV',							-40},	-- 120		6050
 					{'TorchStrength',						1.5},	-- 3.5
 					{'TorchDimFoV',							3},		-- 65
 					{'TorchDimStrength',					0.7},	-- 1.5
@@ -57,12 +58,33 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				PRECEDING_KEY_WORDS = 'TorchColour',
+				REPLACE_TYPE 		= 'All',
+				PRECEDING_KEY_WORDS = 'InventoryStackLimitsOptionData',
 				VALUE_CHANGE_TABLE 	= {
-					{'R',			0.93},	-- 0.95
-					{'G',			0.97},	-- 0.993
-					{'B',			0.94}	-- 0.944
+					{'SubstanceStackLimit',		10000},
+					{'ProductStackLimit',		10000}
 				}
+			},
+			{
+				PRECEDING_KEY_WORDS = {'InventoryStackLimitsOptionData', 'High', 'MaxSubstanceStackSizes'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Default',					10000},
+					{'Personal',				10000},
+					{'PersonalCargo',			10000},
+					{'Ship', 					10000},
+					{'ShipCargo',				10000},
+					{'Freighter', 				10000},
+					{'FreighterCargo',			10000},
+					{'Vehicle',					10000},
+					{'Chest',					10000},
+					{'BaseCapsule',				10000},
+					{'MaintenanceObject',		10000},
+					{'UIPopup',					10000}
+				}
+			},
+			{
+				PRECEDING_KEY_WORDS = 'TorchColour',
+				VALUE_CHANGE_TABLE 	= Hex2Rgb('edf7f0')
 			},
 			{
 				MATH_OPERATION 		= '+',
@@ -82,31 +104,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				PRECEDING_KEY_WORDS = 'BinocularSelectedEffect',
 				VALUE_CHANGE_TABLE 	= {
 					{'BasecolourIntensity',	0.32},	-- 0.4
-					{'FresnelIntensity',	-26},	-- -10
+					{'FresnelIntensity',	-26}	-- -10
 				}
 			},
 			{
 				PRECEDING_KEY_WORDS = 'BinocularSelectedColour',
-				VALUE_CHANGE_TABLE 	= {
-					{'R',			0.05},	-- 0.588
-					{'G',			0.12},	-- 1
-					{'B',			0.28}	-- 0.639
-				}
+				VALUE_CHANGE_TABLE 	= Hex2Rgb('0f1f2b77')
 			},
 			{
 				PRECEDING_KEY_WORDS = 'BinocularSelectedUnknownColour',
-				VALUE_CHANGE_TABLE 	= {
-					{'R',			0.92},	-- 0.926
-					{'G',			0.28},	-- 0.539
-					{'B',			0.16}	-- 1
-				}
+				VALUE_CHANGE_TABLE 	= Hex2Rgb('e04e4eaa')
+			},
+			{
+				PRECEDING_KEY_WORDS = {'BuildingScanEffect', 'Colour'},
+				VALUE_CHANGE_TABLE 	= Hex2Rgb('1f5c7a')
 			},
 			{
 				PRECEDING_KEY_WORDS = 'BuildingScanEffect',
 				VALUE_CHANGE_TABLE 	= {
-					{'R',					0.12},	-- 0
-					{'G',					0.36},	-- 0.7
-					{'B',					0.48},	-- 1
 					{'BasecolourIntensity',	0.12},	-- 0.2
 					{'FresnelIntensity',	-18},	-- 3
 					{'WaveActive',			false}

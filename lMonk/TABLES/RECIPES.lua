@@ -26,7 +26,7 @@ local new_recipe = {
 		{'LAUNCHSUB2',		35,	'S'}
 	},{
 	---	Spawning Sac - bioship inventory
-		id   	= 'RECIPE_BIO_TOKEN',
+		id   	= 'RECIPE_BIOCARGO',
 		name	= 'RECIPE_ASTEROID_MIX',
 		make	= 4,
 		cook	= 'False',
@@ -46,18 +46,17 @@ local new_recipe = {
 	}
 }
 
-local function AddIngredient(x)
-	return [[
-		<Property ]]..(x[4] and 'name="Result"' or '')..[[ value="GcRefinerRecipeElement.xml">
-			<Property name="Id" value="]]..x[1]..[[" />
-			<Property name="Type" value="GcInventoryType.xml">
-				<Property name="InventoryType" value="]]..(x[3] == 'S' and 'Substance' or 'Product')..[[" />
-			</Property>
-			<Property name="Amount" value="]]..x[2]..[[" />
-		</Property>]]
-end
-
 local function BuildRecipe(rec)
+	local function AddIngredient(x)
+		return [[
+			<Property ]]..(x[4] and 'name="Result"' or '')..[[ value="GcRefinerRecipeElement.xml">
+				<Property name="Id" value="]]..x[1]..[[" />
+				<Property name="Type" value="GcInventoryType.xml">
+					<Property name="InventoryType" value="]]..(x[3] == 'S' and 'Substance' or 'Product')..[[" />
+				</Property>
+				<Property name="Amount" value="]]..x[2]..[[" />
+			</Property>]]
+	end
 	part = ''
 	for i=2, #rec do
 		part = part..AddIngredient(rec[i])
@@ -71,7 +70,8 @@ local function BuildRecipe(rec)
 			<Property name="Cooking" value="]]..rec.cook..[["/>
 			]]..AddIngredient(rec[1])..[[
 			<Property name="Ingredients">]]..part..[[</Property>
-		</Property>]]
+		</Property>
+	]]
 end
 
 local function AddNewRecipes()
@@ -84,14 +84,14 @@ end
 
 local function ChangeTimeToMakeRange(id1, id2, multiplier)
 	local T = {}
+	T[1] = {
+		FSKWG				= {},
+		INTEGER_TO_FLOAT	= 'Preserve',
+		MATH_OPERATION 		= '*',
+		VALUE_CHANGE_TABLE 	= { {'TimeToMake',	multiplier} }
+	}
 	for i = id1, id2 do
-		local section = {
-			INTEGER_TO_FLOAT	= 'Preserve',
-			MATH_OPERATION 		= '*',
-			SPECIAL_KEY_WORDS	= {'Id', 'REFINERECIPE_'..i},
-			VALUE_CHANGE_TABLE 	= { {'TimeToMake',	multiplier} }
-		}
-		table.insert(T, section)
+		table.insert(T[1].FSKWG, {'Id', 'REFINERECIPE_'..i})
 	end
 	return T
 end
@@ -101,7 +101,7 @@ local source_table_recipe = 'METADATA/REALITY/TABLES/NMS_REALITY_GCRECIPETABLE.M
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE RECIPE.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{

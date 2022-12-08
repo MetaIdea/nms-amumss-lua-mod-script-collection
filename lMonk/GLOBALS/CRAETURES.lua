@@ -10,7 +10,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC CRAETURES.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -43,8 +43,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'SandWormSpawnTimer',				-120},	-- 300
 					{'SandWormSpawnChanceMin',			0.07},	-- 0.01
 					{'SandWormSpawnChanceMax',			0.05},	-- 0.2
+					{'SandWormSpawnChanceInfested',		-0.2},	-- 1
 					{'SpawnOnscreenDist',				20},	-- 100
-					-- {'RidingTurnRadiusMultiplier',		-0.4},	-- 1
 					{'FadeDistance',					20},	-- 10
 					{'MinFade',							25},	-- 30
 					{'RideSpeedSlow', 					0.7},	-- 0.5

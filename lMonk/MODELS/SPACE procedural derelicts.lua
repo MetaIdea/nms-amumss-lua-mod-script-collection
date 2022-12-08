@@ -2,7 +2,7 @@
 local desc = [[
   Adds procedural parts, more wrecks and a few space-encounter items
   to the derelict freighter encouter mission.
-  * original mod by Redmas
+  * original idea by Redmas
 ]]-------------------------------------------------------------------
 
 local assets = {
@@ -79,20 +79,19 @@ local function AddDescriptors()
 		<Property value="TkResourceDescriptorData.xml">
 			<Property name="Id" value="%s"/>
 			<Property name="Name" value="%s"/>
-		</Property>
-	]]
+		</Property>]]
 	local T = {}
 	for _,scene in pairs(assets) do
 		if scene.isnew then
-			table.insert(T,{
+			table.insert(T, {
 				SPECIAL_KEY_WORDS	= {'TypeId', scene.name:sub(1, scene.name:len()-1):upper()},
 				PRECEDING_KEY_WORDS = 'Descriptors',
 				ADD 				= string.format(
-										descriptor,
-										scene.name:upper(),
-										scene.name
-									)
-			}) 
+					descriptor,
+					scene.name:upper(),
+					scene.name
+				)
+			})
 		end
 	end
 	return T
@@ -104,8 +103,7 @@ local function AddSceneNodes()
 			<Property name="Name" value="%s"/>
 			<Property name="Type" value="%s"/>
 			%s
-		</Property>
-	]]
+		</Property>]]
 	local transform = [[
 		<Property name="Transform" value="TkTransformData.xml">
 			<Property name="TransX" value="%s"/>
@@ -117,16 +115,14 @@ local function AddSceneNodes()
 			<Property name="ScaleX" value="%s"/>
 			<Property name="ScaleY" value="%s"/>
 			<Property name="ScaleZ" value="%s"/>
-		</Property>
-	]]
+		</Property>]]
 	local attributes = [[
 		<Property name="Attributes">
 			<Property value="TkSceneNodeAttributeData.xml">
 				<Property name="Name" value="SCENEGRAPH"/>
 				<Property name="Value" value="%s"/>
 			</Property>
-		</Property>
-	]]
+		</Property>]]
 	local exml = {}
 	for _,scene in pairs(assets) do
 		if not scene.hasloc then
@@ -159,7 +155,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL procedural derelicts.pak',
 	LUA_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
@@ -185,6 +181,26 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				ADD_OPTION			= 'AddAfterSection',
 				ADD 				= AddSceneNodes()
 			}
+		}
+	},
+	{
+	---	|space clock| dimmer light
+		MBIN_FILE_SOURCE	= 'MODELS/SPACE/POI/SPACECLOCK.SCENE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				REPLACE_TYPE 		= 'All',
+				SPECIAL_KEY_WORDS	= {'Name', 'FALLOFF'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Value',		'quadrtic'}
+				}
+			},
+			{
+				REPLACE_TYPE 		= 'All',
+				SPECIAL_KEY_WORDS	= {'Name', 'FALLOFF_RATE'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Value',		1.5}
+				}
+			},
 		}
 	}
 }}}}

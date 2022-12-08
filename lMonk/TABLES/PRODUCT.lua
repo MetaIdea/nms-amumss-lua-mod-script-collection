@@ -32,30 +32,26 @@ function stack_mult:Get(x)
 end
 
 local replace_icons = {
-	{'LOG_KEY',			'KETAROS/PRODUCT.LOGKEY.DDS'},
-	{'ACCESS1',			'KETAROS/PRODUCT.ATLASPASS3.DDS'},
-	{'ACCESS2',			'KETAROS/PRODUCT.ATLASPASS2.DDS'},
-	{'FRIG_TOKEN',		'KETAROS/PRODUCT.FRIGATEMOD.DDS'},
-	{'SHIP_INV_TOKEN',	'KETAROS/PRODUCT.SHIPINV2.DDS'},
-	{'FREI_INV_TOKEN',	'KETAROS/PRODUCT.SHIPINV.DDS'},
-	{'CARBON_SEAL',		'KETAROS/PRODUCT.HERMETICS.DDS'},
-	{'MEGAPROD2',		'KETAROS/PRODUCT.QUANTUMP.DDS'},
-	{'FOOD_M_CAT',		'KETAROS/PRODUCT.MEAT.LIVER.DDS'},
-	{'FOOD_M_STRIDER',	'KETAROS/PRODUCT.MEAT.SAUSAGE.DDS'},
-	{'FOOD_M_COW',		'KETAROS/PRODUCT.MEATSTAKE.DDS'},
-	{'FOOD_M_CRAB',		'KETAROS/PRODUCT.MEATLEG.DDS'},
-	{'FOOD_M_CRAB',		'KETAROS/PRODUCT.MEATCHUNKY.DDS'},
+	{'ACCESS1',			'PRODUCTS/KETAROS/PRODUCT.ATLASPASS3.DDS'},
+	{'ACCESS2',			'PRODUCTS/KETAROS/PRODUCT.ATLASPASS2.DDS'},
+	{'CARBON_SEAL',		'PRODUCTS/KETAROS/PRODUCT.HERMETICS.DDS'},
+	{'MEGAPROD2',		'PRODUCTS/KETAROS/PRODUCT.QUANTUMP.DDS'},
+	{'FOOD_M_CAT',		'PRODUCTS/KETAROS/PRODUCT.MEAT.LIVER.DDS'},
+	{'FOOD_M_STRIDER',	'PRODUCTS/KETAROS/PRODUCT.MEAT.SAUSAGE.DDS'},
+	{'FOOD_M_COW',		'PRODUCTS/KETAROS/PRODUCT.MEATSTAKE.DDS'},
+	{'FOOD_M_CRAB',		'PRODUCTS/KETAROS/PRODUCT.MEATLEG.DDS'},
+	{'FOOD_M_CRAB',		'PRODUCTS/KETAROS/PRODUCT.MEATCHUNKY.DDS'},
 	{'SUMMON_GARAGE',	'BUILDABLE/BUILDABLE.SIGNAL.DDS'},
-	{'SUIT_INV_TOKEN',	'UPDATE3/TRADEPROD.ENERGY2.DDS'},
 	{'GEODE_CAVE',		'U4PRODUCTS/PRODUCT.GEODECAVE.DDS'},
 	{'PRODFUEL2',		'U4PRODUCTS/PRODUCT.OXYGENGEL2.DDS'},
 	{'SHIPCHARGE',		'U4PRODUCTS/PRODUCT.SHIPCHARGE.DDS'},
 	{'SALVAGE_TECH10',	'U4PRODUCTS/PRODUCT.CAPTUREDNANODE.DDS'},
+	{'STATION_KEY',		'PRODUCTS/PRODUCT.PIRATEINVITE.DDS'},
 	{'FOOD_V_ROBOT',	'PRODUCTS/PRODUCT.GLOWPELLET.DDS'},
 }
 function replace_icons:Get(x)
 	return {
-		SPECIAL_KEY_WORDS	= {'Id', x[1]},
+		SPECIAL_KEY_WORDS	= {'ID', x[1]},
 		PRECEDING_KEY_WORDS = 'Icon',
 		VALUE_CHANGE_TABLE 	= { {'Filename', 'TEXTURES/UI/FRONTEND/ICONS/'..x[2]} }
 	}
@@ -63,25 +59,32 @@ end
 
 --- if subtitle, will apply color to entire group
 local icon_bg_color = {
-	{'UI_FUELPROD3_NAME',			0.54,	0.26,	0.26},
-	{'UI_LANDPROD3_NAME',			0.54,	0.26,	0.26},
-	{'UI_CAVEPROD3_NAME',			0.54,	0.26,	0.26},
-	{'UI_CATAPROD3_NAME',			0.54,	0.26,	0.26},
-	{'UI_WATERPROD3_NAME',			0.54,	0.26,	0.26},
-	{'UI_OXYPROD3_NAME',			0.54,	0.26,	0.26},
-	{'NEWPROD11_NAME',				0.302,	0.16,	0.34}, -- cave geode
-	{'FOOD_ROBOT_VEG_NAME',			0.102,	0.153,	0.24},
-	{'EXO_SUMMON_POD_NAME',			0.04,	0.18,	0.26},
-	{'UI_VENTGEM_NAME',				0.8,	0.8,	0.8},
-	{'UI_STORMCRYSTAL_NAME',		0.302,	0.16,	0.34},
-	{'UI_TECHMOD_NAME',				0.953,	0.662,	0.137},
-	{'FRIG_BOOST_SUB',				0.42,	0.47,	0.51},
-	{'UI_ALLOY_SIMPLE_SUBTITLE',	0.18,	0.25,	0.62},
-	{'UI_ALLOY_COMPLEX_SUBTITLE',	0.18,	0.25,	0.62},
-	{'UI_REACTION_SUBTITLE',		0.86,	0.66,	0.18},
-	{'UI_COMPOUND_SUBTITLE',		0.86,	0.66,	0.18},
+	{'UI_FUELPROD3_NAME',			'8A4242'},
+	{'UI_LANDPROD3_NAME',			'8A4242'},
+	{'UI_CAVEPROD3_NAME',			'8A4242'},
+	{'UI_CATAPROD3_NAME',			'8A4242'},
+	{'UI_WATERPROD3_NAME',			'8A4242'},
+	{'UI_OXYPROD3_NAME',			'8A4242'},
+	{'NEWPROD11_NAME',				'4D2957'}, -- cave geode
+	{'FOOD_ROBOT_VEG_NAME',			'1A273D'},
+	{'EXO_SUMMON_POD_NAME',			'0A2E42'},
+	{'UI_VENTGEM_NAME',				'CCCCCC'},
+	{'UI_STORMCRYSTAL_NAME',		'4D2957'},
+	{'UI_TECHMOD_NAME',				'1A2733'},
+	{'FRIG_BOOST_SUB',				'6B7882'},
+	{'UI_ALLOY_SIMPLE_SUBTITLE',	'2E409E'},
+	{'UI_ALLOY_COMPLEX_SUBTITLE',	'2E409E'},
+	{'UI_REACTION_SUBTITLE',		'DBA82E'},
+	{'UI_COMPOUND_SUBTITLE',		'DBA82E'},
 }
 function icon_bg_color:Get(x)
+	local function Hex2Rgb(hex)
+		local rgb = {{'R', 1}, {'G', 1}, {'B', 1}, {'A', 1}}
+		for i=1, (hex:len()/2) do
+			rgb[i][2] = tonumber(hex:sub(i*2-1, i*2), 16) * 0.00392
+		end
+		return rgb
+	end
 	local function IsSingle(a, b)
 		return x[1]:find('NAME') and a or b
 	end
@@ -90,7 +93,7 @@ function icon_bg_color:Get(x)
 		INTEGER_TO_FLOAT	= 'Force',
 		SPECIAL_KEY_WORDS	= {IsSingle('Name', 'Value'), x[1]},
 		SECTION_UP			= IsSingle(0, 1),
-		VALUE_CHANGE_TABLE 	= { {'R', x[2]}, {'G', x[3]}, {'B', x[4]} }
+		VALUE_CHANGE_TABLE 	= Hex2Rgb(x[2])
 	}
 end
 
@@ -109,18 +112,18 @@ local prod_requirements = {
 		{'YELLOW2', 	80,		'S'},	-- copper
 		{'ASTEROID1', 	40,		'S'}	-- silver
 	},{
-	---	Spawning Sac
-		id   = 'ALIEN_INV_TOKEN',
-		cost = 2,
-		{'FIENDCORE', 	3,		'P'},	-- larval core
-		{'ROBOT1', 		100,	'S'},	-- pugneum
-		{'SPACEGUNK2', 	60,		'S'}	-- runaway mould
-	},{
-	---	Anomaly Detector
+	---	anomaly detector
 		id   = 'POI_LOCATOR',
 		{'GEODE_SPACE', 1,		'P'},	-- tritium hypercluster
 		{'ASTEROID1', 	20,		'S'},	-- silver
 		{'ASTEROID2', 	20,		'S'},	-- gold
+	},{
+	---	dream aerial
+		id   = 'WHALE_BEACON',
+		subs = true,
+		{'GEODE_SPACE', 1,		'P'},	-- tritium hypercluster
+		{'POI_LOCATOR',	1,		'P'},	-- anomaly detector
+		{'FARMPROD8', 	1,		'P'},	-- living glass
 	},{
 	---	desk chair
 		id   = 'BUILDCHAIR',
@@ -148,8 +151,8 @@ local prod_requirements = {
 	},{
 	---	ship ai valves
 		id   = 'SALVAGE_TECH10',
-		{'ULTRAPROD1', 	10,		'P'},
-		{'ULTRAPROD2', 	10,		'P'},
+		{'ULTRAPROD1', 	20,		'P'},
+		{'ULTRAPROD2', 	20,		'P'},
 	},
 	multi = true
 }
@@ -160,10 +163,11 @@ function prod_requirements:Get(x)
 			<Property value="GcTechnologyRequirement.xml">
 				<Property name="ID" value="%s"/>
 				<Property name="Amount" value="%s"/>
-				<Property name="InventoryType" value="GcInventoryType.xml">
+				<Property name="Type" value="GcInventoryType.xml">
 					<Property name="InventoryType" value="%s"/>
 				</Property>
-			</Property>]]
+			</Property>
+		]]
 		for _,p in ipairs(x) do
 			exml = exml..string.format(requirement, p[1], p[2],
 				(p[3] == 'S' and 'Substance' or 'Product')
@@ -173,17 +177,17 @@ function prod_requirements:Get(x)
 	end
 	return {
 		{
-			SPECIAL_KEY_WORDS	= {'Id', x.id},
+			SPECIAL_KEY_WORDS	= {'ID', x.id},
 			VALUE_CHANGE_TABLE 	= {
 				{'RecipeCost',	x.cost or 1},
 				{'IsCraftable',	true}
 			}
 		},{
-			SPECIAL_KEY_WORDS	= {'Id', x.id},
+			SPECIAL_KEY_WORDS	= {'ID', x.id},
 			PRECEDING_KEY_WORDS	= 'Requirements',
 			REMOVE				= x.subs and 'Section' or 'Line'
 		},{
-			SPECIAL_KEY_WORDS	= {'Id', x.id},
+			SPECIAL_KEY_WORDS	= {'ID', x.id},
 			ADD					= BuildReqs()
 		}
 	}
@@ -206,7 +210,7 @@ local source_table_product = 'METADATA/REALITY/TABLES/NMS_REALITY_GCPRODUCTTABLE
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE PRODUCT.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
@@ -215,21 +219,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= source_table_product,
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Id', 'SALVAGE_TECH10'},
+				SPECIAL_KEY_WORDS	= {'ID', 'SALVAGE_TECH10'},
 				VALUE_CHANGE_TABLE 	= {
-					{'BaseValue',	312000000},
+					{'BaseValue',	624000000},
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'Id', 'JELLY'},
-				SECTION_ACTIVE		= 2,
+				SPECIAL_KEY_WORDS	= {'ID', 'JELLY'},
+				PRECEDING_KEY_WORDS = 'Subtitle',
 				VALUE_CHANGE_TABLE 	= {
-					{'Subtitle',	'CRAFTPROD_SUB'},
+					{'Value',		'CRAFTPROD_SUB'},
 				}
 			},
 			{
 			--	text added in custom lang file
-				SPECIAL_KEY_WORDS	= {'Id', 'GEODE_CAVE'},
+				SPECIAL_KEY_WORDS	= {'ID', 'GEODE_CAVE'},
 				VALUE_CHANGE_TABLE 	= {
 					{'Name',		'UI_GEODE_NAME_CAVE'},
 					{'NameLower',	'UI_GEODE_NAME_CAVE_L'}
