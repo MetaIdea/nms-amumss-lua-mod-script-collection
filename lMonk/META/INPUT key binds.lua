@@ -5,24 +5,25 @@ local desc = [[
 ]]---------------------------------------------------------------
 
 local function AddBindings(action, button, axis)
- return [[
-	<Property value="GcInputBinding.xml">
-		<Property name="Action" value="GcInputActions.xml">
-			<Property name="InputAction" value="]]..action..[["/>
+	return [[
+		<Property value="GcInputBinding.xml">
+			<Property name="Action" value="GcInputActions.xml">
+				<Property name="InputAction" value="]]..action..[["/>
+			</Property>
+			<Property name="Button" value="TkInputEnum.xml">
+				<Property name="InputButton" value="]]..button..[["/>
+			</Property>
+			<Property name="Axis" value="TkInputAxisEnum.xml">
+				<Property name="InputAxis" value="]]..(axis or 'Invalid')..[["/>
+			</Property>
 		</Property>
-		<Property name="Button" value="TkInputEnum.xml">
-			<Property name="InputButton" value="]]..button..[["/>
-		</Property>
-		<Property name="Axis" value="TkInputAxisEnum.xml">
-			<Property name="InputAxis" value="]]..axis..[["/>
-		</Property>
-	</Property>]]
+	]]
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META key binds.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -42,27 +43,32 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'ActionSetType', 'OnFootControls'},
 				SECTION_UP_SPECIAL	= 1,
 				PRECEDING_KEY_WORDS = 'InputBindings',
-				ADD 				= AddBindings('Player_ChangeWeapon', 'None', 'MouseWheel')
-									  ..
-									  AddBindings('Player_Scan', 'Mouse3', 'Invalid')
-									  ..
-									  AddBindings('Player_Binoculars', 'Mouse5', 'Invalid')
+				ADD 				=
+					AddBindings('Player_ChangeWeapon', 'None', 'MouseWheel')
+					..
+					AddBindings('Player_Scan', 'Mouse3')
+					..
+					AddBindings('Player_Binoculars', 'Mouse5')
+					..
+					AddBindings('Player_Torch', 'Mouse6')
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ActionSetType', 'VehicleMode'},
 				SECTION_UP_SPECIAL	= 1,
 				PRECEDING_KEY_WORDS = 'InputBindings',
-				ADD 				= AddBindings('Vehicle_ChangeWeapon', 'None', 'MouseWheel')
-									  ..
-									  AddBindings('Vehicle_Scan', 'Mouse3', 'Invalid')
+				ADD 				=
+					AddBindings('Vehicle_ChangeWeapon', 'None', 'MouseWheel')
+					..
+					AddBindings('Vehicle_Scan', 'Mouse3')
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'ActionSetType', 'ShipControls'},
 				SECTION_UP_SPECIAL	= 1,
 				PRECEDING_KEY_WORDS = 'InputBindings',
-				ADD 				= AddBindings('Ship_ChangeWeapon', 'None', 'MouseWheel')
-									  ..
-									  AddBindings('Ship_Scan', 'Mouse3', 'Invalid')
+				ADD 				=
+					AddBindings('Ship_ChangeWeapon', 'None', 'MouseWheel')
+					..
+					AddBindings('Ship_Scan', 'Mouse3')
 			}
 		}
 	},
@@ -90,8 +96,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'ActionSetType', 'OnFootControls'},
 				SECTION_UP_SPECIAL	= 1,
 				PRECEDING_KEY_WORDS = 'InputBindings',
-				ADD 				= AddBindings('Player_Zoom', 'Key2', 'Invalid')
-			},
+				ADD 				= AddBindings('Player_Zoom', 'Key2')
+			}
 		}
 	}
 }}}}

@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL station interior FIX.pak',
 	MOD_AUTHOR			= 'Lo2k, lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -25,19 +25,19 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'LODDIST1'},
 				VALUE_CHANGE_TABLE	= {
-					{'Value',			50.0}
+					{'Value',		50}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'LODDIST2'},
 				VALUE_CHANGE_TABLE	= {
-					{'Value',			100.0}
+					{'Value',		100}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'LODDIST3'},
 				VALUE_CHANGE_TABLE	= {
-					{'Value',			200.0}
+					{'Value',		200}
 				}
 			}
 		}
@@ -48,13 +48,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'LODDIST1'},
 				VALUE_CHANGE_TABLE	= {
-					{'Value',			50.0}
+					{'Value',		50}
 				}
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'LODDIST2'},
 				VALUE_CHANGE_TABLE	= {
-					{'Value',			100.0}
+					{'Value',		100}
 				}
 			}
 		}
@@ -63,109 +63,99 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/BACK_SECTION/ENTITIES/LEFTSECTIONTRIGGER.ENTITY.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF', 'Name', 'LeftSectionModule'},
-				VALUE_CHANGE_TABLE	= {
-					{'NodeActiveState', 'Activate'}
-				}
+				SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF'},
+				REMOVE				= 'Section'
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF', 'Name', 'LeftModuleInactive'},
-				VALUE_CHANGE_TABLE	= {
-					{'NodeActiveState', 'Deactivate'}
-				}
+				SPECIAL_KEY_WORDS	= {'RequirePlayerAction', 'None'},
+				SECTION_UP_SPECIAL	= 1,
+				REMOVE				= 'Section'
 			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF', 'Name', 'TunnelLights'},
-				VALUE_CHANGE_TABLE	= {
-					{'NodeActiveState', 'Deactivate'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF', 'RequirePlayerAction', 'None'},
-				VALUE_CHANGE_TABLE	= {
-					{'Distance',		200}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF', 'BroadcastLevel', 'Scene'},
-				VALUE_CHANGE_TABLE	= {
-					{'State',			'LEFTOFF'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'LEFTON', 'Name', 'LeftSectionModule'},
-				VALUE_CHANGE_TABLE	= {
-					{'NodeActiveState', 'Deactivate'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'LEFTON', 'RequirePlayerAction', 'None'},
-				VALUE_CHANGE_TABLE	= {
-					{'Distance',		200}
-				}
-			}
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF', 'Name', 'LeftSectionModule'},
+				-- VALUE_CHANGE_TABLE	= {
+					-- {'NodeActiveState', 'Activate'}
+				-- }
+			-- },
+			-- {
+				-- FOREACH_SKW_GROUP	= {
+					-- {'StateID', 'LEFTOFF', 'Name', 'LeftModuleInactive'},
+					-- {'StateID', 'LEFTOFF', 'Name', 'TunnelLights'},
+					-- {'StateID', 'LEFTON', 'Name', 'LeftSectionModule'}
+				-- },
+				-- VALUE_CHANGE_TABLE	= {
+					-- {'NodeActiveState', 'Deactivate'}
+				-- }
+			-- },
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'StateID', 'LEFTOFF', 'BroadcastLevel', 'Scene'},
+				-- VALUE_CHANGE_TABLE	= {
+					-- {'State',			'LEFTOFF'}
+				-- }
+			-- },
+			-- {
+				-- FOREACH_SKW_GROUP	= {
+					-- {'StateID', 'LEFTOFF', 'RequirePlayerAction', 'None'},
+					-- {'StateID', 'LEFTON', 'RequirePlayerAction', 'None'}
+				-- },
+				-- VALUE_CHANGE_TABLE	= {
+					-- {'Distance',	200}
+				-- }
+			-- }
 		}
 	},
 	{
 		MBIN_FILE_SOURCE	= 	'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/BACK_SECTION/ENTITIES/RIGHTSECTIONTRIGGER.ENTITY.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF', 'Name', 'RightSectionModule'},
-				VALUE_CHANGE_TABLE	= {
-					{'NodeActiveState', 'Activate'}
-				}
+				SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF'},
+				REMOVE				= 'Section'
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF', 'Name', 'RightModuleInactive'},
-				VALUE_CHANGE_TABLE	= {
-					{'NodeActiveState', 'Deactivate'}
-				}
+				SPECIAL_KEY_WORDS	= {'RequirePlayerAction', 'None'},
+				SECTION_UP_SPECIAL	= 1,
+				REMOVE				= 'Section'
 			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF', 'Name', 'TunnelLights'},
-				VALUE_CHANGE_TABLE	= {
-					{'NodeActiveState', 'Deactivate'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF', 'RequirePlayerAction', 'None'},
-				VALUE_CHANGE_TABLE	= {
-					{'Distance',		200}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF', 'BroadcastLevel', 'Scene'},
-				VALUE_CHANGE_TABLE	= {
-					{'State',			'RIGHTOFF'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTON', 'Name', 'RightSectionModule'},
-				VALUE_CHANGE_TABLE	= {
-					{'NodeActiveState', 'Deactivate'}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTON', 'RequirePlayerAction', 'None'},
-				VALUE_CHANGE_TABLE	= {
-					{'Distance',		200}
-				}
-			}
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF', 'Name', 'RightSectionModule'},
+				-- VALUE_CHANGE_TABLE	= {
+					-- {'NodeActiveState', 'Activate'}
+				-- }
+			-- },
+			-- {
+				-- FOREACH_SKW_GROUP	= {
+					-- {'StateID', 'RIGHTOFF', 'Name', 'RightModuleInactive'},
+					-- {'StateID', 'RIGHTOFF', 'Name', 'TunnelLights'},
+					-- {'StateID', 'RIGHTON', 'Name', 'RightSectionModule'}
+				-- },
+				-- VALUE_CHANGE_TABLE	= {
+					-- {'NodeActiveState', 'Deactivate'}
+				-- }
+			-- },
+			-- {
+				-- SPECIAL_KEY_WORDS	= {'StateID', 'RIGHTOFF', 'BroadcastLevel', 'Scene'},
+				-- VALUE_CHANGE_TABLE	= {
+					-- {'State',		'RIGHTOFF'}
+				-- }
+			-- },
+			-- {
+				-- FOREACH_SKW_GROUP	= {
+					-- {'StateID', 'RIGHTOFF', 'RequirePlayerAction', 'None'},
+					-- {'StateID', 'RIGHTON', 'RequirePlayerAction', 'None'}
+				-- },
+				-- VALUE_CHANGE_TABLE	= {
+					-- {'Distance',	200}
+				-- }
+			-- }
 		}
 	},
 	{
 		MBIN_FILE_SOURCE	= 	'MODELS/SPACE/SPACESTATION/MODULARPARTS/DOCK/BACK_SECTION/ENTITIES/SHOP_LIGHTTRIGGER.ENTITY.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'SHOPLIGHTSOFF', 'RequirePlayerAction', 'None'},
+				REPLACE_TYPE 		= 'All',
 				VALUE_CHANGE_TABLE	= {
-					{'Distance',		50}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'StateID', 'SHOPLIGHTSON', 'RequirePlayerAction', 'None'},
-				VALUE_CHANGE_TABLE	= {
-					{'Distance',		50}
+					{'Distance',	50}
 				}
 			}
 		}

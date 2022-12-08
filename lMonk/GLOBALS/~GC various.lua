@@ -1,5 +1,6 @@
 ------------------------------------------------------------
 local desc = [[
+  limit the freighter base NPC crowd
   disable ladder auto-grab; disable falling camera-view
   same (dark mode) warp tunnel in teleports
   lower water level to avoid invisible water at shoreline
@@ -8,28 +9,31 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__GC various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
-	---	|GC AISPACESHIP|
-		MBIN_FILE_SOURCE	= 'GCAISPACESHIPGLOBALS.GLOBAL.MBIN',
+	---	|GC FREIGHTERBASE|
+		MBIN_FILE_SOURCE	= 'GCFREIGHTERBASEGLOBALS.GLOBAL.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				MATH_OPERATION 		= '+',
 				VALUE_CHANGE_TABLE 	= {
-					{'MinimumCircleTimeBeforeLanding',		3},		-- 5
-					{'MinimumTimeBetweenOutpostLandings',	1},		-- 3
-					{'DockWaitMinTime',						5},		-- 20
-					{'FlybyHeight',							60},	-- 120
-					{'FlybyOffset',							40},	-- 320
-					{'FlybyCloseOdds',						-15},	-- 20
-					{'FreighterSpawnRate',					-20},	-- 40
-					{'TradeRouteFlickerFreq',				-10},
-					{'TradeRouteFlickerAmp',				-0.01},
-					{'WarpInTimeFreighter',					1.4},	-- 0.6
-					{'MaxNumFreighters',					-5},	-- 12
+					{'MaxTotalNPCCount',		-12},	-- 24
+					{'NPCStartSpawnDelayTime',	2},		-- 3
+					{'NPCSpawnIntervalTime',	1},		-- 0.1
+				}
+			},
+			{
+				MATH_OPERATION 		= '+',
+				PRECEDING_KEY_WORDS = 'MaxTotalCapacityOfNPCTypes',
+				VALUE_CHANGE_TABLE 	= {
+					{'SquadronPilot',			-2},	-- 4
+					{'FrigateCaptain',			-2},	-- 4
+					{'WorkerBio',				-3},	-- 6
+					{'WorkerTech',				-3},	-- 6
+					{'WorkerIndustry',			-3},	-- 6
 				}
 			}
 		}
@@ -71,7 +75,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'FriendlyDroneChatCooldown',			12},	-- 5
 					{'FriendlyDroneDissolveTime',			2},		-- 1
 					{'FriendlyDroneChatChanceIdle',			0.15},	-- 0.33
-					{'FriendlyDroneBeepReplaceChatChance',	0.1},	-- 0.3
 				}
 			}
 		}

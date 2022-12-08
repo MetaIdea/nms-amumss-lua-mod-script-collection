@@ -7,57 +7,60 @@ local desc = [[
   ... BIOROOM/ENTITIES/INTERACTION.ENTITY.MBIN
 ]]----------------------------------------------------------------
 
-local base_parts = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/'
+local build_parts = 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/'
 
 local function AddObjectInteractionNode(path)
 	local function NodeAtt(name, val)
 		return [[
-		<Property value="TkSceneNodeAttributeData.xml">
-			<Property name="Name" value="]]..name..[["/>
-			<Property name="Value" value="]]..val..[["/>
-		</Property>]]
+			<Property value="TkSceneNodeAttributeData.xml">
+				<Property name="Name" value="]]..name..[["/>
+				<Property name="Value" value="]]..val..[["/>
+			</Property>
+		]]
 	end
 	local function TransData(ty)
 		return [[
-		<Property name="Transform" value="TkTransformData.xml">
-			<Property name="TransY" value="]]..(ty or 0)..[["/>
-			<Property name="ScaleX" value="1"/>
-			<Property name="ScaleY" value="1"/>
-			<Property name="ScaleZ" value="1"/>
-		</Property>]]
+			<Property name="Transform" value="TkTransformData.xml">
+				<Property name="TransY" value="]]..(ty or 0)..[["/>
+				<Property name="ScaleX" value="1"/>
+				<Property name="ScaleY" value="1"/>
+				<Property name="ScaleZ" value="1"/>
+			</Property>
+		]]
 	end
 	return [[
-	<Property value="TkSceneNodeData.xml">
-		<Property name="Name" value="Interaction"/>
-		<Property name="Type" value="LOCATOR"/>
-		]]..TransData(1)..[[
-		<Property name="Attributes">]]..
-			NodeAtt('ATTACHMENT', base_parts..path..'INTERACTION.ENTITY.MBIN')..
-		[[</Property>
-		<Property name="Children">
-			<Property value="TkSceneNodeData.xml">
-				<Property name="Name" value="collision99"/>
-				<Property name="Type" value="COLLISION"/>
-				]]..TransData()..[[
-				<Property name="Attributes">]]..
-					NodeAtt('TYPE', 'Sphere')..
-					NodeAtt('RADIUS', 1)..
-				[[</Property>
-				<Property name="Children"/>
-			</Property>
-			<Property value="TkSceneNodeData.xml">
-				<Property name="Name" value="interaction2"/>
-				<Property name="Type" value="LOCATOR"/>
-				]]..TransData()..[[
+		<Property value="TkSceneNodeData.xml">
+			<Property name="Name" value="Interaction"/>
+			<Property name="Type" value="LOCATOR"/>
+			]]..TransData(1)..[[
+			<Property name="Attributes">]]..
+				NodeAtt('ATTACHMENT', build_parts..path)..
+			[[</Property>
+			<Property name="Children">
+				<Property value="TkSceneNodeData.xml">
+					<Property name="Name" value="collision99"/>
+					<Property name="Type" value="COLLISION"/>
+					]]..TransData()..[[
+					<Property name="Attributes">]]..
+						NodeAtt('TYPE', 'Sphere')..
+						NodeAtt('RADIUS', 1)..
+					[[</Property>
+					<Property name="Children"/>
+				</Property>
+				<Property value="TkSceneNodeData.xml">
+					<Property name="Name" value="interaction2"/>
+					<Property name="Type" value="LOCATOR"/>
+					]]..TransData()..[[
+				</Property>
 			</Property>
 		</Property>
-	</Property>]]
+	]]
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL harvet all in radius.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{
@@ -65,18 +68,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{
 		MBIN_FILE_SOURCE	= {
 			{
-				base_parts..'BIOROOM/ENTITIES/INTERACTION.ENTITY.MBIN',
-				base_parts..'TECH/CUBEROOM_PLANTERMEGA/INTERACTION.ENTITY.MBIN',
+				build_parts..'BIOROOM/ENTITIES/INTERACTION.ENTITY.MBIN',
+				build_parts..'TECH/CUBEROOM_PLANTERMEGA/INTERACTION.ENTITY.MBIN',
 			},
 			{
-				base_parts..'BIOROOM/ENTITIES/INTERACTION.ENTITY.MBIN',
-				base_parts..'DECORATION/BAZAAR/WATERVALVE/INTERACTION.ENTITY.MBIN',
+				build_parts..'BIOROOM/ENTITIES/INTERACTION.ENTITY.MBIN',
+				build_parts..'DECORATION/BAZAAR/WATERVALVE/INTERACTION.ENTITY.MBIN',
 				'REMOVE'
 			}
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= base_parts..'TECH/CUBEROOM_PLANTERMEGA/INTERACTION.ENTITY.MBIN',
+		MBIN_FILE_SOURCE	= build_parts..'TECH/CUBEROOM_PLANTERMEGA/INTERACTION.ENTITY.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				VALUE_CHANGE_TABLE 	= {
@@ -86,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= base_parts..'DECORATION/BAZAAR/WATERVALVE/INTERACTION.ENTITY.MBIN',
+		MBIN_FILE_SOURCE	= build_parts..'DECORATION/BAZAAR/WATERVALVE/INTERACTION.ENTITY.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				VALUE_CHANGE_TABLE 	= {
@@ -96,7 +99,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= base_parts..'TECH/CUBEROOM_PLANTERMEGA.SCENE.MBIN',
+		MBIN_FILE_SOURCE	= build_parts..'TECH/CUBEROOM_PLANTERMEGA.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'INTERACT'},
@@ -105,24 +108,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				PRECEDING_KEY_WORDS	= 'Children',
 				SECTION_ACTIVE		= 1,
-				ADD 				= AddObjectInteractionNode('TECH/CUBEROOM_PLANTERMEGA/')
+				ADD 				= AddObjectInteractionNode('TECH/CUBEROOM_PLANTERMEGA/INTERACTION.ENTITY.MBIN')
 			}
 		}
 	},
 	{
-		MBIN_FILE_SOURCE	= base_parts..'DECORATION/BAZAAR/WATERVALVE.SCENE.MBIN',
+		MBIN_FILE_SOURCE	= build_parts..'DECORATION/BAZAAR/WATERVALVE.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS	= 'Children',
 				SECTION_ACTIVE		= 1,
-				ADD 				= AddObjectInteractionNode('DECORATION/BAZAAR/WATERVALVE/')
+				ADD 				= AddObjectInteractionNode('DECORATION/BAZAAR/WATERVALVE/INTERACTION.ENTITY.MBIN')
 			}
 		}
-	}
+	},
 
 	-- amumss v4
 	-- {
-		-- MBIN_FILE_SOURCE	= base_parts..'BIOROOM.SCENE.MBIN',
+		-- MBIN_FILE_SOURCE	= build_parts..'BIOROOM.SCENE.MBIN',
 		-- EXML_CHANGE_TABLE	= {
 			-- {
 				-- SPECIAL_KEY_WORDS	= {'Name', 'Interaction'},
@@ -131,7 +134,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		-- }
 	-- },
 	-- {
-		-- MBIN_FILE_SOURCE	= base_parts..'TECH/CUBEROOM_PLANTERMEGA.SCENE.MBIN',
+		-- MBIN_FILE_SOURCE	= build_parts..'TECH/CUBEROOM_PLANTERMEGA.SCENE.MBIN',
 		-- EXML_CHANGE_TABLE	= {
 			-- {
 				-- SPECIAL_KEY_WORDS	= {'Name', 'INTERACT'},
@@ -156,7 +159,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				-- SECTION_EDIT 		= 'harvest_entity_scene_node',
 				-- SPECIAL_KEY_WORDS	= {'Name', 'ATTACHMENT'},
 				-- VALUE_CHANGE_TABLE 	= {
-					-- {'Value', base_parts..'TECH/CUBEROOM_PLANTERMEGA/INTERACTION.ENTITY.MBIN'},
+					-- {'Value', build_parts..'TECH/CUBEROOM_PLANTERMEGA/INTERACTION.ENTITY.MBIN'},
 				-- }
 			-- },
 			-- {
@@ -167,7 +170,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		-- }
 	-- },
 	-- {
-		-- MBIN_FILE_SOURCE	= base_parts..'DECORATION/BAZAAR/WATERVALVE.SCENE.MBIN',
+		-- MBIN_FILE_SOURCE	= build_parts..'DECORATION/BAZAAR/WATERVALVE.SCENE.MBIN',
 		-- EXML_CHANGE_TABLE	= {
 			-- {
 				-- SECTION_EDIT 		= 'harvest_entity_scene_node',
@@ -188,7 +191,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				-- SECTION_EDIT 		= 'harvest_entity_scene_node',
 				-- SPECIAL_KEY_WORDS	= {'Name', 'ATTACHMENT'},
 				-- VALUE_CHANGE_TABLE 	= {
-					-- {'Value', base_parts..'DECORATION/BAZAAR/WATERVALVE/INTERACTION.ENTITY.MBIN'},
+					-- {'Value', build_parts..'DECORATION/BAZAAR/WATERVALVE/INTERACTION.ENTITY.MBIN'},
 				-- }
 			-- },
 			-- {

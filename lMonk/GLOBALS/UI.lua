@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__GC UI.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= 3.99,
+	NMS_VERSION				= '4.08',
 	MOD_DESCRIPTION			= desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -21,11 +21,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'StackSizeRateChangeRate',					0.75},-- 1.25
 					{'StackSizeChangeMinRate',					-1},	-- 2
 					{'StackSizeChangeMaxRate',					140},	-- 60
+					{'MilestoneStingDisplayTime',				-4.5},	-- 6
+					{'StageStingDisplayTime',					-4.5},	-- 6
 					{'WantedDetectMinTimeout',					-2},	-- 5
-					{'TakeoffFuelMessageTime',					-3},	-- 5
+					{'TakeoffFuelMessageTime',					-3.5},	-- 5
 					{'RefinerPadStartTime',						-0.75},	-- 1
 					{'HUDMarkerDistanceOrTimeDistance',			31000},	-- 1250
 					{'FreighterLeaderIconDistance',				-3000},	-- 10000
+					{'HUDDisplayTime',							-2},	-- 6
 					{'NotificationsResourceExtractHintCount',	-1000},	-- 1500
 					{'NotificationStaminaHintDistanceWalked',	-8000},	-- 10000
 					{'NotificationScanTime',					-300},	-- 600
@@ -34,7 +37,8 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'NotificationMissionHintTime',				-10},	-- 21
 					{'NotificationMissionHintTimeCritical',		-24},	-- 60
 					{'NotificationMissionHintTimeSecondary',	-8},	-- 15
-					{'MessageNotificationTime',					-8}, 	-- 12	??
+					{'NotificationMinVisibleTime',				-2.5},	-- 3
+					{'MessageNotificationTime',					-10}, 	-- 12	??
 					{'FrontendConfirmTimeMouseMultiplier',		5.5},	-- 0.5
 					{'FrontendConfirmTimeFast',					-0.3},	-- 0.35
 					{'FrontendConfirmTime',						-0.6},	-- 0.7
@@ -43,7 +47,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'FrontendCursorWidth',						-5}, 	-- 9
 					{'DiscoverPlanetTotalTime',					-6}, 	-- 10
 					{'DiscoverPlanetMessageWait',				-1}, 	-- 1
-					{'DiscoverPlanetMessageTime',				-4.5}, 	-- 7
+					{'DiscoverPlanetMessageTime',				-5}, 	-- 7
 					{'TextChatMaxDisplayTime',					-45},	-- 60
 					{'TextChatStayBigAfterTextInput',			-10}, 	-- 15
 				}
@@ -55,7 +59,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'ShipOverheatSwitchMessageTime',			-1},	-- 1.6
 					{'TargetParallaxMouseMultiplier',			0}, 	-- 0.36
 					{'TargetParallaxMaintenancePageMultiplier',	0}, 	-- 0.1
-					{'NotificationMinVisibleTime',				-1},	-- 3
 					{'NotificationInteractHintStartTime',		99999},	-- 1800
 					{'NotificationBuildHintStartTime',			99999},	-- 31
 					{'NotificationJetpackTime',					99999},	-- 1.3

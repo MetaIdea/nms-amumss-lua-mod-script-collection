@@ -6,42 +6,37 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL dark warp tunnel.pak',
 	LUA_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
 		MBIN_FILE_SOURCE	= 'MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN',
-		EXML_CHANGE_TABLE	= (
-			function()
-				local tunnel_parts = {
-					'AnimatedLights',
-					'scrollingwave9',
-					'scrollingwaveALT',
-					'scrollingwaveALT1',
-					'stars1',
-					'stars2',
-					'gradientCloud',
-					'gradientCloudAlt',
-					'LightStreaks',
-					'LightStreaksSmall',
-					'LightStreaks1',
-					'LightLargeStreaks',
-				}
-				local T = {}
-				for _,v in ipairs(tunnel_parts) do
-					table.insert(T, {
-					SPECIAL_KEY_WORDS	= {'Name', v},
-					REMOVE 				= 'Section'
-				})
-				end
-				return T
-			end			
-		)()
-	},
-	{
-		MBIN_FILE_SOURCE	= 'MODELS/EFFECTS/WARP/WARPTUNNEL.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
+			{
+				FOREACH_SKW_GROUP 	= {
+					{'Name', 'AnimatedLights'},
+					{'Name', 'scrollingwave9'},
+					{'Name', 'scrollingwaveALT'},
+					{'Name', 'scrollingwaveALT1'},
+					{'Name', 'stars1'},
+					{'Name', 'stars2'},
+					{'Name', 'gradientCloud'},
+					{'Name', 'gradientCloudAlt'},
+					{'Name', 'LightStreaks'},
+					{'Name', 'LightStreaksSmall'},
+					{'Name', 'LightStreaks1'},
+					{'Name', 'LightLargeStreaks'},
+				},
+				REMOVE 				= 'Section'
+			},
+			{
+				REPLACE_TYPE 		= 'All',
+				SPECIAL_KEY_WORDS	= {'Name', 'FOV'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Value',		360}
+				}
+			},
 			{
 				REPLACE_TYPE 		= 'All',
 				SPECIAL_KEY_WORDS	= {'Name', 'FALLOFF'},
@@ -91,23 +86,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 					{'Value',		'MATERIALS/LIGHT_WARPTUNNEL.MATERIAL.MBIN'}
 				}
 			},
-			-- {
-				-- FOREACH_SKW_GROUP 	= {
-					-- {'Name', 'spotLight1'},
-					-- {'Name', 'scrollingwaveALT'},
-					-- {'Name', 'scrollingwaveALT1'},
-					-- {'Name', 'stars1'},
-					-- {'Name', 'stars2'},
-					-- {'Name', 'gradientCloud'},
-					-- {'Name', 'gradientCloudAlt'},
-					-- {'Name', 'LightStreaks'},
-					-- {'Name', 'LightStreaksSmall'},
-					-- {'Name', 'LightStreaks1'},
-					-- {'Name', 'LightStreaksSmall1'},
-					-- {'Name', 'LightLargeStreaks'},
-				-- },
-				-- REMOVE 				= 'Section'
-			-- },
 		}
 	},
 	{
@@ -172,11 +150,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						local flags = {
 							'_F22_TRANSPARENT_SCALAR',
 							'_F23_TRANSLUCENT',
-							'_F50_DISABLE_POSTPROCESS'	
+							'_F50_DISABLE_POSTPROCESS'
 						}
 						local exml = ''
 						for _,v in ipairs(flags) do
-							exml = exml..string.format( 
+							exml = exml..string.format(
 								[[<Property value="TkMaterialFlags.xml">
 									<Property name="MaterialFlag" value="%s"/>
 								</Property>]], v)

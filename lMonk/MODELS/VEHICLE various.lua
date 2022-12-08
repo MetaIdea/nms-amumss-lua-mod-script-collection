@@ -3,32 +3,39 @@ local desc = [[
   - Mech: Faster step anime (adjusted for faster speed in vehicle globals)
    Hardframe blue front 3part light
   - Bike: reduce turret scale for the Nomad exocraft
+  - Remove installed tech check for vehicle turret ... avoid bug
    Rescale engine nozzle, re-position the engine bloom glow
    Remove light shafts
   - Add spotlight to exocraft turret
   - remove glow from bike & buggy parts
 ]]-------------------------------------------------------------------------
 
-local function InsertNewLight(nlight)
-	local light = {
-		name = 'new_light_09',
-		tx = 0,		ty = 0,		tz = 0,
-		rx = 0,		ry = 0,		rz = 0,
-		sx = 1,		sy = 1,		sz = 1,
-		r = 1,		g = 1,		b = 1,
-		fov = 360,
-		i = 30000,
-		f = 'l',
-		fr = 1,
-	}
-	for k, v in pairs(nlight) do light[k] = v end
-
+local function InsertNewLight(newlight)
+	local function Hex2Pr(h)
+	-- translates a 2^16 hex string to 0-100% percentage
+		return tonumber(h, 16) * 0.00392
+	end
 	local function NodeAtt(name, val)
 		return [[
 			<Property value="TkSceneNodeAttributeData.xml">
 				<Property name="Name" value="]]..name..[["/>
 				<Property name="Value" value="]]..val..[["/>
 			</Property>]]
+	end
+	local light = {
+		name= 'n9',	fov= 360,
+		i=	30000,	f=	'q',	fr=	2,
+		r=	1,		g=	1,		b=	1,
+		tx=	0,		ty=	0,		tz=	0,
+		rx=	0,		ry=	0,		rz=	0,
+		sx=	1,		sy=	1,		sz=	1
+	}
+	for k, v in pairs(newlight or {}) do light[k] = v end
+	-- c = color as hex string. overwrites rgb if present.
+	if light.c then
+		light.r = Hex2Pr(light.c:sub(1, 2)) 
+		light.g = Hex2Pr(light.c:sub(3, 4)) 
+		light.b = Hex2Pr(light.c:sub(5, 6)) 
 	end
 	return [[
 		<Property value="TkSceneNodeData.xml">
@@ -47,23 +54,24 @@ local function InsertNewLight(nlight)
 			</Property>
 			<Property name="Attributes">]]..
 				NodeAtt('FOV',		 	light.fov)..
-				NodeAtt('FALLOFF',	 	(light.f == 'q' and 'quadratic' or 'linear'))..
+				NodeAtt('FALLOFF',	 	(light.f:sub(1,1) == 'q' and 'quadratic' or 'linear'))..
 				NodeAtt('FALLOFF_RATE',	light.fr)..
 				NodeAtt('INTENSITY',	light.i)..
 				NodeAtt('COL_R',		light.r)..
 				NodeAtt('COL_G',		light.g)..
 				NodeAtt('COL_B',		light.b)..
-				NodeAtt('COOKIE_IDX',	-1)..
 				NodeAtt('VOLUMETRIC',	0)..
+				NodeAtt('COOKIE_IDX',	-1)..
 				NodeAtt('MATERIAL',		'MATERIALS/LIGHT.MATERIAL.MBIN')..
 			[[</Property>
-		</Property>]]
+		</Property>
+	]]
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__MODEL vehicles various.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= 3.99,
+	NMS_VERSION				= '4.08',
 	MOD_DESCRIPTION			= desc,
 	AMUMSS_SUPPRESS_MSG		= 'MULTIPLE_STATEMENTS',
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
@@ -73,6 +81,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	---	Add |turret spotlight| to vehicle
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/SHARED/MININGLASER.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'Gun'},
+				PRECEDING_KEY_WORDS = 'Attributes',
+				REMOVE				= 'Section'
+			},
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'GunLight'},
 				VALUE_CHANGE_TABLE 	= {
@@ -87,11 +100,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				SPECIAL_KEY_WORDS	= {'Name', 'MiningLaser'},
 				ADD_OPTION			= 'AddAfterSection',
 				ADD 				= InsertNewLight({
-										name='turretlight',
-										i=94000, fov=62,
-										r=0.94,		g=0.96,		b=1,
-										tx=0.25,	ty=0.45,	tz=0.4,
-										rx=-10.6,	ry=180})
+										name='turret_light',
+										tx=	0.25,	ty=	0.45,	tz=	0.4,
+										rx=	10.6,	ry=	180,
+										fov	= 62,	i = 104000,	c=  'f0f5ff',
+										f	= 'l',	fr= 1.0
+									})
+			}
+		}
+	},
+	{
+	---	|No vehicle gun tech inventory check| bugged since waypoint update
+		MBIN_FILE_SOURCE	= {
+			'MODELS/COMMON/VEHICLES/BUGGY/ENTITIES/GUN.ENTITY.MBIN',
+			'MODELS/COMMON/VEHICLES/SHARED/MININGLASER/ENTITIES/GUN.ENTITY.MBIN'
+		},
+		EXML_CHANGE_TABLE	= {
+			{
+				PRECEDING_KEY_WORDS = 'GcTechnologyAttachmentComponentData.xml',
+				REMOVE				= 'Section'
 			}
 		}
 	},
@@ -137,11 +164,15 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'Name', 'spotLight4'},
+				SPECIAL_KEY_WORDS	= {'Name', 'Gun'},
+				PRECEDING_KEY_WORDS = 'Attributes',
 				REMOVE				= 'Section'
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'Name', 'spotLight5'},
+				FOREACH_SKW_GROUP 	= {
+					{'Name', 'spotLight4'},
+					{'Name', 'spotLight5'}
+				},
 				REMOVE				= 'Section'
 			}
 		}
@@ -189,6 +220,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				VALUE_CHANGE_TABLE	= {
 					{'y',			1},	-- 15
 				}
+			}
+		}
+	},
+	{
+	---	|remove wheeled bike fake light|
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/VEHICLES/WHEELEDBIKE/WHEELEDBIKEPRES/HQLIGHT_MAT1.MATERIAL.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				PRECEDING_KEY_WORDS	= 'Samplers',
+				REMOVE				= 'Section'
 			}
 		}
 	},

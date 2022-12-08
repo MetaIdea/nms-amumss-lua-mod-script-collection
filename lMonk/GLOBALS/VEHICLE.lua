@@ -8,7 +8,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__GC VEHICLE.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= 3.99,
+	NMS_VERSION				= '4.08',
 	MOD_DESCRIPTION			= desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -19,28 +19,27 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				MATH_OPERATION 		= '+',
 				VALUE_CHANGE_TABLE 	= {
-					-- {'MechAIResummonTriggerDistance',	105},	-- 100
-					-- {'MechAIResummonMinSpawnDistance',	10},	-- 10
-					{'MechJetpackTurnSpeed',			-1.2},	-- 3
-					{'MechLandBrake',					1},		-- 4
-					{'MechJetpackStrafeStrength',		1.4},	-- 0.5
-					{'MechJetpackLandTime',				-0.2},	-- 0.6
-					{'MechJetpackForce',				8},		-- 70
-					{'MechJetpackMaxSpeed',				20},	-- 20
-					{'MechJetpackMaxUpSpeed',			8},		-- 20
-					{'MechJetpackFallForce',			-22},	-- 80
-					{'MechPlayerGroundTurnSpeed',		0.2},	-- 0.5
-					{'MechTitanFallCameraShakeDist',	-34},	-- 80
-					{'MechLandCameraShakeDist',			-16},	-- 40
-					{'ExitStopTime',					1.5},	-- 0.5
-					{'ExitStopForce',					-40},	-- 50
-					{'SubmarineEjectRadius',			-1.8},	-- 1.8 -- stand on top
-					{'SubmarineEjectDownOffset',		3},		-- -2
-					{'UnderwaterFlattenMinDepth',		-2},	-- 1
-					{'MiningLaserRadius', 				-0.5},	-- 1.3
-					-- {'VehicleMaxSummonDistance',		4000},	-- 50
-					{'SpawnRotation',					-40},	-- 10
-					{'MechSpawnRotation',				-40},	-- 190
+					{'MechJetpackTurnSpeed',				-1.2},	-- 3
+					{'MechLandBrake',						1},		-- 4
+					{'MechJetpackStrafeStrength',			1.4},	-- 0.5
+					{'MechJetpackLandTime',					-0.2},	-- 0.6
+					{'MechJetpackForce',					8},		-- 70
+					{'MechJetpackMaxSpeed',					20},	-- 20
+					{'MechJetpackMaxUpSpeed',				8},		-- 20
+					{'MechJetpackFallForce',				-22},	-- 80
+					{'MechPlayerGroundTurnSpeed',			0.2},	-- 0.5
+					{'MechTitanFallCameraShakeDist',		-34},	-- 80
+					{'MechLandCameraShakeDist',				-16},	-- 40
+					{'ExitStopTime',						1.5},	-- 0.5
+					{'ExitStopForce',						-40},	-- 50
+					{'SubmarineEjectRadius',				-1.8},	-- 1.8 -- stand on top
+					{'SubmarineEjectDownOffset',			3},		-- -2
+					{'UnderwaterFlattenMinDepth',			-2},	-- 1
+					{'MiningLaserRadius', 					-0.5},	-- 1.3
+					{'VehicleMaxSummonDistance',			2000},	-- 50
+					{'VehicleMaxSummonDistanceUnderwater',	2000},	-- 50
+					{'SpawnRotation',						-40},	-- 10
+					{'MechSpawnRotation',					-40},	-- 190
 				}
 			},
 			{
@@ -104,10 +103,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				MATH_OPERATION 		= '+',
 				SPECIAL_KEY_WORDS	= {'Name', 'SUBMARINE'},
 				VALUE_CHANGE_TABLE 	= {
-					{'UnderwaterEnginePower',		2},		-- 6
-					{'UnderwaterEngineMaxSpeed',	4},		-- 15
-					{'UnderwaterEngineFalloff', 	-0.4},	-- 0.7
-					{'TopSpeedForward', 			4},		-- 15
+					{'UnderwaterEnginePower',		1},		-- 6
+					{'UnderwaterEngineMaxSpeed',	2},		-- 15
+					{'UnderwaterEngineFalloff', 	-0.45},	-- 0.7
+					{'TopSpeedForward', 			2},		-- 15
 					{'VehicleGravityWater',			-1},	-- 17.5
 				}
 			},

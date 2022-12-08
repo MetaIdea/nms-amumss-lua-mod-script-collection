@@ -1,67 +1,104 @@
-------------------------------------------------------------
+---------------------------------------------------------------
 local desc = [[
-  Restore old creature-scanned icon; Remove choice HUD icons
+  Reduce creature damage from laser
+  Remove excesive listing of proc upgrades in the catalogue
+  Restore old creature-scanned icon; Remove selected HUD icons
   Remove tiny cargo pod frigates
   Faster screen text
-  Increase suit tech inventory size; round stack to 10000
-  remove startup logo splash
+  hide inventory change tab marker (bulletpoint) and slashes
   add eye texture to alien head4
   better cloud map
-]]----------------------------------------------------------
+  keep whale song mission active
+]]-------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__META various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
-	{ -- 
-	---	|restore-remove HUD icons|
+	{
+	---	|no creature laser damage|
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/DEFAULTREALITY.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'Id', 'CREATURE', 'DamageType', 'Laser'},
+				INTEGER_TO_FLOAT	= 'Force',
+				SECTION_UP			= 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'Multiplier',	0.01}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'Id', 'FIEND', 'DamageType', 'Laser'},
+				INTEGER_TO_FLOAT	= 'Force',
+				SECTION_UP			= 1,
+				VALUE_CHANGE_TABLE 	= {
+					{'Multiplier',	0.03}
+				}
+			}
+		}
+	},
+	{
+	---	|no procs in catalogue| 
+		MBIN_FILE_SOURCE	= 'METADATA/REALITY/CATALOGUECRAFTING.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				FOREACH_SKW_GROUP 	= {
+					{'CategoryID', 'UI_PORTAL_CAT_TECH_SUIT'}, -- keep s-class >> {^U_.+[124X]X$}
+					{'CategoryID', 'UI_PORTAL_CAT_TECH_SHIP'}, -- keep s-class >> {^U_.+[123X]$}
+					{'CategoryID', 'UI_PORTAL_CAT_TECH_TOOL'},
+					{'CategoryID', 'UI_PORTAL_CAT_TECH_GUN'},
+					{'CategoryID', 'UI_PORTAL_CAT_TECH_VEH'}
+				},
+				PRECEDING_KEY_WORDS = 'NMSString0x10.xml',
+				VALUE_MATCH			= '{^U_.+[1234X]$}', -- remove all procs
+				REMOVE				= 'Section'
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'CategoryID', 'UI_PORTAL_CAT_TECH_FRE'},
+				PRECEDING_KEY_WORDS = 'NMSString0x10.xml',
+				VALUE_MATCH			= '{^U_FR_.+[123]$}', -- keep s-class
+				REMOVE				= 'Section'
+			}
+		}
+	},
+	{
+	---	|alt HUD icons|
 		MBIN_FILE_SOURCE	= 'METADATA/UI/HUD/SCANNERICONS.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
 				PRECEDING_KEY_WORDS = 'CreatureDiscovered',
 				VALUE_CHANGE_TABLE 	= {
-					{'Filename', 'TEXTURES/UI/HUD/CREATURE.DISCOVERED.DDS'}
+					{'Filename', 'TEXTURES/UI/HUD/ICONS/CREATURE.DISCOVERED.DDS'}
 				}
 			},
 			{
-				REPLACE_TYPE 		= 'All',
-				PRECEDING_KEY_WORDS = 'MessageBeacon',
+				FOREACH_SKW_GROUP = {
+					{'MessageBeacon',		'GcScannerIcon.xml'},
+					{'MessageBeaconSmall',	'GcScannerIcon.xml'},
+					{'FreighterBase',		'GcScannerIcon.xml'},
+					-- {'PlayerFreighter',		'GcScannerIcon.xml'},
+				},
 				VALUE_CHANGE_TABLE 	= {
 					{'Filename', 'TEXTURES/BLANK.64.DDS'}
 				}
-			},
-			{
-				REPLACE_TYPE 		= 'All',
-				PRECEDING_KEY_WORDS = 'MessageBeaconSmall',
-				VALUE_CHANGE_TABLE 	= {
-					{'Filename', 'TEXTURES/BLANK.64.DDS'}
-				}
-			},
-			{
-				REPLACE_TYPE 		= 'All',
-				PRECEDING_KEY_WORDS = 'FreighterBase',
-				VALUE_CHANGE_TABLE 	= {
-					{'Filename', 'TEXTURES/BLANK.64.DDS'}
-				}
-			},
-			-- {
-				-- REPLACE_TYPE 		= 'All',
-				-- PRECEDING_KEY_WORDS = 'PlayerFreighter',
-				-- VALUE_CHANGE_TABLE 	= {
-					-- {'Filename', 'TEXTURES/BLANK.64.DDS'}
-				-- }
-			-- }
+			}
 		}
 	},
 	{
-	---	|No tiny frigates|
-		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SPACE/AISPACESHIPMANAGER.MBIN',
+	---	|text images styles|
+		MBIN_FILE_SOURCE	= 'METADATA/UI/SPECIALSTYLESIMAGESDATA.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Filename', 'MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERTINY_PROC.SCENE.MBIN'},
+				SPECIAL_KEY_WORDS	= {'Name', 'BULLETPOINT'},
+				VALUE_CHANGE_TABLE 	= {
+					{'Path',		''}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'Name', 'SLASH'},
 				REMOVE				= 'Section'
 			}
 		}
@@ -82,35 +119,12 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
-	---	|Increase suit tech inventory| size; round stack to 10000
-		MBIN_FILE_SOURCE	= {
-			'METADATA/GAMESTATE/DEFAULTINVENTORYBALANCE.MBIN',
-			'METADATA/GAMESTATE/DEFAULTINVENTORYBALANCESURVIVAL.MBIN'
-		},
+	---	|No tiny frigates|
+		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SPACE/AISPACESHIPMANAGER.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				VALUE_CHANGE_TABLE 	= {
-					{'DefaultSubstanceMaxAmount',			10000},
-					{'SubstanceMaxAmountLimit',				10000},
-					{'ProductMaxAmountLimit',				10000},
-					{'ShipProductStorageMultiplier',		10},	-- 5
-					{'PlayerPersonalInventoryTechWidth',	6},
-					{'PlayerPersonalInventoryTechHeight',	5},
-					{'DeconstructRefundPercentage',			0.75}	-- 0.5
-				}
-			}
-		}
-	},
-	{
-	---	Increase |substance stack in survival| mode
-		MBIN_FILE_SOURCE	= 'METADATA/GAMESTATE/DEFAULTINVENTORYBALANCESURVIVAL.MBIN',
-		EXML_CHANGE_TABLE	= {
-			{
-				VALUE_CHANGE_TABLE 	= {
-					{'DefaultSubstanceMaxAmount',			1000},
-					{'PlayerPersonalInventoryTechWidth',	5},
-					{'PlayerPersonalInventoryTechHeight',	5},
-				}
+				SPECIAL_KEY_WORDS	= {'Filename', 'MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERTINY_PROC.SCENE.MBIN'},
+				REMOVE				= 'Section'
 			}
 		}
 	},
@@ -135,9 +149,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{
 				SPECIAL_KEY_WORDS	= {'GroupID', 'FOURTH_HEAD_1'},
 				PRECEDING_KEY_WORDS = 'Descriptors',
-				ADD 				= [[<Property value="NMSString0x20.xml">
-											<Property name="Value" value="_EYES_DEFAULT1"/>
-										</Property>]]
+				ADD 				= [[
+					<Property value="NMSString0x20.xml">
+						<Property name="Value" value="_EYES_DEFAULT1"/>
+					</Property>]]
 			}
 		}
 	},
@@ -152,5 +167,46 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			}
 		}
-	}
+	},
+	{
+	---	|keep whale song mission active|
+		MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/MISSIONS/SPACEPOIMISSIONTABLE.MBIN',
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'MissionID', 'BIO_FRIG'},
+				PRECEDING_KEY_WORDS	= 'CancelingConditions',
+				REMOVE				= 'Section',
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'MissionID', 'BIO_FRIG'},
+				SECTION_ACTIVE		= 1,
+				VALUE_CHANGE_TABLE	= {
+					{'RestartOnCompletion', 'True'}
+				}
+			},
+			{
+				SPECIAL_KEY_WORDS	= {'MissionID', 'BIO_FRIG', 'Stage', 'GcMissionSequenceCreateSpecificPulseEncounter.xml'},
+				VALUE_CHANGE_TABLE	= {
+					{'PulseEncounterID', 'BIO_FRIG'}
+				}
+			}
+		}
+	},
+	-- {
+	-- ---	|deeper oceans|
+		-- MBIN_FILE_SOURCE	= 'METADATA/SIMULATION/SOLARSYSTEM/VOXELGENERATORSETTINGS.MBIN',
+		-- EXML_CHANGE_TABLE	= {
+			-- {
+				-- -- MATH_OPERATION 		= '+',
+				-- REPLACE_TYPE 		= 'All',
+				-- PRECEDING_KEY_WORDS = 'UnderWater',
+				-- VALUE_CHANGE_TABLE 	= {
+					-- {'Subtract',	true},
+					-- -- {'Height',		1000},
+					-- {'OffsetType',	'Base'}, -- Zero, Base, All, SeaLevel
+					-- {'HeightOffset',200}
+				-- }
+			-- },
+		-- }
+	-- }
 }}}}

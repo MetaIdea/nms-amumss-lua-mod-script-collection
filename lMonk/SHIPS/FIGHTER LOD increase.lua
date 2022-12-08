@@ -1,48 +1,48 @@
------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 local desc = [[
-  Increase LOD for all parts - making the figther LOD the same as all other ship models.
+  Increase LOD for all fighter parts - making figther LOD equal to other ships.
   Deletes the in-scene LODDIST attributes and attaches a LodDistances entity to
   the main LOD0 node/s of the model.
-  * Needs to be merged with 'fighter various tweaks' script(!)
-]]---------------------------------------------------------------------------------------
+  * Needs to be merged with other fighter script(!)
+]]------------------------------------------------------------------------------
 
 local fighter_main_part_node = {
-	{'ACCESSORIES/ACCA.SCENE.MBIN',						'AccALOD0'},
-	{'ACCESSORIES/TURBINEAA.SCENE.MBIN',				'Wings5LOD0'},
-	{'COCKPIT/COCKPIT_B/COCKPITB.SCENE.MBIN',			'CockpitBLOD0'},
-	{'COCKPIT/COCKPIT_A/COCKPITA.SCENE.MBIN',			'BodyLOD0'},
-	{'COCKPIT/COCKPIT_A/GOLDCOCKPITA.SCENE.MBIN',		'BodyLOD0'},
-	{'COCKPIT/COCKPIT_D/COCKPITD.SCENE.MBIN',			'BodyLOD0'},
-	{'COCKPIT/COCKPIT_E/COCKPIT_E.SCENE.MBIN',			'BodyLOD0'},
-	{'COCKPIT/COCKPIT_F/COCKPTF.SCENE.MBIN',			'BodyLOD0'},
-	{'NOSE/COCKPITA_NOSEA/COCKPITANOSEA.SCENE.MBIN'},
-	{'NOSE/COCKPITA_NOSEA/GOLDCOCKPITANOSEA.SCENE.MBIN'},
-	{'NOSE/COCKPITA_NOSEB/COCKPITANOSEB.SCENE.MBIN'},
-	{'NOSE/COCKPITA_NOSEC/COCKPITANOSEC.SCENE.MBIN'},
-	{'NOSE/COCKPITA_NOSED/COCKPITANOSED.SCENE.MBIN'},
-	{'NOSE/COCKPITA_NOSEE/COCKPITANOSEE.SCENE.MBIN'},	
-	{'ENGINE/ENGINE_B/ENGINEB.SCENE.MBIN',				'EngineBLOD0'},
-	{'ENGINE/ENGINE_C/ENGINEC.SCENE.MBIN',				'EngineCLOD0'},
-	{'ENGINE/ENGINE_C/GOLDENGINEC.SCENE.MBIN',			'EngineCLOD0'},
-	{'ENGINE/ENGINE_D/ENGINED.SCENE.MBIN',				'EngineD1LOD0'},
-	{'WINGS/WINGS_A/WINGS_A.SCENE.MBIN',				'WingsALOD0'},
-	{'WINGS/WINGS_A/GOLDWINGS_A.SCENE.MBIN',			'WingsALOD0'},
-	{'WINGS/WINGS_B/WINGSB.SCENE.MBIN',					{'WingsLOD0','WingsBLOD0'}},
-	{'WINGS/WINGS_D/WINGSD.SCENE.MBIN',					'WingsDLOD0'},
-	{'WINGS/WINGS_E/WINGSE.SCENE.MBIN',					{'WingELOD0', 'WingE2LOD0'}},
-	{'WINGS/WINGS_G/WINGSG.SCENE.MBIN'},
-	{'WINGS/WINGS_H/WINGSH.SCENE.MBIN'},
-	{'WINGS/WINGS_I/WINGSI.SCENE.MBIN'},
-	{'WINGS/WINGS_J/WINGSJ.SCENE.MBIN',					{'_WingsJ_FullLOD0', '_WingsJ_LowLOD0', '_WingsJ_MidLOD0'}},
-	{'WINGS/WINGS_K/WINGSK.SCENE.MBIN',					{'WingsK_ALOD0', 'WingsK_BLOD0'}},
-	{'SUBWINGS/SUBWINGS_A/SUBWINGSALEFT.SCENE.MBIN',	'SubWingsALeftLOD0'},
-	{'SUBWINGS/SUBWINGS_A/SUBWINGSARIGHT.SCENE.MBIN',	'SubWingsARightLOD0'},
-	{'SUBWINGS/SUBWINGS_B/SUBWINGSBLEFT.SCENE.MBIN',	'SubWingsBLeftLOD0'},
-	{'SUBWINGS/SUBWINGS_B/SUBWINGSBRIGHT.SCENE.MBIN',	'SubWingsBRightLOD0'},
-	{'SUBWINGS/SUBWINGS_C/SUBWINGSCLEFT.SCENE.MBIN',	'SubWingsCLeftLOD0'},
-	{'SUBWINGS/SUBWINGS_C/SUBWINGSCRIGHT.SCENE.MBIN',	'SubWingsCRightLOD0'},
-	{'SUBWINGS/SUBWINGS_D/SUBWINGSDLEFT.SCENE.MBIN',	'SubWingDLeftLOD0'},
-	{'SUBWINGS/SUBWINGS_D/SUBWINGSDRIGHT.SCENE.MBIN',	'SubWingDRightLOD0'},
+	{mbin='ACCESSORIES/ACCA.SCENE.MBIN',					scn='AccALOD0'},
+	{mbin='ACCESSORIES/TURBINEAA.SCENE.MBIN',				scn='Wings5LOD0'},
+	{mbin='COCKPIT/COCKPIT_B/COCKPITB.SCENE.MBIN',			scn='CockpitBLOD0'},
+	{mbin='COCKPIT/COCKPIT_A/COCKPITA.SCENE.MBIN',			scn='BodyLOD0'},
+	{mbin='COCKPIT/COCKPIT_A/GOLDCOCKPITA.SCENE.MBIN',		scn='BodyLOD0'},
+	{mbin='COCKPIT/COCKPIT_D/COCKPITD.SCENE.MBIN',			scn='BodyLOD0'},
+	{mbin='COCKPIT/COCKPIT_E/COCKPIT_E.SCENE.MBIN',			scn='BodyLOD0'},
+	{mbin='COCKPIT/COCKPIT_F/COCKPTF.SCENE.MBIN',			scn='BodyLOD0'},
+	{mbin='NOSE/COCKPITA_NOSEA/COCKPITANOSEA.SCENE.MBIN'},
+	{mbin='NOSE/COCKPITA_NOSEA/GOLDCOCKPITANOSEA.SCENE.MBIN'},
+	{mbin='NOSE/COCKPITA_NOSEB/COCKPITANOSEB.SCENE.MBIN'},
+	{mbin='NOSE/COCKPITA_NOSEC/COCKPITANOSEC.SCENE.MBIN'},
+	{mbin='NOSE/COCKPITA_NOSED/COCKPITANOSED.SCENE.MBIN'},
+	{mbin='NOSE/COCKPITA_NOSEE/COCKPITANOSEE.SCENE.MBIN'},	
+	{mbin='ENGINE/ENGINE_B/ENGINEB.SCENE.MBIN',				scn='EngineBLOD0'},
+	{mbin='ENGINE/ENGINE_C/ENGINEC.SCENE.MBIN',				scn='EngineCLOD0'},
+	{mbin='ENGINE/ENGINE_C/GOLDENGINEC.SCENE.MBIN',			scn='EngineCLOD0'},
+	{mbin='ENGINE/ENGINE_D/ENGINED.SCENE.MBIN',				scn='EngineD1LOD0'},
+	{mbin='WINGS/WINGS_A/WINGS_A.SCENE.MBIN',				scn='WingsALOD0'},
+	{mbin='WINGS/WINGS_A/GOLDWINGS_A.SCENE.MBIN',			scn='WingsALOD0'},
+	{mbin='WINGS/WINGS_B/WINGSB.SCENE.MBIN',				scn={'WingsLOD0','WingsBLOD0'}},
+	{mbin='WINGS/WINGS_D/WINGSD.SCENE.MBIN',				scn='WingsDLOD0'},
+	{mbin='WINGS/WINGS_E/WINGSE.SCENE.MBIN',				scn={'WingELOD0', 'WingE2LOD0'}},
+	{mbin='WINGS/WINGS_G/WINGSG.SCENE.MBIN'},
+	{mbin='WINGS/WINGS_H/WINGSH.SCENE.MBIN'},
+	{mbin='WINGS/WINGS_I/WINGSI.SCENE.MBIN'},
+	{mbin='WINGS/WINGS_J/WINGSJ.SCENE.MBIN',				scn={'_WingsJ_FullLOD0', '_WingsJ_LowLOD0', '_WingsJ_MidLOD0'}},
+	-- {mbin='WINGS/WINGS_K/WINGSK.SCENE.MBIN',				scn={'WingsK_ALOD0', 'WingsK_BLOD0'}},
+	{mbin='SUBWINGS/SUBWINGS_A/SUBWINGSALEFT.SCENE.MBIN',	scn='SubWingsALeftLOD0'},
+	{mbin='SUBWINGS/SUBWINGS_A/SUBWINGSARIGHT.SCENE.MBIN',	scn='SubWingsARightLOD0'},
+	{mbin='SUBWINGS/SUBWINGS_B/SUBWINGSBLEFT.SCENE.MBIN',	scn='SubWingsBLeftLOD0'},
+	{mbin='SUBWINGS/SUBWINGS_B/SUBWINGSBRIGHT.SCENE.MBIN',	scn='SubWingsBRightLOD0'},
+	{mbin='SUBWINGS/SUBWINGS_C/SUBWINGSCLEFT.SCENE.MBIN',	scn='SubWingsCLeftLOD0'},
+	{mbin='SUBWINGS/SUBWINGS_C/SUBWINGSCRIGHT.SCENE.MBIN',	scn='SubWingsCRightLOD0'},
+	{mbin='SUBWINGS/SUBWINGS_D/SUBWINGSDLEFT.SCENE.MBIN',	scn='SubWingDLeftLOD0'},
+	{mbin='SUBWINGS/SUBWINGS_D/SUBWINGSDRIGHT.SCENE.MBIN',	scn='SubWingDRightLOD0'},
 }
 
 local function ChangeFighterLodAttribute()
@@ -54,44 +54,38 @@ local function ChangeFighterLodAttribute()
 			ADD 				= [[
 				<Property value="TkSceneNodeAttributeData.xml">
 					<Property name="Name" value="ATTACHMENT"/>
-					<Property name="AltID" value=""/>
 					<Property name="Value" value="MODELS/COMMON/SPACECRAFT/SHARED/ENTITIES/SHAREDLODDISTANCES.ENTITY.MBIN"/>
-				</Property>
-			]]
+				</Property>]]
 		}
 	end
 	local T = {}
-	for _,mbin in ipairs(fighter_main_part_node) do
-		local src = {}
-		src.MBIN_FILE_SOURCE = 'MODELS/COMMON/SPACECRAFT/FIGHTERS/'..mbin[1]
-		src.EXML_CHANGE_TABLE = {
+	for _,src in ipairs(fighter_main_part_node) do
+		local tm = {}
+		tm.MBIN_FILE_SOURCE = 'MODELS/COMMON/SPACECRAFT/FIGHTERS/'..src.mbin
+		tm.EXML_CHANGE_TABLE = {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', 'LODDIST1'},
-				REMOVE				= 'Section'
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'LODDIST2'},
-				REMOVE				= 'Section'
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'LODDIST3'},
-				REMOVE				= 'Section'
+				FOREACH_SKW_GROUP 	= {
+					{'Name', 'LODDIST1'},
+					{'Name', 'LODDIST2'},
+					{'Name', 'LODDIST3'},
+				},
+				REMOVE = 'Section'
 			},
 			{
 				SPECIAL_KEY_WORDS	= {'Name', 'NUMLODS'},
 				VALUE_CHANGE_TABLE 	= { {'Value', 5} }
 			}
 		}
-		if mbin[2] then
-			if type(mbin[2]) == 'table' then
-				for _,v in ipairs(mbin[2]) do
-					table.insert(src.EXML_CHANGE_TABLE, AddEntityAttribute(v))
+		if src.scn then
+			if type(src.scn) == 'table' then
+				for _,v in ipairs(src.scn) do
+					table.insert(tm.EXML_CHANGE_TABLE, AddEntityAttribute(v))
 				end
 			else
-				table.insert(src.EXML_CHANGE_TABLE, AddEntityAttribute(mbin[2]))
+				table.insert(tm.EXML_CHANGE_TABLE, AddEntityAttribute(src.scn))
 			end
 		end
-		table.insert(T, src)
+		table.insert(T, tm)
 	end
 	return T
 end
@@ -100,7 +94,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__SHIP fighter LOD increase.pak',
 	MOD_AUTHOR			= 'lMonk',
 	MOD_BATCHNAME		= '__SHIP fighter merged.pak',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {

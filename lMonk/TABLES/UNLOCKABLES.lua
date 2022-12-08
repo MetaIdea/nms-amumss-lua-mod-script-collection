@@ -46,20 +46,19 @@ local unlockable_items = {
 		tree	= {
 			'SHIPJUMP_ALIEN', {
 				{
+					'WARP_ALIEN'
+				},{
 					'SHIPGUN_ALIEN', {
-						{'SHIPLAS_ALIEN'}
+						{'SHIPLAS_ALIEN'},
+						{'SHIELD_ALIEN'}
 					}
 				},{
 					'LAUNCHER_ALIEN', {
 						{'CHARGER_ALIEN'}
 					}
 				},{
-					'SHIELD_ALIEN', {
+					'SHIPSCAN_ALIEN', {
 						{'CARGO_S_ALIEN'}
-					}
-				},{
-					'WARP_ALIEN', {
-						{'SHIPSCAN_ALIEN'}
 					}
 				}
 			}
@@ -71,7 +70,7 @@ local unlockable_items = {
 		tree	 = {'FREI_INV_TOKEN'}
 	},{
 ---	freighter: singularity engine
-		parent	 = {'F_SCANNER'},
+		parent	 = {'F_HDRIVEBOOST3'},
 		haschild = false,
 		tree	 = {'F_MEGAWARP'}
 	},{
@@ -199,8 +198,12 @@ local unlockable_items = {
 		tree	= {
 			'BOLT', {
 				{
-					'UT_BOLT',
-						{'UT_BOLTBOUNCE'}
+					'UT_BOLT', {
+						{
+							'BOLT_SM',
+								{'UT_BOLTBOUNCE'}
+						}
+					}
 				},{
 					'FLAME'
 				},{
@@ -748,27 +751,14 @@ local function AddTreeToChangeTable(node)
 	return T
 end
 
-local function DeleteTreeInChangeTable(node)
-	local T = {}
-	if node.issubs then
-	--- delete full tree ---
-		table.insert(T, {
-			SPECIAL_KEY_WORDS	= {'Title', node.parent[1], 'Title', node.parent[2]},
-			REMOVE				= 'Section'
-		})
-	end
-	return T
-end
-
 local function AddAllTrees()
 	local T = {}
-	-- do all REMOVEs before adding
+	T[1] = { FSKWG={}, REMOVE='Section' }
 	for _,tree in ipairs(unlockable_items) do
-		for _,n in ipairs(DeleteTreeInChangeTable(tree)) do
-			table.insert(T, n)
+		-- do all REMOVEs before adding
+		if tree.issubs then
+			table.insert(T[1].FSKWG, {'Title', tree.parent[1], 'Title', tree.parent[2]})
 		end
-	end
-	for _,tree in ipairs(unlockable_items) do
 		for _,n in ipairs(AddTreeToChangeTable(tree)) do
 			table.insert(T, n)
 		end
@@ -779,7 +769,7 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__TABLE UNLOCKABLES.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	AMUMSS_SUPPRESS_MSG	= 'MULTIPLE_STATEMENTS',
 	MODIFICATIONS 		= {{

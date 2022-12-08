@@ -7,7 +7,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__GC GALAXY.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= 3.99,
+	NMS_VERSION				= '4.08',
 	MOD_DESCRIPTION			= desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -17,15 +17,21 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		EXML_CHANGE_TABLE	= {
 			{
 				MATH_OPERATION 		= '+',
+				VALUE_CHANGE_TABLE 	= {
+					{'FinalTransitionMaxSpeed',	50},	-- 350
+				}
+			},
+			{
+				MATH_OPERATION 		= '+',
 				PRECEDING_KEY_WORDS = {'SolarSystemParameters', 'PlanetParameters'},
 				VALUE_CHANGE_TABLE 	= {
-					{'FirstOrbitRadiusMin',		30},	-- 120
+					{'FirstOrbitRadiusMin',		20},	-- 120
 					{'FirstOrbitRadiusMax',		40},	-- 160
 					{'OrbitRadiusOffsetMin',	12},	-- 50
 					{'OrbitRadiusOffsetMax',	10},	-- 70
 					{'OrbitRotationSpeedMin',	2},		-- 1
 					{'OrbitRotationSpeedMax',	5.5},	-- 2.5
-					{'OrbitLineWidth',			0.1}	-- 0.5
+					{'OrbitLineWidth',			0.05}	-- 0.5
 				}
 			},
 			{
@@ -33,15 +39,16 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				PRECEDING_KEY_WORDS = {'SolarSystemParameters', 'MoonParameters'},
 				VALUE_CHANGE_TABLE 	= {
 					{'FirstOrbitRadiusMin',		-2},	-- 15
-					{'FirstOrbitRadiusMax',		1},		-- 20
+					{'FirstOrbitRadiusMax',		2},		-- 20
 					{'OrbitRadiusOffsetMin',	-2},	-- 15
 					{'OrbitRadiusOffsetMax',	1},		-- 35
-					{'OrbitRotationSpeedMin',	2},		-- 2
-					{'OrbitRotationSpeedMax',	3},		-- 5
-					{'OrbitLineWidth',			0.03}	-- 0.3
+					{'OrbitRotationSpeedMin',	1},		-- 2
+					{'OrbitRotationSpeedMax',	2},		-- 5
+					{'OrbitLineWidth',			0.05}	-- 0.3
 				}
 			},
 			{
+				-- FAC9054D
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Yellow'},
 				VALUE_CHANGE_TABLE	= {
 					{'R',			0.98},	-- 1
@@ -51,6 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				-- 25BD0380
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Green'},
 				VALUE_CHANGE_TABLE	= {
 					{'R',			0.144},	-- 0.245
@@ -60,6 +68,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				-- 1852F580
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Blue'},
 				VALUE_CHANGE_TABLE	= {
 					{'R',			0.096},	-- 0.296
@@ -69,6 +78,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
+				-- FC293380
 				PRECEDING_KEY_WORDS = {'BaseStarDefaultColours', 'ColourByStarType', 'Red'},
 				VALUE_CHANGE_TABLE	= {
 					{'R',			0.988},	-- 0.947

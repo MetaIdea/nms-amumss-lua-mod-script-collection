@@ -11,7 +11,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '__SHIP various.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= 3.99,
+	NMS_VERSION				= '4.08',
 	MOD_DESCRIPTION			= desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
@@ -31,13 +31,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'Name', 'pointLight1', 'Name', 'INTENSITY'},
-				VALUE_CHANGE_TABLE 	= {
-					{'Value',		26000}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'pointLight2', 'Name', 'INTENSITY'},
+				FOREACH_SKW_GROUP 	= {
+					{'Name', 'pointLight1', 'Name', 'INTENSITY'},
+					{'Name', 'pointLight2', 'Name', 'INTENSITY'}
+				},
 				VALUE_CHANGE_TABLE 	= {
 					{'Value',		26000}
 				}
@@ -69,19 +66,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITD/COCKPITD.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', 'Trail'},
+				FOREACH_SKW_GROUP 	= {
+					{'Name', 'Trail'},
+					{'Name', 'Trail1'}
+				},
 				VALUE_CHANGE_TABLE 	= {
 					{'TransY',		1.8692},	-- 2.069246
 					{'TransZ',		-2.019},	-- -2.51901
 					{'RotX',		0}			-- 30.782648
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', 'Trail1'},
-				VALUE_CHANGE_TABLE 	= {
-					{'TransY',		1.8692},
-					{'TransZ',		-2.019},
-					{'RotX',		0}
 				}
 			},
 			{
@@ -116,15 +108,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/COCKPIT/COCKPITA/BACK/COCKPITABACKB.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', '_logo1_A'},
-				VALUE_CHANGE_TABLE 	= {
-					-- {'RotY',		-90},
-					{'TransY',		3.26},	-- 2.65596
-					{'TransZ',		-4.72},	-- -3.72796
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_logo2_A'},
+				FOREACH_SKW_GROUP 	= {
+					{'Name', '_logo1_A'},
+					{'Name', '_logo2_A'}
+				},
 				VALUE_CHANGE_TABLE 	= {
 					{'TransY',		3.26},	-- 2.65596
 					{'TransZ',		-4.72},	-- -3.72796
@@ -152,17 +139,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGILEFT.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', '_logo1_A1'},
-				VALUE_CHANGE_TABLE 	= {
-					{'RotX',		-90},	-- 90
-					{'RotY',		-90},	-- 0
-					{'TransX',		1.1},	-- 0.9721
-					{'ScaleX', 		0.56},
-					{'ScaleY', 		0.56}
-				}
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_logo2_A2'},
+				FOREACH_SKW_GROUP 	= {
+					{'Name', '_logo1_A1'},
+					{'Name', '_logo2_A2'}
+				},
 				VALUE_CHANGE_TABLE 	= {
 					{'RotX',		-90},	-- 90
 					{'RotY',		-90},	-- 0
@@ -177,19 +157,25 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/SCIENTIFIC/WINGS/WINGSI/WINGIRIGHT.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', '_logo1_A1'},
+				FOREACH_SKW_GROUP 	= {
+					{'Name', '_logo1_A1'},
+					{'Name', '_logo2_A2'}
+				},
 				VALUE_CHANGE_TABLE 	= {
 					{'RotY',		-90},
 					{'ScaleX', 		0.56},
 					{'ScaleY', 		0.56}
 				}
-			},
+			}
+		}
+	},
+	{
+	---	|infraknife blue shot|
+		MBIN_FILE_SOURCE	= 'MODELS/COMMON/PROJECTILES/SHIP_MINIGUN/SHIPMINIGUNPROJECTILEGRADIENT.MATERIAL.MBIN',
+		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', '_logo2_A2'},
 				VALUE_CHANGE_TABLE 	= {
-					{'RotY',		-90},
-					{'ScaleX', 		0.56},
-					{'ScaleY', 		0.56}
+					{'Map', 'TEXTURES/EFFECTS/TRAILS/HOT/INFRABLUE.DDS'}
 				}
 			}
 		}
@@ -311,6 +297,36 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		}
 	},
 	{
+	---	dropship |subwing_E_L letter| decal
+		MBIN_FILE_SOURCE	= {
+			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSE/SUBWINGSE_LEFT.SCENE.MBIN',
+		},
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
+				VALUE_CHANGE_TABLE 	= {
+					{'RotX',		-42.487},	-- 42.486935
+					{'RotY',		90},		-- -90
+				}
+			}
+		}
+	},
+	{
+	---	dropship |subwing_E_R letter| decal
+		MBIN_FILE_SOURCE	= {
+			'MODELS/COMMON/SPACECRAFT/DROPSHIPS/SUBWINGS/SUBWINGSE/SUBWINGSE_RIGHT.SCENE.MBIN',
+		},
+		EXML_CHANGE_TABLE	= {
+			{
+				SPECIAL_KEY_WORDS	= {'Name', '_Letter_A'},
+				VALUE_CHANGE_TABLE 	= {
+					{'RotX',		42.487},	-- -42.486935
+					{'RotY',		-90},		-- 90
+				}
+			}
+		}
+	},
+	{
 		---	|dropship hull decals| fix
 		MBIN_FILE_SOURCE	= 'MODELS/COMMON/SPACECRAFT/DROPSHIPS/HULL/HULLA.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
@@ -327,10 +343,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'Name', '_SideL_A3'}, -- L horiz
-				REMOVE				= 'Section'
-			},
-			{
 				SPECIAL_KEY_WORDS	= {'Name', '_SideL_A'}, -- L diagonal
 				VALUE_CHANGE_TABLE 	= {
 					{'TransX', 		0},		-- 1.36
@@ -342,7 +354,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				}
 			},
 			{
-				SPECIAL_KEY_WORDS	= {'Name', '_SideR_A'}, -- R diagonal
+				FOREACH_SKW_GROUP 	= {
+					{'Name', '_SideL_A3'},	-- L horiz
+					{'Name', '_SideR_A'},	-- R diagonal
+				},
 				REMOVE				= 'Section'
 			}
 		}

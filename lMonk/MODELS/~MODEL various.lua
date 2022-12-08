@@ -15,7 +15,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '__MODEL various.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= 3.99,
+	NMS_VERSION			= '4.08',
 	MOD_DESCRIPTION		= desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
@@ -239,27 +239,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		MBIN_FILE_SOURCE	= 'MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/PORTAL.SCENE.MBIN',
 		EXML_CHANGE_TABLE	= {
 			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Clump1'},
-				REMOVE				= 'Section'
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Clump2'},
-				REMOVE				= 'Section'
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Clump3'},
-				REMOVE				= 'Section'
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Clump4'},
-				REMOVE				= 'Section'
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Clump5'},
-				REMOVE				= 'Section'
-			},
-			{
-				SPECIAL_KEY_WORDS	= {'Name', '_Clump6'},
+				FOREACH_SKW_GROUP 	= {
+					{'Name',	'_Clump1'},
+					{'Name',	'_Clump2'},
+					{'Name',	'_Clump3'},
+					{'Name',	'_Clump4'},
+					{'Name',	'_Clump5'},
+					{'Name',	'_Clump6'}
+				},
 				REMOVE				= 'Section'
 			}
 		}
