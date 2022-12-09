@@ -1,6 +1,6 @@
 local modfilename = "_UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "v1.9"
+local lua_version = "v2.0"
 local mod_author  = "Silent369"
 local nms_version = "4.0.x"
 local description = "Unifies Blackhole/Portal/Ship/Teleporter Warps"
@@ -10,6 +10,7 @@ local description = "Unifies Blackhole/Portal/Ship/Teleporter Warps"
 --MATERIALS\LIGHT_WARPTUNNEL.MATERIAL.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL\ENGGLOWCAPMAT.MATERIAL.MBIN
+--MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN
 --MODELS\EFFECTS\WARP\WARPTUNNEL\TUNNELMAT1.MATERIAL.MBIN
 
 _FOV        = "360"
@@ -20,7 +21,7 @@ _COL_R      = "1.000000"
 _COL_G      = "0.555000"
 _COL_B      = "1.000000"
 
-_WarpTunnelScale = 800 --200
+_WarpTunnelScale = 250 --200
 
 _TkMaterialFlags =
 [[
@@ -101,6 +102,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REMOVE"]              = "SECTION"
                         },
                         {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "LightStreaksSmall1"},
+                            ["REMOVE"]              = "SECTION"
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "LightStreaks1"},
                             ["REMOVE"]              = "SECTION"
                         },
@@ -173,6 +178,33 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
 
                         --|----------------------------------------------------------------------------------------
+                        --| Change LIGHTARMS
+                        --|----------------------------------------------------------------------------------------
+
+                {
+                    ["MBIN_FILE_SOURCE"]    = {
+                        "MODELS\EFFECTS\WARP\WARPTUNNEL\LIGHTARMSMAT.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"]   =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name", "LightArmsMat"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Class",           "Translucent"}, --Original "GlowTranslucent"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Name", "gDiffuseMap"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Map", "TEXTURES/EFFECTS/WARP/LIGHTARMS.DDS"},
+                            }
+                        },
+                    }
+                },
+
+                        --|----------------------------------------------------------------------------------------
                         --| Change TUNNELMAT1 Image
                         --|----------------------------------------------------------------------------------------
 
@@ -228,7 +260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]   = {"Name", "gCustomParams01Vec4"},
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"t",       "0.02"}, --Original "0.04"
+                                {"t",               "0.03"}, --Original "0.04"
                             }
                         },
                     }
@@ -257,8 +289,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"Class",                "Opaque"}, --Original "Opaque"
-                                {"TransparencyLayerID",       "0"}, --waaay back in the z order
+                                {"Class",               "Opaque"}, --Original "Opaque"
+                                {"TransparencyLayerID",   "-100"}, --waaay back in the z order
                             }
                         },
                         {
