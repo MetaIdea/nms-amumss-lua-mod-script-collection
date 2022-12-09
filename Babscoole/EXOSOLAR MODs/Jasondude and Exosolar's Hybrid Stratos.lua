@@ -4353,7 +4353,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"SafeSkyMaxIndex",            "2173"},
+								{"SafeSkyMaxIndex",            "15416"},
 								{"SunClampAngle",              "85"},
 								{"NoAtmosphereFogStrength",    "0.02"},
 								{"NoAtmosphereFogMax",         "0"},
