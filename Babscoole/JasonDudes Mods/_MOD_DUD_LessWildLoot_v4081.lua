@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]    = "_MOD_DUD_LessWildLoot_v4062.pak", 
+["MOD_FILENAME"]    = "_MOD_DUD_LessWildLoot_v4081.pak", 
 ["MOD_AUTHOR"]      = "jasondude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.06",
+["NMS_VERSION"]     = "4.08",
 ["MOD_DESCRIPTION"] = "",
 ["MODIFICATIONS"]   = 
 	{
@@ -21,7 +21,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"] = "FORCE",							
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"Coverage", "0.5"},				
+								{"Coverage", "0.5"},
+								{"FlatDensity",  "0.01"},
+								{"SlopeDensity", "0.01"},								
 							}
 						},
 						{
@@ -96,8 +98,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",        "0.5"},
-								{"FlatDensity",     "0.02"},
-								{"SlopeDensity",    "0.02"},
+								{"FlatDensity",     "0.01"},
+								{"SlopeDensity",    "0.01"},
 								{"SlopeMultiplier", "1"},
 							}
 						},
