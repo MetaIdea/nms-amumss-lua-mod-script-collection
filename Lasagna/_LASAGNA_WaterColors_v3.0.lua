@@ -230,9 +230,9 @@ NewWaterColors = [[
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.55" />
-        <Property name="G" value="0.19" />
-        <Property name="B" value="0.49" />
+        <Property name="R" value="0.58" />
+        <Property name="G" value="0.48" />
+        <Property name="B" value="0.71" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -242,29 +242,29 @@ NewWaterColors = [[
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.51" />
-        <Property name="G" value="0.18" />
-        <Property name="B" value="0.46" />
+        <Property name="R" value="0.58" />
+        <Property name="G" value="0.48" />
+        <Property name="B" value="0.71" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.94" />
-        <Property name="G" value="0.76" />
-        <Property name="B" value="0.68" />
+        <Property name="R" value="0.58" />
+        <Property name="G" value="0.48" />
+        <Property name="B" value="0.71" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.99" />
-        <Property name="G" value="0.80" />
+        <Property name="R" value="0.58" />
+        <Property name="G" value="0.48" />
         <Property name="B" value="0.71" />
-        <Property name="A" value="0.2" />
+        <Property name="A" value="1" />
       </Property>
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.59" />
-        <Property name="G" value="0.001" />
-        <Property name="B" value="0.03" />
+        <Property name="R" value="0.9" />
+        <Property name="G" value="0.29" />
+        <Property name="B" value="0.33" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -274,29 +274,29 @@ NewWaterColors = [[
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.56" />
-        <Property name="G" value="0.001" />
-        <Property name="B" value="0.03" />
+        <Property name="R" value="0.9" />
+        <Property name="G" value="0.29" />
+        <Property name="B" value="0.33" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.78" />
-        <Property name="G" value="0.88" />
-        <Property name="B" value="0.89" />
+        <Property name="R" value="0.9" />
+        <Property name="G" value="0.29" />
+        <Property name="B" value="0.33" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.82" />
-        <Property name="G" value="0.93" />
-        <Property name="B" value="0.93" />
-        <Property name="A" value="0.2" />
+        <Property name="R" value="0.9" />
+        <Property name="G" value="0.29" />
+        <Property name="B" value="0.33" />
+        <Property name="A" value="1" />
       </Property>
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.46" />
-        <Property name="G" value="0.001" />
-        <Property name="B" value="0.36" />
+        <Property name="R" value="0.33" />
+        <Property name="G" value="0.55" />
+        <Property name="B" value="0.68" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -306,29 +306,29 @@ NewWaterColors = [[
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.43" />
-        <Property name="G" value="0.001" />
-        <Property name="B" value="0.34" />
+        <Property name="R" value="0.33" />
+        <Property name="G" value="0.55" />
+        <Property name="B" value="0.68" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.79" />
-        <Property name="G" value="0.82" />
-        <Property name="B" value="0.82" />
+        <Property name="R" value="0.33" />
+        <Property name="G" value="0.55" />
+        <Property name="B" value="0.68" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.84" />
-        <Property name="G" value="0.87" />
-        <Property name="B" value="0.86" />
-        <Property name="A" value="0.2" />
+        <Property name="R" value="0.33" />
+        <Property name="G" value="0.55" />
+        <Property name="B" value="0.68" />
+        <Property name="A" value="1" />
       </Property>
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.81" />
-        <Property name="G" value="0.46" />
-        <Property name="B" value="0.44" />
+        <Property name="R" value="0.96" />
+        <Property name="G" value="0.88" />
+        <Property name="B" value="0.68" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -338,29 +338,29 @@ NewWaterColors = [[
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.78" />
-        <Property name="G" value="0.36" />
-        <Property name="B" value="0.34" />
+        <Property name="R" value="0.96" />
+        <Property name="G" value="0.88" />
+        <Property name="B" value="0.68" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.91" />
-        <Property name="G" value="0.74" />
-        <Property name="B" value="0.73" />
+        <Property name="R" value="0.96" />
+        <Property name="G" value="0.88" />
+        <Property name="B" value="0.68" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.98" />
-        <Property name="G" value="0.93" />
-        <Property name="B" value="0.93" />
-        <Property name="A" value="0.2" />
+        <Property name="R" value="0.96" />
+        <Property name="G" value="0.88" />
+        <Property name="B" value="0.68" />
+        <Property name="A" value="1" />
       </Property>
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
         <Property name="R" value="0.02" />
-        <Property name="G" value="0.06" />
-        <Property name="B" value="0.66" />
+        <Property name="G" value="0.75" />
+        <Property name="B" value="0.65" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -371,28 +371,28 @@ NewWaterColors = [[
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
         <Property name="R" value="0.02" />
-        <Property name="G" value="0.05" />
-        <Property name="B" value="0.62" />
+        <Property name="G" value="0.75" />
+        <Property name="B" value="0.65" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.91" />
-        <Property name="G" value="0.80" />
-        <Property name="B" value="0.68" />
+        <Property name="R" value="0.02" />
+        <Property name="G" value="0.75" />
+        <Property name="B" value="0.65" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.96" />
-        <Property name="G" value="0.85" />
-        <Property name="B" value="0.72" />
-        <Property name="A" value="0.2" />
+        <Property name="R" value="0.02" />
+        <Property name="G" value="0.75" />
+        <Property name="B" value="0.65" />
+        <Property name="A" value="1" />
       </Property>
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.63" />
-        <Property name="G" value="0.05" />
-        <Property name="B" value="0.04" />
+        <Property name="R" value="0.73" />
+        <Property name="G" value="0.89" />
+        <Property name="B" value="0.71" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -402,29 +402,29 @@ NewWaterColors = [[
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.6" />
-        <Property name="G" value="0.05" />
-        <Property name="B" value="0.02" />
+        <Property name="R" value="0.73" />
+        <Property name="G" value="0.89" />
+        <Property name="B" value="0.71" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.8" />
-        <Property name="G" value="0.77" />
-        <Property name="B" value="0.89" />
+        <Property name="R" value="0.73" />
+        <Property name="G" value="0.89" />
+        <Property name="B" value="0.71" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.84" />
-        <Property name="G" value="0.81" />
-        <Property name="B" value="0.94" />
-        <Property name="A" value="0.2" />
+        <Property name="R" value="0.73" />
+        <Property name="G" value="0.89" />
+        <Property name="B" value="0.71" />
+        <Property name="A" value="1" />
       </Property>
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.67" />
-        <Property name="G" value="0.17" />
-        <Property name="B" value="0.16" />
+        <Property name="R" value="0.46" />
+        <Property name="G" value="0.67" />
+        <Property name="B" value="0.91" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -434,29 +434,29 @@ NewWaterColors = [[
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.63" />
-        <Property name="G" value="0.16" />
-        <Property name="B" value="0.15" />
+        <Property name="R" value="0.46" />
+        <Property name="G" value="0.67" />
+        <Property name="B" value="0.91" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.85" />
-        <Property name="G" value="0.87" />
-        <Property name="B" value="0.94" />
+        <Property name="R" value="0.46" />
+        <Property name="G" value="0.67" />
+        <Property name="B" value="0.91" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.89" />
-        <Property name="G" value="0.92" />
-        <Property name="B" value="0.99" />
-        <Property name="A" value="0.2" />
+        <Property name="R" value="0.46" />
+        <Property name="G" value="0.67" />
+        <Property name="B" value="0.91" />
+        <Property name="A" value="1" />
       </Property>
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.55" />
-        <Property name="G" value="0.25" />
-        <Property name="B" value="0.12" />
+        <Property name="R" value="1" />
+        <Property name="G" value="0.8" />
+        <Property name="B" value="0.56" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -466,29 +466,29 @@ NewWaterColors = [[
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.52" />
-        <Property name="G" value="0.24" />
-        <Property name="B" value="0.11" />
+        <Property name="R" value="1" />
+        <Property name="G" value="0.8" />
+        <Property name="B" value="0.56" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.91" />
-        <Property name="G" value="0.75" />
-        <Property name="B" value="0.73" />
+        <Property name="R" value="1" />
+        <Property name="G" value="0.8" />
+        <Property name="B" value="0.56" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.95" />
-        <Property name="G" value="0.79" />
-        <Property name="B" value="0.77" />
-        <Property name="A" value="0.2" />
+        <Property name="R" value="1" />
+        <Property name="G" value="0.8" />
+        <Property name="B" value="0.56" />
+        <Property name="A" value="1" />
       </Property>
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.81" />
-        <Property name="G" value="0.6" />
-        <Property name="B" value="0.08" />
+        <Property name="R" value="0.46" />
+        <Property name="G" value="1" />
+        <Property name="B" value="0.6" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -498,29 +498,29 @@ NewWaterColors = [[
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.76" />
-        <Property name="G" value="0.56" />
-        <Property name="B" value="0.08" />
+        <Property name="R" value="0.46" />
+        <Property name="G" value="1" />
+        <Property name="B" value="0.6" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.9" />
-        <Property name="G" value="0.77" />
-        <Property name="B" value="0.66" />
+        <Property name="R" value="0.46" />
+        <Property name="G" value="1" />
+        <Property name="B" value="0.6" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.95" />
-        <Property name="G" value="0.81" />
-        <Property name="B" value="0.7" />
-        <Property name="A" value="0.2" />
+        <Property name="R" value="0.46" />
+        <Property name="G" value="1" />
+        <Property name="B" value="0.6" />
+        <Property name="A" value="1" />
       </Property>
     </Property>
     <Property value="GcPlanetWaterColourData.xml">
       <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.5" />
-        <Property name="G" value="0.05" />
-        <Property name="B" value="0.4" />
+        <Property name="R" value="0" />
+        <Property name="G" value="0.64" />
+        <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterFogColourFar" value="Colour.xml">
@@ -530,118 +530,22 @@ NewWaterColors = [[
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.47" />
-        <Property name="G" value="0.05" />
-        <Property name="B" value="0.37" />
+        <Property name="R" value="0" />
+        <Property name="G" value="0.64" />
+        <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
       <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.81" />
-        <Property name="G" value="0.83" />
-        <Property name="B" value="0.76" />
+        <Property name="R" value="0" />
+        <Property name="G" value="0.64" />
+        <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
       <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.85" />
-        <Property name="G" value="0.87" />
-        <Property name="B" value="0.8" />
-        <Property name="A" value="0.2" />
-      </Property>
-    </Property>
-    <Property value="GcPlanetWaterColourData.xml">
-      <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.05" />
-        <Property name="G" value="0.27" />
-        <Property name="B" value="0.74" />
+        <Property name="R" value="0" />
+        <Property name="G" value="0.64" />
+        <Property name="B" value="1" />
         <Property name="A" value="1" />
-      </Property>
-      <Property name="WaterFogColourFar" value="Colour.xml">
-        <Property name="R" value="0.05" />
-        <Property name="G" value="0.28" />
-        <Property name="B" value="0.76" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.05" />
-        <Property name="G" value="0.26" />
-        <Property name="B" value="0.7" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.93" />
-        <Property name="G" value="0.81" />
-        <Property name="B" value="0.67" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.98" />
-        <Property name="G" value="0.85" />
-        <Property name="B" value="0.7" />
-        <Property name="A" value="0.2" />
-      </Property>
-    </Property>
-    <Property value="GcPlanetWaterColourData.xml">
-      <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.8" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0.53" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="WaterFogColourFar" value="Colour.xml">
-        <Property name="R" value="0.81" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0.54" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.75" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0.5" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.95" />
-        <Property name="G" value="0.82" />
-        <Property name="B" value="0.7" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.99" />
-        <Property name="G" value="0.86" />
-        <Property name="B" value="0.74" />
-        <Property name="A" value="0.2" />
-      </Property>
-    </Property>
-    <Property value="GcPlanetWaterColourData.xml">
-      <Property name="WaterFogColourNear" value="Colour.xml">
-        <Property name="R" value="0.43" />
-        <Property name="G" value="0.12" />
-        <Property name="B" value="0.28" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="WaterFogColourFar" value="Colour.xml">
-        <Property name="R" value="0.43" />
-        <Property name="G" value="0.12" />
-        <Property name="B" value="0.28" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="WaterColourBase" value="Colour.xml">
-        <Property name="R" value="0.4" />
-        <Property name="G" value="0.11" />
-        <Property name="B" value="0.26" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="WaterColourAdd" value="Colour.xml">
-        <Property name="R" value="0.87" />
-        <Property name="G" value="0.79" />
-        <Property name="B" value="0.81" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="FoamColour" value="Colour.xml">
-        <Property name="R" value="0.92" />
-        <Property name="G" value="0.83" />
-        <Property name="B" value="0.85" />
-        <Property name="A" value="0.2" />
       </Property>
     </Property>
   </Property>
@@ -649,7 +553,7 @@ NewWaterColors = [[
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "_LASAGNA_WaterColors_v2.01.pak",       
+["MOD_FILENAME"] 			= "_LASAGNA_WaterColors_v3.0.pak",       
 ["MOD_AUTHOR"]				= "Lasagna",         
 ["NMS_VERSION"]				= "",     
 ["MODIFICATIONS"] 			=             
