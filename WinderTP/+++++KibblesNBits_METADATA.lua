@@ -10432,7 +10432,7 @@ AUTO_PART_DATA =
 -- print(ID .. [[ is using ]] .. AUTO_PART_DATA[POWER_GROUP])
 return [[
 	<Property value="GcBaseBuildingPartData.xml">
-      <Property name="PartID" value="]] .. ID .. [[" />
+      <Property name="PartID" value="_]] .. ID .. [[" />
       <Property name="Style" value="GcBaseBuildingPartStyle.xml">
         <Property name="Style" value="]] .. STYLE .. [[" />
       </Property>
