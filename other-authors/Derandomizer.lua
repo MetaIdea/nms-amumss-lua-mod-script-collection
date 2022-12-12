@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
   ["MOD_FILENAME"] 			= "Derandomizer.pak",
-  ["MOD_AUTHOR"]				= "AcThPaU",
-  ["NMS_VERSION"]				= "4.00",
-  ["MOD_DESCRIPTION"]         = "Destroy RNG, everything S class and best stat, best rewards, and more",
+  --["MOD_BATCHNAME"]         = "mod.pak",
+  ["MOD_AUTHOR"]			= "AcThPaU",
+  ["NMS_VERSION"]			= "4.00",
+  ["MOD_DESCRIPTION"]       = "Destroy RNG, everything S class and best stat, best rewards, and more",
   ["MODIFICATIONS"] 		=             
 	{
 		{
@@ -101,6 +102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"NumStatsMin",	"1"},
 							}
 						},
+---------------------------------------BEGIN CORRECTION---------------------------------------
 						{			
 							["SPECIAL_KEY_WORDS"]   = {"ID", "UP_SNSUIT", "StatsType", "Suit_Armour_Shield_Strength"},
 							["SECTION_UP"] = 1,
@@ -110,6 +112,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ValueMin",	"1"},
 							}
 						},
+						{			
+							["SPECIAL_KEY_WORDS"]   = {"StatsType","Freighter_Fleet_Fuel"},
+							["SECTION_UP"] = 1,
+							["REPLACE_TYPE"] 		= "ALL",
+							["MATH_OPERATION"] 		= "*F:ValueMax",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"ValueMin",	"1"},
+							}
+						},
+-----------------------------------------END CORRECTION---------------------------------------
 						{
 							["SPECIAL_KEY_WORDS"]   = {"WeightingCurve", "MinIsSuperRare"},
 							["SECTION_UP"] = 1,
@@ -142,7 +155,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{			
 							["MATH_OPERATION"] 		= "*F:ValueMax",
-							["INTEGER_TO_FLOAT"] = "FORCE",						
+							["INTEGER_TO_FLOAT"]    = "FORCE",						
 							["REPLACE_TYPE"] 		= "ALL",	
 							["VALUE_CHANGE_TABLE"] 	=
 							{
@@ -151,7 +164,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
-				{   -- All S Class ProcTech
+				{   -- All S Class ProcTech in reward
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN",},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -176,7 +189,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},								
 					}
 				},	
-				{   -- All S Class ProcTech
+				{   -- All S Class ProcTech for freighter
 					["MBIN_FILE_SOURCE"] 	= {"METADATA\REALITY\TABLES\PROCEDURALPRODUCTTABLE.MBIN",},
 					["EXML_CHANGE_TABLE"] 	= 
 					{
@@ -231,7 +244,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},							
 					}
 				},
-				{	--no citizen conflict
+				{	--Settlement Expedition Always Success
 					["MBIN_FILE_SOURCE"]     = "GCSETTLEMENTGLOBALS.MBIN",
 					["EXML_CHANGE_TABLE"]     =
 					{
@@ -294,32 +307,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AIShipRole",		"CapitalFreighter"}, 	-- Original "Freighter"			
 							}
 						}
-					} 
-				},
-				{  --MAX EXPEDITION REWARD
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 	= "100",
-							["VALUE_MATCH_OPTIONS"] 	= "~=",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PercentageChance",		"100"},	
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "GcRewardTableItem.xml",
-							["REPLACE_TYPE"] 		= "ALL",
-							["MATH_OPERATION"] 		= "*F:AmountMax",
-							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"AmountMin",		"1"},	
-							}
-						},
 					} 
 				},
 				{	-- Frigate no bad trait (All S Class)
