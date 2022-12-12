@@ -10432,7 +10432,7 @@ AUTO_PART_DATA =
 -- print(ID .. [[ is using ]] .. AUTO_PART_DATA[POWER_GROUP])
 return [[
 	<Property value="GcBaseBuildingPartData.xml">
-      <Property name="PartID" value="_]] .. ID .. [[" />
+      <Property name="PartID" value="]] .. ID .. [[" />
       <Property name="Style" value="GcBaseBuildingPartStyle.xml">
         <Property name="Style" value="]] .. STYLE .. [[" />
       </Property>
@@ -10470,7 +10470,7 @@ for i,j in pairs(KIBBLES_OBJPROD) do
 	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], SNAPPING_DISTANCE)
 	EXPORT_PRODUCTS_LIST[i+1] = GetBaseProduct(j["OBJECT"]["ID"],j["PRODUCT"]["Name"],j["PRODUCT"]["NameLower"],j["PRODUCT"]["Subtitle"],j["PRODUCT"]["Description"],j["PRODUCT"]["Icon"],j["PRODUCT"]["Requirements"])
 	EXPORT_PARTS_LIST[i+1] = GetBaseBuildingPart(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Model"], OVERRIDE_INACTIVE)
-	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Connection"])
+	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Connection"])
 	EXPORT_COST_LIST[i+1] = GetBaseBuildingCost(j["OBJECT"]["ID"], POP_IN_RATE)
 	EXPORT_KNOWNPRODUCTS_LIST[#EXPORT_KNOWNPRODUCTS_LIST+1] = GetKnownProducts(j["OBJECT"]["ID"])
 end
