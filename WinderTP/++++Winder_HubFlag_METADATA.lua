@@ -63458,7 +63458,6 @@ HUBFLAG_DECAL_GARDEN = -- DECALS, FLAGS, GARDENING
 						["CheckPlaceholderCollision"] = "False",
 						["CollisionScale"] = 			"0.9",
 						["EnableCollision"] = 			"True",
-						["EnableCollision"] = 			"True",
 						["CanPlaceOnItself"] = 			"False",
 						["CanScale"] = 					"True",
 						["SubGroupName"] = 					{ "WDGARDEN_RS1" },
@@ -67075,7 +67074,7 @@ return [[
 ]]
 end
 
-function GetBaseBuildingObject(ID, PLACEMENT, STYLE, SNAP, MODEL, DTYPE, PLACE, ISDECOR, BIOME, FREIGHTER, PLANET, CHECKCOLL, COLLSCALE, ENCOLL, STACK, SCALEABLE, GROUPS, STORAGE, COLOUR, MAT, RAD, TERRAIN, T_SHAPE, T_BASE, T_TOP, T_SCALE, SEAL, POWER, SNAP_SHORT)
+function GetBaseBuildingObject(ID, PLACEMENT, STYLE, SNAP, MODEL, DTYPE, PLACE, ISDECOR, BIOME, FREIGHTER, PLANET, CHECKCOLL, ENCOLL, SCALEABLE, GROUPS, STORAGE, COLOUR, MAT, RAD, TERRAIN, T_SHAPE, SEAL, POWER, SNAP_SHORT)
 GROUP_INJECT = ""
 POWER_INJECT = ""
 POWER_INJECT = HUBFLAG_LINKGRID[POWER]
@@ -68133,7 +68132,7 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 		PLACEMENT_PATH = MakePlacementScenePath(j["OBJECT"]["ID"]) .. [[.MBIN]]
 	else PLACEMENT_PATH = j["OBJECT"]["PlacementScene"]
 	end
-	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"], j["OBJECT"]["SnapPoints"],j["OBJECT"]["Model"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["CollisionScale"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanPlaceOnItself"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["TerrainEditBaseYOffset"],j["OBJECT"]["TerrainEditTopYOffset"],j["OBJECT"]["TerrainEditBoundsScalar"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], j["OBJECT"]["SnappingDistanceOverride"])
+	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"], j["OBJECT"]["SnapPoints"],j["OBJECT"]["Model"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], j["OBJECT"]["SnappingDistanceOverride"])
 	EXPORT_PRODUCTS_LIST[i+1] = GetBaseProduct(j["OBJECT"]["ID"],j["PRODUCT"]["Name"],j["PRODUCT"]["NameLower"],j["PRODUCT"]["Subtitle"],j["PRODUCT"]["Description"],j["PRODUCT"]["Icon"],j["PRODUCT"]["Requirements"])
 	EXPORT_PARTS_LIST[i+1] = GetBaseBuildingPart(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Model"], OVERRIDE_INACTIVE)
 	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Connection"])
