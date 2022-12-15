@@ -28,14 +28,12 @@ c. Destroyed by ship/Max angle/Etc
 d. Region/Imposter/Fade out
 e. Lod distances/Ultra invisible bug fix
 f. Placement/Placement priority
-g. [just "b" biomes] Change landmarks to DistantObjects
 
 Biomes 4-11 subsections: (new method = generally smaller biomes, more scale variation, shorter time)
 a. Destroyed by ship/Max scale/Max angle/Patch edge scaling/Etc
 b. Coverage/Density/Etc
 c. Lod distances/Ultra invisible bug fix
 d. Placement/Placement priority
-e. [just "b" biomes] Change landmarks to DistantObjects
 
 Just Biomes 11 - Crystals: d. Change objects to landmarks
 
@@ -51,32 +49,32 @@ InsaneRuffles code = "----IR:"
 --local DestroyedByPlayerShip = "False"
 
 --Only in biomes 1-3:
-local ScaleHugeMultiplier = 5
-local ScaleLargeMultiplier = 3 		--misc. outlier values
-local ScaleMediumMultiplier = 2 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
-local ScaleSmallestMultiplier = 1.5
+local ScaleHugeMultiplier = 3.5
+local ScaleLargeMultiplier = 2 		--misc. outlier values
+local ScaleMediumMultiplier = 1.5 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
+local ScaleSmallestMultiplier = 1.3
 
 --Only in biomes 4-10:
-local ScaleHuge = 42					--All scale replacement = balanced by patchedgescaling:
-local ScaleExtraLarge = 23
-local ScaleLarge = 11
-local ScaleMedium = 8
-local ScaleSmall = 6
-local ScaleSmallest = 2
+local ScaleHuge = 29.5					--All scale replacement = balanced by patchedgescaling:
+local ScaleExtraLarge = 16
+local ScaleLarge = 7.5
+local ScaleMedium = 5.5
+local ScaleSmall = 4.2
+local ScaleSmallest = 1.7
 
-local PatchEdgeScalingLarge = 0.74	--Changing these will heavily impact flora/object sizes
-local PatchEdgeScalingMedium = 0.73
-local PatchEdgeScalingSmall = 0.69				
+local PatchEdgeScalingLarge = 0.73	--Changing these will heavily impact flora/object sizes
+local PatchEdgeScalingMedium = 0.72
+local PatchEdgeScalingSmall = 0.68				
 
 --In all:
-local DensityHighestMultiplier = 0.86
-local DensityMedHighMultiplier = 0.69
-local DensityMediumMultiplier = 0.66 --Caution: raising this over 1 will break some planets
-local DensityMedLowMultiplier = 0.63
-local DensityLowestMultiplier = 0.55
+local DensityHighestMultiplier = 0.81
+local DensityMedHighMultiplier = 0.65
+local DensityMediumMultiplier = 0.62 --Caution: raising this over 1 will break some planets
+local DensityMedLowMultiplier = 0.59
+local DensityLowestMultiplier = 0.52
 
 --local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
-local DensityDETAILLowestMultiplier = 0.85 --Caution: raising this will break some planets
+local DensityDETAILLowestMultiplier = 0.8 --Caution: raising this will break some planets
 
 local DensityPointSevenMultiplier = 0.7 --Caution: raising this will break some planets
 local DensityPointEightMultiplier = 0.8 --Caution: raising this will break some planets
@@ -92,12 +90,12 @@ local PatchsizeRegionScaleMultiplierJustForest = 1.1
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
-local RadiusMultiplier = 3			--objects draw distance multiplier (limited by engine's hard-limit)
+local RadiusMultiplier = 2			--objects draw distance multiplier (limited by engine's hard-limit)
 local RadiusMultiplierLow = 2 					--***float = errors
-local LodDistancesMultiplierFarGrass = 1.75 --GRASS draw distance multiplier
-local LodDistanceMultiplierDistantObjects = 1.5 	--***i.e. big rings/huge objects
-local LodDistanceMultiplierLandmarks = 1.5 			--***i.e. trees/biome plants (unchanged rn)
-local LodDistanceMultiplierLow = 1.25 				--***i.e. high detailobjects biomes, like toxic
+local LodDistancesMultiplierFarGrass = 1.5 --GRASS draw distance multiplier
+local LodDistanceMultiplierDistantObjects = 1.25 	--***i.e. big rings/huge objects
+local LodDistanceMultiplierLandmarks = 1.25 			--***i.e. trees/biome plants (unchanged rn)
+local LodDistanceMultiplierLow = 1.15 				--***i.e. high detailobjects biomes, like toxic
 local LodDistanceMultiplierLowest = 1.1 			--***i.e. HQ biomes that already have high LODD
 local LodDistanceMultiplierHQUltraForest = 0.1    --***just hq forest
 local CoverageMultiplier = 1			--object placement coverage multiplier (object density) --***needed to work
@@ -224,10 +222,10 @@ return [[
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="30" />
-              <Property value="90" />
-              <Property value="225" />
-              <Property value="750" />
+              <Property value="20" />
+              <Property value="60" />
+              <Property value="150" />
+              <Property value="500" />
             </Property>
           </Property>
         </Property>
@@ -1890,54 +1888,6 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						
-						--If DistanceObjects section is closed, replace it to make it open
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
-							}	
-						},
-						
-					--THEN DO:
-					
-						--If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							-- ["LINE_OFFSET"] 		= "-1",     --one line up
-							-- ["REPLACE_TYPE"] 		= "RAW",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- { [[    </Property>]], [[]] },
-							-- }	
-						-- },
-					
-					--THEN DO:
-					
-						--If Landmarks section is open, remove it so DistanceObjects takes over that section
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="Landmarks">]], [[]] },
-							}	
-						},
-						
-						--Not possible: DistanceObjects == closed && Landmarks == closed
-						--Not possible: DistanceObjects == open && Landmarks == closed
-						
-						--Add closed Landmarks line after DistantObjects, otherwise error:
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] 	= [[    <Property name="Landmarks" />]]
-						},
 	}
 return biomeModifier
 end
@@ -3599,54 +3549,6 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
--- -------------------------------------------------------------------------------------------------------------------------------------------------
--- -- g. CHANGE LANDMARKS TO DISTANTOBJECTS <-Causes error in these biomes
--- -------------------------------------------------------------------------------------------------------------------------------------------------
-						
-						-- --If DistanceObjects section is closed, replace it to make it open
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							-- ["REPLACE_TYPE"] 		= "RAW",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- { [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
-							-- }	
-						-- },
-						
-					-- --THEN DO:
-					
-						-- --If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
-						-- -- {
-							-- -- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							-- -- ["LINE_OFFSET"] 		= "-1",     --one line up
-							-- -- ["REPLACE_TYPE"] 		= "RAW",
-							-- -- ["VALUE_CHANGE_TABLE"] 	= 
-							-- -- {
-								-- -- { [[    </Property>]], [[]] },
-							-- -- }	
-						-- -- },
-					
-					-- --THEN DO:
-					
-						-- --If Landmarks section is open, remove it so DistanceObjects takes over that section
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							-- ["REPLACE_TYPE"] 		= "RAW",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- { [[    <Property name="Landmarks">]], [[]] },
-							-- }	
-						-- },
-						
-						-- --Not possible: DistanceObjects == closed && Landmarks == closed
-						-- --Not possible: DistanceObjects == open && Landmarks == closed
-						
-						-- --Add closed Landmarks line after DistantObjects, otherwise error:
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
-							-- ["ADD_OPTION"] = "ADDafterSECTION",
-							-- ["ADD"] 	= [[    <Property name="Landmarks" />]]
-						-- },
 	}
 return biomeModifier
 end
@@ -4160,54 +4062,6 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						
-						--If DistanceObjects section is closed, replace it to make it open
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
-							}	
-						},
-						
-					--THEN DO:
-					
-						--If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							-- ["LINE_OFFSET"] 		= "-1",     --one line up
-							-- ["REPLACE_TYPE"] 		= "RAW",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- { [[    </Property>]], [[]] },
-							-- }	
-						-- },
-					
-					--THEN DO:
-					
-						--If Landmarks section is open, remove it so DistanceObjects takes over that section
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="Landmarks">]], [[]] },
-							}	
-						},
-						
-						--Not possible: DistanceObjects == closed && Landmarks == closed
-						--Not possible: DistanceObjects == open && Landmarks == closed
-						
-						--Add closed Landmarks line after DistantObjects, otherwise error:
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] 	= [[    <Property name="Landmarks" />]]
-						},
 	}
 return biomeModifier
 end
@@ -4720,54 +4574,6 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
--- -------------------------------------------------------------------------------------------------------------------------------------------------
--- -- g. CHANGE LANDMARKS TO DISTANTOBJECTS -> removed, causes errors in these biomes
--- -------------------------------------------------------------------------------------------------------------------------------------------------
-						
-						-- --If DistanceObjects section is closed, replace it to make it open
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							-- ["REPLACE_TYPE"] 		= "RAW",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- { [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
-							-- }	
-						-- },
-						
-					-- --THEN DO:
-					
-						-- --If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
-						-- -- {
-							-- -- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							-- -- ["LINE_OFFSET"] 		= "-1",     --one line up
-							-- -- ["REPLACE_TYPE"] 		= "RAW",
-							-- -- ["VALUE_CHANGE_TABLE"] 	= 
-							-- -- {
-								-- -- { [[    </Property>]], [[]] },
-							-- -- }	
-						-- -- },
-					
-					-- --THEN DO:
-					
-						-- --If Landmarks section is open, remove it so DistanceObjects takes over that section
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							-- ["REPLACE_TYPE"] 		= "RAW",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- { [[    <Property name="Landmarks">]], [[]] },
-							-- }	
-						-- },
-						
-						-- --Not possible: DistanceObjects == closed && Landmarks == closed
-						-- --Not possible: DistanceObjects == open && Landmarks == closed
-						
-						-- --Add closed Landmarks line after DistantObjects, otherwise error:
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
-							-- ["ADD_OPTION"] = "ADDafterSECTION",
-							-- ["ADD"] 	= [[    <Property name="Landmarks" />]]
-						-- },
 	}
 return biomeModifier
 end
@@ -4775,7 +4581,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Med_v4.51.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v4.52b.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -7519,53 +7325,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
 							}
-						},
-					
--------------------------------------------------------------------------------------------------------------------------------------------------
--- d. CHANGE OBJECTS TO LANDMARKS --------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-
-						--If Landmarks section is closed, replace it to make it open
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="Landmarks" />]], [[    <Property name="Landmarks">]] },
-							}	
-						},
-						
-					--THEN DO:
-					
-						--If Landmarks was open already (and had a closing </Property>), deletes closing line (above "Objects")
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",},
-							-- ["LINE_OFFSET"] 		= "-1",     --one line up
-							-- ["REPLACE_TYPE"] 		= "RAW",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- { [[    </Property>]], [[]] },
-							-- }	
-						-- },
-					
-					--THEN DO:
-					
-						--If Objects section is open, remove it so Landmarks takes over that section
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="Objects">]], [[]] },
-							}	
-						},
-						
-						
-						--Add closed Objects line after Landmarks, otherwise error:
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] 	= [[    <Property name="Objects" />]]
 						},
 					} 
 				}
