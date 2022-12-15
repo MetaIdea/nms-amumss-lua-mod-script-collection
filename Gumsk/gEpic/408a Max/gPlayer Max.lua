@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Max"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "403"
+GameVersion = "408"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   
@@ -59,14 +59,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"FreeJetpackRange",7},						--3
 						{"FreeJetpackRangeNonTerrain",2},			--1.1
 						{"JetpackDrainHorizontalFactor",3},			--2.5
-						{"JetpackForce",50},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
+						{"JetpackForce",80},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
 						--{"JetpackBrake",2.2},						--2.2
 						{"JetpackMinLevel",0.1},					--0.5 ; ?How flat does the ground need to be to ignite jetpack? At 99, couldn't ignite in most places
-						{"JetpackMaxSpeed",40},						--5
+						{"JetpackMaxSpeed",50},						--5 ; Lateral speed adjustments while airborne, whether using jetpack or not
 						{"JetpackMaxUpSpeed",100},					--30
-						{"JetpackUpForce",50},						--30 ; Needs to be above about 20 to overcome standard gravity
-						{"JetpackIgnitionForce",80},				--60 ; No noticeable effect
-						{"JetpackIgnitionTime",10},					--0.4
+						{"JetpackUpForce",80},						--30 ; Needs to be above about 20 to overcome standard gravity
+						{"JetpackIgnitionForce",80},				--60 ; Initial force applied before JetpackIgnitionTime
+						{"JetpackIgnitionTime",9999},				--0.4 ; How many seconds until transition from JetpackIgnitionForce to JetpackForce and JetpackUpForce
 						{"JetpackMinIgnitionTime",0.1},				--0.2 ; How quickly after igniting the jetpack FROM A SURFACE will jetpack thrust stop?
 						{"JetpackFillRate",1},						--0.5
 						{"JetpackUpForceDeadPlanetExtra",30},		--10
