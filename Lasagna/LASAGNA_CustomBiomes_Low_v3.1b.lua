@@ -1279,7 +1279,7 @@ local LargeObjectCoverageGrassAlwaysPlace = "AlwaysPlace"
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
 local RadiusMultiplier = 2			--objects draw distance multiplier (limited by engine's hard-limit)
 local RadiusMultiplierLow = 2 					--***float = errors
-local GrassRadiusMultiplier = 2		--GRASS draw distance multiplier
+local LodDistancesMultiplierFarGrass = 1.25 --GRASS draw distance multiplier
 local LodDistanceMultiplierDistantObjects = 1.25 	--***i.e. big rings/huge objects
 local LodDistanceMultiplierLandmarks = 1.25 			--***i.e. trees/biome plants (unchanged rn)
 local LodDistanceMultiplierLow = 1.15 				--***i.e. high detailobjects biomes, like toxic
@@ -2193,97 +2193,100 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
 							}
 						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["SPECIAL_KEY_WORDS"] 	= {"ID","ULTRA",},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"FlatDensity",				DensitySHADOWLowMultiplier}, --***Fixes shadow flickering
-								-- {"SlopeDensity",			DensitySHADOWLowMultiplier}, --***Fixes shadow flickering
-							-- }
-						-- },
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
-							}
-						},
+						--REPLACE:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"Placement",				"GRASS"},
+								{"MaxAngle",				90},
+								{"LargeObjectCoverage",		"AlwaysPlace"},
+							}
+						},
+						--MULTIPLY:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxRegionRadius",			1.8},
+								{"MaxImposterRadius",		1.8},
+								{"FadeOutStartDistance",	1.8},
+								{"FadeOutEndDistance",		1.8},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							--REPLACE (to correct non-lush/frozen planets density)
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    DensityDETAILLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityDETAILLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								-- {"MaxAngle",				MaxAngleDetailObjects},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"MaxScale",			    2.47},
+								{"Coverage",			    1},
+								{"FlatDensity",			    0.28},
+								{"SlopeDensity",			0.28},
+								{"SlopeMultiplier",			2.5},
+							}
+						},
+						--LODDISTANCES:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+1",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","ULTRA",},
-							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",				0.7}, --***Fixes invisible grass Ultra bug
-								{"SlopeDensity",			0.7}, --***Fixes invisible grass Ultra bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier}, --***Don't use these, grass bug
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	    GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleDetailObjects},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
 							}
 						},
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
@@ -3083,97 +3086,100 @@ local function BiomesOneTwoThreeModifierUnderwaterCave(DensityCustom1, DensityCu
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
 							}
 						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["SPECIAL_KEY_WORDS"] 	= {"ID","ULTRA",},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"FlatDensity",				DensitySHADOWLowMultiplier}, --***Fixes shadow flickering
-								-- {"SlopeDensity",			DensitySHADOWLowMultiplier}, --***Fixes shadow flickering
-							-- }
-						-- },
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
-							}
-						},
+						--REPLACE:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier},
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"Placement",				"GRASS"},
+								{"MaxAngle",				90},
+								{"LargeObjectCoverage",		"AlwaysPlace"},
+							}
+						},
+						--MULTIPLY:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxRegionRadius",			1.8},
+								{"MaxImposterRadius",		1.8},
+								{"FadeOutStartDistance",	1.8},
+								{"FadeOutEndDistance",		1.8},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							--REPLACE (to correct non-lush/frozen planets density)
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    DensityDETAILLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityDETAILLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								-- {"MaxAngle",				MaxAngleDetailObjects},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"MaxScale",			    2.47},
+								{"Coverage",			    1},
+								{"FlatDensity",			    0.28},
+								{"SlopeDensity",			0.28},
+								{"SlopeMultiplier",			2.5},
+							}
+						},
+						--LODDISTANCES:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+1",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","ULTRA",},
-							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",				0.7}, --***Fixes invisible grass Ultra bug
-								{"SlopeDensity",			0.7}, --***Fixes invisible grass Ultra bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier}, --***Don't use these, grass bug
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	    GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleDetailObjects},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
 							}
 						},
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
@@ -4042,7 +4048,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Low_v3.0.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Low_v3.1b.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper (aka Lasagna) - with InsaneRuffles code & unused Shaidak's Generation code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 

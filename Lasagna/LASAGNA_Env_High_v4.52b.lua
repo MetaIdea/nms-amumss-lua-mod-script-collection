@@ -17,9 +17,10 @@ There are 14 sections in this script:
 9. Buggy biomes 		      -	(BIOMES 9)		- i.e. full toxic/radio (to fix crashes with multi-biome mod)
 10. Low density lava/tentacle -	(BIOMES 10) 	- i.e. lava valcanoes (to fix valcanoes/tentacles everywhere)
 11. Just crystals 		      -	(BIOMES 11)		- i.e. "E3" crystals
-12. Patchscale/regionscale density 		  		- i.e. balance forests vs. empty areas
-13. Fast start									- i.e. remove intro logo
-14. Remove rocks/hazard plants				 	- i.e. remove small rocks & exploding plants
+12. Global misc terrain/LOD/fade time stuff 	- only section that affects global .mbins
+13. Patchscale/regionscale density 		  		- i.e. balance forests vs. empty areas
+14. Fast start									- i.e. remove intro logo
+15. Remove rocks/hazard plants				 	- i.e. remove small rocks & exploding plants
 
 Biomes 1-3 subsections: (old method = giant biomes, less scale variation, longer time)
 a. Scale changes
@@ -28,12 +29,14 @@ c. Destroyed by ship/Max angle/Etc
 d. Region/Imposter/Fade out
 e. Lod distances/Ultra invisible bug fix
 f. Placement/Placement priority
+g. [just "b" biomes] Change landmarks to DistantObjects
 
 Biomes 4-11 subsections: (new method = generally smaller biomes, more scale variation, shorter time)
 a. Destroyed by ship/Max scale/Max angle/Patch edge scaling/Etc
 b. Coverage/Density/Etc
 c. Lod distances/Ultra invisible bug fix
 d. Placement/Placement priority
+e. [just "b" biomes] Change landmarks to DistantObjects
 
 Just Biomes 11 - Crystals: d. Change objects to landmarks
 
@@ -49,32 +52,32 @@ InsaneRuffles code = "----IR:"
 --local DestroyedByPlayerShip = "False"
 
 --Only in biomes 1-3:
-local ScaleHugeMultiplier = 3.5
-local ScaleLargeMultiplier = 2 		--misc. outlier values
-local ScaleMediumMultiplier = 1.5 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
-local ScaleSmallestMultiplier = 1.3
+local ScaleHugeMultiplier = 9
+local ScaleLargeMultiplier = 4 		--misc. outlier values
+local ScaleMediumMultiplier = 2.2 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
+local ScaleSmallestMultiplier = 1.5
 
 --Only in biomes 4-10:
-local ScaleHuge = 29.5					--All scale replacement = balanced by patchedgescaling:
-local ScaleExtraLarge = 16
-local ScaleLarge = 7.5
-local ScaleMedium = 5.5
-local ScaleSmall = 4.2
-local ScaleSmallest = 1.7
+local ScaleHuge = 70					--All scale replacement = balanced by patchedgescaling:
+local ScaleExtraLarge = 38
+local ScaleLarge = 19
+local ScaleMedium = 11
+local ScaleSmall = 8
+local ScaleSmallest = 2.3
 
-local PatchEdgeScalingLarge = 0.73	--Changing these will heavily impact flora/object sizes
-local PatchEdgeScalingMedium = 0.72
-local PatchEdgeScalingSmall = 0.68				
+local PatchEdgeScalingLarge = 0.75	--Changing these will heavily impact flora/object sizes
+local PatchEdgeScalingMedium = 0.74
+local PatchEdgeScalingSmall = 0.7			
 
 --In all:
-local DensityHighestMultiplier = 0.81
-local DensityMedHighMultiplier = 0.65
-local DensityMediumMultiplier = 0.62 --Caution: raising this over 1 will break some planets
-local DensityMedLowMultiplier = 0.59
-local DensityLowestMultiplier = 0.52
+local DensityHighestMultiplier = 0.92
+local DensityMedHighMultiplier = 0.69
+local DensityMediumMultiplier = 0.66 --Caution: raising this over 1 will break some planets
+local DensityLowMultiplier = 0.63
+local DensityLowestMultiplier = 0.59
 
---local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
-local DensityDETAILLowestMultiplier = 0.8 --Caution: raising this will break some planets
+local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
+local DensityDETAILLowestMultiplier = 0.9 --Caution: raising this will break some planets
 
 local DensityPointSevenMultiplier = 0.7 --Caution: raising this will break some planets
 local DensityPointEightMultiplier = 0.8 --Caution: raising this will break some planets
@@ -90,15 +93,25 @@ local PatchsizeRegionScaleMultiplierJustForest = 1.1
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
-local RadiusMultiplier = 2			--objects draw distance multiplier (limited by engine's hard-limit)
+local RadiusMultiplier = 3			--objects draw distance multiplier (limited by engine's hard-limit)
 local RadiusMultiplierLow = 2 					--***float = errors
-local LodDistancesMultiplierFarGrass = 1.5 --GRASS draw distance multiplier
-local LodDistanceMultiplierDistantObjects = 1.25 	--***i.e. big rings/huge objects
-local LodDistanceMultiplierLandmarks = 1.25 			--***i.e. trees/biome plants (unchanged rn)
-local LodDistanceMultiplierLow = 1.15 				--***i.e. high detailobjects biomes, like toxic
+--local GrassRadiusMultiplier = 3
+local LodDistancesMultiplierFarGrass = 2 --GRASS draw distance multiplier
+local LodDistanceMultiplierDistantObjects = 2 	--***i.e. big rings/huge objects
+local LodDistanceMultiplierLandmarks = 2 			--***i.e. trees/biome plants (unchanged rn)
+local LodDistanceMultiplierLow = 1.5 				--***i.e. high detailobjects biomes, like toxic
 local LodDistanceMultiplierLowest = 1.1 			--***i.e. HQ biomes that already have high LODD
 local LodDistanceMultiplierHQUltraForest = 0.1    --***just hq forest
-local CoverageMultiplier = 1			--object placement coverage multiplier (object density) --***needed to work
+local CoverageMultiplier = 0.66			--object placement coverage multiplier (object density) --***needed to work
+
+--GCGRAPHICSGLOBALS.GLOBAL
+local ForceUncachedTerrain = "True"	--fix slow terrain textures loading (default = false)
+local ShadowLengthMultiplier = 3	--shadows draw distance multiplier --***needed to work
+
+--GCENVIRONMENTGLOBALS.GLOBAL
+local LODAdjustMultiplier = 2		--inconsistent results
+local RegionLODRadiusAdd = 3			--increases draw distance hard-limit, value above '3' caused crash
+local PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --Code originally by InsaneRuffles in section above, modified by Lasagna -------------------------------------------------------------------------
@@ -222,10 +235,10 @@ return [[
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
-              <Property value="500" />
+              <Property value="30" />
+              <Property value="90" />
+              <Property value="225" />
+              <Property value="750" />
             </Property>
           </Property>
         </Property>
@@ -636,7 +649,7 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								{"Coverage",	DensityCustom4},
 								{"FlatDensity", DensityCustom4},
-								{"SlopeDensity",	DensityMedLowMultiplier},
+								{"SlopeDensity",	DensityLowMultiplier},
 							}	
 						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -667,11 +680,11 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
 								{"MaxAngle",				MaxAngleSmall},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
+								-- {"MinRegionRadius",			"0"}, ----IR:
+								-- {"FadeInStartDistance",		"0"},
+								-- {"FadeInEndDistance",		"0"},
+								-- {"FadeInOffsetDistance",	"0"},
+								-- {"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -719,21 +732,21 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{"FadeOutEndDistance",		RadiusMultiplier}, ----
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}	
-						},
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] = "*",
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["REPLACE_TYPE"] = "ALL",
+							-- ["VALUE_MATCH"] 		= "9999",
+							-- ["VALUE_MATCH_OPTIONS"] = "<",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"MaxRegionRadius",			RadiusMultiplier}, ----IR:
+								-- {"MaxImposterRadius",		RadiusMultiplier},
+								-- {"FadeOutStartDistance",	RadiusMultiplier},
+								-- {"FadeOutEndDistance",		RadiusMultiplier}, ----
+							-- }	
+						-- },
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
 							["MATH_OPERATION"] = "*",
@@ -819,61 +832,61 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{"LodDistances",	LodDistanceMultiplierDistantObjects}
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",     --one line down
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks} 
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+1",     --one line down
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+2",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+3",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+4",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks} 
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+5",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
+							-- }
+						-- },
 						--REPLACE:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
@@ -1887,6 +1900,54 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{						
 								{ "Placement",	"FLORACLUMP" }
 							}
+						},
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+						
+						--If DistanceObjects section is closed, replace it to make it open
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							["REPLACE_TYPE"] 		= "RAW",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
+							}	
+						},
+						
+					--THEN DO:
+					
+						--If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    </Property>]], [[]] },
+							-- }	
+						-- },
+					
+					--THEN DO:
+					
+						--If Landmarks section is open, remove it so DistanceObjects takes over that section
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							["REPLACE_TYPE"] 		= "RAW",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ [[    <Property name="Landmarks">]], [[]] },
+							}	
+						},
+						
+						--Not possible: DistanceObjects == closed && Landmarks == closed
+						--Not possible: DistanceObjects == open && Landmarks == closed
+						
+						--Add closed Landmarks line after DistantObjects, otherwise error:
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
+							["ADD_OPTION"] = "ADDafterSECTION",
+							["ADD"] 	= [[    <Property name="Landmarks" />]]
 						},
 	}
 return biomeModifier
@@ -2297,7 +2358,7 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							{
 								{"Coverage",	DensityCustom4},
 								{"FlatDensity", DensityCustom4},
-								{"SlopeDensity",	DensityMedLowMultiplier},
+								{"SlopeDensity",	DensityLowMultiplier},
 							}	
 						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -3549,6 +3610,54 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
+-- -------------------------------------------------------------------------------------------------------------------------------------------------
+-- -- g. CHANGE LANDMARKS TO DISTANTOBJECTS <-Causes error in these biomes
+-- -------------------------------------------------------------------------------------------------------------------------------------------------
+						
+						-- --If DistanceObjects section is closed, replace it to make it open
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
+							-- }	
+						-- },
+						
+					-- --THEN DO:
+					
+						-- --If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- -- {
+							-- -- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- -- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- -- ["REPLACE_TYPE"] 		= "RAW",
+							-- -- ["VALUE_CHANGE_TABLE"] 	= 
+							-- -- {
+								-- -- { [[    </Property>]], [[]] },
+							-- -- }	
+						-- -- },
+					
+					-- --THEN DO:
+					
+						-- --If Landmarks section is open, remove it so DistanceObjects takes over that section
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    <Property name="Landmarks">]], [[]] },
+							-- }	
+						-- },
+						
+						-- --Not possible: DistanceObjects == closed && Landmarks == closed
+						-- --Not possible: DistanceObjects == open && Landmarks == closed
+						
+						-- --Add closed Landmarks line after DistantObjects, otherwise error:
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
+							-- ["ADD_OPTION"] = "ADDafterSECTION",
+							-- ["ADD"] 	= [[    <Property name="Landmarks" />]]
+						-- },
 	}
 return biomeModifier
 end
@@ -3588,11 +3697,11 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"MaxScale",				Param2}, --for big/huge biomes
 								{"MaxAngle",				MaxAngleSmall},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
+								-- {"MinRegionRadius",			"0"}, ----IR:
+								-- {"FadeInStartDistance",		"0"},
+								-- {"FadeInEndDistance",		"0"},
+								-- {"FadeInOffsetDistance",	"0"},
+								-- {"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -3659,10 +3768,10 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"Coverage",	Param4},
 								{"FlatDensity", Param3},
 								{"SlopeDensity",	Param5},
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
+								-- {"MaxRegionRadius",			RadiusMultiplier}, ----IR:
+								-- {"MaxImposterRadius",		RadiusMultiplier},
+								-- {"FadeOutStartDistance",	RadiusMultiplier},
+								-- {"FadeOutEndDistance",		RadiusMultiplier}, ----
 							}	
 						},
 						{
@@ -3753,61 +3862,61 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"LodDistances",	LodDistanceMultiplierDistantObjects}
 							}
 						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",     --one line down
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks} 
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+1",     --one line down
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+2",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+3",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+4",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks} 
+							-- }
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							-- ["MATH_OPERATION"] 		= "*",
+							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
+							-- ["REPLACE_TYPE"] 		= "ALL",
+							-- ["LINE_OFFSET"] 		= "+5",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
+							-- }
+						-- },
 						--REPLACE:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
@@ -4061,6 +4170,54 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							{						
 								{ "Placement",	"FLORACLUMP" }
 							}
+						},
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+						
+						--If DistanceObjects section is closed, replace it to make it open
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							["REPLACE_TYPE"] 		= "RAW",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
+							}	
+						},
+						
+					--THEN DO:
+					
+						--If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    </Property>]], [[]] },
+							-- }	
+						-- },
+					
+					--THEN DO:
+					
+						--If Landmarks section is open, remove it so DistanceObjects takes over that section
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							["REPLACE_TYPE"] 		= "RAW",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ [[    <Property name="Landmarks">]], [[]] },
+							}	
+						},
+						
+						--Not possible: DistanceObjects == closed && Landmarks == closed
+						--Not possible: DistanceObjects == open && Landmarks == closed
+						
+						--Add closed Landmarks line after DistantObjects, otherwise error:
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
+							["ADD_OPTION"] = "ADDafterSECTION",
+							["ADD"] 	= [[    <Property name="Landmarks" />]]
 						},
 	}
 return biomeModifier
@@ -4574,6 +4731,54 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 								{ "Placement",	"FLORACLUMP" }
 							}
 						},
+-- -------------------------------------------------------------------------------------------------------------------------------------------------
+-- -- g. CHANGE LANDMARKS TO DISTANTOBJECTS -> removed, causes errors in these biomes
+-- -------------------------------------------------------------------------------------------------------------------------------------------------
+						
+						-- --If DistanceObjects section is closed, replace it to make it open
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
+							-- }	
+						-- },
+						
+					-- --THEN DO:
+					
+						-- --If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- -- {
+							-- -- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- -- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- -- ["REPLACE_TYPE"] 		= "RAW",
+							-- -- ["VALUE_CHANGE_TABLE"] 	= 
+							-- -- {
+								-- -- { [[    </Property>]], [[]] },
+							-- -- }	
+						-- -- },
+					
+					-- --THEN DO:
+					
+						-- --If Landmarks section is open, remove it so DistanceObjects takes over that section
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    <Property name="Landmarks">]], [[]] },
+							-- }	
+						-- },
+						
+						-- --Not possible: DistanceObjects == closed && Landmarks == closed
+						-- --Not possible: DistanceObjects == open && Landmarks == closed
+						
+						-- --Add closed Landmarks line after DistantObjects, otherwise error:
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
+							-- ["ADD_OPTION"] = "ADDafterSECTION",
+							-- ["ADD"] 	= [[    <Property name="Landmarks" />]]
+						-- },
 	}
 return biomeModifier
 end
@@ -4581,7 +4786,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v4.51.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_High_v4.52b.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -4643,7 +4848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERWATERSPHERES.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifier(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityMedLowMultiplier) --biomes 1
+					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifier(ScaleHugeMultiplier, DensityMediumMultiplier, DensityMediumMultiplier, DensityLowMultiplier) --biomes 1
 				},
 				{
 				["MBIN_FILE_SOURCE"] 	= -------BIOMES 3A-----------------------------------------------------------------------------------------
@@ -4676,7 +4881,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERMONOLITHS.MBIN",--creates plants/shore rocks that stick out of water
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERPLANT.MBIN",--creates giant weeds, obstructing all waterCoverageMultiplier
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierDISTANTOBJECTS(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityMedLowMultiplier) --biomes 1
+					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierDISTANTOBJECTS(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityLowMultiplier) --biomes 1
 				},
 				{
 				["MBIN_FILE_SOURCE"] 	= -------BIOMES 3B-----------------------------------------------------------------------------------------
@@ -4909,7 +5114,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",	CoverageMultiplier},
-								{"FlatDensity", DensityMedLowMultiplier},
+								{"FlatDensity", DensityLowMultiplier},
 								--{"SlopeDensity",	1},
 								-- {"MaxRegionRadius",			RadiusMultiplierLow},
 								-- {"MaxImposterRadius",		RadiusMultiplierLow},
@@ -5337,7 +5542,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensityMedLowMultiplier, DensityMedLowMultiplier, DensityPointSevenMultiplier)
+					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensitySHADOWLowMultiplier, DensityLowMultiplier, DensityPointSevenMultiplier)
 				},
 --Biomes 7B
 				{
@@ -5345,7 +5550,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifierDISTANTOBJECTS(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensityMedLowMultiplier, DensityMedLowMultiplier, DensityPointSevenMultiplier)
+					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifierDISTANTOBJECTS(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensitySHADOWLowMultiplier, DensityLowMultiplier, DensityPointSevenMultiplier)
 				},
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5367,7 +5572,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityMediumMultiplier, DensityLowestMultiplier, DensityMedLowMultiplier, DensityMedLowMultiplier, DensityPointEightMultiplier)
+					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityMediumMultiplier, DensityLowestMultiplier, DensityLowMultiplier, DensitySHADOWLowMultiplier, DensityPointEightMultiplier)
 				},
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5506,7 +5711,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",		DensityLowestMultiplier},
-								{"FlatDensity", 	DensityMedLowMultiplier},
+								{"FlatDensity", 	DensityMediumMultiplier},
 								{"SlopeDensity",	DensityLowestMultiplier},
 								{"MaxRegionRadius",			RadiusMultiplierLow},
 								{"MaxImposterRadius",		RadiusMultiplierLow},
@@ -7324,6 +7529,247 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+					
+-------------------------------------------------------------------------------------------------------------------------------------------------
+-- d. CHANGE OBJECTS TO LANDMARKS --------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+						--If Landmarks section is closed, replace it to make it open
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							["REPLACE_TYPE"] 		= "RAW",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ [[    <Property name="Landmarks" />]], [[    <Property name="Landmarks">]] },
+							}	
+						},
+						
+					--THEN DO:
+					
+						--If Landmarks was open already (and had a closing </Property>), deletes closing line (above "Objects")
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Objects",},
+							-- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    </Property>]], [[]] },
+							-- }	
+						-- },
+					
+					--THEN DO:
+					
+						--If Objects section is open, remove it so Landmarks takes over that section
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							["REPLACE_TYPE"] 		= "RAW",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ [[    <Property name="Objects">]], [[]] },
+							}	
+						},
+						
+						
+						--Add closed Objects line after Landmarks, otherwise error:
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks"},
+							["ADD_OPTION"] = "ADDafterSECTION",
+							["ADD"] 	= [[    <Property name="Objects" />]]
+						},
+					} 
+				}
+			}
+		},
+		{
+			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
+			["MBIN_CHANGE_TABLE"] 	= 
+			{ 
+				{
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = = 12. GLOBAL MISC TERRAIN/LOD/FADE TIME STUFF = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--This includes: uncached terrain, shadows, lod adjust, region, planet LOD, and fade time changes
+				
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"GCGRAPHICSGLOBALS.GLOBAL.MBIN"
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ForceUncachedTerrain",	ForceUncachedTerrain},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "*",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ShadowLength",			ShadowLengthMultiplier},
+								--{"ShadowLengthShip",		ShadowLengthMultiplier},
+								{"ShadowLengthSpace",		ShadowLengthMultiplier},
+								{"ShadowLengthStation",		ShadowLengthMultiplier},
+								{"ShadowLengthCameraView",	ShadowLengthMultiplier},
+							}
+						},
+					} 
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"GCENVIRONMENTGLOBALS.GLOBAL.MBIN"		
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "*",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["LINE_OFFSET"] 		= "+1",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier} 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "+",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["LINE_OFFSET"] 		= "+1",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	0}	--distance radius of finest details, increase causes flickering on some planets
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},						
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+6",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "*",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PlanetObjectSwitch",			PlanetLODMultiplier},
+								{"PlanetLodSwitch0",			PlanetLODMultiplier},
+								{"PlanetLodSwitch0Elevation",	PlanetLODMultiplier},
+								{"PlanetLodSwitch1",			PlanetLODMultiplier},
+								{"PlanetLodSwitch2",			PlanetLODMultiplier},
+								{"PlanetLodSwitch3",			PlanetLODMultiplier}
+								--{"PlanetFlipDistance",		PlanetLODMultiplier},
+								--{"PlanetEffectEndDistance",	PlanetLODMultiplier}
+							}
+						},
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)-----------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",  
+							["VALUE_CHANGE_TABLE"]	=
+							{
+								{"TerrainFadeTime",						  "0.7"},
+								{"TerrainFadeTimeInShip",				  "0.9"},
+								--{"CreatureFadeTime",					  "0.9"}, --caused hitching
+								{"FloraFadeTime",						  "0.5"}, --less causes hitching
+								{"FloraFadeTimeMax",				      "0.9"}, --less causes hitching
 							}
 						},
 					} 

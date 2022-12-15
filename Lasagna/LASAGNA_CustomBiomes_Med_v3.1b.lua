@@ -1226,7 +1226,6 @@ AddSmallTree3Collisions =
     </Property>
 ]]
 
-
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------- v The below section is from Shaidak's Generation (*** = Ghostly comment) v -------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1280,7 +1279,7 @@ local LargeObjectCoverageGrassAlwaysPlace = "AlwaysPlace"
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
 local RadiusMultiplier = 3			--objects draw distance multiplier (limited by engine's hard-limit)
 local RadiusMultiplierLow = 2 					--***float = errors
-local GrassRadiusMultiplier = 3		--GRASS draw distance multiplier
+local LodDistancesMultiplierFarGrass = 1.5 --GRASS draw distance multiplier
 local LodDistanceMultiplierDistantObjects = 2 	--***i.e. big rings/huge objects
 local LodDistanceMultiplierLandmarks = 2 			--***i.e. trees/biome plants (unchanged rn)
 local LodDistanceMultiplierLow = 1.5 				--***i.e. high detailobjects biomes, like toxic
@@ -2198,97 +2197,100 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
 							}
 						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["SPECIAL_KEY_WORDS"] 	= {"ID","ULTRA",},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"FlatDensity",				DensitySHADOWLowMultiplier}, --***Fixes shadow flickering
-								-- {"SlopeDensity",			DensitySHADOWLowMultiplier}, --***Fixes shadow flickering
-							-- }
-						-- },
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								--{"MaxImposterRadius",		GrassRadiusMultiplier},
-								--{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								--{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								--{"MaxImposterRadius",		GrassRadiusMultiplier},
-								--{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								--{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
-							}
-						},
+						--REPLACE:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								--{"MaxImposterRadius",		GrassRadiusMultiplier},
-								--{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								--{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"Placement",				"GRASS"},
+								{"MaxAngle",				90},
+								{"LargeObjectCoverage",		"AlwaysPlace"},
+							}
+						},
+						--MULTIPLY:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxRegionRadius",			1.8},
+								{"MaxImposterRadius",		1.8},
+								{"FadeOutStartDistance",	1.8},
+								{"FadeOutEndDistance",		1.8},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							--REPLACE (to correct non-lush/frozen planets density)
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    DensityDETAILLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityDETAILLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleDetailObjects},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"MaxScale",			    2.47},
+								{"Coverage",			    1},
+								{"FlatDensity",			    0.28},
+								{"SlopeDensity",			0.28},
+								{"SlopeMultiplier",			2.5},
+							}
+						},
+						--LODDISTANCES:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+1",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","ULTRA",},
-							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",				0.7}, --***Fixes invisible grass Ultra bug
-								{"SlopeDensity",			0.7}, --***Fixes invisible grass Ultra bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier}, --***Don't use these, grass bug
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	    GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleDetailObjects},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
 							}
 						},
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
@@ -2447,50 +2449,50 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 -- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------------
 						
-						--If DistanceObjects section is closed, replace it to make it open
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
-							}	
-						},
-						
-					--THEN DO:
-					
-						--If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- --If DistanceObjects section is closed, replace it to make it open
 						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							-- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
 							-- ["REPLACE_TYPE"] 		= "RAW",
 							-- ["VALUE_CHANGE_TABLE"] 	= 
 							-- {
-								-- { [[    </Property>]], [[]] },
+								-- { [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
 							-- }	
 						-- },
-					
-					--THEN DO:
-					
-						--If Landmarks section is open, remove it so DistanceObjects takes over that section
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="Landmarks">]], [[]] },
-							}	
-						},
 						
-						--Not possible: DistanceObjects == closed && Landmarks == closed
-						--Not possible: DistanceObjects == open && Landmarks == closed
+					-- --THEN DO:
+					
+						-- --If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
+						-- -- {
+							-- -- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- -- ["LINE_OFFSET"] 		= "-1",     --one line up
+							-- -- ["REPLACE_TYPE"] 		= "RAW",
+							-- -- ["VALUE_CHANGE_TABLE"] 	= 
+							-- -- {
+								-- -- { [[    </Property>]], [[]] },
+							-- -- }	
+						-- -- },
+					
+					-- --THEN DO:
+					
+						-- --If Landmarks section is open, remove it so DistanceObjects takes over that section
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
+							-- ["REPLACE_TYPE"] 		= "RAW",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- { [[    <Property name="Landmarks">]], [[]] },
+							-- }	
+						-- },
 						
-						--Add closed Landmarks line after DistantObjects, otherwise error:
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] 	= [[    <Property name="Landmarks" />]]
-						},
+						-- --Not possible: DistanceObjects == closed && Landmarks == closed
+						-- --Not possible: DistanceObjects == open && Landmarks == closed
+						
+						-- --Add closed Landmarks line after DistantObjects, otherwise error:
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
+							-- ["ADD_OPTION"] = "ADDafterSECTION",
+							-- ["ADD"] 	= [[    <Property name="Landmarks" />]]
+						-- },
 	}
 return biomeModifier
 end
@@ -3136,97 +3138,100 @@ local function BiomesOneTwoThreeModifierUnderwaterCave(DensityCustom1, DensityCu
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
 							}
 						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = "",
-							-- ["SPECIAL_KEY_WORDS"] 	= {"ID","ULTRA",},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"FlatDensity",				DensitySHADOWLowMultiplier}, --***Fixes shadow flickering
-								-- {"SlopeDensity",			DensitySHADOWLowMultiplier}, --***Fixes shadow flickering
-							-- }
-						-- },
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								--{"MaxImposterRadius",		GrassRadiusMultiplier},
-								--{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								--{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								--{"MaxImposterRadius",		GrassRadiusMultiplier},
-								--{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								--{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
-							}
-						},
+						--REPLACE:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityGRASSLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								--{"MaxImposterRadius",		GrassRadiusMultiplier},
-								--{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								--{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleGrass},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"Placement",				"GRASS"},
+								{"MaxAngle",				90},
+								{"LargeObjectCoverage",		"AlwaysPlace"},
+							}
+						},
+						--MULTIPLY:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxRegionRadius",			1.8},
+								{"MaxImposterRadius",		1.8},
+								{"FadeOutStartDistance",	1.8},
+								{"FadeOutEndDistance",		1.8},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = "",
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							--REPLACE (to correct non-lush/frozen planets density)
+							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    DensityDETAILLowestMultiplier}, --***Fixes invisible grass bug
-								{"SlopeDensity",			DensityDETAILLowestMultiplier}, --***Fixes invisible grass bug
-								{"MaxRegionRadius",			GrassRadiusMultiplier},
-								{"MaxImposterRadius",		GrassRadiusMultiplier},
-								{"FadeOutStartDistance",	GrassRadiusMultiplier},
-								{"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleDetailObjects},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"MaxScale",			    2.47},
+								{"Coverage",			    1},
+								{"FlatDensity",			    0.28},
+								{"SlopeDensity",			0.28},
+								{"SlopeMultiplier",			2.5},
+							}
+						},
+						--LODDISTANCES:
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+1",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] 	= {"Placement","GRASS","ID","ULTRA",},
-							["PRECEDING_KEY_WORDS"] = "",
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
 							["MATH_OPERATION"] 		= "*",
 							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",				0.7}, --***Fixes invisible grass Ultra bug
-								{"SlopeDensity",			0.7}, --***Fixes invisible grass Ultra bug
-								-- {"MaxRegionRadius",			GrassRadiusMultiplier}, --***Don't use these, grass bug
-								-- {"MaxImposterRadius",		GrassRadiusMultiplier},
-								-- {"FadeOutStartDistance",	    GrassRadiusMultiplier},
-								-- {"FadeOutEndDistance",		GrassRadiusMultiplier},
-								{"MaxAngle",				MaxAngleDetailObjects},
-								{"LargeObjectCoverage",		LargeObjectCoverageGrassAlwaysPlace},
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SECTION_UP"] = 1,
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistancesMultiplierFarGrass}
 							}
 						},
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
@@ -3433,6 +3438,16 @@ local function BiomesOneTwoThreeModifierUnderwaterCave(DensityCustom1, DensityCu
 	}
 return biomeModifier
 end
+
+
+
+
+
+
+
+--
+
+
 
 
 
@@ -4083,10 +4098,9 @@ return [[
 ]]
 end
 
-
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_High_v3.0.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v3.1b.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper (aka Lasagna) - with InsaneRuffles code & unused Shaidak's Generation code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -4123,7 +4137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- }	
 						-- },
 						-- {		--replaces the added line above --ADDafterSECTION --REPLACEatLINE --ADDafterLINE
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							-- ["ADD_OPTION"] 	= "ADDafterLINE",
 							
 
@@ -4331,6 +4345,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						-- },
 					-- },
 				-- },
+				
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 -- = = = = = = = = = = = = = = = = = = = = = = = = = = = = 5. ADD COLLISIONS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -4344,7 +4359,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS\PLANETS\COMMON\FLAGS\MARTIANFLAG03.SCENE.MBIN",
 						"MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN",
 						--"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\MONOLITH\MONOLITH.SCENE.MBIN", --ok
-						--"MODELS\PLANETS\SNOW\CONSTRUCTS\CONSTRUCT01.SCENE.MBIN", --ok
+						--"MODELS\PLANETS\SNOW\CONSTRUCTS\CONSTRUCT01.SCENE.MBIN",
 						--"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RELIC\RELIC.SCENE.MBIN", --ok
 						"MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN",
 						--"MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\LARGEBUSH1.SCENE.MBIN", --ok
@@ -4596,12 +4611,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
-				
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --= = = = = = = = = = = = = = = = = = = = = = = = = = = = 6. CUSTOM BIOMES = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------		
+--------------------------------------------------------------------------------------------------------------------------------------------------			
 --This modifies the actual files in CUSTOMBIOMES
 				
 				--Custom biome 1
@@ -4639,7 +4653,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\GIANTFLOWERS\GIANTFLOWER1.SCENE.MBIN", 60, 3, 5, 15, 0.18, 0.042)..
 							BiomeExtension("CUSTOMMODELS\GIANTFLOWERS\GIANTFLOWER2.SCENE.MBIN", 60, 3, 5, 15, 0.18, 0.042)..
@@ -4665,7 +4679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\GIANTFLOWERS\GIANTFLOWER1.SCENE.MBIN", 60, 3, 5, 15, 0.18, 0.042)..
 							BiomeExtension("CUSTOMMODELS\GIANTFLOWERS\GIANTFLOWER2.SCENE.MBIN", 60, 3, 5, 15, 0.18, 0.042)..
@@ -4688,7 +4702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEBIRCH\STYLEBIRCHGREEN.SCENE.MBIN", 60, 1, 11, 10, 0.18, 0.084)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEBIRCH\STYLEBIRCHYELLOW.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.084)..
@@ -4712,7 +4726,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEBIRCHDEAD\STYLEDEADBIRCH1.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.084)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEBIRCHDEAD\STYLEDEADBIRCH2.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.084)..
@@ -4735,7 +4749,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEDEAD\STYLEDEADTREE1.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.084)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEDEAD\STYLEDEADTREE2.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.084)..
@@ -4758,11 +4772,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEPINK.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.13)..
-							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEDARKRED.SCENE.MBIN", 60, 1, 13, 10, 0.18, 0.13)..
-							BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\NEVADA\LARGEPROP\LARGEPYRAMID.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.02),
+							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEDARKRED.SCENE.MBIN", 60, 1, 13, 10, 0.18, 0.13),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\NEVADA\LARGEPROP\LARGEPYRAMID.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.02),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -4780,7 +4798,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEGREEN.SCENE.MBIN", 60, 1, 14, 10, 0.18, 0.08)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREECYAN.SCENE.MBIN", 60, 1, 7, 12, 0.18, 0.1)..
@@ -4803,11 +4821,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEBLUE.SCENE.MBIN", 60, 1, 14, 10, 0.18, 0.1)..
-							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEPURPLE.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.12)..
-							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.009)..
+							BiomeExtension("CUSTOMMODELS\STYLIZEDTREENORMAL\STYLETREEPURPLE.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.12),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI4.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.009)..
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI5.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.009),
 						},
 						{
@@ -4826,7 +4848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEPINE\STYLEPINEGREEN.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.13)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEPINE\STYLEPINELIGHT.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.17)..
@@ -4850,7 +4872,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STYLIZEDTREEPINE\STYLEPINEGREEN.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.13)..
 							BiomeExtension("CUSTOMMODELS\STYLIZEDTREEPINE\STYLEPINELIGHT.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.1)..
@@ -5090,7 +5112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\ALIENFOLIAGE\ALIENFOLIAGE1_FLATTENT.SCENE.MBIN", 20, 0.5, 5, 10, 0.18, 0.022)..
 							BiomeExtension("CUSTOMMODELS\ALIENFOLIAGE\ALIENFOLIAGE1_TREEGREEN.SCENE.MBIN", 60, 4, 21, 10, 0.18, 0.05)..
@@ -5114,7 +5136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\ALIENSWAMP\ALIENSWAMP1_EGGTREETHING.SCENE.MBIN", 60, 170, 1400, 10, 0.18, 0.04)..
 							BiomeExtension("CUSTOMMODELS\ALIENSWAMP\ALIENSWAMP2_MANGROVE.SCENE.MBIN", 40, 170, 950, 10, 0.18, 0.007)..
@@ -5136,7 +5158,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("CUSTOMMODELS\STRANGETREE_FLOATLEAF\STRANGETREE_FLOATLEAF1.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.035)..
 							BiomeExtension("CUSTOMMODELS\STRANGETREE_FLOATLEAF\STRANGETREE_FLOATLEAF2.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.035),
@@ -5165,8 +5187,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI5.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI6.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.001).. --VERY wide
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI8.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
-							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
-							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPGREEN.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
+							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPGREEN.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEGREEN.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONEGREEN.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008),
 						},
@@ -5194,8 +5220,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI5.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI6.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.001).. --VERY wide
 							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI8.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
-							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
-							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPSNOW.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
+							BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPSNOW.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGESNOW.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONESNOW.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008),
 						},
@@ -5223,7 +5253,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\COMMON\FLAGS\MARTIANFLAG02.SCENE.MBIN", 40, 1, 4, 0, 0.18, 0.02)..
 							BiomeExtension("MODELS\PLANETS\COMMON\FLAGS\MARTIANFLAG01.SCENE.MBIN", 40, 1, 3, 0, 0.18, 0.02),
@@ -5291,8 +5321,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\SNOW\CONSTRUCTS\CONSTRUCT01.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.006)..
-							BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RELIC\RELIC.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.05)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.1),
+							BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\RELIC\RELIC.SCENE.MBIN", 10, 1, 1.2, 0, 0.18, 0.05),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.1),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -5310,7 +5344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\LARGEBUSH1.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.1)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\DIPLODOCUS\DIPLODOCUS.SCENE.MBIN", 10, 0.8, 6, 0, 0.18, 0.0005)..
@@ -5332,7 +5366,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\LARGEPLANT03.SCENE.MBIN", 60, 1, 7, 10, 0.18, 0.1)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE03.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.1)..
@@ -5356,8 +5390,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\NEVADA\LARGEPROP\LARGEPYRAMID.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.03)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\ALIEN\LARGEPLANT\BENDYTREE01.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.06),
+							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\BIOMES\NEVADA\LARGEPROP\LARGEPYRAMID.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.03),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALIEN\LARGEPLANT\BENDYTREE01.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.06),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -5375,7 +5413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALIEN\LARGEPLANT\LARGETREE02.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.09)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\DIPLODOCUS\DIPLODOCUSALIEN.SCENE.MBIN", 10, 2, 9, 0, 0.18, 0.0005)..
@@ -5397,12 +5435,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGEFIR01.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.05)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGESPRUCE01.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.05)..
-							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMDEADTREE01.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.05)..
-							BiomeExtensionBuildings("MODELS\PLANETS\SNOW\WRECKS\GIANTWRECKEDSHIP.SCENE.MBIN", 10, 1, 1.1, 0, 0.18, 0.0005),
+							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMDEADTREE01.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.05),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtensionBuildings("MODELS\PLANETS\SNOW\WRECKS\GIANTWRECKEDSHIP.SCENE.MBIN", 10, 1, 1.1, 0, 0.18, 0.0005),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
@@ -5420,7 +5462,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGEFIR01.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.06)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGESPRUCE01.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.07)..
@@ -5442,7 +5484,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGEFIR01.SCENE.MBIN", 60, 1, 2.5, 10, 0.18, 0.07)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMSPRUCE01.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.07)..
@@ -5464,7 +5506,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\MEDIUMUMBRELLA01.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.07)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\SMALLCEDAR01.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.07)..
@@ -5487,7 +5529,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\ALPINE\LARGEPLANT\LARGEFIR01.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.08)..
 							BiomeExtension("MODELS\SPACE\WRECKS\DEBRIS\PANEL.SCENE.MBIN", 60, 1, 2, 90, 0.18, 0.06)..
@@ -5510,7 +5552,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\CRYSTAL\LARGEPROP\GIANTSPIKE.SCENE.MBIN", 10, 2, 12, 10, 0.18, 0.05)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\CRYSTAL\LARGEPROP\PILLAR1.SCENE.MBIN", 60, 2, 20, 10, 0.18, 0.08)..
@@ -5532,7 +5574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\MEDIUMCREATURE\ANTELOPE\ANTELOPE.SCENE.MBIN", 10, 0.7, 1.4, 0, 0.18, 0.001)..
 							BiomeExtension("MODELS\COMMON\CHARACTERS\ASTRONAUT\ASTRONAUT01.SCENE.MBIN", 10, 1, 4, 0, 0.18, 0.001)..
@@ -5555,7 +5597,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGEMANGROVE.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.07)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE1.SCENE.MBIN", 60, 1, 5, 10, 0.18, 0.075)..
@@ -5578,7 +5620,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGEPLANT1.SCENE.MBIN", 60, 1, 4, 12, 0.18, 0.07)..
 							--BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\RHINO\RHINOSTANDARD.SCENE.MBIN", 10, 1, 12, 0, 0.18, 0.001)..-----CRASH?
@@ -5601,7 +5643,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGETREE1.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.06),
 							--BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE1BENT.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.07) -----ONE OF THESE CAUSES CRASH
@@ -5624,7 +5666,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE3.SCENE.MBIN", 60, 1, 9, 10, 0.18, 0.07)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\TREEVARIANTS.SCENE.MBIN", 60, 1, 8, 10, 0.18, 0.09),
@@ -5647,7 +5689,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\STRAIGHTTREELARGE.SCENE.MBIN", 60, 1, 6, 10, 0.18, 0.08)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\VINETREELARGE.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.08),
@@ -5668,7 +5710,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\GASBAGS.SCENE.MBIN", 30, 1, 10, 10, 0.18, 0.02)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\LAMPSHAPE.SCENE.MBIN", 30, 3, 17, 10, 0.18, 0.02),
@@ -5689,7 +5731,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPLANTS\UNDERWATERTREE.SCENE.MBIN", 60, 5, 18, 10, 0.18, 0.11)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\CUCUMBERSHAPE.SCENE.MBIN", 10, 2, 12, 10, 0.18, 0.05).. --HUGE PINEAPPLES
@@ -5720,12 +5762,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							-- BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI6.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.001).. --VERY wide
 							-- BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI8.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
 							-- BiomeExtensionBuildings("CUSTOMMODELS\BUILDINGSCIFI\BUILDINGSCIFI9.SCENE.MBIN", 10, 14, 20, 0, 0.18, 0.0035)..
-							-- BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPROCK.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
+						-- },
+						-- {
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							-- ["ADD_OPTION"] 	= "ADDafterLINE",
+							-- ["ADD"] = BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPROCK.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							-- BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEROCK.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
 							-- BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONESTONE.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008),
 						-- },
 						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							-- ["ADD_OPTION"] 	= "ADDafterLINE",
 							-- ["ADD"] = AddTallSparseGrass(),
 						-- },
@@ -5791,7 +5837,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\LARGETREE1.SCENE.MBIN", 20, 2, 10, 10, 0.18, 0.04)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\MEDIUMTREE1.SCENE.MBIN", 30, 1, 4, 10, 0.18, 0.05),
@@ -5812,7 +5858,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\SWAMP\LARGEPLANT\STRAIGHTTREELARGE.SCENE.MBIN", 10, 3, 14, 10, 0.18, 0.03)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 20, 2, 4, 10, 0.18, 0.07),
@@ -5877,7 +5923,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionInWater("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 8, 20, 10, 0.18, 0.11),
 						},
@@ -5897,7 +5943,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 1, 6, 10, 0.18, 0.13),
 						},
@@ -5917,7 +5963,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtensionInWater("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 3, 15, 10, 0.18, 0.09)..
 							BiomeExtensionInWater("MODELS\PLANETS\BIOMES\RAINFOREST\LARGEPLANT\SMALLTREE1BENT.SCENE.MBIN", 60, 1, 4, 10, 0.18, 0.08),
@@ -6040,7 +6086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\UNDERWATER\SEAURCHIN.SCENE.MBIN", 30, 15, 25, 10, 0.18, 0.045)..
 							BiomeExtensionInWater("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 8, 20, 10, 0.18, 0.11),
@@ -6083,10 +6129,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"CUSTOMBIOMES\GHOSTLYUNDERWATERGASBAGS.MBIN",
 						"CUSTOMBIOMES\GHOSTLYUNDERWATERCRYSTALS.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierUnderwaterCave(ScaleHugeMultiplierBig, DensityMediumMultiplierSmall, DensityLowestMultiplierSmall, DensityMedLowMultiplierSmall)
+					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierUnderwaterCave(ScaleHugeMultiplierBig, DensityMediumMultiplierSmall, DensityLowestMultiplierSmall, DensityMedLowMultiplierSmall),
 				},
 				
-				
+						
 			}
 		},
     }
