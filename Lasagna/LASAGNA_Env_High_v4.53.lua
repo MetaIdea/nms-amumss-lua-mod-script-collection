@@ -204,34 +204,53 @@ return [[
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.082" />
-          <Property name="FlatDensity" value="0.36" />
+          <Property name="Coverage" value="0.07" />
+          <Property name="FlatDensity" value="0.045" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
-          <Property name="MaxRegionRadius" value="13498" />
-          <Property name="MaxImposterRadius" value="14" />
-          <Property name="FadeOutStartDistance" value="13498" />
-          <Property name="FadeOutEndDistance" value="13498" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="30" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
           <Property name="FadeOutOffsetDistance" value="0" />
           <Property name="LodDistances">
             <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
-            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
           </Property>
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
-            <Property name="Coverage" value="0.03" />
-            <Property name="FlatDensity" value="0.3" />
-            <Property name="SlopeDensity" value="0.24" />
+            <Property name="Coverage" value="0.1" />
+            <Property name="FlatDensity" value="0.05" />
+            <Property name="SlopeDensity" value="0.05" />
             <Property name="SlopeMultiplier" value="1" />
-            <Property name="MaxRegionRadius" value="14" />
-            <Property name="MaxImposterRadius" value="14" />
-            <Property name="FadeOutStartDistance" value="94" />
-            <Property name="FadeOutEndDistance" value="108" />
+            <Property name="MaxRegionRadius" value="30" />
+            <Property name="MaxImposterRadius" value="30" />
+            <Property name="FadeOutStartDistance" value="210" />
+            <Property name="FadeOutEndDistance" value="240" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="30" />
+              <Property value="90" />
+              <Property value="225" />
+              <Property value="750" />
+            </Property>
+          </Property>
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="ULTRA" />
+            <Property name="Coverage" value="0.1" />
+            <Property name="FlatDensity" value="0.05" />
+            <Property name="SlopeDensity" value="0.05" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="30" />
+            <Property name="MaxImposterRadius" value="30" />
+            <Property name="FadeOutStartDistance" value="210" />
+            <Property name="FadeOutEndDistance" value="240" />
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
@@ -672,6 +691,22 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -680,11 +715,6 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
 								{"MaxAngle",				MaxAngleSmall},
-								-- {"MinRegionRadius",			"0"}, ----IR:
-								-- {"FadeInStartDistance",		"0"},
-								-- {"FadeInEndDistance",		"0"},
-								-- {"FadeInOffsetDistance",	"0"},
-								-- {"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -732,21 +762,23 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{"FadeOutEndDistance",		RadiusMultiplier}, ----
 							}
 						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] = "*",
-							-- ["INTEGER_TO_FLOAT"] = "FORCE",
-							-- ["REPLACE_TYPE"] = "ALL",
-							-- ["VALUE_MATCH"] 		= "9999",
-							-- ["VALUE_MATCH_OPTIONS"] = "<",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								-- {"MaxImposterRadius",		RadiusMultiplier},
-								-- {"FadeOutStartDistance",	RadiusMultiplier},
-								-- {"FadeOutEndDistance",		RadiusMultiplier}, ----
-							-- }	
-						-- },
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
+								{"MaxImposterRadius",		RadiusMultiplier},
+								{"FadeOutStartDistance",	RadiusMultiplier},
+								{"FadeOutEndDistance",		RadiusMultiplier}, ----
+							}	
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
 							["MATH_OPERATION"] = "*",
@@ -832,61 +864,71 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{"LodDistances",	LodDistanceMultiplierDistantObjects}
 							}
 						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+1",     --one line down
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+2",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+3",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+4",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks} 
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+5",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
-							-- }
-						-- },
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+1",     --one line down
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks} 
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
 						--REPLACE:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
@@ -894,7 +936,8 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"PatchEdgeScaling",		"0"},
+								{"Placement",				"FLORACLUMP"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -905,6 +948,7 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -916,6 +960,7 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -927,7 +972,8 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"}, --Takes over bubble glow grass
+								{"PatchEdgeScaling",		"0"},
+								{"Placement",				"FLORACLUMP"}, --Takes over bubble glow grass
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -938,6 +984,7 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"}, 	--Causes lag
 								--{"MaxAngle",				90}, 		--Causes grass to "float" on an angle
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -949,6 +996,7 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -960,6 +1008,7 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								--{"MaxAngle",				90}, 	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -971,7 +1020,8 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"PatchEdgeScaling",		"0"},
+								{"Placement",				"FLORACLUMP"},
 								--{"MaxAngle",				90},	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -982,7 +1032,8 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"Placement",				"GRASS"}, --Causees lag
+								{"PatchEdgeScaling",		"0"},
+								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -993,7 +1044,8 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"Placement",				"GRASS"}, --Causes lag
+								{"PatchEdgeScaling",		"0"},
+								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -1006,9 +1058,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.63},
-								{"FlatDensity",			    0.4},
-								{"SlopeDensity",			0.4},
+								{"Coverage",			    0.33},
+								{"FlatDensity",			    0.1},
+								{"SlopeDensity",			0.1},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -1023,9 +1075,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.63},
-								{"FlatDensity",			    0.4},
-								{"SlopeDensity",			0.4},
+								{"Coverage",			    0.33},
+								{"FlatDensity",			    0.1},
+								{"SlopeDensity",			0.1},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -1055,8 +1107,8 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								{"MaxScale",			    2.47},
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.28},
-								{"SlopeDensity",			0.28},
+								{"FlatDensity",			    0.14},
+								{"SlopeDensity",			0.14},
 								{"SlopeMultiplier",			2.5},
 							}
 						},
@@ -1067,8 +1119,8 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.12},
+								{"SlopeDensity",			0.12},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -1098,9 +1150,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.2},
-								{"FlatDensity",			    0.3},
-								{"SlopeDensity",			0.3},
+								{"Coverage",			    0.1},
+								{"FlatDensity",			    0.07},
+								{"SlopeDensity",			0.07},
 								{"MaxScale", 				1.8},
 							}
 						},
@@ -1111,9 +1163,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.8},
-								{"FlatDensity",			    0.7},
-								{"SlopeDensity",			0.7},
+								{"Coverage",			    0.4},
+								{"FlatDensity",			    0.17},
+								{"SlopeDensity",			0.17},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -1128,9 +1180,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{ 
-								{"Coverage",			    0.5}, 	--Too much = lag 
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"Coverage",			    0.25}, 	--Too much = lag 
+								{"FlatDensity",			    0.12},
+								{"SlopeDensity",			0.12},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -1154,9 +1206,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.16}, 	--Too much = weird faded lod in distance
-								{"FlatDensity",			    0.06}, 	--Lower
-								{"SlopeDensity",			0.06}, 	--Lower
+								{"Coverage",			    0.08}, 	--Too much = weird faded lod in distance
+								{"FlatDensity",			    0.015}, 	--Lower
+								{"SlopeDensity",			0.015}, 	--Lower
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -1171,9 +1223,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.8}, 	--Higher
-								{"FlatDensity",			    0.4}, 
-								{"SlopeDensity",			0.4},
+								{"Coverage",			    0.4}, 	--Higher
+								{"FlatDensity",			    0.1}, 
+								{"SlopeDensity",			0.1},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -1188,9 +1240,9 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.8},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"Coverage",			    0.4},
+								{"FlatDensity",			    0.12},
+								{"SlopeDensity",			0.12},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -2603,7 +2655,8 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"PatchEdgeScaling",		"0"},
+								{"Placement",				"FLORACLUMP"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -2614,6 +2667,7 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -2625,6 +2679,7 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -2636,7 +2691,8 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"}, --Takes over bubble glow grass
+								{"PatchEdgeScaling",		"0"},
+								{"Placement",				"FLORACLUMP"}, --Takes over bubble glow grass
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -2647,6 +2703,7 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"}, 	--Causes lag
 								--{"MaxAngle",				90}, 		--Causes grass to "float" on an angle
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -2658,6 +2715,7 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -2669,6 +2727,7 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								--{"MaxAngle",				90}, 	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -2680,7 +2739,8 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"PatchEdgeScaling",		"0"},
+								{"Placement",				"FLORACLUMP"},
 								--{"MaxAngle",				90},	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -2691,7 +2751,8 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"Placement",				"GRASS"}, --Causees lag
+								{"PatchEdgeScaling",		"0"},
+								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -2702,7 +2763,8 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"Placement",				"GRASS"}, --Causes lag
+								{"PatchEdgeScaling",		"0"},
+								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -2715,9 +2777,9 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.63},
-								{"FlatDensity",			    0.4},
-								{"SlopeDensity",			0.4},
+								{"Coverage",			    0.33},
+								{"FlatDensity",			    0.1},
+								{"SlopeDensity",			0.1},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -2732,9 +2794,9 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.63},
-								{"FlatDensity",			    0.4},
-								{"SlopeDensity",			0.4},
+								{"Coverage",			    0.33},
+								{"FlatDensity",			    0.1},
+								{"SlopeDensity",			0.1},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -2764,8 +2826,8 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							{
 								{"MaxScale",			    2.47},
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.28},
-								{"SlopeDensity",			0.28},
+								{"FlatDensity",			    0.14},
+								{"SlopeDensity",			0.14},
 								{"SlopeMultiplier",			2.5},
 							}
 						},
@@ -2776,8 +2838,8 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.12},
+								{"SlopeDensity",			0.12},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -2807,9 +2869,9 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.2},
-								{"FlatDensity",			    0.3},
-								{"SlopeDensity",			0.3},
+								{"Coverage",			    0.1},
+								{"FlatDensity",			    0.07},
+								{"SlopeDensity",			0.07},
 								{"MaxScale", 				1.8},
 							}
 						},
@@ -2820,9 +2882,9 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.8},
-								{"FlatDensity",			    0.7},
-								{"SlopeDensity",			0.7},
+								{"Coverage",			    0.4},
+								{"FlatDensity",			    0.17},
+								{"SlopeDensity",			0.17},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -2837,9 +2899,9 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{ 
-								{"Coverage",			    0.5}, 	--Too much = lag 
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"Coverage",			    0.25}, 	--Too much = lag 
+								{"FlatDensity",			    0.12},
+								{"SlopeDensity",			0.12},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -2863,9 +2925,9 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.16}, 	--Too much = weird faded lod in distance
-								{"FlatDensity",			    0.06}, 	--Lower
-								{"SlopeDensity",			0.06}, 	--Lower
+								{"Coverage",			    0.08}, 	--Too much = weird faded lod in distance
+								{"FlatDensity",			    0.015}, 	--Lower
+								{"SlopeDensity",			0.015}, 	--Lower
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -2880,9 +2942,9 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.8}, 	--Higher
-								{"FlatDensity",			    0.4}, 
-								{"SlopeDensity",			0.4},
+								{"Coverage",			    0.4}, 	--Higher
+								{"FlatDensity",			    0.1}, 
+								{"SlopeDensity",			0.1},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -2897,9 +2959,9 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.8},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"Coverage",			    0.4},
+								{"FlatDensity",			    0.12},
+								{"SlopeDensity",			0.12},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -3687,6 +3749,22 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -3697,11 +3775,6 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"MaxScale",				Param2}, --for big/huge biomes
 								{"MaxAngle",				MaxAngleSmall},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								-- {"MinRegionRadius",			"0"}, ----IR:
-								-- {"FadeInStartDistance",		"0"},
-								-- {"FadeInEndDistance",		"0"},
-								-- {"FadeInOffsetDistance",	"0"},
-								-- {"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -3757,7 +3830,9 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] = "ALL",
@@ -3768,10 +3843,26 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"Coverage",	Param4},
 								{"FlatDensity", Param3},
 								{"SlopeDensity",	Param5},
-								-- {"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								-- {"MaxImposterRadius",		RadiusMultiplier},
-								-- {"FadeOutStartDistance",	RadiusMultiplier},
-								-- {"FadeOutEndDistance",		RadiusMultiplier}, ----
+								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
+								{"MaxImposterRadius",		RadiusMultiplier},
+								{"FadeOutStartDistance",	RadiusMultiplier},
+								{"FadeOutEndDistance",		RadiusMultiplier}, ----
+							}	
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	Param4},
+								{"FlatDensity", Param3},
+								{"SlopeDensity",	Param5},
 							}	
 						},
 						{
@@ -3862,61 +3953,71 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"LodDistances",	LodDistanceMultiplierDistantObjects}
 							}
 						},
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+1",     --one line down
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+2",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+3",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+4",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks} 
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["MATH_OPERATION"] 		= "*",
-							-- ["INTEGER_TO_FLOAT"]    = "FORCE",
-							-- ["REPLACE_TYPE"] 		= "ALL",
-							-- ["LINE_OFFSET"] 		= "+5",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- {"LodDistances",	LodDistanceMultiplierLandmarks}
-							-- }
-						-- },
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+1",     --one line down
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks} 
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] 		= "*",
+							["INTEGER_TO_FLOAT"]    = "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LodDistances",	LodDistanceMultiplierLandmarks}
+							}
+						},
 						--REPLACE:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
@@ -3924,6 +4025,7 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"}, --Not for Hydro
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -3952,9 +4054,9 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 							{
 								{"MaxScale",			    2.47},
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.28},
-								{"SlopeDensity",			0.28},
-								{"SlopeMultiplier",			2.5},
+								{"FlatDensity",			    0.14},
+								{"SlopeDensity",			0.14},
+								{"SlopeMultiplier",			1.25},
 							}
 						},
 						--LODDISTANCES:
@@ -4247,6 +4349,22 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -4257,11 +4375,6 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 								{"MaxScale",				Param2}, --for big/huge biomes
 								{"MaxAngle",				MaxAngleSmall},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -4317,7 +4430,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] = "ALL",
@@ -4332,6 +4447,22 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 								{"MaxImposterRadius",		RadiusMultiplier},
 								{"FadeOutStartDistance",	RadiusMultiplier},
 								{"FadeOutEndDistance",		RadiusMultiplier}, ----
+							}	
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",	Param4},
+								{"FlatDensity", Param3},
+								{"SlopeDensity",	Param5},
 							}	
 						},
 						{
@@ -4423,7 +4554,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -4434,7 +4567,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -4445,7 +4580,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -4456,7 +4593,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -4467,7 +4606,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -4484,6 +4625,7 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"}, --Not for Hydro
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -4512,9 +4654,9 @@ local function BiomeFourFiveSevenEightModifierDISTANTOBJECTS(Param1, Param2, Par
 							{
 								{"MaxScale",			    2.47},
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.28},
-								{"SlopeDensity",			0.28},
-								{"SlopeMultiplier",			2.5},
+								{"FlatDensity",			    0.14},
+								{"SlopeDensity",			0.14},
+								{"SlopeMultiplier",			1.25},
 							}
 						},
 						--LODDISTANCES:
@@ -4786,7 +4928,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_High_v4.52b.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_High_v4.53.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -5035,6 +5177,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -5045,11 +5203,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxScale",				ScaleLarge},
 								{"MaxAngle",				MaxAngleLarge},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -5282,6 +5435,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"}, --Not for Hydro
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -5310,9 +5464,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxScale",			    2.47},
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.28},
-								{"SlopeDensity",			0.28},
-								{"SlopeMultiplier",			2.5},
+								{"FlatDensity",			    0.14},
+								{"SlopeDensity",			0.14},
+								{"SlopeMultiplier",			1.25},
 							}
 						},
 						--LODDISTANCES:
@@ -5608,6 +5762,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -5618,11 +5788,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxScale",				ScaleLarge},
 								{"MaxAngle",				MaxAngleSmall},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -5702,7 +5867,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] = "ALL",
@@ -5717,6 +5884,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		RadiusMultiplierLow},
 								{"FadeOutStartDistance",	RadiusMultiplierLow},
 								{"FadeOutEndDistance",		RadiusMultiplierLow},
+							}	
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",		DensityLowestMultiplier},
+								{"FlatDensity", 	DensityMediumMultiplier},
+								{"SlopeDensity",	DensityLowestMultiplier},
 							}	
 						},
 						{
@@ -5808,7 +5991,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5819,7 +6004,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5830,7 +6017,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5841,7 +6030,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5852,7 +6043,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -5869,7 +6062,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"PatchEdgeScaling",		"0"},
+								{"Placement",				"FLORACLUMP"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -5880,6 +6074,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -5891,6 +6086,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -5902,7 +6098,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"}, --Takes over bubble glow grass
+								{"PatchEdgeScaling",		"0"},
+								{"Placement",				"FLORACLUMP"}, --Takes over bubble glow grass
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -5913,6 +6110,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"}, 	--Causes lag
 								--{"MaxAngle",				90}, 		--Causes grass to "float" on an angle
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -5924,6 +6122,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -5935,6 +6134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								--{"MaxAngle",				90}, 	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -5946,7 +6146,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"PatchEdgeScaling",		"0"},
+								{"Placement",				"FLORACLUMP"},
 								--{"MaxAngle",				90},	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -5957,7 +6158,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"Placement",				"GRASS"}, --Causees lag
+								{"PatchEdgeScaling",		"0"},
+								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -5968,7 +6170,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"Placement",				"GRASS"}, --Causes lag
+								{"PatchEdgeScaling",		"0"},
+								--{"Placement",				"GRASS"},  	--Causes lag
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -5981,9 +6184,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.63},
-								{"FlatDensity",			    0.4},
-								{"SlopeDensity",			0.4},
+								{"Coverage",			    0.33},
+								{"FlatDensity",			    0.1},
+								{"SlopeDensity",			0.1},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -5998,9 +6201,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.63},
-								{"FlatDensity",			    0.4},
-								{"SlopeDensity",			0.4},
+								{"Coverage",			    0.33},
+								{"FlatDensity",			    0.1},
+								{"SlopeDensity",			0.1},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -6030,8 +6233,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxScale",			    2.47},
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.28},
-								{"SlopeDensity",			0.28},
+								{"FlatDensity",			    0.14},
+								{"SlopeDensity",			0.14},
 								{"SlopeMultiplier",			2.5},
 							}
 						},
@@ -6042,8 +6245,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"FlatDensity",			    0.12},
+								{"SlopeDensity",			0.12},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -6073,9 +6276,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.2},
-								{"FlatDensity",			    0.3},
-								{"SlopeDensity",			0.3},
+								{"Coverage",			    0.1},
+								{"FlatDensity",			    0.07},
+								{"SlopeDensity",			0.07},
 								{"MaxScale", 				1.8},
 							}
 						},
@@ -6086,9 +6289,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.8},
-								{"FlatDensity",			    0.7},
-								{"SlopeDensity",			0.7},
+								{"Coverage",			    0.4},
+								{"FlatDensity",			    0.17},
+								{"SlopeDensity",			0.17},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -6103,9 +6306,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 		= "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{ 
-								{"Coverage",			    0.5}, 	--Too much = lag 
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"Coverage",			    0.25}, 	--Too much = lag 
+								{"FlatDensity",			    0.12},
+								{"SlopeDensity",			0.12},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -6129,9 +6332,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.16}, 	--Too much = weird faded lod in distance
-								{"FlatDensity",			    0.06}, 	--Lower
-								{"SlopeDensity",			0.06}, 	--Lower
+								{"Coverage",			    0.08}, 	--Too much = weird faded lod in distance
+								{"FlatDensity",			    0.015}, 	--Lower
+								{"SlopeDensity",			0.015}, 	--Lower
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -6146,9 +6349,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.8}, 	--Higher
-								{"FlatDensity",			    0.4}, 
-								{"SlopeDensity",			0.4},
+								{"Coverage",			    0.4}, 	--Higher
+								{"FlatDensity",			    0.1}, 
+								{"SlopeDensity",			0.1},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -6163,9 +6366,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Coverage",			    0.8},
-								{"FlatDensity",			    0.5},
-								{"SlopeDensity",			0.5},
+								{"Coverage",			    0.4},
+								{"FlatDensity",			    0.12},
+								{"SlopeDensity",			0.12},
 								{"MaxRegionRadius",			1.8},
 								{"MaxImposterRadius",		1.8},
 								{"FadeOutStartDistance",	1.8},
@@ -6913,6 +7116,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["VALUE_MATCH"] 		= "", 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"MinRegionRadius",			"0"}, ----IR:
+								{"FadeInStartDistance",		"0"},
+								{"FadeInEndDistance",		"0"},
+								{"FadeInOffsetDistance",	"0"},
+								{"FadeOutOffsetDistance",	"0"}  ----
+							}	
+						},
+						{
 							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
 							["VALUE_MATCH"] 		= "", 
 							["INTEGER_TO_FLOAT"] = "FORCE",
@@ -6923,11 +7142,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxScale",				ScaleMedium},
 								{"MaxAngle",				MaxAngleSmall},
 								{"PatchEdgeScaling",		PatchEdgeScalingLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
 							}	
 						},
 						{
@@ -6983,7 +7197,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] = "*",
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["REPLACE_TYPE"] = "ALL",
@@ -6998,6 +7214,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaxImposterRadius",		RadiusMultiplierLow},
 								{"FadeOutStartDistance",	RadiusMultiplierLow},
 								{"FadeOutEndDistance",		RadiusMultiplierLow},
+							}	
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","ULTRA",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
+							["MATH_OPERATION"] = "*",
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["REPLACE_TYPE"] = "ALL",
+							["VALUE_MATCH"] 		= "9999",
+							["VALUE_MATCH_OPTIONS"] = "<",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"Coverage",		DensityLowestMultiplier},
+								{"FlatDensity", 	DensityLowestMultiplier},
+								{"SlopeDensity",	DensityLowestMultiplier},
 							}	
 						},
 						{
@@ -7089,7 +7321,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -7100,7 +7334,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -7111,7 +7347,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -7122,7 +7360,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -7133,7 +7373,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
+							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
+							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
+							["PRECEDING_FIRST"] = "TRUE",
 							["MATH_OPERATION"] 		= "*",
 							["INTEGER_TO_FLOAT"]    = "FORCE",
 							["REPLACE_TYPE"] 		= "ALL",
@@ -7150,6 +7392,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"PatchEdgeScaling",		"0"},
 								{"Placement",				"GRASS"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
@@ -7178,9 +7421,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"MaxScale",			    2.47},
 								{"Coverage",			    1},
-								{"FlatDensity",			    0.28},
-								{"SlopeDensity",			0.28},
-								{"SlopeMultiplier",			2.5},
+								{"FlatDensity",			    0.14},
+								{"SlopeDensity",			0.14},
+								{"SlopeMultiplier",			1.25},
 							}
 						},
 						--LODDISTANCES:
