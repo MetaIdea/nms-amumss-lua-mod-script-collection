@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"GroundWalkSpeed",	"2.2"},
-								{"GroundRunSpeed",	"5.5"}
+								{"GroundRunSpeed",	"5"}
 							}	
 						},
 					}
@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BobAmount",	"0.1"},
-								{"BobFactor",	"0.4"}
+								{"BobFactor",	"0.3"}
 							}	
 						},
 					}
