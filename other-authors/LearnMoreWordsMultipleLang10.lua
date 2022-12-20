@@ -58,7 +58,7 @@ WORDS_LEARN = 10
         similar to what we have here.
 ]]
 
-CODE_TO_INCLUDE = [[
+ORIGINAL_CODE = [[
           <Property value="GcRewardTableItem.xml">
               <Property name="PercentageChance" value="100" />
               <Property name="Reward" value="GcRewardTeachWord.xml">
@@ -76,17 +76,24 @@ CODE_TO_INCLUDE = [[
           </Property>
 ]]
 
+EXPLORER_CODE  = string.gsub(ORIGINAL_CODE, "None", "Explorers")
+TRADER_CODE    = string.gsub(ORIGINAL_CODE, "None", "Traders")
+WARRIOR_CODE   = string.gsub(ORIGINAL_CODE, "None", "Warriors")
+
 -- Since there is already one block of this inside the EXML file, we only need to add the number of words to learn minus 1.
-CODE_TO_INCLUDE = string.rep(CODE_TO_INCLUDE, WORDS_LEARN -1)
+EXPLORER_CODE = string.rep(EXPLORER_CODE, WORDS_LEARN -1)
+TRADER_CODE   = string.rep(TRADER_CODE, WORDS_LEARN)
+WARRIOR_CODE  = string.rep(WARRIOR_CODE, WORDS_LEARN)
+CODE_TO_INCLUDE = EXPLORER_CODE..TRADER_CODE..WARRIOR_CODE
 
 -- If you need more information on how this works, refer back to the Script_Rules.txt file.
 NMS_MOD_DEFINITION_CONTAINER = {
 
     -- Just stuff to define the .pak file
-    ["MOD_FILENAME"] = "LearnMoreWords10.pak",
-    ["MOD_AUTHOR"] = "TheJollyDuck with help from AMUMSS and Nexus lua scripts",
+    ["MOD_FILENAME"]    = "LearnMoreWordsMultiLang10.pak",
+    ["MOD_AUTHOR"]      = "TheJollyDuck with help from AMUMSS and Nexus lua scripts",
     ["MOD_DESCRIPTION"] = "Increases the number of words learned from different sources",
-    ["NMS_VERSION"] = "4.03",
+    ["NMS_VERSION"]     = "4.03",
 
     -- This contains all the stuff to append
     ["MODIFICATIONS"] = {{      
@@ -94,17 +101,24 @@ NMS_MOD_DEFINITION_CONTAINER = {
         ["MBIN_CHANGE_TABLE"] = {{
 
             -- This is the location of the things we will change
-            ["MBIN_FILE_SOURCE"] = {"METADATA/REALITY/TABLES/REWARDTABLE.MBIN"},   
+            ["MBIN_FILE_SOURCE"]  = {"METADATA/REALITY/TABLES/REWARDTABLE.MBIN"},   
             ["EXML_CHANGE_TABLE"] = {{               
 
-                -- This modification only edits the words taken from Knowledge Stones and Encyclopedias
-                -- Special Keywords help locate the place in the code to add the extra blocks seen above
-                -- The stuff comes in pairs: "Id" is paired with "WORD", etc
-                ["SPECIAL_KEY_WORDS"] = {"Id", "WORD", "PercentageChance", "IGNORE"},
-                ["REPLACE_TYPE"] = "ADDAFTERSECTION",
-                
-                -- This part just adds the code we found seen on the top of the script
-                ["ADD"] = CODE_TO_INCLUDE
+                  ["SPECIAL_KEY_WORDS"] = {"Id", "WORD", "PercentageChance", "IGNORE"},
+                  ["REPLACE_TYPE"] = "ALL",
+                  
+                  ["VALUE_CHANGE_TABLE"] = {{"AlienRace", "Explorers"}}
+
+              }, {
+
+                  -- This modification only edits the words taken from Knowledge Stones and Encyclopedias
+                  -- Special Keywords help locate the place in the code to add the extra blocks seen above
+                  -- The stuff comes in pairs: "Id" is paired with "WORD", etc
+                  ["SPECIAL_KEY_WORDS"] = {"Id", "WORD", "PercentageChance", "IGNORE"},
+                  ["REPLACE_TYPE"] = "ADDAFTERSECTION",
+
+                    -- This part just adds the code we found seen on the top of the script
+                  ["ADD"] = CODE_TO_INCLUDE,            
             }}
         }}
     }}
