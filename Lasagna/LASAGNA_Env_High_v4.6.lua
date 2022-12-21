@@ -17,9 +17,10 @@ There are 14 sections in this script:
 9. Buggy biomes 		      -	(BIOMES 9)		- i.e. full toxic/radio (to fix crashes with multi-biome mod)
 10. Low density lava/tentacle -	(BIOMES 10) 	- i.e. lava valcanoes (to fix valcanoes/tentacles everywhere)
 11. Just crystals 		      -	(BIOMES 11)		- i.e. "E3" crystals
-12. Patchscale/regionscale density 		  		- i.e. balance forests vs. empty areas
-13. Fast start									- i.e. remove intro logo
-14. Remove rocks/hazard plants				 	- i.e. remove small rocks & exploding plants
+12. Global misc terrain/LOD/fade time stuff 	- only section that affects global .mbins
+13. Patchscale/regionscale density 		  		- i.e. balance forests vs. empty areas
+14. Fast start									- i.e. remove intro logo
+15. Remove rocks/hazard plants				 	- i.e. remove small rocks & exploding plants
 
 Biomes 1-3 subsections: (old method = giant biomes, less scale variation, longer time)
 a. Scale changes
@@ -51,32 +52,32 @@ InsaneRuffles code = "----IR:"
 --local DestroyedByPlayerShip = "False"
 
 --Only in biomes 1-3:
-local ScaleHugeMultiplier = 5
-local ScaleLargeMultiplier = 3 		--misc. outlier values
-local ScaleMediumMultiplier = 2 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
+local ScaleHugeMultiplier = 9
+local ScaleLargeMultiplier = 4 		--misc. outlier values
+local ScaleMediumMultiplier = 2.2 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
 local ScaleSmallestMultiplier = 1.5
 
 --Only in biomes 4-10:
-local ScaleHuge = 42					--All scale replacement = balanced by patchedgescaling:
-local ScaleExtraLarge = 23
-local ScaleLarge = 11
-local ScaleMedium = 8
-local ScaleSmall = 6
-local ScaleSmallest = 2
+local ScaleHuge = 70					--All scale replacement = balanced by patchedgescaling:
+local ScaleExtraLarge = 38
+local ScaleLarge = 19
+local ScaleMedium = 11
+local ScaleSmall = 8
+local ScaleSmallest = 2.3
 
-local PatchEdgeScalingLarge = 0.74	--Changing these will heavily impact flora/object sizes
-local PatchEdgeScalingMedium = 0.73
-local PatchEdgeScalingSmall = 0.69				
+local PatchEdgeScalingLarge = 0.75	--Changing these will heavily impact flora/object sizes
+local PatchEdgeScalingMedium = 0.74
+local PatchEdgeScalingSmall = 0.7			
 
 --In all:
-local DensityHighestMultiplier = 0.86
+local DensityHighestMultiplier = 0.92
 local DensityMedHighMultiplier = 0.69
 local DensityMediumMultiplier = 0.66 --Caution: raising this over 1 will break some planets
-local DensityMedLowMultiplier = 0.63
-local DensityLowestMultiplier = 0.55
+local DensityLowMultiplier = 0.63
+local DensityLowestMultiplier = 0.59
 
---local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
-local DensityDETAILLowestMultiplier = 0.85 --Caution: raising this will break some planets
+local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
+local DensityDETAILLowestMultiplier = 0.9 --Caution: raising this will break some planets
 
 local DensityPointSevenMultiplier = 0.7 --Caution: raising this will break some planets
 local DensityPointEightMultiplier = 0.8 --Caution: raising this will break some planets
@@ -94,13 +95,23 @@ local PatchsizeRegionScaleMultiplierJustForest = 1.1
 --METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
 local RadiusMultiplier = 3			--objects draw distance multiplier (limited by engine's hard-limit)
 local RadiusMultiplierLow = 2 					--***float = errors
-local LodDistancesMultiplierFarGrass = 1.75 --GRASS draw distance multiplier
-local LodDistanceMultiplierDistantObjects = 1.5 	--***i.e. big rings/huge objects
-local LodDistanceMultiplierLandmarks = 1.5 			--***i.e. trees/biome plants (unchanged rn)
-local LodDistanceMultiplierLow = 1.25 				--***i.e. high detailobjects biomes, like toxic
+--local GrassRadiusMultiplier = 3
+local LodDistancesMultiplierFarGrass = 2 --GRASS draw distance multiplier
+local LodDistanceMultiplierDistantObjects = 2 	--***i.e. big rings/huge objects
+local LodDistanceMultiplierLandmarks = 2 			--***i.e. trees/biome plants (unchanged rn)
+local LodDistanceMultiplierLow = 1.5 				--***i.e. high detailobjects biomes, like toxic
 local LodDistanceMultiplierLowest = 1.1 			--***i.e. HQ biomes that already have high LODD
 local LodDistanceMultiplierHQUltraForest = 0.1    --***just hq forest
-local CoverageMultiplier = 1			--object placement coverage multiplier (object density) --***needed to work
+local CoverageMultiplier = 0.66			--object placement coverage multiplier (object density) --***needed to work
+
+--GCGRAPHICSGLOBALS.GLOBAL
+local ForceUncachedTerrain = "True"	--fix slow terrain textures loading (default = false)
+local ShadowLengthMultiplier = 3	--shadows draw distance multiplier --***needed to work
+
+--GCENVIRONMENTGLOBALS.GLOBAL
+local LODAdjustMultiplier = 2		--inconsistent results
+local RegionLODRadiusAdd = 3			--increases draw distance hard-limit, value above '3' caused crash
+local PlanetLODMultiplier = 3		--planet lod distance multiplier
 
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --Code originally by InsaneRuffles in section above, modified by Lasagna -------------------------------------------------------------------------
@@ -657,7 +668,7 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 							{
 								{"Coverage",	DensityCustom4},
 								{"FlatDensity", DensityCustom4},
-								{"SlopeDensity",	DensityMedLowMultiplier},
+								{"SlopeDensity",	DensityLowMultiplier},
 							}	
 						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2399,7 +2410,7 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 							{
 								{"Coverage",	DensityCustom4},
 								{"FlatDensity", DensityCustom4},
-								{"SlopeDensity",	DensityMedLowMultiplier},
+								{"SlopeDensity",	DensityLowMultiplier},
 							}	
 						},
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -4917,7 +4928,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Med_v4.53.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_High_v4.6.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -4979,7 +4990,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						-- "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\UNDERWATERSPHERES.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSOBJECTSFULL.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifier(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityMedLowMultiplier) --biomes 1
+					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifier(ScaleHugeMultiplier, DensityMediumMultiplier, DensityMediumMultiplier, DensityLowMultiplier) --biomes 1
 				},
 				{
 				["MBIN_FILE_SOURCE"] 	= -------BIOMES 3A-----------------------------------------------------------------------------------------
@@ -5012,7 +5023,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERMONOLITHS.MBIN",--creates plants/shore rocks that stick out of water
 						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\UNDERWATER\UNDERWATERPLANT.MBIN",--creates giant weeds, obstructing all waterCoverageMultiplier
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierDISTANTOBJECTS(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityMedLowMultiplier) --biomes 1
+					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierDISTANTOBJECTS(ScaleHugeMultiplier, DensityMediumMultiplier, DensityLowestMultiplier, DensityLowMultiplier) --biomes 1
 				},
 				{
 				["MBIN_FILE_SOURCE"] 	= -------BIOMES 3B-----------------------------------------------------------------------------------------
@@ -5256,7 +5267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",	CoverageMultiplier},
-								{"FlatDensity", DensityMedLowMultiplier},
+								{"FlatDensity", DensityLowMultiplier},
 								--{"SlopeDensity",	1},
 								-- {"MaxRegionRadius",			RadiusMultiplierLow},
 								-- {"MaxImposterRadius",		RadiusMultiplierLow},
@@ -5685,7 +5696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLAROBJECTS.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLEOBJECTS.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensityMedLowMultiplier, DensityMedLowMultiplier, DensityPointSevenMultiplier)
+					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensitySHADOWLowMultiplier, DensityLowMultiplier, DensityPointSevenMultiplier)
 				},
 --Biomes 7B
 				{
@@ -5693,7 +5704,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPOBJECTSFULL.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifierDISTANTOBJECTS(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensityMedLowMultiplier, DensityMedLowMultiplier, DensityPointSevenMultiplier)
+					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifierDISTANTOBJECTS(ScaleExtraLarge, ScaleLarge, DensityHighestMultiplier, CoverageMultiplier, DensitySHADOWLowMultiplier, DensityLowMultiplier, DensityPointSevenMultiplier)
 				},
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5715,7 +5726,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSOBJECTSDEAD.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSOBJECTSDEAD.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityMediumMultiplier, DensityLowestMultiplier, DensityMedLowMultiplier, DensityMedLowMultiplier, DensityPointEightMultiplier)
+					["EXML_CHANGE_TABLE"] 	= BiomeFourFiveSevenEightModifier(ScaleExtraLarge, ScaleLarge, DensityMediumMultiplier, DensityLowestMultiplier, DensityLowMultiplier, DensitySHADOWLowMultiplier, DensityPointEightMultiplier)
 				},
 				{
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5867,7 +5878,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",		DensityLowestMultiplier},
-								{"FlatDensity", 	DensityMedLowMultiplier},
+								{"FlatDensity", 	DensityMediumMultiplier},
 								{"SlopeDensity",	DensityLowestMultiplier},
 								{"MaxRegionRadius",			RadiusMultiplierLow},
 								{"MaxImposterRadius",		RadiusMultiplierLow},
@@ -5887,7 +5898,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"Coverage",		DensityLowestMultiplier},
-								{"FlatDensity", 	DensityMedLowMultiplier},
+								{"FlatDensity", 	DensityMediumMultiplier},
 								{"SlopeDensity",	DensityLowestMultiplier},
 							}	
 						},
@@ -7809,6 +7820,200 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks"},
 							["ADD_OPTION"] = "ADDafterSECTION",
 							["ADD"] 	= [[    <Property name="Objects" />]]
+						},
+					} 
+				}
+			}
+		},
+		{
+			["PAK_FILE_SOURCE"] 	= "NMSARC.59B126E2.pak",
+			["MBIN_CHANGE_TABLE"] 	= 
+			{ 
+				{
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+-- = = = = = = = = = = = = = = = = = 12. GLOBAL MISC TERRAIN/LOD/FADE TIME STUFF = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--This includes: uncached terrain, shadows, lod adjust, region, planet LOD, and fade time changes
+				
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"GCGRAPHICSGLOBALS.GLOBAL.MBIN"
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["REPLACE_TYPE"] 		= "ALL",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ForceUncachedTerrain",	ForceUncachedTerrain},
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "*",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"ShadowLength",			ShadowLengthMultiplier},
+								--{"ShadowLengthShip",		ShadowLengthMultiplier},
+								{"ShadowLengthSpace",		ShadowLengthMultiplier},
+								{"ShadowLengthStation",		ShadowLengthMultiplier},
+								{"ShadowLengthCameraView",	ShadowLengthMultiplier},
+							}
+						},
+					} 
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"GCENVIRONMENTGLOBALS.GLOBAL.MBIN"		
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "*",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["LINE_OFFSET"] 		= "+1",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier} 
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "*",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"LODAdjust",	LODAdjustMultiplier}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "+",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["LINE_OFFSET"] 		= "+1",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	0}	--distance radius of finest details, increase causes flickering on some planets
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+2",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+3",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+4",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+5",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},						
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["MATH_OPERATION"] 		= "+",
+							["REPLACE_TYPE"] 		= "ALL",
+							["LINE_OFFSET"] 		= "+6",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"RegionLODRadius",	RegionLODRadiusAdd}
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "",   
+							["MATH_OPERATION"] 		= "*",    
+							["REPLACE_TYPE"] 		= "ALL",    
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"PlanetObjectSwitch",			PlanetLODMultiplier},
+								{"PlanetLodSwitch0",			PlanetLODMultiplier},
+								{"PlanetLodSwitch0Elevation",	PlanetLODMultiplier},
+								{"PlanetLodSwitch1",			PlanetLODMultiplier},
+								{"PlanetLodSwitch2",			PlanetLODMultiplier},
+								{"PlanetLodSwitch3",			PlanetLODMultiplier}
+								--{"PlanetFlipDistance",		PlanetLODMultiplier},
+								--{"PlanetEffectEndDistance",	PlanetLODMultiplier}
+							}
+						},
+--------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------Code by InsaneRuffles in section above, modified by Lllasagna (*** = lasagna comment)-----------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["INTEGER_TO_FLOAT"]	= "FORCE",
+							["REPLACE_TYPE"] 		= "ALL",  
+							["VALUE_CHANGE_TABLE"]	=
+							{
+								{"TerrainFadeTime",						  "0.7"},
+								{"TerrainFadeTimeInShip",				  "0.9"},
+								--{"CreatureFadeTime",					  "0.9"}, --caused hitching
+								{"FloraFadeTime",						  "0.5"}, --less causes hitching
+								{"FloraFadeTimeMax",				      "0.9"}, --less causes hitching
+							}
 						},
 					} 
 				}
