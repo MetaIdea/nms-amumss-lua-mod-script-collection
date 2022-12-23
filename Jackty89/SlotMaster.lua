@@ -27,58 +27,58 @@ ImproveFreighter = true
 ImproveSpecialSlots = false
 MaxSlot = false
 
--- InputUserImproveShip = {ImproveShip,
--- [[
---     Would you like impprove ship slots?
---     Default = Y | Current = >> ]] .. (ImproveShip and "Y" or "N") .. [[ <<
--- ]]}
--- InputUserImproveWeapon = {ImproveWeapon,
--- [[
---     Would you like impprove weapon slots?
---     Default = Y | Current = >> ]] .. (ImproveWeapon and "Y" or "N") .. [[ <<
--- ]]}
--- InputUserImproveAlien = {ImproveAlien,
--- [[
---     Would you like impprove living ship slots?
---     Default = Y | Current = >> ]] .. (ImproveAlien and "Y" or "N") .. [[ <<
--- ]]}
--- InputUserImproveVehicle = {ImproveVehicle,
--- [[
---     Would you like impprove exocraft slots?
---     Default = Y | Current = >> ]] .. (ImproveVehicle and "Y" or "N") .. [[ <<
--- ]]}
--- InputUserImproveInventory = {ImproveInventory,
--- [[
---     Would you like impprove ship slots?
---     Default = Y | Current = >> ]] .. (ImproveInventory and "Y" or "N") .. [[ <<
--- ]]}
--- InputUserImproveFreighter = {ImproveFreighter,
--- [[
---     Would you like impprove freighter slots?
---     Default = Y | Current = >> ]] .. (ImproveFreighter and "Y" or "N") .. [[ <<
--- ]]}
+InputUserImproveShip = {ImproveShip,
+[[
+    Would you like impprove ship slots?
+    Default = Y | Current = >> ]] .. (ImproveShip and "Y" or "N") .. [[ <<
+]]}
+InputUserImproveWeapon = {ImproveWeapon,
+[[
+    Would you like impprove weapon slots?
+    Default = Y | Current = >> ]] .. (ImproveWeapon and "Y" or "N") .. [[ <<
+]]}
+InputUserImproveAlien = {ImproveAlien,
+[[
+    Would you like impprove living ship slots?
+    Default = Y | Current = >> ]] .. (ImproveAlien and "Y" or "N") .. [[ <<
+]]}
+InputUserImproveVehicle = {ImproveVehicle,
+[[
+    Would you like impprove exocraft slots?
+    Default = Y | Current = >> ]] .. (ImproveVehicle and "Y" or "N") .. [[ <<
+]]}
+InputUserImproveInventory = {ImproveInventory,
+[[
+    Would you like impprove ship slots?
+    Default = Y | Current = >> ]] .. (ImproveInventory and "Y" or "N") .. [[ <<
+]]}
+InputUserImproveFreighter = {ImproveFreighter,
+[[
+    Would you like impprove freighter slots?
+    Default = Y | Current = >> ]] .. (ImproveFreighter and "Y" or "N") .. [[ <<
+]]}
 
--- InputUserImproveSpecialSlots = {ImproveSpecialSlots,
--- [[
---     Would you like all your suit slots be overcharged?
---     This changes is permanent unless by revertign with Save Editing.
---     Default = N | Current = >> ]] .. (ImproveSpecialSlots and "Y" or "N") .. [[ <<
--- ]]}
--- InputUserMaxSlot = {MaxSlot,
--- [[
---     Would you like max slot on all inventories?
---     Default = N | Current = >> ]] .. (MaxSlot and "Y" or "N") .. [[ <<
--- ]]}
+InputUserImproveSpecialSlots = {ImproveSpecialSlots,
+[[
+    Would you like all your suit slots be overcharged?
+    This changes is permanent unless by revertign with Save Editing.
+    Default = N | Current = >> ]] .. (ImproveSpecialSlots and "Y" or "N") .. [[ <<
+]]}
+InputUserMaxSlot = {MaxSlot,
+[[
+    Would you like max slot on all inventories?
+    Default = N | Current = >> ]] .. (MaxSlot and "Y" or "N") .. [[ <<
+]]}
 
--- ImproveShip = GUIF(InputUserImproveShip)
--- ImproveWeapon = GUIF(InputUserImproveWeapon)
--- ImproveAlien = GUIF(InputUserImproveAlien)
--- ImproveVehicle = GUIF(InputUserImproveVehicle)
--- ImproveInventory = GUIF(InputUserImproveInventory)
--- ImproveFreighter = GUIF(InputUserImproveFreighter)
+ImproveShip = GUIF(InputUserImproveShip)
+ImproveWeapon = GUIF(InputUserImproveWeapon)
+ImproveAlien = GUIF(InputUserImproveAlien)
+ImproveVehicle = GUIF(InputUserImproveVehicle)
+ImproveInventory = GUIF(InputUserImproveInventory)
+ImproveFreighter = GUIF(InputUserImproveFreighter)
 
--- ImproveSpecialSlots = InputUserImproveSpecialSlots
--- MaxSlot = InputUserMaxSlot
+ImproveSpecialSlots = GUIF(InputUserImproveSpecialSlots)
+MaxSlot = GUIF(InputUserMaxSlot)
 
 AlienSizes = {
     "AlienSmall",
@@ -367,14 +367,14 @@ function SpecialSlot(row, col)
     ]]
 end
 
-function AddSpecialSlotProperty(entries)
-    return
-    [[
-        <Property name="SpecialSlots">
-        ]]..entries..[[
-        </Property>
-    ]]
-end
+-- function AddSpecialSlotProperty(entries)
+--     return
+--     [[
+--         <Property name="SpecialSlots">
+--         ]]..entries..[[
+--         </Property>
+--     ]]
+-- end
 
 local ChangesToDefaultSaveData= NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 function SaveDataSpecialSlots()
