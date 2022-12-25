@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "SIR - ShipHUD - Lines - Blue.pak",
 ["MOD_DESCRIPTION"] = "",
-["MOD_AUTHOR"]      = "PC Mystic",
+["MOD_AUTHOR"]      = "VirtualVoyager",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
