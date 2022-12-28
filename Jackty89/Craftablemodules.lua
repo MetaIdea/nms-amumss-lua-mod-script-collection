@@ -150,7 +150,7 @@ Languages =
 CraftableModulesLanguageString =
 {
     {
-        ["ID"] = "FREI_INV_TOKEN",
+        ["ID"] = "FRIG_TOKEN",
         ["NewDescriptionID"] = "CUI_FRIG_TOKEN_DESC",
         ["Languages"] =
         {
@@ -170,7 +170,7 @@ CraftableModulesLanguageString =
         }
     },
     {
-        ["ID"] = "FRIG_TOKEN",
+        ["ID"] = "FREI_INV_TOKEN",
         ["NewDescriptionID"] = "CUI_FREIGHT_INV_TOKEN_DESC",
         ["Languages"] =
         {
