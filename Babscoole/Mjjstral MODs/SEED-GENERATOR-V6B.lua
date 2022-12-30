@@ -171,6 +171,45 @@ function AddInvetoryElements(TYPE)
 return table.concat(statsStringTable)
 end
 
+function AddBaseStats(TYPE)
+    if TYPE == "Alien" then
+        return 
+[[
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="SHIP_DAMAGE" />
+                    <Property name="Value" value="1" />
+                  </Property>
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="SHIP_SHIELD" />
+                    <Property name="Value" value="1" />
+                  </Property>
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="SHIP_HYPERDRIVE" />
+                    <Property name="Value" value="1" />
+                  </Property>
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="ALIEN_SHIP" />
+                    <Property name="Value" value="1" />
+                  </Property>
+]]
+    end
+        return 
+[[
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="SHIP_DAMAGE" />
+                    <Property name="Value" value="1" />
+                  </Property>
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="SHIP_SHIELD" />
+                    <Property name="Value" value="1" />
+                  </Property>
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="SHIP_HYPERDRIVE" />
+                    <Property name="Value" value="1" />
+                  </Property>
+]]
+end
+
 function CreateCustomMultitoolRewardSubEntry(DEC_SEED, HEX_SEED, TYPE)
 local GENERIC_REWARD_ENTRY =
 [[
@@ -261,7 +300,9 @@ local GENERIC_REWARD_SUB_ENTRY =
                 <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
                   <Property name="InventoryStackSizeGroup" value="Default" />
                 </Property>
-                <Property name="BaseStatValues" />
+                <Property name="BaseStatValues">
+]]..AddBaseStats(TYPE)..[[
+                </Property>
                 <Property name="SpecialSlots" />
                 <Property name="Width" value="8" />
                 <Property name="Height" value="3" />
@@ -518,7 +559,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.07",
+["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -592,4 +633,3 @@ NMS_MOD_DEFINITION_CONTAINER =
 		}
 	}
 }
-
