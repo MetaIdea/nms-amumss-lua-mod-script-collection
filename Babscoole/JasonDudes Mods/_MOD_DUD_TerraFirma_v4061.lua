@@ -183,7 +183,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"FloatingIslands","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"FloatingIslands","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
@@ -396,14 +396,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GrandCanyon","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"GrandCanyon","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GrandCanyon","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"GrandCanyon","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -563,14 +563,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"MountainRavines","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"MountainRavines","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"MountainRavines","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"MountainRavines","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -758,14 +758,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"HugeArches","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"HugeArches","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"HugeArches","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"HugeArches","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -848,7 +848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Alien","Min","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"Alien","Min","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Width",   "50"},
@@ -856,7 +856,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Alien","Min","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"Alien","Min","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -953,7 +953,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Alien","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"Alien","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Width",   "75"},
@@ -961,7 +961,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Alien","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"Alien","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Width",   "50"},
@@ -1167,7 +1167,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Craters","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"Craters","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Width",      "60"},
@@ -1176,7 +1176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Craters","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"Craters","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",    "3"},
@@ -1328,14 +1328,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Caverns","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"Caverns","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Caverns","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"Caverns","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -1422,14 +1422,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Alpine","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"Alpine","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Alpine","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"Alpine","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -1569,14 +1569,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LilyPad","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"LilyPad","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LilyPad","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"LilyPad","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -1840,14 +1840,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Desert","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"Desert","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Desert","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"Desert","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -2082,14 +2082,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"WaterworldPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"WaterworldPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"WaterworldPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"WaterworldPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -2737,14 +2737,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"FloatingIslandsPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -3468,14 +3468,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"GrandCanyonPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -4120,14 +4120,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"MountainRavinesPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -4815,14 +4815,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"HugeArchesPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -5430,14 +5430,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"AlienPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"AlienPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"AlienPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"AlienPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -6090,7 +6090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"CratersPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"CratersPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Width",      "60"},
@@ -6099,7 +6099,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"CratersPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"CratersPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",    "3"},
@@ -6749,14 +6749,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"CavernsPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"CavernsPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"CavernsPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"CavernsPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
@@ -7288,14 +7288,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Octaves", "3"},
 							}
 						},	
 						{
-							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Height",  "20"},
@@ -7866,14 +7866,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Octaves", "3"},
 							}
 						},	
 						{
-							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Height",  "20"},
@@ -8598,14 +8598,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Underground","Mouth"},
+							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Caves","Mouth"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Octaves", "3"},
 							}
 						},	
 						{
-							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Underground","Tunnel"},
+							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Caves","Tunnel"},
 							["VALUE_CHANGE_TABLE"] = 
 							{
 								{"Height",  "20"},
