@@ -105,6 +105,75 @@ AddBasicCollisions = --scale y&z flipped compared to blender (v2.6: 0.24 from 0.
 ]]
 
 --DONE
+AddSailPlantCollisions =
+[[
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="CHILD1" />
+      <Property name="NameHash" value="182068161" />
+      <Property name="Type" value="LOCATOR" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="9.01606" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1.08925" />
+        <Property name="ScaleY" value="1.08925" />
+        <Property name="ScaleZ" value="1.08925" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="ATTACHMENT" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\PHYSICS.ENTITY.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children">
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="CUSTOMMODELS\TREESPINE\PINETREE_RED" />
+          <Property name="NameHash" value="793066182" />
+          <Property name="Type" value="COLLISION" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="TYPE" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="Box" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="WIDTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="HEIGHT" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="DEPTH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="1.000000" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
+      </Property>
+    </Property>
+]]
+
+--DONE
 AddStargateMainCollisions =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -1368,76 +1437,6 @@ AddSmallTree3Collisions =
 --------------------------------- v The below section is from Shaidak's Generation (*** = Ghostly comment) v -------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
-local ScaleHugeMultiplierBig = 7
-local DensityMediumMultiplierBig = 0.62 --Caution: raising this over 1 will break some planets
-local DensityLowestMultiplierBig = 0.55
-local DensityLowMultiplierBig = 0.59
-
-local ScaleHugeMultiplierSmall = 4
-local DensityMediumMultiplierSmall = 0.62
-local DensityLowestMultiplierSmall = 0.52
-local DensityMedLowMultiplierSmall = 0.59
-
---
-
-local DensityHighestMultiplier = 0.86
-local DensityMedHighMultiplier = 0.65
-local DensityMediumMultiplier = 0.62 --Caution: raising this over 1 will break some planets
-local DensityLowMultiplier = 0.59
-local DensityLowestMultiplier = 0.55
-
-local minHeightAboveWater = -1
-local maxHeightAboveWater = 128
-
---local DestroyedByPlayerShip = "False"
-
-local ScaleHugeMultiplier = 9
-local ScaleLargeMultiplier = 4 		--misc. outlier values
-local ScaleMediumMultiplier = 2.2 	--grass, bushes, etc. (2.2 so tall grass doesn't hit eyes on uphill climb)
-local ScaleSmallestMultiplier = 1.5
-
-local DensitySHADOWLowMultiplier = 0.95 --Caution: raising this will break some planets
-local DensityDETAILLowestMultiplier = 0.9 --Caution: raising this will break some planets
-local DensityGRASSLowestMultiplier = 0.4
-
-local DensityPointSevenMultiplier = 0.7 --Caution: raising this will break some planets
-local DensityPointEightMultiplier = 0.8 --Caution: raising this will break some planets
-
-local MaxAngleLarge = 80 			--i.e. cactus, rocks
-local MaxAngleSmall = 60 			--i.e. trees, largest objects
-local MaxAngleDetailObjects = 90
-local MaxAngleGrass = 180
-
-local LargeObjectCoverageGrassAlwaysPlace = "AlwaysPlace"
-
---------------------------------------------------------------------------------------------------------------------------------------------------
---Code originally by InsaneRuffles in section below, modified by Lasagna (--*** = lasagna comments)----------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------
-
---METADATA\SIMULATION\SOLARSYSTEM\BIOMES\*
-local RadiusMultiplier = 3			--objects draw distance multiplier (limited by engine's hard-limit)
-local RadiusMultiplierLow = 2 					--***float = errors
-local LodDistancesMultiplierFarGrass = 2 --GRASS draw distance multiplier
-local LodDistanceMultiplierDistantObjects = 2 	--***i.e. big rings/huge objects
-local LodDistanceMultiplierLandmarks = 2 			--***i.e. trees/biome plants (unchanged rn)
-local LodDistanceMultiplierLow = 1.5 				--***i.e. high detailobjects biomes, like toxic
-local LodDistanceMultiplierLowest = 1.1 			--***i.e. HQ biomes that already have high LODD
-local LodDistanceMultiplierHQUltraForest = 0.1    --***just hq forest
-local CoverageMultiplier = 0.66			--object placement coverage multiplier (object density) --***needed to work
-
---GCGRAPHICSGLOBALS.GLOBAL
-local ForceUncachedTerrain = "True"	--fix slow terrain textures loading (default = false)
-local ShadowLengthMultiplier = 3	--shadows draw distance multiplier --***needed to work
-
---GCENVIRONMENTGLOBALS.GLOBAL
-local LODAdjustMultiplier = 2		--inconsistent results
-local RegionLODRadiusAdd = 3			--increases draw distance hard-limit, value above '3' caused crash
-local PlanetLODMultiplier = 3		--planet lod distance multiplier
-
---------------------------------------------------------------------------------------------------------------------------------------------------
---Code originally by InsaneRuffles in section above, modified by Lasagna -------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------------
-
 -- Density = {
 	-- HighE				= 0.048,
 	-- HighD				= 0.042,
@@ -1693,6 +1692,146 @@ local PlanetLODMultiplier = 3		--planet lod distance multiplier
 -- = = = = = = = = = = = = = = = = = = = = = = = = = = = = 3. USED FUNCTIONS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
+function AddScrubGrass()
+return [[
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers">
+              <Property value="TkProceduralTextureChosenOptionSampler.xml">
+                <Property name="Options">
+                  <Property value="TkProceduralTextureChosenOption.xml">
+                    <Property name="Layer" value="BASE" />
+                    <Property name="Group" value="" />
+                    <Property name="Palette" value="TkPaletteTexture.xml">
+                      <Property name="Palette" value="Grass" />
+                      <Property name="ColourAlt" value="Primary" />
+                    </Property>
+                    <Property name="OverrideColour" value="False" />
+                    <Property name="Colour" value="Colour.xml">
+                      <Property name="R" value="0.35" />
+                      <Property name="G" value="0.318" />
+                      <Property name="B" value="0.243" />
+                      <Property name="A" value="1" />
+                    </Property>
+                    <Property name="OptionName" value="" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="GRASS" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
+        <Property name="OverlapStyle" value="All" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="40" />
+        <Property name="MatchGroundColour" value="False" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="1.2" />
+        <Property name="MaxScale" value="1.45" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="True" />
+        <Property name="ShearWindStrength" value="0.75" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="0.07" />
+          <Property name="FlatDensity" value="0.045" />
+          <Property name="SlopeDensity" value="0" />
+          <Property name="SlopeMultiplier" value="3" />
+          <Property name="MaxRegionRadius" value="9999" />
+          <Property name="MaxImposterRadius" value="30" />
+          <Property name="FadeOutStartDistance" value="9999" />
+          <Property name="FadeOutEndDistance" value="9999" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="20" />
+            <Property value="60" />
+            <Property value="150" />
+            <Property value="500" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="0.1" />
+            <Property name="FlatDensity" value="0.05" />
+            <Property name="SlopeDensity" value="0.05" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="30" />
+            <Property name="MaxImposterRadius" value="30" />
+            <Property name="FadeOutStartDistance" value="210" />
+            <Property name="FadeOutEndDistance" value="240" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="30" />
+              <Property value="90" />
+              <Property value="225" />
+              <Property value="750" />
+            </Property>
+          </Property>
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="ULTRA" />
+            <Property name="Coverage" value="0.1" />
+            <Property name="FlatDensity" value="0.05" />
+            <Property name="SlopeDensity" value="0.05" />
+            <Property name="SlopeMultiplier" value="1" />
+            <Property name="MaxRegionRadius" value="30" />
+            <Property name="MaxImposterRadius" value="30" />
+            <Property name="FadeOutStartDistance" value="210" />
+            <Property name="FadeOutEndDistance" value="240" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="30" />
+              <Property value="90" />
+              <Property value="225" />
+              <Property value="750" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+]]
+end
+
 function AddGrass()
 return [[
       <Property value="GcObjectSpawnData.xml">
@@ -1833,7 +1972,145 @@ return [[
 ]]
 end
 
-
+function AddGrassShort()
+return [[
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers">
+              <Property value="TkProceduralTextureChosenOptionSampler.xml">
+                <Property name="Options">
+                  <Property value="TkProceduralTextureChosenOption.xml">
+                    <Property name="Layer" value="BASE" />
+                    <Property name="Group" value="" />
+                    <Property name="Palette" value="TkPaletteTexture.xml">
+                      <Property name="Palette" value="Plant" />
+                      <Property name="ColourAlt" value="Primary" />
+                    </Property>
+                    <Property name="OverrideColour" value="True" />
+                    <Property name="Colour" value="Colour.xml">
+                      <Property name="R" value="0.42" />
+                      <Property name="G" value="0.53" />
+                      <Property name="B" value="0.239" />
+                      <Property name="A" value="1" />
+                    </Property>
+                    <Property name="OptionName" value="3" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="GRASS" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
+        <Property name="OverlapStyle" value="All" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="90" />
+        <Property name="MatchGroundColour" value="True" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.75" />
+        <Property name="MaxScale" value="2.47" />
+        <Property name="MinScaleY" value="0.7" />
+        <Property name="MaxScaleY" value="0.75" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0.75" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.14" />
+          <Property name="SlopeDensity" value="0.14" />
+          <Property name="SlopeMultiplier" value="2.5" />
+          <Property name="MaxRegionRadius" value="17998" />
+          <Property name="MaxImposterRadius" value="18" />
+          <Property name="FadeOutStartDistance" value="17998" />
+          <Property name="FadeOutEndDistance" value="17998" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.14" />
+            <Property name="SlopeDensity" value="0.14" />
+            <Property name="SlopeMultiplier" value="2.5" />
+            <Property name="MaxRegionRadius" value="9" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="63" />
+            <Property name="FadeOutEndDistance" value="81" />
+            <Property name="FadeOutOffsetDistance" value="5" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="ULTRA" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.14" />
+            <Property name="SlopeDensity" value="0.14" />
+            <Property name="SlopeMultiplier" value="2.5" />
+            <Property name="MaxRegionRadius" value="5" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="126" />
+            <Property name="FadeOutEndDistance" value="144" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+]]
+end
 
 function AddWeirdGrass(grassName)
 return [[
@@ -1974,1927 +2251,6 @@ return [[
       </Property>
 ]]
 end
-
---Thes two function (from Env_Maxima & Minima)modifies vanilla files (unpacked & copied after every major update to CUSTOMBIOMES folder)
-local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, DensityCustom3, DensityCustom4)
-	local biomeModifier =
-	{
-						{
-							["MATH_OPERATION"] 		= "*", --8 = HQTREE17, --9 = HQTREE10 --10 = HQTREE63
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --8 = HUGEPLATFORMROCK-barren-, --20 = HUGESPIKEROCK,
-							["VALUE_MATCH"] 		= "4.1", --5 = FERNLARGEALT-swamp-, HQTREEREF-swamp-
-							["VALUE_MATCH_OPTIONS"] = ">=",
-							["VALUE_CHANGE_TABLE"] 	= --6 = --YUKKA-swamp-, FERNLIGHT-swamp-
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --CACTUSSML, SMALLSHROOMCLUSTER-swamp-, 
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --**GRAVELPATCHSNOWBLEND, GRAVELPATCHSANDBLEND
-							["VALUE_MATCH"] 		= "4", --LARGESNOWBLENDROCK, LARGESANDBLENDROCK, MEDIUMBOULDER01-toxicinfested-
-							["VALUE_CHANGE_TABLE"] 	=     --FUNGALTREE-toxic-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.9",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.8",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.7",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.6",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --MEDIUMBLUESHROOM-toxicinfested-
-							["VALUE_MATCH"] 		= "3.5", --GRAVELPATCHSNOWBLEND**
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.3", --MANGROVELARGEFULL
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	DensityCustom1 }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --LARGEVOLCANO, LARGESHARDINACTIVE02-lava-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --DEADTREE-swamp-, LARGEMOSSROCK-swamp-
-							["VALUE_MATCH"] 		= "3", --3 = HEROPINE, LARGESNOWBLENDROCK, LARGESANDBLENDROCK
-							["VALUE_CHANGE_TABLE"] 	=  --MEDIUMBOULDER02-toxicinfested-, SMALLTENDRIL-toxicinfested-
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier } --v1.8: changed from small, caused giant rocks on barren planets
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "2.9",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "2.8", --MANGROVELARGE
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --HQTREEREF-lushobjectsmid-
-							["VALUE_MATCH"] 		= "2.7", --SKINNYPINE, RADIOACTIVETREE
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "2.6", --FUNGALTREE-toxic-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --FUNGALTREE
-							["VALUE_MATCH"] 		= "2.5", --MEDIUMSNOWBLENDROCK, MEDIUMSANDBLENDROCK
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "2.4", --LARGEROCK-lava-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleLargeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", 
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --HQTREEREF-lushobjectslow-
-							["VALUE_MATCH"] 		= "2.3", --STARJOINT, MEDIUMDEADTREE01-lava-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --SMALLJOINT
-							["VALUE_MATCH"] 		= "2.2", --2.2 = TALLPINE, HQTREEREF-lushobjectsmed-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleLargeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --TOXICGRASS-radioactive-
-							["VALUE_MATCH"] 		= "2.1", --RADIOACTIVETREE, FUNGALTREE-toxic-
-							["VALUE_CHANGE_TABLE"] 	=      --MEDIUMROCK-toxic-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --MEDIUMSHROOM-swamp-, MEDIUMSPIRE-lava-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --**MEDIUMROCK, LARGEROCK, GROUNDREVEALROCK01
-							["VALUE_MATCH"] 		= "2", --MEDIUMSNOWBLENDROCK, MEDIUMSANDBLENDROCK, FROZENGRASSLARGE, BEAMSTONE
-							["VALUE_CHANGE_TABLE"] 	=    --SMALLERODEPLANT-toxicinfested-, SMALLBOULDER-""-, BUBBLELUSHGRASS-""-
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "1.9", --MEDIUMPLANT-toxic-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleLargeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",  --SMALLPLANT-lushobjectslow-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --LARGEPLANT, **MEDIUMROCK
-							["VALUE_MATCH"] 		= "1.8", --LARGETREEBARE, **MEDIUMPLANT
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier } --Changed in v1.8 - caused huge flowers everywhere
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",  
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "1.75", --SPRIGBUSH-barrenhqobjectsfull-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --HQFLOWERCACTUS
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --LARGETUBEROCK-radioactive-, LARGESPIKEROCK--radioactive-
-							["VALUE_MATCH"] 		= "1.7", --**MEDIUMBUSH, FUNGALTREE-toxic-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --SMALLFLOWERS-lushobjectsmid-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --FERNLIGHT, **LARGEROCK, LARGEPLANT-lushobjectslow-
-							["VALUE_MATCH"] 		= "1.6", --**MEDIUMBUSH, GROUNDFLOWER-barren-, **SMALLROCK
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --LARGESNOWBLENDROCK, MEDIUMPLANT, **SCRUBBUSH, NEWCROSSGRASS-lushobjectsmid-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --**MEDIUMROCK, --YARROW-flower-, MEDIUMSTEAMER--radioactive-
-							["VALUE_MATCH"] 		= "1.5", --1.5=GRASS, GRASSCLUMP, **NEWCROSSGRASS
-							["VALUE_CHANGE_TABLE"] 	= --HUGEBEAM, **LARGEROCK, LARGESANDBLENDROCK, FRAGMENTS, TOXICGRASS-toxicinfested-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", 
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "1.43", --TENDRIL-toxic-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleLargeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --MEDIUMJELLYPLANT, SCRUBBUSH, **MEDIUMBUSH
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --MEDIUMROCKS, LARGEROCK-laval-, CURVEDROCK-radioactive-
-							["VALUE_MATCH"] 		= "1.4", --**MOUNTAINROCK_1, LARGEICEROCK_1, LARGEROCKSTACK_1
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --FERNLIGHT, LAVAGEMS, VOLUMEBUSH-lava-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --YARROW-flower-, MEDIUMJELLYPLANT-radioactive-
-							["VALUE_MATCH"] 		= "1.3", --SCABIOUS-flower-, **SCRUBGRASS, 
-							["VALUE_CHANGE_TABLE"] 	=   --MEDIUMROCK-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --NEWSCRIBGRASS-barrenhqobjectsfull-
-							["VALUE_MATCH"] 		= "1.25", --SINGLEJOINT-weird-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier } --v1.8 - changed from medium, caused huge grass on barren planets
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --LARGETREEBARE, MEDIUMROCK, MEDIUMGROWTHS-radioactive-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --FROZENBUSHYGRASS, **SCRUBGRASS, SMALLBOULDER
-							["VALUE_MATCH"] 		= "1.2", --MEDIUMBOULDER02, **SMALLROCK, **BUTTERCUP
-							["VALUE_CHANGE_TABLE"] 	=    --TALLGRASSBILLBOARD-toxicinfested-, SPONGE-toxic-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --LARGEROCK-lushobjectslow-
-							["VALUE_MATCH"] 		= "1.15", --**MEDIUMROCK, SMALLPLANT
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --1.1 = SCABIOUS-flower-, FERN, SNOWCLUMP, SMALLSNOWCLUMPS, SMALLROCK, SMALLROCKCLUMP, MOSSHUT, LAVACLUMP, LAVAGEMS
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --1 = TALLGRASSBILLBOARD, CURVEDMEDIUM-radioactive-, MEDIUMBOULDER02, **SMALLROCK
-							["VALUE_MATCH"] 		= "1.1",--0.5 = LEAFDROPLET-lava-
-							["VALUE_MATCH_OPTIONS"] = "<=",--0.6 = TALLGRASSBILLBOARD, MEDIUMJELLYPLANT-radioactive-
-							["VALUE_CHANGE_TABLE"] 	=      --0.8 = MOUNTAINROCK_1, **TALLGRASSBILLBOARD, SCRUBGRASS, GROUNDFLOWER--radioactive-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- b. COVERAGE/DENSITY CHANGES ------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	DensityCustom2},
-								{"FlatDensity", DensityCustom2},
-								{"SlopeDensity",	DensityCustom2},
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	DensityCustom3},
-								{"FlatDensity", DensityMediumMultiplier},
-								{"SlopeDensity",	DensityMediumMultiplier},
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	DensityCustom3},
-								{"FlatDensity", DensityCustom3},
-								{"SlopeDensity",	DensityCustom3},
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	DensityCustom4},
-								{"FlatDensity", DensityCustom4},
-								{"SlopeDensity",	DensityLowMultiplier},
-							}	
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL", 
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxAngle",				MaxAngleSmall},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
-							["PRECEDING_FIRST"] = "TRUE",
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxAngle",				MaxAngleSmall},
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxAngle",				MaxAngleLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxAngle",				MaxAngleLarge},
-							}	
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- d. REGION/IMPOSTER/FADE OUT ------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
-							["PRECEDING_FIRST"] = "TRUE",
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"Coverage",	DensityMediumMultiplier},
-								--{"FlatDensity", DensityMediumMultiplier},
-								--{"SlopeDensity",	DensityMediumMultiplier},
-							}	
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- e. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",     --one line down
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects} 
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
-							["PRECEDING_FIRST"] = "TRUE",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",     --one line down
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
-							["PRECEDING_FIRST"] = "TRUE",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
-							["PRECEDING_FIRST"] = "TRUE",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
-							["PRECEDING_FIRST"] = "TRUE",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks} 
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","STANDARD",},
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks",},
-							["PRECEDING_FIRST"] = "TRUE",
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						--REPLACE:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						--MULTIPLY:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACE (to correct non-lush/frozen planets density)
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxScale",			    2.47},
-								{"Coverage",			    1},
-								{"FlatDensity",			    0.14},
-								{"SlopeDensity",			0.14},
-								{"SlopeMultiplier",			1.25},
-							}
-						},
-						--LODDISTANCES:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] 	= "",
-							["REMOVE"] = "SECTION",
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- f. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						--BLANKETCLUMP -> SPARSECLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BLANKETCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"SPARSECLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BLANKETCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"SPARSECLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BLANKETCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"SPARSECLUMP" }
-							-- }
-						-- },
-						-- --FOREST -> FLORACLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "FOREST",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "FOREST",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "FOREST",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- --ROCKCLUMP -> FLORACLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "ROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "ROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "ROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						
-						-- --GRASSCLUMP -> FLORACLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "GRASSCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "GRASSCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "GRASSCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						
-						-- --BARRENROCKCLUMP -> FLORACLUMP
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
-						-- {
-							-- ["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							-- ["REPLACE_TYPE"] 		= "ALL", 
-							-- ["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {						
-								-- { "Placement",	"FLORACLUMP" }
-							-- }
-						-- },
--------------------------------------------------------------------------------------------------------------------------------------------------
--- g. CHANGE LANDMARKS TO DISTANTOBJECTS --------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						
-						-- --If DistanceObjects section is closed, replace it to make it open
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							-- ["REPLACE_TYPE"] 		= "RAW",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- { [[    <Property name="DistantObjects" />]], [[    <Property name="DistantObjects">]] },
-							-- }	
-						-- },
-						
-					-- --THEN DO:
-					
-						-- --If DistanceObjects was open already (and had a closing </Property>), deletes closing line (above "Landmarks")
-						-- -- {
-							-- -- ["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
-							-- -- ["LINE_OFFSET"] 		= "-1",     --one line up
-							-- -- ["REPLACE_TYPE"] 		= "RAW",
-							-- -- ["VALUE_CHANGE_TABLE"] 	= 
-							-- -- {
-								-- -- { [[    </Property>]], [[]] },
-							-- -- }	
-						-- -- },
-					
-					-- --THEN DO:
-					
-						-- --If Landmarks section is open, remove it so DistanceObjects takes over that section
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							-- ["REPLACE_TYPE"] 		= "RAW",
-							-- ["VALUE_CHANGE_TABLE"] 	= 
-							-- {
-								-- { [[    <Property name="Landmarks">]], [[]] },
-							-- }	
-						-- },
-						
-						-- --Not possible: DistanceObjects == closed && Landmarks == closed
-						-- --Not possible: DistanceObjects == open && Landmarks == closed
-						
-						-- --Add closed Landmarks line after DistantObjects, otherwise error:
-						-- {
-							-- ["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects"},
-							-- ["ADD_OPTION"] = "ADDafterSECTION",
-							-- ["ADD"] 	= [[    <Property name="Landmarks" />]]
-						-- },
-	}
-return biomeModifier
-end
-
-local function BiomesOneTwoThreeModifierUnderwaterCave(DensityCustom1, DensityCustom2, DensityCustom3, DensityCustom4)
-	local biomeModifier =
-	{
-						{
-							["MATH_OPERATION"] 		= "*", --8 = HQTREE17, --9 = HQTREE10 --10 = HQTREE63
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --8 = HUGEPLATFORMROCK-barren-, --20 = HUGESPIKEROCK,
-							["VALUE_MATCH"] 		= "4.1", --5 = FERNLARGEALT-swamp-, HQTREEREF-swamp-
-							["VALUE_MATCH_OPTIONS"] = ">=",
-							["VALUE_CHANGE_TABLE"] 	= --6 = --YUKKA-swamp-, FERNLIGHT-swamp-
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --CACTUSSML, SMALLSHROOMCLUSTER-swamp-, 
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --**GRAVELPATCHSNOWBLEND, GRAVELPATCHSANDBLEND
-							["VALUE_MATCH"] 		= "4", --LARGESNOWBLENDROCK, LARGESANDBLENDROCK, MEDIUMBOULDER01-toxicinfested-
-							["VALUE_CHANGE_TABLE"] 	=     --FUNGALTREE-toxic-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.9",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.8",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.7",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.6",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --MEDIUMBLUESHROOM-toxicinfested-
-							["VALUE_MATCH"] 		= "3.5", --GRAVELPATCHSNOWBLEND**
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.3", --MANGROVELARGEFULL
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	DensityCustom1 }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "3.1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --LARGEVOLCANO, LARGESHARDINACTIVE02-lava-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --DEADTREE-swamp-, LARGEMOSSROCK-swamp-
-							["VALUE_MATCH"] 		= "3", --3 = HEROPINE, LARGESNOWBLENDROCK, LARGESANDBLENDROCK
-							["VALUE_CHANGE_TABLE"] 	=  --MEDIUMBOULDER02-toxicinfested-, SMALLTENDRIL-toxicinfested-
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier } --v1.8: changed from small, caused giant rocks on barren planets
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "2.9",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "2.8", --MANGROVELARGE
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --HQTREEREF-lushobjectsmid-
-							["VALUE_MATCH"] 		= "2.7", --SKINNYPINE, RADIOACTIVETREE
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "2.6", --FUNGALTREE-toxic-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --FUNGALTREE
-							["VALUE_MATCH"] 		= "2.5", --MEDIUMSNOWBLENDROCK, MEDIUMSANDBLENDROCK
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "2.4", --LARGEROCK-lava-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleLargeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", 
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --HQTREEREF-lushobjectslow-
-							["VALUE_MATCH"] 		= "2.3", --STARJOINT, MEDIUMDEADTREE01-lava-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleHugeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --SMALLJOINT
-							["VALUE_MATCH"] 		= "2.2", --2.2 = TALLPINE, HQTREEREF-lushobjectsmed-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleLargeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --PROCSHAPE1-radioactive-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --TOXICGRASS-radioactive-
-							["VALUE_MATCH"] 		= "2.1", --RADIOACTIVETREE, FUNGALTREE-toxic-
-							["VALUE_CHANGE_TABLE"] 	=      --MEDIUMROCK-toxic-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --MEDIUMSHROOM-swamp-, MEDIUMSPIRE-lava-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --**MEDIUMROCK, LARGEROCK, GROUNDREVEALROCK01
-							["VALUE_MATCH"] 		= "2", --MEDIUMSNOWBLENDROCK, MEDIUMSANDBLENDROCK, FROZENGRASSLARGE, BEAMSTONE
-							["VALUE_CHANGE_TABLE"] 	=    --SMALLERODEPLANT-toxicinfested-, SMALLBOULDER-""-, BUBBLELUSHGRASS-""-
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_MATCH"] 		= "1.9", --MEDIUMPLANT-toxic-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleLargeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",  --SMALLPLANT-lushobjectslow-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --LARGEPLANT, **MEDIUMROCK
-							["VALUE_MATCH"] 		= "1.8", --LARGETREEBARE, **MEDIUMPLANT
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier } --Changed in v1.8 - caused huge flowers everywhere
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",  
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "1.75", --SPRIGBUSH-barrenhqobjectsfull-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --HQFLOWERCACTUS
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --LARGETUBEROCK-radioactive-, LARGESPIKEROCK--radioactive-
-							["VALUE_MATCH"] 		= "1.7", --**MEDIUMBUSH, FUNGALTREE-toxic-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --SMALLFLOWERS-lushobjectsmid-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --FERNLIGHT, **LARGEROCK, LARGEPLANT-lushobjectslow-
-							["VALUE_MATCH"] 		= "1.6", --**MEDIUMBUSH, GROUNDFLOWER-barren-, **SMALLROCK
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --LARGESNOWBLENDROCK, MEDIUMPLANT, **SCRUBBUSH, NEWCROSSGRASS-lushobjectsmid-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --**MEDIUMROCK, --YARROW-flower-, MEDIUMSTEAMER--radioactive-
-							["VALUE_MATCH"] 		= "1.5", --1.5=GRASS, GRASSCLUMP, **NEWCROSSGRASS
-							["VALUE_CHANGE_TABLE"] 	= --HUGEBEAM, **LARGEROCK, LARGESANDBLENDROCK, FRAGMENTS, TOXICGRASS-toxicinfested-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", 
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "1.43", --TENDRIL-toxic-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleLargeMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --MEDIUMJELLYPLANT, SCRUBBUSH, **MEDIUMBUSH
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --MEDIUMROCKS, LARGEROCK-laval-, CURVEDROCK-radioactive-
-							["VALUE_MATCH"] 		= "1.4", --**MOUNTAINROCK_1, LARGEICEROCK_1, LARGEROCKSTACK_1
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --FERNLIGHT, LAVAGEMS, VOLUMEBUSH-lava-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --YARROW-flower-, MEDIUMJELLYPLANT-radioactive-
-							["VALUE_MATCH"] 		= "1.3", --SCABIOUS-flower-, **SCRUBGRASS, 
-							["VALUE_CHANGE_TABLE"] 	=   --MEDIUMROCK-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --NEWSCRIBGRASS-barrenhqobjectsfull-
-							["VALUE_MATCH"] 		= "1.25", --SINGLEJOINT-weird-
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier } --v1.8 - changed from medium, caused huge grass on barren planets
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --LARGETREEBARE, MEDIUMROCK, MEDIUMGROWTHS-radioactive-
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --FROZENBUSHYGRASS, **SCRUBGRASS, SMALLBOULDER
-							["VALUE_MATCH"] 		= "1.2", --MEDIUMBOULDER02, **SMALLROCK, **BUTTERCUP
-							["VALUE_CHANGE_TABLE"] 	=    --TALLGRASSBILLBOARD-toxicinfested-, SPONGE-toxic-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --LARGEROCK-lushobjectslow-
-							["VALUE_MATCH"] 		= "1.15", --**MEDIUMROCK, SMALLPLANT
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "MaxScale",	ScaleSmallestMultiplier }
-							}
-						},
-						{
-							["MATH_OPERATION"] 		= "*", --1.1 = SCABIOUS-flower-, FERN, SNOWCLUMP, SMALLSNOWCLUMPS, SMALLROCK, SMALLROCKCLUMP, MOSSHUT, LAVACLUMP, LAVAGEMS
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL", --1 = TALLGRASSBILLBOARD, CURVEDMEDIUM-radioactive-, MEDIUMBOULDER02, **SMALLROCK
-							["VALUE_MATCH"] 		= "1.1",--0.5 = LEAFDROPLET-lava-
-							["VALUE_MATCH_OPTIONS"] = "<=",--0.6 = TALLGRASSBILLBOARD, MEDIUMJELLYPLANT-radioactive-
-							["VALUE_CHANGE_TABLE"] 	=      --0.8 = MOUNTAINROCK_1, **TALLGRASSBILLBOARD, SCRUBGRASS, GROUNDFLOWER--radioactive-
-							{						
-								{ "MaxScale",	ScaleMediumMultiplier }
-							}
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- b. COVERAGE/DENSITY CHANGES ------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	DensityCustom2},
-								{"FlatDensity", DensityCustom2},
-								{"SlopeDensity",	DensityCustom2},
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	DensityCustom3},
-								{"FlatDensity", DensityMediumMultiplier},
-								{"SlopeDensity",	DensityMediumMultiplier},
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	DensityCustom3},
-								{"FlatDensity", DensityCustom3},
-								{"SlopeDensity",	DensityCustom3},
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",	DensityCustom4},
-								{"FlatDensity", DensityCustom4},
-								{"SlopeDensity",	DensityLowMultiplier},
-							}	
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- c. DESTROYED BY SHIP/MAX ANGLE/ETC -----------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL", 
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxAngle",				MaxAngleSmall},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxAngle",				MaxAngleSmall},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxAngle",				MaxAngleLarge},
-								{"MinRegionRadius",			"0"}, ----IR:
-								{"FadeInStartDistance",		"0"},
-								{"FadeInEndDistance",		"0"},
-								{"FadeInOffsetDistance",	"0"},
-								{"FadeOutOffsetDistance",	"0"}  ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
-							["VALUE_MATCH"] 		= "", 
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"DestroyedByPlayerShip",	DestroyedByPlayerShip},
-								{"MaxAngle",				MaxAngleLarge},
-							}	
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- d. REGION/IMPOSTER/FADE OUT ------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_MATCH"] 		= "9999",
-							["VALUE_MATCH_OPTIONS"] = "<",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			RadiusMultiplier}, ----IR:
-								{"MaxImposterRadius",		RadiusMultiplier},
-								{"FadeOutStartDistance",	RadiusMultiplier},
-								{"FadeOutEndDistance",		RadiusMultiplier}, ----
-							}	
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects"},
-							["MATH_OPERATION"] = "*",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								--{"Coverage",	DensityMediumMultiplier},
-								--{"FlatDensity", DensityMediumMultiplier},
-								--{"SlopeDensity",	DensityMediumMultiplier},
-							}	
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- e. LOD DISTANCES/ULTRA INVISIBLE BUG FIX: (code originally by InsaneRuffles *** = lasagna comments) ------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",    	--multiply the value at the offset by LodDistanceMultiplierDistantObjects
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",     --one line down
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects} 
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierDistantObjects}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",     --one line down
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks} 
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["MATH_OPERATION"] 		= "*",
-							["INTEGER_TO_FLOAT"]    = "FORCE",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistanceMultiplierLandmarks}
-							}
-						},
-						--REPLACE:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						--MULTIPLY:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACE (to correct non-lush/frozen planets density)
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxScale",			    2.47},
-								{"Coverage",			    1},
-								{"FlatDensity",			    0.14},
-								{"SlopeDensity",			0.14},
-								{"SlopeMultiplier",			1.25},
-							}
-						},
-						--LODDISTANCES:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] 	= "",
-							["REMOVE"] = "SECTION",
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- f. PLACEMENT/PLACEMENT PRIORITY --------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						--BLANKETCLUMP -> SPARSECLUMP
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "BLANKETCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "BLANKETCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "BLANKETCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						--FOREST -> FLORACLUMP
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "FOREST",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "FOREST",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "FOREST",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						--ROCKCLUMP -> FLORACLUMP
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "ROCKCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "ROCKCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "ROCKCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						
-						--GRASSCLUMP -> FLORACLUMP
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "GRASSCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "GRASSCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "GRASSCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						
-						--BARRENROCKCLUMP -> FLORACLUMP
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","DistantObjects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Landmarks"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Objects","Objects"},
-							["REPLACE_TYPE"] 		= "ALL", 
-							["VALUE_MATCH"] 		= "BARRENROCKCLUMP",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{						
-								{ "Placement",	"FLORACLUMP" }
-							}
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- g. CHANGE OBJECTS TO LANDMARKS --------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						
-						--If Landmarks section is closed, replace it to make it open
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="Landmarks" />]], [[    <Property name="Landmarks">]] },
-							}	
-						},
-					
-					--THEN DO:
-					
-						--If Objects section is open, remove it so Landmarks takes over that section
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects",},
-							["REPLACE_TYPE"] 		= "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{ [[    <Property name="Objects">]], [[]] },
-							}	
-						},
-						
-						--Add closed Objects line after Landmarks, otherwise error:
-						{
-							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] 	= [[    <Property name="Objects" />]]
-						},
--------------------------------------------------------------------------------------------------------------------------------------------------
--- h. CHANGE UNDERWATER TO ABOVE WATER --------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------------------------
-						{
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{						
-								{ "MinHeight",	minHeightAboveWater },
-							}
-						},
-						{
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	=
-							{						
-								{ "MaxHeight",	maxHeightAboveWater },
-							}
-						},
-	}
-return biomeModifier
-end
-
-
-
-
-
-
-
---
-
-
-
-
 
 
 
@@ -4666,8 +3022,8 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v4.0.pak",
-["MOD_AUTHOR"]				= "AGhostlyPepper (aka Lasagna) - with InsaneRuffles code & unused Shaidak's Generation code",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v5.0.pak",
+["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna - with [unused] Shaidak's Gen code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
 	{
@@ -4675,7 +3031,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["PAK_FILE_SOURCE"] 	= "NMSARC.515F1D3.pak",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
-			
 			
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5207,6 +3562,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					}
 				},
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\UNDERWATER\UPDATEPROPS\SAILPLANT.SCENE.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = { "TkSceneNodeData.xml", },
+							["ADD_OPTION"] 	= "ADDafterSECTION",
+							["ADD"] = AddSailPlantCollisions,
+						},
+					}
+				},
 				
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -5237,7 +3606,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddScrubGrass(),
 						},
 					},
 				},
@@ -5310,7 +3679,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddScrubGrass(),
 						},
 					},
 				},
@@ -5333,7 +3702,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5356,7 +3725,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddScrubGrass(),
 						},
 					},
 				},
@@ -5382,7 +3751,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5432,7 +3801,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5481,7 +3850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5546,7 +3915,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5589,7 +3958,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5610,7 +3979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddScrubGrass(),
 						},
 					},
 				},
@@ -5632,7 +4001,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5675,7 +4044,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5720,7 +4089,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5763,7 +4132,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5858,7 +4227,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5928,7 +4297,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -5972,7 +4341,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6046,7 +4415,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6090,7 +4459,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6204,7 +4573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6250,7 +4619,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6315,7 +4684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6337,7 +4706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddScrubGrass(),
 						},
 					},
 				},
@@ -6397,7 +4766,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6463,7 +4832,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6547,7 +4916,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6568,7 +4937,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddScrubGrass(),
 						},
 					},
 				},
@@ -6627,7 +4996,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6642,13 +5011,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DistantObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\LIGHTNINGROCK.SCENE.MBIN", 30, 10, 40, 10, 0.18, 0.04)..
+							["ADD"] = BiomeExtension("MODELS\PLANETS\BIOMES\LAVA\MEDIUMPROPS\LAVACRYSTALS.SCENE.MBIN", 30, 10, 40, 10, 0.18, 0.04)..
 							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\PLANTS\MONSTERPLANT.SCENE.MBIN", 30, 2, 11, 40, 0.18, 0.07),
 						},
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6716,7 +5085,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6824,7 +5193,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6845,7 +5214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddScrubGrass(),
 						},
 					},
 				},
@@ -6888,7 +5257,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6910,7 +5279,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -6995,7 +5364,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddScrubGrass(),
 						},
 					},
 				},
@@ -7016,7 +5385,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -7082,7 +5451,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -7126,7 +5495,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
@@ -7148,7 +5517,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddScrubGrass(),
 						},
 					},
 				},
@@ -7205,44 +5574,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					},
 				},
 				
-				
-				
-				
-				
-				--Custom biomes - vanilla v1 --Large
-				{
-					["MBIN_FILE_SOURCE"] 	= 
-					{
-						"CUSTOMBIOMES\GHOSTLYFROZENOBJECTSFULL.MBIN",
-						"CUSTOMBIOMES\GHOSTLYFROZENOBJECTSMID.MBIN",
-						"CUSTOMBIOMES\GHOSTLYFROZENPILLAROBJECTS.MBIN",
-						"CUSTOMBIOMES\GHOSTLYLUSHOBJECTSFULL.MBIN",
-						"CUSTOMBIOMES\GHOSTLYLUSHOBJECTSMID.MBIN",
-					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifier(ScaleHugeMultiplierBig, DensityMediumMultiplierBig, DensityMediumMultiplierBig, DensityLowMultiplierBig)
-				},
-				--Custom biomes - vanilla v2 --Small
-				{
-					["MBIN_FILE_SOURCE"] 	= 
-					{
-						"CUSTOMBIOMES\GHOSTLYFROZENOBJECTSFULL2.MBIN",
-						"CUSTOMBIOMES\GHOSTLYFROZENOBJECTSMID2.MBIN",
-						"CUSTOMBIOMES\GHOSTLYLUSHOBJECTSFULL2.MBIN",
-						"CUSTOMBIOMES\GHOSTLYLUSHOBJECTSMID2.MBIN",
-					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifier(ScaleHugeMultiplierSmall, DensityMediumMultiplierSmall, DensityLowestMultiplierSmall, DensityMedLowMultiplierSmall)
-				},
-				--Custom biomes - vanilla v3 --Small underwater & cave (seperated because all props are in objects section)
-				{
-					["MBIN_FILE_SOURCE"] 	= 
-					{
-						"CUSTOMBIOMES\GHOSTLYCAVEBIOMEFULL.MBIN",
-						"CUSTOMBIOMES\GHOSTLYUNDERWATERGASBAGS.MBIN",
-						"CUSTOMBIOMES\GHOSTLYUNDERWATERCRYSTALS.MBIN",
-					},
-					["EXML_CHANGE_TABLE"] 	= BiomesOneTwoThreeModifierUnderwaterCave(ScaleHugeMultiplierBig, DensityMediumMultiplierSmall, DensityLowestMultiplierSmall, DensityMedLowMultiplierSmall),
-				},
-				
+
 						
 			}
 		},
