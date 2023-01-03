@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] = "_MOD_DUD_ExocraftMechanics_v4062.pak",
+["MOD_FILENAME"] = "_MOD_DUD_ExocraftMechanics_v4082.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "JasonDude7116",
 ["LUA_AUTHOR"]      = "Babscoole and Wbertro",
-["NMS_VERSION"]     = "4.06",
+["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   = 
 	{
 		{
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = 	
 							{		
-								{"OffsetY", "2"},
+								{"OffsetY",         "2"},
 								{"VertRotationMin", "-15"},
 								{"VertRotationMax", "-4.4"},
 							}
@@ -37,11 +37,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = 	
 							{		
-								{"OffsetY", "2"},
-								{"BackMinDistance", "15"},
-								{"BackMaxDistance", "20"},
-								{"VertRotationMin", "-30"},
-								{"VertRotationMax", "35"},
+								{"OffsetY",            "2"},
+								{"BackMinDistance",    "15"},
+								{"BackMaxDistance",    "20"},
+								{"VertRotationMin",    "-30"},
+								{"VertRotationMax",    "35"},
 								{"VertRotationOffset", "-1"},
 							}
 						},
@@ -50,11 +50,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = 	
 							{		
-								{"OffsetY", "2"},
-								{"BackMinDistance", "15"},
-								{"BackMaxDistance", "20"},
-								{"VertRotationMin", "-30"},
-								{"VertRotationMax", "35"},
+								{"OffsetY",            "2"},
+								{"BackMinDistance",    "15"},
+								{"BackMaxDistance",    "20"},
+								{"VertRotationMin",    "-30"},
+								{"VertRotationMax",    "35"},
 								{"VertRotationOffset", "-1.5"},
 							}
 						},
@@ -63,11 +63,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = 	
 							{		
-								{"OffsetY", "2"},
-								{"BackMinDistance", "25"},
-								{"BackMaxDistance", "30"},
-								{"VertRotationMin", "-30"},
-								{"VertRotationMax", "35"},
+								{"OffsetY",            "2"},
+								{"BackMinDistance",    "25"},
+								{"BackMaxDistance",    "30"},
+								{"VertRotationMin",    "-30"},
+								{"VertRotationMax",    "35"},
 								{"VertRotationOffset", "-1.5"},
 							}
 						},
@@ -76,11 +76,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] = 	
 							{		
-								{"OffsetY", "2"},
-								{"BackMinDistance", "30"},
-								{"BackMaxDistance", "35"},
-								{"VertRotationMin", "-30"},
-								{"VertRotationMax", "35"},
+								{"OffsetY",            "2"},
+								{"BackMinDistance",    "30"},
+								{"BackMaxDistance",    "35"},
+								{"VertRotationMin",    "-30"},
+								{"VertRotationMax",    "35"},
 								{"VertRotationOffset", "-2"},
 							}
 						},
@@ -204,7 +204,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
     							{"MechFirstPersonTurretThrottleLookThreshold", "8"},
     							{"UnderwaterFlattenMinDepth", "-2"},
-    							{"VehicleAltControlScheme", "True"},
+    							{"VehicleAltControlScheme", "False"},
+								{"VehicleFuelRate", "0.35"},
 							}
 						},
 						{
@@ -304,6 +305,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] = 	
 							{
     							{"UnderwaterEnginePower", "3"},
+								{"UnderwaterEngineMaxSpeed", "12"},
+								{"TopSpeedForward", "12"},
     							{"TopSpeedReverse", "5"},
     							{"VehicleBoostMaxSpeed", "20"},
     							{"VehicleBoostRechargeTime", "9"},
