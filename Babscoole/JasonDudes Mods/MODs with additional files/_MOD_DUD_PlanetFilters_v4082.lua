@@ -2,7 +2,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]  = "_MOD_DUD_PlanetFilters_v4061.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_PlanetFilters_v4082.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["FOREACH_SKW_GROUP"] = 
 							{  
-								{"Weird4", "GcScreenFilterData.xml"},  
+								{"Weird4",       "GcScreenFilterData.xml"},  
 								{"SepiaExtreme", "GcScreenFilterData.xml"},
 							},  
 							["VALUE_CHANGE_TABLE"] = 
