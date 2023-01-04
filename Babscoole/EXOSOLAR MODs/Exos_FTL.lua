@@ -14,8 +14,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] = 
 					{						
 						{
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["VALUE_CHANGE_TABLE"] 	= 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "MiniWarpLinesNum",                           "1" },          --Original "4"
 								{ "MiniWarpLinesSpacing",                       "30000" },      --Original "3000"
