@@ -143,9 +143,9 @@ function GetSeed()
 	local HEX = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"}
 	if not RANDOMSEED_INIT then
 		math.randomseed(82398*os.time())
-		math.random() 
-		math.random() 
-		math.random()
+		-- math.random() 
+		-- math.random() 
+		-- math.random()
 		RANDOMSEED_INIT = true
 	end
 	for _=1,16,1 do
@@ -245,7 +245,7 @@ local GENERIC_REWARD_MAIN_ENTRY =
 ]] .. SUB_ENTRY .. [[
         </Property>
       </Property>
-    </Property> 
+    </Property>
 ]]
 return GENERIC_REWARD_MAIN_ENTRY
 end
@@ -282,7 +282,7 @@ ANIM_TEMPLATE =
             <Property name="BlockPlayerMovement" value="False" />
             <Property name="BlockPlayerWeapon" value="Unblocked" />
           </Property>
-        </Property>	
+        </Property>
 ]]
 return ANIM_TEMPLATE
 end
@@ -463,7 +463,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.07",
+["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   = 
 	{
 		{
