@@ -137,7 +137,7 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="SHIPJUMP" />
+						<Property name="Id" value="SHIPJUMP1" />
 						<Property name="Amount" value="200" />
 						<Property name="MaxAmount" value="200" />
 						<Property name="DamageFactor" value="0" />
@@ -320,10 +320,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "gShip Custom Summoner C 407a.pak",
+["MOD_FILENAME"] 			= "gShip Custom Summoner C 408a.pak",
 ["MOD_AUTHOR"]				= "Gumsk, based almost entirely on Mjjstral's action LUAs",
 ["MOD_DESCRIPTION"]			= "Adds summoning quick actions for gShip Custom ships",
-["NMS_VERSION"]				= "4.07",
+["NMS_VERSION"]				= "4.08",
 ["MODIFICATIONS"] 			= 
 	{
 		{
