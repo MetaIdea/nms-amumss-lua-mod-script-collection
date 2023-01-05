@@ -46,14 +46,17 @@ CAN_SCALE_EXTRACTORS = false                    --Vanilla false // Mod Default f
 ------------ GUIF section begins ------------
 ---------------------------------------------
 
-GUIGeo = { enableGeos = { false, [[Do you want GeoBays on Freighters? Default = N. ]] },}
-GEOBAYS_ON_FREIGHTER = GUIF( GUIGeo.enableGeos )
+GUIGeo = {enableGeos = {false, [[Do you want GeoBays on Freighters? Default = N. ]] }}
+GEOBAYS_ON_FREIGHTER = GUIF( GUIGeo.enableGeos, 5 )
+print("GEOBAYS_ON_FREIGHTER = "..tostring(GEOBAYS_ON_FREIGHTER))
 
-GUIFarm = { enableFarm = { false, [[Do you want to farm in any biome?  Default = N. ]] },}
-FARM_IN_ANY_BIOME = GUIF( GUIFarm.enableFarm )
+GUIFarm = {enableFarm = {false, [[Do you want to farm in any biome?  Default = N. ]] }}
+FARM_IN_ANY_BIOME = GUIF( GUIFarm.enableFarm, 5 )
+print("FARM_IN_ANY_BIOME = "..tostring(FARM_IN_ANY_BIOME))
 
-GUIStor = { enableStor = { false, [[Do you want to place Base Storage Containers on Freighters?  Default = N. ]] },}
-BASESTORAGE_ON_FREIGHTER = GUIF( GUIStor.enableStor )
+GUIStor = {enableStor = {false, [[Do you want to place Base Storage Containers on Freighters?  Default = N. ]] }}
+BASESTORAGE_ON_FREIGHTER = GUIF( GUIStor.enableStor, 5 )
+print("BASESTORAGE_ON_FREIGHTER = "..tostring(BASESTORAGE_ON_FREIGHTER))
 
 ------------- GUIF section ends -------------
 ---------------------------------------------
@@ -274,7 +277,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	—For latest versions and more visit:-
 	https://www.nexusmods.com/nomanssky/mods/1096
 	]],
-	["NMS_VERSION"]   = "4.07",
+	["NMS_VERSION"]   = "4.08",
 	["MODIFICATIONS"] =
 	{
 		{
@@ -328,7 +331,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IsDecoration", "True"},
-
 							},
 						},
 					},
