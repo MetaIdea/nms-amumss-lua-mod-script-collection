@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "BetterBattery"
 ModNameSub = "JE"
 BaseDescription = "Adjusts ion battery, starship battery and life gel so they give full recharge on all difficulties."
-GameVersion = "4.07"
-ModVersion = "v1.00"
+GameVersion = "4.08"
+ModVersion = "v4.08"
 FileSource1 = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN"
 
 -- Original game settings in comments
@@ -12,6 +12,7 @@ LFChargeAmount = 600 	-- (Starship) Launch Fuel Default is 400
 WCChargeAmount = 24  	-- Warp Cell Default is 24
 WHCChargeAmount = 240 	-- Warph HyperCore Default is 240
 GFChargeAmount = 40		-- Grenade Fuel Default is 20
+SFChargeAmount = 600	-- Nautilon Subfuel default is 400
 
 
 NMS_MOD_DEFINITION_CONTAINER =
@@ -74,6 +75,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ChargeValue", GFChargeAmount}
+                            }
+                        },
+						{
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SUBFUEL",}, -- Nautilon Fuel
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ChargeValue", SFChargeAmount}
                             }
                         }
                     }
