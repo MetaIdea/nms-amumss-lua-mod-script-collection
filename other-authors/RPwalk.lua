@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"GroundWalkSpeed",	"2.2"},
-								{"GroundRunSpeed",	"5"}
+								{"GroundRunSpeed",	"6.5"}
 							}	
 						},
 					}
