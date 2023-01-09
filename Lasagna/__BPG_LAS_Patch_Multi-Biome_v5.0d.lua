@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "BPG_LAS_Patch_Multi-Biome_v5.0c.pak",
+["MOD_FILENAME"] 			= "BPG_LAS_Patch_Multi-Biome_v5.0d.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with trevix code (LUA implementation by Babscoole)",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
