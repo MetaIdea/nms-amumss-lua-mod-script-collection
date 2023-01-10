@@ -12,13 +12,13 @@ MULTIPLIER_TABLE =
 	},
 	{
 		["Type"] = "MedicDrone",
-		["MinAmount"] = 1,
+		["MinAmount"] = 2,
 		["MaxAmount"] = 4,		
 	},
 	{
 		["Type"] = "SummonerDrone",
 		["MinAmount"] = 1,
-		["MaxAmount"] = 2,		
+		["MaxAmount"] = 2.5,		
 	},
 	{
 		["Type"] = "Quad",
@@ -65,7 +65,8 @@ MINEST_MIN = 1
 
 for _,j in pairs(MULTIPLIER_TABLE) do
 	table.insert(CHANGE_TABLE, GetSentinelTypeMultiply(j["Type"],j["MinAmount"],j["MaxAmount"]))
-	if j["MinAmount"] < MINEST_MIN then MINEST_MIN = j["MinAmount"] end
+	if j["MinAmount"] < MINEST_MIN then MINEST_MIN = j["MinAmount"]
+	end
 end
 
 if MINEST_MIN > 1 then
