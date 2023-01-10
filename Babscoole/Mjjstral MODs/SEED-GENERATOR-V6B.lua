@@ -394,27 +394,27 @@ ACTION_TRIGGER_ENTRY =
                   <Property name="State" value="REWARD"/>
                 </Property>
               </Property>
-           </Property>
+            </Property>
+          </Property>
         </Property>
-     </Property>
-     <Property value="GcActionTriggerState.xml">
-     <Property name="StateID" value="REWARD"/>
-       <Property name="Triggers">
-         <Property value="GcActionTrigger.xml">
-           <Property name="Event" value="GcStateTimeEvent.xml">
-             <Property name="Seconds" value="0" />
-             <Property name="RandomSeconds" value="0" />
-             <Property name="UseMissionClock" value="False" />
-           </Property>
-           <Property name="Action">
-             <Property value="GcRewardAction.xml">
-               <Property name="Reward" value="]] .. REWARD .. [["/>
-             </Property>
-             <Property value="GcGoToStateAction.xml">
-               <Property name="State" value="BOOT"/>
-             </Property>
-          </Property>
-          </Property>
+        <Property value="GcActionTriggerState.xml">
+          <Property name="StateID" value="REWARD"/>
+          <Property name="Triggers">
+            <Property value="GcActionTrigger.xml">
+              <Property name="Event" value="GcStateTimeEvent.xml">
+                <Property name="Seconds" value="0" />
+                <Property name="RandomSeconds" value="0" />
+                <Property name="UseMissionClock" value="False" />
+              </Property>
+              <Property name="Action">
+                <Property value="GcRewardAction.xml">
+                  <Property name="Reward" value="]] .. REWARD .. [["/>
+                </Property>
+                <Property value="GcGoToStateAction.xml">
+                  <Property name="State" value="BOOT"/>
+                </Property>
+              </Property>
+            </Property>
 ]]
 return ACTION_TRIGGER_ENTRY
 end
