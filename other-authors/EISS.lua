@@ -2425,143 +2425,143 @@ NMS_MOD_DEFINITION_CONTAINER =
           {
             --Remove all optional products & substances found in shops.
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SpaceStation","OptionalProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","OptionalProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SpaceStation","OptionalSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","OptionalSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"Shop","OptionalProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","OptionalProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"Shop","OptionalSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","OptionalSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"TechShop","OptionalProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","OptionalProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"TechShop","OptionalSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","OptionalSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"ShipTechSpecialist","OptionalProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist","OptionalProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"ShipTechSpecialist","OptionalSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist","OptionalSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SuitTechSpecialist","OptionalProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist","OptionalProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SuitTechSpecialist","OptionalSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist","OptionalSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"WeapTechSpecialist","OptionalProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist","OptionalProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"WeapTechSpecialist","OptionalSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist","OptionalSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"VehicleTechSpecialist","OptionalProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist","OptionalProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"VehicleTechSpecialist","OptionalSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist","OptionalSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			--Clear all shop lists by removing whole sections.
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SpaceStation","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","AlwaysPresentProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SpaceStation","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","AlwaysPresentSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"Shop","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","AlwaysPresentProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"Shop","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","AlwaysPresentSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"TechShop","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","AlwaysPresentProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"TechShop","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","AlwaysPresentSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"ShipTechSpecialist","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist","AlwaysPresentProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"ShipTechSpecialist","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist","AlwaysPresentSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SuitTechSpecialist","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist","AlwaysPresentProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SuitTechSpecialist","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist","AlwaysPresentSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"WeapTechSpecialist","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist","AlwaysPresentProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"WeapTechSpecialist","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist","AlwaysPresentSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"VehicleTechSpecialist","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist","AlwaysPresentProducts"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"VehicleTechSpecialist","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist","AlwaysPresentSubstances"},
               ["REPLACE_TYPE"] 	= "ALL",
               ["REMOVE"] = "SECTION",
             },
@@ -2578,104 +2578,104 @@ NMS_MOD_DEFINITION_CONTAINER =
             },
 			--Recreate removed sections with blank content.
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SpaceStation"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation"},
               ["ADD"] = ProductSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SpaceStation"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation"},
               ["ADD"] = SubstanceSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"Shop"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop"},
               ["ADD"] = ProductSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"Shop"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop"},
               ["ADD"] = SubstanceSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"TechShop"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop"},
               ["ADD"] = ProductSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"TechShop"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop"},
               ["ADD"] = SubstanceSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"ShipTechSpecialist"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist"},
               ["ADD"] = ProductSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"ShipTechSpecialist"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist"},
               ["ADD"] = SubstanceSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SuitTechSpecialist"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist"},
               ["ADD"] = ProductSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SuitTechSpecialist"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist"},
               ["ADD"] = SubstanceSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"WeapTechSpecialist"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist"},
               ["ADD"] = ProductSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"WeapTechSpecialist"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist"},
               ["ADD"] = SubstanceSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"VehicleTechSpecialist"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist"},
               ["ADD"] = ProductSection,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"VehicleTechSpecialist"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist"},
               ["ADD"] = SubstanceSection,
             },			
             --Add items & substances to shops.
             {
-              ["PRECEDING_KEY_WORDS"] = {"SpaceStation","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","AlwaysPresentProducts"},
               ["ADD"] = Products,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SpaceStation","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SpaceStation","AlwaysPresentSubstances"},
               ["ADD"] = Substances,
             },
             {
-              ["PRECEDING_KEY_WORDS"] = {"Shop","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","AlwaysPresentProducts"},
               ["ADD"] = Products,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"Shop","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","Shop","AlwaysPresentSubstances"},
               ["ADD"] = Substances,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"TechShop","AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","AlwaysPresentProducts"},
               ["ADD"] = Products,
             },
 			{
-              ["PRECEDING_KEY_WORDS"] = {"TechShop","AlwaysPresentSubstances"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","TechShop","AlwaysPresentSubstances"},
               ["ADD"] = Substances,
             },
 			-- Ship Tech Specialist --
 			{
-              ["PRECEDING_KEY_WORDS"] = {"ShipTechSpecialist", "AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","ShipTechSpecialist", "AlwaysPresentProducts"},
               ["ADD"] = ShipTechSpecialist
 			},
 			-- Suit Tech Specialist --
 			{
-              ["PRECEDING_KEY_WORDS"] = {"SuitTechSpecialist", "AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","SuitTechSpecialist", "AlwaysPresentProducts"},
               ["ADD"] = SuitTechSpecialist
 			},
 			-- Weapon Tech Specialist --
 			{
-              ["PRECEDING_KEY_WORDS"] = {"WeapTechSpecialist", "AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","WeapTechSpecialist", "AlwaysPresentProducts"},
               ["ADD"] = WeapTechSpecialist
 			},
 			-- Vehicle Tech Specialist --
 			{
-              ["PRECEDING_KEY_WORDS"] = {"VehicleTechSpecialist", "AlwaysPresentProducts"},
+              ["PRECEDING_KEY_WORDS"] = {"TradeSettings","VehicleTechSpecialist", "AlwaysPresentProducts"},
               ["ADD"] = VehicleTechSpecialist
 			},
 			--Amount of Products available
