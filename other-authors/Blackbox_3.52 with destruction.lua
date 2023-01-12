@@ -1,6 +1,6 @@
 SOUND =
 [[
-  	<Property value="GcAudioAreaTriggerComponentData.xml">
+    <Property value="GcAudioAreaTriggerComponentData.xml">
       <Property name="EventEnter" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WARN_DISTRESS_DETECTED" />
       </Property>
@@ -34,6 +34,7 @@ ICON =
       <Property name="TellPlayerIfFreighterObjectUsed" value="False" />
       <Property name="FreighterObjectAlreadyUsedLocID" value="" />
       <Property name="AllowedToMerge" value="False" />
+      <Property name="MarkerActiveWithNodeInactive" value="False" />
       <Property name="MissionSurveyId" value="" />
       <Property name="MinDisplayDistanceOverride" value="-1" />
     </Property>
@@ -85,14 +86,13 @@ ICON =
       <Property name="CanDestroyFromStoredInteraction" value="False" />
       <Property name="GivesSubstances" />
       <Property name="StatToTrack" value="GcStatsEnum.xml">
-        <Property name="GcStatEnum" value="None" />
+        <Property name="StatEnum" value="None" />
       </Property>
       <Property name="GivesReward" value="" />
       <Property name="PirateSystemAltReward" value="" />
       <Property name="RewardIfDestroyedByOther" value="False" />
       <Property name="HideReward" value="False" />
       <Property name="OverrideRewardLoc" value="" />
-      <Property name="HardModeSubstanceMultiplier" value="1" />
       <Property name="RewardOverrideTable" />
       <Property name="ActivateLocatorsFromRarity" value="False" />
       <Property name="RarityLocators">
@@ -111,6 +111,9 @@ ICON =
       <Property name="HideModel" value="False" />
       <Property name="DestroyedModel" value="TkModelResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="DestroyedModelUsesScale" value="True" />
       <Property name="DestroyedModelCollidesWithEverything" value="False" />
@@ -144,7 +147,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"] = "Blackbox.pak",
   ["MOD_AUTHOR"] = "NeuroHunter with huge help from Kiiritsugu and Lowkie",
-  ["LUA_AUTHOR"] = "Updated for 3.93 by Lenni, Babscoole, Lo2k, and Gumsk",
+  ["LUA_AUTHOR"] = "Updated for 4.08 by Babscoole.  Updated for 3.93 by Lenni, Babscoole, Lo2k, and Gumsk",
   ["MOD_DESCRIPTION"] = "Blackbox have an icon",
   [[
   ]],
