@@ -1,11 +1,11 @@
 -- speed is in seconds, and has to be a negative value. default = -79200 which is 22 hours, -3600 is 1 hour.
 HARVESTER_SPEED = -1800 -- default = -3600
-HARVESTER_STORAGE = 1250 -- default = 250
+HARVESTER_STORAGE = 2500 -- default = 250
 F_HARVESTER_SPEED = 1800 -- default = 3600, fuel burn time
-FUEL_AMOUNT = 400 -- Default is 100
+FUEL_AMOUNT = 800 -- Default is 100
 
 Author = "Jaggid Edje"
-ModName = "SpeedyHarvesters_1250"
+ModName = "SpeedyHarvesters_2500"
 ModNameSub = "JE"
 BaseDescription = "Increases speed and storage of AMUs and Oxygen and Gas Harvesters"
 GameVersion = "4.08"
