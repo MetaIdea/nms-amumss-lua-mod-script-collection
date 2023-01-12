@@ -3,7 +3,7 @@
 ---------------------------------------------
 ---------------------------------------------
 
--- /!\ WARNING /!\ : true/false parameters must be written in lowercase characters (blue highlight in Notepad++).
+-- /!\ WARNING /!\ : true/false parameters must be written in lowercase characters.
 
 -- Terrain edit :
 
@@ -31,6 +31,7 @@ NO_BUILDCOUNT_LIMIT = false                     --Vanilla false // Mod Default f
 -- Specific placements/limits :
 MARINESHELTER_ABOVE_WATER = false               --Vanilla false // Mod default false // true to enable marine shelter placement above water, ALL_PARTS_ABOVE_WATER must be true too
 EXOMATERIALISER_ON_PLANETBASE = false           --Vanilla false // Mod default false // true to enable the Orbital Exocraft Materialiser on planet bases (decorative purpose only), ALL_PARTS_ON_PLANETBASE must be true too
+FREIGHTERROOMS_ON_PLANETBASE = false            --Vanilla false // Mod default false // true to enable freighter tech and bio rooms on planet bases
 FARM_IN_ANY_BIOME = false                       --Vanilla false // Mod default false // true to enable planting in any biome
 METAL_PARTS_OUTSIDE_BASE = false                --Vanilla false // Mod default false // true to makes some metal parts buildable outside of bases. Won't snap together outside of bases! Use it at your own risks!
 GEOBAYS_ON_FREIGHTER = false                    --Vanilla false // Mod default false // true to enable vehicles geobays on freighters, ALL_PARTS_ON_FREIGHTER must be true too. Can be very glitchy, use it at your own risks!
@@ -46,17 +47,18 @@ CAN_SCALE_EXTRACTORS = false                    --Vanilla false // Mod Default f
 ------------ GUIF section begins ------------
 ---------------------------------------------
 
-GUIGeo = {enableGeos = {false, [[Do you want GeoBays on Freighters? Default = N. ]] }}
-GEOBAYS_ON_FREIGHTER = GUIF( GUIGeo.enableGeos, 5 )
+GEOBAYS_ON_FREIGHTER = GUIF({false, [[Do you want GeoBays on Freighters?  Default = N.  Press ENTER for default value.]]},10)
 print("GEOBAYS_ON_FREIGHTER = "..tostring(GEOBAYS_ON_FREIGHTER))
 
-GUIFarm = {enableFarm = {false, [[Do you want to farm in any biome?  Default = N. ]] }}
-FARM_IN_ANY_BIOME = GUIF( GUIFarm.enableFarm, 5 )
+FARM_IN_ANY_BIOME = GUIF({false, [[Do you want to farm in any biome?  Default = N.  Press ENTER for default value.]]},10)
 print("FARM_IN_ANY_BIOME = "..tostring(FARM_IN_ANY_BIOME))
 
-GUIStor = {enableStor = {false, [[Do you want to place Base Storage Containers on Freighters?  Default = N. ]] }}
-BASESTORAGE_ON_FREIGHTER = GUIF( GUIStor.enableStor, 5 )
+BASESTORAGE_ON_FREIGHTER = GUIF({false, [[Do you want to place Base Storage Containers on Freighters?  Default = N.  Press ENTER for default value.]]},10)
 print("BASESTORAGE_ON_FREIGHTER = "..tostring(BASESTORAGE_ON_FREIGHTER))
+
+FREIGHTERROOMS_ON_PLANETBASE = GUIF({false, [[Do you want to place Freighter Tech and Bio rooms on Planet Bases?  Default = N.  Press ENTER for default value.]]},10 )
+print("FREIGHTERROOMS_ON_PLANETBASE = "..tostring(FREIGHTERROOMS_ON_PLANETBASE))
+
 
 ------------- GUIF section ends -------------
 ---------------------------------------------
@@ -156,6 +158,8 @@ BASE_CONTAINERID_TABLE = {"CONTAINER0", "CONTAINER1", "CONTAINER2", "CONTAINER3"
 -- Metal parts buildable outside of bases if METAL_PARTS_OUTSIDE_BASE is true
 METAL_OUTSIDE_BASE_ID_TABLE = {"M_WALL", "M_DOOR", "M_FLOOR", "M_RAMP", "M_ROOF", "M_ARCH"}
 
+-- Freighter tech and bio rooms list
+FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE = {"FRE_ROOM_FLEET", "FRE_ROOM_SCAN", "FRE_ROOM_TELEPO", "FRE_ROOM_DRESS", "FRE_ROOM_NPCSCI", "FRE_ROOM_NPCBUI", "FRE_ROOM_SHOP", "FRE_ROOM_TECH", "FRE_ROOM_PLANT1", "FRE_ROOM_PLANT0", "FRE_ROOM_COOK", "FRE_ROOM_NPCFAR", "FRE_ROOM_BIO", "FRE_ROOM_NPCWEA"}
 
 -- Geobays buildable on freighters if GEOBAYS_ON_FREIGHTER is true
 GEOBAYS_ON_FREIGHTER_ID_TABLE = {"SUMMON_GARAGE", "GARAGE_B", "GARAGE_S", "GARAGE_M", "GARAGE_L", "GARAGE_MECH"}
@@ -915,3 +919,38 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table_miscfreighterallow
  end
+ 
+ -- Tech and Bio freighter rooms on planetbases after Endurance update
+if FREIGHTERROOMS_ON_PLANETBASE then
+	for i = 1,#FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE do
+
+		local temp_table_freighterroomsgroup =
+		{
+			["SPECIAL_KEY_WORDS"] = {"ID", FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE[i]},
+			["PRECEDING_KEY_WORDS"] = {"Groups"},
+			["LINE_OFFSET"]= "+0",
+			["ADD"] =
+[[
+        <Property value="GcBaseBuildingEntryGroup.xml">
+          <Property name="Group" value="FREIGHTER_IND" />
+          <Property name="SubGroupName" value="BBB_PB_ADD" />
+          <Property name="SubGroup" value="0" />
+        </Property>
+]]
+		}
+		Change_Table_Array[#Change_Table_Array + 1] = temp_table_freighterroomsgroup
+	end
+	local temp_table_subadd =
+	{
+		["SPECIAL_KEY_WORDS"] = {"Id", "FRE_IND_SUB"},
+		["ADD_OPTION"] = "ADDafterSECTION",
+		["ADD"] =
+[[
+        <Property value="GcBaseBuildingSubGroup.xml">
+          <Property name="Id" value="BBB_PB_ADD" />
+          <Property name="Name" value="BBB PlanetBase Add" />
+        </Property>
+]]
+	}
+	Change_Table_Array[#Change_Table_Array + 1] = temp_table_subadd
+end
