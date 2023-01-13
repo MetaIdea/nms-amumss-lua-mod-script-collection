@@ -55,7 +55,7 @@ table.insert(FINAL_CHANGES,
 							{
 								{"MiniWarpSpeed",						"150000"},	
 								{"MiniWarpHUDArrowAttractAngle",		"2"},	
-								{"MiniWarpHUDArrowAttractAngleStation",		"1"},	
+								{"MiniWarpHUDArrowAttractAngleStation",		"2"},	
 								{"MiniWarpHUDArrowAttractAngleDense",		"1"},	
 								{"MiniWarpStoppingMarginPlanet",		"2000"},	
 								{"MiniWarpMinPlanetDistance",			"300"},	
@@ -399,7 +399,7 @@ table.insert(FINAL_CHANGES,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								-- SPACE DRIFTO
-								{"DirectionBrakeMin",	"0"},
+								{"DirectionBrakeMin",	"NaN"},
 								{"DirectionBrake",		"0.95"},
 								-- {"TurnBrakeMin",	"0"},
 								-- {"TurnBrakeMax",	"0"},
@@ -414,7 +414,7 @@ table.insert(FINAL_CHANGES,
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								-- SPACE DRIFTO
-								{"DirectionBrakeMin",	"0"},
+								{"DirectionBrakeMin",	"NaN"},
 								{"DirectionBrake",		"0.95"},
 								-- {"TurnBrakeMin",	"0"},
 								-- {"TurnBrakeMax",	"0"},
