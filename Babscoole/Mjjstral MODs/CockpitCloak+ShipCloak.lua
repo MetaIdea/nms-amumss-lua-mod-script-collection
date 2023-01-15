@@ -1,9 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"]    = "CockpitCloak+ShipCloak.pak",
-["MOD_AUTHOR"]      = "Mod and toggle idea by Mjjstral, original concept Gmr_Leon",
-["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "3.99",
+["MOD_AUTHOR"]      = "Original mod and toggle idea by Mjjstral, original concept Gmr_Leon, Current author Babscoole",
+["NMS_VERSION"]     = "4.08",
 ["DESCRIPTION"]     = "Makes the cockpit interior and ship invisible when flying",
 ["MODIFICATIONS"]   = 
 	{
@@ -20,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS\COMMON\SPACECRAFT\SHUTTLE\INTERIORS\CANOPYA_INTERIOR\ENTITIES\CANOPYA.ENTITY.MBIN",
 						"MODELS\COMMON\SPACECRAFT\S-CLASS\INTERIORS\CANOPYA_INTERIOR\ENTITIES\COCKPIT.ENTITY.MBIN",
 						"MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIPPARTS\COCKPIT\SAILSHIPCOCKPITA_INTERIOR\ENTITIES\COCKPIT.ENTITY.MBIN",
-						"MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\COCKPIT\COCKPITA\ENTITIES\COCKPIT_A.ENTITY.MBIN",
+						"MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\CANOPYA_INTERIOR\ENTITIES\COCKPIT.ENTITY.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] = 
 					{
@@ -45,11 +44,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="HIDE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>	
               </Property>
             </Property>
-            <!-- <Property value="GcActionTrigger.xml">
+            <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="EXIT" />
                 <Property name="FrameStart" value="0" />
@@ -59,10 +60,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="UNHIDE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>	
               </Property>
-            </Property> -->
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="EJECT" />
@@ -73,11 +76,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="UNHIDE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>	
               </Property>
             </Property>
-            <!-- <Property value="GcActionTrigger.xml">
+            <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="3" />
                 <Property name="RandomSeconds" value="0" />
@@ -87,10 +92,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="HIDE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>	
               </Property>
-            </Property>	-->	
+            </Property>		
           </Property>
         </Property>
         <Property value="GcActionTriggerState.xml">
@@ -153,6 +160,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Deactivate" />
+                  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_A\GOLDCOCKPITA" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Deactivate" />
                   <Property name="Name" value="MODELS\COMMON\SPACECRAFT\SCIENTIFIC\INTERIORS\CANOPYA_INTERIOR" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
@@ -201,7 +220,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Deactivate" />
-                  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\COCKPIT\COCKPITA" />
+                  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\CANOPYA_INTERIOR" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
                   <Property name="IncludeChildPhysics" value="True" />
@@ -214,7 +233,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -280,6 +301,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Activate" />
+                  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_A\GOLDCOCKPITA" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Activate" />
                   <Property name="Name" value="MODELS\COMMON\SPACECRAFT\SCIENTIFIC\INTERIORS\CANOPYA_INTERIOR" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
@@ -328,7 +361,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Activate" />
-                  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\COCKPIT\COCKPITA" />
+                  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\CANOPYA_INTERIOR" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
                   <Property name="IncludeChildPhysics" value="True" />
@@ -341,7 +374,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -375,7 +410,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						"MODELS\COMMON\SPACECRAFT\SHUTTLE\ACCESSORIES\LANDINGGEAR_LEG\ENTITIES\LANDINGGEAR.ENTITY.MBIN",
 						"MODELS\COMMON\SPACECRAFT\S-CLASS\ROYALPARTS\LANDINGGEAR\LANDINGGEAR_A\ENTITIES\S_CLASS_LANDINGGEAR_A.ENTITY.MBIN",
 						"MODELS\COMMON\SPACECRAFT\S-CLASS\SQUIDPARTS\LANDINGGEAR\LANDINGGEAR_A\ENTITIES\LANDINGGEAR_A.ENTITY.MBIN",
-						"MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\COCKPIT\COCKPITA\ENTITIES\COCKPIT_A.ENTITY.MBIN",
+						-- "MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\COCKPIT\COCKPITA\ENTITIES\COCKPIT_A.ENTITY.MBIN",
+						-- "MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\ENGINE\ENGINE_A\ENTITIES\ENGINEA.ENTITY.MBIN",
+						-- "MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\CANOPYA_INTERIOR\ENTITIES\COCKPIT.ENTITY.MBIN",
 						"MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIPPARTS\COCKPIT\SAILSHIPCOCKPITA_INTERIOR\ENTITIES\COCKPIT.ENTITY.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] = 
@@ -401,7 +438,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="HIDE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>	
               </Property>
             </Property>
@@ -415,7 +454,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="UNHIDE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>	
               </Property>
             </Property>
@@ -426,7 +467,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Triggers">
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
-                <Property name="Seconds" value="6" />
+                <Property name="Seconds" value="9.5 " />
                 <Property name="RandomSeconds" value="0" />
                 <Property name="UseMissionClock" value="False" />
               </Property>	  
@@ -434,6 +475,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Deactivate" />
                   <Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTER_PROC" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Deactivate" />
+                  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERCLASSICGOLD" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
                   <Property name="IncludeChildPhysics" value="True" />
@@ -518,7 +571,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>	
               </Property>
             </Property>
@@ -548,6 +603,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property value="GcNodeActivationAction.xml">
                   <Property name="NodeActiveState" value="Activate" />
+                  <Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERCLASSICGOLD" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Activate" />
                   <Property name="Name" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\DROPSHIP_PROC" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
@@ -621,7 +688,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>	
               </Property>
             </Property>
@@ -646,14 +715,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						"MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA_INTERIOR.SCENE.MBIN",
 						"MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITB_INTERIOR.SCENE.MBIN",
-						-- "MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPITA_INTERIOR.SCENE.MBIN",
-						-- "MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPITB_INTERIOR.SCENE.MBIN",
-						"MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPITCOMMON_INTERIOR.SCENE.MBIN",						
+						"MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPITCOMMON_INTERIOR.SCENE.MBIN",
+						"MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\CANOPYA_INTERIOR.SCENE.MBIN",
+						"MODELS\COMMON\SPACECRAFT\S-CLASS\INTERIORS\CANOPYA_INTERIOR.SCENE.MBIN",						
 						"MODELS\COMMON\SPACECRAFT\SCIENTIFIC\INTERIORS\CANOPYA_INTERIOR.SCENE.MBIN",
 						"MODELS\COMMON\SPACECRAFT\SHUTTLE\INTERIORS\CANOPYA_INTERIOR\CANOPYA_INTERIOR.SCENE.MBIN",
-						"MODELS\COMMON\SPACECRAFT\S-CLASS\INTERIORS\CANOPYA_INTERIOR.SCENE.MBIN",
-						--"MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIPPARTS\COCKPIT\SAILSHIPCOCKPITA_INTERIOR.SCENE.MBIN",
-						"MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\CANOPYA_INTERIOR.SCENE.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] = 
 					{
