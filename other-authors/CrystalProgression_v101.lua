@@ -1,375 +1,4 @@
-NMS_MOD_DEFINITION_CONTAINER = 
-{
-["MOD_FILENAME"]  = "zzz_crystalprogress_v100.pak",
-["MOD_AUTHOR"]    = "camus",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] = 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
-					{						
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","FOOD_CG_HONEY"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
-[[
-    <Property value="GcProductData.xml">
-      <Property name="ID" value="R_STORM_CRYSTAL" />
-      <Property name="Name" value="UI_STORMCRYSTAL_NAME" />
-      <Property name="NameLower" value="UI_STORMCRYSTAL_NAME_L" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_STORMCRYSTAL_SUB" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_STORMCRYSTAL_DESC" />
-      </Property>
-      <Property name="Hint" value="" />
-      <Property name="GroupID" value="" />
-      <Property name="DebrisFile" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="BaseValue" value="206000" />
-      <Property name="Level" value="0" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STORMCRYSTAL.DDS" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="HeroIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="Colour" value="Colour.xml">
-        <Property name="R" value="0.9" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="Category" value="GcRealitySubstanceCategory.xml">
-        <Property name="SubstanceCategory" value="Exotic" />
-      </Property>
-      <Property name="Type" value="GcProductCategory.xml">
-        <Property name="ProductCategory" value="Curiosity" />
-      </Property>
-      <Property name="Rarity" value="GcRarity.xml">
-        <Property name="Rarity" value="Rare" />
-      </Property>
-      <Property name="Legality" value="GcLegality.xml">
-        <Property name="Legality" value="Legal" />
-      </Property>
-      <Property name="Consumable" value="True" />
-      <Property name="ChargeValue" value="0" />
-      <Property name="StackMultiplier" value="1" />
-      <Property name="DefaultCraftAmount" value="1" />
-      <Property name="CraftAmountStepSize" value="1" />
-      <Property name="CraftAmountMultiplier" value="1" />
-      <Property name="Requirements" />
-      <Property name="AltRequirements" />
-      <Property name="Cost" value="GcItemPriceModifiers.xml">
-        <Property name="SpaceStationMarkup" value="0" />
-        <Property name="LowPriceMod" value="0" />
-        <Property name="HighPriceMod" value="0.05" />
-        <Property name="BuyBaseMarkup" value="0.2" />
-        <Property name="BuyMarkupMod" value="0" />
-      </Property>
-      <Property name="RecipeCost" value="1" />
-      <Property name="SpecificChargeOnly" value="False" />
-      <Property name="NormalisedValueOnWorld" value="0.013535193" />
-      <Property name="NormalisedValueOffWorld" value="0.013535193" />
-      <Property name="TradeCategory" value="GcTradeCategory.xml">
-        <Property name="TradeCategory" value="None" />
-      </Property>
-      <Property name="WikiCategory" value="Curio" />
-      <Property name="IsCraftable" value="False" />
-      <Property name="DeploysInto" value="" />
-      <Property name="EconomyInfluenceMultiplier" value="0" />
-      <Property name="PinObjective" value="UI_FIND_OBJ" />
-      <Property name="PinObjectiveTip" value="UI_PIN_STORM_CRYSTAL_OBJ_TIP" />
-      <Property name="CookingIngredient" value="False" />
-      <Property name="CookingValue" value="0" />
-      <Property name="GoodForSelling" value="True" />
-      <Property name="GiveRewardOnSpecialPurchase" value="" />
-      <Property name="EggModifierIngredient" value="True" />
-      <Property name="IsTechbox" value="False" />
-    </Property>
-    <Property value="GcProductData.xml">
-      <Property name="ID" value="G_STORM_CRYSTAL" />
-      <Property name="Name" value="UI_STORMCRYSTAL_NAME" />
-      <Property name="NameLower" value="UI_STORMCRYSTAL_NAME_L" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_STORMCRYSTAL_SUB" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_STORMCRYSTAL_DESC" />
-      </Property>
-      <Property name="Hint" value="" />
-      <Property name="GroupID" value="" />
-      <Property name="DebrisFile" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="BaseValue" value="206000" />
-      <Property name="Level" value="0" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STORMCRYSTAL.DDS" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="HeroIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="Colour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0.9" />
-        <Property name="B" value="0" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="Category" value="GcRealitySubstanceCategory.xml">
-        <Property name="SubstanceCategory" value="Exotic" />
-      </Property>
-      <Property name="Type" value="GcProductCategory.xml">
-        <Property name="ProductCategory" value="Curiosity" />
-      </Property>
-      <Property name="Rarity" value="GcRarity.xml">
-        <Property name="Rarity" value="Rare" />
-      </Property>
-      <Property name="Legality" value="GcLegality.xml">
-        <Property name="Legality" value="Legal" />
-      </Property>
-      <Property name="Consumable" value="True" />
-      <Property name="ChargeValue" value="0" />
-      <Property name="StackMultiplier" value="1" />
-      <Property name="DefaultCraftAmount" value="1" />
-      <Property name="CraftAmountStepSize" value="1" />
-      <Property name="CraftAmountMultiplier" value="1" />
-      <Property name="Requirements" />
-      <Property name="AltRequirements" />
-      <Property name="Cost" value="GcItemPriceModifiers.xml">
-        <Property name="SpaceStationMarkup" value="0" />
-        <Property name="LowPriceMod" value="0" />
-        <Property name="HighPriceMod" value="0.05" />
-        <Property name="BuyBaseMarkup" value="0.2" />
-        <Property name="BuyMarkupMod" value="0" />
-      </Property>
-      <Property name="RecipeCost" value="1" />
-      <Property name="SpecificChargeOnly" value="False" />
-      <Property name="NormalisedValueOnWorld" value="0.013535193" />
-      <Property name="NormalisedValueOffWorld" value="0.013535193" />
-      <Property name="TradeCategory" value="GcTradeCategory.xml">
-        <Property name="TradeCategory" value="None" />
-      </Property>
-      <Property name="WikiCategory" value="Curio" />
-      <Property name="IsCraftable" value="False" />
-      <Property name="DeploysInto" value="" />
-      <Property name="EconomyInfluenceMultiplier" value="0" />
-      <Property name="PinObjective" value="UI_FIND_OBJ" />
-      <Property name="PinObjectiveTip" value="UI_PIN_STORM_CRYSTAL_OBJ_TIP" />
-      <Property name="CookingIngredient" value="False" />
-      <Property name="CookingValue" value="0" />
-      <Property name="GoodForSelling" value="True" />
-      <Property name="GiveRewardOnSpecialPurchase" value="" />
-      <Property name="EggModifierIngredient" value="True" />
-      <Property name="IsTechbox" value="False" />
-    </Property>
-    <Property value="GcProductData.xml">
-      <Property name="ID" value="B_STORM_CRYSTAL" />
-      <Property name="Name" value="UI_STORMCRYSTAL_NAME" />
-      <Property name="NameLower" value="UI_STORMCRYSTAL_NAME_L" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_STORMCRYSTAL_SUB" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="UI_STORMCRYSTAL_DESC" />
-      </Property>
-      <Property name="Hint" value="" />
-      <Property name="GroupID" value="" />
-      <Property name="DebrisFile" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="BaseValue" value="206000" />
-      <Property name="Level" value="0" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STORMCRYSTAL.DDS" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="HeroIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="Colour" value="Colour.xml">
-        <Property name="R" value="0" />
-        <Property name="G" value="0" />
-        <Property name="B" value="0.9" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="Category" value="GcRealitySubstanceCategory.xml">
-        <Property name="SubstanceCategory" value="Exotic" />
-      </Property>
-      <Property name="Type" value="GcProductCategory.xml">
-        <Property name="ProductCategory" value="Curiosity" />
-      </Property>
-      <Property name="Rarity" value="GcRarity.xml">
-        <Property name="Rarity" value="Rare" />
-      </Property>
-      <Property name="Legality" value="GcLegality.xml">
-        <Property name="Legality" value="Legal" />
-      </Property>
-      <Property name="Consumable" value="True" />
-      <Property name="ChargeValue" value="0" />
-      <Property name="StackMultiplier" value="1" />
-      <Property name="DefaultCraftAmount" value="1" />
-      <Property name="CraftAmountStepSize" value="1" />
-      <Property name="CraftAmountMultiplier" value="1" />
-      <Property name="Requirements" />
-      <Property name="AltRequirements" />
-      <Property name="Cost" value="GcItemPriceModifiers.xml">
-        <Property name="SpaceStationMarkup" value="0" />
-        <Property name="LowPriceMod" value="0" />
-        <Property name="HighPriceMod" value="0.05" />
-        <Property name="BuyBaseMarkup" value="0.2" />
-        <Property name="BuyMarkupMod" value="0" />
-      </Property>
-      <Property name="RecipeCost" value="1" />
-      <Property name="SpecificChargeOnly" value="False" />
-      <Property name="NormalisedValueOnWorld" value="0.013535193" />
-      <Property name="NormalisedValueOffWorld" value="0.013535193" />
-      <Property name="TradeCategory" value="GcTradeCategory.xml">
-        <Property name="TradeCategory" value="None" />
-      </Property>
-      <Property name="WikiCategory" value="Curio" />
-      <Property name="IsCraftable" value="False" />
-      <Property name="DeploysInto" value="" />
-      <Property name="EconomyInfluenceMultiplier" value="0" />
-      <Property name="PinObjective" value="UI_FIND_OBJ" />
-      <Property name="PinObjectiveTip" value="UI_PIN_STORM_CRYSTAL_OBJ_TIP" />
-      <Property name="CookingIngredient" value="False" />
-      <Property name="CookingValue" value="0" />
-      <Property name="GoodForSelling" value="True" />
-      <Property name="GiveRewardOnSpecialPurchase" value="" />
-      <Property name="EggModifierIngredient" value="True" />
-      <Property name="IsTechbox" value="False" />
-    </Property>
-    <Property value="GcProductData.xml">
-      <Property name="ID" value="GLITCHMAT" />
-      <Property name="Name" value="UI_BUILD_GRID_GLITCHES" />
-      <Property name="NameLower" value="UI_HEX_CORE_SUB" />
-      <Property name="Subtitle" value="VariableSizeString.xml">
-        <Property name="Value" value="BLD_GLITCHPROP_SUBTITLE" />
-      </Property>
-      <Property name="Description" value="VariableSizeString.xml">
-        <Property name="Value" value="BLD_GLITCHPROP_DESCRIPTION" />
-      </Property>
-      <Property name="Hint" value="" />
-      <Property name="GroupID" value="" />
-      <Property name="DebrisFile" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="BaseValue" value="250000" />
-      <Property name="Level" value="0" />
-      <Property name="Icon" value="TkTextureResource.xml">
-        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PROCTECH/ROGUETECH.GENERAL.DDS" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="HeroIcon" value="TkTextureResource.xml">
-        <Property name="Filename" value="" />
-        <Property name="ResHandle" value="GcResource.xml">
-          <Property name="ResourceID" value="0" />
-        </Property>
-      </Property>
-      <Property name="Colour" value="Colour.xml">
-        <Property name="R" value="0.1" />
-        <Property name="G" value="0.1" />
-        <Property name="B" value="0.1" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="Category" value="GcRealitySubstanceCategory.xml">
-        <Property name="SubstanceCategory" value="Exotic" />
-      </Property>
-      <Property name="Type" value="GcProductCategory.xml">
-        <Property name="ProductCategory" value="Curiosity" />
-      </Property>
-      <Property name="Rarity" value="GcRarity.xml">
-        <Property name="Rarity" value="Rare" />
-      </Property>
-      <Property name="Legality" value="GcLegality.xml">
-        <Property name="Legality" value="Illegal" />
-      </Property>
-      <Property name="Consumable" value="True" />
-      <Property name="ChargeValue" value="0" />
-      <Property name="StackMultiplier" value="1" />
-      <Property name="DefaultCraftAmount" value="1" />
-      <Property name="CraftAmountStepSize" value="1" />
-      <Property name="CraftAmountMultiplier" value="1" />
-      <Property name="Requirements" />
-      <Property name="AltRequirements" />
-      <Property name="Cost" value="GcItemPriceModifiers.xml">
-        <Property name="SpaceStationMarkup" value="0" />
-        <Property name="LowPriceMod" value="0" />
-        <Property name="HighPriceMod" value="0.05" />
-        <Property name="BuyBaseMarkup" value="0.2" />
-        <Property name="BuyMarkupMod" value="0" />
-      </Property>
-      <Property name="RecipeCost" value="1" />
-      <Property name="SpecificChargeOnly" value="False" />
-      <Property name="NormalisedValueOnWorld" value="0.013535193" />
-      <Property name="NormalisedValueOffWorld" value="0.013535193" />
-      <Property name="TradeCategory" value="GcTradeCategory.xml">
-        <Property name="TradeCategory" value="None" />
-      </Property>
-      <Property name="WikiCategory" value="Curio" />
-      <Property name="IsCraftable" value="False" />
-      <Property name="DeploysInto" value="" />
-      <Property name="EconomyInfluenceMultiplier" value="0" />
-      <Property name="PinObjective" value="" />
-      <Property name="PinObjectiveTip" value="" />
-      <Property name="CookingIngredient" value="False" />
-      <Property name="CookingValue" value="0" />
-      <Property name="GoodForSelling" value="True" />
-      <Property name="GiveRewardOnSpecialPurchase" value="" />
-      <Property name="EggModifierIngredient" value="True" />
-      <Property name="IsTechbox" value="False" />
-    </Property>
-]]
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
-					{						
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","HDRIVEBOOST1","ID","TECH_COMP"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+HDRIVEBOOST1 = 
 [[
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="STORM_CRYSTAL" />
@@ -379,11 +8,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Amount" value="15" />
         </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","HDRIVEBOOST2","ID","TECH_COMP"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+HDRIVEBOOST2 = 
 [[
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="R_STORM_CRYSTAL" />
@@ -393,11 +19,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Amount" value="15" />
         </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","HDRIVEBOOST3","ID","TECH_COMP"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+HDRIVEBOOST3 = 
 [[
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="G_STORM_CRYSTAL" />
@@ -407,11 +30,8 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Amount" value="15" />
         </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","T_SENTGUN"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+UT_SUPER_HOT = 
 [[
     <Property value="GcTechnology.xml">
       <Property name="ID" value="UT_SUPER_HOT" />
@@ -536,6 +156,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
     </Property>
+]]
+
+UT_SUPER_COLD = 
+[[
     <Property value="GcTechnology.xml">
       <Property name="ID" value="UT_SUPER_COLD" />
       <Property name="Group" value="" />
@@ -659,6 +283,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
     </Property>
+]]
+
+UT_SUPER_TOX = 
+[[
     <Property value="GcTechnology.xml">
       <Property name="ID" value="UT_SUPER_TOX" />
       <Property name="Group" value="" />
@@ -782,6 +410,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
     </Property>
+]]
+
+UT_SUPER_RAD = 
+[[
     <Property value="GcTechnology.xml">
       <Property name="ID" value="UT_SUPER_RAD" />
       <Property name="Group" value="" />
@@ -905,6 +537,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
     </Property>
+]]
+
+UT_SUPER_WATER = 
+[[
     <Property value="GcTechnology.xml">
       <Property name="ID" value="UT_SUPER_WATER" />
       <Property name="Group" value="" />
@@ -1028,6 +664,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
     </Property>
+]]
+
+UT_SUPER_ENERGY = 
+[[
     <Property value="GcTechnology.xml">
       <Property name="ID" value="UT_SUPER_ENERGY" />
       <Property name="Group" value="" />
@@ -1158,6 +798,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
     </Property>
+]]
+
+UT_SUPER_JET = 
+[[
     <Property value="GcTechnology.xml">
       <Property name="ID" value="UT_SUPER_JET" />
       <Property name="Group" value="" />
@@ -1302,6 +946,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ParentTechId" value="" />
       <Property name="IsTemplate" value="False" />
     </Property>
+]]
+
+SUPER_HDRIVE = 
+[[
     <Property value="GcTechnology.xml">
       <Property name="ID" value="SUPER_HDRIVE" />
       <Property name="Group" value="" />
@@ -1440,143 +1088,420 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="IsTemplate" value="False" />
     </Property>
 ]]
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\DEFAULTREALITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
-					{						
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Lush"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_WATER"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+R_STORM_CRYSTAL = 
+[[
+    <Property value="GcProductData.xml">
+      <Property name="ID" value="R_STORM_CRYSTAL" />
+      <Property name="Name" value="UI_STORMCRYSTAL_NAME" />
+      <Property name="NameLower" value="UI_STORMCRYSTAL_NAME_L" />
+      <Property name="Subtitle" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_STORMCRYSTAL_SUB" />
+      </Property>
+      <Property name="Description" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_STORMCRYSTAL_DESC" />
+      </Property>
+      <Property name="Hint" value="" />
+      <Property name="GroupID" value="" />
+      <Property name="DebrisFile" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="BaseValue" value="206000" />
+      <Property name="Level" value="0" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STORMCRYSTAL.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="HeroIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0.9" />
+        <Property name="G" value="0" />
+        <Property name="B" value="0" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="Category" value="GcRealitySubstanceCategory.xml">
+        <Property name="SubstanceCategory" value="Exotic" />
+      </Property>
+      <Property name="Type" value="GcProductCategory.xml">
+        <Property name="ProductCategory" value="Curiosity" />
+      </Property>
+      <Property name="Rarity" value="GcRarity.xml">
+        <Property name="Rarity" value="Rare" />
+      </Property>
+      <Property name="Legality" value="GcLegality.xml">
+        <Property name="Legality" value="Legal" />
+      </Property>
+      <Property name="Consumable" value="True" />
+      <Property name="ChargeValue" value="0" />
+      <Property name="StackMultiplier" value="1" />
+      <Property name="DefaultCraftAmount" value="1" />
+      <Property name="CraftAmountStepSize" value="1" />
+      <Property name="CraftAmountMultiplier" value="1" />
+      <Property name="Requirements" />
+      <Property name="AltRequirements" />
+      <Property name="Cost" value="GcItemPriceModifiers.xml">
+        <Property name="SpaceStationMarkup" value="0" />
+        <Property name="LowPriceMod" value="0" />
+        <Property name="HighPriceMod" value="0.05" />
+        <Property name="BuyBaseMarkup" value="0.2" />
+        <Property name="BuyMarkupMod" value="0" />
+      </Property>
+      <Property name="RecipeCost" value="1" />
+      <Property name="SpecificChargeOnly" value="False" />
+      <Property name="NormalisedValueOnWorld" value="0.013535193" />
+      <Property name="NormalisedValueOffWorld" value="0.013535193" />
+      <Property name="TradeCategory" value="GcTradeCategory.xml">
+        <Property name="TradeCategory" value="None" />
+      </Property>
+      <Property name="WikiCategory" value="Curio" />
+      <Property name="IsCraftable" value="False" />
+      <Property name="DeploysInto" value="" />
+      <Property name="EconomyInfluenceMultiplier" value="0" />
+      <Property name="PinObjective" value="UI_FIND_OBJ" />
+      <Property name="PinObjectiveTip" value="UI_PIN_STORM_CRYSTAL_OBJ_TIP" />
+      <Property name="CookingIngredient" value="False" />
+      <Property name="CookingValue" value="0" />
+      <Property name="GoodForSelling" value="True" />
+      <Property name="GiveRewardOnSpecialPurchase" value="" />
+      <Property name="EggModifierIngredient" value="True" />
+      <Property name="IsTechbox" value="False" />
+    </Property>
+]]
+
+G_STORM_CRYSTAL = 
+[[
+    <Property value="GcProductData.xml">
+      <Property name="ID" value="G_STORM_CRYSTAL" />
+      <Property name="Name" value="UI_STORMCRYSTAL_NAME" />
+      <Property name="NameLower" value="UI_STORMCRYSTAL_NAME_L" />
+      <Property name="Subtitle" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_STORMCRYSTAL_SUB" />
+      </Property>
+      <Property name="Description" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_STORMCRYSTAL_DESC" />
+      </Property>
+      <Property name="Hint" value="" />
+      <Property name="GroupID" value="" />
+      <Property name="DebrisFile" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="BaseValue" value="206000" />
+      <Property name="Level" value="0" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STORMCRYSTAL.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="HeroIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0" />
+        <Property name="G" value="0.9" />
+        <Property name="B" value="0" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="Category" value="GcRealitySubstanceCategory.xml">
+        <Property name="SubstanceCategory" value="Exotic" />
+      </Property>
+      <Property name="Type" value="GcProductCategory.xml">
+        <Property name="ProductCategory" value="Curiosity" />
+      </Property>
+      <Property name="Rarity" value="GcRarity.xml">
+        <Property name="Rarity" value="Rare" />
+      </Property>
+      <Property name="Legality" value="GcLegality.xml">
+        <Property name="Legality" value="Legal" />
+      </Property>
+      <Property name="Consumable" value="True" />
+      <Property name="ChargeValue" value="0" />
+      <Property name="StackMultiplier" value="1" />
+      <Property name="DefaultCraftAmount" value="1" />
+      <Property name="CraftAmountStepSize" value="1" />
+      <Property name="CraftAmountMultiplier" value="1" />
+      <Property name="Requirements" />
+      <Property name="AltRequirements" />
+      <Property name="Cost" value="GcItemPriceModifiers.xml">
+        <Property name="SpaceStationMarkup" value="0" />
+        <Property name="LowPriceMod" value="0" />
+        <Property name="HighPriceMod" value="0.05" />
+        <Property name="BuyBaseMarkup" value="0.2" />
+        <Property name="BuyMarkupMod" value="0" />
+      </Property>
+      <Property name="RecipeCost" value="1" />
+      <Property name="SpecificChargeOnly" value="False" />
+      <Property name="NormalisedValueOnWorld" value="0.013535193" />
+      <Property name="NormalisedValueOffWorld" value="0.013535193" />
+      <Property name="TradeCategory" value="GcTradeCategory.xml">
+        <Property name="TradeCategory" value="None" />
+      </Property>
+      <Property name="WikiCategory" value="Curio" />
+      <Property name="IsCraftable" value="False" />
+      <Property name="DeploysInto" value="" />
+      <Property name="EconomyInfluenceMultiplier" value="0" />
+      <Property name="PinObjective" value="UI_FIND_OBJ" />
+      <Property name="PinObjectiveTip" value="UI_PIN_STORM_CRYSTAL_OBJ_TIP" />
+      <Property name="CookingIngredient" value="False" />
+      <Property name="CookingValue" value="0" />
+      <Property name="GoodForSelling" value="True" />
+      <Property name="GiveRewardOnSpecialPurchase" value="" />
+      <Property name="EggModifierIngredient" value="True" />
+      <Property name="IsTechbox" value="False" />
+    </Property>
+]]
+
+B_STORM_CRYSTAL = 
+[[
+    <Property value="GcProductData.xml">
+      <Property name="ID" value="B_STORM_CRYSTAL" />
+      <Property name="Name" value="UI_STORMCRYSTAL_NAME" />
+      <Property name="NameLower" value="UI_STORMCRYSTAL_NAME_L" />
+      <Property name="Subtitle" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_STORMCRYSTAL_SUB" />
+      </Property>
+      <Property name="Description" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_STORMCRYSTAL_DESC" />
+      </Property>
+      <Property name="Hint" value="" />
+      <Property name="GroupID" value="" />
+      <Property name="DebrisFile" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="BaseValue" value="206000" />
+      <Property name="Level" value="0" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STORMCRYSTAL.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="HeroIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0" />
+        <Property name="G" value="0" />
+        <Property name="B" value="0.9" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="Category" value="GcRealitySubstanceCategory.xml">
+        <Property name="SubstanceCategory" value="Exotic" />
+      </Property>
+      <Property name="Type" value="GcProductCategory.xml">
+        <Property name="ProductCategory" value="Curiosity" />
+      </Property>
+      <Property name="Rarity" value="GcRarity.xml">
+        <Property name="Rarity" value="Rare" />
+      </Property>
+      <Property name="Legality" value="GcLegality.xml">
+        <Property name="Legality" value="Legal" />
+      </Property>
+      <Property name="Consumable" value="True" />
+      <Property name="ChargeValue" value="0" />
+      <Property name="StackMultiplier" value="1" />
+      <Property name="DefaultCraftAmount" value="1" />
+      <Property name="CraftAmountStepSize" value="1" />
+      <Property name="CraftAmountMultiplier" value="1" />
+      <Property name="Requirements" />
+      <Property name="AltRequirements" />
+      <Property name="Cost" value="GcItemPriceModifiers.xml">
+        <Property name="SpaceStationMarkup" value="0" />
+        <Property name="LowPriceMod" value="0" />
+        <Property name="HighPriceMod" value="0.05" />
+        <Property name="BuyBaseMarkup" value="0.2" />
+        <Property name="BuyMarkupMod" value="0" />
+      </Property>
+      <Property name="RecipeCost" value="1" />
+      <Property name="SpecificChargeOnly" value="False" />
+      <Property name="NormalisedValueOnWorld" value="0.013535193" />
+      <Property name="NormalisedValueOffWorld" value="0.013535193" />
+      <Property name="TradeCategory" value="GcTradeCategory.xml">
+        <Property name="TradeCategory" value="None" />
+      </Property>
+      <Property name="WikiCategory" value="Curio" />
+      <Property name="IsCraftable" value="False" />
+      <Property name="DeploysInto" value="" />
+      <Property name="EconomyInfluenceMultiplier" value="0" />
+      <Property name="PinObjective" value="UI_FIND_OBJ" />
+      <Property name="PinObjectiveTip" value="UI_PIN_STORM_CRYSTAL_OBJ_TIP" />
+      <Property name="CookingIngredient" value="False" />
+      <Property name="CookingValue" value="0" />
+      <Property name="GoodForSelling" value="True" />
+      <Property name="GiveRewardOnSpecialPurchase" value="" />
+      <Property name="EggModifierIngredient" value="True" />
+      <Property name="IsTechbox" value="False" />
+    </Property>
+]]
+
+GLITCHMAT = 
+[[
+    <Property value="GcProductData.xml">
+      <Property name="ID" value="GLITCHMAT" />
+      <Property name="Name" value="UI_BUILD_GRID_GLITCHES" />
+      <Property name="NameLower" value="UI_HEX_CORE_SUB" />
+      <Property name="Subtitle" value="VariableSizeString.xml">
+        <Property name="Value" value="BLD_GLITCHPROP_SUBTITLE" />
+      </Property>
+      <Property name="Description" value="VariableSizeString.xml">
+        <Property name="Value" value="BLD_GLITCHPROP_DESCRIPTION" />
+      </Property>
+      <Property name="Hint" value="" />
+      <Property name="GroupID" value="" />
+      <Property name="DebrisFile" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="BaseValue" value="250000" />
+      <Property name="Level" value="0" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PROCTECH/ROGUETECH.GENERAL.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="HeroIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0.1" />
+        <Property name="G" value="0.1" />
+        <Property name="B" value="0.1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="Category" value="GcRealitySubstanceCategory.xml">
+        <Property name="SubstanceCategory" value="Exotic" />
+      </Property>
+      <Property name="Type" value="GcProductCategory.xml">
+        <Property name="ProductCategory" value="Curiosity" />
+      </Property>
+      <Property name="Rarity" value="GcRarity.xml">
+        <Property name="Rarity" value="Rare" />
+      </Property>
+      <Property name="Legality" value="GcLegality.xml">
+        <Property name="Legality" value="Illegal" />
+      </Property>
+      <Property name="Consumable" value="True" />
+      <Property name="ChargeValue" value="0" />
+      <Property name="StackMultiplier" value="1" />
+      <Property name="DefaultCraftAmount" value="1" />
+      <Property name="CraftAmountStepSize" value="1" />
+      <Property name="CraftAmountMultiplier" value="1" />
+      <Property name="Requirements" />
+      <Property name="AltRequirements" />
+      <Property name="Cost" value="GcItemPriceModifiers.xml">
+        <Property name="SpaceStationMarkup" value="0" />
+        <Property name="LowPriceMod" value="0" />
+        <Property name="HighPriceMod" value="0.05" />
+        <Property name="BuyBaseMarkup" value="0.2" />
+        <Property name="BuyMarkupMod" value="0" />
+      </Property>
+      <Property name="RecipeCost" value="1" />
+      <Property name="SpecificChargeOnly" value="False" />
+      <Property name="NormalisedValueOnWorld" value="0.013535193" />
+      <Property name="NormalisedValueOffWorld" value="0.013535193" />
+      <Property name="TradeCategory" value="GcTradeCategory.xml">
+        <Property name="TradeCategory" value="None" />
+      </Property>
+      <Property name="WikiCategory" value="Curio" />
+      <Property name="IsCraftable" value="False" />
+      <Property name="DeploysInto" value="" />
+      <Property name="EconomyInfluenceMultiplier" value="0" />
+      <Property name="PinObjective" value="" />
+      <Property name="PinObjectiveTip" value="" />
+      <Property name="CookingIngredient" value="False" />
+      <Property name="CookingValue" value="0" />
+      <Property name="GoodForSelling" value="True" />
+      <Property name="GiveRewardOnSpecialPurchase" value="" />
+      <Property name="EggModifierIngredient" value="True" />
+      <Property name="IsTechbox" value="False" />
+    </Property>
+]]
+
+LushSwampTech =
 [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="UT_SUPER_WATER" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Toxic"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_TOX"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+ToxicTech =
 [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="UT_SUPER_TOX" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Scorched"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_HOT"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+ScorchedLavaTech =
 [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="UT_SUPER_HOT" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Radioactive"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_RAD"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+RadioTech =
 [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="UT_SUPER_RAD" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Frozen"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_COLD"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+FrozenTech =
 [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="UT_SUPER_COLD" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Red"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_BOLT"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+RedTech =
 [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="UT_SUPER_ENERGY" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Green"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_BOLT"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+GreenTech =
 [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="UT_SUPER_JET" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Blue"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_MIDAIR"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+BlueTech =
 [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SUPER_HDRIVE" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Swamp"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_BOLT"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
-[[
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="UT_SUPER_WATER" />
-        </Property>
-]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE", 
-							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops","Lava"},
-							["SPECIAL_KEY_WORDS"] = {"Value","UT_BOLT"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
-[[
-        <Property value="NMSString0x10.xml">
-          <Property name="Value" value="UT_SUPER_HOT" />
-        </Property>
-]]
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\MISSIONS\FLEETMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"MissionID","FRE_WARP_FIX"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+
+MissionScripts =
 [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="ANIMALBONUS" />
@@ -1698,7 +1623,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="50" />
                   <Property name="AmountMax" value="50" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -1720,7 +1644,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="150" />
                   <Property name="AmountMax" value="150" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -1742,7 +1665,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="250" />
                   <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -1764,7 +1686,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="250" />
                   <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -1786,7 +1707,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="100" />
                   <Property name="AmountMax" value="100" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -1808,7 +1728,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="50" />
                   <Property name="AmountMax" value="50" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -1830,7 +1749,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="50" />
                   <Property name="AmountMax" value="50" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -1840,7 +1758,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Costs" />
       <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
         <Property name="ConditionTest" value="AnyFalse" />
@@ -1854,7 +1772,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceDiscover.xml">
             <Property name="Message" value="" />
             <Property name="PerPlanet" value="False" />
@@ -1865,7 +1783,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -1929,11 +1847,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Red" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="R_ANIBONUS" />
@@ -1943,11 +1861,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -2011,11 +1929,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Green" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="G_ANIBONUS" />
@@ -2025,11 +1943,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -2093,11 +2011,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Blue" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="B_ANIBONUS" />
@@ -2107,11 +2025,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -2173,11 +2091,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property value="GcMissionConditionAbandonedOrEmptySystem.xml">
                 <Property name="MissionSystemType" value="Empty" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="UNC_ANIBONUS" />
@@ -2187,11 +2105,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -2259,11 +2177,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="IgnoreStormIfInShip" value="False" />
                 <Property name="AllowNonHazardExtremeIfNoStorms" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="EXT_ANIBONUS" />
@@ -2273,11 +2191,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
-        </Property>
+		</Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -2354,11 +2272,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property name="AnyInfested" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="EXO_ANIBONUS" />
@@ -2368,11 +2286,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -2437,11 +2355,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property name="AnyInfested" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="WRD_ANIBONUS" />
@@ -2451,7 +2369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
       </Property>
@@ -2593,7 +2511,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Costs" />
       <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
         <Property name="ConditionTest" value="AnyFalse" />
@@ -2607,7 +2525,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceWaitForStat.xml">
             <Property name="Message" value="" />
             <Property name="Stat" value="BLACKHOLE_WARPS" />
@@ -2617,7 +2535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceWait.xml">
             <Property name="Time" value="7.5" />
             <Property name="DebugText" value="wait" />
@@ -2626,7 +2544,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -2691,11 +2609,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="OverrideZeroSeed" value="True" />
                 <Property name="OverrideMissionSeedWithRandomSeed" value="True" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceAudioEvent.xml">
                   <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                     <Property name="AkEvent" value="MUS_STORYMODE_MUSICCUE_06_LP" />
@@ -2704,7 +2622,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceWait.xml">
                   <Property name="Time" value="3" />
                   <Property name="DebugText" value="wait" />
@@ -2713,7 +2631,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="R_WMODE" />
@@ -2724,7 +2642,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceWait.xml">
                   <Property name="Time" value="12" />
                   <Property name="DebugText" value="wait" />
@@ -2733,7 +2651,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceAudioEvent.xml">
                   <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
                     <Property name="AkEvent" value="MUS_STORYMODE_MUSICCUE_06_LP_STOP" />
@@ -2741,7 +2659,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="stop music" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
       </Property>
@@ -2876,7 +2794,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="50" />
                   <Property name="AmountMax" value="50" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -2886,7 +2803,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Costs" />
       <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
         <Property name="ConditionTest" value="AnyFalse" />
@@ -2900,7 +2817,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceWaitForStat.xml">
             <Property name="Message" value="" />
             <Property name="Stat" value="GRAVBALLS" />
@@ -2910,7 +2827,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="" />
             <Property name="Reward" value="GBALL_NANITES" />
@@ -3052,7 +2969,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="15" />
                   <Property name="AmountMax" value="15" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -3074,7 +2990,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="30" />
                   <Property name="AmountMax" value="30" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -3096,7 +3011,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="75" />
                   <Property name="AmountMax" value="75" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -3118,7 +3032,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="75" />
                   <Property name="AmountMax" value="75" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -3140,7 +3053,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="25" />
                   <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -3162,7 +3074,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="15" />
                   <Property name="AmountMax" value="15" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -3184,7 +3095,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="15" />
                   <Property name="AmountMax" value="15" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -3194,7 +3104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Costs" />
       <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
         <Property name="ConditionTest" value="AnyFalse" />
@@ -3208,7 +3118,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceDiscover.xml">
             <Property name="Message" value="" />
             <Property name="PerPlanet" value="False" />
@@ -3219,7 +3129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -3283,11 +3193,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Red" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="R_MINBONUS" />
@@ -3297,11 +3207,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -3365,11 +3275,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Green" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="G_MINBONUS" />
@@ -3379,11 +3289,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -3447,11 +3357,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Blue" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="B_MINBONUS" />
@@ -3461,11 +3371,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -3527,11 +3437,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property value="GcMissionConditionAbandonedOrEmptySystem.xml">
                 <Property name="MissionSystemType" value="Empty" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="UNC_MINBONUS" />
@@ -3541,11 +3451,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -3613,11 +3523,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="IgnoreStormIfInShip" value="False" />
                 <Property name="AllowNonHazardExtremeIfNoStorms" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="EXT_MINBONUS" />
@@ -3627,11 +3537,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
-        </Property>
+		</Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -3708,11 +3618,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property name="AnyInfested" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="EXO_MINBONUS" />
@@ -3722,11 +3632,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -3791,11 +3701,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property name="AnyInfested" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="WRD_MINBONUS" />
@@ -3805,7 +3715,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
       </Property>
@@ -3954,7 +3864,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Costs" />
       <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
         <Property name="ConditionTest" value="AnyFalse" />
@@ -3968,7 +3878,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceKill.xml">
             <Property name="Message" value="" />
             <Property name="KillTarget" value="Fiends" />
@@ -3978,7 +3888,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -4040,11 +3950,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property value="GcMissionConditionAbandonedOrEmptySystem.xml">
                 <Property name="MissionSystemType" value="Abandoned" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="MOLD" />
@@ -4054,7 +3964,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give runaway mold" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
       </Property>
@@ -4189,7 +4099,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="25" />
                   <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -4211,7 +4120,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="75" />
                   <Property name="AmountMax" value="75" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -4233,7 +4141,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="125" />
                   <Property name="AmountMax" value="125" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -4255,7 +4162,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="125" />
                   <Property name="AmountMax" value="125" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -4277,7 +4183,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="50" />
                   <Property name="AmountMax" value="50" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -4299,7 +4204,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="25" />
                   <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -4321,7 +4225,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="25" />
                   <Property name="AmountMax" value="25" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -4331,7 +4234,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Costs" />
       <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
         <Property name="ConditionTest" value="AnyFalse" />
@@ -4345,7 +4248,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceDiscover.xml">
             <Property name="Message" value="" />
             <Property name="PerPlanet" value="False" />
@@ -4356,7 +4259,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -4420,11 +4323,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Red" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="R_PLABONUS" />
@@ -4434,11 +4337,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -4502,11 +4405,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Green" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="G_PLABONUS" />
@@ -4516,11 +4419,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -4584,11 +4487,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Blue" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="B_PLABONUS" />
@@ -4598,11 +4501,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -4664,11 +4567,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property value="GcMissionConditionAbandonedOrEmptySystem.xml">
                 <Property name="MissionSystemType" value="Empty" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="UNC_PLABONUS" />
@@ -4678,11 +4581,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -4750,11 +4653,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="IgnoreStormIfInShip" value="False" />
                 <Property name="AllowNonHazardExtremeIfNoStorms" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="EXT_PLABONUS" />
@@ -4764,11 +4667,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
-        </Property>
+		</Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -4845,11 +4748,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property name="AnyInfested" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="EXO_PLABONUS" />
@@ -4859,11 +4762,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -4928,11 +4831,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property name="AnyInfested" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="WRD_PLABONUS" />
@@ -4942,7 +4845,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
       </Property>
@@ -5177,7 +5080,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Costs" />
       <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
         <Property name="ConditionTest" value="AnyFalse" />
@@ -5191,7 +5094,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceWaitForStat.xml">
             <Property name="Message" value="" />
             <Property name="Stat" value="STORM_CRYSTALS" />
@@ -5201,7 +5104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -5265,11 +5168,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Yellow" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="CRYSTAL" />
@@ -5279,11 +5182,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give crystal" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -5347,11 +5250,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Red" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="R_CRYSTAL" />
@@ -5361,11 +5264,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give crystal" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -5429,11 +5332,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Green" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="G_CRYSTAL" />
@@ -5443,11 +5346,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give crystal" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -5511,11 +5414,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Blue" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="B_CRYSTAL" />
@@ -5525,7 +5428,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give crystal" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
       </Property>
@@ -5660,7 +5563,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="600" />
                   <Property name="AmountMax" value="600" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -5682,7 +5584,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="300" />
                   <Property name="AmountMax" value="300" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -5704,7 +5605,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="400" />
                   <Property name="AmountMax" value="400" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -5726,7 +5626,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="250" />
                   <Property name="AmountMax" value="250" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -5748,7 +5647,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="100" />
                   <Property name="AmountMax" value="100" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -5770,7 +5668,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Reward" value="GcRewardMoney.xml">
                   <Property name="AmountMin" value="100" />
                   <Property name="AmountMax" value="100" />
-                  <Property name="RoundNumber" value="False" />
                   <Property name="Currency" value="GcCurrency.xml">
                     <Property name="Currency" value="Nanites" />
                   </Property>
@@ -5780,7 +5677,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Costs" />
       <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
         <Property name="ConditionTest" value="AnyFalse" />
@@ -5794,7 +5691,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceWaitForStat.xml">
             <Property name="Message" value="" />
             <Property name="Stat" value="DISC_WAYPOINTS" />
@@ -5804,7 +5701,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceWait.xml">
             <Property name="Time" value="5" />
             <Property name="DebugText" value="wait" />
@@ -5813,7 +5710,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -5877,11 +5774,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Red" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="R_WPBONUS" />
@@ -5891,11 +5788,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -5959,11 +5856,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Green" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="G_WPBONUS" />
@@ -5973,11 +5870,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -6041,11 +5938,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="GalaxyStarType" value="Blue" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="B_WPBONUS" />
@@ -6055,11 +5952,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -6127,11 +6024,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="IgnoreStormIfInShip" value="False" />
                 <Property name="AllowNonHazardExtremeIfNoStorms" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="EXT_WPBONUS" />
@@ -6141,11 +6038,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
-        </Property>
+		</Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -6222,11 +6119,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property name="AnyInfested" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="EXO_WPBONUS" />
@@ -6236,11 +6133,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -6305,11 +6202,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
                 <Property name="AnyInfested" value="False" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceReward.xml">
                   <Property name="Message" value="" />
                   <Property name="Reward" value="WRD_WPBONUS" />
@@ -6319,7 +6216,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="DebugText" value="Give nanites" />
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
       </Property>
@@ -6819,7 +6716,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Rewards">
         <Property value="GcGenericRewardTableEntry.xml">
           <Property name="Id" value="R_WMTIMER" />
@@ -6845,7 +6742,6 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="List" value="GcRewardTableItemList.xml">
             <Property name="RewardChoice" value="GiveAll" />
             <Property name="OverrideZeroSeed" value="False" />
-            <Property name="UseInventoryChoiceOverride" value="False" />
             <Property name="List">
               <Property value="GcRewardTableItem.xml">
                 <Property name="PercentageChance" value="100" />
@@ -6886,7 +6782,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
         </Property>
-      </Property>
+	  </Property>
       <Property name="Costs" />
       <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
         <Property name="ConditionTest" value="AnyFalse" />
@@ -6900,7 +6796,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceShowMessage.xml">
             <Property name="Category" value="GcMissionCategory.xml">
               <Property name="MissionCategory" value="Mission" />
@@ -6928,7 +6824,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceReward.xml">
             <Property name="Message" value="" />
             <Property name="Reward" value="R_WMTIMER" />
@@ -6939,7 +6835,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceStartScanEvent.xml">
             <Property name="Table" value="GcScanEventTableType.xml">
               <Property name="ScanTable" value="Tutorial" />
@@ -6954,7 +6850,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceGroup.xml">
             <Property name="Silent" value="True" />
             <Property name="Icon" value="TkTextureResource.xml">
@@ -7016,11 +6912,11 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property value="GcMissionConditionMissionCompleted.xml">
                 <Property name="MissionID" value="WMODETIMER" />
               </Property>
-            </Property>
+			</Property>
             <Property name="Consequences" />
             <Property name="Stages">
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceStartScanEvent.xml">
                   <Property name="Table" value="GcScanEventTableType.xml">
                     <Property name="ScanTable" value="Tutorial" />
@@ -7035,7 +6931,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceWaitForConditions.xml">
                   <Property name="Message" value="" />
                   <Property name="ConditionTest" value="GcMissionConditionTest.xml">
@@ -7064,7 +6960,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 </Property>
               </Property>
               <Property value="GcGenericMissionStage.xml">
-                <Property name="Versions" />
+                <Property name="Versions"/>
                 <Property name="Stage" value="GcMissionSequenceGroup.xml">
                   <Property name="Silent" value="True" />
                   <Property name="Icon" value="TkTextureResource.xml">
@@ -7127,11 +7023,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                       <Property name="Event" value="SE_WEIRDPLA" />
                       <Property name="AllowInShip" value="True" />
                     </Property>
-                  </Property>
+		      	  </Property>
                   <Property name="Consequences" />
                   <Property name="Stages">
                     <Property value="GcGenericMissionStage.xml">
-                      <Property name="Versions" />
+                      <Property name="Versions"/>
                       <Property name="Stage" value="GcMissionSequenceKill.xml">
                         <Property name="Message" value="" />
                         <Property name="KillTarget" value="Creatures" />
@@ -7141,7 +7037,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
-                      <Property name="Versions" />
+                      <Property name="Versions"/>
                       <Property name="Stage" value="GcMissionSequenceGroup.xml">
                         <Property name="Silent" value="True" />
                         <Property name="Icon" value="TkTextureResource.xml">
@@ -7206,11 +7102,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                               <Property name="EqualityEnum" value="Greater" />
                             </Property>
                           </Property>
-                        </Property>
+		            	</Property>
                         <Property name="Consequences" />
                         <Property name="Stages">
                           <Property value="GcGenericMissionStage.xml">
-                            <Property name="Versions" />
+                            <Property name="Versions"/>
                             <Property name="Stage" value="GcMissionSequenceReward.xml">
                               <Property name="Message" value="" />
                               <Property name="Reward" value="THEPOPO" />
@@ -7220,11 +7116,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                               <Property name="DebugText" value="summon police" />
                             </Property>
                           </Property>
-                        </Property>
+		            	</Property>
                       </Property>
                     </Property>
                     <Property value="GcGenericMissionStage.xml">
-                      <Property name="Versions" />
+                      <Property name="Versions"/>
                       <Property name="Stage" value="GcMissionSequenceReward.xml">
                         <Property name="Message" value="" />
                         <Property name="Reward" value="R_GLITCHMAT" />
@@ -7234,10 +7130,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                         <Property name="DebugText" value="give glitch mat" />
                       </Property>
                     </Property>
-                  </Property>
+		      	  </Property>
                 </Property>
               </Property>
-            </Property>
+			</Property>
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
@@ -7255,7 +7151,7 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceShowMessage.xml">
             <Property name="Category" value="GcMissionCategory.xml">
               <Property name="MissionCategory" value="Mission" />
@@ -7415,7 +7311,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="FinalStageVersions" />
       <Property name="Stages">
         <Property value="GcGenericMissionStage.xml">
-          <Property name="Versions" />
+          <Property name="Versions"/>
           <Property name="Stage" value="GcMissionSequenceWait.xml">
             <Property name="Time" value="600" />
             <Property name="DebugText" value="wait" />
@@ -7436,10 +7332,245 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="UseSeasonTitleOverride" value="False" />
     </Property>
 ]]
+
+SuperTech = UT_SUPER_HOT..UT_SUPER_COLD..UT_SUPER_TOX..UT_SUPER_RAD
+            ..UT_SUPER_WATER..UT_SUPER_ENERGY..UT_SUPER_JET..SUPER_HDRIVE
+
+TechMats = R_STORM_CRYSTAL..G_STORM_CRYSTAL..B_STORM_CRYSTAL..GLITCHMAT
+
+NMS_MOD_DEFINITION_CONTAINER = 
+{
+  ["MOD_FILENAME"] 			= "zzz_crystalprogress_v101.pak",
+  ["MOD_AUTHOR"]			= "camus",
+  ["LUA_AUTHOR"]			= "camus",
+  ["NMS_VERSION"]			= "4.08",
+  ["MODIFICATIONS"] 		= 
+	{
+		{
+			["MBIN_CHANGE_TABLE"] = 
+			{ 
+				{
+					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",  
+					["EXML_CHANGE_TABLE"] = 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","HDRIVEBOOST1",},
+							["PRECEDING_KEY_WORDS"] = {"TECH_COMP",},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = HDRIVEBOOST1,
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","HDRIVEBOOST2",},
+							["PRECEDING_KEY_WORDS"] = {"TECH_COMP",},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = HDRIVEBOOST2,
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","HDRIVEBOOST3",},
+							["PRECEDING_KEY_WORDS"] = {"TECH_COMP",},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = HDRIVEBOOST3,
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS1",},
+							["PRECEDING_KEY_WORDS"] = {"HYPERFUEL2",},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{ "ID", "R_STORM_CRYSTAL" },
+								{ "Amount", "15" },
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS2",},
+							["PRECEDING_KEY_WORDS"] = {"HYPERFUEL2",},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{ "ID", "G_STORM_CRYSTAL" },
+								{ "Amount", "15" },
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","F_HACCESS3",},
+							["PRECEDING_KEY_WORDS"] = {"HYPERFUEL2",},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{ "ID", "B_STORM_CRYSTAL" },
+								{ "Amount", "15" },
+							},
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","T_SENTGUN",},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = SuperTech,
 						},
 					},
-				}	
-			}
-		}
-	}
+				},
+				{
+					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",  
+					["EXML_CHANGE_TABLE"] = 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"ID","FOOD_CG_HONEY",},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = TechMats,
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\DEFAULTREALITY.MBIN",  
+					["EXML_CHANGE_TABLE"] = 
+					{
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Lush","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_WATER" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = LushSwampTech,
+						},
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Toxic","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_TOX" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = ToxicTech,
+						},
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Scorched","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_HOT" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = ScorchedLavaTech,
+						},
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Radioactive","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_RAD" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = RadioTech,
+						},
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Frozen","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_COLD" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = FrozenTech,
+						},
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Red","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_BOLT" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = RedTech,
+						},
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Green","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_BOLT" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = GreenTech,
+						},
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Blue","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_MIDAIR" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = BlueTech,
+						},
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Swamp","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_BOLT" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = LushSwampTech,
+						},
+						{
+							["PRECEDING_FIRST"] = "True",
+							["PRECEDING_KEY_WORDS"] = {"PlanetTechShops",},
+							["SPECIAL_KEY_WORDS"] = {"Lava","GcTechList.xml",},
+							["WHERE_IN_SUBSECTION"] =
+							{
+								{ "Value", "UT_BOLT" },
+							},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = ScorchedLavaTech,
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\FLEETMISSIONTABLE.MBIN",  
+					["EXML_CHANGE_TABLE"] = 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"MissionID","FRE_WARP_FIX",},
+							["ADD_OPTION"] = "ADDAFTERSECTION",
+							["ADD"] = MissionScripts,
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\SENTINELHIVE\SENTINELHIVE\ENTITIES\INTERACTION.ENTITY.MBIN",  
+					["EXML_CHANGE_TABLE"] = 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"ActivationCost",},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{ "SubstanceId", "ACCESS3" },
+								{ "Cost", "1" },
+							},
+						},
+					},
+				},
+				{
+					["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\RARERESOURCE\CRYSTALS\STORMCRYSTALS\ENTITIES\STORMCRYSTALS.ENTITY.MBIN",  
+					["EXML_CHANGE_TABLE"] = 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = {"GcSimpleInteractionComponentData.xml",},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{ "Id", "" },
+							},
+						},
+					},
+				},
+			},
+		},
+	},	
 }
