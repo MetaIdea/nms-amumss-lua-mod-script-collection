@@ -1089,6 +1089,429 @@ SUPER_HDRIVE =
     </Property>
 ]]
 
+UT_SUPER_BOLT =
+[[
+    <Property value="GcTechnology.xml">
+      <Property name="ID" value="UT_SUPER_BOLT" />
+      <Property name="Group" value="" />
+      <Property name="Name" value="BOLTDMG3_NAME" />
+      <Property name="NameLower" value="BOLTDMG3_NAME_L" />
+      <Property name="Subtitle" value="VariableSizeString.xml">
+        <Property name="Value" value="BOLTDMG3_SUBTITLE" />
+      </Property>
+      <Property name="Description" value="VariableSizeString.xml">
+        <Property name="Value" value="BOLTDMG4_DESCRIPTION" />
+      </Property>
+      <Property name="Teach" value="True" />
+      <Property name="HintStart" value="" />
+      <Property name="HintEnd" value="" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.PROJECTILE1MOD.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0.050980393" />
+        <Property name="G" value="0.5058824" />
+        <Property name="B" value="0.654902" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="Level" value="1" />
+      <Property name="Chargeable" value="False" />
+      <Property name="ChargeAmount" value="100" />
+      <Property name="ChargeType" value="GcRealitySubstanceCategory.xml">
+        <Property name="SubstanceCategory" value="Earth" />
+      </Property>
+      <Property name="ChargeBy" />
+      <Property name="ChargeMultiplier" value="1" />
+      <Property name="BuildFullyCharged" value="True" />
+      <Property name="UsesAmmo" value="False" />
+      <Property name="AmmoId" value="" />
+      <Property name="PrimaryItem" value="False" />
+      <Property name="Upgrade" value="True" />
+      <Property name="Core" value="False" />
+      <Property name="RepairTech" value="False" />
+      <Property name="Procedural" value="False" />
+      <Property name="Category" value="GcTechnologyCategory.xml">
+        <Property name="TechnologyCategory" value="Weapon" />
+      </Property>
+      <Property name="Rarity" value="GcTechnologyRarity.xml">
+        <Property name="TechnologyRarity" value="VeryRare" />
+      </Property>
+      <Property name="Value" value="10" />
+      <Property name="Requirements">
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="U_BOLT4" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="3" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="R_STORM_CRYSTAL" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="15" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="EX_RED" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="500" />
+        </Property>
+      </Property>
+      <Property name="BaseStat" value="GcStatsTypes.xml">
+        <Property name="StatsType" value="Weapon_Projectile" />
+      </Property>
+      <Property name="StatBonuses">
+        <Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Weapon_Projectile_Damage" />
+          </Property>
+          <Property name="Bonus" value="100" />
+          <Property name="Level" value="4" />
+        </Property>
+        <Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Weapon_Projectile_Rate" />
+          </Property>
+          <Property name="Bonus" value="1.5" />
+          <Property name="Level" value="1" />
+        </Property>
+        <Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Weapon_Projectile_BurstCooldown" />
+          </Property>
+          <Property name="Bonus" value="0.5" />
+          <Property name="Level" value="1" />
+        </Property>
+        <Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Weapon_Projectile_ClipSize" />
+          </Property>
+          <Property name="Bonus" value="32" />
+          <Property name="Level" value="1" />
+        </Property>
+      </Property>
+      <Property name="RequiredTech" value="BOLT" />
+      <Property name="RequiredLevel" value="0" />
+      <Property name="FocusLocator" value="" />
+      <Property name="UpgradeColour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="LinkColour" value="Colour.xml">
+        <Property name="R" value="0.26666668" />
+        <Property name="G" value="0.99215686" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="RewardGroup" value="" />
+      <Property name="BaseValue" value="1" />
+      <Property name="Cost" value="GcItemPriceModifiers.xml">
+        <Property name="SpaceStationMarkup" value="0" />
+        <Property name="LowPriceMod" value="0" />
+        <Property name="HighPriceMod" value="0" />
+        <Property name="BuyBaseMarkup" value="0" />
+        <Property name="BuyMarkupMod" value="0" />
+      </Property>
+      <Property name="RequiredRank" value="1" />
+      <Property name="DispensingRace" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
+      </Property>
+      <Property name="FragmentCost" value="50000" />
+      <Property name="TechShopRarity" value="GcTechnologyRarity.xml">
+        <Property name="TechnologyRarity" value="Common" />
+      </Property>
+      <Property name="WikiEnabled" value="True" />
+      <Property name="DamagedDescription" value="VariableSizeString.xml">
+        <Property name="Value" value="" />
+      </Property>
+      <Property name="ParentTechId" value="" />
+      <Property name="IsTemplate" value="False" />
+    </Property>
+]]
+
+UT_SUPER_SHIPGUN =
+[[
+    <Property value="GcTechnology.xml">
+      <Property name="ID" value="UT_SUPER_SHIPGUN" />
+      <Property name="Group" value="" />
+      <Property name="Name" value="SHIPGDMG3_NAME" />
+      <Property name="NameLower" value="SHIPGDMG3_NAME_L" />
+      <Property name="Subtitle" value="VariableSizeString.xml">
+        <Property name="Value" value="SHIPGDMG3_SUBTITLE" />
+      </Property>
+      <Property name="Description" value="VariableSizeString.xml">
+        <Property name="Value" value="SHIPGDMG1_DESCRIPTION" />
+      </Property>
+      <Property name="Teach" value="True" />
+      <Property name="HintStart" value="" />
+      <Property name="HintEnd" value="" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/RENDER.SHIPPROJECTILE1MOD.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0.12941177" />
+        <Property name="G" value="0.46666667" />
+        <Property name="B" value="0.78431374" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="Level" value="1" />
+      <Property name="Chargeable" value="False" />
+      <Property name="ChargeAmount" value="100" />
+      <Property name="ChargeType" value="GcRealitySubstanceCategory.xml">
+        <Property name="SubstanceCategory" value="Earth" />
+      </Property>
+      <Property name="ChargeBy" />
+      <Property name="ChargeMultiplier" value="1" />
+      <Property name="BuildFullyCharged" value="True" />
+      <Property name="UsesAmmo" value="False" />
+      <Property name="AmmoId" value="" />
+      <Property name="PrimaryItem" value="False" />
+      <Property name="Upgrade" value="True" />
+      <Property name="Core" value="False" />
+      <Property name="RepairTech" value="False" />
+      <Property name="Procedural" value="False" />
+      <Property name="Category" value="GcTechnologyCategory.xml">
+        <Property name="TechnologyCategory" value="Ship" />
+      </Property>
+      <Property name="Rarity" value="GcTechnologyRarity.xml">
+        <Property name="TechnologyRarity" value="VeryRare" />
+      </Property>
+      <Property name="Value" value="50" />
+      <Property name="Requirements">
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="U_SHIPGUN4" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="3" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="G_STORM_CRYSTAL" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="15" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="EX_GREEN" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="500" />
+        </Property>
+      </Property>
+      <Property name="BaseStat" value="GcStatsTypes.xml">
+        <Property name="StatsType" value="Ship_Weapons_Guns" />
+      </Property>
+      <Property name="StatBonuses">
+        <Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Ship_Weapons_Guns_Damage" />
+          </Property>
+          <Property name="Bonus" value="200" />
+          <Property name="Level" value="4" />
+        </Property>
+        <Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Ship_Weapons_Guns_Rate" />
+          </Property>
+          <Property name="Bonus" value="2" />
+          <Property name="Level" value="1" />
+        </Property>
+        <Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Ship_Weapons_Guns_HeatTime" />
+          </Property>
+          <Property name="Bonus" value="1.5" />
+          <Property name="Level" value="1" />
+        </Property>
+        <Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Ship_Weapons_Guns_CoolTime" />
+          </Property>
+          <Property name="Bonus" value="1.5" />
+          <Property name="Level" value="1" />
+        </Property>
+      </Property>
+      <Property name="RequiredTech" value="SHIPGUN1" />
+      <Property name="RequiredLevel" value="0" />
+      <Property name="FocusLocator" value="SHOOT" />
+      <Property name="UpgradeColour" value="Colour.xml">
+        <Property name="R" value="0.015686275" />
+        <Property name="G" value="0.34901962" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="LinkColour" value="Colour.xml">
+        <Property name="R" value="0.26666668" />
+        <Property name="G" value="0.99215686" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="RewardGroup" value="" />
+      <Property name="BaseValue" value="1" />
+      <Property name="Cost" value="GcItemPriceModifiers.xml">
+        <Property name="SpaceStationMarkup" value="0" />
+        <Property name="LowPriceMod" value="0" />
+        <Property name="HighPriceMod" value="0" />
+        <Property name="BuyBaseMarkup" value="0" />
+        <Property name="BuyMarkupMod" value="0" />
+      </Property>
+      <Property name="RequiredRank" value="1" />
+      <Property name="DispensingRace" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
+      </Property>
+      <Property name="FragmentCost" value="50000" />
+      <Property name="TechShopRarity" value="GcTechnologyRarity.xml">
+        <Property name="TechnologyRarity" value="Common" />
+      </Property>
+      <Property name="WikiEnabled" value="True" />
+      <Property name="DamagedDescription" value="VariableSizeString.xml">
+        <Property name="Value" value="" />
+      </Property>
+      <Property name="ParentTechId" value="" />
+      <Property name="IsTemplate" value="False" />
+    </Property>
+]]
+
+F_MEGAWARP2 =
+[[
+    <Property value="GcTechnology.xml">
+      <Property name="ID" value="F_MEGAWARP2" />
+      <Property name="Group" value="" />
+      <Property name="Name" value="UI_FREI_MEGAWARP_NAME" />
+      <Property name="NameLower" value="UI_FREI_MEGAWARP_NAME_L" />
+      <Property name="Subtitle" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_FREI_MEGAWARP_SUB" />
+      </Property>
+      <Property name="Description" value="VariableSizeString.xml">
+        <Property name="Value" value="UI_FREI_MEGAWARP_DESC" />
+      </Property>
+      <Property name="Teach" value="True" />
+      <Property name="HintStart" value="" />
+      <Property name="HintEnd" value="" />
+      <Property name="Icon" value="TkTextureResource.xml">
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/TECHNOLOGY/TECHNOLOGY.FREIGHTER.MEGAWARP.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0.03529412" />
+        <Property name="G" value="0.36078432" />
+        <Property name="B" value="0.46666667" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="Level" value="1" />
+      <Property name="Chargeable" value="True" />
+      <Property name="ChargeAmount" value="6" />
+      <Property name="ChargeType" value="GcRealitySubstanceCategory.xml">
+        <Property name="SubstanceCategory" value="Earth" />
+      </Property>
+      <Property name="ChargeBy" />
+      <Property name="ChargeMultiplier" value="1" />
+      <Property name="BuildFullyCharged" value="True" />
+      <Property name="UsesAmmo" value="False" />
+      <Property name="AmmoId" value="" />
+      <Property name="PrimaryItem" value="True" />
+      <Property name="Upgrade" value="False" />
+      <Property name="Core" value="False" />
+      <Property name="RepairTech" value="False" />
+      <Property name="Procedural" value="False" />
+      <Property name="Category" value="GcTechnologyCategory.xml">
+        <Property name="TechnologyCategory" value="Freighter" />
+      </Property>
+      <Property name="Rarity" value="GcTechnologyRarity.xml">
+        <Property name="TechnologyRarity" value="Impossible" />
+      </Property>
+      <Property name="Value" value="50" />
+      <Property name="Requirements">
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="ULTRAPROD1" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="3" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="GLITCHMAT" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="20" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="EX_BLUE" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="2500" />
+        </Property>
+      </Property>
+      <Property name="BaseStat" value="GcStatsTypes.xml">
+        <Property name="StatsType" value="Freighter_MegaWarp" />
+      </Property>
+      <Property name="StatBonuses">
+        <Property value="GcStatsBonus.xml">
+          <Property name="Stat" value="GcStatsTypes.xml">
+            <Property name="StatsType" value="Freighter_MegaWarp" />
+          </Property>
+          <Property name="Bonus" value="1" />
+          <Property name="Level" value="4" />
+        </Property>
+      </Property>
+      <Property name="RequiredTech" value="" />
+      <Property name="RequiredLevel" value="0" />
+      <Property name="FocusLocator" value="" />
+      <Property name="UpgradeColour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="LinkColour" value="Colour.xml">
+        <Property name="R" value="0.2" />
+        <Property name="G" value="0.6" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="RewardGroup" value="" />
+      <Property name="BaseValue" value="1" />
+      <Property name="Cost" value="GcItemPriceModifiers.xml">
+        <Property name="SpaceStationMarkup" value="0" />
+        <Property name="LowPriceMod" value="0" />
+        <Property name="HighPriceMod" value="0" />
+        <Property name="BuyBaseMarkup" value="0" />
+        <Property name="BuyMarkupMod" value="0" />
+      </Property>
+      <Property name="RequiredRank" value="1" />
+      <Property name="DispensingRace" value="GcAlienRace.xml">
+        <Property name="AlienRace" value="None" />
+      </Property>
+      <Property name="FragmentCost" value="50000" />
+      <Property name="TechShopRarity" value="GcTechnologyRarity.xml">
+        <Property name="TechnologyRarity" value="Rare" />
+      </Property>
+      <Property name="WikiEnabled" value="True" />
+      <Property name="DamagedDescription" value="VariableSizeString.xml">
+        <Property name="Value" value="" />
+      </Property>
+      <Property name="ParentTechId" value="" />
+      <Property name="IsTemplate" value="False" />
+    </Property>
+]]
+
 R_STORM_CRYSTAL = 
 [[
     <Property value="GcProductData.xml">
@@ -1109,7 +1532,7 @@ R_STORM_CRYSTAL =
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
-      <Property name="BaseValue" value="206000" />
+      <Property name="BaseValue" value="309000" />
       <Property name="Level" value="0" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STORMCRYSTAL.DDS" />
@@ -1147,7 +1570,22 @@ R_STORM_CRYSTAL =
       <Property name="DefaultCraftAmount" value="1" />
       <Property name="CraftAmountStepSize" value="1" />
       <Property name="CraftAmountMultiplier" value="1" />
-      <Property name="Requirements" />
+      <Property name="Requirements">
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="EX_RED" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="250" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="STORM_CRYSTAL" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
       <Property name="AltRequirements" />
       <Property name="Cost" value="GcItemPriceModifiers.xml">
         <Property name="SpaceStationMarkup" value="0" />
@@ -1164,7 +1602,7 @@ R_STORM_CRYSTAL =
         <Property name="TradeCategory" value="None" />
       </Property>
       <Property name="WikiCategory" value="Curio" />
-      <Property name="IsCraftable" value="False" />
+      <Property name="IsCraftable" value="True" />
       <Property name="DeploysInto" value="" />
       <Property name="EconomyInfluenceMultiplier" value="0" />
       <Property name="PinObjective" value="UI_FIND_OBJ" />
@@ -1198,7 +1636,7 @@ G_STORM_CRYSTAL =
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
-      <Property name="BaseValue" value="206000" />
+      <Property name="BaseValue" value="463500" />
       <Property name="Level" value="0" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STORMCRYSTAL.DDS" />
@@ -1236,7 +1674,22 @@ G_STORM_CRYSTAL =
       <Property name="DefaultCraftAmount" value="1" />
       <Property name="CraftAmountStepSize" value="1" />
       <Property name="CraftAmountMultiplier" value="1" />
-      <Property name="Requirements" />
+      <Property name="Requirements">
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="EX_GREEN" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="250" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="STORM_CRYSTAL" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
       <Property name="AltRequirements" />
       <Property name="Cost" value="GcItemPriceModifiers.xml">
         <Property name="SpaceStationMarkup" value="0" />
@@ -1253,7 +1706,7 @@ G_STORM_CRYSTAL =
         <Property name="TradeCategory" value="None" />
       </Property>
       <Property name="WikiCategory" value="Curio" />
-      <Property name="IsCraftable" value="False" />
+      <Property name="IsCraftable" value="True" />
       <Property name="DeploysInto" value="" />
       <Property name="EconomyInfluenceMultiplier" value="0" />
       <Property name="PinObjective" value="UI_FIND_OBJ" />
@@ -1287,7 +1740,7 @@ B_STORM_CRYSTAL =
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
-      <Property name="BaseValue" value="206000" />
+      <Property name="BaseValue" value="695250" />
       <Property name="Level" value="0" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.STORMCRYSTAL.DDS" />
@@ -1325,7 +1778,22 @@ B_STORM_CRYSTAL =
       <Property name="DefaultCraftAmount" value="1" />
       <Property name="CraftAmountStepSize" value="1" />
       <Property name="CraftAmountMultiplier" value="1" />
-      <Property name="Requirements" />
+      <Property name="Requirements">
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="EX_BLUE" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="250" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="STORM_CRYSTAL" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>
       <Property name="AltRequirements" />
       <Property name="Cost" value="GcItemPriceModifiers.xml">
         <Property name="SpaceStationMarkup" value="0" />
@@ -1342,7 +1810,7 @@ B_STORM_CRYSTAL =
         <Property name="TradeCategory" value="None" />
       </Property>
       <Property name="WikiCategory" value="Curio" />
-      <Property name="IsCraftable" value="False" />
+      <Property name="IsCraftable" value="True" />
       <Property name="DeploysInto" value="" />
       <Property name="EconomyInfluenceMultiplier" value="0" />
       <Property name="PinObjective" value="UI_FIND_OBJ" />
@@ -1376,7 +1844,7 @@ GLITCHMAT =
           <Property name="ResourceID" value="0" />
         </Property>
       </Property>
-      <Property name="BaseValue" value="250000" />
+      <Property name="BaseValue" value="375000" />
       <Property name="Level" value="0" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PROCTECH/ROGUETECH.GENERAL.DDS" />
@@ -1445,6 +1913,26 @@ GLITCHMAT =
     </Property>
 ]]
 
+StormCraft = 
+[[
+      <Property name="Requirements">
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="EX_YELLOW" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Substance" />
+          </Property>
+          <Property name="Amount" value="250" />
+        </Property>
+        <Property value="GcTechnologyRequirement.xml">
+          <Property name="ID" value="VENTGEM" />
+          <Property name="Type" value="GcInventoryType.xml">
+            <Property name="InventoryType" value="Product" />
+          </Property>
+          <Property name="Amount" value="1" />
+        </Property>
+      </Property>	
+]]
+
 LushSwampTech =
 [[
         <Property value="NMSString0x10.xml">
@@ -1485,6 +1973,9 @@ RedTech =
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="UT_SUPER_ENERGY" />
         </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="UT_SUPER_BOLT" />
+        </Property>
 ]]
 
 GreenTech =
@@ -1492,12 +1983,18 @@ GreenTech =
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="UT_SUPER_JET" />
         </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="UT_SUPER_SHIPGUN" />
+        </Property>
 ]]
 
 BlueTech =
 [[
         <Property value="NMSString0x10.xml">
           <Property name="Value" value="SUPER_HDRIVE" />
+        </Property>
+        <Property value="NMSString0x10.xml">
+          <Property name="Value" value="F_MEGAWARP2" />
         </Property>
 ]]
 
@@ -2660,6 +3157,183 @@ MissionScripts =
                 </Property>
               </Property>
 			</Property>
+          </Property>
+        </Property>
+      </Property>
+      <Property name="ForcesPageHint" value="False" />
+      <Property name="ForcesBuildMenuHint" value="False" />
+      <Property name="IsProceduralAllowed" value="False" />
+      <Property name="IsRecurring" value="False" />
+      <Property name="IsLegacy" value="False" />
+      <Property name="BlocksPinning" value="False" />
+      <Property name="CanRenounce" value="False" />
+      <Property name="UseCommunityMissionForLog" value="" />
+      <Property name="TelemetryUpload" value="False" />
+      <Property name="UseSeasonTitleOverride" value="False" />
+    </Property>
+    <Property value="GcGenericMissionSequence.xml">
+      <Property name="MissionID" value="CRYSTALCRAFT" />
+      <Property name="MissionClass" value="Guide" />
+      <Property name="MissionIsCritical" value="False" />
+      <Property name="MissionObjective" value="" />
+      <Property name="MissionTitles" value="GcNumberedTextList.xml">
+        <Property name="Format" value="" />
+        <Property name="Count" value="1" />
+      </Property>
+      <Property name="MissionSubtitles" value="GcNumberedTextList.xml">
+        <Property name="Format" value="" />
+        <Property name="Count" value="1" />
+      </Property>
+      <Property name="MissionDescriptions" value="GcNumberedTextList.xml">
+        <Property name="Format" value="" />
+        <Property name="Count" value="1" />
+      </Property>
+      <Property name="MissionProcDescriptionHeader" value="GcNumberedTextList.xml">
+        <Property name="Format" value="" />
+        <Property name="Count" value="1" />
+      </Property>
+      <Property name="MissionProcDescriptionA" value="GcNumberedTextList.xml">
+        <Property name="Format" value="" />
+        <Property name="Count" value="1" />
+      </Property>
+      <Property name="MissionProcDescriptionB" value="GcNumberedTextList.xml">
+        <Property name="Format" value="" />
+        <Property name="Count" value="1" />
+      </Property>
+      <Property name="MissionProcDescriptionC" value="GcNumberedTextList.xml">
+        <Property name="Format" value="" />
+        <Property name="Count" value="1" />
+      </Property>
+      <Property name="UseScanEventDetailsInLogInfo" value="False" />
+      <Property name="MissionIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="MissionIconSelected" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="MissionIconNotSelected" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+      </Property>
+      <Property name="MissionPriority" value="0" />
+      <Property name="MissionCategory" value="GcMissionCategory.xml">
+        <Property name="MissionCategory" value="Mission" />
+      </Property>
+      <Property name="MissionPageHint" value="GcMissionPageHint.xml">
+        <Property name="MissionPageHint" value="None" />
+      </Property>
+      <Property name="MissionPageLocID" value="" />
+      <Property name="MissionBuildMenuHint" value="" />
+      <Property name="MissionHasColourOverride" value="False" />
+      <Property name="MissionColourOverride" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="BeginCheckFrequency" value="1" />
+      <Property name="DefaultItems" value="GcDefaultMissionItemsTable.xml">
+        <Property name="PrimarySubstances" />
+        <Property name="SecondarySubstances" />
+        <Property name="PrimaryProducts" />
+        <Property name="SecondaryProducts" />
+      </Property>
+      <Property name="PrefixTitle" value="True" />
+      <Property name="NextMissionHint" value="" />
+      <Property name="MessageComplete" value="Never" />
+      <Property name="MessageStart" value="Never" />
+      <Property name="MissionBoardOptions" value="GcMissionBoardOptions.xml">
+        <Property name="Type" value="GcMissionType.xml">
+          <Property name="MissionType" value="Research" />
+        </Property>
+        <Property name="Difficulty" value="GcMissionDifficulty.xml">
+          <Property name="MissionDifficulty" value="Normal" />
+        </Property>
+        <Property name="MinRank" value="0" />
+        <Property name="CloseMissionGiver" value="False" />
+        <Property name="IsGuildShopMission" value="False" />
+        <Property name="IsPlanetProcMission" value="False" />
+        <Property name="IsMultiplayerEventMission" value="False" />
+        <Property name="RewardPenaltyOnAbandon" value="" />
+        <Property name="Faction" />
+        <Property name="Weighting" value="100" />
+        <Property name="IgnoreCalculatedObjective" value="True" />
+        <Property name="MultiplayerMissionInitialWarpScanEvent" value="" />
+        <Property name="DefaultItemInitialWarpScanEvents" />
+        <Property name="DefaultItemTypeForInitialWarp" value="None" />
+        <Property name="BasePartBlueprints" />
+      </Property>
+      <Property name="AutoStart" value="AllModes" />
+      <Property name="RestartOnCompletion" value="False" />
+      <Property name="CancelSetsComplete" value="False" />
+      <Property name="Dialog" value="GcAlienPuzzleTable.xml">
+        <Property name="Table" />
+      </Property>
+      <Property name="ScanEvents" />
+      <Property name="Rewards">
+        <Property value="GcGenericRewardTableEntry.xml">
+          <Property name="Id" value="R_CRYS_PRODS" />
+          <Property name="List" value="GcRewardTableItemList.xml">
+            <Property name="RewardChoice" value="GiveAll" />
+            <Property name="OverrideZeroSeed" value="False" />
+            <Property name="UseInventoryChoiceOverride" value="False" />
+            <Property name="List">
+              <Property value="GcRewardTableItem.xml">
+                <Property name="PercentageChance" value="100" />
+                <Property name="Reward" value="GcRewardMultiSpecificProductRecipes.xml">
+                  <Property name="ProductIds">
+                    <Property value="NMSString0x10.xml">
+                      <Property name="Value" value="STORM_CRYSTAL" />
+                    </Property>
+                    <Property value="NMSString0x10.xml">
+                      <Property name="Value" value="R_STORM_CRYSTAL" />
+                    </Property>
+                    <Property value="NMSString0x10.xml">
+                      <Property name="Value" value="G_STORM_CRYSTAL" />
+                    </Property>
+                    <Property value="NMSString0x10.xml">
+                      <Property name="Value" value="B_STORM_CRYSTAL" />
+                    </Property>
+                  </Property>
+                  <Property name="DisplayProductId" value="" />
+                  <Property name="SetName" value="" />
+                  <Property name="Silent" value="True" />
+                </Property>
+                <Property name="LabelID" value="" />
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+	  </Property>
+      <Property name="Costs" />
+      <Property name="StartConditionTest" value="GcMissionConditionTest.xml">
+        <Property name="ConditionTest" value="AnyFalse" />
+      </Property>
+      <Property name="CancelConditionTest" value="GcMissionConditionTest.xml">
+        <Property name="ConditionTest" value="AnyFalse" />
+      </Property>
+      <Property name="StartIsCancel" value="False" />
+      <Property name="StartingConditions" />
+      <Property name="CancelingConditions" />
+      <Property name="FinalStageVersions" />
+      <Property name="Stages">
+        <Property value="GcGenericMissionStage.xml">
+          <Property name="Versions"/>
+          <Property name="Stage" value="GcMissionSequenceReward.xml">
+            <Property name="Message" value="" />
+            <Property name="Reward" value="R_CRYS_PRODS" />
+            <Property name="DoMissionBoardOverride" value="False" />
+            <Property name="Silent" value="True" />
+            <Property name="RewardInventoryOverride" value="None" />
+            <Property name="DebugText" value="crystal recipes" />
           </Property>
         </Property>
       </Property>
@@ -7335,12 +8009,13 @@ MissionScripts =
 
 SuperTech = UT_SUPER_HOT..UT_SUPER_COLD..UT_SUPER_TOX..UT_SUPER_RAD
             ..UT_SUPER_WATER..UT_SUPER_ENERGY..UT_SUPER_JET..SUPER_HDRIVE
+			..UT_SUPER_BOLT..UT_SUPER_SHIPGUN..F_MEGAWARP2
 
 TechMats = R_STORM_CRYSTAL..G_STORM_CRYSTAL..B_STORM_CRYSTAL..GLITCHMAT
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-  ["MOD_FILENAME"] 			= "zzz_crystalprogress_v101.pak",
+  ["MOD_FILENAME"] 			= "zzz_crystalprogress_v102.pak",
   ["MOD_AUTHOR"]			= "camus",
   ["LUA_AUTHOR"]			= "camus",
   ["NMS_VERSION"]			= "4.08",
@@ -7409,6 +8084,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",  
 					["EXML_CHANGE_TABLE"] = 
 					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","UI_STORMCRYSTAL_NAME",},
+							["REPLACE_TYPE"] 	= "RAW",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ [[<Property name="Requirements" />]], StormCraft }
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","UI_STORMCRYSTAL_NAME",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ "IsCraftable", "True" },
+							}
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"ID","FOOD_CG_HONEY",},
 							["ADD_OPTION"] = "ADDAFTERSECTION",
