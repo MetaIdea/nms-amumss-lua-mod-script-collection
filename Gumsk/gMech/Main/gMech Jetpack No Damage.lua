@@ -1,39 +1,39 @@
 Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech"
-ModNameSub = "Max"
-BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
+ModNameSub = "Jetpack No Damage"
+BaseDescription = "Mech modifications jetpack and no damage"
 GameVersion = "408"
 ModVersion = "a"
 FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
 --MECH ENTITY Animation Speeds
-	FastWalkSpeed								= 1.2		--1
-	WalkSpeed									= 1.3		--0.8
+	FastWalkSpeed								= 1			--1
+	WalkSpeed									= 0.8		--0.8
 
 --GCVEHICLEGLOBALS Mech
 	MechContrailAlpha							= 0.6		--0.6
-	MechPlayerGroundTurnSpeed					= 0.2		--0.5
-	MechJetpackTurnSpeed						= 0.3		--3
-	MechWalkToRunTimeIdle						= 0.5		--2
-	MechWalkToRunTimeSkid						= 0.1		--0.2
-	MechLandBrake								= 10		--4
-	MechJetpackLandTime							= 0.1		--0.6
+	MechPlayerGroundTurnSpeed					= 0.5		--0.5
+	MechJetpackTurnSpeed						= 0.5		--3
+	MechWalkToRunTimeIdle						= 2			--2
+	MechWalkToRunTimeSkid						= 0.2		--0.2
+	MechLandBrake								= 4			--4
+	MechJetpackLandTime							= 0.2		--0.6
 	
-	MechJetpackForce							= 100		--70
-	MechJetpackMaxSpeed							= 80		--20
-	MechJetpackMaxUpSpeed						= 80		--20
-	MechJetpackUpForce							= 160		--100
+	MechJetpackForce							= 70		--70
+	MechJetpackMaxSpeed							= 40		--20
+	MechJetpackMaxUpSpeed						= 40		--20
+	MechJetpackUpForce							= 140		--100
 	MechJetpackIgnitionForce					= 120		--120
 	MechJetpackIgnitionTime						= 0.4		--0.4
 	MechJetpackDrainRate						= 0			--0.5
+
+	MechHeadlightIntensity						= 8			--8	
+	MechTopSpeedForward							= 2			--2
+	MechTopSpeedReverse							= 15		--15 ; No effect
 	
-	MechHeadlightIntensity						= 10		--8		
-	MechTopSpeedForward							= 6			--2
-	MechTopSpeedReverse							= 8			--15 ; No effect, doesn't have reverse
-	
-	DamageTechNumHitsRequired					= 20		--20
-	
+	DamageTechNumHitsRequired					= 9999999	--20
+
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
