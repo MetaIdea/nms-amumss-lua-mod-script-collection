@@ -2,7 +2,7 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech"
 ModNameSub = "Only No Damage"
 BaseDescription = "Removes AI Combat Damage"
-GameVersion = "401"
+GameVersion = "408"
 ModVersion = "a"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 	
