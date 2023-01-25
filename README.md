@@ -23,6 +23,7 @@ Mod script authors:
 - [PyronoxOmega](https://www.nexusmods.com/nomanssky/users/26756114?tab=user+files)
 - [Lowkie](https://www.nexusmods.com/nomanssky/users/1972404?tab=user+files)
 - [Redmas](https://www.nexusmods.com/nomanssky/users/44146502?tab=user+files)
+- [Lyravega](https://www.nexusmods.com/nomanssky/users/2635811?tab=user+files)
 
 Additional mod script repos:
 - [Ignacio](https://www.nexusmods.com/nomanssky/users/5842786?tab=user+files) -> [Mod scripts](https://github.com/ignamiranda/NMS-ModScripts) / [Open Biome Extender scripts](https://github.com/ignamiranda/OpenBiomeExtender)
@@ -40,6 +41,10 @@ NMS LUA Mod Tools:
 Other NMS Mod Tools:
 - [NMSMB](https://github.com/cmkushnir/NMSModBuilder)
 - [NMSMB cs Script Repository](https://github.com/cmkushnir/NMSModBuilderContrib)
+
+Discords:
+- [NMS Modding Discord](https://discord.gg/22ZAU9H)
+- [NMS Creative and Sharing Hub](https://discord.gg/AEXcap6)
 
 Any in the form of a .zip file have additional files that need to be added by placing into ModExtraFilesToInclude in AMUMSS when the LUA is run.
 
