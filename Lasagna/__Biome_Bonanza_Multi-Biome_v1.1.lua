@@ -1,154 +1,3 @@
-				----------------------------------------------------------------------------------------------------------------------
-				-- = = = = = = = = = = = = = = = = = = = = = = = = = = GLOBAL VARS = = = = = = = = = = = = = = = = = = = = = = = = = =
-				----------------------------------------------------------------------------------------------------------------------
-
-Buildings =
-[[
-  <Property name="ExternalObjectLists">
-    <Property value="GcExternalObjectListOptions.xml">
-      <Property name="Name" value="MOUNTAIN" />
-      <Property name="ResourceHint" value="" />
-      <Property name="ResourceHintIcon" value="" />
-      <Property name="Probability" value="1" />
-      <Property name="SeasonalProbabilityOverride" value="1" />
-      <Property name="TileType" value="GcTerrainTileType.xml">
-        <Property name="TileType" value="Base" />
-      </Property>
-      <Property name="AllowLimiting" value="False" />
-      <Property name="ChooseUsingLifeLevel" value="False" />
-      <Property name="Options">
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/2CLAWS.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/GUNTOWER.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/FATTOWER.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/RINGA.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/SHIELD.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/FORK.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/BEACON.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/PYRAMID.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/RADAR.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/OUTPOST.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/TALLFIN.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/RINGB.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/2CLAWSB.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/VANILLA.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/MUSHROOM.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/SPHERE.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/SWORD.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/TRIPOD.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/2CLAWSx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/GUNTOWERx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/FATTOWERx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/RINGAx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/SHIELDx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/FORKx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/BEACONx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/PYRAMIDx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/RADARx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/OUTPOSTx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/TALLFINx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/RINGBx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/2CLAWSBx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/VANILLAx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/MUSHROOMx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/SPHEREx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/SWORDx8.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MSSP_CONSTRUCTS/TRIPODx8.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-  </Property>
-]]
-
-
-
-
-
-
-
-
-
---Script:
-
-
-
-
-
-
-
-
-
-
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -4879,11 +4728,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
-						},
 					}
 				},
 				----------------------------------------------------------------------------------------------------------------------
@@ -5706,11 +5550,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{						
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
 						},
 					}
 				},
@@ -6546,11 +6385,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
-						},
 					}
 				},
 				----------------------------------------------------------------------------------------------------------------------
@@ -7376,11 +7210,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{						
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
 						},
 					}
 				},
@@ -8259,11 +8088,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
-						},
 						-- {
 							-- ["REPLACE_TYPE"] 		= "", 
 							-- ["VALUE_MATCH"] 		= "True",
@@ -8848,11 +8672,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
-						},
 					}
 				},
 				----------------------------------------------------------------------------------------------------------------------
@@ -9384,11 +9203,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{						
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
 						},
 						{
 							["REPLACE_TYPE"] 		= "", 
@@ -10213,11 +10027,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
-						},
-						{
 							["REPLACE_TYPE"] 		= "", 
 							["VALUE_MATCH"] 		= "True",
 							["VALUE_CHANGE_TABLE"] 	= 
@@ -10967,11 +10776,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
-						},
 					}
 				},
 				----------------------------------------------------------------------------------------------------------------------
@@ -11532,11 +11336,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{						
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
 						},
 					}
 				},
@@ -12188,11 +11987,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
-						},
 					} 
 				},
 				----------------------------------------------------------------------------------------------------------------------
@@ -12223,11 +12017,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{						
 								{ "Probability",	"1" } --v1.1: Changed back to 1
 							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MAIN",},
-							["LINE_OFFSET"] = "-3",
-							["ADD"] = Buildings,
 						},
 					}
 				},
