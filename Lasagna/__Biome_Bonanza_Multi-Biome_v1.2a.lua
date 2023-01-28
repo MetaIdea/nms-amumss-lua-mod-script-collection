@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "___ZPatch_Biome_Bonanza_v1.1.pak",
+["MOD_FILENAME"] 			= "___ZPatch_Biome_Bonanza_v1.2.pak",
 ["MOD_AUTHOR"]				= "AGP - with trevix code (LUA by Babscoole)",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -1836,6 +1836,102 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -2812,6 +2908,102 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AllowLimiting" value="False" />
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
@@ -3919,6 +4111,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] =
 [[
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -4750,6 +5038,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] =
 [[
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -5572,6 +5956,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 							["ADD"] =
 [[
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
@@ -6407,6 +6887,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] =
 [[
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -7229,6 +7805,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 							["ADD"] =
 [[
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
@@ -8115,6 +8787,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] =
 [[
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -8691,6 +9459,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] =
 [[
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -9230,6 +10094,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 							["ADD"] =
 [[
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
@@ -10053,6 +11013,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] =
 [[
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -10795,6 +11851,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["ADD"] =
 [[
 		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
 		<Property value="NMSString0x80.xml">
@@ -11368,6 +12520,102 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 							["ADD"] =
 [[
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/FROZENHQOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMAOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHROOMBOBJECTS.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/RADIOACTIVEOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHEDOBJECTSMID.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/SCORCHBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICBIGPROPSOBJECTSFULL.MBIN" />
+        </Property>
+		<Property value="NMSString0x80.xml">
+          <Property name="Value" value="CUSTOMBIOMES/SHAIDAK_REGENERATION/TOXICOBJECTSMID.MBIN" />
+        </Property>
 		<Property value="NMSString0x80.xml">
           <Property name="Value" value="CUSTOMBIOMES/UNUSED/GHOSTLYPEPPORY1.MBIN" />
         </Property>
