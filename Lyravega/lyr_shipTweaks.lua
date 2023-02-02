@@ -1,199 +1,76 @@
-local lyr = {tweakStates = {}, tweakTables = {}, ignore = "IGNORE"}
 local batchPakName = "_lyr_allTweaks.pak"	-- unless this line is removed, AMUMSS will combine the mods in this file
-local modDescription = [[Lyravega's Ship Tweaks 1.5]]
-local gameVersion = "4.06"
+local modDescription = [[Lyravega's Ship Tweaks 1.6]]
+local gameVersion = "4.07"
 
---[[
-	Below in the 'lyr.tweakStates' table are modification names and what they do is commented next to them
+--[=============================================================================================================================[
+	Every Lua script of mine requires 'lyr_methods.lua' to be located in the 'ModScripts\ModHelperScripts\' folder
+	Otherwise none of them will work. Make sure that file is located there before using my scripts
+
+	Below in the 'tweakStates' table are modification names and what they do is commented next to them
 	Some modifications may be disabled by default; the double dashes '--' at the beginning of a line will cause it to get ignored
 
 	Ways to disable a modification: 
 		• RECOMMENDED: Add double dashes at the beginning of the line / ex: '--modification =...'
 		• Set the value of the modification to false / ex: 'modification = false,'
-		• Delete the line
-		
-	Ways to (re)enable a modification:
-		• Remove double dashes at the beginning of the line
-		• Set the value of the modification to true / its original
-]]
+		• Use the 'lyr_tweakOverrides.txt' file and disable modifications from there
 
-lyr.tweakStates = {
+	Ways to (re)enable a modification:
+		• RECOMMENDED: Remove double dashes at the beginning of the line
+		• Set the value of the modification to its original value
+		• Use the 'lyr_tweakOverrides.txt' file and enable / change modifications from there
+
+	Depending on their function and/or relevance, some modifications may have duplicates in my other scripts
+	The third option for enabling / disabling modifications through 'lyr_tweakOverrides.txt' file will affect all
+--]=============================================================================================================================]
+
+local tweakStates = {
 	glareNuker = true,						-- removes the glare from ship displays and a few other vehicle / ship related areas
 	clearScreens = true,					-- cleans vehicle & ship screens up; removes flicker and wave effects
+	clearRadar = true,						-- removes the grain (dithering) effect from the space map, and makes the halos around it less obvious
 	bioshipCleanCanopy = true,				-- removes the green hazy hue from sides of the bioship canopies
 	bioshipNoSmoke = true,					-- the bioship nostrils (that puff a smoke inside the cockpit from time to time) are removed
-	looterExplorer = true,					-- ship loot collection distance is massively increased
-	improvedShipScannerPulse = true,		-- halves the ship scanner pulse cooldown, boosts max icon range, displays more results
-	superShipScannerPulse = true,			-- yields lots of results that are normally not available to ship scanners, dependant on 'improvedShipScannerPulse'
-	noAsteroidsOnScanner = true,			-- hides rich asteroids from ship scanner pulse
-	distantItemTeleporter = true,			-- increases the ship teleporter upgrade range
-	shipSpeedMult = 1.25,					-- ship top speeds in all conditions are multiplied by the given value
-	spaceDustCleaner = true,				-- reduces the amount and the visibility of the particle effects during boosting / using pulse drive
+	noShipMuzzleFlashes = true,				-- removes muzzle flashes from ship weapons
+	spaceDustCleaner = true,				-- reduces the amount and the visibility of the particle effects generated during boosting / using pulse drive
 	noSpeedTunnel = true,					-- removes the speed tunnel effect from ships, pairs nicely with 'spaceDustCleaner'
+	itemTeleporterRange = 1000,				-- ship item teleporter tech bonus is set to given value (set it to something higher if needed)
+	bioshipItemTeleporter = true,			-- adds item teleporter functionality to "Wormhole Brain" organic tech (affected by 'itemTeleporterRange' option)
+	shipAndVehicleInventoryRange = 250,		-- ship and vehicle inventory access range is set to the given value (item teleporter works beyond this range)
+	improvedShipScannerPulse = true,		-- increases amount of (potential) results while increases the range and decreasing the cooldown of the scanner
+	superShipScannerPulse = true,			-- shows results that are normally not available to ship scanners, requires 'improvedShipScannerPulse'
+	noAsteroidsOnScanner = true,			-- hides rich asteroids from ship scanner pulse
+	shipAtmosphereHover = true,				-- allows ship hovering in the atmospheres
+	shipSpeedMult = 1.25,					-- ship top speeds in all conditions are multiplied by the given value
+--	actualSpeedReadouts = true,				-- shows actual speeds in space and/or in combat (game multiplies the value on the speed readouts by 2 and 1.5)
 	flightRestrictionMult = 0.25,			-- some flight restrictions are eased by the given multiplier value for a more pleasant joyride
 	stoppingMarginMult = 0.75,				-- pulse drive stopping margins are multiplied by the given value (very low multipliers are not recommended)
-	shipAtmosphereHover = true,				-- allows ship hovering in the atmospheres
 	pulseDriveSpeedMult = 2.5,				-- pulse drive top speed is multiplied by the given value, it shakes the ship more and cools down faster
 	reducePulseDriveFlash = true,			-- the initial screen flash caused by the activation of pulse drive is toned down
 	preciseNavigation = true,				-- the auto-locking feature of the pulse drive now have more strict angles and ignores other player stuff
 	noPulseDriveExitDelay = true,			-- pulse drive exit delay is removed and in turn the camera zoom effect is also disabled
 	fastPulseDriveExit = true,				-- exit from pulse drive at faster speeds
---	autoStationOrient = true,				-- ship will orient towards enterances of space objects (not recommended)
---	autoEjectOnLanding = true,				-- automatically eject from the ship on landing
+--	noLandingPadRotation = true,			-- landing pads (except the freighter and nexus hangar ones) no longer rotate; may eject as soon as pad is touched
+	landingPadRotateSpeedMult = 3,			-- makes all pads rotate faster and sooner (affects the excluded ones from 'noLandingPadRotation' too)
+	dockingSpeedMult = 3,					-- dock and take off speed limits for space stations are adjusted by the given multiplier (above 3 not recommended)
+	dockingSpeedLimitOverride = 1000,		-- overrides the speed limit of 400 (doubled in space) for the docking approach (above 1000 not recommended)
+--	autoEjectOnLanding = true,				-- automatically eject from the ship on docking or landing
+	looterExplorer = true,					-- ship loot collection distance is massively increased
+	moreAnomalyDetectors = true,			-- chance of getting anomaly detectors from asteroid mining is quadrupled (2%, game default is .5%)  
+	noSolarSailSounds = true,				-- disables all solar sail sounds (that for some reason ignore volume limits or occlusion)
 }
 
----@param tweakName string
----@return boolean 
-function lyr:checkTweak(tweakName)
-	local tweakValue = self.tweakStates[tweakName]
+--#region METHODS
 
-	if tweakValue == nil then return false
-	elseif type(tweakValue) == "boolean" then return tweakValue
-	elseif type(tweakValue) == "number" then
-		if string.find(tweakName, "Mult", 1, true) ~= nil then return tweakValue > 0 and tweakValue ~= 1
-		elseif string.find(tweakName, "Time", 1, true) ~= nil then return tweakValue > 0
-		else return true end
-	else return false end
-end
+dofile("lyr_methods.lua")
 
----@param mode string
----@param ... string
----@return boolean 
-function lyr:checkTweaks(mode, ...)
-	local tweakNames = {...}
-	local breakPoint = (mode == "and" and true) or (mode == "or" and false)
-	local bp = breakPoint
+--#endregion
+-- END OF METHODS
 
-	for tweakName in next, tweakNames do
-		local tweakState = self:checkTweak(tweakName)
+--#region TWEAKS
 
-		breakPoint = (mode == "and" and (tweakState and bp)) or (mode == "or" and (tweakState or bp))
-		if breakPoint ~= bp then break end
-	end
+local glareNuker = function()
+	if not lyr:checkTweak("glareNuker") then return false end
 
-	return breakPoint
-end
-
----@param tweakName string
----@param defaultValue number
----@return number
-function lyr:useProxyMult(tweakName, defaultValue)
-	defaultValue = defaultValue or 1
-
-	local multValue = self.tweakStates[tweakName]
-
-	return self:checkTweak(tweakName) and multValue*defaultValue or defaultValue
-end
-
----@param longString string
----@return string|nil
----@return string|nil
-function lyr:parsePair(longString)
-	local t = {}
-
-	-- for w in string.gmatch(longString, "\"(%g+)\"") do t[#t+1] = w end
-	for w in string.gmatch(longString, [["(%g+)"]]) do t[#t+1] = w end
-
-	return t[1], t[2]
-end
-
-lyr.sectionOps = {
-	addSection = true,
-	addAfterSection = true,
-	copySection = true,
-	saveSection = true,
-	pasteSection = true,
-	pasteAfterSection = true,
-	removeSection = true,
-	removeLine = true,
-	replaceLine = true
-}
-
-function lyr:isSectionOp(changeTable)
-	for k in next, changeTable do if self.sectionOps[k] then return true end end
-	return false
-end
-
----@return table
-function lyr:processTweakTables()
-	local tweakTables = self.tweakTables
-	local modificationTables = {}
-
-	for _, tweakTable in next, tweakTables do if tweakTable then
-		local modificationTable = {
-			MBIN_CHANGE_TABLE = {}
-		}; local mbinChangeTables = modificationTable.MBIN_CHANGE_TABLE
-
-		for mbinPath, changeTables in pairs(tweakTable) do
-			local mbinChangeTable = {
-				MBIN_FILE_SOURCE = type(mbinPath)=="string" and mbinPath or changeTables.mbinPaths,
-				EXML_CHANGE_TABLE = {}
-			}; local exmlChangeTables = mbinChangeTable.EXML_CHANGE_TABLE
-
-			for _, changeTable in ipairs(changeTables) do if changeTable then
-				local exmlChangeTable = {
-					COMMENT = changeTable.comment or nil,
-					LINE_OFFSET = changeTable.thisLine and 0 or changeTable.lineOffset or nil,
-					SECTION_UP = changeTable.selectLevel or nil,
-					PRECEDING_KEY_WORDS = changeTable.precedingKeyWords or changeTable.precedingKeyWordsFirst or nil,
-					PRECEDING_FIRST = changeTable.precedingKeyWordsFirst and true or nil,
-					SPECIAL_KEY_WORDS = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])~="table" and changeTable.specialKeyWords or nil,
-					FOREACH_SKW_GROUP = changeTable.specialKeyWords and type(changeTable.specialKeyWords[1])=="table" and changeTable.specialKeyWords or nil,
-					WHERE_IN_SECTION = changeTable.findSections or changeTable.findSectionsWhereAllMatch or nil,
-					WHERE_IN_SUBSECTION = changeTable.findSubSections or changeTable.findAllSubSections or changeTable.findSubSectionsWhereAllMatch or changeTable.findAllSubSectionsWhereAllMatch or nil,
-					WISEC_LOP = changeTable.findSectionsWhereAllMatch and "AND" or nil,
-					WISUBSEC_LOP = changeTable.findSubSectionsWhereAllMatch and "AND" or nil,
-					WISUBSEC_OPTION = (changeTable.findAllSubSections or changeTable.findAllSubSectionsWhereAllMatch) and "ALL" or nil,
-					REPLACE_TYPE = changeTable.replaceAll and "ALL" or changeTable.replaceRaw and "RAW" or nil,
-					MATH_OPERATION = changeTable.multiply and "*" or changeTable.mathOp or nil,
-					INTEGER_TO_FLOAT = changeTable.preserveIntegers and "PRESERVE" or nil,
-					REMOVE = changeTable.removeSection and "SECTION" or changeTable.removeLine and "LINE" or nil,
-					ADD_OPTION = (changeTable.addAfterSection or changeTable.pasteAfterSection) and "ADDafterSECTION" or changeTable.replaceLine and "REPLACEatLINE" or nil,
-					ADD = (changeTable.addAfterSection or changeTable.addSection or changeTable.replaceLine) and changeTable.section or nil,
-					SECTION_SAVE_TO = changeTable.copySection or changeTable.saveSection or nil,
-					SECTION_KEEP = changeTable.saveSection and true or nil,
-					SECTION_EDIT = changeTable.editSection or nil,
-					SECTION_ADD_NAMED = changeTable.pasteSection or changeTable.pasteAfterSection or nil,
-					VALUE_MATCH = changeTable.match and changeTable.match.value or nil,
-					VALUE_MATCH_OPTIONS = changeTable.match and changeTable.match.option or nil,
-					VALUE_CHANGE_TABLE = changeTable.fields and {} or nil
-				}; local valueChangeTable = exmlChangeTable.VALUE_CHANGE_TABLE
-
-				if changeTable.fields then
-					for fieldName, fieldValue in pairs(changeTable.fields) do
-						if type(fieldValue) == "table" then
-							if fieldValue.altered ~= nil and fieldValue.altered ~= fieldValue.default then
-								table.insert(valueChangeTable, {fieldName, fieldValue.altered})
-							elseif fieldValue.multiplier and fieldValue.multiplier ~= 1 then
-								table.insert(valueChangeTable, {fieldName, changeTable.multiply and fieldValue.multiplier or fieldValue.default * fieldValue.multiplier})
-							elseif type(fieldName) == "number" then
-								table.insert(valueChangeTable, fieldValue)
-							end
-						else
-							table.insert(valueChangeTable, {fieldName, fieldValue})
-						end
-					end
-
-					valueChangeTable = #valueChangeTable > 0 and valueChangeTable or nil
-					exmlChangeTable.VALUE_CHANGE_TABLE = valueChangeTable
-				end
-
-				if valueChangeTable or self:isSectionOp(changeTable) then
-					table.insert(exmlChangeTables, exmlChangeTable)
-				end
-			end end
-
-			table.insert(mbinChangeTables, mbinChangeTable)
-		end
-
-		table.insert(modificationTables, modificationTable)
-	end	end
-
-	return modificationTables
-end
-
-lyr.tweakTables = {
-	glareNuker = lyr:checkTweak("glareNuker") and {
+	local tweak = {
 		{
 			mbinPaths = {
 				"MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA_INTERIOR/GLASS_MAT.MATERIAL.MBIN",
@@ -218,8 +95,16 @@ lyr.tweakTables = {
 				removeSection = true
 			}
 		}
-	},
-	clearScreens = lyr:checkTweak("clearScreens") and {
+	}
+
+	return tweak
+end
+
+local clearScreens = {}
+clearScreens.tweak = function()
+	if not lyr:checkTweak("clearScreens") then return false end
+
+	local tweak = {
 		{
 			mbinPaths = { -- what the fuck is this
 				"MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA_INTERIOR/MAINSCREENMAT3.MATERIAL.MBIN",
@@ -274,8 +159,124 @@ lyr.tweakTables = {
 				}
 			}
 		}
-	},
-	bioshipCleanCanopy = lyr:checkTweak("bioshipCleanCanopy") and {
+	}
+
+	return tweak
+end
+
+clearScreens.files = function()
+	if not lyr:checkTweak("clearScreens") then return false end
+
+	local files = {
+		comment = "Adding files from 'clearScreens'",
+		{[[\lyr_files\clearScreens\*.DDS]], [[\TEXTURES\UI\HUD\SPACESHIP\]]},
+	}
+
+	return files
+end
+
+local clearRadar = function()
+	if not lyr:checkTweak("clearRadar") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = [[MODELS\HUD\SPACEMAPBLACKHOLE\HORZ_MAT.MATERIAL.MBIN]],
+			discardMbin = true,
+			{
+				precedingKeyWords = "Flags",
+				copySection = true
+			}
+		},
+		{
+			mbinPaths = {
+				{[[MODELS\HUD\SPACEMAPHORIZON\HORZ_MAT.MATERIAL.MBIN]], [[LYR\MATERIALS\SPHESSMAP_TRANSLUCENT.MATERIAL.MBIN]]},
+				{[[MODELS\HUD\SPACEMAPHORIZON\HORZ_MAT.MATERIAL.MBIN]], [[LYR\MATERIALS\SPHESSMAP_ADDITIVE.MATERIAL.MBIN]]},
+			},
+			discardMbin = true,
+		},
+		{
+			mbinPaths = [[LYR\MATERIALS\SPHESSMAP_TRANSLUCENT.MATERIAL.MBIN]],
+			{
+				fields = {
+					CastShadow = {default = true, altered = false},
+					Class = {default = "Additive", altered = "Translucent"},
+					TransparencyLayerID = {default = 10, altered = 10},
+				}
+			},
+			{
+				precedingKeyWords = "Flags",
+				pasteAfterSection = true
+			},
+			{
+				precedingKeyWords = "Flags",
+				removeSection = true
+			}
+		},
+		{
+			mbinPaths = [[LYR\MATERIALS\SPHESSMAP_ADDITIVE.MATERIAL.MBIN]],
+			{
+				fields = {
+					CastShadow = {default = true, altered = false},
+					Class = {default = "Additive", altered = "Additive"},
+					TransparencyLayerID = {default = 10, altered = 10},
+				}
+			},
+			{
+				editSection = true,
+				specialKeyWords = {lyr:parsePair([[<Property name="MaterialFlag" value="_F23_TRANSLUCENT" />]])},
+				removeSection = true
+			},
+			{
+				precedingKeyWords = "Flags",
+				pasteAfterSection = true
+			},
+			{
+				precedingKeyWords = "Flags",
+				removeSection = true
+			}
+		},
+		{
+			mbinPaths = [[MODELS\HUD\SPACEMAPHORIZON.SCENE.MBIN]],
+			-- {
+			-- 	specialKeyWords = {
+			-- 		-- {lyr:parsePair([[<Property name="Name" value="Base" />]])},
+			-- 		{lyr:parsePair([[<Property name="Name" value="group7_Halo" />]])},
+			-- 		{lyr:parsePair([[<Property name="Name" value="group7_Halo5" />]])},
+			-- 		{lyr:parsePair([[<Property name="Name" value="Halo_outer3" />]])},
+			-- 	},
+			-- 	removeSection = true
+			-- },
+			{
+				specialKeyWords = {
+					-- {"Name", "Base", "Name", "MATERIAL"},
+					{"Name", "group7_Halo", "Name", "MATERIAL"},
+					{"Name", "group7_Halo5", "Name", "MATERIAL"},
+					{"Name", "Halo_outer3", "Name", "MATERIAL"},
+				},
+				fields = {
+					Value = [[LYR\MATERIALS\SPHESSMAP_TRANSLUCENT.MATERIAL.MBIN]]
+				}
+			},
+			{
+				specialKeyWords = {
+					{"Value", [[MODELS\HUD\SPACEMAPHORIZON\HORZ_MAT.MATERIAL.MBIN]]},
+					-- {"Value", [[MODELS\HUD\SPACEMAPHORIZON\HORZVAO_MAT.MATERIAL.MBIN]]},
+				},
+				fields = {
+					Value = [[LYR\MATERIALS\SPHESSMAP_ADDITIVE.MATERIAL.MBIN]]
+				},
+				replaceAll = true
+			}
+		}
+	}
+
+	return tweak
+end
+
+local bioshipCleanCanopy = function()
+	if not lyr:checkTweak("bioshipCleanCanopy") then return false end
+
+	local tweak = {
 		["MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/INTERIOR/CANOPYA_INTERIOR.SCENE.MBIN"] = {
 			{
 				specialKeyWords = {
@@ -285,8 +286,15 @@ lyr.tweakTables = {
 				removeSection = true
 			}
 		}
-	},
-	bioshipNoSmoke = lyr:checkTweak("bioshipNoSmoke") and {
+	}
+
+	return tweak
+end
+
+local bioshipNoSmoke = function()
+	if not lyr:checkTweak("bioshipNoSmoke") then return false end
+
+	local tweak = {
 		["MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/INTERIOR/CANOPYA_INTERIOR.SCENE.MBIN"] = {
 			{
 				specialKeyWords = {
@@ -295,82 +303,32 @@ lyr.tweakTables = {
 				removeSection = true
 			}
 		}
-	},
-	looterExplorer = lyr:checkTweak("looterExplorer") and {
-		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+	}
+
+	return tweak
+end
+
+local noShipMuzzleFlashes = function()
+	if not lyr:checkTweak("noShipMuzzleFlashes") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = [[GCSPACESHIPGLOBALS.GLOBAL.MBIN]],
 			{
 				fields = {
-					LootAttractDistance = {default = 120, altered = 1000},
-					LootAttractTime = {default = 0.2, altered = 1.0},
-					LootDampForce = {default = 0.5, altered = 0.5},
-					LootCollectDistance = {default = 20, altered = 100}
+					MuzzleLightIntensity = 0
 				}
 			}
 		}
-	},
-	improvedShipScannerPulse = lyr:checkTweak("improvedShipScannerPulse") and {
-		["GCBUILDINGGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					MaxIconRange = {default = 1200, altered = lyr.tweakStates.superShipScannerPulse and 100000 or 20000},
-					MinShipScanBuildings = {default = 0, altered = lyr.tweakStates.superShipScannerPulse and 6 or 4},
-					MaxShipScanBuildings = {default = 2, altered = lyr.tweakStates.superShipScannerPulse and 30 or 20}
-				}
-			}
-		},
-		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
-			{
-				precedingKeyWords = {"ShipScan"},
-				fields = {
-					ScanType = {default = "Ship", altered = lyr.tweakStates.superShipScannerPulse and "DebugPlanet" or "Ship"},
-					PulseRange = {default = 10000, altered = lyr.tweakStates.superShipScannerPulse and 100000 or 20000},
-					PulseTime = {default = 3, altered = 5},
-					PlayAudioOnMarkers = {default = true, altered = true},
-					ChargeTime = {default = 10, altered = 5}
-				}
-			}
-		}
-	},
-	noAsteroidsOnScanner = lyr:checkTweak("noAsteroidsOnScanner") and {
-		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
-			{
-				fields = {
-					AsteroidScanMaxShown = {default = 3, altered = 0},
-					AsteroidScanTime = {default = 70, altered = 0},
-					AsteroidScanRange = {default = 1000000, altered = 0}
-				}
-			}
-		}
-	},
-	distantItemTeleporter = lyr:checkTweak("distantItemTeleporter") and {
-		["METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"] = {
-			{
-				specialKeyWords = {"ID", "SHIP_TELEPORT"},
-				fields = {
-					Bonus = {default = 100, altered = 500}
-				}
-			}
-		}
-	},
-	shipSpeedMult = lyr:checkTweak("shipSpeedMult") and {
-		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
-			{
-				specialKeyWords = {
-					{"SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
-					{"PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
-					{"CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
-					{"AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"}
-				},
-				fields = {
-					MaxSpeed = lyr.tweakStates.shipSpeedMult,
-					BoostMaxSpeed = lyr.tweakStates.shipSpeedMult
-				},
-				multiply = true,
-				replaceAll = true
-			}
-		}
-	},
-	spaceDustCleaner = lyr:checkTweak("spaceDustCleaner") and {
+	}
+
+	return tweak
+end
+
+local spaceDustCleaner = function()
+	if not lyr:checkTweak("spaceDustCleaner") then return false end
+
+	local tweak = {
 		{
 			mbinPaths = {
 				"MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES.SPEEDLINE.MBIN",
@@ -391,8 +349,15 @@ lyr.tweakTables = {
 				multiply = true
 			}
 		}
-	},
-	noSpeedTunnel = lyr:checkTweak("noSpeedTunnel") and {
+	}
+
+	return tweak
+end
+
+local noSpeedTunnel = function()
+	if not lyr:checkTweak("noSpeedTunnel") then return false end
+
+	local tweak = {
 		{
 			mbinPaths = {
 				"MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA_INTERIOR.SCENE.MBIN",
@@ -408,8 +373,186 @@ lyr.tweakTables = {
 				removeSection = true
 			}
 		}
-	},
-	flightRestrictionMult = lyr:checkTweak("flightRestrictionMult") and {
+	}
+
+	return tweak
+end
+
+local itemTeleporterRange = function()
+	if not lyr:checkTweak("itemTeleporterRange") then return false end
+
+	local tweak = {
+		["METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"] = {
+			{
+				specialKeyWords = {"ID", "SHIP_TELEPORT"},
+				fields = {
+					Bonus = {default = 100, altered = math.max(100, lyr.tweakStates.itemTeleporterRange)}
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local bioshipItemTeleporter = function()
+	if not lyr:checkTweak("bioshipItemTeleporter") then return false end
+
+	local tweak = {
+		["METADATA/REALITY/TABLES/NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"] = {
+			{
+				specialKeyWords = {lyr:parsePair([[<Property name="ID" value="SHIP_TELEPORT" />]])},
+				precedingKeyWords = {"StatBonuses", "GcStatsBonus.xml"},
+				copySection = true
+			},
+			{
+				specialKeyWords = {lyr:parsePair([[<Property name="ID" value="SHIPSCAN_ALIEN" />]])},
+				precedingKeyWords = "StatBonuses",
+				pasteSection = true
+			},
+			lyr:checkTweak("itemTeleporterRange") and {
+				specialKeyWords = {lyr:parsePair([[<Property name="ID" value="SHIPSCAN_ALIEN" />]])},
+				precedingKeyWords = "StatBonuses",
+				fields = {
+					Bonus = math.max(100, lyr.tweakStates.itemTeleporterRange)
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local shipAndVehicleInventoryRange = function()
+	if not lyr:checkTweak("shipAndVehicleInventoryRange") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = [[GCGAMEPLAYGLOBALS.GLOBAL.MBIN]],
+			{
+				fields = {
+					ShipInteractRadius = {default = 50, altered = math.max(50, lyr.tweakStates.shipAndVehicleInventoryRange)}
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local improvedShipScannerPulse = function()
+	if not lyr:checkTweak("improvedShipScannerPulse") then return false end
+
+	local tweak = {
+		["GCBUILDINGGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					MinShipScanBuildings = {default = 0, altered = lyr.tweakStates.superShipScannerPulse and 8 or 4},
+					MaxShipScanBuildings = {default = 2, altered = lyr.tweakStates.superShipScannerPulse and 32 or 16}
+				}
+			}
+		},
+		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
+			{
+				precedingKeyWords = {"ShipScan"},
+				fields = {
+					ScanType = {default = "Ship", altered = lyr.tweakStates.superShipScannerPulse and "DebugPlanet" or "Ship"},
+					PulseRange = {default = 10000, altered = 25000},
+					PulseTime = {default = 3, altered = 2},
+					PlayAudioOnMarkers = {default = true, altered = true},
+					ChargeTime = {default = 10, altered = 5}
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local noAsteroidsOnScanner = function()
+	if not lyr:checkTweak("noAsteroidsOnScanner") then return false end
+
+	local tweak = {
+		["GCGAMEPLAYGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					AsteroidScanMaxShown = {default = 3, altered = 0},
+					AsteroidScanTime = {default = 70, altered = 0},
+					AsteroidScanRange = {default = 1000000, altered = 0}
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local shipAtmosphereHover = function()
+	if not lyr:checkTweak("shipAtmosphereHover") then return false end
+
+	local tweak = {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				precedingKeyWords = {"PlanetEngine"},
+				replaceAll = true,
+				fields = {
+					MinSpeed = 0.1;
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local shipSpeedMult = function()
+	if not lyr:checkTweak("shipSpeedMult") then return false end
+
+	local tweak = {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				specialKeyWords = {
+					{"SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
+					{"PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
+					{"CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+					{"AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"}
+				},
+				fields = {
+					MaxSpeed = lyr.tweakStates.shipSpeedMult,
+					BoostMaxSpeed = lyr.tweakStates.shipSpeedMult
+				},
+				multiply = true,
+				replaceAll = true
+			}
+		}
+	}
+
+	return tweak
+end
+
+local actualSpeedReadouts = function()
+	if not lyr:checkTweak("actualSpeedReadouts") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = [[GCGAMEPLAYGLOBALS.GLOBAL.MBIN]],
+			{
+				fields = {
+					SpeedReadoutMultiplier = 1,
+					SpaceSpeedReadoutMultiplier = 1,
+					CombatSpeedReadoutMultiplier = 1
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local flightRestrictionMult = function()
+	if not lyr:checkTweak("flightRestrictionMult") then return false end
+
+	local tweak = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -426,8 +569,15 @@ lyr.tweakTables = {
 				multiply = true
 			}
 		}
-	},
-	stoppingMarginMult = lyr:checkTweak("stoppingMarginMult") and {
+	}
+
+	return tweak
+end
+
+local stoppingMarginMult = function()
+	if not lyr:checkTweak("stoppingMarginMult") then return false end
+
+	local tweak = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -438,19 +588,15 @@ lyr.tweakTables = {
 				multiply = true
 			}
 		}
-	},
-	shipAtmosphereHover = lyr:checkTweak("shipAtmosphereHover") and {
-		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
-			{
-				precedingKeyWords = {"PlanetEngine"},
-				replaceAll = true,
-				fields = {
-					MinSpeed = 0.1;
-				}
-			}
-		}
-	},
-	pulseDriveSpeedMult = lyr:checkTweak("pulseDriveSpeedMult") and {
+	}
+
+	return tweak
+end
+
+local pulseDriveSpeedMult = function()
+	if not lyr:checkTweak("pulseDriveSpeedMult") then return false end
+
+	local tweak = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -461,8 +607,15 @@ lyr.tweakTables = {
 				}
 			}
 		}
-	},
-	reducePulseDriveFlash = lyr:checkTweak("reducePulseDriveFlash") and {
+	}
+
+	return tweak
+end
+
+local reducePulseDriveFlash = function()
+	if not lyr:checkTweak("reducePulseDriveFlash") then return false end
+
+	local tweak = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -472,8 +625,15 @@ lyr.tweakTables = {
 				}
 			}
 		}
-	},
-	preciseNavigation = lyr:checkTweak("preciseNavigation") and {
+	}
+
+	return tweak
+end
+
+local preciseNavigation = function()
+	if not lyr:checkTweak("preciseNavigation") then return false end
+
+	local tweak = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -486,8 +646,15 @@ lyr.tweakTables = {
 				}
 			}
 		}
-	},
-	noPulseDriveExitDelay = lyr:checkTweak("noPulseDriveExitDelay") and {
+	}
+
+	return tweak
+end
+
+local noPulseDriveExitDelay = function()
+	if not lyr:checkTweak("noPulseDriveExitDelay") then return false end
+
+	local tweak = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -495,8 +662,15 @@ lyr.tweakTables = {
 				}
 			}
 		}
-	},
-	fastPulseDriveExit = lyr:checkTweak("fastPulseDriveExit") and {
+	}
+
+	return tweak
+end
+
+local fastPulseDriveExit = function()
+	if not lyr:checkTweak("fastPulseDriveExit") then return false end
+
+	local tweak = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -505,8 +679,15 @@ lyr.tweakTables = {
 				}
 			}
 		}
-	},
-	autoStationOrient = lyr:checkTweak("autoStationOrient") and {
+	}
+
+	return tweak
+end
+
+local autoStationOrient = function()	-- deprecated
+	if not lyr:checkTweak("autoStationOrient") then return false end
+
+	local tweak = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -514,8 +695,132 @@ lyr.tweakTables = {
 				}
 			}
 		}
-	},
-	autoEjectOnLanding = lyr:checkTweak("autoEjectOnLanding") and {
+	}
+
+	return tweak
+end
+
+local noLandingPadRotation = function()
+	if not lyr:checkTweak("noLandingPadRotation") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = {
+				[[MODELS\COMMON\SPACECRAFT\COMMONPARTS\ABANDONEDPARTS\DUNGEONENTRANCE\ENTITIES\DUNGEONENTRANCE.ENTITY.MBIN]],		-- unsure
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\COMBATFRIGATE\ENTITIES\COMBATDATA.ENTITY.MBIN]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\COMMONPARTS\ENTITIES\FRIGATEDATA.ENTITY.MBIN]],		-- might be master for all frigates
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\DIPLOMATICFRIGATE\ENTITIES\DIPLOMATICDATA.ENTITY.MBIN]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\INDUSTRIALFRIGATE\ENTITIES\INDUSTRIALDATA.ENTITY.MBIN]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\SCIENCEFRIGATE\ENTITIES\SCIENCEDATA.ENTITY.MBIN]],
+				[[MODELS\COMMON\SPACECRAFT\FRIGATES\SUPPORTFRIGATE\ENTITIES\SUPPORTDATA.ENTITY.MBIN]],
+				-- [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA\ENTITIES\HANGARA.ENTITY.MBIN]],		-- freighter
+				[[MODELS\COMMON\UTILS\SPAWNERS\FAKEOUTPOST\ENTITIES\FAKEOUTPOSTDATA.ENTITY.MBIN]],		-- unsure
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGPAD\LANDINGPADTRADER\ENTITIES\LANDINGPADTRADER.ENTITY.MBIN]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGZONE\LANDINGZONE\ENTITIES\LANDINGZONE.ENTITY.MBIN]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGBEACON\ENTITIES\LANDINGZONE.ENTITY.MBIN]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGPAD\ENTITIES\LANDINGDATA.ENTITY.MBIN]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\LANDINGZONE\ENTITIES\LANDINGZONEDATA.ENTITY.MBIN]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\LANDINGZONE\LANDINGZONE\ENTITIES\LANDINGZONE.ENTITY.MBIN]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\TRADERPARTS\LANDINGPAD\ENTITIES\LANDINGPAD.ENTITY.MBIN]],
+				[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOST\ENTITIES\OUTPOST.ENTITY.MBIN]],
+				[[MODELS\SPACE\ANOMALY\ANOMALY\ENTITIES\ANOMALY.ENTITY.MBIN]],		-- hello old friend
+				[[MODELS\SPACE\ATLASSTATION\SHARED\ENTITIES\ATLASSTATION.ENTITY.MBIN]],		-- hello not a friend
+				-- [[MODELS\SPACE\NEXUS\NEXUS\ENTITIES\NEXUS.ENTITY.MBIN]],		-- nexus interior, handles after transition
+				-- [[MODELS\SPACE\NEXUS\NEXUSEXTERIOR\ENTITIES\NEXUSEXTERIOR.ENTITY.MBIN]],		-- nexus exterior, handles before transition
+				[[MODELS\SPACE\POI\PARTS\DUNGEON_ENTRANCE\ENTITIES\DUNGEONENTRANCE.ENTITY.MBIN]],		-- unsure
+				[[MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN]],		-- unsure
+				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION_ABANDONED.ENTITY.MBIN]],		-- unsure
+				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN]],		-- stations
+			},
+			{
+				precedingKeyWords = "GcOutpostComponentData.xml",
+				fields = {
+					RotateToDock = false
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local landingPadRotateSpeedMult = function()
+	if not lyr:checkTweak("landingPadRotateSpeedMult") then return false end
+
+	local tweak = {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					DockingRotateSpeed = math.max(0.25, lyr.tweakStates.landingPadRotateSpeedMult),
+				}
+			}
+		},
+		["GCAISPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					DockingRotateStartTime = {default = 1, altered = 0.1},
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local dockingSpeedMult = function()
+	if not lyr:checkTweak("dockingSpeedMult") then return false end
+
+	local multiplier = lyr.tweakStates.dockingSpeedMult
+	local tweak = {
+		{
+			mbinPaths = {
+				-- [[MODELS\COMMON\SPACECRAFT\INDUSTRIAL\ACCESSORIES\HANGARA\ENTITIES\HANGARA.ENTITY.MBIN]],
+				[[MODELS\SPACE\ANOMALY\ANOMALY\ENTITIES\ANOMALY.ENTITY.MBIN]],
+				[[MODELS\SPACE\ATLASSTATION\SHARED\ENTITIES\ATLASSTATION.ENTITY.MBIN]],
+				[[MODELS\SPACE\NEXUS\NEXUS\ENTITIES\NEXUS.ENTITY.MBIN]],
+				[[MODELS\SPACE\NEXUS\NEXUSEXTERIOR\ENTITIES\NEXUSEXTERIOR.ENTITY.MBIN]],
+				[[MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN]],
+				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION_ABANDONED.ENTITY.MBIN]],
+				[[MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN]],
+			},
+			{
+				precedingKeyWords = "GcOutpostComponentData.xml",
+				fields = {
+					ApproachRange = (1+multiplier)*0.5,	-- seems to be a switch point for landing parameters, adjustment required for stations otherwise ships overshoot
+					ApproachSpeed = multiplier,	-- max is limited by "OutpostDockMaxApproachSpeed" on "GCAISPACESHIPGLOBALS.GLOBAL.MBIN". in addition, displayed speed is doubled in space
+					TakeOffSpeed = multiplier,	-- minimum 243?
+					TakeOffBoost = (1+multiplier)*0.5,	-- immediate speed to achieve, overrides TakeOffSpeed minimum, can be used to catapult
+					PostTakeOffExtraPlayerSpeed = multiplier,
+				},
+				multiply = true
+			},
+		},
+	}
+
+	return tweak
+end
+
+local dockingSpeedLimitOverride = function()
+	if not lyr:checkTweak("dockingSpeedLimitOverride") then return false end
+
+	local tweak = {
+		{
+			mbinPaths = [[GCAISPACESHIPGLOBALS.GLOBAL.MBIN]],
+			{
+				fields = {
+					OutpostDockMaxApproachSpeed = {default = 400, altered = math.max(lyr.tweakStates.dockingSpeedLimitOverride, 100)},
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local autoEjectOnLanding = function()
+	if not lyr:checkTweak("autoEjectOnLanding") then return false end
+
+	local tweak = {
 		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
 			{
 				fields = {
@@ -524,6 +829,98 @@ lyr.tweakTables = {
 			}
 		}
 	}
+
+	return tweak
+end
+
+local looterExplorer = function()
+	if not lyr:checkTweak("looterExplorer") then return false end
+
+	local tweak = {
+		["GCSPACESHIPGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					LootAttractDistance = {default = 120, altered = 1000},
+					LootAttractTime = {default = 0.2, altered = 1.0},
+					LootDampForce = {default = 0.5, altered = 0.5},
+					LootCollectDistance = {default = 20, altered = 100}
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local moreAnomalyDetectors = function()
+	if not lyr:checkTweak("moreAnomalyDetectors") then return false end
+
+	local tweak = {
+		["GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"] = {
+			{
+				fields = {
+					RareAsteroidDataProductOdds = {default = 0.005, altered = 0.02}
+				}
+			}
+		}
+	}
+
+	return tweak
+end
+
+local noSolarSailSounds = function()
+	if not lyr:checkTweak("noSolarSailSounds") then return false end
+
+	local files = {
+		comment = "Adding files from 'noSolarSailSounds'",
+		{[[\lyr_files\noSolarSailSounds\*.WEM]], [[\AUDIO\WINDOWS\]]},
+	}
+
+	return files
+end
+
+--#endregion
+-- END OF TWEAKS
+
+lyr:checkTweakOverrides()
+
+lyr.tweakFiles = {
+	clearScreens.files,
+	noSolarSailSounds,
+}
+
+lyr.tweakTables = {
+	glareNuker,
+	clearScreens.tweak,
+	clearRadar,
+	bioshipCleanCanopy,
+	bioshipNoSmoke,
+	noShipMuzzleFlashes,
+	spaceDustCleaner,
+	noSpeedTunnel,
+	itemTeleporterRange,
+	bioshipItemTeleporter,
+	shipAndVehicleInventoryRange,
+	improvedShipScannerPulse,
+	noAsteroidsOnScanner,
+	shipAtmosphereHover,
+	shipSpeedMult,
+	actualSpeedReadouts,
+	flightRestrictionMult,
+	stoppingMarginMult,
+	pulseDriveSpeedMult,
+	reducePulseDriveFlash,
+	preciseNavigation,
+	noPulseDriveExitDelay,
+	fastPulseDriveExit,
+	autoStationOrient,	-- deprecated
+	noLandingPadRotation,
+	landingPadRotateSpeedMult,
+	dockingSpeedMult,
+	dockingSpeedLimitOverride,
+	autoEjectOnLanding,
+	looterExplorer,
+	moreAnomalyDetectors,
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -534,6 +931,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_DESCRIPTION = modDescription,
 	NMS_VERSION = gameVersion,
 	GLOBAL_INTEGER_TO_FLOAT = "FORCE",
-	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS",
+	AMUMSS_SUPPRESS_MSG = "MULTIPLE_STATEMENTS, UNUSED_VARIABLE",
+	ADD_FILES = lyr:processTweakFiles(),
 	MODIFICATIONS =	lyr:processTweakTables()
 }

@@ -1,0 +1,23 @@
+• You can add tweak names and their value here instead of altering the Lua files directly
+• Any tweak values added here will overwrite the values found in the Lua files
+• You need to set an option to 'false' to disable it; adding '--' to disable will not work from here
+• Tweak names need to match the names in Lua files, they are case sensitive. Below are examples:
+
+booleanSetting = true,				Enables 'booleanSetting'
+numericValueSetting = 2,			Sets 'numericValueSetting' to '2'
+stringValueSetting = "ENGLISH",		Sets 'stringValueSetting' to 'ENGLISH'
+
+booleanSetting = false,				Disables 'booleanSetting'
+numericValueSetting = false,		Disables 'numericValueSetting'
+stringValueSetting = false,			Disables 'stringValueSetting'
+
+--exampleSetting = true,			This will NOT disable 'exampleSetting'
+numericValueSetting = true,			This will most likely cause an error; value types needs to match
+someOtherSetting = false,			-- You can have comments and copy/paste the option line here as a whole
+
+• Purpose of this file is to provide a way to back your settings up & make them unaffected through updates
+• All tweaks except 'lyr_entityIcons' may use this file, as long as it is placed in the 'ModScripts\ModHelperScripts' folder
+• You can delete this help part, EXCEPT the line below or otherwise this file will do nothing
+
+--[[ DO NOT ALTER OR DELETE NEXT LINE // ADD YOUR OVERRIDES BELOW IT // PLACE THIS FILE IN 'MODSCRIPTS\MODHELPERSCRIPTS' FOLDER ]]--
+##OVERRIDES##
