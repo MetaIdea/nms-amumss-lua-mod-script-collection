@@ -1,8 +1,8 @@
-QUICK_ACTION_LIST = 
+QUICK_ACTION_LIST =
 {
 	"SAVE",
 	"GALACTICMAP",
-	"TOGGLE_BACKPACK", 
+	"TOGGLE_BACKPACK",
 	"REVEAL_PORTAL",
 	"HEALTH_SUIT",
 	"R_SENTINELS_OFF",
@@ -13,27 +13,27 @@ QUICK_ACTION_LIST =
 	"TOGGLE_INVISIBLE",
 	"REVEAL_RUNES",
 	"CRASHED_SHIP",
-	"WORD",	
-	"FREIGHTER_TRANS",	
+	"WORD",
+	"FREIGHTER_TRANS",
 	"SCARE_CREATURES",
 	"STOP_STORM",
-	"STORM",	
+	"STORM",
 	"POWER_STATE",
-	"R_ENABLENEXUS",	
+	"R_ENABLENEXUS",
 	"UPLOAD_BASE",
 	"DEACT_FIENDS",
 	"FREE_EXPLORE",
 	"R_CLEAR_WANTED",
 	"MIXER_WANTED",
-	"BLACK_HOLE_WARP", 
+	"BLACK_HOLE_WARP",
 	"RELIC_GATE_WARP",
 	"R_MEGAWARP",
-	"TELEPORT_BASE", 
+	"TELEPORT_BASE",
 	"CENTREJOURNEY0",
 	"CENTREJOURNEY1",
 	"CENTREJOURNEY2",
 	"CENTREJOURNEY3",
-	"CENTREJOURNEY4",	
+	"CENTREJOURNEY4",
 	--"R_NEXUS_TECH",
 	--"R_FREI_CUSTOM",
 	"TREE_BASICS",
@@ -50,18 +50,18 @@ QUICK_ACTION_LIST =
 
 USER_SEED_LIST =
 {
-	{ "POLICESHIP", "0x0" },	
+	{ "POLICESHIP", "0x0" },
 	{ "FIGHTER", "0x8E8E2193DD4A9EDA" }, --ALPHA VECTOR
 	{ "FIGHTER", "0xC4C9C1AABCA59FE6" }, --HORIZON OMEGA
 	{ "FIGHTER", "0xA547AB958C97E439" }, --RASAMAMA S36
 	{ "MULTITOOL", "0x55907B79D95B675B" }, --STARTER WEAPON
-	
+
 	-- { "FIGHTER", "0x2ed0b7e8773e6959" },
 	-- { "FIGHTER", "0x0469079B58527FAC", true },
 	-- { "FIGHTER", "0xc82dbd4a5f1f4191" },
 	-- { "FIGHTER", "0x646abde861bb4790" },
 	-- { "FIGHTER", "0x8B368967CED50C9C" },
-	
+
 	-- { "DROPSHIP", "0x100A66565DECB1C5" },
 	-- { "DROPSHIP", "0xCA26E52B0D24DC37" },
 	-- { "DROPSHIP", "0xC25A946003305CF0", true },
@@ -69,7 +69,7 @@ USER_SEED_LIST =
 	-- { "DROPSHIP", "0x71876903D4317C8D" },
 	-- { "DROPSHIP", "0x2EB67DD98452B24D", true },
 	-- { "DROPSHIP", "0xE71E296D1CAD582E" },
-	
+
 	-- { "DROPSHIP", "0x2179DE9A6801F57C" },
 	-- { "DROPSHIP", "0x46031B34A85DB726" },
 	-- { "DROPSHIP", "0x1D30478CA881BE29" },
@@ -85,7 +85,7 @@ USER_SEED_LIST =
 	-- { "DROPSHIP", "0x24B6531B41368A80" },
 	-- { "DROPSHIP", "0x96959C617F3F741C" },
 	-- { "DROPSHIP", "0xBBF7FE10647AD6BD" },
-	
+
 	-- { "DROPSHIP", "0x014E18C048F92588" },
 	-- { "DROPSHIP", "0x39ABFE3E3E4BBD39" },
 	-- { "DROPSHIP", "0xD6818C49606930E9" },
@@ -96,17 +96,58 @@ USER_SEED_LIST =
 
 	-- { "SCIENTIFIC", "0x74C41D521491C48B" },
 	-- { "SCIENTIFIC", "0xE088DFDC904C8A54" },
-	
-	-- { "EXOTIC", "0x66c2ba46dcfbf4c3" },	
+
+	-- { "EXOTIC", "0x66c2ba46dcfbf4c3" },
 	-- { "EXOTIC", "0xc688372a1012811b" },
 }
 
+PacksList =
+{
+	"Backpack",
+	"_Cape_Frigate",
+	"_Cape_Sandworm",
+	"_Cape_Jelly",
+	"_Cape_Freighter",
+	"_Cape_Infinity",
+	"_Cape_Pirate",
+	"_Cape_Atlas",
+	"_Cape_Proto",
+	"_Chest_Vanilla",
+	"_Chest_Astro",
+	"_Chest_Gek",
+	"_Chest_Fourth",
+	"_Chest_Vykeen",
+}
+
+function GetPack(Pack)
+return [[
+                <Property value="GcNodeActivationAction.xml">
+                  <Property name="NodeActiveState" value="Toggle" />
+                  <Property name="Name" value="]]..Pack..[[" />
+                  <Property name="SceneToAdd" value="" />
+                  <Property name="IncludePhysics" value="True" />
+                  <Property name="IncludeChildPhysics" value="True" />
+                  <Property name="NotifyNPC" value="False" />
+                  <Property name="UseMasterModel" value="True" />
+                  <Property name="UseLocalNode" value="False" />
+                  <Property name="RestartEmitters" value="False" />
+                  <Property name="AffectModels" value="True" />
+                </Property>
+]]
+end
+
+PACKS_ADDING_ALL = {}
+
+for i=1,#PacksList,1 do
+    table.insert(PACKS_ADDING_ALL,GetPack(PacksList[i]))
+end
+
 GENERIC_BUTTON_ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
 
-QUICK_ACTION_MENU = 
+QUICK_ACTION_MENU =
 {
 	["SAVE"] = {["TITLE"]="Save",["ICON"]="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS",["ANIM"]="SAVEGAME",
-		["ACTION_TRIGGER"] = 
+		["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -123,7 +164,7 @@ QUICK_ACTION_MENU =
               </Property>
             </Property>
 ]],
-		["COMPONENT"] = 
+		["COMPONENT"] =
 [[
     <Property value="TkReferenceComponentData.xml">
       <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/SAVE.SCENE.MBIN" />
@@ -132,14 +173,14 @@ QUICK_ACTION_MENU =
 ]]
 	},
 	["GALACTICMAP"] = {["TITLE"]="Galactic Map",["ICON"]="TEXTURES/UI/FRONTEND/GALACTICMAP/GALACTICMAP.DDS",["ANIM"]="GALACTICMAP",
-		["ACTION_TRIGGER"] = 
+		["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="GALACTICMAP" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>	
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="GALACTICMAP" />
@@ -149,7 +190,7 @@ QUICK_ACTION_MENU =
               </Property>
             </Property>
 ]],
-		["COMPONENT"] = 
+		["COMPONENT"] =
 [[
     <Property value="TkReferenceComponentData.xml">
       <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/GALACTICMAPOPTION.SCENE.MBIN" />
@@ -158,14 +199,14 @@ QUICK_ACTION_MENU =
 ]]
 	},
 	["TOGGLE_BACKPACK"] = {["TITLE"]="Toggle Backpack",["ICON"]="TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS",["ANIM"]="TOGGLE_BACKPACK",
-		["ACTION_TRIGGER"] = 
+		["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
-              </Property>	
+                <Property name="UseMissionClock" value="False" />
+              </Property>
               <Property name="Action">
                 <Property value="GcPlayAnimAction.xml">
                   <Property name="Anim" value="TOGGLE_BACKPACK" />
@@ -179,174 +220,7 @@ QUICK_ACTION_MENU =
                 <Property name="StartFromEnd" value="False" />
               </Property>
               <Property name="Action">
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="Backpack" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Cape_Frigate" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Cape_Sandworm" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Cape_Jelly" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Cape_Freighter" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />				  
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>	
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Cape_Infinity" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />				  
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>					
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Cape_Pirate" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />				  
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Cape_Atlas" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />				  
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Cape_Proto" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />				  
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>						
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Chest_Vanilla" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Chest_Astro" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Chest_Gek" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Chest_Fourth" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
-                <Property value="GcNodeActivationAction.xml">
-                  <Property name="NodeActiveState" value="Toggle" />
-                  <Property name="Name" value="_Chest_Vykeen" />
-                  <Property name="SceneToAdd" value="" />
-                  <Property name="IncludePhysics" value="True" />
-                  <Property name="IncludeChildPhysics" value="True" />
-                  <Property name="NotifyNPC" value="False" />
-                  <Property name="UseMasterModel" value="True" />
-                  <Property name="UseLocalNode" value="False" />
-                  <Property name="RestartEmitters" value="False" />
-                  <Property name="AffectModels" value="True" />
-                </Property>
+]] .. table.concat(PACKS_ADDING_ALL) .. [[
                 <Property value="GcPlayAudioAction.xml">
                   <Property name="Sound" value="Obj_Shield_Repairer_Off" />
                   <Property name="UseOcclusion" value="False" />
@@ -354,10 +228,10 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
             </Property>
-]]		
+]]
 	},
 	["TOGGLE_INVISIBLE"] = {["TITLE"]="Toggle Invisibility",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/HIDE_N_SEEK.DDS",["ANIM"]="TOGGLE_INVISIBLE",
-		["ACTION_TRIGGER"] = 
+		["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
@@ -389,7 +263,7 @@ QUICK_ACTION_MENU =
                   <Property name="UseLocalNode" value="False" />
                   <Property name="RestartEmitters" value="False" />
                   <Property name="AffectModels" value="True" />
-                </Property>	
+                </Property>
                 <Property value="GcPlayAudioAction.xml">
                   <Property name="Sound" value="Obj_Shield_Repairer_Off" />
                   <Property name="UseOcclusion" value="False" />
@@ -397,10 +271,10 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
             </Property>
-]]		
+]]
 	},
 	["TOGGLE_SHIELD"] = {["TITLE"]="Shield",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SUIT.PROTECTION.DDS",["ANIM"]="TOGGLE_SHIELD",
-		["ACTION_TRIGGER"] = 
+		["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
@@ -420,7 +294,7 @@ QUICK_ACTION_MENU =
                   <Property name="UseLocalNode" value="False" />
                   <Property name="RestartEmitters" value="False" />
                   <Property name="AffectModels" value="True" />
-                </Property>		
+                </Property>
               </Property>
             </Property>
             <Property value="GcActionTrigger.xml">
@@ -456,7 +330,7 @@ QUICK_ACTION_MENU =
                   <Property name="Shake" value="SLOWRUMBLE" />
                   <Property name="FalloffMin" value="5" />
                   <Property name="FalloffMax" value="15" />
-                </Property>		
+                </Property>
               </Property>
             </Property>
 ]],
@@ -469,14 +343,14 @@ QUICK_ACTION_MENU =
 ]]
 	},
 	["SCARE_CREATURES"] = {["TITLE"]="Scare Creatures",["ICON"]="TEXTURES/UI/HUD/EYE.CREATURE.DDS",["ANIM"]="SCARE_CREATURES",
-		["ACTION_TRIGGER"] = 
+		["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="SCARE_CREATURES" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>	
+              </Property>
               <Property name="Action">
                 <Property value="GcScareCreaturesAction.xml">
                   <Property name="HearRadius" value="21" />
@@ -487,25 +361,25 @@ QUICK_ACTION_MENU =
                   <Property name="Title" value="Creature Scare" />
                   <Property name="Subtitle1" value="" />
                   <Property name="Subtitle2" value="" />
-                </Property>				
+                </Property>
               </Property>
             </Property>
-]]		
-	},	
+]]
+	},
 	["POWER_STATE"] = {["TITLE"]="Emit Electricity (WIP)",["ICON"]="TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.STORMCRYSTALS.DDS",["ANIM"]="POWER_STATE",
-		["ACTION_TRIGGER"]= 
+		["ACTION_TRIGGER"]=
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POWER_STATE" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>	
+              </Property>
               <Property name="Action">
                 <Property value="GcPowerStateAction.xml">
                   <Property name="SetRateEnabled" value="True" />
                   <Property name="SetConnectionEnabled" value="True" />
-                </Property>			
+                </Property>
                 <Property value="GcDisplayText.xml">
                   <Property name="HUDTextDisplayType" value="Tooltip" />
                   <Property name="Title" value="Power ON" />
@@ -514,27 +388,27 @@ QUICK_ACTION_MENU =
                 </Property>
               </Property>
             </Property>
-]]		
+]]
 	},
 	["HARVEST"] = {["TITLE"] = "Harvest All",["ICON"]  = "TEXTURES/UI/HUD/ICONS/PICKUPS/PICKUP.PLANTGREEN.DDS",["ANIM"]  = "HARVEST",
-		["ACTION_TRIGGER"] = 
+		["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="HARVEST" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>	
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="HARVEST" />
                   <Property name="Broadcast" value="True" />
                   <Property name="BroadcastLevel" value="Scene" />
-                </Property>	
+                </Property>
               </Property>
             </Property>
 ]],
-		["COMPONENT"] = 
+		["COMPONENT"] =
 [[
     <Property value="TkReferenceComponentData.xml">
       <Property name="Reference" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\HARVEST.SCENE.MBIN" />
@@ -545,9 +419,9 @@ QUICK_ACTION_MENU =
 	["REVEAL_PORTAL"] = {["TITLE"]="Find Portal",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.PORTAL.DDS",["ANIM"]="REVEAL_PORTAL",["TYPE"]="REWARD"},
 	["R_SENTINELS_OFF"] = {["TITLE"]="Disable Sentinels",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.SENTINELSSILVER.DDS",["ANIM"]="R_SENTINELS_OFF",["TYPE"]="REWARD"},
 	["R_FIX_REP"] = {["TITLE"]="Reset Reputation",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/REPTOKEN.DDS",["ANIM"]="R_FIX_REP",["TYPE"]="REWARD"},
-	["WORD"] = {["TITLE"]="Learn Word",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.WORDSGOLD.DDS",["ANIM"]="WORD",["TYPE"]="REWARD"},	
+	["WORD"] = {["TITLE"]="Learn Word",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/RANK/MEDAL.WORDSGOLD.DDS",["ANIM"]="WORD",["TYPE"]="REWARD"},
 	["PLANET_FINDER"] = {["TITLE"]="Find Lush Planet",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS",["ANIM"]="PLANET_FINDER",["TYPE"]="REWARD",
-		["REWARDTABLE"] = 
+		["REWARDTABLE"] =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="PLANET_FINDER" />
@@ -564,7 +438,7 @@ QUICK_ACTION_MENU =
               <Property name="DoAerialScan" value="True" />
               <Property name="UseMissionSeedForEvent" value="False" />
               <Property name="StartDelay" value="6" />
-              <Property name="UseStartDelayWhenNoAerialScan" value="False" />				  
+              <Property name="UseStartDelayWhenNoAerialScan" value="False" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -572,7 +446,7 @@ QUICK_ACTION_MENU =
       </Property>
     </Property>
 ]],
-		["SCANEVENTTABLE"] = 
+		["SCANEVENTTABLE"] =
 [[
         <Property value="GcScanEventData.xml">
           <Property name="Name" value="PLANET_FINDER" />
@@ -586,7 +460,7 @@ QUICK_ACTION_MENU =
           <Property name="ForceBroken" value="False" />
           <Property name="ForceFixed" value="False" />
           <Property name="ForceOverridesAll" value="True" />
-          <Property name="ForceOverrideEncounter" value="" />		  
+          <Property name="ForceOverrideEncounter" value="" />
           <Property name="IsCommunityPortalOverride" value="False" />
           <Property name="ClearForcedInteractionOnCompletion" value="False" />
       	  <Property name="BuildingPreventionRadius" value="0" />
@@ -696,7 +570,7 @@ QUICK_ACTION_MENU =
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
             <Property name="NeedsExtremeHazardPlanet" value="False" />
-            <Property name="AnyBiomeNotWeirdOrDead" value="False" />	    
+            <Property name="AnyBiomeNotWeirdOrDead" value="False" />
             <Property name="AnyRGBBiome" value="False" />
             <Property name="AnyInfestedBiome" value="False"/>
             <Property name="NeedsBiome" value="True"/>
@@ -760,7 +634,7 @@ QUICK_ACTION_MENU =
 ]]
 	},
 	["CRASHED_SHIP"] = {["TITLE"]="Find Crashed Ship",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.CRASH.DDS",["ANIM"]="CRASHED_SHIP",["TYPE"]="REWARD",
-		["REWARDTABLE"] = 
+		["REWARDTABLE"] =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="CRASHED_SHIP" />
@@ -780,14 +654,14 @@ QUICK_ACTION_MENU =
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
             </Property>
             <Property name="LabelID" value="Distress" />
-          </Property>		  
+          </Property>
         </Property>
       </Property>
     </Property>
 ]]
 	},
 	["STOP_STORM"] = {["TITLE"]="Stop Storm",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANETDATA.WEATHER.DDS",["ANIM"]="STOP_STORM",["TYPE"]="REWARD",
-		["REWARDTABLE"] = 
+		["REWARDTABLE"] =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="STOP_STORM" />
@@ -810,7 +684,7 @@ QUICK_ACTION_MENU =
 	},
 	["STORM"] = {["TITLE"]="Trigger Storm",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANETDATA.WEATHER.DDS",["ANIM"]="STORM",["TYPE"]="REWARD"},
 	["UPLOAD_BASE"] = {["TITLE"]="Upload Base",["ICON"]="TEXTURES/UI/HUD/ICONS/SCANNING/BUILDING.UPLOADBASE.DDS",["ANIM"]="UPLOAD_BASE",["TYPE"]="REWARD",
-		["REWARDTABLE"] = 
+		["REWARDTABLE"] =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="UPLOAD_BASE" />
@@ -830,7 +704,7 @@ QUICK_ACTION_MENU =
 ]],
 	},
 	["DEACT_FIENDS"] = {["TITLE"]="Deactivate Fiends",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.FIEND.OFF.DDS",["ANIM"]="DEACT_FIENDS",["TYPE"]="REWARD",
-		["REWARDTABLE"] = 
+		["REWARDTABLE"] =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="DEACT_FIENDS" />
@@ -850,7 +724,7 @@ QUICK_ACTION_MENU =
 ]],
 	},
 	["HEALTH_SUIT"] = {["TITLE"]="Full Health+Suit+Stamina",["ICON"]="TEXTURES/UI/HUD/ICONS/SCANNING/PICKUP.HEALTH.DDS",["ANIM"]="HEALTH_SUIT",["TYPE"]="REWARD",
-		["REWARDTABLE"] = 
+		["REWARDTABLE"] =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="HEALTH_SUIT" />
@@ -900,43 +774,43 @@ QUICK_ACTION_MENU =
 ]],
 	},
 	["BLACK_HOLE_WARP"] = {["TITLE"]="Black Hole Warp",["ICON"]="TEXTURES/UI/HUD/ICONS/MISSIONS/MISSION.BLACKHOLE.DDS",["ANIM"]="BLACK_HOLE_WARP",
-		["ACTION_TRIGGER"] = 
+		["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="BLACK_HOLE_WARP" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>	
+              </Property>
               <Property name="Action">
                 <Property value="GcWarpAction.xml">
                   <Property name="WarpType" value="BlackHole" />
                 </Property>
               </Property>
             </Property>
-]]		
+]]
 	},
 	["RELIC_GATE_WARP"] = {["TITLE"]="Relic Gate Warp",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.WARPFIX.DDS",["ANIM"]="RELIC_GATE_WARP",
-		["ACTION_TRIGGER"] = 
+		["ACTION_TRIGGER"] =
 [[
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="RELIC_GATE_WARP" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>	
+              </Property>
               <Property name="Action">
                 <Property value="GcWarpAction.xml">
                   <Property name="WarpType" value="SpacePOI" />
                 </Property>
               </Property>
             </Property>
-]]		
+]]
 	},
 	["R_MEGAWARP"] = {["TITLE"]="MegaWarp",["ICON"]="TEXTURES\UI\FRONTEND\ICONS\TECHNOLOGY\TECHNOLOGY.FREIGHTER.MEGAWARP.DDS",["ANIM"]="R_MEGAWARP",["TYPE"]="REWARD"},
 	["TELEPORT_BASE"] = {["TITLE"]="Warp To Base",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.WARP.DDS",["ANIM"]="TELEPORT_BASE",["TYPE"]="REWARD"},
 	["CENTREJOURNEY0"] = {["TITLE"]="Switch to Next Galaxy",["ICON"]="TEXTURES/SPACE/ATLASSTATION/ENDING_1/GALAXYTEXTUREVARIANTS.WHITEGALAXY.DDS",["ANIM"]="CENTREJOURNEY0",["TYPE"]="REWARD",
-		["REWARDTABLE"] = 
+		["REWARDTABLE"] =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="CENTREJOURNEY0" />
@@ -978,11 +852,11 @@ QUICK_ACTION_MENU =
 	["REVEAL_RUNES"] = {["TITLE"]="Reveal Portal Runes",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.RUNE.DDS",["ANIM"]="REVEAL_RUNES",["TYPE"]="REWARD"},
 	["FREIGHTER_TRANS"] = {["TITLE"]="Transfer Freighter Inventory",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/CATEGORIES/INVCAT.FREIGHTER.DDS",["ANIM"]="FREIGHTER_TRANS",["TYPE"]="REWARD"},
 	["R_CLEAR_WANTED"] = {["TITLE"]="Clear Wanted Level",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/GAMEMODE/STAR.DDS",["ANIM"]="R_CLEAR_WANTED",["TYPE"]="REWARD"},
-	["MIXER_WANTED"] = {["TITLE"]="Add Wanted Level",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/GAMEMODE/STAR.DDS",["ANIM"]="MIXER_WANTED",["TYPE"]="REWARD"},	
+	["MIXER_WANTED"] = {["TITLE"]="Add Wanted Level",["ICON"]="TEXTURES/UI/FRONTEND/ICONS/GAMEMODE/STAR.DDS",["ANIM"]="MIXER_WANTED",["TYPE"]="REWARD"},
 	--[""] = { ["TITLE"]="", ["ICON"]="" , ["ANIM"]="", ["TYPE"]="REWARD" },
 }
 
-SEED_TYPE_PATH = 
+SEED_TYPE_PATH =
 {
 	["FIGHTER"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
 	["DROPSHIP"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
@@ -993,7 +867,7 @@ SEED_TYPE_PATH =
 	["SAIL"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
 	["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
 	["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
-	["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN",	
+	["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN",
 }
 
 function GetTriggerAnim(ANIM)
@@ -1217,7 +1091,7 @@ return [[
           </Property>
         </Property>
       </Property>
-    </Property> 
+    </Property>
 ]]
 end
 
@@ -1281,7 +1155,7 @@ return [[
                 <Property name="Anim" value="]] .. ANIM .. [[" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>	
+              </Property>
               <Property name="Action">
                 <Property value="GcRewardAction.xml">
                   <Property name="Reward" value="]] .. REWARDID .. [[" />
@@ -1328,7 +1202,7 @@ NEW_EMOTE_TABLE =
 for i=1,#NEW_EMOTE_TABLE,1 do
 	NEW_EMOTES_ALL = NEW_EMOTES_ALL .. GetQuickAction(NEW_EMOTE_TABLE[i]["TITLE"], NEW_EMOTE_TABLE[i]["ANIM"], NEW_EMOTE_TABLE[i]["ICON"], "True")
 	NEW_EMOTES_ALL = NEW_EMOTES_ALL .. GetQuickAction(NEW_EMOTE_TABLE[i]["TITLE"], NEW_EMOTE_TABLE[i]["ANIM"], NEW_EMOTE_TABLE[i]["ICON"], "False")
-end		
+end
 
 ANIMS                  = ""
 COMPONENTS             = ""
@@ -1340,7 +1214,7 @@ REWARDTABLE            = ""
 SCANEVENTTABLE         = ""
 ACTIONCOMPONENTS_COUNT = 0
 ACTIONCOMPONENTS_LIMIT = 28 --actually 32
-	
+
 for i=1,#QUICK_ACTION_LIST,1 do
 	print(QUICK_ACTION_LIST[i])
 	if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then
@@ -1350,10 +1224,10 @@ for i=1,#QUICK_ACTION_LIST,1 do
 		table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
 		ACTIONCOMPONENTS = ""
 	end
-	if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]] then 
+	if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]] then
 		if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"] then
 			COMPONENTS = COMPONENTS 		.. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["COMPONENT"]
-		end		
+		end
 		if QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TYPE"] == "REWARD" and not QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ACTION_TRIGGER"] then
 			ACTIONCOMPONENTS = ACTIONCOMPONENTS .. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
 		else
@@ -1369,10 +1243,10 @@ for i=1,#QUICK_ACTION_LIST,1 do
 			SCANEVENTTABLE = SCANEVENTTABLE .. QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["SCANEVENTTABLE"]
 		end
 	else --pure reward
-		ACTIONCOMPONENTS 	= ACTIONCOMPONENTS 	.. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])	
+		ACTIONCOMPONENTS 	= ACTIONCOMPONENTS 	.. GetRewardAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i])
 		EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON, "True")
 		EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(QUICK_ACTION_LIST[i], QUICK_ACTION_LIST[i], GENERIC_BUTTON_ICON, "False")
-		ANIMS 				= ANIMS 			.. GetTriggerAnim(QUICK_ACTION_LIST[i])	
+		ANIMS 				= ANIMS 			.. GetTriggerAnim(QUICK_ACTION_LIST[i])
 	end
 	ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
 end
@@ -1383,7 +1257,7 @@ MULTITOOLCOUNTER = 1
 if #USER_SEED_LIST > 0 then
 	for i=1,#USER_SEED_LIST,1 do
 		print(USER_SEED_LIST[i][1], USER_SEED_LIST[i][2])
-		if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then 
+		if ACTIONCOMPONENTS_COUNT >= ACTIONCOMPONENTS_LIMIT then
 			print("new GcTriggerActionComponentData")
 			ACTIONCOMPONENTS_LIMIT = ACTIONCOMPONENTS_LIMIT - 1
 			ACTIONCOMPONENTS_COUNT = 0
@@ -1396,17 +1270,17 @@ if #USER_SEED_LIST > 0 then
 			MULTITOOLCOUNTER 	= MULTITOOLCOUNTER + 1
 			REWARDTABLE 		= REWARDTABLE 		.. GetMultitoolRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
 			EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.GUN.DDS", "True")
-			EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.GUN.DDS", "False")			
+			EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/BANNERICONS/BANNERICON.GUN.DDS", "False")
 		else
 			REWARD_ID 			= USER_SEED_LIST[i][1] .. "-" .. SHIPCOUNTER
 			SHIPCOUNTER 		= SHIPCOUNTER + 1
 			REWARDTABLE 		= REWARDTABLE 		.. GetShipRewardEntry(REWARD_ID, SEED_TYPE_PATH[USER_SEED_LIST[i][1]], tonumber(USER_SEED_LIST[i][2]))
 			EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS", "True")
-			EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS", "False")			
+			EMOTEMENU 			= EMOTEMENU 		.. GetQuickAction(REWARD_ID, REWARD_ID, "TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS", "False")
 		end
 		ACTIONCOMPONENTS 	= ACTIONCOMPONENTS 	.. GetRewardAction(REWARD_ID, REWARD_ID)
 		ANIMS 				= ANIMS 			.. GetTriggerAnim(REWARD_ID)
-		ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1		
+		ACTIONCOMPONENTS_COUNT = ACTIONCOMPONENTS_COUNT + 1
 	end
 end
 table.insert(ACTIONCOMPONENTS_TABLE, ACTIONCOMPONENTS)
@@ -1416,29 +1290,29 @@ for i=1,#ACTIONCOMPONENTS_TABLE,1 do
 end
 COMPONENTS_ALL = COMPONENTS_ALL .. COMPONENTS
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "4.07",
-["MODIFICATIONS"]   = 
+["NMS_VERSION"]     = "4.08",
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{  
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"] = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
 							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = ANIMS
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
 							["ADD_OPTION"] = "ADDafterSECTION",
 							["ADD"] = COMPONENTS_ALL
 						}
@@ -1446,14 +1320,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
 							["ADD"] = EMOTEMENU
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_KNEES"}, 
+							["SPECIAL_KEY_WORDS"] = {"Title", "EMOTE_KNEES"},
 							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = NEW_EMOTES_ALL
 						}
@@ -1461,20 +1335,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
+							["PRECEDING_KEY_WORDS"] = {"GenericTable"},
 							["ADD"] = REWARDTABLE
 						}
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\SIMULATION\SCANNING\SCANEVENTTABLETUTORIAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] 	=
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Events"}, 
+							["PRECEDING_KEY_WORDS"] = {"Events"},
 							["ADD"] = SCANEVENTTABLE
 						}
 					}
@@ -1482,21 +1356,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
-			["MBIN_CHANGE_TABLE"] = 
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
-					["MBIN_FILE_SOURCE"] = 
-					{ 
-						{ 
-							[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]], 
-							[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIPBACKUP.SCENE.MBIN]] 
-						}, 
+					["MBIN_FILE_SOURCE"] =
+					{
+						{
+							[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]],
+							[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIPBACKUP.SCENE.MBIN]]
+						},
 					},
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{
 									[[value="MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP" />]],
@@ -1505,48 +1379,48 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						}
 					}
-				},			
+				},
 				{
-					["MBIN_FILE_SOURCE"] = 
+					["MBIN_FILE_SOURCE"] =
 					{
 						"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN"
 					},
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "RAW",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{
-									[[MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP\ENTITIES\POLICESHIP.ENTITY.MBIN]], 
-									[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB\ENTITIES\COCKPIT_B.ENTITY.MBIN]] 
+									[[MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP\ENTITIES\POLICESHIP.ENTITY.MBIN]],
+									[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB\ENTITIES\COCKPIT_B.ENTITY.MBIN]]
 								},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","PoliceShip",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"TransY", "0.6"},
-							}							
+							}
 						}
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] = 
+					["MBIN_FILE_SOURCE"] =
 					{
 						"METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN"
 					},
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"] = "RAW",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{
-									[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]], 
-									[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIPBACKUP.SCENE.MBIN]] 
+									[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]],
+									[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIPBACKUP.SCENE.MBIN]]
 								},
 							}
 						}
@@ -1555,35 +1429,35 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		}
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] = 
+			["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
+  <Property name="NodeData" />
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
+    <Property name="Rotations" />
+	<Property name="Translations" />
 	<Property name="Scales" />
-    </Property>  
-  </Property>	
+    </Property>
+  </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
+    <Property name="Rotations" />
+	<Property name="Translations" />
+	<Property name="Scales" />
  </Property>
-</Data>	
-]]			
+</Data>
+]]
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\GALACTICMAPOPTION.SCENE.EXML]],
-			["FILE_CONTENT"] = 
+			["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1610,12 +1484,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 	</Property>
   </Property>
   <Property name="Children" />
-</Data>	
-]]			
+</Data>
+]]
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\GALACTICMAPOPTION.ENTITY.EXML]],
-			["FILE_CONTENT"] = 
+			["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1702,15 +1576,15 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
-              </Property>	  
+                <Property name="UseMissionClock" value="False" />
+              </Property>
               <Property name="Action">
                 <Property value="GcFireSimpleInteractionAction.xml" />
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="True" />
                   <Property name="BroadcastLevel" value="Scene" />
-                </Property>	
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -1730,11 +1604,11 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="500" />
   </Property>
 </Data>
-]]			
+]]
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.SCENE.EXML]],
-			["FILE_CONTENT"] = 
+			["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1763,11 +1637,11 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="Children">
   </Property>
 </Data>
-]]			
+]]
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE.ENTITY.EXML]],
-			["FILE_CONTENT"] = 
+			["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1794,7 +1668,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="InteractFiendCrimeType" value="GcFiendCrime.xml">
         <Property name="FiendCrime" value="None" />
       </Property>
-      <Property name="InteractFiendCrimeChance" value="1" />	  
+      <Property name="InteractFiendCrimeChance" value="1" />
       <Property name="InteractCrimeLevel" value="0" />
       <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
@@ -1850,14 +1724,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
-              </Property>		  
+                <Property name="UseMissionClock" value="False" />
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_SAVE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -1869,7 +1743,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
+                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcPlayAudioAction.xml">
@@ -1882,7 +1756,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="WAIT_FOR_SAVE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>				
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -1895,15 +1769,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Anim" value="SAVEGAME" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>			  
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SAVE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -1911,7 +1785,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PersistentState" value="" />
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
-    </Property>	
+    </Property>
   </Property>
   <Property name="LodDistances">
     <Property value="0" />
@@ -1921,7 +1795,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     <Property value="500" />
   </Property>
 </Data>
-]]			
+]]
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\SHIELD.SCENE.EXML]],
@@ -1956,7 +1830,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Value" value="1" />
     </Property>
   </Property>
-  <Property name="Children">  
+  <Property name="Children">
    <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="BubbleShield" />
       <Property name="NameHash" value="2175858882" />
@@ -2105,7 +1979,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Name" value="ATTACHMENT" />
               <Property name="AltID" value="" />
               <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN" />
-            </Property>		
+            </Property>
           </Property>
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
@@ -2302,7 +2176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property name="Children" />
-        </Property>	
+        </Property>
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD" />
           <Property name="NameHash" value="0" />
@@ -2341,9 +2215,9 @@ NMS_MOD_DEFINITION_CONTAINER =
             </Property>
           </Property>
           <Property name="Children" />
-        </Property>	
+        </Property>
       </Property>
-      </Property> 
+      </Property>
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="BubbleShield1" />
           <Property name="NameHash" value="1077413731" />
@@ -2733,12 +2607,12 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
   </Property>
-</Data>	
+</Data>
 ]]
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_A.ENTITY.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2878,7 +2752,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_B.ENTITY.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3133,13 +3007,13 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
 				<Property name="UseMissionClock" value="False" />
-              </Property>		  
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_HARVEST" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -3161,7 +3035,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="WAIT_FOR_HARVEST" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>				
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -3174,15 +3048,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Anim" value="HARVEST" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>			  
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="HARVEST" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -3201,17 +3075,17 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},		
+		},
 	}
 }
 
-if REWARDTABLE == "" then table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3) 
+if REWARDTABLE == "" then table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3)
 end
-if SCANEVENTTABLE == "" then 
+if SCANEVENTTABLE == "" then
 	if #NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"] > 3 then
 		table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 4)
 	else
-		table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3)	
+		table.remove(NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"], 3)
 	end
 end
 
