@@ -90,12 +90,12 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "4.07"
+NMS_Version = "4.08"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]    = FileName,
   ["MOD_AUTHOR"]      = ModAuthor,
@@ -106,11 +106,11 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MODIFICATIONS"]   =
   {
     {
-      ["MBIN_CHANGE_TABLE"] = 
-      { 
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             -- RewardTable
           }
@@ -125,13 +125,13 @@ local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANG
 for i = 1, #Quicksilver do
   local ListID = Quicksilver[i][1][1]
   local Items  = Quicksilver[i][2]
-  
+
   for j = 1, #Items do
     Currency = Items[j][1]
     Min      = Items[j][2]
     Max      = Items[j][3]
     Chance   = Items[j][4]
-      
+
     RewardTable[#RewardTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", ListID},
@@ -144,17 +144,17 @@ end
 for i = 1, #DailyReward do
   local ListID = DailyReward[i][1][1]
   local Items  = DailyReward[i][2]
-  
+
   for j = 1, #Items do
     Currency = Items[j][1]
     Min      = Items[j][2]
     Max      = Items[j][3]
-      
+
     RewardTable[#RewardTable+1] =
     {
       ["SPECIAL_KEY_WORDS"]  = {"Id", ListID, "Currency", Currency},
       ["SECTION_UP_SPECIAL"] = 1,
-      ["VALUE_CHANGE_TABLE"] = 
+      ["VALUE_CHANGE_TABLE"] =
       {
         {"AmountMin", Min},
         {"AmountMax", Max},

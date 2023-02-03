@@ -43,7 +43,7 @@ FileName    = "Reduce Pulse Speed Lines.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
-NMS_Version = "4.07"
+NMS_Version = "4.08"
 
 -- File Sources --
 FileSource1 = "MODELS/EFFECTS/SPEEDLINES/MINIJUMPSPEEDLINES.SPEEDLINE.MBIN"
@@ -52,7 +52,7 @@ FileSource3 = "MODELS/EFFECTS/SPEEDLINES/SPACE.SPEEDLINE.MBIN"
 FileSource4 = "MODELS/EFFECTS/SPEEDLINES/SPACE2.SPEEDLINE.MBIN"
 FileSource5 = "MODELS/EFFECTS/SPEEDLINES/SPACEBIG.SPEEDLINE.MBIN"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 	["MOD_FILENAME"]  = FileName,
 	["MOD_AUTHOR"]    = ModAuthor,
@@ -63,11 +63,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MODIFICATIONS"] =
 		{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = FileSource1,
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["VALUE_CHANGE_TABLE"] =
@@ -84,10 +84,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = FileSource2,
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",	
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NumberOfParticles", PJ2_Particles},
@@ -102,7 +102,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = FileSource3,
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["VALUE_CHANGE_TABLE"] =
@@ -119,7 +119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = FileSource4,
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["VALUE_CHANGE_TABLE"] =
@@ -136,7 +136,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = FileSource5,
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["VALUE_CHANGE_TABLE"] =

@@ -5,10 +5,10 @@ SHIELD_COLLISION_RADIUS = 1.6
 SHIELD_COLLISION_THICKNESS = 0.3
 SHIELD_VOLUME_TRIGGER_TYPE = "HazardProtection"
 
--- VolumeTriggerType = 
--- { 
--- "Open", "GenericInterior", "GenericGlassInterior", "Corridor", "SmallRoom", "LargeRoom", "OpenCovered", 
--- "HazardProtection", "FieldBoundary", "Custom_Biodome", "Portal", "VehicleBoost", "NexusPlaza", "NexusCommunityHub", "NexusHangar" 
+-- VolumeTriggerType =
+-- {
+-- "Open", "GenericInterior", "GenericGlassInterior", "Corridor", "SmallRoom", "LargeRoom", "OpenCovered",
+-- "HazardProtection", "FieldBoundary", "Custom_Biodome", "Portal", "VehicleBoost", "NexusPlaza", "NexusCommunityHub", "NexusHangar"
 -- }
 
 SHIELD_SCENE = ""
@@ -209,7 +209,7 @@ SHIELD_COLLISION =
             </Property>
           </Property>
           <Property name="Children" />
-        </Property>	
+        </Property>
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD" />
           <Property name="NameHash" value="0" />
@@ -248,7 +248,7 @@ SHIELD_COLLISION =
             </Property>
           </Property>
           <Property name="Children" />
-        </Property>	
+        </Property>
 ]]
 
 COLLISION_NODE =
@@ -278,15 +278,15 @@ COLLISION_NODE =
 			  <Property name="Name" value="ATTACHMENT" />
 			  <Property name="AltID" value="" />
 			  <Property name="Value" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_B.ENTITY.MBIN" />
-			</Property>		
+			</Property>
 		  </Property>
 		  <Property name="Children">
 	]] .. SHIELD_COLLISION .. [[
 		  </Property>
-		</Property> 
+		</Property>
 ]]
 
-if not ENABLE_SHIELD_COLLSION then SHIELD_COLLISION="" 
+if not ENABLE_SHIELD_COLLSION then SHIELD_COLLISION=""
 end
 
 SHIELD_SCENE =
@@ -320,7 +320,7 @@ SHIELD_SCENE =
       <Property name="Value" value="1" />
     </Property>
   </Property>
-  <Property name="Children">  
+  <Property name="Children">
    <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="BubbleShield" />
       <Property name="NameHash" value="2175858882" />
@@ -834,30 +834,30 @@ SHIELD_SCENE =
       </Property>
     </Property>
   </Property>
-</Data>	
+</Data>
 ]]
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "ProtectionShield.pak",
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.07",
+["NMS_VERSION"]     = "4.08",
 ["DESCRIPTION"]     = "Protective shield against hazards, bullets ...",
-["MODIFICATIONS"]   = 
-	{	
+["MODIFICATIONS"]   =
+	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{  
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
 							["SECTION_ACTIVE"]    = {2,},
-							["ADD_OPTION"]        = "ADDafterSECTION",						
-							["ADD"] = 
+							["ADD_OPTION"]        = "ADDafterSECTION",
+							["ADD"] =
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="TOGGLE_SHIELD" />
@@ -889,9 +889,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
 							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] = 
+							["ADD"] =
 [[
     <Property value="TkReferenceComponentData.xml">
       <Property name="Reference" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/SHIELD/SHIELD.SCENE.MBIN" />
@@ -922,7 +922,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="UseLocalNode" value="False" />
                   <Property name="RestartEmitters" value="False" />
                   <Property name="AffectModels" value="True" />
-                </Property>		
+                </Property>
               </Property>
             </Property>
             <Property value="GcActionTrigger.xml">
@@ -958,7 +958,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="Shake" value="SLOWRUMBLE" />
                   <Property name="FalloffMin" value="5" />
                   <Property name="FalloffMax" value="15" />
-                </Property>		
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -968,18 +968,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PersistentState" value="" />
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
-    </Property>	
+    </Property>
 ]]
 						}
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["ADD"] = 
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
+							["ADD"] =
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="Shield" />
@@ -1034,7 +1034,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		}
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\SHIELD.SCENE.EXML]],
@@ -1042,7 +1042,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_A.ENTITY.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1182,7 +1182,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD\ENTITIES\SHIELD_B.ENTITY.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1322,27 +1322,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
+  <Property name="NodeData" />
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
+    <Property name="Rotations" />
+	<Property name="Translations" />
 	<Property name="Scales" />
-    </Property>  
-  </Property>	
+    </Property>
+  </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
+    <Property name="Rotations" />
+	<Property name="Translations" />
+	<Property name="Scales" />
  </Property>
-</Data>	
-]]			
+</Data>
+]]
 		}
 	}
 }

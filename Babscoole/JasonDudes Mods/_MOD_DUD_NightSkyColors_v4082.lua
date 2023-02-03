@@ -1,7 +1,7 @@
 DataTable =
 {
     {
-        ["PALETTE"] = "Night",        
+        ["PALETTE"] = "Night",
         ["COLOURS"] =
         {
             {"0.039","0.114","0.188","0","0.039","0.114","0.188","0","0.039","0.114","0.188","0","0.024","0.078","0.137","0.9","0","0","0","1","0","0","0","0.3","0","0","0","0.3","1","1","1","0.035","0.227","0.4","1","0.008","0.016","0.024","1","0.188","0.271","0.365","1"},
@@ -39,7 +39,7 @@ DataTable =
 BiomeDataTable =
 {
     {
-        ["PALETTE"] = "Dead",	
+        ["PALETTE"] = "Dead",
         ["COLOURS"] =
         {
             { "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0.3", "0", "0", "0", "0.3", "1", "1", "1", "0.1", "0.1", "0.1", "1", "0", "0", "0", "1", "0", "0", "0", "1" },
@@ -89,7 +89,7 @@ BiomeDataTable =
             { "0", "0", "0", "0.999", "0", "0", "0", "0.999", "0", "0", "0", "0", "0", "0", "0", "0.999", "0", "0", "0", "1", "0", "0", "0", "0.3", "0", "0", "0", "0.3", "1", "1", "1", "0", "0.122", "0.251", "1", "0", "0", "0", "1", "0", "0", "0", "1" },
             { "0", "0", "0", "0.999", "0", "0", "0", "0.999", "0", "0", "0", "0", "0", "0", "0", "0.999", "0", "0", "0", "1", "0", "0", "0", "0.3", "0", "0", "0", "0.3", "1", "1", "1", "0.235", "0", "0.016", "1", "0", "0", "0", "1", "0", "0", "0", "1" },
             { "0", "0", "0", "0.999", "0", "0", "0", "0.999", "0", "0", "0", "0", "0", "0", "0", "0.999", "0", "0", "0", "1", "0", "0", "0", "0.3", "0", "0", "0", "0.3", "1", "1", "1", "0", "0.18", "0.071", "1", "0", "0", "0", "1", "0", "0", "0", "1" },
-            { "0", "0", "0", "0.999", "0", "0", "0", "0.999", "0", "0", "0", "0", "0", "0", "0", "0.999", "0", "0", "0", "1", "0", "0", "0", "0.3", "0", "0", "0", "0.3", "1", "1", "1", "0.2", "0", "0.247", "1", "0", "0", "0", "1", "0", "0", "0", "1" },	
+            { "0", "0", "0", "0.999", "0", "0", "0", "0.999", "0", "0", "0", "0", "0", "0", "0", "0.999", "0", "0", "0", "1", "0", "0", "0", "0.3", "0", "0", "0", "0.3", "1", "1", "1", "0.2", "0", "0.247", "1", "0", "0", "0", "1", "0", "0", "0", "1" },
         }
     },
 }
@@ -121,7 +121,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Swamp","GcWeatherColourSettingList.xml"},
 							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] = 
+							["ADD"] =
 [[
       <Property name="Settings" />
 ]]
@@ -134,7 +134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Lava","GcWeatherColourSettingList.xml"},
 							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] = 
+							["ADD"] =
 [[
       <Property name="Settings" />
 ]]
@@ -266,7 +266,7 @@ function CreateColoursProperty(PaletteColours,ADDSPACES)
         local R11 = PaletteColours[j][40]
         local G11 = PaletteColours[j][41]
         local B11 = PaletteColours[j][42]
-        local A11 = PaletteColours[j][43]			
+        local A11 = PaletteColours[j][43]
         PropertiesString = PropertiesString..GetColours(R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, x8, y8, z8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11)
     end
 return PropertiesString:gsub("<",string.rep(" ",ADDSPACES).."<")
@@ -294,17 +294,17 @@ for i = 1, #BiomeDataTable do
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
 	{
 		["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
-		["REPLACE_TYPE"] = "RAW",							
-		["VALUE_CHANGE_TABLE"] = 
+		["REPLACE_TYPE"] = "RAW",
+		["VALUE_CHANGE_TABLE"] =
 		{
 			{
 						[[<Property name="Settings" />]],
 						[[<Property name="Settings">]]
-			},						
+			},
 		}
 	}
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =	
+    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
 	{
 		["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
 		["PRECEDING_KEY_WORDS"] = {"Settings"},
@@ -314,8 +314,8 @@ for i = 1, #BiomeDataTable do
       </Property>
 ]]
 	}
-	
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =	
+
+    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
 	{
 		["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
 		["PRECEDING_KEY_WORDS"] = {"Settings"},

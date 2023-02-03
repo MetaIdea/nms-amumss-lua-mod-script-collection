@@ -1,22 +1,22 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "_Bodie420.LifeSupportFull+FasterSpeeds.5.0.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "Bodie420",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "5.0",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCPLAYERGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] = 	
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"GroundWalkSpeed",                          "10"},       --Original "4.4"
 								{"GroundWalkSpeedTeleportHmd",               "10"},       --Original "4.4"
@@ -91,16 +91,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"JetpackTankTimes"},
 							["LINE_OFFSET"] = "1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{ "IGNORE", "999999" }, --Original "4"
 								{ "IGNORE", "999999" }, --Original "6"
-								{ "IGNORE", "999999" }, --Original "8"								
-							}	
-						},												
+								{ "IGNORE", "999999" }, --Original "8"
+							}
+						},
 					}
 				}
 			}
 		}
-	}	
+	}
 }

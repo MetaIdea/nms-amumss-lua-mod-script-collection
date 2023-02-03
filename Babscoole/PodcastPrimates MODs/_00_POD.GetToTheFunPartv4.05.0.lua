@@ -1,58 +1,58 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]       = "_00_POD.GetToTheFunPartv4.05.0.pak",
 ["MOD_DESCRIPTION"]    = "Start off with everything working and fueled up",
 ["MOD_AUTHOR"]         = "PodcastPrimate",
 ["LUA Fix and Update"] = "Babscoole",
 ["NMS_VERSION"]        = "4.05",
-["MODIFICATIONS"]      = 
+["MODIFICATIONS"]      =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCBUILDINGGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"StartCrashSiteMinDistance", "20"},
-								{"StartCrashSiteMaxDistance", "50"}, 
-								{"StartShelterMinDistance",   "200"}, 
-							}	
+								{"StartCrashSiteMaxDistance", "50"},
+								{"StartShelterMinDistance",   "200"},
+							}
 						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","LAUNCHER",},
 							["SECTION_ACTIVE"] = 1,
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"Amount",       "300"},
-								{"DamageFactor", "0"}, 
-							}	
+								{"DamageFactor", "0"},
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","SHIPJUMP1",},
 							["SECTION_ACTIVE"] = 1,
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"Amount",       "200"},
-								{"DamageFactor", "0"}, 
-							}	
+								{"DamageFactor", "0"},
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","SHIPGUN1",},
 							["SECTION_ACTIVE"] = {1,2,},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"Id", "SHIPMINIGUN"},
-							}	
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","SHIPROCKETS",},
@@ -79,9 +79,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory","GcInventoryContainer.xml","Id","SCAN1",},
 							["SECTION_ACTIVE"] = {1,2,},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"DamageFactor", "0"}, 
+								{"DamageFactor", "0"},
 							}
 						},
 						{
@@ -131,60 +131,60 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"InitialShipInventory","GcInventoryContainer.xml","Id","SHIPROCKETS",},
 							["SECTION_ACTIVE"] = 2,
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"Amount",    "1000"},
-								{"MaxAmount", "1000"}, 
-							}	
+								{"MaxAmount", "1000"},
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"InitialWeaponInventory","GcInventoryContainer.xml","Id","SCANBINOC1",},
 							["SECTION_ACTIVE"] = 2,
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"DamageFactor", "0"}, 
+								{"DamageFactor", "0"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"ShipSummoningFuelCostMultipliers",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"High", "2"}, 
+								{"High", "2"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"ReputationGainMultipliers",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"Slow", "0.5"}, 
+								{"Slow", "0.5"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"SpaceCombatMultipliers",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"Fast", "0.33"}, 
+								{"Fast", "0.33"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"GroundCombatMultipliers",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"Fast", "0.1"}, 
+								{"Fast", "0.1"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"BreakTechOnDamageMultipliers",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"High", "1"}, 
+								{"High", "1"},
 							}
 						},
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"AlienPodThreshold2",           "0"},
 								{"AlienPodThreshold1",           "0"},
@@ -202,7 +202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PirateInterestLevels",},
 							["LINE_OFFSET"] = "+1",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "2000000"},
 							}
@@ -210,23 +210,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PirateInterestLevels",},
 							["LINE_OFFSET"] = "+2",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"IGNORE", "5000000"}, 
+								{"IGNORE", "5000000"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PirateInterestLevels",},
 							["LINE_OFFSET"] = "+3",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"IGNORE", "7000000"}, 
+								{"IGNORE", "7000000"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PirateInterestLevelsSurvival",},
 							["LINE_OFFSET"] = "+1",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "2000000"},
 							}
@@ -234,67 +234,67 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PirateInterestLevelsSurvival",},
 							["LINE_OFFSET"] = "+2",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"IGNORE", "5000000"}, 
+								{"IGNORE", "5000000"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"PirateInterestLevelsSurvival",},
 							["LINE_OFFSET"] = "+3",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
-								{"IGNORE", "7000000"}, 
+								{"IGNORE", "7000000"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"SentinelTimersLow","GcExperienceTimers.xml","Low","Vector2f.xml",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "360"},
-								{"y", "360"}, 
+								{"y", "360"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"SentinelTimersNormal","GcExperienceTimers.xml","Normal","Vector2f.xml",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "60"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"SentinelTimersNormal","GcExperienceTimers.xml","Low","Vector2f.xml",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "180"},
-								{"y", "180"}, 
+								{"y", "180"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"SpacePirateTimers","GcExperienceTimers.xml","Low","Vector2f.xml",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "800"},
-								{"y", "1200"}, 
+								{"y", "1200"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"FrigateFlybyTimer","Vector2f.xml",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "9999"},
-								{"y", "9999"}, 
+								{"y", "9999"},
 							}
 						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Settings","GcDifficultySettingsData.xml",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"DeathConsequencesDifficulty",    "DestroyItems"},
 								{"DamageReceivedDifficulty",       "Low"},
@@ -305,7 +305,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ItemShopAvailabilityDifficulty", "Low"},
 								{"SprintingCostDifficulty",        "Low"},
 								{"BreakTechOnDamageProbability",   "None"},
-							}	
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","ROCKETSUB",},
@@ -477,32 +477,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"SquadronUnlockedPilotSlots",},
 							["LINE_OFFSET"] = "+1",
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "True"},
-							}	
+							}
 						},
 						{
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"Units", "69420"},
 								{"HasAccessToNexus",              "True"},
 								{"StartNextToShip",               "True"},
 								{"DistanceFromShipAtStartOfGame", "25"},
 								{"ShipStartsDamaged",             "False"},
-							}	
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"DifficultySettings","GcDifficultySettingsData.xml",},
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"AllSlotsUnlocked",      "True"},
 								{"WarpDriveRequirements", "False"},
-							}	
+							}
 						},
 					}
-				},				
+				},
 			},
 		},
-	}	
+	}
 }

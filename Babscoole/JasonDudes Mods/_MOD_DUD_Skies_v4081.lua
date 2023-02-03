@@ -1103,9 +1103,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","SkyColour","GcColourModifier.xml"}, 
+							["FOREACH_SKW_GROUP"] =
+							{
+								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","SkyColour","GcColourModifier.xml"},
 								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","HorizonColour","GcColourModifier.xml"},
 								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","SunColour","GcColourModifier.xml"},
 								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","FogColour","GcColourModifier.xml"},
@@ -1113,11 +1113,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","LightColour","GcColourModifier.xml"},
 								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","CloudColour1","GcColourModifier.xml"},
 								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","CloudColour2","GcColourModifier.xml"},
-							},  
-							["VALUE_CHANGE_TABLE"] = 
+							},
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"ForceColour", "False"},
-							} 
+							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},

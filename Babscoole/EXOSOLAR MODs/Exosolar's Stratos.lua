@@ -1,7 +1,7 @@
 DataTable =
 {
     {
-        ["PALETTE"] = "Day",	
+        ["PALETTE"] = "Day",
         ["COLOURS"] =
         {
             { "0.75", "1", "0.75781", "0.95", "1", "0.75006", "0.742", "0.95", "1", "0.80819", "0.802", "0.95", "0.55", "1", "0.56406", "0.95", "0", "0", "0", "0", "0.55", "1", "0.56406", "0.95", "0.62", "1", "0.63188", "0.95", "1", "1", "1", "1.10186", "1.35", "1.06971", "1", "0.70152", "0.6935", "0.95", "0.95", "0.44306", "0.438", "0.6", "0.95"  },
@@ -2119,7 +2119,7 @@ DataTable =
         }
     },
     {
-        ["PALETTE"] = "Night",        
+        ["PALETTE"] = "Night",
         ["COLOURS"] =
         {
             { "0.005", "0.005", "0.005", "0", "0.006", "0.006", "0.006", "0", "0.007", "0.007", "0.007", "0", "0.008", "0.008", "0.008", "0", "0.009", "0.009", "0.009", "0", "0.102", "0.102", "0.102", "0.202", "0", "0", "0", "0", "2", "1", "1", "0.501", "0.501", "0.501", "1", "0.103", "0.103", "0.103", "0.33", "0.054", "0.054", "0.054", "1" },
@@ -3860,7 +3860,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.07",
+["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
 	{
 		{
@@ -3931,7 +3931,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"SafeSkyMaxIndex",            "15416"},
+								{"SafeSkyMaxIndex",            "2173"},
 								{"SunClampAngle",              "85"},
 								{"NoAtmosphereFogStrength",    "0.02"},
 								{"NoAtmosphereFogMax",         "0"},
@@ -4066,7 +4066,7 @@ function CreateColoursProperty(PaletteColours)
         local R11 = PaletteColours[j][40]
         local G11 = PaletteColours[j][41]
         local B11 = PaletteColours[j][42]
-        local A11 = PaletteColours[j][43]			
+        local A11 = PaletteColours[j][43]
         PropertiesString = PropertiesString..GetColours(R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, x8, y8, z8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11)
     end
 return PropertiesString

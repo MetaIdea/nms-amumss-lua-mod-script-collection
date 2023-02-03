@@ -1,22 +1,22 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "TurretsDoDamage+rangefixmaybe.pak",
 ["MOD_AUTHOR"]    = "Dad",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.05",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\PROJECTILES\PROJECTILETABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTGUN"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
     							{"Scale", "4"},
     							{"Radius", "85"},
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTGUN","Colour","Colour.xml",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
       							{"R", "0.973"},
       							{"G", "0.172"},
@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTGUN","LightColour","Colour.xml",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
       							{"R", "0.8"},
       							{"G", "0.2"},
@@ -196,7 +196,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
     							{"Width", "1300"},
     							{"HitWidth", "85"},
@@ -211,7 +211,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","LightColour","Colour.xml",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
       							{"R", "0.597"},
       							{"G", "0.325"},
@@ -221,7 +221,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","Colour","Colour.xml",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
       							{"R", "0.597"},
       							{"G", "0.325"},
@@ -230,20 +230,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "BASE_TURRET_L","LightColour","Colour.xml",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
       							{"G", "0.051"},
-      							{"B", "1"},					
+      							{"B", "1"},
 							}
-						},												
+						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\ENTITIES\TURRET.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
     							{"ProjectileId", "FREIGHTPLASMAGUN"},
     							{"TurretRange", "17000"},
@@ -261,34 +261,34 @@ NMS_MOD_DEFINITION_CONTAINER =
     							{"TurretDispersionAngle", "0"},
     							{"Health", "6000"},
 							}
-						},											
+						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETB\ENTITIES\TURRET.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
     							{"TurretLaserMoveSpeed", "15"},
 							}
-						},											
+						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
     							{"FreighterAttackDisengageDistance", "8000"},
 							}
-						},											
+						},
 					}
 				},
 			}
 		}
-	}	
+	}
 }

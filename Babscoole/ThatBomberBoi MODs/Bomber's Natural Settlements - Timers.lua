@@ -32,8 +32,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Settlement_Factory",         "30"},
 								{"Settlement_Clump",           "30"}
 							}
-						}						
-					}			
+						}
+					}
 				}
 			}
 		}

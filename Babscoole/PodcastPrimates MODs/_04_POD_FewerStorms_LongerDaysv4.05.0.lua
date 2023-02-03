@@ -1,23 +1,23 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "_04_POD_FewerStorms_LongerDaysv4.05.0.pak",
 ["MOD_DESCRIPTION"] = "Longer Days and Less Storms",
 ["MOD_AUTHOR"]      = "PodcastPrimate",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.05",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Low", "RegionLODRadius"},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "5"},
 							}
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Low", "RegionLODRadius"},
 							["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "16"},
 							}
@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Low", "RegionLODRadius"},
 							["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "12"},
 							}
@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Low", "RegionLODRadius"},
 							["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "10"},
 							}
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Ultra", "LODAdjust"},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "3"},
 							}
@@ -57,7 +57,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Ultra", "LODAdjust"},
 							["LINE_OFFSET"] = "+2",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "3"},
 							}
@@ -65,7 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Ultra", "LODAdjust"},
 							["LINE_OFFSET"] = "+3",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "3"},
 							}
@@ -73,7 +73,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Ultra", "LODAdjust"},
 							["LINE_OFFSET"] = "+4",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "3"},
 							}
@@ -81,14 +81,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Ultra", "LODAdjust"},
 							["LINE_OFFSET"] = "+5",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"IGNORE", "3"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"CloudProperties"},
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AnimationScale",       "10"},
 								{"CloudDistortionScale", "2"},
@@ -96,14 +96,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"CloudProperties", "WindOffset"},
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"X", "0.65"},
 								{"Y", "0.65"},
 							}
 						},
 						{
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TerrainFadeTime", "1"},
 								{"TerrainFadeTimeInShip", "1"},
@@ -116,7 +116,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"EnvironmentProperties"},
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
   								{"FlightFogHeight", "900"},
   								{"FlightFogBlend", "1300"},
@@ -128,7 +128,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"EnvironmentPrimeProperties"},
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
   								{"HeavyAirHeightMin", "1450"},
   								{"HeavyAirHeightMax", "1500"},
@@ -147,11 +147,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "GCSKYGLOBALS.GLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"DayLength", "7200"},
 								{"SafeSkyMaxIndex", "342"},
@@ -201,7 +201,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFog"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FogMax", "0.95"},
 								{"HeightFogStrength", "0.1"},
@@ -213,7 +213,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetExtremeFog"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FogStrength", "0.15"},
 								{"FogMax", "0.95"},
@@ -228,7 +228,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetStormFog"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FogStrength", "0.25"},
 								{"FogColourStrength", "10"},
@@ -243,7 +243,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFlightFog"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FogMax", "0.95"},
 								{"HeightFogStrength", "0.1"},
@@ -255,7 +255,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 												{
 							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetSky"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SunSize", "0.4"},
 								{"SunSurroundSize", "12"},
@@ -264,7 +264,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetFog"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FogStrength", "0.04"},
 								{"FogMax", "0.95"},
@@ -279,7 +279,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetExtremeFog"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FogStrength", "0.15"},
 								{"FogMax", "0.95"},
@@ -294,7 +294,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetStormFog"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FogStrength", "0.25"},
 								{"FogColourStrength", "10"},
@@ -309,7 +309,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetFlightFog"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FogMax", "0.95"},
 								{"HeightFogStrength", "0.3"},
@@ -322,7 +322,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"SpaceSkyMin"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SunStrength", "0.4"},
 								{"SunSize", "0.002"},
@@ -333,7 +333,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"SpaceSkyMax"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SunStrength", "0.8"},
 								{"SunSize", "0.01"},
@@ -346,5 +346,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 			}
 		}
-	}	
+	}
 }

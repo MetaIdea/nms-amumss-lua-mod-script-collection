@@ -1,6 +1,6 @@
 --[[┎────────────────────────────────────────────────────────────────────────────
 	┃ Increases the base warp distance just enough to get you close to the core
-	┃ 
+	┃
 ────┸────────────────────────────────────────────────────────────────────────--]]
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME    = 'ConvenientWarp.pak',

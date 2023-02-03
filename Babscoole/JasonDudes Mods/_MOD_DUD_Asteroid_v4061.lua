@@ -1,29 +1,29 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_Asteroid_v4061.pak", 
+["MOD_FILENAME"]    = "_MOD_DUD_Asteroid_v4061.pak",
 ["MOD_AUTHOR"]      = "jasondude7116",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.06",
 ["MOD_DESCRIPTION"] = "",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"CommonAsteroidData","GcAsteroidGenerationData.xml","ScaleVariance","Vector2f.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"y", "1.3"},
 							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"CommonAsteroidData","GcAsteroidGenerationData.xml","NoiseRange","Vector2f.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0.81"},
 								{"y", "0.89"},
@@ -31,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"CommonAsteroidData","GcAsteroidGenerationData.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FadeRange",  "1000"},
 								{"NoiseScale", "100000"},
@@ -39,21 +39,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"RingAsteroidData","GcAsteroidGenerationData.xml","ScaleVariance","Vector2f.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"y", "1.3"},
 							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"RingAsteroidData","GcAsteroidGenerationData.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FadeRange", "1000"},
 							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"LargeAsteroidData","GcAsteroidGenerationData.xml","NoiseRange","Vector2f.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0.82"},
 								{"y", "0.88"},
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"LargeAsteroidData","GcAsteroidGenerationData.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Spacing",    "4000"},
 								{"FadeRange",  "4000"},
@@ -70,14 +70,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"RareAsteroidData","GcAsteroidGenerationData.xml","ScaleVariance","Vector2f.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"y", "1.3"},
 							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"RareAsteroidData","GcAsteroidGenerationData.xml","NoiseRange","Vector2f.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0.84"},
 								{"y", "0.85"},
@@ -85,7 +85,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"RareAsteroidData","GcAsteroidGenerationData.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"FadeRange",  "1000"},
 								{"NoiseScale", "100000"},
@@ -93,7 +93,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeSomeRares","Vector2f.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0.83"},
 								{"y", "0.87"},
@@ -101,7 +101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"RareAsteroidNoiseRangeLotsOfRares","Vector2f.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0.82"},
 								{"y", "0.88"},
@@ -109,17 +109,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PlanetInvalidAsteroidZone",       "40000"},
 								{"SparseAsteroidSpread",            "-20"},
 								{"AsteroidNoiseOctaves",            "1"},
 								{"AsteroidSpaceStationAvoidRadius",	"10000"},
 							},
-						}					
+						}
 					}
 				}
 			}
 		}
-	}	
+	}
 }

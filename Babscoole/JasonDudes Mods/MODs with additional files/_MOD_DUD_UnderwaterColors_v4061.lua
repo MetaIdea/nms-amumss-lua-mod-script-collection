@@ -1,26 +1,26 @@
 --Must get the TEXTURES folder from the orignal .pak and place into ModExtraFilesToInclude
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_MOD_DUD_UnderwaterColors_v4061.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
-					["MBIN_FILE_SOURCE"]  = 
+					["MBIN_FILE_SOURCE"]  =
 					{
 						"MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPLANTS\LARGESTRANDS\LONGSTRANDS01_MAT.MATERIAL.MBIN",
 						"MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\MEDIUMSEAPLANT\LONGSTRANDS01_MAT.MATERIAL.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Class", "Opaque"},
 							}
@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Flags"},
 							["ADD_OPTION"]  = "ADDafterLINE",
-							["ADD"] = 
+							["ADD"] =
 [[
     <Property value="TkMaterialFlags.xml">
       <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
@@ -64,7 +64,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","gMaterialColourVec4"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "1"},
 								{"y", "1"},
@@ -118,10 +118,10 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
 ]]
-						},						
+						},
 					}
 				},
 			}
 		},
-	},	
+	},
 }

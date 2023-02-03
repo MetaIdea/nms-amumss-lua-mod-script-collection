@@ -9,12 +9,12 @@ FileName    = "More Refiners.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
-NMS_Version = "4.07"
+NMS_Version = "4.08"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/BASEBUILDINGOBJECTSTABLE.MBIN"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 	["MOD_FILENAME"]  = FileName,
 	["MOD_AUTHOR"]    = ModAuthor,
@@ -24,32 +24,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"] = FileSource1,
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]  = {"ID", "BUILD_REFINER1"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionLimit", REFINER_SMALL},
-							},	
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"ID", "BUILD_REFINER2"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionLimit", REFINER_MEDIUM},
-							},	
+							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"ID", "BUILD_REFINER3"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionLimit", REFINER_LARGE},
-							},	
+							},
 						},
 					}
 				},

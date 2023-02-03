@@ -1,9 +1,9 @@
-ProducedItemChanges =	
+ProducedItemChanges =
 {
 	{
 		{"GekProductionElements"},
 		{	--Vanilla item              Replacement item
-			{"TRA_CURIO2",              "ULTRAPROD2"},		
+			{"TRA_CURIO2",              "ULTRAPROD2"},
 			{"PLANT_POOP",              "TRA_CURIO2"},
 			{"PLANT_WATER",             "FOOD_V_GEK"},
 			{"PLANT_CAVE",              "NIPNIPBUDS"},
@@ -25,7 +25,7 @@ ProducedItemChanges =
 		{	--Vanilla item                Replacement item
 			{"GAS3",                      "WAR_CURIO2"},
 			{"PLANT_RADIO",               "U_SHOTGUNX"},
-			{"ROBOT1",                    "SCRAP_WEAP"},	
+			{"ROBOT1",                    "SCRAP_WEAP"},
 			{"SPACEGUNK3",                "U_BOLTX"},
 			{"PLANT_TOXIC",               "ULTRAPROD1"}
 		}
@@ -45,7 +45,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			{
 				{
 					["MBIN_FILE_SOURCE"] = {"GCSETTLEMENTGLOBALS.MBIN"},
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["VALUE_CHANGE_TABLE"] =
@@ -73,8 +73,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Settlement_Factory",         "30"},
 								{"Settlement_Clump",           "30"}
 							}
-						}						
-					}			
+						}
+					}
 				}
 			}
 		}

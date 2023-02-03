@@ -149,7 +149,7 @@ SwampDataTable =
         }
     },
     {
-        ["PALETTE"] = "Plant",        
+        ["PALETTE"] = "Plant",
         ["NUMCOLOURS"] = "All",
         ["COLOURS"] =
         {
@@ -220,7 +220,7 @@ SwampDataTable =
         }
     },
     {
-        ["PALETTE"] = "Leaf",        
+        ["PALETTE"] = "Leaf",
         ["NUMCOLOURS"] = "All",
         ["COLOURS"] =
         {
@@ -291,7 +291,7 @@ SwampDataTable =
         }
     },
     {
-        ["PALETTE"] = "Wood",        
+        ["PALETTE"] = "Wood",
         ["NUMCOLOURS"] = "_4",
         ["COLOURS"] =
         {
@@ -362,7 +362,7 @@ SwampDataTable =
         }
     },
     {
-        ["PALETTE"] = "SkyNight",        
+        ["PALETTE"] = "SkyNight",
         ["NUMCOLOURS"] = "All",
         ["COLOURS"] =
         {
@@ -433,7 +433,7 @@ SwampDataTable =
         }
     },
     {
-        ["PALETTE"] = "Cave",        
+        ["PALETTE"] = "Cave",
         ["NUMCOLOURS"] = "All",
         ["COLOURS"] =
         {
@@ -504,7 +504,7 @@ SwampDataTable =
         }
     },
     {
-        ["PALETTE"] = "GrassAlt",        
+        ["PALETTE"] = "GrassAlt",
         ["NUMCOLOURS"] = "All",
         ["COLOURS"] =
         {
@@ -588,20 +588,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["MBIN_CHANGE_TABLE"] =
 			{
 				{
-					["MBIN_FILE_SOURCE"]  = 
+					["MBIN_FILE_SOURCE"]  =
 					{
 						"METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\LUSH\\LUSHROOMACOLOURPALETTE.MBIN",
 						"METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\LUSH\\LUSHROOMBCOLOURPALETTE.MBIN",
 					},
 					["EXML_CHANGE_TABLE"] =
-					{						
+					{
 						{
 							["SPECIAL_KEY_WORDS"]  = { "SkyNight", "GcPaletteData.xml"  },
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NumColours", "All"}
-							}	
-						},					
+							}
+						},
 					}
 				},
 				{
@@ -609,27 +609,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"Grass", "GcPaletteData.xml"},  
+							["FOREACH_SKW_GROUP"] =
+							{
+								{"Grass", "GcPaletteData.xml"},
 								{"Plant", "GcPaletteData.xml"},
 								{"Leaf", "GcPaletteData.xml"},
 								{"SkyNight", "GcPaletteData.xml"},
 								{"Cave", "GcPaletteData.xml"},
 								{"GrassAlt", "GcPaletteData.xml"},
-							},  
-							["VALUE_CHANGE_TABLE"] = 
+							},
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"NumColours", "All"} 
-							} 
-						},					
+								{"NumColours", "All"}
+							}
+						},
 						{
 							["SPECIAL_KEY_WORDS"]  = { "Wood", "GcPaletteData.xml"  },
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NumColours", "_4"}
-							}	
-						},					
+							}
+						},
 					}
 				},
 			}
@@ -659,11 +659,11 @@ function CreateColoursProperty(PaletteColours)
         local A = PaletteColours[j]["A"]
         PropertiesString = PropertiesString..GetColours(R, G, B, A)
     end
-    local PropertyColoursString = 
+    local PropertyColoursString =
     [[      <Property name="Colours">
     ]]..PropertiesString..[[
   </Property>]]
-    
+
     -- print(PropertyColoursString)
     return PropertyColoursString
 end
@@ -673,7 +673,7 @@ for i = 1, #LushDataTable do
     local Palette = LushDataTable[i]["PALETTE"]
     local PaletteColours = LushDataTable[i]["COLOURS"]
     local PaletteNumColours = LushDataTable[i]["NUMCOLOURS"]
-           
+
     LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
@@ -681,7 +681,7 @@ for i = 1, #LushDataTable do
         ["REMOVE"] = "SECTION"
     }
 
-    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1 ] = 
+    LushBaseColourPalettesTable[#LushBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["ADD"] = CreateColoursProperty(PaletteColours)
@@ -693,7 +693,7 @@ for i = 1, #SwampDataTable do
     local Palette = SwampDataTable[i]["PALETTE"]
     local PaletteColours = SwampDataTable[i]["COLOURS"]
     local PaletteNumColours = SwampDataTable[i]["NUMCOLOURS"]
-           
+
     SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
@@ -701,7 +701,7 @@ for i = 1, #SwampDataTable do
         ["REMOVE"] = "SECTION"
     }
 
-    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1 ] = 
+    SwampBaseColourPalettesTable[#SwampBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["ADD"] = CreateColoursProperty(PaletteColours)

@@ -230,12 +230,12 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole and DarkScythe"
 Description = ""
-NMS_Version = "4.07"
+NMS_Version = "4.08"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/COSTTABLE.MBIN"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]    = FileName,
   ["MOD_AUTHOR"]      = ModAuthor,
@@ -246,11 +246,11 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MODIFICATIONS"]   =
   {
     {
-      ["MBIN_CHANGE_TABLE"] = 
-      { 
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             { -- remove original multitool dialogue option display price
               ["SPECIAL_KEY_WORDS"]   = {"Id", "C_INV_WEAP_C"},

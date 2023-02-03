@@ -1,12 +1,12 @@
 DEFAULT_SEED_NUMBER = 17000
 
-SELECTED_SEED_TYPES = 
+SELECTED_SEED_TYPES =
 {
 	"Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail",
 	"MULTITOOL", "ROYALMULTITOOL",
 }
 
-SEED_TYPE_PATH = 
+SEED_TYPE_PATH =
 {
 	["Fighter"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
 	["Dropship"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
@@ -15,7 +15,7 @@ SEED_TYPE_PATH =
 	["Royal"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
 	["Alien"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
 	["Sail"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
-	
+
 	["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
 	["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
 }
@@ -40,7 +40,7 @@ STATS =
         {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
         {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
         {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
-    },	
+    },
     ["Scientific"] =
     {
         {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
@@ -49,7 +49,7 @@ STATS =
         {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
         {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
         {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
-    },	
+    },
     ["Shuttle"] =
     {
         {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
@@ -58,7 +58,7 @@ STATS =
         {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
         {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
         {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
-    },	
+    },
     ["Royal"] =
     {
         {["ID"] = "SHIPJUMP1", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
@@ -116,8 +116,8 @@ function GetSeed()
 	local HEX = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"}
 	if not RANDOMSEED_INIT then
 		math.randomseed(82398*os.time())
-		-- math.random() 
-		-- math.random() 
+		-- math.random()
+		-- math.random()
 		-- math.random()
 		RANDOMSEED_INIT = true
 	end
@@ -130,11 +130,11 @@ end
 function HexToDec(number)
 	if type(number) == "number" then return number
 	elseif string.find(tostring(number),"0x") then return tonumber(number)
-	else return tonumber(number,16) 
+	else return tonumber(number,16)
 	end
 end
 
-GENERIC_ANIMATION_FILE = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" 
+GENERIC_ANIMATION_FILE = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN"
 
 ANIM_TEMPLATE_ALL = ""
 QUICK_ACTION_BUTTON_ALL = ""
@@ -150,7 +150,7 @@ function AddInvetoryElements(TYPE)
         local Amount = statsList[i]["Amount"]
         local MaxAmount = statsList[i]["MaxAmount"]
         local Damage = statsList[i]["Damage"]
-        statsString = 
+        statsString =
 [[
                   <Property value="GcInventoryElement.xml">
                     <Property name="Type" value="GcInventoryType.xml">
@@ -174,7 +174,7 @@ end
 
 function AddBaseStats(TYPE)
     if TYPE == "Alien" then
-        return 
+        return
 [[
                   <Property value="GcInventoryBaseStatEntry.xml">
                     <Property name="BaseStatID" value="SHIP_DAMAGE" />
@@ -194,7 +194,7 @@ function AddBaseStats(TYPE)
                   </Property>
 ]]
     end
-        return 
+        return
 [[
                   <Property value="GcInventoryBaseStatEntry.xml">
                     <Property name="BaseStatID" value="SHIP_DAMAGE" />
@@ -325,7 +325,7 @@ local GENERIC_REWARD_SUB_ENTRY =
 return GENERIC_REWARD_SUB_ENTRY
 end
 
-function CreateRewardMainEntry(REWARD_ID, SUB_ENTRY) 
+function CreateRewardMainEntry(REWARD_ID, SUB_ENTRY)
 local GENERIC_REWARD_MAIN_ENTRY =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
@@ -443,7 +443,7 @@ return ACTION_TRIGGER_COMPONENT
 end
 
 function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
-				
+
 				local ICON = ""
 				if ANIM_ID == "FIGHTER" then
 					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS"
@@ -466,7 +466,7 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
 				else ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
 				end
 
-				
+
 QUICK_ACTION_BUTTON_TEMPLATE =
 [[
     <Property value="GcPlayerEmote.xml">
@@ -523,7 +523,7 @@ function CreateSeedRewardLists()
   local count = 10000
   local SEED_COUNT = 1
   print("starting big loop...")
-	for i=1,#SELECTED_SEED_TYPES,1 do 
+	for i=1,#SELECTED_SEED_TYPES,1 do
 			local Seed = ""
 			local SREA = {}
 			local SST = SELECTED_SEED_TYPES[i]
@@ -555,29 +555,29 @@ end
 math.randomseed(os.time())
 CreateSeedRewardLists()
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
 ["NMS_VERSION"]     = "4.08",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{  
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
 							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]               = ANIM_TEMPLATE_ALL
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
 							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]                 = ACTION_TRIGGER_COMPONENT
 						}
@@ -585,20 +585,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
 							["ADD"]                 = QUICK_ACTION_BUTTON_ALL
 						}
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
+							["PRECEDING_KEY_WORDS"] = {"GenericTable"},
 							["ADD"]                 = CUSTOM_GENERICREWARD_ALL
 						}
 					}
@@ -606,31 +606,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		}
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
+  <Property name="NodeData" />
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
+    <Property name="Rotations" />
+	<Property name="Translations" />
 	<Property name="Scales" />
-    </Property>  
-  </Property>	
+    </Property>
+  </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
+    <Property name="Rotations" />
+	<Property name="Translations" />
+	<Property name="Scales" />
  </Property>
-</Data>	
-]]			
+</Data>
+]]
 		}
 	}
 }

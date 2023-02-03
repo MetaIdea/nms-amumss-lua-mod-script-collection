@@ -7,7 +7,7 @@ QUICKSILV_S =
             </Property>
 ]]
 
-REWARD_T = 
+REWARD_T =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -23,7 +23,7 @@ REWARD_T =
           </Property>
 ]]
 
-REWARD_S = 
+REWARD_S =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -39,7 +39,7 @@ REWARD_S =
           </Property>
 ]]
 
-REWARD_M = 
+REWARD_M =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -55,7 +55,7 @@ REWARD_M =
           </Property>
 ]]
 
-REWARD_MM = 
+REWARD_MM =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -72,7 +72,7 @@ REWARD_MM =
 ]]
 
 
-REWARD_L = 
+REWARD_L =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -88,7 +88,7 @@ REWARD_L =
           </Property>
 ]]
 
-REWARD_LL = 
+REWARD_LL =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -120,7 +120,7 @@ REWARD_XL =
           </Property>
 ]]
 
-REWARD_ENTRIES = 
+REWARD_ENTRIES =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="RS_QUICKSILV_XSS" />
@@ -212,7 +212,7 @@ REWARD_ENTRIES =
     </Property>
 ]]
 
-Rewards = 
+Rewards =
 {
   {
     ["REWARD"] = REWARD_T,
@@ -229,7 +229,7 @@ Rewards =
   {
     ["REWARD"] = REWARD_MM,
     ["IDS"] = {"WALKER_LOOT"},
-  },  
+  },
   {
     ["REWARD"] = REWARD_L,
     ["IDS"] = {"PIRATE_BOUNTY3", "PROC_PROD_CHEST", "R_SEACHEST", "R_SALVAGE", "R_CRASHSITE_FLY", "MB_STAND_HIGH"},
@@ -244,18 +244,18 @@ Rewards =
   },
 }
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "EnjoyableQuicksilver."..Mod_version..".pak",
 ["MOD_DESCRIPTION"] = "Allows the player to grind Quicksilver through a wide variety of different ways",
 ["MOD_AUTHOR"]      = "ArtisticMisfit",
 ["LUA_AUTHOR"]      = "TheLich and Babscoole",
 ["NMS_VERSION"]     = "3.91",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
 					["REGEXBEFORE"] =
@@ -267,7 +267,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							{[[(.*)("SECTION_TO_CHANGE").*(".*")]],[[\1\3]]},
 						},
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "SECTION_TO_CHANGE"},
@@ -279,7 +279,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_PIRATEBOARD_B"},
@@ -294,21 +294,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_PIRATEBOARD_B", "ID", "REP_TOKEN"},
 							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 								{
 									{"PercentageChance", "25"},
 								},
-						},						
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C"},
 							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
 							["REMOVE"] = "SECTION",
-						},	
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C"},
 							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
 							["REMOVE"] = "SECTION",
-						},	
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C"},
 							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
@@ -318,27 +318,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C"},
 							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
 							["REMOVE"] = "SECTION",
-						},	
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C"},
 							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
 							["REMOVE"] = "SECTION",
-						},	
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C"},
 							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
 							["REMOVE"] = "SECTION",
-						},							
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "RS_MONEY_L"},
 							["ADD_OPTION"] = "ADDafterSECTION",
 							["ADD"] = REWARD_ENTRIES,
-						},					
+						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_RESET_SAL"},
@@ -351,7 +351,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 			}
 		}
-	}	
+	}
 }
 
 --Let us create a shortcut to the EXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER
@@ -361,7 +361,7 @@ for i=1,#Rewards do
   local reward = Rewards[i]
   for j=1,#reward["IDS"] do
     local value = reward["IDS"][j]
-    local temp_table = 
+    local temp_table =
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", value},
               ["PRECEDING_KEY_WORDS"] = {"List", "List"},

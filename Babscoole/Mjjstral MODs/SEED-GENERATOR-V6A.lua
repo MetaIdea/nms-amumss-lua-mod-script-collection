@@ -1,19 +1,19 @@
 DEFAULT_SEED_NUMBER = 2000
 
-SELECTED_SEED_TYPES = 
+SELECTED_SEED_TYPES =
 {
 	"Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail",
 	"MULTITOOL", "ROYALMULTITOOL",
 	"FREIGHTER", "CAPITALFREIGHTER", "FREIGHTERSMALL", "FREIGHTERTINY",
 	"SCIENCEFRIGATE", "SUPPORTFRIGATE", "INDUSTRIALFRIGAT", "COMBATFRIGATE", "DIPLOMATICFRIGAT", "LIVINGFRIGATE",
 	"NPCFIFTH", "NPCFOURTH", "NPCGEK", "NPCKORVAX", "NPCVYKEEN",
-	"ANTELOPE", "BEETLE", "SHARK", "BIRD", "FISH", "FLYINGLIZARD", "BUTTERFLY", "RODENT", "COW", "TRICERATOPS", "CAT", 
-	"FLYINGSNAKE", "STRIDER", "TREX", "SIXLEGCOW", "TWOLEGANTELOPE", "SIXLEGCAT", "GRUNT", "BLOB", "SPIDER", "QUAD", "FLOATSPIDER", "SWIMCOW", 
-	"SWIMRODENT", "FIEND", "FIENDFISHBIG", "FIENDFISHSMALL", "JELLYFISH", "CRAB", "ROCKCREATURE", "MINIFIEND", "WEIRDROLL", "WEIRDCRYSTAL", "WEIRDFLOAT", 
+	"ANTELOPE", "BEETLE", "SHARK", "BIRD", "FISH", "FLYINGLIZARD", "BUTTERFLY", "RODENT", "COW", "TRICERATOPS", "CAT",
+	"FLYINGSNAKE", "STRIDER", "TREX", "SIXLEGCOW", "TWOLEGANTELOPE", "SIXLEGCAT", "GRUNT", "BLOB", "SPIDER", "QUAD", "FLOATSPIDER", "SWIMCOW",
+	"SWIMRODENT", "FIEND", "FIENDFISHBIG", "FIENDFISHSMALL", "JELLYFISH", "CRAB", "ROCKCREATURE", "MINIFIEND", "WEIRDROLL", "WEIRDCRYSTAL", "WEIRDFLOAT",
 	"WEIRDBUTTERFLY"
 }
 
-SEED_TYPE_PATH = 
+SEED_TYPE_PATH =
 {
 	["Fighter"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN",
 	["Dropship"]="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.SCENE.MBIN",
@@ -22,31 +22,31 @@ SEED_TYPE_PATH =
 	["Royal"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
 	["Alien"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
 	["Sail"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
-	
+
 	["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
 	["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
-	
+
 	["FREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTER_PROC.SCENE.MBIN",
 	["CAPITALFREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
 	["CREIGHTER"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/CAPITALFREIGHTER_PROC.SCENE.MBIN",
-	
+
 	["FREIGHTERSMALL"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERSMALL_PROC.SCENE.MBIN",
 	["FREIGHTERTINY"]="MODELS/COMMON/SPACECRAFT/INDUSTRIAL/FREIGHTERTINY_PROC.SCENE.MBIN",
-	
+
 	["SCIENCEFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/SCIENCEFRIGATELOD0.SCENE.MBIN",
 	["SUPPORTFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/SUPPORTFRIGATELOD0.SCENE.MBIN",
 	["INDUSTRIALFRIGAT"]="MODELS/COMMON/SPACECRAFT/FRIGATES/INDUSTRIALFRIGATELOD0.SCENE.MBIN",
 	["COMBATFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/COMBATFRIGATELOD0.SCENE.MBIN",
 	["DIPLOMATICFRIGAT"]="MODELS/COMMON/SPACECRAFT/FRIGATES/DIPLOMATICFRIGATELOD0.SCENE.MBIN",
 	["LIVINGFRIGATE"]="MODELS/COMMON/SPACECRAFT/FRIGATES/LIVINGFRIGATELOD0.SCENE.MBIN",
-	
+
 	["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN",
 	["POLICEFREIGHTER"]="MODELS/COMMON/SPACECRAFT/POLICE/POLICEFREIGHTER.SCENE.MBIN",
-	
+
 	["NPCFIFTH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCFIFTH.SCENE.MBIN",
-	["NPCFOURTH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCFOURTH.SCENE.MBIN",	
+	["NPCFOURTH"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCFOURTH.SCENE.MBIN",
 	["NPCGEK"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCGEK.SCENE.MBIN",
-	["NPCKORVAX"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCKORVAX.SCENE.MBIN",	
+	["NPCKORVAX"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCKORVAX.SCENE.MBIN",
 	["NPCVYKEEN"]="MODELS/COMMON/PLAYER/PLAYERCHARACTER/NPCVYKEEN.SCENE.MBIN",
 
 	["QUADRUPED"] = "MODELS/COMMON/ROBOTS/QUADRUPED.SCENE.MBIN",
@@ -89,7 +89,7 @@ SEED_TYPE_PATH =
 	["WEIRDBUTTERFLY"] = "MODELS/PLANETS/CREATURES/WEIRD/WEIRDBUTTERFLY.SCENE.MBIN",
 
 	["PLANET"]="MODELS/SPACE/PLANETS/PLANETMESH.SCENE.MBIN",
-	
+
 }
 
 -- USER_SEED_LIST = --Add your own seeds here. If you only want own seeds set the numbers above to 0.  -- Commented out 20 March 2022, unused
@@ -98,7 +98,7 @@ SEED_TYPE_PATH =
 	-- {
 	-- "-4266666232903262234", --HORIZOSHIP
 	-- "-8174559354674307366", --ALPHAVSHIP
-	-- }, 
+	-- },
 	-- ["DROPSHIP"] =
 	-- {
 	-- --add your DROPSHIP seeds here
@@ -110,7 +110,7 @@ SEED_TYPE_PATH =
 	-- ["SHUTTLE"] =
 	-- {
 	-- --add your SHUTTLE seeds here
-	-- }, 
+	-- },
 	-- ["ROYAL"] =
 	-- {
 	-- --add your ROYAL seeds here
@@ -118,11 +118,11 @@ SEED_TYPE_PATH =
 	-- ["ALIEN"] =
 	-- {
 	-- --add your ALIEN seeds here
-	-- },	
+	-- },
 	-- ["SAIL"] =
 	-- {
 	-- --add your SAILSHIP seeds here
-	-- },		
+	-- },
 	-- ["MULTITOOL"] =
 	-- {
 		-- "-3613125059207465828", --REZOSUZ65
@@ -143,8 +143,8 @@ function GetSeed()
 	local HEX = {"0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"}
 	if not RANDOMSEED_INIT then
 		math.randomseed(82398*os.time())
-		-- math.random() 
-		-- math.random() 
+		-- math.random()
+		-- math.random()
 		-- math.random()
 		RANDOMSEED_INIT = true
 	end
@@ -157,11 +157,11 @@ end
 function HexToDec(number)
 	if type(number) == "number" then return number
 	elseif string.find(tostring(number),"0x") then return tonumber(number)
-	else return tonumber(number,16) 
+	else return tonumber(number,16)
 	end
 end
 
-GENERIC_ANIMATION_FILE = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" 
+GENERIC_ANIMATION_FILE = "MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN"
 
 ANIM_TEMPLATE_ALL = ""
 QUICK_ACTION_BUTTON_ALL = ""
@@ -232,7 +232,7 @@ local GENERIC_REWARD_ENTRY =
 return GENERIC_REWARD_ENTRY
 end
 
-function CreateRewardMainEntry(REWARD_ID, SUB_ENTRY) 
+function CreateRewardMainEntry(REWARD_ID, SUB_ENTRY)
 local GENERIC_REWARD_MAIN_ENTRY =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
@@ -350,7 +350,7 @@ return ACTION_TRIGGER_COMPONENT
 end
 
 function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
-				
+
 				local ICON = ""
 				if ANIM_ID == "FIGHTER" then
 					ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.TWITCH.SHIP11.DDS"
@@ -373,7 +373,7 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
 				else ICON = "TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS"
 				end
 
-				
+
 QUICK_ACTION_BUTTON_TEMPLATE =
 [[
     <Property value="GcPlayerEmote.xml">
@@ -430,7 +430,7 @@ function CreateSeedRewardLists()
   local count = 1000
   local SEED_COUNT = 1
   print("starting big loop...")
-	for i=1,#SELECTED_SEED_TYPES,1 do 
+	for i=1,#SELECTED_SEED_TYPES,1 do
 			local Seed = ""
 			local SREA = {}
 			local SST = SELECTED_SEED_TYPES[i]
@@ -458,29 +458,29 @@ end
 math.randomseed(os.time())
 CreateSeedRewardLists()
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6A.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
 ["NMS_VERSION"]     = "4.08",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{  
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
 							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]               = ANIM_TEMPLATE_ALL
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
 							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]                 = ACTION_TRIGGER_COMPONENT
 						}
@@ -488,20 +488,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
 							["ADD"]                 = QUICK_ACTION_BUTTON_ALL
 						}
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
+							["PRECEDING_KEY_WORDS"] = {"GenericTable"},
 							["ADD"]                 = CUSTOM_GENERICREWARD_ALL
 						}
 					}
@@ -509,31 +509,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		}
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
+  <Property name="NodeData" />
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
+    <Property name="Rotations" />
+	<Property name="Translations" />
 	<Property name="Scales" />
-    </Property>  
-  </Property>	
+    </Property>
+  </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
+    <Property name="Rotations" />
+	<Property name="Translations" />
+	<Property name="Scales" />
  </Property>
-</Data>	
-]]			
+</Data>
+]]
 		}
 	}
 }

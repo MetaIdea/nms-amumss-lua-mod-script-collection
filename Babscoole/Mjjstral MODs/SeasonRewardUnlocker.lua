@@ -77,7 +77,7 @@ REWARDS_4 = {
 	"RS_S4_PHASE3",
 	"RS_S4_PHASE4",
 	"RS_S4_PHASE5",
-	"RS_S4_PARTY",	
+	"RS_S4_PARTY",
 }
 
 REWARDS_5 = {
@@ -237,7 +237,7 @@ REWARDS_8 = {
 	-- "RS_S9_S5M5",
 	-- "RS_S9_S5M6",
 	-- "R_S9_TREE_SHIP",
-	-- "R_S9_TREE_EXO", 
+	-- "R_S9_TREE_EXO",
 	-- "R_S9_TREE_WEP",
 	-- "R_S9_TREE_SUIT",
 	-- "R_S9_TREE_PART",
@@ -253,7 +253,7 @@ REWARDS_NORMANDY = {
 	"RS_S2_SPEC",
 }
 
-QUICK_ACTION_LIST = 
+QUICK_ACTION_LIST =
 {
 	"S1_REWARDS",
 	"S2_REWARDS",
@@ -263,91 +263,91 @@ QUICK_ACTION_LIST =
 	"S6_REWARDS",
 	"S7_REWARDS",
 	"S8_REWARDS",
-	-- "S9_REWARDS",	
+	-- "S9_REWARDS",
 	"S1_GV",
-	"S3_NORMANDY",	
+	"S3_NORMANDY",
 }
 
-QUICK_ACTION_MENU = 
+QUICK_ACTION_MENU =
 {
-	["S1_REWARDS"] = 
+	["S1_REWARDS"] =
 	{
 		["TITLE"]  = "Unlock Season 1 Reward",
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.1.DDS",
 		["ANIM"]   = "Unlock1Reward",
 		["REWARD"] = REWARDS_1
 	},
-	["S2_REWARDS"] = 
+	["S2_REWARDS"] =
 	{
 		["TITLE"]  = "Unlock Season 2 Reward",
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.2.DDS",
 		["ANIM"]   = "UnlockS2Reward",
 		["REWARD"] = REWARDS_2
 	},
-	["S3_REWARDS"] = 
+	["S3_REWARDS"] =
 	{
 		["TITLE"]  = "Unlock Season 3 Reward",
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.3.DDS",
 		["ANIM"]   = "UnlockS3Reward",
-		["REWARD"] = REWARDS_3		
+		["REWARD"] = REWARDS_3
 	},
-	["S4_REWARDS"] = 
+	["S4_REWARDS"] =
 	{
 		["TITLE"]  = "Unlock Season 4 Reward",
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.4.DDS",
 		["ANIM"]   = "UnlockS4Reward",
-		["REWARD"] = REWARDS_4		
+		["REWARD"] = REWARDS_4
 	},
-	["S5_REWARDS"] = 
+	["S5_REWARDS"] =
 	{
 		["TITLE"]  = "Unlock Season 5 Reward",
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.5.DDS",
 		["ANIM"]   = "UnlockS5Reward",
-		["REWARD"] = REWARDS_5		
+		["REWARD"] = REWARDS_5
 	},
-	["S6_REWARDS"] = 
+	["S6_REWARDS"] =
 	{
 		["TITLE"]  = "Unlock Season 6 Reward",
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.6.DDS",
 		["ANIM"]   = "UnlockS6Reward",
-		["REWARD"] = REWARDS_6		
+		["REWARD"] = REWARDS_6
 	},
-	["S7_REWARDS"] = 
+	["S7_REWARDS"] =
 	{
 		["TITLE"]  = "Unlock Season 7 Reward",
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.7.DDS",
 		["ANIM"]   = "UnlockS7Reward",
-		["REWARD"] = REWARDS_7		
+		["REWARD"] = REWARDS_7
 	},
-	["S8_REWARDS"] = 
+	["S8_REWARDS"] =
 	{
 		["TITLE"]  = "Unlock Season 8 Reward",
 		["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.8.DDS",
 		["ANIM"]   = "UnlockS8Reward",
-		["REWARD"] = REWARDS_8		
+		["REWARD"] = REWARDS_8
 	},
-	-- ["S9_REWARDS"] = 
+	-- ["S9_REWARDS"] =
 	-- {
 		-- ["TITLE"]  = "Unlock Season 9 Reward",
 		-- ["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\BYTEBEAT\BYTEBEAT.9.DDS",
 		-- -- ["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.9.DDS",
 		-- ["ANIM"]   = "UnlockS9Reward",
-		-- ["REWARD"] = REWARDS_9		
-	-- },		
-	["S1_GV"] = 
+		-- ["REWARD"] = REWARDS_9
+	-- },
+	["S1_GV"] =
 	{
 		["TITLE"]  = "Unlock Golden Vector Reward",
 		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.1.DDS",
 		["ANIM"]   = "UnlockGVReward",
-		["REWARD"] = REWARDS_GVECTOR	
+		["REWARD"] = REWARDS_GVECTOR
 	},
-	["S3_NORMANDY"] = 
+	["S3_NORMANDY"] =
 	{
 		["TITLE"]  = "Unlock Normandy Reward",
 		["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.2A.DDS",
 		["ANIM"]   = "UnlockNorReward",
-		["REWARD"] = REWARDS_NORMANDY		
-	},	
+		["REWARD"] = REWARDS_NORMANDY
+	},
 }
 
 function GetAnim(ANIM)
@@ -396,7 +396,7 @@ return [[
                 <Property name="Anim" value="]] .. ANIM .. [[" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>	
+              </Property>
               <Property name="Action">
 ]] .. REWARD_ACTIONS .. [[
               </Property>
@@ -408,9 +408,9 @@ return [[
       <Property name="PersistentState" value="" />
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
-    </Property>	
+    </Property>
 ]]
-end	
+end
 
 function GetEmote(TITLE, ANIM, ICON)
 return [[
@@ -436,7 +436,7 @@ return [[
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
       </Property>
-    </Property>	
+    </Property>
 ]]
 end
 ANIMS = ""
@@ -453,76 +453,76 @@ for i=1,#QUICK_ACTION_LIST,1 do
 ]]
 	end
 	TRIGGERS = TRIGGERS .. GetTrigger(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], REWARD_ACTIONS)
-    REWARD_ACTIONS = ""	
+    REWARD_ACTIONS = ""
 	EMOTEMENU = EMOTEMENU .. GetEmote(QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["TITLE"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ANIM"], QUICK_ACTION_MENU[QUICK_ACTION_LIST[i]]["ICON"])
-end		
+end
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "4.07",
-["MODIFICATIONS"]   = 
+["NMS_VERSION"]     = "4.08",
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{  
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
 							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]        = "ADDafterSECTION",
 							["ADD"]               = ANIMS
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
 							["ADD_OPTION"]          = "ADDafterSECTION",
-							["ADD"]                 = TRIGGERS						
+							["ADD"]                 = TRIGGERS
 						}
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["ADD"]                 = EMOTEMENU						
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
+							["ADD"]                 = EMOTEMENU
 						}
 					}
 				}
 			}
-		}		
+		}
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
+  <Property name="NodeData" />
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
+    <Property name="Rotations" />
+	<Property name="Translations" />
 	<Property name="Scales" />
-    </Property>  
-  </Property>	
+    </Property>
+  </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
+    <Property name="Rotations" />
+	<Property name="Translations" />
+	<Property name="Scales" />
  </Property>
-</Data>	
-]]			
+</Data>
+]]
 		}
 	}
 }

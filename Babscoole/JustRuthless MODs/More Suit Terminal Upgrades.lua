@@ -3,12 +3,12 @@ FileName    = "More Suit Terminal Upgrades.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole and DarkScythe"
-NMS_Version = "4.07"
+NMS_Version = "4.08"
 
 -- File Sources --
 FileSource1 = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/COMMONPARTS/CRYOCHAMBER/ENTITIES/CRYOCHAMBERINTERACTION.ENTITY.MBIN"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 	["MOD_FILENAME"]  = FileName,
 	["MOD_AUTHOR"]    = ModAuthor,
@@ -19,11 +19,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 	["MODIFICATIONS"] =
 		{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = FileSource1,
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{-- makes it possible to interact with suit terminal more than once
 							["VALUE_CHANGE_TABLE"] =

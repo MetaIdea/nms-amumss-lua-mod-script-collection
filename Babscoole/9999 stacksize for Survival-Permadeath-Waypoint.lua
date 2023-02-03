@@ -1,22 +1,22 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "stackmod.pak",
 ["MOD_AUTHOR"]    = "GrandTickler",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"] = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyInventoryStackSizeOptionData.xml",},
 							["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Default", "9999"},
 								{"Personal", "9999"},
@@ -35,7 +35,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Normal","GcDifficultyInventoryStackSizeOptionData.xml",},
 							["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Freighter", "20"},
 							}
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Low","GcDifficultyInventoryStackSizeOptionData.xml",},
 							["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Default", "9999"},
 								{"Personal", "9999"},
@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Low","GcDifficultyInventoryStackSizeOptionData.xml",},
 							["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Default", "5"},
 								{"Personal", "10"},
@@ -77,9 +77,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MaintenanceObject", "10"},
 							}
 						},
-					} 
+					}
 				}
 			}
 		}
-	}	
+	}
 }

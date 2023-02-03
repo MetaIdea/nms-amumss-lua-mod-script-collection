@@ -3,12 +3,12 @@ FileName = "Keep Talking Chef.pak" -- can be changed to the name you want the mo
 ModAuthor = "JustRuthless" -- only for reference
 LuaAuthor = "JustRuthless" -- only for reference
 ModMaintenance = "Babscoole"
-NMS_Version = "4.07" -- only for reference
+NMS_Version = "4.08" -- only for reference
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]    = FileName,
   ["MOD_AUTHOR"]      = ModAuthor,
@@ -18,18 +18,18 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"] 	= {FileSource1},
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]   = {"Id","EXOTIC_CHEF","Cost","C_NEXUSCHEF1"},
 							["REPLACE_TYPE"] 	= "ALL",
 							["VALUE_MATCH"] 	= "False",
 							["VALUE_MATCH_TYPE"] 	= "STRING",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"KeepOpen",	"True",},
 							},
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "ALL",
 							["VALUE_MATCH"] 	= "False",
 							["VALUE_MATCH_TYPE"] 	= "STRING",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"KeepOpen",	"True",},
 							},
@@ -49,7 +49,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] 	= "ALL",
 							["VALUE_MATCH"] 	= "False",
 							["VALUE_MATCH_TYPE"] 	= "STRING",
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"KeepOpen",	"True",},
 							},

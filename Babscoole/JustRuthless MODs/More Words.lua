@@ -598,7 +598,7 @@ end
 
 -- Add Word Function --
 local function AddWord(race, category, usecategory)
-return 
+return
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -620,7 +620,7 @@ end
 
 -- Add Reward Function --
 local function AddReward(id)
-return 
+return
 [[
             <Property value="NMSString0x10.xml">
               <Property name="Value" value="]]..id..[[" />
@@ -635,7 +635,7 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "4.07"
+NMS_Version = "4.08"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
@@ -644,7 +644,7 @@ FileSource3 = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE/
 FileSource4 = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PROPS/INTERACTIVE/WORDSTATION/ENTITIES/WORDSTATION.ENTITY.MBIN"
 FileSource5 = "MODELS/SPACE/ATLASSTATION/MODULARPARTS/INTERIOR/PATHORB/PATHORB/ENTITIES/ORBSTONE_1.ENTITY.MBIN"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]    = FileName,
   ["MOD_AUTHOR"]      = ModAuthor,
@@ -655,11 +655,11 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MODIFICATIONS"]   =
   {
     {
-      ["MBIN_CHANGE_TABLE"] = 
-      { 
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             -- RewardTable
           }
@@ -667,11 +667,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       }
     },
     {
-      ["MBIN_CHANGE_TABLE"] = 
+      ["MBIN_CHANGE_TABLE"] =
       {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource2,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             -- AlienPuzzleTable
           }
@@ -679,11 +679,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       }
     },
     {
-      ["MBIN_CHANGE_TABLE"] = 
+      ["MBIN_CHANGE_TABLE"] =
       {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource3,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             { -- replaces the reward for Knowledge Stones to a newly added reward
               ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
@@ -697,11 +697,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       }
     },
     {
-      ["MBIN_CHANGE_TABLE"] = 
+      ["MBIN_CHANGE_TABLE"] =
       {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource4,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             { -- replaces the reward for Word Stations / Encyclopedias to a newly added reward
               ["SPECIAL_KEY_WORDS"] = {"Reward", "WORD"},
@@ -715,11 +715,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       }
     },
     {
-      ["MBIN_CHANGE_TABLE"] = 
+      ["MBIN_CHANGE_TABLE"] =
       {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource5,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             { -- replaces the reward for Atlas Orbs to a newly added reward
               ["SPECIAL_KEY_WORDS"] = {"Reward", "TEACHWORD_ATLAS"},
@@ -741,7 +741,7 @@ local AlienPuzzleTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][2]["MBIN_
 -- Reward Table Changes --
 for i = 1, #WordChanges do
   local WordID = WordChanges[i][1][1]
-      
+
   RewardTable[#RewardTable+1] =
   {
     ["SPECIAL_KEY_WORDS"] = {"Id", WordID},
@@ -754,7 +754,7 @@ end
 
 for i = 1, #WordChanges do
   local WordID = WordChanges[i][1][1]
-      
+
   RewardTable[#RewardTable+1] =
   {
     ["SPECIAL_KEY_WORDS"] = {"Id", WordID, "UseCategory", "False"},
@@ -772,7 +772,7 @@ for i = 1, #WordChanges do
     Category    = Change[j][2]
     UseCategory = Change[j][3]
     Amount      = Change[j][4]
-      
+
     RewardTable[#RewardTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", WordID, "PercentageChance", "IGNORE"},
@@ -788,7 +788,7 @@ for i = 1, #NewWordChanges do
 
   for j = 1, #Change do
     Race = Change[j][1]
-      
+
     RewardTable[#RewardTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", "WORD"},
@@ -807,7 +807,7 @@ for i = 1, #NewWordChanges do
     Category    = Change[j][2]
     UseCategory = Change[j][3]
     Amount      = Change[j][4]
-      
+
     RewardTable[#RewardTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", NewWordID, "PercentageChance", "IGNORE"},
@@ -826,7 +826,7 @@ for i = 1, #PlaqueChanges do
   for j = 1, #Change do
     WordID = Change[j][1]
     Amount = Change[j][2]
-      
+
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Name", OptionName},
@@ -845,7 +845,7 @@ for i = 1, #MonolithChanges do
     OptionName = Change[j][1]
     WordID     = Change[j][2]
     Amount     = Change[j][3]
-      
+
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", MonolithID, "Name", OptionName},

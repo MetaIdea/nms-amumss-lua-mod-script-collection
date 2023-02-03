@@ -1,21 +1,21 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "Sandworms_Overhaul.pak",
 ["MOD_AUTHOR"]    = "Redmas",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.70",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",}, 
-							["VALUE_CHANGE_TABLE"] = 
+							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinScale",            "80"},     -- Original "50"
 								{"MaxScale",            "100"},    -- Original "50"
@@ -26,34 +26,34 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SwarmMovementRadius", "1000"},   -- Original "100"
 								{"SwarmMovementType",   "Circle"}, -- Original "FollowPlayer"
 								{"MaxSpeed",            "90"},    -- Original "80"
-                {"CircleAttractor",     "Player"},									
+                {"CircleAttractor",     "Player"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["PRECEDING_KEY_WORDS"] = {"PredatorProbabilityModifier",}, 							
-							["VALUE_CHANGE_TABLE"] = 
+							["PRECEDING_KEY_WORDS"] = {"PredatorProbabilityModifier",},
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"CreatureRoleFrequencyModifier",	"Never"}, -- Original "Normal"								
+								{"CreatureRoleFrequencyModifier",	"Never"}, -- Original "Normal"
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["PRECEDING_KEY_WORDS"] = {"HerbivoreProbabilityModifier",}, 							
-							["VALUE_CHANGE_TABLE"] = 
+							["PRECEDING_KEY_WORDS"] = {"HerbivoreProbabilityModifier",},
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"CreatureRoleFrequencyModifier",	"High"}, -- Original "Normal"								
+								{"CreatureRoleFrequencyModifier",	"High"}, -- Original "Normal"
 							}
-						},						
+						},
 					},
 				},
 				{
 					["MBIN_FILE_SOURCE"] = "GCCREATUREGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",						
-							["VALUE_CHANGE_TABLE"] 	= 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"SandWormChangeDirectionTime", "0.001"},  -- Original "1"
 								{"SandWormSteerAdjustTime",     "0.2"},    -- Original "2"
@@ -62,23 +62,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SandWormJumpHeight",          "3"},     -- Original "120"
 								{"SandWormJumpTime",            "0.0001"}, -- Original "3"
 								{"SandWormSubmergeDepth",       "1"},      -- Original "100"
-								{"SandWormSubmergeTime",        "1"},      -- Original "3"	
+								{"SandWormSubmergeTime",        "1"},      -- Original "3"
 								{"SandWormSurfaceTime",         "3"},      -- Original "1"
 								{"SandWormMaxJumps",            "1500"},   -- Original "5"
 								{"SandWormDespawnDist",         "1500"},   -- Original "1500"
-								{"SandWormSpawnTimer",          "30"},     -- Original "300"									
+								{"SandWormSpawnTimer",          "30"},     -- Original "300"
 							}
-						},				
-					}, 
+						},
+					},
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkCreatureTailComponentData.xml",},
-							["ADD_OPTION"] = "ADDafterSECTION",						
-							["ADD"] = 
+							["ADD_OPTION"] = "ADDafterSECTION",
+							["ADD"] =
 [[
     <Property value="GcInteractionComponentData.xml">
       <Property name="InteractionAction" value="PressButton" />
@@ -166,7 +166,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="AlienRace" value="None" />
       </Property>
       <Property name="AttractDistanceSq" value="100" />
-      <Property name="SecondaryMeshAlwaysVisible" value="False" />	  
+      <Property name="SecondaryMeshAlwaysVisible" value="False" />
       <Property name="RepeatInteraction" value="True" />
       <Property name="UseInteractCamera" value="False" />
       <Property name="BlendToCameraTime" value="1.5" />
@@ -239,7 +239,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="InteractFiendCrimeChance" value="1" />
       <Property name="InteractCrimeLevel" value="0" />
-      <Property name="NotifyEncounter" value="False" />	  
+      <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
         <Property name="AltIds" />
@@ -288,40 +288,40 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="CanCollectInMech" value="True" />
     </Property>
 ]]
-						},					
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","Data",},
-							["INTEGER_TO_FLOAT"] = "FORCE",								
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Mass",           "3"},   -- Original "1"
 								{"Friction",       "0"},   -- Original "0.5"
 								{"AngularDamping", "0.8"}, -- Original "0.2"
-								{"Gravity",        "90"},  -- Original "20"								
+								{"Gravity",        "90"},  -- Original "20"
 							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},							
-							["VALUE_CHANGE_TABLE"] = 
+							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"Gravity", "90"}, -- Original "20"								
+								{"Gravity", "90"}, -- Original "20"
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
-							["REPLACE_TYPE"] = "RAW",							
-							["VALUE_CHANGE_TABLE"] = 
+							["REPLACE_TYPE"] = "RAW",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{
 									[[<Property name="ChainEnds" />]],
 									[[<Property name="ChainEnds">]]
-								},						
+								},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
 							["LINE_OFFSET"] = "+3",
-							["ADD"] = 
+							["ADD"] =
 [[
           <Property value="NMSString0x20.xml">
             <Property name="Value" value="NeckJNT" />
@@ -340,26 +340,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["REPLACE_TYPE"] = "RAW",							
-							["VALUE_CHANGE_TABLE"] = 
+							["REPLACE_TYPE"] = "RAW",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{
 									[[<Property name="ReplacementImpacts" />]],
 									[[<Property name="ReplacementImpacts">]]
-								},						
+								},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},						
-							["VALUE_CHANGE_TABLE"] = 
+							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"DeathEffect", "FIENDDEATH"}, -- Original ""								
+								{"DeathEffect", "FIENDDEATH"}, -- Original ""
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
 							["LINE_OFFSET"] = "+7",
-							["ADD"] = 
+							["ADD"] =
 [[
         <Property value="GcReplacementEffectData.xml">
           <Property name="Id" value="LASERCREATURE" />
@@ -375,13 +375,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Components",},
 							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] = 
+							["ADD"] =
 [[
     <Property value="GcShootableComponentData.xml">
       <Property name="Health" value="300000" />
       <Property name="AutoAimTarget" value="False" />
       <Property name="PlayerOnly" value="False" />
-      <Property name="IgnorePlayer" value="False" />	  
+      <Property name="IgnorePlayer" value="False" />
       <Property name="ImpactShake" value="False" />
       <Property name="ImpactShakeEffect" value="SHOOTABLESHAKE" />
       <Property name="ForceImpactType" value="GcProjectileImpactType.xml">
@@ -400,19 +400,19 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="HitEffectEnabled" value="True" />
       <Property name="HitEffectEntireModel" value="True" />
       <Property name="IsArmoured" value="False" />
-      <Property name="CouldCountAsArmourForParent" value="True" />	  
+      <Property name="CouldCountAsArmourForParent" value="True" />
       <Property name="IgnoreTerrainEditKills" value="False" />
       <Property name="NameOverride" value="" />
       <Property name="RequiredTech" value="" />
       <Property name="DamageMultiplier" value="FIEND" />
       <Property name="IsPiercable" value="False" />
       <Property name="IsAffectedByPiercing" value="False" />
-    </Property>	  
+    </Property>
 ]]
-						},						
+						},
 					}
-				},				
+				},
 			},
 		},
-	},	
+	},
 }

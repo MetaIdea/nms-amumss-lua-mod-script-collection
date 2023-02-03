@@ -919,7 +919,7 @@ for i = 1,#MISC_ON_FREIGHTER_ID_TABLE do
 	}
 	Change_Table_Array[#Change_Table_Array + 1] = temp_table_miscfreighterallow
  end
- 
+
  -- Tech and Bio freighter rooms on planetbases after Endurance update
 if FREIGHTERROOMS_ON_PLANETBASE then
 	for i = 1,#FREIGHTERROOMS_ON_PLANETBASE_ID_TABLE do

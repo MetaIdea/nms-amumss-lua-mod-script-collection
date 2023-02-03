@@ -12,7 +12,7 @@ ADD_BLANK =
     <Property name="SelectableObjects" />
   </Property>
 </Data>
-]]	
+]]
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -24,7 +24,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 	{
 		{
 			["MBIN_CHANGE_TABLE"] =
-			{ 
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] =
@@ -32,241 +32,241 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "DE_PET_ROCK", "ID", "BP_SALVAGE"},
 							--["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}						
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "DE_PLANT_MED", "ID", "FUEL1"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"ID", "OXYGEN"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "DE_WATERPLANT_A", "ID", "FUEL1"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"ID", "CATALYST1"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "DE_WATERPLANT_S", "ID", "WATERPLANT"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"ID", "CATALYST1"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_TGUILD_GIFT2", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_TGUILD_GIFT3", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_TGUILD_GIFT4", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "S3_SALVAGE", "ID","BP_SALVAGE",},
 							["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "6"},
 								{"AmountMax", "14"},
 							}
-						},						
+						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "S3_SALVAGE", "ID","BP_SALVAGE",},
 							["SECTION_ACTIVE"] = {2},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Amount", "6"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "BP_SALVAGE_ONLY", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "BP_SALVAGE", "ID", "BP_SALVAGE"},
 							["SECTION_ACTIVE"] = {8},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_COMM_UG_HARD", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_MB_LOW", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_MB_MED", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_MB_HIGH", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_MB_MEGA", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}								
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "R_PIRATEBOARD_A", "ID", "BP_SALVAGE"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"AmountMin", "6"},
-								{"AmountMax", "14"}							
+								{"AmountMax", "14"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE",},
 							["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"PercentageChance", "50"},						
+								{"PercentageChance", "50"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"PercentageChance", "100"},						
+								{"PercentageChance", "100"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {4,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"PercentageChance", "80"},						
+								{"PercentageChance", "80"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "FUEL2"},
 							["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "60"},
-								{"AmountMax", "90"}								
+								{"AmountMax", "90"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "CATALYST1"},
 							["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "60"},
-								{"AmountMax", "90"}						
+								{"AmountMax", "90"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "OXYGEN"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "60"},
-								{"AmountMax", "90"}						
+								{"AmountMax", "90"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "AMMO"},
 							["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "40"},
-								{"AmountMax", "90"}						
+								{"AmountMax", "90"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "CATALYST2"},
 							["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "60"},
-								{"AmountMax", "90"}						
+								{"AmountMax", "90"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "FUEL2"},
 							["SECTION_ACTIVE"] = {2},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "60"},
-								{"AmountMax", "90"}						
+								{"AmountMax", "90"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "AMMO"},
 							["SECTION_ACTIVE"] = {2},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "60"},
-								{"AmountMax", "90"}						
+								{"AmountMax", "90"}
 							}
 						},
 						{
@@ -335,106 +335,106 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "CATALYST2"},
 							["SECTION_ACTIVE"] = {2},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "100"},
-								{"AmountMax", "150"}						
+								{"AmountMax", "150"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "CATALYST1"},
 							["SECTION_ACTIVE"] = {2},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "100"},
-								{"AmountMax", "150"}						
+								{"AmountMax", "150"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "POWERCELL"},
 							["SECTION_ACTIVE"] = {2},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "2"},
-								{"AmountMax", "5"}						
+								{"AmountMax", "5"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "PRODFUEL2"},
 							["SECTION_ACTIVE"] = {2},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "2"},
-								{"AmountMax", "5"}						
+								{"AmountMax", "5"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "ID", "JELLY"},
 							["SECTION_ACTIVE"] = {1},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "2"},
-								{"AmountMax", "5"}						
+								{"AmountMax", "5"}
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {16,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"PercentageChance", "7"},						
+								{"PercentageChance", "7"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"PercentageChance", "7"},						
+								{"PercentageChance", "7"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Common","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml", "ID", "AMMO"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1"},
 								{"AmountMax", "2"},
-								{"ID", "SCRAP_GOODS"},								
+								{"ID", "SCRAP_GOODS"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml", "ID", "AMMO"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1"},
 								{"AmountMax", "2"},
-								{"ID", "SCRAP_GOODS"},								
+								{"ID", "SCRAP_GOODS"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml", "ID", "PRODFUEL2"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "2"},
-								{"AmountMax", "5"},							
+								{"AmountMax", "5"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml", "ID", "MICROCHIP"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"AmountMax", "5"},							
+								{"AmountMax", "5"},
 							}
 						},
 						-- {
 							-- ["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
 							-- ["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							-- ["SECTION_ACTIVE"] = {4,},
-							-- ["VALUE_CHANGE_TABLE"] = 
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
-								-- {"PercentageChance", "10"},						
+								-- {"PercentageChance", "10"},
 							-- }
 						-- },
 						{
@@ -586,32 +586,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {11,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"PercentageChance", "10"},	
+								{"PercentageChance", "10"},
 								{"AmountMin", "100"},
-								{"AmountMax", "150"},							
+								{"AmountMax", "150"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {12,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"PercentageChance", "10"},	
+								{"PercentageChance", "10"},
 								{"AmountMin", "2"},
-								{"AmountMax", "5"},							
+								{"AmountMax", "5"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Small","GcRewardTableItemList.xml",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {13,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "2"},
-								{"AmountMax", "5"},							
+								{"AmountMax", "5"},
 							}
 						},
 						{
@@ -622,7 +622,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "CRATE", "Rare","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml", "UseInventoryChoiceOverride","False",},
 							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] = 
+							["ADD"] =
 [[
               <Property name="List">
                 <Property value="GcRewardTableItem.xml">
@@ -884,30 +884,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"ID", "SALVAGE_TECH1"},	
-								{"AmountMax", "5"},							
+								{"ID", "SALVAGE_TECH1"},
+								{"AmountMax", "5"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"ID", "TRA_ENERGY2"},	
-								{"AmountMax", "3"},							
+								{"ID", "TRA_ENERGY2"},
+								{"AmountMax", "3"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Common","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"ID", "TRA_MINERALS1"},	
-								{"AmountMax", "10"},							
+								{"ID", "TRA_MINERALS1"},
+								{"AmountMax", "10"},
 							}
 						},
 						{
@@ -919,7 +919,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "BARREL", "Rare","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml", "UseInventoryChoiceOverride","False",},
 							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] = 
+							["ADD"] =
 [[
               <Property name="List">
                 <Property value="GcRewardTableItem.xml">
@@ -1060,7 +1060,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Common","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml", "UseInventoryChoiceOverride","False",},
 							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] = 
+							["ADD"] =
 [[
               <Property name="List">
                 <Property value="GcRewardTableItem.xml">
@@ -1237,7 +1237,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Rare","GcRewardTableCategory.xml", "Medium","GcRewardTableItemList.xml", "UseInventoryChoiceOverride","False",},
 							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] = 
+							["ADD"] =
 [[
               <Property name="List">
                 <Property value="GcRewardTableItem.xml">
@@ -1318,11 +1318,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id", "DEBRIS", "Rare","GcRewardTableCategory.xml", "Large","GcRewardTableItemList.xml",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"ID", "TRA_ALLOY1"},
-								{"AmountMin", "3"},									
-								{"AmountMax", "10"},							
+								{"AmountMin", "3"},
+								{"AmountMax", "10"},
 							}
 						},
 					}
@@ -1392,7 +1392,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						},							
+						},
 					}
 				},
 				{
@@ -1401,14 +1401,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "VALUABLE_STUFF"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize", "550"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "WORDSTONE"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active",      "False"},
 								{"PatchSize",   "10000000"},
@@ -1417,21 +1417,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "CRATES"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize", "610"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "DEBRIS"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize", "425"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "FUELCRYSTAL"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize",   "400"},
 								{"RegionScale", "15"},
@@ -1439,14 +1439,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "UNDERGROUND"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize", "250"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "CRYSTAL"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize",   "90"},
 								{"RegionScale", "0.2"},
@@ -1454,7 +1454,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "CRYSTAL2"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize",   "250"},
 								{"RegionScale", "0.15"},
@@ -1462,7 +1462,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "CRYSTAL3"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize",   "90"},
 								{"RegionScale", "0.25"},
@@ -1470,15 +1470,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "RARE_BONES"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize", "275"},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "SCRAPHEAP"},
-							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PatchSize",   "685"},
 								{"RegionScale", "1"},
@@ -1494,7 +1494,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Placement", "CRYSTAL"},
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
 							["SECTION_ACTIVE"] = {3, 4,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage", "10"},
 							}
@@ -1503,11 +1503,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Placement", "FUELCRYSTAL"},
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage", "20"},
 							}
-						},						
+						},
 					}
 				},
 				{
@@ -1516,7 +1516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Placement","WORDSTONE",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",        "0"},
 								{"FlatDensity",     "0"},
@@ -1527,7 +1527,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Placement","WORDSTONE",},
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",        "0"},
 								{"FlatDensity",     "0"},
@@ -1538,7 +1538,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Placement","CRATES",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",        "0.02"},
 								{"FlatDensity",     "0.05"},
@@ -1549,7 +1549,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Placement","CRATES",},
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",        "0"},
 								{"FlatDensity",     "0.002"},
@@ -1557,7 +1557,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"SlopeMultiplier", "0"},
 								{"MaxRegionRadius", "0"},
 							}
-						},							
+						},
 					}
 				},
 				{
@@ -1567,7 +1567,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",        "0"},
 								{"FlatDensity",     "0"},
@@ -1579,7 +1579,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",        "0"},
 								{"FlatDensity",     "0"},
@@ -1591,7 +1591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",        "0.02"},
 								{"FlatDensity",     "0.05"},
@@ -1603,16 +1603,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Placement","GRASSCLUMP",},
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
 							["SECTION_ACTIVE"] = {3,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage",        "0.01"},
 								{"MaxRegionRadius", "0"},
 							}
-						},							
+						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"]  = 
+					["MBIN_FILE_SOURCE"]  =
 					{
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\BARREN.MBIN",
 						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FROZEN.MBIN",
@@ -1626,7 +1626,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Placement", "BIOMEPLANT"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinScale", "0.7"},
 							}
@@ -1634,11 +1634,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Placement", "BIOMEPLANT"},
 							["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Coverage", "10"},
 							}
-						},						
+						},
 					}
 				},
 				{
@@ -1647,13 +1647,13 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinScale", "10"},
 								{"MaxScale", "10"},
 								{"Coverage", "0"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1661,11 +1661,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Cost", "0"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1674,11 +1674,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "Light1"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TransY", "100.99608"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1687,11 +1687,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "Light1"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TransY", "100.963524"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1700,11 +1700,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "FruitLight"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TransY", "103.14326"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1712,15 +1712,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/SCROLLGLOW2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"]  = 
+					["MBIN_FILE_SOURCE"]  =
 					{
 						"MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREBERRY\FIREPLANTGLOWMAT.MATERIAL.MBIN",
 						"MODELS\PLANETS\BIOMES\COMMON\COOKING\FIREBERRY\FIREPLANTMAT.MATERIAL.MBIN",
@@ -1728,11 +1728,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/FIREBERRYPLANT2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1740,11 +1740,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/FIREFLY2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1752,11 +1752,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/SCROLLGLOW2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1764,15 +1764,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/BERRYGLOW2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"]  = 
+					["MBIN_FILE_SOURCE"]  =
 					{
 						"MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY\HEXABERRYFLOATMAT.MATERIAL.MBIN",
 						"MODELS\PLANETS\BIOMES\COMMON\COOKING\HEXABERRY\HEXABERRYORBMAT.MATERIAL.MBIN",
@@ -1780,11 +1780,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/HEXABERRYFRUIT2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1794,7 +1794,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml",},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/IMPULSEGLOW2.DDS"},
 							}
@@ -1802,11 +1802,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml",},
 							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/IMPULSEGLOW2.MASKS.DDS"},
 							}
-						},							
+						},
 					}
 				},
 				{
@@ -1814,11 +1814,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/SCROLLGLOW2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1826,11 +1826,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/JADEPEAS2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1840,11 +1840,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"TkMaterialSampler.xml",},
 							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/JADEPEAS2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1852,11 +1852,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/SCROLLGLOW2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1864,15 +1864,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Map", "TEXTURES/PLANETS/BIOMES/COMMON/COOKING/SCROLLGLOW2.DDS"},
 							}
-						},					
+						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"]  = 
+					["MBIN_FILE_SOURCE"]  =
 					{
 						"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\COMMODITYPLANT.SCENE.MBIN",
 						"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\COMMODITYPLANT1.SCENE.MBIN",
@@ -1881,11 +1881,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "ComPlantLight"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TransY", "100.8841"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1894,11 +1894,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "FuelPlantLight"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TransY", "100.78158"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1907,11 +1907,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "TechPlantLight"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TransY", "100.00274"},
 							}
-						},					
+						},
 					}
 				},
 				{
@@ -1920,8 +1920,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4",},
-							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0.267228"},
 								{"y", "0.6"},
@@ -1930,11 +1930,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"y", "1"},
 							}
-						},						
+						},
 					}
 				},
 				-- {
@@ -1943,12 +1943,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					-- {
 						-- {
 							-- ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
-							-- ["INTEGER_TO_FLOAT"] = "FORCE",	
-							-- ["VALUE_CHANGE_TABLE"] = 
+							-- ["INTEGER_TO_FLOAT"] = "FORCE",
+							-- ["VALUE_CHANGE_TABLE"] =
 							-- {
 								-- {"y", "1"},
 							-- }
-						-- },						
+						-- },
 					-- }
 				-- },
 				{
@@ -1957,12 +1957,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
-							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"y", "0.2"},
 							}
-						},						
+						},
 					}
 				},
 				{
@@ -1971,12 +1971,12 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
-							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"y", "0.1"},
 							}
-						},						
+						},
 					}
 				},
 				{
@@ -1990,39 +1990,39 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
-							["INTEGER_TO_FLOAT"] = "FORCE",	
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0"},
 								{"y", "0"},
 							}
-						},						
+						},
 					}
 				},
 			}
 		}
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
 			["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FLYTRAPPLANT.EXML",
-			["FILE_CONTENT"] = 	ADD_BLANK	
+			["FILE_CONTENT"] = 	ADD_BLANK
 		},
 		{
 			["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FULL.EXML",
-			["FILE_CONTENT"] = 	ADD_BLANK	
+			["FILE_CONTENT"] = 	ADD_BLANK
 		},
 		{
 			["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FULLSAFE.EXML",
-			["FILE_CONTENT"] = 	ADD_BLANK	
+			["FILE_CONTENT"] = 	ADD_BLANK
 		},
 		{
 			["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SPOREVENTPLANT.EXML",
-			["FILE_CONTENT"] = 	ADD_BLANK	
+			["FILE_CONTENT"] = 	ADD_BLANK
 		},
 		{
 			["FILE_DESTINATION"] = "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/TENTACLEPLANT.EXML",
-			["FILE_CONTENT"] = 	ADD_BLANK	
+			["FILE_CONTENT"] = 	ADD_BLANK
 		},
 	}
 }

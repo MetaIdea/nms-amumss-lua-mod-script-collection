@@ -3,25 +3,25 @@
 --"HND_CTRL_CPIT_L", "HND_CPIT_EJCT_R"
 --"HND_CPIT_EJCT_L", "HND_CPIT_EJCT_R"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "VR-SHIP-HEADLIGHTS-TOGGLEABLE.pak",
 ["MOD_AUTHOR"]    = "Mjjstral",
-["NMS_VERSION"]   = "4.07",
+["NMS_VERSION"]   = "4.08",
 ["DESCRIPTION"]   = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = { "Name", "_PlayerCharacter_Mesh" },
 							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] = 
+							["ADD"] =
 [[
 	<Property value="TkSceneNodeData.xml">
 	  <Property name="Name" value="HEADLIGHTS" />
@@ -83,21 +83,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
-			["MBIN_CHANGE_TABLE"] = 
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = { "Components" },
-							["ADD"] = 
+							["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
       <Property name="StartInactive" value="False" />
       <Property name="States">
-	  
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="BOOT" />
           <Property name="Triggers">
@@ -106,18 +106,18 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
                 <Property name="UseMissionClock" value="False" />
-              </Property>		  
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="DISABLE_LIGHT" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
             </Property>
           </Property>
         </Property>
-	  
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="BASE_STATE" />
           <Property name="Triggers">
@@ -132,9 +132,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="HND_CTRL_CPIT_R" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>			  
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="HND_CPIT_EJCT_L" />
@@ -146,7 +146,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="DISABLE_LIGHT" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
             </Property>
             <Property value="GcActionTrigger.xml">
@@ -160,12 +160,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="DISABLE_LIGHT" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="HND_CTRL_CPIT_R" />
           <Property name="Triggers">
@@ -180,7 +180,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="ENABLE_LIGHT" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
             </Property>
             <Property value="GcActionTrigger.xml">
@@ -194,9 +194,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="BASE_STATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
 
@@ -226,12 +226,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="BASE_STATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="ENABLE_LIGHT" />
           <Property name="Triggers">
@@ -258,23 +258,23 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="BASE_STATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
       </Property>
       <Property name="Persistent" value="False" />
       <Property name="PersistentState" value="" />
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
     </Property>
-]]					
+]]
 						}
 					}
-				}		
+				}
 			}
-		}		
+		}
 	}
 }

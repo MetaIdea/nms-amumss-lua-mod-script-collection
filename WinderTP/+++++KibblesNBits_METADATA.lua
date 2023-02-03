@@ -2,7 +2,7 @@
 -- https://www.nexusmods.com/nomanssky/mods/1627
 -- THIS FILE IS MADE FOR COMPATIBILITY WITH OTHER MODS THAT EDIT THE SAME METADATA TABLES
 -- BUT NOT MODIFIED VANILLA SCENES INCLUDING SNAPPOINTS
--- 
+--
 -- PRESS "Y" WHEN ASKED BY AMUMSS TO CREATE A MERGED PAK
 
 POP_IN_RATE =		2		-- RANGES FROM 1 TO 5
@@ -12,12 +12,12 @@ POP_IN_RATE =		2		-- RANGES FROM 1 TO 5
 							-- 4: SLOWER POP IN, SLIGHTLY MORE POP IN/OUT CYCLE AND MORE NOTICEABLE FROM HIGH GROUND, ~1900 OBJECTS CAN BE LOADED AT ONCE
 							-- 5: SLOWER POP IN EVEN ON FOOT, SLIGHTLY MORE AGGRESSIVE POP OUT, AGGRESSIVE POP IN/POP OUT CYCLE, ~1700 OBJECTS CAN BE LOADED AT ONCE
 							-- SEE https://www.nexusmods.com/nomanssky/articles/76 FOR DEMO IMAGES
-							
+
 EVERYTHING_CAN_SCALE = false
 							-- FORCES EVERY ADDED OBJECT TO BE SCALABLE
 							-- SNAPPOINTS WILL NOT SCALE WITH THE OBJECTS
 							-- SOME OBJECTS WITH ANIMATIONS MAY NOT WORK PROPERLY
-							
+
 FORCE_DECOR_TYPE = "Normal"
 							-- CHANGES WHAT SURFACES THE OBJECTS CAN STICK TO
 							-- { Normal, SurfaceNormal, Ceiling, Terrain, Substance, Plant, BuildingSurfaceNormal }
@@ -29,12 +29,12 @@ FORCE_DECOR_TYPE = "Normal"
 							-- Substance: ONLY STICKS TO ORE DEPOSITS, NOT RECOMMENDED
 							-- Plant: ONLY ON APPROPRIATE "Biome" TERRAIN, NOT RECOMMENDED
 							-- BuildingSurfaceNormal: STICKS TO ANY SURFACE, BUT ONLY TO OTHER BASE OBJECTS
-							
+
 OVERRIDE_INACTIVE = true 	-- OVERWRITES BASEBUILDINGTABLE InactiveModel ENTRIES WITH Model VALUE
 							-- BASICALLY SETS LOD MODEL TO ACTUAL MODEL SO OBJECTS DON'T DISAPPEAR AT A DISTANCE
 							-- MORE RESOURCE INTENSIVE IF TURNED ON BUT GREAT FOR SCREENSHOTS / IMMERSION
 							-- MAY ALSO PREVENT OBJECTS FROM DISAPPEARING
-							
+
 BUILD_ANYWHERE = 	false	-- ALLOWS ALL KNB OBJECTS TO BE BUILT ANYWHERE
 							-- BY SETTING BuildableOnFreighter & BuildableOnPlanet TO "True"
 							-- ANY OBJECTS BUILT OUTSIDE BASE PARAMETERS WILL NOT BE INCLUDED IN THE BASE SECTION OF THE SAVE FILE
@@ -74,7 +74,7 @@ KIBBLES_GROUPS = -- BASEBUILDINGTABLE GROUPS
 }
 
 KIBBLES_LINKGRID = -- BASEBUILDINGTABLE LinkGridData
-{	
+{
 	["DECOR"] = [[
         <Property name="Connection" value="GcBaseLinkGridConnectionData.xml">
           <Property name="Network" value="GcLinkNetworkTypes.xml">
@@ -234,13 +234,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Central Point Table",
 			["NameLower"] = "Central Point Table",
 			["Subtitle"] = "Central Point Table",
 			["Description"] = "Central Point Table",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCPNTTBLE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -275,13 +275,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Central Point Cage",
 			["NameLower"] = "Central Point Cage",
 			["Subtitle"] = "Central Point Cage",
 			["Description"] = "Central Point Cage",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCPNTCAGE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -316,13 +316,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Planter Common Desk",
 			["NameLower"] = "Planter Common Desk",
 			["Subtitle"] = "Planter Common Desk",
 			["Description"] = "Planter Common Desk",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNPPCDESK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -357,13 +357,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Drone Common Desk",
 			["NameLower"] = "Drone Common Desk",
 			["Subtitle"] = "Drone Common Desk",
 			["Description"] = "Drone Common Desk",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNPDRCDSK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -398,13 +398,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Common Desk",
 			["NameLower"] = "Common Desk",
 			["Subtitle"] = "Common Desk",
 			["Description"] = "Common Desk",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNPCODESK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -439,13 +439,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Helm Control",
 			["NameLower"] = "Helm Control",
 			["Subtitle"] = "Helm Control",
 			["Description"] = "Helm Control",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNPHECONT_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -480,13 +480,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Curved Side Desk",
 			["NameLower"] = "Curved Side Desk",
 			["Subtitle"] = "Curved Side Desk",
 			["Description"] = "Curved Side Desk",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCURSDESK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -521,13 +521,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Small Monitors",
 			["NameLower"] = "Small Monitors",
 			["Subtitle"] = "Small Monitors",
 			["Description"] = "Small Monitors",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXSMALMONI_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -562,13 +562,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Bridge Engine",
 			["NameLower"] = "Bridge Engine",
 			["Subtitle"] = "Bridge Engine",
 			["Description"] = "Bridge Engine",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBRENGINE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -603,13 +603,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Circular Desk",
 			["NameLower"] = "Circular Desk",
 			["Subtitle"] = "Circular Desk",
 			["Description"] = "Circular Desk",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCIRCDESK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -644,13 +644,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Side Terminal",
 			["NameLower"] = "Side Terminal",
 			["Subtitle"] = "Side Terminal",
 			["Description"] = "Side Terminal",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCPSITERM_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -685,13 +685,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Floor Cap",
 			["NameLower"] = "Floor Cap",
 			["Subtitle"] = "Floor Cap",
 			["Description"] = "Floor Cap",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCPFLOCAP_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -726,13 +726,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Chamber",
 			["NameLower"] = "Chamber",
 			["Subtitle"] = "Chamber",
 			["Description"] = "Chamber",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCRCHAMBR_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -767,13 +767,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Front Platform",
 			["NameLower"] = "Front Platform",
 			["Subtitle"] = "Front Platform",
 			["Description"] = "Front Platform",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLBFRPLAT_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -808,13 +808,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Hover Trolley",
 			["NameLower"] = "Hover Trolley",
 			["Subtitle"] = "Hover Trolley",
 			["Description"] = "Hover Trolley",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXHOVETROL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -849,13 +849,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Control Room Drape 1",
 			["NameLower"] = "Control Room Drape 1",
 			["Subtitle"] = "Control Room Drape 1",
 			["Description"] = "Control Room Drape 1",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCRDRAPE1_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -890,13 +890,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Control Room Drape 2",
 			["NameLower"] = "Control Room Drape 2",
 			["Subtitle"] = "Control Room Drape 2",
 			["Description"] = "Control Room Drape 2",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCRDRAPE2_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -931,13 +931,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Shop Cloth",
 			["NameLower"] = "Shop Cloth",
 			["Subtitle"] = "Shop Cloth",
 			["Description"] = "Shop Cloth",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRSSCLOTH_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -972,13 +972,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Book 1",
 			["NameLower"] = "Book 1",
 			["Subtitle"] = "Book 1",
 			["Description"] = "Book 1",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBOOK1_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1013,13 +1013,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Cannister",
 			["NameLower"] = "Cannister",
 			["Subtitle"] = "Cannister",
 			["Description"] = "Cannister",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCANNISTE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1054,13 +1054,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Cannister Large",
 			["NameLower"] = "Cannister Large",
 			["Subtitle"] = "Cannister Large",
 			["Description"] = "Cannister Large",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCANNLARG_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1095,13 +1095,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Circuit Box",
 			["NameLower"] = "Circuit Box",
 			["Subtitle"] = "Circuit Box",
 			["Description"] = "Circuit Box",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCIRCUBOX_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1136,13 +1136,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Crate",
 			["NameLower"] = "Crate",
 			["Subtitle"] = "Crate",
 			["Description"] = "Crate",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCRATE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1177,13 +1177,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Hard Drive 1",
 			["NameLower"] = "Hard Drive 1",
 			["Subtitle"] = "Hard Drive 1",
 			["Description"] = "Hard Drive 1",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXHDDRIVE1_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1218,13 +1218,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Cannister",
 			["NameLower"] = "Large Cannister",
 			["Subtitle"] = "Large Cannister",
 			["Description"] = "Large Cannister",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLARGCANN_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1259,13 +1259,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Cannisters",
 			["NameLower"] = "Cannisters",
 			["Subtitle"] = "Cannisters",
 			["Description"] = "Cannisters",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNPCANNIS_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1300,13 +1300,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Fan",
 			["NameLower"] = "Fan",
 			["Subtitle"] = "Fan",
 			["Description"] = "Fan",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNPFAN_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1341,13 +1341,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Main Term Monitor",
 			["NameLower"] = "Main Term Monitor",
 			["Subtitle"] = "Main Term Monitor",
 			["Description"] = "Main Term Monitor",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCPMTMONI_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1382,13 +1382,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Dock Station",
 			["NameLower"] = "Dock Station",
 			["Subtitle"] = "Dock Station",
 			["Description"] = "Dock Station",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXDSTATION_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1423,13 +1423,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Mechanical Core",
 			["NameLower"] = "Mechanical Core",
 			["Subtitle"] = "Mechanical Core",
 			["Description"] = "Mechanical Core",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXMECHCORE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1464,13 +1464,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Steam Vent",
 			["NameLower"] = "Steam Vent",
 			["Subtitle"] = "Steam Vent",
 			["Description"] = "Steam Vent",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXSTEAVENT_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1505,13 +1505,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Floor Cables",
 			["NameLower"] = "Floor Cables",
 			["Subtitle"] = "Floor Cables",
 			["Description"] = "Floor Cables",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCPFLCABL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1546,13 +1546,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Anomaly Holo Explorer",
 			["NameLower"] = "Anomaly Holo Explorer",
 			["Subtitle"] = "Anomaly Holo Explorer",
 			["Description"] = "Anomaly Holo Explorer",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXANHEXPLO_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1587,13 +1587,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Floor Light",
 			["NameLower"] = "Floor Light",
 			["Subtitle"] = "Floor Light",
 			["Description"] = "Floor Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLBFLLITE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1628,13 +1628,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Floor Screen",
 			["NameLower"] = "Floor Screen",
 			["Subtitle"] = "Floor Screen",
 			["Description"] = "Floor Screen",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRSFLSCRN_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1669,13 +1669,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Pillar Spiral",
 			["NameLower"] = "Pillar Spiral",
 			["Subtitle"] = "Pillar Spiral",
 			["Description"] = "Pillar Spiral",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRSPISPIR_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1710,13 +1710,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Pillar Dye",
 			["NameLower"] = "Pillar Dye",
 			["Subtitle"] = "Pillar Dye",
 			["Description"] = "Pillar Dye",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRSPILDYE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1751,13 +1751,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Small Side Light",
 			["NameLower"] = "Small Side Light",
 			["Subtitle"] = "Small Side Light",
 			["Description"] = "Small Side Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXSMSDLIGH_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1792,13 +1792,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Balcony Hood",
 			["NameLower"] = "Balcony Hood",
 			["Subtitle"] = "Balcony Hood",
 			["Description"] = "Balcony Hood",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBALCHOOD_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1833,13 +1833,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Building Front Roof Block",
 			["NameLower"] = "Building Front Roof Block",
 			["Subtitle"] = "Building Front Roof Block",
 			["Description"] = "Building Front Roof Block",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBLFRRBLK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1874,13 +1874,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Air Vent",
 			["NameLower"] = "Air Vent",
 			["Subtitle"] = "Air Vent",
 			["Description"] = "Air Vent",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBLFRAIRV_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1915,13 +1915,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Wall Detail",
 			["NameLower"] = "Wall Detail",
 			["Subtitle"] = "Wall Detail",
 			["Description"] = "Wall Detail",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXWADETAIL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1956,13 +1956,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Building Front Ramp",
 			["NameLower"] = "Building Front Ramp",
 			["Subtitle"] = "Building Front Ramp",
 			["Description"] = "Building Front Ramp",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBLFRRAMP_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -1997,13 +1997,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Roof Side Cap",
 			["NameLower"] = "Roof Side Cap",
 			["Subtitle"] = "Roof Side Cap",
 			["Description"] = "Roof Side Cap",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRFSIDCAP_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2038,13 +2038,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Robo Arm",
 			["NameLower"] = "Robo Arm",
 			["Subtitle"] = "Robo Arm",
 			["Description"] = "Robo Arm",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXROBOARM_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2079,13 +2079,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Robo Arm Wall",
 			["NameLower"] = "Robo Arm Wall",
 			["Subtitle"] = "Robo Arm Wall",
 			["Description"] = "Robo Arm Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRARMWALL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2120,13 +2120,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Computer",
 			["NameLower"] = "Computer",
 			["Subtitle"] = "Computer",
 			["Description"] = "Computer",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCOMPUTER_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2161,13 +2161,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Shop Column",
 			["NameLower"] = "Shop Column",
 			["Subtitle"] = "Shop Column",
 			["Description"] = "Shop Column",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXSPECSHOP_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2202,13 +2202,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Fake Door",
 			["NameLower"] = "Fake Door",
 			["Subtitle"] = "Fake Door",
 			["Description"] = "Fake Door",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCRFKDOOR_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2243,13 +2243,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Doorway",
 			["NameLower"] = "Doorway",
 			["Subtitle"] = "Doorway",
 			["Description"] = "Doorway",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNPDOORWA_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2284,13 +2284,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Middle Support",
 			["NameLower"] = "Middle Support",
 			["Subtitle"] = "Middle Support",
 			["Description"] = "Middle Support",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNPMSUPPO_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2325,13 +2325,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "MH Support",
 			["NameLower"] = "MH Support",
 			["Subtitle"] = "MH Support",
 			["Description"] = "MH Support",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXMHSUPPOR_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2366,13 +2366,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Pillar",
 			["NameLower"] = "Pillar",
 			["Subtitle"] = "Pillar",
 			["Description"] = "Pillar",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXPILLAR_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2407,13 +2407,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Lighting Column",
 			["NameLower"] = "Lighting Column",
 			["Subtitle"] = "Lighting Column",
 			["Description"] = "Lighting Column",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLIGHCOLU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2448,13 +2448,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Small Lighting Column",
 			["NameLower"] = "Small Lighting Column",
 			["Subtitle"] = "Small Lighting Column",
 			["Description"] = "Small Lighting Column",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXSLIGCOLU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2489,13 +2489,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Light Pillar",
 			["NameLower"] = "Light Pillar",
 			["Subtitle"] = "Light Pillar",
 			["Description"] = "Light Pillar",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLALIPILL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2530,13 +2530,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Pipe Wall",
 			["NameLower"] = "Pipe Wall",
 			["Subtitle"] = "Pipe Wall",
 			["Description"] = "Pipe Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLBPIWALL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2571,13 +2571,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Terminal",
 			["NameLower"] = "Large Terminal",
 			["Subtitle"] = "Large Terminal",
 			["Description"] = "Large Terminal",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLARGTERM_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2612,13 +2612,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Blueprint Anal",
 			["NameLower"] = "Nexus Blueprint Anal",
 			["Subtitle"] = "Nexus Blueprint Anal",
 			["Description"] = "Nexus Blueprint Anal",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNEXBANAL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2653,13 +2653,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Recipe Terminal",
 			["NameLower"] = "Nexus Recipe Terminal",
 			["Subtitle"] = "Nexus Recipe Terminal",
 			["Description"] = "Nexus Recipe Terminal",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXNEXRTERM_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2694,13 +2694,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Landing Pad 1",
 			["NameLower"] = "Landing Pad 1",
 			["Subtitle"] = "Landing Pad 1",
 			["Description"] = "Landing Pad 1",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLANDPAD1_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2735,13 +2735,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Landing Pad 2",
 			["NameLower"] = "Landing Pad 2",
 			["Subtitle"] = "Landing Pad 2",
 			["Description"] = "Landing Pad 2",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLANDPAD2_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2776,13 +2776,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Control Room Pipes",
 			["NameLower"] = "Control Room Pipes",
 			["Subtitle"] = "Control Room Pipes",
 			["Description"] = "Control Room Pipes",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCRPIPES_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2817,13 +2817,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Back Ring",
 			["NameLower"] = "Nexus Back Ring",
 			["Subtitle"] = "Nexus Back Ring",
 			["Description"] = "Nexus Back Ring",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBACKRING_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2858,13 +2858,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Landing Sign",
 			["NameLower"] = "Nexus Landing Sign",
 			["Subtitle"] = "Nexus Landing Sign",
 			["Description"] = "Nexus Landing Sign",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLANDSIGN_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2899,13 +2899,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 1",
 			["NameLower"] = "Large Prop 1",
 			["Subtitle"] = "Large Prop 1",
 			["Description"] = "Large Prop 1",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP1_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2940,13 +2940,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 1 Small",
 			["NameLower"] = "Large Prop 1 Small",
 			["Subtitle"] = "Large Prop 1 Small",
 			["Description"] = "Large Prop 1 Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP1S_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -2981,13 +2981,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 2",
 			["NameLower"] = "Large Prop 2",
 			["Subtitle"] = "Large Prop 2",
 			["Description"] = "Large Prop 2",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP2_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3022,13 +3022,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 2 Small",
 			["NameLower"] = "Large Prop 2 Small",
 			["Subtitle"] = "Large Prop 2 Small",
 			["Description"] = "Large Prop 2 Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP2S_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3063,13 +3063,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 3",
 			["NameLower"] = "Large Prop 3",
 			["Subtitle"] = "Large Prop 3",
 			["Description"] = "Large Prop 3",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP3_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3104,13 +3104,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 3 Small",
 			["NameLower"] = "Large Prop 3 Small",
 			["Subtitle"] = "Large Prop 3 Small",
 			["Description"] = "Large Prop 3 Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP3S_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3145,13 +3145,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 4",
 			["NameLower"] = "Large Prop 4",
 			["Subtitle"] = "Large Prop 4",
 			["Description"] = "Large Prop 4",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP4_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3186,13 +3186,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Vista Feature 1",
 			["NameLower"] = "Vista Feature 1",
 			["Subtitle"] = "Vista Feature 1",
 			["Description"] = "Vista Feature 1",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBVFEATR1_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3227,13 +3227,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Vista Feature 2",
 			["NameLower"] = "Vista Feature 2",
 			["Subtitle"] = "Vista Feature 2",
 			["Description"] = "Vista Feature 2",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBVFEATR2_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3268,13 +3268,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 5",
 			["NameLower"] = "Large Prop 5",
 			["Subtitle"] = "Large Prop 5",
 			["Description"] = "Large Prop 5",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP5_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3309,13 +3309,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 5 Small",
 			["NameLower"] = "Large Prop 5 Small",
 			["Subtitle"] = "Large Prop 5 Small",
 			["Description"] = "Large Prop 5 Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP5S_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3350,13 +3350,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 6",
 			["NameLower"] = "Large Prop 6",
 			["Subtitle"] = "Large Prop 6",
 			["Description"] = "Large Prop 6",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP6_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3391,13 +3391,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 6 Small",
 			["NameLower"] = "Large Prop 6 Small",
 			["Subtitle"] = "Large Prop 6 Small",
 			["Description"] = "Large Prop 6 Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP6S_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3432,13 +3432,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 7",
 			["NameLower"] = "Large Prop 7",
 			["Subtitle"] = "Large Prop 7",
 			["Description"] = "Large Prop 7",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP7_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3473,13 +3473,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 7 Small",
 			["NameLower"] = "Large Prop 7 Small",
 			["Subtitle"] = "Large Prop 7 Small",
 			["Description"] = "Large Prop 7 Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP7S_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3514,13 +3514,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Side Block",
 			["NameLower"] = "Side Block",
 			["Subtitle"] = "Side Block",
 			["Description"] = "Side Block",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRSSBLOCK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3555,13 +3555,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Heavy Pillar",
 			["NameLower"] = "Heavy Pillar",
 			["Subtitle"] = "Heavy Pillar",
 			["Description"] = "Heavy Pillar",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXHEAVPILL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3596,13 +3596,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Heavy Pillar Small",
 			["NameLower"] = "Heavy Pillar Small",
 			["Subtitle"] = "Heavy Pillar Small",
 			["Description"] = "Heavy Pillar Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXHEAVPILL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3637,13 +3637,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Exterior Leg",
 			["NameLower"] = "Exterior Leg",
 			["Subtitle"] = "Exterior Leg",
 			["Description"] = "Exterior Leg",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXEXTERLEG_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3678,13 +3678,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Exterior Leg Small",
 			["NameLower"] = "Exterior Leg Small",
 			["Subtitle"] = "Exterior Leg Small",
 			["Description"] = "Exterior Leg Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXEXTERLEGS_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3719,13 +3719,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Vista Platform",
 			["NameLower"] = "Vista Platform",
 			["Subtitle"] = "Vista Platform",
 			["Description"] = "Vista Platform",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBVPLATFM_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3760,13 +3760,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Landing Area",
 			["NameLower"] = "Landing Area",
 			["Subtitle"] = "Landing Area",
 			["Description"] = "Landing Area",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLBLDAREA_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3801,13 +3801,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 8",
 			["NameLower"] = "Large Prop 8",
 			["Subtitle"] = "Large Prop 8",
 			["Description"] = "Large Prop 8",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP8_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3842,13 +3842,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Prop 8 Small",
 			["NameLower"] = "Large Prop 8 Small",
 			["Subtitle"] = "Large Prop 8 Small",
 			["Description"] = "Large Prop 8 Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGP8S_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3883,13 +3883,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Large Rings",
 			["NameLower"] = "Large Rings",
 			["Subtitle"] = "Large Rings",
 			["Description"] = "Large Rings",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXVISTLGRI_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3924,13 +3924,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tower",
 			["NameLower"] = "Tower",
 			["Subtitle"] = "Tower",
 			["Description"] = "Tower",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXTOWER_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -3965,13 +3965,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tower Small",
 			["NameLower"] = "Tower Small",
 			["Subtitle"] = "Tower Small",
 			["Description"] = "Tower Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXTOWERS_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4006,13 +4006,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tower Top",
 			["NameLower"] = "Tower Top",
 			["Subtitle"] = "Tower Top",
 			["Description"] = "Tower Top",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXTOWERTOP_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4047,13 +4047,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Arch",
 			["NameLower"] = "Nexus Arch",
 			["Subtitle"] = "Nexus Arch",
 			["Description"] = "Nexus Arch",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRSARCH_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4088,13 +4088,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Arch Small",
 			["NameLower"] = "Nexus Arch Small",
 			["Subtitle"] = "Nexus Arch Small",
 			["Description"] = "Nexus Arch Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXRSARCHS_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4129,13 +4129,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Bridge Room",
 			["NameLower"] = "Bridge Room",
 			["Subtitle"] = "Bridge Room",
 			["Description"] = "Bridge Room",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBRIDROOM_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4170,13 +4170,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Backwall",
 			["NameLower"] = "Backwall",
 			["Subtitle"] = "Backwall",
 			["Description"] = "Backwall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBACKWALL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4211,13 +4211,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Building Front",
 			["NameLower"] = "Building Front",
 			["Subtitle"] = "Building Front",
 			["Description"] = "Building Front",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBLDFRONT_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4252,13 +4252,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Building Front Wall",
 			["NameLower"] = "Building Front Wall",
 			["Subtitle"] = "Building Front Wall",
 			["Description"] = "Building Front Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXBLFRWALL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4293,13 +4293,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Central Point",
 			["NameLower"] = "Central Point",
 			["Subtitle"] = "Central Point",
 			["Description"] = "Central Point",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCENPOINT_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4334,13 +4334,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Middle Platform",
 			["NameLower"] = "Middle Platform",
 			["Subtitle"] = "Middle Platform",
 			["Description"] = "Middle Platform",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXMIDDPLAT_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4375,13 +4375,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Left Area",
 			["NameLower"] = "Left Area",
 			["Subtitle"] = "Left Area",
 			["Description"] = "Left Area",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLEFTAREA_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4416,13 +4416,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Hallway",
 			["NameLower"] = "Hallway",
 			["Subtitle"] = "Hallway",
 			["Description"] = "Hallway",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXHALLWAY_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4457,13 +4457,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Airlock",
 			["NameLower"] = "Airlock",
 			["Subtitle"] = "Airlock",
 			["Description"] = "Airlock",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXAIRLOCK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4498,13 +4498,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Control Room",
 			["NameLower"] = "Control Room",
 			["Subtitle"] = "Control Room",
 			["Description"] = "Control Room",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXCONTROOM_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4539,13 +4539,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Special Shop",
 			["NameLower"] = "Special Shop",
 			["Subtitle"] = "Special Shop",
 			["Description"] = "Special Shop",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXSPECSHOP_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4580,13 +4580,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Shop Big",
 			["NameLower"] = "Shop Big",
 			["Subtitle"] = "Shop Big",
 			["Description"] = "Shop Big",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXSHOPBIG_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4621,13 +4621,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Shop Big Chef",
 			["NameLower"] = "Shop Big Chef",
 			["Subtitle"] = "Shop Big Chef",
 			["Description"] = "Shop Big Chef",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXSHOPBIGC_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4662,13 +4662,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Shop Small",
 			["NameLower"] = "Shop Small",
 			["Subtitle"] = "Shop Small",
 			["Description"] = "Shop Small",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXSHOPSMAL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4703,13 +4703,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Egg Machine",
 			["NameLower"] = "Egg Machine",
 			["Subtitle"] = "Egg Machine",
 			["Description"] = "Egg Machine",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXEGGMACHI_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4744,13 +4744,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Floor Panel",
 			["NameLower"] = "Nexus Floor Panel",
 			["Subtitle"] = "Nexus Floor Panel",
 			["Description"] = "Nexus Floor Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFLORNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4785,13 +4785,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Curved Floor Panel",
 			["NameLower"] = "Nexus Curved Floor Panel",
 			["Subtitle"] = "Nexus Curved Floor Panel",
 			["Description"] = "Nexus Curved Floor Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFLCUNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4826,13 +4826,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Triangle",
 			["NameLower"] = "Nexus Triangle",
 			["Subtitle"] = "Nexus Triangle",
 			["Description"] = "Nexus Triangle",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFTRINEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4867,13 +4867,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Small Triangle",
 			["NameLower"] = "Nexus Small Triangle",
 			["Subtitle"] = "Nexus Small Triangle",
 			["Description"] = "Nexus Small Triangle",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFTRQNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4908,13 +4908,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Framed Glass Panel",
 			["NameLower"] = "Nexus Framed Glass Panel",
 			["Subtitle"] = "Nexus Framed Glass Panel",
 			["Description"] = "Nexus Framed Glass Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFGLPNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4949,13 +4949,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Small Panel",
 			["NameLower"] = "Nexus Small Panel",
 			["Subtitle"] = "Nexus Small Panel",
 			["Description"] = "Nexus Small Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFSMLNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -4990,13 +4990,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Curved Small Panel",
 			["NameLower"] = "Nexus Curved Small Panel",
 			["Subtitle"] = "Nexus Curved Small Panel",
 			["Description"] = "Nexus Curved Small Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFSCUNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5031,13 +5031,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Ramp",
 			["NameLower"] = "Nexus Ramp",
 			["Subtitle"] = "Nexus Ramp",
 			["Description"] = "Nexus Ramp",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRAMPNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5072,13 +5072,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Half Ramp",
 			["NameLower"] = "Nexus Half Ramp",
 			["Subtitle"] = "Nexus Half Ramp",
 			["Description"] = "Nexus Half Ramp",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRTHINEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5113,13 +5113,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Curved Roof Corner",
 			["NameLower"] = "Nexus Curved Roof Corner",
 			["Subtitle"] = "Nexus Curved Roof Corner",
 			["Description"] = "Nexus Curved Roof Corner",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRCCUNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5154,13 +5154,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Arch",
 			["NameLower"] = "Nexus Arch",
 			["Subtitle"] = "Nexus Arch",
 			["Description"] = "Nexus Arch",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPARCHNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5195,13 +5195,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Half Arch",
 			["NameLower"] = "Nexus Half Arch",
 			["Subtitle"] = "Nexus Half Arch",
 			["Description"] = "Nexus Half Arch",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPAHLFNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5236,13 +5236,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Wall",
 			["NameLower"] = "Nexus Wall",
 			["Subtitle"] = "Nexus Wall",
 			["Description"] = "Nexus Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWALLNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5277,13 +5277,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Curved Wall",
 			["NameLower"] = "Nexus Curved Wall",
 			["Subtitle"] = "Nexus Curved Wall",
 			["Description"] = "Nexus Curved Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWACUNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5318,13 +5318,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Thin Wall",
 			["NameLower"] = "Nexus Thin Wall",
 			["Subtitle"] = "Nexus Thin Wall",
 			["Description"] = "Nexus Thin Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWHLFNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5359,13 +5359,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Curved Thin Wall",
 			["NameLower"] = "Nexus Curved Thin Wall",
 			["Subtitle"] = "Nexus Curved Thin Wall",
 			["Description"] = "Nexus Curved Thin Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWHCUNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5400,13 +5400,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Small Wall",
 			["NameLower"] = "Nexus Small Wall",
 			["Subtitle"] = "Nexus Small Wall",
 			["Description"] = "Nexus Small Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWSMLNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5441,13 +5441,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Curved Small Wall",
 			["NameLower"] = "Nexus Curved Small Wall",
 			["Subtitle"] = "Nexus Curved Small Wall",
 			["Description"] = "Nexus Curved Small Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWSCUNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5482,13 +5482,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Short Wall",
 			["NameLower"] = "Nexus Short Wall",
 			["Subtitle"] = "Nexus Short Wall",
 			["Description"] = "Nexus Short Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWSHLNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5523,13 +5523,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Curved Short Wall",
 			["NameLower"] = "Nexus Curved Short Wall",
 			["Subtitle"] = "Nexus Curved Short Wall",
 			["Description"] = "Nexus Curved Short Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWSHCNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5564,13 +5564,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Window Panel",
 			["NameLower"] = "Nexus Window Panel",
 			["Subtitle"] = "Nexus Window Panel",
 			["Description"] = "Nexus Window Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWWINNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5605,13 +5605,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Sloping Panel",
 			["NameLower"] = "Nexus Sloping Panel",
 			["Subtitle"] = "Nexus Sloping Panel",
 			["Description"] = "Nexus Sloping Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWTRINEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5646,13 +5646,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Door Frame",
 			["NameLower"] = "Nexus Door Frame",
 			["Subtitle"] = "Nexus Door Frame",
 			["Description"] = "Nexus Door Frame",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWDORNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5687,13 +5687,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Doorway",
 			["NameLower"] = "Nexus Doorway",
 			["Subtitle"] = "Nexus Doorway",
 			["Description"] = "Nexus Doorway",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWDHFNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5728,13 +5728,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Frontage",
 			["NameLower"] = "Nexus Frontage",
 			["Subtitle"] = "Nexus Frontage",
 			["Description"] = "Nexus Frontage",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWDWNNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5769,13 +5769,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Railing",
 			["NameLower"] = "Nexus Railing",
 			["Subtitle"] = "Nexus Railing",
 			["Description"] = "Nexus Railing",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRAILNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5810,13 +5810,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Curved Railing",
 			["NameLower"] = "Nexus Curved Railing",
 			["Subtitle"] = "Nexus Curved Railing",
 			["Description"] = "Nexus Curved Railing",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRACUNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5851,13 +5851,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Curved Small Railing",
 			["NameLower"] = "Nexus Curved Small Railing",
 			["Subtitle"] = "Nexus Curved Small Railing",
 			["Description"] = "Nexus Curved Small Railing",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRSCUNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5892,13 +5892,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Cube",
 			["NameLower"] = "Nexus Cube",
 			["Subtitle"] = "Nexus Cube",
 			["Description"] = "Nexus Cube",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPCUBENEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5933,13 +5933,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Pipe",
 			["NameLower"] = "Nexus Pipe",
 			["Subtitle"] = "Nexus Pipe",
 			["Description"] = "Nexus Pipe",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPPIPENEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -5974,13 +5974,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Pipe Curved",
 			["NameLower"] = "Nexus Pipe Curved",
 			["Subtitle"] = "Nexus Pipe Curved",
 			["Description"] = "Nexus Pipe Curved",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPPIPCNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6015,13 +6015,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "True",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Straight Tube",
 			["NameLower"] = "Nexus Straight Tube",
 			["Subtitle"] = "Nexus Straight Tube",
 			["Description"] = "Nexus Straight Tube",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KPFTUSTNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6056,13 +6056,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "True",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Corner Tube",
 			["NameLower"] = "Nexus Corner Tube",
 			["Subtitle"] = "Nexus Corner Tube",
 			["Description"] = "Nexus Corner Tube",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KPFTUCONEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6097,13 +6097,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "True",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus T Tube",
 			["NameLower"] = "Nexus T Tube",
 			["Subtitle"] = "Nexus T Tube",
 			["Description"] = "Nexus T Tube",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KPFTUBTNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6138,13 +6138,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "True",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus X Tube",
 			["NameLower"] = "Nexus X Tube",
 			["Subtitle"] = "Nexus X Tube",
 			["Description"] = "Nexus X Tube",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KPFTUBXNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6179,13 +6179,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Tube Door",
 			["NameLower"] = "Nexus Tube Door",
 			["Subtitle"] = "Nexus Tube Door",
 			["Description"] = "Nexus Tube Door",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KPFDOORNEXU_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6220,13 +6220,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Forward Door",
 			["NameLower"] = "Forward Door",
 			["Subtitle"] = "Forward Door",
 			["Description"] = "Forward Door",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXFORWDOOR_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6261,13 +6261,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Left Door",
 			["NameLower"] = "Left Door",
 			["Subtitle"] = "Left Door",
 			["Description"] = "Left Door",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXLEFTDOOR_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6302,13 +6302,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Main Airlock",
 			["NameLower"] = "Main Airlock",
 			["Subtitle"] = "Main Airlock",
 			["Description"] = "Main Airlock",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXMAIRLOCK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6343,13 +6343,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Market Door",
 			["NameLower"] = "Market Door",
 			["Subtitle"] = "Market Door",
 			["Description"] = "Market Door",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXMARKDOOR_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6384,13 +6384,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Pipe",
 			["NameLower"] = "Nexus Pipe",
 			["Subtitle"] = "Nexus Pipe",
 			["Description"] = "Nexus Pipe",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXPIPES_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6425,13 +6425,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Pipe X3",
 			["NameLower"] = "Nexus Pipe X3",
 			["Subtitle"] = "Nexus Pipe X3",
 			["Description"] = "Nexus Pipe X3",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXPIPESX3_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6466,13 +6466,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Pipe Elbow",
 			["NameLower"] = "Nexus Pipe Elbow",
 			["Subtitle"] = "Nexus Pipe Elbow",
 			["Description"] = "Nexus Pipe Elbow",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXPIPEL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6507,13 +6507,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Pipe Y",
 			["NameLower"] = "Nexus Pipe Y",
 			["Subtitle"] = "Nexus Pipe Y",
 			["Description"] = "Nexus Pipe Y",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXPIPEY_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6548,13 +6548,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Pipe T",
 			["NameLower"] = "Nexus Pipe T",
 			["Subtitle"] = "Nexus Pipe T",
 			["Description"] = "Nexus Pipe T",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXPIPET_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6589,13 +6589,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Pipe X",
 			["NameLower"] = "Nexus Pipe X",
 			["Subtitle"] = "Nexus Pipe X",
 			["Description"] = "Nexus Pipe X",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXPIPEX_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6630,13 +6630,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Nexus Pipe N",
 			["NameLower"] = "Nexus Pipe N",
 			["Subtitle"] = "Nexus Pipe N",
 			["Description"] = "Nexus Pipe N",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KNXPIPEN_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6671,13 +6671,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Asteroid Beacon",
 			["NameLower"] = "Asteroid Beacon",
 			["Subtitle"] = "Asteroid Beacon",
 			["Description"] = "Asteroid Beacon",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPASTEBEAC_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6712,13 +6712,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Atlas Beacon",
 			["NameLower"] = "Atlas Beacon",
 			["Subtitle"] = "Atlas Beacon",
 			["Description"] = "Atlas Beacon",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPATLBEAC1_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6753,13 +6753,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Charge Bar",
 			["NameLower"] = "Charge Bar",
 			["Subtitle"] = "Charge Bar",
 			["Description"] = "Charge Bar",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPCHARGBAR_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6794,13 +6794,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Crystal",
 			["NameLower"] = "Crystal",
 			["Subtitle"] = "Crystal",
 			["Description"] = "Crystal",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPCRYSTAL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6835,13 +6835,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Cube",
 			["NameLower"] = "Cube",
 			["Subtitle"] = "Cube",
 			["Description"] = "Cube",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPCUBEPOI_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6876,13 +6876,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Eye",
 			["NameLower"] = "Eye",
 			["Subtitle"] = "Eye",
 			["Description"] = "Eye",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPEYE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6917,13 +6917,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Gate",
 			["NameLower"] = "Gate",
 			["Subtitle"] = "Gate",
 			["Description"] = "Gate",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPGATEPOI_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6958,13 +6958,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Gek Head",
 			["NameLower"] = "Gek Head",
 			["Subtitle"] = "Gek Head",
 			["Description"] = "Gek Head",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPGEKHEAD_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -6999,13 +6999,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Line Geo",
 			["NameLower"] = "Line Geo",
 			["Subtitle"] = "Line Geo",
 			["Description"] = "Line Geo",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPLINEGEO_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7040,13 +7040,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Pillar",
 			["NameLower"] = "Pillar",
 			["Subtitle"] = "Pillar",
 			["Description"] = "Pillar",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPPILLAPOI_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7081,13 +7081,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Skull",
 			["NameLower"] = "Skull",
 			["Subtitle"] = "Skull",
 			["Description"] = "Skull",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPSKULL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7122,13 +7122,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Crystal 1",
 			["NameLower"] = "Crystal 1",
 			["Subtitle"] = "Crystal 1",
 			["Description"] = "Crystal 1",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPSKCRYST1_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7163,13 +7163,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Prison",
 			["NameLower"] = "Prison",
 			["Subtitle"] = "Prison",
 			["Description"] = "Prison",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPPRISON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7204,13 +7204,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Clock",
 			["NameLower"] = "Clock",
 			["Subtitle"] = "Clock",
 			["Description"] = "Clock",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPCLOCK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7245,13 +7245,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Egg",
 			["NameLower"] = "Egg",
 			["Subtitle"] = "Egg",
 			["Description"] = "Egg",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPEGG_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7286,13 +7286,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Grabby",
 			["NameLower"] = "Grabby",
 			["Subtitle"] = "Grabby",
 			["Description"] = "Grabby",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPGRABBY_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7327,13 +7327,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Gyroscope",
 			["NameLower"] = "Gyroscope",
 			["Subtitle"] = "Gyroscope",
 			["Description"] = "Gyroscope",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPGYROSCOP_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7368,13 +7368,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Warrior Silos",
 			["NameLower"] = "Warrior Silos",
 			["Subtitle"] = "Warrior Silos",
 			["Description"] = "Warrior Silos",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPWARRSILO_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7409,13 +7409,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Weird Object 2",
 			["NameLower"] = "Weird Object 2",
 			["Subtitle"] = "Weird Object 2",
 			["Description"] = "Weird Object 2",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPWOBJECT2_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7450,13 +7450,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Weird Object 3",
 			["NameLower"] = "Weird Object 3",
 			["Subtitle"] = "Weird Object 3",
 			["Description"] = "Weird Object 3",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPWOBJECT3_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7491,13 +7491,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Weird Object 5",
 			["NameLower"] = "Weird Object 5",
 			["Subtitle"] = "Weird Object 5",
 			["Description"] = "Weird Object 5",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSPWOBJECT5_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7532,13 +7532,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Red Spotlight",
 			["NameLower"] = "Red Spotlight",
 			["Subtitle"] = "Red Spotlight",
 			["Description"] = "Red Spotlight",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTSPOTRED_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7573,13 +7573,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Orange Spotlight",
 			["NameLower"] = "Orange Spotlight",
 			["Subtitle"] = "Orange Spotlight",
 			["Description"] = "Orange Spotlight",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTSPOTORAN_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7614,13 +7614,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Yellow Spotlight",
 			["NameLower"] = "Yellow Spotlight",
 			["Subtitle"] = "Yellow Spotlight",
 			["Description"] = "Yellow Spotlight",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTSPOTYELL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7655,13 +7655,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Green Spotlight",
 			["NameLower"] = "Green Spotlight",
 			["Subtitle"] = "Green Spotlight",
 			["Description"] = "Green Spotlight",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTSPOTGREE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7696,13 +7696,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Teal Spotlight",
 			["NameLower"] = "Teal Spotlight",
 			["Subtitle"] = "Teal Spotlight",
 			["Description"] = "Teal Spotlight",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTSPOTTEAL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7737,13 +7737,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Blue Spotlight",
 			["NameLower"] = "Blue Spotlight",
 			["Subtitle"] = "Blue Spotlight",
 			["Description"] = "Blue Spotlight",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTSPOTBLUE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7778,13 +7778,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Pink Spotlight",
 			["NameLower"] = "Pink Spotlight",
 			["Subtitle"] = "Pink Spotlight",
 			["Description"] = "Pink Spotlight",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTSPOTPINK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7819,13 +7819,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "White Spotlight",
 			["NameLower"] = "White Spotlight",
 			["Subtitle"] = "White Spotlight",
 			["Description"] = "White Spotlight",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTSPOTWHIT_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7860,13 +7860,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Red Ambient Light",
 			["NameLower"] = "Red Ambient Light",
 			["Subtitle"] = "Red Ambient Light",
 			["Description"] = "Red Ambient Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTAMBIRED_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7901,13 +7901,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Orange Ambient Light",
 			["NameLower"] = "Orange Ambient Light",
 			["Subtitle"] = "Orange Ambient Light",
 			["Description"] = "Orange Ambient Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTAMBIORAN_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7942,13 +7942,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Yellow Ambient Light",
 			["NameLower"] = "Yellow Ambient Light",
 			["Subtitle"] = "Yellow Ambient Light",
 			["Description"] = "Yellow Ambient Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTAMBIYELL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -7983,13 +7983,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Green Ambient Light",
 			["NameLower"] = "Green Ambient Light",
 			["Subtitle"] = "Green Ambient Light",
 			["Description"] = "Green Ambient Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTAMBIGREE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8024,13 +8024,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Teal Ambient Light",
 			["NameLower"] = "Teal Ambient Light",
 			["Subtitle"] = "Teal Ambient Light",
 			["Description"] = "Teal Ambient Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTAMBITEAL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8065,13 +8065,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Blue Ambient Light",
 			["NameLower"] = "Blue Ambient Light",
 			["Subtitle"] = "Blue Ambient Light",
 			["Description"] = "Blue Ambient Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTAMBIBLUE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8106,13 +8106,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Pink Ambient Light",
 			["NameLower"] = "Pink Ambient Light",
 			["Subtitle"] = "Pink Ambient Light",
 			["Description"] = "Pink Ambient Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTAMBIPINK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8147,13 +8147,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "White Ambient Light",
 			["NameLower"] = "White Ambient Light",
 			["Subtitle"] = "White Ambient Light",
 			["Description"] = "White Ambient Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTAMBIWHIT_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8188,13 +8188,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Red Wall Light",
 			["NameLower"] = "Red Wall Light",
 			["Subtitle"] = "Red Wall Light",
 			["Description"] = "Red Wall Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTWALLRED_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8229,13 +8229,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Orange Wall Light",
 			["NameLower"] = "Orange Wall Light",
 			["Subtitle"] = "Orange Wall Light",
 			["Description"] = "Orange Wall Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTWALLORAN_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8270,13 +8270,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Yellow Wall Light",
 			["NameLower"] = "Yellow Wall Light",
 			["Subtitle"] = "Yellow Wall Light",
 			["Description"] = "Yellow Wall Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTWALLYELL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8311,13 +8311,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Green Wall Light",
 			["NameLower"] = "Green Wall Light",
 			["Subtitle"] = "Green Wall Light",
 			["Description"] = "Green Wall Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTWALLGREE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8352,13 +8352,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Teal Wall Light",
 			["NameLower"] = "Teal Wall Light",
 			["Subtitle"] = "Teal Wall Light",
 			["Description"] = "Teal Wall Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTWALLTEAL_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8393,13 +8393,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Blue Wall Light",
 			["NameLower"] = "Blue Wall Light",
 			["Subtitle"] = "Blue Wall Light",
 			["Description"] = "Blue Wall Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTWALLBLUE_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8434,13 +8434,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Pink Wall Light",
 			["NameLower"] = "Pink Wall Light",
 			["Subtitle"] = "Pink Wall Light",
 			["Description"] = "Pink Wall Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTWALLPINK_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8475,13 +8475,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "White Wall Light",
 			["NameLower"] = "White Wall Light",
 			["Subtitle"] = "White Wall Light",
 			["Description"] = "White Wall Light",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KLTWALLWHIT_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8516,13 +8516,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Floor Panel",
 			["NameLower"] = "Tron Floor Panel",
 			["Subtitle"] = "Tron Floor Panel",
 			["Description"] = "Tron Floor Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFLORTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -8557,13 +8557,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Triangle",
 			["NameLower"] = "Tron Triangle",
 			["Subtitle"] = "Tron Triangle",
 			["Description"] = "Tron Triangle",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFTRITRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -8598,13 +8598,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Small Triangle",
 			["NameLower"] = "Tron Small Triangle",
 			["Subtitle"] = "Tron Small Triangle",
 			["Description"] = "Tron Small Triangle",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFTRQTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -8639,13 +8639,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Framed Glass Panel",
 			["NameLower"] = "Tron Framed Glass Panel",
 			["Subtitle"] = "Tron Framed Glass Panel",
 			["Description"] = "Tron Framed Glass Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFGLPTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -8680,13 +8680,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Small Panel",
 			["NameLower"] = "Tron Small Panel",
 			["Subtitle"] = "Tron Small Panel",
 			["Description"] = "Tron Small Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFSMLTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -8721,13 +8721,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Ramp",
 			["NameLower"] = "Tron Ramp",
 			["Subtitle"] = "Tron Ramp",
 			["Description"] = "Tron Ramp",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRAMPTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -8767,13 +8767,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Half Ramp",
 			["NameLower"] = "Tron Half Ramp",
 			["Subtitle"] = "Tron Half Ramp",
 			["Description"] = "Tron Half Ramp",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRTHITRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -8813,13 +8813,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Roof",
 			["NameLower"] = "Tron Roof",
 			["Subtitle"] = "Tron Roof",
 			["Description"] = "Tron Roof",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPROOFTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -8854,13 +8854,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Roof Panel",
 			["NameLower"] = "Tron Roof Panel",
 			["Subtitle"] = "Tron Roof Panel",
 			["Description"] = "Tron Roof Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRMIDTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8900,13 +8900,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Roof Corner",
 			["NameLower"] = "Tron Roof Corner",
 			["Subtitle"] = "Tron Roof Corner",
 			["Description"] = "Tron Roof Corner",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRCORTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8946,13 +8946,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Roof Corner Inner",
 			["NameLower"] = "Tron Roof Corner Inner",
 			["Subtitle"] = "Tron Roof Corner Inner",
 			["Description"] = "Tron Roof Corner Inner",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPRCINTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -8992,13 +8992,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Arch",
 			["NameLower"] = "Tron Arch",
 			["Subtitle"] = "Tron Arch",
 			["Description"] = "Tron Arch",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPARCHTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9033,13 +9033,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Half Arch",
 			["NameLower"] = "Tron Half Arch",
 			["Subtitle"] = "Tron Half Arch",
 			["Description"] = "Tron Half Arch",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPAHLFTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9074,13 +9074,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Wall",
 			["NameLower"] = "Tron Wall",
 			["Subtitle"] = "Tron Wall",
 			["Description"] = "Tron Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWALLTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9115,13 +9115,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Thin Wall",
 			["NameLower"] = "Tron Thin Wall",
 			["Subtitle"] = "Tron Thin Wall",
 			["Description"] = "Tron Thin Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWHLFTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -9156,13 +9156,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Small Wall",
 			["NameLower"] = "Tron Small Wall",
 			["Subtitle"] = "Tron Small Wall",
 			["Description"] = "Tron Small Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWSMLTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9197,13 +9197,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Short Wall",
 			["NameLower"] = "Tron Short Wall",
 			["Subtitle"] = "Tron Short Wall",
 			["Description"] = "Tron Short Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWSHLTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -9238,13 +9238,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Window Panel",
 			["NameLower"] = "Tron Window Panel",
 			["Subtitle"] = "Tron Window Panel",
 			["Description"] = "Tron Window Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWWINTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9284,13 +9284,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Sloping Panel",
 			["NameLower"] = "Tron Sloping Panel",
 			["Subtitle"] = "Tron Sloping Panel",
 			["Description"] = "Tron Sloping Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWTRITRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9325,13 +9325,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Door Frame",
 			["NameLower"] = "Tron Door Frame",
 			["Subtitle"] = "Tron Door Frame",
 			["Description"] = "Tron Door Frame",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWDORTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9366,13 +9366,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Doorway",
 			["NameLower"] = "Tron Doorway",
 			["Subtitle"] = "Tron Doorway",
 			["Description"] = "Tron Doorway",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWDHFTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -9407,13 +9407,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Power Door",
 			["NameLower"] = "Tron Power Door",
 			["Subtitle"] = "Tron Power Door",
 			["Description"] = "Tron Power Door",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPGDORTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "FUEL1",
 					["InventoryType"] = "Substance",
@@ -9448,13 +9448,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Tron Frontage",
 			["NameLower"] = "Tron Frontage",
 			["Subtitle"] = "Tron Frontage",
 			["Description"] = "Tron Frontage",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWDWNTRON_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9494,13 +9494,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Green Chroma Floor Panel",
 			["NameLower"] = "Green Chroma Floor Panel",
 			["Subtitle"] = "Green Chroma Floor Panel",
 			["Description"] = "Green Chroma Floor Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFLORCHRG_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9535,13 +9535,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Green Chroma Wall",
 			["NameLower"] = "Green Chroma Wall",
 			["Subtitle"] = "Green Chroma Wall",
 			["Description"] = "Green Chroma Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWALLCHRG_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9576,13 +9576,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Blue Chroma Floor Panel",
 			["NameLower"] = "Blue Chroma Floor Panel",
 			["Subtitle"] = "Blue Chroma Floor Panel",
 			["Description"] = "Blue Chroma Floor Panel",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPFLORCHRB_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9617,13 +9617,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Blue Chroma Wall",
 			["NameLower"] = "Blue Chroma Wall",
 			["Subtitle"] = "Blue Chroma Wall",
 			["Description"] = "Blue Chroma Wall",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KBPWALLCHRB_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9658,13 +9658,13 @@ KIBBLES_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 			["IsSealed"] = "False",
 			["Connection"] = "DECOR",
 		},
- 		["PRODUCT"] = {	
+ 		["PRODUCT"] = {
 			["Name"] = "Ship Salvage Station",
 			["NameLower"] = "Ship Salvage Station",
 			["Subtitle"] = "Ship Salvage Station",
 			["Description"] = "Ship Salvage Station",
 			["Icon"] = "CUSTOMMODELS/KIBBLES/ICONS/KSHIPSCRAP_ICON.DDS",
-			["Requirements"] = {	
+			["Requirements"] = {
 				{
 					["ID"] = "LAND1",
 					["InventoryType"] = "Substance",
@@ -9718,11 +9718,11 @@ BUILDING_COST =
       <Property name="Inactive1AverageFrameTimeCost" value="0" />
       <Property name="InactiveTotalNodes" value="120" />
       <Property name="InactivePhysicsComponents" value="15" />]],
-}				
+}
 return [[
     <Property value="GcBaseBuildingEntryCosts.xml">
       <Property name="ID" value="]] .. ID .. [[" />
-]] .. BUILDING_COST[POPIN] .. [[  
+]] .. BUILDING_COST[POPIN] .. [[
     </Property>
 ]]
 end
@@ -9775,12 +9775,12 @@ for _,n in pairs(GROUPS) do
 	TOP_GROUP = ""
 	for _,p in pairs(KIBBLES_GROUPS) do
 		for _,r in pairs(p["SubGroups"]) do
-			if n == r["ID"] then TOP_GROUP = p["ID"] 
-			end 
+			if n == r["ID"] then TOP_GROUP = p["ID"]
+			end
 		end
 	end
 	for _,t in pairs(GROUPS_TEMP) do
-		if TOP_GROUP == t then TOP_GROUP = "" 
+		if TOP_GROUP == t then TOP_GROUP = ""
 		end
 	end
 	if TOP_GROUP ~= "" then
@@ -9795,7 +9795,7 @@ for _,n in pairs(GROUPS) do
 	end
 end
 
-return [[ 
+return [[
     <Property value="GcBaseBuildingEntry.xml">
       <Property name="ID" value="]] .. ID .. [[" />
       <Property name="IsTemporary" value="False" />
@@ -9873,17 +9873,17 @@ end
 
 function GetBaseProduct(ID, NAMEU, NAMEL, NAMESUB, DESCRIPT, ICON, INGRED)
 NAMEUP_INJECT = ""
-if NAMEU == "" then NAMEUP_INJECT = string.upper(NAMEL)	
-else NAMEUP_INJECT = NAMEU 
+if NAMEU == "" then NAMEUP_INJECT = string.upper(NAMEL)
+else NAMEUP_INJECT = NAMEU
 end
 SUBTITLE_INJECT = ""
-if NAMESUB == "" then SUBTITLE_INJECT = NAMEL 
-else SUBTITLE_INJECT = NAMESUB 
+if NAMESUB == "" then SUBTITLE_INJECT = NAMEL
+else SUBTITLE_INJECT = NAMESUB
 end
 ICON_INJECT = ""
 if ICON == "" then
 ICON_INJECT = [[CUSTOMMODELS/KIBBLES/ICONS/]] .. ID .. [[_ICON.DDS]]
-else ICON_INJECT = ICON 
+else ICON_INJECT = ICON
 end
 INGRED_INJECT = ""
 for _,n in pairs(INGRED) do
@@ -9990,7 +9990,7 @@ end
 
 function GetBaseBuildingPart(ID, STYLE, MODEL, INACTIVE)
 INACTIVE = ""
-if OVERRIDE_INACTIVE then INACTIVE = MODEL 
+if OVERRIDE_INACTIVE then INACTIVE = MODEL
 end
 return [[
     <Property value="GcBaseBuildingPart.xml">
@@ -10436,7 +10436,7 @@ return [[
       <Property name="Style" value="GcBaseBuildingPartStyle.xml">
         <Property name="Style" value="]] .. STYLE .. [[" />
       </Property>
-]] .. AUTO_PART_DATA[POWER_GROUP] .. [[  
+]] .. AUTO_PART_DATA[POWER_GROUP] .. [[
     </Property>
 ]]
 end
@@ -10521,21 +10521,21 @@ BASEBUILD_ENTRIES =
 				}
 
 -- THE FINAL COUNTDOWN
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 		= "~~~KibblesNBits.pak",
 ["MOD_BATCHNAME"]		= "~~~KibblesNBits_COMPATIBILITY.pak",
 ["MOD_DESCRIPTION"]		= "Generates Metadata files and patch other mods with this script",
 ["MOD_AUTHOR"]			= "Kibbles, WinderTP, Babscoole",
-["NMS_VERSION"]			= "4.07",
-["MODIFICATIONS"] 		= 
+["NMS_VERSION"]			= "4.08",
+["MODIFICATIONS"] 		=
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGCOSTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"]	= 
+					["EXML_CHANGE_TABLE"]	=
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
@@ -10549,7 +10549,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-					["EXML_CHANGE_TABLE"]	= 
+					["EXML_CHANGE_TABLE"]	=
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
@@ -10559,7 +10559,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\BASEBUILDINGPARTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"]	= 
+					["EXML_CHANGE_TABLE"]	=
 					{
 						{
 							["SPECIAL_KEY_WORDS"] 	= {"ID", "_O2_HARVESTER"},
@@ -10580,7 +10580,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] 	= "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN",
-					["EXML_CHANGE_TABLE"]	= 
+					["EXML_CHANGE_TABLE"]	=
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},

@@ -1,7 +1,7 @@
 DataTable =
 {
     {
-        ["PALETTE"] = "Day",	
+        ["PALETTE"] = "Day",
         ["COLOURS"] =
         {
             {"0.616","0.749","0.949","1","0.407","0.471","0.605","1","0.745","0.863","0.925","1","0.704","0.859","0.97","1","0.996","1","0.83","1","0.616","0.749","0.949","1","0.98","0.811","0.628","1","1","1","1","1","1","0.98","1","0.9333","0.946","0.975","1","0.22","0.26","0.35","1"},
@@ -151,7 +151,7 @@ function CreateColoursProperty(PaletteColours)
         local R11 = PaletteColours[j][40]
         local G11 = PaletteColours[j][41]
         local B11 = PaletteColours[j][42]
-        local A11 = PaletteColours[j][43]			
+        local A11 = PaletteColours[j][43]
         PropertiesString = PropertiesString..GetColours(R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, x8, y8, z8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11)
     end
 return PropertiesString

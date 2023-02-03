@@ -1,94 +1,94 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_Trading.Post.Revamp.V.1.8.pak",
 ["MOD_AUTHOR"]    = "JJHookah",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.99",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\SMALLLIGHT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","NUMLODS",},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Value", "1"},
 							}
-						},						
+						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\LIGHTS\TINYLIGHT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","NUMLODS",},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Value", "1"},
 							}
-						},						
+						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTPOT\PLANTPOTLSYSPROC.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","NUMLODS",},
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Value", "1"},
 							}
-						},						
+						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTS\LARGEPLANT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTS\LARGEPLANT\ENTITIES\PLANTTRIGGER.ENTITY.MBIN",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Value","ODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PROPS\PLANTS\LARGEPLANT\ENTITIES\PLANTTRIGGER.ENTITY.MBIN",},
-							} 
-						},  						
+							}
+						},
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOSTSCIENTIFIC.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\TRADINGPOST_COMMON.SCENE.MBIN",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Value","MODELS\TRADINGPOST\TRADER\TRADINGPOST_COMMON.SCENE.MBIN",},
-							} 
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\PARTS\SCIENTIFIC_BUILDING.SCENE.MBIN",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Value","MODELS\TRADINGPOST\TRADER\SCIENTIFIC_BUILDING.SCENE.MBIN",},
-							} 
-						},  						
+							}
+						},
 					}
-				},				
+				},
 			}
 		}
-	},	
-["ADD_FILES"] 	= 
+	},
+["ADD_FILES"] 	=
 	{
 		{
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOSTTRADER.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -174,7 +174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\TRADINGPOST\TRADINGPOSTWARRIOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -260,7 +260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\COLLISIONS.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -434,7 +434,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\FLOODLIGHT_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -589,7 +589,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\GANTRYLIGHTS_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -748,7 +748,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\INTERIORLIGHTS1_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -970,7 +970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\INTERIORLIGHTS2_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1381,7 +1381,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\LANDINGPAD_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1491,7 +1491,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\PLATFORM_LOCATOR.SCENE.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1649,7 +1649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\SCIENTIFIC_BUILDING.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1736,7 +1736,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\SMALLRAMP_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1939,7 +1939,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\SPOTLIGHTS_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2163,7 +2163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\SUPPORT_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2302,7 +2302,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\TRADINGPOST_COMMON.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4101,7 +4101,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\TRIGGERVOLUME.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4198,7 +4198,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\BREAKABLES\CUBEROOM_INNERWALL.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4515,7 +4515,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\BREAKABLES\JJGANTRYBJOINTRING.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4682,7 +4682,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\BREAKABLES\JJLADDERHATCH.SCENE.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4878,7 +4878,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\BREAKABLES\MAINROOM.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6428,7 +6428,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\BREAKABLES\PROXIMITYPLANT.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6714,7 +6714,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\BREAKABLES\SUMMONSHIP.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6981,7 +6981,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\BREAKABLES\TELEPORTER1.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -8740,7 +8740,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\BREAKABLES\TELEPORTER2.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -10499,7 +10499,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\LAYOUTS\LAYOUT_SCIENTIFIC.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -10706,7 +10706,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\LAYOUTS\NPC_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -10816,7 +10816,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\LAYOUTS\NPCSTAND_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -10908,7 +10908,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\PADLIGHTS\PADLIGHTS.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11043,7 +11043,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\PROPS\CHAIRS_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11374,7 +11374,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\PROPS\FLAGS_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11521,7 +11521,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\PROPS\POTPLANTS_LOCATOR.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11689,7 +11689,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\RESOURCES\RESOURCE_LOCATOR1.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11842,7 +11842,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\RESOURCES\RESOURCE_LOCATOR2.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -12067,7 +12067,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\RESOURCES\RESOURCE_LOCATOR3.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -12292,7 +12292,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\RESOURCES\RESOURCE_LOCATOR4.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -12535,7 +12535,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\RESOURCES\RESOURCE_LOCATOR5.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -12688,7 +12688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\RESOURCES\RESOURCE_LOCATOR6.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -12841,7 +12841,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\RESOURCES\RESOURCE_LOCATOR7.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -12994,7 +12994,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 		},
 		{
             ["FILE_DESTINATION"] = "MODELS\TRADINGPOST\TRADER\RESOURCES\RESOURCE_LOCATOR8.SCENE.EXML",
-            ["FILE_CONTENT"] = 	
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -13198,6 +13198,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]],
-		},		
-	},	
+		},
+	},
 }

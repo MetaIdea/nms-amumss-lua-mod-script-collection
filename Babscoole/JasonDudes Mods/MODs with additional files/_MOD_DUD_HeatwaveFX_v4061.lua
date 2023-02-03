@@ -1,23 +1,23 @@
 --Must get the TEXTURES folder from the orignal .pak and place into ModExtraFilesToInclude
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_MOD_DUD_HeatwaveFX_v4061.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHEDGAS.HEAVYAIR.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Material",            "MODELS/EFFECTS/COMMON/MATERIALS/DUDHEATWAVE.MATERIAL.MBIN"},
 								{"NumberOfParticles",   "300"},
@@ -34,7 +34,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0"},
 								{"y", "0.04"},
@@ -43,7 +43,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0"},
 								{"y", "0.04"},
@@ -52,7 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"ScaleRange","Vector3f.xml"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "5"},
 								{"y", "5"},
@@ -61,7 +61,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"RotationSpeedRange","Vector3f.xml"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"y", "0"},
 							}
@@ -69,7 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "-0.02"},
 								{"y", "0"},
@@ -79,7 +79,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"x", "0.02"},
 								{"y", "0"},
@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Colour1","Colour.xml"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"R", "0"},
 								{"G", "0"},
@@ -100,24 +100,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Colour2","Colour.xml"},
 							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"R", "0"},
 								{"G", "0"},
 								{"B", "0"},
 								{"A", "0"},
 							}
-						},						
+						},
 					}
 				},
 			}
 		},
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\COMMON\MATERIALS\DUDHEATWAVE.MATERIAL.EXML]],
-            ["FILE_CONTENT"]     = 	
+            ["FILE_CONTENT"]     =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -229,6 +229,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},	
-	},		
+		},
+	},
 }

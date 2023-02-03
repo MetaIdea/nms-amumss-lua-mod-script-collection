@@ -1,27 +1,27 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_PU_MULTIBIOME.pak",
 ["MOD_AUTHOR"]    = "trevix",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.68",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMEFILENAMES.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Value","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKSCRUB.MBIN",},
 						--	["LINE_OFFSET"] = "-4",
-							["ADD_OPTION"] 	= "ADDafterSECTION",						
+							["ADD_OPTION"] 	= "ADDafterSECTION",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"IGNORE", "IGNORE",}
 							},
-							["ADD"] = 
+							["ADD"] =
 [[
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/MOUNTAIN/MOUNTAINROCKS.MBIN" />
@@ -511,11 +511,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/WEIRD/WIRECELLS/WIRECELLSOBJECTSDEAD.MBIN" />
         </Property>
-]]																			
+]]
 						}
-					} 
-				}, 
+					}
+				},
 			}
 		},
-	}	
+	}
 }

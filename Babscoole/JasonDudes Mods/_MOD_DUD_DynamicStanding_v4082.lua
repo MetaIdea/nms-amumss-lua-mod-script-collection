@@ -14,7 +14,7 @@ ER_TRADE =
           </Property>
 ]]
 
-ER_WAR = 
+ER_WAR =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="20" />
@@ -30,7 +30,7 @@ ER_WAR =
           </Property>
 ]]
 
-ER_EXPL = 
+ER_EXPL =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="20" />
@@ -46,7 +46,7 @@ ER_EXPL =
           </Property>
 ]]
 
-ER_STAND = 
+ER_STAND =
 [[
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="20" />
@@ -62,7 +62,7 @@ ER_STAND =
 ]]
 
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "_MOD_DUD_DynamicStanding_v4082.pak",
 ["MOD_AUTHOR"]      = "JasonDude7116",
@@ -72,30 +72,30 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","FREIGHTER_SAVED",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","TRADER_REP",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BATTLE",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 								{"AmountMax", "1",},
@@ -103,7 +103,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FIGHT",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 								{"AmountMax", "1",},
@@ -112,7 +112,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BOUNTY1",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMax", "1",},
 							}
@@ -120,7 +120,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BOUNTY2",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 								{"AmountMax", "2",},
@@ -129,7 +129,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_BOUNTY3",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 								{"AmountMax", "3",},
@@ -137,7 +137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","R_CREW_GUILD",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 							}
@@ -145,14 +145,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","R_CAPT_GUILD",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","KILLED_CIV",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMax", "-3",},
 							}
@@ -161,7 +161,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Id","DE_SPACE_POI_1",},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
 							["SECTION_ACTIVE"] = {4,},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 								{"AmountMax", "2",},
@@ -258,21 +258,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Id", "SEC_STDHIGH_WAR",},
 								{"Id", "SEC_STDHIGH_TRA",},
 								{"Id", "SEC_STDHIGH_EXP"},
 							},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "2",},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","MB_STAND_GUILD",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "2",},
 								{"AmountMax", "3",},
@@ -280,20 +280,20 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","MB_STAND_HIGH",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "2",},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","MB_STAND_MED",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 							}
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Id", "RS_S1_S2M6",},
 								{"Id", "RS_S2_S4M3",},
@@ -301,31 +301,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Id", "RS_S3_S4M5"},
 							},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 								{"AmountMax", "3",},
 							}
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
+							["FOREACH_SKW_GROUP"] =
+							{
 								{"Id", "RS_S6_PARTY1"},
 								{"Id", "RS_S6_PARTY2"},
 								{"Id", "RS_S6_PARTY3"},
-								{"Id", "RS_S6_PARTY4"},  
+								{"Id", "RS_S6_PARTY4"},
 								{"Id", "RS_S6_PARTY5"},
 								{"Id", "RS_S6_S3M3"},
 							},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "2",},
 								{"AmountMax", "4",},
 							}
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Id", "RS_S2_S4M1",},
 								{"Id", "RS_S5_S1M3",},
@@ -334,7 +334,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Id", "RS_S11_S1M3"},
 							},
 							["PRECEDING_KEY_WORDS"] = {"GcRewardTableItem.xml","GcRewardTableItem.xml","GcRewardTableItem.xml",},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"AmountMin", "1",},
 								{"AmountMax", "3",},
@@ -344,7 +344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\EXPEDITIONREWARDTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","R_DIPLOMATIC_0","ID","COMPOUND4"},
@@ -554,7 +554,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 },
                 {
                     ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\RECURRINGMISSIONTABLE.MBIN",
-                    ["EXML_CHANGE_TABLE"] = 
+                    ["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Id","R_AF_DAILY_SET",},

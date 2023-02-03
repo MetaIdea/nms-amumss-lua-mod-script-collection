@@ -6765,7 +6765,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","UnderWater"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",           "5"},
 								{"PerturbFeatures",   "0.1"},
@@ -6778,7 +6778,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Elevation"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",      "1300"},
 								{"Width",       "7500"},
@@ -6788,7 +6788,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Heridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinWidth",     "20"},
 								{"MaxWidth",     "20"},
@@ -6801,7 +6801,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Heridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -6809,14 +6809,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Heridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Iridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NoiseGridType", "Cube"},
 								{"MinWidth",      "20"},
@@ -6829,7 +6829,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Iridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -6837,14 +6837,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Iridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Copper"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",    "1"},
 								{"MinWidth",      "25"},
@@ -6858,7 +6858,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Copper","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -6869,14 +6869,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AlpinePrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Copper","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Nickel"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",      "1"},
 								{"NoiseGridType",   "Torus"},
@@ -6892,7 +6892,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Nickel","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -6903,14 +6903,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AlpinePrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Nickel","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Nickel","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -6920,7 +6920,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Aluminium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",        "True"},
 								{"NoiseGridType",   "Torus"},
@@ -6939,14 +6939,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AlpinePrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Aluminium","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Aluminium","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -6956,7 +6956,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Gold"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",   "2"},
 								{"MinWidth",     "40"},
@@ -6970,7 +6970,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Gold","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -6978,14 +6978,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AlpinePrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Gold","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Emeril"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",     "True"},
 								{"MinWidth",     "30"},
@@ -6999,7 +6999,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Emeril","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 								{"Height", "5"},
@@ -7008,7 +7008,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Resources_Emeril","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "1"},
 								{"Thickness",      "1"},
@@ -7018,7 +7018,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Min","Substance"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",     "25"},
 								{"RegionSize", "150"},
@@ -7027,7 +7027,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","UnderWater"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PerturbFeatures",  "0.3"},
 								{"AltitudeErosion",  "0.2"},
@@ -7039,7 +7039,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Elevation"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",     "7"},
 								{"Height",      "1300"},
@@ -7049,7 +7049,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Heridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinWidth",     "20"},
 								{"MaxWidth",     "20"},
@@ -7062,7 +7062,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Heridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -7070,14 +7070,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Heridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Iridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NoiseGridType", "Cube"},
 								{"MinWidth",      "20"},
@@ -7090,7 +7090,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Iridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -7098,14 +7098,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Iridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Copper"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",    "1"},
 								{"MinWidth",      "25"},
@@ -7119,7 +7119,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Copper","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -7130,14 +7130,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AlpinePrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Copper","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Nickel"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",      "1"},
 								{"NoiseGridType",   "Torus"},
@@ -7153,7 +7153,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Nickel","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -7164,14 +7164,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AlpinePrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Nickel","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Nickel","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -7181,7 +7181,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Aluminium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",        "True"},
 								{"NoiseGridType",   "Torus"},
@@ -7200,14 +7200,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AlpinePrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Aluminium","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Aluminium","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -7217,7 +7217,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Gold"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",   "2"},
 								{"MinWidth",     "40"},
@@ -7231,7 +7231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Gold","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -7239,14 +7239,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"AlpinePrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Gold","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Emeril"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",     "True"},
 								{"MinWidth",     "30"},
@@ -7260,7 +7260,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Emeril","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 								{"Height", "5"},
@@ -7269,7 +7269,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Resources_Emeril","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "1"},
 								{"Thickness",      "1"},
@@ -7279,7 +7279,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Substance"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Width",      "20"},
 								{"Height",     "75"},
@@ -7289,14 +7289,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Caves","Mouth"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
-						},	
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"AlpinePrime","Max","Caves","Tunnel"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
 								{"Octaves", "3"},
@@ -7304,7 +7304,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","UnderWater"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",           "5"},
 								{"PerturbFeatures",   "0.1"},
@@ -7317,7 +7317,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Elevation"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",              "4"},
 								{"AltitudeErosion",      "0.5"},
@@ -7326,14 +7326,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Small"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionScale", "3"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Small","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionRatio", "0.5"},
 								{"RegionScale", "3"},
@@ -7341,14 +7341,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Large"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionScale", "3"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Large","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionRatio", "0.5"},
 								{"RegionScale", "3"},
@@ -7356,7 +7356,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Heridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinWidth",     "20"},
 								{"MaxWidth",     "20"},
@@ -7369,7 +7369,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Heridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -7377,14 +7377,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Heridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Iridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NoiseGridType", "Cube"},
 								{"MinWidth",      "20"},
@@ -7397,7 +7397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Iridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -7405,14 +7405,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Iridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Copper"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",    "1"},
 								{"MinWidth",      "25"},
@@ -7426,7 +7426,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Copper","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -7437,14 +7437,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"LilyPadPrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Copper","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Nickel"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",      "1"},
 								{"NoiseGridType",   "Torus"},
@@ -7460,7 +7460,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Nickel","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -7471,14 +7471,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"LilyPadPrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Nickel","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Nickel","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -7488,7 +7488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Aluminium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",        "True"},
 								{"NoiseGridType",   "Torus"},
@@ -7507,14 +7507,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"LilyPadPrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Aluminium","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Aluminium","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -7524,7 +7524,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Gold"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",   "2"},
 								{"MinWidth",     "40"},
@@ -7538,7 +7538,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Gold","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -7546,14 +7546,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"LilyPadPrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Gold","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Emeril"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",     "True"},
 								{"MinWidth",     "30"},
@@ -7567,7 +7567,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Emeril","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 								{"Height", "5"},
@@ -7576,7 +7576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Min","Resources_Emeril","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "1"},
 								{"Thickness",      "1"},
@@ -7586,7 +7586,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","UnderWater"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PerturbFeatures",  "0.3"},
 								{"AltitudeErosion",  "0.2"},
@@ -7598,7 +7598,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Elevation"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",         "4"},
 								{"AltitudeErosion", "0.5"},
@@ -7607,14 +7607,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Small"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionScale", "8"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Small","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionRatio", "1.5"},
 								{"RegionScale", "8"},
@@ -7622,14 +7622,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Large"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionScale", "8"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Large","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionRatio", "1.5"},
 								{"RegionScale", "8"},
@@ -7637,7 +7637,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Heridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinWidth",     "20"},
 								{"MaxWidth",     "20"},
@@ -7650,7 +7650,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Heridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -7658,14 +7658,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Heridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Iridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NoiseGridType", "Cube"},
 								{"MinWidth",      "20"},
@@ -7678,7 +7678,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Iridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -7686,14 +7686,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Iridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Copper"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",    "1"},
 								{"MinWidth",      "25"},
@@ -7707,7 +7707,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Copper","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -7718,14 +7718,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"LilyPadPrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Copper","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Nickel"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",      "1"},
 								{"NoiseGridType",   "Torus"},
@@ -7741,7 +7741,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Nickel","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -7752,14 +7752,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"LilyPadPrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Nickel","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Nickel","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -7769,7 +7769,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Aluminium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",        "True"},
 								{"NoiseGridType",   "Torus"},
@@ -7788,14 +7788,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"LilyPadPrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Aluminium","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Aluminium","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -7805,7 +7805,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Gold"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",   "2"},
 								{"MinWidth",     "40"},
@@ -7819,7 +7819,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Gold","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -7827,14 +7827,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"LilyPadPrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Gold","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Emeril"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",     "True"},
 								{"MinWidth",     "30"},
@@ -7848,7 +7848,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Emeril","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 								{"Height", "5"},
@@ -7857,7 +7857,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Resources_Emeril","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "1"},
 								{"Thickness",      "1"},
@@ -7867,14 +7867,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Caves","Mouth"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
-						},	
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"LilyPadPrime","Max","Caves","Tunnel"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
 								{"Octaves", "3"},
@@ -7882,14 +7882,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Base"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RidgeErosion", "0.01"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Hill"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",              "7"},
 								{"SharpToRoundFeatures", "0"},
@@ -7906,7 +7906,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Mountain"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",           "8"},
 								{"Height",            "256"},
@@ -7919,7 +7919,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Rock"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",              "4"},
 								{"SharpToRoundFeatures", "0"},
@@ -7931,7 +7931,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","UnderWater"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",           "5"},
 								{"PerturbFeatures",   "0.1"},
@@ -7944,7 +7944,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Elevation"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",              "10"},
 								{"SharpToRoundFeatures", "0"},
@@ -7962,14 +7962,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Small"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionScale", "3"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Small","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionRatio", "0.5"},
 								{"RegionScale", "3"},
@@ -7977,14 +7977,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Large"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionScale", "3"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Large","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionRatio", "0.5"},
 								{"RegionScale", "3"},
@@ -7992,7 +7992,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Heridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinWidth",     "20"},
 								{"MaxWidth",     "20"},
@@ -8005,7 +8005,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Heridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -8013,14 +8013,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Heridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Iridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NoiseGridType", "Cube"},
 								{"MinWidth",      "20"},
@@ -8033,7 +8033,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Iridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -8041,14 +8041,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Iridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Copper"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",    "1"},
 								{"MinWidth",      "25"},
@@ -8062,7 +8062,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Copper","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -8073,14 +8073,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"DesertPrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Copper","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Nickel"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",      "1"},
 								{"NoiseGridType",   "Torus"},
@@ -8096,7 +8096,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Nickel","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -8107,14 +8107,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"DesertPrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Nickel","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Nickel","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -8124,7 +8124,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Aluminium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",        "True"},
 								{"NoiseGridType",   "Torus"},
@@ -8143,14 +8143,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"DesertPrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Aluminium","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Aluminium","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -8160,7 +8160,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Gold"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",   "2"},
 								{"MinWidth",     "40"},
@@ -8174,7 +8174,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Gold","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -8182,14 +8182,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"DesertPrime","TkVoxelGeneratorSettingsElement.xml","Min","TkVoxelGeneratorData.xml","Resources_Gold","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Emeril"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",     "True"},
 								{"MinWidth",     "30"},
@@ -8203,7 +8203,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Emeril","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 								{"Height", "5"},
@@ -8212,7 +8212,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Resources_Emeril","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "1"},
 								{"Thickness",      "1"},
@@ -8222,14 +8222,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","River"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "4"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Min","Substance"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",     "25"},
 								{"RegionSize", "150"},
@@ -8238,7 +8238,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Base"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RidgeErosion", "0.01"},
 								{"RegionScale",  "10"},
@@ -8246,7 +8246,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Hill"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",              "7"},
 								{"SharpToRoundFeatures", "0"},
@@ -8263,7 +8263,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Mountain"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",           "8"},
 								{"Height",            "256"},
@@ -8276,7 +8276,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Rock"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",              "5"},
 								{"AmplifyFeatures",      "0.15"},
@@ -8289,7 +8289,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","UnderWater"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"PerturbFeatures",  "0.3"},
 								{"AltitudeErosion",  "0.2"},
@@ -8301,7 +8301,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Elevation"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves",              "10"},
 								{"SharpToRoundFeatures", "0"},
@@ -8318,7 +8318,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Small"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinWidth",    "128"},
 								{"MaxWidth",    "192"},
@@ -8327,7 +8327,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Small","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionRatio", "1.5"},
 								{"RegionScale", "8"},
@@ -8335,7 +8335,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Large"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinWidth",    "128"},
 								{"MaxWidth",    "192"},
@@ -8344,7 +8344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Large","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RegionRatio", "1.5"},
 								{"RegionScale", "8"},
@@ -8352,7 +8352,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Heridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MinWidth",     "20"},
 								{"MaxWidth",     "20"},
@@ -8365,7 +8365,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Heridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -8373,14 +8373,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Heridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Iridium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NoiseGridType", "Cube"},
 								{"MinWidth",      "20"},
@@ -8393,7 +8393,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Iridium","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -8401,14 +8401,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Iridium"},
 							["VALUE_MATCH"] = "2",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Copper"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",    "1"},
 								{"MinWidth",      "25"},
@@ -8422,7 +8422,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Copper","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -8433,14 +8433,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"DesertPrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Copper","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Nickel"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",      "1"},
 								{"NoiseGridType",   "Torus"},
@@ -8456,7 +8456,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Nickel","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "1"},
 								{"Active",  "True"},
@@ -8467,14 +8467,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"DesertPrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Nickel","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Nickel","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -8484,7 +8484,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Aluminium"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",        "True"},
 								{"NoiseGridType",   "Torus"},
@@ -8503,14 +8503,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"DesertPrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Aluminium","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "5"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Aluminium","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "0.25"},
 								{"Thickness",      "0.25"},
@@ -8520,7 +8520,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Gold"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"MaximumLOD",   "2"},
 								{"MinWidth",     "40"},
@@ -8534,7 +8534,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Gold","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 							}
@@ -8542,14 +8542,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["SPECIAL_KEY_WORDS"] = {"DesertPrime","TkVoxelGeneratorSettingsElement.xml","Max","TkVoxelGeneratorData.xml","Resources_Gold","TkNoiseGridData.xml","VaryRoll","0",},
 							["LINE_OFFSET"] = "+1",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SmoothRadius", "10"},
 							},
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Emeril"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Subtract",     "True"},
 								{"MinWidth",     "30"},
@@ -8563,7 +8563,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Emeril","TurbulenceNoiseLayer"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Active", "True"},
 								{"Height", "5"},
@@ -8572,7 +8572,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Resources_Emeril","SuperPrimitive"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Depth",          "1"},
 								{"Thickness",      "1"},
@@ -8582,14 +8582,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","River"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "4"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Substance"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Width",      "20"},
 								{"Height",     "75"},
@@ -8599,14 +8599,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Caves","Mouth"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Octaves", "3"},
 							}
-						},	
+						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"DesertPrime","Max","Caves","Tunnel"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Height",  "20"},
 								{"Octaves", "3"},

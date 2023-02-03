@@ -193,24 +193,24 @@ YellowTable =
 	{{"SpaceMapPulseEncounterData"},{{1,1,0,0.8},}},
 }
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "SIR - ShipHUD - Lines - ALL.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "VirtualVoyager",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCUIGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SpaceMapShowPlanetLines", "False"},
 							}
@@ -219,7 +219,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				}
 			}
 		}
-	}	
+	}
 }
 
 local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
@@ -255,7 +255,7 @@ end
 					ColorTable = WhiteTable
 				elseif COLORCHOICE == "YELLOW" then
 					ColorTable = YellowTable
-				end					
+				end
 
 for i = 1, #ColorTable do
 	local PK = ColorTable[i][1][1]
@@ -265,7 +265,7 @@ for i = 1, #ColorTable do
 		local B = TableData[j][2]
 		local G = TableData[j][3]
 		local A = TableData[j][4]
-		
+
         local temp_table =
         {
             ["PRECEDING_KEY_WORDS"] = {PK},

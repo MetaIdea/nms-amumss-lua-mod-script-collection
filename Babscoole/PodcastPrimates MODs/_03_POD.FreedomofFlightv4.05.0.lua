@@ -62,7 +62,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"LaunchThrustersMinimumSummonPercentage", "1"},
 								{"MaxSpeedUpVelocity", "50"},
 								{"SpaceCombatFollowModeAimTime", "60"},
-								{"SpaceCombatFollowModeTargetDistance", "0"}, 
+								{"SpaceCombatFollowModeTargetDistance", "0"},
 							}
 						},
 						{
@@ -242,7 +242,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight"},
                             ["INTEGER_TO_FLOAT"]    =   "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  = 
+                            ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"ShipMinHeightForce",  "0.1"},
                             }
@@ -338,7 +338,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy"},
                             ["INTEGER_TO_FLOAT"]    =   "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  = 
+                            ["VALUE_CHANGE_TABLE"]  =
                             {
     								{"ShipPlanetBrakeMinSpeed", "1"},
     								{"ShipPlanetBrakeMaxSpeed", "25"},
