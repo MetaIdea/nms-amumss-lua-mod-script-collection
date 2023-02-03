@@ -1,64 +1,64 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_MOD_DUD_HeliosGlowFX_v4061.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.06",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\FISH\LANDJELLYFISH.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","GlowPlane"},							
+							["SPECIAL_KEY_WORDS"] = {"Name","GlowPlane"},
 							["REMOVE"] = "SECTION",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},							
+							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TransY", "0"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY"},							
+							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Value", "10000.000000"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R"},							
+							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Value", "0.009000"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G"},							
+							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Value", "0.656000"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_B"},							
+							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_B"},
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Value", "1.000000"},
 							}
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Name","GlowAuraEmitter"},							
+							["SPECIAL_KEY_WORDS"] = {"Name","GlowAuraEmitter"},
 							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",							
+							["ADD_OPTION"] = "ADDafterSECTION",
 							["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
@@ -131,10 +131,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Children" />
     </Property>
 ]]
-						},						
+						},
 					}
 				},
 			}
 		},
-	}	
+	}
 }

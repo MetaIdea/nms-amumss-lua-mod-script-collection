@@ -1,23 +1,23 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_Better_Storms_Longer_Days.pak",
 ["MOD_AUTHOR"]    = "degraaaff",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.89",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCSKYGLOBALS.GLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",							
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"DayLength",                           "3600"},							
+								{"DayLength",                           "3600"},
 								{"MinTimeBetweenStormsLow",             "1350"},
 								{"MaxTimeBetweenStormsLow",             "3600"},
 								{"MinTimeBetweenStormsHigh",            "180"},
@@ -42,5 +42,5 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 			}
 		},
-	}	
+	}
 }

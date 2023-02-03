@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]  = "_MOD_DUD_WaterColors_v4061.pak",
     ["MOD_AUTHOR"]    = "jasondude7116",
-    ["LUA_AUTHOR"]    = "Jackty89, WinderTP, and Babscoole",	
+    ["LUA_AUTHOR"]    = "Jackty89, WinderTP, and Babscoole",
     ["NMS_VERSION"]   = "4.06",
     ["MODIFICATIONS"] =
     {
@@ -28,9 +28,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\WATERCOLOURS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
-                    {						
+                    {
                     }
-                },				
+                },
             }
         }
     }
@@ -71,7 +71,7 @@ function GetColours(R1,G1,B1,A1,R2,G2,B2,A2,R3,G3,B3,A3,R4,G4,B4,A4,R5,G5,B5,A5)
         <Property name="B" value="]].. B5 ..[[" />
         <Property name="A" value="]].. A5 ..[[" />
       </Property>
-    </Property>		
+    </Property>
 ]]
 end
 
@@ -98,7 +98,7 @@ function CreateColoursProperty(PaletteColours)
         local R5 = PaletteColours[j][17]
         local G5 = PaletteColours[j][18]
         local B5 = PaletteColours[j][19]
-        local A5 = PaletteColours[j][20]	
+        local A5 = PaletteColours[j][20]
         PropertiesString = PropertiesString..GetColours(R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5)
     end
 return PropertiesString
@@ -108,7 +108,7 @@ local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1
 for i = 1, #DataTable do
     local PaletteColours = DataTable[i]["COLOURS"]
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] = 
+    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
     {
         ["PRECEDING_KEY_WORDS"] = { "Settings", "GcPlanetWaterColourData.xml", "GcPlanetWaterColourData.xml", "GcPlanetWaterColourData.xml", "GcPlanetWaterColourData.xml" },
         ["ADD_OPTION"] = "ADDafterSECTION",

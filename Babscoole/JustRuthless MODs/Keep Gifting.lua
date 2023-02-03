@@ -53,13 +53,13 @@ OptionChanges =
 {
   { -- ID
     {"?TRA_NPC_SECONDARY"},
-    { -- OldCost,       NewCost,           Reward,      KeepOpen 
+    { -- OldCost,       NewCost,           Reward,      KeepOpen
       {"GEKGIFT1",    "GEKGIFT_C",    "SEC_CUSTOM_TRA", Keep_Open},
     }
   },
   {
     {"TRA_NPC_SECONDARY"},
-    { 
+    {
       {"GEKGIFT1",    "GEKGIFT_C",    "SEC_CUSTOM_TRA", Keep_Open},
     }
   },
@@ -188,14 +188,14 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "4.07"
+NMS_Version = "4.08"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/COSTTABLE.MBIN"
 FileSource2 = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN"
 FileSource3 = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
   ["MOD_FILENAME"]    = FileName,
   ["MOD_AUTHOR"]      = ModAuthor,
@@ -206,11 +206,11 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MODIFICATIONS"]   =
   {
     {
-      ["MBIN_CHANGE_TABLE"] = 
-      { 
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource1,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             -- CostTable
           }
@@ -218,11 +218,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       }
     },
     {
-      ["MBIN_CHANGE_TABLE"] = 
-      { 
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource2,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             -- RewardTable
           }
@@ -230,11 +230,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       }
     },
     {
-      ["MBIN_CHANGE_TABLE"] = 
-      { 
+      ["MBIN_CHANGE_TABLE"] =
+      {
         {
           ["MBIN_FILE_SOURCE"]  = FileSource3,
-          ["EXML_CHANGE_TABLE"] = 
+          ["EXML_CHANGE_TABLE"] =
           {
             -- AlienPuzzleTable
           }
@@ -258,7 +258,7 @@ for i = 1, #CostChanges do
     CostID = Change[j][2]
     Amount = Change[j][3]
     Remove = Change[j][4]
-      
+
     CostTable[#CostTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", OldID},
@@ -277,7 +277,7 @@ for i = 1, #RewardChanges do
     NewID  = Change[j][1]
     Race   = Change[j][2]
     Amount = Change[j][3]
-      
+
     RewardTable[#RewardTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", OldID},
@@ -297,7 +297,7 @@ for i = 1, #OptionChanges do
     NewCost  = Change[j][2]
     Reward   = Change[j][3]
     KeepOpen = Change[j][4]
-      
+
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", OldID, "Cost", OldCost},
@@ -314,7 +314,7 @@ for i = 1, #OptionChanges do
 
   for j = 1, #Change do
     OldCost = Change[j][1]
-      
+
     AlienPuzzleTable[#AlienPuzzleTable+1] =
     {
       ["SPECIAL_KEY_WORDS"] = {"Id", OldID, "Cost", OldCost},

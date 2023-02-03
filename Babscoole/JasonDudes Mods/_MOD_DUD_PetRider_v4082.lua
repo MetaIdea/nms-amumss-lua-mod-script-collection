@@ -155,8 +155,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
+							["FOREACH_SKW_GROUP"] =
+							{
 								{"ScanForResource","GcPetBehaviourData.xml",},
 								{"FindResource","GcPetBehaviourData.xml",},
 								{"FindBuilding","GcPetBehaviourData.xml",},
@@ -168,8 +168,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							}
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
+							["FOREACH_SKW_GROUP"] =
+							{
 								{"FindHazards","GcPetBehaviourData.xml",},
 								{"AttackHazard","GcPetBehaviourData.xml",},
 								{"Attack","GcPetBehaviourData.xml",},

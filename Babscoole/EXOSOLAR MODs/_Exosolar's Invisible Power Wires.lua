@@ -1,80 +1,80 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "_Exosolar's Invisible Power Wires.pak",
 ["MOD_AUTHOR"]      = "Exosolar",
-["LUA_AUTHOR"]      = "Babscoole",	
+["LUA_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "Makes powered wires invisible",
-["NMS_VERSION"]     = "4.07",	
-["MODIFICATIONS"]   = 
+["NMS_VERSION"]     = "4.08",
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
 					["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERLINE\WIREON_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Uniforms"},
-							["INTEGER_TO_FLOAT"] = "FORCE",									
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"t", "0"},
 							}
 						},
 						{
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Map",	""},
 								{"Shader",	""},
 								{"Class", "Transparent"},
 							}
-						},						
+						},
 					},
 				},
 				{
 					["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERLINE\WIREOFF_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Uniforms"},
-							["INTEGER_TO_FLOAT"] = "FORCE",									
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"t", "0"},
 							}
 						},
 						{
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Map",	""},
 								{"Shader",	""},
 								{"Class", "Transparent"},
 							}
-						},							
+						},
 					},
 				},
 				{
 					["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\POWERLINE\WIRE_MAT.MATERIAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"Class", "Transparent"},
-								{"Shader",	""},				
+								-- {"Shader",	""},
 							}
 						},
-					{
+						{
 							["PRECEDING_KEY_WORDS"] = {"Uniforms"},
-							["INTEGER_TO_FLOAT"] = "FORCE",									
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"] = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"t", "0"},
 							}
-						},						
+						},
 					},
-				},				
+				},
 			},
 		},
 	},

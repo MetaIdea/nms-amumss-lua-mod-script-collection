@@ -220,7 +220,7 @@ ToxicDataTable =
 ToxicEggDataTable =
 {
     {
-        ["PALETTE"] = "Plant",        
+        ["PALETTE"] = "Plant",
         ["NUMCOLOURS"] = "_16",
         ["COLOURS"] =
         {
@@ -291,7 +291,7 @@ ToxicEggDataTable =
         }
     },
     {
-        ["PALETTE"] = "Leaf",        
+        ["PALETTE"] = "Leaf",
         ["NUMCOLOURS"] = "_16",
         ["COLOURS"] =
         {
@@ -362,7 +362,7 @@ ToxicEggDataTable =
         }
     },
     {
-        ["PALETTE"] = "Rock",        
+        ["PALETTE"] = "Rock",
         ["NUMCOLOURS"] = "_16",
         ["COLOURS"] =
         {
@@ -523,31 +523,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\TOXIC\\TOXICCOLOURPALETTES.MBIN",
 					["EXML_CHANGE_TABLE"] =
-					{						
+					{
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"Grass", "GcPaletteData.xml"},  
+							["FOREACH_SKW_GROUP"] =
+							{
+								{"Grass", "GcPaletteData.xml"},
 								{"Wood", "GcPaletteData.xml"},
 								{"Stone", "GcPaletteData.xml"},
 								{"Dirt", "GcPaletteData.xml"},
-							},  
-							["VALUE_CHANGE_TABLE"] = 
+							},
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"NumColours", "All"} 
-							} 
+								{"NumColours", "All"}
+							}
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"RockSaturated", "GcPaletteData.xml"},  
+							["FOREACH_SKW_GROUP"] =
+							{
+								{"RockSaturated", "GcPaletteData.xml"},
 								{"RockDark", "GcPaletteData.xml"},
-							},  
-							["VALUE_CHANGE_TABLE"] = 
+							},
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NumColours", "_16"}
-							}	
-						},							
+							}
+						},
 					}
 				},
 				{
@@ -555,29 +555,29 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"Wood", "GcPaletteData.xml"},  
+							["FOREACH_SKW_GROUP"] =
+							{
+								{"Wood", "GcPaletteData.xml"},
 								{"Stone", "GcPaletteData.xml"},
 								{"Dirt", "GcPaletteData.xml"},
-							},  
-							["VALUE_CHANGE_TABLE"] = 
+							},
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"NumColours", "All"} 
-							} 
-						},					
+								{"NumColours", "All"}
+							}
+						},
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
+							["FOREACH_SKW_GROUP"] =
+							{
 								{"Plant", "GcPaletteData.xml"},
 								{"Leaf", "GcPaletteData.xml"},
 								{"Rock", "GcPaletteData.xml"},
-							}, 
-							["VALUE_CHANGE_TABLE"] = 
+							},
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"NumColours", "_16"}
-							}	
-						},					
+							}
+						},
 					}
 				},
 				{
@@ -585,18 +585,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"Grass", "GcPaletteData.xml"},  
+							["FOREACH_SKW_GROUP"] =
+							{
+								{"Grass", "GcPaletteData.xml"},
 								{"Wood", "GcPaletteData.xml"},
 								{"Stone", "GcPaletteData.xml"},
 								{"Dirt", "GcPaletteData.xml"},
-							},  
-							["VALUE_CHANGE_TABLE"] = 
+							},
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"NumColours", "All"} 
-							} 
-						},									
+								{"NumColours", "All"}
+							}
+						},
 					}
 				},
 			}
@@ -626,11 +626,11 @@ function CreateColoursProperty(PaletteColours)
         local A = PaletteColours[j]["A"]
         PropertiesString = PropertiesString..GetColours(R, G, B, A)
     end
-    local PropertyColoursString = 
+    local PropertyColoursString =
     [[      <Property name="Colours">
     ]]..PropertiesString..[[
   </Property>]]
-    
+
     -- print(PropertyColoursString)
     return PropertyColoursString
 end
@@ -640,7 +640,7 @@ for i = 1, #ToxicDataTable do
     local Palette = ToxicDataTable[i]["PALETTE"]
     local PaletteColours = ToxicDataTable[i]["COLOURS"]
     local PaletteNumColours = ToxicDataTable[i]["NUMCOLOURS"]
-           
+
     ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
@@ -648,7 +648,7 @@ for i = 1, #ToxicDataTable do
         ["REMOVE"] = "SECTION"
     }
 
-    ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1 ] = 
+    ToxicBaseColourPalettesTable[#ToxicBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["ADD"] = CreateColoursProperty(PaletteColours)
@@ -660,7 +660,7 @@ for i = 1, #ToxicEggDataTable do
     local Palette = ToxicEggDataTable[i]["PALETTE"]
     local PaletteColours = ToxicEggDataTable[i]["COLOURS"]
     local PaletteNumColours = ToxicEggDataTable[i]["NUMCOLOURS"]
-           
+
     ToxicEggBaseColourPalettesTable[#ToxicEggBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
@@ -668,7 +668,7 @@ for i = 1, #ToxicEggDataTable do
         ["REMOVE"] = "SECTION"
     }
 
-    ToxicEggBaseColourPalettesTable[#ToxicEggBaseColourPalettesTable +1 ] = 
+    ToxicEggBaseColourPalettesTable[#ToxicEggBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["ADD"] = CreateColoursProperty(PaletteColours)
@@ -680,7 +680,7 @@ for i = 1, #ToxicTentDataTable do
     local Palette = ToxicTentDataTable[i]["PALETTE"]
     local PaletteColours = ToxicTentDataTable[i]["COLOURS"]
     local PaletteNumColours = ToxicTentDataTable[i]["NUMCOLOURS"]
-           
+
     ToxicTentBaseColourPalettesTable[#ToxicTentBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
@@ -688,7 +688,7 @@ for i = 1, #ToxicTentDataTable do
         ["REMOVE"] = "SECTION"
     }
 
-    ToxicTentBaseColourPalettesTable[#ToxicTentBaseColourPalettesTable +1 ] = 
+    ToxicTentBaseColourPalettesTable[#ToxicTentBaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["ADD"] = CreateColoursProperty(PaletteColours)

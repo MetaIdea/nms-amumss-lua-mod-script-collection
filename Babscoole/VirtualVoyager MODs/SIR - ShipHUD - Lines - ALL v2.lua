@@ -188,24 +188,24 @@ InputNOLINESCHOICE = {NOLINES,
 ]]}
 -- END: Data section
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "SIR - ShipHUD - Lines - ALL.pak",
 ["MOD_DESCRIPTION"] = "",
 ["MOD_AUTHOR"]      = "VirtualVoyager",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCUIGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 	
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SpaceMapShowPlanetLines", "False"},
 							}
@@ -214,7 +214,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				}
 			}
 		}
-	}	
+	}
 }
 
 -- START of processing
@@ -224,10 +224,10 @@ NOLINES = GUIF(InputNOLINESCHOICE)
 while not NOLINES do
   -- Select Color Variation from BLUE, CYAN, GREEN, PINK, PURPLE, RED, WHITE or YELLOW -- choice is already made for NOLINES
   -- COLORCHOICE = "BLUE"
-  
+
   COLORCHOICE = GUIF(InputCOLORCHOICE):upper()
 -- print("COLORCHOICE = "..tostring(COLORCHOICE))
-  
+
   if ColorTables[COLORCHOICE] == nil then  -- when COLORCHOICE is NOT in the table
     print("         >>> ["..COLORCHOICE.."] is NOT a valid color choice, please retry! <<<")
   else
@@ -249,7 +249,7 @@ if NOLINES then
       },
   }
   Change_Table_Array[#Change_Table_Array + 1] = temp_table
-        
+
 else
   local ColorTable = ColorTables[COLORCHOICE]
 
@@ -263,7 +263,7 @@ else
     local B = TableData[2]
     local G = TableData[3]
     local A = TableData[4]
-  
+
     local temp_table =
     {
         ["PRECEDING_KEY_WORDS"] = {PK},
@@ -278,5 +278,5 @@ else
     }
     Change_Table_Array[#Change_Table_Array + 1] = temp_table
   end
-  
+
 end

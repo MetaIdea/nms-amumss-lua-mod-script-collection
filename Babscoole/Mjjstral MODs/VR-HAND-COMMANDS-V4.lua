@@ -1,23 +1,23 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "VR-HAND-COMMANDS.pak", 
+["MOD_FILENAME"]    = "VR-HAND-COMMANDS.pak",
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.07",
+["NMS_VERSION"]     = "4.08",
 ["MOD_DESCRIPTION"] = "Adds trigger-action hand combos, savegame: left-right-left, teleport to base: right-left-right",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = { "Components" },
-							["ADD"] = 
-[[		
+							["ADD"] =
+[[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
       <Property name="StartInactive" value="False" />
@@ -29,16 +29,16 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
+                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BASESTATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	  
+            </Property>
           </Property>
         </Property>
 
@@ -56,9 +56,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_S_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_R" />
@@ -70,12 +70,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_T_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_S_TRANS" />
           <Property name="Triggers">
@@ -90,9 +90,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_S" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_L" />
@@ -104,9 +104,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_S_TRANS_" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_R" />
@@ -118,12 +118,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_S_TRANS_" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_S_TRANS_" />
           <Property name="Triggers">
@@ -138,9 +138,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_S" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_L" />
@@ -152,9 +152,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_S_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_R" />
@@ -166,9 +166,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_S_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
 
@@ -186,9 +186,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_S_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="1.2" />
@@ -200,9 +200,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="BASESTATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
 
@@ -220,9 +220,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_S" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_L" />
@@ -234,9 +234,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_S_TRANS_" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_R" />
@@ -248,12 +248,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_S_TRANS_" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_S_TRANS_" />
           <Property name="Triggers">
@@ -268,9 +268,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_S" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_L" />
@@ -282,9 +282,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_S_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_R" />
@@ -296,12 +296,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_S_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_S" />
           <Property name="Triggers">
@@ -316,7 +316,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="SAVE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
             </Property>
             <Property value="GcActionTrigger.xml">
@@ -330,12 +330,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="BASESTATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_T_TRANS" />
           <Property name="Triggers">
@@ -350,9 +350,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_T" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_L" />
@@ -364,9 +364,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_T_TRANS_" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_R" />
@@ -378,12 +378,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_T_TRANS_" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_T_TRANS_" />
           <Property name="Triggers">
@@ -398,9 +398,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_T" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_L" />
@@ -412,9 +412,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_T_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_R" />
@@ -426,12 +426,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE02_T_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE02_T" />
           <Property name="Triggers">
@@ -446,9 +446,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_T_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="1.2" />
@@ -460,12 +460,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="BASESTATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_T_TRANS" />
           <Property name="Triggers">
@@ -480,9 +480,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_T" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_L" />
@@ -494,9 +494,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_T_TRANS_" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_R" />
@@ -508,12 +508,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_T_TRANS_" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
-        </Property>	
-		
+        </Property>
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_T_TRANS_" />
           <Property name="Triggers">
@@ -528,9 +528,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_T" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_L" />
@@ -542,9 +542,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_T_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
             <Property value="GcActionTrigger.xml">
               <Property name="Event" value="GcAnimFrameEvent.xml">
                 <Property name="Anim" value="POSE_HND_FIST_R" />
@@ -556,12 +556,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="STATE03_T_TRANS" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
-        </Property>	
-		
+        </Property>
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="STATE03_T" />
           <Property name="Triggers">
@@ -576,7 +576,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="TELEPORT_BASE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
             </Property>
             <Property value="GcActionTrigger.xml">
@@ -590,9 +590,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="BASESTATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
 
@@ -611,9 +611,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="TRANS_STATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
 
@@ -634,12 +634,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="TRANS_STATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
-		
+
         <Property value="GcActionTriggerState.xml">
           <Property name="StateID" value="TRANS_STATE" />
           <Property name="Triggers">
@@ -654,9 +654,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="BASESTATE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>	
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
 
@@ -688,7 +688,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="InteractFiendCrimeType" value="GcFiendCrime.xml">
         <Property name="FiendCrime" value="None" />
       </Property>
-      <Property name="InteractFiendCrimeChance" value="1" />	  
+      <Property name="InteractFiendCrimeChance" value="1" />
       <Property name="InteractCrimeLevel" value="0" />
       <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
@@ -733,11 +733,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ReseedOnRewardSuccess" value="False" />
       <Property name="CanCollectInMech" value="False" />
     </Property>
-]] 
+]]
 						}
 					}
 				}
 			}
 		}
-	}	
+	}
 }

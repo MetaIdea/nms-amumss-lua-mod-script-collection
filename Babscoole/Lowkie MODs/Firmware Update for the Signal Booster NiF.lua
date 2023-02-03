@@ -1,4 +1,4 @@
-NMSVersion = "4.07"
+NMSVersion = "4.08"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -343,7 +343,7 @@ return
       <Property name="Options">
 ]]
  end
- 
+
 -- All_Request_Leave =
 -- [[
         -- <Property value="GcAlienPuzzleOption.xml">
@@ -516,7 +516,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"Name","FACTORY_R",},
 							["VALUE_CHANGE_TABLE"] =
 							{
-								{"ReplaceEventIfAlreadyActive",	"True"},                               
+								{"ReplaceEventIfAlreadyActive",	"True"},
 							}
 						},
 						{
@@ -526,7 +526,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_KEY_WORDS"] = {"Events"},
 							["ADD"] = Glitch_Scan_Event
-						},						
+						},
 					},
 				},
 			}

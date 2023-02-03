@@ -72,7 +72,7 @@ DataTable =
         }
     },
     {
-        ["PALETTE"] = "RockSaturated",        
+        ["PALETTE"] = "RockSaturated",
         ["NUMCOLOURS"] = "_16",
         ["COLOURS"] =
         {
@@ -143,7 +143,7 @@ DataTable =
         }
     },
     {
-        ["PALETTE"] = "RockDark",        
+        ["PALETTE"] = "RockDark",
         ["NUMCOLOURS"] = "_16",
         ["COLOURS"] =
         {
@@ -232,22 +232,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Plant", "GcPaletteData.xml"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"NumColours", "All"} 
-							} 
+								{"NumColours", "All"}
+							}
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"RockSaturated", "GcPaletteData.xml"},  
-								{"RockDark", "GcPaletteData.xml"},
-							},  
-							["VALUE_CHANGE_TABLE"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
-								{"NumColours", "_16"} 
-							} 
-						},						
+								{"RockSaturated", "GcPaletteData.xml"},
+								{"RockDark", "GcPaletteData.xml"},
+							},
+							["VALUE_CHANGE_TABLE"] =
+							{
+								{"NumColours", "_16"}
+							}
+						},
 					}
 				}
 			}
@@ -277,11 +277,11 @@ function CreateColoursProperty(PaletteColours)
         local A = PaletteColours[j]["A"]
         PropertiesString = PropertiesString..GetColours(R, G, B, A)
     end
-    local PropertyColoursString = 
+    local PropertyColoursString =
     [[      <Property name="Colours">
     ]]..PropertiesString..[[
   </Property>]]
-    
+
     -- print(PropertyColoursString)
     return PropertyColoursString
 end
@@ -291,7 +291,7 @@ for i = 1, #DataTable do
     local Palette = DataTable[i]["PALETTE"]
     local PaletteColours = DataTable[i]["COLOURS"]
     local PaletteNumColours = DataTable[i]["NUMCOLOURS"]
-           
+
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
@@ -299,7 +299,7 @@ for i = 1, #DataTable do
         ["REMOVE"] = "SECTION"
     }
 
-    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] = 
+    BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
     {
         ["SPECIAL_KEY_WORDS"] = { Palette, "GcPaletteData.xml", "NumColours", PaletteNumColours },
         ["ADD"] = CreateColoursProperty(PaletteColours)

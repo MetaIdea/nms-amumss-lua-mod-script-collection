@@ -1,4 +1,4 @@
-SKIPTUT = 
+SKIPTUT =
 [[
     <Property value="GcGenericMissionSequence.xml">
       <Property name="MissionID" value="SKIP_TUT" />
@@ -471,23 +471,23 @@ SKIPTUT =
     </Property>
 ]]
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]       = "FastStart-SkipTutorial-AltShip-MultiFreighter.pak",
 ["MOD_DESCRIPTION"]    = "Skip Intro and Tutorial and Multiple Freighters and Alt Ship",
 ["MOD_AUTHOR"]         = "HauntedKobra",
 ["LUA Fix and Update"] = "Babscoole",
 ["NMS_VERSION"]        = "3.53",
-["MODIFICATIONS"]      = 
+["MODIFICATIONS"]      =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\UI\BOOTLOGOPC.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
-						{													
+						{
 							["PRECEDING_KEY_WORDS"] = "Textures",
 							["REMOVE"] = "SECTION",
 						}
@@ -497,14 +497,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "DisplayTime",
 							["REMOVE"] = "SECTION",
 						},
-					},					
+					},
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-						  	["VALUE_CHANGE_TABLE"] = 
+						  	["VALUE_CHANGE_TABLE"] =
 							{
 								{"SkipIntro",                         "True"},  -- Original "False"
 								{"BootMusic",                         "False"}, -- Original "True"
@@ -513,21 +513,21 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"ForceInitialWeapon",                "False"}, -- Original "True"
 								{"ForceLoadAllWeather",               "True"},  -- Original "False"
 								{"MultiplePlayerFreightersInASystem", "True"},  -- Original "False"
-							}	
+							}
 						},
 					}
 				},
 				{
 				  	["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\MISSIONS\TUTORIALMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Missions",},
-							["ADD"] = SKIPTUT	
+							["ADD"] = SKIPTUT
 						},
 					}
-				},				
+				},
 			},
 		},
-	}	
+	}
 }

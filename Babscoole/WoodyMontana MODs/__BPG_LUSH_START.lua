@@ -1,18 +1,18 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "__BPG_LUSH_START.pak",
 ["MOD_AUTHOR"]    = "WoodyMontana",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
-				{  
+			["MBIN_CHANGE_TABLE"] =
+			{
+				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMEFILENAMES.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Lush","FileOptions"},
@@ -43,26 +43,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENHQBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENHQBIOME.MXML"},								
+								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENHQBIOME.MXML"},
 							},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"Weight", "0.25"},			
+								{"Weight", "0.25"},
 							},
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMABIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROCKYBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROCKYWEIRDBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQTENTACLEBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBUBBLESBIOME.MXML"},	
+								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBUBBLESBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHINFESTEDBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPBIOME.MXML"},--
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICSPORESBIOME.MXML"},
@@ -84,36 +84,36 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENCORALBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENINFESTEDBIOME.MXML"},
 							},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"Weight", "0.5"},			
+								{"Weight", "0.5"},
 							},
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBIGPROPSBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICBIGPROPSBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHBIGPROPSBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOBIGPROPSBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENBIGPROPSBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENBIGPROPSBIOME.MXML"},									
+								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENBIGPROPSBIOME.MXML"},
 							},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"Weight", "0.8"},			
+								{"Weight", "0.8"},
 							},
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADFROZENBIOME.MXML"},
 								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADFROZENWEIRDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADBIGPROPSBIOME.MXML"},								
+								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADBIGPROPSBIOME.MXML"},
 							},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
-								{"Weight", "1"},			
+								{"Weight", "1"},
 							},
 						},
 						{
@@ -559,29 +559,29 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Biome", "Scorched"},
 								{"Biome", "Radioactive"},
-								{"Biome", "Frozen"},			
+								{"Biome", "Frozen"},
 							},
 							["REMOVE"] = "SECTION",
 						},
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Biome", "Lush"},
-							} 
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SeasonalProbabilityOverride", "0"},
 								{"AllowLimiting",               "False"},
-							} 
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
@@ -827,11 +827,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SeasonalProbabilityOverride", "0"},
 								{"AllowLimiting",               "False"},
-							} 
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER"},
@@ -1412,11 +1412,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SeasonalProbabilityOverride", "0"},
 								{"AllowLimiting",               "False"},
-							} 
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN"},
@@ -1447,10 +1447,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SeasonalProbabilityOverride", "0"},
-							} 
+							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE"},
@@ -1513,25 +1513,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Id", "VALUABLE_STUFF"},
 								{"Id", "STORMCRYSTALS"},
 							},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"ForceOnSeasonStart", "False"},
-							} 
+							}
 						},
 						{
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Name", "PROC_SALVAGE"},
 								{"Name", "PROC_BONES"},
 								{"Name", "WATER_HAZ"},
 								{"Name", "CAVECUBES"},
 								{"Name", "CAVEEGGS"},
-								{"Name", "CLAM"},	
+								{"Name", "CLAM"},
 								{"Name", "TENTACLE"},
 								{"Name", "GEMS"},--
 								{"Name", "PHYSICSSPOREPRO"},
@@ -1561,24 +1561,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Name", "CRYSTALPROPS"},
 								{"Name", "BURIED_EXTRAS"},
 							},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SeasonalProbabilityOverride", "0"},
-								{"AllowLimiting",               "False"},		
+								{"AllowLimiting",               "False"},
 							},
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","WILDWEIRD"},
 							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"SeasonalProbabilityOverride", "0"},
-								{"AllowLimiting",               "False"},	
-							} 
+								{"AllowLimiting",               "False"},
+							}
 						},
 					}
-				},				
+				},
 			}
 		},
-	}	
+	}
 }

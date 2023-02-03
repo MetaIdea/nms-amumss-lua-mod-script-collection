@@ -1,46 +1,46 @@
 SHIP_SCENE = [[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP.SCENE.MBIN]]
 SHIP_SCALE = "1.0"
 
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "DroneShip.pak",
 ["MOD_AUTHOR"]      = "Mjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.07",
+["NMS_VERSION"]     = "4.08",
 ["DESCRIPTION"]     = "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
-["MODIFICATIONS"]   = 
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{		
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = { SHIP_SCENE },
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["REPLACE_TYPE"]       = "RAW",
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{
-									[[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP\ENTITIES\SHIP.ENTITY.MBIN]], 
-									[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB\ENTITIES\COCKPIT_B.ENTITY.MBIN]] 
+									[[MODELS\COMMON\SPACECRAFT\DRONE\DRONESHIP\ENTITIES\SHIP.ENTITY.MBIN]],
+									[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB\ENTITIES\COCKPIT_B.ENTITY.MBIN]]
 								},
 							}
 						},
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Name","Ship",},
-							["INTEGER_TO_FLOAT"]   = "FORCE",							
-							["VALUE_CHANGE_TABLE"] = 
+							["INTEGER_TO_FLOAT"]   = "FORCE",
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"TransY", "0.6"},
 								{"ScaleX", SHIP_SCALE},
 								{"ScaleY", SHIP_SCALE},
 								{"ScaleZ", SHIP_SCALE},
-							}							
+							}
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"Children","Children"}, 
-							["ADD"] = 
+							["PRECEDING_KEY_WORDS"] = {"Children","Children"},
+							["ADD"] =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="CockpitPos" />
@@ -67,17 +67,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		},
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{  
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
 							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] = 
+							["ADD"] =
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="TRIGGERANIM" />
@@ -107,12 +107,12 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
 ]]
-							
+
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
 							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] = 
+							["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -125,14 +125,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
-              </Property>		  
+                <Property name="UseMissionClock" value="False" />
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_ACTION" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -144,17 +144,17 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="1" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
+                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcRewardAction.xml">
                   <Property name="Reward" value="CUSTOMSHIP" />
-                </Property>	
+                </Property>
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_ACTION" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>				
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -167,15 +167,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Anim" value="TRIGGERANIM" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>			  
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="ACTION" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -183,18 +183,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PersistentState" value="" />
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
-    </Property>	
-]]							
+    </Property>
+]]
 						}
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["ADD"] = 
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
+							["ADD"] =
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="Custom Ship" />
@@ -242,17 +242,17 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Filename" value="" />
       </Property>
     </Property>
-]]							
+]]
 						}
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["ADD"] = 
+							["PRECEDING_KEY_WORDS"] = {"GenericTable"},
+							["ADD"] =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="CUSTOMSHIP" />
@@ -393,39 +393,39 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
       </Property>
-    </Property> 
+    </Property>
 ]]
 						}
 					}
 				}
 			}
-		}		
+		}
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
+  <Property name="NodeData" />
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
+    <Property name="Rotations" />
+	<Property name="Translations" />
 	<Property name="Scales" />
-    </Property>  
-  </Property>	
+    </Property>
+  </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
+    <Property name="Rotations" />
+	<Property name="Translations" />
+	<Property name="Scales" />
  </Property>
-</Data>	
-]]			
+</Data>
+]]
 		}
 	}
 }

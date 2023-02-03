@@ -1,82 +1,82 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "BSP 3.91.pak",
 ["MOD_AUTHOR"]    = "ThatBomberBoi",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.91",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
-					["MBIN_FILE_SOURCE"]  =	"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMALBUMEN\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",							
-					["EXML_CHANGE_TABLE"] = 
+					["MBIN_FILE_SOURCE"]  =	"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMALBUMEN\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"TriggerAction", "STEP1_ENTER",},  
-								{"TriggerAction", "STEP1",},
-								{"TriggerAction", "STEP2_ENTER",}, 
-								{"TriggerAction", "STEP2",},
-							},  
-							["VCT"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
-								{"Time", "1200"} 
-							} 
-						}, 						
+								{"TriggerAction", "STEP1_ENTER",},
+								{"TriggerAction", "STEP1",},
+								{"TriggerAction", "STEP2_ENTER",},
+								{"TriggerAction", "STEP2",},
+							},
+							["VCT"] =
+							{
+								{"Time", "1200"}
+							}
+						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] =	
+					["MBIN_FILE_SOURCE"] =
 						{
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMBARREN\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMSCORCHED\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
-						},	
-					["EXML_CHANGE_TABLE"] = 
+						},
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"TriggerAction", "STEP1_ENTER",},  
-								{"TriggerAction", "STEP1",},
-								{"TriggerAction", "STEP2_ENTER",}, 
-								{"TriggerAction", "STEP2",},
-							},  
-							["VCT"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
-								{"Time", "1800"} 
-							} 
-						}, 						
+								{"TriggerAction", "STEP1_ENTER",},
+								{"TriggerAction", "STEP1",},
+								{"TriggerAction", "STEP2_ENTER",},
+								{"TriggerAction", "STEP2",},
+							},
+							["VCT"] =
+							{
+								{"Time", "1800"}
+							}
+						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] =	
+					["MBIN_FILE_SOURCE"] =
 						{
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMDEADCREATURE\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMGRAVITINO\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMNIP\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
-						},	
-					["EXML_CHANGE_TABLE"] = 
+						},
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"TriggerAction", "STEP1_ENTER",},  
-								{"TriggerAction", "STEP1",},
-								{"TriggerAction", "STEP2_ENTER",}, 
-								{"TriggerAction", "STEP2",},
-							},  
-							["VCT"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
-								{"Time", "900"} 
-							} 
-						}, 						
+								{"TriggerAction", "STEP1_ENTER",},
+								{"TriggerAction", "STEP1",},
+								{"TriggerAction", "STEP2_ENTER",},
+								{"TriggerAction", "STEP2",},
+							},
+							["VCT"] =
+							{
+								{"Time", "900"}
+							}
+						},
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] =	
+					["MBIN_FILE_SOURCE"] =
 						{
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMLUSH\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMPOOP\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
@@ -84,25 +84,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMSNOW\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMTOXIC\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
 							"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\FARMVENOMSAC\ENTITIES\PLANTINTERACTION.ENTITY.MBIN",
-						},	
-					["EXML_CHANGE_TABLE"] = 
+						},
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["FOREACH_SKW_GROUP"] = 
-							{  
-								{"TriggerAction", "STEP1_ENTER",},  
-								{"TriggerAction", "STEP1",},
-								{"TriggerAction", "STEP2_ENTER",}, 
-								{"TriggerAction", "STEP2",},
-							},  
-							["VCT"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
-								{"Time", "600"} 
-							} 
-						}, 						
+								{"TriggerAction", "STEP1_ENTER",},
+								{"TriggerAction", "STEP1",},
+								{"TriggerAction", "STEP2_ENTER",},
+								{"TriggerAction", "STEP2",},
+							},
+							["VCT"] =
+							{
+								{"Time", "600"}
+							}
+						},
 					}
-				},				
+				},
 			}
 		}
-	}	
+	}
 }

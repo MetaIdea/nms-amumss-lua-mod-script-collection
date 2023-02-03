@@ -117,7 +117,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-							["INTEGER_TO_FLOAT"] = "FORCE",	
+							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] =
 							{
 								{"RotX",		"-3.17975"},

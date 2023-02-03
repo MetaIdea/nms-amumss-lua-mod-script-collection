@@ -1,23 +1,23 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "RelicGateWarp.pak",
 ["NMS_VERSION"]     = "4.07",
 ["MOD_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "WTFAI",
-["MODIFICATIONS"]   = 
-	{	
+["MODIFICATIONS"]   =
+	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{  
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
 							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] = 
+							["ADD"] =
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="RELIC_GATE_WARP" />
@@ -49,9 +49,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 ]]
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
 							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] = 
+							["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -65,7 +65,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Anim" value="RELIC_GATE_WARP" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>	
+              </Property>
               <Property name="Action">
                 <Property value="GcWarpAction.xml">
                   <Property name="WarpType" value="SpacePOI" />
@@ -86,11 +86,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"] = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["ADD"] = 
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
+							["ADD"] =
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="Relic Gate Warp" />
@@ -137,7 +137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
       </Property>
-    </Property>	
+    </Property>
 ]]
 						}
 					}
@@ -145,31 +145,31 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		}
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] = 
+			["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
+  <Property name="NodeData" />
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
+    <Property name="Rotations" />
+	<Property name="Translations" />
 	<Property name="Scales" />
-    </Property>  
-  </Property>	
+    </Property>
+  </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
+    <Property name="Rotations" />
+	<Property name="Translations" />
+	<Property name="Scales" />
  </Property>
-</Data>	
-]]			
+</Data>
+]]
 		},
 	}
 }

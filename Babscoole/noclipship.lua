@@ -1,20 +1,20 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "noclipship.pak",
 ["MOD_AUTHOR"]    = "EliteGamers",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "GCSPACESHIPGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] = 
-					{						
+					["EXML_CHANGE_TABLE"] =
+					{
 						{
-							["VALUE_CHANGE_TABLE"] 	= 
+							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"ApplyHeightForce",                      "False"},
 								{"ApplyHeightAlign",                      "False"},
@@ -34,37 +34,37 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"AvoidanceDistancePower",                "0"},
 								{"CollisionDeflectForce",                 "0"},
 								{"CollisionAlignStrength",                "0"},
-								{"AtmosphereSpeed",                       "500"},							
+								{"AtmosphereSpeed",                       "500"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Control", "PlanetEngine"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"BoostThrustForce", "300"},
-								{"BoostMaxSpeed",    "500"},	
+								{"BoostMaxSpeed",    "500"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"ControlLight", "PlanetEngine"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"ThrustForce",      "500"},
 								{"MaxSpeed",         "500"},
-								{"BoostThrustForce", "1000"},	
+								{"BoostThrustForce", "1000"},
 							}
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "PlanetEngine"},
-							["VALUE_CHANGE_TABLE"] = 
-							{							
+							["VALUE_CHANGE_TABLE"] =
+							{
 								{"ThrustForce",      "500"},
 								{"MaxSpeed",         "500"},
-								{"BoostThrustForce", "300"},	
+								{"BoostThrustForce", "300"},
 							}
 						},
 					}
-				}				
+				}
 			}
 		}
 	}

@@ -1,24 +1,24 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_MegaStacks&AllSuitTechSlots.pak",
 ["MOD_AUTHOR"]    = "Ichigo0Soul",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.96",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
-					["MBIN_FILE_SOURCE"] = 
+					["MBIN_FILE_SOURCE"] =
 					{
 						"METADATA\GAMESTATE\DEFAULTINVENTORYBALANCE.MBIN",
 						"METADATA\GAMESTATE\DEFAULTINVENTORYBALANCESURVIVAL.MBIN",
 					},
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"DefaultSubstanceMaxAmount",             "999999"},
 								{"DefaultProductMaxAmount",               "10"},
@@ -39,9 +39,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"PlayerPersonalInventoryTechHeight",     "6"},
 							}
 						}
-					} 
+					}
 				}
 			}
 		}
-	}	
+	}
 }

@@ -1,40 +1,40 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "____LUSH_START.pak",
 ["MOD_AUTHOR"]    = "WoodyMontana",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
-				{  
+			["MBIN_CHANGE_TABLE"] =
+			{
+				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMEFILENAMES.MBIN",
-					["EXML_CHANGE_TABLE"] = 
-					{				
+					["EXML_CHANGE_TABLE"] =
+					{
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
-							["FOREACH_SKW_GROUP"] = 
+							["FOREACH_SKW_GROUP"] =
 							{
 								{"Biome", "Scorched"},
 								{"Biome", "Radioactive"},
-								{"Biome", "Frozen"},			
+								{"Biome", "Frozen"},
 							},
 							["REMOVE"] = "SECTION",
 						},
 						{
 							["PRECEDING_FIRST"] = "TRUE",
 							["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
-							["VALUE_CHANGE_TABLE"] = 
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"Biome", "Lush"},
-							} 
+							}
 						},
 					}
-				},				
+				},
 			}
 		},
-	}	
+	}
 }

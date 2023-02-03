@@ -1,24 +1,24 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "z-SavegameByHotkey-Org.pak",
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
-["NMS_VERSION"]     = "4.07",
-["MODIFICATIONS"]   = 
+["NMS_VERSION"]     = "4.08",
+["MODIFICATIONS"]   =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{  
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"}, 
+							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
 							["SECTION_ACTIVE"]    = {2,},
 							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] = 
+							["ADD"] =
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="SAVEGAME" />
@@ -47,12 +47,12 @@ NMS_MOD_DEFINITION_CONTAINER =
             <Property name="BlockPlayerWeapon" value="Unblocked" />
           </Property>
         </Property>
-]]				
+]]
 						},
 						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"}, 
+							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
 							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] = 
+							["ADD"] =
 [[
     <Property value="GcSimpleInteractionComponentData.xml">
       <Property name="SimpleInteractionType" value="Save" />
@@ -75,7 +75,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="InteractFiendCrimeType" value="GcFiendCrime.xml">
         <Property name="FiendCrime" value="None" />
       </Property>
-      <Property name="InteractFiendCrimeChance" value="1" />	  
+      <Property name="InteractFiendCrimeChance" value="1" />
       <Property name="InteractCrimeLevel" value="0" />
       <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
@@ -131,14 +131,14 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
-              </Property>		  
+                <Property name="UseMissionClock" value="False" />
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_SAVE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -150,7 +150,7 @@ NMS_MOD_DEFINITION_CONTAINER =
               <Property name="Event" value="GcStateTimeEvent.xml">
                 <Property name="Seconds" value="0" />
                 <Property name="RandomSeconds" value="0" />
-                <Property name="UseMissionClock" value="False" />				
+                <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
                 <Property value="GcPlayAudioAction.xml">
@@ -163,7 +163,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                   <Property name="State" value="WAIT_FOR_SAVE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>				
+                </Property>
               </Property>
             </Property>
           </Property>
@@ -176,15 +176,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="Anim" value="SAVEGAME" />
                 <Property name="FrameStart" value="0" />
                 <Property name="StartFromEnd" value="False" />
-              </Property>			  
+              </Property>
               <Property name="Action">
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SAVE" />
                   <Property name="Broadcast" value="False" />
                   <Property name="BroadcastLevel" value="Local" />
-                </Property>			
+                </Property>
               </Property>
-            </Property>	
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -192,18 +192,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PersistentState" value="" />
       <Property name="ResetShotTimeOnStateChange" value="False" />
       <Property name="LinkStateToBaseGrid" value="False" />
-    </Property>	
-]]							
+    </Property>
+]]
 						}
 					}
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["ADD"] = 
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
+							["ADD"] =
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="Save" />
@@ -251,38 +251,38 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Filename" value="" />
       </Property>
     </Property>
-]]							
+]]
 						}
 					}
 				}
 			}
-		}		
+		}
 	},
-["ADD_FILES"] = 
+["ADD_FILES"] =
 	{
 		{
 			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
   <Property name="FrameCount" value="10" />
   <Property name="NodeCount" value="0" />
-  <Property name="NodeData" /> 
+  <Property name="NodeData" />
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
+    <Property name="Rotations" />
+	<Property name="Translations" />
 	<Property name="Scales" />
-    </Property>  
-  </Property>	
+    </Property>
+  </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
-	<Property name="Translations" /> 
-	<Property name="Scales" />	  
+    <Property name="Rotations" />
+	<Property name="Translations" />
+	<Property name="Scales" />
  </Property>
-</Data>	
-]]			
+</Data>
+]]
 		}
 	}
 }

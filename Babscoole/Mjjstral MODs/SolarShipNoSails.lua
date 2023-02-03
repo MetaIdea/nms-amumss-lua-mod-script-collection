@@ -1,16 +1,16 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "SolarShipNoSails.pak",
 ["MOD_AUTHOR"]    = "Mjstral and JJHookah and Babscoole",
-["NMS_VERSION"]   = "4.07",
-["MODIFICATIONS"] = 
+["NMS_VERSION"]   = "4.08",
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIPPARTS\SAILSHIPANIMS\SAILSHIP_SHARED\ENTITIES\ROOTJNT.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"]  = {"Anim","LOWALTITUDE"},
@@ -20,23 +20,23 @@ NMS_MOD_DEFINITION_CONTAINER =
 				},
 				{
 					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","_Sails_A"},
-							["REMOVE"] = "SECTION",	
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","_Sails_B"},
-							["REMOVE"] = "SECTION",	
+							["REMOVE"] = "SECTION",
 						},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","_Sails_C"},
-							["REMOVE"] = "SECTION",	
-						},						
+							["REMOVE"] = "SECTION",
+						},
 					}
-				},				
+				},
 			}
 		}
-	}	
+	}
 }

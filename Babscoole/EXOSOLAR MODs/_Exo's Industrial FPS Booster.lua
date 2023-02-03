@@ -1,14 +1,14 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] = "_Exo's Industrial FPS Booster.pak",
 ["MOD_AUTHOR"]   = "Exosolar",
 ["LUA_AUTHOR"]   = "Babscoole",
-["NMS_VERSION"]  = "4.07",
-["ADD_FILES"]    = 
+["NMS_VERSION"]  = "4.08",
+["ADD_FILES"]    =
 	{
 		{
 			["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\CONDUIT_PIPELINE.SCENE.EXML",
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -317,11 +317,11 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
 </Data>
-]],			
+]],
 		},
 		{
 			["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\PIPELINE_CONNECTION.SCENE.EXML",
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -453,11 +453,11 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
 </Data>
-]],			
+]],
 		},
 		{
 			["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_SILOS.SCENE.EXML",
-			["FILE_CONTENT"] 	 = 
+			["FILE_CONTENT"] 	 =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4993,7 +4993,7 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
 </Data>
-]],			
-		},	
+]],
+		},
 	},
 }

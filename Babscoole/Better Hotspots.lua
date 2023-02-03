@@ -1,17 +1,17 @@
-NMS_MOD_DEFINITION_CONTAINER = 
+NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "BetterHotspots.pak",
 ["MOD_AUTHOR"]    = "Sypheren",
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.84",
-["MODIFICATIONS"] = 
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] = 
-			{ 
+			["MBIN_CHANGE_TABLE"] =
+			{
 				{
 					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SCANNING\REGIONHOTSPOTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] = 
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["SPECIAL_KEY_WORDS"] 	= {"Power","GcRegionHotspotData.xml",},
@@ -444,10 +444,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"IGNORE", "7.5"},
 							}
-						},							
+						},
 					}
 				},
 			}
 		},
-	}	
+	}
 }

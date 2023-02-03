@@ -929,10 +929,10 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
       <Property name="RegionLimit" value="0" />
       <Property name="PlanetBaseLimit" value="0" />
       <Property name="FreighterBaseLimit" value="0" />
-      <Property name="CheckPlaceholderCollision" value="False" />
+      <Property name="CheckPlaceholderCollision" value="True" />
       <Property name="CheckPlayerCollision" value="True" />
-      <Property name="CanRotate3D" value="True" />
-      <Property name="CanScale" value="True" />
+      <Property name="CanRotate3D" value="False" />
+      <Property name="CanScale" value="False" />
       <Property name="Groups">
         <Property value="GcBaseBuildingEntryGroup.xml">
           <Property name="Group" value="]].. GROUP_NAME ..[[" />
@@ -964,9 +964,9 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
           <Property name="Network" value="GcLinkNetworkTypes.xml">
             <Property name="LinkNetworkType" value="Power" />
           </Property>
-          <Property name="NetworkSubGroup" value="0" />
-          <Property name="NetworkMask" value="0" />
-          <Property name="ConnectionDistance" value="0.1" />
+          <Property name="NetworkSubGroup" value="4" />
+          <Property name="NetworkMask" value="16" />
+          <Property name="ConnectionDistance" value="3.95" />
           <Property name="UseMinDistance" value="False" />
           <Property name="LinkSocketPositions" />
           <Property name="LinkSocketSubGroups" />
@@ -977,9 +977,9 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
         <Property name="DependsOnHotspots" value="None" />
         <Property name="DependentConnections" />
       </Property>
-      <Property name="GhostsCountOverride" value="0" />
+      <Property name="GhostsCountOverride" value="3" />
       <Property name="ShowGhosts" value="True" />
-      <Property name="SnappingDistanceOverride" value="0" />
+      <Property name="SnappingDistanceOverride" value="0.1" />
       <Property name="RegionSpawnLOD" value="1" />
       <Property name="NPCInteractionScene" value="TkModelResource.xml">
         <Property name="Filename" value="" />
@@ -992,7 +992,7 @@ BASEBUILDINGOBJECTSTABLE_ADDING =
 return BASEBUILDINGOBJECTSTABLE_ADDING
 end
 
-function GetBaseBuildingPart(ID_NAME, P_NAME, PATH)
+function GetBaseBuildingPart(ID_NAME)
 BASEBUILDINGPARTSTABLE_ADDING =
 [[
     <Property value="GcBaseBuildingPart.xml">
@@ -1003,13 +1003,13 @@ BASEBUILDINGPARTSTABLE_ADDING =
             <Property name="Style" value="None" />
           </Property>
           <Property name="Model" value="TkModelResource.xml">
-            <Property name="Filename" value="]].. PATH .. P_NAME ..[[.SCENE.MBIN" />
+            <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/CUBESOLID.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
             </Property>
           </Property>
           <Property name="Inactive" value="TkModelResource.xml">
-            <Property name="Filename" value="" />
+            <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/CUBESOLID_LOD.SCENE.MBIN" />
             <Property name="ResHandle" value="GcResource.xml">
               <Property name="ResourceID" value="0" />
             </Property>
@@ -1372,6 +1372,30 @@ PLACEMENT_SCENE =
           </Property>
           <Property name="Children" />
         </Property>
+        <Property value="TkSceneNodeData.xml">
+          <Property name="Name" value="TkRefCubeRoomSnapPoint" />
+          <Property name="NameHash" value="1548018791" />
+          <Property name="Type" value="REFERENCE" />
+          <Property name="Transform" value="TkTransformData.xml">
+            <Property name="TransX" value="0" />
+            <Property name="TransY" value="0" />
+            <Property name="TransZ" value="0" />
+            <Property name="RotX" value="0" />
+            <Property name="RotY" value="0" />
+            <Property name="RotZ" value="0" />
+            <Property name="ScaleX" value="1" />
+            <Property name="ScaleY" value="1" />
+            <Property name="ScaleZ" value="1" />
+          </Property>
+          <Property name="Attributes">
+            <Property value="TkSceneNodeAttributeData.xml">
+              <Property name="Name" value="SCENEGRAPH" />
+              <Property name="AltID" value="" />
+              <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\CUBEROOM_SNAPPOINT.SCENE.MBIN" />
+            </Property>
+          </Property>
+          <Property name="Children" />
+        </Property>
       </Property>
     </Property>
   </Property>
@@ -1542,7 +1566,7 @@ ADD_FILES_TABLE = {}
 
 for i=1,#BUILDABLE_OBJECT_TABLE,1 do
 	table.insert(BASEBUILDINGOBJECTSTABLE_ADDING_ALL,GetBaseBuildingObject(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"],BUILDABLE_OBJECT_TABLE[i]["GROUP_NAME"], BUILDABLE_OBJECT_TABLE[i]["SUBGROUP_NAME"]))
-	table.insert(BASEBUILDINGPARTSTABLE_ADDING_ALL,GetBaseBuildingPart(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["PATH"]))
+	table.insert(BASEBUILDINGPARTSTABLE_ADDING_ALL,GetBaseBuildingPart(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
 	table.insert(PRODUCT_ADDING_ALL,GetProduct(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"], BUILDABLE_OBJECT_TABLE[i]["P_NAME"], BUILDABLE_OBJECT_TABLE[i]["ICON"]))
 	table.insert(AUTOPARTDATA_ADDING_ALL,GetAutoPartData(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
 	table.insert(BASEBUILDINGCOST_ADDING_ALL,GetBaseBuildingCost(BUILDABLE_OBJECT_TABLE[i]["ID_NAME"]))
@@ -1554,7 +1578,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "0-UltraBaseBuilding+UnlimitedBaseBuilding.pak",
+["MOD_FILENAME"]  = "zzz-UltraBaseBuildingRemover.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
 ["NMS_VERSION"]   = "4.08",
