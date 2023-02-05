@@ -1,39 +1,43 @@
-local NodeActiveState = {
-    activate = [[<Property name="NodeActiveState" value="Activate" />]],
-    deactivate = [[<Property name="NodeActiveState" value="Deactivate" />]]
+NodeActiveState =
+{
+    activate = "Activate",
+    deactivate = "Deactivate"
 }
 
-local Name = {
-    cockpits = {
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITA_INTERIOR" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\COCKPIT\COCKPITB_INTERIOR" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPITA_INTERIOR" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPITB_INTERIOR" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_A\GOLDCOCKPITA" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\SCIENTIFIC\INTERIORS\CANOPYA_INTERIOR" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\INTERIORS\CANOPYA_INTERIOR\CANOPYA_INTERIOR" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\INTERIORS\CANOPYA_INTERIOR" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIPPARTS\COCKPIT\SAILSHIPCOCKPITA_INTERIOR" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\INTERIOR\CANOPYA_INTERIOR" />]],
+Name =
+{
+    cockpits =
+    {
+        "MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITA_INTERIOR",
+        "MODELS/COMMON/SPACECRAFT/DROPSHIPS/COCKPIT/COCKPITB_INTERIOR",
+        "MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPITA_INTERIOR",
+        "MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPITB_INTERIOR",
+        "MODELS/COMMON/SPACECRAFT/FIGHTERS/COCKPIT/COCKPIT_A/GOLDCOCKPITA",
+        "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/INTERIORS/CANOPYA_INTERIOR",
+        "MODELS/COMMON/SPACECRAFT/SHUTTLE/INTERIORS/CANOPYA_INTERIOR/CANOPYA_INTERIOR",
+        "MODELS/COMMON/SPACECRAFT/S-CLASS/INTERIORS/CANOPYA_INTERIOR",
+        "MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIPPARTS/COCKPIT/SAILSHIPCOCKPITA_INTERIOR",
+        "MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/INTERIOR/CANOPYA_INTERIOR",
     },
-    procgens = {
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTER_PROC" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\FIGHTERS\FIGHTERCLASSICGOLD" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\DROPSHIPS\DROPSHIP_PROC" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\SCIENTIFIC\SCIENTIFIC_PROC" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\SHUTTLE\SHUTTLE_PROC" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\S-CLASS_PROC" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\SAILSHIP\SAILSHIP_PROC" />]],
-        [[<Property name="Name" value="MODELS\COMMON\SPACECRAFT\S-CLASS\BIOPARTS\BIOSHIP_PROC" />]],
+    procgens =
+    {
+        "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC",
+        "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD",
+        "MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC",
+        "MODELS/COMMON/SPACECRAFT/SCIENTIFIC/SCIENTIFIC_PROC",
+        "MODELS/COMMON/SPACECRAFT/SHUTTLE/SHUTTLE_PROC",
+        "MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC",
+        "MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC",
+        "MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC",
     }
 }
 
-local function buildBlocks(nodeActiveState, name)
-    local block, blockTable =
+function buildBlocks(nodeActiveState, PATH)
+	return
 [[
                 <Property value="GcNodeActivationAction.xml">
-                  %s
-                  %s
+                  <Property name="NodeActiveState" value="]] .. nodeActiveState .. [[" />
+                  <Property name="Name" value="]] .. PATH .. [[" />
                   <Property name="SceneToAdd" value="" />
                   <Property name="IncludePhysics" value="True" />
                   <Property name="IncludeChildPhysics" value="True" />
@@ -43,24 +47,22 @@ local function buildBlocks(nodeActiveState, name)
                   <Property name="RestartEmitters" value="False" />
                   <Property name="AffectModels" value="True" />
                 </Property>
-]], {}
-
-    for i = 1, #name do
-        blockTable[#blockTable+1] = string.format(block, nodeActiveState, name[i])
-    end
-
-    return table.concat(blockTable)
+]]
 end
 
-local cockpitsActivate = buildBlocks(NodeActiveState.activate, Name.cockpits)
-local cockpitsDeactivate = buildBlocks(NodeActiveState.deactivate, Name.cockpits)
-local procgenActivate = buildBlocks(NodeActiveState.activate, Name.procgens)
-local procgenDeactivate = buildBlocks(NodeActiveState.deactivate, Name.procgens)
+cockpitsActivate = {}
+cockpitsDeactivate = {}
+procgenActivate = {}
+procgenDeactivate = {}
 
--- print(cockpitsActivate)
--- print(cockpitsDeactivate)
--- print(procgenActivate)
--- print(procgenDeactivate)
+for j=1,#Name.cockpits do
+  table.insert(cockpitsActivate,buildBlocks(NodeActiveState.activate, Name.cockpits[j]))
+  table.insert(cockpitsDeactivate,buildBlocks(NodeActiveState.deactivate, Name.cockpits[j]))
+end
+for j=1,#Name.procgens do
+  table.insert(procgenActivate,buildBlocks(NodeActiveState.activate, Name.procgens[j]))
+  table.insert(procgenDeactivate,buildBlocks(NodeActiveState.deactivate, Name.procgens[j]))
+end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -89,6 +91,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = { "Components" },
+							["ADD_OPTION"]  = "ADDafterLINE",
 							["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
@@ -174,7 +177,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
-]] .. cockpitsDeactivate .. [[
+]] .. table.concat(cockpitsDeactivate) .. [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="False" />
@@ -196,7 +199,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
-]] .. cockpitsActivate .. [[
+]] .. table.concat(cockpitsActivate) .. [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="False" />
@@ -245,6 +248,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = { "Components" },
+							["ADD_OPTION"]  = "ADDafterLINE",
 							["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
@@ -298,7 +302,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
-]] .. procgenDeactivate .. [[
+]] .. table.concat(procgenDeactivate) .. [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="False" />
@@ -320,7 +324,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property name="UseMissionClock" value="False" />
               </Property>
               <Property name="Action">
-]] .. procgenActivate .. [[
+]] .. table.concat(procgenActivate) .. [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="False" />
