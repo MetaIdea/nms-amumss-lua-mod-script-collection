@@ -17,53 +17,53 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "3.97",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0\ENTITIES\EXTRACTORTERMINAL.ENTITY.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" ,},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"MaxCapactiy",           EXTRACTOR_STORAGE},
-								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
-								{"Id", PRODUCT_YELLOWSTAR},
-							},
-						},
-						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"MaxCapactiy",           EXTRACTOR_STORAGE},
-								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
-								{"Id", PRODUCT_REDSTAR},
-							},
-						},
-						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"MaxCapactiy",           EXTRACTOR_STORAGE},
-								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
-								{"Id", PRODUCT_GREENSTAR},
-							},
-						},
-						{
-						    ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"MaxCapactiy",           EXTRACTOR_STORAGE},
-								{"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
-								{"Id", PRODUCT_BLUESTAR},
-							},
-						},
-					},
-				},
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\EXTRROOM\PARTS\FLOOR0\ENTITIES\EXTRACTORTERMINAL.ENTITY.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "STELLAR2" ,},
+                            ["VALUE_CHANGE_TABLE"]     =
+                            {
+                                {"MaxCapactiy",           EXTRACTOR_STORAGE},
+                                {"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
+                                {"Id", PRODUCT_YELLOWSTAR},
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS1",},
+                            ["VALUE_CHANGE_TABLE"]     =
+                            {
+                                {"MaxCapactiy",           EXTRACTOR_STORAGE},
+                                {"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
+                                {"Id", PRODUCT_REDSTAR},
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS2",},
+                            ["VALUE_CHANGE_TABLE"]     =
+                            {
+                                {"MaxCapactiy",           EXTRACTOR_STORAGE},
+                                {"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
+                                {"Id", PRODUCT_GREENSTAR},
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","GAS3",},
+                            ["VALUE_CHANGE_TABLE"]     =
+                            {
+                                {"MaxCapactiy",           EXTRACTOR_STORAGE},
+                                {"AmountEmptyTimePeriod", EXTRACTOR_SPEED},
+                                {"Id", PRODUCT_BLUESTAR},
+                            },
+                        },
+                    },
+                },
+            }
+        }
+    }
 }

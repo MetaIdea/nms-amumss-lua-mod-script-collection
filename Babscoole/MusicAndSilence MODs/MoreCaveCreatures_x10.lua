@@ -5,27 +5,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.97",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"CaveGroupsPerKm",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Sparse",    "500" },
-								{"Normal",    "1000" },
-								{"Dense",     "2000" },
-								{"VeryDense", "3000" },
-							}
-						},
-					}
-				},
-			}
-		},
-	},
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"CaveGroupsPerKm",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Sparse",    "500" },
+                                {"Normal",    "1000" },
+                                {"Dense",     "2000" },
+                                {"VeryDense", "3000" },
+                            }
+                        },
+                    }
+                },
+            }
+        },
+    },
 }

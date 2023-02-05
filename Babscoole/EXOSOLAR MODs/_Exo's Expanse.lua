@@ -1137,18 +1137,18 @@ for i = 1, #DataTable do
     local PaletteColours = DataTable[i]["COLOURS"]
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-	{
-		["MBIN_FILE_SOURCE"] =
-		{
-			[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN]],
-			[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],
-		},
-		["EXML_CHANGE_TABLE"] =
-		{
-			{
-				["PRECEDING_KEY_WORDS"] = { "Settings" },
-				["ADD"] = CreateColoursProperty(PaletteColours)
-			}
-		}
-	}
+    {
+        ["MBIN_FILE_SOURCE"] =
+        {
+            [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN]],
+            [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],
+        },
+        ["EXML_CHANGE_TABLE"] =
+        {
+            {
+                ["PRECEDING_KEY_WORDS"] = { "Settings" },
+                ["ADD"] = CreateColoursProperty(PaletteColours)
+            }
+        }
+    }
 end

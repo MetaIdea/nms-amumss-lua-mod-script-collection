@@ -241,60 +241,60 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DUSKSKYCOLOURS.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"GenericSettings","Settings"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"GenericSettings"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DUSKSKYCOLOURS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenericSettings","Settings"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenericSettings"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
     <Property name="Settings">
     </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Swamp","GcWeatherColourSettingList.xml"},
-							["PRECEDING_KEY_WORDS"] = {"Settings"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Swamp","GcWeatherColourSettingList.xml"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Swamp","GcWeatherColourSettingList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Swamp","GcWeatherColourSettingList.xml"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
       <Property name="Settings">
       </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Lava","GcWeatherColourSettingList.xml"},
-							["PRECEDING_KEY_WORDS"] = {"Settings"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Lava","GcWeatherColourSettingList.xml"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Lava","GcWeatherColourSettingList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Lava","GcWeatherColourSettingList.xml"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
       <Property name="Settings">
       </Property>
 ]]
-						},
-					}
-				},
-			}
-		}
-	}
+                        },
+                    }
+                },
+            }
+        }
+    }
 }
 
 
@@ -427,25 +427,25 @@ local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1
 for i = 1, #DataTable do
     --local Palette = DataTable[i]["PALETTE"]
     local PaletteColours = DataTable[i]["COLOURS"]
-	local ADDSPACES = 0
+    local ADDSPACES = 0
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-	{
-		["PRECEDING_KEY_WORDS"] = {"Settings"},
-		["SECTION_ACTIVE"] = {1,},
-		["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
-	}
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Settings"},
+        ["SECTION_ACTIVE"] = {1,},
+        ["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
+    }
 end
 
 for i = 1, #BiomeDataTable do
     local Palette = BiomeDataTable[i]["PALETTE"]
     local PaletteColours = BiomeDataTable[i]["COLOURS"]
-	local ADDSPACES = 2
+    local ADDSPACES = 2
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-	{
-		["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
-		["PRECEDING_KEY_WORDS"] = {"Settings"},
-		["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
-	}
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
+        ["PRECEDING_KEY_WORDS"] = {"Settings"},
+        ["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
+    }
 end

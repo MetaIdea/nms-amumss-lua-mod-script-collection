@@ -5,18 +5,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.05", --mod version 1.1
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\PROJECTILES\PROJECTILETABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTGUN"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\PROJECTILES\PROJECTILETABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTGUN"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="FREIGHTPLASMAGUN" />
@@ -155,82 +155,82 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-    							{"Width", "1300"},
-    							{"HitWidth", "85"},
-    							{"PulseFrequency", "32"},
-    							{"PulseAmplitude", "0.8"},
-    							{"DefaultDamage", "150"},
-    							{"HitRate", "0.06"},
-    							{"HasLight", "True"},
-    							{"LightIntensity", "2"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","LightColour","Colour.xml",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-      							{"R", "0.051"},
-      							{"G", "0.051"},
-      							{"B", "1"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","Colour","Colour.xml",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-      							{"R", "0.051"},
-      							{"G", "0.051"},
-								{"B", "1"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\ENTITIES\TURRET.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-    							{"ProjectileId", "FREIGHTPLASMAGUN"},
-    							{"TurretRange", "17000"},
-    							{"TurretLaserShootTime", "2"},
-    							{"TurretLaserLength", "200"},
-    							{"TurretLaserMoveSpeed", "20"},
-    							{"TurretLaserActiveTime", "5"},
-    							{"TurretLaserAbortDistance", "18000"},
-    							{"TurretShootPauseTime", "1.5"},
-    							{"TurretBurstCount", "27"},
-    							{"TurretBurstTime", "0.05"},
-    							{"TurretMissileLaunchSpeed", "300"},
-    							{"TurretProjectileRange", "17000"},
-    							{"TurretMissileRange", "8000"},
-    							{"TurretDispersionAngle", "0"},
-    							{"Health", "6000"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-    							{"FreighterAttackDisengageDistance", "8000"},
-							}
-						},
-					}
-				},
-			}
-		}
-	}
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Width", "1300"},
+                                {"HitWidth", "85"},
+                                {"PulseFrequency", "32"},
+                                {"PulseAmplitude", "0.8"},
+                                {"DefaultDamage", "150"},
+                                {"HitRate", "0.06"},
+                                {"HasLight", "True"},
+                                {"LightIntensity", "2"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","LightColour","Colour.xml",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                  {"R", "0.051"},
+                                  {"G", "0.051"},
+                                  {"B", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","Colour","Colour.xml",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                  {"R", "0.051"},
+                                  {"G", "0.051"},
+                                {"B", "1"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\SPACECRAFT\INDUSTRIAL\TURRET\TURRETA\ENTITIES\TURRET.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProjectileId", "FREIGHTPLASMAGUN"},
+                                {"TurretRange", "17000"},
+                                {"TurretLaserShootTime", "2"},
+                                {"TurretLaserLength", "200"},
+                                {"TurretLaserMoveSpeed", "20"},
+                                {"TurretLaserActiveTime", "5"},
+                                {"TurretLaserAbortDistance", "18000"},
+                                {"TurretShootPauseTime", "1.5"},
+                                {"TurretBurstCount", "27"},
+                                {"TurretBurstTime", "0.05"},
+                                {"TurretMissileLaunchSpeed", "300"},
+                                {"TurretProjectileRange", "17000"},
+                                {"TurretMissileRange", "8000"},
+                                {"TurretDispersionAngle", "0"},
+                                {"Health", "6000"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FreighterAttackDisengageDistance", "8000"},
+                            }
+                        },
+                    }
+                },
+            }
+        }
+    }
 }

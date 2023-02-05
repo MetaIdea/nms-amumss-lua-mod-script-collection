@@ -6,92 +6,92 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["NMS_VERSION"]     = "4.08",
 ["DESCRIPTION"]     = "Cockpitable sentinel police ship you can get via quick action emote menu action",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] =
-					{
-						{
-							[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]],
-							[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIPBACKUP.SCENE.MBIN]]
-						},
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"]       = "RAW",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{
-									[[value="MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP" />]],
-									[[value="MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIPBACKUP" />]]
-								},
-							}
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] =
-					{
-						"MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN"
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"]       = "RAW",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{
-									[[MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP\ENTITIES\POLICESHIP.ENTITY.MBIN]],
-									[[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB\ENTITIES\COCKPIT_B.ENTITY.MBIN]]
-								},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Name","PoliceShip",},
-							["INTEGER_TO_FLOAT"]   = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.6"},
-							}
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] =
-					{
-						"METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN"
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"]       = "RAW",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{
-									[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]],
-									[[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIPBACKUP.SCENE.MBIN]]
-								},
-							}
-						}
-					}
-				}
-			}
-		},
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
-							["SECTION_ACTIVE"]    = {2,},
-							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {
+                            [[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]],
+                            [[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIPBACKUP.SCENE.MBIN]]
+                        },
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["REPLACE_TYPE"]       = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {
+                                    [[value="MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP" />]],
+                                    [[value="MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIPBACKUP" />]]
+                                },
+                            }
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN"
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["REPLACE_TYPE"]       = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {
+                                    [[MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP\ENTITIES\POLICESHIP.ENTITY.MBIN]],
+                                    [[MODELS\COMMON\SPACECRAFT\FIGHTERS\COCKPIT\COCKPIT_B\COCKPITB\ENTITIES\COCKPIT_B.ENTITY.MBIN]]
+                                },
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name","PoliceShip",},
+                            ["INTEGER_TO_FLOAT"]   = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.6"},
+                            }
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "METADATA\SIMULATION\SPACE\AISPACESHIPMANAGER.MBIN"
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["REPLACE_TYPE"]       = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {
+                                    [[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIP.SCENE.MBIN]],
+                                    [[MODELS/COMMON/SPACECRAFT/POLICE/POLICESHIPBACKUP.SCENE.MBIN]]
+                                },
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
+                            ["SECTION_ACTIVE"]    = {2,},
+                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            ["ADD"] =
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="TRIGGERANIM" />
@@ -122,11 +122,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
 ]]
 
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
-							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
+                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -199,16 +199,16 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="LinkStateToBaseGrid" value="False" />
     </Property>
 ]]
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"},
-							["ADD"] =
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+                            ["ADD"] =
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="Custom Ship" />
@@ -257,168 +257,168 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"GenericTable"},
-							["ADD"] =
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenericTable"},
+                            ["ADD"] =
 [[
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="CUSTOMSHIP" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-		<Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False"/>
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
-			  <Property name="Reward" value="GcRewardSpecificShip.xml">
-				<Property name="ShipResource" value="GcResourceElement.xml">
-				  <Property name="Filename" value="]] .. "MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN" .. [[" />
-				  <Property name="ResHandle" value="GcResource.xml">
-					<Property name="ResourceID" value="0" />
-				  </Property>
-				  <Property name="Seed" value="GcSeed.xml">
-					<Property name="Seed" value="]] .. 0 .. [[" />
-					<Property name="UseSeedValue" value="True" />
-				  </Property>
-				  <Property name="AltId" value="" />
-				  <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-					<Property name="Samplers" />
-				  </Property>
-				</Property>
-				<Property name="ShipLayout" value="GcInventoryLayout.xml">
-				  <Property name="Slots" value="48" />
-				  <Property name="Seed" value="GcSeed.xml">
-					<Property name="Seed" value="1" />
-					<Property name="UseSeedValue" value="True" />
-				  </Property>
-				  <Property name="Level" value="1" />
-				</Property>
-				<Property name="ShipInventory" value="GcInventoryContainer.xml">
-				  <Property name="Slots">
-					<Property value="GcInventoryElement.xml">
-					  <Property name="Type" value="GcInventoryType.xml">
-						<Property name="InventoryType" value="Technology" />
-					  </Property>
-					  <Property name="Id" value="LAUNCHER" />
-					  <Property name="Amount" value="0" />
-					  <Property name="MaxAmount" value="300" />
-					  <Property name="DamageFactor" value="0" />
-					  <Property name="FullyInstalled" value="True" />
-					  <Property name="Index" value="GcInventoryIndex.xml">
-						<Property name="X" value="-1" />
-						<Property name="Y" value="-1" />
-					  </Property>
-					</Property>
-					<Property value="GcInventoryElement.xml">
-					  <Property name="Type" value="GcInventoryType.xml">
-						<Property name="InventoryType" value="Technology" />
-					  </Property>
-					  <Property name="Id" value="SHIPJUMP1" />
-					  <Property name="Amount" value="0" />
-					  <Property name="MaxAmount" value="100" />
-					  <Property name="DamageFactor" value="0" />
-					  <Property name="FullyInstalled" value="True" />
-					  <Property name="Index" value="GcInventoryIndex.xml">
-						<Property name="X" value="-1" />
-						<Property name="Y" value="-1" />
-					  </Property>
-					</Property>
-					<Property value="GcInventoryElement.xml">
-					  <Property name="Type" value="GcInventoryType.xml">
-						<Property name="InventoryType" value="Technology" />
-					  </Property>
-					  <Property name="Id" value="SHIPSHIELD" />
-					  <Property name="Amount" value="200" />
-					  <Property name="MaxAmount" value="200" />
-					  <Property name="DamageFactor" value="0" />
-					  <Property name="FullyInstalled" value="True" />
-					  <Property name="Index" value="GcInventoryIndex.xml">
-						<Property name="X" value="-1" />
-						<Property name="Y" value="-1" />
-					  </Property>
-					</Property>
-					<Property value="GcInventoryElement.xml">
-					  <Property name="Type" value="GcInventoryType.xml">
-						<Property name="InventoryType" value="Technology" />
-					  </Property>
-					  <Property name="Id" value="SHIPGUN1" />
-					  <Property name="Amount" value="1000" />
-					  <Property name="MaxAmount" value="1000" />
-					  <Property name="DamageFactor" value="0" />
-					  <Property name="FullyInstalled" value="True" />
-					  <Property name="Index" value="GcInventoryIndex.xml">
-						<Property name="X" value="-1" />
-						<Property name="Y" value="-1" />
-					  </Property>
-					</Property>
-					<Property value="GcInventoryElement.xml">
-					  <Property name="Type" value="GcInventoryType.xml">
-						<Property name="InventoryType" value="Technology" />
-					  </Property>
-					  <Property name="Id" value="HYPERDRIVE" />
-					  <Property name="Amount" value="24" />
-					  <Property name="MaxAmount" value="120" />
-					  <Property name="DamageFactor" value="0" />
-					  <Property name="FullyInstalled" value="True" />
-					  <Property name="Index" value="GcInventoryIndex.xml">
-						<Property name="X" value="-1" />
-						<Property name="Y" value="-1" />
-					  </Property>
-					</Property>
-					<Property value="GcInventoryElement.xml">
-					  <Property name="Type" value="GcInventoryType.xml">
-						<Property name="InventoryType" value="Technology" />
-					  </Property>
-					  <Property name="Id" value="SHIPLAS1" />
-					  <Property name="Amount" value="1000" />
-					  <Property name="MaxAmount" value="1000" />
-					  <Property name="DamageFactor" value="0" />
-					  <Property name="FullyInstalled" value="True" />
-					  <Property name="Index" value="GcInventoryIndex.xml">
-						<Property name="X" value="-1" />
-						<Property name="Y" value="-1" />
-					  </Property>
-					</Property>
-				  </Property>
-				  <Property name="ValidSlotIndices" />
-				  <Property name="Class" value="GcInventoryClass.xml">
-					<Property name="InventoryClass" value="S" />
-				  </Property>
+              <Property name="Reward" value="GcRewardSpecificShip.xml">
+                <Property name="ShipResource" value="GcResourceElement.xml">
+                  <Property name="Filename" value="]] .. "MODELS\COMMON\SPACECRAFT\POLICE\POLICESHIP.SCENE.MBIN" .. [[" />
+                  <Property name="ResHandle" value="GcResource.xml">
+                    <Property name="ResourceID" value="0" />
+                  </Property>
+                  <Property name="Seed" value="GcSeed.xml">
+                    <Property name="Seed" value="]] .. 0 .. [[" />
+                    <Property name="UseSeedValue" value="True" />
+                  </Property>
+                  <Property name="AltId" value="" />
+                  <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+                    <Property name="Samplers" />
+                  </Property>
+                </Property>
+                <Property name="ShipLayout" value="GcInventoryLayout.xml">
+                  <Property name="Slots" value="48" />
+                  <Property name="Seed" value="GcSeed.xml">
+                    <Property name="Seed" value="1" />
+                    <Property name="UseSeedValue" value="True" />
+                  </Property>
+                  <Property name="Level" value="1" />
+                </Property>
+                <Property name="ShipInventory" value="GcInventoryContainer.xml">
+                  <Property name="Slots">
+                    <Property value="GcInventoryElement.xml">
+                      <Property name="Type" value="GcInventoryType.xml">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="LAUNCHER" />
+                      <Property name="Amount" value="0" />
+                      <Property name="MaxAmount" value="300" />
+                      <Property name="DamageFactor" value="0" />
+                      <Property name="FullyInstalled" value="True" />
+                      <Property name="Index" value="GcInventoryIndex.xml">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                    <Property value="GcInventoryElement.xml">
+                      <Property name="Type" value="GcInventoryType.xml">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="SHIPJUMP1" />
+                      <Property name="Amount" value="0" />
+                      <Property name="MaxAmount" value="100" />
+                      <Property name="DamageFactor" value="0" />
+                      <Property name="FullyInstalled" value="True" />
+                      <Property name="Index" value="GcInventoryIndex.xml">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                    <Property value="GcInventoryElement.xml">
+                      <Property name="Type" value="GcInventoryType.xml">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="SHIPSHIELD" />
+                      <Property name="Amount" value="200" />
+                      <Property name="MaxAmount" value="200" />
+                      <Property name="DamageFactor" value="0" />
+                      <Property name="FullyInstalled" value="True" />
+                      <Property name="Index" value="GcInventoryIndex.xml">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                    <Property value="GcInventoryElement.xml">
+                      <Property name="Type" value="GcInventoryType.xml">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="SHIPGUN1" />
+                      <Property name="Amount" value="1000" />
+                      <Property name="MaxAmount" value="1000" />
+                      <Property name="DamageFactor" value="0" />
+                      <Property name="FullyInstalled" value="True" />
+                      <Property name="Index" value="GcInventoryIndex.xml">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                    <Property value="GcInventoryElement.xml">
+                      <Property name="Type" value="GcInventoryType.xml">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="HYPERDRIVE" />
+                      <Property name="Amount" value="24" />
+                      <Property name="MaxAmount" value="120" />
+                      <Property name="DamageFactor" value="0" />
+                      <Property name="FullyInstalled" value="True" />
+                      <Property name="Index" value="GcInventoryIndex.xml">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                    <Property value="GcInventoryElement.xml">
+                      <Property name="Type" value="GcInventoryType.xml">
+                        <Property name="InventoryType" value="Technology" />
+                      </Property>
+                      <Property name="Id" value="SHIPLAS1" />
+                      <Property name="Amount" value="1000" />
+                      <Property name="MaxAmount" value="1000" />
+                      <Property name="DamageFactor" value="0" />
+                      <Property name="FullyInstalled" value="True" />
+                      <Property name="Index" value="GcInventoryIndex.xml">
+                        <Property name="X" value="-1" />
+                        <Property name="Y" value="-1" />
+                      </Property>
+                    </Property>
+                  </Property>
+                  <Property name="ValidSlotIndices" />
+                  <Property name="Class" value="GcInventoryClass.xml">
+                    <Property name="InventoryClass" value="S" />
+                  </Property>
                 <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
                   <Property name="InventoryStackSizeGroup" value="Default" />
                 </Property>
-				  <Property name="BaseStatValues" />
-				  <Property name="SpecialSlots" />
-				  <Property name="Width" value="0" />
-				  <Property name="Height" value="0" />
-				  <Property name="IsCool" value="False" />
-				  <Property name="Version" value="0" />
-				</Property>
-			  </Property>
+                  <Property name="BaseStatValues" />
+                  <Property name="SpecialSlots" />
+                  <Property name="Width" value="0" />
+                  <Property name="Height" value="0" />
+                  <Property name="IsCool" value="False" />
+                  <Property name="Version" value="0" />
+                </Property>
+              </Property>
             <Property name="LabelID" value="" />
           </Property>
         </Property>
       </Property>
     </Property>
 ]]
-						}
-					}
-				}
-			}
-		}
-	},
+                        }
+                    }
+                }
+            }
+        }
+    },
 ["ADD_FILES"] =
-	{
-		{
-			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 =
+    {
+        {
+            ["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
+            ["FILE_CONTENT"]      =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkAnimMetadata">
@@ -428,17 +428,17 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
     <Property name="Rotations" />
-	<Property name="Translations" />
-	<Property name="Scales" />
+    <Property name="Translations" />
+    <Property name="Scales" />
     </Property>
   </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
     <Property name="Rotations" />
-	<Property name="Translations" />
-	<Property name="Scales" />
+    <Property name="Translations" />
+    <Property name="Scales" />
  </Property>
 </Data>
 ]]
-		}
-	}
+        }
+    }
 }

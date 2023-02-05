@@ -54,104 +54,104 @@ FileSource5 = "MODELS/EFFECTS/SPEEDLINES/SPACEBIG.SPEEDLINE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]  = FileName,
-	["MOD_AUTHOR"]    = ModAuthor,
-	["LUA_AUTHOR"]    = LuaAuthor,
-	["MOD_MAINTENANCE"] = ModMaintenance,
-	["MOD_DESCRIPTION"] = "",
-	["NMS_VERSION"]   = NMS_Version,
-	["MODIFICATIONS"] =
-		{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = FileSource1,
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumberOfParticles", PJ1_Particles},
-								{"Radius", PJ1_Radius},
-								{"Length", PJ1_Length},
-								{"Width", PJ1_Width},
-								{"Alpha", PJ1_Alpha},
-								{"RemoveCylinderRadius", PJ1_RemoveCylinderRadius},
-							},
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = FileSource2,
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumberOfParticles", PJ2_Particles},
-								{"Radius", PJ2_Radius},
-								{"Length", PJ2_Length},
-								{"Width", PJ2_Width},
-								{"Alpha", PJ2_Alpha},
-								{"RemoveCylinderRadius", PJ2_RemoveCylinderRadius},
-							},
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = FileSource3,
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumberOfParticles", C1_Particles},
-								{"Radius", C1_Radius},
-								{"Length", C1_Length},
-								{"Width", C1_Width},
-								{"Alpha", C1_Alpha},
-								{"RemoveCylinderRadius", C1_RemoveCylinderRadius},
-							},
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = FileSource4,
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumberOfParticles", C2_Particles},
-								{"Radius", C2_Radius},
-								{"Length", C2_Length},
-								{"Width", C2_Width},
-								{"Alpha", C2_Alpha},
-								{"RemoveCylinderRadius", C2_RemoveCylinderRadius},
-							},
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = FileSource5,
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumberOfParticles", CB_Particles},
-								{"Radius", CB_Radius},
-								{"Length", CB_Length},
-								{"Width", CB_Width},
-								{"Alpha", CB_Alpha},
-								{"RemoveCylinderRadius", CB_RemoveCylinderRadius},
-							},
-						},
-					}
-				},
-			}
-		},
-	}
+    ["MOD_FILENAME"]  = FileName,
+    ["MOD_AUTHOR"]    = ModAuthor,
+    ["LUA_AUTHOR"]    = LuaAuthor,
+    ["MOD_MAINTENANCE"] = ModMaintenance,
+    ["MOD_DESCRIPTION"] = "",
+    ["NMS_VERSION"]   = NMS_Version,
+    ["MODIFICATIONS"] =
+        {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = FileSource1,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumberOfParticles", PJ1_Particles},
+                                {"Radius", PJ1_Radius},
+                                {"Length", PJ1_Length},
+                                {"Width", PJ1_Width},
+                                {"Alpha", PJ1_Alpha},
+                                {"RemoveCylinderRadius", PJ1_RemoveCylinderRadius},
+                            },
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = FileSource2,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumberOfParticles", PJ2_Particles},
+                                {"Radius", PJ2_Radius},
+                                {"Length", PJ2_Length},
+                                {"Width", PJ2_Width},
+                                {"Alpha", PJ2_Alpha},
+                                {"RemoveCylinderRadius", PJ2_RemoveCylinderRadius},
+                            },
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = FileSource3,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumberOfParticles", C1_Particles},
+                                {"Radius", C1_Radius},
+                                {"Length", C1_Length},
+                                {"Width", C1_Width},
+                                {"Alpha", C1_Alpha},
+                                {"RemoveCylinderRadius", C1_RemoveCylinderRadius},
+                            },
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = FileSource4,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumberOfParticles", C2_Particles},
+                                {"Radius", C2_Radius},
+                                {"Length", C2_Length},
+                                {"Width", C2_Width},
+                                {"Alpha", C2_Alpha},
+                                {"RemoveCylinderRadius", C2_RemoveCylinderRadius},
+                            },
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = FileSource5,
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumberOfParticles", CB_Particles},
+                                {"Radius", CB_Radius},
+                                {"Length", CB_Length},
+                                {"Width", CB_Width},
+                                {"Alpha", CB_Alpha},
+                                {"RemoveCylinderRadius", CB_RemoveCylinderRadius},
+                            },
+                        },
+                    }
+                },
+            }
+        },
+    }
 }

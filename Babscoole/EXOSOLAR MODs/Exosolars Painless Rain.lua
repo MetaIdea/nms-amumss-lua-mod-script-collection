@@ -16,13 +16,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_MAINTENANCE"] = Maintainer,
 ["NMS_VERSION"]     = GameVersion,
 ["MODIFICATIONS"]   = {{
-	["MBIN_CHANGE_TABLE"] = {{
-		["MBIN_FILE_SOURCE"] = FileSource1,
-		["EXML_CHANGE_TABLE"] = {
-			{
-				["VALUE_CHANGE_TABLE"] = {
-					{"OverrideTemperature","False"},
-				},
-			},
-		}
+    ["MBIN_CHANGE_TABLE"] = {{
+        ["MBIN_FILE_SOURCE"] = FileSource1,
+        ["EXML_CHANGE_TABLE"] = {
+            {
+                ["VALUE_CHANGE_TABLE"] = {
+                    {"OverrideTemperature","False"},
+                },
+            },
+        }
 }}}}}

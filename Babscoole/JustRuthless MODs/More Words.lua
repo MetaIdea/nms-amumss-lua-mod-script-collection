@@ -732,7 +732,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         },
       }
     },
-	}
+    }
 }
 
 local RewardTable = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]

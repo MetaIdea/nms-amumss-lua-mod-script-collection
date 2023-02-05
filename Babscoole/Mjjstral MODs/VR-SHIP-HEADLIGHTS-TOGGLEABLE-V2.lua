@@ -10,88 +10,88 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["NMS_VERSION"]   = "4.08",
 ["DESCRIPTION"]   = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = { "Name", "_PlayerCharacter_Mesh" },
-							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = { "Name", "_PlayerCharacter_Mesh" },
+                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            ["ADD"] =
 [[
-	<Property value="TkSceneNodeData.xml">
-	  <Property name="Name" value="HEADLIGHTS" />
-	  <Property name="NameHash" value="0" />
-	  <Property name="Type" value="LIGHT" />
-	  <Property name="Transform" value="TkTransformData.xml">
-		<Property name="TransX" value="0" />
-		<Property name="TransY" value="0" />
-		<Property name="TransZ" value="0" />
-		<Property name="RotX" value="0" />
-		<Property name="RotY" value="0" />
-		<Property name="RotZ" value="0" />
-		<Property name="ScaleX" value="1" />
-		<Property name="ScaleY" value="1" />
-		<Property name="ScaleZ" value="1" />
-	  </Property>
-	  <Property name="Attributes">
-		<Property value="TkSceneNodeAttributeData.xml">
-		  <Property name="Name" value="FOV" />
-		  <Property name="AltID" value="" />
-		  <Property name="Value" value="100" />
-		</Property>
-		<Property value="TkSceneNodeAttributeData.xml">
-		  <Property name="Name" value="FALLOFF" />
-		  <Property name="AltID" value="" />
-		  <Property name="Value" value="linear" />
-		</Property>
-		<Property value="TkSceneNodeAttributeData.xml">
-		  <Property name="Name" value="INTENSITY" />
-		  <Property name="AltID" value="" />
-		  <Property name="Value" value="250000" />
-		</Property>
-		<Property value="TkSceneNodeAttributeData.xml">
-		  <Property name="Name" value="COL_R" />
-		  <Property name="AltID" value="" />
-		  <Property name="Value" value="1.0" />
-		</Property>
-		<Property value="TkSceneNodeAttributeData.xml">
-		  <Property name="Name" value="COL_G" />
-		  <Property name="AltID" value="" />
-		  <Property name="Value" value="0.64" />
-		</Property>
-		<Property value="TkSceneNodeAttributeData.xml">
-		  <Property name="Name" value="COL_B" />
-		  <Property name="AltID" value="" />
-		  <Property name="Value" value="0.36" />
-		</Property>
-		<Property value="TkSceneNodeAttributeData.xml">
-		  <Property name="Name" value="MATERIAL" />
-		  <Property name="AltID" value="" />
-		  <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
-		</Property>
-	  </Property>
-	  <Property name="Children" />
-	</Property>]]
-						}
-					}
-				}
-			}
-		},
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = { "Components" },
-							["ADD"] =
+    <Property value="TkSceneNodeData.xml">
+      <Property name="Name" value="HEADLIGHTS" />
+      <Property name="NameHash" value="0" />
+      <Property name="Type" value="LIGHT" />
+      <Property name="Transform" value="TkTransformData.xml">
+        <Property name="TransX" value="0" />
+        <Property name="TransY" value="0" />
+        <Property name="TransZ" value="0" />
+        <Property name="RotX" value="0" />
+        <Property name="RotY" value="0" />
+        <Property name="RotZ" value="0" />
+        <Property name="ScaleX" value="1" />
+        <Property name="ScaleY" value="1" />
+        <Property name="ScaleZ" value="1" />
+      </Property>
+      <Property name="Attributes">
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FOV" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="100" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="FALLOFF" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="linear" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="INTENSITY" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="250000" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COL_R" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="1.0" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COL_G" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.64" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="COL_B" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="0.36" />
+        </Property>
+        <Property value="TkSceneNodeAttributeData.xml">
+          <Property name="Name" value="MATERIAL" />
+          <Property name="AltID" value="" />
+          <Property name="Value" value="MATERIALS/LIGHT.MATERIAL.MBIN" />
+        </Property>
+      </Property>
+      <Property name="Children" />
+    </Property>]]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = { "Components" },
+                            ["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -271,10 +271,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="LinkStateToBaseGrid" value="False" />
     </Property>
 ]]
-						}
-					}
-				}
-			}
-		}
-	}
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

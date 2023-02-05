@@ -5,32 +5,32 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.53",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\DIPLODOCUS\DIPLODOCUS\ENTITIES\DIPLO.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "",
-							["VALUE_MATCH"] = "300",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"FrameEnd", "3000"},  --Org "300"
-							}
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONARCHETYPES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"AirArchetypes",},
-							["LINE_OFFSET"]         = "-2",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\RAINFOREST\LARGECREATURE\DIPLODOCUS\DIPLODOCUS\ENTITIES\DIPLO.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "",
+                            ["VALUE_MATCH"] = "300",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"FrameEnd", "3000"},  --Org "300"
+                            }
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONARCHETYPES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"AirArchetypes",},
+                            ["LINE_OFFSET"]         = "-2",
+                            ["ADD"] =
 [[
     <Property value="GcCreatureGenerationDomainTable.xml">
       <Property name="Id" value="DIPLO" />
@@ -65,17 +65,17 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
 ]],
 
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Air",},
-							["LINE_OFFSET"]         = "-2",
-							["ADD"] =
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Air",},
+                            ["LINE_OFFSET"]         = "-2",
+                            ["ADD"] =
 [[
       <Property value="GcCreatureGenerationWeightedListDomainEntry.xml">
         <Property name="Weight" value="1.5" />
@@ -83,17 +83,17 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
 ]],
 
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREFILENAMETABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"ID","FISHFLOCK"},
-							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREFILENAMETABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","FISHFLOCK"},
+                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="GcCreatureFilename.xml">
       <Property name="ID" value="DIPLO" />
@@ -106,17 +106,17 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ExtraFilename" value="" />
     </Property>
 ]],
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SEASNAKE"},
-							["LINE_OFFSET"]        = "-2",
-							["ADD"] =
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","SEASNAKE"},
+                            ["LINE_OFFSET"]        = "-2",
+                            ["ADD"] =
 [[
     <Property value="GcCreatureData.xml">
       <Property name="Id" value="DIPLO" />
@@ -227,17 +227,17 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						},
-					}
-				},
-			},
-		},
-	},
+                        },
+                    }
+                },
+            },
+        },
+    },
 ["ADD_FILES"] =
-	{
-		{
-			["FILE_DESTINATION"] = [[METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEDIPLOS.EXML]],
-			["FILE_CONTENT"] 	 =
+    {
+        {
+            ["FILE_DESTINATION"] = [[METADATA\SIMULATION\ECOSYSTEM\GROUND\GROUNDTABLEDIPLOS.EXML]],
+            ["FILE_CONTENT"]      =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="GcCreatureRoleDescriptionTable">
@@ -361,10 +361,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = [[METADATA\SIMULATION\ECOSYSTEM\GROUND\DIPLOHERBIVOREMED.EXML]],
-			["FILE_CONTENT"] 	 =
+        },
+        {
+            ["FILE_DESTINATION"] = [[METADATA\SIMULATION\ECOSYSTEM\GROUND\DIPLOHERBIVOREMED.EXML]],
+            ["FILE_CONTENT"]      =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="GcCreatureRoleDescriptionTable">
@@ -434,6 +434,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		}
-	}
+        }
+    }
 }

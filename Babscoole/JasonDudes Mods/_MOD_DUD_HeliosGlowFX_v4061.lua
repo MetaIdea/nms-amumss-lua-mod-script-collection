@@ -5,61 +5,61 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.06",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\FISH\LANDJELLYFISH.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","GlowPlane"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "10000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.009000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.656000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_B"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "1.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","GlowAuraEmitter"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\FISH\LANDJELLYFISH.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","GlowPlane"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "10000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.009000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.656000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_B"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "1.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","GlowAuraEmitter"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="DUDpointLight2" />
@@ -131,10 +131,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Children" />
     </Property>
 ]]
-						},
-					}
-				},
-			}
-		},
-	}
+                        },
+                    }
+                },
+            }
+        },
+    }
 }

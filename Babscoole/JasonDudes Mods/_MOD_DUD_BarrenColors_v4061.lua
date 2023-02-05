@@ -222,40 +222,40 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\BARREN\\BARRENCOLOURPALETTES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = { "Sand", "GcPaletteData.xml"  },
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "Inactive"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = { "Wood", "GcPaletteData.xml"  },
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "_16"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = { "Leaf", "GcPaletteData.xml"  },
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "All"}
-							}
-						},
-					}
-				}
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\BARREN\\BARRENCOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Sand", "GcPaletteData.xml"  },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "Inactive"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Wood", "GcPaletteData.xml"  },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "_16"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Leaf", "GcPaletteData.xml"  },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "All"}
+                            }
+                        },
+                    }
+                }
+            }
+        }
+    }
 }
 
 function GetColours(R,G,B,A)

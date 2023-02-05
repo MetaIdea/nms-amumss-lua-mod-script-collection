@@ -5,38 +5,38 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "Green",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{ "Green", "1000000" },
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Blue",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{ "Blue", "1000000" },
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = "Red",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{ "Red", "1000000" },
-							}
-						},
-					}
-				}
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMELISTPERSTARTYPE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "Green",
+                            ["VALUE_CHANGE_TABLE"]     =
+                            {
+                                { "Green", "1000000" },
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "Blue",
+                            ["VALUE_CHANGE_TABLE"]     =
+                            {
+                                { "Blue", "1000000" },
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "Red",
+                            ["VALUE_CHANGE_TABLE"]     =
+                            {
+                                { "Red", "1000000" },
+                            }
+                        },
+                    }
+                }
+            }
+        }
+    }
 }

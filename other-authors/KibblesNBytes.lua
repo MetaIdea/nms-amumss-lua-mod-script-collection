@@ -586,86 +586,86 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]    = "InstaKibs, WinderTP, Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"IsPlaceable",               "True"},
-								{"BuildableOnPlanetBase",     "True"},
-								{"BuildableOnSpaceBase",      "True"},
-								{"BuildableOnFreighter",      "True"},
-								{"BuildableUnderwater",       "True"},
-								{"BuildableAboveWater",       "True"},
-								{"PlanetLimit",               0},
-								{"RegionLimit",               0},
-								{"PlanetBaseLimit",           0},
-								{"FreighterBaseLimit",        0},
-								{"CheckPlaceholderCollision", "False"},
-								{"CanRotate3D",               "True"},
-								{"CanScale",                  "True"},
-								{"CanChangeColour",           "True"},
-								{"CanChangeMaterial",         "True"},
-								{"DependsOnEnvironment",      "None"},
-								{"RemovesAttachedDecoration", "False"},
-								{"GhostsCountOverride",       "1"},
-								{"ShowGhosts",                "True"},
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"IsPlaceable",               "True"},
+                                {"BuildableOnPlanetBase",     "True"},
+                                {"BuildableOnSpaceBase",      "True"},
+                                {"BuildableOnFreighter",      "True"},
+                                {"BuildableUnderwater",       "True"},
+                                {"BuildableAboveWater",       "True"},
+                                {"PlanetLimit",               0},
+                                {"RegionLimit",               0},
+                                {"PlanetBaseLimit",           0},
+                                {"FreighterBaseLimit",        0},
+                                {"CheckPlaceholderCollision", "False"},
+                                {"CanRotate3D",               "True"},
+                                {"CanScale",                  "True"},
+                                {"CanChangeColour",           "True"},
+                                {"CanChangeMaterial",         "True"},
+                                {"DependsOnEnvironment",      "None"},
+                                {"RemovesAttachedDecoration", "False"},
+                                {"GhostsCountOverride",       "1"},
+                                {"ShowGhosts",                "True"},
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 local Change_Table_Ref = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][1]["EXML_CHANGE_TABLE"]
 
 for i=1,#SURFACENORMAL do
-	local value = SURFACENORMAL[i]
-	local temp_table =
-	{
-		["SPECIAL_KEY_WORDS"] = {"ID", value},
-		["VALUE_CHANGE_TABLE"] 	=
-		{
-			{"BaseBuildingDecorationType", "SurfaceNormal"}
+    local value = SURFACENORMAL[i]
+    local temp_table =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", value},
+        ["VALUE_CHANGE_TABLE"]     =
+        {
+            {"BaseBuildingDecorationType", "SurfaceNormal"}
         }
-	}
-	Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
+    }
+    Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
 end
 
 for i=1,#OVERRIDE do
-	local value = OVERRIDE[i]
-	local temp_table =
-	{
-		["SPECIAL_KEY_WORDS"] = {"ID", value},
-		["VALUE_CHANGE_TABLE"] 	=
-		{
-			{"CanRotate3D", "False"},
-			{"CanScale", "False"},
-			{"CanChangeColour", "False"}
+    local value = OVERRIDE[i]
+    local temp_table =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", value},
+        ["VALUE_CHANGE_TABLE"]     =
+        {
+            {"CanRotate3D", "False"},
+            {"CanScale", "False"},
+            {"CanChangeColour", "False"}
         }
-	}
-	Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
+    }
+    Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
 end
 
 for i=1,#OVERRIDE2 do
-	local value = OVERRIDE2[i]
-	local temp_table =
-	{
-		["SPECIAL_KEY_WORDS"] = {"ID", value},
-		["VALUE_CHANGE_TABLE"] 	=
-		{
-			{"BuildableOnPlanetBase", "False"},
-			{"BuildableOnSpaceBase", "False"},
-			{"BuildableOnFreighter", "False"}
+    local value = OVERRIDE2[i]
+    local temp_table =
+    {
+        ["SPECIAL_KEY_WORDS"] = {"ID", value},
+        ["VALUE_CHANGE_TABLE"]     =
+        {
+            {"BuildableOnPlanetBase", "False"},
+            {"BuildableOnSpaceBase", "False"},
+            {"BuildableOnFreighter", "False"}
         }
-	}
-	Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
+    }
+    Change_Table_Ref[#Change_Table_Ref + 1] = temp_table
 end

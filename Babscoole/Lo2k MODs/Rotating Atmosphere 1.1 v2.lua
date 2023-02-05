@@ -1,22 +1,22 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "Rotating Atmosphere 1.1.pak",
-["MOD_AUTHOR"]				= "Lo2k",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "3.22",
-["MODIFICATIONS"] 			=
-	{
-		{
-			["MBIN_CHANGE_TABLE"] 	=
-			{
-				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\PLANETS\ATMOSPHERE\ATMOSPHERE.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MESHLINK"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] 				=
+["MOD_FILENAME"]  = "Rotating Atmosphere 1.1.pak",
+["MOD_AUTHOR"]    = "Lo2k",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "3.22",
+["MODIFICATIONS"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\PLANETS\ATMOSPHERE\ATMOSPHERE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","MESHLINK"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -24,17 +24,17 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\SPACE\PLANETS\ATMOSPHERE\ENTITIES\ATMOSPHERE.ENTITY.MBIN" />
         </Property>
 ]],
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\SPACE\PLANETS\ATMOSPHERE\ATMOSPHEREHIGHPOLY.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MESHLINK"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] 				=
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\PLANETS\ATMOSPHERE\ATMOSPHEREHIGHPOLY.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","MESHLINK"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
@@ -42,17 +42,17 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Value" value="MODELS\SPACE\PLANETS\ATMOSPHERE\ENTITIES\ATMOSPHERE.ENTITY.MBIN" />
         </Property>
 ]],
-						},
-					},
-				},
-			},
-		},
-	},
-["ADD_FILES"] 			=
-	{
-		{
+                        },
+                    },
+                },
+            },
+        },
+    },
+["ADD_FILES"]             =
+    {
+        {
             ["FILE_DESTINATION"] = [[MODELS\SPACE\PLANETS\ATMOSPHERE\ENTITIES\ATMOSPHERE.ENTITY.EXML]],
-            ["FILE_CONTENT"]      =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -74,6 +74,6 @@ NMS_MOD_DEFINITION_CONTAINER =
  </Property>
 </Data>
 ]],
-		},
-	},
+        },
+    },
 }

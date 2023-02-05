@@ -486,1538 +486,1538 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DAYSKYCOLOURS.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"GenericSettings","Settings"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"GenericSettings"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DAYSKYCOLOURS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenericSettings","Settings"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GenericSettings"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
     <Property name="Settings">
     </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Scorched","GcWeatherColourSettingList.xml"},
-							["REPLACE_TYPE"] = "RAW",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{
-									[[<Property name="Settings" />]],
-									[[<Property name="Settings">]]
-								},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Scorched","GcWeatherColourSettingList.xml"},
-							["PRECEDING_KEY_WORDS"] = {"Settings"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Scorched","GcWeatherColourSettingList.xml"},
+                            ["REPLACE_TYPE"] = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {
+                                    [[<Property name="Settings" />]],
+                                    [[<Property name="Settings">]]
+                                },
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Scorched","GcWeatherColourSettingList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
       </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Frozen","GcWeatherColourSettingList.xml"},
-							["REPLACE_TYPE"] = "RAW",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{
-									[[<Property name="Settings" />]],
-									[[<Property name="Settings">]]
-								},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Frozen","GcWeatherColourSettingList.xml"},
-							["PRECEDING_KEY_WORDS"] = {"Settings"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Frozen","GcWeatherColourSettingList.xml"},
+                            ["REPLACE_TYPE"] = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {
+                                    [[<Property name="Settings" />]],
+                                    [[<Property name="Settings">]]
+                                },
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Frozen","GcWeatherColourSettingList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
       </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Swamp","GcWeatherColourSettingList.xml"},
-							["PRECEDING_KEY_WORDS"] = {"Settings"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Swamp","GcWeatherColourSettingList.xml"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
-[[
-      <Property name="Settings">
-      </Property>
-]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Lava","GcWeatherColourSettingList.xml"},
-							["PRECEDING_KEY_WORDS"] = {"Settings"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Lava","GcWeatherColourSettingList.xml"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Swamp","GcWeatherColourSettingList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Swamp","GcWeatherColourSettingList.xml"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
       <Property name="Settings">
       </Property>
 ]]
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BLUEWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.2"},
-								{"MultiplySaturation", "1"},
-								{"MultiplyValue",      "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation",   "-0.1"},
-								{"OffsetValue",        "-0.1"},
-								{"MultiplySaturation", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"MultiplySaturation", "1"},
-								{"MultiplyValue",      "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.1"},
-								{"MultiplySaturation", "1"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BUBBLEWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogMax",               "0.95"},
-								{"FogColourMax",         "1"},
-								{"HeightFogMax",         "0.98"},
-								{"FogHeight",            "192"},
-								{"DepthOfFieldDistance", "10"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",          "0.0035"},
-								{"FogMax",               "0.95"},
-								{"FogColourStrength",    "10"},
-								{"HeightFogStrength",    "0.1"},
-								{"HeightFogMax",         "0.98"},
-								{"FogHeight",            "192"},
-								{"DepthOfFieldDistance", "10"},
-								{"DepthOfFieldFade",     "1000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",          "0.25"},
-								{"FogMax",               "0.95"},
-								{"FogColourStrength",    "5"},
-								{"HeightFogStrength",    "0.1"},
-								{"HeightFogMax",         "0.98"},
-								{"FogHeight",            "192"},
-								{"DepthOfFieldDistance", "10"},
-								{"DepthOfFieldFade",     "1000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.15"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "5"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "1"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfField",             "0"},
-								{"DepthOfFieldDistance",     "10"},
-								{"DepthOfFieldFade",         "1000"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.2"},
-								{"MultiplySaturation", "1"},
-								{"MultiplyValue",      "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.1"},
-								{"MultiplySaturation", "1"},
-								{"MultiplyValue",      "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"MultiplyValue", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"MultiplyValue", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",   "-0.1"},
-								{"MultiplyValue", "1"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARCOLD.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Alpha1", "0"},
-								{"Alpha2", "0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Thickness", "0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour1"},
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Palette",   "Snow"},
-								{"ColourAlt", "Primary"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour2"},
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Palette",   "Snow"},
-								{"ColourAlt", "Primary"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Speed",  "0.3"},
-								{"Alpha1", "0.02"},
-								{"Alpha2", "0.02"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Alpha1", "0"},
-								{"Alpha2", "0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour2"},
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Palette",   "Sand"},
-								{"ColourAlt", "Alternative3"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\DUSTWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.3"},
-								{"MultiplySaturation", "1"},
-								{"MultiplyValue",      "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.3"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.2"},
-								{"MultiplySaturation", "1"},
-								{"MultiplyValue",      "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.25"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "-0.2"},
-								{"MultiplyValue",    "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeightFogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation","-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"MultiplyValue", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",   "-0.1"},
-								{"MultiplyValue", "1"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\FIRESTORMWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogHeight",            "192"},
-								{"DepthOfFieldDistance", "10"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogHeight",            "192"},
-								{"DepthOfFieldDistance", "10"},
-								{"DepthOfFieldFade",     "1000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogHeight",            "192"},
-								{"DepthOfFieldDistance", "10"},
-								{"DepthOfFieldFade",     "1000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogHeight",            "192"},
-								{"DepthOfFieldDistance", "10"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Thickness", "0.8"},
-								{"Alpha2",    "0.4"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Storms","Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Thickness", "0.8"},
-								{"Alpha1",    "0.2"},
-								{"Alpha2",    "0.4"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour","ForceColourTo"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"R", "0.68"},
-								{"G", "0.303"},
-								{"B", "0.154"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-								{"OffsetValue", "-0.1"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"DuskHorizonMultiplier",  "0.35665"},
-								{"NightHorizonMultiplier", "0.180624"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\GRAVITYSTORMWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogHeight",            "192"},
-								{"DepthOfFieldDistance", "10"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogHeight",            "192"},
-								{"DepthOfFieldDistance", "10"},
-								{"DepthOfFieldFade",     "1000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.25"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "5"},
-								{"FogColourMax",             "1"},
-								{"HeightFogStrength",        "0.04"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-								{"DepthOfFieldFade",         "1000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.15"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "7"},
-								{"FogColourMax",             "1"},
-								{"HeightFogStrength",        "0.04"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","SkyColour","GcColourModifier.xml"},
-								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","HorizonColour","GcColourModifier.xml"},
-								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","SunColour","GcColourModifier.xml"},
-								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","FogColour","GcColourModifier.xml"},
-								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","HeightFogColour","GcColourModifier.xml"},
-								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","LightColour","GcColourModifier.xml"},
-								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","CloudColour1","GcColourModifier.xml"},
-								{"ExtremeColourModifiers","GcWeatherColourModifiers.xml","CloudColour2","GcColourModifier.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ForceColour", "False"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour",      "False"},
-								{"OffsetSaturation", "0.1"},
-								{"OffsetValue",      "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.1"},
-								{"OffsetValue",      "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour",      "False"},
-								{"OffsetSaturation", "0.1"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour",      "False"},
-								{"OffsetSaturation", "0.4"},
-								{"OffsetValue",      "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeightFogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour",      "False"},
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-								{"OffsetValue", "-0.1"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"HorizonMultiplier",      "0.180624"},
-								{"DuskHorizonMultiplier",  "0.35665"},
-								{"NightHorizonMultiplier", "0.180624"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\GREENWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.35"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeavyAirColour","GcColourModifier.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\HUMIDWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0"},
-								{"OffsetValue",      "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeavyAirColour","GcColourModifier.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "0"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\LAVAWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogMax",                   "0.95"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.04"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "10"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "128"},
-								{"DepthOfFieldDistance",     "10"},
-								{"DepthOfFieldFade",         "1000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.25"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "5"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "128"},
-								{"DepthOfFieldDistance",     "10"},
-								{"DepthOfFieldFade",         "1000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.15"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "7"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "128"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"MultiplyValue", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.1"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"DuskHorizonMultiplier",  "0.35665"},
-								{"NightHorizonMultiplier", "0.180624"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\REDWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.2"},
-								{"MultiplySaturation", "1"},
-								{"MultiplyValue",      "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",   "-0.1"},
-								{"MultiplyValue", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.4"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"MultiplyValue", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.1"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SCORCHED.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.2"},
-								{"MultiplySaturation", "1"},
-								{"MultiplyValue",      "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",   "-0.1"},
-								{"MultiplyValue", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"MultiplyValue", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.1"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SNOWWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Thickness", "0.6"},
-								{"Alpha1",    "0.92"},
-								{"Alpha2",    "0.92"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Speed",  "1.5"},
-								{"Alpha1", "0.92"},
-								{"Alpha2", "0.92"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.1"},
-								{"MultiplySaturation", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"ForceColour", "False"},
-								{"OffsetValue", "-0.1"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SWAMPWEATHER.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.04"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "10"},
-								{"FogColourMax",             "1"},
-								{"HeightFogStrength",        "0.5"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogOffset",          "0"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.04"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "10"},
-								{"FogColourMax",             "1"},
-								{"HeightFogStrength",        "0.5"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.25"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "5"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-								{"DepthOfFieldFade",         "1000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.15"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "7"},
-								{"FogColourMax",             "1"},
-								{"HeightFogStrength",        "0.5"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogOffset",          "0"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Storms","Fog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.25"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "5"},
-								{"HeightFogStrength",        "0.5"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-								{"DepthOfFieldFade",         "1000"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.2"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue",        "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetSaturation", "0.2"},
-								{"OffsetValue",      "-0.1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"OffsetValue", "-0.1"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"HorizonMultiplier",      "0.6"},
-								{"DuskHorizonMultiplier",  "1"},
-								{"NightHorizonMultiplier", "0.6"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"CloudProperties"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"AnimationScale",       "15"},
-								{"CloudDistortionScale", "2"},
-								{"HorizonFadeScalar",    "0.6"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"CloudProperties","WindOffset"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"x", "0.65"},
-								{"y", "0.65"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"EnvironmentProperties"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FlightFogHeight",    "1000"},
-								{"FlightFogBlend",     "1300"},
-								{"CloudHeightMin",     "1000"},
-								{"CloudHeightMax",     "1000"},
-								{"HeavyAirHeightMin",  "950"},
-								{"HeavyAirHeightMax",  "1000"},
-								{"HorizonBlendLength", "700"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"EnvironmentPrimeProperties"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FlightFogHeight",    "1500"},
-								{"FlightFogBlend",     "2500"},
-								{"HeavyAirHeightMin",  "1450"},
-								{"HeavyAirHeightMax",  "1500"},
-								{"HorizonBlendHeight", "1500"},
-								{"HorizonBlendLength", "1000"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "GCSKYGLOBALS.GLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"SafeSkyMaxIndex",                "342"},
-								{"FrozenSkyMaxIndex",              "342"},
-								{"StormScreenFilterFadeTime",      "2"},
-								{"StormWarningTime",               "20"},
-								{"MaxCloudCover",                  "0.6"},
-								{"MaxStormCloudCover",             "0.7"},
-								{"CloudCoverSmoothTime",           "20"},
-								{"CloudRatioSmoothTime",           "20"},
-								{"StormCloudTopColourMinBlend",    "0"},
-								{"StormCloudTopColourMaxBlend",    "0.5"},
-								{"StormCloudBottomColourMinBlend", "0"},
-								{"StormCloudBottomColourMaxBlend", "0.5"},
-								{"MinSunsetFade",                  "0.33"},
-								{"MaxSunsetFade",                  "0.53"},
-								{"MinSunsetHorizonFade",           "0.33"},
-								{"MaxSunsetHorizonFade",           "0.53"},
-								{"MinNightFade",                   "0.55"},
-								{"MaxNightFade",                   "0.73"},
-								{"MinSunsetPosFade",               "0.73"},
-								{"MaxSunsetPosFade",               "0.77"},
-								{"MinSunsetFogFade",               "0.7"},
-								{"MaxSunsetFogFade",               "0.75"},
-								{"MinSunsetAtmosphereFade",        "0.7"},
-								{"MaxSunsetAtmosphereFade",        "0.75"},
-								{"MinSunsetColourFade",            "0.7"},
-								{"MaxSunsetColourFade",            "0.75"},
-								{"MinSaturation",                  "0.3"},
-								{"MaxSaturation",                  "0.3"},
-								{"NoAtmosphereFogStrength",        "0.09"},
-								{"NoAtmosphereFogMax",             "0.95"},
-								{"BinaryStarChance",               "0.05"},
-								{"TernaryStarChance",              "0.025"},
-								{"WeatherBloomGain",               "4"},
-								{"WeatherBloomImpulseSpeed",       "0.3615"},
-								{"MaxRainWetness",                 "0.6"},
-								{"RainWetnessFadeInTime",          "40"},
-								{"RainWetnessFadeOutTime",         "60"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogMax",                   "0.95"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetExtremeFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.15"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "10"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "128"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetStormFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.25"},
-								{"FogColourStrength",        "10"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "128"},
-								{"DepthOfFieldDistance",     "10"},
-								{"DepthOfFieldFade",         "1000"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetFlightFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogMax",                   "0.95"},
-								{"HeightFogStrength",        "0.1"},
-								{"HeightFogFadeOutStrength", "0.5"},
-								{"HeightFogMax",             "0.98"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetSky"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"SunSize",         "0.4"},
-								{"SunSurroundSize", "12"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.04"},
-								{"FogMax",                   "0.95"},
-								{"FogColourMax",             "1"},
-								{"HeightFogStrength",        "0.3"},
-								{"HeightFogFadeOutStrength", "0.8"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetExtremeFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.1"},
-								{"FogMax",                   "0.95"},
-								{"FogColourStrength",        "10"},
-								{"HeightFogStrength",        "0.3"},
-								{"HeightFogFadeOutStrength", "0.8"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetStormFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogStrength",              "0.2"},
-								{"FogColourStrength",        "10"},
-								{"HeightFogStrength",        "0.3"},
-								{"HeightFogFadeOutStrength", "0.8"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-								{"DepthOfFieldFade",         "1000"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetFlightFog"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"FogMax",                   "0.95"},
-								{"HeightFogStrength",        "0.3"},
-								{"HeightFogFadeOutStrength", "0.8"},
-								{"HeightFogMax",             "0.98"},
-								{"FogHeight",                "192"},
-								{"DepthOfFieldDistance",     "10"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"SpaceSkyMin"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"SunStrength",          "0.4"},
-								{"SunSize",              "0.002"},
-								{"SpaceFogPlanetMax",    "0.7"},
-								{"NebulaCloudStrength1", "0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"SpaceSkyMax"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"]  =
-							{
-								{"SunStrength",              "0.8"},
-								{"SpaceFogMax",              "0.9"},
-								{"SpaceFogPlanetMax",        "0.7"},
-								{"NebulaDistortionStrength", "0.3"},
-							}
-						},
-					}
-				},
-			}
-		}
-	}
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Lava","GcWeatherColourSettingList.xml"},
+                            ["PRECEDING_KEY_WORDS"] = {"Settings"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Lava","GcWeatherColourSettingList.xml"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
+[[
+      <Property name="Settings">
+      </Property>
+]]
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BLUEWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.2"},
+                                {"MultiplySaturation", "1"},
+                                {"MultiplyValue",      "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation",   "-0.1"},
+                                {"OffsetValue",        "-0.1"},
+                                {"MultiplySaturation", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MultiplySaturation", "1"},
+                                {"MultiplyValue",      "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.1"},
+                                {"MultiplySaturation", "1"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\BUBBLEWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogMax",               "0.95"},
+                                {"FogColourMax",         "1"},
+                                {"HeightFogMax",         "0.98"},
+                                {"FogHeight",            "192"},
+                                {"DepthOfFieldDistance", "10"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",          "0.0035"},
+                                {"FogMax",               "0.95"},
+                                {"FogColourStrength",    "10"},
+                                {"HeightFogStrength",    "0.1"},
+                                {"HeightFogMax",         "0.98"},
+                                {"FogHeight",            "192"},
+                                {"DepthOfFieldDistance", "10"},
+                                {"DepthOfFieldFade",     "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",          "0.25"},
+                                {"FogMax",               "0.95"},
+                                {"FogColourStrength",    "5"},
+                                {"HeightFogStrength",    "0.1"},
+                                {"HeightFogMax",         "0.98"},
+                                {"FogHeight",            "192"},
+                                {"DepthOfFieldDistance", "10"},
+                                {"DepthOfFieldFade",     "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.15"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "5"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "1"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfField",             "0"},
+                                {"DepthOfFieldDistance",     "10"},
+                                {"DepthOfFieldFade",         "1000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.2"},
+                                {"MultiplySaturation", "1"},
+                                {"MultiplyValue",      "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.1"},
+                                {"MultiplySaturation", "1"},
+                                {"MultiplyValue",      "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",   "-0.1"},
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARCOLD.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Alpha1", "0"},
+                                {"Alpha2", "0"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Thickness", "0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour1"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Palette",   "Snow"},
+                                {"ColourAlt", "Primary"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour2"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Palette",   "Snow"},
+                                {"ColourAlt", "Primary"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\CLEARWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Speed",  "0.3"},
+                                {"Alpha1", "0.02"},
+                                {"Alpha2", "0.02"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Alpha1", "0"},
+                                {"Alpha2", "0"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","Colour2"},
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Palette",   "Sand"},
+                                {"ColourAlt", "Alternative3"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\DUSTWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.3"},
+                                {"MultiplySaturation", "1"},
+                                {"MultiplyValue",      "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.3"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.2"},
+                                {"MultiplySaturation", "1"},
+                                {"MultiplyValue",      "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.25"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "-0.2"},
+                                {"MultiplyValue",    "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeightFogColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation","-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",   "-0.1"},
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\FIRESTORMWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogHeight",            "192"},
+                                {"DepthOfFieldDistance", "10"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogHeight",            "192"},
+                                {"DepthOfFieldDistance", "10"},
+                                {"DepthOfFieldFade",     "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogHeight",            "192"},
+                                {"DepthOfFieldDistance", "10"},
+                                {"DepthOfFieldFade",     "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogHeight",            "192"},
+                                {"DepthOfFieldDistance", "10"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Thickness", "0.8"},
+                                {"Alpha2",    "0.4"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms","Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Thickness", "0.8"},
+                                {"Alpha1",    "0.2"},
+                                {"Alpha2",    "0.4"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour","ForceColourTo"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"R", "0.68"},
+                                {"G", "0.303"},
+                                {"B", "0.154"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"DuskHorizonMultiplier",  "0.35665"},
+                                {"NightHorizonMultiplier", "0.180624"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\GRAVITYSTORMWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogHeight",            "192"},
+                                {"DepthOfFieldDistance", "10"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogHeight",            "192"},
+                                {"DepthOfFieldDistance", "10"},
+                                {"DepthOfFieldFade",     "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.25"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "5"},
+                                {"FogColourMax",             "1"},
+                                {"HeightFogStrength",        "0.04"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                                {"DepthOfFieldFade",         "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.15"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "7"},
+                                {"FogColourMax",             "1"},
+                                {"HeightFogStrength",        "0.04"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"ExtremeColourModifiers","GcWeatherColourModifiers.xml","SkyColour","GcColourModifier.xml"},
+                                {"ExtremeColourModifiers","GcWeatherColourModifiers.xml","HorizonColour","GcColourModifier.xml"},
+                                {"ExtremeColourModifiers","GcWeatherColourModifiers.xml","SunColour","GcColourModifier.xml"},
+                                {"ExtremeColourModifiers","GcWeatherColourModifiers.xml","FogColour","GcColourModifier.xml"},
+                                {"ExtremeColourModifiers","GcWeatherColourModifiers.xml","HeightFogColour","GcColourModifier.xml"},
+                                {"ExtremeColourModifiers","GcWeatherColourModifiers.xml","LightColour","GcColourModifier.xml"},
+                                {"ExtremeColourModifiers","GcWeatherColourModifiers.xml","CloudColour1","GcColourModifier.xml"},
+                                {"ExtremeColourModifiers","GcWeatherColourModifiers.xml","CloudColour2","GcColourModifier.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ForceColour", "False"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour",      "False"},
+                                {"OffsetSaturation", "0.1"},
+                                {"OffsetValue",      "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.1"},
+                                {"OffsetValue",      "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour",      "False"},
+                                {"OffsetSaturation", "0.1"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour",      "False"},
+                                {"OffsetSaturation", "0.4"},
+                                {"OffsetValue",      "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeightFogColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour",      "False"},
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour1"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"HorizonMultiplier",      "0.180624"},
+                                {"DuskHorizonMultiplier",  "0.35665"},
+                                {"NightHorizonMultiplier", "0.180624"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\GREENWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.35"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeavyAirColour","GcColourModifier.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\HUMIDWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0"},
+                                {"OffsetValue",      "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HeavyAirColour","GcColourModifier.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "0"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\LAVAWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogMax",                   "0.95"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.04"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "10"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "128"},
+                                {"DepthOfFieldDistance",     "10"},
+                                {"DepthOfFieldFade",         "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.25"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "5"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "128"},
+                                {"DepthOfFieldDistance",     "10"},
+                                {"DepthOfFieldFade",         "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.15"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "7"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "128"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"DuskHorizonMultiplier",  "0.35665"},
+                                {"NightHorizonMultiplier", "0.180624"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\REDWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.2"},
+                                {"MultiplySaturation", "1"},
+                                {"MultiplyValue",      "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",   "-0.1"},
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.4"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SCORCHED.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.2"},
+                                {"MultiplySaturation", "1"},
+                                {"MultiplyValue",      "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",   "-0.1"},
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","FogColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"MultiplyValue", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SNOWWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Thickness", "0.6"},
+                                {"Alpha1",    "0.92"},
+                                {"Alpha2",    "0.92"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ExtremeFog","HeavyAir","GcHeavyAirSettingValues.xml","GcHeavyAirSettingValues.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Speed",  "1.5"},
+                                {"Alpha1", "0.92"},
+                                {"Alpha2", "0.92"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.1"},
+                                {"MultiplySaturation", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SunColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"ForceColour", "False"},
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SWAMPWEATHER.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Fog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.04"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "10"},
+                                {"FogColourMax",             "1"},
+                                {"HeightFogStrength",        "0.5"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogOffset",          "0"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"FlightFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.04"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "10"},
+                                {"FogColourMax",             "1"},
+                                {"HeightFogStrength",        "0.5"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"StormFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.25"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "5"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                                {"DepthOfFieldFade",         "1000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ExtremeFog","GcFogProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.15"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "7"},
+                                {"FogColourMax",             "1"},
+                                {"HeightFogStrength",        "0.5"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogOffset",          "0"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Storms","Fog"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.25"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "5"},
+                                {"HeightFogStrength",        "0.5"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                                {"DepthOfFieldFade",         "1000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","SkyUpperColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.2"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","HorizonColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue",        "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","LightColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetSaturation", "0.2"},
+                                {"OffsetValue",      "-0.1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"ColourModifiers","CloudColour2"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"OffsetValue", "-0.1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Sky","GcSkyProperties.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"HorizonMultiplier",      "0.6"},
+                                {"DuskHorizonMultiplier",  "1"},
+                                {"NightHorizonMultiplier", "0.6"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCENVIRONMENTGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"CloudProperties"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"AnimationScale",       "15"},
+                                {"CloudDistortionScale", "2"},
+                                {"HorizonFadeScalar",    "0.6"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"CloudProperties","WindOffset"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"x", "0.65"},
+                                {"y", "0.65"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"EnvironmentProperties"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FlightFogHeight",    "1000"},
+                                {"FlightFogBlend",     "1300"},
+                                {"CloudHeightMin",     "1000"},
+                                {"CloudHeightMax",     "1000"},
+                                {"HeavyAirHeightMin",  "950"},
+                                {"HeavyAirHeightMax",  "1000"},
+                                {"HorizonBlendLength", "700"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"EnvironmentPrimeProperties"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FlightFogHeight",    "1500"},
+                                {"FlightFogBlend",     "2500"},
+                                {"HeavyAirHeightMin",  "1450"},
+                                {"HeavyAirHeightMax",  "1500"},
+                                {"HorizonBlendHeight", "1500"},
+                                {"HorizonBlendLength", "1000"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCSKYGLOBALS.GLOBALS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"SafeSkyMaxIndex",                "342"},
+                                {"FrozenSkyMaxIndex",              "342"},
+                                {"StormScreenFilterFadeTime",      "2"},
+                                {"StormWarningTime",               "20"},
+                                {"MaxCloudCover",                  "0.6"},
+                                {"MaxStormCloudCover",             "0.7"},
+                                {"CloudCoverSmoothTime",           "20"},
+                                {"CloudRatioSmoothTime",           "20"},
+                                {"StormCloudTopColourMinBlend",    "0"},
+                                {"StormCloudTopColourMaxBlend",    "0.5"},
+                                {"StormCloudBottomColourMinBlend", "0"},
+                                {"StormCloudBottomColourMaxBlend", "0.5"},
+                                {"MinSunsetFade",                  "0.33"},
+                                {"MaxSunsetFade",                  "0.53"},
+                                {"MinSunsetHorizonFade",           "0.33"},
+                                {"MaxSunsetHorizonFade",           "0.53"},
+                                {"MinNightFade",                   "0.55"},
+                                {"MaxNightFade",                   "0.73"},
+                                {"MinSunsetPosFade",               "0.73"},
+                                {"MaxSunsetPosFade",               "0.77"},
+                                {"MinSunsetFogFade",               "0.7"},
+                                {"MaxSunsetFogFade",               "0.75"},
+                                {"MinSunsetAtmosphereFade",        "0.7"},
+                                {"MaxSunsetAtmosphereFade",        "0.75"},
+                                {"MinSunsetColourFade",            "0.7"},
+                                {"MaxSunsetColourFade",            "0.75"},
+                                {"MinSaturation",                  "0.3"},
+                                {"MaxSaturation",                  "0.3"},
+                                {"NoAtmosphereFogStrength",        "0.09"},
+                                {"NoAtmosphereFogMax",             "0.95"},
+                                {"BinaryStarChance",               "0.05"},
+                                {"TernaryStarChance",              "0.025"},
+                                {"WeatherBloomGain",               "4"},
+                                {"WeatherBloomImpulseSpeed",       "0.3615"},
+                                {"MaxRainWetness",                 "0.6"},
+                                {"RainWetnessFadeInTime",          "40"},
+                                {"RainWetnessFadeOutTime",         "60"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetFog"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogMax",                   "0.95"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetExtremeFog"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.15"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "10"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "128"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetStormFog"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.25"},
+                                {"FogColourStrength",        "10"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "128"},
+                                {"DepthOfFieldDistance",     "10"},
+                                {"DepthOfFieldFade",         "1000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PlanetProperties","PlanetFlightFog"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogMax",                   "0.95"},
+                                {"HeightFogStrength",        "0.1"},
+                                {"HeightFogFadeOutStrength", "0.5"},
+                                {"HeightFogMax",             "0.98"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetSky"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"SunSize",         "0.4"},
+                                {"SunSurroundSize", "12"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetFog"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.04"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourMax",             "1"},
+                                {"HeightFogStrength",        "0.3"},
+                                {"HeightFogFadeOutStrength", "0.8"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetExtremeFog"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.1"},
+                                {"FogMax",                   "0.95"},
+                                {"FogColourStrength",        "10"},
+                                {"HeightFogStrength",        "0.3"},
+                                {"HeightFogFadeOutStrength", "0.8"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetStormFog"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogStrength",              "0.2"},
+                                {"FogColourStrength",        "10"},
+                                {"HeightFogStrength",        "0.3"},
+                                {"HeightFogFadeOutStrength", "0.8"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                                {"DepthOfFieldFade",         "1000"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties","PlanetFlightFog"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"FogMax",                   "0.95"},
+                                {"HeightFogStrength",        "0.3"},
+                                {"HeightFogFadeOutStrength", "0.8"},
+                                {"HeightFogMax",             "0.98"},
+                                {"FogHeight",                "192"},
+                                {"DepthOfFieldDistance",     "10"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"SpaceSkyMin"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"SunStrength",          "0.4"},
+                                {"SunSize",              "0.002"},
+                                {"SpaceFogPlanetMax",    "0.7"},
+                                {"NebulaCloudStrength1", "0"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"SpaceSkyMax"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"SunStrength",              "0.8"},
+                                {"SpaceFogMax",              "0.9"},
+                                {"SpaceFogPlanetMax",        "0.7"},
+                                {"NebulaDistortionStrength", "0.3"},
+                            }
+                        },
+                    }
+                },
+            }
+        }
+    }
 }
 
 
@@ -2150,25 +2150,25 @@ local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1
 for i = 1, #DataTable do
     --local Palette = DataTable[i]["PALETTE"]
     local PaletteColours = DataTable[i]["COLOURS"]
-	local ADDSPACES = 0
+    local ADDSPACES = 0
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-	{
-		["PRECEDING_KEY_WORDS"] = {"Settings"},
-		["SECTION_ACTIVE"] = {1,},
-		["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
-	}
+    {
+        ["PRECEDING_KEY_WORDS"] = {"Settings"},
+        ["SECTION_ACTIVE"] = {1,},
+        ["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
+    }
 end
 
 for i = 1, #BiomeDataTable do
     local Palette = BiomeDataTable[i]["PALETTE"]
     local PaletteColours = BiomeDataTable[i]["COLOURS"]
-	local ADDSPACES = 2
+    local ADDSPACES = 2
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-	{
-		["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
-		["PRECEDING_KEY_WORDS"] = {"Settings"},
-		["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
-	}
+    {
+        ["SPECIAL_KEY_WORDS"] = {Palette,"GcWeatherColourSettingList.xml",},
+        ["PRECEDING_KEY_WORDS"] = {"Settings"},
+        ["ADD"] = CreateColoursProperty(PaletteColours,ADDSPACES)
+    }
 end
