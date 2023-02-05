@@ -1,21 +1,21 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] 			= "aquaman-nms.pak",
-["MOD_AUTHOR"]				= "EliteGamers",
-["LUA_AUTHOR"]				= "Babscoole",
-["NMS_VERSION"]				= "4.08",
-["MODIFICATIONS"] 			=
+["MOD_FILENAME"]  = "aquaman-nms.pak",
+["MOD_AUTHOR"]    = "EliteGamers",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "4.08",
+["MODIFICATIONS"] =
 	{
 		{
-			["MBIN_CHANGE_TABLE"] 	=
+			["MBIN_CHANGE_TABLE"] =
 			{
 				{
-					["MBIN_FILE_SOURCE"] 	= "GCPLAYERGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
+					["MBIN_FILE_SOURCE"] = "GCPLAYERGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] =
 					{
 						{
 							["NOTICE_OFF"] = "TRUE",
-							["VALUE_CHANGE_TABLE"] 	=
+							["VALUE_CHANGE_TABLE"] =
 							{
 								{"JetpackUnderwaterDrainRate", "0.1"},
 								{"JetpackUnderwaterFillRate",  "9"},
