@@ -479,55 +479,55 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA Fix and Update"] = "Babscoole",
 ["NMS_VERSION"]        = "3.53",
 ["MODIFICATIONS"]      =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\UI\BOOTLOGOPC.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "Textures",
-							["REMOVE"] = "SECTION",
-						}
-					},
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = "DisplayTime",
-							["REMOVE"] = "SECTION",
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "GCDEBUGOPTIONS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-						  	["VALUE_CHANGE_TABLE"] =
-							{
-								{"SkipIntro",                         "True"},  -- Original "False"
-								{"BootMusic",                         "False"}, -- Original "True"
-								{"DisableSaveSlotSorting",            "True"},  -- Original "False"
-								{"ForceInitialShip",                  "False"}, -- Original "True"
-								{"ForceInitialWeapon",                "False"}, -- Original "True"
-								{"ForceLoadAllWeather",               "True"},  -- Original "False"
-								{"MultiplePlayerFreightersInASystem", "True"},  -- Original "False"
-							}
-						},
-					}
-				},
-				{
-				  	["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\MISSIONS\TUTORIALMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Missions",},
-							["ADD"] = SKIPTUT
-						},
-					}
-				},
-			},
-		},
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\UI\BOOTLOGOPC.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "Textures",
+                            ["REMOVE"] = "SECTION",
+                        }
+                    },
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = "DisplayTime",
+                            ["REMOVE"] = "SECTION",
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCDEBUGOPTIONS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                              ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SkipIntro",                         "True"},  -- Original "False"
+                                {"BootMusic",                         "False"}, -- Original "True"
+                                {"DisableSaveSlotSorting",            "True"},  -- Original "False"
+                                {"ForceInitialShip",                  "False"}, -- Original "True"
+                                {"ForceInitialWeapon",                "False"}, -- Original "True"
+                                {"ForceLoadAllWeather",               "True"},  -- Original "False"
+                                {"MultiplePlayerFreightersInASystem", "True"},  -- Original "False"
+                            }
+                        },
+                    }
+                },
+                {
+                      ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\MISSIONS\TUTORIALMISSIONTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Missions",},
+                            ["ADD"] = SKIPTUT
+                        },
+                    }
+                },
+            },
+        },
+    }
 }

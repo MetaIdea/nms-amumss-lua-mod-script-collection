@@ -516,92 +516,92 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\TOXIC\\TOXICCOLOURPALETTES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Grass", "GcPaletteData.xml"},
-								{"Wood", "GcPaletteData.xml"},
-								{"Stone", "GcPaletteData.xml"},
-								{"Dirt", "GcPaletteData.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "All"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"RockSaturated", "GcPaletteData.xml"},
-								{"RockDark", "GcPaletteData.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "_16"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\TOXIC\\TOXICEGGSCOLOURPALETTES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Wood", "GcPaletteData.xml"},
-								{"Stone", "GcPaletteData.xml"},
-								{"Dirt", "GcPaletteData.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "All"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Plant", "GcPaletteData.xml"},
-								{"Leaf", "GcPaletteData.xml"},
-								{"Rock", "GcPaletteData.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "_16"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\TOXIC\\TOXICTENTACLESCOLOURPALETTES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Grass", "GcPaletteData.xml"},
-								{"Wood", "GcPaletteData.xml"},
-								{"Stone", "GcPaletteData.xml"},
-								{"Dirt", "GcPaletteData.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "All"}
-							}
-						},
-					}
-				},
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\TOXIC\\TOXICCOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Grass", "GcPaletteData.xml"},
+                                {"Wood", "GcPaletteData.xml"},
+                                {"Stone", "GcPaletteData.xml"},
+                                {"Dirt", "GcPaletteData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "All"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"RockSaturated", "GcPaletteData.xml"},
+                                {"RockDark", "GcPaletteData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "_16"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\TOXIC\\TOXICEGGSCOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Wood", "GcPaletteData.xml"},
+                                {"Stone", "GcPaletteData.xml"},
+                                {"Dirt", "GcPaletteData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "All"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Plant", "GcPaletteData.xml"},
+                                {"Leaf", "GcPaletteData.xml"},
+                                {"Rock", "GcPaletteData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "_16"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\TOXIC\\TOXICTENTACLESCOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Grass", "GcPaletteData.xml"},
+                                {"Wood", "GcPaletteData.xml"},
+                                {"Stone", "GcPaletteData.xml"},
+                                {"Dirt", "GcPaletteData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "All"}
+                            }
+                        },
+                    }
+                },
+            }
+        }
+    }
 }
 
 function GetColours(R,G,B,A)

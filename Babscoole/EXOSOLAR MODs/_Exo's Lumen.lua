@@ -71,7 +71,7 @@ function GetBlock(Name,NameHash,TransX,TransY,TransZ,RotX,RotY,RotZ,ScaleX,Scale
       <Property name="Children" />
     </Property>
 ]]
-	return b:gsub("<",string.rep(" ",ADDSPACES).."<")
+    return b:gsub("<",string.rep(" ",ADDSPACES).."<")
 end
 
 --                           Name           NameHash      TransX   TransY TransZ     RotX   RotY   RotZ    ScaleX  ScaleY  ScaleZ   FOV           FALLOFF      INTENSITY       COL_R       COL_G        COL_B       VOLUMETRIC ADDSPACES
@@ -96,833 +96,833 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\CEILINGLIGHT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.25"},
-								{"TransZ", "0"},
-								{"RotX",   "90"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "180.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "27500.000000"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LABLAMP.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "1.05"},
-								{"RotX",   "90"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "80.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "21000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.500000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.850000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = LABLAMP
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.7"},
-								{"RotX",   "90"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "180.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "13000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.500000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.8500000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = LIGHTTABLE
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\SMALLLIGHT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0"},
-								{"TransZ", "0.125"},
-								{"RotX",   "0"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "10000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_R",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "1.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.880000"},
-							}
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STANDINGLIGHT1.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0.32"},
-								{"TransY", "2.65"},
-								{"TransZ", "-0.28"},
-								{"RotY",   "14"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "75.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "36000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","VOLUMETRIC",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.010000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = STANDINGLIGHT1
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STANDINGLIGHT2.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0.32"},
-								{"TransY", "2.58"},
-								{"TransZ", "-0.167"},
-								{"RotY",   "17"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "110.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "30000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","VOLUMETRIC",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.010000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = STANDINGLIGHT2
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STANDINGLIGHT3.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight2",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransX", "0.05"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight2","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight2","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "35000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight2","Name","VOLUMETRIC",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.025000"},
-							}
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_BLUE.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.1"},
-								{"RotX",   "90"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "180.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "30000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.530000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "1.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.050000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = WALLLIGHT_BLUE
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_GREEN.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.1"},
-								{"TransZ", "0"},
-								{"RotX",   "90"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "180.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "25000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "1.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.270000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.050000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = WALLLIGHT_GREEN
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_PINK.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.1"},
-								{"TransZ", "0"},
-								{"RotX",   "90"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "180.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "25000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_R",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "1.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.730000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.050000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = WALLLIGHT_PINK
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_RED.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.1"},
-								{"TransZ", "0"},
-								{"RotX",   "90"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "180.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "25000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.220000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.200000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.050000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = WALLLIGHT_RED
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_WHITE.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.1"},
-								{"TransZ", "0"},
-								{"RotX",   "90"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "180.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "17000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.075000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = WALLLIGHT_WHITE
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_YELLOW.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.1"},
-								{"TransZ", "0"},
-								{"RotX",   "90"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "180.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "25000.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_R",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "1.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.900000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.100000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.050000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = WALLLIGHT_YELLOW
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\HANGLAMP0.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Datax"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = HANGLAMP0
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\HANGLAMP1.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "1"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "17500.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.98000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_B",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.95000"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\HANGLAMP2.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "1"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "22500.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.98000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_B",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.95000"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\HANGLAMP3.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"TransY", "0.5"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","FALLOFF",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "linear"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","INTENSITY",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "4800.000000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_G",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.98000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_B",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "0.95000"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lite1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = HANGLAMP3
-						},
-					}
-				},
-			}
-		}
-	},
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\CEILINGLIGHT.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.25"},
+                                {"TransZ", "0"},
+                                {"RotX",   "90"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "180.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "27500.000000"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LABLAMP.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "1.05"},
+                                {"RotX",   "90"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "80.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "21000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.500000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.850000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = LABLAMP
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\LIGHTTABLE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.7"},
+                                {"RotX",   "90"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "180.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "13000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_R",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.500000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.8500000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = LIGHTTABLE
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\SMALLLIGHT.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0"},
+                                {"TransZ", "0.125"},
+                                {"RotX",   "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "10000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_R",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "1.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.880000"},
+                            }
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STANDINGLIGHT1.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransX", "0.32"},
+                                {"TransY", "2.65"},
+                                {"TransZ", "-0.28"},
+                                {"RotY",   "14"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "75.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "36000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","VOLUMETRIC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.010000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = STANDINGLIGHT1
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STANDINGLIGHT2.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransX", "0.32"},
+                                {"TransY", "2.58"},
+                                {"TransZ", "-0.167"},
+                                {"RotY",   "17"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "110.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "30000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1","Name","VOLUMETRIC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.010000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = STANDINGLIGHT2
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STANDINGLIGHT3.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight2",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransX", "0.05"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight2","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight2","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "35000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight2","Name","VOLUMETRIC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.025000"},
+                            }
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_BLUE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.1"},
+                                {"RotX",   "90"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "180.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "30000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.530000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "1.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.050000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = WALLLIGHT_BLUE
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_GREEN.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.1"},
+                                {"TransZ", "0"},
+                                {"RotX",   "90"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "180.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "25000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "1.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.270000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.050000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = WALLLIGHT_GREEN
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_PINK.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.1"},
+                                {"TransZ", "0"},
+                                {"RotX",   "90"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "180.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "25000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_R",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "1.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.730000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.050000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = WALLLIGHT_PINK
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_RED.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.1"},
+                                {"TransZ", "0"},
+                                {"RotX",   "90"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "180.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "25000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.220000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.200000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.050000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = WALLLIGHT_RED
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_WHITE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.1"},
+                                {"TransZ", "0"},
+                                {"RotX",   "90"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "180.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "17000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.075000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = WALLLIGHT_WHITE
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\WALLLIGHT_YELLOW.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.1"},
+                                {"TransZ", "0"},
+                                {"RotX",   "90"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FOV",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "180.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "25000.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_R",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "1.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.900000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","COL_B",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.100000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6","Name","VOLUMETRIC",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.050000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = WALLLIGHT_YELLOW
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\HANGLAMP0.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Datax"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = HANGLAMP0
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\HANGLAMP1.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "17500.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.98000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_B",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.95000"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\HANGLAMP2.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "22500.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.98000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_B",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.95000"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\BAZAAR\HANGLAMP3.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"TransY", "0.5"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","FALLOFF",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "linear"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","INTENSITY",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "4800.000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_G",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.98000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1","Name","COL_B",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "0.95000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lite1"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = HANGLAMP3
+                        },
+                    }
+                },
+            }
+        }
+    },
 }

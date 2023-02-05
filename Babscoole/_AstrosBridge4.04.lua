@@ -9,10 +9,10 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   = {},
 ["ADD_FILES"]       =
-	{
-		{
-			["FILE_DESTINATION"] = "MODELS\BIOROOM_FRAME.SCENE.EXML",
-			["FILE_CONTENT"] =
+    {
+        {
+            ["FILE_DESTINATION"] = "MODELS\BIOROOM_FRAME.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1226,10 +1226,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\BIOROOM_WALL.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\BIOROOM_WALL.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2487,10 +2487,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_BLUESTRIP.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_BLUESTRIP.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2804,10 +2804,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_FREIGHTERTILE.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3121,10 +3121,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_HORZAO.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3438,10 +3438,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_INTERIORPROPS.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -3755,11 +3755,11 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_SHIPMATCH.SCENE.EXML",
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_SHIPMATCH.SCENE.EXML",
 
-			["FILE_CONTENT"] =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4073,10 +4073,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\CUBEROOM_INNERWALL_UPHOLSTER.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4390,10 +4390,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\FLOORCORNER.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4452,10 +4452,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\FLOORTILING.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -4562,10 +4562,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\WALL_WHITETRIMGLASS.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5438,10 +5438,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIM_DARK.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -5918,10 +5918,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PARTS\WALLCURVED_WHITETRIMGLASS.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -6398,10 +6398,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\BIOROOM_CEILING_3.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\BIOROOM_CEILING_3.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -8652,10 +8652,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\BRIDGE_BACKWALL.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -9722,10 +9722,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CAPTAIN_CHAIR.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -10144,10 +10144,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CAPTAINBACKWALL.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CAPTAINBACKWALL.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -10230,10 +10230,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CIRCULARRAILING.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -10340,10 +10340,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\CURVEDRAILING.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -10999,10 +10999,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\FLATPANEL2.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\FLATPANEL2.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -11604,10 +11604,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\FLATPANEL3.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\FLATPANEL3.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -12209,10 +12209,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\GALAXYTERMINAL.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\GALAXYTERMINAL.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -25468,10 +25468,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\ORANGEMONITOR.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -26594,10 +26594,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\PILOT_STATION.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\PILOT_STATION.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -27088,10 +27088,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\PILOTTERMINAL.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -32148,10 +32148,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\STAIRS_RAILINGS.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\ASTROSBRIDGE\PROPS\STAIRS_RAILINGS.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -32450,10 +32450,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\BRIDGEDOORS\ANIMATEDDOOR.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\BRIDGEDOORS\ANIMATEDDOOR.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -34483,10 +34483,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -41434,10 +41434,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGETERMINAL.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -56717,10 +56717,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_FLOOR_TRI.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\METAL\BASIC_FLOOR_TRI.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -58351,10 +58351,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\ROOMS\SCANROOM\PARTS\FLOOR0\ENTITIES\SCANROOMINTERACTION.ENTITY.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -58471,6 +58471,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-	},
+        },
+    },
 }

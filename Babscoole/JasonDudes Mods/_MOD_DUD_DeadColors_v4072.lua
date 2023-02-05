@@ -364,43 +364,43 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\DEAD\\DEADCOLOURPALETTES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Sand", "GcPaletteData.xml"},
-								{"Dirt", "GcPaletteData.xml"},
-								{"RockSaturated", "GcPaletteData.xml"},
-								{"RockDark", "GcPaletteData.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "All"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Plant", "GcPaletteData.xml"},
-								{"Leaf", "GcPaletteData.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "Inactive"}
-							}
-						},
-					}
-				}
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\BIOMES\\DEAD\\DEADCOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Sand", "GcPaletteData.xml"},
+                                {"Dirt", "GcPaletteData.xml"},
+                                {"RockSaturated", "GcPaletteData.xml"},
+                                {"RockDark", "GcPaletteData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "All"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Plant", "GcPaletteData.xml"},
+                                {"Leaf", "GcPaletteData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "Inactive"}
+                            }
+                        },
+                    }
+                }
+            }
+        }
+    }
 }
 
 function GetColours(R,G,B,A)

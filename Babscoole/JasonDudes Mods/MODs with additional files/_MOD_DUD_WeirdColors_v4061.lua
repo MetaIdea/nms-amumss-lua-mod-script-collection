@@ -7,577 +7,577 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Beammat10","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDBEAMPARTICLES_MAT.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Beammat9","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDBEAMPARTICLES_MAT.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Beammat12","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDSCROLLING_MAT.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Beammat13","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDLIGHTBEAM_MAT3.MATERIAL.MBIN"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Beammat10","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDBEAMPARTICLES_MAT1.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Beammat9","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDBEAMPARTICLES_MAT1.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Beammat12","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDSCROLLING_MAT2.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Beammat13","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDLIGHTBEAM_MAT3.MATERIAL.MBIN"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HUGEBEAM.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","HugeBeamLOD0","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HUGEBEAM\DUDHUGEBEAM_MAT.MATERIAL.MBIN"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","_podEgg_GrowthLOD0","Name","MATERIAL"},
-								{"Name","_podEgg_GrowthLOD1","Name","MATERIAL"},
-								{"Name","_podEgg_GrowthLOD2","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOURDARKCREEP.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB2_podEgg_GrowthLOD0","Name","MATERIAL"},
-								{"Name","SUB2_podEgg_GrowthLOD1","Name","MATERIAL"},
-								{"Name","SUB2_podEgg_GrowthLOD2","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOUR2MAT.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB3_podEgg_GrowthLOD0","Name","MATERIAL"},
-								{"Name","SUB3_podEgg_GrowthLOD1","Name","MATERIAL"},
-								{"Name","SUB3_podEgg_GrowthLOD2","Name","MATERIAL"},
-								{"Name","_podEgg_NogrowthLOD0","Name","MATERIAL"},
-								{"Name","_podEgg_NogrowthLOD1","Name","MATERIAL"},
-								{"Name","_podEgg_NogrowthLOD2","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOUR1MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","Body_LOD0","Name","MATERIAL"},
-								{"Name","Body_LOD1","Name","MATERIAL"},
-								{"Name","Body_LOD2","Name","MATERIAL"},
-								{"Name","Body_LOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR1MAT.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB2_detail_hatchLOD0","Name","MATERIAL"},
-								{"Name","_detail_PipesLOD0","Name","MATERIAL"},
-								{"Name","SUB2_detail_hatchLOD1","Name","MATERIAL"},
-								{"Name","_detail_PipesLOD1","Name","MATERIAL"},
-								{"Name","SUB2_detail_hatchLOD2","Name","MATERIAL"},
-								{"Name","_detail_PipesLOD2","Name","MATERIAL"},
-								{"Name","SUB2_detail_hatchLOD3","Name","MATERIAL"},
-								{"Name","_detail_PipesLOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR2MAT.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB1_detail_hatchLOD0","Name","MATERIAL"},
-								{"Name","SUB1_detail_hatchLOD1","Name","MATERIAL"},
-								{"Name","SUB1_detail_hatchLOD2","Name","MATERIAL"},
-								{"Name","SUB1_detail_hatchLOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR3MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","Pod_LOD0","Name","MATERIAL"},
-								{"Name","Pod_LOD1","Name","MATERIAL"},
-								{"Name","Pod_LOD2","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR1MAT.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB1Pod_LOD0","Name","MATERIAL"},
-								{"Name","Mesh_LOD0","Name","MATERIAL"},
-								{"Name","SUB1Pod_LOD1","Name","MATERIAL"},
-								{"Name","_Pipes_PipesLOD1","Name","MATERIAL"},
-								{"Name","SUB1Pod_LOD2","Name","MATERIAL"},
-								{"Name","Mesh_LOD2","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR2MAT.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB2Pod_LOD0","Name","MATERIAL"},
-								{"Name","SUB1Mesh_LOD0","Name","MATERIAL"},
-								{"Name","SUB2Pod_LOD1","Name","MATERIAL"},
-								{"Name","SUB1Mesh_LOD1","Name","MATERIAL"},
-								{"Name","SUB2Pod_LOD2","Name","MATERIAL"},
-								{"Name","SUB1Mesh_LOD2","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR3MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","ContourTower_LOD0","Name","MATERIAL"},
-								{"Name","ContourTower_LOD1","Name","MATERIAL"},
-								{"Name","ContourTower_LOD2","Name","MATERIAL"},
-								{"Name","ContourTower_LOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURORBMAT.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB1ContourTower_LOD0","Name","MATERIAL"},
-								{"Name","SUB1ContourTower_LOD1","Name","MATERIAL"},
-								{"Name","SUB1ContourTower_LOD2","Name","MATERIAL"},
-								{"Name","SUB1ContourTower_LOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARKRIBBED.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB2ContourTower_LOD0","Name","MATERIAL"},
-								{"Name","SUB2ContourTower_LOD1","Name","MATERIAL"},
-								{"Name","SUB2ContourTower_LOD2","Name","MATERIAL"},
-								{"Name","SUB2ContourTower_LOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARK.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB4ContourTower_LOD0","Name","MATERIAL"},
-								{"Name","SUB4ContourTower_LOD1","Name","MATERIAL"},
-								{"Name","SUB4ContourTower_LOD2","Name","MATERIAL"},
-								{"Name","SUB4ContourTower_LOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARKCREEP.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB5ContourTower_LOD0","Name","MATERIAL"},
-								{"Name","SUB5ContourTower_LOD1","Name","MATERIAL"},
-								{"Name","SUB5ContourTower_LOD2","Name","MATERIAL"},
-								{"Name","SUB5ContourTower_LOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURRIBBEDCREEP.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB6ContourTower_LOD0","Name","MATERIAL"},
-								{"Name","SUB6ContourTower_LOD1","Name","MATERIAL"},
-								{"Name","SUB6ContourTower_LOD2","Name","MATERIAL"},
-								{"Name","SUB6ContourTower_LOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURLIGHTCREEP.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB7ContourTower_LOD0","Name","MATERIAL"},
-								{"Name","SUB7ContourTower_LOD1","Name","MATERIAL"},
-								{"Name","SUB7ContourTower_LOD2","Name","MATERIAL"},
-								{"Name","SUB7ContourTower_LOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOUR3MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\FRACTALCUBE\SHAPE1FLOAT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SUB2Shape1FloatLOD0","Name","MATERIAL"},
-								{"Name","SUB2Shape1FloatLOD1","Name","MATERIAL"},
-								{"Name","SUB2Shape1FloatLOD2","Name","MATERIAL"},
-								{"Name","SUB2Shape1FloatLOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\FRACTALCUBE\SHAPE1FLOAT\DUDPULSEFLARE_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","BaseLOD0","Name","MATERIAL"},
-								{"Name","BaseLOD1","Name","MATERIAL"},
-								{"Name","BaseLOD2","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC\DUDLIGHTMATERIAL_MAT.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SmallVinesLOD0","Name","MATERIAL"},
-								{"Name","SmallVinesLOD1","Name","MATERIAL"},
-								{"Name","SmallVinesLOD2","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC\DUDSMALLVINES_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","Vines_mat","Name","MATERIAL"},
-								{"Name","Vines_mat2","Name","MATERIAL"},
-								{"Name","Vines_mat3","Name","MATERIAL"},
-								{"Name","Vines_mat4","Name","MATERIAL"},
-								{"Name","Vines_mat5","Name","MATERIAL"},
-								{"Name","Vines_mat6","Name","MATERIAL"},
-								{"Name","Vines_mat7","Name","MATERIAL"},
-								{"Name","Vines_mat8","Name","MATERIAL"},
-								{"Name","Vines_mat9","Name","MATERIAL"},
-								{"Name","Vines_mat10","Name","MATERIAL"},
-								{"Name","Vines_mat11","Name","MATERIAL"},
-								{"Name","Vines_mat1","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT\DUDVINES_MAT12.MATERIAL.MBIN"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","SmallVines13","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT\DUDSMALLVINES_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\MEDGEOMETRIC.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","MedGeometricLOD0","Name","MATERIAL"},
-								{"Name","MedGeometricLOD1","Name","MATERIAL"},
-								{"Name","MedGeometricLOD2","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\MEDGEOMETRIC\DUDLIGHTMATERIAL_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\FLOATJOINT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","FloatJointLOD0","Name","MATERIAL"},
-								{"Name","FloatJointLOD1","Name","MATERIAL"},
-								{"Name","FloatJointLOD2","Name","MATERIAL"},
-								{"Name","FloatJointLOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\FLOATJOINT\DUDFLOAT_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","MStructureLOD0","Name","MATERIAL"},
-								{"Name","MStructureLOD1","Name","MATERIAL"},
-								{"Name","MStructureLOD2","Name","MATERIAL"},
-								{"Name","MStructureLOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE\DUDMSTRUCTURE_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SINGLEJOINT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SingleJointLOD0","Name","MATERIAL"},
-								{"Name","SingleJointLOD1","Name","MATERIAL"},
-								{"Name","SingleJointLOD2","Name","MATERIAL"},
-								{"Name","SingleJointLOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SINGLEJOINT\DUDMSTRUCTURE_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SMALLJOINT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","SmallJointLOD0","Name","MATERIAL"},
-								{"Name","SmallJointLOD1","Name","MATERIAL"},
-								{"Name","SmallJointLOD2","Name","MATERIAL"},
-								{"Name","SmallJointLOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SMALLJOINT\DUDMSTRUCTURE_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARD.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","LargeLOD0","Name","MATERIAL"},
-								{"Name","LargeLOD1","Name","MATERIAL"},
-								{"Name","LargeLOD2","Name","MATERIAL"},
-								{"Name","LargeLOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARD\DUDSHARD_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARDALT.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","ShardAlt","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARDALT\DUDSHARD_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SINGLESHARD.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","SingleShard","Name","MATERIAL"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SINGLESHARD\DUDSHARD_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\TALLSHARD.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","TallShard2LOD0","Name","MATERIAL"},
-								{"Name","TallShard2LOD1","Name","MATERIAL"},
-								{"Name","TallShard2LOD2","Name","MATERIAL"},
-								{"Name","TallShard2LOD3","Name","MATERIAL"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\TALLSHARD\DUDSHARD_MAT.MATERIAL.MBIN"}
-							}
-						},
-					}
-				},
-			}
-		},
-	},
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat10","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDBEAMPARTICLES_MAT.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat9","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDBEAMPARTICLES_MAT.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat12","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDSCROLLING_MAT.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat13","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDLIGHTBEAM_MAT3.MATERIAL.MBIN"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat10","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDBEAMPARTICLES_MAT1.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat9","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDBEAMPARTICLES_MAT1.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat12","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDSCROLLING_MAT2.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Beammat13","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDLIGHTBEAM_MAT3.MATERIAL.MBIN"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HUGEBEAM.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","HugeBeamLOD0","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HUGEBEAM\DUDHUGEBEAM_MAT.MATERIAL.MBIN"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","_podEgg_GrowthLOD0","Name","MATERIAL"},
+                                {"Name","_podEgg_GrowthLOD1","Name","MATERIAL"},
+                                {"Name","_podEgg_GrowthLOD2","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOURDARKCREEP.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB2_podEgg_GrowthLOD0","Name","MATERIAL"},
+                                {"Name","SUB2_podEgg_GrowthLOD1","Name","MATERIAL"},
+                                {"Name","SUB2_podEgg_GrowthLOD2","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOUR2MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB3_podEgg_GrowthLOD0","Name","MATERIAL"},
+                                {"Name","SUB3_podEgg_GrowthLOD1","Name","MATERIAL"},
+                                {"Name","SUB3_podEgg_GrowthLOD2","Name","MATERIAL"},
+                                {"Name","_podEgg_NogrowthLOD0","Name","MATERIAL"},
+                                {"Name","_podEgg_NogrowthLOD1","Name","MATERIAL"},
+                                {"Name","_podEgg_NogrowthLOD2","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOUR1MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","Body_LOD0","Name","MATERIAL"},
+                                {"Name","Body_LOD1","Name","MATERIAL"},
+                                {"Name","Body_LOD2","Name","MATERIAL"},
+                                {"Name","Body_LOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR1MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB2_detail_hatchLOD0","Name","MATERIAL"},
+                                {"Name","_detail_PipesLOD0","Name","MATERIAL"},
+                                {"Name","SUB2_detail_hatchLOD1","Name","MATERIAL"},
+                                {"Name","_detail_PipesLOD1","Name","MATERIAL"},
+                                {"Name","SUB2_detail_hatchLOD2","Name","MATERIAL"},
+                                {"Name","_detail_PipesLOD2","Name","MATERIAL"},
+                                {"Name","SUB2_detail_hatchLOD3","Name","MATERIAL"},
+                                {"Name","_detail_PipesLOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR2MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB1_detail_hatchLOD0","Name","MATERIAL"},
+                                {"Name","SUB1_detail_hatchLOD1","Name","MATERIAL"},
+                                {"Name","SUB1_detail_hatchLOD2","Name","MATERIAL"},
+                                {"Name","SUB1_detail_hatchLOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR3MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","Pod_LOD0","Name","MATERIAL"},
+                                {"Name","Pod_LOD1","Name","MATERIAL"},
+                                {"Name","Pod_LOD2","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR1MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB1Pod_LOD0","Name","MATERIAL"},
+                                {"Name","Mesh_LOD0","Name","MATERIAL"},
+                                {"Name","SUB1Pod_LOD1","Name","MATERIAL"},
+                                {"Name","_Pipes_PipesLOD1","Name","MATERIAL"},
+                                {"Name","SUB1Pod_LOD2","Name","MATERIAL"},
+                                {"Name","Mesh_LOD2","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR2MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB2Pod_LOD0","Name","MATERIAL"},
+                                {"Name","SUB1Mesh_LOD0","Name","MATERIAL"},
+                                {"Name","SUB2Pod_LOD1","Name","MATERIAL"},
+                                {"Name","SUB1Mesh_LOD1","Name","MATERIAL"},
+                                {"Name","SUB2Pod_LOD2","Name","MATERIAL"},
+                                {"Name","SUB1Mesh_LOD2","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR3MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","ContourTower_LOD0","Name","MATERIAL"},
+                                {"Name","ContourTower_LOD1","Name","MATERIAL"},
+                                {"Name","ContourTower_LOD2","Name","MATERIAL"},
+                                {"Name","ContourTower_LOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURORBMAT.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB1ContourTower_LOD0","Name","MATERIAL"},
+                                {"Name","SUB1ContourTower_LOD1","Name","MATERIAL"},
+                                {"Name","SUB1ContourTower_LOD2","Name","MATERIAL"},
+                                {"Name","SUB1ContourTower_LOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARKRIBBED.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB2ContourTower_LOD0","Name","MATERIAL"},
+                                {"Name","SUB2ContourTower_LOD1","Name","MATERIAL"},
+                                {"Name","SUB2ContourTower_LOD2","Name","MATERIAL"},
+                                {"Name","SUB2ContourTower_LOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARK.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB4ContourTower_LOD0","Name","MATERIAL"},
+                                {"Name","SUB4ContourTower_LOD1","Name","MATERIAL"},
+                                {"Name","SUB4ContourTower_LOD2","Name","MATERIAL"},
+                                {"Name","SUB4ContourTower_LOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARKCREEP.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB5ContourTower_LOD0","Name","MATERIAL"},
+                                {"Name","SUB5ContourTower_LOD1","Name","MATERIAL"},
+                                {"Name","SUB5ContourTower_LOD2","Name","MATERIAL"},
+                                {"Name","SUB5ContourTower_LOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURRIBBEDCREEP.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB6ContourTower_LOD0","Name","MATERIAL"},
+                                {"Name","SUB6ContourTower_LOD1","Name","MATERIAL"},
+                                {"Name","SUB6ContourTower_LOD2","Name","MATERIAL"},
+                                {"Name","SUB6ContourTower_LOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURLIGHTCREEP.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB7ContourTower_LOD0","Name","MATERIAL"},
+                                {"Name","SUB7ContourTower_LOD1","Name","MATERIAL"},
+                                {"Name","SUB7ContourTower_LOD2","Name","MATERIAL"},
+                                {"Name","SUB7ContourTower_LOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOUR3MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\FRACTALCUBE\SHAPE1FLOAT.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SUB2Shape1FloatLOD0","Name","MATERIAL"},
+                                {"Name","SUB2Shape1FloatLOD1","Name","MATERIAL"},
+                                {"Name","SUB2Shape1FloatLOD2","Name","MATERIAL"},
+                                {"Name","SUB2Shape1FloatLOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\FRACTALCUBE\SHAPE1FLOAT\DUDPULSEFLARE_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","BaseLOD0","Name","MATERIAL"},
+                                {"Name","BaseLOD1","Name","MATERIAL"},
+                                {"Name","BaseLOD2","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC\DUDLIGHTMATERIAL_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SmallVinesLOD0","Name","MATERIAL"},
+                                {"Name","SmallVinesLOD1","Name","MATERIAL"},
+                                {"Name","SmallVinesLOD2","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC\DUDSMALLVINES_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","Vines_mat","Name","MATERIAL"},
+                                {"Name","Vines_mat2","Name","MATERIAL"},
+                                {"Name","Vines_mat3","Name","MATERIAL"},
+                                {"Name","Vines_mat4","Name","MATERIAL"},
+                                {"Name","Vines_mat5","Name","MATERIAL"},
+                                {"Name","Vines_mat6","Name","MATERIAL"},
+                                {"Name","Vines_mat7","Name","MATERIAL"},
+                                {"Name","Vines_mat8","Name","MATERIAL"},
+                                {"Name","Vines_mat9","Name","MATERIAL"},
+                                {"Name","Vines_mat10","Name","MATERIAL"},
+                                {"Name","Vines_mat11","Name","MATERIAL"},
+                                {"Name","Vines_mat1","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT\DUDVINES_MAT12.MATERIAL.MBIN"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","SmallVines13","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT\DUDSMALLVINES_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\MEDGEOMETRIC.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","MedGeometricLOD0","Name","MATERIAL"},
+                                {"Name","MedGeometricLOD1","Name","MATERIAL"},
+                                {"Name","MedGeometricLOD2","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\MEDGEOMETRIC\DUDLIGHTMATERIAL_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\FLOATJOINT.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","FloatJointLOD0","Name","MATERIAL"},
+                                {"Name","FloatJointLOD1","Name","MATERIAL"},
+                                {"Name","FloatJointLOD2","Name","MATERIAL"},
+                                {"Name","FloatJointLOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\FLOATJOINT\DUDFLOAT_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","MStructureLOD0","Name","MATERIAL"},
+                                {"Name","MStructureLOD1","Name","MATERIAL"},
+                                {"Name","MStructureLOD2","Name","MATERIAL"},
+                                {"Name","MStructureLOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE\DUDMSTRUCTURE_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SINGLEJOINT.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SingleJointLOD0","Name","MATERIAL"},
+                                {"Name","SingleJointLOD1","Name","MATERIAL"},
+                                {"Name","SingleJointLOD2","Name","MATERIAL"},
+                                {"Name","SingleJointLOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SINGLEJOINT\DUDMSTRUCTURE_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SMALLJOINT.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","SmallJointLOD0","Name","MATERIAL"},
+                                {"Name","SmallJointLOD1","Name","MATERIAL"},
+                                {"Name","SmallJointLOD2","Name","MATERIAL"},
+                                {"Name","SmallJointLOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SMALLJOINT\DUDMSTRUCTURE_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARD.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","LargeLOD0","Name","MATERIAL"},
+                                {"Name","LargeLOD1","Name","MATERIAL"},
+                                {"Name","LargeLOD2","Name","MATERIAL"},
+                                {"Name","LargeLOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARD\DUDSHARD_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARDALT.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","ShardAlt","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARDALT\DUDSHARD_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SINGLESHARD.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","SingleShard","Name","MATERIAL"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SINGLESHARD\DUDSHARD_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\TALLSHARD.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","TallShard2LOD0","Name","MATERIAL"},
+                                {"Name","TallShard2LOD1","Name","MATERIAL"},
+                                {"Name","TallShard2LOD2","Name","MATERIAL"},
+                                {"Name","TallShard2LOD3","Name","MATERIAL"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\PLANETS\BIOMES\WEIRD\SHARDS\TALLSHARD\DUDSHARD_MAT.MATERIAL.MBIN"}
+                            }
+                        },
+                    }
+                },
+            }
+        },
+    },
 ["ADD_FILES"] =
-	{
-		{
+    {
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDBEAMPARTICLES_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -691,8 +691,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDLIGHTBEAM_MAT3.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -800,8 +800,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\BEAMSTONE\DUDSCROLLING_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -915,8 +915,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDBEAMPARTICLES_MAT1.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -1030,8 +1030,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDLIGHTBEAM_MAT3.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -1139,8 +1139,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HOVERING\DUDSCROLLING_MAT2.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -1254,8 +1254,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\HUGEBEAM\DUDHUGEBEAM_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -1442,8 +1442,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOUR1MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -1562,8 +1562,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOUR2MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -1682,8 +1682,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURDETAIL\DUDCONTOURDARKCREEP.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -1875,8 +1875,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR1MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -1992,8 +1992,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR2MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -2109,8 +2109,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOUROBJECT\DUDCONTOUR3MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -2226,8 +2226,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR1MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -2343,8 +2343,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR2MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -2460,8 +2460,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURPOD\DUDCONTOUR3MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -2577,8 +2577,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOUR3MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -2697,8 +2697,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARK.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -2880,8 +2880,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARKCREEP.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -3073,8 +3073,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURDARKRIBBED.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -3256,8 +3256,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURLIGHTCREEP.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -3449,8 +3449,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURORBMAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -3632,8 +3632,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\CONTOUR\CONTOURTOWER\DUDCONTOURRIBBEDCREEP.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -3825,8 +3825,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\FRACTALCUBE\SHAPE1FLOAT\DUDPULSEFLARE_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -3940,8 +3940,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC\DUDLIGHTMATERIAL_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -4062,8 +4062,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\GEOMETRIC\DUDSMALLVINES_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -4174,8 +4174,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT\DUDSMALLVINES_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -4286,8 +4286,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\HUGEOBJECT\DUDVINES_MAT12.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -4471,8 +4471,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\HEXAGON\MEDGEOMETRIC\DUDLIGHTMATERIAL_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -4593,8 +4593,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\FLOATJOINT\DUDFLOAT_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -4776,8 +4776,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE\DUDMSTRUCTURE_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -4893,8 +4893,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SINGLEJOINT\DUDMSTRUCTURE_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -5010,8 +5010,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\SMALLJOINT\DUDMSTRUCTURE_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -5127,8 +5127,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARD\DUDSHARD_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -5323,8 +5323,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SHARDALT\DUDSHARD_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -5519,8 +5519,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\SHARDS\SINGLESHARD\DUDSHARD_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -5649,8 +5649,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\PLANETS\BIOMES\WEIRD\SHARDS\TALLSHARD\DUDSHARD_MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -5845,6 +5845,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-	},
+        },
+    },
 }

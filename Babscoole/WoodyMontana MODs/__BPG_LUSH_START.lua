@@ -6,18 +6,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["NMS_VERSION"]   = "4.08",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMEFILENAMES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Lush","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\BIOMEFILENAMES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Lush","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -41,85 +41,85 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="6" />
         </Property>
 ]]
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENHQBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENHQBIOME.MXML"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Weight", "0.25"},
-							},
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMABIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROCKYBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROCKYWEIRDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQTENTACLEBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBUBBLESBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHINFESTEDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPBIOME.MXML"},--
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICSPORESBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICEGGSBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICROCKYBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICTENTACLESBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICINFESTEDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDSHIELDTREEBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHCORALBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHINFESTEDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVEGLOWBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOSPIKECRYSTALSBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOINFESTEDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENPILLARBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENROCKYWEIRDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENINFESTEDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENROCKYBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENROCKYWEIRDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENCORALBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENINFESTEDBIOME.MXML"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Weight", "0.5"},
-							},
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBIGPROPSBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICBIGPROPSBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHBIGPROPSBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOBIGPROPSBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENBIGPROPSBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENBIGPROPSBIOME.MXML"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Weight", "0.8"},
-							},
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADFROZENBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADFROZENWEIRDBIOME.MXML"},
-								{"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADBIGPROPSBIOME.MXML"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Weight", "1"},
-							},
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Toxic","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENHQBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENHQBIOME.MXML"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Weight", "0.25"},
+                            },
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMABIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROOMBBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROCKYBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHROCKYWEIRDBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHHQTENTACLEBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBUBBLESBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHINFESTEDBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPBIOME.MXML"},--
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICSPORESBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICEGGSBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICROCKYBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICTENTACLESBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICINFESTEDBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDSHIELDTREEBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHCORALBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHINFESTEDBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVEGLOWBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOSPIKECRYSTALSBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOINFESTEDBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENPILLARBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENROCKYWEIRDBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENINFESTEDBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENROCKYBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENROCKYWEIRDBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENCORALBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENINFESTEDBIOME.MXML"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Weight", "0.5"},
+                            },
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHBIGPROPSBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICBIGPROPSBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHBIGPROPSBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOBIGPROPSBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENBIGPROPSBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENBIGPROPSBIOME.MXML"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Weight", "0.8"},
+                            },
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADFROZENBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADFROZENWEIRDBIOME.MXML"},
+                                {"Filename", "METADATA/SIMULATION/SOLARSYSTEM/BIOMES/DEAD/DEADBIGPROPSBIOME.MXML"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Weight", "1"},
+                            },
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Toxic","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -143,11 +143,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="6" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Scorched","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Scorched","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -171,11 +171,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="6" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Radioactive","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Radioactive","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -199,15 +199,15 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="6" />
         </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVERUINSBIOME.MXML"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Frozen","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/RADIOACTIVE/RADIOACTIVERUINSBIOME.MXML"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Frozen","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -231,11 +231,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="6" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Barren","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Barren","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -259,11 +259,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="6" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Dead","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Dead","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -294,11 +294,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="3" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Red","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Red","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -357,11 +357,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="2" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Green","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Green","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -420,11 +420,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="2" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Blue","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Blue","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -483,11 +483,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="2" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Swamp","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Swamp","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -497,12 +497,12 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="0" />
         </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPBIOME.MXML"},
-							["SECTION_ACTIVE"] = 2,
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SWAMP/SWAMPBIOME.MXML"},
+                            ["SECTION_ACTIVE"] = 2,
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -519,11 +519,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="3" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Lava","FileOptions"},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Lava","FileOptions"},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -533,12 +533,12 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="0" />
         </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LAVA/LAVABIOME.MXML"},
-							["SECTION_ACTIVE"] = 2,
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Filename","METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LAVA/LAVABIOME.MXML"},
+                            ["SECTION_ACTIVE"] = 2,
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
@@ -555,43 +555,43 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Weight" value="3" />
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Biome", "Scorched"},
-								{"Biome", "Radioactive"},
-								{"Biome", "Frozen"},
-							},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["PRECEDING_FIRST"] = "TRUE",
-							["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Biome", "Lush"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"SeasonalProbabilityOverride", "0"},
-								{"AllowLimiting",               "False"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
-							["PRECEDING_KEY_WORDS"] = {"Options"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND","ChooseUsingLifeLevel","False",},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Biome", "Scorched"},
+                                {"Biome", "Radioactive"},
+                                {"Biome", "Frozen"},
+                            },
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["PRECEDING_FIRST"] = "TRUE",
+                            ["PRECEDING_KEY_WORDS"] = {"ValidStartPlanetBiome"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Biome", "Lush"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SeasonalProbabilityOverride", "0"},
+                                {"AllowLimiting",               "False"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND"},
+                            ["PRECEDING_KEY_WORDS"] = {"Options"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERGROUND","ChooseUsingLifeLevel","False",},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
       <Property name="Options">
         <Property value="NMSString0x80.xml">
@@ -824,24 +824,24 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"SeasonalProbabilityOverride", "0"},
-								{"AllowLimiting",               "False"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER"},
-							["PRECEDING_KEY_WORDS"] = {"Options"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER","ChooseUsingLifeLevel","False",},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SeasonalProbabilityOverride", "0"},
+                                {"AllowLimiting",               "False"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER"},
+                            ["PRECEDING_KEY_WORDS"] = {"Options"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","UNDERWATER","ChooseUsingLifeLevel","False",},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
       <Property name="Options">
         <Property value="NMSString0x80.xml">
@@ -1409,19 +1409,19 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"SeasonalProbabilityOverride", "0"},
-								{"AllowLimiting",               "False"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SeasonalProbabilityOverride", "0"},
+                                {"AllowLimiting",               "False"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","MOUNTAIN"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="GcExternalObjectListOptions.xml">
       <Property name="Name" value="ROCK" />
@@ -1444,23 +1444,23 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"SeasonalProbabilityOverride", "0"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE"},
-							["PRECEDING_KEY_WORDS"] = {"Options"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE","ChooseUsingLifeLevel","False",},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SeasonalProbabilityOverride", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE"},
+                            ["PRECEDING_KEY_WORDS"] = {"Options"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","CRYSTALSCAVE","ChooseUsingLifeLevel","False",},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
       <Property name="Options">
         <Property value="NMSString0x80.xml">
@@ -1511,74 +1511,74 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]]
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Id", "VALUABLE_STUFF"},
-								{"Id", "STORMCRYSTALS"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ForceOnSeasonStart", "False"},
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name", "PROC_SALVAGE"},
-								{"Name", "PROC_BONES"},
-								{"Name", "WATER_HAZ"},
-								{"Name", "CAVECUBES"},
-								{"Name", "CAVEEGGS"},
-								{"Name", "CLAM"},
-								{"Name", "TENTACLE"},
-								{"Name", "GEMS"},--
-								{"Name", "PHYSICSSPOREPRO"},
-								{"Name", "FLOATINGPROPS"},
-								{"Name", "RARECRYSTALPROP"},
-								{"Name", "PROXIMITY"},
-								{"Name", "URCHIN"},
-								{"Name", "METAL"},
-								{"Name", "PHYSICS"},
-								{"Name", "FARMSNOW"},
-								{"Name", "WILDSNOW"},
-								{"Name", "FARMTOXIC"},
-								{"Name", "WILDTOXIC"},
-								{"Name", "FARMSCORCHED"},
-								{"Name", "WILDSCORCH"},
-								{"Name", "FARMRADIOACTIVE"},
-								{"Name", "WILDRADIO"},
-								{"Name", "FARMBARREN"},
-								{"Name", "WILDBARREN"},
-								{"Name", "FARMLUSH"},
-								{"Name", "WILDLUSH"},
-								{"Name", "ALLWILDFULL"},
-								{"Name", "NAVDATA"},
-								{"Name", "RAREROCKS"},
-								{"Name", "PLANTCROP"},
-								{"Name", "FIENDEGGS"},
-								{"Name", "CRYSTALPROPS"},
-								{"Name", "BURIED_EXTRAS"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"SeasonalProbabilityOverride", "0"},
-								{"AllowLimiting",               "False"},
-							},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","WILDWEIRD"},
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"SeasonalProbabilityOverride", "0"},
-								{"AllowLimiting",               "False"},
-							}
-						},
-					}
-				},
-			}
-		},
-	}
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Id", "VALUABLE_STUFF"},
+                                {"Id", "STORMCRYSTALS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ForceOnSeasonStart", "False"},
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name", "PROC_SALVAGE"},
+                                {"Name", "PROC_BONES"},
+                                {"Name", "WATER_HAZ"},
+                                {"Name", "CAVECUBES"},
+                                {"Name", "CAVEEGGS"},
+                                {"Name", "CLAM"},
+                                {"Name", "TENTACLE"},
+                                {"Name", "GEMS"},--
+                                {"Name", "PHYSICSSPOREPRO"},
+                                {"Name", "FLOATINGPROPS"},
+                                {"Name", "RARECRYSTALPROP"},
+                                {"Name", "PROXIMITY"},
+                                {"Name", "URCHIN"},
+                                {"Name", "METAL"},
+                                {"Name", "PHYSICS"},
+                                {"Name", "FARMSNOW"},
+                                {"Name", "WILDSNOW"},
+                                {"Name", "FARMTOXIC"},
+                                {"Name", "WILDTOXIC"},
+                                {"Name", "FARMSCORCHED"},
+                                {"Name", "WILDSCORCH"},
+                                {"Name", "FARMRADIOACTIVE"},
+                                {"Name", "WILDRADIO"},
+                                {"Name", "FARMBARREN"},
+                                {"Name", "WILDBARREN"},
+                                {"Name", "FARMLUSH"},
+                                {"Name", "WILDLUSH"},
+                                {"Name", "ALLWILDFULL"},
+                                {"Name", "NAVDATA"},
+                                {"Name", "RAREROCKS"},
+                                {"Name", "PLANTCROP"},
+                                {"Name", "FIENDEGGS"},
+                                {"Name", "CRYSTALPROPS"},
+                                {"Name", "BURIED_EXTRAS"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SeasonalProbabilityOverride", "0"},
+                                {"AllowLimiting",               "False"},
+                            },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","WILDWEIRD"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SeasonalProbabilityOverride", "0"},
+                                {"AllowLimiting",               "False"},
+                            }
+                        },
+                    }
+                },
+            }
+        },
+    }
 }

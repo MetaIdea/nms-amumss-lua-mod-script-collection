@@ -792,45 +792,45 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]      = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Rock", "GcPaletteData.xml"},
-								{"Stone", "GcPaletteData.xml"},
-								{"RockSaturated", "GcPaletteData.xml"},
-								{"RockLight", "GcPaletteData.xml"},
-								{"RockDark", "GcPaletteData.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "_16"}
-							}
-						},
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Plant", "GcPaletteData.xml"},
-								{"Leaf", "GcPaletteData.xml"},
-								{"PlanetRing", "GcPaletteData.xml"},
-							},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "All"}
-							}
-						},
-					}
-				}
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Rock", "GcPaletteData.xml"},
+                                {"Stone", "GcPaletteData.xml"},
+                                {"RockSaturated", "GcPaletteData.xml"},
+                                {"RockLight", "GcPaletteData.xml"},
+                                {"RockDark", "GcPaletteData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "_16"}
+                            }
+                        },
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Plant", "GcPaletteData.xml"},
+                                {"Leaf", "GcPaletteData.xml"},
+                                {"PlanetRing", "GcPaletteData.xml"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "All"}
+                            }
+                        },
+                    }
+                }
+            }
+        }
+    }
 }
 
 function GetColours(R,G,B,A)

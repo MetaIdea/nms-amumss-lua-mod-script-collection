@@ -7,71 +7,71 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["FOREACH_SKW_GROUP"] =
-							{
-								{"Name","CenterJoint",},
-								{"Name","scrollingwaveBALT",},
-								{"Name","FarColLight",},
-								{"Name","gradientCloudBAlt",},
-								{"Name","LightArmsBlack1",},
-								{"Name","LightStreaks1",},
-								{"Name","FarLight",},
-							},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lights1","Name","MATERIAL"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHTUNNELMAT1.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lights2","Name","MATERIAL"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARSMAT.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lights3","Name","MATERIAL"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARS2MAT.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","Lights5","Name","MATERIAL"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARS2MAT.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","LightStreaks","Name","MATERIAL"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHLIGHTARMSMAT.MATERIAL.MBIN"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","LightStreaksSmall1"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Name","CenterJoint",},
+                                {"Name","scrollingwaveBALT",},
+                                {"Name","FarColLight",},
+                                {"Name","gradientCloudBAlt",},
+                                {"Name","LightArmsBlack1",},
+                                {"Name","LightStreaks1",},
+                                {"Name","FarLight",},
+                            },
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lights1","Name","MATERIAL"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHTUNNELMAT1.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lights2","Name","MATERIAL"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARSMAT.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lights3","Name","MATERIAL"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARS2MAT.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","Lights5","Name","MATERIAL"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARS2MAT.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","LightStreaks","Name","MATERIAL"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHLIGHTARMSMAT.MATERIAL.MBIN"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","LightStreaksSmall1"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="REFDUDDUMMYWARPTUNNEL" />
@@ -98,15 +98,15 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Children" />
     </Property>
 ]]
-						},
-					}
-				},
-			}
-		},
-	},
+                        },
+                    }
+                },
+            }
+        },
+    },
 ["ADD_FILES"] =
-	{
-		{
+    {
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\DUDDUMMYWARPTUNNEL.SCENE.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -391,8 +391,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPLARGEPORTAL.SCENE.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -4483,8 +4483,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPPORTAL.SCENE.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -8699,8 +8699,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNEL.SCENE.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -12667,8 +12667,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARS2MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -12789,8 +12789,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPLARGEPORTAL\DUDLPORTSLOWSTARSMAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -12911,8 +12911,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARS2MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -13033,8 +13033,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPPORTAL\DUDPORTSLOWSTARSMAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -13155,8 +13155,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNEL\DUDENGGLOWCAPMAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -13242,8 +13242,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPLIGHTARMSREDMAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -13354,8 +13354,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="-3617986119054334785" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARS2MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -13476,8 +13476,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPSLOWSTARSMAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -13598,8 +13598,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNEL\DUDWARPTUNNELMAT1.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -13720,8 +13720,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHLIGHTARMSMAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -13832,8 +13832,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="-22589930996254546" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARS2MAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -13954,8 +13954,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARSMAT.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -14076,8 +14076,8 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-		{
+        },
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHTUNNELMAT1.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -14198,6 +14198,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-	},
+        },
+    },
 }

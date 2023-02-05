@@ -6,18 +6,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["NMS_VERSION"]     = "3.99.1",
 ["MOD_DESCRIPTION"] = "Changes the design of freighter bridges.",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ENVIRONMENT\SELECTABLEOBJECTTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","NEWCROSSGRASS",},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\ENVIRONMENT\SELECTABLEOBJECTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","NEWCROSSGRASS",},
+                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="GcSelectableObjectList.xml">
       <Property name="Name" value="GLOBES" />
@@ -84,36 +84,36 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Type","MODEL",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NameHash", "0"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","NUMLODS",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Value", "1"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Children",},
-							["SECTION_ACTIVE"] = {1,},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Attributes",},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] =
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\COMMON\SPACECRAFT\COMMONPARTS\HANGARINTERIORPARTS\BRIDGE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Type","MODEL",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NameHash", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","NUMLODS",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Value", "1"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Children",},
+                            ["SECTION_ACTIVE"] = {1,},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Attributes",},
+                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD"] =
 [[
   <Property name="Children">
     <Property value="TkSceneNodeData.xml">
@@ -142,18 +142,18 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
 ]]
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACECRAFT\FREIGHTERTELEPORTER.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"TkSceneNodeData.xml",},
-							["SECTION_ACTIVE"] = {4,},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\EFFECTS\SPACECRAFT\FREIGHTERTELEPORTER.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TkSceneNodeData.xml",},
+                            ["SECTION_ACTIVE"] = {4,},
+                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Door_Cover" />
@@ -180,18 +180,18 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Children" />
     </Property>
 ]]
-						},
-					}
-				},
-			}
-		}
-	},
+                        },
+                    }
+                },
+            }
+        }
+    },
 
 ["ADD_FILES"] =
-	{
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\CORRIDOR.SCENE.EXML",
-			["FILE_CONTENT"] =
+    {
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\CORRIDOR.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -467,10 +467,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\JJSBRIDGE.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\JJSBRIDGE.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -1893,10 +1893,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\NPCS.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\NPCS.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -2268,10 +2268,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\BRIDGETERMINAL.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\BRIDGETERMINAL.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -15455,10 +15455,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -15772,10 +15772,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\CUBEROOM_INNERWALL2.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -16089,11 +16089,11 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\GLOBES.SCENE.EXML",
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\GLOBES.SCENE.EXML",
 
-			["FILE_CONTENT"] =
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -18196,10 +18196,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\MAINROOMEDIT.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\MAINROOMEDIT.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -18855,10 +18855,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\SHADOWMESH.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\SHADOWMESH.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -19017,10 +19017,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\TELEPORTER.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\TELEPORTER.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -20786,10 +20786,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\TURRETA.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\TURRETA.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -22246,10 +22246,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\BREAKABLES\WALLMONITORA.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -25712,10 +25712,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\LIGHTS\LIGHTS_LOCATOR.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -25862,10 +25862,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\PROPS\PROPS.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\PROPS\PROPS.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -26141,10 +26141,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\PROPS\SOFA_PLANTPOTS.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -26256,10 +26256,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\PROPS\WALLDESKS.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\PROPS\WALLDESKS.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -26438,10 +26438,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\GALAXY.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\GALAXY.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -26500,10 +26500,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOCOMBAT.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOCOMBAT.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -26567,10 +26567,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLODIPLOMATIC.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLODIPLOMATIC.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -26629,10 +26629,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLODIPLOMATICPATH.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLODIPLOMATICPATH.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -26696,10 +26696,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOINDUSTRIAL.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOINDUSTRIAL.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -26763,10 +26763,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLONORMANDY.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLONORMANDY.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -26825,10 +26825,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLONORMANDYPATH.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLONORMANDYPATH.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -26892,10 +26892,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOSCIENCE.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOSCIENCE.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -26959,10 +26959,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOSUPPORT.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOSUPPORT.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -27021,10 +27021,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOSUPPORTPATH.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\SCENES\HOLOSUPPORTPATH.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -27088,10 +27088,10 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-		{
-			["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.EXML",
-			["FILE_CONTENT"] =
+        },
+        {
+            ["FILE_DESTINATION"] = "MODELS\JJSBRIDGE\WINDOWS\WINDOWMESHES.SCENE.EXML",
+            ["FILE_CONTENT"] =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.99.1)-->
@@ -27174,6 +27174,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   </Property>
 </Data>
 ]]
-		},
-	}
+        },
+    }
 }

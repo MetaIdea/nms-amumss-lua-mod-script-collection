@@ -7,115 +7,115 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHEDGAS.HEAVYAIR.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Material",            "MODELS/EFFECTS/COMMON/MATERIALS/DUDHEATWAVE.MATERIAL.MBIN"},
-								{"NumberOfParticles",   "300"},
-								{"Radius",              "20"},
-								{"RadiusY",             "40"},
-								{"MinParticleLifetime", "6"},
-								{"MaxParticleLifetime", "6"},
-								{"SpeedFadeOutTime",    "1.5"},
-								{"MaxVisibleSpeed",     "1.5"},
-								{"SoftFadeStrength",    "5"},
-								{"EmitterShape",        "Sphere"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "0"},
-								{"y", "0.04"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "0"},
-								{"y", "0.04"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"ScaleRange","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "5"},
-								{"y", "5"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"RotationSpeedRange","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"y", "0"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "-0.02"},
-								{"y", "0"},
-								{"z", "0"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "0.02"},
-								{"y", "0"},
-								{"z", "0"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Colour1","Colour.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R", "0"},
-								{"G", "0"},
-								{"B", "0"},
-								{"A", "0"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Colour2","Colour.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R", "0"},
-								{"G", "0"},
-								{"B", "0"},
-								{"A", "0"},
-							}
-						},
-					}
-				},
-			}
-		},
-	},
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHEDGAS.HEAVYAIR.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Material",            "MODELS/EFFECTS/COMMON/MATERIALS/DUDHEATWAVE.MATERIAL.MBIN"},
+                                {"NumberOfParticles",   "300"},
+                                {"Radius",              "20"},
+                                {"RadiusY",             "40"},
+                                {"MinParticleLifetime", "6"},
+                                {"MaxParticleLifetime", "6"},
+                                {"SpeedFadeOutTime",    "1.5"},
+                                {"MaxVisibleSpeed",     "1.5"},
+                                {"SoftFadeStrength",    "5"},
+                                {"EmitterShape",        "Sphere"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0"},
+                                {"y", "0.04"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"MajorDirection","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0"},
+                                {"y", "0.04"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ScaleRange","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "5"},
+                                {"y", "5"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"RotationSpeedRange","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"y", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "-0.02"},
+                                {"y", "0"},
+                                {"z", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "0.02"},
+                                {"y", "0"},
+                                {"z", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Colour1","Colour.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "0"},
+                                {"G", "0"},
+                                {"B", "0"},
+                                {"A", "0"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Colour2","Colour.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "0"},
+                                {"G", "0"},
+                                {"B", "0"},
+                                {"A", "0"},
+                            }
+                        },
+                    }
+                },
+            }
+        },
+    },
 ["ADD_FILES"] =
-	{
-		{
+    {
+        {
             ["FILE_DESTINATION"] = [[MODELS\EFFECTS\COMMON\MATERIALS\DUDHEATWAVE.MATERIAL.EXML]],
             ["FILE_CONTENT"]     =
 [[
@@ -229,6 +229,6 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="ShaderMillDataHash" value="0" />
 </Data>
 ]],
-		},
-	},
+        },
+    },
 }

@@ -193,7 +193,7 @@ REWARD_ENTRIES =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-		<Property name="UseInventoryChoiceOverride" value="False" />
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -216,7 +216,7 @@ Rewards =
 {
   {
     ["REWARD"] = REWARD_T,
-	["IDS"] = {"DRONE_LOOT"},
+    ["IDS"] = {"DRONE_LOOT"},
   },
   {
     ["REWARD"] = REWARD_S,
@@ -240,7 +240,7 @@ Rewards =
   },
   {
     ["REWARD"] = REWARD_XL,
-	["IDS"] = {"R_ABAND_END", "R_NEXUS_MEGA_C"},
+    ["IDS"] = {"R_ABAND_END", "R_NEXUS_MEGA_C"},
   },
 }
 
@@ -252,106 +252,106 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]      = "TheLich and Babscoole",
 ["NMS_VERSION"]     = "3.91",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
-					["REGEXBEFORE"] =
-						{
-							{[[(.*)(".*_CRA_OPT_A_.*")]],[[\1"SECTION_TO_CHANGE" oldvalue=\2]]},
-							{[[(.*)(".*_ABAN_OPT_A_.*")]],[[\1"SECTION_TO_CHANGE" oldvalue=\2]]},
-						},
-					["REGEXAFTER"] =
-						{
-							{[[(.*)("SECTION_TO_CHANGE").*(".*")]],[[\1\3]]},
-						},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "SECTION_TO_CHANGE"},
-							["PRECEDING_KEY_WORDS"] = "Rewards",
-							["REPLACE_TYPE"] = "ALL",
-							["ADD"] = QUICKSILV_S
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_PIRATEBOARD_B"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_PIRATEBOARD_B"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_PIRATEBOARD_B", "ID", "REP_TOKEN"},
-							["SECTION_UP"] = 1,
-							["VALUE_CHANGE_TABLE"] =
-								{
-									{"PercentageChance", "25"},
-								},
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "RS_MONEY_L"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] = REWARD_ENTRIES,
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id", "R_RESET_SAL"},
-							["PRECEDING_KEY_WORDS"] = {"List", "List"},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["LINE_OFFSET"] = -1,
-							["ADD"] = REWARD_M,
-						},
-					}
-				},
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN",
+                    ["REGEXBEFORE"] =
+                        {
+                            {[[(.*)(".*_CRA_OPT_A_.*")]],[[\1"SECTION_TO_CHANGE" oldvalue=\2]]},
+                            {[[(.*)(".*_ABAN_OPT_A_.*")]],[[\1"SECTION_TO_CHANGE" oldvalue=\2]]},
+                        },
+                    ["REGEXAFTER"] =
+                        {
+                            {[[(.*)("SECTION_TO_CHANGE").*(".*")]],[[\1\3]]},
+                        },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "SECTION_TO_CHANGE"},
+                            ["PRECEDING_KEY_WORDS"] = "Rewards",
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["ADD"] = QUICKSILV_S
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_PIRATEBOARD_B"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_PIRATEBOARD_B"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_PIRATEBOARD_B", "ID", "REP_TOKEN"},
+                            ["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                                {
+                                    {"PercentageChance", "25"},
+                                },
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MEGA_C"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_NEXUS_MED_C"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "List", "GcRewardTableItem.xml"},
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "RS_MONEY_L"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] = REWARD_ENTRIES,
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA/SIMULATION/MISSIONS/TUTORIALMISSIONTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "R_RESET_SAL"},
+                            ["PRECEDING_KEY_WORDS"] = {"List", "List"},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["LINE_OFFSET"] = -1,
+                            ["ADD"] = REWARD_M,
+                        },
+                    }
+                },
+            }
+        }
+    }
 }
 
 --Let us create a shortcut to the EXML_CHANGE_TABLE table that is inside NMS_MOD_DEFINITION_CONTAINER
@@ -365,7 +365,7 @@ for i=1,#Rewards do
             {
               ["SPECIAL_KEY_WORDS"] = {"Id", value},
               ["PRECEDING_KEY_WORDS"] = {"List", "List"},
-			  ["ADD_OPTION"] 	= "ADDafterLINE",
+              ["ADD_OPTION"]     = "ADDafterLINE",
               -- ["ADD_OPTION"] = "ADDafterSECTION",
               -- ["LINE_OFFSET"] = -1,
               ["ADD"] = reward["REWARD"],

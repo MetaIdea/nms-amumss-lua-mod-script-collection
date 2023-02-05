@@ -7,33 +7,33 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  =
-					{
-						"MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPLANTS\LARGESTRANDS\LONGSTRANDS01_MAT.MATERIAL.MBIN",
-						"MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\MEDIUMSEAPLANT\LONGSTRANDS01_MAT.MATERIAL.MBIN",
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Class", "Opaque"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"TkMaterialFlags.xml"},
-							["REPLACE_TYPE"] = "ALL",
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Flags"},
-							["ADD_OPTION"]  = "ADDafterLINE",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        "MODELS\PLANETS\BIOMES\UNDERWATER\LARGEPLANTS\LARGESTRANDS\LONGSTRANDS01_MAT.MATERIAL.MBIN",
+                        "MODELS\PLANETS\BIOMES\UNDERWATER\MEDIUMPLANTS\MEDIUMSEAPLANT\LONGSTRANDS01_MAT.MATERIAL.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Class", "Opaque"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TkMaterialFlags.xml"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Flags"},
+                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD"] =
 [[
     <Property value="TkMaterialFlags.xml">
       <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
@@ -60,24 +60,24 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="MaterialFlag" value="_F27_VBTANGENT" />
     </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name","gMaterialColourVec4"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "1"},
-								{"y", "1"},
-								{"z", "1"},
-							}
-						},
-						{
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"Samplers","IGNORE"},
-							},
-							["ADD_OPTION"] = "REPLACEatLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name","gMaterialColourVec4"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "1"},
+                                {"y", "1"},
+                                {"z", "1"},
+                            }
+                        },
+                        {
+                            ["VALUE_CHANGE_TABLE"]     =
+                            {
+                                {"Samplers","IGNORE"},
+                            },
+                            ["ADD_OPTION"] = "REPLACEatLINE",
+                            ["ADD"] =
 [[
   <Property name="Samplers">
     <Property value="TkMaterialSampler.xml">
@@ -118,10 +118,10 @@ NMS_MOD_DEFINITION_CONTAINER =
     </Property>
   </Property>
 ]]
-						},
-					}
-				},
-			}
-		},
-	},
+                        },
+                    }
+                },
+            }
+        },
+    },
 }

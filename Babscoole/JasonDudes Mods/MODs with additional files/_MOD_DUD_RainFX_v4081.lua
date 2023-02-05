@@ -7,72 +7,72 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  =
-					{
-						"MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE2.HEAVYAIR.MBIN",
-						"MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE3.HEAVYAIR.MBIN",
-						"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICRAIN1.HEAVYAIR.MBIN",
-						"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICRAIN2.HEAVYAIR.MBIN",
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumberOfParticles",   "600"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "-1"},
-								{"y", "-1"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "1"},
-								{"y", "1"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\HEAVYAIR\SWAMP\SWAMP2.HEAVYAIR.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "-1"},
-								{"y", "-1"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"x", "1"},
-								{"y", "1"},
-							}
-						},
-					}
-				},
-			}
-		},
-	},
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  =
+                    {
+                        "MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE2.HEAVYAIR.MBIN",
+                        "MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE3.HEAVYAIR.MBIN",
+                        "MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICRAIN1.HEAVYAIR.MBIN",
+                        "MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICRAIN2.HEAVYAIR.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumberOfParticles", "600"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "-1"},
+                                {"y", "-1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "1"},
+                                {"y", "1"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\EFFECTS\HEAVYAIR\SWAMP\SWAMP2.HEAVYAIR.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMin","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "-1"},
+                                {"y", "-1"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"AmplitudeMax","Vector3f.xml"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"x", "1"},
+                                {"y", "1"},
+                            }
+                        },
+                    }
+                },
+            }
+        },
+    },
 }

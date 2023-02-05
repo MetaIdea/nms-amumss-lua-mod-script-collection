@@ -5,25 +5,25 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.93",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = 	"METADATA\SIMULATION\ECOSYSTEM\CAVE\CAVETABLECOMMON.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["REPLACE_TYPE"]       = "ALL",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ProbabilityOfBeingEnabled", 	"0" },
-								{"IncreasedSpawnDistance", 		"2" },
-							}
-						},
-					}
-				},
-			}
-		},
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  =     "METADATA\SIMULATION\ECOSYSTEM\CAVE\CAVETABLECOMMON.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["REPLACE_TYPE"]       = "ALL",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ProbabilityOfBeingEnabled",     "0" },
+                                {"IncreasedSpawnDistance",         "2" },
+                            }
+                        },
+                    }
+                },
+            }
+        },
+    }
 }

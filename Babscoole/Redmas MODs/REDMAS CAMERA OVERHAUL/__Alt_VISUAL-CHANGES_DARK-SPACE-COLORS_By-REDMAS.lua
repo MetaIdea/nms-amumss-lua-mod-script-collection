@@ -155,7 +155,7 @@ function CreateColoursProperty(PaletteColours)
         local R8 = PaletteColours[j][29]
         local G8 = PaletteColours[j][30]
         local B8 = PaletteColours[j][31]
-        local A8 = PaletteColours[j][32]		
+        local A8 = PaletteColours[j][32]
         local R9 = PaletteColours[j][33]
         local G9 = PaletteColours[j][34]
         local B9 = PaletteColours[j][35]
@@ -171,11 +171,11 @@ function CreateColoursProperty(PaletteColours)
         local R12 = PaletteColours[j][45]
         local G12 = PaletteColours[j][46]
         local B12 = PaletteColours[j][47]
-        local A12 = PaletteColours[j][48]	
+        local A12 = PaletteColours[j][48]
         local R13 = PaletteColours[j][49]
         local G13 = PaletteColours[j][50]
         local B13 = PaletteColours[j][51]
-        local A13 = PaletteColours[j][52]			
+        local A13 = PaletteColours[j][52]
         PropertiesString = PropertiesString..GetColours(R1, G1, B1, A1, R2, G2, B2, A2, R3, G3, B3, A3, R4, G4, B4, A4, R5, G5, B5, A5, R6, G6, B6, A6, R7, G7, B7, A7, R8, G8, B8, A8, R9, G9, B9, A9, R10, G10, B10, A10, R11, G11, B11, A11, R12, G12, B12, A12, R13, G13, B13, A13)
     end
 return PropertiesString
@@ -186,18 +186,18 @@ for i = 1, #DataTable do
     local PaletteColours = DataTable[i]["COLOURS"]
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-	{
-		["MBIN_FILE_SOURCE"] = 
-		{ 
-			[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN]],
-			[[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],				
-		},		
-		["EXML_CHANGE_TABLE"] =
-		{
-			{
-				["PRECEDING_KEY_WORDS"] = { "Settings" },
-				["ADD"] = CreateColoursProperty(PaletteColours)
-			}
-		}
-	}
+    {
+        ["MBIN_FILE_SOURCE"] =
+        {
+            [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACESKYCOLOURS.MBIN]],
+            [[METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\SPACERARESKYCOLOURS.MBIN]],
+        },
+        ["EXML_CHANGE_TABLE"] =
+        {
+            {
+                ["PRECEDING_KEY_WORDS"] = { "Settings" },
+                ["ADD"] = CreateColoursProperty(PaletteColours)
+            }
+        }
+    }
 end

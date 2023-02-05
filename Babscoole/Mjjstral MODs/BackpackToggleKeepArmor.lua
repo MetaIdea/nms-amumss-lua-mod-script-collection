@@ -1,14 +1,14 @@
 PacksList =
 {
-	"Backpack",
-	"_Cape_Frigate",
-	"_Cape_Sandworm",
-	"_Cape_Jelly",
-	"_Cape_Freighter",
-	"_Cape_Infinity",
-	"_Cape_Pirate",
-	"_Cape_Atlas",
-	"_Cape_Proto",
+    "Backpack",
+    "_Cape_Frigate",
+    "_Cape_Sandworm",
+    "_Cape_Jelly",
+    "_Cape_Freighter",
+    "_Cape_Infinity",
+    "_Cape_Pirate",
+    "_Cape_Atlas",
+    "_Cape_Proto",
 }
 
 function GetPack(Pack)
@@ -43,19 +43,19 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
-							["SECTION_ACTIVE"]    = {2,},
-							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Anim","0H_GREET_MOB_04"},
+                            ["SECTION_ACTIVE"]    = {2,},
+                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            ["ADD"] =
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="BACKPACK_TOGGLE" />
@@ -85,11 +85,11 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
-							["ADD_OPTION"]        = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcPlayerEffectsComponentData.xml"},
+                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -122,16 +122,16 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="LinkStateToBaseGrid" value="False" />
     </Property>
 ]]
-						}
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"},
-							["ADD"] =
+                        }
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\UI\EMOTEMENU.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Emotes"},
+                            ["ADD"] =
 [[
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="Toggle Backpack" />
@@ -180,17 +180,17 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						}
-					}
-				}
-			}
-		}
-	},
+                        }
+                    }
+                }
+            }
+        }
+    },
 ["ADD_FILES"] =
-	{
-		{
-			["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
-			["FILE_CONTENT"] 	 =
+    {
+        {
+            ["FILE_DESTINATION"] = [[MODELS\COMMON\PLAYER\PLAYERCHARACTER\ANIMS\EMOTES\NULL.ANIM.EXML]],
+            ["FILE_CONTENT"]      =
 [[
 <?xml version="1.0" encoding="utf-8"?>
 
@@ -201,17 +201,17 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="AnimFrameData">
     <Property value="TkAnimNodeFrameData.xml">
     <Property name="Rotations" />
-	<Property name="Translations" />
-	<Property name="Scales" />
+    <Property name="Translations" />
+    <Property name="Scales" />
     </Property>
   </Property>
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
     <Property name="Rotations" />
-	<Property name="Translations" />
-	<Property name="Scales" />
+    <Property name="Translations" />
+    <Property name="Scales" />
  </Property>
 </Data>
 ]]
-		}
-	}
+        }
+    }
 }

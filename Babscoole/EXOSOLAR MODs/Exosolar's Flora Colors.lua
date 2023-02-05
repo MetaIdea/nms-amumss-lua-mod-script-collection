@@ -294,33 +294,33 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = { "Plant", "GcPaletteData.xml"  },
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "All"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = { "Leaf", "GcPaletteData.xml"  },
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"NumColours", "All"}
-							}
-						},
-					}
-				}
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\BASECOLOURPALETTES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Plant", "GcPaletteData.xml"  },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "All"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = { "Leaf", "GcPaletteData.xml"  },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"NumColours", "All"}
+                            }
+                        },
+                    }
+                }
+            }
+        }
+    }
 }
 
 function GetColours(R,G,B,A)

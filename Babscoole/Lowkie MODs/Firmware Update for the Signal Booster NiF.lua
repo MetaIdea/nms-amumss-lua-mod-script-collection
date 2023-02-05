@@ -198,7 +198,7 @@ end
 function GetReward(ID, EVENT)
 return
 [[
-	<Property value="GcGenericRewardTableEntry.xml">
+    <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="]]..ID..[[" />
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="SelectAlways" />
@@ -446,90 +446,90 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_MAINTENANCE"] = "Babscoole",
   ["NMS_VERSION"]     = NMSVersion,
   ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				-- {
-					-- ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
-					-- ["EXML_CHANGE_TABLE"] =
-					-- {
-						-- {
-							-- ["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER","Name","ALL_REQUEST_LEAVE",},
-							-- -- ["PRECEDING_KEY_WORDS"] = {"Options"},
-							-- -- ["LINE_OFFSET"]         = "1",
-							-- ["REMOVE"] = "SECTION",  --Remove original options section
-						-- },
-					-- },
-				-- },
-				{
-					["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						-- {
-							-- ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER"},
-							-- ["VALUE_CHANGE_TABLE"] =
-						--	{
-						--		{"TextAlien", 	""} --org UI_SIGNAL_SCANNER_DESC_ALT},
-						--	},
-						-- },
-						{
-							-- ["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER",},
-							["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER","Name","UI_SIGNAL_NEAREST_OPT"},
-							["ADD_OPTION"]        = "ADDafterSECTION",
-							-- ["PRECEDING_KEY_WORDS"] = {"RequiresScanEvent"},
-							["ADD"]                 = ALL_PUZZLE_UPDATES,
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Id", "SEC_CRASHEDSHIP"},
-							["ADD_OPTION"]         = "ADDafterSECTION",
-							["ADD"] = REWARDSET,
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Id", "R_SHOW_HIVEONLY"},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"DoAerialScan", "False"},
-							}
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = {"METADATA\SIMULATION\SCANNING\SCANEVENTTABLEPLANET.MBIN"},
-					["EXML_CHANGE_TABLE"] =
-					{
- 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name","DRONE_HIVE",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ReplaceEventIfAlreadyActive",	"True"},
-								{"InterstellarOSDMessage", "SCANEVENT_ANOTHER_SYSTEM"},
-							}
-						},
- 						{
-							["SPECIAL_KEY_WORDS"]  = {"Name","FACTORY_R",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"ReplaceEventIfAlreadyActive",	"True"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Events"},
-							["ADD"] = Base_Scan_Event
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Events"},
-							["ADD"] = Glitch_Scan_Event
-						},
-					},
-				},
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                -- {
+                    -- ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
+                    -- ["EXML_CHANGE_TABLE"] =
+                    -- {
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER","Name","ALL_REQUEST_LEAVE",},
+                            -- -- ["PRECEDING_KEY_WORDS"] = {"Options"},
+                            -- -- ["LINE_OFFSET"]         = "1",
+                            -- ["REMOVE"] = "SECTION",  --Remove original options section
+                        -- },
+                    -- },
+                -- },
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER"},
+                            -- ["VALUE_CHANGE_TABLE"] =
+                        --    {
+                        --        {"TextAlien",     ""} --org UI_SIGNAL_SCANNER_DESC_ALT},
+                        --    },
+                        -- },
+                        {
+                            -- ["SPECIAL_KEY_WORDS"]   = {"Id", "SIGNALSCANNER",},
+                            ["SPECIAL_KEY_WORDS"] = {"Id", "SIGNALSCANNER","Name","UI_SIGNAL_NEAREST_OPT"},
+                            ["ADD_OPTION"]        = "ADDafterSECTION",
+                            -- ["PRECEDING_KEY_WORDS"] = {"RequiresScanEvent"},
+                            ["ADD"]                 = ALL_PUZZLE_UPDATES,
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"METADATA\REALITY\TABLES\REWARDTABLE.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id", "SEC_CRASHEDSHIP"},
+                            ["ADD_OPTION"]         = "ADDafterSECTION",
+                            ["ADD"] = REWARDSET,
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"Id", "R_SHOW_HIVEONLY"},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"DoAerialScan", "False"},
+                            }
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"METADATA\SIMULATION\SCANNING\SCANEVENTTABLEPLANET.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                         {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name","DRONE_HIVE",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ReplaceEventIfAlreadyActive",    "True"},
+                                {"InterstellarOSDMessage", "SCANEVENT_ANOTHER_SYSTEM"},
+                            }
+                        },
+                         {
+                            ["SPECIAL_KEY_WORDS"]  = {"Name","FACTORY_R",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ReplaceEventIfAlreadyActive",    "True"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Events"},
+                            ["ADD"] = Base_Scan_Event
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Events"},
+                            ["ADD"] = Glitch_Scan_Event
+                        },
+                    },
+                },
+            }
+        }
+    }
 }

@@ -5,80 +5,80 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "3.70",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"MinScale",            "80"},     -- Original "50"
-								{"MaxScale",            "100"},    -- Original "50"
-                {"MoveRange",           "10000"},
-								{"TurnRadiusScale",     "10"}, 	   -- Original "1"
-								{"HeightMin",           "-100"},   -- Original "45"
-								{"SwarmMovementSpeed",  "1"},      -- Original "90"
-								{"SwarmMovementRadius", "1000"},   -- Original "100"
-								{"SwarmMovementType",   "Circle"}, -- Original "FollowPlayer"
-								{"MaxSpeed",            "90"},    -- Original "80"
-                {"CircleAttractor",     "Player"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["PRECEDING_KEY_WORDS"] = {"PredatorProbabilityModifier",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"CreatureRoleFrequencyModifier",	"Never"}, -- Original "Normal"
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["PRECEDING_KEY_WORDS"] = {"HerbivoreProbabilityModifier",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"CreatureRoleFrequencyModifier",	"High"}, -- Original "Normal"
-							}
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "GCCREATUREGLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] 	=
-							{
-								{"SandWormChangeDirectionTime", "0.001"},  -- Original "1"
-								{"SandWormSteerAdjustTime",     "0.2"},    -- Original "2"
-								{"SandWormMaxSteer",            "10"},     -- Original "0.3"
-								{"SandWormMaxHeightAdjust",     "380"},     -- Original "1"
-								{"SandWormJumpHeight",          "3"},     -- Original "120"
-								{"SandWormJumpTime",            "0.0001"}, -- Original "3"
-								{"SandWormSubmergeDepth",       "1"},      -- Original "100"
-								{"SandWormSubmergeTime",        "1"},      -- Original "3"
-								{"SandWormSurfaceTime",         "3"},      -- Original "1"
-								{"SandWormMaxJumps",            "1500"},   -- Original "5"
-								{"SandWormDespawnDist",         "1500"},   -- Original "1500"
-								{"SandWormSpawnTimer",          "30"},     -- Original "300"
-							}
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"TkCreatureTailComponentData.xml",},
-							["ADD_OPTION"] = "ADDafterSECTION",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\ECOSYSTEM\CREATUREDATATABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"MinScale",            "80"},     -- Original "50"
+                                {"MaxScale",            "100"},    -- Original "50"
+                                {"MoveRange",           "10000"},
+                                {"TurnRadiusScale",     "10"},        -- Original "1"
+                                {"HeightMin",           "-100"},   -- Original "45"
+                                {"SwarmMovementSpeed",  "1"},      -- Original "90"
+                                {"SwarmMovementRadius", "1000"},   -- Original "100"
+                                {"SwarmMovementType",   "Circle"}, -- Original "FollowPlayer"
+                                {"MaxSpeed",            "90"},    -- Original "80"
+                                {"CircleAttractor",     "Player"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["PRECEDING_KEY_WORDS"] = {"PredatorProbabilityModifier",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"CreatureRoleFrequencyModifier",    "Never"}, -- Original "Normal"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["PRECEDING_KEY_WORDS"] = {"HerbivoreProbabilityModifier",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"CreatureRoleFrequencyModifier",    "High"}, -- Original "Normal"
+                            }
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCCREATUREGLOBALS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]     =
+                            {
+                                {"SandWormChangeDirectionTime", "0.001"},  -- Original "1"
+                                {"SandWormSteerAdjustTime",     "0.2"},    -- Original "2"
+                                {"SandWormMaxSteer",            "10"},     -- Original "0.3"
+                                {"SandWormMaxHeightAdjust",     "380"},     -- Original "1"
+                                {"SandWormJumpHeight",          "3"},     -- Original "120"
+                                {"SandWormJumpTime",            "0.0001"}, -- Original "3"
+                                {"SandWormSubmergeDepth",       "1"},      -- Original "100"
+                                {"SandWormSubmergeTime",        "1"},      -- Original "3"
+                                {"SandWormSurfaceTime",         "3"},      -- Original "1"
+                                {"SandWormMaxJumps",            "1500"},   -- Original "5"
+                                {"SandWormDespawnDist",         "1500"},   -- Original "1500"
+                                {"SandWormSpawnTimer",          "30"},     -- Original "300"
+                            }
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "MODELS\PLANETS\CREATURES\SANDWORM\SANDWORM\ENTITIES\SANDWORM.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TkCreatureTailComponentData.xml",},
+                            ["ADD_OPTION"] = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="GcInteractionComponentData.xml">
       <Property name="InteractionAction" value="PressButton" />
@@ -288,40 +288,40 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="CanCollectInMech" value="True" />
     </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","Data",},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Mass",           "3"},   -- Original "1"
-								{"Friction",       "0"},   -- Original "0.5"
-								{"AngularDamping", "0.8"}, -- Original "0.2"
-								{"Gravity",        "90"},  -- Original "20"
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"Gravity", "90"}, -- Original "20"
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
-							["REPLACE_TYPE"] = "RAW",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{
-									[[<Property name="ChainEnds" />]],
-									[[<Property name="ChainEnds">]]
-								},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
-							["LINE_OFFSET"] = "+3",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","Data",},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Mass",           "3"},   -- Original "1"
+                                {"Friction",       "0"},   -- Original "0.5"
+                                {"AngularDamping", "0.8"}, -- Original "0.2"
+                                {"Gravity",        "90"},  -- Original "20"
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","RagdollData",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Gravity", "90"}, -- Original "20"
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
+                            ["REPLACE_TYPE"] = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {
+                                    [[<Property name="ChainEnds" />]],
+                                    [[<Property name="ChainEnds">]]
+                                },
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"RagdollData","TkRagdollData.xml",},
+                            ["LINE_OFFSET"] = "+3",
+                            ["ADD"] =
 [[
           <Property value="NMSString0x20.xml">
             <Property name="Value" value="NeckJNT" />
@@ -337,29 +337,29 @@ NMS_MOD_DEFINITION_CONTAINER =
           </Property>
         </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["REPLACE_TYPE"] = "RAW",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{
-									[[<Property name="ReplacementImpacts" />]],
-									[[<Property name="ReplacementImpacts">]]
-								},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"DeathEffect", "FIENDDEATH"}, -- Original ""
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
-							["LINE_OFFSET"] = "+7",
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["REPLACE_TYPE"] = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {
+                                    [[<Property name="ReplacementImpacts" />]],
+                                    [[<Property name="ReplacementImpacts">]]
+                                },
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"DeathEffect", "FIENDDEATH"}, -- Original ""
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","SANDWORM",},
+                            ["LINE_OFFSET"] = "+7",
+                            ["ADD"] =
 [[
         <Property value="GcReplacementEffectData.xml">
           <Property name="Id" value="LASERCREATURE" />
@@ -371,11 +371,11 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]]
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"Components",},
-							["ADD_OPTION"] = "ADDafterLINE",
-							["ADD"] =
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"Components",},
+                            ["ADD_OPTION"] = "ADDafterLINE",
+                            ["ADD"] =
 [[
     <Property value="GcShootableComponentData.xml">
       <Property name="Health" value="300000" />
@@ -409,10 +409,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="IsAffectedByPiercing" value="False" />
     </Property>
 ]]
-						},
-					}
-				},
-			},
-		},
-	},
+                        },
+                    }
+                },
+            },
+        },
+    },
 }

@@ -1014,91 +1014,91 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\WATERCOLOURS.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "GCWATERGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"WaveHeight",          "0.25"},
-								{"WaveFrequency",       "0.08"},
-								{"WaterStrength",       "0.0065"},
-								{"WaterColourStrength", "0.0095"},
-								{"WaterMultiplyMax",    "0.85"},
-								{"FoamFadeHeight",      "0"},
-								{"Foam1Scale",          "0.000000024"},
-								{"Foam1Speed",          "0.0000007"},
-								{"Foam2Scale",          "0.000000012"},
-								{"Foam2Speed",          "0.0002"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"WaterFogColourNear"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R", "0.02"},
-								{"G", "0.02"},
-								{"B", "0.02"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"WaterFogColourFar"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R", "0.0267"},
-								{"G", "0.0267"},
-								{"B", "0.0267"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"WaterColourBase"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R", "0"},
-								{"G", "0"},
-								{"B", "0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"WaterColourAdd"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R", "0"},
-								{"G", "0"},
-								{"B", "0"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"FoamColour"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R", "0"},
-								{"G", "0"},
-								{"B", "0"},
-							}
-						},
-					}
-				}
-			}
-		}
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\SOLARSYSTEM\\COLOURS\\WATERCOLOURS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCWATERGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"WaveHeight",          "0.25"},
+                                {"WaveFrequency",       "0.08"},
+                                {"WaterStrength",       "0.0065"},
+                                {"WaterColourStrength", "0.0095"},
+                                {"WaterMultiplyMax",    "0.85"},
+                                {"FoamFadeHeight",      "0"},
+                                {"Foam1Scale",          "0.000000024"},
+                                {"Foam1Speed",          "0.0000007"},
+                                {"Foam2Scale",          "0.000000012"},
+                                {"Foam2Speed",          "0.0002"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"WaterFogColourNear"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "0.02"},
+                                {"G", "0.02"},
+                                {"B", "0.02"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"WaterFogColourFar"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "0.0267"},
+                                {"G", "0.0267"},
+                                {"B", "0.0267"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"WaterColourBase"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "0"},
+                                {"G", "0"},
+                                {"B", "0"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"WaterColourAdd"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "0"},
+                                {"G", "0"},
+                                {"B", "0"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"FoamColour"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R", "0"},
+                                {"G", "0"},
+                                {"B", "0"},
+                            }
+                        },
+                    }
+                }
+            }
+        }
+    }
 }
 
 

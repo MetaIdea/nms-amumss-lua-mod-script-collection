@@ -9,24 +9,24 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["INTEGER_TO_FLOAT"]   = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"WarpsBetweenBattles", WARPS},
-								{"HoursBetweenBattles", HOURS}
-							}
-						}
-					}
-				},
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"]   = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"WarpsBetweenBattles", WARPS},
+                                {"HoursBetweenBattles", HOURS}
+                            }
+                        }
+                    }
+                },
                 {
                     ["MBIN_FILE_SOURCE"] = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
                     ["EXML_CHANGE_TABLE"] = {
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         }
                     }
                 },
-			}
-		}
-	}
+            }
+        }
+    }
 }

@@ -63,7 +63,7 @@ ShipMaxUpgradeChanges =
 WeaponMaxUpgradeChanges =
 {
   { -- InvType
-  	{"MaxInventoryCapacity"},
+      {"MaxInventoryCapacity"},
     {-- C,  B,  A,  S,     Originals
       {33, 55, 77, 99}, -- 21 30 45 60
     }
@@ -145,7 +145,7 @@ for i = 1, #ShipMaxUpgradeChanges do
     InventoryTable[#InventoryTable+1] =
     {
       ["PRECEDING_KEY_WORDS"] = {"ShipInventoryMaxUpgradeSize", Type, InvType},
-      ["LINE_OFFSET"] 	= "+1",
+      ["LINE_OFFSET"]     = "+1",
       ["VALUE_CHANGE_TABLE"]  =
       {
         {"IGNORE", C},

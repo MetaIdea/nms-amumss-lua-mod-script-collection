@@ -3862,85 +3862,85 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["NMS_VERSION"]     = "4.08",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"LightShaftProperties"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"LightShaftScattering", "0.30"},
-								{"LightShaftBottom",     "0.05"},
-								{"LightShaftTop",        "0.40"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"LightShaftProperties", "LightShaftColourBottom"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.281"},
-								{"G",	"0.276"},
-								{"B",	"0.266"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"LightShaftProperties", "LightShaftColourTop"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.251"},
-								{"G",	"0.246"},
-								{"B",	"0.236"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"StormLightShaftProperties", "LightShaftColourBottom"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.401"},
-								{"G",	"0.391"},
-								{"B",	"0.375"},
-								{"A",	"0.25"},
-							}
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"StormLightShaftProperties", "LightShaftColourTop"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"R",	"0.251"},
-								{"G",	"0.246"},
-								{"B",	"0.236"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "GCSKYGLOBALS.GLOBALS.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"SafeSkyMaxIndex",            "2173"},
-								{"SunClampAngle",              "85"},
-								{"NoAtmosphereFogStrength",    "0.02"},
-								{"NoAtmosphereFogMax",         "0"},
-								{"NoAtmosphereColourStrength", "0"},
-								{"NoAtmosphereColourMax",      "0"},
-							}
-						},
-					}
-				}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCGRAPHICSGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"LightShaftScattering", "0.30"},
+                                {"LightShaftBottom",     "0.05"},
+                                {"LightShaftTop",        "0.40"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties", "LightShaftColourBottom"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R",    "0.281"},
+                                {"G",    "0.276"},
+                                {"B",    "0.266"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties", "LightShaftColourTop"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R",    "0.251"},
+                                {"G",    "0.246"},
+                                {"B",    "0.236"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"StormLightShaftProperties", "LightShaftColourBottom"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R",    "0.401"},
+                                {"G",    "0.391"},
+                                {"B",    "0.375"},
+                                {"A",    "0.25"},
+                            }
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"StormLightShaftProperties", "LightShaftColourTop"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"R",    "0.251"},
+                                {"G",    "0.246"},
+                                {"B",    "0.236"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "GCSKYGLOBALS.GLOBALS.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"SafeSkyMaxIndex",            "2173"},
+                                {"SunClampAngle",              "85"},
+                                {"NoAtmosphereFogStrength",    "0.02"},
+                                {"NoAtmosphereFogMax",         "0"},
+                                {"NoAtmosphereColourStrength", "0"},
+                                {"NoAtmosphereColourMax",      "0"},
+                            }
+                        },
+                    }
+                }
             }
         }
     }
@@ -4075,19 +4075,19 @@ end
 local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local Palette = DataTable[i]["PALETTE"]
-	local FileSource = "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\SKYSETTINGS\\"..string.upper(Palette).."SKYCOLOURS.MBIN"
+    local FileSource = "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\SKYSETTINGS\\"..string.upper(Palette).."SKYCOLOURS.MBIN"
     local PaletteColours = DataTable[i]["COLOURS"]
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-	{
-		["MBIN_FILE_SOURCE"] 	= FileSource,
-		["EXML_CHANGE_TABLE"] 	=
-		{
-			{
-				["PRECEDING_KEY_WORDS"] = { "Settings" },
-				["SECTION_ACTIVE"] = {1,},
-				["ADD"] = CreateColoursProperty(PaletteColours)
-			}
-		}
-	}
+    {
+        ["MBIN_FILE_SOURCE"]     = FileSource,
+        ["EXML_CHANGE_TABLE"]     =
+        {
+            {
+                ["PRECEDING_KEY_WORDS"] = { "Settings" },
+                ["SECTION_ACTIVE"] = {1,},
+                ["ADD"] = CreateColoursProperty(PaletteColours)
+            }
+        }
+    }
 end

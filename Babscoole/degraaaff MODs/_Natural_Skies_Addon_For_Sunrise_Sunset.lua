@@ -155,19 +155,19 @@ end
 local BaseColourPalettesTable  = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"]
 for i = 1, #DataTable do
     local Palette = DataTable[i]["PALETTE"]
-	local FileSource = "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\SKYSETTINGS\\"..string.upper(Palette).."SKYCOLOURS.MBIN"
+    local FileSource = "METADATA\\SIMULATION\\SOLARSYSTEM\\WEATHER\\SKYSETTINGS\\"..string.upper(Palette).."SKYCOLOURS.MBIN"
     local PaletteColours = DataTable[i]["COLOURS"]
 
     BaseColourPalettesTable[#BaseColourPalettesTable +1 ] =
-	{
-		["MBIN_FILE_SOURCE"] 	= FileSource,
-		["EXML_CHANGE_TABLE"] 	=
-		{
-			{
-				["PRECEDING_KEY_WORDS"] = { "Settings" },
-				["SECTION_ACTIVE"] = {1,},
-				["ADD"] = CreateColoursProperty(PaletteColours)
-			}
-		}
-	}
+    {
+        ["MBIN_FILE_SOURCE"]     = FileSource,
+        ["EXML_CHANGE_TABLE"]     =
+        {
+            {
+                ["PRECEDING_KEY_WORDS"] = { "Settings" },
+                ["SECTION_ACTIVE"] = {1,},
+                ["ADD"] = CreateColoursProperty(PaletteColours)
+            }
+        }
+    }
 end

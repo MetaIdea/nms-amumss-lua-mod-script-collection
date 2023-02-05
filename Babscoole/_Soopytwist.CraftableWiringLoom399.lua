@@ -6,27 +6,27 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["NMS_VERSION"]     = "3.99",
 ["MOD_DESCRIPTION"] = "Adds an unlockable Wiring Loom blueprint which can then be crafted like any other product",
 ["MODIFICATIONS"]   =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","TECH_COMP",},
-							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{"IsCraftable", "True"}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","TECH_COMP",},
-							["PRECEDING_KEY_WORDS"] = {"Requirements",},
-							["SECTION_ACTIVE"] = {1,},
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_REALITY_GCPRODUCTTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","TECH_COMP",},
+                            ["SECTION_ACTIVE"] = {1,},
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"IsCraftable", "True"}
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","TECH_COMP",},
+                            ["PRECEDING_KEY_WORDS"] = {"Requirements",},
+                            ["SECTION_ACTIVE"] = {1,},
+                            ["ADD"] =
 [[
         <Property value="GcTechnologyRequirement.xml">
           <Property name="ID" value="COMPUTER" />
@@ -51,33 +51,33 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
 ]]
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Id","TECH_COMP",},
-							["SECTION_ACTIVE"] = {1,},
-							["REPLACE_TYPE"] = "RAW",
-							["VALUE_CHANGE_TABLE"] =
-							{
-								{
-									[[      <Property name="Requirements" />]],
-									[[      <Property name="Requirements">]]
-								},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Unlockable","COMPUTER",},
-							["PRECEDING_KEY_WORDS"] = {"Children",},
-							["REMOVE"] 	= "LINE",
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Unlockable","COMPUTER",},
-							["ADD"] =
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Id","TECH_COMP",},
+                            ["SECTION_ACTIVE"] = {1,},
+                            ["REPLACE_TYPE"] = "RAW",
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {
+                                    [[      <Property name="Requirements" />]],
+                                    [[      <Property name="Requirements">]]
+                                },
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\UNLOCKABLEITEMTREES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Unlockable","COMPUTER",},
+                            ["PRECEDING_KEY_WORDS"] = {"Children",},
+                            ["REMOVE"]     = "LINE",
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Unlockable","COMPUTER",},
+                            ["ADD"] =
 [[
                         <Property name="Children">
                           <Property value="GcUnlockableItemTreeNode.xml">
@@ -86,10 +86,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                           </Property>
                         </Property>
 ]]
-						},
-					}
-				}
-			}
-		}
-	}
+                        },
+                    }
+                }
+            }
+        }
+    }
 }

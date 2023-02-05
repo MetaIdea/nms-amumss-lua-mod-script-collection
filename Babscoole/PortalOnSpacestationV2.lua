@@ -32,108 +32,108 @@ NMS_MOD_DEFINITION_CONTAINER =
   ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
   ["NMS_VERSION"]   = "4.0+",
   ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"] =
-					{
-						{[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN]], [[CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN]], "REMOVE"},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "MainHallModule"},
-							["PRECEDING_KEY_WORDS"] = {"Children"},
-							["ADD_OPTION"]  = "ADDafterLINE",
-							["ADD"] = TEXT_TO_ADD,
-						},
-					},
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "PortalStructure"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VCT"] =
-							{
-								{"ScaleY", "0.3"},
-								{"ScaleZ", "0.75"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "Base"},
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VCT"] =
-							{
-								{"ScaleX", "0.5"},
-								{"ScaleY", "0.5"},
-								{"ScaleZ", "0.5"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALMEMBRANE.SCENE.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "Pillar"},
-							--["REMOVE"] = "SECTION",
-							["INTEGER_TO_FLOAT"] = "FORCE",
-							["VCT"] =
-							{
-								{"TransY", "3.4"},
-								{"ScaleY", "0.3"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] =
-					{
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSA.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSB.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALPILLARS\ENTITIES\PORTALPILLARS.ENTITY.MBIN",
-						"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALTERMINAL\ENTITIES\PORTALTERMINAL.ENTITY.MBIN",
-					},
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["SPECIAL_KEY_WORDS"] = {"Distance", "10"},
-							["VCT"] =
-							{
-								{"Distance", "300"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Distance", "15"},
-							["REPLACE_TYPE"] = "ALL",
-							["VCT"] =
-							{
-								{"Distance", "450"},
-							}
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
-					["EXML_CHANGE_TABLE"] 	=
-					{
-						{
-						  ["PRECEDING_KEY_WORDS"] = "GcMaintenanceComponentData.xml",
-						  ["REMOVE"] = "SECTION",
-						}
-					}
-				},
-			}
-		},
-	}
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        {[[MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL.SCENE.MBIN]], [[CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN]], "REMOVE"},
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\SPACE\SPACESTATION\MODULARPARTS\DOCK\BACK_SECTION.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "MainHallModule"},
+                            ["PRECEDING_KEY_WORDS"] = {"Children"},
+                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD"] = TEXT_TO_ADD,
+                        },
+                    },
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "CUSTOMFOLDER\PORTAL\PORTAL.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "PortalStructure"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VCT"] =
+                            {
+                                {"ScaleY", "0.3"},
+                                {"ScaleZ", "0.75"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Base"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VCT"] =
+                            {
+                                {"ScaleX", "0.5"},
+                                {"ScaleY", "0.5"},
+                                {"ScaleZ", "0.5"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALMEMBRANE.SCENE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Name", "Pillar"},
+                            --["REMOVE"] = "SECTION",
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
+                            ["VCT"] =
+                            {
+                                {"TransY", "3.4"},
+                                {"ScaleY", "0.3"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSA.ENTITY.MBIN",
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\WHEELEFFECTSB.ENTITY.MBIN",
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALPILLARS\ENTITIES\PORTALPILLARS.ENTITY.MBIN",
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALTERMINAL\ENTITIES\PORTALTERMINAL.ENTITY.MBIN",
+                    },
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Distance", "10"},
+                            ["VCT"] =
+                            {
+                                {"Distance", "300"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"Distance", "15"},
+                            ["REPLACE_TYPE"] = "ALL",
+                            ["VCT"] =
+                            {
+                                {"Distance", "450"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]     = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTAL\ENTITIES\BUTTON.ENTITY.MBIN",
+                    ["EXML_CHANGE_TABLE"]     =
+                    {
+                        {
+                          ["PRECEDING_KEY_WORDS"] = "GcMaintenanceComponentData.xml",
+                          ["REMOVE"] = "SECTION",
+                        }
+                    }
+                },
+            }
+        },
+    }
 }

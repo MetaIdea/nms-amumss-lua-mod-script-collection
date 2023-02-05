@@ -5,18 +5,18 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["LUA_AUTHOR"]    = "Babscoole",
 ["NMS_VERSION"]   = "4.08",
 ["MODIFICATIONS"] =
-	{
-		{
-			["MBIN_CHANGE_TABLE"] =
-			{
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENTILETYPES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENTILETYPES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
+                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="GcTileTypeSet.xml">
       <Property name="Probability" value="0.2" />
@@ -231,17 +231,17 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHTILETYPES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
-							["ADD_OPTION"]  = "ADDafterSECTION",
-							["ADD"] =
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHTILETYPES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
+                            ["ADD_OPTION"]  = "ADDafterSECTION",
+                            ["ADD"] =
 [[
     <Property value="GcTileTypeSet.xml">
       <Property name="Probability" value="0.25" />
@@ -350,22 +350,22 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						},
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPTILETYPES.MBIN",
-					["EXML_CHANGE_TABLE"] =
-					{
-						{
-							["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
-							["REPLACE_TYPE"]  = "ALL",
-							["REMOVE"] = "SECTION",
-						},
-						{
-							["PRECEDING_KEY_WORDS"] = {"TileTypeSets"},
-							["ADD_OPTION"]  = "ADDafterLINE",
-							["ADD"] =
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPTILETYPES.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"GcTileTypeSet.xml"},
+                            ["REPLACE_TYPE"]  = "ALL",
+                            ["REMOVE"] = "SECTION",
+                        },
+                        {
+                            ["PRECEDING_KEY_WORDS"] = {"TileTypeSets"},
+                            ["ADD_OPTION"]  = "ADDafterLINE",
+                            ["ADD"] =
 [[
     <Property value="GcTileTypeSet.xml">
       <Property name="Probability" value="1" />
@@ -527,10 +527,10 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
     </Property>
 ]]
-						},
-					}
-				},
-			}
-		},
-	}
+                        },
+                    }
+                },
+            }
+        },
+    }
 }
