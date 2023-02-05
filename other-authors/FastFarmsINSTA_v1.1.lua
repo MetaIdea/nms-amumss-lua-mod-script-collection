@@ -1,4 +1,5 @@
-NMS_MOD_DEFINITION_CONTAINER = {
+NMS_MOD_DEFINITION_CONTAINER = 
+{
     ["MOD_FILENAME"]    = "FastFarmsINSTA_v1.1.pak",
     ["MOD_DESCRIPTION"]    = "Who wants to farm? Just give me my stuff already",
     ["MOD_AUTHOR"]        = "courtykat.aka.MusicAndSilence",
