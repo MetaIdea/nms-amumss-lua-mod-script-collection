@@ -241,12 +241,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Combat",      "0"},
-                                {"Exploration", "0"},
-                                {"Mining",      "0"},
-                                {"Diplomacy",   "0"},
-                                {"Support",     "0"},
-                                {"Normandy",    "0"},
+                                {"Combat",          "0"},
+                                {"Exploration",     "0"},
+                                {"Mining",          "0"},
+                                {"Diplomacy",       "0"},
+                                {"Support",         "0"},
+                                {"Normandy",        "0"},
+                                {"DeepSpace",       "0"},
+                                {"DeepSpaceCommon", "0"},
                             }
                         },
                     }
