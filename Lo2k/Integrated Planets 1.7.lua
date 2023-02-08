@@ -1,9 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Integrated Planets 1.6.pak", 
+["MOD_FILENAME"] 			= "Integrated Planets 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.62",
-["MOD_DESCRIPTION"]			= "This mod multiply by ten all freighter warp drive ranges",
+["LUA_AUTHOR"]				= "Lo2k",
+["NMS_VERSION"]				= "4.08",
+["MOD_DESCRIPTION"]			= "This mod rebalances space fog over planets, distant ships and asteroids",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -23,7 +24,6 @@ NMS_MOD_DEFINITION_CONTAINER =
 							},
 						},
 						{
-							["INTEGER_TO_FLOAT"] = "FORCE",
 							["PRECEDING_KEY_WORDS"] = {"SpaceSkyMax",},
 							["INTEGER_TO_FLOAT"] = "FORCE",
 							["VALUE_CHANGE_TABLE"] 	= 
