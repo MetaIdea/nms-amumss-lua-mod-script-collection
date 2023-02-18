@@ -1,5 +1,8 @@
--- OVERRIDE TO TURN OFF REPLACEMENTS
-CONSTRUCT_PLANET_RINGS = true
+-- OVERRIDE TO TURN ON/OFF PLANET RINGS
+-- PLANET RINGS HAVE NO PROC GEN AND APPEARS ON EVERY PLANET
+CONSTRUCT_PLANET_RINGS = false
+-- OVERRIDE TO TURN ON/OFF CHANCE OF CONSTRCT ADD-ONS NOT INCLUDING CONSTRUCT BUILDINGS
+USE_NULL = true
 
 -- MAIN CONSTRUCT SCENES LIST
 -- SCENE NODE NAME/ID IN DESCRIPTOR & FILE PATHS
@@ -99,6 +102,9 @@ CONSTRUCT_SCENES =
 			},
 			{	["NAME"] = "NPROC_SILOS", 
 				["SCENEGRAPH"] = "CUSTOMMODELS\MSSP\CONSTRUCTSILOPROC\CONSTRUCTSILOPROC.SCENE.MBIN",
+			},
+			{	["NAME"] = "VAN_LUNA", 
+				["SCENEGRAPH"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LUNAR\LUNARPROC.SCENE.MBIN",
 			},
 		},
 	},
@@ -398,6 +404,9 @@ MISC_REPLACEMENTS =
 			{	["NAME"] = "NPROC_SILOS", 
 				["SCENEGRAPH"] = "CUSTOMMODELS\MSSP\CONSTRUCTSILOPROC\CONSTRUCTSILOPROC.SCENE.MBIN",
 			},
+			{	["NAME"] = "VAN_LUNA", 
+				["SCENEGRAPH"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LUNAR\LUNARPROC.SCENE.MBIN",
+			},
 		},
 -- TRANSFORM OF INSERT REFERENCE NODES
 		["Transform"] =
@@ -470,6 +479,9 @@ MISC_REPLACEMENTS =
 			{	["NAME"] = "NPROC_GTOWER", 
 				["SCENEGRAPH"] = "CUSTOMMODELS\MSSP\CONSTRUCTGLUEGUNTOWER\CONSTRUCTGLUEGUNTOWER.SCENE.MBIN",
 			},
+			{	["NAME"] = "VAN_LUNA", 
+				["SCENEGRAPH"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LUNAR\LUNARPROC.SCENE.MBIN",
+			},
 		},
 -- TRANSFORM OF INSERT REFERENCE NODES
 		["Transform"] =
@@ -517,6 +529,9 @@ MISC_REPLACEMENTS =
 		{
 			{	["NAME"] = "NPROC_SILOS", 
 				["SCENEGRAPH"] = "CUSTOMMODELS\MSSP\CONSTRUCTSILOPROC\CONSTRUCTSILOPROC.SCENE.MBIN",
+			},
+			{	["NAME"] = "VAN_LUNA", 
+				["SCENEGRAPH"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LUNAR\LUNARPROC.SCENE.MBIN",
 			},
 		},
 -- TRANSFORM OF INSERT REFERENCE NODES
@@ -566,6 +581,9 @@ MISC_REPLACEMENTS =
 			{	["NAME"] = "PROC_B", 
 				["SCENEGRAPH"] = "CUSTOMMODELS\MSSP\CONSTRUCTFTTOWERPROC\CONSTRUCTFTTOWERPROC.SCENE.MBIN",
 			},
+			{	["NAME"] = "VAN_LUNA", 
+				["SCENEGRAPH"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LUNAR\LUNARPROC.SCENE.MBIN",
+			},
 		},
 -- TRANSFORM OF INSERT REFERENCE NODES
 		["Transform"] =
@@ -573,7 +591,7 @@ MISC_REPLACEMENTS =
 			-- LOCATION X IN BLENDER
 			["TransX"] = "10",
 			-- LOCATION Z IN BLENDER
-			["TransY"] = "-5",
+			["TransY"] = "0",
 			-- MINUS LOCATION Y IN BLENDER
 			["TransZ"] = "95",
 			-- ROTATION X IN BLENDER
@@ -618,13 +636,13 @@ TABLE_TABLE =
 {
 	{	["RACE"] = "Traders",
 		-- ["SubType"] = { "None", "StoryGlitch"}
-		["SubType"] = { "None", "StoryGlitch", "Terminal", "Waypoint", "Beacon"}
+		["SubType"] = { "None", "StoryGlitch", "Terminal" }
 	},
 	{	["RACE"] = "Warriors",
-		["SubType"] = { "None", "StoryGlitch", "Terminal", "Waypoint", "Beacon"}
+		["SubType"] = { "None", "StoryGlitch", "Terminal" }
 	},
 	{	["RACE"] = "Explorers",
-		["SubType"] = { "None", "StoryGlitch", "Terminal", "Waypoint", "Beacon"}
+		["SubType"] = { "None", "StoryGlitch", "Terminal" }
 	},
 	{	["RACE"] = "None",
 		["SubType"] = { "None", "Terminal", "StoryGlitch", "Beacon" }
@@ -990,9 +1008,9 @@ TOTAL_REPLACEMENT =
 { 1,
 [[Install ReConstructs add-on for vanilla buildings?
 0 - No
-1 - Yes
+1 - Yes (default)
 2 - Decide for each building type
-]] }
+]], 10 }
 
 TOTAL_DECISION =
 {	
@@ -1015,8 +1033,8 @@ end
 for _i,j in pairs(MISC_REPLACEMENTS) do
 	REPLACEMENT_PROMPT = { true,
 	[[Add ReConstructs buildings into the "]] .. j["NAME"] .. [[" building type?
-Default is TRUE
-]] }
+Default is YES (Y)
+]], 10 }
 	if ASK then
 		DO_REPLACEMENT = GUIF(REPLACEMENT_PROMPT)
 	end
@@ -1040,9 +1058,12 @@ Default is TRUE
 			EXPORT_SCENE_DESCRIPTOR = {}
 			-- GENERATING VANILLA TRADING POST REFERENCE NODE & DESCRIPTOR ID
 			if j["Replacement"] then
+				-- IF REPLACEMENT, ADD VANILLA SCENE AS PROC-GEN OPTION
 				VANILLA_SCENE = GetSceneReference("_VANILLA_" .. l["RACE"], l["SCENEGRAPH"], DEFAULT_TRANSFORMS)
 				VANILLA_DESCRIPTOR = GetDescriptorEntry("VANILLA_" .. l["RACE"], l["SCENEGRAPH"])
 			else
+				-- IF ADD-ON, ADD VANILLA SCENE AS STRAIGHT REFERENCE
+				-- ALSO ADDS A 
 				VANILLA_SCENE = GetSceneReference("VANILLA_" .. l["RACE"], l["SCENEGRAPH"], DEFAULT_TRANSFORMS) .. [[
 		<Property value="TkSceneNodeData.xml">
 		  <Property name="Name" value="_]] .. j["NAME"] .. [[_NULL" />
@@ -1072,7 +1093,10 @@ Default is TRUE
 			  <Property name="Children" />
 			</Property>
 ]]
-				VANILLA_DESCRIPTOR = ""
+				-- OVERRIDE VANILLA_DESCRIPTOR TO NOT INCLUDE NULL PROC-GEN OPTION
+				if not USE_NULL then
+					VANILLA_DESCRIPTOR = ""
+				end
 			end
 			EXPORT_SCENE_DESCRIPTOR =
 				{
@@ -1115,6 +1139,7 @@ Default is TRUE
 						["Contents"] = "",
 					}
 				}
+			-- IF VANILLA SCENE HAS DESCRIPTOR, COPY OVER VANILLA DESCRIPTOR AND ADD CONSTRUCTS PROC-GEN DATA INTO FILE
 			if l["DESCRIPTOR"] then
 				EXPORT_SCENE_DESCRIPTOR["DESCRIPTOR"]["Contents"] = [[
 	<Property value="TkResourceDescriptorList.xml">
@@ -1146,6 +1171,7 @@ Default is TRUE
 					}
 				}
 			})
+			-- IF VANILLA SCENE HAS NO DESCRIPTOR, CREATE NEW DESCRIPTOR FILE
 			else
 				EXPORT_SCENE_DESCRIPTOR["DESCRIPTOR"]["Contents"] = [[<?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.37.0)-->
