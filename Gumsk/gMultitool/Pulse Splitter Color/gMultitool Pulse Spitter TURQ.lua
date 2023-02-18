@@ -7,17 +7,17 @@ Author			= "Gumsk"
 ModName 		= "gMultitool Pulse Spitter"
 ModNameSub		= ColorName
 BaseDescription = "Changes the pulse spitter projectile and explosion color to "..ColorName
-GameVersion 	= "407"
-ModVersion		= "b"
+GameVersion 	= "408"
+ModVersion		= "a"
 
 FileSource1 	= "MODELS/COMMON/PROJECTILES/MULTITOOL_SMG.SCENE.MBIN"
 FileSource2 	= "MODELS/COMMON/PROJECTILES/MULTITOOL_SMG/PROJECTILEMESHMAT.MATERIAL.MBIN"
 FileSource3 	= "MODELS/COMMON/PROJECTILES/MULTITOOL_SMG/EMITTERS/SPARKLEMITTER1.PARTICLE.MBIN"
 FileSource4		= "MODELS/COMMON/WEAPONS/MULTITOOL/SMGMUZZLEFLASH.SCENE.MBIN"
 FileSource5		= "MODELS/EFFECTS/MUZZLE/SMGMUZZLE/MUZZLEMAIN.PARTICLE.MBIN"
-FileSource6		= "MODELS\EFFECTS\PROJECTILES\SMG\SMG_HIT\EMITTERS\GLOW_EMITTER.PARTICLE.MBIN"
-FileSource7		= "MODELS\EFFECTS\PROJECTILES\SMG\SMG_HIT\EMITTERS\SPARKS_EMITTER.PARTICLE.MBIN"
-FileSource8		= "MODELS\EFFECTS\PROJECTILES\SMG\SMG_HIT\EMITTERS\SMOKE_EMITTER.PARTICLE.MBIN"
+FileSource6		= "MODELS/EFFECTS/PROJECTILES/SMG/SMG_HIT/EMITTERS/GLOW_EMITTER.PARTICLE.MBIN"
+FileSource7		= "MODELS/EFFECTS/PROJECTILES/SMG/SMG_HIT/EMITTERS/SPARKS_EMITTER.PARTICLE.MBIN"
+FileSource8		= "MODELS/EFFECTS/PROJECTILES/SMG/SMG_HIT/EMITTERS/SMOKE_EMITTER.PARTICLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]			= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -57,9 +57,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{
 							["SPECIAL_KEY_WORDS"] = {"Name","gMaterialColourVec4"},
 							["VALUE_CHANGE_TABLE"] = {
-								{"x", RedAmount},			--0.032
-								{"y", GreenAmount},			--1
-								{"z", BlueAmount},			--0.562835
+								{"x", RedAmount/3},			--0.032
+								{"y", GreenAmount/3},		--1
+								{"z", BlueAmount/3},		--0.562835
 							},
 						},
 					},
