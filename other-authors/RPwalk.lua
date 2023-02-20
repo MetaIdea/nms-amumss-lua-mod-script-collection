@@ -33,7 +33,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BobAmount",	"0.1"},
-								{"BobFactor",	"0.3"}
+								{"BobFactor",	"0.4"}
 							}	
 						},
 					}
