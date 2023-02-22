@@ -1,6 +1,36 @@
 SPECIAL_LIST =
 {
 	{
+		["ShopNumber"] = "75",
+		["Table"] =  
+		{
+			{ ["ID"] = "EXPD_SHIP09",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_BANNER09",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_DECAL09",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_TITLE09",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_EGG_09",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "SPEC_BUCKETHELM",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "BLD_HOLOGEK",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER09C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER09B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "EXPD_POSTER09A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP26",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP27",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP28",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP29",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_SHIP30",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET15",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_PET16",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN11",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_GUN12",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW06A",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW06B",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW06C",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW06D",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+			{ ["ID"] = "TWITCH_FIREW06E",	["IsConsumable"] = "False", ["IsCape"] = "False"},
+		}
+	},
+	{
 		["ShopNumber"] = "71",
 		["Table"] =  
 		{
@@ -242,10 +272,10 @@ return[[    <Property value="GcPurchaseableSpecial.xml">
 end
 
 NEW_SPECIAL = {}
-for _,j in pairs(SPECIAL_LIST) do
+for i,j in pairs(SPECIAL_LIST) do
 	SHOP_LIST_TEMP = {}
 	SPECIAL_EXPORT = {}
-	for _,l in ipairs(j["Table"]) do
+	for k,l in ipairs(j["Table"]) do
 		table.insert(SHOP_LIST_TEMP, GetNewSpecial(l["ID"], l["IsConsumable"], l["IsCape"]))
 	end
 	SPECIAL_EXPORT =
