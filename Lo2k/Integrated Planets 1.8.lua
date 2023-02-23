@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Integrated Planets 1.7.pak", 
+["MOD_FILENAME"] 			= "Integrated Planets 1.8.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.08",
+["NMS_VERSION"]				= "4.10",
 ["MOD_DESCRIPTION"]			= "This mod rebalances space fog over planets, distant ships and asteroids",
 ["MODIFICATIONS"] 			= 
 	{
