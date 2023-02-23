@@ -272,7 +272,7 @@ return[[    <Property value="GcPurchaseableSpecial.xml">
 end
 
 NEW_SPECIAL = {}
-for i,j in pairs(SPECIAL_LIST) do
+for _i,j in pairs(SPECIAL_LIST) do
 	SHOP_LIST_TEMP = {}
 	SPECIAL_EXPORT = {}
 	for k,l in ipairs(j["Table"]) do
