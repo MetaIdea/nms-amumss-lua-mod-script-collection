@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Ship Seat 1.9.pak", 
+["MOD_FILENAME"] 			= "Better Ship Seat 2.0.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.94",
+["NMS_VERSION"]				= "4.10",
 ["MOD_DESCRIPTION"]			= "This mod changes first person ship camera to be able to view all ship monitors",
 ["MODIFICATIONS"] 			= 
 	{
