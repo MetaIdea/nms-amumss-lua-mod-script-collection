@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------------
-local desc = [[
+mod_desc = [[
   Re-center the Scientific ship cockpitA (hopper) engine trail, which was misaligned
   Fix cockpit_A back & tail fins decals.
 ]]-----------------------------------------------------------------------------------
@@ -7,8 +7,8 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Scientific cockpitA trail FIX.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.10',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{

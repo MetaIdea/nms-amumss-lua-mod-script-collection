@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
-local desc = [[
+mod_desc = [[
   Fixes fighter's wingsK missing LOD sections and increases it to to 5 LOD stages
   Fixes the "unusual" decals descriptor choices so all decals show together
 ]]--------------------------------------------------------------------------------
@@ -48,8 +48,8 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.fighter wingK FIX.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '3.0+',
-	MOD_DESCRIPTION			= desc,
+	NMS_VERSION				= '4.10',
+	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE		= {
