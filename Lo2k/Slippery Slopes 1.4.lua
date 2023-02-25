@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Slippery Slopes 1.3.pak", 
+["MOD_FILENAME"] 			= "Slippery Slopes 1.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.07",
+["NMS_VERSION"]				= "4.10",
 ["MOD_DESCRIPTION"]			= "This mods makes slopes slippery",
 ["MODIFICATIONS"] 			= 
 	{
@@ -17,8 +17,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 						{
 							["VALUE_CHANGE_TABLE"] 	= 
 							{	
-								{"SlopeSlidingSpeed", "-15"},  -- original -50
-								{"SlopeSlideBrake", "18.5"},  -- original 0
+								{"SlopeSlidingSpeed", "-50"},  -- original -15
+								{"SlopeSlideBrake", "0"},  -- original 18.5
 							},
 						},
 					}

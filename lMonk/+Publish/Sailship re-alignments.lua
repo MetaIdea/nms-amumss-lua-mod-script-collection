@@ -1,5 +1,5 @@
 -----------------------------------------------------------------
-local desc = [[
+mod_desc = [[
   Sailship re-alignments:
    Engine trails for body_A, _wings_D & wings_E
    Decal tweaks (noticeable mainly when using my logo decals mod)
@@ -61,8 +61,8 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.sailship re-alignments.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.10',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
