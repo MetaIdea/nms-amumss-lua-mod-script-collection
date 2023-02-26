@@ -1,14 +1,14 @@
---------------------------------------------------------------------------
-local desc = [[
+-----------------------------------------------------------------------------------
+mod_desc = [[
   removes the notification panel's background and icon and add transparency
-  to the text - fading the message into the background (and a bit harder to read)
-]]------------------------------------------------------------------------
+  to the text - fading the message into the background (makes it a bit harder to read)
+]]---------------------------------------------------------------------------------
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 			= '_MOD.lMonk.FADED Notifications.pak',
 	MOD_AUTHOR				= 'lMonk',
-	NMS_VERSION				= '4.08',
-	MOD_DESCRIPTION			= desc,
+	NMS_VERSION				= '4.10',
+	MOD_DESCRIPTION			= mod_desc,
 	GLOBAL_INTEGER_TO_FLOAT = 'Force',
 	MODIFICATIONS 			= {{
 	MBIN_CHANGE_TABLE 		= {
