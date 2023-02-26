@@ -1,13 +1,13 @@
 --------------------------------------------------------------------------
-local desc = [[
+mod_desc = [[
   Dim lights on dropship subwing_F (and fix the inverted decal)
 ]]------------------------------------------------------------------------
-	
+
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Dropship fanwing light dim.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.10',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
