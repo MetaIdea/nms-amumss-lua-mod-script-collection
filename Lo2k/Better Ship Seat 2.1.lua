@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Ship Seat 2.0.pak", 
+["MOD_FILENAME"] 			= "Better Ship Seat 2.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
 ["NMS_VERSION"]				= "4.10",
