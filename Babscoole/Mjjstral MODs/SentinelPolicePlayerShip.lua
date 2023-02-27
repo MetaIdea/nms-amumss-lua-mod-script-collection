@@ -157,6 +157,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Title" value="Police" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="POLICE" />
       <Property name="AnimationName" value="POLICE" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS" />
@@ -186,6 +187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Title" value="Police" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="POLICE" />
       <Property name="AnimationName" value="POLICE" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS" />

@@ -473,6 +473,7 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="]] .. ANIM_ID .. [[" />
       <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />
@@ -502,6 +503,7 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="]] .. ANIM_ID .. [[" />
       <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />

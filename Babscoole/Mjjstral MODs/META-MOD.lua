@@ -914,6 +914,7 @@ return [[
       <Property name="Title" value="]] .. TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="]] .. ANIM .. [[" />
       <Property name="AnimationName" value="]] .. ANIM .. [[" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />

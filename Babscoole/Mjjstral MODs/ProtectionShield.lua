@@ -985,6 +985,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Title" value="Shield" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="TOGGLE_SHIELD" />
       <Property name="AnimationName" value="TOGGLE_SHIELD" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SUIT.PROTECTION.DDS" />
@@ -1014,6 +1015,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Title" value="Shield" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="TOGGLE_SHIELD" />
       <Property name="AnimationName" value="TOGGLE_SHIELD" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/STATS/STATS.SUIT.PROTECTION.DDS" />
