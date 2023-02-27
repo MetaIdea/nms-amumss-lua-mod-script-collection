@@ -121,11 +121,11 @@ Obs_Array = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"] 			= "Renewed Riddles 1.9.pak",
+["MOD_FILENAME"] 			= "Renewed Riddles 2.0.pak",
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k (with bits of WinderTP)",
 ["MOD_DESCRIPTION"]			= "Changes all riddles with new ones",
-["NMS_VERSION"]				= "4.05",
+["NMS_VERSION"]				= "4.10",
 ["MODIFICATIONS"]	= {{
 ["PAK_FILE_SOURCE"] = "",
 ["MBIN_CHANGE_TABLE"] = {{
