@@ -42,6 +42,55 @@ MULTIPLIER_TABLE =
 	},
 }
 
+CREATURE_MULTIPLIER =
+{
+	{
+		["Type"] = "FIEND_EGG",
+		["MinAmount"] = 2,
+		["MaxAmount"] = 6,		
+	},
+	{
+		["Type"] = "FIEND_DROP",
+		["MinAmount"] = 2,
+		["MaxAmount"] = 2.5,		
+	},
+	{
+		["Type"] = "FLOATER",
+		["MinAmount"] = 3,
+		["MaxAmount"] = 4,		
+	},
+	{
+		["Type"] = "FAST_FLOATER",
+		["MinAmount"] = 3,
+		["MaxAmount"] = 3,		
+	},
+	{
+		["Type"] = "MINIDRONE",
+		["MinAmount"] = 2,
+		["MaxAmount"] = 3.5,		
+	},
+	{
+		["Type"] = "SLUG",
+		["MinAmount"] = 2,
+		["MaxAmount"] = 8,		
+	},
+	{
+		["Type"] = "BUG",
+		["MinAmount"] = 1.75,
+		["MaxAmount"] = 2.5,		
+	},
+	{
+		["Type"] = "SANDWORMPOS",
+		["MinAmount"] = 2,
+		["MaxAmount"] = 5,		
+	},
+	{
+		["Type"] = "FIEND",
+		["MinAmount"] = 3,
+		["MaxAmount"] = 6,		
+	},
+}
+
 SHIP_MULTIPLIER =
 {
 	["Standard"] = 
@@ -95,6 +144,8 @@ return
 		},
 		["VALUE_CHANGE_TABLE"] 	= 
 		{
+			-- {"x",	1},
+			-- {"y",	1},
 			{"x",	MIN},
 			{"y",	MAX},
 		}
@@ -172,7 +223,7 @@ return
 			<Property name="MinAngleVisible" value="0" />
 			<Property name="ShipsToMark" value="None" />
 		  </Property>
-		  <Property name="AttackFreighter" value="False" />
+		  <Property name="AttackFreighter" value="True" />
 		  <Property name="Spread" value="Vector2f.xml">
 			<Property name="x" value="375" />
 			<Property name="y" value="375" />
@@ -197,7 +248,7 @@ return
 	}
 end
 
-function GetStationShipMultiply(MULT)
+function GetStationShipMultiply(MIN, MAX)
 return
 {
 	["MBIN_FILE_SOURCE"] 	= "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
@@ -208,11 +259,34 @@ return
 			["REPLACE_TYPE"] = "ONCE",
 			["VALUE_CHANGE_TABLE"] 	= 
 			{
-				{"PoliceStationNumToLaunch",	MULT},
+				{"PoliceStationNumToLaunch",	MIN},
+				-- {"FreighterMaxNumLaunchedShips",	MIN},
+				{"MaxNumActivePolice",	MAX},
+				-- {"PoliceNumPerTarget",	MIN},
 			},
 		}
 	}
 }
+end
+
+function GetCreatureMultiplyMin(TYPE, MULTI, ISMAX)
+MINMAX = ""
+if ISMAX then
+	MINMAX = "MaxNum"
+else MINMAX = "MinNum"
+end
+return
+	{
+		["SPECIAL_KEY_WORDS"] = {"Event", TYPE},
+		["PRECEDING_KEY_WORDS"] = {MINMAX},
+		["INTEGER_TO_FLOAT"] = "PRESERVE",
+		["MATH_OPERATION"] = "*",
+		["REPLACE_TYPE"] = "ALL",
+		["VALUE_CHANGE_TABLE"] 	= 
+		{
+			{"IGNORE",	MULTI},
+		}
+	}
 end
 
 CHANGE_TABLE = {}
@@ -221,11 +295,10 @@ MINEST_MIN = 1
 AISPACESHIP_CHANGE = { true, [[Multiply Space Station Sentinel ship spawn?
 It will modify GCAISPACESHIPGLOBALS, remember to check for mod conflicts!]] }
 
-INJECT_DECISION = GUIF(AISPACESHIP_CHANGE)
+INJECT_DECISION = GUIF(AISPACESHIP_CHANGE, 10)
 MBIN_CHANGE = {}
 if INJECT_DECISION then
-	STATIONSHIP_MULT = SHIP_MULTIPLIER["Standard"]["MinAmount"]
-	table.insert(MBIN_CHANGE, GetStationShipMultiply(STATIONSHIP_MULT))
+	table.insert(MBIN_CHANGE, GetStationShipMultiply(SHIP_MULTIPLIER["Standard"]["MinAmount"], SHIP_MULTIPLIER["Standard"]["MaxAmount"]))
 end
 
 for _,j in pairs(MULTIPLIER_TABLE) do
@@ -241,6 +314,11 @@ end
 for _,j in pairs(SHIP_MULTIPLIER) do
 	table.insert(CHANGE_TABLE, GetSentinelShipTypeMultiply(j["AIShipRole"],j["MinAmount"],j["MaxAmount"]))
 	table.insert(CHANGE_TABLE, GetSentinelShipSpreadMultiply(j["AIShipRole"],j["MinAmount"]))
+end
+
+for _,j in pairs(CREATURE_MULTIPLIER) do
+	table.insert(CHANGE_TABLE, GetCreatureMultiplyMin(j["Type"], j["MinAmount"], false))
+	table.insert(CHANGE_TABLE, GetCreatureMultiplyMin(j["Type"], j["MaxAmount"], true))
 end
 
 if MINEST_MIN > 1 then
