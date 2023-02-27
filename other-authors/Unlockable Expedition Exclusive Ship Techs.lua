@@ -1,7 +1,7 @@
 Author = "Syzzle"
 ModName = "Unlockable Expedition Exclusive Ship Techs"
-GameVersion = "4.07"
-ModVersion = "v1.2"
+GameVersion = "4.10"
+ModVersion = "v1.3"
 Description = "Add the Expedition 3 exclusive Ship Techs to the Anomaly list to be unlocked."
 
 UNLOCKABLEITEMTREES_WAVEFORM	=	[[
@@ -266,25 +266,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"]  = {"ID","F_MEGAWARP",},
 							["VALUE_CHANGE_TABLE"]  =
 							{
-								--{"Core","False"},
 								{"TechnologyRarity","Rare"},
 							}
 						},
-						-- {
-							-- ["SPECIAL_KEY_WORDS"]  = {"ID","F_MEGAWARP","TechShopRarity","GcTechnologyRarity.xml",},
-							-- ["VALUE_CHANGE_TABLE"]  =
-							-- {
-								-- {"TechnologyRarity","Normal"},
-							-- }
-						-- },
-						-- {
-							-- ["SPECIAL_KEY_WORDS"]  = {"ID","F_MEGAWARP",},
-							-- ["VALUE_CHANGE_TABLE"]  =
-							-- {
-								-- {"FragmentCost",4},
-								-- {"WikiEnabled","True"},
-							-- }
-						-- },
 					}
 				},	
 			}
