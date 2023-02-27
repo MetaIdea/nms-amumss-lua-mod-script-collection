@@ -45,22 +45,12 @@
 	EXOSUIT_TECH_HEIGHT  = 6	-- Exosuit tech inventory size H
 	
 
-----------Ultimate: Stack size multipliers----------
-	
-	--- These values multiply the default inventory stack sizes with the given number for each difficulty; default =1; ---
-	
-	STACK_MULT_CREA 	 = 100	-- Creative mode
-	STACK_MULT_NORM 	 = 100	-- Normal mode
-	STACK_MULT_SURV 	 = 100	-- Survival/Permadeath mode
-
-
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
-	["MOD_FILENAME"]             = "_Remove_Tech_Overload_Ultimate_3_5.pak", 
+	["MOD_FILENAME"]             = "_Remove_Tech_Overload_Plus_3_6.pak", 
 	["MOD_AUTHOR"]               = "chronicallybored",
-	["NMS_VERSION"]              = "4.08",
-	["MOD_DESCRIPTION"]          = "Removes technology overload, enables tech in cargo slots (deactivated for now since it's bugged), fixes UI/inventory bounds, expands inv/tech slots of just about anything depending on it's class and increases stack sizes by x100.",
+	["NMS_VERSION"]              = "4.1",
+	["MOD_DESCRIPTION"]          = "Removes technology overload, enables tech in cargo slots (deactivated for now since it's bugged), fixes UI/inventory bounds and expands inv/tech slots of just about anything depending on it's class.",
 	["MODIFICATIONS"]            = 
 
 	{
@@ -95,153 +85,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"WeaponInventoryMinWidthMax",        10},
                                 {"WeaponInventoryMinHeightMax",       6}
                             }
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
-							["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{	--- Stack size multipliers: Normal ---
-								{"SubstanceStackLimit", STACK_MULT_NORM},
-                                {"ProductStackLimit",   STACK_MULT_NORM},
-							},
-						},
-						{	
-							["SPECIAL_KEY_WORDS"] = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
-							["MATH_OPERATION"] = "*",
-                            ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Default",             STACK_MULT_NORM},
-                                {"Personal",            STACK_MULT_NORM},
-                                {"PersonalCargo",       STACK_MULT_NORM},
-                                {"Ship",                STACK_MULT_NORM},
-                                {"ShipCargo",           STACK_MULT_NORM},
-                                {"Freighter",           STACK_MULT_NORM},
-                                {"FreighterCargo",      STACK_MULT_NORM},
-                                {"Vehicle",             STACK_MULT_NORM},
-                                {"Chest",               STACK_MULT_NORM},
-                                {"BaseCapsule",         STACK_MULT_NORM},
-                                {"MaintenanceObject",   STACK_MULT_NORM},
-                                {"UIPopup",             STACK_MULT_NORM},
-							}
-						},
-						{	
-							["SPECIAL_KEY_WORDS"] = {"High", "GcDifficultyInventoryStackSizeOptionData.xml"},
-							["MATH_OPERATION"] = "*",
-                            ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Default",             STACK_MULT_NORM},
-                                {"Personal",            STACK_MULT_NORM},
-                                {"PersonalCargo",       STACK_MULT_NORM},
-                                {"Ship",                STACK_MULT_NORM},
-                                {"ShipCargo",           STACK_MULT_NORM},
-                                {"Freighter",           STACK_MULT_NORM},
-                                {"FreighterCargo",      STACK_MULT_NORM},
-                                {"Vehicle",             STACK_MULT_NORM},
-                                {"Chest",               STACK_MULT_NORM},
-                                {"BaseCapsule",         STACK_MULT_NORM},
-                                {"MaintenanceObject",   STACK_MULT_NORM},
-                                {"UIPopup",             STACK_MULT_NORM},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
-                            ["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{	--- Stack size multipliers: Survival/Permadeath ---
-								{"SubstanceStackLimit", STACK_MULT_SURV},
-                                {"ProductStackLimit",   STACK_MULT_SURV},
-							}
-						},
-						{	
-							["SPECIAL_KEY_WORDS"] = {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
-							["MATH_OPERATION"] = "*",
-                            ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Default",             STACK_MULT_SURV},
-                                {"Personal",            STACK_MULT_SURV},
-                                {"PersonalCargo",       STACK_MULT_SURV},
-                                {"Ship",                STACK_MULT_SURV},
-                                {"ShipCargo",           STACK_MULT_SURV},
-                                {"Freighter",           STACK_MULT_SURV},
-                                {"FreighterCargo",      STACK_MULT_SURV},
-                                {"Vehicle",             STACK_MULT_SURV},
-                                {"Chest",               STACK_MULT_SURV},
-                                {"BaseCapsule",         STACK_MULT_SURV},
-                                {"MaintenanceObject",   STACK_MULT_SURV},
-                                {"UIPopup",             STACK_MULT_SURV},
-							}
-						},
-						{	
-							["SPECIAL_KEY_WORDS"] = {"Normal", "GcDifficultyInventoryStackSizeOptionData.xml"},
-							["MATH_OPERATION"] = "*",
-                            ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Default",             STACK_MULT_SURV},
-                                {"Personal",            STACK_MULT_SURV},
-                                {"PersonalCargo",       STACK_MULT_SURV},
-                                {"Ship",                STACK_MULT_SURV},
-                                {"ShipCargo",           STACK_MULT_SURV},
-                                {"Freighter",           STACK_MULT_SURV},
-                                {"FreighterCargo",      STACK_MULT_SURV},
-                                {"Vehicle",             STACK_MULT_SURV},
-                                {"Chest",               STACK_MULT_SURV},
-                                {"BaseCapsule",         STACK_MULT_SURV},
-                                {"MaintenanceObject",   STACK_MULT_SURV},
-                                {"UIPopup",             STACK_MULT_SURV},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"]  = {"Low", "GcDifficultyInventoryStackSizeOptionData.xml"},
-                            ["MATH_OPERATION"] = "*",
-							["VALUE_CHANGE_TABLE"] =
-							{	--- Stack size multipliers: Easy/Creative ---
-								{"SubstanceStackLimit", STACK_MULT_CREA},
-                                {"ProductStackLimit",   STACK_MULT_CREA},
-							}
-						},
-						{	
-							["SPECIAL_KEY_WORDS"] = {"Low", "GcDifficultyInventoryStackSizeOptionData.xml"},
-							["MATH_OPERATION"] = "*",
-                            ["PRECEDING_KEY_WORDS"] = {"MaxSubstanceStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Default",             STACK_MULT_CREA},
-                                {"Personal",            STACK_MULT_CREA},
-                                {"PersonalCargo",       STACK_MULT_CREA},
-                                {"Ship",                STACK_MULT_CREA},
-                                {"ShipCargo",           STACK_MULT_CREA},
-                                {"Freighter",           STACK_MULT_CREA},
-                                {"FreighterCargo",      STACK_MULT_CREA},
-                                {"Vehicle",             STACK_MULT_CREA},
-                                {"Chest",               STACK_MULT_CREA},
-                                {"BaseCapsule",         STACK_MULT_CREA},
-                                {"MaintenanceObject",   STACK_MULT_CREA},
-                                {"UIPopup",             STACK_MULT_CREA},
-							}
-						},
-						{	
-							["SPECIAL_KEY_WORDS"] = {"Low", "GcDifficultyInventoryStackSizeOptionData.xml"},
-							["MATH_OPERATION"] = "*",
-                            ["PRECEDING_KEY_WORDS"] = {"MaxProductStackSizes"},
-                            ["VALUE_CHANGE_TABLE"]  =
-							{
-								{"Default",             STACK_MULT_CREA},
-                                {"Personal",            STACK_MULT_CREA},
-                                {"PersonalCargo",       STACK_MULT_CREA},
-                                {"Ship",                STACK_MULT_CREA},
-                                {"ShipCargo",           STACK_MULT_CREA},
-                                {"Freighter",           STACK_MULT_CREA},
-                                {"FreighterCargo",      STACK_MULT_CREA},
-                                {"Vehicle",             STACK_MULT_CREA},
-                                {"Chest",               STACK_MULT_CREA},
-                                {"BaseCapsule",         STACK_MULT_CREA},
-                                {"MaintenanceObject",   STACK_MULT_CREA},
-                                {"UIPopup",             STACK_MULT_CREA},
-							}
 						},
 					}	
 				}

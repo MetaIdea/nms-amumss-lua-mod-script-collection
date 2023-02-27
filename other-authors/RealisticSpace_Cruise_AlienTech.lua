@@ -359,7 +359,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PIRATE_FREIGHT Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
@@ -368,7 +368,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PIRATE_EASY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
@@ -377,7 +377,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PIRATE_MEDIUM Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
@@ -386,7 +386,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PIRATE_HARD Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_HARD"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
@@ -396,7 +396,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICE"},
 			["VALUE_CHANGE_TABLE"] = {
 			{"Reward","TRADER_LOOT"},
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
@@ -405,7 +405,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --TRADER Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","TRADER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
@@ -414,7 +414,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --TRADER ESCORT Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","TRADER_ESCORT"},
 			["VALUE_CHANGE_TABLE"] = {{"Reward","PIRAT_LOOT_HARD"},
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
@@ -423,7 +423,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --RAIDERS(BUILDING) Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
@@ -432,7 +432,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --RAIDERS(DOGFIGHT) Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},
@@ -441,7 +441,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PLAYER_SQUADRON Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PLAYER_SQUADRON"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"PlanetEngine","PLANET_HARD"},
@@ -449,7 +449,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PLANET_FLYBY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","10"},
+			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
 			{"Engine","SPACE_HARD"},

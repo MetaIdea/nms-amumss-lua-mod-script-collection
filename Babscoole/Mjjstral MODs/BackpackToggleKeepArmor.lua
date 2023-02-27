@@ -137,6 +137,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Title" value="Toggle Backpack" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="BACKPACK_TOGGLE" />
       <Property name="AnimationName" value="BACKPACK_TOGGLE" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS" />
@@ -166,6 +167,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Title" value="Toggle Backpack" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="BACKPACK_TOGGLE" />
       <Property name="AnimationName" value="BACKPACK_TOGGLE" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS" />

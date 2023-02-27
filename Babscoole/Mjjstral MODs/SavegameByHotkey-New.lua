@@ -104,6 +104,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Title" value="Save" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="SAVEGAME" />
       <Property name="AnimationName" value="SAVEGAME" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
@@ -133,6 +134,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Title" value="Save" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="SAVEGAME" />
       <Property name="AnimationName" value="SAVEGAME" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
