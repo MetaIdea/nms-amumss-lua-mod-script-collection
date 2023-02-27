@@ -7,7 +7,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "VR-SHIP-HEADLIGHTS-TOGGLEABLE.pak",
 ["MOD_AUTHOR"]    = "Mjjstral",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.10",
 ["DESCRIPTION"]   = "Activate: Hold the right ship control lever and grab the left exit handle, Disable: Grab the left or right exit handle",
 ["MODIFICATIONS"] =
     {
@@ -111,7 +111,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="DISABLE_LIGHT" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -131,7 +133,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="HND_CTRL_CPIT_R" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -145,7 +149,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="DISABLE_LIGHT" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -159,7 +165,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="DISABLE_LIGHT" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -179,7 +187,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="ENABLE_LIGHT" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -193,7 +203,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BASE_STATE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -225,7 +237,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BASE_STATE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -257,7 +271,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BASE_STATE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>

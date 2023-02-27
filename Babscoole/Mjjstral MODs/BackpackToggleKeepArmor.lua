@@ -41,7 +41,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Mjjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
 ["MOD_DESCRIPTION"] = "Turn on and off your backpack, toggleable in the quick action menu (gestures tab)",
-["NMS_VERSION"]     = "4.08",
+["NMS_VERSION"]     = "4.10",
 ["MODIFICATIONS"]   =
     {
         {
@@ -140,6 +140,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AnimationName" value="BACKPACK_TOGGLE" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -154,6 +157,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcPlayerEmote.xml">
@@ -163,6 +169,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AnimationName" value="BACKPACK_TOGGLE" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/COMPONENTS/CHARCUSTOMISE/BACKPACK.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -177,6 +186,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
 ]]

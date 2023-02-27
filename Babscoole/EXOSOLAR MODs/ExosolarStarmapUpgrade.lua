@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "_Exosolar's Starmap Upgrade.pak",
 ["MOD_AUTHOR"]    = "Exosolar",
 ["LUA_AUTHOR"]    = "Makto & Updated by Babscoole",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.10",
 ["MODIFICATIONS"] =
     {
         {
@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["SPECIAL_KEY_WORDS"] = {"Icon","TEXTURES/UI/FRONTEND/GALACTICMAP/VISITEDSYSTEMS.PNG","IconSize","Vector2f.xml",},
+                            ["SPECIAL_KEY_WORDS"] = {"Visited","GcGalaxyMarkerSettings.xml","IconSize","Vector2f.xml",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "45"},
@@ -613,6 +613,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SolarSystemParameters"},
+                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SystemTilt",     "12"},

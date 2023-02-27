@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "AtlasOrbWordoRama.pak",
 ["MOD_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.08",
+["NMS_VERSION"]     = "4.10",
 ["DESCRIPTION"]     = "All Atlas Orbs give Words",
 ["MODIFICATIONS"]   =
     {

@@ -43,7 +43,7 @@ ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
 ModMaintenance = "Babscoole"
 Description = ""
-NMS_Version = "4.08"
+NMS_Version = "4.10"
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/COSTTABLE.MBIN"

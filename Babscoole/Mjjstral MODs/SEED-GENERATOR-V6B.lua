@@ -476,6 +476,9 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -490,6 +493,9 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcPlayerEmote.xml">
@@ -499,6 +505,9 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -513,6 +522,9 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
 ]]
@@ -560,7 +572,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.08",
+["NMS_VERSION"]     = "4.10",
 ["MODIFICATIONS"]   =
     {
         {

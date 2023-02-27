@@ -88,13 +88,13 @@ WALLLIGHT_YELLOW = GetBlock("pointLight6", "3087372010", "0",     "0.25", "0",  
 HANGLAMP0        = GetBlock("Lite1",       "1008033010", "0",     "2.85", "0",      "-90", "0",   "-180", "0.75", "0.75", "0.75",  "360.000000", "linear",    "12500.000000", "1.000000", "0.80000",   "0.50000",  "0.000000", 0)
 HANGLAMP3        = GetBlock("Lite1",       "1008033010", "0",     "0.5",  "0",      "90",  "0",   "-180", "0.75", "0.75", "0.75",  "172.000000", "linear",    "20000.000000", "1.000000", "0.98000",   "0.95000",  "0.000000", 0)
 
-
+--Add FIREFLYTUBE, STANDLIGHT_SMALL, BARSIGN
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]  = "_Exo's Lumen.pak",
 ["MOD_AUTHOR"]    = "Exosolar and Babscoole",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.10",
 ["MODIFICATIONS"] =
     {
         {

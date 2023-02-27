@@ -50,7 +50,7 @@ QUICK_ACTION_LIST =
 
 USER_SEED_LIST =
 {
-    { "POLICESHIP", "0x0" },
+    { "POLICESHIP", "0x1" },
     { "FIGHTER", "0x8E8E2193DD4A9EDA" }, --ALPHA VECTOR
     { "FIGHTER", "0xC4C9C1AABCA59FE6" }, --HORIZON OMEGA
     { "FIGHTER", "0xA547AB958C97E439" }, --RASAMAMA S36
@@ -159,7 +159,9 @@ QUICK_ACTION_MENU =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SAVE" />
                   <Property name="Broadcast" value="True" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -185,7 +187,9 @@ QUICK_ACTION_MENU =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="GALACTICMAP" />
                   <Property name="Broadcast" value="True" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -403,7 +407,9 @@ QUICK_ACTION_MENU =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="HARVEST" />
                   <Property name="Broadcast" value="True" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -911,6 +917,9 @@ return [[
       <Property name="AnimationName" value="]] .. ANIM .. [[" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -925,6 +934,9 @@ return [[
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
 ]]
@@ -958,7 +970,7 @@ return [[
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
@@ -1084,8 +1096,13 @@ return [[
                 <Property name="Width" value="0" />
                 <Property name="Height" value="0" />
                 <Property name="IsCool" value="False" />
+                <Property name="Name" value="" />
                 <Property name="Version" value="0" />
               </Property>
+              <Property name="NameOverride" value="Police" />
+              <Property name="IsGift" value="True" />
+              <Property name="IsRewardShip" value="True" />
+              <Property name="FormatAsSeasonal" value="False" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -1295,7 +1312,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "4.08",
+["NMS_VERSION"]     = "4.10",
 ["MODIFICATIONS"]   =
     {
         {
@@ -1583,7 +1600,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="BOOT" />
                   <Property name="Broadcast" value="True" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -1730,7 +1749,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_SAVE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -1755,7 +1776,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_SAVE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -1774,7 +1797,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SAVE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -3012,7 +3037,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_HARVEST" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -3034,7 +3061,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_HARVEST" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -3053,7 +3082,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="HARVEST" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
