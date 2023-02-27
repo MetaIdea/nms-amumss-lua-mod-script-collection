@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Broken & Overloaded Slots 1.1.pak", 
+["MOD_FILENAME"] 			= "Better Broken & Overloaded Slots 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k & DarkScythe",
-["NMS_VERSION"]				= "4.05",
+["NMS_VERSION"]				= "4.10",
 ["MOD_DESCRIPTION"]			= "This mods improves broken and overloaded icons",
 ["MODIFICATIONS"] 			= 
 	{
