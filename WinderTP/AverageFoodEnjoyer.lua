@@ -162,9 +162,44 @@ return [[
       <Property name="Title" value="]] .. TITLE .. [[" />
       <Property name="ChatText" value="]] .. CHATTEXT .. [[" />
       <Property name="ChatUsesPrefix" value="]] .. CHATPREFIX .. [[" />
+      <Property name="EmoteID" value="]] .. ANIM .. [[" />
       <Property name="AnimationName" value="]] .. ANIM .. [[" />
+      <Property name="PropData" value="GcPlayerEmotePropData.xml">
+        <Property name="Model" value="" />
+        <Property name="Scale" value="0" />
+        <Property name="Hand" value="GcHand.xml">
+          <Property name="Hand" value="Right" />
+        </Property>
+        <Property name="IsHologram" value="False" />
+        <Property name="ScanEffectNodeName" value="" />
+        <Property name="ScanEffect" value="GcScanEffectData.xml">
+          <Property name="Id" value="" />
+          <Property name="ScanEffectType" value="Building" />
+          <Property name="Colour" value="Colour.xml">
+            <Property name="R" value="0.823" />
+            <Property name="G" value="0.475" />
+            <Property name="B" value="0.432" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="BasecolourIntensity" value="0.2" />
+          <Property name="ScanlinesSeparation" value="0.1" />
+          <Property name="FresnelIntensity" value="3" />
+          <Property name="GlowIntensity" value="0" />
+          <Property name="WaveOffset" value="0" />
+          <Property name="WaveActive" value="True" />
+          <Property name="FixedUpAxis" value="False" />
+          <Property name="Transparent" value="False" />
+          <Property name="ModelFade" value="False" />
+          <Property name="FadeInTime" value="0.2" />
+          <Property name="FadeOutTime" value="0.2" />
+        </Property>
+        <Property name="DelayTime" value="0" />
+      </Property>
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -179,6 +214,9 @@ return [[
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
 ]]
@@ -318,7 +356,9 @@ return [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="NO_STARVE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -364,7 +404,9 @@ return [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="STARVE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -407,7 +449,9 @@ return [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="NO_STARVE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -453,7 +497,9 @@ return [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="NO_THIRST" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -490,7 +536,9 @@ return [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="THIRST" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -521,7 +569,9 @@ return [[
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="NO_THIRST" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>

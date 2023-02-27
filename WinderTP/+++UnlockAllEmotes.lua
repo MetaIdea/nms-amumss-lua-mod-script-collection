@@ -3,28 +3,36 @@ EMOTE_GENERIC_ICON_HAPPY 	= "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/LAUGH.D
 EMOTE_GENERIC_ICON_ANGRY 	= "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/NEGATIVE.DDS"
 EMOTE_GENERIC_ICON_GREET 	= "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/WAVE.DDS"
 EMOTE_GENERIC_ICON_CHAT 	= "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/CELEBRATE.DDS"
+EMOTE_GENERIC_ICON_SAD 		= "TEXTURES/UI/FRONTEND/ICONS/QUICKMENU/EMOTES/KNEES.DDS"
 
 NEW_EMOTE_TABLE =
 {
-	{ ["TITLE"]="Happy 1", ["ANIM"]="0H_HAPPY_01", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Happy 2", ["ANIM"]="0H_HAPPY_02", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Happy 3", ["ANIM"]="0H_HAPPY_03", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Happy 4", ["ANIM"]="0H_HAPPY_04", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Happy 5", ["ANIM"]="0H_HAPPY_05", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Happy 6", ["ANIM"]="0H_HAPPY_06", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Happy 7", ["ANIM"]="0H_HAPPY_07", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Happy 8", ["ANIM"]="0H_HAPPY_08", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Angry 1", ["ANIM"]="0H_ANGRY_01", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Angry 2", ["ANIM"]="0H_ANGRY_02", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Angry 3", ["ANIM"]="0H_ANGRY_03", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Angry 4", ["ANIM"]="0H_ANGRY_04", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Greet 1", ["ANIM"]="0H_GREET_01", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Greet 2", ["ANIM"]="0H_GREET_02", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Greet 3", ["ANIM"]="0H_GREET_03", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Greet 4", ["ANIM"]="0H_GREET_04", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Greet 5", ["ANIM"]="0H_GREET_05", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Greet 6", ["ANIM"]="0H_GREET_06", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Greet 7", ["ANIM"]="0H_GREET_07", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Ah, Units", ["ANIM"]="0H_HAPPY_01", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_HAPPY_01" },
+	{ ["TITLE"]="Happy Dance", ["ANIM"]="0H_HAPPY_02", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_HAPPY_02" },
+	{ ["TITLE"]="Hell Yeah", ["ANIM"]="0H_HAPPY_03", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_STRETCH" },
+	{ ["TITLE"]="Doing Great", ["ANIM"]="0H_HAPPY_04", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Thumbs Up", ["ANIM"]="0H_HAPPY_05", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="You Got It", ["ANIM"]="0H_HAPPY_06", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Nod", ["ANIM"]="0H_HAPPY_07", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Enthusiatic Nod", ["ANIM"]="0H_HAPPY_08", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Reassuring Nod", ["ANIM"]="0H_HAPPY_09", ["ICON"]=EMOTE_GENERIC_ICON_HAPPY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Hmph!", ["ANIM"]="0H_ANGRY_01", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_ANGRY_01" },
+	{ ["TITLE"]="Disappointed", ["ANIM"]="0H_ANGRY_02", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_ANGRY_02" },
+	{ ["TITLE"]="Nuh-uh", ["ANIM"]="0H_ANGRY_03", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Talk to The Hand", ["ANIM"]="0H_ANGRY_04", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="You Ruined It", ["ANIM"]="0H_ANGRY_05", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="This Can't Be Happening", ["ANIM"]="0H_ANGRY_LP_01", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Do Not Want!", ["ANIM"]="0H_ANGRY_LP_02", ["ICON"]=EMOTE_GENERIC_ICON_ANGRY, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Why Bother?", ["ANIM"]="0H_SAD_LP_01", ["ICON"]=EMOTE_GENERIC_ICON_SAD, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Give Me A Hug", ["ANIM"]="0H_GREET_01", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_GREET_01" },
+	{ ["TITLE"]="Partner!", ["ANIM"]="0H_GREET_02", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_GREET_02" },
+	{ ["TITLE"]="Can You See Me", ["ANIM"]="0H_GREET_03", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Counting On You", ["ANIM"]="0H_GREET_04", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Namaste", ["ANIM"]="0H_GREET_05", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Come On!", ["ANIM"]="0H_GREET_06", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="That Light Is Bright", ["ANIM"]="0H_GREET_07", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Peace Be Upon You", ["ANIM"]="0H_GREET_08", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Hand It Over", ["ANIM"]="0H_GREET_09", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="Welcoming Ships", ["ANIM"]="0H_SHIP_ARRIVE", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\OVERHERE.DDS", ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="Seeing Ships Off", ["ANIM"]="0H_SHIP_LEAVE", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\POINT.DDS", ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="Using Visor", ["ANIM"]="BINOC_UNSHEATHE", ["ICON"]=EMOTE_GENERIC_ICON_GREET, ["CANCEL"]="True", ["LOOP"]="BINOC_LOOP", ["RIDE"]="" },
@@ -43,24 +51,24 @@ NEW_EMOTE_TABLE =
 	{ ["TITLE"]="Land Swim", ["ANIM"]="0H_SWIM_F", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\WATER_NO_PROBLEM.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="0H_SWIM_F" },
 	{ ["TITLE"]="Moonwalk", ["ANIM"]="0H_WALK_F", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\SPECIAL01.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="Moonrun", ["ANIM"]="0H_JOG_F", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\SPECIAL01.DDS", ["CANCEL"]="False", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="React 1", ["ANIM"]="0H_INT_RT_01_IN", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="False", ["LOOP"]="0H_INT_RT_01_LP", ["RIDE"]="" },
-	{ ["TITLE"]="React 2", ["ANIM"]="0H_INT_RT_02_IN", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="False", ["LOOP"]="0H_INT_RT_02_LP", ["RIDE"]="" },
-	{ ["TITLE"]="React 3", ["ANIM"]="0H_INT_RT_03", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="React 4", ["ANIM"]="0H_INT_RT_04", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 1", ["ANIM"]="0H_CHATTER_01", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 2", ["ANIM"]="0H_CHATTER_02", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 3", ["ANIM"]="0H_CHATTER_03", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 4", ["ANIM"]="0H_CHATTER_04", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 5", ["ANIM"]="0H_CHATTER_05", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 6", ["ANIM"]="0H_CHATTER_06", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 7", ["ANIM"]="0H_CHATTER_07", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 8", ["ANIM"]="0H_CHATTER_08", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 9", ["ANIM"]="0H_CHATTER_09", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 10", ["ANIM"]="0H_CHATTER_10", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 11", ["ANIM"]="0H_CHATTER_11", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 12", ["ANIM"]="0H_CHATTER_12", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 13", ["ANIM"]="0H_CHATTER_13", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
-	{ ["TITLE"]="Chatter 14", ["ANIM"]="0H_CHATTER_14", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Clap", ["ANIM"]="0H_INT_RT_01_IN", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="False", ["LOOP"]="0H_INT_RT_01_LP", ["RIDE"]="" },
+	{ ["TITLE"]="Grooving", ["ANIM"]="0H_INT_RT_02_IN", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="False", ["LOOP"]="0H_INT_RT_02_LP", ["RIDE"]="" },
+	{ ["TITLE"]="Casual Salute", ["ANIM"]="0H_INT_RT_03", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Formal Salute", ["ANIM"]="0H_INT_RT_04", ["ICON"]=EMOTE_GENERIC_ICON, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="How's It Going", ["ANIM"]="0H_CHATTER_01", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_CHAT_01" },
+	{ ["TITLE"]="Eh...", ["ANIM"]="0H_CHATTER_02", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="0H_SIT_CHAT_02" },
+	{ ["TITLE"]="How About This", ["ANIM"]="0H_CHATTER_03", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="My Offer", ["ANIM"]="0H_CHATTER_04", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Just For You!", ["ANIM"]="0H_CHATTER_05", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="You're Pretty Good", ["ANIM"]="0H_CHATTER_06", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="To The Moon", ["ANIM"]="0H_CHATTER_07", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Hold Up", ["ANIM"]="0H_CHATTER_08", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="What About That", ["ANIM"]="0H_CHATTER_09", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Calm Down", ["ANIM"]="0H_CHATTER_10", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="One.", ["ANIM"]="0H_CHATTER_11", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="Credits Will Do Fine", ["ANIM"]="0H_CHATTER_12", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="I Can Sense It", ["ANIM"]="0H_CHATTER_13", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
+	{ ["TITLE"]="No Thanks", ["ANIM"]="0H_CHATTER_14", ["ICON"]=EMOTE_GENERIC_ICON_CHAT, ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="" },
 	{ ["TITLE"]="One-hand Melee", ["ANIM"]="1H_MELEEHIT", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\THANKS.DDS", ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="1H_MELEEHIT" },
 	{ ["TITLE"]="Two-hand Melee", ["ANIM"]="2H_MELEEHIT", ["ICON"]="TEXTURES\UI\FRONTEND\ICONS\QUICKMENU\EMOTES\THANKS.DDS", ["CANCEL"]="True", ["LOOP"]="", ["RIDE"]="2H_MELEEHIT" },
 }
@@ -72,9 +80,44 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="]] .. ANIM_ID .. [[1" />
       <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
+      <Property name="PropData" value="GcPlayerEmotePropData.xml">
+        <Property name="Model" value="" />
+        <Property name="Scale" value="0" />
+        <Property name="Hand" value="GcHand.xml">
+          <Property name="Hand" value="Right" />
+        </Property>
+        <Property name="IsHologram" value="False" />
+        <Property name="ScanEffectNodeName" value="" />
+        <Property name="ScanEffect" value="GcScanEffectData.xml">
+          <Property name="Id" value="" />
+          <Property name="ScanEffectType" value="Building" />
+          <Property name="Colour" value="Colour.xml">
+            <Property name="R" value="0.823" />
+            <Property name="G" value="0.475" />
+            <Property name="B" value="0.432" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="BasecolourIntensity" value="0.2" />
+          <Property name="ScanlinesSeparation" value="0.1" />
+          <Property name="FresnelIntensity" value="3" />
+          <Property name="GlowIntensity" value="0" />
+          <Property name="WaveOffset" value="0" />
+          <Property name="WaveActive" value="True" />
+          <Property name="FixedUpAxis" value="False" />
+          <Property name="Transparent" value="False" />
+          <Property name="ModelFade" value="False" />
+          <Property name="FadeInTime" value="0.2" />
+          <Property name="FadeOutTime" value="0.2" />
+        </Property>
+        <Property name="DelayTime" value="0" />
+      </Property>
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -89,15 +132,53 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcPlayerEmote.xml">
       <Property name="Title" value="]] .. BUTTON_TITLE .. [[" />
       <Property name="ChatText" value="" />
       <Property name="ChatUsesPrefix" value="False" />
+      <Property name="EmoteID" value="]] .. ANIM_ID .. [[2" />
       <Property name="AnimationName" value="]] .. ANIM_ID .. [[" />
+      <Property name="PropData" value="GcPlayerEmotePropData.xml">
+        <Property name="Model" value="" />
+        <Property name="Scale" value="0" />
+        <Property name="Hand" value="GcHand.xml">
+          <Property name="Hand" value="Right" />
+        </Property>
+        <Property name="IsHologram" value="False" />
+        <Property name="ScanEffectNodeName" value="" />
+        <Property name="ScanEffect" value="GcScanEffectData.xml">
+          <Property name="Id" value="" />
+          <Property name="ScanEffectType" value="Building" />
+          <Property name="Colour" value="Colour.xml">
+            <Property name="R" value="0.823" />
+            <Property name="G" value="0.475" />
+            <Property name="B" value="0.432" />
+            <Property name="A" value="1" />
+          </Property>
+          <Property name="BasecolourIntensity" value="0.2" />
+          <Property name="ScanlinesSeparation" value="0.1" />
+          <Property name="FresnelIntensity" value="3" />
+          <Property name="GlowIntensity" value="0" />
+          <Property name="WaveOffset" value="0" />
+          <Property name="WaveActive" value="True" />
+          <Property name="FixedUpAxis" value="False" />
+          <Property name="Transparent" value="False" />
+          <Property name="ModelFade" value="False" />
+          <Property name="FadeInTime" value="0.2" />
+          <Property name="FadeOutTime" value="0.2" />
+        </Property>
+        <Property name="DelayTime" value="0" />
+      </Property>
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="]] .. ICON .. [[" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -112,6 +193,9 @@ QUICK_ACTION_BUTTON_TEMPLATE =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>	
 ]]
