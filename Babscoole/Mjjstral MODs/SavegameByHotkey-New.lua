@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "z-SavegameByHotkey-New.pak",
-["NMS_VERSION"]     = "4.08",
+["NMS_VERSION"]     = "4.10",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
 ["MODIFICATIONS"]   =
@@ -74,7 +74,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SAVE" />
                   <Property name="Broadcast" value="True" />
-                  <Property name="BroadcastLevel" value="Scene" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Scene" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -105,6 +107,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AnimationName" value="SAVEGAME" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -119,6 +124,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcPlayerEmote.xml">
@@ -128,6 +136,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AnimationName" value="SAVEGAME" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/HUD/ICONS/PLAYER/SAVE.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -142,6 +153,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
 ]]
@@ -301,7 +315,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_SAVE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -326,7 +342,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_SAVE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -345,7 +363,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="SAVE" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>

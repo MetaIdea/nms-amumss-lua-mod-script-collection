@@ -79,22 +79,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
-                {
-                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALMEMBRANE.SCENE.MBIN",
-                    ["EXML_CHANGE_TABLE"] =
-                    {
-                        {
-                            ["SPECIAL_KEY_WORDS"] = {"Name", "Pillar"},
-                            --["REMOVE"] = "SECTION",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
-                            ["VCT"] =
-                            {
-                                {"TransY", "3.4"},
-                                {"ScaleY", "0.3"},
-                            }
-                        },
-                    }
-                },
+                -- {
+                    -- ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PORTAL\PORTALMEMBRANE.SCENE.MBIN",
+                    -- ["EXML_CHANGE_TABLE"] =
+                    -- {
+                        -- {
+                            -- ["SPECIAL_KEY_WORDS"] = {"Name", "Pillar"},
+                            -- --["REMOVE"] = "SECTION",
+                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
+                            -- ["VCT"] =
+                            -- {
+                                -- {"TransY", "3.4"},
+                                -- {"ScaleY", "0.3"},
+                            -- }
+                        -- },
+                    -- }
+                -- },
                 {
                     ["MBIN_FILE_SOURCE"] =
                     {

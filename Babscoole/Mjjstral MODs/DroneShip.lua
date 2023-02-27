@@ -6,7 +6,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "DroneShip.pak",
 ["MOD_AUTHOR"]      = "Mjstral",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.08",
+["NMS_VERSION"]     = "4.10",
 ["DESCRIPTION"]     = "Cockpitable drone ship (unused nms pre release ship) you can get via quick action emote menu action",
 ["MODIFICATIONS"]   =
     {
@@ -131,7 +131,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_ACTION" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -153,7 +155,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="WAIT_FOR_ACTION" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -172,7 +176,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                 <Property value="GcGoToStateAction.xml">
                   <Property name="State" value="ACTION" />
                   <Property name="Broadcast" value="False" />
-                  <Property name="BroadcastLevel" value="Local" />
+                  <Property name="BroadcastLevel" value="GcBroadcastLevel.xml">
+                    <Property name="BroadcastLevel" value="Local" />
+                  </Property>
                 </Property>
               </Property>
             </Property>
@@ -203,6 +209,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AnimationName" value="TRIGGERANIM" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -217,6 +226,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcPlayerEmote.xml">
@@ -226,6 +238,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="AnimationName" value="TRIGGERANIM" />
       <Property name="Icon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/NOTIFICATIONS/ICON.SHIP.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="LinkedSpecialID" value="" />
       <Property name="NeverShowInMenu" value="False" />
@@ -240,6 +255,9 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="PetCommandTitle" value="" />
       <Property name="PetCommandIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
     </Property>
 ]]
@@ -259,136 +277,143 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="List" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
         <Property name="OverrideZeroSeed" value="False" />
-        <Property name="UseInventoryChoiceOverride" value="False"/>
+        <Property name="UseInventoryChoiceOverride" value="False" />
         <Property name="List">
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
-              <Property name="Reward" value="GcRewardSpecificShip.xml">
-                <Property name="ShipResource" value="GcResourceElement.xml">
-                  <Property name="Filename" value="]] .. SHIP_SCENE .. [[" />
-                  <Property name="ResHandle" value="GcResource.xml">
-                    <Property name="ResourceID" value="0" />
+            <Property name="Reward" value="GcRewardSpecificShip.xml">
+              <Property name="ShipResource" value="GcResourceElement.xml">
+                <Property name="Filename" value="]] .. SHIP_SCENE .. [[" />
+                <Property name="ResHandle" value="GcResource.xml">
+                  <Property name="ResourceID" value="0" />
+                </Property>
+                <Property name="Seed" value="GcSeed.xml">
+                    <Property name="Seed" value="]] .. 1 .. [[" />
+                  <Property name="UseSeedValue" value="True" />
+                </Property>
+                <Property name="AltId" value="" />
+                <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+                  <Property name="Samplers" />
+                </Property>
+              </Property>
+              <Property name="ShipLayout" value="GcInventoryLayout.xml">
+                <Property name="Slots" value="48" />
+                <Property name="Seed" value="GcSeed.xml">
+                  <Property name="Seed" value="1" />
+                  <Property name="UseSeedValue" value="True" />
+                </Property>
+                <Property name="Level" value="1" />
+              </Property>
+              <Property name="ShipInventory" value="GcInventoryContainer.xml">
+                <Property name="Slots">
+                  <Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="LAUNCHER" />
+                    <Property name="Amount" value="300" />
+                    <Property name="MaxAmount" value="300" />
+                    <Property name="DamageFactor" value="0" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
                   </Property>
-                  <Property name="Seed" value="GcSeed.xml">
-                    <Property name="Seed" value="]] .. 0 .. [[" />
-                    <Property name="UseSeedValue" value="True" />
+                  <Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="SHIPJUMP1" />
+                    <Property name="Amount" value="100" />
+                    <Property name="MaxAmount" value="100" />
+                    <Property name="DamageFactor" value="0" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
                   </Property>
-                  <Property name="AltId" value="" />
-                  <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-                    <Property name="Samplers" />
+                  <Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="SHIPSHIELD" />
+                    <Property name="Amount" value="200" />
+                    <Property name="MaxAmount" value="200" />
+                    <Property name="DamageFactor" value="0" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
+                  </Property>
+                  <Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="SHIPGUN1" />
+                    <Property name="Amount" value="1000" />
+                    <Property name="MaxAmount" value="1000" />
+                    <Property name="DamageFactor" value="0" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
+                  </Property>
+                  <Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="HYPERDRIVE" />
+                    <Property name="Amount" value="120" />
+                    <Property name="MaxAmount" value="120" />
+                    <Property name="DamageFactor" value="0" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
+                  </Property>
+                  <Property value="GcInventoryElement.xml">
+                    <Property name="Type" value="GcInventoryType.xml">
+                      <Property name="InventoryType" value="Technology" />
+                    </Property>
+                    <Property name="Id" value="SHIPLAS1" />
+                    <Property name="Amount" value="1000" />
+                    <Property name="MaxAmount" value="1000" />
+                    <Property name="DamageFactor" value="0" />
+                    <Property name="FullyInstalled" value="True" />
+                    <Property name="Index" value="GcInventoryIndex.xml">
+                      <Property name="X" value="-1" />
+                      <Property name="Y" value="-1" />
+                    </Property>
                   </Property>
                 </Property>
-                <Property name="ShipLayout" value="GcInventoryLayout.xml">
-                  <Property name="Slots" value="48" />
-                  <Property name="Seed" value="GcSeed.xml">
-                    <Property name="Seed" value="1" />
-                    <Property name="UseSeedValue" value="True" />
-                  </Property>
-                  <Property name="Level" value="1" />
+                <Property name="ValidSlotIndices" />
+                <Property name="Class" value="GcInventoryClass.xml">
+                  <Property name="InventoryClass" value="S" />
                 </Property>
-                <Property name="ShipInventory" value="GcInventoryContainer.xml">
-                  <Property name="Slots">
-                    <Property value="GcInventoryElement.xml">
-                      <Property name="Type" value="GcInventoryType.xml">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="LAUNCHER" />
-                      <Property name="Amount" value="0" />
-                      <Property name="MaxAmount" value="300" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="True" />
-                      <Property name="Index" value="GcInventoryIndex.xml">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property value="GcInventoryElement.xml">
-                      <Property name="Type" value="GcInventoryType.xml">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="SHIPJUMP1" />
-                      <Property name="Amount" value="0" />
-                      <Property name="MaxAmount" value="100" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="True" />
-                      <Property name="Index" value="GcInventoryIndex.xml">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property value="GcInventoryElement.xml">
-                      <Property name="Type" value="GcInventoryType.xml">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="SHIPSHIELD" />
-                      <Property name="Amount" value="200" />
-                      <Property name="MaxAmount" value="200" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="True" />
-                      <Property name="Index" value="GcInventoryIndex.xml">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property value="GcInventoryElement.xml">
-                      <Property name="Type" value="GcInventoryType.xml">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="SHIPGUN1" />
-                      <Property name="Amount" value="1000" />
-                      <Property name="MaxAmount" value="1000" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="True" />
-                      <Property name="Index" value="GcInventoryIndex.xml">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property value="GcInventoryElement.xml">
-                      <Property name="Type" value="GcInventoryType.xml">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="HYPERDRIVE" />
-                      <Property name="Amount" value="24" />
-                      <Property name="MaxAmount" value="120" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="True" />
-                      <Property name="Index" value="GcInventoryIndex.xml">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                    <Property value="GcInventoryElement.xml">
-                      <Property name="Type" value="GcInventoryType.xml">
-                        <Property name="InventoryType" value="Technology" />
-                      </Property>
-                      <Property name="Id" value="SHIPLAS1" />
-                      <Property name="Amount" value="1000" />
-                      <Property name="MaxAmount" value="1000" />
-                      <Property name="DamageFactor" value="0" />
-                      <Property name="FullyInstalled" value="True" />
-                      <Property name="Index" value="GcInventoryIndex.xml">
-                        <Property name="X" value="-1" />
-                        <Property name="Y" value="-1" />
-                      </Property>
-                    </Property>
-                  </Property>
-                  <Property name="ValidSlotIndices" />
-                  <Property name="Class" value="GcInventoryClass.xml">
-                    <Property name="InventoryClass" value="S" />
-                  </Property>
                 <Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
                   <Property name="InventoryStackSizeGroup" value="Default" />
                 </Property>
-                  <Property name="BaseStatValues" />
-                  <Property name="SpecialSlots" />
-                  <Property name="Width" value="0" />
-                  <Property name="Height" value="0" />
-                  <Property name="IsCool" value="False" />
-                  <Property name="Name" value="Drone Ship" />
-                  <Property name="Version" value="0" />
-                </Property>
+                <Property name="BaseStatValues" />
+                <Property name="SpecialSlots" />
+                <Property name="Width" value="0" />
+                <Property name="Height" value="0" />
+                <Property name="IsCool" value="False" />
+                <Property name="Name" value="Drone Ship" />
+                <Property name="Version" value="0" />
               </Property>
+              <Property name="ShipType" value="GcSpaceshipClasses.xml">
+                <Property name="ShipClass" value="Fighter" />
+              </Property>
+              <Property name="NameOverride" value="Drone Ship" />
+              <Property name="IsGift" value="True" />
+              <Property name="IsRewardShip" value="True" />
+              <Property name="FormatAsSeasonal" value="False" />
+            </Property>
             <Property name="LabelID" value="" />
           </Property>
         </Property>
