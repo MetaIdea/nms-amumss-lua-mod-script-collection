@@ -2,11 +2,11 @@ Author = "Gumsk"
 ModName = "gCreatures Sandworms"
 ModNameSub = "More"
 BaseDescription = "More Sandworms"
-GameVersion = "397"
+GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
+FileSource1 = "METADATA\\SIMULATION\\ECOSYSTEM\\CREATUREGENERATIONDATA.MBIN"
 FileSource2 = "GCCREATUREGLOBALS.MBIN"
-FileSource3 = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
+FileSource3 = "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN"
 
 SandwormPresenceChance = 0.5
 SandWormSpawnChanceMin = 0.2		--0.01

@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "388"
+GameVersion = "411"
 ModVersion = "a"
 ModNameSub = "Standing 2"
 BaseDescription = "Makes Standing Light 2 work without power and improves lighting."
@@ -11,7 +11,7 @@ EntityText = [[		<Property value="TkSceneNodeAttributeData.xml">
           <Property name="Value" value="GUMSK/GLIGHTALWAYSON.ENTITY.MBIN" />
         </Property>]]
 
-FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DECORATION\STANDINGLIGHT2.SCENE.MBIN"
+FileSource1 = "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\DECORATION\\STANDINGLIGHT2.SCENE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",

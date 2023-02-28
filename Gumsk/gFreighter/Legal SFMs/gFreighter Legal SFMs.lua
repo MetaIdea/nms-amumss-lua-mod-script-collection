@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gFreighter Legal SFMs"
 ModNameSub = "Normal"
 BaseDescription = "Makes legal salvaged frigate modules more common"
-GameVersion = "407"
+GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "METADATA\REALITY\TABLES\REWARDTABLE.MBIN"
+FileSource1 = "METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN"
 
 DerelictAbandCrateChance = 20	--5/198
 CrashedSmallChance = 25			--8/121

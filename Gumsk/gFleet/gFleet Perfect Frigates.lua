@@ -2,10 +2,10 @@ Author = "unsick"
 ModName = "gFleet Perfect Frigates"
 ModNameSub = ""
 BaseDescription = ""
-GameVersion = "408"
+GameVersion = "411"
 ModVersion = "a"
 FileSource1 = "GCFLEETGLOBALS.GLOBAL.MBIN"
-FileSource2 = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN"
+FileSource2 = "METADATA\\REALITY\\TABLES\\FRIGATETRAITTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",

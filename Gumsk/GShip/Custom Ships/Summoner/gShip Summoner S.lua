@@ -296,6 +296,7 @@ for i = 1,#ShipInfo do
 		  <Property name="Title" value="]]..ShipInfo[i][2]..[[" />
 		  <Property name="ChatText" value="" />
 		  <Property name="ChatUsesPrefix" value="False" />
+		  <Property name="EmoteID" value="]]..ShipInfo[i][1]..[[" />
 		  <Property name="AnimationName" value="]]..ShipInfo[i][1]..[[" />
 		  <Property name="Icon" value="TkTextureResource.xml">
 			<Property name="Filename" value="TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS" />
@@ -306,16 +307,19 @@ for i = 1,#ShipInfo do
 		  <Property name="LinkedSpecialID" value="" />
 		  <Property name="NeverShowInMenu" value="False" />
 		  <Property name="LoopAnimUntilMove" value="" />
-		  <Property name="CloseMenuOnSelect" value="False" />
+		  <Property name="CloseMenuOnSelect" value="True" />
 		  <Property name="MoveToCancel" value="False" />
 		  <Property name="GekAnimationName" value="" />
 		  <Property name="GekLoopAnimUntilMove" value="" />
 		  <Property name="AvailableUnderwater" value="False" />
-		  <Property name="RidingAnimationName" value="YWING" />
+		  <Property name="RidingAnimationName" value="]]..ShipInfo[i][1]..[[" />
 		  <Property name="IsPetCommand" value="False" />
 		  <Property name="PetCommandTitle" value="" />
 		  <Property name="PetCommandIcon" value="TkTextureResource.xml">
 			<Property name="Filename" value="" />
+			<Property name="ResHandle" value="GcResource.xml">
+			  <Property name="ResourceID" value="0" />
+			</Property>
 		  </Property>
 		</Property>
       ]]
@@ -390,17 +394,17 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "gShip Custom Summoner S 407a.pak",
+["MOD_FILENAME"] 			= "gShip Custom Summoner S 411a.pak",
 ["MOD_AUTHOR"]				= "Gumsk, based almost entirely on Mjjstral's action LUAs",
 ["MOD_DESCRIPTION"]			= "Adds summoning quick actions for gShip Custom ships",
-["NMS_VERSION"]				= "4.07",
+["NMS_VERSION"]				= "4.11",
 ["MODIFICATIONS"] 			= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	= 
 			{  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "MODELS\\COMMON\\PLAYER\\PLAYERCHARACTER\\PLAYERCHARACTER\\ENTITIES\\PLAYERCHARACTER.ENTITY.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -416,7 +420,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA\\UI\\EMOTEMENU.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -426,7 +430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA\\REALITY\\TABLES\\REWARDTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{

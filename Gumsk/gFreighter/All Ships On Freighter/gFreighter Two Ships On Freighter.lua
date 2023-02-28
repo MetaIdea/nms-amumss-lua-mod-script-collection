@@ -1,8 +1,8 @@
 Author = "Gumsk"
 ModName = "gFreighter"
 ModNameSub = "Two Ships On Freighter"
-BaseDescription = "Makes it so you only have your active ship in your freighter hangar"
-GameVersion = "397"
+BaseDescription = "Makes it so you only have two ships in your freighter hangar"
+GameVersion = "411"
 ModVersion = "a"
 FileSource1 = "GCFLEETGLOBALS.GLOBAL.MBIN"
 

@@ -1,6 +1,6 @@
 Author = "Gumsk"
 ModName = "gLight Always On"
-GameVersion = "388"
+GameVersion = "411"
 ModVersion = "a"
 ModNameSub = "Floor"
 BaseDescription = "Makes Light Floor work without power."
@@ -11,7 +11,7 @@ EntityText = [[		<Property value="TkSceneNodeAttributeData.xml">
           <Property name="Value" value="GUMSK/GLIGHTALWAYSON.ENTITY.MBIN" />
         </Property>]]
 
-FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\BASICPARTS\MESHES\LIGHT\BASIC_FLOOR_QUARTER.SCENE.MBIN"
+FileSource1 = "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\BASICPARTS\\MESHES\\LIGHT\\BASIC_FLOOR_QUARTER.SCENE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",

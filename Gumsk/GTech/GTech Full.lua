@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Full"
 BaseDescription = "All my changes to the Technology Table"
-GameVersion = "407"
+GameVersion = "411"
 ModVersion = "a"
-FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
+FileSource = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
 --Life support (PROTECT)
 			ProtectChargeAmount = 80									--80

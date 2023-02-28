@@ -2,7 +2,7 @@ Author			= "Gumsk"
 ModName 		= "gShip Phase Beam Mining"
 ModNameSub		= ""
 BaseDescription = "Makes the phase beam able to mine"
-GameVersion 	= "408"
+GameVersion 	= "411"
 ModVersion		= "a"
 
 --[[Files Modified
