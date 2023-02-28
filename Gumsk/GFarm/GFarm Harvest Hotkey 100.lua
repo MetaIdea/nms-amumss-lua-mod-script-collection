@@ -2,9 +2,9 @@ Author = "Mjjstral+Gumsk"
 ModName = "gFarm Harvest Hotkey"
 ModNameSub = "100"
 BaseDescription = "Harvests all farm plants within specified u."
-GameVersion = "403"
+GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN"
+FileSource1 = "MODELS\\COMMON\\PLAYER\\PLAYERCHARACTER\\PLAYERCHARACTER\\ENTITIES\\PLAYERCHARACTER.ENTITY.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
@@ -202,7 +202,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						}
 					},
 					{
-						["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
+						["MBIN_FILE_SOURCE"] 	= "METADATA\\UI\\EMOTEMENU.MBIN",
 						["EXML_CHANGE_TABLE"] 	= {
 							{
 								["PRECEDING_KEY_WORDS"] = {"Emotes"},

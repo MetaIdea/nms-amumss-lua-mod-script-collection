@@ -2,10 +2,10 @@ Author = "Gumsk"
 ModName = "gDoor"
 ModNameSub = "Close Range"
 BaseDescription = "Proximity base doors"
-GameVersion = "375"
+GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DOOR\ENTITIES\MAINDOOR.ENTITY.MBIN"
-FileSource2 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\DOOR.SCENE.MBIN"
+FileSource1 = "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\DOOR\\ENTITIES\\MAINDOOR.ENTITY.MBIN"
+FileSource2 = "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\DOOR.SCENE.MBIN"
 
 States = [[    <Property value="GcTriggerActionComponentData.xml">
       <Property name="HideModel" value="False" />
@@ -229,4 +229,3 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	}
 }
 }}
-

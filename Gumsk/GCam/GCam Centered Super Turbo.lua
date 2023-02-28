@@ -2,7 +2,7 @@ Author = "Gumsk+Azzinoth"
 ModName = "gCam"
 ModNameSub = "Centered Super Turbo"
 BaseDescription = "Camera modifications"
-GameVersion = "401"
+GameVersion = "411"
 ModVersion = "a"
 FileSource = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 
@@ -191,7 +191,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"CenterMaxSpeed", "0.1"},
 		{"VertMaxSpring", 1},
 		{"CenterStartSpeed", "1"},
-		{"CloseSpring", "3"},
 		{"LRProbesRange", "13"},
 		{"LRProbesRadius", "0.3"},
 		{"NumUDProbes", "5"},
@@ -240,8 +239,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"CenterMaxSpeed", "0.1"},
 		{"VertMaxSpring", 1},
 		{"CenterStartSpeed", "1"},
-		{"MinClose", "0.4"},
-		{"MaxClose", 1},
 		{"ProbeCenterX", "0"},
 		{"ProbeCenterY", "-0.65"}}},
 {["PRECEDING_KEY_WORDS"] = "CharacterNexusCam",
@@ -266,8 +263,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"CenterMaxSpeed", "0.1"},
 		{"VertMaxSpring", 1},
 		{"CenterStartSpeed", "1"},
-		{"MinClose", "0.4"},
-		{"MaxClose", 1},
 		{"ProbeCenterX", "0"},
 		{"ProbeCenterY", "-0.65"},
 		{"UseSpeedBasedSpring", "False"}}},
@@ -292,7 +287,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"CenterMaxSpeed", "0.1"},
 		{"VertMaxSpring", 1},
 		{"CenterStartSpeed", "1"},
-		{"CloseSpring", "3"},
 		{"LRProbesRange", "13"},
 		{"UseSpeedBasedSpring", "False"}}},
 	{["PRECEDING_KEY_WORDS"] = "CharacterMeleeBoostCam",
@@ -335,7 +329,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"CenterMaxSpeed", "0.1"},
 		{"VertMaxSpring", 1},
 		{"CenterStartSpeed", "1"},
-		{"CloseSpring", "3"},
 		{"LRProbesRange", "13"},
 		{"UseSpeedBasedSpring", "False"},
 		{"UseCustomBlendTime", "False"},
@@ -376,7 +369,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"CenterMaxSpeed", "0.1"},
 		{"VertMaxSpring", 1},
 		{"CenterStartSpeed", "1"},
-		{"CloseSpring", "3"},
 		{"LRProbesRange", "13"},
 		{"UseSpeedBasedSpring", "False"}}},
 	{["PRECEDING_KEY_WORDS"] = "CharacterAirborneCombatCam",
@@ -400,7 +392,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"CenterMaxSpeed", "0.1"},
 		{"VertMaxSpring", 1},
 		{"CenterStartSpeed", "1"},
-		{"CloseSpring", "3"},
 		{"LRProbesRange", "13"},
 		{"UseSpeedBasedSpring", "False"}}},
 	{["PRECEDING_KEY_WORDS"] = "CharacterSpaceCam",
@@ -425,7 +416,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"CenterMaxSpeed", "0.1"},
 		{"VertMaxSpring", 1},
 		{"CenterStartSpeed", "1"},
-		{"CloseSpring", "3"},
 		{"LRProbesRange", "13"}}},
 	{["PRECEDING_KEY_WORDS"] = "CharacterSteepSlopeCam",
 	["VALUE_CHANGE_TABLE"] = {
@@ -500,7 +490,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"CenterMaxSpeed", "0.1"},
 		{"VertMaxSpring", 1},
 		{"CenterStartSpeed", "1"},
-		{"CloseSpring", "3"},
 		{"LRProbesRange", "13"},
 		{"UseSpeedBasedSpring", "False"}}},
 	{["PRECEDING_KEY_WORDS"] = "CharacterSitCam",

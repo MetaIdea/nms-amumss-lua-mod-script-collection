@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gSquad Damage"
 ModNameSub = "25"
 BaseDescription = ""
-GameVersion = "399"
+GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "METADATA\PROJECTILES\PROJECTILETABLE.MBIN"
+FileSource1 = "METADATA\\PROJECTILES\\PROJECTILETABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",

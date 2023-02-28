@@ -1,12 +1,14 @@
 Range = 25				--2.761828
 
 Author = "Gumsk"
-ModName = "gWeather Heater Extender"
+ModName = "gWeather Heater Extender Always On"
 ModNameSub = Range
-BaseDescription = "Extends the range on the heaters"
-GameVersion = "397"
+BaseDescription = "Extends the range on the heaters and makes them always on"
+GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL.SCENE.MBIN"
+
+--Files Modified
+--MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SPACEBASE\\PROPS\\STANDINGLIGHT_SMALL.SCENE.MBIN
 
 Collision_Add = [[    <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="Physics" />
@@ -27,7 +29,7 @@ Collision_Add = [[    <Property value="TkSceneNodeData.xml">
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SHAREDDATA\ENTITIES\PHYSICS.ENTITY.MBIN" />
+          <Property name="Value" value="MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SHAREDDATA\\ENTITIES\\PHYSICS.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
@@ -74,48 +76,49 @@ Collision_Add = [[    <Property value="TkSceneNodeData.xml">
     </Property>]]
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
-["MOD_DESCRIPTION"]	= BaseDescription,
-["MOD_AUTHOR"]		= Author,
-["NMS_VERSION"]		= GameVersion,
-["MODIFICATIONS"]	= {
-	{
-		["MBIN_CHANGE_TABLE"] = {
-			{
-				["MBIN_FILE_SOURCE"] = FileSource1,
-				["EXML_CHANGE_TABLE"] = {
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","RADIUS"},
-						["PRECEDING_KEY_WORDS"] = "",
-						["VALUE_CHANGE_TABLE"] = {
-							{"Value",Range},
-						}
+	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"]	= {
+		{
+			["MBIN_CHANGE_TABLE"] = {
+				{
+					["MBIN_FILE_SOURCE"] = "MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SPACEBASE\\PROPS\\STANDINGLIGHT_SMALL.SCENE.MBIN",
+					["EXML_CHANGE_TABLE"] = {
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","RADIUS"},
+							["PRECEDING_KEY_WORDS"] = "",
+							["VALUE_CHANGE_TABLE"] = {
+								{"Value",Range},
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"TransY","0.730225"},
+							["SECTION_UP"] = 1,
+							["REMOVE"] = "SECTION"
+						
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Value","MODELS\\PLANETS\\BIOMES\\COMMON\\BUILDINGS\\PARTS\\BUILDABLEPARTS\\SPACEBASE\\PROPS\\STANDINGLIGHT_SMALL\\ENTITIES\\STANDINGLIGHT_SMALL.ENTITY.MBIN"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","INTERACT"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","OFF"},
+							["REMOVE"] = "SECTION"
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","StandingLight"},
+							["ADD_OPTION"] = "ADDafterSECTION",
+							["ADD"] = Collision_Add
+						},
 					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"TransY","0.730225"},
-						["SECTION_UP"] = 1,
-						["REMOVE"] = "SECTION"
-					
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Value","MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\SPACEBASE\PROPS\STANDINGLIGHT_SMALL\ENTITIES\STANDINGLIGHT_SMALL.ENTITY.MBIN"},
-						["REMOVE"] = "SECTION"
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","INTERACT"},
-						["REMOVE"] = "SECTION"
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","OFF"},
-						["REMOVE"] = "SECTION"
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"Name","StandingLight"},
-						["ADD_OPTION"] = "ADDafterSECTION",
-						["ADD"] = Collision_Add
-					}
-				}
+				},
 			}
 		}
 	}
-}}
+}
