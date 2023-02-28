@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items EM Any Only"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "401"
+GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
+FileSource1 = "METADATA\\REALITY\\TABLES\\BASEBUILDINGOBJECTSTABLE.MBIN"
 
 EMRate = 250				--Original 1 (C=175, B=220, A=250, S=300)
 EMLimit = 0					--0

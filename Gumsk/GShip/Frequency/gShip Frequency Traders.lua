@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gShip Frequency"
 ModNameSub = "Traders"
 BaseDescription = "More traders at stations and trade outposts"
-GameVersion = "401"
+GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
+FileSource1 = "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN"
 FileSource2 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
