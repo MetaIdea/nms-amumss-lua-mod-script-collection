@@ -105,10 +105,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ReLight 4.0 beta.pak", 
+["MOD_FILENAME"] 			= "ReLight 4.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.99.1",
+["NMS_VERSION"]				= "4.10",
 ["MOD_DESCRIPTION"]			= "This mod tunes most of the lights",
 ["MODIFICATIONS"] 			= 
 	{
@@ -2368,6 +2368,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					},
 				},
+				--[[  fixed in Fractal
 				{  -- ABANDONNED BUILDING TERMINAL
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\ABANDONEDTERMINAL.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
@@ -2376,16 +2377,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight1",},
 							["REMOVE"] 	= "SECTION",
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight2",},
-							["REMOVE"] 	= "SECTION",
-						},						
-						{
-							["SPECIAL_KEY_WORDS"] = {"Name", "pointLight3",},
-							["REMOVE"] 	= "SECTION",
-						},
 					},
-				},				
+				},		
+				--]]
 				{  -- GENERIC TERMINAL CONSOLE
 					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\COMMONPARTS\INTERACTIVECONSOLE.SCENE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
