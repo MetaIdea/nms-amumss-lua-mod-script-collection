@@ -113,10 +113,10 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Open These Freighter Doors.pak", 
+["MOD_FILENAME"] 			= "Open These Freighter Doors 1.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.98",
+["NMS_VERSION"]				= "4.10",
 ["MOD_DESCRIPTION"]			= "This mod opens wide the freighter doors",
 ["MODIFICATIONS"] 			= 
 	{

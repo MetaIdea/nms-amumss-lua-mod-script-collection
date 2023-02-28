@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "SpeedIncreaseRefiners.pak",
 ["MOD_AUTHOR"]				= "Mjjstral",
-["NMS_VERSION"]				= "1.77 4.0+ Build ID 9964564",
+["NMS_VERSION"]				= "Since 1.77 ~ 4.1",
 ["MODIFICATIONS"] 			= 
 	{
 		{

@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"] 			= "_InstantFleetExpeditions.pak",
-["MOD_AUTHOR"]				= "Pr0f1l3Alpha",
+["MOD_AUTHOR"]				= "Paradoxica",
 ["MOD_DESCRIPTION"]		    = "",
-["NMS_VERSION"]				= "4.0",
+["NMS_VERSION"]				= "4.1.0",
 ["MODIFICATIONS"] 	     	= 
 	{
 		{
