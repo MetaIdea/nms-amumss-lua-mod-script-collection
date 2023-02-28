@@ -1212,20 +1212,20 @@ for i = 1, #IdArray do
 
     ChangesToProductTable[#ChangesToProductTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID,"CraftAmountMultiplier","1"},
+        ["SPECIAL_KEY_WORDS"] = {"ID", ProdModID,"CraftAmountMultiplier","1"},
         ["LINE_OFFSET"]     = "+1",
         ["REMOVE"]    = "LINE"
     }
 
     ChangesToProductTable[#ChangesToProductTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID,"CraftAmountMultiplier","1"},
+        ["SPECIAL_KEY_WORDS"] = {"ID", ProdModID,"CraftAmountMultiplier","1"},
         ["ADD"] = RequirementsString
     }
 
     ChangesToProductTable[#ChangesToProductTable +1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", ProdModID},
+        ["SPECIAL_KEY_WORDS"] = {"ID", ProdModID},
         ["VALUE_CHANGE_TABLE"]     =
         {
             {"IsCraftable", IsCraftableToTrue},

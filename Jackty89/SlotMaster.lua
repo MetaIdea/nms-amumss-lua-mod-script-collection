@@ -29,32 +29,32 @@ MaxSlot = false
 
 InputUserImproveShip = {ImproveShip,
 [[
-    Would you like impprove ship slots?
+    Would you like improve ship slots?
     Default = Y | Current = >> ]] .. (ImproveShip and "Y" or "N") .. [[ <<
 ]]}
 InputUserImproveWeapon = {ImproveWeapon,
 [[
-    Would you like impprove weapon slots?
+    Would you like improve weapon slots?
     Default = Y | Current = >> ]] .. (ImproveWeapon and "Y" or "N") .. [[ <<
 ]]}
 InputUserImproveAlien = {ImproveAlien,
 [[
-    Would you like impprove living ship slots?
+    Would you like improve living ship slots?
     Default = Y | Current = >> ]] .. (ImproveAlien and "Y" or "N") .. [[ <<
 ]]}
 InputUserImproveVehicle = {ImproveVehicle,
 [[
-    Would you like impprove exocraft slots?
+    Would you like improve exocraft slots?
     Default = Y | Current = >> ]] .. (ImproveVehicle and "Y" or "N") .. [[ <<
 ]]}
 InputUserImproveInventory = {ImproveInventory,
 [[
-    Would you like impprove ship slots?
+    Would you like improve ship slots?
     Default = Y | Current = >> ]] .. (ImproveInventory and "Y" or "N") .. [[ <<
 ]]}
 InputUserImproveFreighter = {ImproveFreighter,
 [[
-    Would you like impprove freighter slots?
+    Would you like improve freighter slots?
     Default = Y | Current = >> ]] .. (ImproveFreighter and "Y" or "N") .. [[ <<
 ]]}
 
@@ -209,34 +209,35 @@ function EditInventory(type, maxSlot)
             }
         }
     end
-
-    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "Bounds", "GcInventoryLayoutGenerationBounds.xml"},
-        ["VALUE_CHANGE_TABLE"] =
+    if type ~= "Suite" then
+        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
         {
-            {"MaxWidthSmall",     InventoryWidth},
-            {"MaxHeightSmall",    InventoryHeight},
-            {"MaxWidthStandard",  InventoryWidth},
-            {"MaxHeightStandard", InventoryHeight},
-            {"MaxWidthLarge",     InventoryWidth},
-            {"MaxHeightLarge",    InventoryHeight}
+            ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "Bounds", "GcInventoryLayoutGenerationBounds.xml"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"MaxWidthSmall",     InventoryWidth},
+                {"MaxHeightSmall",    InventoryHeight},
+                {"MaxWidthStandard",  InventoryWidth},
+                {"MaxHeightStandard", InventoryHeight},
+                {"MaxWidthLarge",     InventoryWidth},
+                {"MaxHeightLarge",    InventoryHeight}
+            }
         }
-    }
 
-    ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
-    {
-        ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "TechBounds", "GcInventoryLayoutGenerationBounds.xml"},
-        ["VALUE_CHANGE_TABLE"] =
+        ChangesToInventoryTable[#ChangesToInventoryTable + 1] =
         {
-            {"MaxWidthSmall",     TechWidth},
-            {"MaxHeightSmall",    TechHeight},
-            {"MaxWidthStandard",  TechWidth},
-            {"MaxHeightStandard", TechHeight},
-            {"MaxWidthLarge",     TechWidth},
-            {"MaxHeightLarge",    TechHeight}
+            ["SPECIAL_KEY_WORDS"] = {type, "GcInventoryLayoutGenerationDataEntry.xml", "TechBounds", "GcInventoryLayoutGenerationBounds.xml"},
+            ["VALUE_CHANGE_TABLE"] =
+            {
+                {"MaxWidthSmall",     TechWidth},
+                {"MaxHeightSmall",    TechHeight},
+                {"MaxWidthStandard",  TechWidth},
+                {"MaxHeightStandard", TechHeight},
+                {"MaxWidthLarge",     TechWidth},
+                {"MaxHeightLarge",    TechHeight}
+            }
         }
-    }
+    end
 end
 
 function ImproveClassSlotLimit(type)
@@ -367,15 +368,6 @@ function SpecialSlot(row, col)
     ]]
 end
 
--- function AddSpecialSlotProperty(entries)
---     return
---     [[
---         <Property name="SpecialSlots">
---         ]]..entries..[[
---         </Property>
---     ]]
--- end
-
 local ChangesToDefaultSaveData= NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][3]["EXML_CHANGE_TABLE"]
 function SaveDataSpecialSlots()
     local specialTechEntries = {}
@@ -425,24 +417,6 @@ function SaveDataSpecialSlots()
         ["PRECEDING_KEY_WORDS"] = {"Mech", "Inventory_TechOnly", "SpecialSlots"},
         ["ADD"]	= table.concat(specialTechEntries)
     }
-
-    -- Only affects the initial ship (newly added ships or fresh spawn are unaffected)
-    -- ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
-    -- {
-    --     ["PRECEDING_KEY_WORDS"] = {"ShipOwnership", "GcPlayerOwnershipData.xml", "Inventory_TechOnly", "StackSizeGroup"},
-    --     ["SECTION_ACTIVE"] = {1,2,3,4,5,6,7,9},
-    --     ["LINE_OFFSET"] = 3,
-    --     ["REMOVE"] = "LINE"
-    -- }
-
-    -- ChangesToDefaultSaveData[#ChangesToDefaultSaveData + 1] =
-    -- {
-    --     ["PRECEDING_KEY_WORDS"] = {"GcPlayerOwnershipData.xml", "Inventory_TechOnly", "StackSizeGroup"},
-    --     ["SECTION_ACTIVE"] = {1,2,3,4,5,6,7,9},
-    --     ["LINE_OFFSET"] = 3,
-    --     ["ADD"]	= AddSpecialSlotProperty(table.concat(specialTechEntries))
-    -- }
-
 end
 
 if ImproveShip then
@@ -459,7 +433,9 @@ if ImproveVehicle then
 end
 if ImproveInventory then
     ImproveSuitInventory()
-    NewSaveStartingSlots()
+    if MaxSlot then
+        NewSaveStartingSlots()
+    end
 end
 if ImproveFreighter then
     ImproveFreighterInventory()

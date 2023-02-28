@@ -209,7 +209,7 @@ for i = 1, #FrigateFuelIds do
 
     ChangesToProductTable[#ChangesToProductTable + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", FrigateFuelId, "ID", SubstanceIds[1] },
+        ["SPECIAL_KEY_WORDS"] = {"ID", FrigateFuelId, "ID", SubstanceIds[1] },
         ["MATH_OPERATION"] = "*",
         ["VALUE_CHANGE_TABLE"] =
         {
@@ -219,7 +219,7 @@ for i = 1, #FrigateFuelIds do
 
     ChangesToProductTable[#ChangesToProductTable + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", FrigateFuelId, "ID", SubstanceIds[3] },
+        ["SPECIAL_KEY_WORDS"] = {"ID", FrigateFuelId, "ID", SubstanceIds[3] },
         ["VALUE_CHANGE_TABLE"] =
         {
             {"ID", "OXYGEN"}
@@ -228,7 +228,7 @@ for i = 1, #FrigateFuelIds do
 
     ChangesToProductTable[#ChangesToProductTable + 1] =
     {
-        ["SPECIAL_KEY_WORDS"] = {"Id", FrigateFuelId, "ID", "OXYGEN" },
+        ["SPECIAL_KEY_WORDS"] = {"ID", FrigateFuelId, "ID", "OXYGEN" },
         ["MATH_OPERATION"] = "*",
         ["VALUE_CHANGE_TABLE"] =
         {
