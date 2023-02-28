@@ -103,7 +103,7 @@ end
 --	Returns a table representation of EXML sections
 --	When parsing a full file, the header is stripped and a mock template is added
 --	Rquires complete EXML sections in the nomral format ...
---	 Each property in a separate line with no blank lines or comments
+--	 Each property in a separate line with no commented lines
 function ToLua(exml)
 	local function eval(val)
 		if val == 'True' then
@@ -166,7 +166,7 @@ end
 --	Converts EXML to a pretty-printed, ready-to-work, lua table script
 --	When parsing a full file, the header is stripped and a mock template is added
 --	Rquires complete EXML sections in the nomral format ...
---	 Each property in a separate line with no blank lines or comments
+--	 Each property in a separate line with no commented lines
 function PrintExmlAsLua(exml, indent, com)
 	local function eval(val)
 		if #val == 0 then
@@ -485,7 +485,7 @@ local function GenerateDescriptor()
 end
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	MOD_FILENAME 		= '__MODEL treasure ruin proc crates.pak',
+	MOD_FILENAME 		= '_MOD.lMonk.Treasure Ruin Procedural Crates.pak',
 	MOD_AUTHOR			= 'lMonk',
 	NMS_VERSION			= 4.08,
 	MOD_DESCRIPTION		= mod_desc,
