@@ -2,9 +2,9 @@ Author = "Gumsk,Devilin Pixy,Jasondude"
 ModName = "gMech"
 ModNameSub = "Max"
 BaseDescription = "Mech modifications, faster animations, higher speed, infinite mechjets"
-GameVersion = "408"
+GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
+FileSource1 = "MODELS\\COMMON\\VEHICLES\\MECH_SUIT\\MECH_SUIT\\ENTITIES\\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
 --MECH ENTITY Animation Speeds
@@ -31,8 +31,6 @@ FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 	MechHeadlightIntensity						= 10		--8		
 	MechTopSpeedForward							= 6			--2
 	MechTopSpeedReverse							= 8			--15 ; No effect, doesn't have reverse
-	
-	DamageTechNumHitsRequired					= 20		--20
 	
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -85,7 +83,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"MechJetpackIgnitionForce",MechJetpackIgnitionForce},
 								{"MechJetpackIgnitionTime",MechJetpackIgnitionTime},
 								{"MechJetpackDrainRate",MechJetpackDrainRate},
-								{"DamageTechNumHitsRequired",DamageTechNumHitsRequired},
 							}
 						},
 						{
