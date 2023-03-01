@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Destroyable Damaged Machineries.pak", 
+["MOD_FILENAME"] 			= "Destroyable Damaged Machineries 1.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.98",
+["NMS_VERSION"]				= "4.12",
 ["MOD_DESCRIPTION"]			= "This mod makes damaged machineries destroyable",
 ["MODIFICATIONS"] 			= 
 	{

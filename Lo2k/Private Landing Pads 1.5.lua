@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"]	= "Private Landing Pads 1.4.pak",
-	["MOD_DESCRIPTION"]	= "Prevents AI ships from landing on our own landing pads.",
+	["MOD_FILENAME"]	= "Private Landing Pads 1.5.pak",
 	["MOD_AUTHOR"]		= "Northener69 (published by Lo2k)",
 	["LUA_AUTHOR"]		= "Droseran",
-	["NMS_VERSION"]		= "3.97",
+	["MOD_DESCRIPTION"]	= "Prevents AI ships from landing on our own landing pads.",
+	["NMS_VERSION"]		= "4.12",
 	["MODIFICATIONS"]	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {

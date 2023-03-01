@@ -2,9 +2,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "_LMF_Always-SClass-MaxStats.pak",
 ["MOD_DESCRIPTION"] = "This mod makes Frigates spawn with best initial stats and always as S class",
-["MOD_AUTHOR"]      = "ll62518475TheSecond",
+["MOD_AUTHOR"]      = "ll62518475TheSecond & NooBzPoWaH",
 ["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.0+",
+["NMS_VERSION"]     = "4.+",
 ["MODIFICATIONS"]   =
     {
         {
@@ -18,9 +18,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PercentChangeOfFrigateBeingPurchasable",       "100"}, -- Original 60
+                                {"MinFrigateStatValue",                          "50"},  -- Original -10
                                 {"PercentChanceOfFrigateAdditionalSpawnedTrait", "600"}, -- Original 55
                                 {"LowDamageNumberOfExpeditions",                 "1"},   -- Original 3
                                 {"RampDamageNumberOfExpeditions",                "5"},   -- Original 10
+                                {"TimeTakenForExpeditionEvent_Easy",             "180"}, -- Original 900
+                                {"TimeTakenForExpeditionEvent",                  "900"}, -- Original 5400
                             },
                         },
                         {
@@ -241,12 +244,14 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"Combat",      "0"},
-                                {"Exploration", "0"},
-                                {"Mining",      "0"},
-                                {"Diplomacy",   "0"},
-                                {"Support",     "0"},
-                                {"Normandy",    "0"},
+                                {"Combat",          "0"},
+                                {"Exploration",     "0"},
+                                {"Mining",          "0"},
+                                {"Diplomacy",       "0"},
+                                {"Support",         "0"},
+                                {"Normandy",        "0"},
+                                {"DeepSpace",       "0"},
+                                {"DeepSpaceCommon", "0"},
                             }
                         },
                     }
