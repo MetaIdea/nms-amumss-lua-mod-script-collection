@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gShip Frequency"
 ModNameSub = "Vanilla"
 BaseDescription = ""
-GameVersion = "398"
+GameVersion = "401"
 ModVersion = "a"
 FileSource1 = "GCSOLARGENERATIONGLOBALS.GLOBAL.MBIN"
 

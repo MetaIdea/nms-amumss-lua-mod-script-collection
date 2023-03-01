@@ -4,7 +4,7 @@ ModNameSub = "Jetpack"
 BaseDescription = "Mech modifications jetpack only"
 GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "MODELS\\COMMON\\VEHICLES\\MECH_SUIT\\MECH_SUIT\\ENTITIES\\MECH.ENTITY.MBIN"
+FileSource1 = "MODELS\COMMON\VEHICLES\MECH_SUIT\MECH_SUIT\ENTITIES\MECH.ENTITY.MBIN"
 FileSource2 = "GCVEHICLEGLOBALS.GLOBAL.MBIN"
 
 --MECH ENTITY Animation Speeds

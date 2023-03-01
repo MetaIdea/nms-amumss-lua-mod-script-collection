@@ -4,7 +4,7 @@ ModNameSub = "Items EM Any 2x"
 BaseDescription = "Removes restrictions on base building items"
 GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "METADATA\\REALITY\\TABLES\\BASEBUILDINGOBJECTSTABLE.MBIN"
+FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
 MessageModRegion = 2		--Original 3/planet
 SolarRate = 100				--Original 50

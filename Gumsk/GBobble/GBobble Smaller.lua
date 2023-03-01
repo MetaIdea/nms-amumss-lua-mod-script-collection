@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBobble"
 ModNameSub = "Small"
 BaseDescription = "Shrinks bobbleheads"
-GameVersion = "382"
+GameVersion = "411"
 ModVersion = "a"
 
 NMS_MOD_DEFINITION_CONTAINER = 

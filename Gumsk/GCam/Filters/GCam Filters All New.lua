@@ -1,5 +1,5 @@
 Author = "Gumsk"
-ModName = "GCam Filters"
+ModName = "gCam Filters"
 ModNameSub = "All"
 BaseDescription = "Removes the environmental filters"
 GameVersion = "322"
@@ -73,9 +73,9 @@ LocText6 = [[      </Property>
 --  for i = 1,#WeatherArray[1][1] do
 	for i = 2,44 do
 		AddText = AddText..LocText1..[[PHOTO_FILTER_]]..WeatherArray[i][1]..LocText2
-	for k = 2,#WeatherArray[1] do
-		AddText = AddText..LocText3..WeatherArray[1][k]..LocText4..WeatherArray[i][k]..LocText5
-	end
+		for k = 2,#WeatherArray[1] do
+			AddText = AddText..LocText3..WeatherArray[1][k]..LocText4..WeatherArray[i][k]..LocText5
+		end
 		AddText = AddText..LocText6
   end
 

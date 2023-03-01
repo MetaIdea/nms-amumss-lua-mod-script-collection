@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Normal"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "403"
+GameVersion = "411"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
   
@@ -48,8 +48,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						-- {"ShieldRechargeMinTimeSinceDamage",10},	--30
 						-- {"ShieldRechargeRate",30},					--10
 						-- {"DeathDamageTechBrokenPercent",8},			--40
-						{"HardLandTime",8},							--0.5
-						{"HardLandMin",50},							--5
 						{"HardLandMax",150},						--18
 						{"GroundWalkSpeed",6},						--4.4
 						{"GroundRunSpeed",11},						--8
@@ -59,14 +57,14 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						-- {"FreeJetpackRange",7},						--3
 						-- {"FreeJetpackRangeNonTerrain",2},			--1.1
 						-- {"JetpackDrainHorizontalFactor",3},			--2.5
-						{"JetpackForce",40},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
+						{"JetpackForce",80},						--31 ; lateral force added when pressing in a direction. Existing force remains until direction is released
 						--{"JetpackBrake",2.2},						--2.2
 						{"JetpackMinLevel",0.1},					--0.5 ; ?How flat does the ground need to be to ignite jetpack? At 99, couldn't ignite in most places
-						{"JetpackMaxSpeed",20},						--5
+						{"JetpackMaxSpeed",35},						--5 ; Lateral speed adjustments while airborne, whether using jetpack or not
 						{"JetpackMaxUpSpeed",60},					--30
-						{"JetpackUpForce",45},						--30 ; Needs to be above about 20 to overcome standard gravity
-						-- {"JetpackIgnitionForce",80},				--60 ; No noticeable effect
-						{"JetpackIgnitionTime",5},					--0.4
+						{"JetpackUpForce",80},						--30 ; Needs to be above about 20 to overcome standard gravity
+						{"JetpackIgnitionForce",80},				--60 ; Initial force applied before JetpackIgnitionTime
+						{"JetpackIgnitionTime",9999},				--0.4 ; How many seconds until transition from JetpackIgnitionForce to JetpackForce and JetpackUpForce
 						{"JetpackMinIgnitionTime",0.1},				--0.2 ; How quickly after igniting the jetpack FROM A SURFACE will jetpack thrust stop?
 						-- {"JetpackFillRate",1},						--0.5
 						{"JetpackUpForceDeadPlanetExtra",20},		--10
