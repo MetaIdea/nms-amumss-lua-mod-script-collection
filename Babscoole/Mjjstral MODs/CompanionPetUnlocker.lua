@@ -2,6 +2,10 @@ CREATURE_INTERACT_DISTANCE = 100 --Original 5
 CREATURE_INTERACT_RANGE = 150
 CREATURE_INTERACT_BOOST = 2
 CREATURE_INCUBATE_TIME = 0
+EGG_TIMERS = true
+
+EGG_TIMERS = GUIF({true, [[Do you want pet egg times to be reduced?  Default = Y.  Press ENTER for default value.]]},10)
+print("EGG_TIMERS = "..tostring(EGG_TIMERS))  
 
 function CreateJoint(JointName)
     local result =
@@ -411,24 +415,24 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["MBIN_FILE_SOURCE"]  = "GCCREATUREGLOBALS.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
-                        {
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"PetGrowthTime",          CREATURE_INCUBATE_TIME}, --Original "1209600"
-                                {"PetIncubationTime",      CREATURE_INCUBATE_TIME}, --Original "86400"
-                                {"PetEggLayingDuration",   CREATURE_INCUBATE_TIME}, --Original "0.7"
-                                {"PetEggLayingInterval",   CREATURE_INCUBATE_TIME}, --Original "86400"
-                                {"PetEggFirstEggDelay",    CREATURE_INCUBATE_TIME}, --Original "86400"
-                                {"PetTrustChangeInterval", CREATURE_INCUBATE_TIME}, --Original "86400"
-                                {"CanAlwaysLayEgg",        "True"}, --Original "False"
-                                {"PetTrustOnAdoption",     "1"}, --Original "0.6"
-                                {"PetTrustOnHatch",        "1"}, --Original "0.7"
-                                {"PetMinTrust",            "1"}, --Original "0.2"
-                                {"PetEggModificationTime", "1"}, --Original "5"
-                            }
-                        },
+                        -- {
+                            -- ["REPLACE_TYPE"]        = "ALL",
+                            -- ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            -- ["VALUE_CHANGE_TABLE"]  =
+                            -- {
+                                -- {"PetGrowthTime",          CREATURE_INCUBATE_TIME}, --Original "1209600"
+                                -- {"PetIncubationTime",      CREATURE_INCUBATE_TIME}, --Original "86400"
+                                -- {"PetEggLayingDuration",   CREATURE_INCUBATE_TIME}, --Original "0.7"
+                                -- {"PetEggLayingInterval",   CREATURE_INCUBATE_TIME}, --Original "86400"
+                                -- {"PetEggFirstEggDelay",    CREATURE_INCUBATE_TIME}, --Original "86400"
+                                -- {"PetTrustChangeInterval", CREATURE_INCUBATE_TIME}, --Original "86400"
+                                -- {"CanAlwaysLayEgg",        "True"}, --Original "False"
+                                -- {"PetTrustOnAdoption",     "1"}, --Original "0.6"
+                                -- {"PetTrustOnHatch",        "1"}, --Original "0.7"
+                                -- {"PetMinTrust",            "1"}, --Original "0.2"
+                                -- {"PetEggModificationTime", "1"}, --Original "5"
+                            -- }
+                        -- },
                         {
                             ["MATH_OPERATION"]      = "*",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -491,4 +495,30 @@ for i = 1, #ROBOT_JOINT_DATA_TABLE do
                 ["PRECEDING_KEY_WORDS"] = {"Data"},
                 ["ADD"]                 = CreateJoint(JointName)
             }
+end
+
+if EGG_TIMERS then
+
+local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBIN_CHANGE_TABLE"][6]["EXML_CHANGE_TABLE"]
+
+    local temp_table_eggtimers =
+    {
+        ["REPLACE_TYPE"]        = "ALL",
+        ["INTEGER_TO_FLOAT"]    = "FORCE",
+        ["VALUE_CHANGE_TABLE"]  =
+        {
+            {"PetGrowthTime",          CREATURE_INCUBATE_TIME}, --Original "1209600"
+            {"PetIncubationTime",      CREATURE_INCUBATE_TIME}, --Original "86400"
+            {"PetEggLayingDuration",   CREATURE_INCUBATE_TIME}, --Original "0.7"
+            {"PetEggLayingInterval",   CREATURE_INCUBATE_TIME}, --Original "86400"
+            {"PetEggFirstEggDelay",    CREATURE_INCUBATE_TIME}, --Original "86400"
+            {"PetTrustChangeInterval", CREATURE_INCUBATE_TIME}, --Original "86400"
+            {"CanAlwaysLayEgg",        "True"}, --Original "False"
+            {"PetTrustOnAdoption",     "1"}, --Original "0.6"
+            {"PetTrustOnHatch",        "1"}, --Original "0.7"
+            {"PetMinTrust",            "1"}, --Original "0.2"
+            {"PetEggModificationTime", "1"}, --Original "5"
+        }
+    }
+    Change_Table_Array[#Change_Table_Array + 1] = temp_table_eggtimers
 end
