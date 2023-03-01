@@ -1,7 +1,7 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan and Ship Scan - No Sodium or Oxygen"
-GameVersion = "4.10"
-ModVersion = "v1.1"
+GameVersion = "4.12"
+ModVersion = "v1.2"
 Description = "Rare resources and other things now show up when you use Pulse Scan with Multitool or Exocraft, increased range and minimum amount of Buildings you can find with Ship Scan."
 
 -- Thanks to people on Modding Discord and lyravega for a lot of ideas and guidance.
