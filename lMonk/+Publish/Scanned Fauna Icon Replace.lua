@@ -8,7 +8,7 @@ local desc = [[
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.scanned fauna icon replace.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
+	NMS_VERSION			= '4.06',
 	MOD_DESCRIPTION		= desc,
 	ADD_FILES = {
 		{
