@@ -1,10 +1,10 @@
 --------------------------------------------------------------------
-local desc = [[
+mod_desc = [[
   Access the upgrade menus at your base/freighter.
   The multitool upgrade menu from the weapons specialist terminal.
   The ship salavage and upgrade menu from the old monitor station.
 ]]------------------------------------------------------------------
-mod_version = 1.6
+mod_version = 1.61
 
 local function AddInteractionComponent(action_type)
 	return [[
@@ -48,8 +48,8 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.ship and multitool upgrade terminals.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.12',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
