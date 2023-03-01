@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Knowledge Stones In The Wild 1.1.pak", 
+["MOD_FILENAME"] 			= "No Knowledge Stones In The Wild 1.2.pak", 
 ["MOD_AUTHOR"]				= "Lo2k (Mod idea by Agh1353)",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.94",
+["NMS_VERSION"]				= "4.12",
 ["MOD_DESCRIPTION"]			= "This mod removes knowledge Stones from planet landscape",
 ["MODIFICATIONS"] 			= 
 	{

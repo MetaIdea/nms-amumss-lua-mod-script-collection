@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] = "No Black Bars 2.6.pak", 
+["MOD_FILENAME"] = "No Black Bars 2.7.pak", 
 ["MOD_AUTHOR"]= "Lo2k",
 ["LUA_AUTHOR"]= "MrFisse",
-["NMS_VERSION"]  = "4.03",
+["NMS_VERSION"]  = "4.12",
 ["MOD_DESCRIPTION"] = "No cutscene black bars",
 ["MODIFICATIONS"]= 
 	{

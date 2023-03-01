@@ -1,24 +1,25 @@
 
 COLOUR = {
 StartR = "0.975",
-StartG = "0.372",
+StartG = "0.072",
 StartB = "0.065",
 StartA = "0.436",
 MiddleR = "0.936",
-MiddleG = "0.594",
+MiddleG = "0.094",
 MiddleB = "0.037",
 MiddleA = "0.518",
 EndR = "0.936",
-EndG = "0.58",
+EndG = "0.058",
 EndB = "0.084",};
+
 
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "True Blood 1.7 - Orange.pak", 
+["MOD_FILENAME"] 			= "True Blood 1.8 - Red.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.03",
+["NMS_VERSION"]				= "4.12",
 ["MOD_DESCRIPTION"]			= "This mod changes creature blood color",
 ["MODIFICATIONS"] 			= 
 	{

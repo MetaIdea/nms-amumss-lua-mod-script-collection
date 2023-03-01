@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]    = "Bigger Creature Dots 1.7.pak",
+    ["MOD_FILENAME"]    = "Bigger Creature Dots 1.8.pak",
     ["MOD_DESCRIPTION"]    = "Increases creature dot sizes",
     ["MOD_AUTHOR"]        = "Lo2k",
 	["LUA_AUTHOR"]        = "Lo2k",
-    ["NMS_VERSION"]        = "3.94",
+    ["NMS_VERSION"]        = "4.12",
     ["MODIFICATIONS"]    = {
         {
             ["MBIN_CHANGE_TABLE"] = {
