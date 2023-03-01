@@ -1,12 +1,12 @@
 ----------------------------------------------------------------------------------------
-local desc = [[
+mod_desc = [[
   Adds observatory settlement, drone-hive, ship debris, sentinel pillar, claimable base site,
   minor settlement, secure facility, ancient plaque, remote terminal, treausere ruin,
   traveler grave, distress signals and underwater locations to exocraft scanner.
   Re-arange scanner icons grouping for improved target selection.
   Make exocraft scanner tech available to the mech.
 ]]--------------------------------------------------------------------------------------
-mod_version = 1.96
+mod_version = 1.97
 
 local icon = {
 	glitch		= 'TEXTURES/UI/HUD/ICONS/BUILDINGS/BUILDING.GLITCH.DDS',
@@ -348,17 +348,17 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.exocraft scan upgrade.'..mod_version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.12',
+	MOD_DESCRIPTION		= mod_desc,
 	ADD_FILES = {
 		{
 			FILE_DESTINATION 	= 'METADATA/SIMULATION/SCANNING/VEHICLESCANTABLE.EXML',
 			FILE_CONTENT		= BuildVehicleScanTable()
 		},
-		{
-			EXTERNAL_FILE_SOURCE = 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Hud/Building/*.DDS',
-			FILE_DESTINATION	 = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/*.DDS',
-		}
+		-- {
+			-- EXTERNAL_FILE_SOURCE = 'E:/MODZ_stuff/NoMansSky/Sources/_Textures/Icons/Hud/Building/*.DDS',
+			-- FILE_DESTINATION	 = 'TEXTURES/UI/HUD/ICONS/BUILDINGS/*.DDS',
+		-- }
 	},
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {

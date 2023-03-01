@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-local desc = [[
+mod_desc = [[
   Rebuild and add to unlockable items tree
   Each consecutive full tree addition is placed BEFORE the last one!
   - The items tree is a classic Tree data structure. The node is a table
@@ -9,7 +9,7 @@ local desc = [[
   - A new tree is inserted as 1st in its ItemTrees by default. Inesrting [after] work
    only on existing trees, not newly-added, and needs the 'after' Title.
 ]]------------------------------------------------------------------------------
-local version = 1.23
+local version = 1.24
 
 local unlockable_items = {
 	{
@@ -485,8 +485,8 @@ end
 NMS_MOD_DEFINITION_CONTAINER = {
 	MOD_FILENAME 		= '_MOD.lMonk.Construction Unit Update.'..version..'.pak',
 	MOD_AUTHOR			= 'lMonk',
-	NMS_VERSION			= '4.08',
-	MOD_DESCRIPTION		= desc,
+	NMS_VERSION			= '4.12',
+	MOD_DESCRIPTION		= mod_desc,
 	MODIFICATIONS 		= {{
 	MBIN_CHANGE_TABLE	= {
 	{
