@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "gExos Challenge"
-ModNameSub = "GDamage"
+ModName = "GExos Challenge"
+ModNameSub = "gDamage"
 BaseDescription = "Damage adjustments"
-GameVersion = "370"
+GameVersion = "411"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
@@ -23,36 +23,44 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ENERGY"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 50}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","EXTREMEHEATDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","NOOXYDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","EXTREMECOLDDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","TOXICGASDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","RADIATIONDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 70}}}, --default 28
+		{"Damage", 40}}}, --default 28
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 5}}}, --default 4
+		{"Damage", 4}}}, --default 2
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGUNDMG_MED"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 7}}}, --default 3.5
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTBIGGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 11}}}, --default 8
-		
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","ROBOTGRENADEDMG"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 10}}}, --default 7
+
 	{["SPECIAL_KEY_WORDS"] = {"Id","LASERDAMAGE"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 7}}}, --default 5
@@ -91,11 +99,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","PLANTDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 20
+		{"Damage", 75}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 20}}}, --default 14
+		{"Damage", 25}}}, --default 14
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -115,27 +123,32 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 25}}}, --default 20
+		{"Damage", 30}}}, --default 20
 		
-	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
-	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 40}}}, --default 30
+	-- {["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER2"},
+	-- ["VALUE_CHANGE_TABLE"] = {	
+		-- {"Damage", 40}}}, --default 30
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3"},
+	["SECTION_ACTIVE"] = {1,2},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 60}}}, --default 50
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","WALKERLASER"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 25}}}, --default 9		
-		
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","SENTINEL_FLAME"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 6}}}, --default 3
+
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 30}}}, --default 16
+		{"Damage", 50}}}, --default 16
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 30}}}, --default 15
+		{"Damage", 45}}}, --default 15
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","SMALLASTEROID"},
 	["VALUE_CHANGE_TABLE"] = {
@@ -146,6 +159,10 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{"Damage", 250}}},
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","LARGEASTEROID"},
+	["VALUE_CHANGE_TABLE"] = {
+		{"Damage", 400}}},
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","IMPACTSHIP"},
 	["VALUE_CHANGE_TABLE"] = {
 		{"Damage", 400}}},
 
@@ -167,7 +184,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","GASPLANT"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 18
+		{"Damage", 75}}}, --default 18
 
 	{["SPECIAL_KEY_WORDS"] = {"Id","VENT_HEAT"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -199,11 +216,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","CLAM_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 35
+		{"Damage", 75}}}, --default 35
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","VENUSFLY_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
-		{"Damage", 100}}}, --default 20
+		{"Damage", 75}}}, --default 20
 		
 	{["SPECIAL_KEY_WORDS"] = {"Id","SCUTTLERSPITDMG"},
 	["VALUE_CHANGE_TABLE"] = {	
@@ -228,5 +245,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	{["SPECIAL_KEY_WORDS"] = {"Id","MINIDRONE_DMG"},
 	["VALUE_CHANGE_TABLE"] = {	
 		{"Damage", 15}}}, --default 6
+
+	{["SPECIAL_KEY_WORDS"] = {"Id","PIRATERAID"},
+	["VALUE_CHANGE_TABLE"] = {	
+		{"Damage", 15}}}, --default 4
 
 }}}}}}

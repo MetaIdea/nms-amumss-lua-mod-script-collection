@@ -5,7 +5,7 @@ BaseDescription = "Damage adjustments"
 GameVersion = "411"
 ModVersion = "a"
 
-FileSource = "METADATA\\REALITY\\TABLES\\DAMAGETABLE.MBIN"
+FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",

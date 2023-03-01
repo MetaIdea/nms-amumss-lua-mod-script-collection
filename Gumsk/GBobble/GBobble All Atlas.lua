@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gBobble"
 ModNameSub = "All Atlas"
 BaseDescription = "Changes all bobbleheads to Atlas"
-GameVersion = "371"
+GameVersion = "411"
 ModVersion = "a"
 FileSource1 = "METADATA\GAMESTATE\PLAYERDATA\BOBBLEHEADCUSTOMISATIONDATA.MBIN"
 

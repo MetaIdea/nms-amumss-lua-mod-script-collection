@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gRNG CBAS"
 ModNameSub = "Small"
 BaseDescription = "Rebalances class distribution"
-GameVersion = "398"
+GameVersion = "411"
 ModVersion = "a"
 
 FileSource1 = "METADATA\REALITY\TABLES\INVENTORYTABLE.MBIN"

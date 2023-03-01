@@ -4,7 +4,7 @@ ModNameSub = "No"
 BaseDescription = "No Sandworms"
 GameVersion = "411"
 ModVersion = "b"
-FileSource1 = "METADATA\\SIMULATION\\ECOSYSTEM\\CREATUREGENERATIONDATA.MBIN"
+FileSource1 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"
 FileSource2 = "GCCREATUREGLOBALS.MBIN"
 
 SandwormPresenceChance = 0

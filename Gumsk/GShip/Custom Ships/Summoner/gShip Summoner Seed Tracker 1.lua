@@ -75,6 +75,9 @@ for i = 1,#ShipInfo do
 				<Property name="Reward" value="GcRewardSpecificShip.xml">
 				  <Property name="ShipResource" value="GcResourceElement.xml">
 					<Property name="Filename" value="]]..FilePath..[[" />
+					<Property name="ResHandle" value="GcResource.xml">
+					  <Property name="ResourceID" value="0" />
+					</Property>
 					<Property name="Seed" value="GcSeed.xml">
 					  <Property name="Seed" value="]]..ShipInfo[i][3]..[[" />
 					  <Property name="UseSeedValue" value="True" />
@@ -211,8 +214,9 @@ for i = 1,#ShipInfo do
 					<Property name="Class" value="GcInventoryClass.xml">
 					  <Property name="InventoryClass" value="S" />
 					</Property>
-					<Property name="SubstanceMaxStorageMultiplier" value="0" />
-					<Property name="ProductMaxStorageMultiplier" value="0" />
+					<Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
+                      <Property name="InventoryStackSizeGroup" value="Default" />
+                    </Property>
 					<Property name="BaseStatValues" />
 					<Property name="SpecialSlots" />
 					<Property name="Width" value="7" />
@@ -245,6 +249,9 @@ for i = 1,#ShipInfo do
 		  <Property name="AnimationName" value="]]..ShipInfo[i][1]..[[" />
 		  <Property name="Icon" value="TkTextureResource.xml">
 			<Property name="Filename" value="TEXTURES/UI/FRONTEND/COMPONENTS/STAR.DDS" />
+			<Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
 		  </Property>
 		  <Property name="LinkedSpecialID" value="" />
 		  <Property name="NeverShowInMenu" value="False" />
@@ -336,7 +343,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "GShip Summoner Seed Tracker.pak",
 ["MOD_AUTHOR"]				= "Gumsk, based almost entirely on Mjjstral's action LUAs",
 ["MOD_DESCRIPTION"]			= "Adds summoning quick actions for GShip Custom ships",
-["NMS_VERSION"]				= "3.38",
+["NMS_VERSION"]				= "4.05",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -363,8 +370,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
-							["LINE_OFFSET"] 		= "+0",
+							["PRECEDING_KEY_WORDS"] = {"Emotes"},
 							["ADD"] 				= FinalEmoteEntries
 						}
 					}
@@ -374,8 +380,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = {"GenericTable"}, 
-							["LINE_OFFSET"] 		= "+0",
+							["PRECEDING_KEY_WORDS"] = {"GenericTable"},
 							["ADD"] 				= FinalRewardEntries
 						}
 					}

@@ -2,11 +2,8 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "No Falling Damage"
 BaseDescription = "No falling damage"
-GameVersion = "398"
+GameVersion = "411"
 ModVersion = "a"
-FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
-
-HardLandTime = 8		--0.5
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..GameVersion..ModVersion.." "..ModNameSub..".pak",
@@ -17,11 +14,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			["MBIN_CHANGE_TABLE"] = {
 				{
-					["MBIN_FILE_SOURCE"] = FileSource,
+					["MBIN_FILE_SOURCE"] = "GCPLAYERGLOBALS.GLOBAL.MBIN",
 					["EXML_CHANGE_TABLE"] = {
 						{
 							["VALUE_CHANGE_TABLE"] = {
-								{"HardLandTime",HardLandTime},
+								{"HardLandMax",150},		--18
 							},
 						},
 					},

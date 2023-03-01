@@ -4,7 +4,7 @@ ModNameSub = "Traders"
 BaseDescription = "More traders at stations and trade outposts"
 GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "METADATA\\SIMULATION\\SCENE\\EXPERIENCESPAWNTABLE.MBIN"
+FileSource1 = "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN"
 FileSource2 = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gExtract"
 ModNameSub = "No Shake"
 BaseDescription = "Gets rid of the screen shake near mineral extractors"
-GameVersion = "403"
+GameVersion = "411"
 ModVersion = "a"
 FileSource = "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\UTILITYPARTS\MODULE_PUMPS\ENTITIES\MINERALEXTRACTOR.ENTITY.MBIN"
 

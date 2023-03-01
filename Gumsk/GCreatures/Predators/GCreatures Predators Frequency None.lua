@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPredators Frequency"
 ModNameSub = "None"
 BaseDescription = "More dense predators"
-GameVersion = "397"
+GameVersion = "411"
 ModVersion = "a"
 
 FileSource5 = "METADATA\SIMULATION\ECOSYSTEM\CREATUREGENERATIONDATA.MBIN"

@@ -1,5 +1,5 @@
 Author = "Gumsk"
-ModName = "gCreatures Predators"
+ModName = "gCreatures Predators Danger"
 ModNameSub = "Deadly"
 BaseDescription = "More aggressive and dangerous predators"
 GameVersion = "411"

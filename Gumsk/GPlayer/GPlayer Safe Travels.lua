@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gPlayer"
 ModNameSub = "Safe Travels"
 BaseDescription = "Large power increases in player globals"
-GameVersion = "398"
+GameVersion = "411"
 ModVersion = "a"
 FileSource = "GCPLAYERGLOBALS.GLOBAL.MBIN"
 
