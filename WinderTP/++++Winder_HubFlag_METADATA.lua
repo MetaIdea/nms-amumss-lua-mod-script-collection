@@ -5,7 +5,7 @@
 -- 
 -- PRESS "Y" WHEN ASKED BY AMUMSS TO CREATE A MERGED PAK
 
-POP_IN_RATE =		2		-- RANGES FROM 1 TO 5
+POP_IN_RATE =		1		-- RANGES FROM 1 TO 5
 							-- 1: NO POP IN, OBJECTS NEVER DISAPPEAR, MAY IMPACT FRAMERATE IF YOU BUILD > 3000 OBJECTS
 							-- 2: MINIMAL POP IN, VIRTUALLY NO POP OUT, ~3000 OBJECTS CAN BE LOADED AT ONCE
 							-- 3: MAY POP IN SLOWER WHEN FLYING INTO DISTANCE, POPOUT AT MEDIUM TO LONG DISTANCE, MINOR POP IN/POP OUT WILL CYCLE FROM HIGH GROUND, ~2000 OBJECTS CAN BE LOADED AT ONCE
@@ -1774,7 +1774,7 @@ ADD_LANGUAGE_LIST =
 	},
 	["PF_BASIC_CHR_NAME"] = {
 		["ID"] = "PF_BASIC_CHR_NAME",
-		["Value"] = {["English"]				= [[CHROMA / GLASS BASIC PARTS]],
+		["Value"] = {["English"]				= [[SPECIAL BASIC PARTS]],
 					 ["French"]					= [[]],	
 					 ["Italian"]				= [[]],	
 					 ["German"]					= [[]],	
@@ -1785,9 +1785,9 @@ ADD_LANGUAGE_LIST =
 					 ["Portuguese"]				= [[]],	
 					 ["LatinAmericanSpanish"]	= [[]],	
 					 ["BrazilianPortuguese"]	= [[]],	
-					 ["SimplifiedChinese"]		= [[色鍵/玻璃基礎元件]],	
-					 ["TraditionalChinese"]		= [[色鍵/玻璃基礎元件]],	
-					 ["TencentChinese"]			= [[色鍵/玻璃基礎元件]],	
+					 ["SimplifiedChinese"]		= [[特別基礎元件]],	
+					 ["TraditionalChinese"]		= [[特別基礎元件]],	
+					 ["TencentChinese"]			= [[特別基礎元件]],	
 					 ["Korean"]					= [[]],	
 					 ["Japanese"]				= [[]],	
 					 ["USEnglish"]				= [[]],	
@@ -2445,90 +2445,90 @@ HUBFLAG_NPCSPAWN =
 	  ["PlacementNodeName"] = 	"WSPAWNSCI_",
 	  ["SpawnSpecific"] = 		"",
 	  ["Race"] = 				"Explorers",
-	  ["InteractionOverride"] =	"None", -- GcInteractionType
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_TRA",
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNTRA_",
 	  ["SpawnSpecific"] = 		"",
 	  ["Race"] = 				"Traders",
-	  ["InteractionOverride"] =	"None", -- GcInteractionType
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_WAR",
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNWAR_",
 	  ["SpawnSpecific"] = 		"",
 	  ["Race"] = 				"Warriors",
-	  ["InteractionOverride"] =	"None", -- GcInteractionType
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_DIP",
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNDIP_",
 	  ["SpawnSpecific"] = 		"",
 	  ["Race"] = 				"Diplomats",
-	  ["InteractionOverride"] =	"None", -- GcInteractionType
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_FIF",
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNFIF_",
 	  ["SpawnSpecific"] = 		"",
 	  ["Race"] = 				"Exotics",
-	  ["InteractionOverride"] =	"None", -- GcInteractionType
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_CUR",
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNCUR_",
 	  ["SpawnSpecific"] = 		"",
 	  ["Race"] = 				"None",
-	  ["InteractionOverride"] =	"None", -- GcInteractionType
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_HLEX",
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNHEX_",
 	  ["SpawnSpecific"] = 		"HOLOEXPLORER",
 	  ["Race"] = 				"None",
-	  ["InteractionOverride"] =	"None", -- GcInteractionType
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_HLSC",
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNHSC_",
 	  ["SpawnSpecific"] = 		"HOLOSCEPTIC",
 	  ["Race"] = 				"None",
-	  ["InteractionOverride"] =	"None", -- GcInteractionType
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_HLNO",
 	  ["SpawnUnderNodeName"] = 	"",
 	  ["PlacementNodeName"] = 	"WSPAWNHNO_",
 	  ["SpawnSpecific"] = 		"HOLONOONE",
 	  ["Race"] = 				"None",
-	  ["InteractionOverride"] =	"None", -- GcInteractionType
+	  ["InteractionOverride"] =	"NPC_Secondary", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_MIS",
 	  ["SpawnUnderNodeName"] = 	"",
@@ -2598,7 +2598,7 @@ HUBFLAG_NPCSPAWN =
 	  ["InteractionOverride"] =	"None", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_POLO",
 	  ["SpawnUnderNodeName"] = 	"",
@@ -2608,7 +2608,7 @@ HUBFLAG_NPCSPAWN =
 	  ["InteractionOverride"] =	"None", -- GcInteractionType
 	  ["TechShopCategory"] = 	"All", -- GcTechnologyCategory
 	  ["ForceInteraction"] =	"",
-	  ["DisableInteraction"] =	"True",
+	  ["DisableInteraction"] =	"False",
 	},
 	{ ["ID"] = 					"WNPC_S_VEH",
 	  ["SpawnUnderNodeName"] = 	"",
@@ -11025,6 +11025,51 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},
+	{	["OBJECT"] = {	["ID"] =						"FDOOR3OUT",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DOOR_SNAPPOINT.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DOOR\EXTERIORDOOR.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"False",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_ACCESS" },
+						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Syunmunngoi-saam",
+						["Subtitle"] = 					"Door - Outdoor",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A outdoor freighter door. Snaps to rooms.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"35"
+											},
+										}
+					}
+	},
 	{	["OBJECT"] = {	["ID"] =						"PF_O_LUNAR_1",
 						["PlacementScene"] =			"",
 						["Style"] = 					"Metal",
@@ -14839,7 +14884,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 	},
 	{	["OBJECT"] = {	["ID"] =						"PF_LB_TOW_BK",
 						["PlacementScene"] =			"",
-						["Style"] = 					"None",
+						["Style"] = 					"Timber",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\LARGEBUILDINGS\MAIN_BUILDING\KORVAX_BASE.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
@@ -14891,7 +14936,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 	},
 	{	["OBJECT"] = {	["ID"] =						"PF_LB_TOW_BV",
 						["PlacementScene"] =			"",
-						["Style"] = 					"None",
+						["Style"] = 					"Timber",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\LARGEBUILDINGS\MAIN_BUILDING\VYKEEN_BASE.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
@@ -14943,7 +14988,7 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 	},
 	{	["OBJECT"] = {	["ID"] =						"PF_LB_TOW_BV_2",
 						["PlacementScene"] =			"",
-						["Style"] = 					"None",
+						["Style"] = 					"Timber",
 						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
 						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\LARGEBUILDINGS\MAIN_BUILDING\VYKEEN_BASE_2.SCENE.MBIN",
 						["DecorationType"] = 			"Normal",
@@ -20508,6 +20553,150 @@ HUBFLAG_OBJPROD = -- ENTRIES WITH SNAPPOINTS
 										}
 					}
 	},]]
+	{	["OBJECT"] = {	["ID"] =						"W_GRAVFLOOR",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/BASICPARTS/BASIC_FLOOR.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\GRAVFLOOR\FLOOR0.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_BASIC_CHR" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Gravity Floor",
+						["Subtitle"] = 					"Gravity Floor",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A floor module containing a localized gravity bubble.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ASTEROID1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"120"
+											},
+											{ ["ID"] = 				"ROCKETSUB",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"W_GRAVFLOOR_F",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\GRAVFLOOR/BASIC_FLOOR_FLIPPED.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\GRAVFLOOR\FLOOR0_FLIPPED.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_BASIC_CHR" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Gravity Floor - Flipped",
+						["Subtitle"] = 					"Gravity Floor - Flipped",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A floor module containing a localized gravity bubble.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ASTEROID1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"120"
+											},
+											{ ["ID"] = 				"ROCKETSUB",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"20"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"W_GRAVFLOOR_S",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\GRAVFLOOR/BASIC_ROOF_MIDDLE.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\FACADE\GRAVFLOOR\FLOOR0_WALL.SCENE.MBIN",
+						["DecorationType"] = 			"SurfaceNormal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"False",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"False",
+						["SubGroupName"] = 					{ "PF_BASIC_CHR" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "True",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"BASIC",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Gravity Wall Bubble Module",
+						["Subtitle"] = 					"Gravity Wall Bubble Module",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A gravity bubble module designed to snap onto existing wall structures, or otherwise attach to any surface.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"ASTEROID1",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"120"
+											},
+											{ ["ID"] = 				"ROCKETSUB",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"5"
+											},
+										}
+					}
+	},
 	
 }
 
@@ -35035,7 +35224,7 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 						["CanChangeColour"] = 			"False",
 						["CanChangeMaterial"] = 		"False",
 						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"True",
+						["EditsTerrain"] =				"False",
 						["BaseTerrainEditShape"] = 		"Cube",
 						["TerrainEditBaseYOffset"] = 	"0.3",
 						["TerrainEditTopYOffset"] = 	"3",
@@ -45360,51 +45549,6 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 										}
 					}
 	},
-	{	["OBJECT"] = {	["ID"] =						"FDOOR3OUT",
-						["PlacementScene"] =			"",
-						["Style"] = 					"None",
-						["SnapPoints"] = 				"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/DOOR_SNAPPOINT.SCENE.MBIN", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
-						["Model"] = 					"MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\FREIGHTERBASE\FACE\DOOR\A\PARTS\EXTERIORDOOR.SCENE.MBIN",
-						["DecorationType"] = 			"Normal",
-						["IsPlaceable"] = 				"False",
-						["IsDecoration"] = 				"True",
-						["Biome"] = 					"Lush",
-						["BuildableOnFreighter"] = 		"True",
-						["BuildableOnPlanet"] = 		"False",
-						["CheckPlaceholderCollision"] = "False",
-						["CollisionScale"] = 			"0.9",
-						["EnableCollision"] = 			"True",
-						["CanPlaceOnItself"] = 			"True",
-						["CanScale"] = 					"False",
-						["SubGroupName"] = 					{ "PF_ACCESS" },
-						-- ["SubGroupName"] = 					{ "PF_ACCESS", "CUBES", "ROOMS" },
-						["StorageContainerIndex"] = 	"-1",
-						["CanChangeColour"] = 			"True",
-						["CanChangeMaterial"] = 		"False",
-						["RemovesAttachedDecoration"] = "True",
-						["EditsTerrain"] =				"False",
-						["BaseTerrainEditShape"] = 		"Cube",
-						["TerrainEditBaseYOffset"] = 	"0",
-						["TerrainEditTopYOffset"] = 	"0",
-						["TerrainEditBoundsScalar"] = 	"1",
-						["IsSealed"] = 					"False",
-						["SnappingDistanceOverride"] =	"",
-						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
-					},
-		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
-						["NameLower"] = 				"Syunmunngoi-saam",
-						["Subtitle"] = 					"Door - Outdoor",				-- Subtitle SET TO NameLower IF LEFT EMPTY
-						["Description"] = 				"A outdoor freighter door. Snaps to rooms.",
-						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
-						["Icon"] = 						"",
-						["Requirements"] ={ 
-											{ ["ID"] = 				"LAND2",
-											  ["InventoryType"] = 	"Substance",
-											  ["Amount"] = 			"35"
-											},
-										}
-					}
-	},
 	{	["OBJECT"] = {	["ID"] =						"WFREI_FUELPOD",
 						["PlacementScene"] =			"",
 						["Style"] = 					"None",
@@ -45945,6 +46089,226 @@ HUBFLAG_DECOR_NOSNAP = -- ENTRIES WITHOUT SNAPPOINTS
 											{ ["ID"] = 				"CAVE1",
 											  ["InventoryType"] = 	"Substance",
 											  ["Amount"] = 			"15"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WDIST_POD",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DISTRESSSIGNAL\CONTAINER.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_W" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Faanwuicong",
+						["Subtitle"] = 					"Scrap Technology Module",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A technology module, often seen around distress signals.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"40"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WDIST_BLACKBOX",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DISTRESSSIGNAL\DEBRILARGECONTAINER.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_W" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"False",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Feihang-Haakhap",
+						["Subtitle"] = 					"Scrap Technology Module",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A technology module, often seen around distress signals.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND2",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"40"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WDEPOT_TRA",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DEPOT\DEPOTTRADERTOP.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Congfu-soeng",
+						["Subtitle"] = 					"Depot Tank",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A depot tank.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"30"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WDEPOT_SCI",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DEPOT\DEPOTSCIENTIFICTOP.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Congfu-Fo",
+						["Subtitle"] = 					"Depot Tank",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A depot tank.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"30"
+											},
+										}
+					}
+	},
+	{	["OBJECT"] = {	["ID"] =						"WDEPOT_WAR",
+						["PlacementScene"] =			"",
+						["Style"] = 					"None",
+						["SnapPoints"] = 				"", 			-- SnapPoints PATH SET TO Model PATH IF LEFT EMPTY
+						["Model"] = 					"CUSTOMMODELS\SC_HUBFLAG\DECOR\DEPOT\DEPOTWARRIORTOP.SCENE.MBIN",
+						["DecorationType"] = 			"Normal",
+						["IsPlaceable"] = 				"True",
+						["IsDecoration"] = 				"True",
+						["Biome"] = 					"Lush",
+						["BuildableOnFreighter"] = 		"True",
+						["BuildableOnPlanet"] = 		"False",
+						["CheckPlaceholderCollision"] = "False",
+						["CollisionScale"] = 			"0.9",
+						["EnableCollision"] = 			"True",
+						["CanPlaceOnItself"] = 			"True",
+						["CanScale"] = 					"True",
+						["SubGroupName"] = 					{ "WDECOR_IND" },
+						["StorageContainerIndex"] = 	"-1",
+						["CanChangeColour"] = 			"True",
+						["CanChangeMaterial"] = 		"False",
+						["RemovesAttachedDecoration"] = "False",
+						["EditsTerrain"] =				"False",
+						["BaseTerrainEditShape"] = 		"Cube",
+						["TerrainEditBaseYOffset"] = 	"0",
+						["TerrainEditTopYOffset"] = 	"0",
+						["TerrainEditBoundsScalar"] = 	"1",
+						["IsSealed"] = 					"False",
+						["SnappingDistanceOverride"] =	"",
+						["Connection"] = 				"DECOR",		-- BASIC / CUBEROOM / DECOR, OUTPOSTS COUNT AS CUBEROOM
+					},
+		["PRODUCT"] = {	["Name"] = 						"",				-- Name SET TO NameLower IN ALL CAPS IF LEFT EMPTY
+						["NameLower"] = 				"Congfu-Gwan",
+						["Subtitle"] = 					"Depot Tank",				-- Subtitle SET TO NameLower IF LEFT EMPTY
+						["Description"] = 				"A depot tank.",
+						-- ICON PATH SET TO CUSTOMMODELS/SC_HUBFLAG/DECOR/ICONS/ + "ID" + .DDS IF LEFT EMPTY
+						["Icon"] = 						"",
+						["Requirements"] ={ 
+											{ ["ID"] = 				"LAND3",
+											  ["InventoryType"] = 	"Substance",
+											  ["Amount"] = 			"30"
 											},
 										}
 					}
@@ -67074,7 +67438,7 @@ return [[
 ]]
 end
 
-function GetBaseBuildingObject(ID, PLACEMENT, STYLE, SNAP, MODEL, DTYPE, PLACE, ISDECOR, BIOME, FREIGHTER, PLANET, CHECKCOLL, ENCOLL, SCALEABLE, GROUPS, STORAGE, COLOUR, MAT, RAD, TERRAIN, T_SHAPE, SEAL, POWER, SNAP_SHORT)
+function GetBaseBuildingObject(ID, PLACEMENT, STYLE, SNAP, MODEL, DTYPE, PLACE, ISDECOR, BIOME, FREIGHTER, PLANET, CHECKCOLL, COLLSCALE, ENCOLL, STACK, SCALEABLE, GROUPS, STORAGE, COLOUR, MAT, RAD, TERRAIN, T_SHAPE, T_BASE, T_TOP, T_SCALE, SEAL, POWER, SNAP_SHORT)
 GROUP_INJECT = ""
 POWER_INJECT = ""
 POWER_INJECT = HUBFLAG_LINKGRID[POWER]
@@ -67086,8 +67450,7 @@ else SNAP_INJECT = SNAP
 end
 
 INACTIVE = ""
-if OVERRIDE_INACTIVE then INACTIVE = MODEL
-end
+if OVERRIDE_INACTIVE then INACTIVE = MODEL end
 
 if BUILD_ANYWHERE then
 	FREIGHTER = "True"
@@ -67320,6 +67683,7 @@ return [[
       <Property name="GiveRewardOnSpecialPurchase" value="" />
       <Property name="EggModifierIngredient" value="False" />
       <Property name="IsTechbox" value="False" />
+      <Property name="CanSendToOtherPlayers" value="False" />
     </Property>
 ]]
 end
@@ -67338,15 +67702,15 @@ return [[
           </Property>
           <Property name="Model" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. MODEL .. [[" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
+			<Property name="ResHandle" value="GcResource.xml">
+			  <Property name="ResourceID" value="0" />
+			</Property>
           </Property>
           <Property name="Inactive" value="TkModelResource.xml">
             <Property name="Filename" value="]] .. INACTIVE .. [[" />
-            <Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
+			<Property name="ResHandle" value="GcResource.xml">
+			  <Property name="ResourceID" value="0" />
+			</Property>
           </Property>
         </Property>
       </Property>
@@ -67356,7 +67720,7 @@ end
 
 function GetSnapGroupPart(ID, MODELS, INACTIVE)
 STYLEMODEL_INJECT = ""
-for _,l in pairs(MODELS) do
+for _k,l in pairs(MODELS) do
 	INACTIVE_INJECT = ""
 	if INACTIVE then INACTIVE_INJECT = l["Filename"] 
 end
@@ -68077,7 +68441,7 @@ end
 -- else GROUPS_INJECT = HUBFLAG_GROUPS_ASSLESS
 -- end
 
-for _,j in pairs(GROUPS_INJECT) do	-- INITIALISE TOPGROUP_COUNTER
+for _i,j in pairs(GROUPS_INJECT) do	-- INITIALISE TOPGROUP_COUNTER
 	TOPGROUP_COUNTER[j["ID"]] = 0
 end
 
@@ -68105,10 +68469,10 @@ EXPORT_SPECSHOP= ""
 NEWFILES_FINAL = {}
 
 -- JOINING THE OBJECT LISTS
-for _,j in pairs(HUBFLAG_DECAL_GARDEN) do
+for _i,j in pairs(HUBFLAG_DECAL_GARDEN) do
 	HUBFLAG_DECOR_NOSNAP[#HUBFLAG_DECOR_NOSNAP+1] = j
 end
-for _,j in pairs(HUBFLAG_DECOR_NOSNAP) do
+for _i,j in pairs(HUBFLAG_DECOR_NOSNAP) do
 	HUBFLAG_OBJPROD[#HUBFLAG_OBJPROD + 1] = j
 end
 
@@ -68132,15 +68496,14 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 		PLACEMENT_PATH = MakePlacementScenePath(j["OBJECT"]["ID"]) .. [[.MBIN]]
 	else PLACEMENT_PATH = j["OBJECT"]["PlacementScene"]
 	end
-	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"], j["OBJECT"]["SnapPoints"],j["OBJECT"]["Model"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], j["OBJECT"]["SnappingDistanceOverride"])
+	EXPORT_BASEOBJECTS_LIST[i+1] = GetBaseBuildingObject(j["OBJECT"]["ID"], PLACEMENT_PATH, j["OBJECT"]["Style"], j["OBJECT"]["SnapPoints"],j["OBJECT"]["Model"],j["OBJECT"]["DecorationType"],j["OBJECT"]["IsPlaceable"],j["OBJECT"]["IsDecoration"],j["OBJECT"]["Biome"],j["OBJECT"]["BuildableOnFreighter"],j["OBJECT"]["BuildableOnPlanet"],j["OBJECT"]["CheckPlaceholderCollision"],j["OBJECT"]["CollisionScale"],j["OBJECT"]["EnableCollision"],j["OBJECT"]["CanPlaceOnItself"],j["OBJECT"]["CanScale"],j["OBJECT"]["SubGroupName"],j["OBJECT"]["StorageContainerIndex"],j["OBJECT"]["CanChangeColour"],j["OBJECT"]["CanChangeMaterial"],j["OBJECT"]["RemovesAttachedDecoration"],j["OBJECT"]["EditsTerrain"],j["OBJECT"]["BaseTerrainEditShape"],j["OBJECT"]["TerrainEditBaseYOffset"],j["OBJECT"]["TerrainEditTopYOffset"],j["OBJECT"]["TerrainEditBoundsScalar"],j["OBJECT"]["IsSealed"],j["OBJECT"]["Connection"], j["OBJECT"]["SnappingDistanceOverride"])
 	EXPORT_PRODUCTS_LIST[i+1] = GetBaseProduct(j["OBJECT"]["ID"],j["PRODUCT"]["Name"],j["PRODUCT"]["NameLower"],j["PRODUCT"]["Subtitle"],j["PRODUCT"]["Description"],j["PRODUCT"]["Icon"],j["PRODUCT"]["Requirements"])
 	EXPORT_PARTS_LIST[i+1] = GetBaseBuildingPart(j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Model"], OVERRIDE_INACTIVE)
 	EXPORT_AUTOPARTDATA_LIST[i+1] = getAutoPartData("_" .. j["OBJECT"]["ID"], j["OBJECT"]["Style"], j["OBJECT"]["Connection"])
 	EXPORT_COST_LIST[i+1] = GetBaseBuildingCost(j["OBJECT"]["ID"], POP_IN_RATE)
 	IS_SPEC = false
-	for _,n in pairs(j["OBJECT"]["SubGroupName"]) do
-		if n == "WDSPEC" then IS_SPEC = true
-		end		
+	for _m,n in pairs(j["OBJECT"]["SubGroupName"]) do
+		if n == "WDSPEC" then IS_SPEC = true end		
 	end
 	if IS_SPEC then
 			EXPORT_SPECSHOP = EXPORT_SPECSHOP .. GetSpecials(j["OBJECT"]["ID"])		-- PUTTING WDSPEC OBJECTS IN PURCHASEABLESPECIALS
@@ -68151,9 +68514,9 @@ for i,j in pairs(HUBFLAG_OBJPROD) do
 end
 
 -- ADDING SNAPGROUPS TO PARTS TABLE
-for _,j in pairs(HUBFLAG_SNAPGROUPS) do
+for _i,j in pairs(HUBFLAG_SNAPGROUPS) do
 	table.insert(EXPORT_PARTS_LIST,GetSnapGroupPart(j["ID"], j["StyleModels"], OVERRIDE_INACTIVE))
-	for _,l in pairs(j["StyleModels"]) do
+	for _k,l in pairs(j["StyleModels"]) do
 		table.insert(EXPORT_AUTOPARTDATA_LIST, getAutoPartData(j["ID"], l["Style"], l["Connection"]))
 	end
 end
@@ -68850,6 +69213,7 @@ BASEBUILD_ENTRIES =
 					-- {
 						-- ["SPECIAL_KEY_WORDS"] = {"ID","WALLFLOORLADDER"},
 						-- ["PRECEDING_KEY_WORDS"]	= {"Groups"},
+						-- --["LINE_OFFSET"] 		= "+0",
 						-- ["ADD"] 				=
 						-- [[<Property value="NMSString0x10.xml">
 -- <Property name="Value" value="PF_EXT_DECOR" /> 
@@ -68871,6 +69235,7 @@ BASEBUILD_ENTRIES =
 					},
 					{
 						-- ["PRECEDING_KEY_WORDS"] = {"Objects"},
+						-- --["LINE_OFFSET"] 		= "+0",
 						["PRECEDING_KEY_WORDS"] = {"GcBaseBuildingGroup.xml"},
 						["LINE_OFFSET"] 		= "-3",
 						["ADD"] 				= EXPORT_BASEOBJECTS
@@ -69107,6 +69472,7 @@ FINAL_VALUE_CHANGE =
 						},
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_PRODUCTS
 						},
 					},
@@ -69117,6 +69483,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"ObjectCosts"},
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_COST
 						}
 					},
@@ -69138,6 +69505,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"PartsData"},
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_AUTOPARTDATA
 						}
 					}
@@ -69148,6 +69516,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= CUSTOM_INTERACTIONS
 						}
 					},
@@ -69158,6 +69527,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"GenericTable"},
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= CUSTOM_REWARDS
 						}
 					},
@@ -69168,6 +69538,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"PlacementInfos"},
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= CUSTOM_NPCS
 						}
 					},
@@ -69182,6 +69553,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"KnownProducts"},
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_KNOWNPRODUCTS
 						}
 					},
@@ -69192,6 +69564,7 @@ FINAL_VALUE_CHANGE =
 					{
 						{
 							["PRECEDING_KEY_WORDS"] = {"Table"},
+							--["LINE_OFFSET"] 		= "+0",
 							["ADD"] 				= EXPORT_SPECSHOP
 						}
 					},
@@ -69221,11 +69594,11 @@ LANGUAGE_FILE_HEADER = [[
 <?xml version="1.0" encoding="utf-8"?>
 <Data template="TkLocalisationTable">
   <Property name="Table">]]
-for _,j in pairs(LANGUAGE_TYPE) do
+for _i,j in pairs(LANGUAGE_TYPE) do
 	LANGUAGE_TEMP = {}
 	EXPORT_LANGUAGE = {}
 	table.insert(EXPORT_LANGUAGE, LANGUAGE_FILE_HEADER)
-	for _,l in pairs(ADD_LANGUAGE_LIST) do
+	for _k,l in pairs(ADD_LANGUAGE_LIST) do
 		-- USES ENGLISH ENTRY IF THERE IS NO TRANSLATION
 		if l["Value"][j] == "" then
 			 table.insert(EXPORT_LANGUAGE, GetLanguageEntry(l["ID"],l["Value"]["English"]))
@@ -69254,6 +69627,7 @@ for _,j in pairs(LANGUAGE_TYPE) do
 							-- {
 								-- {
 									-- ["PRECEDING_KEY_WORDS"] = {"Table"},
+									-- --["LINE_OFFSET"] 		= "+0",
 									-- ["ADD"] 				= table.concat(EXPORT_LANGUAGE)
 								-- }
 							-- }
@@ -69265,6 +69639,7 @@ for _,j in pairs(LANGUAGE_TYPE) do
 							-- {
 								-- {
 									-- ["PRECEDING_KEY_WORDS"] = {"Table"},
+									-- --["LINE_OFFSET"] 		= "+0",
 									-- ["ADD"] 				= table.concat(EXPORT_LANGUAGE)
 								-- }
 							-- }
@@ -69274,7 +69649,7 @@ for _,j in pairs(LANGUAGE_TYPE) do
 end
 
 if MORE_VANILLA_FLOOR then
-	for _,j in pairs(VANILLA_FLOOR_VALUE_CHANGE) do
+	for _i,j in pairs(VANILLA_FLOOR_VALUE_CHANGE) do
 		table.insert(FINAL_VALUE_CHANGE, j)
 	end
 end
@@ -69290,6 +69665,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"]		= "Generates Metadata files and patch other mods with this script",
 ["MOD_AUTHOR"]			= "WinderTP",
 ["NMS_VERSION"]			= "3.75",
+["AMUMSS_SUPPRESS_MSG"] = "SUPPRESS_FLOOR_DIV, UNUSED_VARIABLE",
 ["MODIFICATIONS"] 		= 
 	{
 		{
