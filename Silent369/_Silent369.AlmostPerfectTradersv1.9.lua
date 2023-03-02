@@ -1,8 +1,8 @@
 local modfilename = "AlmostPerfectTraders"
 local lua_author  = "Silent"
-local lua_version = "v1.8"
+local lua_version = "v1.9"
 local mod_author  = "Silent369"
-local nms_version = "4.0.x"
+local nms_version = "4.1"
 local description = [[
 Modifies AI Ships Outpost / Planetary Archive / Station Approach and Landing Settings.
 
@@ -27,8 +27,13 @@ and to minimise the damage to Crashed Ships when discovered to save resources on
 --MODELS\COMMON\SPACECRAFT\DROPSHIPS\ACCESSORIES\LANDINGGEAR\ENTITIES\LANDINGGEARFRONT.ENTITY.MBIN
 --MODELS\COMMON\SPACECRAFT\DROPSHIPS\ACCESSORIES\LANDINGGEAR\ENTITIES\LANDINGGEARREAR.ENTITY.MBIN
 --MODELS\COMMON\SPACECRAFT\SCIENTIFIC\ACCESSORIES\LANDINGGEAR\LANDINGGEAR_POD\ENTITIES\LANDINGGEAR.ENTITY.MBIN
+--MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGPAD\LANDINGPADTRADER\ENTITIES\LANDINGPADTRADER.ENTITY.MBIN
+--MODELS\SPACE\ATLASSTATION\SHARED\ENTITIES\ATLASSTATION.ENTITY.MBIN
+--MODELS\SPACE\NEXUS\NEXUS\ENTITIES\NEXUS.ENTITY.MBIN
+--MODELS\SPACE\NEXUS\NEXUSEXTERIOR\ENTITIES\NEXUSEXTERIOR.ENTITY.MBIN
 --MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN
 --MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN
+--MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION_ABANDONED.ENTITY.MBIN
 
 --|=======================================================================================--
 
@@ -40,12 +45,12 @@ local _FillUp_Outposts = true
 
 --Station Entity
 local _sApproachRange  = 155
-local _sApproachSpeed  = 150
+local _sApproachSpeed  = 200
 local _sAutoLandRange  = 345
 
 --Station Dock Entity
 local _dApproachRange  = 105
-local _dApproachSpeed  = 115
+local _dApproachSpeed  = 200
 local _dAutoLandRange  = 345
 
 --LandingGear Speed
@@ -128,7 +133,14 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"]   =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION.ENTITY.MBIN",
+                        "MODELS\SPACE\SPACESTATION\SPACESTATION\ENTITIES\STATION_ABANDONED.ENTITY.MBIN",
+                        "MODELS\SPACE\NEXUS\NEXUS\ENTITIES\NEXUS.ENTITY.MBIN",
+                        "MODELS\SPACE\NEXUS\NEXUSEXTERIOR\ENTITIES\NEXUSEXTERIOR.ENTITY.MBIN",
+                        "MODELS\SPACE\ATLASSTATION\SHARED\ENTITIES\ATLASSTATION.ENTITY.MBIN"
+                    },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -140,18 +152,21 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ApproachSpeed",               _sApproachSpeed}, --Original "150"
                                 {"PlayerAutoLandRange",         _sAutoLandRange}, --Original "300"
                                 {"CircleRadius",                         "1900"}, --Original "2000"
-                                {"LandingSpeed",                            "1"}, --Original "10"
                                 {"TakeOffHeight",                           "2"}, --Original "3"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
                                 {"TakeOffAlignTime",                      "0.6"}, --Original "1"
                                 {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
-                                {"PostTakeOffExtraPlayerSpeed",           "200"}, --Original "60"
+                                {"PostTakeOffExtraPlayerSpeed",           "100"}, --Original "60"
                             }
                         },
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN"},
+                    ["MBIN_FILE_SOURCE"] =
+                    {
+                        "MODELS\SPACE\SPACESTATION\MODULARPARTS\ENTITIES\STATION_DOCK.ENTITY.MBIN",
+                        "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\LANDINGPAD\LANDINGPADTRADER\ENTITIES\LANDINGPADTRADER.ENTITY.MBIN"
+                    },
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -163,12 +178,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"ApproachSpeed",               _dApproachSpeed}, --Original "100"
                                 {"PlayerAutoLandRange",         _dAutoLandRange}, --Original "300"
                                 {"CircleRadius",                          "190"}, --Original "200"
-                                {"LandingSpeed",                            "1"}, --Original "10"
                                 {"TakeOffHeight",                           "2"}, --Original "10"
                                 {"TakeOffFwdDist",                          "3"}, --Original "5"
                                 {"TakeOffAlignTime",                      "0.6"}, --Original "1"
                                 {"TakeOffExtraAIHeight",                    "4"}, --Original "7"
-                                {"PostTakeOffExtraPlayerSpeed",           "200"}, --Original "60"
+                                {"PostTakeOffExtraPlayerSpeed",           "100"}, --Original "60"
                             }
                         },
                     }

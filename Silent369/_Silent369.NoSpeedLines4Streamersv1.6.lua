@@ -1,8 +1,8 @@
 local modfilename = "NoSpeedLines4Streamers"
 local lua_author  = "Silent"
-local lua_version = "v1.5"
+local lua_version = "v1.6"
 local mod_author  = "Silent369"
-local nms_version = "4.0.x"
+local nms_version = "4.12"
 local description = [[
 No speed lines. No ship halo effect at cruise/boost/pulse speeds in space. No Space Dust / Plasma.
 ]]

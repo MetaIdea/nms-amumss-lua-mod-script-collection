@@ -1,8 +1,8 @@
 local modfilename = "BgDarkerUIFonts"
 local lua_author  = "Silent"
-local lua_version = "v1.3"
+local lua_version = "v1.4"
 local mod_author  = "Silent369"
-local nms_version = "4.0.x"
+local nms_version = "4.12"
 local maintenance = mod_author
 local description = [[
 Changes Start/Options Backgrounds/Transparent UI and Fonts 
