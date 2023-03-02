@@ -1,8 +1,8 @@
-local modfilename = "AlmostPerfectFlightLite"
+local modfilename = "AlmostPerfectFlightLiteNr"
 local lua_author  = "Silent"
-local lua_version = "v2.1"
+local lua_version = "v2.2"
 local mod_author  = "Silent369"
-local nms_version = "4.0.x"
+local nms_version = "4.1.x"
 local description = [[
 Changes Ship Pulse Flight, Combat/Planet/Space Flight and Ship Hover Characteristics.
 With optional settings to make flight much easier (a bit cheaty, hence optional).
@@ -26,13 +26,16 @@ local _boostMult = 1.25
 local _boostMxSp = 2
 local _max_speed = 1.75
 local _thrstMult = 1.25
-local _warpSMult = 2
+local _warpSMult = 3
 
 --Handling
 local _brakeMult = 0.8
+local _rev_break = 2
 local _lsptrnDmp = 0.1
-local _min_speed = 0.0  --Allows Reverse
+local _min_speed = 0.01
 local _overBreak = 0.15
+local _rolAmount = 1.23
+local _rollForce = 1.25
 local _rudTurnSt = 8
 local _speedFall = 0
 local _trnStreng = 3
@@ -40,7 +43,7 @@ local _turnBMult = 0.5
 
 --Settings
 local _padTurnSp = 0.85
-local _fuelMulti = 0.35 --fuel cost saving on launch
+local _fuelMulti = 0.25 --fuel cost on launch
 
 --NoBoost/MiniWarp/Stopping
 local _Restricts = 0.15 --relax noboost/miniwarp
@@ -102,6 +105,354 @@ table.insert(TableData,
                         })
 end
 
+--| Flight Control (Space Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Control", "GcPlayerSpaceshipControlData.xml", "SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control (Planet Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Control", "GcPlayerSpaceshipControlData.xml", "PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control (Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Control", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control (Atmos Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Control", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control Light (Space Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control Light (Planet Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control Light (Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control Light (Atmos Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control Heavy (Space Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control Heavy (Planet Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control Heavy (Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
+--| Flight Control Heavy (Atmos Combat Engine)
+--|=======================================================================================--
+if _shipStatsBonus then
+table.insert(TableData,
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"Falloff",                                _speedFall},
+                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
+                                {"MaxSpeed",                               _max_speed},
+                                {"BoostThrustForce",                       _thrstMult},
+                                {"BoostMaxSpeed",                          _boostMxSp},
+                                {"OverspeedBrake",                         _overBreak},
+                                {"DirectionBrakeMin",                      _max_speed},
+                                {"DirectionBrake",                         _max_speed},
+                                {"ReverseBrake",                           _rev_break},
+                                {"TurnStrength",                           _trnStreng},
+                                {"TurnBrakeMin",                           _turnBMult},
+                                {"TurnBrakeMax",                           _turnBMult},
+                                {"RollAmount",                             _rolAmount},
+                                {"RollForce",                              _rollForce}
+                            }
+                        })
+end
+
 --| Ship Hover
 --|=======================================================================================--
 if _shipHoverSpeed then
@@ -142,230 +493,6 @@ table.insert(TableData,
                             {
                                 {"MinSpeed",        _min_speed},
                                 {"ExitLeaveAngle",        "10"},
-                            }
-                        })
-end
-
---| Flight Control Light (Space Engine)
---|=======================================================================================--
-if _shipStatsBonus then
-table.insert(TableData,
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Falloff",                                _speedFall},
-                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _max_speed},
-                                {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _thrstMult},
-                                {"BoostMaxSpeed",                          _boostMxSp},
-                                {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _max_speed},
-                                {"DirectionBrake",                         _max_speed},
-                                {"ReverseBrake",                           _max_speed},
-                                {"TurnStrength",                           _trnStreng},
-                                {"TurnBrakeMin",                           _turnBMult},
-                                {"TurnBrakeMax",                           _turnBMult},
-                            }
-                        })
-end
-
---| Flight Control Light (Planet Engine)
---|=======================================================================================--
-if _shipStatsBonus then
-table.insert(TableData,
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Falloff",                                _speedFall},
-                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _max_speed},
-                                {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _thrstMult},
-                                {"BoostMaxSpeed",                          _boostMxSp},
-                                {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _max_speed},
-                                {"DirectionBrake",                         _max_speed},
-                                {"ReverseBrake",                           _max_speed},
-                                {"TurnStrength",                           _trnStreng},
-                                {"TurnBrakeMin",                           _turnBMult},
-                                {"TurnBrakeMax",                           _turnBMult},
-                            }
-                        })
-end
-
---| Flight Control Light (Combat Engine)
---|=======================================================================================--
-if _shipStatsBonus then
-table.insert(TableData,
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["MATH_OPERATION"]      = "*",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Falloff",                                _speedFall},
-                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _max_speed},
-                                {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _thrstMult},
-                                {"BoostMaxSpeed",                          _boostMxSp},
-                                {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _max_speed},
-                                {"DirectionBrake",                         _max_speed},
-                                {"ReverseBrake",                           _max_speed},
-                                {"TurnStrength",                           _trnStreng},
-                                {"TurnBrakeMin",                           _turnBMult},
-                                {"TurnBrakeMax",                           _turnBMult},
-                            }
-                        })
-end
-
---| Flight Control Light (Atmos Combat Engine)
---|=======================================================================================--
-if _shipStatsBonus then
-table.insert(TableData,
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"ControlLight", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["MATH_OPERATION"]      = "*",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Falloff",                                _speedFall},
-                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _max_speed},
-                                {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _thrstMult},
-                                {"BoostMaxSpeed",                          _boostMxSp},
-                                {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _max_speed},
-                                {"DirectionBrake",                         _max_speed},
-                                {"ReverseBrake",                           _max_speed},
-                                {"TurnStrength",                           _trnStreng},
-                                {"TurnBrakeMin",                           _turnBMult},
-                                {"TurnBrakeMax",                           _turnBMult},
-                            }
-                        })
-end
-
---| Flight Control Heavy (Space Engine)
---|=======================================================================================--
-if _shipStatsBonus then
-table.insert(TableData,
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "SpaceEngine", "GcPlayerSpaceshipEngineData.xml"},
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Falloff",                                _speedFall},
-                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _max_speed},
-                                {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _thrstMult},
-                                {"BoostMaxSpeed",                          _boostMxSp},
-                                {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _max_speed},
-                                {"DirectionBrake",                         _max_speed},
-                                {"ReverseBrake",                           _max_speed},
-                                {"TurnStrength",                           _trnStreng},
-                                {"TurnBrakeMin",                           _turnBMult},
-                                {"TurnBrakeMax",                           _turnBMult},
-                            }
-                        })
-end
-
---| Flight Control Heavy (Planet Engine)
---|=======================================================================================--
-if _shipStatsBonus then
-table.insert(TableData,
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "PlanetEngine", "GcPlayerSpaceshipEngineData.xml"},
-                            ["MATH_OPERATION"]      = "*",
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Falloff",                                _speedFall},
-                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _max_speed},
-                                {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _thrstMult},
-                                {"BoostMaxSpeed",                          _boostMxSp},
-                                {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _max_speed},
-                                {"DirectionBrake",                         _max_speed},
-                                {"ReverseBrake",                           _max_speed},
-                                {"TurnStrength",                           _trnStreng},
-                                {"TurnBrakeMin",                           _turnBMult},
-                                {"TurnBrakeMax",                           _turnBMult},
-                            }
-                        })
-end
-
---| Flight Control Heavy (Combat Engine)
---|=======================================================================================--
-if _shipStatsBonus then
-table.insert(TableData,
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "CombatEngine", "GcPlayerSpaceshipEngineData.xml"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["MATH_OPERATION"]      = "*",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Falloff",                                _speedFall},
-                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _max_speed},
-                                {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _thrstMult},
-                                {"BoostMaxSpeed",                          _boostMxSp},
-                                {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _max_speed},
-                                {"DirectionBrake",                         _max_speed},
-                                {"ReverseBrake",                           _max_speed},
-                                {"TurnStrength",                           _trnStreng},
-                                {"TurnBrakeMin",                           _turnBMult},
-                                {"TurnBrakeMax",                           _turnBMult},
-                            }
-                        })
-end
-
---| Flight Control Heavy (Atmos Combat Engine)
---|=======================================================================================--
-if _shipStatsBonus then
-table.insert(TableData,
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"ControlHeavy", "GcPlayerSpaceshipControlData.xml", "AtmosCombatEngine", "GcPlayerSpaceshipEngineData.xml"},
-                            ["REPLACE_TYPE"]        = "ALL",
-                            ["MATH_OPERATION"]      = "*",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"Falloff",                                _speedFall},
-                                {"LowSpeedTurnDamper",                     _lsptrnDmp},
-                                {"MaxSpeed",                               _max_speed},
-                                {"MinSpeed",                               _min_speed},
-                                {"BoostThrustForce",                       _thrstMult},
-                                {"BoostMaxSpeed",                          _boostMxSp},
-                                {"OverspeedBrake",                         _overBreak},
-                                {"DirectionBrakeMin",                      _max_speed},
-                                {"DirectionBrake",                         _max_speed},
-                                {"ReverseBrake",                           _max_speed},
-                                {"TurnStrength",                           _trnStreng},
-                                {"TurnBrakeMin",                           _turnBMult},
-                                {"TurnBrakeMax",                           _turnBMult},
                             }
                         })
 end
@@ -446,10 +573,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"MiniWarpHUDArrowAttractAngle",                  "8"}, --Original "10"
 								{"MiniWarpHUDArrowAttractAngleStation",           "4"}, --Original "5"
-								{"MiniWarpHUDArrowAttractAngleOtherPlayerStuff",  "0"}, --Original "2"
+								{"MiniWarpHUDArrowAttractAngleOtherPlayerStuff",  "1"}, --Original "2"
 								{"MiniWarpHUDArrowAttractAngleSaveBeacon",        "2"}, --Original "2.5
-								{"MiniWarpHUDArrowAttractAngleDense",             "1"}, --Original "4"
-								{"MiniWarpHUDArrowNumMarkersToBeDense",          "10"}, --Original "6"
+								{"MiniWarpHUDArrowAttractAngleDense",             "6"}, --Original "4"
+								{"MiniWarpHUDArrowNumMarkersToBeDense",           "6"}, --Original "6"
 								
                             }
                         },

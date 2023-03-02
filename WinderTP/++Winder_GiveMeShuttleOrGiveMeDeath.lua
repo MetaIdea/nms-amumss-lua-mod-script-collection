@@ -178,8 +178,8 @@ INVENTORY_CHANGE =
 	}
 }
 
-for i,j in pairs(StatChanges) do
-	for k,l in pairs(Class) do
+for _i,j in pairs(StatChanges) do
+	for _k,l in pairs(Class) do
 		TEMP_TABLE =
 		{
 			["PRECEDING_FIRST"] = "TRUE",
@@ -197,8 +197,9 @@ for i,j in pairs(StatChanges) do
 	end
 end
 
-for i,j in pairs(SpawnInventory) do
-	for k,l in pairs(j["Sizes"]) do
+for _i,j in pairs(SpawnInventory) do
+	for _k,l in pairs(j["Sizes"]) do
+		TEMP_TABLE = {}
 		if j["Type"] == "Shuttle" and l["Size"] == "Small" then
 		TEMP_TABLE =
 		{
@@ -236,8 +237,8 @@ for i,j in pairs(SpawnInventory) do
 	end
 end
 
-for i,j in pairs(MaxUpgradeSize) do
-	for k,l in pairs(j["Data"]) do
+for _i,j in pairs(MaxUpgradeSize) do
+	for _k,l in pairs(j["Data"]) do
 		TEMP_TABLE =
 		{
 			--["MATH_OPERATION"] = "*", -- "*", "+", "-", "/" or leave empty for normal replacement
@@ -276,14 +277,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"Shuttle",		"100"},
 							}
 						},
-						{
-							["INTEGER_TO_FLOAT"]	= "FORCE",
-							["REPLACE_TYPE"]		= "",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"CivilianTraderSpaceshipsCacheCount", "48"}
-							}
-						},
+						-- {
+							-- ["INTEGER_TO_FLOAT"]	= "FORCE",
+							-- ["REPLACE_TYPE"]		= "",
+							-- ["VALUE_CHANGE_TABLE"] 	= 
+							-- {
+								-- {"CivilianTraderSpaceshipsCacheCount", "48"}
+							-- }
+						-- },
 						{
 							["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
 							["INTEGER_TO_FLOAT"]	= "FORCE",

@@ -1,8 +1,8 @@
 local modfilename = "Biomes.FireFliesAndParticlesReduced"
 local lua_author  = "Silent"
-local lua_version = "v1.7"
+local lua_version = "v1.9"
 local mod_author  = "Silent369"
-local nms_version = "3.99.x"
+local nms_version = "4.12"
 local description = [[
 Resized / Reduced(optional) 'heavyair' firefly particles in all biomes. Gas / Smoke Scaled up on other biomes.
 ]]
@@ -226,10 +226,31 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                         --===============================================================================
+                        --BUBBLES SCENE SCALES
+                        --===============================================================================
+
+                {
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS/EFFECTS/HEAVYAIR/BUBBLE/BUBBLE.HEAVYAIR.MBIN"},
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["SPECIAL_KEY_WORDS"]   = {"Material", "MODELS/EFFECTS/HEAVYAIR/BUBBLE/HEAVYAIRBUBBLE.MATERIAL.MBIN"},
+                            ["MATH_OPERATION"]      = "*",
+                            ["INTEGER_TO_FLOAT"]    = "FORCE",
+                            ["REPLACE_TYPE"]        = "ALL",
+                            ["VALUE_MATCH"]         = "",
+                            ["VALUE_CHANGE_TABLE"]  =
+                            {
+                                {"NumberOfParticles", round(DIVIDER,5)},
+                            }
+                        },
+                    }
+                },
+                        --===============================================================================
                         --ALPINE SCENE SCALES (SMOKE)
                         --===============================================================================
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -248,7 +269,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\ALPINE\ALPINE.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -268,7 +289,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --SNOW SCENE SCALES (SNOWAIR SMOKE)
                         --===============================================================================
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SNOW\SNOWAIR.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SNOW\SNOWAIR.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -286,7 +307,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SNOW\SNOW2.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SNOW\SNOW2.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -303,7 +324,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SNOW\SNOW1.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SNOW\SNOW1.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -323,7 +344,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --FIRESTORM SCENE SCALES (FIRESTORM GAS)
                         --===============================================================================
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\FIRESTORM.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\FIRESTORM.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -341,7 +362,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\FIRESTORMGAS.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\FIRESTORMGAS.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -358,7 +379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\SCORCHEDGASOLD.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\SCORCHEDGASOLD.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -375,7 +396,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\SPARK.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\SPARK.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -392,7 +413,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\STORMFLAME.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\STORMFLAME.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -409,7 +430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\STORMSMOKE.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\FIRESTORM\STORMSMOKE.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -429,7 +450,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --GRAVITYSTORM SCENE SCALES (GRAVITY STORM GAS)
                         --===============================================================================
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORM.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORM.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -447,7 +468,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORMEMBER.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORMEMBER.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -464,7 +485,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORMGAS.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORMGAS.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -481,7 +502,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORMSPIKE.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORMSPIKE.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -498,7 +519,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORMSPIKEL.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\GRAVITYSTORMSPIKEL.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -515,7 +536,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\SPARK.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\SPARK.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -532,7 +553,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\STORMFLAME.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\GRAVITYSTORM\STORMFLAME.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -552,7 +573,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --MOUNTAIN SCENE SCALES (MOUNTAIN SMOKE / SPARK)
                         --===============================================================================
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\MOUNTAIN.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\MOUNTAIN.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -570,7 +591,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\MOUNTAIN.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\MOUNTAIN.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -587,7 +608,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\MOUNTAIN2.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\MOUNTAIN\MOUNTAIN2.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -607,7 +628,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --RADIOACTIVE SCENE SCALES (RADIOACTIVE GAS)
                         --===============================================================================
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\RADIOACTIVE\RADIOACTIVE.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\RADIOACTIVE\RADIOACTIVE.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -628,7 +649,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --SCORCHED SCENE SCALES (SCORCHED GAS)
                         --===============================================================================
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHED.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHED.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -646,7 +667,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHEDGAS.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHEDGAS.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -663,7 +684,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHEDGASOLD.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHEDGASOLD.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -680,7 +701,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHFLAME.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SCORCHFLAME.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -697,7 +718,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SPARK.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SCORCHED\SPARK.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -717,7 +738,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --SWAMP SCENE SCALES (SMOKE)
                         --===============================================================================
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SWAMP\SWAMP.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SWAMP\SWAMP.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -735,7 +756,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SWAMP\SWAMP.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SWAMP\SWAMP.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -752,7 +773,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\SWAMP\SWAMP2.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\SWAMP\SWAMP2.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -772,7 +793,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         --TOXIC SCENE SCALES (TOXIC GAS SMOKE)
                         --===============================================================================
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXIC.SCENE.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXIC.SCENE.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -790,7 +811,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICGAS.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICGAS.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -807,7 +828,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICRAIN1.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICRAIN1.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -824,7 +845,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICRAIN2.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICRAIN2.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -841,7 +862,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICSPORE.HEAVYAIR.MBIN"},
+                    ["MBIN_FILE_SOURCE"]  = {"MODELS\EFFECTS\HEAVYAIR\TOXIC\TOXICSPORE.HEAVYAIR.MBIN"},
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

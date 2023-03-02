@@ -1,8 +1,8 @@
-local modfilename = "_UnifiedWarps"
+local modfilename = "UnifiedWarps"
 local lua_author  = "Silent"
-local lua_version = "v2.0"
+local lua_version = "v2.1"
 local mod_author  = "Silent369"
-local nms_version = "4.0.x"
+local nms_version = "4.12"
 local description = "Unifies Blackhole/Portal/Ship/Teleporter Warps"
 
 --MODIFIES:
@@ -42,7 +42,7 @@ _TkPostProcessF50 =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-    ["MOD_FILENAME"]        = modfilename..lua_version..".pak",
+    ["MOD_FILENAME"]        = "_"..modfilename..lua_version..".pak",
     ["LUA_AUTHOR"]          = lua_author,
     ["MOD_AUTHOR"]          = mod_author,
     ["NMS_VERSION"]         = nms_version,

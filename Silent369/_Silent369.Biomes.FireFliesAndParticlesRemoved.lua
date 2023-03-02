@@ -1,8 +1,8 @@
 local modfilename = "Biomes.FireFliesAndParticlesRemoved"
 local lua_author  = "Silent"
-local lua_version = "v1.7"
+local lua_version = "v1.9"
 local mod_author  = "Silent369"
-local nms_version = "3.99.x"
+local nms_version = "4.12"
 local description = [[
 This version removes 'heavyair' fireflies / particles in all biomes.
 ]]

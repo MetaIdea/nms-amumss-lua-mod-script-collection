@@ -1,8 +1,8 @@
 local modfilename = "Biomes.CloudsSunAndFog"
 local lua_author  = "Silent"
-local lua_version = "2.0"
+local lua_version = "2.1"
 local mod_author  = "Silent369"
-local nms_version = "4.0.x"
+local nms_version = "4.12"
 local description = [[
 Realtime (NMS time) Day Length (Optional), Better Detailed Clouds, Slower Cloud Animation,
 Sun Properties and Planet Fog Adjustments. LOD Adjustments, Optional Lens Dirt Removal.
@@ -39,19 +39,10 @@ _Anim_Scale              = 23   --Original "50" wtf!
 --SUN BRIGHTNESS
 _LUTDFMult               = 1    --Original "0"
 _Intensity               = 3.4  --Original "3"
-_BlendTime               = 5    --Original "5"
-_RayDensity              = 1    --Original "1"
-_Brightness              = 0    --Original "0"
-_Contrast                = 1    --Original "1"
-_HueVariance             = 1.04 --Original "1.04"
-_Saturation              = 1    --Original "1"
-_VSaturation             = 0.05 --Original "0.05"
-_SSunFactor              = 20   --Original "20"
-_SMieFactor              = 0.3  --Original "0.3"
 _MaxSpaceFogStrength     = 0.3  --Original "0.5"
 _ReflectionStrength      = 0.2  --Original "0.3"
-_WeatherFilterSTCTime    = 5    --Original "10"
 _DOFFarStrengthWater     = 0.3  --Original "0"
+_WeatherFilterSTCTime    = 5    --Original "10"
 
 --STORM SETTINGS
 _StormWarningTime        = 25   --Original "25"
@@ -81,10 +72,10 @@ _Density                 = 2    --Original "1"
 _AmbientDensity          = 0.1  --Original "0.1"
 _BaseScale               = 1    --Original "1"
 _SampleScalar            = 3    --Original "5"
-_SampleThreshold         = 0.23 --Original "0.25"
+_SampleThreshold         = 0.22 --Original "0.25"
 _CloudBottomFade         = 1    --Original "1"
-_DetailScale             = 9    --Original "6"
-_ErosionEdgeSize         = 0.75 --Original "0.5"
+_DetailScale             = 7    --Original "6"
+_ErosionEdgeSize         = 0.65 --Original "0.5"
 _CloudDistortion         = 69   --Original "50"
 _CloudDistortionScale    = 0.85 --Original "1"
 _MaxIterations           = 128  --Original "128"
@@ -95,13 +86,13 @@ _HorizonFadeScalar       = 0.2  --Original "0.25"
 _HorizonDistance         = 23165 --Original "11165"
 
 --Cloud Heights
-_CloudHeightMin          = 750  --Original "650"
-_CloudHeightMax          = 950  --Original "900"
+_CloudHeightMin          = 2750  --Original "650"
+_CloudHeightMax          = 2950  --Original "900"
 _SkyAtmosphereHeight     = 6300 --Original "6000"
 _StratosphereHeight      = 4300 --Original "4000"
 
-_CloudHeightMinP         = 1400 --Original "1500"
-_CloudHeightMaxP         = 1500 --Original "1500"
+_CloudHeightMinP         = 2400 --Original "1500"
+_CloudHeightMaxP         = 2500 --Original "1500"
 _SkyAtmosphereHeightP    = 7400 --Original "7200"
 _StratosphereHeightP     = 5400 --Original "5200"
 
@@ -114,7 +105,7 @@ _StratosphereHeightP     = 5400 --Original "5200"
 --EaseInOutSine
 --EaseInOutQuad
 
-_Curve                   = "Logarithmic" --Original "Linear"
+_Curve                   = "EaseInOutSine" --Original "Linear"
 
 --Wind Offset
 WindOffsetX              = 0.1  --Original "0.5"
@@ -126,17 +117,17 @@ SWindOffsetY             = 0.15  --Original "0.5"
 
 --Cloud Gradient (Width,Height,Breadth)
 Cloud01X                 = 0.08  --Original "0.1"
-Cloud01Y                 = 0.1   --Original "0.15"
+Cloud01Y                 = 0.12   --Original "0.15"
 Cloud01Z                 = 0.10  --Original "0.15"
 Cloud01T                 = 0.15  --Original "0.2"
 
 Cloud02X                 = 0     --Original "0"
-Cloud02Y                 = 0.1   --Original "0.1"
+Cloud02Y                 = 0.12   --Original "0.1"
 Cloud02Z                 = 0.15  --Original "0.3"
 Cloud02T                 = 0.3   --Original "0.6"
 
 Cloud03X                 = 0     --Original "0"
-Cloud03Y                 = 0.1   --Original "0.2"
+Cloud03Y                 = 0.12   --Original "0.2"
 Cloud03Z                 = 0.2   --Original "0.3"
 Cloud03T                 = 0.4   --Original "1"
 
@@ -186,11 +177,6 @@ _SunClmHMax              = 390  --Original "390"
 _SunClampAngle           = 55   --Original "55"
 _SunFactorMin            = 0.4 --Original "0.4"
 
---SUN POSITION
-_sun_position_x          = -77.25284 --Original "-77.25284"
-_sun_position_y          = 61.62304  --Original "61.62304"
-_sun_position_z          = -21.84243 --Original "-21.84243"
-
 --HEAVYAIR
 _ThickNess               = 0.5  --Original "1"
 _Speed                   = 0.1  --Original "1"
@@ -239,28 +225,6 @@ _LODAdjust =
       </Property>
 ]]
 
---Original (low)
---      <Property name="RegionLODRadius">
---        <Property value="3" />
---        <Property value="7" />
---        <Property value="13" />
---        <Property value="9" />
---        <Property value="7" />
---        <Property value="10" />
---      </Property>
-
-_RegLODAdjust =
-[[
-      <Property name="RegionLODRadius">
-        <Property value="5" />
-        <Property value="10" />
-        <Property value="16" />
-        <Property value="12" />
-        <Property value="10" />
-        <Property value="10" />
-      </Property>
-]]
-
 NMS_MOD_DEFINITION_CONTAINER =
 {
     ["MOD_FILENAME"]            = "_"..modfilename..lua_version..".pak",
@@ -287,40 +251,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"LUTDistanceFlightMultiplier",  _LUTDFMult}, --Original "0"
                                 {"SunLightIntensity",           _Intensity }, --Original "3"
-                                {"SunLightBlendTime",            _BlendTime}, --Original "5"
-                                {"SunRayDensity",               _RayDensity}, --Original "1"
-                                {"Brightness",                  _Brightness}, --Original "0"
-                                {"Contrast",                      _Contrast}, --Original "1"
-                                {"HueVariance",                _HueVariance}, --Original "1.04"
-                                {"Saturation",                  _Saturation}, --Original "1"
-                                {"SaturationVariance",         _VSaturation}, --Original "0.05"
-                                {"SpaceSunFactor",              _SSunFactor}, --Original "20"
-                                {"SpaceMieFactor",              _SMieFactor}, --Original "0.3"
                                 {"MaxSpaceFogStrength",_MaxSpaceFogStrength}, --Original "0.5"
                                 {"ReflectionStrength",  _ReflectionStrength}, --Original "0.3"
                                 {"DOFFarStrengthWater",_DOFFarStrengthWater}, --Original "0"
-
+                
                                 {"ShadowLength",                      "800"}, --Original "400"
                                 {"ShadowLengthStation",              "2000"}, --Original "1300"
-
+                
                                 {"HBAOBias",                          "0.2"}, --Original "0.1"
                                 {"HBAORadius",                          "5"}, --Original "2"
                                 {"HBAOIntensity",                     "1.0"}, --Original "5"
-
-                                --LENS DIRT--
+                
+                                ----------------------------------------------------------------------------
+                                --Lens Dirt Options
+                                ----------------------------------------------------------------------------
+                
                                 {"LensScale",                           "0"}, --Original "0.3"
                                 {"LensDirt",                            "0"}, --Original "0.3"
                                 {"LensScaleCave",                       "0"}, --Original "4"
                                 {"LensDirtCave",                        "0"}, --Original "0.4"
-
+                
+                                ----------------------------------------------------------------------------
+                                --LOD / TAA Adjustments
+                                ----------------------------------------------------------------------------
+                
                                 --For LOD settings
                                 {"ForceUncachedTerrain",             "True"}, --Original "False"
-                                
+                
                                 --LOD Adjustments
                                 {"TerrainDroppedMipsLow",               "0"}, --Original "1"
                                 {"TerrainDroppedMipsMed",               "0"}, --Original "1"
                                 {"TerrainMipBiasLow",                   "0"}, --Original "0.5"
-
+                
                                 ----TAA Settings
                                 {"TaaLowFreqConstant",                  "1"}, --Original "0.5"
                                 {"TaaHighFreqConstant",               "100"}, --Original "100"
@@ -328,11 +290,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"FrustumJitterAmount",                 "0"}, --Original "0.6"
                             }
                         },
-
+                
                         ----------------------------------------------------------------------------
                         --LIGHT SHAFT PROPERTIES
                         ----------------------------------------------------------------------------
-
+                
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties",},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
@@ -448,18 +410,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"SunFactorMin",                  _SunFactorMin}, --Original "0.4"
                                 {"InteractionRadius",                    "0.35"}, --Original "0.15"
 
+                                ----------------------------------------------------------------------------
                                 --No Asteroids while pulsing
+                                ----------------------------------------------------------------------------
+
                                 {"MaxAsteroidGenerationPerFramePulseJump",  "0"}, --Original "1000"
 
-                                --Imposter Settings
-                                {"EnableOctahedralImposters",            "True"}, --Original "False"
+                                ----------------------------------------------------------------------------
+                                --LOD Adjustments (reduce pop-in)
+                                ----------------------------------------------------------------------------
 
-                                --LOD Changes (reduce pop-in)
-                                {"TerrainFadeTime",                       "0.5"}, --Original "2"
-                                {"TerrainFadeTimeInShip",                 "0.5"}, --Original "2"
-                                {"CreatureFadeTime",                     "0.25"}, --Original "1.5"
-                                {"FloraFadeTimeMin",                     "0.25"}, --Original "0.6"
-                                {"FloraFadeTimeMax",                     "0.25"}, --Original "2.25"
+                                {"AnimationScale",                         "10"}, --Original "50"
+                                {"TerrainFadeTime",                         "1"}, --Original "2"
+                                {"TerrainFadeTimeInShip",                   "1"}, --Original "2"
+                                {"CreatureFadeTime",                      "0.7"}, --Original "1.5"
+                                {"FloraFadeTimeMin",                        "1"}, --Original "0.6"
+                                {"FloraFadeTimeMax",                      "1.5"}  --Original "2.25"
                             }
                         },
 
@@ -477,17 +443,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]         = "+0",
                             ["ADD"]                 = _LODAdjust,
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Low", "TkLODSettingsData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"RegionLODRadius"},
-                            ["REMOVE"]              = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Low", "TkLODSettingsData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"RegionLODHiddenRanges"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
-                            ["ADD"]                 = _RegLODAdjust,
-                        },
 
                         ----------------------------------------------------------------------------
                         --LOD SETTINGS MEDIUM
@@ -502,17 +457,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"]   = {"Medium", "TkLODSettingsData.xml"},
                             ["LINE_OFFSET"]         = "+0",
                             ["ADD"]                 = _LODAdjust,
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Medium", "TkLODSettingsData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"RegionLODRadius"},
-                            ["REMOVE"]              = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Medium", "TkLODSettingsData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"RegionLODHiddenRanges"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
-                            ["ADD"]                 = _RegLODAdjust,
                         },
 
                         ----------------------------------------------------------------------------
@@ -529,17 +473,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]         = "+0",
                             ["ADD"]                 = _LODAdjust,
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"High", "TkLODSettingsData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"RegionLODRadius"},
-                            ["REMOVE"]              = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"High", "TkLODSettingsData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"RegionLODHiddenRanges"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
-                            ["ADD"]                 = _RegLODAdjust,
-                        },
 
                         ----------------------------------------------------------------------------
                         --LOD SETTINGS ULTRA
@@ -555,17 +488,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["LINE_OFFSET"]         = "+0",
                             ["ADD"]                 = _LODAdjust,
                         },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Ultra", "TkLODSettingsData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"RegionLODRadius"},
-                            ["REMOVE"]              = "SECTION",
-                        },
-                        {
-                            ["SPECIAL_KEY_WORDS"]   = {"Ultra", "TkLODSettingsData.xml"},
-                            ["PRECEDING_KEY_WORDS"] = {"RegionLODHiddenRanges"},
-                            ["ADD_OPTION"]          = "ADDafterSECTION",
-                            ["ADD"]                 = _RegLODAdjust,
-                        },
 
                         ----------------------------------------------------------------------------
                         --ENVIRONMENT PROPERTIES
@@ -576,18 +498,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
+                                ----------------------------------------------------------------------------
+                                --LOD SETTINGS NORMAL
+                                ----------------------------------------------------------------------------
+
+                                {"PlanetObjectSwitch",                  "1400"}, -- Original "700"
+                                {"PlanetLodSwitch0",                     "600"}, -- Original "300"
+                                {"PlanetLodSwitch0Elevation",           "1400"}, -- Original "700"
+                                {"PlanetLodSwitch1",                    "4000"}, -- Original "2000"
+                                {"PlanetLodSwitch2",                   "20000"}, -- Original "10000"
+                                {"PlanetLodSwitch3",                   "40000"}, -- Original "20000"
+
+                                ----------------------------------------------------------------------------
+                                --CLOUD SETTINGS NORMAL
+                                ----------------------------------------------------------------------------
+
                                 {"CloudHeightMin",             _CloudHeightMin}, --Original "650"
                                 {"CloudHeightMax",             _CloudHeightMax}, --Original "900"
                                 {"SkyAtmosphereHeight",   _SkyAtmosphereHeight}, --Original "6000"
                                 {"StratosphereHeight",     _StratosphereHeight}, --Original "4000"
-
-                                --LOD Settings Normal
-                                {"PlanetObjectSwitch",                  "2100"}, -- Original "700"
-                                {"PlanetLodSwitch0",                     "900"}, -- Original "300"
-                                {"PlanetLodSwitch0Elevation",           "2100"}, -- Original "700"
-                                {"PlanetLodSwitch1",                    "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch2",                   "30000"}, -- Original "10000"
-                                {"PlanetLodSwitch3",                   "60000"}, -- Original "20000"
                             }
                         },
                         {
@@ -595,18 +524,25 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
+                                ----------------------------------------------------------------------------
+                                --LOD SETTINGS PRIME
+                                ----------------------------------------------------------------------------
+
+                                {"PlanetObjectSwitch",                  "4000"}, -- Original "2000"
+                                {"PlanetLodSwitch0",                    "4000"}, -- Original "2000"
+                                {"PlanetLodSwitch0Elevation",           "4000"}, -- Original "2000"
+                                {"PlanetLodSwitch1",                    "4000"}, -- Original "2000"
+                                {"PlanetLodSwitch2",                   "20000"}, -- Original "10000"
+                                {"PlanetLodSwitch3",                   "40000"}, -- Original "20000"
+
+                                ----------------------------------------------------------------------------
+                                --CLOUD SETTINGS PRIME
+                                ----------------------------------------------------------------------------
+
                                 {"CloudHeightMin",            _CloudHeightMinP}, --Original "1500"
                                 {"CloudHeightMax",            _CloudHeightMaxP}, --Original "1500"
                                 {"SkyAtmosphereHeight",  _SkyAtmosphereHeightP}, --Original "7200"
                                 {"StratosphereHeight",    _StratosphereHeightP}, --Original "5200"
-
-                                --LOD Settings Prime
-                                {"PlanetObjectSwitch",                  "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch0",                    "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch0Elevation",           "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch1",                    "6000"}, -- Original "2000"
-                                {"PlanetLodSwitch2",                   "30000"}, -- Original "10000"
-                                {"PlanetLodSwitch3",                   "60000"}, -- Original "20000"
                             }
                         },
                         {
@@ -738,7 +674,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"SunSize",                "0.001"}, --Original "0.25"
+                                {"SunSize",               "0.0001"}, --Original "0.25"
                                 {"SunSurroundSize",         "0.02"}, --Original "10"
                                 {"SunSurroundStrength",     "0.02"}, --Original "12"
                             }
@@ -749,7 +685,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_MATCH"]         = "",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
-                                {"SunSize",                "0.001"}, --Original "0.25"
+                                {"SunSize",               "0.0001"}, --Original "0.25"
                                 {"SunSurroundSize",         "0.02"}, --Original "10"
                                 {"SunSurroundStrength",     "0.02"}, --Original "12"
                             }
@@ -760,7 +696,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"SunSize",               "0.0001"}, --Original "0.005"
-                                {"StarVisibility",          "0.83"}, --Original "0.82"
+                                {"StarVisibility",          "0.80"}, --Original "0.82"
                                 {"CenterPower",                "3"}, --Original "2.5"
                                 {"AtmosphereThickness",     "0.25"}, --Original "0.28"
                             }
@@ -771,25 +707,16 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"SunSize",               "0.0001"}, --Original "0.005"
-                                {"StarVisibility",          "0.83"}, --Original "0.82"
+                                {"StarVisibility",          "0.80"}, --Original "0.82"
                                 {"CenterPower",                "3"}, --Original "2.5"
                                 {"AtmosphereThickness",     "0.25"}, --Original "0.28"
-                            }
-                        },
-                        {
-                            ["PRECEDING_KEY_WORDS"] = {"SunPosition"},
-                            ["VALUE_MATCH"]         = "",
-                            ["VALUE_CHANGE_TABLE"]  =
-                            {
-                                {"x",               _sun_position_x}, --Original "-77.25284"
-                                {"y",               _sun_position_y}, --Original "61.62304"
-                                {"z",               _sun_position_z}, --Original "-21.84243"
                             }
                         },
 
                         ----------------------------------------------------------------------------
                         --GLOBAL PROPERTIES
                         ----------------------------------------------------------------------------
+
                         {
                             ["PRECEDING_KEY_WORDS"] = "",
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
