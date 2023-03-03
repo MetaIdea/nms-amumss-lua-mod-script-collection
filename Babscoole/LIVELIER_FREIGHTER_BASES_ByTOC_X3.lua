@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "LIVELIER_FREIGHTER_BASES_ByTOC_X3.pak",
-["MOD_AUTHOR"]              = "thewombat31",
+["MOD_AUTHOR"]              = "ThatOneCarpenter",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.08",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",

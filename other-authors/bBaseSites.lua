@@ -32,8 +32,10 @@ SCANEVENT_TEXT =
       <Property name="IsCommunityPortalOverride" value="False" />
       <Property name="ClearForcedInteractionOnCompletion" value="False" />
       <Property name="BuildingPreventionRadius" value="0" />
+      <Property name="UseMissionTradingDataOverride" value="False" />
       <Property name="AlwaysShow" value="False" />
       <Property name="NeverShow" value="False" />
+      <Property name="ShowOnlyIfSequenceTarget" value="False" />
       <Property name="PlanetLabelText" value="" />
       <Property name="SurveyDistance" value="0" />
       <Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD" />
@@ -83,6 +85,7 @@ SCANEVENT_TEXT =
         <Property name="RequireUndiscovered" value="False" />
         <Property name="NeedsWaterPlanet" value="False" />
         <Property name="NeedsPrimePlanet" value="False" />
+        <Property name="NeedsSentinels" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
         <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -103,6 +106,7 @@ SCANEVENT_TEXT =
         <Property name="SuitableForCreatureDiscovery" value="False" />
         <Property name="SuitableForCreatureTaming" value="False" />
         <Property name="SamePlanetAsEvent" value="" />
+        <Property name="SamePlanetAsSeasonParty" value="0" />
       </Property>
       <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
         <Property name="UseStarType" value="False" />
@@ -134,6 +138,7 @@ SCANEVENT_TEXT =
         <Property name="RequireUndiscovered" value="False" />
         <Property name="NeedsWaterPlanet" value="False" />
         <Property name="NeedsPrimePlanet" value="False" />
+        <Property name="NeedsSentinels" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
         <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -154,6 +159,7 @@ SCANEVENT_TEXT =
         <Property name="SuitableForCreatureDiscovery" value="False" />
         <Property name="SuitableForCreatureTaming" value="False" />
         <Property name="SamePlanetAsEvent" value="" />
+        <Property name="SamePlanetAsSeasonParty" value="0" />
       </Property>
       <Property name="ForceRestartInteraction" value="True" />
       <Property name="HasReward" value="" />
@@ -216,7 +222,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
     https://nomansskymods.com/mods/easy-base-building/.
 ]],
   ["MOD_AUTHOR"] = "Bladehawke",
-  ["NMS_VERSION"] = "3.98", -- Changes in files made this change necessary
+  ["NMS_VERSION"] = "4.12", -- Changes in files made this change necessary
   ["UPDATE_LINK"] = "https://pastebin.com/raw/UkVFmagZ",
   
   ["MODIFICATIONS"] = {

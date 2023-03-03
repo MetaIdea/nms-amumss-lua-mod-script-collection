@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "LIVELIER_FREIGHTER_BASES_ByTOC_X2.pak",
+["MOD_FILENAME"]            = "LIVELIER_FREIGHTER_BASES_ByTOC_HALF.pak",
 ["MOD_AUTHOR"]              = "ThatOneCarpenter",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.08",
+["NMS_VERSION"]             = "4.12",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {
@@ -17,7 +17,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"MaxTotalNPCCount",            "48"},
+                                {"MaxTotalNPCCount",            "12"},
                                 {"NPCStartSpawnDelayTime",      "0.5"},
                                 {"MinTotalRoomsRequiredPerNPC", "1"},
                             }
@@ -26,10 +26,10 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"MaxTotalCapacityOfNPCTypes",},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"FrigateCaptain", "8"},
-                                {"WorkerBio",      "12"},
-                                {"WorkerTech",     "12"},
-                                {"WorkerIndustry", "12"},
+                                {"FrigateCaptain", "2"},
+                                {"WorkerBio",      "3"},
+                                {"WorkerTech",     "3"},
+                                {"WorkerIndustry", "3"},
                             }
                         },
                         {
