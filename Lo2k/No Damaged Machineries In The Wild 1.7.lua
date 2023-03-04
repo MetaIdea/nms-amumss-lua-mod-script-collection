@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Cargo Drops 2.7.pak", 
+["MOD_FILENAME"] 			= "No Damaged Machineries In The Wild 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.94",
-["MOD_DESCRIPTION"]			= "This mod removes cargo drops from planet landscape",
+["NMS_VERSION"]				= "4.12.1",
+["MOD_DESCRIPTION"]			= "This mod removes damaged machineries from planet landscape",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -15,7 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN",},
+							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN",},
 							["SECTION_UP"] = 1,
 							["REMOVE"] 	= "SECTION",
 						},

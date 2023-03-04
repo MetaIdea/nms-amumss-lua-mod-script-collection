@@ -1,8 +1,8 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Damaged Machineries Near Shelters 1.2.pak", 
+["MOD_FILENAME"] 			= "No Damaged Machineries Near Shelters 1.7.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "3.03",
+["NMS_VERSION"]				= "4.12.1",
 ["MOD_DESCRIPTION"]			= "This mod removes damaged machineries near shelters",
 ["MODIFICATIONS"] 			= 
 	{
