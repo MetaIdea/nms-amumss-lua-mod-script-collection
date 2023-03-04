@@ -412,7 +412,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "___Shaidaks_Regeneration_"..modVersion.."_v1.0m.pak",
+["MOD_FILENAME"] 			= "___Shaidaks_Regeneration_"..modVersion.."_v1.01.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna, original script by Shaidak",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
