@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "moon boots.pak",
 ["MOD_AUTHOR"]              = "EliteGamers",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.08",
+["NMS_VERSION"]             = "4.12",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {
@@ -18,11 +18,11 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["NOTICE_OFF"] = "TRUE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"RocketBootsBoostForce",                 "100"},
-                                {"RocketBootsBoostTankDrainSpeed",        "0"},
-                                {"RocketBootsDriftTankDrainSpeed",        "0"},
-                                {"JetpackMaxSpeed",                       "10.5"},
-                                {"JetpackMaxUpSpeed",                     "50"},
+                                {"RocketBootsBoostForce",                 "68"},
+                                {"RocketBootsBoostTankDrainSpeed",        "6"},
+                                {"RocketBootsDriftTankDrainSpeed",        "1"},
+                                {"JetpackMaxSpeed",                       "5"},
+                                {"JetpackMaxUpSpeed",                     "30"},
                                 {"JetpackFillRate",                       "10.5"},
                                 {"JetpackFillRateMidair",                 "10.5"},
                                 {"JetpackFillRateSpaceStationMultiplier", "10.5"},
