@@ -1,8 +1,3 @@
-----------------------------------------------------------------------------------------
---
--- ( Ctrl + S to save )
---
-------------------------------------------------------------------------------------------
 -- ************************************************************************************************************
 -- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
 --
@@ -21,7 +16,7 @@
 ------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "CUSTOM_PRESET"
+INIT = "REDMAS_SPAWNER_FOR_CONSTRUCTS_BY_MSSP_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -139,7 +134,7 @@ ASTEROIDS_REALISTIC_PRESET ={
 	["ASTEROID_SCALE_MULTIPLIER"] = "4"
 }
 --------------------------------------------------------------------------------------------------------------
-PROCEDURALMAX = 500  -- This is the number of procedural generated new params for this script
+PROCEDURALMAX = 1000  -- This is the number of procedural generated new params for this script
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
@@ -909,7 +904,7 @@ FANTASY_PRESET ={
 ------------------------------------------------------------------------------------------
 
 CUSTOM_PRESET ={
-	["MODNAME"] = "UTOPIA-REVAMP-V1",
+	["MODNAME"] = "UTOPIA-REVAMP-V6",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
@@ -935,7 +930,7 @@ CUSTOM_PRESET ={
     },
     ["CAMERA_FEATURES"] =
     {
-	    ["CAMERA_OVERHAUL_FEATURE"] = "OFF",
+	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
 	    ["CAMERA_NO_SHAKE_FEATURE"] = "OFF",
 	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
     },
@@ -944,7 +939,7 @@ CUSTOM_PRESET ={
         ["GAMEPLAY_OVERHAUL"] = "ON",
         ["QOL_FEATURES"] =
         {
-            ["ADVANCED_BODY_SHAPES_FEATURE"] = "OFF",
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "ON",
             ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
             ["NEW_INTERACTIONS_FEATURE"] = "OFF",
             ["ADVANCED_BUILDS_FEATURE"] = "OFF",
@@ -952,7 +947,7 @@ CUSTOM_PRESET ={
         },
         ["ONFOOT_GAMEPLAY_FEATURES"] =
         {
-            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "OFF",
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",
             ["LONGER_STEATH_FEATURE"] = "OFF",
             ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "OFF",
             ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
@@ -961,8 +956,8 @@ CUSTOM_PRESET ={
         },
         ["SPACESHIPS_GAMEPLAY_FEATURES"] =
         {
-          ["HOVER_MODE"] = "OFF",
-          ["SANKUKAI_SPACESHIPS_COMBAT"] = "OFF",
+          ["HOVER_MODE"] = "ON",
+          ["SANKUKAI_SPACESHIPS_COMBAT"] = "ON",
         },
         ["VEHICLES_FEATURES"] =
         {
@@ -980,15 +975,15 @@ CUSTOM_PRESET ={
     },
     ["CREATURES_FEATURES"] =
     {
-        ["CREATURES_OVERHAUL"] = "OFF",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["CREATURES_OVERHAUL"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
         ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
-        ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
-        ["GIANTS_CREATURES_FEATURE"] = "ON",
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF",
+        ["GIANTS_CREATURES_FEATURE"] = "OFF",
         ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
     ["GENERATION_FEATURES"] =
@@ -1007,14 +1002,14 @@ CUSTOM_PRESET ={
             ["TERRAIN_SHAPES_FEATURES"] =
             {
                 ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
                 ["TERRAIN_HEIGHT_MAX"] = "140",
             },
             ["BIOMES_FEATURES"] =
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "OFF",
-                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["SKY_BIOMES_FEATURE"] = "ON",
                 ["STORM_BIOMES_FEATURES"] = "OFF",
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
@@ -1024,7 +1019,7 @@ CUSTOM_PRESET ={
             ["ASSETS_REPLACEMENTS_FEATURES"] =
             {
                 ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
-                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
@@ -1036,7 +1031,7 @@ CUSTOM_PRESET ={
         },
         ["SPACE_GENERATION_FEATURES"] =
         {
-            ["REDMAS_SPACE_GENERATION"] = "OFF",
+            ["REDMAS_SPACE_GENERATION"] = "ON",
             ["TRADING_ROUTES"] = "OFF",
             ["MASSIVE_FLEET"] = "ON",
             ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON",
@@ -1055,7 +1050,7 @@ CUSTOM_PRESET ={
         ["CHARACTERS_SKINS_FEATURE"] = "ON",
         -- (E3-DAMAGED or E3)
         ["DRONE_PET_SKIN_FEATURE"] = "ON",
-		["DRONE_PET_SKIN"] = "E3-DAMAGED",
+		["DRONE_PET_SKIN"] = "E3",
         -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
         -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
         -- VY-KEEN    /or/   ANOMALY      /or/      GEK
@@ -1471,33 +1466,33 @@ REDMAS_PROCEDURAL_SPACE_CRASH_MISSION_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
+-- ( Ctrl + S to save )
 --
 ------------------------------------------------------------------------------------------
 
 
 DARKSPACE_COLORS_PRESET ={
-	["MODNAME"] = "DARK_SPACE",
+	["MODNAME"] = "_REALISTIC___SPACE_V2",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
         ["REDMAS_WATER_REFLECTIONS"] = "OFF",
-        ["SPACE_BLUR_FEATURE"] = "OFF",
+        ["SPACE_BLUR_FEATURE"] = "ON",
         ["FILTERS_SWAP_FEATURE"] = "OFF",
         ["BINOCULARS_TYPE"] = "OFF", -- CLEAR / CLEAR
-        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "OFF",
-        ["SPACESHIPS_TRAILS_TYPE"] = "VANILLA",  -- (REALISTIC / VANILLA / E3 )
+        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
+        ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
         ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- (REALISTIC / VANILLA / FANTASY )
-        ["ASTEROIDS_FIELDS_TYPE"] = "", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ("FANTASY" / "REALISTIC" / "GLUED")
         ["FIGHTERS_SPACESHIPS_REPAINT"] = "OFF",
         ["DROPSHIPS_SPACESHIPS_REPAINT"] = "OFF",
         ["SHUTTLE_SPACESHIPS_REPAINT"] = "OFF",
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"  -- "TITLE-ATLAS"  or another img name 
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"  -- "TITLE-ATLAS"  or another img name
         ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"  -- SCIFI-BGM -- or your image name
         ["TRANSPARENT_OPTIONS_MENU"] = "",
     },
@@ -1567,39 +1562,39 @@ DARKSPACE_COLORS_PRESET ={
 			-- The script will procedurally generate new colours possibilties
 			-- different each time the overhaul is generated ( x100 by default).
             ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
-            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "OFF",
             ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
         },
         ["PLANETS_GENERATION_FEATURES"] =
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EUPHORIA", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
                 ["TERRAIN_HEIGHT_MAX"] = "340",
             },
             ["BIOMES_FEATURES"] =
             {
-                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "ON",
-                ["SKY_BIOMES_FEATURE"] = "ON",
-                ["STORM_BIOMES_FEATURES"] = "ON",
-                ["GIANTS_BIOMES_FEATURE"] = "ON",
-                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
-                ["MONTAINS_BIOMES_FEATURE"] = "ON",
-                ["CAVE_BIOMES_FEATURE"] = "ON",
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["FANTASY_BIOMES_FEATURE"] = "OFF",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["STORM_BIOMES_FEATURES"] = "OFF",
+                ["GIANTS_BIOMES_FEATURE"] = "OFF",
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "OFF",
+                ["MONTAINS_BIOMES_FEATURE"] = "OFF",
+                ["CAVE_BIOMES_FEATURE"] = "OFF",
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] =
             {
-                ["E3_FANTASY_ASSETS_FEATURES"] = "ON",
-                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "ON",
+                ["E3_FANTASY_ASSETS_FEATURES"] = "OFF",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
                 ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
-                ["REDMAS_RUINS_FEATURES"] = "ON",
-                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "OFF",
             },
         },
         ["SPACE_GENERATION_FEATURES"] =
@@ -1611,11 +1606,11 @@ DARKSPACE_COLORS_PRESET ={
         },
         ["SPACESHIPS_GENERATION_FEATURES"] =
         {
-            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON",
-            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",
-            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON",
-            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON",
-            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
         },
     },
     ["SKINS"] =
@@ -2041,7 +2036,7 @@ METAL_SPACESHIPS_PRESET ={
 ------------------------------------------------------------------------------------------
 
 NEW_GAMEPLAY_MECHANICS_PRESET ={
-	["MODNAME"] = "NEW_GAMEPLAY_MECHANICS",
+	["MODNAME"] = "__NEW_GAMEPLAY_MECHANICS",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -2067,7 +2062,7 @@ NEW_GAMEPLAY_MECHANICS_PRESET ={
     },
     ["CAMERA_FEATURES"] =
     {
-	    ["CAMERA_OVERHAUL_FEATURE"] = "OFF",
+	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
 	    ["CAMERA_NO_SHAKE_FEATURE"] = "OFF",
 	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
     },
@@ -2223,13 +2218,13 @@ NEW_GAMEPLAY_MECHANICS_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
+-- ( Ctrl + S to save )
 --
 ------------------------------------------------------------------------------------------
 
 
 PLAYER_GAMEPLAY_REVISION_PRESET ={
-	["MODNAME"] = "PLAYER_GAMEPLAY_REVISION",
+	["MODNAME"] = "__SUPER_HERO",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -2247,10 +2242,10 @@ PLAYER_GAMEPLAY_REVISION_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name 
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
@@ -2275,9 +2270,9 @@ PLAYER_GAMEPLAY_REVISION_PRESET ={
             ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",
             ["LONGER_STEATH_FEATURE"] = "ON",
             ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON",
-            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "ON",
             ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "ON",
-            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "ON",
         },
         ["SPACESHIPS_GAMEPLAY_FEATURES"] =
         {
@@ -2790,7 +2785,7 @@ REDMAS_CHALLENGE_MODE_PRESET ={
 ------------------------------------------------------------------------------------------
 
 REDMAS_E3PIC_FANTASY_PRESET ={
-	["MODNAME"] = "E3PIC_FANTASY",
+	["MODNAME"] = "__EUPHORIA_WORLDS_GENERATION_extension",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -2862,13 +2857,13 @@ REDMAS_E3PIC_FANTASY_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
         ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
-        ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF",
         ["GIANTS_CREATURES_FEATURE"] = "ON",
         ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
@@ -2885,20 +2880,20 @@ REDMAS_E3PIC_FANTASY_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
                 ["TERRAIN_HEIGHT_MAX"] = "2222",
             },
             ["BIOMES_FEATURES"] =
             {
-                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["SKY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["STORM_BIOMES_FEATURES"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["STORM_BIOMES_FEATURES"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["GIANTS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["MONTAINS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["CAVE_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["CAVE_BIOMES_FEATURE"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] =
             {
@@ -2972,12 +2967,12 @@ REDMAS_E3PIC_FANTASY_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
+-- ( Ctrl + S to save )
 --
 ------------------------------------------------------------------------------------------
 
 REDMAS_EASY_MODE_PRESET ={
-	["MODNAME"] = "EASY_MODE",
+	["MODNAME"] = "SPACESHIPS_GENERATION_v1.5",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -2995,10 +2990,10 @@ REDMAS_EASY_MODE_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"  
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"  
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"  
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
@@ -3009,7 +3004,7 @@ REDMAS_EASY_MODE_PRESET ={
     },
     ["GAMEPLAY_FEATURES"] =
     {
-        ["GAMEPLAY_OVERHAUL"] = "ON",
+        ["GAMEPLAY_OVERHAUL"] = "OFF",
         ["QOL_FEATURES"] =
         {
             ["ADVANCED_BODY_SHAPES_FEATURE"] = "OFF",
@@ -3061,7 +3056,7 @@ REDMAS_EASY_MODE_PRESET ={
     },
     ["GENERATION_FEATURES"] =
     {
-        ["GENERATION_OVERHAUL"] = "OFF",
+        ["GENERATION_OVERHAUL"] = "ON",
         ["COLORS_AUTO_GENERATION_FEATURES"] =
         {
             ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
@@ -3109,11 +3104,11 @@ REDMAS_EASY_MODE_PRESET ={
         },
         ["SPACESHIPS_GENERATION_FEATURES"] =
         {
-            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "OFF",
-            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "OFF",
-            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "OFF",
-            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "OFF",
-            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON",
         },
     },
     ["SKINS"] =
@@ -3128,7 +3123,7 @@ REDMAS_EASY_MODE_PRESET ={
         ["CHAR_PRESETS_SKINS"] = "THE-WATCHER"
     },
     ["NEWGAME_BONUS_FEATURES"] ={
-        ["NEWGAME_BONUSES"] = "ON",
+        ["NEWGAME_BONUSES"] = "OFF",
 		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
 		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
 		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
@@ -3149,7 +3144,7 @@ REDMAS_EASY_MODE_PRESET ={
     },
     ["EASY_MODE_FEATURES"] =
     {
-        ["EASY_MODE"] = "ON",
+        ["EASY_MODE"] = "OFF",
         ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 4 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
         ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
         ["WARPCELL_USAGE_MULTIPLIER"] = 5,
@@ -4663,7 +4658,7 @@ REDMAS_START_AS_PRESET ={
 ------------------------------------------------------------------------------------------
 
 REDMAS_SUPER_VEHICLES_PRESET ={
-	["MODNAME"] = "SUPER_VEHICLES",
+	["MODNAME"] = "___SUPER_VEHICLES",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -4689,7 +4684,7 @@ REDMAS_SUPER_VEHICLES_PRESET ={
     },
     ["CAMERA_FEATURES"] =
     {
-	    ["CAMERA_OVERHAUL_FEATURE"] = "OFF",
+	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
 	    ["CAMERA_NO_SHAKE_FEATURE"] = "OFF",
 	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
     },
@@ -4845,33 +4840,33 @@ REDMAS_SUPER_VEHICLES_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
+-- ( Ctrl + S to save )
 --
 ------------------------------------------------------------------------------------------
 
 REDMAS_VISUAL_OVERHAUL_PRESET ={
-	["MODNAME"] = "VISUAL_OVERHAUL",
+	["MODNAME"] = "___ULTRA_DIVERSE_SPACE_COLORS_Extension",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
-        ["REDMAS_WATER_REFLECTIONS"] = "ON",
+        ["REDMAS_WATER_REFLECTIONS"] = "OFF",
         ["SPACE_BLUR_FEATURE"] = "ON",
-        ["FILTERS_SWAP_FEATURE"] = "ON",
-        ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
+        ["FILTERS_SWAP_FEATURE"] = "OFF",
+        ["BINOCULARS_TYPE"] = "CLEAR", -- SUN / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
-        ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
-        ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- (REALISTIC / VANILLA / FANTASY )
-        ["ASTEROIDS_FIELDS_TYPE"] = "REALISTIC", -- ("FANTASY" / "REALISTIC" / "GLUED")
-        ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
-        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
-        ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
+        ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- (REALISTIC / VANILLA / E3 )
+        ["SPACE_COLOURS_TYPE"] = "VANILLA", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "OFF",
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "OFF",
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "OFF",
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name 
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
@@ -4934,10 +4929,10 @@ REDMAS_VISUAL_OVERHAUL_PRESET ={
     },
     ["GENERATION_FEATURES"] =
     {
-        ["GENERATION_OVERHAUL"] = "OFF",
+        ["GENERATION_OVERHAUL"] = "ON",
         ["COLORS_AUTO_GENERATION_FEATURES"] =
         {
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
             ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "OFF",
             ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
         },
@@ -5001,7 +4996,7 @@ REDMAS_VISUAL_OVERHAUL_PRESET ={
         ["CHAR_PRESETS_SKINS"] = "THE-WATCHER"
     },
     ["NEWGAME_BONUS_FEATURES"] ={
-        ["NEWGAME_BONUSES"] = "ON",
+        ["NEWGAME_BONUSES"] = "OFF",
 		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
 		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
 		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
@@ -7088,7 +7083,7 @@ function generateORIGINSTREES
 									<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 									<Property name="ID" value="STANDARD" />
 									<Property name="Coverage" value="0.6" />
-									<Property name="FlatDensity" value="0.004" />
+									<Property name="FlatDensity" value="0.001" />
 									<Property name="SlopeDensity" value="0" />
 									<Property name="SlopeMultiplier" value="1" />
 									<Property name="MaxRegionRadius" value="9999" />
@@ -13350,27 +13345,27 @@ then
 
 		for loop = 0 , PROCEDURALMAX do
 			print("------ ADDED NEW SPACE COLOUR " .. loop)
-			RGB_value1 = (math.random(0,5)*0.1)
-			RGB_value2 = math.abs(math.random(0,5)*0.1)
-			RGB_value3 = math.abs(math.random(0,5)*0.1)
+			RGB_value1 = math.abs(math.random(0,9)*0.1)
+			RGB_value2 = math.abs(math.random(0,9)*0.1)
+			RGB_value3 = math.abs(math.random(0,9)*0.1)
 			R_VALUE_REF =  RGB_value1
 			B_VALUE_REF =  RGB_value2
 			G_VALUE_REF =  RGB_value3
 			G_MID = G_VALUE_REF+0.01
 			R_MID = R_VALUE_REF+0.01
 			B_MID = B_VALUE_REF+0.01
-			G_BOT = G_MID+0.91
-			R_BOT = R_MID+0.51
-			B_BOT = B_MID+0.01
-			G_NEB1 = G_BOT+0.051
-			R_NEB1 = R_BOT+0.051
-			B_NEB1 = B_BOT+0.051
-			G_NEB2 = R_NEB1+0.021
-			R_NEB2 = B_NEB1+0.021
-			B_NEB2 = G_NEB2+0.021
-			G_NEB3 = R_NEB1-0.021
-			R_NEB3 = B_NEB1-0.021
-			B_NEB3 = G_NEB2-0.021
+			G_BOT = G_MID+0.11
+			R_BOT = R_MID+0.11
+			B_BOT = B_MID+0.11
+			G_NEB1 = G_BOT+0.021
+			R_NEB1 = R_BOT+0.021
+			B_NEB1 = B_BOT+0.021
+			G_NEB2 = R_NEB1+0.031
+			R_NEB2 = B_NEB1+0.031
+			B_NEB2 = G_NEB2+0.031
+			G_NEB3 = R_NEB1-0.041
+			R_NEB3 = B_NEB1-0.041
+			B_NEB3 = G_NEB2-0.041
 			ULTRA_DIVERSE_SPACE_COLOURS_EXML_ROW =
 			[[
 				<Property value="GcSolarSystemSkyColourData.xml">
@@ -13557,7 +13552,7 @@ then
 							{"B", "0.01"},
 							{"G", "0.01"},
 						}
-					},
+					},----------------------------------------------------------------
 					{
 						["SPECIAL_KEY_WORDS"] = {"TopColour","Colour.xml"},
 						["INTEGER_TO_FLOAT"] = "FORCE",
@@ -13566,8 +13561,8 @@ then
 						["VALUE_CHANGE_TABLE"] 	=
 						{
 							{"R", "0.1"},
-							{"B", "0.3"},
-							{"G", "0.2"},
+							{"B", "0.1"},
+							{"G", "0.1"},
 						}
 					},
 					{
@@ -13577,9 +13572,9 @@ then
 						["MATH_OPERATION"] 	= "*",
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"R", "0.1"},
-							{"B", "0.3"},
-							{"G", "0.2"},
+							{"R", "0.09"},
+							{"B", "0.09"},
+							{"G", "0.09"},
 						}
 					},
 					{
@@ -13589,47 +13584,42 @@ then
 						["MATH_OPERATION"] 	= "*",
 						["VALUE_CHANGE_TABLE"] 	=
 						{
-							{"R", "0.1"},
-							{"B", "0.3"},
-							{"G", "0.2"},
+							{"R", "0.08"},
+							{"B", "0.08"},
+							{"G", "0.08"},
 						}
 					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"NebulaColour1","Colour.xml"},
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["REPLACE_TYPE"] = "ALL",
-						["MATH_OPERATION"] 	= "*",
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"R", "0.2"},
-							{"B", "0.6"},
-							{"G", "0.4"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"NebulaColour2","Colour.xml"},
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["REPLACE_TYPE"] = "ALL",
-						["MATH_OPERATION"] 	= "*",
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"R", "0.2"},
-							{"B", "0.6"},
-							{"G", "0.4"},
-						}
-					},
-					{
-						["SPECIAL_KEY_WORDS"] = {"NebulaColour3","Colour.xml"},
-						["INTEGER_TO_FLOAT"] = "FORCE",
-						["REPLACE_TYPE"] = "ALL",
-						["MATH_OPERATION"] 	= "*",
-						["VALUE_CHANGE_TABLE"] 	=
-						{
-							{"R", "0.2"},
-							{"B", "0.6"},
-							{"G", "0.4"},
-						}
-					}
+												{
+								["SPECIAL_KEY_WORDS"] = {"NebulaColour1","Colour.xml"},
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["REPLACE_TYPE"] = "ALL",
+								["MATH_OPERATION"] 	= "*",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"A", "0.82"}
+								}
+							},
+							{
+								["SPECIAL_KEY_WORDS"] = {"NebulaColour2","Colour.xml"},
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["REPLACE_TYPE"] = "ALL",
+								["MATH_OPERATION"] 	= "*",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"A", "0.85"}
+								}
+							},
+							{
+								["SPECIAL_KEY_WORDS"] = {"NebulaColour3","Colour.xml"},
+								["INTEGER_TO_FLOAT"] = "FORCE",
+								["REPLACE_TYPE"] = "ALL",
+								["MATH_OPERATION"] 	= "*",
+								["VALUE_CHANGE_TABLE"] 	=
+								{
+									{"A", "0.89"}
+								}
+							}
+				
 				}
 
 
@@ -13724,9 +13714,9 @@ then
 								["MATH_OPERATION"] 	= "*",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"R", "0.91"},
-									{"B", "0.3"},
-									{"G", "0.2"},
+									{"R", "0.1"},
+									{"B", "0.1"},
+									{"G", "0.1"},
 								}
 							},
 							{
@@ -13737,8 +13727,8 @@ then
 								["VALUE_CHANGE_TABLE"] 	=
 								{
 									{"R", "0.1"},
-									{"B", "0.73"},
-									{"G", "0.2"},
+									{"B", "0.1"},
+									{"G", "0.1"},
 								}
 							},
 							{
@@ -13749,8 +13739,8 @@ then
 								["VALUE_CHANGE_TABLE"] 	=
 								{
 									{"R", "0.1"},
-									{"B", "0.3"},
-									{"G", "0.82"},
+									{"B", "0.1"},
+									{"G", "0.1"},
 								}
 							},
 							{
@@ -13760,7 +13750,7 @@ then
 								["MATH_OPERATION"] 	= "*",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"A", "0.12"}
+									{"A", "0.92"}
 								}
 							},
 							{
@@ -13770,7 +13760,7 @@ then
 								["MATH_OPERATION"] 	= "*",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"A", "0.15"}
+									{"A", "0.85"}
 								}
 							},
 							{
@@ -13780,7 +13770,7 @@ then
 								["MATH_OPERATION"] 	= "*",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"A", "0.19"}
+									{"A", "0.59"}
 								}
 							}
 
@@ -13851,7 +13841,7 @@ then
 							{"FogColourStrength", "20"},
 							{"FogColourMax", "0.41"},
 							{"FogHeight", "128"},
-							{"CloudRatio","0.005"}
+							--{"CloudRatio","0.005"}
 						}
 					},
 					{
@@ -13900,7 +13890,7 @@ then
 							{"FogColourStrength", "20"},
 							{"FogColourMax", "0.41"},
 							{"FogHeight", "128"},
-							{"CloudRatio","0.005"}
+							--{"CloudRatio","0.005"}
 						}
 					}
 
@@ -17941,7 +17931,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["REMOVE"] = "SECTION"
 					},
 					{
-						["SECTION_ACTIVE"] = {1},
+						["SECTION_ACTIVE"] = {0},
 						["SPECIAL_KEY_WORDS"] = {"Name","Gun"},
 						["INTEGER_TO_FLOAT"] = "FORCE",
 						["VALUE_CHANGE_TABLE"] =
@@ -17955,7 +17945,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						}
 					},
 					{
-						["SECTION_ACTIVE"] = {1},
+						["SECTION_ACTIVE"] = {0},
 						["SPECIAL_KEY_WORDS"] = {"Name","Scanner"},
 						["INTEGER_TO_FLOAT"] = "FORCE",
 						["VALUE_CHANGE_TABLE"] =
@@ -19318,7 +19308,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["VALUE_CHANGE_TABLE"] =
 						{
 							{"DefaultSpeed", "2"},
-							{"Scale", "5"},
+							{"Scale", "2"},
 						}
 					}
 				}
@@ -24883,82 +24873,82 @@ then
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
+				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
+				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
+				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "10",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/BENDYTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "2"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
@@ -24970,68 +24960,68 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			--{
 			--	["PATH"] = [[MODELS\PLANETS\DESERT\TREES\TWISTEDTREE.SCENE.MBIN]],
@@ -25043,7 +25033,7 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGERING\HUGERINGTREE.SCENE.MBIN]],
@@ -25055,7 +25045,7 @@ then
 				["PATH"] = [[MODELS\RGO\SMALLPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMBUSH01.SCENE.MBIN]],
@@ -25073,19 +25063,19 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "8"
 			},
 		}
 		GIANTLUSHTREES =
@@ -34196,7 +34186,7 @@ end
 							{
 								{"BulletLength", "50"},
 								{"BulletGlowWidthTime", "10.2"},
-								{"BulletScaler", "60"},
+								{"BulletScaler", "30"},
 								{"FinalDeathExplosionScale", "10"},
 								{"FinalDeathExplosionTime", "200.8"},
 								{"DisableTradeRoutes",DISABLE_TRADING_ROUTES}

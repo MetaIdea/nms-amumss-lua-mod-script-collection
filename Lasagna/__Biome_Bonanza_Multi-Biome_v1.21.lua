@@ -1,7 +1,7 @@
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "___ZPatch_Biome_Bonanza_v1.2.pak",
+["MOD_FILENAME"] 			= "___ZPatch_Biome_Bonanza_v1.21.pak",
 ["MOD_AUTHOR"]				= "AGP - with trevix code (LUA by Babscoole)",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -13,7 +13,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 				----------------------------------------------------------------------------------------------------------------------
 				-- = = = = = = = = = = = = = = = = = = = = = = = MULTI-BIOME/MOUNTAINS = = = = = = = = = = = = = = = = = = = = = = = =
 				----------------------------------------------------------------------------------------------------------------------
-				--v3.1: HOUDINIPROPSOBJECTS = crash (they spawn in one small cluttered group on mountains), removed
+				--v3.1: HOUDINIPROPSOBJECTS = crash (they spawn in one small cluttered group on mountains), removed.
 				----------------------------------------------------------------------------------------------------------------------
 				--------------Code originally by trevix/Babscoole in remainder of script below (*** = lasagna comment)----------------
 				------------------------------["MOD_AUTHOR"] = "trevix", ["LUA_AUTHOR"] = "Babscoole",--------------------------------
