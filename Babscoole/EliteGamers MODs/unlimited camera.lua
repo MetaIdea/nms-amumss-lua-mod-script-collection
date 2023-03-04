@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "unlimited camera.pak",
+["MOD_FILENAME"]  = "Unlimited Camera Fractals.pak",
 ["MOD_AUTHOR"]    = "EliteGamers",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
+["NMS_VERSION"]   = "4.12",
 ["MODIFICATIONS"] =
     {
         {
@@ -19,8 +19,9 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"]     =
                             {
                                 {"SpeedRange",      "50"},
-                                {"UpMaxDistance",   "1E+15"},
-                                {"LeftMaxDistance", "1E+12"},
+                                {"UpMinDistance",   "1E+15"},
+                                {"UpMaxDistance",   "0"},
+                                {"LeftMaxDistance", "1E+15"},
                             }
                         },
                         {
@@ -30,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"PhotoModeMaxDistance",      "15000000"},
                                 {"PhotoModeMaxDistanceSpace", "2E+09"},
                                 {"PhotoModeCollisionRadius",  "0"},
-                                {"BuildingModeMaxDistance",   "9E+09"},
+                                {"BuildingModeMaxDistance",   "2E+09"},
                             }
                         },
                     }
