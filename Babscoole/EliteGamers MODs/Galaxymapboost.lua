@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "Galaxymapboost.pak",
+["MOD_FILENAME"]            = "galaxymapbooster +.pak",
 ["MOD_AUTHOR"]              = "EliteGamers",
 ["LUA_AUTHOR"]              = "Babscoole",
-["NMS_VERSION"]             = "4.08",
+["NMS_VERSION"]             = "4.12",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] =
     {
@@ -32,6 +32,59 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"MaxZoomDistance",              "200"},
                                 {"MinPushingZoomDistance",       "55"},
                                 {"MinPushingZoomDistanceScaler", "25"},
+                            }
+                        },
+
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"]  = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"ID", "ATLASSUIT"},
+                                {"ID", "STARSUIT"},
+                                {"ID", "WORMTECH"},
+                                {"ID", "WORMREADER"},
+                                {"ID", "SOLAR_SAIL"},
+                                {"ID", "SUN_LASER"},
+                                {"ID", "SOUL_LASER"},
+                            },
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"WikiEnabled", "False"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"]  = {"ID", "DUMMY_SCAN"},
+							["REMOVE"] = "SECTION"
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"ID","MIRROR",},
+							["SECTION_ACTIVE"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"ID", "MAGNET"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"StatsType","Ship_Hyperdrive_JumpDistance",},
+							["SECTION_ACTIVE"] = {1,2},
+							["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Bonus", "1000000"},
+                            }
+                        },
+                        {
+                            ["SPECIAL_KEY_WORDS"] = {"StatsType","Freighter_Hyperdrive_JumpDistance",},
+							["SECTION_ACTIVE"] = 1,
+							["SECTION_UP"] = 1,
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"Bonus", "1000000"},
                             }
                         },
                     }
