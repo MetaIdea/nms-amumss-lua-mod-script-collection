@@ -1,3 +1,8 @@
+----------------------------------------------------------------------------------------
+--
+-- ( Ctrl + S to save )
+--
+------------------------------------------------------------------------------------------
 -- ************************************************************************************************************
 -- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
 --
@@ -16,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "REDMAS_SPAWNER_FOR_CONSTRUCTS_BY_MSSP_PRESET"
+INIT = "CUSTOM_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -2218,13 +2223,13 @@ NEW_GAMEPLAY_MECHANICS_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save )
+-- ( Ctrl + S to save ) 
 --
 ------------------------------------------------------------------------------------------
 
 
 PLAYER_GAMEPLAY_REVISION_PRESET ={
-	["MODNAME"] = "__SUPER_HERO",
+	["MODNAME"] = "PLAYER_GAMEPLAY_REVISION",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -2242,10 +2247,10 @@ PLAYER_GAMEPLAY_REVISION_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name 
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
@@ -2270,9 +2275,9 @@ PLAYER_GAMEPLAY_REVISION_PRESET ={
             ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "ON",
             ["LONGER_STEATH_FEATURE"] = "ON",
             ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "ON",
-            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "ON",
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
             ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "ON",
-            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "ON",
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
         },
         ["SPACESHIPS_GAMEPLAY_FEATURES"] =
         {
@@ -2889,7 +2894,7 @@ REDMAS_E3PIC_FANTASY_PRESET ={
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["SKY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["STORM_BIOMES_FEATURES"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["STORM_BIOMES_FEATURES"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["GIANTS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["MONTAINS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
@@ -4658,7 +4663,7 @@ REDMAS_START_AS_PRESET ={
 ------------------------------------------------------------------------------------------
 
 REDMAS_SUPER_VEHICLES_PRESET ={
-	["MODNAME"] = "___SUPER_VEHICLES",
+	["MODNAME"] = "_SUPER_VEHICLES",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -17931,7 +17936,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						["REMOVE"] = "SECTION"
 					},
 					{
-						["SECTION_ACTIVE"] = {0},
+						["SECTION_ACTIVE"] = {1},
 						["SPECIAL_KEY_WORDS"] = {"Name","Gun"},
 						["INTEGER_TO_FLOAT"] = "FORCE",
 						["VALUE_CHANGE_TABLE"] =
@@ -17945,7 +17950,7 @@ if GAMEPLAY_OVERHAUL == "ON" then
 						}
 					},
 					{
-						["SECTION_ACTIVE"] = {0},
+						["SECTION_ACTIVE"] = {1},
 						["SPECIAL_KEY_WORDS"] = {"Name","Scanner"},
 						["INTEGER_TO_FLOAT"] = "FORCE",
 						["VALUE_CHANGE_TABLE"] =
