@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]            = "moon boots.pak",
+["MOD_FILENAME"]            = "Moon Boots Fractals update1.pak",
 ["MOD_AUTHOR"]              = "EliteGamers",
 ["LUA_AUTHOR"]              = "Babscoole",
 ["NMS_VERSION"]             = "4.12",
