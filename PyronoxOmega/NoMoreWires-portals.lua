@@ -1,14 +1,14 @@
 Author = "PyronoxOmega"
 ModName = "NoMoreWires-teleport"
-GameVersion = "4"
-ModVersion = "1.2"
+GameVersion = "4.1"
+ModVersion = "1.3"
 Description = "Makes short teleporter wires invisible"
 
 FileSource1 = {"MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/UTILITYPARTS/CONDUIT_PORTALWIRE/TELEPORTERSCROLLEFFECTMAT.MATERIAL.MBIN"}
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName .. "" .. GameVersion .. ModVersion .. ".pak",
+["MOD_FILENAME"] 			= ModName .. "" .. -GameVersion .. -ModVersion .. ".pak",
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,
 ["MOD_DESCRIPTION"] = Description,

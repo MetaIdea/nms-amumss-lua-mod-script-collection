@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "FlyDangerous_NOSPEED_WARP_TRAIL"
-GameVersion = "4"
-ModVersion = "1.2"
+GameVersion = "4.1"
+ModVersion = "1.3"
 Description = "Flight Overhaul"
 
 FileSource1 = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
@@ -64,7 +64,7 @@ fileSourceSL2 = {
 }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"] = ModName .. "" .. GameVersion .. ModVersion .. ".pak",
+	["MOD_FILENAME"] = ModName .. "" .. -GameVersion .. -ModVersion .. ".pak",
 	["MOD_DESCRIPTION"] = Description,
 	["MOD_AUTHOR"] = Author,
 	["NMS_VERSION"] = GameVersion,

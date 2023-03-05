@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "Ultimate_Production_harvest_All"
-GameVersion = "4.0"
-ModVersion = "1.2"
+GameVersion = "4.1"
+ModVersion = "1.3"
 Description = "Freighter Production Enhancement"
 
 
