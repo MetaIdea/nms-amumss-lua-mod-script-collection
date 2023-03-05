@@ -1,20 +1,20 @@
 Author = "PyronoxOmega"
 ModName = "QuickExplore"
-GameVersion = "4.0"
-ModVersion = "1.2"
+GameVersion = "4.1"
+ModVersion = "1.3"
 Description = "Quick Exploration"
 
 
 --Spawn Rate --
 
-Spawn = 2
+Spawn = 100
 
 -- files Path--
 Filesource1 = "METADATA/SIMULATION/ECOSYSTEM/CREATUREROLEDESCRIPTIONTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName..""..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"] 			= ModName..""..-GameVersion..-ModVersion..".pak",
 ["MOD_DESCRIPTION"]			= Description,
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,

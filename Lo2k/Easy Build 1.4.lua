@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Easy Build 1.3.pak", 
+["MOD_FILENAME"] 			= "Easy Build 1.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.10",
+["NMS_VERSION"]				= "4.12.1",
 ["MOD_DESCRIPTION"]			= "This mods reduces snapping distance",
 ["MODIFICATIONS"] 			= 
 	{
@@ -19,7 +19,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"BuildingPlacementDefaultMinDistance",	"-2.0"}, -- original 3.0, -3.0 to place items at your feet
-								{"BuildingPlacementDefaultMinDistanceVR",	"-2.0"},  -- original 0.0
+								{"BuildingPlacementDefaultMinMinDistanceVR",	"-2.0"},  -- original 0.5   
+
 							}
 						}
 					}

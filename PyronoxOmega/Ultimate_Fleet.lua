@@ -1,16 +1,12 @@
 Author = "PyronoxOmega"
-ModName = "Ultimate_Fleet_S_Instant-Mission"
-GameVersion = "3.97"
-ModVersion = "1"
+ModName = "Ultimate_Fleet_S_Normal_Time"
+GameVersion = "4.1"
+ModVersion = "1.2"
 Description = "Mostly S-class with high Stats based on RNG "
 FileSource1 = "METADATA/REALITY/TABLES/FRIGATETRAITTABLE.MBIN"
 FileSource2 ="GCFLEETGLOBALS.GLOBAL.MBIN"
-
-TimeExpEZ = "0" --time for easy expedition 900
-TimeExpEV = "0" --time for expedition event 5400
-
-
-
+TimeExpEZ = "900" --time for easy expedition 900
+TimeExpEV = "5400" --time for expedition event 5400
 NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_FILENAME"]	= ModName..""..GameVersion..ModVersion..".pak",
 ["MOD_DESCRIPTION"]	= Description,
@@ -20,16 +16,13 @@ NMS_MOD_DEFINITION_CONTAINER = {
 {{
 	["MBIN_CHANGE_TABLE"] = {
 		{
-		
 			["MBIN_FILE_SOURCE"] = FileSource1,
 			["EXML_CHANGE_TABLE"] = 
 			{				
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_1"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -37,14 +30,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_2"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -52,14 +42,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_3"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -67,14 +54,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_4"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -82,14 +66,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","FUEL_BAD_5"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -97,14 +78,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_1"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -112,14 +90,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_2"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -127,14 +102,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_3"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -142,14 +114,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_4"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -157,14 +126,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","COMBAT_BAD_5"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -172,14 +138,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_1"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -187,14 +150,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_2"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -202,14 +162,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_3"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -217,14 +174,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_4"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -232,14 +186,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","MINING_BAD_5"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -247,14 +198,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_1"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -262,14 +210,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_2"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -277,14 +222,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_3"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -292,14 +234,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_4"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -307,14 +246,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","TRADING_BAD_5"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -322,14 +258,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_1"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -337,14 +270,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_2"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -352,14 +282,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_3"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -367,14 +294,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_4"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -382,14 +306,11 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
 				{
-					
 					["SPECIAL_KEY_WORDS"] = {"ID","EXPLORE_BAD_5"},
 					["PRECEDING_KEY_WORDS"] ="ChanceOfBeingOffered",
 					["INTEGER_TO_FLOAT"] = "FORCE",
-					
 					["VALUE_CHANGE_TABLE"] = 
 					{
 						{"Combat", 0},						--5
@@ -397,27 +318,18 @@ NMS_MOD_DEFINITION_CONTAINER = {
 						{"Mining", 0},						--5
 						{"Diplomacy", 0},					--5
 					},
-
 				},
-		
 			},
-			
-			
-			
    },
-   
    --Globals
    {
 					["MBIN_FILE_SOURCE"] 	= FileSource2,
 					["EXML_CHANGE_TABLE"] = 
 			{
-					
-					
 				{
 					["INTEGER_TO_FLOAT"] = "FORCE",
 					["REPLACE_TYPE"] = "ALL",
 					["VALUE_CHANGE_TABLE"] 	= 
-					
 						{
 								{"PercentChangeOfFrigateBeingPurchasable",	100},
 								--{"MinFrigateStatValue",	50},
@@ -427,9 +339,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"MaxNumberOfPlayerShipsInFreighterHangar",	8},--6 all ships visible in hanger.
 								{"TimeTakenForExpeditionEvent_Easy", TimeExpEZ },			-- Original 900
 								{"TimeTakenForExpeditionEvent",		 TimeExpEV },			-- Original 5400
-								
 						},
-				
 				},
 						{
 							["SPECIAL_KEY_WORDS"] = {"Combat","GcFrigateStats.xml",},	
@@ -714,7 +624,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"Maximum", 4},
 							},
 						},
-						
 					--DeepSpaceCommon
 						{
 							["SPECIAL_KEY_WORDS"] = {"DeepSpaceCommon","GcFrigateStats.xml",},	
@@ -766,33 +675,9 @@ NMS_MOD_DEFINITION_CONTAINER = {
 								{"Maximum", 4},
 							},
 						},
-						
-						
-						
-				
-				
 			},
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-	
     }
    }
-   
-   
    }
 	}
 	}

@@ -1,12 +1,12 @@
 Author = "PyronoxOmega"
 ModName = "Ultimate_Combat"
-GameVersion = "4"
-ModVersion = "1.0"
+GameVersion = "4.1"
+ModVersion = "1.2"
 Description = "Weapons overhaull"
 Filesource = "METADATA/REALITY/DEFAULTREALITY.MBIN"
 Damage = "28360"
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"] = ModName .. "" .. GameVersion .. ModVersion .. ".pak",
+	["MOD_FILENAME"] = ModName .. "" .. -GameVersion .. -ModVersion .. ".pak",
 	["MOD_DESCRIPTION"] = Description,
 	["MOD_AUTHOR"] = Author,
 	["NMS_VERSION"] = GameVersion,
