@@ -19,8 +19,10 @@ return
       <Property name="IsCommunityPortalOverride" value="False" />
       <Property name="ClearForcedInteractionOnCompletion" value="False" />
       <Property name="BuildingPreventionRadius" value="0" />
+      <Property name="UseMissionTradingDataOverride" value="False" />
       <Property name="AlwaysShow" value="False" />
       <Property name="NeverShow" value="False" />
+      <Property name="ShowOnlyIfSequenceTarget" value="False" />
       <Property name="PlanetLabelText" value="" />
       <Property name="SurveyDistance" value="0" />
       <Property name="SurveyDiscoveryOSDMessage" value="UI_MISSIONMARKER_DISC_OSD" />
@@ -70,6 +72,7 @@ return
         <Property name="RequireUndiscovered" value="False" />
         <Property name="NeedsWaterPlanet" value="False" />
         <Property name="NeedsPrimePlanet" value="False" />
+        <Property name="NeedsSentinels" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
         <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -90,6 +93,7 @@ return
         <Property name="SuitableForCreatureDiscovery" value="False" />
         <Property name="SuitableForCreatureTaming" value="False" />
         <Property name="SamePlanetAsEvent" value="" />
+        <Property name="SamePlanetAsSeasonParty" value="0" />
       </Property>
       <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
         <Property name="UseStarType" value="False" />
@@ -121,6 +125,7 @@ return
         <Property name="RequireUndiscovered" value="False" />
         <Property name="NeedsWaterPlanet" value="False" />
         <Property name="NeedsPrimePlanet" value="False" />
+        <Property name="NeedsSentinels" value="False" />
         <Property name="NeedsExtremeSentinelPlanet" value="False" />
         <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
         <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -141,6 +146,7 @@ return
         <Property name="SuitableForCreatureDiscovery" value="False" />
         <Property name="SuitableForCreatureTaming" value="False" />
         <Property name="SamePlanetAsEvent" value="" />
+        <Property name="SamePlanetAsSeasonParty" value="0" />
       </Property>
       <Property name="ForceRestartInteraction" value="True" />
       <Property name="HasReward" value="" />
