@@ -22,12 +22,17 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="SAVEGAME" />
+          <Property name="AdditiveBaseAnim" value="" />
           <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
-          <Property name="AnimType" value="OneShot" />
-          <Property name="FrameStart" value="0" />
-          <Property name="FrameEnd" value="0" />
           <Property name="StartNode" value="" />
           <Property name="ExtraStartNodes" />
+          <Property name="GameData" value="TkAnimationGameData.xml">
+            <Property name="RootMotionEnabled" value="False" />
+            <Property name="BlockPlayerMovement" value="False" />
+            <Property name="BlockPlayerWeapon" value="Unblocked" />
+          </Property>
+          <Property name="FrameStart" value="0" />
+          <Property name="FrameEnd" value="0" />
           <Property name="Priority" value="0" />
           <Property name="OffsetMin" value="0" />
           <Property name="OffsetMax" value="0" />
@@ -35,17 +40,13 @@ NMS_MOD_DEFINITION_CONTAINER =
           <Property name="Speed" value="1" />
           <Property name="ActionStartFrame" value="0" />
           <Property name="ActionFrame" value="-1" />
+          <Property name="AdditiveBaseFrame" value="0" />
+          <Property name="AnimType" value="OneShot" />
           <Property name="CreatureSize" value="AllSizes" />
           <Property name="Additive" value="False" />
           <Property name="Mirrored" value="False" />
           <Property name="Active" value="True" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
-            <Property name="BlockPlayerMovement" value="False" />
-            <Property name="BlockPlayerWeapon" value="Unblocked" />
-          </Property>
+          <Property name="Has30HzFrames" value="False" />
         </Property>
 ]]
                         },

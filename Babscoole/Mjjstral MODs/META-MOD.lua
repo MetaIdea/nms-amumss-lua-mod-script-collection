@@ -470,8 +470,10 @@ QUICK_ACTION_MENU =
           <Property name="IsCommunityPortalOverride" value="False" />
           <Property name="ClearForcedInteractionOnCompletion" value="False" />
           <Property name="BuildingPreventionRadius" value="0" />
+          <Property name="UseMissionTradingDataOverride" value="False" />
           <Property name="AlwaysShow" value="False" />
           <Property name="NeverShow" value="False" />
+          <Property name="ShowOnlyIfSequenceTarget" value="False" />
           <Property name="PlanetLabelText" value="" />
           <Property name="SurveyDistance" value="0" />
           <Property name="SurveyDiscoveryOSDMessage" value="" />
@@ -521,6 +523,7 @@ QUICK_ACTION_MENU =
             <Property name="RequireUndiscovered" value="False" />
             <Property name="NeedsWaterPlanet" value="False"/>
             <Property name="NeedsPrimePlanet" value="False"/>
+            <Property name="NeedsSentinels" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -541,6 +544,7 @@ QUICK_ACTION_MENU =
             <Property name="SuitableForCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
+            <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
           <Property name="SolarSystemAttributesFallback" value="GcScanEventSolarSystemLookup.xml">
             <Property name="UseStarType" value="False" />
@@ -572,6 +576,7 @@ QUICK_ACTION_MENU =
             <Property name="RequireUndiscovered" value="False" />
             <Property name="NeedsWaterPlanet" value="False" />
             <Property name="NeedsPrimePlanet" value="False"/>
+            <Property name="NeedsSentinels" value="False" />
             <Property name="NeedsExtremeSentinelPlanet" value="False" />
             <Property name="NeverAllowExtremeSentinelPlanet" value="False" />
             <Property name="NeedsExtremeWeatherPlanet" value="False" />
@@ -592,6 +597,7 @@ QUICK_ACTION_MENU =
             <Property name="SuitableForCreatureDiscovery" value="False" />
             <Property name="SuitableForCreatureTaming" value="False" />
             <Property name="SamePlanetAsEvent" value="" />
+            <Property name="SamePlanetAsSeasonParty" value="0" />
           </Property>
           <Property name="ForceRestartInteraction" value="True" />
           <Property name="HasReward" value="" />
@@ -610,6 +616,9 @@ QUICK_ACTION_MENU =
           <Property name="MarkerLabel" value="Lush Planet" />
           <Property name="MarkerIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/DISCOVERY/PLANET.DDS"/>
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="MissionMarkerHighlightStyleOverride" value="GcScannerIconHighlightTypes.xml">
             <Property name="ScannerIconHighlightType" value="Diamond" />
@@ -627,6 +636,9 @@ QUICK_ACTION_MENU =
           <Property name="TooltipMessage" value="" />
           <Property name="ResourceOverride" value="GcResourceElement.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
             <Property name="Seed" value="GcSeed.xml">
               <Property name="Seed" value="0" />
               <Property name="UseSeedValue" value="False" />
@@ -880,12 +892,17 @@ function GetTriggerAnim(ANIM)
 return [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="]] .. ANIM .. [[" />
+          <Property name="AdditiveBaseAnim" value="" />
           <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
-          <Property name="AnimType" value="OneShot" />
-          <Property name="FrameStart" value="0" />
-          <Property name="FrameEnd" value="0" />
           <Property name="StartNode" value="" />
           <Property name="ExtraStartNodes" />
+          <Property name="GameData" value="TkAnimationGameData.xml">
+            <Property name="RootMotionEnabled" value="False" />
+            <Property name="BlockPlayerMovement" value="False" />
+            <Property name="BlockPlayerWeapon" value="Unblocked" />
+          </Property>
+          <Property name="FrameStart" value="0" />
+          <Property name="FrameEnd" value="0" />
           <Property name="Priority" value="0" />
           <Property name="OffsetMin" value="0" />
           <Property name="OffsetMax" value="0" />
@@ -893,17 +910,13 @@ return [[
           <Property name="Speed" value="1" />
           <Property name="ActionStartFrame" value="0" />
           <Property name="ActionFrame" value="-1" />
+          <Property name="AdditiveBaseFrame" value="0" />
+          <Property name="AnimType" value="OneShot" />
           <Property name="CreatureSize" value="AllSizes" />
           <Property name="Additive" value="False" />
           <Property name="Mirrored" value="False" />
           <Property name="Active" value="True" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
-            <Property name="BlockPlayerMovement" value="False" />
-            <Property name="BlockPlayerWeapon" value="Unblocked" />
-          </Property>
+          <Property name="Has30HzFrames" value="False" />
         </Property>
 ]]
 end

@@ -261,6 +261,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -299,6 +300,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="False" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -357,6 +359,11 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="ReseedAfterRewardSuccess" value="False" />
       <Property name="UsePersonalPersistentBuffer" value="False" />
       <Property name="InWorldUIScaler" value="0" />
+      <Property name="InWorldUIMinDistOverride" value="0" />
+      <Property name="InWorldUIMinDistOverrideV2" value="0" />
+      <Property name="InWorldUIForcedOffset" value="0" />
+      <Property name="InWorldUIForcedOffsetV2" value="0" />
+      <Property name="InWorldUIUseCameraUp" value="False" />
       <Property name="StartMissionOnUse" value="" />
       <Property name="AllowMissionUnderwater" value="True" />
     </Property>
