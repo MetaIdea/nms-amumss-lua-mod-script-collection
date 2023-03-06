@@ -4400,11 +4400,11 @@ BiomeDataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "Jasondude and Exosolar's Hybrid Stratos.pak",
+["MOD_FILENAME"]    = "_Jasondude and Exosolar's Hybrid Stratos.pak",
 ["MOD_AUTHOR"]      = "Exosolar and Jasondude",
 ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.10",
+["NMS_VERSION"]     = "4.12",
 ["MODIFICATIONS"]   =
     {
         {

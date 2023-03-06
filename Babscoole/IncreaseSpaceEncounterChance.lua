@@ -2,10 +2,10 @@ ChanceMultiplier = "1.5"
 
 Author          = "Babscoole & Gumsk"
 ModName         = "IncreaseSpaceEncounterChance"
-ModNameSub      = " "..ChanceMultiplier.."x"
+ModNameSub      = ChanceMultiplier.."x"
 BaseDescription = "Makes space pulse encounters more likely"
-GameVersion     = "4.10"
-ModVersion      = "a"
+GameVersion     = "4.12"
+--ModVersion      = "a"
 
 --[[ Files Modified:
 GCGAMEPLAYGLOBALS.GLOBAL.MBIN
@@ -72,7 +72,7 @@ ENCOUNTER_DATA_TABLE =
     }
 
 NMS_MOD_DEFINITION_CONTAINER = {
-    ["MOD_FILENAME"]            = ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+    ["MOD_FILENAME"]            = ModName..ModNameSub..".pak",
     ["MOD_DESCRIPTION"]         = BaseDescription,
     ["MOD_AUTHOR"]              = Author,
     ["NMS_VERSION"]             = GameVersion,
