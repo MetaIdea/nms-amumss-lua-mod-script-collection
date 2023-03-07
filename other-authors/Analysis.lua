@@ -2,9 +2,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "Analysis.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "4.1",
+["NMS_VERSION"]				= "4.12.2-pre",
 ["MOD_DESCRIPTION"]			= "Target scanning trigger time mimimized",
-["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE", 
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -19,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"BinocsDisplayUnknownCreatures",		"True"},	-- WayPoint "False" Shows distant spawn point for creatures
+								--{"BinocsDisplayUnknownCreatures",		"True"},	-- Fractal "False" Shows distant spawn point for creatures deprecated
 								{"BinocularScanTargetMinHeight",		"4"},		-- WayPoint "5" Tessting
 								{"BinocularScanTargetHeightRange",		"1"},		-- WayPoint "0" 
 								{"BinocTimeBeforeScan",					"0.0"}, 	-- WayPoint "0.5"
@@ -32,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"BinocularScanTargetFadeTime",			"0.0"}		-- WayPoint "0.5"								
 							}
 						}
-					} --10 global replacements
+					} --9 global replacements
 				}
 		    }
 	    }	

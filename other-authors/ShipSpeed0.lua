@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "ShipSpeed0.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "4.1",
+["NMS_VERSION"]				= "4.12.2-pre",
 ["MOD_DESCRIPTION"]			= "Ship Hover Zero Speed",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE", 
 ["MODIFICATIONS"] 			= 
