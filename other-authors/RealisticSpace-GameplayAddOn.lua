@@ -16,7 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --QualityChanges
 		["VALUE_CHANGE_TABLE"] = {
 			{"DeathMoneyPenalty","0"},
-			{"DeathMoneyPenalty","0"},
 			{"ShipInteractRadius","250"},
 			{"MissileMaxTurnAngle","90"}}},
 	}},

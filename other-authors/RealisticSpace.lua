@@ -164,16 +164,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"TurnMax","1.5"},
 			{"FleeRange","800"},
 			{"AttackTargetMinRange","100"}},
-			["REPLACE_TYPE"] = "ALL"},
-		{ --PIRATE_FREIGHT Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","3"},
-			{"Health","50000"},
-			{"LevelledExtraHealth","0"},
-			{"Engine","SPACE_HARD"},
-			{"PlanetEngine","PLANET_HARD"},
-			{"Shield","FAST_STRONG"}}},		
+			["REPLACE_TYPE"] = "ALL"},	
 		{ --PIRATE_EASY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -247,14 +238,57 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
-		{ --PLAYER_SQUADRON Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","PLAYER_SQUADRON"},
+		 --PLAYER_SQUADRON Behaviour
+		{--C
+		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_C"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Behaviour","SQUADRON_STRONG"},
+			{"RewardCount","3"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
+			{"Engine","SQUADRON_FAST"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{--B
+		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_B"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Behaviour","SQUADRON_STRONG"},
+			{"RewardCount","3"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
+			{"Engine","SQUADRON_FAST"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{--A
+		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_A"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Behaviour","SQUADRON_STRONG"},
+			{"RewardCount","3"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
+			{"Engine","SQUADRON_FAST"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{--S
+		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_S"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"Behaviour","SQUADRON_STRONG"},
+			{"RewardCount","3"},
+			{"Health","50000"},
+			{"LevelledExtraHealth","0"},
+			{"Engine","SQUADRON_FAST"},
+			{"PlanetEngine","PLANET_HARD"},
+			{"Shield","FAST_STRONG"}}},
+		{--Alien
+		["SPECIAL_KEY_WORDS"] = {"Id","ALIEN_HOSTILE"},
 			["VALUE_CHANGE_TABLE"] = {
 			{"RewardCount","3"},
 			{"Health","50000"},
 			{"LevelledExtraHealth","0"},
+			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
+		}
 		{ --PLANET_FLYBY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
 			["VALUE_CHANGE_TABLE"] = {

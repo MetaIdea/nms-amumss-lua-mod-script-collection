@@ -210,13 +210,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"TurnMax","1.5"},
 			{"FleeRange","800"},
 			{"AttackTargetMinRange","100"}},
-			["REPLACE_TYPE"] = "ALL"},
-		{ --PIRATE_FREIGHT Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_FREIGHT"},
-			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
-			{"Engine","SPACE_HARD"},
-			{"PlanetEngine","PLANET_HARD"}}},		
+			["REPLACE_TYPE"] = "ALL"},	
 		{ --PIRATE_EASY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -265,12 +259,38 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
-		{ --PLAYER_SQUADRON Behaviour
-		["SPECIAL_KEY_WORDS"] = {"Id","PLAYER_SQUADRON"},
+		--PLAYER_SQUADRON Behaviour
+		{--C
+		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_C"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"RewardCount","1"},
+			{"Engine","SQUADRON_FAST"},
+			{"PlanetEngine","PLANET_HARD"}}},
+		{--B
+		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_B"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"RewardCount","1"},
+			{"Engine","SQUADRON_FAST"},
+			{"PlanetEngine","PLANET_HARD"}}},
+		{--A
+		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_A"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"RewardCount","1"},
+			{"Engine","SQUADRON_FAST"},
+			{"PlanetEngine","PLANET_HARD"}}},
+		{--S
+		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_S"},
+			["VALUE_CHANGE_TABLE"] = {
+			{"RewardCount","1"},
+			{"Engine","SQUADRON_FAST"},
+			{"PlanetEngine","PLANET_HARD"}}},
+		{--Alien
+		["SPECIAL_KEY_WORDS"] = {"Id","ALIEN_HOSTILE"},
 			["VALUE_CHANGE_TABLE"] = {
 			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
+		}
 		{ --PLANET_FLYBY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
 			["VALUE_CHANGE_TABLE"] = {
