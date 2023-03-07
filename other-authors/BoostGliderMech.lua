@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= "BoostGliderMech.pak",
 ["MOD_AUTHOR"]		        = "OTBP",
-["NMS_VERSION"]				= "4.1e ",
+["NMS_VERSION"]				= "4.12.2-pre ",
 ["MOD_DESCRIPTION"]			= "Mech will stay aloft longer and fall slower to pad Boost distants",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"] 			= 
@@ -19,7 +19,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"MechContrailAlpha",							"0.9"},		-- WayPoint "0.6" Testing
+								{"MechContrailAlpha",							"0.9"},		-- WayPoint "0.6" Testing
 								{"MechTurretTurnTimeGroundPlayerCombat",		"0.9"},		-- WayPoint "0.15" Testing 3rd person view
 								{"MechPowerUpTime",  							"1"},		-- WayPoint "3" Testing
 								{"MechTurretMaxAngleAir",						"100"},		-- WayPoint "90" Good
@@ -36,7 +36,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MechJetpackFillRate",							"0.05"},	-- WayPoint "0.5" Good	
 							}
 						}
-					} --14 global replacements
+					} --15 global replacements
 				}
 		    }
 	    }	
