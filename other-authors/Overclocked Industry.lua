@@ -1,7 +1,7 @@
 Author = "Syzzle"
 ModName = "Overclocked Industry"
-GameVersion = "4.12"
-ModVersion = "v1.4"
+GameVersion = "4.13"
+--ModVersion = "v1.4"
 Description = "Power up Autonomous Mining, Atmosphere Harvester and Oxygen Harvester to harvest a full stack of 9999 in 5 minutes."
 
 FuelTime = "15"	-- How much time until the Fuel is fully used in seconds, 300 equals 5 minutes. When editing make sure it's a positive number.
@@ -12,7 +12,7 @@ Output = "9999"		-- How many resources it will give at the end of the work cycle
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"] 			= ModName.." "..GameVersion..".pak",
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,
 ["MOD_DESCRIPTION"] 		= Description,
