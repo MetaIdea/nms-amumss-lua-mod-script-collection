@@ -1,13 +1,13 @@
 Author = "Syzzle"
 ModName = "sProtect"
-ModNameSub = "No Tech Damage with Shield Up"
+--ModNameSub = "No Tech Damage with Shield Up"
 BaseDescription = "Makes so your tech won't be breaking until your shield is down."
-GameVersion = "4.12"
-ModVersion = "v1.4"
+GameVersion = "4.13"
+--ModVersion = "v1.4"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	["MOD_FILENAME"]	= ModName.." "..GameVersion..".pak",
 	["MOD_DESCRIPTION"]	= BaseDescription,
 	["MOD_AUTHOR"]		= Author,
 	["NMS_VERSION"]		= GameVersion,

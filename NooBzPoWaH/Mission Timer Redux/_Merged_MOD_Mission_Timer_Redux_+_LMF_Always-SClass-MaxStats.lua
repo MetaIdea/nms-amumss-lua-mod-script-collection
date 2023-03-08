@@ -11,7 +11,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["MBIN_CHANGE_TABLE"] =
             {
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\ATLASPATHTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\ATLASPATHTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\BASECOMPUTERMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\BASECOMPUTERMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -39,7 +39,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\SIMULATION\MISSIONS\SPACEPOIMISSIONTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\SIMULATION\\MISSIONS\\SPACEPOIMISSIONTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
@@ -347,7 +347,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     }
                 },
                 {
-                    ["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\FRIGATETRAITTABLE.MBIN",
+                    ["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\FRIGATETRAITTABLE.MBIN",
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {

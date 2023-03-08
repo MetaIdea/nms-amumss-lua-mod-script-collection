@@ -1,14 +1,14 @@
 Author = "Syzzle"
 ModName = "Better Pulse Scan and Ship Scan"
-GameVersion = "4.12"
-ModVersion = "v1.8"
+GameVersion = "4.13"
+--ModVersion = "v1.8"
 Description = "Rare resources and other things now show up when you use Pulse Scan with Multitool or Exocraft, increased range and minimum amount of Buildings you can find with Ship Scan."
 
 -- Thanks to people on Modding Discord and lyravega for a lot of ideas and guidance.
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName.." "..GameVersion..ModVersion..".pak",
+["MOD_FILENAME"] 			= ModName.." "..GameVersion..".pak",
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,
 ["MOD_DESCRIPTION"] 		= Description,
