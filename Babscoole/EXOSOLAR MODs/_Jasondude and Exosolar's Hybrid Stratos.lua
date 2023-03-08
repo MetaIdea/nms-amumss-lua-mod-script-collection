@@ -4404,7 +4404,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Exosolar and Jasondude",
 ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.12",
+["NMS_VERSION"]     = "4.13",
 ["MODIFICATIONS"]   =
     {
         {
