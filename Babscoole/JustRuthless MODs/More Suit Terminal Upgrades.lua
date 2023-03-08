@@ -2,8 +2,8 @@
 FileName    = "More Suit Terminal Upgrades.pak"
 ModAuthor   = "JustRuthless"
 LuaAuthor   = "JustRuthless"
-ModMaintenance = "Babscoole and DarkScythe"
-NMS_Version = "4.10"
+ModMaintenance = "Babscoole"
+NMS_Version = "4.13"
 
 -- File Sources --
 FileSource1 = "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/COMMONPARTS/CRYOCHAMBER/ENTITIES/CRYOCHAMBERINTERACTION.ENTITY.MBIN"

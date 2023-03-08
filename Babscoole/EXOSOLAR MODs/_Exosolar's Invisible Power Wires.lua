@@ -4,7 +4,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Babscoole",
 ["MOD_DESCRIPTION"] = "Makes powered wires invisible",
-["NMS_VERSION"]     = "4.10",
+["NMS_VERSION"]     = "4.13",
 ["MODIFICATIONS"]   =
     {
         {

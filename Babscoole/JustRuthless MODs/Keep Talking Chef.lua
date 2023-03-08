@@ -3,7 +3,7 @@ FileName = "Keep Talking Chef.pak" -- can be changed to the name you want the mo
 ModAuthor = "JustRuthless" -- only for reference
 LuaAuthor = "JustRuthless" -- only for reference
 ModMaintenance = "Babscoole"
-NMS_Version = "4.10" -- only for reference
+NMS_Version = "4.13" -- only for reference
 
 -- File Sources --
 FileSource1 = "METADATA/REALITY/TABLES/NMS_DIALOG_GCALIENPUZZLETABLE.MBIN"
