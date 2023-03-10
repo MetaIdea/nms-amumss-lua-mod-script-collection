@@ -1,8 +1,3 @@
-----------------------------------------------------------------------------------------
---
--- ( Ctrl + S to save )
---
-------------------------------------------------------------------------------------------
 -- ************************************************************************************************************
 -- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
 --
@@ -17,11 +12,9 @@
 -- ------------------You can configure the overhaul from the following VARs-------------------------------- --
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
--- Main Features enabler -- ----------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "CUSTOM_PRESET"
+INIT = "FANTASY_SYNTHESIS_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -139,7 +132,7 @@ ASTEROIDS_REALISTIC_PRESET ={
 	["ASTEROID_SCALE_MULTIPLIER"] = "4"
 }
 --------------------------------------------------------------------------------------------------------------
-PROCEDURALMAX = 1000  -- This is the number of procedural generated new params for this script
+PROCEDURALMAX = 2500  -- This is the number of procedural generated new params for this script
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
@@ -1477,7 +1470,7 @@ REDMAS_PROCEDURAL_SPACE_CRASH_MISSION_PRESET ={
 
 
 DARKSPACE_COLORS_PRESET ={
-	["MODNAME"] = "_REALISTIC___SPACE_V2",
+	["MODNAME"] = "___REALISTIC___SPACE_V3",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
@@ -2894,7 +2887,7 @@ REDMAS_E3PIC_FANTASY_PRESET ={
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["SKY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["STORM_BIOMES_FEATURES"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["STORM_BIOMES_FEATURES"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["GIANTS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["MONTAINS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
@@ -4477,7 +4470,7 @@ REDMAS_SPAWNER_FOR_CONSTRUCTS_BY_MSSP_PRESET ={
 ------------------------------------------------------------------------------------------
 
 REDMAS_START_AS_PRESET ={
-	["MODNAME"] = "_Arcadia_Start",
+	["MODNAME"] = "___Alpha_Vector_Starting_Ship",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -4619,7 +4612,7 @@ REDMAS_START_AS_PRESET ={
     ["SKINS"] =
     {
         ["CHARACTERS_SKINS_FEATURE"] = "OFF",
-		["DRONE_PET_SKIN_FEATURE"] = "ON",
+		["DRONE_PET_SKIN_FEATURE"] = "OFF",
         ["DRONE_PET_SKIN"] = "E3-DAMAGED",-- (E3-DAMAGED or E3)
         -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
         -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
@@ -4636,7 +4629,7 @@ REDMAS_START_AS_PRESET ={
 		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
 		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
 		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
-        ["STARTING_MULTITOOL"] = "EXPLO1",
+        ["STARTING_MULTITOOL"] = "EXPLO2",
     },
     ["CHALLENGE_FEATURES"] =
     {
@@ -4658,7 +4651,7 @@ REDMAS_START_AS_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
+-- ( Ctrl + S to save )
 --
 ------------------------------------------------------------------------------------------
 
@@ -4681,10 +4674,10 @@ REDMAS_SUPER_VEHICLES_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"  
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"  
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"  
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
@@ -4721,7 +4714,7 @@ REDMAS_SUPER_VEHICLES_PRESET ={
         ["VEHICLES_FEATURES"] =
         {
             ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON",
-            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON",
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "OFF",
             ["CUSTOM_NOMAD_EXOCRAFT"] = "ON",
             ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON",
             ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON",
@@ -4850,7 +4843,7 @@ REDMAS_SUPER_VEHICLES_PRESET ={
 ------------------------------------------------------------------------------------------
 
 REDMAS_VISUAL_OVERHAUL_PRESET ={
-	["MODNAME"] = "___ULTRA_DIVERSE_SPACE_COLORS_Extension",
+	["MODNAME"] = "__ULTRA_DIVERSE_SPACE_COLORS_Extension",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
@@ -36884,19 +36877,11 @@ if NEWGAME_BONUSES == "ON" then
 					["EXML_CHANGE_TABLE"] =
 					{
 						{
-							["PRECEDING_KEY_WORDS"] = "ShipOwnership",
-							["SECTION_ACTIVE"] = {1,2,3},
-							["VALUE_CHANGE_TABLE"] =
-							{
-								--{"Name",BONUS_SPACESHIP.NAME,}
-							}
-						},
-						{
 							["PRECEDING_KEY_WORDS"] = "CurrentShip",
 							["SECTION_ACTIVE"] = {1,2,3},
 							["VALUE_CHANGE_TABLE"] =
 							{
-								--{"Filename",BONUS_SPACESHIP.FILE},
+								{"Filename",BONUS_SPACESHIP.FILE},
 								{"Seed",BONUS_SPACESHIP.SEED}
 							}
 						}
