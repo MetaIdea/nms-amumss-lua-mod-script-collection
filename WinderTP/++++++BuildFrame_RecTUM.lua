@@ -114,6 +114,7 @@ return
 	{
 		["SPECIAL_KEY_WORDS"] = {"ID", TO},
 		["PRECEDING_KEY_WORDS"] = {"SubGroups"},
+		-- ["LINE_OFFSET"] 		= "+0",
 		["ADD"] 				= GetSubGroupData(SUBGROUP, NAME)
 	}
 end
@@ -125,35 +126,34 @@ return [[
                         <Property name="ID" value="DIVIDER]] .. COUNTER .. [[" />
                         <Property name="PresetID" value="" />
                         <Property name="IsHidden" value="False" />
+                        <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+                          <Property name="NGuiForcedStyle" value="None" />
+                        </Property>
                         <Property name="Layout" value="GcNGuiLayoutData.xml">
+                          <Property name="VROverrides" />
+                          <Property name="AccessibleOverrides" />
                           <Property name="PositionX" value="0" />
                           <Property name="PositionY" value="0" />
                           <Property name="Width" value="100" />
-                          <Property name="WidthPercentage" value="True" />
                           <Property name="Height" value="35" />
-                          <Property name="HeightPercentage" value="False" />
-                          <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
-                          <Property name="ForceAspect" value="False" />
-                          <Property name="Anchor" value="False" />
-                          <Property name="AnchorPercent" value="False" />
-                          <Property name="SameLine" value="False" />
+                          <Property name="MaxWidth" value="0" />
                           <Property name="Align" value="TkNGuiAlignment.xml">
                             <Property name="Vertical" value="Top" />
                             <Property name="Horizontal" value="Left" />
                           </Property>
+                          <Property name="WidthPercentage" value="True" />
+                          <Property name="HeightPercentage" value="False" />
+                          <Property name="ConstrainProportions" value="False" />
+                          <Property name="ForceAspect" value="False" />
+                          <Property name="Anchor" value="False" />
+                          <Property name="AnchorPercent" value="False" />
+                          <Property name="SameLine" value="False" />
                           <Property name="SlowCursorOnHover" value="False" />
-                          <Property name="MaxWidth" value="0" />
-                          <Property name="VROverrides" />
-                          <Property name="AccessibleOverrides" />
                         </Property>
                       </Property>
                       <Property name="Style" value="TkNGuiGraphicStyle.xml">
                         <Property name="Default" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="0" />
                           <Property name="Colour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
@@ -172,41 +172,41 @@ return [[
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="SolidColour" value="True" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="GradientOffsetPercent" value="False" />
                           <Property name="GradientColour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
                             <Property name="B" value="0" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
                           <Property name="StrokeGradientColour" value="Colour.xml">
                             <Property name="R" value="1" />
                             <Property name="G" value="1" />
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
+                          <Property name="PaddingX" value="0" />
+                          <Property name="PaddingY" value="0" />
+                          <Property name="MarginX" value="0" />
+                          <Property name="MarginY" value="0" />
+                          <Property name="GradientStartOffset" value="0" />
+                          <Property name="GradientEndOffset" value="0" />
+                          <Property name="CornerRadius" value="0" />
+                          <Property name="StrokeSize" value="0" />
+                          <Property name="Image" value="0" />
+                          <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
+                          <Property name="StrokeGradientOffset" value="0" />
+                          <Property name="StrokeGradientFeather" value="0" />
+                          <Property name="Shape" value="Rectangle" />
+                          <Property name="Gradient" value="None" />
+                          <Property name="SolidColour" value="True" />
+                          <Property name="HasDropShadow" value="False" />
+                          <Property name="HasOuterGradient" value="False" />
+                          <Property name="HasInnerGradient" value="False" />
+                          <Property name="GradientOffsetPercent" value="False" />
+                          <Property name="StrokeGradient" value="False" />
                         </Property>
                         <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="0" />
                           <Property name="Colour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
@@ -225,41 +225,41 @@ return [[
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="SolidColour" value="True" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="GradientOffsetPercent" value="False" />
                           <Property name="GradientColour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
                             <Property name="B" value="0" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
                           <Property name="StrokeGradientColour" value="Colour.xml">
                             <Property name="R" value="1" />
                             <Property name="G" value="1" />
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
+                          <Property name="PaddingX" value="0" />
+                          <Property name="PaddingY" value="0" />
+                          <Property name="MarginX" value="0" />
+                          <Property name="MarginY" value="0" />
+                          <Property name="GradientStartOffset" value="0" />
+                          <Property name="GradientEndOffset" value="0" />
+                          <Property name="CornerRadius" value="0" />
+                          <Property name="StrokeSize" value="0" />
+                          <Property name="Image" value="0" />
+                          <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
+                          <Property name="StrokeGradientOffset" value="0" />
+                          <Property name="StrokeGradientFeather" value="0" />
+                          <Property name="Shape" value="Rectangle" />
+                          <Property name="Gradient" value="None" />
+                          <Property name="SolidColour" value="True" />
+                          <Property name="HasDropShadow" value="False" />
+                          <Property name="HasOuterGradient" value="False" />
+                          <Property name="HasInnerGradient" value="False" />
+                          <Property name="GradientOffsetPercent" value="False" />
+                          <Property name="StrokeGradient" value="False" />
                         </Property>
                         <Property name="Active" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="0" />
                           <Property name="Colour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
@@ -278,48 +278,39 @@ return [[
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="SolidColour" value="True" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="GradientOffsetPercent" value="False" />
                           <Property name="GradientColour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
                             <Property name="B" value="0" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
                           <Property name="StrokeGradientColour" value="Colour.xml">
                             <Property name="R" value="1" />
                             <Property name="G" value="1" />
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
-                        </Property>
-                        <Property name="InheritStyleFromParentLayer" value="False" />
-                        <Property name="HighlightTime" value="0.1" />
-                        <Property name="HighlightScale" value="1" />
-                        <Property name="GlobalFade" value="1" />
-                        <Property name="Animate" value="None" />
-                        <Property name="AnimTime" value="0.5" />
-                        <Property name="AnimSplit" value="0.4" />
-                        <Property name="AnimCurve1" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="AnimCurve2" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
+                          <Property name="PaddingX" value="0" />
+                          <Property name="PaddingY" value="0" />
+                          <Property name="MarginX" value="0" />
+                          <Property name="MarginY" value="0" />
+                          <Property name="GradientStartOffset" value="0" />
+                          <Property name="GradientEndOffset" value="0" />
+                          <Property name="CornerRadius" value="0" />
+                          <Property name="StrokeSize" value="0" />
+                          <Property name="Image" value="0" />
+                          <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
+                          <Property name="StrokeGradientOffset" value="0" />
+                          <Property name="StrokeGradientFeather" value="0" />
+                          <Property name="Shape" value="Rectangle" />
+                          <Property name="Gradient" value="None" />
+                          <Property name="SolidColour" value="True" />
+                          <Property name="HasDropShadow" value="False" />
+                          <Property name="HasOuterGradient" value="False" />
+                          <Property name="HasInnerGradient" value="False" />
+                          <Property name="GradientOffsetPercent" value="False" />
+                          <Property name="StrokeGradient" value="False" />
                         </Property>
                         <Property name="CustomMinStart" value="Vector2f.xml">
                           <Property name="x" value="1" />
@@ -329,6 +320,19 @@ return [[
                           <Property name="x" value="1" />
                           <Property name="y" value="1" />
                         </Property>
+                        <Property name="HighlightTime" value="0.1" />
+                        <Property name="HighlightScale" value="1" />
+                        <Property name="GlobalFade" value="1" />
+                        <Property name="AnimTime" value="0.5" />
+                        <Property name="AnimSplit" value="0.4" />
+                        <Property name="AnimCurve1" value="TkCurveType.xml">
+                          <Property name="Curve" value="Linear" />
+                        </Property>
+                        <Property name="AnimCurve2" value="TkCurveType.xml">
+                          <Property name="Curve" value="Linear" />
+                        </Property>
+                        <Property name="Animate" value="None" />
+                        <Property name="InheritStyleFromParentLayer" value="False" />
                       </Property>
                       <Property name="Image" value="" />
                       <Property name="Children" />
@@ -340,40 +344,41 @@ end
 
 function GetPartsItemEntry(COUNTER)
 return [[
-                    <Property value="GcNGuiLayerData.xml">
+					<Property value="GcNGuiLayerData.xml">
                       <Property name="ElementData" value="GcNGuiElementData.xml">
                         <Property name="ID" value="ITEM]] .. COUNTER .. [[" />
                         <Property name="PresetID" value="" />
                         <Property name="IsHidden" value="False" />
+                        <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+                          <Property name="NGuiForcedStyle" value="None" />
+                        </Property>
                         <Property name="Layout" value="GcNGuiLayoutData.xml">
+                          <Property name="VROverrides" />
+                          <Property name="AccessibleOverrides" />
                           <Property name="PositionX" value="0" />
                           <Property name="PositionY" value="0" />
-                          <Property name="Width" value="156" />
-                          <Property name="WidthPercentage" value="False" />
-                          <Property name="Height" value="177.89474" />
-                          <Property name="HeightPercentage" value="False" />
-                          <Property name="ConstrainProportions" value="True" />
+                          <Property name="Width" value="164" />
+                          <Property name="Height" value="187.01755" />
                           <Property name="ConstrainAspect" value="0.876923" />
-                          <Property name="ForceAspect" value="False" />
-                          <Property name="Anchor" value="False" />
-                          <Property name="AnchorPercent" value="False" />
-                          <Property name="SameLine" value="True" />
+                          <Property name="MaxWidth" value="0" />
                           <Property name="Align" value="TkNGuiAlignment.xml">
                             <Property name="Vertical" value="Top" />
                             <Property name="Horizontal" value="Left" />
                           </Property>
+                          <Property name="WidthPercentage" value="False" />
+																	  
+                          <Property name="HeightPercentage" value="False" />
+                          <Property name="ConstrainProportions" value="True" />
+																			  
+                          <Property name="ForceAspect" value="False" />
+                          <Property name="Anchor" value="False" />
+                          <Property name="AnchorPercent" value="False" />
+                          <Property name="SameLine" value="True" />
                           <Property name="SlowCursorOnHover" value="False" />
-                          <Property name="MaxWidth" value="0" />
-                          <Property name="VROverrides" />
-                          <Property name="AccessibleOverrides" />
                         </Property>
                       </Property>
                       <Property name="Style" value="TkNGuiGraphicStyle.xml">
                         <Property name="Default" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="6" />
                           <Property name="Colour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
@@ -392,41 +397,41 @@ return [[
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="SolidColour" value="False" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="GradientOffsetPercent" value="False" />
                           <Property name="GradientColour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
                             <Property name="B" value="0" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
                           <Property name="StrokeGradientColour" value="Colour.xml">
                             <Property name="R" value="1" />
                             <Property name="G" value="1" />
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
+                          <Property name="PaddingX" value="0" />
+                          <Property name="PaddingY" value="0" />
+                          <Property name="MarginX" value="0" />
+                          <Property name="MarginY" value="6" />
+                          <Property name="GradientStartOffset" value="0" />
+                          <Property name="GradientEndOffset" value="0" />
+                          <Property name="CornerRadius" value="0" />
+                          <Property name="StrokeSize" value="0" />
+                          <Property name="Image" value="0" />
+                          <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
+                          <Property name="StrokeGradientOffset" value="0" />
+                          <Property name="StrokeGradientFeather" value="0" />
+                          <Property name="Shape" value="Rectangle" />
+                          <Property name="Gradient" value="None" />
+                          <Property name="SolidColour" value="False" />
+                          <Property name="HasDropShadow" value="False" />
+                          <Property name="HasOuterGradient" value="False" />
+                          <Property name="HasInnerGradient" value="False" />
+                          <Property name="GradientOffsetPercent" value="False" />
+                          <Property name="StrokeGradient" value="False" />
                         </Property>
                         <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="6" />
                           <Property name="Colour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
@@ -445,41 +450,41 @@ return [[
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="SolidColour" value="False" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="GradientOffsetPercent" value="False" />
                           <Property name="GradientColour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
                             <Property name="B" value="0" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
                           <Property name="StrokeGradientColour" value="Colour.xml">
                             <Property name="R" value="1" />
                             <Property name="G" value="1" />
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
+                          <Property name="PaddingX" value="0" />
+                          <Property name="PaddingY" value="0" />
+                          <Property name="MarginX" value="0" />
+                          <Property name="MarginY" value="6" />
+                          <Property name="GradientStartOffset" value="0" />
+                          <Property name="GradientEndOffset" value="0" />
+                          <Property name="CornerRadius" value="0" />
+                          <Property name="StrokeSize" value="0" />
+                          <Property name="Image" value="0" />
+                          <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
+                          <Property name="StrokeGradientOffset" value="0" />
+                          <Property name="StrokeGradientFeather" value="0" />
+                          <Property name="Shape" value="Rectangle" />
+                          <Property name="Gradient" value="None" />
+                          <Property name="SolidColour" value="False" />
+                          <Property name="HasDropShadow" value="False" />
+                          <Property name="HasOuterGradient" value="False" />
+                          <Property name="HasInnerGradient" value="False" />
+                          <Property name="GradientOffsetPercent" value="False" />
+                          <Property name="StrokeGradient" value="False" />
                         </Property>
                         <Property name="Active" value="TkNGuiGraphicStyleData.xml">
-                          <Property name="PaddingX" value="0" />
-                          <Property name="PaddingY" value="0" />
-                          <Property name="MarginX" value="0" />
-                          <Property name="MarginY" value="6" />
                           <Property name="Colour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
@@ -498,48 +503,39 @@ return [[
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="Shape" value="Rectangle" />
-                          <Property name="SolidColour" value="False" />
-                          <Property name="HasDropShadow" value="False" />
-                          <Property name="HasOuterGradient" value="False" />
-                          <Property name="HasInnerGradient" value="False" />
-                          <Property name="Gradient" value="None" />
-                          <Property name="GradientStartOffset" value="0" />
-                          <Property name="GradientEndOffset" value="0" />
-                          <Property name="GradientOffsetPercent" value="False" />
                           <Property name="GradientColour" value="Colour.xml">
                             <Property name="R" value="0" />
                             <Property name="G" value="0" />
                             <Property name="B" value="0" />
                             <Property name="A" value="1" />
                           </Property>
-                          <Property name="CornerRadius" value="0" />
-                          <Property name="StrokeSize" value="0" />
-                          <Property name="Image" value="0" />
-                          <Property name="Icon" value="0" />
-                          <Property name="Desaturation" value="0" />
-                          <Property name="StrokeGradient" value="False" />
-                          <Property name="StrokeGradientOffset" value="0" />
-                          <Property name="StrokeGradientFeather" value="0" />
                           <Property name="StrokeGradientColour" value="Colour.xml">
                             <Property name="R" value="1" />
                             <Property name="G" value="1" />
                             <Property name="B" value="1" />
                             <Property name="A" value="1" />
                           </Property>
-                        </Property>
-                        <Property name="InheritStyleFromParentLayer" value="False" />
-                        <Property name="HighlightTime" value="0.1" />
-                        <Property name="HighlightScale" value="1" />
-                        <Property name="GlobalFade" value="1" />
-                        <Property name="Animate" value="SimpleWipe" />
-                        <Property name="AnimTime" value="0.5" />
-                        <Property name="AnimSplit" value="0.4" />
-                        <Property name="AnimCurve1" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
-                        </Property>
-                        <Property name="AnimCurve2" value="TkCurveType.xml">
-                          <Property name="Curve" value="Linear" />
+                          <Property name="PaddingX" value="0" />
+                          <Property name="PaddingY" value="0" />
+                          <Property name="MarginX" value="0" />
+                          <Property name="MarginY" value="6" />
+                          <Property name="GradientStartOffset" value="0" />
+                          <Property name="GradientEndOffset" value="0" />
+                          <Property name="CornerRadius" value="0" />
+                          <Property name="StrokeSize" value="0" />
+                          <Property name="Image" value="0" />
+                          <Property name="Icon" value="0" />
+                          <Property name="Desaturation" value="0" />
+                          <Property name="StrokeGradientOffset" value="0" />
+                          <Property name="StrokeGradientFeather" value="0" />
+                          <Property name="Shape" value="Rectangle" />
+                          <Property name="Gradient" value="None" />
+                          <Property name="SolidColour" value="False" />
+                          <Property name="HasDropShadow" value="False" />
+                          <Property name="HasOuterGradient" value="False" />
+                          <Property name="HasInnerGradient" value="False" />
+                          <Property name="GradientOffsetPercent" value="False" />
+                          <Property name="StrokeGradient" value="False" />
                         </Property>
                         <Property name="CustomMinStart" value="Vector2f.xml">
                           <Property name="x" value="1" />
@@ -549,6 +545,19 @@ return [[
                           <Property name="x" value="1" />
                           <Property name="y" value="1" />
                         </Property>
+                        <Property name="HighlightTime" value="0.1" />
+                        <Property name="HighlightScale" value="1" />
+                        <Property name="GlobalFade" value="1" />
+                        <Property name="AnimTime" value="0.5" />
+                        <Property name="AnimSplit" value="0.4" />
+                        <Property name="AnimCurve1" value="TkCurveType.xml">
+                          <Property name="Curve" value="Linear" />
+                        </Property>
+                        <Property name="AnimCurve2" value="TkCurveType.xml">
+                          <Property name="Curve" value="Linear" />
+                        </Property>
+                        <Property name="Animate" value="SimpleWipe" />
+                        <Property name="InheritStyleFromParentLayer" value="False" />
                       </Property>
                       <Property name="Image" value="" />
                       <Property name="Children" />
@@ -595,8 +604,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_BATCHNAME"]			= "~~~~BuildFrame_Comp.pak",
 ["MOD_AUTHOR"]				= "WinderTP, Babscoole",
 ["MOD_DESCRIPTION"]			= "Recategorisation Trimming Utility for Build Menu",
-["NMS_VERSION"]				= "3.98",
-["AMUMSS_SUPPRESS_MSG"] = "SUPPRESS_FLOOR_DIV",
+["NMS_VERSION"]				= "",
+["AMUMSS_SUPPRESS_MSG"] 	= "SUPPRESS_FLOOR_DIV",
 ["MODIFICATIONS"] 			= 
 	{
 		{

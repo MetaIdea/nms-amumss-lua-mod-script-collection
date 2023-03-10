@@ -682,33 +682,35 @@ DEBUG_TEXT = false
 
 -- EXML DATA BLOCKS
 COLOUR_START =  [[
-		<!--BuildFrame-->
-        <Property value="GcNGuiSpacingData.xml">
+		<!--BuildFrame--><Property value="GcNGuiSpacingData.xml">
           <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+              <Property name="NGuiForcedStyle" value="None" />
+            </Property>
             <Property name="Layout" value="GcNGuiLayoutData.xml">
+              <Property name="VROverrides" />
+              <Property name="AccessibleOverrides" />
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="50" />
-              <Property name="WidthPercentage" value="False" />
               <Property name="Height" value="6" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
-              <Property name="ForceAspect" value="False" />
-              <Property name="Anchor" value="False" />
-              <Property name="AnchorPercent" value="False" />
-              <Property name="SameLine" value="False" />
+              <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
+              <Property name="WidthPercentage" value="False" />
+              <Property name="HeightPercentage" value="False" />
+              <Property name="ConstrainProportions" value="False" />
+              <Property name="ForceAspect" value="False" />
+              <Property name="Anchor" value="False" />
+              <Property name="AnchorPercent" value="False" />
+              <Property name="SameLine" value="False" />
               <Property name="SlowCursorOnHover" value="False" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="VROverrides" />
-              <Property name="AccessibleOverrides" />
             </Property>
           </Property>
         </Property>
@@ -717,27 +719,30 @@ COLOUR_START =  [[
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+              <Property name="NGuiForcedStyle" value="None" />
+            </Property>
             <Property name="Layout" value="GcNGuiLayoutData.xml">
+              <Property name="VROverrides" />
+              <Property name="AccessibleOverrides" />
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="0" />
-              <Property name="WidthPercentage" value="False" />
               <Property name="Height" value="5" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
-              <Property name="ForceAspect" value="False" />
-              <Property name="Anchor" value="False" />
-              <Property name="AnchorPercent" value="False" />
-              <Property name="SameLine" value="False" />
+              <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
+              <Property name="WidthPercentage" value="False" />
+              <Property name="HeightPercentage" value="False" />
+              <Property name="ConstrainProportions" value="False" />
+              <Property name="ForceAspect" value="False" />
+              <Property name="Anchor" value="False" />
+              <Property name="AnchorPercent" value="False" />
+              <Property name="SameLine" value="False" />
               <Property name="SlowCursorOnHover" value="False" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="VROverrides" />
-              <Property name="AccessibleOverrides" />
             </Property>
           </Property>
         </Property>
@@ -748,27 +753,30 @@ SPACING = [[
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+              <Property name="NGuiForcedStyle" value="None" />
+            </Property>
             <Property name="Layout" value="GcNGuiLayoutData.xml">
+              <Property name="VROverrides" />
+              <Property name="AccessibleOverrides" />
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="5" />
-              <Property name="WidthPercentage" value="False" />
               <Property name="Height" value="50" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
-              <Property name="ForceAspect" value="False" />
-              <Property name="Anchor" value="False" />
-              <Property name="AnchorPercent" value="False" />
-              <Property name="SameLine" value="True" />
+              <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
+              <Property name="WidthPercentage" value="False" />
+              <Property name="HeightPercentage" value="False" />
+              <Property name="ConstrainProportions" value="False" />
+              <Property name="ForceAspect" value="False" />
+              <Property name="Anchor" value="False" />
+              <Property name="AnchorPercent" value="False" />
+              <Property name="SameLine" value="True" />
               <Property name="SlowCursorOnHover" value="False" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="VROverrides" />
-              <Property name="AccessibleOverrides" />
             </Property>
           </Property>
         </Property>
@@ -779,27 +787,30 @@ LINE_BREAK = [[
             <Property name="ID" value="THIS ONE" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+              <Property name="NGuiForcedStyle" value="None" />
+            </Property>
             <Property name="Layout" value="GcNGuiLayoutData.xml">
+              <Property name="VROverrides" />
+              <Property name="AccessibleOverrides" />
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="7" />
-              <Property name="WidthPercentage" value="False" />
-              <Property name="Height" value="2" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
+              <Property name="Height" value="12" />
               <Property name="ConstrainAspect" value="1" />
-              <Property name="ForceAspect" value="False" />
-              <Property name="Anchor" value="False" />
-              <Property name="AnchorPercent" value="False" />
-              <Property name="SameLine" value="False" />
+              <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
+              <Property name="WidthPercentage" value="False" />
+              <Property name="HeightPercentage" value="False" />
+              <Property name="ConstrainProportions" value="False" />
+              <Property name="ForceAspect" value="False" />
+              <Property name="Anchor" value="False" />
+              <Property name="AnchorPercent" value="False" />
+              <Property name="SameLine" value="False" />
               <Property name="SlowCursorOnHover" value="False" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="VROverrides" />
-              <Property name="AccessibleOverrides" />
             </Property>
           </Property>
         </Property>
@@ -808,27 +819,30 @@ LINE_BREAK = [[
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+              <Property name="NGuiForcedStyle" value="None" />
+            </Property>
             <Property name="Layout" value="GcNGuiLayoutData.xml">
+              <Property name="VROverrides" />
+              <Property name="AccessibleOverrides" />
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="0" />
-              <Property name="WidthPercentage" value="False" />
-              <Property name="Height" value="2" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
+              <Property name="Height" value="50" />
               <Property name="ConstrainAspect" value="1" />
-              <Property name="ForceAspect" value="False" />
-              <Property name="Anchor" value="False" />
-              <Property name="AnchorPercent" value="False" />
-              <Property name="SameLine" value="False" />
+              <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
+              <Property name="WidthPercentage" value="False" />
+              <Property name="HeightPercentage" value="False" />
+              <Property name="ConstrainProportions" value="False" />
+              <Property name="ForceAspect" value="False" />
+              <Property name="Anchor" value="False" />
+              <Property name="AnchorPercent" value="False" />
+              <Property name="SameLine" value="False" />
               <Property name="SlowCursorOnHover" value="False" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="VROverrides" />
-              <Property name="AccessibleOverrides" />
             </Property>
           </Property>
         </Property>
@@ -951,35 +965,34 @@ return [[
             <Property name="ID" value="OPTION]] .. NUM .. [[" />
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="False" />
+            <Property name="ForcedStyle" value="TkNGuiForcedStyle.xml">
+              <Property name="NGuiForcedStyle" value="None" />
+            </Property>
             <Property name="Layout" value="GcNGuiLayoutData.xml">
+              <Property name="VROverrides" />
+              <Property name="AccessibleOverrides" />
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="70" />
-              <Property name="WidthPercentage" value="False" />
               <Property name="Height" value="50" />
-              <Property name="HeightPercentage" value="False" />
-              <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
-              <Property name="ForceAspect" value="False" />
-              <Property name="Anchor" value="False" />
-              <Property name="AnchorPercent" value="False" />
-              <Property name="SameLine" value="True" />
+              <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
                 <Property name="Vertical" value="Top" />
                 <Property name="Horizontal" value="Left" />
               </Property>
+              <Property name="WidthPercentage" value="False" />
+              <Property name="HeightPercentage" value="False" />
+              <Property name="ConstrainProportions" value="False" />
+              <Property name="ForceAspect" value="False" />
+              <Property name="Anchor" value="False" />
+              <Property name="AnchorPercent" value="False" />
+              <Property name="SameLine" value="True" />
               <Property name="SlowCursorOnHover" value="False" />
-              <Property name="MaxWidth" value="0" />
-              <Property name="VROverrides" />
-              <Property name="AccessibleOverrides" />
             </Property>
           </Property>
           <Property name="Style" value="TkNGuiGraphicStyle.xml">
             <Property name="Default" value="TkNGuiGraphicStyleData.xml">
-              <Property name="PaddingX" value="0" />
-              <Property name="PaddingY" value="0" />
-              <Property name="MarginX" value="0" />
-              <Property name="MarginY" value="0" />
               <Property name="Colour" value="Colour.xml">
                 <Property name="R" value="0.118" />
                 <Property name="G" value="0.212" />
@@ -998,41 +1011,41 @@ return [[
                 <Property name="B" value="1" />
                 <Property name="A" value="1" />
               </Property>
-              <Property name="Shape" value="Rectangle" />
-              <Property name="SolidColour" value="False" />
-              <Property name="HasDropShadow" value="False" />
-              <Property name="HasOuterGradient" value="False" />
-              <Property name="HasInnerGradient" value="False" />
-              <Property name="Gradient" value="None" />
-              <Property name="GradientStartOffset" value="0" />
-              <Property name="GradientEndOffset" value="0" />
-              <Property name="GradientOffsetPercent" value="False" />
               <Property name="GradientColour" value="Colour.xml">
                 <Property name="R" value="0" />
                 <Property name="G" value="0" />
                 <Property name="B" value="0" />
                 <Property name="A" value="1" />
               </Property>
-              <Property name="CornerRadius" value="0" />
-              <Property name="StrokeSize" value="1" />
-              <Property name="Image" value="0" />
-              <Property name="Icon" value="0" />
-              <Property name="Desaturation" value="0" />
-              <Property name="StrokeGradient" value="True" />
-              <Property name="StrokeGradientOffset" value="0" />
-              <Property name="StrokeGradientFeather" value="0" />
               <Property name="StrokeGradientColour" value="Colour.xml">
                 <Property name="R" value="1" />
                 <Property name="G" value="1" />
                 <Property name="B" value="1" />
                 <Property name="A" value="1" />
               </Property>
-            </Property>
-            <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
               <Property name="PaddingX" value="0" />
               <Property name="PaddingY" value="0" />
               <Property name="MarginX" value="0" />
               <Property name="MarginY" value="0" />
+              <Property name="GradientStartOffset" value="0" />
+              <Property name="GradientEndOffset" value="0" />
+              <Property name="CornerRadius" value="0" />
+              <Property name="StrokeSize" value="1" />
+              <Property name="Image" value="0" />
+              <Property name="Icon" value="0" />
+              <Property name="Desaturation" value="0" />
+              <Property name="StrokeGradientOffset" value="0" />
+              <Property name="StrokeGradientFeather" value="0" />
+              <Property name="Shape" value="Rectangle" />
+              <Property name="Gradient" value="None" />
+              <Property name="SolidColour" value="False" />
+              <Property name="HasDropShadow" value="False" />
+              <Property name="HasOuterGradient" value="False" />
+              <Property name="HasInnerGradient" value="False" />
+              <Property name="GradientOffsetPercent" value="False" />
+              <Property name="StrokeGradient" value="True" />
+            </Property>
+            <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
               <Property name="Colour" value="Colour.xml">
                 <Property name="R" value="0.118" />
                 <Property name="G" value="0.212" />
@@ -1051,41 +1064,41 @@ return [[
                 <Property name="B" value="1" />
                 <Property name="A" value="1" />
               </Property>
-              <Property name="Shape" value="Rectangle" />
-              <Property name="SolidColour" value="False" />
-              <Property name="HasDropShadow" value="False" />
-              <Property name="HasOuterGradient" value="False" />
-              <Property name="HasInnerGradient" value="False" />
-              <Property name="Gradient" value="None" />
-              <Property name="GradientStartOffset" value="0" />
-              <Property name="GradientEndOffset" value="0" />
-              <Property name="GradientOffsetPercent" value="False" />
               <Property name="GradientColour" value="Colour.xml">
                 <Property name="R" value="0" />
                 <Property name="G" value="0" />
                 <Property name="B" value="0" />
                 <Property name="A" value="1" />
               </Property>
-              <Property name="CornerRadius" value="0" />
-              <Property name="StrokeSize" value="1" />
-              <Property name="Image" value="0" />
-              <Property name="Icon" value="0" />
-              <Property name="Desaturation" value="0" />
-              <Property name="StrokeGradient" value="True" />
-              <Property name="StrokeGradientOffset" value="0" />
-              <Property name="StrokeGradientFeather" value="0" />
               <Property name="StrokeGradientColour" value="Colour.xml">
                 <Property name="R" value="1" />
                 <Property name="G" value="1" />
                 <Property name="B" value="1" />
                 <Property name="A" value="1" />
               </Property>
-            </Property>
-            <Property name="Active" value="TkNGuiGraphicStyleData.xml">
               <Property name="PaddingX" value="0" />
               <Property name="PaddingY" value="0" />
               <Property name="MarginX" value="0" />
               <Property name="MarginY" value="0" />
+              <Property name="GradientStartOffset" value="0" />
+              <Property name="GradientEndOffset" value="0" />
+              <Property name="CornerRadius" value="0" />
+              <Property name="StrokeSize" value="1" />
+              <Property name="Image" value="0" />
+              <Property name="Icon" value="0" />
+              <Property name="Desaturation" value="0" />
+              <Property name="StrokeGradientOffset" value="0" />
+              <Property name="StrokeGradientFeather" value="0" />
+              <Property name="Shape" value="Rectangle" />
+              <Property name="Gradient" value="None" />
+              <Property name="SolidColour" value="False" />
+              <Property name="HasDropShadow" value="False" />
+              <Property name="HasOuterGradient" value="False" />
+              <Property name="HasInnerGradient" value="False" />
+              <Property name="GradientOffsetPercent" value="False" />
+              <Property name="StrokeGradient" value="True" />
+            </Property>
+            <Property name="Active" value="TkNGuiGraphicStyleData.xml">
               <Property name="Colour" value="Colour.xml">
                 <Property name="R" value="0.118" />
                 <Property name="G" value="0.212" />
@@ -1104,48 +1117,39 @@ return [[
                 <Property name="B" value="1" />
                 <Property name="A" value="1" />
               </Property>
-              <Property name="Shape" value="Rectangle" />
-              <Property name="SolidColour" value="False" />
-              <Property name="HasDropShadow" value="False" />
-              <Property name="HasOuterGradient" value="False" />
-              <Property name="HasInnerGradient" value="False" />
-              <Property name="Gradient" value="None" />
-              <Property name="GradientStartOffset" value="0" />
-              <Property name="GradientEndOffset" value="0" />
-              <Property name="GradientOffsetPercent" value="False" />
               <Property name="GradientColour" value="Colour.xml">
                 <Property name="R" value="0" />
                 <Property name="G" value="0" />
                 <Property name="B" value="0" />
                 <Property name="A" value="1" />
               </Property>
-              <Property name="CornerRadius" value="0" />
-              <Property name="StrokeSize" value="1" />
-              <Property name="Image" value="0" />
-              <Property name="Icon" value="0" />
-              <Property name="Desaturation" value="0" />
-              <Property name="StrokeGradient" value="True" />
-              <Property name="StrokeGradientOffset" value="0" />
-              <Property name="StrokeGradientFeather" value="0" />
               <Property name="StrokeGradientColour" value="Colour.xml">
                 <Property name="R" value="1" />
                 <Property name="G" value="1" />
                 <Property name="B" value="1" />
                 <Property name="A" value="1" />
               </Property>
-            </Property>
-            <Property name="InheritStyleFromParentLayer" value="False" />
-            <Property name="HighlightTime" value="0.1" />
-            <Property name="HighlightScale" value="1" />
-            <Property name="GlobalFade" value="1" />
-            <Property name="Animate" value="None" />
-            <Property name="AnimTime" value="0.5" />
-            <Property name="AnimSplit" value="0.4" />
-            <Property name="AnimCurve1" value="TkCurveType.xml">
-              <Property name="Curve" value="Linear" />
-            </Property>
-            <Property name="AnimCurve2" value="TkCurveType.xml">
-              <Property name="Curve" value="Linear" />
+              <Property name="PaddingX" value="0" />
+              <Property name="PaddingY" value="0" />
+              <Property name="MarginX" value="0" />
+              <Property name="MarginY" value="0" />
+              <Property name="GradientStartOffset" value="0" />
+              <Property name="GradientEndOffset" value="0" />
+              <Property name="CornerRadius" value="0" />
+              <Property name="StrokeSize" value="1" />
+              <Property name="Image" value="0" />
+              <Property name="Icon" value="0" />
+              <Property name="Desaturation" value="0" />
+              <Property name="StrokeGradientOffset" value="0" />
+              <Property name="StrokeGradientFeather" value="0" />
+              <Property name="Shape" value="Rectangle" />
+              <Property name="Gradient" value="None" />
+              <Property name="SolidColour" value="False" />
+              <Property name="HasDropShadow" value="False" />
+              <Property name="HasOuterGradient" value="False" />
+              <Property name="HasInnerGradient" value="False" />
+              <Property name="GradientOffsetPercent" value="False" />
+              <Property name="StrokeGradient" value="True" />
             </Property>
             <Property name="CustomMinStart" value="Vector2f.xml">
               <Property name="x" value="1" />
@@ -1155,6 +1159,19 @@ return [[
               <Property name="x" value="1" />
               <Property name="y" value="1" />
             </Property>
+            <Property name="HighlightTime" value="0.1" />
+            <Property name="HighlightScale" value="1" />
+            <Property name="GlobalFade" value="1" />
+            <Property name="AnimTime" value="0.5" />
+            <Property name="AnimSplit" value="0.4" />
+            <Property name="AnimCurve1" value="TkCurveType.xml">
+              <Property name="Curve" value="Linear" />
+            </Property>
+            <Property name="AnimCurve2" value="TkCurveType.xml">
+              <Property name="Curve" value="Linear" />
+            </Property>
+            <Property name="Animate" value="None" />
+            <Property name="InheritStyleFromParentLayer" value="False" />
           </Property>
           <Property name="Image" value="" />
           <Property name="Children" />
