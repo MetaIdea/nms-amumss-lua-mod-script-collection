@@ -1,3 +1,10 @@
+Author = "Mjstral,Gumsk"
+ModName = "gShip Custom Summoner"
+ModNameSub = "C class"
+BaseDescription = "Summons new ship models from gShip Custom Ships"
+GameVersion = "411"
+ModVersion = "b"
+
 ShipInfo = 	{
 				{"GOLDENVECTOR",		"Golden Vector",			"1"},
 				{"SERENITY",			"Serenity",					"3"},
@@ -71,8 +78,6 @@ ShipInfo = 	{
 				{"IRONBOUNDRELIC",		"Ironbound Relic",			"66"}, --SPACEGYROSCOPE
 			}
 
-FilePath = "MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD.SCENE.MBIN"
-
 NewRewardEntry = ""
 FinalRewardEntries = ""
 NewEmoteEntry = ""
@@ -82,9 +87,7 @@ FinalPCAnimEntries = ""
 NewPCTriggerEntry = ""
 FinalPCTriggerEntries = ""
 
-
 for i = 1,#ShipInfo do
-
 	NewRewardEntry = [[
 		<Property value="GcGenericRewardTableEntry.xml">
 		  <Property name="Id" value="]]..ShipInfo[i][1]..[[" />
@@ -96,7 +99,7 @@ for i = 1,#ShipInfo do
 				<Property name="PercentageChance" value="100" />
 				<Property name="Reward" value="GcRewardSpecificShip.xml">
 				  <Property name="ShipResource" value="GcResourceElement.xml">
-					<Property name="Filename" value="]]..FilePath..[[" />
+					<Property name="Filename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD.SCENE.MBIN" />
 					<Property name="ResHandle" value="GcResource.xml">
 					  <Property name="ResourceID" value="0" />
 					</Property>
@@ -110,10 +113,10 @@ for i = 1,#ShipInfo do
 					</Property>
 				  </Property>
 				  <Property name="ShipLayout" value="GcInventoryLayout.xml">
-					<Property name="Slots" value="20" />
+					<Property name="Slots" value="60" />
 					<Property name="Seed" value="GcSeed.xml">
 					  <Property name="Seed" value="1" />
-					  <Property name="UseSeedValue" value="True" />
+					  <Property name="UseSeedValue" value="False" />
 					</Property>
 					<Property name="Level" value="1" />
 				  </Property>
@@ -123,7 +126,7 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="LAUNCHER" />
+						<Property name="Id" value="LAUNCHER_SPEC" />
 						<Property name="Amount" value="200" />
 						<Property name="MaxAmount" value="200" />
 						<Property name="DamageFactor" value="0" />
@@ -137,9 +140,37 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="SHIPJUMP1" />
+						<Property name="Id" value="SHIPJUMP_SPEC" />
 						<Property name="Amount" value="200" />
 						<Property name="MaxAmount" value="200" />
+						<Property name="DamageFactor" value="0" />
+						<Property name="FullyInstalled" value="True" />
+						<Property name="Index" value="GcInventoryIndex.xml">
+						  <Property name="X" value="-1" />
+						  <Property name="Y" value="-1" />
+						</Property>
+					  </Property>
+					  <Property value="GcInventoryElement.xml">
+						<Property name="Type" value="GcInventoryType.xml">
+						  <Property name="InventoryType" value="Technology" />
+						</Property>
+						<Property name="Id" value="PHOTONIX_CORE" />
+						<Property name="Amount" value="-1" />
+						<Property name="MaxAmount" value="100" />
+						<Property name="DamageFactor" value="0" />
+						<Property name="FullyInstalled" value="True" />
+						<Property name="Index" value="GcInventoryIndex.xml">
+						  <Property name="X" value="-1" />
+						  <Property name="Y" value="-1" />
+						</Property>
+					  </Property>
+					  <Property value="GcInventoryElement.xml">
+						<Property name="Type" value="GcInventoryType.xml">
+						  <Property name="InventoryType" value="Technology" />
+						</Property>
+						<Property name="Id" value="SOLAR_SAIL" />
+						<Property name="Amount" value="-1" />
+						<Property name="MaxAmount" value="100" />
 						<Property name="DamageFactor" value="0" />
 						<Property name="FullyInstalled" value="True" />
 						<Property name="Index" value="GcInventoryIndex.xml">
@@ -165,7 +196,7 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="HYPERDRIVE" />
+						<Property name="Id" value="HYPERDRIVE_SPEC" />
 						<Property name="Amount" value="120" />
 						<Property name="MaxAmount" value="120" />
 						<Property name="DamageFactor" value="0" />
@@ -179,8 +210,50 @@ for i = 1,#ShipInfo do
 						<Property name="Type" value="GcInventoryType.xml">
 						  <Property name="InventoryType" value="Technology" />
 						</Property>
-						<Property name="Id" value="SHIPGUN1" />
+						<Property name="Id" value="HDRIVEBOOST3" />
+						<Property name="Amount" value="-1" />
+						<Property name="MaxAmount" value="100" />
+						<Property name="DamageFactor" value="0" />
+						<Property name="FullyInstalled" value="True" />
+						<Property name="Index" value="GcInventoryIndex.xml">
+						  <Property name="X" value="-1" />
+						  <Property name="Y" value="-1" />
+						</Property>
+					  </Property>
+					  <Property value="GcInventoryElement.xml">
+						<Property name="Type" value="GcInventoryType.xml">
+						  <Property name="InventoryType" value="Technology" />
+						</Property>
+						<Property name="Id" value="SHIPSHOTGUN" />
 						<Property name="Amount" value="100" />
+						<Property name="MaxAmount" value="100" />
+						<Property name="DamageFactor" value="0" />
+						<Property name="FullyInstalled" value="True" />
+						<Property name="Index" value="GcInventoryIndex.xml">
+						  <Property name="X" value="-1" />
+						  <Property name="Y" value="-1" />
+						</Property>
+					  </Property>
+					  <Property value="GcInventoryElement.xml">
+						<Property name="Type" value="GcInventoryType.xml">
+						  <Property name="InventoryType" value="Technology" />
+						</Property>
+						<Property name="Id" value="T_SHIP_GREEN" />
+						<Property name="Amount" value="-1" />
+						<Property name="MaxAmount" value="100" />
+						<Property name="DamageFactor" value="0" />
+						<Property name="FullyInstalled" value="True" />
+						<Property name="Index" value="GcInventoryIndex.xml">
+						  <Property name="X" value="-1" />
+						  <Property name="Y" value="-1" />
+						</Property>
+					  </Property>
+					  <Property value="GcInventoryElement.xml">
+						<Property name="Type" value="GcInventoryType.xml">
+						  <Property name="InventoryType" value="Technology" />
+						</Property>
+						<Property name="Id" value="SHIPSCAN_ECON" />
+						<Property name="Amount" value="-1" />
 						<Property name="MaxAmount" value="100" />
 						<Property name="DamageFactor" value="0" />
 						<Property name="FullyInstalled" value="True" />
@@ -192,7 +265,7 @@ for i = 1,#ShipInfo do
 					</Property>
 					<Property name="ValidSlotIndices" />
 					<Property name="Class" value="GcInventoryClass.xml">
-					  <Property name="InventoryClass" value="C" />
+					  <Property name="InventoryClass" value="S" />
 					</Property>
 					<Property name="StackSizeGroup" value="GcInventoryStackSizeGroup.xml">
                       <Property name="InventoryStackSizeGroup" value="Default" />
@@ -248,8 +321,8 @@ for i = 1,#ShipInfo do
 		  <Property name="PetCommandIcon" value="TkTextureResource.xml">
 			<Property name="Filename" value="" />
 			<Property name="ResHandle" value="GcResource.xml">
-              <Property name="ResourceID" value="0" />
-            </Property>
+			  <Property name="ResourceID" value="0" />
+			</Property>
 		  </Property>
 		</Property>
       ]]
@@ -258,12 +331,17 @@ for i = 1,#ShipInfo do
 	NewPCAnimEntry = [[
         <Property value="TkAnimationData.xml">
           <Property name="Anim" value="]]..ShipInfo[i][1]..[[" />
-          <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
-          <Property name="AnimType" value="OneShot" />
+          <Property name="AdditiveBaseAnim" value="" />
+		  <Property name="Filename" value="MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.MBIN" />
+          <Property name="StartNode" value="" />
+		  <Property name="ExtraStartNodes" />
+		  <Property name="GameData" value="TkAnimationGameData.xml">
+            <Property name="RootMotionEnabled" value="False" />
+            <Property name="BlockPlayerMovement" value="False" />
+            <Property name="BlockPlayerWeapon" value="Unblocked" />
+          </Property>
           <Property name="FrameStart" value="0" />
           <Property name="FrameEnd" value="0" />
-          <Property name="StartNode" value="" />
-          <Property name="ExtraStartNodes" />
           <Property name="Priority" value="0" />
           <Property name="OffsetMin" value="0" />
           <Property name="OffsetMax" value="0" />
@@ -271,17 +349,13 @@ for i = 1,#ShipInfo do
           <Property name="Speed" value="1" />
           <Property name="ActionStartFrame" value="0" />
           <Property name="ActionFrame" value="-1" />
+		  <Property name="AdditiveBaseFrame" value="0" />
+		  <Property name="AnimType" value="OneShot" />
           <Property name="CreatureSize" value="AllSizes" />
           <Property name="Additive" value="False" />
           <Property name="Mirrored" value="False" />
           <Property name="Active" value="True" />
-          <Property name="AdditiveBaseAnim" value="" />
-          <Property name="AdditiveBaseFrame" value="0" />
-          <Property name="GameData" value="TkAnimationGameData.xml">
-            <Property name="RootMotionEnabled" value="False" />
-            <Property name="BlockPlayerMovement" value="False" />
-            <Property name="BlockPlayerWeapon" value="Unblocked" />
-          </Property>
+		  <Property name="Has30HzFrames" value="False" />
         </Property>
 	  ]]
 	FinalPCAnimEntries = FinalPCAnimEntries..NewPCAnimEntry
@@ -320,21 +394,17 @@ for i = 1,#ShipInfo do
 end
 
 
-
-
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "gShip Custom Summoner C 411a.pak",
-["MOD_AUTHOR"]				= "Gumsk, based almost entirely on Mjjstral's action LUAs",
-["MOD_DESCRIPTION"]			= "Adds summoning quick actions for gShip Custom ships",
-["NMS_VERSION"]				= "4.11",
-["MODIFICATIONS"] 			= 
-	{
+	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
+	["MOD_DESCRIPTION"]	= BaseDescription,
+	["MOD_AUTHOR"]		= Author,
+	["NMS_VERSION"]		= GameVersion,
+	["MODIFICATIONS"] 	= {
 		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{  
+			["MBIN_CHANGE_TABLE"] 	= {  
 				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\COMMON\PLAYER\PLAYERCHARACTER\PLAYERCHARACTER\ENTITIES\PLAYERCHARACTER.ENTITY.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "MODELS/COMMON/PLAYER/PLAYERCHARACTER/PLAYERCHARACTER/ENTITIES/PLAYERCHARACTER.ENTITY.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -350,9 +420,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\UI\EMOTEMENU.MBIN",
-					["EXML_CHANGE_TABLE"] 	= 
-					{
+					["MBIN_FILE_SOURCE"] 	= "METADATA/UI/EMOTEMENU.MBIN",
+					["EXML_CHANGE_TABLE"] 	= {
 						{
 							["PRECEDING_KEY_WORDS"] = {"Emotes"}, 
 								
@@ -361,7 +430,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 					}
 				},
 				{
-					["MBIN_FILE_SOURCE"] 	= "METADATA\REALITY\TABLES\REWARDTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] 	= "METADATA/REALITY/TABLES/REWARDTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
@@ -374,8 +443,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 			}
 		}
 	},
-["ADD_FILES"] = 
-	{
+	["ADD_FILES"] = {
 		{
 			["FILE_DESTINATION"] = [[MODELS/COMMON/PLAYER/PLAYERCHARACTER/ANIMS/EMOTES/NULL.ANIM.EXML]],
 			["FILE_CONTENT"] 	 = 
@@ -386,14 +454,14 @@ NMS_MOD_DEFINITION_CONTAINER =
   <Property name="NodeCount" value="0" />
   <Property name="NodeData" /> 
   <Property name="AnimFrameData">
-    <Property value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
+	<Property value="TkAnimNodeFrameData.xml">
+	<Property name="Rotations" />  
 	<Property name="Translations" /> 
 	<Property name="Scales" />
-    </Property>  
+	</Property>  
   </Property>	
   <Property name="StillFrameData" value="TkAnimNodeFrameData.xml">
-    <Property name="Rotations" />  
+	<Property name="Rotations" />  
 	<Property name="Translations" /> 
 	<Property name="Scales" />	  
  </Property>
