@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Stop The Clocks 2.3.pak", 
+["MOD_FILENAME"] 			= "Stop The Clocks 2.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.10",
+["NMS_VERSION"]				= "4.13",
 ["MOD_DESCRIPTION"]			= "This mods makes sun still",
 ["MODIFICATIONS"] 			= 
 	{
