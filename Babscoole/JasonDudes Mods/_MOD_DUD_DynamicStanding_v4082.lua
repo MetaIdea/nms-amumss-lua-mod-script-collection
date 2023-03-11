@@ -329,7 +329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             {
                                 {"Id", "RS_S2_S4M1",},
                                 {"Id", "RS_S5_S1M3",},
-                                {"Id", "RS_S9_S1M3"},
+                                -- {"Id", "RS_S9_S1M3"},
                                 {"Id", "RS_S10_S1M3"},
                                 {"Id", "RS_S11_S1M3"},
                             },

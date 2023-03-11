@@ -479,7 +479,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"},
 			{"Shield","FAST_STRONG"}}},
-		}
 		{ --PLANET_FLYBY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
 			["VALUE_CHANGE_TABLE"] = {
