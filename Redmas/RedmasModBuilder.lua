@@ -14,7 +14,7 @@
 -- -----------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "FANTASY_SYNTHESIS_PRESET"
+INIT = "SCIFI_FANTASY_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -902,7 +902,7 @@ FANTASY_PRESET ={
 ------------------------------------------------------------------------------------------
 
 CUSTOM_PRESET ={
-	["MODNAME"] = "UTOPIA-REVAMP-V6",
+	["MODNAME"] = "UTOPIA-REVAMP-V8",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
@@ -1090,18 +1090,18 @@ CUSTOM_PRESET ={
 --
 ------------------------------------------------------------------------------------------
 EUPHORIA_PRESET ={
-	["MODNAME"] = "EUPHORIA_GAME-OVERHAUL",
+	["MODNAME"] = "EPIC-FANTASY-ASSETS",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
         ["REDMAS_WATER_REFLECTIONS"] = "ON",
         ["SPACE_BLUR_FEATURE"] = "ON",
-        ["FILTERS_SWAP_FEATURE"] = "ON",
+        ["FILTERS_SWAP_FEATURE"] = "OFF",
         ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
-        ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- (REALISTIC / VANILLA / E3 )
-        ["SPACE_COLOURS_TYPE"] = "FANTASY", -- (REALISTIC / VANILLA / FANTASY )
-        ["ASTEROIDS_FIELDS_TYPE"] = "FANTASY", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
+        ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "REALISTIC", -- ("FANTASY" / "REALISTIC" / "GLUED")
         ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
         ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
         ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
@@ -1110,7 +1110,7 @@ EUPHORIA_PRESET ={
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
         ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name
         ["ENGINE_SPASH_SCREEN"] = "E-E3-1", --"E-E3-1"   or another img name
-        ["NMS_TITLE"] = "TITLE-EUPHORIA", --"TITLE-WAYPOINT"   or another img name
+        ["NMS_TITLE"] = "TITLE-ATLAS", --"TITLE-WAYPOINT"   or another img name
         ["MENU_SPLASH_SCREEN"] = "E3-RUINS", --"E3-RUINS"   or another img name
         ["TRANSPARENT_OPTIONS_MENU"] = "ON",
     },
@@ -1118,7 +1118,7 @@ EUPHORIA_PRESET ={
     {
 	    ["CAMERA_OVERHAUL_FEATURE"] = "ON",
 	    ["CAMERA_NO_SHAKE_FEATURE"] = "ON",
-	    ["CENTERED_CAMERA_FEATURE"] = "ON",
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
     },
     ["GAMEPLAY_FEATURES"] =
     {
@@ -1181,20 +1181,20 @@ EUPHORIA_PRESET ={
 			-- different each time the overhaul is generated ( x100 by default).
             ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
             ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
         },
         ["PLANETS_GENERATION_FEATURES"] =
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "140",
+                ["TERRAIN_HEIGHT_MAX"] = "800",
             },
             ["BIOMES_FEATURES"] =
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "ON",
+                ["FANTASY_BIOMES_FEATURE"] = "OFF",
                 ["SKY_BIOMES_FEATURE"] = "ON",
                 ["STORM_BIOMES_FEATURES"] = "ON",
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
@@ -5318,15 +5318,15 @@ SCIFI_FANTASY_PRESET ={
             {
                 ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "2222",
+                ["TERRAIN_HEIGHT_MAX"] = "822",
             },
             ["BIOMES_FEATURES"] =
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "OFF",
+                ["FANTASY_BIOMES_FEATURE"] = "ON",
                 ["SKY_BIOMES_FEATURE"] = "ON",
                 ["STORM_BIOMES_FEATURES"] = "ON",
-                ["GIANTS_BIOMES_FEATURE"] = "ON",
+                ["GIANTS_BIOMES_FEATURE"] = "OFF",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
                 ["MONTAINS_BIOMES_FEATURE"] = "ON",
                 ["CAVE_BIOMES_FEATURE"] = "ON",
@@ -22317,7 +22317,8 @@ end
 -- GENERATION OVERHAUL
 if GENERATION_OVERHAUL == "ON"
 then
-
+	val_TERRAIN_HEIGHT_MIN = tonumber(TERRAIN_HEIGHT_MAX) - 50
+	TERRAIN_HEIGHT_MIN = tostring (val_TERRAIN_HEIGHT_MIN)
 	if MODDED_TERRAIN_SHAPES_FEATURE == "EPIC_FANTASY" then
 		copyEXML("ON",[[TERRAINSHAPE\EPIC_FANTASY.EXML]],[[METADATA\SIMULATION\SOLARSYSTEM\VOXELGENERATORSETTINGS.EXML]])
 	end
@@ -22337,6 +22338,7 @@ then
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] =
 							{
+								{"MinHeight",TERRAIN_HEIGHT_MIN},
 								{"MaxHeight",TERRAIN_HEIGHT_MAX},
 								--{"Active","True"},
 							}

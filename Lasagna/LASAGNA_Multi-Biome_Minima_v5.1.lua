@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_Minima_v5.01.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Multi-Biome_Minima_v5.1.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with trevix code (LUA implementation by Babscoole)",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
