@@ -1,8 +1,3 @@
-----------------------------------------------------------------------------------------
---
--- ( Ctrl + S to save )
---
-------------------------------------------------------------------------------------------
 -- ************************************************************************************************************
 -- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
 --
@@ -21,7 +16,7 @@
 ------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "CUSTOM_PRESET"
+INIT = "REDMAS_E3PIC_FANTASY_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -915,7 +910,7 @@ FANTASY_PRESET ={
 ------------------------------------------------------------------------------------------
 
 CUSTOM_PRESET ={
-	["MODNAME"] = "UTOPIA-REVAMP-V9",
+	["MODNAME"] = "UTOPIA-REVAMP-V10",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
@@ -1020,12 +1015,12 @@ CUSTOM_PRESET ={
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "OFF",
-                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["SKY_BIOMES_FEATURE"] = "ON",
                 ["STORM_BIOMES_FEATURES"] = "OFF",
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
-                ["MONTAINS_BIOMES_FEATURE"] = "OFF",
-                ["CAVE_BIOMES_FEATURE"] = "OFF",
+                ["MONTAINS_BIOMES_FEATURE"] = "ON",
+                ["CAVE_BIOMES_FEATURE"] = "ON",
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] =
             {
@@ -2796,7 +2791,7 @@ REDMAS_CHALLENGE_MODE_PRESET ={
 ------------------------------------------------------------------------------------------
 
 REDMAS_E3PIC_FANTASY_PRESET ={
-	["MODNAME"] = "__EUPHORIA_WORLDS_GENERATION_extension",
+	["MODNAME"] = "__EUPHORIA_WORLDS_GENERATION_extension_v4",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -2893,14 +2888,14 @@ REDMAS_E3PIC_FANTASY_PRESET ={
             {
                 ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
-                ["TERRAIN_HEIGHT_MAX"] = "2222",
+                ["TERRAIN_HEIGHT_MAX"] = "222",
             },
             ["BIOMES_FEATURES"] =
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["SKY_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
-                ["STORM_BIOMES_FEATURES"] = "OFF", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
+                ["STORM_BIOMES_FEATURES"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["GIANTS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
                 ["MONTAINS_BIOMES_FEATURE"] = "ON", -- ( requires  ["E3_FANTASY_ASSETS_FEATURES"] = "ON", )
@@ -6496,7 +6491,7 @@ function generateRareRessourcesBiome(BIOME_PATH,TYPE,PATH,MAXSIZE)
 								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
 								<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 								<Property name="ID" value="STANDARD" />
-								<Property name="Coverage" value="0.1" />
+								<Property name="Coverage" value="0.01" />
 								<Property name="FlatDensity" value="1E-05" />
 								<Property name="SlopeDensity" value="0" />
 								<Property name="SlopeMultiplier" value="1" />
@@ -6507,10 +6502,10 @@ function generateRareRessourcesBiome(BIOME_PATH,TYPE,PATH,MAXSIZE)
 								<Property name="FadeOutOffsetDistance" value="0" />
 								<Property name="LodDistances">
 									<Property value="0" />
-									<Property value="200" />
-									<Property value="600" />
-									<Property value="1000" />
-									<Property value="1400" />
+									<Property value="2000" />
+									<Property value="6000" />
+									<Property value="10000" />
+									<Property value="14000" />
 								</Property>
 								</Property>
 								<Property name="QualityVariants" />
@@ -6607,7 +6602,7 @@ function generateRessourcesBiome(BIOME_PATH,TYPE,PATH,ROTATION)
 								<Property name="SwapPrimaryForRandomColour" value="False" />
 								<Property name="AlignToNormal" value="True" />
 								<Property name="MinScale" value="0.1" />
-								<Property name="MaxScale" value="2" />
+								<Property name="MaxScale" value="1" />
 								<Property name="MinScaleY" value="0.91" />
 								<Property name="MaxScaleY" value="1.15" />
 								<Property name="SlopeScaling" value="1" />
@@ -10381,7 +10376,7 @@ function generateMountainBiomes
         </Property>
         <Property name="AltResources" />
         <Property name="ExtraTileTypes" />
-        <Property name="Placement" value="JAMESPATCH" />
+        <Property name="Placement" value="CAVEGRASSCLUMP" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -10418,7 +10413,7 @@ function generateMountainBiomes
         <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
-          <Property name="Coverage" value="0.3" />
+          <Property name="Coverage" value="0.8" />
           <Property name="FlatDensity" value="0.2" />
           <Property name="SlopeDensity" value="0.7" />
           <Property name="SlopeMultiplier" value="2.8" />
@@ -20352,7 +20347,7 @@ if CREATURES_OVERHAUL == "ON" then
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"Speed", "0.5"},
+									{"Speed", "0.7"},
 								}
 							}
 						}
@@ -21320,25 +21315,25 @@ then
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "6"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "10",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/BENDYTREE01.SCENE.MBIN]],
@@ -21357,20 +21352,20 @@ then
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 
 			{
@@ -21407,25 +21402,25 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
@@ -21437,38 +21432,38 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "4"
 			},
 			--{
 			--	["PATH"] = [[MODELS\PLANETS\DESERT\TREES\TWISTEDTREE.SCENE.MBIN]],
@@ -21480,7 +21475,7 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGERING\HUGERINGTREE.SCENE.MBIN]],
@@ -21510,20 +21505,33 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "8"
+				["MAXSIZE"] = "2"
 			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "1"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE012.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "1"
+			},
+
 		}
 		GIANTLUSHTREES =
 		{
@@ -21550,50 +21558,50 @@ then
 				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGEFULL.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 				{
 				["PATH"] = [[MODELS/RGO/REDMASGROVE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMASGROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "4"
 			},
 
 			{
@@ -21660,8 +21668,10 @@ then
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "14"
 			},
+			
+			
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -21690,7 +21700,7 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
@@ -21702,32 +21712,33 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "24"
 			},
+			
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -21740,29 +21751,24 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "44"
 			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE03.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
-			},
+
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "14"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "14"
 			},
 			--{
 			--	["PATH"] = [[MODELS\PLANETS\DESERT\TREES\TWISTEDTREE.SCENE.MBIN]],
@@ -21775,7 +21781,7 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGERING\HUGERINGTREE.SCENE.MBIN]],
@@ -21787,7 +21793,7 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "10"
 			},
 		}
 
@@ -21797,7 +21803,7 @@ then
 				["PATH"] = [[MODELS\RGO\LARGEROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTGLOWINGSPIKE.SCENE.MBIN]],
@@ -21821,25 +21827,20 @@ then
 				["PATH"] = [[MODELS\RGO\PILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
-			{
-				["PATH"] = [[MODELS\RGO\FROZENUMBRELLA.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "0.2"
-			},
+		
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPILLAR.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "22"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
@@ -21847,71 +21848,50 @@ then
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "4"
 			},
-			{
-				["PATH"] = [[MODELS\RGO\LARGEROCK_1.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
-			},
+			
 			{
 				["PATH"] = [[MODELS\RGO\LARGEROCKS2.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGESTRANDS.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "14"
 			},
-			{
-				["PATH"] = [[MODELS\RGO\LARGESUMMEREGG.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "0.4"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\LARGETUBEROCK.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\LOWUMBRELLA.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
-			},
+
+
 			{
 				["PATH"] = [[MODELS\RGO\MONOLITH.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.94"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SMALLTENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "0.24"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\UNDERWATERBOULDER.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
+				["ROTATION"] = "1",
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
+				["ROTATION"] = "1",
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK02.SCENE.MBIN]],
@@ -21923,151 +21903,151 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEMOUNTAINROCKCLOSED.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEPLAINSBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLBOULDER05.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\LARGEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\LARGELUMP1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SCALLOPSHELL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SHELLSPIKES.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SPIKEYSHELL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOSSCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOUNTAINROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQLARGEROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESWIRLPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
@@ -22079,31 +22059,31 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "24"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\MEDIUMPROPS\LAVACRYSTALS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "21"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\CURVEDROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANTSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\RADIOACTIVETREE.SCENE.MBIN]],
@@ -22115,55 +22095,55 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCKSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\LARGETENTACLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\MEDIUMTENTACLEBLOB.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
@@ -22251,7 +22231,7 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS\RGO\GSTEAMVENT.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\STEAMVENT.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "4"
@@ -22341,22 +22321,10 @@ then
 				["MAXSIZE"] = "3"
 			},
 			{
-				["PATH"] = [[MODELS\RGO\SINGLEUMBRELLA.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "31"
-			},
-			{
 				["PATH"] = [[MODELS\RGO\SKULL.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
 				["MAXSIZE"] = "5"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\TURRETA.SCENE.MBIN]],
@@ -22368,7 +22336,7 @@ then
 				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
@@ -25549,10 +25517,11 @@ LUSHGRASSLIST =
 			{
 
 				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CAVEPROPS.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEPROPS.EXML]]
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SPAWNERS\CAVES\CAVEPROPS2.EXML]]
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--[=[
 			NEW_CONTENT =
 			{
 
@@ -25561,12 +25530,14 @@ LUSHGRASSLIST =
 
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			
 			SUBBIOMES_CP = [[
 					<Property value="NMSString0x80.xml">
 						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\RARE\CAVEPROPS2.MBIN" />
 						</Property>
 				]]
 			--
+			
 			count=0
 			for count2=1, tablelength(GIANTLUSHTREES) do
 				count = count+1
@@ -25612,7 +25583,7 @@ LUSHGRASSLIST =
 			end
 
 
-
+--]=]
 			--
 			NEW_CONTENT =
 			{
@@ -25778,7 +25749,7 @@ LUSHGRASSLIST =
 			--
 			--
 		SUBBIOMES_MR = ""
-		--
+		--[=[
 		for count=1, tablelength(TABLE_FERRITE_DUST_RESSOURCES) do
 			GENERATED_BIOME_PATH = [[METADATA/SIMULATION/SOLARSYSTEM\BIOMES/OBJECTS/MOUNTAINS/MR]]..count
 			generateMountainBiomes
@@ -25792,6 +25763,7 @@ LUSHGRASSLIST =
 					</Property>
 			]]
 		end
+		--]=]
 		SUBBIOMES_M = SUBBIOMES_M..SUBBIOMES_MR
 		--
 
@@ -25920,7 +25892,7 @@ LUSHGRASSLIST =
 
 
 		-- STORM BIOMES
-		if STORM_BIOMES_FEATURES == "ON" then -- turnedoff
+		if STORM_BIOMES_FEATURES == "turnedoff" then -- turnedoff
 			--SUBBIOMES_S = ""
 			NEW_CONTENT =
 				{
@@ -29994,503 +29966,7 @@ LUSHGRASSLIST =
 
 
 		end
-	SUBBIOMES_DS = ""
 
-			if SKY_BIOMES_FEATURE == "ON" then
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME1.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME1.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME1.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
-						</Property>
-							<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
-						</Property>
-							<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
-						</Property>
-							<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
-						</Property>
-							<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
-						</Property>
-						<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME7.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME7.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME7.MBIN" />
-						</Property>
-				]]
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME8.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME8.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME8.MBIN" />
-						</Property>
-				]]
-			--
-
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME9.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME9.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME9.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME10.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME10.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME10.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME11.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME11.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME11.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME12.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME12.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME12.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME13.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME13.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME13.MBIN" />
-						</Property>
-				]]
-			--
-			--
-			NEW_CONTENT =
-			{
-
-				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME14.EXML]],
-				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME14.EXML]]
-
-			}
-			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
-			--
-				SUBBIOMES_DS = SUBBIOMES_DS..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME14.MBIN" />
-						</Property>
-				]]
-			--
-
-			addFeature
-			(
-				SKY_BIOMES_FEATURE,
-				{
-					{
-						["MBIN_FILE_SOURCE"] =
-						{
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLESBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMABIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBBIOME.MBIN]],
-						},
-						["EXML_CHANGE_TABLE"] =
-						{
-							{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="GRASS" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-									<Property name="Options">]]..LUSHGRASSLIST..[[
-									</Property>
-								</Property>
-								]]
-							},
-							{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="SUBBIOMES_DS" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-									<Property name="Options">]]..SUBBIOMES_DS..[[
-									</Property>
-								</Property>
-								]]
-							},
-						}
-					},
-					{
-						["MBIN_FILE_SOURCE"] =
-						{
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOURBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HOUDINIPROPS\HOUDINIPROPSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSBIOME.MBIN]],
-						},
-						["EXML_CHANGE_TABLE"] =
-						{
-							{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="SUBBIOMES_DS" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-									<Property name="Options">]]..SUBBIOMES_DS..[[
-									</Property>
-								</Property>
-								]]
-							}							
-						}
-					},			
-
-					{
-						["MBIN_FILE_SOURCE"] =
-						{
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVERUINSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOINFESTEDBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDSHIELDTREEBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHINFESTEDBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICINFESTEDBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICROCKYBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICSPORESBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESBIOME.MBIN]],
-						},
-						["EXML_CHANGE_TABLE"] =
-						{
-							{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="SUBBIOMES_DS" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-									<Property name="Options">]]..SUBBIOMES_DS..[[
-									</Property>
-								</Property>
-								]]
-							}							
-						}
-					},
-					{
-						["MBIN_FILE_SOURCE"] =
-						{
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENINFESTEDBIOME.MBIN]],
-							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLARBIOME.MBIN]],
-						},
-						["EXML_CHANGE_TABLE"] =
-						{							
-							{
-								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
-								["SECTION_ACTIVE"] = {1,2},
-								["ADD"] =
-								[[
-								<Property value="GcExternalObjectListOptions.xml">
-									<Property name="Name" value="SUBBIOMES_DS" />
-									<Property name="ResourceHint" value="" />
-									<Property name="ResourceHintIcon" value="" />
-									<Property name="Probability" value="1" />
-									<Property name="SeasonalProbabilityOverride" value="1" />
-									<Property name="TileType" value="GcTerrainTileType.xml">
-										<Property name="TileType" value="Base" />
-									</Property>
-									<Property name="AllowLimiting" value="False" />
-									<Property name="ChooseUsingLifeLevel" value="False" />
-									<Property name="Options">]]..SUBBIOMES_DS..[[
-									</Property>
-								</Property>
-								]]
-							}							
-						}
-					}
-				}
-			)
-			end -- end skybiomes
 
 		-- E3 CRYSTALS Assets
 		if E3_FANTASY_CRYSTALS_ASSETS_FEATURE == "ON" then
@@ -32031,6 +31507,503 @@ end
 
 		}
 	)
+		SUBBIOMES_DS = ""
+
+			if SKY_BIOMES_FEATURE == "ON" then
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME1.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME1.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME1.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME2.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME3.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
+						</Property>
+							<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
+						</Property>
+							<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
+						</Property>
+							<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
+						</Property>
+							<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME4.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME5.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
+						</Property>
+						<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME6.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME7.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME7.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME7.MBIN" />
+						</Property>
+				]]
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME8.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME8.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME8.MBIN" />
+						</Property>
+				]]
+			--
+
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME9.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME9.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME9.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME10.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME10.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME10.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME11.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME11.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME11.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME12.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME12.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME12.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME13.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME13.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME13.MBIN" />
+						</Property>
+				]]
+			--
+			--
+			NEW_CONTENT =
+			{
+
+				["FILE_DESTINATION"] 		= [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME14.EXML]],
+				["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\SUBBIOMES\D\SKYBIOMES\SKYBIOME14.EXML]]
+
+			}
+			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
+			--
+				SUBBIOMES_DS = SUBBIOMES_DS..
+				[[
+					<Property value="NMSString0x80.xml">
+						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\D\SKYBIOMES\SKYBIOME14.MBIN" />
+						</Property>
+				]]
+			--
+
+			addFeature
+			(
+				SKY_BIOMES_FEATURE,
+				{
+					{
+						["MBIN_FILE_SOURCE"] =
+						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHBUBBLESBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHHQTENTACLEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROCKYWEIRDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMABIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LUSH\LUSHROOMBBIOME.MBIN]],
+						},
+						["EXML_CHANGE_TABLE"] =
+						{
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="GRASS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..LUSHGRASSLIST..[[
+									</Property>
+								</Property>
+								]]
+							},
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="SUBBIOMES_DS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..SUBBIOMES_DS..[[
+									</Property>
+								</Property>
+								]]
+							},
+						}
+					},
+					{
+						["MBIN_FILE_SOURCE"] =
+						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BEAMSTONE\BEAMSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\BONESPIRE\BONESPIREBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\CONTOUR\CONTOURBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\ELBUBBLE\ELBUBBLEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\FRACTALCUBE\FRACTCUBEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HEXAGON\HEXAGONBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HOUDINIPROPS\HOUDINIPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\HYDROGARDEN\HYDROGARDENBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\IRRISHELLS\IRRISHELLSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\SHARDS\SHARDSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\WEIRD\WIRECELLS\WIRECELLSBIOME.MBIN]],
+						},
+						["EXML_CHANGE_TABLE"] =
+						{
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="SUBBIOMES_DS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..SUBBIOMES_DS..[[
+									</Property>
+								</Property>
+								]]
+							}							
+						}
+					},			
+
+					{
+						["MBIN_FILE_SOURCE"] =
+						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\LAVA\LAVABIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVEGLOWBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOACTIVERUINSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOSPIKECRYSTALSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\RADIOACTIVE\RADIOBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHCORALBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHEDSHIELDTREEBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SCORCHED\SCORCHINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\SWAMP\SWAMPBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICEGGSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICROCKYBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICSPORESBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\TOXIC\TOXICTENTACLESBIOME.MBIN]],
+						},
+						["EXML_CHANGE_TABLE"] =
+						{
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="SUBBIOMES_DS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..SUBBIOMES_DS..[[
+									</Property>
+								</Property>
+								]]
+							}							
+						}
+					},
+					{
+						["MBIN_FILE_SOURCE"] =
+						{
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIGPROPSBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENHQBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENINFESTEDBIOME.MBIN]],
+							[[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\FROZEN\FROZENPILLARBIOME.MBIN]],
+						},
+						["EXML_CHANGE_TABLE"] =
+						{							
+							{
+								["PRECEDING_KEY_WORDS"] = "ExternalObjectLists",
+								["SECTION_ACTIVE"] = {1,2},
+								["ADD"] =
+								[[
+								<Property value="GcExternalObjectListOptions.xml">
+									<Property name="Name" value="SUBBIOMES_DS" />
+									<Property name="ResourceHint" value="" />
+									<Property name="ResourceHintIcon" value="" />
+									<Property name="Probability" value="1" />
+									<Property name="SeasonalProbabilityOverride" value="1" />
+									<Property name="TileType" value="GcTerrainTileType.xml">
+										<Property name="TileType" value="Base" />
+									</Property>
+									<Property name="AllowLimiting" value="False" />
+									<Property name="ChooseUsingLifeLevel" value="False" />
+									<Property name="Options">]]..SUBBIOMES_DS..[[
+									</Property>
+								</Property>
+								]]
+							}							
+						}
+					}
+				}
+			)
+			end -- end skybiomes
 
 	--------------------------------------------------------------------------
 	-- LARGE BUILDINGS TRADING POSTS
