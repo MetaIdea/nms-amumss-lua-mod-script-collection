@@ -1,11 +1,12 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "__Alt-Gameplay-tweaks_EXOCRAFTS-HANDLINGS-FLOAT_By_Redmas.pak",
-["MOD_DESCRIPTION"] = "Every exocrafts highly maneuverable on every terrain",
-["MOD_AUTHOR"]      = "Redmas",
-["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "3.99",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "__Alt-Gameplay-tweaks_EXOCRAFTS-HANDLINGS-FLOAT_By_Redmas.pak",
+["MOD_DESCRIPTION"]         = "Every exocrafts highly maneuverable on every terrain",
+["MOD_AUTHOR"]              = "Redmas",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "3.99",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -15,7 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"UnderwaterScannerIconRangeBoost", "0"},
@@ -34,7 +34,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"VehicleLocalScan","GcScanData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "200"},
@@ -43,7 +42,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","BIKE",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",         "20"},
@@ -84,7 +82,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","MED_BUGGY",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionlength",        "0.7"},
@@ -106,7 +103,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","TRUCK",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",         "40"},
@@ -125,7 +121,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WHEELEDBIKE",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",           "12"},
@@ -158,7 +153,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","HOVERCRAFT",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",           "20"},
@@ -194,7 +188,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUBMARINE",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"UnderwaterEnginePower",                  "32.2"},
@@ -215,7 +208,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","MECH",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                     {"WheelSuspensionForce",        "0"},

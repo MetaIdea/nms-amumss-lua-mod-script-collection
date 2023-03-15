@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Sandworms_Overhaul.pak",
-["MOD_AUTHOR"]    = "Redmas",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.70",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "Sandworms_Overhaul.pak",
+["MOD_AUTHOR"]              = "Redmas",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "3.70",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -52,7 +53,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"]     =
                             {
                                 {"SandWormChangeDirectionTime", "0.001"},  -- Original "1"
@@ -291,7 +291,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"TkPhysicsComponentData.xml","Data",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Mass",           "3"},   -- Original "1"

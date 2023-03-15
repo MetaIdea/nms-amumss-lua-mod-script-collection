@@ -2,11 +2,12 @@ MULTIPLIER = 6
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "MegaHerds_HighDensity_NoCaveSpawns_v1.2.pak",
-["MOD_AUTHOR"]    = "MusicAndSilence",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.97",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "MegaHerds_HighDensity_NoCaveSpawns_v1.2.pak",
+["MOD_AUTHOR"]              = "MusicAndSilence",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "3.97",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -241,7 +242,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
                             ["REPLACE_TYPE"] = "ALL",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ProbabilityOfBeingEnabled", "0" },
@@ -257,7 +257,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcCreatureRoleDescription.xml"},
                             ["SECTION_ACTIVE"] = {1,},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ProbabilityOfBeingEnabled", "0" },

@@ -91,11 +91,12 @@ HANGLAMP3        = GetBlock("Lite1",       "1008033010", "0",     "0.5",  "0",  
 --Add FIREFLYTUBE, STANDLIGHT_SMALL, BARSIGN
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Exo's Lumen.pak",
-["MOD_AUTHOR"]    = "Exosolar and Babscoole",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.13",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_Exo's Lumen.pak",
+["MOD_AUTHOR"]              = "Exosolar and Babscoole",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.14",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -142,7 +143,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.05"},
@@ -190,7 +190,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.7"},
@@ -245,7 +244,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","pointLight6",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0"},
@@ -289,7 +287,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","pointLight1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "0.32"},
@@ -797,7 +794,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1"},
@@ -839,7 +835,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1"},
@@ -881,7 +876,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Lite1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "0.5"},

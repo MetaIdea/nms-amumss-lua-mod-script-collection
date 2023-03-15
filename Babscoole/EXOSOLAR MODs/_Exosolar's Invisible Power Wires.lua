@@ -1,11 +1,12 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_Exosolar's Invisible Power Wires.pak",
-["MOD_AUTHOR"]      = "Exosolar",
-["LUA_AUTHOR"]      = "Babscoole",
-["MOD_DESCRIPTION"] = "Makes powered wires invisible",
-["NMS_VERSION"]     = "4.13",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "_Exosolar's Invisible Power Wires.pak",
+["MOD_AUTHOR"]              = "Exosolar",
+["LUA_AUTHOR"]              = "Babscoole",
+["MOD_DESCRIPTION"]         = "Makes powered wires invisible",
+["NMS_VERSION"]             = "4.14",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -16,7 +17,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Uniforms"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"t", "0"},
@@ -38,7 +38,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Uniforms"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"t", "0"},
@@ -67,7 +66,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Uniforms"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"t", "0"},

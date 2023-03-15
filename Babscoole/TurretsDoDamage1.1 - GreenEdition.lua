@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "TurretsDoDamage+rangefixmaybe.pak",
-["MOD_AUTHOR"]    = "Dad",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.05", --mod version 1.1
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "TurretsDoDamage+rangefixmaybe.pak",
+["MOD_AUTHOR"]              = "Dad",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.05", --mod version 1.1
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -172,7 +173,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","LightColour","Colour.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                   {"R", "0.297"},
@@ -182,7 +182,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","Colour","Colour.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                   {"R", "0.297"},

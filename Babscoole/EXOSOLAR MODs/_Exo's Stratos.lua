@@ -3856,12 +3856,13 @@ DataTable =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_Exo's Stratos.pak",
-["MOD_AUTHOR"]      = "Exosolar",
-["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
-["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.13",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "_Exo's Stratos.pak",
+["MOD_AUTHOR"]              = "Exosolar",
+["LUA_AUTHOR"]              = "Jackty89, WinderTP, and Babscoole",
+["MOD_MAINTENANCE"]         = "Babscoole",
+["NMS_VERSION"]             = "4.14",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -3872,7 +3873,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LightShaftScattering", "0.30"},
@@ -3882,7 +3882,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties", "LightShaftColourBottom"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R",    "0.281"},
@@ -3892,7 +3891,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"LightShaftProperties", "LightShaftColourTop"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R",    "0.251"},
@@ -3902,7 +3900,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"StormLightShaftProperties", "LightShaftColourBottom"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R",    "0.401"},
@@ -3913,7 +3910,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"StormLightShaftProperties", "LightShaftColourTop"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R",    "0.251"},
@@ -3928,7 +3924,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SafeSkyMaxIndex",            "2173"},

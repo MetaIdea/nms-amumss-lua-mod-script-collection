@@ -8,11 +8,12 @@ LUSH_DENSITY_MULTIPLIER = 0.77
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Exo's Grass Fix.pak",
-["MOD_AUTHOR"]    = "Exosolar",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.13",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_Exo's Grass Fix.pak",
+["MOD_AUTHOR"]              = "Exosolar",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.14",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -24,7 +25,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -33,7 +33,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -53,7 +52,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -69,7 +67,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -83,7 +80,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -138,7 +134,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -210,7 +205,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -219,7 +213,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -230,7 +223,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "0.8",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MinScale",            "1.04"},
@@ -239,7 +231,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "1",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale",            "1.3"},
@@ -248,7 +239,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "0.7",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MinScale",            "0.91"},
@@ -257,7 +247,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "0.9",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale",            "1.17"},
@@ -266,7 +255,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "1",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MinScale",            "1.3"},
@@ -275,7 +263,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "1.2",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale",            "1.56"},
@@ -284,7 +271,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "0.6",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MinScale",            "0.78"},
@@ -293,7 +279,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "1.5",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale",            "1.95"},
@@ -302,7 +287,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "1.9",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MinScale",            "2.47"},
@@ -311,7 +295,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["REPLACE_TYPE"]       = "ALL",
                             -- ["VALUE_MATCH"]        = "2.1",
-                            -- ["INTEGER_TO_FLOAT"]   = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"MaxScale",            "2.73"},
@@ -372,7 +355,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -381,7 +363,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -409,7 +390,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -425,7 +405,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -439,7 +418,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -526,7 +504,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -535,7 +512,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -561,7 +537,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Placement", "GRASS"},
@@ -579,7 +554,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -591,7 +565,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -639,7 +612,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -688,7 +660,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -705,7 +676,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.185"},
@@ -719,7 +689,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.185"},
@@ -764,7 +733,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.185"},
@@ -817,7 +785,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -826,7 +793,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -854,7 +820,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -871,7 +836,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -885,7 +849,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -910,7 +873,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -973,7 +935,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -982,7 +943,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -1002,7 +962,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -1019,7 +978,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1073,7 +1031,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1130,7 +1087,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1193,7 +1149,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",LUSH_MINSCALE_MULTIPLIER},
@@ -1202,7 +1157,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",LUSH_DENSITY_MULTIPLIER},
@@ -1222,7 +1176,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -1238,7 +1191,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1252,7 +1204,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1277,7 +1228,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1340,7 +1290,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -1349,7 +1298,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -1369,7 +1317,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -1385,7 +1332,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1399,7 +1345,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1424,7 +1369,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1487,7 +1431,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",LUSH_MINSCALE_MULTIPLIER},
@@ -1496,7 +1439,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",LUSH_DENSITY_MULTIPLIER},
@@ -1516,7 +1458,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -1533,7 +1474,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1547,7 +1487,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1572,7 +1511,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1635,7 +1573,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -1644,7 +1581,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -1672,7 +1608,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -1688,7 +1623,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1702,7 +1636,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1727,7 +1660,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1790,7 +1722,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -1799,7 +1730,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -1817,7 +1747,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Placement",    "GRASS"},
@@ -1835,7 +1764,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1847,7 +1775,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DetailObjects","GcObjectSpawnData.xml","GcObjectSpawnData.xml","QualityVariants","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -1938,7 +1865,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxAngle",            "46"},
@@ -1954,7 +1880,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.185"},
@@ -1968,7 +1893,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.185"},
@@ -2046,7 +1970,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -2055,7 +1978,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -2083,7 +2005,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxAngle",            "46"},
@@ -2098,7 +2019,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2112,7 +2032,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2190,7 +2109,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -2199,7 +2117,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -2218,7 +2135,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PlacementPriority",    "Low"},
@@ -2239,7 +2155,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2293,7 +2208,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2351,7 +2265,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2403,7 +2316,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -2412,7 +2324,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -2431,7 +2342,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PlacementPriority",    "Low"},
@@ -2452,7 +2362,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2506,7 +2415,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2564,7 +2472,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2616,7 +2523,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -2625,7 +2531,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -2645,7 +2550,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -2662,7 +2566,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2676,7 +2579,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2701,7 +2603,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2764,7 +2665,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*F:MaxScale",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale",MINSCALE_MULTIPLIER},
@@ -2773,7 +2673,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["REPLACE_TYPE"] = "ALL",
                             ["MATH_OPERATION"] = "*",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FlatDensity",DENSITY_MULTIPLIER},
@@ -2793,7 +2692,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP"] = 1,
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LargeObjectCoverage",    "AlwaysPlace"},
@@ -2811,7 +2709,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariantData",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2825,7 +2722,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},
@@ -2850,7 +2746,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants","GcObjectSpawnDataVariant.xml","GcObjectSpawnDataVariant.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",            "0.21"},

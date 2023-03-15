@@ -1,11 +1,12 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_CREATURES_BEHAVIOURS-Rework_GIANTS-SANDWORMS-PETS_By-REDMAS.pak",
-["MOD_AUTHOR"]      = "Redmas",
-["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "3.99",
-["MOD_DESCRIPTION"] = "Redmas Sandworm Overhaul Giants and Creatures Rework",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "_CREATURES_BEHAVIOURS-Rework_GIANTS-SANDWORMS-PETS_By-REDMAS.pak",
+["MOD_AUTHOR"]              = "Redmas",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "3.99",
+["MOD_DESCRIPTION"]         = "Redmas Sandworm Overhaul Giants and Creatures Rework",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -15,7 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IsHurtingCreaturesACrime", "True"},
@@ -80,7 +80,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -90,7 +89,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM02",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -100,7 +98,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM03",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -110,7 +107,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "EAT",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -120,7 +116,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "POUNCE3",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -130,7 +125,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "POUNCE1",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -140,7 +134,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK2",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -150,7 +143,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK3",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -160,7 +152,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN1",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -170,7 +161,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN2",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -180,7 +170,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN3",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -190,7 +179,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SLOWWALK",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -218,7 +206,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"PetLargeUIOverrideOffset", "Vector3f.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "3140.9563"},
@@ -230,7 +217,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -240,7 +226,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "HAPPY01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -250,7 +235,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -260,7 +244,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SLOWWALK",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -281,7 +264,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"PetLargeUIOverrideOffset", "Vector3f.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "12.520329"},
@@ -307,7 +289,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"PetLargeUIOverrideOffset", "Vector3f.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "-3.031603E-13"},
@@ -466,7 +447,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"PetLargeUIOverrideOffset", "Vector3f.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "3140.9563"},
@@ -478,7 +458,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SWIM",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -488,7 +467,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "LEFT",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -498,7 +476,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "RIGHT",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -508,7 +485,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "FASTSWIM",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -518,7 +494,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -528,7 +503,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "DET_HEADLOOK01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -538,7 +512,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN1",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -548,7 +521,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN2",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -564,7 +536,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -574,7 +545,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "HAPPY01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -584,7 +554,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -594,7 +563,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SLEEP",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -604,7 +572,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SLOWWALK",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -614,7 +581,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "EAT",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -624,7 +590,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -634,7 +599,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN2",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -644,7 +608,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN3",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -654,7 +617,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK1",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -664,7 +626,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK2",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -674,7 +635,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK3",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -689,7 +649,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"PetLargeUIOverrideOffset", "Vector3f.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "12.520329"},
@@ -706,7 +665,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -716,7 +674,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "HAPPY01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -726,7 +683,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SLOWWALK",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -736,7 +692,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "FASTWALK",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -746,7 +701,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "WALK",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -756,7 +710,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK1",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -766,7 +719,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK2",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -776,7 +728,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ATTACK3",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -786,7 +737,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN1",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -796,7 +746,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN2",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -806,7 +755,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PAIN3",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -816,7 +764,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SLEEPSTART",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -826,7 +773,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SLEEP",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -836,7 +782,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SLEEPEND",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -846,7 +791,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "TURN_WALK",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -856,7 +800,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "ROAR",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -866,7 +809,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -876,7 +818,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM02",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -886,7 +827,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM03",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -896,7 +836,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORM04",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -906,7 +845,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "PERFORMATK",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -916,7 +854,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "DEATH01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -926,7 +863,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "DET_BLINK01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -936,7 +872,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "DET_SNIFF01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -946,7 +881,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "DET_BARK01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -956,7 +890,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "EAT",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -979,7 +912,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "IDLE",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -989,7 +921,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD03",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -999,7 +930,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD02",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
@@ -1009,14 +939,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_KEY_WORDS"] = {"TkAnimationComponentData.xml",},
                             ["SPECIAL_KEY_WORDS"] = {"Anim", "SAD01",},
                             ["PRECEDING_FIRST"] = "TRUE",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed", "0.51"},
                             }
                         },
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"UsePetLargeUIOverride",    "True"},
