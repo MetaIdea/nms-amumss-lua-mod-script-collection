@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "BigThings5.3.pak",
-["MOD_AUTHOR"]    = "BruceCambel",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.91",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "BigThings5.3.pak",
+["MOD_AUTHOR"]              = "BruceCambel",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "3.91",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -95,7 +96,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {15,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -129,7 +129,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {20,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -248,7 +247,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {5,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -289,7 +287,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {45,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -353,7 +350,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {22, 29},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -408,7 +404,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {24,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -634,7 +629,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -644,7 +638,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -662,7 +655,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {4,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -680,7 +672,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {5,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -698,7 +689,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {6,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -716,7 +706,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {7,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -822,7 +811,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -869,7 +857,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -895,7 +882,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1041,7 +1027,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1059,7 +1044,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {4,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1148,7 +1132,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1157,7 +1140,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1175,7 +1157,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {4,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1193,7 +1174,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {5,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1211,7 +1191,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {6,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1229,7 +1208,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {7,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1358,7 +1336,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {8,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1368,7 +1345,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {9,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1394,7 +1370,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {12,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1426,7 +1401,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1435,7 +1409,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1445,7 +1418,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {3,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1479,7 +1451,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {14,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1488,7 +1459,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {16, 17,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1777,7 +1747,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {8,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1944,7 +1913,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {8,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1954,7 +1922,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {9,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -1979,7 +1946,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {12,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -2294,7 +2260,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -2439,7 +2404,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {6,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -2552,7 +2516,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {8,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -2618,7 +2581,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {20,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -2822,7 +2784,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {16,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -2840,7 +2801,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {19,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -2849,7 +2809,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {21,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3018,7 +2977,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3045,7 +3003,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3122,7 +3079,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {5,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3131,7 +3087,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {6,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3178,7 +3133,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {1,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3196,7 +3150,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {2,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3255,7 +3208,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {8,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3280,7 +3232,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {11,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3413,7 +3364,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {12,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3444,7 +3394,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {4,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3479,7 +3428,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {8,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3497,7 +3445,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {10, 11,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -3523,7 +3470,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {20,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {
@@ -4068,7 +4014,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"GcObjectSpawnData.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["SECTION_ACTIVE"] = {4,},
                             ["VALUE_CHANGE_TABLE"]     =
                             {

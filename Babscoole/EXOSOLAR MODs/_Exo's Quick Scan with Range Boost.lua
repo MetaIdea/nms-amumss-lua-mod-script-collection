@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Exo's Quick Scan with Range Boost.pak",
-["MOD_AUTHOR"]    = "Exosolar",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.13",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_Exo's Quick Scan with Range Boost.pak",
+["MOD_AUTHOR"]              = "Exosolar",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.14",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -48,7 +49,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "WaypointScan",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "7500"}, -- Original "5000"
@@ -58,7 +58,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "BeaconScan",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "7500"}, -- Original "5000"
@@ -68,7 +67,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "RadioTowerScan",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "150000"}, -- Original "100000"
@@ -78,7 +76,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "ObservatoryScan",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "150000"}, -- Original "100000"
@@ -88,7 +85,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "DistressSignalScan",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "150000"}, -- Original "100000"
@@ -98,7 +94,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "DebugScanPlanet",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "1500000"}, -- Original "100000"
@@ -108,7 +103,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "DebugScanSpace",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "1500000"}, -- Original "100000"
@@ -118,7 +112,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "ShipScan",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "15000"}, -- Original "10000"
@@ -128,7 +121,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = "VisualScan",
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PulseRange", "15000"}, -- Original "10000"

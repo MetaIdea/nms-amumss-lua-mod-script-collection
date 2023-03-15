@@ -1,11 +1,12 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_ExocraftMechanics_v4082.pak",
-["MOD_DESCRIPTION"] = "",
-["MOD_AUTHOR"]      = "JasonDude7116",
-["LUA_AUTHOR"]      = "Babscoole and Wbertro",
-["NMS_VERSION"]     = "4.08",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "_MOD_DUD_ExocraftMechanics_v4082.pak",
+["MOD_DESCRIPTION"]         = "",
+["MOD_AUTHOR"]              = "JasonDude7116",
+["LUA_AUTHOR"]              = "Babscoole and Wbertro",
+["NMS_VERSION"]             = "4.08",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -16,7 +17,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"VehicleCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",         "2"},
@@ -26,7 +26,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"MechFirstPersonCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"VertRotationMax", "5"},
@@ -34,7 +33,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"CharacterRideCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",            "2"},
@@ -47,7 +45,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamMedium","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",            "2"},
@@ -60,7 +57,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamLarge","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",            "2"},
@@ -73,7 +69,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"CharacterRideCamHuge","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY",            "2"},
@@ -86,7 +81,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"BuggyFollowCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY", "2.25"},
@@ -100,7 +94,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"SubmarineFollowCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "10"},
@@ -115,7 +108,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"BikeFollowCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY", "0.35"},
@@ -129,7 +121,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"WheeledBikeFollowCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY", "-0.75"},
@@ -145,7 +136,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TruckFollowCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "22"},
@@ -157,7 +147,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"MechFollowCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY", "0.2"},
@@ -167,7 +156,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"MechCombatCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BackMinDistance", "11"},
@@ -175,7 +163,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"MechJetpackCam","GcCameraFollowSettings.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"OffsetY", "0"},
@@ -199,7 +186,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MechFirstPersonTurretThrottleLookThreshold", "8"},
@@ -210,7 +196,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","BIKE",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WheelSuspensionForce", "12"},
@@ -233,7 +218,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","MED_BUGGY",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WheelSuspensionForce", "12"},
@@ -256,7 +240,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","TRUCK",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WheelSuspensionForce", "12"},
@@ -277,7 +260,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WHEELEDBIKE",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"WheelSuspensionForce", "9"},
@@ -301,7 +283,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUBMARINE",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"UnderwaterEnginePower", "3"},

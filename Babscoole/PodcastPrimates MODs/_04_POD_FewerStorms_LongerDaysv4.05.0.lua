@@ -1,11 +1,12 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_04_POD_FewerStorms_LongerDaysv4.05.0.pak",
-["MOD_DESCRIPTION"] = "Longer Days and Less Storms",
-["MOD_AUTHOR"]      = "PodcastPrimate",
-["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.05",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "_04_POD_FewerStorms_LongerDaysv4.05.0.pak",
+["MOD_DESCRIPTION"]         = "Longer Days and Less Storms",
+["MOD_AUTHOR"]              = "PodcastPrimate",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.05",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -150,7 +151,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DayLength", "7200"},
@@ -200,7 +200,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFog"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax", "0.95"},
@@ -212,7 +211,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetExtremeFog"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength", "0.15"},
@@ -227,7 +225,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetStormFog"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength", "0.25"},
@@ -242,7 +239,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetProperties", "PlanetFlightFog"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax", "0.95"},
@@ -254,7 +250,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                                                 {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetSky"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SunSize", "0.4"},
@@ -263,7 +258,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetFog"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength", "0.04"},
@@ -278,7 +272,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetExtremeFog"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength", "0.15"},
@@ -293,7 +286,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetStormFog"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogStrength", "0.25"},
@@ -308,7 +300,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetPrimeProperties", "PlanetFlightFog"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogMax", "0.95"},
@@ -321,7 +312,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SpaceSkyMin"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SunStrength", "0.4"},
@@ -332,7 +322,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SpaceSkyMax"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SunStrength", "0.8"},

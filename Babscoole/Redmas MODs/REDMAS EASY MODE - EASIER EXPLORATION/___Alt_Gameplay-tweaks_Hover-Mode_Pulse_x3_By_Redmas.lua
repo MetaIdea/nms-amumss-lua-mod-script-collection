@@ -1,11 +1,12 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "___Alt_Gameplay-tweaks_Hover-Mode_Pulse_x3_By_Redmas.pak",
-["MOD_DESCRIPTION"] = "REDMAS EASY MODE - EASIER EXPLORATION",
-["MOD_AUTHOR"]      = "Redmas",
-["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "3.99",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "___Alt_Gameplay-tweaks_Hover-Mode_Pulse_x3_By_Redmas.pak",
+["MOD_DESCRIPTION"]         = "REDMAS EASY MODE - EASIER EXPLORATION",
+["MOD_AUTHOR"]              = "Redmas",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "3.99",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -15,7 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"HoverTakeoffHeight", "590"},
@@ -29,7 +29,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = { "Control", "PlanetEngine" },
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},
@@ -37,7 +36,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = { "Control", "AtmosCombatEngine" },
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},
@@ -45,7 +43,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = { "ControlLight", "PlanetEngine" },
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},
@@ -53,7 +50,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "PlanetEngine" },
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},
@@ -61,7 +57,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = { "ControlHeavy", "AtmosCombatEngine" },
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed", "0.1"},

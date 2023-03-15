@@ -1,11 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_LessWildLoot_v4081.pak",
-["MOD_AUTHOR"]      = "jasondude7116",
-["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.08",
-["MOD_DESCRIPTION"] = "",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "_MOD_DUD_LessWildLoot_v4081.pak",
+["MOD_AUTHOR"]              = "jasondude7116",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.08",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -18,7 +18,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",     "0.5"},
@@ -47,7 +46,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",     "0.6"},
@@ -94,7 +92,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DEBRIS/DEBRISLARGE_COMMON.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.5"},
@@ -116,7 +113,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/RUINPARTS/WORDSTONE.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",     "1"},
@@ -138,7 +134,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/CRATE/CRATELAYOUTS.SCENE.MBIN",},
                             ["SECTION_UP_SPECIAL"] = 1,
                             ["PRECEDING_KEY_WORDS"] = {"QualityVariants",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Coverage",        "0.6"},

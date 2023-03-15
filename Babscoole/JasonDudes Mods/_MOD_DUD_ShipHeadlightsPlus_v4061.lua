@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_ShipHeadlightsPlus_v4061.pak",
-["MOD_AUTHOR"]    = "jasondude7116",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_MOD_DUD_ShipHeadlightsPlus_v4061.pak",
+["MOD_AUTHOR"]              = "jasondude7116",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.08",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -109,7 +110,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","C3",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "0.32"},
@@ -120,7 +120,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","pCylinder12",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "-0.13"},
@@ -294,7 +293,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","BATCHSTARTPHYSI",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "37668"},
@@ -302,7 +300,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","VERTRSTARTPHYSI",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "21866"},
@@ -310,7 +307,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","VERTRENDPHYSICS",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "24589"},
@@ -318,7 +314,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","BATCHCOUNT",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "4068"},
@@ -326,7 +321,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","VERTRENDGRAPHIC",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "2723"},
@@ -334,7 +328,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","BOUNDHULLST",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "212"},
@@ -342,7 +335,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","BOUNDHULLED",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "248"},
@@ -350,7 +342,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMINX",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-2.891207"},
@@ -358,7 +349,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMINY",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.836564"},
@@ -366,7 +356,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMINZ",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-1.380045"},
@@ -374,7 +363,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMAXY",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.770870"},
@@ -382,7 +370,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","AABBMAXZ",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.631633"},
@@ -398,7 +385,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","WingsK_ALOD0","Name","MESHLINK",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "WingsK_ALODShape1"},
@@ -415,7 +401,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","BATCHSTARTPHYSI",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "41736"},
@@ -423,7 +408,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","VERTRSTARTPHYSI",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "24590"},
@@ -431,7 +415,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","VERTRENDPHYSICS",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "29311"},
@@ -439,7 +422,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","BATCHCOUNT",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "7890"},
@@ -447,7 +429,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","VERTRENDGRAPHIC",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "4721"},
@@ -455,7 +436,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","BOUNDHULLST",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "248"},
@@ -463,7 +443,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","BOUNDHULLED",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "292"},
@@ -471,7 +450,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","AABBMINX",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-3.749691"},
@@ -479,7 +457,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","AABBMINZ",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-2.157869"},
@@ -487,7 +464,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","AABBMAXX",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "3.749691"},
@@ -495,7 +471,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","AABBMAXZ",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.163431"},
@@ -511,7 +486,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB1WingsK_ALOD0","Name","MESHLINK",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "WingsK_ALODShape1"},
@@ -528,7 +502,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","BATCHSTARTPHYSI",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "53247"},
@@ -536,7 +509,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","VERTRSTARTPHYSI",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "31380"},
@@ -544,7 +516,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","VERTRENDPHYSICS",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "33122"},
@@ -552,7 +523,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","BATCHCOUNT",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "2856"},
@@ -560,7 +530,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","VERTRENDGRAPHIC",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1742"},
@@ -568,7 +537,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","BOUNDHULLST",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "328"},
@@ -576,7 +544,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","BOUNDHULLED",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "352"},
@@ -584,7 +551,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMINX",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-3.733948"},
@@ -592,7 +558,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMINY",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.712383"},
@@ -600,7 +565,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMINZ",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "-2.149216"},
@@ -608,7 +572,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMAXX",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "3.733998"},
@@ -616,7 +579,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMAXY",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "1.885870"},
@@ -624,7 +586,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","AABBMAXZ",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "0.729330"},
@@ -640,7 +601,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","SUB3WingsK_ALOD0","Name","MESHLINK",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "WingsK_ALODShape1"},
@@ -809,7 +769,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Trail",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "1.03424"},
@@ -819,7 +778,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Trail1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransX", "-1.034242"},
@@ -829,7 +787,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","_Canopy_B",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "2.435838"},
@@ -847,7 +804,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Trail1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.869246"},
@@ -857,7 +813,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Trail",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.869246"},

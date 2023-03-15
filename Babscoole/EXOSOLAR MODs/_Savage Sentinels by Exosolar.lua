@@ -3,11 +3,12 @@ MAXMULTI = 2
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Savage Sentinels by Exosolar.pak",
-["MOD_AUTHOR"]    = "Exosolar",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.13",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_Savage Sentinels by Exosolar.pak",
+["MOD_AUTHOR"]              = "Exosolar",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.14",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -17,7 +18,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GrenadeLaunchFlightTime",                2},
@@ -117,7 +117,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"WalkerLaser"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LaserMiningDamage",    130},
@@ -131,7 +130,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"QuadLaser"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LaserChargeTime",      0.5},
@@ -143,7 +141,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"DroneControl"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"DronePatrolHonkTime",                 1.2},
@@ -173,7 +170,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONE.SCENE.MBIN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             "2000",},
@@ -183,7 +179,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONEARMOURED.SCENE.MBIN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             "2500",},
@@ -193,7 +188,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONEMEDIC.SCENE.MBIN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             "3000",},
@@ -203,7 +197,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/DRONESUMMONER.SCENE.MBIN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             "3000",},
@@ -213,7 +206,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/CORRUPTEDDRONE.SCENE.MBIN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             "4500",},
@@ -223,7 +215,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/QUADRUPED.SCENE.MBIN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             "8000",},
@@ -233,7 +224,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/SENTINELMECH.SCENE.MBIN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             "20000",},
@@ -243,7 +233,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Resource", "MODELS/COMMON/ROBOTS/WALKER.SCENE.MBIN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"BaseHealth",             "30000",},
@@ -253,7 +242,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SENMECHGUN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ProjectileSpread", 0.07},
@@ -267,7 +255,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SENMECHCANON"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxRange", 100},
@@ -275,7 +262,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "MECHFLAME"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ProjectileSpread", 0.07},
@@ -300,7 +286,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Search","GcDroneControlData.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed",       12},

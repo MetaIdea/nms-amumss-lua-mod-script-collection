@@ -86,12 +86,13 @@ ROBOT_JOINT_DATA_TABLE =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "CompanionPetUnlocker.pak",
-["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
-["CONTRIBUTORS"]    = "Silent369 and Corvus",
-["NMS_VERSION"]     = "4.13",
-["DESCRIPTION"]     = "Enables more creatures to become companion pets",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "CompanionPetUnlocker.pak",
+["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
+["CONTRIBUTORS"]            = "Silent369 and Corvus",
+["NMS_VERSION"]             = "4.14",
+["DESCRIPTION"]             = "Enables more creatures to become companion pets",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -405,7 +406,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"Id","QUAD"},
                             ["REPLACEMENT_TYPE"]   = {"ADDAFTERSECTION"},
-                            ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"LegSpread",    "True"},
@@ -424,7 +424,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         -- {
                             -- ["REPLACE_TYPE"]        = "ALL",
-                            -- ["INTEGER_TO_FLOAT"]    = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"]  =
                             -- {
                                 -- {"PetGrowthTime",          CREATURE_INCUBATE_TIME}, --Original "1209600"
@@ -442,7 +441,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         {
                             ["MATH_OPERATION"]      = "*",
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["REPLACE_TYPE"]        = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -458,7 +456,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["INTEGER_TO_FLOAT"]    = "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"MinRideSize",      "0.1"}, --Smallest Viable
@@ -511,7 +508,6 @@ local Change_Table_Array = NMS_MOD_DEFINITION_CONTAINER["MODIFICATIONS"][1]["MBI
     local temp_table_eggtimers =
     {
         ["REPLACE_TYPE"]        = "ALL",
-        ["INTEGER_TO_FLOAT"]    = "FORCE",
         ["VALUE_CHANGE_TABLE"]  =
         {
             {"PetGrowthTime",          CREATURE_INCUBATE_TIME}, --Original "1209600"

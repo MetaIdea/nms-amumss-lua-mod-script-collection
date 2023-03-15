@@ -1,11 +1,12 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_03_POD.FreedomofFlightv4.05.0.pak",
-["MOD_DESCRIPTION"] = "",
-["MOD_AUTHOR"]      = "PodcastPrimate",
-["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.05",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "_03_POD.FreedomofFlightv4.05.0.pak",
+["MOD_DESCRIPTION"]         = "",
+["MOD_AUTHOR"]              = "PodcastPrimate",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.05",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -15,7 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ApplyHeightForce", "False"},
@@ -67,7 +67,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Control", "SpaceEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "25"},
@@ -89,7 +88,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Control", "PlanetEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "18"},
@@ -109,7 +107,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Control", "CombatEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "25"},
@@ -131,7 +128,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Control", "AtmosCombatEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "18"},
@@ -152,7 +148,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "SpaceEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "55"},
@@ -173,7 +168,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "PlanetEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "30"},
@@ -197,7 +191,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "CombatEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "55"},
@@ -220,7 +213,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight", "AtmosCombatEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "40"},
@@ -241,7 +233,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlLight"},
-                            ["INTEGER_TO_FLOAT"]    =   "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"ShipMinHeightForce",  "0.1"},
@@ -249,7 +240,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "SpaceEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "15"},
@@ -271,7 +261,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "PlanetEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "8"},
@@ -295,7 +284,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "CombatEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "17"},
@@ -316,7 +304,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy", "AtmosCombatEngine"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"ThrustForce", "8"},
@@ -337,7 +324,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ControlHeavy"},
-                            ["INTEGER_TO_FLOAT"]    =   "FORCE",
                             ["VALUE_CHANGE_TABLE"]  =
                             {
                                 {"ShipPlanetBrakeMinSpeed", "1"},

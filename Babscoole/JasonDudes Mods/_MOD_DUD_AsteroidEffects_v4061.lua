@@ -1,11 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]    = "_MOD_DUD_AsteroidEffects_v4061.pak",
-["MOD_AUTHOR"]      = "JasonDude7116",
-["LUA_AUTHOR"]      = "Babscoole",
-["NMS_VERSION"]     = "4.06",
-["MOD_DESCRIPTION"] = "",
-["MODIFICATIONS"]   =
+["MOD_FILENAME"]            = "_MOD_DUD_AsteroidEffects_v4061.pak",
+["MOD_AUTHOR"]              = "JasonDude7116",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.06",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -35,7 +35,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_R_EXP"},
                             ["PRECEDING_KEY_WORDS"] = {"GcDebrisData.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number",        "2",},
@@ -101,7 +100,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_M_EXP"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",               "3",},
@@ -156,7 +154,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_S_EXP"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Life",               "3",},
@@ -175,7 +172,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ASTEROID_L_EXP"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Scale",              "20",},

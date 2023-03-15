@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_Exosolar's Starmap Upgrade.pak",
-["MOD_AUTHOR"]    = "Exosolar",
-["LUA_AUTHOR"]    = "Makto & Updated by Babscoole",
-["NMS_VERSION"]   = "4.13",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_Exosolar's Starmap Upgrade.pak",
+["MOD_AUTHOR"]              = "Exosolar",
+["LUA_AUTHOR"]              = "Makto & Updated by Babscoole",
+["NMS_VERSION"]             = "4.14",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -14,7 +15,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"]   = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PathToTargetIndicatorTimeFactor",           "0.4"},
@@ -53,7 +53,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Yellow"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -64,7 +63,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Green"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.3"},
@@ -75,7 +73,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"BaseStarDefaultColours", "Blue"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.42"},
@@ -86,7 +83,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"BaseStarProtanopiaColours", "Yellow"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -97,7 +93,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Camera"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MovementBlendRateLocked",     "2"},
@@ -117,7 +112,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--1
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.992157"},
@@ -129,7 +123,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--2
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.027451"},
@@ -141,7 +134,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--3
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.615686"},
@@ -153,7 +145,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--4
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.92549"},
@@ -165,7 +156,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--5
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.717647"},
@@ -177,7 +167,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--6
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.772549"},
@@ -189,7 +178,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--7
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.835294"},
@@ -201,7 +189,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--8
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.576471"},
@@ -213,7 +200,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--9
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.133333"},
@@ -225,7 +211,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--10
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.321569"},
@@ -237,7 +222,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--1
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -249,7 +233,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--2
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.823529"},
@@ -261,7 +244,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--3
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.701961"},
@@ -273,7 +255,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--4
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -285,7 +266,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--5
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.329412"},
@@ -297,7 +277,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--6
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.933333"},
@@ -309,7 +288,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--7
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.47451"},
@@ -321,7 +299,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--8
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.411765"},
@@ -333,7 +310,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--9
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.45098"},
@@ -345,7 +321,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {--10
                             ["SPECIAL_KEY_WORDS"] = {"VignetteSizeIncreaseSelected","0.25",},
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.039216"},
@@ -356,7 +331,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--1
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.992157"},
@@ -367,7 +341,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--2
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.027451"},
@@ -378,7 +351,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--3
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.615686"},
@@ -389,7 +361,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--4
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.92549"},
@@ -400,7 +371,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--5
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.717647"},
@@ -411,7 +381,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--6
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.772549"},
@@ -422,7 +391,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--7
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.835294"},
@@ -433,7 +401,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--8
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.576471"},
@@ -444,7 +411,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--9
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.133333"},
@@ -455,7 +421,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--10
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaPrimaryDefaultColours", "MapLargeAreaPrimaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.321569"},
@@ -466,7 +431,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--1
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -477,7 +441,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--2
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.823529"},
@@ -488,7 +451,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--3
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.701961"},
@@ -499,7 +461,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--4
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "1"},
@@ -510,7 +471,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--5
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.329412"},
@@ -521,7 +481,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--6
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.933333"},
@@ -532,7 +491,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--7
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.47451"},
@@ -543,7 +501,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--8
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.411765"},
@@ -554,7 +511,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--9
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.45098"},
@@ -565,7 +521,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {--10
                             ["PRECEDING_KEY_WORDS"] = {"MapLargeAreaSecondaryDefaultColours", "MapLargeAreaSecondaryDefaultColours", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml", "Colour.xml"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"R", "0.039216"},
@@ -576,7 +531,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SolarSystemParameters", "PlanetParameters"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FirstOrbitRadiusMin",   "52"},
@@ -590,7 +544,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SolarSystemParameters", "MoonParameters"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FirstOrbitRadiusMin",   "14"},
@@ -604,7 +557,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SolarSystemParameters", "PlanetRadii"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Large",     "11"},
@@ -613,7 +565,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"SolarSystemParameters"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"SystemTilt",     "12"},

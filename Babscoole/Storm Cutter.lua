@@ -1,11 +1,12 @@
 -- Must be run using AMUMSS v3.9.5.98W or later.  Contains parameters that do not exist in previous versions.
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "Storm Cutter.pak",
-["MOD_AUTHOR"]    = "Zurls",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.13",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "Storm Cutter.pak",
+["MOD_AUTHOR"]              = "Zurls",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.14",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -109,7 +110,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Speed","0.2",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Thickness","0.5"},
@@ -759,7 +759,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog",},
                             ["SECTION_ACTIVE"] = {"1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"FogColourStrength","1"},
@@ -769,7 +768,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["PRECEDING_KEY_WORDS"] = {"Fog","HeavyAir","Settings","GcHeavyAirSettingValues.xml",},
                             ["SECTION_ACTIVE"] = {"1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Speed","0.5"},
@@ -808,7 +806,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Weighting","1",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Weighting","0.5"},

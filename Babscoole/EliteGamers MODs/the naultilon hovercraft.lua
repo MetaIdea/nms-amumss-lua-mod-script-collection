@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "the naultilon hovercraft.pak",
-["MOD_AUTHOR"]    = "EliteGamers",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "the naultilon hovercraft.pak",
+["MOD_AUTHOR"]              = "EliteGamers",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.08",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -20,7 +21,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                                 {"Name", "TRUCK"},
                                 {"Name", "WHEELEDBIKE"},
                             },
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"VehicleGravityWater", "17.5"},
@@ -28,7 +28,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SUBMARINE"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"NumWheels",       "4"},
@@ -38,7 +37,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "MECH"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"VehicleGravityWater", "0.01"},

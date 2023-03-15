@@ -16,11 +16,12 @@ ADD_BLANK =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_cruzdroid_ImmersiveGen_Endurance1.3.1.pak",
-["MOD_AUTHOR"]    = "cruzdroid",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "3.98",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_cruzdroid_ImmersiveGen_Endurance1.3.1.pak",
+["MOD_AUTHOR"]              = "cruzdroid",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "3.98",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -1477,7 +1478,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "SCRAPHEAP"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"PatchSize",   "685"},
@@ -1625,7 +1625,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Placement", "BIOMEPLANT"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinScale", "0.7"},
@@ -1920,7 +1919,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialColourVec4",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.267228"},
@@ -1943,7 +1941,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     -- {
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- {"y", "1"},
@@ -1957,7 +1954,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "0.2"},
@@ -1971,7 +1967,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "0.1"},
@@ -1990,7 +1985,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "gCustomParams01Vec4",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"},

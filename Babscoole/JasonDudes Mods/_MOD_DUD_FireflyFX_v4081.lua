@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_FireflyFX_v4081.pak",
-["MOD_AUTHOR"]    = "jasondude7116",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_MOD_DUD_FireflyFX_v4081.pak",
+["MOD_AUTHOR"]              = "jasondude7116",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.08",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -95,7 +96,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.01"
@@ -140,7 +140,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.01"
@@ -177,7 +176,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.01"
@@ -214,7 +212,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"TwinkleRange","Vector3f.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0"}, -- Original "0.005"

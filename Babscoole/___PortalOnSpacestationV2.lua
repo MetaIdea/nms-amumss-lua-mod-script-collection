@@ -28,10 +28,11 @@ TEXT_TO_ADD =
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-  ["MOD_FILENAME"]  = "___PortalOnSpacestationV2.pak",
-  ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
-  ["NMS_VERSION"]   = "4.0+",
-  ["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "___PortalOnSpacestationV2.pak",
+["MOD_AUTHOR"]              = "Mjjstral and Babscoole",
+["NMS_VERSION"]             = "4.14",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -60,7 +61,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "PortalStructure"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VCT"] =
                             {
                                 {"ScaleY", "0.3"},
@@ -69,7 +69,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name", "Base"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VCT"] =
                             {
                                 {"ScaleX", "0.5"},
@@ -86,7 +85,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Name", "Pillar"},
                             -- --["REMOVE"] = "SECTION",
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VCT"] =
                             -- {
                                 -- {"TransY", "3.4"},

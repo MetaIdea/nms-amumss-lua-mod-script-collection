@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "TurretsDoDamage.pak",
-["MOD_AUTHOR"]    = "Dad",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.05",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "TurretsDoDamage.pak",
+["MOD_AUTHOR"]              = "Dad",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.05",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -15,7 +16,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTGUN"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Scale", "4"},
@@ -34,7 +34,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTGUN","Colour","Colour.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                   {"R", "0.973"},
@@ -44,7 +43,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "FREIGHTGUN","LightColour","Colour.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                   {"R", "0.8"},
@@ -210,7 +208,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","LightColour","Colour.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                   {"R", "0.597"},
@@ -220,7 +217,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "AI_FREIGHTER","Colour","Colour.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                   {"R", "0.597"},
@@ -229,7 +225,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "BASE_TURRET_L","LightColour","Colour.xml",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                   {"G", "0.051"},

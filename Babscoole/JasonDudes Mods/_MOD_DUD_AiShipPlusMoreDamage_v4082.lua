@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_AiShipPlusMoreDamage_v4082.pak",
-["MOD_AUTHOR"]    = "jasondude7116",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_MOD_DUD_AiShipPlusMoreDamage_v4082.pak",
+["MOD_AUTHOR"]              = "jasondude7116",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.08",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -182,7 +183,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
                             ["SPECIAL_KEY_WORDS"] = {"Id","PLANET",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",           "4"},
@@ -229,7 +229,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
                             ["SPECIAL_KEY_WORDS"] = {"Id","SPACE",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",             "4"},
@@ -277,7 +276,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
                             ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",           "4"},
@@ -325,7 +323,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_WEAK",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",             "4"},
@@ -374,7 +371,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_STRONG",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",             "3"},
@@ -446,7 +442,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
                             ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_EASY",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 --{"MinSpeed", "100"},
@@ -657,7 +652,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","LASERDAMAGE",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"]     =
                             {
                                 { "Damage", "3.5" },
@@ -679,7 +673,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","AISHIPGUN",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"]     =
                             -- {
                                 -- --{ "Damage", "15" },
@@ -687,7 +680,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","SHIPLASER",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"]     =
                             -- {
                                 -- { "Damage", "10" },
@@ -695,7 +687,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN1",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"]     =
                             -- {
                                 -- { "HardModeMultiplier", "1.5" }
@@ -703,7 +694,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN2",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"]     =
                             -- {
                                 -- { "Damage", "18" },
@@ -711,7 +701,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYGUN3",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 { "Damage", "17" },
@@ -719,7 +708,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER1",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- { "Damage", "15" },
@@ -728,7 +716,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3",},
                             -- ["SECTION_ACTIVE"] = {1,},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- { "Damage", "20" },
@@ -737,7 +724,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","BOUNTYLASER3",},
                             -- ["SECTION_ACTIVE"] = {2,},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- { "Damage", "30" },
@@ -752,7 +738,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","POLICEGUN",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- { "Damage", "6" },
@@ -760,7 +745,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","POLICELASER",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- { "Damage", "16" },
@@ -845,7 +829,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","LIGHTNING",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- { "Damage", "150" },
@@ -853,7 +836,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         -- },
                         -- {
                             -- ["SPECIAL_KEY_WORDS"] = {"Id","METEOR",},
-                            -- ["INTEGER_TO_FLOAT"] = "FORCE",
                             -- ["VALUE_CHANGE_TABLE"] =
                             -- {
                                 -- { "Damage", "150" },

@@ -2,11 +2,12 @@
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_WarpFX_v4071.pak",
-["MOD_AUTHOR"]    = "jasondude7116",
-["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.08",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_MOD_DUD_WarpFX_v4071.pak",
+["MOD_AUTHOR"]              = "jasondude7116",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.08",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -30,7 +31,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Lights1","Name","MATERIAL"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHTUNNELMAT1.MATERIAL.MBIN"},
@@ -38,7 +38,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Lights2","Name","MATERIAL"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARSMAT.MATERIAL.MBIN"},
@@ -46,7 +45,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Lights3","Name","MATERIAL"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARS2MAT.MATERIAL.MBIN"},
@@ -54,7 +52,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","Lights5","Name","MATERIAL"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHSLOWSTARS2MAT.MATERIAL.MBIN"},
@@ -62,7 +59,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Name","LightStreaks","Name","MATERIAL"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", "MODELS\EFFECTS\WARP\WARPTUNNELBLACKHOLE\DUDBHLIGHTARMSMAT.MATERIAL.MBIN"},

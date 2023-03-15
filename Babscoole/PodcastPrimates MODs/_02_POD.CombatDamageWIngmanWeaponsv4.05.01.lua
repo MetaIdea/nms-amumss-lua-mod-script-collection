@@ -1,10 +1,11 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"] = "_02_POD.CombatDamageWIngmanWeaponsv4.05.01.pak",
-["MOD_AUTHOR"]   = "PodcastPrimate",
-["LUA_AUTHOR"]   = "Babscoole",
-["NMS_VERSION"]  = "4.05",
-["MODIFICATIONS"] =
+["MOD_FILENAME"]            = "_02_POD.CombatDamageWIngmanWeaponsv4.05.01.pak",
+["MOD_AUTHOR"]              = "PodcastPrimate",
+["LUA_AUTHOR"]              = "Babscoole",
+["NMS_VERSION"]             = "4.05",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -14,39 +15,38 @@ NMS_MOD_DEFINITION_CONTAINER =
                     ["EXML_CHANGE_TABLE"] =
                     {
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                  {"FormationOffsetZOffsetVarianceMaxSpeedScale",    "75"},
-                                  {"FormationOffsetCylinderWidth",                   "45"},
-                                  {"FormationOffsetCylinderHeight",                  "25"},
-                                  {"FormationOffsetCylinderLength",                  "0"},
-                                  {"FormationOffsetCylinderLengthThirdPerson",       "0"},
-                                  {"CombatFormationOffsetCylinderWidth",             "200"},
-                                  {"CombatFormationOffsetCylinderHeight",            "100"},
-                                  {"CombatFormationOffsetCylinderLength",            "25"},
-                                  {"CombatFormationOffsetCylinderWidthThirdPerson",  "200"},
-                                  {"CombatFormationOffsetCylinderHeightThirdPerson", "100"},
-                                  {"CombatFormationOffsetCylinderLengthThirdPerson", "25"},
-                                  {"MaintainFormationInCombatMinTime",               "0"},
-                                  {"MaintainFormationInCombatMaxTime",               "0.1"},
-                                  {"MaintainFormationLockStrengthCombat",            "0.1"},
-                                  {"OutOfFormationMinTime",                          "0.1"},
-                                  {"OutOfFormationMaxTime",                          "60"},
+                                {"FormationOffsetZOffsetVarianceMaxSpeedScale",    "75"},
+                                {"FormationOffsetCylinderWidth",                   "45"},
+                                {"FormationOffsetCylinderHeight",                  "25"},
+                                {"FormationOffsetCylinderLength",                  "0"},
+                                {"FormationOffsetCylinderLengthThirdPerson",       "0"},
+                                {"CombatFormationOffsetCylinderWidth",             "200"},
+                                {"CombatFormationOffsetCylinderHeight",            "100"},
+                                {"CombatFormationOffsetCylinderLength",            "25"},
+                                {"CombatFormationOffsetCylinderWidthThirdPerson",  "200"},
+                                {"CombatFormationOffsetCylinderHeightThirdPerson", "100"},
+                                {"CombatFormationOffsetCylinderLengthThirdPerson", "25"},
+                                {"MaintainFormationInCombatMinTime",               "0"},
+                                {"MaintainFormationInCombatMaxTime",               "0.1"},
+                                {"MaintainFormationLockStrengthCombat",            "0.1"},
+                                {"OutOfFormationMinTime",                          "0.1"},
+                                {"OutOfFormationMaxTime",                          "60"},
                                 {"DisplayShipAttackTypes",                         "True"},
                                 {"MinimumCircleTimeBeforeLanding",                 "20"},
                                 {"CrashedShipMinNonBrokenSlots",                   "0"},
                                 {"CrashedShipBrokenSlotChance",                    "0"},
                                 {"CrashedShipBrokenTechChance",                    "0"},
                                 {"AttackShipsFollowLeader",                        "True"},
-                                  {"PirateMaintainBuildingTargetTime",               "15"},
+                                {"PirateMaintainBuildingTargetTime",               "15"},
                                 {"MaxNumTurretMissiles",                           "5"},
                                 {"DisableTradeRoutes",                             "True"},
                                 {"AttackBuildingGetThereBoost",                    "40"},
                                 {"TradingPostTraderRequestTime",                   "60"},
                                 {"SpaceStationTraderRequestTime",                  "30"},
                                 {"AbandonedSystemShipSpawnProbablity",             "0.5"},
-                                  {"ShipEscapeTimeBeforeWarpOut",                    "30"},
+                                {"ShipEscapeTimeBeforeWarpOut",                    "30"},
                                 {"DockingLandingTime",                             "2"},
                                 {"DockingLandingTimeDirectional",                  "2"},
                                 {"DockWaitMinTime",                                "60"},
@@ -59,31 +59,28 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AsteroidMiningPositioningTravelData"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                  {"DirectionBrake", "0.4"},
-                                  {"MaxSpeedBrake",  "0.1"},
-                                  {"Falloff",        "0"},
+                                {"DirectionBrake", "0.4"},
+                                {"MaxSpeedBrake",  "0.1"},
+                                {"Falloff",        "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"AsteroidMiningTravelData"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                  {"DirectionBrake", "0.4"},
-                                  {"MaxSpeedBrake",  "0.1"},
-                                  {"Falloff",        "0"},
+                                {"DirectionBrake", "0.4"},
+                                {"MaxSpeedBrake",  "0.1"},
+                                {"Falloff",        "0"},
                             }
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PirateAttackableBuildingClasses"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                  {"Base",           "True"},
-                                  {"GameStartSpawn", "True"},
+                                {"Base",           "True"},
+                                {"GameStartSpawn", "True"},
                             }
                         },
                         {
@@ -91,7 +88,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                  {"A", "0"},
+                                {"A", "0"},
                             }
                         },
                     }
@@ -102,7 +99,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "GROUNDEXPLODE"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Number",           "50"},
@@ -240,7 +236,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "ROBOTGUNDMG_MED"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Damage", "20"}
@@ -544,7 +539,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id", "SENTINEL_FLAME"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Damage", "4.5"}
@@ -572,7 +566,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"FlybySpawns", "Scale"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"x", "0.25"},
@@ -612,7 +605,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"PlanetaryPirateFlybySpawns", "StartTime"},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"y", "1.75"},
@@ -1012,7 +1004,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","PLANET",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",           "4"},
@@ -1039,7 +1030,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SPACE",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",      "4"},
@@ -1064,7 +1054,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"BehaviourTable",},
                             ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle", "4"},
@@ -1075,7 +1064,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_WEAK",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",      "0.1"},
@@ -1093,7 +1081,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_STRONG",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"GunDispersionAngle",    "0"},
@@ -1117,7 +1104,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SPACE_HARD",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed",       "50"},
@@ -1130,7 +1116,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","PLANET_EASY",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed",       "90"},
@@ -1157,7 +1142,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["PRECEDING_FIRST"] = "TRUE",
                             ["PRECEDING_KEY_WORDS"] = {"EngineTable",},
                             ["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MinSpeed",   "70"},
@@ -1168,7 +1152,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_SLOW",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed",       "160"},
@@ -1178,7 +1161,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_FAST",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"MaxSpeed",       "180"},

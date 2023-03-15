@@ -1,11 +1,12 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]       = "_00_POD.GetToTheFunPartv4.05.0.pak",
-["MOD_DESCRIPTION"]    = "Start off with everything working and fueled up",
-["MOD_AUTHOR"]         = "PodcastPrimate",
-["LUA Fix and Update"] = "Babscoole",
-["NMS_VERSION"]        = "4.05",
-["MODIFICATIONS"]      =
+["MOD_FILENAME"]            = "_00_POD.GetToTheFunPartv4.05.0.pak",
+["MOD_DESCRIPTION"]         = "Start off with everything working and fueled up",
+["MOD_AUTHOR"]              = "PodcastPrimate",
+["LUA Fix and Update"]      = "Babscoole",
+["NMS_VERSION"]             = "4.05",
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
+["MODIFICATIONS"]           =
     {
         {
             ["MBIN_CHANGE_TABLE"] =
@@ -154,7 +155,6 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"ReputationGainMultipliers",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Slow", "0.5"},
@@ -176,14 +176,12 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["PRECEDING_KEY_WORDS"] = {"BreakTechOnDamageMultipliers",},
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"High", "1"},
                             }
                         },
                         {
-                            ["INTEGER_TO_FLOAT"] = "FORCE",
                               ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"AlienPodThreshold2",           "0"},
