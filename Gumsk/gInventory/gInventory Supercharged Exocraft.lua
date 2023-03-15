@@ -4,7 +4,7 @@ ModNameSub = "Exocraft"
 BaseDescription = "Makes alll exocraft slots supercharged"
 GameVersion = "411"
 ModVersion = "a"
-FileSource1 = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"
+FileSource1 = "METADATA\\GAMESTATE\\DEFAULTSAVEDATA.MBIN"
 
 AddSpecialSlots = [[          <Property name="SpecialSlots">
 ]]
