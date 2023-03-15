@@ -2,10 +2,10 @@ MAPS! = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.DDS" -- Freight
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_fSails_Rainbow.pak",
+["MOD_FILENAME"]	= "_hF_fSails_Bumblebee.pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
 ["NMS_VERSION"]		= "1",
-["MOD_DESCRIPTION"]	= "Rainbow Sails for Freighters",
+["MOD_DESCRIPTION"]	= "Bumblebee Sails for Freighters",
 ["MODIFICATIONS"]	= 
 	{
 		{

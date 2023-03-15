@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Better Ship Transfer Range 4.2.pak", 
+["MOD_FILENAME"] 			= "Better Ship Transfer Range 4.4.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.06",
+["NMS_VERSION"]				= "4.10",
 ["MOD_DESCRIPTION"]			= "This mods increases default ship transfer range from 50 to 200m",
 ["MODIFICATIONS"] 			= 
 	{
