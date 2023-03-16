@@ -646,7 +646,7 @@ NUM_VANILLA_COLOUR =
 
 -- MULTIPLIER TO THE HEIGHT OF THE COLOUR PALETTE SELECTRION WINDOW
 -- MODIFY WITH CARE
-UI_HEIGHT_MULTIPLIER = "3.2"
+UI_HEIGHT_MULTIPLIER = "2.85"
 
 -- NUMBER OF CURRENT VANILLA PALETTES
 -- ONLY EDIT UPON VANILLA BASE BUILDING PALETTE UPDATES
@@ -671,7 +671,7 @@ UI_SINGLE_LINE = 8
 
 -- SUB CANVAS EXTRA UI HEIGHT
 -- DO NOT ALTER
-UI_OUTER_SPACING = "17"
+UI_OUTER_SPACING = "13"
 
 -- NUMBER OF PALETTES ADDED WITH YEET_VANILLA_PALETTES TRUE PRE-3.95
 -- DO NOT ALTER
@@ -682,7 +682,8 @@ DEBUG_TEXT = false
 
 -- EXML DATA BLOCKS
 COLOUR_START =  [[
-		<!--BuildFrame--><Property value="GcNGuiSpacingData.xml">
+		<!--BuildFrame-->
+		<Property value="GcNGuiSpacingData.xml">
           <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="" />
             <Property name="PresetID" value="" />
@@ -796,7 +797,7 @@ LINE_BREAK = [[
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="7" />
-              <Property name="Height" value="12" />
+              <Property name="Height" value="2" />
               <Property name="ConstrainAspect" value="1" />
               <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
@@ -828,7 +829,7 @@ LINE_BREAK = [[
               <Property name="PositionX" value="0" />
               <Property name="PositionY" value="0" />
               <Property name="Width" value="0" />
-              <Property name="Height" value="50" />
+              <Property name="Height" value="2" />
               <Property name="ConstrainAspect" value="1" />
               <Property name="MaxWidth" value="0" />
               <Property name="Align" value="TkNGuiAlignment.xml">
@@ -1290,6 +1291,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_DESCRIPTION"]			= "Selection Augmentation for Colour System", -- AKA Palette Augmentation and Tailoring System (PAnTS)
 ["NMS_VERSION"]				= "",
 ["GLOBAL_INTEGER_TO_FLOAT"]	= "PRESERVE",
+["AMUMSS_SUPPRESS_MSG"]     = "UNUSED_VARIABLE",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -1377,7 +1379,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData.xml" }, 
 							-- ["SECTION_ACTIVE"] = 1,
 							["REPLACE_TYPE"] = "",
-							["MATH_OPERATION"] = "-",
+							["MATH_OPERATION"] = "+",
 							["VALUE_CHANGE_TABLE"] = 
 							{ 
 								{"Height", UI_OUTER_SPACING},
@@ -1399,7 +1401,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = { "Children", "GcNGuiLayerData.xml" }, 
 							-- ["SECTION_ACTIVE"] = 1,
 							["REPLACE_TYPE"] = "",
-							["MATH_OPERATION"] = "+",
+							["MATH_OPERATION"] = "-",
 							["VALUE_CHANGE_TABLE"] = 
 							{ 
 								{"Height", UI_OUTER_SPACING},
