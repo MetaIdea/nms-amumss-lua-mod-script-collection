@@ -1,12 +1,11 @@
-EDITION = "CLASSICS"	-- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
-
+DEFAULT_EDITION = "CLASSICS_B" -- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
 
 -- Suit parts minus backpack
 -- VYK = Armoured Suit
 -- GOLD = Golden Suit
 GET_SUIT = "VYK"
 
-CAPE = "CAPE_JELLY"
+DEFAULT_CAPE = "CAPE_JELLY"
 -- Choose the cape
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you don't want any capes
@@ -22,7 +21,7 @@ CAPE_SANDWORM
 CAPE_JELLY
 ]]
 
-BACKPACK = "BACKPACK_ROYAL"
+DEFAULT_BACKPACK = "BACKPACK_ROYAL"
 -- Choose the backpack
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you want the default backpack
@@ -184,11 +183,15 @@ HEADS =
 							
 	},
 	["CLASSICS_B"]  	= 
-	{	
+	{	["ANY"] 	= {	["EXCLUDE"] = "NONE",
+						["HEAD"]	= {
+										"REG_HEAD_SAIL",
+									  },
+					  },
 		["ASTRO"]	= {	["EXCLUDE"] = "ASTRO",
 						["HEAD"]	= {
 										"REG_HEAD_HOOD01",
-										"REG_HEAD_SAIL",
+										"HEAD_BUCKET",
 									  },
 					  },
 							
@@ -237,6 +240,74 @@ RGB = {"R", "G", "B"}
 DEBUG_TEXT = false
 -- prints debug related variables in text
 
+EDITION = ""
+
+EDITION_LIST = {"CLASSICS", "CLASSICS_B", "FOURTH_A", "FOURTH_B"}
+
+EDITION_PROMPT =
+{ 0,
+[[Which Edition would you like to install?
+1 - CLASSICS A
+2 - CLASSICS B
+3 - FOURTH A
+4 - FOURTH B
+Ignore for 10 seconds to use default stated in DEFAULT_EDITION
+]] }
+
+EDITION_DECISION = GUIF(EDITION_PROMPT, 10)
+if EDITION_DECISION == 0 or EDITION_DECISION > #EDITION_LIST then
+	EDITION = DEFAULT_EDITION
+	else EDITION = EDITION_LIST[EDITION_DECISION]
+end
+
+CAPE = ""
+
+CAPE_LIST = {"CAPE_ATLAS", "CAPE_PROTO", "CAPE_PIRATE", "CAPE_INFINITY", "CAPE_FREIGHTER", "CAPE_FRIGATE", "CAPE_SANDWORM", "CAPE_JELLY"}
+
+CAPE_PROMPT =
+{ 69,
+[[Which Cape would you like to equip?
+0 - None
+1 - CAPE_ATLAS
+2 - CAPE_PROTO
+3 - CAPE_PIRATE
+4 - CAPE_INFINITY
+5 - CAPE_FREIGHTER
+6 - CAPE_FRIGATE
+7 - CAPE_SANDWORM
+8 - CAPE_JELLY
+Ignore for 10 seconds to use default stated in DEFAULT_CAPE
+]] }
+
+CAPE_DECISION = GUIF(CAPE_PROMPT, 10)
+if CAPE_DECISION > #CAPE_LIST then
+	CAPE = DEFAULT_CAPE
+	elseif CAPE_DECISION ~= 0 then
+	CAPE = CAPE_LIST[CAPE_DECISION]
+end
+
+BACKPACK = ""
+
+BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_CAPE"}
+
+BACKPACK_PROMPT =
+{ 69,
+[[Which Cape would you like to equip?
+0 - Vanilla Default
+1 - BACKPACK_RETRO
+2 - BACKPACK_EXPD1
+3 - BACKPACK_ROYAL
+4 - BACKPACK_CAPE
+Ignore for 10 seconds to use default stated in DEFAULT_BACKPACK
+]] }
+
+BACKPACK_DECISION = GUIF(BACKPACK_PROMPT, 10)
+if BACKPACK_DECISION > #BACKPACK_LIST then
+	BACKPACK = DEFAULT_BACKPACK
+	elseif BACKPACK_DECISION ~= 0 then
+	BACKPACK = BACKPACK_LIST[BACKPACK_DECISION]
+end
+
 function trunc(x)
 	return math.modf(x*1000)/1000
 end
@@ -282,8 +353,9 @@ for i,j in pairs(RACES) do						-- adding all the heads to each race
 			if j ~= q["EXCLUDE"] then			-- exclude head list from being added into race if excluded
 			ADD_HEAD_ENTRY = {}
 			ADD_HEAD_ENTRY = {	["SPECIAL_KEY_WORDS"] = {"Name", j .. "_" .. PRESET_SLOT[PRESET_COUNT]},
-								["PRECEDING_KEY_WORDS"] = {"NMSString0x10.xml", "NMSString0x10.xml"},
-								["REPLACE_TYPE"] = "",
+								["PRECEDING_KEY_WORDS"] = {"NMSString0x10.xml"},
+								["SECTION_ACTIVE"] = -2,
+								-- ["REPLACE_TYPE"] = "",
 								["VALUE_CHANGE_TABLE"] = {}
 							 }
 			-- replace value at 2nd NMSString0x10.xml since first is race
@@ -293,13 +365,11 @@ for i,j in pairs(RACES) do						-- adding all the heads to each race
 			for m,n in pairs(SHOULDERKNESSANDTOES) do			-- adding each body part sequentially in their own EXML_CHANGE_TABLE entry
 				ADD_HEAD_ENTRY = {}
 				ADD_HEAD_ENTRY = {	["SPECIAL_KEY_WORDS"] = {"Name", j .. "_" .. PRESET_SLOT[PRESET_COUNT]},
-									["PRECEDING_KEY_WORDS"] = {"NMSString0x10.xml", "NMSString0x10.xml"},
-									["REPLACE_TYPE"] = "",
+									["PRECEDING_KEY_WORDS"] = {"NMSString0x10.xml"},
+									["SECTION_ACTIVE"] = (-2-m),
+									-- ["REPLACE_TYPE"] = "",
 									["VALUE_CHANGE_TABLE"] = {}
 								 }
-				for o=1, m do					-- adding more NMSString0x10.xml for m times for each body part
-					table.insert(ADD_HEAD_ENTRY["PRECEDING_KEY_WORDS"], "NMSString0x10.xml")
-				end
 				HEAD_TEMP = {"Value", n}
 				table.insert(ADD_HEAD_ENTRY["VALUE_CHANGE_TABLE"], HEAD_TEMP)
 				table.insert(HEAD_CHANGE_TABLE, ADD_HEAD_ENTRY)
@@ -361,10 +431,16 @@ MAX_COLOUR_SLOTS = 64 - NUM_VANILLA_COLOUR -- limits number of custom colours si
 COLOUR_CHANGE_TABLE = {}
 for i,j in pairs(NEW_COLOURS) do	-- building the EXML_CHANGE_TABLE for player colour palette
     if DEBUG_TEXT then print(i) end
-	ADD_COLOUR_ENTRY = {["PRECEDING_KEY_WORDS"] = { "Player", "Colours" }, ["INTEGER_TO_FLOAT"] = "FORCE", ["VALUE_CHANGE_TABLE"] = {}}	
-	for k=1, NUM_VANILLA_COLOUR + i do
-		table.insert(ADD_COLOUR_ENTRY["PRECEDING_KEY_WORDS"], "Colour.xml")
-	end
+	ADD_COLOUR_ENTRY =
+	{	["SPECIAL_KEY_WORDS"] = { "Player", "GcPaletteData.xml" },
+		["PRECEDING_KEY_WORDS"] = { "Colour.xml" },
+		["INTEGER_TO_FLOAT"] = "FORCE",
+		["SECTION_ACTIVE"] = -(NUM_VANILLA_COLOUR + i),
+		["VALUE_CHANGE_TABLE"] = {}
+	}	
+	-- for k=1, NUM_VANILLA_COLOUR + i do
+		-- table.insert(ADD_COLOUR_ENTRY["PRECEDING_KEY_WORDS"], "Colour.xml")
+	-- end
     for m,n in pairs(RGB) do
         COLOUR_TEMP = { n, j[n] }
         table.insert(ADD_COLOUR_ENTRY["VALUE_CHANGE_TABLE"], COLOUR_TEMP)
@@ -412,6 +488,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"] 			= PAK_NAME[EDITION],
 ["MOD_AUTHOR"]				= "WinderTP",
+["AMUMSS_SUPPRESS_MSG"] 	= "UNUSED_VARIABLE",
 ["MODIFICATIONS"] 			= 
 	{
 		{
