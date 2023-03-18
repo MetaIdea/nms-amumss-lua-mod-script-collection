@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items EM Any 10x"
 BaseDescription = "Removes restrictions on base building items"
-GameVersion = "411"
+GameVersion = "415"
 ModVersion = "a"
-FileSource1 = "METADATA\\REALITY\\TABLES\\BASEBUILDINGOBJECTSTABLE.MBIN"
+FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
 MessageModRegion = 2		--Original 3/planet
 SolarRate = 500				--Original 50
@@ -314,7 +314,7 @@ for i = 1,#PlantableList do
 		["SPECIAL_KEY_WORDS"] = {"ID",PlantableList[i]},
 		["PRECEDING_KEY_WORDS"] = {"DependentConnections"},
 		["VALUE_CHANGE_TABLE"] = {
-			{"ConnectionDistance",100},
+			{"ConnectionDistance",30},
 		},
 	}
 	--Assign temporary table to the next entry in the EXML_CHANGE_TABLE
