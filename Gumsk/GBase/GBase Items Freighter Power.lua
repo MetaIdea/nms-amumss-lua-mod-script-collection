@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gBase"
 ModNameSub = "Items Freighter Power"
 BaseDescription = "Increases amount of free power on freighters"
-GameVersion = "411"
+GameVersion = "415"
 ModVersion = "a"
-FileSource1 = "METADATA\\REALITY\\TABLES\\BASEBUILDINGOBJECTSTABLE.MBIN"
+FileSource1 = "METADATA\REALITY\TABLES\BASEBUILDINGOBJECTSTABLE.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_FILENAME"]	= ModName.." "..ModNameSub.." "..GameVersion..ModVersion..".pak",
