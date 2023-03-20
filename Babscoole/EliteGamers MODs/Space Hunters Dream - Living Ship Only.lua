@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "living ship hunter.pak",
+["MOD_FILENAME"]  = "living ship only.pak",
 ["MOD_AUTHOR"]    = "EliteGamers",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.14",
+["NMS_VERSION"]   = "4.15",
 ["MODIFICATIONS"] =
     {
         {
@@ -52,14 +52,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                             }
                         },
                         {
-                            ["FOREACH_SKW_GROUP"] =
-                            {
-                                {"Dropship", "IGNORE"},
-                                {"Fighter", "IGNORE"},
-                                {"Scientific", "IGNORE"},
-                                {"Shuttle", "IGNORE"},
-                                {"Royal", "IGNORE"},
-                            },
+                            ["SPECIAL_KEY_WORDS"] = {"Dropship", "IGNORE"},
 							["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
@@ -72,6 +65,19 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Alien", "1000"},
+                            }
+                        },
+                    }
+                },
+                {
+                    ["MBIN_FILE_SOURCE"] = "GCAISPACESHIPGLOBALS.GLOBAL.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["VALUE_CHANGE_TABLE"] =
+                            {
+                                {"DockWaitMinTime", "10"},
+                                {"DockWaitMaxTime", "15"},
                             }
                         },
                     }
