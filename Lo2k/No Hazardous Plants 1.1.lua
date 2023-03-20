@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "No Hazardous Plants.pak", 
+["MOD_FILENAME"] 			= "No Hazardous Plants 1.1.pak", 
 ["MOD_AUTHOR"]				= "Lo2k (Mod idea by anon219038)",
-["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.12.1",
+["LUA_AUTHOR"]				= "Lo2k (additional code by Arjed)",
+["NMS_VERSION"]				= "4.15",
 ["MOD_DESCRIPTION"]			= "This mod removes all hazardous plants",
 ["MODIFICATIONS"] 			= 
 	{
@@ -45,6 +45,22 @@ NMS_MOD_DEFINITION_CONTAINER =
 						},
 					},
 				}	
+			}
+		},
+		{
+			["MBIN_CHANGE_TABLE"] 	=   --by Arjed
+			{ 
+				{
+					["MBIN_FILE_SOURCE"] = {"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FULLSAFE.MBIN"},  
+					["EXML_CHANGE_TABLE"] = 
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename", "MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT.SCENE.MBIN",},
+							["SECTION_UP"] = 1,
+							["REMOVE"] = "SECTION"
+						}
+					}
+				}
 			}
 		}
 	}	

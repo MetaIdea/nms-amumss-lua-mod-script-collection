@@ -12,11 +12,9 @@
 -- ------------------You can configure the overhaul from the following VARs-------------------------------- --
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
--- Main Features enabler -- ----------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "REDMAS_E3PIC_FANTASY_PRESET"
+INIT = "FANTASY_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -537,7 +535,7 @@ FANTASY_2_PRESET ={
         ["VISUAL_OVERHAUL"] = "ON",
         ["REDMAS_WATER_REFLECTIONS"] = "ON",
         ["SPACE_BLUR_FEATURE"] = "ON",
-        ["FILTERS_SWAP_FEATURE"] = "OFF",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
         ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
@@ -590,12 +588,12 @@ FANTASY_2_PRESET ={
         {
             ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON",
             ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON",
-            ["CUSTOM_NOMAD_EXOCRAFT"] = "ON",
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF",
             ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF", --  "KANEDA BIKE INSPIRED SKIN"
             ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
             ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
-            ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
-            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
+            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF", -- LARGER BEHIND WHEELS
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "OFF",
             ["GIANT_MECHS_BETA_FEATURE"] = "ON",
             ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
         },
@@ -610,7 +608,7 @@ FANTASY_2_PRESET ={
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
         ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
-        ["GIANTS_CREATURES_FEATURE"] = "ON",
+        ["GIANTS_CREATURES_FEATURE"] = "OFF",
         ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
     ["GENERATION_FEATURES"] =
@@ -629,14 +627,14 @@ FANTASY_2_PRESET ={
             ["TERRAIN_SHAPES_FEATURES"] =
             {
                 ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
                 ["TERRAIN_HEIGHT_MAX"] = "140",
             },
             ["BIOMES_FEATURES"] =
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "ON",
-                ["SKY_BIOMES_FEATURE"] = "ON",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
                 ["STORM_BIOMES_FEATURES"] = "ON",
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
@@ -716,7 +714,7 @@ FANTASY_2_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
+-- ( Ctrl + S to save )
 --
 ------------------------------------------------------------------------------------------
 FANTASY_PRESET ={
@@ -725,23 +723,23 @@ FANTASY_PRESET ={
     {
         ["VISUAL_OVERHAUL"] = "ON",
         ["REDMAS_WATER_REFLECTIONS"] = "ON",
-        ["SPACE_BLUR_FEATURE"] = "OFF",
-        ["FILTERS_SWAP_FEATURE"] = "ON",
-        ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
+        ["SPACE_BLUR_FEATURE"] = "ON",
+        ["FILTERS_SWAP_FEATURE"] = "OFF",
+        ["BINOCULARS_TYPE"] = "CLEAR", -- SUN / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- (REALISTIC / VANILLA / E3 )
         ["SPACE_COLOURS_TYPE"] = "FANTASY", -- (REALISTIC / VANILLA / FANTASY )
-        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["ASTEROIDS_FIELDS_TYPE"] = "OFF", -- ("FANTASY" / "REALISTIC" / "GLUED")
         ["FIGHTERS_SPACESHIPS_REPAINT"] = "ON",
         ["DROPSHIPS_SPACESHIPS_REPAINT"] = "ON",
         ["SHUTTLE_SPACESHIPS_REPAINT"] = "ON",
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "PRE-RELEASE5",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "LARGEBACKDROP", --"E-E3-1"   or another img name 
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
-        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE2", --"E3-RUINS"   or another img name 
+        ["HELLO_GAMES_SPASH_SCREEN"] = "PRE-RELEASE5",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "LARGEBACKDROP", --"E-E3-1"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
+        ["MENU_SPLASH_SCREEN"] = "PRE-RELEASE2", --"E3-RUINS"   or another img name
         ["TRANSPARENT_OPTIONS_MENU"] = "ON",
     },
     ["CAMERA_FEATURES"] =
@@ -809,9 +807,9 @@ FANTASY_PRESET ={
         {
 			-- The script will procedurally generate new colours possibilties
 			-- different each time the overhaul is generated ( x100 by default).
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
             ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
         },
         ["PLANETS_GENERATION_FEATURES"] =
         {
@@ -826,7 +824,7 @@ FANTASY_PRESET ={
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "ON",
                 ["SKY_BIOMES_FEATURE"] = "OFF",
-                ["STORM_BIOMES_FEATURES"] = "ON",
+                ["STORM_BIOMES_FEATURES"] = "OFF",
                 ["GIANTS_BIOMES_FEATURE"] = "OFF",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
                 ["MONTAINS_BIOMES_FEATURE"] = "ON",
@@ -840,7 +838,7 @@ FANTASY_PRESET ={
                 ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
-                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
                 ["REDMAS_RUINS_FEATURES"] = "OFF",
                 ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "OFF",
             },
@@ -910,7 +908,7 @@ FANTASY_PRESET ={
 ------------------------------------------------------------------------------------------
 
 CUSTOM_PRESET ={
-	["MODNAME"] = "UTOPIA-REVAMP-V10",
+	["MODNAME"] = "UTOPIA-REVAMP-V11",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
@@ -1218,7 +1216,7 @@ EUPHORIA_PRESET ={
                 ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "ON",
                 ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "ON",
-                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "ON",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
                 ["REDMAS_RUINS_FEATURES"] = "ON",
                 ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "ON",
             },
@@ -5233,8 +5231,8 @@ SCIFI_FANTASY_PRESET ={
         ["VISUAL_OVERHAUL"] = "ON",
         ["REDMAS_WATER_REFLECTIONS"] = "ON",
         ["SPACE_BLUR_FEATURE"] = "ON",
-        ["FILTERS_SWAP_FEATURE"] = "ON",
-        ["BINOCULARS_TYPE"] = "SUN", -- CLEAR / CLEAR
+        ["FILTERS_SWAP_FEATURE"] = "OFF",
+        ["BINOCULARS_TYPE"] = "CLEAR", -- CLEAR / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
         ["SPACE_COLOURS_TYPE"] = "REALISTIC", -- (REALISTIC / VANILLA / FANTASY )
@@ -5287,11 +5285,11 @@ SCIFI_FANTASY_PRESET ={
             ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "ON",
             ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "ON",
             ["CUSTOM_NOMAD_EXOCRAFT"] = "ON",
-            ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON", --  "KANEDA BIKE INSPIRED SKIN"
+            ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF", --  "KANEDA BIKE INSPIRED SKIN"
             ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON", -- "MAKO-A" ( "Mass Effect" Inspired skin" ( put "OFF" to disable the feature )
             ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
             ["ROAMER_BIGWHEELS_FEATURE"] = "OFF", -- LARGER BEHIND WHEELS
-            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "OFF",
             ["GIANT_MECHS_BETA_FEATURE"] = "ON",
             ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
         },
@@ -5306,7 +5304,7 @@ SCIFI_FANTASY_PRESET ={
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
         ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
-        ["GIANTS_CREATURES_FEATURE"] = "ON",
+        ["GIANTS_CREATURES_FEATURE"] = "OFF",
         ["GIANTS_MAX_SIZE"] = "24", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
     ["GENERATION_FEATURES"] =
@@ -5316,17 +5314,17 @@ SCIFI_FANTASY_PRESET ={
         {
 			-- The script will procedurally generate new colours possibilties
 			-- different each time the overhaul is generated ( x100 by default).
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "ON",
             ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
         },
         ["PLANETS_GENERATION_FEATURES"] =
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "822",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
+                ["TERRAIN_HEIGHT_MAX"] = "422",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -10990,7 +10988,7 @@ if TRANSPARENT_OPTIONS_MENU == "ON" then
 table.insert(CUSTOM_CONTENT, TRANSPARENT_OPTIONS_CONTENT)--]=]
 end
 
-
+CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to prevent the deprecated constructs spawner use -->]]
 ------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------
 -- END REDMAS GAME OVERHAUL BUILDER  -----------------------------------------------------------------------------------------------------
@@ -30653,8 +30651,11 @@ LUSHGRASSLIST =
 
 end
 
-	-- CONSTRUCTS SPAWNRATE
+	-- CONSTRUCTS SPAWN
 	if CONSTRUCTS_BY_MSSP_SPAWNER == "ON" then
+
+
+
 	CONSTRUCTS_CONTENT =
 	{
 
@@ -31284,6 +31285,9 @@ end
 	CONSTRUCTS_SPAWNER_WATER2 = readTemplate("CONSTRUCTS_SPAWNER_WATER2")
 	CONSTRUCTS_SPAWNER_WATER3 = readTemplate("CONSTRUCTS_SPAWNER_WATER3")
 	CONSTRUCTS_SPAWNER_WATER4 = readTemplate("CONSTRUCTS_SPAWNER_WATER4")
+	
+
+
 	addFeature
 	(
 		CONSTRUCTS_BY_MSSP_SPAWNER,
@@ -31372,6 +31376,18 @@ end
 					{
 						[[InteractDistance" value="0"]],
 						[[InteractDistance" value="50"]]
+					}
+				}
+			},
+						{
+				["MBIN_FILE_SOURCE"] = {
+					[[METADATA\SIMULATION\ENVIRONMENT\PLANETBUILDINGTABLE.MBIN]],
+				},
+				["EXML_CHANGE_TABLE"] = {
+					{
+						["PRECEDING_KEY_WORDS"] = "BuildingFiles",
+						["SECTION_ACTIVE"] = {0,1},
+						["ADD"] = CONSTRUCTS_WARNING
 					}
 				}
 			},
