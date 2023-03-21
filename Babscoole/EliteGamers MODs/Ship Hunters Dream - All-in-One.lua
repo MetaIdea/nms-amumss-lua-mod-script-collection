@@ -1,18 +1,45 @@
-SHIPCHOICE = "Dropship"
+SHIPCHOICE = 1
 
 InputSHIPCHOICE = {SHIPCHOICE,
 [[
-    Choose a ship option?  Options are Dropship, Fighter, Scientific, Shuttle, Royal, Alien, or Sail.  Selection is case sensitive!
-    Default = Dropship | Current = >> ]] .. (SHIPCHOICE) .. [[ <<
+    Choose a ship option:
+    1 - Dropship (Hauler)
+    2 - Fighter
+    3 - Scientific (Explorer)
+    4 - Shuttle
+    5 - Royal (Exotic)
+    6 - Alien (Living)
+    7 - Sail (Solar)
+    Default = 1 | Current = >> ]] .. (SHIPCHOICE) .. [[ <<
 ]]}
 
-SHIPCHOICE = GUIF(InputSHIPCHOICE,20)
+while SHIPCHOICE do
+  SHIPCHOICE = GUIF(InputSHIPCHOICE,20)
+
+  if SHIPCHOICE ~= 1 and SHIPCHOICE ~= 2 and SHIPCHOICE ~= 3 and SHIPCHOICE ~= 4 and SHIPCHOICE ~= 5 and SHIPCHOICE ~=  6 and SHIPCHOICE ~= 7 then
+    print("         >>> ["..SHIPCHOICE.."] is NOT a valid choice.  Must be a number between 1-7.  Please retry! <<<")
+  else
+    break
+  end
+end
+
+if SHIPCHOICE == 1 then
+  SHIPCHOICE = "Dropship"
+elseif SHIPCHOICE == 2 then
+  SHIPCHOICE = "Fighter"
+elseif SHIPCHOICE == 3 then
+  SHIPCHOICE = "Scientific"
+elseif SHIPCHOICE == 4 then
+  SHIPCHOICE = "Shuttle"
+elseif SHIPCHOICE == 5 then
+  SHIPCHOICE = "Royal"
+elseif SHIPCHOICE == 6 then
+  SHIPCHOICE = "Alien"
+elseif SHIPCHOICE == 7 then
+  SHIPCHOICE = "Sail"
+end
  print("SHIPCHOICE = "..tostring(SHIPCHOICE))
 
-
-if SHIPCHOICE ~= "Dropship" or "Fighter" or "Scientific" or "Shuttle" or "Royal" or  "Alien" or "Sail" then
-    print("         >>> ["..SHIPCHOICE.."] is NOT a valid color choice, please retry! <<<")
-end
 
 NMS_MOD_DEFINITION_CONTAINER =
 {
@@ -31,7 +58,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                     {
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Dropship", "IGNORE"},
-							["REPLACE_TYPE"] = "ALL",
+                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"IGNORE", "0"},
@@ -39,7 +66,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"] = {"Alien","IGNORE"},
-							["REPLACE_TYPE"] = "ALL",
+                            ["REPLACE_TYPE"] = "ALL",
                             ["VALUE_CHANGE_TABLE"] =
                             {
                                 {SHIPCHOICE, "1000"},
@@ -75,7 +102,7 @@ if SHIPCHOICE == "Alien" then
           {"CivilianTraderSpaceshipsCacheCount",  "1000"},
       }
   }
-  
+
   Change_Table_Array[#Change_Table_Array + 1] =
   {
       ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
@@ -85,7 +112,7 @@ if SHIPCHOICE == "Alien" then
           {"IGNORE", "10"},
       }
   }
-  
+
   Change_Table_Array[#Change_Table_Array + 1] =
   {
       ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},
@@ -95,7 +122,7 @@ if SHIPCHOICE == "Alien" then
           {"IGNORE", "20"},
       }
   }
-  
+
   Change_Table_Array[#Change_Table_Array + 1] =
   {
       ["PRECEDING_KEY_WORDS"] = {"SpaceshipSpawnFreqMultipliers"},

@@ -3022,7 +3022,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v5.1c.pak",
+["MOD_FILENAME"] 			= "LASAGNA_CustomBiomes_Med_v5.2.pak",
 ["MOD_AUTHOR"]				= "AGhostlyPepper aka Lasagna - with [unused] Shaidak's Gen code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -5835,6 +5835,97 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
 							["ADD"] = AddGrass(),
+						},
+					},
+				},
+				
+				
+							--BIOMES 102
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"CUSTOMBIOMES\GHOSTLYNEW102.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("CUSTOMMODELS\BIGTRIANGLETREE\BIGTRIANGLETREE.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.035)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 1, 6, 10, 0.18, 0.13),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddGrass(),
+						},
+					},
+				},
+
+							--BIOMES 103
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"CUSTOMBIOMES\GHOSTLYNEW103.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("CUSTOMMODELS\REFLECTSHROOM\REFLECTSHROOM.SCENE.MBIN", 60, 0.5, 0.75, 10, 0.18, 0.09)..
+							BiomeExtension("MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN", 30, 1, 6, 10, 0.18, 0.13),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddGrass(),
+						},
+					},
+				},
+							
+							--BIOMES 104
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"CUSTOMBIOMES\GHOSTLYNEW104.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("CUSTOMMODELS\ROCKDOOR\ROCKDOOR.SCENE.MBIN", 60, 1, 3, 10, 0.18, 0.02)..
+							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS1\ISLAND1CUPROCK.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
+							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS4\ISLAND4HUGEROCK.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008)..
+							BiomeExtension("CUSTOMMODELS\FLOATINGISLANDS6\ISLAND6SMALLCONESTONE.SCENE.MBIN", 50, 0.8, 1.5, 5, 0.18, 0.008),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddGrass(),
+						},
+					},
+				},
+
+							--BIOMES 105
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"CUSTOMBIOMES\GHOSTLYNEW105.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","Landmarks",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = BiomeExtension("CUSTOMMODELS\TALLPINETREES\TALLPINETREEBIG.SCENE.MBIN", 60, 2, 4, 10, 0.18, 0.12)..
+							BiomeExtension("CUSTOMMODELS\TALLPINETREES\TALLPINETREESMALL.SCENE.MBIN", 60, 1, 2, 10, 0.18, 0.14),
+						},
+						{
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddGrassShort(),
 						},
 					},
 				},
