@@ -3,7 +3,7 @@ ModDescription = "Adds 100k procedurally generated skies, and increases day/nigh
 ModdedFile = "GCSKYGLOBALS.GLOBALS.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= "DRKAII_GnomeAnnsSky100K V3 + 4x Day Night Cycle Length + Less Storms [Endurance].pak",
+["MOD_FILENAME"]	= "DRKAII_GnomeAnnsSky100K V3 + 4x Day Night Cycle Length + Less Storms [Fractal].pak",
 ["MOD_DESCRIPTION"]	= ModDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

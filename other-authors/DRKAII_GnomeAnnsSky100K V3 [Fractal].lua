@@ -1,9 +1,9 @@
 Author = "Dr. Kaii"
-ModDescription = "Adds 100k procedurally generated skies"
+ModDescription = "Adds 100k procedurally generated skies, and increases day/night cycle by a factor of 4 (day and night both 1 hour long), and increases gaps between storms (won't occur less than 45 minutes or more than 60 minutes apart)"
 ModdedFile = "GCSKYGLOBALS.GLOBALS.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = {
-["MOD_FILENAME"]	= "DRKAII_GnomeAnnsSky100K V3 [Endurance].pak",
+["MOD_FILENAME"]	= "DRKAII_GnomeAnnsSky100K V3 [Fractal].pak",
 ["MOD_DESCRIPTION"]	= ModDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,

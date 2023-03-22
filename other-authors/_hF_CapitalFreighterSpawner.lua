@@ -8,7 +8,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
 ["MOD_DESCRIPTION"]	= "Replaces the first set of Freighter spawns w/ the system's Capital Freighter",
-["MODIFICATIONS"]	= 		=
+["MODIFICATIONS"]	= 
 	{
 		{
 			["MBIN_CHANGE_TABLE"] 	=
