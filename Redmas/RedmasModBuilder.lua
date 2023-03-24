@@ -1,8 +1,3 @@
-----------------------------------------------------------------------------------------
---
--- ( Ctrl + S to save )
---
-------------------------------------------------------------------------------------------
 -- ************************************************************************************************************
 -- If you only have that .lua file, download the RGOG at https://www.nexusmods.com/nomanssky/mods/2578 in order to update the mod
 --
@@ -17,11 +12,9 @@
 -- ------------------You can configure the overhaul from the following VARs-------------------------------- --
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
--- Main Features enabler -- ----------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "CUSTOM_PRESET"
+INIT = "FANTASY_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -231,7 +224,7 @@ FANTASY_SYNTHESIS_PRESET ={
     {
         ["CREATURES_OVERHAUL"] = "ON",
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
-        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -420,7 +413,7 @@ FANTASY_ORIGINS_PRESET ={
     {
         ["CREATURES_OVERHAUL"] = "ON",
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
-        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -609,7 +602,7 @@ FANTASY_2_PRESET ={
     {
         ["CREATURES_OVERHAUL"] = "ON",
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
-        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -798,7 +791,7 @@ FANTASY_PRESET ={
     {
         ["CREATURES_OVERHAUL"] = "ON",
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
-        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -915,7 +908,7 @@ FANTASY_PRESET ={
 ------------------------------------------------------------------------------------------
 
 CUSTOM_PRESET ={
-	["MODNAME"] = "UTOPIA-REVAMP-V11",
+	["MODNAME"] = "UTOPIA-REVAMP-V12",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "ON",
@@ -987,8 +980,8 @@ CUSTOM_PRESET ={
     ["CREATURES_FEATURES"] =
     {
         ["CREATURES_OVERHAUL"] = "ON",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
-        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -1020,12 +1013,12 @@ CUSTOM_PRESET ={
             {
                 ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "ON",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
                 ["FANTASY_BIOMES_FEATURE"] = "OFF",
-                ["SKY_BIOMES_FEATURE"] = "ON",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
                 ["STORM_BIOMES_FEATURES"] = "OFF",
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
-                ["MONTAINS_BIOMES_FEATURE"] = "ON",
-                ["CAVE_BIOMES_FEATURE"] = "ON",
+                ["MONTAINS_BIOMES_FEATURE"] = "OFF",
+                ["CAVE_BIOMES_FEATURE"] = "OFF",
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] =
             {
@@ -1044,7 +1037,7 @@ CUSTOM_PRESET ={
         {
             ["REDMAS_SPACE_GENERATION"] = "ON",
             ["TRADING_ROUTES"] = "OFF",
-            ["MASSIVE_FLEET"] = "ON",
+            ["MASSIVE_FLEET"] = "OFF",
             ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON",
         },
         ["SPACESHIPS_GENERATION_FEATURES"] =
@@ -1176,7 +1169,7 @@ EUPHORIA_PRESET ={
     {
         ["CREATURES_OVERHAUL"] = "ON",
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
-        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -1200,9 +1193,9 @@ EUPHORIA_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
                 ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON", -- ( makes ressources deposits sticking out the planet surface)
-                ["TERRAIN_HEIGHT_MAX"] = "800",
+                ["TERRAIN_HEIGHT_MAX"] = "100",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -1213,7 +1206,7 @@ EUPHORIA_PRESET ={
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
                 ["MONTAINS_BIOMES_FEATURE"] = "ON",
-                ["CAVE_BIOMES_FEATURE"] = "ON",
+                ["CAVE_BIOMES_FEATURE"] = "OFF",
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] =
             {
@@ -2791,12 +2784,12 @@ REDMAS_CHALLENGE_MODE_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
+-- ( Ctrl + S to save )
 --
 ------------------------------------------------------------------------------------------
 
 REDMAS_E3PIC_FANTASY_PRESET ={
-	["MODNAME"] = "__EUPHORIA_WORLDS_GENERATION_extension_v4",
+	["MODNAME"] = "__EUPHORIA_WORLDS_GENERATION_extension_v4.1",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -2814,10 +2807,10 @@ REDMAS_E3PIC_FANTASY_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS" or another img name   
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS" or another img name
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
@@ -2867,9 +2860,9 @@ REDMAS_E3PIC_FANTASY_PRESET ={
     },
     ["CREATURES_FEATURES"] =
     {
-        ["CREATURES_OVERHAUL"] = "ON",
+        ["CREATURES_OVERHAUL"] = "OFF",
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
-        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -3119,7 +3112,7 @@ REDMAS_EASY_MODE_PRESET ={
             ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "ON",
             ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "ON",
             ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "ON",
-            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
         },
     },
     ["SKINS"] =
@@ -3360,7 +3353,7 @@ REDMAS_EXTREME_FANTASY_TERRAIN_PRESET ={
 
 
 REDMAS_MENU_REVISION_PRESET ={
-	["MODNAME"] = "MENU_REVISION",
+	["MODNAME"] = "_MASSIVE_FLEET",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
@@ -3378,11 +3371,11 @@ REDMAS_MENU_REVISION_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "HG-E3-1",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "E-E3-1", --"E-E3-1"   or another img name 
-        ["NMS_TITLE"] = "TITLE-WAYPOINT", --"TITLE-WAYPOINT"   or another img name 
-        ["MENU_SPLASH_SCREEN"] = "E3-RUINS", --"E3-RUINS"   or another img name 
-        ["TRANSPARENT_OPTIONS_MENU"] = "ON",
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name 
+        ["TRANSPARENT_OPTIONS_MENU"] = "",
     },
     ["CAMERA_FEATURES"] =
     {
@@ -3485,10 +3478,10 @@ REDMAS_MENU_REVISION_PRESET ={
         },
         ["SPACE_GENERATION_FEATURES"] =
         {
-            ["REDMAS_SPACE_GENERATION"] = "OFF",
+            ["REDMAS_SPACE_GENERATION"] = "ON",
             ["TRADING_ROUTES"] = "OFF",
-            ["MASSIVE_FLEET"] = "OFF",
-            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "OFF",
+            ["MASSIVE_FLEET"] = "ON",
+            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "ON",
         },
         ["SPACESHIPS_GENERATION_FEATURES"] =
         {
@@ -3496,7 +3489,7 @@ REDMAS_MENU_REVISION_PRESET ={
             ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "OFF",
             ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "OFF",
             ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "OFF",
-            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "ON",
         },
     },
     ["SKINS"] =
@@ -5305,7 +5298,7 @@ SCIFI_FANTASY_PRESET ={
     {
         ["CREATURES_OVERHAUL"] = "ON",
         ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
-        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
@@ -19365,9 +19358,11 @@ if CREATURES_OVERHAUL == "ON" then
 	end
 	-------------------------------------------------------------------------------
 	-- HIGH DENSITY FEATURE
+	if  GIANTS_CREATURES_FEATURE ~= "ON" then
 	addFeature
 	(
-		CREATURES_HIGH_DENSITY_FEATURE,
+		
+				CREATURES_HIGH_DENSITY_FEATURE,
 		{
 			{
 				["MBIN_FILE_SOURCE"]  =
@@ -19637,6 +19632,7 @@ if CREATURES_OVERHAUL == "ON" then
 
 		DAY_ONE_MODE
 	)
+	end
 	--------------------------------------------------------------
 	-- REDMAS GAME OVERHAUL ADDITIONAL CREATURES
 	addFeature
@@ -20186,7 +20182,7 @@ if CREATURES_OVERHAUL == "ON" then
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.2"},
-										{"MaxScale", "2"},
+										{"MaxScale", "32"},
 									}
 								},
 								{

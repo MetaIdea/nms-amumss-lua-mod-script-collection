@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x",	"0"}, 		-- Original "1"
-								{"y",	"0"} 		-- Original "1"
+								{"y",	"0"} 		-- Original "3"
 							}
 						},
 						{
@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{"x",	"0"}, 		-- Original "1"
-								{"y",	"0"} 		-- Original "1"
+								{"y",	"0"} 		-- Original "3"
 							}
 						}
 					} --4 global replacements
