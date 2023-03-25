@@ -9,7 +9,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]              = "_Nanites_trade.pak",
 ["MOD_AUTHOR"]                = "Bambr44",
-["NMS_VERSION"]               = "3.88",
+["NMS_VERSION"]               = "4.15",
 ["MOD_DESCRIPTION"]           = "Stations and Trade posts sell Nanites.",
 ["MODIFICATIONS"]             =
     {

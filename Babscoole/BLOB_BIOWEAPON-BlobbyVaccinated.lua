@@ -1,0 +1,33 @@
+NMS_MOD_DEFINITION_CONTAINER =
+{
+["MOD_FILENAME"]  = "BLOB_BIOWEAPON-BlobbyVaccinated.pak",
+["MOD_AUTHOR"]    = "JustInNovel",
+["LUA_AUTHOR"]    = "Babscoole",
+["NMS_VERSION"]   = "4.15",
+["MODIFICATIONS"] =
+    {
+        {
+            ["MBIN_CHANGE_TABLE"] =
+            {
+                {
+                    ["MBIN_FILE_SOURCE"] = "MODELS\PLANETS\CREATURES\BLOBRIG\BLOB.DESCRIPTOR.MBIN",
+                    ["EXML_CHANGE_TABLE"] =
+                    {
+                        {
+                            ["FOREACH_SKW_GROUP"] =
+                            {
+                                {"Id", "_BODY_EEL"},
+                                {"Id", "_BODY_EYEBALLPLANT"},
+                                {"Id", "_BODY_JELLY"},
+                                {"Id", "_BODY_OCTO"},
+                                {"Id", "_BODY_PLANT"},
+                                {"Id", "_BODY_SHROOM"},
+                            },
+                            ["REMOVE"] = "SECTION",
+                        },
+                    }
+                },
+            }
+        },
+    }
+}
