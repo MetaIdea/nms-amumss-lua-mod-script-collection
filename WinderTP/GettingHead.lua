@@ -5,7 +5,7 @@ DEFAULT_EDITION = "CLASSICS_B" -- CLASSICS, CLASSICS_B, FOURTH_A, FOURTH_B
 -- GOLD = Golden Suit
 GET_SUIT = "VYK"
 
-DEFAULT_CAPE = "CAPE_JELLY"
+DEFAULT_CAPE = "CAPE_SEED"
 -- Choose the cape
 -- Copy and paste the IDs or your game may become unstable!
 -- Leave this field empty if you don't want any capes
@@ -19,6 +19,7 @@ CAPE_FREIGHTER
 CAPE_FRIGATE
 CAPE_SANDWORM
 CAPE_JELLY
+CAPE_SEED
 ]]
 
 DEFAULT_BACKPACK = "BACKPACK_ROYAL"
@@ -262,20 +263,20 @@ end
 
 CAPE = ""
 
-CAPE_LIST = {"CAPE_ATLAS", "CAPE_PROTO", "CAPE_PIRATE", "CAPE_INFINITY", "CAPE_FREIGHTER", "CAPE_FRIGATE", "CAPE_SANDWORM", "CAPE_JELLY"}
+CAPE_LIST = {"CAPE_ATLAS", "CAPE_PROTO", "CAPE_PIRATE", "CAPE_INFINITY", "CAPE_FREIGHTER", "CAPE_FRIGATE", "CAPE_SANDWORM", "CAPE_JELLY", "CAPE_SEED"}
+
+LIST_DISPLAY = ""
+for i,j in pairs(CAPE_LIST) do
+	LIST_DISPLAY = LIST_DISPLAY .. i .. [[ - ]] .. j .. [[
+
+]]
+end
 
 CAPE_PROMPT =
 { 69,
 [[Which Cape would you like to equip?
 0 - None
-1 - CAPE_ATLAS
-2 - CAPE_PROTO
-3 - CAPE_PIRATE
-4 - CAPE_INFINITY
-5 - CAPE_FREIGHTER
-6 - CAPE_FRIGATE
-7 - CAPE_SANDWORM
-8 - CAPE_JELLY
+]] .. LIST_DISPLAY .. [[
 Ignore for 10 seconds to use default stated in DEFAULT_CAPE
 ]] }
 
@@ -290,14 +291,18 @@ BACKPACK = ""
 
 BACKPACK_LIST = {"BACKPACK_RETRO", "BACKPACK_EXPD1", "BACKPACK_ROYAL", "BACKPACK_CAPE"}
 
+LIST_DISPLAY = ""
+for i,j in pairs(BACKPACK_LIST) do
+	LIST_DISPLAY = LIST_DISPLAY .. i .. [[ - ]] .. j .. [[
+
+]]
+end
+
 BACKPACK_PROMPT =
 { 69,
 [[Which Cape would you like to equip?
 0 - Vanilla Default
-1 - BACKPACK_RETRO
-2 - BACKPACK_EXPD1
-3 - BACKPACK_ROYAL
-4 - BACKPACK_CAPE
+]] .. LIST_DISPLAY .. [[
 Ignore for 10 seconds to use default stated in DEFAULT_BACKPACK
 ]] }
 
