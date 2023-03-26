@@ -505,7 +505,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       <Property name="Children">
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="_Ship_Police" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="3628092373" />
           <Property name="Type" value="REFERENCE" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />

@@ -17,7 +17,7 @@ SHIELD_COLLISION =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="3121049417" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="-]] .. SHIELD_COLLISION_RADIUS .. [[" />
@@ -56,7 +56,7 @@ SHIELD_COLLISION =
         </Property>
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="3121049417" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -95,7 +95,7 @@ SHIELD_COLLISION =
         </Property>
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="3121049417" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="]] .. SHIELD_COLLISION_RADIUS .. [[" />
@@ -134,7 +134,7 @@ SHIELD_COLLISION =
         </Property>
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="3121049417" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -173,7 +173,7 @@ SHIELD_COLLISION =
         </Property>
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="3121049417" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -212,7 +212,7 @@ SHIELD_COLLISION =
         </Property>
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="3121049417" />
           <Property name="Type" value="COLLISION" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -295,7 +295,7 @@ SHIELD_SCENE =
 
 <Data template="TkSceneNodeData">
   <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SHIELD" />
-  <Property name="NameHash" value="0" />
+  <Property name="NameHash" value="3121049417" />
   <Property name="Type" value="MODEL" />
   <Property name="Transform" value="TkTransformData.xml">
     <Property name="TransX" value="0" />

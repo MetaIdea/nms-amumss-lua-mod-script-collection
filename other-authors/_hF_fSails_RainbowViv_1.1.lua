@@ -1,7 +1,7 @@
 SailPath = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.DDS" -- Freighter Sails
 
 Version = "1.1"
-GameVersion = "4.15"
+GameVersion = "4.13"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {

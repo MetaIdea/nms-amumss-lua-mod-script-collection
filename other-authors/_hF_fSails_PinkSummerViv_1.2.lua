@@ -1,16 +1,18 @@
-SailPath = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.DDS" -- Freighter Sails
+Diffuse = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.DDS" -- DIFFUSE MAP
+Masks = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.MASKS.DDS" -- MASKS MAP
+Normal = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.NORMAL.DDS" -- NORMAL MAP
 
-Version = "1.1"
+Version = "1.2"
 GameVersion = "4.15"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_fSails_Rainbow_"..Version..".pak",
+["MOD_FILENAME"]	= "_hF_fSails_PinkSummerViv_"..Version..".pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
-["LUA_AUTHOR"]		= "Lowkie",
+["LUA_AUTHOR"]		= "Lowkie & hemis FEAR",
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Rainbow Sail for Freighters",
+["MOD_DESCRIPTION"]	= "Vivid Series: Pink Summer Sail for Freighters",
 ["MODIFICATIONS"]	= 
 	{
 		{
@@ -33,16 +35,29 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-
-							--["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"}
-							["VALUE_CHANGE_TABLE"]	=
-							{	
-								{ "Map", SailPath } --Original "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL1.DDS"
+							["SPECIAL_KEY_WORDS"] = {"Name","gDiffuseMap",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ "Map", Diffuse } --Original "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL1.DDS" 
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","gMasksMap",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ "Map", Masks } --Original "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL1.MASKS.DDS" 
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name","gNormalMap",},
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{ "Map", Normal } --Original "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL1.NORMAL.DDS"
 							}
 						}
 					}
-				}
+				}	
 			}
 		}
 	}	
-}	
+}

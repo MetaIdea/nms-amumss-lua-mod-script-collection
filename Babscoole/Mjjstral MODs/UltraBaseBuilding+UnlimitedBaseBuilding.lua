@@ -1314,7 +1314,7 @@ PLACEMENT_SCENE =
   <Property name="Children">
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="PlacementData" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="1551106921" />
       <Property name="Type" value="LOCATOR" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
