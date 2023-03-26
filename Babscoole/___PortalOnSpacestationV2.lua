@@ -2,7 +2,7 @@ TEXT_TO_ADD =
 [[
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="SpacestationPortal" />
-              <Property name="NameHash" value="0" />
+              <Property name="NameHash" value="3101089239" />
               <Property name="Type" value="REFERENCE" />
               <Property name="Transform" value="TkTransformData.xml">
                 <Property name="TransX" value="-32" />

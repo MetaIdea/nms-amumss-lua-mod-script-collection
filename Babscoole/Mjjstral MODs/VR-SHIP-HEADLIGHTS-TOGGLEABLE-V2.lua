@@ -25,7 +25,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
     <Property value="TkSceneNodeData.xml">
       <Property name="Name" value="HEADLIGHTS" />
-      <Property name="NameHash" value="0" />
+      <Property name="NameHash" value="2058273975" />
       <Property name="Type" value="LIGHT" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />

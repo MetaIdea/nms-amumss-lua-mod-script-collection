@@ -44,7 +44,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 [[
         <Property value="TkSceneNodeData.xml">
           <Property name="Name" value="CockpitPos" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="465567180" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />

@@ -202,7 +202,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 
 <Data template="TkSceneNodeData">
   <Property name="Name" value="MODELS\COMMON\PLAYER\PLAYERCHARACTER\SAVE" />
-  <Property name="NameHash" value="0" />
+  <Property name="NameHash" value="1166645075" />
   <Property name="Type" value="LOCATOR" />
   <Property name="Transform" value="TkTransformData.xml">
     <Property name="TransX" value="0" />
