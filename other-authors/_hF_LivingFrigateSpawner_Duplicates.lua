@@ -22,7 +22,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "GcPulseEncounterSpawnFrigateFlyby.xml",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"SpawnChance",		"65"}, 	-- Original "1"
+								{"StandardEncounter",		"True"}, 	-- Original "False"
+								{"SpawnChance",		"80"}, 	-- Original "1"
 							}
 						},
 						{
@@ -30,7 +31,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "GcPulseEncounterSpawnFrigateFlyby.xml",
 							["VALUE_CHANGE_TABLE"] 	=
 							{
-								{"SpawnChance",		"10"}, 	-- Original "0"
+								{"SpawnChance",		"80"}, 	-- Original "0"
 							}
 						}
 					}
