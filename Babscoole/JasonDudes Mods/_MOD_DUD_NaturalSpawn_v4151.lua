@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
-["MOD_FILENAME"]  = "_MOD_DUD_NaturalSpawn_v4061.pak",
+["MOD_FILENAME"]  = "_MOD_DUD_NaturalSpawn_v4151.pak",
 ["MOD_AUTHOR"]    = "jasondude7116",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.06",
+["NMS_VERSION"]   = "4.15",
 ["MODIFICATIONS"] =
     {
         {
@@ -17,8 +17,8 @@ NMS_MOD_DEFINITION_CONTAINER =
                             ["SPECIAL_KEY_WORDS"] = {"Name", "FOREST"},
                             ["VALUE_CHANGE_TABLE"] =
                             {
-                                {"PatchSize",    "128"},
-                                {"RegionScale",    "7"},
+                                {"PatchSize",    "120"},
+                                {"RegionScale",    "8"},
                             }
                         },
                         {
