@@ -1,16 +1,15 @@
 SailPath = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.DDS" -- Freighter Sails
 
 Version = "1.1"
-GameVersion = "4.15"
+GameVersion = "4.13"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
 ["MOD_FILENAME"]	= "_hF_fSails_Black_"..Version..".pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
-["LUA_AUTHOR"]		= "Lowkie",
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Blacked Out Sail for Freighters",
+["MOD_DESCRIPTION"]	= "Blacked Out Sails for Freighters",
 ["MODIFICATIONS"]	= 
 	{
 		{
@@ -33,11 +32,15 @@ NMS_MOD_DEFINITION_CONTAINER =
 					["EXML_CHANGE_TABLE"] 	= 
 					{
 						{
-
+							--This changes ALL three map pats in the MBIN, Diffuse, Mask, and Normal
+							--To replace each seperatly the following should be used to identify each
+							--of the different maps
 							--["SPECIAL_KEY_WORDS"] = {"Name", "gDiffuseMap"}
+							--["SPECIAL_KEY_WORDS"] = {"Name", "gMasksMap"}
+							--["SPECIAL_KEY_WORDS"] = {"Name", "gNormalMap"}
 							["VALUE_CHANGE_TABLE"]	=
 							{	
-								{ "Map", SailPath } --Original "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL1.DDS"
+								{ "Map", SailPath }--different paths being set
 							}
 						}
 					}
