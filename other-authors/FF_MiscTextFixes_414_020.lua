@@ -6,13 +6,8 @@ METADATA_MOD_NAME       = "MiscTextFixes"
 METADATA_MOD_AUTHOR     = "FriendlyFirePL"
 METADATA_LUA_AUTHOR     = "FriendlyFirePL"
 METADATA_NMS_VERSION    = "414"
-METADATA_MOD_VERSION    = "020"
+METADATA_MOD_VERSION    = "021"
 METADATA_MOD_DESC       = "This mod aims to fix various text inconsistencies, misleading descriptions and typos found in the game."
-
--- credits:
--- bk201                pointing out typos, providing feedback on changes
--- Devilin Pixy         pointing out typos
--- Gumsk                idea for new LUA script
 
 
 
@@ -41,10 +36,21 @@ TEXT_SURVEY_CREATURES = "&lt;IMG&gt;DFAUNA&lt;&gt; Creature Survey Location&#xA;
 -- fixed typo in commercial
 TEXT_COMMERCIAL_BUILD = "Commercial HoloTerminus"
 
+-- renamed sodium crystals
+TEXT_SODIUM_CRYSTALS = "Sodium Crystals"
+
 ----------------- localization file 6
 
 -- new label for destroyed derelict freighters (red icon, no landing pads)
 TEXT_DESTROYED_FREIGHTER = "Destroyed Freighter"
+
+-- fixed description for source of Living Water (not on space station)
+TEXT_LIVING_WATER = "The Void Egg host requires a &lt;COMMODITY&gt;Shell&lt;&gt;&#xA;Gather %ITEM% to craft &lt;TECHNOLOGY&gt;Impossible Membrane&lt;&gt;: %CURRENT%/%AMOUNT%&#xA;Seek %ITEM% in deep space"
+
+-- fixed description for Solar Ray (converting materials other than metals)
+TEXT_SOLARRAY_1 = "Install the gifted &lt;TECHNOLOGY&gt;Solar Ray&lt;&gt;&#xA;The Void Egg host requires a &lt;FUEL&gt;Heart&lt;&gt;&#xA;Gather &lt;STELLAR&gt;Liquid Sun&lt;&gt; to craft Pulsating Core&#xA;The &lt;TECHNOLOGY&gt;Solar Ray&lt;&gt; will convert deposit materials to &lt;STELLAR&gt;Liquid Sun&lt;&gt;"
+TEXT_SOLARRAY_2 = "The Void Egg host requires a &lt;FUEL&gt;Heart&lt;&gt;&#xA;Gather %ITEM% to craft Pulsating Core: %CURRENT%/%AMOUNT%&#xA;The &lt;TECHNOLOGY&gt;Solar Ray&lt;&gt; will convert deposit materials to &lt;STELLAR&gt;Liquid Sun&lt;&gt;"
+TEXT_SOLARRAY_3 = "The Void Egg host requires a &lt;FUEL&gt;Heart&lt;&gt;&#xA;Gather %ITEM% to craft Pulsating Core: %CURRENT%/%AMOUNT%&#xA;The &lt;TECHNOLOGY&gt;Solar Ray&lt;&gt; will convert deposit materials to &lt;STELLAR&gt;Liquid Sun&lt;&gt;&#xA;Press &lt;IMG&gt;CYCLEWEAPON&lt;&gt; to equip the &lt;TECHNOLOGY&gt;Solar Ray&lt;&gt;"
 
 ----------------- localization file 7
 
@@ -75,6 +81,11 @@ PATH_LANGUAGE_LOC3 = "LANGUAGE\\NMS_UPDATE3_ENGLISH.MBIN"
 PATH_LANGUAGE_LOC4 = "LANGUAGE\\NMS_LOC4_ENGLISH.MBIN"
 PATH_LANGUAGE_LOC6 = "LANGUAGE\\NMS_LOC6_ENGLISH.MBIN"
 PATH_LANGUAGE_LOC7 = "LANGUAGE\\NMS_LOC7_ENGLISH.MBIN"
+
+-- other files
+PATH_PLAYER_TITLES = "METADATA\\GAMESTATE\\PLAYERDATA\\PLAYERTITLEDATA.MBIN"
+
+
 
 -- data lists for localization file 1
 
@@ -113,11 +124,13 @@ LIST_TEXT_3 =
 LIST_ID_4 = 
 {
     "UI_BASE_SHOP_SUB",
+    "UI_YELLOW_CRYSTAL_NAME",
 }
 
 LIST_TEXT_4 = 
 {
     TEXT_COMMERCIAL_BUILD,
+    TEXT_SODIUM_CRYSTALS,
 }
 
 -- data lists for localization file 6
@@ -125,11 +138,19 @@ LIST_TEXT_4 =
 LIST_ID_6 = 
 {
     "UI_DERELICT1_LABEL",
+    "UI_BIO_SHIP_MISSION3_MSG2C",
+    "UI_BIO_SHIP_MISSION2_MSG2A",
+    "UI_BIO_SHIP_MISSION2_MSG2B",
+    "UI_BIO_SHIP_MISSION2_MSG2B2",
 }
 
 LIST_TEXT_6 = 
 {
     TEXT_DESTROYED_FREIGHTER,
+    TEXT_LIVING_WATER,
+    TEXT_SOLARRAY_1,
+    TEXT_SOLARRAY_2,
+    TEXT_SOLARRAY_3,
 }
 
 -- data lists for localization file 7
@@ -198,6 +219,22 @@ NMS_MOD_DEFINITION_CONTAINER =
                 {
                     ["MBIN_FILE_SOURCE"] = PATH_LANGUAGE_LOC7,
                     ["EXML_CHANGE_TABLE"] = {{},},
+                },
+
+                {
+                    ["MBIN_FILE_SOURCE"] = PATH_PLAYER_TITLES,
+                    ["EXML_CHANGE_TABLE"] = 
+                    {
+                        {
+                            ["SKW"] = {"ID","T_ABANDLORE3"},
+                            ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE3"},},
+                        },
+
+                        {
+                            ["SKW"] = {"ID","T_ABANDLORE4"},
+                            ["VCT"] = {{"Title","UI_PLAYER_TITLE_ABANDLORE4"},},
+                        },
+                    },
                 }
             }
         }
