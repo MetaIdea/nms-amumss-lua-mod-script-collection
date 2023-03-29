@@ -1,6 +1,6 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "ExoSpeedIncrease_NoMECHchanges.pak",
+["MOD_FILENAME"] 			= "ExoSpeedIncrease_MECHchanges.pak",
 ["MOD_AUTHOR"]				= "Viking",
 ["NMS_VERSION"]				= "4.14",
 ["MODIFICATIONS"] 			= 
@@ -18,11 +18,11 @@ NMS_MOD_DEFINITION_CONTAINER =
 						
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"MechJetpackMaxSpeed",		"60"}, 	-- Original "20"
-								--{"MechJetpackMaxUpSpeed",	"60"}, 	-- Original "20"
-								--{"MechJetpackDrainRate",	".4"}, 	-- Original ".5"
-								--{"MechJetpackFillRate",		"0.5"}, 	-- Original ".5"
-								--{"MechJetpackTurnSpeed",		"6"}, 	-- Original "3"
+								{"MechJetpackMaxSpeed",		"60"}, 	-- Original "20"
+								{"MechJetpackMaxUpSpeed",	"60"}, 	-- Original "20"
+								{"MechJetpackDrainRate",	".4"}, 	-- Original ".5"
+								{"MechJetpackFillRate",		"0.5"}, 	-- Original ".5"
+								{"MechJetpackTurnSpeed",		"6"}, 	-- Original "3"
 								{"TopSpeedForward",				"48"}, 	-- Original "16"
 								{"UnderwaterEngineMaxSpeed",	"45"} 	-- Original "15"
 							}
@@ -35,6 +35,16 @@ NMS_MOD_DEFINITION_CONTAINER =
 							{
 								{"TopSpeedForward",				"2"}, 	-- Original "2"
 								{"UnderwaterEngineMaxSpeed",	"15"}, 	-- Original "15"
+
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = { "Name", "SUBMARINE" },
+						
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"TopSpeedForward",				"48"}, 	-- Original "18"
+								{"UnderwaterEngineMaxSpeed",	"48"}, 	-- Original "18"
 
 							}
 						}
