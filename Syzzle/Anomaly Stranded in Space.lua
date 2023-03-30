@@ -753,10 +753,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["ADD_OPTION"]  = "ADDafterSECTION",
 							["ADD"] = STARTERMULTITOOLTECH
-						}
-					},
-					-- TECH ONLY BREAKS IF YOU TAKE DAMAGE WHILE YOUR SHIELD IS DOWN
-					{
+						},
+						-- TECH ONLY BREAKS IF YOU TAKE DAMAGE WHILE YOUR SHIELD IS DOWN
 						{
 							["VALUE_CHANGE_TABLE"]  =
 							{
@@ -764,8 +762,26 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"TechDamageChanceShieldLevelMax",0},		-- Original "0.75"
 								{"TechDamageChanceToSelectPrimary",1},		-- Original "0.1"
 							}
-						},	
-					}
+						},
+						-- TURN OFF TUTORIAL FOR EVERY DIFFICULTY BY DEFAULT
+						{
+							["FOREACH_SKW_GROUP"]  = 
+							{
+								{"Invalid","GcDifficultySettingsData.xml",},
+								{"Custom","GcDifficultySettingsData.xml",},
+								{"Normal","GcDifficultySettingsData.xml",},
+								{"Relaxed","GcDifficultySettingsData.xml",},
+								{"Survival","GcDifficultySettingsData.xml",},
+								{"Permadeath","GcDifficultySettingsData.xml",},
+								{"PermadeathMinSettings","GcDifficultySettingsData.xml",},
+							},
+							["REPLACE_TYPE"]    = "ALL",
+							["VALUE_CHANGE_TABLE"]  =
+							{
+								{"TutorialEnabled","False"},
+							}
+						},
+					},
 				},
 				-- BLACK HOLE DESTINATION IS RANDOM
 				{
