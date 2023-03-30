@@ -2,17 +2,17 @@ Diffuse = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.DDS" -- DIFFU
 Masks = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.MASKS.DDS" -- MASKS MAP
 Normal = "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL2.NORMAL.DDS" -- NORMAL MAP
 
-Version = "1.2"
+Version = "1.3"
 GameVersion = "4.15"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"]	= "_hF_fSails_PinkSummerViv_"..Version..".pak",
+["MOD_FILENAME"]	= "_hF_fSails_BlueDragon_"..Version..".pak",
 ["MOD_AUTHOR"]		= "hemis FEAR",
-["LUA_AUTHOR"]		= "Lowkie & hemis FEAR",
+["LUA_AUTHOR"]		= "Lowkie, forked by hemis FEAR",
 ["NMS_VERSION"]		= GameVersion,
 ["MOD_VERSION"] 	= Version,
-["MOD_DESCRIPTION"]	= "Vivid Series: Pink Summer Sail for Freighters",
+["MOD_DESCRIPTION"]	= "Vivid Series: Blue Dragon Sail for Freighters",
 ["MODIFICATIONS"]	= 
 	{
 		{
@@ -53,6 +53,40 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
 								{ "Map", Normal } --Original "TEXTURES/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL1.NORMAL.DDS"
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"z",	"0.6"}-- Original "1"
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"x",	"0"}-- Original "0.7"
+							}
+						}
+					}
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "MODELS/COMMON/SPACECRAFT/INDUSTRIAL/ACCESSORIES/SAIL1/FREIGHTERPROC_MAT.MATERIAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	=
+					{
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"x",		"0"}, 	-- Original "0.9"
+							}
+						},
+						{
+							["SPECIAL_KEY_WORDS"] = {"Name", "gMaterialParamsVec4"},							
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"z",		"0.6"}, 	-- Original "1"
 							}
 						}
 					}
