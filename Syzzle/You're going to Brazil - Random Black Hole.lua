@@ -1,7 +1,7 @@
 Author = "Syzzle"
-ModName = "No Portal Charging"
+ModName = "You're going to Brazil - Random Black Hole"
 GameVersion = "4.15"
-Description = "Skips the whole process of charging the portal in order to use it."
+Description = "Black Hole destination is now random instead of fixed."
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
@@ -15,13 +15,13 @@ NMS_MOD_DEFINITION_CONTAINER =
       ["MBIN_CHANGE_TABLE"] 	= 
       { 
         {
-          ["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PORTAL/PORTAL/ENTITIES/BUTTON.ENTITY.MBIN",
+          ["MBIN_FILE_SOURCE"] 	= "MODELS/SPACE/BLACKHOLE/BLACKHOLE/ENTITIES/BLACKHOLE.ENTITY.MBIN",
           ["EXML_CHANGE_TABLE"] 	= 
           {
             {
               ["VALUE_CHANGE_TABLE"]  =
               {
-                {"AutoCompleteOnStart","True"}, -- Original "False"
+                {"WarpType","SpacePOI"},
               }
             },
           }

@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Overclocked Industry"
-GameVersion = "4.13"
+GameVersion = "4.15"
 --ModVersion = "v1.4"
 Description = "Power up Autonomous Mining, Atmosphere Harvester and Oxygen Harvester to harvest a full stack of 9999 in 5 minutes."
 
@@ -12,100 +12,85 @@ Output = "9999"		-- How many resources it will give at the end of the work cycle
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= ModName.." "..GameVersion..".pak",
+["MOD_FILENAME"] 			= ModName..".pak",
 ["MOD_AUTHOR"]				= Author,
 ["NMS_VERSION"]				= GameVersion,
 ["MOD_DESCRIPTION"] 		= Description,
 ["MODIFICATIONS"] 			= 
-	{
-		{
-			["MBIN_CHANGE_TABLE"] 	= 
-			{ 
-				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS\PLANETS\BIOMES\COMMON\BUILDINGS\PARTS\BUILDABLEPARTS\TECH\HARVESTER\ENTITIES\RESOURCEHARVESTER.ENTITY.MBIN",
-						
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-						    ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								
-								{"AmountEmptyTimePeriod",FuelTime}
-							}
-						},
-						
-						{
-						    ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxCapacity",Output},
-								{"AmountEmptyTimePeriod",WorkTime}
-							}
-						},
-						
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/OXYGENHARVESTER180/ENTITIES/OXYGENHARVESTER.ENTITY.MBIN",
-						
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-						    ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								
-								{"AmountEmptyTimePeriod",FuelTime}
-							}
-						},
-						
-						{
-						    ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxCapacity",Output},
-								{"AmountEmptyTimePeriod",WorkTime}
-							}
-						},
-						
-					}
-				},
-				{
-					["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/GASHARVESTER/ENTITIES/GASHARVESTER.ENTITY.MBIN",
-						
-					["EXML_CHANGE_TABLE"] 	= 
-					{
-						
-						{
-						    ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-							["SECTION_ACTIVE"] = {1,},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								
-								{"AmountEmptyTimePeriod",FuelTime}
-							}
-						},
-						
-						{
-						    ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
-							["SECTION_ACTIVE"] = {2,},
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxCapacity",Output},
-								{"AmountEmptyTimePeriod",WorkTime}
-							}
-						},
-						
-					}
-				}
-			}
-		}
-	}	
+  {
+    {
+      ["MBIN_CHANGE_TABLE"] 	= 
+      { 
+        {
+          ["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/HARVESTER/ENTITIES/RESOURCEHARVESTER.ENTITY.MBIN", 
+          ["EXML_CHANGE_TABLE"] 	= 
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
+              ["SECTION_ACTIVE"] = 1,
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+                {"AmountEmptyTimePeriod",FuelTime}
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
+              ["SECTION_ACTIVE"] = 2,
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+                {"MaxCapacity",Output},
+                {"AmountEmptyTimePeriod",WorkTime}
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/OXYGENHARVESTER180/ENTITIES/OXYGENHARVESTER.ENTITY.MBIN",
+          ["EXML_CHANGE_TABLE"] 	= 
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
+              ["SECTION_ACTIVE"] = 1,
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+                {"AmountEmptyTimePeriod",FuelTime}
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
+              ["SECTION_ACTIVE"] = 2,
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+                {"MaxCapacity",Output},
+                {"AmountEmptyTimePeriod",WorkTime}
+              }
+            },
+          }
+        },
+        {
+          ["MBIN_FILE_SOURCE"] 	= "MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/TECH/GASHARVESTER/ENTITIES/GASHARVESTER.ENTITY.MBIN",
+          ["EXML_CHANGE_TABLE"] 	= 
+          {
+            {
+              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
+              ["SECTION_ACTIVE"] = 1,
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+                {"AmountEmptyTimePeriod",FuelTime}
+              }
+            },
+            {
+              ["PRECEDING_KEY_WORDS"] = {"GcMaintenanceElement.xml"},
+              ["SECTION_ACTIVE"] = 2,
+              ["VALUE_CHANGE_TABLE"] 	= 
+              {
+                {"MaxCapacity",Output},
+                {"AmountEmptyTimePeriod",WorkTime}
+              }
+            },
+          }
+        }
+      }
+    }
+  }
 }
