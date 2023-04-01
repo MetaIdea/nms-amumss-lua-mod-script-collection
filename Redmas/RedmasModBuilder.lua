@@ -12,9 +12,11 @@
 -- ------------------You can configure the overhaul from the following VARs-------------------------------- --
 --------------------------------------------------------------------------------------------------------------
 -- -----------------------------------------------------------------------------------------------------------
+-- Main Features enabler -- ----------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------
-INIT = "FANTASY_PRESET"
+INIT = "REDMAS_E3PIC_FANTASY_PRESET"
 -- presets list ( make sure to edit the preset selected by the "INIT" var )
 ------------------------------------
 -- EUPHORIA_PRESET
@@ -609,7 +611,7 @@ FANTASY_2_PRESET ={
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
         ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
         ["GIANTS_CREATURES_FEATURE"] = "OFF",
-        ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
+        ["GIANTS_MAX_SIZE"] = "34", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
     ["GENERATION_FEATURES"] =
     {
@@ -724,7 +726,7 @@ FANTASY_PRESET ={
         ["VISUAL_OVERHAUL"] = "ON",
         ["REDMAS_WATER_REFLECTIONS"] = "ON",
         ["SPACE_BLUR_FEATURE"] = "ON",
-        ["FILTERS_SWAP_FEATURE"] = "OFF",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
         ["BINOCULARS_TYPE"] = "CLEAR", -- SUN / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "E3",  -- (REALISTIC / VANILLA / E3 )
@@ -1102,7 +1104,7 @@ EUPHORIA_PRESET ={
         ["VISUAL_OVERHAUL"] = "ON",
         ["REDMAS_WATER_REFLECTIONS"] = "ON",
         ["SPACE_BLUR_FEATURE"] = "ON",
-        ["FILTERS_SWAP_FEATURE"] = "OFF",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
         ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
@@ -1161,7 +1163,7 @@ EUPHORIA_PRESET ={
             ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
             ["ROAMER_BIGWHEELS_FEATURE"] = "ON", -- LARGER BEHIND WHEELS
             ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
-            ["GIANT_MECHS_BETA_FEATURE"] = "ON",
+            ["GIANT_MECHS_BETA_FEATURE"] = "OFF",
             ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
         },
     },
@@ -1176,7 +1178,7 @@ EUPHORIA_PRESET ={
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
         ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
         ["GIANTS_CREATURES_FEATURE"] = "ON",
-        ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
+        ["GIANTS_MAX_SIZE"] = "34", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
     ["GENERATION_FEATURES"] =
     {
@@ -1206,7 +1208,7 @@ EUPHORIA_PRESET ={
                 ["GIANTS_BIOMES_FEATURE"] = "ON",
                 ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "ON",
                 ["MONTAINS_BIOMES_FEATURE"] = "ON",
-                ["CAVE_BIOMES_FEATURE"] = "OFF",
+                ["CAVE_BIOMES_FEATURE"] = "ON",
             },
             ["ASSETS_REPLACEMENTS_FEATURES"] =
             {
@@ -2410,15 +2412,15 @@ PLAYER_GAMEPLAY_REVISION_PRESET ={
 
 ----------------------------------------------------------------------------------------
 --
--- ( Ctrl + S to save ) 
+-- ( Ctrl + S to save )
 --
 ------------------------------------------------------------------------------------------
 
 REDMAS_CAMERA_OVERHAUL_PRESET ={
-	["MODNAME"] = "Asteroids_rework",
+	["MODNAME"] = "_____EPIC_TERRAIN_SHAPES",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
-        ["VISUAL_OVERHAUL"] = "ON",
+        ["VISUAL_OVERHAUL"] = "OFF",
         ["REDMAS_WATER_REFLECTIONS"] = "OFF",
         ["SPACE_BLUR_FEATURE"] = "OFF",
         ["FILTERS_SWAP_FEATURE"] = "OFF",
@@ -2433,10 +2435,10 @@ REDMAS_CAMERA_OVERHAUL_PRESET ={
     },
     ["MENU_OVERHAUL_FEATURES"] =
     { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name 
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name 
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name 
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"   or another img name
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"   or another img name
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"   or another img name
         ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
     },
     ["CAMERA_FEATURES"] =
@@ -2499,7 +2501,7 @@ REDMAS_CAMERA_OVERHAUL_PRESET ={
     },
     ["GENERATION_FEATURES"] =
     {
-        ["GENERATION_OVERHAUL"] = "OFF",
+        ["GENERATION_OVERHAUL"] = "ON",
         ["COLORS_AUTO_GENERATION_FEATURES"] =
         {
             ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
@@ -2510,195 +2512,8 @@ REDMAS_CAMERA_OVERHAUL_PRESET ={
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF",
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF",
-                ["TERRAIN_HEIGHT_MAX"] = "140",
-            },
-            ["BIOMES_FEATURES"] =
-            {
-                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
-                ["FANTASY_BIOMES_FEATURE"] = "OFF",
-                ["SKY_BIOMES_FEATURE"] = "OFF",
-                ["STORM_BIOMES_FEATURES"] = "OFF",
-                ["GIANTS_BIOMES_FEATURE"] = "OFF",
-                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "OFF",
-                ["MONTAINS_BIOMES_FEATURE"] = "OFF",
-                ["CAVE_BIOMES_FEATURE"] = "OFF",
-            },
-            ["ASSETS_REPLACEMENTS_FEATURES"] =
-            {
-                ["E3_FANTASY_ASSETS_FEATURES"] = "OFF",
-                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "OFF",
-                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "OFF",
-                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "OFF",
-                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "OFF",
-                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
-                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
-                ["REDMAS_RUINS_FEATURES"] = "OFF",
-                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "OFF",
-            },
-        },
-        ["SPACE_GENERATION_FEATURES"] =
-        {
-            ["REDMAS_SPACE_GENERATION"] = "ON",
-            ["TRADING_ROUTES"] = "OFF",
-            ["MASSIVE_FLEET"] = "OFF",
-            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "OFF",
-        },
-        ["SPACESHIPS_GENERATION_FEATURES"] =
-        {
-            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "OFF",
-            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "OFF",
-            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "OFF",
-            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "OFF",
-            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
-        },
-    },
-    ["SKINS"] =
-    {
-        ["CHARACTERS_SKINS_FEATURE"] = "OFF",
-        -- (E3-DAMAGED or E3)
-		["DRONE_PET_SKIN_FEATURE"] = "ON",
-        ["DRONE_PET_SKIN"] = "E3-DAMAGED",
-        -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
-        -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
-        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
-        ["CHAR_PRESETS_SKINS"] = "THE-WATCHER"
-    },
-    ["NEWGAME_BONUS_FEATURES"] ={
-        ["NEWGAME_BONUSES"] = "OFF",
-		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
-		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
-		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
-		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
-        ["STARTING_SHIP"] = "ALPHA_VECTOR",
-		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
-		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
-		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
-        ["STARTING_MULTITOOL"] = "EXPLO1",
-    },
-    ["CHALLENGE_FEATURES"] =
-    {
-        ["CHALLENGE_MODE"] = "OFF",
-		["STRONG_CREATURES_FEATURE"] = "OFF",
-        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
-        ["DARK_UNDERWATER"] = "OFF",
-        ["STRONG_PIRATES_FEATURE"] = "OFF",
-    },
-    ["EASY_MODE_FEATURES"] =
-    {
-        ["EASY_MODE"] = "OFF",
-        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 4 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
-        ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
-        ["WARPCELL_USAGE_MULTIPLIER"] = 5,
-        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
-    }
-}
-
-----------------------------------------------------------------------------------------
---
--- ( Ctrl + S to save ) 
---
-------------------------------------------------------------------------------------------
-
-REDMAS_CHALLENGE_MODE_PRESET ={
-	["MODNAME"] = "CHALLENGE_MODE",
-	["VISUAL_OVERHAUL_FEATURES"] =
-    {
-        ["VISUAL_OVERHAUL"] = "OFF",
-        ["REDMAS_WATER_REFLECTIONS"] = "OFF",
-        ["SPACE_BLUR_FEATURE"] = "OFF",
-        ["FILTERS_SWAP_FEATURE"] = "OFF",
-        ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
-        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "OFF",
-        ["SPACESHIPS_TRAILS_TYPE"] = "VANILLA",  -- (REALISTIC / VANILLA / E3 )
-        ["SPACE_COLOURS_TYPE"] = "VANILLA", -- (REALISTIC / VANILLA / FANTASY )
-        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ("FANTASY" / "REALISTIC" / "GLUED")
-        ["FIGHTERS_SPACESHIPS_REPAINT"] = "OFF",
-        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "OFF",
-        ["SHUTTLE_SPACESHIPS_REPAINT"] = "OFF",
-    },
-    ["MENU_OVERHAUL_FEATURES"] =
-    { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
-        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name 
-        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"  
-        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"  
-        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"  
-        ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
-    },
-    ["CAMERA_FEATURES"] =
-    {
-	    ["CAMERA_OVERHAUL_FEATURE"] = "OFF",
-	    ["CAMERA_NO_SHAKE_FEATURE"] = "OFF",
-	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
-    },
-    ["GAMEPLAY_FEATURES"] =
-    {
-        ["GAMEPLAY_OVERHAUL"] = "OFF",
-        ["QOL_FEATURES"] =
-        {
-            ["ADVANCED_BODY_SHAPES_FEATURE"] = "OFF",
-            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
-            ["NEW_INTERACTIONS_FEATURE"] = "OFF",
-            ["ADVANCED_BUILDS_FEATURE"] = "OFF",
-            ["FREE_POWER_ON_EM_GENERATORS"] = "OFF",
-        },
-        ["ONFOOT_GAMEPLAY_FEATURES"] =
-        {
-            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "OFF",
-            ["LONGER_STEATH_FEATURE"] = "OFF",
-            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "OFF",
-            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
-            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "OFF",
-            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
-        },
-        ["SPACESHIPS_GAMEPLAY_FEATURES"] =
-        {
-          ["HOVER_MODE"] = "OFF",
-          ["SANKUKAI_SPACESHIPS_COMBAT"] = "OFF",
-        },
-        ["VEHICLES_FEATURES"] =
-        {
-            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "OFF",
-            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "OFF",
-            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF",
-            ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF",
-            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "OFF",
-            ["CUSTOM_ROAMER_EXOCRAFT"] = "OFF",
-            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF",
-            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "OFF",
-            ["GIANT_MECHS_BETA_FEATURE"] = "OFF",
-            ["MECHS_SIZE_MULTIPLIER"] = 1,  -- ( 2 to 10 -- adviced size : 3 )
-        },
-    },
-    ["CREATURES_FEATURES"] =
-    {
-        ["CREATURES_OVERHAUL"] = "OFF",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
-        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
-        ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "OFF",
-        ["SANDWORM_OVERHAUL_FEATURE"] = "OFF",
-        ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="OFF",
-        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
-        ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF",
-        ["GIANTS_CREATURES_FEATURE"] = "OFF",
-        ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
-    },
-    ["GENERATION_FEATURES"] =
-    {
-        ["GENERATION_OVERHAUL"] = "OFF",
-        ["COLORS_AUTO_GENERATION_FEATURES"] =
-        {
-            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
-            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "OFF",
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
-        },
-        ["PLANETS_GENERATION_FEATURES"] =
-        {
-            ["TERRAIN_SHAPES_FEATURES"] =
-            {
-                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF",
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF",
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "EPIC_FANTASY",
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
                 ["TERRAIN_HEIGHT_MAX"] = "140",
             },
             ["BIOMES_FEATURES"] =
@@ -2766,7 +2581,194 @@ REDMAS_CHALLENGE_MODE_PRESET ={
     },
     ["CHALLENGE_FEATURES"] =
     {
-        ["CHALLENGE_MODE"] = "ON",
+        ["CHALLENGE_MODE"] = "OFF",
+		["STRONG_CREATURES_FEATURE"] = "OFF",
+        ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
+        ["DARK_UNDERWATER"] = "OFF",
+        ["STRONG_PIRATES_FEATURE"] = "OFF",
+    },
+    ["EASY_MODE_FEATURES"] =
+    {
+        ["EASY_MODE"] = "OFF",
+        ["PULSE_ENGINE_SPEED_MULTIPLIER"] = 4 , -- ( 1 < - > 4 ( too much will be glitchy when entering planets' atmosphere))
+        ["LAUNCH_COST_REDUCTION"] = 5 , -- In %
+        ["WARPCELL_USAGE_MULTIPLIER"] = 5,
+        ["HYPERDRIVE_RANGE_MULTIPLIER"] = 1000,
+    }
+}
+
+----------------------------------------------------------------------------------------
+--
+-- ( Ctrl + S to save )
+--
+------------------------------------------------------------------------------------------
+
+REDMAS_CHALLENGE_MODE_PRESET ={
+	["MODNAME"] = "_Fantasy_Terrain_Shape",
+	["VISUAL_OVERHAUL_FEATURES"] =
+    {
+        ["VISUAL_OVERHAUL"] = "OFF",
+        ["REDMAS_WATER_REFLECTIONS"] = "OFF",
+        ["SPACE_BLUR_FEATURE"] = "OFF",
+        ["FILTERS_SWAP_FEATURE"] = "OFF",
+        ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
+        ["SPEED_EFFECTS_REDUCER_FEATURE"] = "OFF",
+        ["SPACESHIPS_TRAILS_TYPE"] = "VANILLA",  -- (REALISTIC / VANILLA / E3 )
+        ["SPACE_COLOURS_TYPE"] = "VANILLA", -- (REALISTIC / VANILLA / FANTASY )
+        ["ASTEROIDS_FIELDS_TYPE"] = "GLUED", -- ("FANTASY" / "REALISTIC" / "GLUED")
+        ["FIGHTERS_SPACESHIPS_REPAINT"] = "OFF",
+        ["DROPSHIPS_SPACESHIPS_REPAINT"] = "OFF",
+        ["SHUTTLE_SPACESHIPS_REPAINT"] = "OFF",
+    },
+    ["MENU_OVERHAUL_FEATURES"] =
+    { -- You can Edit the Pictures inside  RGOG/IMAGES/ to customise the screens
+        ["HELLO_GAMES_SPASH_SCREEN"] = "",  --"HG-E3-1"  or another img name
+        ["ENGINE_SPASH_SCREEN"] = "", --"E-E3-1"
+        ["NMS_TITLE"] = "", --"TITLE-WAYPOINT"
+        ["MENU_SPLASH_SCREEN"] = "", --"E3-RUINS"
+        ["TRANSPARENT_OPTIONS_MENU"] = "OFF",
+    },
+    ["CAMERA_FEATURES"] =
+    {
+	    ["CAMERA_OVERHAUL_FEATURE"] = "OFF",
+	    ["CAMERA_NO_SHAKE_FEATURE"] = "OFF",
+	    ["CENTERED_CAMERA_FEATURE"] = "OFF",
+    },
+    ["GAMEPLAY_FEATURES"] =
+    {
+        ["GAMEPLAY_OVERHAUL"] = "OFF",
+        ["QOL_FEATURES"] =
+        {
+            ["ADVANCED_BODY_SHAPES_FEATURE"] = "OFF",
+            ["MINING_SPEED"] = "10", -- 2 to 10 (10 = REDMAS INSTANT MINING mod)
+            ["NEW_INTERACTIONS_FEATURE"] = "OFF",
+            ["ADVANCED_BUILDS_FEATURE"] = "OFF",
+            ["FREE_POWER_ON_EM_GENERATORS"] = "OFF",
+        },
+        ["ONFOOT_GAMEPLAY_FEATURES"] =
+        {
+            ["ONFOOT_CONTROLS_REVISON_FEATURE"] = "OFF",
+            ["LONGER_STEATH_FEATURE"] = "OFF",
+            ["FASTER_WALK_WHILE_SHIELDING_FEATURE"] = "OFF",
+            ["PLAYER_IS_WALKING_INSTEAD_OF_JOGGING_FEATURE"] = "OFF",
+            ["CONTROLLED_FALL_ANIMATION_REPLACEMENT"] = "OFF",
+            ["ONFOOT_COMBAT_REVISON_BETA_FEATURE"] = "OFF",
+        },
+        ["SPACESHIPS_GAMEPLAY_FEATURES"] =
+        {
+          ["HOVER_MODE"] = "OFF",
+          ["SANKUKAI_SPACESHIPS_COMBAT"] = "OFF",
+        },
+        ["VEHICLES_FEATURES"] =
+        {
+            ["EXOCRAFTS_CONTROLS_REVISON_FEATURE"] = "OFF",
+            ["ADDITIONAL_EXOCRAFT_DRAGONFLY"] = "OFF",
+            ["CUSTOM_NOMAD_EXOCRAFT"] = "OFF",
+            ["CUSTOM_PILGRIM_EXOCRAFT"] = "OFF",
+            ["CUSTOM_COLOSSUS_EXOCRAFT"] = "OFF",
+            ["CUSTOM_ROAMER_EXOCRAFT"] = "OFF",
+            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF",
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "OFF",
+            ["GIANT_MECHS_BETA_FEATURE"] = "OFF",
+            ["MECHS_SIZE_MULTIPLIER"] = 1,  -- ( 2 to 10 -- adviced size : 3 )
+        },
+    },
+    ["CREATURES_FEATURES"] =
+    {
+        ["CREATURES_OVERHAUL"] = "OFF",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
+        ["MAX_CREATURES_NUMBER"] = 20, -- 10 < - > 20
+        ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "OFF",
+        ["SANDWORM_OVERHAUL_FEATURE"] = "OFF",
+        ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="OFF",
+        ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF",
+        ["GIANTS_CREATURES_FEATURE"] = "OFF",
+        ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
+    },
+    ["GENERATION_FEATURES"] =
+    {
+        ["GENERATION_OVERHAUL"] = "ON",
+        ["COLORS_AUTO_GENERATION_FEATURES"] =
+        {
+            ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "OFF",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
+        },
+        ["PLANETS_GENERATION_FEATURES"] =
+        {
+            ["TERRAIN_SHAPES_FEATURES"] =
+            {
+                ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY",
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
+                ["TERRAIN_HEIGHT_MAX"] = "140",
+            },
+            ["BIOMES_FEATURES"] =
+            {
+                ["CONSTRUCTS_BY_MSSP_SPAWNER"] = "OFF",  -- ( Requires "_MOD.MSSP.ConstructsVisions.Core.pak" from  https://www.nexusmods.com/nomanssky/mods/323)
+                ["FANTASY_BIOMES_FEATURE"] = "OFF",
+                ["SKY_BIOMES_FEATURE"] = "OFF",
+                ["STORM_BIOMES_FEATURES"] = "OFF",
+                ["GIANTS_BIOMES_FEATURE"] = "OFF",
+                ["LOWWATER_AND_BEACH_BIOMES_FEATURE"] = "OFF",
+                ["MONTAINS_BIOMES_FEATURE"] = "OFF",
+                ["CAVE_BIOMES_FEATURE"] = "OFF",
+            },
+            ["ASSETS_REPLACEMENTS_FEATURES"] =
+            {
+                ["E3_FANTASY_ASSETS_FEATURES"] = "OFF",
+                ["E3_FANTASY_WORSTONES_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_BEACONS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PORTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_DEPOTS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_CRYSTALS_ASSETS_FEATURE"] = "OFF",
+                ["E3_FANTASY_PLANETS_COLORS_FEATURE"] = "OFF",
+                ["REDMAS_RUINS_FEATURES"] = "OFF",
+                ["LARGE_BUILDINGS_TRADINGPOSTS_FEATURE"] = "OFF",
+            },
+        },
+        ["SPACE_GENERATION_FEATURES"] =
+        {
+            ["REDMAS_SPACE_GENERATION"] = "OFF",
+            ["TRADING_ROUTES"] = "OFF",
+            ["MASSIVE_FLEET"] = "OFF",
+            ["PROCEDURAL_SPACE_CRASHSITE_FOR_SCAVENGING_MISSION"] = "OFF",
+        },
+        ["SPACESHIPS_GENERATION_FEATURES"] =
+        {
+            ["ADDITIONAL_VARIATIONS_FOR_SHUTTLE_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FIGHTERS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCIENTICS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_SCLASS_SPACESHIPS"] = "OFF",
+            ["ADDITIONAL_VARIATIONS_FOR_FREIGHTERS_SPACESHIPS"] = "OFF",
+        },
+    },
+    ["SKINS"] =
+    {
+        ["CHARACTERS_SKINS_FEATURE"] = "OFF",
+        -- (E3-DAMAGED or E3)
+		["DRONE_PET_SKIN_FEATURE"] = "OFF",
+        ["DRONE_PET_SKIN"] = "E3-DAMAGED",
+        -- THE-WATCHER  /or/   SPACE-PIRATE /or/     GIRLY       /or/
+        -- KORVAX      /or/   OUTLAWS      /or/     TRAVELLER   /or/
+        -- VY-KEEN    /or/   ANOMALY      /or/      GEK
+        ["CHAR_PRESETS_SKINS"] = "THE-WATCHER"
+    },
+    ["NEWGAME_BONUS_FEATURES"] ={
+        ["NEWGAME_BONUSES"] = "OFF",
+		-- OUTLAW1 / OUTLAW2 / ALPHA_VECTOR /
+		-- PLANETEXPLO2 / PLANETEXPLO3 / PLANETEXPLO4 / PLANETEXPLO5 / PLANETEXPLO6 / PLANETEXPLO7 /
+		-- SPACEEXPLO1 / SPACEEXPLO2 / SPACEEXPLO3 / SPACEEXPLO4 / SPACEEXPLO5 / SPACEEXPLO6 / SPACEEXPLO7
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_SHIP"] = "ALPHA_VECTOR",
+		-- OUTLAW1 / OUTLAW2 / EXPLO1 / SPACE /
+		-- EXPLO2 / EXPLO3 / EXPLO4 / EXPLO5 / EXPLO6 / EXPLO7 /
+		-- BOUNTYHUNTER1 / BOUNTYHUNTER2 / BOUNTYHUNTER3 / BOUNTYHUNTER4 / BOUNTYHUNTER5
+        ["STARTING_MULTITOOL"] = "EXPLO1",
+    },
+    ["CHALLENGE_FEATURES"] =
+    {
+        ["CHALLENGE_MODE"] = "OFF",
 		["STRONG_CREATURES_FEATURE"] = "ON",
         ["HEALTH_MULTIPLIER"] = "4", -- 2 to 6
         ["DARK_UNDERWATER"] = "ON",
@@ -2789,13 +2791,13 @@ REDMAS_CHALLENGE_MODE_PRESET ={
 ------------------------------------------------------------------------------------------
 
 REDMAS_E3PIC_FANTASY_PRESET ={
-	["MODNAME"] = "__EUPHORIA_WORLDS_GENERATION_extension_v4.1",
+	["MODNAME"] = "__EUPHORIA_WORLDS_GENERATION_extension_v5",
 	["VISUAL_OVERHAUL_FEATURES"] =
     {
         ["VISUAL_OVERHAUL"] = "OFF",
         ["REDMAS_WATER_REFLECTIONS"] = "OFF",
         ["SPACE_BLUR_FEATURE"] = "OFF",
-        ["FILTERS_SWAP_FEATURE"] = "OFF",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
         ["BINOCULARS_TYPE"] = "SUN", -- SUN / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "OFF",
         ["SPACESHIPS_TRAILS_TYPE"] = "VANILLA",  -- (REALISTIC / VANILLA / E3 )
@@ -2860,8 +2862,8 @@ REDMAS_E3PIC_FANTASY_PRESET ={
     },
     ["CREATURES_FEATURES"] =
     {
-        ["CREATURES_OVERHAUL"] = "OFF",
-        ["CREATURES_HIGH_DENSITY_FEATURE"] = "OFF",
+        ["CREATURES_OVERHAUL"] = "ON",
+        ["CREATURES_HIGH_DENSITY_FEATURE"] = "ON",
         ["MAX_CREATURES_NUMBER"] = 10, -- 10 < - > 20
         ["CREATURES_BEHAVIOURS_IMPROVEMENTS_FEATURE"] = "ON",
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
@@ -2869,7 +2871,7 @@ REDMAS_E3PIC_FANTASY_PRESET ={
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
         ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF",
         ["GIANTS_CREATURES_FEATURE"] = "ON",
-        ["GIANTS_MAX_SIZE"] = "114", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
+        ["GIANTS_MAX_SIZE"] = "84", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
     ["GENERATION_FEATURES"] =
     {
@@ -2877,15 +2879,15 @@ REDMAS_E3PIC_FANTASY_PRESET ={
         ["COLORS_AUTO_GENERATION_FEATURES"] =
         {
             ["ULTRA_DIVERSE_SPACE_COLOURS"] = "OFF",
-            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "ON",
-            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "ON",
+            ["HUGE_WATER_COLORS_DIVERSITY_FEATURE"] = "OFF",
+            ["PLANETSKY_COLORS_DIVERSITY_FEATURE"] = "OFF",
         },
         ["PLANETS_GENERATION_FEATURES"] =
         {
             ["TERRAIN_SHAPES_FEATURES"] =
             {
                 ["MODDED_TERRAIN_SHAPES_FEATURE"] = "OFF", -- "OFF" / "EUPHORIA" / "SCI_FI_FANTASY" / "EPIC_FANTASY"
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF",
                 ["TERRAIN_HEIGHT_MAX"] = "222",
             },
             ["BIOMES_FEATURES"] =
@@ -4725,8 +4727,8 @@ REDMAS_SUPER_VEHICLES_PRESET ={
             ["CUSTOM_PILGRIM_EXOCRAFT"] = "ON",
             ["CUSTOM_COLOSSUS_EXOCRAFT"] = "ON",
             ["CUSTOM_ROAMER_EXOCRAFT"] = "ON",
-            ["ROAMER_BIGWHEELS_FEATURE"] = "ON",
-            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "ON",
+            ["ROAMER_BIGWHEELS_FEATURE"] = "OFF",
+            ["ROAMER_ADDITIONAL_LAMPS_FEATURE"] = "OFF",
             ["GIANT_MECHS_BETA_FEATURE"] = "ON",
             ["MECHS_SIZE_MULTIPLIER"] = 3,  -- ( 2 to 10 -- adviced size : 3 )
         },
@@ -5231,7 +5233,7 @@ SCIFI_FANTASY_PRESET ={
         ["VISUAL_OVERHAUL"] = "ON",
         ["REDMAS_WATER_REFLECTIONS"] = "ON",
         ["SPACE_BLUR_FEATURE"] = "ON",
-        ["FILTERS_SWAP_FEATURE"] = "OFF",
+        ["FILTERS_SWAP_FEATURE"] = "ON",
         ["BINOCULARS_TYPE"] = "CLEAR", -- CLEAR / CLEAR
         ["SPEED_EFFECTS_REDUCER_FEATURE"] = "ON",
         ["SPACESHIPS_TRAILS_TYPE"] = "REALISTIC",  -- (REALISTIC / VANILLA / E3 )
@@ -5792,6 +5794,42 @@ FEATURES_CHANGE_TABLE = {}------------------------------------------------------
 CUSTOM_CONTENT = {}----------------------------------------------------------------------------------------------
 CONTENT = {}
 
+OFTEN_SPAWN =------------------------------------------------------------------------------------------------------------
+[[
+		<Property name="AutoCollision" value="False" />
+						<Property name="CollideWithPlayer" value="True" />
+						<Property name="CollideWithPlayerVehicle" value="True" />
+						<Property name="DestroyedByPlayerVehicle" value="True" />
+						<Property name="DestroyedByPlayerShip" value="True" />
+						<Property name="DestroyedByTerrainEdit" value="True" />
+						<Property name="InvisibleToCamera" value="True" />
+						<Property name="CreaturesCanEat" value="False" />
+						<Property name="ShearWindStrength" value="0" />
+						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+						<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+						<Property name="ID" value="STANDARD" />
+						<Property name="Coverage" value="0.3" />
+						<Property name="FlatDensity" value="0.0041" />
+						<Property name="SlopeDensity" value="0" />
+						<Property name="SlopeMultiplier" value="1" />
+						<Property name="MaxRegionRadius" value="9999" />
+		<Property name="MaxRegionRadius" value="9999" />
+		<Property name="MaxImposterRadius" value="9999" />
+		<Property name="FadeOutStartDistance" value="9999" />
+		<Property name="FadeOutEndDistance" value="9999" />
+		<Property name="FadeOutOffsetDistance" value="0" />
+		<Property name="LodDistances">
+		<Property value="0" />
+		<Property value="200" />
+		<Property value="600" />
+		<Property value="1000" />
+		<Property value="1400" />
+						</Property>
+						</Property>
+						<Property name="QualityVariants">
+
+						</Property>
+]]
 --------------------------------------------------------------------------------------------------------------
 GIANT_OFTEN_SPAWN =------------------------------------------------------------------------------------------------------------
 [[
@@ -6477,36 +6515,7 @@ function generateRareRessourcesBiome(BIOME_PATH,TYPE,PATH,MAXSIZE)
 								<Property name="SlopeScaling" value="1" />
 								<Property name="PatchEdgeScaling" value="0" />
 								<Property name="MaxXZRotation" value="0" />
-								<Property name="AutoCollision" value="False" />
-								<Property name="CollideWithPlayer" value="True" />
-								<Property name="CollideWithPlayerVehicle" value="True" />
-								<Property name="DestroyedByPlayerVehicle" value="True" />
-								<Property name="DestroyedByPlayerShip" value="True" />
-								<Property name="DestroyedByTerrainEdit" value="True" />
-								<Property name="InvisibleToCamera" value="True" />
-								<Property name="CreaturesCanEat" value="True" />
-								<Property name="ShearWindStrength" value="0" />
-								<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
-								<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
-								<Property name="ID" value="STANDARD" />
-								<Property name="Coverage" value="0.01" />
-								<Property name="FlatDensity" value="1E-05" />
-								<Property name="SlopeDensity" value="0" />
-								<Property name="SlopeMultiplier" value="1" />
-								<Property name="MaxRegionRadius" value="9999" />
-								<Property name="MaxImposterRadius" value="9999" />
-								<Property name="FadeOutStartDistance" value="9999" />
-								<Property name="FadeOutEndDistance" value="9999" />
-								<Property name="FadeOutOffsetDistance" value="0" />
-								<Property name="LodDistances">
-									<Property value="0" />
-									<Property value="2000" />
-									<Property value="6000" />
-									<Property value="10000" />
-									<Property value="14000" />
-								</Property>
-								</Property>
-								<Property name="QualityVariants" />
+								]]..GIANT_SPARSE_SPAWN..[[						
 							</Property>
 						
 						</Property>
@@ -6518,7 +6527,7 @@ function generateRareRessourcesBiome(BIOME_PATH,TYPE,PATH,MAXSIZE)
 	addContent(BIOME)------------------------------------------------------------------------------------------------------------
 end	------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
-function generateRessourcesBiome(BIOME_PATH,TYPE,PATH,ROTATION)
+function generateRessourcesBiome(BIOME_PATH,TYPE,PATH,MAXSIZE)
 	BIOME =------------------------------------------------------------------------------------------------------------
 	{	------------------------------------------------------------------------------------------------------------
 		{------------------------------------------------------------------------------------------------------------
@@ -6599,14 +6608,14 @@ function generateRessourcesBiome(BIOME_PATH,TYPE,PATH,ROTATION)
 								<Property name="SwapPrimaryForSecondaryColour" value="False" />
 								<Property name="SwapPrimaryForRandomColour" value="False" />
 								<Property name="AlignToNormal" value="True" />
-								<Property name="MinScale" value="0.1" />
-								<Property name="MaxScale" value="1" />
+								<Property name="MinScale" value="0.21" />
+								<Property name="MaxScale" value="]]..MAXSIZE..[[" />
 								<Property name="MinScaleY" value="0.91" />
 								<Property name="MaxScaleY" value="1.15" />
 								<Property name="SlopeScaling" value="1" />
 								<Property name="PatchEdgeScaling" value="0" />
-								<Property name="MaxXZRotation" value="]]..ROTATION..[[" />
-								]]..GIANT_OFTEN_SPAWN..[[						
+								<Property name="MaxXZRotation" value="0" />
+								]]..OFTEN_SPAWN..[[						
 							</Property>
 						</Property>
 					]]
@@ -6623,11 +6632,7 @@ function generateGiantBiomeFOREST
 		MAIN_TREE_TYPE,
 		MAIN_TREE_PATH,		
 		MAIN_TREE_ROTATION,
-		MAIN_TREE_SIZEMAX,
-		LARGEROCK_TYPE,
-		LARGEROCK_PATH,
-		LARGEROCK_ROTATION,
-		LARGEROCK_SIZEMAX
+		MAIN_TREE_SIZEMAX
 	)
 
 	------------------------------------------------------------------------------------------------------------
@@ -6803,78 +6808,14 @@ function generateGiantBiomeFOREST
 								<Property name="AlignToNormal" value="False" />
 								<Property name="MinScale" value="1" />
 								<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
-								<Property name="MinScaleY" value="0.71" />
-								<Property name="MaxScaleY" value="1.32" />
+								<Property name="MinScaleY" value="0.91" />
+								<Property name="MaxScaleY" value="1.12" />
 								<Property name="SlopeScaling" value="1" />
 								<Property name="PatchEdgeScaling" value="0" />
 								<Property name="MaxXZRotation" value="]]..MAIN_TREE_ROTATION..[[" />
 								]]..GIANT_OFTEN_SPAWN..[[
 								</Property>
 							
-							<Property value="GcObjectSpawnData.xml">
-								<Property name="DebugName" value="" />
-								<Property name="Type" value="]]..LARGEROCK_TYPE..[[" />
-								<Property name="Resource" value="GcResourceElement.xml">
-								<Property name="Filename" value="]]..LARGEROCK_PATH..[[" />
-								<Property name="Seed" value="GcSeed.xml">
-									<Property name="Seed" value="0" />
-									<Property name="UseSeedValue" value="False" />
-								</Property>
-								<Property name="AltId" value="" />
-								<Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
-									<Property name="Samplers">
-									<Property value="TkProceduralTextureChosenOptionSampler.xml">
-										<Property name="Options">
-										<Property value="TkProceduralTextureChosenOption.xml">
-											<Property name="Layer" value="BASE" />
-											<Property name="Group" value="LEAF" />
-											<Property name="Palette" value="TkPaletteTexture.xml">
-											<Property name="Palette" value="Leaf" />
-											<Property name="ColourAlt" value="Primary" />
-											</Property>
-											<Property name="OverrideColour" value="True" />
-											<Property name="Colour" value="Colour.xml">
-											<Property name="R" value="0.4" />
-											<Property name="G" value="0.53" />
-											<Property name="B" value="0.289" />
-											<Property name="A" value="1" />
-											</Property>
-											<Property name="OptionName" value="2" />
-										</Property>
-										</Property>
-									</Property>
-									</Property>
-								</Property>
-								</Property>
-								<Property name="AltResources" />
-								<Property name="ExtraTileTypes" />
-								<Property name="Placement" value="FLORACLUMP" />
-								<Property name="Seed" value="GcSeed.xml">
-								<Property name="Seed" value="0" />
-								<Property name="UseSeedValue" value="False" />
-								</Property>
-								<Property name="PlacementPriority" value="Normal" />
-								<Property name="LargeObjectCoverage" value="DoNotPlaceIgnoreFootprint" />
-								<Property name="OverlapStyle" value="None" />
-								<Property name="MinHeight" value="-1" />
-								<Property name="MaxHeight" value="1280" />
-								<Property name="RelativeToSeaLevel" value="True" />
-								<Property name="MinAngle" value="0" />
-								<Property name="MaxAngle" value="15" />
-								<Property name="MatchGroundColour" value="True" />
-								<Property name="GroundColourIndex" value="Auto" />
-								<Property name="SwapPrimaryForSecondaryColour" value="False" />
-								<Property name="SwapPrimaryForRandomColour" value="False" />
-								<Property name="AlignToNormal" value="True" />
-								<Property name="MinScale" value="1" />
-								<Property name="MaxScale" value="]]..LARGEROCK_SIZEMAX..[[" />
-								<Property name="MinScaleY" value="1" />
-								<Property name="MaxScaleY" value="1.3" />
-								<Property name="SlopeScaling" value="1" />
-								<Property name="PatchEdgeScaling" value="0" />
-								<Property name="MaxXZRotation" value="]]..LARGEROCK_ROTATION..[[" />
-								]]..GIANT_SPARSE_SPAWN..[[						
-							</Property>
 						</Property>
 					]]
 				},------------------------------------------------------------------------------------------------------------
@@ -7067,10 +7008,10 @@ function generateORIGINSTREES
 									<Property name="SwapPrimaryForSecondaryColour" value="False" />
 									<Property name="SwapPrimaryForRandomColour" value="False" />
 									<Property name="AlignToNormal" value="False" />
-									<Property name="MinScale" value="1.3" />
+									<Property name="MinScale" value="0.93" />
 									<Property name="MaxScale" value="]]..MAIN_TREE_SIZEMAX..[[" />
-									<Property name="MinScaleY" value="0.91" />
-									<Property name="MaxScaleY" value="1.12" />
+									<Property name="MinScaleY" value="0.81" />
+									<Property name="MaxScaleY" value="1.02" />
 									<Property name="SlopeScaling" value="1" />
 									<Property name="PatchEdgeScaling" value="0" />
 									<Property name="MaxXZRotation" value="5" />
@@ -10202,7 +10143,7 @@ function generateMountainBiomes
         <Property name="AlignToNormal" value="True" />
         <Property name="MinScale" value="0.03" />
         <Property name="MaxScale" value="0.18" />
-        <Property name="MinScaleY" value="1" />
+        <Property name="MinScaleY" value="0.1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
         <Property name="PatchEdgeScaling" value="0" />
@@ -10550,7 +10491,7 @@ local generateGiantBiomeMEGALITH = function
 							<Property name="SlopeScaling" value="1" />
 							<Property name="PatchEdgeScaling" value="0" />
 							<Property name="MaxXZRotation" value="]]..LARGEROCK_ROTATION..[[" />
-							]]..GIANT_SPARSE_SPAWN..[[
+							]]..GIANT_OFTEN_SPAWN..[[
 						</Property>
 					</Property>
 
@@ -10995,12 +10936,14 @@ CONSTRUCTS_WARNING = [[<!--This is a copy of the vanilla file in order to preven
 --
 -- FORCED DISABLED FEATURES 
 --  MBINCOMPILER ISSUES OR UNDER MAINTENANCE FEATURES
---CAVE_BIOMES_FEATURE = "OFF" -- under maintenance
+
 --------------------------------------------------------
 --MINING_SPEED = "1" -- MBINCOMPILER ISSUE
 --NEWGAME_BONUSES = "OFF" -- MBINCOMPILER ISSUE
 --GIANT_MECHS_BETA_FEATURE = "OFF " -- MBINCOMPILER ISSUE
 --NEW_INTERACTIONS_FEATURE = "OFF" -- MBINCOMPILER ISSUE
+
+
 --
 ---------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -14878,7 +14821,7 @@ then
 		{
 
 			["FILE_DESTINATION"] 		= [[TEXTURES\LUT\FILTERS\DEFAULT.DDS]],
-			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\IMAGES\FILTERS\CLEAN.DDS]]
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\IMAGES\FILTERS\BRIGHT.DDS]]
 
 		}
 		table.insert(CUSTOM_CONTENT, FILTERS_CONTENT1)
@@ -14888,7 +14831,7 @@ then
 		{
 
 			["FILE_DESTINATION"] 		= [[TEXTURES\LUT\FILTERS\DEFAULT.DDS]],
-			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\IMAGES\FILTERS\CYBER.DDS]]
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\IMAGES\FILTERS\CLEAN.DDS]]
 
 		}
 		table.insert(CUSTOM_CONTENT, FILTERS_CONTENT1)
@@ -14920,7 +14863,7 @@ then
 		{
 
 			["FILE_DESTINATION"] 		= [[TEXTURES\LUT\FILTERS\DEFAULT.DDS]],
-			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\IMAGES\FILTERS\E3.DDS]]
+			["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\IMAGES\FILTERS\BRIGHT.DDS]]
 
 		}
 		table.insert(CUSTOM_CONTENT, FILTERS_CONTENT1)
@@ -19358,7 +19301,7 @@ if CREATURES_OVERHAUL == "ON" then
 	end
 	-------------------------------------------------------------------------------
 	-- HIGH DENSITY FEATURE
-	if  GIANTS_CREATURES_FEATURE ~= "ON" then
+
 	addFeature
 	(
 		
@@ -19632,7 +19575,7 @@ if CREATURES_OVERHAUL == "ON" then
 
 		DAY_ONE_MODE
 	)
-	end
+	
 	--------------------------------------------------------------
 	-- REDMAS GAME OVERHAUL ADDITIONAL CREATURES
 	addFeature
@@ -20142,7 +20085,7 @@ if CREATURES_OVERHAUL == "ON" then
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.2"},
-										{"MaxScale", "34"},
+										{"MaxScale", "14"},
 									}
 								},
 								{
@@ -20152,7 +20095,7 @@ if CREATURES_OVERHAUL == "ON" then
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinScale", "0.1"},
-										{"MaxScale", "20.5"},
+										{"MaxScale", "10.5"},
 									}
 								},
 								{
@@ -20332,7 +20275,7 @@ if CREATURES_OVERHAUL == "ON" then
 						["MBIN_FILE_SOURCE"]  = {
 							CREATURESMODELS..[[ANTELOPERIG\ANTELOPEROBOT\ENTITIES\ANTELOPEROBOT.ENTITY.MBIN]],
 							CREATURESMODELS..[[CATRIG\BONECAT\ENTITIES\BONECATBODY.ENTITY.MBIN]],
-							CREATURESMODELS..[[FLYINGLIZARDRIG\FLYINGLIZARD\ENTITIES\BODY_LIZARD.ENTITY.MBIN]],
+						--	CREATURESMODELS..[[FLYINGLIZARDRIG\FLYINGLIZARD\ENTITIES\BODY_LIZARD.ENTITY.MBIN]],
 							CREATURESMODELS..[[SHARKRIG\SHARK\ENTITIES\SHARK1.ENTITY.MBIN]],
 							CREATURESMODELS..[[STRIDERRIG\STRIDER\ENTITIES\STRIDERMESH.ENTITY.MBIN]],
 							CREATURESMODELS..[[TREXRIG\TREX\ENTITIES\_BODY_TREX.ENTITY.MBIN]],
@@ -20348,7 +20291,7 @@ if CREATURES_OVERHAUL == "ON" then
 								["REPLACE_TYPE"] = "ALL",
 								["VALUE_CHANGE_TABLE"] 	=
 								{
-									{"Speed", "0.7"},
+									{"Speed", "0.9"},
 								}
 							}
 						}
@@ -20403,6 +20346,7 @@ end
 -- GENERATION OVERHAUL
 if GENERATION_OVERHAUL == "ON"
 then
+
 	val_TERRAIN_HEIGHT_MIN = tonumber(TERRAIN_HEIGHT_MAX) - 50
 	TERRAIN_HEIGHT_MIN = tostring (val_TERRAIN_HEIGHT_MIN)
 	if MODDED_TERRAIN_SHAPES_FEATURE == "EPIC_FANTASY" then
@@ -20870,7 +20814,7 @@ then
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "10",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
@@ -20906,61 +20850,61 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEICEROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCKSTACK_1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\MEDIUMPROPS\MEDIUMROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\HEROPINE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\SKINNYPINE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\TALLPINE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 		}
 --]=]
@@ -21010,19 +20954,19 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\MEDIUMSLATE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMSLATE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\MEDIUMSHARP02.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMSHARP02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\MEDIUMSHARP01.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\MEDIUMSHARP01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
@@ -21082,12 +21026,6 @@ then
 				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\IRRISHELLS\SHELLSHARD.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
@@ -21096,44 +21034,16 @@ then
 		}
 		TABLE_CARBONE_RESSOURCES =
 		{
-			{
-				["PATH"] = [[MODELS\RGO\MEDIUMBUSH01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\MEDIUMBUSH02.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\SMALLPLANT01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\SMALLPLANT02.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\MEDIUMPLANT01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\MEDIUMPLANT02.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
+					
+	
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\VOLCANICPLANT.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/PLANETS/BIOMES/LUSHROOM/MEDIUMSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
@@ -21180,176 +21090,743 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
-		}
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLFLOATCUBE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+				{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.013"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGEBLOB.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.013"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGG.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.013"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGGSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.013"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.013"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.013"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.013"
+			},	
 
-		FROZENPROPS =
-		{
-
 
 			{
-				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "10",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\ICEDECAL.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "0.02"
 			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\FOLIAGE\LARGETREEBARE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+						{
+				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\FOLIAGE\STALKBRANCH.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\ICEDECAL.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEICEROCK_1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCKSTACK_1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCK_1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\MEDIUMPROPS\MEDIUMROCKS.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\HEROPINE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\SKINNYPINE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\TALLPINE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGEROCKS.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREEBARE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\SNOWCOVEREDWEIRDPROP.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LIVINGSHIP\MEDIUM\FROZENSPIKE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LIVINGSHIP\LARGE\FROZENUMBRELLA.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.11"
+				["MAXSIZE"] = "0.02"
 			},
 
-		}
+			{
+				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.04"
+			},
 
-		NORMALLUSHTREES =
-		{
 
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.04"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.04"
+			},
+
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.04"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.030"
+			},
+									{
+				["PATH"] = [[MODELS/RGO/RACESTATUE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.014"
+			},
+			
+						{
+				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.44"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK02.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.044"
+			},
+			
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
+				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
+				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "3"
+				["MAXSIZE"] = "0.20"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
 			},
 			{
-				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MANGROVELARGEFULL.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMAS_GROVE3.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.5"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.3"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE3.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.4"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
+				["TYPE"] = "Single",
 				["ROTATION"] = "10",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/BENDYTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "0.20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.5"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.5"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.5"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.44"
+			},
+			
+			
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.20"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			
+			{
+				["PATH"] = [[MODELS\RGO\DEADTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\DEADTREE02.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\DEADTREE03.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.24"
+			},
+		
+
+		}
+
+		FROZENPROPS =
+		{
+
+									{
+				["PATH"] = [[MODELS\RGO\DEADTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "10",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\ICEDECAL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\FOLIAGE\LARGETREEBARE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\FOLIAGE\STALKBRANCH.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\ICEDECAL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEICEROCK_1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCKSTACK_1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\LARGEPROPS\LARGEROCK_1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\MEDIUMPROPS\MEDIUMROCKS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\HEROPINE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\SKINNYPINE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQFROZEN\TREES\TALLPINE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGEROCKS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\MSTRUCTURES\MSTRUCTURE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\LARGETREEBARE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\FROZEN\LARGEPROPS\SNOWCOVEREDWEIRDPROP.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+
+		}
+
+		NORMALLUSHTREES =
+		{									{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "0.01"
+			},
+
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "7"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+				{
+				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 
 			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "12"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
@@ -21361,19 +21838,30 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
-
-			{
-				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
 			},
 
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
@@ -21385,93 +21873,63 @@ then
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-			{
-				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.3"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\LARGETREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "5"
+				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\COLOURFANSHROOM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "6"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "6"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEFANSHROOMSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "6"
 			},
-			--{
-			--	["PATH"] = [[MODELS\PLANETS\DESERT\TREES\TWISTEDTREE.SCENE.MBIN]],
-			--	["TYPE"] = "Single",
-			--	["ROTATION"] = "0",
-			--	["MAXSIZE"] = "24"
-			--},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
@@ -21479,22 +21937,130 @@ then
 				["MAXSIZE"] = "2"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGERING\HUGERINGTREE.SCENE.MBIN]],
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "0.21"
+				["MAXSIZE"] = "2"
 			},
-			{
-				["PATH"] = [[MODELS\RGO\SMALLPLANT.SCENE.MBIN]],
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "6"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\SMALLPLANT.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
 				["PATH"] = [[MODELS\RGO\MEDIUMBUSH01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMBUSH02.SCENE.MBIN]],
@@ -21506,54 +22072,238 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "2"
-			},
-						{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE012.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 
 		}
 		GIANTLUSHTREES =
-		{
+		{								
 
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGEBLOB.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGG.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\LARGETOXICEGGSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "13"
+			},
+
+		
+			{
+				["PATH"] = [[MODELS\RGO\HOLOEXPLORER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "63"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\GIANTCUBE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\GIANTMETALSPIKE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "5",
+				["MAXSIZE"] = "4"
+			},
+
+			{
+				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+
+						{
+				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+
+
+			{
+				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\STEAMVENT.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "30"
+			},
+									{
+				["PATH"] = [[MODELS/RGO/RACESTATUE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "14"
+			},
+			
+						{
+				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEARRANGEDROCK02.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "44"
+			},
+			
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "20"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/MEDIUMOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/SMALLOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+			{
+				["PATH"] = [[MODELS/RGO/LARGEOAK1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MANGROVELARGE.SCENE.MBIN]],
@@ -21598,6 +22348,24 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+						{
+				["PATH"] = [[MODELS/RGO/REDMASGROVE2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
 			{
 				["PATH"] = [[MODELS/RGO/REDMASGROVE3.SCENE.MBIN]],
 				["TYPE"] = "Single",
@@ -21609,55 +22377,55 @@ then
 				["PATH"] = [[MODELS/RGO/UNDERWATERTREE.SCENE.MBIN]],
 				["TYPE"] = "Single",
 				["ROTATION"] = "10",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/BENDYTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "30"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/LARGEFIR01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "30"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "30"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/MEDIUMTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "30"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "30"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREEMEDIUM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRAIGHTTREESMALL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS/RGO/STRANDS.SCENE.MBIN]],
@@ -21669,7 +22437,7 @@ then
 				["PATH"] = [[MODELS/RGO/VINETREELARGE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "44"
 			},
 			
 			
@@ -21683,31 +22451,31 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\MEDIUMTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SKINNEDTREES.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\TREES\SMALLTREE1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\TREES\DRACAENA.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "44"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\LARGEPROPS\DEADTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "40"
+				["MAXSIZE"] = "20"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LUSHROOM\LARGEBLUESHROOM.SCENE.MBIN]],
@@ -21741,35 +22509,41 @@ then
 			},
 			
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE01.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\DEADTREE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "24"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\NEVADA\LARGEPLANTS\DEADTREE012.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\DEADTREE02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "44"
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\DEADTREE03.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
 			},
 
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "24"
 			},
 			--{
 			--	["PATH"] = [[MODELS\PLANETS\DESERT\TREES\TWISTEDTREE.SCENE.MBIN]],
@@ -21784,11 +22558,47 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "20"
 			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\HQTREES\HQTREEREF.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "20"
+			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGERING\HUGERINGTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "14"
+				["MAXSIZE"] = "44"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGESCORCHED\HUGESPIRE.SCENE.MBIN]],
@@ -21796,90 +22606,523 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "10"
 			},
-		}
-
-		GIANTROCKSLIST =
-		{
-			{
+				{
 				["PATH"] = [[MODELS\RGO\LARGEROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTGLOWINGSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTSPIKE.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "21"
+			},
+									{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "81"
+			},
+									{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "81"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\PILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "4"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
 			},
 		
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPILLAR.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "2"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "22"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			
 			{
 				["PATH"] = [[MODELS\RGO\LARGEROCKS2.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "21"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGESTRANDS.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "14"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
 			},
 
 
 			{
 				["PATH"] = [[MODELS\RGO\MONOLITH.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2.94"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\SMALLTENDRIL.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2.24"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2.4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\UNDERWATERBOULDER.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "1",
+				["MAXSIZE"] = "2.4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "1",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK02.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVESINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEMOUNTAINROCKCLOSED.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEPLAINSBOULDER02.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER02.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLBOULDER05.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\LARGEROCK.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\LARGELUMP1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SCALLOPSHELL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "24"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SHELLSPIKES.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SPIKEYSHELL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOSSCOVEREDWEIRDPROP.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOUNTAINROCK_1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQLARGEROCKS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQROCKS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESWIRLPLANT.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\MEDIUMPROPS\LAVACRYSTALS.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\CURVEDROCK.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANT.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANTSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\RADIOACTIVETREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "10"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCK.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCKSINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\LARGETENTACLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\MEDIUMTENTACLEBLOB.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPONGE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "10"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\FUNGALTREE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "10"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "10"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEROCK\HUGESPIKEROCK.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "2",
+				["MAXSIZE"] = "10"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLBLOCK.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "10"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\IRRISHELLS\SHELLSHARD.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "11"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "11"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\GIANTCUBE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\GIANTMETALSPIKE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "5",
+				["MAXSIZE"] = "44"
+			},
+
+			{
+				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+
+				
+		}
+--[=[
+		GIANTROCKSLIST = -- current version doesnt use this table anymore, everything is now in giantrees table
+		{
+			{
+				["PATH"] = [[MODELS\RGO\LARGEROCK_1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\GIANTGLOWINGSPIKE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\GIANTSPIKE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FLOATER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\PILLAR1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+		
+			{
+				["PATH"] = [[MODELS\RGO\LARGEPILLAR.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			
+			{
+				["PATH"] = [[MODELS\RGO\LARGEROCKS2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\LARGESTRANDS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+
+
+			{
+				["PATH"] = [[MODELS\RGO\MONOLITH.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.94"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SMALLTENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.24"
 			},
 						{
 				["PATH"] = [[MODELS\RGO\SQUATPILLAR1.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "0.4"
 			},
 			{
@@ -21892,199 +23135,199 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "1",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\GROUNDREVEALROCK02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEHIVESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEMOUNTAINROCKCLOSED.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\LARGEPLAINSBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLBOULDER05.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\LARGEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\LARGELUMP1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SCALLOPSHELL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SHELLSPIKES.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\CORAL\LARGEPROP\SPIKEYSHELL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOSSCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSH\LARGEPROPS\MOUNTAINROCK_1.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQLARGEROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGEFUNGUS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGETOXIC\HUGETENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESWIRLPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HUGEPROPS\HUGEUW\HUGESTRANDS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\LAVA\MEDIUMPROPS\LAVACRYSTALS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\CURVEDROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANT.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\LARGEGLOWPLANTSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\LARGE\RADIOACTIVETREE.SCENE.MBIN]],
@@ -22096,55 +23339,55 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGEROCKSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESHIELDTREESINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\LARGE\LARGESPIRE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\LARGETENTACLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\HOUDINIPROPS\MEDIUMTENTACLEBLOB.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\TENDRIL.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "2",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\LARGE\SPORETREESINGLE.SCENE.MBIN]],
@@ -22183,32 +23426,927 @@ then
 				["MAXSIZE"] = "10"
 			},
 
-		}
-
-		TABLERAREOBJECTS =
+		}--]=]	
+--]=]
+		TABLERAREOBJECTS = 
 		{
+			
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLBLOCK.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "10"
+				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\IRRISHELLS\SHELLSHARD.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
+				["PATH"] = [[MODELS\RGO\STEAMVENT.SCENE.MBIN]],
+				["TYPE"] = "Single",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
 			},
 			{
-				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
+				["PATH"] = [[MODELS\RGO\DRONESHIP.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\DRONESHIP2.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+						{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "1"
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\GEK_HEAD02.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "43"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\NEXUSTOWER.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\PLAQUE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+
+
+			{
+				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\SKULL.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\TURRETA.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "44"
+			},
+			{
+				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\ANOMALYEXPLORER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+									{
+				["PATH"] = [[MODELS\RGO\HOLOSCEPTIC.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+						
+						{
+				["PATH"] = [[MODELS\RGO\HOLOEXPLORER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			
+			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "83"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "63"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "163"
+			},
+									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},
+												{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},									{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "113"
+			},			{
+				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},
+									{
+				["PATH"] = [[MODELS\RGO\HOLOSCEPTIC.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},
+
+						{
+				["PATH"] = [[MODELS\RGO\HOLOEXPLORER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\ANOMALYEXPLORER.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
+				["TYPE"] = "Instanced",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "111"
+			},
+			
+							{
+				["PATH"] = [[MODELS\RGO\POLICESHIP.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\POLICESHIP02.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GIANTCUBE.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
@@ -22221,137 +24359,218 @@ then
 			{
 				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
+						{
+				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+
+						{
+				["PATH"] = [[MODELS\RGO\PROCRUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+
 
 			{
 				["PATH"] = [[MODELS\RGO\SMALLRUINS.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\STEAMVENT.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\DRONESHIP.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\DRONESHIP2.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 						{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\GEK_HEAD02.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "2"
+			},
+						{
+				["PATH"] = [[MODELS\RGO\GEK_HEAD02.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "2"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\NEXUSTOWER.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\PLAQUE.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\POLICESHIP.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\POLICESHIP02.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\ASTRONAUT01.SCENE.MBIN]],
-				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "3"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\SKULL.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "5"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\TURRETA.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
 				["TYPE"] = "Single",
-				["ROTATION"] = "15",
-				["MAXSIZE"] = "1"
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\HUGEROCKRING.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\LARGEPYRAMID.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\NEXUSTOWER.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\PLAQUE.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\POLICESHIP.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\POLICESHIP02.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+
+			{
+				["PATH"] = [[MODELS\RGO\RUINS.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "3"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\SKULL.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "5"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\TURRETA.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
+			},
+			{
+				["PATH"] = [[MODELS\RGO\STATUE_WALK_S.SCENE.MBIN]],
+				["TYPE"] = "Single",
+				["ROTATION"] = "0",
+				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\LARGEFLAG.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\LARGEPROPS\SANDCOVEREDWEIRDPROP.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
-				["ROTATION"] = "15",
+				["ROTATION"] = "0",
 				["MAXSIZE"] = "30"
 			}
-
+			
 
 		}
 		--[=[
@@ -24364,6 +26583,40 @@ LUSHGRASSLIST =
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE02.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE02.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE02.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE02.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE03.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE03.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE01.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE01.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\DEADTREE01.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\DEADTREE01.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\_GEK_HEAD_MAIN.SCENE.EXML]],
@@ -24448,33 +26701,6 @@ LUSHGRASSLIST =
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\ASTRONAUT01.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\ASTRONAUT01.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\ASTRONAUT02.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\ASTRONAUT02.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\ASTRONAUT03.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\ASTRONAUT03.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
-
-		EPIC_FANTASY_CORE_ASSETS_TABLE =
-		{
-	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\ASTRONAUT04.SCENE.EXML]],
-      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\ASTRONAUT04.SCENE.EXML]]
-  		}
-		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
 		
 
@@ -24886,10 +27112,24 @@ LUSHGRASSLIST =
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REFSTANDINGSTONE2.DESCRIPTOR.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REFSTANDINGSTONE2.DESCRIPTOR.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
 		EPIC_FANTASY_CORE_ASSETS_TABLE =
 		{
 	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REFSTANDINGSTONE.SCENE.EXML]],
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REFSTANDINGSTONE.SCENE.EXML]]
+  		}
+		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+				EPIC_FANTASY_CORE_ASSETS_TABLE =
+		{
+	   	 	["FILE_DESTINATION"] 		= [[MODELS\RGO\REFSTANDINGSTONE2.SCENE.EXML]],
+      		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\REFSTANDINGSTONE2.SCENE.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
 
@@ -25321,6 +27561,488 @@ LUSHGRASSLIST =
       		["EXTERNAL_FILE_SOURCE"] 	= [[..\RGOG\EXML\R2\MEDIUMPLANT02.SCENE.EXML]]
   		}
 		table.insert(CUSTOM_CONTENT, EPIC_FANTASY_CORE_ASSETS_TABLE)
+
+
+		copyEXML
+		(
+			"ON",
+			"R2/STATUE_SPAWNER.SCENE.EXML",
+			"MODELS/RGO/STATUE_SPAWNER.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/STATUE_SPAWNER.DESCRIPTOR.EXML",
+			"MODELS/RGO/STATUE_SPAWNER.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/STATUE_SPAWNER2.SCENE.EXML",
+			"MODELS/RGO/STATUE_SPAWNER2.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/STATUE_SPAWNER2.DESCRIPTOR.EXML",
+			"MODELS/RGO/STATUE_SPAWNER2.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/HOLOEXPLORER.DESCRIPTOR.EXML",
+			"MODELS/RGO/HOLOEXPLORER.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/HOLOEXPLORER.SCENE.EXML",
+			"MODELS/RGO/HOLOEXPLORER.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/HOLOEXPLORER.ENTITY.EXML",
+			"MODELS/RGO/HOLOEXPLORER.ENTITY.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/STATUE_WARRIOR1.DESCRIPTOR.EXML",
+			"MODELS/RGO/STATUE_WARRIOR1.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/STATUE_WARRIOR1.SCENE.EXML",
+			"MODELS/RGO/STATUE_WARRIOR1.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/STATUE_WARRIOR1.ENTITY.EXML",
+			"MODELS/RGO/STATUE_WARRIOR1.ENTITY.EXML"
+		)
+				copyEXML
+		(
+			"ON",
+			"R2/HOLOSCEPTIC.DESCRIPTOR.EXML",
+			"MODELS/RGO/HOLOSCEPTIC.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/HOLOSCEPTIC.SCENE.EXML",
+			"MODELS/RGO/HOLOSCEPTIC.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/HOLOSCEPTIC.ENTITY.EXML",
+			"MODELS/RGO/HOLOSCEPTIC.ENTITY.EXML"
+		)
+				copyEXML
+		(
+			"ON",
+			"R2/ANOMALYEXPLORER.DESCRIPTOR.EXML",
+			"MODELS/RGO/ANOMALYEXPLORER.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/ANOMALYEXPLORER.SCENE.EXML",
+			"MODELS/RGO/ANOMALYEXPLORER.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/ANOMALYEXPLORER.ENTITY.EXML",
+			"MODELS/RGO/ANOMALYEXPLORER.ENTITY.EXML"
+		)
+
+		copyEXML
+		(
+			"ON",
+			"R2/FOURTHRACE.DESCRIPTOR.EXML",
+			"MODELS/RGO/FOURTHRACE.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/FOURTHRACE.SCENE.EXML",
+			"MODELS/RGO/FOURTHRACE.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/FOURTHRACE.ENTITY.EXML",
+			"MODELS/RGO/FOURTHRACE.ENTITY.EXML"
+		)
+
+		copyEXML
+		(
+			"ON",
+			"R2/EXPLORERSTAND.DESCRIPTOR.EXML",
+			"MODELS/RGO/EXPLORERSTAND.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/EXPLORERSTAND.SCENE.EXML",
+			"MODELS/RGO/EXPLORERSTAND.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/EXPLORERSTAND.ENTITY.EXML",
+			"MODELS/RGO/EXPLORERSTAND.ENTITY.EXML"
+		)
+
+		copyEXML
+		(
+			"ON",
+			"R2/FOURTHRACE.DESCRIPTOR.EXML",
+			"MODELS/RGO/FOURTHRACE.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/FOURTHRACE.SCENE.EXML",
+			"MODELS/RGO/FOURTHRACE.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/FOURTHRACE.ENTITY.EXML",
+			"MODELS/RGO/FOURTHRACE.ENTITY.EXML"
+		)
+	
+
+
+		copyEXML
+		(
+			"ON",
+			"R2/EXPLORERSTAND.DESCRIPTOR.EXML",
+			"MODELS/RGO/EXPLORERSTAND.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/EXPLORERSTAND.SCENE.EXML",
+			"MODELS/RGO/EXPLORERSTAND.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/EXPLORERSTAND.ENTITY.EXML",
+			"MODELS/RGO/EXPLORERSTAND.ENTITY.EXML"
+		)
+
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMFALLENTREE1.SCENE.EXML",
+			"MODELS/RGO/MEDIUMFALLENTREE1.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT1.SCENE.EXML",
+			"MODELS/RGO/MEDIUMPLANT1.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT2.SCENE.EXML",
+			"MODELS/RGO/MEDIUMPLANT2.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT3.SCENE.EXML",
+			"MODELS/RGO/MEDIUMPLANT3.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT4.SCENE.EXML",
+			"MODELS/RGO/MEDIUMPLANT4.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT5.SCENE.EXML",
+			"MODELS/RGO/MEDIUMPLANT5.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT6.SCENE.EXML",
+			"MODELS/RGO/MEDIUMPLANT6.SCENE.EXML"
+		)
+				copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT7.SCENE.EXML",
+			"MODELS/RGO/MEDIUMPLANT7.SCENE.EXML"
+		)
+
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMBUSH1.SCENE.EXML",
+			"MODELS/RGO/MEDIUMFALLENTREE2.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMBUSH2.SCENE.EXML",
+			"MODELS/RGO/MEDIUMFALLENTREE2.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMFALLENTREE2.SCENE.EXML",
+			"MODELS/RGO/MEDIUMFALLENTREE2.SCENE.EXML"
+		)
+				copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT4.DESCRIPTOR.EXML",
+			"MODELS/RGO/MEDIUMPLANT4.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT3.DESCRIPTOR.EXML",
+			"MODELS/RGO/MEDIUMPLANT3.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT2.DESCRIPTOR.EXML",
+			"MODELS/RGO/MEDIUMPLANT2.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMPLANT1.DESCRIPTOR.EXML",
+			"MODELS/RGO/MEDIUMPLANT1.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/MEDIUMFALLENTREE1.DESCRIPTOR.EXML",
+			"MODELS/RGO/MEDIUMFALLENTREE1.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/DECORATIVESMALLROCK.DESCRIPTOR.EXML",
+			"MODELS/RGO/DECORATIVESMALLROCK.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/DECORATIVESMALLROCK.SCENE.EXML",
+			"MODELS/RGO/DECORATIVESMALLROCK.SCENE.EXML"
+		)
+				copyEXML
+		(
+			"ON",
+			"R2/HQROCKS.SCENE.EXML",
+			"MODELS/RGO/HQROCKS.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/HQLARGEROCKS.SCENE.EXML",
+			"MODELS/RGO/HQLARGEROCKS.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/HQLARGEROCKS.DESCRIPTOR.EXML",
+			"MODELS/RGO/HQLARGEROCKS.DESCRIPTOR.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/HQROCKS.DESCRIPTOR.EXML",
+			"MODELS/RGO/HQROCKS.DESCRIPTOR.EXML"
+		)
+
+				copyEXML
+		(
+			"ON",
+			"R2/LARGEARRANGEDROCK01.SCENE.EXML",
+			"MODELS/RGO/LARGEARRANGEDROCK01.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"R2/LARGEARRANGEDROCK02.SCENE.EXML",
+			"MODELS/RGO/LARGEARRANGEDROCK02.SCENE.EXML"
+		)
+
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/ARRAYSHELLSAND.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYSHELLSAND.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/ARRAYTWIST.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/BIOTANK.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/BIOTANK.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/FLAMESPLINTER.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/FLAMESPLINTER.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/FROZENUMBRELLA.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/FROZENUMBRELLA.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/LARGEEGG.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGEEGG.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/LARGEEGGHOLDER.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGEEGGHOLDER.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/LARGESUMMEREGG.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LARGESUMMEREGG.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/LOWUMBRELLA.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/LOWUMBRELLA.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/SINGLESUMMER.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SINGLESUMMER.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/LARGE/SUMMERUMBRELLA.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/LARGE/SUMMERUMBRELLA.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/ARRAYSHELL.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/ARRAYSHELL.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/CURLYTENDRILS.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/CURLYTENDRILS.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/FROZENSPIKE.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/FROZENSPIKE.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/HOTROCK.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTROCK.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/HOTROCKLIFTED.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTROCKLIFTED.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/HOTTENDRILS.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/MEDIUMPLANT.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/MEDIUMPLANT.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/SPINDLEEGG.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SPINDLEEGG.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/SPINDLESUMMER.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SPINDLESUMMER.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/MEDIUM/SUMMERSPIKE.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/MEDIUM/SUMMERSPIKE.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/SMALL/GLOWGRASS.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/GLOWGRASS.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/SMALL/SMALLDETAILPLANT.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLDETAILPLANT.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/SMALL/SMALLERODEPLANT.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLERODEPLANT.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLTENDRIL.SCENE.EXML"
+		)
+		copyEXML
+		(
+			"ON",
+			"LIVINGSHIP/SMALL/SMALLPLANT.SCENE.EXML",
+			"MODELS/PLANETS/BIOMES/LIVINGSHIP/SMALL/SMALLPLANT.SCENE.EXML"
+		)
+
+
 
 
 		-- UNDERWATER BIOMES
@@ -28517,7 +31239,7 @@ LUSHGRASSLIST =
 			}
 			table.insert(CUSTOM_CONTENT, NEW_CONTENT)
 			--
-				SUBBIOMES_T = SUBBIOMES_T..
+				SUBBIOMES_TF = SUBBIOMES_TF..
 				[[
 					<Property value="NMSString0x80.xml">
 						<Property name="Value" value="METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\SUBBIOMES\T\RADIOACTIVEMATCH.MBIN" />
@@ -29831,7 +32553,6 @@ LUSHGRASSLIST =
 			count = 0
 			GIANTBIOMESLIST = ""
 
-			for count2=1, tablelength(GIANTROCKSLIST) do
 
 				for count1=1, tablelength(GIANTLUSHTREES) do
 					count = count + 1
@@ -29839,8 +32560,8 @@ LUSHGRASSLIST =
 					generateGiantBiomeFOREST
 					(
 						GENERATED_GIANT_BIOME_PATH,
-						GIANTLUSHTREES[count1].TYPE,GIANTLUSHTREES[count1].PATH,GIANTLUSHTREES[count1].ROTATION,GIANTLUSHTREES[count1].MAXSIZE,
-						GIANTROCKSLIST[count2].TYPE,GIANTROCKSLIST[count2].PATH,GIANTROCKSLIST[count2].ROTATION,GIANTROCKSLIST[count2].MAXSIZE
+						GIANTLUSHTREES[count1].TYPE,GIANTLUSHTREES[count1].PATH,GIANTLUSHTREES[count1].ROTATION,GIANTLUSHTREES[count1].MAXSIZE
+
 					)
 					GIANTBIOMESLIST = GIANTBIOMESLIST..
 					[[
@@ -29849,23 +32570,9 @@ LUSHGRASSLIST =
 							</Property>
 					]]
 				end
-			end
+			
 
-			for count3=1, tablelength(GIANTLUSHTREES) do
-
-				GENERATED_GIANT_BIOME_PATH = [[METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\GIANTBIOMES\GENERATEDMEGALITHBIOME]]..count3
-				generateGiantBiomeMEGALITH
-				(
-					GENERATED_GIANT_BIOME_PATH,
-					GIANTROCKSLIST[count3].TYPE,GIANTROCKSLIST[count3].PATH,GIANTROCKSLIST[count3].ROTATION,GIANTROCKSLIST[count3].MAXSIZE
-				)
-				GIANTBIOMESLIST = GIANTBIOMESLIST..
-				[[
-					<Property value="NMSString0x80.xml">
-						<Property name="Value" value="]]..GENERATED_GIANT_BIOME_PATH..[[.MBIN" />
-						</Property>
-				]]
-			end
+			
 			addFeature
 			(
 				GIANTS_BIOMES_FEATURE,
@@ -34591,7 +37298,7 @@ end
 						["SECTION_UP"] = 1,
 						["VALUE_CHANGE_TABLE"] =
 						{
-							{"Bonus", "100.2"},
+							{"Bonus", "24.2"},
 						}
 					},
 					{
