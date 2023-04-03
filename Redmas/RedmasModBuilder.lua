@@ -2700,8 +2700,8 @@ REDMAS_CHALLENGE_MODE_PRESET ={
             ["TERRAIN_SHAPES_FEATURES"] =
             {
                 ["MODDED_TERRAIN_SHAPES_FEATURE"] = "SCI_FI_FANTASY",
-                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "ON",
-                ["TERRAIN_HEIGHT_MAX"] = "140",
+                ["E3_STYLE_RESSOURCES_DEPOSITS"] = "OFF",
+                ["TERRAIN_HEIGHT_MAX"] = "240",
             },
             ["BIOMES_FEATURES"] =
             {
@@ -2869,7 +2869,7 @@ REDMAS_E3PIC_FANTASY_PRESET ={
         ["SANDWORM_OVERHAUL_FEATURE"] = "ON",
         ["PETS_BEHAVIOURS_AND_RIDING_IMPROVEMENTS_FEATURE"] ="ON",
         ["OVERHAUL_TIMER"] = 2, --( In Hours ) ( 24 H in vanilla ) ( timer used for creatures evolutions steps
-        ["FIENDS_SCARY_COMBAT_FEATURE"] = "OFF",
+        ["FIENDS_SCARY_COMBAT_FEATURE"] = "ON",
         ["GIANTS_CREATURES_FEATURE"] = "ON",
         ["GIANTS_MAX_SIZE"] = "84", -- 8 <-> 94 (8 ( vanilla ) / 114 (very huge.))
     },
@@ -5809,7 +5809,7 @@ OFTEN_SPAWN =-------------------------------------------------------------------
 						<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 						<Property name="ID" value="STANDARD" />
 						<Property name="Coverage" value="0.3" />
-						<Property name="FlatDensity" value="0.0041" />
+						<Property name="FlatDensity" value="0.0031" />
 						<Property name="SlopeDensity" value="0" />
 						<Property name="SlopeMultiplier" value="1" />
 						<Property name="MaxRegionRadius" value="9999" />
@@ -5882,7 +5882,7 @@ GIANT_SPARSE_SPAWN = -----------------------------------------------------------
 						<Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
 						<Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
 						<Property name="ID" value="STANDARD" />
-						<Property name="Coverage" value="0.3" />
+						<Property name="Coverage" value="0.2" />
 						<Property name="FlatDensity" value="0.0001" />
 						<Property name="SlopeDensity" value="0" />
 						<Property name="SlopeMultiplier" value="1" />
@@ -19334,7 +19334,7 @@ if CREATURES_OVERHAUL == "ON" then
 						{
 							{"IncreasedSpawnDistance", SPAWNDISTANCE},
 							{"CreatureActiveTime", "AnyTime"},
-							{"MaxGroupSize", MAX_CREATURES_NUMBER},
+							--{"MaxGroupSize", MAX_CREATURES_NUMBER},
 						}
 					},
 
@@ -20050,11 +20050,14 @@ if CREATURES_OVERHAUL == "ON" then
 						["EXML_CHANGE_TABLE"] =
 							{
 								{
+									["INTEGER_TO_FLOAT"] = "FORCE",
 									["REPLACE_TYPE"] = "ALL",
 									["VALUE_CHANGE_TABLE"] 	=
 									{
 										{"MinCount", "1"},
 									  	{"MaxCount", "1"},
+										{"MinScale", "0.1"},
+										{"MaxScale", "0.5"},
 									}
 								},
 								{
@@ -20077,6 +20080,37 @@ if CREATURES_OVERHAUL == "ON" then
 										{"MaxScale", "13"},
 									}
 								},
+								{
+									["INTEGER_TO_FLOAT"] = "FORCE",
+									["SPECIAL_KEY_WORDS"] = {"Id","COW"},
+									
+									["VALUE_CHANGE_TABLE"] 	=
+									{
+										{"MinScale", "0.1"},
+										{"MaxScale", "0.2"},
+									}
+								},
+																{
+									["INTEGER_TO_FLOAT"] = "FORCE",
+									["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCOW"},
+									
+									["VALUE_CHANGE_TABLE"] 	=
+									{
+										{"MinScale", "0.1"},
+										{"MaxScale", "0.2"},
+									}
+								},
+																{
+									["INTEGER_TO_FLOAT"] = "FORCE",
+									["SPECIAL_KEY_WORDS"] = {"Id","SIXLEGCAT"},
+									
+									["VALUE_CHANGE_TABLE"] 	=
+									{
+										{"MinScale", "0.1"},
+										{"MaxScale", "0.2"},
+									}
+								},
+								
 
 								{
 									["INTEGER_TO_FLOAT"] = "FORCE",
@@ -20144,8 +20178,8 @@ if CREATURES_OVERHAUL == "ON" then
 									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
-										{"MinScale", "0.2"},
-										{"MaxScale", "12"},
+										{"MinScale", "0.1"},
+										{"MaxScale", "2.2"},
 									}
 								},
 								{
@@ -20204,8 +20238,8 @@ if CREATURES_OVERHAUL == "ON" then
 									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
-										{"MinScale", "0.2"},
-										{"MaxScale", "12"},
+										{"MinScale", "0.1"},
+										{"MaxScale", "1.2"},
 									}
 								},
 								{
@@ -20214,8 +20248,8 @@ if CREATURES_OVERHAUL == "ON" then
 									
 									["VALUE_CHANGE_TABLE"] 	=
 									{
-										{"MinScale", "0.42"},
-										{"MaxScale", "34"},
+										{"MinScale", "0.12"},
+										{"MaxScale", "4.34"},
 									}
 								},
 								{
@@ -20264,7 +20298,7 @@ if CREATURES_OVERHAUL == "ON" then
 
 									["VALUE_CHANGE_TABLE"] 	=
 									{
-										{"MinScale", "52"},
+										{"MinScale", "2"},
 										{"MaxScale", "52"},
 									}
 								}
@@ -20915,121 +20949,121 @@ then
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\SMALLBOULDER05.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMHIVE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\HQ\MEDIUMBOULDER01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\BARREN\ROCKS\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.1"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\RESOURCEROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMSLATE01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.1"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMSHARP02.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\RGO\MEDIUMSHARP01.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\COMMON\ROCKS\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\HQLUSHULTRA\HQROCKS.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\MEDIUM\MEDIUMGLOWROCKSINGLE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\MEDIUM\CURVEDMEDIUM.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\MEDIUM\MEDIUMGLOWROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\RADIOACTIVE\MEDIUM\MEDIUMGLOWROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\SCORCHED\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\TOXIC\MEDIUM\MEDIUMROCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\WIRECELLS\WIRECELLBLOCK.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 			{
 				["PATH"] = [[MODELS\PLANETS\BIOMES\WEIRD\BEAMSTONE\SMALLSTONE.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
-				["MAXSIZE"] = "4"
+				["MAXSIZE"] = "0.4"
 			},
 		}
 		TABLE_CARBONE_RESSOURCES =
@@ -23661,430 +23695,8 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "83"
 			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "83"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "83"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "83"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "83"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "83"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "63"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-						{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-												{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "163"
-			},
-									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},
-												{
+			
+								{
 				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
 				["ROTATION"] = "0",
@@ -24106,206 +23718,7 @@ then
 				["ROTATION"] = "0",
 				["MAXSIZE"] = "113"
 			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},									{
-				["PATH"] = [[MODELS\RGO\EXPLORERSTAND.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},
-			{
-				["PATH"] = [[MODELS\RGO\FOURTHRACE.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "113"
-			},			{
-				["PATH"] = [[MODELS\RGO\STATUE_WARRIOR1.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},
-									{
-				["PATH"] = [[MODELS\RGO\HOLOSCEPTIC.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},
-
-						{
-				["PATH"] = [[MODELS\RGO\HOLOEXPLORER.SCENE.MBIN]],
-				["TYPE"] = "Instanced",
-				["ROTATION"] = "0",
-				["MAXSIZE"] = "111"
-			},
+		
 						{
 				["PATH"] = [[MODELS\RGO\ANOMALYEXPLORER.SCENE.MBIN]],
 				["TYPE"] = "Instanced",
