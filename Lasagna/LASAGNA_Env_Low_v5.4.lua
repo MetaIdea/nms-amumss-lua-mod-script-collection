@@ -127,6 +127,334 @@ local CoverageMultiplier = 1			--object placement coverage multiplier (object de
 --= = = = = = = = = = = = = = = = = = = = = = = = = = 1. FUNCTIONS = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 --------------------------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------------------------------------
+replaceDO =
+[[
+    <Property name="DetailObjects">
+    </Property>
+]]
+
+replaceCGDesc =
+[[
+      <Property name="Descriptors">
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_7" />
+          <Property name="Name" value="_lushgrass_7" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_1" />
+          <Property name="Name" value="_lushgrass_1" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_3" />
+          <Property name="Name" value="_lushgrass_3" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_6" />
+          <Property name="Name" value="_lushgrass_6" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_5" />
+          <Property name="Name" value="_lushgrass_5" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_4" />
+          <Property name="Name" value="_lushgrass_4" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_8" />
+          <Property name="Name" value="_lushgrass_8" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+        <Property value="TkResourceDescriptorData.xml">
+          <Property name="Id" value="_LUSHGRASS_2" />
+          <Property name="Name" value="_lushgrass_2" />
+          <Property name="ReferencePaths" />
+          <Property name="Chance" value="0" />
+          <Property name="Children" />
+        </Property>
+      </Property>
+]]
+
+function AddTheGrass(grassName)
+return [[
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/]] .. grassName .. [[.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers">
+              <Property value="TkProceduralTextureChosenOptionSampler.xml">
+                <Property name="Options">
+                  <Property value="TkProceduralTextureChosenOption.xml">
+                    <Property name="Layer" value="BASE" />
+                    <Property name="Group" value="" />
+                    <Property name="Palette" value="TkPaletteTexture.xml">
+                      <Property name="Palette" value="Plant" />
+                      <Property name="ColourAlt" value="Primary" />
+                    </Property>
+                    <Property name="OverrideColour" value="True" />
+                    <Property name="Colour" value="Colour.xml">
+                      <Property name="R" value="0.42" />
+                      <Property name="G" value="0.53" />
+                      <Property name="B" value="0.239" />
+                      <Property name="A" value="1" />
+                    </Property>
+                    <Property name="OptionName" value="" />
+                  </Property>
+                </Property>
+              </Property>
+            </Property>
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="GRASS" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
+        <Property name="OverlapStyle" value="All" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="75" />
+        <Property name="MatchGroundColour" value="True" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="0.8" />
+        <Property name="MaxScale" value="1.0" />
+        <Property name="MinScaleY" value="1.3" />
+        <Property name="MaxScaleY" value="1.3" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0.75" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.21" />
+          <Property name="SlopeDensity" value="0.21" />
+          <Property name="SlopeMultiplier" value="2.5" />
+          <Property name="MaxRegionRadius" value="17998" />
+          <Property name="MaxImposterRadius" value="18" />
+          <Property name="FadeOutStartDistance" value="17998" />
+          <Property name="FadeOutEndDistance" value="17998" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.23" />
+            <Property name="SlopeDensity" value="0.23" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="9" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="63" />
+            <Property name="FadeOutEndDistance" value="81" />
+            <Property name="FadeOutOffsetDistance" value="5" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="ULTRA" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.23" />
+            <Property name="SlopeDensity" value="0.23" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="5" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="126" />
+            <Property name="FadeOutEndDistance" value="144" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+]]
+end
+
+function AddSecondaryGrass(grassName)
+return [[
+      <Property value="GcObjectSpawnData.xml">
+        <Property name="DebugName" value="" />
+        <Property name="Type" value="Instanced" />
+        <Property name="Resource" value="GcResourceElement.xml">
+          <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/]] .. grassName .. [[.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
+          <Property name="Seed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+          <Property name="AltId" value="" />
+          <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+            <Property name="Samplers">
+            </Property>
+          </Property>
+        </Property>
+        <Property name="AltResources" />
+        <Property name="ExtraTileTypes" />
+        <Property name="Placement" value="GRASSCLUMP" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="PlacementPriority" value="Low" />
+        <Property name="LargeObjectCoverage" value="AlwaysPlace" />
+        <Property name="OverlapStyle" value="All" />
+        <Property name="MinHeight" value="-1" />
+        <Property name="MaxHeight" value="128" />
+        <Property name="RelativeToSeaLevel" value="True" />
+        <Property name="MinAngle" value="0" />
+        <Property name="MaxAngle" value="75" />
+        <Property name="MatchGroundColour" value="True" />
+        <Property name="GroundColourIndex" value="Auto" />
+        <Property name="SwapPrimaryForSecondaryColour" value="False" />
+        <Property name="SwapPrimaryForRandomColour" value="False" />
+        <Property name="AlignToNormal" value="True" />
+        <Property name="MinScale" value="1.2" />
+        <Property name="MaxScale" value="1.4" />
+        <Property name="MinScaleY" value="1" />
+        <Property name="MaxScaleY" value="1" />
+        <Property name="SlopeScaling" value="1" />
+        <Property name="PatchEdgeScaling" value="0.1" />
+        <Property name="MaxXZRotation" value="0" />
+        <Property name="AutoCollision" value="False" />
+        <Property name="CollideWithPlayer" value="False" />
+        <Property name="CollideWithPlayerVehicle" value="False" />
+        <Property name="DestroyedByPlayerVehicle" value="True" />
+        <Property name="DestroyedByPlayerShip" value="True" />
+        <Property name="DestroyedByTerrainEdit" value="True" />
+        <Property name="InvisibleToCamera" value="True" />
+        <Property name="CreaturesCanEat" value="False" />
+        <Property name="ShearWindStrength" value="0.75" />
+        <Property name="DestroyedByVehicleEffect" value="VEHICLECRASH" />
+        <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
+          <Property name="ID" value="STANDARD" />
+          <Property name="Coverage" value="1" />
+          <Property name="FlatDensity" value="0.2" />
+          <Property name="SlopeDensity" value="0.2" />
+          <Property name="SlopeMultiplier" value="1" />
+          <Property name="MaxRegionRadius" value="17998" />
+          <Property name="MaxImposterRadius" value="18" />
+          <Property name="FadeOutStartDistance" value="17998" />
+          <Property name="FadeOutEndDistance" value="17998" />
+          <Property name="FadeOutOffsetDistance" value="0" />
+          <Property name="LodDistances">
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+            <Property value="0" />
+          </Property>
+        </Property>
+        <Property name="QualityVariants">
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="STANDARD" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.22" />
+            <Property name="SlopeDensity" value="0.22" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="9" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="63" />
+            <Property name="FadeOutEndDistance" value="81" />
+            <Property name="FadeOutOffsetDistance" value="5" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+          <Property value="GcObjectSpawnDataVariant.xml">
+            <Property name="ID" value="ULTRA" />
+            <Property name="Coverage" value="1" />
+            <Property name="FlatDensity" value="0.22" />
+            <Property name="SlopeDensity" value="0.22" />
+            <Property name="SlopeMultiplier" value="3" />
+            <Property name="MaxRegionRadius" value="5" />
+            <Property name="MaxImposterRadius" value="18" />
+            <Property name="FadeOutStartDistance" value="126" />
+            <Property name="FadeOutEndDistance" value="144" />
+            <Property name="FadeOutOffsetDistance" value="10" />
+            <Property name="LodDistances">
+              <Property value="0" />
+              <Property value="16" />
+              <Property value="30" />
+              <Property value="50" />
+              <Property value="1000" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+]]
+end
+
 local function BiomesOneTwoThreeModifierUnderwaterCave(DensityCustom1, DensityCustom2, DensityCustom3, DensityCustom4)
 	local biomeModifier =
 	{
@@ -768,103 +1096,41 @@ local function BiomesOneTwoThreeModifierUnderwaterCave(DensityCustom1, DensityCu
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
 							}
 						},
-						--REPLACE:
+						
+					--Hybrid Grass:
+
+
+						--REMOVE DetailObjects
+						
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						--MULTIPLY:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["ADD"] = replaceDO,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACE (to correct non-lush/frozen planets density)
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxScale",			    2.47},
-								{"Coverage",			    1},
-								{"FlatDensity",			    0.14},
-								{"SlopeDensity",			0.14},
-								{"SlopeMultiplier",			1.25},
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["REMOVE"] = "SECTION"
 						},
-						--LODDISTANCES:
+						
+						
+						
+						--REMOVE rare tall grass (i.e. rockylushbiome)
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
 						},
+
+
+						--ADD GRASS
+								
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
+						
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
@@ -1849,878 +2115,41 @@ local function BiomesOneTwoThreeModifier(DensityCustom1, DensityCustom2, Density
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
 							}
 						},
-						--REPLACE:
+						
+					--Hybrid Grass:
+
+
+						--REMOVE DetailObjects
+						
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"GRASS"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"GRASS"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"}, --Takes over bubble glow grass
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"}, --Ultra planet quality tall grass
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"}, 	--Causes lag
-								--{"MaxAngle",				90}, 		--Causes grass to "float" on an angle
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"GRASS"},
-								--{"MaxAngle",				90}, 	--Big plants, doesn't work
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"},
-								--{"MaxAngle",				90},	--Big plants, doesn't work
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						--MULTIPLY:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.33},
-								{"FlatDensity",			    0.1},
-								{"SlopeDensity",			0.1},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.33},
-								{"FlatDensity",			    0.1},
-								{"SlopeDensity",			0.1},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACE (to correct non-lush/frozen planets density)
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxScale",			    2.47},
-								{"Coverage",			    1},
-								{"FlatDensity",			    0.14},
-								{"SlopeDensity",			0.14},
-								{"SlopeMultiplier",			2.5},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								--{"MaxScale", 				1}, --Too large = overtakes glow BUBBLELUSHGRASS ..
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.8},
-							}
-						},
-						--Adds "Ultra" planet quality grass to all planet quality types:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACES
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.1},
-								{"FlatDensity",			    0.07},
-								{"SlopeDensity",			0.07},
-								{"MaxScale", 				1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.4},
-								{"FlatDensity",			    0.17},
-								{"SlopeDensity",			0.17},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"}, --Frozen & barren small plants
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{ 
-								{"Coverage",			    0.25}, 	--Too much = lag 
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"}, --Frozen & barren small plants
-							["SECTION_UP"] = 1,
-							--REPLACES
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{ 
-								{"MaxScale", 				1.45}, 	--Too large = above eye level
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"}, 
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.08}, 	--Too much = weird faded lod in distance
-								{"FlatDensity",			    0.015}, 	--Lower
-								{"SlopeDensity",			0.015}, 	--Lower
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				2.2},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.4}, 	--Higher
-								{"FlatDensity",			    0.1}, 
-								{"SlopeDensity",			0.1},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.4},
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						--LODDISTANCES:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["ADD"] = replaceDO,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["REMOVE"] = "SECTION"
 						},
+						
+						
+						
+						--REMOVE rare tall grass (i.e. rockylushbiome)
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
 						},
+
+
+						--ADD GRASS
+								
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
+						
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
@@ -3520,878 +2949,41 @@ local function BiomesOneTwoThreeModifierDISTANTOBJECTS(DensityCustom1, DensityCu
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
 							}
 						},
-						--REPLACE:
+						
+					--Hybrid Grass:
+
+
+						--REMOVE DetailObjects
+						
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"GRASS"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"GRASS"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"}, --Takes over bubble glow grass
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"}, --Ultra planet quality tall grass
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"}, 	--Causes lag
-								--{"MaxAngle",				90}, 		--Causes grass to "float" on an angle
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"GRASS"},
-								--{"MaxAngle",				90}, 	--Big plants, doesn't work
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"},
-								--{"MaxAngle",				90},	--Big plants, doesn't work
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						--MULTIPLY:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.33},
-								{"FlatDensity",			    0.1},
-								{"SlopeDensity",			0.1},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.33},
-								{"FlatDensity",			    0.1},
-								{"SlopeDensity",			0.1},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACE (to correct non-lush/frozen planets density)
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxScale",			    2.47},
-								{"Coverage",			    1},
-								{"FlatDensity",			    0.14},
-								{"SlopeDensity",			0.14},
-								{"SlopeMultiplier",			2.5},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								--{"MaxScale", 				1}, --Too large = overtakes glow BUBBLELUSHGRASS ..
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.8},
-							}
-						},
-						--Adds "Ultra" planet quality grass to all planet quality types:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACES
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.1},
-								{"FlatDensity",			    0.07},
-								{"SlopeDensity",			0.07},
-								{"MaxScale", 				1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.4},
-								{"FlatDensity",			    0.17},
-								{"SlopeDensity",			0.17},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"}, --Frozen & barren small plants
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{ 
-								{"Coverage",			    0.25}, 	--Too much = lag 
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"}, --Frozen & barren small plants
-							["SECTION_UP"] = 1,
-							--REPLACES
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{ 
-								{"MaxScale", 				1.45}, 	--Too large = above eye level
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"}, 
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.08}, 	--Too much = weird faded lod in distance
-								{"FlatDensity",			    0.015}, 	--Lower
-								{"SlopeDensity",			0.015}, 	--Lower
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				2.2},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.4}, 	--Higher
-								{"FlatDensity",			    0.1}, 
-								{"SlopeDensity",			0.1},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.4},
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						--LODDISTANCES:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["ADD"] = replaceDO,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["REMOVE"] = "SECTION"
 						},
+						
+						
+						
+						--REMOVE rare tall grass (i.e. rockylushbiome)
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
 						},
+
+
+						--ADD GRASS
+								
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddTheGrass("CROSSGRASS"),
 						},
+						
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
@@ -4803,109 +3395,42 @@ local function BiomeFourFiveSevenEightModifier(Param1, Param2, Param3, Param4, P
 								{"LodDistances",	LodDistanceMultiplierLandmarks}
 							}
 						},
-						--REPLACE:
+						
+						
+					--GLOW BUBBLE GRASS:
+
+						--REMOVE DetailObjects
+						
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"}, --Not for Hydro
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						--MULTIPLY:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["ADD"] = replaceDO,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACE (to correct non-lush/frozen planets density)
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxScale",			    2.47},
-								{"Coverage",			    1},
-								{"FlatDensity",			    0.14},
-								{"SlopeDensity",			0.14},
-								{"SlopeMultiplier",			1.25},
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["REMOVE"] = "SECTION"
 						},
-						--LODDISTANCES:
+						
+						
+						
+						--REMOVE rare tall grass (i.e. rockylushbiome)
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
 						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						--ADD NEW GRASS:
+
+
+						--ADD GRASS
+								
 						{
 							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
 							["ADD_OPTION"] 	= "ADDafterLINE",
-							["ADD"] = AddGrass(),
+							["ADD"] = AddTheGrass("BUBBLELUSHGRASS"),
 						},
+						
+						
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
@@ -5578,7 +4103,7 @@ end
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v5.2.pak",
+["MOD_FILENAME"] 			= "LASAGNA_Env_Low_v5.4.pak",
 ["MOD_AUTHOR"]				= "Lasagna - with InsaneRuffles code",
 ["NMS_VERSION"]				= "",
 ["MODIFICATIONS"] 			= 
@@ -6653,878 +5178,41 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"LodDistances",	LodDistanceMultiplierLow}
 							}
 						},
-						--REPLACE:
+						
+					--Hybrid Grass:
+
+
+						--REMOVE DetailObjects
+						
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"GRASS"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"GRASS"},
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"}, --Takes over bubble glow grass
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"}, --Ultra planet quality tall grass
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"}, 	--Causes lag
-								--{"MaxAngle",				90}, 		--Causes grass to "float" on an angle
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"GRASS"},
-								--{"MaxAngle",				90}, 	--Big plants, doesn't work
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								{"Placement",				"FLORACLUMP"},
-								--{"MaxAngle",				90},	--Big plants, doesn't work
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"PatchEdgeScaling",		"0"},
-								--{"Placement",				"GRASS"},  	--Causes lag
-								{"MaxAngle",				90},
-								{"LargeObjectCoverage",		"AlwaysPlace"},
-							}
-						},
-						--MULTIPLY:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.33},
-								{"FlatDensity",			    0.1},
-								{"SlopeDensity",			0.1},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.33},
-								{"FlatDensity",			    0.1},
-								{"SlopeDensity",			0.1},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACE (to correct non-lush/frozen planets density)
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxScale",			    2.47},
-								{"Coverage",			    1},
-								{"FlatDensity",			    0.14},
-								{"SlopeDensity",			0.14},
-								{"SlopeMultiplier",			2.5},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								--{"MaxScale", 				1}, --Too large = overtakes glow BUBBLELUSHGRASS ..
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.8},
-							}
-						},
-						--Adds "Ultra" planet quality grass to all planet quality types:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							--REPLACES
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.1},
-								{"FlatDensity",			    0.07},
-								{"SlopeDensity",			0.07},
-								{"MaxScale", 				1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.4},
-								{"FlatDensity",			    0.17},
-								{"SlopeDensity",			0.17},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"}, --Frozen & barren small plants
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{ 
-								{"Coverage",			    0.25}, 	--Too much = lag 
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"}, --Frozen & barren small plants
-							["SECTION_UP"] = 1,
-							--REPLACES
-							["REPLACE_TYPE"] 		= "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{ 
-								{"MaxScale", 				1.45}, 	--Too large = above eye level
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"}, 
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.08}, 	--Too much = weird faded lod in distance
-								{"FlatDensity",			    0.015}, 	--Lower
-								{"SlopeDensity",			0.015}, 	--Lower
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				2.2},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.4}, 	--Higher
-								{"FlatDensity",			    0.1}, 
-								{"SlopeDensity",			0.1},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] = "ALL",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"Coverage",			    0.4},
-								{"FlatDensity",			    0.12},
-								{"SlopeDensity",			0.12},
-								{"MaxRegionRadius",			1.8},
-								{"MaxImposterRadius",		1.8},
-								{"FadeOutStartDistance",	1.8},
-								{"FadeOutEndDistance",		1.8},
-								{"MaxScale", 				1.9},
-							}
-						},
-						--LODDISTANCES:
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWLUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/BUBBLELUSHGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSSMALL.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["ADD"] = replaceDO,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
 						},
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/BARREN/PLANTS/SCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWSCRUBGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENBUSHYGRASS.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+1",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"] = {"Objects","DetailObjects",},
+							["REMOVE"] = "SECTION"
 						},
+						
+						
+						
+						--REMOVE rare tall grass (i.e. rockylushbiome)
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN"},
 							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+2",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["REPLACE_TYPE"] 	= "ALL",
+							["REMOVE"] = "SECTION",
 						},
+
+
+						--ADD GRASS
+								
 						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+3",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+4",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
-						},
-						{
-							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HQFROZEN/FOLIAGE/FROZENGRASSLARGE.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["MATH_OPERATION"] 		= "*",
-							["REPLACE_TYPE"] 		= "ALL",
-							["LINE_OFFSET"] 		= "+5",
-							["VALUE_CHANGE_TABLE"] 	= 
-							{
-								{"LodDistances",	LodDistancesMultiplierFarGrass}
-							}
+							["PRECEDING_KEY_WORDS"]	= {"Objects","DetailObjects",},
+							["ADD_OPTION"] 	= "ADDafterLINE",
+							["ADD"] = AddSecondaryGrass("NEWCROSSGRASS"),
 						},
+						
 						--REMOVE BIGGEST CORAL ROCK IN THE GAME:
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/HUGEPROPS/HUGEROCK/HUGEPLATFORMROCK.SCENE.MBIN"},
@@ -8342,7 +6030,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxScale",	1.25},
+								{"MaxScale",	0.8},
+								{"MinScale",	0.8},
 							}	
 						},
 						{
@@ -8352,7 +6041,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MaxScale",	1.25},
+								{"MaxScale",	0.8},
+								{"MinScale",	0.8},
 							}	
 						},
 						{
@@ -8362,7 +6052,8 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "MaxScale",	1.75},
+								{"MaxScale",	0.8},
+								{"MinScale",	0.8},
 							}	
 						},
 						{ --Low: Lowest density:
@@ -8372,7 +6063,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{ "MaxScale",	1.75},
+								{ "MaxScale",	1.5},
 								{ "FlatDensity", 0.1 },
 								{ "SlopeDensity", 0.1 },
 							}	
@@ -8463,7 +6154,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"Placement",				"GRASSCLUMP"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -8474,7 +6165,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"Placement",				"GRASSCLUMP"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -8485,7 +6176,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"Placement",				"GRASSCLUMP"},
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -8496,7 +6187,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"}, --Takes over bubble glow grass
+								{"Placement",				"GRASSCLUMP"}, --Takes over bubble glow grass
 								{"MaxAngle",				90},
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -8529,7 +6220,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"Placement",				"FLORACLUMP"},
 								--{"MaxAngle",				90}, 	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -8540,7 +6231,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["REPLACE_TYPE"] = "ALL",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"Placement",				"GRASS"},
+								{"Placement",				"FLORACLUMP"},
 								--{"MaxAngle",				90},	--Big plants, doesn't work
 								{"LargeObjectCoverage",		"AlwaysPlace"},
 							}
@@ -9918,6 +7609,52 @@ NMS_MOD_DEFINITION_CONTAINER =
 			["PAK_FILE_SOURCE"] 	= "",
 			["MBIN_CHANGE_TABLE"] 	= 
 			{ 
+				--Hybrid grass changes:
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\NEWCROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+
+
+
+						--REMOVE new grass_curly option (no old version of this model)
+						
+						{
+							["SPECIAL_KEY_WORDS"] = {"Id","_GRASS_CURLY",},
+							["REMOVE"] = "SECTION"
+						},
+
+					},
+				},
+				
+				
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"MODELS\PLANETS\BIOMES\COMMON\GRASS\CROSSGRASS.DESCRIPTOR.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+
+
+						--Reorder descriptor to match newcrossgrass
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["ADD"] = replaceCGDesc,
+							["REPLACE_TYPE"] = "ADDAFTERSECTION",
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = {"Descriptors",},
+							["REMOVE"] = "SECTION"
+						},
+
+					},
+				},
+				
 				{
 					["MBIN_FILE_SOURCE"] 	= 
 					{
@@ -9936,22 +7673,56 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                     }
                 },
+				--Replace 2 hazard plants with shield plants
 				{
 					["MBIN_FILE_SOURCE"] 	= 
 					{
-						"METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SPOREVENTPLANT.MBIN",
+						--"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\TENTACLEPLANT.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FLYTRAPPLANT.MBIN",
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\SPOREVENTPLANT.MBIN",
 						
 					},
-					["EXML_CHANGE_TABLE"] 	= 
+					["EXML_CHANGE_TABLE"] 	=
 					{
+
+						{
+							["REPLACE_TYPE"] 		= "",
+							["VALUE_CHANGE_TABLE"] 	=
+							{			
+								{ "Filename",	"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\SHIELDPLANT1.SCENE.MBIN" },
+							}
+						},	
+
+					},
+				},
+				
+				
+				{
+					["MBIN_FILE_SOURCE"] 	= 
+					{
+						"METADATA\SIMULATION\SOLARSYSTEM\BIOMES\OBJECTS\PLANT\FULLSAFE.MBIN",
+					},
+					["EXML_CHANGE_TABLE"] 	=
+					{
+
 						{
 							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/SPOREVENT.SCENE.MBIN"},
-							["SECTION_UP"] = 1,
-							["REPLACE_TYPE"] 	= "",
-							["REMOVE"] = "SECTION",
-                        },
-                    }
-                }
+							["VALUE_CHANGE_TABLE"] 	=
+							{			
+								{ "Filename",	"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\SHIELDPLANT1.SCENE.MBIN" },
+							}
+						},	
+						{
+							["SPECIAL_KEY_WORDS"] = {"Filename","MODELS/PLANETS/BIOMES/COMMON/INTERACTIVEFLORA/VENUSFLYTRAP.SCENE.MBIN"},
+							["VALUE_CHANGE_TABLE"] 	=
+							{			
+								{ "Filename",	"MODELS\PLANETS\BIOMES\COMMON\INTERACTIVEFLORA\SHIELDPLANT1.SCENE.MBIN" },
+							}
+						},	
+
+					},
+				},
+				
             }
         },
     },

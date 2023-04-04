@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER = {
     ["MOD_FILENAME"] = "Camera Enhancements (Minotaur+Naultion+ThirdView).pak",
     ["MOD_AUTHOR"] = "Tareku",
-    ["NMS_VERSION"] = "4.03",
+    ["NMS_VERSION"] = "4.15",
     ["MOD_DESCRIPTION"] = "This is a merged mod with Minotaur, Naultion and Third Person Camera settings changes",
     ["MODIFICATIONS"] = {
         {
