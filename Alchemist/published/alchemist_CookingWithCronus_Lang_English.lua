@@ -6,8 +6,8 @@ profit opportunities, a dynamic ingredients market, and expanded
 whalesong encounters.
 
 https://www.nexusmods.com/nomanssky/mods/2554]]
-GameVersion = "4-07"
-ModVersion = "1-1-0"
+GameVersion = "4-21"
+ModVersion = "1-2-0"
 
 -- =========
 -- CONSTANTS
@@ -78,16 +78,12 @@ files.
 
 --]]
 
--- Total keys: 207
+-- Total keys: 209
 LANGUAGE_TABLE = {
   --
   ["ALCH_CHEF_IMC_TITLE"] = "Creature Products", --
   ["ALCH_CHEF_IMM_TITLE"] = "Meat Products", --
   ["ALCH_CHEF_IMP_TITLE"] = "Edible Flora", --
-  ["ALCH_CHEF_INTRO_INTRO_DESC"] = "<HIGHLIGHT>Iteration Cronus<> has expanded their offerings for Travelers visiting the Nexus! Fair  compensation and competitive prices for all your cuisine preparation needs.", --
-  ["ALCH_CHEF_INTRO_INTRO_P1"] = "Cronus is now willing to pay a premium for some of their <SPECIAL>favorite dishes<>  but what they are in the mood for changes daily.", --
-  ["ALCH_CHEF_INTRO_INTRO_P2"] = "Through the <TRADE>Ingredients Market<>, Cronus allows Travelers to sell their  excess farm and harvest products. Ingredient selection changes daily.", --
-  ["ALCH_CHEF_INTRO_INTRO_P3"] = "Cronus has been tracking migratory fleets of <SPECIAL>cosmic megafauna<>. Speak with them about whalesong once the <TECHNOLOGY>Dream Aerial<> mission has been completed.", --
   ["ALCH_CHEF_INTRO_TUT_MESSAGE"] = "<HIGHLIGHT>Iteration Cronus<> <TITLE>has new services available!<> \nVisit their kiosk to learn more", --
   ["ALCH_CHEF_JOB_UI_TITLE_PREFIX"] = "Culinary Opportunities Available", --
   ["ALCH_CHEF_JUDGE_CHAT_BYE"] = "<VISOR>Cronus<>: -{{ And I was looking forward to trying new dish. Back to cataloguing. }}-", --
@@ -113,6 +109,10 @@ LANGUAGE_TABLE = {
   ["ALCH_CHEF_OFFER_TITLE_1"] = "Forgotten Songs", --
   ["ALCH_CHEF_OFFER_WHALE_OBJ"] = "Follow the offering's guidance", --
   ["ALCH_CHEF_OFFER_WHALE_OBJ_TIP"] = "The <SPECIAL>Offering of a Forgotten Song<> is seeking a harmonic partner. Follow it's guidance to unlock it's secrets.", --
+  ["ALCH_CHEF_TDONE_INTRO_DESC"] = "<HIGHLIGHT>Iteration Cronus<> has expanded their offerings for Travelers visiting the Nexus! Fair  compensation and competitive prices for all your cuisine preparation needs.", --
+  ["ALCH_CHEF_TDONE_INTRO_P1"] = "Cronus is now willing to pay a premium for some of their <SPECIAL>favorite dishes<>  but what they are in the mood for changes daily.", --
+  ["ALCH_CHEF_TDONE_INTRO_P2"] = "Through the <TRADE>Ingredients Market<>, Cronus allows Travelers to sell their  excess farm and harvest products. Ingredient selection changes daily.", --
+  ["ALCH_CHEF_TDONE_INTRO_P3"] = "Cronus has been tracking migratory fleets of <SPECIAL>cosmic megafauna<>. Speak with them about whalesong once the <TECHNOLOGY>Dream Aerial<> mission has been completed.", --
   ["ALCH_CHEF_WHALE_MP_ERR_OSD"] = "OFFERING OF A FORGOTTEN SONG <HIGHLIGHT>//<> <FUEL>ERROR ~ NEXUS MISSION INTERFERENCE<>", --
   ["ALCH_CHEF_WHALE_NEARBY_MSG1"] = "<SPECIAL>Offering of a Forgotten Song<> <TITLE>seeking harmonic partner<>\nThe song is eminating... %SIGNAL%", --
   ["ALCH_CHEF_WHALE_NEARBY_MSG2"] = "<SPECIAL>Offering of a Forgotten Song<> <TITLE>seeking harmonic partner<>\nReturn to your ship to broadcast the request", --
@@ -170,15 +170,17 @@ LANGUAGE_TABLE = {
   ["D_ALCF_BUY_LANG"] = "Each shipment contains <SPECIAL>50<> of the purchased item. Limited to <SPECIAL>5<> shipments of each category per day.", --
   ["D_ALCF_DV_0_LANG"] = "Today I will pay <TRADE>210<> nanites per unit of <SPECIAL>The Stellarator<>. A doughnut made of starlight, sublime!", --
   ["D_ALCF_DV_1_LANG"] = "Today I will pay <TRADE>180<> nanites per unit of <SPECIAL>Fungal Omelette<>. Nutritious non-toxic fungi, delicious!", --
-  ["D_ALCF_DV_2_LANG"] = "Today I will pay <TRADE>190<> nanites per unit of <SPECIAL>Chocolate Curiosity<>. Such decedance in one cake, preposterous!", --
+  ["D_ALCF_DV_2_LANG"] = "Today I will pay <TRADE>190<> nanites per unit of <SPECIAL>Chocolate Curiosity<>. Such decadence in one cake, preposterous!", --
   ["D_ALCF_DV_3_LANG"] = "Today I will pay <TRADE>200<> nanites per unit of <SPECIAL>The Spawning Tart<>. A creamy larval custard pie, a classic!", --
   ["D_ALCF_DV_4_LANG"] = "Today I will pay <TRADE>210<> nanites per unit of <SPECIAL>Cake of Burning Dread<>. Don't be nervous, it's just a name. Probably.", --
+  ["D_ALCF_DV_5_LANG"] = "Today I will pay <TRADE>180<> nanites per unit of <SPECIAL>Syrupy Viscera<>. A delicate balance of sweetness and nightmares. Ingenius!", --
   ["D_ALCF_HOME_LANG"] = "Good day to you, Traveler. Do you have a delivery of <SPECIAL>Today's Favorite<>, or would you like to trade on the <TRADE>Ingredients Market<>?", --
   ["D_ALCF_HOME_OPT_A"] = "Today's Favorite ~ The Stellarator", --
   ["D_ALCF_HOME_OPT_B"] = "Today's Favorite ~ Fungal Omelette", --
   ["D_ALCF_HOME_OPT_C"] = "Today's Favorite ~ Chocolate Curiosity", --
   ["D_ALCF_HOME_OPT_D"] = "Today's Favorite ~ The Spawning Tart", --
   ["D_ALCF_HOME_OPT_E"] = "Today's Favorite ~ Cake of Burning Dread", --
+  ["D_ALCF_HOME_OPT_F"] = "Today's Favorite ~ Syrupy Viscera", --
   ["D_ALCF_IM_LANG"] = "Are you looking to buy or sell?", --
   ["D_ALCF_IM_OPT_A"] = "Buy...", --
   ["D_ALCF_IM_OPT_B"] = "Sell...", --
@@ -187,7 +189,7 @@ LANGUAGE_TABLE = {
   ["D_ALCF_PAGE2_OPT_D"] = "Replace lost offering", --
   ["D_ALCF_PAGE2_OPT_E"] = "Forgotten Songs...", --
   ["D_ALCF_PAGE2_RES_B"] = "I do not think we are ready to discuss such matters, Traveler. Come and see me once you have woken from the <RARE>Dream<>.", --
-  ["D_ALCF_SELL_LANG"] = "When selling your goods, I will pay average market per-unit price of ...", --
+  ["D_ALCF_SELL_LANG"] = "When selling your goods, I will pay average market per-shipment price of <SPECIAL>300<> for creature byproducts, <SPECIAL>200<> for meat, and <SPECIAL>100<> for plants.", --
   ["D_ALCF_WS_BUY_LANG"] = "The universe has many more secrets to uncover. Shall we attune to the song in it's memories once more?", --
   ["D_ALCF_WS_BUY_OPT_A"] = "Create an Offering", --
   ["D_ALCF_WS_BUY_OPT_B"] = "Acquire Recipe", --
