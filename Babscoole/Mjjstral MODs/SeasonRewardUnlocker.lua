@@ -199,7 +199,6 @@ REWARDS_8 = {
 
 REWARDS_9 = {
 ----SEASON 9 REWARDS-------
-    "RS_S9_SHIP",
     "RS_S9_COMPLETE",
     "RS_S9_EGG",
     "RS_S9_PHASE1",
@@ -212,37 +211,51 @@ REWARDS_9 = {
     "RS_S9_PARTY3",
     "RS_S9_PARTY4",
     "RS_S9_PARTY5",
-    "RS_S9_S1M1",
-    "RS_S9_S1M2",
-    "RS_S9_S1M3",
-    "RS_S9_S1M4",
-    "RS_S9_S1M5",
-    "RS_S9_S1M6",
-    "RS_S9_S2M1",
-    "RS_S9_S2M2",
-    "RS_S9_S2M3",
-    "RS_S9_S2M4",
-    "RS_S9_S2M5",
-    "RS_S9_S2M6",
-    "RS_S9_S3M1",
-    "RS_S9_S3M2",
-    "RS_S9_S3M3",
-    "RS_S9_S3M4",
     "RS_S9_S3M5",
     "RS_S9_S3M6",
     "RS_S9_S3M7",
-    "RS_S9_S4M1",
-    "RS_S9_S4M2",
-    "RS_S9_S4M3",
-    "RS_S9_S4M4",
-    "RS_S9_S4M5",
-    "RS_S9_S4M6",
-    "RS_S9_S5M1",
-    "RS_S9_S5M2",
-    "RS_S9_S5M3",
-    "RS_S9_S5M4",
-    "RS_S9_S5M5",
-    "RS_S9_S5M6",
+}
+
+REWARDS_10 = {
+-----SEASON 10 REWARDS-------
+    "RS_S10_COMPLETE",
+    "RS_S10_EGG",
+    "RS_S10_PHASE1",
+    "RS_S10_PHASE2",
+    "RS_S10_PHASE3",
+    "RS_S10_PHASE4",
+    "RS_S10_PHASE5",
+    "RS_S10_PARTY",
+    "RS_S10_S1M1",
+    "RS_S10_S1M2",
+    "RS_S10_S1M3",
+    "RS_S10_S1M4",
+    "RS_S10_S1M5",
+    "RS_S10_S1M6",
+    "RS_S10_S1M7",
+    "RS_S10_S2M1",
+    "RS_S10_S2M2",
+    "RS_S10_S2M3",
+    "RS_S10_S2M4",
+    "RS_S10_S2M5",
+    "RS_S10_S2M6",
+    "RS_S10_S2M7",
+    "RS_S10_S3M1",
+    "RS_S10_S3M2",
+    "RS_S10_S3M3",
+    "RS_S10_S3M4",
+    "RS_S10_S4M1",
+    "RS_S10_S4M2",
+    "RS_S10_S4M3",
+    "RS_S10_S4M4",
+    "RS_S10_S4M5",
+    "RS_S10_S4M6",
+    "RS_S10_S5M1",
+    "RS_S10_S5M2",
+    "RS_S10_S5M3",
+    "RS_S10_S5M4",
+    "RS_S10_S5M5",
+    "RS_S10_S5M6",
 }
 
 REWARDS_GVECTOR = {
@@ -251,6 +264,10 @@ REWARDS_GVECTOR = {
 
 REWARDS_NORMANDY = {
     "RS_S2_SPEC",
+}
+
+REWARDS_VRSPEEDER = {
+    "RS_S9_SHIP",
 }
 
 QUICK_ACTION_LIST =
@@ -264,8 +281,10 @@ QUICK_ACTION_LIST =
     "S7_REWARDS",
     "S8_REWARDS",
     "S9_REWARDS",
+    "S10_REWARDS",
     "S1_GV",
     "S3_NORMANDY",
+    "S9_VRSPEEDER",
 }
 
 QUICK_ACTION_MENU =
@@ -333,6 +352,13 @@ QUICK_ACTION_MENU =
         ["ANIM"]   = "UnlockS9Reward",
         ["REWARD"] = REWARDS_9
     },
+    ["S10_REWARDS"] =
+    {
+        ["TITLE"]  = "Unlock Season 10 Reward",
+        ["ICON"]   = "TEXTURES\UI\FRONTEND\ICONS\EXPEDITION\PATCH.EXPEDITION.10.DDS",
+        ["ANIM"]   = "UnlockS9Reward",
+        ["REWARD"] = REWARDS_10
+    },
     ["S1_GV"] =
     {
         ["TITLE"]  = "Unlock Golden Vector Reward",
@@ -346,6 +372,13 @@ QUICK_ACTION_MENU =
         ["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.2A.DDS",
         ["ANIM"]   = "UnlockNorReward",
         ["REWARD"] = REWARDS_NORMANDY
+    },
+    ["S9_VRSPEEDER"] =
+    {
+        ["TITLE"]  = "Unlock Utopia Speeder Reward",
+        ["ICON"]   = "TEXTURES/UI/FRONTEND/ICONS/EXPEDITION/PATCH.EXPEDITION.9.DDS",
+        ["ANIM"]   = "UnlockVRReward",
+        ["REWARD"] = REWARDS_VRSPEEDER
     },
 }
 
@@ -469,7 +502,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-SeasonRewardUnlocker.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Instant access to season rewards with the quick action emote/gesture menu",
-["NMS_VERSION"]     = "4.13",
+["NMS_VERSION"]     = "4.20",
 ["MODIFICATIONS"]   =
     {
         {

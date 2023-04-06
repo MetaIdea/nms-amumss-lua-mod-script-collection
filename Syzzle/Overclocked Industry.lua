@@ -1,6 +1,6 @@
 Author = "Syzzle"
 ModName = "Overclocked Industry"
-GameVersion = "4.15"
+GameVersion = "4.20"
 --ModVersion = "v1.4"
 Description = "Power up Autonomous Mining, Atmosphere Harvester and Oxygen Harvester to harvest a full stack of 9999 in 5 minutes."
 

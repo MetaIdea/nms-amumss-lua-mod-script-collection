@@ -1,4 +1,4 @@
-NMSVersion = "4.13"
+NMSVersion = "4.20"
 
 function GetCustomScanEvent(NAME, BUILDINGLOCATION, BUILDINGTYPE, BUILDINGCLASS, FORCEWIDERANDOM, ALLOWOVERRIDDENBUILDINGS, SOLARSYSTEMLOCATION, OSDMESSAGE, MARKERLABEL, FILENAME, TOOLTIP)
 return
@@ -220,6 +220,7 @@ return
               <Property name="UseMissionSeedForEvent" value="False" />
               <Property name="StartDelay" value="6" />
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
+              <Property name="ForceSilentFailure" value="False" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -437,12 +438,16 @@ Menu4_Options = Menu4_Option1..Menu4_Option2..Menu4_Option3..More_Options4
 Menu5_Option1 = GetPuzzleOption("UI_RECOVER_BASE_SUB", "R_BASE")  -- "Wild" Base Computer
 Menu5_Option2 = GetPuzzleOption("BUILDING_GLITCHYSTORYBOX", "R_GLITCH")  -- BOUNDARY FAILURE
 Menu5_Option3 = GetPuzzleOption("BUILDING_ABANDONED", "R_ABANDONED")  -- Abandoned Building
---Menu5_Options = Menu5_Option1..Menu5_Option2..Menu5_Option3..All_Request_Leave
-Menu5_Options = Menu5_Option1..Menu5_Option2..Menu5_Option3
+More_Options5 = GetMorePuzzleOption("?AERO_SCANNER")
+Menu5_Options = Menu5_Option1..Menu5_Option2..Menu5_Option3..More_Options5
+--Sixth set of options, also get a close option
+Menu6_Option1 = GetPuzzleOption("UI_ABAND_ROBOT_CAMP_NAME", "R_CHART_ROBOT")  -- Sentinel Camp
+--Menu6_Options = Menu6_Option1..Menu6_Option2..Menu6_Option3..All_Request_Leave
+Menu6_Options = Menu6_Option1
 
 --Put all the options together.
 --ALL_PUZZLE_UPDATES = [[      <Property name="Options">]]
-ALL_PUZZLE_UPDATES = Menu1_Options..Menu2_Options..Menu3_Options..Menu4_Options..Menu5_Options
+ALL_PUZZLE_UPDATES = Menu1_Options..Menu2_Options..Menu3_Options..Menu4_Options..Menu5_Options..Menu6_Options
 
 NMS_MOD_DEFINITION_CONTAINER =
 {

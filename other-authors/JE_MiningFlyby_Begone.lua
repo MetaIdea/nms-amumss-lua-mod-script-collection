@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"] 			= "JE_MiningFlyby_Begone.pak", 
 ["MOD_AUTHOR"]				= "Jaggid Edje",
 ["LUA_AUTHOR"]				= "Jaggid Edje",
-["NMS_VERSION"]				= "4.07",
+["NMS_VERSION"]				= "4.20",
 ["MOD_DESCRIPTION"]			= "Adjusts the frequency and distance of various flyby types within the game",
 ["MODIFICATIONS"] 			= 
 	{

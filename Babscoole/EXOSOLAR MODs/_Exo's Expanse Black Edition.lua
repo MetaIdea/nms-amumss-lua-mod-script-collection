@@ -397,7 +397,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_AUTHOR"]      = "Exosolar",
 ["LUA_AUTHOR"]      = "Jackty89, WinderTP, and Babscoole",
 ["MOD_MAINTENANCE"] = "Babscoole",
-["NMS_VERSION"]     = "4.13",
+["NMS_VERSION"]     = "4.20",
 ["MODIFICATIONS"]   =
     {
         {
