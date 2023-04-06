@@ -2,9 +2,9 @@ Author = "Gumsk"
 ModName = "gInventory Supercharged"
 ModNameSub = "Exosuit"
 BaseDescription = "Makes all exosuit slots supercharged"
-GameVersion = "411"
+GameVersion = "420"
 ModVersion = "a"
-FileSource1 = "METADATA\\GAMESTATE\\DEFAULTSAVEDATA.MBIN"
+FileSource1 = "METADATA\GAMESTATE\DEFAULTSAVEDATA.MBIN"
 
 AddSpecialSlots = [[          <Property name="SpecialSlots">
 ]]

@@ -2,7 +2,7 @@ Author			= "Gumsk"
 ModName 		= "gMission No Approximate Location"
 ModNameSub		= ""
 BaseDescription = "Removes the approximate location scanning from missions"
-GameVersion 	= "411"
+GameVersion 	= "415"
 ModVersion		= "a"
 
 --[[Files Modified

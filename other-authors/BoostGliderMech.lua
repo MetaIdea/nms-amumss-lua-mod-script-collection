@@ -19,6 +19,14 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
+								{"MechAIResummonTriggerDistance",				"50"},		-- WayPoint "100" Testing ? how far away AI Starts launch from character
+								{"MechAIResummonMinSpawnDistance",				"25"},		-- WayPoint "10" Testing ? Don't Stomp So Close to Me
+								{"MechFirstPersonDamping",						"0.05"},	-- Fractal ""0.05 Testing Gun Float
+								{"MechFirstPersonStickXModerator",				"0.25"},	-- Fractal "0.5" Dampens
+								--{"ControlStickRecenterSpeedDegPerSec",			"0"},		-- Fractal "100" Testing ? Slow spring in weapon ? no discenable change
+								{"MechFirstPersonTurretAngleThrottleStrength",	"0"},		-- Fractal "2" Disable the mech moving using Look 							
+								{"MechFirstPersonMaxTurnTurret",				"5"},		-- Fractal "20" Direction adjust while walking SLOW!
+								{"MechTurretTurnTimeAir",						"1.1"},		-- WayPoint "0.7" Testing responsivness
 								{"MechContrailAlpha",							"0.9"},		-- WayPoint "0.6" Testing
 								{"MechTurretTurnTimeGroundPlayerCombat",		"0.9"},		-- WayPoint "0.15" Testing 3rd person view
 								{"MechPowerUpTime",  							"1"},		-- WayPoint "3" Testing
@@ -36,7 +44,34 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MechJetpackFillRate",							"0.05"},	-- WayPoint "0.5" Good	
 							}
 						}
-					} --15 global replacements
+					} --19 global replacements
+				},
+				{
+					["MBIN_FILE_SOURCE"] 	= "GCCAMERAGLOBALS.GLOBAL.MBIN",
+					["EXML_CHANGE_TABLE"] 	= 
+					{
+						{
+							["PRECEDING_KEY_WORDS"] = "",
+							["VALUE_CHANGE_TABLE"] 	=
+							{
+								{"FlybyRange",							"50"},	--Fractal "120" Land closer During Battle please
+							}
+						},
+						{
+							["PRECEDING_KEY_WORDS"] = "MechFirstPersonCam",
+							["VALUE_CHANGE_TABLE"] 	= 
+							{
+								{"VertRotationMax",				"18"},	-- Fractal "0" Aim cursor Range of Motion in Cab
+								{"VertRotationMin",				"10"},	-- Fractal "-20" Positive interger to lower default Reticle centering Horizon
+								--{"VertRotationOffset",			"15"},	-- Fractal "0" ?
+								{"VertRotationSpeed",			"0.5"},	-- Fractal "1" Testing Slop movement in Controller when aiming and mining.
+								{"CenterStartTime",				"0.005"},	-- Fractal "0.2" Slower Center Only in Boosted Landing
+								{"CenterBlendTime",				"0.1"},	-- Fractal "0.5" Slower Enguage Only in Boosed Landing
+								{"LookStickLimitAngle",			"25"},	-- Fractal "20" Cursors range of motion within AI Cab Aim and Peek
+								{"VertStartLookingDown",		"True"},	--Fractal "Fasle" ? 
+							}
+						}
+					}
 				}
 		    }
 	    }	

@@ -3,14 +3,14 @@ LuaAuthor = "lyravega"
 ModName = "gBlack Market"
 ModNameSub = "Better X"
 BaseDescription = "Changes the weighting curve of X-class upgrades"
-GameVersion = "415"
-ModVersion = "c"
+GameVersion = "420"
+ModVersion = "a"
 
 NewWeightingCurve = "MinIsUncommon"				--MaxIsRare; X-class curves where higher is better
 NewWeightingCurveReverse = "MaxIsUncommon" 		--MinIsUncommon; X-class curves where lower is better
 
 --[[Files Modified:
-METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
+METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN"
 ]]--
 
 NMS_MOD_DEFINITION_CONTAINER = {
@@ -23,7 +23,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{
 			["MBIN_CHANGE_TABLE"] = {
 				{
-					["MBIN_FILE_SOURCE"] = "METADATA\\REALITY\\TABLES\\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN",
+					["MBIN_FILE_SOURCE"] = "METADATA\REALITY\TABLES\NMS_REALITY_GCPROCEDURALTECHNOLOGYTABLE.MBIN",
 					["EXML_CHANGE_TABLE"] = {
 						--Find reversed weighting curves, where lower is better, and temporarily label them Temp
 						{

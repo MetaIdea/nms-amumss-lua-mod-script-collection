@@ -567,18 +567,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"x","4"},
 				{"y","4"}}},
-		{ --PoliceSpawn Wave 3
-		["SPECIAL_KEY_WORDS"] = {"MinRange","1400","Count","Vector2f.xml"},
-		["PRECEDING_KEY_WORDS"] = {"Count"},
-			["VALUE_CHANGE_TABLE"] = {
-				{"x","4"},
-				{"y","4"}}},
-		{ --PoliceSpawn Wave 4
-		["SPECIAL_KEY_WORDS"] = {"MinRange","1500"},
-		["PRECEDING_KEY_WORDS"] = {"Count"},
-			["VALUE_CHANGE_TABLE"] = {
-				{"x","6"},
-				{"y","6"}}},
 		{ --PirateSpawns
 		["PRECEDING_KEY_WORDS"] = {"PirateSpawns","Count"},
 			["VALUE_CHANGE_TABLE"] = {

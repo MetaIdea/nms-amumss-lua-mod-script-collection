@@ -1,13 +1,13 @@
 Author = "PyronoxOmega"
 ModName = "FlyDangerous-noinstawarp"
-GameVersion = "4"
-ModVersion = "1.2"
+GameVersion = "4.2"
+ModVersion = "1.4"
 Description = "Flight Overhaul"
 FileSource1 = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"
 
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-	["MOD_FILENAME"] = ModName .. "" .. GameVersion .. ModVersion .. ".pak",
+	["MOD_FILENAME"] = ModName .. "" .. -GameVersion .. -ModVersion .. ".pak",
 	["MOD_DESCRIPTION"] = Description,
 	["MOD_AUTHOR"] = Author,
 	["NMS_VERSION"] = GameVersion,

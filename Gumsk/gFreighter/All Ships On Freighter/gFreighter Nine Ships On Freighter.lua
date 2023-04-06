@@ -1,8 +1,8 @@
 Author = "Gumsk"
 ModName = "gFreighter"
-ModNameSub = "Nine Ships On Freighter"
+ModNameSub = "Nine Ships on Freighter"
 BaseDescription = "Makes it so nine of your ships are visible in your freighter hangar."
-GameVersion = "411"
+GameVersion = "420"
 ModVersion = "a"
 FileSource1 = "GCFLEETGLOBALS.GLOBAL.MBIN"
 
