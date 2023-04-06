@@ -1,7 +1,7 @@
 NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]    = "z-SavegameByHotkey-New.pak",
-["NMS_VERSION"]     = "4.13",
+["NMS_VERSION"]     = "4.20",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Enable hotkey saving (quick action emote menu)",
 ["MODIFICATIONS"]   =
@@ -258,6 +258,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="InteractFiendCrimeChance" value="1" />
       <Property name="InteractCrimeLevel" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
@@ -265,6 +266,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="UseCostID" value="" />
+        <Property name="StartMissionOnCantAfford" value="" />
         <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="StatToTrack" value="GcStatsEnum.xml">

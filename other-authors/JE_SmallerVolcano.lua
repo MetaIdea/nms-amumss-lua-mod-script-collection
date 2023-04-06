@@ -2,7 +2,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]             = "___JE_SmallerVolcano.pak",
 ["MOD_AUTHOR"]                = "Jaggid Edje",
-["NMS_VERSION"]                = "4.13",
+["NMS_VERSION"]                = "4.20",
 ["MODIFICATIONS"]             =
     {
         {

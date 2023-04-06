@@ -3,7 +3,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "RestoredBiomeResources.pak",
 ["MOD_AUTHOR"]    = "JoeCapricorn",
 ["LUA_AUTHOR"]    = "Babscoole",
-["NMS_VERSION"]   = "4.15",
+["NMS_VERSION"]   = "4.20",
 ["MODIFICATIONS"] =
     {
         {

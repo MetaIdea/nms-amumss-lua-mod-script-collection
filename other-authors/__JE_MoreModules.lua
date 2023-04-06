@@ -2,8 +2,8 @@ Author = "Jaggid Edje"
 ModName = "MoreModules"
 ModNameSub = "__JE"
 BaseDescription = "Purchase more of an available Upgrade module from vendors Based on System Economy"
-GameVersion = "4.07"
-ModVersion = "v1.02"
+GameVersion = "4.20"
+ModVersion = "v4.20"
 FileSource1 = "METADATA\REALITY\DEFAULTREALITY.MBIN"
 
 -- Original game settings in comments

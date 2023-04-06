@@ -445,6 +445,7 @@ QUICK_ACTION_MENU =
               <Property name="UseMissionSeedForEvent" value="False" />
               <Property name="StartDelay" value="6" />
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
+              <Property name="ForceSilentFailure" value="False" />
             </Property>
             <Property name="LabelID" value="" />
           </Property>
@@ -670,6 +671,7 @@ QUICK_ACTION_MENU =
               <Property name="UseMissionSeedForEvent" value="False" />
               <Property name="StartDelay" value="6" />
               <Property name="UseStartDelayWhenNoAerialScan" value="False" />
+              <Property name="ForceSilentFailure" value="False" />
             </Property>
             <Property name="LabelID" value="Distress" />
           </Property>
@@ -883,6 +885,7 @@ SEED_TYPE_PATH =
     ["ROYAL"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
     ["ALIEN"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
     ["SAIL"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
+    ["ROBOT"]="MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELSHIP_PROC.SCENE.MBIN",
     ["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
     ["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
     ["POLICESHIP"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERPOLICE.SCENE.MBIN",
@@ -1326,7 +1329,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzz-MetaMod.pak",
 ["MOD_AUTHOR"]      = "Mjjstral and Babscoole",
 ["MOD_DESCRIPTION"] = "Meta Mod - Collection of new QOL quick menu actions",
-["NMS_VERSION"]     = "4.15",
+["NMS_VERSION"]     = "4.20",
 ["MODIFICATIONS"]   =
     {
         {
@@ -1414,7 +1417,7 @@ NMS_MOD_DEFINITION_CONTAINER =
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"Name","PoliceShip",},
                             ["INTEGER_TO_FLOAT"]    = "FORCE",
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"TransY", "1.4"},
                                 {"TransZ", "-1.5"},
@@ -1425,15 +1428,15 @@ NMS_MOD_DEFINITION_CONTAINER =
                         },
                         {
                             ["SPECIAL_KEY_WORDS"]  = {"Name","PoliceShip","Name","ATTACHMENT"},
-                            ["VALUE_CHANGE_TABLE"]     =
+                            ["VALUE_CHANGE_TABLE"] =
                             {
                                 {"Value", ""},
                             }
-                },
-                {
+                        },
+                        {
                             ["SPECIAL_KEY_WORDS"]  = {"Name","AttackPointLight","Name","FALLOFF_RATE"},
                             ["REMOVE"] = "SECTION",
-                    },
+                        },
                     }
                 },
             }
@@ -1470,6 +1473,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"]      =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="TkModelDescriptorList">
   <Property name="List">
     <Property value="TkResourceDescriptorList.xml">
@@ -1497,6 +1501,7 @@ NMS_MOD_DEFINITION_CONTAINER =
             ["FILE_CONTENT"]      =
 [[
 <?xml version="1.0" encoding="utf-8"?>
+
 <Data template="TkSceneNodeData">
   <Property name="Name" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTERCLASSICGOLD" />
   <Property name="NameHash" value="4182676705" />
@@ -1802,7 +1807,7 @@ NMS_MOD_DEFINITION_CONTAINER =
         </Property>
       </Property>
     </Property>
- </Property>
+  </Property>
 </Data>
 ]]
         },
@@ -1869,6 +1874,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="InteractFiendCrimeChance" value="0" />
       <Property name="InteractCrimeLevel" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
@@ -1876,6 +1882,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="UseCostID" value="" />
+        <Property name="StartMissionOnCantAfford" value="" />
         <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="StatToTrack" value="GcStatsEnum.xml">
@@ -2023,6 +2031,7 @@ NMS_MOD_DEFINITION_CONTAINER =
       </Property>
       <Property name="InteractFiendCrimeChance" value="1" />
       <Property name="InteractCrimeLevel" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="NotifyEncounter" value="False" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
@@ -2030,6 +2039,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="UseCostID" value="" />
+        <Property name="StartMissionOnCantAfford" value="" />
         <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="StatToTrack" value="GcStatsEnum.xml">
@@ -3312,12 +3323,15 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="FiendCrime" value="None" />
       </Property>
       <Property name="InteractCrimeLevel" value="0" />
+      <Property name="IncreaseCorruptSentinelWanted" value="0" />
       <Property name="ActivationCost" value="GcInteractionActivationCost.xml">
         <Property name="SubstanceId" value="" />
         <Property name="AltIds" />
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="UseCostID" value="" />
+        <Property name="StartMissionOnCantAfford" value="" />
         <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="StatToTrack" value="GcStatsEnum.xml">

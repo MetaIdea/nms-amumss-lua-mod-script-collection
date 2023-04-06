@@ -23,9 +23,9 @@ with any other ones modifying the same file(s) or update the Mod yourself when i
 
 Compatibility : 
 
-Current Mod version : 3.90
+Current Mod version : 4.20
 
-Compatible with game version : NMS "LEVIATHAN" v.3.90 (Steam's Build 8801233).
+Compatible with game version : NMS "INTERCEPTOR" v.4.20 (Steam's build 10939490)
 
 3xperimental branch is not supported !
 
@@ -51,7 +51,7 @@ To merge Mods with "AMUMSS" it's real easy !
 
 First of all install/update your .NET to the latest 5.0 Desktop :
 https://dotnet.microsoft.com/en-us/download/dotnet/5.0
-(at the time i'm writing this it's ".NET Desktop Runtime 5.0.14")
+(at the time i'm writing this it's ".NET Desktop Runtime 5.0.17")
 
 You would have to choose a .lua file from the Mod you'd want to merge and the one from this Mod (SOS), 
 put them both in the "ModScript" AMUMSS' folder, run "BUILDMOD.bat",

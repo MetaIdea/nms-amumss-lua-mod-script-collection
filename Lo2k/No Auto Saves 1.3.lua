@@ -1,10 +1,10 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Unsorted Saves 3.1.pak", 
+["MOD_FILENAME"] 			= "No Auto Saves 1.3.pak", 
 ["MOD_AUTHOR"]				= "Lo2k",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.13",
-["MOD_DESCRIPTION"]			= "This mods makes save game slots standing still",
+["NMS_VERSION"]				= "4.20",
+["MOD_DESCRIPTION"]			= "This mods restores the old save system",
 ["MODIFICATIONS"] 			= 
 	{
 		{
@@ -18,7 +18,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"DisableSaveSlotSorting", "True"}
+								{"DisableContinuousSaving", "True"}
 							}
 						}
 					}

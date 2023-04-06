@@ -30,7 +30,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 {
 ["MOD_FILENAME"]            = "___PortalOnSpacestationV2.pak",
 ["MOD_AUTHOR"]              = "Mjjstral and Babscoole",
-["NMS_VERSION"]             = "4.14",
+["NMS_VERSION"]             = "4.20",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
     {

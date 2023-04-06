@@ -1,9 +1,9 @@
 NMS_MOD_DEFINITION_CONTAINER = 
 {
-["MOD_FILENAME"] 			= "Faster Movement Speed 1.8.pak", 
+["MOD_FILENAME"] 			= "Faster Movement Speed 1.9.pak", 
 ["MOD_AUTHOR"]				= "ASxACE (maintained by Lo2k)",
 ["LUA_AUTHOR"]				= "Lo2k",
-["NMS_VERSION"]				= "4.13",
+["NMS_VERSION"]				= "4.20.1",
 ["MOD_DESCRIPTION"]			= "This mods increases walk and run speeds",
 ["MODIFICATIONS"] 			= 
 	{

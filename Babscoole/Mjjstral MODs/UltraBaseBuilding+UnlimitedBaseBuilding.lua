@@ -591,6 +591,7 @@ BUILDABLE_OBJECT_TABLE =
     { ["ID_NAME"]="S-CLASS_PROC",   ["P_NAME"]="S-CLASS_PROC",             ["PATH"]="MODELS/COMMON/SPACECRAFT/S-CLASS/",                                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="BIOSHIP_PROC",   ["P_NAME"]="BIOSHIP_PROC",             ["PATH"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/",                                 ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="SAILSHIP_PROC",  ["P_NAME"]="SAILSHIP_PROC",            ["PATH"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
+    { ["ID_NAME"]="VRSPEEDER",      ["P_NAME"]="VRSPEEDER",                ["PATH"]="MODELS/COMMON/SPACECRAFT/FIGHTERS/",                                         ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="MECH_SUIT",      ["P_NAME"]="MECH_SUIT",                ["PATH"]="MODELS/COMMON/VEHICLES/MECH_SUIT/",                                          ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="BIKE",           ["P_NAME"]="BIKE",                     ["PATH"]="MODELS/COMMON/VEHICLES/BIKE/",                                               ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
     { ["ID_NAME"]="BUGGY",          ["P_NAME"]="BUGGY",                    ["PATH"]="MODELS/COMMON/VEHICLES/BUGGY/",                                              ["GROUP_NAME"]="UBB-OTHER-I",    ["SUBGROUP_NAME"]="VEHICLES",    ["ICON"]=SHIPICON },
@@ -1559,7 +1560,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]  = "0-UltraBaseBuilding+UnlimitedBaseBuilding.pak",
 ["MOD_AUTHOR"]    = "Mjjstral and Babscoole",
 ["Contributors"]  = "Ignacio and GhostRick",
-["NMS_VERSION"]   = "4.13",
+["NMS_VERSION"]   = "4.20",
 ["ADD_FILES"]     = ADD_FILES_TABLE,
 ["MODIFICATIONS"] =
     {

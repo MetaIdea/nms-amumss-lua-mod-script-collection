@@ -89,7 +89,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]            = "CompanionPetUnlocker.pak",
 ["MOD_AUTHOR"]              = "Mjjstral & Babscoole",
 ["CONTRIBUTORS"]            = "Silent369 and Corvus",
-["NMS_VERSION"]             = "4.14",
+["NMS_VERSION"]             = "4.20",
 ["DESCRIPTION"]             = "Enables more creatures to become companion pets",
 ["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]           =
@@ -320,6 +320,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="0" />
         <Property name="Repeat" value="False" />
         <Property name="RequiredTech" value="" />
+        <Property name="UseCostID" value="" />
+        <Property name="StartMissionOnCantAfford" value="" />
         <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="TriggerAction" value="INACTIVE" />
@@ -337,6 +339,8 @@ NMS_MOD_DEFINITION_CONTAINER =
         <Property name="Cost" value="1" />
         <Property name="Repeat" value="True" />
         <Property name="RequiredTech" value="" />
+        <Property name="UseCostID" value="" />
+        <Property name="StartMissionOnCantAfford" value="" />
         <Property name="OnlyChargeDuringSeasons" />
       </Property>
       <Property name="EventRenderers" />

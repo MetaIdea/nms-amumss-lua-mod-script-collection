@@ -2,8 +2,8 @@ DEFAULT_SEED_NUMBER = 17000
 
 SELECTED_SEED_TYPES =
 {
-    "Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail",
-    "MULTITOOL", "ROYALMULTITOOL",
+    "Fighter", "Dropship", "Scientific", "Shuttle", "Royal", "Alien", "Sail", "Robot",
+    "MULTITOOL", "ROYALMULTITOOL", "ROBOTMULTITOOL", "ROBOTMULTITOOLB",
 }
 
 SEED_TYPE_PATH =
@@ -15,9 +15,12 @@ SEED_TYPE_PATH =
     ["Royal"]="MODELS/COMMON/SPACECRAFT/S-CLASS/S-CLASS_PROC.SCENE.MBIN",
     ["Alien"]="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN",
     ["Sail"]="MODELS/COMMON/SPACECRAFT/SAILSHIP/SAILSHIP_PROC.SCENE.MBIN",
+    ["Robot"]="MODELS/COMMON/SPACECRAFT/SENTINELSHIP/SENTINELSHIP_PROC.SCENE.MBIN",
 
     ["MULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/MULTITOOL.SCENE.MBIN",
     ["ROYALMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/ROYALMULTITOOL.SCENE.MBIN",
+    ["ROBOTMULTITOOL"]="MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOL.SCENE.MBIN",
+    ["ROBOTMULTITOOLB"]="MODELS/COMMON/WEAPONS/MULTITOOL/SENTINELMULTITOOLB.SCENE.MBIN",
 }
 
 STATS =
@@ -67,7 +70,6 @@ STATS =
         {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
         {["ID"] = "LAUNCHER", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
         {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
-
     },
     ["Alien"] =
     {
@@ -88,6 +90,16 @@ STATS =
         {["ID"] = "HYPERDRIVE", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
         {["ID"] = "SOLAR_SAIL", ["Amount"] ="-1", ["MaxAmount"]="100", ["Damage"]="0"},
     },
+    ["Robot"] =
+    {
+        {["ID"] = "SHIPJUMP_ROBO", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPGUN_ROBO", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
+        {["ID"] = "SHIPSHIELD_ROBO", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "SHIPLAS1", ["Amount"] ="1000", ["MaxAmount"]="1000", ["Damage"]="0"},
+        {["ID"] = "LAUNCHER_ROBO", ["Amount"] ="200", ["MaxAmount"]="300", ["Damage"]="0"},
+        {["ID"] = "HYPERDRIVE_ROBO", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+        {["ID"] = "LIFESUP_ROBO", ["Amount"] ="120", ["MaxAmount"]="120", ["Damage"]="0"},
+    },
     ["MULTITOOL"] =
     {
         {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
@@ -97,6 +109,22 @@ STATS =
         {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
     },
     ["ROYALMULTITOOL"] =
+    {
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+    },
+    ["ROBOTMULTITOOL"] =
+    {
+        {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "LASER", ["Amount"] ="200", ["MaxAmount"]="200", ["Damage"]="0"},
+        {["ID"] = "BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+        {["ID"] = "UT_BOLT", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
+    },
+    ["ROBOTMULTITOOLB"] =
     {
         {["ID"] = "SCANBINOC1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
         {["ID"] = "SCAN1", ["Amount"] ="0", ["MaxAmount"]="100", ["Damage"]="0"},
@@ -190,6 +218,27 @@ function AddBaseStats(TYPE)
                   </Property>
                   <Property value="GcInventoryBaseStatEntry.xml">
                     <Property name="BaseStatID" value="ALIEN_SHIP" />
+                    <Property name="Value" value="1" />
+                  </Property>
+]]
+    
+    elseif TYPE == "Robot" then
+        return
+[[
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="SHIP_DAMAGE" />
+                    <Property name="Value" value="1" />
+                  </Property>
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="SHIP_SHIELD" />
+                    <Property name="Value" value="1" />
+                  </Property>
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="SHIP_HYPERDRIVE" />
+                    <Property name="Value" value="1" />
+                  </Property>
+                  <Property value="GcInventoryBaseStatEntry.xml">
+                    <Property name="BaseStatID" value="ROBOT_SHIP" />
                     <Property name="Value" value="1" />
                   </Property>
 ]]
@@ -460,6 +509,8 @@ function CreateQuickActionMenuEntry(BUTTON_TITLE, ANIM_ID)
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL1.EXPEDITION.MINIBIOFRIG.DDS"
                 elseif ANIM_ID == "SAIL" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\SPECIAL.EXPEDITION.BANNER01.DDS"
+                elseif ANIM_ID == "ROBOT" then
+                    ICON = "TEXTURES\UI\FRONTEND\ICONS\MISSIONS\MISSION.SENTINELCRASH.MSHOP.DDS"
                 elseif ANIM_ID == "MULTITOOL" then
                     ICON = "TEXTURES\UI\FRONTEND\ICONS\SPECIALSHOP\HERO.TWITCH.GUN02.DDS"
                 elseif ANIM_ID == "ROYALMULTITOOL" then
@@ -545,7 +596,7 @@ function CreateSeedRewardLists()
             for _j=1,DEFAULT_SEED_NUMBER,1 do
                 Seed = GetSeed()
                 local SREA_tmp = ""
-                if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" then
+                if SST == "MULTITOOL" or SST == "ROYALMULTITOOL" or SST == "ROBOTMULTITOOL" or SST == "ROBOTMULTITOOLB" then
                     SREA_tmp = CreateCustomMultitoolRewardSubEntry(HexToDec(Seed), Seed, SST)
                 else
                     SREA_tmp = CreateCustomShipRewardSubEntry(HexToDec(Seed), Seed, SST)
@@ -575,7 +626,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 ["MOD_FILENAME"]    = "zzzSEED-GENERATOR-V6B.pak",
 ["MOD_AUTHOR"]      = "Mjjstral & Babscoole",
 ["MOD_DESCRIPTION"] = "Adds random seed buttons to the quick action emote menu",
-["NMS_VERSION"]     = "4.13",
+["NMS_VERSION"]     = "4.20",
 ["MODIFICATIONS"]   =
     {
         {
