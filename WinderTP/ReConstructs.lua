@@ -1157,7 +1157,8 @@ Default is YES (Y)
 						l["SCENEGRAPH"]:gsub(".SCENE.", ".DESCRIPTOR."),
 						EXPORT_SCENE_DESCRIPTOR["DESCRIPTOR"]["Path"]:gsub(".EXML", ".MBIN")
 					}
-				}
+				},
+				-- ["MBIN_FS_DISCARD"]	= "TRUE"
 			})
 			table.insert(MBIN_CHANGE_TABLE_FINAL,
 			{

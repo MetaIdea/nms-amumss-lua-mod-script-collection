@@ -26,7 +26,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"VehicleBoostFuelRate",				"0.2"	},
 								{"VehicleBoostFuelRateSurvival",		"1"		},
 								{"VehicleFuelRate",						"0.15"	},
-								{"VehicleFuelRateSurvival",				"0.3"	},
+								-- {"VehicleFuelRateSurvival",				"0.3"	},
 							}
 						},
 						{

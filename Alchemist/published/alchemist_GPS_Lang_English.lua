@@ -5,8 +5,8 @@ BaseDescription = [[Overhaul to Freighter, Ship, and Signal Scanner capabilities
 building by type or planet by biome. Optional costs and tech requirements.
 
 https://www.nexusmods.com/nomanssky/mods/2144]]
-GameVersion = "4-13"
-ModVersion = "2-3-0"
+GameVersion = "4-21"
+ModVersion = "2-4-0"
 
 -- =========
 -- CONSTANTS
@@ -77,7 +77,7 @@ files.
 
 --]]
 
--- Total keys: 219
+-- Total keys: 225
 LANGUAGE_TABLE = {
   --
   ["ALCH_BIOS_FREI_QRY_CFG"] = "Configure Deep Space Scanning...", --
@@ -202,6 +202,9 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_OD_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Wealthy System ~ Lush Biome ~ Overgrown Flora ~ Abundant Fauna ~ Passive Sentinels", --
   ["ALCH_SCAN_PQ_OD_MENU"] = "Wealthy Lush", --
   ["ALCH_SCAN_PQ_OD_TITLE"] = "Planet Query ~ Wealthy Lush", --
+  ["ALCH_SCAN_PQ_OE_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Any Infested Biome ~ Corrupted Sentinel Signals", --
+  ["ALCH_SCAN_PQ_OE_MENU"] = "Corrupted Core", --
+  ["ALCH_SCAN_PQ_OE_TITLE"] = "Planet Query ~ Corrupted Core", --
   ["ALCH_SCAN_PQ_PLANET_OBJ"] = "Travel to Planet", --
   ["ALCH_SCAN_PQ_PLANET_OBJ_TIP"] = "A planet matching the given <SPECIAL>query parameters<> has been identified in the <TRADEABLE>current system<>. Enter the planet's atmosphere to complete the mission.\nHold <IMG>ROLLLEFT<> and <IMG>ROLLRIGHT<> together to engage Pulse Jump.", --
   ["ALCH_SCAN_PQ_PLANET_OBJ_WAIT"] = "<TITLE>Query result located in<> <TRADEABLE>current system<>\nEnter the planet's atmosphere to complete the mission", --
@@ -253,6 +256,9 @@ LANGUAGE_TABLE = {
   ["ALCH_SCAN_PQ_RD_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Storm Crystals", --
   ["ALCH_SCAN_PQ_RD_MENU"] = "Storm Crystals", --
   ["ALCH_SCAN_PQ_RD_TITLE"] = "Planet Query ~ Storm Crystals", --
+  ["ALCH_SCAN_PQ_RE_DESC"] = "<SPECIAL>QUERY PARAMETERS<> <HIGHLIGHT>//<> Any Biome ~ Corrupted Sentinels", --
+  ["ALCH_SCAN_PQ_RE_MENU"] = "Corrupted Sentinels", --
+  ["ALCH_SCAN_PQ_RE_TITLE"] = "Planet Query ~ Corrupted Sentinels", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ"] = "Search Registered with Navigation Computer", --
   ["ALCH_SCAN_PQ_SEARCH_OBJ_TIP"] = "This planetary query has been registered with the ship's navigation computer and will proceed during normal <SPECIAL>space flight<>.\n<STELLAR>ADVISORY<> ~ Portal travel and Nexus missions cause <FUEL>interdimension interference<>. All active queries will be paused for the duration of these activities.", --
   ["ALCH_SCAN_PQ_SYSTEM_OBJ"] = "Travel to System", --
