@@ -19,9 +19,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								{"MechAIResummonTriggerDistance",				"150"},		-- Fractal "100" Testing ? how far away AI Starts launch from character
-								{"MechAIResummonMinSpawnDistance",				"5"},		-- Fractal "10" Testing So Close to Me
-								{"MechJumpFlyBlendTime",						"0.75"},		-- Fractal "1" 
+								{"MechAIResummonTriggerDistance",				"120"},			-- Fractal "100" Testing ? how far away AI Starts launch from character
+								{"MechAIResummonMinSpawnDistance",				"15"},			-- Fractal "10" Testing So Close to Me
+								{"MechJumpFlyBlendTime",						"0.75"},	-- Fractal "1" 
 								{"MechFirstPersonDamping",						"0.01"},	-- Fractal ""0.05 Testing Gun Float
 								{"MechFirstPersonStickXModerator",				"0.25"},	-- Fractal "0.5" Dampens
 								{"MechFirstPersonTurretTurnModerator",			"0.71"},
@@ -37,7 +37,7 @@ NMS_MOD_DEFINITION_CONTAINER =
 								{"MechJetpackJetScaleTime",				    	"1"},		-- Fractal "0.2" Good FX diminish burn over time release trigger
 								{"MechJetpackTurnSpeed",						"1"},		-- Fractal "3" Good Mid air flight adjust path Greater is slower
 								{"MechPlayerGroundTurnSpeed",					"0.4"},		-- Fractal "0.5" Good Mech Higher Slower FirstPersonMaxTurnTurret 
-								{"MechCoGAdjustTimeAir",						"2"},	-- Fractal "0.7" Testing
+								{"MechCoGAdjustTimeAir",						"2"},		-- Fractal "0.7" Testing
 								{"MechJetpackMaxSpeed",						    "99"}, 		-- Fractal "20" Good
 								{"MechJetpackMaxUpSpeed",						"25"},		-- Fractal "20" Good
 								{"MechJetpackUpForce",						    "110"}, 	-- Fractal "100" Good
@@ -68,13 +68,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["PRECEDING_KEY_WORDS"] = "MechFirstPersonCam",
 							["VALUE_CHANGE_TABLE"] 	= 
 							{
-								--{"VertRotationMax",				"2"},		-- Fractal "0" --Seems to effect 3rd person follow if nonzero
-								{"VertRotationMin",				"17"},		-- Fractal "-20" Positive interger to lower default Reticle centering Horizon 10 Needed for AI Mech Window.
-								--{"VertRotationOffset",			"-15"},		-- Fractal "0" Off for Mech Oval Window
-								--{"VertRotationSpeed",			"0.5"},		-- Fractal "1" Testing Slop movement in Controller when aiming and mining.
-								{"CenterStartTime",				"0.05"},	-- Fractal "0.2" Slower Center Only in Boosted Landing
-								{"CenterBlendTime",				"0.1"},		-- Fractal "0.5" Slower Enguage Only in Boosed Landing
-								--{"LookStickLimitAngle",			"25"},		-- Fractal "20" Cursors range of motion within Cab Aim and Peek
+								--{"VertRotationMin",				"16"},		-- Fractal "-20" Positive interger to lower default Reticle centering Horizon 10 Needed for AI Mech Window..
+								{"CenterStartTime",				"0.9"},		-- Fractal "0.2" 
+								{"CenterBlendTime",				"0.9"},		-- Fractal "0.5" 
 							}
 						},
 						{
@@ -103,8 +99,9 @@ NMS_MOD_DEFINITION_CONTAINER =
 							["VALUE_CHANGE_TABLE"] 	=
 							{
 								{"MaxHeadPitch",		"40"},		--Fractal "30" 1st person observation test 35 38 42
-								{"FootAngleSpeed",		"1"},		--Fractal "10"
+								{"FootAngleSpeed",		"7"},		--Fractal "10" 1 lol
 								{"FootPlantSpringTime",	"0.05"},	--Fractal "0.2"
+								{"InteractDistance",	"25"},			--Fractal "10" Testing? Default Either Use MECH or MECH Harvest, or Both
 							}
 						}
 					}

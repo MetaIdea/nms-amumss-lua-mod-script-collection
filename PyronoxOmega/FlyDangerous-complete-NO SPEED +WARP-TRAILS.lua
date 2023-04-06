@@ -1,7 +1,7 @@
 Author = "PyronoxOmega"
 ModName = "FlyDangerous_NOSPEED_WARP_TRAIL"
-GameVersion = "4.1"
-ModVersion = "1.3"
+GameVersion = "4.2"
+ModVersion = "1.4"
 Description = "Flight Overhaul"
 
 FileSource1 = "GCSPACESHIPGLOBALS.GLOBAL.MBIN"

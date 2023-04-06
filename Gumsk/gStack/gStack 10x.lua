@@ -2,9 +2,9 @@ Multiplier = 10
 
 Author = "Gumsk"
 ModName = "gStack"
-ModNameSub = "x"..Multiplier
+ModNameSub = Multiplier.."x"
 BaseDescription = "Multiplies stack sizes"
-GameVersion = "411"
+GameVersion = "420"
 ModVersion = "a"
 FileSource1 = "GCGAMEPLAYGLOBALS.GLOBAL.MBIN"
 

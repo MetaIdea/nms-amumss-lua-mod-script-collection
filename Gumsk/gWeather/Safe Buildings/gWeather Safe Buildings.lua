@@ -2,12 +2,12 @@ Author = "Gumsk"
 ModName = "gWeather"
 ModNameSub = "Safe Buildings"
 BaseDescription = "Basic floor pieces have hazard protection"
-GameVersion = "411"
+GameVersion = "420"
 ModVersion = "a"
 
 HeaterAdd = [[		<Property value="TkSceneNodeData.xml">
           <Property name="Name" value="Heater" />
-          <Property name="NameHash" value="0" />
+          <Property name="NameHash" value="]]..GNH("Heater")..[[" />
           <Property name="Type" value="LOCATOR" />
           <Property name="Transform" value="TkTransformData.xml">
             <Property name="TransX" value="0" />
@@ -30,7 +30,7 @@ HeaterAdd = [[		<Property value="TkSceneNodeData.xml">
           <Property name="Children">
             <Property value="TkSceneNodeData.xml">
               <Property name="Name" value="HeaterCollision" />
-              <Property name="NameHash" value="0" />
+              <Property name="NameHash" value="]]..GNH("HeaterCollision")..[[" />
               <Property name="Type" value="COLLISION" />
               <Property name="Transform" value="TkTransformData.xml">
                 <Property name="TransX" value="0" />

@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gCreatures Life"
 ModNameSub = "0"
 BaseDescription = ModNameSub.."x normal life"
-GameVersion = "411"
+GameVersion = "420"
 ModVersion = "a"
 
 --[[Files Modified:
@@ -15,6 +15,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	["MOD_DESCRIPTION"]	= BaseDescription,
 	["MOD_AUTHOR"]		= Author,
 	["NMS_VERSION"]		= GameVersion,
+	["GLOBAL_INTEGER_TO_FLOAT"] = "PRESERVE",
 	["MODIFICATIONS"]	= {
 		{
 			["MBIN_CHANGE_TABLE"] = {

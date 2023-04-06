@@ -1,8 +1,8 @@
 Author = "Gumsk"
-ModName = "GExos Challenge"
-ModNameSub = "gDamage"
+ModName = "gDamage"
+ModNameSub = ""
 BaseDescription = "Damage adjustments"
-GameVersion = "411"
+GameVersion = "420"
 ModVersion = "a"
 
 FileSource = "METADATA\REALITY\TABLES\DAMAGETABLE.MBIN"

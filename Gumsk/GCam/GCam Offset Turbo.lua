@@ -2,7 +2,7 @@ Author = "Gumsk+Azzinoth"
 ModName = "gCam"
 ModNameSub = "Offset Turbo"
 BaseDescription = "Camera modifications"
-GameVersion = "411"
+GameVersion = "420"
 ModVersion = "a"
 FileSource = "GCCAMERAGLOBALS.GLOBAL.MBIN"
 
@@ -69,6 +69,7 @@ NMS_MOD_DEFINITION_CONTAINER = {
 ["MOD_DESCRIPTION"]	= BaseDescription,
 ["MOD_AUTHOR"]		= Author,
 ["NMS_VERSION"]		= GameVersion,
+["GLOBAL_INTEGER_TO_FLOAT"] = "FORCE",
 ["MODIFICATIONS"]	= {{
 ["MBIN_CHANGE_TABLE"] = {{
 ["MBIN_FILE_SOURCE"] = FileSource,

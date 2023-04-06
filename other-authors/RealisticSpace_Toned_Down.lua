@@ -1,10 +1,13 @@
-NMS_MOD_DEFINITION_CONTAINER = {
+NMS_MOD_DEFINITION_CONTAINER = 
+{
 ["MOD_FILENAME"]		= "___LittleEvo_RealisticSpace_Toned_Down.pak",
 ["MOD_DESCRIPTION"]		= "Realistic Space Combat, NPC and players deal same damage",
 ["MOD_AUTHOR"]			= "ChristianWidjaya, LittleEvo",
 ["NMS_VERSION"]			= "4.1+",
-["MODIFICATIONS"]		= {{
-["MBIN_CHANGE_TABLE"]	= {
+["MODIFICATIONS"]		= 
+	{
+		{
+			["MBIN_CHANGE_TABLE"]	= {
 	
 	{["MBIN_FILE_SOURCE"]	= "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {		
@@ -178,7 +181,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		["VALUE_CHANGE_TABLE"] = {
 			{"AttackShootTimeMax","60"},
 			{"AttackMaxTime","60"},
-			{"LaserHealthPoint","70"}},
 			["REPLACE_TYPE"] = "ALL"},
 		{--Forces Raid Pirates not to use lasers when on planet
 		["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
@@ -214,86 +216,72 @@ NMS_MOD_DEFINITION_CONTAINER = {
 		{ --PIRATE_EASY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_EASY"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{ --PIRATE_MEDIUM Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{ --PIRATE_HARD Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PIRATE_HARD"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{ --POLICE Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","POLICE"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{ --TRADER Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","TRADER"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{ --TRADER ESCORT Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","TRADER_ESCORT"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{ --RAIDERS(BUILDING) Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","RAID_BUILDING"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{ --RAIDERS(DOGFIGHT) Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","RAID_DOGFIGHT"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		--PLAYER_SQUADRON Behaviour
 		{--C
 		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_C"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SQUADRON_FAST"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{--B
 		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_B"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SQUADRON_FAST"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{--A
 		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_A"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SQUADRON_FAST"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{--S
 		["SPECIAL_KEY_WORDS"] = {"Id","SQUADRON_S"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SQUADRON_FAST"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{--Alien
 		["SPECIAL_KEY_WORDS"] = {"Id","ALIEN_HOSTILE"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 		{ --PLANET_FLYBY Behaviour
 		["SPECIAL_KEY_WORDS"] = {"Id","PLANET_FLYBY"},
 			["VALUE_CHANGE_TABLE"] = {
-			{"RewardCount","1"},
 			{"Engine","SPACE_HARD"},
 			{"PlanetEngine","PLANET_HARD"}}},
 	}},
@@ -352,14 +340,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 	
 	{["MBIN_FILE_SOURCE"]	= "METADATA\SIMULATION\SCENE\EXPERIENCESPAWNTABLE.MBIN",
 	["EXML_CHANGE_TABLE"]	= {
-		{ --Capital freighters spawns instead of normal ones for motherships, sentinel only.
-		["SPECIAL_KEY_WORDS"] = {"MinRange","2200"}, --sentinel use this minrange, and only this in the file, stupid but works
-		["VALUE_CHANGE_TABLE"] = {
-			{"AIShipRole","CapitalFreighter"}}},
-		{ --Capital freighters spawns instead of normal ones for motherships, battle only.
-		["SPECIAL_KEY_WORDS"] = {"MinRange","8000"}, --attacked trader use this minrange, and only this in the file, stupid but works
-		["VALUE_CHANGE_TABLE"] = {
-			{"AIShipRole","CapitalFreighter"}}},	
 		{ --FlybySpawns
 		["PRECEDING_KEY_WORDS"] = {"FlybySpawns","Count"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -375,18 +355,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 			["VALUE_CHANGE_TABLE"] = {
 				{"x","4"},
 				{"y","4"}}},
-		{ --PoliceSpawn Wave 3
-		["SPECIAL_KEY_WORDS"] = {"MinRange","1400","Count","Vector2f.xml"},
-		["PRECEDING_KEY_WORDS"] = {"Count"},
-			["VALUE_CHANGE_TABLE"] = {
-				{"x","4"},
-				{"y","4"}}},
-		{ --PoliceSpawn Wave 4
-		["SPECIAL_KEY_WORDS"] = {"MinRange","1500"},
-		["PRECEDING_KEY_WORDS"] = {"Count"},
-			["VALUE_CHANGE_TABLE"] = {
-				{"x","6"},
-				{"y","6"}}},
 		{ --PirateSpawns
 		["PRECEDING_KEY_WORDS"] = {"PirateSpawns","Count"},
 			["VALUE_CHANGE_TABLE"] = {
@@ -394,11 +362,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"y","4"}}},
 		{
 		["PRECEDING_KEY_WORDS"] = {"PirateSpawns","Count","Count"},
-			["VALUE_CHANGE_TABLE"] = {
-				{"x","4"},
-				{"y","4"}}},
-		{ --PirateBattleSpawns
-		["PRECEDING_KEY_WORDS"] = {"PirateBattleSpawns","Count"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"x","4"},
 				{"y","4"}}},
@@ -429,21 +392,6 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"y","4"}}},
 		{
 		["PRECEDING_KEY_WORDS"] = {"BattleSecondaryPirateSpawns","Count","Count","Count"},
-			["VALUE_CHANGE_TABLE"] = {
-				{"x","0"},
-				{"y","0"}}},
-		{ --BattleInitialStandardSpawns
-		["PRECEDING_KEY_WORDS"] = {"BattleInitialStandardSpawns","Count"},
-			["VALUE_CHANGE_TABLE"] = {
-				{"x","4"},
-				{"y","4"}}},
-		{
-		["PRECEDING_KEY_WORDS"] = {"BattleInitialStandardSpawns","Count","Count",},
-			["VALUE_CHANGE_TABLE"] = {
-				{"x","4"},
-				{"y","4"}}},
-		{
-		["PRECEDING_KEY_WORDS"] = {"BattleInitialStandardSpawns","Count","Count","Count"},
 			["VALUE_CHANGE_TABLE"] = {
 				{"x","0"},
 				{"y","0"}}},
@@ -561,4 +509,4 @@ NMS_MOD_DEFINITION_CONTAINER = {
 				{"x","4"},
 				{"y","4"}}},		
 	}},
-}}}}
+}}}}}

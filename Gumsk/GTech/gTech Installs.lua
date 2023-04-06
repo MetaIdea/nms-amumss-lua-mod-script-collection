@@ -2,7 +2,7 @@ Author = "Gumsk"
 ModName = "gTech"
 ModNameSub = "Installs"
 BaseDescription = "Enable restricted technology for alien ships and exocraft"
-GameVersion = "411"
+GameVersion = "420"
 ModVersion = "a"
 FileSource = "METADATA\REALITY\TABLES\NMS_REALITY_GCTECHNOLOGYTABLE.MBIN"
 
